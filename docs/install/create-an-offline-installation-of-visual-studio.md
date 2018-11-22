@@ -109,7 +109,7 @@ Następnie użyj tego polecenia, aby uruchomić instalację:
 | ----------------------- | --------------- |
 | cs-CZ | czeski |
 | de-DE. | niemiecki |
-| pl pl | Angielski |
+| en-US | Angielski |
 | es-ES | Hiszpański |
 | fr-FR | Francuski |
 | IT-IT | Włoski |
