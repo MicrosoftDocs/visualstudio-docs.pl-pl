@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcji szkolenia Pluralsight, któ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 73f23b57b51b7ceb0a2d059e9d559036a721995c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826744"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281787"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight, w ramach subskrypcji programu Visual Studio
 
@@ -85,7 +85,7 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
 
 <sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), partnerem firmy Microsoft Wyobraź sobie Network (MPN), ekwiwalentu pełnego wymiaru czasu.*
 
-<sup>2</sup> * korzyści z firmą Pluralsight jest tylko jednorazowego użytku powiązane osoby.  Gdy subskrybent zużywa korzyści, nie zresetować. 
+<sup>2</sup>*korzyści z firmą Pluralsight jest tylko jednorazowego użytku powiązane osoby.  Gdy subskrybent zużywa korzyści, nie zresetować.*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
