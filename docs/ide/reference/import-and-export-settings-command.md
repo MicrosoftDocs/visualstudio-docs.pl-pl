@@ -1,6 +1,6 @@
 ---
 title: Import i eksport ustawień — Polecenie
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704590"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388711"
 ---
 # <a name="import-and-export-settings-command"></a>Import i eksport ustawień — Polecenie
-Importuje eksportuje i resetuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ustawienia.
+
+Importuje, eksportuje lub resetuje ustawienia programu Visual Studio.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,25 +33,26 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
 ## <a name="switches"></a>Przełączniki
- / export:`filename`
 
- Opcjonalna. Eksportuje bieżące ustawienia do określonego pliku.
+/ export:`filename`
 
- / Import:`filename`
+Opcjonalna. Eksportuje bieżące ustawienia do określonego pliku.
 
- Opcjonalna. Importuje ustawienia w określonym pliku.
+Import:`filename`
 
- / Reset
+Opcjonalna. Importuje ustawienia w określonym pliku.
 
- Opcjonalna. Przywraca bieżące ustawienia.
+/ Reset
+
+Opcjonalna. Przywraca bieżące ustawienia.
 
 ## <a name="remarks"></a>Uwagi
 
-Uruchomienie tego polecenia, których nie zmienia otwiera **Import i eksport ustawień** kreatora. Aby uzyskać więcej informacji, zobacz [synchronizację ustawień](../../ide/synchronized-settings-in-visual-studio.md).
+Uruchomienie tego polecenia, na których nie zmienia otwiera **Import i eksport ustawień** kreatora. Aby uzyskać więcej informacji, zobacz [synchronizację ustawień](../synchronized-settings-in-visual-studio.md) i [ustawienia środowiska](../environment-settings.md).
 
 ## <a name="example"></a>Przykład
 
-Polecenie eksportuje bieżące ustawienia do pliku `MyFile.vssettings`.
+Następujące polecenie eksportuje bieżące ustawienia do pliku `MyFile.vssettings`:
 
 ```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
@@ -58,5 +60,7 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Ustawienia środowiska](../../ide/environment-settings.md)
+- [Synchronizowanie ustawień](../../ide/synchronized-settings-in-visual-studio.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+- [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a40553cd3f547dfa2b5297c898fabbd9664496
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ce7cf5cf0534a0e989b65d6e67451fe2a7c496ab
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281839"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388908"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Widok wątków w Wizualizatorze współbieżności
 

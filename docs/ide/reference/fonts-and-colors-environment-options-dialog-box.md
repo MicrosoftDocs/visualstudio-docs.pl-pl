@@ -27,23 +27,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220264"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389270"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
+
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia / Opcje**, a następnie wybierając **środowisko / czcionki i kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
 
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Kolor schemat zmiany wprowadzone podczas sesji, w której należy. Możesz ocenić zmiany kolorów, otwierając innego wystąpienia programu Visual Studio i tworzenie warunków, w których oczekujesz, że zmiany do zastosowania.
 
+**Pokaż ustawienia dla**
 
- Kolor schemat zmiany wprowadzone podczas sesji, w której należy. Możesz ocenić zmiany kolorów, otwierając innego wystąpienia programu Visual Studio i tworzenie warunków, w których oczekujesz, że zmiany do zastosowania.
-
- **Pokaż ustawienia dla** zawiera listę wszystkich elementów interfejsu użytkownika, dla których można zmienić czcionkę i kolor schematów. Po wybraniu elementu z tej listy można dostosować ustawienia kolorów dla elementu zaznaczonego w **wyświetlania elementów**.
+Wyświetla listę wszystkich elementów interfejsu użytkownika, dla których można zmienić czcionkę i kolor schematów. Po wybraniu elementu z tej listy można dostosować ustawienia kolorów dla elementu zaznaczonego w **wyświetlania elementów**.
 
 -   **Edytor tekstu**
 
@@ -54,7 +53,7 @@ ms.locfileid: "50220264"
      Zmiany styl czcionki, rozmiaru i wyświetlania kolorów dla drukarki na wygląd tekstu w dokumentach.
 
     > [!NOTE]
-    >  W razie potrzeby można wybrać czcionkę różne domyślne związane z drukowaniem niż ten używany do wyświetlania w edytorze tekstów. Może to być przydatne podczas drukowania kodu, który zawiera znaków jednobajtowych i dwubajtowych.
+    > W razie potrzeby można wybrać czcionkę różne domyślne związane z drukowaniem niż ten używany do wyświetlania w edytorze tekstów. Może to być przydatne podczas drukowania kodu, który zawiera znaków jednobajtowych i dwubajtowych.
 
 -   **Uzupełnianie instrukcji**
 
@@ -73,21 +72,28 @@ ms.locfileid: "50220264"
      Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania na ten element wpływ wygląd tekstu w oknach narzędzi, których okienka danych wyjściowych w środowisku IDE. Na przykład okno danych wyjściowych, okno polecenia, okno bezpośrednie itp.
 
     > [!NOTE]
-    >  Zmiany w tekście z **[wszystkie tekstowe narzędzie Windows]** elementy zostaną wprowadzone podczas sesji, w której należy. Możesz ocenić takie zmiany, otwierając innego wystąpienia programu Visual Studio.
+    > Zmiany w tekście z **[wszystkie tekstowe narzędzie Windows]** elementy zostaną wprowadzone podczas sesji, w której należy. Możesz ocenić takie zmiany, otwierając innego wystąpienia programu Visual Studio.
 
-**Użyj wartości domyślnych** powoduje zresetowanie wartości czcionkę i kolor elementu listy, który wybrano w **Pokaż ustawienia dla**. **Użyj** przycisk jest wyświetlany, gdy do wyboru dostępne są inne systemy wyświetlania. Na przykład można wybierać spośród dwóch systemów dla drukarki.
+**Użyj wartości domyślnych**
 
-**Czcionka (Pogrubienie oznacza czcionki o stałej szerokości)** Wyświetla listę wszystkich czcionek, które są zainstalowane w systemie. Kiedy menu rozwijane po raz pierwszy występuje, bieżącą czcionkę dla elementu wybranego w **Pokaż ustawienia dla** pola zostanie wyróżniona. Naprawiono czcionki — które są łatwiejsze do wyrównania w edytorze — są wyświetlane pogrubioną czcionką.
+Powoduje zresetowanie wartości czcionkę i kolor elementu listy, który wybrano w **Pokaż ustawienia dla**. **Użyj** przycisk jest wyświetlany, gdy do wyboru dostępne są inne systemy wyświetlania. Na przykład można wybierać spośród dwóch systemów dla drukarki.
 
-**Rozmiar** Wyświetla listę dostępnych rozmiarów wyróżnione czcionki. Zmiana rozmiaru czcionki wpływa na wszystkie **wyświetlania elementów** dla **Pokaż ustawienia dla** zaznaczenia.
+**Czcionka (Pogrubienie oznacza czcionki o stałej szerokości)**
 
-**Wyświetl elementy** Wyświetla listę elementów, dla których można zmodyfikować kolor pierwszego planu i tła.
+Wyświetla listę wszystkich czcionek, które są zainstalowane w systemie. Kiedy menu rozwijane po raz pierwszy występuje, bieżącą czcionkę dla elementu wybranego w **Pokaż ustawienia dla** pola zostanie wyróżniona. Naprawiono czcionki — które są łatwiejsze do wyrównania w edytorze — są wyświetlane pogrubioną czcionką.
+
+**Rozmiar**
+
+Listy dostępnych punktów rozmiarów wyróżnione czcionki. Zmiana rozmiaru czcionki wpływa na wszystkie **wyświetlania elementów** dla **Pokaż ustawienia dla** zaznaczenia.
+
+**Wyświetl elementy**
+
+Wyświetla listę elementów, dla których można zmodyfikować kolor pierwszego planu i tła.
 
 > [!NOTE]
 > **Zwykły tekst** elementu wyświetlana domyślna. W efekcie właściwości przypisane do **PlainText** zostaną zastąpione przez właściwości, przypisane do innych elementów wyświetlana. Na przykład, jeśli przypisujesz kolor niebieski na **PlainText** i kolor na zielony do **identyfikator**, wszystkie identyfikatory będą wyświetlane w kolorze zielonym. W tym przykładzie **identyfikator** zastąpienie właściwości **PlainText** właściwości.
 
-
- Wyświetl elementy, należą:
+Wyświetl elementy, należą:
 
 |Element ekran|Opis|
 |------------------|-----------------|
@@ -198,31 +204,50 @@ ms.locfileid: "50220264"
 |**Tekst XML**|Zawartość elementu zwykłego tekstu.|
 |**Słowo kluczowe XSLT**|Nazwy elementów XSLT.|
 
- **Pierwszy plan elementu** Wyświetla listę dostępnych kolorów, można wybrać dla pierwszego planu elementu wybranego w **wyświetlania elementów**. Ponieważ niektóre elementy są ze sobą powiązane i w związku z tym należy zachować schemat spójne wyświetlanie, zmiana kolorem tekstu także zmianę wartości domyślne dla elementów, takich jak błąd kompilatora, słowo kluczowe lub Operator.
+**Pierwszy plan elementu**
 
- **Automatyczne** elementów może dziedziczyć kolor pierwszego planu innych wyświetle elementy takie jak **zwykły tekst**. Przy użyciu tej opcji, po zmianie koloru elementu dziedziczone wyświetlania, kolor elementów powiązanych wyświetlaną również zmienić automatycznie. Na przykład w przypadku wybrania **automatyczne** wartość **błąd kompilatora** i później zmienić kolor **zwykły tekst** czerwony, **błąd kompilatora**będzie również automatycznie dziedziczył kolor czerwony.
+Wyświetla listę dostępnych kolorów, można wybrać dla pierwszego planu elementu wybranego w **wyświetlania elementów**. Ponieważ niektóre elementy są ze sobą powiązane i w związku z tym należy zachować schemat spójne wyświetlanie, zmiana kolorem tekstu także zmianę wartości domyślne dla elementów, takich jak błąd kompilatora, słowo kluczowe lub Operator.
 
- **Domyślne** kolor, który pojawia się po raz pierwszy element Uruchom program Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
+**Automatyczne**
 
- **Niestandardowe** Wyświetla okno dialogowe kolorów — umożliwiają ustawianie koloru niestandardowego elementu wybranego na liście elementów ekranu.
+Elementy może dziedziczyć kolor pierwszego planu innych wyświetle elementy takie jak **zwykły tekst**. Przy użyciu tej opcji, po zmianie koloru elementu dziedziczone wyświetlania, kolor elementów powiązanych wyświetlaną również zmienić automatycznie. Na przykład w przypadku wybrania **automatyczne** wartość **błąd kompilatora** i później zmienić kolor **zwykły tekst** czerwony, **błąd kompilatora**będzie również automatycznie dziedziczył kolor czerwony.
+
+**Default**
+
+Kolor, który pojawia się po raz pierwszy element programu Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
+
+**Custom**
+
+Wyświetla okno dialogowe kolorów do umożliwiają ustawianie koloru niestandardowego elementu wybranego na liście elementów ekranu.
 
 > [!NOTE]
 > Możliwość definiowanie kolorów niestandardowych, może być ograniczona przez ustawienia kolorów dla tego ekranu komputera. Na przykład, jeśli komputer jest równa 256 kolorów, a następnie wybierz kolor niestandardowy z **kolor** okno dialogowe IDE wartością domyślną jest najbardziej dostępna **kolor podstawowy** i wyświetla kolor czarny w **Kolor** okno podglądu.
 
+**Tło elementu**
 
- **Tło elementu** udostępnia paletę kolorów, w którym można wybrać kolor tła dla elementu zaznaczonego w **wyświetlania elementów**. Ponieważ niektóre elementy są ze sobą powiązane i w związku z tym należy zachować schemat spójne wyświetlanie, zmiana koloru tła tekstu także zmianę wartości domyślne dla elementów, takich jak błąd kompilatora, słowo kluczowe lub Operator.
+Udostępnia paletę kolorów, w którym można wybrać kolor tła dla elementu zaznaczonego w **wyświetlania elementów**. Ponieważ niektóre elementy są ze sobą powiązane i w związku z tym należy zachować schemat spójne wyświetlanie, zmiana koloru tła tekstu także zmianę wartości domyślne dla elementów, takich jak błąd kompilatora, słowo kluczowe lub Operator.
 
- **Automatyczne** elementów może dziedziczyć kolor tła innych wyświetle elementy takie jak **zwykły tekst**. Przy użyciu tej opcji, po zmianie koloru elementu dziedziczone wyświetlania, kolor elementów powiązanych wyświetlaną również zmienić automatycznie. Na przykład w przypadku wybrania **automatyczne** wartość **błąd kompilatora** i później zmienić kolor **zwykły tekst** czerwony, **błąd kompilatora**będzie również automatycznie dziedziczył kolor czerwony.
+**Automatyczne**
 
- **Domyślne** kolor, który pojawia się po raz pierwszy element Uruchom program Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
+Elementy może dziedziczyć kolor tła innych wyświetle elementy takie jak **zwykły tekst**. Przy użyciu tej opcji, po zmianie koloru elementu dziedziczone wyświetlania, kolor elementów powiązanych wyświetlaną również zmienić automatycznie. Na przykład w przypadku wybrania **automatyczne** wartość **błąd kompilatora** i później zmienić kolor **zwykły tekst** czerwony, **błąd kompilatora**będzie również automatycznie dziedziczył kolor czerwony.
 
- **Niestandardowe** Wyświetla okno dialogowe kolorów — umożliwiają ustawianie koloru niestandardowego elementu wybranego na liście elementów ekranu.
+**Default**
 
- **Pogrubienie** zaznacz tę opcję, aby wyświetlić tekst zaznaczenia **wyświetlania elementów** pogrubioną czcionką. Tekst pogrubiony jest łatwiejszy do zidentyfikowania w edytorze.
+Kolor, który pojawia się po raz pierwszy element programu Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
 
- **Przykładowe** Wyświetla przykładowe styl czcionki, rozmiaru i schemat kolorów na potrzeby **Pokaż ustawienia dla** i **wyświetlania elementów** wybrane. Podgląd wyników, ponieważ możesz eksperymentować z różnych opcji formatowania, można użyć tego pola.
+**Custom**
 
-## <a name="see-also"></a>Zobacz też
+Wyświetla okno dialogowe kolorów do umożliwiają ustawianie koloru niestandardowego elementu wybranego na liście elementów ekranu.
+
+**Bold**
+
+Wybierz tę opcję, aby wyświetlić tekst wybranego **wyświetlania elementów** pogrubioną czcionką. Tekst pogrubiony jest łatwiejszy do zidentyfikowania w edytorze.
+
+**Próbki**
+
+Wyświetla przykładowe styl czcionki, rozmiaru i schemat kolorów na potrzeby **Pokaż ustawienia dla** i **wyświetlania elementów** wybrane. Podgląd wyników, ponieważ możesz eksperymentować z różnych opcji formatowania, można użyć tego pola.
+
+## <a name="see-also"></a>Zobacz także
 
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
 - [Opcje, okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

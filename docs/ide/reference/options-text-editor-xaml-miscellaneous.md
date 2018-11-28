@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673587"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388637"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opcje, Edytor tekstu, XAML, różne
+
 Użyj **różne** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **różne** właściwości rozwiń **edytora tekstów** > **XAML** > **różne**węzła.
 
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>Automatyczne wstawianie
- To ustawienie służy do kontrolowania, kiedy tagów i cudzysłowy są generowane automatycznie.
+
+To ustawienie służy do kontrolowania, kiedy tagów i cudzysłowy są generowane automatycznie.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Użyj **różne** stronę właściwości, aby określić, jak sformatowane eleme
 |**Przecinków do oddzielenia parametry wyrażeń MarkupExtension**|Określa, czy przecinkami są generowane, gdy więcej niż jeden parametr jest typu rozszerzenia znaczników.|
 
 ## <a name="errors-and-warnings"></a>Błędy i ostrzeżenia
- To ustawienie służy do kontrolowania, kiedy błędy i ostrzeżenia są generowane automatycznie. Aby uzyskać więcej informacji, zobacz [XAML błędy i ostrzeżenia](../../designers/xaml-errors-warnings.md).
+
+To ustawienie służy do kontrolowania, kiedy błędy i ostrzeżenia są generowane automatycznie. Aby uzyskać więcej informacji, zobacz [XAML błędy i ostrzeżenia](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Zobacz także
 

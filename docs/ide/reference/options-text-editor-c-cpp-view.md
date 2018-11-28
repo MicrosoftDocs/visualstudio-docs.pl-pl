@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673738"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388835"
 ---
 # <a name="options-text-editor-cc-view"></a>Wyświetl opcje, Edytor tekstu, C/C++
 
 Użyj tych stron właściwości, aby zmienić domyślne zachowanie edytora kodu, podczas programowania w języku C lub C++.
 
 Aby uzyskać dostęp do tej strony właściwości, wybierz **narzędzia** > **opcje** i rozwiń **Edytor tekstu**, następnie **C/C++**, a następnie wybierz pozycję **Widoku**.
-
-> [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="code-squiggles"></a>Faliste linie kodu
 
@@ -49,7 +46,7 @@ Można włączać lub wyłączać następujących ustawień, aby zarządzać spo
 
 - **Wyliczanie zadań w komentarzach** — "open source" Skanuj pliki pod kątem tokenów programu VS i raportuj je w oknie Lista zadań.
 
-- **Podświetl pasujące tokeny** — wyróżnienia otaczający nawiasy lub składnię, która pasuje, gdy kursor znajduje się. 
+- **Podświetl pasujące tokeny** — wyróżnienia otaczający nawiasy lub składnię, która pasuje, gdy kursor znajduje się.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 

@@ -19,77 +19,80 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: af6e0521fa2beb266d2022b73278bc6b07ae7dc3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ae05111b1a075515d8011daaf8626e5da7f506e1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843939"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389085"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
-Gdy przeciągnąć element z **źródeł danych** okna do powierzchni projektu, można utworzyć formantu powiązanego z danymi, można wybrać typ formantu, który można utworzyć. Każdy element w oknie ma listy wyświetla formantów, które są dostępne. Zbiór kontrolki skojarzone z każdym elementem zależy od typu danych elementu. Jeśli formant, który ma zostać utworzony, nie ma na liście, można postępuj zgodnie z instrukcjami w tym temacie, aby dodać kontrolki do listy.
 
- Aby uzyskać więcej informacji o wybieraniu formanty powiązane z danymi można utworzyć dla elementów w **źródeł danych** okna, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+Podczas przeciągania elementu z **źródeł danych** okna do powierzchni projektu, aby utworzyć formant powiązany z danymi, można wybrać typ kontrolki, którą tworzysz. Każdy element w oknie ma listy zawiera formanty, które można wybierać. Zestaw mechanizmów kontrolnych, związane z każdym elementem jest określana przez typ danych elementu. Jeśli formant, który ma zostać utworzona, nie ma na liście, możesz wykonać instrukcje przedstawione w tym temacie, aby dodać formant do listy.
 
-> [!NOTE]
->  Okna dialogowe i dostępne polecenia menu mogą różnić się od opisanych w pomocy, w zależności od wersji lub aktywne ustawienia. Aby zmienić ustawienia, na **narzędzia** menu, wybierz opcję **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+Aby uzyskać więcej informacji o wybieraniu formantów powiązanych z danymi można utworzyć dla elementów w **źródeł danych** okna, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-##  <a name="customizinglist"></a> Dostosowywanie na liście można powiązać formantów dla typu danych
- Aby dodać lub usunąć formantów z listy dostępnych formantów dla elementów w **źródeł danych** okna, które ma typ danych, wykonaj następujące kroki.
+## <a name="customize-the-bindable-controls-list"></a>Dostosowywanie listy możliwej do wiązania kontrolki
 
-#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Aby wybrać formantów był wyświetlany dla typu danych
+Aby dodać lub usunąć formanty z listy dostępnych kontrolek dla elementów w **źródeł danych** okno, które mają na określony typ danych, wykonaj następujące kroki.
 
-1.  Upewnij się, że projektant WPF lub Projektant formularzy systemu Windows jest otwarty.
+### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Aby wybrać formanty był wyświetlany dla typu danych
 
-2.  W **źródeł danych** okna, kliknij element, który jest częścią źródła danych został dodany do okna, a następnie kliknij menu rozwijane elementu.
+1. Upewnij się, że projektant WPF lub projektanta Windows Forms jest otwarty.
 
-3.  W menu rozwijanym kliknij **Dostosuj**. Jedną z następujących okien dialogowych otwiera:
+2. W **źródeł danych** , kliknij element, który jest częścią źródła danych dodane do okna, a następnie kliknij przycisk menu rozwijanej dla elementu.
 
-    -   Jeśli **Projektant formularzy systemu Windows** jest otwarty, **dostosowywania interfejsu użytkownika danych** strony **opcje** zostanie otwarte okno dialogowe.
+   > [!TIP]
+   > Jeśli **źródeł danych** okno nie jest otwarte, otwórz go, wybierając **widoku** > **Windows inne** > **źródeł danych**.
 
-    -   Jeśli **projektanta WPF** jest otwarty, **Dostosuj powiązania kontrolki** zostanie otwarte okno dialogowe.
+3. W menu rozwijanym kliknij **Dostosuj**. Jedną z następujących okien dialogowych zostanie otwarta:
 
-4.  W oknie dialogowym Wybierz typ danych z **— typ danych** listy rozwijanej.
+    - Jeśli **Windows Forms Designer** jest otwarty, **Dostosowywanie danych interfejsu użytkownika** strony **opcje** zostanie otwarte okno dialogowe.
 
-    -   Aby dostosować listę formantów dla tabeli lub obiektu, wybierz **[lista]**.
+    - Jeśli **WPF Designer** jest otwarty, **Dostosuj powiązania kontrolki** zostanie otwarte okno dialogowe.
 
-    -   Aby dostosować listę formantów dla kolumny tabeli lub właściwości obiektu, wybierz typ danych kolumny lub właściwości w odpowiedni magazyn danych.
+4. W oknie dialogowym Wybierz typ danych z **— typ danych** listy rozwijanej.
 
-    -   Aby dostosować listę formantów na wyświetlanie obiektów danych, które mają kształtów zdefiniowane przez użytkownika, zaznacz **[innych]**. Na przykład wybierz **[innych]** Jeśli aplikacja ma kontrolki niestandardowej, która zawiera dane z więcej niż jedną właściwość określonego obiektu.
+    - Aby dostosować listę formantów dla tabeli lub obiektu, wybierz opcję **[lista]**.
 
-5.  W **skojarzonych formantów** wybierz każdego formantu, który ma być dostępna dla wybranego typu danych lub wyczyść zaznaczenie wszystkich formantów, które chcesz usunąć z listy.
+    - Aby dostosować listę formantów dla kolumny tabeli lub właściwości obiektu, wybierz typ danych kolumny lub właściwości w podstawowym magazynie danych.
+
+    - Aby dostosować listę formantów do wyświetlania obiektów danych, które mają kształty zdefiniowane przez użytkownika, wybierz opcję **(inne)**. Na przykład wybierz **(inne)** Jeśli aplikacja ma formant niestandardowy, który wyświetla dane z więcej niż jedną właściwość określonego obiektu.
+
+5. W **ane kontrolki** wybierz każdy formant, który ma być dostępna dla wybranego typu danych lub wyczyść zaznaczenie formantów, które chcesz usunąć z listy.
 
     > [!NOTE]
-    >  Jeśli formant, który ma zostać wybrana, nie jest widoczna w **skojarzonych formantów** pole, należy dodać kontrolki do listy. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do listy skojarzonych formantów dla typu danych](#addingcontrols).
+    > Jeśli formant, który ma zostać wybrana, nie jest widoczna w **ane kontrolki** pole, należy dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodaj ane kontrolki](#add-associated-controls).
 
-6.  Kliknij przycisk **OK**.
+6. Kliknij przycisk **OK**.
 
-7.  W **źródeł danych** , kliknij element danych wpisz tylko skojarzona jeden lub kilka formantów, a następnie kliknij menu rozwijane elementu.
+7. W **źródeł danych** , kliknij element danych, wpisz tylko skojarzony co najmniej jednej kontrolki, a następnie kliknij menu rozwijanej dla elementu.
 
-     Formanty wybranym **skojarzonych formantów** pola wyświetlone w menu rozwijanym elementu.
+     Formanty został wybrany w **ane kontrolki** pola pojawiają się w menu rozwijanej dla elementu.
 
-##  <a name="addingcontrols"></a> Dodawanie formantów do listy skojarzonych formantów dla typu danych
- Jeśli chcesz skojarzyć z typem danych formantu, ale nie ma formantu **skojarzonych formantów** okno, należy dodać kontrolki do listy. Formant musi znajdować się w bieżącym rozwiązaniu lub w przywoływanym zestawie. Musi być także dostępna w **przybornika** i mieć atrybut, który określa zachowanie wiązania danych formantu.
+## <a name="add-associated-controls"></a>Dodaj skojarzonych formantów
 
-#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Aby dodać kontrolki do listy skojarzonych formantów
+Jeśli chcesz skojarzyć formantu o typie danych, ale formant nie jest wyświetlana w **ane kontrolki** pole, należy dodać formant do listy. Kontrolka musi być znajduje się w bieżącym rozwiązaniu lub w zestawie odwołania. Również musi być dostępny w **przybornika** i ma atrybut, który określa zachowanie wiązania danych formantu.
 
-1.  Dodaj formant żądanego **przybornika** przez kliknięcie prawym przyciskiem myszy **przybornika** i wybierając **wybierz elementy**.
+### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Aby dodać formanty do listy skojarzonych formantów
+
+1. Dodaj żądaną kontrolkę do **przybornika** przez kliknięcie prawym przyciskiem myszy **przybornika** i wybierając polecenie **wybierz elementy**.
 
      Kontrolka musi mieć jedną z następujących atrybutów.
 
     |Atrybut|Opis|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Wdrożenie tego atrybutu na prosty formanty, które wyświetlają pojedyncza kolumna (lub właściwości) dane, takie jak <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Wdrożenie tego atrybutu w formantach, które wyświetlania list lub tabele danych, takich jak <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Wdrożenie tego atrybutu w formantach, które wyświetlania list lub tabel danych, ale także przedstawiania pojedyncza kolumna lub właściwości, takie jak <xref:System.Windows.Forms.ComboBox>.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementowanie tego atrybutu na proste formanty, zawierające jedną kolumnę (lub właściwości) dane, takie jak <xref:System.Windows.Forms.TextBox>.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementowanie tego atrybutu formanty, które wyświetlają list (lub tabele) dane, takie jak <xref:System.Windows.Forms.DataGridView>.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementowanie tego atrybutu formanty, które wyświetlają list (lub tabele) z danych, ale także przedstawiania pojedynczej kolumny lub właściwości, takie jak <xref:System.Windows.Forms.ComboBox>.|
 
-2.  Dla formularzy systemu Windows na **opcje** po otwarciu okna dialogowego **dostosowywania interfejsu użytkownika danych** strony. WPF, można otworzyć **Dostosuj powiązania kontrolki** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Dostosowywanie listy można powiązać formantów dla typu danych](#customizinglist).
+2. W przypadku formularzy Windows w **opcje** po otwarciu okna dialogowego **Dostosowywanie danych interfejsu użytkownika** strony. WPF, można otworzyć **Dostosuj powiązania kontrolki** okno dialogowe. Aby uzyskać więcej informacji, zobacz [dostosować tę listę możliwej do wiązania kontrolki typu danych](#customize-the-bindable-controls-list).
 
-3.  W **skojarzonych formantów** polu formantu, który właśnie został dodany do **przybornika** powinien zostać wyświetlony.
+3. W **ane kontrolki** polu formant, który właśnie został dodany do **przybornika** powinna teraz zostać wyświetlona.
 
     > [!NOTE]
-    >  Lista skojarzonych formantów można dodać tylko formanty, które znajdują się w bieżącym rozwiązaniu lub przywoływanego zestawu. (Formantów musi także implementować jeden z atrybutów powiązanie danych w poprzedniej tabeli.) Wiązanie danych do kontrolki niestandardowej, która nie jest dostępna w **źródeł danych** okna, przeciągnij formant z **przybornika** na powierzchni projektu, a następnie przeciągnij element, aby powiązać z **danych Źródeł** okna w formancie.
+    > Tylko formanty, które znajdują się w obrębie bieżącego rozwiązania, lub w zestawie odwołania można dodać do listy skojarzonych formantów. (Kontrolki musi także implementować jeden z atrybutów powiązania danych w poprzedniej tabeli.) Aby powiązać dane z kontrolką niestandardową, która nie jest dostępna w **źródeł danych** okna, przeciągnij formant z **przybornika** na powierzchni projektowej, a następnie przeciągnij element można powiązać z **danych Źródła** okna w formancie.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

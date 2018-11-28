@@ -2,7 +2,7 @@
 title: Pozwól Pomoc programu Visual Studio, możesz napisać C# kodu z mniej błędów
 description: Dowiedz się, jak napisać lepszego kodu z mniej błędów
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948962"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389380"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Tworzenie lepszych C# kodu za pomocą programu Visual Studio
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Usuwanie usterek, pisząc lepiej C# kodu za pomocą programu Visual Studio
 
 Debugowanie kodu może być czasochłonne — a czasem zakłócenie — zadanie. Czasochłonne Dowiedz się, jak można debugować skutecznie. Rozbudowane środowisko IDE, takie jak Visual Studio może ułatwić zadanie w dużej mierze. Środowisko IDE może pomóc możesz debugować kod szybciej i nie tylko, jednak może również pomoc zapisu lepszego kodu przy użyciu mniejszej liczby usterek. Naszym celem w tym artykule jest umożliwiają całościowy obraz proces debugowania, dzięki czemu będzie wiadomo, kiedy należy używać analizator kodu, do używania debugera i kiedy należy używać innych narzędzi.
 

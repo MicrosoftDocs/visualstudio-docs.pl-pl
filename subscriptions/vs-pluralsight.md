@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcji szkolenia Pluralsight, któ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73f23b57b51b7ceb0a2d059e9d559036a721995c
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281787"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389114"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight, w ramach subskrypcji programu Visual Studio
 
@@ -26,7 +26,7 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
 
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
-1. Aby aktywować swoją subskrypcję, połączyć się z [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij pozycję **uzyskać kod** łącze na kafelku korzyści w witrynie Pluralsight, znajduje się w sekcji Projektowanie Professional.
+1. Aby aktywować swoją subskrypcję, połączyć się z [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij pozycję **kod** łącze na kafelku korzyści w witrynie Pluralsight, znajduje się w sekcji Projektowanie Professional.
    > [!div class="mx-imgBorder"]
    > ![Kafelek korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
    > 
@@ -39,11 +39,7 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
    > [!div class="mx-imgBorder"]
    > ![Aktywuj korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Nastąpi przekierowanie do strony w witrynie Pluralsight korzyści, które zostało uwzględnione w ramach subskrypcji programu Visual Studio.  W tym przykładzie będziemy aktywować korzyść dostarczane z członkostwa w programie Visual Studio Dev Essentials. Kliknij przycisk **aktywować swoje korzyści**.
-   > [!div class="mx-imgBorder"]
-   > ![Strona docelowa Pluralsight VSDE](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. Na stronie aktywacji:
+3. Nastąpi przekierowanie do strony w witrynie Pluralsight korzyści, które zostało uwzględnione w ramach subskrypcji programu Visual Studio.  
    - Podaj informacje kontaktowe wymagane w formularzu
    - Kliknij pole wyboru, aby zaakceptować warunki użycia i zasady zachowania poufności
    - Kliknij przycisk **zgodę, Aktywuj korzyść**.

@@ -31,20 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7f6939907681d5059580f9f7120d9beb76559e9a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672191"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388991"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
+
 Użyj **formatowanie** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń **edytora tekstów** > **XAML** > **formatowanie** węzeł.
 
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="auto-formatting-events"></a>Automatyczne formatowanie zdarzeń
+
 Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarzeń wykryte.
 
 -   Uzupełnianie tagu końcowego lub prostego.
@@ -57,106 +56,124 @@ Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarze
 
 Można określić, zdarzenia, które powodują automatyczne formatowanie.
 
-**Po zakończeniu tagu końcowego lub prostego**  
+**Po zakończeniu tagu końcowego lub prostego**
+
 Automatyczne formatowanie występuje po zakończeniu wpisywania tagu końcowego lub prostego tagu. Prostych tagów nie ma atrybutów, na przykład `<Button />`.
 
-**Po zakończeniu tagu początkowego**  
+**Po zakończeniu tagu początkowego**
+
 Automatyczne formatowanie występuje po zakończeniu wpisywania tagu początkowego.
 
-**Przy wklejaniu ze Schowka**  
+**Przy wklejaniu ze Schowka**
+
 Automatyczne formatowanie występuje podczas wklejania XAML ze Schowka w widoku XAML.
 
 ## <a name="quotation-mark-style"></a>Styl cudzysłowu
+
 To ustawienie wskazuje, czy wartości atrybutów są ujęte w pojedyncze lub podwójne znaki cudzysłowu. Użyj tego ustawienia, Autoformatowanie zostało i automatycznego uzupełniania IntelliSense.
 
 Po ustawieniu tej opcji tylko atrybuty później dodane przy użyciu narzędzia Projektant lub ręcznie w widoku XAML dotyczy problem.
 
-**Podwójny cudzysłów (")**  
-Wartości atrybutów są ujęte w cudzysłów.  
+**Podwójny cudzysłów (")**
+
+Wartości atrybutów są ujęte w cudzysłów.
 `<Button Name="button1">Hello</Button>`
 
-**Pojedynczy cudzysłów (')**  
-Wartości atrybutów są ujęte w apostrofy.  
+**Pojedynczy cudzysłów (')**
+
+Wartości atrybutów są ujęte w apostrofy.
 `<Button Name='button1'>Hello</Button>`
 
 ## <a name="tag-wrapping"></a>Zawijanie tagów
+
 Można określić długość wiersza zawijanie tagów. Po włączeniu zawijanie tagów XAML, wszystkie dodane przy użyciu narzędzia Projektant zostanie zawinięta odpowiednio.
 
-**Zawijaj tagi przekraczające określoną długość**  
+**Zawijaj tagi przekraczające określoną długość**
+
 Określa, czy wiersze są opakowane w określonej przez długość wiersza **długość**.
 
-**Długość**  
+**Długość**
+
 Liczba znaków, które mogą zawierać wiersz. Jeśli to konieczne, niektóre linie XAML może przekraczać długości określonej linii.
 
 ## <a name="attribute-spacing"></a>Odstępy między atrybutami
+
 To ustawienie służy do kontrolowania, jak atrybuty są rozmieszczone w dokumencie XAML
 
-**Zachowaj tabulacji i spacje między atrybutami**  
+**Zachowaj tabulacji i spacje między atrybutami**
+
 Automatyczne formatowanie nie dotyczy nowych wierszy i spacji między atrybutami.
 
 ```xml
-<Button Height="23"   Name="button1"  
+<Button Height="23"   Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Wstaw odstęp między atrybutami**  
+**Wstaw odstęp między atrybutami**
+
 Atrybuty zajmują jeden wiersz z jednego miejsca oddzielenie sąsiadujących atrybutów. Ustawienia zawijania tag są stosowane.
 
 ```xml
 <Button Height="23" Name="button1" Width="75">Hello</Button>
 ```
 
-**Umieść każdy atrybut w osobnym wierszu**  
-Każdy atrybut zajmuje osobnym wierszu, co jest przydatne, jeśli podano wiele atrybutów.  
+**Umieść każdy atrybut w osobnym wierszu**
+
+Każdy atrybut zajmuje osobnym wierszu, co jest przydatne, jeśli podano wiele atrybutów.
 
 ```xml
-<Button  
-Height="23"  
-Name="button1"  
+<Button
+Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Pozycja pierwszego atrybutu w tym samym wierszu co tag początkowy**  
-Po zaznaczeniu tej opcji, w tym samym wierszu co tag początkowy element pojawi się pierwszy atrybut.  
+**Pozycja pierwszego atrybutu w tym samym wierszu co tag początkowy**
+
+Po zaznaczeniu tej opcji, w tym samym wierszu co tag początkowy element pojawi się pierwszy atrybut.
 
 ```xml
-<Button Height="23"  
-Name="button1"  
+<Button Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
 ## <a name="element-spacing"></a>Odstępy między elementami
+
 Użyj tego ustawienia, aby kontrolować sposób rozmieszczenia elementów w dokumencie XAML.
 
-**Zachowaj nowe wiersze w zawartości**  
-Puste wiersze w zawartości elementu nie są usuwane.  
+**Zachowaj nowe wiersze w zawartości**
+
+Puste wiersze w zawartości elementu nie są usuwane.
 
 ```xml
-<Grid>  
+<Grid>
 
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Zwiń wiele puste wiersze w zawartości w jeden wiersz**  
-Puste wiersze w zawartości elementu są zwinięte do pojedynczego wiersza.  
+**Zwiń wiele puste wiersze w zawartości w jeden wiersz**
+
+Puste wiersze w zawartości elementu są zwinięte do pojedynczego wiersza.
 
 ```xml
-<Grid>  
+<Grid>
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Usuń puste wiersze w zawartości**  
-Wszystkie puste wiersze w zawartości elementu są usuwane.  
+**Usuń puste wiersze w zawartości**
+
+Wszystkie puste wiersze w zawartości elementu są usuwane.
 
 ```xml
-<Grid>  
-<Button Name="button1">Hello</Button>  
+<Grid>
+<Button Name="button1">Hello</Button>
 </Grid>
 ```
 

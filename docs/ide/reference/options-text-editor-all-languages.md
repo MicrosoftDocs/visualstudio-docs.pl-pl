@@ -21,83 +21,78 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8d3494ad0c48bb6254090b26faef9162a89f8d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 8fa208805a8d6861082793551dbbc595985fdc55
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220485"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52387991"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
+
 To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby otworzyć to okno dialogowe, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **ogólne**.
 
 > [!CAUTION]
 > Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci ogólne opcje we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.
 
-
- Wygaszone znacznik wyboru jest wyświetlane, gdy po wybraniu opcji na stronach opcji ogólnych dla niektórych języków programowania, ale nie dla innych użytkowników.
-
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+Wygaszone znacznik wyboru jest wyświetlane, gdy po wybraniu opcji na stronach opcji ogólnych dla niektórych języków programowania, ale nie dla innych użytkowników.
 
 ## <a name="statement-completion"></a>Dokańczanie instrukcji
- **Automatyczna lista członków**
 
- Po wybraniu wyskakującego listy dostępne elementy członkowskie, właściwości, wartości lub metody są wyświetlane przez technologię IntelliSense podczas wpisywania w edytorze. Wybierz dowolny element z wyskakującej listy do podawania pozycji w kodzie. Wybranie tej opcji umożliwia **kryj składowe zaawansowane** opcji.
+**Automatyczna lista członków**
 
- **Kryj składowe zaawansowane**
+Po wybraniu wyskakującego listy dostępne elementy członkowskie, właściwości, wartości lub metody są wyświetlane przez technologię IntelliSense podczas wpisywania w edytorze. Wybierz dowolny element z wyskakującej listy do podawania pozycji w kodzie. Wybranie tej opcji umożliwia **kryj składowe zaawansowane** opcji.
 
- Po wybraniu skraca uzupełniania instrukcji wyskakujące, wyświetlając tylko te elementy, które są używane najczęściej. Inne elementy są odfiltrowywane z listy.
+**Kryj składowe zaawansowane**
 
- **Informacje o parametrach**
+Po wybraniu skraca uzupełniania instrukcji wyskakujące, wyświetlając tylko te elementy, które są używane najczęściej. Inne elementy są odfiltrowywane z listy.
 
- Po wybraniu pełną składnię bieżącej deklaracji lub procedura jest wyświetlana w obszarze punkt wstawiania w edytorze, ze wszystkimi jego dostępnych parametrów. Następny parametr, które można przypisać jest wyświetlany czcionką pogrubioną.
+**Informacje o parametrach**
+
+Po wybraniu pełną składnię bieżącej deklaracji lub procedura jest wyświetlana w obszarze punkt wstawiania w edytorze, ze wszystkimi jego dostępnych parametrów. Następny parametr, które można przypisać jest wyświetlany czcionką pogrubioną.
 
 ## <a name="settings"></a>Ustawienia
- **Włączyć wirtualną przestrzeń**
 
- Gdy ta opcja jest zaznaczona i **zawijanie wyrazów** jest wyczyszczone, można kliknąć dowolne miejsce poza końcem wiersza w edytorze kodu i typu. Ta funkcja może służyć do pozycji Komentarze w momencie spójne obok kodu.
+**Włączyć wirtualną przestrzeń**
 
- **Zawijanie wyrazów**
+Gdy ta opcja jest zaznaczona i **zawijanie wyrazów** jest wyczyszczone, można kliknąć dowolne miejsce poza końcem wiersza w edytorze kodu i typu. Ta funkcja może służyć do pozycji Komentarze w momencie spójne obok kodu.
 
- Po wybraniu dowolnej części wiersza, który mieści się w poziomie w obszarze edytora w widoczne jest automatycznie wyświetlana w następnym wierszu. Wybranie tej opcji umożliwia **Pokaż zualne przy zawijaniu wierszy** opcji.
+**Zawijanie wyrazów**
+
+Po wybraniu dowolnej części wiersza, który mieści się w poziomie w obszarze edytora w widoczne jest automatycznie wyświetlana w następnym wierszu. Wybranie tej opcji umożliwia **Pokaż zualne przy zawijaniu wierszy** opcji.
 
 > [!NOTE]
 > **Wirtualną przestrzenią** włączenia funkcji wyłączone podczas **zawijanie** znajduje się na.
 
+**Pokaż zualne przy zawijaniu wierszy**
 
- **Pokaż zualne przy zawijaniu wierszy**
+Po wybraniu wskaźnik zwracany strzałkę jest wyświetlany, gdy długi wiersz zawijana drugi wiersz.
 
- Po wybraniu wskaźnik zwracany strzałkę jest wyświetlany, gdy długi wiersz zawijana drugi wiersz.
+![LineBreakSymbol — zrzut ekranu](../../ide/reference/media/linebreak.gif)
 
- ![LineBreakSymbol — zrzut ekranu](../../ide/reference/media/linebreak.gif)
-
- Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić te wskaźniki.
+Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić te wskaźniki.
 
 > [!NOTE]
 > Tych strzałek monitu nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.
 
-
 **Numery wierszy**
 
- Po wybraniu numer wiersza obok każdego wiersza kodu.
+Po wybraniu numer wiersza obok każdego wiersza kodu.
 
 > [!NOTE]
 > Te numery wierszy nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.
 
+**Włącz nawigację adresów URL jednym kliknięciem**
 
- **Włącz nawigację adresów URL jednym kliknięciem**
+Po wybraniu myszy przybiera postać dłoni przekazywanego za pośrednictwem adresu URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić stronę wskazany w przeglądarce sieci web.
 
- Po wybraniu myszy przybiera postać dłoni przekazywanego za pośrednictwem adresu URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić stronę wskazany w przeglądarce sieci web.
+**Pasek nawigacyjny**
 
- **Pasek nawigacyjny**
-
- Po wybraniu Wyświetla **pasek nawigacyjny** w górnej części edytora kodu. Jego listy rozwijanej **obiektów** i **członków** list pozwalają na wybranie określonego obiektu w kodzie, wybierz jedną z jej członków i przechodzi do deklaracji wybranego elementu członkowskiego w edytorze kodu.
+Po wybraniu Wyświetla **pasek nawigacyjny** w górnej części edytora kodu. Jego listy rozwijanej **obiektów** i **członków** list pozwalają na wybranie określonego obiektu w kodzie, wybierz jedną z jej członków i przechodzi do deklaracji wybranego elementu członkowskiego w edytorze kodu.
 
 **Zastosuj poleceń Wytnij lub Kopiuj do pustych wierszy, jeśli nie zaznaczono żadnego fragmentu**
 
- Ta opcja ustawia zachowanie edytora, gdy umieścisz kursor w pustym wierszu, wybierz nothing, a następnie skopiować lub wyciąć.
+Ta opcja ustawia zachowanie edytora, gdy umieścisz kursor w pustym wierszu, wybierz nothing, a następnie skopiować lub wyciąć.
 
 -   Po wybraniu tej opcji pusty wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, jest wstawiany nowy, pusty wiersz.
 

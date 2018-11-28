@@ -1,7 +1,7 @@
 ---
 title: Używanie punktów przerwania w debugerze programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826846"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389140"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
@@ -50,6 +50,8 @@ Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych 
  Możesz ustawić punkt przerwania w każdym wierszu kodu wykonywalnego. Na przykład w poniższym kodzie C#, można ustawić punkt przerwania w deklaracji zmiennej `for` pętli lub dowolny kod wewnątrz `for` pętli. Nie można ustawić punktu przerwania, deklaracje przestrzeni nazw lub klasy lub podpis metody.  
 
  Aby ustawić punkt przerwania w kodzie źródłowym, kliknij na marginesie po lewej stronie obok wiersza kodu. Możesz również wybrać wiersza i naciśnij klawisz **F9**, wybierz opcję **debugowania** > **Przełącz punkt przerwania**, lub kliknij prawym przyciskiem myszy i wybierz polecenie **punktuprzerwania**  >  **Wstaw punkt przerwania**. Punkt przerwania pojawia się jako czerwona kropka na lewym marginesie.  
+
+W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonywania. Dla kodu C++, można włączyć wyróżnianie punktu przerwania i bieżącej linii, wybierając **narzędzia** (lub **debugowania**) > **opcje**  >   **Debugowanie** >  **Podświetl cały wiersz źródła dla punktów przerwania i bieżącej instrukcji (tylko C++)**. 
   
  ![Ustaw punkt przerwania](../debugger/media/basicbreakpoint.png "podstawowego punktu przerwania")  
   

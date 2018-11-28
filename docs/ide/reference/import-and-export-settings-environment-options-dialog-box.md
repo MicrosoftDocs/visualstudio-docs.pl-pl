@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567a7f0eeb0fcf68d37dc38a484c3a8db15f3c40
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbdb15d5f6bc10d203924272fa6239a12df460d4
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942529"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388783"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Import i eksport ustawień, środowisko, opcje — Okno dialogowe
 
-Ta strona służy do określania, której jest zapisywany plik ustawień użytkownika i czy ma być używany plik ustawień zespołowych. Aby uzyskać więcej informacji o ustawieniach, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Ta strona służy do określenia, gdzie jest zapisywany plik ustawień użytkownika, albo użyć pliku ustawień zespołu. Aby uzyskać więcej informacji na temat ustawień, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-### <a name="see-also"></a>Zobacz też
+### <a name="see-also"></a>Zobacz także
 
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

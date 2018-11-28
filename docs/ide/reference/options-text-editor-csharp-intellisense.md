@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672488"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389266"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 
 Użyj **IntelliSense** Strona opcji, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla C#. Dostępu do tej opcji strony, wybierz **narzędzia** > **opcje**, a następnie wybierz **edytora tekstów**  >  **C#**  >  **IntelliSense**.
-
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 **IntelliSense** opcje strona zawiera następujące opcje:
 
@@ -86,7 +83,7 @@ Użyj **IntelliSense** Strona opcji, aby zmodyfikować ustawienia, które wpływ
 
 ## <a name="show-name-suggestions"></a>Pokaż sugestie dotyczące nazwy
 
-   Wykonuje uzupełnianie nazw obiektów automatycznych ostatnio wybrane elementy członkowskie. 
+Wykonuje uzupełnianie nazw obiektów automatycznych ostatnio wybrane elementy członkowskie.
 
 ## <a name="see-also"></a>Zobacz także
 

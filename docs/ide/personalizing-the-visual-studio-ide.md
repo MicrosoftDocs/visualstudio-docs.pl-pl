@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348699"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388728"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
-Visual Studio można spersonalizować na różne sposoby do najlepszej obsługi własne style rozwoju i wymagania. Wiele ustawień są przekazywane z Tobą między wystąpieniami programu Visual Studio&mdash;zobacz [zsynchronizowane ustawienia](../ide/synchronized-settings-in-visual-studio.md). W tym temacie krótko opisano różne personalizacje i gdzie można znaleźć więcej informacji.
+Visual Studio można spersonalizować na różne sposoby do najlepszej obsługi własne style rozwoju i wymagania. Wiele ustawień są przekazywane z Tobą między wystąpieniami programu Visual Studio&mdash;zobacz [zsynchronizowane ustawienia](../ide/synchronized-settings-in-visual-studio.md). W tym artykule krótko opisano różne personalizacje i gdzie można znaleźć więcej informacji.
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Dostosowywanie programu Visual Studio dla komputerów Mac IDE](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Ustawienia domyślne
+
+Możesz wybrać domyślną kolekcję ustawień optymalizujący programu Visual Studio dla danego typu rozwoju. Aby uzyskać więcej informacji, zobacz [ustawienia środowiska](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Opcji środowiska ogólnego
 
@@ -62,6 +66,7 @@ Można dostosować **narzędzia** menu, aby uruchomić narzędzia zewnętrzne. A
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Ustawienia środowiska](environment-settings.md)
 - [Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)
 - [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Dostosowywanie programu Visual Studio dla komputerów Mac w środowisku IDE](/visualstudio/mac/customizing-the-ide)

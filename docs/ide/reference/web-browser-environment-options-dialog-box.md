@@ -24,32 +24,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671888"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389448"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Przeglądarka sieci Web, środowisko, opcje — Okno dialogowe
+
 Ustawia opcje dla wewnętrznej przeglądarki sieci Web i program Internet Explorer. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **środowiska** folder, a następnie wybierz **przeglądarki sieci Web**.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > Otwieranie określone pliki lub składniki z sieci Web może wykonać kod na komputerze.
 
-
 ## <a name="home-page"></a>Strona główna
- Ustawia stronę wyświetlaną po otwarciu przeglądarki sieci Web w środowisku IDE.
+
+Ustawia stronę wyświetlaną po otwarciu przeglądarki sieci Web w środowisku IDE.
 
 ## <a name="search-page"></a>Strona wyszukiwania
- Umożliwia wyznaczenie stronę wyszukiwania wewnętrznej przeglądarki sieci Web. Ta lokalizacja może się różnić od strony wyszukiwania wystąpień programu Internet Explorer inicjowane poza zintegrowanego środowiska programistycznego (IDE).
+
+Umożliwia wyznaczenie stronę wyszukiwania wewnętrznej przeglądarki sieci Web. Ta lokalizacja może się różnić od strony wyszukiwania wystąpień programu Internet Explorer inicjowane poza zintegrowanego środowiska programistycznego (IDE).
 
 ## <a name="view-source-in"></a>Wyświetl źródło w
- Ustawia Edytor używana w celu otwarcia strony sieci Web, w przypadku wybrania **Wyświetl źródło** na stronie z wewnętrznej przeglądarki sieci Web.
+
+Ustawia Edytor używana w celu otwarcia strony sieci Web, w przypadku wybrania **Wyświetl źródło** na stronie z wewnętrznej przeglądarki sieci Web.
 
 -   **Edytor źródła** wybierz, aby wyświetlić źródła w [edytora](../../ide/writing-code-in-the-code-and-text-editor.md).
 
@@ -58,11 +60,11 @@ Ustawia opcje dla wewnętrznej przeglądarki sieci Web i program Internet Explor
 -   **Edytor zewnętrzny** zaznacz, aby wyświetlić kod źródłowy w innym edytorze. Określ ścieżkę do dowolnego edytora, który wybierzesz, na przykład Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Opcje programu Internet Explorer
+
 Kliknij, aby zmienić opcje programu Internet Explorer w **właściwości internetowe** okno dialogowe. Zmiany wprowadzone w tym oknie dialogowym wpływa na wewnętrznej przeglądarki sieci Web i wystąpień programu Internet Explorer inicjowane poza programem Visual Studio IDE (na przykład z Start menu).
 
 > [!NOTE]
 > Użyj **przeglądanie za pomocą** okno dialogowe, aby zastąpić wewnętrznej przeglądarki sieci Web programu Visual Studio przy użyciu wybranej przeglądarki. Okno dialogowe Przeglądanie za pomocą menu kliknij prawym przyciskiem myszy lub kontekst, na przykład plik HTML dostęp w swoim projekcie.
-
 
 ## <a name="see-also"></a>Zobacz także
 

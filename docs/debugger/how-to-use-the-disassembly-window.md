@@ -23,40 +23,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: e9cf75915b3ca17df1ee9e2ef41040147c146ea8
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257046"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52387672"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Wyświetlanie kodu dezasemblacji w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
-**Dezasemblacji** okno pokazuje kod zestawu odpowiadający instrukcjom utworzonym przez kompilator. Jeśli debugujesz kod zarządzany w instrukcjach zestawu odnoszą się do kodu macierzystego, utworzony przez kompilator Just-in-Time (JIT), a nie języka Microsoft intermediate language (MSIL) utworzony przez kompilator programu Visual Studio.  
-  
+**Dezasemblacji** okno pokazuje kod zestawu odpowiadający instrukcjom utworzonym przez kompilator. Jeśli debugujesz kod zarządzany w instrukcjach zestawu odnoszą się do kodu macierzystego, utworzony przez kompilator Just-in-Time (JIT), a nie języka Microsoft intermediate language (MSIL) utworzony przez kompilator programu Visual Studio.
+
 > [!NOTE]
 > W pełni wykorzystać **dezasemblacji** okna, zrozumieć i Naucz się podstaw [programowania języka asembler](https://wikipedia.org/wiki/Assembly_language).
-  
-Ta funkcja jest dostępna tylko jeśli włączone jest debugowanie na poziomie adresów. Nie jest dostępna dla skryptu lub debugowania SQL. 
 
-Oprócz instrukcje montażu **dezasemblacji** okna można wyświetlić następujące informacje opcjonalne:  
-  
-- Adres pamięci, w którym znajduje się każdą instrukcję. Dla natywnych aplikacji jest to adres pamięci rzeczywistych. Dla języka Visual Basic lub C#, to przesunięcie od początku funkcji.  
-  
-- Kod źródłowy, z którego pochodzi kod zestawu.  
-  
-- Możesz pisać kod w bajtach, oznacza to, reprezentacje bajt rzeczywistą lub instrukcji MSIL.  
-  
-- Nazwy symboli dla adresów pamięci.  
-  
-- Numery wierszy odpowiadających do kodu źródłowego.  
-  
-Instrukcje języka asemblera składają się z *mnemonik*, skróty nazw instrukcji, które są i *symbole* dla zmiennych, rejestrów i stałe. Każdą instrukcję języka maszyny jest reprezentowany przez jeden język asemblera skrót klawiszowy opcjonalnie następuje jeden lub więcej symboli.  
-  
-Kod zestawu odgrywa rejestry procesora lub dla kodu zarządzanego, rejestruje środowiska uruchomieniowego języka wspólnego. Możesz użyć **dezasemblacji** okna wraz z **rejestruje** okno, które można sprawdzić zawartość rejestru.  
-  
-Aby wyświetlić instrukcje kodu maszynowego w ich pierwotne forma liczbowa, a nie jako język asemblera, użyj **pamięci** okna lub wybierz **bajty kodu** z menu skrótów na liście **dezasemblacji**  okna.  
-  
+Ta funkcja jest dostępna tylko jeśli włączone jest debugowanie na poziomie adresów. Nie jest dostępna dla skryptu lub debugowania SQL.
+
+Oprócz instrukcje montażu **dezasemblacji** okna można wyświetlić następujące informacje opcjonalne:
+
+- Adres pamięci, w którym znajduje się każdą instrukcję. Dla natywnych aplikacji jest to adres pamięci rzeczywistych. Dla języka Visual Basic lub C#, to przesunięcie od początku funkcji.
+
+- Kod źródłowy, z którego pochodzi kod zestawu.
+
+- Możesz pisać kod w bajtach, oznacza to, reprezentacje bajt rzeczywistą lub instrukcji MSIL.
+
+- Nazwy symboli dla adresów pamięci.
+
+- Numery wierszy odpowiadających do kodu źródłowego.
+
+Instrukcje języka asemblera składają się z *mnemonik*, skróty nazw instrukcji, które są i *symbole* dla zmiennych, rejestrów i stałe. Każdą instrukcję języka maszyny jest reprezentowany przez jeden język asemblera skrót klawiszowy opcjonalnie następuje jeden lub więcej symboli.
+
+Kod zestawu odgrywa rejestry procesora lub dla kodu zarządzanego, rejestruje środowiska uruchomieniowego języka wspólnego. Możesz użyć **dezasemblacji** okna wraz z **rejestruje** okno, które można sprawdzić zawartość rejestru.
+
+Aby wyświetlić instrukcje kodu maszynowego w ich pierwotne forma liczbowa, a nie jako język asemblera, użyj **pamięci** okna lub wybierz **bajty kodu** z menu skrótów na liście **dezasemblacji**  okna.
+
 ## <a name="use-the-disassembly-window"></a>Korzystanie z okna dezasemblacji
 
 Aby włączyć **dezasemblacji** okna, w obszarze **narzędzia** > **opcje** (lub **narzędzia**  >  **Opcje**) > **debugowanie**, wybierz opcję **Włącz debugowanie na poziomie adresów**.
@@ -64,13 +64,13 @@ Aby włączyć **dezasemblacji** okna, w obszarze **narzędzia** > **opcje** (lu
 Aby otworzyć **dezasemblacji** okna podczas debugowania, wybierz opcję **Windows** > **dezasemblacji** lub naciśnij **Alt** + **8**.
 
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-Opcjonalne informacje należy włączyć lub wyłączyć, kliknij prawym przyciskiem myszy **dezasemblacji** oknie i ustawić lub wyczyścić odpowiednie opcje w menu skrótów.  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
 
-Żółta strzałka na lewym marginesie oznacza bieżący punkt wykonania. Dla kodu natywnego punkt wykonania odpowiada licznik programu procesora CPU. Ta lokalizacja zawiera następnej instrukcji, która zostanie wykonana w programach.  
+Opcjonalne informacje należy włączyć lub wyłączyć, kliknij prawym przyciskiem myszy **dezasemblacji** oknie i ustawić lub wyczyścić odpowiednie opcje w menu skrótów.
 
-## <a name="see-also"></a>Zobacz także  
+Żółta strzałka na lewym marginesie oznacza bieżący punkt wykonania. Dla kodu natywnego punkt wykonania odpowiada licznik programu procesora CPU. Ta lokalizacja zawiera następnej instrukcji, która zostanie wykonana w programach.
+
+## <a name="see-also"></a>Zobacz także
 
 * [Stronicowanie w górę lub w dół w pamięci](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

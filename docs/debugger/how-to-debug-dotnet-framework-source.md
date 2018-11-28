@@ -1,7 +1,7 @@
 ---
-title: 'Porady: debugowanie źródła .NET Framework | Dokumentacja firmy Microsoft'
+title: 'Porady: źródło debugowania środowiska .NET Framework | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 02/23/2018
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,54 +12,59 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c06a2328987201198bc2d5d15a4788d2a821d7b6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219123"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389283"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Porady: debugowanie źródła .NET Framework
-Debugowanie źródła .NET Framework, musi mieć dostęp do symboli debugowania dla kodu. Należy również umożliwić stepping do źródła .NET Framework.  
+# <a name="how-to-debug-net-framework-source"></a>Porady: źródło debugowania środowiska .NET Framework
+
+Aby debugować źródła .NET Framework, musisz mieć:
+
+- Włącz przechodzenie krok po kroku do źródła .NET Framework.  
   
- .NET Framework można włączyć przechodzenie krok po kroku i ściąganie symbolu w **opcje** okno dialogowe. Po włączeniu pobierania symboli, można od razu pobrać symbole lub po prostu włączyć opcję późniejszego pobrania. Jeśli użytkownik nie pobierze symboli natychmiast, symbole będą pobierane przy następnym uruchomieniu debugowania aplikacji. Możesz także zrobić ręczne pobranie z **modułów** okna lub **stos wywołań** okna.  
+- Mają dostęp do symboli debugowania dla kodu. 
   
-### <a name="to-enable-net-framework-source-debugging"></a>Aby włączyć debugowanie źródła .NET Framework  
+  Użytkownik chce pobrać symboli debugowania natychmiast lub ustawianie opcji późniejszego pobrania. Jeśli nie od razu pobrać symbole, pobierają przy następnym uruchomieniu debugowania aplikacji. Podczas debugowania, możesz również użyć **modułów** lub **stos wywołań** systemu windows, aby pobrać i załadować symbole.  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+### <a name="to-enable-stepping-into-net-framework-source"></a>Aby umożliwić stepping do źródła .NET Framework 
   
-2.  W **opcje** okno dialogowe, kliknij przycisk **debugowanie** kategorii.  
+1. W obszarze **narzędzia** (lub **debugowania**) > **opcje** > **debugowania** > **ogólne**, wybierz opcję **Włącz .NET Framework źródła stepping**.  
+   
+   - Jeśli masz włączoną opcję tylko mój kod, okno dialogowe ostrzeżenia informuje, że tylko mój kod jest teraz wyłączony. Wybierz **OK**.  
+   
+   - Jeśli nie masz pamięci podręcznej symboli zestawu, okno dialogowe ostrzeżenia informuje, że ustawiono domyślny pamięci podręcznej symboli. Wybierz **OK**.  
+   
+1. Wybierz **OK** zamknąć **opcje** okna dialogowego.
   
-3.  W **ogólne** polu **źródła Włącz .NET Framework przechodzenie krok po kroku.**  
+### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Aby ustawić lub zmienić lokalizacje źródłowe symboli i zachowanie ładowania
+
+1. Wybierz **symbole** kategorię w obszarze **narzędzia** (lub **debugowania**) > **opcje** > **debugowanie**.  
   
-    1.  Jeśli masz włączoną opcję tylko mój kod, okno dialogowe ostrzeżenia informuje, że tylko mój kod jest teraz wyłączony. Kliknij przycisk **OK**.  
+1. Na **symbole** w obszarze **symboli (.pdb) lokalizacji**, wybierz opcję **serwery symboli firmy Microsoft** symbole dostępu z publicznych serwerów symboli firmy Microsoft. Wybierz przyciski paska narzędzi, aby dodać inne lokalizacje symboli i zmienić kolejność ładowania. 
+   
+1. Aby zmienić pamięć podręczną symboli lokalnych, edytować, lub przejdź do innej lokalizacji w obszarze **pamięci podręcznej symboli w tym katalogu**.  
+   
+1. Aby pobrać symbole natychmiast, zaznacz **Załaduj wszystkie symbole**. Ten przycisk jest dostępny tylko podczas debugowania.  
+   
+   Jeśli nie można pobrać symboli teraz, one będą pobierane przy następnym uruchomieniu debugowania.  
+   
+1. Wybierz **OK** zamknąć **opcje** okna dialogowego.  
   
-    2.  Jeśli nie masz ustawione lokalizacji pamięci podręcznej symboli, osobne okno dialogowe ostrzeżenia informuje, że teraz ustawiono domyślną lokalizacji pamięci podręcznej symboli. Kliknij przycisk **OK**.  
+### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Aby załadować symbole z modułów lub stos wywołań systemu windows  
   
-4.  W obszarze **debugowanie** kategorię, kliknij przycisk **symbole**.  
+1. Podczas debugowania, Otwórz okno, wybierając **debugowania** > **Windows** > **modułów** lub **stos wywołań** . 
+   
+1. Kliknij prawym przyciskiem myszy moduł, dla którego nie załadowano symboli. W **modułów** oknie symbol podczas ładowania stanu jest **stan symboli** kolumny. W **stos wywołań** oknie Stan jest **stan ramki** kolumny i ramki jest wyszarzona. 
+   
+   - Wybierz **załadować symbole** menu do lokalizowania i ładowania plików symboli z folderu na komputerze. 
+   
+   - Wybierz **informacje o ładowaniu symboli** do wyświetlenia w lokalizacjach, debuger wyszukiwane symboli.  
+   
+   - Wybierz **ustawienia symboli** otworzyć **symbole** strony. Na **symbole** w obszarze **symboli (.pdb) lokalizacji**, wybierz opcję **serwery symboli firmy Microsoft** symbole dostępu z publicznych serwerów symboli firmy Microsoft. Wybierz przyciski paska narzędzi, aby dodać inne lokalizacje symboli i zmienić kolejność ładowania. Wybierz **OK** aby zamknąć okno dialogowe. 
   
-5.  Jeśli chcesz zmienić lokalizację pamięci podręcznej symboli, Edytuj lokalizację w **pamięci podręcznej symboli w tym katalogu** lub kliknij przycisk **Przeglądaj** aby wybrać lokalizację.  
-  
-6.  Jeśli chcesz pobrać symbole natychmiast, kliknij przycisk **Załaduj symbole z powyższych lokalizacji**.  
-  
-     Ten przycisk nie jest dostępna w trybie projektowania, ale jest dostępne podczas debugowania.  
-  
-     Jeśli użytkownik nie chce pobrać symboli teraz, symbole będą pobierane automatycznie przy następnym uruchomieniu debugowania programu.  
-  
-7.  Kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.  
-  
-### <a name="to-load-framework-symbols-using-the-modules-window"></a>Aby załadować symbole Framework w oknie modułów  
-  
-1.  W **modułów** okna (podczas debugowania, wybierz **debugowania** > **Windows** > **modułów**), Kliknij prawym przyciskiem myszy moduł, dla której symbole nie są ładowane. Można stwierdzić, czy symbole są załadowane lub nie, patrząc **stan symboli** kolumny.  
-  
-2.  Wskaż **ustawienia symboli** i kliknij przycisk **serwery symboli firmy Microsoft** można pobrać symbole z serwera publicznego symboli firmy Microsoft. Alternatywnie możesz kliknąć prawym przyciskiem myszy moduł i wybrać **załadować symbole** załadować z katalogu, w którym symbole zostały wcześniej zapisane.  
-  
-### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Aby załadować symbole Framework w oknie stosu wywołań  
-  
-1.  W **stos wywołań** okna, kliknij prawym przyciskiem myszy ramkę, dla której symbole nie są ładowane. Ramki będą wyszarzone.  
-  
-2.  Wskaż **ustawienia symboli** i kliknij przycisk **serwery symboli firmy Microsoft**, lub kliknij prawym przyciskiem myszy moduł i wybierz pozycję **ścieżki symboli**.  
-  
-## <a name="see-also"></a>Zobacz też  
+### <a name="see-also"></a>Zobacz także  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Określanie plików symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50a327173bd1d5edac9a378e0251a50ce045a256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 203422047ec1293e109a34699953897000893902
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831448"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389468"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |                              [C6270](../code-quality/c6270.md)                              |                                   Brak argumentu typu Float w funkcji formatującej                                   |
 |                              [C6271](../code-quality/c6271.md)                              |                                       Dodatkowy Argument w funkcji formatującej                                       |
 |                              [C6272](../code-quality/c6272.md)                              |                                     Argument niż typu Float w funkcji formatującej                                     |
-|                              [C6273](../code-quality/c6273.md)                              |                                    Argumen nie jest liczbą całkowitą w funkcji formatującej                                     |
+|                              [C6273](../code-quality/c6273.md)                              |                                    Argument nie jest liczbą całkowitą w funkcji formatującej                                     |
 |                              [C6274](../code-quality/c6274.md)                              |                                   -Znakowy argumentu funkcji formatującej                                   |
 |                              [C6276](../code-quality/c6276.md)                              |                                              Nieprawidłowe rzutowanie ciągu                                              |
 |                              [C6277](../code-quality/c6277.md)                              |                                          Nieprawidłowe wywołanie funkcji CreateProcess                                           |
@@ -108,7 +108,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |                             [C28215](../code-quality/c28215.md)                             |                    Nie można zastosować elementu typefix parametr, który ma już typefix                    |
 |                             [C28216](../code-quality/c28216.md)                             |        Adnotacja checkReturn dotyczy tylko warunków końcowych dla określonego parametru funkcji.         |
 |                             [C28217](../code-quality/c28217.md)                             |            Dla funkcji liczba parametrów dla adnotacji odpowiada znalezionej w pliku             |
-|                             [C28218](../code-quality/c28218.md)                             |             Dla paramteer funkcja adnotacji nie odpowiada znalezionej w pliku              |
+|                             [C28218](../code-quality/c28218.md)                             |             Dla parametru funkcji adnotacji nie odpowiada znalezionej w pliku              |
 |                             [C28219](../code-quality/c28219.md)                             |                 Element członkowski wyliczenia oczekiwał na adnotację parametru w adnotacji                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  Wyrażenia typu całkowitego oczekiwana dla adnotacji parametru w adnotacji                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        Oczekiwano wyrażenia ciągu dla parametru w adnotacji                         |

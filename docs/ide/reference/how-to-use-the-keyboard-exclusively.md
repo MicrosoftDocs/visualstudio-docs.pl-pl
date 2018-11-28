@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818266"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388403"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Porady: używanie wyłącznie klawiatury
 
@@ -33,16 +33,15 @@ ms.locfileid: "49818266"
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia wiele domyślne kombinacji klawiszy skrótów ułatwia nawigowanie do kodu w ramach zintegrowanego środowiska programistycznego (IDE). Aby uzyskać pełną listę skrótów klawiaturowych używane w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na skróty klawiaturowe są dostępne dla innych produktów firmy Microsoft, zobacz [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Kontrolki przybornika
 
- Formularz lub Projektant za pomocą klawiatury, można dodać kontrolki w przyborniku.
+Formularz lub Projektant za pomocą klawiatury, można dodać kontrolki w przyborniku.
 
-#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Aby dodać formanty z przybornika projektanta z klawiatury
+### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Aby dodać formanty z przybornika projektanta z klawiatury
 
-1. Na pasku menu wybierz **widoku**, **przybornika**.
+1. Na pasku menu wybierz **widoku** > **przybornika**.
 
 2. Użyj kombinacji klawisza Ctrl + Strzałka w górę lub Ctrl + klawiszy strzałek, aby poruszać się między sekcjami w przyborniku bieżącej karcie.
 
@@ -56,9 +55,9 @@ ms.locfileid: "49818266"
 
  Możesz poruszać się między opcje w oknie dialogowym i zmienić ustawienia opcji za pomocą klawiatury.
 
-#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Aby ustawić opcje w oknach dialogowych z klawiatury
+### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Aby ustawić opcje w oknach dialogowych z klawiatury
 
-1.  Użyj **kartę** lub **SHIFT + TAB** można przenieść w górę i w dół za pomocą formantów w oknie dialogowym.
+1.  Użyj **kartę** lub **Shift** + **kartę** można przenieść w górę i w dół za pomocą formantów w oknie dialogowym.
 
 2.  Aby zmienić ustawienia opcji:
 
@@ -66,23 +65,23 @@ ms.locfileid: "49818266"
 
     -   W przypadku pola wyboru Użyj **spacja** zaznacz lub usuń zaznaczenie.
 
-    -   W przypadku list rozwijanych, użyj **ALT** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW** i **Strzałka w dół** można zmienić wybrany element.
+    -   W przypadku list rozwijanych, użyj **Alt** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW** i **Strzałka w dół** można zmienić wybrany element.
 
-    -   W przypadku przycisków, naciśnij klawisz **ENTER** do wywołania.
+    -   W przypadku przycisków, naciśnij klawisz **Enter** do wywołania.
 
-    -   Siatki używaj klawiszy strzałek aby przejść. W przypadku list rozwijanych w siatkach, użyj **SHIFT** + **ALT** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW**i **Strzałka w dół** można zmienić wybranego elementu.
+    -   Siatki używaj klawiszy strzałek aby przejść. W przypadku list rozwijanych w siatkach, użyj **Shift** + **Alt** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW**i **Strzałka w dół** można zmienić wybranego elementu.
 
 ## <a name="window-and-file-navigation"></a>Okno i plik nawigacji
 
  IDE udostępnia kilka metod dla Ciebie poruszać się między otwartych narzędzi i okna dokumentu przy użyciu klawiatury. Można również przenosić i dokowanie okien narzędzi w różnych lokalizacjach za pomocą klawiatury.
 
-#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Aby poruszać się między systemem windows i plików w środowisku IDE z klawiatury
+### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Aby poruszać się między systemem windows i plików w środowisku IDE z klawiatury
 
 -   Aby poruszać się między plikami w edytora lub projektanta, wybierz klawisze CTRL + TAB kluczy do wyświetlenia Nawigator IDE z **aktywnych plików** wybrane. Wybierz klawisz Enter, aby przejść do pliku wyróżnione.
 
 -   Aby poruszać się między okien narzędzi zadokowanych, wybierz polecenie klawisze Alt + F7, aby wyświetlić Nawigator IDE z **Active narzędzie Windows** wybrane. Naciśnij klawisz Enter, aby przejść do wyróżnionego okna.
 
-#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Aby przenieść i dokowanie okien narzędzi z klawiatury
+### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Aby przenieść i dokowanie okien narzędzi z klawiatury
 
 1.  Przejdź do okna narzędzi, który chcesz przenieść, a następnie ustawić fokus.
 

@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750815"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388741"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 
@@ -64,9 +64,6 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
     3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po pewnym czasie odliczania zapytania i utworzeniu bazy danych Northwind.
-
-> [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
@@ -109,7 +106,7 @@ Następnie należy utworzyć zestaw danych o nazwie **NorthwindDataSet**:
 
 W tej sekcji utworzysz <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> , przeciągając **klientów** elementu z **źródeł danych** okna do formularza Windows.
 
-1. Na **danych** menu, wybierz **Pokaż źródła danych** otworzyć **okna źródeł danych**.
+1. Aby otworzyć **źródeł danych** okna na **danych** menu, wybierz **Pokaż źródła danych**.
 
 2. W **źródeł danych** okna, rozwiń węzeł **NorthwindDataSet** węzeł, a następnie wybierz **klientów** tabeli.
 
