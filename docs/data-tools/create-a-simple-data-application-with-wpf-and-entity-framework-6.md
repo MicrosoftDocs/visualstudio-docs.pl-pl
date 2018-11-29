@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822075"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305614"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6
 
@@ -74,7 +74,7 @@ W tym przykładzie użyto programu SQL Server Express LocalDB i przykładowej ba
 
     ![Wybierz obiekty bazy danych dla modelu](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Kreator generuje klas języka C#, które reprezentują model Entity Framework. Klasy są plain old C# klasy są one efekcie powiązań danych interfejsu użytkownika WPF. *Edmx* pliku w tym artykule opisano relacje i inne metadane, które kojarzy klas obiektów w bazie danych. *.Tt* pliki są szablony T4, które generują kod, który działa na podstawie modelu, a następnie zapisz zmiany w bazie danych. Widzisz wszystkie te pliki w **Eksploratora rozwiązań** w węźle Northwind_model:
+5. Kreator generuje C# klas, które reprezentują model Entity Framework. Klasy są plain old C# klasy są one efekcie powiązań danych interfejsu użytkownika WPF. *Edmx* pliku w tym artykule opisano relacje i inne metadane, które kojarzy klas obiektów w bazie danych. *.Tt* pliki są szablony T4, które generują kod, który działa na podstawie modelu, a następnie zapisz zmiany w bazie danych. Widzisz wszystkie te pliki w **Eksploratora rozwiązań** w węźle Northwind_model:
 
       ![Pliki modelu EF Eksploratora rozwiązań](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -116,7 +116,7 @@ Można napisać własny kod wiązania danych, ale jest znacznie łatwiejsze umo�
         </Grid.RowDefinitions>
     ```
 
-5.  Teraz Otwórz *MainWindow.xaml* tak, aby wyświetlanych w projektancie. Powoduje to, że **źródeł danych** okna, aby opcja pojawia się na marginesie okna programu Visual Studio obok **przybornika**. Kliknij kartę, aby otworzyć okno lub inne naciśnij **Shift**+**Alt**+**D** lub wybierz **widoku**  >  **Innych Windows** > **źródeł danych**. Użyjemy do wyświetlania każdej właściwości w klasie klientów w jego własnej poszczególnych tekst. Po pierwsze, kliknąć strzałkę w **klientów** kombi pole, a następnie wybierz **szczegóły**. Następnie przeciągnij węzeł na środkowej części powierzchni projektowej, tak aby projektanta wie, że chcesz, aby przejść w środkowym rzędzie. Jeśli użytkownik zostanie zgubiony przez użytkownika go, można określić wiersz ręcznie później w XAML. Domyślnie przez formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można rozmieścić je jednak na formularzu, takich jak. Na przykład może być uzasadnione, aby umieścić **nazwa** polu tekstowym u góry powyżej adresu. Przykładowa aplikacja w tym artykule zmienia kolejność pól i Reorganizuje je na dwie kolumny.
+5.  Teraz Otwórz *MainWindow.xaml* tak, że jest wyświetlana w projektancie. Powoduje to, że **źródeł danych** okna, aby opcja pojawia się na marginesie okna programu Visual Studio obok **przybornika**. Kliknij kartę, aby otworzyć okno lub inne naciśnij **Shift**+**Alt**+**D** lub wybierz **widoku**  >  **Innych Windows** > **źródeł danych**. Użyjemy do wyświetlania każdej właściwości w klasie klientów w jego własnej poszczególnych tekst. Po pierwsze, kliknąć strzałkę w **klientów** kombi pole, a następnie wybierz **szczegóły**. Następnie przeciągnij węzeł na środkowej części powierzchni projektowej, tak aby projektanta wie, że chcesz, aby przejść w środkowym rzędzie. Jeśli użytkownik zostanie zgubiony przez użytkownika go, można określić wiersz ręcznie później w XAML. Domyślnie przez formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można rozmieścić je jednak na formularzu, takich jak. Na przykład może być uzasadnione, aby umieścić **nazwa** polu tekstowym u góry powyżej adresu. Przykładowa aplikacja w tym artykule zmienia kolejność pól i Reorganizuje je na dwie kolumny.
 
      ![Powiązanie źródła danych klientów do pojedynczych formantów](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 

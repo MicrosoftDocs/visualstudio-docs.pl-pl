@@ -1,5 +1,5 @@
 ---
-title: Powiązywanie kontrolek z danymi w programie Visual Studio
+title: Powiązywanie kontrolek z danymi
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,21 +15,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4e27f5ce9536e7128330ebe932709a9be408b7e
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923020"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305266"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek z danymi w programie Visual Studio
+
 Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych kontrolki. Można utworzyć te formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna na powierzchnię projektową lub formantów na powierzchni w programie Visual Studio.
 
- W tym temacie opisano źródła danych, których można użyć w celu tworzenia formantów powiązanych z danymi. Opisuje także niektóre ogólne zadania podczas wiązania z danymi. Aby uzyskać bardziej szczegółowe informacje o sposobie tworzenia formantów powiązanych z danymi, zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) i [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+W tym temacie opisano źródła danych, których można użyć w celu tworzenia formantów powiązanych z danymi. Opisuje także niektóre ogólne zadania podczas wiązania z danymi. Aby uzyskać bardziej szczegółowe informacje o sposobie tworzenia formantów powiązanych z danymi, zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) i [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 ## <a name="data-sources"></a>Źródła danych
- W kontekście powiązania danych źródło danych reprezentuje dane w pamięci, która może być powiązana z poziomu interfejsu użytkownika. W praktyce źródła danych może być klasą Entity Framework, zestaw danych, punktu końcowego usługi, które są hermetyzowane w obiekcie proxy .NET, LINQ to SQL klas, lub dowolnego obiektu .NET lub kolekcji. Niektóre źródła danych umożliwiają tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna, podczas gdy inne źródła danych nie obsługują. W poniższej tabeli przedstawiono, jakie źródła danych są obsługiwane.
 
+W kontekście powiązania danych źródło danych reprezentuje dane w pamięci, która może być powiązana z poziomu interfejsu użytkownika. W praktyce źródła danych może być klasą Entity Framework, zestaw danych, punktu końcowego usługi, które są hermetyzowane w obiekcie proxy .NET, LINQ to SQL klas, lub dowolnego obiektu .NET lub kolekcji. Niektóre źródła danych umożliwiają tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna, podczas gdy inne źródła danych nie obsługują. W poniższej tabeli przedstawiono, jakie źródła danych są obsługiwane.
 
 | Źródło danych | Obsługa przeciągania i upuszczania w **Windows Forms Designer** | Obsługa przeciągania i upuszczania w **projektanta WPF** | Obsługa przeciągania i upuszczania w **projektanta Silverlight** |
 | - | - | - | - |
@@ -40,19 +41,21 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych kontro
 | Obiekt | Tak | Tak | Tak |
 | Program SharePoint | Tak | Tak | Tak |
 
- 1. Generowanie modelu przy użyciu **modelu Entity Data Model** kreatora, a następnie przeciągnij te obiekty do projektanta.
+1. Generowanie modelu przy użyciu **modelu Entity Data Model** kreatora, a następnie przeciągnij te obiekty do projektanta.
 
- 2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie klasy programu LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie klasy programu LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>Data Sources — Okno
- Źródła danych są dostępne dla projektu jako elementy **źródeł danych** okna. To okno jest widoczne, lub jest dostępny z **widoku** menu, gdy powierzchnię projektową formularza jest aktywnym oknem w projekcie. Można przeciągnąć elementy z tego okna, aby utworzyć formanty powiązane z danymi źródłowymi, a źródłami danych można również skonfigurować, klikając prawym przyciskiem myszy.
 
- ![Data Sources — Okno](../data-tools/media/raddata-data-sources-window.png)
+Źródła danych są dostępne dla projektu jako elementy **źródeł danych** okna. To okno jest widoczne, gdy powierzchnię projektową formularza jest aktywnym oknem w projekcie lub możesz otworzyć go (Jeśli projekt był otwarty), wybierając **widoku** > **Windows inne**  >   **Źródła danych**. Można przeciągnąć elementy z tego okna, aby utworzyć formanty powiązane z danymi źródłowymi, a źródłami danych można również skonfigurować, klikając prawym przyciskiem myszy.
 
- Dla każdego typu danych, która pojawia się w **źródeł danych** okna, tworzony jest domyślny formant podczas przeciągania elementu do projektanta. Przed przeciągnięciem elementu z **źródeł danych** oknie można zmienić formant, który zostanie utworzony. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+![Data Sources — Okno](../data-tools/media/raddata-data-sources-window.png)
+
+Dla każdego typu danych, która pojawia się w **źródeł danych** okna, tworzony jest domyślny formant podczas przeciągania elementu do projektanta. Przed przeciągnięciem elementu z **źródeł danych** oknie można zmienić formant, który zostanie utworzony. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Zadania związane z powiązaniem formantów z danymi
- W poniższej tabeli wymieniono niektóre z najczęściej wykonywane czynności należy wykonać, aby powiązać formanty z danymi.
+
+W poniższej tabeli wymieniono niektóre z najczęściej wykonywane czynności należy wykonać, aby powiązać formanty z danymi.
 
 |Zadanie|Więcej informacji|
 |----------| - |

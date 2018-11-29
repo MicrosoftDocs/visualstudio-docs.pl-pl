@@ -1,6 +1,8 @@
 ---
-title: Narzędzia zestawu danych w programie Visual Studio
-ms.date: 11/04/2016
+title: Narzędzia do obsługi zestawów danych
+ms.date: 11/21/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -45,16 +47,14 @@ ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3b7dfe75b27108384312bc10d20cbc80084eaaf6
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582463"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304990"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawu danych w programie Visual Studio
 
@@ -63,7 +63,7 @@ ms.locfileid: "39582463"
 
 A `DataSet` obiekt jest obiektem w pamięci, która jest zasadniczo mini bazy danych. Zawiera on `DataTable`, `DataColumn`, i `DataRow` obiektów, które można przechowywać i modyfikować dane z jednego lub więcej baz danych bez konieczności utrzymywanie otwartego połączenia. Zestaw danych przechowuje informacje o zmianach wprowadzonych do jego danych, więc aktualizacje, które mogą być śledzone i wysyłane z powrotem do bazy danych, gdy aplikacja staje się zakończone.
 
-Zestawy danych i powiązanych klas, które są zdefiniowane w *System.Data* przestrzeni nazw w bibliotece klas programu .NET Framework. Można tworzyć i modyfikować zestawów danych dynamicznie w kodzie za pomocą platformy ADO.NET. W dokumentacji w tej sekcji przedstawiono sposób pracy z zestawami danych za pomocą projektantów programu Visual Studio. Zestawy danych, które są tworzone za pomocą projektantów **TableAdapter** obiekty do interakcji z bazą danych. Użyj zestawów danych, które są tworzone programowo **DataAdapter** obiektów. Aby dowiedzieć się, jak programowe tworzenie zestawów danych, zobacz [DataAdapter i DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Zestawy danych i powiązanych klas, które są zdefiniowane w <xref:System.Data?displayProperty=fullName> przestrzeni nazw w bibliotece klas programu .NET Framework. Można tworzyć i modyfikować zestawów danych dynamicznie w kodzie za pomocą platformy ADO.NET. W dokumentacji w tej sekcji przedstawiono sposób pracy z zestawami danych za pomocą projektantów programu Visual Studio. Zestawy danych, które są tworzone za pomocą projektantów **TableAdapter** obiekty do interakcji z bazą danych. Użyj zestawów danych, które są tworzone programowo **DataAdapter** obiektów. Aby dowiedzieć się, jak programowe tworzenie zestawów danych, zobacz [DataAdapter i DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Jeśli aplikacja musi jedynie odczytywać dane z bazy danych, a nie wykonywania aktualizacji, dodaje lub usuwa, można zwykle uzyskać lepszą wydajność, za pomocą `DataReader` obiektu do pobrania danych do ogólnego `List` obiektu lub innej kolekcji. W przypadku wyświetlania danych, użytkownik może wiązania danych interfejsu użytkownika do kolekcji.
 
@@ -71,13 +71,13 @@ Jeśli aplikacja musi jedynie odczytywać dane z bazy danych, a nie wykonywania 
 
 Program Visual Studio zapewnia narzędzia w celu uproszczenia pracy z zestawami danych. Podstawowy przepływ pracy end-to-end jest:
 
-- Użyj **źródła danych** okna, aby utworzyć nowy zestaw danych z co najmniej jedno źródło danych. Użyj **Projektanta obiektów Dataset** do konfigurowania zestawu danych i ustaw jego właściwości. Na przykład należy określić tabel ze źródła danych do uwzględnienia, a które kolumny z każdej tabeli. Wybierz dokładnie zaoszczędzić ilość pamięci, która wymaga zestawu danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Użyj [okna źródeł danych](add-new-data-sources.md#data-sources-window) Aby utworzyć nowy zestaw danych z co najmniej jedno źródło danych. Użyj **Projektanta obiektów Dataset** do konfigurowania zestawu danych i ustaw jego właściwości. Na przykład należy określić tabel ze źródła danych do uwzględnienia, a które kolumny z każdej tabeli. Wybierz dokładnie zaoszczędzić ilość pamięci, która wymaga zestawu danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Określ relacje między tabelami i kluczy obcych są obsługiwane poprawnie. Aby uzyskać więcej informacji, zobacz [wypełnienia zestawów danych przy użyciu TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
 - Użyj **Kreator konfiguracji TableAdapter** określić zapytanie lub procedura składowana, która wypełnia zestawu danych i jakie operacje bazy danych (update, delete itd.) do zaimplementowania. Aby uzyskać więcej informacji zobacz następujące tematy:
 
-    - [Wypełnij zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
     - [Edytowanie danych w zestawach danych](../data-tools/edit-data-in-datasets.md)
 

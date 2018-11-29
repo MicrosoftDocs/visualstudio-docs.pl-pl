@@ -17,19 +17,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cc105d20ea3a1faf09fd75bcbf9e38cd5fdc833
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07c9cf40952eabcafe9d1587d3e2ae4aa02de3a0
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924567"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305086"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Utwórz formant użytkownika Windows Forms, który obsługuje powiązanie danych wyszukiwania
+
 Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istniejące kontrolki z **przybornika**, lub możesz tworzyć niestandardowe formanty, jeśli aplikacja wymaga funkcji, które nie są dostępne w standardowych kontrolek. W tym instruktażu pokazano, jak utworzyć formant, który implementuje <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Określa, które implementują <xref:System.ComponentModel.LookupBindingPropertiesAttribute> może zawierać trzy właściwości, które mogą być powiązane z danymi. Te kontrolki są podobne do <xref:System.Windows.Forms.ComboBox>.
 
- Aby uzyskać więcej informacji na temat tworzenia formantu, zobacz [kontrolek tworzenia formularzy Windows w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Aby uzyskać więcej informacji na temat tworzenia formantu, zobacz [kontrolek tworzenia formularzy Windows w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
- Użycie opcji tworzenia kontrolki w scenariuszach wiązania danych, musisz wdrożyć jedną z następujących atrybutów powiązania danych:
+Użycie opcji tworzenia kontrolki w scenariuszach wiązania danych, musisz wdrożyć jedną z następujących atrybutów powiązania danych:
 
 |Użycie atrybutu powiązania danych|
 | - |
@@ -37,9 +38,9 @@ Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istnie
 |Implementowanie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> kontrolek, takich jak <xref:System.Windows.Forms.DataGridView>, wyświetlanie listy (lub tabele) danych. Aby uzyskać więcej informacji, zobacz [tworzenie kontrolki użytkownika formularzy Windows obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementowanie <xref:System.ComponentModel.LookupBindingPropertiesAttribute> kontrolek, takich jak <xref:System.Windows.Forms.ComboBox>, wyświetlanie listy lub tabele danych, ale również są potrzebne do pojedynczej kolumny lub właściwości. (Ten proces jest opisany na tej stronie wskazówki).|
 
- Ten przewodnik tworzy kontrolkę wyszukiwania odnośników, który powiąże dane z dwóch tabel. W tym przykładzie użyto `Customers` i `Orders` tabel z przykładowej bazy danych Northwind. Kontrolka wyszukiwania jest powiązana z `CustomerID` pola z `Orders` tabeli. Używa tej wartości w celu wyszukania `CompanyName` z `Customers` tabeli.
+Ten przewodnik tworzy kontrolkę wyszukiwania odnośników, który powiąże dane z dwóch tabel. W tym przykładzie użyto `Customers` i `Orders` tabel z przykładowej bazy danych Northwind. Kontrolka wyszukiwania jest powiązana z `CustomerID` pola z `Orders` tabeli. Używa tej wartości w celu wyszukania `CompanyName` z `Customers` tabeli.
 
- Z tego instruktażu dowiesz się jak:
+Z tego instruktażu dowiesz się, jak:
 
 -   Utwórz nową **aplikacja interfejsu Windows Forms**.
 
@@ -73,14 +74,13 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
        Po pewnym czasie odliczania zapytania i utworzeniu bazy danych Northwind.
 
-## <a name="create-a-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
- Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**.
+## <a name="create-a-windows-forms-app-project"></a>Tworzenie projektu aplikacji Windows Forms
 
-#### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt Windows
+Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms** projektu.
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń **Visual C#**  lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
 
 3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
 
@@ -89,9 +89,8 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
      **LookupControlWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Dodaj kontrolkę użytkownika do projektu
- Ten poradnik tworzy kontrolkę wyszukiwania odnośników z **kontrolki użytkownika**, więc Dodaj **kontrolki użytkownika** elementu do **LookupControlWalkthrough** projektu.
 
-#### <a name="to-add-a-user-control-to-the-project"></a>Aby dodać kontrolkę użytkownika do projektu
+Ten poradnik tworzy kontrolkę wyszukiwania odnośników z **kontrolki użytkownika**, więc Dodaj **kontrolki użytkownika** elementu do **LookupControlWalkthrough** projektu.
 
 1.  Z **projektu** menu, wybierz opcję **Dodaj kontrolkę użytkownika**.
 
@@ -101,14 +100,11 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 ## <a name="design-the-lookupbox-control"></a>Projektowanie kontrolki LookupBox
 
-#### <a name="to-design-the-lookupbox-control"></a>Aby zaprojektować kontroli LookupBox
-
--   Przeciągnij <xref:System.Windows.Forms.ComboBox> z **przybornika** na powierzchnię projektu kontrolki użytkownika.
+Aby projektować kontrolkę LookupBox, przeciągnij <xref:System.Windows.Forms.ComboBox> z **przybornika** na powierzchnię projektu kontrolki użytkownika.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Dodaj wymagany atrybut wiązania danych
- Wyszukiwanie formantów to powiązanie danych pomocy technicznej, można zaimplementować <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-#### <a name="to-implement-the-lookupbindingproperties-attribute"></a>Aby zaimplementować atrybutu LookupBindingProperties
+Wyszukiwanie formantów to powiązanie danych pomocy technicznej, można zaimplementować <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
 1.  Przełącznik **LookupBox** formantu do widoku kodu. (Na **widoku** menu, wybierz **kodu**.)
 
@@ -120,11 +116,10 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 3.  Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Utwórz źródło danych z bazy danych
+
 Spowoduje to utworzenie źródła danych przy użyciu **konfiguracji źródła danych** kreatora, na podstawie `Customers` i `Orders` tabel w bazie danych Northwind.
 
-#### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
-
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 
@@ -147,9 +142,8 @@ Spowoduje to utworzenie źródła danych przy użyciu **konfiguracji źródła d
      **NorthwindDataSet** zostanie dodany do projektu, a `Customers` i `Orders` tabele są wyświetlane w **źródeł danych** okna.
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Ustaw w kolumnie CustomerID w tabeli zamówienia, aby użyć kontrolki LookupBox
- W ramach **źródeł danych** okna, można ustawić formant aby je utworzyć przed przeciąganie elementów do formularza.
 
-#### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>Aby ustawić kolumnie CustomerID, aby powiązać formant LookupBox
+W ramach **źródeł danych** okna, można ustawić formant aby je utworzyć przed przeciąganie elementów do formularza.
 
 1.  Otwórz **Form1** w projektancie.
 
@@ -168,23 +162,18 @@ Spowoduje to utworzenie źródła danych przy użyciu **konfiguracji źródła d
 8.  Kliknij strzałkę listy rozwijanej **CustomerID** kolumny, a wybierz **LookupBox**.
 
 ## <a name="add-controls-to-the-form"></a>Dodawanie formantów do formularza
- Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna na **Form1**.
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Aby utworzyć formanty powiązane z danymi w formularzu Windows
+Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna na **Form1**.
 
--   Przeciągnij **zamówienia** węzła z **źródeł danych** okna na formularzu Windows i sprawdź, czy **LookupBox** formant jest używany do wyświetlania danych w `CustomerID` kolumna.
+Aby utworzyć formanty powiązane z danymi w formularzu Windows, przeciągnij **zamówienia** węzła z **źródeł danych** okna na formularzu Windows i sprawdź, czy **LookupBox** formant jest używany do wyświetlania danych w `CustomerID` kolumny.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Powiąż formant aby wyszukać CompanyName z tabeli Customers
 
-#### <a name="to-setup-the-lookup-bindings"></a>Aby skonfigurować powiązania wyszukiwania odnośników
+Aby skonfigurować powiązania wyszukiwania odnośników, wybierz główny **klientów** w węźle **źródeł danych** okna, a następnie przeciągnij pole na kombi w **CustomerIDLookupBox** na **Form1**.
 
--   Wybierz główny **klientów** w węźle **źródeł danych** okna, a następnie przeciągnij pole na kombi w **CustomerIDLookupBox** na **Form1** .
+Spowoduje to utworzenie powiązania danych do wyświetlenia `CompanyName` z `Customers` tabeli przy zachowaniu `CustomerID` wartość z `Orders` tabeli.
 
-     Spowoduje to utworzenie powiązania danych do wyświetlenia `CompanyName` z `Customers` tabeli przy zachowaniu `CustomerID` wartość z `Orders` tabeli.
-
-## <a name="running-the-application"></a>Uruchamianie aplikacji
-
-#### <a name="to-run-the-application"></a>Aby uruchomić aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 -   Naciśnij klawisz **F5** do uruchomienia aplikacji.
 

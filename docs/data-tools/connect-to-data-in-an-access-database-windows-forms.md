@@ -1,5 +1,5 @@
 ---
-title: Łączenie z danymi w bazie danych programu Access (formularze systemu Windows)
+title: Łączenie z danymi w bazie danych programu Access (formularze Windows)
 ms.date: 09/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,117 +16,123 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1d0b5d2d0391d401394929e16d5bfc97aa6d555
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 33981ac76d8c502d56571a112ee8cd1e0c11dce0
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282642"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304587"
 ---
-# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze systemu Windows)
-Możesz połączyć się z bazą danych programu Access (albo *.mdf* pliku lub *.accdb* pliku) w programie Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.
+# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze Windows)
+
+Można połączyć z bazą danych programu Access (albo *.mdf* pliku lub *accdb* plików) za pomocą programu Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby korzystać z tych procedur, należy projekt aplikacji formularzy systemu Windows i albo bazy danych programu Access (*.accdb* pliku) lub baza danych programu Access 2000-2003 (*.mdb* pliku). Wykonaj procedurę, która odnosi się do typu Twojego pliku.
 
-## <a name="creating-the-dataset-for-an-accdb-file"></a>Tworzenie zestawu danych dla pliku .accdb
- Można połączyć z baz danych utworzonych za pomocą dostępu 2013, Office 365, Access 2010 lub Access 2007 przy użyciu poniższej procedury.
+Aby korzystać z tych procedur, potrzebny jest projekt aplikacji Windows Forms i jednej bazie danych programu Access (*accdb* plików) lub bazy danych programu Access 2000-2003 (*.mdb* pliku). Wykonaj procedurę, która odnosi się do typu Twojego pliku.
 
-#### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
+## <a name="creating-the-dataset-for-an-accdb-file"></a>Tworzenie zestawu danych dla pliku accdb
 
-1.  Otwórz aplikacji formularzy systemu Windows, z którym chcesz się połączyć danych.
+Możesz połączyć się z bazami danych utworzonymi za pomocą programu Access 2013, Office 365, Access 2010 lub Access 2007 za pomocą poniższej procedury.
 
-2.  Na **widoku** menu, wybierz opcję **inne okna** > **źródeł danych**.
+### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
 
-     ![Wyświetlać innych źródeł danych systemu Windows](../data-tools/media/viewdatasources.png)
+1.  Otwórz aplikację Windows Forms, z którym chcesz się połączyć dane.
+
+2.  Aby otworzyć **źródeł danych** okna na **widoku** menu, wybierz opcję **Windows inne** > **źródeł danych**.
+
+     ![Wyświetl inne źródła danych Windows](../data-tools/media/viewdatasources.png)
 
 3.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
 
-     **Kreator konfiguracji źródła danych** otwiera.
+     **Kreatora konfiguracji źródła danych** zostanie otwarty.
 
-4.  Wybierz **bazy danych** na **wybierz typ źródła danych** , a następnie wybierz **dalej**.
+4.  Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie wybierz pozycję **dalej**.
 
-5.  Wybierz **Dataset** na **wybierz Model bazy danych** , a następnie wybierz **dalej**.
+5.  Wybierz **Dataset** na **wybierz Model bazy danych** strony, a następnie wybierz pozycję **dalej**.
 
-6.  Na **wybierz połączenie danych** wybierz pozycję **nowe połączenie** można skonfigurować nowe połączenia danych.
+6.  Na **wybierz połączenie danych** wybierz opcję **nowe połączenie** Aby skonfigurować nowe połączenie danych.
 
-     **Dodawanie połączenia** zostanie otwarte okno dialogowe.
+     **Dodaj połączenie** zostanie otwarte okno dialogowe.
 
 7.  Wybierz **zmiany** znajdujący się obok **źródła danych** pola tekstowego.
 
-     **Źródło danych zmiany** zostanie otwarte okno dialogowe.
+     **Zmień źródło danych** zostanie otwarte okno dialogowe.
 
-8.  Na liście źródeł danych, wybierz  **\<innych\>**. W **dostawcy danych** listy rozwijanej, wybierz pozycję **.NET Framework Data Provider for OLE DB**, a następnie wybierz **OK**.
+8.  Na liście źródeł danych, wybierz opcję  **\<innych\>**. W **dostawcy danych** listę rozwijaną, wybierz opcję **.NET Framework Data Provider for OLE DB**, następnie wybierz **OK**.
 
-9. W **Dodawanie połączenia** okno dialogowe, wybierz opcję **Microsoft Office 12.0 dostępu do bazy danych aparatu OLE DB Provider** z **dostawcy OLE DB** listy rozwijanej.
+9. Ponownie **Dodaj połączenie** okno dialogowe, wybierz opcję **Office 12.0 Access bazy danych aparatu dostawcy Microsoft OLE DB** z **dostawcy OLE DB** listy rozwijanej.
 
-     ![OLE DB dostawcy programu Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
+     ![OLE DB dostawcy pakietu Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
-     >  Jeśli nie widzisz **Microsoft Office 12.0 dostępu do bazy danych aparatu OLE DB Provider** w dostawcy OLE DB listy rozwijanej, należy zainstalować [sterownik systemu Office 2007: składniki łączności danych](https://www.microsoft.com/download/confirmation.aspx?id=23734).
+     > Jeśli nie widzisz **Office 12.0 Access bazy danych aparatu dostawcy Microsoft OLE DB** w dostawcy OLE DB listy rozwijanej, użytkownik może być konieczne zainstalowanie [sterownik systemu Office 2007: składniki łączności danych](https://www.microsoft.com/download/confirmation.aspx?id=23734).
 
-9. W **nazwę serwera lub pliku** pola tekstowego, określ ścieżkę i nazwę pliku *.accdb* chcesz nawiązać połączenie, a następnie wybierz plik **OK**. (Jeśli plik bazy danych ma nazwę użytkownika i hasło, określ je przed wybraniem **OK**.)
+9. W **nazwę serwera lub pliku** polu tekstowym wpisz ścieżkę i nazwę pliku *accdb* pliku chcesz nawiązać połączenie, a następnie wybierz **OK**. (Jeśli plik bazy danych ma nazwę użytkownika i hasło, podaj je przed wybraniem **OK**.)
 
 10. Wybierz **dalej** na **wybierz połączenie danych** strony.
 
-     Mogą być wyświetlane okno dialogowe z informacją o plik danych nie ma w bieżącym projekcie. Wybierz **tak** lub **nr**.
+     Mogą być wyświetlane okno dialogowe informujące, plik danych nie jest w bieżącym projekcie. Wybierz **tak** lub **nie**.
 
-11. Wybierz **dalej** na **zapisać parametry połączenia w pliku konfiguracji aplikacji** strony.
+11. Wybierz **dalej** na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** strony.
 
-12. Rozwiń węzeł **tabel** węzła na **wybierz obiekty bazy danych** strony.
+12. Rozwiń **tabel** węzeł **wybierz obiekty bazy danych** strony.
 
-13. Wybierz niezależnie od tabel lub widoków w zestawie danych, a następnie wybierz **Zakończ**.
+13. Wybierz dowolne tabel lub widoków w zestawie danych, a następnie wybierz **Zakończ**.
 
-     Zestaw danych zostanie dodany do projektu i tabele i widoki są wyświetlane w **źródeł danych** okna.
+     Zestaw danych zostanie dodany do projektu, a tabele i widoki pojawią się **źródeł danych** okna.
 
-## <a name="create-the-dataset-for-an-mdb-file"></a>Tworzenie zestawu danych dla plikowych
- Utwórz zestaw danych, uruchamiając **Kreator konfiguracji źródła danych**.
+## <a name="create-the-dataset-for-an-mdb-file"></a>Tworzenie zestawu danych dla pliku MDB
 
-#### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
+Utwórz zestaw danych, uruchamiając **Kreatora konfiguracji źródła danych**.
 
-1.  Otwórz aplikacji formularzy systemu Windows, z którym chcesz się połączyć danych.
+### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
 
-2.  Na **widoku** menu, wybierz opcję **inne okna** > **źródeł danych**.
+1.  Otwórz aplikację Windows Forms, z którym chcesz się połączyć dane.
 
-     ![Wyświetlać innych źródeł danych systemu Windows](../data-tools/media/viewdatasources.png)
+2.  Na **widoku** menu, wybierz opcję **Windows inne** > **źródeł danych**.
+
+     ![Wyświetl inne źródła danych Windows](../data-tools/media/viewdatasources.png)
 
 3.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
 
-     **Kreator konfiguracji źródła danych** otwiera.
+     **Kreatora konfiguracji źródła danych** zostanie otwarty.
 
-4.  Wybierz **bazy danych** na **wybierz typ źródła danych** , a następnie wybierz **dalej**.
+4.  Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie wybierz pozycję **dalej**.
 
-5.  Wybierz **Dataset** na **wybierz Model bazy danych** , a następnie wybierz **dalej**.
+5.  Wybierz **Dataset** na **wybierz Model bazy danych** strony, a następnie wybierz pozycję **dalej**.
 
-6.  Na **wybierz połączenie danych** wybierz pozycję **nowe połączenie** można skonfigurować nowe połączenia danych.
+6.  Na **wybierz połączenie danych** wybierz opcję **nowe połączenie** Aby skonfigurować nowe połączenie danych.
 
-7.  Jeśli źródło danych nie jest **pliku bazy danych programu Microsoft Access (OLE DB)**, wybierz pozycję **zmiany** otworzyć **źródło danych zmiany** okno dialogowe i wybierz **firmy Microsoft Dostęp do pliku bazy danych**, a następnie wybierz **OK**.
+7.  Jeśli źródło danych jest **plik bazy danych programu Microsoft Access (OLE DB)**, wybierz opcję **zmiany** otworzyć **Zmień źródło danych** okno dialogowe, a następnie wybierz **firmy Microsoft Dostęp do pliku bazy danych**, a następnie wybierz pozycję **OK**.
 
-8.  W **nazwa pliku bazy danych**, określ ścieżkę i nazwę *.mdb* chcesz nawiązać połączenie, a następnie wybierz plik **OK**.
+8.  W **nazwa pliku bazy danych**, określ ścieżkę i nazwę *.mdb* pliku chcesz nawiązać połączenie, a następnie wybierz **OK**.
 
      ![Dodaj plik bazy danych programu Access połączenia](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Wybierz **dalej** na **wybierz połączenie danych** strony.
 
-10. Wybierz **dalej** na **zapisać parametry połączenia w pliku konfiguracji aplikacji** strony.
+10. Wybierz **dalej** na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** strony.
 
-11. Rozwiń węzeł **tabel** węzła na **wybierz obiekty bazy danych** strony.
+11. Rozwiń **tabel** węzeł **wybierz obiekty bazy danych** strony.
 
-12. Wybierz niezależnie od tabel lub widoków w zestawie danych, a następnie wybierz **Zakończ**.
+12. Wybierz dowolne tabel lub widoków w zestawie danych, a następnie wybierz **Zakończ**.
 
-     Zestaw danych zostanie dodany do projektu i tabele i widoki są wyświetlane w **źródeł danych** okna.
+     Zestaw danych zostanie dodany do projektu, a tabele i widoki pojawią się **źródeł danych** okna.
 
 ## <a name="security"></a>Zabezpieczenia
- Przechowywanie poufnych informacji (takich jak hasło) może wpłynąć na bezpieczeństwo aplikacji. Korzystanie z uwierzytelniania systemu Windows (znanego również jako zabezpieczenia zintegrowane) jest bezpieczniejszym sposobem na kontrolowanie dostępu do bazy danych. Aby uzyskać więcej informacji, zobacz [ochrony informacji o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
+
+Przechowywanie poufnych informacji (takich jak hasło) może wpłynąć na bezpieczeństwo aplikacji. Korzystanie z uwierzytelniania systemu Windows (znanego również jako zabezpieczenia zintegrowane) jest bezpieczniejszym sposobem na kontrolowanie dostępu do bazy danych. Aby uzyskać więcej informacji, zobacz [ochrona informacji o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
 
 ## <a name="next-steps"></a>Następne kroki
- Nowo utworzony zestaw danych jest teraz dostępna w **źródeł danych** okna. Można teraz wykonywać dowolne z następujących zadań:
 
--   Wybierz elementy w **źródeł danych** okna i przeciągnij je na formularzu (zobacz [formanty formularzy systemu Windows powiązać z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
+Nowo utworzony zestaw danych jest teraz dostępna w **źródeł danych** okna. Można teraz wykonać dowolne z następujących zadań:
 
--   Otworzyć źródła danych w **Projektant obiektów Dataset** umożliwiają dodawanie lub edytowanie obiektów, które tworzą zestaw danych.
+-   Zaznacz elementy w **źródeł danych** okna i przeciągnij je na formularzu (zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
 
--   Dodaj logikę sprawdzania poprawności do <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> zdarzeń tabel danych w zestawie danych (zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md)).
+-   Otwórz źródło danych w **Projektanta obiektów Dataset** można dodawać lub edytować obiekty, które składają się dataset.
+
+-   Dodaj logikę walidacji do <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> wydarzenia tabel danych w zestawie danych (zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Zobacz także
 

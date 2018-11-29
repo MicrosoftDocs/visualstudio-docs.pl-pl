@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 4a0d248f59754d3f46e8fab0e0924c36a80b0d89
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750770"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305549"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 
@@ -71,7 +71,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń **Visual C#**  lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
 
 3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
 
@@ -81,7 +81,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 ## <a name="create-the-data-source"></a>Utwórz źródło danych
 
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 

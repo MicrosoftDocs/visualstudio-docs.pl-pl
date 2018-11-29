@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924203"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305484"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
+
 Termin *tabeli odnośników* (nazywane czasem *powiązanie wyszukiwania odnośników*) opisano kontrolkę wyświetlającą informacje z danych w jednej tabeli na podstawie wartości pola klucza obcego w innej tabeli. Można utworzyć tabeli odnośników, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w **źródeł danych** okna na formant, który jest już powiązany z kolumny lub właściwości w pokrewnej tabeli podrzędnej.
 
 Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabela zawiera `CustomerID` oznacza to, który klient złożył zamówienie. `CustomerID` To klucz obcy wskazujący rekord klienta w `Customers` tabeli. Po wyświetleniu listy zamówień z `Orders` tabeli, możesz chcieć wyświetlić nazwę klienta rzeczywiste zamiast `CustomerID`. Ponieważ nazwa klienta znajduje się w `Customers` tabeli, należy utworzyć tabeli odnośników, aby wyświetlić nazwę klienta. Używa tabeli odnośników `CustomerID` wartość w `Orders` nagrywanie Przejdź relacje i zwraca nazwę klienta.
@@ -41,7 +42,7 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
     -   Obiekty. Aby uzyskać więcej informacji, zobacz [powiązania do obiektów w programie Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    >  Zanim można utworzyć tabeli odnośników, dwie pokrewne tabele lub obiekty musi istnieć jako źródło danych dla projektu.
+    > Zanim można utworzyć tabeli odnośników, dwie pokrewne tabele lub obiekty musi istnieć jako źródło danych dla projektu.
 
 2.  Otwórz **WPF Designer**i upewnij się, że projektant zawiera kontener, który jest prawidłowe miejsca docelowego dla elementów w **źródeł danych** okna.
 
@@ -52,7 +53,7 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
 4.  Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną lub obiektu oraz pokrewną tabelę podrzędną lub obiektu.
 
     > [!NOTE]
-    >  Pokrewną tabelę podrzędną lub obiekt jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej lub obiektu.
+    > Pokrewną tabelę podrzędną lub obiekt jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej lub obiektu.
 
 5.  Kliknij menu rozwijane dla węzła podrzędnego, a następnie wybierz pozycję **szczegóły**.
 
@@ -67,12 +68,12 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
     -   **ListView**
 
         > [!NOTE]
-        >  Jeśli **ListBox** lub **ListView** formant nie jest wyświetlany na liście te formanty można dodać do listy. Aby uzyskać informacje, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Jeśli **ListBox** lub **ListView** formant nie jest wyświetlany na liście te formanty można dodać do listy. Aby uzyskać informacje, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     -   Kontrolki niestandardowej, która pochodzi od klasy <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        >  Informacje o sposobie dodawania niestandardowego określa się na liście kontrolek można wybrać dla elementów w **źródeł danych** okna, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Informacje o sposobie dodawania niestandardowego określa się na liście kontrolek można wybrać dla elementów w **źródeł danych** okna, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8.  Przeciągnij węzeł podrzędny z **źródeł danych** okna na kontenerze projektanta WPF. (W powyższym przykładzie jest węzeł podrzędny **zamówienia** węzła.)
 

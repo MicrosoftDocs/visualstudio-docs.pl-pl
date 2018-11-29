@@ -1,6 +1,6 @@
 ---
 title: Dodawanie nowych źródeł danych
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666634"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304613"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 
-W kontekście programu .NET data tools w programie Visual Studio termin *źródła danych* odwołuje się do obiektów platformy .NET, połączyć się z magazynem danych, które udostępniają dane do aplikacji .NET. Projektantów programu Visual Studio mogą wykorzystywać dane wyjściowe źródła danych, aby wygenerować standardowy kod, który powiąże dane do formularzy podczas przeciągania i upuszczania obiektów bazy danych z **źródeł danych** okna. Tego rodzaju źródła danych może być:
+W kontekście programu .NET data tools w programie Visual Studio termin *źródła danych* odwołuje się do obiektów platformy .NET, połączyć się z magazynem danych, które udostępnia dane do aplikacji .NET. Projektantów programu Visual Studio mogą wykorzystywać dane wyjściowe źródła danych, aby wygenerować standardowy kod, który powiąże dane do formularzy podczas przeciągania i upuszczania obiektów bazy danych z **źródeł danych** okna. Tego rodzaju źródła danych może być:
 
 - Klasa w modelu Entity Framework, który jest skojarzony z pewnego rodzaju bazy danych.
 
@@ -43,7 +43,16 @@ Możesz tworzyć i edytować źródła danych za pomocą **Kreatora konfiguracji
 
 ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png)
 
-Po utworzeniu źródła danych, zostanie wyświetlony w **źródeł danych** okno narzędzi (**Shift**+**Alt**+**D**lub **widoku** > **innych Windows** > **źródła danych**). Można przeciągnąć źródła danych z **źródeł danych** okna na powierzchnię projektową formularza lub formantu. Powoduje to schematyczny kod służący do wygenerowania wyświetlającą dane z magazynu danych. Poniższa ilustracja przedstawia zestaw danych, który został porzucony w formularzu Windows. Jeśli wybierzesz **F5** na aplikacji, dane z bazy danych są wyświetlane w kontrolek formularza.
+## <a name="data-sources-window"></a>Data Sources — Okno
+
+Po utworzeniu źródła danych, zostanie wyświetlony w **źródeł danych** okna narzędzi.
+
+> [!TIP]
+> Aby otworzyć **źródeł danych** , upewnij się, że projekt jest otwarty, a następnie naciśnij klawisz **Shift**+**Alt**+**D**lub wybierz **widoku** > **Windows inne** > **źródeł danych**.
+
+Można przeciągnąć źródła danych z **źródeł danych** okna na powierzchnię projektową formularza lub formantu. Powoduje to schematyczny kod służący do wygenerowania wyświetlającą dane z magazynu danych.
+
+Poniższa ilustracja przedstawia zestaw danych, który został porzucony w formularzu Windows. Jeśli wybierzesz **F5** na aplikacji, dane z bazy danych są wyświetlane w kontrolek formularza.
 
 ![Operacja przeciągania źródła danych](../data-tools/media/raddata-data-source-drag-operation.png)
 

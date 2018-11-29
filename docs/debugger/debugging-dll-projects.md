@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dc4277bfdc783d969a2e98fb93fcc5975e9ad7
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607630"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305315"
 ---
-# <a name="debug-dlls-in-visual-studio"></a>Debugowanie bibliotek DLL w programie Visual Studio
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debugowanie bibliotek DLL w programie Visual Studio (C#, C++, Visual Basic F#)
 
 Biblioteka DLL (Biblioteka DLL) jest bibliotekę, która zawiera kod i dane, które mogą być używane przez więcej niż jedną aplikację. Możesz użyć programu Visual Studio do tworzenia, tworzenie, konfigurowanie i debugowanie bibliotek DLL. 
 
@@ -35,7 +35,7 @@ Biblioteka DLL (Biblioteka DLL) jest bibliotekę, która zawiera kod i dane, kt�
 
 Następujące szablony projektów programu Visual Studio można utworzyć biblioteki DLL:
 
-- C#lub biblioteki klas języka Visual Basic 
+- C#, Visual Basic lub F# Biblioteka klas 
 - C#lub Visual Basic, Windows Forms Biblioteka kontrolek (WCF) 
 - C++ biblioteki dołączanej (dynamicznie DLL)
 
@@ -54,7 +54,7 @@ Gdy używasz szablonu projektu programu Visual Studio do tworzenia aplikacji, [!
 - [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Porady: konfiguracji ustaw wartość Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)  
   
-### <a name="set-c-debuggableattribute"></a>Ustaw DebuggableAttribute języka C++
+### <a name="set-c-debuggableattribute"></a>Set C++ DebuggableAttribute
 
 Aby debuger dołączał do biblioteki DLL języka C++, kod C++ musi wysyłać właściwość `DebuggableAttribute`. 
 
@@ -113,7 +113,6 @@ Aplikacja, która wywołuje bibliotekę DLL może być:
 - Znajduje się w sieci web i dostępne za pośrednictwem adresu URL.  
 - Aplikacja internetowa ze stroną sieci web, która osadza biblioteki DLL.  
   
-
 Aby debugować bibliotekę DLL z aplikacji wywołującej, można wykonywać następujące czynności:  
   
 - Otwórz projekt dla aplikacji wywołującej i Rozpocznij debugowanie wybierając **debugowania** > **Rozpocznij debugowanie** lub naciskając **F5**.  
@@ -131,7 +130,7 @@ Podczas debugowania, możesz użyć **modułów** okna, aby sprawdzić bibliotek
 Możesz użyć **bezpośrednie** okna, aby ocenić funkcje biblioteki DLL lub metody w czasie projektowania. **Bezpośrednie** okna odgrywa rolę aplikacji wywołującej. 
 
 >[!NOTE]
->Możesz użyć **bezpośrednie** okna w czasie projektowania za pomocą większość typów projektów. Obecnie nie jest obsługiwane dla platformy .NET Core, SQL lub projekty sieci web.
+>Możesz użyć **bezpośrednie** okna w czasie projektowania za pomocą większość typów projektów. Nie jest obsługiwana dla programu SQL, projekty sieci web lub skryptu.
 
 Na przykład, aby przetestować metodę o nazwie `Test` w klasie `Class1`:
 
@@ -143,7 +142,7 @@ Na przykład, aby przetestować metodę o nazwie `Test` w klasie `Class1`:
    Class1 obj = new Class1();  
    ```  
   
-   W języku C# wszystkie nazwy muszą być w pełni kwalifikowana. Wszelkie metody lub zmienne musi być w bieżącym zakresie i kontekście, gdy usługa językowa podejmuje próbę obliczenia wyrażenia.  
+   W C#, wszystkie nazwy muszą być w pełni kwalifikowana. Wszelkie metody lub zmienne musi być w bieżącym zakresie i kontekście, gdy usługa językowa podejmuje próbę obliczenia wyrażenia.  
    
 1. Przy założeniu, że `Test` ma jedną `int` parametru oceny `Test` przy użyciu **bezpośrednie** okna:  
    

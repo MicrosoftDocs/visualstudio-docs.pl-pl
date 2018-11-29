@@ -1,5 +1,5 @@
 ---
-title: Powiązywanie kontrolek WPF z danymi w programie Visual Studio — część 1 | Dokumentacja firmy Microsoft
+title: Powiązywanie kontrolek WPF z danymi — część 1
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942910"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305341"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek WPF z danymi w programie Visual Studio
 
@@ -51,7 +51,6 @@ Można przeciągnąć elementy w **źródeł danych** okna tylko prawidłowe mie
 Podczas przeciągania elementu z **źródeł danych** okna [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], program Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] definiuje nowy formant powiązany z danymi (lub wiąże istniejący formant ze źródłem danych). Dla niektórych źródeł danych programu Visual Studio generuje kod w pliku związanym z kodem, który wypełnia źródło danych danymi.
 
 W poniższej tabeli wymieniono [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] i kod generowany dla każdego typu źródła danych w programie Visual Studio **źródeł danych** okna.
-
 
 | Źródło danych | Generowanie pliku XAML, która wiąże formant ze źródłem danych | Generowanie kodu, który wypełnia źródło danych danymi |
 | - | - | - |
@@ -101,7 +100,7 @@ Visual Studio generuje plik XAML, który wykonuje następujące czynności:
 Podczas przeciągania obiektu lub właściwości z **źródeł danych** okna projektanta programu Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] tworzący formant powiązany z danymi (lub wiąże istniejący formant z obiektem lub właściwością). Jednak program Visual Studio generuje kodu, który wypełnia obiekt danych. Musisz napisać ten kod samodzielnie.
 
 > [!NOTE]
->  Klasy niestandardowe muszą być publiczne i domyślnie ma konstruktora bez parametrów. One klas zagnieżdżonych can'tbe, które mają "dot" w składni. Aby uzyskać więcej informacji, zobacz [XAML klasy i niestandardowe dla WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Klasy niestandardowe muszą być publiczne i domyślnie ma konstruktora bez parametrów. One klas zagnieżdżonych can'tbe, które mają "dot" w składni. Aby uzyskać więcej informacji, zobacz [XAML klasy i niestandardowe dla WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Program Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wykonujący następujące czynności:
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b2a72306a3636bb5bca601f600afdaa175b4dd1
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 2662eda0be7c3a936f37712c417469abd568b05b
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582424"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305497"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 
@@ -71,7 +71,7 @@ Pierwszym krokiem jest tworzenie aplikacji Windows Forms. Przypisanie nazwy do p
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń **Visual C#**  lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
 
 3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
 
@@ -83,7 +83,7 @@ Pierwszym krokiem jest tworzenie aplikacji Windows Forms. Przypisanie nazwy do p
 
 Spowoduje to utworzenie źródła danych z bazy danych za pomocą **konfiguracji źródła danych** kreatora:
 
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 
@@ -161,4 +161,4 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -23,18 +23,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56b85f96815fca34330f57f6b653c497f21a835b
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750802"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305718"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 
 *Hierarchiczna aktualizacja* proces zapisywanie zaktualizowanych danych (na podstawie zestawu danych przy użyciu dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu więzy integralności. *Integralność referencyjną* odwołuje się do reguły spójności, dostarczone przez ograniczenia w bazie danych, które kontrolują zachowanie Wstawianie, aktualizowanie i usuwanie rekordów pokrewnych. Na przykład jest więzów integralności, który wymusza utworzenie rekordu klientów przed zezwoleniem zamówienia, które ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacji w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md).
 
-Używa funkcji hierarchiczna aktualizacja `TableAdapterManager` zarządzanie `TableAdapter`s w zestawie danych wpisywanych. `TableAdapterManager` Składnik jest klasą generowanych przez program Visual Studio, więc nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Podczas przeciągania tabeli z okna źródeł danych do postaci Windows lub strony WPF program Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony, a zostanie wyświetlony w projektancie w zasobniku składnika. Aby uzyskać szczegółowe informacje na temat `TableAdapterManager` klasy, zobacz sekcję TableAdapterManager z [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Używa funkcji hierarchiczna aktualizacja `TableAdapterManager` zarządzanie `TableAdapter`s w zestawie danych wpisywanych. `TableAdapterManager` Składnik jest klasą generowanych przez program Visual Studio, więc nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Podczas przeciągania tabeli z **źródeł danych** okna do strony formularza Windows lub programu WPF, Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony i zostanie wyświetlony w projektancie w zasobniku składnika. Aby uzyskać szczegółowe informacje na temat `TableAdapterManager` klasy, zobacz sekcję TableAdapterManager z [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Domyślnie zestaw traktuje powiązane tabele jako "tylko relacje" oznacza to, że nie to wymuszania ograniczeń klucza obcego. Można zmodyfikować to ustawienie w czasie projektowania za pomocą **Projektanta obiektów Dataset**. Zaznacz wiersz relacji między dwiema tabelami, aby wyświetlić **relacji** okno dialogowe. Określi, wprowadzone zmiany są tutaj sposób, w jaki `TableAdapterManager` zachowuje się podczas wysyłania zmian w tabelach pokrewnych w bazie danych.
 
@@ -65,7 +65,7 @@ Ustawienie kolejności do przeprowadzania aktualizacji ustawia kolejność poszc
 > [!NOTE]
 > Jest ważne dowiedzieć się, że kolejność aktualizacji jest z uwzględnieniem wszystkich. Oznacza to kiedy aktualizacje są wykonywane, wstawiania i usuwania są wykonywane dla wszystkich tabel w zestawie danych.
 
-Aby ustawić `UpdateOrder` właściwości po przeciąganie elementów z [okna źródeł danych](add-new-data-sources.md) w formularzu Wybierz `TableAdapterManager` w zasobniku składnika, a następnie ustaw `UpdateOrder` właściwości w **właściwości** okna.
+Aby ustawić `UpdateOrder` właściwości po przeciąganie elementów z [okna źródeł danych](add-new-data-sources.md#data-sources-window) w formularzu Wybierz `TableAdapterManager` w zasobniku składnika, a następnie ustaw `UpdateOrder` właściwości w **właściwości** okna.
 
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Tworzenie kopii zapasowej zestawu danych przed przystąpieniem do wykonywania hierarchicznej aktualizacji
 

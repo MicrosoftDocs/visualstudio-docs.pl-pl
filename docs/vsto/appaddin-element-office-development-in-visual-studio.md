@@ -1,5 +1,5 @@
 ---
-title: '&lt;appAddin&gt; elementu (Office development w Visual Studio)'
+title: '&lt;appAddin&gt; — element (Office development w programie Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,19 +10,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264665"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304875"
 ---
-# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elementu (Office development w Visual Studio)
+# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; — element (Office development w programie Visual Studio)
   **AppAddin** elementu `vstov4` przestrzeni nazw są przechowywane informacje dotyczące dostosowywania dotyczące dodatków narzędzi VSTO.  
   
 ## <a name="syntax"></a>Składnia  
@@ -38,32 +38,32 @@ ms.locfileid: "34264665"
 </appAddin>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- **AppAddin** element jest wymagany i znajduje się w `vstov4` przestrzeni nazw. Istnieje tylko jeden **appAddin** zdefiniowany w manifeście aplikacji element.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ **AppAddin** element jest wymagany i znajduje się w `vstov4` przestrzeni nazw. Jest tylko jedna **appAddin** elementu zdefiniowanego w manifeście aplikacji.  
   
  **AppAddin** element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|**Aplikacji**|Wymagana. Identyfikuje aplikację Microsoft Office. Wartość może być jedną z następujących: Excel, InfoPath, Outlook, PowerPoint, projektu, Visio lub programu Word.|  
-|**LoadBehavior**|Opcjonalna. Domyślnie **loadBehavior** jest włączane przez ustawienie wartości. Dla celów debugowania dodatku VSTO można wyłączyć za pomocą ustawienia wartości do dwóch. Aby uzyskać więcej informacji, zobacz tabelę wartości LoadBehavior w tytule [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|**Nazwa klucza**|Wymagana. Ta wartość jest nazwę klucza rejestru, który będzie używany przez aplikację do ładowania dodatku VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Aplikacja**|Wymagany. Identyfikuje aplikację Microsoft Office. Wartość może być jedną z następujących: programu Excel, InfoPath, Outlook, PowerPoint, projektu, programu Visio lub Word.|  
+|**loadBehavior**|Opcjonalny. Domyślnie **loadBehavior** został włączony przez ustawienie tej wartości. Do debugowania, dodatku narzędzi VSTO można wyłączyć, ustawiając wartość do dwóch. Aby uzyskać więcej informacji, zobacz tabelę o nazwie wartości Loadbehaviour w [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**keyName**|Wymagany. Ta wartość jest nazwa klucza rejestru, który będzie używany przez aplikację można załadować dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
- **AppAddin** element ma następujące elementy podrzędne.  
+ **AppAddin** element ma następujących elementów podrzędnych.  
   
 ### <a name="friendlyname"></a>friendlyName  
- Opcjonalna. **FriendlyName** element znajduje się w [ &#60;friendlyName&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Opcjonalny. **FriendlyName** element została wyjaśniona w [ &#60;friendlyName&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>opis  
- Opcjonalna. **Opis** element znajduje się w [ &#60;opis&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+ Opcjonalny. **Opis** element została wyjaśniona w [ &#60;opis&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
-### <a name="formregions"></a>formregions —  
- Wymagany tylko dla dodatków VSTO programu Outlook, które obejmują regionów formularzy. **Formregions —** element znajduje się w [ &#60;formregions —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
+### <a name="formregions"></a>formRegions  
+ Wymagane tylko dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza. **FormRegions** element została wyjaśniona w [ &#60;formRegions&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
-## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO  
+## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO  
   
 ### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje **appAddin** elementów rozwiązania programu Outlook wdrażane za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykładowy kod jest częścią większego przykładu udostępnionego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
+ W poniższym przykładzie kodu pokazano **appAddin** elementów w rozwiązaniu programu Outlook wdrażane za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   
