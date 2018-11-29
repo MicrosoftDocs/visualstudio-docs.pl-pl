@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b395d845e53e8d9632cce27ae0714e9bc0a87d26
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834290"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621344"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów
 
@@ -33,7 +33,7 @@ Definicje raportów są przechowywane w bazie danych testu obciążenia. Po zapi
 Ponadto plik arkusza kalkulacyjnego mogą być udostępniane zainteresowane strony, aby nie trzeba połączyć z bazą danych, aby wyświetlić raport zainteresowanych stron.
 
 > [!NOTE]
-> Po dodaniu komentarzy do testu obciążenia pojawią się one w raporcie programu Excel. Aby uzyskać więcej informacji, zobacz [porady: dodawanie komentarzy podczas analizowania zakończonego testu obciążenia](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Po dodaniu komentarzy do testu obciążenia są wyświetlane w raporcie programu Excel.
 
 ## <a name="tasks"></a>Zadania
 

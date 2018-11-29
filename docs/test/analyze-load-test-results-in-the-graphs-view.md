@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 563e7c859c7800d543cd19e444b2fda8363a17c6
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870058"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621228"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia w widoku wykresu analizatora testu obciążenia
 
@@ -82,7 +82,6 @@ Poniższa tabela zawiera listę wbudowanych wykresów, które są dostępne do a
 |**Wyświetlanie liczników na wykresach:** możesz dodać różne rodzaje danych do testu obciążenia powoduje wykresu, umieszczając liczniki na wykresie.|-   [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Powiększ na wykresach:** po zakończeniu testu obciążeniowego umożliwia powiększenie paski powiększyć obraz i przewiń do obszaru wykresu. Przez powiększyć, można sprawdzić dane, który został wygenerowany podczas testu obciążenia uruchamiane w bardziej szczegółowo.|-   [Porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Kafelkowe:** można rozmieścić wykresy wyników testu obciążenia w jednym z kilku wzorców. Można kafelka maksymalnie cztery wykresy.||
-|**Modyfikowanie wyglądu wykresy liczników wydajności na wykresach:** wykreślania opcje linii dla liczników wydajności na wykresach można zmienić. Obejmuje to styl linii. Ponadto można określić, czy ma być automatycznie lub ręcznie określić zakres, który chcesz użyć do kreślenia licznika wydajności.|-   [Porady: Określ opcje dla liczników sporządzających wykresy wykresu](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Tworzenie wykresów niestandardowych:** można zaprojektować wykresów wyświetlających określone informacje na temat wyników testów obciążenia. Projektujesz niestandardowy wykres, określając liczniki testu obciążenia, które wykresie będą wyświetlane.|-   [Porady: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Eksportowanie danych liczników wydajności na wykresie:** możesz wyeksportować dane wykresu do programu Microsoft Excel za pomocą **Eksportuj dane wykresu do programu Excel** znajdujący się na **analizatora testu obciążenia** narzędzi podczas znajdują się w **wykresów** widoku.||
 

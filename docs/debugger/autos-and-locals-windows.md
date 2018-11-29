@@ -16,24 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7e94c520ca01a92b65ba05a4ff91aaa4c01e7b8d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388520"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621474"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych
 
-**Autos** i **lokalne** systemu windows umożliwia wyświetlanie wartości zmiennych podczas debugowania. Systemu windows są dostępne tylko podczas sesji debugowania. **Autos** okno wyświetla zmienne używane wokół bieżącego punktu przerwania. **Lokalne** okno wyświetla zmienne zdefiniowane w zakresie lokalnym, zwykle jest to bieżąca funkcja lub metoda. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
+**Autos** i **lokalne** systemu windows umożliwia wyświetlanie wartości zmiennych podczas debugowania. Systemu windows są dostępne tylko podczas sesji debugowania. **Autos** okno wyświetla zmienne używane wokół bieżącego punktu przerwania. **Lokalne** okno wyświetla zmienne zdefiniowane w zakresie lokalnym, zwykle jest to bieżąca funkcja lub metoda. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
  **Autos** oknie jest dostępna dla C#, kodu języka Visual Basic, C++ i Python, ale nie dla języka JavaScript lub F#.
   
 Aby otworzyć **automatyczne** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **Autos**, lub naciśnij **Ctrl**+**Alt**+**V** > **A**.  
 
 Aby otworzyć **zmiennych lokalnych** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **lokalne**, lub naciśnij **Alt**+**4**.
-
-Aby uzyskać więcej informacji dotyczących debugowania podstawowe zobacz [wprowadzenie do debugera](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [wizualizacje danych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations).
@@ -153,5 +151,5 @@ Aby wyświetlić wartości zwracanych metody `sumVars()` i `subtractVars()` wywo
   
 ## <a name="see-also"></a>Zobacz także  
  [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
- [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)  
  [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md) [okna debugera](../debugger/debugger-windows.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 593540e125980e245142052648a5a9d8894234fd
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321154"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621555"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 
@@ -101,7 +101,7 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
 11. (Opcjonalnie) Wybierz **zaawansowane** kartę. Następnie wybierz strzałkę obok **maksymalna ilość miejsca na dysku dla nagrywania** i zaznacz maksymalny rozmiar, który chcesz włączyć plik narzędzia IntelliTrace do użycia.
 
     > [!NOTE]
-    > Zbyt wysoki limit ilości rejestrowanych danych może sprawić, że podczas zapisywania danych razem z wynikami testu upłynie limit czasu. Aby uzyskać więcej informacji o tym, jak zwiększyć wartości limitów czasu dla adapterów danych diagnostycznych, zobacz [porady: zapobieganie limitom czasu dla adapterów danych diagnostycznych](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Zbyt wysoki limit ilości rejestrowanych danych może sprawić, że podczas zapisywania danych razem z wynikami testu upłynie limit czasu.
 
 12. Jeśli używasz Microsoft Test Manager, wybierz opcję **Zapisz**. Jeśli używasz programu Visual Studio, wybierz opcję **OK**. Ustawienia narzędzia IntelliTrace są teraz skonfigurowane i zapisane w ustawieniach testu.
 

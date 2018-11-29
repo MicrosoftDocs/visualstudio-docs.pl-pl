@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6ab7d05c5c26cef7c6479f52438cadec7f3124a
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879847"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621503"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym
 
@@ -42,7 +42,7 @@ Należy dodać serwery w ramach testu do listy komputerów, na których można z
 |**Zarządzanie zbiorami liczników dla testu obciążeniowego:** po utworzeniu testu obciążenia, można edytować zestaw liczników w edytorze testu obciążeniowego. Zarządzanie zbiorami liczników obejmuje, wybierając zestaw komputerów, z których chcesz zbierać dane dotyczące wydajności i przypisywanie zbiór zestawów liczników, które mają być zbierane z każdego komputera. Zarządzasz licznikami w edytorze testu obciążenia.|-   [Porady: Zarządzanie zbiorami liczników](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Dodawanie zestawów liczników do testu obciążeniowego:** podczas tworzenia testu obciążeniowego za pomocą **Kreatora nowego testu obciążeniowego**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Po utworzeniu testu obciążenia, można dodać nowe liczniki do istniejących zestawów liczników za pomocą edytora testu obciążenia.|-   [Porady: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Porady: Dodawanie zbiorów liczników niestandardowych](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Określ reguły progu za pomocą liczników dla testu obciążeniowego:** reguły progu jest regułą, która jest ustawiona na licznik wydajności poszczególnych do monitorowania użycia zasobów systemowych podczas testu obciążeniowego. Definicje zestawu liczników zawiera wstępnie zdefiniowany próg reguły dla wielu kluczowych liczników wydajności. Reguły progów w testach obciążenia porównanie wartości licznika wydajności za pomocą wartości stałej lub inną wartość licznika wydajności.|-   [Porady: Dodawanie reguły progu](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Przypisać przyjazne nazwy komputerów, do których licznik zestawów są mapowane:** można dodać tagów, które umożliwiają łatwą do rozpoznania nazwę na komputerze. Znaczniki są wyświetlane w **mapowaniach zbioru liczników** węzeł dla drzewa w edytorze testu obciążenia. Co ważniejsze, znaczniki są wyświetlane w raportach programu Excel, które pomagają zainteresowanych stron, jaką rolę zidentyfikować komputer ma w teście obciążenia, na przykład, "Server1 sieci Web w lab2" lub "SQL Server2 w pakiecie office Phoenix".<br /><br /> Aby uzyskać więcej informacji, zobacz [testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).|-   [Porady: Dodawanie tagów komputerów do mapowań zestawów liczników](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Przypisać przyjazne nazwy komputerów, do których licznik zestawów są mapowane:** można dodać tagów, które umożliwiają łatwą do rozpoznania nazwę na komputerze. Znaczniki są wyświetlane w **mapowaniach zbioru liczników** węzeł dla drzewa w edytorze testu obciążenia. Co ważniejsze, znaczniki są wyświetlane w raportach programu Excel, które pomagają zainteresowanych stron, jaką rolę zidentyfikować komputer ma w teście obciążenia, na przykład, "Server1 sieci Web w lab2" lub "SQL Server2 w pakiecie office Phoenix".<br /><br /> Aby uzyskać więcej informacji, zobacz [testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Korzystanie z zestawów liczników
 

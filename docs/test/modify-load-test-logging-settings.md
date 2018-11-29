@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2adef763b46a00f380ef7fb0f9f2d0a3ecdcfb8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 867e586b5a50dee47a86d8a57a978f51ee0d0c3b
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909702"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621370"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modyfikowanie ustawień rejestrowania testu obciążeniowego
 
@@ -25,13 +25,8 @@ Wynik testu obciążenia dla ukończonego testu obciążenia zawiera próbki lic
 
 |Zadanie|Skojarzone tematy|
 |-|-----------------------|
-|**Określ, jak często zapisać dzienniki podczas przebiegu testu obciążeniowego:** można określić, jak często mają Dziennik testu, zapisane po uruchomieniu testu obciążenia.|-   [Porady: Określanie, jak często zapisywane są dzienniki testów](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Zapisywanie dzienników, w przypadku niepowodzenia testu obciążeniowego:** można określić, jeśli chcesz zapisać dziennik testu, zawsze wtedy, gdy test obciążenia kończy się niepowodzeniem.|-   [Porady: Określanie, czy niepowodzenia testu są zapisywane do testowania dzienników](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Ustaw maksymalny rozmiar pliku dla pliku dziennika:** można edytować plik konfiguracji XML, który jest skojarzony z usługi kontrolera testów, aby określić maksymalny rozmiar pliku chcesz użyć dla pliku dziennika.|[Porady: określanie maksymalnego rozmiaru pliku dziennika](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
-
-## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych
-
-Powiązane właściwości **przechowywanie informacji**. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności wirtualnych użytkowników](../test/how-to-configure-load-tests-to-collect-full-details.md).
 
 ## <a name="see-also"></a>Zobacz także
 

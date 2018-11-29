@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9fea16d1131ce45b8273d53a3db4a88989d1c91
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813001"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621202"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w testach obciążenia za pomocą analizatora testu obciążenia
 
@@ -67,8 +67,6 @@ W przypadku wszelkich naruszeniach, **naruszenia progu** hiperłącze pojawia si
  Opcjonalnie naruszenia wartości progowych mogą być wyświetlane na wykresie, również. Ikona progu pojawia się na wykresie obok punktu danych, w którym wystąpiło naruszenie progu.
 
  W drzewie liczników ikona naruszenia progu są propagowane z węzła określonego licznika, aż węzeł główny. Ta ostrzega o naruszenie na licznik, który może nie być widoczna w drzewie, ponieważ nie została rozwinięta drzewa.
-
- Aby uzyskać więcej informacji, zobacz [za pomocą panelu liczników w widokach wykresy i tabele](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Wyświetl naruszenia progowe na wykresie
 

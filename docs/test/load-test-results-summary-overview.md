@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9c2a2d1ff1aeda2f9df0f496176a134e7a27e559
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380567"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621490"
 ---
 # <a name="load-test-results-summary-overview"></a>Przegląd podsumowania wyników testu obciążenia
 
@@ -127,7 +127,7 @@ Sekcja Zasoby kontrolera i agenta zawiera listę komputerów, które są używan
 
 ## <a name="errors"></a>błędy
 
-Sekcja błędów zawiera listę wszystkich błędów, które wystąpiły podczas testu obciążeniowego. Typ i podtyp błąd, liczby wartości oraz ostatni komunikat są wyświetlane. Możesz wybrać błędu, aby otworzyć **błędy** tabeli i Sprawdź więcej szczegółów tego błędu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) i [porady: analizowanie błędów za pomocą panelu liczników](../test/how-to-analyze-errors-using-the-counters-panel.md).
+Sekcja błędów zawiera listę wszystkich błędów, które wystąpiły podczas testu obciążeniowego. Typ i podtyp błąd, liczby wartości oraz ostatni komunikat są wyświetlane. Możesz wybrać błędu, aby otworzyć **błędy** tabeli i Sprawdź więcej szczegółów tego błędu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.

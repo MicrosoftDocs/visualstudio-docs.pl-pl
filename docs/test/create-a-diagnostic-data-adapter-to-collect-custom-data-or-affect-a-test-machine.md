@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e0a7815b57fa49239a0895e6733a13c5c83e99e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71cee1bb598c6d2bf59b0e664f5f3560ae1fd0ee
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860895"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621110"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Tworzenie adaptera danych diagnostycznych do zbierania danych niestandardowych lub wpływać na komputer testowy
 
@@ -28,16 +28,13 @@ Jeśli używasz testów z programu Visual Studio, musisz ustawić te ustawienia 
 
 ## <a name="tasks"></a>Zadania
 
- Użyj następujących tematów pomocnych przy tworzeniu Adapterów danych diagnostycznych:
+Użyj następujących tematów pomocnych przy tworzeniu Adapterów danych diagnostycznych:
 
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
 |**Tworzenie adaptera danych diagnostycznych:** tworzenie adaptera danych diagnostycznych, tworząc bibliotekę klas, a następnie zebrać informacje lub mieć wpływ na system testowy, który jest używany do uruchamiania testów za pomocą interfejsu API adaptera danych diagnostycznych.|-   [Porady: tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Instalowanie niestandardowego adaptera danych diagnostycznych:** można zainstalować adapter danych diagnostycznych lub adapter dostarczony przez kogoś innego, kopiując go do poprawnego katalogu.|-   [Porady: Instalowanie niestandardowego adaptera danych diagnostycznych](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
 |**Wybranie niestandardowego adaptera danych diagnostycznych do użycia gdy testy są uruchamiane:** tak, że karta jest używana podczas uruchamiania testów, można wybrać kartę danych diagnostycznych, w której do użycia w ustawieniach testu.|-   [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-|**Konfigurowanie co robi Adapter danych diagnostycznych:** można skonfigurować ustawienia, aby kontrolować działania adaptera danych diagnostycznych w specyficznych ustawieniach testu.|-   [Porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)

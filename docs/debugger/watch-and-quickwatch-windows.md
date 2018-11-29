@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826794"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621646"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obserwuj zmienne, za pomocą okna czujki i QuickWatch 
 
 Podczas debugowania, można użyć **Obejrzyj** systemu windows i **QuickWatch** obejrzeć zmiennych i wyrażeń. Systemu windows są dostępne tylko podczas sesji debugowania.
 
 **Obejrzyj** systemu windows można wyświetlić wiele zmiennych podczas debugowania. **QuickWatch** okno dialogowe Wyświetla pojedynczą zmienną w czasie i muszą zostać zamknięte przed kontynuowaniem debugowania.
+
+Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Obserwuj zmienne okno czujki
 
@@ -279,5 +281,5 @@ Aby obserwować `a` zmiennej
 
 ## <a name="see-also"></a>Zobacz także
  [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
- [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)  
  [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md) [okna debugera](../debugger/debugger-windows.md)

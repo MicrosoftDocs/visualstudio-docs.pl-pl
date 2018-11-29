@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9191be64a2dae4f2d58c7ffb3e01e0874ff71903
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881706"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621357"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
@@ -25,7 +25,7 @@ Poniższe procedury pokazują, jak wyświetlić **wykres aktywności wirtualnych
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Aby wyświetlić wykres aktywności wirtualnych użytkowników w wyniki testu obciążenia
 
-1.  Aby wyświetlić dane użytkowników wirtualnych, należy najpierw skonfigurować **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwość, która jest skojarzona z testu obciążenia. Następnie uruchom test obciążenia. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności wirtualnych użytkowników](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Aby wyświetlić dane użytkowników wirtualnych, należy najpierw skonfigurować **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwość, która jest skojarzona z testu obciążenia. Następnie uruchom test obciążenia.
 
 2.  Po załadowaniu usługi przebiegów testów, zostanie wyświetlona strona podsumowania wyników testu. Wybierz **szczegółów użytkownika** przycisk na pasku narzędzi.
 

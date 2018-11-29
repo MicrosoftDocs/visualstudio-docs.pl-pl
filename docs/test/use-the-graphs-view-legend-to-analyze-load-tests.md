@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7e3dae08a16acd6a5e92ab819b6f4e140130c605
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380251"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621396"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Korzystanie z legendy wykresu przeprowadzania analizy testów obciążenia
 
@@ -31,11 +31,11 @@ Następujące informacje są zawarte wewnątrz legendy:
 -   **Zakres:** tej kolumnie jest wyświetlana zakres osi y licznika wydajności. Domyślnie ta wartość będzie automatycznie dopasowywać jako zakres zmiany danych przykładowych. Automatycznie skorygowany zakres, zawsze będzie następną potęgą liczby 10, większą niż maksymalna wartość. Obejmuje to negatywne potęgi dziesięciu. Wykres może zawierać wiele liczników, każdy z innym zakresem. Z tego powodu, oś y nie jest oznaczona żadnym określonym zakresem, ale zamiast tego, jest oznaczona wartościami z zakresu 0-100, które reprezentują procent całkowitego zakresu, dla każdego licznika. Na przykład dla licznika o zakresie 1000 punkt danych 60 na osi y będzie odpowiadać wartości 600 dla tego licznika.
 
     > [!NOTE]
-    > Blokowanie zakresu do określonej wartości, można wyłączyć automatyczne zakresu dopasowania wartości. Gdy zakres jest zablokowany, wszystkie wartości przekraczające zakres, są wyświetlane jako maksymalna wartość, określona w górnej części wykresu. Użyj **Opcje wykresu** okno dialogowe, aby zablokować zakresu w określonej wartości. Aby uzyskać więcej informacji, zobacz [jak: Określ opcje dla liczników sporządzających wykresy wykresu](../test/how-to-specify-plot-options-for-graphing-counters.md).
+    > Blokowanie zakresu do określonej wartości, można wyłączyć automatyczne zakresu dopasowania wartości. Gdy zakres jest zablokowany, wszystkie wartości przekraczające zakres, są wyświetlane jako maksymalna wartość, określona w górnej części wykresu. Użyj **Opcje wykresu** okno dialogowe, aby zablokować zakresu w określonej wartości.
 
 -   **Licznik:** cztery kolumny o nazwie **licznika**, **wystąpienia**, **kategorii**, i **komputera** razem jednoznacznie Określ licznik wydajności.
 
--   **Kolor:** **kolor** kolumna pokazuje styl linii linii wykreślona licznika wydajności. Użyj **Opcje wykresu** okno dialogowe, aby zmienić kolor lub wiersza stylu licznika wydajności na wykresie. **Opcje wykresu** okno dialogowe jest dostępne z menu skrótów legendy. Aby uzyskać więcej informacji, zobacz [jak: Określ opcje dla liczników sporządzających wykresy wykresu](../test/how-to-specify-plot-options-for-graphing-counters.md).
+-   **Kolor:** **kolor** kolumna pokazuje styl linii linii wykreślona licznika wydajności. Użyj **Opcje wykresu** okno dialogowe, aby zmienić kolor lub wiersza stylu licznika wydajności na wykresie. **Opcje wykresu** okno dialogowe jest dostępne z menu skrótów legendy.
 
 -   **Statystyki:** **Min**, **Max**, **Avg** i **ostatniego** kolumn pokazują odpowiednie statystyki wydajności Licznik. Te wartości odpowiadają danych, który jest wyświetlany na widocznych obszaru wykresu. Na przykład jeśli powiększysz region przebiegu, statystyki legendy będą odzwierciedlać wartości, tylko dla powiększonego obszaru. Kolumna "Last" jest wartość licznika wydajności z ostatnio wykonanych interwałem próbkowania.
 
@@ -59,6 +59,5 @@ Zaznaczenie elementu w legendzie, wykonuje następujące czynności:
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Określ opcje dla liczników sporządzających wykresy wykresu](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [Porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)

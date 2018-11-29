@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 6f470a8afcd0ae1886cc5b4cb8ff6f28d7a936df
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607806"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621446"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Dowiedz się więcej o projekty i rozwiązania
 
@@ -176,7 +176,7 @@ Wiersz w *Calendar.cs* pliku, który zawiera <xref:System.Runtime.CompilerServic
 
 Jeśli chcesz sprawdzić, czy działa testu jednostkowego, wybierz opcję **Test** > **Uruchom** > **wszystkie testy** z paska menu. Wywołuje okno **Eksploratora testów** zostanie otwarta, a powinna być wyświetlana **TestGetCurrentDate** przebiegów testów.
 
-![Test Explorer tekstu w programie Visual Studio przedstawiający przekazany](media/quickstart-projects-test-explorer.png)
+![Eksplorator testów w Visual Studio przedstawiający przekazywane testu](media/quickstart-projects-test-explorer.png)
 
 > [!TIP]
 > Jeśli **Eksplorator testów** nie automatycznie, otwórz go, wybierając **testu** > **Windows** > **Eksplorator testów** z paska menu.

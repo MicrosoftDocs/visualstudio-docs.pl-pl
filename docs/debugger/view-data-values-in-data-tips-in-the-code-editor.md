@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388163"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621542"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Podgląd wartości danych w DataTips w edytorze kodu
 
-DataTips to wygodny sposób wyświetlania informacji na temat zmiennych w aplikacji podczas debugowania. 
+DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych w programie podczas debugowania. DataTips działa tylko w trybie przerwania i tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
 Jeśli jest to debugowanie po raz pierwszy, warto przeczytać [tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przeczytaniem tego artykułu.
   
@@ -127,8 +127,8 @@ Możesz wyeksportować etykietek danych do pliku XML, który można udostępnia�
 
 ## <a name="see-also"></a>Zobacz także  
  [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
- [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)   
- [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Oknach wyrażenie kontrolne i QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
+ [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)  
+ [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md) [wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
+ [Wyrażenie kontrolne i QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
+

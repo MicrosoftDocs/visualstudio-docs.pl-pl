@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b156f5519fd60bdc5059863b087a3553ac8c086c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826664"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621241"
 ---
 # <a name="what-is-debugging"></a>Co to jest debugowanie?
 
@@ -25,13 +25,13 @@ Debuger programu Visual Studio jest zaawansowanym narzędziem. Przed pokazujemy,
 
 ## <a name="debugger-vs-debugging"></a>Debuger i debugowanie
 
-Termin *debugowania* jest dość ogólny i może oznaczać wiele różnych rzeczy. W najbardziej literału użycia wyrazu oznacza to, usuwania usterek w kodzie. Teraz istnieje wiele sposobów, aby to zrobić. Na przykład debug przez zeskanowanie kodu szuka literówki lub za pomocą analizator kodu. Może debugować kod, za pomocą profilera wydajności. Lub może debugować przy użyciu *debugera*.
+Termin *debugowania* może oznaczać wiele różnych rzeczy, ale najbardziej dosłownie, oznacza to usunięcie magistrali w kodzie. Teraz istnieje wiele sposobów, aby to zrobić. Na przykład debug przez zeskanowanie kodu szuka literówki lub za pomocą analizator kodu. Może debugować kod, za pomocą profilera wydajności. Lub może debugować przy użyciu *debugera*.
 
-Debuger jest narzędziem bardzo wyspecjalizowany dla deweloperów. Debuger dołączony do uruchomionej aplikacji i umożliwia inspekcję swój kod. W dokumentacji debugowania programu Visual Studio jest to zazwyczaj co mamy na myśli gdy mówimy "debugowanie".
+Debuger jest narzędziem bardzo wyspecjalizowany dla deweloperów, dołącza do uruchomionej aplikacji, która umożliwia inspekcję kodu. W dokumentacji debugowania programu Visual Studio jest to zazwyczaj co mamy na myśli gdy mówimy "debugowanie".
 
 ## <a name="debug-mode-vs-running-your-app"></a>Debugowanie trybu w porównaniu z tą aplikacją
 
-Po uruchomieniu aplikacji w programie Visual Studio po raz pierwszy, może uruchomić ją, naciskając przycisk zielona strzałka ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi. Domyślnie **debugowania** wartość znajduje się w rozwijanej po lewej stronie. Jeśli jesteś nowym użytkownikiem programu Visual Studio, to pozostawienie wrażenie, że debugowanie aplikacji ma coś zrobić z uruchomioną aplikację — którego jest--, ale są one całkowicie dwóch zupełnie inne zadania.
+Po uruchomieniu aplikacji w programie Visual Studio po raz pierwszy, może uruchomić ją, naciskając przycisk zielona strzałka ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi (lub **F5**). Domyślnie **debugowania** wartość znajduje się w rozwijanej po lewej stronie. Jeśli jesteś nowym użytkownikiem programu Visual Studio, to pozostawienie wrażenie, że debugowanie aplikacji ma coś zrobić z uruchomioną aplikację — którego jest--, ale są one całkowicie dwóch zupełnie inne zadania.
 
 ![Wybierz kompilację debugowania](../debugger/media/what-is-debugging-debug-build.png)
 
@@ -52,4 +52,4 @@ Debuger to podstawowe narzędzie do znajdowania i rozwiązywania usterek w aplik
 W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić uczenia sposób debugowania w programie Visual Studio oraz pisania kodu z mniej błędów. Poniższy artykuł przedstawia C# przykłady kodu, ale pojęcia dotyczą wszystkich językach obsługiwanych przez program Visual Studio.
 
 > [!div class="nextstepaction"]
-> [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+> [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)
