@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 9314f89dc6720e95db7a86eed541d555549d76cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e4dfa7276c217a7cf17203f6ac84bb0ce5585f94
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000486"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459710"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
@@ -29,7 +29,7 @@ Ustawienia konfiguracji są zarządzane i modyfikowane w programie Visual Studio
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
-Aby uzyskać informacji na temat podstawowych schematów dla definicji usługi i pliki konfiguracji usługi, zobacz [schemat XML .csdef](/azure/cloud-services/schema-csdef-file.md) i [schemat XML .cscfg](/azure/cloud-services/schema-cscfg-file.md) artykułów. Aby uzyskać więcej informacji na temat konfigurowania usługi zobacz [jak skonfigurować usługi w chmurze](/azure/cloud-services/cloud-services-how-to-configure-portal).
+Aby uzyskać informacji na temat podstawowych schematów dla definicji usługi i pliki konfiguracji usługi, zobacz [schemat XML .csdef](/azure/cloud-services/schema-csdef-file) i [schemat XML .cscfg](/azure/cloud-services/schema-cscfg-file) artykułów. Aby uzyskać więcej informacji na temat konfigurowania usługi zobacz [jak skonfigurować usługi w chmurze](/azure/cloud-services/cloud-services-how-to-configure-portal).
 
 
 ## <a name="configuration-page"></a>Strona konfiguracji
@@ -77,7 +77,7 @@ Dla parametrów połączenia w nowym lub istniejącym, wybierz **...** * po praw
 1. Wybieranie **ręcznie wprowadzić poświadczenia** pozwala określić nazwę konta i klucza bezpośrednio przy użyciu informacji z witryny Azure portal. Aby skopiować klucz konta:
     1. Przejdź do konta magazynu w witrynie Azure portal i wybierz **zarządzanie kluczami**.
     1. Aby skopiować klucz konta, przejdź do konta magazynu w witrynie Azure portal, wybierz opcję **Ustawienia > klucze dostępu**, następnie użyj przycisku kopiowania, aby skopiuj podstawowy klucz dostępu do Schowka.
-1. Wybierz jedną z opcji połączenia. **Określ niestandardowe punkty końcowe** prosi o określenie określonych adresów URL dla obiektów blob, tabele i kolejki. Niestandardowe punkty końcowe umożliwiają używanie [domen niestandardowych](/azure/storage/blobs/storage-custom-domain-name.md) i kontrolować dostęp do bardziej dokładnie. Zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string).
+1. Wybierz jedną z opcji połączenia. **Określ niestandardowe punkty końcowe** prosi o określenie określonych adresów URL dla obiektów blob, tabele i kolejki. Niestandardowe punkty końcowe umożliwiają używanie [domen niestandardowych](/azure/storage/blobs/storage-custom-domain-name) i kontrolować dostęp do bardziej dokładnie. Zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string).
 1. Wybierz **OK**, następnie **Plik > Zapisz** można zaktualizować konfiguracji za pomocą nowych parametrów połączenia.
 
 Ponownie podczas publikowania aplikacji na platformie Azure, wybierz pozycję konfiguracji usługi, która zawiera konta usługi Azure storage dla parametrów połączenia. Po opublikowaniu aplikacji, sprawdź, czy aplikacja działa zgodnie z oczekiwaniami w odniesieniu do usług Azure storage.

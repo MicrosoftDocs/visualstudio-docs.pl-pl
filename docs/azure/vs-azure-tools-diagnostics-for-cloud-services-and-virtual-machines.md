@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: 171f46efbcec7d21b281058475466f536899aa2b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 2553adf10e2617a43d4e78ded22314088927e348
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000520"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459735"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 Gdy zachodzi potrzeba Rozwiązywanie problemów z usługą w chmurze platformy Azure lub maszynie wirtualnej, można użyć programu Visual Studio na łatwiejsze konfigurowanie diagnostyki platformy Azure. Diagnostyka przechwytuje dane systemu i rejestrowania danych na maszynach wirtualnych i wystąpień maszyn wirtualnych, które są uruchamiane usługi w chmurze. Dane diagnostyczne jest przekazywany do wybranego konta magazynu. Aby uzyskać więcej informacji o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -303,5 +303,5 @@ Metody **RoleEntryPoint** są wywoływane w kontekście WAIISHost.exe nie w usł
 W **właściwości** oknie **Kopiuj do katalogu wyjściowego** właściwości **zawsze Kopiuj**.
 
 ## <a name="next-steps"></a>Następne kroki
-Aby dowiedzieć się więcej o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie diagnostyki w usługach Azure Cloud Services i virtual machines](/azure/cloud-services/cloud-services-dotnet-diagnostics.md) i [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
+Aby dowiedzieć się więcej o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie diagnostyki w usługach Azure Cloud Services i virtual machines](/azure/cloud-services/cloud-services-dotnet-diagnostics) i [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 

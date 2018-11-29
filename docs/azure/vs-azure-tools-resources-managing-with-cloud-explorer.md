@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: db2127cbca42f158fa10617ceac04976fdbfcaf3
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: feb56bb0edd66a24b8505c26587129437dd4b971
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000751"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459751"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
 Eksplorator chmury umożliwia wyświetlanie zasobów platformy Azure i grup zasobów, badania ich właściwości i akcje klucza dewelopera diagnostyki z poziomu programu Visual Studio. 
 
-Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud Explorer jest oparta na stosie usługi Azure Resource Manager. W związku z tym, rozumie Eksploratora chmury, zasoby, takie jak grupy zasobów platformy Azure i usług platformy Azure, takich jak Logic apps i API apps i obsługuje [kontroli dostępu opartej na rolach](/azure/role-based-access-control/role-assignments-portal.md) (RBAC). 
+Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud Explorer jest oparta na stosie usługi Azure Resource Manager. W związku z tym, rozumie Eksploratora chmury, zasoby, takie jak grupy zasobów platformy Azure i usług platformy Azure, takich jak Logic apps i API apps i obsługuje [kontroli dostępu opartej na rolach](/azure/role-based-access-control/role-assignments-portal) (RBAC). 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
