@@ -58,7 +58,7 @@
 ###### [Znajdowanie podstawowej osoby kontaktowej](find-primary-contact.md)
 #### [W przypadku umowy MPSA](mpsa.md)
 #### [W przypadku subskrypcji chmury](cloud-admin.md)
-#### [Film wideo dotyczący dołączania](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+#### [Film wideo dotyczący dołączania](https://youtu.be/plSu6fpi7UI)
 ### [Korzystanie z portalu administracyjnego](using-admin-portal.md)
 #### [Przypisywanie subskrypcji](assign-license.md)
 #### [Ponowne wysyłanie wiadomości e-mail dotyczących przypisania](resend-assignment-email.md)
