@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b156f5519fd60bdc5059863b087a3553ac8c086c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621241"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821451"
 ---
 # <a name="what-is-debugging"></a>Co to jest debugowanie?
 
@@ -25,7 +25,7 @@ Debuger programu Visual Studio jest zaawansowanym narzędziem. Przed pokazujemy,
 
 ## <a name="debugger-vs-debugging"></a>Debuger i debugowanie
 
-Termin *debugowania* może oznaczać wiele różnych rzeczy, ale najbardziej dosłownie, oznacza to usunięcie magistrali w kodzie. Teraz istnieje wiele sposobów, aby to zrobić. Na przykład debug przez zeskanowanie kodu szuka literówki lub za pomocą analizator kodu. Może debugować kod, za pomocą profilera wydajności. Lub może debugować przy użyciu *debugera*.
+Termin *debugowania* może oznaczać wiele różnych rzeczy, ale najbardziej dosłownie, oznacza to, usuwania usterek w kodzie. Teraz istnieje wiele sposobów, aby to zrobić. Na przykład debug przez zeskanowanie kodu szuka literówki lub za pomocą analizator kodu. Może debugować kod, za pomocą profilera wydajności. Lub może debugować przy użyciu *debugera*.
 
 Debuger jest narzędziem bardzo wyspecjalizowany dla deweloperów, dołącza do uruchomionej aplikacji, która umożliwia inspekcję kodu. W dokumentacji debugowania programu Visual Studio jest to zazwyczaj co mamy na myśli gdy mówimy "debugowanie".
 

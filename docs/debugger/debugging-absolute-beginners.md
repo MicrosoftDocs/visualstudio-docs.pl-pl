@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257371"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821373"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -244,7 +244,7 @@ Następnie zostanie utworzona aplikacja, która ma kilka błędów.
 
     ![Błąd składni](../debugger/media/beginners-no-definition.png)
 
-    Nawet wtedy, gdy będziemy każdego galaxy z obiektem typu `GType` (który ma `MGType` właściwości), debuger nie może rozpoznać `theGalaxy` obiektu jako obiekt typu `GType`. Co się dzieje? Chcesz przeszukać wszelki kod, który ustawia typ galaxy. Gdy to zrobisz, zobaczysz, że `GType` klasy zdecydowanie ma właściwość `MyGType`, ale coś nie jest PRAWDA. Komunikat o błędzie `object` okaże się sugeruje; do interpretera języka typ wydaje się być obiektem typu `object` zamiast obiektu typu `GType`.
+    Nawet wtedy, gdy będziemy każdego galaxy z obiektem typu `GType` (który ma `MyGType` właściwości), debuger nie może rozpoznać `theGalaxy` obiektu jako obiekt typu `GType`. Co się dzieje? Chcesz przeszukać wszelki kod, który ustawia typ galaxy. Gdy to zrobisz, zobaczysz, że `GType` klasy zdecydowanie ma właściwość `MyGType`, ale coś nie jest PRAWDA. Komunikat o błędzie `object` okaże się sugeruje; do interpretera języka typ wydaje się być obiektem typu `object` zamiast obiektu typu `GType`.
 
 1. Wyszukiwanie za pomocą kodu powiązany z ustawianiem typu galaxy, możesz znaleźć `GalaxyType` właściwość `Galaxy` nie jest określona jako `object` zamiast `GType`.
 
