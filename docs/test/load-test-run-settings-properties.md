@@ -1,5 +1,5 @@
 ---
-title: Parametry uruchomieniowe testu obciążenia w programie Visual Studio
+title: Parametry uruchomieniowe testu obciążenia
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 009315e2bd07cd62115c1f9130473a8c0c8d4a47
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621581"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895499"
 ---
 # <a name="load-test-run-settings-properties"></a>Właściwości ustawień przebiegu testu obciążeniowego
 
 Parametry uruchomieniowe testu obciążeniowego decydują o różnych innych ustawień, takich jak czas trwania testu, poziomu szczegółowości zbierania wyników oraz zbiorów liczników, które są zbierane podczas przebiegów testowych. Dla każdego testu obciążeniowego można utworzyć i zapisać wiele parametrów uruchomieniowych, a następnie wybrać jedno konkretne ustawienie do użycia podczas wykonywania testu. Początkowy parametr uruchomieniowy dodaje się do testu obciążeniowego podczas tworzenia test obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**.
 
- W poniższych tabelach opisano różne właściwości ustawień przebiegu testu obciążeniowego. Właściwości te można modyfikować, dopasowując do konkretnych wymagań dotyczących testowania obciążeniowego.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Aby uzyskać więcej informacji, zobacz [parametrów uruchomieniowych testu obciążeniowego Konfiguruj](../test/configure-load-test-run-settings.md).
+W poniższych tabelach opisano różne właściwości ustawień przebiegu testu obciążeniowego. Właściwości te można modyfikować, dopasowując do konkretnych wymagań dotyczących testowania obciążeniowego.
+
+Aby uzyskać więcej informacji, zobacz [parametrów uruchomieniowych testu obciążeniowego Konfiguruj](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Właściwości ogólne
 

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001220"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895850"
 ---
 # <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
 
@@ -32,15 +32,16 @@ Jesteś nowym użytkownikiem platformy Azure? [Utwórz bezpłatne konto platform
 
 Obrazy do najnowszej wersji głównych, Visual Studio 2017 i Visual Studio 2015 można znaleźć w witrynie Azure Marketplace. Dla wszystkich wersji głównych Zobacz oryginalnie wydana wersja (RTW) i najnowsze zaktualizowane wersje. Każda z tych wersji oferuje wersje programu Visual Studio Community i program Visual Studio Enterprise. Te obrazy są aktualizowane co miesiąc, obejmujący najnowsze aktualizacje programu Visual Studio i Windows. Gdy nazwy obrazów pozostają takie same, każdy obraz w opisie wersję zainstalowanego produktu i "dzień" obraz.
 
-| Wersja                                              | Wersje                     |     Wersja produktu     |
-|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: R (w wersji 15.9)                    |    Enterprise, Community     |      Wersja 15.9.0     |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.18    |
-|   Visual Studio 2015: R (Aktualizacja 3)                      |    Enterprise, Community     |  Wersja 14.0.25431.01  |
-|         Visual Studio 2015: RTW                              |             Brak             | (Wygasłe obsługi) |
+| Wersja                                              | Wersje                     |     Wersja produktu      |
+|:------------------------------------------------------------:|:----------------------------:|:------------------------:|
+|   Visual Studio 2019: (Wersja zapoznawcza) (wersja zapoznawcza 1)                   |           Enterprise         | Wersji 16.0.0 Preview 1 |
+| Visual Studio 2017: R (w wersji 15.9)                    |    Enterprise, Community     |      Wersja 15.9.0      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.18     |
+|   Visual Studio 2015: R (Aktualizacja 3)                      |    Enterprise, Community     |  Wersja 14.0.25431.01   |
+|         Visual Studio 2015: RTW                              |             Brak             | (Wygasłe obsługi)  |
 
 > [!NOTE]
-> Zgodnie z zasady obsługi firmy Microsoft pierwotnie (RTW) wersji programu Visual Studio 2015 zakończył się okres obsługi. Visual Studio 2015 Update 3 jest jedynie wersja pozostałe oferowana w przypadku linii produktów Visual Studio 2015.  Najnowsza wersja Podgląd obrazów, zawarte w wersjach zapoznawczych, wersji 15.9 została również zrezygnowaliśmy od programu Visual Studio 2017 w wersji 15.9 wydane.
+> Zgodnie z zasady obsługi firmy Microsoft pierwotnie (RTW) wersji programu Visual Studio 2015 zakończył się okres obsługi. Visual Studio 2015 Update 3 jest jedynie wersja pozostałe oferowana w przypadku linii produktów Visual Studio 2015.
 
 Aby uzyskać więcej informacji, zobacz [Visual Studio obsługi zasad](/visualstudio/productinfo/vs-servicing-vs).
 

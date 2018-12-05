@@ -11,24 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382308"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896461"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Porady: Korzystanie z API testu wydajności sieci web
 
 Można napisać kod dla testów wydajności sieci web. Test wydajności sieci web interfejsu API jest używany do utworzenia kodowanego testu wydajności WWW, sieci web wydajności wtyczki testu, wtyczki żądania, żądania, reguły wyodrębniania, reguł sprawdzania poprawności. Klasy, które tworzą te typy są klasy podstawowe, w tym interfejsie API. Inne typy w tym interfejsie API są używane do obsługi tworzenia <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>, i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> obiektów. Możesz użyć <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw, aby tworzyć niestandardowe internetowe testy wydajnościowe.
 
- Aby programowo utworzyć i zapisać testów wydajności sieci web deklaratywne umożliwia także interfejsu API testu wydajności sieci web. Aby to zrobić, należy użyć <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> klasy.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Aby programowo utworzyć i zapisać testów wydajności sieci web deklaratywne umożliwia także interfejsu API testu wydajności sieci web. Aby to zrobić, należy użyć <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> klasy.
 
 > [!TIP]
 > Używanie przeglądarki obiektów do zbadania <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw. Edytory zarówno Visual C# i Visual Basic oferuje obsługę funkcji IntelliSense na kodowanie przy użyciu klas w przestrzeni nazw.
 
-
- Można również utworzyć wtyczek dla testów obciążenia. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z API testu obciążeniowego](../test/how-to-use-the-load-test-api.md) i [porady: tworzenie wtyczki testu obciążeniowego](../test/how-to-create-a-load-test-plug-in.md).
+Można również utworzyć wtyczek dla testów obciążenia. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z API testu obciążeniowego](../test/how-to-use-the-load-test-api.md) i [porady: tworzenie wtyczki testu obciążeniowego](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Użycie tej przestrzeni nazw WebTesting
 

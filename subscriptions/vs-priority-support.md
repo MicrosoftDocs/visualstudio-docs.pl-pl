@@ -1,26 +1,24 @@
 ---
-title: Priorytet korzyści pomocy technicznej w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+title: Korzyści z społeczności dla deweloperów w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Więcej informacji na temat korzyści priorytetowej pomocy technicznej uwzględnione w subskrypcjach programu Visual Studio.
+description: Więcej informacji na temat korzyści społeczności deweloperów uwzględniony w subskrypcjach programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866743"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896656"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Priorytetowa pomoc techniczna w ramach subskrypcji programu Visual Studio
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Pomoc techniczna w społeczności deweloperów w ramach subskrypcji programu Visual Studio
 
-Korzyści z priorytetowej pomocy technicznej umożliwia dostęp do różnych forów społeczności pomocy technicznej, gdzie możesz wyszukiwać wpisy istniejące lub prosi nowe pytania.  Jeśli społeczność nie odpowie na Twoje pytanie w ciągu dwóch dni, zespół pomocy technicznej firmy Microsoft zapewni odpowiedzi.
-
-Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się do otrzymania priorytetowej pomocy technicznej za pośrednictwem dużą liczbę forów obejmujących różne tematy.  Kliknij dowolny z linków poniżej, aby przejść bezpośrednio do wybranego forum.  
+Korzyści społeczności deweloperów zapewnia dostęp do różnych forów społeczności pomocy technicznej, gdzie możesz wyszukiwać wpisy istniejące lub prosi nowe pytania. Kliknij dowolny z linków poniżej, aby przejść bezpośrednio do wybranego forum.  
 
 ## <a name="included-forums"></a>Uwzględnione forów
 

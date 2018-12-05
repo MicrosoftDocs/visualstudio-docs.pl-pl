@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie opóźnień Uruchom scenariusz dla testów obciążenia
+title: Konfigurowanie opóźnień Start scenariusz do testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,81 +10,83 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e3c090fbcbc1a322574a5b0eca06ce917594348b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296380"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896552"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurowanie opóźnień uruchamiania scenariuszy w testach obciążenia
 
-Określ opóźnienie przed scenariusz rozpoczyna się w czasie testu obciążenia za pomocą edytora testu obciążenia i **właściwości** okna.
+Określanie opóźnienia, zanim scenariusza w teście obciążenia rozpocznie się za pomocą edytora testu obciążenia i **właściwości** okna.
 
-Na przykład możesz chcieć użyć **czas rozpoczęcia opóźnienie** właściwości, jeśli potrzebujesz jeden scenariusz, aby rozpocząć tworzenie elementów, które wykorzystuje inny scenariusz. Można opóźnić odbierającą scenariusza, aby włączyć tworzenie scenariusza, aby wypełnić niektóre dane.
+Na przykład możesz chcieć użyć **opóźnienie uruchamiania** właściwość, jeśli potrzebujesz jeden scenariusz rozpoczął produkcję elementów, które korzysta inny scenariusz. Można opóźnić scenariusz zużycia w celu umożliwienia scenariuszowi wytwarzania pewnych danych.
 
-Innym przykładem jest, że może być uruchamiany tylko w określonym czasie dnia scenariusz. Tak użytkownik chce scenariusza, aby symulować to opóźnienie.
+Innym przykładem jest, że może mieć jeden scenariusz uruchamianą tylko o porze dnia. Tak ma być opóźnienie rozpoczęcia scenariusza, aby zasymulować to.
 
-## <a name="specify-the-delay-start-time-of-a-scenario"></a>Określ czas rozpoczęcia opóźnienie scenariusza
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Można określić opóźnienie przed rozpoczęciem scenariusza w teście obciążenia za pomocą edytora testu obciążenia, zmieniając **czas rozpoczęcia opóźnienie** właściwości w **właściwości** okna.
+## <a name="specify-the-delay-start-time-of-a-scenario"></a>Określ opóźnienie czasu rozpoczęcia scenariusza
 
-> [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
-
- Przykład wystąpienia, jeśli chcesz używać **czas rozpoczęcia opóźnienie** gdy właściwość jest potrzebny jeden scenariusz, aby rozpocząć tworzenie elementów, które wykorzystuje inny scenariusz. Można opóźnić odbierającą scenariusza, aby włączyć tworzenie scenariusza, aby wypełnić niektóre dane.
-
- Innym przykładem jest, że może mieć jeden scenariusz, który jest uruchamiany tylko w określonym czasie dnia. W związku z tym chcesz scenariusza, aby symulować to opóźnienie.
+Można określić opóźnienie przed rozpoczęciem scenariusza w teście obciążenia za pomocą edytora testu obciążenia, aby zmienić **opóźnienie uruchamiania** właściwość **właściwości** okna.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości parametry uruchomieniowe i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-delay-start-time-for-a-scenario"></a>Aby określić czas rozpoczęcia opóźnienie dla scenariusza
+ Przykładem wystąpienie, jeśli chcesz używać **opóźnienie uruchamiania** właściwość jest, gdy będziesz potrzebować jeden scenariusz rozpoczął produkcję elementów, które korzysta inny scenariusz. Można opóźnić scenariusz zużycia w celu umożliwienia scenariuszowi wytwarzania pewnych danych.
 
-1. Otwórz testu obciążenia.
+ Innym przykładem jest, że może mieć jeden scenariusz, w którym jest uruchamiany tylko na porze dnia. W związku z tym należy opóźnić uruchomienie scenariusza, aby zasymulować to.
 
-     Zostanie wyświetlone edytora testu obciążenia. Zostanie wyświetlone drzewo testu obciążenia.
+> [!NOTE]
+> Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusz, dla którego chcesz określić godzinę rozpoczęcia opóźnienie.
+### <a name="to-specify-the-delay-start-time-for-a-scenario"></a>Aby określić godzinę rozpoczęcia opóźnienia dla scenariusza
 
-3. Na **widoku** menu, wybierz opcję **okna właściwości**.
+1. Otwórz test obciążenia.
+
+     Zostanie wyświetlony Edytor testów obciążenia. Zostanie wyświetlone drzewo testu obciążenia.
+
+2. Obciążenia test drzew **scenariuszy** folderu, wybierz węzeł scenariusz, dla którego chcesz określić godzinę rozpoczęcia opóźnienie.
+
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Kategorie i właściwości scenariusza są wyświetlane w **właściwości** okna.
 
-4. W polu tekstowym dla **czas rozpoczęcia opóźnienie** właściwości, wpisz wartość czasu, która wskazuje czas oczekiwania po testu obciążenia rozpoczyna się przed rozpoczęciem tego scenariusza, po uruchomieniu testu obciążenia.
+4. W polu tekstowym dla **opóźnienie uruchamiania** właściwość, należy wpisać wartość czasu, która wskazuje czas oczekiwania po test obciążenia rozpoczyna się przed rozpoczęciem tego scenariusza, po uruchomieniu testu obciążenia.
 
     > [!NOTE]
-    > Jeśli wartość **Wyłącz podczas rozgrzewania** właściwość dla tego scenariusza jest ustawiona na **wartość True,**, a następnie **opóźnienie czas rozpoczęcia** właściwości wartości godziny zostaną zastosowane po rozgrzewania okres. Można kontrolować, jakie scenariusze są objęte rozgrzewania przy użyciu **Wyłącz podczas rozgrzewania** właściwości scenariusza.
+    > Jeśli wartość **Wyłącz podczas rozgrzewania** scenariusza zostaje ustalona **True**, a następnie **opóźnienie uruchamiania** wartości właściwości w czasie zostaną zastosowane po rozgrzewania okres. Można kontrolować, scenariuszy, do których mają zostać uwzględnione w rozgrzewania przy użyciu **Wyłącz podczas rozgrzewania** właściwości scenariusza.
 
-5. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowej **czas rozpoczęcia opóźnienie** wartość.
+5. Po zmianie właściwości wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić testu obciążenia za pomocą nowego **opóźnienie uruchamiania** wartość.
 
-## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>Włączanie i wyłączanie czy scenariusza działa w okresie rozgrzewania
+## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>Włączanie i wyłączanie czy scenariusz jest uruchamiany w okresie rozgrzewania
 
-**Wyłącz podczas rozgrzewania** właściwości można ustawić za pomocą **właściwości** okna. Edytowanie właściwości scenariusza testów obciążenia jest ustawiana w edytorze testu obciążenia.
+**Wyłącz podczas rozgrzewania** właściwości są ustawiane przy użyciu **właściwości** okna. Edytowanie właściwości scenariusza testu obciążenia jest ustawiany przez Edytor testu obciążenia.
 
- **Wyłącz podczas rozgrzewania** właściwość jest używana w celu wskazania, czy scenariusza należy uruchomić lub nie działać w okresie rozgrzewania, który jest określony w **czas rozpoczęcia opóźnienie** właściwości. Aby uzyskać więcej informacji, zapoznaj się z poprzedniej procedury [Określ opóźnienie uruchomienie scenariusza](#specify-the-delay-start-time-of-a-scenario).
+ **Wyłącz podczas rozgrzewania** właściwość jest używana w celu wskazania, czy scenariusz powinna działać, albo nie działać w okresie rozgrzewania, który jest określony w **opóźnienie uruchamiania** właściwości. Aby uzyskać więcej informacji, zapoznaj się z poprzedniej procedury [określić opóźnienie uruchomienie scenariusz](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości parametry uruchomieniowe i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-### <a name="to-enable-or-disable-the-warm-up-period-for-a-scenario"></a>Aby włączyć lub wyłączyć okres rozgrzewania scenariusza
+### <a name="to-enable-or-disable-the-warm-up-period-for-a-scenario"></a>Aby włączyć lub wyłączyć okres rozgrzewania, dotyczy scenariusza
 
-1. Otwórz testu obciążenia.
+1. Otwórz test obciążenia.
 
-     **Edytora testu obciążenia** pojawi się. Zostanie wyświetlone drzewo testu obciążenia.
+     **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusz, który chcesz zmienić zachowanie rozgrzewania.
+2. Obciążenia test drzew **scenariuszy** folderu, wybierz węzeł scenariusza, który chcesz zmienić zachowanie rozgrzewania.
 
-3. Na **widoku** menu, wybierz opcję **okna właściwości**.
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Kategorie i właściwości tego scenariusza są wyświetlane w **właściwości** okna.
 
      W **Wyłącz podczas rozgrzewania** właściwości, wybierz opcję **True** lub **wartość False.**
 
-4. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **Wyłącz podczas rozgrzewania** wartość.
+4. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **Wyłącz podczas rozgrzewania** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Konfigurowanie agentów testowych i testowanie kontrolerów testów obciążenia](../test/configure-test-agents-and-controllers-for-load-tests.md)
+- [Konfigurowanie agentów testowych i kontrolerów testów obciążenia testów](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829290"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896305"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
 
@@ -24,7 +24,9 @@ Można skonfigurować adapter danych diagnostycznych do testowania aplikacji w r
 > [!WARNING]
 > Po uruchomieniu testów w prawdziwej sieci, która jest typu wolniejszego niż sieć, którą emulujesz, testy będą nadal działać w niższej szybkości sieci. Emulacja może tylko spowolnić środowisko sieciowe, nie go przyśpieszyć.
 
- Poniższa procedura opisuje sposób konfigurowania emulacji sieci z edytora konfiguracji. Te kroki dotyczą zarówno edytora konfiguracji w programie Microsoft Test Manager i programu Visual Studio.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Poniższa procedura opisuje sposób konfigurowania emulacji sieci z edytora konfiguracji. Te kroki dotyczą zarówno edytora konfiguracji w programie Microsoft Test Manager i programu Visual Studio.
 
 > [!NOTE]
 > Adapter danych diagnostycznych emulacji sieciowej ma zastosowanie tylko do ustawień testowych Visual Studio. Nie jest używana do ustawień testu w Microsoft Test Manager.
@@ -34,9 +36,9 @@ Konta mającego uprawnienia administratora może służyć do emulacji sieci. Je
 > [!NOTE]
 > Konto Usługa sieciowa, która jest domyślnym kontem dla agenta testowego, nie jest członkiem grupy Administratorzy.
 
- **Emulacja sieci true**
+**Emulacja sieci true**
 
- Visual Studio używa emulacja sieciowej true bazującej na oprogramowanie dla wszystkich typów testu. Obejmuje to testy obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
+Visual Studio używa emulacja sieciowej true bazującej na oprogramowanie dla wszystkich typów testu. Obejmuje to testy obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
 
 - Czas obustronnej konwersji w sieci (opóźnienie)
 
@@ -50,12 +52,13 @@ Konta mającego uprawnienia administratora może służyć do emulacji sieci. Je
 
 - Propagacje błędów.
 
-  Emulacja sieci true również zapewnia elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
+Emulacja sieci true również zapewnia elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
 
-  Emulacja sieci TRUE może służyć przez sieciowych deweloperów i testerów do emulowania pożądanego środowiska testowego, oceny wydajności, przewidywania wpływu zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu z testami sprzętu, emulacji sieci true jest rozwiązaniem znacznie tańszym i bardziej elastycznym.
+Emulacja sieci TRUE może służyć przez sieciowych deweloperów i testerów do emulowania pożądanego środowiska testowego, oceny wydajności, przewidywania wpływu zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu z testami sprzętu, emulacji sieci true jest rozwiązaniem znacznie tańszym i bardziej elastycznym.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Skonfiguruj emulację sieci dla ustawień testu
- Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z programu Visual Studio, a następnie wybierz **dane i Diagnostyka** strony.
+
+Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z programu Visual Studio, a następnie wybierz **dane i Diagnostyka** strony.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Aby skonfigurować emulację sieci ustawień testu
 

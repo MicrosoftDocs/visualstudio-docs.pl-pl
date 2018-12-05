@@ -1,5 +1,5 @@
 ---
-title: Testi dużej aplikacji przy użyciu wielu map interfejsu użytkownika w programie Visual Studio
+title: Testi dużej aplikacji przy użyciu wielu map UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891027"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895135"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
 
 W tym temacie omówiono sposób używania kodowanych testów interfejsu użytkownika podczas testowania dużych aplikacji przy użyciu wielu map interfejsu użytkownika.
 
- **Wymagania**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**Wymagania**
 
 - Visual Studio Enterprise
 
-  Gdy tworzysz nowy kodowany test interfejsu użytkownika, struktura testowania programu Visual Studio generuje kod dla testu domyślnie <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasy. Aby uzyskać więcej informacji na temat sposobu rejestrowania kodowane testy interfejsu użytkownika, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) i [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
+Gdy tworzysz nowy kodowany test interfejsu użytkownika, struktura testowania programu Visual Studio generuje kod dla testu domyślnie <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasy. Aby uzyskać więcej informacji na temat sposobu rejestrowania kodowane testy interfejsu użytkownika, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) i [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
 
-  Kod generowany dla mapy interfejsu użytkownika zawiera klasę dla każdego obiektu, który test współdziała z. Dla każdej wygenerowanej metody do klasy pomocnika na potrzeby parametrów metody jest generowany specjalnie dla tej metody. W przypadku dużej liczby obiektów, stron i formularzy i kontrolek w aplikacji mapy interfejsu użytkownika można powiększać dużych. Ponadto jeśli kilka osób pracuje testy, aplikacja staje się niewygodna za pomocą pojedynczego dużego pliku mapy interfejsu użytkownika.
+Kod generowany dla mapy interfejsu użytkownika zawiera klasę dla każdego obiektu, który test współdziała z. Dla każdej wygenerowanej metody do klasy pomocnika na potrzeby parametrów metody jest generowany specjalnie dla tej metody. W przypadku dużej liczby obiektów, stron i formularzy i kontrolek w aplikacji mapy interfejsu użytkownika można powiększać dużych. Ponadto jeśli kilka osób pracuje testy, aplikacja staje się niewygodna za pomocą pojedynczego dużego pliku mapy interfejsu użytkownika.
 
-  Użycie wielu plików mapy interfejsu użytkownika może zapewnić następujące korzyści:
+Użycie wielu plików mapy interfejsu użytkownika może zapewnić następujące korzyści:
 
 - Każda mapa może być skojarzony z podzbiorem logiczny aplikacji. Dzięki temu zmiany do zarządzania.
 

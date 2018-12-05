@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 09faa6473ee3f9570e57655e065a4bb9bd622e9c
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: ffc5d54b9eac28e975b6ee538e6193e52f98282f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948273"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895148"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kod niestandardowej reguły walidacji dla testów wydajności sieci web
 
@@ -30,6 +30,8 @@ Możesz utworzyć własne reguły sprawdzania poprawności. Aby to zrobić, klas
 
 > [!NOTE]
 > Można również utworzyć niestandardowe reguły wyodrębniania. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-custom-validation-rules"></a>Aby utworzyć niestandardowe reguły sprawdzania poprawności
 

@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d9fea16d1131ce45b8273d53a3db4a88989d1c91
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621202"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895434"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w testach obciążenia za pomocą analizatora testu obciążenia
 
 Reguły progów są skojarzone z specyficzne liczniki wydajności, a naruszenia wskazują, że licznik wydajności przekracza lub spadła poniżej wartości zestawu. Po uruchomieniu testu obciążenia, można analizować naruszeń dla reguły progów, które wcześniej.
 
 W przypadku wszelkich naruszeniach, **naruszenia progu** hiperłącze pojawia się na **analizatora testu obciążenia** pasek stanu i określa liczbę naruszeń, które wystąpiły. Możesz wybrać hiperlink, aby wyświetlić tabelę naruszenia progu. Można również wyświetlić naruszenie progowe w **liczniki** okna, a na wykresie.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Wyświetl naruszenie progowe w tabeli
 

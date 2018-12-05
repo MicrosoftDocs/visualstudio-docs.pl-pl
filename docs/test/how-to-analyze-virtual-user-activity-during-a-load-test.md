@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9191be64a2dae4f2d58c7ffb3e01e0874ff71903
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621357"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895239"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
 Wyświetl aktywność wirtualnego użytkownika skojarzonego z testu obciążenia przy użyciu **wykres aktywności wirtualnych użytkowników**. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. **Wykres aktywności wirtualnych użytkowników** dowiesz się, dokładnie co każdy użytkownik wirtualny był wykonywany podczas testu. Można widać wzorce aktywności użytkowników, wzorce obciążenia, korelowanie testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. **Wykres aktywności wirtualnych użytkowników** jest dostępna tylko w przypadku, po zakończeniu testu obciążenia.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Poniższe procedury pokazują, jak wyświetlić **wykres aktywności wirtualnych użytkowników**, jak Zbadaj działania konkretnego użytkownika i jak używać filtrowania.
 

@@ -3,19 +3,19 @@ title: Zainstaluj program Visual Studio dla komputerów Mac
 description: Instrukcje dotyczące sposobu instalowania programu Visual Studio dla komputerów Mac i dodatkowe składniki wymagane dla wieloplatformowego opracowywania aplikacji.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a179b5d02a3c50e6942a660e845edd546037d86
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294997"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896487"
 ---
 # <a name="set-up-and-install-visual-studio-for-mac"></a>Ustaw w pionie i zainstaluj program Visual Studio dla komputerów Mac
 
-## <a name="setup"></a>Konfiguracja
+## <a name="requirements"></a>Wymagania
 
 Do rozpoczęcia tworzenia natywnych, aplikacje dla wielu platform, po pobraniu programu Visual Studio dla komputerów Mac istnieje kilka rzeczy, które należy zainstalować i skonfigurować w ramach przygotowań.
 
@@ -24,6 +24,9 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
 * komputer Mac z systemem macOS Sierra 10.12 lub nowszej
 * Xcode 8.3 lub nowszej. Najnowsza stabilna wersja zazwyczaj jest zalecane.
 * Tego identyfikatora firmy Apple. Jeśli nie masz jeszcze identyfikatora Apple ID można utworzyć nowe konto na https://appleid.apple.com. Należy mieć identyfikator Apple ID do instalowania i rejestrowania się w środowisku Xcode.
+
+> [!TIP]
+> Visual Studio 2019 r dla komputerów Mac (wersja zapoznawcza) jest [udostępniono](install-preview.md) do testowania.
 
 ## <a name="install"></a>Zainstaluj
 

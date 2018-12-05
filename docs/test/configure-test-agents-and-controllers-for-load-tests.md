@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942988"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895642"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurowanie agentów testowych i kontrolerów do prowadzenia testów obciążeniowych testów
 
@@ -22,6 +22,8 @@ Program Visual Studio może generować symulowane obciążenia aplikacji za pomo
 
 > [!NOTE]
 > Umożliwia także testowania obciążenia opartego na chmurze, aby zapewnić maszynom wirtualnym, które generują obciążenie wielu użytkownikom uzyskiwanie dostępu do witryny sieci Web, w tym samym czasie. Dowiedz się więcej na temat testowania obciążenia w chmurze w [Uruchom testy obciążenia przy użyciu planów testów Azure](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>Architektura symulacji obciążenia
 

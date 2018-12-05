@@ -1,5 +1,5 @@
 ---
-title: Testowanie aplikacji programu SharePoint za pomocą kodowanych testów interfejsu użytkownika w programie Visual Studio
+title: Testowanie aplikacji programu SharePoint za pomocą kodowanych testów interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379715"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895447"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testowanie aplikacji programu SharePoint za pomocą kodowanych testów interfejsu użytkownika
 
 Łącznie kodowane testy interfejsu użytkownika w aplikacji programu SharePoint pozwala zweryfikować poprawne działanie całej aplikacji, w tym jego formantów interfejsu użytkownika. Kodowane testy interfejsu użytkownika można zweryfikować wartości i logika interfejsu użytkownika.
 
 Aby dowiedzieć się więcej na temat korzyści z używania kodowanych testów interfejsu użytkownika, zobacz [automatyzacji w użyciu interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Wymagania**
 

@@ -1,5 +1,5 @@
 ---
-title: Określanie typów sieci wirtualnych w scenariuszu testu obciążenia w programie Visual Studio
+title: Określanie typów sieci wirtualnych w scenariuszu testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380231"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894680"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Określanie typów sieci wirtualnych w scenariuszu testu obciążenia
 
 *Mieszany profil sieciowy* umożliwia realistycznie symulować obciążenia więcej w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu typów siecie zamiast jednego typu sieci. Możesz utworzyć zbliżenie tego jak użytkownicy końcowi są wzajemne powiązani ze swoimi aplikacjami.
 
- Mieszany profil sieciowy określa prawdopodobieństwo, że użytkownik wirtualny uruchomi dany *sieci profilu*. Profil sieciowy jest symulacja przepustowości sieci w warstwie aplikacji. Go nie symulowania opóźnienia.
+Mieszany profil sieciowy określa prawdopodobieństwo, że użytkownik wirtualny uruchomi dany *sieci profilu*. Profil sieciowy jest symulacja przepustowości sieci w warstwie aplikacji. Go nie symulowania opóźnienia.
 
- Po utworzeniu testu obciążenia, możesz chcieć symulację obciążenia jest generowany przez więcej niż jeden typ połączenia sieciowego. Mieszany profil sieciowy oferuje kilka typów sieci. Symulowani są różnych sieci. Po wybraniu opcji przykład `Cable-DSL 1.5Mbps`, czasy oczekiwania są wstrzykiwane do testu, aby zasymulować przepustowości wybranego.
+Po utworzeniu testu obciążenia, możesz chcieć symulację obciążenia jest generowany przez więcej niż jeden typ połączenia sieciowego. Mieszany profil sieciowy oferuje kilka typów sieci. Symulowani są różnych sieci. Po wybraniu opcji przykład `Cable-DSL 1.5Mbps`, czasy oczekiwania są wstrzykiwane do testu, aby zasymulować przepustowości wybranego.
 
- Mieszany profil sieciowy działa jak inne opcje mieszanego. Typ sieci jest zaznaczone losowo skojarzone z użytkownika wirtualnego w oparciu mieszany profil sieciowy. Ten użytkownik testy są uruchamiane, przy użyciu określonego typu sieci, na podstawie prawdopodobieństwa, które określiłeś w zestawie.
+Mieszany profil sieciowy działa jak inne opcje mieszanego. Typ sieci jest zaznaczone losowo skojarzone z użytkownika wirtualnego w oparciu mieszany profil sieciowy. Ten użytkownik testy są uruchamiane, przy użyciu określonego typu sieci, na podstawie prawdopodobieństwa, które określiłeś w zestawie.
 
- Po określeniu mieszanego profilu sieciowego można dodać i usunąć typy sieci. Można również zmienić dystrybucji mieszany profil sieciowy przy użyciu formantu mieszanego.
+Po określeniu mieszanego profilu sieciowego można dodać i usunąć typy sieci. Można również zmienić dystrybucji mieszany profil sieciowy przy użyciu formantu mieszanego.
 
- Kontrolka mieszanego pozwala łatwo dopasować rozkład sieci w scenariuszu.
+Kontrolka mieszanego pozwala łatwo dopasować rozkład sieci w scenariuszu.
 
- Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Emulacja sieci true
 
- Visual Studio używa emulacja sieciowej true bazującej na oprogramowanie dla wszystkich typów testu, w tym testy obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
+Visual Studio używa emulacja sieciowej true bazującej na oprogramowanie dla wszystkich typów testu, w tym testy obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
 
 -   Czas błądzenia za pośrednictwem sieci (opóźnienie)
 

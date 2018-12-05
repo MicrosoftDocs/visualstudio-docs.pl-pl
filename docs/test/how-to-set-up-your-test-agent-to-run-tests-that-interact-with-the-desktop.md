@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862102"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894576"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem
 
 Jeśli chcesz uruchomić testy automatyczne, które współdziałają z pulpitem, musi skonfigurować agenta do uruchamiania jako procesu zamiast usługi. Na przykład jeśli chcesz uruchomić kodowany test interfejsu użytkownika zdalnie przy użyciu kontrolera testów i agenta testowego lub chcesz uruchomić test i przechwytywać nagrania, po uruchomieniu wideo, możesz ustawić agenta do uruchamiania jako proces. Podczas przypisywania agentów do ról w ustawieniach testu przy użyciu programu Visual Studio lub podczas przypisywania agentów do ról w Twoim środowisku za pomocą programu Microsoft Test Manager, możesz zmienić ustawienia dla wszelkich agentów przypisanych do ról, które muszą współdziałać z pulpitem.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > Jeśli używasz Microsoft Test Manager do skonfigurowania środowiska laboratoryjnego, instaluje agenta testowego. Można określić w **kreatorze tworzenia środowiska** chcesz skonfigurować jedną z ról, aby uruchamiać kodowane testy interfejsu użytkownika.

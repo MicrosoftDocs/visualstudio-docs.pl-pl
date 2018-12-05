@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176765"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896474"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które typy przeglądarek sieci web w scenariuszu testu obciążenia
 
 *Mieszaną przeglądarkę* umożliwia realistycznie symulować obciążenia więcej w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu różnorodnych przeglądarek sieci web zamiast jednej przeglądarki jednej sieci web. Możesz utworzyć zbliżenie przeglądarek sieci web, które będą używane z aplikacjami.
 
- Mieszana przeglądarka określa prawdopodobieństwo, że użytkownik wirtualny uruchomi typ przeglądarki sieci web określonej w scenariuszu testu obciążenia. Podczas tworzenia testu obciążeniowego można zasymulować, czy obciążenie jest generowane przy użyciu przeglądarek sieci web. Po dodaniu typ przeglądarki sieci web do mieszanki z zestawu przeglądarki sieci web, które znajdują się zestaw skojarzone nagłówki dla wybranej przeglądarki zostanie dodany do każdego żądania HTTP, który jest przesyłany przez test wydajności sieci web.
+Mieszana przeglądarka określa prawdopodobieństwo, że użytkownik wirtualny uruchomi typ przeglądarki sieci web określonej w scenariuszu testu obciążenia. Podczas tworzenia testu obciążeniowego można zasymulować, czy obciążenie jest generowane przy użyciu przeglądarek sieci web. Po dodaniu typ przeglądarki sieci web do mieszanki z zestawu przeglądarki sieci web, które znajdują się zestaw skojarzone nagłówki dla wybranej przeglądarki zostanie dodany do każdego żądania HTTP, który jest przesyłany przez test wydajności sieci web.
 
- Mieszana przeglądarka działa jak inne opcje mieszanego. Typ przeglądarki sieci web jest losowo skojarzony użytkownik wirtualny, oparte na mieszaną przeglądarkę. Tego użytkownika są testy w przeglądarce internetowej określonego, oparte na prawdopodobieństwo, że określone w zestawie.
+Mieszana przeglądarka działa jak inne opcje mieszanego. Typ przeglądarki sieci web jest losowo skojarzony użytkownik wirtualny, oparte na mieszaną przeglądarkę. Tego użytkownika są testy w przeglądarce internetowej określonego, oparte na prawdopodobieństwo, że określone w zestawie.
 
- Po określeniu mieszaną przeglądarkę można później dodać i usunąć typy przeglądarek sieci web do mieszanki. Można również zmienić rozkład przeglądarek, za pomocą formantu mieszanego. Kontrolka mieszanego pozwala łatwo dopasować rozkład przeglądarek w scenariuszu.
+Po określeniu mieszaną przeglądarkę można później dodać i usunąć typy przeglądarek sieci web do mieszanki. Można również zmienić rozkład przeglądarek, za pomocą formantu mieszanego. Kontrolka mieszanego pozwala łatwo dopasować rozkład przeglądarek w scenariuszu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Dodanie nowych przeglądarek do scenariusza
 

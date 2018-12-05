@@ -1,5 +1,5 @@
 ---
-title: Czasy reakcji testy obciążeniowe w programie Visual Studio
+title: Czasy reakcji do testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 236b6dffa3885928b48b7d6ea044f2494e7d7b28
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175985"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895915"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Edytowanie czasów reakcji w celu symulowania opóźnienia interakcja z witryny sieci Web w scenariuszach testów obciążenia
 
 Czasy reakcji służą do symulowania zachowań ludzkich, który powoduje, że osoby do interakcji z witryny sieci Web. Czasy reakcji występują między żądaniami w teście wydajności sieci web i między poszczególnymi iteracjami testu w scenariuszu testu obciążenia. Użycie czasów reakcji w teście obciążeniowym może być przydatne przy tworzeniu bardziej dokładnych symulacji obciążenia. Można zmienić, czy testy reakcji, czasy są używane, lub zignorować obciążenia. Możesz określić, czy reakcji, czasy są używane w obciążenia testy w **edytorze testu obciążeniowego**.
 
- *Profil reakcji* to ustawienie ma zastosowanie do scenariusza w teście obciążeniowym. Ustawienie określa, czy reakcji, czasy, które są zapisywane w testach wydajności sieci web w poszczególnych są używane podczas testu obciążeniowego. Jeśli chcesz używać traktować razy w niektórych testów wydajności sieci web, ale nie w innych, należy umieścić je w różnych scenariuszach. Aby uzyskać więcej informacji na temat scenariuszy, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md).
+*Profil reakcji* to ustawienie ma zastosowanie do scenariusza w teście obciążeniowym. Ustawienie określa, czy reakcji, czasy, które są zapisywane w testach wydajności sieci web w poszczególnych są używane podczas testu obciążeniowego. Jeśli chcesz używać traktować razy w niektórych testów wydajności sieci web, ale nie w innych, należy umieścić je w różnych scenariuszach. Aby uzyskać więcej informacji na temat scenariuszy, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md).
 
- Początkowo ustawić czy używać czasów reakcji w testach obciążenia, podczas tworzenia testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**. Aby uzyskać więcej informacji, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md).
+Początkowo ustawić czy używać czasów reakcji w testach obciążenia, podczas tworzenia testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**. Aby uzyskać więcej informacji, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md).
 
- **Profil reakcji** opcje są opisane na poniższej liście:
+**Profil reakcji** opcje są opisane na poniższej liście:
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Off**
 

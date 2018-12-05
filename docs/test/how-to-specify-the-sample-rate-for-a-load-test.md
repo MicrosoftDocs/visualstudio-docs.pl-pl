@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880120"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896786"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Porady: określanie wielkości próbki dla ustawień przebiegu testu obciążeniowego
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości w celu spełnienia potrzeb i celów testowania.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Za pomocą **edytora testu obciążenia**, można edytować ustawienia przebiegu **częstotliwość próbkowania** wartości właściwości w **właściwości** okna. Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 

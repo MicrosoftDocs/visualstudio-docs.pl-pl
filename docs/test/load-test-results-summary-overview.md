@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c2a2d1ff1aeda2f9df0f496176a134e7a27e559
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621490"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895018"
 ---
 # <a name="load-test-results-summary-overview"></a>Przegląd podsumowania wyników testu obciążenia
 
 Po uruchomieniu testu obciążenia, możesz wyświetlić podsumowanie testu obciążeniowego, aby szybko poznać wyniki. Podsumowanie testu obciążeniowego zapewnia kluczowe wyniki w compact, łatwe do odczytania formacie. Pozwala również na drukowanie podsumowania testu obciążenia. Ułatwia to używane podczas komunikowania się wyniki do zainteresowanych stron. Podsumowanie testu obciążeniowego jest również domyślny widok, po otwarciu wyniku testu obciążeniowego z wcześniej uruchomionego testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Widok podsumowania](../test/media/ltest_summaryview.png)
+![Widok podsumowania](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Podsumowanie testu obciążeniowego
 

@@ -10,19 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379809"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895200"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawienia testu w programie Visual Studio
 
 Adapter danych diagnostycznych profilera ASP.NET służy do zbierania informacji z profilera środowiska ASP.NET. Ten adapter danych diagnostycznych zbiera dane wydajności dla aplikacji ASP.NET.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
-> Nie można użyć tego adaptera danych diagnostycznych dla testów, które są uruchamiane przy użyciu programu Microsoft Test Manager. Można użyć adaptera diagnostycznego programu ASP.NET Profiler testy obciążeniowe wykonywane tylko witryny sieci Web, która wymaga programu Visual Studio Enterprise.
+> Nie można użyć tego adaptera danych diagnostycznych dla testów, które są uruchamiane przy użyciu programu Microsoft Test Manager. Możesz za pomocą adaptera diagnostycznego programu ASP.NET Profiler testów obciążenia za pomocą witryn sieci Web, która wymaga programu Visual Studio Enterprise.
 
 Adapter danych diagnostycznych profilera ASP.NET umożliwia zbieranie danych profilera platformy ASP.NET z warstwy aplikacji, po uruchomieniu testu obciążenia. Profilera nie należy uruchamiać dla długich testów obciążeniowych, na przykład trwających ponad godzinę. Wynika to z faktu, że plik profilera może się rozrosnąć, nawet do kilkuset megabajtów. Zamiast tego należy wykonywać krótsze testy obciążeniowe przy użyciu profilera platformy ASP.NET, który wciąż daje korzyści też bardzo szczegółowo diagnozuje problemy z wydajnością.
 
@@ -31,13 +33,9 @@ Adapter danych diagnostycznych profilera ASP.NET umożliwia zbieranie danych pro
 
 Aby uzyskać więcej informacji, zobacz [jak: utworzyć ustawienia testu dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-Poniższa procedura opisuje sposób konfigurowania adaptera danych diagnostycznych profilera platformy ASP.NET.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Aby skonfigurować profiler środowiska ASP.NET według ustawień testu
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Konfiguracja profilera ASP.NET do ustawień testu
 
 Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z programu Visual Studio i wybrać **dane i Diagnostyka** strony.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Aby skonfigurować profiler środowiska ASP.NET według ustawień testu
 
 1.  Wybierz rolę, która ma zbierać dane profilera platformy ASP.NET.
 
