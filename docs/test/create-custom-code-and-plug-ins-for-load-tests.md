@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826976"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895759"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
 
 Niestandardowa wtyczka używa kodu, który napiszesz i dołączysz to testu obciążeniowego lub testu wydajności sieci web. Można użyć interfejsu API testu obciążeniowego i interfejsu API testu wydajności sieci web do tworzenia niestandardowych wtyczek dla testów, aby rozszerzyć wbudowaną funkcjonalność. Możesz dodać wiele wtyczek do testu obciążeniowego.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>Zadania
 

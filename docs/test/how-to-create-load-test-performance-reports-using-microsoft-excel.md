@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 658a51ffddb8d5cf84b921a7172c11e4fa7a566e
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621568"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896565"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia
 
-Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań. Dostępne są dwa typy raportów testów obciążenia:
+Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Dostępne są dwa typy raportów testów obciążenia:
 
 -   **Uruchom porównanie** tworzy zestaw raportów, który porównuje dane z dwóch wyniki testu obciążenia za pomocą tabel i wykresów słupkowych.
 

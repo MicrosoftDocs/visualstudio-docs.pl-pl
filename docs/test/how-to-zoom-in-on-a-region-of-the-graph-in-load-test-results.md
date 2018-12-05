@@ -13,43 +13,45 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932354"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895889"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Porady: powiększanie obszaru wykresu w wynikach testów obciążenia
 
 Po zakończeniu testu obciążeniowego umożliwia powiększenie paski powiększyć obraz i przewiń do obszaru wykresu. Przez powiększyć, można sprawdzić dane, który został wygenerowany podczas testu obciążenia uruchamiane w bardziej szczegółowo.
 
-> [!NOTE]
-> Powiększ jest dostępna tylko podczas analizowania wynik zakończonego testu obciążenia, gdy występują wyniki testu.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Kontrolka powiększenia jest widoczna tylko w **analizatora testu obciążenia** podczas wyświetlania wyniku testu obciążeniowego w trybie powiększanie. Po zakończeniu testu obciążeniowego lub testu obciążenia, który został wcześniej uruchomiony jest ładowany, w widoku wykresu ustanawiany jest tryb powiększanie. Możesz pokazać lub ukryć kontrolki powiększania na wykresach przy użyciu **Pokaż formanty powiększenia** na pasku narzędzi.
+Powiększ jest dostępna tylko podczas analizowania wynik zakończonego testu obciążenia, gdy występują wyniki testu.
 
- **Powiększenie osi poziomej** można dopasować do analizowania danych okresach czasu podczas testu obciążeniowego. **Powiększenie osi pionowej y** można dopasować do analizowania określonej wartości zakresów liczniki, które znajdują się na wykresie.
+Kontrolka powiększenia jest widoczna tylko w **analizatora testu obciążenia** podczas wyświetlania wyniku testu obciążeniowego w trybie powiększanie. Po zakończeniu testu obciążeniowego lub testu obciążenia, który został wcześniej uruchomiony jest ładowany, w widoku wykresu ustanawiany jest tryb powiększanie. Możesz pokazać lub ukryć kontrolki powiększania na wykresach przy użyciu **Pokaż formanty powiększenia** na pasku narzędzi.
 
- Zarówno **osi poziomej** i **zakres wartości pionowy** kontrolki powiększania można dostosować za pomocą myszy. **Kontroli osi poziomej** również można dostosować za pomocą klawiszy Strzałka w lewo i w prawo. Za pomocą klawiszy strzałek, aby dopasować Kontrolka powiększenia, można dostosować zakresu systemu windows, interwał próbkowania 1 w danym momencie. Za pomocą **Shift** i klawiszy strzałek sprawia, że dostosowania 10 próbkowania.
+**Powiększenie osi poziomej** można dopasować do analizowania danych okresach czasu podczas testu obciążeniowego. **Powiększenie osi pionowej y** można dopasować do analizowania określonej wartości zakresów liczniki, które znajdują się na wykresie.
 
- Aby dostosować Kontrolka powiększenia za pomocą strzałki, najpierw ustawić fokus na Kontrolka powiększenia przy użyciu **kartę** klucza. Po aktywowaniu lewy suwak, klawiszy strzałek zostanie przesunięty początkowy granic okna powiększenia przez 1 interwału w lewej lub prawej. Gdy fokus jest ustawiony na suwaku center, można użyć klawiszy strzałek, przewiń powiększenia okna lewego lub prawego 1 interwał próbkowania bez zmiany rozmiaru okna powiększenia. A na koniec suwaka po prawej stronie zostanie przeniesiony, rozszerzenia lub ograniczenia zakresu koniec okna powiększenia przez 1 interwału próbkowania.
+Zarówno **osi poziomej** i **zakres wartości pionowy** kontrolki powiększania można dostosować za pomocą myszy. **Kontroli osi poziomej** również można dostosować za pomocą klawiszy Strzałka w lewo i w prawo. Za pomocą klawiszy strzałek, aby dopasować Kontrolka powiększenia, można dostosować zakresu systemu windows, interwał próbkowania 1 w danym momencie. Za pomocą **Shift** i klawiszy strzałek sprawia, że dostosowania 10 próbkowania.
 
- Aby przywrócić kontrolki powiększania poziome i pionowe, aby wyświetlić pełną oś czasu i zakresami wartości, można użyć **powiększania się poziomy** opcji **powiększenia Out pionowych** opcji lub **Pomniejsz Zarówno** opcji w menu podręcznym na wykresie.
+Aby dostosować Kontrolka powiększenia za pomocą strzałki, najpierw ustawić fokus na Kontrolka powiększenia przy użyciu **kartę** klucza. Po aktywowaniu lewy suwak, klawiszy strzałek zostanie przesunięty początkowy granic okna powiększenia przez 1 interwału w lewej lub prawej. Gdy fokus jest ustawiony na suwaku center, można użyć klawiszy strzałek, przewiń powiększenia okna lewego lub prawego 1 interwał próbkowania bez zmiany rozmiaru okna powiększenia. A na koniec suwaka po prawej stronie zostanie przeniesiony, rozszerzenia lub ograniczenia zakresu koniec okna powiększenia przez 1 interwału próbkowania.
+
+Aby przywrócić kontrolki powiększania poziome i pionowe, aby wyświetlić pełną oś czasu i zakresami wartości, można użyć **powiększania się poziomy** opcji **powiększenia Out pionowych** opcji lub **Pomniejsz Zarówno** opcji w menu podręcznym na wykresie.
 
 > [!TIP]
 > Możesz użyć **zsynchronizować poziomy powiększenia formantów** w pasku narzędzi, aby włączać i wyłączać synchronizację automatycznego powiększania w poziomie. W przypadku synchronizacji na wszelkie powiększania, które można zastosować do wykresu również będą stosowane do żadnych innych wykresów w widoku wykresu.
 
- ![Kontrolka powiększenia widoku wykresu](../test/media/ltest_zoomcontrol.png) Kontrolka powiększenia widoku wykresu
+![Kontrolka powiększenia widoku wykresu](../test/media/ltest_zoomcontrol.png)
 
- Na poprzedniej ilustracji **badanego** wykres ma powiększona, aby zbadać problemy z wartości progowej. Naruszenia progu zostały włączone za pomocą **Pokaż naruszenia progu na wykresie** z **Opcje wykresu** listy rozwijanej na pasku narzędzi.
+Na poprzedniej ilustracji **badanego** wykres ma powiększona, aby zbadać problemy z wartości progowej. Naruszenia progu zostały włączone za pomocą **Pokaż naruszenia progu na wykresie** z **Opcje wykresu** listy rozwijanej na pasku narzędzi.
 
- Aby uzyskać więcej informacji, zobacz [w widoku wykresu z wynikami testów obciążeniowych analizy](../test/analyze-load-test-results-in-the-graphs-view.md).
+Aby uzyskać więcej informacji, zobacz [w widoku wykresu z wynikami testów obciążeniowych analizy](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="display-graphs"></a>Wyświetlanie wykresów
- Zanim zmienisz wyświetlania wykresu powiększanie lub pomniejszanie lub przewijając, wykonaj tę procedurę, aby wyświetlić wykresy.
 
-### <a name="to-display-graphs"></a>Aby wyświetlić wykresy
+Zanim zmienisz wyświetlania wykresu powiększanie lub pomniejszanie lub przewijając, wykonaj tę procedurę, aby wyświetlić wykresy.
+
+Aby wyświetlić wykresy:
 
 1.  Uruchom test obciążeniowy, aż zostanie zakończony.
 
@@ -68,7 +70,8 @@ Po zakończeniu testu obciążeniowego umożliwia powiększenie paski powiększy
      Każdy pasek powiększenia ma dwa uchwyty. Dojście jest prostokątny obszar, na każdym końcu pasek powiększenia.
 
 ## <a name="zoom-and-scroll"></a>Powiększanie i przewijanie
- W przypadku wielu wykresy wyświetlane zapewnić ich synchronizację, tak że wyświetlają one w tej samej części przebiegu testu obciążeniowego.
+
+W przypadku wielu wykresy wyświetlane zapewnić ich synchronizację, tak że wyświetlają one w tej samej części przebiegu testu obciążeniowego.
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Aby zsynchronizować powiększania i przewijania
 

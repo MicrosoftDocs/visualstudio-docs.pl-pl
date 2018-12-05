@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c743cebadebfd7ae72b78953ba8ead9ec3981981
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621383"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896097"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testów obciążenia w widoku szczegółów analizatora testu obciążenia
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 **Wykresu aktywności wirtualnego użytkownika**
 
- ![Wykresu aktywności wirtualnego użytkownika](../test/media/virtual_actchart.png)
+![Wykresu aktywności wirtualnego użytkownika](../test/media/virtual_actchart.png)
 
- **Szczegóły** wyświetlić Wyświetla **wykres aktywności wirtualnych użytkowników**, który jest używany do wizualnie Analizuj poszczególnych użytkowników wirtualnych zostało podczas testu obciążeniowego. **Wykres aktywności wirtualnych użytkowników** pozwala widać wzorce aktywności użytkowników, wzorce obciążenia, korelować testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. **Wykres aktywności wirtualnych użytkowników** można także pomocy, możesz określić skokami użycia procesora CPU, przerwy w żądań na sekundę i co testów lub strony były uruchamiane podczas wzrostów i spadnie.
+**Szczegóły** wyświetlić Wyświetla **wykres aktywności wirtualnych użytkowników**, który jest używany do wizualnie Analizuj poszczególnych użytkowników wirtualnych zostało podczas testu obciążeniowego. **Wykres aktywności wirtualnych użytkowników** pozwala widać wzorce aktywności użytkowników, wzorce obciążenia, korelować testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. **Wykres aktywności wirtualnych użytkowników** można także pomocy, możesz określić skokami użycia procesora CPU, przerwy w żądań na sekundę i co testów lub strony były uruchamiane podczas wzrostów i spadnie.
 
 > [!NOTE]
 > Przed uruchomieniem testu obciążeniowego, dla którego chcesz użyć **wykres szczegóły aktywności wirtualnych użytkowników**, należy sprawdzić, czy **przechowywanie informacji** właściwość jest ustawiona na  **AllIndividualDetails** opcji za pomocą edytora testu obciążenia wydajności.

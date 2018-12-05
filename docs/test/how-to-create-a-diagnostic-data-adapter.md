@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851611"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895317"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Porady: tworzenie adaptera danych diagnostycznych
 
 Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy użyciu programu Visual Studio, a następnie dodaj API kart danych diagnostycznych dostarczane przez program Visual Studio Enterprise do biblioteki klas. Wyślij wszelkie informacje, które mają jako strumień lub plik do <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> dostarczanych przez szablon, podczas obsługi zdarzeń, które są wywoływane podczas przebiegu testu. Strumienie lub pliki wysłane do <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> są przechowywane jako załączniki do wyników testów po ich zakończeniu. Jeśli tworzysz usterkę z tych wyników testów lub jeśli używasz [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], pliki są również łączone z usterką.
 
- Można utworzyć adaptera danych diagnostycznych, który wpływa na maszynie, na której przeprowadzane są testy lub komputerze, który jest częścią środowiska, którego używasz do uruchamiania aplikacji poddawanych testom. Na przykład zbieranie plików na maszynie testowej, gdy testy są wykonywania lub zbieranie plików na komputerze pełniącym rolę serwera sieci web dla aplikacji.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Adapter danych diagnostycznych można nadać przyjaznej nazwy, która jest wyświetlana podczas tworzenia ustawień testu za pomocą Microsoft Test Manager lub programu Visual Studio. Ustawienia testu umożliwiają definiowanie, która Rola komputera uruchomi określone karty danych diagnostycznych w środowisku, po uruchomieniu testów. Można również skonfigurować karty danych diagnostycznych podczas tworzenia ustawień testu. Na przykład może utworzyć adapter danych diagnostycznych, który zbiera niestandardowe dzienniki z serwera sieci web. Podczas tworzenia ustawień testu, możesz wybrać do uruchomienia tego adaptera danych diagnostycznych na maszynie lub maszynach, które wykonują to rola serwera sieci web i możesz zmodyfikować konfigurację dla ustawień testu do zbierania tylko ostatnich trzech dzienników, które zostały utworzone. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+Można utworzyć adaptera danych diagnostycznych, który wpływa na maszynie, na której przeprowadzane są testy lub komputerze, który jest częścią środowiska, którego używasz do uruchamiania aplikacji poddawanych testom. Na przykład zbieranie plików na maszynie testowej, gdy testy są wykonywania lub zbieranie plików na komputerze pełniącym rolę serwera sieci web dla aplikacji.
 
- Zdarzenia są wywoływane po uruchomieniu testów, tak aby adaptera danych diagnostycznych mogą wykonywać zadania w tym punkcie w teście.
+Adapter danych diagnostycznych można nadać przyjaznej nazwy, która jest wyświetlana podczas tworzenia ustawień testu za pomocą Microsoft Test Manager lub programu Visual Studio. Ustawienia testu umożliwiają definiowanie, która Rola komputera uruchomi określone karty danych diagnostycznych w środowisku, po uruchomieniu testów. Można również skonfigurować karty danych diagnostycznych podczas tworzenia ustawień testu. Na przykład może utworzyć adapter danych diagnostycznych, który zbiera niestandardowe dzienniki z serwera sieci web. Podczas tworzenia ustawień testu, możesz wybrać do uruchomienia tego adaptera danych diagnostycznych na maszynie lub maszynach, które wykonują to rola serwera sieci web i możesz zmodyfikować konfigurację dla ustawień testu do zbierania tylko ostatnich trzech dzienników, które zostały utworzone. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+
+Zdarzenia są wywoływane po uruchomieniu testów, tak aby adaptera danych diagnostycznych mogą wykonywać zadania w tym punkcie w teście.
 
 > [!IMPORTANT]
 > Te zdarzenia mogą wygenerowany w różnych wątkach, zwłaszcza w przypadku, gdy testy są przeprowadzane na wielu komputerach. W związku z tym należy wiedzieć o możliwych problemach wątkowości i wątkami aby przypadkowo nie uszkodzić danych wewnętrznych karty niestandardowej. Upewnij się, że adapter danych diagnostycznych jest bezpieczny dla wątków.
 
- Oto częściowa lista kluczowych zdarzeń, których można używać podczas tworzenia adaptera danych diagnostycznych. Aby uzyskać pełną listę zdarzeń adaptera danych diagnostycznych, zobacz Omówienie abstrakcyjnej <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> klasy.
+Oto częściowa lista kluczowych zdarzeń, których można używać podczas tworzenia adaptera danych diagnostycznych. Aby uzyskać pełną listę zdarzeń adaptera danych diagnostycznych, zobacz Omówienie abstrakcyjnej <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> klasy.
 
 |Zdarzenie|Opis|
 |-|-----------------|
@@ -44,9 +46,9 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 > [!NOTE]
 > Po zakończeniu testu ręcznego danych kolekcji zdarzenia nie są wysyłane do adaptera danych diagnostycznych. Gdy test jest przeprowadzany ponownie, ma nowy identyfikator przypadku testowego. Jeśli użytkownik resetuje test podczas testu (co powoduje zdarzenie <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> zdarzeń), lub wynik kroku zmieni testu, nie zdarzenie zbierania danych są wysyłane do adaptera danych diagnostycznych, ale identyfikator przypadku testowego pozostaje bez zmian. Aby ustalić, czy przypadek testowy został zresetowany, należy śledzić identyfikator przypadku testowego w adaptera danych diagnostycznych.
 
- Poniższa procedura umożliwia utworzenie karty danych diagnostycznych, który zbiera plik danych, które są oparte na informacjach, które można skonfigurować podczas tworzenia ustawień testu.
+Poniższa procedura umożliwia utworzenie karty danych diagnostycznych, który zbiera plik danych, które są oparte na informacjach, które można skonfigurować podczas tworzenia ustawień testu.
 
- Aby uzyskać pełny przykład projektu adaptera danych diagnostycznych, w tym z edytorem konfiguracji niestandardowych, zobacz [przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Aby uzyskać pełny przykład projektu adaptera danych diagnostycznych, w tym z edytorem konfiguracji niestandardowych, zobacz [przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Tworzenie i instalowanie adaptera danych diagnostycznych
 

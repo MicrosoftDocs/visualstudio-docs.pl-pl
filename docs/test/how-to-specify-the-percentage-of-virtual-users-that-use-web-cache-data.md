@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1178cd08bf8d12b4fba61e858ca5631d103292c2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379374"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895577"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania przy użyciu **edytora testu obciążenia**. Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Procent nowych użytkowników** właściwość jest ustawiona **właściwości** okna. Edytuj właściwości scenariusza testów obciążenia w **edytora testu obciążenia**.
 

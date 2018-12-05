@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645188"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895603"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 
@@ -30,6 +30,8 @@ Niektóre witryny sieci Web używają parametrów dynamicznych do przetwarzania 
 -   Wartości parametrów dynamicznych ustawione jako ciąg zapytania lub formularza Parametry księgowania. Są one obsługiwane za pomocą wykrywania parametrów dynamicznych po zarejestrowaniu testu wydajności sieci web.
 
 Niektóre typy parametrów dynamicznych nie są wykrywane. Parametr dynamiczny niewykryte spowoduje, że test wydajności sieci web niepowodzenie podczas uruchamiania, ponieważ wartość dynamiczna będzie prawdopodobnie inny ilekroć dany test jest uruchomiony. Aby prawidłowo obsługiwać te parametry, można dodać reguły wyodrębniania do parametrów dynamicznych w testach wydajności sieci web ręcznie.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Tworzenie i uruchamianie aplikacji sieci web z parametrami dynamicznymi
 

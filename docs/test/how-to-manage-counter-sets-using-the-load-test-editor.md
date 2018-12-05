@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 351d5bd6d46dbc247b125ae56d98c37028f34e35
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 022e105261c5d1e7f079a29915363ed02812d3bc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379387"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894355"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Porady: Zarządzanie zbiorami liczników za pomocą edytora testu obciążenia
 
@@ -32,6 +32,8 @@ Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenio
 Zarządzanie zbiorami liczników obejmuje, wybierając zestaw komputerów, które chcesz zebrać dane o wydajności i przypisywanie zbiór zestawów liczników, które mają być zbierane z każdego komputera. Zarządzasz licznikami w **edytora testu obciążenia**.
 
 ![Zarządzanie zbiorami liczników](../test/media/loadtestmanagecountersets.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-manage-counter-sets"></a>Aby zarządzanie zbiorami liczników
 

@@ -1,5 +1,5 @@
 ---
-title: Obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testów w programie Visual Studio
+title: Nagraj ekran i głos podczas testów
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321076"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894416"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Porady: obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testu
 
@@ -25,6 +25,8 @@ Z edytora konfiguracji w programie Visual Studio można skonfigurować adapter d
 > Nagrania ekranu i głosu nie obsługują wielu konfiguracji monitora.
 
 Nagrywanie ekranu i głosu może służyć za pomocą testów ręcznych i automatycznych. Na przykład zdalne uruchamianie kodowanego testu interfejsu użytkownika można nagrać pulpit, aby zobaczyć kodowany test interfejsu użytkownika podczas jego wykonywania. Aby uzyskać więcej informacji o sposobie przechwytywania nagrywania ekranu i głosu zdalnie, zobacz [porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Aby skonfigurować nagrywanie w ustawieniach testu ekranu i głosu
 

@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950020"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895460"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia
 
 Kiedy uruchamiasz testy obciążenia, wszystkie informacje zebrane podczas uruchomienia testu obciążenia mogą być przechowywane w *repozytorium wyników testów obciążenia*, która jest bazą danych SQL. Repozytorium wyników testu obciążenia zawiera dane licznika wydajności i wszelkie informacje o błędach zarejestrowane. Baza danych repozytorium wyników jest tworzona przez konfigurację dla kontrolerów, lub tworzona automatycznie przy pierwszym lokalnym uruchomieniu testu obciążenia. Do uruchamiania lokalnego baza danych zostanie utworzony automatycznie Jeśli schemat testu obciążenia nie jest obecny.
 
- Jeśli zmodyfikujesz parametry połączenia repozytorium wyników kontrolera do korzystania z innego serwera, nowy serwer musi mieć *loadtestresultsrepository.sql* skrypt uruchamiany w celu utworzenia schematu.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Program Visual Studio Enterprise zapewnia nazwane zestawy liczników, które zbierają wspólne liczniki wydajności bazujące na technologii. Te zestawy są przydatne podczas analizowania serwera IIS, serwera ASP.NET lub programu SQL server. Wszystkie dane zebrane z zestawami licznika są przechowywane w repozytorium wyników testu obciążenia.
+Jeśli zmodyfikujesz parametry połączenia repozytorium wyników kontrolera do korzystania z innego serwera, nowy serwer musi mieć *loadtestresultsrepository.sql* skrypt uruchamiany w celu utworzenia schematu.
+
+Program Visual Studio Enterprise zapewnia nazwane zestawy liczników, które zbierają wspólne liczniki wydajności bazujące na technologii. Te zestawy są przydatne podczas analizowania serwera IIS, serwera ASP.NET lub programu SQL server. Wszystkie dane zebrane z zestawami licznika są przechowywane w repozytorium wyników testu obciążenia.
 
 > [!IMPORTANT]
 > Istnieje różnica między zestawem liczników a danych licznika wydajności. Zestaw liczników to metadane. Definiuje grupę liczników wydajności, które powinny być zbierane z komputera, na którym wykonuje określoną rolę, takich jak usługi IIS lub programu SQL Server. Zestaw liczników jest częścią definicji testu obciążenia. Dane licznika wydajności są zbierane na podstawie zbiory liczników, mapowania licznika Ustaw na określonym komputerze oraz częstotliwość próbkowania.

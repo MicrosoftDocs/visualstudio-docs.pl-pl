@@ -1,5 +1,5 @@
 ---
-title: Za pomocą wykresu wirtualnego aktywności użytkownika dla testów obciążenia w programie Visual Studio
+title: W przypadku testów obciążenia za pomocą wykresu wirtualnego aktywności użytkownika
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295803"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895928"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: Używanie wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów
 
@@ -24,17 +24,7 @@ W tym przewodniku dowiesz się, jak izolowania błędów, które wystąpiły dla
 
 Wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie aktywności wirtualnego użytkownika, który jest skojarzony z testu obciążenia. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. Wykres aktywności wirtualnych użytkowników zawiera dokładnie co każdy użytkownik wirtualny był wykonywany podczas testu. Dzięki temu można wyizolować problemy z wydajnością, obserwując wzorce aktywności użytkowników, wzorce obciążenia, korelowanie testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. Wykres aktywności wirtualnych użytkowników jest dostępna tylko po załadowaniu po zakończeniu wykonywania.
 
-W tym instruktażu wykonasz następujące zadania:
-
--   Dowiedz się, jak użyć następujących narzędzi, które są skojarzone z wykres aktywności wirtualnych użytkowników:
-
-    -   Użyj **Powiększ do okresu czasu** narzędzia do określania określonego przedziału czasu na wykres, który chcesz analizować.
-
-    -   Użyj **Legenda szczegółów** panelu i **filtrowanie wyników** panelu, aby zastosować filtrowanie na wykresie, aby pomóc wyizolować problemy.
-
--   Wykres aktywności wirtualnych użytkowników umożliwia analizowanie błąd, który wystąpił, dla określonego użytkownika wirtualnego i wyświetlić szczegóły typu problematycznego błędów.
-
-Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -47,8 +37,6 @@ Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego uż
     -   [Tworzenie i uruchamianie testu obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otwórz rozwiązanie ColorWebApp utworzony w poprzednich — wskazówki
-
-### <a name="open-the-solution"></a>Otwórz rozwiązanie
 
 1.  Uruchom program Visual Studio.
 

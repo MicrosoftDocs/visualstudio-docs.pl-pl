@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204079"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896198"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Porady: Zastosuj rozkład do opóźnienia dla użytkownika w tempie model testu mieszanego do
 
 Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, można użyć edytora testu obciążenia, aby zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Dystrybucji Zastosuj rozkład do opóźnienia** właściwości są ustawiane przy użyciu **właściwości** okna. Właściwości scenariusza testów obciążenia są modyfikowane za pomocą edytora testu obciążenia.
 

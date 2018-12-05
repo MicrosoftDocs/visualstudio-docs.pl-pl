@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178416"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895395"
 ---
 # <a name="edit-load-tests"></a>Edytowanie testów obciążenia
 
 Testy obciążenia przebiegu testu wydajności WWW lub testów jednostkowych, aby zasymulować wielu użytkownikom dostęp do serwera, w tym samym czasie. Test obciążeniowy umożliwia dostęp do danych obciążeniowych i wydajnościowych aplikacji. Test obciążeniowy można skonfigurować tak, aby emulował różne warunki obciążenia, np. obciążenie przez użytkowników i typy sieci.
 
-> [!NOTE]
-> Testowanie obciążenia jest dostępna tylko w wersji Enterprise programu Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Test obciążenia jest definiowany przez *scenariuszy*, *zbiory liczników*, i *parametrów uruchomieniowych*. Na poniższej ilustracji wyjaśnia różnice między [scenariuszy](../test/edit-load-test-scenarios.md), [zbiory liczników](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), i [parametrów uruchomieniowych](../test/load-test-run-settings-properties.md):
 
 ![Architektura testu obciążenia](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Wymagania dotyczące oprogramowania
+
+Projekty testów wydajności i obciążenia sieci Web są dostępne tylko w wersji Enterprise programu Visual Studio.
 
 ## <a name="edit-load-test-scenario-settings"></a>Edytowanie ustawień scenariusza testu obciążeniowego
 

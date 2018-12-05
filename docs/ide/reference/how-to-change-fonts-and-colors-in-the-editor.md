@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23978b13808054bfcf8ef3c809307e4f6cf37b43
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388624"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894550"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor"></a>Porady: zmiana czcionek i kolorów dla edytora
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Porady: zmiana czcionek i kolorów dla edytora programu Visual Studio 2017
 
 Zmień krój czcionki domyślnej, Dostosuj rozmiar czcionki i zmienić kolory pierwszego planu i tła dla różnych tekstu **wyświetlania elementów** w edytorze kodu. Po zmianie ustawienia czcionki pamiętać o następujących informacji:
 

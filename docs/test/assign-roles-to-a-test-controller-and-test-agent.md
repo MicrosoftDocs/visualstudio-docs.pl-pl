@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370734"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895343"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról do testów kontrolera i agenta testowego
 
 W tym instruktażu pokazano, jak utworzyć i skonfigurować ustawienie testu, która używa kontrolera testów i agenta testowego do dystrybucji testu na kilku komputerach przy użyciu programu Visual Studio. Ponadto w tym instruktażu przedstawiono sposób dodawania adapterów diagnostycznych i danych w ustawieniach testu.
 
-W tym instruktażu wykonasz następujące zadania:
-
--   Utwórz ustawienie testu.
-
--   Przypisywanie ról do agentów testowych i kontrolera testów.
-
--   Przypisz kartę danych diagnostycznych do ustawień testu.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

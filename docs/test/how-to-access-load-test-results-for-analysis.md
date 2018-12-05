@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175676"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896448"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Porady: dostęp do wyników testów obciążenia do analizy
 
 Po uruchomieniu testu obciążenia z edytora testu obciążenia, automatycznego otwierania wyników testów obciążenia, i uruchamianie testu obciążenia jest wyświetlana w **analizatora testu obciążenia**. Po uruchomieniu testu obciążenia z wiersza polecenia, możesz ręcznie dostęp wyniki testu obciążenia.
 
 Wynik testu obciążenia dla ukończonego testu obciążenia zawiera próbki liczników wydajności i informacje o błędzie, który zbierano okresowo z komputerów objętych testami. Duża liczba próbek liczników wydajności może być zbierana w trakcie przebiegu testu obciążeniowego. Ilość zebranych danych wydajności zależy od długości przebiegu testu, interwał próbkowania, liczby komputerów w obszarze badania, liczby gromadzonych liczników, modułów zbierających dane, które są skonfigurowane i poziomów rejestrowania. Dużym teście obciążenia ilość zebranych danych wydajności może łatwo wynieść kilka gigabajtów. Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>Aby dostęp do wyniku testu obciążeniowego
 

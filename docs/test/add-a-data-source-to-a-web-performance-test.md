@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295101"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896110"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
 Wiązanie danych, aby zapewnić różne wartości w ten sam test, na przykład, aby zapewnić różne wartości do formularza Parametry księgowania.
 
- ![Wiązanie danych do testu wydajności sieci web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Zamierzamy korzystanie z przykładowej aplikacji platformy ASP.NET. Posiada trzy *.aspx* strony — domyślną stronę, stronę czerwoną i niebieską stronę. Domyślna strona zawiera formant radiowy, do wyboru czerwony lub niebieski i przycisk Prześlij. Pozostałe dwa *.aspx* strony są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu Prześlij na stronie domyślnej wyświetlamy jedną z innych stron. Możesz pobrać [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowy lub po prostu wykonaj własną aplikację sieci web.
+![Wiązanie danych do testu wydajności sieci web](../test/media/web_test_databinding_conceptual.png)
 
- ![Uruchamianie aplikacji sieci web do zbadania](../test/media/web_test_databinding_runwebapp.png)
+Zamierzamy korzystanie z przykładowej aplikacji platformy ASP.NET. Posiada trzy *.aspx* strony — domyślną stronę, stronę czerwoną i niebieską stronę. Domyślna strona zawiera formant radiowy, do wyboru czerwony lub niebieski i przycisk Prześlij. Pozostałe dwa *.aspx* strony są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu Prześlij na stronie domyślnej wyświetlamy jedną z innych stron. Możesz pobrać [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowy lub po prostu wykonaj własną aplikację sieci web.
 
- Twoje rozwiązanie powinien również zawierać test wydajności sieci web, który przegląda strony aplikacji sieci web.
+![Uruchamianie aplikacji sieci web do zbadania](../test/media/web_test_databinding_runwebapp.png)
 
- ![Rozwiązanie za pomocą testu wydajności sieci web](../test/media/web_test_databinding_solution.png)
+Twoje rozwiązanie powinien również zawierać test wydajności sieci web, który przegląda strony aplikacji sieci web.
+
+![Rozwiązanie za pomocą testu wydajności sieci web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Tworzenie bazy danych SQL
 

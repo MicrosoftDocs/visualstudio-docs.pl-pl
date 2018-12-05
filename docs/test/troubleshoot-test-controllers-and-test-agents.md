@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z kontrolerami testów i agentów testowych w programie Visual Studio
+title: Rozwiązywanie problemów z kontrolerami testów i agentów testowych
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd114e9b5e63301c4f277d6746c04991c97eb9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 274585d864393877b225fe6231c1f775342620f6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888544"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894745"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie rozwiązywania problemów kontrolerów testów i agentów testowych w testach obciążenia
 
 W tym artykule omówiono niektóre typowe problemy, które można napotkać podczas pracy z kontrolerami testów i agentów testowych w programie Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Nie można zebrać liczników wydajności na komputerze agenta testowego
 

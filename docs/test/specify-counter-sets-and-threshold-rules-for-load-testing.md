@@ -15,16 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6ab7d05c5c26cef7c6479f52438cadec7f3124a
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621503"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894511"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym
 
 Testy obciążenia dostarczają nazwanych zestawów licznika, które są przydatne podczas analizowania danych licznika wydajności. Zestawy liczników są uporządkowane według technologii i obejmują aplikacji, ASP.NET, aplikację platformy .NET, usługi IIS i SQL. Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych i ważnych liczników dla testu obciążeniowego zestaw. Zarządzasz licznikami w **edytora testu obciążenia**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Jeśli testy obciążeniowe są rozmieszczone na komputerach zdalnych, liczniki kontrolera i agenta są mapowane na zbiory liczników kontrolera i agenta. Aby uzyskać więcej informacji o sposobie używania komputerów zdalnych w teście obciążenia, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).

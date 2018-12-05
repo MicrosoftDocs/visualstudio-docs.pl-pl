@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296089"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895473"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Porady: Tworzenie ustawień testu dla testu obciążenia rozłożonego
 
 Konfigurowanie *ustawienia testu* dla testów obciążenia, dzięki czemu można rozprowadzić te testy na wielu komputerach przy użyciu agentów testowych i kontrolerów testów. Można również skonfigurować ustawienia testu do użycia *adapterów danych diagnostycznych*, które określają rodzaje danych, które mają być zbierane lub określają wpływ na maszyny testowe podczas uruchamiania testów obciążenia w programie Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Na przykład można użyć adaptera danych diagnostycznych programu ASP.NET Profiler do zbierania podział wydajność kodu. Ponadto adapterów danych diagnostycznych może służyć do symulacji wąskich gardeł na maszynie testowej lub zmniejszenie dostępnej pamięci systemowej.
 

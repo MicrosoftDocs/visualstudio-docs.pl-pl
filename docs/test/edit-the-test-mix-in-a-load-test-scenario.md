@@ -1,5 +1,5 @@
 ---
-title: Test mieszany dla scenariusza testu obciążeniowego w programie Visual Studio
+title: Test mieszany w scenariuszu testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179518"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895993"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika można uwzględnić w scenariuszu testu obciążenia
 
 *Test mieszany* scenariusz składa się z wybranych sieci web wydajności i testy jednostkowe, które są zawarte w tym scenariuszu i dystrybucji tych testów, w tym scenariuszu. Dystrybucja to ustawienie można określić prawdopodobieństwo, że konkretnego testu zostanie wybrany przez użytkownika wirtualnego podczas przebiegu testu obciążenia.
 
- Po dodaniu zestawu testów do testu obciążeniowego *test mieszany* podobnie jak inne mieszać opcji. Użytkownik wirtualny losowo wybiera test, oparty na prawdopodobieństwo, że określone w zestawie. Na przykład w przypadku dwóch testów, każdy 50 procent w asortymencie, nowego użytkownika wirtualnego decyduje się pierwszy test około połowę czasu uruchomienia. W asortymencie 50/50 Jeśli jeden test jest długa i inny jest krótki, większe obciążenie jest dostarczany z długiego testu.
+Po dodaniu zestawu testów do testu obciążeniowego *test mieszany* podobnie jak inne mieszać opcji. Użytkownik wirtualny losowo wybiera test, oparty na prawdopodobieństwo, że określone w zestawie. Na przykład w przypadku dwóch testów, każdy 50 procent w asortymencie, nowego użytkownika wirtualnego decyduje się pierwszy test około połowę czasu uruchomienia. W asortymencie 50/50 Jeśli jeden test jest długa i inny jest krótki, większe obciążenie jest dostarczany z długiego testu.
 
- Po dodaniu testy do mieszanki można je usunąć. Można również zmienić dystrybucji testu mieszanego, za pomocą formantu mieszanego. Formant mieszanego pozwala łatwo dopasować rozkład testów w scenariuszu.
+Po dodaniu testy do mieszanki można je usunąć. Można również zmienić dystrybucji testu mieszanego, za pomocą formantu mieszanego. Formant mieszanego pozwala łatwo dopasować rozkład testów w scenariuszu.
 
 > [!NOTE]
 > Dystrybucja jest miarą prawdopodobieństwo, że konkretnego testu zostanie wybrany przez użytkownika wirtualnego podczas przebiegu testu obciążenia. Dystrybucja jest wyrażona w procentach. W związku z tym sumę liczb dystrybucji dla wszystkich testów, które są zawarte w scenariuszu to 100. Na przykład jeśli scenariusz zawiera tylko jeden test, dystrybucji dla tego testu jest 100 procent.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Dodaj nowe testy do mieszanki testów, w istniejącego scenariusza
 
