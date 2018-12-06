@@ -681,12 +681,14 @@ items:
     items:
     - name: Czas uruchamiania
       href: ide/optimize-visual-studio-startup-time.md
+    - name: Ładowanie odfiltrowanego rozwiązania
+      href: ide/filtered-solutions.md
     - name: Porady i wskazówki
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: Zarządzanie funkcjami ułatwień dostępu
     href: ide/reference/accessibility-features-of-visual-studio.md
     items:
-    - name: Ustawianie opcji ułatwień dostępu IDE
+    - name: Ustawianie opcji ułatwień dostępu środowiska IDE
       href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: Używanie wyłącznie klawiatury
       href: ide/reference/how-to-use-the-keyboard-exclusively.md
@@ -1082,8 +1084,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Resources
   items:
-  - name: Co nowego?
+  - name: Co nowego w programie Visual Studio 2017
     href: ide/whats-new-in-visual-studio.md
+  - name: Co nowego w programie Visual Studio 2019
+    href: ide/whats-new-visual-studio-2019.md
   - name: Informacje o wersji i wymagania systemowe
     items:
     - name: Informacje o bieżącej wersji
@@ -1123,9 +1127,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Porozmawiaj z nami
     href: ide/talk-to-us.md
-ms.openlocfilehash: 4e8c6398d89f5db9f97b8ce61a17960a76e938cb
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389248"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895551"
