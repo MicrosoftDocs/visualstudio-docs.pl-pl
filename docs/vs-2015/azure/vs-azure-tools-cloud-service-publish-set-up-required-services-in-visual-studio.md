@@ -1,5 +1,5 @@
 ---
-title: Przygotowywanie do opublikowania lub wdrożyć usługę w chmurze w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Przygotowywanie do opublikowania lub wdrożyć usługę w chmurze
 description: Dowiedz się procedury konfigurowania chmura i magazyn usługi kont i konfigurowanie aplikacji systemu Azure.
 author: ghogen
 manager: douge
@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d7643d87f60b953b9c0928571036c7890e4d11f0
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 4b0ac752e65530d98b680d7e2e4a9095639423e7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003606"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063349"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Przygotowywanie do publikowania lub wdrażania usługi w chmurze z programu Visual Studio
 
 Aby opublikować projekt usługi w chmurze, możesz skonfigurować następujące usługi zgodnie z opisem w tym artykule:
 
-* A **usługi w chmurze** do uruchamiania roli w środowisku platformy Azure i 
+* A **usługi w chmurze** do uruchamiania roli w środowisku platformy Azure i
 * A **konta magazynu** , który zapewnia dostęp do usług obiektów Blob, kolejek i tabel.
 
 ## <a name="create-a-cloud-service"></a>Utwórz usługę w chmurze

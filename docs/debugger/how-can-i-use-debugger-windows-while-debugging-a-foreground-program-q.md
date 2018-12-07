@@ -1,6 +1,6 @@
 ---
-title: Jak można używać okien debugera przy debugowaniu programu pierwszego planu? | Microsoft Docs
-ms.custom: ''
+title: Używać okien debugera przy debugowaniu aplikacji pierwszego planu | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,19 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26654d13053c963ad86d46bee5a6fe6ed0d4d85d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6497a2a21c85e7889b3b6538dace0f8c22f24944
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473056"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063771"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Jak można używać okien debugera przy debugowaniu programu pierwszego planu?
 ## <a name="problem-description"></a>Opis problemu  
- Próbuję debugować problem malowaniu ekranu. Aby przyjrzeć się ten problem, muszę zachować program na pierwszym planie, co oznacza, że nie mam dostępu do debugowania systemu windows. Co mogę zrobić?  
+ Próbuję debugować problem, malowaniu ekranu. Aby obserwować ten problem, muszę zachować program na pierwszym planie, co oznacza, że nie mam dostępu do debugowania systemu windows. Co mogę zrobić?  
   
 ## <a name="solution"></a>Rozwiązanie  
- Jeśli masz drugiego komputera, można użyć zdalnego debugowania. Podczas działania debugera na hoście z konfiguracją dwa komputery, możesz obserwować malowaniu ekranu na komputerze zdalnym. Aby uzyskać więcej informacji dotyczących debugowania zdalnego, zobacz [zdalnego debugowania](../debugger/remote-debugging.md).  
+ Jeśli masz drugiego komputera, można użyć, zdalne debugowanie. Podczas działania debugera na hoście z konfiguracją dwóch komputerach możesz obejrzeć malowaniu ekranu na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

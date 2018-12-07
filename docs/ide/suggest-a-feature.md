@@ -1,5 +1,5 @@
 ---
-title: 'Omówienie: Zaproponuj funkcję dla programu Visual Studio'
+title: Propozycje dotyczące funkcji
 description: W tym artykule opisano sugestie dotyczą w społeczności deweloperów, jak Wyraź sugestię i jak sugestie są używane przez firmę Microsoft w planach programu Visual Studio
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 3bdc2521020b1b354108e3130c7efa66d7c15394
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826705"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053376"
 ---
 # <a name="overview-suggest-a-feature"></a>Omówienie: Zaproponuj funkcję
 
 Wprowadziliśmy zupełnie nowe środowisko sugerując funkcje wraz z bieżącym możliwość zgłaszanie problemów na [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com). Jest to nowy sposób, który może uprawniony współpracować bezpośrednio z programu Visual Studio inżynieryjnym przepływie pracy.
 
-Do tej pory użytkowników programu Visual Studio mają umożliwia Zaproponuj pomysły na funkcje forum User Voice. *Zaproponuj funkcję* doświadczenie w społeczności deweloperów pozwala na przejście od forum User Voice na jednej platformie za Twoją opinię, która uczestniczy bezpośrednio z zespołów produktów Visual Studio.  
+Do tej pory użytkowników programu Visual Studio mają umożliwia Zaproponuj pomysły na funkcje forum User Voice. *Zaproponuj funkcję* doświadczenie w społeczności deweloperów pozwala na przejście od forum User Voice na jednej platformie za Twoją opinię, która uczestniczy bezpośrednio z zespołów produktów Visual Studio.
 
 Zmigrowaliśmy początkowego zestawu pomysły z forum User Voice do społeczności deweloperów. Migracja została wykonana w zależności od wpływu społeczności opinii i priorytetów plan naszych produktów. Oczekiwana Zobacz tutaj sugestii, które mogły zostać pominięte firma Microsoft, możesz dodać go do społeczności deweloperów.
 
 ## <a name="votes"></a>Głosów
 
-Głosowania systemu w User Voice działa inaczej w głosów w społeczności deweloperów. Aby zachować integralność liczby głosu społeczności deweloperów i uniknąć pochylanie głosów, pokazujemy liczba głosów User Voice, zawsze jako tag obok każdego sugestii funkcji. W miarę postępu głosować w sprawie propozycji w rozszerzonej społeczności deweloperów Twojej nowej liczby głosów będą wyświetlane osobno z liczbą głosów User Voice.  
+Głosowania systemu w User Voice działa inaczej w głosów w społeczności deweloperów. Aby zachować integralność liczby głosu społeczności deweloperów i uniknąć pochylanie głosów, pokazujemy liczba głosów User Voice, zawsze jako tag obok każdego sugestii funkcji. W miarę postępu głosować w sprawie propozycji w rozszerzonej społeczności deweloperów Twojej nowej liczby głosów będą wyświetlane osobno z liczbą głosów User Voice.
 
 ## <a name="user-voice"></a>User Voice
 
@@ -77,7 +77,7 @@ Oznaczone sugestię dotyczącą funkcji **uzyskać więcej informacji na potrzeb
 
 - - -
 
-![Zamknięty — nie ma wystarczającej ilości informacji o stan sugestie społeczności deweloperów](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![Zamknięty — nie ma wystarczającej ilości informacji o stan sugestie społeczności deweloperów](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Zamknięte — Brak wystarczającej ilości informacji** wskazuje, że mimo kilku prób nie odebraliśmy jeszcze wystarczających informacji do w pełni zrozumieć swoje sugestie funkcji. Mamy Zamknij nowej sugestii funkcji, ponieważ nie możemy podejmować żadnych dalszych akcji na tym etapie.
 

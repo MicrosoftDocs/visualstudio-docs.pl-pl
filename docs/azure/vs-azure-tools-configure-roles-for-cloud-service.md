@@ -1,22 +1,22 @@
 ---
-title: Konfigurowanie ról usługi w chmurze platformy Azure przy użyciu programu Visual Studio | Dokumentacja firmy Microsoft
+title: Konfigurowanie ról usługi w chmurze platformy Azure
 description: Informacje o sposobie instalowania i konfigurowania ról dla usług Azure cloud services przy użyciu programu Visual Studio.
 author: ghogen
 manager: douge
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 71f89c8d7a7ffc7e1eb24f4ace12363844ee5c4d
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e1b10fc38abaf497332746e1367f5727f0998023
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000182"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064804"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 

@@ -1,6 +1,6 @@
 ---
-title: 'Porady: debugowanie klientów i serwerów za pomocą debugowania RPC COM | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Debugowanie klientów i serwerów za pomocą debugowania RPC COM | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,15 +27,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1404d81502aaa0579c20511f3eecafa86607df0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6c5a6b2dc47e1d0e6c52df3cc77fc5b90f4d75e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473741"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049027"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Porady: debugowanie klientów i serwerów COM za pomocą debugowania RPC
-Debugowanie zdalnego wywołania (procedur RPC) procedury służy do debugowania aplikacji klient/serwer COM. Należy włączyć RPC, debugowanie, aby go użyć. Z włączonym debugowaniem RPC, po kroku do wywołania serwera od klientów, debuger dołączony do serwera i umożliwia debugowanie kodu. Gdy debuger jest dołączony, można użyć wszystkich funkcji debugera z procesami klienta i serwera.  
+Debugowanie zdalnego wywołania (procedur RPC) procedury można użyć do debugowania aplikacji typu klient/serwer COM. Konieczne jest włączenie debugowania z niej korzystać RPC. Z włączonym debugowaniem RPC, po kroku do wywołania serwera z klienta, debuger dołącza do serwera i umożliwia debugowanie kodu. Gdy debuger jest dołączony, mogą używać wszystkich funkcji debugera, procesy klienta i serwera.  
   
 ### <a name="to-enable-rpc-debugging"></a>Aby włączyć debugowanie RPC  
   
@@ -43,16 +43,16 @@ Debugowanie zdalnego wywołania (procedur RPC) procedury służy do debugowania 
   
 2.  W **opcje** okno dialogowe, kliknij przycisk **debugowanie** folderu.  
   
-3.  Kliknij przycisk **natywnego** strony.  
+3.  Kliknij przycisk **natywnych** strony.  
   
 4.  Wybierz **debugowania RPC** pole wyboru.  
   
     > [!NOTE]
-    >  Aby debugować wywołania RPC, musi mieć uprawnienia administratora lub użytkownika.  
+    >  Aby debugować wywołania RPC, musi mieć uprawnienia administratora lub użytkownik zaawansowany.  
   
     > [!NOTE]
-    >  Wykonywanie krok po kroku na zdalnym serwerze z systemem Microsoft Windows Vista RPC będzie działać tylko wtedy, gdy debuger natywny jest dołączony do serwera zdalnego. W przeciwnym razie wywołania RPC zakończy się niepowodzeniem bez komunikatu o błędzie. W przeciwnym razie ukończy wywołanie RPC, ale krok do wywołania RPC nie będą działać.  
+    >  Przechodzenie do serwera zdalnego z systemem Microsoft Windows Vista RPC będzie działać tylko wtedy, gdy debuger natywny jest dołączony do serwera zdalnego. W przeciwnym razie wywołania RPC zakończy się niepowodzeniem bez komunikatu o błędzie. W przeciwnym razie wywołania RPC zostanie ukończone, ale wkroczenia do wywołania RPC nie będzie działać.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)  
- [Debugowanie w programie Visual Studio](../debugger/index.md) [debugera samouczek funkcji](../debugger/debugger-feature-tour.md)
+ [Debugowanie w programie Visual Studio](../debugger/index.md) [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

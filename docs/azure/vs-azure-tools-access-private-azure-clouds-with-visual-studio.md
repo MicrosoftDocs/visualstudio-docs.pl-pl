@@ -1,22 +1,22 @@
 ---
-title: Uzyskiwanie dostępu do prywatnej chmury platformy Azure z programem Visual Studio | Dokumentacja firmy Microsoft
+title: Uzyskiwanie dostępu do prywatnej chmury platformy Azure
 description: Dowiedz się, jak uzyskać dostęp do zasobów chmury prywatnej za pomocą programu Visual Studio.
 author: ghogen
 manager: douge
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 23c9fa380238a489b59404e07eebdb80c6cb2ccc
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 04f2576fcc96f11bda8d46e2c187f6f0030710b6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000635"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061894"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Uzyskiwanie dostępu do prywatnej chmury platformy Azure z programem Visual Studio
 

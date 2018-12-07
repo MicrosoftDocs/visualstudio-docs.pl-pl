@@ -1,6 +1,6 @@
 ---
 title: Publikowanie na platformie Azure przez importowanie ustawień publikowania
-ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
+description: Tworzenie i importowanie profilu publikowania, aby wdrożyć aplikację z programu Visual Studio w usłudze Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4b0e4ea963f20199267f32a8c87440c8cc350b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808324"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058503"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usłudze Azure App Service przez importowanie ustawień publikowania w programie Visual Studio
 
@@ -40,7 +40,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 * Konieczne jest posiadanie programu Visual Studio 2017 i **ASP.NET** i. **NET Framework** pakiet roboczy programowania. Dla aplikacji platformy .NET Core, należy również. **.NET Core** obciążenia.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 * Tworzenie usługi Azure App Service. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

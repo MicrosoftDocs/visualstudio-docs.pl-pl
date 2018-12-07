@@ -1,24 +1,60 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 129e7fa7691d0e03f44190de83d07bd09c4f2f5f
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
-ms.translationtype: HT
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954217"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068383"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 Dziennik zmian w programie Visual Studio Tools for Unity.
+
+## <a name="3903"></a>3.9.0.3
+ wydana 28 listopada 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Rozwiązano problemy intellisense i ponowne załadowanie projektu, podczas dodawania lub usuwania skryptów znajdujących się w bardzo pierwszego projektu.
+
+## <a name="3902"></a>3.9.0.2
+ wydana 19 listopada 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Debuger:**
+
+    -   Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
+
+## <a name="3901"></a>3.9.0.1
+ Wydana 15 listopada 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Naprawiono Unity wtyczki aktywacji wybranie innego domyślnego edytora.
+
+## <a name="3900"></a>3.9.0.0
+ Wydana 13 listopada 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
 
 ## <a name="3807"></a>3.8.0.7
  Wydana 20 września 2018 r.
@@ -27,7 +63,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   **Debuger:**
 
-    -   Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
+    -   (Backported z 3.9.0.2) Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
 
 ## <a name="3806"></a>3.8.0.6
  Wydana 27 sierpnia 2018 r.
@@ -71,7 +107,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   **Generowanie projektu:**
 
-    -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
+    -   (Backported z 3.9.0.0) Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Wydana 7 lipca 2018 r.

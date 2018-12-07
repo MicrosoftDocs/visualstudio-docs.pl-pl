@@ -1,5 +1,5 @@
 ---
-title: Implementowanie zasad ewidencjonowania analizy kodu niestandardowego dla kodu zarządzanego w programie Visual Studio
+title: Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47973228fbb4d2c7380e4b20537aaf301ed937db
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 4c39ef2c70108eabb3c3d87dc7ab5af17dccd9f8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321102"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049869"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementowanie niestandardowych zasad zaewidencjonowania analizy kodu dla kodu zarządzanego
 

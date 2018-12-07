@@ -1,5 +1,5 @@
 ---
-title: Tworzenie instalacji Offline programu Visual Studio | Dokumentacja firmy Microsoft
+title: Tworzenie instalacji w trybie Offline | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,51 +18,51 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d17d8e7e5edcff6913e0046f0b580362cbc4950
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 0ac8f1c1d631e4d5f682fea5e1841e3914241d14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755663"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055241"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji Offline programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [instalacji programu Visual Studio 2017 w powolnych lub zawodnych środowiskach sieciowych](https://docs.microsoft.com/visualstudio/install/install-vs-inconsistent-quality-network), lub [Tworzenie instalacji sieciowej programu Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/create-a-network-installation-of-visual-studio) i [Specjalne uwagi dotyczące instalowania programu Visual Studio 2017 w trybie offline środowiska](https://docs.microsoft.com/visualstudio/install/install-visual-studio-in-offline-environment).
 
-Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 2015, gdy nie jest połączony z Internetem. Jednak aby przeprowadzić instalację "odłączonego", należy najpierw utworzyć układu instalacji w trybie offline przy użyciu komputerze, na którym jest połączony z Internetem. Oto jak to zrobić.  
+Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 2015, gdy nie jest połączony z Internetem. Jednak aby przeprowadzić instalację "odłączonego", należy najpierw utworzyć układu instalacji w trybie offline przy użyciu komputerze, na którym jest połączony z Internetem. Oto jak to zrobić.
 
 > [!IMPORTANT]
->  Jeśli maszyny w trybie offline jest uruchomiona, Windows 7 z dodatkiem SP1 lub Windows Server 2008 R2, zobacz instrukcje specjalne [Rozwiązywanie problemów z instalacją w trybie offline](#BKMK_tshoot) części tego tematu.  Wykonaj te instrukcje *przed* instalacji programu Visual Studio 2015.  
+>  Jeśli maszyny w trybie offline jest uruchomiona, Windows 7 z dodatkiem SP1 lub Windows Server 2008 R2, zobacz instrukcje specjalne [Rozwiązywanie problemów z instalacją w trybie offline](#BKMK_tshoot) części tego tematu.  Wykonaj te instrukcje *przed* instalacji programu Visual Studio 2015.
 
-##  <a name="BKMK_Offline"></a> Instalowanie przez tworzenie instalacji w trybie offline  
+##  <a name="BKMK_Offline"></a> Instalowanie przez tworzenie instalacji w trybie offline
 
-#### <a name="to-create-an-offline-installation-layout"></a>Aby utworzyć układ instalacji w trybie offline  
+#### <a name="to-create-an-offline-installation-layout"></a>Aby utworzyć układ instalacji w trybie offline
 
-1.  Wybierz wersję programu Visual Studio, który chcesz zainstalować z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) strony pobierania.  
+1.  Wybierz wersję programu Visual Studio, który chcesz zainstalować z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) strony pobierania.
 
-2.  Po pobraniu Instalatora w lokalizacji w systemie plików Uruchom "\<nazwą pliku wykonywalnego >/layout".  
+2.  Po pobraniu Instalatora w lokalizacji w systemie plików Uruchom "\<nazwą pliku wykonywalnego >/layout".
 
-     Na przykład uruchomić: `vs_enterprise.exe /layout D:\VisualStudio2015`  
+     Na przykład uruchomić: `vs_enterprise.exe /layout D:\VisualStudio2015`
 
-     Za pomocą `/layout` przełącznika, możesz pobrać prawie wszystkich pakietów instalacyjnych, nie tylko tych, które dotyczą komputera pobierania. Takie podejście zapewnia pliki, które należy uruchom tego Instalatora w dowolnym miejscu i może być przydatne, jeśli chcesz zainstalować składniki, które pierwotnie nie instalowano.  
+     Za pomocą `/layout` przełącznika, możesz pobrać prawie wszystkich pakietów instalacyjnych, nie tylko tych, które dotyczą komputera pobierania. Takie podejście zapewnia pliki, które należy uruchom tego Instalatora w dowolnym miejscu i może być przydatne, jeśli chcesz zainstalować składniki, które pierwotnie nie instalowano.
 
-3.  Po uruchomieniu tego polecenia, zostanie wyświetlone okno dialogowe, które pozwala zmienić folder, w którym ma układu instalacji w trybie offline, aby znajdują się.   Następnie kliknij przycisk **Pobierz** przycisku.  
+3.  Po uruchomieniu tego polecenia, zostanie wyświetlone okno dialogowe, które pozwala zmienić folder, w którym ma układu instalacji w trybie offline, aby znajdują się.   Następnie kliknij przycisk **Pobierz** przycisku.
 
-     Jeśli pobieranie pakietu zakończy się pomyślnie, powinien zostać wyświetlony komunikat informujący, że **Instalacja zakończona pomyślnie! Pomyślnie pobrano wszystkie określone składniki.**  
+     Jeśli pobieranie pakietu zakończy się pomyślnie, powinien zostać wyświetlony komunikat informujący, że **Instalacja zakończona pomyślnie! Pomyślnie pobrano wszystkie określone składniki.**
 
-4.  Zlokalizuj folder, w którym określone wcześniej. (Na przykład zlokalizuj D:\VisualStudio2015). Ten folder zawiera wszystko, czego potrzebujesz, aby skopiować do współdzielonej lokalizacji lub nośnika instalacyjnego.  
+4.  Zlokalizuj folder, w którym określone wcześniej. (Na przykład zlokalizuj D:\VisualStudio2015). Ten folder zawiera wszystko, czego potrzebujesz, aby skopiować do współdzielonej lokalizacji lub nośnika instalacyjnego.
 
     > [!CAUTION]
-    >  Zestaw SDK systemu Android nie obsługuje obecnie środowisko instalacji w trybie offline. Jeśli elementy Instalacja zestawu Android SDK można zainstalować na komputerze, który nie jest połączony z Internetem, instalacja może zakończyć się niepowodzeniem. Aby uzyskać więcej informacji zobacz sekcję "Rozwiązywanie problemów z instalacją w trybie offline", w tym temacie.  
+    >  Zestaw SDK systemu Android nie obsługuje obecnie środowisko instalacji w trybie offline. Jeśli elementy Instalacja zestawu Android SDK można zainstalować na komputerze, który nie jest połączony z Internetem, instalacja może zakończyć się niepowodzeniem. Aby uzyskać więcej informacji zobacz sekcję "Rozwiązywanie problemów z instalacją w trybie offline", w tym temacie.
 
-5.  Uruchom instalację z lokalizacji pliku lub nośnika instalacyjnego.  
+5.  Uruchom instalację z lokalizacji pliku lub nośnika instalacyjnego.
 
-## <a name="updating-an-offline-installation"></a>Aktualizowanie instalacji w trybie offline  
- Firma Microsoft wydała kilka aktualizacji dla programu Visual Studio 2015. Aby zaktualizować instalację programu Visual Studio, wystarczy pobrać wersję z z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) strony pobierania. Następnie wykonaj czynności opisane w tym temacie umożliwiają utworzenie nowego układu instalacji w trybie offline, a następnie użyć go, aby zaktualizować swoją kopię programu Visual Studio 2015.  
+## <a name="updating-an-offline-installation"></a>Aktualizowanie instalacji w trybie offline
+ Firma Microsoft wydała kilka aktualizacji dla programu Visual Studio 2015. Aby zaktualizować instalację programu Visual Studio, wystarczy pobrać wersję z z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) strony pobierania. Następnie wykonaj czynności opisane w tym temacie umożliwiają utworzenie nowego układu instalacji w trybie offline, a następnie użyć go, aby zaktualizować swoją kopię programu Visual Studio 2015.
 
-##  <a name="BKMK_tshoot"></a> Rozwiązywanie problemów z instalacją w trybie offline  
- Podczas instalacji w trybie offline z trybu offline instalacji pamięci podręcznej, może być wyświetlane komunikaty ostrzegawcze o nie będzie mogła zainstalować niektórych składników i pakietów. Poniższa tabela zawiera możliwe rozwiązania dla tych scenariuszy.  
+##  <a name="BKMK_tshoot"></a> Rozwiązywanie problemów z instalacją w trybie offline
+ Podczas instalacji w trybie offline z trybu offline instalacji pamięci podręcznej, może być wyświetlane komunikaty ostrzegawcze o nie będzie mogła zainstalować niektórych składników i pakietów. Poniższa tabela zawiera możliwe rozwiązania dla tych scenariuszy.
 
 
 |                                                                                       Składnik lub pakietu                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                   Rozwiązanie                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -71,7 +71,7 @@ Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 201
 |                                                                                  Instalacja zestawu android SDK (poziom interfejsu API)                                                                                   |                                                                        Musi mieć połączenie internetowe, aby zainstalować pakiety zestawu SDK systemu Android (poziom interfejsu API). Jeśli korzystasz z sieci z ograniczeniami, po zainstalowaniu programu Visual Studio muszą zezwalać na dostęp do następujących adresów URL:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Aby uzyskać więcej informacji o tym, jak rozwiązać problemy z ustawieniami serwera proxy, zobacz [niepowodzeniami (Instalacja zestawu Android SDK) za serwerem Proxy instalacji programu Visual Studio 2015](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) wpis w blogu.                                                                         |
 |                             Szablony elementów rozszerzalności programu Visual Studio<br /><br /> Rozszerzenie GitHub dla programu Visual Studio<br /><br /> Narzędzia programu PowerShell dla programu Visual Studio                             | Jeśli nie masz dostępu do Internetu, po zainstalowaniu programu Visual Studio 2015, można użyć specjalnego Kanał informacyjny offline do generowania układu instalacji w trybie offline. **Uwaga:** to specjalne źródło danych zawiera najnowsze aktualizacje programu Visual Studio 2015. <br /><br /> Aby utworzyć specjalne Kanał informacyjny offline, uruchom następujące polecenie: / Layout *dysków:* \VisualStudio2015 /overridefeeduri *adres URL do źródła danych xml*<br /><br /> Na przykład język angielski specjalne Kanał informacyjny offline programu Visual Studio 2015 Enterprise, uruchom:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Aby uzyskać pełną listę adresów URL, które służy do tworzenia specjalnej Kanał informacyjny offline w wybranym języku zobacz w poniższej tabeli. |
 
- Użyj następujących adresów URL do utworzenia specyficzny dla języka specjalnego Kanał informacyjny offline, zgodnie z opisem w powyższej tabeli.  
+ Użyj następujących adresów URL do utworzenia specyficzny dla języka specjalnego Kanał informacyjny offline, zgodnie z opisem w powyższej tabeli.
 
 
 |       Język        |                            Adres URL                            |
@@ -91,5 +91,5 @@ Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 201
 |        Rosyjski        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        turecki        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz też
  [Instalowanie programu Visual Studio]()

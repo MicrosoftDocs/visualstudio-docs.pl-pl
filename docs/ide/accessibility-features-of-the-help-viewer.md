@@ -1,5 +1,5 @@
 ---
-title: Dostępność podglądu pomocy programu Visual Studio
+title: Ułatwienia dostępu w Podglądzie pomocy
 ms.date: 11/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -13,27 +13,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7af46b64392c01340c7cb65633939443ffd799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1122bcd67d6a7785b8b35bdf9edf27e519d86662
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917097"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066057"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funkcje ułatwień dostępu w Podglądzie pomocy
-Firma Microsoft dokłada starań, aby ułatwiając swoich produktów i usług dla każdego. Ten temat zawiera informacje na temat funkcji, produktów i usług ułatwiających podglądu pomocy firmy Microsoft dostępne dla osób z szeroką gamę możliwości.
+Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Ten temat zawiera informacje dotyczące funkcji, produktów i usług, które tworzą podglądu pomocy firmy Microsoft dostępne dla osób z wadami szeroką gamę możliwości.
 
 ## <a name="keyboard-access"></a>Dostęp za pomocą klawiatury
-Można uzyskać dostępu do wszystkich funkcji programu Podgląd pomocy za pomocą klawiatury. Aby uzyskać więcej informacji, zobacz [klawisze skrótów (Podgląd pomocy)](../ide/shortcut-keys-help-viewer.md).
+Można uzyskać dostęp do wszystkich funkcji programu Podgląd pomocy za pomocą klawiatury. Aby uzyskać więcej informacji, zobacz [klawisze skrótów (Podgląd pomocy)](../ide/shortcut-keys-help-viewer.md).
 
 ## <a name="font-size"></a>Rozmiar czcionki
-Można zmodyfikować rozmiar czcionki, w których temacie tekst jest wyświetlany w oknie dokumentu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie podglądu pomocy](../ide/customize-the-help-viewer.md).
+Można modyfikować wielkość fontu, w których temacie tekst jest wyświetlany w oknie dokumentu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie podglądu pomocy](../ide/customize-the-help-viewer.md).
 
 ## <a name="window-size"></a>Rozmiar okna
-Poprzez wskazanie linię podziału między dwoma systemu windows, można zmienić szerokość okna nawigacji lub dokumentu. Kiedy kursor zmienia się na dwukierunkową strzałkę, należy użyć podstawowy przycisk myszy, przeciągnij linię podziału do prawej lub lewej.
+Wskazując linię podziału między dwoma oknami, można zmienić szerokość okna nawigacji lub dokumentu. Gdy wskaźnik przyjmie kształt strzałki dwukierunkowej, Użyj podstawowego przycisku myszy, przeciągnij pasek podziału w prawo lub lewo.
 
-## <a name="help-viewer-position"></a>Pozycja podglądu pomocy
-Możesz zmienić położenie podglądu pomocy, przeciągając pasku tytułu w inne miejsce.
+## <a name="help-viewer-position"></a>Położenie podglądu pomocy
+Położenie podglądu pomocy można zmienić, przeciągając pasek tytułu do innej lokalizacji.
 
 ## <a name="see-also"></a>Zobacz także
 

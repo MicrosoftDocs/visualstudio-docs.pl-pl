@@ -1,5 +1,6 @@
 ---
-title: Visual Studio 2017 obciążeń i składników identyfikatorów
+title: Identyfikatory obciążeń i składników programu Visual Studio
+titleSuffix: ''
 description: Użyj obciążenia i identyfikatory składników, zainstaluj program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifestu VSIX
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 96332b767f2bc44561358880c392cb6d96db297b
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: edf5eb09d00bc2814dbc5a8b616459fa8566556c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607474"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063305"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 obciążeń i składników identyfikatorów
 

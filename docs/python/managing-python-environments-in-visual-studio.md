@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie środowiskami Python i tłumaczy
 description: Użyj okna środowiska Python, aby zarządzać globalnym, wirtualnych i środowisk conda, instalowanie interpreterów języka Python i pakietów i przypisywanie środowisk do projektów programu Visual Studio.
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349364"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063220"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiskami Python w programie Visual Studio
 
@@ -57,7 +57,9 @@ W obu przypadkach **środowiska Python** razem zostanie wyświetlone okno **Eksp
 
 Visual Studio szuka zainstalowanych globalnego środowisk za pomocą rejestru (następujących [514 program ten](https://www.python.org/dev/peps/pep-0514/)), oraz środowisk wirtualnych i środowisk conda (zobacz [typów środowisk](#types-of-environments)). Jeśli nie widzisz oczekiwanego środowiska na liście, zobacz [ręcznie Zidentyfikuj istniejące środowisko](#manually-identify-an-existing-environment).
 
-Po wybraniu środowisko na liście programu Visual Studio Wyświetla różnych właściwości i poleceń dla danego środowiska na **Przegląd** kartę. Na przykład widać na ilustracji powyżej to lokalizacja interpreter *C:\Python36-32*. Użyj listy rozwijanej poniżej listy środowisk Aby przełączyć się do różnych kartach zawierających takie jak **pakietów**, i **IntelliSense**. Te karty są opisane w [dokumentacja karcie okna środowiska Python](python-environments-window-tab-reference.md).
+Po wybraniu środowisko na liście programu Visual Studio Wyświetla różnych właściwości i poleceń dla danego środowiska na **Przegląd** kartę. Na przykład widać na ilustracji powyżej to lokalizacja interpreter *C:\Python36-32*. Czterech poleceń w dolnej części **Przegląd** kartę każdego Otwórz wiersz polecenia z interpreterem uruchomiona. Aby uzyskać więcej informacji, zobacz [odniesienie do karty okna dla środowiska Python — omówienie](python-environments-window-tab-reference.md#overview-tab).
+
+Użyj listy rozwijanej poniżej listy środowisk Aby przełączyć się do różnych kartach zawierających takie jak **pakietów**, i **IntelliSense**. Te karty są także opisane w [dokumentacja karcie okna środowiska Python](python-environments-window-tab-reference.md).
 
 Wybierając środowisko nie zmienia jej relacji żadne projekty. Domyślne środowisko wyświetlany czcionką pogrubioną na liście jest tą, która korzysta z programu Visual Studio dla żadnych nowych projektów. Aby użyć innego środowiska za pomocą nowych projektów, użyj **upewnij się, to środowisko domyślne dla nowych projektów** polecenia. W kontekście projektu należy zawsze wybrać określonego środowiska. Aby uzyskać więcej informacji, zobacz [wybierz środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
 

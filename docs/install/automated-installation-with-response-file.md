@@ -1,5 +1,5 @@
 ---
-title: Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi
+title: Automatyzowanie instalacji przy użyciu pliku odpowiedzi
 description: Dowiedz się, jak utworzyć plik odpowiedzi JSON, który umożliwia zautomatyzowanie instalacji programu Visual Studio
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9dbcb5c033469db3e92bd4cde931257ece9ab1
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 682874a24102aae3cd40d71238e5ae9e67b8718a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138452"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064643"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Jak definiować ustawienia w pliku odpowiedzi
 

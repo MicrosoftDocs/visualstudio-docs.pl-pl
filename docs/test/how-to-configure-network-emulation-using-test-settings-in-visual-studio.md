@@ -1,5 +1,5 @@
 ---
-title: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
+title: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896305"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065898"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
 

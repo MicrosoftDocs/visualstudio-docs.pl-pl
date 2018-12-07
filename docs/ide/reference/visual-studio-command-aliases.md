@@ -1,5 +1,5 @@
 ---
-title: Visual Studio — Aliasy poleceń
+title: Aliasy poleceń
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a74bc2bc38befe81ec3a26c5da4819dbe1c66148
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513536"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056441"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 
@@ -131,4 +131,4 @@ Poniższa tabela zawiera listę wstępnie zdefiniowane aliasy poleceń programu 
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Znajdź/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)

@@ -1,5 +1,5 @@
 ---
-title: Obsługa zmian wartości właściwości domeny w programie Visual Studio
+title: Obsługa zmian wartości właściwości domeny
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c889aff3a2def732d5cf45e76ba3d716ad3e3ad3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859591"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057551"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 

@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z legendy wykresu do analizowania testów obciążenia w programie Visual Studio
+title: Korzystanie z legendy wykresu podczas przeprowadzania analizy testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3e379cd3f05063424a7db9905611fa86467bee2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896084"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067197"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Korzystanie z legendy wykresu przeprowadzania analizy testów obciążenia
 

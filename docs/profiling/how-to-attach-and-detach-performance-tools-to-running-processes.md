@@ -1,6 +1,6 @@
 ---
-title: 'Porady: dołączanie i odłączanie narzędzi wydajności do uruchomionego procesu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Dołącz narzędzia do oceny wydajności do uruchomionego procesu
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920940"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048531"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Porady: dołączanie i odłączanie narzędzi wydajności do uruchomionego procesu
 Program profilujący może służyć do dołączenia do lub odłączyć od uruchomionego procesu, aby ułatwić pobierania próbek i zbieranie danych wydajności. Ta metoda umożliwia profilować proces w przypadku, gdy chcesz uniknąć zbierania danych o czas ładowania aplikacji lub do monitorowania wydajności procesu po nim osiągnie określony stan.  

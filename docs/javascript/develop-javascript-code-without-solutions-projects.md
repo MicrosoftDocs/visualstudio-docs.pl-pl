@@ -1,7 +1,8 @@
 ---
 title: Pisanie kodu JavaScript w programie Visual Studio bez rozwiązania lub projektu
+titleSuffix: ''
 description: Program Visual Studio zapewnia obsługę tworzenia kodu bez zależności w pliku projektu lub pliku rozwiązania
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
@@ -13,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: a68174fd9cc1efcdde068448445adcf68fe36f63
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168334"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058457"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
 

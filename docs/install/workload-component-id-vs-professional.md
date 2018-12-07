@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Professional 2017 obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifestu VSIX
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 38b826ad23da0fb25d68411bbc29b98fe8bac111
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 38c4d3a37f0327137cd1398b64efc2a0fb4be088
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607955"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068613"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 składników katalogu
 

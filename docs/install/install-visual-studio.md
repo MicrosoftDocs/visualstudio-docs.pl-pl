@@ -1,5 +1,6 @@
 ---
-title: Instalowanie programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+title: Instalowanie programu Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
 ms.custom: ''
 ms.date: 05/07/2018
@@ -19,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7c9ea8bcd88c77cc99c01c2623cb42a23b3b55d0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049681"
 ---
 # <a name="install-visual-studio-2017"></a>Instalowanie programu Visual Studio 2017
 

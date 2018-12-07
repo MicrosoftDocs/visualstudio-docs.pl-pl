@@ -1,5 +1,5 @@
 ---
-title: Czas odpowiedzi strony w teście obciążenia w programie Visual Studio
+title: Czas odpowiedzi strony w teście obciążeniowym
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895265"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068098"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Porady: wyświetlanie czasu odpowiedzi strony sieci web w teście obciążenia za pomocą analizatora testu obciążenia
 

@@ -1,5 +1,5 @@
 ---
-title: Zainstaluj lokalną dokumentację pomocy programu Visual Studio
+title: Instalowanie dokumentacji pomocy lokalnej
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22236cdaf951dea7e8ec96dbbb25b98168622bb7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915850"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061711"
 ---
 # <a name="install-and-manage-local-content"></a>Instalowanie i zarządzać zawartością lokalną
 

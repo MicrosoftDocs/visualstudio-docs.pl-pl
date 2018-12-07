@@ -1,5 +1,6 @@
 ---
 title: Zaawansowane funkcje programu Visual Studio 2017
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9452e732458a91ce5cc3eea505c7ab3e6dec1774
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863654"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062667"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017
 
@@ -66,7 +67,7 @@ Używasz programu Visual Studio do tworzenia aplikacji i gier dla systemu macOS,
 
 - Tworzenie [platformy .NET Core](/dotnet/core/) aplikacji działających w Windows, macOS i Linux.
 
-- Twórz aplikacje mobilne dla systemów iOS, Android i Windows w języku C# i F # za pomocą [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
+- Twórz aplikacje mobilne dla systemów iOS, Android i Windows w C# i F# przy użyciu [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
 - Użyj standardowych technologii sieci web&mdash;HTML, CSS i JavaScript&mdash;do tworzenia aplikacji mobilnych dla systemów iOS, Android i Windows przy użyciu [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 

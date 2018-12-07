@@ -1,5 +1,5 @@
 ---
-title: Analizowanie aktywności wirtualnego użytkownika testów obciążenia w programie Visual Studio
+title: Analizowanie aktywności wirtualnego użytkownika testów obciążenia
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896097"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059911"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testów obciążenia w widoku szczegółów analizatora testu obciążenia
 

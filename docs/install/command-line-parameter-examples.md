@@ -1,5 +1,5 @@
 ---
-title: Przykładowe parametry wiersza polecenia do zainstalowania programu Visual Studio
+title: Przykładowe parametry wiersza polecenia do zainstalowania
 description: Dostosuj te przykłady do tworzenia własnych instalacji z wiersza polecenia programu Visual Studio.
 ms.date: 11/14/2018
 ms.technology: vs-acquisition
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b40b228ce04a83622f739d22b15c9ab126aade3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 0f16d4935f53fc6c87a03e0ebbf27dd65c407df8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803815"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062638"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017
 

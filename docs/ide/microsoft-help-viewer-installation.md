@@ -1,5 +1,5 @@
 ---
-title: Zainstaluj Pomoc programu Visual Studio w trybie offline
+title: Zainstaluj Pomoc w trybie offline
 ms.date: 11/01/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caba938f491855695ca94e5c8f4765d4ecfa8da8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: fe767afd714af3db868c5ad51b61562dfcab4cbb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348152"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063331"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 

@@ -1,6 +1,6 @@
 ---
-title: Jak można debugować funkcje API systemu Windows? | Microsoft Docs
-ms.custom: ''
+title: Debugowanie funkcji interfejsu API Windows | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cc765c6da62973469280e97759fbab566ca6f37
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2959e5580cc227f18dbd84f88f83fbd5690aa7f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281679"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065076"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak można debugować funkcje API systemu Windows?
 Jeśli chcesz debugować funkcja interfejsu API Windows, która zawiera symbole NT załadowane, wykonaj następujące czynności.  

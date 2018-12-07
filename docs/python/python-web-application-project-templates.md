@@ -1,6 +1,6 @@
 ---
 title: Szablony aplikacji sieci Web dla języka Python
-description: Przegląd szablonów programu Visual Studio dla aplikacji sieci web napisanych w języku Python za pomocą platformy Bottle, Flask i Django, w tym konfiguracje debugowania i publikowania w usłudze Azure App Service.
+description: Program Visual Studio udostępnia szablony dla aplikacji sieci web języka Python za pomocą platformy Bottle, Flask i Django Obsługa obejmuje konfiguracje debugowania i publikowania w usłudze Azure App Service.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349339"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068331"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -34,7 +35,7 @@ Tworzenie projektu z szablonu za pomocą **pliku** > **New** > **projektu**. Aby
 
 Ogólny **projektu sieci Web** szablon, wspomniano wcześniej, zawiera tylko pusty projekt programu Visual Studio z żadnego kodu i żadnych założeń niż trwa projektu języka Python. Aby uzyskać szczegółowe informacje na temat **usługa w chmurze** szablonu, zobacz [projektów usług w chmurze platformy Azure dla języka Python](python-azure-cloud-service-project-template.md).
 
-Wszystkie inne szablony zależą od struktury sieci web Bottle, Flask i Django i można podzielić na trzy główne grupy, zgodnie z opisem w poniższych sekcjach. Aplikacje utworzone przez dowolnego z tych szablonów zawierają kod wystarczający do uruchamiania i debugowania aplikacji w środowisku lokalnym. Każdy z nich są także niezbędne [obiekt aplikacji WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) do użytku z serwerów sieci web w środowisku produkcyjnym.
+Wszystkie inne szablony zależą od struktury sieci web Bottle, Flask i Django i można podzielić na trzy główne grupy, zgodnie z opisem w poniższych sekcjach. Aplikacje utworzone przez dowolnego z tych szablonów zawierają kod wystarczający do uruchamiania i debugowania aplikacji w środowisku lokalnym. Każdy z nich są także niezbędne [obiekt aplikacji WSGI](https://www.python.org/dev/peps/pep-3333/) (python.org) do użytku z serwerów sieci web w środowisku produkcyjnym.
 
 ### <a name="blank-group"></a>Pusta grupa
 

@@ -1,5 +1,5 @@
 ---
-title: Ustaw motyw kolorów i czcionek w programie Visual Studio
+title: Zestaw motyw kolorów i czcionek
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 5794e576cfa99db2dac6b06e3f9f2e8514c3f31b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624388"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064235"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie programu Visual Studio IDE i edytorem
 

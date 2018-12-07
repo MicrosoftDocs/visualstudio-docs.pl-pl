@@ -1,6 +1,6 @@
 ---
-title: Jak Definiowanie niestandardowych poleceń menu dla projektów języka Python
-description: Pokazuje, jak edytować pliki projektu i obiektów docelowych, można dodać niestandardowe polecenia do menu kontekstowego projektu języka Python w programie Visual Studio. Polecenia mogą być wywoływane na programów wykonywalnych, skryptów, moduły, fragmenty kodu i narzędzia pip.
+title: Definiowanie niestandardowych poleceń menu dla projektów języka Python
+description: Edycji projektu i plików obiektów docelowych można dodać niestandardowe polecenia do menu kontekstowego projektu języka Python w programie Visual Studio, aby wywołać programów wykonywalnych, skryptów, moduły, fragmenty kodu i narzędzia pip.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: be8befcc549b76c8ac2b6435146c636b592b5494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607851"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062874"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie niestandardowych poleceń dla projektów języka Python
 

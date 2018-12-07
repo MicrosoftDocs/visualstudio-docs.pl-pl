@@ -1,5 +1,5 @@
 ---
-title: Napraw niewykrywalnych parametrów dynamicznych w teście wydajności sieci web w programie Visual Studio
+title: Napraw niewykrywalnych parametrów dynamicznych w teście wydajności sieci web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895603"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063784"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 

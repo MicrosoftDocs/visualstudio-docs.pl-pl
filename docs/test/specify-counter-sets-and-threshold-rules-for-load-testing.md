@@ -1,5 +1,5 @@
 ---
-title: Licznik zestawów oraz zasad progu dla testy obciążeniowe w programie Visual Studio
+title: Licznik zestawów oraz zasad progu dla testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894511"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057421"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym
 

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2017 kompilacji narzędzia obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Użyj identyfikatory obciążeń i składników programu Visual Studio do tworzenia klasycznych aplikacji opartych na Windows
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607864"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063049"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 2017 kompilacji narzędzia składników katalogu
 

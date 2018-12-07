@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: e1ac55cc0cc675aa7f2d2aa933d035bf42e83006
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459924"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065924"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service na Windows
 

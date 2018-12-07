@@ -1,6 +1,6 @@
 ---
-title: Debugowanie aplikacji wielowątkowych w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/06/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 599880f3c8e04b742ab943304ac910f8c0bcbe78
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349533"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059681"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debugowanie aplikacji wielowątkowych w programie Visual Studio
 Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas procesora. Każdy proces, który jest uruchomiony w systemie operacyjnym, składa się z co najmniej jeden wątek. Procesy, które mają więcej niż jeden wątek nazywane są wielowątkowymi.  

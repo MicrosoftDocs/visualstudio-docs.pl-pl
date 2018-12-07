@@ -1,5 +1,5 @@
 ---
-title: Właściwości magazynowania szczegółów chronometrażu dla ustawień testu obciążenia w programie Visual Studio
+title: Właściwości magazynowania szczegółów chronometrażu dla ustawień uruchomienia testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895226"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054587"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Porady: Określanie właściwości magazynowania szczegółów chronometrażu dla ustawień przebiegu testu obciążeniowego
 

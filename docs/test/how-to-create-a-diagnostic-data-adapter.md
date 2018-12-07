@@ -1,5 +1,5 @@
 ---
-title: 'Porady: tworzenie adaptera danych diagnostycznych w programie Visual Studio'
+title: 'Porady: tworzenie adaptera danych diagnostycznych'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068305"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Porady: tworzenie adaptera danych diagnostycznych
 

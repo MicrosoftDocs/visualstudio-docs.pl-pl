@@ -1,6 +1,7 @@
 ---
-title: 'Porady: debugowanie aplikacji, która nie jest częścią rozwiązania programu Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Debuguj aplikację, która nie jest częścią rozwiązania programu Visual Studio
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 993af0d15245ef6391f2c9c4eb0e755e24920fe3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 8c408ca42f82c0419c6570068e2a83e97f2371e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388585"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066616"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Debuguj aplikację, która nie jest częścią rozwiązania programu Visual Studio (C++, C#, Visual Basic F#)
 

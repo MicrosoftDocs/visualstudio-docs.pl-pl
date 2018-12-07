@@ -1,7 +1,9 @@
 ---
-title: Pozwól Pomoc programu Visual Studio, możesz napisać C# kodu z mniej błędów
+title: Usuwanie błędów przez pisanie lepszego kodu w języku C#
 description: Dowiedz się, jak napisać lepszego kodu z mniej błędów
-ms.custom: debug-experiments
+ms.custom:
+- debug-experiments
+- seodec18
 ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621594"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051678"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Usuwanie usterek, pisząc lepiej C# kodu za pomocą programu Visual Studio
 

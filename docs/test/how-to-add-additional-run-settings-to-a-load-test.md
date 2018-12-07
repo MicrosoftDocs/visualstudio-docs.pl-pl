@@ -1,5 +1,5 @@
 ---
-title: Dodawanie parametrów uruchomieniowych do testu obciążenia w programie Visual Studio
+title: Dodawanie parametrów uruchomieniowych do testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896617"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048057"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Porady: Dodawanie dodatkowych ustawień przebiegu testu obciążenia
 

@@ -1,5 +1,5 @@
 ---
-title: Ogólne elementy interfejsu użytkownika (Visual Studio) | Dokumentacja firmy Microsoft
+title: Ogólne elementy interfejsu użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d197f0272bfad8769477cf1cb8ee21110b816ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2559cc618b006213fd5aa1f8fe66ecdce9d9f84
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214647"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054440"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Ogólne elementy interfejsu użytkownika (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

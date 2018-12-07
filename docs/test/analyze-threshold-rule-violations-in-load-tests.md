@@ -1,5 +1,5 @@
 ---
-title: Analizowanie naruszeń zasady progu w testach obciążenia w programie Visual Studio
+title: Analizowanie naruszeń zasady progu w testach obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895434"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061814"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w testach obciążenia za pomocą analizatora testu obciążenia
 

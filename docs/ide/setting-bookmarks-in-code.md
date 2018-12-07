@@ -1,5 +1,5 @@
 ---
-title: Ustawianie zakładek kodu w programie Visual Studio
+title: Ustaw kod zakładki
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,36 +12,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0154a9d410e7bbe60913b757f216225239704b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 37dff534307f7773858ccb43b076ed309504b6ef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448821"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047645"
 ---
-# <a name="set-bookmarks-in-code"></a>Zestaw zakładek w kodzie
+# <a name="set-bookmarks-in-code"></a>Ustawianie zakładek w kodzie
 
-Zakładki służy do oznaczania linii w kodzie, dzięki czemu można szybko powrócić do określonej lokalizacji lub przeskakiwanie między lokalizacjami. Zakładka polecenia i ikony są dostępne w dwóch miejscach: **okno zakładek** (**widoku** > **okno zakładek**) i paska narzędzi edytora tekstu.
+Możesz używać zakładek, aby oznaczyć wiersze w kodzie, dzięki czemu można szybko powrócić do określonej lokalizacji lub przeskakiwać między lokalizacjami. Ikony i polecenia zakładek są dostępne w dwóch miejscach: **oknie zakładek** (**widoku** > **oknie zakładek**) i pasek narzędzi edytora tekstu.
 
-![Zakładka paska narzędzi](media/bookmark-toolbar.png)
+![Oznacz zakładką paska narzędzi](media/bookmark-toolbar.png)
 
 ![Okno zakładek](media/bookmark-window.png)
 
-## <a name="manage-bookmarks"></a>Zarządzanie zakładki
+## <a name="manage-bookmarks"></a>Zarządzanie zakładkami
 
-Aby dodać zakładki, umieść kursor na wiersz, który ma być zakładki. Wybierz **Przełącz zakładkę** przycisk lub naciśnij przycisk **Ctrl**+**K**, **Ctrl**+**K** . Spowoduje to dodanie zakładki. Jeśli wybierzesz **Przełącz zakładkę** przycisk (lub naciśnij klawisz **Ctrl**+**K**, **Ctrl** +  **K**) ponownie, zostanie usunięta zakładki.
+Aby dodać zakładkę, umieść kursor w wierszu, który chcesz utworzyć zakładkę. Wybierz **Przełącz zakładkę** przycisk lub naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**K** . Spowoduje to dodanie zakładki. Jeśli wybierzesz **Przełącz zakładkę** przycisk (lub naciśnij **Ctrl**+**K**, **Ctrl** +  **K**) ponownie, zakładka zostanie usunięta.
 
-Aby wiedzieć, w skrócie określonej zakładki jest, można zmienić w **okno zakładek** z menu kliknij prawym przyciskiem myszy lub kontekstu. Zakładki może usunąć, wybierając **usunąć** przycisk w oknie zakładki.
+Aby wiedzieć, w skrócie określonej zakładki jest aby można było zmienić jego nazwę w **oknie zakładek** w menu kliknij prawym przyciskiem myszy lub kontekstu. Możesz usunąć zakładki, wybierając **Usuń** przycisku w oknie zakładek.
 
 > [!IMPORTANT]
-> Numer wiersza, aby kod nie jest ustawiana zakładki. Zmodyfikuj kod, zakładki są przechowywane w wierszu numer, a nie przenosi się z kodem.
+> Zakładka jest ustawiana na przejście do numeru wiersza, nie do kodu. Jeśli zmodyfikujesz kod, zakładka jest zachowywana w numerze wiersza, a nie przenosi się z kodem.
 
-Można przechodzić między zakładki przy użyciu **następnej zakładki** i **Poprzednia zakładka** przyciski w oknie zakładki.
+Możesz nawigować między zakładkami za pomocą **Następna zakładka** i **Poprzednia zakładka** przycisków w oknie zakładek.
 
-Zakładki można organizować w foldery wirtualne, wybierając **nowy Folder** w oknie zakładki, a następnie przeciągając wybranego zakładek do nowego folderu.
+Możesz organizować zakładki w foldery wirtualne, wybierając **nowy Folder** w oknie zakładek, a następnie przeciągając wybrane zakładki do nowego folderu.
 
-Można wyłączyć zakładek (bez ich usuwania), wybierając **Wyłącz wszystkie zakładki** przycisk w oknie zakładki. Można ponownie włączyć, wybierając przycisk tego samego (teraz nazywany **włączyć wszystkie zakładki**).
+Możesz wyłączyć zakładki (bez ich usuwania), wybierając **Wyłącz wszystkie zakładki** przycisku w oknie zakładek. Można ponownie włączyć, wybierając ten sam przycisk (który jest teraz nazywana **Włącz wszystkie zakładki**).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

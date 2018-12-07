@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework w programie Visual Studio
+title: Testy jednostkowe docelowe wcześniejszej wersji programu .NET Framework
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7b9032e8a1b6ee796bbea6ce7f7e3f5db7bcd205
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380647"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064734"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework
 

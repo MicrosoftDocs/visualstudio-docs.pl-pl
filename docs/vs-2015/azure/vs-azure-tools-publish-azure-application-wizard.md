@@ -1,5 +1,5 @@
 ---
-title: Kreator aplikacji platformy Azure przy użyciu programu Visual Studio jest publikacji | Dokumentacja firmy Microsoft
+title: Za pomocą aplikacji platformy Azure Kreator publikacji | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak skonfigurować różne ustawienia w programie Visual Studio Azure Kreator publikowania aplikacji
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c9c4104d4d07cab7486038a8787ed0c7759abd60
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: a00ae51514f650ca8c166ba24e626838f003119c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003604"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065334"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Korzystanie z kreatora publikacji aplikacji platformy Azure programu Visual Studio
 
@@ -39,7 +39,7 @@ Możesz uzyskać dostęp do Kreatora publikowania aplikacji na platformie Azure 
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz z menu kontekstowego **przekonwertować** > **Konwertuj na projekt usługi w chmurze Azure**. 
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz z menu kontekstowego **przekonwertować** > **Konwertuj na projekt usługi w chmurze Azure**.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nowo utworzony projekt platformy Azure i z menu kontekstowego wybierz **Publikuj**.
 
@@ -57,7 +57,7 @@ Możesz uzyskać dostęp do Kreatora publikowania aplikacji na platformie Azure 
 
 **Usługa w chmurze** — korzystając z listy rozwijanej, wybierz istniejącej chmury usługi lub wybierz  **&lt;Utwórz nową >** i Utwórz usługę w chmurze. Centrum danych są wyświetlane w nawiasach dla każdej usługi w chmurze. Zaleca się, że centrum danych lokalizacji usługi w chmurze być taka sama jak lokalizacja centrum danych dla konta magazynu (Zaawansowane ustawienia).
 
-**Środowisko** — wybierz opcję **produkcji** lub **przemieszczania**. Wybierz środowisko przejściowe, jeśli chcesz wdrożyć aplikację w środowisku testowym. 
+**Środowisko** — wybierz opcję **produkcji** lub **przemieszczania**. Wybierz środowisko przejściowe, jeśli chcesz wdrożyć aplikację w środowisku testowym.
 
 **Konfiguracja kompilacji** — wybierz opcję **debugowania** lub **wersji**.
 
@@ -71,7 +71,7 @@ Możesz uzyskać dostęp do Kreatora publikowania aplikacji na platformie Azure 
 
 ![Ustawienia zaawansowane](./media/vs-azure-tools-publish-azure-application-wizard/settings-advanced-settings.png)
 
-**Etykieta wdrożenia** — zaakceptuj nazwę domyślną lub wprowadź nazwę. Aby dołączyć datę do etykiety wdrożenia, pozostaw zaznaczone pole wyboru. 
+**Etykieta wdrożenia** — zaakceptuj nazwę domyślną lub wprowadź nazwę. Aby dołączyć datę do etykiety wdrożenia, pozostaw zaznaczone pole wyboru.
 
 **Konto magazynu** — wybierz konto magazynu do użycia dla tego wdrożenia **&lt;Utwórz nową > Utwórz konto magazynu. Centrum danych są wyświetlane w nawiasach dla każdego konta magazynu. Zaleca się, że na lokalizację centrum danych dla konta magazynu jest taka sama jak lokalizacja centrum danych dla usługi w chmurze (typowe ustawienia).
 
@@ -79,7 +79,7 @@ Konto usługi Azure storage przechowuje pakietu dla wdrożenia aplikacji. Po wdr
 
 **Usuń wdrożenie w przypadku niepowodzenia** — wybierz tę opcję, aby wdrożenie usunięte, jeśli nie zostaną napotkane błędy podczas publikowania. To powinno być zaznaczone, jeśli chcesz utrzymać stałej wirtualny adres IP dla usługi w chmurze.
 
-**Wdrożenia aktualizacji** — wybierz tę opcję, jeśli chcesz wdrożyć tylko zaktualizowane składniki. Ten typ wdrożenia może być szybsza niż pełne wdrożenie. Jeśli chcesz utrzymać stałej wirtualny adres IP dla usługi w chmurze, to powinno być zaznaczone. 
+**Wdrożenia aktualizacji** — wybierz tę opcję, jeśli chcesz wdrożyć tylko zaktualizowane składniki. Ten typ wdrożenia może być szybsza niż pełne wdrożenie. Jeśli chcesz utrzymać stałej wirtualny adres IP dla usługi w chmurze, to powinno być zaznaczone.
 
 **Wdrożenia aktualizacji - ustawienia** — to okno dialogowe służy do dalszego określenia sposobu ról do zaktualizowania. Jeśli wybierzesz **aktualizacji przyrostowej**, każde wystąpienie aplikacji zostanie zaktualizowany po kolei, więc, że aplikacja jest zawsze dostępna. Jeśli wybierzesz **jednoczesne aktualizowanie**, wszystkie wystąpienia aplikacji są aktualizowane w tym samym czasie. Jednoczesne aktualizowanie jest szybsze, ale usługa może nie być dostępna podczas procesu aktualizacji.
 

@@ -1,5 +1,5 @@
 ---
-title: Eksplorator testów programu Visual Studio — często zadawane pytania
+title: Eksplorator testów — często zadawane pytania
 ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 49df84c5e852cfc282b6d679faf621669cf08148
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296342"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055267"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -123,7 +123,7 @@ Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do ko
 Ostatnie projekty testowe platformy uniwersalnej systemu Windows, określ właściwość kompilacji platformy testu, która pozwala zwiększyć wydajność do identyfikowania aplikacje testowe. W przypadku projektu testowego platformy uniwersalnej systemu Windows, który został zainicjowany przed Visual Studio w wersji 15.7 może zostać wyświetlony ten błąd wystąpił w **dane wyjściowe** > **testy**:
 
 **System.AggregateException: Wystąpił co najmniej jednego błędu. ---> System.InvalidOperationException: nie można odnaleźć następującego obiektu TestContainer {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
-  
+
 Aby naprawić ten błąd:
 
 - Zaktualizuj właściwości kompilacji projektu testu przy użyciu następującego kodu:

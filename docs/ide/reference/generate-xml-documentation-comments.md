@@ -1,5 +1,5 @@
 ---
-title: Wstaw komentarze dokumentacji XML w Visual Studio
+title: Wstaw komentarze dokumentacji XML
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,50 +9,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945431"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063477"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Porady: wstawianie komentarze XML dla generowania dokumentacji
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Porady: wstawianie komentarzy XML do generowania dokumentacji
 
-Visual Studio może pomóc dokumentu kodu elementów, takich jak klasy i metody, przez automatyczne generowanie standardowe struktury komentarzy dokumentacji XML. W czasie kompilacji można wygenerować plik XML, który zawiera komentarze dokumentacji. Plik XML generowane przez kompilator mogą być dystrybuowane wraz z zestawu .NET, dzięki czemu program Visual Studio i innych IDEs może używać IntelliSense do wyświetlania szybkie informacji dotyczących typów i członków. Ponadto można uruchomić plik XML za pomocą takich narzędzi jak [DocFX](https://dotnet.github.io/docfx/) i [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) można wygenerować odwołania API witryn sieci Web.
+Program Visual Studio może pomóc dokumentów elementów kodu, takich jak klasy i metody, przez automatyczne generowanie standardowych strukturę komentarzy dokumentacji XML. W czasie kompilacji można wygenerować pliku XML, który zawiera komentarze dokumentacji. Plik XML generowanych przez kompilator mogą być dystrybuowane wraz z Twojego zestawu platformy .NET tak, aby program Visual Studio i innych środowisk IDE umożliwia IntelliSense pokazywanie szybkich informacji na temat typów i elementów członkowskich. Ponadto plik XML mogą być uruchamiane za pomocą takich narzędzi [DocFX](https://dotnet.github.io/docfx/) i [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) do generowania dokumentacja interfejsu API witryn sieci Web.
 
 > [!NOTE]
-> **Wstaw komentarz** polecenia, które automatycznie wstawia komentarze dokumentacji XML jest dostępna w [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) i [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Jednak można wstawiać ręcznie [komentarze dokumentacji XML w języku C++](/cpp/ide/xml-documentation-visual-cpp) pliki i nadal generować pliki dokumentacji XML w czasie kompilacji.
+> **Wstaw komentarz** polecenia, które automatycznie wstawia komentarze dokumentacji XML jest dostępna w [ C# ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) i [języka Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Jednak można wstawiać ręcznie [komentarze dokumentacji XML w języku C++](/cpp/ide/xml-documentation-visual-cpp) pliki i nadal Generuj pliki dokumentacji XML w czasie kompilacji.
 
 ## <a name="to-insert-xml-comments-for-a-code-element"></a>Aby wstawić komentarze XML dla elementu kodu
 
-1. Umieść kursor nad elementem chcesz dokumentu, na przykład metoda tekstu.
+1. Umieść kursor nad elementem, aby dokumentu, na przykład metoda tekstu.
 
 1. Wykonaj jedną z następujących czynności:
 
-   - Typ `///` w języku C# lub `'''` w języku Visual Basic
+   - Typ `///` w C#, lub `'''` w języku Visual Basic
 
    - Z **Edytuj** menu, wybierz **IntelliSense** > **Wstaw komentarz**
 
-   - Kliknij prawym przyciskiem myszy lub kontekstu menu lub po prostu nad elementu kodu, wybierz **fragment** > **Wstaw komentarz**
+   - Kliknij prawym przyciskiem myszy lub kontekst menu lub po prostu nad element kodu, wybierz **fragment** > **Wstaw komentarz**
 
-   Szablon XML jest generowany bezpośrednio powyżej elementu kodu. Na przykład podczas dodawania komentarzy metody, generuje **\<podsumowania\>** elementu **\<param\>** elementu dla każdego parametru i **\<zwraca\>** elementu do dokumentu wartości zwracanej.
+   Szablon XML natychmiast jest generowany powyżej elementu kodu. Na przykład, gdy Dodawanie komentarza do metody, generuje ona **\<podsumowania\>** elementu **\<param\>** element dla każdego parametru i **\<zwraca\>** element do dokumentu wartość zwracaną.
 
-   ![Szablon komentarza XML - C#](media/doc-preview-cs.png)
+   ![Szablon komentarza XML-C#](media/doc-preview-cs.png)
 
    ![Szablon komentarza XML - Visual Basic](media/doc-preview-vb.png)
 
-1. Wprowadź opis dla każdego elementu XML do dokumentów w pełni elementu kodu.
+1. Wprowadź opis każdego elementu XML do dokumentów w pełni element kodu.
 
    ![Komentarz ukończone](media/doc-result-cs.png)
 
 > [!NOTE]
-> Brak [opcji](../../ide/reference/options-text-editor-csharp-advanced.md) do przełączania komentarze dokumentacji XML po wpisaniu `///` w języku C# lub `'''` języka Visual Basic. Na pasku menu wybierz **narzędzia** > **opcje** otworzyć **opcje** okno dialogowe. Następnie przejdź do **Edytor tekstu** > **C#** lub **podstawowe** > **zaawansowane**. W **pomocy edytora** sekcji, poszukaj **Generuj komentarze dokumentacji XML** opcji.
+> Brak [opcji](../../ide/reference/options-text-editor-csharp-advanced.md) do komentarzy dokumentacji XML Przełącz po wpisaniu `///` w C# lub `'''` języka Visual Basic. Na pasku menu wybierz **narzędzia** > **opcje** otworzyć **opcje** okno dialogowe. Następnie przejdź do **edytora tekstów**  >  **C#** lub **podstawowe** > **zaawansowane**. W **pomocy edytora** sekcji, poszukaj **Generuj komentarze dokumentacji XML** opcji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Komentarze dokumentacji XML (C# przewodnik programowania w języku)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
-- [Dokumentowanie kodu za pomocą komentarze XML (Przewodnik C#)](/dotnet/csharp/codedoc)
+- [Komentarze dokumentacji XML (C# Programming Guide)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [Dokumentowanie kodu przy użyciu komentarzy XML (C# przewodnik)](/dotnet/csharp/codedoc)
 - [Porady: tworzenie dokumentacji XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [C++ — komentarze](/cpp/cpp/comments-cpp)
-- [Plik dokumentacji XML (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [Komentarze języka C++](/cpp/cpp/comments-cpp)
+- [Dokumentacja XML (C++)](/cpp/ide/xml-documentation-visual-cpp)
 - [Generowanie kodu](../code-generation-in-visual-studio.md)

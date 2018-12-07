@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Wybieranie repozytorium wyników testów obciążeniowych w programie Visual Studio'
+title: 'Porady: wybieranie repozytorium wyników testu obciążenia'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c3627b55fa7b4b60193d31fc96be803301ce4c9
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895655"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059976"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Porady: Wybieranie repozytorium wyników testu obciążenia
 

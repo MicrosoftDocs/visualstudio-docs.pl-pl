@@ -1,5 +1,5 @@
 ---
-title: Kompilowanie i tworzenie w programie Visual Studio
+title: Tworzenie kompilacji
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349136"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062596"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie wtyczki testu wydajności sieci Web dla programu Visual Studio
+title: Tworzenie wtyczki testu wydajności sieci Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894524"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067657"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Porady: tworzenie wtyczki testu wydajności sieci web
 

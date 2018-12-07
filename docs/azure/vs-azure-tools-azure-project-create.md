@@ -1,22 +1,22 @@
 ---
-title: Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio | Dokumentacja firmy Microsoft
+title: Tworzenie projektu usługi w chmurze platformy Azure
 description: Dowiedz się teraz, jak utworzyć projekt usługi w chmurze platformy Azure z programem Visual Studio
 author: ghogen
 manager: douge
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: b51f7b5334452217da208873f203c7b010d77b9b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 5c35c7c0c5ee28a6b30aac4be7c3d748f393ca71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000339"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047595"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio
 Azure Tools dla programu Visual Studio zawiera szablon projektu umożliwiający tworzenie [usłudze w chmurze Azure](/azure/cloud-services/cloud-services-choose-me), który jest prostą usługę Azure ogólnego przeznaczenia. Po utworzeniu projektu programu Visual Studio pozwala konfigurować, debugować i wdrożyć usługę w chmurze na platformie Azure.

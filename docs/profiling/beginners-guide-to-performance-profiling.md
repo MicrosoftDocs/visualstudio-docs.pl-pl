@@ -1,7 +1,7 @@
 ---
 title: Użycie pomiar procesora CPU w twoich aplikacjach
 description: Analizuj problemy z wydajnością procesora CPU w aplikacji za pomocą narzędzia diagnostyczne zintegrowane z debugerem.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220680"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065765"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Wydajność aplikacji profilującej w programie Visual Studio
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Miara wydajności aplikacji, analizując użycie procesora CPU
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
   
 Gdy debuger zatrzymuje, **użycie procesora CPU** Narzędzie gromadzi informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonując pracę i zawiera wykres osi czasu, w którym można skupić się na poszczególnych segmentach sesji pobierania próbek.

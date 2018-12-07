@@ -1,5 +1,5 @@
 ---
-title: Visual Studio pełny ekran i tryb obszaru wirtualnego
+title: Pełnoekranowy i tryb obszaru wirtualnego
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,25 +26,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94bc99bf70340ef76639d0ae0f05e1f7737173a2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5250176bee4993f9d01bffcaed71579c17e55c9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943351"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056311"
 ---
 # <a name="how-to-manage-editor-modes"></a>Porady: Zarządzanie trybami edytora
 
 Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyświetlania.
 
 > [!NOTE]
-> Okna dialogowe i dostępne polecenia menu mogą różnić się od opisanych w tym artykule, w zależności od wersji lub aktywne ustawienia. Aby zmienić ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz pozycję **zresetować wszystkie ustawienia**.
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym artykule, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz **Resetuj wszystkie ustawienia**.
 
 ## <a name="enable-full-screen-mode"></a>Włącz tryb pełnoekranowy
 
-Istnieje możliwość Ukryj wszystkie okna narzędzi i wyświetlić tylko okna dokumentów, włączając **pełnoekranowy** tryb.
+Można wybrać ukryć wszystkie okna narzędzi i wyświetlić tylko okna dokumentu, należy włączyć **pełny ekran** trybu.
 
--   Naciśnij klawisz **Alt**+**Shift**+**Enter** do wprowadzania lub zamknąć **pełnoekranowy** tryb.
+-   Naciśnij klawisz **Alt**+**Shift**+**Enter** do wprowadzania lub zamknąć **pełny ekran** trybu.
 
      --lub--
 
@@ -52,19 +52,19 @@ Istnieje możliwość Ukryj wszystkie okna narzędzi i wyświetlić tylko okna d
 
 ## <a name="enable-virtual-space-mode"></a>Włącz tryb obszaru wirtualnego
 
-W **wirtualną przestrzeń** trybie spacje są dodawane na końcu każdego wiersza kodu. Wybierz tę opcję, aby umieść komentarzy w punkcie spójne obok kodu.
+W **wirtualną przestrzenią** tryb, spacje są dodawane na końcu każdego wiersza kodu. Wybierz tę opcję, aby umieść komentarze w momencie spójne obok kodu.
 
 1.  Wybierz **opcje** z **narzędzia** menu.
 
-2.  Rozwiń węzeł **Edytor tekstu** folderu i wybierz polecenie **wszystkie języki** globalnie Ustaw tę opcję, lub wybierz folder określonego języka. Na przykład, aby włączyć numery wierszy tylko w języku Visual Basic, wybierz **podstawowe** > **Edytor tekstu** węzła.
+2.  Rozwiń **edytora tekstów** folderu i wybierz polecenie **wszystkie języki** globalnie Ustaw tę opcję, lub wybierz folder, do określonego języka. Na przykład, aby włączyć numery wierszy tylko w języku Visual Basic, należy wybrać **podstawowe** > **edytora tekstów** węzła.
 
-3.  Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz pozycję **Włącz wirtualną przestrzeń**.
+3.  Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz opcję **włączyć wirtualną przestrzenią**.
 
     > [!NOTE]
-    > **Wirtualna spacja** jest włączone w **kolumn wybór** tryb. Gdy **wirtualną przestrzeń** nie jest włączony tryb są przenoszone punkt wstawiania na końcu jeden wiersz bezpośrednio do pierwszego znaku następnego.
+    > **Wirtualna przestrzeń** jest włączone w **wybór kolumn** trybu. Gdy **wirtualną przestrzenią** nie jest włączony tryb punkt wstawiania przenoszony z końca jeden wiersz bezpośrednio do pierwszego znaku w następnym.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dostosowywanie edytora](../ide/customizing-the-editor.md)
+- [Dopasowywanie edytora](../ide/customizing-the-editor.md)
 - [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
-- [Czcionki i kolory, środowisko, opcje — Okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+- [Czcionki i kolory, środowisko, okno dialogowe Opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

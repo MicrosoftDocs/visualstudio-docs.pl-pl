@@ -1,5 +1,5 @@
 ---
-title: Tworzenie na podstawie danych kodowanego testu interfejsu użytkownika w programie Visual Studio
+title: Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896144"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068490"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika
 

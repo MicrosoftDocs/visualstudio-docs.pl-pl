@@ -1,6 +1,6 @@
 ---
-title: 'Porady: dołączanie Profiler do natywnej aplikacji autonomicznej i zbieranie statystyk aplikacji przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Dołącz profiler do aplikacji natywnej i zbieranie statystyk aplikacji
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfe5e6f0bcdf84d3ef91933ff2c754cf0fc52bdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d304e74d9480404e768789ffa0000c35da4f66ce
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842043"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063632"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Porady: dołączanie profilera do autonomicznej aplikacji natywnej i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do uruchomionej natywnej autonomicznej aplikacji (klient) i zbierania statystyk wydajności przy użyciu metody próbkowania.  

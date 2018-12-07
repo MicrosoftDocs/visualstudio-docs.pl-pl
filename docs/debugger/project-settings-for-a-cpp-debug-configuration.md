@@ -1,6 +1,6 @@
 ---
-title: Ustawienia dla konfiguracji debugowania w języku C++ projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Ustawienia projektu dla konfiguracji debugowania języka C++
+ms.custom: seodec18
 ms.date: 11/26/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b333dca8f717cbd8e1172ed00b4a044aafeed857
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389659"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066905"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w języku C++
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual C++ lub C w **stron właściwości** okno dialogowe, zgodnie z opisem w [porady: zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.  

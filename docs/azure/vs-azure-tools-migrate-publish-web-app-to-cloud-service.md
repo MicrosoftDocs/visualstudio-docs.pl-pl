@@ -1,22 +1,22 @@
 ---
-title: Jak migrować i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z programu Visual Studio | Dokumentacja firmy Microsoft
+title: Jak migrować i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure
 description: Dowiedz się, jak migrować i publikowanie aplikacji sieci web w usłudze w chmurze platformy Azure przy użyciu programu Visual Studio
 author: ghogen
 manager: douge
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 28a94b9ecc868168437957f838994f1c766b6d85
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 221200938db7f0501081d0d1d4152292634e6bfa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000850"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055794"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z programu Visual Studio
 

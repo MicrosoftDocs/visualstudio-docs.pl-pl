@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie portów dla kontrolerów testów i agentów testowych w programie Visual Studio
+title: Konfigurowanie portów dla kontrolerów testów i agentów testowych
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 12aacb0ff6530e1ee21bd57639a7e84bdb65ea9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894537"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068584"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurowanie portów dla kontrolerów testów i agentów testowych
 

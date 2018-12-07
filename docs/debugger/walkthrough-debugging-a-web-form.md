@@ -1,6 +1,6 @@
 ---
-title: 'Wskazówki: Debugowanie formularza sieci Web | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Debugowanie formularza sieci Web | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eba0d7a439583d8486f8937693a63e65dca0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389607"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055157"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Wskazówki: debugowanie formularzy sieci Web
 Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacja internetowa, znany także jako formularz sieci Web. Pokazuje jak uruchomić i zatrzymać wykonywanie, ustawiać punkty przerwania i sprawdzić zmienne w **Obejrzyj** okna.

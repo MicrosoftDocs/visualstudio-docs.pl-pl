@@ -1,8 +1,10 @@
 ---
-title: Dowiedz się, jak debugowanie C# kodu za pomocą debugera programu Visual Studio
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
-ms.custom: debug-experiment
-ms.date: 11/27/2018
+title: Dowiedz się, jak debugowanie
+description: Dowiedz się, jak uruchomić debuger programu Visual Studio, Przechodź przez kod i sprawdzić dane.
+ms.custom:
+- debug-experiment
+- seodec18
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: b80747a41fdb3cb278d25f80db71c9ec0381d653
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821308"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068503"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie C# kodu za pomocą programu Visual Studio
 

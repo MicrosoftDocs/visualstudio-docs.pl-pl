@@ -1,5 +1,5 @@
 ---
-title: Dane funkcji IntelliTrace w programie Visual Studio
+title: Dane funkcji IntelliTrace
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894641"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064760"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 

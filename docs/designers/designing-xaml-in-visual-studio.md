@@ -1,5 +1,5 @@
 ---
-title: Projektowanie XAML w programie Visual Studio
+title: Użyj XAML
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389620"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063001"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Projektowanie XAML w programie Visual Studio
 

@@ -1,5 +1,6 @@
 ---
-title: Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy | Dokumentacja firmy Microsoft
+title: Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
+titleSuffix: ''
 description: Sprawdź adresy URL domen, porty i protokoły, które można dodać do listy dozwolonych lub otworzyć, jeśli Twoja organizacja korzysta z zapory lub serwera proxy
 ms.custom: ''
 ms.date: 07/10/2018
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fbea07aee311bd1548397f4b3d475e4819523df
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 977dc2927e95988b98acc28eb6b0198d0c27b90a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954191"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057765"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 

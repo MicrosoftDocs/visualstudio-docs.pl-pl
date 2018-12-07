@@ -1,5 +1,5 @@
 ---
-title: Edytowanie modeli testów mieszanych w programie Visual Studio
+title: Edytowanie modeli testów mieszanych
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acb786a4182a79a4133e2d94000ab5f7693bade3
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894667"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057116"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edytowanie modeli testów mieszanych, aby określić prawdopodobieństwo, że użytkownik wirtualny uruchomi testu
 

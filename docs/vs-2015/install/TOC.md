@@ -12,5 +12,3 @@
 ## [Instrukcje: aktualizacja z wersji próbnej wersji programu Visual Studio](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
 ## [Instrukcje: lokalizacja klucza produktu Visual Studio](how-to-locate-the-visual-studio-product-key.md)
 ## [Wyłączenia dotyczące zasad korzystania z oprogramowania Visual Studio](visual-studio-lifecycle-policy-exceptions.md)
-# [Instalowanie programu Visual Studio 2017](install-visual-studio-15-preview-5.md)
-## [Modyfikowanie programu Visual Studio 2017](modify-visual-studio-15-preview-5.md)

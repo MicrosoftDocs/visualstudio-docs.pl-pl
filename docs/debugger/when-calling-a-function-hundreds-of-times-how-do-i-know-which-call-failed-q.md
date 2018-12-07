@@ -1,6 +1,6 @@
 ---
-title: Skąd wiadomo, gdy funkcja jest wywoływana setki razy, które wywołanie nie powiodło się? | Microsoft Docs
-ms.custom: ''
+title: Dowiedz się, które wywołanie nie powiodło się podczas wywoływania funkcji wiele razy | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25b552e7a81c43ec67951cac584b215f38f06c12
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3fec492a8cba6ac61cc18a3ff0b68abbe734413d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284034"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064695"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Skąd wiadomo, gdy funkcja jest wywoływana setki razy, które wywołanie nie powiodło się?
 ## <a name="problem-description"></a>Opis problemu  

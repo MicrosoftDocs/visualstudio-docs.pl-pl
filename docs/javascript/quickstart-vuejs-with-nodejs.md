@@ -1,6 +1,7 @@
 ---
-title: 'Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji Vue.js'
+title: 'Szybki Start: Tworzenie pierwszej aplikacji Vue.js'
 description: W tym przewodniku Szybki Start utworzysz aplikację Vue.js w programie Visual Studio przy użyciu narzędzia Node.js dla programu Visual Studio
+ms.custom: seodec18
 ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
@@ -14,12 +15,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926621"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058954"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji Vue.js
 

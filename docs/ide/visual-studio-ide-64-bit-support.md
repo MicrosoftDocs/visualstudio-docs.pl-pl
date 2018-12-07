@@ -1,5 +1,5 @@
 ---
-title: Techniczną usługi Visual Studio IDE 64-bitowych
+title: Obsługa 64-bitowy
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27553fe0fdac8378f8d4b1158902394f0704880c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa48de77bdf5ba283068f3dfcc492a76ae3576c0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425741"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063344"
 ---
-# <a name="visual-studio-ide-64-bit-support"></a>Techniczną usługi Visual Studio IDE 64-bitowych
+# <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64-bitowe systemu
 
-Program Visual Studio umożliwia konfigurowanie aplikacji pod kątem różnych platform, w tym platformach 64-bitowych. Aby uzyskać więcej informacji dotyczących obsługi 64-bitowej platformy w programie Visual Studio, zobacz [aplikacji 64-bitowych](/dotnet/framework/64-bit-apps).
+Program Visual Studio umożliwia ustawianie aplikacji przeznaczonych dla różnych platform, w tym platform 64-bitowych. Aby uzyskać więcej informacji na temat obsługi platform 64-bitowych w programie Visual Studio, zobacz [aplikacji 64-bitowych](/dotnet/framework/64-bit-apps).
 
 ## <a name="deploy-a-64-bit-application"></a>Wdrażanie aplikacji 64-bitowych
 
-[Wdrażanie wymagania wstępne dotyczące aplikacji 64-bitowych](../deployment/deploying-prerequisites-for-64-bit-applications.md) zawiera listę pakietów redystrybucyjnych, można użyć jako wymagania wstępne dla instalacji 64-bitowej aplikacji.
+[Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../deployment/deploying-prerequisites-for-64-bit-applications.md) zawiera listę pakietów redystrybucyjnych, można użyć jako wymagania wstępne dotyczące instalacji aplikacji 64-bitowych.
 
-## <a name="configure-projects-as-64-bit-applications"></a>Konfigurowanie projektów jako 64-bit — aplikacje
+## <a name="configure-projects-as-64-bit-applications"></a>Konfigurowanie projektów jako aplikacji 64-bitowych
 
-[Porady: Konfigurowanie projektów do platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md) omówiono konfigurowanie projektów ma zostać utworzony jako aplikacji 64-bitowych.
+[Porady: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md) w tym artykule omówiono konfigurowanie projektów, które ma zostać utworzony jako aplikacji 64-bitowych.
 
 ## <a name="debug-a-64-bit-application"></a>Debugowanie aplikacji 64-bitowych
 

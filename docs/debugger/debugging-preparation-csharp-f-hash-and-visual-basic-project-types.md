@@ -1,6 +1,6 @@
 ---
-title: 'Przygotowanie debugowania: C#, F # i Visual Basic typy projektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Przygotowywanie do debugowania C#, F#i projektów w języku VB | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,37 +22,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d590a186f5198feea6a89320897d9d4fa5c4481
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479219"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063451"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Przygotowanie debugowania: typy projektów C#, F# i Visual Basic
-Tematy w tej sekcji opisano, jak można debugować C#, F # i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] typy utworzone przez projektów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablony projektu.  
+W tematach w tej sekcji opisano sposób debugowania C#, F#, i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu typów utworzonych przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablony projektów.  
   
- Należy pamiętać, że tych typów projektów, które utworzyć biblioteki DLL jako ich dane wyjściowe zostały zgrupowane jako [debugowanie projektów DLL](../debugger/debugging-dll-projects.md) z powodu wspólne funkcje mają.  
+ Należy zauważyć, że tych typów projektów, które tworzenia bibliotek DLL jako dane wyjściowe, zostały zgrupowane jako [debugowanie projektów DLL](../debugger/debugging-dll-projects.md) z powodu typowe funkcje, które współużytkują one.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Zalecane ustawienia właściwości](../debugger/managed-debugging-recommended-property-settings.md)  
- W tej sekcji opisano ustawienia zalecane związanym z debugowaniem właściwości dla projektów C#, F # i Visual Basic.  
+ W tej sekcji opisano zalecane związanym z debugowaniem ustawienia właściwości dla C#, F#i projektach języka Visual Basic.  
   
  [Aplikacje Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
- W tym artykule opisano projekt aplikacji systemu Windows i zawiera instrukcje dotyczące debugowania, zmiana domyślnej konfiguracji debugowania i uruchamiania aplikacji poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączanie do niego.  
+ Opisuje projekt aplikacji Windows i zawiera instrukcje dotyczące debugowania, zmiana domyślnej konfiguracji debugowania i uruchamiania aplikacji poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączanie do niego.  
   
- [Projekty startowe](../debugger/debugging-preparation-console-projects.md)  
- Udostępnia dodatkowe zagadnienia dotyczące debugowanie C# lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aplikacji konsoli. Należy określić argumenty wiersza polecenia, uruchomienie aplikacji z wiersza polecenia, zapisywanie w oknie danych wyjściowych i rozwiązywanie problemów z okna konsoli.  
+ [Projekty konsoli](../debugger/debugging-preparation-console-projects.md)  
+ Zawiera dodatkowe informacje dotyczące debugowania języka C# lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aplikacje konsoli. Należy określić argumenty wiersza polecenia, uruchomienie aplikacji w wierszu polecenia, zapisywanie w oknie danych wyjściowych i rozwiązywanie problemów z okna konsoli.  
   
  [Usługi systemu Windows](../debugger/debugging-preparation-windows-services.md)  
- Zawiera opis usługi systemu Windows i zawiera łącze do debugowania aplikacji usług systemu Windows.  
+ Zawiera opis usługi Windows i zawiera również link do debugowania aplikacji usług Windows.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)  
- Zawiera ustawienia i przygotowywania, które należy wykonać, aby debugowania programu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera.  
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)  
+ Obejmuje ustawienia i przygotowania, które należy przeprowadzić przed debugowaniem programu za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera.  
   
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)  
- Obejmuje typowe problemy debugowania i techniki dla aplikacji napisanych w kodzie zarządzanym.  
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)  
+ Omówiono typowe problemy z debugowania i technik dla aplikacji napisanych w kodzie zarządzanym.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)

@@ -1,5 +1,6 @@
 ---
-title: Omówienie obsługi języka Python w programie Visual Studio na Windows
+title: Obsługa języka Python w programie Visual Studio na Windows
+titleSuffix: ''
 description: Podsumowanie funkcji języka Python w programie Visual Studio, dzięki czemu najlepsze środowisko IDE języka Python na Windows (znany także jako narzędzi Python Tools for Visual Studio, PTVS).
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001337"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068542"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 

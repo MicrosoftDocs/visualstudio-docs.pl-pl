@@ -1,5 +1,5 @@
 ---
-title: Porównanie wyników testów obciążenia w programie Visual Studio
+title: Porównanie wyników testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895031"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066447"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów
 

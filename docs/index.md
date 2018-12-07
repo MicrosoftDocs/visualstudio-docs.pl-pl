@@ -2,14 +2,16 @@
 layout: HubPage
 hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
+titleSuffix: ''
 description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: hub-page
-ms.openlocfilehash: 961d9f46d78b23fa976b3a8cdc774d219445c8b1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.custom: seodec18
+ms.openlocfilehash: 2508110634eeae708e678be8eb5af16a8ad50e24
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000286"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066096"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -169,7 +171,7 @@ C# </a>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-fsharp">
                                                                         <img src="https://docs.microsoft.com/dotnet/images/hub/fsharp.svg" alt="F# logo">
-F # </a>
+F# </a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">

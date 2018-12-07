@@ -1,6 +1,6 @@
 ---
-title: 'Porady: wychodzenia z kodu zarządzanego, gdy ramek natywnych brakuje oknie stosu wywołań | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok poza C# kodem w przypadku stosu wywołań brakuje ramek natywnych | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e5c671f93e20da108a9fd1069a0950f52ef00da9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 741afb6befdbc29cafab39c3c9b0d7bb2761d7b1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388572"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057655"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Porady: wychodzenia z kodu zarządzanego gdy w oknie stosu wywołań brakuje ramek natywnych
 

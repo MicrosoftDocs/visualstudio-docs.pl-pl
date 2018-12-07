@@ -1,7 +1,7 @@
 ---
 title: Zestaw Azure SDK dla języka Python
 description: Zestaw Azure SDK dla języka Python ułatwia korzystanie z usług Microsoft Azure z poziomu aplikacji Python działające na dowolnej platformie.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9c8f5193e55d86ea4ff5e4d68fb7a66a1044d2e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050225"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062887"
 ---
-# <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
+# <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Korzystanie z usług platformy Azure przy użyciu zestawu Azure SDK dla języka Python
 
 Zestaw Azure SDK dla języka Python ułatwia wykorzystanie i zarządzanie usługami Microsoft Azure z poziomu aplikacji w systemie Windows, MacOS i Linux.
 
@@ -40,9 +40,9 @@ Możesz również śledzić [zainstalowania języka Python i zestawu SDK](https:
 [Zestawu Azure SDK dla Centrum deweloperów języka Python](https://docs.microsoft.com/python/azure/?view=azure-python) zawiera również liczbę przydatne zasoby, w tym liczby samouczków:
 
 - [Tworzenie aplikacji sieci web w usłudze App Service Azuyre w systemie Linux](/azure/app-service/containers/quickstart-python).
-- [Magazyn obiektów blob](/azure/storage/blobs/storage-quickstart-blobs-python)
-- [Magazyn tabel](/azure/cosmos-db/table-storage-how-to-use-python)
-- [Usługa queue storage](/azure/storage/storage-python-how-to-use-queue-storage)
+- [Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-python)
+- [Table Storage](/azure/cosmos-db/table-storage-how-to-use-python)
+- [Queue Storage](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Usługi Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Kolejki usługi Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Tematy/subskrypcje usługi Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)

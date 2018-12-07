@@ -1,6 +1,6 @@
 ---
-title: Przewodnik po początkujących próbkowania Procesora w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+title: Przewodnik dla początkujących próbkowania Procesora
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 29ef34a15591a87b7eeb70e204f58329c8c55838
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677292"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066395"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowania Procesora
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **próbkowania** danych.

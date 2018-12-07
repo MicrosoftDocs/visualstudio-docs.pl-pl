@@ -10,12 +10,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: cd846d58ed6f9236b2fd0942f8caf7755a6ff993
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 86222da7c7eb3615b7c57e68d5733973b3d570fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000586"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053959"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
 ## <a name="overview"></a>Omówienie
@@ -54,7 +54,7 @@ Gdy używasz programu profilującego, można zbierać dane, po uruchomieniu usł
 Zazwyczaj można symulować ładowanie do usługi test cloud services w normalnych lub warunkach obciążenia.
 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilowanie usługi w chmurze na platformie Azure
-Podczas publikowania usługi w chmurze w programie Visual Studio, możesz profilu usługi i określ ustawienia profilowania, dające informacje, które mają. Sesję profilowania jest uruchomiony dla każdego wystąpienia roli. Aby uzyskać więcej informacji o sposobie publikowania usługi w programie Visual Studio, zobacz [publikowanie do usługi w chmurze platformy Azure z programu Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx).
+Podczas publikowania usługi w chmurze w programie Visual Studio, możesz profilu usługi i określ ustawienia profilowania, dające informacje, które mają. Sesję profilowania jest uruchomiony dla każdego wystąpienia roli. Aby uzyskać więcej informacji o sposobie publikowania usługi w programie Visual Studio, zobacz [publikowanie do usługi w chmurze platformy Azure z programu Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 Aby dowiedzieć się więcej na temat profilowanie ich wydajności w programie Visual Studio, zobacz [profilowanie wydajności — przewodnik dla początkujących](https://msdn.microsoft.com/library/azure/ms182372.aspx) i [analizowanie wydajności aplikacji przy użyciu narzędzi profilowania](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
 
@@ -107,7 +107,7 @@ Sesję profilowania jest tworzony dla każdego wystąpienia roli w usłudze w ch
 4. Aby wyświetlić różne widoki tego raportu, na liście bieżącego widoku, wybierz typ widoku, który chcesz. Aby uzyskać więcej informacji, zobacz [widoków raportów narzędzi profilowania](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Następne kroki
-[Debugowanie usług w chmurze](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Debugowanie usług w chmurze](vs-azure-tools-debug-cloud-services-virtual-machines.md)
 
-[Publikowanie w usłudze w chmurze platformy Azure z programu Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx)
+[Publikowanie w usłudze w chmurze platformy Azure z programu Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)
 

@@ -1,5 +1,6 @@
 ---
-title: Samouczek — Dowiedz się, Django w programie Visual Studio, krok 2
+title: Poznaj samouczek Django w programie Visual Studio w kroku 2, widoki i szablony stron
+titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności kroki tworzenia aplikacji i korzystanie z widoków i szablonów.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001285"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058548"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Django z widoków i szablonów stron
 

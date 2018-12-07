@@ -1,5 +1,5 @@
 ---
-title: Ładowanie testowego interfejsu API w programie Visual Studio
+title: Interfejs API testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3b35b74f7adca4ff794f4d0c78b5585551864c8f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894403"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049908"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Porady: Korzystanie z API testu obciążenia
 

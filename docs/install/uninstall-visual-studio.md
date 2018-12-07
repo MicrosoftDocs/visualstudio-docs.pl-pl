@@ -1,5 +1,6 @@
 ---
-title: Odinstaluj program Visual Studio 2017
+title: Odinstalowywanie programu Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak odinstalować program Visual Studio, krok po kroku.
 ms.custom: ''
 ms.date: 08/16/2017
@@ -15,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d4e178bce3b1a74174d59b9fde701ef2d7645b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 032d7601e282327980930a063f4508e7934f928f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348666"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047664"
 ---
-# <a name="uninstall-visual-studio"></a>Odinstalowywanie programu Visual Studio
+# <a name="uninstall-visual-studio-2017"></a>Odinstaluj program Visual Studio 2017
 
 Tej stronie przeprowadzą odinstalowywania programu Visual Studio — naszego zintegrowanego pakietu narzędzi zwiększających produktywność dla deweloperów.
 

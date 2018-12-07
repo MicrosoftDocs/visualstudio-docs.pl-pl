@@ -1,5 +1,5 @@
 ---
-title: Dodawanie źródła danych do testu wydajności sieci web w programie Visual Studio
+title: Dodawanie źródła danych do testu wydajności sieci Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896110"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065210"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 

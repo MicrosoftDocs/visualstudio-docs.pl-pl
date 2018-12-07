@@ -1,5 +1,5 @@
 ---
-title: Analizowanie wyników testów obciążenia w programie Visual Studio
+title: Analizowanie wyników testów obciążenia
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 92685b4ed7f3ea9bfbaaad70d3bb61786bcc82a0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 719163e53b1f8c68850b3f4f211838631a25274a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896669"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055611"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia za pomocą analizatora testu obciążenia
 

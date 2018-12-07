@@ -1,6 +1,6 @@
 ---
-title: 'Przygotowanie debugowania: Projekty konsoli | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Przygotowywanie do debugowania projektów konsoli | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c54c4bfdeb0341270d78ce677b6085d6f159a2
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 55c588bfffbf11d4abd26fbae1490cf0039373c3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305185"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057084"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Przygotowanie debugowania: Projekty konsoli (C#, C++, Visual Basic F#)
 
@@ -36,7 +36,7 @@ Przygotowywanie do debugowania projektu konsoli jest podobny do przygotowania do
   
 - Aplikacja Konsolowa w języku C++ (Win32)  
   
-  Trzeba określić argumenty wiersza polecenia dla całej aplikacji konsolowej. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), lub [ustawienia projektu dla C# debugowania Konfiguracje](../debugger/project-settings-for-csharp-debug-configurations.md).  
+  Trzeba określić argumenty wiersza polecenia dla całej aplikacji konsolowej. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), lub [ustawienia projektu dla języka C# Debuguj konfiguracje ](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
   Tak jak wszystkie właściwości projektu, te argumenty są zachowywane między sesjami debugowania oraz między sesjami programu Visual Studio. W związku z tym, jeśli aplikacja konsoli jest taki, który ma zostać wcześniej debugowane, pamiętaj, że może być argumenty z poprzedniej sesji w  **\<Projekt > strony właściwości** okno dialogowe.  
   

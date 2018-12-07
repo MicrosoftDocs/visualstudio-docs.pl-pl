@@ -1,6 +1,6 @@
 ---
-title: 'Porady: uruchamianie procesu roboczego w ramach konta użytkownika | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Uruchom proces roboczy w ramach konta użytkownika | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939118"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067819"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Porady: uruchamianie procesu roboczego z konta użytkownika
 Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe) w ramach konta użytkownika, wykonaj następujące kroki.  

@@ -1,5 +1,5 @@
 ---
-title: Zapisz dziennik testu obciążenia w przypadku niepowodzenia testów w programie Visual Studio
+title: Zapisz dziennik testu obciążenia w przypadku niepowodzenia testów
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c583418fa34a44d4bc0bf78996df4cb35908b4f0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895122"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064407"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Porady: Określanie, czy niepowodzenia testu są zapisywane do testowania dzienników za pomocą edytora testu obciążenia
 

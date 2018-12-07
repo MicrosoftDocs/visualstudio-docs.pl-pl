@@ -1,7 +1,7 @@
 ---
-title: 'Samouczek: Debugowanie kodu zarządzanego i natywnego (tryb mieszany)'
+title: 'Samouczek: Debugowanie C# i kodu w języku C++ (tryb mieszany)'
 description: Dowiedz się, jak można debugować natywną bibliotekę DLL z aplikacji platformy .NET Core lub .NET Framework za pomocą debugowania trybu mieszanego
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257280"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051457"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: Debugowanie C# i C++ w tej samej sesji debugowania
 

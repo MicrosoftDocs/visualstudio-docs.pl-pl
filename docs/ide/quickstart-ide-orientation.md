@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
-ms.translationtype: MT
+ms.openlocfilehash: a410c3e6f4ad4d078b63dd9b77391dc5e86b4e21
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624361"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027318"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
 
@@ -105,10 +105,10 @@ Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub je
 Opisaliśmy kilka funkcji programu Visual Studio, aby korzystały z interfejsem użytkownika. Aby dokładniej:
 
 > [!div class="nextstepaction"]
-> [Dowiedz się więcej o Edytorze kodu](../ide/quickstart-editor.md)
+> [Dowiedz się więcej o Edytorze kodu](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Dowiedz się więcej o projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+> [Dowiedz się więcej o projekty i rozwiązania](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio | Dokumentacja firmy Microsoft
+title: Tworzenie projektu usługi w chmurze platformy Azure
 description: Dowiedz się teraz, jak utworzyć projekt usługi w chmurze platformy Azure z programem Visual Studio
 author: ghogen
 manager: douge
@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8149f60440becb3c7a8d0dc08b2a1a9c00fb171a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 43944856f05afe8b7236d9ea7d6468164dd1f2cb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003616"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062601"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio
 Azure Tools dla programu Visual Studio zawiera szablon projektu umożliwiający tworzenie [usłudze w chmurze Azure](/azure/cloud-services/cloud-services-choose-me), który jest prostą usługę Azure ogólnego przeznaczenia. Po utworzeniu projektu programu Visual Studio pozwala konfigurować, debugować i wdrożyć usługę w chmurze na platformie Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Kroki, aby utworzyć projekt usługi w chmurze platformy Azure w programie Visual Studio
-Ta sekcja przeprowadzi Cię przez tworzenie projektu usługi w chmurze platformy Azure w programie Visual Studio za pomocą co najmniej jedną rolę sieci web.  
+Ta sekcja przeprowadzi Cię przez tworzenie projektu usługi w chmurze platformy Azure w programie Visual Studio za pomocą co najmniej jedną rolę sieci web.
 
 1. Uruchom program Visual Studio jako administrator.
 
@@ -34,7 +34,7 @@ Ta sekcja przeprowadzi Cię przez tworzenie projektu usługi w chmurze platformy
 
 1. Określenie, która wersja programu .NET Framework, którego chcesz użyć do tworzenia projektu.
 
-1. Wprowadź nazwę i lokalizację projektu i nazwę rozwiązania. 
+1. Wprowadź nazwę i lokalizację projektu i nazwę rozwiązania.
 
 1. Wybierz **OK**.
 
@@ -48,8 +48,8 @@ Ta sekcja przeprowadzi Cię przez tworzenie projektu usługi w chmurze platformy
 
 Projekt programu Visual Studio na platformie Azure ma skojarzenia z projektów ról w rozwiązaniu. Zawiera także projekt *pliku definicji usługi* i *pliku konfiguracji usługi*:
 
-- **Plik definicji usługi** — definiuje ustawienia środowiska uruchomieniowego dla aplikacji, w tym, jakie role są wymagane, punkty końcowe i rozmiar maszyny wirtualnej. 
-- **Plik konfiguracji usługi** -Określa, ile wystąpień roli są wykonywania i wartości ustawienia zdefiniowane dla roli. 
+- **Plik definicji usługi** — definiuje ustawienia środowiska uruchomieniowego dla aplikacji, w tym, jakie role są wymagane, punkty końcowe i rozmiar maszyny wirtualnej.
+- **Plik konfiguracji usługi** -Określa, ile wystąpień roli są wykonywania i wartości ustawienia zdefiniowane dla roli.
 
 Aby uzyskać więcej informacji o tych plikach, zobacz [konfigurowania ról usługi w chmurze platformy Azure z programem Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Ładowanie Przegląd podsumowania wyników testów w programie Visual Studio
+title: Podsumowanie wyników testów obciążenia — Przegląd
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895018"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062612"
 ---
 # <a name="load-test-results-summary-overview"></a>Przegląd podsumowania wyników testu obciążenia
 

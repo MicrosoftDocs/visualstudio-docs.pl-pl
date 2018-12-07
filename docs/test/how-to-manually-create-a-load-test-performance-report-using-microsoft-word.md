@@ -1,5 +1,5 @@
 ---
-title: Tworzenie raportu wydajności testu obciążenia programu Visual Studio przy użyciu programu Microsoft Word
+title: Tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895616"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064459"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 

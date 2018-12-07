@@ -1,6 +1,6 @@
 ---
-title: Debugowanie kodu języka Python
-description: Przewodnik po funkcji debugowania w programie Visual Studio dla kodu Python, w tym ustawiania punktów przerwania, przechodzenie krok po kroku, sprawdzania wartości, patrząc wyjątków i debugowania w oknie interaktywnym.
+title: Możliwe jest debugowanie kodu języka Python
+description: Program Visual Studio zapewnia zaawansowane funkcje debugowania kodu języka Python, w tym ustawiania punktów przerwania, przechodzenie krok po kroku, sprawdzania wartości, patrząc wyjątków i debugowania w oknie interaktywnym.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101163"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068438"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -54,7 +55,7 @@ Sesję debugowania, który rozpoczyna się od **debugowania** > **Rozpocznij deb
 
 Punkty przerwania zatrzymać wykonywanie kodu w momencie oznaczone, dzięki czemu można sprawdzić stan programu. Ustawianie punktów przerwania, klikając w lewy margines edytora kodu lub klikając prawym przyciskiem myszy linię kodu i wybierając polecenie **punktu przerwania** > **Wstaw punkt przerwania**. Czerwona kropka pojawia się w każdym wierszu za pomocą punktu przerwania.
 
-![Punkty przerwania w programie Visual Studio](media/debugging-breakpoints.png)
+![Punkty przerwania, pojawiają się w programie Visual Studio](media/debugging-breakpoints.png)
 
 Klikając czerwona kropka, lub kliknij prawym przyciskiem myszy wiersz kodu i wybierając **punktu przerwania** > **Usuń punkt przerwania** Usuwa punkt przerwania. Można również wyłączyć ją bez usuwania go za pomocą **punktu przerwania** > **Wyłącz punkt przerwania** polecenia.
 
@@ -87,27 +88,27 @@ Po zatrzymaniu debugera, można sprawdzić i modyfikować wartości zmiennych. M
 
 Aby wyświetlić przy użyciu wartości **DataTips**, po prostu umieść kursor myszy nad dowolnej zmiennej w edytorze. Możesz kliknąć na wartości, aby ją zmienić:
 
-![Etykietki danych w debugerze](media/debugging-quick-tips.png)
+![DataTips wyświetlane w debugerze programu Visual Studio](media/debugging-quick-tips.png)
 
 **Autos** okna (**debugowania** > **Windows** > **Autos**) zawiera zmienne i wyrażenia, znajdują się blisko bieżącej instrukcji. Możesz kliknąć dwukrotnie w kolumnie wartość lub wybierz i naciśnij klawisz **F2** pozwala edytować wartość:
 
-![Okno zmiennych automatycznych w debugerze](media/debugging-autos-window.png)
+![Okno zmiennych automatycznych w debugerze programu Visual Studio](media/debugging-autos-window.png)
 
 **Lokalne** okna (**debugowania** > **Windows** > **lokalne**) Wyświetla wszystkie zmienne, które znajdują się w bieżącego zakresu, który może być edytowany ponownie:
 
-![Okno zmiennych lokalnych w debugerze](media/debugging-locals-window.png)
+![Okno zmiennych lokalnych w debugerze programu Visual Studio](media/debugging-locals-window.png)
 
 Więcej używania na **Autos** i **lokalne**, zobacz [sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych](../debugger/autos-and-locals-windows.md).
 
 **Obejrzyj** systemu windows (**debugowania** > **Windows** > **Obejrzyj**  >   **Obejrzyj 1 – 4**) umożliwiają wprowadź dowolnego wyrażenia języka Python i wyświetlić wyniki. Wyrażenia są ponownie oceniane dla każdego kroku:
 
-![Okno czujki w debugerze](media/debugging-watch-window.png)
+![Okno czujki w debugerze programu Visual Studio](media/debugging-watch-window.png)
 
 Więcej używania na **Obejrzyj**, zobacz [Ustawianie wyrażenia kontrolnego na zmiennych przy użyciu oknach wyrażenie kontrolne i QuickWatch](../debugger/watch-and-quickwatch-windows.md).
 
 Podczas sprawdzania wartość ciągu (`str`, `unicode`, `bytes`, i `bytearray` są wszystkie traktowane jako parametry w tym celu), ikonę lupy pojawia się po prawej stronie wartości. Klikając ikonę Wyświetla wartość ciągu bez cudzysłowów w oknie dialogowym okna podręcznego, opakowywanie i przewijanie, co jest przydatne dla ciągów długich. Ponadto, wybierając strzałkę listy rozwijanej na ikonie służy do wybierania zwykły tekst, HTML, XML i JSON wizualizacji:
 
-![Wizualizatory ciągu](media/debugging-string-visualizers.png)
+![Ciąg wizualizatorów w debugerze programu Visual Studio](media/debugging-string-visualizers.png)
 
 HTML, XML i JSON wizualizacje są wyświetlane w osobne okno podręczne windows za pomocą widoków wyróżniania i drzewa składni.
 
@@ -115,13 +116,13 @@ HTML, XML i JSON wizualizacje są wyświetlane w osobne okno podręczne windows 
 
 Jeśli wystąpi błąd w programie podczas debugowania, ale go nie masz obsługi wyjątków, debuger przerywa punkcie wyjątek:
 
-![Okno podręczne wyjątku](media/debugging-exception-popup.png)
+![Wyjątek — menu podręczne w debugerze programu Visual Studio](media/debugging-exception-popup.png)
 
 W tym momencie można sprawdzić stan programu, w tym stos wywołań. Jednak Jeśli spróbujesz przejść przez kod wyjątku będzie nadal jest zgłaszana, dopóki nie jest to obsługiwane lub kończy działanie programu.
 
 **Debugowania** > **Windows** > **ustawienia wyjątków** polecenia menu wyświetlenie okna, w którym możesz rozwinąć **języka Python Wyjątki**:
 
-![Okno wyjątków](media/debugging-exception-settings.png)
+![Okno wyjątki w debugerze programu Visual Studio](media/debugging-exception-settings.png)
 
 Pole wyboru dla każdej kontrolki wyjątku czy debugera *zawsze* przerwanie wykonywania przy jest zgłaszany. Zaznacz to pole wyboru, gdy chcesz przerwać częściej dla określonego wyjątku.
 
@@ -133,7 +134,7 @@ Aby skonfigurować wyjątek, który nie ma na tej liście, kliknij **Dodaj** prz
 
 Domyślnie debuger zaczyna się od program standardowy uruchamianie języka Python, żadnych argumentów wiersza polecenia z i innych specjalnych ścieżek lub warunki. Opcje uruchamiania są zmieniane przy użyciu właściwości debugowania projektu dostęp, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**, wybierając opcję **właściwości**i wybierając polecenie **debugowania**  kartę.
 
-![Właściwości debugowania projektu](media/debugging-project-properties.png)
+![Właściwości debugowania projektu w debugerze programu Visual Studio](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Opcje trybu uruchamiania
 

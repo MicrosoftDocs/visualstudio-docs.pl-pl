@@ -1,5 +1,5 @@
 ---
-title: Powiadomienia programu Visual Studio | Dokumentacja firmy Microsoft
+title: Powiadomienia | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,32 +14,29 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b03483d430fe8e27bdbd731935cde6fd03e17d3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66104972b216e8a9a9800691abafa80164799568
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816160"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048622"
 ---
 # <a name="visual-studio-notifications"></a>Powiadomienia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio posiada systemu powiadomień, które ostrzega o różnych zdarzeń:  
-  
-1. Aktualizacja jest dostępna dla składnika w programie Visual Studio  
-  
-2. Visual Studio jest dostępna aktualizacja  
-  
-3. Było zdarzenia środowiska, które mogą być zainteresowane  
-  
-   Visual Studio powiadamia, gdy aktualizacja jest dostępna dla programu Visual Studio lub któregokolwiek ze składników, które zostały zainstalowane. Umożliwia także powiadomienia dotyczące niektórych rodzajów zdarzeń, które miały miejsce w środowisku Visual Studio. Ikona powiadomień jest flaga w prawym górnym rogu pasek tytułu programu Visual Studio. Gdy ikona jest czerwony, oznacza to, że występuje problem z licencją. Jeśli jest żółty Brak dostępnej aktualizacji produktu Visual Studio do zainstalowania. Gdy jest to "normal" lub czarne zostaną wyświetlone komunikaty informacyjne lub opcjonalne, takie jak awarie, dla których możesz chcieć znaleźć obejście tego problemu. Możesz kliknąć ikonę aby otworzyć **Centrum powiadomień** i wybrać kolumny do działania w. Możesz przeprowadzić jednorazowe odrzucić na powiadomienie lub zawsze Ignoruj powiadomienia (przez umieszczenie nad nim kursora nad nim), i programu Visual Studio nigdy nie pokażą tego komunikatu ponownie.  
-  
-   Jeśli zdecydujesz się zawsze Ignoruj powiadomienie, Visual Studio przestanie pokazywania go. Możesz zresetować listy ignorowanych powiadomień w [powiadomienia, środowisko, opcje, okno dialogowe](../ide/reference/notifications-environment-options-dialog-box.md).  
-  
-   ![Ikona powiadomienia w usłudze Visual Studio](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")  
-  
-## <a name="see-also"></a>Zobacz też  
+Visual Studio posiada systemu powiadomień, które ostrzega o różnych zdarzeń:
+
+1. Aktualizacja jest dostępna dla składnika w programie Visual Studio
+
+2. Visual Studio jest dostępna aktualizacja
+
+3. Było zdarzenia środowiska, które mogą być zainteresowane
+
+   Visual Studio powiadamia, gdy aktualizacja jest dostępna dla programu Visual Studio lub któregokolwiek ze składników, które zostały zainstalowane. Umożliwia także powiadomienia dotyczące niektórych rodzajów zdarzeń, które miały miejsce w środowisku Visual Studio. Ikona powiadomień jest flaga w prawym górnym rogu pasek tytułu programu Visual Studio. Gdy ikona jest czerwony, oznacza to, że występuje problem z licencją. Jeśli jest żółty Brak dostępnej aktualizacji produktu Visual Studio do zainstalowania. Gdy jest to "normal" lub czarne zostaną wyświetlone komunikaty informacyjne lub opcjonalne, takie jak awarie, dla których możesz chcieć znaleźć obejście tego problemu. Możesz kliknąć ikonę aby otworzyć **Centrum powiadomień** i wybrać kolumny do działania w. Możesz przeprowadzić jednorazowe odrzucić na powiadomienie lub zawsze Ignoruj powiadomienia (przez umieszczenie nad nim kursora nad nim), i programu Visual Studio nigdy nie pokażą tego komunikatu ponownie.
+
+   Jeśli zdecydujesz się zawsze Ignoruj powiadomienie, Visual Studio przestanie pokazywania go. Możesz zresetować listy ignorowanych powiadomień w [powiadomienia, środowisko, opcje, okno dialogowe](../ide/reference/notifications-environment-options-dialog-box.md).
+
+   ![Ikona powiadomienia w usłudze Visual Studio](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
+
+## <a name="see-also"></a>Zobacz też
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

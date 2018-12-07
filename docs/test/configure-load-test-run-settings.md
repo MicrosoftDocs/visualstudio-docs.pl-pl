@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie ustawień testu obciążenia w programie Visual Studio
+title: Konfigurowanie ustawień testu obciążenia
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9aa2defb458fba0d7962813743fa603fe71081e2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895629"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053321"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurowanie ustawień testu obciążenia
 

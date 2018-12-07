@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: bd31ee397f0398c15fd315b43486b6be5d7d3855
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219279"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062312"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci web Python przy użyciu programu Visual Studio
 
@@ -66,11 +66,11 @@ W tym miejscu skorzystaj z poniższych wskazówek, celu zainstalować bibliotek�
 
 1. W polu wyszukiwania wprowadź "flask", a następnie wybierz pozycję **polecenia pip install flask z PyPI**. Zaakceptuj wszystkie monity o uprawnienia administratora i obserwuj **dane wyjściowe** okna w programie Visual Studio, uzyskać informacje o postępie. (Monit o podniesienie uprawnień się dzieje, gdy folder packages globalne środowiska znajduje się w obszarze chronionym jak *C:\Program Files*.)
 
-    ![Zainstalowanie biblioteki Flask](media/quickstart-python-03-install-package.png)
+    ![Zainstalowanie biblioteki Flask za pomocą instalacji narzędzia pip](media/quickstart-python-03-install-package.png)
 
 1. Po zainstalowaniu biblioteki jest wyświetlana w środowisku w **Eksploratora rozwiązań**, co oznacza, że można wprowadzać z niego korzystać w kodzie języka Python.
 
-    ![Zainstalowanie biblioteki Flask](media/quickstart-python-04-package-installed.png)
+    ![Wyświetlanie i zainstalowanie biblioteki Flask w Eksploratorze rozwiązań](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > Zamiast instalowania bibliotek w środowisku globalnym, deweloperzy zazwyczaj utworzyć "środowisko wirtualne" w którym chcesz zainstalować biblioteki dla określonego projektu. Szablony programu Visual Studio oferują zazwyczaj tej opcji, zgodnie z opisem w [Szybki Start — Tworzenie projektu języka Python za pomocą szablonu](../python/quickstart-02-python-in-visual-studio-project-from-template.md).

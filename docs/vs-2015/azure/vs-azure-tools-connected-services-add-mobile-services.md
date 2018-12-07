@@ -1,5 +1,5 @@
 ---
-title: Dodawanie usługi Mobile Services przy użyciu usług połączonych programu Visual Studio | Dokumentacja firmy Microsoft
+title: Dodawanie usługi Mobile Services przy użyciu usług połączonych
 description: Dodawanie usługi Mobile Services za pomocą okna dialogowego programu Visual Studio Dodaj połączone usługi
 documentationcenter: na
 author: ghogen
@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 1679f8e20c4516ab64c4358229b4eec6ab5029ba
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ecd49a239df2e219693494d709e8f537078c4978
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003591"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065350"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Dodawanie usługi Mobile Services za pomocą programu Visual Studio podłączone usługi
 Za pomocą programu Visual Studio 2015, możesz nawiązać połączenie przy użyciu usług Azure Mobile Services **Dodaj podłączoną usługę** okna dialogowego. Możesz połączyć się z dowolnej aplikacji klienckiej języka C#, dowolnej aplikacji JavaScript lub aplikacji Cordova dla wielu platform. Po nawiązaniu połączenia, można utworzyć i uzyskać dostęp do danych, tworzenie niestandardowych interfejsów API i zaplanowane zadania lub dodawać obsługę powiadomień wypychanych.  Operacja usług połączonych dodaje wszystkie odpowiednie odwołania i kod połączenia. Możesz również korzystać z zalet wbudowanej obsługi uwierzytelniania przy użyciu różnych popularnych schematów tożsamości, takiego jak Azure AD, Facebook, Twitter i Accounts firmy Microsoft.
@@ -25,8 +25,8 @@ Za pomocą programu Visual Studio 2015, możesz nawiązać połączenie przy uż
 ## <a name="supported-project-types"></a>Obsługiwane typy projektów
 > [!NOTE]
 > W programie Visual Studio 2015 Dodawanie usług Azure Mobile Services do Universal Windows (Windows 10) projektów za pomocą okna dialogowego Dodawanie podłączonych usług nie jest obsługiwane. Możesz dodać usług Azure Mobile Services, poprzez zainstalowanie odpowiednich pakietów przy użyciu Menedżera pakietów NuGet w projekcie.
-> 
-> 
+>
+>
 
 Nawiązać połączenia z usług Azure Mobile Services w poniższych typów projektów, można użyć okna dialogowego podłączone usługi.
 
@@ -37,27 +37,27 @@ Nawiązać połączenia z usług Azure Mobile Services w poniższych typów proj
 ## <a name="connect-to-azure-mobile-services-using-the-add-connected-services-dialog"></a>Łączenie usług Azure Mobile Services za pomocą okna dialogowego Dodawanie podłączonych usług
 1. Upewnij się, że masz konto platformy Azure. Jeśli nie masz konta platformy Azure, możesz zarejestrować się w celu [bezpłatna wersja próbna](http://go.microsoft.com/fwlink/?LinkId=518146).
 2. Otwórz **Dodaj usługi połączone** okno dialogowe.
-   
+
    * W przypadku aplikacji .NET Otwórz projekt w programie Visual Studio, otwórz menu kontekstowe dla **odwołania** węzła w Eksploratorze rozwiązań, a następnie wybierz **Dodaj podłączoną usługę**
-     
+
         ![Nawiązywanie połączenia z usługą Azure Mobile Services](./media/vs-azure-tools-connected-services-add-mobile-services/IC797635.png)
    * Dla projektów aplikacji Apache Cordova, otwórz projekt w programie Visual Studio, otwórz menu kontekstowe dla węzła projektu w Eksploratorze rozwiązań, a następnie wybierz **Dodaj podłączoną usługę**.
 3. W **Dodaj podłączoną usługę** okna dialogowego wybierz **usług Azure Mobile Services**, a następnie wybierz **Konfiguruj** przycisku. Może zostać wyświetlony monit do zalogowania się do platformy Azure, jeśli jeszcze tego nie zrobiłeś.
-   
+
     ![Dodawanie usługi mobilnej Azure](./media/vs-azure-tools-connected-services-add-mobile-services/IC797636.png)
 4. W **usług Azure Mobile Services** okna dialogowego Wybierz istniejącej usługi mobilnej, jeśli nie masz. Jeśli musisz utworzyć nową usługę mobilną systemu Azure, postępuj zgodnie z poniższą procedurą, aby to zrobić. W przeciwnym razie pomiń ten krok i przejdź do następnego kroku.
-   
+
     Aby utworzyć nowe konto usługi mobilnej:
-   
+
    1. Wybierz pozycję ** żądania utworzenia usługi ** widocznego u dołu okna dialogowego.
        ![Dodawanie nowej połączonej usługi mobilnej](./media/vs-azure-tools-connected-services-add-mobile-services/IC797637.png)
-   2. Na **Tworzenie usługi mobilnej** okno dialogowe, można wybrać usługi mobilnej zaplecza JavaScript lub usługi mobilnej zaplecza platformy .NET z **środowiska uruchomieniowego** listy rozwijanej. 
-      
+   2. Na **Tworzenie usługi mobilnej** okno dialogowe, można wybrać usługi mobilnej zaplecza JavaScript lub usługi mobilnej zaplecza platformy .NET z **środowiska uruchomieniowego** listy rozwijanej.
+
        ![Tworzenie usługi mobilnej](./media/vs-azure-tools-connected-services-add-mobile-services/IC797638.png)
-      
-       Usługa zaplecza JavaScript jest proste i skuteczne. Po utworzeniu usługi mobilnej zaplecza JavaScript, kodu JavaScript po stronie serwera są przechowywane w chmurze, ale można edytować skrypty serwera za pomocą Eksploratora serwera lub portalu zarządzania systemu Azure. 
-      
-       Usługi mobilnej zaplecza platformy .NET umożliwia pełną moc i elastyczność interfejsu API sieci Web i Entity Framework. Po utworzeniu usługi mobilnej zaplecza platformy .NET, projekt jest utworzony i dodany do rozwiązania. 
+
+       Usługa zaplecza JavaScript jest proste i skuteczne. Po utworzeniu usługi mobilnej zaplecza JavaScript, kodu JavaScript po stronie serwera są przechowywane w chmurze, ale można edytować skrypty serwera za pomocą Eksploratora serwera lub portalu zarządzania systemu Azure.
+
+       Usługi mobilnej zaplecza platformy .NET umożliwia pełną moc i elastyczność interfejsu API sieci Web i Entity Framework. Po utworzeniu usługi mobilnej zaplecza platformy .NET, projekt jest utworzony i dodany do rozwiązania.
    3. Wybierz **Region** gdzie mają usługę mobilną, a następnie wprowadź nazwę użytkownika i hasło dla serwera.
    4. Po wprowadzeniu wymaganych informacji wybierz **Utwórz** przycisk, aby utworzyć usługę mobilną.
    5. Nowej usługi mobilnej powinny pojawić się na liście usług na **usług Azure Mobile Services** okno dialogowe. Wybierz nowej usługi mobilnej na liście, a następnie wybierz **Dodaj** przycisk, aby dodać usługę do projektu.
@@ -68,10 +68,9 @@ Nawiązać połączenia z usług Azure Mobile Services w poniższych typów proj
 Jak program Visual Studio modyfikuje projekt zależy od typu projektu. Dla języka C# w aplikacjach klienckich, zobacz [co się stało — projekty języka C#](http://go.microsoft.com/fwlink/p/?LinkId=513119). Dla aplikacji klienckich dla języka JavaScript, zobacz [co się stało — projekty języka JavaScript](http://go.microsoft.com/fwlink/p/?LinkId=513120). W przypadku aplikacji Cordova zobacz [co się stało — projektów Cordova](http://go.microsoft.com/fwlink/p/?LinkId=513116).
 
 ## <a name="next-steps"></a>Następne kroki
-Zadawanie pytań i uzyskiwanie pomocy: 
+Zadawanie pytań i uzyskiwanie pomocy:
 
 * [MSDN Forum: Azure Mobile Services](https://social.msdn.microsoft.com/forums/azure/home?forum=azuremobile)
 * [Usług Azure Mobile Services w blogu zespołu programu Microsoft Azure](https://azure.microsoft.com/blog/topics/mobile/)
 * [Usług Azure Mobile Services w witrynie azure.microsoft.com](https://azure.microsoft.com/services/mobile-services/)
 * [Dokumentacja usług Azure Mobile Services w witrynie azure.microsoft.com](https://azure.microsoft.com/documentation/services/mobile-services/)
-

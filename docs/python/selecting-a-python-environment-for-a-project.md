@@ -1,6 +1,6 @@
 ---
 title: Wybierz interpreter języka Python i środowiska dla projektu
-description: Jak wybrać środowisko Python lub interpretera dla projektu programu Visual Studio, w tym Anaconda i środowisk wirtualnych.
+description: Musisz wybrać środowisko Python, w tym Anaconda i środowisk wirtualnych, aby zastosować do określonego projektu.
 ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349455"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062538"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Jak wybrać środowisko Python dla projektu
 

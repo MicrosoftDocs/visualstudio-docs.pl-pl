@@ -1,6 +1,6 @@
 ---
-title: 'Porady: stosowanie edycji w trybie przerwania za pomocą edycji i kontynuowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Zastosowanie zmian w trybie przerwania z funkcją Edytuj i Kontynuuj | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257078"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063729"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Porady: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj (Visual Basic)
 Edytuj i Kontynuuj umożliwia edytowanie kodu w trybie przerwania, a następnie kontynuuj bez zatrzymywania i ponownego uruchamiania wykonywania.  

@@ -1,5 +1,6 @@
 ---
 title: Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak użyć parametrów wiersza polecenia, aby kontrolować lub dostosować instalację programu Visual Studio.
 ms.custom: ''
 ms.date: 11/14/2018
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 10cc49b718289ff1036925148d0c5c81cce00d04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768511"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063688"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 

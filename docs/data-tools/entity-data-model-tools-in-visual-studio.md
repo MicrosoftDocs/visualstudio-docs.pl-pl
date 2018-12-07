@@ -1,5 +1,5 @@
 ---
-title: Entity Framework Tools w programie Visual Studio
+title: Entity Framework Tools
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819098"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066806"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools w programie Visual Studio
+
 Entity Framework to technologii mapowania obiektowo relacyjny, który umożliwia deweloperom platformy .NET pracować z danymi relacyjnymi przy użyciu obiektów specyficznych dla domeny. Dzięki temu większa część kodu dostępu do danych, który programiści muszą zwykle tworzyć, nie jest już potrzebna. Entity Framework jest zalecane mapowania obiektowo relacyjny (ORM), modelowanie technologii nowych aplikacji .NET.
 
 Entity Framework Tools są przeznaczone do tworzenia aplikacji Entity Framework (EF). Pełną dokumentację programu Entity Framework jest już dostępny: [programu EF Core i programem EF 6](/ef/).
 
 Za pomocą narzędzi Entity Framework Tools można utworzyć *modelu koncepcyjnego* z istniejącej bazy danych, następnie graficznie wizualizowanie i edytować model koncepcyjny. Alternatywnie można graficznie najpierw utworzyć model koncepcyjny, a następnie wygeneruj bazy danych, która obsługuje model. W obu przypadkach można automatycznie aktualizować modelu, gdy podstawowe zmiany bazy danych i automatycznie wygenerować kod warstwy obiektu dla aplikacji. Generowanie bazy danych i generowania kodu warstwy obiektu są możliwe do dostosowania.
 
-Narzędzia platformy Entity Framework są zainstalowane jako część **przechowywanie i przetwarzanie danych** obciążenie w Instalatorze programu Visual Studio. Można również zainstalować jako składnik indvidual w obszarze **zestawów SDK, bibliotek i struktur** kategorii.
+Narzędzia platformy Entity Framework są zainstalowane jako część **przechowywanie i przetwarzanie danych** obciążenie w Instalatorze programu Visual Studio. Można również zainstalować jako poszczególnych składników, w obszarze **zestawów SDK, bibliotek i struktur** kategorii.
 
 Poniżej przedstawiono określonych narzędziach, które tworzą Entity Framework tools w programie Visual Studio:
 
@@ -37,7 +38,7 @@ Poniżej przedstawiono określonych narzędziach, które tworzą Entity Framewor
 - Możesz użyć **Kreatora aktualizacji modelu** można zaktualizować swoje modelu koncepcyjnego, model magazynu i mapowania, jeśli wprowadzono zmiany do podstawowej bazy danych.
 
   > [!NOTE]
-  >  Począwszy od programu Visual Studio 2010 narzędzia Entity Framework nie obsługują [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > Począwszy od programu Visual Studio 2010 narzędzia Entity Framework nie obsługują [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Narzędzia Generowanie lub modyfikowanie *edmx* pliku. To *edmx* plik zawiera informacje opisujące modelu koncepcyjnego, model magazynu i mapowania między nimi. Aby uzyskać więcej informacji, zobacz [EDMX](https://docs.microsoft.com/ef/ef6/).
 

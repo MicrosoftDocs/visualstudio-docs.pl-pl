@@ -1,5 +1,5 @@
 ---
-title: Szablony Visual Studio dla projektów i plików
+title: Szablony projektów i plików
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,40 +12,40 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 04aa647d378e956c7a2394b7c3fc2a187a7c5963
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573261"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049288"
 ---
 # <a name="project-and-item-templates"></a>Szablony projektów i elementów
 
-Szablony projektu i elementu zapewniają klas zastępczych wielokrotnego użytku, które zapewniają użytkownikom niektóre podstawowe kodu i struktury, które można dostosowywać do własnych celów.
+Szablony projektów i elementów zapewniają do ponownego użycia udostępniające użytkownikom podstawowy kod i struktury, które można dostosowywać do własnych celów.
 
 ## <a name="visual-studio-templates"></a>szablony Visual Studio
 
-Wiele wstępnie zdefiniowanych projekt oraz szablony elementów są zainstalowane z programem Visual Studio. Na przykład Visual Basic i C# **aplikacji formularzy systemu Windows** i **biblioteki klas** szablonów, które są wyświetlane w **nowy projekt** okno dialogowe są szablony projektów. Element Pokaż szablony w **Dodaj nowy element** okna dialogowego pole i obejmują elementy, takie jak pliki kodu, pliki XML, stron HTML i arkuszy stylów.
+Liczba szablonów elementów i projektów wstępnie zdefiniowane są instalowane z programem Visual Studio. Na przykład, Visual Basic i C# **Windows Forms App** i **biblioteki klas** szablonów, które są wyświetlane w **nowy projekt** okno dialogowe są szablony projektów. Pozycja Pokaż szablony w **Dodaj nowy element** okna dialogowego i zawierają elementy, takie jak pliki kodu, plików XML, strony HTML i arkusze stylów.
 
-Te szablony stanowią punkt wyjścia dla użytkowników, aby rozpocząć tworzenie projektów ani rozszerzyć istniejących projektów. Szablony projektów dostarczają pliki, które są wymagane dla określonego typu projektu, zawierają odwołania do standardowego zestawu i ustawiają domyślne opcje kompilatora i właściwości projektu. Szablony elementów można dostosować w zakresie rozwiązania od jednego pusty plik zawierający określone rozszerzenie pliku, wielu plików kodu źródłowego z kodem stub plików projektanta informacje i zasoby osadzone.
+Te szablony zapewniają punkt wyjścia dla użytkowników, aby rozpocząć tworzenie projektów lub rozszerzania istniejących projektów. Szablony projektów dostarczają pliki, które są wymagane dla określonego typu projektu, zawierają odwołania do standardowego zestawu i ustawiają domyślne opcje kompilatora i właściwości projektu. Szablonów elementów może mieścić się stopnia skomplikowania z jednego pustego pliku, który ma określone rozszerzenie pliku, wielu plików kodu źródłowego z kodem skróconym, informacje o projektancie plików i zasoby osadzone.
 
-Za pomocą szablonów zainstalowanych w **nowy projekt** i **Dodaj nowy element** okien dialogowych, tworzyć własne szablony, lub pobranie i użycie szablony utworzone przez społeczność. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md) i [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).
+Możesz użyć zainstalowanych szablonów w **nowy projekt** i **Dodaj nowy element** okien dialogowych, tworzyć własne szablony lub pobrać i używać szablonów utworzonych przez społeczność. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md) i [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Zawartość szablonu
 
-Wszystkie szablony projektów i elementów, czy zainstalowane z programem Visual Studio lub utworzone przez użytkownika, funkcji przy użyciu tych samych zasad i mieć spisu treści. Wszystkie szablony zawierają następujące elementy:
+Wszystkie szablony projektów i elementów, czy zainstalowany za pomocą programu Visual Studio lub utworzone przez użytkownika, funkcję za pomocą tych samych zasad i spisu treści. Wszystkie szablony zawierają następujące elementy:
 
-- Pliki, które można utworzyć, jeśli jest używany szablon. Te pliki zawierają pliki kodu źródłowego, zasoby osadzone, pliki projektu i tak dalej.
+- Pliki, które można utworzyć, jeśli jest używany szablon. Te pliki obejmują pliki kodu źródłowego, zasobów osadzonych, plików projektu i tak dalej.
 
-- Jeden *.vstemplate* zawierający metadane wymagane do wyświetlenia szablonu w **nowy projekt** i **Dodaj nowy element** okien dialogowych i tworzenia projektu lub elementu z szablon. Aby uzyskać więcej informacji na temat *.vstemplate* plików, zobacz [parametrów szablonu](../ide/template-parameters.md).
+- Jeden *.vstemplate* zawierający metadane potrzebne do wyświetlenia szablonu w **nowy projekt** i **Dodaj nowy element** okna dialogowe i umożliwia utworzenie projektu lub elementu z szablon. Aby uzyskać więcej informacji na temat *.vstemplate* plików, zobacz [parametry szablonu](../ide/template-parameters.md).
 
-Jeśli te pliki są skompresowane w *.zip* plików i umieścić w prawidłowym folderze, Visual Studio automatycznie wyświetli je w następujących miejscach:
+Jeśli te pliki są kompresowane do *zip* pliku i umieścić w odpowiednim folderze, Visual Studio automatycznie wyświetli je w następujących miejscach:
 
-- Szablony projektu są wyświetlane w **nowy projekt** okno dialogowe.
+- Szablony projektów są wyświetlane w **nowy projekt** okno dialogowe.
 
-- Szablony elementów są wyświetlane w **Dodaj nowy element** okno dialogowe.
+- Szablony elementu są wyświetlane w **Dodaj nowy element** okno dialogowe.
 
-Aby uzyskać więcej informacji o folderach szablonów, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 
@@ -53,4 +53,4 @@ Aby uzyskać więcej informacji o folderach szablonów, zobacz [porady: lokalizo
 - [Porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
-- [Pakiety NuGet w szablony programu Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [Pakiety NuGet w szablonach programu Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

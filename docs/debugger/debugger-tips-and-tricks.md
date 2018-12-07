@@ -1,7 +1,7 @@
 ---
-title: Porady i wskazówki w debugerze programu Visual Studio
+title: Porady i wskazówki w debugerze
 description: Dowiedz się więcej o pewnych funkcjach mniejszym znane obsługiwanych przez debuger programu Visual Studio
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257358"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055228"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 

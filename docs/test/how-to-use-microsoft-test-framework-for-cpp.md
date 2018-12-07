@@ -1,5 +1,5 @@
 ---
-title: Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
+title: Używanie struktury testów jednostkowych Microsoft dla języka C++
 ms.date: 11/15/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88265c1ac86b5b1c1cd90ef428c9c2c770d9f2a2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812455"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068263"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
 
@@ -100,4 +100,3 @@ Następujące cechy wstępnie zdefiniowane, znajdują się w `CppUnitTest.h`. Ab
 ## <a name="see-also"></a>Zobacz także
 
 - [Szybki Start: Testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)
-

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: bc472b8b4d1792df4d93414cfb62c4e4aa5f96cb
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349546"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027409"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu programu Visual Studio 2017
 
@@ -99,3 +99,7 @@ Zapoznaj się z następującymi artykułami, aby poznać inne:
 
 - [Wskazówki dotyczące ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Określanie wartości docelowej wskazówki dotyczące Framework](../ide/visual-studio-multi-targeting-overview.md)
+
+## <a name="see-also"></a>Zobacz także
+
+[Odwołanie do migracji i uaktualniania projektu dla Visual Studio Preview 2019 r](port-migrate-upgrade-visual-studio-projects-2019.md)

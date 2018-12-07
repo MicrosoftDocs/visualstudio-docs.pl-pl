@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Community 2017 obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifestu VSIX
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf5e1487910156dfd547ae563451bd2f2d428d9
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c5573f5501c4723ed6eede9bba82ebc7fdf31730
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607968"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063279"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017 składników katalogu
 

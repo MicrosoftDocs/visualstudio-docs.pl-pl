@@ -1,5 +1,5 @@
 ---
-title: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
+title: Tworzenie dodatku dla podglądu wyników testu wydajności sieci Web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896071"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068344"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Porady: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
 

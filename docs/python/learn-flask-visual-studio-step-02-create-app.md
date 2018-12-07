@@ -1,5 +1,6 @@
 ---
-title: Samouczek — Dowiedz się, Flask w programie Visual Studio, krok 2
+title: Poznaj samouczek Flask w programie Visual Studio w kroku 2, widoki i szablony
+titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności kroki tworzenia aplikacji i korzystanie z widoków i szablonów.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812624"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052948"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Flask za pomocą widoków i szablonów stron
 

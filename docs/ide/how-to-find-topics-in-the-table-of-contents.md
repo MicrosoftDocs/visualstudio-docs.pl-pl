@@ -1,5 +1,5 @@
 ---
-title: Użyj programu Visual Studio podglądu pomocy spis treści
+title: Użyj spisu treści w Podglądzie pomocy
 ms.date: 11/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -17,38 +17,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7d9ae19cb2a37c6fbf6595a7f3a39895d22190
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86e334fac2fca09514dd4adaf4a05fac0accc11f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945756"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063412"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Porady: znajdowanie tematów w spisie treści
 
-W **zawartość** kartę, można użyć spisu treści (TOC) można znaleźć informacje. Spis treści jest rozwijana lista zawierająca wszystkie tematy zainstalowanych książek. Dostępność informacji o tym, jak przeglądanie spisu treści, zobacz [klawisze skrótów (Podgląd pomocy)](../ide/shortcut-keys-help-viewer.md).
+W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć informacje. Spis treści to rozwijana lista, która zawiera wszystkie tematy w zainstalowanych książkach. Aby uzyskać informacje o ułatwieniach dostępu dotyczących sposobu nawigowania w spisie treści, zobacz [klawisze skrótów (Podgląd pomocy)](../ide/shortcut-keys-help-viewer.md).
 
 > [!IMPORTANT]
-> Zakres tematów w spisie treści zależy od wybranego filtru.
+> Zakres tematów dostępnych w spisie treści zależy od wybranego filtru.
 
-## <a name="filter-the-toc"></a>Filtrowanie spisu treści
+## <a name="filter-the-toc"></a>Wyfiltruj spis treści
 
-Można filtrować spisu treści, aby zawęzić zakres tematów, które są widoczne w **zawartość** kartę. Tytuły znajdują się na liście tylko wtedy, gdy główny warunku, który określisz. Na przykład jeśli określisz "Rozwiązywanie problemów" jako filtru, tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów" są wyświetlane. Węzły o tytułach nie mogą zawierać termin są zwijane do jednego węzła z wielokropkiem (**...** ).
+Można filtrować TOC w celu zwężenia zakresu tematów, które pojawiają się w **zawartość** kartę. Tytuły pojawiają się na liście, tylko wtedy, gdy zawierają katalog główny składnika, który określono. Na przykład jeśli określisz "Rozwiązywanie problemów" jako filtr, tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów" są wyświetlane. Węzły, których tytuły nie zawierają wyrażenia są zwinięte do pojedynczego węzła z wielokropkiem (**...** ).
 
 1.  Wybierz **zawartość** kartę.
 
-2.  W **zawartość filtru** tekst Wprowadź terminu.
+2.  W **zawartość filtra** tekstu wprowadź termin.
 
 > [!NOTE]
-> Jeśli filtr zajmuje dużo czasu, wyniki mogą wyświetlić szybciej przy użyciu `title:` operator wyszukiwania zaawansowanego.
+> Jeśli filtr potrzebuje dużo czasu do uruchomienia, można wyświetlić wyniki szybciej przy użyciu `title:` operatora wyszukiwania zaawansowanego.
 
-## <a name="synchronize-a-topic-with-the-toc"></a>Synchronizowanie tematu z spisu treści
+## <a name="synchronize-a-topic-with-the-toc"></a>Synchronizacja tematu ze spisem treści
 
-Po otwarciu tematu przy użyciu indeksu lub funkcji wyszukiwania pełnotekstowego, można określić, gdzie jest w tym temacie w spisie treści przez synchronizację spis treści z okna tematu.
+Po otwarciu tematu przy użyciu indeksu lub funkcji przeszukiwania całego tekstu można określić, gdzie jest ten temat w spisie treści, synchronizując spis treści z oknem tematu.
 
-1.  Umożliwia wyświetlenie tematu.
+1.  Wyświetl temat.
 
-2.  Kliknij przycisk **Pokaż temat w spisie treści** przycisku paska narzędzi lub naciśnij klawisz **Ctrl**+**S**.
+2.  Kliknij przycisk **Pokaż temat w spisie treści** przycisk na pasku narzędzi lub naciśnij **Ctrl**+**S**.
 
      **Zawartość** kartę otwiera i wyświetla lokalizację tematu w spisie treści.
 

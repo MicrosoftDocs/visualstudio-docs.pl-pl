@@ -1,5 +1,5 @@
 ---
-title: Za pomocą wyrażeń regularnych w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Za pomocą wyrażeń regularnych
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,12 +24,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf59b1061b6312a1c2881ff4dccdf03e5c502b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906718"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059434"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,4 +78,3 @@ Oto kilka przykładów:
 |                                                                                                            Dopasuj ciąg w cudzysłowie                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Dopasowuje dowolny ciąg w pojedynczym lub podwójnym cudzysłowie.                                                     |
 |                                                                                                             Dopasuj liczbę szesnastkową                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Dopasowuje "0xc67f", ale nie "0xc67fc67f".                                                           |
 |                                                                                                             Dopasuj liczby całkowite i miejsca dziesiętne                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Dopasowuje "1,333".                                                                      |
-

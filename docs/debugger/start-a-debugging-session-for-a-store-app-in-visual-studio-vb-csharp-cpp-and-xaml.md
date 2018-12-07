@@ -1,6 +1,6 @@
 ---
-title: Uruchamianie sesji debugowania dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Rozpocznij sesję debugowania dla aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b1cc89673558fdaa47fa48756902f44738edf734
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305302"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062412"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Rozpoczynanie sesji debugowania aplikacji platformy UWP
   
@@ -74,7 +74,7 @@ Możesz ustawić docelowy debugowania na pasku narzędzi programu Visual Studio 
 |**Maszyna lokalna**|Debugowanie aplikacji w bieżącej sesji na komputerze lokalnym.|  
 |**Symulator**|Debugowanie aplikacji w symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows. Symulator jest oknem pulpitu, która symuluje urządzenie funkcje, takie jak touch gestów i obracanie urządzeń, które mogą nie istnieć na komputerze lokalnym. Opcja symulator jest dostępna tylko wtedy, gdy Twoja aplikacja **minimalnej platformy docelowej. Wersja** jest mniejsza niż system operacyjny na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji platformy UWP w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Komputer zdalny**|Debugowanie aplikacji na urządzeniu podłączone do komputera lokalnego za pośrednictwem sieci lub kabla Ethernet. Remote Tools for Visual Studio musi być zainstalowana i uruchomiona na urządzeniu zdalnym. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
-|**Urządzenia**|Debugowanie aplikacji na urządzeniu z portu USB. Urządzenie musi być odblokowane dla deweloperów i mieć ekranu odblokowane.|  
+|**urządzenia**|Debugowanie aplikacji na urządzeniu z portu USB. Urządzenie musi być odblokowane dla deweloperów i mieć ekranu odblokowane.|  
 |**Mobile Emulator**|Rozruch emulatora określony w nazwie emulatora, Wdróż aplikację i Rozpocznij debugowanie. Emulatory są dostępne tylko dla maszyn Hyper-V jest włączona.|  
 
 ##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Konfigurowanie debugowania na stronie właściwości projektu 

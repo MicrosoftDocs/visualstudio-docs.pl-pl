@@ -1,6 +1,5 @@
 ---
 title: Konfigurowanie zapory Windows w celu debugowania zdalnego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750939"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058600"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory Windows w celu debugowania zdalnego
 

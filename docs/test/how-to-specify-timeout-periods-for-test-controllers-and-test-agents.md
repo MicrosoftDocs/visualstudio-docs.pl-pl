@@ -1,5 +1,5 @@
 ---
-title: Limitów czasu dla kontrolerów testów i agentów testowych w programie Visual Studio
+title: Limitów czasu dla kontrolerów testów i agentów testowych
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895694"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064682"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Porady: Określanie limitów czasu dla kontrolerów testów i agentów testowych
 

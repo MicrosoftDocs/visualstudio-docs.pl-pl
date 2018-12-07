@@ -1,5 +1,5 @@
 ---
-title: Ustawienia rejestrowania w programie Visual Studio Test obciążeniowy
+title: Test obciążeniowy ustawienia rejestrowania
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24bb1b3af468f35ae333407fc96c42f4f9e669b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894888"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060041"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modyfikowanie ustawień rejestrowania testu obciążeniowego
 

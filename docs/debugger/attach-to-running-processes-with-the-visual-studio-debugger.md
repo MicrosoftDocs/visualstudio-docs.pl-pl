@@ -1,6 +1,6 @@
 ---
-title: Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+title: Dołączanie do uruchomionego procesu za pomocą debugera | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389192"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068464"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowania** > **dołączyć do procesu** lub naciśnij **Ctrl**+**Alt** + **P** w programie Visual Studio oraz za pomocą **dołączyć do procesu** okno dialogowe, aby dołączyć debuger do procesu.

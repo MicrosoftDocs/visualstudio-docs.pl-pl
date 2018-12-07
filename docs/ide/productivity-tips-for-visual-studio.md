@@ -1,5 +1,5 @@
 ---
-title: Porady dotyczące wydajności dla programu Visual Studio
+title: Wskazówki dotyczące produktywności
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362004cba4792fe2405d6cc009a0ae918fdd535e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671303"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067981"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
 

@@ -1,6 +1,6 @@
 ---
-title: Ustawienia dla konfiguracji debugowania w języku Visual Basic projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Ustawienia projektu dla języka VB debugowania konfiguracji | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc12f08e9519a68dd68d98b16099729a2d233b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d70ec195418b46a022ca73d6ac3656de8e652f06
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938256"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059694"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w Visual Basic
 Można zmienić ustawienia projektu dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] konfiguracji debugowania w **stron właściwości** zgodnie z opisem w oknie [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okna.  

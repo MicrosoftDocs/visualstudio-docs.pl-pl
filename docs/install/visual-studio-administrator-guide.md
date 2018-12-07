@@ -1,5 +1,6 @@
 ---
 title: Podręcznik administratora programu Visual Studio
+titleSuffix: ''
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
 ms.custom: ''
 ms.date: 05/29/2018
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a675c0a737c4ee713d48b8912f74185a9f7cdc9
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5becf0e9fe22119c120cb8dfd756d2b43399dfa0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139265"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061775"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Podręcznik administratora w usłudze Visual Studio 2017
 

@@ -1,7 +1,6 @@
 ---
-title: Utwórz Windows Forms aplikacji w programie Visual Studio za pomocą Visual Basic
+title: Tworzenie aplikacji Windows Forms w języku Visual Basic
 description: Dowiedz się, jak tworzenie aplikacji Windows Forms w programie Visual Studio za pomocą Visual Basic, który krok po kroku.
-ms.custom: ''
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 0468a3ee546659d8079d98f49b196819c44afbd1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7a5dc99b3111b7abafe49668eaae35f595bc0a07
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381663"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063195"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Utwórz Windows Forms aplikacji w programie Visual Studio za pomocą Visual Basic
 

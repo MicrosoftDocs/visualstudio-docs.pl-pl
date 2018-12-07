@@ -1,6 +1,6 @@
 ---
-title: Używanie punktów przerwania w debugerze programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+title: Używanie punktów przerwania w debugerze | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389140"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068451"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.

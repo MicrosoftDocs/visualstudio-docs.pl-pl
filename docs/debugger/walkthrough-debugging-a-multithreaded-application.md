@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b170e6f8259776941ce0fcc2a2866a9084cffb
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607721"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066226"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Widok wątków w debugerze programu Visual Studio, korzystając z okna wątków
 W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który debugujesz. Aby uzyskać szczegółowe instrukcje dotyczące sposobu używania **wątków** okna, zobacz [wskazówki: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).

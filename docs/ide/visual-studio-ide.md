@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 468c4c54a16aeb69f518b9530a48616b35869bad
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826807"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027422"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
@@ -28,7 +28,7 @@ Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konso
 
 Ten obraz pokazuje programu Visual Studio Otwórz projekt i kilka okien narzędzi klucza, które będą prawdopodobnie używane:
 
-- [**Eksplorator rozwiązań** ](../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](quickstart-projects-solutions.md).
+- [**Eksplorator rozwiązań** ](../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](../get-started/tutorial-projects-solutions.md).
 
 - [Okna edytora](../ide/writing-code-in-the-code-and-text-editor.md) (center), gdzie prawdopodobnie spędzisz większość czasu, wyświetla zawartość pliku. Jest to, który umożliwia edytowanie kodu lub projektować interfejs użytkownika, takie jak okna przy użyciu przycisków i pola tekstowe.
 
@@ -264,9 +264,9 @@ Aby dowiedzieć się więcej o innych metodach, które można spersonalizować �
 
 Zapoznaj się dodatkowo program Visual Studio, wykonując wraz z jednym niniejsze artykuły wprowadzające zawierają:
 
-- Poznaj za pomocą edytora kodu w [Dowiedz się, jak za pomocą edytora kodu](quickstart-editor.md)
+- Poznaj za pomocą edytora kodu w [Dowiedz się, jak za pomocą edytora kodu](../get-started/tutorial-editor.md)
 
-- Dowiedz się, jak Visual Studio umożliwia organizowanie kodu w [więcej informacji na temat projektów i rozwiązań](quickstart-projects-solutions.md)
+- Dowiedz się, jak Visual Studio umożliwia organizowanie kodu w [więcej informacji na temat projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
 
 Jeśli chcesz zacząć korzystać do kodowania więcej jedną z następujących przewodników Szybki Start specyficzny dla języka jest dobre następnego kroku:
 

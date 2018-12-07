@@ -1,6 +1,6 @@
 ---
-title: 'Przygotowanie debugowania: Usługi systemu Windows | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Przygotowywanie do debugowania usług Windows | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed27902be01868955618970d376a4615627d05dc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 86a80c6c24fdba594a5bfb5c11650b69eb2de693
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479906"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065015"
 ---
 # <a name="debugging-preparation-windows-services"></a>Przygotowanie debugowania: usługi systemu Windows
-Usługa systemu Windows to program, który działa w tle w obszarze Microsoft Windows. Przykładami usługi Telnet i usługi Czas systemu Windows, która aktualizuje widoczne zegar komputera. Usługa systemu Windows nie można uruchomić z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; musi działać w kontekście Menedżera sterowania usługami. Aby uzyskać więcej informacji, zobacz [tworzenia usług systemu Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [debugowanie aplikacji usług systemu Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), i [aplikacji usług systemu Windows](/dotnet/framework/windows-services/index).  
+Usługa Windows to program, który działa w tle w ramach programu Microsoft Windows. Przykłady obejmują usługi Telnet i usługi Czas Windows, która aktualizuje widoczne zegar komputera. Usługa Windows nie można uruchamiać z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; musi być uruchamiane w kontekście Menedżera sterowania usługami. Aby uzyskać więcej informacji, zobacz [tworzenia usług Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [debugowanie aplikacji usług Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), i [aplikacji usług Windows](/dotnet/framework/windows-services/index).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [C#, F # i typy projektów Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Konfiguracje debugowania ustawienia projektu w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Ustawienia projektu dla języka C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Porady: debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)
+ [Instrukcje: debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)

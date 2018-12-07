@@ -1,6 +1,6 @@
 ---
-title: Omówienie — Visual Studio profilowania | Dokumentacja firmy Microsoft
-ms.custom: mvc
+title: Przegląd narzędzi do pomiaru wydajności | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
 ms.topic: overview
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844123"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059538"
 ---
-# <a name="overview-of-profiling-in-visual-studio"></a>Omówienie profilowania w programie Visual Studio
+# <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Przegląd narzędzi do pomiaru wydajności w programie Visual Studio
 
 Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi są gromadzone dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) w okresie czasu, takie jak czas uruchamiania aplikacji. Możesz wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu lub analiza wydajności aplikacji w późniejszej analizy.
 

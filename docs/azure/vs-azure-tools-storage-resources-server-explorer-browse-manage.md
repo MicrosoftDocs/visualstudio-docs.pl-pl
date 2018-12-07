@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: bace670073072e5330af913b897ae477fb0ce528
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 5baac96930056749d1bfe873c97d49400534d754
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000179"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065485"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -295,4 +295,4 @@ Jeśli usuniesz konto magazynu z poziomu Eksploratora serwera nie ma wpływu na,
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby dowiedzieć się więcej o sposobie używania usługi Azure storage, zobacz [uzyskiwania dostępu do usług Azure Storage](https://msdn.microsoft.com/library/azure/ee405490.aspx).
+Aby dowiedzieć się więcej o sposobie używania usługi Azure storage, zobacz [uzyskiwania dostępu do usług Azure Storage](/azure/storage/common/storage-introduction).

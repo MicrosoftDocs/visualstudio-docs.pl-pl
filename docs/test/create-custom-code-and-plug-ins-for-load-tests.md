@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia w programie Visual Studio
+title: Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062748"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
 

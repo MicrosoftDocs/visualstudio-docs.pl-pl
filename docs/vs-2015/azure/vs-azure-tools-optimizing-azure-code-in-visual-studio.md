@@ -1,5 +1,5 @@
 ---
-title: Optymalizacja kodu platformy Azure w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Optymalizacja kodu platformy Azure
 description: Dowiedz się o kodzie jak usługa Azure pomóc sprawić, że kod bardziej niezawodnego i lepszego wykonywania optymalizacji narzędzi w programie Visual Studio.
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: d1d0f5a69015a6c6596e1a2b7ee85b12f4116d6b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 586102e6080b115b5e4908c8741e9eaa2e702901
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003494"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068294"
 ---
 # <a name="optimizing-your-azure-code"></a>Optymalizacja kodu platformy Azure
 Podczas programowania używasz aplikacje korzystające z Microsoft Azure, istnieją pewne praktyk kodowania, które należy wykonać, aby pomóc uniknąć problemów z skalowalność aplikacji, zachowanie i wydajność w środowisku chmury. Firma Microsoft udostępnia narzędzia do analizy kodu platformy Azure, rozpoznaje i identyfikuje kilka z tych problemów często napotykanych i pomoże Ci je rozwiązać. Możesz pobrać narzędzia w programie Visual Studio za pomocą narzędzia NuGet.
@@ -158,22 +158,22 @@ void ReceiveMessages()
 Oto przykład użycia **Receive** czas oczekiwania, serwer domyślny.
 
 ```
-string connectionString =  
+string connectionString =
 CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
-QueueClient Client =  
+QueueClient Client =
     QueueClient.CreateFromConnectionString(connectionString, "TestQueue");
 
-while (true)  
-{   
+while (true)
+{
    BrokeredMessage message = Client.Receive();
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -191,17 +191,17 @@ while (true)
 Oto przykład użycia **Receive** czas oczekiwania, serwer inny niż domyślny.
 
 ```
-while (true)  
-{   
+while (true)
+{
    BrokeredMessage message = Client.Receive(new TimeSpan(0,1,0));
 
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -278,7 +278,7 @@ Usuń instrukcję, która ustawia czas rozpoczęcia zasady dostępu współdziel
 Poniższy fragment kodu pokazuje poprawki kodu dla tego problemu.
 
 ```
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -310,7 +310,7 @@ Aby uzyskać więcej informacji na temat zarządzania zabezpieczeniami, zobacz w
 Oto przykład nie określając godziny rozpoczęcia zasady dostęp współdzielony.
 
 ```
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -325,13 +325,13 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Oto przykład określenia godziny rozpoczęcia dostęp współdzielony zasad z okresem ważności zasad więcej niż pięć minut.
 
 ```
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
    // To ensure SAS is valid immediately, don’t set start time.
    // This way, you can avoid failures caused by small clock differences.
-  SharedAccessStartTime = new DateTime(2014,1,20),   
+  SharedAccessStartTime = new DateTime(2014,1,20),
  SharedAccessExpiryTime = new DateTime(2014, 1, 21),
    Permissions = SharedAccessBlobPermissions.Write |
       SharedAccessBlobPermissions.Read
@@ -374,7 +374,7 @@ Poniżej przedstawiono przykładowy sposób zapisać ustawienia konfiguracji w p
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     <add key="mySettings" value="[put_your_setting_here]"/>
-  </appSettings>  
+  </appSettings>
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Należy unikać używania ciągów połączeń zakodowanych
@@ -443,7 +443,7 @@ Poniższy przykład klasa kontrolera MVC pokazano, jak używać obiektu DBContex
 ```
 public class BlogsController : Controller
     {
-        //BloggingContext is a subclass to DbContext        
+        //BloggingContext is a subclass to DbContext
         private BloggingContext db = new BloggingContext();
         // GET: Blogs
         public ActionResult Index()

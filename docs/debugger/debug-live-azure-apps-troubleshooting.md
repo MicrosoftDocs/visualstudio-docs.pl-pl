@@ -1,5 +1,6 @@
 ---
-title: Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z debugowaniem migawki | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284110"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059830"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: Powiększ na wykresach w wyniku testu obciążenia w programie Visual Studio
+title: Powiększanie wykresy wyników testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895889"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064896"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Porady: powiększanie obszaru wykresu w wynikach testów obciążenia
 

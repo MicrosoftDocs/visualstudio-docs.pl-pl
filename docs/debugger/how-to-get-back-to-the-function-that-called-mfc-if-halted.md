@@ -1,6 +1,6 @@
 ---
-title: 'Porady: wrócić do funkcji, która wywołała MFC przy zatrzymaniu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Wróć do funkcji, która wywołała MFC przy zatrzymaniu | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af8856a4356a829b37a4a624b86f7b29dd965f9c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c746fc287435ea6219e0f6052bc9372fc2ae5d25
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389461"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048571"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Porady: powracanie do funkcji, która wywołała MFC przy zatrzymaniu
 

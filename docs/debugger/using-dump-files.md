@@ -1,6 +1,6 @@
 ---
-title: Przy użyciu plików zrzutu w debugerze programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1HackMay2017
+title: Przy użyciu plików zrzutu w debugerze | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74935071dcba3ab145f17f594fd22491271e39c6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3e30f9d29ba3c922d70c8acdf7d4db5d8a1670fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296141"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066957"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Pliki zrzutu debugera programu Visual Studio
 

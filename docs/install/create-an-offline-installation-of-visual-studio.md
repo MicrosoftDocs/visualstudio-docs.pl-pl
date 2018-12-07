@@ -1,5 +1,5 @@
 ---
-title: Tworzenie instalacji w trybie offline programu Visual Studio
+title: Tworzenie instalacji w trybie offline
 description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline, gdy zawodne połączenie z Internetem lub niskiej przepustowości.
 ms.custom: ''
 ms.date: 08/28/2018
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f29c364bdd5fc0ea5d08a9862a71d7697197b438
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 43fba844cccc1de6e2c9ada73acc3be34ad8881c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826760"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056402"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Tworzenie instalacji offline programu Visual Studio 2017
 

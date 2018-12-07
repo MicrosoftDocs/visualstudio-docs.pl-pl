@@ -1,5 +1,5 @@
 ---
-title: Tworzenie programu Visual Studio raportów wydajności testu obciążenia za pomocą programu Microsoft Excel
+title: Tworzenie raportów wydajności testu obciążenia za pomocą programu Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896565"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064999"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia
 

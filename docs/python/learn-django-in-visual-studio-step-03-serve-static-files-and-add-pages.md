@@ -1,5 +1,6 @@
 ---
-title: Samouczek — Dowiedz się, Django w programie Visual Studio, krok 3
+title: Dowiedz się, samouczek Django w programie Visual Studio w kroku 3, pliki statyczne i strony
+titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności pokazująca, jak obsługa plików statycznych, dodawanie stron do aplikacji i użyć szablonu dziedziczenia
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001298"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066083"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 

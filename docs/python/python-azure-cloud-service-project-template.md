@@ -1,6 +1,6 @@
 ---
 title: Szablon projektu usługi w chmurze platformy Azure dla języka Python
-description: Omówienie szablonu programu Visual Studio dla usług Azure cloud services, napisany w języku Python, w tym wdrażanie ról w zależności i rozwiązywania problemów.
+description: Program Visual Studio udostępnia szablony dla usług Azure cloud services, napisany w języku Python, w tym wdrażanie ról w zależności i rozwiązywania problemów.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,22 +8,23 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 1bcb8123ace6f4671f2127ba80377ef88891bdc8
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 5eafbf0b24e464e81447c0677d53096032343580
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607734"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068529"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze platformy Azure dla języka Python
 
 Program Visual Studio zawiera szablony ułatwiające wprowadzenie do tworzenia usług Azure Cloud Services przy użyciu języka Python.
 
-A [usługi w chmurze](https://docs.microsoft.com/azure/cloud-services/) składa się z dowolną liczbą *ról procesów roboczych* i *role sieci web*, z których każdy wykonuje koncepcyjnie osobne zadania, ale można osobno być replikowane między maszyny wirtualne w razie potrzeby skalowania. Role sieć Web udostępniają hosting dla aplikacji frontonu sieci web. W przypadku danego języka Python, wszystkie struktury sieci web, który obsługuje WSGI może być użyty do zapisu takiej aplikacji (obsługiwana przez [szablon projektów internetowych](python-web-application-project-templates.md)). Role procesów roboczych są przeznaczone dla długotrwałe procesy, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy używać pakietów w pakiecie "azure", który został zainstalowany przy użyciu [ `pip install azure` ](http://pypi.org/project/azure).
+A [usługi w chmurze](https://docs.microsoft.com/azure/cloud-services/) składa się z dowolną liczbą *ról procesów roboczych* i *role sieci web*, z których każdy wykonuje koncepcyjnie osobne zadania, ale można osobno być replikowane między maszyny wirtualne w razie potrzeby skalowania. Role sieć Web udostępniają hosting dla aplikacji frontonu sieci web. W przypadku danego języka Python, wszystkie struktury sieci web, który obsługuje WSGI może być użyty do zapisu takiej aplikacji (obsługiwana przez [szablon projektów internetowych](python-web-application-project-templates.md)). Role procesów roboczych są przeznaczone dla długotrwałe procesy, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy używać pakietów w pakiecie "azure", który został zainstalowany przy użyciu [ `pip install azure` ](https://pypi.org/project/azure).
 
 Ten artykuł zawiera szczegółowe informacje o szablonu projektu oraz innych pomocy technicznej w programie Visual Studio 2017 (wcześniejszych wersji są podobne, ale w edytorze). Aby uzyskać więcej informacji dotyczących pracy z platformą Azure za pomocą języka Python, odwiedź stronę [Centrum deweloperów języka Python Azure](https://docs.microsoft.com/python/azure/?view=azure-python).
 

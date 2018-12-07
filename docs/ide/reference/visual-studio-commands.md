@@ -1,5 +1,5 @@
 ---
-title: Visual Studio — Polecenia
+title: Polecenia
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879015"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063464"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
+
 Polecenia programu Visual Studio umożliwiają wywołanie polecenia za pomocą **polecenia** oknie **bezpośrednie** oknie lub **Find/Command** pole. W każdym przypadku znak większości (`>`) jest używany do wskazania, że polecenia zamiast operacji wyszukiwania lub debugowania jest wykonanie czynności opisanych.
 
- Można znaleźć pełną listę polecen i ich składnię w **Keyboard, Environment Options** okno dialogowe.
+Można znaleźć pełną listę polecen i ich składnię w **Keyboard, Environment Options** okno dialogowe.
 
- Znak ucieczki dla poleceń programu Visual Studio jest znak daszka (^), co oznacza, że znak następujący bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Może to służyć do osadzania prostych znaków cudzysłowu ("), spacji, ukośników wiodących, daszków lub innych znaków literałowych w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład
+Znak ucieczki dla poleceń programu Visual Studio jest znak daszka (^), co oznacza, że znak następujący bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Może to służyć do osadzania prostych znaków cudzysłowu ("), spacji, ukośników wiodących, daszków lub innych znaków literałowych w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany.
+Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany.
 
- W zlokalizowanych wersjach środowiska IDE można wprowadzać nazwy poleceń w języku macierzystym środowiska IDE lub w języku angielskim. Na przykład można wpisać albo `File.NewFile` lub `Fichier.NouveauFichier` w środowisku IDE francuskim, aby wykonać to samo polecenie.
+W zlokalizowanych wersjach środowiska IDE można wprowadzać nazwy poleceń w języku macierzystym środowiska IDE lub w języku angielskim. Na przykład można wpisać albo `File.NewFile` lub `Fichier.NouveauFichier` w środowisku IDE francuskim, aby wykonać to samo polecenie.
 
- Wiele poleceń ma aliasy. Aby uzyskać listę aliasów poleceń, zobacz [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md).
+Wiele poleceń ma aliasy. Aby uzyskać listę aliasów poleceń, zobacz [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md).
 
- Poniższe polecenia mogą mieć, argumenty i/lub przełączników.
-
+Poniższe polecenia mogą mieć, argumenty i/lub przełączników.
 
 | Nazwa polecenia | Opis |
 | - | - |
@@ -69,7 +69,7 @@ Polecenia programu Visual Studio umożliwiają wywołanie polecenia za pomocą *
 | [Ustaw bieżącą ramkę stosu](../../ide/reference/set-current-stack-frame-command.md) | Umożliwia wyświetlenie ramki określonego stosu. |
 | [Ustaw bieżący wątek](../../ide/reference/set-current-thread-command.md) | Umożliwia wyświetlenie określonego wątku. |
 | [Ustawianie podstawy](../../ide/reference/set-radix-command.md) | Określa liczbę bajtów do wyświetlenia. |
-| [Shell](../../ide/reference/shell-command.md) | Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, jakby polecenie zostało wykonane z wiersza polecenia. |
+| [Powłoka](../../ide/reference/shell-command.md) | Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, jakby polecenie zostało wykonane z wiersza polecenia. |
 | [ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md) | Wyświetla adres URL w oknie przeglądarki sieci web w ramach zintegrowanego środowiska programistycznego (IDE) lub zewnętrznego dla IDE. |
 | [Start](../../ide/reference/start-command.md) | Rozpoczyna proces debugowania i pozwala określić sposób obsługi błędów. |
 | [Path](../../ide/reference/symbol-path-command.md) | Określa listę katalogów do wyszukiwania symboli w debugerze. |

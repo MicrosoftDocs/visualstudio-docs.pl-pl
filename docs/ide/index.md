@@ -1,5 +1,6 @@
 ---
 title: Dokumentacja programu Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak program Visual Studio pozwala tworzyć aplikacje przy użyciu różnych języków programowania.
 ms.date: 01/01/2018
 layout: LandingPage
@@ -10,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: b9b3c4417506fc08f4fa048b051d0406a460cbb8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384178"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060028"
 ---
 # <a name="visual-studio-documentation"></a>Dokumentacja programu Visual Studio
 
@@ -101,7 +102,7 @@ Samouczki, klipy wideo i innych dokumentach pokazano sposoby tworzenia kodu i ap
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-projects-solutions">
+        <a href="/visualstudio/get-started/tutorial-projects-solutions">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -119,7 +120,7 @@ Samouczki, klipy wideo i innych dokumentach pokazano sposoby tworzenia kodu i ap
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-editor">
+        <a href="/visualstudio/get-started/tutorial-editor">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

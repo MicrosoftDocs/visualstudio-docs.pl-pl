@@ -1,6 +1,6 @@
 ---
-title: Analizowanie użycia sieci w aplikacjach platformy UWP w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+title: Analizowanie użycia sieci w aplikacjach platformy UWP
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220791"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062247"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje sieciowe, wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i pobrać wydajności.  

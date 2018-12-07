@@ -1,5 +1,5 @@
 ---
-title: Porady i wskazówki dotyczące programu Visual Studio | Dokumentacja firmy Microsoft
+title: Porady i wskazówki | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e640aa6676cec22bd9b124727be0cbe88c5c6cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b067302576dd83d88853a517f66e1c19186e3a78
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000113"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051159"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio — Porady i wskazówki
 

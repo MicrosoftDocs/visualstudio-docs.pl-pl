@@ -1,16 +1,16 @@
 ---
 title: Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 description: Ten przewodnik opisuje jak używać programu Visual Studio dla komputerów Mac Tools for Unity rozszerzenia
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d1cf502c171c5743baacfcfb241321e3f82503f7
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
-ms.translationtype: HT
+ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52953957"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027305"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 

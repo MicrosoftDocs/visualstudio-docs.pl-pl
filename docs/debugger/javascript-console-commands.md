@@ -1,6 +1,6 @@
 ---
-title: Konsola JavaScript poleceń w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Polecenia konsoli JavaScript | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823752"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052225"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli JavaScript w programie Visual Studio
   

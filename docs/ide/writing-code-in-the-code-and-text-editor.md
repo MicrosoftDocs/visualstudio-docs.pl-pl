@@ -1,5 +1,5 @@
 ---
-title: Funkcje edytora kodu w programie Visual Studio
+title: Funkcje edytora kodu
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 36b41ba89fa9a41432901318c9653d475551ffd5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349078"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063930"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 

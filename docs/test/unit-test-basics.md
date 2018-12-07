@@ -1,5 +1,5 @@
 ---
-title: W programie Visual Studio o teście jednostkowym
+title: Podstawowe informacje o teście jednostkowym
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935318"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053172"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 

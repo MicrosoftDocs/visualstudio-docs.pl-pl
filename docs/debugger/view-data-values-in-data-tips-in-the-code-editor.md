@@ -1,6 +1,6 @@
 ---
-title: Wyświetl wartości w DataTips w edytorze kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wyświetlanie wartości zmiennych w DataTips | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621542"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066853"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Podgląd wartości danych w DataTips w edytorze kodu
 

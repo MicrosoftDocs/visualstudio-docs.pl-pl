@@ -1,5 +1,6 @@
 ---
-title: Praca z samouczek języka Python, krok 3, interaktywny REPL
+title: Język Python w programie Visual Studio — samouczek krok 3, interaktywny REPL
+titleSuffix: ''
 description: Krok 3 przewodnika podstawowe funkcje języka Python w programie Visual Studio, obejmujących okna interaktywnego REPL języka Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 504192e81af94413e61d4ad1252ab11bf97b8a38
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219591"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066122"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Korzystanie z okna interaktywnego REPL
 

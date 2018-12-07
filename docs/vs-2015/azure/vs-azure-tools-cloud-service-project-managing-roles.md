@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie rolami w usługach Azure cloud services z programem Visual Studio | Dokumentacja firmy Microsoft
+title: Zarządzanie rolami w usługach Azure cloud services
 description: Dowiedz się, jak dodawanie i usuwanie ról w usługach Azure cloud services z programem Visual Studio.
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 35221cbf98f26a71e2b4adf0a7178342616ff7c0
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e3a07e92e3be388b43fecd169c89c2c817d66900
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003588"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063255"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Zarządzanie rolami w usługach Azure cloud services z programem Visual Studio
 Po utworzeniu usługi w chmurze platformy Azure, możesz dodać nowe role do niego lub usuwać istniejące role. Można także zaimportować istniejący projekt i przekonwertować go do roli. Na przykład można zaimportować aplikację sieci web platformy ASP.NET i określić jako rola sieć web.
@@ -41,7 +41,7 @@ Poniższe kroki prowadzą przez usunięcie roli sieci web lub proces roboczy z p
 
 1. Rozwiń **role** węzła.
 
-1. Kliknij prawym przyciskiem myszy węzeł, aby usunąć i z menu kontekstowego wybierz **Usuń**. 
+1. Kliknij prawym przyciskiem myszy węzeł, aby usunąć i z menu kontekstowego wybierz **Usuń**.
 
     ![Opcje menu, aby dodać rolę w usłudze w chmurze platformy Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Wyłączanie lub przenoszenie pamięci podręcznej pakietu | Dokumentacja firmy Microsoft
+title: Wyłączanie lub przenoszenie pamięci podręcznej pakietów
 description: Dowiedz się, jak wyłączyć, włączyć lub Przenieś pamięć podręczną pakietów dla wdrożeń programu Visual Studio.
 ms.date: 04/14/2017
 ms.technology: vs-acquisition
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1461e4d854b7e2e257fe81fa76d39aa140426b86
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: e484a3596a1ad78a547bd4e4151b906735738a86
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138521"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064131"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Wyłączanie lub przenoszenie pamięci podręcznej pakietów
 
