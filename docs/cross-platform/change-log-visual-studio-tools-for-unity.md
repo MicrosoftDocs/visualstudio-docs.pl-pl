@@ -5,17 +5,17 @@ ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: johmil
+ms.author: therealjohn
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: 129e7fa7691d0e03f44190de83d07bd09c4f2f5f
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000729"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954217"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 Dziennik zmian w programie Visual Studio Tools for Unity.

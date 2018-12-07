@@ -1,19 +1,19 @@
 ---
 title: Przy użyciu platformy .NET 4.x na platformie Unity
-author: conceptdev
-ms.author: crdun
+author: johmil
+ms.author: therealjohn
 ms.date: 08/29/2018
 ms.topic: conceptual
 ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 6346a119d32c9ce822e002704449daca8d9df22a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
-ms.translationtype: MT
+ms.openlocfilehash: cbcd033548dd87aa12ccb303d5c43abc6d0f44f6
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495612"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954165"
 ---
 # <a name="using-net-4x-in-unity"></a>Przy użyciu platformy .NET 4.x na platformie Unity
 

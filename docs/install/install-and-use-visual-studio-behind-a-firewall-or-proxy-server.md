@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 6fbea07aee311bd1548397f4b3d475e4819523df
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349572"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954191"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
@@ -55,7 +55,7 @@ Instalator programu Visual Studio pobiera pliki z różnych domen i serwerów ic
 | VisualStudio.microsoft.com | Lokalizacja dokumentacji |
 | docs.microsoft.com | Lokalizacja dokumentacji |
 | msdn.microsoft.com | Lokalizacja dokumentacji |
-| www.microsoft.com | Lokalizacja dokumentacji |
+| www\.microsoft.com | Lokalizacja dokumentacji |
 | \*. windows.net | Lokalizacja logowania |
 | \*. microsoftonline.com | Lokalizacja logowania |
 | \*. live.com | Lokalizacja logowania |
@@ -72,9 +72,9 @@ Instalator programu Visual Studio pobiera pliki z różnych domen i serwerów ic
 | download.unity3d.com | Programowanie gier za pomocą aparatu Unity (Unity) |
 | netstorage.unity3d.com | Programowanie gier za pomocą aparatu Unity (Unity) |
 | dl.google.com | Tworzenie aplikacji mobilnych za pomocą języka JavaScript (zestaw Android SDK i zestawu NDK, emulatora) <br /><br />Tworzenie aplikacji mobilnych przy użyciu platformy .NET (zestaw Android SDK i zestawu NDK, emulatora) |
-| www.incredibuild.com | Tworzenie gier przy użyciu języka C++ (IncrediBuild) |
+| www\.incredibuild.com | Tworzenie gier przy użyciu języka C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Tworzenie gier przy użyciu języka C++ (IncrediBuild) |
-| www.python.org | Programowanie w języku Python (Python) <br /><br />Dane aplikacji analizy i przetwarzania (Python) |
+| www\.python.org | Programowanie w języku Python (Python) <br /><br />Dane aplikacji analizy i przetwarzania (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Używanie programu Visual Studio i usług platformy Azure
