@@ -5,17 +5,17 @@ ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: johmil
+ms.author: therealjohn
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 20cd6088bbe0626a62b09e3943ef46703742f567
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775190"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954113"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 Dziennik zmian w programie Visual Studio Tools for Unity.

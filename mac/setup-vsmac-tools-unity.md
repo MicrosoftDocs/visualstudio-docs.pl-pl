@@ -1,16 +1,16 @@
 ---
 title: Instalator programu Visual Studio dla komputerów Mac Tools for Unity
 description: Konfigurowanie i instalowanie narzędzi Unity tools do użytku w programie Visual Studio dla komputerów Mac
-author: dantogno
-ms.author: v-davian
+author: johmil
+ms.author: therealjohn
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56fb99f1748d799732f2ba44dde4980687687eef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4fa1be72f389da415c01cc685e2c73fd9d55e618
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294906"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52953931"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Konfigurowanie programu Visual Studio dla komputerów Mac Tools for Unity
 
