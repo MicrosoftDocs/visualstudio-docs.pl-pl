@@ -1,5 +1,6 @@
 ---
 title: Przewodnik po środowisku IDE programu Visual Studio
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a410c3e6f4ad4d078b63dd9b77391dc5e86b4e21
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: 5fafb5e9f99c42eb799aa310042c9f8e9ffd0300
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027318"
+ms.locfileid: "53056454"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
 

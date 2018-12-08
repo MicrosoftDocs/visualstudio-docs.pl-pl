@@ -1,5 +1,6 @@
 ---
-title: Przenoszenie, migrowanie i uaktualnianie projektów
+title: Przenoszenie, migrowanie i uaktualnianie projektów w Visual Studio Preview 2019 r
+titleSuffix: ''
 description: Odwołanie w Visual Studio 2019 Preview obsługę projekty utworzone we wcześniejszych wersjach programu Visual Studio i jak Visual Studio decyduje, kiedy migrować projekt.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev16
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: cf5535f5587c26ed685eab4718fc2f5466a6c44f
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027532"
+ms.locfileid: "53058666"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Odwołanie do migracji i uaktualniania projektu dla Visual Studio Preview 2019 r
 
@@ -103,6 +104,8 @@ Takie zmiany jednokierunkowe może obejmować zmianę `ToolsVersion` właściwo�
 Aby zapewnić maksymalną zgodność z projektów utworzonych w starszych wersjach, Visual Studio 2019 Preview obejmuje niezbędne kompilatorach MSBuild w celu obsługi `ToolsVersion` 15, 14, 12 i 4. Projekty, które korzystają z dowolnych z tych `ToolsVersion` wartości powinna być rozwiązywana WE pomyślnej kompilacji. (Podmiotów ponownie do tego, czy program Visual Studio Preview 2019 obsługuje typ projektu w ogóle, zgodnie z opisem na [obsługiwane platformy i zgodność](/visualstudio/releases/2019/compatibility).)
 
 W tym kontekście naturalnie powstaje pytanie, czy należy starać się ręcznie zaktualizować lub migracji projektu do nowszej `ToolsVersion` wartość. Wprowadzanie tych zmian nie jest konieczne i prawdopodobnie wygeneruje wiele błędów i ostrzeżeń, które należy rozwiązać uzyskać ponownie skompilować projekt. Ponadto jeśli program Visual Studio spadnie pomocy technicznej dla określonego `ToolsVersion` w przyszłości, otwierając projekt spowoduje wyzwolenie procesu migracji projektu w szczególności, ponieważ `ToolsVersion` można zmienić wartości. W takim przypadku podsystem dla tego typu określonego projektu wie dokładnie co musi zostać zmieniona i automatycznie, zgodnie z opisem we wcześniejszej części tego artykułu wprowadzania tych zmian.
+
+## <a name="next-steps"></a>Następne kroki
 
 Zapoznaj się z następującymi artykułami, aby poznać inne:
 

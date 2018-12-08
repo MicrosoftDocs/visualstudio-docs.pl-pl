@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: bc472b8b4d1792df4d93414cfb62c4e4aa5f96cb
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027409"
+ms.locfileid: "53067064"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu programu Visual Studio 2017
 
@@ -94,6 +94,8 @@ Takie zmiany jednokierunkowe może obejmować zmianę `ToolsVersion` właściwo�
 Aby zapewnić maksymalną zgodność z projektów utworzonych w starszych wersjach, Visual Studio 2017 zawiera niezbędne kompilatorach MSBuild w celu obsługi `ToolsVersion` 15, 14, 12 i 4. Projekty, które korzystają z dowolnych z tych `ToolsVersion` wartości powinna być rozwiązywana WE pomyślnej kompilacji. (Podmiotów ponownie do tego, czy program Visual Studio 2017 obsługuje typ projektu w ogóle, zgodnie z opisem na [obsługiwane platformy i zgodność](/visualstudio/productinfo/vs2017-compatibility-vs).)
 
 W tym kontekście naturalnie powstaje pytanie, czy należy starać się ręcznie zaktualizować lub migracji projektu do nowszej `ToolsVersion` wartość. Wprowadzanie tych zmian nie jest konieczne i prawdopodobnie wygeneruje wiele błędów i ostrzeżeń, które należy rozwiązać uzyskać ponownie skompilować projekt. Ponadto jeśli program Visual Studio spadnie pomocy technicznej dla określonego `ToolsVersion` w przyszłości, otwierając projekt spowoduje wyzwolenie procesu migracji projektu w szczególności, ponieważ `ToolsVersion` można zmienić wartości. W takim przypadku podsystem dla tego typu określonego projektu wie dokładnie co musi zostać zmieniona i automatycznie, zgodnie z opisem we wcześniejszej części tego artykułu wprowadzania tych zmian.
+
+# <a name="next-steps"></a>Następne kroki
 
 Zapoznaj się z następującymi artykułami, aby poznać inne:
 

@@ -1,5 +1,6 @@
 ---
 title: Omówienie programu Visual Studio 2017
+titleSuffix: ''
 ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 468c4c54a16aeb69f518b9530a48616b35869bad
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: 029262f1a17abda9161eda3c2df6abf7ffe1f6db
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027422"
+ms.locfileid: "53057801"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
