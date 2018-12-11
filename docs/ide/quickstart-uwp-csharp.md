@@ -1,10 +1,9 @@
 ---
-title: 'Szybki Start: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C# | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows przy użyciu XAML iC#
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65c5c095ceb794e09030d4d41ed08c49bccf8427
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908928"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160013"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Szybki Start: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C&#35;
 
@@ -60,7 +59,7 @@ Nadszedł czas, aby rozpocząć tworzenie. Będzie Dodaj kontrolkę przycisk, Do
 
    ![Otwórz plik MainPage.xaml z poziomu Eksploratora rozwiązań ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-   Istnieją dwa okienka: **projektanta XAML**, która obejmuje kanwą i **edytora XAML**, którym można dodać lub zmienić kod.
+   Istnieją dwa okienka: **Projektanta XAML**, która obejmuje kanwą i **edytora XAML**, którym można dodać lub zmienić kod.
 
    ![W okienku projektanta XAML w edytorze XAML](../ide/media/uwp-xaml-editor.png)
 

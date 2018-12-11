@@ -1,8 +1,7 @@
 ---
-title: Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
-titleSuffix: ''
+title: Instalowanie i używanie za serwerem zapory lub serwera proxy
 description: Sprawdź adresy URL domen, porty i protokoły, które można dodać do listy dozwolonych lub otworzyć, jeśli Twoja organizacja korzysta z zapory lub serwera proxy
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -18,20 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 977dc2927e95988b98acc28eb6b0198d0c27b90a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057765"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160169"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
 Jeśli Ty lub Twoja organizacja korzysta z środki bezpieczeństwa, takie jak Zapora lub serwer proxy, następnie istnieją adresy URL domen, które możesz chcieć "dozwolonych" i porty i protokoły, które można otworzyć, aby mieć najlepsze wyniki, podczas instalacji i używania Visual Stu dio i usług platformy Azure.
 
-* **[Zainstaluj program Visual Studio](#install-visual-studio)**: te tabele zawierają adresy URL domen do listy dozwolonych adresów, tak, aby mieć dostęp do wszystkich składników i obciążeń, które chcesz.
+* **[Zainstaluj program Visual Studio](#install-visual-studio)**: Te tabele zawierają adresy URL domen do listy dozwolonych adresów, tak, aby mieć dostęp do wszystkich składników i obciążeń, które mają.
 
-* **[Używanie programu Visual Studio i usług Azure](#use-visual-studio-and-azure-services)**: Poniższa tabela zawiera adresy URL domen do listy dozwolonych adresów i portów i protokołów, aby otworzyć tak, aby mieć dostęp do wszystkich funkcji i usług, które mają.
+* **[Użyj programu Visual Studio i usług platformy Azure](#use-visual-studio-and-azure-services)**: Poniższa tabela zawiera adresy URL domen do listy dozwolonych adresów i portów i protokołów, aby otworzyć tak, aby mieć dostęp do wszystkich funkcji i usług, które mają.
 
 > [!NOTE]
 > W tym artykule został napisany dla programu Visual Studio w Windows, ale ma również zastosowanie do niektórych informacji [instalowania programu Visual Studio dla komputerów Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) za serwerem zapory lub serwera proxy.
@@ -122,7 +121,7 @@ Aby upewnić się, że masz dostęp do wszystkiego, czego potrzebujesz, korzysta
 | Migawka <br>Debuger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. polecenie msvsmon | 1. protokół https <br>2. protokół https  <br>3. http <br>4. protokół https <br>5. protokół https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (zależne wersji programu visual Studio) | 1. Zapytanie plik JSON, rozmiar jednostki SKU usługi aplikacji <br>2. Różnych wywołań usługi Azure RM <br>3. Wywołanie rozgrzewania lokacji za pomocą  <br>4. Klientów na docelowe punktu końcowego Kudu usługi App Service <br>5. Opublikowana wersja rozszerzenia usługi Site zapytania w usłudze nuget.org <br>6. Kanał debugowania zdalnego |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | Protokół HTTPS | 443 | Umożliwia wyświetlanie, Prześlij, uruchamianie i zarządzanie nimi zadania usługi ASA <br><br> Używane w celu przeglądania klastrach HDI i przesyłanie, diagnozowanie i debugowanie zadań usługi HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | Protokół HTTPS | 443 | Używane do kompilowania, Prześlij, wyświetlanie, diagnozowanie i debugowanie zadań; używane do przeglądania plików ADLS. używany do przekazywania i pobierania plików |
-| Usługi pakietu | [account].visualstudio.com <br/> [konto]. \*. visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | Protokół HTTPS | 443 | \*. Npmjs.org, \*. nuget.org, i \*. nodejs.org są tylko wymagane dla wybranych kompilacji scenariuszy zadań (na przykład: Instalator narzędzia NuGet, węzeł Tool Installer) lub jeśli zamierzasz używać upstreams publicznej przy użyciu źródła danych. Trzy domeny są wymagane do podstawowych funkcji tworzenia pakietów usługi. |
+| Usługi pakietu | [account].visualstudio.com <br/> [konto]. \*. visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | Protokół HTTPS | 443 | \*. Npmjs.org, \*. nuget.org, i \*. nodejs.org są tylko wymagane dla wybranych kompilacji scenariuszy zadań (na przykład: Instalator narzędzia NuGet, węzeł narzędzie Instalatora) lub jeśli zamierzasz używać upstreams publicznej przy użyciu źródła danych. Trzy domeny są wymagane do podstawowych funkcji tworzenia pakietów usługi. |
 | Usługom DevOps platformy Azure | \*. vsassets.io <br/> static2.sharepointonline.com | | | Używane do łączenia się z usługami DevOps platformy Azure |
 | | | | | |
 

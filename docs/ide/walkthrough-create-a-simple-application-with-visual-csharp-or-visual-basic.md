@@ -1,8 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic'
+title: Tworzenie prostej aplikacji przy użyciu C# lub Visual Basic "
 ms.date: 10/03/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
-ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
+ms.openlocfilehash: 1eb5509f4cb4ecb29e37d94e4e45ab89f999d138
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788022"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159714"
 ---
-# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Przewodnik: Tworzenie prostej aplikacji przy użyciu C# lub Visual Basic
 
-Przez ukończenie tego instruktażu, zapoznasz się z wieloma narzędziami, okna dialogowe i projektantach, które można użyć podczas tworzenia aplikacji za pomocą programu Visual Studio. Będzie utworzyć aplikację "Hello, World", zaprojektujesz interfejs użytkownika, należy dodać kod i zdebugujesz błędy, podczas gdy Dowiedz się więcej o pracy w zintegrowanym środowisku programistycznym ([IDE](visual-studio-ide.md)).
+Przez ukończenie tego instruktażu, zapoznasz się z wieloma narzędziami, okna dialogowe i projektantach, które można użyć podczas tworzenia aplikacji za pomocą programu Visual Studio. Będzie utworzyć aplikację "Hello, World", zaprojektujesz interfejs użytkownika, należy dodać kod i zdebugujesz błędy, podczas gdy Dowiedz się więcej o pracy w zintegrowanym środowisku programistycznym ([IDE](../get-started/visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>Konfigurowanie IDE
 
@@ -46,7 +47,7 @@ Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzy�
 
      ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](../ide/media/exploreide-newprojectcsharp.png)
 
-1. Wybierz **OK**.
+1. Kliknij przycisk **OK**.
 
    Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
 
@@ -213,7 +214,7 @@ W tym kroku można znaleźć błędy spowodowane wcześniej, zmieniając nazwę 
 
      ![Start Debugging, polecenie w menu Debugowanie](../ide/media/exploreide-startdebugging.png)
 
-     A **trybu przerwania** zostanie wyświetlone okno i **dane wyjściowe** okno wskazuje, że wystąpił IOException: nie można zlokalizować zasobu 'mainwindow.xaml'.
+     A **trybu przerwania** zostanie wyświetlone okno i **dane wyjściowe** okno wskazuje, że wystąpił IOException: Nie można zlokalizować zasobu 'mainwindow.xaml'.
 
 2. Zatrzymaj debuger, wybierając **debugowania** > **Zatrzymaj debugowanie**.
 

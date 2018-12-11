@@ -1,10 +1,11 @@
 ---
 title: What's new in Visual Studio Preview 2019 r
+titleSuffix: ''
 description: Więcej informacji na temat nowych funkcji w wersji zapoznawczej programu Visual Studio 2019 r.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896980"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159753"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s nowego w programie Visual Studio Preview 2019 r
 
@@ -86,7 +87,7 @@ I za pomocą programu Visual Studio 2019 r (wersja zapoznawcza), ta usługa jest
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Zarządzanie żądania ściągnięcia (pr) z poziomu środowiska IDE
 
-Wprowadzamy nowe rozszerzenie, które można pobrać za pomocą Visual Studio Preview 2019 r. Za pomocą tego nowego rozszerzenia można przejrzeć, uruchomić i nawet debugowanie żądań ściągnięcia od członków zespołu, bez opuszczania środowiska IDE programu Visual Studio [(zintegrowanym środowiskiem programistycznym)](../ide/visual-studio-ide.md). Firma Microsoft obsługuje kodu w repozytoriach Azure już dziś, ale zostało rozszerzone, aby obsługiwać usługi GitHub oraz ulepszenia ogólnej.
+Wprowadzamy nowe rozszerzenie, które można pobrać za pomocą Visual Studio Preview 2019 r. Za pomocą tego nowego rozszerzenia można przejrzeć, uruchomić i nawet debugowanie żądań ściągnięcia od członków zespołu, bez opuszczania środowiska IDE programu Visual Studio [(zintegrowanym środowiskiem programistycznym)](../get-started/visual-studio-ide.md). Firma Microsoft obsługuje kodu w repozytoriach Azure już dziś, ale zostało rozszerzone, aby obsługiwać usługi GitHub oraz ulepszenia ogólnej.
 
 Aby rozpocząć, Pobierz [żądania ściągnięcia dla programu Visual Studio](https://aka.ms/pr4vs) rozszerzenie z witryny Marketplace programu Visual Studio.
 

@@ -7,18 +7,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
-ms.author: tglee
+ms.author: corob
 manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 156592d4969cfe8ed160e6b58dff27ce6b2bad21
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059814"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160000"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -156,5 +156,5 @@ Gratulujemy ukończenie tego przewodnika Szybki Start!
 ## <a name="see-also"></a>Zobacz także
 
 - [Za pomocą programu Visual Studio IDE do tworzenia klasycznych aplikacji języka C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Wskazówki: Tworzenie prostej aplikacji przy użyciu C# lub Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Porady dotyczące wydajności dla programu Visual Studio](../ide/productivity-tips-for-visual-studio.md)

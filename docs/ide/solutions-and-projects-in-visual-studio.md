@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349312"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159675"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -60,7 +60,7 @@ Projekt jest zawarty w *rozwiązania*. To rozwiązanie zawiera jeden lub więcej
 
 Program Visual Studio używa dwóch typów plików (*.sln* i *.suo*) do przechowywania ustawień rozwiązania:
 
-|Rozszerzenie|Nazwa|Opis|
+|Wewnętrzny|Nazwa|Opis|
 |---------------|----------|-----------------|
 |.sln|Rozwiązanie programu Visual Studio|Organizuje projekty, elementy projektu i rozwiązania elementów w rozwiązaniu.|
 |.suo|Opcje użytkownika rozwiązania|Przechowuje ustawienia na poziomie użytkownika i dostosowania, takie jak punkty przerwania.|
@@ -79,6 +79,6 @@ Po utworzeniu nowego projektu, można użyć **Eksploratora rozwiązań** do prz
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Projekty i rozwiązania (Visual Studio dla komputerów Mac)](/visualstudio/mac/projects-and-solutions)
 - [Dodawanie i usuwanie elementów projektu (Visual Studio dla komputerów Mac)](/visualstudio/mac/add-and-remove-project-items)

@@ -2,7 +2,7 @@
 title: Usuwanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak całkowicie usunąć program Visual Studio z komputera, krok po kroku.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 09/12/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234a4dc712bc272d96ff5d3212833451e4df95ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fb3f86c59f205137dc3b72c8f0beff69f4d95a99
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061135"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159662"
 ---
 # <a name="remove-visual-studio-2017"></a>Usuń program Visual Studio 2017
 

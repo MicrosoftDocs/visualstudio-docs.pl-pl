@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9452e732458a91ce5cc3eea505c7ab3e6dec1774
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062667"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159402"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017
 
-[Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md) artykuł zawiera podstawowe wprowadzenie do programu Visual Studio. W tym artykule opisano funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych, którzy są już zaznajomieni z programu Visual Studio.
+[Omówienie środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md) artykuł zawiera podstawowe wprowadzenie do programu Visual Studio. W tym artykule opisano funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych, którzy są już zaznajomieni z programu Visual Studio.
 
 ## <a name="modular-installation"></a>Modularna instalacja
 
@@ -127,5 +127,5 @@ Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobac
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)
+- [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-in-visual-studio.md)

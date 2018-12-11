@@ -10,15 +10,16 @@ ms.date: 12/04/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 975f5898b755a2211cd8ca116ce26689282d7f6a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c530dc4dbe77755b07919e3fd6072a006d26e1ca
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067754"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159922"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 

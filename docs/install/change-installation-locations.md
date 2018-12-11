@@ -3,6 +3,7 @@ title: Wybieranie lokalizacji instalacji
 description: Dowiedz się, jak w celu zmniejszenia miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym, zmieniając lokalizację pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +16,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a8224bfadb4d2c1e06122e5ebf91ffcead6864
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059038"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159844"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Wybierz lokalizację instalacji programu Visual Studio 2017
 
-**Nowość w wersji 15.7**: może zmniejszyć miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym, zmieniając lokalizację dla niektórych plików. W szczególności można użyć innej lokalizacji pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i pliki narzędzia.
+**Nowość w wersji 15.7**: Można zmniejszyć miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym, zmieniając lokalizację dla niektórych plików. W szczególności można użyć innej lokalizacji pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i pliki narzędzia.
 
    > [!NOTE]
    > Istnieją pewne narzędzia i zestawy SDK, które mają różne reguły, w którym można zainstalować. Takie narzędzia i zestawy SDK są instalowane na dysku systemowym, nawet jeśli wybierz inną lokalizację.

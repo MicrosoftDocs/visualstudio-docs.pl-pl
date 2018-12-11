@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5794e576cfa99db2dac6b06e3f9f2e8514c3f31b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064235"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159415"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie programu Visual Studio IDE i edytorem
 
@@ -100,4 +100,4 @@ Rozważyliśmy dostosowywanie kolorów w programie Visual Studio na kilka sposob
 ## <a name="see-also"></a>Zobacz także
 
 - [Dopasowywanie edytora](../ide/customizing-the-editor.md)
-- [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)
+- [Środowisko IDE programu Visual Studio — przegląd](../get-started/visual-studio-ide.md)

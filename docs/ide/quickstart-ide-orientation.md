@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fafb5e9f99c42eb799aa310042c9f8e9ffd0300
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056454"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159571"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
 
@@ -113,6 +113,6 @@ Opisaliśmy kilka funkcji programu Visual Studio, aby korzystały z interfejsem 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
+- [Omówienie środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md)
 - [Więcej funkcji programu Visual Studio 2017](../ide/advanced-feature-overview.md)
 - [Zmienianie motywu i kolory czcionek](../ide/quickstart-personalize-the-ide.md)

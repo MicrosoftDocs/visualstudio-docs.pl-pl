@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb752f7be0e7ca8e0006787ba03f9bb4725c27b5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3275e03139b9befff0ec0e1f817bc8b54532bb72
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066015"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159435"
 ---
 # <a name="refactor-code"></a>Refaktoryzacja kodu
 
@@ -29,7 +29,7 @@ Różne operacje refaktoryzacji dostępnych dla różnych języków programowani
 ## <a name="see-also"></a>Zobacz także
 
 - [Szybkie akcje](../ide/quick-actions.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Podgląd zmian](../ide/preview-changes.md)
 - [Refaktoryzacja (Visual Studio dla komputerów Mac)](/visualstudio/mac/refactoring)

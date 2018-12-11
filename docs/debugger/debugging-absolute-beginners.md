@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821373"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160026"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -66,7 +66,7 @@ Po uruchomieniu zwykle aplikacji, zobaczysz błędy i niepoprawne wyniki tylko w
 
 Uruchamianie aplikacji w debugerze, nazywany również *tryb debugowania*, oznacza, że debuger aktywnie monitoruje wszystko, co dzieje się jako program zostanie uruchomiony. Umożliwia on również wstrzymać aplikacji w dowolnym momencie, aby zbadać jego stan, a następnie krokowo kodu wiersz po wierszu, aby obejrzeć szczegóły każdego zdarzenia, jak to się dzieje.
 
-W programie Visual Studio, wprowadź tryb debugowania przy użyciu **F5** (lub **debugowania** > **Rozpocznij debugowanie** polecenie menu lub **Rozpocznij debugowanie**  przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie")) na pasku narzędzi debugowania. Jeśli wystąpią wyjątki, pomocnika wyjątków programu Visual Studio umożliwia przejście do dokładny moment, w którym wyjątek wystąpił i zawiera inne przydatne informacje.
+W programie Visual Studio, wprowadź tryb debugowania przy użyciu **F5** (lub **debugowania** > **Rozpocznij debugowanie** polecenie menu lub **Rozpocznij debugowanie**  przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania). Jeśli wystąpią wyjątki, pomocnika wyjątków programu Visual Studio umożliwia przejście do dokładny moment, w którym wyjątek wystąpił i zawiera inne przydatne informacje.
 
 Jeśli nie wystąpi wyjątek, prawdopodobnie masz dobry pomysł gdzie szukać problem w kodzie. To którym używasz *punktów przerwania* za pomocą debugera, aby przyznać sobie możliwość bardziej dokładnie sprawdź swój kod. Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie program Visual Studio wstrzymania uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych, lub zachowanie pamięci lub sekwencji, na których działa kod.
 
@@ -78,11 +78,11 @@ Aby te pojęcia, firma Microsoft przejście za pośrednictwem niektórych przyk�
 
 Następnie zostanie utworzona aplikacja, która ma kilka błędów.
 
-1. Konieczne jest posiadanie zainstalowanego programu Visual Studio, a następnie. **Netto programowanie aplikacji klasycznych** obciążenia lub. **.NET Core programowanie wieloplatformowych** zainstalowanym obciążeniem, w zależności od typu aplikacji, która ma zostać utworzony.
+1. Konieczne jest posiadanie zainstalowanego programu Visual Studio, a następnie **programowanie aplikacji klasycznych dla platformy .NET** obciążenia lub **platformy .NET Core programowanie wieloplatformowych** zainstalowanym obciążeniem, w zależności od typu aplikacji, która ma zostać utworzony.
 
     Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
-    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **narzędzia** > **Pobierz narzędzia i funkcje**. Uruchamia Instalatora programu Visual Studio. Wybierz opcję. **Netto programowanie aplikacji klasycznych** (lub. **.NET Core programowanie wieloplatformowych**) obciążeń, następnie wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **narzędzia** > **Pobierz narzędzia i funkcje**. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** (lub **platformy .NET Core programowanie wieloplatformowych**) obciążeń, następnie wybierz **Modyfikuj**.
 
 1. Otwórz program Visual Studio, a następnie wybierz **pliku** > **New** > **projektu**.
 

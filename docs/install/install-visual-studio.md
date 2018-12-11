@@ -2,7 +2,7 @@
 title: Instalowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9ea8bcd88c77cc99c01c2623cb42a23b3b55d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049681"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159740"
 ---
 # <a name="install-visual-studio-2017"></a>Instalowanie programu Visual Studio 2017
 
@@ -126,7 +126,7 @@ Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z
 
 ## <a name="step-7---change-the-installation-location-optional"></a>Krok 7 — zmiana lokalizacji instalacji (opcjonalnie)
 
-**Nowość w wersji 15.7**: mogą teraz zmniejszać miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
+**Nowość w wersji 15.7**: Teraz można zmniejszyć miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
   ![Program Visual Studio 2017 — zmiana lokalizacji instalacji](media/installation-options-by-location.png "zmiana lokalizacji instalacji")
 

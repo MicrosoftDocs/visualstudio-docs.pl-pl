@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b41ba89fa9a41432901318c9653d475551ffd5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063930"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160117"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
@@ -60,8 +60,8 @@ Możesz znaleźć wiele zaawansowanych funkcji w **Edytuj** > **zaawansowane** m
 |Zmień tabulatory na spacje w zaznaczonych wierszach|Zmienia tabulatory wiodące na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na tabulacje (lub wszystkie tabulacje na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale możesz je wywołać **szybki dostęp** okna lub okna poleceń.|
 |Zmień litery na wielkie|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na wielkie litery.|
 |Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery.|
-|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **Alt**+**Strzałka w górę**.|
-|Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **Alt**+**strzałkę w dół**.|
+|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **ALT**+**Strzałka w górę**.|
+|Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **ALT**+**strzałkę w dół**.|
 |Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza.|
 |Wyświetl białe znaki|Wyświetla spacje jako kropki podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako znacznik prostokątny. Jeśli **narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >  **Zawijanie** > **Pokaż widoczne glify dla zawijania** jest zaznaczone, ten glif jest również wyświetlany.|
 |Zawijanie wyrazów|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączać zawijanie wyrazów i Włącz w **Edytor tekstu wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**   >  **Wszystkie języki**).|
@@ -91,7 +91,7 @@ Aby uzyskać więcej informacji na temat dostosowywania edytora, zobacz [dostoso
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Wprowadzenie do języka C++ w programie Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Wprowadzenie do języka C# i platformy ASP.NET w programie Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Rozpoczynanie pracy z językiem Python w programie Visual Studio](../ide/quickstart-python.md)

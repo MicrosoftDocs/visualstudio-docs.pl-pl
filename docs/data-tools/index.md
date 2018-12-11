@@ -1,6 +1,6 @@
 ---
 title: Opracowywanie rozwiązań dotyczących danych
-description: Dowiedz się więcej o narzędziach dla rozwiązań danych w programie Visual Studio.
+description: Więcej informacji na temat różnych narzędzi do opracowywania rozwiązań danych w programie Visual Studio, w tym narzędzia .NET Framework, SQL Server Data Tools, usługa Azure Data Lake, Azure HDInsight i usługi Azure Stream Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6920ad723db86ada57994734cd8638a6219981a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058509"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159688"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Użyj narzędzia danych w programie Visual Studio do opracowywania rozwiązań danych
 
@@ -116,7 +116,6 @@ Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia
 
 ---
 
-<hr>
 <h2>Tematy pomocy</h2>
 
 <ul class="panelContent cardsW">
@@ -126,7 +125,7 @@ Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

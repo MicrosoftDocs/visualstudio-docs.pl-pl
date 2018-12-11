@@ -1,10 +1,11 @@
 ---
 title: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak utworzyć aplikację internetową platformy ASP.NET Core w programie Visual Studio w języku C#, krok po kroku.
-ms.custom: ''
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: 4ce8709751db4eb910bbf78d2384a7a8dcaf7fd5
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244492"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160182"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -68,7 +69,7 @@ Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablon projekt
 
    (Może być ma zamknięcie programu Visual Studio, zanim będzie można kontynuować instalowania nowego obciążenia).
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Skorzystaj z paska menu Narzędzia
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
 
 1. Anuluj poza **nowy projekt** okno dialogowe. Następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
 

@@ -1,10 +1,11 @@
 ---
 title: Co nowego w programie Visual Studio 2017
+titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2017.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895772"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160195"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 
 **Zaktualizowano do programu [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
-Chcesz uaktualnienie z poprzedniej wersji programu Visual Studio? Oto, co program Visual Studio 2017 można zaoferować: Niezrównana wydajność dla każdego programisty, każdej aplikacji i dowolnej platformy. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemów Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, elastyczność i Współpracuj efektywnie dzięki tej wersji!
+Chcesz uaktualnienie z poprzedniej wersji programu Visual Studio? Oto, co program Visual Studio 2017 można umożliwiają: Niezrównana wydajność dla każdego programisty, każdej aplikacji i dowolnej platformy. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemów Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, elastyczność i Współpracuj efektywnie dzięki tej wersji!
 
 Poniżej przedstawiono podsumowanie wysokiego poziomu zmiany wprowadzone od poprzedniej wersji programu Visual Studio 2015:
 
@@ -64,7 +65,7 @@ I inne opcje, aby precyzyjnie dostosować instalację, za:
 
 * Czy chcesz wybrać składniki zamiast przy użyciu obciążeń? Wybierz **poszczególne składniki** kartę z poziomu Instalatora.
 * Chcesz zainstalować pakiety językowe, bez konieczności zmiany opcji języka Windows? Wybierz **pakiety językowe** kartę Instalatora.
-* **Nowość w wersji 15.7**: Aby zmienić lokalizację, z których program Visual Studio instaluje? Wybierz **opcje instalacji** kartę Instalatora.
+* **Nowość w wersji 15.7**: Czy chcesz zmienić lokalizację, w którym program Visual Studio instaluje? Wybierz **opcje instalacji** kartę Instalatora.
 
 Aby dowiedzieć się więcej o nowe środowisko instalacji, w tym instrukcje krok po kroku, które przeprowadzą Cię przez, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md) strony.
 
@@ -106,11 +107,11 @@ Menedżer roamingu rozszerzeń śledzi wszystkie rozszerzenia, które należy za
 
 Gdy używasz Menedżer roamingu rozszerzeń, istnieją trzy typy ikon na liście:
 
-* ![Ikony rozszerzeń korzystających z roamingu](../ide/media/vs2017ide-roamedicon.png)  **_rozszerzeń korzystających z roamingu_**: rozszerzenie, które są częścią tej listy roamingu, ale nie została zainstalowana na tym komputerze.
+* ![Ikony rozszerzeń korzystających z roamingu](../ide/media/vs2017ide-roamedicon.png)  **_rozszerzeń korzystających z roamingu_**: Rozszerzenie jest częścią tej listy roamingu, ale nie została zainstalowana na tym komputerze.
   (Można zainstalować je przy użyciu **Pobierz** przycisku.)
-* ![Ikony rozszerzeń korzystających z roamingu i zainstalowanych](../ide/media/vs2017ide-roamedinstalledicon.png)  **_korzystania z roamingu i zainstalowane_**: wszystkie rozszerzenia będące częścią listy roamingu i zainstalowane w środowisku deweloperskim.
+* ![Ikony rozszerzeń korzystających z roamingu i zainstalowanych](../ide/media/vs2017ide-roamedinstalledicon.png)  **_korzystania z roamingu i zainstalowane_**: Wszystkie rozszerzenia, które są częścią tej listy roamingu i zainstalowane w środowisku deweloperskim.
   (Jeśli zdecydujesz się zrezygnować z roamingu, możesz usunąć te elementy przy użyciu **Zatrzymaj Roaming** przycisku.)
-* ![Ikona zainstalowane](../ide/media/vs2017ide-installedicon.png)  **_zainstalowane_**: wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
+* ![Ikona zainstalowane](../ide/media/vs2017ide-installedicon.png)  **_zainstalowane_**: Wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
   (Rozszerzenia można dodać do listy roamingu, używając **Rozpocznij Roaming** przycisku.)
 
 Rozszerzenia, które możesz pobrać, gdy użytkownik jest zalogowany, zostanie dodany do listy jako **korzystania z roamingu i zainstalowane**. Rozszerzenie staje się częścią listy roamingu, który umożliwia dostęp do nich z dowolnego komputera.
@@ -137,13 +138,13 @@ A, aby uzyskać więcej informacji na temat nowości w [narzędzi Continuous del
 
 #### <a name="multi-caret-editing"></a>Edytowanie wielu karetki
 
-**Nowość w 15.8**: edytowanie jednocześnie wiele lokalizacji w pliku, jest obecnie łatwy. Rozpocznij od utworzenia punkty wstawienia i zaznaczenia w wielu lokalizacjach w pliku. Następnie funkcja wielu karetki edycji, aby dokonać edycji tych samych w dwóch lub więcej miejsc, w tym samym czasie.
+**Nowość w 15.8**: Edytowanie jednocześnie wiele lokalizacji w pliku, jest obecnie łatwy. Rozpocznij od utworzenia punkty wstawienia i zaznaczenia w wielu lokalizacjach w pliku. Następnie funkcja wielu karetki edycji, aby dokonać edycji tych samych w dwóch lub więcej miejsc, w tym samym czasie.
 
 Aby uzyskać więcej informacji, zobacz [zaznaczenie wielu karetki](finding-and-replacing-text.md#multi-caret-selection) części z [Znajdowanie i zastępowanie tekstu](finding-and-replacing-text.md) strony.
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Utrzymuj spójność profile powiązanie klawiszy
 
-**Nowość w 15.8**: teraz możesz zachować swoje powiązania klawiszy spójne w narzędziach przy użyciu dwóch nowych profilów klawiatury: Visual Studio Code i ReSharper (Visual Studio). Można znaleźć tych systemów, w ramach **narzędzia** > **opcje** > **ogólne** > **klawiatury**i górnego menu rozwijanego.
+**Nowość w 15.8**: Teraz możesz zachować swoje powiązania klawiszy spójne w narzędziach przy użyciu dwóch nowych profilów klawiatury: Program Visual Studio Code i ReSharper (Visual Studio). Można znaleźć tych systemów, w ramach **narzędzia** > **opcje** > **ogólne** > **klawiatury**i górnego menu rozwijanego.
 
   ![Nowe profile powiązanie klawiszy dla programu Visual Studio Code i ReSharper](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -172,7 +173,7 @@ Podczas pracy z projektem w programie Visual Studio można skonfigurować i szyb
 
 Firma Microsoft została odświeżona środowisko nawigacji, aby pomóc Ci rozpocząć od A do B z większą pewnością i przeszkadzał.
 
-* **Nowość w wersji 15.4**: **przejdź do definicji** (**Ctrl**+**kliknij** lub **F12**) &ndash; myszy użytkowników łatwiejszy sposób przejdź do definicji elementu członkowskiego, naciskając klawisz **Ctrl** a następnie klikając pozycję elementu członkowskiego. Naciśnięcie klawisza **Ctrl** i przenosząc kursor myszy nad symbol kodu będzie underline go i przekształcać je w łącze. Zobacz [przejdź do definicji i zobacz definicję](../ide/go-to-and-peek-definition.md) Aby uzyskać więcej informacji.
+* **Nowość w wersji 15.4**: **Przejdź do definicji** (**Ctrl**+**kliknij** lub **F12**) &ndash; myszy użytkownicy mają łatwiejszy sposób, aby przejść do definicji element członkowski, naciskając klawisz **Ctrl** a następnie klikając pozycję elementu członkowskiego. Naciśnięcie klawisza **Ctrl** i przenosząc kursor myszy nad symbol kodu będzie underline go i przekształcać je w łącze. Zobacz [przejdź do definicji i zobacz definicję](../ide/go-to-and-peek-definition.md) Aby uzyskać więcej informacji.
 
 * **Przejdź do implementacji** (**Ctrl**+**F12**) &ndash; przejdź z dowolnego typu podstawowego lub elementu członkowskiego do jego różne implementacje.
 
@@ -216,7 +217,7 @@ Aby uzyskać więcej informacji, zobacz [Użyj nowego pomocnika wyjątków w pro
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Migawki i IntelliTrace krok do tyłu
 
-**Nowość w wersji 15.5**: krok do tyłu IntelliTrace umożliwia automatyczne utworzenie migawki aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawek umożliwiają wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości. IntelliTrace krok do tyłu pozwalają zaoszczędzić czas podczas mają być wyświetlane poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowanie lub Utwórz ponownie stan żądaną aplikację.
+**Nowość w wersji 15.5**: Krok do tyłu IntelliTrace umożliwia automatyczne utworzenie migawki aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawek umożliwiają wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości. IntelliTrace krok do tyłu pozwalają zaoszczędzić czas podczas mają być wyświetlane poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowanie lub Utwórz ponownie stan żądaną aplikację.
 
 Można poruszać się i Wyświetl migawki za pomocą **krok do tyłu** i **krok do przodu** przycisków w **debugowania** paska narzędzi. Te przyciski nawigacji zdarzenia, które pojawiają się w **zdarzenia** karcie **narzędzia diagnostyczne** okna. Przechodzenie krok po kroku do tyłu lub do przodu do zdarzenia automatycznie aktywuje debugowania historycznego wybranego zdarzenia.
 
@@ -245,7 +246,7 @@ Aby uzyskać więcej informacji, zobacz [narzędzia usługi Azure Functions dla 
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debugowanie na żywo aplikacji ASP.NET przy użyciu punkty przyciągania i punkty rejestrowania w aplikacjach platformy Azure na żywo
 
-**Nowość w wersji 15.5**: rozszerzenie Snapshot Debugger tworzy migawkę aplikacji w środowisku produkcyjnym, gdy wykonuje kod, który Cię interesuje. Aby nakazać debugera, aby utworzyć migawkę, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie tego, co poszło, bez wywierania wpływu na ruch z aplikacji produkcyjnej. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
+**Nowość w wersji 15.5**: Rozszerzenie Snapshot Debugger tworzy migawkę aplikacji w środowisku produkcyjnym, gdy wykonuje kod, który Cię interesuje. Aby nakazać debugera, aby utworzyć migawkę, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie tego, co poszło, bez wywierania wpływu na ruch z aplikacji produkcyjnej. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
 
 Zbieranie migawek jest dostępna dla następujących aplikacji sieci web działające w usłudze Azure App Service:
 
@@ -281,25 +282,25 @@ Aby uzyskać więcej informacji, zobacz [Visual Studio i Xamarin](../cross-platf
 
 ### <a name="entitlements-editor"></a>Edytor uprawnień
 
-**Nowość w 15.3**: do potrzeb projektowania dla systemu iOS dodaliśmy autonomicznej Edytor uprawnień. Obejmuje ona Komfortowy interfejs użytkownika, który można łatwo przeglądać. Aby go uruchomić, kliknij dwukrotnie użytkownika *plik entitlements.plist* pliku.
+**Nowość w 15.3**: Dla potrzeb programowania dla systemu iOS dodaliśmy autonomicznej Edytor uprawnień. Obejmuje ona Komfortowy interfejs użytkownika, który można łatwo przeglądać. Aby go uruchomić, kliknij dwukrotnie użytkownika *plik entitlements.plist* pliku.
 
 ![Edytor uprawnień dla platformy Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**Nowość w wersji 15.4**: Xamarin Live umożliwia deweloperom na ciągłe wdrażanie, testowanie i debugowanie swoich aplikacji bezpośrednio na urządzenia z systemem Android i iOS. Po pobraniu aplikacji Xamarin Live Player&mdash;dostępnej w App Store lub Google Play&mdash;można sparować urządzenie z programem Visual Studio i zrewolucjonizować sposób tworzenia aplikacji mobilnych. Ta funkcja jest teraz zawarta w programie Visual Studio i można ją włączyć, przechodząc do opcji **Narzędzia** > **Opcje** > **Xamarin**  > **Inne** > **Włącz Xamarin Live Player**.
+**Nowość w wersji 15.4**: Platforma Xamarin Live umożliwia deweloperom ciągłe wdrażanie, testowanie i debugowanie swoich aplikacji bezpośrednio na urządzeniach z systemem iOS i Android. Po pobraniu aplikacji Xamarin Live Player&mdash;dostępnej w App Store lub Google Play&mdash;można sparować urządzenie z programem Visual Studio i zrewolucjonizować sposób tworzenia aplikacji mobilnych. Ta funkcja jest teraz zawarta w programie Visual Studio i można ją włączyć, przechodząc do opcji **Narzędzia** > **Opcje** > **Xamarin**  > **Inne** > **Włącz Xamarin Live Player**.
 
 ![Animacja pary Xamarin Live Player, wdrożenie i tryby edycji na żywo](../ide/media/xamarinliveplayer.gif)
 
 ### <a name="support-for-google-android-emulator"></a>Obsługa Emulator systemu Google Android
 
-**Nowość w 15.8**: gdy używasz funkcji Hyper-V, teraz za pomocą usługi Google emulatora systemu Android side-by-side inne technologie, które są oparte na funkcji Hyper-V, takich jak funkcji Hyper-V maszyny wirtualne platformy Docker narzędzia, HoloLens emulator i więcej. (Ta funkcja wymaga systemu Windows 10 kwietnia 2018 r. Zaktualizuj lub nowszej.)
+**Nowość w 15.8**: Gdy używasz funkcji Hyper-V, można teraz używać firmy Google emulatora systemu Android side-by-side z innymi technologiami, które są oparte na funkcji Hyper-V, takich jak funkcji Hyper-V maszyny wirtualne platformy Docker narzędzia, HoloLens emulator i więcej. (Ta funkcja wymaga systemu Windows 10 kwietnia 2018 r. Zaktualizuj lub nowszej.)
 
 ![Emulator systemu Google Android na technologii Hyper-V](../ide/media/xamarin-hyperv-android-emulator.png)
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Edytor widoku podzielonego projektanta platformy Xamarin.Android
 
-Również **nowego w programie 15.8**: wprowadziliśmy znaczne ulepszenia do projektanta środowisko dla platformy Xamarin.Android. Wyróżnienie jest nowy Edytor widoku złożonego, która pozwala na tworzenie, Edycja i Podgląd układów w tym samym czasie.
+Również **nowego w programie 15.8**: Wprowadziliśmy znaczne ulepszenia do projektanta środowisko dla platformy Xamarin.Android. Wyróżnienie jest nowy Edytor widoku złożonego, która pozwala na tworzenie, Edycja i Podgląd układów w tym samym czasie.
 
 ![Projektant Xamarin.Adroid Edytor widoku złożonego](../ide/media/android-designer-split-view.png)
 
@@ -307,11 +308,11 @@ Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe emulatora wyd
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**Nowość w wersji 15.5**: Visual Studio App Center&mdash;która jest teraz ogólnie dostępna dla aplikacji systemów Android, iOS, macOS i Windows&mdash;ma wszystko, czego potrzebujesz do zarządzania cyklem życia aplikacji, w tym automatycznym kompilacjom testowanie na rzeczywistych urządzenia w chmurze, dystrybucji do testerów wersji beta i sklepów z aplikacjami i monitorowania użycia rzeczywistych za pomocą awarii i danym analitycznym. Aplikacje napisane w językach Objective-C, Swift, Java, C#, Xamarin i React Native są obsługiwane we wszystkich funkcji.
+**Nowość w wersji 15.5**: Visual Studio App Center&mdash;która jest teraz ogólnie dostępna dla aplikacji systemów Android, iOS, macOS i Windows&mdash;ma wszystko, czego potrzebujesz do zarządzania cyklem życia aplikacji, w tym automatycznym kompilacjom testowanie na rzeczywistych urządzeniach w chmurze Dystrybucja do testerów wersji beta i sklepów z aplikacjami i monitorowania użycia rzeczywistych za pomocą awarii i danym analitycznym. Aplikacje napisane w językach Objective-C, Swift, Java, C#, Xamarin i React Native są obsługiwane we wszystkich funkcji.
 
   ![Środowisko testowe programu Visual Studio App Center](../ide/media/app-center-test-env.png)
 
-Aby uzyskać więcej informacji, zobacz [Introducing App Center: tworzenia, testowania, dystrybucji i monitorować aplikacje w chmurze](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) wpis w blogu.
+Aby uzyskać więcej informacji, zobacz [Introducing App Center: Tworzenia, testowania, dystrybucji i monitorować aplikacje w chmurze](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) wpis w blogu.
 
 ## <a name="cross-platform-development"></a>Programowanie dla wielu platform
 
@@ -354,7 +355,7 @@ Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Unity](../cross
 
 ### <a name="visual-studio-tools-for-ai"></a>Narzędzia Visual Studio Tools for AI
 
-**Nowość w wersji 15.5**: skorzystaj z funkcji produktywności programu Visual Studio, aby przyspieszyć innowacji sztucznej Inteligencji już dziś. Użyj kodu wbudowanego edytora funkcje, takie jak wyróżniania składni, funkcję IntelliSense i tekst automatycznego formatowania. Możesz przetestować interaktywnie swoje głębokie uczenie aplikacji w środowisku lokalnym za pomocą krokowym debugowanie, zmienne lokalne i modeli.
+**Nowość w wersji 15.5**: Skorzystaj z funkcji produktywności programu Visual Studio, aby przyspieszyć innowacji sztucznej Inteligencji już dziś. Użyj kodu wbudowanego edytora funkcje, takie jak wyróżniania składni, funkcję IntelliSense i tekst automatycznego formatowania. Możesz przetestować interaktywnie swoje głębokie uczenie aplikacji w środowisku lokalnym za pomocą krokowym debugowanie, zmienne lokalne i modeli.
 
   ![Środowisko IDE do uczenia głębokiego](../ai/media/about/ide.png)
 

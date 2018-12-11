@@ -1,10 +1,11 @@
 ---
 title: Wprowadzenie do aplikacji konsoli języka C# w programie Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak w programie Visual Studio krok po kroku dotyczące tworzenia aplikacji konsolowej C#.
-ms.custom: ''
 ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,16 +15,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: d15e22ce80ed7e46eea7ded93bff0af8e82d9ef4
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244375"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159883"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy przy użyciu aplikacji konsolowej C# w programie Visual Studio
+# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Samouczek: Wprowadzenie do aplikacji konsolowej C# w programie Visual Studio
 
-W ramach tego samouczka dla języka C#, użyjesz programu Visual Studio do tworzenia i uruchomisz aplikację konsoli i zapoznaj się z niektórymi funkcjami [środowiska zintegrowanego rozwoju Visual Studio (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
+W ramach tego samouczka dla języka C#, użyjesz programu Visual Studio do tworzenia i uruchomisz aplikację konsoli i zapoznaj się z niektórymi funkcjami [środowiska zintegrowanego rozwoju Visual Studio (IDE)](../get-started/visual-studio-ide.md) podczas możesz to zrobić.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
@@ -53,7 +54,7 @@ Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz j
 
    ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Skorzystaj z paska menu Narzędzia
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
 
 1. Anuluj poza **nowy projekt** okna dialogowego pole, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
 

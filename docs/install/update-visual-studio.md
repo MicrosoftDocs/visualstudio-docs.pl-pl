@@ -4,6 +4,7 @@ titleSuffix: ''
 description: Dowiedz się, jak zaktualizować program Visual Studio do najnowszej wersji, krok po kroku.
 ms.date: 04/23/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61a76a6307b18823efaf08ee89c5e514bc22f08a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: aa929eafc1459d74efae51fac2195d8574eb7567
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051085"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158934"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aktualizacja programu Visual Studio 2017 do najnowszej wersji
 

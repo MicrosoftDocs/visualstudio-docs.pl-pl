@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8710926591c565528bbf65ba1af79a670ad76ee7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057317"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159506"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
@@ -42,7 +42,7 @@ Wiele opcji personalizacji są udostępniane za pośrednictwem [opcje środowisk
 
 Aby zmienić motyw kolorów między jasny i ciemny niebieski, typ `environment` w **Szybkie uruchamianie** , a następnie wybierz **środowiska--> Ogólne**. W **opcje** okno dialogowe, zmiana **motyw kolorów** opcji.
 
-Aby zmienić opcje kolorowanie w edytorze, wpisz `environment` w **Szybkie uruchamianie** , a następnie wybierz **środowiska--> czcionki i kolory**. Zobacz [porady: zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Aby zmienić opcje kolorowanie w edytorze, wpisz `environment` w **Szybkie uruchamianie** , a następnie wybierz **środowiska--> czcionki i kolory**. Zobacz [jak: Zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Wielkość liter w wyrazie menu głównego
 
@@ -50,7 +50,7 @@ Możesz zmienić menu głównego wielkość liter w wyrazie między **wielkimi l
 
 ### <a name="customize-menus-and-toolbars"></a>Dostosowywanie menu i pasków narzędzi
 
-Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [porady: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [jak: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Strona początkowa
 
@@ -67,6 +67,6 @@ Można dostosować **narzędzia** menu, aby uruchomić narzędzia zewnętrzne. A
 ## <a name="see-also"></a>Zobacz także
 
 - [Ustawienia środowiska](environment-settings.md)
-- [Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)
+- [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
 - [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Dostosowywanie programu Visual Studio dla komputerów Mac w środowisku IDE](/visualstudio/mac/customizing-the-ide)

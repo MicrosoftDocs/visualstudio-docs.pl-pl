@@ -4,6 +4,7 @@ titleSuffix: ''
 description: Dowiedz się więcej o narzędziach, których można użyć do wykrywania i zarządzanie instalacjami programu Visual Studio na maszynach klienckich.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff207b753a864994c8219f59458d66b3e004097
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 909ea85a68652467e3288e1e3f8f8e2d4e0df5b7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051960"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158570"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
@@ -31,8 +32,8 @@ Istnieje kilka narzędzi, których można użyć do wykrywania instalacji progra
 Wprowadziliśmy kilka narzędzi, które pomogą Ci wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio na maszynach klienckich:
 
 * [VSWhere](https://github.com/microsoft/vswhere): plik wykonywalny, wbudowanego w program Visual Studio lub będą dostępne dla oddzielnych dystrybucji, która pomoże Ci znaleźć lokalizacji wszystkich wystąpień programu Visual Studio na danym komputerze.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): skrypty programu PowerShell, które identyfikują zainstalowanych wystąpień programu Visual Studio za pomocą interfejsu API konfiguracji instalacji.
-* [VS-Instalator-Samples](https://github.com/microsoft/vs-setup-samples): przykłady C# i C++, które pokazują, jak zapytania istniejącą instalację za pomocą interfejsu API konfiguracji instalacji.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): Skrypty programu PowerShell, które identyfikują zainstalowanych wystąpień programu Visual Studio za pomocą interfejsu API konfiguracji instalacji.
+* [VS-Instalator Samples](https://github.com/microsoft/vs-setup-samples): C#i przykłady w języku C++, które pokazują, jak zapytania istniejącą instalację za pomocą interfejsu API konfiguracji instalacji.
 
 Ponadto [interfejs API konfiguracji instalacji](<xref:Microsoft.VisualStudio.Setup.Configuration>) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć swoje własne narzędzia do przeszukiwania wystąpieniami programu Visual Studio.
 

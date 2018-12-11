@@ -1,5 +1,6 @@
 ---
 title: Utwórz plik bazy danych i za pomocą projektanta tabel
+description: Samouczek, który zawiera opis sposobu dodawania tabel i kluczy obcych do bazy danych przy użyciu projektanta tabel w programie Visual Studio. Pokazano również, jak dodawać dane za pomocą interfejsu graficznego.
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e2b138a536f22608c357f56b6856d91965ff906
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c071daeaa1ffe10aa9de995b375e33b76b358da7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305328"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159870"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i dodawanie tabel w programie Visual Studio
 
@@ -41,7 +42,7 @@ Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **p
 
 4. Nazwij bazę danych **SampleDatabase**, a następnie wybierz pozycję **Dodaj** przycisku.
 
-### <a name="to-add-a-data-source"></a>Aby dodać źródło danych
+### <a name="add-a-data-source"></a>Dodawanie źródła danych
 
 1. Jeśli **źródeł danych** okno nie jest otwarte, otwórz ją, naciskając klawisz **Shift**+**Alt**+**D** lub wybierania **Widoku** > **Windows inne** > **źródeł danych** na pasku menu.
 
@@ -59,19 +60,19 @@ Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **p
 
 1. Jeden **wybierz obiekty bazy danych** stronie zostanie wyświetlony komunikat informujący, że baza danych nie zawiera żadnych obiektów. Wybierz **Zakończ**.
 
-### <a name="to-view-properties-of-the-data-connection"></a>Aby wyświetlić właściwości połączenia danych
+### <a name="view-properties-of-the-data-connection"></a>Wyświetl właściwości połączenia danych
 
 Możesz wyświetlić parametry połączenia dla *SampleDatabase.mdf* plików, otwierając okno właściwości połączenia danych:
 
--   W programie Visual Studio, wybierz **widoku** > **Eksplorator obiektów SQL Server** Jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła, otwierając menu skrótów dla *SampleDatabase.mdf*, a następnie wybierając **właściwości**.
+- W programie Visual Studio, wybierz **widoku** > **Eksplorator obiektów SQL Server** Jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła, otwierając menu skrótów dla *SampleDatabase.mdf*, a następnie wybierając **właściwości**.
 
--   Alternatywnie, można wybrać **widoku** > **Eksploratora serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła. Otwórz menu skrótów dla *SampleDatabase.mdf*, a następnie wybierz pozycję **właściwości**.
+- Alternatywnie, można wybrać **widoku** > **Eksploratora serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła. Otwórz menu skrótów dla *SampleDatabase.mdf*, a następnie wybierz pozycję **właściwości**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tworzenie tabel i kluczy przy użyciu projektanta tabel
 
 W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wierszy przykładowych danych. Utworzysz też klucz obcy, aby określić, jak rekordy w jednej tabeli odpowiadać rekordom w drugiej tabeli.
 
-### <a name="to-create-the-customers-table"></a>Aby utworzyć tabelę Customers
+### <a name="create-the-customers-table"></a>Tworzenie tabeli Customers
 
 1. W **Eksploratora serwera** lub **Eksplorator obiektów SQL Server**, rozwiń węzeł **połączeń danych** węzła, a następnie rozwiń węzeł **SampleDatabase.mdf**węzła.
 
@@ -108,7 +109,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
     Wprowadzone zmiany są zapisywane w lokalnym pliku bazy danych.
 
-### <a name="to-create-the-orders-table"></a>Aby utworzyć tabelę Orders
+### <a name="create-the-orders-table"></a>Utworzyć tabelę Orders
 
 1. Dodaj inną tabelę, a następnie dodaj wiersz dla każdego wpisu w tabeli poniżej:
 
@@ -133,7 +134,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
     Wprowadzone zmiany są zapisywane w lokalnym pliku bazy danych.
 
-### <a name="to-create-a-foreign-key"></a>Aby utworzyć obcy klucz
+### <a name="create-a-foreign-key"></a>Tworzenie klucza obcego
 
 1. W okienku kontekstowym po prawej stronie siatki, otwórz menu skrótów dla **klucze obce**, a następnie wybierz pozycję **Dodaj nowy klucz obcy**, jak pokazano na poniższej ilustracji.
 
