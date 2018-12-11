@@ -1,5 +1,6 @@
 ---
 title: '&lt;appAddin&gt; — element (Office development w programie Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3160f153bb6775cf5b2541abf4f75069c818f82b
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304875"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248075"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; — element (Office development w programie Visual Studio)
   **AppAddin** elementu `vstov4` przestrzeni nazw są przechowywane informacje dotyczące dostosowywania dotyczące dodatków narzędzi VSTO.  
@@ -45,17 +46,17 @@ ms.locfileid: "52304875"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|**Aplikacja**|Wymagany. Identyfikuje aplikację Microsoft Office. Wartość może być jedną z następujących: programu Excel, InfoPath, Outlook, PowerPoint, projektu, programu Visio lub Word.|  
-|**loadBehavior**|Opcjonalny. Domyślnie **loadBehavior** został włączony przez ustawienie tej wartości. Do debugowania, dodatku narzędzi VSTO można wyłączyć, ustawiając wartość do dwóch. Aby uzyskać więcej informacji, zobacz tabelę o nazwie wartości Loadbehaviour w [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|**keyName**|Wymagany. Ta wartość jest nazwa klucza rejestru, który będzie używany przez aplikację można załadować dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Aplikacja**|Wymagana. Identyfikuje aplikację Microsoft Office. Wartość może być jedną z następujących czynności: Programu Excel, InfoPath, Outlook, PowerPoint, projektu, programu Visio lub programu Word.|  
+|**LoadBehavior**|Opcjonalna. Domyślnie **loadBehavior** został włączony przez ustawienie tej wartości. Do debugowania, dodatku narzędzi VSTO można wyłączyć, ustawiając wartość do dwóch. Aby uzyskać więcej informacji, zobacz tabelę o nazwie wartości Loadbehaviour w [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**keyName**|Wymagana. Ta wartość jest nazwa klucza rejestru, który będzie używany przez aplikację można załadować dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
  **AppAddin** element ma następujących elementów podrzędnych.  
   
-### <a name="friendlyname"></a>friendlyName  
- Opcjonalny. **FriendlyName** element została wyjaśniona w [ &#60;friendlyName&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+### <a name="friendlyname"></a>FriendlyName  
+ Opcjonalna. **FriendlyName** element została wyjaśniona w [ &#60;friendlyName&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>opis  
- Opcjonalny. **Opis** element została wyjaśniona w [ &#60;opis&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+ Opcjonalna. **Opis** element została wyjaśniona w [ &#60;opis&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
  Wymagane tylko dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza. **FormRegions** element została wyjaśniona w [ &#60;formRegions&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  

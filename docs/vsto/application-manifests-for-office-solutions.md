@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9665be31a59de33713f981889bc8cb8a8cb55eea
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744941"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248179"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesty aplikacji dla rozwiązań pakietu Office
   Manifest aplikacji jest plikiem XML, który opisuje zestawów, które są ładowane do rozwiązania Microsoft Office. Użyj narzędzia Microsoft Office development w programie Visual Studio [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schematu manifestu aplikacji zdefiniowane w [manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest) odwołania.  
@@ -85,7 +85,7 @@ ms.locfileid: "50744941"
 |[&#60;dostosowania&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|Wymagana. Przechowuje wszystkie informacje specyficzne dla hosta aplikacji w oddzielnych przestrzeni nazw.|Brak|  
 |[&#60;Dostosowywanie&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|Wymagana. Przechowuje informacje specyficzne dla hosta aplikacji w oddzielnych przestrzeni nazw.|**xmlns**|  
 |[&#60;dokument&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md)|Wymagane tylko w przypadku rozwiązań na poziomie dokumentu. Przechowuje informacje dotyczące dostosowywania.|**solutionId**|  
-|[&#60;appAddin&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Wymagane tylko w przypadku rozwiązań na poziomie aplikacji. Przechowuje informacje dotyczące dostosowywania.|**Aplikacja**<br /><br /> **LoadBehavior**<br /><br /> **Nazwa klucza**|  
+|[&#60;appAddin&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Wymagane tylko w przypadku rozwiązań na poziomie aplikacji. Przechowuje informacje dotyczące dostosowywania.|**Aplikacja**<br /><br /> **LoadBehavior**<br /><br /> **keyName**|  
 |[&#60;friendlyName&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|Opcjonalna. Przechowuje nazwę dodatku narzędzi VSTO dla programów, który pojawia się na liście zainstalowanych dodatków narzędzi VSTO dla programów.|Brak|  
 |[&#60;Opis&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Wymagane tylko dla dodatków narzędzi VSTO. Przechowuje opis, który pojawia się na liście zainstalowanych programów.|Brak|  
 |[&#60;formRegions&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Wymagane tylko dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza.|Brak|  
@@ -93,7 +93,7 @@ ms.locfileid: "50744941"
 |[&#60;vstoruntime —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Wymagana. W tym artykule opisano określonej wersji programu Visual Studio Tools for Office runtime, która jest obsługiwana przez rozwiązania dla pakietu Office.|**Wydania**<br /><br /> **version**<br /><br /> **supportUrl**|  
   
 ## <a name="remarks"></a>Uwagi  
- Możesz ręcznie edytować aplikację i manifesty wdrożenia w rozwiązaniach pakietu Office. Później, musisz ją ponownie podpisać aplikację i manifesty wdrożenia za pomocą narzędzia do edytowania i Manifest Generation (*mage.exe* i *mageui.exe*). Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie manifestów aplikacji i wdrożenia](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Możesz ręcznie edytować aplikację i manifesty wdrożenia w rozwiązaniach pakietu Office. Później, musisz ją ponownie podpisać aplikację i manifesty wdrożenia za pomocą narzędzia do edytowania i Manifest Generation (*mage.exe* i *mageui.exe*). Aby uzyskać więcej informacji, zobacz [jak: Ponowne podpisywanie manifestów aplikacji i wdrożenia](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="file-location"></a>Lokalizacja pliku  
  Manifest aplikacji jest specyficzny dla jednej wersji rozwiązania. Z tego powodu manifestów aplikacji powinny być przechowywane oddzielnie od manifesty wdrożenia. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umieszcza pliki specyficzny dla wersji w podkatalogu nazwanym tak skojarzoną wersję w *pliki aplikacji* podkatalogu w folderze Publikuj.  

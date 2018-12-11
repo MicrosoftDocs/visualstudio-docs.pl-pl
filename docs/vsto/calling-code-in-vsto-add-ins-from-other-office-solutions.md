@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904651"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248101"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office
   Obiekt można ujawnić w dodatku narzędzi VSTO dla programów do innych rozwiązań, w tym inne rozwiązania Microsoft Office. Jest to przydatne, jeśli dodatku narzędzi VSTO dla programów udostępnia usługę, aby włączyć innych rozwiązań do użycia. Na przykład jeśli masz dodatku narzędzi VSTO dla programu Microsoft Office Excel wykonuje obliczenia na dane finansowe z usługi sieci Web, innych rozwiązań wykonać te obliczenia za pośrednictwem wywołania do dodatku narzędzi VSTO dla programu Excel w czasie wykonywania.  
@@ -77,7 +77,7 @@ ms.locfileid: "49904651"
   
    -   Ustaw **Zarejestruj dla współdziałania COM** właściwość w projekcie, w której definiujesz interfejsu. Ta właściwość jest tylko, jeśli chcesz umożliwić klientom na używanie wczesne powiązania do wywołania w dodatku narzędzi VSTO.  
   
-   Poniższy przykład kodu demonstruje `AddInUtilities` klasy `ImportData` metodę, która może być wywoływany przez inne rozwiązania. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   Poniższy przykład kodu demonstruje `AddInUtilities` klasy `ImportData` metodę, która może być wywoływany przez inne rozwiązania. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [instruktażu: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904651"
  Aby uzyskać więcej informacji o używaniu wątków w rozwiązaniach pakietu Office, zobacz [Obsługa wątkowości w Office](../vsto/threading-support-in-office.md).  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Zastąp metodę RequestComAddInAutomationService  
- Poniższy przykład kodu demonstruje sposób zastąpienia <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> w `ThisAddIn` klasy w dodatku VSTO. W przykładzie założono, że zdefiniowano klasę o nazwie `AddInUtilities` , którą chcesz udostępnić innych rozwiązań. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ Poniższy przykład kodu demonstruje sposób zastąpienia <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> w `ThisAddIn` klasy w dodatku VSTO. W przykładzie założono, że zdefiniowano klasę o nazwie `AddInUtilities` , którą chcesz udostępnić innych rozwiązań. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [instruktażu: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904651"
    Sposób, że używasz zwracana wartość właściwości COMAddIn.Object różni się dla klientów VBA i VBA innych klientów. W przypadku klientów spoza procesu dodatkowy kod jest konieczne, aby uniknąć sytuacji wyścigu możliwe.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Uzyskiwanie dostępu do obiektów z rozwiązań VBA  
- Poniższy przykład kodu pokazuje, jak wywołać metodę, która jest uwidaczniany przez dodatku narzędzi VSTO za pomocą języka VBA. To makro VBA wywołuje metodę o nazwie `ImportData` zdefiniowanego w dodatku narzędzi VSTO dla programów, który nosi nazwę **ExcelImportData**. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ Poniższy przykład kodu pokazuje, jak wywołać metodę, która jest uwidaczniany przez dodatku narzędzi VSTO za pomocą języka VBA. To makro VBA wywołuje metodę o nazwie `ImportData` zdefiniowanego w dodatku narzędzi VSTO dla programów, który nosi nazwę **ExcelImportData**. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [instruktażu: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -147,9 +147,9 @@ utilities.ImportData();
   
 ## <a name="see-also"></a>Zobacz także  
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
- [Wskazówki: Wywoływanie kodu w dodatku narzędzi VSTO dla programów z VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [Wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
- [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   

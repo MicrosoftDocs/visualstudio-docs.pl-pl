@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813850"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248286"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 
@@ -39,7 +39,7 @@ To polecenie tworzy projekt z pustym *skryptu. R* plik jest otwarty w edytorze. 
 
 *Rproject.rproj* pliku zachowuje niektóre ustawienia projektu specyficzne dla języka R, które w przeciwnym razie nie są zarządzane przez program Visual Studio:
 
-| Właściwość | Domyślny | Opis |
+| Właściwość | Domyślne | Opis |
 | --- | --- | --- |
 | Wersja | 1.0 | Wersja R Tools for Visual Studio używane do tworzenia projektu. |
 | RestoreWorkspace | Domyślny | Automatyczne ładowanie poprzedniej zmienne obszaru roboczego z `.RData` pliku w katalogu projektu. |
@@ -63,7 +63,7 @@ Jeśli masz istniejące foldery *. R* pliki, które mają być zarządzane w pro
 
 ## <a name="project-properties"></a>Właściwości projektu
 
-Aby otworzyć na stronach właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, lub wybierz **projektu > właściwości (nazwa projektu)* element menu. W otwartym oknie Wyświetla właściwości projektu:
+Aby otworzyć na stronach właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, lub wybierz **projektu > właściwości (nazwa projektu)** menu element. W otwartym oknie Wyświetla właściwości projektu:
 
 
 | Tab | Właściwość | Opis | 

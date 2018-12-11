@@ -14,19 +14,19 @@ ms.tgt_pltfrm: NA
 ms.workload: NA
 ms.date: 05/21/2018
 ms.author: mlearned
-ms.openlocfilehash: 584faff1c09e6d345d7e166616a9036da2223b51
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a033f60d636be8d1e093bf06ee757e0520368a53
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673769"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248184"
 ---
-# <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET do rejestru kontenerów przy użyciu programu Visual Studio
+# <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET w rejestrze kontenerów przy użyciu programu Visual Studio
 ## <a name="overview"></a>Omówienie
 Docker to aparat uproszczone kontenera, podobne pod pewnymi względami na maszynę wirtualną, której można użyć do hostowania aplikacji i usług.
 Ten samouczek przeprowadzi Cię przez publikowanie konteneryzowaną aplikację przy użyciu programu Visual Studio [usługi Azure Container Registry](https://azure.microsoft.com/services/container-registry).
 
-Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) przed przystąpieniem do wykonywania.
+Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpłatne konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 Do ukończenia tego samouczka:
@@ -50,10 +50,12 @@ Poniższe kroki prowadzą przez proces tworzenia podstawowej aplikacji platformy
     | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Unikatowa nazwa identyfikująca rejestru kontenerów. |
     | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure do użycia. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której chcesz utworzyć rejestru kontenerów. Wybierz **New** do tworzenia nowej grupy zasobów.|
-    | **[JEDNOSTKA SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa | Warstwy usługi container Registry  |
+    | **[JEDNOSTKA SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa (Standard) | Warstwy usługi container Registry  |
     | **Lokalizacja w rejestrze** | Bliską lokalizację | Wybierz lokalizację w [region](https://azure.microsoft.com/regions/) okolicy lub w pobliżu innych usług używających usługi container registry. |
+
     ![Visual Studio utworzyć okno dialogowe usługi Azure Container Registry][0]
-5. Kliknij przycisk **tworzenie**
+
+5. Kliknij przycisk **Utwórz**.
 
 Możesz teraz ściągnąć kontenera z rejestru na dowolnym hoście może uruchamiać obrazy Docker, na przykład [usługi Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 

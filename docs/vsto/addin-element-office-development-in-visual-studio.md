@@ -1,5 +1,6 @@
 ---
 title: '&lt;Dodatek&gt; — element (Office development w programie Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 06c3941e73ee1825d1dc0f593bd3aa6563c511df
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304470"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247984"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;Dodatek&gt; — element (Office development w programie Visual Studio)
   **Dodatek** elementu `vstav3` przestrzeń nazw zawiera informacje, które są specyficzne dla dodatków narzędzi VSTO dla programu Microsoft Office i dostosowań poziomu dokumentu przygotowane w programie Visual Studio.  
@@ -59,16 +60,16 @@ ms.locfileid: "52304470"
  `addin` Element ma następujących elementów podrzędnych.  
 
 ### <a name="entrypoints"></a>punkty wejścia  
- Wymagany. **Punkty wejścia** element jest opisana w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Wymagana. **Punkty wejścia** element jest opisana w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
 
 ### <a name="update"></a>Aktualizacja  
- Wymagany. **Aktualizacji** element jest opisana w [ &#60;aktualizacji&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+ Wymagana. **Aktualizacji** element jest opisana w [ &#60;aktualizacji&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
 
 ### <a name="postactions"></a>postactions —  
- Opcjonalny. **Postactions —** element jest opisana w [ &#60;postactions —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ Opcjonalna. **Postactions —** element jest opisana w [ &#60;postactions —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
 
 ### <a name="application"></a>aplikacja  
- Wymagany. **Aplikacji** element jest opisana w [ &#60;aplikacji&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+ Wymagana. **Aplikacji** element jest opisana w [ &#60;aplikacji&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
 

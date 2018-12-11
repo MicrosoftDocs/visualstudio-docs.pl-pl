@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846892"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248127"
 ---
 # <a name="cache-data"></a>Dane w pamięci podręcznej
   Może buforować obiekty danych w dostosowaniu na poziomie dokumentu, dzięki czemu dane są dostępne w trybie offline lub bez konieczności otwierania programu Microsoft Office Word lub Microsoft Office Excel. Buforowanie obiektu, obiekt musi mieć typ danych, który spełnia określone wymagania. Wiele standardowe typy danych w programie .NET Framework spełniają te wymagania, w tym <xref:System.String>, <xref:System.Data.DataSet>, i <xref:System.Data.DataTable>.  
@@ -31,9 +31,9 @@ ms.locfileid: "49846892"
   
  Istnieją dwa sposoby, aby dodać obiekt do pamięci podręcznej danych:  
   
-- Aby dodać obiekt do pamięci podręcznej danych, podczas kompilowania rozwiązania, należy zastosować <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutu deklaracja obiektu. Aby uzyskać więcej informacji, zobacz [porady: dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+- Aby dodać obiekt do pamięci podręcznej danych, podczas kompilowania rozwiązania, należy zastosować <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutu deklaracja obiektu. Aby uzyskać więcej informacji, zobacz [jak: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
-- Aby programowo dodać obiekt do pamięci podręcznej danych w czasie wykonywania, należy użyć `StartCaching` metoda hosta elementów, takich jak `ThisDocument` lub `ThisWorkbook` klasy. Aby uzyskać więcej informacji, zobacz [porady: programowane buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+- Aby programowo dodać obiekt do pamięci podręcznej danych w czasie wykonywania, należy użyć `StartCaching` metoda hosta elementów, takich jak `ThisDocument` lub `ThisWorkbook` klasy. Aby uzyskać więcej informacji, zobacz [jak: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
   Po dodaniu obiektu do pamięci podręcznej danych można uzyskać dostęp i modyfikować dane w pamięci podręcznej bez konieczności uruchamiania programu Word lub Excel. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).  
   
@@ -79,7 +79,7 @@ ms.locfileid: "49846892"
 ## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Utrwalanie zmian w dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem  
  Jeśli użytkownik buforowania obiektów danych w dokumencie, który jest chroniony hasłem, zmiany w buforowanych danych nie są zapisywane. Aby zapisać zmiany na dane w pamięci podręcznej, zastępowanie dwie metody. Zastąpienie tych metod umożliwiających tymczasowe usunięcie ochrony, gdy dokument zostanie zapisany, a następnie ponownie Zastosuj ochronę po zapisu operacja została zakończona.  
   
- Aby uzyskać więcej informacji, zobacz [porady: dane w dokumentach zabezpieczonych hasłem z pamięci podręcznej](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Buforowanie danych w dokumentach zabezpieczonych hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Zapobieganie utracie danych podczas dodawania wartości null do pamięci podręcznej danych  
  Podczas dodawania obiektów do buforowania danych, wszystkie obiekty w pamięci podręcznej musi zostać zainicjowany do innej niż**null** wartość przed dokument zostanie zapisany i zamknięte. Jeśli ma dowolnego obiektu w pamięci podręcznej **null** wartości, gdy dokument zostanie zapisany i zamknięte, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] spowoduje automatyczne usunięcie wszystkich buforowanych obiektów z pamięci podręcznej danych.  
@@ -87,9 +87,9 @@ ms.locfileid: "49846892"
  W przypadku dodania obiektu z **null** wartość do pamięci podręcznej danych przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutu w czasie projektowania, można użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> obiekty klasy, aby zainicjować dane w pamięci podręcznej, przed otwarciem dokumentu. Jest to przydatne, jeśli chcesz zainicjować pamięci podręcznej danych na serwerze bez programu Word lub Excel zainstalowany, przed otwarciem dokumentu przez użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Porady: programowane buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Porady: buforowania danych w dokumentach zabezpieczonych hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Instrukcje: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Instrukcje: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Wskazówki: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   
