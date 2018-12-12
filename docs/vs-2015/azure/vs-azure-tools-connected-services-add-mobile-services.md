@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: ecd49a239df2e219693494d709e8f537078c4978
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5192dcd2a19904db1c97136f41e1e6a1af112a95
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065350"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307653"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Dodawanie usługi Mobile Services za pomocą programu Visual Studio podłączone usługi
 Za pomocą programu Visual Studio 2015, możesz nawiązać połączenie przy użyciu usług Azure Mobile Services **Dodaj podłączoną usługę** okna dialogowego. Możesz połączyć się z dowolnej aplikacji klienckiej języka C#, dowolnej aplikacji JavaScript lub aplikacji Cordova dla wielu platform. Po nawiązaniu połączenia, można utworzyć i uzyskać dostęp do danych, tworzenie niestandardowych interfejsów API i zaplanowane zadania lub dodawać obsługę powiadomień wypychanych.  Operacja usług połączonych dodaje wszystkie odpowiednie odwołania i kod połączenia. Możesz również korzystać z zalet wbudowanej obsługi uwierzytelniania przy użyciu różnych popularnych schematów tożsamości, takiego jak Azure AD, Facebook, Twitter i Accounts firmy Microsoft.
@@ -49,7 +49,7 @@ Nawiązać połączenia z usług Azure Mobile Services w poniższych typów proj
 
     Aby utworzyć nowe konto usługi mobilnej:
 
-   1. Wybierz pozycję ** żądania utworzenia usługi ** widocznego u dołu okna dialogowego.
+   1. Wybierz **żądania utworzenia usługi** widocznego u dołu okna dialogowego.
        ![Dodawanie nowej połączonej usługi mobilnej](./media/vs-azure-tools-connected-services-add-mobile-services/IC797637.png)
    2. Na **Tworzenie usługi mobilnej** okno dialogowe, można wybrać usługi mobilnej zaplecza JavaScript lub usługi mobilnej zaplecza platformy .NET z **środowiska uruchomieniowego** listy rozwijanej.
 
@@ -70,7 +70,7 @@ Jak program Visual Studio modyfikuje projekt zależy od typu projektu. Dla języ
 ## <a name="next-steps"></a>Następne kroki
 Zadawanie pytań i uzyskiwanie pomocy:
 
-* [MSDN Forum: Azure Mobile Services](https://social.msdn.microsoft.com/forums/azure/home?forum=azuremobile)
+* [MSDN Forum: Usług Azure Mobile Services](https://social.msdn.microsoft.com/forums/azure/home?forum=azuremobile)
 * [Usług Azure Mobile Services w blogu zespołu programu Microsoft Azure](https://azure.microsoft.com/blog/topics/mobile/)
 * [Usług Azure Mobile Services w witrynie azure.microsoft.com](https://azure.microsoft.com/services/mobile-services/)
 * [Dokumentacja usług Azure Mobile Services w witrynie azure.microsoft.com](https://azure.microsoft.com/documentation/services/mobile-services/)
