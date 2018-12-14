@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 91204ea5b4303b38397d90761fd9648159174dd4
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667057"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348402"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Narzędzia języka R dla programu Visual Studio — Zapraszamy
 
@@ -29,7 +29,7 @@ Dziękujemy za zainstalowanie narzędzia R Tools for Visual Studio (RTVS)! Spraw
 - [Jak zainstalować narzędzia języka R dla programu Visual Studio](installing-r-tools-for-visual-studio.md)
 - [Przesyłaj i Przeglądaj usterki i sugestie funkcji na GitHib](https://github.com/Microsoft/RTVS/issues)
 - [Eksploruj i Współtworzenie kodu źródłowego](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
-- Aby wysłać opinię, bez korzystania z usługi Github (czyli preferowany), należy użyć **R Tools > opinii** menu w programie Visual Studio.
+- Aby wysłać opinię, bez korzystania z usługi GitHub (czyli preferowany), należy użyć **R Tools > opinii** menu w programie Visual Studio.
 
 ## <a name="microsoft-r-distributions"></a>Microsoft R dystrybucji
 

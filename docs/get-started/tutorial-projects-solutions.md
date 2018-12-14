@@ -9,18 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4967f687f214e544aa65526144803ce31e99d7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 089060f8afc4f735f4fe2e27b956cacff3e1b892
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159337"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348449"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Dowiedz się więcej o projekty i rozwiązania
 
-W tym artykule wprowadzające przedstawimy wyjaśniono tworzenie *rozwiązania* i *projektu* w programie Visual Studio. To rozwiązanie jest kontenerem, który służy do organizowania co najmniej jeden projekt powiązany kod, na przykład biblioteki klas i odpowiadający mu projekt testu. Omówimy właściwości projektu i niektórych plików, który może zawierać. Również utworzymy odwołanie z jednego projektu do drugiego.
+W tym artykule wprowadzające przedstawimy wyjaśniono tworzenie *rozwiązania* i *projektu* w programie Visual Studio. To rozwiązanie jest kontenerem, który służy do organizowania jeden lub więcej powiązanych projektów kodu, na przykład projekt biblioteki klas i odpowiedniego projektu testowego. Omówimy właściwości projektu i niektórych plików, który może zawierać. Również utworzymy odwołanie z jednego projektu do drugiego.
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+> [!TIP]
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 Firma Microsoft będzie konstruowania rozwiązania i projektu od podstaw w charakterze edukacyjnym ćwiczenia zrozumienie pojęcia projektu. Ogólne korzystający z programu Visual Studio, prawdopodobnie użyjesz niektóre z projektu różne *szablony* , program Visual Studio oferuje podczas tworzenia nowego projektu.
 
@@ -29,7 +30,7 @@ Firma Microsoft będzie konstruowania rozwiązania i projektu od podstaw w chara
 
 ## <a name="solutions-and-projects"></a>Rozwiązania i projekty
 
-Rozwiązania są kontenerów używanych przez program Visual Studio do organizowania jeden lub więcej powiązanych projektów. Po otwarciu rozwiązania w programie Visual Studio automatycznie ładuje wszystkie projekty, które zawiera.
+Pomimo swojej nazwy rozwiązania nie jest "" (odpowiedź). To rozwiązanie jest po prostu kontener używane przez program Visual Studio do organizowania, jeden lub więcej powiązanych projektów. Po otwarciu rozwiązania w programie Visual Studio automatycznie ładuje wszystkie projekty, które zawiera rozwiązania.
 
 ### <a name="create-a-solution"></a>Tworzenie rozwiązania
 

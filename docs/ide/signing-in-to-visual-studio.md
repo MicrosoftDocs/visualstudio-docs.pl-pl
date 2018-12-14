@@ -1,9 +1,10 @@
 ---
 title: Logowanie do programu Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2e72205708ca5114c5757e9d122230af7af13d94
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159857"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348384"
 ---
 # <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
@@ -27,7 +28,7 @@ Możesz spersonalizować i poprawić komfort programowania w programie Visual St
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Dlaczego powinienem się zarejestrować w usłudze Visual Studio?
 
-Po zalogowaniu, możesz wzbogacić środowisko programu Visual Studio. Na przykład po możesz się zarejestrować, można synchronizację ustawień między urządzeniami, Rozszerz wersję próbną i automatycznie połączyć się z usługą platformy Azure w kilka.
+Po zalogowaniu, możesz wzbogacić środowisko programu Visual Studio. Na przykład po zalogowaniu możesz [synchronizację ustawień](synchronized-settings-in-visual-studio.md) na urządzeniach, Rozszerz wersję próbną i automatycznie połączyć się z usługą platformy Azure w kilka.
 
 Poniżej przedstawiono pełną listę można oczekiwać, i co można zrobić, po zalogowaniu się w:
 
@@ -70,6 +71,6 @@ Jeśli wystąpią problemy podczas logowania, zobacz [konta pomocy technicznej](
 ## <a name="see-also"></a>Zobacz także
 
 * [Jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Środowisko IDE programu Visual Studio — przegląd](../get-started/visual-studio-ide.md)
+* [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
 * [Zaloguj się (Visual Studio dla komputerów Mac)](/visualstudio/mac/signing-in)
 * [Aktywacja (Visual Studio dla komputerów Mac)](/visualstudio/mac/activation)

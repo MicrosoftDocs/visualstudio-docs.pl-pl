@@ -1,6 +1,6 @@
 ---
 title: Publikowanie usług IIS przez importowanie ustawień publikowania
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: Tworzenie i importowanie profilu publikowania, aby wdrożyć aplikację w programie Visual Studio w usługach IIS
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808468"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348511"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usługach IIS przez importowanie ustawień publikowania w programie Visual Studio
 
@@ -41,7 +41,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 * Konieczne jest posiadanie programu Visual Studio 2017 i **ASP.NET** i **.NET Framework** pakiet roboczy programowania. Dla aplikacji platformy .NET Core, należy również **platformy .NET Core** obciążenia.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 * Aby wygenerować plik ustawień publikowania za pomocą programu IIS, musisz mieć komputer z systemem Windows Server 2012 lub Windows Server 2016 i musi mieć rolę serwera sieci Web usług IIS, poprawnie skonfigurowany. Należy także zainstalować program ASP.NET 4.5 lub ASP.NET Core. Dla platformy ASP.NET Core, zobacz [publikowania w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Przez funkcję ASP.NET 4.5, zobacz [3.5 przy użyciu platformy ASP.NET w programie IIS 8.0 i program ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 

@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: db576170443952a3090d57fc8046b34428cc8095
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159675"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348339"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -56,7 +56,7 @@ W programie Visual Studio, plik projektu jest używany przez **Eksploratora rozw
 
 ## <a name="solutions"></a>Rozwiązania
 
-Projekt jest zawarty w *rozwiązania*. To rozwiązanie zawiera jeden lub więcej powiązanych projektów, oraz informacje o kompilacji, ustawienia okna programu Visual Studio i różne pliki, które nie są skojarzone z określonym projektem. To rozwiązanie jest opisany przez plik tekstowy (rozszerzenie *.sln*) swój własny unikatowy format; nie mają być edytowane ręcznie.
+Projekt jest zawarty w *rozwiązania*. Pomimo swojej nazwy rozwiązania nie jest "" (odpowiedź). Jest po prostu kontener dla jednego lub kilku powiązanych projektów, oraz informacje o kompilacji, ustawienia okna programu Visual Studio i różne pliki, które nie są skojarzone z określonym projektem. To rozwiązanie jest opisany przez plik tekstowy (rozszerzenie *.sln*) swój własny unikatowy format; go ma nie powinny być edytowane ręcznie.
 
 Program Visual Studio używa dwóch typów plików (*.sln* i *.suo*) do przechowywania ustawień rozwiązania:
 
