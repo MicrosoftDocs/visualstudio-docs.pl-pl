@@ -22,59 +22,57 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8487d90c41d4ab98ce3b8456a5347994188ebb31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc369162c4bb81b7cda7487bd9149aad7493d2fb
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948577"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388416"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opcje, edytor tekstu, wszystkie języki, karty
-To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia dotyczą również inne edytory oparte na kodzie edytora, takiego jak projektanta HTML widoku źródła. Aby wyświetlić te opcje, zaznacz **opcje** z **narzędzia** menu. W ramach **Edytor tekstu** rozwiń folder **wszystkie języki** podfolderu, a następnie wybierz pozycję **karty**.
+
+To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** rozwiń folder **wszystkie języki** podfolder, a następnie wybierz **karty**.
 
 > [!CAUTION]
-> Ta strona Ustawia opcje domyślne dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji w tym oknie dialogowym przywróci Opcje kart we wszystkich językach, niezależnie od opcji wybrano tutaj. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla tego języka i wybierz strony jej opcji.
+> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci Opcje kart we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.
 
-
- Jeśli nie wybrano różne ustawienia na stronach Opcje kart dla określonych języków programowania, a następnie komunikat "Ustawienia wcięć dla pojedynczych tekst formatów będących w konflikcie ze sobą", nie będą wyświetlane różniących się **Indenting**opcje; i zostanie wyświetlony komunikat "Ustawienia tabulacji dla pojedynczych tekst formatów będących w konflikcie ze sobą,", dla różniących się **kartę** opcje. Na przykład to przypomnienie jest wyświetlana, jeśli **inteligentne wcięcie** wybrano opcję dla programu Visual Basic, ale **zablokować wcięcia** jest zaznaczona w języku Visual C++.
-
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+W przypadku różnych ustawień na stronach opcji karty dla określonych języków programowania, a następnie komunikat "Ustawienia wcięć dla pojedynczych tekstu formatów będących w konflikcie ze sobą" jest wyświetlana dla różniących się **Indenting**opcje; i wyświetlany jest komunikat "Ustawienia tabulacji dla pojedynczych tekstu formatów będących w konflikcie ze sobą," dla różniących się **kartę** opcje. Na przykład tego monitu jest wyświetlana, jeśli **inteligentnego wcięcia** opcja jest zaznaczona dla języka Visual Basic, ale **Block wcięcia** został wybrany do Visual C++.
 
 ## <a name="indenting"></a>Wcięcia
- Brak
 
- Po wybraniu nowych wierszy nie są przeznaczone. Punkt wstawiania znajduje się w pierwszej kolumnie znakiem nowego wiersza.
+Brak
 
- Blok
+Po wybraniu nowe wiersze są nie będą wcięte. Punkt wstawiania znajduje się w pierwszej kolumnie znakiem nowego wiersza.
 
- Po wybraniu nowych wierszy tworzone jest wcięcie automatycznie. Punkt wstawiania znajduje się w tym samym punkcie wyjścia w poprzednim wierszu.
+Blok
 
- Inteligentne
+Po wybraniu nowych wierszy tworzone jest wcięcie automatycznie. Punkt wstawiania znajduje się w tym samym punkcie wyjścia, jak poprzedni wiersz.
 
- Po wybraniu nowe wiersze są pozycjonowane do kontekstu kodu na inny kod formatowania ustawienia i konwencje IntelliSense dla danego języka programowania. Ta opcja nie jest dostępny dla wszystkich języków programowania.
+Inteligentne
 
- Na przykład wiersze ujętą nawiasu otwierającego ({}) i zamykający nawias klamrowy (}) mogą być automatycznie wcięty dodatkowe tabulatora od położenia wyrównany nawiasów klamrowych.
+Po wybraniu nowe wiersze są umieszczone w celu dopasowania kontekst kodu według innych kodów formatowania, ustawienia i konwencje technologii IntelliSense dla języka programowania. Ta opcja nie jest dostępny dla wszystkich języków programowania.
+
+Na przykład wiersze ujęte w nawias klamrowy otwierający ({}) i zamykający nawias klamrowy (}) może być automatycznie wcięty dodatkowe tabulatora od pozycji wyrównany nawiasów klamrowych.
 
 ## <a name="tabs"></a>Karty
- Rozmiar tabulatora
 
- Ustawia odległość w spacji między kartę zatrzymuje. Wartość domyślna to czterech spacji.
+Rozmiar tabulatora
 
- Wcięcie
+Ustawia odległość w spacji między kartę zatrzymuje. Wartość domyślna to cztery miejsca do magazynowania.
 
- Umożliwia ustawienie rozmiaru w funkcji miejsca do automatycznego wcięcia. Wartość domyślna to czterech spacji. Znaki tabulacji, znaków spacji lub obu zostanie wstawiony do wypełnienia określonego rozmiaru.
+Wcięcie
 
- Wstawiaj odstępy
+Określa rozmiar w obszarach automatyczne wcięcia. Wartość domyślna to cztery miejsca do magazynowania. Znaki tabulacji i/lub spacjami zostanie wstawiony do wypełnienia określonego rozmiaru.
 
- Po wybraniu wcięcie operacji insert tylko znaki spacji, nie znaki TABULACJI. Jeśli **wcięcie rozmiar** jest ustawiony na 5, na przykład, następnie pięć znaków spacji są wstawiane po naciśnięciu klawisza TAB lub **Zwiększ wcięcie** znajdującego się na **formatowanie** pasek narzędzi.
+Wstawiaj odstępy
 
- Utrzymaj tabulacje
+Po wybraniu operacji wcięcie wstawić tylko znaki spacji, nie znaki TABULACJI. Jeśli **wcięcie** jest ustawiony na 5, na przykład, następnie pięć znaków spacji są wstawiane po naciśnięciu klawisza TAB lub **Zwiększ wcięcie** znajdujący się na **formatowanie** pasek narzędzi.
 
- Po wybraniu wcięcie operacji insert dowolną liczbę znaków TABULACJI jak to możliwe. Każdy znak TABULACJI wypełnia liczbę spacji określone w **Rozmiar tabulatora**. Jeśli **wcięcie rozmiar** nie jest wielokrotnością **Rozmiar tabulatora**, spacje są dodawane do wypełnienia różnicy.
+Utrzymaj tabulacje
 
-## <a name="see-also"></a>Zobacz też
+Po wybraniu operacji wcięcie Wstaw tyle znaków TABULACJI jak to możliwe. Każdy znak TABULACJI Wstawia liczbę spacji określoną w **wielkość tabulatora**. Jeśli **wcięcie** nie jest całkowitą wielokrotnością **wielkość tabulatora**, spacje są dodawane do Wypełnij różnica.
 
-- [Opcje, Edytor tekstu, wszystkie języki](../../ide/reference/options-text-editor-all-languages.md)
-- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Opcje, Edytor tekstów, Wszystkie języki](../../ide/reference/options-text-editor-all-languages.md)
+- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

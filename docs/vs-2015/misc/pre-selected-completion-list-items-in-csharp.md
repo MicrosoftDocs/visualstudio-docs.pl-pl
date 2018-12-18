@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: 72effcf5-7251-4638-869a-e1bf9bc02e8b
 caps.latest.revision: 8
 author: BillWagner
-ms.author: billchi
+ms.author: wiwagn
 manager: douge
-ms.openlocfilehash: 081cd296f80518a4074a287efbac686e3c3f74d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa380249980701c35915ae8a742fd63bed55964f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224669"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721475"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>Wstępnie wybrane listy uzupełniania w C# #
 Ta zawartość została przeniesiona do [listy uzupełniania w języku C#](../misc/completion-lists-in-csharp.md)

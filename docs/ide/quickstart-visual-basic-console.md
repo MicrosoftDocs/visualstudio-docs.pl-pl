@@ -1,9 +1,9 @@
 ---
-title: 'Szybki Start: Tworzenie pierwszej aplikacji konsoli w programie Visual Studio za pomocą Visual Basic'
+title: Utwórz swoją pierwszą aplikację konsoli za pomocą Visual Basic
 description: Dowiedz się, jak utworzyć prostą aplikację konsoli Hello World w programie Visual Studio za pomocą Visual Basic, który krok po kroku.
-ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
@@ -14,14 +14,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623965"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159610"
 ---
-# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie pierwszej aplikacji konsoli w programie Visual Studio za pomocą Visual Basic
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Utwórz swoją pierwszą aplikację konsoli w programie Visual Studio za pomocą Visual Basic
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz prostą aplikację języka Visual Basic, która działa na konsoli.
 

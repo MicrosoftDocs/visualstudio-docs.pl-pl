@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893432"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295985"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Wskazówki: Tworzenie rozszerzenia projektu SharePoint
   W tym instruktażu pokazano, jak można utworzyć rozszerzenia dla projektów programu SharePoint. Rozszerzenie projektu można użyć w celu reagowania na zdarzenia na poziomie projektu na przykład w przypadku projektu jest dodane, usunięte lub zmieniono jego nazwę. Można również dodać właściwości niestandardowe lub reagować po zmianie wartości właściwości. W przeciwieństwie do rozszerzenia elementu projektu projektu rozszerzenia nie może być skojarzony z określonego typu projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenia ładuje po otwarciu dowolnego rodzaju projektu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -131,7 +131,7 @@ ms.locfileid: "49893432"
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera plik w Projektancie manifestu. Informacje wyświetlane w **metadanych** karta pojawia się również w **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymagają pliku extension.vsixmanifest. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera plik w Projektancie manifestu. Informacje wyświetlane w **metadanych** karta pojawia się również w **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymagają pliku extension.vsixmanifest. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  W **nazwa produktu** wprowadź **niestandardowa właściwość projektu**.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "49893432"
 6.  W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Ta wartość odpowiada `MEFComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Ta wartość odpowiada `MEFComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu** przycisku opcji.  
   

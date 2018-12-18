@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się, jak do testowania kodu przy użyciu aktywnego testu jednostkowego w programie Visual Studio 2017 | Dokumentacja firmy Microsoft
+title: Dowiedz się, jak przetestować kod na żywo 2017 Test jednostki | Dokumentacja firmy Microsoft
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8908b592283f81d8c60a2adb93c12af3f5e61ba7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008424"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056788"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z usługą Live Unit Testing w programie Visual Studio
 

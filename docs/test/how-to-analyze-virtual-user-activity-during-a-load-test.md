@@ -1,5 +1,5 @@
 ---
-title: Analizowanie aktywności wirtualnego użytkownika testów obciążenia w programie Visual Studio
+title: Analizowanie aktywności wirtualnego użytkownika testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +10,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881706"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059525"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
 Wyświetl aktywność wirtualnego użytkownika skojarzonego z testu obciążenia przy użyciu **wykres aktywności wirtualnych użytkowników**. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. **Wykres aktywności wirtualnych użytkowników** dowiesz się, dokładnie co każdy użytkownik wirtualny był wykonywany podczas testu. Można widać wzorce aktywności użytkowników, wzorce obciążenia, korelowanie testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. **Wykres aktywności wirtualnych użytkowników** jest dostępna tylko w przypadku, po zakończeniu testu obciążenia.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Poniższe procedury pokazują, jak wyświetlić **wykres aktywności wirtualnych użytkowników**, jak Zbadaj działania konkretnego użytkownika i jak używać filtrowania.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Aby wyświetlić wykres aktywności wirtualnych użytkowników w wyniki testu obciążenia
 
-1.  Aby wyświetlić dane użytkowników wirtualnych, należy najpierw skonfigurować **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwość, która jest skojarzona z testu obciążenia. Następnie uruchom test obciążenia. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności wirtualnych użytkowników](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Aby wyświetlić dane użytkowników wirtualnych, należy najpierw skonfigurować **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwość, która jest skojarzona z testu obciążenia. Następnie uruchom test obciążenia.
 
 2.  Po załadowaniu usługi przebiegów testów, zostanie wyświetlona strona podsumowania wyników testu. Wybierz **szczegółów użytkownika** przycisk na pasku narzędzi.
 

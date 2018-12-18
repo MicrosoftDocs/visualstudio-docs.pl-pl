@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33f44051025310072972ef3c15a1d4a4325c0efe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820905"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896578"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci Web lub aplikacji w teście obciążenia przy użyciu modelu testu mieszanego
 
 Załaduj opcje modelowania umożliwia bardziej dokładnie przewidzieć oczekiwane wykorzystanie w świecie rzeczywistym witryny sieci Web lub aplikacji, które obciążenia testujesz. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na dokładne ładowanie modelu można wygenerować wyświetlenie nieprawdziwych wyników.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-enhancements"></a>Test mieszany modelu rozszerzeń
 

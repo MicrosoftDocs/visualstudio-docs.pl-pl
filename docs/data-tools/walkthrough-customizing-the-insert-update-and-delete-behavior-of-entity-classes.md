@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174982"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305536"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Wskazówki: Dostosowywanie insert, update i zachowanie dotyczące usuwania dla klas jednostek
 
@@ -75,7 +75,7 @@ Ponieważ jesteś Praca z technologią LINQ do klas SQL i wyświetlanie danych w
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń **Visual C#**  lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
 
 3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
 
@@ -108,7 +108,7 @@ Tworzenie typu LINQ do klas SQL, które są mapowane do tabel bazy danych, przec
 
 3.  Na **kompilacji** menu, kliknij przycisk **kompilacji UpdatingwithSProcsWalkthrough** do skompilowania projektu.
 
-4.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+4.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 5.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
 

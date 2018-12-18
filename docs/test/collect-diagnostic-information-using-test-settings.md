@@ -1,5 +1,5 @@
 ---
-title: Zbieranie informacji diagnostycznych za pomocą ustawień testów w programie Visual Studio
+title: Zbieranie informacji diagnostycznych za pomocą ustawień testów
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865352"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895213"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Zbieranie informacji diagnostycznych za pomocą ustawień testów
 
@@ -32,6 +32,8 @@ Możesz użyć *ustawienia testu* w programie Visual Studio, aby zbierać dodatk
 -   Zbieranie danych IntelliTrace aby pomóc wyizolować nieodtwarzalne błędy
 
 Adaptery danych diagnostycznych można również zmienić zachowanie na komputerze testowym. Na przykład za pomocą ustawień testów w programie Visual Studio, możesz emulować różnych wąskich gardeł topologii sieci do oceny wydajności aplikacji zespołu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Ustawienia testu za pomocą programu Visual Studio
 

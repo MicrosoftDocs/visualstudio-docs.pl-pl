@@ -24,7 +24,7 @@ Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomag
   
  To okno Historia pikseli:  
   
- ![Piksel z trzech zdarzeń Direct3D w jego historii. ] (media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Piksel z trzech zdarzeń Direct3D w jego historii. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Opis okno Historia pikseli  
  Korzystając z historii pikseli, można analizować wpływ piksel określonego obiektu docelowego renderowania Direct3D zdarzeń w ramce. Problem z renderowaniem do określonego zdarzenia Direct3D, nawet jeśli kolejne zdarzenia można wyznaczyć — albo pierwotnych kolejnych w tym samym zdarzeniu — zmienić kolor końcowy pikseli w dalszym ciągu. Na przykład piksel może być renderowane niepoprawnie i następnie zasłonięty przez inny, półprzezroczyste pikseli, aby ich kolorów są mieszane razem w obiektu. Tego rodzaju problem jest trudna do diagnozowania, jeśli masz tylko zawartość końcowego obiektu docelowego renderowania prowadzące.  
@@ -42,9 +42,9 @@ Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomag
   
 |Ikona|Przyczynę wykluczenia|  
 |----------|--------------------------|  
-|![Ikona Błąd testu głębokość. ] (media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Piksel został wykluczony, ponieważ nie test głębi.|  
-|![Ikona Błąd test przycinania. ] (media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Piksel został wykluczony, ponieważ nie test przycinania.|  
-|![Ikona Błąd test wzornika. ] (media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Piksel został wykluczony, ponieważ test wzornika nie.|  
+|![Ikona Błąd testu głębokość. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Piksel został wykluczony, ponieważ nie test głębi.|  
+|![Ikona Błąd test przycinania. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Piksel został wykluczony, ponieważ nie test przycinania.|  
+|![Ikona Błąd test wzornika. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Piksel został wykluczony, ponieważ test wzornika nie.|  
   
 ### <a name="draw-call-exclusion"></a>Wyłączenie wywołanie rysowania  
  W przypadku wszystkich elementów podstawowych do rysowania wywołania są wykluczone z wpływających na obiektu docelowego renderowania, ponieważ się one zakończyć niepowodzeniem testu, nie można rozwijać wywołanie rysowania i ikonę, która odpowiada przyczynę wykluczenia jest wyświetlany obok niej. Powody wykluczenia wywołanie rysowania przypominać powody wykluczenia pierwotnych, a ich ikony są podobne.  

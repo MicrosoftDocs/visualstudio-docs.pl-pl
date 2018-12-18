@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fd6f8befce66a117f5f2dcb598a7359ba9c15c0
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882395"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307648"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trenowanie modeli sztucznej Inteligencji w usłudze Azure Batch AI
 
@@ -50,11 +50,11 @@ Jest zintegrowany z Visual Studio Tools dla sztucznej Inteligencji, dzięki czem
 
     ![Galeria przykładów](media/train-model/tensorflowexamples.png)
 
-7. Zestaw mnist ręcznie ZAPISANYCH projektu jako ** projekt startowy **
+7. Zestaw mnist ręcznie ZAPISANYCH projektu jako **projekt startowy**
 
     ![Galeria przykładów](media/train-model/mnist-startup.png)
 
-8. <strong>Kliknij prawym przyciskiem myszy ** projektu mnist ręcznie ZAPISANYCH ** Prześlij zadanie</strong>
+8. <strong>Kliknij prawym przyciskiem myszy **projektu mnist ręcznie ZAPISANYCH** **Prześlij zadanie**</strong>
 
     ![Galeria przykładów](media/train-model/submit-job.png)
 9. Wybierz swoje **usługi Azure Batch AI** klastra, a następnie kliknij przycisk **importu**. Wybierz `AzureBatchAI_TF_MNIST.json` plik, aby szybko wypełnić niektóre wartości domyślnych, takich jak obraz platformy Docker do użycia. Następnie kliknij przycisk **przesyłania**

@@ -1,5 +1,5 @@
 ---
-title: Porównanie wyników testów obciążenia w programie Visual Studio
+title: Porównanie wyników testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834290"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066447"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów
 
-Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań. Dostępne są dwa typy raportów testów obciążenia:
+Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Dostępne są dwa typy raportów testów obciążenia:
 
 - Uruchom porównanie&mdash;ten raport jest faktycznie dwóch raportów, które wyświetlają dane porównania side-by-side przy użyciu tabel i wykresów słupkowych.
 
@@ -33,7 +37,7 @@ Definicje raportów są przechowywane w bazie danych testu obciążenia. Po zapi
 Ponadto plik arkusza kalkulacyjnego mogą być udostępniane zainteresowane strony, aby nie trzeba połączyć z bazą danych, aby wyświetlić raport zainteresowanych stron.
 
 > [!NOTE]
-> Po dodaniu komentarzy do testu obciążenia pojawią się one w raporcie programu Excel. Aby uzyskać więcej informacji, zobacz [porady: dodawanie komentarzy podczas analizowania zakończonego testu obciążenia](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Po dodaniu komentarzy do testu obciążenia są wyświetlane w raporcie programu Excel.
 
 ## <a name="tasks"></a>Zadania
 

@@ -1,6 +1,6 @@
 ---
-title: 'Porady: rozszerzanie procesu kompilacji programu Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Rozszerzanie procesu kompilacji
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777c2c4ecb5ea8561a43a12f1897c2260d6638d0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081556"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058275"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Porady: rozszerzanie procesu kompilacji programu Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Procesu kompilacji jest definiowany przez szereg [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* pliki, które są importowane w pliku projektu. Te zaimportowane pliki *Microsoft.Common.targets*, można rozszerzyć, aby możliwe było uruchamianie niestandardowych zadań w kilku miejscach w procesie kompilacji. W tym artykule opisano dwie metody, można użyć, aby rozszerzyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] procesu kompilacji:  

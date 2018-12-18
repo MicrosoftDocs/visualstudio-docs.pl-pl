@@ -1,5 +1,5 @@
 ---
-title: Ładowanie testowego interfejsu API w programie Visual Studio
+title: Interfejs API testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4dfb5c79f2423ba25f16edadd70ee879ca966356
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282748"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049908"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Porady: Korzystanie z API testu obciążenia
 
 Program Visual Studio obsługuje obciążenia wtyczki testu które mogą kontrolować lub zwiększ testu obciążeniowego. Wtyczki testu obciążenia są zdefiniowane przez użytkownika klas które implementują <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> interfejsu znaleziony w <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw. Wtyczki testu obciążenia umożliwiają kontrolę testu obciążenia niestandardowe, takie jak przerywanie testu obciążeniowego, po osiągnięciu progu licznika lub błąd. Użyj właściwości na <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> klasy, aby pobrać lub ustawić parametry testu obciążenia użytkownika zdefiniowane kodu. Używanie zdarzeń na <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> klasy, aby dołączyć delegatów dla powiadomień, gdy uruchomiony jest test obciążeniowy.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Używanie przeglądarki obiektów do zbadania <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw. Edytory zarówno Visual C# i Visual Basic oferuje obsługę funkcji IntelliSense na kodowanie przy użyciu klas w przestrzeni nazw.

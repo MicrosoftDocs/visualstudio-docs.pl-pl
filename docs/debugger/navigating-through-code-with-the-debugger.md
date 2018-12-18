@@ -1,7 +1,7 @@
 ---
-title: Przechodzenie do kodu za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2017
+title: Przechodzenie do kodu z debugerem | Dokumentacja firmy Microsoft
+ms.custom: seodec18
+ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,44 +16,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4091b929c20258d1a491082fcb7e50c24d0bbc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933771"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068276"
 ---
-# <a name="navigate-code-with-the-visual-studio-debugger"></a>Przechodzenie do kodu za pomocą debugera programu Visual Studio
-Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który ułatwi przyspiesza i ułatwia znajdowanie i rozwiązywanie problemów w aplikacji. Gdy przejdziesz kodu w debugerze, możesz sprawdzić stan aplikacji lub Dowiedz się więcej o przepływ jego wykonania.  
+# <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Nawigowanie po kodzie za pomocą debugera programu Visual Studio
+
+Debuger programu Visual Studio może pomóc w nawigowaniu po kodzie, aby sprawdzić stan aplikacji i wyświetlić jego przepływ wykonania. Skróty klawiaturowe, poleceń debugowania, punkty przerwania i inne funkcje umożliwia szybki dostęp do kodu, który chcesz zbadać. Znajomość poleceń nawigacji debugera i skróty umożliwia szybsze i łatwiejsze do znajdowania i rozwiązywania problemów z aplikacjami.  Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
   
-## <a name="start-debugging"></a>Rozpocznij debugowanie  
- Często uruchamiania sesji debugowania przy użyciu **F5** (**debugowania** > **Rozpocznij debugowanie**). To polecenie uruchamia aplikację w debugerze.  
-  
- Zielona strzałka rozpoczyna się debugera (taka sama jak **F5**).  
+## <a name="basic-debugging"></a>Debugowanie podstawowe  
+
+Aby uruchomić aplikację w debugerze, naciśnij klawisz **F5**, wybierz opcję **debugowania** > **Rozpocznij debugowanie**, lub wybierz zieloną strzałkę na pasku narzędzi programu Visual Studio.  
   
  ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
- Obejmują kilka innych sposobów, możesz uruchomić aplikację w debugerze **F11** ([kodu krok po kroku](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([Przekrocz nad kodem](#BKMK_Step_over_Step_out)), lub za pomocą **Uruchom do kursora**.  Zobacz inne sekcje w tym temacie, aby uzyskać informacje o tych opcji zrobić.  
+Podczas debugowania, wyróżnij żółty pokazuje wiersza kodu, które spowodują wykonanie następnego.  
   
- Podczas debugowania, żółta linia zawiera kod, który będzie wykonać w następnej kolejności.  
+ ![DBG&#95;podstawy&#95;Przerwij&#95;tryb](../debugger/media/dbg_basics_break_mode.png "trybie przerwania")  
   
- ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
-  
- Podczas debugowania, można przełączać się między poleceń, takich jak **F5**, **F11** i korzystanie z innych funkcji opisanych w tym temacie, (na przykład punktów przerwania), aby szybko uzyskać dostęp do kodu, aby przyjrzeć się.  
-  
- Większość funkcji debugera, takie jak wyświetlanie wartości zmiennych w okienku zmiennych lokalnych lub oceny wyrażenia w oknie czujki, są dostępne tylko wtedy, gdy debuger jest wstrzymana (nazywane również *trybu przerwania*). Gdy debuger jest wstrzymany, swój stan aplikacji jest wstrzymana podczas funkcje, zmienne i obiekty pozostają w pamięci. W trybie break można sprawdzić pozycje elementów i Stany, aby szukać naruszeń lub błędów. W przypadku niektórych typów projektu może również wprowadzać zmiany do aplikacji w trybie przerwania. Aby obejrzeć film przedstawiający tych funkcji, zobacz [wprowadzenie do debugera](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
-  
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Wykonywanie kodu, wiersz po wierszu  
- Aby zatrzymać w każdym wierszu kodu (każda instrukcja) podczas debugowania, użyj **F11** skróty klawiaturowe (lub **debugowania** > **Step Into** menu).  
-  
-> [!TIP]
->  Podczas wykonywania wszystkich wierszy kodu, możesz umieścić kursor zmienne, aby zobaczyć ich wartości lub użyć [lokalne](../debugger/autos-and-locals-windows.md) i [Obejrzyj](../debugger/autos-and-locals-windows.md) systemu windows, aby obejrzeć ich wartości, Zmień.  
-  
- Poniżej przedstawiono niektóre szczegóły na temat zachowania **Step Into**:  
-  
-- W wywołaniu funkcji zagnieżdżonej **Step Into** wchodzi do najgłębiej zagnieżdżonej funkcji. Jeśli używasz **Step Into** przy wywołaniu, takich jak `Func1(Func2())`, debuger wchodzi do funkcji `Func2`.  
-  
-- Debuger faktycznie przechodzi przez instrukcje kodu, a nie fizyczne wiersze. Na przykład `if` klauzuli mogą być zapisywane w jednym wierszu:  
+Najbardziej debugera, takie jak **modułów** i **Obejrzyj** systemu windows, są dostępne tylko w przypadku, gdy debuger jest uruchomiona. Niektóre funkcje debugera, takie jak wyświetlanie wartości zmiennych w **lokalne** okna lub oceny wyrażenia w **Obejrzyj** okna, są dostępne tylko w przypadku, gdy debuger jest wstrzymana w punkcie przerwania, nazywany również *trybu przerwania*. 
+
+W trybie przerwania wykonanie aplikacji jest wstrzymana podczas funkcje, zmienne i obiekty pozostają w pamięci. Można sprawdzić pozycje elementów i Stany, aby szukać naruszeń lub błędów. W przypadku niektórych typów projektu może również wprowadzać zmiany do aplikacji w trybie przerwania. Film przedstawiający tych funkcji, zobacz [wprowadzenie do debugera](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+
+Jeśli przerwiesz w kodzie, który nie ma źródłowych lub symboli (*.pdb*) pliki ładowane, debuger wyświetla **nie znaleziono źródła plików** lub **nie można odnaleźć symboli** strona, która pomoże Ci Znajdź i Załaduj pliki. Zobacz [określanie plików symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Jeśli nie można załadować plików symboli lub źródłowych, nadal możesz debugować instrukcje montażu w **dezasemblacji** okna. 
+
+Zawsze masz nie można rozpocząć debugowania, uruchamiając aplikację na początku. Można również nacisnąć klawisz **F11** do [kodu krok po kroku](#BKMK_Step_into__over__or_out_of_the_code), naciśnij klawisz **F10** do [Przekrocz nad kodem](#BKMK_Step_over_Step_out), lub [uruchomić do określonej lokalizacji lub Funkcja](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).    
+
+##  <a name="step-through-code"></a>Przejść przez kod
+
+Polecenia kroku debugera pomóc sprawdzić stan swojej aplikacji lub dowiedzieć się więcej o przepływ jego wykonania. 
+
+Jeśli musisz odnaleźć punktu wejścia w swojej aplikacji, skorzystaj z **F10** lub **F11**.  
+
+### <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Wejdź do kodu wiersz po wierszu  
+
+Aby zatrzymać, w każdym wierszu kodu lub instrukcji podczas debugowania, użyj **debugowania** > **Step Into**, lub naciśnij **F11**.  
+
+Debuger nie wchodzi przez instrukcje kodu, a nie fizyczne wiersze. Na przykład `if` klauzuli mogą być zapisywane w jednym wierszu:  
   
   ```csharp  
   int x = 42;  
@@ -61,130 +63,129 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
   if( int x == 42) s = "Answered!";  
   ```  
   
-  ```VB  
+  ```vb  
   Dim x As Integer = 42  
   Dim s As String = "Not answered"  
   If x = 42 Then s = "Answered!"  
   ```  
+
+Jednak gdy wchodzisz do tego wiersza debuger traktuje ten warunek jako jeden krok, a jego konsekwencję jako inny. W poprzednim przykładzie warunek jest prawdziwy.  
   
-   Gdy wchodzisz do tego wiersza debuger traktuje ten warunek jako jeden krok, a jego konsekwencję jako inny (w tym przykładzie, warunek jest spełniony).  
+W wywołaniu funkcji zagnieżdżonej **Step Into** wchodzi do najgłębiej zagnieżdżonej funkcji. Na przykład, jeśli używasz **Step Into** przy wywołaniu, takich jak `Func1(Func2())`, debuger wchodzi do funkcji `Func2`.  
+
+>[!TIP]
+>Podczas wykonywania wszystkich wierszy kodu, możesz umieścić kursor zmienne, aby zobaczyć ich wartości lub użyć [lokalne](autos-and-locals-windows.md) i [Obejrzyj](watch-and-quickwatch-windows.md) systemu windows, aby obejrzeć wartości zmiany. Można również wizualnie śledzić stos wywołań, wchodząc krok do funkcji. Zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
+
+###  <a name="BKMK_Step_over_Step_out"></a> Przejść przez kod i pominąć niektóre funkcje  
+
+Może nie interesują funkcji podczas debugowania lub znasz jego działania, takie jak kod dobrze przetestowanych biblioteki. Można użyć następujących poleceń, aby przejść przez kod. Nadal wykonywać funkcje, ale debuger pomija nad nimi.  
   
-  Aby wizualnie śledzić stos wywołań, wchodząc krok do funkcji, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
-  
-##  <a name="BKMK_Step_over_Step_out"></a> Przejść przez kod, pomijanie funkcji  
- Podczas uruchamiania kodu w debugerze, często będą okazuje się, że nie jest wymagane zobaczyć, co dzieje się w określonej funkcji (nie dba o go lub ją znasz dzieła, takie jak kod dobrze przetestowanych biblioteki). Używać tych poleceń, aby przejść przez kod (funkcje nadal wykonywane, oczywiście, ale debuger pomija nad nimi).  
-  
-|Polecenie klawiatury|Polecenia menu|Opis|  
+|Polecenie klawiatury|Debugowanie polecenia menu|Opis|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Przekrocz nad**|Jeśli bieżący wiersz zawiera wywołanie funkcji **Step Over** uruchamia kod, a następnie zawiesza wykonywanie w pierwszym wierszu kodu po powrocie wywołanej funkcji.|  
-|**Shift+F11**|**Wyjdź**|**Step Out** kontynuuje wykonywanie kodu, a następnie zawiesza wykonywanie, gdy bieżąca funkcja zwróci wartość (pomija debugera za pomocą bieżącej funkcji).|  
-  
-> [!TIP]
->  Jeśli musisz odnaleźć punktu wejścia w swojej aplikacji, skorzystaj z **F10** lub **F11**. Te polecenia są często pomocne podczas sprawdzania stanu usługi aplikacji i podjęcie próby dowiedzieć się więcej na temat jego przepływ wykonania.  
+|**SHIFT**+**F11**|**Wyjdź**|**Step Out** kontynuuje wykonywanie kodu, a następnie zawiesza wykonywanie, gdy zwraca bieżącą funkcję. Debuger pomija za pomocą bieżącej funkcji.|  
   
 ##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Uruchamianie do określonej lokalizacji lub funkcji  
- Często preferowaną metodą debugowania kodu, te metody są przydatne, gdy wiesz, jaki dokładnie kod chcesz sprawdzić lub co najmniej wiesz, gdzie chcesz rozpocząć debugowanie.  
-  
--   **Ustawianie punktów przerwania w kodzie**  
-  
-     Aby ustawić prosty punkt przerwania w kodzie, otwórz plik źródłowy w edytorze programu Visual Studio. Ustaw kursor w wierszu kodu, w którym chcesz zawiesić wykonanie, a następnie kliknij prawym przyciskiem myszy w oknie kodu, aby wyświetlić menu kontekstowe i wybrać **punktu przerwania > Wstaw punkt przerwania** (lub naciśnij **F9**). Debuger zawiesza wykonywanie po prawej stronie, przed wykonaniem wiersza.  
-  
-     ![Ustaw punkt przerwania](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
-  
-     Punkty przerwania w programie Visual Studio zapewniają bogaty zestaw dodatkowych funkcji, takich jak warunkowe punkty przerwania i punkty śledzenia. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).  
-  
--   **Uruchom do lokalizacji kursora**  
-  
-     Aby uruchomić do lokalizacji kursora, umieść kursor w wierszu pliku wykonywalnego kodu w oknie źródła. W menu kontekstowym edytora (kliknij prawym przyciskiem myszy w edytorze), wybierz **Uruchom do kursora**. Jest to np. ustawienie tymczasowy punkt przerwania.
 
--   **Uruchamianie do kliknięcia** 
+Użytkownik może chcieć uruchomić bezpośrednio do określonej lokalizacji lub funkcji, gdy wiesz, jaki dokładnie kod chcesz sprawdzić lub wiesz, gdzie chcesz rozpocząć debugowanie.  
+  
+### <a name="run-to-a-breakpoint-in-code"></a>Uruchom do punktu przerwania w kodzie  
+  
+Aby ustawić prosty punkt przerwania w kodzie, kliknij przycisk po lewej stronie margines obok wiersza kodu, na którym ma się zawiesić wykonanie. Możesz również wybrać wiersza i naciśnij klawisz **F9**, wybierz opcję **debugowania** > **Przełącz punkt przerwania**, lub kliknij prawym przyciskiem myszy i wybierz polecenie **punktuprzerwania**  >  **Wstaw punkt przerwania**. Punkt przerwania pojawia się jako czerwona kropka na lewym marginesie obok wiersza kodu. Debuger zawiesza wykonywanie tylko w przypadku, przed wykonaniem wiersza.
+  
+![Ustaw punkt przerwania](../debugger/media/dbg_basics_setbreakpoint.png "Ustaw punkt przerwania")  
+  
+Punkty przerwania w programie Visual Studio zapewniają bogaty zestaw dodatkowych funkcji, takich jak warunkowe punkty przerwania i punkty śledzenia. Aby uzyskać więcej informacji, zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).  
+  
+### <a name="run-to-a-function-breakpoint"></a>Uruchom do punktu przerwania funkcji  
 
-    Aby uruchomić do momentu w kodzie, podczas gdy wstrzymaniu w debugerze, zaznacz **uruchom wykonywanie do tego miejsca** Ikona zielona strzałka (pojawi się ikona podczas najeżdżania kursorem na wiersz kodu). Eliminuje to potrzebę ustawiać tymczasowych punktów przerwania.
+Można polecić debugerowi, aby uruchomić, dopóki nie osiągnie określoną funkcję. Można określić funkcję według nazwy lub możesz ją wybrać spośród stosu wywołań.  
+  
+**Do określenia punktu przerwania funkcji według nazwy**
 
-    ![Debuger na uruchamianie do kliknięcia](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+1. Wybierz **debugowania** > **nowego punktu przerwania** > **funkcji punktu przerwania**
+   
+1. W **nowy punkt przerwania funkcji** okno dialogowe, wpisz nazwę funkcji, a następnie wybierz jego język.
+   
+   ![Okno dialogowe Nowy punkt przerwania funkcji](../debugger/media/dbg_execution_newbreakpoint.png "nowy punkt przerwania funkcji")  
+   
+1. Wybierz **OK**. 
 
-    > [!NOTE]
-    > **Uruchamianie do kliknięcia** nowego [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+Jeśli funkcja jest przeciążona lub w więcej niż jednej przestrzeni nazw, możesz wybrać odpowiedni w **punktów przerwania** okna.  
+
+![Punkty przerwania funkcji przeciążonych](../debugger/media/dbg_execution_overloadedbreakpoints.png "przeciążone punkty przerwania funkcji")  
   
--   **Ręcznie Wejdź do kodu**  
+**Aby wybrać punktu przerwania funkcji ze stosu wywołań** 
   
-     Aby przerwać następnego dostępnego wiersza kodu w wykonywanej aplikacji, wybierz opcję **debugowania**, **Przerwij wszystkie** (klawiatura: **Ctrl + Alt + Break**). 
+1. Podczas debugowania, należy otworzyć **stos wywołań** okna, wybierając **debugowania** > **Windows** > **stos wywołań**. 
+   
+1. W **stos wywołań** okna, kliknij prawym przyciskiem myszy funkcję i wybierz **Uruchom do kursora**, lub naciśnij **Ctrl**+**F10**.  
+
+Aby wizualnie śledzić stos wywołań, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-     Jeśli użytkownik przerwiesz podczas wykonywania kodu bez odpowiadającego jej źródła lub symboli (.pdb) plików), debuger wyświetla **nie znaleziono źródła plików** lub **nie można odnaleźć symboli** strona, która pomoże Ci znaleźć odpowiednią pliki. Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Jeśli nie masz dostępu do plików pomocniczych, nadal możesz debugować instrukcje montażu w oknie demontażu.  
+### <a name="run-to-a-cursor-location"></a>Uruchom do lokalizacji kursora  
+
+Aby uruchomić do lokalizacji kursora, w kodzie źródłowym lub **stos wywołań** okna, zaznacz wiersz, aby przerwać, kliknij prawym przyciskiem myszy i wybierz **Uruchom do kursora**, lub naciśnij **Ctrl** + **F10**. Wybieranie **Uruchom do kursora** przypomina ustawienie tymczasowy punkt przerwania.
+
+### <a name="run-to-click"></a>Uruchom do kliknięcia 
+
+Gdy wstrzymaniu w debugerze, możesz umieścić kursor instrukcji w kodzie źródłowym lub **dezasemblacji** okna, a następnie wybierz **uruchom wykonywanie do tego miejsca** zielona strzałka. Za pomocą **uruchamianie do kliknięcia** eliminuje potrzebę ustawienia tymczasowy punkt przerwania.
+
+![Uruchamianie do kliknięcia](../debugger/media/dbg-run-to-click.png "uruchamianie do kliknięcia") 
+
+> [!NOTE]
+> **Uruchamianie do kliknięcia** nowego [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
   
--   **Uruchom do funkcji na stosie wywołań**  
+### <a name="manually-break-into-code"></a>Ręcznie Wejdź do kodu  
   
-     W **stos wywołań** okna (dostępne podczas debugowania), wybierz funkcję, kliknij prawym przyciskiem myszy i wybierz **Uruchom do kursora**. Aby wizualnie śledzić stos wywołań, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
-  
--   **Uruchom do funkcji określonej przez nazwę**  
-  
-     Można polecić debugerowi, aby uruchomić aplikację, aż do osiągnięcia określonej funkcji. Można określić funkcję według nazwy lub możesz ją wybrać spośród stosu wywołań.  
-  
-     Aby określić funkcję według nazwy, wybierz opcję **debugowania**, **nowego punktu przerwania**, **Przerwij w funkcji**, wprowadź nazwę funkcji i inne informacje identyfikacyjne.  
-  
-     ![Nowy punkt przerwania, okno dialogowe](../debugger/media/dbg_execution_newbreakpoint.png "DBG_Execution_NewBreakpoint")  
-  
-     Jeśli funkcja jest przeciążona lub jest w wielu przestrzeniach nazw, możesz wybrać funkcje, które mają wejść w **wybierz punkty przerwania** okno dialogowe.  
-  
-     ![Wybierz punkty przerwania, okno dialogowe](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
+Włamanie się następnego dostępnego wiersza kodu w uruchomionej aplikacji, wybierz **debugowania** > **Przerwij wszystkie**, lub naciśnij **Ctrl**+**Alt**  + **Przerwij**. 
   
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Przenieść wskaźnik, aby zmienić przepływ wykonania  
- Gdy debuger jest wstrzymany, można przenieść wskaźnik instrukcji w celu ustawienia następnej instrukcji kodu do wykonania. Żółty grot strzałki na marginesie źródła lub okna dezasemblacji oznacza lokalizację następnej instrukcji do wykonania. Przesuwając ten grot strzałki, można pominąć część kodu lub powrócić do wiersza wcześniej wykonywanego. Możesz użyć tego w sytuacjach, takich jak pomijanie sekcji kodu, który zawiera znany błąd.  
+
+Gdy debuger jest wstrzymany, żółty grot strzałki na marginesie kodu źródłowego lub **dezasemblacji** okno oznacza lokalizację następnej instrukcji do wykonania. Można zmienić następnej instrukcji do wykonania, przesuwając ten grot strzałki. Możesz pominąć część kodu lub powrócić do poprzedniego wiersza. Przeniesienie wskaźnika jest przydatne w sytuacjach, takich jak pomijanie sekcji kodu, który zawiera znany błąd.  
+
+ ![Przesuń wskaźnik](../debugger/media/dbg_basics_example3.gif "przesuwania wskaźnika")
   
- ![Przesuń wskaźnik](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
+Aby zmienić następnej instrukcji do wykonania, debuger musi być w trybie przerwania. W kodzie źródłowym lub **dezasemblacji** okna, przeciągnij żółty grot strzałki do innego wiersza lub kliknij prawym przyciskiem myszy wiersz, którego chcesz wykonać w następnej kolejności, a następnie wybierz pozycję **Ustaw następną instrukcję**. 
+
+Licznik programu przechodzi bezpośrednio do nowej lokalizacji i instrukcje między wykonywania stare i nowe punkty nie są wykonywane. Jednak jeśli przeniesiesz punkt wykonania Wstecz, instrukcje interwencyjne nie są cofnąć.  
+
+>[!CAUTION]
+>- Przenoszenie następnej instrukcji do innej funkcji lub zakresu zwykle powoduje uszkodzenie stosu wywołań, powodując błąd lub wyjątek. Jeśli spróbujesz przenieść następną instrukcję do innego zakresu, debuger otwiera okno dialogowe z ostrzeżeniem i daje możliwość anulowania operacji. 
+>- W języku Visual Basic nie można przenieść następnej instrukcji do innego zakresu lub funkcji.  
+>- W natywnym kodzie C++ zostały włączone, kontrole czasu wykonywania ustawienie następnej instrukcji może spowodować wyjątek zgłaszany, gdy wykonywanie osiągnie koniec metody.  
+>- Gdy Edytuj i Kontynuuj jest włączona, **Ustaw następną instrukcję** kończy się niepowodzeniem, jeśli zostały wprowadzone zmiany, których Edytuj i Kontynuuj nie może od razu ponownie zamapować. Może to występować, na przykład, jeśli edytowano kod wewnątrz bloku catch. W takim przypadku komunikat o błędzie informujący o tym, że operacja nie jest obsługiwany.  
+>- W kodzie zarządzanym nie można przenieść następnej instrukcji, jeśli:  
+>   - Następna instrukcja znajduje się w innej metodzie niż bieżąca instrukcja.  
+>   - Debugowanie zostało uruchomione przez Just-In-Time debugowania.  
+>   - Odwijania stosu wywołań jest w toku.  
+>   - Został zgłoszony wyjątek System.StackOverflowException lub System.Threading.ThreadAbortException.  
   
- Aby ustawić następną instrukcję do wykonania, użyj jednej z poniższych procedur:  
-  
--   W oknie źródła przeciągnij żółty grot do lokalizacji, w której chcesz ustawić następną instrukcję w tym samym pliku źródłowym  
-  
--   W oknie źródła, ustaw kursor na wierszu, który chcesz wykonać w następnej kolejności, kliknij prawym przyciskiem myszy i wybierz polecenie **Ustaw następną instrukcję**.  
-  
--   W oknie demontażu Ustaw kursor na instrukcji montażu, którą chcesz wykonać w następnej kolejności, kliknij prawym przyciskiem myszy i wybierz polecenie **Ustaw następną instrukcję**.  
-  
-> [!CAUTION]
->  Ustawienie następnej instrukcji powoduje, że licznik programu przechodzi bezpośrednio do nowej lokalizacji. Użyj tego polecenia ostrożnie:  
-> 
-> - Instrukcje między stary i nowymi punktami wykonania nie są wykonywane.  
->   -   Jeśli przeniesiesz punkt wykonania Wstecz, instrukcje interwencyjne nie zostaną cofnięte.  
->   -   Przenoszenie następnej instrukcji do innej funkcji lub zakresu zwykle powoduje uszkodzenie stosu wywołań, powodując błąd lub wyjątek. Jeśli spróbujesz przenieść następną instrukcję do innego zakresu, debuger otwiera okno dialogowe z ostrzeżeniem i daje możliwość anulowania operacji. W języku Visual Basic nie można przenieść następnej instrukcji do innego zakresu lub funkcji.  
->   -   W natywnym kodzie C++ zostały włączone, kontrole czasu wykonywania ustawienie następnej instrukcji może spowodować wyjątek zgłaszany, gdy wykonywanie osiągnie koniec metody.  
->   -   Gdy Edytuj i Kontynuuj jest włączona, **Ustaw następną instrukcję** kończy się niepowodzeniem, jeśli zostały wprowadzone zmiany, których Edytuj i Kontynuuj nie może od razu ponownie zamapować. Może to występować, na przykład, jeśli edytowano kod wewnątrz bloku catch. W takim przypadku zobaczysz komunikat o błędzie informujący o tym, że ta operacja nie jest obsługiwane.  
-> 
+## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Możliwe jest debugowanie kodu niepochodzącego od użytkownika  
+
+Domyślnie debuger podejmie próbę debugowania tylko kodu aplikacji, należy włączyć ustawienie o nazwie *tylko mój kod*. Aby uzyskać więcej informacji o różnych typach projektów i języków, jak działa ta funkcja i jak można go dostosować, zobacz [tylko mój kod](../debugger/just-my-code.md). 
+
+Aby wyświetlić kod framework, kod biblioteki innych firm lub wywołań systemowych podczas debugowania, można wyłączyć opcję tylko mój kod. W **narzędzia** (lub **debugowania**) > **opcje** > **debugowanie**, wyczyść **Włącz tylko mój kod** pole wyboru. Po wyłączeniu tylko mój kod niebędący kodem użytkownika jest wyświetlana w oknach debugera, a debuger może wkroczyć do kodu niepochodzącego od użytkownika.  
+
 > [!NOTE]
->  W kodzie zarządzanym nie można przenieść następnej instrukcji w następujących warunkach:  
-> 
-> - Następna instrukcja znajduje się w innej metodzie niż bieżąca instrukcja.  
->   -   Debugowanie zostało uruchomione przy użyciu Just-In-Time debugowania.  
->   -   Odwijanie stosu wywołań jest w toku.  
->   -   Został zgłoszony wyjątek System.StackOverflowException lub System.Threading.ThreadAbortException.  
+> Tylko mój kod nie jest obsługiwana dla projektów urządzenia.  
   
- Nie można ustawić następnej instrukcji, gdy aplikacja jest aktywnie uruchomiona. Aby ustawić następną instrukcję, debuger musi być w trybie przerwania.  
+### <a name="debug-system-code"></a>Możliwe jest debugowanie kodu systemu
+
+Jeśli masz załadowane symbole debugowania dla kodu systemu Microsoft i wyłączyć opcję tylko mój kod, możesz wejść do wywołania systemowego tak samo jak inne wywołania.  
   
-## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Wejdź do kodu innych użytkowników  
- Domyślnie debuger podejmie próbę pokazują tylko kodu aplikacji podczas debugowania, który jest określony przez debuger nosi nazwę *tylko mój kod*. (Zobacz [tylko mój kod](../debugger/just-my-code.md) aby zobaczyć, jak to działa na różnych typach projektów i języków i jak możesz dostosować zachowanie.) Jednak czasami, podczas debugowania, możesz chcieć Przyjrzyj się kodu struktury, kod biblioteki innych firm lub wywołań do systemu operacyjnego (wywołań systemowych).  
+Aby załadować symbole firmy Microsoft, zobacz [skonfigurować lokalizacje symboli i ładowania opcji](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-symbol-locations-and-loading-options).  
   
- Można wyłączyć opcję tylko mój kod, przechodząc do **narzędzia** > **opcje** > **debugowanie** i wyczyść **Włącz tylko mój kod** pole wyboru.  
+**Aby załadować symbole dla określonego składnika systemu:**
+
+1. Podczas debugowania, otwórz **modułów** okna, wybierając **debugowania** > **Windows** > **modułów**, lub naciskając **Ctrl**+**Alt**+**U**.  
   
- Po wyłączeniu tylko mój kod debuger można wkroczyć do kodu niepochodzącego od użytkownika, a kod niezwiązany z użytkownikiem, który pojawia się w oknach debugera.  
-  
-> [!NOTE]
->  Tylko mój kod nie jest obsługiwana dla projektów urządzenia.  
-  
- **Wejdź do wywołań systemowych**  
-  
- Jeśli zostały załadowane symbole debugowania dla kodu systemowego i nie włączono opcję tylko mój kod, możesz wejść do wywołania systemowego tak samo jak inne wywołania.  
-  
- Aby uzyskać dostęp do plików symboli firmy Microsoft, zobacz [Użyj serwerów symboli, aby znaleźć pliki symboli nie na komputerze lokalnym](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) w [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) tematu.  
-  
- Aby załadować symbole dla określonego składnika systemu podczas debugowania:  
-  
-1.  Otwórz okno modułów (klawiatura: **Ctrl + Alt + U**).  
-  
-2.  Wybierz moduł, który chcesz załadować symbole.  
-  
-     Można stwierdzić, które moduły mają załadowane symbole, patrząc **stan symboli** kolumny.  
-  
-3.  Wybierz **załadować symbole** w menu kontekstowym.  
+1. W **modułów** okna, można sprawdzić, co moduły mają załadowane w symbole **stan symboli** kolumny. Kliknij prawym przyciskiem myszy moduł, który chcesz załadować symbole, a następnie wybierz pozycję **załadować symbole**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Wejdź do właściwości i operatory w kodzie zarządzanym  
- Debuger nie wchodzi we właściwości i operatory w kodzie zarządzanym domyślnie. W większości przypadków zapewnia to lepszy proces debugowania. Aby włączyć przechodzenie krok po kroku do właściwości lub operatorów, wybierz opcję **debugowania** > **opcje**. Na **debugowanie** > **ogólne** strony, wyczyść **Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)** pola wyboru
+ Debuger nie wchodzi we właściwości i operatory w kodzie zarządzanym domyślnie. W większości przypadków zapewnia to lepszy proces debugowania. Aby włączyć przechodzenie krok po kroku do właściwości lub operatorów, wybierz opcję **debugowania** > **opcje**. Na **debugowanie** > **ogólne** strony, wyczyść **Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)** pole wyboru.
+
+## <a name="see-also"></a>Zobacz także
+ [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
+ [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)  
+ [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md) 

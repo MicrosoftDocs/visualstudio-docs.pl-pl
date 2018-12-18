@@ -1,7 +1,7 @@
 ---
-title: Używanie punktów przerwania w debugerze programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+title: Używanie punktów przerwania w debugerze | Dokumentacja firmy Microsoft
+ms.custom: seodec18
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,20 +36,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816687"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068451"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
-Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania.  
+Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
   
 ##  <a name="BKMK_Overview"></a> Ustawianie punktów przerwania w kodzie źródłowym  
  Możesz ustawić punkt przerwania w każdym wierszu kodu wykonywalnego. Na przykład w poniższym kodzie C#, można ustawić punkt przerwania w deklaracji zmiennej `for` pętli lub dowolny kod wewnątrz `for` pętli. Nie można ustawić punktu przerwania, deklaracje przestrzeni nazw lub klasy lub podpis metody.  
 
  Aby ustawić punkt przerwania w kodzie źródłowym, kliknij na marginesie po lewej stronie obok wiersza kodu. Możesz również wybrać wiersza i naciśnij klawisz **F9**, wybierz opcję **debugowania** > **Przełącz punkt przerwania**, lub kliknij prawym przyciskiem myszy i wybierz polecenie **punktuprzerwania**  >  **Wstaw punkt przerwania**. Punkt przerwania pojawia się jako czerwona kropka na lewym marginesie.  
+
+W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonywania. Dla kodu C++, można włączyć wyróżnianie punktu przerwania i bieżącej linii, wybierając **narzędzia** (lub **debugowania**) > **opcje**  >   **Debugowanie** >  **Podświetl cały wiersz źródła dla punktów przerwania i bieżącej instrukcji (tylko C++)**. 
   
  ![Ustaw punkt przerwania](../debugger/media/basicbreakpoint.png "podstawowego punktu przerwania")  
   
@@ -235,8 +237,8 @@ Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **ma warto�
  >- Dla kodu natywnego debuger nie uważa pierwszej oceny warunku za zmianę, więc nie trafiony punkt przerwania w pierwszej oceny. 
  >- Dla kodu zarządzanego, debuger uderza w punkt przerwania w pierwszej ocenie po **po zmianie** jest zaznaczone.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Za pomocą identyfikatorów obiektów w wyrażenia warunkowe (C# i F # tylko)  
- Istnieją terminy, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu. Na przykład można dowiedzieć się, dlaczego obiekt został wstawiony do kolekcji więcej niż jeden raz. W języku C# i F #, można utworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](/dotnet/csharp/language-reference/keywords/reference-types)i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Za pomocą identyfikatorów obiektów w wyrażeniach warunkowych (C# i F# tylko)  
+ Istnieją terminy, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu. Na przykład można dowiedzieć się, dlaczego obiekt został wstawiony do kolekcji więcej niż jeden raz. W C# i F#, można tworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](/dotnet/csharp/language-reference/keywords/reference-types)i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  
 
 **Aby utworzyć identyfikator obiektu:** 
   
@@ -305,5 +307,7 @@ Wartości parametrów należy ująć w cudzysłów. Można połączyć klauzule 
 Punkty śledzenia są wyświetlane jako czerwone diamenty na lewym marginesie kodu źródłowego i **punktów przerwania** systemu windows. 
   
 ## <a name="see-also"></a>Zobacz także  
-[Rozwiązywanie problemów z punktów przerwania w debugerze programu Visual Studio](../debugger/troubleshooting-breakpoints.md)  
-[Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
+ [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
+ [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)  
+ [Rozwiązywanie problemów z punktów przerwania w debugerze programu Visual Studio](../debugger/troubleshooting-breakpoints.md)  

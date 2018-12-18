@@ -4,11 +4,11 @@ items:
 - name: Omówienie
   items:
   - name: Informacje o programie Visual Studio 2017
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: Informacje o edytorze kodu
-    href: ide/quickstart-editor.md
+    href: get-started/tutorial-editor.md
   - name: Informacje o projektach i rozwiązaniach
-    href: ide/quickstart-projects-solutions.md
+    href: get-started/tutorial-projects-solutions.md
   - name: Więcej funkcji programu Visual Studio
     href: ide/advanced-feature-overview.md
   expanded: true
@@ -29,7 +29,7 @@ items:
       href: install/create-an-offline-installation-of-visual-studio.md
     - name: Instalowanie certyfikatów wymaganych do instalacji w trybie offline
       href: install/install-certificates-for-visual-studio-offline.md
-  - name: Zmiana lokalizacji instalacji
+  - name: Wybieranie lokalizacji instalacji
     href: install/change-installation-locations.md
   - name: Rozwiązywanie problemów z instalacją
     href: install/troubleshooting-installation-issues.md
@@ -38,7 +38,7 @@ items:
   - name: Modyfikowanie programu Visual Studio
     href: install/modify-visual-studio.md
   - name: Instalowanie Podglądu Pomocy
-    href: ide/microsoft-help-viewer-installation.md
+    href: help-viewer/installation.md
   - name: Napraw program Visual Studio
     href: install/repair-visual-studio.md
   - name: Odinstalowywanie programu Visual Studio
@@ -81,19 +81,40 @@ items:
         href: install/tools-for-managing-visual-studio-instances.md
     - name: Zarządzanie subskrypcjami
       items:
-      - name: 'Subskrypcje programu Visual Studio: Administrator — omówienie'
+      - name: 'Subskrypcje programu Visual Studio: przegląd dla administratorów'
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Podręcznik administratora programu Podgląd Pomocy
-      href: ide/help-viewer-administrator-guide.md
+      href: help-viewer/administrator-guide.md
       items:
       - name: Argumenty wiersza poleceń Menedżera zawartości pomocy
-        href: ide/command-line-arguments-for-the-help-content-manager.md
+        href: help-viewer/command-line-arguments.md
       - name: Przesłonięcia Menedżera zawartości Pomocy
-        href: ide/help-content-manager-overrides.md
+        href: help-viewer/behavior-overrides.md
     - name: Tematy pomocy
       items:
       - name: Identyfikatory obciążeń i składników programu Visual Studio
         href: install/workload-and-component-ids.md
+        items:
+        - name: Visual Studio Enterprise 2017
+          href: install/workload-component-id-vs-enterprise.md
+        - name: Visual Studio Professional 2017
+          href: install/workload-component-id-vs-professional.md
+        - name: Visual Studio Community 2017
+          href: install/workload-component-id-vs-community.md
+        - name: Visual Studio Team Explorer 2017
+          href: install/workload-component-id-vs-team-explorer.md
+        - name: Visual Studio Desktop Express 2017
+          href: install/workload-component-id-vs-express.md
+        - name: Visual Studio Build Tools 2017
+          href: install/workload-component-id-vs-build-tools.md
+        - name: Visual Studio Test Agent 2017
+          href: install/workload-component-id-vs-test-agent.md
+        - name: Visual Studio Test Controller 2017
+          href: install/workload-component-id-vs-test-controller.md
+        - name: Visual Studio Test Professional 2017
+          href: install/workload-component-id-vs-test-professional.md
+        - name: Visual Studio Feedback Client 2017
+          href: install/workload-component-id-vs-feedback-client.md
       - name: Numery wersji i daty wydania programu Visual Studio
         href: install/visual-studio-build-numbers-and-release-dates.md
   - name: Korzystanie z programu Visual Studio z poziomu maszyny wirtualnej platformy Azure
@@ -115,7 +136,7 @@ items:
     href: ide/quickstart-python.md
   - name: 'Node.js: tworzenie aplikacji internetowej'
     href: ide/quickstart-nodejs.md
-  - name: 'F#: Tworzenie usługi internetowej'
+  - name: 'F#: tworzenie usługi internetowej'
     href: ide/quickstart-fsharp.md
   - name: 'C#: tworzenie aplikacji internetowej'
     href: ide/quickstart-aspnet-core.md
@@ -159,6 +180,8 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: Przenoszenie, migrowanie i uaktualnianie projektów
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+      - name: Przenoszenie, migrowanie i uaktualnianie projektów w programie Visual Studio 2019 (wersja zapoznawcza)
+        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Zarządzanie właściwościami projektów i rozwiązań
         href: ide/managing-project-and-solution-properties.md
       - name: Zarządzanie odwołaniami w projekcie
@@ -222,6 +245,8 @@ items:
       items:
       - name: Dostosowywanie zadań kompilacji i debugowania
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Łączenie z projektem lub repozytorium
+      href: ide/connect-team-project.md
     - name: Używanie edytora
       href: ide/writing-code-in-the-code-and-text-editor.md
       items:
@@ -329,7 +354,7 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Używanie typu jawnego
             href: ide/reference/convert-var-to-explicit-type.md
-        - name: 'Przewodnik: Generowanie kodu na podstawie użycia'
+        - name: 'Przewodnik: generowanie kodu na podstawie użycia'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Wskazówki dotyczące produktywności
         href: ide/productivity-tips-for-visual-studio.md
@@ -498,55 +523,55 @@ items:
         - name: 'Samouczek 1: tworzenie przeglądarki obrazów (C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: Krok 1. Utworzenie projektu aplikacji Windows Forms
+          - name: Krok 1. Tworzenie projektu aplikacji Windows Forms
             href: ide/step-1-create-a-windows-forms-application-project.md
-          - name: Krok 2. Uruchomienie programu
+          - name: Krok 2. Uruchamianie programu
             href: ide/step-2-run-your-program.md
-          - name: Krok 3. Ustawienie właściwości formularza
+          - name: Krok 3. Ustawianie właściwości formularza
             href: ide/step-3-set-your-form-properties.md
-          - name: Krok 4. Określenie układu formularza przy użyciu formantu TableLayoutPanel
+          - name: Krok 4. Określanie układu formularza przy użyciu kontrolki TableLayoutPanel
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: Krok 5. Dodawanie formantów do formularza
+          - name: Krok 5. Dodawanie kontrolek do formularza
             href: ide/step-5-add-controls-to-your-form.md
           - name: Krok 6. Nadawanie nazw kontrolkom przycisków
             href: ide/step-6-name-your-button-controls.md
           - name: Krok 7. Dodawanie składników okna dialogowego do formularza
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: Krok 8. Wpisywanie kodu dla obsługi zdarzeń pokazywania przycisków obrazowych
+          - name: Krok 8. Pisanie kodu obsługi zdarzeń przycisku Pokaż obraz
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-          - name: Krok 9. Przejrzenie, komentowanie i testowanie kodu
+          - name: Krok 9. Przeglądanie, komentowanie i testowanie kodu
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: Krok 10. Zapisywanie kodu dla dodatkowych przycisków i pola wyboru
+          - name: Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-          - name: Krok 11. Uruchamianie programu i wypróbowanie innych funkcji
+          - name: Krok 11. Uruchamianie programu i wypróbowywanie innych funkcji
             href: ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Samouczek 2: tworzenie testu matematycznego z limitem czasu (C#)'
           href: ide/tutorial-2-create-a-timed-math-quiz.md
           items:
-          - name: Krok 1. Utworzenie projektu i dodawanie etykiet do formularza
+          - name: Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: Krok 2. Utworzenie problemu losowego dodawania
+          - name: Krok 2. Tworzenie zadania z dodawaniem losowych liczb
             href: ide/step-2-create-a-random-addition-problem.md
-          - name: Krok 3. Dodawanie czasomierza odliczania
+          - name: Krok 3. Dodawanie czasomierza odliczającego w dół
             href: ide/step-3-add-a-countdown-timer.md
           - name: Krok 4. Dodawanie metody CheckTheAnswer()
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: Krok 5. Dodawanie obsługi zdarzeń wprowadzania dla formantów NumericUpDown
+          - name: Krok 5. Dodawanie obsługi zdarzeń wprowadzania dla kontrolek NumericUpDown
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: Krok 6. Dodawanie problemu odejmowania
+          - name: Krok 6. Dodawanie zadania z odejmowaniem
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: Krok 7. Dodawanie problemów mnożenia i dzielenia
+          - name: Krok 7. Dodawanie zadań z mnożeniem i dzieleniem
             href: ide/step-7-add-multiplication-and-division-problems.md
-          - name: 'Krok 8: Dostosowywanie kwizu'
+          - name: Krok 8. Dostosowywanie testu
             href: ide/step-8-customize-the-quiz.md
         - name: 'Samouczek 3: tworzenie gry w dopasowywanie (C#)'
           href: ide/tutorial-3-create-a-matching-game.md
           items:
-          - name: Krok 1. Utworzenie projektu i dodawanie tabeli do formularza
+          - name: Krok 1. Tworzenie projektu i dodawanie tabeli do formularza
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
           - name: Krok 2. Dodawanie obiektu losowego i listy ikon
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: Krok 3. Przypisanie losowej ikony do każdej etykiety
+          - name: Krok 3. Przypisywanie losowej ikony do każdej etykiety
             href: ide/step-3-assign-a-random-icon-to-each-label.md
           - name: Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
@@ -554,11 +579,11 @@ items:
             href: ide/step-5-add-label-references.md
           - name: Krok 6. Dodawanie czasomierza
             href: ide/step-6-add-a-timer.md
-          - name: Krok 7. Zachowanie widoczności par
+          - name: Krok 7. Zachowywanie widoczności par
             href: ide/step-7-keep-pairs-visible.md
-          - name: Krok 8. Dodanie metody sprawdzania, czy gracz wygrał
+          - name: Krok 8. Dodawanie metody sprawdzania, czy gracz wygrał
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-          - name: Krok 9. Próbowanie innych funkcji
+          - name: Krok 9. Wypróbowywanie innych funkcji
             href: ide/step-9-try-other-features.md
   - name: Uzyskiwanie dostępu do danych...
     href: data-tools/accessing-data-in-visual-studio.md
@@ -588,12 +613,14 @@ items:
         href: ide/how-to-exclude-projects-from-a-build.md
       - name: Pomijanie ostrzeżeń kompilatora
         href: ide/how-to-suppress-compiler-warnings.md
+    - name: Akcje kompilacji
+      href: ide/build-actions.md
     - name: Konfiguracje kompilacji
       href: ide/understanding-build-configurations.md
       items:
       - name: Tworzenie i edytowanie konfiguracji
         href: ide/how-to-create-and-edit-configurations.md
-      - name: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera języka Visual Basic
+      - name: Zarządzanie konfiguracjami kompilacji z ustawieniami dewelopera języka Visual Basic
         href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
       - name: Równoczesne kompilowanie wielu konfiguracji
         href: ide/how-to-build-multiple-configurations-simultaneously.md
@@ -612,7 +639,7 @@ items:
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: Określanie zdarzeń kompilacji (C#)
       href: ide/how-to-specify-build-events-csharp.md
-    - name: 'Konfigurowanie ostrzeżeń w Visual Basic:'
+    - name: Konfigurowanie ostrzeżeń w języku Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
     - name: 'Przewodnik: tworzenie środowiska kompilowania na wielu komputerach'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
@@ -633,8 +660,12 @@ items:
   - name: Dostosowywanie środowiska IDE
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: 'Szybki start: personalizowanie motywu i kolorów tekstu'
+    - name: 'Szybki start: Personalizowanie motywu i kolorów tekstu'
       href: ide/quickstart-personalize-the-ide.md
+    - name: Ustawienia środowiska
+      href: ide/environment-settings.md
+    - name: Zsynchronizowane ustawienia
+      href: ide/synchronized-settings-in-visual-studio.md
     - name: Zmiana czcionek i kolorów
       href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
     - name: Dostosowywanie menu i pasków narzędzi
@@ -649,19 +680,19 @@ items:
       href: ide/finding-and-using-visual-studio-extensions.md
     - name: Zarządzanie narzędziami zewnętrznymi
       href: ide/managing-external-tools.md
-    - name: Zsynchronizowane ustawienia
-      href: ide/synchronized-settings-in-visual-studio.md
   - name: Optymalizacja wydajności
     href: ide/optimize-visual-studio-performance.md
     items:
     - name: Czas uruchamiania
       href: ide/optimize-visual-studio-startup-time.md
+    - name: Ładowanie odfiltrowanego rozwiązania
+      href: ide/filtered-solutions.md
     - name: Porady i wskazówki
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: Zarządzanie funkcjami ułatwień dostępu
     href: ide/reference/accessibility-features-of-visual-studio.md
     items:
-    - name: Ustawianie opcji ułatwień dostępu IDE
+    - name: Ustawianie opcji ułatwień dostępu środowiska IDE
       href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: Używanie wyłącznie klawiatury
       href: ide/reference/how-to-use-the-keyboard-exclusively.md
@@ -754,8 +785,8 @@ items:
           href: ide/reference/quick-launch-environment-options-dialog-box.md
         - name: Środowisko — Uruchamianie
           href: ide/reference/startup-environment-options-dialog-box.md
-        - name: Środowisko — Zsynchronizowane ustawienia
-          href: ide/reference/synchronized-settings-environment-options-dialog-box.md
+        - name: Środowisko — konta
+          href: ide/reference/accounts-environment-options-dialog-box.md
         - name: Środowisko — Karty i okna
           href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
         - name: Środowisko — Lista zadań
@@ -774,7 +805,7 @@ items:
         - name: Edytor tekstu — Wszystkie języki
           href: ide/reference/options-text-editor-all-languages.md
         - name: Edytor tekstu — Wszystkie języki, paski przewijania
-          href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
+          href: ide/reference/options-text-editor-all-languages-scroll-bars.md
         - name: Edytor tekstu — Wszystkie języki, karty
           href: ide/reference/options-text-editor-all-languages-tabs.md
         - name: Edytor tekstu — Basic (Visual Basic), zaawansowane
@@ -789,18 +820,28 @@ items:
           href: ide/reference/options-text-editor-c-cpp-advanced.md
         - name: Edytor tekstu — C/C++, eksperymentalne
           href: ide/reference/options-text-editor-c-cpp-experimental.md
-        - name: Edytor tekstu — C#, formatowanie
+        - name: Edytor tekstu — C/C++, widok
+          href: ide/reference/options-text-editor-c-cpp-view.md
+        - name: Edytor tekstu — C#, Styl kodu, Formatowanie
           href: ide/reference/options-text-editor-csharp-formatting.md
         - name: Edytor tekstu — C#, zaawansowane
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: Edytor tekstu — C#, IntelliSense
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: Edytor tekstu — JavaScript, walidacja kodu
+          href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: Edytor tekstu — JavaScript, formatowanie
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: Edytor tekstu — JavaScript, IntelliSense
           href: ide/reference/options-text-editor-javascript-intellisense.md
         - name: Edytor tekstu — XAML, formatowanie
           href: ide/reference/options-text-editor-xaml-formatting.md
+        - name: Edytor tekstu — XAML, różne
+          href: ide/reference/options-text-editor-xaml-miscellaneous.md
+        - name: Edytor tekstu — XML, formatowanie
+          href: ide/reference/options-text-editor-xml-formatting.md
+        - name: Edytor tekstu — XML, różne
+          href: ide/reference/options-text-editor-xml-miscellaneous.md
       - name: Opcje projektów i rozwiązań — okno dialogowe
         href: ide/reference/projects-and-solutions-options-dialog-box.md
         items:
@@ -874,8 +915,10 @@ items:
         href: ide/reference/signing-page-project-designer.md
     - name: Strony właściwości, JavaScript
       href: ide/reference/property-pages-javascript.md
-    - name: Okno Właściwości
+    - name: Okno właściwości
       href: ide/reference/properties-window.md
+    - name: Dokumentacja wtyczki Team Explorer
+      href: ide/reference/team-explorer-reference.md
     - name: Przybornik
       href: ide/reference/toolbox.md
       items:
@@ -1014,28 +1057,28 @@ items:
     - name: Windows Information Protection (WIP)
       href: ide/exempt-visual-studio-from-wip.md
   - name: Podgląd Pomocy firmy Microsoft
-    href: ide/microsoft-help-viewer.md
+    href: help-viewer/overview.md
     items:
     - name: Instalowanie zawartości lokalnej i zarządzanie nią
-      href: ide/install-and-manage-local-content.md
+      href: help-viewer/install-manage-local-content.md
     - name: Znajdowanie tematów w Podglądzie Pomocy
       items:
       - name: Znajdowanie tematów w indeksie
-        href: ide/how-to-find-topics-in-the-index.md
+        href: help-viewer/find-topics-index.md
       - name: Znajdowanie tematów w spisie treści
-        href: ide/how-to-find-topics-in-the-table-of-contents.md
+        href: help-viewer/find-topics-toc.md
       - name: Wyszukiwanie tematów
-        href: ide/how-to-search-for-topics.md
+        href: help-viewer/find-topics.md
         items:
         - name: Operatory logiczne i zaawansowane w wyrażeniach wyszukiwania
-          href: ide/logical-operators-in-search-expressions.md
+          href: help-viewer/logical-operators-search-expressions.md
     - name: Dostosowywanie Podglądu Pomocy
-      href: ide/customize-the-help-viewer.md
-    - name: Ułatwienia dostępu w Podglądzie Pomocy
-      href: ide/accessibility-features-of-the-help-viewer.md
+      href: help-viewer/customize.md
+    - name: Ułatwienia dostępu
+      href: help-viewer/accessibility-features.md
       items:
-      - name: Klawisze skrótów (Podgląd Pomocy)
-        href: ide/shortcut-keys-help-viewer.md
+      - name: Klawisze skrótu
+        href: help-viewer/shortcut-keys.md
   - name: Dotfuscator Community Edition (CE)
     href: ide/dotfuscator/index.md
     items:
@@ -1047,8 +1090,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Resources
   items:
-  - name: Co nowego?
+  - name: Co nowego w programie Visual Studio 2017
     href: ide/whats-new-in-visual-studio.md
+  - name: Co nowego w programie Visual Studio 2019
+    href: ide/whats-new-visual-studio-2019.md
   - name: Informacje o wersji i wymagania systemowe
     items:
     - name: Informacje o bieżącej wersji
@@ -1071,12 +1116,13 @@ items:
       href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: Cykl życia pomocy technicznej i obsługi
       href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
-  - name: Zgłaszanie problemu z programem Visual Studio
-    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-    items:
     - name: Prywatność danych w społeczności deweloperów
       href: ide/developer-community-privacy.md
-  - name: Zaproponuj funkcję programu Visual Studio
+  - name: Jak zgłosić problem w programie Visual Studio
+    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+  - name: 'Przegląd: zgłaszanie problemu'
+    href: ide/report-a-problem.md
+  - name: 'Przegląd: proponowanie funkcji'
     href: ide/suggest-a-feature.md
   - name: Program poprawy jakości obsługi klienta
     href: ide/visual-studio-experience-improvement-program.md
@@ -1087,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Porozmawiaj z nami
     href: ide/talk-to-us.md
-ms.openlocfilehash: 8964084be1b142b7ab5ac7203b1436abe7fb08e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea2c50939b41a1495f02330ad5ca5fb0e0472666
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883097"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348453"

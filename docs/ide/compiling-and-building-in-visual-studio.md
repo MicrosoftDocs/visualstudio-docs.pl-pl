@@ -1,5 +1,5 @@
 ---
-title: Kompilowanie i tworzenie w programie Visual Studio
+title: Tworzenie kompilacji
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863624"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062596"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
 
-Uruchamianie kompilacji tworzy zestawów i aplikacji wykonywalnych z kodu źródłowego w dowolnym momencie podczas cyklu rozwoju. Ogólnie rzecz biorąc proces kompilacji jest bardzo podobne w wielu różnych typach projektów, takich jak Windows, ASP.NET, aplikacje mobilne i inne. Proces kompilacji jest również bardzo podobne w językach programowania, takich jak C#, Visual Basic, C++ i F #.
+Podczas kompilowania kodu źródłowego, aparat kompilacji tworzy zespołów i wykonywalnego aplikacji. Ogólnie rzecz biorąc proces kompilacji jest bardzo podobne w wielu różnych typach projektów, takich jak Windows, ASP.NET, aplikacje mobilne i inne. Proces kompilacji jest również podobne w językach programowania, takich jak C#, Visual Basic, C++, i F#.
 
-Przez kompilacjom kodu, można szybko zidentyfikować błędy kompilacji, takie jak niepoprawna składnia, błędnie napisane słowa kluczowe i wpisz niezgodności. Można również szybko wykryć i poprawić błędy czasu wykonywania, takie jak błędy logiczne i semantyczne, dzięki częstym kompilacjom i uruchamianiu wersji debugowania kodu.
+Przez kompilacjom kodu, można szybko zidentyfikować błędy kompilacji, takie jak niepoprawna składnia, błędnie napisane słowa kluczowe i wpisz niezgodności. Można także wykryć i poprawić błędy czasu wykonywania, takie jak błędy logiczne i semantyczne, tworząc i uruchamianiu wersji debugowania kodu.
 
-Pomyślnej kompilacji jest zasadniczo weryfikacji, że kod źródłowy aplikacji zawiera poprawną składnię i wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki zostały rozwiązane. To tworzy plik wykonywalny aplikacji, który można następnie pod kątem prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po w pełni przetestowano aplikację można skompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego procesu, zobacz [przewodnik: budowanie aplikacji](../ide/walkthrough-building-an-application.md).
+Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego procesu, zobacz [przewodnik: budowanie aplikacji](../ide/walkthrough-building-an-application.md).
 
 Używasz jednej z następujących metod do tworzenia aplikacji: środowiska IDE programu Visual Studio, narzędzia wiersza polecenia programu MSBuild i potoków usługi Azure:
 
@@ -37,6 +37,9 @@ Używasz jednej z następujących metod do tworzenia aplikacji: środowiska IDE 
 | Potoki usługi Azure | — Automatyzowanie procesu kompilacji w ramach potoku ciągłej integracji/ciągłego dostarczania.<br />-Zastosować testy automatyczne z każdą kompilacją.<br />-Zatrudniać praktycznie nieograniczona liczba zasobów w chmurze dla procesów kompilacji.<br />-Modyfikować przepływ kompilacji oraz tworzyć aktywności kompilacji, aby wykonywać zadania wysoce niestandardowe.|
 
 Dokumentacja w tej sekcji przechodzi w stan więcej szczegółowych informacji z procesu kompilacji oparte na środowisku IDE. Aby uzyskać więcej informacji o innych metodach, zobacz [MSBuild](../msbuild/msbuild.md) i [potoki Azure](/azure/devops/pipelines/index?view=vsts)odpowiednio.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [skompilować i utworzyć w programie Visual Studio dla komputerów Mac](/visualstudio/mac/compiling-and-building).
 
 ## <a name="overview-of-building-from-the-ide"></a>Omówienie tworzenia z poziomu środowiska IDE
 
@@ -57,3 +60,4 @@ Z tego miejsca możesz zapoznać się z wielu innych zadań:
 ## <a name="see-also"></a>Zobacz także
 
 - [(Kompilacja) kompilowanie projektów witryny sieci Web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Skompilować i utworzyć (Visual Studio dla komputerów Mac)](/visualstudio/mac/compiling-and-building)

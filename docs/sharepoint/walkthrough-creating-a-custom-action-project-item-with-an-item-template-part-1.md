@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878066"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296128"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1
   Możesz rozszerzyć systemu projektu programu SharePoint w programie Visual Studio, tworząc własny projekt typów elementów. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint w celu utworzenia akcji niestandardowej w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do **Akcje witryny** menu witryny programu SharePoint.  
@@ -298,7 +298,7 @@ ms.locfileid: "49878066"
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **source.extension.vsixmanifest** plik w projekcie CustomActionProjectItem, a następnie wybierz **Otwórz**.  
   
-     Program Visual Studio otwiera plik w edytorze manifestu. Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Program Visual Studio otwiera plik w edytorze manifestu. Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  W **nazwa produktu** wprowadź **niestandardowych akcji elementu projektu**.  
   
@@ -313,7 +313,7 @@ ms.locfileid: "49878066"
 6.  W **typu** wybierz **Microsoft.VisualStudio.ItemTemplate**.  
   
     > [!NOTE]  
-    >  Ta wartość odpowiada `ItemTemplate` elementu w pliku extension.vsixmanifest. Ten element umożliwia określenie podfolderu w pakiecie VSIX, zawierający szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [elementów właściwości ItemTemplate (schemat VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
+    >  Ta wartość odpowiada `ItemTemplate` elementu w pliku extension.vsixmanifest. Ten element umożliwia określenie podfolderu w pakiecie VSIX, zawierający szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [elementów właściwości ItemTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).  
   
 7.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   
@@ -326,7 +326,7 @@ ms.locfileid: "49878066"
 10. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   
@@ -420,7 +420,7 @@ ms.locfileid: "49878066"
     -   W `UrlAction` elementu, ustaw `Url` atrybut, co ilustruje poniższy przykład:  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  Wybierz **F5** klucza.  
@@ -430,7 +430,7 @@ ms.locfileid: "49878066"
     > [!NOTE]  
     >  Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisk, aby kontynuować debugowanie projektu.  
   
-4.  Na **Akcje witryny** menu, wybierz **Centrum deweloperów programu SharePoint**, sprawdź, czy witryny sieci Web zostanie otwarta przeglądarka http://msdn.microsoft.com/sharepoint/default.aspx, a następnie zamknij przeglądarkę sieci web.  
+4.  Na **Akcje witryny** menu, wybierz **Centrum deweloperów programu SharePoint**, sprawdź, czy witryny sieci Web zostanie otwarta przeglądarka https://docs.microsoft.com/sharepoint/dev/, a następnie zamknij przeglądarkę sieci web.  
   
 ## <a name="clean-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
  Po zakończeniu badania elementu projektu, należy usunąć szablonu elementu projektu w doświadczalnym wystąpieniu programu Visual Studio.  

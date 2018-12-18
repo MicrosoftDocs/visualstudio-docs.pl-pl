@@ -1,5 +1,5 @@
 ---
-title: 'Przygotowanie debugowania: C#, F # i Visual Basic typów projektów | Dokumentacja firmy Microsoft'
+title: 'Przygotowanie debugowania: C#, F#i typów projektów języka Visual Basic | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -25,26 +25,26 @@ helpviewer_keywords:
 - debugger, settings by project type
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54dc950c606a78f277252b30a57e5de8c796df15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 721d1571052c9e3acbf13e68e90bbfe3413b1b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274914"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800240"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Przygotowanie debugowania: typy projektów C#, F# i Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tematach w tej sekcji opisano sposób debugowania języka C#, F # i [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektu typów utworzonych przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony projektów.  
+W tematach w tej sekcji opisano sposób debugowania C#, F#, i [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektu typów utworzonych przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony projektów.  
   
  Należy zauważyć, że tych typów projektów, które tworzenia bibliotek DLL jako dane wyjściowe, zostały zgrupowane jako [debugowanie projektów DLL](../debugger/debugging-dll-projects.md) z powodu typowe funkcje, które współużytkują one.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Zalecane ustawienia właściwości](../debugger/managed-debugging-recommended-property-settings.md)  
- W tej sekcji opisano zalecane związanym z debugowaniem ustawienia właściwości dla projektów C#, F # i Visual Basic.  
+ W tej sekcji opisano zalecane związanym z debugowaniem ustawienia właściwości dla C#, F#i projektach języka Visual Basic.  
   
  [Aplikacje Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
  Opisuje projekt aplikacji Windows i zawiera instrukcje dotyczące debugowania, zmiana domyślnej konfiguracji debugowania i uruchamiania aplikacji poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i dołączanie do niego.  

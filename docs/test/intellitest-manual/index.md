@@ -1,5 +1,5 @@
 ---
-title: IntelliTest podręcznika | Narzędzia testowania Microsoft Developer
+title: Funkcja IntelliTest Reference Manual | Narzędzia do testów firmy Microsoft dla deweloperów
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,52 +11,52 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9534668ef5cf07388d6eefec9ef37a28593daaa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 982d54bec30e164a1b2017c7aa8a221ee56e19d0
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977451"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000601"
 ---
-# <a name="intellitest-reference-manual"></a>IntelliTest podręcznika
+# <a name="intellitest-reference-manual"></a>Funkcja IntelliTest Reference Manual
 
 ## <a name="contents"></a>Spis treści
 
 * **[Omówienie programu IntelliTest](introduction.md)**
-  - [Witaj świecie IntelliTest](introduction.md#the-hello-world-of-intellitest)
+  - [Hello World programu IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Ograniczenia](introduction.md#limitations)
     * [Nondeterminism](introduction.md#nondeterminism)
     * [Współbieżność](introduction.md#concurrency)
     * [Kod natywny](introduction.md#native-code)
-    * [Platformy](introduction.md#platform)
+    * [Platforma](introduction.md#platform)
     * [Język](introduction.md#language)
     * [Symbolicznych](introduction.md#symbolic-reasoning)
-    * [Śladów stosu niepoprawne](introduction.md#incorrect-stack-traces)
+    * [Ślady stosu niepoprawne](introduction.md#incorrect-stack-traces)
   - [Dalsze informacje](introduction.md#further-reading)<p>&nbsp;</p>
 
-* **[Rozpoczynanie pracy z IntelliTest](getting-started.md)**
+* **[Rozpoczynanie pracy z funkcją IntelliTest](getting-started.md)**
   - [Ważnych atrybutów](getting-started.md#important-attributes)
-  - [Ważne pomocnika statycznych klas](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [Ważne statyczne klasy pomocy](getting-started.md#helper-classes)<p>&nbsp;</p>
 
 * **[Generowanie testu](test-generation.md)**
   - [Generatory testu](test-generation.md#test-generators)
   - [Sparametryzowane testy jednostkowe](test-generation.md#parameterized-unit-testing)
-  - [Ogólny sparametryzowane testy jednostkowe](test-generation.md#generic-parameterized)
+  - [Ogólny sparametryzowanych testów jednostkowych](test-generation.md#generic-parameterized)
   - [Zezwalanie na wyjątki](test-generation.md#allowing-exceptions)
-  - [Testowanie typów wewnętrznych](test-generation.md#internal-types)
+  - [Testowanie typy wewnętrzne](test-generation.md#internal-types)
   - [Założenia i potwierdzeń](test-generation.md#assumptions-and-assertions)
   - [Warunek wstępny](test-generation.md#precondition)
-  - [Warunku końcowego](test-generation.md#postcondition)
+  - [Postcondition](test-generation.md#postcondition)
   - [Niepowodzenia testu](test-generation.md#test-failures)
-  - [Konfigurowanie i zniszcz](test-generation.md#setup-teardown)
+  - [Konfigurowanie i zatrzymywania](test-generation.md#setup-teardown)
   - [Dalsze informacje](test-generation.md#further-reading)<p>&nbsp;</p>
 
-* **[Generowanie wejściowych](input-generation.md)**
+* **[Generowanie danych wejściowych](input-generation.md)**
   - [Moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver)
   - [Pokrycie kodu dynamiczne](input-generation.md#dynamic-code-coverage)
-  - [Liczby całkowite i elementów przestawnych](input-generation.md#integers-and-floats)
+  - [Liczby całkowite i wartości zmiennoprzecinkowe](input-generation.md#integers-and-floats)
   - [Obiekty](input-generation.md#objects)
-  - [Tworzenie wystąpień istniejących klas](input-generation.md#existing-classes)
+  - [Utworzenie wystąpienia istniejących klas](input-generation.md#existing-classes)
   - [Widoczność](input-generation.md#visibility)
   - [Mocks sparametryzowane](input-generation.md#parameterized-mocks)
   - [Struktury](input-generation.md#structs)
@@ -64,7 +64,7 @@ ms.locfileid: "31977451"
   - [Uzyskiwanie dodatkowych danych wejściowych](input-generation.md#additional-inputs)
   - [Dalsze informacje](input-generation.md#further-reading)<p>&nbsp;</p>
 
-* **[Granice eksploracji](exploration-bounds.md)**
+* **[Wiązania eksploracji](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
   - [MaxConstraintSolverMemory](exploration-bounds.md#maxconstraintsolvermemory)
   - [MaxBranches](exploration-bounds.md#maxbranches)
@@ -94,9 +94,9 @@ ms.locfileid: "31977451"
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
   - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
 
-* **[Ustawienia wykresu kaskadowego](settings-waterfall.md)**
+* **[Kaskadowy model ustawień](settings-waterfall.md)**
 
-* **[Klasy statyczne pomocy](static-helper-classes.md)**
+* **[Statyczne klasy pomocy](static-helper-classes.md)**
   - [PexAssume](static-helper-classes.md#pexassume)
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
@@ -112,19 +112,19 @@ ms.locfileid: "31977451"
   - [Przekroczono MaxRuns](warnings-and-errors.md#maxruns-exceeded)
   - [Przekroczono MaxRunsWithoutNewTests](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
   - [Nie można skonkretyzować rozwiązania](warnings-and-errors.md#cannot-concretize-solution)
-  - [Potrzebujesz pomocy do konstruowania obiektu](warnings-and-errors.md#help-construct)
+  - [Potrzebna pomoc do konstruowania obiektu](warnings-and-errors.md#help-construct)
   - [Potrzebujesz pomocy w celu odnalezienia typów](warnings-and-errors.md#help-types)
-  - [Można używać typu odgadnąć](warnings-and-errors.md#usable-type-guessed)
+  - [Można używać typu złamać](warnings-and-errors.md#usable-type-guessed)
   - [Nieoczekiwany błąd podczas eksploracji](warnings-and-errors.md#unexpected-exploration)
-  - [TargetInvocationException](warnings-and-errors.md#targetinvocationexception)
+  - [Targetinvocationexception —](warnings-and-errors.md#targetinvocationexception)
   - [Niezinstrumentowanej metody o nazwie](warnings-and-errors.md#uninstrumented-method-called)
-  - [Wywołano metodę zewnętrznych](warnings-and-errors.md#external-method-called)
-  - [Wywołuje metody niemożliwej](warnings-and-errors.md#uninstrumentable-method-called)
-  - [Problem testowania](warnings-and-errors.md#testability-issue)
-  - [Ograniczenia](warnings-and-errors.md#limitation)
-  - [Zaobserwowano niezgodność wywołań](warnings-and-errors.md#observed-call-mismatch)
+  - [Zewnętrzne metodę o nazwie](warnings-and-errors.md#external-method-called)
+  - [Niemożliwy do Instrumentacji metodę o nazwie](warnings-and-errors.md#uninstrumentable-method-called)
+  - [Problem z testowalnością](warnings-and-errors.md#testability-issue)
+  - [Ograniczenie](warnings-and-errors.md#limitation)
+  - [Zaobserwowana niezgodność wywołań](warnings-and-errors.md#observed-call-mismatch)
   - [Wartość przechowywana w polu statycznym](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
 
-Publikowania własnych pomysłów i funkcji żądań na  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

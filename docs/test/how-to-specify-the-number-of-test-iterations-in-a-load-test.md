@@ -1,5 +1,5 @@
 ---
-title: Określanie liczby iteracji testowych w ustawieniach uruchamiania testów obciążenia w programie Visual Studio
+title: Określanie liczby iteracji testowych w ustawieniach uruchamiania testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a94a5681c0348e6e08f9d777ecebaa3e69886cfe
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e250096a99cfc272cd23b58bf0f7b70eeb3a7c9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379499"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059843"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Porady: Określanie liczby iteracji testowych w teście obciążeniowym, ustawienia uruchamiania
 
@@ -27,6 +27,7 @@ Za pomocą **edytora testu obciążenia**, można edytować **iteracji testu** w
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Aby określić liczbę iteracji testowych w ustawieniach testu
 

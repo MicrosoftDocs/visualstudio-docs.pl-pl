@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835991"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064300"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Porady: zbieranie danych wydajności dotyczących witryny sieci web
 
@@ -79,11 +79,11 @@ Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!IN
 
 5. W **jakim adresem URL lub ścieżką będzie działała aplikacja sieci web** na trzeciej stronie kreatora, wprowadź adres URL do strony głównej aplikacji, a następnie kliknij **dalej**.
 
-   - Dla witryny sieci Web oparte na serwerze (IIS), wpisz adres URL, taki jak **<http://localhost/MySite/default.aspx>**. Powoduje to, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji na komputerze lokalnym w katalogu głównym aplikacji MySite do profilowania i default.aspx strony w danej lokacji można uruchomić w przeglądarce Internet Explorer, aby rozpocząć sesję.
+   - Dla witryny sieci Web oparte na serwerze (IIS), wpisz adres URL, taki jak **< `http://localhost/MySite/default.aspx` >**. Powoduje to, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji na komputerze lokalnym w katalogu głównym aplikacji MySite do profilowania i default.aspx strony w danej lokacji można uruchomić w przeglądarce Internet Explorer, aby rozpocząć sesję.
 
-   - Dla witryny sieci Web opartą na plikach, wpisz ścieżkę, taką jak pliku / / /**c:\WebSites\MySite\default.aspx**. Powoduje to, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji znajdującym się w c:\webSites\MySite do profilowania i strony http://localhost:nnnn/MySite/default.aspx mają być uruchamiane w programie Internet Explorer, aby rozpocząć sesję.
+   - Dla witryny sieci Web opartą na plikach, wpisz ścieżkę, taką jak pliku / / /**c:\WebSites\MySite\default.aspx**. Powoduje to, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji znajdującym się w c:\webSites\MySite do profilowania i strony `http://localhost:nnnn/MySite/default.aspx` mają być uruchamiane w programie Internet Explorer, aby rozpocząć sesję.
 
-   - Dla zewnętrznych witryn, które chcesz zbierać danych dotyczących JavaScript, wpisz adres URL, na przykład http://www.contoso.com.
+   - Dla zewnętrznych witryn, które chcesz zbierać danych dotyczących JavaScript, wpisz adres URL, na przykład `http://www.contoso.com`.
 
      Aby uzyskać więcej informacji, Wyświetl strony właściwości dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] docelowy plik binarny.
 

@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847581"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248234"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
   Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowania i debugowania innych rodzajów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [skompilować i utworzyć w programie Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -100,7 +100,7 @@ ms.locfileid: "49847581"
 ## <a name="change-the-platform-target"></a>Zmiana platformy docelowej  
  Domyślnie platforma docelowa dla projektów pakietu Office jest **dowolny Procesor**. Zazwyczaj nie należy zmieniać tego ustawienia. Rozwiązań pakietu Office, które są tworzone za pomocą **dowolny Procesor** platformę docelową, ustawienia uruchamiania w 32-bitowych i 64-bitowych wersjach pakietu Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
- Platforma docelowa x64 należy ustawić tylko wtedy, gdy tworzysz rozwiązanie, które będzie uruchamiane tylko w 64-bitowe wersje programu Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], i rozwiązania wywołań natywnych interfejsów API w 64-bitowych. Aby uzyskać więcej informacji o zmienianiu ustawienie obiektu docelowego platformy, zobacz [porady: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).  
+ Platforma docelowa x64 należy ustawić tylko wtedy, gdy tworzysz rozwiązanie, które będzie uruchamiane tylko w 64-bitowe wersje programu Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], i rozwiązania wywołań natywnych interfejsów API w 64-bitowych. Aby uzyskać więcej informacji o zmienianiu ustawienie obiektu docelowego platformy, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).  
   
  Jeśli ustawisz x64 platformę docelową rozwiązania nie będzie działać w 32-bitowe wersje systemu Windows lub pakietu Office. X64 platformy docelowej wymaga rozwiązanie do uruchamiania w procesie 64-bitowym.  
   
@@ -112,8 +112,8 @@ ms.locfileid: "49847581"
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)|Przedstawia informacje o zagadnieniach dotyczących debugowanie projektów pakietu Office.|  
-|[Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Pokazuje, jak utworzyć podstawowe dostosowanie poziomu dokumentu dla programu Excel.|  
-|[Porady: ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Opisuje sposób ponownie włączyć dodatek narzędzi VSTO dla programów trudne lub nietrwałe wyłączono.|  
+|[Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Pokazuje, jak utworzyć podstawowe dostosowanie poziomu dokumentu dla programu Excel.|  
+|[Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Opisuje sposób ponownie włączyć dodatek narzędzi VSTO dla programów trudne lub nietrwałe wyłączono.|  
 |[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji o tworzeniu rozwiązań pakietu Office i informacji na temat roli zestawy w rozwiązaniu.|  
   
   

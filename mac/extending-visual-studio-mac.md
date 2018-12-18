@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900673"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295140"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozszerzanie programu Visual Studio dla komputerów Mac
 
@@ -23,9 +23,9 @@ Aby dostosować Visual Studio dla komputerów Mac, można utworzyć pakietu rozs
 
 ![Architektura dodatków](media/extending-visual-studio-mac-addin1.png)
 
-Aby pakiet rozszerzenia do tworzenia w programie Visual Studio dla komputerów Mac musi mieć rozszerzenia, które opracowano na podstawie istniejące punkty rozszerzenia programu Visual Studio dla komputerów Mac środowiska IDE. Gdy pakiet rozszerzenia opiera się na punkt rozszerzenia zdefiniowane na hoście dodatek, jest nazywany ma _zależności_ korzystać z tego pakietu rozszerzenia.
+Aby pakiet rozszerzenia do tworzenia w programie Visual Studio dla komputerów Mac musi mieć rozszerzenia, które opracowano na podstawie istniejące punkty rozszerzenia programu Visual Studio dla komputerów Mac środowiska IDE. Gdy pakiet rozszerzenia opiera się na punkt rozszerzenia zdefiniowane na hoście dodatek, jest nazywany ma _zależności_ korzystać z tego pakietu rozszerzenia.
 
-Zaletą ten projekt jest, czy Visual Studio for Mac jest rozszerzalny — istnieje wiele punktów rozszerzenia, które mogą być wbudowane w system za pomocą niestandardowego rozszerzenia pakietów. Bieżące pakiety rozszerzeń przykładem obsługę języka C# i F #, debuger narzędzia i szablony projektów.
+Zaletą ten projekt jest, czy Visual Studio for Mac jest rozszerzalny — istnieje wiele punktów rozszerzenia, które mogą być wbudowane w system za pomocą niestandardowego rozszerzenia pakietów. Bieżące pakiety rozszerzeń przykłady obsługi C# i F#debugera narzędzia i szablony projektów.
 
 > [!NOTE]
 > **Uwaga**: Jeśli masz projekt dodatku producent, który został utworzony przed Maker dodatek 1.2, chcesz przeprowadzić migrację projektu, co zostało opisane w krokach [tutaj](https://mhut.ch/addinmaker/1.2).
@@ -52,13 +52,13 @@ Ponadto dodatkowe informacje można dodać za pomocą dodatku węzeł odniesieni
 
 ![Wstaw datę zrzut ekranu](media/extending-visual-studio-mac-addin13.png)
 
-Mają również odpowiadające im `assembly:AddinDependency ` atrybuty dodawane w czasie kompilacji. Po deklaracji metadanych i zależności w miejscu, można skoncentrować się na podstawowe bloki konstrukcyjne pakietu rozszerzenia.
+Mają również odpowiadające im `assembly:AddinDependency` atrybuty dodawane w czasie kompilacji. Po deklaracji metadanych i zależności w miejscu, można skoncentrować się na podstawowe bloki konstrukcyjne pakietu rozszerzenia.
 
 ## <a name="extensions-and-extension-points"></a>Rozszerzenia i punkty rozszerzenia
 
 Punkt rozszerzenia jest symbolem zastępczym, który definiuje strukturę danych (typ), podczas rozszerzenie definiuje danych, który jest zgodny do struktury, określony przez punkt określonego rozszerzenia. Punkty rozszerzenia Określ, jaki typ rozszerzenia mogą akceptować w jego deklaracji. Rozszerzenia są zadeklarowane za pomocą nazwy typu lub ścieżki rozszerzenia. Zobacz [odwołania punktu rozszerzenia](https://github.com/mono/mono-addins/wiki/Extension-Points) dla uzyskać szczegółowe informacje na temat tworzenia punktu rozszerzenia, które są potrzebne.
 
-Architektura punktu rozszerzenia/rozszerzenia przechowuje rozwoju Visual Studio dla komputerów Mac, szybka, modularna. 
+Architektura punktu rozszerzenia/rozszerzenia przechowuje rozwoju Visual Studio dla komputerów Mac, szybka, modularna.
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -163,3 +163,7 @@ Aby uzyskać informacji na temat zakresu obszarów, które są dostępne dla roz
 
 > [!NOTE]
 > Obecnie pracujemy nad ulepszaniem scenariuszy rozszerzalności programu Visual Studio dla komputerów Mac. Jeśli tworzysz rozszerzeń i uzyskać dodatkowe informacje lub chcesz przekazać opinię, wypełnij [programu Visual Studio do tworzenia rozszerzenia Mac](https://aka.ms/vsmac-extensions-survey) formularza.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Programowanie rozszerzeń programu Visual Studio (na Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

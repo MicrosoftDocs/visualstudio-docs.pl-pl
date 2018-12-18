@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Wybieranie repozytorium wyników testów obciążeniowych w programie Visual Studio'
+title: 'Porady: wybieranie repozytorium wyników testu obciążenia'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25db0c85f014aa92c103f4afbb0192c5cb57c659
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371124"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059976"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Porady: Wybieranie repozytorium wyników testu obciążenia
 
 Nie jesteś ograniczony do magazynu wyników lokalnych. Często testy obciążenia są uruchamiane na zbiorze zdalnym komputerów agentów. Agenci, wraz z kontrolerem, można wygenerować bardziej symulowane obciążenie niż dowolnego pojedynczego komputera. Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
 Wyniki testów z agentów lub z komputera lokalnego można zapisać na dowolnym serwerze SQL, na którym utworzono Magazyn wyników testu obciążenia. W obu przypadkach należy określić, której chcesz przechowywać wyniki testu obciążenia przy użyciu **Administrowanie kontrolerami testów** okna.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identyfikowanie magazynu wyników dla danych testu obciążenia
 

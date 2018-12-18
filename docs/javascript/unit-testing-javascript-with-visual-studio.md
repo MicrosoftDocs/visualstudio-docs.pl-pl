@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219383"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766538"
 ---
 # <a name="unit-testing-in-nodejs"></a>Testowanie jednostek w środowisku Node.js
 
@@ -33,7 +33,7 @@ Obsługiwane platformy to:
 > [!WARNING]
 > Problem w taśmy obecnie zapobiega testy taśmy uruchamianiu. Jeśli [361 # żądania Ściągnięcia](https://github.com/substack/tape/pull/361) scalone, powinien zostać rozwiązany.
 
-Jeśli w swojej ulubionej platformy nie jest obsługiwana, zobacz [obsługę środowiska testów jednostkowych](#addingFramework) informacji dotyczących dodawania obsługi. 
+Jeśli w swojej ulubionej platformy nie jest obsługiwana, zobacz [obsługę środowiska testów jednostkowych](#addingFramework) informacji dotyczących dodawania obsługi.
 
 ## <a name="write-unit-tests"></a>Pisanie testów jednostkowych
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Jeśli otrzymasz komunikat o błędzie informujący, że *vstest.console.exe* nie można znaleźć, upewnij się, został otwarty wiersz polecenia dla deweloperów i nie regularne wiersza polecenia. 
+> Jeśli otrzymasz komunikat o błędzie informujący, że *vstest.console.exe* nie można znaleźć, upewnij się, został otwarty wiersz polecenia dla deweloperów i nie regularne wiersza polecenia.
 
 ## <a name="addingFramework"></a>Dodano obsługę środowiska testów jednostkowych
 
@@ -149,7 +149,7 @@ Na stałe, na przykład `find_tests` i `run_tests` implementacji, zobacz impleme
 Odnajdywanie struktur testowania występuje podczas uruchamiania programu Visual Studio. Jeśli struktura zostanie dodany po uruchomieniu programu Visual Studio, uruchom ponownie Visual Studio, aby wykryć platformę. Jednak nie trzeba ponownie uruchomić podczas wprowadzania zmian do wdrożenia.
 
 ## <a name="unit-tests-in-other-project-types"></a>Testy jednostkowe w innych typów projektów
-Nie jest ograniczona do pisania testów jednostkowych w właśnie projektach środowiska Node.js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projekt C# lub VB tych testów zostaną wyliczone i mogły być uruchamiane przy użyciu okna Eksploratora testów.
+Nie jest ograniczona do pisania testów jednostkowych w właśnie projektach środowiska Node.js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego C# lub projekcie Visual Basic tych testów zostaną wyliczone i mogły być uruchamiane przy użyciu okna Eksploratora testów.
 
 Aby je włączyć, kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań, wybierz polecenie **Zwolnij projekt**, a następnie wybierz **edycji projektu**. Następnie w pliku projektu należy dodać następujące dwa elementy do grupy właściwości.
 

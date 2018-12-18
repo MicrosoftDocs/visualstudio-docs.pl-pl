@@ -12,51 +12,55 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064853"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349377"
 ---
 # <a name="quick-actions"></a>Szybkie akcje
 
-Szybkie akcje pozwalają łatwo zrefaktoryzuj, generowanie lub modyfikację kodu za pomocą jednej akcji. Szybkie akcje są dostępne w języku C#, [C++](/cpp/ide/writing-and-refactoring-code-cpp)i plików kodu programu Visual Basic. Niektóre akcje są specyficzne dla języka, a inne dotyczą wszystkich wersji językowych.
+Szybkie akcje pozwalają na łatwe Refaktoryzacja, generowanie lub inny sposób modyfikować kodu za pomocą jednej akcji. Szybkie akcje są dostępne dla C#, [C++](/cpp/ide/writing-and-refactoring-code-cpp)i plikach kodu języka Visual Basic. Niektóre akcje są specyficzne dla języka, a inne dotyczą wszystkich wersji językowych.
 
 Szybkie akcje może służyć do:
 
-- Zastosuj poprawkę kodu [analizator kodu](../code-quality/roslyn-analyzers-overview.md) naruszenia reguły
-- [Pomiń](../code-quality/use-roslyn-analyzers.md) naruszeniem reguł analizatora kodu
-- Zastosuj refaktoryzacji (na przykład [wbudowanej zmiennej tymczasowej](../ide/reference/inline-temporary-variable.md))
-- Generowanie kodu (na przykład [wprowadzić zmienną lokalną](../ide/reference/introduce-local-variable.md))
+- Zastosuj poprawkę kodu [analizator kodu](../code-quality/roslyn-analyzers-overview.md) naruszenie reguły
+- [Pomiń](../code-quality/use-roslyn-analyzers.md) naruszenie reguły analizator kodu
+- Stosowanie refaktoryzacji (na przykład [wbudowanej zmiennej tymczasowej](../ide/reference/inline-temporary-variable.md))
+- Generuj kod (na przykład [wprowadzanie zmiennej lokalnej](../ide/reference/introduce-local-variable.md))
 
-Szybkie akcje może zostać zastosowana za pomocą żarówkę ![ikoną żarówki](media/light-bulb-icon.png) lub śrubokręt ![ikona śrubokręt](media/screwdriver-icon.png) ikony lub naciskając klawisz **Ctrl** + **.** gdy kursor jest w wierszu kodu, w którym akcja jest dostępna. Zostanie wyświetlony błąd żarówki ![ikoną żarówki błąd](media/error-light-bulb-icon.png) Jeśli istnieje czerwona falista, co wskazuje na błąd i Visual Studio ma Poprawka dostępna dla tego błędu.
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Refactoring (Visual Studio dla komputerów Mac)](/visualstudio/mac/refactoring).
 
-Dla żadnego języka stron trzecich mogą zapewnić diagnostyki niestandardowej i sugestie, na przykład jako część zestawu SDK i programu Visual Studio żarówki podświetlony, na podstawie tych reguł.
+Szybkie akcje, które można zastosować za pomocą żarówki ![ikoną żarówki](media/light-bulb-icon.png) lub śrubokręt ![ikonę śrubokręt](media/screwdriver-icon.png) ikony, lub naciskając **Ctrl** + **.** gdy kursor jest ustawiony na wiersz kodu, w którym akcja jest dostępna. Zostanie wyświetlony błąd żarówki z funkcją ![ikona żarówki z funkcją błędu](media/error-light-bulb-icon.png) czy istnieje czerwona fala wskazująca na wystąpienie błędu, a program Visual Studio zawiera poprawki dla tego błędu.
+
+W dowolnym języku innych firm może zapewnić Diagnostyka niestandardowa i sugestie, na przykład jako część zestawu SDK i programu Visual Studio żarówki dostarczone, na podstawie tych reguł.
 
 ## <a name="icons"></a>Ikony
 
-Ikona wyświetlana podczas szybkiego akcja jest dostępna oznacza wskazanie typu poprawkę lub refaktoryzacji, który jest dostępny. *Śrubokręt* ![ikona śrubokręt](media/screwdriver-icon.png) ikona tylko wskazuje brak dostępnych akcji do zmiany kodu, że nie należy zawsze używać ich. *Żółta żarówka* ![ikoną żarówki](media/light-bulb-icon.png) ikona wskazuje brak dostępnych akcji które *powinien* zrobić, aby poprawić kod. *Błąd żarówki* ![ikoną żarówki błąd](media/error-light-bulb-icon.png) ikona wskazuje brak dostępnych akcji, która rozwiązuje wystąpił błąd w kodzie.
+Ikona, który jest wyświetlany, gdy dostępna jest szybka akcja oznacza wskazanie typu poprawkę lub refaktoryzacji, która jest dostępna. *Śrubokręt* ![ikonę śrubokręt](media/screwdriver-icon.png) ikona wskazuje, wystarczy, że istnieją akcje dostępne zmienić kod, ale niekoniecznie nie należy używać. *Żółta ikona żarówki* ![ikoną żarówki](media/light-bulb-icon.png) ikona wskazuje, akcje są dostępne, *powinien* czy, aby poprawić kod. *Błąd żarówki* ![ikona żarówki z funkcją błędu](media/error-light-bulb-icon.png) ikona wskazuje, jest dostępna akcja, która naprawia błąd w kodzie.
 
-## <a name="to-see-a-light-bulb-or-screwdriver"></a>Aby wyświetlić żarówkę lub śrubokręt
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Aby zobaczyć żarówkę lub śrubokręt
 
-- Jeśli dostępna jest poprawka żarówki samorzutnie są wyświetlane, gdy wskaźnik myszy w lokalizacji wystąpił błąd.
+- Jeśli dostępna jest poprawka, żarówki spontanicznie wyświetlane po umieszczeniu wskaźnika myszy w lokalizacji błędu.
 
-   ![Żarówki z ustawiając kursor myszy](../ide/media/vs2015_lightbulb_hover.png)
+   ![Ikona żarówki z umieszczeniu wskaźnika myszy](../ide/media/vs2015_lightbulb_hover.png)
 
-- Żarówki i śrubokręty są wyświetlane na lewym marginesie edytora po Przesuń karetkę do wiersza kodu, dla którego szybkie akcja jest dostępna.
+- Żarówki i śrubokręty są wyświetlane na lewym marginesie edytor, gdy Przenieś karetkę do wiersza kodu, dla których dostępna jest szybka akcja.
 
-- Naciśnij klawisz **Ctrl**+**.** dowolne miejsce na linię, aby wyświetlić listę dostępnych szybkie akcje i refaktoryzacje.
+- Naciśnij klawisz **Ctrl**+**.** dowolne miejsce na wiersz, aby wyświetlić listę dostępnych szybkie akcje i refaktoryzacje.
 
 ## <a name="to-see-potential-fixes"></a>Aby wyświetlić potencjalne rozwiązania
 
-Wybierz albo strzałkę w dół obok żarówkę lub **Pokaż potencjalne rozwiązania** łącze, aby wyświetlić listę szybkie akcje, które są dostępne.
+Wybierz albo strzałkę w dół obok ikony żarówki lub **Pokaż potencjalne rozwiązania** łącze, aby wyświetlić listę szybkie akcje, które są dostępne.
 
-![Żarówki rozwinięty](../ide/media/vs2015_lightbulb_hover_expanded.png)
+![Ikona żarówki rozwinięte](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu w programie Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Typowe szybkie akcje](../ide/common-quick-actions.md)
 - [Style kodu i szybkie akcje](../ide/code-styles-and-quick-actions.md)
-- [Zapis i refaktoryzacji kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Pisanie i Refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Refaktoryzacja (Visual Studio dla komputerów Mac)](/visualstudio/mac/refactoring)

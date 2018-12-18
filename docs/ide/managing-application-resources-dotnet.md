@@ -19,16 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381650"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348138"
 ---
 # <a name="manage-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 
 Pliki zasobów są pliki, które są częścią aplikacji, ale nie są kompilowane, na przykład pliki ikon lub pliki audio. Ponieważ te pliki nie są częścią procesu kompilacji, można je zmienić, bez konieczności ponownego kompilowania plików binarnych. Jeśli planowane jest zlokalizować aplikację, należy użyć plików zasobów dla wszystkich ciągów i innych zasobów, które muszą zostać zmienione podczas lokalizowania aplikacji.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [zarządzanie zasobami aplikacji (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-app-resources).
 
 Aby uzyskać więcej informacji na temat zasobów w aplikacjach klasycznych .NET, zobacz [zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index).
 
@@ -52,3 +55,4 @@ Zasoby są zarządzane w różny sposób w projektach platformy .NET niż w inny
 ## <a name="see-also"></a>Zobacz także
 
 - [Zasoby w aplikacjach komputerowych (.NET Framework)](/dotnet/framework/resources/index)
+- [Zarządzanie zasobami aplikacji (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-app-resources)

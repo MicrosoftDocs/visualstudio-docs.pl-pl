@@ -1,5 +1,5 @@
 ---
-title: 'Przykładowy plik XSD: Schema proste'
+title: 'Przykładowy plik XSD: Prosty schemat'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -17,9 +17,9 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572702"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Przykładowy plik XSD: schema proste
+# <a name="sample-xsd-file-simple-schema"></a>Przykładowy plik XSD: prosty schemat
 
-Następujący plik XSD jest używany w przykładach różnych w dokumentacji projektanta schematu XSD. Ten plik jest schematu zamówienia zakupu proste.
+Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu proste.
 
 ```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"

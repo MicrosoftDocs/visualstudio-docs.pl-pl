@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858482"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349481"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Dodawaniem odwołań za pomocą NuGet a extension SDK
 
-Możesz podać pakiet do użycia w ramach projektów programu Visual Studio za pomocą rozszerzenie NuGet w programie Visual Studio albo zestaw software development kit (SDK). Poprzez opisanie podobieństwa i różnice między dwa mechanizmy, w tym temacie mogą pomóc wybrać najlepszy dla zadania.
+Możesz podać pakiet do użycia w ramach projektów programu Visual Studio za pomocą NuGet lub zestaw software development kit (SDK). Poprzez opisanie podobieństwa i różnice między dwa mechanizmy, w tym artykule może pomóc wybrać najlepszy dla zadania.
 
 - NuGet jest systemem zarządzania pakietami open source, który upraszcza dołączanie biblioteki do rozwiązania projektu. Aby uzyskać więcej informacji, zobacz [dokumentacja programu NuGet](/nuget).
 
@@ -27,7 +27,6 @@ Możesz podać pakiet do użycia w ramach projektów programu Visual Studio za p
 ## <a name="which-mechanism-should-i-use"></a>Jakie działania należy używać?
 
 Poniższa tabela ułatwia porównanie odwołujący się funkcji odwołujący się funkcje pakietu nuget zestawu SDK.
-
 
 | Funkcja | Obsługa zestawu SDK | Informacje o zestawu SDK | Obsługę pakietów NuGet | Informacje o NuGet |
 | - | - | - |---------------| - |
@@ -71,3 +70,4 @@ Poniższa tabela ułatwia porównanie odwołujący się funkcji odwołujący si�
 ## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)
+- [Zarządzanie odwołaniami w projekcie (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-references-in-a-project)

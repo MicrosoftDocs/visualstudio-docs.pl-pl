@@ -13,16 +13,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc0783ad10b01e8dcc7f5f85fa627ec142334597
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672343"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstu, C/C++, eksperymentalne
 
-Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii IntelliSense i bazy danych przeglądania w przypadku programowania w języku C lub C++. Te funkcje są naprawdę eksperymentalne i może modyfikację lub usunięta z programu Visual Studio w przyszłej wersji. W tym temacie opisano opcje w programie Visual Studio 2017. Dla programu Visual Studio 2015, zobacz [opcje, Edytor tekstu, C/C++, eksperymentalne](https://msdn.microsoft.com/library/mt591979.aspx)
+Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii IntelliSense i bazy danych przeglądania w przypadku programowania w języku C lub C++. Te funkcje są naprawdę eksperymentalne i może modyfikację lub usunięta z programu Visual Studio w przyszłej wersji. W tym temacie opisano opcje w programie Visual Studio 2017. W programie Visual Studio 2015 wybierz **2015** w selektorze powyżej spisu treści.
 
 Aby uzyskać dostęp do tej strony właściwości, naciśnij klawisze **Control + Q** aktywować `Quick Launch` , a następnie wpisz "eksperymentalne". Szybkie uruchamianie znajdzie strony po kilka pierwszych liter. Możesz również uzyskać do niego, wybierając **narzędzia | Opcje** i rozwijając **edytora tekstów**, następnie **C/C++**, a następnie wybierając **eksperymentalne**.
 
@@ -57,4 +57,4 @@ Możesz przeglądać funkcje edytora dodatkowy tekst w [Visual Studio Marketplac
 ## <a name="see-also"></a>Zobacz także
 
 - [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refaktoryzacja języka C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Refaktoryzacja języka C++ (VC Blog)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)

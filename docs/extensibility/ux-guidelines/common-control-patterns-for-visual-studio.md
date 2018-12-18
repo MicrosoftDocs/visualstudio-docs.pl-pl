@@ -73,9 +73,9 @@ Przede wszystkim należy wziąć pod uwagę podczas style kontrolki jest, czy fo
   
 -   Pól danych wejściowych z tego względu celu dopasowania do zawartości, nie Dopasuj szerokość okna, w którym są wyświetlane, ani też arbitralnie jest zgodna z długością pola długie, takich jak ścieżki. Długość może to oznaczać użytkownikowi ograniczenia dotyczące liczby znaków są dozwolone w tym polu.  
   
-     ![Nieprawidłowe pole wejściowe, długość: jest mało prawdopodobne, że nazwa będzie długich. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Nieprawidłowe pole wejściowe, długość: jest mało prawdopodobne, że nazwa będzie długich.
+     ![Nieprawidłowe pole wejściowe, długość: jest mało prawdopodobne, że nazwa będzie długich. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Nieprawidłowe pole wejściowe, długość: jest mało prawdopodobne, że nazwa będzie długich.
   
-     ![Popraw długość pola wejściowego: pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Popraw długość pola wejściowego: pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości.
+     ![Popraw długość pola wejściowego: pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Popraw długość pola wejściowego: pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Pola kombi i list rozwijanych  
 Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wskazówki dotyczące list rozwijanych i pól kombi](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wskazówk
 #### <a name="layout"></a>Układ  
 Pola kombi i listy rozwijane z tego względu celu dopasowania do zawartości, nie Dopasuj szerokość okna, w którym są wyświetlane, ani też arbitralnie jest zgodna z długością pola długie, takich jak ścieżki.  
   
-![Niepoprawne: szerokość listy rozwijanej jest za długa dla zawartości, która będzie wyświetlana. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Niepoprawne: szerokość listy rozwijanej jest za długa dla zawartości, która będzie wyświetlana.
+![Niepoprawne: szerokość listy rozwijanej jest za długa dla zawartości, która będzie wyświetlana. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Niepoprawne: szerokość listy rozwijanej jest za długa dla zawartości, która będzie wyświetlana.
   
-![Poprawne: z listy rozwijanej jest o rozmiarze do Zezwalaj na wzrost tłumaczenia, ale nie niepotrzebnie długie. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Poprawne: z listy rozwijanej jest o rozmiarze do Zezwalaj na wzrost tłumaczenia, ale nie niepotrzebnie długie. 
+![Poprawne: z listy rozwijanej jest o rozmiarze do Zezwalaj na wzrost tłumaczenia, ale nie niepotrzebnie długie. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Poprawne: z listy rozwijanej jest o rozmiarze do Zezwalaj na wzrost tłumaczenia, ale nie niepotrzebnie długie. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Pola wyboru  
 Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wskazówki dotyczące wyboru](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wskazówk
   
 -   Dostosowanie pól wyboru z linią bazową elementu pierwszego wiersza tekstu.  
   
-     ![Niepoprawne: pole wyboru skupia się na tekst. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Niepoprawne: pole wyboru skupia się na tekst.
+     ![Niepoprawne: pole wyboru skupia się na tekst. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Niepoprawne: pole wyboru skupia się na tekst.
   
-     ![Poprawne: pole wyboru jest powiązana z pierwszego wiersza tekstu. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Poprawne: pole wyboru jest powiązana z pierwszego wiersza tekstu.
+     ![Poprawne: pole wyboru jest powiązana z pierwszego wiersza tekstu. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Poprawne: pole wyboru jest powiązana z pierwszego wiersza tekstu.
   
 ###  <a name="BKMK_RadioButtons"></a> Przyciski radiowe  
 Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wytyczne dotyczące przycisków radiowych](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ Kontrolki widoku drzewa powinna być zgodna projektowania ekspander używane prz
 #### <a name="selection"></a>Wybór  
 Po wybraniu węzła w widoku drzewa podświetlenie powinni rozwinąć pozycję do pełnej szerokości kontrolki widoku drzewa. Pomoże to użytkownikom jednoznacznie zidentyfikować element, który został wybrany. Wybór kolorów powinny odzwierciedlać bieżący motyw programu Visual Studio.  
   
-![Poprawny: wyróżnianie wybranego węzła pasuje całą szerokość kontrolki widoku drzewa. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Poprawny: wyróżnianie wybranego węzła pasuje całą szerokość kontrolki widoku drzewa.
+![Poprawny: wyróżnianie wybranego węzła pasuje całą szerokość kontrolki widoku drzewa. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Poprawny: wyróżnianie wybranego węzła pasuje całą szerokość kontrolki widoku drzewa.
   
-![Wprowadzony tekst jest niepoprawny: wyróżnianie wybranego węzła nie mieści się całą szerokość kontrolki widoku drzewa. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Wprowadzony tekst jest niepoprawny: wyróżnianie wybranego węzła nie mieści się całą szerokość kontrolki widoku drzewa.
+![Wprowadzony tekst jest niepoprawny: wyróżnianie wybranego węzła nie mieści się całą szerokość kontrolki widoku drzewa. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Wprowadzony tekst jest niepoprawny: wyróżnianie wybranego węzła nie mieści się całą szerokość kontrolki widoku drzewa.
   
 #### <a name="icons"></a>Ikony  
 Ikony powinny można używać tylko w kontrolki widoku drzewa, jeśli asystują w wizualnie identyfikowania różnic między elementami. Ogólnie rzecz biorąc ikony, należy używać tylko w heterogenicznych listy, w których ikony przenoszą informacje do rozróżniania typów elementów. Na liście jednorodnych korzystali z ikon często może być traktowany jak hałas i należy ich unikać. W takim przypadku ikona grupy (nadrzędnego) można uzyskać na typ elementów w nim. Wyjątkiem od tej reguły będzie, jeśli ikony są dynamiczne i jest używany do wskazania stanu.  
@@ -356,14 +356,14 @@ Ikony powinny można używać tylko w kontrolki widoku drzewa, jeśli asystują 
 #### <a name="scroll-bars"></a>Paski przewijania  
 Paski przewijania zawsze powinna być ukryta, jeśli zawartość mieści się w kontrolce widoku drzewa. Dopuszczalne jest używania pasków przewijania w oknie przewijany być ukryty lub półprzezroczystym i są wyświetlane, gdy okno zawierające widok drzewa jest ustawiony fokus lub po aktywowaniu drzewa wyświetlić sam.  
   
-![Zarówno i poziome paski przewijania są wyświetlane, ponieważ zawartość przekroczenia limitów kontrolki widoku drzewa. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Zarówno i poziome paski przewijania są wyświetlane, ponieważ zawartość przekroczenia limitów kontrolki widoku drzewa.
+![Zarówno i poziome paski przewijania są wyświetlane, ponieważ zawartość przekroczenia limitów kontrolki widoku drzewa. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Zarówno i poziome paski przewijania są wyświetlane, ponieważ zawartość przekroczenia limitów kontrolki widoku drzewa.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Interakcje widok drzewa  
   
 #### <a name="context-menus"></a>Menu kontekstowe  
 Węzeł drzewa widoku może ujawnić podmenu Opcje w menu kontekstowym. Zwykle dzieje się po użytkownik kliknął prawym przyciskiem myszy element lub naciśnięty klawisz Menu na klawiaturze Windows za pomocą wybranego elementu. Jest ważne, że węzeł uzyska fokus i jest zaznaczone. Dzięki temu użytkownikowi określić podmenu należy do elementu.  
   
-![Element, który ma Generowanie fokus zyski menu kontekst do powiadamiania użytkownika, który element został wybrany. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />Element, który ma Generowanie fokus zyski menu kontekst do powiadamiania użytkownika, który element został wybrany.
+![Element, który ma Generowanie fokus zyski menu kontekst do powiadamiania użytkownika, który element został wybrany. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />Element, który ma Generowanie fokus zyski menu kontekst do powiadamiania użytkownika, który element został wybrany.
   
 #### <a name="keyboard"></a>Klawiatury  
 W widoku drzewa powinna zapewniają możliwość wybierz elementy i rozwijanie/zwijanie węzłów za pomocą klawiatury. Daje to gwarancję, że nawigacja spełnia naszych wymagań w zakresie ułatwień dostępu.  

@@ -1,5 +1,6 @@
 ---
-title: Samouczek — Dowiedz się, Flask w programie Visual Studio, krok 4
+title: Poznaj samouczek Flask w programie Visual Studio w kroku 4, szablony projektów internetowych
+titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności funkcji oferowanych przez Szablony projektu sieci Web Flask i Flask/Jade projektu sieci Web.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775961"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051704"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Użyj pełnego szablonu projektu sieci Web Flask
 

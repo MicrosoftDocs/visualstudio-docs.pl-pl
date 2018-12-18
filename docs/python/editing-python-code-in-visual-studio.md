@@ -1,22 +1,23 @@
 ---
 title: Edytowanie kodu w języku Python
-description: Edycji języka Python w programie Visual Studio zawiera funkcję IntelliSense, fragmenty kodu i funkcje nawigacji, wraz z formatowania, Zaznaczanie błędów i refaktoryzacji.
-ms.date: 09/04/2018
+description: Dla języka Python Visual Studio zapewnia zaawansowane funkcji IntelliSense, fragmenty kodu i funkcje nawigacji, wraz z formatowania, Zaznaczanie błędów i refaktoryzacji.
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774768"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062819"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
@@ -44,7 +45,7 @@ Aby zwiększyć wydajność, funkcja IntelliSense w **programu Visual Studio 201
 
 Uzupełnianie są traktowane jako instrukcji, identyfikatorów i słów, które mogą być wprowadzane prawidłowo w bieżącej lokalizacji w edytorze. Co to jest wyświetlane na liście jest na podstawie kontekstu i jest filtrowana, aby pominąć opcje niepoprawne lub rozprasza uwagę. Uzupełnianie często są wyzwalane, wpisując różne instrukcje (takie jak `import`) i operatory (w tym okresie), ale można je pojawiają się w dowolnym momencie, wpisując **Ctrl**+**"j"**  >  **Miejsca**.
 
-![Uzupełnianie składowych](media/code-editing-completions-simple.png)
+![Uzupełnianie składowych w edytorze programu Visual Studio](media/code-editing-completions-simple.png)
 
 Po otwarciu listy uzupełniania, można wyszukać uzupełnianie przy użyciu klawiszy strzałek, mysz, lub, przechodząc do typu. Podczas pisania więcej liter listy jest dalej filtrowana pokazanie prawdopodobnie uzupełnienia. Można również użyć skrótów takich jak:
 
@@ -54,27 +55,27 @@ Po otwarciu listy uzupełniania, można wyszukać uzupełnianie przy użyciu kla
 
 Kilka przykładów:
 
-![Uzupełnianie składowych z filtrowaniem](media/code-editing-completion-filtering.png)
+![Uzupełnianie składowych z filtrowaniem w edytorze programu Visual Studio](media/code-editing-completion-filtering.png)
 
 Uzupełnienia Członkowskie pojawiają się automatycznie, gdy wpiszesz kropkę po zmiennej lub wartość, oraz metody i atrybuty potencjalnych typów. Jeśli zmienna może być więcej niż jeden typ, lista zawiera wszystkie możliwości ze wszystkich typów, przy użyciu dodatkowych informacji, aby wskazać, typy, które obsługują każdego uzupełnianie. W przypadku, gdy uzupełniania jest obsługiwana przez wszystkie możliwe typy, przedstawiono bez adnotacji.
 
-![Uzupełnianie składowych na wiele typów](media/code-editing-completion-types.png)
+![Uzupełnianie składowych na wiele typów w edytorze programu Visual Studio](media/code-editing-completion-types.png)
 
 Domyślnie członkowie "dunder" (członkowie rozpoczynający się i kończy z podwójnym podkreśleniem) nie są wyświetlane. Ogólnie rzecz biorąc takich elementów członkowskich nie powinna być dostępna bezpośrednio. Jeśli potrzebujesz jednej, wpisując wiodącego podwójnego podkreślenia dodaje te uzupełnienia do listy:
 
-![Uzupełnianie składowych prywatne](media/code-editing-completion-dunder.png)
+![Uzupełnianie prywatnego elementu członkowskiego w edytorze programu Visual Studio](media/code-editing-completion-dunder.png)
 
 `import` i `from ... import` instrukcji wyświetlić listę modułów, które mogą zostać zaimportowane. Za pomocą `from ... import`, lista zawiera elementy członkowskie, które mogą zostać zaimportowane z określonym module.
 
-![Ukończenia importowania](media/code-editing-completion-import.png)
+![Importowanie uzupełnianie w edytorze programu Visual Studio](media/code-editing-completion-import.png)
 
 `raise` i `except` instrukcje wyświetlania list klas, które mogą być typów błędów. Lista może nie zawierać wszystkich wyjątków zdefiniowanych przez użytkownika, ale pomaga szybko znaleźć odpowiednie wyjątki wbudowane:
 
-![Uzupełnianie wyjątku](media/code-editing-completion-exception.png)
+![Uzupełnianie wyjątek w edytorze programu Visual Studio](media/code-editing-completion-exception.png)
 
 Wpisywanie uruchamia dekoratora i pokazuje potencjalne dekoratory. Wiele z tych elementów nie są możliwe do użycia jako dekoratory; Zapoznaj się z dokumentacją biblioteki, aby określić, której mają zostać użyte.
 
-![Uzupełnianie dekoratora](media/code-editing-completion-decorator.png)
+![Uzupełnianie dekoratora w edytorze programu Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > Można skonfigurować zachowanie uzupełniania za pośrednictwem **narzędzia** > **opcje** > **edytora tekstów**  >   **Python** > **zaawansowane**. Wśród nich **listy filtrów na podstawie wyszukiwania ciągu** stosuje filtrowanie sugestie uzupełniania podczas wpisywania (pole jest domyślnie zaznaczone), i **uzupełnianie składowych Wyświetla część wspólną członków** zawiera tylko uzupełnianie, które są obsługiwane przez wszystkie możliwe typy (Domyślnie zaznaczenie jest usunięte). Zobacz [opcje — wyniki zakończenia](python-support-options-and-settings-in-visual-studio.md#completion-results).
@@ -123,7 +124,7 @@ Za pomocą **Uruchom narzędzie Mypy** polecenie na ten kod generuje następują
 
 Podczas pisania kodu, który wywołuje funkcję pomocy dotyczącej sygnatur pojawia się po wpisaniu otwarcia `(` i wyświetla dostępne informacje dotyczące dokumentacji i parametrów. Można również wyświetlić ją za pomocą **Ctrl**+**Shift**+**miejsca** wewnątrz wywołania funkcji. Informacje wyświetlane jest zależna od ciągów dokumentacji w kodzie źródłowym funkcji, ale zawiera wartości domyślne.
 
-![Pomocy dotyczącej sygnatur](media/code-editing-signature-help.png)
+![Pomocy dotyczącej sygnatur w edytorze programu Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
 > Aby wyłączyć pomocy dotyczącej sygnatur, przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **Python**  >  **Ogólne** i wyczyść **uzupełniania instrukcji** > **informacje o parametrach**.
@@ -132,17 +133,17 @@ Podczas pisania kodu, który wywołuje funkcję pomocy dotyczącej sygnatur poja
 
 Kursor myszy nad identyfikator są wyświetlane etykietki narzędzia Szybkie informacje. W zależności od identyfikatora szybkie informacje mogą być wyświetlane potencjalnych wartości lub typy, dowolnej dostępnej dokumentacji, zwracane typy i lokalizacje definicji:
 
-![Szybkie informacje](media/code-editing-quick-info.png)
+![Szybkie informacje w edytorze programu Visual Studio](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Kolorowanie kodu
 
 Kolorowanie kodu używa informacji z analizy kodu do zmiennych koloru, instrukcje i inne części kodu. Na przykład zmienne, które odwołują się do modułów lub klasy mogą być wyświetlane w innym kolorze niż funkcji lub innych wartości i nazwy parametrów są wyświetlane w innym kolorze niż zmiennych lokalnych lub globalnych. (Domyślnie, funkcje nie są wyświetlane pogrubioną czcionką):
 
-![Kolorowanie kodu](media/code-editing-code-coloring.png)
+![Kod i kolorowanie składni w edytorze programu Visual Studio](media/code-editing-code-coloring.png)
 
 Aby dostosować kolory, przejdź do **narzędzia** > **opcje** > **środowiska** > **czcionki i kolory** i modyfikować **Python** wpisów w **wyświetlania elementów** listy:
 
-![Opcje czcionek i kolorów](media/code-editing-customize-colors.png)
+![Opcje czcionek i kolorów w programie Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Aby wyłączyć kolorowaniem kodu, przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **Python**  >  **Zaawansowane** i wyczyść **różne opcje** > **koloru na podstawie typu nazwy**. Zobacz [opcje - różne opcje](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
@@ -181,7 +182,7 @@ Wybierając ten kod i wybierając pozycję **Otocz** polecenie wyświetla listę
 
 Możesz zobaczyć fragmenty kodu dostępne w **Menedżera wstawek kodu**, otwartego za pomocą **narzędzia** > **Menedżera wstawek kodu** polecenia menu i wybierając polecenie **Python** jako język:
 
-![Menedżer fragmentów kodu](media/code-editing-code-snippets-manager.png)
+![Menedżer fragmentów kodu w programie Visual Studio](media/code-editing-code-snippets-manager.png)
 
 Aby utworzyć własne fragmenty kodu, zobacz [wskazówki: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md).
 
@@ -195,7 +196,7 @@ Obsługa języka Python w programie Visual Studio zawiera kilka oznacza, że mo�
 
 Na pasku nawigacyjnym jest wyświetlana w górnej części każdego okna edytora i zawiera listę dwupoziomowej definicji. Lista rozwijana po lewej stronie zawiera klasę najwyższego poziomu i definicje funkcji w bieżącym pliku; prawo rozwijanej Wyświetla listę definicji w zakresie wyświetlane po lewej stronie. Jak zmieniają położenie w edytorze list zaktualizowane, aby wyświetlić bieżący kontekst i można również wybrać wpis z tych list można przechodzić bezpośrednio do.
 
-![Pasek nawigacyjny](media/code-editing-navigation-bar.png)
+! [Pasek nawigacyjny] w editor(media/code-editing-navigation-bar.png) programu Visual Studio
 
 > [!Tip]
 > Aby ukryć pasek nawigacyjny, przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **Python**  >  **Ogólne** i wyczyść **ustawienia** > **pasek nawigacyjny**.
@@ -204,7 +205,7 @@ Na pasku nawigacyjnym jest wyświetlana w górnej części każdego okna edytora
 
 **Przejdź do definicji** szybko przechodzi z użytkowania identyfikator (np. nazwę funkcji, klasy lub zmiennej), do kodu źródłowego którym jest zdefiniowana. Można wywołać, klikając prawym przyciskiem myszy identyfikator i wybierając **przejdź do definicji** lub umieszczając karetkę na identyfikator i naciskając klawisz **F12**. Działa ona za pośrednictwem kodu oraz zewnętrznych bibliotekach pod warunkiem, że kod źródłowy jest dostępny. Jeśli kod źródłowy biblioteki nie jest dostępna, **przejdź do definicji** skacze do odpowiedniego `import` poufności informacji dla odwołania do modułu, lub wyświetla komunikat o błędzie.
 
-![Przejdź do definicji](media/code-editing-go-to-definition.png)
+![Polecenie Przejdź do definicji w programie Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Przejdź do
 
@@ -212,7 +213,7 @@ Na pasku nawigacyjnym jest wyświetlana w górnej części każdego okna edytora
 
 Dwukrotne kliknięcie dowolną nazwę, albo wybierz przy użyciu klawiszy strzałek oraz **Enter**, przechodzi do definicji tego identyfikatora.
 
-![Przejdź do](media/code-editing-navigate-to.png)
+![Przejdź do polecenia w programie Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Znajdź wszystkie odwołania
 

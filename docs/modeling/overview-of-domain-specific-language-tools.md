@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871748"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966846"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowane w programie Visual Studio, pozwalają na projektowanie języka specyficznego dla domeny, a następnie wygenerować wszystko, co użytkownicy muszą mieć do tworzenia modeli, które są oparte na języku.
@@ -79,4 +79,4 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="see-also"></a>Zobacz też
 
 - [Wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md)
-- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

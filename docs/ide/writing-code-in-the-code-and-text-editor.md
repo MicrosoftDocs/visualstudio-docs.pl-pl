@@ -1,5 +1,5 @@
 ---
-title: Funkcje edytora kodu w programie Visual Studio
+title: Funkcje edytora kodu
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624117"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160117"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
 Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają zapis i zarządzanie nimi, tekstu i kodu. Można rozwijać i zwijać różne bloki kodu przy użyciu konturów. Więcej o kodzie można znaleźć za pomocą technologii IntelliSense, **przeglądarki obiektów**i hierarchii wywoływania. Kod można znaleźć przy użyciu funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawiać bloki kodu za pomocą wstawek kodu i może wygenerować kod, za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli po raz pierwszy używasz Edytor programu Visual Studio przed, zobacz [Edytuj kod](https://visualstudio.microsoft.com/vs/features/ide/) Aby uzyskać szybki przegląd.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor).
 
 Możesz wyświetlić swój kod na wiele różnych sposobów. Domyślnie **Eksploratora rozwiązań** pokazuje kod zorganizowane w pliki. Możesz kliknąć **Widok klas** karta w dolnej części okna, aby wyświetlić kod uporządkowane według klasy.
 
@@ -57,8 +60,8 @@ Możesz znaleźć wiele zaawansowanych funkcji w **Edytuj** > **zaawansowane** m
 |Zmień tabulatory na spacje w zaznaczonych wierszach|Zmienia tabulatory wiodące na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na tabulacje (lub wszystkie tabulacje na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale możesz je wywołać **szybki dostęp** okna lub okna poleceń.|
 |Zmień litery na wielkie|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na wielkie litery.|
 |Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery.|
-|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **Alt**+**Strzałka w górę**.|
-|Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **Alt**+**strzałkę w dół**.|
+|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **ALT**+**Strzałka w górę**.|
+|Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **ALT**+**strzałkę w dół**.|
 |Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza.|
 |Wyświetl białe znaki|Wyświetla spacje jako kropki podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako znacznik prostokątny. Jeśli **narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >  **Zawijanie** > **Pokaż widoczne glify dla zawijania** jest zaznaczone, ten glif jest również wyświetlany.|
 |Zawijanie wyrazów|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączać zawijanie wyrazów i Włącz w **Edytor tekstu wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**   >  **Wszystkie języki**).|
@@ -87,7 +90,8 @@ Aby uzyskać więcej informacji na temat dostosowywania edytora, zobacz [dostoso
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Wprowadzenie do języka C++ w programie Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Wprowadzenie do języka C# i platformy ASP.NET w programie Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Rozpoczynanie pracy z językiem Python w programie Visual Studio](../ide/quickstart-python.md)

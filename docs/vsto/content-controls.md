@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940232"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672902"
 ---
 # <a name="content-controls"></a>Formanty zawartości
   Formanty zawartości umożliwiają dla Ciebie dokumentów projektów i szablonów, które mają następujące funkcje:  
@@ -81,7 +81,7 @@ ms.locfileid: "49940232"
  Istnieje dziewięciu różne rodzaje formantów zawartości, które można dodać do dokumentów. Większość formanty zawartości mają odpowiedni typ w <xref:Microsoft.Office.Tools.Word> przestrzeni nazw. Możesz również użyć ogólnego <xref:Microsoft.Office.Tools.Word.ContentControl>, który może reprezentować jedną z dostępnych kontrolek zawartości. Aby uzyskać wskazówki, który demonstruje sposób używania każdego z dostępnych kontrolek zawartości, zobacz [wskazówki: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Tworzenie galerii bloku  
- Galeria modułów konstrukcyjnych umożliwia użytkownikom wybranie z listy *bloki konstrukcyjne dokumentu* do wstawienia do dokumentu. Blok konstrukcyjny dokumentu jest zawartość, która została utworzona w celu można użyć wiele razy, takie jak wspólne stronę tytułową, sformatowania tabeli lub nagłówkiem. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Aby uzyskać więcej informacji na temat bloków konstrukcyjnych, zobacz [Nowości dla deweloperów w programie Word 2007](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Galeria modułów konstrukcyjnych umożliwia użytkownikom wybranie z listy *bloki konstrukcyjne dokumentu* do wstawienia do dokumentu. Blok konstrukcyjny dokumentu jest zawartość, która została utworzona w celu można użyć wiele razy, takie jak wspólne stronę tytułową, sformatowania tabeli lub nagłówkiem. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Aby uzyskać więcej informacji na temat bloków konstrukcyjnych, zobacz [Nowości dla deweloperów w programie Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
   
 ### <a name="check-box"></a>Pole wyboru  
  Pole wyboru udostępnia interfejs użytkownika, który reprezentuje stan binarny: lub odznaczane.  

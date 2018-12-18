@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915818"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296388"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part
   W programie Visual Studio, można użyć **połączeń SharePoint** węźle **Eksploratora serwera** do wyświetlania składników w witrynach programu SharePoint. Jednak **Eksploratora serwera** nie jest wyświetlany domyślnie niektóre składniki. W tym przewodniku możesz rozszerzać **Eksploratora serwera** tak, aby wyświetlał galerii składników Web Part na każdy połączony witryny programu SharePoint.  
@@ -278,7 +278,7 @@ ms.locfileid: "49915818"
   
 1.  W **Eksploratora rozwiązań**, w projekcie WebPartNode Otwórz **source.extension.vsixmanifest** plik w edytorze manifestu.  
   
-     Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  W **nazwa produktu** wprowadź **węzła galerię części sieci Web w Eksploratorze serwera**.  
   
@@ -293,7 +293,7 @@ ms.locfileid: "49915818"
 6.  W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   
@@ -306,7 +306,7 @@ ms.locfileid: "49915818"
 10. W **typu** wprowadź **SharePoint.Commands.v4**.  
   
     > [!NOTE]  
-    >  Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
 11. W **źródła** wybierz **projekt w bieżącym rozwiązaniu** elementu listy.  
   

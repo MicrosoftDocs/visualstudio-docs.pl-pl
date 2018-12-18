@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008684"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672161"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie przeglądarki obrazów
 
@@ -42,7 +42,7 @@ Po zakończeniu program będzie wyglądać jak na poniższym obrazie:
 
 ## <a name="tutorial-links"></a>Samouczek łącza
 
-Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek podglądu pełny obraz](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek podglądu pełny obraz](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
 ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [jak: tworzenie przeglądarki obrazów w języku Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) lub [jak: tworzenie przeglądarki obrazów w języku C#?](http://go.microsoft.com/fwlink/?LinkId=205198).
 

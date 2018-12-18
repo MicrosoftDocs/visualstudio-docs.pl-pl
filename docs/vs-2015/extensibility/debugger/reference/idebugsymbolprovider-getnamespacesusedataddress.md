@@ -17,12 +17,12 @@ ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2143fe5c0e2dea6a706d0e1b662b959af4c60d3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8181876bf89377b097f2486602e939d7a77e30c7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835167"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732768"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ta metoda tworzy moduł wyliczający dla obszarów nazw skojarzonych z tym adres
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT GetNamespacesUsedAtAddress(   
+HRESULT GetNamespacesUsedAtAddress(   
    IDebugAddress*     pAddress,  
    IEnumDebugFields** ppEnum  
 );  

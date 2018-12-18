@@ -1,7 +1,7 @@
 ---
 title: Wyświetl poprzedni stan aplikacji za pomocą funkcji IntelliTrace
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+description: Dowiedz się, jak tworzyć migawki i wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846866"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060148"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Sprawdź poprzednie Stany aplikacji przy użyciu funkcji IntelliTrace krok do tyłu w programie Visual Studio
 
@@ -96,9 +96,9 @@ W tym samouczku wykonasz następujące czynności:
 
 Funkcja IntelliTrace w trybie tylko do zdarzeń umożliwiają Uaktywnij debugowanie historyczne na debuger nie wchodzi i punktów przerwania. Jednak IntelliTrace przechwytuje tylko dane w **lokalne** i **Autos** systemu windows, jeśli okna są otwarte i przechwytuje tylko dane, które jest rozwinięty i w widoku. W trybie tylko do zdarzeń często nie masz pełny przegląd zmiennych i złożonych obiektów. Ponadto wyrażenie oceny i wyświetlanie danych w **Obejrzyj** okno nie jest obsługiwane. 
 
-W trybie zdarzenia i migawki funkcji IntelliTrace przechwytuje migawkę całego procesu aplikacji, włącznie z obiektami złożonymi. W wierszu kodu można zobaczyć te same informacje, tak, jakby zostały zatrzymane w punkcie przerwania (i nie ma znaczenia, czy wcześniej powiększone informacje). Obliczanie wyrażeń jest również obsługiwany, wyświetlając migawki.  
+W trybie zdarzenia i migawki funkcji IntelliTrace przechwytuje migawkę całego procesu aplikacji, włącznie z obiektami złożonymi. W wierszu kodu można zobaczyć te same informacje, tak, jakby zostały zatrzymane w punkcie przerwania (i nie ma znaczenia, czy wcześniej powiększone informacje). Obliczanie wyrażeń jest również obsługiwany, wyświetlając migawki.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Co to jest wpływ na wydajność tej funkcji? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Co to jest wpływ na wydajność tej funkcji? 
 
 Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Koszty związane z migawki jest około 30 ms. Migawka zostanie utworzona, proces aplikacji jest forked i rozwidlone kopiowania jest wstrzymana. Po wyświetleniu migawki programu Visual Studio jest dołączenie do rozwidlonego kopię procesu. Dla każdego migawki programu Visual Studio kopiuje tabeli strony i ustawia stron kopii przy zapisie. W przypadku obiektów na stosie zmiany między krokami debugera za pomocą skojarzone migawki, tabeli odpowiednich stron jest następnie kopiowana, wynikowa kosztu minimalnej pamięci. Jeśli program Visual Studio wykryje, że nie ma wystarczającej ilości pamięci, aby utworzyć migawkę, go nie przyjmuje jeden.
  

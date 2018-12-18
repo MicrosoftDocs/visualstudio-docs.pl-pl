@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677629"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671940"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Okno dialogowe Opcje uaktualniania, projekt
   Użyj **uaktualnienia projektu** stronę, aby określić, czy program Visual Studio automatycznie zmieni projektów dodatku VSTO docelową wersję pakietu Office, który jest zainstalowany na komputerze deweloperskim.  
@@ -37,6 +37,6 @@ ms.locfileid: "35677629"
   
 ## <a name="see-also"></a>Zobacz także  
  [Uaktualnianie i migracja rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Porady: rozwiązań dla uaktualnienie pakietu Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
+ [Porady: rozwiązań dla uaktualnienie pakietu Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

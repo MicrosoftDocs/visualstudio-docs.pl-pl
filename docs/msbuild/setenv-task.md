@@ -1,7 +1,7 @@
 ---
 title: SETENV — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/05/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2d9cec2c76b2159e14b1e7abe19b93ab91f6688
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3024a0477193647a6949eeaa4d8d40d4d965f940
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153777"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220409"
 ---
 # <a name="setenv-task"></a>SETENV — zadanie
 Ustawia lub usuwa wartość określonej zmiennej środowiskowej.  
@@ -39,8 +39,8 @@ Ustawia lub usuwa wartość określonej zmiennej środowiskowej.
 |**Nazwa**|Wymagane **ciąg** parametru.<br /><br /> Nazwa zmiennej środowiskowej.|  
 |**OutputEnvironmentVariable**|Opcjonalnie **ciąg** parametr wyjściowy.<br /><br /> Zawiera wartość, która jest przypisana do zmiennej środowiskowej, który jest określony przez **nazwa** parametru.|  
 |**Prefiks**|Obowiązkowe `Boolean` parametru.<br /><br /> Jeśli `true`, łączy wartości **wartość** parametru przed wartością zmiennej środowiskowej, który jest określony przez **nazwa** parametru, a następnie przypisuje wynik do środowiska Zmienna. Jeśli `false`, przypisuje wartość elementu **wartość** parametr do zmiennej środowiskowej.|  
-|**Docelowy**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa lokalizację przechowywania dla zmiennej środowiskowej. Określ "User" lub "Machine".<br /><br /> Aby uzyskać więcej informacji, zobacz [wyliczenie EnvironmentVariableTarget](https://msdn.microsoft.com/library/system.environmentvariabletarget(v=vs.110).aspx) w witrynie MSDN.|  
-|**Wartość**|Opcjonalnie **ciąg** parametru.<br /><br /> Wartość przypisana do zmiennej środowiskowej, który jest określony przez **nazwa** parametru. Jeśli **wartość** jest pusta i zmienna istnieje, zmienna zostanie usunięty. Jeśli zmienna nie istnieje, nie występuje błąd, mimo że nie można wykonać operacji.<br /><br /> Aby uzyskać więcej informacji, zobacz [metoda Environment::SetEnvironmentVariable](https://msdn.microsoft.com/library/96xafkes(v=vs.110).aspx) w witrynie MSDN.|  
+|**Docelowy**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa lokalizację przechowywania dla zmiennej środowiskowej. Określ "User" lub "Machine".<br /><br /> Aby uzyskać więcej informacji, zobacz [wyliczenie EnvironmentVariableTarget](xref:System.EnvironmentVariableTarget).|  
+|**Wartość**|Opcjonalnie **ciąg** parametru.<br /><br /> Wartość przypisana do zmiennej środowiskowej, który jest określony przez **nazwa** parametru. Jeśli **wartość** jest pusta i zmienna istnieje, zmienna zostanie usunięty. Jeśli zmienna nie istnieje, nie występuje błąd, mimo że nie można wykonać operacji.<br /><br /> Aby uzyskać więcej informacji, zobacz [metoda Environment::SetEnvironmentVariable](xref:System.Environment.SetEnvironmentVariable%2A).|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

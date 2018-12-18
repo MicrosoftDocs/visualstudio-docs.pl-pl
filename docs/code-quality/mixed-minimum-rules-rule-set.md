@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945991"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388939"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
 Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problemów w projektach C++ obsługujących środowisko uruchomieniowe języka wspólnego, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów C++ obsługujących środowisko uruchomieniowe języka wspólnego.
@@ -37,7 +37,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |[C6270](../code-quality/c6270.md)|Brak argumentu typu Float w funkcji formatującej|
 |[C6271](../code-quality/c6271.md)|Dodatkowy Argument w funkcji formatującej|
 |[C6272](../code-quality/c6272.md)|Argument niż typu Float w funkcji formatującej|
-|[C6273](../code-quality/c6273.md)|Argumen nie jest liczbą całkowitą w funkcji formatującej|
+|[C6273](../code-quality/c6273.md)|Argument nie jest liczbą całkowitą w funkcji formatującej|
 |[C6274](../code-quality/c6274.md)|-Znakowy argumentu funkcji formatującej|
 |[C6276](../code-quality/c6276.md)|Nieprawidłowe rzutowanie ciągu|
 |[C6277](../code-quality/c6277.md)|Nieprawidłowe wywołanie funkcji CreateProcess|
@@ -96,7 +96,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |[C28215](../code-quality/c28215.md)|Nie można zastosować elementu typefix parametr, który ma już typefix|
 |[C28216](../code-quality/c28216.md)|Adnotacja checkReturn dotyczy tylko warunków końcowych dla określonego parametru funkcji.|
 |[C28217](../code-quality/c28217.md)|Dla funkcji liczba parametrów dla adnotacji odpowiada znalezionej w pliku|
-|[C28218](../code-quality/c28218.md)|Dla paramteer funkcja adnotacji nie odpowiada znalezionej w pliku|
+|[C28218](../code-quality/c28218.md)|Dla parametru funkcji adnotacji nie odpowiada znalezionej w pliku|
 |[C28219](../code-quality/c28219.md)|Element członkowski wyliczenia oczekiwał na adnotację parametru w adnotacji|
 |[C28220](../code-quality/c28220.md)|Wyrażenia typu całkowitego oczekiwana dla adnotacji parametru w adnotacji|
 |[C28221](../code-quality/c28221.md)|Oczekiwano wyrażenia ciągu dla parametru w adnotacji|

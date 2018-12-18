@@ -1,5 +1,5 @@
 ---
-title: Tworzenie testu obciążenia wtyczkę w programie Visual Studio
+title: Tworzenie wtyczki testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380541"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064721"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Porady: tworzenie wtyczki testu obciążenia
 
@@ -27,6 +27,8 @@ Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kod
 
 > [!NOTE]
 > Można również utworzyć wtyczek dla testów wydajności sieci web. Aby uzyskać więcej informacji, zobacz [porady: tworzenie wtyczki testu wydajności sieci web](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>Do tworzenie wtyczki testu obciążenia przy użyciu języka Visual C#
 

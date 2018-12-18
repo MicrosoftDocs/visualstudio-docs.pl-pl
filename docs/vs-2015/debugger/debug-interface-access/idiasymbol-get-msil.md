@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_msil method
 ms.assetid: 43a8e003-6856-4726-aa16-c0d4dae7299b
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5a99f8c2586c404cae7a3e6254817473158aec2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbcdb120f8158b41e583fb6b97bfbd4fb08cd6d1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826963"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785095"
 ---
 # <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pobiera flagę określającą, czy symbol odwołuje się do kodu Microsoft Inter
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT get_msil (   
+HRESULT get_msil (   
    BOOL* pRetVal  
 );  
 ```  

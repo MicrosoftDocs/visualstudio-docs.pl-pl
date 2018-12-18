@@ -17,12 +17,12 @@ ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55b594850c6fc2e454fcc6f454350294a65437d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdb0281650039cb5235bc87410cbda93a6834f1b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818013"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817727"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Zawiera dane dla lokalizacji punktu przerwania w określonym wierszu w pliku kod
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-typedef struct _BP_LOCATION_CODE_FILE_LINE {   
+typedef struct _BP_LOCATION_CODE_FILE_LINE {   
    BSTR                     bstrContext;  
    IDebugDocumentPosition2* pDocPos;  
 } BP_LOCATION_CODE_FILE_LINE;  

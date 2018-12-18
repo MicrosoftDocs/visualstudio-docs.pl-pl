@@ -16,19 +16,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854081"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389503"
 ---
-# <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
+# <a name="configure-service-reference-dialog-box"></a>Konfiguruj odwołanie do usługi — Okno dialogowe
 
 **Konfiguruj odwołanie do usługi** okno dialogowe umożliwia konfigurowanie zachowania usług Windows Communication Foundation (WCF).
-
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 Aby uzyskać dostęp do **Konfiguruj odwołanie do usługi** odwoływać się okno dialogowe, kliknij prawym przyciskiem myszy, a usługa **Eksploratora rozwiązań** i wybierz polecenie **Konfiguruj odwołanie do usługi**. Okno dialogowe można również przejść, klikając **zaawansowane** znajdujący się w **okno dialogowe Dodaj odwołanie do usługi**.
 
@@ -104,7 +101,7 @@ Aby uzyskać dostęp do **Konfiguruj odwołanie do usługi** odwoływać się ok
 
 > [!NOTE]
 > Ta opcja powinna służyć wyłącznie dla projektów przeznaczonych dla wersji 2.0 programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-> 
+>
 > [!NOTE]
 > **Dodaj odwołanie sieci Web** przycisk jest dostępny, gdy **Konfiguruj odwołanie do usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
 

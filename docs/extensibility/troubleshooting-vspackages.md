@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ca071c7e46325901425048417b0fd1a07607fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826536"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348685"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pakietu VSPackage i porady, aby rozwiązać problemy.  
@@ -44,7 +44,7 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
   
 3. Sprawdź wpisy rejestru pakietu VSPackage.  
   
-    Aby uzyskać więcej informacji, zobacz [rejestrowanie pakietów VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) i [Zarządzanie pakietami VSPackage](../extensibility/managing-vspackages.md).  
+    Aby uzyskać więcej informacji, zobacz [rejestrowanie pakietów VSPackage](registering-and-unregistering-vspackages.md) i [Zarządzanie pakietami VSPackage](../extensibility/managing-vspackages.md).  
   
 4. Otwórz **dane wyjściowe** okno wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , nie może załadować pakietu VSPackage. Informacji na temat przyczyn nieudanego pakietu VSPackage załadować mogą być wyświetlane w tym oknie.  
   

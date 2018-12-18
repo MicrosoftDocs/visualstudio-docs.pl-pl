@@ -1,16 +1,16 @@
 ---
 title: Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 description: Ten przewodnik opisuje jak używać programu Visual Studio dla komputerów Mac Tools for Unity rozszerzenia
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898827"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027305"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 
@@ -111,4 +111,4 @@ Aby zatrzymać debugowanie:
 
    ![Kliknij przycisk Zatrzymaj w programie Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
-Aby dowiedzieć się więcej o debugowaniu w programie Visual Studio dla komputerów Mac, zobacz [za pomocą debugera](https://docs.microsoft.com/visualstudio/mac/debugging).
+Aby dowiedzieć się więcej o debugowaniu w programie Visual Studio dla komputerów Mac, zobacz [za pomocą debugera](debugging.md).

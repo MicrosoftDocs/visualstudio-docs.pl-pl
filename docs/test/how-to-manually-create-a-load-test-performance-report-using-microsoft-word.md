@@ -1,5 +1,5 @@
 ---
-title: Tworzenie raportu wydajności testu obciążenia programu Visual Studio przy użyciu programu Microsoft Word
+title: Tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380697"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064459"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 
 Można ręcznie utworzyć raporty testu obciążenia w programie Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania wyników testu obciążeniowego i widok wykresów. Do danych, które są prezentowane w widoku podsumowania i widoku wykresy jest stosowany format HTML, podczas ich kopiowania.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Można kopiować zwykły tekst z widoku tabel i zrzutów ekranu z widoku szczegółów do programu Microsoft Word, ale nie ma zastosowania w formacie HTML i będzie wymagać dodatkowego formatowania i edycji.

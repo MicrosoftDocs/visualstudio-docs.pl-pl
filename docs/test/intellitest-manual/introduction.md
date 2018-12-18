@@ -1,5 +1,5 @@
 ---
-title: Omówienie | Narzędzie Test Microsoft IntelliTest Developer
+title: Omówienie | Narzędzie Test Microsoft IntelliTest dla deweloperów
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,44 +11,44 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50baf803cb6669640c9ffe2c0e94ea43b56f5341
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c2a8e6df93d3af64bd114e0e9994aadce58e7f8d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815486"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296024"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie programu Microsoft IntelliTest
 
-IntelliTest umożliwia znalezienie usterki wczesne i zmniejsza koszty utrzymania testu. Za pomocą automatycznych i przejrzysty podejścia, IntelliTest można wygenerować candidate zestawu testów dla kodu platformy .NET. Generowanie zestawu testów można dodatkowo kierować się *poprawności właściwości* określisz. IntelliTest nawet rozpoczyna się zestaw testów automatycznie w miarę rozwoju środowisko testowanego kodu.
+IntelliTest pozwala na wczesne znajdowanie usterek i zmniejsza koszty utrzymania testu. Za pomocą automatycznych i przejrzyste podejście testowania, funkcji IntelliTest mogą generować Release candidate zestawu testów dla kodu platformy .NET. Generowanie zestawu testów można dodatkowo kierować się *poprawności właściwości* określisz. Funkcja IntelliTest nawet ewoluuje wraz z zestawu testów automatycznie zgodnie z ewolucją kodu w ramach testu.
 
-**Testy opisu** IntelliTest umożliwia określenie zachowania kodu pod względem zestawu testów jednostkowych tradycyjnych.
-Zestaw testów może służyć jako mechanizm regresji, na podstawie dla rozwiązania problemu złożoności skojarzone z refaktoryzacji kodu starszych lub nieznane.
+**Charakterystyka testy** IntelliTest pozwalają na określenie zachowania kodu pod względem zestawu testów jednostkowych tradycyjnych.
+Zestaw testów może służyć jako zestaw regresji na podstawie na co dzień do czynienia złożoności skojarzony refaktoryzacji starszej wersji lub nieznanego kodu.
 
-**Generowanie danych wejściowych z przewodnikiem testu** IntelliTest używa analizy kodu Otwórz i ograniczenie rozwiązywania podejście do automatycznego generowania wartości wejściowe testu dokładne; zazwyczaj bez potrzeby interwencji użytkownika. W przypadku złożonych obiektów automatycznie generuje fabryki. Przewodnik z wejściowych generowania testów, rozszerzanie i konfigurując fabryki ze swoimi potrzebami. Poprawność właściwości określone jako potwierdzenia w kodzie będą również automatycznie dalsze przewodnik wejściowych generowania testów.
+**Test z przewodnikiem wejściowych generowania** IntelliTest korzysta z analizy kodu open i ograniczenie rozwiązywania podejście do automatycznego generowania wartości wejściowe dokładne testu; zazwyczaj bez konieczności żadnej interwencji użytkownika. Dla złożonych typów obiektów automatycznie generuje fabryk. Generowanie danych wejściowych testu mogą ukierunkować, rozszerzanie i konfigurując fabryk ze swoimi potrzebami. Właściwości poprawności wskazane potwierdzenia w kodzie zostaną również automatycznie przeprowadzenie dalszej wejściowych generowania testu.
 
-**Integracja IDE** IntelliTest jest w pełni zintegrowany środowiska IDE programu Visual Studio. Wszystkie informacje zebrane podczas generowania zestawu testów (takie jak automatycznie generowanych danych wejściowych, dane wyjściowe z kodu wygenerowanego przypadków testowych i ich przebiegu lub niepowodzenie stanu) jest wyświetlana w środowisku IDE programu Visual Studio. Można łatwo powtarzać ustalania kodu i ponowne uruchomienie IntelliTest, bez opuszczania programu Visual Studio IDE.
-Testy można zapisać do rozwiązania jako jednostkowy projekt testowy i będzie można automatycznie wykryć później przez narzędzia Eksplorator testów programu Visual Studio.
+**Integracja z IDE** funkcji IntelliTest jest w pełni zintegrowana w środowisku IDE programu Visual Studio. Wszystkie informacje zebrane w trakcie Generowanie zestawu testów (takie jak automatycznie generowanych danych wejściowych, dane wyjściowe z kodu, wygenerowany przypadki testowe i ich przebiegu lub niepowodzenie stanu) pojawia się w obrębie środowiska IDE programu Visual Studio. Łatwo można wykonać iterację między naprawianie kodu i ponowne uruchamianie programu IntelliTest, bez opuszczania środowiska IDE programu Visual Studio.
+Testy można zapisywać do rozwiązania jako projekt testu jednostkowego i zostanie wykryty automatycznie później przez Visual Studio Test Explorer.
 
-**Mogła uzupełniać istniejące rozwiązania w zakresie testowania** IntelliTest Użyj, aby mogła uzupełniać istniejące testowania rozwiązań, że może już wykonaj.
+**Uzupełniać istniejące rozwiązania w zakresie testowania** IntelliTest użycia jako uzupełnienie istniejących testowania rozwiązań, może już wykonaj.
 
 Jeśli chcesz przetestować:
 
 * Algorytmy za pośrednictwem danych pierwotnych lub tablic danych pierwotnych:
-  * zapis [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing)
-* Algorytmy nad danymi złożonych, takie jak kompilatora:
-  * Let IntelliTest najpierw Generowanie abstrakcyjny reprezentację danych i umieść go w algorytmie
-  * Let IntelliTest tworzenia wystąpień przy użyciu [utworzenie niestandardowego obiektu](input-generation.md#objects) i invariants danych, a następnie wywołaj algorytm
+  * zapis [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing)
+* Algorytmy za pośrednictwem złożonych danych, takie jak kompilator:
+  * Pozwól IntelliTest najpierw wygenerować abstrakcyjną reprezentację danych, a następnie przesłać do algorytmu
+  * umożliwiają tworzenie wystąpień przy użyciu funkcji IntelliTest [utworzenie niestandardowego obiektu](input-generation.md#objects) i invariants danych, a następnie wywołaj algorytm
 * Kontenery danych:
-  * zapis [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing)
-  * Let IntelliTest tworzenia wystąpień przy użyciu [utworzenie niestandardowego obiektu](input-generation.md#objects) i invariants danych, a następnie wywołaj metodę kontenera i później ponownie sprawdzić invariants
-  * zapis [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing) różne metody wdrażania, w zależności od wartości parametrów, które wywołują
-* Istniejący kod podstawowej:
-  * Rozpoczynanie pracy przez Generowanie zestawu za pomocą programu Visual Studio IntelliTest kreatora [sparametryzowanych testów jednostkowych (naraża)](test-generation.md#parameterized-unit-testing)
+  * zapis [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing)
+  * umożliwiają tworzenie wystąpień przy użyciu funkcji IntelliTest [utworzenie niestandardowego obiektu](input-generation.md#objects) i invariants danych, a następnie wywołać metodę kontenera i później ponownie sprawdzić invariants
+  * zapis [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) wywołujące różne metody wdrażania, w zależności od wartości parametrów
+* Istniejącej bazy kodu:
+  * Rozpoczynanie pracy przez Generowanie zestawu przy użyciu programu Visual Studio Kreatora programu IntelliTest [parametryzowane testy jednostki (umieszcza)](test-generation.md#parameterized-unit-testing)
 
-## <a name="the-hello-world-of-intellitest"></a>Witaj świecie IntelliTest
+## <a name="the-hello-world-of-intellitest"></a>Hello World programu IntelliTest
 
-IntelliTest znajdzie wejść odpowiednich przetestowany program, który oznacza służy do generowania Słynne **Hello World!** Ciąg. przy założeniu, że utworzono projekt testowy na podstawie MSTest C# i dodać odwołanie do **Microsoft.Pex.Framework**. Jeśli używasz framework innym testem tworzenia biblioteki klas C# i zapoznaj się z dokumentacją framework testu na temat sposobu konfigurowania projektu.
+IntelliTest wyszukuje dane wejściowe dotyczą program przetestowane, co oznacza, że służy do generowania sławę **Witaj, świecie!** ciąg. założono, że utworzono C# projekt testów MSTest i dodać odwołanie do **Microsoft.Pex.Framework**. Jeśli używasz framework innego testu, Utwórz C# Biblioteka klas i zapoznaj się z dokumentacją framework testu, w jaki sposób skonfigurować konfigurację projektu.
 
 Poniższy przykład tworzy dwa ograniczenia dla parametru o nazwie **wartość** tak, aby program IntelliTest zostanie wygenerowany wymagane parametry:
 
@@ -69,18 +69,18 @@ public partial class HelloWorldTest {
 }
 ```
 
-Po skompilowany i wykonywane, IntelliTest generuje zestawu testów, takie jak następujące:
+Gdy skompilowany i wykonany, IntelliTest generuje zestaw testów, takie jak następujące:
 
 1. ""
 2. "\0\0\0\0\0"
-3. Tekst "hello"
+3. "Hello"
 4. "\0\0\0\0\0\0"
 5. "Hello\0"
 6. "Hello\0\0"
 7. "Hello\0World!"
-8. "Witaj świecie!"
+8. "Hello World!"
 
-Odczyt [generowania testów jednostkowych z Intellitest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) zrozumieć, w którym są zapisywane wygenerowane testy. Kod wygenerowany test powinien zawierać testu, takie jak następujący kod:
+Odczyt [generowania testów jednostkowych z funkcją Intellitest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) Aby zrozumieć, w którym wygenerowane testy są zapisywane. Kod wygenerowany test powinien zawierać testów, jak w następującym kodzie:
 
 ```csharp
 [TestMethod]
@@ -92,66 +92,66 @@ public void HelloWorldThrowsException167()
 }
 ```
 
-To bardzo proste!
+Jest tak proste!
 
 ## <a name="limitations"></a>Ograniczenia
 
-W tej sekcji opisano ograniczenia IntelliTest:
+W tej sekcji opisano ograniczenia dotyczące funkcji IntelliTest:
 
 * [Nondeterminism](#nondeterminism)
 * [Współbieżność](#concurrency)
 * [Natywnego kodu platformy .NET](#native-code)
-* [Platformy](#platform)
+* [Platforma](#platform)
 * [Język](#language)
 * [Symbolicznych](#symbolic-reasoning)
-* [Śladów stosu](#incorrect-stack-traces)
+* [Ślady stosu](#incorrect-stack-traces)
 
 ### <a name="nondeterminism"></a>Nondeterminism
 
-IntelliTest zakłada, że program przeanalizowane deterministyczna. Jeśli nie, IntelliTest zostanie cyklu aż osiągnie eksploracji powiązany.
+IntelliTest założeniu, że program przeanalizowany deterministyczne. Jeśli nie jest, program IntelliTest zostanie cyklu aż do napotkania Eksplorowanie powiązany.
 
-IntelliTest uwzględnia program się z systemem innym niż determistic jeśli zależy od wejść, które nie może kontrolować IntelliTest.
+IntelliTest uwzględnia program do innych determistic, jeśli opiera się na danych wejściowych, które program IntelliTest nie można kontrolować.
 
-IntelliTest formanty danych wejściowych dostarczonych do [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing) i uzyskane z [PexChoose](static-helper-classes.md#pexchoose).
-W tym sensie wyniki wywołań do kodu niezarządzanego lub niezinstrumentowanej również są traktowane jako "dane wejściowe" dla instrumentowanych programu, ale IntelliTest nie można sterować nimi. Jeśli przepływ sterowania programu zależy od konkretnych wartości pochodzące z tych źródeł zewnętrznych, IntelliTest nie "kierowania" program kierunku wcześniej niepokrytego obszarów.
+IntelliTest kontrolki danych wejściowych do [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) oraz otrzymane od [PexChoose](static-helper-classes.md#pexchoose).
+W tym sensie wyników wywołań do kodu niezarządzanego lub niezinstrumentowanej również będą traktowane jako "dane wejściowe" do instrumentowanego programu, ale IntelliTest nie może kontrolować je. Jeśli przepływ sterowania programu zależy od konkretnych wartości pochodzące z tych źródeł zewnętrznych, IntelliTest nie "kierowania" program kierunku wcześniej niepokryty obszarów.
 
-Ponadto program jest uważana z systemem innym niż determistic wartości ze źródeł zewnętrznych zmiany po ponownym uruchomieniu programu. W takich przypadkach program IntelliTest utraci kontrolę nad wykonywanie programu oraz wyszukiwanie jest nieefektywne.
+Ponadto program uważany jest za determistic inne niż w przypadku zmiany wartości ze źródeł zewnętrznych, gdy ponowne uruchomienie programu. W takich przypadkach program IntelliTest utraci kontrolę nad wykonywania programu, a wyszukiwanie staje się nieefektywne.
 
-Czasami nie jest jasne, w takim przypadku.
-Rozważ następujące przykłady:
+Czasami nie jest oczywisty w takiej sytuacji.
+Należy wziąć pod uwagę następujące przykłady:
 
-* Wynik **metoda GetHashCode()** metody są dostarczane przez kod niezarządzany, a nie jest przewidywalne.
-* **System.Random** klasa korzysta bieżący czas systemowy, aby zapewnić naprawdę losowych wartości.
-* **System.DateTime** klasa udostępnia bieżący czas, który nie jest pod kontrolą programu IntelliTest.
+* Wynik **element GetHashCode()** metody są dostarczane przez kod niezarządzany, a nie jest przewidywalne.
+* **System.Random** klasy korzysta bieżący czas systemowy, aby zapewnić naprawdę losowe wartości.
+* **System.DateTime** klasy zawiera bieżący czas, który nie jest pod kontrolą programu IntelliTest.
 
 ### <a name="concurrency"></a>Współbieżność
 
-IntelliTest nie obsługuje programów wielowątkowych.
+Funkcja IntelliTest nie obsługuje programów wielowątkowych.
 
 ### <a name="native-code"></a>Kod natywny
 
-IntelliTest nie rozpoznaje kodu natywnego, takich jak x86 instrukcje nazywane za pośrednictwem **P/Invoke**. Nie ma sposobu tłumaczenia takie połączenia do ograniczenia, które mogą zostać przekazane do [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver).
-Nawet dla kodu platformy .NET go tylko analizę kodu, który wykonuje Instrumentację go. IntelliTest nie Instrumentacja niektórych części **mscorlib**, łącznie z biblioteki odbicia. **Elementu DynamicMethod** nie można go zinstrumentować.
+Funkcja IntelliTest nie rozpoznaje kodu natywnego, takich jak x86 instrukcje wywoływanym za pośrednictwem **P/Invoke**. Nie wie jak przekształcać takie wywołania do ograniczenia, które mogą być przekazywane do [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver).
+Nawet w przypadku kodu platformy .NET go tylko analizować kod, który umożliwia ona Instrumentację. IntelliTest nie mogą instrumentować niektórych części **mscorlib**, łącznie z biblioteki odbicia. **Elementu DynamicMethod** nie można go zinstrumentować.
 
-Sugerowane rozwiązanie jest tryb testowy lokalizację tych metod w typach w zestawie dynamicznym. Jednak nawet w przypadku niektórych metod niezinstrumentowanej, IntelliTest spróbuje obejmują tyle instrumentowanych kodu, jak to możliwe.
+Sugerowane rozwiązanie jest tryb testowy lokalizacji tych metod w typach w zestawie dynamicznym. Jednak nawet jeśli niektóre metody niezinstrumentowanej, IntelliTest podejmie próbę obejmują tyle instrumentowanych kodu, jak to możliwe.
 
 ### <a name="platform"></a>Platforma
 
-IntelliTest jest obsługiwane tylko na X86, 32-bitowych. NETframework.
+Funkcja IntelliTest jest obsługiwane tylko na X86, 32-bitowych. NETframework.
 
 ### <a name="language"></a>Język
 
-W zasadzie IntelliTest można analizować dowolnego programy .NET, w dowolnym języku .NET. Jednak w programie Visual Studio obsługuje tylko C#.
+W zasadzie IntelliTest można analizować dowolnego programy platformy .NET, napisane w dowolnym języku .NET. Jednak w programie Visual Studio obsługuje tylko C#.
 
 ### <a name="symbolic-reasoning"></a>Symbolicznych
 
-Automatyczne używa IntelliTest [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) można określić wartości, które są odpowiednie dla testu i program w ramach testu. Jednak możliwości moduł rozwiązywania ograniczeń są i zawsze będzie, ograniczone.
+Automatyczne korzysta z funkcji IntelliTest [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) do określenia wartości, które są istotne dla testu i program w ramach testu. Jednak możliwości moduł rozwiązywania ograniczeń są i zawsze będzie, ograniczone.
 
-### <a name="incorrect-stack-traces"></a>Śladów stosu niepoprawne
+### <a name="incorrect-stack-traces"></a>Ślady stosu niepoprawne
 
-Ponieważ program IntelliTest przechwytuje i "ponownie zgłasza wyjątek" wyjątki w każdej metodzie instrumentowanych numerów wierszy w śladów stosu nie będą poprawne. Jest to ograniczenie zgodnie z założeniami instrukcji "rethrow".
+Ponieważ program IntelliTest przechwytuje i "ponownie zgłasza" wyjątków w każdej metodzie instrumentowanych numery wierszy w śladach stosu nie będą poprawne. Jest to ograniczenie zgodnie z projektem w instrukcji "Zgłoś ponownie".
 
 ## <a name="further-reading"></a>Dalsze informacje
 
-* [Wstępne wpis w blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/) w witrynie MSDN.
+* [Wpis w blogu wprowadzające](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/).
 * [Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

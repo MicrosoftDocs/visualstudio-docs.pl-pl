@@ -1,5 +1,5 @@
 ---
-title: Dla środowiska .NET Framework w programie Visual Studio
+title: Dla środowiska .NET Framework
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,74 +15,74 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425092"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058301"
 ---
-# <a name="visual-studio-multi-targeting-overview"></a>Visual Studio omówienie wielowersyjności kodu
+# <a name="visual-studio-multi-targeting-overview"></a>Visual Studio wielowersyjnością kodu — Przegląd
 
-W programie Visual Studio można określić wersji lub profilu .NET Framework, która ma projektu pod kątem. Dla aplikacji do uruchomienia na innym komputerze, Framework w wersji celów aplikacji musi być zgodna z wersją Framework jest zainstalowana na komputerze.
+W programie Visual Studio można określić wersji lub profilu .NET Framework, dla której projekt docelowy. Dla aplikacji, aby uruchomić na innym komputerze, na wersję, która celów aplikacji musi być zgodny z wersją Framework, który jest zainstalowany na komputerze.
 
-Rozwiązanie zawiera projekty można również utworzyć różne wersje tego docelowej platformy. Docelowy Framework pomaga zagwarantować, że aplikacja używa tylko funkcje, które są dostępne w określonej wersji platformy.
+Można również utworzyć rozwiązanie, które zawiera projekty tego kierują do różnych wersji Framework. Adresowanie pomaga zagwarantować, że aplikacja używa tylko te funkcje, które są dostępne w określonej wersji Framework.
 
 > [!TIP]
-> Możesz też określić aplikacje dla różnych platform. Aby uzyskać więcej informacji, zobacz [przeznaczanie dla wielu platform](../msbuild/msbuild-multitargeting-overview.md).
+> Można również przeznaczać aplikacje dla różnych platform. Aby uzyskać więcej informacji, zobacz [Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md).
 
 ## <a name="framework-targeting-features"></a>Framework przeznaczonych dla funkcji
 
-Docelowy Framework obejmuje następujące funkcje:
+Adresowanie obejmuje następujące funkcje:
 
-- Po otwarciu projektu, który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio można automatycznie uaktualnić go lub pozostaw cel jako — jest.
+- Po otwarciu projektu, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio może automatycznie go uaktualnić lub pozostawić obiekt docelowy jako-to.
 
-- Podczas tworzenia projektu można określić wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , który ma być docelowa.
+- Podczas tworzenia projektu można określić wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , ma pod kątem.
 
-- Można zmienić wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] czy istniejącego projektu elementów docelowych.
+- Można zmienić wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] element docelowy, istniejącego projektu.
 
-- Celem może być inna wersja [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w każdym z wielu projektów w tym samym rozwiązaniu.
+- Można odwoływać się do różnych wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w każdym z kilku projektów w tym samym rozwiązaniu.
 
-- Po zmianie wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] który docelowych projektu, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sprawia, że wszelkie wymagane zmiany do odwołania i plików konfiguracji.
+- Po zmianie wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , projekt jest ukierunkowany [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] wprowadza wszelkie wymagane zmiany dotyczące odwołań i plików konfiguracji.
 
-Podczas pracy w projekcie, który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dynamicznie zmienia środowisko projektowe w następujący sposób:
+Podczas pracy nad projektem, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dynamicznie zmienia środowisko programistyczne, w następujący sposób:
 
-- Filtruje elementy **Dodaj nowy element** okno dialogowe **Dodaj nowe odwołanie** okno dialogowe i **Dodaj odwołanie do usługi** okno dialogowe, aby pominąć decyzje, które nie są dostępne w Docelowa wersja.
+- Filtruje elementy w **Dodaj nowy element** okno dialogowe **Dodaj nowe odwołanie** okno dialogowe i **Dodaj odwołanie do usługi** okno dialogowe, aby pominąć wybory, które nie są dostępne w Docelowa wersja.
 
-- Filtruje niestandardowe formanty w **przybornika** Usuń te, które nie są dostępne w docelowej wersji i Pokaż tylko najnowsze kontrolek dostępnych wiele formantów.
+- Filtruje niestandardowe formanty w **przybornika** Aby usunąć te, które nie są dostępne w wersji docelowej i pokazać tylko najbardziej aktualne formanty, gdy będzie dostępnych jest kilka formantów.
 
-- Filtruje **IntelliSense** , aby pominąć funkcje językowe, które nie są dostępne w wersji docelowej.
+- Filtruje **IntelliSense** Aby pominąć funkcje językowe, które nie są dostępne w wersji docelowej.
 
-- Filtruje właściwości w **właściwości** okno, aby pominąć te, które nie są dostępne w docelowej wersji.
+- Filtruje właściwości w **właściwości** okna, aby pominąć te, które nie są dostępne w wersji docelowej.
 
-- Filtruje opcji menu, aby pominąć opcje, które nie są dostępne w wersji docelowej.
+- Filtruje opcje menu, aby pominąć opcje, które nie są dostępne w wersji docelowej.
 
-- Dla kompilacji używa wersji kompilatora i opcje kompilatora, które są odpowiednie dla docelowej wersji.
+- W przypadku kompilacji wykorzystuje wersję kompilatora i opcje kompilatora, które są odpowiednie dla wersji docelowej.
 
 > [!NOTE]
-> Docelowy Framework nie gwarantuje, że aplikacja jest uruchamiana poprawnie. Konieczne jest przetestowanie aplikacji upewnij się, że jej jest uruchamiana dla docelowej wersji. Nie można target framework w wersji starszej niż .NET Framework 2.0.
+> Adresowanie nie gwarantuje, że Twoja aplikacja będzie działać poprawnie. Należy przetestować aplikację w taki sposób, aby upewnić się, że jest uruchamiana w wersji docelowej. Nie można wskazywać wersji struktury, które są starsze niż .NET Framework 2.0.
 
-## <a name="select-a-target-framework-version"></a>Wybierz docelową wersję framework
+## <a name="select-a-target-framework-version"></a>Wybieranie wersji platformy docelowej
 
-Podczas tworzenia projektu, wybierz docelową wersję platformy .NET w **nowy projekt** okno dialogowe. Lista dostępnych platform zawiera wersje zainstalowano framework, które mają zastosowanie do typu wybranego szablonu. Dla typów szablonów, które nie wymagają platformy .NET, na przykład szablony .NET Core **Framework** listy rozwijanej jest ukryty.
+Podczas tworzenia projektu wybierz docelową wersję platformy .NET w **nowy projekt** okno dialogowe. Lista dostępnych platform obejmuje wersje zainstalowanych framework, które mają zastosowanie do typu wybranego szablonu. Dla typów szablonu, które nie wymagają .NET Framework, na przykład szablony platformy .NET Core, **Framework** listy rozwijanej jest ukryty.
 
 ![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](media/vside-newproject-framework.png)
 
-W istniejącego projektu, można zmienić obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+W istniejącym projekcie można zmienić docelową [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="resolve-system-and-user-assembly-references"></a>Rozpoznaj odwołania do zestawu systemu i użytkownika
+## <a name="resolve-system-and-user-assembly-references"></a>Rozwiązać odwołania do zestawów systemu i użytkownika
 
-Aby skierować je do wersji programu .NET Framework, należy najpierw zainstalować odwołuje się do odpowiedniego zestawu. Możesz pobrać pakiety developer dla różnych wersji programu .NET Framework na [pobiera .NET](https://www.microsoft.com/net/download/windows) strony.
+Aby skierować je do wersji programu .NET Framework, należy najpierw zainstalować odpowiednie odwołania do zestawów. Możesz pobrać developer Pack dla różnych wersji programu .NET Framework na [pobiera .NET](https://www.microsoft.com/net/download/windows) strony.
 
-**Dodaj odwołanie** okno dialogowe wyłącza zestawy systemu, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemu są *.dll* plików uwzględnionych w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji.) Nie można rozwiązać odwołania, które należą do wersji struktury, która jest nowsza niż wersja docelowa, i nie można dodać formantów, które są zależne od odniesienie. Jeśli chcesz włączyć odniesienie, zresetuj [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] docelowej projektu, który obejmuje odwołania.  Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Dodaj odwołanie** okno dialogowe wyłącza zestawy systemowe, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemowe to *.dll* pliki, które są objęte [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji.) Odwołania, które należą do wersji szablonu, która jest nowsza niż wersja docelowa nie zostanie rozwiązany, a nie można dodać formanty, które są zależne od takiego odwołania. Jeśli chcesz włączyć takie odwołanie, zresetuj [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] obiekcie docelowym projektu na taki, który zawiera odwołanie.  Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-Aby uzyskać więcej informacji na temat odwołania do zestawów, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
+Aby uzyskać więcej informacji na temat odwołań do zestawów, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enable-linq"></a>Włącz LINQ
+## <a name="enable-linq"></a>Włączenia zapytań LINQ
 
-Jeśli zostanie rozpoczęta dla programu .NET Framework 3.5 lub nowszej, odwołanie do **System.Core** , a następnie zaimportuj poziom projektu dla <xref:System.Linq> (w tylko Visual Basic) są dodawane automatycznie. Jeśli chcesz korzystać z funkcji LINQ, należy również wyłączyć `Option Infer` na (w tylko Visual Basic). Odwołanie i importu są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji .NET Framework. Aby uzyskać więcej informacji, zobacz [pracy za pomocą LINQ](/dotnet/csharp/tutorials/working-with-linq).
+Jeśli platformą docelową jest program .NET Framework 3.5 lub nowszy, odniesienie do **System.Core** i importu poziomu projektu, aby uzyskać <xref:System.Linq> (tylko w Visual Basic) są automatycznie dodawane. Jeśli chcesz korzystać z funkcji LINQ, należy również włączyć `Option Infer` na (tylko w Visual Basic). Odwołanie i import są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji systemu .NET Framework. Aby uzyskać więcej informacji, zobacz [pracować z LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przeznaczanie dla wielu platform (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Porady: modyfikowanie docelowego framework i zestawu narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Wielowersyjność (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
+- [Porady: modyfikowanie docelowego framework i zestaw narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

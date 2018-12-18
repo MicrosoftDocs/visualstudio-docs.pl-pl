@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db302147472e8d68689a51d788264e9be2a48f29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f1ffce16632d0daceaf5e917dbbe62dadd29cc2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868290"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750157"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Porady: instrumentacja statycznie skompilowanej aplikacji internetowej ASP.NET i zbieranie danych pamięci przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670991"
 ---
 # <a name="write-code-in-office-solutions"></a>Pisanie kodu w rozwiązaniach pakietu Office
   Istnieją pewne aspekty pisanie kodu w projektach pakietu Office, które różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic odnoszą się do sposobu modele obiektów pakietu Office są widoczne dla kodu zarządzanego. Inne różnice są związane z projekt projektów Office.  
@@ -62,7 +62,7 @@ ms.locfileid: "35676364"
  Zestawy PIA pakietu Office nie są wymagane na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Używanie typów w podstawowych zestawów międzyoperacyjnych  
- Zestawy PIA pakietu Office zawierają kombinację typów, które uwidaczniają model obiektów aplikacji pakietu Office i typów dodatkowej infrastruktury, które nie są przeznaczone do użycia bezpośrednio w kodzie. Aby uzyskać przegląd typów w zestawy PIA pakietu Office, zobacz [Przegląd klasy i interfejsy podstawowe zestawy międzyoperacyjne pakietu Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Zestawy PIA pakietu Office zawierają kombinację typów, które uwidaczniają model obiektów aplikacji pakietu Office i typów dodatkowej infrastruktury, które nie są przeznaczone do użycia bezpośrednio w kodzie. Aby uzyskać przegląd typów w zestawy PIA pakietu Office, zobacz [Przegląd klasy i interfejsy podstawowe zestawy międzyoperacyjne pakietu Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
  Ponieważ typy w zestawy PIA pakietu Office odpowiadają typom modeli obiektów opartego na modelu COM, sposób, można użyć tych typów często różni się od innych typów zarządzanych. Na przykład sposób wywołania metody, które mają następujące parametry opcjonalne w Office podstawowy zestaw międzyoperacyjny zależy od języka programowania, którego używasz w projekcie. Więcej informacji znajduje się w następujących tematach:  
   

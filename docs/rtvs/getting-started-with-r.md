@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie do korzystania z samouczka R
-description: Wskazówki dotyczące użycia języka R w programie Visual Studio, w tym tworzenia projektu, okno interaktywne kodu, edytowanie i debugowanie.
+title: Wprowadzenie do samouczka języka R
+description: Przewodnik po przy użyciu języka R w programie Visual Studio, w tym oknie interaktywnym, tworzenia projektu kodu, edytowanie i debugowanie.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -17,66 +17,66 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 06/19/2018
 ms.locfileid: "36238440"
 ---
-# <a name="get-started-with-r-tools-for-visual-studio"></a>Wprowadzenie do języka R narzędzi dla programu Visual Studio
+# <a name="get-started-with-r-tools-for-visual-studio"></a>Rozpocznij pracę z narzędziami języka R dla programu Visual Studio
 
-Po utworzeniu R narzędzi dla programu Visual Studio (RTVS) zainstalowany (zobacz [instalacji](installing-r-tools-for-visual-studio.md)), możesz szybko uzyskać smak doświadczenia, które zapewniają te narzędzia. 
+Po utworzeniu R Tools for Visual Studio (RTVS) zainstalowane (zobacz [instalacji](installing-r-tools-for-visual-studio.md)), możesz szybko uzyskać smak środowisko, które zapewniają tych narzędzi. 
 
-## <a name="create-an-r-project"></a>Tworzenie projektu R
+## <a name="create-an-r-project"></a>Tworzenie projektu języka R
 
 1. Uruchom program Visual Studio.
 1. Wybierz **pliku** > **nowe** > **projektu** (**Ctrl**+**Shift** + **N**)
-1. Wybierz "Projekt R" w ramach **szablony** > **R**, nadaj projektu, nazwy i lokalizacji, a wybierz **OK**:
+1. Wybierz pozycję "Projekt R" w obszarze **szablony** > **R**, należy nadać projektowi nazwę i lokalizację i wybierz **OK**:
 
-   ![Okno dialogowe Nowy projekt dla języka R w programie Visual Studio (RTVS w VS2017)](media/getting-started-01-new-project.png)
+   ![Okno dialogowe Nowy projekt dla języka R w programie Visual Studio (RTVS w programie VS2017)](media/getting-started-01-new-project.png)
 
-1. Po utworzeniu projektu Zobacz się następujące systemu windows:
+1. Po utworzeniu projektu zostaną wyświetlone następujące systemu windows:
 
-    - Po prawej stronie jest Visual Studio Eksploratorze rozwiązań, której występuje projektu w nadrzędnym *rozwiązania*. (Rozwiązania może zawierać dowolną liczbę projektów o różnych typach; zobacz [projekty](r-projects-in-visual-studio.md) szczegółowe informacje.
-    - W lewej górnej części jest nowy plik R (`script.R`) funkcje służące do edytowania kodu źródłowego z wszystkimi programu Visual Studio do edytowania.
-    - W lewym dolnym rogu jest **R interakcyjne** okna, w którym możesz interaktywnie opracowanie i przetestowanie kodu.
+    - Po prawej stronie jest Visual Studio Eksplorator rozwiązań tam, gdzie zobaczysz projektu w nadrzędnym *rozwiązania*. (Rozwiązania może zawierać dowolną liczbę projektów o różnych typach; zobacz [projektów](r-projects-in-visual-studio.md) Aby uzyskać szczegółowe informacje.
+    - W lewym górnym rogu jest nowy plik języka R (`script.R`) funkcje umożliwiające edytowanie kodu źródłowego za pomocą całego programu Visual Studio jego edycji.
+    - W lewym dolnym rogu **interaktywne R** okna, w którym możesz interaktywnie opracowywać i testować kod.
 
 > [!Note]
-> Można użyć **R interakcyjne** okna bez żadnych projektów otwarte, a nawet po załadowaniu projekt innego typu. Po prostu wybierz **narzędzia R** > **Windows** > **R interakcyjne** w dowolnym momencie.
+> Możesz użyć **interaktywne R** okna bez jakiegokolwiek projektu, Otwórz, a nawet, gdy typ inny projekt jest ładowany. Po prostu wybierz opcję **R Tools** > **Windows** > **interaktywne R** w dowolnym momencie.
 
-## <a name="explore-the-interactive-window-and-intellisense"></a>Eksploruj okna interaktywnego i IntelliSense
+## <a name="explore-the-interactive-window-and-intellisense"></a>Zapoznaj się z oknie interaktywnym i technologii IntelliSense
 
-1. Test, który działa okno interaktywne, wpisując w `3 + 4` , a następnie **Enter** można przejrzeć wyniki:
+1. Test, który działa, wpisując w oknie interaktywnym `3 + 4` i następnie **Enter** można przejrzeć wyniki:
 
-    ![Okno interaktywne R w Visual Studio 2017 (VS2017)](media/getting-started-02-interactive1.png)
+    ![Okno interaktywne R w programie Visual Studio 2017 (VS2017)](media/getting-started-02-interactive1.png)
 
 1. Wprowadź coś bardziej skomplikowane nieco, `ds <- c(1.5, 6.7, 8.9) * 1:12`, a następnie wprowadź `ds` można przejrzeć wyniki:
 
-    ![Dodatkowe interakcyjne przykład R w programie Visual Studio](media/getting-started-03-interactive2.png)
+    ![Dodatkowe przykład interaktywne dla języka R w programie Visual Studio](media/getting-started-03-interactive2.png)
 
-1. Wpisz w `mean(ds)` , ale należy zauważyć, że jak najszybciej po wpisaniu `m` lub `me`, Visual Studio IntelliSense udostępnia opcje automatycznego uzupełniania. Po zakończeniu ma jest zaznaczony na liście, naciśnij klawisz **kartę** do wstawienia; możesz zmienić wybór z klawiszy strzałek lub myszy.
+1. Wpisz `mean(ds)` , ale Zwróć uwagę, że jak najszybciej po wpisaniu `m` lub `me`, funkcji IntelliSense Visual Studio udostępnia opcje automatycznego uzupełniania. Po wybraniu na liście uzupełniania, należy nacisnąć klawisz **kartę** do wstawienia; możesz zmienić wybór za pomocą klawiszy strzałek lub myszy.
 
-    ![Znajdujące się po wprowadzeniu kodu IntelliSense](media/getting-started-04-intellisense1.png)
+    ![Funkcja IntelliSense, pojawiają się podczas wprowadzania kodu](media/getting-started-04-intellisense1.png)
 
-1. Po zakończeniu `mean`, wpisz nawias otwierający `(` i zwróć uwagę, jak IntelliSense umożliwia pomocy wbudowanej funkcji:
+1. Po zakończeniu `mean`, wpisz nawias otwierający `(` i zwróć uwagę, jak technologia IntelliSense umożliwia wbudowanej pomocy dla funkcji:
 
     ![Wyświetlanie pomocy dla funkcji IntelliSense](media/getting-started-05-intellisense2.png)
 
-1. Zakończenie wiersza `mean(ds)` i naciśnij klawisz Enter, aby zobaczyć wynik (`[1] 39.51667`).
+1. Wykonaj wiersz `mean(ds)` i naciśnij klawisz Enter, aby wyświetlić wynik (`[1] 39.51667`).
 
-1. Okno interaktywne jest zintegrowany z pomocy, więc wprowadzania `?mean` Wyświetla Pomoc dla tej funkcji w **pomocy R** okna w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [pomoc w R narzędzi dla programu Visual Studio](getting-started-help.md).
+1. Okno interaktywne jest zintegrowana z usługą pomocy, więc wprowadzanie `?mean` Wyświetla Pomoc dotyczącą tej funkcji w **pomocy R** okna w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [ułatwić R Tools for Visual Studio](getting-started-help.md).
 
-    ![Okno Pomoc R w programie Visual Studio](media/getting-started-06-help.png)
+    ![Pomoc języka R okna w programie Visual Studio](media/getting-started-06-help.png)
 
-1. Niektóre polecenia, takie jak `plot(1:100)`, Otwórz nowe okno w programie Visual Studio, gdy nie można wyświetlić dane wyjściowe bezpośrednio w oknie interaktywnym:
+1. Niektóre polecenia takie jak `plot(1:100)`, Otwórz nowe okno w programie Visual Studio, gdy nie można wyświetlić dane wyjściowe bezpośrednio w oknie interaktywnym:
 
-    ![Wyświetlanie wykresu w programie Visual Studio](media/getting-started-07-plot-window.png)
+    ![Wyświetl wykres w programie Visual Studio](media/getting-started-07-plot-window.png)
 
-Okno interaktywne umożliwia również przejrzeć historię, obciążenia i Zapisz obszarów roboczych dołączyć do debugera i interakcję z plikami kodu źródłowego zamiast kopiowania i wklejania. Zobacz [Praca z okno interaktywne R](interactive-repl-for-r-in-visual-studio.md) szczegółowe informacje.
+Okno interaktywne umożliwia także Przejrzyj historię, ładowania i zapisywania obszarów roboczych, dołączenia do debugera i wchodzić w interakcje z plikami kodu źródłowego, zamiast kopiowania i wklejania. Zobacz [pracę w oknie interaktywnym r.](interactive-repl-for-r-in-visual-studio.md) Aby uzyskać szczegółowe informacje.
 
-## <a name="experience-code-editing-features"></a>Funkcje edycji kodu obsługi
+## <a name="experience-code-editing-features"></a>Funkcje edytowania kodu środowiska
 
-Praca krótko z okno interaktywne przedstawiono podstawowe funkcje edycji takie jak IntelliSense, które również działają w edytorze kodu. Po wprowadzeniu tego samego kodu jako przed Zobacz tego samego autouzupełniania i monity IntelliSense, ale nie dane wyjściowe.
+Krótko z okna interaktywnego Praca pokazuje podstawowych funkcji edycji takie jak technologia IntelliSense, które również działają w edytorze kodu. Po wprowadzeniu tego samego kodu, jak wcześniej, zostanie wyświetlony ten sam automatycznego uzupełniania i monity o technologii IntelliSense, ale nie dane wyjściowe.
 
-Pisanie kodu w *. R* plików pozwala zobaczyć cały kod jednocześnie i ułatwia zmiany małe, a następnie szybko sprawdzić działanie uruchamiając kod w oknie interaktywnym. Może także zawierać dowolną liczbę plików w projekcie. Jeśli kod jest w pliku, można również uruchomić go krok w debugerze (omówione w dalszej części tego artykułu). Funkcje te są przydatne informacje o jest tworzenie algorytmów obliczeniową i pisanie kodu do manipulowania co najmniej jeden zestaw danych, szczególnie w przypadku, gdy chcesz sprawdzić wszystkie wyniki pośrednie.
+Pisanie kodu w *. R* pliku pozwala od razu zobaczyć cały kod i ułatwia dokonywać niewielkich zmian, a następnie szybko wyświetlić wynik, uruchamiając kod w oknie interaktywnym. Może również mieć tyle plików w projekcie. Gdy kod jest w pliku, można również uruchomić go krok w debugerze (zostało to omówione w dalszej części tego artykułu). Te możliwości są przydatne podczas tworzenia algorytmy obliczeniową i pisanie kodu do manipulowania jeden lub więcej zestawów danych, szczególnie w przypadku, gdy chcesz sprawdzić wszystkie wyniki pośrednie.
 
-Na przykład poniższe kroki tworzenia trochę kodu do eksplorowania [centralnej Newtona Limit](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipedia). (Ten przykład jest dostosowany z *R Cookbook* przez Teetor Pawła.)
+Na przykład poniższe kroki umożliwiają utworzenie niewielkiej ilości kodu, aby zapoznać się z [centralnej teorii Limit](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipedia). (W tym przykładzie są zaczerpnięte z *Podręcznik języka R* , Paul Teetor.)
 
-1. W `script.R` edytor, wprowadź następujący kod:
+1. W `script.R` edytora, wprowadź następujący kod:
 
     ```R
     mu <- 50
@@ -86,18 +86,18 @@ Na przykład poniższe kroki tworzenia trochę kodu do eksplorowania [centralnej
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. Aby szybko wyświetlić wyniki, wybierz cały kod (**Ctrl**+**A**), naciśnij klawisz **Ctrl**+**Enter** lub Kliknij prawym przyciskiem myszy i wybierz **wykonaj w programie Interactive**. Zaznaczony kod uruchamiany w okno interaktywne tak, jakby został wpisany bezpośrednio, przedstawiający wynik w oknie kreślenia:
+1. Aby szybko wyświetlić wyniki, wybierz cały kod (**Ctrl**+**A**), naciśnij klawisz **Ctrl**+**Enter** lub Kliknij prawym przyciskiem myszy i wybierz **wykonaj w trybie interaktywnym**. Wszystkie wybrane kod jest uruchamiany w oknie interaktywnym, tak, jakby został wpisany bezpośrednio, przedstawiający wyniki w oknie wykresu:
 
-    ![Wyświetlanie wykresu w programie Visual Studio](media/getting-started-08-plot1.png)
+    ![Wyświetl wykres w programie Visual Studio](media/getting-started-08-plot1.png)
 
-1. Dla jednowierszowego, wystarczy nacisnąć klawisz **Ctrl**+**Enter** w dowolnym momencie uruchomić tego wiersza w oknie interaktywnym.
+1. Dla pojedynczego wiersza, zamiast tego nacisnąć klawisze **Ctrl**+**Enter** w dowolnym momencie, aby uruchomić ten wiersz w oknie interaktywnym.
 
 > [!Tip]
-> Dowiedz się wzorzec wprowadzanie zmian i naciskając klawisz **Ctrl**+**Enter** (lub wybierz wszystko z **Ctrl**+**A** , a następnie naciskając klawisz **Ctrl**+**Enter**) Aby szybko uruchomić kod. W ten sposób jest bardziej wydajne niż przy użyciu myszy dla tej samej operacji.
+> Dowiedz się wzorzec wprowadzanie zmian i naciskając klawisz **Ctrl**+**Enter** (lub wybierz wszystko z **Ctrl**+**A** , a następnie naciskając klawisz **Ctrl**+**Enter**) Aby szybko uruchomić kod. Ten sposób jest znacznie bardziej efektywne niż do tej samej operacji przy użyciu myszy.
 > 
-> Można ponadto przeciągnij i upuść okna kreślenia poza ramki Visual Studio i umieść go w przy każdym innym na ekranie. Następnie można zmienić rozmiar okna kreślenia wymiary i zapisz go do obrazu lub pliku PDF.
+> Ponadto można przeciągnij i upuść okna wykres poza ramek programu Visual Studio i umieść go, zawsze wtedy, gdy inne chcesz, aby na ekranie. Następnie można zmienić rozmiar okna diagram wymiarów i zapisz go do obrazu lub pliku PDF.
 
-1. Dodaj kilka wierszy kodu do uwzględnienia drugi wykres więcej:
+1. Dodaj kilku więcej wierszy kodu, aby uwzględnić drugi wykres:
 
     ```R
     n <- 30
@@ -105,11 +105,11 @@ Na przykład poniższe kroki tworzenia trochę kodu do eksplorowania [centralnej
     lines(density(samp.means))
     ```
 
-1. Naciśnij klawisz **Ctrl**+**A** i **Ctrl**+**Enter** ponownie, aby uruchomić kod, który wygenerował następujące wyniki:
+1. Naciśnij klawisz **Ctrl**+**A** i **Ctrl**+**Enter** ponownie, aby uruchomić kod, tworzyć następujące wyniki:
 
-    ![Zaktualizowano podwójną kreślenia w programie Visual Studio](media/getting-started-09-plot2.png)
+    ![Zaktualizowany wykres podwójną w programie Visual Studio](media/getting-started-09-plot2.png)
 
-1. Problem jest pierwszy wykres określa skali pionowej, więc wykreślenia drugiego (z `lines`) nie pasuje. Aby rozwiązać ten problem, należy ustawić `ylim` parametru `plot` wywołań, ale nie tak, aby prawidłowo musimy dodać kod do obliczenia maksymalnej wartości pionowej. Ten wiersz po wierszu w oknie interaktywnym jest niewygodne ponieważ musimy rozmieszczanie kod, aby użyć `samp.means` przed wywołaniem `plot`. W pliku kodu, jednak firma Microsoft może łatwo wprowadzać odpowiednie zmiany:
+1. Problem polega na pierwszy wykres określa skali pionowej, więc drugi wykresu (przy użyciu `lines`) nie pasuje. Aby rozwiązać ten problem, należy ustawić `ylim` parametru `plot` wywołań, ale działają tak, aby prawidłowo musimy dodać kod do obliczenia maksymalnej wartości pionowy. Wykonując ten wiersz po wierszu w oknie interaktywnym jest wygodne, ponieważ należy do zmiany rozmieszczenia kod, aby użyć `samp.means` przed wywołaniem `plot`. W pliku kodu jednak firma Microsoft można łatwo wprowadzić odpowiednie zmiany:
 
     ```R
     mu <- 50
@@ -129,45 +129,45 @@ Na przykład poniższe kroki tworzenia trochę kodu do eksplorowania [centralnej
 
 1. **CTRL**+**A** i **Ctrl**+**Enter** ponownie, aby zobaczyć wynik:
 
-    ![Zaktualizowano podwójne kreślenia w programie Visual Studio poprawnie skalowania](media/getting-started-10-plot3.png)
+    ![Zaktualizowany wykres podwójną w programie Visual Studio, prawidłowo skalowany](media/getting-started-10-plot3.png)
 
-Istnieje więcej, które można wykonać w edytorze. Aby uzyskać więcej informacji, zobacz [R edycji kodu](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), i [wstawki kodu](code-snippets-for-r.md).
+Istnieje więcej, możesz zrobić w edytorze. Aby uzyskać więcej informacji, zobacz [kod R Edytuj](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), i [fragmenty kodu](code-snippets-for-r.md).
 
 ## <a name="debug-your-code"></a>Debugowanie kodu
 
-Jednym z kluczowych możliwości programu Visual Studio jest jego debugowania interfejsu użytkownika. RTVS jest oparty na tym silne foundation i dodaje innowacyjnych interfejsu użytkownika, takich jak [Explorer zmiennej](variable-explorer.md). W tym miejscu wystarczy Spójrzmy pierwszy na debugowanie.
+Jedną z kluczowych zalet programu Visual Studio jest jej debugowania interfejsu użytkownika. RTVS opiera się na takim fundamencie silnych i dodaje innowacyjne interfejsu użytkownika, takie jak [narzędzie Variable Explorer](variable-explorer.md). W tym miejscu po prostu Przyjrzyjmy Pierwsze spojrzenie na profilowanie.
 
-1. Aby rozpocząć, Resetuj bieżący obszar roboczy, aby wyczyścić wszystkie jego wykonaniu wykonanej do tej pory przy użyciu **narzędzia R** > **sesji** > **zresetować** polecenia menu. Domyślnie wszystkie czynności wykonywane w oknie interaktywnym przypadającą na bieżącej sesji, który następnie jest już używana przez debuger. Resetowanie sesji, pewność, że sesja debugowania rozpoczyna się od żadne istniejące dane. **Zresetować** polecenia, jednak nie ma wpływu na Twoje *skryptu. R* źródła pliku, ponieważ ma czy zarządzane i zapisany poza obszar roboczy.
+1. Aby rozpocząć, resetowanie bieżącego obszaru roboczego, aby wyczyścić wszystkie elementy zostały wykonane do tej pory przy użyciu **R Tools** > **sesji** > **resetowania** polecenia menu. Domyślnie wszystko, co można zrobić w oknie interaktywnym przypadającą na bieżącej sesji, który następnie jest również używany przez debuger. Resetowanie sesji, gwarantuje, że sesji debugowania zaczyna się od żadnych istniejących danych. **Resetowania** polecenia, jednak nie ma wpływu na Twoje *skryptu. R* źródła pliku, ponieważ ma, zarządzane i zapisany poza obszar roboczy.
 
-1. Z *skryptu. R* plik utworzony w poprzedniej sekcji, ustaw punkt przerwania w wierszu, który rozpoczyna się od `pop <-` wprowadzania karetkę na tej linii, a następnie naciskając klawisz **F9**, lub wybierz **debugowania**  >  **Przełącz punkt przerwania** polecenia menu. Po prostu kliknij w lewym marginesie (lub odstępu) dla tego wiersza, w którym pojawi się czerwone punktu przerwania kropki (.):
+1. Za pomocą *skryptu. R* plik utworzony w poprzedniej sekcji, ustaw punkt przerwania w wierszu, który rozpoczyna się od `pop <-` umieszczenie karetkę w danym wierszu, a następnie naciskając klawisz **F9**, lub wybierając **debugowania**  >  **Przełącz punkt przerwania** polecenia menu. Alternatywnie, po prostu kliknij w lewym marginesie (lub trasę) dla tego wiersza, w którym kropka czerwony punktu przerwania pojawia się:
 
-    ![Ustawienia punktu przerwania w edytorze](media/getting-started-11-debug1.png)
+    ![Ustawienie punktu przerwania w edytorze](media/getting-started-11-debug1.png)
 
-1. Uruchom debuger kodu z *skryptu. R* wybierając **plik źródłowy uruchamiania** przycisk na pasku narzędzi, wybranie **debugowania** > **plik źródłowy uruchamiania** elementów menu lub naciskając klawisz **F5**. Visual Studio wprowadzi trybu debugowania i uruchamiania kodu. Przestaje, jednak na wiersz, w którym można ustawić punktu przerwania:
+1. Uruchom debuger kodu z *skryptu. R* wybierając **źródłowy plik startowy** przycisk na pasku narzędzi, wybierając **debugowania** > **źródłowy plik startowy** elementów menu lub naciskając **F5**. Visual Studio przechodzi do trybu debugowania i uruchamiania kodu. Go zatrzymuje się jednak, w wierszu, gdzie ustawić punkt przerwania:
 
-    ![Zatrzymywanie na punkt przerwania w debugerze programu Visual Studio](media/getting-started-12-debug2.png)
+    ![Zatrzymywanie punkt przerwania w debugerze programu Visual Studio](media/getting-started-12-debug2.png)
 
-1. Podczas debugowania, Visual Studio umożliwia krokowo kodu wiersz po wierszu. Możesz również wkroczyć do funkcji, Przekrocz nad nimi lub wychodzenia z nich do wywoływania kontekstu. Funkcje te, wraz z innymi, można znaleźć w **debugowania** menu, w menu kontekstowym kliknij prawym przyciskiem myszy w edytorze i narzędzi debugowania:
+1. Podczas debugowania, Visual Studio pozwala krokowo kodu wiersz po wierszu. Można również wkroczenia do funkcji, Przekrocz nad nimi, lub wychodzenie z nich do wywoływania kontekstu. Te możliwości, wraz z innymi, można znaleźć na **debugowania** menu, kliknij prawym przyciskiem myszy menu kontekstowego w edytorze i na pasku narzędzi debugowania:
 
-    ![Debugowania narzędzi w programie Visual Studio](media/getting-started-13-debug3.png)
+    ![Pasek narzędzi w programie Visual Studio debugowania](media/getting-started-13-debug3.png)
 
-1. Po zatrzymaniu w punkcie przerwania, można sprawdzić wartości zmiennych. Zlokalizuj **automatycznych** okna w Visual Studio i wybierz kartę wzdłuż dolnej części o nazwie **zmiennych lokalnych**. **Zmiennych lokalnych** oknie zmienne lokalne są wyświetlane w bieżącym punkcie w programie. Jeśli użytkownik jest zatrzymana na wcześniej ustawić punkt przerwania, zobaczysz, że `pop` zmienna nie jest jeszcze zdefiniowana. Teraz używać **debugowania** > **Step Over** polecenia (**F10**), i sprawdzić wartość `pop` są wyświetlane:
+1. Po zatrzymaniu w punkcie przerwania, można sprawdzić wartości zmiennych. Znajdź **Autos** okna w programie Visual Studio i wybierz karty u dołu o nazwie **lokalne**. **Lokalne** okno pokazuje zmiennych lokalnych w bieżącym punkcie w programie. Jeśli użytkownik jest zatrzymana na wcześniej ustawić punkt przerwania, zobaczysz, że `pop` zmienna nie jest jeszcze zdefiniowana. Teraz za pomocą **debugowania** > **Step Over** polecenia (**F10**), i sprawdź wartość `pop` wyświetlane:
 
     ![Okno zmiennych lokalnych w programie Visual Studio](media/getting-started-14-debug4.png)
 
-1. Aby zbadać zmiennych w innych zakresach, w tym zakresie globalnym i zakresy pakietu, należy użyć [Explorer zmiennej](variable-explorer.md). Eksplorator zmiennej oferuje również możliwość, aby przełączyć do widoku tabelarycznego z kolumnami można sortować i do eksportowania danych do pliku CSV.
+1. Aby zbadać zmienne w różnych zakresach, w tym zakresie globalnym i zakresy pakietu, należy użyć [narzędzie Variable Explorer](variable-explorer.md). Narzędzie Variable Explorer oferuje również możliwość przełączać do widoku tabelarycznego z kolumnami sortowania i eksportowanie danych do pliku CSV.
 
-    ![Rozwinięty widok Eksploratora zmiennej](media/variable-explorer-expanded-results.png)
+    ![Rozwinięty widok Eksplorator zmiennych](media/variable-explorer-expanded-results.png)
 
-1. Można kontynuować krokowe wykonywanie programu wiersz po wierszu, lub wybierz opcję **Kontynuuj** (**F5**) do jego działania do wykonania (lub następnego punktu przerwania).
+1. Możesz kontynuować przechodzenie krok po kroku, za pośrednictwem programu wiersz po wierszu, lub wybierz opcję **Kontynuuj** (**F5**) do jej uruchomienia do ukończenia (lub następnego punktu przerwania).
 
-Aby przejść głębiej, zobacz [debugowanie](debugging-r-in-visual-studio.md) i [Explorer zmiennej](variable-explorer.md).
+Aby bardziej szczegółowo omawiają, zobacz [debugowanie](debugging-r-in-visual-studio.md) i [narzędzie Variable Explorer](variable-explorer.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym przewodniku samouczka podstawy projektów języka R, przy użyciu okna interaktywnego, code, edytowanie i debugowanie w programie Visual Studio. Aby kontynuować, eksploracji więcej możliwości, zobacz następujące artykuły, a także wyświetlany w spisie treści artykułów:
+W tym przewodniku wyjaśniono podstawowe informacje dotyczące projekty języka R, użycie okna interaktywnego, code edytowanie i debugowanie w programie Visual Studio. Aby kontynuować Eksplorowanie więcej możliwości, zobacz następujące artykuły oraz artykułów ukazał spisu treści:
 
-- [Przykładowych projektach](getting-started-samples.md)
+- [Przykładowe projekty](getting-started-samples.md)
 - [Edytowanie kodu](editing-r-code-in-visual-studio.md)
 - [Debugowanie](debugging-r-in-visual-studio.md)
 - [Obszary robocze](r-workspaces-in-visual-studio.md)

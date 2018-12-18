@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859372"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673071"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Można wdrożyć rozwiązania pakietu Office w mniejszej liczby czynności, jeśli użycie technologii ClickOnce. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym, należy rozważyć użycie Instalatora Windows (*.msi*) Jeśli więcej niż jeden użytkownik uruchomi swoje rozwiązanie na tym samym komputerze.  
@@ -86,7 +86,7 @@ ms.locfileid: "49859372"
 9. Jeśli rozwiązanie jest przeznaczony dla .NET Framework 4.5, również wybrać opcję **Visual Studio 2010 Tools for Office Runtime** pole wyboru.  
 
     > [!NOTE]  
-    >  Domyślnie nie jest wyświetlane to pole wyboru. Aby było widoczne, należy utworzyć pakiet programu inicjującego. Zobacz [Tworzenie pakietu programu inicjującego dla dodatku pakietu Office 2013 VSTO za pomocą programu Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Domyślnie nie jest wyświetlane to pole wyboru. Aby było widoczne, należy utworzyć pakiet programu inicjującego. Zobacz [Tworzenie pakietu programu inicjującego dla dodatku pakietu Office 2013 VSTO za pomocą programu Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).  
 
 10. W obszarze **Określ lokalizację instalacji wstępnie wymaganych składników**, wybierz jedną z opcji, które są wyświetlane, a następnie wybierz **OK** przycisku.  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859372"
 |Kod błędu|Definicja|  
 |----------------|----------------|  
 |0|Rozwiązanie zostało pomyślnie zainstalowane lub odinstalowane albo została wyświetlona Pomoc narzędzia VSTOInstaller.|  
-|-100|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowa lub została użyta więcej niż raz. Aby uzyskać więcej informacji, wpisz "vstoinstaller /?" lub zobacz [utworzyć niestandardowego Instalatora dla rozwiązania ClickOnce Office](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowa lub została użyta więcej niż raz. Aby uzyskać więcej informacji, wpisz "vstoinstaller /?" lub zobacz [utworzyć niestandardowego Instalatora dla rozwiązania ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowy. Aby uzyskać więcej informacji, wpisz „vstoinstaller /?”.|  
 |-200|Identyfikator URI manifestu wdrażania jest nieprawidłowy. Aby uzyskać więcej informacji, wpisz „vstoinstaller /?”.|  
 |-201|Nie można zainstalować rozwiązania, ponieważ manifest wdrażania jest nieprawidłowy. Zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859372"
 ## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Publikowanie rozwiązań Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Porady: Instalowanie rozwiązań pakietu ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Porady: publikowanie rozwiązania pakietu Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Tworzenie niestandardowego Instalatora dla rozwiązań office ClickOnce](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Porady: Instalowanie rozwiązań pakietu ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Porady: publikowanie rozwiązania pakietu Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Tworzenie niestandardowego Instalatora dla rozwiązań office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

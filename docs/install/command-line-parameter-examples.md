@@ -1,8 +1,9 @@
 ---
-title: Przykładowe parametry wiersza polecenia do zainstalowania programu Visual Studio
+title: Przykładowe parametry wiersza polecenia do zainstalowania
 description: Dostosuj te przykłady do tworzenia własnych instalacji z wiersza polecenia programu Visual Studio.
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de5e7f194fff87b5148a2262925d3ac5c4287293
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895488"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160156"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017
 
@@ -128,6 +129,39 @@ Te parametry wiersza polecenia jest **Nowość w wersji 15.7**. Aby uzyskać wi�
 * Przy użyciu tylko ścieżki instalacji:
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+
+## <a name="using-export"></a>Użycie opcji eksportowania
+
+To polecenie wiersza polecenia jest **nowego w programie 15.9**. Aby uzyskać więcej informacji na ten temat, zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
+
+* Użycie opcji eksportowania zapisać je przy użyciu instalacji:
+
+```cmd
+vs_enterprise.exe export --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+* Zapisz niestandardowy wybór od podstaw przy użyciu eksportu:
+
+```cmd
+vs_enterprise.exe export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+```
+
+## <a name="using---config"></a>Za pomocą--config
+
+Ten parametr wiersza polecenia jest **nowego w programie 15.9**. Aby uzyskać więcej informacji na ten temat, zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
+
+* Do zainstalowania obciążeń i składników z pliku konfiguracji instalacji wcześniej zapisany, przy użyciu--config:
+
+```cmd
+vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+```
+
+* Dodawanie obciążeń i składników do istniejącej instalacji przy użyciu--config:
+
+```cmd
+vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: Symbole dla języków Python/C++ debugowanie w trybie mieszanym
 description: Jak program Visual Studio zapewnia możliwość ładowania symboli dla pełną C++ trybu mieszanego i debugowania języka Python.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 519bfd5610b420472502407792dbff3ea1ebedd2
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050135"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062693"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalowanie symboli debugowania dla interpreterów języka Python
 
@@ -71,12 +71,12 @@ Jeśli symbole zostały pobrane oddzielnie, wykonaj poniższe kroki, aby uświad
 | 3.4.2 | [32-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |
 | 3.4.1 | [32-bit](https://www.python.org/ftp/python/3.4.1/python-3.4.1-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64-pdb.zip) |
 | 3.4.0 | [32-bit](https://www.python.org/ftp/python/3.4.0/python-3.4.0-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64-pdb.zip) |
-| 3.3.5 | [32-bit](http://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64-bit](http://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
-| 3.3.4 | [32-bit](https://www.python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64-bit](https://www.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
-| 3.3.3 | [32-bit](https://www.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64-bit](https://www.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
-| 3.3.2 | [32-bit](https://www.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64-bit](https://www.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
-| 3.3.1 | [32-bit](https://www.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64-bit](https://www.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
-| 3.3.0 | [32-bit](https://www.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64-bit](https://www.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 3.3.5 | [32-bit](https://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
+| 3.3.4 | [32-bit](https://www.python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
+| 3.3.3 | [32-bit](https://www.python.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
+| 3.3.2 | [32-bit](https://www.python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
+| 3.3.1 | [32-bit](https://www.python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
+| 3.3.0 | [32-bit](https://www.python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
 | 2.7.15 | [32-bit](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
 | 2.7.14 | [32-bit](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
 | 2.7.13 | [32-bit](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |
@@ -86,12 +86,12 @@ Jeśli symbole zostały pobrane oddzielnie, wykonaj poniższe kroki, aby uświad
 | 2.7.9 | [32-bit](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip) |
 | 2.7.8 | [32-bit](https://www.python.org/ftp/python/2.7.8/python-2.7.8-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64-pdb.zip) |
 | 2.7.7 | [32-bit](https://www.python.org/ftp/python/2.7.7/python-2.7.7-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.7/python-2.7.7.amd64-pdb.zip) |
-| 2.7.6 | [32-bit](https://www.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64-bit](https://www.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
-| 2.7.5 | [32-bit](https://www.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64-bit](https://www.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
-| 2.7.4 | [32-bit](https://www.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64-bit](https://www.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
-| 2.7.3 | [32-bit](https://www.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64-bit](https://www.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
-| 2.7.2 | [32-bit](https://www.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64-bit](https://www.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
-| 2.7.1 | [32-bit](https://www.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64-bit](https://www.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
+| 2.7.6 | [32-bit](https://www.python.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
+| 2.7.5 | [32-bit](https://www.python.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
+| 2.7.4 | [32-bit](https://www.python.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
+| 2.7.3 | [32-bit](https://www.python.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
+| 2.7.2 | [32-bit](https://www.python.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
+| 2.7.1 | [32-bit](https://www.python.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64-bit](https://www.python.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
 
 ## <a name="enthought-canopy"></a>Korony Enthought
 

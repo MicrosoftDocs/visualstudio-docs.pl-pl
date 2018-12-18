@@ -17,17 +17,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912633"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248273"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowywania na poziomie dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera projekty do tworzenia dostosowań poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowań poziomu dokumentu:  
@@ -81,7 +81,7 @@ ms.locfileid: "49912633"
 |Za pomocą [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], deweloper pisze kod, który jest dostępny dla programów Word i Excel.<br /><br /> Chociaż może się wydawać, że deweloper tworzy plik wykonywalny, który jest uruchamiany program Word lub Excel, proces faktycznie działa odwrotnie. Dokument jest skojarzony z zestawem i zawiera wskaźnik do tego zestawu. Po otwarciu dokumentu programu Word lub Excel lokalizuje zestaw i uruchamia kod w odpowiedzi na wszystkie obsługiwane zdarzenia.|Użytkownikom korzystającym z rozwiązania po prostu otworzyć dokument lub skoroszyt (lub Utwórz nowy dokument z szablonu) tak samo jak każdy inny plik programu Microsoft Office one się otwierają.<br /><br /> Zestaw zawiera dostosowania w dokumencie lub skoroszycie, takie jak automatyczne wypełnianie z bieżącymi danymi lub przedstawiający okno dialogowe, aby zażądać informacji.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Obsługiwane formaty dokumentów w przypadku dostosowań na poziomie dokumentu  
- Kiedy tworzysz projekt dostosowania, można wybrać format dokumentu, który chcesz użyć w projekcie. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Kiedy tworzysz projekt dostosowania, można wybrać format dokumentu, który chcesz użyć w projekcie. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  W poniższej tabeli wymieniono formaty dokumentów, których można używać w dostosowań na poziomie dokumentu dla programów Excel i Word.  
   

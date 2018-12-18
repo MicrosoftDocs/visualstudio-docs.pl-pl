@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808795"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348529"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Porady: tworzenie i edytowanie konfiguracji
 
 Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład można skonfigurować do kompilacji debugowanej, testerom służy do znajdowania i rozwiązywania problemów i można skonfigurować różne rodzaje kompilacji, które mogą być dystrybuowane do różnych klientów.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [tworzenie i edytowanie konfiguracji w programie Visual Studio dla komputerów Mac](/visualstudio/mac/create-and-edit-configurations).
 
 ## <a name="create-build-configurations"></a>Utwórz konfiguracje kompilacji
 
@@ -127,3 +128,4 @@ W **programu Configuration Manager** okno dialogowe, można użyć **Konfiguracj
 - [O konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
 - [Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
+- [Tworzenie i edytowanie konfiguracji (Visual Studio dla komputerów Mac)](/visualstudio/mac/create-and-edit-configurations)

@@ -1,6 +1,6 @@
 ---
-title: Jak można sprawdzić, kto przekazuje błędną wartość parametru? | Microsoft Docs
-ms.custom: ''
+title: Dowiedz się, kto przekazuje błędną wartość parametru | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 164ca15cfc508b952ccfe2f986892c0801fd1539
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284175"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059369"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Jak można sprawdzić, kto przekazuje błędną wartość parametru?
 ## <a name="problem-description"></a>Opis problemu  

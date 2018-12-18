@@ -1,5 +1,5 @@
 ---
-title: Określanie agentów testowych do użycia w scenariuszach testów obciążenia w programie Visual Studio
+title: Określanie agentów testowych do użycia w scenariuszach testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,16 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381472"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061020"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Porady: Określ test agentów do użycia w obciążenia przetestować scenariusze
 
 Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).

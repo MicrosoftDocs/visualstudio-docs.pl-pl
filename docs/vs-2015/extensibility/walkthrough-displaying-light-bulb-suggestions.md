@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7e5bf7ad795615e70e990dd29c05f5efe3a1c78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869057"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781104"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Przewodnik: wyświetlanie sugestii „żarówka”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -229,8 +229,8 @@ Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć
 2.  Utwórz dwie klasy o nazwie pierwszy `UpperCaseSuggestedAction` i druga o nazwie `LowerCaseSuggestedAction`. Zarówno klasy implementować <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
      Obie klasy są podobne, z tą różnicą, że jeden wywołuje <xref:System.String.ToUpper%2A> i inne wywołania <xref:System.String.ToLower%2A>. W poniższych krokach opisano tylko klasy akcji wielkie litery, ale musi implementować zarówno klasy. Wykonaj kroki wykonania akcji wielkie litery jako wzorzec do wykonywania akcji małe litery.  
@@ -250,8 +250,8 @@ Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć
   
     ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
@@ -295,7 +295,7 @@ Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -326,7 +326,7 @@ Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć
 9. Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> metody, zastępując tekst w zakresie równoważnik wielkie litery.  
   
     ```csharp  
-    public void Invoke(CancellationToken cancellationToken)  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  

@@ -18,41 +18,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eefbb12584cdff2bb32b9d4406c916969ec435c4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120287"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296206"
 ---
 # <a name="how-to-create-an-application-page"></a>Porady: Tworzenie strony aplikacji
-  Można utworzyć stronę sieci web ASP.NET dla jednego lub więcej witryn programu SharePoint. W programie SharePoint strony te są nazywane stron aplikacji. W przeciwieństwie do strony strony aplikacji zawiera kod, który jest uruchamiany za strony. Aby uzyskać więcej informacji, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+  Możesz utworzyć stronę sieci web ASP.NET w przynajmniej jednej witryny programu SharePoint. W programie SharePoint te strony są nazywane stron aplikacji. W przeciwieństwie do strony strony aplikacji zawiera kod, który uruchamia się w stronę. Aby uzyskać więcej informacji, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>Aby utworzyć stronę aplikacji  
   
 1.  W programie Visual Studio otwórz lub utwórz projekt programu SharePoint.  
   
-     Aby uzyskać więcej informacji, zobacz [SharePoint elementu szablonów projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+     Aby uzyskać więcej informacji, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
 2.  W **Eksploratora rozwiązań**, wybierz węzeł projektu.  
   
 3.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
-4.  W **Dodaj nowy element** okna dialogowego rozwiń **SharePoint** węzeł, a następnie wybierz pozycję **2010** elementu.  
+4.  W **Dodaj nowy element** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010** elementu.  
   
-5.  Na liście szablonów programu SharePoint, wybierz **strony aplikacji**.  
+5.  Na liście szablonów programu SharePoint, wybierz opcję **strony aplikacji**.  
   
-6.  W **nazwa** polu, określ nazwę strony aplikacji, a następnie wybierz **Dodaj** przycisku.  
+6.  W **nazwa** , określ nazwę dla strony aplikacji, a następnie wybierz **Dodaj** przycisku.  
   
      Program Visual Studio dodaje kilka folderów i plików do projektu. Aby uzyskać więcej informacji o tych plikach, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
-     W **źródła** zostanie wyświetlony widok projektanta Visual Web Developer pliku strony ASP.NET. Strony można zaprojektować przez dodawanie formantów z **przybornika** i umieszczenie ich w zawartości symbole zastępcze. Aby uzyskać więcej informacji, zobacz [widoku źródła, Projektant strony sieci Web](http://msdn.microsoft.com/en-us/5911396b-fe51-4150-9ff1-b085f812862f).  
+     W **źródła** zostanie wyświetlony widok projektanta Visual Web Developer, plik strony ASP.NET. Można zaprojektować stronie przez dodanie formantów z **przybornika** i wprowadzanie ich na zawartości symbole zastępcze. Aby uzyskać więcej informacji, zobacz [widok źródła, Projektant stron sieci Web](/previous-versions/aspnet/ms178154\(v\=vs.100\)).  
   
-7.  Do obsługi zdarzeń formantu, należy dodać kod do pliku kodu na stronie aplikacji.  
+7.  Jeśli chcesz obsługiwać zdarzenia formantu, Dodaj kod do pliku kodu strony aplikacji.  
   
-     Plik kodowy pojawia się po rozwinięciu węzła pliku strony ASP.NET i ma *.cs* lub *.vb* rozszerzenia, w zależności od język projektu. Przykład end-to-end Tworzenie strony aplikacji, zobacz [wskazówki: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
+     Plik kodu po rozwinięciu węzła pliku strony ASP.NET i jest *.cs* lub *.vb* rozszerzenia, w zależności od języka projektu. Jak utworzyć witrynę aplikacji, na przykład end-to-end, zobacz [wskazówki: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
   
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Wskazówki: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
+ [Przewodnik: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
   

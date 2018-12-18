@@ -17,12 +17,12 @@ ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9525c31475f12040ca50c4aa0d24b126f94f80be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749108"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -83,21 +83,21 @@ public struct BP_LOCATION {
  [Tylko w języku C++] Zawiera [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) struktury, jeśli `bpLocationType`  =  `BPLT_RESOLUTION`.  
   
  `unionmember1`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
  `unionmember2`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
  `unionmember3`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
  `unionmember4`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  
   
- [Tylko język C#] `unionmemberX` Elementy członkowskie są interpretowane zgodnie z poniższą tabelą. Szukaj w lewej kolumnie dla `bpLocationType` wartość, a następnie sprawdź w innych kolumnach, aby określić, jakie każdy `unionmemberX` reprezentuje element członkowski i marshal `unionmemberX` odpowiednio. Zobacz przykład sposobu interpretowania częścią tej struktury w języku C#.  
+ [C# tylko] `unionmemberX` Elementy członkowskie są interpretowane zgodnie z poniższą tabelą. Szukaj w lewej kolumnie dla `bpLocationType` wartość, a następnie sprawdź w innych kolumnach, aby określić, jakie każdy `unionmemberX` reprezentuje element członkowski i marshal `unionmemberX` odpowiednio. Zobacz przykład sposobu interpretowania częścią tej struktury w języku C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

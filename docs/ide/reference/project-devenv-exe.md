@@ -1,5 +1,5 @@
 ---
-title: -Projekt (devenv.exe)
+title: -Project (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 588b56c03dbd14b1b7658b92a67b02a6dc3892eb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704080"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948221"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
-Identyfikuje jeden projekt w określona konfiguracja rozwiązania do kompilacji, czyszczenia, odbudować lub wdrożenia.
+Umożliwia określenie jednego projektu w ramach konfiguracji określonego rozwiązania do kompilacji, czyszczenia, odbudować lub wdrożenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
  / clean
 
- Czyści wszystkie pośredniczące pliki i katalogi dane wyjściowe tworzone podczas kompilacji.
+ Czyści wszystkie pośrednie pliki i katalogi dane wyjściowe utworzone podczas kompilacji.
 
  / REBUILD
 
- Czyści, a następnie tworzy projekt określony przez `/project` `ProjName`.
+ Czyści, a następnie kompiluje projekt określony przez `/project` `ProjName`.
 
  / deploy
 
- Określa, czy po Tworzenie lub odbudowywanie można wdrożyć projektu.
+ Określa, czy wdrożony po kompilacji lub skompiluj ponownie projekt.
 
  `SolnConfigName`
 
@@ -61,22 +61,22 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
  / Project `ProjName`
 
- Opcjonalna. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu do pliku projektu lub nazwa wyświetlana projektu lub pełną ścieżkę i nazwę pliku projektu.
+ Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.
 
  / projectconfig `ProjConfigName`
 
- Opcjonalna. Nazwa projektu konfiguracja ma zostać zastosowany do kompilacji `/project` o nazwie.
+ Opcjonalna. Nazwa projektu kompilacji konfiguracji, które mają być stosowane do `/project` o nazwie.
 
 ## <a name="remarks"></a>Uwagi
 
--   Należy użyć częścią `devenv /build`, /`clean`, `/rebuild`, lub `/deploy` polecenia.
+-   Należy użyć wchodzi w skład `devenv /build`, /`clean`, `/rebuild`, lub `/deploy` polecenia.
 
 -   Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
 
--   Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okna, lub określić za pomocą pliku dziennika `/out` przełącznika.
+-   Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie kompilacji projektu `CSharpConsoleApp`za pomocą `Debug` konfigurację kompilacji projektu w `Debug` Konfiguracja rozwiązania o `MySolution`.
+ W tym przykładzie tworzy projekt `CSharpConsoleApp`przy użyciu `Debug` konfigurację kompilacji projektu w ramach `Debug` Konfiguracja rozwiązania o `MySolution`.
 
 ```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -86,8 +86,8 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)
-- [/ Kompilacji (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/ Wdróż (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+- [/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

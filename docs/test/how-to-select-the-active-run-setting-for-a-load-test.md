@@ -1,5 +1,5 @@
 ---
-title: Wybieranie ustawienia przebiegu testu obciążenia w programie Visual Studio
+title: Wybieranie ustawienia przebiegu testu obciążeniowego
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381914"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067388"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Porady: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Test obciążenia może zawierać jeden lub więcej *parametrów uruchomieniowych* które są zestawem właściwości wpływającym na sposób wykonywania testu obciążeniowego. Ustawienia uruchamiania są zorganizowane według kategorii w **właściwości** okna. Po uruchomieniu testu obciążenia używa uruchomieniowy, który jest aktualnie ustawiona jako aktywna.
 
@@ -31,8 +33,6 @@ Jeśli test obciążeniowy zawiera tylko jeden węzeł ustawień w obszarze **pa
 W **edytora testu obciążenia**, aktywnego ustawienia uruchamiania jest identyfikowane za pomocą sufiksu "[aktywny]".
 
 ## <a name="select-the-active-run-setting"></a>Wybierz aktywnego ustawienia uruchamiania
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Aby wybrać aktywnego ustawienia uruchamiania testu obciążeniowego
 
 1.  Otwórz test obciążenia.
 

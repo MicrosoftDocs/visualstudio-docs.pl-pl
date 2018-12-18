@@ -1,6 +1,6 @@
 ---
-title: R Tools for Visual Studio — często zadawane pytania
-description: Często zadawane pytania na R w programie Visual Studio.
+title: Narzędzia języka R dla programu Visual Studio — często zadawane pytania
+description: Często zadawane pytania w języku R w programie Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -10,109 +10,109 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 29634d63cf8e898203ff4d72a23296bdb14019e0
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238352"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348481"
 ---
 # <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-## <a name="visual-studio-support"></a>Obsługa programu Visual Studio
+## <a name="visual-studio-support"></a>Pomoc techniczna dla programu Visual Studio
 
-**Q. RTVS działa na OS X lub Linux?**
+**PYTANIA I ODPOWIEDZI. RTVS działa systemie OS X lub Linux?**
 
-A. RTVS obecnie bazuje na Visual Studio, która jest implementacją tylko do systemu Windows. Firma Microsoft bada obsługi w programie Visual Studio Code i Visual Studio dla komputerów Mac. Zapoznaj się [RTVS wystawiać #1295](https://github.com/Microsoft/RTVS/issues/1295).
+A. RTVS obecnie bazuje na usłudze Visual Studio, który jest wdrożenie oparte tylko na Windows. Firma Microsoft analizuje pomocy technicznej w programie Visual Studio Code i Visual Studio dla komputerów Mac. Zapoznaj się [RTVS wystawiać #1295](https://github.com/Microsoft/RTVS/issues/1295).
 
-**Q. RTVS działa w przypadku wersji programu Visual Studio Express?**
+**PYTANIA I ODPOWIEDZI. RTVS działa z wersjami programu Visual Studio Express?**
 
 A. Nie.
 
-**Q. Z RTVS można użyć rozszerzenia programu Visual Studio?**
+**PYTANIA I ODPOWIEDZI. Czy można użyć rozszerzeń programu Visual Studio za pomocą RTVS?**
 
-A. Absolutnie. W rzeczywistości poniżej przedstawiono kilka, które są popularne dla osób, Praca z R.
+A. Oczywiście. W rzeczywistości Oto kilka, które są popularne dla osób pracujących z językiem R.
 
-- [VsVim dla powiązań klucza vim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
+- [VsVim dla vim powiązań klawiszy](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 - [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
-- [Edytor markdown z podglądem na żywo](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
+- [Edytor języka znaczników markdown za pomocą podglądu na żywo](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
-Zobacz [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Aby uzyskać więcej informacji.
+Zobacz [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Aby dowiedzieć się więcej.
 
-**Q. Ponieważ RTVS znajduje się w programie Visual Studio, to znaczy R mogą być łatwo używane z C#, C++ i innych języków Microsoft?**
+**PYTANIA I ODPOWIEDZI. Ponieważ RTVS znajduje się w programie Visual Studio, to znaczy, że języka R mogą być łatwo używane z C#, C++ i inne języki firmy Microsoft?**
 
-A. Nie. RTVS jest narzędziem służącym do tworzenia kodu języka R i używa standardowych natywnego tłumaczy R. Współdziałanie między R i innych języków nie jest obecnie obsługiwany.
+A. Nie. RTVS jest narzędziem do tworzenia kodu języka R i używa standardowych natywnych interpreterów języka R. Współdziałanie języków R i innych języków nie jest obecnie obsługiwane.
 
-**Q. RTVS działa z ustawień regionalnych innych niż angielskie?**
+**PYTANIA I ODPOWIEDZI. RTVS działa przy użyciu ustawień regionalnych innych niż angielski?**
 
-A. W wersji 1.0 RTVS jest tylko do języka angielskiego. Wersji 1.1 będzie lokalizowany do tego samego zestawu języki, które program Visual Studio samej siebie. W międzyczasie, użyj [angielski pakiet językowy dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48157), lub w Visual Studio 2017 r, należy uruchomić Instalatora i wybrać język angielski w **pakiety językowe** kartę.
+A. Wersja 1.0 RTVS jest tylko do języka angielskiego. W wersji 1.1 zostanie zlokalizowany dla tego samego zestawu języków, które jest programu Visual Studio. W międzyczasie użyj [pakiet językowy dla programu Visual Studio 2015 w języku angielskim](https://www.microsoft.com/download/details.aspx?id=48157), lub w programie Visual Studio 2017, uruchom Instalatora i wybierz w języku angielskim w **pakiety językowe** kartę.
 
-![Ustawienia międzynarodowe dla programu Visual Studio 2017 r.](media/FAQ-international-settings.png)
+![Ustawienia międzynarodowe w programie Visual Studio 2017](media/FAQ-international-settings.png)
 
-**Q. Podoba naprawdę Moje bieżące ustawienia programu Visual Studio, ale chcę wypróbować nowe ustawienia analizy danych. Co należy zrobić?**
+**PYTANIA I ODPOWIEDZI. Podoba mi się naprawdę Moje bieżące ustawienia programu Visual Studio, ale chcę, aby wypróbować nowe ustawienia do nauki o danych. Co należy zrobić?**
 
-A. Zapisz bieżące ustawienia programu Visual Studio przy użyciu **narzędzia** > **Import i eksport ustawień**, następnie przejdź do ustawień analizy danych. Aby przywrócić zapisane ustawienia, należy użyć **Import i eksport ustawień** polecenie ponownie.
+A. Zapisać bieżące ustawienia programu Visual Studio przy użyciu **narzędzia** > **Import i eksport ustawień**, następnie przejdź do ustawień do nauki o danych. Aby przywrócić zapisane ustawienia, należy użyć **Import i eksport ustawień** ponownie polecenie.
 
-**Q. Czy mogę przechowywać w udziale sieciowym projektu programu Visual Studio?**
+**PYTANIA I ODPOWIEDZI. W sieciowym udziale można przechowywać mój projekt programu Visual Studio?**
 
-A. Nie, Visual Studio nie obsługuje ładowania projektów z udziału sieciowego.
+A. Nie, program Visual Studio nie obsługuje ładowania projektów z udziału sieciowego.
 
-## <a name="r-interpretersintegration"></a>R tłumaczy/integracji
+## <a name="r-interpretersintegration"></a>Integracja interpreterów języka R
 
-**Q. Jakie tłumaczy R RTVS działa z?**
+**PYTANIA I ODPOWIEDZI. Jakie interpreterów języka R RTVS działa z?**
 
-A. [R sieci CRAN](https://cran.r-project.org/), [klienta Microsoft R i Microsoft Machine Learning serwera](/machine-learning-server/)
+A. [CRAN R](https://cran.r-project.org/), [Microsoft R Client i Microsoft Machine Learning Server](/machine-learning-server/)
 
-**Q. Gdzie można pobrać te tłumaczy?**
+**PYTANIA I ODPOWIEDZI. Gdzie można pobrać te interpretery?**
 
 A. Zobacz [instalacji](installing-r-tools-for-visual-studio.md).
 
 Q **co to jest Microsoft R Server?**
 
-A. Serwer R jest poprzednia nazwa [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server).
+A. R Server to poprzednia nazwa [serwer Microsoft Machine Learning](/machine-learning-server/what-is-machine-learning-server).
 
-**Q. RTVS działa z 32-bitowe wersje R?**
+**PYTANIA I ODPOWIEDZI. Czy RTVS współpracuje z 32-bitowe wersje języka r?**
 
-A. Nie, RTVS obsługuje tylko 64-bitowe wersje R systemem 64-bitowych wersji systemu Windows.
+A. Nie, RTVS obsługuje tylko 64-bitowe wersje języka r z systemem 64-bitowe wersje systemu Windows.
 
-**Q. RTVS działa z mojej systemu kontroli źródła?**
+**PYTANIA I ODPOWIEDZI. RTVS działa z moim systemem kontroli źródła?**
 
-A. Tak, można użyć do systemu kontroli źródła, który jest zintegrowany z programu Visual Studio.
+A. Tak, można użyć do systemu kontroli źródła, która jest zintegrowana w programie Visual Studio.
 
-**Q. Co to są zalecane *.gitignore* ustawień dla projektu RTVS?**
+**PYTANIA I ODPOWIEDZI. Co to są zalecanym *.gitignore* ustawienia dla projektu RTVS?**
 
-A. Głównym repozytorium przechowuje Github zalecane *.gitignore* plików. Można to sprawdzić tutaj: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+A. Serwis GitHub zachowuje głównego repozytorium zalecane *.gitignore* plików. Być może ją opublikujemy: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
-## <a name="remote-services"></a>Usługi zdalne
+## <a name="remote-services"></a>Usługi zdalnej
 
-Q. **Co to jest zdalny w programie Visual Studio?**
+PYTANIE: **Co to jest usługi zdalnej w programie Visual Studio?**
 
-A. Usługi zdalnego R dla programu Visual Studio umożliwia konfigurowanie komputera z systemem Windows lub Linux, a następnie podłącz do niego z RTVS. Zobacz [Konfigurowanie zdalnego obszarów roboczych](setting-up-remote-r-workspaces.md).
+A. Remote R Services dla programu Visual Studio pozwala na skonfigurowanie komputera Windows lub Linux, a następnie połączyć je z RTVS. Zobacz [Konfigurowanie zdalnych obszarów roboczych](setting-up-remote-r-workspaces.md).
 
-Q. **RTVS mogą łączyć się Microsoft Machine Learning Server?**
+PYTANIE: **Czy RTVS się połączyć serwer Microsoft Machine Learning?**
 
-A. Nie, ponieważ Microsoft ML Server różne technologie i nie zapewnia sam mechanizm łączności jako wymagany przez RTVS.
+A. Nie, ponieważ Microsoft ML Server jest różne technologie i nie zapewnia ten sam mechanizm łączności jako wymagane przez RTVS.
 
-Q. **RTVS można podłączyć do maszyny Wirtualnej utworzonej przy użyciu obrazu maszyny Wirtualnej nauki danych na platformie Azure?**
+PYTANIE: **Można RTVS łączyć się z maszyny Wirtualnej utworzonej przy użyciu obrazu maszyny Wirtualnej do nauki o danych na platformie Azure?**
 
-A. Tak; [danych nauki VM - Windows 2016](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) obrazu preinstalowane dzięki usługom R zdalnego dla programu Visual Studio.
+A. Tak; [maszyna wirtualna z analizy danych — Windows 2016](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) obraz jest dostarczany z preinstalowanym systemem Remote R Services dla programu Visual Studio.
 
-Q, **RTVS można połączyć się z komputerem zdalnym z języka R zainstalowanego?**
+Pytania i odpowiedzi, **RTVS może nawiązać połączenie z komputera zdalnego z zainstalowanym językiem r.?**
 
-Wykonanie kodu języka R na zdalnym komputerze, musi istnieć niektóre usługi nasłuchiwanie żądań, kod odbieranie i wysyłanie wyniki z powrotem do komputera klienckiego. Jest to, czy usługi R zdalnego dla programu Visual Studio. Zobacz [Konfigurowanie zdalnego obszarów roboczych](setting-up-remote-r-workspaces.md).
+Aby wykonać kod R na komputerze zdalnym, musi istnieć pewne service nasłuchiwania żądań, kod odbieranie i wysyłanie wyników z powrotem do komputera klienckiego. Jest to, czego Remote R Services dla programu Visual Studio. Zobacz [Konfigurowanie zdalnych obszarów roboczych](setting-up-remote-r-workspaces.md).
 
-Q. **Co to jest sesji zdalnej?**
+PYTANIE: **Co to jest sesja zdalna?**
 
-A. Zapoznaj się z artykułem [wykonaj na serwerze zdalnym](/machine-learning-server/r/how-to-execute-code-remotely) w dokumentacji Machine Learning serwera.
+A. Zapoznaj się z artykułem [wykonaj na serwerze zdalnym](/machine-learning-server/r/how-to-execute-code-remotely) w dokumentacji serwer Machine Learning.
 
 ## <a name="rtvs-development-and-features"></a>Programowanie RTVS i funkcje
 
-**Q. Brak funkcji X, ale programu RStudio zostało ono!**
+**PYTANIA I ODPOWIEDZI. Brak dotycząca funkcji X, ale RStudio zostało ono!**
 
-A. Programu RStudio jest przyciągają i dojrzałe IDE dla języka R, która została opracowywane przez wiele lat. RTVS stara się o wszystkich funkcji krytycznych, które są potrzebne do pomyślnego. Pomóc ustalić ich priorytety przyszłe zadania, wykonując [ankiety RTVS](https://www.surveymonkey.com/r/RTVS1) i problemy dotyczące plików na [GitHub](https://github.com/Microsoft/RTVS/issues/).
+A. Program RStudio jest Niesamowity i dojrzała środowisko IDE dla języka R, które było opracowywane przez wiele lat. RTVS stara się o wszystkich funkcji krytycznych, wymagających zakończy się powodzeniem. Pomagają określić priorytety przyszłych zadań, wykonując [ankiety RTVS](https://www.surveymonkey.com/r/RTVS1) i problemy dotyczące plików w [GitHub](https://github.com/Microsoft/RTVS/issues/).
 
-**Q. Można współtworzyć na RTVS?**
+**PYTANIA I ODPOWIEDZI. Czy mogę współtworzyć RTVS?**
 
-A. Jak najbardziej! Kod źródłowy znajduje się [Github](https://github.com/microsoft/RTVS). Śledzenie problem umożliwia zgłaszanie błędów i dodać komentarz dotyczący tych już złożony.
+A. Jak najbardziej! Kod źródłowy znajduje się w witrynie [Github](https://github.com/microsoft/RTVS). Narzędzie do śledzenia problemów umożliwia zgłaszanie błędów i komentarze dotyczące tych już zgłoszone.
 
-Zachęcamy do ich współtworzenia tej dokumentacji&mdash;po prostu wybierz **Edytuj** polecenia w prawym górnym rogu każdej strony. Komentarze dotyczące dokumentów są również powitalny, który można dodać u dołu każdej strony.
+Zachęcamy do współtworzenia tej dokumentacji&mdash;po prostu wybierz opcję **Edytuj** polecenia w prawym górnym rogu każdej strony. Komentarze dotyczące dokumentów są również Zapraszamy, które można dodać u dołu każdej strony.

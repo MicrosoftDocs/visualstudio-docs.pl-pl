@@ -1,6 +1,6 @@
 ---
-title: Ustawianie wyrażenia kontrolnego na zmiennych w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+title: Ustawianie wyrażenia kontrolnego na zmiennych | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 10/11/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4db887a3e27d995229da6d954c4b3f66173e9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 898c79f3985e24f52620f12dc25ad6044d05ac64
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897358"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059486"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obserwuj zmienne, za pomocą okna czujki i QuickWatch 
 
 Podczas debugowania, można użyć **Obejrzyj** systemu windows i **QuickWatch** obejrzeć zmiennych i wyrażeń. Systemu windows są dostępne tylko podczas sesji debugowania.
 
 **Obejrzyj** systemu windows można wyświetlić wiele zmiennych podczas debugowania. **QuickWatch** okno dialogowe Wyświetla pojedynczą zmienną w czasie i muszą zostać zamknięte przed kontynuowaniem debugowania.
+
+Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Obserwuj zmienne okno czujki
 
@@ -278,5 +280,6 @@ Aby obserwować `a` zmiennej
 1. Kontynuuj, debugowanie. Możesz obserwować zmiennej w **Obejrzyj** okna.
 
 ## <a name="see-also"></a>Zobacz także
-
-[Okna debugera](../debugger/debugger-windows.md)
+ [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
+ [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)  
+ [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md) [okna debugera](../debugger/debugger-windows.md)

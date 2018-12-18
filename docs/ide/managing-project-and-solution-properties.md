@@ -9,50 +9,54 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746315"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349247"
 ---
 # <a name="manage-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 
-Projekty mają właściwości, które będą zarządzały sposobem wiele aspektów kompilacji, debugowanie, testowania i wdrażania. Niektóre właściwości są wspólne dla wszystkich typów projektów, a niektóre są unikatowe dla określonego języka lub platformy. Aby dostęp do właściwości projektu, prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**, lub wpisując "właściwości" w **Szybkie uruchamianie** pole wyszukiwania na pasku menu.
+Projekty mają właściwości, które zarządzają wiele aspektów kompilacji, debugowanie, testowanie i wdrażanie. Niektóre właściwości są wspólne dla wszystkich typów projektów, a niektóre są unikatowe dla określonych języków lub platform. Dostęp do właściwości projektu, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierając pozycję **właściwości**, lub wpisując "properties" w **Szybkie uruchamianie** pole wyszukiwania na pasku menu.
 
-![Menu kontekstowe projektu](../ide/media/vs2015_proj_prop_menu.gif)
+![Menu kontekstowego projektu](../ide/media/vs2015_proj_prop_menu.gif)
 
-Projekty .NET mogą także mieć węzeł właściwości w drzewo projektu.
+Projekty .NET mogą zawierać również węzeł właściwości w drzewie projektu sam.
 
-![Właściwości węzła drzewa Eksploratora rozwiązań](../ide/media/vs2015_props_se.png)
+![Właściwości węzła w drzewie Eksploratora rozwiązań](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Zarządzanie właściwościami rozwiązania i projektu (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Właściwości projektu
 
-Właściwości projektu są zorganizowane w grupy, a każda grupa ma swoją własną stronę właściwości. Strony może być różna dla różnych języków i typów projektów.
+Właściwości projektu są zorganizowane w grupy, a każda grupa ma swoją własną stronę właściwości. Strony mogą być różne dla różnych języków i typów projektów.
 
-### <a name="c-visual-basic-and-f-projects"></a>Projektów C#, VB i F #
+### <a name="c-visual-basic-and-f-projects"></a>C#, Visual Basic i F# projektów
 
-W projektach C#, VB i F #, właściwości są widoczne w **projektanta projektu**. Na poniższej ilustracji pokazano **kompilacji** stronę właściwości projektu WPF w języku C#:
+W C#, Visual Basic i F# projektów, właściwości są widoczne w **projektanta projektu**. Poniższa ilustracja przedstawia **kompilacji** strony właściwości dla projektu WPF w C#:
 
 ![Projektant projektu programu Visual Studio](../ide/media/vs2015_proppage_build.png)
 
-Aby uzyskać informacje o poszczególnych stron właściwości w **projektanta projektu**, zobacz [właściwości odwołanie do projektu](../ide/reference/project-properties-reference.md).
+Aby uzyskać informacje o poszczególnych stron właściwości w programie **projektanta projektu**, zobacz [projektu odwołanie do właściwości](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
-> Rozwiązania ma kilka właściwości i dlatego projektu elementów; te właściwości są dostępne w [okna właściwości](../ide/reference/properties-window.md), a nie **projektanta projektu**.
+> Rozwiązania mają kilka właściwości, a więc elementy; projektu te właściwości są dostępne w [okno właściwości](../ide/reference/properties-window.md), a nie **projektanta projektu**.
 
-### <a name="c-and-javascript-projects"></a>Projekty C++ i JavaScript
+### <a name="c-and-javascript-projects"></a>Projekty języka C++ i JavaScript
 
-Projekty C++ i JavaScript ma inny użytkownik interfejsu do zarządzania właściwości projektu. Na ilustracji przedstawiono strony właściwości projektu C++ (stron JavaScript są podobne):
+Projekty języka C++ i JavaScript mają inny użytkownik za pomocą interfejsu zarządzania właściwości projektu. Ta ilustracja przedstawia strony właściwości projektu C++ (strony w języku JavaScript są podobne):
 
-![Visual C&#43; &#43; właściwości projektu](../ide/media/vs2015_projprops_cpp.png)
+![Program Visual C&#43; &#43; właściwości projektu](../ide/media/vs2015_projprops_cpp.png)
 
-Informacji o właściwościach projektu C++, zobacz [pracować z właściwości projektu (C++)](/cpp/ide/working-with-project-properties). Aby uzyskać więcej informacji o właściwościach JavaScript, zobacz [strony właściwości, JavaScript](../ide/reference/property-pages-javascript.md).
+Aby uzyskać informacji na temat właściwości projektu C++, zobacz [Praca z właściwościami projektu (C++)](/cpp/ide/working-with-project-properties). Aby uzyskać więcej informacji na temat właściwości kodu JavaScript, zobacz [strony właściwości, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Właściwości rozwiązania
 
-Aby uzyskać dostęp do właściwości w ramach rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **właściwości**. W oknie dialogowym można ustawić konfiguracje projektu dla **debugowania** lub **wersji** kompilacji, wybierz projekty, do których powinny być uruchamiania projektu podczas **F5** naciśnięty i kod zestawu Opcje analizy.
+Aby uzyskać dostęp do właściwości rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **właściwości**. W oknie dialogowym można ustawić konfiguracje projektu **debugowania** lub **wersji** kompilacji, wybierz, które projekty powinny być uruchamiania projektu podczas **F5** wciśnięty i kod zestawu Opcje analizy.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Zarządzanie właściwościami rozwiązania i projektu (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

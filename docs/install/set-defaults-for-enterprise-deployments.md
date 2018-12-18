@@ -1,8 +1,9 @@
 ---
-title: Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
+title: Ustawianie wartości domyślnych w przypadku wdrożeń w przedsiębiorstwach
 description: Dowiedz się więcej o zasadach domeny i inne operacje konfiguracji dla wdrożeń programu Visual Studio w przedsiębiorstwie.
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5689a273ac5f80b3468b9020825b980b88966e3b
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: a173a378ba2165963b8ea9b44e7391807584886b
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139219"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159558"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Ustawianie wartości domyślnych dla wdrożeń w przedsiębiorstwie programu Visual Studio 2017
 
 Można ustawić zasady rejestru, które wpływają na wdrażanie programu Visual Studio. Te zasady są globalne dla nowego Instalatora i wpływać na:
 

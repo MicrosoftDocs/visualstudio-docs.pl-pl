@@ -1,5 +1,5 @@
 ---
-title: Okno przybornika w programie Visual Studio
+title: Okno przybornika
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5772445bcfb201aef9a4248a77e28193429c9528
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: ef01cb4bb9b9ee3326d3d955aec9c41f9b15b144
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924398"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067858"
 ---
 # <a name="toolbox"></a>Przybornik
 

@@ -15,12 +15,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ddc66b7037c05458062a87eb8ddd757e32c91590
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 416c05a7592d9f036a76a5d96537b4be917a0651
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193859"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774708"
 ---
 # <a name="attaching-after-a-launch"></a>Dołączanie po uruchomieniu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

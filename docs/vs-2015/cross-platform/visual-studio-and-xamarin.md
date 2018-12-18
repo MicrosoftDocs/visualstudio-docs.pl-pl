@@ -13,18 +13,18 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 704eaae88850463ba7ff251fee13500759de3286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d43a76f6ae795017ca8e0d4dc898faca1ee2b48b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850662"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788085"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio i Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Xamarin to platforma do tworzenia aplikacji mobilnych, do tworzenia natywnych dla systemów iOS, Android i Windows aplikacje z poziomu wspólnego języka C# / .NET code base osiągnięcia 75% do prawie 100% ponownego użycia kodu między platformami. Aplikacje napisane z rozwiązaniami Xamarin i C# mają pełny dostęp do podstawowych interfejsów API platformy i możliwość tworzenia natywne interfejsy użytkownika i Kompiluj do pakietów specyficznych dla platformy, więc ma little wpływ na wydajność środowiska uruchomieniowego. (Uwaga: program Xamarin obsługuje również F #, ale ta dokumentacja koncentruje się na C# tylko. Visual Basic nie jest obsługiwana w tej chwili.)  
+Xamarin to platforma do tworzenia aplikacji mobilnych, do tworzenia natywnych dla systemów iOS, Android i Windows aplikacje z poziomu wspólnego C#/.NET kodzie podstawowym, osiągnięcie 75% do prawie 100% ponownego użycia kodu między platformami. Aplikacje napisane z rozwiązaniami Xamarin i C# mają pełny dostęp do podstawowych interfejsów API platformy i możliwość tworzenia natywne interfejsy użytkownika i Kompiluj do pakietów specyficznych dla platformy, więc ma little wpływ na wydajność środowiska uruchomieniowego. (Uwaga: program Xamarin obsługuje również F#, ale w tej dokumentacji koncentruje się na C# tylko. Visual Basic nie jest obsługiwana w tej chwili.)  
   
  Jednak lepiej deweloperom zapoznać się z C# .NET i Visual Studio będzie korzysta z takich samych możliwości i wydajność podczas pracy z platformą Xamarin dla aplikacji mobilnych, w tym zdalnego debugowania na urządzeniach z systemem Android, iOS i Windows — bez konieczności uczenia się kodu natywnego w językach Objective-C lub Java. Jest mały Zaskoczenie, a następnie oznacza wiele aplikacji o wysokiej wydajności przy użyciu projektowania atrakcyjnych interfejsów użytkownika — takie jak NASCAR, kierownik działu Aviva i MixRadio — utworzone za pomocą platformy Xamarin.  
   

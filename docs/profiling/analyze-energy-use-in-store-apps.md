@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930911"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220739"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i energii w aplikacjach platformy UWP na urządzeniach tablecie o niskim poziomie zasilania, które działają ciągle lub czasu na własnych bateriach. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii może zwiększyć liczbę użytkowników w Twojej aplikacji i używany przez klientów.  
@@ -54,7 +54,7 @@ Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i e
   
  **Dodawanie znaczników do języka C#, Visual Basic kodu w języku C++**  
   
- Aby dodać znacznik użytkownika do języka C#, Visual Basic kodu w języku C++ należy najpierw utworzyć [loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) obiektu. Następnie Wstaw wywołania [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) w wywołaniach.  
+ Aby dodać znacznik użytkownika do języka C#, Visual Basic kodu w języku C++ należy najpierw utworzyć [loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics](xref:Windows.Foundation.Diagnostics.LoggingChannel) obiektu. Następnie Wstaw wywołania [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) w wywołaniach.  
   
  Gdy jest wykonywana metoda, znacznik użytkownika jest dodawany do danych profilowania wraz z komunikatem.  
   
@@ -62,7 +62,7 @@ Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i e
 > - Loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics implementuje [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interfejsu (nazywany [System.IDisposable](/dotnet/api/system.idisposable) w języku C# i VB). Aby uniknąć przecieku zasobów systemu operacyjnego, należy wywołać [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) w języku C# i VB) po zakończeniu za pomocą funkcji rejestrowania kanał.  
 >   -   Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Próba utworzenia nowego kanału rejestrowania o takiej samej nazwie, jak nazwa aktualnie otwartego kanału, powoduje wyjątek.  
   
- Zobacz przykładową zestaw SDK Windows [przykładowe LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) przykłady.  
+ Zobacz przykładową zestaw SDK Windows [przykładowe LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) przykłady.  
   
  **Dodawanie znaczników do kodu w języku JavaScript**  
   
@@ -147,7 +147,7 @@ if (performance && performance.mark) {
   
 ## <a name="other-resources"></a>Inne zasoby  
   
--   **Stan połączenia i zarządzanie kosztami** sekcje dla [C# / VB/C++ i XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) i [języków JavaScript i HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) w Centrum deweloperów Windows opisano interfejsy API Windows, które zapewniają informacje o łączności sieciowej, można użyć aplikacji, aby zminimalizować koszty ruchu sieciowego.  
+-   **Stan połączenia i zarządzanie kosztami** sekcje dla [C# / VB/C++ i XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) i [języków JavaScript i HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) w Centrum deweloperów Windows opisano interfejsy API Windows, które zapewniają informacje o łączności sieciowej, można użyć aplikacji, aby zminimalizować koszty ruchu sieciowego.  
   
      Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows umożliwia symulowanie właściwości połączenia danych interfejsów API informacji sieciowych. Zobacz [uruchamianie aplikacji platformy UWP w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md)  
   

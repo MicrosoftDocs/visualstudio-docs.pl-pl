@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: d77bfad86024cf95ce1649498ddda5d1450a1c33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008245"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672018"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie pasujący obiekt typu gier
 
@@ -38,12 +38,12 @@ Po ukończeniu tego samouczka program będzie wyglądać jak na poniższym obraz
 
 ## <a name="tutorial-links"></a>Samouczek łącza
 
-Aby pobrać pełną wersję przykładu, zobacz [pełną pasującego przykładowy samouczek gry](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
+Aby pobrać pełną wersję przykładu, zobacz [pełną pasującego przykładowy samouczek gry](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
 
 > [!NOTE]
 > W tym samouczku omówiono zarówno Visual C#, jak i Visual Basic, więc skoncentruj się na informacjach specyficznych dla języka programowania, którego używasz.
 
-Jeśli masz problem lub pytania dotyczące programowania, spróbuj zadać pytanie na jednym z forów MSDN. Zobacz [forum języka Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) i [forum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Dostępne są tam również wspaniałe, bezpłatne materiały szkoleniowe wideo. Aby dowiedzieć się więcej na temat programowania w języku Visual Basic, zobacz [języka Visual Basic fundamentals: Development dla całkowicie początkujących](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat programowania w języku Visual C#, zobacz [podstawy języka C#: tworzenie dla całkowicie początkujących](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+Jeśli masz problem lub pytania dotyczące programowania, spróbuj zadać pytanie na jednym z forów MSDN. Zobacz [forum języka Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) i [forum Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Dostępne są tam również wspaniałe, bezpłatne materiały szkoleniowe wideo. Aby dowiedzieć się więcej na temat programowania w języku Visual Basic, zobacz [języka Visual Basic fundamentals: Development dla całkowicie początkujących](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat programowania w języku Visual C#, zobacz [podstawy języka C#: tworzenie dla całkowicie początkujących](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b2a72306a3636bb5bca601f600afdaa175b4dd1
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 15cfd136050d9a0e3fca89964c5a9712b7b5ae06
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582424"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159896"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 
@@ -51,7 +51,7 @@ Zadania zilustrowane w tym przewodniku obejmują:
 
 Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Northwind.
 
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, możesz Instalowanie programu SQL Server Express LocalDB w ramach **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
+1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB, jako część **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
@@ -83,7 +83,7 @@ Pierwszym krokiem jest tworzenie aplikacji Windows Forms. Przypisanie nazwy do p
 
 Spowoduje to utworzenie źródła danych z bazy danych za pomocą **konfiguracji źródła danych** kreatora:
 
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 
@@ -161,4 +161,4 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

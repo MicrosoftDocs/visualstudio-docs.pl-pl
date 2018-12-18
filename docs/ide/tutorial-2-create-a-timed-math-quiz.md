@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008398"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672642"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Tworzenie quiz matematyczny
 
@@ -36,7 +36,7 @@ Gdy skończysz, quiz będzie wyglądał jak na poniższym obrazie, z wyjątkiem 
 
 ## <a name="tutorial-links"></a>Samouczek łącza
 
-Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek quiz matematyczny pełną](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek quiz matematyczny pełną](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
 > W tym samouczku omówiono zarówno Visual C# i Visual Basic, więc Skoncentruj się na informacjach, które są specyficzne dla języka programowania, którego używasz.

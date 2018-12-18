@@ -1,6 +1,6 @@
 ---
-title: 'Porady: dołączyć Profiler do aplikacji internetowej ASP.NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Dołącz profiler do platformy ASP.NET możemy aplikacji w celu zbierania statystyk aplikacji
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a9f1bddaa4e606602a7ccba291a47c0048f1d9af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32197d50bbc9826261584ba18b5b83f8519b7a38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855368"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063826"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji sieci web ASP.NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do aplikacji internetowej ASP.NET i zbierania statystyk wydajności przy użyciu metody próbkowania.  

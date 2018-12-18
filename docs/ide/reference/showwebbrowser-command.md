@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 87536df138de092948d845cf05d20af8e63ad68a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672148"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser — Polecenie
 
@@ -35,7 +35,7 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Argumenty
  `URL`
 
- Wymagane. Adres URL (Uniform Resource Locator) dla witryny sieci Web.
+ Wymagana. Adres URL (Uniform Resource Locator) dla witryny sieci Web.
 
 ## <a name="switches"></a>Przełączniki
  / Nowy
@@ -50,15 +50,15 @@ View.ShowWebBrowser URL [/new][/ext]
  Alias **showwebbrowser —** polecenie jest **Przejdź** lub **nav**.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład wyświetla MSDN Online strony głównej w przeglądarce sieci web poza IDE. Jeśli wystąpienie przeglądarki sieci web jest już otwarty, jest używany; w przeciwnym razie jest uruchamiana nowe wystąpienie.
+ Poniższy przykład wyświetla Microsoft Docs strony głównej w przeglądarce sieci web poza IDE. Jeśli wystąpienie przeglądarki sieci web jest już otwarty, jest używany; w przeciwnym razie jest uruchamiana nowe wystąpienie.
 
 ```cmd
->View.ShowWebBrowser http://msdn.microsoft.com /ext
+>View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Znajdź/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

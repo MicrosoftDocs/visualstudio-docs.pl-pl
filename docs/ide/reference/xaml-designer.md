@@ -1,5 +1,5 @@
 ---
-title: Strona opcji projektanta XAML
+title: Strona Opcje projektanta XAML
 ms.date: 03/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,92 +11,92 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16d0ed610843826f0eac77fc2ce95bcfca3df6e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952290"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388364"
 ---
-# <a name="xaml-designer-options-page"></a>Strona opcji projektanta XAML
+# <a name="xaml-designer-options-page"></a>Strona Opcje projektanta XAML
 
-Użyj **projektanta XAML** Strona opcji, aby określić sposób formatowania elementów i atrybutów w dokumencie XAML. Aby otworzyć tę stronę, wybierz **narzędzia** menu, a następnie wybierz **opcje**. Aby uzyskać dostęp do **projektanta XAML** właściwości wybierz pozycję **projektanta XAML** węzła. Ustawienia projektanta XAML zostaną zastosowane po otwarciu dokumentu. Tak Jeśli wprowadzisz zmiany w ustawieniach, musisz zamknąć i ponownie otworzyć Visual Studio, aby zobaczyć zmiany.
+Użyj **projektanta XAML** Strona opcji, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć tę stronę, wybierz **narzędzia** menu, a następnie wybierz **opcje**. Aby uzyskać dostęp do **projektanta XAML** właściwości wybierz **projektanta XAML** węzła. Ustawienia projektanta XAML są stosowane po otwarciu dokumentu. Dlatego jeśli wprowadzisz zmiany w ustawieniach należy zamknąć i ponownie otworzyć programu Visual Studio, aby zobaczyć zmiany.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>Włącz projektanta XAML
 
-Po wybraniu tego ustawienia umożliwia projektanta XAML. Projektant XAML zawiera obszar roboczy visual do edycji dokumentów XAML. Niektóre funkcje programu Visual Studio, takie jak IntelliSense zasobów lub powiązań danych, wymagają włączenia projektanta XAML.
+Po wybraniu tego ustawienia umożliwia projektanta XAML. Projektant XAML zawiera obszar roboczy visual do edycji dokumenty XAML. Niektóre funkcje w programie Visual Studio, takie jak IntelliSense zasobów lub powiązań danych, wymagają włączenia projektanta XAML.
 
-Następujące ustawienia mają zastosowanie tylko wtedy, gdy jest włączona projektanta XAML. Jeśli zmienisz tę opcję, będzie konieczne ponowne uruchomienie programu Visual Studio dla ustawienia zaczęły obowiązywać.
+Następujące ustawienia są stosowane tylko wtedy, gdy projektant XAML został włączony. Jeśli zmienisz tę opcję, konieczne będzie ponowne uruchomienie programu Visual Studio dla ustawienia zaczęły obowiązywać.
 
-## <a name="default-document-view"></a>Widok domyślny dokument
+## <a name="default-document-view"></a>Domyślny widok dokumentu
 
-Użyj tego ustawienia do formantu, czy widok projektu jest wyświetlany, gdy załadowano dokumenty XAML.
-
-|||
-|-|-|
-|**Wyświetl źródło**|Określa, czy tylko źródła XAML jest wyświetlana w widoku XAML. Jest to przydatne podczas ładowania dużych dokumentów.|
-|**Widok projektu**|Określa, czy tylko element wizualny projektanta XAML jest wyświetlana w widoku XAML.|
-|**Widok podzielony**|Określa, czy zarówno projektanta XAML i źródła XAML są wyświetlane obok siebie w widoku XAML (na podstawie lokalizacji **orientacji podziału** ustawienie).|
-
-## <a name="split-orientation"></a>Orientacja podziału
-
-To ustawienie służy do kontrolowania, kiedy i jak projektanta XAML jest wyświetlana podczas edytowania dokumentu XAML. Te ustawienia mają zastosowanie tylko wtedy, gdy **domyślny widok dokumentu** ustawiono **podzielony widok**.
+Użyj to ustawienie, aby określić, czy widok projektu jest wyświetlany, gdy dokumenty XAML są ładowane.
 
 |||
 |-|-|
-|**Pionowe**|Źródło XAML jest wyświetlana po lewej stronie widoku XAML, a po drugiej stronie zostanie wyświetlona projektanta XAML.|
-|**poziomy**|Projektant XAML jest wyświetlana w górnej części widoku XAML i źródła XAML jest wyświetlana poniżej.|
-|**Default**|Dokument XAML używa orientację podziału zalecane dla platformy docelowej projektu dokumentu. Dla większości platform, co jest równoważne **poziome**.|
+|**Widok źródła**|Określa, czy tylko źródła XAML jest wyświetlana w widoku XAML. Jest to przydatne w przypadku ładowania dużych dokumentów.|
+|**Widok projektu**|Określa, czy tylko element wizualny Projektant XAML jest wyświetlana w widoku XAML.|
+|**Widok podzielony**|Określa, czy zarówno wizualnego projektanta XAML i źródła XAML są wyświetlane obok siebie w widoku XAML (na podstawie lokalizacji **orientacji podziału** ustawienie).|
 
-## <a name="zoom-by-using"></a>Powiększenie przy użyciu
+## <a name="split-orientation"></a>Rientacja podziału
 
-Użyj tego ustawienia, aby określić, jak powiększenia działa podczas edytowania dokumentu XAML.
+To ustawienie służy do kontrolowania, kiedy i jak projektant XAML jest wyświetlana podczas edycji dokumentu XAML. Te ustawienia mają zastosowanie tylko wtedy, gdy **domyślny widok dokumentu** ustawiono **widoku złożonego**.
 
 |||
 |-|-|
-|**Kółka myszy**|Przewijanie kółko myszy, aby powiększyć w Projektancie XAML.|
-|**CTRL + kółka myszy**|Powiększenie w Projektancie XAML, naciskając klawisz CTRL podczas przewijania kółka myszy.|
+|**W pionie**|Źródło XAML jest wyświetlana po lewej stronie w widoku XAML, a po drugiej stronie pojawi się okno projektanta XAML.|
+|**Poziome**|Projektant XAML jest wyświetlana u góry widoku XAML, a źródła XAML jest wyświetlana poniżej.|
+|**Default**|Dokument XAML używa orientacji podziału zalecane dla platformy docelowej projektu dokumentu. Dla większości platform jest to równoważne **poziomy**.|
+
+## <a name="zoom-by-using"></a>Powiększ za pomocą
+
+Użyj tego ustawienia, aby określić, jak powiększenia działa podczas edycji dokumentu XAML.
+
+|||
+|-|-|
+|**Obrót kółkiem myszy**|Powiększenie w Projektancie XAML przy użyciu kółka myszy.|
+|**Ctrl + kółko myszy**|Powiększenie w Projektancie XAML, naciskając klawisz CTRL podczas przewijania kółka myszy.|
 |**ALT + myszy koło**|Powiększenie w Projektancie XAML, naciskając klawisz ALT podczas przewijania kółka myszy.|
 
-Te ustawienia określają zachowanie projektanta podczas edytowania dokumentu XAML.
+Te ustawienia określają zachowanie projektanta podczas edycji dokumentu XAML.
 
 |||
 |-|-|
-|**Automatycznie nazwij elementy interakcyjne przy tworzeniu**|Określa, czy nazwa domyślna jest dostarczany dla nowego elementu interaktywne, dodając je do projektanta.|
-|**Automatyczne wstawianie właściwości układu po utworzeniu elementu**|Określa, czy właściwości układu są udostępniane dla nowego elementu, dodając je do projektanta.|
-|**Wiązania kwadrantu na podstawie układu**|Określa, czy aktualnie wybrany formant jest wyrównywany do najbliższej krawędziami kontenera nadrzędnego. Jeśli to pole wyboru jest wyczyszczone, wyrównanie formantu nie zmieniać podczas przenoszenia lub operacji tworzenia.|
-|**Automatycznie wypełnij elementy przybornika**|Określa, czy kontrolek użytkownika i kontrolek niestandardowych w bieżącym rozwiązaniu są wyświetlane w przyborniku automatycznie.|
+|**Automatycznie nadawać nazwy elementom interaktywnym podczas ich tworzenia**|Określa, czy nazwa domyślna jest dostarczany dla nowego elementu interaktywne po dodaniu do projektanta.|
+|**Automatycznie Wstaw właściwości układu podczas tworzenia elementu**|Określa, czy właściwości układu są dostarczane dla nowego elementu, gdy możesz dodać do projektanta.|
+|**Użyj quadrant na podstawie układu**|Określa, czy aktualnie wybraną kontrolkę wyrównuje do najbliższej krawędzi kontenera nadrzędnego. Jeśli to pole wyboru jest wyczyszczone, wyrównanie kontrolki nie zmieniać podczas przenoszenia lub operacji tworzenia.|
+|**Automatycznie wypełnij elementy przybornika**|Określa, czy kontrolki użytkownika i niestandardowe formanty w bieżącym rozwiązaniu są wyświetlane w przyborniku automatycznie.|
 
-## <a name="settings-blend-only"></a>Ustawienia (tylko w programie Blend)
+## <a name="settings-blend-only"></a>Ustawienia (tylko program Blend)
 
-Te opcje umożliwiają określenie ustawień podczas edytowania plików XAML przy użyciu programu Blend.
+Użyj tych opcji, aby określić ustawienia podczas edytowania plików XAML w programie Blend.
 
 |||
 |-|-|
-|**Powiększenie przy użyciu**|Powiększenie w Projektancie XAML przewijając kółka myszy lub naciskając klawisz CTRL lub ALT podczas przewijania kółka myszy.|
-|**Typ jednostki**|Określa, czy pomiarów w Projektancie są oparte na punktach lub pikselach. Ponieważ uniwersalnych aplikacji systemu Windows nie obsługują punkty, jednostki są automatycznie konwertowane na następującą liczbę pikseli, jeśli **punktów** jest zaznaczone.|
+|**Powiększ za pomocą**|Powiększenie w Projektancie XAML przy użyciu kółka myszy lub naciskając klawisz CTRL i ALT obracając kółkiem.|
+|**Typ jednostki**|Określa, czy pomiary w Projektancie są oparte na punktach lub pikselach. Ponieważ Universal Windows Apps nie obsługują punkty, jednostki są automatycznie konwertowane na pikseli, jeśli **punktów** jest zaznaczone.|
 
-## <a name="artboard-blend-only"></a>Obszar roboczy (tylko w programie Blend)
+## <a name="artboard-blend-only"></a>Obszar roboczy (tylko program Blend)
 
-Użyj tych ustawień, aby określić zachowanie projektanta XAML podczas edytowania dokumentów XAML w Blend.
+Użyj tych ustawień, aby określić zachowanie projektanta XAML podczas edycji dokumentów XAML w programie Blend.
 
 ### <a name="snapping"></a>Przyciągania
 
 |||
 |-|-|
-|**Pokaż siatkę przyciągania**|Gdy ta opcja jest zaznaczona, linie siatki są wyświetlane w projektancie, aby ułatwić wyrównywanie formantów. Formanty dodane do projektanta przyciąganie do linie siatki podczas **przyciąganie do linii siatki** opcja jest zaznaczona.|
-|**Przyciąganie do linii siatki**|Podczas dodawania lub przemieszczania wokół projektanta formantów, przyciąganie do linii siatki.|
-|**Odstępy siatki**|Określa odstępy między liniami siatki w pikselach lub punktów (zgodnie z ustaleniami **typu jednostki** ustawienie).|
-|**Przyciąganie do linii wyrównania**|Określa, czy formanty przyciąganie do linii wyrównania.|
-|**Domyślny margines**|Gdy **przyciąganie do linii wyrównania** jest włączone, określa odstępy między formantem a linie przyciągania w pikselach lub punktów (zgodnie z ustaleniami **typu jednostki** ustawienie).|
-|**Domyślna uzupełniania**|Gdy **przyciąganie do linii wyrównania** jest włączone, określa dodatkowy odstęp między formantem a linie przyciągania w pikselach lub punkty (zgodnie z ustaleniami **typu jednostki** ustawienie).|
+|**Pokaż siatkę przyciągania**|Gdy ta opcja jest zaznaczona, linie siatki są wyświetlane w Projektancie ułatwiające wyrównywanie formantów. Formanty dodane do projektanta przyciągania do siatki te podczas **przyciąganie do linii siatki** opcja jest zaznaczona.|
+|**Przyciąganie do linii siatki**|Po dodaniu kontrolki lub przenosić w granicach projektanta, są one przyciągane do siatki.|
+|**Odstępy siatki**|Określa odstępy między liniami siatki w pikselach lub punkty (zgodnie z ustaleniami **typ jednostki** ustawienie).|
+|**Przyciąganie do linii wyrównania**|Określa, czy formanty mają być przyciągane do linii wyrównania.|
+|**Margines domyślny**|Gdy **przyciąganie do linii wyrównania** jest włączone, określa odstępy między liniami przyciągania i kontrolki w pikselach lub punkty (zgodnie z ustaleniami **typ jednostki** ustawienie).|
+|**Domyślnie, wypełnienie**|Gdy **przyciąganie do linii wyrównania** jest włączone, określa dodatkowy odstęp między formantem i linii przyciągania w pikselach lub punkty (zgodnie z ustaleniami **typ jednostki** ustawienie).|
 
 ### <a name="animation"></a>Animacja
 
-To ustawienie służy do określenia, czy pojawi się ostrzeżenie podczas zależne (bez przyspieszania) w programie Blend włączone są animacje.
+Użyj tego ustawienia, aby określić, czy zostanie wyświetlone ostrzeżenie podczas zależne (bez akceleracji) w programie Blend włączone są animacje.
 
 ### <a name="effects"></a>Efekty
 
@@ -104,8 +104,8 @@ Użyj tych ustawień, aby określić, czy efekty mają być renderowane podczas 
 
 |||
 |-|-|
-|**Renderowanie efektów**|Określa, czy efekty renderować podczas edytowania plików XAML w Projektancie XAML przy użyciu programu Blend.|
-|**Próg powiększenia**|Określa procent powiększenia w których efekty renderowania, kiedy **Renderowanie efektów** pole wyboru jest zaznaczone. Jeśli powiększenie poza to ustawienie efekty już renderować w Projektancie XAML.|
+|**Renderowanie efektów**|Określa, czy efekty renderowania podczas edycji plików XAML w Projektancie XAML przy użyciu programu Blend.|
+|**Próg powiększenia**|Określa procent powiększenia, w których efekty renderowania, kiedy **Renderowanie efektów** pole wyboru jest zaznaczone. Przy powiększeniu poza to ustawienie, efekty już renderowania w Projektancie XAML.|
 
 ## <a name="see-also"></a>Zobacz także
 

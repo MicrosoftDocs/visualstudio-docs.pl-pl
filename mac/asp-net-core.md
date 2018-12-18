@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942949"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296479"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie do platformy ASP.NET Core
 
@@ -62,7 +62,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-Aplikacji ASP.NET Core tworzy serwer sieci web w jego głównej metody, konfigurowania i uruchamiania hosta za pośrednictwem wystąpienia [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Ten konstruktor zapewnia metody do Zezwalaj na hoście należy skonfigurować. W szablonie aplikacji są używane następujące konfiguracje:
+Aplikacji ASP.NET Core tworzy serwer sieci web w jego głównej metody, konfigurowania i uruchamiania hosta za pośrednictwem wystąpienia [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Ten konstruktor zapewnia metody do Zezwalaj na hoście należy skonfigurować. W szablonie aplikacji są używane następujące konfiguracje:
 
 * `UseKestrel`: Określa, że serwer Kestrel będzie używany przez aplikację
 * `UseContentRoot(Directory.GetCurrentDirectory())`: Folder główny projektu sieci web podczas używa jako zawartość katalogu głównego aplikacji Aplikacja została uruchomiona z tego folderu
@@ -108,7 +108,7 @@ Ta klasa uruchamiania zawsze muszą stosować się do następujących reguł:
 
 `ConfigureServices` Metoda definiuje usług, które będą używane przez aplikację.
 
-`Configure` Pozwala tworzyć swoje żądania potoku przy użyciu [oprogramowania pośredniczącego](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Są to składniki używane w ramach potoku aplikacji ASP.NET do obsługi żądań i odpowiedzi. Potok HTTP składa się z liczbą delegatów żądania, wywoływana w sekwencji. Każdego delegata można obsłużyć żądania, samego lub przekazać je do następnej delegata.
+`Configure` Pozwala tworzyć swoje żądania potoku przy użyciu [oprogramowania pośredniczącego](/aspnet/core/fundamentals/middleware). Są to składniki używane w ramach potoku aplikacji ASP.NET do obsługi żądań i odpowiedzi. Potok HTTP składa się z liczbą delegatów żądania, wywoływana w sekwencji. Każdego delegata można obsłużyć żądania, samego lub przekazać je do następnej delegata.
 
 Delegatów można skonfigurować za pomocą `Run`,`Map`, i `Use` metod `IApplicationBuilder`, ale `Run` metoda nigdy nie wywołują metody delegata dalej i zawsze należy używać na końcu potoku.
 
@@ -134,7 +134,7 @@ Aplikacje platformy ASP.NET Core Użyj wzorca projektowego Model-View-Controller
 - **Widok**: Wyświetla interfejs użytkownika aplikacji (jest to często danych modelu).
 - **Kontroler**: klasa, która obsługuje żądania przeglądarki reaguje na dane wejściowe użytkownika i interakcji.
 
-Aby uzyskać więcej informacji na temat korzystania z platformy MVC dotyczą [omówienie platformy ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/mvc/overview) przewodnik.
+Aby uzyskać więcej informacji na temat korzystania z platformy MVC dotyczą [omówienie platformy ASP.NET Core MVC](/aspnet/core/mvc/overview) przewodnik.
 
 Aby dodać kontroler, wykonaj następujące czynności:
 
@@ -233,6 +233,6 @@ Upewnij się zakończyć wszystkie cztery kroki pomyślnie upewnij się, że pom
 
 Ten przewodnik zapewniła wprowadzenie do platformy ASP.NET Core. Opisuje co to jest, kiedy należy używać i podano informacje na temat używania go w programie Visual Studio dla komputerów Mac.
 Więcej informacji na temat następnych kroków w tym miejscu można znaleźć w następujących przewodnikach:
-- [Platforma ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) docs.
-- [Tworzenie usług zaplecza dla natywnych aplikacji mobilnych](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), który pokazuje, jak utworzyć usługę REST, za pomocą platformy ASP.NET Core dla aplikacji platformy Xamarin.Forms.
+- [Platforma ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) docs.
+- [Tworzenie usług zaplecza dla natywnych aplikacji mobilnych](/aspnet/core/mobile/native-mobile-backend), który pokazuje, jak utworzyć usługę REST, za pomocą platformy ASP.NET Core dla aplikacji platformy Xamarin.Forms.
 - [Praktyczne laboratorium platformy ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).

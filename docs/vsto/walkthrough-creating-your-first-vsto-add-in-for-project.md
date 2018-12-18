@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884865"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671420"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu
   W tym instruktażu przedstawiono sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Project. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte projekty. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -103,7 +103,7 @@ ms.locfileid: "49884865"
   
 1.  Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt. Programy Microsoft Project rozpoczyna się i automatycznie zostanie otwarty nowy pusty projekt.  
   
-     Gdy tworzysz projekt, kod jest kompilowany do zestawu, który znajduje się w folderze wyjściowym kompilacji dla projektu. Visual Studio tworzy również zestaw wpisów rejestru, umożliwiające projektu wykrycie i załadowanie dodatku narzędzi VSTO dla programów i konfiguruje ustawienia zabezpieczeń na komputerze deweloperskim, aby włączyć dodatek narzędzi VSTO dla programów do uruchomienia. Aby uzyskać więcej informacji, zobacz [Przegląd procesu kompilacji rozwiązania pakietu Office](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     Gdy tworzysz projekt, kod jest kompilowany do zestawu, który znajduje się w folderze wyjściowym kompilacji dla projektu. Visual Studio tworzy również zestaw wpisów rejestru, umożliwiające projektu wykrycie i załadowanie dodatku narzędzi VSTO dla programów i konfiguruje ustawienia zabezpieczeń na komputerze deweloperskim, aby włączyć dodatek narzędzi VSTO dla programów do uruchomienia. Aby uzyskać więcej informacji, zobacz [Przegląd procesu kompilacji rozwiązania pakietu Office](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).  
   
 2.  Sprawdź, czy nowe zadanie zostanie dodane do pustego projektu.  
   

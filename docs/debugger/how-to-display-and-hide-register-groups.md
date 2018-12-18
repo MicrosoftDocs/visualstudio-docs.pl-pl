@@ -21,28 +21,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a06c6da95cfbdd899557f228d607d1cb06b0ecb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: abd617a1b787896f296976ba21f76d3eafbd13c4
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474092"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388611"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Porady: wyświetlanie i ukrywanie grup rejestru
-**Rejestruje** okno jest dostępne tylko wtedy, gdy w włączone jest debugowanie poziomie adresu **opcje** okno dialogowe **debugowanie** węzła, **ogólne**kategorii.  
-  
- Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Kliknięcie prawym przyciskiem myszy **rejestruje** , zostaną wyświetlone menu podręczne zawierające te grupy, które można wyświetlić lub ukryć zgodnie z własnymi potrzebami, wykonując poniższą procedurę.  
-  
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Porady: wyświetlanie i ukrywanie grup rejestru (C#, C++, Visual Basic F#)
+
+**Rejestruje** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła **ogólne**kategorii.
+
+Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Kliknięcie prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające te grupy, które można wyświetlić lub ukryć zgodnie z potrzebami po poniższej procedurze.
+
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-or-hide-register-groups"></a>Umożliwia wyświetlanie lub ukrywanie grup rejestru  
-  
-1.  Kliknij prawym przyciskiem myszy **rejestruje** okna.  
-  
-2.  W menu skrótów wybierz grupy rejestru, które chcesz pokazać lub ukryć.  
-  
-     Grup rejestru, które nie są obsługiwane przez sprzęt, który debugowania na są wyłączone w menu skrótów, więc nie można wybrać.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
+
+## <a name="display-or-hide-register-groups"></a>Wyświetlanie i ukrywanie grup rejestru
+
+1.  Kliknij prawym przyciskiem myszy **rejestruje** okna.
+
+2.  W menu skrótów wybierz grup rejestru, który chcesz pokazać lub ukryć.
+
+     Grupy rejestru, które nie są obsługiwane przez sprzęt, który debugujesz na są wyłączone w menu skrótów, więc nie można je wybrać.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Instrukcje: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

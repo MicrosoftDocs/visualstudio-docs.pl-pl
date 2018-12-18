@@ -15,12 +15,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd5331e433c4790a51dfb7c42b5b0b50eb26c1a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939270"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794156"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Dodawanie funkcji wyszukiwania do okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,9 +131,9 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
      Aby włączyć wyszukiwanie, konieczne jest przesłonięcie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> właściwości. <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> Klasy implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> i udostępnia domyślną implementację, które nie umożliwiają wyszukiwanie.  
   
     ```csharp  
-    public override bool SearchEnabled  
+    public override bool SearchEnabled  
     {  
-        get { return true; }  
+        get { return true; }  
     }  
     ```  
   
@@ -280,7 +280,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
 1.  W pliku TestSearch.cs, Dodaj następujący kod do `TestSearch` klasy. Ten kod umożliwia szybkie wyszukiwanie, zamiast wyszukiwania na żądanie (co oznacza, że użytkownik nie musi naciśnij klawisz ENTER). Ten kod zastępuje `ProvideSearchSettings` method in Class metoda `TestSearch` klasy, które są niezbędne do zmiany ustawień domyślnych.  
   
     ```csharp  
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
     {  
         Utilities.SetValue(pSearchSettings,   
             SearchSettingsDataSource.SearchStartTypeProperty.Name,   
@@ -328,7 +328,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
   
     ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
     {  
         get  
         {  
@@ -408,13 +408,13 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
 1.  W pliku TestSearch.cs, Dodaj następujący kod do `TestSearch` klasy. Kod implementuje `SearchFiltersEnum` , dodając <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> określający do odfiltrowania wyników wyszukiwania, tak aby były wyświetlane tylko nawet wiersze.  
   
     ```csharp  
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
     {  
         get  
         {  
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();  
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));  
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
         }  
     }  
   
@@ -425,19 +425,19 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
 2.  W pliku TestSearch.cs, Dodaj następujące metody umożliwiające `TestSearchTask` klasy, która znajduje się w `TestSearch` klasy. Metody te obsługują `OnStartSearch` metody, która zmodyfikujesz w następnym kroku.  
   
     ```csharp  
-    private string RemoveFromString(string origString, string stringToRemove)  
+    private string RemoveFromString(string origString, string stringToRemove)  
     {  
         int index = origString.IndexOf(stringToRemove);  
         if (index == -1)  
             return origString;  
-        else   
+        else   
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();  
     }  
   
-    private string[] GetEvenItems(string[] contentArr)  
+    private string[] GetEvenItems(string[] contentArr)  
     {  
         int length = contentArr.Length / 2;  
-        string[] evenContentArr = new string[length];  
+        string[] evenContentArr = new string[length];  
   
         int indexB = 0;  
         for (int index = 1; index < contentArr.Length; index += 2)  
@@ -453,13 +453,13 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
 3.  W `TestSearchTask` klasy, zaktualizuj `OnStartSearch` metoda następującym kodem. Ta zmiana aktualizuje kod w celu obsługi filtru.  
   
     ```csharp  
-    protected override void OnStartSearch()  
+    protected override void OnStartSearch()  
     {  
-        // Use the original content of the text box as the target of the search.   
-        var separator = new string[] { Environment.NewLine };  
+        // Use the original content of the text box as the target of the search.   
+        var separator = new string[] { Environment.NewLine };  
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);  
   
-        // Get the search option.   
+        // Get the search option.   
         bool matchCase = false;  
         matchCase = m_toolWindow.MatchCaseOption.Value;  
   
@@ -472,7 +472,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
         {  
             string searchString = this.SearchQuery.SearchString;  
   
-            // If the search string contains the filter string, filter the content array.   
+            // If the search string contains the filter string, filter the content array.   
             string filterString = "lines:\"even\"";  
   
             if (this.SearchQuery.SearchString.Contains(filterString))  
@@ -484,7 +484,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
                 searchString = RemoveFromString(searchString, filterString);  
             }  
   
-            // Determine the results.   
+            // Determine the results.   
             uint progress = 0;  
             foreach (string line in contentArr)  
             {  
@@ -507,7 +507,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
   
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));  
   
-                // Uncomment the following line to demonstrate the progress bar.   
+                // Uncomment the following line to demonstrate the progress bar.   
                 // System.Threading.Thread.Sleep(100);  
             }  
         }  
@@ -523,8 +523,8 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
             this.SearchResults = resultCount;  
         }  
   
-        // Call the implementation of this method in the base class.   
-        // This sets the task status to complete and reports task completion.   
+        // Call the implementation of this method in the base class.   
+        // This sets the task status to complete and reports task completion.   
         base.OnStartSearch();  
     }  
     ```  

@@ -1,5 +1,5 @@
 ---
-title: Projektowanie XAML w programie Visual Studio
+title: Użyj XAML
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937333"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063001"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Projektowanie XAML w programie Visual Studio
 
@@ -48,11 +48,11 @@ Dla najbardziej podstawowe zadania środowisko IDE programu Visual Studio i Blen
 
      ![Środowisko ponownego ładowania pliku](../designers/media/blendfilereload.png)
 
-- **Synchronizowane układy i ustawienia:** układy niestandardowe umożliwiają zapisać i zastosować dostosowania układu okna narzędzia. Visual Studio zsynchronizuje te dostosowania i preferencje dotyczące programu Visual Studio i Blend for Visual Studio na maszynach po zalogowaniu się przy użyciu tego samego konta Microsoft. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+- **Synchronizowane układy i ustawienia:** układy niestandardowe umożliwiają zapisać i zastosować dostosowania układu okna narzędzia. Visual Studio zsynchronizuje te dostosowania i preferencje dotyczące programu Visual Studio i Blend for Visual Studio na maszynach po zalogowaniu się przy użyciu tego samego konta Microsoft. Zobacz [synchronizować ustawienia na wielu komputerach](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Typowe Eksploratora rozwiązań:** **Eksploratora rozwiązań** zapewnia zorganizowany widok projektów i ich pliki, a także uzyskać dostęp do poleceń związanych z nimi. Za pomocą Eksploratora rozwiązań łatwiej jest pracować z projektami dużych przedsiębiorstw. Zobacz [rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Team Explorer:** za pomocą programu Team Explorer można zarządzać projektów z repozytoriami GIT lub TFS, ułatwiające współpracę zespołową. Zobacz [pracy w programie Team Explorer](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Team Explorer:** za pomocą programu Team Explorer można zarządzać projektów z repozytoriami GIT lub TFS, ułatwiające współpracę zespołową. Zobacz [pracy w programie Team Explorer](/azure/devops/user-guide/work-team-explorer).
 
 - **Pakiet NuGet:** można zarządzać pakietami NuGet w programie Visual Studio i Blend for Visual Studio. NuGet to Menedżer pakietów dla platformy .NET Framework, która upraszcza instalacji i usuwania pakietów za pomocą rozwiązania.
 

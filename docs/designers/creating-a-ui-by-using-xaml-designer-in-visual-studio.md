@@ -1,6 +1,6 @@
 ---
-title: Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
-ms.date: 07/17/2017
+title: Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903260"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220999"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 
 Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby ułatwić projektowanie oparte na XAML Windows i aplikacje sieci Web. Można utworzyć interfejsów użytkownika dla aplikacji poprzez przeciąganie kontrolek z **przybornika** i ustawianie właściwości w **właściwości** okna. Można również edytować XAML bezpośrednio w widoku XAML.
 
@@ -108,6 +108,9 @@ Powiększenie znaczników umożliwia rozmiar **XAML** widoku. Możesz powiększy
 
 ## <a name="device-window"></a>Okno urządzenia
 
+> [!NOTE]
+> Jeśli wersja platformy docelowej (`TargetPlatformVersion`) aplikacji platformy uniwersalnej systemu Windows jest 10.0.16299.0 lub nowszej, **urządzenia** okno nie jest dostępne.
+
 **Urządzenia** okna w programie XAML Designer umożliwia symulowanie w czasie projektowania, różnych widoków, ekranów i wyświetlić opcje projektu. **Urządzenia** oknie jest dostępna w **projektowania** menu podczas pracy w Projektancie XAML. Poniżej przedstawiono wygląda następująco:
 
 ![Okno urządzenia](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ Opcja w górnej części **konspekt dokumentu** okno, które znajduje się symbo
 
 ![Okno właściwości](../designers/media/xaml_editor_prop_window.png)
 
-Istnieją różne opcje w górnej części **właściwości** okna. Nazwa aktualnie wybranego elementu można zmienić za pomocą **nazwa** pole. W lewym górnym rogu istnieje ikona reprezentująca obecnie wybranego elementu. Aby ustawić właściwości według kategorii lub alfabetycznie, kliknij przycisk **kategorii**, **nazwa**, lub **źródła** w **Rozmieść według** listy. Aby wyświetlić listę zdarzeń dla formantu, kliknij **zdarzenia** przycisk, który jest wyświetlany symbol bolt pod kątem obsługi. Aby wyszukać właściwość, rozpocznij wpisywanie nazwy właściwości w **wyszukującą** pole. **Właściwości** oknie zostaną wyświetlone właściwości, spełniających kryteria wyszukiwania. Niektóre właściwości umożliwiają ustawianie zaawansowanych właściwości, wybierając przycisk strzałki w dół. Aby uzyskać więcej informacji na temat używania właściwości i obsługa zdarzeń, zobacz [Szybki Start: dodawanie formantów i obsługa zdarzeń](http://go.microsoft.com/fwlink/?LinkID=247983)
+Istnieją różne opcje w górnej części **właściwości** okna. Nazwa aktualnie wybranego elementu można zmienić za pomocą **nazwa** pole. W lewym górnym rogu istnieje ikona reprezentująca obecnie wybranego elementu. Aby ustawić właściwości według kategorii lub alfabetycznie, kliknij przycisk **kategorii**, **nazwa**, lub **źródła** w **Rozmieść według** listy. Aby wyświetlić listę zdarzeń dla formantu, kliknij **zdarzenia** przycisk, który jest wyświetlany symbol bolt pod kątem obsługi. Aby wyszukać właściwość, rozpocznij wpisywanie nazwy właściwości w **wyszukującą** pole. **Właściwości** oknie zostaną wyświetlone właściwości, spełniających kryteria wyszukiwania. Niektóre właściwości umożliwiają ustawianie zaawansowanych właściwości, wybierając przycisk strzałki w dół. Aby uzyskać więcej informacji na temat używania właściwości i obsługa zdarzeń, zobacz [wprowadzenie do kontrolek i wzorce](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 Po prawej stronie każdej właściwości jest wartość *znacznik właściwości* wyświetlany jako symbol pola. Wygląd znacznika właściwość wskazuje, czy powiązanie danych lub zasób stosowany do właściwości. Na przykład symbol białe pola wskazuje wartość domyślną, symbol czarne pole zwykle wskazuje, że zastosowano zasobu lokalnego i pole pomarańczowy zwykle wskazuje, że zastosowano powiązanie danych. Po kliknięciu znacznik właściwości, przejdź do definicji stylu, otworzyć Konstruktor powiązań danych lub otworzyć selektor zasobów.
 

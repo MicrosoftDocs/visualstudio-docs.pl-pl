@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901193"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349052"
 ---
 # <a name="understand-build-configurations"></a>O konfiguracjach kompilacji
 
 Można przechowywać różne konfiguracje rozwiązania i projektu właściwości mają zostać użyte w różne rodzaje kompilacji. Tworzenie, wybierz, zmodyfikować lub usunąć konfigurację, można użyć **programu Configuration Manager**. Aby otworzyć go na pasku menu, wybierz **kompilacji** > **programu Configuration Manager**, lub po prostu wpisz **konfiguracji** w **Szybkie uruchamianie**pole. Można również użyć **konfiguracje rozwiązania** listy na **standardowa** narzędzi, aby wybrać konfigurację, lub otworzyć **programu Configuration Manager**.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [kompilowanie konfiguracji w programie Visual Studio dla komputerów Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Jeśli nie można znaleźć rozwiązania ustawień konfiguracji na pasku narzędzi, a nie ma dostępu do **programu Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] mogą być stosowane ustawienia środowiska deweloperskiego. Aby uzyskać więcej informacji, zobacz [porady: Zarządzanie konfiguracjami z zastosowaniem ustawień dewelopera Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -51,7 +54,7 @@ Każdy wpis **projektu kontekstów** pole w konfiguracji rozwiązania reprezentu
 
 > [!NOTE]
 > Po zdefiniowaniu nowa konfiguracja rozwiązania i wybierz **Utwórz nowe konfiguracje projektu** pole wyboru [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie przypisuje nowej konfiguracji do wszystkich projektów. Podobnie, kiedy należy zdefiniować nowa platforma rozwiązania i wybrać **Utwórz nowe platformy projektu** pole wyboru [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie przypisuje nową platformę do wszystkich projektów. Jeśli dodasz projekt, który jest przeznaczony dla nowych platform, Visual Studio dodaje również tej platformy do listy platformy rozwiązania oraz przypisuje go do wszystkich projektów.
-> 
+>
 > Nadal można zmodyfikować ustawienia dla każdego projektu.
 
 Konfiguracja rozwiązania aktywnego także kontekst środowiska IDE. Na przykład, jeśli pracujesz nad projektem i konfiguracją Określa, że będzie on kompilowany do urządzenia przenośnego, **przybornika** wyświetla tylko te elementy, których można użyć w projekcie urządzenia przenośnego.
@@ -92,3 +95,4 @@ Konfiguracja rozwiązania aktywnego także kontekst środowiska IDE. Na przykła
 - [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)
 - [Odwołanie kompilacji C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)
+- [Kompilowanie konfiguracji (Visual Studio dla komputerów Mac)](/visualstudio/mac/configurations)

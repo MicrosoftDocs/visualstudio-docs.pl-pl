@@ -1,5 +1,5 @@
 ---
-title: Witaj, świecie | Dokumentacja firmy Microsoft
+title: Witaj świecie rozszerzenie samouczka | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356759"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349468"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Tworzenie pierwszego rozszerzenia: Hello World
 
@@ -30,6 +30,9 @@ W procesie, dowiesz się jak:
 W tym przykładzie użyjemy Visual C# można dodać niestandardowe menu przycisku o nazwie "Powiedz Hello World!" który wygląda następująco:
 
 ![Witaj świecie polecenia](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> Ten artykuł dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [wskazówki rozszerzalności programu Visual Studio dla komputerów Mac](/visualstudio/mac/extending-visual-studio-mac-walkthrough).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -133,6 +136,6 @@ Należy wyświetlić dane wyjściowe z nowe polecenie niestandardowe, w tym przy
 
 Skoro znasz już podstawy pracy z Visual Studio Extensibility, poniżej przedstawiono, gdzie można dowiedzieć się więcej:
 
-* [Do tworzenia rozszerzenia programu Visual Studio](starting-to-develop-visual-studio-extensions.md) — przykłady i samouczki. i publikowania rozszerzenia.
+* [Do tworzenia rozszerzenia programu Visual Studio](starting-to-develop-visual-studio-extensions.md) — przykłady i samouczki. i publikowania rozszerzenia
 * [What's new in Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) — nowe funkcje rozszerzalności programu Visual Studio 2017
 * [Wewnątrz zestawu Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) — Dowiedz się, szczegółowe informacje o możliwościach rozszerzania programu Visual Studio

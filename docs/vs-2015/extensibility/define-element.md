@@ -16,12 +16,12 @@ ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a573413c20c305f3645b1d2795901f344ffb235
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df8f7dc76d01cd1a76537dad23b44e2e4b061682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229193"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765887"
 ---
 # <a name="define-element"></a>Define, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +41,8 @@ Definiuje symbol pary nazw i wartości. Ten symbol może zostać oceniony przez 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|nazwa|Wymagane. Nazwa symbolu:<br /><br /> Nazwa = "Tryb"|  
-|value|Wymagane. Wartość symbolu:<br /><br /> wartość = "Standardowy"|  
+|nazwa|Wymagana. Nazwa symbolu:<br /><br /> Nazwa = "Tryb"|  
+|value|Wymagana. Wartość symbolu:<br /><br /> wartość = "Standardowy"|  
 |Warunek|Opcjonalna. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  

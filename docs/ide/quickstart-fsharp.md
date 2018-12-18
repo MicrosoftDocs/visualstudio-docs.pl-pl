@@ -1,6 +1,6 @@
 ---
-title: 'Szybki Start: Tworzenie usługi sieci web platformy ASP.NET Core w języku F #'
-description: 'Dowiedz się, jak tworzyć usługi sieci web platformy ASP.NET Core w programie Visual Studio w języku F #, krok po kroku.'
+title: 'Szybki Start: Tworzenie usługi sieci web platformy ASP.NET Core wF#'
+description: Dowiedz się, jak tworzyć usługi sieci web platformy ASP.NET Core w programie Visual Studio F#krok po kroku.
 ms.date: 08/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
@@ -20,9 +20,9 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43231199"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej usługi sieci web platformy ASP.NET Core w języku F #
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej usługi sieci web platformy ASP.NET Core wF#
 
-W ramach tego wprowadzenia do F # w programie Visual Studio 5 – 10 minut utworzysz aplikację sieci web platformy ASP.NET Core F #.
+W ramach tego wprowadzenia 5 – 10 minut, aby F# w programie Visual Studio, utworzysz F# aplikacji sieci web platformy ASP.NET Core.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
@@ -34,7 +34,7 @@ Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. 
 
 2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-3. W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **Visual F #**, następnie wybierz **Web**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**, następnie wybierz **OK**.
+3. W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **Visual F#** , następnie wybierz **Web**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**, następnie wybierz **OK**.
 
      Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie. Uruchamia Instalatora programu Visual Studio. Wybierz **ASP.NET i tworzenie aplikacji internetowych** obciążenia, wybierz **Modyfikuj**.
 
@@ -46,7 +46,7 @@ Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. 
 
 1. W **Eksploratora rozwiązań** narzędzi rozwiń **kontrolerów** folderu, wybierz **ValuesController.fs** aby go otworzyć w edytorze.
 
-   ![Eksplorator rozwiązań z folderem kontrolerów rozwinięty w F # projektu składnika Web API](../ide/media/hello-world-fs-sln-explorer.png)
+   ![Eksplorator rozwiązań z folderem kontrolerów rozwinięty w F# projekt internetowego interfejsu API](../ide/media/hello-world-fs-sln-explorer.png)
 
 2. Następnie zmodyfikuj `Get()` element członkowski może być następujące:
 
@@ -57,7 +57,7 @@ Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. 
        ActionResult<string[]>(values)
    ```
 
-Kod jest bardzo proste. F # tablicy wartości jest powiązany z `values` nazwę, a następnie przekazywane do struktury programu ASP.NET Core MVC jako `ActionResult`. ASP.NET Core zajmie się resztą dla Ciebie.
+Kod jest bardzo proste. F# Tablicy wartości jest powiązany z `values` nazwę, a następnie przekazywane do struktury programu ASP.NET Core MVC jako `ActionResult`. ASP.NET Core zajmie się resztą dla Ciebie.
 
 Powinien wyglądać następująco w edytorze:
 
@@ -73,9 +73,9 @@ Przeglądarka sieci web będą teraz wyświetlane dopasowania wcześniej wpisane
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już nieco F #, ASP.NET Core i programu Visual Studio IDE. Aby sprawdzić działanie aplikacji na publiczny serwer, przycisk.
+Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już trochę F#, ASP.NET Core i programu Visual Studio IDE. Aby sprawdzić działanie aplikacji na publiczny serwer, przycisk.
 
 > [!div class="nextstepaction"]
 > [Wdrażanie aplikacji w usłudze Azure App Service](../deployment/quickstart-deploy-to-azure.md)
 
-Aby dowiedzieć się więcej na temat języka F #, zapoznaj się z oficjalną [Podręcznik języka F #](/dotnet/fsharp/index).
+Aby dowiedzieć się więcej na temat F#, zapoznaj się z oficjalną [ F# przewodnik](/dotnet/fsharp/index).

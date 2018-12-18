@@ -27,15 +27,15 @@ helpviewer_keywords:
 - managed code, stepping out of
 ms.assetid: 97cdd2a8-02a9-4a06-a5b1-c92b1e431979
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2648d73887f79f9b71770164a620bb1a8d674622
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f67dcff047b29d2fb51044e6c0973c5b6e6b747
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279438"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788501"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Porady: wychodzenia z kodu zarządzanego gdy w oknie stosu wywołań brakuje ramek natywnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

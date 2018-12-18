@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637500"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826820"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
@@ -63,7 +63,7 @@ Aby upewnić się, że użytkownika instalacji programu Visual Studio ma wszystk
 * Upewnij się, `InstallationTarget` obejmuje 15.0.
 * Dodaj wymagania wstępne instalacji wymagane (jak pokazano w poniższym przykładzie).
   * Zalecane jest określenie tylko identyfikatory składnika wymagań wstępnych dotyczących instalacji.
-  * Zobacz sekcję na końcu tego dokumentu, aby [instrukcje dotyczące identyfikowania identyfikatorów składników](#finding-component-ids).
+  * Zobacz sekcję na końcu tego dokumentu, aby [instrukcje dotyczące identyfikowania identyfikatorów składników](#find-component-ids).
 
 Przykład:
 
@@ -170,7 +170,7 @@ Typ rozszerzenia | Nazwa wyświetlana | Id
 Edytor | Edytor rdzeni programu Visual Studio  | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# i Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Podstawowe składniki dla obciążenia zarządzanego pulpitu | Microsoft.VisualStudio.Component.ManagedDesktop.Core
-Debugger | Debuger Just In Time | Microsoft.VisualStudio.Component.Debugger.JustInTime
+Debuger | Debuger Just In Time | Microsoft.VisualStudio.Component.Debugger.JustInTime
 
 ## <a name="find-component-ids"></a>Znajdź identyfikatory składnika
 

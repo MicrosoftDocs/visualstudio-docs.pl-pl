@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1db7f0ec9404b71bb9f7d71d83147e53ab2d17
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677494"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671745"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Uaktualnianie i migracja rozwiązań pakietu Office
   Jeśli masz projekt Microsoft Office, który został utworzony we wcześniejszej wersji programu Visual Studio, musisz uaktualnić projekt, aby używać go w bieżącej wersji programu Visual Studio. Aby uaktualnić projekt Microsoft Office, otwórz go w wersji programu Visual Studio, który zawiera narzędzia Microsoft Office developer tools. Aby uzyskać więcej informacji na temat wersji programu Visual Studio, obejmujących Microsoft Office developer tools, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,7 +88,7 @@ ms.locfileid: "35677494"
  Jeśli chcesz używać technologii ClickOnce do wdrażania dodatku narzędzi VSTO dla programów, możesz całkowicie usunąć Instalatora lub InstallShield Limited Edition projekt. Aby uzyskać więcej informacji na temat wdrażania dodatków narzędzi VSTO za pomocą technologii ClickOnce zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: rozwiązań dla uaktualnienie pakietu Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Porady: rozwiązań dla uaktualnienie pakietu Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Okno dialogowe Opcje uaktualniania, projekt](../vsto/project-upgrade-options-dialog-box.md)  
   

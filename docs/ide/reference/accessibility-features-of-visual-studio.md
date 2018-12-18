@@ -1,6 +1,6 @@
 ---
 title: Funkcje ułatwień dostępu programu Visual Studio
-description: Dowiedz się więcej na temat funkcji ułatwień dostępu i narzędzi, które sprawić, że zarówno system operacyjny Windows i pakietu Visual Studio developer bardziej dostępny dla wszystkich użytkowników, w tym osób niepełnosprawnych.
+description: Dowiedz się więcej na temat funkcji ułatwień dostępu i narzędzi, które sprawić, że zarówno system operacyjny Windows, jak i pakiet dla deweloperów programu Visual Studio bardziej dostępny dla wszystkich użytkowników, w tym osobom niepełnosprawnym.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,35 +14,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943702"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348724"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkcje ułatwień dostępu programu Visual Studio
 
 > [!TIP]
-> Aby dowiedzieć się więcej o najnowszych aktualizacji ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 wersji 15 ustęp 3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
+> Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
 
-Oprócz funkcji ułatwień dostępu i narzędzi w systemie Windows następujące funkcje ułatwiają Visual Studio dostęp dla osób niepełnosprawnych:
+Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje ułatwiają programu Visual Studio dostęp dla osób niepełnosprawnych:
 
--   Pasek narzędzi przycisk i rozszerzenia
+-   Rozszerzenia narzędzi przycisk i tekst
 
 -   Opcje rozmiaru tekstu w edytorach
 
 -   Dostosowywanie kolorów w edytorach
 
--   Dostosowywanie skrótów klawiaturowych
+-   Dostosowywanie skrótów klawiatury
 
--   Automatyczne uzupełnianie metod i parametrów
+-   Automatyczne uzupełnianie metody i parametrów
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [ułatwień dostępu dla programu Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
 
 > [!IMPORTANT]
-> Informacje przedstawione w tej sekcji ma zastosowanie tylko do użytkowników, którzy licencjonowane produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, może użyć karty informacji zależnej, dołączonej do pakietu oprogramowania lub można odwiedzić [stronę skontaktuj się z nami for Microsoft Support](http://support.microsoft.com/ContactUs) i kliknij przycisk  **Zlokalizuj oddziałów firmy Microsoft na całym świecie** łącza (w dolnej części strony). Ta strona zawiera listę numerów telefonów i adresów dla Microsoft pomocy technicznej. Możesz skontaktować się z oddziałem, aby dowiedzieć się, czy typy produktów i usług, które zostały opisane w tej sekcji są dostępne w danym regionie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
+> Informacje przedstawione w tej sekcji dotyczy tylko użytkowników licencjonujących produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, można użyć karty informacji zależnej od firmy Microsoft, dołączonej do pakietu oprogramowania lub mogą odwiedzić [skontaktuj się z nami stronę Microsoft Support](http://support.microsoft.com/ContactUs) i kliknij przycisk  **Znajdź oddziałów firmy Microsoft na całym świecie** łącza (w pobliżu dolnej części strony). Ta strona zawiera listę numerów telefonów i adresów dla firmy Microsoft pomoc techniczną. Możesz skontaktować się z oddziałem, aby dowiedzieć się, czy typy produktów i usług, które są opisane w tej sekcji są dostępne w Twojej okolicy. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
 
-
- Więcej informacji znajduje się w następujących tematach:
+Więcej informacji znajduje się w następujących tematach:
 
 -   [Porady: opcje ułatwień dostępu IDE zestawu](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
@@ -50,10 +52,10 @@ Oprócz funkcji ułatwień dostępu i narzędzi w systemie Windows następujące
 
 -   [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Ułatwienia dostępu porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
+-   [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
 
 -   [Porady: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Produktów i usług firmy Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+- [Dostępność produktów i usług firmy Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

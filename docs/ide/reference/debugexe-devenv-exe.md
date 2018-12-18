@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07dfcbb6064d0f1043c0621534b953a5f5c63e82
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1badcaba6f6461f6a2c6b73580d8d12c50481c2b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704957"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948780"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
-Otwiera określony plik wykonywalny do debugowania.
+Otwiera określony plik wykonywalny do zdebugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,13 +35,13 @@ Devenv /debugexe ExecutableFile
 
  Wymagana. Ścieżka i nazwa pliku .exe.
 
- Jeśli plik .exe nie znaleziono lub nie istnieje, zostanie wyświetlony bez ostrzeżeń ani błędów i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchamia się normalnie.
+ Jeśli plik .exe nie zostanie znaleziony lub nie istnieje, jest wyświetlana nie ostrzeżenia lub błędu i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchamia się normalnie.
 
 ## <a name="remarks"></a>Uwagi
- Wszelkie ciągi po `ExecutableFile` parametrów są przekazywane do tego pliku jako argumenty.
+ Wszystkie ciągi zgodnie z `ExecutableFile` parametru są przekazywane do tego pliku jako argumenty.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład otwiera plik `MyApplication.exe` do debugowania.
+ W poniższym przykładzie otwierany plik `MyApplication.exe` do debugowania.
 
 ```cmd
 Devenv.exe /debugexe MyApplication.exe

@@ -1,5 +1,5 @@
 ---
-title: Generuj element Equals C# i zastąpienia metody GetHashCode w programie Visual Studio
+title: Generowanie C# Equals i GetHashCode — metoda przesłonięcia
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903117"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295712"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generowanie elementu Equals i GetHashCode — metoda zastępuje w programie Visual Studio
 
@@ -36,17 +36,20 @@ Dotyczy to generowanie kodu:
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Umieść kursor w swojej deklaracji typu.
+1. Umieść kursor w jakimś miejscu w wierszu swojej deklaracji typu.
 
    ![Wyróżniony kod](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > Czy nie, kliknij dwukrotnie wybierz nazwę typu lub nie będzie można skorzystać z opcji menu. Po prostu umieść kursor w wierszu w jakimś miejscu.
+
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, która pojawia się na lewym marginesie, gdy kursor tekstu jest już w wierszu deklaracji typu.
+   - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+
+   - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+
+   - Kliknij ikonę ![śrubokręt](../media/screwdriver-icon.png) ikona, która pojawia się na lewym marginesie.
 
    ![Generowanie zastąpienia (wersja zapoznawcza)](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ Dotyczy to generowanie kodu:
     ![Generowanie zastąpienia okna dialogowego](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > Możesz również generować operatory z tego okna dialogowego za pomocą pola wyboru poniżej listy elementów członkowskich.
+    > Możesz również generować operatory z tego okna dialogowego za pomocą pola wyboru w dolnej części okna dialogowego.
 
-   Equals i GetHashCode zastąpienia są generowane przy użyciu domyślnej implementacji.
+   `Equals` i `GetHashCode` metody są generowane przy użyciu domyślnej implementacji.
 
    ![Generowanie wyników — metoda](media/overrides-result-cs.png)
 

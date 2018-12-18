@@ -1,24 +1,45 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, komputery Mac) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775190"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027240"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 Dziennik zmian w programie Visual Studio Tools for Unity.
+
+## <a name="1700"></a>1.7.0.0
+ Wydana 13 listopada 2018 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Debuger:**
+
+    -   W oknie dialogowym Dołącz, należy dodać więcej informacje o kliencie (adresu IP, nazwy komputera).
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Debuger:**
+
+     -   Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
+     
+-   **Integracja:**
+
+     -   Naprawiono Unity wtyczki aktywacji wybranie innego domyślnego edytora.
+     
+     -   Tworzenie szablonu pliku stały aparatu Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Wydana 24 lipca 2018 r.

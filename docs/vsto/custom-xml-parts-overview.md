@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325006"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671732"
 ---
 # <a name="custom-xml-parts-overview"></a>Niestandardowe części XML ― omówienie
   Dane XML można osadzić w dokumentach niektórych aplikacji pakietu Microsoft Office. Osadzenie danych XML w dokumencie, dane o nazwie *niestandardowym elementem XML*.  
@@ -50,13 +50,13 @@ ms.locfileid: "49325006"
   
  Aby uzyskać więcej informacji na temat struktury Open XML i niestandardowe elementy XML zobacz następujące artykuły:  
   
--   [Wprowadzenie do formatów pakietu Office (2007) Open XML](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Wprowadzenie do formatów pakietu Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Porady: manipulowanie dokumentów formatów Open XML](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [Porady: manipulowanie dokumentów formatów Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [Wskazówki: Format programu Word 2007 XML](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [Wskazówki: Format programu Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
--   [Tworzenie dokumentów programu Word 2007 za pomocą formatów Open XML](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Tworzenie dokumentów programu Word 2007 za pomocą formatów Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
 > [!NOTE]  
 >  Program Excel, Word i PowerPoint również włączyć przy użyciu niestandardowych części XML w dokumentach, które są zapisane w formacie plików binarnych. Jednak jeśli dokument zostanie zapisany w formacie binarnym, nie możesz dodawać ani modyfikować niestandardowe elementy XML bez uruchamiania aplikacji programu Microsoft Office.  
@@ -76,7 +76,7 @@ ms.locfileid: "49325006"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Zmodyfikuj elementy XML bez uruchamiania aplikacji pakietu Office  
  Można dodawania lub modyfikowania z niestandardowym elementem XML bez konieczności uruchamiania programu Excel, PowerPoint lub Word. Jest to przydatne, jeśli chcesz pracować z danymi XML w dokumencie programu na komputerze, który nie ma aplikacji Microsoft Office, zainstalowane, takim jak serwer.  
   
- Aby dodać z niestandardowym elementem XML bez konieczności uruchamiania programu Microsoft Office, należy użyć klas Open XML zestawu SDK. Te klasy są przeznaczone do zapewniają dostęp do zawartości Open XML, które są specyficzne dla dokumentów pakietu Office. Na przykład, aby dodać niestandardowe części XML do skoroszytu programu Excel, należy użyć [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) metody [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) obiektu. Aby uzyskać więcej informacji, zobacz [Open XML SDK](/office/open-xml/open-xml-sdk).  
+ Aby dodać z niestandardowym elementem XML bez konieczności uruchamiania programu Microsoft Office, należy użyć klas Open XML zestawu SDK. Te klasy są przeznaczone do zapewniają dostęp do zawartości Open XML, które są specyficzne dla dokumentów pakietu Office. Na przykład, aby dodać niestandardowe części XML do skoroszytu programu Excel, należy użyć <xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A> metody <xref:DocumentFormat.OpenXml.Packaging.WorkbookPart> obiektu. Aby uzyskać więcej informacji, zobacz [Open XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Niestandardowe elementy XML należy powiązać formanty zawartości programu Word  
  Możesz powiązać formanty zawartości w ramach rozwiązania programu Word do elementów w niestandardowym elementem XML. Gdy formant zawartości jest powiązana z niestandardowym elementem XML, dane w niestandardowym elementem XML są wyświetlane w interfejsie użytkownika (UI) zawartości formantu. Jeśli użytkownik dokona edycji tekstu w kontrolce, odpowiadający mu element XML jest aktualizowane automatycznie. Podobnie zmiana wartości elementów w niestandardowych części XML formanty zawartości, które są powiązane elementy XML wyświetlania nowych danych. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).  
@@ -87,5 +87,3 @@ ms.locfileid: "49325006"
  [Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Formanty zawartości](../vsto/content-controls.md)   
  [Wskazówki: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
-  
-  

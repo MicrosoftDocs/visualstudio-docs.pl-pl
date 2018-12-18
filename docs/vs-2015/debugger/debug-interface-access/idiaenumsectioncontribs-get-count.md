@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSectionContribs::get_Count interface
 ms.assetid: 94f11de3-9393-4a5c-9814-2e6bdb597f70
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f6d42c7f38ed590664bb48b96e3fa0363eeaf54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f5be19ba33b54fcc264d375dea4ab11f7e2549
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895291"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805362"
 ---
 # <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pobiera liczbę sekcji wkładów.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

@@ -1,5 +1,5 @@
 ---
-title: Jak używać platformy Google Test dla języka C++ w programie Visual Studio
+title: Jak używać platformy Google Test dla języka C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a047b7d46aa2fe325baa4fee7459bb822e3b1bea
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 704d842aaf3ea5e3075939e4d52b042a4128b810
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138636"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060394"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak używać platformy Google Test dla języka C++ w programie Visual Studio
 W **programu Visual Studio 2017 w wersji 15.5** i później platformy Google Test jest zintegrowana w środowisku IDE programu Visual Studio jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Aby sprawdzić, czy jest zainstalowany na komputerze, otwórz Instalator programu Visual Studio i Znajdź platformy Google Test pod listą składników obciążenia:
@@ -48,13 +48,3 @@ Teraz można przystąpić do pisania i uruchamiania testów Google. Zobacz [pods
 
 ## <a name="see-also"></a>Zobacz także
 [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
-
-
-
-
-
-
-
-
-
-

@@ -16,12 +16,12 @@ ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f3af33657bc6673f138d1223e1943308deff77
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9524f1306c86f110498d71d4057378cd834d207b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919900"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817246"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

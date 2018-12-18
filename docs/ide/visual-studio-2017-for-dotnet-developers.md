@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928350"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645149"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -46,7 +46,7 @@ Dostępne są następujące popularne skróty programu Visual Studio:
 | **Ctrl**+**.** (również **Alt**+**wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacji lub innych szybkie akcje są dostępne na wybór pozycji lub kod kursora |
 | **Ctrl**+**D** | Duplikuj wiersz | Duplikuje wiersz kodu, w którym znajduje się kursor (dostępne w **programu Visual Studio 2017 w wersji 15.6** i nowsze) |
 | **Shift**+**Alt**+**+**/**-** | Rozwijania/zwijania zaznaczenia | Zwiększa lub zmniejsza bieżące zaznaczenie w edytorze (dostępne w **programu Visual Studio 2017 w wersji 15.5** i nowsze) |
-| **CTRL** + **Alt** + **.** | Wstaw dalej pasującego karetki | Dodaje zaznaczenia i karetki w następnej lokalizacji, która pasuje do bieżącego zaznaczenia (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
+| **SHIFT** + **Alt** + **.** | Wstaw dalej pasującego karetki | Dodaje zaznaczenia i karetki w następnej lokalizacji, która pasuje do bieżącego zaznaczenia (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
 | **CTRL**+**funkcji pytania i odpowiedzi** | Szybkie uruchamianie | Wyszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **CTRL**+**F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |

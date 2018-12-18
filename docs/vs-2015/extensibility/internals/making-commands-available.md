@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883976"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783041"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfe
 ## <a name="delayed-loading"></a>Opóźnione ładowanie  
  Typowym sposobem, aby umożliwić opóźnione ładowanie jest projektować pakietu VSPackage, dzięki czemu polecenia są wyświetlane w interfejsie użytkownika, ale sam pakiet nie został załadowany, dopóki użytkownik kliknie jedno z poleceń. Aby to osiągnąć, w pliku vsct, Utwórz polecenia, które mają nie flag poleceń.  
   
- Poniższy przykład przedstawia definicję polecenia menu z pliku vsct. To polecenie, które są generowane przez szablon do pakietu Visual Studio podczas **polecenia Menu** wybrano opcję w szablonie.  
+ Poniższy przykład przedstawia definicję polecenia menu z pliku vsct. To polecenie, które są generowane przez szablon pakietu Visual Studio podczas **polecenia Menu** wybrano opcję w szablonie.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  

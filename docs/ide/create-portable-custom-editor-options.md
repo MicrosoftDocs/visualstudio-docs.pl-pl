@@ -1,5 +1,5 @@
 ---
-title: Przy użyciu ustawień polecenia EditorConfig w programie Visual Studio
+title: Ustawienia pliku EditorConfig
 ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f2df8491ca3af165681a76c039d63c42c008f2f8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835907"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062929"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
@@ -23,6 +23,9 @@ W programie Visual Studio 2017, można dodać [EditorConfig](http://editorconfig
 Polecenie EditorConfig ustawienia są obsługiwane przez wiele kodu edytorami i środowiskami IDE, w tym Visual Studio. Jest przenośny składnikiem przybliżone ilości tych danych przy użyciu kodu i mogą zostać wymuszone kodowania stylów nawet poza programem Visual Studio.
 
 Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, formatowanie istniejącego kodu nie jest zmieniany, chyba że formatowania dokumentu (**Edytuj** > **zaawansowane**  >  **Formatowania dokumentu** lub **Ctrl**+**K**, **Ctrl**+**D**w profilu domyślnym). Jednak wszelkie nowe wiersze kodu są sformatowane zgodnie z ustawieniami EditorConfig. Można zdefiniować ustawienia EditorConfig, które chcesz **Formatuj dokument** można zastosować [ **formatowanie** Strona opcji](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [polecenia EditorConfig w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editorconfig).
 
 ## <a name="coding-consistency"></a>Kodowanie spójności
 
@@ -172,3 +175,4 @@ Zakres usługi konwencje EditorConfig można kontrolować przez ustawienie ```ro
 - [Obsługa wtyczki EditorConfig dla usługi w języka](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Funkcje edytora kodu](writing-code-in-the-code-and-text-editor.md)
+- [Polecenie EditorConfig (Visual Studio dla komputerów Mac)](/visualstudio/mac/editorconfig)

@@ -1,5 +1,5 @@
 ---
-title: Dodawanie obsługi innych języków w edytorze programu Visual Studio | Dokumentacja firmy Microsoft
+title: Dodawanie Obsługa edytora dla innych języków | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.reviewer: ''
@@ -19,77 +19,72 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823778"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049796"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków w edytorze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Informacje na temat jak edytor programu Visual Studio obsługuje odczytu ani nawigować przez inny komputer języków i jak dodać obsługę innych języków w edytorze programu Visual Studio.  
-  
-## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Kolorowanie składni, uzupełniania instrukcji i przejdź do pomocy technicznej  
- Funkcje w edytorze programu Visual Studio, takie jak kolorowania składni, uzupełniania instrukcji i przejdź do może pomóc Ci łatwo odczytywać, tworzyć i edytować kod. Poniższy zrzut ekranu przedstawia przykład edytowanie skryptu Perl w programie Visual Studio. Składnia jest automatycznie w trybie kolorowym. Na przykład uwagi w kodzie mają kolor zielony, kod jest czarny, ścieżki są oznaczone kolorem czerwonym i instrukcje są niebieski. Edytor programu Visual Studio automatycznie stosuje kolorowania składni dowolnego języka programowania go obsługuje. Ponadto po rozpoczęciu wprowadź słowo kluczowe języka znane lub obiekt, uzupełniania instrukcji Wyświetla listę możliwych instrukcji i obiektów. Uzupełnianie instrukcji mogą pomóc tworzyć kod szybciej i łatwiej.  
-  
- ![Kolorowanie składni w skrypcie języka Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")  
-  
- Program Visual Studio zawiera obecnie kolorowania składni i uzupełniania instrukcji podstawowe obsługę następujących języków przy użyciu [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli tabela nie ma ulubionego języka, jednak nie martw się — możesz dodać go.  
-  
-|||||||  
-|-|-|-|-|-|-|  
-|Bat|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Z rzeczywistym użyciem|JavaDoc|Języka Objective-C|ShaderLab|Visual C#|  
-|Narzędzia CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
-|CoffeeScript|HTML|MNIEJ|Python|SQL|VBNet|  
-|CSS|INI|LUA|R|Swift|XML|  
-|Docker|Jade|Wprowadź|Ruby|TypeScript|YAML|  
-  
- Oprócz kolorowania składni i uzupełniania instrukcji podstawowych programu Visual Studio ma również funkcję o nazwie [przejdź do](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Ta funkcja umożliwia szybkie wyszukiwanie plików kodu, ścieżki do plików i symbole kodu. Visual Studio zawiera przejdź do pomocy technicznej dla następujących języków.  
-  
-- Z rzeczywistym użyciem  
-  
-- Java  
-  
-- JavaScript  
-  
-- PHP  
-  
-- TypeScript  
-  
-- Visual Basic  
-  
-- Visual C++  
-  
-- Visual C#  
-  
-  Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy pomoc techniczna dla danego języka nie został jeszcze zainstalowany. Instalowanie obsługi wyspecjalizowane w przypadku niektórych języków może dostarczyć obsługę dodatkowych języków, takich jak technologia IntelliSense i inne funkcje zaawansowane języka, takie jak żarówki.  
-  
-## <a name="adding-support-for-non-supported-languages"></a>Dodano obsługę języków nieobsługiwanych  
- Visual Studio 2015 Update 1 i nowsze wersje zapewniają obsługę języka w edytorze za pomocą [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli w ulubionym języku programowania nie jest obecnie obsługiwane w edytorze programu Visual Studio, najpierw wyszukać w sieci web - pakiet TextMate języka może już istnieć. Jeśli nie znajdziesz, jednak można dodać obsługę dla niego samodzielnie w Visual Studio 2015 Update 1 lub nowszy, tworząc modelu pakietu TextMate gramatyki języka i fragmenty kodu.  
-  
- Dodaj wszystkie nowe Gramatyk TextMate dla programu Visual Studio w następującym folderze:  
-  
- % userprofile %\\. vs\Extensions  
-  
- W ramach tej ścieżki podstawowej należy dodać następujące foldery, jeśli mają one zastosowanie do konkretnej sytuacji:  
-  
-|Nazwa folderu|Opis|  
-|-----------------|-----------------|  
-|\\*\<Nazwa języka >*|Folder języka. Zastąp  *\<Nazwa języka >* nazwą języka. Na przykład **\Matlab**.|  
-|\Syntaxes|Folder gramatyki. Zawiera pliki .json gramatyki języka, takich jak **Matlab.json**.|  
-|\Snippets|Folder fragmentów kodu. Zawiera fragmenty kodu dla języka.|  
-  
- W Windows, % userprofile % jest rozpoznawana jako ścieżka: c:\Users\\*\<nazwa użytkownika >*. Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.  
-  
- Aby uzyskać szczegółowe informacje o sposobie tworzenia gramatyki TextMate, zobacz [TextMate — wprowadzenie do języka gramatyki: sposób dodawania, wyróżnianie składni kodu źródłowego osadzonych w kodzie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [informacje na temat tworzenia gramatyki języka i niestandardowe Motyw dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio 2013, przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
- [Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)   
- [Przewodnik: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)
+Informacje na temat jak edytor programu Visual Studio obsługuje odczytu ani nawigować przez inny komputer języków i jak dodać obsługę innych języków w edytorze programu Visual Studio.
 
+## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Kolorowanie składni, uzupełniania instrukcji i przejdź do pomocy technicznej
+ Funkcje w edytorze programu Visual Studio, takie jak kolorowania składni, uzupełniania instrukcji i przejdź do może pomóc Ci łatwo odczytywać, tworzyć i edytować kod. Poniższy zrzut ekranu przedstawia przykład edytowanie skryptu Perl w programie Visual Studio. Składnia jest automatycznie w trybie kolorowym. Na przykład uwagi w kodzie mają kolor zielony, kod jest czarny, ścieżki są oznaczone kolorem czerwonym i instrukcje są niebieski. Edytor programu Visual Studio automatycznie stosuje kolorowania składni dowolnego języka programowania go obsługuje. Ponadto po rozpoczęciu wprowadź słowo kluczowe języka znane lub obiekt, uzupełniania instrukcji Wyświetla listę możliwych instrukcji i obiektów. Uzupełnianie instrukcji mogą pomóc tworzyć kod szybciej i łatwiej.
 
+ ![Kolorowanie składni w skrypcie języka Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
+ Program Visual Studio zawiera obecnie kolorowania składni i uzupełniania instrukcji podstawowe obsługę następujących języków przy użyciu [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli tabela nie ma ulubionego języka, jednak nie martw się — możesz dodać go.
+
+|||||||
+|-|-|-|-|-|-|
+|Bat|F#|Java|Markdown|Rust|Visual Basic|
+|Clojure|Z rzeczywistym użyciem|JavaDoc|Objective-C|ShaderLab|Visual C#|
+|Narzędzia CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
+|CoffeeScript|HTML|MNIEJ|Python|SQL|VBNet|
+|CSS|INI|LUA|R|Swift|XML|
+|Docker|Jade|Wprowadź|Ruby|TypeScript|YAML|
+
+ Oprócz kolorowania składni i uzupełniania instrukcji podstawowych programu Visual Studio ma również funkcję o nazwie [przejdź do](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Ta funkcja umożliwia szybkie wyszukiwanie plików kodu, ścieżki do plików i symbole kodu. Visual Studio zawiera przejdź do pomocy technicznej dla następujących języków.
+
+- Z rzeczywistym użyciem
+
+- Java
+
+- JavaScript
+
+- PHP
+
+- TypeScript
+
+- Visual Basic
+
+- Visual C++
+
+- Visual C#
+
+  Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy pomoc techniczna dla danego języka nie został jeszcze zainstalowany. Instalowanie obsługi wyspecjalizowane w przypadku niektórych języków może dostarczyć obsługę dodatkowych języków, takich jak technologia IntelliSense i inne funkcje zaawansowane języka, takie jak żarówki.
+
+## <a name="adding-support-for-non-supported-languages"></a>Dodano obsługę języków nieobsługiwanych
+ Visual Studio 2015 Update 1 i nowsze wersje zapewniają obsługę języka w edytorze za pomocą [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli w ulubionym języku programowania nie jest obecnie obsługiwane w edytorze programu Visual Studio, najpierw wyszukać w sieci web - pakiet TextMate języka może już istnieć. Jeśli nie znajdziesz, jednak można dodać obsługę dla niego samodzielnie w Visual Studio 2015 Update 1 lub nowszy, tworząc modelu pakietu TextMate gramatyki języka i fragmenty kodu.
+
+ Dodaj wszystkie nowe Gramatyk TextMate dla programu Visual Studio w następującym folderze:
+
+ % userprofile %\\. vs\Extensions
+
+ W ramach tej ścieżki podstawowej należy dodać następujące foldery, jeśli mają one zastosowanie do konkretnej sytuacji:
+
+|Nazwa folderu|Opis|
+|-----------------|-----------------|
+|\\*\<Nazwa języka >*|Folder języka. Zastąp  *\<Nazwa języka >* nazwą języka. Na przykład **\Matlab**.|
+|\Syntaxes|Folder gramatyki. Zawiera pliki .json gramatyki języka, takich jak **Matlab.json**.|
+|\Snippets|Folder fragmentów kodu. Zawiera fragmenty kodu dla języka.|
+
+ W Windows, % userprofile % jest rozpoznawana jako ścieżka: c:\Users\\*\<nazwa użytkownika >*. Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
+
+ Aby uzyskać szczegółowe informacje o sposobie tworzenia gramatyki TextMate, zobacz [TextMate — wprowadzenie do języka gramatyki: sposób dodawania, wyróżnianie składni kodu źródłowego osadzonych w kodzie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [informacje na temat tworzenia gramatyki języka i niestandardowe Motyw dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+
+## <a name="see-also"></a>Zobacz też
+ [Visual Studio 2013, przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md) [wskazówki: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)

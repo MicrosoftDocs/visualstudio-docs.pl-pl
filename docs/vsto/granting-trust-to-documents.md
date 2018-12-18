@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 5dfa0ad9b27b94c472feabc0e202bd9eee58f08d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073444"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670913"
 ---
 # <a name="grant-trust-to-documents"></a>Udzielanie zaufania do dokumentów
   Projektów dokumentów ma takie same wymagania dotyczące zabezpieczeń, jako projektów na poziomie aplikacji: podpisywanie manifestów za pomocą certyfikatu lub klikając monit o udzielenie zaufania. Ponadto dokument lub skoroszyt musi znajdować się w katalogu, który jest wyznaczone jako zaufaną lokalizację.  
@@ -44,7 +44,7 @@ ms.locfileid: "49073444"
   
 -   Mimo że samego dokumentu jest zaufany, korzystając z zaufanej lokalizacji, ufać dostosowania są wymagane dodatkowe uprawnienia. Można przyznać pełne zaufanie do dostosowania przy użyciu podpisywanie manifestów za pomocą certyfikatu, klikając monit o udzielenie zaufania lub instalowanie rozwiązania dla pakietu Office do *Program Files* katalogu.  
   
--   W tym samym katalogu co zestaw lub w innym katalogu może przechowywać na dokument lub skoroszyt to rozwiązanie na poziomie dokumentu. Na przykład dokument może znajdować się na serwerze programu SharePoint i zestaw może znajdować się w sieciowym udziale plików. Aby uzyskać więcej informacji, zobacz [porady: publikowanie rozwiązania pakietu Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   W tym samym katalogu co zestaw lub w innym katalogu może przechowywać na dokument lub skoroszyt to rozwiązanie na poziomie dokumentu. Na przykład dokument może znajdować się na serwerze programu SharePoint i zestaw może znajdować się w sieciowym udziale plików. Aby uzyskać więcej informacji, zobacz [porady: publikowanie rozwiązania pakietu Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)   

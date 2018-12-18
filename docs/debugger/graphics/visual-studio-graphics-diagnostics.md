@@ -1,6 +1,6 @@
 ---
-title: Diagnostyka grafiki programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Diagnostyka grafiki | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8103db254e8ee7dd095f0dcd6e7890d4ab446e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872580"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058626"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
 Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania i następnie analizowania problemów renderowania i wydajności w aplikacjach Direct3D. Diagnostyka grafiki może służyć w aplikacjach, które działają lokalnie na komputerze z systemem Windows, w emulatorze urządzenia Windows lub na zdalnym komputerze lub urządzeniu.  

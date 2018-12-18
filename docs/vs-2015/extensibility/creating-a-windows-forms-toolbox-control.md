@@ -17,12 +17,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294219"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781715"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,16 +81,16 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
 3.  Utwórz następujące deklaracje właściwości publicznej.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -102,7 +102,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
 4.  Umieść następujący kod `Load` zdarzeń dla formantu.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -115,7 +115,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
 5.  Utwórz następującą metodę publicznej, aby zwiększyć licznik.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -127,7 +127,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
 6.  Dodaj deklarację dla `Incremented` zdarzeń do klasy formantu.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Obiekty wywołujące można dodać procedury obsługi do tego zdarzenia, aby odpowiadanie na zmiany w wartość licznika.  
@@ -135,7 +135,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
 7.  Powrót do widoku projektu, a następnie kliknij dwukrotnie ikonę `Reset` przycisk, aby wygenerować `btnReset_Click` programu obsługi zdarzeń i wypełnić ją w, jak pokazano w poniższym przykładzie.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -149,7 +149,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="testing-the-control"></a>Testowanie kontrolki  

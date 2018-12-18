@@ -16,12 +16,12 @@ ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 173ff6b7550731262e8f4e3293b6f7c35eac4062
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8ca5c7d9154b07cbc51b5fde6b9c85e97d880df
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858813"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751578"
 ---
 # <a name="port-suppliers"></a>Dostawcy portów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

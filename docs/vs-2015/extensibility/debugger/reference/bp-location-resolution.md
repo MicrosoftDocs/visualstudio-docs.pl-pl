@@ -17,12 +17,12 @@ ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e294ec9e4506f0f967d39d7eda9e0c0fab3f1c39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c18a424040ebc305efa57bf61feceed54b6e2e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834204"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720861"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ W tym artykule opisano rozwiązania punktu przerwania w określonej lokalizacji.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-typedef struct _BP_LOCATION_RESOLUTION {   
+typedef struct _BP_LOCATION_RESOLUTION {   
    IDebugBreakpointResolution2* pResolution;  
 } BP_LOCATION_RESOLUTION;  
 ```  

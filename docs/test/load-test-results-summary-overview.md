@@ -1,5 +1,5 @@
 ---
-title: Ładowanie Przegląd podsumowania wyników testów w programie Visual Studio
+title: Podsumowanie wyników testów obciążenia — Przegląd
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380567"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062612"
 ---
 # <a name="load-test-results-summary-overview"></a>Przegląd podsumowania wyników testu obciążenia
 
 Po uruchomieniu testu obciążenia, możesz wyświetlić podsumowanie testu obciążeniowego, aby szybko poznać wyniki. Podsumowanie testu obciążeniowego zapewnia kluczowe wyniki w compact, łatwe do odczytania formacie. Pozwala również na drukowanie podsumowania testu obciążenia. Ułatwia to używane podczas komunikowania się wyniki do zainteresowanych stron. Podsumowanie testu obciążeniowego jest również domyślny widok, po otwarciu wyniku testu obciążeniowego z wcześniej uruchomionego testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Widok podsumowania](../test/media/ltest_summaryview.png)
+![Widok podsumowania](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Podsumowanie testu obciążeniowego
 
@@ -127,7 +129,7 @@ Sekcja Zasoby kontrolera i agenta zawiera listę komputerów, które są używan
 
 ## <a name="errors"></a>błędy
 
-Sekcja błędów zawiera listę wszystkich błędów, które wystąpiły podczas testu obciążeniowego. Typ i podtyp błąd, liczby wartości oraz ostatni komunikat są wyświetlane. Możesz wybrać błędu, aby otworzyć **błędy** tabeli i Sprawdź więcej szczegółów tego błędu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) i [porady: analizowanie błędów za pomocą panelu liczników](../test/how-to-analyze-errors-using-the-counters-panel.md).
+Sekcja błędów zawiera listę wszystkich błędów, które wystąpiły podczas testu obciążeniowego. Typ i podtyp błąd, liczby wartości oraz ostatni komunikat są wyświetlane. Możesz wybrać błędu, aby otworzyć **błędy** tabeli i Sprawdź więcej szczegółów tego błędu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.

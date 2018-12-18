@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384243"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349104"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
@@ -93,6 +93,9 @@ Można zdefiniować zestawy składników jako zakres wyszukiwania, wybierając *
 
 ## <a name="multi-caret-selection"></a>Wybieranie wielu karetki
 
+> [!NOTE]
+> Ta sekcja dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [naczenie blokowe](/visualstudio/mac/block-selection).
+
 **Nowość w programie Visual Studio 2017 w wersji 15.8**
 
 Użyj *zaznaczenie wielu karetki* się tego samego edycji w dwóch lub więcej miejsc, w tym samym czasie. Na przykład można wstawić ten sam tekst lub zmodyfikować istniejący tekst w wielu lokalizacjach, w tym samym czasie.
@@ -130,3 +133,4 @@ Niektóre polecenia są również dostępne na **Edytuj** menu, w obszarze **wie
 
 - [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refaktoryzacja kodu w programie Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Zablokuj zaznaczenie (Visual Studio dla komputerów Mac)](/visualstudio/mac/block-selection)

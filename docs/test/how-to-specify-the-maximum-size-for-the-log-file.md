@@ -1,5 +1,5 @@
 ---
-title: Rozmiar pliku dziennika dla testów obciążenia w programie Visual Studio
+title: Rozmiar pliku dziennika dla testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 29329cb1403745b80d68670f5316ce570582d72c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379400"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067278"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Porady: określanie maksymalnego rozmiaru pliku dziennika dla testów obciążenia
 
 Domyślnie maksymalny rozmiar pliku dziennika, który jest używany do testów obciążenia jest równa 20 megabajtów. Tę wartość można zmienić, edytując plik konfiguracyjny skojarzony z usługą kontrolera.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-log-file-size-for-load-test"></a>Określ maksymalny rozmiar pliku dziennika dla testu obciążenia
 

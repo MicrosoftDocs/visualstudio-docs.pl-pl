@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IDE | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Program Visual Studio 2015 | Dokumentacja firmy Microsoft
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852716"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062486"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Visual Studio umożliwia tworzenie wiele rodzajów aplikacji, od prostych sklepu
 
 - Gier i aplikacji intensywnie korzystających z grafiki dla różnych urządzeń Windows, w tym Xbox, za pomocą programu DirectX.
 
-Visual Studio domyślnie zapewnia obsługę języka C#, C i C++, JavaScript, F # i Visual Basic. Program Visual Studio działa i dobrze integruje się z aplikacji innych firm, takich jak Unity za pośrednictwem [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozszerzenie i Apache Cordova za pośrednictwem [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Można rozszerzyć Visual Studio samodzielnie, tworząc niestandardowe narzędzia, które wykonywały wyspecjalizowane zadania.
+Program Visual Studio domyślnie udostępnia obsługę C#, C i C++, JavaScript, F#i Visual Basic. Program Visual Studio działa i dobrze integruje się z aplikacji innych firm, takich jak Unity za pośrednictwem [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozszerzenie i Apache Cordova za pośrednictwem [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Można rozszerzyć Visual Studio samodzielnie, tworząc niestandardowe narzędzia, które wykonywały wyspecjalizowane zadania.
 
 Jeśli nie znasz programu Visual Studio przed, w opanowaniu podstaw za pomocą naszych [Rozpoczynanie pracy opracowywanie zawartości przy użyciu programu Visual Studio](../ide/get-started-developing-with-visual-studio.md) wskazówki i samouczki.
 
@@ -108,7 +108,7 @@ Jeśli chcesz dowiedzieć się o nowych funkcjach w programie Visual Studio 2015
  Aby uzyskać więcej informacji, zobacz [projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).
 
 ## <a name="writing-navigating-and-understanding-code"></a>Pisania, nawigowania i rozumienie kodu
- Jeśli jesteś deweloperem, okno edytora jest będzie prawdopodobnie spędzisz tutaj większość czasu. Visual Studio zawiera edytorów języka C#, C++, Visual Basic, JavaScript, XML, HTML, CSS i F # i innych firm oferty wtyczek edytorów (i kompilatory) w przypadku wielu innych języków.
+ Jeśli jesteś deweloperem, okno edytora jest będzie prawdopodobnie spędzisz tutaj większość czasu. Program Visual Studio obejmuje edytory dla C#, C++, Visual Basic, JavaScript, XML, HTML, CSS i F#, i innych firm stanowią wtyczek edytorów (i kompilatory) dla innych języków.
 
  Można edytować poszczególne pliki w edytorze tekstów, klikając **pliku &#124; Otwórz &#124; pliku.** Aby edytować pliki w otwartym projekcie, należy kliknąć nazwę pliku w Eksploratorze rozwiązań. Jest w trybie kolorowym kod i schemat kolorów można spersonalizować, wpisując "Kolory" Szybkie uruchamianie. Może mieć wiele systemu windows z kartami edytora tekstu Otwórz naraz. Każde okno podzielić się niezależnie. Edytor tekstu można również uruchomić w trybie pełnoekranowym.
 

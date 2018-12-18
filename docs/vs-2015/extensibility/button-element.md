@@ -16,12 +16,12 @@ ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ebf62f5c5a1a6ac2bfea03834fb0cddb38834e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20673b87972c51a6cc0e3ce07553a0a721d7cca3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179541"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733312"
 ---
 # <a name="button-element"></a>Button, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyci
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagane. Identyfikator GUID/ID identyfikator polecenia.|  
+|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
+|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|  
 |priorytet|Opcjonalna. Wartość liczbowa określająca priorytet.|  
 |— typ|Opcjonalna. Wartość wyliczana, który określa typ przycisku.<br /><br /> Jeśli nie zostanie podana, używa przycisku.<br /><br /> Przycisk<br /> Standardowe polecenie, które pojawia się na paskach narzędzi (zwykle jako ikony przycisku), menu i menu kontekstowego.<br /><br /> Przycisk menu<br /> Element menu, który nie jest wykonywane polecenie, ale daje innym menu.<br /><br /> SplitDropDown<br /> Formanty, takie jak przyciski Cofnij i ponów na standardowym pasku narzędzi, które są dostępne w programie Microsoft Word.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
@@ -58,8 +58,8 @@ Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyci
 |-------------|-----------------|  
 |[Parent, element](../extensibility/parent-element.md)|Opcjonalna. Elementu nadrzędnego przycisku.|  
 |[Icon, element](../extensibility/icon-element.md)|Opcjonalna. Ikona skojarzone z nim.|  
-|[Command Flag, element](../extensibility/command-flag-element.md)|Wymagane. Prawidłowe wartości CommandFlag dla przycisku, to w następujący sposób.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly.|  
-|[Strings, element](../extensibility/strings-element.md)|Wymagane. Element podrzędny [ButtonText, Element](../extensibility/buttontext-element.md) musi być zdefiniowany.|  
+|[Command Flag, element](../extensibility/command-flag-element.md)|Wymagana. Prawidłowe wartości CommandFlag dla przycisku, to w następujący sposób.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly.|  
+|[Strings, element](../extensibility/strings-element.md)|Wymagana. Element podrzędny [ButtonText, Element](../extensibility/buttontext-element.md) musi być zdefiniowany.|  
 |Adnotacja|Opcjonalny komentarz.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  

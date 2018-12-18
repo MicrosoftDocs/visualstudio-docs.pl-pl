@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811584"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672758"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office development w programie Visual Studio)
   Użyj **Kreatora publikacji** Aby skopiować pliki rozwiązania do określonej lokalizacji, Utwórz pliki manifestu i Utwórz program instalacyjny.  
@@ -53,7 +53,7 @@ ms.locfileid: "49811584"
 >  Jeśli na komputerze docelowym systemem Windows Vista jest więcej istotnych kwestii. Musisz być administratorem na komputerze Windows Vista do korzystania z opcji publikowania lokalnych. Ponadto domyślna lokalizacja to zawsze *publikowania\\*  katalogu, niezależnie od tego, czy zostały zainstalowane usługi IIS.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Co to jest domyślna ścieżka instalacji na komputerach użytkowników końcowych?  
- Ścieżka instalacji jest opcjonalne. Można ustawić ścieżki instalacji później, jeśli użytkownik sobie tego życzy. Aby uzyskać więcej informacji, zobacz [jak: zmienić ścieżkę instalacji rozwiązania do pakietu Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Ścieżka instalacji jest opcjonalne. Można ustawić ścieżki instalacji później, jeśli użytkownik sobie tego życzy. Aby uzyskać więcej informacji, zobacz [jak: zmienić ścieżkę instalacji rozwiązania do pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  Ścieżka instalacji jest katalog, z którego użytkownik zainstaluje dostosowania. Należy również ścieżki, który rozwiązanie będzie używany do sprawdzenia aktualizacji. **Kreatora publikacji** nie wdrażają rozwiązania do tej lokalizacji, chyba, że ścieżka jest taka sama jak wprowadzona w **Określ lokalizację do publikowania tej aplikacji** pole na poprzedniej stronie.  
   

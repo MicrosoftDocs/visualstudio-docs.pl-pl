@@ -1,22 +1,23 @@
 ---
-title: Praca z C++ i Python
+title: Pisanie rozszerzeń języka C++ dla języka Python
 description: Przewodnik po Tworzenie rozszerzenia C++ dla języka Python za pomocą programu Visual Studio, CPython i PyBind11, włączając debugowanie w trybie mieszanym.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443652"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053480"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -404,7 +405,7 @@ Istnieją różne oznacza, że do tworzenia rozszerzenia języka Python, zgodnie
 | --- | --- | --- | --- | --- |
 | Moduły rozszerzenia języka C/C++ dla języka CPython | 1991 | Standardowa biblioteka | [Szczegółową dokumentację i samouczki](https://docs.python.org/3/c-api/). Łączna liczba kontroli. | Kompilacja, przenoszenia odwoływać się do zarządzania. Wysoka znajomość języka C. |
 | [PyBind11](https://github.com/pybind/pybind11) (zalecane dla języka C++) | 2015 |  | Lekkie, tylko nagłówek Biblioteka do tworzenia powiązań języka Python z istniejącego kodu C++. Kilka zależności. Zgodność PyPy. | Nowsze, mniej dojrzałe. Dużego wykorzystania funkcji C ++ 11. Krótką listę wymagań obsługiwane kompilatory (Visual Studio jest dołączony). |
-| Cython (Recommnded dla języka C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Podobne języka Python. Wysoce dojrzała. O wysokiej wydajności. | Kompilacja, nowej składni, nowe łańcucha narzędzi. |
+| Cython (Recommnded dla języka C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Podobne języka Python. Wysoce dojrzała. O wysokiej wydajności. | Kompilacja, nowej składni, nowe łańcucha narzędzi. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Działa z niemal każdego kompilatora języka C++. | Pakiet biblioteki; dużych i złożonych zawiera wiele obejścia stare kompilatory. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Nie kompilacja powszechną dostępność. | Uzyskiwanie dostępu do i mutacja struktur C skomplikowana względem i podatne. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generowanie jednocześnie powiązania dla wielu języków. | Nadmiernego obciążenia, jeśli Python jest jedynym miejscem docelowym. |

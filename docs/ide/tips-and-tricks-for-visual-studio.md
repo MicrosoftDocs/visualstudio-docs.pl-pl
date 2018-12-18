@@ -1,6 +1,6 @@
 ---
-title: Skróty klawiaturowe w usłudze Visual Studio
-ms.date: 06/21/2017
+title: Skróty klawiaturowe
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a2b2c520a98d1bc3fa9d162889794ed1524d7d82
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321284"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062273"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Skróty klawiaturowe dla programu Visual Studio
 
@@ -22,6 +22,9 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 
 > [!TIP]
 > Skróty, wymienione w tym miejscu są podzbiorem skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [typowych skrótów klawiaturowych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Zarządzanie oknem
 
@@ -73,6 +76,11 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 
 |Polecenie|Skrót|Dostępność wersji|
 |-|-|-|
+|Przejdź do wszystkich|**CTRL**+**T**|
+|Przejdź do ostatnio używane pliki|**CTRL**+**T**,**języka R**|
+|Daszek wielu wielu punkty wstawienia|**CTRL**+**Alt**+**kliknij**|
+|Daszek wielu Dodaj wybrane elementy pasujące|**SHIFT**+**Alt**+**dodatki**|
+|Formatuj dokument|**CTRL**+**K**,**D**|Visual Studio 2017 w wersji 15.8|
 |Tryb sugestii IntelliSense|**CTRL**+**Alt**+**miejsca** (przełącznik)||
 |Wymuszaj pokazywanie IntelliSense|**CTRL**+**"j"**||
 |Szybkie akcje|**Ctrl**+**.**||
@@ -95,6 +103,9 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 |Przechodzenie między wieloma oknami definicji wglądu|**CTRL**+**Alt** + **-** i **Ctrl**+**Alt**+**=**||
 |Przechodzenie między wieloma wynikami wyglądu|**F8** i **Shift**+**F8**||
 |Przełączanie się między oknem edytora kodu i okna Zobacz definicję|**SHIFT**+**Esc**||
+|Przejdź do otaczający blok|**CTRL**+**Alt**+**UpArrow**|
+|Przejdź do następnego/poprzedniego wydania|**ALT**+**PgUp**/**PgDn**|
+|Menu kontekstowe nawigacji|**ALT**+**`**|
 
 ## <a name="toolbars"></a>Paski narzędzi
 
@@ -128,4 +139,5 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 
 - [Ułatwienia dostępu, porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md)
 - [Skróty klawiaturowe (usługom DevOps platformy Azure i TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Program Visual Studio — porady i wskazówki blog](http://blogs.msdn.com/b/zainnab)
+- [Program Visual Studio — porady i wskazówki blog](https://blogs.msdn.microsoft.com/zainnab/)
+- [Typowe skróty klawiaturowe w programie Visual Studio dla komputerów Mac](/visualstudio/mac/keyboard-shortcuts)

@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji Node.js i React
 description: W tym samouczku utworzysz aplikację przy użyciu narzędzia Node.js dla programu Visual Studio
 ms.custom: mvc
-ms.date: 09/06/2018
+ms.date: 11/01/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3cc92ba28246358f819e6086d19141b2a68072f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823739"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750790"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -60,7 +60,7 @@ webpack pakiety pliki JavaScript, dzięki czemu mogą działać w przeglądarce.
 
 * Konieczne jest posiadanie programu Visual Studio 2017 i obciążenie programowania Node.js.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
     Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
 
@@ -121,18 +121,18 @@ Ta aplikacja wymaga numeru moduły npm, by działała poprawnie.
 
     Projekt *package.json* plik został zaktualizowany o nowe informacje o pakiecie, łącznie z wersją pakietu.
 
-1. Zamiast używania interfejsu użytkownika, aby wyszukać i dodać pozostałe pakiety pojedynczo, wklej następujący kod do pliku package.json. Aby to zrobić, Dodaj `dependencies` sekcji przy użyciu tego kodu:
+1. Zamiast przy użyciu interfejsu użytkownika do wyszukania i dodania pozostałe pakiety jednego naraz, wklej następujący kod do *package.json*. Aby to zrobić, Dodaj `dependencies` sekcji przy użyciu tego kodu:
 
     ```json
     "dependencies": {
-      "express": "~4.16.3",
+      "express": "~4.16.4",
       "path": "~0.12.7",
-      "react": "~16.4.2",
-      "react-dom": "~16.4.2",
-      "ts-loader": "~4.5.0",
-      "typescript": "~2.9.2",
-      "webpack": "~4.17.1",
-      "webpack-cli": "~2.1.5"
+      "react": "~16.6.0",
+      "react-dom": "~16.6.0",
+      "ts-loader": "~5.3.0",
+      "typescript": "~3.1.5",
+      "webpack": "~4.23.1",
+      "webpack-cli": "~3.1.2"
     }
     ```
 
@@ -202,7 +202,7 @@ Dla tej prostej aplikacji możesz dodawać nowe pliki projektu, w katalogu głó
     var React = require('react');
     var ReactDOM = require('react-dom');
 
-    class Hello extends React.Component {
+    export class Hello extends React.Component {
         render() {
             return (
                 <h1>Welcome to React!!</h1>

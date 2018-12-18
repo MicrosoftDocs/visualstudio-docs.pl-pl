@@ -43,15 +43,15 @@ helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b066ed3171ebd59d5c921fc795b1478bb9d2df32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925399"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765962"
 ---
 # <a name="using-breakpoints"></a>Używanie punktów przerwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,8 +171,8 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
   
    Warunek może być dowolnym prawidłowym wyrażeniem rozpoznawanym przez debuger. Aby uzyskać więcej informacji dotyczących prawidłowych wyrażeń, zobacz [wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md).  
   
-## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Za pomocą identyfikatorów obiektów w warunkach punkt przerwania (C# i F #)  
- Istnieją momenty, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu; na przykład można dowiedzieć się, dlaczego obiekt został wstawiony więcej niż jeden raz w kolekcji. W języku C# i F #, można utworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  Aby utworzyć identyfikator obiektu, wykonaj następujące czynności:  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Za pomocą identyfikatorów obiektów w warunkach punkt przerwania (C# i F#)  
+ Istnieją momenty, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu; na przykład można dowiedzieć się, dlaczego obiekt został wstawiony więcej niż jeden raz w kolekcji. W C# i F#, można tworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  Aby utworzyć identyfikator obiektu, wykonaj następujące czynności:  
   
 1. Ustaw punkt przerwania w kodzie na pewien czas, po utworzeniu obiektu.  
   

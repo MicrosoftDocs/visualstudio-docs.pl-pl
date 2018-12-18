@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914320"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722218"
 ---
 # <a name="expressions-in-the-debugger"></a>Wyrażenia w debugerze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają p
   
  Poniższe sekcje zawierają szczegółowe informacje o wyrażeniach w różnych językach.  
   
-## <a name="f-expressions-are-not-supported"></a>Wyrażeń języka F # nie są obsługiwane.  
- Wyrażeń języka F # nie są rozpoznawane. Jeśli debugujesz kod F # należy do translacji wyrażenia w języku C# składni przed rozpoczęciem wprowadzania wyrażeń w debugerze okno lub okno dialogowe. Podczas tłumaczenia jest wyrażenia z języka F # do języka C#, należy pamiętać, że C# używa `==` operatora do testowania pod kątem równości, podczas gdy F # używa pojedynczego `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#wyrażenia nie są obsługiwane.  
+ F#wyrażenia nie są rozpoznawane. Jeśli debugujesz F# kodu, potrzebne jest tłumaczenie wyrażenia do C# składni przed rozpoczęciem wprowadzania wyrażeń w debugerze okno lub okno dialogowe. Podczas tłumaczenia wyrażeń z F# do C#, należy koniecznie pamiętać, że C# używa `==` operatora do testowania pod kątem równości, podczas F# używa pojedynczego `=`.  
   
 ## <a name="c-expressions"></a>Wyrażeń języka C++  
  Aby dowiedzieć się, jak przy użyciu operatorów kontekstu przy użyciu wyrażenia w języku C++, zobacz [kontekstu — Operator (C++)](../debugger/context-operator-cpp.md).  

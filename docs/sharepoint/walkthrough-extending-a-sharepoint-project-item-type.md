@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220329"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295725"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: Rozszerzanie typu elementu projektu SharePoint
   Możesz użyć **Model usługi łączności danych biznesowych** elementu projektu, aby utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie podczas tworzenia modelu przy użyciu tego elementu projektu danych w modelu jest niewidoczne dla użytkowników. Należy także utworzyć listy zewnętrznej w SharePoint, aby umożliwić użytkownikom wyświetlanie danych.  
@@ -164,7 +164,7 @@ ms.locfileid: "50220329"
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku source.extension.vsixmanifest w projekcie GenerateExternalDataLists, a następnie wybierz **Otwórz**.  
   
-     Program Visual Studio otwiera plik w edytorze manifestu. Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest jest wymagany przez wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Program Visual Studio otwiera plik w edytorze manifestu. Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest jest wymagany przez wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  W **nazwa produktu** wprowadź **Generator listy danych zewnętrznych**.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "50220329"
 6.  W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   

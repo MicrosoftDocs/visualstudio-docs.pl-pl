@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676206"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672229"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
 
@@ -44,7 +44,7 @@ Zainstaluj obsługiwaną wersję programu Visual Studio, .NET Framework i Micros
 
      Aby upewnić się, że te narzędzia są zainstalowane, uruchom Instalatora programu Visual Studio i wybierz polecenie **Modyfikuj** przycisku. Wybierz **Microsoft Office Developer Tools** pole wyboru, a następnie wybierz **aktualizacji** przycisku.
 
-- Upewnij się, że nie używasz wersji pakietu Office, który został dostarczony przez kliknięcie do uruchomienia. Zobacz [jak: Sprawdź, czy program Outlook jest aplikacją kliknij polecenie do uruchomienia na komputerze](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Upewnij się, że nie używasz wersji pakietu Office, który został dostarczony przez kliknięcie do uruchomienia. Zobacz [jak: Sprawdź, czy program Outlook jest aplikacją kliknij polecenie do uruchomienia na komputerze](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Upewnij się, że używasz tylko jedna wersja pakietu Microsoft Office.
 

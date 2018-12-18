@@ -1,5 +1,5 @@
 ---
-title: Analizatory Roslyn w programie Visual Studio
+title: Analiza kodu za pomocą analizatorów Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511425"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948845"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Omówienie analizatory platformie kompilatora .NET
 
-Visual Studio 2017 zawiera zestaw wbudowanych analizatory platformie kompilatora .NET, analizujących kodu C# lub Visual Basic. Można zainstalować dodatkowe analizatory jako rozszerzenie programu Visual Studio lub na poszczególnych projektów jako pakiet NuGet. Analizatory Przyjrzyj się styl kodu, jakość kodu i łatwość utrzymania, projekt kodu i inne problemy.
+Visual Studio 2017 zawiera zestaw wbudowanych analizatory platformie kompilatora .NET, analizujących kodu C# lub Visual Basic. Analizatory Przyjrzyj się styl kodu, jakość kodu i łatwość utrzymania, projekt kodu i inne problemy. Można zainstalować dodatkowe analizatory jako rozszerzenie programu Visual Studio lub na poszczególnych projektów jako pakiet NuGet.
 
 Jeśli naruszeń zasady zostaną znalezione przez analizator, są zgłaszane zarówno w edytorze kodu jako *falista* kodem naruszającym, a następnie w **lista błędów**.
 

@@ -1,5 +1,5 @@
 ---
-title: Zrozumienie współtworzenia i dodatki
+title: Opis współtworzenia i dodatków
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 39098a56b3ff17b1e491c15f3b6119978a28a2ca
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768173"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671121"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Zrozumienie współtworzenia i dodatki
+# <a name="understand-coauthoring-and-add-ins"></a>Opis współtworzenia i dodatków
 
-Współtworzenia jest funkcją pulpitu programu Excel dla systemu Windows, który służy do edytowania skoroszytu obsługiwanego w chmurze (to znaczy, OneDrive, usługi OneDrive dla firm lub SharePoint Online) równocześnie z innymi użytkownikami. Dzięki tej funkcji konieczne może być dostosować rozwiązania programu Excel w celu zapewnienia, że działa on sprawnie nawet wtedy, gdy użytkownicy są współtworzenia. Zobacz [o współtworzenia w programie Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
+Współtworzenia jest funkcją programu Excel dla Windows, która umożliwia edytowanie skoroszytu obsługiwanego w chmurze (to znaczy, OneDrive, usługi OneDrive dla firm lub SharePoint Online) równocześnie z innymi użytkownikami. Dzięki dodaniu tej funkcji może być konieczne wprowadź zmiany do swojego rozwiązania programu Excel w celu zapewnienia, że działa sprawnie nawet wtedy, gdy użytkownicy są współtworzenia. Zobacz [dotyczące współtworzenia w programie Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Uwaga: Współtworzenia dla programu Excel pulpitu systemu Windows została wprowadzona w 2017 i jest obecnie dostępny dla subskrybentów usługi Office 365. Użytkowników, którzy kupili bezterminowo licencji do pakietu Office 2016 lub starszym obecnie nie masz dostępu do funkcji coauthoring. (Excel Online programu Excel dla systemu Android, programu Excel dla systemu iOS i Excel Mobile w Sklepie Windows obsługują także współtworzenia).
+Uwaga: Współtworzenia for Windows Desktop Excel została wprowadzona w 2017 r. i jest obecnie dostępna dla subskrybentów usługi Office 365. Użytkownicy, którzy zakupić licencję bezterminową do pakietu Office 2016 lub starszym obecnie nie masz dostępu do funkcji coauthoring. (Excel Online programu Excel dla systemu Android, programu Excel dla systemu iOS, a Mobile programu Excel w Store Windows obsługują także współtworzenia).
 
 ## <a name="see-also"></a>Zobacz także
 [Rozwiązania programu Excel](./excel-solutions.md)

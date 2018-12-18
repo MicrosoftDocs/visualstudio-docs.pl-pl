@@ -1,5 +1,5 @@
 ---
-title: 'Przykładowy plik XSD: relacji'
+title: 'Przykładowy plik XSD: relacje'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -17,9 +17,9 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572777"
 ---
-# <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: relacji
+# <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: relacje
 
-Następujący plik XSD jest używany w przykładach różnych w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu z adnotacjami i dokumentacji.
+Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu, adnotacji i dokumentację.
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">

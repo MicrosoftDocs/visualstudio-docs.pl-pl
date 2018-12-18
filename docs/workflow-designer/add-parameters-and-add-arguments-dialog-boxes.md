@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — Dodaj parametry i Dodaj argumenty okien dialogowych
+title: Projektant przepływu pracy — Dodawanie parametrów i dodawanie argumentów, okno dialogowe
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,28 +12,28 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 67e81423bbd14065249cf7fe91503ab280ec2d8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b01e08ee5579f5422e8e51562444302d685d58d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967641"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789047"
 ---
-# <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dodaj parametry i Dodaj argumenty okien dialogowych
+# <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dodawanie parametrów i Dodawanie argumentów, okna dialogowe
 
-W poniższej tabeli opisano elementy interfejsu użytkownika **Dodaj parametry** używane przez okno dialogowe <xref:System.Activities.Statements.InvokeMethod> projektanta:
+W poniższej tabeli opisano elementy interfejsu użytkownika **Dodawanie parametrów** okno dialogowe, które posługują się <xref:System.Activities.Statements.InvokeMethod> projektanta:
 
 |||
 |-|-|
-|**Kierunek**|Określa, czy parametr reprezentuje przepływ danych do metody, poza metody lub oba.|
+|**Kierunek**|Określa, czy parametr reprezentuje przepływ danych do metody, poza metody i / lub.|
 |**Typ**|Nazwa typu nowego parametru.|
-|**Wartość**|Wyrażenia języka VB., która jest używana do przypisywania wartości domyślnej nowy parametr|
+|**Wartość**|Wyrażenie języka Visual Basic, które służą do przypisywania wartości domyślnej na nowy parametr|
 
-W poniższej tabeli opisano elementy interfejsu użytkownika **Dodaj argumenty** używane przez okno dialogowe <xref:System.Activities.Statements.InvokeDelegate> projektanta:
+W poniższej tabeli opisano elementy interfejsu użytkownika **Dodaj argumenty** okno dialogowe, które posługują się <xref:System.Activities.Statements.InvokeDelegate> projektanta:
 
 |||
 |-|-|
 |**Nazwa**|Nazwa argumentu.|
-|**Kierunek**|Określa, czy argument reprezentuje przepływ danych do delegata, poza delegat lub oba.|
-|**Typ**|Nazwa typu argumentu, nowy.|
-|**Wartość**|Wartość do użycia dla tego wystąpienia argumentu delegata.|
+|**Kierunek**|Określa, czy argument reprezentuje przepływ danych do delegata, poza delegata lub obie.|
+|**Typ**|Nazwa typu nowy argument.|
+|**Wartość**|Wartość, która ma być używany dla tego wystąpienia argument delegata.|

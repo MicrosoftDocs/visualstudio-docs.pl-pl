@@ -1,6 +1,6 @@
 ---
-title: 'Porady: Zarządzanie zawijaniem wierszy w Edytorze'
-ms.date: 11/04/2016
+title: Zawijanie wyrazów
+ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,16 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42623996"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349117"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Porady: Zarządzanie zawijaniem wierszy w edytorze
 
 Można ustawić lub wyczyścić **zawijanie** opcji. Gdy ta opcja jest ustawiona, część długi wiersz, który wykracza poza bieżącym szerokość okna edytora kodu jest wyświetlany w następnym wierszu. Po wyczyszczeniu tej opcji, na przykład w celu ułatwienia korzystania numerowanie wierszy można przewijać po prawej stronie, aby zobaczyć zakończenia długie wiersze.
+
+> [!NOTE]
+> Ten temat dotyczy tylko programu Visual Studio w Windows. Visual Studio dla komputerów Mac nie obsługuje obecnie zawijanie wyrazów.
 
 ## <a name="to-set-word-wrap-preferences"></a>Można ustawić preferencje zawijania programu word
 

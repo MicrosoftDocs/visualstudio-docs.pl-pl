@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191324"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782482"
 ---
 # <a name="autos-and-locals-windows"></a>Zmiennych automatycznych i zmiennych lokalnych Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "49191324"
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Jakie zmienne są wyświetlane w oknie Autos?  
- Możesz użyć **Autos** okna w kodzie C#, Visual Basic i C++. **Autos** okno nie obsługuje języka JavaScript lub F #.  
+ Możesz użyć **Autos** okna w kodzie C#, Visual Basic i C++. **Autos** okno nie obsługuje języka JavaScript lub F#.  
   
  W języku C# i Visual Basic **Autos** dowolnej zmiennej w wierszu bieżącej lub poprzedniej stosowany jest wyświetlana w oknie. Na przykład, jeśli zadeklarujesz cztery zmienne i ustaw je w następujący sposób:  
   

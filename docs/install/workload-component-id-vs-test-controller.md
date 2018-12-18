@@ -1,11 +1,12 @@
 ---
 title: Visual Studio Test Controller 2017 obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia można rozprowadzać zautomatyzowane testy na wielu komputerach
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: 99225fc59211dd84af533e5c6825f429daf7ad3e
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139035"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048450"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 składników katalogu
 

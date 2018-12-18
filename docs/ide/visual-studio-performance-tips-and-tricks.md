@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672928"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady dotyczące wydajności programu Visual Studio i wskazówki
 
@@ -27,7 +27,7 @@ Zalecenia dotyczące wydajności programu Visual Studio są przeznaczone dla syt
 
 Po uaktualnieniu do wersji 64-bitowego systemu z 32-bitowej wersji systemu Windows możesz rozwinąć ilość dostępnej pamięci wirtualnej w programie Visual Studio, od 2 do 4 GB. Dzięki temu Visual Studio, aby obsłużyć znacznie większych obciążeń, mimo że jest proces 32-bitowy.
 
-Aby uzyskać więcej informacji, zobacz [limity pamięci](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) i [/largeaddressaware w systemie Windows 64-bitowych](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Aby uzyskać więcej informacji, zobacz [limity pamięci](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) i [/largeaddressaware w systemie Windows 64-bitowych](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Wyłącz automatyczne plików przywracania
 

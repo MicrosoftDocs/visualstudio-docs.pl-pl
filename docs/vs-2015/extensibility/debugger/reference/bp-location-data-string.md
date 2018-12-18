@@ -17,12 +17,12 @@ ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92fbda278b0e0c4f4ee5a39cc13f80b5fbd2bbb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4075244c044572a53be8cd859a3155ef53015a25
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889090"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743545"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Używana do ustawiania punktów przerwania danych, które są oparte na ciąg, k
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-typedef struct _BP_LOCATION_DATA_STRING {   
+typedef struct _BP_LOCATION_DATA_STRING {   
    IDebugThread2* pThread;  
    BSTR           bstrContext;  
    BSTR           bstrDataExpr;  

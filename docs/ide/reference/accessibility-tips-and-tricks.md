@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811844"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349208"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 
@@ -26,6 +26,9 @@ ms.locfileid: "49811844"
 > Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
 
 Visual Studio ma wbudowanych funkcji ułatwień dostępu, które są zgodne z czytnikami ekranu i innych technologii pomocniczych. Ten temat zawiera listę typowych kombinacje klawiszy skrótu można używać do wykonywania zadań przy użyciu tylko klawiatury i zawiera informacje o używaniu motywy o wysokim kontraście poprawi widoczność. Także pokazuje jak ujawnić przydatnych informacji o kodzie za pomocą adnotacji i jak ustawić dźwięku wskazówek dla kompilacji i punkt przerwania zdarzenia.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [ułatwień dostępu dla programu Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
 
 ## <a name="save-your-ide-settings"></a>Zapisz ustawienia IDE
 
@@ -104,3 +107,4 @@ Poniżej przedstawiono sposób.
 * [Porady: Dostosowywanie menu i pasków zadań w programie Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft poświęconą ułatwieniom dostępu](https://www.microsoft.com/Accessibility)
+* [Ułatwienia dostępu (Visual Studio dla komputerów Mac)](/visualstudio/mac/accessibility)

@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczenia w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Zabezpieczenia
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,35 +17,28 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 17f34f3bdef587b679789d4ebb34a4b15bd4cf63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae5db15fda1914d52be192a516d70704d2ad3cf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198175"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061749"
 ---
 # <a name="security-in-visual-studio"></a>Zabezpieczenia w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Należy rozważyć bezpieczeństwo we wszystkich aspektach programowania aplikacji, od projektowania do wdrożenia. Rozpocznij od uruchamianie programu Visual Studio w bezpieczny sposób. Zobacz [uprawnienia użytkownika](../ide/user-permissions-and-visual-studio.md).  
-  
- Aby efektywnie rozwijać bezpieczne aplikacje, powinieneś rozumieć podstawy pojęć związanych z bezpieczeństwem i funkcji zabezpieczeń platform, dla których tworzysz. Należy również mieć świadomość bezpiecznych technik kodowania.  
-  
-## <a name="understanding-security"></a>Opis zabezpieczeń  
- [Zabezpieczenia](http://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6)  
- Opisuje zabezpieczenia dostępu do kodu .NET Framework, zabezpieczenia oparte na rolach, zasady zabezpieczeń i narzędzia zabezpieczeń.  
-  
- [Obrony kodu przy użyciu dziesięciu najlepszych wskazówek dotyczących bezpieczeństwa, które każdy deweloper musi znać](http://go.microsoft.com/fwlink/?LinkId=72877)  
- W tym artykule opisano problemy, na które należy zwrócić uwagę, aby nie naruszyć danych lub systemu.  
-  
-## <a name="coding-for-security"></a>Bezpieczne kodowanie  
- Większość błędów kodowania, które powodują powstanie luk w zabezpieczeniach, występuje, ponieważ deweloperzy mogą stosować błędne założenia podczas pracy z danymi wejściowymi użytkownika lub ponieważ nie w pełni rozumieją platformę, dla której tworzą.  
-  
- [Wytyczne dotyczące bezpiecznego programowania](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)  
- Zawiera wskazówki dotyczące klasyfikacji składników, aby rozwiązywać problemy z bezpieczeństwem.  
-  
- [Najlepsze rozwiązania dotyczące zabezpieczeń](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
- W tym artykule omówiono przepełnienia bufora oraz pełny obraz funkcji kontroli zabezpieczeń Microsoft Visual C++, dostarczanej przez flagę czasu kompilacji /GS.
+Należy rozważyć bezpieczeństwo we wszystkich aspektach programowania aplikacji, od projektowania do wdrożenia. Rozpocznij od uruchamianie programu Visual Studio w bezpieczny sposób. Zobacz [uprawnienia użytkownika](../ide/user-permissions-and-visual-studio.md).
 
+ Aby efektywnie rozwijać bezpieczne aplikacje, powinieneś rozumieć podstawy pojęć związanych z bezpieczeństwem i funkcji zabezpieczeń platform, dla których tworzysz. Należy również mieć świadomość bezpiecznych technik kodowania.
 
+## <a name="understanding-security"></a>Opis zabezpieczeń
+ [Zabezpieczenia](http://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6) zabezpieczenia dostępu kodu w tym artykule opisano .NET Framework, zabezpieczenia oparte na rolach, zasady zabezpieczeń i narzędzia zabezpieczeń.
 
+ [Obrony kodu z pierwszych dziesięciu zabezpieczeń porady co deweloper musi znać](http://go.microsoft.com/fwlink/?LinkId=72877) opisano problemy, które należy zwrócić uwagę, tak aby nie naruszyć danych lub system.
+
+## <a name="coding-for-security"></a>Bezpieczne kodowanie
+ Większość błędów kodowania, które powodują powstanie luk w zabezpieczeniach, występuje, ponieważ deweloperzy mogą stosować błędne założenia podczas pracy z danymi wejściowymi użytkownika lub ponieważ nie w pełni rozumieją platformę, dla której tworzą.
+
+ [Kodowanie wytyczne dotyczące bezpiecznego](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) zawiera wskazówki dotyczące klasyfikacji składników, aby rozwiązywać problemy z bezpieczeństwem.
+
+ [Najlepsze rozwiązania dotyczące zabezpieczeń](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Discusses przepełnienia bufora oraz pełny obraz zabezpieczeń Microsoft Visual C++ umożliwia sprawdzenie funkcji dostarczanej przez flagę czasu kompilacji/GS.

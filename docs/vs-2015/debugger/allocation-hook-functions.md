@@ -26,15 +26,15 @@ helpviewer_keywords:
 - hooks, allocation
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2770898d630cbd4b428b87d8362f5aca31f6bca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d201f22d461a04890899ac1cebc177cb1521555
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271459"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743355"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "49271459"
 Funkcji podłączania alokacji zainstalowane za pomocą [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), jest wywoływana za każdym razem, gdy przydzielone, ponownie przydzielić lub zwolnienie pamięci. Ten typ punktu zaczepienia może służyć do wielu różnych celów. Użyj go, aby przetestować, jak aplikacja obsługuje sytuacje braku pamięci, na przykład do zbadania wzorców przydziału lub do rejestrowania informacji o alokacji do późniejszej analizy.  
   
 > [!NOTE]
->  Należy pamiętać o ograniczeń dotyczących używania funkcji biblioteki wykonawczej języka C w funkcji podłączania alokacji, opisanego w [punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+>  Należy pamiętać o ograniczeniu dotyczącym używania funkcji biblioteki wykonawczej języka C w funkcji punktu zaczepienia alokacji, opisanego w artykule [Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
  Funkcji podłączania alokacji powinny mieć prototypu, jak pokazano poniżej:  
   

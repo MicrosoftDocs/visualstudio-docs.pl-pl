@@ -1,22 +1,23 @@
 ---
 title: Dokumentacja okna środowiska Python
 description: Szczegółowe informacje dotyczące każdej z kart, które są wyświetlane w oknie środowiska Python w programie Visual Studio.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996080"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051432"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Dokumentacja karty okna środowiska Python
 

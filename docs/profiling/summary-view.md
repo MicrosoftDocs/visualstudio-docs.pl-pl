@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929806"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220839"
 ---
 # <a name="summary-view"></a>Widok podsumowania
 Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub obiekty podczas uruchomienia profilowania. Ten widok zawiera wykres osi czasu i co najmniej dwóch list najbardziej kosztowne funkcje lub obiekty w oparciu metryki wydajności metody profilowania. Dane w tym widoku jest zależna od metody profilowania, który został użyty (próbkowanie, Instrumentacja lub współbieżności) i tego, czy zebrano alokacji pamięci .NET.  
@@ -52,8 +52,8 @@ Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub
 | **Pokaż przycięte drzewo wywołań** | Wyświetla widok drzewa wywołań najbardziej kosztowne wykonania ścieżki. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołania](../profiling/call-tree-view.md). |
 | **Pokaż aktywne wiersze** | Nie jest dostępna dla danych, które zostały zebrane przy użyciu metody Instrumentacji profilowania. Wyświetla najbardziej kosztowne wierszy kodu źródłowego w widoku wierszy. Aby uzyskać więcej informacji, zobacz [widok linii](../profiling/lines-view.md). |
 | **Porównanie raportów** | Wyświetla **wybierz pliki analizy porównanie** okno dialogowe, w którym można określić inny plik danych profilowania do porównania z bieżącym pliku. Aby uzyskać więcej informacji, zobacz [porównywanie plików danych dotyczących wydajności](../profiling/comparing-performance-data-files.md). |
-| **Eksportuj dane raportu** | Wyświetla **Eksportowanie raportu** okno dialogowe, w którym można określić jeden lub więcej widoków raportu można zapisać w formacie wartości rozdzielanych przecinkami (.csv) lub plików XML. Aby uzyskać więcej informacji, zobacz [jak: narzędzi profilowania eksportowanie raportów](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451). |
-| **Zapisz przeanalizowany raport** | Zapisuje bieżący plik danych profilowania w postaci pliku .vsps, który zostanie otwarty szybciej w interfejsie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [porady: zapisywanie analizowane plików danych profilowania](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556). |
+| **Eksportuj dane raportu** | Wyświetla **Eksportowanie raportu** okno dialogowe, w którym można określić jeden lub więcej widoków raportu można zapisać w formacie wartości rozdzielanych przecinkami (.csv) lub plików XML. Aby uzyskać więcej informacji, zobacz [jak: narzędzi profilowania eksportowanie raportów](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
+| **Zapisz przeanalizowany raport** | Zapisuje bieżący plik danych profilowania w postaci pliku .vsps, który zostanie otwarty szybciej w interfejsie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [porady: zapisywanie analizowane plików danych profilowania](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
 | **Filtruj dane raportu** | Wyświetla profilowania okienko filtru raportu, na której można określić kryteria, aby ograniczyć dane w widoku raportu. Aby uzyskać więcej informacji, zobacz [filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md) |
 | **Przełącz widok pełnoekranowy** | Włącza lub wyłącza tryb pełnoekranowy dla widoku raportu. |
 

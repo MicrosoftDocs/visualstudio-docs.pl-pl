@@ -2,14 +2,16 @@
 layout: HubPage
 hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
+titleSuffix: ''
 description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: hub-page
-ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.custom: seodec18
+ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831032"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160104"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -89,12 +91,12 @@ ms.locfileid: "49831032"
                                             <div class="cardText">
                                                 <h3>Dowiedz się, jak używać programu Visual Studio</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Uruchom samouczek</a></li>
-                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Pisanie i edytowanie kodu</a></li>
-                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Kompilowanie kodu</a></li>
-                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Debugowanie kodu</a></li>
-                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />Testowanie kodu</a></li>
-                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />Dostęp do danych, lokalnie lub w chmurze</a></li>
+                                                    <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Uruchom samouczek</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Pisanie i edytowanie kodu</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Kompilowanie kodu</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Debugowanie kodu</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />Testowanie kodu</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />Dostęp do danych, lokalnie lub w chmurze</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -169,12 +171,13 @@ C# </a>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-fsharp">
                                                                         <img src="https://docs.microsoft.com/dotnet/images/hub/fsharp.svg" alt="F# logo">
-F # </a>
+F# </a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
                                                                         <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB logo">
 Visual Basic </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -196,7 +199,6 @@ Node.js </a>
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                        </td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -213,7 +215,7 @@ Node.js </a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Lub wybierz, co chcesz tworzyć</h3>
-                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
                                                 <ul class="noBullet">
                                                     <li>
                                                         <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
@@ -241,7 +243,8 @@ Gra na platformie Unity</a>
                                                             <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt=".NET logo">
 Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                     </li>
-                                                </ul></td></tr></table>
+                                                </ul></td></tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -258,7 +261,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                         <a href="#features1"> </a>
                         <ul id="features1" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856608">
+                                <a href="ide/index-writing-code.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -277,7 +280,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833077">
+                                <a href="ide/compiling-and-building-in-visual-studio.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -296,7 +299,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833078">
+                                <a href="/visualstudio/debugger/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -307,7 +310,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Debugowanie</h3>
-                                                    <p>Badanie i rozwiązywanie problemów z kodem.</p>
+                                                    <p>Zbadaj i naprawiania błędów w kodzie.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -315,7 +318,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833079">
+                                <a href="test/improve-code-quality.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -334,7 +337,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834349">
+                                <a href="/visualstudio/deployment/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -391,7 +394,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834348">
+                                <a href="/visualstudio/profiling/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -401,7 +404,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Poprawianie wydajności</h3>
+                                                    <h3>Miara wydajności</h3>
                                                     <p>Zidentyfikuj wąskie gardła i zoptymalizować wydajność kodu za pomocą narzędzi diagnostycznych.
                                                     </p>
                                                 </div>
@@ -411,7 +414,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833081">
+                                <a href="/visualstudio/extensibility/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -430,7 +433,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856607">
+                                <a href="data-tools/accessing-data-in-visual-studio.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -449,7 +452,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=872032">
+                                <a href="/visualstudio/liveshare/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -506,7 +509,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833062">
+                                                <a href="/dotnet/csharp/">
                                                     <h3>C#</h3>
                                                     <p>Nowoczesne obiektowy język programowania funkcjonalności oraz możliwości programowania do tworzenia aplikacji na platformie .NET.</p>
                                                 </a>
@@ -525,7 +528,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833060">
+                                                <a href="/dotnet/visual-basic/">
                                                     <h3>Visual Basic</h3>
                                                     <p>Nowoczesny, łatwy dowiedzieć się, obiektowy język programowania przeznaczony dla platformy .NET koncentruje się na łatwe tworzenie aplikacji Windows.</p>
                                                 </a>
@@ -544,7 +547,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833063">
+                                                <a href="/cpp/">
                                                     <h3>C++</h3>
                                                     <p>Wydajny i elastyczny programowania języka i środowisko programistyczne do tworzenia aplikacji dla Windows, Linux, iOS i Android.</p>
                                                 </a>
@@ -563,7 +566,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833067">
+                                                <a href="/dotnet/fsharp/">
                                                     <h3>F#</h3>
                                                     <p>Nowoczesne funkcjonalny język programowania oraz możliwości zorientowane obiektowo dla platformy .NET, koncentrując się na funkcjonalności programowania łatwiej dowolne zadanie.</p>
                                                 </a>
@@ -582,7 +585,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833064">
+                                                <a href="/scripting/">
                                                     <h3>JavaScript</h3>
                                                     <p>Lekkie Międzyplatformowe, często używane, aby sprawić, że stron sieci web bardziej interaktywny język skryptów.</p>
                                                 </a>
@@ -601,7 +604,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833066">
+                                                <a href="http://www.typescriptlang.org/docs/tutorial.html">
                                                     <h3>TypeScript</h3>
                                                     <p>Nadzbiorem języka JavaScript, który kompiluje do zwykłego kodu JavaScript i pozwala na tworzenie bardziej skalowalna kodu.</p>
                                                 </a>
@@ -620,7 +623,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                                <a href="/visualstudio/python/">
                                                     <h3>Python</h3>
                                                     <p>Dynamiczne zorientowane obiektowo, wysokiego poziomu język programowania często używane do szybkiego opracowywania aplikacji.</p>
                                                 </a>
@@ -639,7 +642,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833070">
+                                                <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
                                                     <p>Rozszerzalny język programowania, zwykle używane do przeprowadzania obliczeń statystycznych i grafiki.</p>
                                                 </a>
@@ -665,7 +668,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
+                                <a href="/aspnet/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -684,7 +687,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
+                                <a href="/visualstudio/azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -703,7 +706,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                <a href="/visualstudio/python/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -722,7 +725,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
+                                <a href="javascript/quickstart-vuejs-with-nodejs.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -741,7 +744,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
+                                <a href="/visualstudio/data-tools/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -760,7 +763,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
+                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -771,7 +774,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Aplikacje do analizy i przetwarzania danych</h3>
-                                            <p>Języki i narzędzia do tworzenia aplikacji do nauki o danych, w tym języka Python, R i F #.</p>
+                                            <p>Języki i narzędzia do tworzenia aplikacji do analizy danych, w tym języka Python, R, a F#.</p>
                                         </div>
                                       </div>
                                     </div>
@@ -779,7 +782,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
+                                <a href="https://developer.microsoft.com/office/docs">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -808,7 +811,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
+                                <a href="cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -827,7 +830,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
+                                <a href="/dotnet/framework/develop-client-apps">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -846,7 +849,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
+                                <a href="/cpp/windows/desktop-applications-visual-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -875,7 +878,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
+                                <a href="/xamarin/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -894,7 +897,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
+                                <a href="cross-platform/visual-studio-tools-for-unity.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -913,7 +916,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
+                                <a href="/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -932,7 +935,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
+                                <a href="/visualstudio/cross-platform/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -951,7 +954,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
+                                <a href="/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -975,7 +978,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                         <a href="#other">Inne zestawy narzędzi</a>
                         <ul id="other" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
+                                <a href="/visualstudio/extensibility/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -994,7 +997,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
+                                <a href="/cpp/linux/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1013,7 +1016,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
+                                <a href="/dotnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1035,25 +1038,27 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                     </li>
                 </ul>
             </li>
+            </li>
+            </li>
         </ul>
     </div>
     <div class="container centered pageFooter">
         <h2>Utrzymuj kontakt z nami</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> Blog </a>
+                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> Blog </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833101"> W usłudze Twitter </a>
+                <a href="https://twitter.com/VisualStudio"> W usłudze Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Przepełnienie stosu </a>
+                <a href="https://stackoverflow.com/questions/tagged/visual-studio"> Przepełnienie stosu </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=874480"> Zgłaszanie problemów </a>
+                <a href="ide/talk-to-us.md"> Zgłaszanie problemów </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> User Voice </a>
+                <a href="https://developercommunity.visualstudio.com/spaces/8/index.html"> Społeczność deweloperów </a>
             </li>
         </ul>
     </div>

@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919744"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296440"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do usługi Azure Functions
 
@@ -44,12 +44,10 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
     ![Nazewnictwo i tworzenie projektu funkcji platformy azure](media/azure-functions-lab-image2.png)
 
-5. Rozwiń węzły w **konsoli rozwiązania**. Domyślny szablon projektu zawiera odwołania do NuGet z szeroką gamą pakietów usługi Azure WebJobs, a także pakiet Newtonsoft.Json. 
+5. Rozwiń węzły w **konsoli rozwiązania**. Domyślny szablon projektu zawiera odwołania do NuGet z szeroką gamą pakietów usługi Azure WebJobs, a także pakiet Newtonsoft.Json.
 
-     Istnieją trzy pliki:  
-        - **Host.JSON** do opisywania konfigurację globalną opcje hosta  
-        - **Local.Settings.JSON** do konfigurowania ustawień usługi.  
-        - Szablon projektu tworzy również domyślny HttpTrigger. Dla tego laboratorium, należy usunąć **HttpTrigger.cs** pliku z projektem.  
+     Dostępne są także trzy pliki:- **host.json** do opisywania globalną opcje konfiguracji dla hosta — **local.settings.json** do konfigurowania ustawień usługi.
+        - Szablon projektu tworzy również domyślny HttpTrigger. Dla tego laboratorium, należy usunąć **HttpTrigger.cs** pliku z projektem.
 
     Otwórz **local.settings.json**. Domyślnie po dwa połączenia pusty ciąg ustawienia.
 
@@ -58,7 +56,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Ćwiczenie 2: Tworzenie konta usługi Azure storage
 
 1. Zaloguj się do konta platformy Azure na poziomie [ https://portal.azure.com ](https://portal.azure.com).
- 
+
 1. W obszarze **ulubione** sekcji znajduje się w lewej części ekranu wybierz **kont magazynu**:
 
     ![sekcja ulubionych elementu witryny Azure portal przedstawiający kont magazynu](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Przykład 3: Tworzenie i debugowanie funkcji platformy Azure
 
-1. Teraz możesz rozpocząć dodawanie kodu. Podczas pracy z biblioteki klas platformy .NET, usługi Azure Functions są dodawane jako metody statyczne. Z **konsoli rozwiązania**, kliknij prawym przyciskiem myszy **AzureFunctions** węzeł projektu i wybierz pozycję **Dodaj > Dodaj funkcję...** :
+1. Teraz możesz rozpocząć dodawanie kodu. Podczas pracy z biblioteki klas platformy .NET, usługi Azure Functions są dodawane jako metody statyczne. Z **konsoli rozwiązania**, kliknij prawym przyciskiem myszy **AzureFunctions** węzeł projektu i wybierz pozycję **Dodaj > Dodaj funkcję**:
 
     ![Dodaj opcję — funkcja](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
         return x + y;
     }
     ```
-1. Przejdźmy teraz przez definicję metody eliminujemy. 
-    
+1. Przejdźmy teraz przez definicję metody eliminujemy.
+
     Pierwszą rzeczą, zostanie wyświetlony jest **FunctionName** atrybut, który oznacza tę metodę jako funkcję platformy Azure. Ten atrybut Określa publiczny nazwę funkcji. Nazwa atrybutu nie musi być zgodna z nazwą rzeczywistego — metoda.
 
     ![Nowa metoda uruchamiania atrybutem FunctionName wyróżniony](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
     ![Adres URL interfejsu API funkcji platformy Azure](media/azure-functions-lab-image20.png)
 
-1. Punkt przerwania powinny wywoływać bezpośrednio. Żądania sieci web został przesłany do funkcji i można teraz debugować. Wskaźnik myszy nad **x** zmiennej, aby zobaczyć jej wartość. 
+1. Punkt przerwania powinny wywoływać bezpośrednio. Żądania sieci web został przesłany do funkcji i można teraz debugować. Wskaźnik myszy nad **x** zmiennej, aby zobaczyć jej wartość.
 
     ![Punkt przerwania wyzwolone](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Ćwiczenie 5: Praca z tabelami usługi Azure storage
 
-Często usługi, które tworzysz może być znacznie bardziej złożone niż co możemy utworzone do tej pory wymagać znacznej ilości czasu i/lub infrastrukturę do wykonania. W tym przypadku może okazać się obowiązujące w celu umożliwienia akceptowania żądań, które oczekują w kolejce do przetwarzania, gdy zasoby będą dostępne, które usługi Azure Functions zapewnia obsługę. W innych przypadkach należy do centralnego przechowywania danych. Tabele magazynu platformy Azure pozwolą Ci to zrobić szybko. 
+Często usługi, które tworzysz może być znacznie bardziej złożone niż co możemy utworzone do tej pory wymagać znacznej ilości czasu i/lub infrastrukturę do wykonania. W tym przypadku może okazać się obowiązujące w celu umożliwienia akceptowania żądań, które oczekują w kolejce do przetwarzania, gdy zasoby będą dostępne, które usługi Azure Functions zapewnia obsługę. W innych przypadkach należy do centralnego przechowywania danych. Tabele magazynu platformy Azure pozwolą Ci to zrobić szybko.
 
 1. Dodaj klasę poniżej, aby **Add.cs**. Powinien być kierowany wewnątrz przestrzeni nazw, ale poza programem istniejącej klasy.
 
@@ -332,7 +330,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
 
 1. Wróć do przeglądarki, aby odświeżyć żądania do tego samego adresu URL. Tym razem zostanie wyświetlony komunikat o błędzie **procesu** metody. Jest to spowodowane kod próbuje dodać wiersz do tabeli usługi Azure Table Storage, za pomocą partycji i wiersza kombinacji klawiszy, który już istnieje.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
 1. Wróć do **programu Visual Studio dla komputerów Mac** i zakończenie sesji debugowania.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

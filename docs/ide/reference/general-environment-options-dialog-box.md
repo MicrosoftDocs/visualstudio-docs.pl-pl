@@ -27,65 +27,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b52a6815fe9eb9333d6a87b25c1b8dd33ff7eb08
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948132"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389166"
 ---
 # <a name="general-environment-options-dialog-box"></a>Ogólne, środowisko, opcje — Okno dialogowe
 
-Ta strona służy do zmiany motywy kolorów, ustawienia paska stanu i skojarzenia rozszerzeń plików, wśród innych opcji, zintegrowane środowisko programistyczne (IDE). Można uzyskać dostępu do **opcje** okno dialogowe, otwierając **narzędzia** menu, wybierając **opcje**, otwierając **środowiska** folder, a następnie Wybieranie **ogólne** strony. Jeśli ta strona nie ma na liście, wybierz **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe.
+Użyj tej strony, aby zmienić motywy kolorów, ustawienia paska stanu i skojarzenia rozszerzeń plików, między innymi do zintegrowanego środowiska programistycznego (IDE). Możesz uzyskać dostęp **opcje** okno dialogowe, otwierając **narzędzia** menu, wybierając **opcje**, otwierając **środowiska** folder i następnie Wybieranie **ogólne** strony. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe.
 
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, otwórz **narzędzia** menu, a następnie wybierz pozycję **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+## <a name="visual-experience"></a>Środowisko wizualne
 
-## <a name="visual-experience"></a>Środowisko Visual
+**Motyw kolorów**
 
-**Kolor motywu**
+Wybierz **niebieski**, **światła** lub **ciemny** motyw kolorów IDE.
 
-Wybierz **Blue**, **światła** lub **ciemny** motywu kolorów dla IDE.
+Można zainstalować dodatkowe predefiniowane motywy i utworzyć motywy dostosowane pobierając i instalując **Edytor motywów kolorystycznych programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w polu listy motywu kolorów.
 
-Można zainstalować dodatkowe wstępnie zdefiniowanych motywów i tworzenie niestandardowych kompozycji przez pobranie i zainstalowanie **Visual Studio kolor motywu edytora** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia motywy kolorów dodatkowe są wyświetlane w polu listy Kolor motywu.
+**Zastosuj wielkość liter w wyrazie tytuł na pasku menu**
 
-**Zastosuj wielkość liter tytułu paska menu**
+Menu znajdują się w **wielkość liter w wyrazie tytuł** domyślnie. Usuń zaznaczenie tej opcji, aby ustawić je **wersalikami**.
 
-Menu znajdują się w **wielkość liter w tytule** domyślnie. Usuń zaznaczenie tej opcji, aby ustawić je **wersaliki**.
+**Automatycznie Dostosuj wygląd bazując na wydajności klienta**
 
-**Automatycznie Dostosuj wyglądu na podstawie wydajności klienta**
+Określa, czy program Visual Studio ustawia dostosowania środowisko wizualne automatycznie, lub jawnie ustaw dostosowania. To dostosowanie może zmienić sposób wyświetlania kolorów z gradientów kolorów prostego lub jego może ograniczyć użycie animacji w menu lub okna podręcznego.
 
-Określa, czy program Visual Studio dostosowanie środowiska visual automatycznie ustawia lub jawnie ustaw dostosowania. To dopasowanie może zmienić wyświetlanie kolorów z gradienty kolorów ani może ograniczyć stosowanie animacji w menu lub okna podręcznego.
+**Włącz bogate doświadczenia**
 
-**Włączanie obsługi wzbogaconego klienta**
+Włącza pełne wizualne środowisko programu Visual Studio, w tym w gradientach i animacji. Usuń zaznaczenie tej opcji, podczas korzystania z połączeniami pulpitu zdalnego lub starszych kart graficznych, ponieważ te funkcje mogą mieć niskiej wydajności w tych przypadkach. Ta opcja jest dostępna tylko wtedy, gdy usuniesz zaznaczenie **automatycznie Dostosuj wygląd bazując na kliencie** opcji.
 
-Włącza pełne visual środowiska Visual Studio, w tym gradienty i animacji. Usuń zaznaczenie tej opcji, gdy za pomocą połączenia pulpitu zdalnego lub starszych kart graficznych, ponieważ te funkcje może mieć pogorszenie wydajności w takich przypadkach. Ta opcja jest dostępna tylko wtedy, gdy zostanie ono wyczyszczone **automatycznie Dostosuj interfejs do klienta możliwości** opcji.
+**Użyj sprzętowego przyspieszania grafiki, jeśli jest dostępny**
 
-**Użyj sprzętowego przyspieszania grafiki, jeśli jest dostępne**
-
-Używa sprzętowego przyspieszania grafiki, jeśli jest dostępna, a nie przyspieszenie oprogramowania.
+Używa sprzętowego przyspieszania grafiki, jeśli jest on dostępny, zamiast przyspieszenie oprogramowania.
 
 ## <a name="other"></a>Inne
 
-**Elementy(ów) w menu okna**
+**Elementy(ów) w menu Okno**
 
-Dostosowuje liczbę systemu windows, które pojawiają się na liście Windows **okna** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10.
+Dostosowuje liczbę przedziałów, które pojawiają się na liście Windows **okna** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10.
 
-**Elementy(ów) na listach ostatnio używanych**
+**Elementy wyświetlane na listach ostatnio używanych**
 
-Dostosowuje liczbę ostatnio używanych projektów i pliki, które znajdują się w **pliku** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10. Jest to prosty sposób na pobranie ostatnio używanych projektów i pliki.
+Dostosowuje liczbę niedawno używanych projektów i plików, które pojawiają się na **pliku** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10. Jest to prosty sposób pobierania niedawno używanych projektów i plików.
 
 **Pokaż pasek stanu**
 
-Wyświetla pasek stanu. Pasek stanu znajduje się w dolnej części okna IDE i wyświetla informacje o postępie trwających operacji.
+Wyświetla na pasku stanu. Na pasku stanu znajduje się w dolnej części okna środowiska IDE i wyświetla informacje o postępie trwające operacje.
 
 **Przycisk Zamknij dotyczy tylko aktywnego okna narzędzi**
 
-Określa, że w przypadku **Zamknij** przycisk zostanie kliknięty tylko aktywnego okna narzędzia został zamknięty i nie wszystkie z okna narzędzi w zestawie dokowanych. Domyślnie ta opcja jest zaznaczona.
+Określa, że w przypadku **Zamknij** kliknięty przycisk tylko okna narzędzi, które ma fokus został zamknięty i nie wszystkie okien narzędzi zadokowanych zestawu. Domyślnie ta opcja jest zaznaczona.
 
 **Przycisk Ukryj automatycznie dotyczy tylko aktywnego okna narzędzi**
 
-Określa, że w przypadku **automatyczne ukrywanie** przycisku, okna narzędzia, który ma fokus jest ukrywane automatycznie i nie wszystkie okna narzędzi w zestawie dokowanych. Domyślnie ta opcja nie wybrano żadnych działań.
+Określa, że w przypadku **Autoukrywanie** przycisku, okna narzędzi, który ma fokus jest ukryta, automatycznie, a nie wszystkich okien narzędzi zadokowanych zestawu. Domyślnie ta opcja nie jest zaznaczona.
 
 ## <a name="see-also"></a>Zobacz także
 

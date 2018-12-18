@@ -1,5 +1,5 @@
 ---
-title: Dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia w programie Visual Studio
+title: Dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908806"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049953"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Porady: dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia
 
 Możesz użyć **liczniki** panelu, aby dodać liczniki wydajności do wykresu.
 
- ![Dodano liczników do wykresu](../test/media/ltest_selectcounter.png)
+![Dodano liczników do wykresu](../test/media/ltest_selectcounter.png)
 
- **Zagadnienia interwału próbkowania licznika wydajności**
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Wybierz wartość dla **częstotliwość próbkowania** uruchomieniowe właściwości w teście obciążenia, na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, np. wartość domyślna pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. Dla dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [porady: określanie wielkości próbki](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+**Zagadnienia interwału próbkowania licznika wydajności**
 
- Oto niektóre wytyczne dotyczące częstotliwości próbkowania:
+Wybierz wartość dla **częstotliwość próbkowania** uruchomieniowe właściwości w teście obciążenia, na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, np. wartość domyślna pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. Dla dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [porady: określanie wielkości próbki](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+
+Oto niektóre wytyczne dotyczące częstotliwości próbkowania:
 
 |Czas trwania testu obciążenia|Zalecana częstotliwość próbkowania|
 |-|-----------------------------|
@@ -39,11 +41,11 @@ Możesz użyć **liczniki** panelu, aby dodać liczniki wydajności do wykresu.
 |8 - 24 godziny|30 sekund|
 |> 24 godziny|60 sekund|
 
- **Zagadnienia dotyczące szczegółowych informacji o czasie do zbierania danych percentyl, w tym**
+**Zagadnienia dotyczące szczegółowych informacji o czasie do zbierania danych percentyl, w tym**
 
- Jest właściwością w ustawieniach uruchamiania w edytorze testu obciążenia o nazwie **przechowywanie informacji**. Jeśli **przechowywanie informacji** właściwość jest włączona, a następnie to czas na wykonanie każdego indywidualnego testu, transakcji i strony podczas testu obciążenia, które będą przechowywane w repozytorium wyników testu obciążenia. Umożliwia to 90 i 95. percentyl danych w **analizatora testu obciążenia** w tabelach testy, transakcji i strony.
+Jest właściwością w ustawieniach uruchamiania w edytorze testu obciążenia o nazwie **przechowywanie informacji**. Jeśli **przechowywanie informacji** właściwość jest włączona, a następnie to czas na wykonanie każdego indywidualnego testu, transakcji i strony podczas testu obciążenia, które będą przechowywane w repozytorium wyników testu obciążenia. Umożliwia to 90 i 95. percentyl danych w **analizatora testu obciążenia** w tabelach testy, transakcji i strony.
 
- Istnieją dwie możliwości włączenia **przechowywanie informacji** właściwość we właściwościach parametrów uruchomieniowych o nazwie **StatisticsOnly** i **AllIndividualDetails**. Niezależnie od wybranej opcji wszystkie poszczególne testy, strony i transakcje są upłynął limit czasu i percentyli są obliczane na podstawie danych o poszczególnych chronometrażach. Różnica polega na tym, wraz z **StatisticsOnly** opcji tak szybko, jak została obliczona danych percentyl, o poszczególnych chronometrażach, dane są usuwane z repozytorium. Zmniejsza to ilość miejsca wymaganego w repozytorium, użyj szczegółów chronometrażu. Jednak użytkownicy zaawansowani może być do przetwarzania danych szczegółów chronometrażu w inny sposób, przy użyciu narzędzi SQL. Jeśli tak, jest **AllIndividualDetails** tak, aby dane szczegółowe chronometrażu były dostępne dla tego przetwarzania, należy użyć opcji. Ponadto jeśli właściwość jest ustawiona **AllIndividualDetails**, następnie można analizować aktywności wirtualnego użytkownika za pomocą **wirtualnego aktywności użytkownika** wykresu w **analizatora testu obciążenia** po zakończeniu testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Istnieją dwie możliwości włączenia **przechowywanie informacji** właściwość we właściwościach parametrów uruchomieniowych o nazwie **StatisticsOnly** i **AllIndividualDetails**. Niezależnie od wybranej opcji wszystkie poszczególne testy, strony i transakcje są upłynął limit czasu i percentyli są obliczane na podstawie danych o poszczególnych chronometrażach. Różnica polega na tym, wraz z **StatisticsOnly** opcji tak szybko, jak została obliczona danych percentyl, o poszczególnych chronometrażach, dane są usuwane z repozytorium. Zmniejsza to ilość miejsca wymaganego w repozytorium, użyj szczegółów chronometrażu. Jednak użytkownicy zaawansowani może być do przetwarzania danych szczegółów chronometrażu w inny sposób, przy użyciu narzędzi SQL. Jeśli tak, jest **AllIndividualDetails** tak, aby dane szczegółowe chronometrażu były dostępne dla tego przetwarzania, należy użyć opcji. Ponadto jeśli właściwość jest ustawiona **AllIndividualDetails**, następnie można analizować aktywności wirtualnego użytkownika za pomocą **wirtualnego aktywności użytkownika** wykresu w **analizatora testu obciążenia** po zakończeniu testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 Ilość miejsca wymaganego w repozytorium wyników testu obciążenia do przechowywania szczegółowych danych o chronometrażu mogą być bardzo duże, szczególnie w przypadku uruchamiania dłuższych testów obciążenia. Ponadto czas przechowywania tych danych w repozytorium wyników testów obciążeniowych na koniec testu obciążenia jest dłuższy, ponieważ te dane są przechowywane w agentach testowych obciążenia do momentu zakończenia testów obciążenia. Po zakończeniu testu obciążenia, dane są przechowywane w repozytorium. Domyślnie **przechowywanie informacji** właściwość jest włączona. Jeśli jest to problem dla środowiska testowego, warto ustawić **przechowywanie informacji** do **Brak**.
 

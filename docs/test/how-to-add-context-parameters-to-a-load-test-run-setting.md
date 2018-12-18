@@ -1,5 +1,5 @@
 ---
-title: Dodawanie parametrów kontekstu do ustawień testu obciążenia w programie Visual Studio
+title: Dodawanie parametrów kontekstu do ustawień uruchomienia testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905905"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048498"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
 
 Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).

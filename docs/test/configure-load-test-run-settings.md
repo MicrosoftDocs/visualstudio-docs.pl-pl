@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie ustawień testu obciążenia w programie Visual Studio
+title: Konfigurowanie ustawień testu obciążenia
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9aa2defb458fba0d7962813743fa603fe71081e2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813865"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053321"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurowanie ustawień testu obciążenia
 
 *Parametry uruchomieniowe* są zestawem właściwości wpływającym na sposób wykonywania testu obciążeniowego. Ustawienia uruchamiania są zorganizowane według kategorii w **właściwości** okna.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Może mieć więcej niż jedno ustawienie uruchamiania w teście obciążenia, ale tylko jeden z parametrów uruchomieniowych może być aktywny na przebieg. Pozostałe parametry uruchomieniowe oferują szybki sposób wyboru alternatywnego ustawienia do kolejnych przebiegów testowych.
 

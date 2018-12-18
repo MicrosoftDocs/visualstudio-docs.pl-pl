@@ -1,6 +1,7 @@
 ---
-title: 'Błąd: Program Microsoft Visual Studio zdalny Monitor debugowania programu na komputerze zdalnym nie ma uprawnień do łączenia się z tym komputerem | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Błąd: Monitor debugera zdalnego Microsoft Visual Studio na komputerze zdalnym nie ma uprawnień do połączenia z tym komputerem'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb71667da94027d3170a372a9a570e5e1eea4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4bd5a9ef53940164c7d83dff0159af4c69f61010
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854172"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053435"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Błąd: Monitor debugera zdalnego Microsoft Visual Studio na komputerze zdalnym nie ma uprawnień do połączenia z tym komputerem
 Ten błąd występuje, gdy użytkownik, który próbuje uruchomić zdalny Monitor debugowania Visual Studio (msvsmon) nie ma konta na komputerze lokalnym.  

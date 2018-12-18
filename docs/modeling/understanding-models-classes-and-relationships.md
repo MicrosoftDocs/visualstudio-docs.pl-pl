@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861283"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967392"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definicji DSL, wraz z wszelki kod niestandardowy program, który może zapisać. Większość kodu programu w rozwiązaniu DSL jest generowany na podstawie tego pliku.
@@ -152,4 +152,4 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

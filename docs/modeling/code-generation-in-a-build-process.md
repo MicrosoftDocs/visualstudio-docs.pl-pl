@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409807"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281826"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 
-[Transformacja tekstu](../modeling/code-generation-and-t4-text-templates.md) mogą być wywoływane jako część [proces kompilacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) rozwiązania Visual Studio. Istnieją zadania kompilacji, które są przeznaczone do przekształcania tekstu. Zadania kompilacji T4 uruchamiają szablon tekstowy czasu projektowania, a także kompilują szablony tekstowe czasu wykonywania (wstępnie przetworzone).
+[Transformacja tekstu](../modeling/code-generation-and-t4-text-templates.md) mogą być wywoływane jako część [proces kompilacji](/azure/devops/pipelines/index) rozwiązania Visual Studio. Istnieją zadania kompilacji, które są przeznaczone do przekształcania tekstu. Zadania kompilacji T4 uruchamiają szablon tekstowy czasu projektowania, a także kompilują szablony tekstowe czasu wykonywania (wstępnie przetworzone).
 
 Istnieją pewne różnice w czynnościach, które mogą wykonać zadania kompilacji, wszystko zależy od użytego aparatu kompilacji. Podczas kompilowania rozwiązania w programie Visual Studio szablon tekstowy może uzyskać dostęp do API Visual Studio (EnvDTE), gdy [hostspecific = "true"](../modeling/t4-template-directive.md) ma ustawioną wartość atrybutu. Ale nie jest to prawdą podczas kompilowania rozwiązania z wiersza polecenia lub po zainicjowaniu kompilacji serwerowej za pomocą programu Visual Studio. W tych przypadkach kompilację wykonuje MSBuild i użyty zostaje inny host T4.
 
@@ -33,7 +33,7 @@ Aby włączyć zadania kompilacji na komputerze deweloperskim, należy zainstalo
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Jeśli [serwer kompilacji](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) uruchomienia na komputerze, na którym nie zainstalowano programu Visual Studio, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
+Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) uruchomienia na komputerze, na którym nie zainstalowano programu Visual Studio, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -136,7 +136,7 @@ Nie ma żadnych szczególnych wbudowanych funkcji integracji z systemem kontroli
 
 Aby określić, że pliki tylko do odczytu powinny być zastąpione, wstaw tę właściwość:
 
-`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 O ile nie dostosujesz kroku przetwarzania końcowego, zastąpienie pliku spowoduje, że na liście błędów zostanie zarejestrowane ostrzeżenie.
 
@@ -236,7 +236,7 @@ W szablonie tekstu, ustaw `hostspecific` w dyrektywie szablonu. Użyj [parametru
 The project folder is: <#= ProjectFolder #>
 ```
 
-W procesorze dyrektywy można wywołać [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+W procesorze dyrektywy można wywołać [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

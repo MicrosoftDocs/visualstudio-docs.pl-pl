@@ -1,5 +1,5 @@
 ---
-title: Co&#39;s nowego w dziedzinie projektowania w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Co&#39;s nowego w dziedzinie projektowania
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - modeling software [Visual Studio ALM], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 551f2762886a9c6b8e7395d536538ac47752d3ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 666402a0488fdfd0e09e12e711c9b74b2f3b2fd1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878157"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068119"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Co nowego w dziedzinie projektowania w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

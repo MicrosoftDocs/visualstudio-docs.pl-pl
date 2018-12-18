@@ -9,53 +9,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e120d65c9336acaa509e74c79d9e538673cd256
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693789"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349325"
 ---
 # <a name="xml-editor"></a>Edytor XML
 
-Edytor XML jest oparta na Edytor tekstu Visual Studio i obejmuje obsługę języków XML. Edytor XML zawiera następujące funkcje:
+Edytor XML jest oparta na Edytor tekstu Visual Studio i obejmuje obsługę języków XML. Edytor XML oferuje następujące funkcje:
 
 - Sprawdzanie składni XML 1.0.
 
-- Sprawdzanie poprawności schematu podczas pisania.
+- Weryfikacja schematu podczas wpisywania.
 
-- Obsługuje fragmentów kodu XML, w tym wygenerować schematu wstawki.
+- Obsługę fragmentów kodu XML, w tym wygenerować schematu fragmentów kodu.
 
-- Obsługa definicja typu dokumentu (DTD).
+- Pomoc techniczna dla definicji typu dokumentu (DTD).
 
-- Obsługa schematu (XSD) języka definicji schematu XML.
+- Obsługa schematu języka (XSD) definicji schematu XML.
 
-- Tworzenie schematu XML z instancją dokumentu XML.
+- Tworzenie schematu XML z wystąpienia dokumentu XML.
 
 - Konwertowanie schematu DTD lub danych XML (XDR) do schematu XML.
 
-- Sprawdzanie składni XSLT 1.0.
+- Sprawdzanie składni specyfikacji XSLT 1.0.
 
-- Dokumentu zwijania, tak aby elementy można rozszerzyć i zwinięty.
+- Dokumentu, konspektu, tak aby elementy można rozszerzyć i zwinięte.
 
-- Integracja z [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Zapewnia to hierarchiczna widoku schematów XML.
+- Integracja z usługą [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Zapewnia to hierarchiczna widok schematów XML.
 
-Edytor XML jest wywoływany dla rozszerzeń plików dobrze znany, takich jak *.xml*, *XSD*, *.xsl*, i *.config*. Jest również wywoływana wszystkie nieznane rozszerzenia, jeśli plik może zawierać kod XML. Każdy plik można otworzyć w edytorze XML, używając **Otwórz za pomocą** opcja i wybierając edytora XML z listy.
+Edytor XML jest wywoływany dla rozszerzenia znanych plików, takich jak *.xml*, *XSD*, *XSL*, i *.config*. Również jest ono wywoływane na każde rozszerzenie nieznanym pliku, jeśli plik może zawierać kod XML. Każdy plik można otworzyć w edytorze XML, używając **Otwórz za pomocą** opcja i wybierając edytora XML z listy.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) pozwala na nazwy zestawu atrybutów funkcja automatycznego uzupełniania, tryby szablonu i nazwy i nazwy parametrów dla określonego trybu lub określonej o nazwie szablonu.
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) umożliwia nazwy zestawu atrybutów automatycznego uzupełniania, tryby szablonu i nazwy, a nazwy parametrów dla określonego trybu lub określoną nazwę szablonu.
 
-## <a name="xslt-profiler"></a>Profilera XSLT
+## <a name="xslt-profiler"></a>XSLT profiler
 
-[Profilera XSLT](../xml-tools/walkthrough-xslt-profiler.md) tworzy szczegółowe wydajności XSLT raporty, które ułatwiają mierzyć, oceniać i określać problemy związane z wydajnością w kodzie XSLT. Profilera XSLT zawiera również wskazówki przydatne dla optymalizacji arkusza stylów XSL i XSLT.
+[XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md) tworzy szczegółowe wydajności XSLT, raporty, które ułatwiają mierzyć, szacować i wybierać problemy związane z wydajnością w kodzie XSLT. Profiler XSLT zawiera także przydatne wskazówki dotyczące optymalizacji o arkusza stylów XSL i XSLT.
 
-## <a name="xslt-hierarchy"></a>Hierarchia XSLT
+## <a name="xslt-hierarchy"></a>Hierarchii XSLT
 
-[Narzędzia hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) pozwala dodać punkty przerwania w arkuszach stylów dołączone i/lub wbudowanych szablonów zasad.
+[Narzędzia hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) pozwala dodać punkty przerwania w arkusze stylów dołączone i/lub wbudowany szablon reguły.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md) zawiera informacje o edytorze tekstów.
-- [Odwołanie XML standardów](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD) języka definicji schematu XML (XSD) i XSLT.
-- [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+- [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md) informacje na temat edytora tekstu.
+- [Odwołanie do standardów XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.
+- [Narzędzia XML w programie Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

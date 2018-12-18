@@ -1,5 +1,5 @@
 ---
-title: Stosowanie podkładek do izolowania aplikacji do testowania w programie Visual Studio jednostki
+title: Stosowanie podkładek do izolowania aplikacji testów jednostkowych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915246"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065613"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 
@@ -55,7 +55,7 @@ Następującego testu pokazuje, jak używać typu shim `ShimDateTime`, aby zapew
 ```csharp
 //unit test code
 // create a ShimsContext cleans up shims
-using (ShimsContext.Create()
+using (ShimsContext.Create()) {
     // hook delegate to the shim method to redirect DateTime.Now
     // to return January 1st of 2000
     ShimDateTime.NowGet = () => new DateTime(2000, 1, 1);

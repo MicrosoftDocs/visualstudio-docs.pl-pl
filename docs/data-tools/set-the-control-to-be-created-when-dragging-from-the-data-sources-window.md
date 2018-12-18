@@ -15,49 +15,55 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a72800cda8b80daec1adeb82d7884789cc4d2bd7
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: daceedd2709de7882ecff5b29a657f706c96175d
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174184"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305471"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
+
 Możesz utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna na projektanta WPF lub projektanta Windows Forms. Każdy element na **źródeł danych** okno ma domyślny formant, który jest tworzony podczas przeciągania do projektanta. Można utworzyć innej kontrolki.
 
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Ustawienie kontroli ma zostać utworzony dla tabel danych lub obiektów
+
 Podczas przeciągania elementów, które reprezentują tabele danych lub obiektów z **źródeł danych** okna, możesz wybrać do wyświetlania wszystkich danych w jednym formancie, lub do wyświetlania każdej kolumny lub właściwości w oddzielnej kontrolce.
 
 W tym kontekście pojęcie *obiektu* odwołuje się do obiektu niestandardowego biznesowego, jednostki (w modelu Entity Data Model) lub Obiekt zwrócony przez usługę.
 
 ### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Aby ustawić formanty, które ma zostać utworzony dla tabel danych lub obiektów
 
-1.  Upewnij się, **WPF** projektanta lub **Windows Forms** Projektant jest otwarty.
+1. Upewnij się, **WPF** projektanta lub **Windows Forms** Projektant jest otwarty.
 
-2.  W **źródeł danych** okna, wybierz element, który reprezentuje tabeli danych lub obiekt, którego chcesz ustawić.
+2. W **źródeł danych** okna, wybierz element, który reprezentuje tabeli danych lub obiekt, którego chcesz ustawić.
 
-3.  Kliknij przycisk menu rozwijanej dla elementu, a następnie kliknij jedną z następujących elementów w menu:
+   > [!TIP]
+   > Jeśli **źródeł danych** okno nie jest otwarty, możesz go otworzyć, wybierając **widoku** > **Windows inne** > **źródeł danych**.
 
-    -   Aby wyświetlić poszczególnych pól w oddzielnej kontrolce, kliknij przycisk **szczegóły**. Podczas przeciągania elementu danych do projektanta, ta akcja spowoduje utworzenie innej kontrolki powiązane z danymi dla każdej kolumny lub właściwości nadrzędnej danych tabeli lub obiektu oraz etykiety dla każdego formantu.
+3. Kliknij przycisk menu rozwijanej dla elementu, a następnie kliknij jedną z następujących elementów w menu:
 
-    -   Aby wyświetlić wszystkie dane w jednym formancie, Wybieranie innej kontrolki na liście, takie jak **DataGrid** lub **listy** w aplikacji WPF lub **DataGridView** w formularzach Windows Forms aplikacja.
+    - Aby wyświetlić poszczególnych pól w oddzielnej kontrolce, kliknij przycisk **szczegóły**. Podczas przeciągania elementu danych do projektanta, ta akcja spowoduje utworzenie innej kontrolki powiązane z danymi dla każdej kolumny lub właściwości nadrzędnej danych tabeli lub obiektu oraz etykiety dla każdego formantu.
+
+    - Aby wyświetlić wszystkie dane w jednym formancie, Wybieranie innej kontrolki na liście, takie jak **DataGrid** lub **listy** w aplikacji WPF lub **DataGridView** w formularzach Windows Forms aplikacja.
 
     Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET Framework projekt jest ukierunkowany i tego, czy zostały dodane niestandardowe formanty danych pomocy technicznej powiązanie **przybornika**. Jeśli formant, który chcesz utworzyć, nie jest lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Aby dowiedzieć się, jak można utworzyć niestandardowego formantu Windows Forms, który można dodać do listy formanty tabele danych lub obiekty na liście **źródeł danych** okna, zobacz [utworzyć formant użytkownika Windows Forms, który obsługuje złożonych danych Powiązanie](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
 ## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Ustawienie kontroli ma zostać utworzony dla właściwości lub kolumn danych
+
 Przed przeciągnięciem elementu, który reprezentuje kolumny lub właściwości obiektu **źródeł danych** okna projektanta, można ustawić formant, który ma zostać utworzony.
 
-#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Aby ustawić formanty, które ma zostać utworzony dla kolumny lub właściwości
+### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Aby ustawić formanty, które ma zostać utworzony dla kolumny lub właściwości
 
-1.  Upewnij się, **WPF** projektanta lub **Windows Forms** Projektant jest otwarty.
+1. Upewnij się, **WPF** projektanta lub **Windows Forms** Projektant jest otwarty.
 
-2.  W **źródeł danych** okna, rozwiń odpowiednią tabelę lub obiekt, aby wyświetlić jej właściwości lub kolumn.
+2. W **źródeł danych** okna, rozwiń odpowiednią tabelę lub obiekt, aby wyświetlić jej właściwości lub kolumn.
 
-3.  Wybierz każdej kolumny lub właściwości, dla którego chcesz ustawić formant, który ma zostać utworzony.
+3. Wybierz każdej kolumny lub właściwości, dla którego chcesz ustawić formant, który ma zostać utworzony.
 
-4.  Kliknij menu rozwijane dla kolumny lub właściwości, a następnie wybierz formant, który chcesz utworzyć, gdy element zostanie przeciągnięty do projektanta.
+4. Kliknij menu rozwijane dla kolumny lub właściwości, a następnie wybierz formant, który chcesz utworzyć, gdy element zostanie przeciągnięty do projektanta.
 
      Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET Framework projekt jest ukierunkowany i które niestandardowe formanty obsługujące, możesz powiązania danych zostały dodane do **przybornika**. Jeśli formant, który ma zostać utworzona lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
@@ -67,4 +73,4 @@ Przed przeciągnięciem elementu, który reprezentuje kolumny lub właściwości
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

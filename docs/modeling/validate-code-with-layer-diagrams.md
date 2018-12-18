@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835712"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967288"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -173,7 +173,7 @@ Te zadania umożliwiają zarządzanie błędami walidacji w **lista błędów** 
 
 ## <a name="validate-code-automatically"></a>Automatyczna walidacja kodu
 
-Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa DevOps platformy Azure, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów sprawdzania poprawności. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [używać procesu kompilacji ewidencjonowanej warunkowo w celu sprawdzenia poprawności zmian](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa DevOps platformy Azure, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów sprawdzania poprawności. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [TFVC ewidencjonowanie](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Aby walidować kod automatycznie podczas lokalnej kompilacji
 
@@ -237,6 +237,6 @@ W poniższej sekcji opisano składnię, która jest używana w tych błędach, w
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Walidacja aktywnych zależności w programie Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Walidacja aktywnych zależności w programie Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
 - [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

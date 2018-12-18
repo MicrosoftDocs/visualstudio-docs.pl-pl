@@ -1,6 +1,6 @@
 ---
 title: Debugowanie na żywo aplikacji ASP.NET, Azure
-ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
+description: Dowiedz się, jak Ustaw punkty przyciągania i wyświetlanie migawki za pomocą rozszerzenia Snapshot Debugger.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154466"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056921"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger
 
@@ -36,7 +36,7 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Rozszerzenie Snapshot Debugger jest dostępna tylko dla Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej za pomocą **obciążenie projektowania platformy ASP.NET i sieci web**. Dla platformy ASP.NET Core, należy również. **Programowania .NET Core** zainstalowanym obciążeniem.
+* Rozszerzenie Snapshot Debugger jest dostępna tylko dla Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej za pomocą **obciążenie projektowania platformy ASP.NET i sieci web**. Dla platformy ASP.NET Core, należy również **programowania .NET Core** zainstalowanym obciążeniem.
 
     Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio Enterprise 2017 w wersji 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) lub nowszej. Jeśli aktualizujesz z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika rozszerzenia Snapshot Debugger **obciążenie projektowania platformy ASP.NET i sieci web**.
 

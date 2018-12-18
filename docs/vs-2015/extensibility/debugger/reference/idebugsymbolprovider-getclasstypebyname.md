@@ -17,12 +17,12 @@ ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2298aa953aeb2eac5d800684d24bd0b1152259e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffb3f59996389ec093c872e41e828ac88aa702d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789203"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ta metoda pobiera typ pola klasy reprezentujące w pełni kwalifikowaną nazwę 
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT GetClassTypeByName(   
+HRESULT GetClassTypeByName(   
    LPCOLESTR          pszClassName,  
    NAME_MATCH         nameMatch,  
    IDebugClassField** ppField  

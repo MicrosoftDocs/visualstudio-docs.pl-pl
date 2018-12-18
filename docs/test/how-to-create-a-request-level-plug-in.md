@@ -1,5 +1,5 @@
 ---
-title: Utwórz żądanie poziomie wtyczki dla testów wydajności sieci web w programie Visual Studio
+title: Tworzenie wtyczki dla testów wydajności sieci web na poziomie żądania
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382038"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054077"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Porady: tworzenie wtyczki na poziomie żądania
 
 *Żądania* są deklaratywne instrukcje, które stanowią testów wydajności sieci web. Wtyczki sieci Web wydajności testów umożliwiają izolowanie i ponowne użycie kodu poza głównym deklaracyjne oświadczeń do testu wydajności sieci web. Można tworzyć dodatki plug-in i dodać je do pojedynczego żądania także do testu wydajności sieci web, która go zawiera. Dostosowany *wtyczkę żądania* umożliwia wywoływanie kodu podczas uruchamiania poszczególnych żądań w teście wydajności sieci web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Wtyczka każde żądanie testu wydajności sieci web ma PreRequest metody i PostRequest metody. Po dołączeniu wtyczki obsługi żądań do żądania http określonej PreRequest zdarzenie zostanie wyzwolone przed wystawić żądania i PostRequest uruchamiane po otrzymaniu odpowiedzi.
 

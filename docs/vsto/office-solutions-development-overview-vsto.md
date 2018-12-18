@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3586d6bc141992d7d8fe4629e7f56d04e4e247aa
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672629"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Omówienie programowania rozwiązań pakietu Office (VSTO)
   Za pomocą programu Microsoft Office jako fronton dla rozwiązania, możesz korzystać z zalet dobrze znanych interfejsów użytkownika Microsoft Office i narzędzi, takich jak funkcje przetwarzania tekstu w programach Word, funkcje analizy danych programu Excel i funkcje zarządzania pocztą e-mail programu Outlook . Można opracować rozwiązania w programie Visual Studio, aby dostosować aplikacje pakietu Office, a następnie dodaj określonych funkcji, czego potrzebujesz do procesów biznesowych. Na przykład można przekształcić w programie Word generator kontraktu, który składa umów się istniejące elementy, które mogą być wykonane edytowalne i nieedytowalne. Za pomocą programu Excel można utworzyć arkusz automatycznych budżetu dostosowane do różnych projektów. Użytkownicy mogą skorzystać z rozwiązań pakietu office w trybie offline, co sprawia, że złożonych rozwiązań jest praktyczniejsze w taki sposób, niż byłoby ich, jeśli używasz architektury opartej na sieci web.  
@@ -83,7 +83,7 @@ ms.locfileid: "49842667"
  Użyj technologii ClickOnce lub Instalatora Windows, aby wdrożyć rozwiązania, które tworzysz przy użyciu narzędzi programistycznych pakietu Office w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Wdrażanie ClickOnce umożliwia tworzenie rozwiązań samodzielnej aktualizacji, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. Instalator Windows (*.msi*) pliki mogą być łatwo rozproszone na komputerach użytkowników końcowych lub dystrybuowane za pomocą Systems Management Server (SMS). Aby uzyskać więcej informacji o wdrażaniu rozwiązań narzędzi VSTO dla pakietu Office, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
   
 ### <a name="install-prerequisites"></a>Instalowanie wstępnie wymaganego oprogramowania  
- Przed uruchomieniem rozwiązania przez użytkowników końcowych tworzone przy użyciu narzędzi programistycznych pakietu Office w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ich komputery muszą mieć zainstalowane pewne warunki wstępne. Jeśli wdrażasz swoje rozwiązanie przy użyciu technologii ClickOnce lub plik Instalatora Windows, te warunki wstępne można zainstalować za pomocą rozwiązania. Aby uzyskać więcej informacji, zobacz [wymagania wstępne rozwiązania pakietu Office wdrożenia](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) i [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Przed uruchomieniem rozwiązania przez użytkowników końcowych tworzone przy użyciu narzędzi programistycznych pakietu Office w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ich komputery muszą mieć zainstalowane pewne warunki wstępne. Jeśli wdrażasz swoje rozwiązanie przy użyciu technologii ClickOnce lub plik Instalatora Windows, te warunki wstępne można zainstalować za pomocą rozwiązania. Aby uzyskać więcej informacji, zobacz [wymagania wstępne rozwiązania pakietu Office wdrożenia](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) i [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ### <a name="security"></a>Zabezpieczenia  
  Zabezpieczenia dla rozwiązań pakietu Office VSTO jest wymuszana przez szereg sprawdza, czy [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sprawia, że podczas instalacji i ładowania rozwiązania. Testy te obejmują sprawdzanie, czy lokalizacja pliku manifestu wdrożenia jest zaufana lub tego, czy certyfikat używany do podpisywania manifestu wdrażania jest zaufany. Aby uzyskać więcej informacji, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).  

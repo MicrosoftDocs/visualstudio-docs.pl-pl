@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9269d77af38364e936f0c84c7c5a83bd58493de7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 918ff0ac0a0b7f4e16c779516c015d7b74cec415
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827284"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672655"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Poprawianie wydajności dodatku VSTO
   Można zapewnić użytkownikom lepsze środowisko, optymalizując dodatków narzędzi VSTO, które tworzysz dla aplikacji, aby szybko rozpocząć, zamknij usługi Office, Otwórz elementy i wykonywać inne zadania. W przypadku dodatku narzędzi VSTO dla programu Outlook, można także zmniejszyć ryzyko, że dodatku narzędzi VSTO dla programów będzie wyłączona z powodu niskiej wydajności. Aby zwiększyć wydajność dodatku narzędzi VSTO dla programów, należy wykonania następujących strategii:  
@@ -117,10 +117,6 @@ ms.locfileid: "49827284"
 >  Cały kod, który wywołuje w modelu obiektów programu pakietu Office muszą być wykonywane w wątku głównym.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Żądanie załadowania narzędzi VSTO](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
- [Opóźnienie ładowania CLR w dodatki pakietu Office](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
- [Wydajność VSTO: opóźnienie ładowania i (Autor: Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
- [Ulepszenia wydajności, które wkrótce do dodatku service pack blisko Ciebie (Autor: Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
- [Wydajność VSTO: wstążki odbicie (Autor: Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
-  
-  
+ [Żądanie załadowania narzędzi VSTO](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)   
+ [Opóźnienie ładowania CLR w dodatki pakietu Office](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)   
+ [Tworzenie dodatków narzędzi VSTO dla pakietu Office przy użyciu programu Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)   

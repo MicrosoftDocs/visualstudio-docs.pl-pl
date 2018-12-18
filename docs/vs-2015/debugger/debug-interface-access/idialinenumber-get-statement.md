@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_statement method
 ms.assetid: 22b8ee29-79ef-427f-bd05-00d255ab836b
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7437ff3a579da9f830541730b73c4c105984ce38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e031362d26e4bfa5319628fcc3d5b54ce561f188
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890715"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803477"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pobiera flagę wskazującą, czy te informacje w tym artykule opisano początku 
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT get_statement (   
+HRESULT get_statement (   
    BOOL* pRetVal  
 );  
 ```  

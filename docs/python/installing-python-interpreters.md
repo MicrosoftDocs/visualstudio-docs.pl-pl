@@ -1,22 +1,23 @@
 ---
-title: Wybieranie i instalowanie interpreterów języka Python
+title: Wybierz i zainstaluj interpretery języka Python
 description: Pełna lista interpreterów języka Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje, gdzie można znaleźć własnych instalatorów.
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: de7bd0dcbdd36b9d30ea252a70a380b190adcce2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324980"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063564"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
@@ -30,12 +31,12 @@ Program Visual Studio (wszystkie wersje) automatycznie wykrywa interpreter języ
 
 Jeśli program Visual Studio nie wykrywa zainstalowane środowisko, zobacz [ręcznie Zidentyfikuj istniejące środowisko](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio Wyświetla wszystkie znane środowisk w [ **środowiska Python** ](managing-python-environments-in-visual-studio.md) okna i automatycznie wykrywa aktualizacje istniejących interpretery.
+Visual Studio Wyświetla wszystkie znane środowisk w [ **środowiska Python** ](managing-python-environments-in-visual-studio.md#the-python-environments-window) okna i automatycznie wykrywa aktualizacje istniejących interpretery.
 
 | Interpreter | Opis |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Natywnego" i większości powszechnie stosowanych interpretera dostępne w wersjach 32-bitowych i 64-bitowych (32-bitowy zalecane). Obejmuje najnowsze funkcje języków, Maksymalna zgodność pakietu języka Python, pełna obsługa debugowania i współdziałanie z [IPython](http://ipython.org/). Zobacz również: [należy używać języka Python 2 lub 3 języka Python?](https://wiki,python.org/moin/Python2orPython3). Należy pamiętać, że Visual Studio 2015 i starsze nie obsługują środowiska Python 3.6 + i może spowodować błędy takie jak **nieobsługiwany języka python w wersji 3.6**. Korzystanie z języka Python w wersji 3.5 lub wcześniejszej zamiast tego. |
-| [IronPython](https://github.com/IronLanguages/ironpython2) | Implementacji .NET, języka Python, dostępne w wersjach 32-bitowych i 64-bitowych, zapewniając C# /F #/ Visual Basic interop dostęp do interfejsów API platformy .NET, standardowego debugowania języka Python (ale nie C++ debugowanie w trybie mieszanym) i mieszane IronPython / C# debugowania. IronPython, jednak nie obsługuje środowisk wirtualnych. |
+| [CPython](https://www.python.org/) | "Natywnego" i większości powszechnie stosowanych interpretera dostępne w wersjach 32-bitowych i 64-bitowych (32-bitowy zalecane). Obejmuje najnowsze funkcje języków, Maksymalna zgodność pakietu języka Python, pełna obsługa debugowania i współdziałanie z [IPython](https://ipython.org/). Zobacz również: [należy używać języka Python 2 lub 3 języka Python?](https://wiki,python.org/moin/Python2orPython3). Należy pamiętać, że Visual Studio 2015 i starsze nie obsługują środowiska Python 3.6 + i może spowodować błędy takie jak **nieobsługiwany języka python w wersji 3.6**. Korzystanie z języka Python w wersji 3.5 lub wcześniejszej zamiast tego. |
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Implementacji .NET, języka Python, dostępne w wersjach 32-bitowych i 64-bitowych, zapewniając C#/F#/międzyoperacyjności języka Visual Basic, dostęp do interfejsów API platformy .NET, standardowego debugowania języka Python (ale nie C++ debugowanie w trybie mieszanym) i mieszane IronPython /C# debugowania. IronPython, jednak nie obsługuje środowisk wirtualnych. |
 | [Anaconda](https://www.continuum.io) | Platforma analizy danych otwartych działającemu w języku Python i zawiera najnowszą wersję języka CPython i większość pakietów trudne do zainstalowania. Firma Microsoft zaleca Jeśli nie zdecydujesz inaczej. |
 | [PyPy](https://www.pypy.org/) | Implementacja JIT śledzenia o wysokiej wydajności, środowiska Python, którą jest dobra dla programów długotrwałych i sytuacji, w której możesz zidentyfikować wydajności problemów, ale nie może znaleźć inne rozwiązania. Współpracuje z programem Visual Studio, ale z ograniczoną obsługę zaawansowanych funkcji debugowania. |
 | [Jython](http://www.jython.org/) | Implementacja języka Python na maszynie wirtualnej Java (JVM). Podobnie jak IronPython, kod uruchomiony w Jython mogą wchodzić w interakcje z klasami Java i bibliotek, ale nie można używać wielu bibliotek przeznaczonych do języka CPython. Współpracuje z programem Visual Studio, ale z ograniczoną obsługę zaawansowanych funkcji debugowania. |

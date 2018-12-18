@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050265"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248036"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
   Można określić elementy, które program Microsoft Office Outlook wyświetlania regionu formularza przez kojarzenie regionu formularza z klasą wiadomości dla każdego elementu. Na przykład, jeśli chcesz dołączyć regionu formularza do dolnej części elementu poczty, można skojarzyć regionu formularza z `IPM.Note` klasą wiadomości.  
@@ -48,7 +48,7 @@ ms.locfileid: "50050265"
  Można również określić nazwy niestandardowych klasach wiadomości. Niestandardowych klasach wiadomości zidentyfikować niestandardowych formularzy utworzonych w programie Outlook.  
   
 > [!NOTE]  
->  Zastąpienie i regionów formularza Zamień wszystkie można określić nową nazwę klasy niestandardowy komunikat. Nie trzeba użyć nazwy klas wiadomości istniejącego formularza niestandardowego. Nazwa niestandardowej klasy wiadomości musi być unikatowa. Jednym ze sposobów, aby upewnić się, że nazwa jest unikatowa jest Konwencja nazewnictwa podobny do następującego: \< *StandardMessageClassName*>.\< *Firmy*>.\< *MessageClassName*> (na przykład: `IPM.Note.Contoso.MyMessageClass`).  
+>  Zastąpienie i regionów formularza Zamień wszystkie można określić nową nazwę klasy niestandardowy komunikat. Nie trzeba użyć nazwy klas wiadomości istniejącego formularza niestandardowego. Nazwa niestandardowej klasy wiadomości musi być unikatowa. Jednym ze sposobów, aby upewnić się, że nazwa jest unikatowa jest do Konwencja nazewnictwa podobny do następującego: \<*StandardMessageClassName*>.\< *Firmy*>.\< *MessageClassName*> (na przykład: `IPM.Note.Contoso.MyMessageClass`).  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook  
  Istnieją dwa sposoby kojarzenie regionu formularza z klasą wiadomości:  
@@ -60,7 +60,7 @@ ms.locfileid: "50050265"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Za pomocą Kreatora nowego regionu formularza programu Outlook  
  Na ostatniej stronie **nowy Region formularza programu Outlook** kreatora można wybrać standardowych klasach wiadomości i wpisz nazwy niestandardowych klasach wiadomości, które chcesz skojarzyć z regionu formularza.  
   
- Standardowych klasach wiadomości nie są dostępne, gdy region formularza zaprojektowano w celu zastąpienia cały formularz lub domyślną stronę formularza. Można określić nazwy klas standardową wiadomość tylko w przypadku formularzy, Dodaj nową stronę do formularza lub które są dołączane do dolnej części formularza. Aby uzyskać więcej informacji, zobacz [porady: dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ Standardowych klasach wiadomości nie są dostępne, gdy region formularza zaprojektowano w celu zastąpienia cały formularz lub domyślną stronę formularza. Można określić nazwy klas standardową wiadomość tylko w przypadku formularzy, Dodaj nową stronę do formularza lub które są dołączane do dolnej części formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
  Aby dołączyć co najmniej jedną klasę niestandardowy komunikat, wpisz ich nazwy w **których niestandardowych klasach wiadomości będzie wyświetlany ten region formularza?** pole.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "50050265"
   
 - Nie może przekraczać 256 znaków dla każdej nazwy klas wiadomości.  
   
-- Nie należy dołączać nazwy standardowych klasach wiadomości, jeśli region formularza zastępuje cały formularz lub domyślną stronę formularza. Można określić nazwy klas standardową wiadomość tylko w przypadku formularzy, Dodaj nową stronę do formularza lub które są dołączane do dolnej części formularza. Aby uzyskać więcej informacji, zobacz [porady: dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+- Nie należy dołączać nazwy standardowych klasach wiadomości, jeśli region formularza zastępuje cały formularz lub domyślną stronę formularza. Można określić nazwy klas standardową wiadomość tylko w przypadku formularzy, Dodaj nową stronę do formularza lub które są dołączane do dolnej części formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
   Podczas kompilowania projektu programu Visual Studio sprawdza poprawność format nazwy klas wiadomości.  
   

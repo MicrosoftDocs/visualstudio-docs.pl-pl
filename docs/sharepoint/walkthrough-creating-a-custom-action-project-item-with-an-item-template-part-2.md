@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910969"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296245"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem elementu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu można dodać nowe wystąpienie elementu projektu do projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910969"
   
 13. W **opis** wprowadź **otwiera witrynę sieci Web programu SharePoint Developer Center**.  
   
-14. W **adresu URL** wprowadź **http://msdn.microsoft.com/sharepoint/default.aspx**, a następnie wybierz **Zakończ** przycisku.  
+14. W **adresu URL** wprowadź **https://docs.microsoft.com/sharepoint/dev/**, a następnie wybierz **Zakończ** przycisku.  
   
      Program Visual Studio dodaje element o nazwie **CustomAction1** do projektu i otwiera *Elements.xml* plik w edytorze. Upewnij się, że *Elements.xml* zawiera wartości, które są określone w kreatorze.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910969"
   
      **Ustawienia listy** zostanie wyświetlona strona.  
   
-4.  W obszarze **komunikacji** nagłówkiem w górnej części strony wybierz **Centrum deweloperów programu SharePoint** połączyć, sprawdź, czy witryny sieci Web zostanie otwarta przeglądarka http://msdn.microsoft.com/sharepoint/default.aspx, a następnie zamknij przeglądarkę.  
+4.  W obszarze **komunikacji** nagłówkiem w górnej części strony wybierz **Centrum deweloperów programu SharePoint** połączyć, sprawdź, czy witryny sieci Web zostanie otwarta przeglądarka https://docs.microsoft.com/sharepoint/dev/, a następnie zamknij przeglądarkę.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
  Po zakończeniu badania elementu projektu, należy usunąć szablonu elementu projektu w doświadczalnym wystąpieniu programu Visual Studio.  

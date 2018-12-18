@@ -1,6 +1,6 @@
 ---
 title: Opcje, edytor tekstu, JavaScript, IntelliSense
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,54 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ca451f4585e57c430456412e1811ddb56d8adf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220394"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670783"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
-Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka JavaScript. Możesz uzyskać dostęp **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie rozwijając **edytora tekstów**,  **JavaScript**, **IntelliSense.**
+Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka JavaScript. Możesz uzyskać dostęp **IntelliSense** strony, wybierając **narzędzia** > **opcje** na pasku menu, a następnie rozwijając **edytora tekstów**  >  **JavaScript** > **IntelliSense.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 **IntelliSense** strona zawiera następujące sekcje:
 
-## <a name="validation"></a>Walidacja
- Te opcje służą do ustawiania preferencji, w jaki sposób edytor kodu JavaScript sprawdza poprawność składni w dokumencie.
-
-## <a name="uielement-list"></a>Lista elementów UI
- **Pokaż błędy składniowe**
-
- Gdy to pole wyboru nie jest zaznaczone, edytor kodu JavaScript nie pokazuje błędów składniowych. Jest to przydatne, jeśli pracujesz z nieswoim kodem, w którym nie zamierzasz naprawiać błędów składniowych.
-
- Gdy to pole wyboru jest zaznaczone, masz możliwość dokonania wyboru **Pokaż błędy jako ostrzeżenia** pole wyboru.
-
- **Pokaż błędy jako ostrzeżenia**
-
- Gdy to pole wyboru jest zaznaczone, błędy JavaScript są pokazywane jako ostrzeżenia zamiast błędów na liście błędów.
-
- **Pobierz zdalne odwołania (np. http://) dla plików w projekcie plików pozostałych**
-
- Gdy to pole wyboru jest zaznaczone i gdy masz plik JavaScript otwarty poza kontekstem projektu, Visual Studio pobierze zdalne pliki JavaScript, do których odwołuje się plik w celu dostarczania informacji w technologii IntelliSense. Gdy ta opcja jest zaznaczona, pliki zostaną pobrane po włączeniu ich jako odwołania w pliku JavaScript.
-
-> [!NOTE]
-> Dla projektów sieci web domyślnie pobierane są pliki zdalne, do którego odwołuje się projekt.
-
-
 ## <a name="statement-completion"></a>Dokańczanie instrukcji
  Możesz użyć tych opcji do zmiany zachowania dokańczania instrukcji IntelliSense.
 
-## <a name="uielement-list"></a>Lista elementów UI
- **Używaj tylko tabulatora lub enter, aby zatwierdzić**
+### <a name="uielement-list"></a>Lista elementów UI
+ **Składać Tab lub Enter, aby zatwierdzić**
 
- Gdy to pole wyboru jest zaznaczone, edytor kodu JavaScript dołącza instrukcje z elementami zaznaczonymi na liście dokańczania dopiero po wybraniu klawisza Tab lub Enter. Gdy to pole wyboru nie jest zaznaczone, inne znaki, takie jak kropka, przecinek, dwukropek, nawias otwierający i otwierający nawias klamrowy ({) również mogą dołączać instrukcje z wybranymi elementami.
+ Gdy to pole wyboru jest zaznaczone, Edytor kodu JavaScript dołącza instrukcje z elementami zaznaczonymi na liście dokańczania dopiero po wybraniu **kartę** lub **Enter** klucza. Usuń zaznaczenie tego pola wyboru, inne znaki — na przykład okres, przecinek, dwukropek, nawiasem otwierającym i otwierający nawias klamrowy ({}) — można także dołączyć instrukcje z wybranymi elementami.
 
 ## <a name="references"></a>Odwołania
  Można używać tych opcji, aby określać typy plików .js IntelliSense, które znajdują się w zakresie dla różnych typów projektów JavaScript. Odwołania IntelliSense są zazwyczaj używane do obsługi technologii IntelliSense dla obiektów globalnych. Można również użyć tej strony, aby ustawić kolejność ładowania skryptów, które muszą być ładowane w czasie wykonywania, oraz aby dodawać pliki rozszerzeń IntelliSense.
 
-## <a name="uielement-list"></a>Lista elementów UI
+### <a name="uielement-list"></a>Lista elementów UI
  **Grupy odwołań**
 
  Ta opcja określa typ grupy odwołania. Obsługiwane są trzy grupy odwołań:
@@ -87,6 +65,15 @@ Ta opcja określa kolejność, w której pliki są ładowane do kontekstu usług
 **Dodaj odwołanie do grupy**
 
 Ta opcja umożliwia dodawanie dodatkowych plików .js IntelliSense przez przechodzenie do odpowiednich plików.
+
+**Pobierz zdalne odwołania (np. http://) dla plików w projekcie plików pozostałych**
+
+Gdy to pole wyboru jest zaznaczone, a jeśli masz plik JavaScript otwarty poza kontekstem projektu, Visual Studio pobierze zdalne pliki JavaScript, do których odwołuje się plik w celu przekazywania informacji IntelliSense. Jeśli ta opcja jest zaznaczona, pliki zostaną pobrane po włączeniu ich jako odwołania w pliku JavaScript.
+
+> [!NOTE]
+> Dla projektów sieci web domyślnie pobierane są pliki zdalne, do którego odwołuje się projekt.
+
+
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: Kontrola wersji w programie Visual Studio | Usługa VSTS i TFS
-description: Przewodnik Wprowadzenie do kontroli wersji w programie Viual Studio
+title: Kontrola wersji
+description: Przewodnik Wprowadzenie do kontroli wersji w programie Visual Studio
 keywords: Kontrola wersji usługi VSTS, TFS,
 author: steved0x
 ms.manager: douge
@@ -12,23 +12,24 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: e37645f8960aae54907dffeb0bcb88848d9cd63f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 3640fba7d1ca3993841adb94dfdd08bc7d405e9b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320582"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348165"
 ---
 # <a name="version-control-in-visual-studio"></a>Kontrola wersji w programie Visual Studio
 
 Systemy kontroli wersji pomogły Ci śledzić zmiany w kodzie wraz z upływem czasu. Po wprowadzeniu dowolnych zmian, system kontroli wersji wykonuje migawkę plików. System kontroli wersji trwale zapisuje tej migawki, dzięki czemu użytkownik może ją później przywrócić Jeśli jest potrzebna. Program Visual Studio udostępnia [Git](/azure/devops/repos/git/index?view=vsts) i [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/index?view=vsts). Aby wybrać między dwoma systemami, zobacz [Wybieranie właściwej kontroli wersji dla projektu](/azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
+
 Git to obecnie najczęściej używany system kontroli wersji i szybko staje się standardem kontroli wersji. Git to Rozproszony system kontroli wersji, co oznacza, że Twoja lokalna kopia kodu jest kompletną wersją repozytorium kontroli. Upewnij te w pełni funkcjonalne repozytoria lokalne ułatwiają pracę w trybie offline lub zdalnie. Pracę zatwierdzasz lokalnie, a następnie synchronizujesz swoją kopię repozytorium z kopią na serwerze. Taki wzorzec pracy różni się od scentralizowanej kontroli wersji której klient musi synchronizować kod z serwerem przed utworzeniem nowych wersji kodu.
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/azure/devops/git/what-is-git">
+        <a href="/azure/devops/git/what-is-git">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -46,7 +47,7 @@ Git to obecnie najczęściej używany system kontroli wersji i szybko staje się
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -56,7 +57,7 @@ Git to obecnie najczęściej używany system kontroli wersji i szybko staje się
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wprowadzenie do usługi Git przy użyciu programu Visual Studio</h3>
+                        <h3>Rozpoczynanie pracy z usługą Git w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@ Git to obecnie najczęściej używany system kontroli wersji i szybko staje się
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/clone">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -107,7 +108,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -125,7 +126,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
         </a>
     </li>
    <li>
-        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -144,9 +145,9 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
     </li>
 </ul>
 
-
 ## <a name="resources"></a>Resources
 
 - [Podręcznik usługi Git Pro](https://git-scm.com/book/en/v2)
 - [Planowanie migracji do usługi Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
 - [Migrowanie z TFVC do usługi Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)
+- [Kontrola wersji (Visual Studio dla komputerów Mac)](/visualstudio/mac/version-control)

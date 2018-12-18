@@ -20,28 +20,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0da6dac3ffde6e6394546e78462205eb4fa08c8c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671407"
 ---
 # <a name="visio-object-model-overview"></a>Model obiektu Visio ― omówienie
-  Do opracowywania rozwiązań pakietu Office dla programu Microsoft Office Visio, możesz użyć modelu obiektów programu Visio. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowego zestawu międzyoperacyjnego dla programu Visio i są zdefiniowane w `Microsoft.Office.Interop.Visio` przestrzeni nazw.  
+  Do opracowywania rozwiązań pakietu Office dla programu Microsoft Office Visio, możesz korzystać z modelu obiektów programu Visio. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowy zestaw międzyoperacyjny dla programu Visio i są definiowane w `Microsoft.Office.Interop.Visio` przestrzeni nazw.  
   
- Ten temat zawiera krótki przegląd modelu obiektów programu Visio. Aby dowiedzieć się, jak za pomocą modelu obiektów programu Visio do wykonywania zadań w projektach pakietu Office zobacz następujące tematy:  
+ Ten temat zawiera krótkie omówienie modelu obiektów programu Visio. Aby dowiedzieć się, jak za pomocą modelu obiektów programu Visio do wykonywania zadań w projektach pakietu Office zobacz następujące tematy:  
   
 -   [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md)  
   
--   [Praca z kształtów Visio](../vsto/working-with-visio-shapes.md)  
+-   [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md)  
   
-## <a name="understand-the-visio-object-model"></a>Zrozumienie modelu obiektów programu Visio  
- Visio zawiera wiele obiektów, które mogą prowadzić interakcję. Te obiekty są zorganizowane w hierarchii, która jest ściśle zgodna interfejsu użytkownika. W górnej części hierarchii jest [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx) obiektu. Ten obiekt reprezentuje bieżące wystąpienie programu Visio. `Microsoft.Office.Interop.Visio.Application` Zawiera obiekt `Microsoft.Office.Interop.Visio.Document` i `Microsoft.Office.Interop.Visio.Page` obiektów, jak również `Microsoft.Office.Interop.Visio.Documents` i `Microsoft.Office.Interop.Visio.Pages` kolekcji. Każdy z tych obiektów i kolekcji ma wiele metod i właściwości, do których masz dostęp do manipulowania i interakcji z nim.  
+## <a name="understand-the-visio-object-model"></a>Informacje o modelu obiektów programu Visio  
+ Program Visio zawiera wiele obiektów, z którymi możesz wchodzić w interakcje. Te obiekty są zorganizowane w hierarchii, który jest ściśle zgodna interfejsu użytkownika. W górnej części hierarchii jest [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) obiektu. Ten obiekt reprezentuje bieżące wystąpienie programu Visio. `Microsoft.Office.Interop.Visio.Application` Obiekt zawiera `Microsoft.Office.Interop.Visio.Document` i `Microsoft.Office.Interop.Visio.Page` obiekty, jak również `Microsoft.Office.Interop.Visio.Documents` i `Microsoft.Office.Interop.Visio.Pages` kolekcji. Każda z tych obiektów i kolekcji ma wiele metod i właściwości, do których masz dostęp do manipulowania i korzystać z niego.  
   
- Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA, aby uzyskać [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx), [Microsoft.Office.Interop.Visio.Document](https://msdn.microsoft.com/library/office/ff765575.aspx), i [ Microsoft.Office.Interop.Visio.Page](https://msdn.microsoft.com/library/office/ff767035.aspx) obiektów, a także [Microsoft.Office.Interop.Visio.Documents](https://msdn.microsoft.com/library/office/ff768812.aspx) i [Microsoft.Office.Interop.Visio.Pages](https://msdn.microsoft.com/library/office/ff766165.aspx) Kolekcje.  
+ Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application), [Microsoft.Office.Interop.Visio.Document](/office/vba/api/Visio.Document), i [ Microsoft.Office.Interop.Visio.Page](/office/vba/api/Visio.Page) obiektów, a także [Microsoft.Office.Interop.Visio.Documents](/office/vba/api/Visio.Documents) i [Microsoft.Office.Interop.Visio.Pages](/office/vba/api/Visio.Pages) Kolekcje.  
   
- W poniższych sekcjach opisano krótko najwyższego poziomu obiektów i ich interakcji ze sobą. Te obiekty obejmują następujące obiekty:  
+ W poniższych sekcjach opisano skrótowo obiektów najwyższego poziomu i jak współdziałają ze sobą. Te obiekty obejmują następujące obiekty:  
   
 -   Obiekt aplikacji  
   
@@ -50,38 +50,38 @@ ms.locfileid: "34767835"
 -   obiekt strony  
   
 ### <a name="application-object"></a>Obiekt aplikacji  
- Obiekt Microsoft.Office.Interop.Visio.Application reprezentuje aplikacji programu Visio i jest elementem nadrzędnym wszystkie inne obiekty. Jej elementów członkowskich się zazwyczaj do programu Visio jako całość. Można użyć właściwości i metod Microsoft.Office.Interop.Visio.Application i `Microsoft.Office.Interop.Visio.ApplicationSettings` obiekty do kontrolowania środowiska programu Visio.  
+ Obiekt Microsoft.Office.Interop.Visio.Application reprezentuje aplikacji Visio, a jest nadrzędne względem wszystkich innych obiektów. Jej członków zwykle mają zastosowanie do programu Visio jako całości. Można użyć właściwości i metody Microsoft.Office.Interop.Visio.Application i `Microsoft.Office.Interop.Visio.ApplicationSettings` obiektów w celu kontrolowania środowiska programu Visio.  
   
- W projektów dodatku VSTO uzyskujesz dostęp za pomocą obiektu Microsoft.Office.Interop.Visio.Application `Application` pole `ThisAddIn` klasy. Aby uzyskać więcej informacji, zobacz [programowania VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+ W projektach dodatku narzędzi VSTO obiektu Microsoft.Office.Interop.Visio.Application mieli dostęp za pomocą `Application` pole `ThisAddIn` klasy. Aby uzyskać więcej informacji, zobacz [programowania dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md).  
   
 ### <a name="document-object"></a>Obiekt dokumentu  
- Obiekt Microsoft.Office.Interop.Visio.Document jest podstawą do programowania programu Visio. Reprezentuje rysunku, wzornika lub pliku szablonu. Po otwarciu dokumentu programu Visio lub Utwórz nowy dokument, Utwórz nowy obiekt Microsoft.Office.Interop.Visio.Document, które jest dodawane do kolekcji Microsoft.Office.Interop.Visio.Documents obiektu Microsoft.Office.Interop.Visio.Application .  
+ Obiekt Microsoft.Office.Interop.Visio.Document stanowi podstawę do programowania programu Visio. Reprezentuje rysunku, wzornika lub pliku szablonu. Po otwarciu dokumentu programu Visio lub utworzyć nowy dokument, Utwórz nowy obiekt Microsoft.Office.Interop.Visio.Document, który zostanie dodany do kolekcji Microsoft.Office.Interop.Visio.Documents obiektu Microsoft.Office.Interop.Visio.Application .  
   
- Dokument, który ma fokus jest wywoływana aktywny dokument. Jest reprezentowana przez `Microsoft.Office.Interop.Visio.Application.ActiveDocument` właściwości obiektu Microsoft.Office.Interop.Visio.Application.  
+ Dokument, który ma fokus nosi nazwę aktywnego dokumentu. Jest reprezentowany przez `Microsoft.Office.Interop.Visio.Application.ActiveDocument` właściwości obiektu Microsoft.Office.Interop.Visio.Application.  
   
 ### <a name="page-object"></a>obiekt strony  
- Obiekt Microsoft.Office.Interop.Visio.Page reprezentuje obszaru rysowania strony pierwszego planu lub stroną tle. Można użyć `Microsoft.Office.Interop.Visio.Page.Background` właściwości w celu określenia, czy jest to strona pierwszego planu i tła.  
+ Obiekt Microsoft.Office.Interop.Visio.Page reprezentuje obszaru rysowania stronę pierwszego planu i tła strony. Możesz użyć `Microsoft.Office.Interop.Visio.Page.Background` właściwości w celu określenia, czy jest to strona pierwszego planu i tła.  
   
- Aby utworzyć kształtów, należy użyć metody, które obejmują `Microsoft.Office.Interop.Visio.Page.DrawSpline` i `Microsoft.Office.Interop.Visio.Page.DrawOval` metody. Ponadto można pobrać wzorce wzorników i umieścić kształtów na stronie za pomocą `Microsoft.Office.Interop.Visio.Page.Drop` lub `Microsoft.Office.Interop.Visio.Page.DropMany` metody.  
+ Aby tworzyć kształty, można użyć metod, które obejmują `Microsoft.Office.Interop.Visio.Page.DrawSpline` i `Microsoft.Office.Interop.Visio.Page.DrawOval` metody. Ponadto pobieranie wzorców z wzorników i umieścić kształty na stronie przy użyciu `Microsoft.Office.Interop.Visio.Page.Drop` lub `Microsoft.Office.Interop.Visio.Page.DropMany` metody.  
   
-## <a name="use-the-visio-object-model-documentation"></a>Skorzystaj z dokumentacji modelu obiektów programu Visio  
- Aby uzyskać pełne informacje o modelu obiektów programu Visio mogą odwoływać się do odwołania do modelu obiektu VBA programu Visio. Odwołania do modelu obiektu VBA dokumentów modelu obiektów programu Visio, jak jest narażony na język Visual Basic dla kodu aplikacji (VBA). Aby uzyskać więcej informacji, zobacz [odwołania do modelu obiektu Visio 2010](http://go.microsoft.com/fwlink/?LinkId=199775).  
+## <a name="use-the-visio-object-model-documentation"></a>Zapoznaj się z dokumentacją model obiektu Visio  
+ Aby uzyskać pełne informacje na temat modelu obiektów programu Visio mogą odwoływać się do dokumentacja modelu obiektów programu Visio VBA. Dokumentacja modelu obiektów VBA dokumenty model obiektów programu Visio, jak jest narażony na język Visual Basic for Applications (VBA) kod. Aby uzyskać więcej informacji, zobacz [dokumentacja modelu obiektów programu Visio 2010](http://go.microsoft.com/fwlink/?LinkId=199775).  
   
- Wszystkie obiekty i elementów członkowskich w odwołania do modelu obiektu VBA odpowiadają typy i składniki w podstawowy zestaw międzyoperacyjny programu Visio (PIA). Na przykład `Document` obiektu odwołania do modelu obiektu VBA odpowiada typowi Microsoft.Office.Interop.Visio.Document w PIA programu Visio. Odwołania do modelu obiektu VBA zapewnia przykłady kodu dla większości właściwości, metod i zdarzeń, jednak należy translacji kod VBA w niniejszej dokumentacji Visual Basic lub Visual C#, jeśli chcesz używać ich w projekcie dodatku narzędzi VSTO programu Visio utworzonego za pomocą Visual Studio.  
+ Wszystkie obiekty i elementy członkowskie w dokumentacja modelu obiektów VBA odnoszą się do typów i członków w programie Visio podstawowego zestawu międzyoperacyjnego (PIA). Na przykład `Document` obiektu w dokumentacja modelu obiektów VBA odpowiada typowi Microsoft.Office.Interop.Visio.Document w PIA programu Visio. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metody i zdarzenia, należy translacji kodu VBA w ramach tego odwołania do Visual Basic lub Visual C# Jeśli chcesz używać ich w projekcie dodatku narzędzi VSTO programu Visio utworzonego za pomocą Program Visual Studio.  
   
 > [!NOTE]  
->  W tej chwili nie istnieje żadne dokumentacji dla programu Visio podstawowego zestawu międzyoperacyjnego.  
+>  W tej chwili brak Dokumentacja referencyjna dla podstawowego zestawu międzyoperacyjnego programu Visio.  
   
- Przykłady kodu powiązanego i dodatkowe narzędzia do tworzenia rozwiązań programu Visio, zobacz [zestaw Visio 2010 software development kit](http://go.microsoft.com/fwlink/?LinkId=196501).  
+ Przykłady kodu powiązany i dodatkowych narzędzi do tworzenia rozwiązania programu Visio można znaleźć [zestaw Visio 2010 software development kit](http://go.microsoft.com/fwlink/?LinkId=196501).  
   
-### <a name="additional-types-in-primary-interop-assemblies"></a>Dodatkowe typy w podstawowe zestawy międzyoperacyjne  
- Typów można znaleźć w podstawowe zestawy międzyoperacyjne, które nie są widoczne w VBA z powodu różnic implementacji. VBA zawiera widok modelu obiektów programu Visio, zawierający tylko te obiekty i elementów członkowskich, które mogą korzystać bezpośrednio. Podstawowe zestawy międzyoperacyjne udostępnianie tego samego modelu obiektu, ale obejmuje to też inne interfejsy, klasy i elementów członkowskich, które wykonuje obiektów w modelu obiektów COM z kodem zarządzanym. Te dodatkowe elementy nie są przeznaczone do użycia bezpośrednio w kodzie.  
+### <a name="additional-types-in-primary-interop-assemblies"></a>Dodatkowe typy w podstawowych zestawów międzyoperacyjnych  
+ Typów można znaleźć w podstawowe zestawy międzyoperacyjne, które nie są widoczne (VBA) z powodu różnic w implementacji. VBA udostępnia widok modelu obiektów programu Visio, który zawiera tylko te obiekty i elementy członkowskie, które są dostępne bezpośrednio. Podstawowe zestawy międzyoperacyjne udostępnianie tego samego modelu obiektu, ale te aktualizacje obejmują również inne interfejsy, klasy i elementów członkowskich, które dadzą obiekty w modelu obiektów COM z kodem zarządzanym. Te dodatkowe elementy nie są przeznaczone do użycia bezpośrednio w kodzie.  
   
- Aby uzyskać więcej informacji, zobacz [Przegląd klasy i interfejsy w podstawowe zestawy międzyoperacyjne pakietu Office](http://go.microsoft.com/fwlink/?LinkId=189592) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
+ Aby uzyskać więcej informacji, zobacz [Przegląd klasy i interfejsy podstawowe zestawy międzyoperacyjne pakietu Office](http://go.microsoft.com/fwlink/?LinkId=189592) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md)   
- [Praca z kształtów Visio](../vsto/working-with-visio-shapes.md)  
+ [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md)  
   
   

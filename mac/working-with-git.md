@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624175"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296453"
 ---
 # <a name="working-with-git"></a>Praca z usługą Git
 
@@ -24,7 +24,7 @@ Na poniższej ilustracji przedstawiono opcje dostarczane przez program Visual St
 
 ![Element menu kontroli wersji](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>Wypychanie i ściąganie 
+## <a name="push-and-pull"></a>Wypychanie i ściąganie
 
 Wypychanie i ściąganie są dwa najczęściej używane akcje w ramach usługi Git. Aby zsynchronizować zmiany zostały wprowadzone do repozytorium zdalnego dla innych osób, musisz mieć **ściągnięcia** z tego miejsca. Odbywa się w programie Visual Studio dla komputerów Mac, wybierając **kontroli wersji > rozwiązania Update**.
 
@@ -54,11 +54,11 @@ Umożliwiają one następujące akcje:
 
     ![Karta dziennika](media/version-control-gitLog.png)
 
-* **Scalanie** — może to służyć w przypadku konfliktu scalania podczas zatwierdzania pracy. Pokazuje wizualną reprezentację zmiany wprowadzone przez Ciebie i innych deweloperów, dzięki czemu możesz połączyć obie sekcje kodu nie pozostawia żadnych śladów. 
+* **Scalanie** — może to służyć w przypadku konfliktu scalania podczas zatwierdzania pracy. Pokazuje wizualną reprezentację zmiany wprowadzone przez Ciebie i innych deweloperów, dzięki czemu możesz połączyć obie sekcje kodu nie pozostawia żadnych śladów.
 
-## <a name="switching-branches"></a>Przełączanie gałęzi 
+## <a name="switching-branches"></a>Przełączanie gałęzi
 
-Domyślnie pierwszej gałęzi, które są tworzone w repozytorium jest znany jako **wzorzec** gałęzi. Nie ma pod względem technicznym żadnych różnic między głównej gałęzi i inne, ale gałąź główna jest tą, która jest w większości przypadków traktować w zespołów programistycznych jako gałąź "live" lub "produkcja".
+Domyślnie pierwszej gałęzi, które są tworzone w repozytorium jest znany jako **wzorzec** gałęzi. Nie ma pod względem technicznym żadnych różnic między głównej gałęzi i inne, ale gałąź główna jest tą, która jest w większości przypadków traktować w zespołów programistycznych jako gałąź "live" lub "produkcja".
 
 Niezależnie od wiersza rozwoju mogą być tworzone przez Rozgałęzianie poza głównego (lub dowolnej innej gałęzi istotnego dla badania). Dzięki temu można nowej wersji głównej gałęzi w punkcie w czasie, co do tworzenia aplikacji, niezależnie od co to jest "live". Korzystając z odgałęzień w ten sposób jest często używana na potrzeby funkcji podczas tworzenia oprogramowania
 
@@ -80,7 +80,7 @@ Zobacz bieżącej gałęzi w konsoli rozwiązania, obok nazwy projektu:
 
  ![Bieżąca gałąź wyświetlane w konsoli rozwiązania](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Przeglądu i zatwierdzania 
+## <a name="reviewing-and-committing"></a>Przeglądu i zatwierdzania
 
 O przegląd zmian dokonanych w plikach, użyj zmiany, polecenia Blame, dzienników i scalić kartach każdego dokumentu, przedstawione wcześniej w tym temacie.
 
@@ -90,8 +90,12 @@ Przejrzyj wszystkie zmiany w projekcie, przechodząc do **kontroli wersji > Prze
 
 Umożliwia to wyświetlanie wszystkich zmian w każdym pliku projektu z możliwością przywrócenia, Utwórz poprawkę lub czy zatwierdzić.
 
-Aby przekazać plik do repozytorium zdalnego, naciśnij klawisze **zatwierdzenia...** , wprowadź wiadomość dotyczącą zatwierdzenia i upewnij się, za pomocą przycisku zatwierdzenia:
+Aby przekazać plik do repozytorium zdalnego, naciśnij klawisze **zatwierdzenia**, wprowadź wiadomość dotyczącą zatwierdzenia i upewnij się, za pomocą przycisku zatwierdzenia:
 
 ![Zatwierdzanie pliku](media/version-control-gitCommit.png)
 
 Raz zostały zatwierdzone zmiany i przekazać je do repozytorium zdalnego, aby umożliwić innym użytkownikom je zobaczyć.
+
+## <a name="see-also"></a>Zobacz także
+
+* [Udostępnij swój kod za pomocą programu Visual Studio 2017 i Azure repozytoriów Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

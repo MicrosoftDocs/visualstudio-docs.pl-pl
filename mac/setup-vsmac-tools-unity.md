@@ -1,18 +1,18 @@
 ---
 title: Instalator programu Visual Studio dla komputerów Mac Tools for Unity
 description: Konfigurowanie i instalowanie narzędzi Unity tools do użytku w programie Visual Studio dla komputerów Mac
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a661e3cae151e4d6199fd2a588ebd62e098de6c
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836349"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027331"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Instalator programu Visual Studio dla komputerów Mac Tools for Unity
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Konfigurowanie programu Visual Studio dla komputerów Mac Tools for Unity
 
 W tej sekcji wyjaśniono, jak rozpocząć korzystanie z programu Visual Studio dla komputerów Mac Tools for Unity.
 
@@ -20,7 +20,7 @@ W tej sekcji wyjaśniono, jak rozpocząć korzystanie z programu Visual Studio d
 
 ### <a name="unity-bundled-installation"></a>Unity powiązane instalacji
 
-Począwszy od Unity 2018.1, Visual Studio for Mac jest ustawieniem domyślnym C# środowisko IDE dla aparatu Unity i są objęte Asystenta pobieranie aparatu Unity, a także narzędzie instalacji Centrum aparatu Unity. Pobierz oprogramowanie Unity z [store.unity.com](https://store.unity.com/).
+Począwszy od Unity 2018.1, Visual Studio for Mac jest ustawieniem domyślnym C# zintegrowane środowisko projektowe (IDE) dla aparatu Unity i są objęte Asystenta pobieranie aparatu Unity, a także narzędzie instalacji Centrum aparatu Unity. Pobierz oprogramowanie Unity z [store.unity.com](https://store.unity.com/).
 
 Podczas instalacji upewnij się, że zaznaczono Visual Studio dla komputerów Mac, na liście składników do zainstalowania przy użyciu aparatu Unity:
 

@@ -1,6 +1,6 @@
 ---
-title: W jaki sposób można debugować naruszenia zasad dostępu przy uruchamianiu programu poza debugerem? | Microsoft Docs
-ms.custom: ''
+title: Debugowanie naruszenia zasad dostępu w przypadku uruchamiania aplikacji poza debugerem | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,19 +20,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47941b2d98029c6466451fb947e31e71d14e6c57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 42284de1195afb3b0926b15335c8e37bdcd5ec30
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473013"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048479"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>W jaki sposób można debugować naruszenia zasad dostępu przy uruchamianiu programu poza debugerem?
+
 ## <a name="problem-description"></a>Opis problemu  
- Program działa poprawnie w środowisku Visual Studio, ale po uruchomieniu go autonomicznym z systemem operacyjnym Windows, generuje naruszenia zasad dostępu. Jak można debugować ten problem?  
+ Program działa poprawnie w środowisku Visual Studio, ale gdy uruchamiam go autonomicznego w systemie operacyjnym Windows, generuje naruszenie zasad dostępu. W jaki sposób można debugować ten problem?  
   
 ## <a name="solution"></a>Rozwiązanie  
- Ustaw [Just in time debugowania](../debugger/just-in-time-debugging-in-visual-studio.md) opcji i uruchomić program autonomicznej, do momentu naruszenia zasad dostępu. Następnie w **naruszenie zasad dostępu** okno dialogowe, możesz kliknąć **anulować** można uruchomić debugera.  
+ Ustaw [Just-in-time debugging](../debugger/just-in-time-debugging-in-visual-studio.md) opcji, a następnie uruchom program autonomiczny, dopóki nie nastąpi naruszenie zasad dostępu. Następnie w **naruszenie zasad dostępu** okno dialogowe, możesz kliknąć pozycję **anulować** można uruchomić debugera.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

@@ -1,5 +1,5 @@
 ---
-title: Zarządzaj kontrolerami testów i agentów testowych w programie Visual Studio
+title: Zarządzanie kontrolerami testów i agentami testowymi
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926595"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059499"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
 Jeśli chcesz użyć programu Visual Studio, aby zdalnie uruchomić testy, rozpowszechnić testy na wielu komputerach lub uruchomić testy obciążenia, należy skonfigurować kontroler testów, agentów testowych i plik ustawień testu. W tym temacie opisano sposób zarządzania kontrolerami testów i agentami testowymi po zainstalowaniu i skonfigurowaniu ich po raz pierwszy.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Jeśli używasz Microsoft Test Manager do uruchomienia testów w środowisku laboratoryjnym, możesz zarządzać kontrolerami testów i ich agentami za pomocą **Menedżera kontrolera testów** w **Centrum laboratoryjnego** dla programu Microsoft Test Manager. Ten temat dotyczy tylko wtedy, gdy używasz programu Visual Studio, aby uruchomić testy.
 

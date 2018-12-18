@@ -1,5 +1,5 @@
 ---
-title: Edytowanie scenariuszy testu obciążenia w programie Visual Studio
+title: Scenariusze testów obciążenia
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837142"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896539"
 ---
 # <a name="edit-load-test-scenarios"></a>Edytowanie scenariuszy testu obciążenia
 
 Test obciążeniowy *scenariusza* określa wzorca obciążenia, test mieszany, mieszaną przeglądarkę i mieszany profil sieciowy. Scenariusze są ważne, ponieważ umożliwiają one Konfigurowanie testów, aby zasymulować złożonych, realistycznych obciążeń.
 
 Na przykład użytkownik może testować witrynę e-commerce, która ma internetowy fronton używany przez setki współbieżnych użytkowników korzystających z mieszczących się za pośrednictwem wielu szybkość połączeń i różnych przeglądarek. Tym samym witryna może mieć również funkcję administracji używaną przez pracowników wewnętrznych do aktualizacji produktów oraz do wyświetlania statystyk. Ci użytkownicy wewnętrzni zazwyczaj uzyskują dostęp lokacji przy użyciu tej samej przeglądarki i szybkiego połączenia sieci LAN. Chcesz Zastosuj hermetyzację właściwości tych dwóch różnych grup użytkowników w różnych scenariuszach. Każdy scenariusz może zawierać typ użytkownika wirtualnego. W takim scenariuszu testu obciążenia można wysyłać do reprezentowania klientów wirtualnych i inny scenariusz może również reprezentować wirtualnych użytkowników wewnętrznej witryny sieci Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Składniki scenariusza
 

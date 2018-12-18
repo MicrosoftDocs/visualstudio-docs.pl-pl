@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774919"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295972"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio
 
@@ -235,13 +235,13 @@ Jeśli chcesz ręcznie utworzyć pakiet VSIX dla rozszerzenia narzędzi programu
 
 4.  Zmodyfikuj plik extension.vsixmanifest:
 
-    -   Dodaj `Microsoft.VisualStudio.MefComponent` pod `Assets` elementu, a następnie ustaw wartość nowego elementu do ścieżki względnej zestawu, który implementuje rozszerzenie w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).
+    -   Dodaj `Microsoft.VisualStudio.MefComponent` pod `Assets` elementu, a następnie ustaw wartość nowego elementu do ścieżki względnej zestawu, który implementuje rozszerzenie w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Jeśli rozszerzenie zawiera polecenia programu SharePoint, która wywołuje w modelu obiektów serwera dla programu SharePoint, należy dodać `Microsoft.VisualStudio.Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę zestawu, który implementuje polecenie programu SharePoint w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    -   Jeśli rozszerzenie zawiera polecenia programu SharePoint, która wywołuje w modelu obiektów serwera dla programu SharePoint, należy dodać `Microsoft.VisualStudio.Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę zestawu, który implementuje polecenie programu SharePoint w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Jeśli rozszerzenie zawiera szablon projektu lub elementu szablonu, należy dodać `ProjectTemplate` lub `ItemTemplate` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę folderu, który zawiera szablon w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [ProjectTemplate — Element (schemat VSX)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1) i [elementów właściwości ItemTemplate (schemat VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).
+    -   Jeśli rozszerzenie zawiera szablon projektu lub elementu szablonu, należy dodać `ProjectTemplate` lub `ItemTemplate` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę folderu, który zawiera szablon w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [ProjectTemplate — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) i [elementów właściwości ItemTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Jeśli rozszerzenie zawiera Kreatora niestandardowego szablonu projektu lub elementu szablonu, należy dodać `Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu w pakiecie VSIX, a następnie ustaw `AssemblyName` atrybutu nazwy pełnego zestawu (w tym wersji, kulturę i token klucza publicznego). Aby uzyskać więcej informacji, zobacz [Element zależności (schemat VSX)](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    -   Jeśli rozszerzenie zawiera Kreatora niestandardowego szablonu projektu lub elementu szablonu, należy dodać `Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu w pakiecie VSIX, a następnie ustaw `AssemblyName` atrybutu nazwy pełnego zestawu (w tym wersji, kulturę i token klucza publicznego). Aby uzyskać więcej informacji, zobacz [Element zależności (schemat VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Przykład
 

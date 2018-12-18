@@ -1,5 +1,5 @@
 ---
-title: Dodawanie źródła danych do testu wydajności sieci web w programie Visual Studio
+title: Dodawanie źródła danych do testu wydajności sieci Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930716"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065210"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
 Wiązanie danych, aby zapewnić różne wartości w ten sam test, na przykład, aby zapewnić różne wartości do formularza Parametry księgowania.
 
- ![Wiązanie danych do testu wydajności sieci web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Zamierzamy korzystanie z przykładowej aplikacji platformy ASP.NET. Posiada trzy *.aspx* strony — domyślną stronę, stronę czerwoną i niebieską stronę. Domyślna strona zawiera formant radiowy, do wyboru czerwony lub niebieski i przycisk Prześlij. Pozostałe dwa *.aspx* strony są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu Prześlij na stronie domyślnej wyświetlamy jedną z innych stron. Możesz pobrać [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowy lub po prostu wykonaj własną aplikację sieci web.
+![Wiązanie danych do testu wydajności sieci web](../test/media/web_test_databinding_conceptual.png)
 
- ![Uruchamianie aplikacji sieci web do zbadania](../test/media/web_test_databinding_runwebapp.png)
+Zamierzamy korzystanie z przykładowej aplikacji platformy ASP.NET. Posiada trzy *.aspx* strony — domyślną stronę, stronę czerwoną i niebieską stronę. Domyślna strona zawiera formant radiowy, do wyboru czerwony lub niebieski i przycisk Prześlij. Pozostałe dwa *.aspx* strony są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu Prześlij na stronie domyślnej wyświetlamy jedną z innych stron. Możesz pobrać [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowy lub po prostu wykonaj własną aplikację sieci web.
 
- Twoje rozwiązanie powinien również zawierać test wydajności sieci web, który przegląda strony aplikacji sieci web.
+![Uruchamianie aplikacji sieci web do zbadania](../test/media/web_test_databinding_runwebapp.png)
 
- ![Rozwiązanie za pomocą testu wydajności sieci web](../test/media/web_test_databinding_solution.png)
+Twoje rozwiązanie powinien również zawierać test wydajności sieci web, który przegląda strony aplikacji sieci web.
+
+![Rozwiązanie za pomocą testu wydajności sieci web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Tworzenie bazy danych SQL
 

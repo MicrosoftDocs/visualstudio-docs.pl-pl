@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07031432218f2d4e0eb037582f2b1f5a76193cdb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879762"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672733"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z **środowiska** kategorii `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, który umożliwia dostęp do kolekcji właściwości, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
@@ -161,8 +161,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Kontrolowanie ustawień opcji](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Określanie nazw elementów właściwości na stronach opcji](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Określanie nazw elementów właściwości na stronach opcji](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Strona opcji, czcionki i kolory — Właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Strona opcji, edytor tekstu — Właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

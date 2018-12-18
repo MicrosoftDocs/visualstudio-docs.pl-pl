@@ -23,102 +23,109 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b1d1567feba85023d6d7bf5fc1bc1e43ca15482
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757269"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305718"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
-*Hierarchiczna aktualizacja* proces zapisywanie zaktualizowanych danych (z zestawu danych z dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu zasady integralności referencyjnej. *Integralność referencyjna* odwołuje się do reguły spójności udostępniane przez ograniczenia w bazie danych, które kontrolują zachowanie wstawiania, aktualizowania i usuwania rekordów powiązanych. Na przykład jest integralności referencyjnej, wymusza tworzenie rekordu klienta przed zezwoleniem zamówień ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacje w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md)
 
- Używa funkcji hierarchicznej aktualizacji `TableAdapterManager` do zarządzania `TableAdapter`s w typizowanego obiektu dataset. `TableAdapterManager` Składnika jest klasą generowanych przez program Visual Studio, więc nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Podczas przeciągania tabelę z okna źródeł danych do formularzy systemu Windows lub programu WPF strony Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony, a następnie zostanie wyświetlony w Projektancie na pasku składnika. Aby uzyskać szczegółowe informacje o `TableAdapterManager` klasy, zobacz sekcję odwołanie TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+*Hierarchiczna aktualizacja* proces zapisywanie zaktualizowanych danych (na podstawie zestawu danych przy użyciu dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu więzy integralności. *Integralność referencyjną* odwołuje się do reguły spójności, dostarczone przez ograniczenia w bazie danych, które kontrolują zachowanie Wstawianie, aktualizowanie i usuwanie rekordów pokrewnych. Na przykład jest więzów integralności, który wymusza utworzenie rekordu klientów przed zezwoleniem zamówienia, które ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacji w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md).
 
- Domyślnie zestawu danych traktuje powiązane tabele jako "tylko relacje" oznacza, że nie wymuszania ograniczeń klucza obcego. To ustawienie w czasie projektowania można modyfikować za pomocą **Projektant obiektów Dataset**. Wybierz wiersz relacji między dwiema tabelami, aby wyświetlić **relacji** okno dialogowe. Określi, zmiany wprowadzone w tym miejscu jak `TableAdapterManager` zachowuje się podczas wysyłania zmiany w tabelach pokrewnych w bazie danych.
+Używa funkcji hierarchiczna aktualizacja `TableAdapterManager` zarządzanie `TableAdapter`s w zestawie danych wpisywanych. `TableAdapterManager` Składnik jest klasą generowanych przez program Visual Studio, więc nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Podczas przeciągania tabeli z **źródeł danych** okna do strony formularza Windows lub programu WPF, Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony i zostanie wyświetlony w projektancie w zasobniku składnika. Aby uzyskać szczegółowe informacje na temat `TableAdapterManager` klasy, zobacz sekcję TableAdapterManager z [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="enable-hierarchical-update-in-a-dataset"></a>Włącz hierarchicznej aktualizacji w zestawie danych
- Hierarchiczna aktualizacja domyślnie dla wszystkich nowych baz danych, które zostały dodane lub utworzony w projekcie. Włączanie lub wyłączanie hierarchicznej aktualizacji przez ustawienie **hierarchicznej aktualizacji** właściwości typizowanego zestaw danych w zestawie danych do **True** lub **False**:
+Domyślnie zestaw traktuje powiązane tabele jako "tylko relacje" oznacza to, że nie to wymuszania ograniczeń klucza obcego. Można zmodyfikować to ustawienie w czasie projektowania za pomocą **Projektanta obiektów Dataset**. Zaznacz wiersz relacji między dwiema tabelami, aby wyświetlić **relacji** okno dialogowe. Określi, wprowadzone zmiany są tutaj sposób, w jaki `TableAdapterManager` zachowuje się podczas wysyłania zmian w tabelach pokrewnych w bazie danych.
 
- ![Ustawienie hierarchiczna aktualizacja](../data-tools/media/hierarchical-update-setting.png)
+## <a name="enable-hierarchical-update-in-a-dataset"></a>Włączyć aktualizację hierarchiczną w zestawie danych
+
+Domyślnie hierarchiczna aktualizacja jest włączona dla wszystkich nowych zestawów danych, które są dodawane lub utworzone w projekcie. Włączyć lub wyłączyć aktualizację hierarchiczną, ustawiając **hierarchicznej aktualizacji** właściwość typizowany zestaw danych w zestawie danych, aby **True** lub **False**:
+
+![Ustawienie hierarchicznej aktualizacji](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Tworzenie nowej relacji między tabelami
- Aby utworzyć nową relację między dwiema tabelami, w Projektancie obiektów Dataset, wybierz pasek tytułu każdej tabeli, następnie kliknij prawym przyciskiem myszy i wybierz **Dodawanie relacji**.
 
- ![Hierarchiczna aktualizacja Dodaj menu relacji](../data-tools/media/hierarchical-update-add-relation-menu.png)
+Aby utworzyć nową relację między dwiema tabelami, w Projektancie obiektów Dataset, wybierz pasek tytułu w każdej tabeli, a następnie kliknij prawym przyciskiem myszy i wybierz **Dodaj relacje**.
 
-## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Ograniczenia klucza obcego, kaskadowych aktualizacji i usuwania
- Ważne jest, aby zrozumieć, jak ograniczenia klucza obcego i kaskadowych zachowanie w bazie danych są tworzone w kodzie wygenerowanym zestawie danych.
+![Relacja menu dodawania hierarchicznej aktualizacji](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
- Domyślnie tabel danych w zestawie danych są generowane z relacji (<xref:System.Data.DataRelation>) spełniających relacje w bazie danych. Relacja w zestawie danych nie jest generowana jako ograniczenie klucza obcego. <xref:System.Data.DataRelation> Jest skonfigurowany jako **tylko relacja** bez <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> lub <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> obowiązywać.
+## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Omówienie ograniczeń klucza obcego, aktualizacje i usuwanie kaskadowe
 
- Domyślnie aktualizacje kaskadowe i usuwanie kaskadowe są wyłączone nawet wtedy, gdy relacja bazy danych ustawiono aktualizacji kaskadowych i/lub usuwanie kaskadowe włączona. Na przykład tworzenie nowego klienta i zamówienie nowe, a następnie spróbuj zapisać danych może powodować konflikt z ograniczenia klucza obcego, które są zdefiniowane w bazie danych. Aby uzyskać więcej informacji, zobacz [wyłączanie ograniczeń w czasie wypełniania zestawu danych](turn-off-constraints-while-filling-a-dataset.md).
+Jest ważne zrozumieć, jak ograniczenia klucza obcego i kaskadowych zachowanie w bazie danych są tworzone w kodzie wygenerowanego zestawu danych.
+
+Domyślnie tabele danych w zestawie danych są generowane przy użyciu relacji (<xref:System.Data.DataRelation>) zgodnych relacji w bazie danych. Przyjrzyjmy się relacji w zestawie danych nie jest generowany jako ograniczenie klucza obcego. <xref:System.Data.DataRelation> Jest skonfigurowany jako **tylko relacji** bez <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> lub <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> obowiązywać.
+
+Domyślnie aktualizacje i usuwanie kaskadowe kaskadowe są wyłączone nawet, jeśli relacje bazy danych została ustawiona za pomocą kaskadowych aktualizacji i/lub usuwanie kaskadowe włączona. Na przykład utworzenie nowego klienta i nowe zamówienia, a następnie próba zapisania danych może powodować konflikt z ograniczenia klucza obcego, które są zdefiniowane w bazie danych. Aby uzyskać więcej informacji, zobacz [wyłączanie ograniczeń podczas zapełniania zestawu danych](turn-off-constraints-while-filling-a-dataset.md).
 
 ## <a name="set-the-order-to-perform-updates"></a>Ustaw kolejność przeprowadzania aktualizacji
- Ustawienie kolejności przeprowadzania aktualizacji ustawia kolejność poszczególne wstawia, aktualizowanie i usuwanie które są wymagane do Zapisz wszystkie zmodyfikowane dane we wszystkich tabelach zestawu danych. Hierarchiczna aktualizacja jest włączona, wstawia odbywa się najpierw, a następnie aktualizuje i usuwa. `TableAdapterManager` Zapewnia `UpdateOrder` właściwości, która może być zestaw przeprowadzania aktualizacji najpierw, a następnie wstawienia i usunięcia.
+
+Ustawienie kolejności do przeprowadzania aktualizacji ustawia kolejność poszczególnych wstawia, aktualizacji i usunięć, które są wymagane do zapisania zmodyfikowanych danych we wszystkich tabelach zestawu danych. Po włączeniu aktualizacji hierarchicznej wstawia są wykonane jako pierwsze, a następnie aktualizuje, a następnie usuwa. `TableAdapterManager` Zapewnia `UpdateOrder` właściwości, które mogą być zestawem do przeprowadzania aktualizacji po pierwsze, a następnie wstawiania i usuwania.
 
 > [!NOTE]
->  Jest ważne dowiedzieć się, że kolejność aktualizacji całkowitą. Oznacza to kiedy aktualizacje są wykonywane, wstawiania, a następnie usuwa są wykonywane dla wszystkich tabel w zestawie danych.
+> Jest ważne dowiedzieć się, że kolejność aktualizacji jest z uwzględnieniem wszystkich. Oznacza to kiedy aktualizacje są wykonywane, wstawiania i usuwania są wykonywane dla wszystkich tabel w zestawie danych.
 
- Aby ustawić `UpdateOrder` właściwości po przeciąganie elementów z [Data Sources — okno](add-new-data-sources.md) na formularz, wybierz `TableAdapterManager` w składnika na pasku zadań, a następnie ustawić `UpdateOrder` właściwości w **właściwości** okna.
+Aby ustawić `UpdateOrder` właściwości po przeciąganie elementów z [okna źródeł danych](add-new-data-sources.md#data-sources-window) w formularzu Wybierz `TableAdapterManager` w zasobniku składnika, a następnie ustaw `UpdateOrder` właściwości w **właściwości** okna.
 
-## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Utwórz kopię zapasową zestawu danych przed wykonaniem hierarchiczna aktualizacja
- Podczas zapisywania danych (wywołując `TableAdapterManager.UpdateAll()` metodę), `TableAdapterManager` próby aktualizacji danych dla każdej tabeli w ramach jednej transakcji. W przypadku niepowodzenia żadnej części aktualizacji dla dowolnej tabeli cała transakcja zostanie wycofana. W większości przypadków wycofywanie zwraca aplikacji do stanu pierwotnego.
+## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Tworzenie kopii zapasowej zestawu danych przed przystąpieniem do wykonywania hierarchicznej aktualizacji
 
- Jednak czasami może chcesz przywrócić zestawu danych z kopii zapasowej. Przykładem mogą wystąpić podczas korzystania z automatycznego przyrostu wartości. Na przykład, jeśli zapisywania operacji kończy się niepowodzeniem, automatycznego przyrostu wartości nie są resetowane w zestawie danych i kontynuuje zestawu danych do tworzenia wartości, zwiększając automatycznie. Spowoduje to pozostawienie przerwa w numeracji, które nie mogą być akceptowane w aplikacji. W sytuacjach, w przypadku, gdy jest to problem `TableAdapterManager` zapewnia `BackupDataSetBeforeUpdate` właściwość, która zastępuje istniejący zestaw danych z kopii zapasowej, jeśli transakcja nie powiedzie się.
+Podczas zapisywania danych (przez wywołanie metody `TableAdapterManager.UpdateAll()` metoda), `TableAdapterManager` próbuje zaktualizować dane dla każdej tabeli w ramach jednej transakcji. Jeśli którejkolwiek aktualizacji dla każdej tabeli zakończy się niepowodzeniem, cała transakcja zostanie wycofana. W większości sytuacji wycofywanie zwraca aplikacji do stanu pierwotnego.
 
-> [!NOTE]
->  Kopia zapasowa znajduje się tylko w pamięci podczas `TableAdapterManager.UpdateAll` metody jest uruchomiona. Dlatego nie jest brak programowy dostęp do tego zestawu kopii zapasowych danych, ponieważ jego zastępuje oryginalnego zestawu danych lub wykracza poza zakres natychmiast `TableAdapterManager.UpdateAll` zakończeniu metody.
-
-## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modyfikowanie wygenerowany Zapisz kod, aby wykonać hierarchiczna aktualizacja
- Zapisz zmiany z tabel powiązanych danych w zestawie danych do bazy danych przez wywołanie metody `TableAdapterManager.UpdateAll` — metoda i przekazywanie nazwy zestawu danych, który zawiera powiązane tabele. Na przykład uruchom `TableAdapterManager.UpdateAll(NorthwindDataset)` metody do wysyłania aktualizacji ze wszystkich tabel NorthwindDataset do wewnętrznej bazy danych.
-
- Po upuszczeniu elementy z **źródeł danych** okna, kod jest automatycznie dodawany do `Form_Load` zdarzeń, aby wypełnić każdej tabeli ( `TableAdapter.Fill` metody). Kod jest także dodawane do **zapisać** zdarzenia kliknij przycisk <xref:System.Windows.Forms.BindingNavigator> można zapisać danych z zestawu danych w bazie danych ( `TableAdapterManager.UpdateAll` metody).
-
- Zapisz wygenerowany kod zawiera również wiersza kodu, który wywołuje `CustomersBindingSource.EndEdit` metody. W szczególności, wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody pierwszego <xref:System.Windows.Forms.BindingSource>dodana do formularza. Innymi słowy, ten kod jest generowany tylko w pierwszej tabeli, która zostanie przeciągnięty z **źródeł danych** okna na formularzu. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Wywołania zatwierdza zmiany, które są w toku w formantów powiązanych z danymi, które są aktualnie edytowany. W związku z tym, jeśli formant powiązany z danymi nadal ma fokus i użytkownik kliknie **Zapisz** przycisk wszystkie oczekujące zmiany, w tym kontroli są zaangażowane przed rzeczywiste Zapisz ( `TableAdapterManager.UpdateAll` metody).
+Jednak czasami warto przywrócić zestawu danych z kopii zapasowej. Przykładem takiej mogą wystąpić podczas korzystania z automatycznego przyrostu wartości. Na przykład, jeśli zapisywania operacja zakończy się niepowodzeniem, automatycznego przyrostu wartości nie są resetowane w zestawie danych i zestaw danych w dalszym ciągu Utwórz auto, zwiększenie wartości. Spowoduje to, że przerwa w numerowania identyfikatorów, które mogą nie być niedopuszczalne w aplikacji. W sytuacjach, w przypadku, gdy jest to problem `TableAdapterManager` zapewnia `BackupDataSetBeforeUpdate` właściwość, która zastępuje istniejący zestaw danych z kopii zapasowej, jeśli transakcja nie powiedzie się.
 
 > [!NOTE]
->  **Projektant obiektów Dataset** tylko dodaje `BindingSource.EndEdit` kodu do pierwszej tabeli, które są przenoszone do formularza. W związku z tym należy dodać wiersza kodu w celu wywołania `BindingSource.EndEdit` metody dla każdej tabeli powiązanego na formularzu. W ramach tego przewodnika, oznacza to, należy dodać wywołanie `OrdersBindingSource.EndEdit` metody.
+> Kopia zapasowa jest tylko w pamięci podczas `TableAdapterManager.UpdateAll` metoda jest uruchomiona. Dlatego ma nie programowy dostęp do tego zestawu kopii zapasowych danych, ponieważ jego albo zastępuje oryginalnego zestawu danych lub wykracza poza zakres jak najszybciej `TableAdapterManager.UpdateAll` metoda odliczania.
 
-#### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aby zaktualizować kodu w celu zatwierdzenia zmian w tabelach pokrewnych przed zapisaniem
+## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modyfikowanie wygenerowany Zapisz kod do wykonywania hierarchicznej aktualizacji
 
-1.  Kliknij dwukrotnie **zapisać** znajdującego się na <xref:System.Windows.Forms.BindingNavigator> otworzyć **Form1** w edytorze kodu.
+Zapisz zmiany z tabel powiązanych danych w zestawie danych w bazie danych przez wywołanie metody `TableAdapterManager.UpdateAll` metody i przekazywać nazwę zestawu danych, który zawiera powiązane tabele. Na przykład uruchomić `TableAdapterManager.UpdateAll(NorthwindDataset)` metodę, aby wysyłać aktualizacje ze wszystkich tabel w NorthwindDataset do wewnętrznej bazy danych.
 
-2.  Dodaj wiersz kodu w celu wywołania `OrdersBindingSource.EndEdit` metody po wierszu, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w **zapisać** kliknij przycisk zdarzeń powinien przypominać następujący:
+Po upuszczeniu elementy z **źródeł danych** oknie kodu jest automatycznie dodawany do `Form_Load` zdarzenie, aby wypełnić każdej tabeli ( `TableAdapter.Fill` metody). Kod jest także dodawane do **Zapisz** Zdarzenie kliknięcia przycisku <xref:System.Windows.Forms.BindingNavigator> można zapisać danych z zestawu danych w bazie danych ( `TableAdapterManager.UpdateAll` metody).
+
+Zapisz wygenerowany kod zawiera również linię kodu, który wywołuje `CustomersBindingSource.EndEdit` metody. W szczególności wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Metoda pierwszego <xref:System.Windows.Forms.BindingSource>który został dodany do formularza. Innymi słowy, ten kod jest generowany tylko jako pierwszą tabelę, która zostanie przeciągnięty z **źródeł danych** okna na formularzu. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Wywołanie zatwierdza wszystkie zmiany, które jest obecnie w toku w żadnych formantów powiązanych z danymi, które są aktualnie edytowanym. W związku z tym, jeśli formant powiązany z danymi nadal ma fokus i kliknij przycisk **Zapisz** przycisk wszystkie oczekujące zmiany, w tym, że kontrolki są zatwierdzane przed rzeczywiste Zapisz ( `TableAdapterManager.UpdateAll` metody).
+
+> [!NOTE]
+> **Projektanta obiektów Dataset** dodane zostaną wyłącznie `BindingSource.EndEdit` kod dla pierwszej tabeli, który został upuszczony na formularz. W związku z tym, należy dodać wiersz kodu w celu wywołania `BindingSource.EndEdit` metody dla każdej tabeli powiązanej na formularzu. W tym przewodniku, oznacza to, należy dodać wywołanie `OrdersBindingSource.EndEdit` metody.
+
+### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aby zaktualizować kod w celu zatwierdzenia zmian w tabelach pokrewnych przed zapisaniem
+
+1.  Kliknij dwukrotnie **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator> otworzyć **Form1** w edytorze kodu.
+
+2.  Dodaj wiersz kodu w celu wywołania `OrdersBindingSource.EndEdit` metoda po wierszu, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w **Zapisz** kliknięcia przycisku zdarzeń powinny wyglądać podobnie do poniższego:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
 
-Oprócz zatwierdzania zmian w tabeli podrzędnych przed zapisaniem danych do bazy danych, również może być konieczne zatwierdzanie nowo utworzone rekordy główne przed dodaniem nowych rekordów podrzędnych do zestawu danych. Innymi słowy, może być konieczne dodanie nowego rekordu nadrzędnego (`Customer`) do zestawu danych przed ograniczeń klucza obcego włączyć nowe podrzędne rekordy (`Orders`) mają zostać dodane do zestawu danych. W tym celu można użyć elementu podrzędnego `BindingSource.AddingNew` zdarzeń.
+Oprócz zatwierdzania zmian w pokrewnej tabeli podrzędnej przed zapisaniem danych do bazy danych, również może być konieczne rekordów nadrzędnych zatwierdzenia nowo utworzony przed dodaniem nowych rekordów podrzędnych do zestawu danych. Innymi słowy, Niewykluczone, że dodać nowy rekord nadrzędny (`Customer`) do zestawu danych, zanim ograniczenia klucza obcego włączyć nowe rekordy podrzędne (`Orders`) mają zostać dodane do zestawu danych. Aby to osiągnąć, należy użyć elementu podrzędnego `BindingSource.AddingNew` zdarzeń.
 
 > [!NOTE]
-> Czy należy zatwierdzić nowych rekordów nadrzędnego zależy od typu formantu, który jest używany do powiązania ze źródłem danych. W tym przewodniku pojedynczych formantów służy do powiązania tabeli nadrzędnej. Wymaga to dodatkowego kodu można przekazać nowy rekord nadrzędny. Jeśli rekordy główne zamiast były wyświetlane w formancie złożone powiązanie, takich jak <xref:System.Windows.Forms.DataGridView>, dodatkowego <xref:System.Windows.Forms.BindingSource.EndEdit%2A> wywołania dla rekordu nadrzędnego nie jest konieczne. Jest to spowodowane funkcjonalność wiązania danych formantu obsługuje zatwierdzania nowych rekordów.
+> Czy masz do zatwierdzenia nowych rekordów nadrzędnych, zależy od typu formantu, który służy do tworzenia powiązania ze źródłem danych. W tym przewodniku umożliwia pojedynczych formantów powiązania tabeli nadrzędnej. Wymaga to dodatkowego kodu, aby zatwierdzić nowy rekord nadrzędny. Jeśli rekordów nadrzędnych zamiast były wyświetlane w kontrolce złożone powiązanie <xref:System.Windows.Forms.DataGridView>, tym dodatkowe <xref:System.Windows.Forms.BindingSource.EndEdit%2A> wywołania dla rekordu nadrzędnego nie jest konieczne. Jest to spowodowane obsługuje podstawową funkcjonalność powiązanie danych kontrolki, zatwierdzanie nowych rekordów.
 
-#### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Aby dodać kod, aby zatwierdzić rekordy główne w zestawie danych przed dodaniem nowych rekordów podrzędnych
+### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Aby dodać kod, aby zatwierdzić rekordów nadrzędnych w zestawie danych przed dodaniem nowych rekordów podrzędnych
 
-1.  Tworzenie procedury obsługi zdarzeń dla `OrdersBindingSource.AddingNew` zdarzeń.
+1.  Utwórz procedurę obsługi zdarzeń dla `OrdersBindingSource.AddingNew` zdarzeń.
 
-    -   Otwórz **Form1** w widoku Projekt, wybierz **OrdersBindingSource** na pasku składnika wybierz **zdarzenia** w **właściwości** okna, i następnie kliknij dwukrotnie ikonę **AddingNew** zdarzeń.
+    -   Otwórz **Form1** w widoku Projekt, wybierz **OrdersBindingSource** w zasobniku składnika wybierz **zdarzenia** w **właściwości** oknie i następnie kliknij dwukrotnie ikonę **AddingNew** zdarzeń.
 
-2.  Dodaj wiersz kodu do obsługi zdarzeń, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w `OrdersBindingSource_AddingNew` obsługi zdarzeń powinny przypominać następujący:
+2.  Dodaj wiersz kodu do obsługi zdarzeń, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w `OrdersBindingSource_AddingNew` programu obsługi zdarzeń powinny wyglądać podobnie do poniższego:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
 
-## <a name="tableadaptermanager-reference"></a>Odwołanie TableAdapterManager
+## <a name="tableadaptermanager-reference"></a>TableAdapterManager odwołania
 
-Domyślnie `TableAdapterManager` klasy jest generowany po utworzeniu zestawu danych, który zawiera powiązane tabele. Aby zapobiec klasy generowane, zmień wartość `Hierarchical Update` właściwości zestawu danych na wartość false. Podczas przeciągania tabeli, która ma relację na powierzchnię projektu formularza systemu Windows lub programu WPF strony Visual Studio deklaruje zmienną członkowską klasy. Nie używaj wiązania z danymi, trzeba ręcznie zadeklarować zmienną.
+Domyślnie `TableAdapterManager` klasy jest generowany, gdy utworzysz zestaw danych, który zawiera powiązane tabele. Aby zapobiec sytuacji, w której klasy generowane, należy zmienić wartość `Hierarchical Update` właściwości zestawu danych na wartość false. Podczas przeciągania tabeli, która ma relację na powierzchnię projektową formularza Windows lub strony WPF program Visual Studio deklaruje zmienną składową klasy. Nie używaj wiązania danych, musisz ręcznie zadeklarować zmienną.
 
-`TableAdapterManager` Klasa nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W związku z tym nie można go wyszukać w dokumentacji. Jest on tworzony w czasie projektowania, jako część procesu tworzenia zestawu danych.
+`TableAdapterManager` Klasa nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W związku z tym użytkownik nie może go wyszukać w dokumentacji. Jest on tworzony w czasie projektowania, jako część procesu tworzenia zestawu danych.
 
 Poniżej przedstawiono często używanych metod i właściwości `TableAdapterManager` klasy:
 
 |Element członkowski|Opis|
 |------------|-----------------|
 |`UpdateAll` — Metoda|Zapisuje wszystkie dane ze wszystkich tabel danych.|
-|`BackUpDataSetBeforeUpdate` Właściwość|Określa, czy należy utworzyć kopię zapasową zestawu danych, przed wykonaniem `TableAdapterManager.UpdateAll` metody. Wartość logiczna.|
-|*tableName* `TableAdapter` właściwości|Reprezentuje `TableAdapter`. Wygenerowany `TableAdapterManager` zawiera właściwość dla każdego `TableAdapter` zarządza. Na przykład zestaw danych z tabeli Klienci i zamówienia jest generowana za pomocą `TableAdapterManager` zawierający `CustomersTableAdapter` i `OrdersTableAdapter` właściwości.|
-|`UpdateOrder` Właściwość|Określa kolejność poszczególnych insert, update i polecenia usuwania. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczenia.<br /><br /> Domyślnie `UpdateOrder` ustawiono **InsertUpdateDelete**. Oznacza to, które wstawia, a następnie aktualizuje i usuwa są wykonywane dla wszystkich tabel w zestawie danych.|
+|`BackUpDataSetBeforeUpdate` Właściwość|Określa, czy chcesz utworzyć kopię zapasową danych przed wykonaniem `TableAdapterManager.UpdateAll` metody. Wartość logiczna.|
+|*Właściwość tableName* `TableAdapter` właściwości|Reprezentuje `TableAdapter`. Wygenerowany `TableAdapterManager` zawiera właściwości dla każdego `TableAdapter` zarządza. Na przykład zestaw danych z tabeli Customers i Orders jest generowany przy użyciu `TableAdapterManager` zawierający `CustomersTableAdapter` i `OrdersTableAdapter` właściwości.|
+|`UpdateOrder` Właściwość|Określa kolejność poszczególnych insert, update i polecenia delete. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczenia.<br /><br /> Domyślnie `UpdateOrder` ustawiono **InsertUpdateDelete**. Oznacza to, że wstawia, a następnie aktualizuje i usuwa są wykonywane dla wszystkich tabel w zestawie danych.|
 
 ## <a name="see-also"></a>Zobacz także
 

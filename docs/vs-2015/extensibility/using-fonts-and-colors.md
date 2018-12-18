@@ -19,12 +19,12 @@ ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6ed3c7a67ca8463c2afef38fc39e28e3d81fd58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b49c5172a75e0abec8084892346a2fb0da877b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245977"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729599"
 ---
 # <a name="using-fonts-and-colors"></a>Używanie czcionek i kolorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,16 +13,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b884afae90d477716c2041e468ceb0c64c5d41d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849661"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895564"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
 
 Edytor kodowanego testu interfejsu użytkownika umożliwia łatwe modyfikowanie kodowanych testów interfejsu użytkownika. Za pomocą edytora testu interfejsu użytkownika, możesz zlokalizować, wyświetlić i edytować właściwości swoje metody testowe i działania interfejsu użytkownika. Ponadto można użyć mapy formantów interfejsu użytkownika, możesz wyświetlać i edytować ich odpowiednie metody kontroli.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Wymagania**
 

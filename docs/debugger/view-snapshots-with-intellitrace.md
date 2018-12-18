@@ -1,5 +1,5 @@
 ---
-title: Wyświetl migawki za pomocą funkcji IntelliTrace
+title: Wyświetlanie migawek za pomocą funkcji IntelliTrace
 description: Użyj funkcji IntelliTrace krok do tyłu, aby sprawdzić stan aplikacji historycznych
 ms.custom: ''
 ms.date: 09/20/2018

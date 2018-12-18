@@ -1,22 +1,23 @@
 ---
-title: Debugowanie kodu języka Python na zdalne komputery z systemem Linux
-description: Jak używać programu Visual Studio do debugowania kodu w języku Python uruchomiona na zdalnym komputerów z systemem Linux, w tym wymagane kroki konfiguracji, zabezpieczeń i rozwiązywania problemów.
-ms.date: 10/15/2018
+title: Debugowanie kodu w języku Python na komputerach zdalnych systemu Linux
+description: Debugowanie kodu w języku Python uruchomiona na zdalnym komputerów z systemem Linux, w tym wymagane kroki konfiguracji, zabezpieczeń i rozwiązywanie problemów przy użyciu programu Visual Studio.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356772"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067949"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Zdalne debugowanie kodu w języku Python w systemie Linux
 
@@ -106,7 +107,7 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
 
 1. Program Visual Studio następnie przełącza w trybie debugowania, nadal skrypt do uruchomienia na komputerze zdalnym, zapewniając wszystkie zwykle [debugowania](debugging-python-in-visual-studio.md) możliwości. Na przykład ustaw punkt przerwania na `if guess < number:` wiersza, a następnie przełączyć się do komputera zdalnego i wprowadź inny wynik. Możesz to zrobić, programu Visual Studio w Twojej zatrzymuje komputera lokalnego, w tym punkcie przerwania, aby zobaczyć zmienne lokalne i tak dalej:
 
-    ![Punkt przerwania zostaje trafiony](media/remote-debugging-breakpoint-hit.png)
+    ![Program Visual Studio zatrzymuje debugowanie po trafieniu punktu przerwania](media/remote-debugging-breakpoint-hit.png)
 
 1. Po zatrzymaniu debugowania, Visual Studio odłącza się od programu, który będzie działać na komputerze zdalnym. ptvsd nadal nasłuchuje dołączanie debugery, dzięki czemu możesz dołączyć do procesu w dowolnym momencie ponownie.
 

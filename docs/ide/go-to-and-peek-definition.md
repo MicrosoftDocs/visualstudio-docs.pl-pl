@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie definicji typu w programie Visual Studio
+title: Wyświetlanie definicji typu
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,68 +15,68 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745766"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062085"
 ---
 # <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typów i elementów członkowskich
 
-Deweloperzy muszą często wyświetlić definicje kodu źródłowego dla typów lub elementów członkowskich klasy, których używają w swoich kodu. W programie Visual Studio **przejdź do definicji** i **definicji wglądu** funkcje umożliwiają łatwe wyświetlanie definicji typu lub elementu członkowskiego. Jeśli kod źródłowy jest niedostępny, zamiast niego wyświetlony metadanych.
+Często deweloperzy muszą wyświetlać definicje kodu źródłowego dla typów ani elementów członkowskich klasy, których używają w ich kodzie. W programie Visual Studio **przejdź do definicji** i **Peek Definition** funkcje umożliwiają łatwe wyświetlanie definicji typu lub elementu członkowskiego. Jeśli kod źródłowy nie jest dostępna, metadane są wyświetlane w zamian.
 
 ## <a name="go-to-definition"></a>Przejdź do definicji
 
-**Przejdź do definicji** funkcji przechodzi do źródła typu lub elementu członkowskiego i otwiera wynik na nowej karcie. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekstu gdzieś wewnątrz nazwy symbolu i naciśnij klawisz **F12**. Jeśli jesteś użytkownikiem myszy albo wybierz **przejdź do definicji** z menu kontekstowego lub użyj **klawisz Ctrl** funkcji opisanych w poniższej sekcji.
+**Przejdź do definicji** funkcja powoduje przejście do źródłowego typu lub elementu członkowskiego i otwiera wynik w nowej karcie. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy symbolu i naciśnij klawisz **F12**. Jeśli jesteś użytkownikiem myszy, wybrać **przejdź do definicji** z menu kontekstowego lub użyj **naciśniętym klawiszem CTRL** funkcji opisanych w poniższej sekcji.
 
-### <a name="ctrl-click-go-to-definition"></a>Klawisz CTRL, przejdź do definicji
+### <a name="ctrl-click-go-to-definition"></a>Naciśnij klawisz CTRL i kliknij Przejdź do definicji
 
-W programie Visual Studio 2017 wersji 15.4, jest prostsze dla użytkowników myszy szybkiego dostępu **przejdź do definicji**. Symbole stają się aktywne po naciśnięciu **Ctrl** i zatrzymaj wskaźnik myszy typu lub elementu członkowskiego. Aby szybko przejść do definicji symbolu, naciśnij klawisz **Ctrl** klucza, a następnie kliknij go. To bardzo proste!
+W programie Visual Studio 2017 wersji 15.4 jest łatwiejszy sposób użytkownikom myszy szybkiego dostępu **przejdź do definicji**. Symbole stają się po naciśnięciu klawisza **Ctrl** i umieść kursor nad typu lub elementu członkowskiego. Szybkie przechodzenie do definicji symbolu, naciśnij klawisz **Ctrl** klucza, a następnie kliknij go. Jest tak proste!
 
-![Przejdź do definicji animacji kliknięcia myszą](../ide/media/click_gotodef.gif)
+![Przejdź do definicji animacji kliknięcie myszą](../ide/media/click_gotodef.gif)
 
-Można zmienić klucz modyfikujący na kliknięcie myszą **przejdź do definicji** , przechodząc do **narzędzia** > **opcje** > **Edytor tekstu**   >  **Ogólne**i wybierając jedną **Alt** lub **klawisze Ctrl + Alt** z **klawisz modyfikujący użyj**listy rozwijanej. Można również wyłączyć kliknięcia myszą **przejdź do definicji** usuwając zaznaczenie pola wyboru **Włącz myszy kliknij, aby wykonać przejdź do definicji** wyboru.
+Możesz zmienić klucz modyfikujący kliknięcie myszą **przejdź do definicji** , przechodząc do **narzędzia** > **opcje** > **Edytor tekstu**   >  **Ogólne**i wybierając opcję **Alt** lub **Ctrl + Alt** z **klawisz modyfikujący użyj**listy rozwijanej. Można również wyłączyć kliknięcie myszą **przejdź do definicji** , usuwając zaznaczenie pola **Włącz kliknięcie myszą, aby wykonać przejdź do definicji** pola wyboru.
 
-![Włączanie kliknięcia myszą przejdź do definicji](../ide/media/editor_options_mouse_click_gotodef.png)
+![Włączanie kliknięcie myszą, przejdź do definicji](../ide/media/editor_options_mouse_click_gotodef.png)
 
-## <a name="peek-definition"></a>Definicji wglądu
+## <a name="peek-definition"></a>Zobacz definicję
 
-**Definicji wglądu** funkcji umożliwia podgląd definicję typu bez opuszczania bieżącej lokalizacji w edytorze. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekstu gdzieś wewnątrz nazwy typu lub elementu członkowskiego i naciśnij klawisz **Alt + F12**. Jeśli jesteś użytkownikiem mysz, możesz wybrać **definicji wglądu** z menu kontekstowego. W Visual Studio 2017 wersji 15,4 i nowszych ma w nowy sposób wglądu w widoku definicji za pomocą myszy. Po pierwsze, przejdź do **narzędzia** > **opcje** > **Edytor tekstu** > **ogólne**. Wybierz opcję **Otwórz definicję w widoku peek** i kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
+**Peek Definition** funkcji umożliwia podgląd definicji typu bez opuszczania Twojej bieżącej lokalizacji w edytorze. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy typu lub elementu członkowskiego i naciśnij klawisz **Alt + F12**. Jeśli jesteś użytkownikiem myszy, możesz wybrać **Peek Definition** z menu kontekstowego. W programie Visual Studio 2017 w wersji 15.4 i nowszych istnieje nowy sposób na wyświetlanie podglądu definicji za pomocą myszy. Przejdź najpierw do **narzędzia** > **opcje** > **edytora tekstów** > **ogólne**. Wybierz opcję **Otwórz definicję w widoku podglądu** i kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
 
-![Ustawienie opcji definicji wglądu kliknięcia myszą](../ide/media/editor_options_peek_view.png)
+![Ustawianie opcji kliknięcie myszą definicji wglądu](../ide/media/editor_options_peek_view.png)
 
-Naciśnij klawisz **Ctrl** (lub innego klawisz modyfikujący został wybrany w **opcje**) i kliknij polecenie typu lub elementu członkowskiego.
+Naciśnij klawisz **Ctrl** (lub dowolnego klawisz modyfikujący został wybrany w **opcje**) i kliknij pozycję typu lub elementu członkowskiego.
 
-![Podgląd animacji definicji](../ide/media/peek_definition.gif)
+![Peek definition animacji](../ide/media/peek_definition.gif)
 
-Jeśli wgląd inną definicję w oknie podręcznym, zostanie uruchomiona ścieżką nawigacją, której można nawigować przy użyciu okręgi i strzałki wyświetlane powyżej menu podręcznego.
+Jeśli wgląd w innej definicji w oknie podręcznym zostanie uruchomiona ścieżki linków do stron nadrzędnych, której można nawigować przy użyciu kółka i strzałki, które pojawiają się powyżej okno podręczne.
 
-Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Wyświetlanie metadanych jako kodu źródłowego (C#)
 
-Podczas wyświetlania definicji typów C# lub elementów członkowskich, których kod źródłowy jest niedostępny, zamiast tego jest wyświetlany ich metadanych. Deklaracje typów i członków, ale nie ich implementacji jest widoczny.
+Podczas wyświetlania definicji C# typy lub elementy członkowskie, których kod źródłowy jest niedostępny, zamiast tego jest wyświetlana ich metadanych. Możesz zobaczyć deklaracje typów i członków, ale nie ich implementacji.
 
-Po uruchomieniu **przejdź do definicji** lub **definicji wglądu** polecenia dla elementu, którego kod źródłowy jest niedostępny, dokument z kartami zawiera widok metadanych tego elementu wyświetlana jako kodu źródłowego zostanie wyświetlony w edytorze kodu. Nazwa typu, a następnie **[z metadanych]**, zostanie wyświetlony na karcie dokumentu.
+Po uruchomieniu **przejdź do definicji** lub **Peek Definition** polecenia, dla którego kod źródłowy jest niedostępny, elementu z kartami dokument, który zawiera widok metadanych tego elementu wyświetlana jako kod źródłowy zostanie wyświetlony w edytorze kodu. Nazwa typu, a następnie **[z metadanych]**, pojawi się na karcie dokumentu.
 
-Na przykład, jeśli uruchomisz **przejdź do definicji** polecenia dla <xref:System.Console>, metadane <xref:System.Console> zostanie wyświetlony w edytorze kodu jako kodu źródłowego C#. Kod przypomina jego deklaracji, ale implementacja nie są wyświetlane.
+Na przykład jeśli uruchomisz **przejdź do definicji** polecenie, aby uzyskać <xref:System.Console>, metadane <xref:System.Console> pojawia się w edytorze kodu jako C# kodu źródłowego. Kod przypomina jego deklaracji, ale nie pokazuje implementację.
 
 ![Metadane jako źródło](../ide/media/metadatasource.png)
 
 > [!NOTE]
-> Podczas próby uruchomienia **przejdź do definicji** lub **definicji wglądu** polecenia dla typów albo elementów członkowskich, które są oznaczone jako wewnętrzne programu Visual Studio nie wyświetla metadane jako kod źródłowy, niezależnie od tego, czy zestaw odwołujący się jest znajomym, czy nie.
+> Jeśli zostanie podjęta próba uruchomienia **przejdź do definicji** lub **Peek Definition** polecenia dla typów ani elementów członkowskich, które są oznaczone jako wewnętrzne, Visual Studio nie wyświetla ich metadanych jako kodu źródłowego, niezależnie od tego, czy zestaw odwołujący się jest znajomego, czy nie.
 
-### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Wyświetlanie definicji źródła decompiled zamiast metadanych (C#)
+### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Wyświetlanie definicji dekompilowanych źródeł zamiast metadanych (C#)
 
-Nowy w programie Visual Studio 2017 wersji 15,6, można ustawić opcję, aby wyświetlić kod źródłowy decompiled podczas wyświetlania definicji typu C# lub element członkowski, którego kod źródłowy jest niedostępny. Aby włączyć tę funkcję, należy wybrać **narzędzia** > **opcje** na pasku menu. Następnie rozwiń **Edytor tekstu** > **C#** > **zaawansowane**i wybierz **umożliwiają nawigowanie do źródeł decompiled**.
+Nowość w programie Visual Studio 2017 w wersji 15.6, można ustawić opcje, aby wyświetlić kod źródłowy dekompilowanych, podczas wyświetlania definicji C# typu lub elementu członkowskiego, w której kod źródłowy jest niedostępny. Aby włączyć tę funkcję, wybierz opcję **narzędzia** > **opcje** z paska menu. Następnie rozwiń **edytora tekstów** > **C#** > **zaawansowane**i wybierz **Włącz nawigację do dekompilowanych źródeł** .
 
-![Wyświetlanie definicji decompiled](media/go-to-definition-decompiled-sources.png)
+![Wyświetlanie definicji dekompilowanych](media/go-to-definition-decompiled-sources.png)
 
 > [!NOTE]
-> Visual Studio rekonstruuje przy użyciu dekompilacji ILSpy treści metody. Po raz pierwszy uzyskać dostęp do tej funkcji, należy zaakceptować zrzeczenia dotyczące oprogramowania, licencjonowania i prawach autorskich i znak towarowy prawa.
+> Program Visual Studio rekonstruuje treści metod przy użyciu dekompilacji użyciu narzędzia do dekompilacji. Korzystać z tej funkcji po raz pierwszy należy Zaakceptuj zrzeczenie odpowiedzialności prawnej dotyczące oprogramowania, licencjonowania i praw autorskich i trademark przepisów.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przejdź do kodu](../ide/navigating-code.md)
-- [Porady: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Przechodzenie do kodu](../ide/navigating-code.md)
+- [Porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

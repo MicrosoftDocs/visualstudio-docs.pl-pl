@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da2ddc582c6555e8ec4567f4faace603f6f0f677
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af82d74c0e0a0446b759a06a9e874a39fc57b6fd
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872489"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672526"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Wskazówki: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO
   Dane można powiązać formanty hosta i kontrolek Windows Forms w projektach dodatku narzędzi VSTO. W tym instruktażu pokazano, jak dodawanie formantów do arkusza programu Microsoft Office Excel i powiązać formanty z danymi w czasie wykonywania.
@@ -46,9 +46,9 @@ ms.locfileid: "49872489"
 
 -   Dostęp do uruchomionego wystąpienia programu SQL Server 2005 lub SQL Server 2005 Express, który ma `AdventureWorksLT` przykładowej bazy danych dołączono do niego. Możesz pobrać `AdventureWorksLT` bazy danych z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Aby uzyskać więcej informacji na temat dołączania bazy danych zobacz następujące tematy:
 
-    -   Aby dołączyć bazę danych przy użyciu programu SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [porady: dołączanie bazy danych (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).
+    -   Aby dołączyć bazę danych przy użyciu programu SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [porady: dołączanie bazy danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [porady: dołączanie pliku bazy danych do programu SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).
+    -   Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [porady: dołączanie pliku bazy danych do programu SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
  Pierwszym krokiem jest utworzenie projektu dodatku narzędzi VSTO programu Excel.

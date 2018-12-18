@@ -1,5 +1,5 @@
 ---
-title: Utwórz projekt testu obciążenia i wydajności sieci web w programie Visual Studio
+title: Utwórz projekt testu wydajności i obciążenia sieci web
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,19 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320959"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057577"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Szybki start: tworzenie projektu testu obciążeniowego
 
 W tym 10-minutowy Przewodnik Szybki Start dowiesz się, jak utworzyć i uruchomić projekt testu obciążenia i wydajności sieci web w programie Visual Studio. Testy obciążenia wykonać wydajności sieci web lub testów jednostkowych, aby symulować wielu użytkownikom dostęp do serwera, w tym samym czasie.
 
-> [!IMPORTANT]
-> Projekty testów wydajności i obciążenia sieci Web są dostępne tylko w wersji Enterprise programu Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>Wymagania dotyczące oprogramowania
+
+Projekty testów wydajności i obciążenia sieci Web są dostępne tylko w wersji Enterprise programu Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Instalowanie składnika testowania obciążenia
 

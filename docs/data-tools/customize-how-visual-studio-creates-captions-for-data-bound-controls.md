@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
+title: Dostosowywanie podpisów dla formantów powiązanych z danymi
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,99 +15,99 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758423"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305588"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 
-Gdy przeciągnij elementy z [Data Sources — okno](add-new-data-sources.md) do konstruktora, szczególną uwagę wejścia play: nazwy kolumn w etykietach podpis są ponownie sformatowany na ciąg był bardziej czytelny, gdy dwie lub więcej wyrazów okaże się, że połączone ze sobą. Można dostosować sposób tworzenia etykiety, ustawiając **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** klucza rejestru.
+Podczas przeciągania elementów z [okna źródeł danych](add-new-data-sources.md#data-sources-window) do projektanta szczególną uwagę właśnie: nazwy kolumn w etykietach podpis jest umieszczany w ciąg bardziej czytelny, gdy dwie lub więcej słów okaże się, że połączone ze sobą. Można dostosować sposób tworzenia tych etykiet, ustawiając **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** klucza rejestru.
 
 > [!NOTE]
-> Ten klucz rejestru nie istnieje, dopóki nie zostaną utworzone.
+> Ten klucz rejestru nie istnieje, dopóki nie zostanie utworzony.
 
-Podpisy inteligentne jest kontrolowany przez wyrażenie regularne, wprowadzany do wartości **SmartCaptionExpression** wartości. Dodawanie **projektanci danych** Określa podpis etykiety domyślne wyrażenie regularne przesłania klucza rejestru. Aby uzyskać więcej informacji na temat wyrażeń regularnych, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Podpisy inteligentne jest kontrolowany przez wyrażenia regularne zawierana wartość **SmartCaptionExpression** wartości. Dodawanie **projektantów danych** klucza rejestru zastępuje domyślne wyrażenie regularne, które kontrolki etykiety podpis. Aby uzyskać więcej informacji na temat wyrażeń regularnych, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-W poniższej tabeli opisano wartości rejestru, które sterują podpis etykiety.
+W poniższej tabeli opisano wartości rejestru, które kontrolują podpis etykiety.
 
 |Element rejestru|Opis|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|Wyrażenie regularne, używanej do dopasowania Twoich wzorców.|
-|**SmartCaptionReplacement**|Format wyświetlania grup dopasowywane w **SmartCaptionExpression**.|
-|**SmartCaptionSuffix**|Opcjonalny ciąg do dołączenia do końca podpis.|
+|**SmartCaptionExpression**|Wyrażenie regularne używane do dopasowania Twoich wzorców.|
+|**SmartCaptionReplacement**|Format wyświetlania żadnych grup dopasowywany **SmartCaptionExpression**.|
+|**SmartCaptionSuffix**|Opcjonalny ciąg do dołączenia na końcu podpis.|
 
-W poniższej tabeli wymieniono wewnętrzny domyślne ustawienia tych wartości rejestru.
+W poniższej tabeli wymieniono ustawienia wewnętrznego ustawienia domyślnego dla tych wartości rejestru.
 
 |Element rejestru|Wartość domyślna|Wyjaśnienie|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Dopasowuje małą literę, a następnie wielkie litery lub znaku podkreślenia.|
-|**SmartCaptionReplacement**|**$1 $2**|**$1** reprezentuje wszystkie znaki dopasowana w pierwszym nawiasów wyrażenia i **$2** reprezentuje znaków dopasowywane w nawiasach drugiego. Zastąpienie jest pierwsze dopasowanie, spacji i drugi dopasowania.|
-|**SmartCaptionSuffix**|**:**|Reprezentuje znak dołączany do zwracany ciąg. Na przykład, jeśli podpis jest `Company Name`, sufiks ułatwia `Company Name:`|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Dopasowuje znak małej litery następują wielkiej litery lub znaku podkreślenia.|
+|**SmartCaptionReplacement**|**$1 $2**|**$1** reprezentuje dowolne znaki dopasowywane w nawiasach pierwszego wyrażenia, a **$2** reprezentuje dowolne znaki dopasowywane w nawiasach drugiego. Zastąpienie jest pierwsze dopasowanie, spację, a następnie drugie dopasowania.|
+|**SmartCaptionSuffix**|**:**|Reprezentuje znak, który został dołączony do zwracanego ciągu. Na przykład, jeśli podpis jest `Company Name`, sufiks sprawia, że `Company Name:`|
 
 > [!CAUTION]
-> Należy zachować ostrożność w Edytorze rejestru żadnego działania. Utwórz kopię zapasową rejestru przed rozpoczęciem edycji. Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Microsoft nie gwarantuje, że można rozwiązać problemy powodujące przez niewłaściwego używania Edytora rejestru. Używasz Edytora rejestru na własne ryzyko.
+> Należy zachować ostrożność w Edytorze rejestru niczym zajęty. Utwórz kopię zapasową rejestru przed jego edycji. Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Firma Microsoft nie gwarantuje, można rozwiązać problemy, które powodują za pomocą Edytora rejestru niepoprawnie. Używasz Edytora rejestru na własne ryzyko.
 >
-> Instrukcje dotyczące tworzenia kopii zapasowej, edytowanie i przywracanie rejestru zawiera następujący artykuł bazy wiedzy: [Opis rejestru systemu Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> W poniższym artykule bazy wiedzy zawiera instrukcje dotyczące tworzenia kopii zapasowej, edytowanie i przywracania rejestru: [Opis rejestru firmy Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modyfikowanie inteligentne podpisów okna źródeł danych
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modyfikowanie zachowania podpisów inteligentne okna źródeł danych
 
-1.  Otwórz okno polecenia, klikając przycisk **Start** , a następnie **Uruchom**.
+1.  Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
 
 2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń węzeł **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
+3.  Rozwiń **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
 
-7.  Kliknij prawym przyciskiem myszy **15.0** węzeł i utworzyć nową **klucza** o nazwie `Data Designers`.
+4.  Kliknij prawym przyciskiem myszy **15.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
 
-8.  Kliknij prawym przyciskiem myszy **projektanci danych** węzeł i Utwórz trzy nowe wartości ciągu:
+5.  Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz trzy nowe wartości ciągu:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** wartość, a następnie wybierz **Modyfikuj**.
+6. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** wartości, a następnie wybierz **Modyfikuj**.
 
-12. Wprowadź wyrażenie regularne mają **źródeł danych** okno, aby użyć.
+7. Wprowadź wyrażenie regularne ma **źródeł danych** okna do użycia.
 
-13. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** wartość, a następnie wybierz **Modyfikuj**.
+8. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** wartości, a następnie wybierz **Modyfikuj**.
 
-14. Zastąpienia wprowadź ciąg sformatowany w sposób wyświetlić wzorce dopasowywane w wyrażeniu regularnym.
+9. Zastąpienia wprowadź ciąg sformatowany w sposób mają być wyświetlane wzorców dopasowywane w wyrażeniu regularnym.
 
-15. Kliknij prawym przyciskiem myszy **SmartCaptionSuffix** wartość, a następnie wybierz **Modyfikuj**.
+10. Kliknij prawym przyciskiem myszy **SmartCaptionSuffix** wartości, a następnie wybierz **Modyfikuj**.
 
-16. Wprowadź wszystkie znaki, które mają być wyświetlane na końcu podpis.
+11. Wprowadź wszystkie znaki, które mają być wyświetlane na końcu podpis.
 
-    Przy następnym przeciągnij elementy z **źródeł danych** , etykiety podpis są tworzone przy użyciu nowej wartości rejestru, pod warunkiem.
+    Przy następnym przeciągnij elementy z **źródeł danych** oknie etykiety podpis są tworzone przy użyciu nowej wartości rejestru, pod warunkiem.
 
-## <a name="turn-off-the-smart-captioning-feature"></a>Wyłącz funkcję podpisów inteligentne
+## <a name="turn-off-the-smart-captioning-feature"></a>Wyłącz funkcję inteligentnych funkcji podpisów
 
-1.  Otwórz okno polecenia, klikając przycisk **Start** , a następnie **Uruchom**.
+1.  Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
 
 2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń węzeł **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
+3.  Rozwiń **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
 
-7.  Kliknij prawym przyciskiem myszy **15.0** węzeł i utworzyć nową **klucza** o nazwie `Data Designers`.
+4.  Kliknij prawym przyciskiem myszy **15.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
 
-8.  Kliknij prawym przyciskiem myszy **projektanci danych** węzeł i Utwórz trzy nowe wartości ciągu:
+5.  Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz trzy nowe wartości ciągu:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** elementu, a następnie wybierz **Modyfikuj**.
+6. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** elementu, a następnie wybierz **Modyfikuj**.
 
-12. Wprowadź `(.*)` dla wartości. Jest to zgodny cały ciąg.
+7. Wprowadź `(.*)` dla wartości. To będzie odpowiadał cały ciąg.
 
-13. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** elementu, a następnie wybierz **Modyfikuj**.
+8. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** elementu, a następnie wybierz **Modyfikuj**.
 
-14. Wprowadź `$1` dla wartości. Spowoduje to zastąpienie ciąg o pasujących wartości jest cały ciąg, dzięki czemu pozostanie bez zmian.
+9. Wprowadź `$1` dla wartości. Ciąg to zamienia dopasowany wartość, która jest cały ciąg pozostanie niezmieniona.
 
-    Przy następnym przeciągnij elementy z **źródeł danych** okna, etykiety podpis są tworzone za pomocą podpisów bez modyfikacji.
+    Przy następnym przeciągnij elementy z **źródeł danych** oknie etykiety podpis są tworzone przy użyciu transkrypcji zostały zmodyfikowane.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - performance tools, HTML [Store apps]
 ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893380"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791151"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Wskazówki: Poprawianie czasu odpowiedzi interfejsu użytkownika (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

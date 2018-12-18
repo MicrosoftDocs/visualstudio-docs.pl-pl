@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947394"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389266"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 
-Użyj **IntelliSense** Strona opcji, aby zmodyfikować ustawienia, które wpływają na zachowanie IntelliSense dla języka C#. Aby uzyskać dostęp do tej strony opcji, należy wybrać **narzędzia** > **opcje**, a następnie wybierz pozycję **Edytor tekstu** > **C#**  >  **IntelliSense**.
-
-> [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Użyj **IntelliSense** Strona opcji, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla C#. Dostępu do tej opcji strony, wybierz **narzędzia** > **opcje**, a następnie wybierz **edytora tekstów**  >  **C#**  >  **IntelliSense**.
 
 **IntelliSense** opcje strona zawiera następujące opcje:
 
@@ -38,55 +35,57 @@ Użyj **IntelliSense** Strona opcji, aby zmodyfikować ustawienia, które wpływ
 
 - Pokaż listę uzupełniania po wpisaniu znaku *
 
-   Gdy ta opcja jest zaznaczona, IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełniania IntelliSense jest nadal dostępny z **IntelliSense** menu lub naciskając klawisz **Ctrl**+**miejsca**.
+   Gdy ta opcja jest zaznaczona, IntelliSense wyświetla automatycznie na liście uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełnianie przez funkcję IntelliSense są nadal dostępne z poziomu **IntelliSense** menu lub naciskając **Ctrl**+**miejsca**.
 
 - Pokaż listę uzupełniania po usunięciu znak
 
-- Wyróżnianie pasujących części listy uzupełniania
+- Podświetl pasujące fragmenty elementów listy uzupełniania
 
-- Pokaż ukończenie listy filtrów
+- Pokaż filtry elementów uzupełniania
 
-- Pokaż sugestie dotyczące nazwy
+## <a name="snippets-behavior"></a>Zachowanie fragmentów kodu
 
-### <a name="snippets-behavior"></a>Zachowanie wstawki kodu programu
+- Nigdy nie dołączaj fragmentów kodu
 
-- Nigdy nie dołączaj wstawki kodu programu
+   Gdy ta opcja jest zaznaczona, IntelliSense nigdy nie dodaje aliasy dla C# fragmenty do listy uzupełniania kodu.
 
-   Gdy ta opcja jest zaznaczona, IntelliSense nigdy nie dodaje do listy uzupełniania aliasów wstawki kodu C#.
+- Zawsze dołączaj fragmenty kodu
 
-- Zawsze należy uwzględniać wstawki kodu programu
+   Gdy ta opcja jest zaznaczona, IntelliSense dodaje aliasy we fragmentach kodu języka C# na liście uzupełniania. W przypadku, gdy alias fragment kodu jest taka sama jak słowo kluczowe, na przykład [klasy](/dotnet/csharp/language-reference/keywords/class), słowo kluczowe zastępuje skrót. Aby uzyskać więcej informacji, zobacz [ C# fragmenty kodu](../../ide/visual-csharp-code-snippets.md).
 
-   Gdy ta opcja jest zaznaczona, IntelliSense dodaje aliasy wstawki kodu C# do listy zakończenia. W przypadku, gdy alias fragment kodu jest taka sama jak słowem kluczowym, na przykład [klasy](/dotnet/csharp/language-reference/keywords/class), słowo kluczowe zastępuje skrótu. Aby uzyskać więcej informacji, zobacz [wstawki kodu C#](../../ide/visual-csharp-code-snippets.md).
+- Dołącz fragmenty kodu podczas?-bezpośrednio po identyfikator karty
 
-- Obejmują wstawki podczas? — karta bezpośrednio po identyfikatora
+   Gdy ta opcja jest zaznaczona, IntelliSense dodaje aliasy dla C# listy fragmentów kodu do wykonania, kiedy **?** + **Kartę** wciśnięto po identyfikatorze
 
-   Gdy ta opcja jest zaznaczona, IntelliSense dodaje aliasów dla C# kodu fragmenty kodu do wykonania po liście **?** + **Kartę** zostanie naciśnięty po identyfikatora
+## <a name="enter-key-behavior"></a>Zachowanie klawisza ENTER
 
-### <a name="enter-key-behavior"></a>Zachowanie klawisza ENTER
+- Nigdy nie dodawaj nowy wiersz po naciśnięciu klawisza enter
 
-- Nigdy nie należy dodawać nowy wiersz po naciśnięciu klawisza enter
+   Określa nowy wiersz nigdy nie były automatycznie dodawane po wybraniu elementu na liście uzupełniania i naciskając klawisz **Enter**.
 
-   Określa, że nowy wiersz nigdy nie jest automatycznie dodawane po wybraniu elementu na liście uzupełniania i naciskając klawisz **Enter**.
+- Tylko wtedy dodawaj nowy wiersz po naciśnięciu klawisza enter po zakończeniu pełnego wpisanego wyrazu
 
-- Tylko dodać nowy wiersz po naciśnięciu klawisza enter po zakończeniu wpisaniu całego słowa
+   Określa, że jeśli wpisz wszystkie znaki dla wpisu na liście uzupełniania, a następnie naciśnij klawisz **Enter**, nowy wiersz jest automatycznie dodawany i kursor przesuwa się do nowego wiersza.
 
-   Określa, że jeśli wpisz wszystkich znaków dla wpisu na liście uzupełniania, a następnie naciśnij klawisz **Enter**, nowy wiersz jest automatycznie dodawane i kursor zostanie umieszczony w nowym wierszu.
-
-   Na przykład jeśli wpiszesz `else` , a następnie naciśnij klawisz **Enter**, w edytorze pojawi się następujące:
+   Na przykład, jeśli wpiszesz `else` , a następnie naciśnij klawisz **Enter**, następujące pojawi się w edytorze:
 
    `else`
 
    `|` (Lokalizacja kursora)
 
-   Jednak w przypadku wpisania tylko `el` , a następnie naciśnij klawisz **Enter**, w edytorze pojawi się następujące:
+   Jednakże jeśli wpiszesz tylko `el` , a następnie naciśnij klawisz **Enter**, następujące pojawi się w edytorze:
 
    `else|` (Lokalizacja kursora)
 
-- Zawsze należy dodać nowy wiersz po naciśnięciu klawisza enter
+- Zawsze dodawaj nowy wiersz po naciśnięciu klawisza enter
 
-   Określa, że w przypadku wpisania *żadnych* znaków dla pozycji w liście uzupełniania, a następnie naciśnij klawisz **Enter**, nowy wiersz jest automatycznie dodawane i kursor zostanie umieszczony w nowym wierszu.
+   Określa, że jeśli wpiszesz *wszelkie* znaków dla pozycji w liście uzupełniania, a następnie naciśnij klawisz **Enter**, nowy wiersz jest automatycznie dodawany i kursor przesuwa się do nowego wiersza.
+
+## <a name="show-name-suggestions"></a>Pokaż sugestie dotyczące nazwy
+
+Wykonuje uzupełnianie nazw obiektów automatycznych ostatnio wybrane elementy członkowskie.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

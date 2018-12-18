@@ -7,17 +7,17 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542443"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295933"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control
 
 > [!NOTE]
-> **Uwaga**: Obsługa kontroli wersji serwera Team Foundation jest obecnie w wersji zapoznawczej, a niektóre funkcje nie jeszcze w pełni działa. Chętnie poznamy opinii od Ciebie na wszelkie problemy w [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html). Zmiany są nadal pochodzić!
+> Team Foundation Version Control obsługi jest obecnie w wersji zapoznawczej, a niektóre funkcje nie jeszcze w pełni działa. Chętnie poznamy opinii od Ciebie na wszelkie problemy w [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html). Zmiany są nadal pochodzić!
 
 Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: Git, która jest rozłożona Kontrola wersji i Team Foundation Version kontroli (TFVC), czyli scentralizowany formant wersji. Ten artykuł zawiera omówienie oraz punkt początkowy dla zastosowaniem funkcji TFVC za pomocą programu Visual Studio dla komputerów Mac.
 
@@ -29,9 +29,9 @@ Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: Git, która je
 
 ## <a name="installation"></a>Instalacja
 
-W programie Visual Studio dla komputerów Mac, wybierz **programu Visual Studio > rozszerzenia...**  z menu. W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługą VSTS** i kliknij przycisk **instalacji...** :
+W programie Visual Studio dla komputerów Mac, wybierz **programu Visual Studio > rozszerzenia** z menu. W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługą VSTS** i kliknij przycisk **zainstalować**:
 
-  ![Menedżer rozszerzeń](media/tfvc-install.png)
+![Menedżer rozszerzeń](media/tfvc-install.png)
 
 Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu, należy ponownie uruchomić środowisko IDE.
 
@@ -39,27 +39,27 @@ Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu,
 
 Okresowo są wprowadzone aktualizacje z rozszerzeniem TFVC. Dostęp do aktualizacji, wybierz **programu Visual Studio > rozszerzenia...**  z menu i wybierzesz **aktualizacje** kartę. Zaznacz rozszerzenie na liście i naciśnij klawisz **aktualizacji** przycisku:
 
-  ![Aktualizacja przedstawiający Menedżer rozszerzenia](media/tfvc-update.png)
+![Aktualizacja przedstawiający Menedżer rozszerzenia](media/tfvc-update.png)
 
 Naciśnij klawisz **zainstalować** w następnym oknie dialogowym odinstalowanie starego pakietu i instalacja nowego.
 
-Aby uzyskać informacji na temat nowości w każdej wersji, zobacz [informacje o wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
+Aby uzyskać informacji na temat nowości w każdej wersji, zobacz [informacje o wersji](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Za pomocą dodatku
 
 Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > DevOps programu TFS/platformy Azure > Otwórz ze zdalnego repozytorium** elementu menu.
 
-  ![Element menu, aby otworzyć rozszerzenia](media/tfvc-source-control-explorer-devops.png)
+![Element menu, aby otworzyć rozszerzenia](media/tfvc-source-control-explorer-devops.png)
 
 Wybierz usługi VSTS lub serwera Team Foundation Server, aby rozpocząć pracę, a następnie naciśnij klawisz **Kontynuuj**:
 
-  ![Łączenie z serwerem](media/tfvc-choose-server-type-devops.png)
+![Łączenie z serwerem](media/tfvc-choose-server-type-devops.png)
 
 ### <a name="azure-repos-authentication"></a>Uwierzytelnianie repozytoriów platformy Azure
 
 Po wybraniu projektu, który znajduje się na repozytoriów platformy Azure, monit o podanie szczegółów konta Microsoft:
 
-  ![Połącz się z repozytoriów platformy Azure](media/tfvc-vsts-login.png)
+![Połącz się z repozytoriów platformy Azure](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>Uwierzytelnianie serwera TFS
 
@@ -71,7 +71,7 @@ Aby połączyć z TFS, wprowadź szczegóły serwera i poświadczenia konta. Wpr
 
 Po użytkownik został pomyślnie uwierzytelniony, można wyświetlić listę repozytoriów, które są skojarzone z kontem w **Otwórz z kontroli źródła** okno dialogowe:
 
-  ![Otwórz z dialogowe kontroli źródła z projektami wyświetlane](media/tfvc-vsts-projects.png)
+![Otwórz z dialogowe kontroli źródła z projektami wyświetlane](media/tfvc-vsts-projects.png)
 
 To okno dialogowe jest zorganizowana przy użyciu następujących węzłów:
 
@@ -188,3 +188,7 @@ Podczas próby [Utwórz nowy obszar roboczy](#creating-a-new-workspace), należy
 - Zakaz używania nieprawidłowe znaki w nazwie obszaru roboczego.
 - Nazwa musi być krótsza niż 64 znaki.
 - Nie można użyć ścieżki lokalnej przez innych obszarów roboczych.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Tworzenie i udostępnianie kodu w TFVC przy użyciu programu Visual Studio (na Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

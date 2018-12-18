@@ -1,5 +1,5 @@
 ---
-title: Przełączniki wiersza polecenia devenv w usłudze Visual Studio
+title: Przełączniki wiersza polecenia Devenv
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907043"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063399"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 
@@ -31,9 +31,9 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
 
 ## <a name="devenv-switch-syntax"></a>Składnia przełącznik Devenv
 
-Domyślnie polecenia devenv przekazać przełączników do narzędzia devenv.com. Narzędzie devenv.com dostarcza dane wyjściowe za pośrednictwem standardowych systemowych strumieni, takich jak `stdout` i `stderr`. Tego narzędzia można określić odpowiednią przekierowanie We/Wy podczas przechwytuje dane wyjściowe, na przykład plik z rozszerzeniem txt.
+Polecenia, które zaczynają się od `devenv` są obsługiwane przez `devenv.com` narzędzia, które dostarcza dane wyjściowe za pośrednictwem standardowych systemowych strumieni, takich jak `stdout` i `stderr`. Tego narzędzia można określić odpowiednią przekierowanie We/Wy podczas przechwytuje dane wyjściowe, na przykład plik z rozszerzeniem txt.
 
-Z drugiej strony, polecenia, które zaczynają się od `devenv.exe` można użyć tego samego przełączników, ale narzędzie devenv.com jest pomijany.
+Z drugiej strony, polecenia, które zaczynają się od `devenv.exe` można użyć tego samego przełączników, ale `devenv.com` narzędzie jest pomijany. Za pomocą `devenv.exe` bezpośrednio zapobiega dane wyjściowe w konsoli.
 
 Zasady składni `devenv` przełączników przypominają wyjątki dla innych narzędzi wiersza polecenia systemu DOS. Następujące reguły składni mają zastosowanie do wszystkich `devenv` przełączników i ich argumentów:
 
@@ -45,7 +45,7 @@ Zasady składni `devenv` przełączników przypominają wyjątki dla innych narz
 
 - Jeśli pierwszy argument jest plik, który nie jest rozwiązanie lub projekt, ten plik zostanie otwarty w odpowiedniego edytora, w nowym wystąpieniu środowiska IDE.
 
-- Jeśli podasz nazwę pliku projektu, a nie nazwę pliku rozwiązania `devenv` polecenie wyszukuje folderu nadrzędnego pliku projektu plik rozwiązania, który ma taką samą nazwę. Na przykład polecenie `devenv /build myproject1.vbproj` wyszukuje folder nadrzędny do pliku rozwiązania, który nosi nazwę "myproject1.sln".
+- Jeśli podasz nazwę pliku projektu, a nie nazwę pliku rozwiązania `devenv` polecenie wyszukuje folderu nadrzędnego pliku projektu plik rozwiązania, który ma taką samą nazwę. Na przykład polecenie `devenv myproject1.vbproj /build` wyszukuje folder nadrzędny do pliku rozwiązania, który nosi nazwę "myproject1.sln".
 
     > [!NOTE]
     > Jeden i tylko jeden plik rozwiązania, który odwołuje się do tego projektu powinna znajdować się w folderu nadrzędnego. Jeśli folder nadrzędny zawiera plik rozwiązania nie odwołujący się tego projektu, lub jeśli folder nadrzędny zawiera dwa lub więcej plików rozwiązania, które ją przywołują, następnie rozwiązanie tymczasowe tworzony jest plik.
@@ -78,12 +78,12 @@ Następujące przełączniki wiersza polecenia nie są wyświetlane w środowisk
 
 |Przełącznik wiersza polecenia|Opis|
 | - |-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|Wyświetla Pomoc dotyczącą przełączniki devenv **okna wiersza polecenia**.<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|Tworzy określonego rozwiązania lub projektu, zgodnie z konfiguracją określonego rozwiązania.<br /><br /> **/ Build myproj.csproj Devenv**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|Usuwa wszystkie pliki utworzone za pomocą polecenia kompilacji, bez wywierania wpływu na pliki źródłowe.<br /><br /> **Devenv myproj.csproj / clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Kompiluje rozwiązanie, wraz z plikami niezbędne do wdrożenia, zgodnie z konfiguracją rozwiązania.<br /><br /> **Devenv myproj.csproj / deploy**|
+|[/?](../../ide/reference/q-devenv-exe.md)|Wyświetla Pomoc dotyczącą przełączniki devenv **okna wiersza polecenia**.<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|Tworzy określonego rozwiązania lub projektu, zgodnie z konfiguracją określonego rozwiązania.<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|Usuwa wszystkie pliki utworzone za pomocą polecenia kompilacji, bez wywierania wpływu na pliki źródłowe.<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Kompiluje rozwiązanie, wraz z plikami niezbędne do wdrożenia, zgodnie z konfiguracją rozwiązania.<br /><br /> `devenv myproj.csproj /deploy`|
 |[/Diff](../../ide/reference/diff.md)|Porównuje dwa pliki. Przyjmuje cztery parametry: SourceFile, TargetFile, SourceDisplayName (opcjonalnie), TargetDisplayName (opcjonalnie).|
-|[/Out](../../ide/reference/out-devenv-exe.md)|Pozwala określić plik, aby otrzymywać komunikaty o błędach podczas kompilacji.<br /><br /> **/ Build myproj.csproj Devenv/out log.txt**|
+|[/Out](../../ide/reference/out-devenv-exe.md)|Pozwala określić plik, aby otrzymywać komunikaty o błędach podczas kompilacji.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projekt do kompilacji, czyszczenia lub wdrożenia. Można użyć tego przełącznika, tylko wtedy, gdy podano również/Build, / rebuild, / clean, lub / deploy — przełącznik.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Określa konfigurację projektu do kompilacji lub wdrożenia. Można użyć tego przełącznika, tylko wtedy, gdy podano również przełącznika/Project.|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Czyści, a następnie kompiluje określone rozwiązanie lub projekt zgodnie z konfiguracją określonego rozwiązania.|

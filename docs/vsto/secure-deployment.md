@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671083"
 ---
 # <a name="secure-deployment"></a>Zabezpieczanie wdrożenia
   Podczas tworzenia rozwiązań pakietu Office, komputer deweloperski jest aktualizowany automatycznie uruchamianie kodu w projekcie do uruchomienia. Jednak podczas wdrażania rozwiązania, należy podać dowód, na którym można oprzeć decyzji o zaufaniu rozwiązania przy użyciu certyfikatu podpisywania lub używając [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] klucz monitu zaufania. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -49,7 +49,7 @@ ms.locfileid: "49865729"
   
 ## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
- [Przygotowywanie komputerów pozwala uruchamiać lub hostować rozwiązań pakietu Office](http://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [Przygotowywanie komputerów pozwala uruchamiać lub hostować rozwiązań pakietu Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)  
   
   

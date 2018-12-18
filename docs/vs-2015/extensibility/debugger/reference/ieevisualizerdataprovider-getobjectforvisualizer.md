@@ -17,12 +17,12 @@ ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5fb23bf300597f48046a9f80bc99a98c0f4d93b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f9cc01e64ba272db28d36261785ce7694334c03
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932887"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772238"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Ta metoda pobiera obiekt, który reprezentuje ten Wizualizator.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
+int GetObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   

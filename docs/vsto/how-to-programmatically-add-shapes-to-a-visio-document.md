@@ -16,25 +16,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32fc1b61505711cbcf353819372bcd1452bf3716
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 94e8b43830c26aad82937cc0533ca19e109f33d0
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671875"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Porady: programowane Dodawanie kształtów do dokumentu programu Visio
-  Pobieranie wzorców z wzornik i upuszczając kształtów na stronie aktywne, można dodać kształtów do dokumentu programu Microsoft Office Visio.  
+  Pobieranie serwerów głównych ze wzornika i upuszczając kształtów na aktywnej stronie, można dodać kształtów do dokumentu programu Microsoft Visio pakietu Office.  
   
- Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA, aby uzyskać [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) metody [Microsoft.Office.Interop.Visio.Application.ActivePage](http://msdn.microsoft.com/library/office/ff765484.aspx) właściwość i [Microsoft.Office.Interop.Visio.Page.Drop](http://msdn.microsoft.com/library/office/ff765054.aspx) metody.  
+ Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) metody [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) właściwości i [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) metody.  
   
 ## <a name="add-shapes-to-a-visio-document"></a>Dodawanie kształtów do dokumentu programu Visio  
   
-### <a name="to-add-shapes-to-a-visio-document"></a>Aby dodać kształtów do dokumentu programu Visio  
+### <a name="to-add-shapes-to-a-visio-document"></a>Dodawanie kształtów do dokumentu programu Visio  
   
--   Dla aktywnego dokumentu Pobierz wzorce z kolekcji Documents.Masters i Porzuć kształtów w aktywnym dokumencie. Wzorzec można pobrać za pomocą indeksu lub nazwę wzorca.  
+-   Od aktywnego dokumentu Pobierz wzorce z kolekcji Documents.Masters i upuść kształty w aktywnym dokumencie. Wzorzec można pobrać przy użyciu indeksu lub wzorca nazwy.  
   
-     Poniższy przykład kodu tworzy pusty dokument programu Visio, a następnie otwiera je z **kształty podstawowe** wzornika zadokowane. Następnie kod pobiera kilka kształtów i porzuca je na stronie aktywne.  
+     Poniższy przykład kodu tworzy pusty dokument programu Visio, a następnie go otwiera **kształtów podstawowych** wzornika zadokowany. Kod następnie pobiera kilku kształtów i umieszcza je na aktywnej stronie.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]  
@@ -42,7 +42,7 @@ ms.locfileid: "35256672"
 ## <a name="see-also"></a>Zobacz także  
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
- [Praca z kształtów Visio](../vsto/working-with-visio-shapes.md)   
+ [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md)   
  [Porady: programowane kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

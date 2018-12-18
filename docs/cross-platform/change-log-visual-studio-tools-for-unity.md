@@ -1,37 +1,73 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120682"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068383"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 Dziennik zmian w programie Visual Studio Tools for Unity.
 
-## <a name="3807"></a>3.8.0.7
- Wydana 20 września 2018 r.
- 
+## <a name="3903"></a>3.9.0.3
+ wydana 28 listopada 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Rozwiązano problemy intellisense i ponowne załadowanie projektu, podczas dodawania lub usuwania skryptów znajdujących się w bardzo pierwszego projektu.
+
+## <a name="3902"></a>3.9.0.2
+ wydana 19 listopada 2018 r.
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Debuger:**
 
     -   Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
 
+## <a name="3901"></a>3.9.0.1
+ Wydana 15 listopada 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Naprawiono Unity wtyczki aktywacji wybranie innego domyślnego edytora.
+
+## <a name="3900"></a>3.9.0.0
+ Wydana 13 listopada 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
+
+## <a name="3807"></a>3.8.0.7
+ Wydana 20 września 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Debuger:**
+
+    -   (Backported z 3.9.0.2) Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
+
 ## <a name="3806"></a>3.8.0.6
  Wydana 27 sierpnia 2018 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
@@ -40,7 +76,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="3805"></a>3.8.0.5
  wydana 20 sierpnia 2018 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
@@ -49,13 +85,13 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="3804"></a>3.8.0.4
  Wydana 14 sierpnia 2018 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Ocena:**
 
     -   Dodano obsługę wartości wskaźnika.
-    
+
     -   Dodano obsługę dla metod ogólnych.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
@@ -66,33 +102,33 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="3803"></a>3.8.0.3
  Wydana 24 lipca 2018 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
 
-    -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
+    -   (Backported z 3.9.0.0) Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Wydana 7 lipca 2018 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
 
     -   Obejście przejściowych błędów wydajności aparatu Unity: pamięci podręcznej MonoIslands podczas generowania projektów.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Wydana 26 czerwca 2018 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Debugowanie:**
 
     -   Dodano obsługę poleceń UserLog i UserBreak.
-    
+
     -   Obsługa dodano załadować z opóźnieniem typu (optymalizowanie opóźnienie odpowiedzi obciążenia i debuger sieci).
-       
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Ocena:**
@@ -101,19 +137,19 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="3800"></a>3.8.0.0
  Wydanie: 30 maja 2018 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Debugowanie:**
 
     -   Dodano obsługę wyświetlanie zmiennych w konstrukcji asynchronicznej.
-    
+
     -   Dodano obsługę przetwarzania zagnieżdżonych typów podczas ustawiania punktów przerwania, aby zapobiec ostrzeżenia za pomocą kompilatora konstrukcji.
-    
+
 -   **Integracja:**
 
     -   Dodano obsługę dla gramatyk textmate programów do cieniowania (obciążeniu C++ nie jest potrzebna dla barwy kodu programu do cieniowania).
-    
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
@@ -137,15 +173,15 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   **Debugowanie:**
 
     -   Dodano obsługę debugowania zorganizowane (debugowanie w wielu graczy i edytorem przy użyciu tej samej sesji programu Visual Studio).
-    
+
     -   Dodano obsługę odtwarzacza systemu Android USB debugowania.
-    
+
     -   Dodano obsługę dla platformy uniwersalnej systemu Windows/IL2CPP player debugowania.
 
 -   **Ocena:**
 
     -   Dodano obsługę specyfikatory szesnastkowe.
-    
+
     -   Obejrzyj Ulepszone okno dokonywaniu oceny oprogramowania.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
@@ -841,9 +877,9 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Naprawiono obsługę motywów programu Visual Studio. Wcześniej, okien dialogowych na czarny motywy może się pojawić, puste (łączenie problemów [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) i [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Naprawiono obsługę motywów programu Visual Studio. Wcześniej okien dialogowych na czarny motywy może być pusty.
 
--   Poprawka Unity zawieszać się, gdy połączenie ze debugera przy jednoczesnej konieczności ponownego kompilowania aparatu Unity (łączenie problemów [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) i [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Naprawiono blokowanie aparatu Unity, gdy połączenie ze debugera przy jednoczesnej konieczności ponownego kompilowania aparatu Unity.
 
 -   Usuń punkty przerwania podczas debugowania zdalnego edytory lub graczy skompilowany w innym systemie.
 
@@ -853,7 +889,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   Naprawiono obsługę zakres zmiennej w debugerze, aby uniknąć zmiennych na żywo, które pojawiają się poza zakresem.
 
--   Napraw wyszukiwania statyczne elementy członkowskie obliczania wyrażeń debugera (Połącz problem [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Napraw wyszukiwania statyczne elementy członkowskie obliczania wyrażeń debugera.
 
 -   Napraw, wyświetlania typów obliczania wyrażeń debugera, aby wyświetlić właściwości i pola statyczne.
 

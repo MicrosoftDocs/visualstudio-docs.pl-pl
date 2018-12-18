@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860646"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967535"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć rozwiązanie programu Visual Studio z szablonu. Kluczowym elementem rozwiązania jest diagramem definicji DSL, który jest przechowywany w DslDefinition.dsl. W definicji DSL definiuje klasy i kształty język DSL. Po zmodyfikowaniu i dodawane do tych elementów, można dodać kod programu, aby dostosować DSL bardziej szczegółowo.
@@ -213,7 +213,7 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
 ##### <a name="to-test-the-new-domain-classes"></a>Aby przetestować nowe klasy domeny
 
-1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie doświadczalnym. W doświadczalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 

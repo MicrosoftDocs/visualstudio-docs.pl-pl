@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850818"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349679"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -434,7 +434,7 @@ System projektów języka Visual C++ opiera się na [systemu projektu programu V
 
 ### <a name="project-property-pages"></a>Strony właściwości projektu
 
-Uzyskać ogólnego projektowania, zobacz [rozszerzalność platformy — część 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) i [rozszerzalność platformy — część 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Uzyskać ogólnego projektowania, zobacz [rozszerzalność platformy — część 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) i [rozszerzalność platformy — część 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 W prostych słowach na stronach właściwości widzisz w **właściwości projektu** okno dialogowe dla projektu w języku C++ są definiowane przez *reguły* plików. Plik reguł określa zbiór właściwości, które można wyświetlić na stronie właściwości i jak i, w którym ma zostać zapisany w projekcie. Reguła pliki są pliki XML, które używają formatu pliku Xaml. W opisano typy służący do serializowania ich [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Aby uzyskać więcej informacji na temat użycia reguły plików w projektach zobacz [pliki reguł XML strony właściwości](/cpp/ide/property-page-xml-files).
 

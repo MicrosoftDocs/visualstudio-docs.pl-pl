@@ -19,11 +19,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677554"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744836"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizowanie danych dotyczących narzędzi do oceny wydajności
 Wydajność raportów z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools pozwalają przeglądać i analizować problemy z wydajnością aplikacji. Ta sekcja zawiera omówienie raporty dotyczące wydajności i widoki, których można użyć do sprawdzenia danych dotyczących wydajności.  

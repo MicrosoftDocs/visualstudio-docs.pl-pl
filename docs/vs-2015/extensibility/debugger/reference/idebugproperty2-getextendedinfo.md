@@ -17,12 +17,12 @@ ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23782a80527e35c6dafeb4ffd51eadf1a0ff2b06
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f6fd711a70c050a6f490a27a56eb860c84de867
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948797"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726967"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Pobiera rozszerzone informacje dla właściwości.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT GetExtendedInfo (   
+HRESULT GetExtendedInfo (   
    REFGUID* guidExtendedInfo,  
    VARIANT* pExtendedInfo  
 );  
 ```  
   
 ```csharp  
-int GetExtendedInfo (   
+int GetExtendedInfo (   
    ref Guid guidExtendedInfo,  
    out object pExtendedInfo  
 );  
@@ -50,7 +50,7 @@ int GetExtendedInfo (
  [in] Identyfikator GUID, który określa typ danych rozszerzonych do pobrania. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
   
  `pExtendedInfo`  
- [out] Zwraca `VARIANT` (C++) lub obiekt (C#), który może służyć do pobierania informacji właściwości rozszerzonej. Na przykład, ten parametr może zwrócić `IUnknown` interfejsu, który może być odpytywany dla [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
+ [out] Zwraca `VARIANT` (C++) lub obiekt (C#) można pobrać informacji o właściwości rozszerzonej. Na przykład, ten parametr może zwrócić `IUnknown` interfejsu, który może być odpytywany dla [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Jeśli rozszerzonych informacji do pobrania.  

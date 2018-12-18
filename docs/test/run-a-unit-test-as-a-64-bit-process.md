@@ -1,5 +1,5 @@
 ---
-title: Uruchamianie testu jednostkowego jako procesu 64-bitowych w programie Visual Studio
+title: Uruchamianie testu jednostkowego jako procesu 64-bitowego
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cf8a815cb0827ed69c24686053bf118a48c020eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4ee070adba33328253d7abeb122ec2ca2da145ef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379907"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062719"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Uruchamianie testu jednostkowego jako procesu 64-bitowego
 

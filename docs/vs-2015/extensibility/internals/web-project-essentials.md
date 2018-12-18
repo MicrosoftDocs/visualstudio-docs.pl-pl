@@ -15,12 +15,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b30dd0616fcf2f59044a782bf8611ef2fa946f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6343860465cc5c8acdefb80a39eac3c33087a36d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748841"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektów internetowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,22 +1,23 @@
 ---
 title: Przewodnik Szybki Start — klonować repozytorium kodu w języku Python
 description: W tym przewodniku Szybki Start utworzysz projektu języka Python w programie Visual Studio przez Sklonowanie repozytorium koans języka Python za pomocą programu Visual Studio Team Explorer.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281692"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068396"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: Sklonuj repozytorium kodu w języku Python w programie Visual Studio
 
@@ -57,7 +58,7 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 1. Naciśnij klawisz **Ctrl**+**F5** lub wybierz **debugowania** > **Uruchom bez debugowania** do uruchomienia programu. Jeśli widzisz **FileNotFoundError** dla *koans.txt*, Sprawdź katalog roboczy ustawienia, zgodnie z opisem w poprzednim kroku.
 
-1. Gdy program zostanie uruchomiony pomyślnie, wyświetla błąd asercji w wierszu 17 *python3/koans/about_asserts.py*. Jest to zamierzone: program jest przeznaczony do nauki, Python, konfigurując możesz Popraw wszystkie błędy zamierzone. (Szczegółowe informacje znajdują się na [Ruby Koans](http://rubykoans.com/), który inspirację Koans języka Python.)
+1. Gdy program zostanie uruchomiony pomyślnie, wyświetla błąd asercji w wierszu 17 *python3/koans/about_asserts.py*. Jest to zamierzone: program jest przeznaczony do nauki, Python, konfigurując możesz Popraw wszystkie błędy zamierzone. (Szczegółowe informacje znajdują się na [Ruby Koans](https://rubykoans.com/), który inspirację Koans języka Python.)
 
     ![Pierwsze dane wyjściowe programu koans języka Python](media/koans-output.png)
 

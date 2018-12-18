@@ -1,5 +1,5 @@
 ---
-title: Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań
+title: Tworzenie kodu bez projektów ani rozwiązań
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba1ad9158431a157bdba588b88f366eac45889a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5885fc8c62b8da4213446601f37700cc077eda8c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812078"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062367"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań
 

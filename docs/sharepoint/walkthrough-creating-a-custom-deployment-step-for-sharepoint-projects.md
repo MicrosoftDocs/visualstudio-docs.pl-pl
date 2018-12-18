@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f42433b4ec79138e60b11e6380a6b709e74bacd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812846"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296154"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, programu Visual Studio wykonuje szereg kroków wdrożenia w określonej kolejności. Program Visual Studio obejmuje wiele kroków wdrożenia wbudowanych, ale można także tworzyć własne.  
@@ -193,7 +193,7 @@ ms.locfileid: "49812846"
   
 1.  W **Eksploratora rozwiązań**w obszarze **UpgradeDeploymentStep** projektu, otwórz menu skrótów dla **source.extension.vsixmanifest** , a następnie wybierz  **Otwórz**.  
   
-     Program Visual Studio otwiera plik w edytorze manifestu. Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Program Visual Studio otwiera plik w edytorze manifestu. Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  W **nazwa produktu** wprowadź **uaktualnienia kroku wdrożenia dla projektów programu SharePoint**.  
   
@@ -208,7 +208,7 @@ ms.locfileid: "49812846"
 6.  W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   
@@ -221,7 +221,7 @@ ms.locfileid: "49812846"
 10. W **typu** listy, wprowadź **SharePoint.Commands.v4**.  
   
     > [!NOTE]  
-    >  Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
 11. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   

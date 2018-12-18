@@ -17,12 +17,12 @@ ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13df0a98d7a13e6f529cb32081fd38cf12639800
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 628d6e5ae2e13ea117cb3fd50aca3ba2150ac59f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829247"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755457"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ public struct TYPE_INFO {
  Nazwa Unii.  
   
  unionmember  
- [Tylko język C#] To typ odpowiednią strukturą ustalane na podstawie Marshal `dwKind`.  
+ [C# tylko] To typ odpowiednią strukturą ustalane na podstawie Marshal `dwKind`.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest przekazywany do [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) metody, gdzie jest wypełnione. Sposób interpretowania zawartość struktury opiera się na `dwKind` pola.  
@@ -78,7 +78,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [Tylko w języku C++] Jeśli `dwKind` jest równa `TYPE_KIND_BUILT`, jest zwolnić bazowego [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu, kiedy niszczenie `TYPE_INFO` struktury. Jest to realizowane przez wywołanie `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- [Tylko język C#] W poniższej tabeli przedstawiono, jak interpretować `unionmember` składowej dla każdego rodzaju typu. W przykładzie pokazano, jak to zrobić dla jednego rodzaju.  
+ [C# tylko] W poniższej tabeli przedstawiono, jak interpretować `unionmember` składowej dla każdego rodzaju typu. W przykładzie pokazano, jak to zrobić dla jednego rodzaju.  
   
 |`dwKind`|`unionmember` interpretowane jako|  
 |--------------|----------------------------------|  

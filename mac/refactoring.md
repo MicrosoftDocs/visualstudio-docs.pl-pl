@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 8652b73b9bd7e414a989a1b711238126a742290f
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 672c7547da9360ae3e278f783b160ffdaed05e03
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624433"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296466"
 ---
 # <a name="refactoring"></a>Refaktoryzacja
 
@@ -20,25 +20,25 @@ Refaktoryzacja zapewnia lepszy wynik dotyczący bazy kodu, dzięki czemu bardzie
 
 Program Visual Studio dla komputerów Mac integracji dzięki użyciu platformy Roslyn, platforma kompilatora .NET typu open source firmy Microsoft, pozwala na więcej operacji refaktoryzacji.
 
-## <a name="renaming"></a>Zmiana nazwy 
+## <a name="renaming"></a>Zmiana nazwy
 
 *Zmień nazwę* refaktoryzacji polecenie może służyć w dowolnym identyfikator kodu (na przykład nazwa klasy, nazwa właściwości itd.) aby znaleźć wszystkie wystąpienia identyfikatora, a następnie zmianę ich. Aby zmienić nazwę symbolu, kliknij prawym przyciskiem myszy na nim, a następnie wybierz **Refaktoryzuj > Zmień nazwę**, lub **Cmd + R** powiązanie klucza:
 
 ![Zmień nazwę elementu menu.](media/refactoring-renaming1.png)
 
-Wyróżni symbolu i wszelkie odwołania do niego. Po uruchomieniu, wpisując nazwę nowej spowoduje to automatyczną zmianę wszystkie odwołania w kodzie, a Twoje ukończenia zmiany nazwy można sygnał, naciskając klawisz **Enter**:
+Spowoduje to wyróżnienie symbolu i wszelkie odwołania do niego. Po uruchomieniu, wpisując nazwę nowej automatycznie zmienia wszystkie odwołania w kodzie, a Twoje ukończenia zmiany nazwy można sygnał, naciskając klawisz **Enter**:
 
- ![Zmiana nazwy i identyfikatora](media/refactoring-renaming2.png)
+![Zmiana nazwy i identyfikatora](media/refactoring-renaming2.png)
 
 ## <a name="context-actions"></a>Kontekst akcji
 
-Kontekst akcji pozwalają na sprawdzanie kodu C# i wyświetlić wszystkie możliwe opcje refaktoryzacji. 
+Kontekst akcji pozwalają na sprawdzanie kodu C# i wyświetlić wszystkie możliwe opcje refaktoryzacji.
 
 **Rozwiązać** i **Refaktoryzuj** kontekstu elementy są łączone w pojedynczy *szybka poprawka...*  element, który udostępnia wszystkie dostępne akcje kontekstowe:
 
 ![Wyświetl elementy kontekstu](media/refactoring-context-action.png)
 
-Wszystkie akcje kontekstowe kursor udostępni Podgląd co zostaną dodane lub usunięte z Twojego kodu.
+Wszystkie akcje kontekstowe kursor umożliwia podgląd co zostaną dodane lub usunięte z Twojego kodu.
 
 Alternatywnie, możesz nacisnąć przycisk **Option + Enter** dowolnym miejscu w kodzie:
 
@@ -46,11 +46,11 @@ Alternatywnie, możesz nacisnąć przycisk **Option + Enter** dowolnym miejscu w
 
 Aby włączyć te opcje, należy wybrać *Włącz analizę źródła otwartych plików* w opcjach **programu Visual Studio dla komputerów Mac > Preferencje > Edytor tekstu > analizę źródła**:
 
- ![Włączanie analizy źródła](media/refactoring-options.png)
+![Włączanie analizy źródła](media/refactoring-options.png)
 
 Istnieje ponad 100 możliwych działań, które mogą być sugerowane, które są włączone lub wyłączone, przechodząc do **programu Visual Studio dla komputerów Mac > Preferencje > analizę źródła > C# > Akcje kodu** i zaznaczenie lub unselecting pole obok pozycji Akcja:
 
- ![Akcje analizy źródło języka C#](media/refactoring-image3a.png)
+![Akcje analizy źródło języka C#](media/refactoring-image3a.png)
 
 ### <a name="common-context-actions"></a>Typowe akcje kontekstu
 
@@ -85,7 +85,6 @@ Operacji refaktoryzacji wyodrębniania metody umożliwia utworzenie nowej metody
 
 3. Użyj klawiszy strzałek, aby wybrać, gdzie nowa metoda ma zostać umieszczony w kodzie.
 
-
 #### <a name="encapsulate-field"></a>Hermetyzowanie pola
 
 Operacja Hermetyzuj pole umożliwia tworzenie właściwości z istniejącego pola i aktualizuje swój kod, aby odwoływać się do nowo utworzonej właściwości. Tworząc właściwość, która hermetyzuje pola, możesz są nie można przydzielać bezpośredni dostęp do pola publiczne, co oznacza, czy inne obiekty nie można go modyfikować.
@@ -95,16 +94,19 @@ Ta akcja wykona następujące czynności:
 * Zmienia modyfikator dostępu prywatnego.
 * Generuje metodę getter i setter dla pola (chyba że pole jest tylko do odczytu, w którym to przypadku tylko utworzy on metody pobierającej).
 
-
 ## <a name="source-analysis"></a>Analiza źródła
 
-Analiza źródła będzie analizować kodu na bieżąco, podkreślenie potencjalnych błędów i naruszeń stylu i zapewniając automatyczne poprawki jako kontekstu akcji. 
+Analiza źródła analizuje kod na bieżąco, podkreślenie potencjalnych błędów i naruszeń stylu i zapewniając automatyczne poprawki jako kontekst akcji.
 
 Aby wyświetlić wszystkie wyniki analizy źródła dla każdego pliku w dowolnym momencie, wyświetlanie paska przewijania po prawej stronie edytora tekstu:
 
- ![Pasek boczny analizy źródła](media/refactoring-image4a.png)
+![Pasek boczny analizy źródła](media/refactoring-image4a.png)
 
-Kliknięcie okręgu u góry można wykonać iterację każdego sugestię o najpoważniejszych problemów wyświetlone pierwsze. Kursor w wierszu lub wynik spowoduje wyświetlenie problem można naprawić za pomocą kontekstu akcji:
+Kliknięcie okręgu u góry można wykonać iterację każdego sugestię o najpoważniejszych problemów wyświetlone pierwsze. Kursor w wierszu lub wynik wyświetla problem można naprawić za pomocą kontekstu akcji:
 
- ![Element analizy źródła](media/refactoring-image5.png)
+![Element analizy źródła](media/refactoring-image5.png)
 
+## <a name="see-also"></a>Zobacz także
+
+- [Szybkie akcje (Visual Studio Windows)](/visualstudio/ide/quick-actions)
+- [Refaktoryzacja kodu (Visual Studio Windows)](/visualstudio/ide/refactoring-in-visual-studio)

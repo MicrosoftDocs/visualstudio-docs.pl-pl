@@ -21,15 +21,15 @@ helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812897"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799278"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
   
 4. Dodaj nazwę konta użytkownika i hasła.  
   
-    Może być konieczne dodanie **Zaloguj się jako usługa** użytkownika bezpośrednio do tego konta. (Znajdź **zasady zabezpieczeń lokalnych** (secpol.msc) w **Start** strony lub okna (lub typu **secpol** polecenie w wierszu polecenia). Gdy pojawi się okno, kliknij dwukrotnie **Przypisywanie praw użytkownika**, następnie znajdź **Zaloguj się jako usługa** w okienku po prawej stronie. Kliknij go dwukrotnie. Dodaj konto użytkownika do **właściwości** oknie i kliknij przycisk **OK**.) Kliknij przycisk **dalej**.  
+    Może być konieczne dodanie **Zaloguj się jako usługa** użytkownika bezpośrednio do tego konta. (Znajdź **zasady zabezpieczeń lokalnych** (secpol.msc) w **Start** strony lub okna (lub typu **secpol** polecenie w wierszu polecenia). Gdy pojawi się okno, kliknij dwukrotnie **Przypisywanie praw użytkownika**, następnie znajdź **Zaloguj się jako usługa** w okienku po prawej stronie. Kliknij go dwukrotnie. Dodaj konto użytkownika do **właściwości** oknie i kliknij przycisk **OK**.) Kliknij przycisk **Dalej**.  
   
 5. Wybierz typ sieci, z którą komunikować narzędzia zdalne. Należy wybrać co najmniej jeden typ sieci. Jeśli komputery są połączone za pośrednictwem domeny, wybierz pierwszy element. Jeśli komputery są połączone za pośrednictwem grupy roboczej lub grupa domowa, należy wybrać elementy drugiego i trzeciego. Kliknij przycisk **Dalej**.  
   

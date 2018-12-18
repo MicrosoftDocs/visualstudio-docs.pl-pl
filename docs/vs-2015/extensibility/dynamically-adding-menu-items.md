@@ -17,12 +17,12 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f188c71cb1e25364cee34c6a97c87b3a265ee7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300205"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809756"
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamiczne dodawanie elementów menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

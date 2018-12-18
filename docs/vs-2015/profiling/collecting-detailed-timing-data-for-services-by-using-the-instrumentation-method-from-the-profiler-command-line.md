@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27856554630bcdedc162023a9a1fa3e80a5f1e8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d454bb625f51f336b4b127848aad7c57a73f0456
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180456"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795079"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji z wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

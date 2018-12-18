@@ -31,15 +31,15 @@ helpviewer_keywords:
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa2e01859190b4e22f076892b23595c4617a29f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c963a93e2d1b882fd38db1a546cc49cb1bfedcd6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951304"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781130"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Komunikaty diagnostyczne w oknie danych wyjściowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Możesz zapisywać wiadomości w czasie wykonywania w oknie danych wyjściowych 
  [Okno danych wyjściowych](../ide/reference/output-window.md)   
  [Śledzenie i Instrumentacja aplikacji](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [Wprowadzenie do Instrumentacji i śledzenia](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
- [C#, F # i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 
 

@@ -1,5 +1,5 @@
 ---
-title: Parametry uruchomieniowe testu obciążenia w programie Visual Studio
+title: Parametry uruchomieniowe testu obciążenia
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817401"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895499"
 ---
 # <a name="load-test-run-settings-properties"></a>Właściwości ustawień przebiegu testu obciążeniowego
 
 Parametry uruchomieniowe testu obciążeniowego decydują o różnych innych ustawień, takich jak czas trwania testu, poziomu szczegółowości zbierania wyników oraz zbiorów liczników, które są zbierane podczas przebiegów testowych. Dla każdego testu obciążeniowego można utworzyć i zapisać wiele parametrów uruchomieniowych, a następnie wybrać jedno konkretne ustawienie do użycia podczas wykonywania testu. Początkowy parametr uruchomieniowy dodaje się do testu obciążeniowego podczas tworzenia test obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**.
 
- W poniższych tabelach opisano różne właściwości ustawień przebiegu testu obciążeniowego. Właściwości te można modyfikować, dopasowując do konkretnych wymagań dotyczących testowania obciążeniowego.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Aby uzyskać więcej informacji, zobacz [parametrów uruchomieniowych testu obciążeniowego Konfiguruj](../test/configure-load-test-run-settings.md).
+W poniższych tabelach opisano różne właściwości ustawień przebiegu testu obciążeniowego. Właściwości te można modyfikować, dopasowując do konkretnych wymagań dotyczących testowania obciążeniowego.
+
+Aby uzyskać więcej informacji, zobacz [parametrów uruchomieniowych testu obciążeniowego Konfiguruj](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Właściwości ogólne
 
@@ -42,7 +44,7 @@ Parametry uruchomieniowe testu obciążeniowego decydują o różnych innych ust
 |Właściwość|Definicja|
 |-|----------------|
 |**Maksymalne dzienniki testu**|Określa maksymalną liczbę dzienników testu do zapisania podczas testu obciążenia. Jeśli wprowadzono wartość maksymalną liczbę dzienników testu zostanie osiągnięty, test obciążenia spowoduje zatrzymanie zbierania dzienników. W związku z tym dzienniki będą zbierane na początku testu nie zakończenia. Test obciążeniowy będą w dalszym ciągu działać do momentu jego zakończeniu.|
-|**Zapisz częstotliwość zapisów w dzienniku dla ukończonych testów**|Określa częstotliwość, z jaką będą zapisywane w dzienniku testu. Liczba wskazuje, że jeden z każdym podanej liczby testów zostaną zapisane w dzienniku testu. Na przykład wprowadzenie wartości dziesięciu Określa, że dziesiątym dniu, dwadzieścia, trzydziestą i tak dalej będą zapisywane w dzienniku testu. Ustawienie wartości 0 określa, czy żadnych dzienników testu zostaną zapisane.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: Określanie, jak często zapisywane są dzienniki testów](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Zapisz częstotliwość zapisów w dzienniku dla ukończonych testów**|Określa częstotliwość, z jaką będą zapisywane w dzienniku testu. Liczba wskazuje, że jeden z każdym podanej liczby testów zostaną zapisane w dzienniku testu. Na przykład wprowadzenie wartości dziesięciu Określa, że dziesiątym dniu, dwadzieścia, trzydziestą i tak dalej będą zapisywane w dzienniku testu. Ustawienie wartości 0 określa, czy żadnych dzienników testu zostaną zapisane.|
 |**Zapisz dziennik podczas niepowodzenia testu**|Wartość logiczna określająca czy gdy zapisywane są dzienniki testów, jeśli test zakończy się niepowodzeniem w teście obciążeniowym. Wartość domyślna to `True`.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: Określanie, czy niepowodzenia testu są zapisywane do testowania dzienników](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Aby uzyskać więcej informacji, zobacz [ustawień rejestrowania testu obciążeniowego Modyfikuj](../test/modify-load-test-logging-settings.md).

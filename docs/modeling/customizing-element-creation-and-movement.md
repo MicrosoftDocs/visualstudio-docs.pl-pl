@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4b584495ee4848a3c01ebe63ee30b5bc52b0ff34
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895642"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967431"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 
@@ -322,4 +322,4 @@ Dyrektywa scalania do przodu można tworzyć w rozwiązaniu składnika modelu. J
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md)
-- [Przykładowe diagramy obwodu DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Przykładowe diagramy obwodu DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

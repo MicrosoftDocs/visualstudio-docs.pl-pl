@@ -13,12 +13,12 @@ ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 485166f6458aafd67a002d9104700c93efc20c15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4fee0918c0506fe433377a3063c30be1d8b03f89
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189055"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789359"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Pobieranie informacji o usłudze z magazynu ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

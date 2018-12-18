@@ -17,12 +17,12 @@ ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92443ddb10e81823030eaba2500ec7b579a60383
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 583a62b98d29f1be7626443cd2e1b069cf388d5c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929561"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770774"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Zwraca interfejs, który reprezentuje obiektu zarządzanego.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT GetManagedObject(   
+HRESULT GetManagedObject(   
    IUnknown** ppManagedObject  
 );  
 ```  

@@ -18,60 +18,60 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 45436775c2e7cd2d8ba057b9bdb2e3a3f80d7493
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d7e052f64e931769b1fedde7e184bfeefa43a77d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967237"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967405"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Praca z diagramem definicji DSL
-Diagram [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definicji jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Można dodać elementy do Twojej domeny modelu i definiowanie relacji na diagramie i możesz zmodyfikować układ diagramu, aby był bardziej czytelny.
+Diagram [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definicja jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Możesz dodać elementy do domeny, modelowanie i definiowanie relacji na diagramie, a także mogą modyfikować układ diagramu, aby był bardziej czytelny.
 
 ## <a name="the-layout-of-the-diagram"></a>Układ diagramu
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Diagram definicji ma dwie partycje **klasy i relacje** partycji i **elementów diagramu** partycji. **Klasy i relacje** partycji zawiera klasy domeny i relacje domeny oraz dziedziczenia. **Elementów diagramu** partycji Wyświetla kształtu klasy, klasy łącznik klasy tor i wygenerowanego diagramu projektanta.
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Diagram definicja ma dwie partycje **klasy i relacje** partycji i **elementów diagramu** partycji. **Klasy i relacje** partycji zawiera klasami domeny i relacje domeny oraz dziedziczenia. **Elementów diagramu** partycji Wyświetla kształt klasy, klasy łącznika, toru klasy i wygenerowanego diagramu projektanta.
 
- Klasy domeny może występować w wielu lokalizacjach **klasy i relacje** partycji. Definicję klasy domeny wyświetla drzewa dziedziczenia, gdy jest klasą bazową dla innych klas domeny i drzewa relacji, gdy jest źródło relacji osadzanie lub odwołanie. Symbole zastępcze klasy domeny są wyświetlane jako elementy docelowe relacji osadzanie lub odwołanie. Domyślnie są wyświetlane elementy symbolu zastępczego **właściwości domeny** przedział zwinięty. Dziedziczenie lub relacji osadzanie lub odwołanie nie są widoczne.
+ Klasy domeny mogą być wyświetlane w wielu lokalizacjach **klasy i relacje** partycji. Definicja klasy domeny Wyświetla drzewo dziedziczenia, jeśli jest klasę bazową dla innych klas domeny i drzewa relacji, jeśli jest źródło relacji osadzania lub odwołanie. Symbole zastępcze klasy domeny są wyświetlane jako elementy docelowe relacji osadzania lub odwołania. Domyślnie, symbol zastępczy elementy są wyświetlane z **właściwości domeny** przedziału zwinięte. Dziedziczenie lub relacji osadzania lub odwołania nie są widoczne.
 
- Po dodaniu klasą domeny pojawia się w dolnej części **klasy i relacje** partycji. Podczas dodawania, osadzanie lub relacji odwołania, jest to rysowane w obszarze i w prawo klasy domeny źródłowej.
+ Po dodaniu klasy domeny, pojawia się w dolnej części **klasy i relacje** partycji. Po dodaniu, osadzania lub odwoływać się do relacji, jej rysowania w obszarze i na prawo od klasy domeny źródłowej.
 
- W miarę dodawania klasy i relacje, mogą stać się trudne do zlokalizowania klasy konkretnej domeny. Klasy domeny można znaleźć, klikając prawym przyciskiem myszy w **DSL Explorer** , a następnie klikając polecenie **odszukaj na diagramie**.
+ W miarę dodawania relacji i klas domeny, może stać się trudne do zlokalizowania klasy określonej domeny. Klasy domeny można znaleźć, klikając prawym przyciskiem myszy w **Eksplorator DSL** , a następnie klikając polecenie **zlokalizuj w diagramie**.
 
- W poniższych sekcjach opisano, jak można zmienić wygląd na diagramie, aby ułatwić do odczytu.
+ W poniższych sekcjach opisano, jak zmienić wygląd diagramu, aby ułatwić interpretowanie.
 
 ## <a name="copying-elements"></a>Kopiowanie elementów
- Można użyć kopii, wyciąć i wkleić elementy na diagramie definicji DSL.
+ Można użyć kopii, wyciąć i wkleić elementy diagramem definicji DSL.
 
 ## <a name="zooming-in-or-out-on-the-diagram"></a>Powiększanie lub pomniejszanie na diagramie
- Można powiększyć lub pomniejszyć diagramu przy użyciu **DSL projektanta** narzędzi, aby ustawić poziom powiększenia.
+ Można powiększyć lub na diagramie, za pomocą **projektanta DSL** narzędzi, aby ustawić poziom powiększenia.
 
-## <a name="hiding-map-lines"></a>Ukrywanie mapy wierszy
- Mapa wiersze są wiersze, które są rysowane między klasą domeny lub relacji domeny i kształtu lub łącznika, na którą jest zamapowany. Można ukryć linii mapy, klikając **Pokaż linie mapy** znajdującego się na **DSL projektanta** paska narzędzi. Aby wyświetlić wiersze, kliknij ponownie przycisk.
+## <a name="hiding-map-lines"></a>Ukrywanie linie mapy
+ Linie mapy są wiersze, które są rysowane między klasą domeny lub relacji domeny i kształtu lub łącznik, z którą jest zamapowany. Linie mapy można ukryć, klikając **Pokaż linie mapy** znajdujący się na **projektanta DSL** paska narzędzi. Pokaż wiersze, kliknij ponownie przycisk.
 
-## <a name="changing-the-diagram-layout"></a>Zmiana układu diagramu
+## <a name="changing-the-diagram-layout"></a>Zmienianie układu diagramu
  Można zmienić układ **klasy i relacje** partycji w następujący sposób.
 
 ### <a name="expandcollapse"></a>Rozwiń/Zwiń
- Można zmniejszyć rozmiar elementu kształtu przedział, który reprezentuje klasę domeny lub kształt go prawym przyciskiem myszy, a następnie klikając polecenie **Zwiń**. Spowoduje to ukrycie **właściwości domeny** przedział kształtu. Aby wyświetlić **właściwości domeny** przedziału ponownie, kliknij prawym przyciskiem myszy, a następnie kliknij przycisk **rozwiń**.
+ Można zmniejszyć rozmiar elementu kształt przedziału, który reprezentuje klasę domeny lub kształtu go prawym przyciskiem myszy, a następnie klikając polecenie **Zwiń**. Spowoduje to ukrycie **właściwości domeny** przedział kształtu. Aby wyświetlić **właściwości domeny** przedział ponownie, kliknij prawym przyciskiem myszy kształt, a następnie kliknij przycisk **rozwiń**.
 
-### <a name="move-updown"></a>Przenieś w górę lub w dół
- Można przenieść domeny klasy lub diagram element w górę lub w dół w partycji prawym przyciskiem myszy element, a następnie klikając polecenie **Przenieś w górę** lub **Przenieś w dół**. Po przeniesieniu elementu zastępczego, który jest wyświetlany jako element docelowy relacji osadzanie lub odwołanie z nim zostanie przesunięty w relacji.
+### <a name="move-updown"></a>Przenieś w górę/w dół
+ W partycji można przenieść domeny klasy lub diagramie element w górę lub w dół, kliknij prawym przyciskiem myszy element, a następnie klikając polecenie **Przenieś w górę** lub **Przenieś w dół**. Jeśli przenosisz element zastępczy, który jest wyświetlany jako element docelowy relacji osadzania lub odwołania, relacji będzie przenoszą się z nim.
 
-### <a name="expandcollapse-relationships-tree"></a>Rozwijanie/zwijanie drzewa relacji
- Jeśli klasa domeny pełni rolę źródła w relacje osadzanie lub odwołania z innych klas domeny, można ukryć relacje prawym przyciskiem myszy definicję klasy domeny, a następnie klikając polecenie **drzewa relacji Zwiń**. Aby wyświetlić zależności, kliknij prawym przyciskiem myszy element definicji, a następnie kliknij przycisk **rozwiń węzeł drzewa relacji**.
+### <a name="expandcollapse-relationships-tree"></a>Rozwiń/Zwiń drzewo relacji
+ Klasa domeny roli źródłowej jest odtwarzany w relacji osadzania lub odwołania z innych klas domeny, możesz ukryć relacje kliknij prawym przyciskiem myszy definicji klasy domeny, a następnie klikając polecenie **drzewa relacji Zwiń**. Aby wyświetlić zależności, kliknij prawym przyciskiem myszy element definicji, a następnie kliknij przycisk **rozwiń drzewo relacji**.
 
-### <a name="expandcollapse-inheritance-tree"></a>Rozwijanie/zwijanie drzewa dziedziczenia
- Jeśli klasa domeny jest klasą podstawową innych klas domeny, można ukryć drzewa dziedziczenia prawym przyciskiem myszy definicję klasy domeny, a następnie klikając polecenie **drzewa dziedziczenia Zwiń**. Aby wyświetlić drzewa dziedziczenia, kliknij prawym przyciskiem myszy element definicji, a następnie kliknij przycisk **rozwiń węzeł drzewa dziedziczenia**.
+### <a name="expandcollapse-inheritance-tree"></a>Rozwiń/Zwiń drzewo dziedziczenia
+ Klasy domeny jest klasą podstawową innych klas domeny, możesz ukryć drzewo dziedziczenia kliknij prawym przyciskiem myszy definicji klasy domeny, a następnie klikając polecenie **Zwiń drzewo dziedziczenia**. Aby wyświetlić drzewo dziedziczenia, kliknij prawym przyciskiem myszy element definicji, a następnie kliknij przycisk **rozwiń drzewo dziedziczenia**.
 
 ### <a name="bring-tree-here"></a>Wyświetl drzewo tutaj
- Diagram umożliwiającej obsługę prawym przyciskiem myszy klasę domeny symbolu zastępczego, a następnie klikając polecenie **Przełącz drzewa tutaj**. Klasa domeny symbolu zastępczego staje się elementem definicji i wyświetla dziedziczenia i relacji drzewa. Element definicji wcześniejsze staje się elementu zastępczego, jeśli jest ona elementem docelowym relacji lub podrzędnej w relacji dziedziczenia; w przeciwnym razie zniknie.
+ Można konsolidować diagramu, kliknij prawym przyciskiem myszy klasę domeny symbol zastępczy, a następnie klikając polecenie **przenieść drzewa w tym miejscu**. Klasa domeny symbolu zastępczego staje się element definicji i wyświetla dziedziczenie i relacje drzewa. Element definicji poprzedniej wersji portalu staje się element zastępczy, jeśli jest to element docelowy relacji lub obiekt podrzędny w relacji dziedziczenia; w przeciwnym razie zniknie.
 
 ### <a name="split-tree"></a>Podziel drzewo
- Prawym przyciskiem myszy definicji klasy domeny, który wyświetla je, a następnie klikając pozycję można złamać drzewa dziedziczenia lub relacje **podziału drzewa**. Element definicji staje się elementu zastępczego i definicji klasy domeny, wraz z jego dziedziczenia i drzewa relacji, zostanie wyświetlona w dolnej części partycji.
+ Możesz rozbić drzewa dziedziczenia lub relacje kliknij prawym przyciskiem myszy definicji klasy domeny, który wyświetla je, a następnie klikając polecenie **Podziel drzewo**. Element definicji staje się elementem symbolu zastępczego i definicji klasy domeny, wraz z jego dziedziczenia i drzewa relacji, zostanie wyświetlony u dołu tej partycji.
 
 ### <a name="show-as-class"></a>Pokaż jako klasę
- Jeśli relacja domeny ma relacje, lub ma relacje osadzanie lub odwołania z innych relacje domeny, można wyświetlić relacji jako klasa, prawym przyciskiem myszy relację, a następnie klikając polecenie **Pokaż jako klasy** . Relacja będzie wyświetlane z **właściwości domeny** przedziału i wyświetli drzewa dziedziczenia i relacje.
+ Jeśli relacji domeny ma relacje, lub ma relacji osadzania lub odwołania z innych relacji domeny, można wyświetlić relację jako klasę, kliknij prawym przyciskiem myszy relację, a następnie klikając polecenie **Pokaż jako klasę** . Relacja będzie wyświetlane z **właściwości domeny** przedziałów i pokaże drzew dziedziczenie i relacje.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

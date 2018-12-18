@@ -5,25 +5,24 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623967"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296310"
 ---
 # <a name="customizing-the-build-system"></a>Dostosowywanie procesu kompilacji
 
-Program MSbuild jest aparat kompilacji, opracowany przez firmę Microsoft, która umożliwia budynku głównie aplikacji .NET. Mono framework również ma własną implementację firmy Microsoft kompilacji aparatu, o nazwie **xbuild**. Jednak xbuild ma zostały wycofane, na rzecz korzystanie z programu MSBuild we wszystkich systemach operacyjnych.
+Program MSbuild jest aparat kompilacji, opracowany przez firmę Microsoft, która umożliwia budynku głównie aplikacji .NET. Mono framework również ma własną implementację firmy Microsoft kompilacji aparatu, o nazwie **xbuild**. Jednak xbuild ma zostało zniesione na rzecz korzystanie z programu MSBuild we wszystkich systemach operacyjnych.
 
-**Program MSbuild** jest używany głównie dla jako system kompilacji dla projektów w programie Visual Studio dla komputerów Mac. 
+**Program MSbuild** jest używany głównie dla jako system kompilacji dla projektów w programie Visual Studio dla komputerów Mac.
 
-Program MSBuild działa, korzystając z zestawu danych wejściowych, takich jak pliki źródłowe i przekształca je wyjściowych, takich jak pliki wykonywalne. Powoduje to osiągnięcie tych danych wyjściowych za pomocą narzędzia, takie jak kompilator. 
-
+Program MSBuild działa, korzystając z zestawu danych wejściowych, takich jak pliki źródłowe i przekształca je wyjściowych, takich jak pliki wykonywalne. Powoduje to osiągnięcie tych danych wyjściowych za pomocą narzędzia, takie jak kompilator.
 
 ## <a name="msbuild-file"></a>Plik programu MSBuild
 
-Program MSBuild używa pliku XML o nazwie pliku projektu, który definiuje *elementów* będących częścią projektu (takich jak zasoby obrazów) i *właściwości* wymagane do kompilowania projektu. Ten plik projektu zawsze będzie miał rozszerzenie kończy się rozszerzeniem `proj`, takich jak `.csproj` dla projektów C#. 
+Program MSBuild używa pliku XML o nazwie pliku projektu, który definiuje *elementów* będących częścią projektu (takich jak zasoby obrazów) i *właściwości* wymagane do kompilowania projektu. Ten plik projektu zawsze będzie miał rozszerzenie kończy się rozszerzeniem `proj`, takich jak `.csproj` dla projektów C#.
 
 ### <a name="viewing-the-msbuild-file"></a>Wyświetlanie pliku MSBuild
 
@@ -61,7 +60,7 @@ Istnieją dwa typy danych podstawowych w programie MSBuild: *elementów* i *wła
 
 Właściwości to pary klucz/wartość, które są używane do przechowywania ustawień, które wpływają na kompilacji, takich jak opcje kompilatora.
 
-Są ustawione, za pomocą PropertyGroup i może zawierać dowolną liczbę PropertiesGroups, który może zawierać dowolną liczbę właściwości. 
+Są ustawione, za pomocą PropertyGroup i może zawierać dowolną liczbę PropertiesGroups, który może zawierać dowolną liczbę właściwości.
 
 Na przykład PropertyGroup dla prostej aplikacji konsolowej może wyglądać podobnie jak następujący kod XML:
 
@@ -83,7 +82,7 @@ Właściwości mogą być przywoływane z wyrażeń przy użyciu `$()` składni.
 
 Elementy stanowią sposób postępowania z danych wejściowych do systemu kompilacji, ponieważ Wyświetla lub ustawia i zazwyczaj reprezentują pliki. Każdy element ma element *typu*, element *specyfikacja*i opcjonalnie dowolnego *metadanych*. Należy pamiętać, że program MSBuild nie działają na poszczególne elementy zajmuje się na wszystkie elementy z danego typu wywołuje element *zestawu*
 
-Elementy są tworzone przez zadeklarowanie `ItemGroup`. Może to być dowolna liczba ItemGroups, który może zawierać dowolną liczbę elementów. 
+Elementy są tworzone przez zadeklarowanie `ItemGroup`. Może to być dowolna liczba ItemGroups, który może zawierać dowolną liczbę elementów.
 
 Na przykład poniższy fragment kodu tworzy ekrany uruchamiania dla systemu iOS. Ekrany uruchamiania mają typ kompilacji `BundleResource`, za pomocą spec jako ścieżkę do obrazu:
 
@@ -104,5 +103,5 @@ Na przykład poniższy fragment kodu tworzy ekrany uruchamiania dla systemu iOS.
 
 Więcej informacji na temat MSBuild bardziej szczegółowo można następujące zasoby:
 
-* [MSDN — omówienie](https://msdn.microsoft.com/library/dd393574.aspx)
-* [MSDN — pojęcia](https://msdn.microsoft.com/library/dd637714.aspx)
+* [Przegląd MSBuild](/visualstudio/msbuild/msbuild)
+* [Pojęcia dotyczące programu MSBuild](/visualstudio/msbuild/msbuild-concepts)

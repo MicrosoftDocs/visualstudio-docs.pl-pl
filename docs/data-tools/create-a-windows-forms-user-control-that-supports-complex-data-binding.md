@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db8059cf34c2de9a52cda18dd09ce6040bf8d841
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7de5cbfe7de8919143cd30517c18f9e5ad6ba598
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937905"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305250"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie kontrolki użytkownika formularzy Windows obsługującego złożone powiązanie danych
 
@@ -51,9 +51,9 @@ Z tego instruktażu dowiesz się jak:
 
 - Tworzenie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
-- Ustaw **klientów** tabelę [okna źródeł danych](add-new-data-sources.md) używać nowego formantu złożonego.
+- Ustaw **klientów** tabelę [okna źródeł danych](add-new-data-sources.md#data-sources-window) używać nowego formantu złożonego.
 
-- Dodawanie nowej kontrolki, przeciągając go z **okna źródeł danych** na **Form1**.
+- Dodawanie nowej kontrolki, przeciągając go z **źródeł danych** okna na **Form1**.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -79,7 +79,7 @@ Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**:
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-1. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+1. Rozwiń **Visual C#**  lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
 
 1. W środkowym okienku wybierz **Windows Forms App** typ projektu.
 
@@ -118,7 +118,7 @@ Złożone formantów to powiązanie danych pomocy technicznej, można zaimplemen
 
 Użyj **konfiguracji źródła danych** kreatora w celu utworzenia źródła danych na podstawie `Customers` tabeli w bazie danych Northwind:
 
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 

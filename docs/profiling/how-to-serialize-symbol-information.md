@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Serializuj informacje dotyczące symboli | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: serializacja informacji o symbolach | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86c7171b781f85ae4679209519267adcadcc090
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8b608b41ea4fd1b5b7544604e8d04bed02361b06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573313"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220869"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Porady: Serializuj informacje dotyczące symboli
-Symbole, które muszą mieć do analizowania aplikacji może serializować. Symbol serializacji dodaje symbole. *vsp* pliku. Dodając informacje dotyczące symboli do. *vsp* pliku, inne analizowanie raportu dotyczącego wydajności bez uzyskiwania dostępu do oryginalnego symboli. Symbole nie są serializowane, musisz mieć oryginalne instrumentowany. *exe* i. *PDB* plików do przeanalizowania. *Vsp* pliku.  
+# <a name="how-to-serialize-symbol-information"></a>Instrukcje: serializacja informacji o symbolach
+Może wykonywać serializację symboli, które są niezbędne do analizowania aplikacji. Serializacja symbolu dodaje symbole. *vsp* pliku. Przez dodanie informacji o symbolach w celu. *vsp* pliku, inne analizowanie raportu dotyczącego wydajności bez uzyskiwania dostępu do oryginalnej symboli. Symbole nie są serializowane, musisz mieć oryginalny instrumentacji. *exe* i. *plik PDB* plików do przeanalizowania. *Vsp* pliku.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Aby automatycznie serializuj informacje dotyczące symboli  
   
@@ -31,11 +31,11 @@ Symbole, które muszą mieć do analizowania aplikacji może serializować. Symb
   
      **Opcje** zostanie wyświetlone okno dialogowe.  
   
-2.  Kliknij przycisk **narzędzi wydajności**.  
+2.  Kliknij przycisk **narzędzia do oceny wydajności**.  
   
-3.  W obszarze **ogólne ustawienia**, wybierz pozycję **automatycznie serializuj informacje dotyczące symboli**.  
+3.  W obszarze **ustawienia ogólne**, wybierz opcję **automatycznie serializuj informacje dotyczące symboli**.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Porady: odwołanie do systemu Windows — informacje o symbolach](../profiling/how-to-reference-windows-symbol-information.md)   
- [Porady: zapisywanie przeanalizowane plików raportów](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Porady: odwołanie do Windows informacje o symbolach](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Porady: zapisywanie analizowane pliki raportu](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

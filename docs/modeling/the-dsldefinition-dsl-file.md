@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898554"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967522"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 
@@ -298,7 +298,7 @@ W tym przykładzie InPort jest podklasą elementu ComponentPort oraz ma ustanowi
 Podczas pisania C# dla tego modelu, możesz przejść przez łącze w jednym kroku, za pomocą właściwości, która generuje relacji na każdą z klas, które odnosi się:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Jednak należy wykonać obie przeskoków jawnie przy użyciu składni ścieżki. Ze względu na to wymaganie jest dostępny link pośredni łatwiejsze. Poniższy kod wykonuje przeskoku z łącza do składnika:
@@ -581,6 +581,6 @@ Mapowania łączników może również zawierać mapowania dekoratorów.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

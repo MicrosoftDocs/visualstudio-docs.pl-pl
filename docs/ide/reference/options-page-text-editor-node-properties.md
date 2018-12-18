@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929208"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670822"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Strona opcji, edytor tekstu — Właściwości węzła
 W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są skojarzone z **edytora tekstów** kategorii `DTE.Properties("TextEditor", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, które jest używane do dostępu `Properties` kolekcji, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
 
- Makra języka Visual Basic w [Controlling Options Settings](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) pokazują, jak wyświetlić bieżące opcje i ich wartości dla każdej strony **opcje** okno dialogowe.
+ Makra języka Visual Basic w [Controlling Options Settings](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) pokazują, jak wyświetlić bieżące opcje i ich wartości dla każdej strony **opcje** okno dialogowe.
 
 ## <a name="general"></a>Ogólne
  `DTE.Properties("TextEditor", "General")`
@@ -66,7 +66,7 @@ W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są sko
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Kontrolowanie ustawień opcji](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Określanie nazw elementów właściwości na stronach opcji](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Określanie nazw elementów właściwości na stronach opcji](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Strona opcji, środowisko — Właściwości węzła](../../ide/reference/options-page-environment-node-properties.md)
 - [Strona opcji, czcionki i kolory — Właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

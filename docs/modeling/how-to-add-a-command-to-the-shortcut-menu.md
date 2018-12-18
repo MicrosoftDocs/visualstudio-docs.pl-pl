@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9ae270e9a3a6c7b313d7bf811205b183f8c77fb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913933"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967418"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Porady: dodawanie polecenia do menu skrótów
 Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki czemu użytkownicy mogą wykonywać zadania, które są specyficzne dla DSL. Polecenia są wyświetlane w menu kontekstowym (skrót), po kliknięciu prawym przyciskiem myszy na diagramie. Polecenie może zdefiniować i pojawia się tylko w menu w określonych okolicznościach. Na przykład możesz można uwidocznić polecenia tylko wtedy, gdy użytkownik kliknie określonych typów elementu lub elementów w określone stany.
@@ -362,6 +362,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Instrukcje: modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
-- [Przykładowy kod: diagramy obwodu](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Przykładowy kod: diagramy obwodu](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e3f96f9ba893da2368ef7d982079cdbd834055ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20bacca2343cb2689ed52096c1a9b0d9c3d74703
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881833"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295868"
 ---
 # <a name="test-generation"></a>Generowanie testu
 
@@ -239,9 +239,9 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Dalsze informacje
 
-* [Test, aby kod powiązania](https://blogs.msdn.microsoft.com/visualstudioalm/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [Jeden test, by wszystkimi rządzić](https://blogs.msdn.microsoft.com/visualstudioalm/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [Test, aby kod powiązania](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [Jeden test, by wszystkimi rządzić](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
 
-Opublikuj swoje pomysły i funkcji żądania na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

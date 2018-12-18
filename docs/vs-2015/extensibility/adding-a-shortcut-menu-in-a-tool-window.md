@@ -18,12 +18,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5326d604c36299d9cc1a553a61a8e4e1fabdc066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 179a103475a47be95cbf45f88640b8a635a7ff34
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217987"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796223"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,10 +123,10 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      Są to takich samych identyfikatorów polecenia, które są zdefiniowane w sekcji symbole pliku ShortcutMenuPackage.vsct. Grupy kontekstu nie jest uwzględnione w tym miejscu, ponieważ jest wymagany tylko w pliku vsct.  
@@ -215,7 +215,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
 7.  W ShortcutMenuControl.xaml.cs Dodaj odcinek programu obsługi zdarzeń.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

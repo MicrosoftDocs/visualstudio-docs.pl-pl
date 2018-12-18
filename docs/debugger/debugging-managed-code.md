@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "39179482"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
@@ -34,10 +34,10 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
 [Komunikaty diagnostyczne w oknie danych wyjściowych](../debugger/diagnostic-messages-in-the-output-window.md)  
 W tym artykule opisano <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> klas, za pomocą których można napisać komunikaty czasu wykonywania, aby **dane wyjściowe** okna. Te klasy zawierają metody danych wyjściowych, które umożliwiają informacji wyjściowych bez przerywania wynik wykonywania i informacje również przerywa wykonywanie, jeśli określony warunek zakończy się niepowodzeniem.
 
-[Potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md)  
+[Asercje w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)  
 W tym artykule opisano potwierdzenia w zarządzanym kodzie, których warunki, które określisz jako argumenty do badania `Assert` metody. Ponadto, ten temat zawiera przykładowy kod, informacje na temat korzystania z <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> metody klasy, zagadnienia dotyczące debugowania, jak i wydania wersji kodu, efekty uboczne assert argumentów, dostosowywanie assert zachowanie i plików konfiguracji.
 
-[Instrukcje stop w Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
+[Instrukcje „Stop” w języku Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 W tym artykule opisano `Stop` instrukcji, co stanowi alternatywę dla ustawienie punktu przerwania. Przykładowy kod znajduje się również, wraz z porównania między `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.
 
 [Przewodnik: debugowanie formularza Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
@@ -58,7 +58,7 @@ Opisuje skutki optymalizację JIT na temat debugowania.
 [Debugowanie LINQ i DLINQ](../debugger/debugging-linq.md)  
 W tym artykule omówiono techniki debugowania zapytań LINQ.
 
-[Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+[Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
 Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.
 
 ## <a name="related-sections"></a>Sekcje pokrewne

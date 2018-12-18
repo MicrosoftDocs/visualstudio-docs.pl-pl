@@ -1,5 +1,6 @@
 ---
 title: Zestawy w Visual Studio Tools for Office runtime
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050212"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248120"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Zestawy w Visual Studio Tools for Office runtime
   Podczas tworzenia projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zestawów, które są używane dla tego typu projektu oraz docelowego środowiska .NET Framework projektu. Istnieją różne zestawy w rozszerzeniach pakietu Office, programu .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Aby uzyskać więcej informacji na temat rozszerzeń pakietu Office, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -30,7 +31,7 @@ ms.locfileid: "50050212"
   
 |Nazwa zestawu|Opis|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|Zawiera następujące typy:<br /><br /> -Typów w celu utworzenia dostosowań Wstążki i tagi inteligentne. **Uwaga:** tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Typów w celu utworzenia okienka akcji w dostosowaniach na poziomie dokumentu i niestandardowych okienek zadań w dodatków narzędzi VSTO.|  
+|Microsoft.Office.Tools.Common.dll|Zawiera następujące typy:<br /><br /> -Typów w celu utworzenia dostosowań Wstążki i tagi inteligentne. **Uwaga:**      Tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Typów w celu utworzenia okienka akcji w dostosowaniach na poziomie dokumentu i niestandardowych okienek zadań w dodatków narzędzi VSTO.|  
 |Microsoft.Office.Tools.Excel.dll|Udostępnia interfejsy, które reprezentują elementów hosta i kontrolek hosta dla projektów programu Excel i obsługi typów. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.dll|Zawiera typy używane do tworzenia regionów formularza niestandardowego w dodatków narzędzi VSTO dla programu Outlook.|  
 |Microsoft.Office.Tools.Word.dll|Udostępnia interfejsy, które reprezentują elementów hosta i kontrolek hosta dla projektów programu Word i obsługi typów. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050212"
   
 |Nazwa zestawu|Opis|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|Zawiera następujące typy:<br /><br /> -Microsoft.Office.Tools.AddIn klasę bazową dla dodatków narzędzi VSTO.<br />-Klas na potrzeby tworzenia dostosowań Wstążki i tagi inteligentne. **Uwaga:** tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Klas na potrzeby tworzenia okienka akcji w dostosowaniach na poziomie dokumentu i niestandardowych okienek zadań w dodatkach VSTO.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|Zawiera następujące typy:<br /><br /> -Microsoft.Office.Tools.AddIn klasę bazową dla dodatków narzędzi VSTO.<br />-Klas na potrzeby tworzenia dostosowań Wstążki i tagi inteligentne. **Uwaga:**      Tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Klas na potrzeby tworzenia okienka akcji w dostosowaniach na poziomie dokumentu i niestandardowych okienek zadań w dodatkach VSTO.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Udostępnia elementów hosta i kontrolek hosta dla rozwiązania programu Excel. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Udostępnia klasy, które umożliwiają tworzenie regionów formularzy niestandardowych dodatków narzędzi VSTO dla programu Outlook na.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Udostępnia elementów hosta i kontrolek hosta dla rozwiązania programu Word. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).|  

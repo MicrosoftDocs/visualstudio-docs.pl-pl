@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling tools,.NET memory method
 ms.assetid: 57acf2b0-327a-4c0e-8078-ac2f6d99457d
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ce60ea0d4433253f118acaa38a36933bd2a6681
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 260676ee54a9410bb7bfc8d90bd3d044c403169d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290527"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788306"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

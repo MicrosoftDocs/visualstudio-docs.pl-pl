@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857851"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670900"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools dla pakietu Office Runtime ― scenariusze instalacji
   Visual Studio 2010 Tools dla pakietu Office runtime można zainstalować na trzy sposoby:  
@@ -60,14 +60,14 @@ ms.locfileid: "49857851"
   
  Rozszerzenia pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] instalowanych z pakietu Office. Użytkownicy końcowi mogą uzyskać rozszerzeń pakietu Office dla [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] przez zainstalowanie aktualizacji Windows.  
   
- Aby upewnić się, czy użytkownicy mają rozszerzeniami niezbędnymi do korzystania z aplikacji, należy uwzględnić najnowszą wersję programu Visual Studio 2010 Tools dla pakietu Office runtime pakiet redystrybucyjny jako warunek wstępny dla Twojego rozwiązania. Aby uzyskać więcej informacji na temat wymagań wstępnych, zobacz [wymagania wstępne rozwiązania pakietu Office wdrożenia](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Aby upewnić się, czy użytkownicy mają rozszerzeniami niezbędnymi do korzystania z aplikacji, należy uwzględnić najnowszą wersję programu Visual Studio 2010 Tools dla pakietu Office runtime pakiet redystrybucyjny jako warunek wstępny dla Twojego rozwiązania. Aby uzyskać więcej informacji na temat wymagań wstępnych, zobacz [wymagania wstępne rozwiązania pakietu Office wdrożenia](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>Instalowanie środowiska uruchomieniowego przy użyciu środowiska uruchomieniowego do dystrybucji  
  Można zainstalować środowisko uruchomieniowe, ręczne uruchomienie programu Visual Studio 2010 Tools dla pakietu Office runtime pakiet redystrybucyjny lub przez dołączenie do dystrybucji jako warunek wstępny, podczas wdrażania rozwiązania do pakietu Office.  
   
  Po zainstalowaniu środowiska uruchomieniowego przy użyciu programu Visual Studio 2010 Tools for Office runtime pakiet redystrybucyjny, rozszerzeń pakietu Office dla programu .NET Framework 3.5 oraz rozszerzeń pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy jest zainstalowany, jeśli odpowiednie wersje programu .NET Framework jest już obecny na komputerze. Jeśli na komputerze brakuje jednej z tych wersji programu .NET Framework, po zainstalowaniu środowiska uruchomieniowego, w tym czasie nie są zainstalowane rozszerzenia pakietu Office dla brakującą wersję programu .NET Framework. Możesz zainstalować brakującą wersję programu .NET Framework później, środowisko uruchomieniowe automatycznie instaluje odpowiednie rozszerzeń pakietu Office przy następnym to rozwiązanie, które wymaga rozszerzeń zainstalowano (Jeśli środowisko wykonawcze został zainstalowany za pomocą rozwiązania, który został wdrożony przy użyciu technologii ClickOnce) lub załadować (Jeśli środowisko wykonawcze został zainstalowany za pomocą rozwiązania, który został wdrożony za pomocą Instalatora Windows).  
   
- Aby uzyskać więcej informacji na temat wymagań wstępnych w tym w rozwiązaniu ClickOnce zobacz [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Aby uzyskać więcej informacji o tym, jak ręcznie zainstalować środowisko uruchomieniowe z pakietu redystrybucyjnego, zobacz [porady: Instalowanie Visual Studio Tools for Office runtime pakiet redystrybucyjny](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
+ Aby uzyskać więcej informacji na temat wymagań wstępnych w tym w rozwiązaniu ClickOnce zobacz [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Aby uzyskać więcej informacji o tym, jak ręcznie zainstalować środowisko uruchomieniowe z pakietu redystrybucyjnego, zobacz [porady: Instalowanie Visual Studio Tools for Office runtime pakiet redystrybucyjny](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

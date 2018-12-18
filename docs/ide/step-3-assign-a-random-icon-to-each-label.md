@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 593d778247e3c1e6b9a09358c82b5fd7139cfbb9
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672915"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3: Przypisanie losowej ikony do każdej etykiety
 Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie należy do szczególnie trudnych. Aby tego uniknąć, przypisz ikony losowo do formantów etykiet w formularzu za pomocą `AssignIconsToSquares()` metody.
@@ -47,9 +47,9 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
      Pierwszy wiersz konwertuje **kontroli** zmienną etykietę o nazwie **iconLabel**. Wiersz po tym to `if` instrukcję, która sprawdza, aby upewnić się, że konwersja zadziałała. Jeśli konwersja działa, instrukcje `if` Uruchom instrukcję. (Może pamiętasz z poprzednich samouczków `if` instrukcja jest używane do oceny dowolnego określonego warunku.) W pierwszym wierszu `if` instrukcja tworzy zmienną o nazwie **randomNumber** zawierającą liczbę losową, która odnosi się do jednego z elementów na liście ikon. Aby to zrobić, używa <xref:System.Random.Next> metody <xref:System.Random> obiektu, który został utworzony wcześniej. `Next` Metoda zwraca liczbę losową. Ten wiersz używa także <xref:System.Collections.Generic.List%601.Count> właściwość **ikony** listy, aby określić zakres, z którego można wybrać liczbę losową. Następny wiersz przypisuje jeden ikony elementów listy, aby <xref:System.Windows.Forms.Label.Text> właściwości etykiety. Zakomentowany wiersz jest objaśniony w dalszej części tego tematu. Na koniec, ostatni wiersz w `if` instrukcja powoduje usunięcie z listy ikonę, która została dodana do formularza.
 
-     Należy pamiętać, że jeśli nie wiesz na pewno, co wykonuje jakaś część kodu, możesz umieścić wskaźnik myszy nad elementem kodu i przeczytać dymek z podpowiedzią. Możesz także przejrzeć każdy wiersz kodu, gdy program jest uruchomiony przy użyciu debugera Visual Studio. Zobacz [jak: przechodzenie przy użyciu debugera programu Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) lub [Nawiguj za pomocą kodu z debugerem](../debugger/navigating-through-code-with-the-debugger.md) Aby uzyskać więcej informacji.
+     Należy pamiętać, że jeśli nie wiesz na pewno, co wykonuje jakaś część kodu, możesz umieścić wskaźnik myszy nad elementem kodu i przeczytać dymek z podpowiedzią. Możesz także przejrzeć każdy wiersz kodu, gdy program jest uruchomiony przy użyciu debugera Visual Studio. Zobacz [jak: przechodzenie przy użyciu debugera programu Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx) lub [Nawiguj za pomocą kodu z debugerem](../debugger/navigating-through-code-with-the-debugger.md) Aby uzyskać więcej informacji.
 
-3.  Aby wypełnić planszę gry ikonami, musisz wywołać `AssignIconsToSquares()` metoda zaraz po uruchomieniu programu. Jeśli używasz Visual C#, Dodaj instrukcję tuż poniżej wywołania `InitializeComponent()` method in Class metoda **Form1**_Konstruktor_, aby formularz wywoływał nową metodę w celu skonfigurowania się przed wyświetleniem. Konstruktory są wywoływane podczas tworzenia nowego obiektu, takiego jak klasa lub struktura. Zobacz [konstruktory (C# programowania przewodnik)](http://msdn.microsoft.com/library/ace5hbzh.aspx) lub [konstruktory i destruktory](http://msdn.microsoft.com/library/2z08e49e.aspx) w języku Visual Basic, aby uzyskać więcej informacji.
+3.  Aby wypełnić planszę gry ikonami, musisz wywołać `AssignIconsToSquares()` metoda zaraz po uruchomieniu programu. Jeśli używasz Visual C#, Dodaj instrukcję tuż poniżej wywołania `InitializeComponent()` method in Class metoda **Form1**_Konstruktor_, aby formularz wywoływał nową metodę w celu skonfigurowania się przed wyświetleniem. Konstruktory są wywoływane podczas tworzenia nowego obiektu, takiego jak klasa lub struktura. Zobacz [konstruktory (C# programowania przewodnik)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) lub [konstruktory i destruktory](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) w języku Visual Basic, aby uzyskać więcej informacji.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

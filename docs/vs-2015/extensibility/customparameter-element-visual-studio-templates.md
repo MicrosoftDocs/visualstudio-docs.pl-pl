@@ -17,12 +17,12 @@ ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9540b42497b15eace2ed7a54ef9c26f76c0576a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d5de5d2265cfa59285f92e3426fefce3d770933
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198851"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788618"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,8 @@ Zawiera nazwę niestandardowego parametru i wartości do użycia podczas projekt
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagane. Nazwa parametru. Format parametrów jest $*nazwa*$.|  
-|`Value`|Wymagane. Wartość zastąpienia dla parametru.|  
+|`Name`|Wymagana. Nazwa parametru. Format parametrów jest $*nazwa*$.|  
+|`Value`|Wymagana. Wartość zastąpienia dla parametru.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  

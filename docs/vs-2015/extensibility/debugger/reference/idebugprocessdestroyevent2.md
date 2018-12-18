@@ -17,12 +17,12 @@ ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7161a7f59c5835eead549faa9e3c49783c9dd46e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50f00445b5a35c44f3a0c97238d4c019ac0d3f5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196992"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799694"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ten interfejs jest wysyłana, gdy proces zostanie zakończony, zamyka nietypowo 
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDebugProcessDestroyEvent2 : IUnknown  
+IDebugProcessDestroyEvent2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  

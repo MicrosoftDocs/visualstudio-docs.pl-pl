@@ -17,12 +17,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63c5b2b9cb378004e63ff5f12fd614af98cd486e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026e7de7d56cb907682be52db2dbd32782822d9f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232040"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756909"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Uwidacznianie właściwości w oknie właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,14 +71,14 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
         }  
     }  
   
-    public void UpdateSelection()  
+    public void UpdateSelection()  
     {  
         ITrackSelection track = TrackSelection;  
         if (track != null)  
             track.OnSelectChange((ISelectionContainer)selContainer);  
     }  
   
-    public void SelectList(ArrayList list)  
+    public void SelectList(ArrayList list)  
     {  
         selContainer = new SelectionContainer(true, false);  
         selContainer.SelectableObjects = list;  
@@ -86,7 +86,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
         UpdateSelection();  
     }  
   
-    public override void OnToolWindowCreated()  
+    public override void OnToolWindowCreated()  
     {  
         ArrayList listObjects = new ArrayList();  
         listObjects.Add(this);  
@@ -118,10 +118,10 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
     ```csharp  
     [Category("My Properties")]  
     [Description("MyToolWindowControl properties")]  
-    public bool IsChecked  
+    public bool IsChecked  
     {  
         get {  
-            if (base.Content == null)  return false;  
+            if (base.Content == null)  return false;  
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;   
         }  
         set {  
@@ -192,14 +192,14 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
 1.  Otwórz MyToolWindow.cs i Dodaj klasę publiczną, o nazwie `Simple`.  
   
     ```csharp  
-    public class Simple  
+    public class Simple  
     {  
-        private string someText = "";  
+        private string someText = "";  
   
         [Category("My Properties")]  
         [Description("Simple Properties")]  
         [DisplayName("My Text")]  
-        public string SomeText  
+        public string SomeText  
         {  
             get { return someText; }  
             set { someText = value; }  

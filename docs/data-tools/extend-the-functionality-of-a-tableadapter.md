@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie funkcjonalności TableAdapter
+title: Rozszerzanie funkcjonalności adaptera TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,32 +17,34 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b5884ff140097010c90fbf2208fecd95980f2fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5b34bcb9c1532190f730e26c691289d489a2f3c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924452"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751079"
 ---
-# <a name="extend-the-functionality-of-a-tableadapter"></a>Rozszerzanie funkcjonalności TableAdapter
-Aby rozszerzyć funkcjonalność TableAdapter, dodawanie kodu do pliku częściowej klasy TableAdapter.
+# <a name="extend-the-functionality-of-a-tableadapter"></a>Rozszerzanie funkcjonalności adaptera TableAdapter
 
- Gdy zmian do elementu TableAdapter w ponownego wygenerowania kodu, który definiuje TableAdapter **Projektant obiektów Dataset**, lub gdy modyfikuje przez Kreatora konfiguracji TableAdapter. Aby zapobiec usunięciu podczas ponownego generowania TableAdapter kodu, Dodaj kod do pliku częściowej klasy TableAdapter.
+Funkcjonalności TableAdapter można rozszerzyć, dodając kod do pliku częściowej klasy TableAdapter.
 
- Klasy częściowe umożliwiają kodu dla określonej klasy podzielony między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type).
+Wygenerowania kodu, który definiuje TableAdapter gdy zmiany zostaną wprowadzone do elementu TableAdapter w **Projektanta obiektów Dataset**, lub gdy modyfikuje przez Kreatora konfiguracji TableAdapter. Aby zapobiec usunięciu podczas ponownego generowania TableAdapter w kodzie, należy dodać kod do pliku częściowej klasy TableAdapter.
 
-## <a name="locate-tableadapters-in-code"></a>Zlokalizuj TableAdapters w kodzie
- Gdy TableAdapters zostały zaprojektowane z **Projektant obiektów Dataset**, klasy TableAdapter, które są generowane, nie są zagnieżdżone klasy <xref:System.Data.DataSet>. TableAdapters znajdują się w przestrzeni nazw na podstawie nazwy TableAdapter skojarzonego elementu dataset. Na przykład jeśli aplikacja zawiera zestaw danych o nazwie `HRDataSet`, TableAdapters znajduje się w `HRDataSetTableAdapters` przestrzeni nazw. (Ten wzorzec jest zgodny konwencji nazewnictwa: *DatasetName* + `TableAdapters`).
+Klasy częściowe umożliwiają kod dla określonej klasy do podzielone między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type).
 
- W poniższym przykładzie założono TableAdapter o nazwie `CustomersTableAdapter`znajduje się w projekcie z `NorthwindDataSet`.
+## <a name="locate-tableadapters-in-code"></a>Znajdź TableAdapters w kodzie
 
-#### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Aby utworzyć klasę częściową dla TableAdapter
+Gdy TableAdapters są skonstruowane z **Projektanta obiektów Dataset**, klasy TableAdapter, które są generowane, nie są klas zagnieżdżonych <xref:System.Data.DataSet>. TableAdapters znajdują się w przestrzeni nazw na podstawie nazwy dataset skojarzony obiekt TableAdapter. Na przykład, jeśli aplikacja zawiera zestaw danych o nazwie `HRDataSet`, elementów TableAdapter znajduje się w `HRDataSetTableAdapters` przestrzeni nazw. (Konwencji nazewnictwa tym wzorcem: *DatasetName* + `TableAdapters`).
 
-1.  Dodaj nową klasę do projektu, przechodząc do **projektu** menu i wybierając **Dodaj klasę**.
+W poniższym przykładzie założono TableAdapter o nazwie `CustomersTableAdapter`znajduje się w projekcie z `NorthwindDataSet`.
+
+### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Aby utworzyć klasę częściową dla adaptera TableAdapter
+
+1.  Dodaj nową klasę do projektu, przechodząc do **projektu** menu i wybierając polecenie **Dodaj klasę**.
 
 2.  Nazwa klasy `CustomersTableAdapterExtended`.
 
-3.  Wybierz **dodać**.
+3.  Wybierz **Dodaj**.
 
 4.  Zastąp kod poprawną przestrzeń nazw i nazwę klasy częściowej projektu w następujący sposób:
 
@@ -51,4 +53,4 @@ Aby rozszerzyć funkcjonalność TableAdapter, dodawanie kodu do pliku częścio
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wypełnianie zbiorów danych przy użyciu TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

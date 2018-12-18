@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf7a601213c3c02cc35f2d9453eee6b1d39c43e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5f797b6228124da8d8a998a6647dcfd9195ea92c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704502"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948078"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
-Czyści wszystkie opcje, aby pominąć ładowanie dodane do VSPackages przez użytkowników, które chcą uniknąć obciążania problem VSPackages, a następnie uruchamia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Czyści wszystkie opcje, aby pominąć ładowanie dodane do VSPackages przez użytkowników, które chcą uniknąć obciążania problem pakietów VSPackage, a następnie uruchamia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,7 +31,7 @@ Devenv /ResetSkipPkgs
 ```
 
 ## <a name="remarks"></a>Uwagi
- Obecność tagu SkipLoading wyłącza ładowanie pakiet VSPackage; ponownie wyczyszczenie tagu umożliwia ładowanie pakiet VSPackage.
+ Obecność tagu SkipLoading powoduje wyłączenie ładowania pakietu VSPackage; czyszczenie tagu włączające ładowania pakietu VSPackage.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład czyści wszystkie tagi SkipLoading.

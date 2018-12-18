@@ -1,5 +1,5 @@
 ---
-title: 'Porady: kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład'
+title: 'Instrukcje: Kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924164"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159779"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Porady: kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Instrukcje: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
 
 W tym temacie pokazano, jak utworzyć i skompilować projekt programu Visual Studio elementu linqtoxmldatabinding — oraz jak uruchomić wynikowy program przykład elementu linqtoxmldatabinding — Windows Presentation Foundation (WPF).
 
-Aby uzyskać więcej informacji na temat programu Visual Studio, zobacz [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md).
+Aby uzyskać więcej informacji na temat programu Visual Studio, zobacz [Omówienie środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md).
 
 ## <a name="create-and-populate-the-project"></a>Utworzyć i wypełnić projektu
 
@@ -82,4 +82,4 @@ Program elementu linqtoxmldatabinding — umożliwia użytkownikowi wyświetlani
 
 - [Powiązanie danych WPF za pomocą LINQ to XML — przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [Wskazówki: Elementu linqtoxmldatabinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)
+- [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)

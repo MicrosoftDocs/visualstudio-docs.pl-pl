@@ -1,5 +1,5 @@
 ---
-title: Limitów czasu dla kontrolerów testów i agentów testowych w programie Visual Studio
+title: Limitów czasu dla kontrolerów testów i agentów testowych
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827938"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064682"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Porady: Określanie limitów czasu dla kontrolerów testów i agentów testowych
 
 Kontroler testów i agenta testowego ma kilka ustawień limitu czasu, które określają, jak długo należy czekać na odpowiedzi od siebie lub ze źródła danych, zakończy się niepowodzeniem z powodu błędu. W pewnych okolicznościach może być konieczne edytowanie wartości limitu czasu, aby zaspokoić potrzeby topologii lub inne problemy środowiska. Aby edytować wartości limitu czasu, Edytuj plik konfiguracyjny XML, który jest skojarzony z kontrolerem testów lub agenta testowego, zgodnie z opisem w poniższych procedur.
 
- Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testowego, zmodyfikuj następujące pliki konfiguracji, za pomocą nazw kluczy i wartości w tabelach:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testowego, zmodyfikuj następujące pliki konfiguracji, za pomocą nazw kluczy i wartości w tabelach:
 
 -   Kontroler testów: *QTController.exe.config*
 

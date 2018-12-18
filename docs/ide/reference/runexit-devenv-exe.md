@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2ce262b219b46d543389ac6a8ae8d71466419f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dff2f028c94013df4f69e9aca244f98c307d2782
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944443"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948234"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
-Kompiluje i uruchamia określony projekt lub rozwiązanie, a następnie zamyka zintegrowane środowisko programistyczne (IDE).
+Kompiluje i uruchamia określony projekt lub rozwiązanie, a następnie zamyka zintegrowanego środowiska programistycznego (IDE).
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,14 +40,14 @@ devenv /runexit {SolutionName|ProjectName}
  Wymagana. Pełna ścieżka i nazwa pliku projektu.
 
 ## <a name="remarks"></a>Uwagi
- Kompiluje i uruchamia określony projekt lub rozwiązanie zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik minimalizuje IDE podczas projekt lub rozwiązanie jest uruchamiana i zamyka IDE po projektu lub rozwiązania zakończy działanie.
+ Kompiluje i uruchamia określony projekt lub rozwiązanie, zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik minimalizuje IDE, podczas projektu lub rozwiązania jest uruchomiona i zamknięcie IDE po projektu lub rozwiązania zakończy działanie.
 
 -   Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
 
--   Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okna, lub określić za pomocą pliku dziennika `/out` przełącznika.
+-   Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie jest uruchamiany rozwiązania `MySolution` w IDE w trybie zminimalizowanym za pomocą konfiguracji aktywnych wdrożeń, a następnie zamyka IDE.
+ W tym przykładzie uruchamia rozwiązanie `MySolution` w trybie zminimalizowanym IDE przy użyciu konfiguracji aktywnego wdrożenia, a następnie zamyka IDE.
 
 ```
 devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
@@ -56,7 +56,7 @@ devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\P
 ## <a name="see-also"></a>Zobacz też
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/ Uruchom (devenv.exe)](../../ide/reference/run-devenv-exe.md)
-- [/ Kompilacji (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
+- [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

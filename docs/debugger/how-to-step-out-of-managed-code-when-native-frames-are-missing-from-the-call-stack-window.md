@@ -1,6 +1,6 @@
 ---
-title: 'Porady: wychodzenia z kodu zarządzanego gdy ramek natywnych brakuje oknie stosu wywołań | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok poza C# kodem w przypadku stosu wywołań brakuje ramek natywnych | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,26 +24,28 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e21d45cd65fc6bc6a66f2f7c698952f0cdd788b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 741afb6befdbc29cafab39c3c9b0d7bb2761d7b1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472945"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057655"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Porady: wychodzenia z kodu zarządzanego gdy w oknie stosu wywołań brakuje ramek natywnych
-Jeśli kod ma ramek natywnych, które nie są widoczne w **stos wywołań** okna, wykonywanie krok po kroku z kodu zarządzanego może spowodować nieoczekiwane wyniki. Jako rozwiązanie alternatywne można użyć zamiast punkt przerwania **Wyjdź**.  
-  
+
+Jeśli kod ma ramek natywnych, które są niewidoczne w **stos wywołań** oknie przechodzenie krok po kroku z kodu zarządzanego, mogą dawać nieoczekiwane wyniki. Jako obejście tego problemu, możesz używać punktu przerwania, a nie **Step Out**.
+
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Do wychodzenia z kodu zarządzanego gdy wyświetlania stosu wywołań brakuje ramek natywnych  
-  
-1.  W kodzie natywnym należy ustawić punkt przerwania lokalizacji po wywołaniu kodu zarządzanego.  
-  
-2.  Na **debugowania** menu, wybierz **Kontynuuj**.  
-  
-     Po zakończeniu wywołania zarządzanego, wykonanie zatrzyma się na punkt przerwania w kodzie natywnym.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md)
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
+
+## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Wychodzenie z kodu zarządzanego, gdy wyświetlanie stosu wywołań brakuje ramek natywnych
+
+1.  W kodzie natywnym Ustaw punkt przerwania po wywołaniu kodu zarządzanego.
+
+2.  Na **debugowania** menu, wybierz **Kontynuuj**.
+
+     Po ukończeniu wywołania zarządzanego, wykonanie zostanie zatrzymane w punkcie przerwania w kodzie natywnym.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Instrukcje: korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md)

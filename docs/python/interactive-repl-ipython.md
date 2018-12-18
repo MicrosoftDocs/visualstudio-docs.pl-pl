@@ -1,6 +1,6 @@
 ---
 title: Program IPython REPL (okno interaktywne)
-description: Przy użyciu okna interaktywnego programu Visual Studio w trybie IPython środowisku opracowywanie interakcyjne przyjazny dla użytkownika za pomocą funkcji interaktywnych przetwarzania równoległego.
+description: Okno interaktywne Visual Studio w trybie IPython na użytek środowisku przyjazny dla użytkownika opracowywanie interakcyjne funkcje interaktywne przetwarzania równoległego.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219253"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067806"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Użycie IPython w oknie interaktywnym
 
@@ -79,9 +80,9 @@ W tym przewodniku powinny mieć [Anaconda](https://www.continuum.io) zainstalowa
 
 8. Aby zobaczyć wykresy poza **Interactive** oknie Uruchamianie kodu, zamiast przy użyciu **debugowania** > **Uruchom bez debugowania** polecenia.
 
-Program IPython ma wielu innych przydatnych funkcji, takich jak anulowanie w powłoce systemu podstawienie zmiennej przechwytywanie danych wyjściowych, itp. Zapoznaj się [dokumentacji IPython](http://ipython.org/documentation.html) Aby uzyskać więcej informacji.
+Program IPython ma wielu innych przydatnych funkcji, takich jak anulowanie w powłoce systemu podstawienie zmiennej przechwytywanie danych wyjściowych, itp. Zapoznaj się [dokumentacji IPython](https://ipython.org/documentation.html) Aby uzyskać więcej informacji.
 
-### <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz także
 
 - Aby łatwo i bez konieczności instalacji, należy użyć programu Jupyter, wypróbuj bezpłatnie [usługi hostowanej notesów usługi Azure](https://notebooks.azure.com/) umożliwiający przechowywać i udostępniać innym użytkownikom notesów programu.
 

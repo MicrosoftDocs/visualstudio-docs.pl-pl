@@ -1,5 +1,5 @@
 ---
-title: Opcje wiersza polecenia MSTest
+title: Opcje wiersza poleceń narzędzia VSTest.Console.exe
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612665"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220973"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -41,10 +41,10 @@ Poniższa tabela zawiera listę wszystkich opcji *VSTest.Console.exe* i krótkie
 |**/ Enablecodecoverage**|Umożliwia uruchamianie adaptera diagnostycznych CodeCoverage w teście danych.<br />Domyślne ustawienia są używane, jeśli nie określono pliku ustawień.|
 |**/ InIsolation.**|Uruchamia testy w procesie izolowanym.<br />Sprawia, że ta izolacja *vstest.console.exe* procesu mniej prawdopodobne zatrzymane w przypadku błędu w testach, ale testy mogą działać wolniej.|
 |**/ UseVsixExtensions**|Ta opcja powoduje, że *vstest.console.exe* użycie procesu lub pomija rozszerzenia VSIX zainstalowane w uruchomionym teście (jeśli istnieje).<br />Ta opcja jest przestarzały. Uruchamianie z kolejnej głównej wersji programu Visual Studio, ta opcja może zostać usunięty. Przenieś do używania rozszerzenia dostępne jako pakiet NuGet.<br />Przykład: `/UseVsixExtensions:true`|
-|**/ TestAdapterPath: [*ścieżki*]**|Wymusza *vstest.console.exe* proces używa niestandardowych adapterów testowych z określonej ścieżki (jeśli istnieją) w przebiegu testu.<br />Przykład: `/TestAdapterPath:&lt;pathToCustomAdapters&gt;`|
+|**/ TestAdapterPath: [*ścieżki*]**|Wymusza *vstest.console.exe* proces używa niestandardowych adapterów testowych z określonej ścieżki (jeśli istnieją) w przebiegu testu.<br />Przykład: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*typu platformy*]**|Docelowa platforma architektury ma być używany dla wykonywania testów.<br />Prawidłowe wartości to x86 x64 i ARM.|
 |**/ Framework: [*framework w wersji*]**|Wersja docelowa.NET Framework służący do wykonywania testów.<br />Prawidłowe wartości to Framework35, Framework40 i Framework45 oraz FrameworkUap10.<br />Jeśli platforma docelowa jest określona jako **Framework35**, testy w CLR w wersji 4.0 "compatibly tryb".<br />Przykład: `/Framework:framework40`|
-|**/ TestCaseFilter: [*wyrażenie*]**|Uruchom testy, które odpowiadają danemu wyrażeniu.<br />< wyrażenie\> jest w formacie < właściwość\>= < wartość\>[&#124;< wyrażenie\>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: `/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** opcji wiersza polecenia nie można używać z **/testy** opcji wiersza polecenia. <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [filtr przypadków testowych](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/ TestCaseFilter: [*wyrażenie*]**|Uruchom testy, które odpowiadają danemu wyrażeniu.<br />< wyrażenie\> jest w formacie < właściwość\>= < wartość\>[\|< wyrażenie\>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: "/ TestCaseFilter:" TestCategory = Nightly|FullyQualifiedName=Namespace.ClassName.MethodName""<br />**/Testcasefilter** opcji wiersza polecenia nie można używać z **/testy** opcji wiersza polecenia. <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [filtr przypadków testowych](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Wyświetla informacje o użyciu.|
 |**/ Logger: [*identyfikatora uri/friendlyname*]**|Określ Rejestrator dla wyników badań.<br />Przykład: Aby rejestrować wyniki w Visual Studio Test wyniki pliku (TRX), użyj **/Logger:trx**.<br />Przykład: Aby opublikować wyniki testu z Team Foundation Server, użyj wyrażenia TfsPublisher:<br />**/Logger:TfsPublisher;**<br />**Kolekcja = < adres url projektu\>;**<br />**BuildName = < nazwa kompilacji\>;**<br />**TeamProject = < Nazwa projektu\>;**<br />**[; Platform = < wartość domyślna to "Dowolny procesor CPU" >]**<br />**[; Flavor = < wartość domyślna to "Debugowanie" >]**<br />**[; RunTitle = < title\>]**|
 |**/ ListTests: [*nazwy pliku*]**|Wyświetla listy odkrytych testów z podanego kontenera testowego.|

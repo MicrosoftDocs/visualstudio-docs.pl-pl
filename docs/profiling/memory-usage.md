@@ -1,7 +1,7 @@
 ---
 title: Pomiar użycia pamięci w aplikacjach
 description: Umożliwia znajdowanie przecieków pamięci i nieefektywne pamięci podczas debugowania za pomocą narzędzia diagnostyczne zintegrowane z debugerem.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861413"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052080"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Użycie pamięci profilu w programie Visual Studio
+# <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie przecieków pamięci i pamięci nieefektywne **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, zapoznasz się z co najmniej jeden *migawek* sterty pamięci zarządzanego i natywnego ułatwi zrozumienie wpływu użycia pamięci typów obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszany (.NET i natywny) aplikacji.  
   
  Pokazano grafiki **narzędzia diagnostyczne** okna (dostępne w programie Visual Studio 2015 Update 1 lub nowszy):  

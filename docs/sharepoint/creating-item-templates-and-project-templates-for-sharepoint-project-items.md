@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d181891fb36645e4f246aa0c2238c12ea1dc4903
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854289"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296011"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Tworzenie szablonów elementów i szablonów projektu dla elementów projektu programu SharePoint
   Podczas definiowania programu SharePoint projektu elementu Typ niestandardowy, należy ją skojarzyć z szablonem elementu lub szablonu projektu. To skojarzenie umożliwia innym deweloperom używanie elementu projektu w programie Visual Studio. Można również utworzyć Kreatora szablonu.
@@ -42,7 +42,7 @@ ms.locfileid: "49854289"
 |Wymaganego pliku|Opis|
 |-------------------|-----------------|
 |*Spdata* pliku|Ten plik XML określa zawartości i domyślne zachowanie elementu projektu. Tego pliku muszą być zawarte w szablonie elementu. Aby uzyskać więcej informacji na temat zawartości *spdata* plików, zobacz [odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).|
-|A *.vstemplate* pliku.|Ten plik zawiera program Visual Studio z informacjami wymaganymi do wyświetlić szablon w **Dodaj nowy element** okno dialogowe i utworzyć elementu projektu z szablonu. Tego pliku muszą być zawarte w szablonie elementu. Aby uzyskać więcej informacji, zobacz [pliki metadanych szablonu w usłudze Visual Studio](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|A *.vstemplate* pliku.|Ten plik zawiera program Visual Studio z informacjami wymaganymi do wyświetlić szablon w **Dodaj nowy element** okno dialogowe i utworzyć elementu projektu z szablonu. Tego pliku muszą być zawarte w szablonie elementu. Aby uzyskać więcej informacji, zobacz [pliki metadanych szablonu w usłudze Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Zestaw rozszerzeń programu Visual Studio, który implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interfejsu.|Ten zestaw definiuje zachowanie w czasie wykonywania elementu projektu. Ten zestaw muszą być zawarte w pakiecie VSIX z szablonem elementu. Aby uzyskać więcej informacji, zobacz [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md) i [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).|
 
  W poniższej tabeli wymieniono niektóre z najczęściej używanych plikach opcjonalne, które mogą być zawarte w szablonie elementu. Niektóre typy elementów projektu może wymagać innych plików, nie na tej liście.
@@ -66,7 +66,7 @@ ms.locfileid: "49854289"
 
 |Wymaganego pliku|Opis|
 |-------------------|-----------------|
-|A *.vstemplate* pliku|Ten plik zawiera program Visual Studio z informacjami wymaganymi do wyświetlić szablon w **nowy projekt** okno dialogowe i utworzyć projekt z szablonu. Aby uzyskać więcej informacji, zobacz [pliki metadanych szablonu w usłudze Visual Studio](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|A *.vstemplate* pliku|Ten plik zawiera program Visual Studio z informacjami wymaganymi do wyświetlić szablon w **nowy projekt** okno dialogowe i utworzyć projekt z szablonu. Aby uzyskać więcej informacji, zobacz [pliki metadanych szablonu w usłudze Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |A *.csproj* lub *.vbproj* pliku|To jest plik projektu. Definiuje zawartość i ustawienia konfiguracji projektu.|
 |*Package.Package*|Ten plik definiuje pakietu wdrożeniowego dla projektu. Gdy Dostosowywanie pakietu rozwiązania dla Twojego projektu za pomocą projektanta pakietu Visual Studio przechowuje dane dotyczące pakietu rozwiązań w tym pliku.<br /><br /> Podczas tworzenia niestandardowego szablonu projektu programu SharePoint, zaleca się dołączyć tylko minimalną wymaganą zawartość w *Package.package* plików i konfigurowanie pakietu rozwiązania przy użyciu interfejsów API w <xref:Microsoft.VisualStudio.SharePoint.Packages> przestrzeń nazw w rozszerzeniu, który jest skojarzony z szablonem projektu. Jeśli to zrobisz, szablon projektu jest zabezpieczony przed przyszłe zmiany w strukturze *Package.package* pliku. Aby uzyskać przykład, który demonstruje, jak utworzyć *Package.package* zawartość pliku z minimalnym wymaganiem, zobacz [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Jeśli chcesz zmodyfikować *Package.package* plików bezpośrednio, możesz sprawdzić zawartość przy użyciu schematu w *% Program Files (11.0\Xml\Schemas\PackageModelSchema.xsd programu Visual Studio x86)%\Microsoft* .|
 |*Package.Template.xml*|Ten plik stanowi podstawę dla plik manifestu rozwiązania (*manifest.xml*) dla pakietu rozwiązania programu SharePoint (*.wsp*), jest generowany na podstawie projektu. Jeśli chcesz określić niektóre zachowania, które nie mają być zmieniane przez użytkowników tego typu projektu, możesz dodać zawartość do tego pliku. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: rozwiązania](http://go.microsoft.com/fwlink/?LinkId=169186) i [schematu rozwiązania](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Podczas tworzenia pakietu rozwiązań z projektu programu Visual Studio Scala zawartość *Package.package* i *Package.Template.xml* plik manifestu plików do rozwiązania. Aby uzyskać więcej informacji o tworzeniu pakietów rozwiązania, zobacz [porady: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|

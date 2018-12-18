@@ -14,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3373f1e1a23ae0373a9c49a39a924398ebe143e0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fb33eedf322009cfd5602c481bce36beb4126a9b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704775"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948403"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
-Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik jest wyświetlany po została wywołana `devenv /log` co najmniej raz. Domyślnie plik dziennika jest:
+Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik pojawia się, gdy została wywołana `devenv /log` co najmniej raz. Domyślnie plik dziennika to:
 
- *% APPDATA %* \Microsoft\VisualStudio\\*wersji*\ActivityLog.xml
+ *% APPDATA %* \Microsoft\VisualStudio\\*wersji*\ActivityLog.XML
 
- gdzie *wersji* jest wersją programu Visual Studio. Może jednak określić inną ścieżkę i nazwę.
+ gdzie *wersji* jest wersja programu Visual Studio. Można jednak określić inną ścieżkę i nazwę pliku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,7 +37,7 @@ Devenv /log Path\NameOfLogFile
 ## <a name="remarks"></a>Uwagi
  Ten przełącznik musi być umieszczony na końcu wiersza polecenia po innych przełącznikach.
 
- Dziennik jest zapisywany dla wszystkich wystąpień programu Visual Studio, która została wywołana z przełącznikiem/log. Go nie logowania wystąpienia programu Visual Studio, który został wywołany bez utworzenia przełącznika.
+ Dziennik jest zapisywany dla wszystkich wystąpień programu Visual Studio, która została wywołana z przełącznikiem/log. Go nie logowania wystąpienia programu Visual Studio, który został wywołany bez przełącznika.
 
 ## <a name="see-also"></a>Zobacz też
 

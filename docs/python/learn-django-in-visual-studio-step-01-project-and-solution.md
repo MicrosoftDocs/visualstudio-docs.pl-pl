@@ -1,22 +1,24 @@
 ---
-title: Samouczek — Dowiedz się, Django w programie Visual Studio, krok 1
+title: Poznaj samouczek Django w programie Visual Studio, krok 1, podstawy Django
+titleSuffix: ''
 description: Przewodnik podstawy Django w kontekście projektów programu Visual Studio, demonstrując pomocy technicznej programu Visual Studio udostępnia do tworzenia aplikacji Django.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942765"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061083"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą struktura sieci web Django w programie Visual Studio
 

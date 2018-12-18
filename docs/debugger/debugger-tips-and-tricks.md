@@ -1,7 +1,7 @@
 ---
-title: Porady i wskazówki w debugerze programu Visual Studio
+title: Porady i wskazówki w debugerze
 description: Dowiedz się więcej o pewnych funkcjach mniejszym znane obsługiwanych przez debuger programu Visual Studio
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612730"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055228"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 
@@ -145,7 +145,7 @@ Wybierz operację podsumowania bardziej szczegółowo widokami.
 
 Aby uzyskać więcej informacji, zobacz [użycie sieci](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Zapoznać się z jak dołącza debuger do swojej aplikacji
+## <a name="modules_window"></a> Zapoznać się z jak dołącza debuger do swojej aplikacji (C#, C++, Visual Basic F#)
 
 Aby dołączyć do uruchomionej aplikacji, debuger ładuje pliki symboli (.pdb), generowany dla dokładnie tej samej kompilacji aplikacji, którą próbujesz debugować. W niektórych przypadkach nieco znajomości pliki symboli mogą być pomocne. Można sprawdzić, jak Visual Studio ładuje pliki symboli za pomocą **modułów** okna.
 

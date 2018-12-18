@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_classParent method
 ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fdb83069276134d064ed88555e77bcbbad30627
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c468ec447cc201184315c3d708ecc45502c747fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890364"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805258"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pobiera odwołanie do elementu nadrzędnego klasy symbolu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT get_classParent (   
+HRESULT get_classParent (   
    IDiaSymbol** pRetVal  
 );  
 ```  

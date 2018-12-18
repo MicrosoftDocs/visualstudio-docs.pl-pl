@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bad6f01a49856e44120c0dc121ee262d9d26506c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381595"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295608"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Użyj struktury MSTest w testach jednostkowych
 
@@ -45,7 +45,7 @@ Konfigurowanie testów jednostkowych opartych na danych za pomocą następujący
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atrybuty używany do ustanawiania kolejności wywołań
 
-Element kodu dekorowane za pomocą jednej z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia test jednostkowy](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Element kodu dekorowane za pomocą jednej z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia test jednostkowy](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Atrybuty dla zestawów
 
@@ -71,7 +71,7 @@ ClassInitialize i ClassCleanup są nazywane po prawej stronie po załadowaniu kl
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atrybuty stosowane do identyfikowania, badania klasy i metody
 
-Każda klasa testu musi mieć `TestClass` musi mieć atrybut i każdej metody testowej `TestMethod` atrybutu. Aby uzyskać więcej informacji, zobacz [anatomia test jednostkowy](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Każda klasa testu musi mieć `TestClass` musi mieć atrybut i każdej metody testowej `TestMethod` atrybutu. Aby uzyskać więcej informacji, zobacz [anatomia test jednostkowy](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

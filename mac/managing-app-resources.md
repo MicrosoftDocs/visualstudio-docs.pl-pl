@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: a2ae5dead3dac49938b49f7a7ee7a85679492732
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624304"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296375"
 ---
 # <a name="managing-app-resources"></a>Zarządzanie zasobami aplikacji
 
@@ -23,13 +23,11 @@ Kod zestawu narzędzi Xamarin.Forms działa na wielu platformach — z których 
 * [Praca z obrazami](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Praca z plikami]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)
 
-
 ## <a name="xamarinios"></a>Xamarin.iOS
 
 * [Praca z zasobami](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
 * [Praca z obrazami](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
 * [Praca w systemie plików](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_the_file_system/)
-
 
 ## <a name="xamarinandroid"></a>Xamarin.Android
 
@@ -39,4 +37,6 @@ Kod zestawu narzędzi Xamarin.Forms działa na wielu platformach — z których 
 
 * [Praca z obrazami](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
+## <a name="see-also"></a>Zobacz także
 
+- [Zarządzanie zasobami aplikacji (Visual Studio Windows)](/visualstudio/ide/managing-application-resources-dotnet)

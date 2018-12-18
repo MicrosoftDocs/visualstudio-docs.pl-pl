@@ -13,15 +13,15 @@ helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cca327ffe8dbf260915b5eaa143bef6bb631e690
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21ef50736e00bd835b4e1bc88530d2aaef30ee82
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893419"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767543"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Porady: zbieranie danych pobierania próbek na poziomie wiersza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

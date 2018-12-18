@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885666"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967327"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
 W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie z języka specyficznego dla domeny (DSL), utworzone za pomocą zestawu Modeling SDK for Visual Studio.
 
 > [!NOTE]
-> W programie Visual Studio 2017 SDK przekształcania szablonu tekstu programu Visual Studio do modelowania SDK są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> W programie Visual Studio 2017 SDK przekształcania szablonu tekstu programu Visual Studio do modelowania SDK są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -112,7 +112,7 @@ Możesz uruchomić rozwiązanie DSL, zaraz po jego utworzeniu. Później można 
 1.  Kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi. Większość kodu źródłowego z DslDefinition.dsl to generuje.
 
     > [!NOTE]
-    > Zawsze, gdy zmienisz *DslDefinition.dsl*, należy kliknąć przycisk **Przekształć wszystkie szablony** przed Kompiluj rozwiązanie. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+    > Zawsze, gdy zmienisz *DslDefinition.dsl*, należy kliknąć przycisk **Przekształć wszystkie szablony** przed Kompiluj rozwiązanie. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  Naciśnij klawisz **F5**, lub na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 

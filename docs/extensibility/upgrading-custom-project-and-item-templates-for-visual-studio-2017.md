@@ -121,7 +121,7 @@ Zostanie przedstawiony punkty różnica między Visual Studio 2015 i wersji prog
   
 ```  
   
- Informacje dostarczane przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element pozostaje bez zmian. **\<VSTemplateContainer >** element wskazuje plik .vstemplate szablonu skojarzone.  
+ Informacje dostarczane przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element pozostaje bez zmian.  **\<VSTemplateContainer >** element wskazuje plik .vstemplate szablonu skojarzone.  
   
  Oto domyślny plik .vstemplate elementu utworzone w programie Visual Studio 2015:  
   
@@ -174,7 +174,7 @@ Zostanie przedstawiony punkty różnica między Visual Studio 2015 i wersji prog
   
 ```  
   
- Informacje dostarczane przez  **\<TemplateData >** element pozostaje bez zmian. **\<VSTemplateContainer >** element wskazuje plik .vstemplate skojarzone szablonu  
+ Informacje dostarczane przez  **\<TemplateData >** element pozostaje bez zmian.  **\<VSTemplateContainer >** element wskazuje plik .vstemplate skojarzone szablonu  
   
  Aby uzyskać więcej informacji na temat różnych elementów pliku .vstman zobacz [programu Visual Studio manifestu odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   

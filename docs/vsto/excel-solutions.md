@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43215d1827d8115e694134e75d03add48f16eb81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859230"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027396"
 ---
 # <a name="excel-solutions"></a>rozwiązania programu Excel
   Program Visual Studio udostępnia szablony projektów, których można użyć do utworzenia dostosowań poziomu dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Excel. Automatyzowanie programu Excel, rozszerzania funkcji programu Excel i dostosowywanie interfejsu użytkownika (UI) programu Excel, można użyć tych rozwiązań. Aby uzyskać więcej informacji na temat różnic między dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -76,9 +76,7 @@ ms.locfileid: "49859230"
 
  Aby utworzyć projekt dodatku narzędzi VSTO dla programu Excel, należy użyć skoroszyt programu Excel lub szablonów projektu szablon programu Excel w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
- Aby uzyskać ogólne informacje o współdziałaniu dodatków narzędzi VSTO dla programów, zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
-
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: automatyzacji w programie PowerPoint z dodatku programu Excel?](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ Aby uzyskać ogólne informacje o współdziałaniu dodatków narzędzi VSTO dla programów, zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="excel-add-in-programming-model"></a>Dodaj model programowania w programie Excel  
  Podczas tworzenia projektu dodatku narzędzi VSTO programu Excel, programu Visual Studio generuje klasę o nazwie `ThisAddIn`, która jest podstawą rozwiązania. Ta klasa stanowi punkt wyjścia do pisania kodu, a także udostępnia model obiektów programu Excel do dodatku narzędzi VSTO dla programów.  

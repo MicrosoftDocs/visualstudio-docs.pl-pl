@@ -5,21 +5,21 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 7f076d10b0c884f39fa887547e883ec4215fd74c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 2d3134d4016c6eb86f37832ba9998010bddd3f13
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624207"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295410"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Program Visual Studio for Mac obciążeń
 
-Program Visual Studio for Mac jest wstępnie zainstalowany program obciążeń do wykonania poniższych czynności:
+Program Visual Studio for Mac jest wstępnie zainstalowany program obciążeń do tworzenia następujących rodzajów aplikacji:
 
 * Aplikacje mobilne dla wielu Platform przy użyciu platformy .NET: Android, iOS, tvOS i watchOS
 * Aplikacji klasycznej dla komputerów Mac
-* Aplikacje .NET core
-* Aplikacje sieci Web Core ASP.NET
+* Aplikacje programu .NET core
+* Aplikacje sieci Web platformy ASP.NET Core
 * Gry Unity dla wielu platform
 
 ## <a name="xamarin"></a>Xamarin
@@ -30,7 +30,7 @@ Aby uzyskać informacje na temat korzystania z platformy Xamarin w programie Vis
 
 ## <a name="net-core-applications"></a>Aplikacje .NET core
 
-Aby uzyskać więcej informacji na temat korzystania z platformy .NET Core, zobacz [dokumentacji](https://docs.microsoft.com/dotnet/core/).
+Aby uzyskać więcej informacji na temat korzystania z platformy .NET Core, zobacz [dokumentacji](/dotnet/core/).
 
 ## <a name="aspnet-core-web-applications"></a>Aplikacje sieci Web platformy ASP.NET Core
 

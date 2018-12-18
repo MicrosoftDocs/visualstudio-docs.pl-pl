@@ -17,12 +17,12 @@ ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95019477f07f0c1af4fdb85543ef3afdb28572eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2da2b2856e081c7c0d3588334722639e7ae27e41
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830070"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734572"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Pobiera liczbę przeglądarek niestandardowych, które mogą być dostępne dla 
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetCustomViewerCount(  
-   ULONG* pcelt  
+HRESULT GetCustomViewerCount(  
+   ULONG* pcelt  
 );  
 ```  
   
 ```csharp  
-int GetCustomViewerCount(  
-   out uint pcelt  
+int GetCustomViewerCount(  
+   out uint pcelt  
 );  
 ```  
   

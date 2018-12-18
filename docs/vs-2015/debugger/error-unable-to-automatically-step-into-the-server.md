@@ -24,15 +24,15 @@ helpviewer_keywords:
 - remote debugging, notification error
 ms.assetid: 9a370ccc-d358-429c-b285-9b6c0649bc68
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42f97ac229eedacf0bb26730127ae0f35dfd1346
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fca696fe9afc979d6775c5b2e97eebb5d82c266c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288096"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747818"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Błąd: Nie można automatycznie rozpocząć wykonywania krok po kroku na serwerze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
-title: Sposób automatycznego zapisywania ma wpływ na rozwiązań pakietu Office
+title: Wpływ automatycznego zapisywania na rozwiązania pakietu Office
 ms.custom: ''
-ms.date: 07/20/2017
+ms.date: 10/26/2018
 ms.technology:
 - office-development
 ms.topic: conceptual
@@ -15,18 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21c49599ddc992bf35e6c1464b664a23fb33a691
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 60c83b8d83967d93f079033c4853904068ad29d5
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672434"
 ---
-# <a name="how-autosave-impacts-office-solutions"></a>Sposób automatycznego zapisywania ma wpływ na rozwiązań pakietu Office
+# <a name="how-autosave-impacts-office-solutions"></a>Wpływ automatycznego zapisywania na rozwiązania pakietu Office
 
-Automatyczne zapisywanie jest funkcją dla programu Excel, PowerPoint i Word, gdy włączone, umożliwia edycji użytkownika do zapisania automatycznie i w sposób ciągły. Jeśli automatyczne zapisywanie jest wyłączona, następnie zapisz musi wystąpić ręcznie do utrwalenia zmian użytkownika. Dzięki tej funkcji może być konieczne wprowadzanie korekt do rozwiązania pakietu Office, aby zapewnić, że działa on sprawnie nawet wtedy, gdy jest AutoSave na. Aby uzyskać więcej informacji, zobacz [AutoSave jak wpływa na dodatki i makra](https://msdn.microsoft.com/vba/office-shared-vba/articles/how-autosave-impacts-addins-and-macros). Aby uzyskać więcej informacji na temat automatycznego zapisywania ogólnie rzecz biorąc, zobacz [co to jest AutoSave?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5).
+Automatyczne zapisywanie to funkcja dla programów Excel, PowerPoint i Word, która nieustannie i automatycznie zapisuje zmiany. Jeśli ta funkcja jest wyłączona, należy zapisać pliki ręcznie, aby zachować zmiany. Może być konieczne dostosowanie rozwiązania pakietu Office, dzięki czemu sprawnie działać nawet wtedy, gdy automatyczne zapisywanie znajduje się na. Aby uzyskać więcej informacji, zobacz [wpływa na sposób zapisywania, dodatki i makra](/office/vba/library-reference/concepts/how-autosave-impacts-addins-and-macros). Aby uzyskać więcej informacji na temat zapisywania ogólnie rzecz biorąc, zobacz [co to jest automatyczne zapisywanie?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5).
 
-Uwaga: AutoSave dla Windows Desktop Word, Excel i PowerPoint została wprowadzona w 2017 i jest obecnie dostępny dla subskrybentów usługi Office 365. Użytkownicy, którzy zakupionych licencji wieczystej do pakietu Office 2016 lub starszym obecnie nie masz dostępu do funkcji coauthoring. (Excel Online programu Excel dla systemu Android, programu Excel dla systemu iOS i Excel Mobile w Sklepie Windows obsługują także AutoSave). 
+> [!NOTE]
+> Automatyczne zapisywanie for Windows Desktop programu Word, Excel i PowerPoint została wprowadzona w 2017 r. i jest obecnie dostępna dla subskrybentów usługi Office 365. Jeśli zakupiono licencję bezterminową do pakietu Office 2016 lub starszym, nie obecnie masz dostęp do funkcji coauthoring. (Excel Online programu Excel dla systemu Android, programu Excel dla systemu iOS, a Mobile programu Excel w Store Windows obsługuje tę funkcję, mimo że).
 
 ## <a name="see-also"></a>Zobacz także
+
 [Opracowywania rozwiązań pakietu Office](./developing-office-solutions.md)

@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908785"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296193"
 ---
 # <a name="form-support-in-workflows"></a>Obsługa formularzy w przepływach pracy
-  Cztery rodzaje formularzy może służyć w przepływie pracy: skojarzenie, inicjowania, zadania i modyfikacji. Tych typów formularza może opierać się na formularzu ASPX lub formularza programu InfoPath. Poziom pomocy technicznej, który [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] udostępnia dla danego formularza zależy od wielu czynników, które są opisane w poniższych tabelach. Aby uzyskać więcej informacji na temat typów formularza przepływu pracy, zobacz [Przegląd formularzy przepływu pracy](http://go.microsoft.com/fwlink/?LinkId=185228) w witrynie MSDN w sieci Web.  
+  Cztery rodzaje formularzy może służyć w przepływie pracy: skojarzenie, inicjowania, zadania i modyfikacji. Tych typów formularza może opierać się na formularzu ASPX lub formularza programu InfoPath. Poziom pomocy technicznej, który [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] udostępnia dla danego formularza zależy od wielu czynników, które są opisane w poniższych tabelach. Aby uzyskać więcej informacji na temat typów formularza przepływu pracy, zobacz [Przegląd formularzy przepływu pracy](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>Refaktoryzacja XML
  Po dodaniu ASPX skojarzenia i inicjacji formularz, aby [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementu projektu przepływu pracy, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automatycznie refactors XML w przepływie pracy *Elements.xml* plik, aby zachować atrybut, który odwołuje się do skojarzenia lub formularza inicjowania zsynchronizowany przy każdej aktualizacji formularza nazwę lub wdrożenia ścieżkę lub został usunięty. Jednak kiedy używasz innych typów formularza w przepływie pracy, takich jak formularz zadania lub modyfikacji *Elements.xml* pliku nie jest zaprojektowane od nowa.  

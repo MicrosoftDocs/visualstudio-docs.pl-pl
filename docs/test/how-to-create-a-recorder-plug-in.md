@@ -1,5 +1,5 @@
 ---
-title: Tworzenie rejestratora wtyczki dla testów wydajności sieci web w programie Visual Studio
+title: Tworzenie wtyczki dla testów wydajności sieci web rejestratora
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909780"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064631"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Porady: tworzenie wtyczki rejestratora
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umożliwia modyfikowanie nagranych internetowego testu wydajnościowego. Modyfikacja występuje po wybraniu **zatrzymać** w **rejestratora testów wydajności sieci Web** narzędzi, ale przed testu zapisaniem i przedstawieniem w edytorze testu wydajności sieci Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Wtyczka rejestratora umożliwia wykonywanie własnej niestandardowej korelacji na parametrach dynamicznych. Dzięki wbudowanym funkcjom korelacji testy wydajności sieci web wykrywają parametry dynamiczne w sieci web rejestracji po zakończeniu lub po użyciu **Przekształć dynamiczne parametry na parametry testu sieci Web** na **sieci Web Edytor testów wydajności** paska narzędzi. Jednak wbudowanych w wykrywaniu funkcji nie zawsze znajdzie wszystkie parametry dynamiczne. Na przykład nie odnajdzie Identyfikatora sesji, który zwykle zmienia swoją wartość od 5 do 30 minut. W związku z tym należy ręcznie przeprowadzić proces korelacji.
 

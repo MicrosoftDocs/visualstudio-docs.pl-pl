@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d697f1fed2a7b17862ff4c6f72488674859f754
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839911"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967301"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci web będzie zawierać "\<html >..." i wszystkie inne standardowe elementy strony HTML. Dodaje do szablonu są *bloki sterujące*, które stanowią fragmenty kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.
@@ -257,7 +257,7 @@ Content of MyFile.txt is:
 <#= myFile #>
 ```
 
-Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio lub innych hostów z szablonu](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio lub innych hostów z szablonu](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Szablony tekstu czasu projektowania uruchamiane w oddzielnej domenie aplikacji
 

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie na podstawie danych kodowanego testu interfejsu użytkownika w programie Visual Studio
+title: Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940453"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068490"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika
 
 Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z wartościami różnych parametrów. Oparte na danych coded UI testy są wygodny sposób, aby to zrobić. Określ wartości parametrów w źródle danych, a każdy wiersz w źródle danych jest iteracji kodowanego testu interfejsu użytkownika. Ogólny wynik testu będzie zależeć od wyniku dla wszystkich iteracji. Na przykład w przypadku niepowodzenia jednej iteracji testu, ogólny wynik testu jest błąd.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Wymagania**
 

@@ -1,6 +1,7 @@
 ---
 title: Microsoft Visual Studio Debugger (wystąpienie wyjątku), okno dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,27 +23,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ccb3de6b22f54b239b5b772490a8d05a990dbd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5609f87063d3b2852b6a45f7174cfd3db90a1ccd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475028"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062735"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (wystąpienie wyjątku) ― okno dialogowe
-Wystąpił wyjątek w programie. To okno dialogowe Raporty rodzaj został zwrócony wyjątek. Kod musi do obsługi tego wyjątku. Można wybrać jedną z następujących opcji obsługi wyjątku:  
+Wystąpił wyjątek w programach. To okno dialogowe Raporty rodzaj zgłaszanego wyjątku. Twój kod musi do obsługi tego wyjątku. Można wybrać jedną z następujących opcji do obsługi wyjątku:  
   
- **Podziel**  
- Zezwala na wykonywanie można przerwać w debugerze. Program obsługi wyjątku nie jest wywoływany przed przerwy. Jeśli będziesz kontynuować z przerwy, zostanie wywołany program obsługi wyjątku.  
+ **BREAK**  
+ Zezwala na wykonywanie przerwać działanie debugera. Obsługa wyjątków nie jest wywoływany przed przerwy. Jeśli będziesz kontynuować z przerwy, zostanie wywołany program obsługi wyjątków.  
   
  **Continue**  
- Zezwala na wykonywanie kontynuować, zapewniając możliwość obsługi wyjątku obsługi wyjątków. Ta opcja nie jest dostępna dla niektórych typów wyjątków. **Kontynuować** umożliwi aplikacji, aby kontynuować. W aplikacji natywnej spowoduje zgłoszony wyjątek. W zarządzanej aplikacji albo spowoduje się program, aby zakończyć lub mają zostać obsłużone przez aplikację do obsługi wyjątku.  
+ Umożliwia wykonywanie kontynuować, dzięki czemu program obsługi wyjątków szansę, aby obsłużyć wyjątek. Ta opcja nie jest dostępna dla niektórych rodzajów wyjątków. **Kontynuuj** umożliwi aplikacji, aby kontynuować. W aplikacji macierzystej spowoduje wyjątek jest zgłaszany ponownie. W zarządzanej aplikacji albo spowoduje się program, aby zakończyć lub wyjątku, które mają być obsługiwane przez hostingu aplikacji.  
   
 > [!NOTE]
->  Nie można kontynuować po zakończeniu nieobsługiwany wyjątek w kodzie zarządzanym. Wybieranie **Kontynuuj** po nieobsługiwany wyjątek w kodzie zarządzanym powoduje zatrzymanie debugowania.  
+>  Nie możesz kontynuować po wystąpieniu nieobsługiwanego wyjątku w kodzie zarządzanym. Wybieranie **Kontynuuj** po nieobsługiwany wyjątek w kodzie zarządzanym powoduje zatrzymanie debugowania.  
   
  **Ignoruj**  
- Zezwala na wykonywanie kontynuować bez wywoływania obsługi wyjątków. Ponieważ program obsługi wyjątku nie jest wywoływany, może to prowadzić do dalsze konsekwencje, łącznie z dodatkowych wyjątków i błędów. Ta opcja nie jest dostępna dla niektórych typów wyjątków.  
+ Zezwala na wykonywanie kontynuować bez wywoływania programu obsługi wyjątków. Ponieważ nie zostanie wywołany program obsługi wyjątków, może to prowadzić do dalsze konsekwencje, uwzględniając dodatkowe wyjątki i błędy. Ta opcja nie jest dostępna dla niektórych rodzajów wyjątków.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)   

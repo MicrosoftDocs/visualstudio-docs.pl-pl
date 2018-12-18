@@ -1,5 +1,5 @@
 ---
-title: Analizowanie naruszeń zasady progu w testach obciążenia w programie Visual Studio
+title: Analizowanie naruszeń zasady progu w testach obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813001"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061814"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w testach obciążenia za pomocą analizatora testu obciążenia
 
 Reguły progów są skojarzone z specyficzne liczniki wydajności, a naruszenia wskazują, że licznik wydajności przekracza lub spadła poniżej wartości zestawu. Po uruchomieniu testu obciążenia, można analizować naruszeń dla reguły progów, które wcześniej.
 
 W przypadku wszelkich naruszeniach, **naruszenia progu** hiperłącze pojawia się na **analizatora testu obciążenia** pasek stanu i określa liczbę naruszeń, które wystąpiły. Możesz wybrać hiperlink, aby wyświetlić tabelę naruszenia progu. Można również wyświetlić naruszenie progowe w **liczniki** okna, a na wykresie.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Wyświetl naruszenie progowe w tabeli
 
@@ -67,8 +69,6 @@ W przypadku wszelkich naruszeniach, **naruszenia progu** hiperłącze pojawia si
  Opcjonalnie naruszenia wartości progowych mogą być wyświetlane na wykresie, również. Ikona progu pojawia się na wykresie obok punktu danych, w którym wystąpiło naruszenie progu.
 
  W drzewie liczników ikona naruszenia progu są propagowane z węzła określonego licznika, aż węzeł główny. Ta ostrzega o naruszenie na licznik, który może nie być widoczna w drzewie, ponieważ nie została rozwinięta drzewa.
-
- Aby uzyskać więcej informacji, zobacz [za pomocą panelu liczników w widokach wykresy i tabele](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Wyświetl naruszenia progowe na wykresie
 

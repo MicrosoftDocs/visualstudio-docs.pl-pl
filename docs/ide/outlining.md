@@ -1,5 +1,5 @@
 ---
-title: Zwijać i rozwijać regionów kodu w programie Visual Studio
+title: Zwijać i rozwijać regiony kodu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,41 +17,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447211"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064708"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 
-Można ukryć kodu z widoku, zwijając region kodu, aby był on wyświetlany w obszarze znak plus (**+**). Możesz rozwinąć zwinięty region, klikając znak plus. Jeśli jesteś użytkownikiem klawiatury, możesz wybrać **Ctrl**+**M**+**M** można zwijać i rozwijać. Region zwijania można zwinąć również przez dwukrotne kliknięcie każdego wiersza w regionie na marginesie zwijania pojawia się po lewej kodu. Po umieszczeniu na zwinięty region, mogą wyświetlać zawartość obszaru zwinięte jako etykietka narzędzia.
+Możesz ukryć jakiś kod w widoku, zwijając obszar kodu, aby była ona wyświetlana w obszarze znak plus (**+**). Zwinięty region jest rozwiniesz, klikając znak plus. Jeśli jesteś użytkownikiem klawiatury, można wybrać **Ctrl**+**M**+**M** można zwijać i rozwijać. Można również zwinąć konspektu region przez dwukrotne kliknięcie każdego wiersza w regionie na marginesie konspektu, który jest wyświetlany z lewej strony kodu. Jako etykietka narzędzia można wyświetlić zawartość Zwinięty region, po najechaniu kursorem na zwinięty region.
 
-Regiony zwijania marginesie są wyróżnione po umieszczeniu na marginesie przy użyciu myszy. Domyślnie wyróżnianie kolor może wydawać się raczej Blade w niektórych konfiguracjach kolorów. Możesz je zmienić w **narzędzia** > **opcje** > **środowiska** > **czcionki i kolory**  >  **Zwijanej Region**.
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor).
 
-Podczas pracy w kodzie obramowane można rozwinąć sekcje, które chcesz pracować nad, zwijając, gdy są wykonywane, a następnie przenieść pozostałe sekcje zasad. Jeśli nie chcesz, aby mieć obramowanie wyświetlane, można użyć **zatrzymać zwijania** polecenie, aby usunąć informacje konspektu bez zakłócania kodu źródłowego.
+Regiony na marginesie konspektu są również wyróżnione po najechaniu kursorem na marginesie za pomocą myszy. Domyślny kolor wyróżnienia, może wydawać się zamiast Blade, w niektórych konfiguracjach kolorów. Można zmienić w **narzędzia** > **opcje** > **środowiska** > **czcionki i kolory**  >  **Region zwijany**.
 
-**Cofnij** i **wykonaj ponownie** polecenia w **Edytuj** menu wpływać na te akcje. **Kopiowania**, **Wytnij**, **Wklej**, i Zachowaj operacji przeciągania i upuszczania zwijania informacji, ale nie zwijanej regionu. Na przykład przy kopiowaniu region, który jest zwinięte, **Wklej** operacji będzie Wklej skopiowany tekst jako rozwinięte region.
+Podczas pracy w kodzie schemat można rozszerzyć sekcje, które chcesz pracować nad, zwijając, gdy będzie gotowe, a następnie przenieść do innej sekcji. Jeśli chcesz, aby Tworzenie konspektu wyświetlane, można użyć **Zatrzymaj tworzenie konspektu** polecenie, aby usunąć informacje konspektu bez zakłócania działania kodu bazowego.
+
+**Cofnij** i **wykonaj ponownie** polecenia na **Edytuj** menu mają wpływ na te akcje. **Kopiowania**, **Wytnij**, **Wklej**, i operacji przeciągania i upuszczania zachowywanie informacji konspektu, ale nie stan region zwijany. Na przykład podczas kopiowania region, który jest zwinięte, **Wklej** operacji będzie Wklej skopiowany tekst jako rozwinięty region.
 
 > [!CAUTION]
-> Jeśli zmienisz obramowane region zwijania mogą zostać utracone. Na przykład usunięcia lub znajdowanie i zamienianie operacji może spowodować usunięcie koniec regionu.
+> Po zmianie konturu region konspekt mogą zostać utracone. Na przykład usunięcia lub operacji Znajdź i Zamień może wymazać koniec regionu.
 
-Następujące polecenia można znaleźć w **Edytuj** > **Tworzenie konspektu** podmenu.
+Następujące polecenia można znaleźć na **Edytuj** > **konspekt** podmenu.
 
 |||
 |-|-|
-|Ukryj zaznaczenia|(**Ctrl**+**M**, **Ctrl**+**H**)-zwija wybranego bloku kodu, który zwykle nie jest dostępne dla zwijania, na przykład `if` bloku. Aby usunąć regionu niestandardowego, użyj **zatrzymać ukrywanie bieżącego** (lub **Ctrl**+**M**, **Ctrl** + **U**). Nie jest dostępna w języku Visual Basic.|
-|Przełącz Tworzenie konspektu rozszerzenia|-Odwraca bieżący stan ukryte lub rozszerzonych najbardziej wewnętrzną funkcją zwijania sekcji, gdy kursor znajduje się w zagnieżdżonych zwiniętą sekcję.|
-|Przełącz wszystkie Tworzenie konspektu|(**Ctrl**+**M**, **Ctrl**+**L**) — zestawy wszystkie regiony do tej samej zwinięte lub rozszerzyć stanu. Jeśli niektóre regiony są rozwinięte, a niektóre zwinięte, następnie zwinięte regiony są rozwinięte.|
-|Zatrzymaj, obramowanie|(**Ctrl**+**M**, **Ctrl**+**P**)-usuwa wszystkie informacje zwijania w całym dokumencie.|
-|Przestań ukrywać bieżący|(**Ctrl**+**M**, **Ctrl**+**U**)-usuwa zwijania informacje dotyczące aktualnie wybranego region zdefiniowany przez użytkownika. Nie jest dostępna w języku Visual Basic.|
+|Ukryj zaznaczenie|(**Ctrl**+**M**, **Ctrl**+**H**)-zwija wybranego bloku kodu, który zwykle nie jest dostępne dla konspektu, na przykład `if` bloku. Aby usunąć niestandardowy regionie, użyj **Zatrzymaj ukrywanie bieżącego** (lub **Ctrl**+**M**, **Ctrl** + **U**). Nie jest dostępna w języku Visual Basic.|
+|Przełącz rozszerzanie konspektu|-Odwraca bieżący stan ukryte lub rozszerzona najbardziej wewnętrzną funkcją zwijanie sekcji, gdy kursor znajduje się w zagnieżdżonych zwiniętą sekcję.|
+|Przełącz wszystkie konspekty|(**Ctrl**+**M**, **Ctrl**+**L**) — zestawy we wszystkich regionach do tej samej zwijania i rozwijania stanu. Jeśli niektóre regiony są rozszerzane, a niektóre zwinięte, następnie zwinięte regiony są rozwijane.|
+|Przestań tworzyć konspekt|(**Ctrl**+**M**, **Ctrl**+**P**) — usuwa wszystkie informacje konspektu dla całego dokumentu.|
+|Zatrzymaj ukrywanie bieżącego|(**Ctrl**+**M**, **Ctrl**+**U**)-usuwa konspektu informacje dotyczące aktualnie wybranego region zdefiniowany przez użytkownika. Nie jest dostępna w języku Visual Basic.|
 |Zwiń do definicji|(**Ctrl**+**M**, **Ctrl**+**O**)-Zwija wszystkie typy elementów członkowskich.|
-|Zwiń blok:\<granic logiczna >|(Visual C++) Zwija regionu w funkcji znajduje się punkt wstawiania. Na przykład jeśli punkt wstawiania znajduje się wewnątrz pętli, pętli jest ukryty.|
-|Zwiń wszystkie w: \<struktury logicznej >|(Visual C++) Zwija wszystkie struktury wewnątrz funkcji.|
+|Zwiń blok:\<logiczne granic >|(Visual C++) Zwija regionu w funkcji znajduje się punkt wstawiania. Na przykład jeśli punkt wstawiania znajduje się wewnątrz pętli, pętla jest ukryta.|
+|Zwiń wszystkie w: \<logicznej struktury >|(Visual C++) Zwija wszystkie struktury wewnątrz funkcji.|
 
-Aby zdefiniować regionów tekst, który chcesz rozwiń lub Zwiń umożliwia także programu Visual Studio SDK. Zobacz [wskazówki: Tworzenie konspektu](../extensibility/walkthrough-outlining.md).
+Aby zdefiniować regionów tekst, który chcesz rozwinąć lub zwinąć umożliwia także zestawu SDK programu Visual Studio. Zobacz [wskazówki: Tworzenie konspektu](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor)

@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7577ac0c2d6b876c3055a90a915e48ea2177bc5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0974e38f9a0a901c97ca5dc3c9473d027095d67c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196914"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809392"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Błąd: Nie masz uprawnień do sprawdzania procesu&#39;tożsamości s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

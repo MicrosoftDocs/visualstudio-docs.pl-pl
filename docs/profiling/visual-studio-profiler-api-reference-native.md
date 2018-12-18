@@ -1,6 +1,7 @@
 ---
-title: Interfejsy API profilera Visual Studio (Native) | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Interfejsy API profilera Visual Studio (Native)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -13,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572101"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063007"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio interfejsy API profilera (native)
-Visual Studio profilera interfejsów API umożliwiają programowo kontroli ilości zbieranych danych i wstaw znaczniki zarówno sygnatury czasowej, jak i profilu podczas profilowania. Aby korzystać z natywnych interfejsów API, obejmują *VSPerf.h* nagłówka pliku i Dodaj *VSPerf.lib* w projekcie.  
+Profilera Visual Studio interfejsy API umożliwiają programowo kontroli ilości zbieranych danych i wstaw znaczniki zarówno sygnatura czasowa, jak i profilu podczas profilowania. Aby korzystać z natywnych interfejsów API, obejmują *VSPerf.h* nagłówka pliku i Dodaj *VSPerf.lib* w projekcie.  
   
 > [!NOTE]
->  Domyślnie *VSPerf.h* i *VSPerf.lib* znajdują się w folderze o nazwie *PerfSDK*. *\<dysku >: \Program Files\Microsoft 14.0\Team programu Visual Studio Tools\PerfSDK narzędzia* katalogu, na przykład.  
+>  Domyślnie *VSPerf.h* i *VSPerf.lib* znajdują się w folderze o nazwie *PerfSDK*. *\<dysk >: \Program Files\Microsoft 14.0\Team programu Visual Studio Tools\PerfSDK narzędzia* katalogu, na przykład.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

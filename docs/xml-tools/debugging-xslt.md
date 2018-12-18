@@ -1,5 +1,5 @@
 ---
-title: Profilowanie XSLT
+title: Debugowanie kodu XSLT
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,27 +10,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e48d777332c63859f84f56425c786b430018d1f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548001"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348542"
 ---
-# <a name="debugging-xslt"></a>Profilowanie XSLT
+# <a name="debugging-xslt"></a>Debugowanie kodu XSLT
 
-Debuger programu Visual Studio umożliwia debugowanie XSLT. Debuger obsługuje ustawianie punktów przerwania, wyświetlanie stanów wykonania XSLT, i tak dalej.
+Debuger programu Visual Studio umożliwia debugowanie kodu XSLT. Debuger obsługuje ustawianie punktów przerwania, wyświetlanie stanów wykonania XSLT, i tak dalej.
 
 > [!NOTE]
-> Debuger XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio 2017 r.
+> Debuger XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio 2017.
 
-## <a name="xslt-profiler"></a>Profilera XSLT
+## <a name="xslt-profiler"></a>XSLT profiler
 
-[Profilera XSLT](../xml-tools/xslt-profiler.md) to narzędzie, które umożliwia deweloperom mierzyć, oceny i docelowa problemów związanych z wydajnością w kodzie XSLT, tworząc szczegółowych raportów wydajności XSLT.
+[XSLT profiler](../xml-tools/xslt-profiler.md) to narzędzie, które umożliwia deweloperom mierzyć, oceny i określania elementów docelowych problemy związane z wydajnością w kodzie XSLT, tworząc szczegółowe raporty dotyczące wydajności XSLT.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-- [Edytowanie arkuszy stylów XSLT](../xml-tools/editing-xslt-style-sheets.md) omówiono za pomocą edytora XML do edycji arkuszy stylów.
-- [Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML](../xml-tools/security-considerations-when-working-with-xml-data.md) omówiono problemy z zabezpieczeniami, które należy znać podczas pracy w edytorze XML lub debuger XSLT.
-- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) wprowadza debuger programu Visual Studio.
-- [Odwołanie XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) zapewnia materiałów referencyjnych XSLT elementy i funkcje.
+- [Edytowanie arkuszy stylów XSLT](../xml-tools/editing-xslt-style-sheets.md) w tym artykule omówiono, za pomocą edytora XML, aby edytować arkusze stylów.
+- [Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML](../xml-tools/security-considerations-when-working-with-xml-data.md) w tym artykule omówiono problemy z zabezpieczeniami, które należy znać podczas pracy w edytorze XML lub debugerze XSLT.
+- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) wprowadza debugera programu Visual Studio.
+- [Dokumentacja XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) zawiera materiały źródłowe dotyczące funkcje i elementy XSLT.

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829472"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967457"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inne pliki w projekcie programu Visual Studio. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.
@@ -153,7 +153,7 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 
     ```csharp
 
-              <#@ template debug="false" hostspecific="false" language="C#" #>
+    <#@ template debug="false" hostspecific="false" language="C#" #>
     <#@ output extension=".cs" #>
     <# var properties = new string [] {"P1", "P2", "P3"}; #>
     // This is generated code:
@@ -225,7 +225,7 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 
 ```csharp
 
-      <# var properties = File.ReadLines("C:\\propertyList.txt");#>
+<# var properties = File.ReadLines("C:\\propertyList.txt");#>
 ...
 <# foreach (string propertyName in properties) { #>
 ...
@@ -270,12 +270,13 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
  Typ `this.Host` (w języku Visual Basic, `Me.Host`) jest `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
 ### <a name="getting-data-from-visual-studio"></a>Pobieranie danych z programu Visual Studio
- Aby korzystać z usług udostępnianych w programie Visual Studio, należy ustawić `hostSpecific` atrybut i obciążenia `EnvDTE` zestawu. Można następnie użyć IServiceProvider.GetCOMService() dostęp do obiektu DTE i innych usług. Na przykład:
+ Aby korzystać z usług udostępnianych w programie Visual Studio, należy ustawić `hostSpecific` atrybut i obciążenia `EnvDTE` zestawu. Importuj `Microsoft.VisualStudio.TextTemplating`, który zawiera `GetCOMService()` — metoda rozszerzenia.  Można następnie użyć IServiceProvider.GetCOMService() dostęp do obiektu DTE i innych usług. Na przykład:
 
-```scr
+```src
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ assembly name="EnvDTE" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 <#
   IServiceProvider serviceProvider = (IServiceProvider)this.Host;
   EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetCOMService(typeof(EnvDTE.DTE));
@@ -295,7 +296,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Po zainstalowaniu programu Visual Studio do modelowania SDK może mieć wszystkie szablony, które są przekształcane automatycznie zawsze wtedy, gdy wykonujesz kompilację. Aby to zrobić, Edytuj plik projektu (.csproj lub .vbproj) w edytorze tekstów i dodaj następujące wiersze w pobliżu końca pliku, po innych `<import>` instrukcji:
 
 > [!NOTE]
-> W programie Visual Studio 2017 SDK przekształcania szablonu tekstu programu Visual Studio do modelowania SDK są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> W programie Visual Studio 2017 SDK przekształcania szablonu tekstu programu Visual Studio do modelowania SDK są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />

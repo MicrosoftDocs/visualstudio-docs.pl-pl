@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie szablonów projektów i elementów w programie Visual Studio
+title: Dostosowywanie szablonów projektów i elementów
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,32 +10,32 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ab2707de0b82d7e3af151c79ea5ee60e5869bfab
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 451885aca46addf663d0e3a3ae9768f7d0f0cdba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571880"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051759"
 ---
 # <a name="customize-project-and-item-templates"></a>Dostosowywanie szablonów projektów i elementów
 
-Nawet po utworzeniu szablonów projektów i elementów można dostosować do własnych potrzeb.
+Nawet w przypadku, po utworzeniu szablonów projektów i elementów, można dostosować je do swoich potrzeb.
 
 ## <a name="customizations"></a>Dostosowania
 
-Na przykład można wykonywać następujące zadania:
+Na przykład należy wykonać następujące zadania:
 
 - Zmodyfikuj i wyeksportować istniejący szablon jako szablon użytkownika.
 
    Aby uzyskać więcej informacji, zobacz [porady: aktualizowanie istniejących szablonów](../ide/how-to-update-existing-templates.md).
 
-- Przekaż parametry niestandardowe do szablonu, aby zastąpić istniejące wartości.
+- Niestandardowe parametry są przekazywane do szablonu, aby zastąpić istniejące wartości.
 
-   Aby uzyskać więcej informacji, zobacz [porady: parametry zastępcze w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
+   Aby uzyskać więcej informacji, zobacz [instrukcje: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
 
 - Dostosowywanie kreatorów, które tworzenie projektów z szablonów.
 
-   Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z kreatora z szablonami projektu (rozszerzalność)](../extensibility/how-to-use-wizards-with-project-templates.md).
+   Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z kreatorów z szablonami projektu (rozszerzalność)](../extensibility/how-to-use-wizards-with-project-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 

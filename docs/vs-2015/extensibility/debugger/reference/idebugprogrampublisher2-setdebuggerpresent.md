@@ -17,12 +17,12 @@ ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35c56cbb157d60cbc205d501e3a22e75f56d8b12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65dfdda924f08e461a1bec481d9218fe3ab4c454
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841366"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730610"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Informuje wydawca programu, że debuger jest obecna i uruchomiona.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT SetDebuggerPresent(  
-   BOOL fDebuggerPresent  
+HRESULT SetDebuggerPresent(  
+   BOOL fDebuggerPresent  
 );  
 ```  
   
 ```csharp  
-int SetDebuggerPresent(  
-   int fDebuggerPresent  
+int SetDebuggerPresent(  
+   int fDebuggerPresent  
 );  
 ```  
   

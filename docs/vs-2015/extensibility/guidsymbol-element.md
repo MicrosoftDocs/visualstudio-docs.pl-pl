@@ -16,12 +16,12 @@ ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0e72dd75f8487cb01438291070b5608eb7c9935
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d2f3648ab8dd7c140fe07e2469acfc9b417518f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771793"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,8 +44,8 @@ ms.locfileid: "49181756"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|nazwa|Wymagane. Nazwa symbolu identyfikatora GUID.|  
-|value|Wymagane. Identyfikator GUID symbolu identyfikatora GUID.|  
+|nazwa|Wymagana. Nazwa symbolu identyfikatora GUID.|  
+|value|Wymagana. Identyfikator GUID symbolu identyfikatora GUID.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   

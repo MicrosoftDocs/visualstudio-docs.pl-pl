@@ -1,11 +1,12 @@
 ---
 title: Visual Studio Team Explorer 2017 obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia podanie zintegrowane narzędzia do testowania generalist testerów
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd77a40f68dcdf15868da7da9292feb05e07153
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139104"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066109"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 składników katalogu
 

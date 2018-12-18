@@ -21,14 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25c057687596e5f410c4a19f9a1c8c2cdef02f28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816660"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257128"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Porady: stronicowanie w górę lub w dół w pamięci
+
 Podczas wyświetlania zawartości pamięci w **pamięci** okna lub **dezasemblacji** okna, można użyć pionowy pasek przewijania można przenieść w górę lub w dół w obszarze pamięci.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Stronę w górę lub w dół w pamięci  

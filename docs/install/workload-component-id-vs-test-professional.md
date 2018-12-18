@@ -1,11 +1,12 @@
 ---
 title: Visual Studio Test Professional 2017 obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia podanie zintegrowane narzędzia do testowania generalist testerów
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: 0558cc22b9b92a6d9d0e52d82194557110b6df7a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: fa09c844d4ea0fa1b6d4c255f10af6bda4f3128c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43135005"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049287"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 składników katalogu
 

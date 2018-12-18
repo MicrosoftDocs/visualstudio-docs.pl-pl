@@ -1,5 +1,5 @@
 ---
-title: Edytowanie testów obciążenia w programie Visual Studio
+title: Edytowanie testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178416"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048636"
 ---
 # <a name="edit-load-tests"></a>Edytowanie testów obciążenia
 
 Testy obciążenia przebiegu testu wydajności WWW lub testów jednostkowych, aby zasymulować wielu użytkownikom dostęp do serwera, w tym samym czasie. Test obciążeniowy umożliwia dostęp do danych obciążeniowych i wydajnościowych aplikacji. Test obciążeniowy można skonfigurować tak, aby emulował różne warunki obciążenia, np. obciążenie przez użytkowników i typy sieci.
 
-> [!NOTE]
-> Testowanie obciążenia jest dostępna tylko w wersji Enterprise programu Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Test obciążenia jest definiowany przez *scenariuszy*, *zbiory liczników*, i *parametrów uruchomieniowych*. Na poniższej ilustracji wyjaśnia różnice między [scenariuszy](../test/edit-load-test-scenarios.md), [zbiory liczników](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), i [parametrów uruchomieniowych](../test/load-test-run-settings-properties.md):
 
 ![Architektura testu obciążenia](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Wymagania dotyczące oprogramowania
+
+Projekty testów wydajności i obciążenia sieci Web są dostępne tylko w wersji Enterprise programu Visual Studio.
 
 ## <a name="edit-load-test-scenario-settings"></a>Edytowanie ustawień scenariusza testu obciążeniowego
 

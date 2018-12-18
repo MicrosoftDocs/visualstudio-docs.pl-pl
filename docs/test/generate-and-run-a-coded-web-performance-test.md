@@ -1,5 +1,5 @@
 ---
-title: Kodowanego testu wydajności WWW w programie Visual Studio
+title: Kodowanego testu wydajności www
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,16 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 663b2e18eb71cb627bd521df0de6bc21c95cef05
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320752"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067845"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generowanie i uruchamianie kodowanego testu wydajności sieci Web
 
 Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci web. Testy są zawarte w testach obciążenia do pomiaru wydajności aplikacji sieci web pod wpływem wielu użytkowników. Test wydajności sieci web mogą być konwertowane do skryptu oparte na kodzie, który można edytować i dostosowywać jak inny kod źródłowy. Na przykład można dodać konstrukcje pętli i rozgałęzień.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generuj zakodowany internetowy test wydajnościowy
 
@@ -57,7 +59,7 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
     }
     else
     {
-        WebTestRequest customRequest = new WebTestRequest("http://msdn.microsoft.com/");
+        WebTestRequest customRequest = new WebTestRequest("https://msdn.microsoft.com/");
         yield return customRequest;
     }
     ```
@@ -67,7 +69,7 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
         Dim customRequest As WebTestRequest = New WebTestRequest("http://weather.msn.com/")
         MyBase.Send(customRequest)
     Else
-        Dim customRequest As WebTestRequest = New WebTestRequest("http://msdn.microsoft.com/")
+        Dim customRequest As WebTestRequest = New WebTestRequest("https://msdn.microsoft.com/")
         MyBase.Send(customRequest)
     End If
     ```

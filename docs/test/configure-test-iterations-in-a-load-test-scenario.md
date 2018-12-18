@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie iteracji testowych dla testy obciążeniowe w programie Visual Studio
+title: Konfigurowanie iteracji testowych do testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176144"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055690"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurowanie iteracji testowych w scenariuszu testu obciążenia
 
 Aby skonfigurować ustawienia iteracji testu, edytować Scenariusz testów obciążenia za pomocą edytora testu obciążenia i **właściwości** okna. Domyślnie scenariusza testu obciążeniowego jest skonfigurowany bez określania opcji Maksymalna liczba iteracji testu. Masz możliwość skonfigurowania maksymalną liczbę iteracji, w tym scenariuszu i długość przerwy między nimi.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Określ maksymalna liczba iteracji testu dla scenariusza
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849362"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809132"
 ---
 # <a name="interop-activity-designer"></a>Interop, projektant działań
 
@@ -35,7 +35,7 @@ ms.locfileid: "49849362"
 
 Dla projektów C#, można ponownie docelowej projektu, aby użyć pełnego .NET Framework 4, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**. Na **aplikacji** zaznacz **.NET Framework 4** opcji **platformę docelową**. Wybierz **tak** aby potwierdzić tę zmianę.
 
-Dla projektów VB można ponownie docelowej projektu, aby użyć pełnego .NET Framework 4, klikając prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**. Na **skompilować** kliknij pozycję **zaawansowane opcje kompilacji** przycisku. Wybierz **.Net Framework 4** z **Target framework listy**, a następnie kliknij przycisk **OK**. Wybierz **tak** aby potwierdzić tę zmianę.
+Dla projektów języka Visual Basic można ponownie docelowej projektu, aby użyć pełnego .NET Framework 4, klikając prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**. Na **skompilować** kliknij pozycję **zaawansowane opcje kompilacji** przycisku. Wybierz **.Net Framework 4** z **Target framework listy**, a następnie kliknij przycisk **OK**. Wybierz **tak** aby potwierdzić tę zmianę.
 
 **Międzyoperacyjności** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchnię projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Upuszczanie **międzyoperacyjności** tworzy projektanta działań <xref:System.Activities.Statements.Interop> działanie przy użyciu domyślnego **DisplayName** z międzyoperacyjności. Możesz edytować <xref:System.Activities.Activity.DisplayName%2A> w nagłówku **międzyoperacyjności** Projektant działań lub **DisplayName** pola siatki właściwości.
 

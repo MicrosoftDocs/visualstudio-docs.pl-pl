@@ -1,5 +1,5 @@
 ---
-title: Dane funkcji IntelliTrace w programie Visual Studio
+title: Dane funkcji IntelliTrace
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321154"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064760"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 
 Można skonfigurować adapter danych diagnostycznych narzędzia IntelliTrace do zbierania informacji diagnostycznych śledzenia w Visual stdio —. Adapter może być wykorzystywany przez testy do zbierania informacji o ważnych zdarzeniach diagnostycznych dotyczących aplikacji, na podstawie których deweloper później prześledzi kod i znajdzie przyczyny usterki. Adaptera danych diagnostycznych narzędzia IntelliTrace można używać w testach ręcznych i automatycznych.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Narzędzie IntelliTrace działa tylko wobec aplikacji napisanych przy użyciu kodu zarządzanego. Jeśli testujesz aplikację internetową, która używa przeglądarki jako klienta nie należy włączać funkcji IntelliTrace dla klienta w ustawieniach testu, ponieważ żaden kod zarządzany jest dostępna do śledzenia. W takim przypadku można skonfigurować środowisko i zbierać dane IntelliTrace zdalnie na serwerze sieci web.
@@ -32,7 +34,7 @@ Dane funkcji IntelliTrace są przechowywane w pliku, który ma rozszerzenie *.iT
 > [!NOTE]
 > Adapter danych diagnostycznych narzędzia IntelliTrace nie tworzy pliku, jeśli test przyniesie wynik pomyślny. Plik jest zapisywany tylko po nieudanym teście albo po przesłaniu usterki.
 
- Dane gromadzone w pliku narzędzia IntelliTrace usprawniają debugowanie, ponieważ umożliwiają szybsze odtwarzanie i diagnozowanie błędów w kodzie. Dodatkowo plik można udostępniać innym osobom w celu zreplikowania sesji na ich komputerach, co zmniejsza ryzyko, że usterki nie uda się odtworzyć.
+Dane gromadzone w pliku narzędzia IntelliTrace usprawniają debugowanie, ponieważ umożliwiają szybsze odtwarzanie i diagnozowanie błędów w kodzie. Dodatkowo plik można udostępniać innym osobom w celu zreplikowania sesji na ich komputerach, co zmniejsza ryzyko, że usterki nie uda się odtworzyć.
 
 > [!NOTE]
 > W przypadku włączenia narzędzia IntelliTrace w ustawieniach testu funkcja zbierania danych o pokryciu kodu nie będzie działać.
@@ -40,7 +42,7 @@ Dane funkcji IntelliTrace są przechowywane w pliku, który ma rozszerzenie *.iT
 > [!WARNING]
 > Adapter danych diagnostycznych narzędzia IntelliTrace działa poprzez instrumentowanie zarządzanego procesu. Operację tę należy wykonać po załadowaniu testów dla przebiegu testowego. Jeśli proces, który ma być monitorowany, już się rozpoczął, nie będą zapisywane żadne pliki narzędzia IntelliTrace. Aby obejść ten problem, przed załadowaniem testów należy zatrzymać proces. Gdy tylko testy zostaną załadowane lub rozpocznie się pierwszy test, należy znów zainicjować proces.
 
- Poniższa procedura opisuje konfigurowanie zbierania określonych danych przez narzędzie IntelliTrace. Te kroki dotyczą zarówno edytora konfiguracji w okno dialogowe programu Microsoft Test Manager i ustawienia testu w programie Visual Studio.
+Poniższa procedura opisuje konfigurowanie zbierania określonych danych przez narzędzie IntelliTrace. Te kroki dotyczą zarówno edytora konfiguracji w okno dialogowe programu Microsoft Test Manager i ustawienia testu w programie Visual Studio.
 
 > [!NOTE]
 > Konto użytkownika agenta testów wykorzystywane do zbierania danych przez narzędzie IntelliTrace musi być członkiem grupy administratorów. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
@@ -101,7 +103,7 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
 11. (Opcjonalnie) Wybierz **zaawansowane** kartę. Następnie wybierz strzałkę obok **maksymalna ilość miejsca na dysku dla nagrywania** i zaznacz maksymalny rozmiar, który chcesz włączyć plik narzędzia IntelliTrace do użycia.
 
     > [!NOTE]
-    > Zbyt wysoki limit ilości rejestrowanych danych może sprawić, że podczas zapisywania danych razem z wynikami testu upłynie limit czasu. Aby uzyskać więcej informacji o tym, jak zwiększyć wartości limitów czasu dla adapterów danych diagnostycznych, zobacz [porady: zapobieganie limitom czasu dla adapterów danych diagnostycznych](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Zbyt wysoki limit ilości rejestrowanych danych może sprawić, że podczas zapisywania danych razem z wynikami testu upłynie limit czasu.
 
 12. Jeśli używasz Microsoft Test Manager, wybierz opcję **Zapisz**. Jeśli używasz programu Visual Studio, wybierz opcję **OK**. Ustawienia narzędzia IntelliTrace są teraz skonfigurowane i zapisane w ustawieniach testu.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Tworzenie wykresów niestandardowych w wynikach testów obciążenia w programie Visual Studio'
+title: 'Porady: tworzenie wykresów niestandardowych w wynikach testów obciążenia'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382002"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055403"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Porady: Tworzenie wykresów niestandardowych obciążenia wyników testu
 
 Można zaprojektować wykresów wyświetlających określone informacje na temat wyników testów obciążenia. Projektujesz niestandardowy wykres, określając liczniki testu obciążenia, które wykresie będą wyświetlane.
 
- Po uruchomieniu testu obciążeniowego lub po zakończeniu działania, można wykonać poniższą procedurę.
+Po uruchomieniu testu obciążeniowego lub po zakończeniu działania, można wykonać poniższą procedurę.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Aby utworzyć wykres wyników testu obciążenia niestandardowe
 

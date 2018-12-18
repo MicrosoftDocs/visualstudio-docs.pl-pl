@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: f1df4aaa3eeaf0361176ca433cc2262afca480ce
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624335"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294477"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
 
-Visual Studio klienta środowiska Improvement Program (VSCEIP) to program zaprojektowany, aby pomóc firmie Microsoft w ulepszaniu programu Visual Studio dla komputerów Mac, wraz z upływem czasu. Ten program zbiera informacje o sprzęcie komputera i jak użytkownicy korzystają programu Visual Studio dla komputerów Mac, bez zakłócania pracy użytkowników w ich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może identyfikować, które funkcje, aby poprawić. W tym dokumencie opisano sposób korzystania z opcji w lub poza nią VSCEIP.
+Visual Studio klienta środowiska Improvement Program (VSCEIP) to program zaprojektowany, aby pomóc firmie Microsoft w ulepszaniu programu Visual Studio dla komputerów Mac, wraz z upływem czasu. Ten program zbiera informacje o sprzęcie komputera i jak użytkownicy korzystają programu Visual Studio dla komputerów Mac, bez zakłócania pracy użytkowników w ich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może identyfikować, które funkcje, aby poprawić. W tym artykule opisano sposób korzystania z opcji w lub poza nią VSCEIP.
 
-Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych lub przekazywanych w ramach VSCEIP, zobacz [zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).  
+Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych lub przekazywanych w ramach VSCEIP, zobacz [zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Opcje wyboru i kontrola nad programu poprawy jakości obsługi klienta w usłudze Visual Studio
 
@@ -34,6 +34,8 @@ VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponowne zalogowani
 
 ## <a name="see-also"></a>Zobacz także
 
+* [Program poprawy jakości obsługi klienta (Visual Studio Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
+* [Dzienniki generowane przez system, zebrane przez program Visual Studio (na Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Jak zgłosić problem z programem Visual Studio dla komputerów Mac](report-a-problem.md)
 * [Program Visual Studio for Mac społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html)
 * [Poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement)

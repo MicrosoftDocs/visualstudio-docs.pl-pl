@@ -12,57 +12,57 @@ helpviewer_keywords:
 - Globals class, Ribbon
 - Ribbon [Office development in Visual Studio], accessing
 - RibbonManager class
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: abeffdbc61861aae3c0c9c53cb07d597abaa31c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263216"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304626"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Dostęp do wstążki w czasie wykonywania
-  Można napisać kod, aby pokazać, Ukryj i modyfikowanie wstążki, a użytkownicy mogą uruchomić kod z kontrolek w niestandardowego okienka zadań, w okienku Akcje lub regionów formularzy programu Outlook.  
+  Można napisać kod, aby pokazać, ukrywanie i modyfikowania Wstążki i umożliwienie użytkownikom uruchomić kod z kontrolek w niestandardowego okienka zadań, okienka akcji lub region formularza programu Outlook.  
 
- Dostęp do wstążki za pomocą `Globals` klasy. Dla projektów programu Outlook są dostępne wstążek, pojawiające się w określonym oknie inspektora programu Outlook lub w Eksploratorze programu Outlook.  
+ Dostęp do wstążki przy użyciu `Globals` klasy. Dla projektów programu Outlook można uzyskać dostęp do taśmy, które pojawiają się w określonym oknie inspektora programu Outlook lub Outlook Eksploratora.  
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
 
 ## <a name="access-the-ribbon-by-using-the-globals-class"></a>Dostęp do wstążki przy użyciu klasy globalne  
- Można użyć `Globals` klasę, aby uzyskać dostęp do wstążki w projektach na poziomie dokumentu i projektów dodatku VSTO z dowolnego miejsca w projekcie.  
+ Możesz użyć `Globals` klasy dostępu do wstążki w projektach na poziomie dokumentu lub projekt dodatku narzędzi VSTO dla programów w dowolnym miejscu w projekcie.  
 
- Aby uzyskać więcej informacji na temat `Globals` , zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Aby uzyskać więcej informacji na temat `Globals` klasy, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
 
- W poniższym przykładzie użyto `Globals` klasa niestandardowa Wstążka o nazwie dostępu do `Ribbon1` i Ustaw tekst wyświetlany w polu kombi na Wstążce, aby `Hello World`.  
+ W poniższym przykładzie użyto `Globals` klasy w celu dostępu do wstążki niestandardowej o nazwie `Ribbon1` i Ustaw tekst, który pojawia się w polu kombi na Wstążce aby `Hello World`.  
 
  [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)]
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]  
 
-## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Dostęp do kolekcji taśmy, które pojawiają się w określonym oknie inspektora programu Outlook  
- Dostęp można uzyskać kolekcję taśmy, które są wyświetlane w programie Outlook *inspektorzy*. Inspektora jest oknem, który zostanie otwarty w programie Outlook użytkownicy wykonywania niektórych zadań, takich jak tworzenie wiadomości e-mail. Aby uzyskać dostęp do okna inspektora na Wstążce, należy wywołać `Ribbons` właściwość `Globals` klasy i podaj <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt, który reprezentuje kontroler.  
+## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Dostępu do kolekcji wstążek, które pojawiają się w określonym oknie inspektora programu Outlook  
+ Możesz uzyskać dostęp zbiór wstążek, które są wyświetlane w programie Outlook *inspektorzy*. Inspektor jest oknem, która zostanie otwarta w programie Outlook, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail. Aby uzyskać dostęp do wstążki oknie Inspektora, należy wywołać `Ribbons` właściwość `Globals` klasy i przekazać <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt, który reprezentuje Inspektor.  
 
- Poniższy przykład pobiera kolekcję wstążki inspektora, który aktualnie ma fokus. W tym przykładzie następnie uzyskuje dostęp do wstążki o nazwie `Ribbon1` i ustawia tekst wyświetlany w polu kombi na Wstążce, aby `Hello World`.  
+ Poniższy przykład pobiera kolekcję wstążki Inspector, który aktualnie ma fokus. W tym przykładzie następnie uzyskuje dostęp do wstążki o nazwie `Ribbon1` i ustawia tekst, który pojawia się w polu kombi na Wstążce aby `Hello World`.  
 
  [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
 
-## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Dostęp do kolekcji taśmy, które są wyświetlane dla określonego programu Outlook Explorer  
- Dostęp można uzyskać kolekcję taśmy, które są wyświetlane w programie Outlook *Explorer*. Eksplorator jest aplikacji głównej interfejsu użytkownika (UI) dla wystąpienia programu Outlook. Aby uzyskać dostęp do wstążki okno Eksploratora, należy wywołać `Ribbons` właściwość `Globals` klasy i podaj <xref:Microsoft.Office.Interop.Outlook.Explorer> obiekt, który reprezentuje Eksploratora.  
+## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Dostępu do kolekcji wstążek, które są wyświetlane dla określonych Eksplorator programu Outlook  
+ Możesz uzyskać dostęp zbiór wstążek, które są wyświetlane w programie Outlook *Explorer*. Eksplorator jest głównej aplikacji interfejsu użytkownika (UI) dla wystąpienia programu Outlook. Aby uzyskać dostęp do wstążki okno Eksploratora, należy wywołać `Ribbons` właściwość `Globals` klasy i przekazać <xref:Microsoft.Office.Interop.Outlook.Explorer> obiekt, który reprezentuje Eksploratora.  
 
- Poniższy przykład pobiera kolekcję wstążki Eksploratora, który aktualnie ma fokus. W tym przykładzie następnie uzyskuje dostęp do wstążki o nazwie `Ribbon1` i ustawia tekst wyświetlany w polu kombi na Wstążce, aby `Hello World`.  
+ Poniższy przykład pobiera kolekcję wstążki Explorer, który aktualnie ma fokus. W tym przykładzie następnie uzyskuje dostęp do wstążki o nazwie `Ribbon1` i ustawia tekst, który pojawia się w polu kombi na Wstążce aby `Hello World`.  
 
  [!code-vb[Trin_Outlook_FR_Access#6](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#6)]
  [!code-csharp[Trin_Outlook_FR_Access#6](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#6)]  
 
 ## <a name="see-also"></a>Zobacz także  
- [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
+ [Wstążka — omówienie](../vsto/ribbon-overview.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
- [XML wstążki](../vsto/ribbon-xml.md)   
+ [XML — Wstążka](../vsto/ribbon-xml.md)   
  [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Wskazówki: Aktualizowanie formantów na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Wskazówki: Aktualizowanie kontrolek na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)  

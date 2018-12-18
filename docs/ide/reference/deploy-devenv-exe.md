@@ -1,5 +1,5 @@
 ---
-title: -Wdrażanie (devenv.exe)
+title: -Deploy (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 368680321f8ff8ab908e79e075a5797ba9ecd598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945119"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948884"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
-Wdraża rozwiązanie po kompilacji lub ponownej kompilacji. Dotyczy tylko projektów kodu zarządzanego.
+Wdraża to rozwiązanie po kompilacji lub ponownej kompilacji. Dotyczy tylko projektów kodu zarządzanego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,7 +34,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 ## <a name="arguments"></a>Argumenty
  `SolnConfigName`
 
- Wymagana. Nazwa konfiguracji rozwiązania, który zostanie użyty do budowania rozwiązania o nazwie w `SolutionName`.
+ Wymagana. Nazwa konfiguracji rozwiązania, która będzie służyć do tworzenia rozwiązania o nazwie w `SolutionName`.
 
  `SolutionName`
 
@@ -42,21 +42,21 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 
  / Project `ProjName`
 
- Opcjonalna. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu do pliku projektu lub nazwa wyświetlana projektu lub pełną ścieżkę i nazwę pliku projektu.
+ Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.
 
  / projectconfig `ProjConfigName`
 
  Opcjonalna. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas tworzenia `/project` o nazwie.
 
 ## <a name="remarks"></a>Uwagi
- Określony projekt musi być projektu wdrożenia. Jeśli określony projekt nie jest projekt wdrożenia, gdy projekt, który został utworzony jest przekazywany do wdrożenia, jego kończy się niepowodzeniem z powodu błędu.
+ Określony projekt musi być projektu wdrożenia. Jeśli określony projekt nie jest projektem wdrożenia, gdy projekt, który został utworzony, jest przekazywany do wdrożenia, jego zakończy się niepowodzeniem z powodu błędu.
 
  Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
 
- Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okna, lub określić za pomocą pliku dziennika `/out` przełącznika.
+ Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie wdroży projekt `CSharpConsoleApp`za pomocą `Release` konfigurację kompilacji projektu w `Release` Konfiguracja rozwiązania o `MySolution`.
+ W tym przykładzie wdroży projekt `CSharpConsoleApp`przy użyciu `Release` konfigurację kompilacji projektu w ramach `Release` Konfiguracja rozwiązania o `MySolution`.
 
 ```
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
@@ -66,7 +66,7 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)
-- [/ Kompilacji (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

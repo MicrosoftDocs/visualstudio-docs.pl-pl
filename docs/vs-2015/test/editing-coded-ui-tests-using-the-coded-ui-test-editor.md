@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951271"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Edycja właściwości akcji UI
   
  Aby zmodyfikować właściwości dla akcji interfejsu użytkownika w **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz edytować właściwości, wybierz działania interfejsu użytkownika, a następnie zmodyfikuj właściwości w oknie właściwości.  
   
- Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "http://Contoso1/default.aspx"** , można zmienić adres URL do `‘ http://Contoso2/default.aspx’`.  
+ Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "<http://Contoso1/default.aspx’>"** , można zmienić adres URL do `‘http://Contoso2/default.aspx’`.  
   
  ![Właściwości formantu](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Edycja właściwości kontrolki  
@@ -125,19 +125,19 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
--   ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** Jeśli możesz podzielić metodę, należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę zamierzasz utworzyć, jeśli nadal chcesz tych interfejsu użytkownika włączone czynności. Podczas podziału metody zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę, którą chcesz utworzyć. Wybierz **tak**.  
+- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** Jeśli możesz podzielić metodę, należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę zamierzasz utworzyć, jeśli nadal chcesz tych interfejsu użytkownika włączone czynności. Podczas podziału metody zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę, którą chcesz utworzyć. Wybierz **tak**.  
   
- **Porady**  
+  **Porady**  
   
--   ![Porada](../test/media/tip.png "Porada") Aby cofnąć podziału, wybierz opcję **Cofnij** z **Edytuj** menu lub naciśnij klawisze Ctrl + Z.  
+- ![Porada](../test/media/tip.png "Porada") Aby cofnąć podziału, wybierz opcję **Cofnij** z **Edytuj** menu lub naciśnij klawisze Ctrl + Z.  
   
--   ![Porada](../test/media/tip.png "Porada") można zmienić nazwę nowej metody. Wybierz je w okienku Akcje interfejsu użytkownika, a następnie wybierz **Zmień nazwę** przycisku na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.  
+- ![Porada](../test/media/tip.png "Porada") można zmienić nazwę nowej metody. Wybierz je w okienku Akcje interfejsu użytkownika, a następnie wybierz **Zmień nazwę** przycisku na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.  
   
-     —lub—  
+   —lub—  
   
-     Otwórz menu skrótów dla nowego metoda testowa i wybierz polecenie **Zmień nazwę**.  
+   Otwórz menu skrótów dla nowego metoda testowa i wybierz polecenie **Zmień nazwę**.  
   
-     Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod odwołujący się do metody. Wybierz **tak**.  
+   Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod odwołujący się do metody. Wybierz **tak**.  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> Przenieś metody testowej do pliku UIMap w celu ułatwienia dostosowywania  
  Jeśli stwierdzisz, że jeden swoje metody testowe w interfejsie użytkownika usług kodowany test wymaga kodu niestandardowego, przenieś go do pliku UIMap.cs lub UIMap.vb. W przeciwnym razie kodu zostaną zastąpione po każdym kodowanego testu interfejsu użytkownika jest ponownie kompilowana. Jeśli metoda nie jest przeniesienie, niestandardowy kod zostaną zastąpione każdorazowo, gdy test jest ponownie kompilowana.  
@@ -149,11 +149,11 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
--   ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** po przeniesieniu metody nie będzie można edytować za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Po przeniesieniu metody, zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ma zostać przeniesiona z pliku UIMap.uitest do UIMap.cs lub UIMap.vb, który nie będzie już można edytować metody za pomocą edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.  
+- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** po przeniesieniu metody nie będzie można edytować za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Po przeniesieniu metody, zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ma zostać przeniesiona z pliku UIMap.uitest do UIMap.cs lub UIMap.vb, który nie będzie już można edytować metody za pomocą edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.  
   
- **Porady**  
+  **Porady**  
   
--   ![Porada](../test/media/tip.png "Porada") Aby cofnąć przeniesienie, zaznacz **Cofnij** z **Edytuj** menu lub naciśnij klawisze Ctrl + Z. Jednakże należy następnie ręcznie usunąć kod w pliku UIMap.cs lub UIMap.vb.  
+- ![Porada](../test/media/tip.png "Porada") Aby cofnąć przeniesienie, zaznacz **Cofnij** z **Edytuj** menu lub naciśnij klawisze Ctrl + Z. Jednakże należy następnie ręcznie usunąć kod w pliku UIMap.cs lub UIMap.vb.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Lokalizowanie kontrolki interfejsu użytkownika w testowanej aplikacji  
  Czasami może być trudne do wizualizacji, gdzie kontrolki znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać kontrolkę mapy formantów interfejsu użytkownika na liście i wyświetlić jego lokalizację w testowanej aplikacji. Za pomocą **zlokalizuj formant interfejsu użytkownika** funkcję na testowaną aplikację można również sprawdzić wyszukiwania właściwości modyfikacje wprowadzone do formantu.  
@@ -167,11 +167,11 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
--   ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** przed kontrolki interfejsu użytkownika możesz zlokalizować, sprawdź, czy aplikacja skojarzona z test jest uruchomiony.  
+- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** przed kontrolki interfejsu użytkownika możesz zlokalizować, sprawdź, czy aplikacja skojarzona z test jest uruchomiony.  
   
- **Porady**  
+  **Porady**  
   
--   ![Porada](../test/media/tip.png "Porada") Alternatywnie, można użyć **Znajdź wszystkie** opcję, aby sprawdzić, czy wszystkich kontrolek w kontenerze można przechowywać poprawnie. Ta opcja jest opisane w następnej sekcji.  
+- ![Porada](../test/media/tip.png "Porada") Alternatywnie, można użyć **Znajdź wszystkie** opcję, aby sprawdzić, czy wszystkich kontrolek w kontenerze można przechowywać poprawnie. Ta opcja jest opisane w następnej sekcji.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Lokalizowanie formantu i jego elementy podrzędne  
  Możesz sprawdzić, czy wszystkich kontrolek w kontenerze można poprawnie znajdować w Interfejsie użytkownika aplikacji w ramach testu. Może to być przydatne podczas weryfikowania zmiany właściwości wyszukiwania, które mogły zostać wprowadzone w kontenerze. Ponadto jeśli miały miejsce znaczące zmiany w interfejsie użytkownika aplikacji poddawanej testowi, może się sprawdzić, czy istniejące właściwości wyszukiwania kontrolki są nadal prawidłowe.  
@@ -201,11 +201,11 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Uwagi**  
   
--   ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") Jeśli potrzebujesz upewnić się, że jest określona kontrolka jest dostępny przed akcją UI, należy rozważyć dodanie niestandardowego kodu do metody testowej przy użyciu odpowiednich UITestControl.WaitForControlXXX() Metoda. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Tworzenie kodowanego interfejsu użytkownika testy dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") Jeśli potrzebujesz upewnić się, że jest określona kontrolka jest dostępny przed akcją UI, należy rozważyć dodanie niestandardowego kodu do metody testowej przy użyciu odpowiednich UITestControl.WaitForControlXXX() Metoda. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Tworzenie kodowanego interfejsu użytkownika testy dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
- **Porady**  
+  **Porady**  
   
--   ![Porada](../test/media/tip.png "Porada") Jeśli nie zostanie wyświetlone okno właściwości, naciśnij i przytrzymaj klawisz Alt podczas naciśnij klawisz Enter, lub też nacisnąć klawisz F4.  
+- ![Porada](../test/media/tip.png "Porada") Jeśli nie zostanie wyświetlone okno właściwości, naciśnij i przytrzymaj klawisz Alt podczas naciśnij klawisz Enter, lub też nacisnąć klawisz F4.  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   

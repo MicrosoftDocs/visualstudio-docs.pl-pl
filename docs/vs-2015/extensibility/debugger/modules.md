@@ -16,12 +16,12 @@ ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: acd08e6874051bdd2ab9e2bc0e034498b3b611e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf75e1fd4e9189a0c9a341bb9e1c0ae26dfa1b2e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250240"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745510"
 ---
 # <a name="modules"></a>Moduły
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

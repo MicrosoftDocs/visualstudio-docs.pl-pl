@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220046"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752906"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Wiązanie skrótów klawiaturowych z elementami menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

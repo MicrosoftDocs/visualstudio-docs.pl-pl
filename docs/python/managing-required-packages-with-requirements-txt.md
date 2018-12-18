@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie wymagań dotyczących pakietu przy użyciu pliku requirements.txt
+title: Zarządzanie zależnościami pakietów przy użyciu pliku requirements.txt
 description: Plik Requirements.txt znajduje się w tym artykule opisano zależności projektu. Jeśli zostanie wyświetlony projektu, który zawiera plik requirements.txt, możesz łatwo zainstalować te zależności w jednym kroku.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +8,20 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218446"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066181"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Zarządzanie wymagane pakiety przy użyciu pliku requirements.txt
 
-Udostępnij projekt z innymi osobami, używać systemu kompilacji lub zaplanować projekt należy skopiować do innej lokalizacji, gdzie należy przywrócić środowisko, należy określić zewnętrznych pakietów, których wymaga projekt. Zalecanym podejściem jest użycie [pliku requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych. Najbardziej typowe polecenia `pip freeze > requirements.txt`, która rejestruje środowisko bieżący listy pakietów w *requirements.txt*.
+Udostępnij projekt z innymi osobami, używać systemu kompilacji lub zaplanować projekt należy skopiować do innej lokalizacji, gdzie należy przywrócić środowisko, należy określić zewnętrznych pakietów, których wymaga projekt. Zalecanym podejściem jest użycie [pliku requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych. Najbardziej typowe polecenia `pip freeze > requirements.txt`, która rejestruje środowisko bieżący listy pakietów w *requirements.txt*.
 
 Technicznie rzecz biorąc, nazwy pliku może służyć do śledzenia wymagań (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale Visual Studio zapewnia obsługi *requirements.txt*:
 

@@ -1,8 +1,3 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open źródła Kodeks postępowania
-
-Ten projekt przyjęła [Otwórz źródło Kodeks postępowania firmy Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Aby uzyskać więcej informacji, zobacz [kodu postępowania FAQ](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakichkolwiek dodatkowych pytań lub komentarzy.
-
 # <a name="visual-studio-2017-documentation"></a>Dokumentacja programu Visual Studio 2017
 
 Witamy! To repozytorium zawiera pliki źródłowe dla dokumentacji technicznej programu Visual Studio 2017 prac w toku. Tematy są publikowane w [witrynie dokumentacji programu Visual Studio](https://docs.microsoft.com/visualstudio).
@@ -13,10 +8,14 @@ Dokumentacja dla języka Visual Basic i Visual C# znajdują się w osobnym repoz
 
 ## <a name="contributing-to-the-documentation"></a>Współtworzenie dokumentacji
 
-Aby współtworzyć tej dokumentacji, zobacz [przewodnik Dodawanie](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
+Aby współtworzyć tej dokumentacji, zobacz [przewodnik Dodawanie](CONTRIBUTING.md).
 Chętnie poznamy wkład w taki sposób, aby pomóc nam ulepszyć dokumentację programu Visual Studio. Wszystkie artykuły w tym repozytorium, użyj GitHub flavored markdown.
 
-Kilka obszarów funkcji programu Visual Studio mają własnych folderów, w tym repozytorium, takich jak **debugera** tematy dotyczące debugowania, **ide** na temat środowiska (IDE), opracowywanie interakcyjne Visual Studio i itd. **/Media** podfolderu w każdym folderze znajdują się pliki grafika tematy. [Przewodnik Dodawanie](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md) zawiera więcej informacji.
+Kilka obszarów funkcji programu Visual Studio mają własnych folderów, w tym repozytorium, takich jak **debugera** tematy dotyczące debugowania, **ide** na temat środowiska (IDE), opracowywanie interakcyjne Visual Studio i itd. **/Media** podfolderu w każdym folderze znajdują się pliki grafika tematy. [Przewodnik Dodawanie](CONTRIBUTING.md) zawiera więcej informacji.
 
-Ten projekt przyjęła [Otwórz źródło Kodeks postępowania firmy Microsoft](https://opensource.microsoft.com/codeofconduct/). Aby uzyskać więcej informacji, zobacz [kodu postępowania FAQ](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakichkolwiek dodatkowych pytań lub komentarzy.
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open źródła Kodeks postępowania
+
+Ten projekt przyjęła [Otwórz źródło Kodeks postępowania firmy Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Aby uzyskać więcej informacji, zobacz [kodu postępowania FAQ](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakichkolwiek dodatkowych pytań lub komentarzy.
+
 

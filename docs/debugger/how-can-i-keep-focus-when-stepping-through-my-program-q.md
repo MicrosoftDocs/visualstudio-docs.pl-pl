@@ -1,6 +1,6 @@
 ---
-title: Jak utrzymać fokus przy przechodzeniu przez program? | Microsoft Docs
-ms.custom: ''
+title: Zachowaj fokus przy przechodzeniu przez aplikację | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d140617aed2e6d5310587ec9388b107404398a95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280912"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064514"
 ---
-# <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Jak utrzymać fokus przy przechodzeniu przez program?
+# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Jak utrzymać fokus przy przechodzeniu przez moją aplikację?
 ## <a name="description"></a>Opis  
  Program wystąpił problem z okna aktywacji. Krokowe wykonywanie programu za pomocą debugera koliduje z moich możliwość Odtwórz problem, ponieważ program przechowuje tracąc koncentracji. Czy istnieje sposobem uniknięcia tego problemu?  
   

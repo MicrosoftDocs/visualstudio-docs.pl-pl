@@ -1,5 +1,5 @@
 ---
-title: Powiąż kontroler testów lub agenta testowego z kartą sieciową w programie Visual Studio
+title: Powiąż kontroler testów lub agenta testowego z kartą sieciową
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203966"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065950"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Porady: powiązywanie testów kontrolera lub agenta testowego z kartą sieciową
 
@@ -30,6 +30,8 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 > **Błąd 8110. Nie może połączyć się z komputerem określony kontroler ani uzyskać dostępu do obiektu kontrolera**
 >
 > Ten błąd może być spowodowany przez zainstalowanie kontrolera testów na komputerze, który ma więcej niż jedną kartę sieciową. Jest również możliwe, aby pomyślnie zainstalować agentów i nie widzieć tego problemu, dopóki nie zostanie podjęta próba uruchomienia testu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Kontroler testów należy powiązać z konkretnym adapterem sieciowym
 

@@ -1,5 +1,6 @@
 ---
 title: Zaawansowane funkcje programu Visual Studio 2017
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863654"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159402"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017
 
-[Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md) artykuł zawiera podstawowe wprowadzenie do programu Visual Studio. W tym artykule opisano funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych, którzy są już zaznajomieni z programu Visual Studio.
+[Omówienie środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md) artykuł zawiera podstawowe wprowadzenie do programu Visual Studio. W tym artykule opisano funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych, którzy są już zaznajomieni z programu Visual Studio.
 
 ## <a name="modular-installation"></a>Modularna instalacja
 
@@ -66,7 +67,7 @@ Używasz programu Visual Studio do tworzenia aplikacji i gier dla systemu macOS,
 
 - Tworzenie [platformy .NET Core](/dotnet/core/) aplikacji działających w Windows, macOS i Linux.
 
-- Twórz aplikacje mobilne dla systemów iOS, Android i Windows w języku C# i F # za pomocą [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
+- Twórz aplikacje mobilne dla systemów iOS, Android i Windows w C# i F# przy użyciu [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
 - Użyj standardowych technologii sieci web&mdash;HTML, CSS i JavaScript&mdash;do tworzenia aplikacji mobilnych dla systemów iOS, Android i Windows przy użyciu [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
@@ -126,5 +127,5 @@ Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobac
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)
+- [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-in-visual-studio.md)

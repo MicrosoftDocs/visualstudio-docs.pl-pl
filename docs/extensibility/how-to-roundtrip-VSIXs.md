@@ -1,30 +1,30 @@
 ---
-title: 'Instrukcje: komunikacja dwukierunkowa rozszerzeń dla programu Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Jak komunikacja dwukierunkowa rozszerzeń
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498688"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750735"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Porady: wykonać rozszerzenia są zgodne z programu Visual Studio 2017 i Visual Studio 2015
 
-Ten dokument wyjaśnia, jak tworzyć projekty rozszerzalności obustronne między Visual Studio 2015 i Visual Studio 2017. Po ukończeniu tego uaktualnienia projektu będzie można otworzyć, kompilacji, zainstalować i uruchomić zarówno w programie Visual Studio 2015 i Visual Studio 2017.  Jako odwołanie, znajduje się kilka rozszerzeń, które można dwustronnej konwersji między Visual Studio 2015 i Visual Studio 2017 [tutaj](https://github.com/Microsoft/VSSDK-Extensibility-Samples) w przykładach rozszerzeń firmy Microsoft.
+Ten dokument wyjaśnia, jak tworzyć projekty rozszerzalności obustronne między Visual Studio 2015 i Visual Studio 2017. Po ukończeniu tego uaktualnienia projektu będzie można otworzyć, kompilacji, zainstalować i uruchomić zarówno w programie Visual Studio 2015 i Visual Studio 2017. Jako odwołanie, niektóre rozszerzenia, które mogą dwustronnej konwersji między Visual Studio 2015 i Visual Studio 2017 można znaleźć w [przykłady rozszerzania zestawu SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 Jeśli zamierzasz tylko kompilacji w programie Visual Studio 2017, ale mają dane wyjściowe pliku VSIX do uruchamiania w programie Visual Studio 2015 i Visual Studio 2017, odwoływać się do [dokumentu migrace rozszerzenia](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Uwaga:** z powodu zmian w programie Visual Studio między wersjami kilka rzeczy, które działały w jednej wersji nie będzie działać innego. Upewnij się, że w obie wersje są dostępne funkcje, o których próbujesz uzyskać dostęp, lub będzie miał rozszerzenie nieoczekiwane wyniki.
+> [!NOTE]
+> Z powodu zmian w programie Visual Studio między wersjami kilka rzeczy, które działały w jednej wersji nie działają w innym. Upewnij się, że w obie wersje są dostępne funkcje, o których próbujesz uzyskać dostęp, lub będzie miał rozszerzenie nieoczekiwane wyniki.
 
 Poniżej przedstawiono zarys czynności, które zostaną wykonane w tym dokumencie, aby obustronnie konwertować VSIX:
 
@@ -57,13 +57,13 @@ W dalszej części tego dokumentu, firma Microsoft powoduje wstawienie instrukcj
 Jeśli projekt zawiera *project.json* pliku:
 
 * Zanotuj odwołania w *project.json*.
-* Z **Eksploratora rozwiązań**, Usuń *project.json* pliku z projektem.
-    * Spowoduje to usunięcie *project.json* plików i usunąć go z projektu.
-* Dodaj odwołania do NuGet z powrotem w do projektu.
+* Z **Eksploratora rozwiązań**, Usuń *project.json* pliku z projektem. Spowoduje to usunięcie *project.json* plików i usuwa go z projektu.
+* Dodaj odwołania do NuGet z powrotem w do projektu:
     * Kliknij prawym przyciskiem myszy **rozwiązania** i wybierz polecenie **Zarządzaj pakietami NuGet dla rozwiązania**.
-    * Program Visual Studio automatycznie tworzy *packages.config* plik
+    * Program Visual Studio automatycznie tworzy *packages.config* plik.
 
->**Uwaga:** Jeśli projekt zawiera pakiety EnvDTE, ich może być konieczne do dodania, klikając prawym przyciskiem myszy **odwołania** wybierając **Dodaj odwołanie do** oraz dodawania odpowiednich odwołań.  Za pomocą pakietów NuGet może tworzyć błędy podczas próby utworzenia Twojego projektu.
+> [!NOTE]
+> Jeśli projekt zawiera pakiety EnvDTE, ich może być konieczne do dodania, klikając prawym przyciskiem myszy **odwołania** wybierając **Dodaj odwołanie do** oraz dodawania odpowiednich odwołań.  Za pomocą pakietów NuGet może tworzyć błędy podczas próby utworzenia Twojego projektu.
 
 ## <a name="add-appropriate-build-tools"></a>Dodaj odpowiednie narzędzia
 
@@ -113,7 +113,8 @@ Aby to zrobić ręcznie:
 
 * Zapisz i zamknij plik.
 
->**Uwaga:** Jeśli postanowisz to zrobić za pomocą projektanta VSIX w programie Visual Studio 2017, musisz ręcznie edytować wymagana wstępnie wersja, aby upewnić się, jest zgodna ze wszystkimi wersjami programu Visual Studio 2017.  Jest to spowodowane projektanta wstawi minimalnej wersji jako bieżącej wersji programu Visual Studio (na przykład 15.0.26208.0).  Jednak ponieważ inni użytkownicy mogą mieć starszej wersji, należy ręcznie edytować to ustawienie na 15.0.
+> [!NOTE]
+> Jeśli postanowisz to zrobić za pomocą projektanta VSIX w programie Visual Studio 2017, należy ręcznie zmodyfikować wymagana wstępnie wersja, aby upewnić się, że jest zgodny ze wszystkimi wersjami programu Visual Studio 2017.  Jest to spowodowane projektanta wstawi minimalnej wersji jako bieżącej wersji programu Visual Studio (na przykład 15.0.26208.0).  Jednak ponieważ inni użytkownicy mogą mieć starszej wersji, należy ręcznie edytować to ustawienie na 15.0.
 
 W tym momencie pliku manifestu powinien wyglądać mniej więcej tak:
 
@@ -139,7 +140,8 @@ Zdecydowanie zaleca się odwołania do zmodyfikowanych plików csproj otwarty po
 
 * Dodaj następujący tag `<VsixType>v3</VsixType>` do grupy właściwości.
 
->**Uwaga:** zaleca się dodawania tego poniżej `<OutputType></OutputType>` tagu.
+> [!NOTE]
+> Zaleca się dodawania tego poniżej `<OutputType></OutputType>` tagu.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Dodawanie właściwości debugowania
 
@@ -211,4 +213,5 @@ Na tym etapie projektu powinny być gotowe do kompilowania VSIXv3, który można
 
 ![Znajdź VSIX](media/finding-a-VSIX-example.png)
 
->**Uwaga:** Jeśli projektu zawiesza się z komunikatem **otwierania pliku**, wymuszanie zamknięcia programu Visual Studio, przejdź do katalogu projektu, Pokaż ukryte foldery i Usuń *.vs* folderu.
+> [!NOTE]
+> Jeśli projekt zawiesza się z komunikatem **otwierania pliku**, wymuszanie zamknięcia programu Visual Studio, przejdź do katalogu projektu, Pokaż ukryte foldery i Usuń *.vs* folderu.

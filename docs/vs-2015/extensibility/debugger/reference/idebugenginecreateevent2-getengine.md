@@ -17,12 +17,12 @@ ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aac14c0ae8c2ffa0b074bdf101c52213958404ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fbc31ed58753f8c6a578ded868f731474d94844
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756805"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Pobiera obiekt, który reprezentuje aparat debugowania nowo utworzony (DE).
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT GetEngine(   
+HRESULT GetEngine(   
    IDebugEngine2** pEngine  
 );  
 ```  
   
 ```csharp  
-int GetEngine(   
+int GetEngine(   
    out IDebugEngine2 pEngine  
 );  
 ```  

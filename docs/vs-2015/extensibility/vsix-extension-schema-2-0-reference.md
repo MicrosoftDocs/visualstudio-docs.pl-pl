@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893887"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785940"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

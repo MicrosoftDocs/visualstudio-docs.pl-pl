@@ -16,12 +16,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe76797d64bf2fac4f077fd5c2e5f582cfb0448f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 628c9ef34fc23776672a4252886c091a38f63b4b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260718"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734966"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flagi wiersza polecenia kompilatora VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 [-I<include-path>]* [-L<language>] [-E[C|H|N]:<name>]  
   
   -D    Specify any additional preprocessor defines  
-  -I    Indcate what additional include paths to send to the preprocessor  
-  -L    Specify the langauge to use when selecting strings  
+  -I    Indicate what additional include paths to send to the preprocessor  
+  -L    Specify the language to use when selecting strings  
   -E    Emit C# objects in the specified namespace for command items,  
-        folowed by [L|F|H|N]:<value>  
+        followed by [L|F|H|N]:<value>  
         F = Name of the file to emit (used if -EL is provided)  
         L = Name of a language providing a CodeDOM provider  
         N = namespace (required if -EL is provided)  
         H = C++ header  
-  -c    Clean build skipping dependancy checks  
+  -c    Clean build skipping dependency checks  
   -v    Verbose output  
 ```  
   
@@ -66,7 +66,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Określ wszystkie dodatkowe zdefiniowane symbole.|  
 |-I|Wskazują, że dodatkowe ścieżki dołączanych plików, które powinny być używane podczas rozpoznawania odwołań do pliku.|  
 |-L|Określ <xref:System.Globalization.CultureInfo> nazwy kultury, na przykład "en US".|  
-|-E|Emituj obiekty języka C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C&#124;H&#124;N]:*filename*gdzie C = C# H = nagłówka C++, N = przestrzeni nazw. Przestrzeń nazw jest wymagany dla języka C#.|  
+|-E|Emituj C# obiekty w określonej przestrzeni nazw dla elementów polecenia, a następnie [C&#124;H&#124;N]:*filename*gdzie C = C#, H = nagłówka C++, N = przestrzeni nazw. Przestrzeń nazw jest wymagany dla języka C#.|  
 |-v|Pełne dane wyjściowe.|  
   
  Przełącznik -L informuje kompilator, aby wybrać grupę ciągów, aby wygenerować plik binarny .cto, który odpowiada danym <xref:System.Globalization.CultureInfo> nazwa kultury. Określona nazwa kultury powinien być zgodny w atrybucie Language elementu co najmniej jeden [Strings, Element](../../extensibility/strings-element.md) w pliku vsct. Jeśli Strings, element nie ma języka atrybutu, zostało ono odziedziczone zawierający [CommandTable, Element](../../extensibility/commandtable-element.md).  

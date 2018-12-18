@@ -1,5 +1,5 @@
 ---
-title: Użyć środowiska laboratoryjnego dla metodyki devops w programie Visual Studio
+title: Użyć środowiska laboratoryjnego do operacji deweloperskich
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837116"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061158"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Użyć środowiska laboratoryjnego dla Twojego metodyki devops
 

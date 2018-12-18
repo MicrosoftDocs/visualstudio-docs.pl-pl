@@ -1,7 +1,7 @@
 ---
 title: Wyświetl parametry w wizualizatorze ciąg | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 07/11/2018
+ms.date: 10/10/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274316"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388559"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Wyświetl parametry w wizualizatorze ciągów w programie Visual Studio
 
@@ -43,9 +43,9 @@ Aby otworzyć Wizualizator ciągu, zostanie wstrzymana podczas debugowania. Umie
 
 ## <a name="view-string-visualizer-data"></a>Wyświetl dane Wizualizator ciągu
 
-W oknie Wizualizator ciągu **wyrażenie** pole zawiera zmiennej lub wyrażenia są przenosząc kursor myszy nad, i **wartość** pole zawiera wartość ciągu. 
+W oknie Wizualizator ciągu **wyrażenie** pole zawiera zmiennej lub wyrażenia są przenosząc kursor myszy nad, i **wartość** pole zawiera wartość ciągu.
 
-Blank **wartość** oznacza, że wybrany visualizer nie może rozpoznać ciągu. Na przykład **Wizualizator XML** pokazuje pusty **wartość** ciąg tekstowy z żadnych znaczników XML lub ciąg JSON. 
+Blank **wartość** oznacza, że wybrany visualizer nie może rozpoznać ciągu. Na przykład **Wizualizator XML** pokazuje pusty **wartość** ciąg tekstowy z żadnych znaczników XML lub ciąg JSON.
 
 Aby wyświetlić ciągów, które nie może rozpoznać wybranego wizualizatora, wybierz **Wizualizator tekstu**. **Wizualizator tekstu** zawiera zwykły tekst.
 
@@ -67,5 +67,7 @@ Poprawnie sformułowany ciąg HTML pojawi się tak, jakby renderowane w przeglą
 
 ![Wizualizator ciągu HTML](../debugger/media/dbg-string-visualizers-html.png "Wizualizator ciągu HTML")
 
-## <a name="see-also"></a>Zobacz także  
- [Tworzenie niestandardowych wizualizatorów (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Tworzenie niestandardowych wizualizatorów (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Wizualizacje danych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations)

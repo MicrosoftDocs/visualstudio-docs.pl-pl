@@ -1,10 +1,11 @@
 ---
-title: Jak zgłosić problem w programie Visual Studio 2017
+title: Jak zgłosić problem z programem Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak zgłosić problem z programem Visual Studio 2017 do firmy Microsoft, można zdiagnozować i naprawić.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 03/11/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -12,16 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 968b86af3620e42d7bca48335a03cca76f5afac3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755927"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159285"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem w programie Visual Studio 2017
 
 Jeśli wystąpi problem z programem Visual Studio, chcielibyśmy się dowiedzieć o nim. Poniżej przedstawiono sposób zgłosić problem do [społeczności deweloperów](https://developercommunity.visualstudio.com/) tak, aby firma Microsoft zdiagnozować i rozwiązać go.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [jak zgłosić problem w programie Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem).
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>Zgłoś problem w programie Visual Studio
 
@@ -125,7 +129,7 @@ Począwszy od programu Visual Studio 2017 w wersji 15.5 istnieje nowy przepływ 
 
 Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, istnieje szansa, że już zgłoszono problem i rozwiązaniem opublikowano [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) strony.
 
-Jeśli nie masz problem do raportu, ale chce dostarczać opinie o produkcie lub sugestia, ma miejsce, w tym za. Aby uzyskać więcej informacji, zobacz [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) strony.
+Jeśli masz problem, aby zgłosić, ale chcesz zaproponować funkcję, ma miejsce, w tym za. Aby uzyskać więcej informacji, zobacz [Zaproponuj funkcję](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) strony.
 
 ## <a name="see-also"></a>Zobacz także
 

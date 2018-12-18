@@ -1,5 +1,5 @@
 ---
-title: Kontrolera testów i wymagania agenta testowego do testowania obciążenia w programie Visual Studio
+title: Wymagania dla kontrolera testów i agentów testowych niezbędnych do testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813989"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051458"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testowanie wymagania agenta kontrolera i testu do testowania obciążenia
 
 Kilka typów, w tym jednostkowe, wydajności sieci web, obciążenia testu, a testy ręczne są zintegrowane z Visual Studio. Program Visual Studio umożliwia użytkownikom programu Visual Studio Application Lifecycle Management do uruchamiania testów na komputerach zdalnych przy użyciu kontrolera testów i jednego lub kilku agentów. Zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Wymagania sprzętowe i programowe
 

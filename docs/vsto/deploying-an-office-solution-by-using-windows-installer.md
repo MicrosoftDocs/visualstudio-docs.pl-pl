@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72c0c50ed119ae4f7ec3bfccbe191e273c768325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874920"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673058"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
 Dowiedz się, jak utworzyć Instalatora Windows dla rozwiązania pakietu Office przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -532,7 +532,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 
 ## <a name="see-also"></a>Zobacz także  
-[Wymagania wstępne rozwiązania pakietu Office wdrożenia](http://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[Wymagania wstępne rozwiązania pakietu Office wdrożenia](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
 [Wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
 [Przegląd właściwości niestandardowego dokumentu](../vsto/custom-document-properties-overview.md)  

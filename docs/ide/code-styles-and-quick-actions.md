@@ -1,5 +1,5 @@
 ---
-title: Preferencji stylu kodu programu Visual Studio
+title: Preferencje stylu kodu
 ms.date: 03/10/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 718110b3339628052d8a4a2e3ebbcdd163707a97
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624241"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065264"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -26,6 +26,9 @@ Można ustawić preferencji stylu kodu dla projektów C# i Visual Basic, otwiera
 Każdy element na liście pokazuje jego podgląd preferencji, w przypadku wybrania:
 
 ![Opcje stylu kodu](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [zachowanie edytora w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Preferencji i ważność
 
@@ -39,7 +42,7 @@ Kod platformy .NET można również zarządzać za pomocą ustawienia stylu [Edi
 
 W programie Visual Studio 2017 w wersji należy zachować 15,8 i nowszych można skonfigurować **Formatuj dokument** polecenia (**Edytuj** > **zaawansowane**  >  **Formatuj dokument**) do wykonywania oczyszczania dodatkowy kod w pliku, taką jak Usuń i Sortuj wyrażenia Using lub zastosować preferencji stylu kodu. Można zdefiniować ustawienia, które chcesz **Formatuj dokument** można zastosować [strona Opcje formatowania](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
-Oczyszczanie kodu stosuje się do ustawień skonfigurowanych w *.editorconfig* pliku lub niedostatecznie tę zasadę lub pliku, określone **narzędzia** > **opcje**  >  **Edytora tekstów** > **C#** > [**styl kodu** lub **formatowanie**].
+Oczyszczanie kodu stosuje się do ustawień skonfigurowanych w *.editorconfig* pliku lub niedostatecznie tę zasadę lub pliku, określone **narzędzia** > **opcje**  >  **Edytora tekstów**  >  **C#** > [**styl kodu** lub **formatowanie**].
 
 Po raz pierwszy możesz wyzwolić **Formatuj dokument** polecenia w programie Visual Studio 2017, pasek informacji żółty monituje o oczyszczania kodu ustawień.
 
@@ -50,3 +53,4 @@ Po raz pierwszy możesz wyzwolić **Formatuj dokument** polecenia w programie Vi
 
 - [Szybkie akcje](../ide/quick-actions.md)
 - [.NET coding convention ustawienia dla wtyczki EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Zachowanie edytora (Visual Studio dla komputerów Mac)](/visualstudio/mac/editor-behavior)

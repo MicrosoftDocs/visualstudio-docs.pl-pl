@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176190"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349351"
 ---
 # <a name="working-with-xml-data"></a>Praca z danymi XML
 
@@ -50,11 +50,11 @@ Program Visual Studio obsługuje debugowania arkuszy stylów XSLT. Za pomocą de
 
 [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md) w tym artykule omówiono sposób debugowania arkuszy stylów, za pomocą debugera programu Visual Studio.
 
-[Odwołanie do standardów XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.
+[Odwołanie do standardów XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.
 
 [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) zawiera wyjaśnienie, narzędzi czasu projektowania do tworzenia zestawów danych.
 
-[Usługi sieci web XML w kodzie zarządzanym](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) w tym artykule omówiono sposób tworzenia i wdrażania usług XML sieci web oraz dostęp do usług sieci web XML.
+[Usługi sieci web XML w kodzie zarządzanym](/previous-versions/visualstudio/visual-studio-2008/xy59yt45\(v\=vs.90\)) w tym artykule omówiono sposób tworzenia i wdrażania usług XML sieci web oraz dostęp do usług sieci web XML.
 
 ## <a name="see-also"></a>Zobacz także
 

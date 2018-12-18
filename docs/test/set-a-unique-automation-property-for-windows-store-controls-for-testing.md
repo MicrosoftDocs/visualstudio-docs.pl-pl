@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: c01633f4814326867d7c7e43e345f4faf052622f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924983"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894784"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek platformy uniwersalnej systemu Windows do testowania
 
 Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji platformy uniwersalnej systemu Windows oparte na XAML, każda kontrolka musi posiadać unikatowej właściwości automatyzacji. Możesz przypisać unikatowej właściwości automatyzacji na podstawie typu kontrolki XAML w aplikacji.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>Statyczne definicji XAML
 
@@ -43,7 +45,7 @@ Ustaw **AutomationProperties.Name** do **ButtonY** przy użyciu **zawartości** 
 Ustaw **AutomationProperties.AutomationId** do **ButtonX** jawnie w XAML dla formantu.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Ustaw **AutomationProperties.Name** do **ButtonY** jawnie w XAML dla formantu.

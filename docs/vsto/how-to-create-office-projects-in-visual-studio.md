@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672772"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Porady: tworzenie projektów Office w Visual Studio
   Możesz użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia dodatku narzędzi VSTO i na poziomie dokumentu dostosowania aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji na temat tych typów projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -87,7 +87,7 @@ ms.locfileid: "49839040"
 7. Wybierz **OK** przycisku.
   
     > [!NOTE]  
-    >  Projekty dodatków są zawsze zapisywane podczas ich tworzenia. Nie można ich tworzyć jako projektów tymczasowych. Aby uzyskać więcej informacji na temat projektów tymczasowych, zobacz [projektów tymczasowych](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+    >  Projekty dodatków są zawsze zapisywane podczas ich tworzenia. Nie można ich tworzyć jako projektów tymczasowych. Aby uzyskać więcej informacji na temat projektów tymczasowych, zobacz [projektów tymczasowych](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ### <a name="to-create-a-document-level-customization-project"></a>Aby utworzyć projekt dostosowania na poziomie dokumentu  
   

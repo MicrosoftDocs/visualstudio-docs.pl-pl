@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874673"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671810"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku obrazu
 
@@ -28,7 +28,7 @@ W tym kroku wprowadzisz **Pokaż obraz** przycisk pracował jak to:
 
 IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu. Gdy wprowadzasz kod, IDE otwiera pole z sugerowanymi uzupełnieniami częściowych wyrazów, które należy wprowadzić. Próbuje określić, co chcesz zrobić dalej i automatycznie przechodzi do ostatniego elementu wybranego z listy. Można użyć w górę lub strzałkę w dół, aby przenieść na liście, lub możesz wpisywać litery, aby ograniczyć zakres wyboru. Po wyświetleniu wyboru, należy wybrać **kartę** klawisz, aby go zaznaczyć. Lub możesz zignorować sugestie, jeśli nie są potrzebne.
 
-![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx). W tym wideo używa starszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 4](https://msdn.microsoft.com/vstudio/gg315355.aspx). W tym wideo używa starszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Aby napisać kod dla programu obsługi zdarzeń przycisku obrazu
 
@@ -48,7 +48,7 @@ IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu.
 
     2.  **IntelliSense** okna otwiera i wyświetla **openFileDialog1**. Wybierz **kartę** klawisz, aby go zaznaczyć. (W języku Visual Basic zaczyna się od zakończenia początkowej, tak aby było widać **OpenFileDialog1**. Upewnij się, że **OpenFileDialog1** jest zaznaczona.)
 
-         Aby dowiedzieć się więcej na temat `OpenFileDialog`, zobacz [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
+         Aby dowiedzieć się więcej na temat `OpenFileDialog`, zobacz [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>).
 
     3.  Wpisz kropkę (`.`) (wielu programistów nazywa to kropką.) Ponieważ wpisano kropkę na prawo po **openFileDialog1**, **IntelliSense** zostanie wyświetlone okno dialogowe, wypełnionymi wszystkimi **OpenFileDialog** metodami i właściwościami składnika. Są to te same właściwości, które pojawiają się w **właściwości** okna, jeśli został wybrany **Windows Forms Designer**. Możesz również wybrać metody, które informują składnik, aby wykonywały (np. otwarcie okna dialogowego).
 
@@ -63,7 +63,7 @@ IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu.
 
     4.  Rozpocznij wpisywanie `ShowDialog` (wielkość liter nie ma znaczenia w przypadku IntelliSense). `ShowDialog()` Wyświetli metodę **Otwórz plik** okno dialogowe. Po podświetleniu w oknie **ShowDialog**, wybierz **kartę** klucza. Możesz również wyróżnić "ShowDialog" i wybierz **F1** klawisz, aby uzyskać pomoc dotyczącą go.
 
-         Aby dowiedzieć się więcej na temat `ShowDialog()` metody, zobacz [metoda ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).
+         Aby dowiedzieć się więcej na temat `ShowDialog()` metody, zobacz [metoda ShowDialog](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
     5.  Kiedy używasz metody na kontrolce lub składnik (nazywane *wywołanie metody*), musisz dodać nawiasy. Wprowadź nawiasy otwierające i zamykające natychmiast po "g" w `ShowDialog`: `()` teraz powinno wyglądać "openFileDialog1.ShowDialog()".
 
@@ -79,7 +79,7 @@ IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu.
 
     8.  Wpisz kropkę, aby otworzyć wartość DialogResult **IntelliSense** okna. Wprowadź literę `O` i wybierz polecenie **kartę** klawisz, aby wstawić **OK**.
 
-         Aby dowiedzieć się więcej na temat DialogResult, zobacz [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).
+         Aby dowiedzieć się więcej na temat DialogResult, zobacz [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
         >  Pierwszy wiersz kodu powinien być kompletny. Dla języka Visual C#, należy go poniżej.

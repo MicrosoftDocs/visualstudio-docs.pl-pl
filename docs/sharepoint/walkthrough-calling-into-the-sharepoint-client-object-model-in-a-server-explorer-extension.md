@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934681"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296037"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: Wywoływanie modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera
   W tym instruktażu pokazano, jak wywołać modelu obiektu klienta SharePoint z rozszerzeniem dla **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji o sposobie używania modelu obiektu klienta SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -195,7 +195,7 @@ Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, ab
   
 1.  W **Eksploratora rozwiązań**w **WebPartNode** otwarty projekt **source.extension.vsixmanifest** plik w edytorze manifestu.  
   
-     Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  W **nazwa produktu** wprowadź **węzła galerię części sieci Web w Eksploratorze serwera**.  
   
@@ -208,7 +208,7 @@ Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, ab
 6.  W **Dodaj nowy zasób** dialogowym **typu** wybierz **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   

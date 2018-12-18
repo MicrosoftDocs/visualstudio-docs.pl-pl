@@ -1,8 +1,10 @@
 ---
 title: Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
+titleSuffix: ''
 description: Dowiedz się więcej o narzędziach, których można użyć do wykrywania i zarządzanie instalacjami programu Visual Studio na maszynach klienckich.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 909ea85a68652467e3288e1e3f8f8e2d4e0df5b7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941740"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158570"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
@@ -30,10 +32,10 @@ Istnieje kilka narzędzi, których można użyć do wykrywania instalacji progra
 Wprowadziliśmy kilka narzędzi, które pomogą Ci wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio na maszynach klienckich:
 
 * [VSWhere](https://github.com/microsoft/vswhere): plik wykonywalny, wbudowanego w program Visual Studio lub będą dostępne dla oddzielnych dystrybucji, która pomoże Ci znaleźć lokalizacji wszystkich wystąpień programu Visual Studio na danym komputerze.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): skrypty programu PowerShell, które identyfikują zainstalowanych wystąpień programu Visual Studio za pomocą interfejsu API konfiguracji instalacji.
-* [VS-Instalator-Samples](https://github.com/microsoft/vs-setup-samples): przykłady C# i C++, które pokazują, jak zapytania istniejącą instalację za pomocą interfejsu API konfiguracji instalacji.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): Skrypty programu PowerShell, które identyfikują zainstalowanych wystąpień programu Visual Studio za pomocą interfejsu API konfiguracji instalacji.
+* [VS-Instalator Samples](https://github.com/microsoft/vs-setup-samples): C#i przykłady w języku C++, które pokazują, jak zapytania istniejącą instalację za pomocą interfejsu API konfiguracji instalacji.
 
-Ponadto [interfejs API konfiguracji instalacji](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć swoje własne narzędzia do przeszukiwania wystąpieniami programu Visual Studio.
+Ponadto [interfejs API konfiguracji instalacji](<xref:Microsoft.VisualStudio.Setup.Configuration>) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć swoje własne narzędzia do przeszukiwania wystąpieniami programu Visual Studio.
 
 ## <a name="using-vswhereexe"></a>Za pomocą vswhere.exe
 
@@ -45,7 +47,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 >[!TIP]
 >Aby uzyskać więcej informacji na temat instalacji programu Visual Studio 2017 zobacz [artykuły blogu Grunwald kondycji](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
-
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Edytowanie rejestru dla wystąpienia programu Visual Studio
 

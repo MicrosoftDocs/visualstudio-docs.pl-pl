@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671251"
 ---
 # <a name="design-and-create-office-solutions"></a>Projektowanie i tworzenie rozwiązań pakietu Office
   Visual Studio udostępnia szablony projektów, których można utworzyć kilka różnych typów rozwiązań dla pakietu Office. Ten rozdział dokumentacji zawiera opis szablonów projektów i zawiera wskazówki dotyczące tworzenia projektów pakietu Office. Aby uzyskać informacje o sposobie implementacji dostosowania interfejsu użytkownika oraz kodu po utworzeniu projektu, zobacz [rozwiązań Office tworzenie](../vsto/developing-office-solutions.md).  
@@ -53,7 +53,7 @@ ms.locfileid: "49917185"
   
   Jednak po programu Visual Studio zmian platformy docelowej, konieczne może modyfikować część kodu w projekcie, jeżeli będzie używał pewnych funkcji. Aby uzyskać więcej informacji o tym, jak zmienić platformę docelową, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Aby uzyskać więcej informacji o zmianach, konieczne może być w projekcie, zobacz [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Jeśli program Visual Studio zmieni docelową aplikację .NET Framework dla projektu, a używasz ClickOnce do wdrażania rozwiązania, upewnij się, możesz również wybrać odpowiednią wersję programu .NET Framework w **wymagania wstępne** okno dialogowe. Zaznacz to pole wyboru nie zmienia się automatycznie, gdy zmienić platformę docelową dla projektu. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Jeśli program Visual Studio zmieni docelową aplikację .NET Framework dla projektu, a używasz ClickOnce do wdrażania rozwiązania, upewnij się, możesz również wybrać odpowiednią wersję programu .NET Framework w **wymagania wstępne** okno dialogowe. Zaznacz to pole wyboru nie zmienia się automatycznie, gdy zmienić platformę docelową dla projektu. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Nie można skierowane do .NET Framework 3.5 lub wyżej w projektach pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] wymagają funkcji, które zostały najpierw wprowadzone w [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
@@ -61,7 +61,7 @@ ms.locfileid: "49917185"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Zrozumieć, kiedy zestawy PIA pakietu Office są wymagane na komputerach użytkowników końcowych  
  Domyślnie, podstawowe zestawy międzyoperacyjne (PIA) pakietu Office nie są zainstalowane na komputerach użytkowników końcowych, jeśli **Osadź typy współdziałania** każdego odwołania PIA pakietu Office w projekcie jest właściwością **True**, który jest wartością domyślną. W tym scenariuszu informacji o typie dla typów PIA, które są używane przez rozwiązania jest osadzony w zestawie rozwiązania podczas kompilowania projektu. W czasie wykonywania informacje o typie osadzony służy zamiast zestawów PIA do wywołania w modelu obiektów opartych na modelu COM aplikacji pakietu Office. Aby uzyskać więcej informacji na temat sposobu typów z zestawy PIA są osadzone w rozwiązaniu, zobacz [równoważność typów i osadzone typy międzyoperacyjne](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  
   
- Jeśli **Osadź typy współdziałania** każdego odwołania PIA pakietu Office w projekcie jest właściwością **False**, zestawy PIA pakietu Office musi być zainstalowane i zarejestrowane w globalnej pamięci podręcznej na każdym komputerze użytkownika końcowego, Uruchamia rozwiązanie. W większości przypadków zestawy PIA są instalowane domyślnie z pakietem Office, ale możesz również uwzględnić PIA do dystrybucji jako warunek wstępny dla Twojego rozwiązania. Aby uzyskać więcej informacji, zobacz [wymagania wstępne rozwiązania pakietu Office wdrożenia](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Jeśli **Osadź typy współdziałania** każdego odwołania PIA pakietu Office w projekcie jest właściwością **False**, zestawy PIA pakietu Office musi być zainstalowane i zarejestrowane w globalnej pamięci podręcznej na każdym komputerze użytkownika końcowego, Uruchamia rozwiązanie. W większości przypadków zestawy PIA są instalowane domyślnie z pakietem Office, ale możesz również uwzględnić PIA do dystrybucji jako warunek wstępny dla Twojego rozwiązania. Aby uzyskać więcej informacji, zobacz [wymagania wstępne rozwiązania pakietu Office wdrożenia](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="understand-the-client-profile"></a>Zrozumienie client profile  
  .NET Framework Client Profile jest podzbiorem pełny program .NET Framework. Można kierować platformy .NET Framework Client Profile, należy użyć tylko funkcje klienta w programie .NET Framework, jeśli chcesz udostępnić najszybszy środowisko wdrażania dla rozwiązania pakietu Office. Aby uzyskać więcej informacji, zobacz [profil klienta .NET Framework](/dotnet/framework/deployment/client-profile).  

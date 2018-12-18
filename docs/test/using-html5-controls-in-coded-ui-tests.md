@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika w programie Visual Studio
+title: Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914492"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896197"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
 Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HTML5, które są dołączone do programu Internet Explorer 9 i Internet Explorer 10.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Wymagania**
 
@@ -27,15 +29,14 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
 > [!WARNING]
 > W wersjach wcześniejszych niż Internet Explorer 10 było możliwe do uruchomienia kodowanych testów interfejsu użytkownika w porównaniu do programu proces programu Internet Explorer wyższym poziomie uprawnień. Podczas uruchamiania kodowanych testów interfejsu użytkownika w programie Internet Explorer 10, proces programu Internet Explorer i kodowany test interfejsu użytkownika musi być na tym samym poziomie uprawnień. Jest to ze względu na bardziej bezpieczne funkcje kontenera aplikacji w programie Internet Explorer 10.
 
-
 > [!WARNING]
 > Jeśli tworzysz kodowane testy interfejsu użytkownika w programie Internet Explorer 10, może nie zostać uruchomiony za pomocą programu Internet Explorer 9 i Internet Explorer 8. Jest to spowodowane programu Internet Explorer 10 zawiera formanty HTML5, takie jak Audio, wideo, pasek postępu i suwak. Te formanty HTML5 nie są rozpoznawane przez Internet Explorer 9 i Internet Explorer 8. Podobnie test interfejsu użytkownika kodowany za pomocą Internet Explorer 9 może zawierać niektóre formanty języka HTML5, które również nie zostaną rozpoznane przez Internet Explorer 8.
 
-
 ## <a name="audio-control"></a>Kontrolki dźwięku
- **Kontrolki dźwięku:** poprawnie zarejestrowane i odtwarzać akcji sterowanie dźwięk HTML5.
 
- ![Dźwięk HTML5 kontroli](../test/media/codedui_html5_audio.png)
+**Kontrolki dźwięku:** poprawnie zarejestrowane i odtwarzać akcji sterowanie dźwięk HTML5.
+
+![Dźwięk HTML5 kontroli](../test/media/codedui_html5_audio.png)
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
 |-|---------------|-|

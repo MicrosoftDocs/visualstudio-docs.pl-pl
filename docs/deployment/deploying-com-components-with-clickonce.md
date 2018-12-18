@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820465"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348750"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składniki potrzebne do zarejestrowania globalnie i ten sposób może spowodować niepożądane skutki uboczne między nakładającymi się aplikacje. Ta sytuacja zwykle nie jest to problem występujący w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub są zgodne z side-by-side. Program Visual Studio umożliwia wdrażanie izolowane składniki COM na wyższe system operacyjny lub Windows XP.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] udostępnia mechanizm łatwy i bezpieczny do wdrażania aplikacji .NET. Jednak jeśli aplikacje korzystają z starszych składników modelu COM, należy wykonać dodatkowe kroki dotyczące wdrażania ich. W tym temacie opisano sposób wdrażania izolowane składniki COM i odwołanie składnikami macierzystymi (na przykład z języka Visual C++ lub Visual Basic 6.0).  
   
- Aby uzyskać więcej informacji na temat wdrażania izolowane składniki COM, zobacz "Uprość wdrażanie aplikacji za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i rejestracji wolnego modelu COM" w [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Aby uzyskać więcej informacji na temat wdrażania izolowane składniki COM, zobacz [upraszcza wdrażanie aplikacji, za pomocą technologii ClickOnce i rejestracji wolnego modelu COM](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>COM bez rejestrowania  
  COM bez rejestrowania się nowej technologii związanych z wdrażaniem i aktywowanie izolowane składniki COM. Działa przez umieszczenie biblioteki typów wszystkich składników i informacje o rejestracji, który jest zwykle instalowany w rejestrze systemu do pliku XML o nazwie manifestu, przechowywane w tym samym folderze co aplikacja.  

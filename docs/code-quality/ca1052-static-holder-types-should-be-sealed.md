@@ -1,6 +1,6 @@
 ---
 title: 'CA1052: Typy obsługi statycznej powinny być zapieczętowane'
-ms.date: 11/04/2016
+ms.date: 11/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 937a5eba672eef928dd4f8c0e5356e504d769153
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859500"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348678"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Typy obsługi statycznej powinny być zapieczętowane
 
@@ -37,34 +37,35 @@ ms.locfileid: "47859500"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny lub chroniony zawiera tylko statyczne elementy członkowskie i nie jest zadeklarowana za pomocą [zapieczętowanego](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modyfikator.
+
+Publiczny lub chroniony, nieabstrakcyjnej typ zawiera tylko statyczne elementy członkowskie i nie jest zadeklarowana za pomocą [zapieczętowanego](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modyfikator.
 
 ## <a name="rule-description"></a>Opis reguły
- Reguła ta zakłada, że typ, który zawiera tylko statyczne elementy członkowskie nie służy do dziedziczone, ponieważ typ nie zapewnia żadnej funkcji, która może zostać zastąpiona w typie pochodnym. Typ, który nie jest przeznaczona do dziedziczone powinien być oznaczony przez `sealed` modyfikator, aby uniemożliwić jego użycie jako typu podstawowego.
+
+CA1052 reguły przyjęto założenie, że typ, który zawiera tylko statyczne elementy członkowskie nie służy do dziedziczone, ponieważ typ nie zapewnia żadnej funkcji, która może zostać zastąpiona w typie pochodnym. Typ, który nie jest przeznaczona do dziedziczone powinien być oznaczony przez `sealed` lub `NotInheritable` modyfikator, aby uniemożliwić jego użycie jako typu podstawowego. Ta zasada nie zostanie wywołane dla klasy abstrakcyjnej.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, oznacz typ jako `sealed`. Jeśli są przeznaczone dla .NET Framework 2.0 lub nowszej, lepszym rozwiązaniem jest Oznacz typ jako `static`. W ten sposób można uniknąć konieczności zadeklarować Konstruktor prywatny, aby uniemożliwić tworzonych przez klasy.
+
+Aby naprawić naruszenie tej zasady, oznacz typ jako `sealed` lub `NotInheritable`. Jeśli są przeznaczone dla .NET Framework 2.0 lub nowszej, lepszym rozwiązaniem jest Oznacz typ jako `static` lub `Shared`. W ten sposób nie trzeba zadeklarować Konstruktor prywatny, aby uniemożliwić tworzonych przez klasy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy typ jest przeznaczony do być dziedziczona. Brak `sealed` modyfikator sugeruje, że typ jest przydatne jako typu podstawowego.
+
+Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy typ jest przeznaczony do być dziedziczona. Brak `sealed` lub `NotInheritable` modyfikator sugeruje, że typ jest przydatne jako typu podstawowego.
 
 ## <a name="example-of-a-violation"></a>Przykładem naruszenia
 
-### <a name="description"></a>Opis
- Poniższy przykład pokazuje typ, który narusza regułę.
+Poniższy przykład pokazuje typ, który narusza regułę.
 
-### <a name="code"></a>Kod
- [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
- [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
- [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
+[!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
+[!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
+[!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
 
 ## <a name="fix-with-the-static-modifier"></a>Usuń z modyfikator statyczny
 
-### <a name="description"></a>Opis
- Poniższy przykład pokazuje, jak naprawić naruszenie tej zasady, oznaczając typu za pomocą `static` modyfikator.
+Poniższy przykład pokazuje, jak naprawić naruszenie tej zasady, oznaczając typu za pomocą `static` modyfikator w C#.
 
-### <a name="code"></a>Kod
- [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
+[!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1053: Statyczne typy przechowujące nie powinny mieć konstruktorów](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+
+[CA1053: Statyczne typy przechowujące nie powinny mieć konstruktorów](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

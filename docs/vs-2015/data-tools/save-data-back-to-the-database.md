@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829647"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281852"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Zestaw danych jest kopii danych w pamięci. W przypadku zmodyfikowania tych dany
 ## <a name="two-stage-updates"></a>Aktualizacje dwuetapowego  
  Aktualizowanie źródła danych jest procesem dwuetapowym. Pierwszym krokiem jest aktualizacji zestawu danych za pomocą nowych rekordów, zmienionych rekordów lub usuniętych rekordów. Jeśli Twoja aplikacja nigdy nie przesyła te zmiany do źródła danych, następnie po zakończeniu aktualizacji.  
   
- Jeśli wyślesz zmiany w bazie danych, drugi krok jest wymagany. Jeśli nie używasz kontrolek powiązanych z danymi, musisz ręcznie wywołać metody aktualizacji ten sam obiekt TableAdapter (lub adapter danych), używany do wypełniania zestawu danych. Jednak umożliwia także różne karty, na przykład, aby przenieść dane z jednego źródła danych do innego lub zaktualizować wiele źródeł danych. Jeśli nie są używane powiązanie danych i zapisywania zmian dla tabel powiązanych, należy ręcznie utworzyć wystąpienie zmiennej klasy TableAdapterManager generowane automatycznie, a następnie wywołać jej metodę UdpateAll.  
+ Jeśli wyślesz zmiany w bazie danych, drugi krok jest wymagany. Jeśli nie używasz kontrolek powiązanych z danymi, musisz ręcznie wywołać metody aktualizacji ten sam obiekt TableAdapter (lub adapter danych), używany do wypełniania zestawu danych. Jednak umożliwia także różne karty, na przykład, aby przenieść dane z jednego źródła danych do innego lub zaktualizować wiele źródeł danych. Jeśli nie są używane powiązanie danych i zapisywania zmian dla tabel powiązanych, należy ręcznie utworzyć wystąpienie zmiennej klasy TableAdapterManager generowane automatycznie, a następnie wywołaj jej metodę UpdateAll.  
   
  ![Aktualizacje zbiorów danych w Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja  

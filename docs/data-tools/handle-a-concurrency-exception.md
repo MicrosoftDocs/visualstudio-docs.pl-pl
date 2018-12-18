@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6aca4815672d700fbea9d489f6316b8b0337f8df
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582336"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388741"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 
@@ -64,9 +64,6 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
     3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po pewnym czasie odliczania zapytania i utworzeniu bazy danych Northwind.
-
-> [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
@@ -109,7 +106,7 @@ Następnie należy utworzyć zestaw danych o nazwie **NorthwindDataSet**:
 
 W tej sekcji utworzysz <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> , przeciągając **klientów** elementu z **źródeł danych** okna do formularza Windows.
 
-1. Na **danych** menu, wybierz **Pokaż źródła danych** otworzyć **okna źródeł danych**.
+1. Aby otworzyć **źródeł danych** okna na **danych** menu, wybierz **Pokaż źródła danych**.
 
 2. W **źródeł danych** okna, rozwiń węzeł **NorthwindDataSet** węzeł, a następnie wybierz **klientów** tabeli.
 
@@ -162,13 +159,13 @@ Gdy użytkownik podejmie próbę przeprowadzenia aktualizacji, a wyjątek jest z
 
 1. Dodaj następujący kod poniżej `Form1_Load` metody:
 
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
+   [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+   [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
 2. Zastąp `CustomersBindingNavigatorSaveItem_Click` metodę do wywołania `UpdateDatabase` metoda tak, aby wyglądał następująco:
 
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
+   [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+   [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>Wyświetl opcje użytkownika
 
@@ -176,8 +173,8 @@ Kod został właśnie powstała z jednego wywołania `CreateMessage` procedury, 
 
 Utwórz wiadomość, dodając następujący kod, aby **Edytor kodu**. Wprowadź poniżej kod `UpdateDatabase` metody:
 
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
+[!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+[!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Przetwarzanie odpowiedzi użytkownika
 
@@ -185,8 +182,8 @@ Należy również kod, aby przetworzyć odpowiedzi użytkownika w oknie komunika
 
 Dodaj następujący kod poniższego kodu, który został dodany w poprzedniej sekcji:
 
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
+[!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+[!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Przetestuj formularz
 

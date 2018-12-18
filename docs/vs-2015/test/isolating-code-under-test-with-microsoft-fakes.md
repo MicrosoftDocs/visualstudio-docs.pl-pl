@@ -13,12 +13,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c77243f69cedbd340ee91354ef49651e31605e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2c5806af5712a396659d484d09d3fd7374111a1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845371"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220934"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ Microsoft Fakes pomaga w izolowaniu kodu testowanego przez zastąpienie innych c
   
     ```  
   
-     Specjalną funkcję PE łni tutaj jest klasą `StubIStockFeed`. Dla każdego interfejsu w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę zastępczą. Nazwa klasy wycinka jest tworzona od nazwy interfejsu, z "`Fakes.Stub`" jako prefiksem i dołączonymi nazwami typu parametru.  
+     Specjalną funkcję PE łni tutaj jest klasą `StubIStockFeed`. Dla każdego interfejsu w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę zastępczą. Nazwa klasy wycinka jest tworzony na podstawie nazwy interfejsu, za pomocą "`Fakes.Stub`" jako prefiksem i dołączonymi nazwami typu parametru.  
   
      Wycinki kodu są generowane także dla metod pobierających i ustawiających właściwości, dla zdarzeń i metod ogólnych. Aby uzyskać więcej informacji, zobacz [stosowanie wycinków kodu do izolowania poszczególnych części aplikacji od siebie nawzajem testów jednostkowych](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   

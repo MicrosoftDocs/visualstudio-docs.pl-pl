@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513403"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160143"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -60,21 +60,21 @@ Metody rozszerzające użyj ikony innego niż metody wystąpienia. Podręcznik i
 
 Funkcja IntelliSense usuwa zbędnych członków z listy uzupełniania przy użyciu filtrów. C# filtry listy uzupełniania, które są wyświetlane dla tych elementów:
 
-- **Podstawowej klasy i interfejsy**: funkcja IntelliSense automatycznie usuwa elementy z interfejsu i podstawowej klasy listy uzupełniania, w deklaracji klasy podstawowe i interfejs listy i listy ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ nie można używać wyliczenia dla klas podstawowych. Na liście uzupełniania klas bazowych zawiera tylko interfejsów i przestrzeni nazw. Jeśli wybierz element na liście, a następnie wpisz przecinek, IntelliSense usuwa klas bazowych z listy uzupełniania, ponieważ C# nie obsługuje dziedziczenie wielokrotne. Takie samo zachowanie występuje także klauzule ograniczenia.
+- **Podstawowej klasy i interfejsy**: Funkcja IntelliSense automatycznie usuwa elementy z interfejsu i podstawowej klasy listy uzupełniania, w deklaracji klasy podstawowe i interfejs listy i listy ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ nie można używać wyliczenia dla klas podstawowych. Na liście uzupełniania klas bazowych zawiera tylko interfejsów i przestrzeni nazw. Jeśli wybierz element na liście, a następnie wpisz przecinek, IntelliSense usuwa klas bazowych z listy uzupełniania, ponieważ C# nie obsługuje dziedziczenie wielokrotne. Takie samo zachowanie występuje także klauzule ograniczenia.
 
-- **Atrybuty**: po zastosowaniu atrybutu do typu, na liście uzupełniania jest filtrowana, tak aby lista zawiera tylko tych typów, które jest elementem podrzędnym elementu przestrzeni nazw, które zawierają te typy, takie jak <xref:System.Attribute>.
+- **Atrybuty**: Po zastosowaniu atrybutu do typu, na liście uzupełniania jest filtrowana, tak aby lista zawiera tylko tych typów, które jest elementem podrzędnym elementu przestrzeni nazw, które zawierają te typy, takie jak <xref:System.Attribute>.
 
 - **Klauzule catch**
 
-- **Inicjatory obiektów**: tylko składowe, które mogą być inicjowane pojawi się na liście uzupełniania.
+- **Inicjatory obiektów**: Tylko elementy członkowskie, które mogą być inicjowane pojawi się na liście uzupełniania.
 
-- **New — słowo kluczowe**: podczas wpisywania `new` , a następnie naciśnij klawisz **miejsca**, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodzie.
+- **New — słowo kluczowe**: Podczas wpisywania `new` , a następnie naciśnij klawisz **miejsca**, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodzie.
 
-- **Enum — słowo kluczowe**: po naciśnięciu klawisza **miejsca** po znaku równości przydziału wyliczenia, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania po wpisaniu słowo kluczowe, które są zwracane, a po wprowadzeniu deklaracji.
+- **Enum — słowo kluczowe**: Po naciśnięciu klawisza **miejsca** po znaku równości przydziału wyliczenia, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania po wpisaniu słowo kluczowe, które są zwracane, a po wprowadzeniu deklaracji.
 
-- **jako operatorów i is**: listy filtrowane zakończenia jest wyświetlany automatycznie po naciśnięciu klawisza **miejsca** po wpisaniu `as` lub `is` — słowo kluczowe.
+- **jako operatorów i is**: Listy uzupełniania filtrowane jest wyświetlany automatycznie po naciśnięciu klawisza **miejsca** po wpisaniu `as` lub `is` — słowo kluczowe.
 
-- **Zdarzenia**: podczas wpisywania słowa kluczowego `event`, na liście uzupełniania zawiera tylko typy delegatów.
+- **Zdarzenia**: Podczas wpisywania słowa kluczowego `event`, na liście uzupełniania zawiera tylko typy delegatów.
 
 - **Parametr pomocy** automatycznie sortuje do pierwsze przeciążenie metody, zgodny z parametrami, podczas ich wprowadzania. Jeśli wiele przeciążeń metody są dostępne, możesz użyć pracy i naciśnij strzałkę, aby przejść do następnego przeciążenia możliwe na liście.
 
@@ -116,7 +116,7 @@ Implementuj interfejs generuje minimalną liczbę wycinków — metoda, które s
 
 Technologia IntelliSense zawiera opcję, aby pomóc w zaimplementowaniu członkowie abstrakcyjną klasę bazową automatycznie podczas pracy w edytorze kodu. Zazwyczaj do zaimplementowania elementów członkowskich abstrakcyjną klasę bazową wymaga, tworząc nową definicję metody dla każdej metody abstrakcyjnej klasy bazowej w klasie pochodnej. Przy użyciu technologii IntelliSense po wpisaniu nazwę abstrakcyjną klasę bazową w deklaracji klasy, **szybkie akcje** jest wyświetlana ikona żarówki. Żarówki zapewnia możliwość implementacji metody klasy bazowej automatycznie.
 
-Wycinki metody, które są generowane przez **abstrakcyjna klasa bazowa implementacji** funkcji są modelowane przez fragment kodu, zdefiniowane w pliku *MethodStub.snippet*. Fragmenty kodu pochodzą można modyfikować. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md).
+Wycinki metody, które są generowane przez **abstrakcyjna klasa bazowa implementacji** funkcji są modelowane przez fragment kodu, zdefiniowane w pliku *MethodStub.snippet*. Fragmenty kodu pochodzą można modyfikować. Aby uzyskać więcej informacji, zobacz [instruktażu: Utwórz fragment kodu](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generowanie na podstawie użycia
 
@@ -165,4 +165,4 @@ Jeśli użytkownik naciśnie klawisz **kartę**, zastępczych metodę o prawidł
 ## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)

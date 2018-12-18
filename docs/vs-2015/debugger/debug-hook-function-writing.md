@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debugging [CRT], debug hook functions
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4439b3c308a3c76172b0de4aa5c8a95f92092c5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 47cd3d42639785290f26d7acbbad15cd948b4f51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218988"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735527"
 ---
 # <a name="debug-hook-function-writing"></a>Pisanie debugowanie funkcji punktów zaczepienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

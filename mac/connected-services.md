@@ -4,13 +4,13 @@ description: Dodaj magazyn danych na platformie Azure, uwierzytelnianie i powiad
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.date: 11/06/2018
+ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624362"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948949"
 ---
 # <a name="connected-services-walkthrough"></a>Połączone usługi wskazówki
 
@@ -18,8 +18,7 @@ Podłączone usługi przepływu pracy umożliwia Azure portal przepływu pracy w
 
 W tym instruktażu przedstawiono sposób dodawania usługi zaplecza platformy Azure, który udostępnia magazyn danych w chmurze, uwierzytelnianie i powiadomienia wypychane do aplikacji platformy Xamarin.Forms biblioteki klas przenośnych (PCL) dla wielu platform.
 
-
-1.  Uruchomić przez dwukrotne kliknięcie **podłączone usługi** węzła w rozwiązaniu, które zostanie wyświetlone okno **galerii usługi**.
+1. Uruchomić przez dwukrotne kliknięcie **podłączone usługi** węzła w rozwiązaniu, co umożliwia wyświetlenie **galerii usługi**.
   To jest lista usług dostępnych dla typu aplikacji. Wybierz usługę (takie jak **zaplecza aplikacji mobilnych w usłudze Azure App Service**), klikając ją.
 
     [![Połączone węzła usług w programie Visual Studio dla komputerów Mac](media/connected-services-image001-sml.png "węzła usług połączonych programu Visual Studio dla komputerów Mac")](media/connected-services-image001.png#lightbox)
@@ -71,4 +70,8 @@ Nowa usługa wymaga następujących parametrów:
 -   **Grupa zasobów** — lub sposób organizowania wszystkich zasobów platformy Azure dla projektu. Opcja Użyj istniejącej lub utworzyć nowy. Jeśli jest to pierwszy usługi platformy Azure, Utwórz nową.
 -   **Plan usługi** — Określa lokalizację i koszt zasobów, które go używają. Opcja Użyj istniejącej lub utworzyć nowy. Jeśli jest to pierwszy usługi platformy Azure, użyj wartości domyślnej, jeden lub Utwórz nową (F1) w warstwie bezpłatna.
 
-Odwiedź stronę [dokumentacji usługi Azure App Service](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/) Aby uzyskać więcej informacji.
+Odwiedź stronę [dokumentacja usługi Mobile apps](/azure/app-service-mobile/) Aby uzyskać więcej informacji.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Połączone usługi (Visual Studio Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

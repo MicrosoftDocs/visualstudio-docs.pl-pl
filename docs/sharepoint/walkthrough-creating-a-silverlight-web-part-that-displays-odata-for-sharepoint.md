@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878189"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296115"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Przewodnik: Tworzenie składnika web part programu Silverlight, wyświetlającego dane OData dla programu SharePoint
   SharePoint 2010 udostępnia swoje dane listy za pomocą protokołu OData. W programie SharePoint usługi OData jest implementowany przez usługi RESTful ListData.svc. W tym instruktażu przedstawiono sposób tworzenia składnika web part programu SharePoint, na który jest hostem aplikacji Silverlight. Aplikacja Silverlight Wyświetla informacje o liście anons programu SharePoint przy użyciu ListData.svc. Aby uzyskać więcej informacji, zobacz [interfejsu REST w programie SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) i [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -71,7 +71,7 @@ ms.locfileid: "49878189"
   
 #### <a name="to-customize-the-silverlight-application"></a>Aby dostosować aplikację Silverlight
   
-1.  Dodaj odwołanie do zestawu do System.Windows.Data w aplikacji Silverlight. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+1.  Dodaj odwołanie do zestawu do System.Windows.Data w aplikacji Silverlight. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **odwołania**, a następnie wybierz **Dodaj odwołanie do usługi**.  
   

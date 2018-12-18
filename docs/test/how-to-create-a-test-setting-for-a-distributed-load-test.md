@@ -1,5 +1,5 @@
 ---
-title: Utwórz ustawienie testu dla rozproszonego testu obciążenia w programie Visual Studio
+title: Utwórz ustawienie testu dla testu obciążenia rozłożonego
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce0f2504741c0bc48df0245202cdf0eefee20f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816058"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063325"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Porady: Tworzenie ustawień testu dla testu obciążenia rozłożonego
 
 Konfigurowanie *ustawienia testu* dla testów obciążenia, dzięki czemu można rozprowadzić te testy na wielu komputerach przy użyciu agentów testowych i kontrolerów testów. Można również skonfigurować ustawienia testu do użycia *adapterów danych diagnostycznych*, które określają rodzaje danych, które mają być zbierane lub określają wpływ na maszyny testowe podczas uruchamiania testów obciążenia w programie Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Na przykład można użyć adaptera danych diagnostycznych programu ASP.NET Profiler do zbierania podział wydajność kodu. Ponadto adapterów danych diagnostycznych może służyć do symulacji wąskich gardeł na maszynie testowej lub zmniejszenie dostępnej pamięci systemowej.
 
@@ -128,7 +130,7 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
     |**Serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu Test:** ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie ma określonych specjalnych potrzeb zbierania informacji systemowych maszyny agenta testowego nie zawierają tej karty. **Uwaga:** nie zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane. <br /><br /> Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
     |**IntelliTrace:** można skonfigurować informacji diagnostycznych śledzenia, który jest przechowywany w pliku dziennika. Plik dziennika ma rozszerzenie *.tdlog*. Kiedy uruchamiasz test i krok testu zakończy się niepowodzeniem, można utworzyć usterkę. Plik dziennika, który zawiera śledzenia diagnostycznego jest automatycznie dołączany do tej usterki. Dane, które są zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. W tym dzienniku plików sesja lokalna może być odtworzona na innym komputerze. Zmniejsza to ryzyko, że błędu nie można odtworzyć.<br /><br /> Aby uzyskać więcej informacji, zobacz [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane i rejestrowane. Należy podjąć próbę używania karty IntelliTrace tylko w testach obciążenia, które nie trwają długo i nie używają wielu agentów testowych.|[Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Profiler ASP.NET:** można utworzyć ustawienie testu zawierające profilowania, ASP.NET, która zbiera dane dotyczące wydajności w aplikacji sieci web platformy ASP.NET.|Adapter danych diagnostycznych profilera ASP.NET profile proces Internet Information Services (IIS), dzięki czemu nie będą działać względem serwera wdrożeniowego sieci web. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym jest zasilany z usług IIS. Agent testowy nie będzie generować obciążenia, ale będzie wyłącznie agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Porady: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Dziennik zdarzeń:** można skonfigurować ustawienie testu w taki by obejmowało gromadzenie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Porady: Konfigurowanie zbierania zdarzeń dziennika przy użyciu ustawień testu](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Dziennik zdarzeń:** można skonfigurować ustawienie testu w taki by obejmowało gromadzenie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Porady: Konfigurowanie zbierania zdarzeń dziennika przy użyciu ustawień testu](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Emulacja sieci:** można określić, że chcesz umieścić sztuczne obciążenie sieciowe w badaniu, korzystając z ustawienia testu. Emulacja sieci ma wpływ na komunikację do i z komputera poprzez emulację szybkości połączenia określonej sieci, takich jak połączenie dodzwaniane. **Uwaga:** emulacji sieci nie można użyć do zwiększenia szybkości połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszanym profilu sieciowym Scenariusz testów obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informacje o systemie:** można skonfigurować ustawienie testu do uwzględnienia informacji o systemie o maszynach, na których jest uruchamiany moduł zbierający dane diagnostyczne i informacje o systemie. Informacje o systemie jest określony w wynikach testu przy użyciu ustawień testu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno agentów obciążenia, jak i badanego systemu.|Do zebrania tych informacji jest wymagana żadna konfiguracja.|
     |**Wpływ na testowanie:** może zbierać informacje o tym, jakie zastosowano metody kodu aplikacji po uruchomieniu przypadku testowego. Może to służyć razem ze zmianami w kodzie aplikacji poczynionymi przez deweloperów do określenia, który test miały wpływ te zmiany deweloperskie.|Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||

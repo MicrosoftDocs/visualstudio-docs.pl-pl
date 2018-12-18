@@ -17,12 +17,12 @@ ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a04b6b171cf2a0cf6a8759d56264c4d4201f681d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc70710ea0a811b75e6bad3098fbbc46dae0bd3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812416"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760762"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,21 +66,21 @@ public struct BP_RESOLUTION_LOCATION {
  [Tylko w języku C++] Symbol zastępczy.  
   
  `unionmember1`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
  `unionmember2`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
  `unionmember3`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
  `unionmember4`  
- [Tylko język C#] Zobacz uwagi na temat sposobu interpretacji.  
+ [C# tylko] Zobacz uwagi na temat sposobu interpretacji.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest elementem członkowskim [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) i [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.  
   
- [Tylko język C#] `unionmemberX` Elementy członkowskie są interpretowane zgodnie z poniższą tabelą. Szukaj w lewej kolumnie dla `bpType` następnie wartość na ustalenie, jakie każdy `unionmemberX` reprezentuje element członkowski i marshal `unionmemberX` odpowiednio. Zobacz przykład sposobu interpretowania tej struktury w języku C#.  
+ [C# tylko] `unionmemberX` Elementy członkowskie są interpretowane zgodnie z poniższą tabelą. Szukaj w lewej kolumnie dla `bpType` następnie wartość na ustalenie, jakie każdy `unionmemberX` reprezentuje element członkowski i marshal `unionmemberX` odpowiednio. Zobacz przykład sposobu interpretowania tej struktury w języku C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

@@ -1,22 +1,23 @@
 ---
 layout: LandingPage
-title: Profilowanie aplikacji z programem Visual Studio | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak za pomocą programu Visual Studio 2017 profilowanie wydajności aplikacji, usług i narzędzi w wybranym języku.
+title: Pomiaru wydajności aplikacji za pomocą profilowania | Dokumentacja firmy Microsoft
+description: Dowiedz się, jak używać programu Visual Studio 2017, profilowanie wydajności aplikacji, usług i narzędzi w wybranym języku.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267689"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065548"
 ---
-# <a name="profiling-in-visual-studio"></a>Profilowanie w programie Visual Studio
+# <a name="measure-app-performance-in-visual-studio"></a>Mierzyć wydajność aplikacji w programie Visual Studio
 
-Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie pamięć i użycie procesora CPU i inne problemy z poziomu aplikacji. Z tych narzędzi można gromadzone dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) wraz z upływem czasu, po uruchomieniu aplikacji w debugerze. Można wyświetlić stan aplikacji w różnych punktach w czasie wykonywania kodu. 
+Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi można zbierać dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) wraz z upływem czasu, po uruchomieniu aplikacji w debugerze. Można wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu. 
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -30,7 +31,7 @@ Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie p
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Przegląd funkcji profilera</h3>
+                        <h3>Przewodnik po funkcjach programu Profiler</h3>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@ Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie p
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Obejrzyj film narzędzia diagnostyczne</h3>
+                        <h3>Obejrzyj wideo na narzędzia diagnostyczne</h3>
                     </div>
                 </div>
             </div>
@@ -84,7 +85,7 @@ Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie p
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozpoczynanie pracy analizowanie danych użycia pamięci</h3>
+                        <h3>Rozpocznij Analizowanie użycia pamięci</h3>
                     </div>
                 </div>
             </div>
@@ -120,7 +121,7 @@ Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie p
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analizowanie użycia sieci (aplikacji platformy uniwersalnej systemu Windows)</h3>
+                        <h3>Analizowanie użycia sieci (aplikacje platformy uniwersalnej systemu Windows)</h3>
                     </div>
                 </div>
             </div>
@@ -138,7 +139,7 @@ Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie p
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analizowanie użycia procesora GPU (Direct3D)</h3>
+                        <h3>Analiza użycia procesora GPU (Direct3D)</h3>
                     </div>
                 </div>
             </div>
@@ -156,7 +157,7 @@ Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie p
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analiza zużycia energii (aplikacji platformy uniwersalnej systemu Windows)</h3>
+                        <h3>Analizowanie zużycia energii (aplikacje platformy uniwersalnej systemu Windows)</h3>
                     </div>
                 </div>
             </div>
@@ -174,7 +175,7 @@ Narzędzia profilowania i informacji diagnostycznych ułatwiają diagnozowanie p
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zobacz, co&#39;s nowego w narzędziach profilowania</h3>
+                        <h3>Zobacz, jak&#39;nowego w narzędziach profilowania</h3>
                     </div>
                 </div>
             </div>

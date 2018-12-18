@@ -14,42 +14,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d58a364daf2a7556a790f34b58433541839146
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d3223e5ed1fedff174ccc40149449d8f2a4b70f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672475"
 ---
 # <a name="assembly-information-dialog-box"></a>Informacje o zestawie — Okno dialogowe
-**Informacji o zestawie** okno dialogowe służy do określania wartości [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] GAC atrybuty, które są przechowywane w pliku AssemblyInfo tworzone automatycznie w projekcie. W **Eksploratora rozwiązań**, plik znajduje się w **mój projekt** w węźle [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (kliknij **Pokaż wszystkie pliki** aby go wyświetlić); znajduje się w obszarze  **Właściwości** w [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Aby uzyskać więcej informacji na temat atrybutów zestawu, zobacz [atrybutów](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
+**Informacje o zestawie** okno dialogowe służy do określania wartości [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] globalnej atrybuty, które są przechowywane w pliku AssemblyInfo tworzone automatycznie w projekcie. W **Eksploratora rozwiązań**, plik znajduje się w **mój projekt** w węźle [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (kliknij **Pokaż wszystkie pliki** do jego wyświetlania); znajduje się w obszarze  **Właściwości** w [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Aby uzyskać więcej informacji na temat atrybutów zestawu, zobacz [atrybuty](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
 
- Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** zostanie wyświetlony, kliknij przycisk **aplikacji** kartę. Na **aplikacji** kliknij przycisk **informacji o zestawie** przycisku.
+ Aby otworzyć to okno dialogowe, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **aplikacji** kartę. Na **aplikacji** kliknij **informacje o zestawie** przycisku.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- **Tytuł** Określa tytuł dla manifest zestawu. Odpowiada <xref:System.Reflection.AssemblyTitleAttribute>.
+ **Tytuł** Określa tytuł manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyTitleAttribute>.
 
- **Opis elementu** określa opcjonalny opis dla manifest zestawu. Odpowiada <xref:System.Reflection.AssemblyDescriptionAttribute>.
+ **Opis** określa opcjonalny opis do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyDescriptionAttribute>.
 
- **Firmy** Określa nazwę firmy dla manifest zestawu. Odpowiada <xref:System.Reflection.AssemblyCompanyAttribute>.
+ **Firma** Określa nazwę firmy na potrzeby manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyCompanyAttribute>.
 
- **Produkt** Określa nazwę produktu dla manifest zestawu. Odpowiada <xref:System.Reflection.AssemblyProductAttribute>.
+ **Produkt** Określa nazwę produktu do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyProductAttribute>.
 
- **Praw autorskich** określa informacje o prawach autorskich dla manifest zestawu. Odpowiada <xref:System.Reflection.AssemblyCopyrightAttribute>.
+ **O prawach autorskich** określa informacje o prawach autorskich do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyCopyrightAttribute>.
 
- **Znak towarowy** określa znak towarowy dla manifest zestawu. Odpowiada <xref:System.Reflection.AssemblyTrademarkAttribute>.
+ **Znak towarowy** określa znakiem towarowym firmy do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyTrademarkAttribute>.
 
- **Wersja zestawu** Określa wersję zestawu. Odpowiada <xref:System.Reflection.AssemblyVersionAttribute>.
+ **Wersja zestawu** Określa wersję zestawu. Odnosi się do <xref:System.Reflection.AssemblyVersionAttribute>.
 
- **Wersja pliku** numer wersji, który nakazuje kompilatorowi używanie określonej wersji dla zasobu wersji pliku Win32. Odpowiada <xref:System.Reflection.AssemblyFileVersionAttribute>.
+ **Wersja pliku** Określa numer wersji, która instruuje kompilator, aby użyć określonej wersji dla zasobu wersji pliku systemu Win32. Odnosi się do <xref:System.Reflection.AssemblyFileVersionAttribute>.
 
- **Identyfikator GUID** Unikatowy identyfikator GUID, który identyfikuje zestaw. Podczas tworzenia projektu Visual Studio generuje identyfikator GUID dla zestawu. Odpowiada <xref:System.Guid>.
+ **Identyfikator GUID** Unikatowy identyfikator GUID, który identyfikuje zestaw. Podczas tworzenia projektu Visual Studio generuje identyfikator GUID dla zestawu. Odnosi się do <xref:System.Guid>.
 
- **Język neutral** Określa, które obsługuje zestaw kultury. Odpowiada <xref:System.Resources.NeutralResourcesLanguageAttribute>. Wartość domyślna to **(Brak)**.
+ **Niezależny od języka** Określa, które obsługuje zestaw kultury. Odnosi się do <xref:System.Resources.NeutralResourcesLanguageAttribute>. Wartość domyślna to **(Brak)**.
 
- **Wprowadź zestawu widoczny dla modelu COM** Określa, czy typów w zestawie będzie dostępny do modelu COM. Odpowiada <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+ **Wprowadź zestawu widoczne dla modelu COM** Określa, czy typy w zestawie będzie dostępna dla modelu COM. Odnosi się do <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Strona aplikacji, Projektant projektu (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
-- [Atrybuty](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+- [Atrybuty](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -21,27 +21,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de743aa67b3875654dee1b13b27a74e208bb6d53
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475006"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257087"
 ---
-# <a name="how-to-edit-a-register-value"></a>Porady: edytowanie wartości rejestru
-Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie poziomie adresu jest włączone w **opcje** okno dialogowe **debugowanie** węzła.  
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Porady: Edytowanie wartości rejestru (C#, C++, Visual Basic F#)
+
+Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła.  
   
 ### <a name="to-change-the-value-of-a-register"></a>Aby zmienić wartość rejestru  
   
-1.  W **rejestruje** okna, użyj klawisza TAB lub mysz, aby przenieść wstawiania wskaż wartość ma zostać zmieniony. Po rozpoczęciu wpisywania kursor musi znajdować się przed wartością, którą chcesz zastąpić.  
+1.  W **rejestruje** okna, użyj klawisza TAB lub myszy do wstawiania wskaż wartość, aby zmienić. Po rozpoczęciu wpisywania kursor musi znajdować się przed wartością, którą chcesz zastąpić.  
   
 2.  Wpisz nową wartość.  
   
     > [!CAUTION]
-    >  Zmiana wartości rejestru (szczególnie w rejestrach element EIP i EBP) mogą wpływać na wykonywanie programów.  
+    >  Zmiana wartości rejestru (szczególnie w rejestrach EIP i EBP) może wpłynąć na działanie programu.  
   
     > [!CAUTION]
-    >  Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza nieścisłości z powodu konwersji decimal-binary ułamkowych składników. Nawet pozornie nieszkodliwe edycji może spowodować zmianę niektórych najmniej znaczących bitów w rejestrze zmiennoprzecinkowych.  
+    >  Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych najmniej znaczące bity w rejestrze zmiennoprzecinkowych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
+ [Instrukcje: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

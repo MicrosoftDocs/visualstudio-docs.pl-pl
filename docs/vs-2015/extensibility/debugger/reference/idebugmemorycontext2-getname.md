@@ -18,12 +18,12 @@ ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af912af991e362054ffe86ba64fd81d65eb4a51c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 390916de9ffb696c4e7cba86799d23a844c9f578
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812923"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816583"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pobiera użytkownika zawiera nazwę dla tego kontekstu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT GetName(   
+HRESULT GetName(   
    BSTR* pbstrName  
 );  
 ```  

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef8b0abf2ed09a11dfacb80c5560413419dac2cb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7e86f07d0806f6ce5873cd91b68b4b32d58f4e6
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180090"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220700"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Updatemanifestforbrowserapplication — zadanie
 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Zadanie zostanie uruchomione, aby dodać  **\<hostInBrowser / >** elementu w manifeście aplikacji (*\<nazwa_projektu >. exe.manifest*) podczas [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] Projekt został skompilowany.  
@@ -38,7 +38,7 @@ ms.locfileid: "39180090"
 |`HostInBrowser`|Wymagane **logiczna** parametru.<br /><br /> Określa, czy należy zmodyfikować manifest aplikacji, aby uwzględnić  **\<hostInBrowser / >** elementu. Jeśli **true**, nowy  **\<hostInBrowser / >** element znajduje się w  **\<punktu wejścia / >** elementu. Włączenie elementu jest zbiorcza: Jeśli  **\<hostInBrowser / >** element już istnieje, nie jest usunięte, lub zastąpione. Zamiast tego dodatkowe  **\<hostInBrowser / >** zostanie utworzony element. Jeśli **false**, manifestu aplikacji nie jest modyfikowana.|  
   
 ## <a name="remarks"></a>Uwagi  
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] są uruchamiane przy użyciu [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] wdrażania, dlatego należy je opublikować z pomocniczymi manifesty wdrażania i aplikacji. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] używa [generateapplicationmanifest —](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) zadania, aby wygenerować manifest aplikacji.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] są uruchamiane przy użyciu [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] wdrażania, dlatego należy je opublikować z pomocniczymi manifesty wdrażania i aplikacji. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] używa [generateapplicationmanifest —](generateapplicationmanifest-task.md) zadania, aby wygenerować manifest aplikacji.  
   
  Następnie, aby skonfigurować aplikacje hostowane w przeglądarce, dodatkowy  **\<hostInBrowser / >** element musi zostać dodany do manifestu aplikacji, jak pokazano w poniższym przykładzie:  
   

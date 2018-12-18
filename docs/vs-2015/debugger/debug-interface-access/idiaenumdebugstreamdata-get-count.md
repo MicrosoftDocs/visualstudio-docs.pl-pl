@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumDebugStreamData::get_Count method
 ms.assetid: 74ff3a85-3cc2-4aa8-ad9a-7f335b795ed1
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63c98d7b29227f7061dceb8971936e84f1ff9c50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f542a1592644a6e42513b94386d0135078c51bf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860737"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801319"
 ---
 # <a name="idiaenumdebugstreamdatagetcount"></a>IDiaEnumDebugStreamData::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pobiera rekordy w strumieniu danych debugowania.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

@@ -17,17 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f2c306876451ef13977fb9237d96da66bd069bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635287"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295218"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Uzyskaj wprowadzenie (rozwój SharePoint w programie Visual Studio)
   Ta sekcja pomoże Ci rozpocząć pracę z usługą [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwiające tworzenie rozwiązań programu SharePoint, które wykorzystują [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Aby uzyskać informacji na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [programu SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) i [dodatków programu SharePoint z kompilacji](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).
+ Aby uzyskać informacji na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [programu SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) i [dodatków programu SharePoint z kompilacji](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  Program SharePoint oferuje platformy współpracy opartej na sieci Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zawiera wiele szablonów do tworzenia witryn programu SharePoint oraz zawartość, w tym definicje list, przepływów pracy, modeli usługi łączności danych biznesowych i definicje witryn projektów. Ponadto można utworzyć rozszerzenia dla projektów programu SharePoint i narzędzi w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 

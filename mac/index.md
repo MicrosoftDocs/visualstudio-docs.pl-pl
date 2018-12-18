@@ -3,14 +3,14 @@ title: Wprowadzenie do programu Visual Studio dla komputerów Mac
 description: W tym artykule przedstawiono funkcje programu Visual Studio dla komputerów Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: b04b670be5c56811be2e6ee1ea9dad28677a35e7
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624044"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895681"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Wprowadzenie do programu Visual Studio dla komputerów Mac
 
@@ -26,13 +26,16 @@ Zawiera funkcje, takie jak Zaawansowany edytor, debugowanie, platformy natywnej 
 
 W tym artykule badań różnych części programu Visual Studio dla komputerów Mac i zawiera funkcje, które ułatwiają zaawansowane narzędzie do tworzenia aplikacji dla wielu platform.
 
+> [!TIP]
+> Visual Studio 2019 r dla komputerów Mac w wersji zapoznawczej jest teraz dostępny do testowania. Postępuj zgodnie z tymi [instrukcje dotyczące instalacji](install-preview.md) i zapoznaj się z [samouczek środowiska IDE](ide-tour.md).
+
 ## <a name="installation"></a>Instalacja
 
-Postępuj zgodnie z instrukcjami w [instalacji](installation.md) przewodnika, aby pobrać i zainstalować program Visual Studio dla komputerów Mac.
+Postępuj zgodnie z instrukcjami w [instalacji](install-preview.md) przewodnika, aby pobrać i zainstalować program Visual Studio dla komputerów Mac.
 
 ## <a name="language-support"></a>Obsługa języków
 
-Domyślnie program Visual Studio for Mac obsługuje programowanie w języku C# i F #.
+Program Visual Studio dla komputerów Mac obsługuje programowanie w C# i F#, domyślnie.
 
 ### <a name="c"></a>C#
 
@@ -40,7 +43,7 @@ C# jest językiem najczęściej używane do tworzenia aplikacji dla wielu platfo
 
 ### <a name="f"></a>F#
 
-F # to silnie typizowane funkcjonalny język programowania przeznaczony do działania na platformie .NET. Jest ona dostępna jako języka programowania do programu Visual Studio dla użytkowników komputerów Mac w systemach Android, Mac i iOS. Aby uzyskać więcej informacji na temat korzystania z F # i wyświetlić przykłady utworzone w języku, odwiedź stronę [F #](https://developer.xamarin.com/guides/cross-platform/fsharp/) przewodników.
+F#jest silnie typizowane funkcjonalny język programowania przeznaczony do uruchamiania na platformie .NET. Jest ona dostępna jako języka programowania do programu Visual Studio dla użytkowników komputerów Mac w systemach Android, Mac i iOS. Aby uzyskać więcej informacji na temat korzystania z F# i aby wyświetlić przykłady utworzone w języku, odwiedź stronę [ F# ](https://developer.xamarin.com/guides/cross-platform/fsharp/) przewodników.
 
 ## <a name="platform-support"></a>Obsługa różnych platform
 
@@ -106,7 +109,7 @@ Aby rozpocząć, zapoznaj się z aparatu Unity [laboratorium praktycznego](https
 
 Profiler Xamarin ma trzy instrumenty dostępny do profilowania. [Wprowadzenie do platformy Xamarin Profiler](https://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/xamarin-profiler/) przewodnik przedstawiono te dokumenty pomiaru i sposób ich analizowania aplikacji i wyjaśnia znaczenie danych prezentowanych na każdym ekranie.
 
-### <a name="inspector"></a>Inspektor
+### <a name="inspector"></a>Inspector
 
 Narzędzia Xamarin Inspector udostępnia interaktywną konsolę C# za pomocą narzędzi użytkownika. Może służyć jako pomoc w debugowaniu lub diagnostyce podczas inspekcji aplikacji na żywo, jako narzędzie nauczania, jako narzędzie dokumentacji lub eksperymentowanie w usłudze.
 

@@ -1,5 +1,6 @@
 ---
-title: Praca z samouczek języka Python, krok 1, Utwórz projekt
+title: Język Python w programie Visual Studio — samouczek krok 1, Utwórz projekt
+titleSuffix: ''
 description: Przegląd i krok 1 core Przewodnik po funkcji języka Python w programie Visual Studio, w tym wymagania wstępne i tworzenia nowego projektu języka Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220085"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049857"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z językiem Python w programie Visual Studio
 

@@ -5,12 +5,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c7ae7fb3a2b96efc7ad4009f584baba6b80f66da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894680"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294308"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Rozszerzanie programu Visual Studio dla komputerów Mac wskazówki
 
@@ -135,3 +135,7 @@ W tym przykładzie użyto twórcę dodatku. Twórca dodatku utworzenie nowego sz
 15. Na koniec uruchom naszego pakietu rozszerzenia do testowania. W wystąpieniu programu Visual Studio dla komputerów Mac, wybierz **Edytuj > Wstaw datę**. Bieżącą datę i godzinę, zostanie wstawione w naszej daszka, jak pokazano na poniższym zrzucie ekranu:
 
     ![Wstaw datę zrzut ekranu](media/extending-visual-studio-mac-addin12.png)
+
+## <a name="see-also"></a>Zobacz także
+
+- [Tworzenie pierwszego rozszerzenia (Visual Studio Windows)](/visualstudio/extensibility/extensibility-hello-world)

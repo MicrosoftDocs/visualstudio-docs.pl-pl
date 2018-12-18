@@ -20,15 +20,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 623f4e8a8a2f6e275c42507aa3839106f3a1dd2f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: a5778cb281ca6edcf8045620aee049b0f115a50a
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704489"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948247"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
-Określa plik do przechowywania i wyświetlania błędów podczas uruchamiania, utworzyć, odbudować lub wdrożyć rozwiązanie.
+Określa plik do przechowywania i wyświetlania błędów podczas uruchamiania, tworzenia, odbudować lub wdrożyć rozwiązanie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,12 +39,12 @@ devenv /out FileName
 ## <a name="arguments"></a>Argumenty
  `FileName`
 
- Wymagana. Ścieżka i nazwa pliku do odbierania błędy podczas kompilowania pliku wykonywalnego.
+ Wymagana. Ścieżka i nazwa pliku, aby otrzymywać komunikaty o błędach podczas kompilowania pliku wykonywalnego.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli określono nazwę pliku, który nie istnieje, plik jest tworzony automatycznie. Jeśli plik już istnieje, wyniki są dołączane do istniejącej zawartości pliku.
+ Jeśli określono nazwę pliku, który nie istnieje, plik zostanie utworzony automatycznie. Jeśli plik już istnieje, wyniki są dołączane do istniejącej zawartości pliku.
 
- Błędy kompilacji wiersza polecenia są wyświetlane w **polecenia** okno i konstruktora rozwiązania widok **dane wyjściowe** okna. Ta opcja jest przydatna, jeśli są uruchomione nienadzorowanej kompilacji i powinny być wyświetlane wyniki.
+ Błędy kompilacji wiersza polecenia są wyświetlane w **polecenia** okna i konstruktora rozwiązania widoku **dane wyjściowe** okna. Ta opcja jest przydatna, jeśli działają nienadzorowanej kompilacji i chcesz zobaczyć wyniki.
 
 ## <a name="example"></a>Przykład
  W tym przykładzie jest uruchamiany `MySolution` i zapisuje błędy do pliku `MyErrorLog.txt`.
@@ -56,7 +56,7 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
 ## <a name="see-also"></a>Zobacz też
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/ Uruchom (devenv.exe)](../../ide/reference/run-devenv-exe.md)
-- [/ Kompilacji (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
+- [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/ Wdróż (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+- [/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

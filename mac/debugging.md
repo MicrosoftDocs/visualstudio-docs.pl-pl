@@ -6,23 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 66f7b33c944ced6ab662cf8e89341be6d7a2fb8b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624389"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295296"
 ---
 # <a name="debugging-with-xamarin"></a>Debugowanie za pomocą platformy Xamarin
 
-
 Visual Studio dla komputerów Mac ma debuger natywny umożliwiająca obsługę debugowania dla aplikacji platformy Xamarin.iOS, Xamarin.Mac i projektami interfejsu Xamarin.Android.
+
 Program Visual Studio for Mac używa [ *nietrwałego debugera Mono*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), którego jest stosowana do środowiska uruchomieniowego Mono, co program Visual Studio for Mac można debugować kodu zarządzanego na wszystkich platformach.
 
 ## <a name="the-debugger"></a>Debuger
 
-Program Visual Studio for Mac używa nietrwałego debugera Mono do debugowania kodu zarządzanego (C# lub F #) we wszystkich aplikacjach platformy Xamarin. Debugera Mono nietrwałego różni się od zwykłych debugery, jest debugera współpracy, która jest wbudowana w środowiska uruchomieniowego Mono; wygenerowany kod i środowiska uruchomieniowego Mono współpracować ze środowiskiem IDE, aby zapewnić środowisko debugowania. Środowisko uruchomieniowe Mono uwidacznia funkcje debugowania przy użyciu protokołu o komunikacji sieciowej, której możesz przeczytać więcej na temat [w dokumentacji platformy Mono](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
-
+Program Visual Studio dla komputerów Mac używa nietrwałego debugera Mono do debugowania zarządzanego (C# lub F#) kodu we wszystkich aplikacjach platformy Xamarin. Debugera Mono nietrwałego różni się od zwykłych debugery, jest debugera współpracy, która jest wbudowana w środowiska uruchomieniowego Mono; wygenerowany kod i środowiska uruchomieniowego Mono współpracować ze środowiskiem IDE, aby zapewnić środowisko debugowania. Środowisko uruchomieniowe Mono uwidacznia funkcje debugowania przy użyciu protokołu o komunikacji sieciowej, której możesz przeczytać więcej na temat [w dokumentacji platformy Mono](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Twarde debugery, takich jak [LLDB]( http://lldb.llvm.org/index.html) lub [GDB]( https://www.gnu.org/software/gdb/), sterowania programem bez wiedzy lub współpracy z debugowanym programem, ale nadal może być przydatne podczas debugowania aplikacji platformy Xamarin w zdarzeniu, trzeba debugowania natywnych dla systemów iOS, lub kodu dla systemu Android.
 
@@ -38,11 +37,9 @@ Aby ustawić punkt przerwania w środowisku IDE, kliknij obszar margines edytora
 
 ![Ustawianie punktu przerwania na marginesie](media/debugging-image0.png)
 
-
 Możesz wyświetlić wszystkie punkty przerwania, które zostały ustawione w kodzie, przechodząc do **Konsola punktów przerwania**:
 
 ![Lista punktów przerwania](media/debugging-image0a.png)
-
 
 ## <a name="start-debugging"></a>Rozpocznij debugowanie
 
@@ -62,17 +59,13 @@ Debugowanie z narzędziami, takimi jak użytym do sprawdzenia wartości obiektó
 
 Można również ustawić zasady dyktowanie okoliczności, w których powinny być wykonywane punkt przerwania, jest to nazywane Dodawanie *warunkowego punktu przerwania*. Aby ustawić warunkowego punktu przerwania, dostęp do **okna Właściwości punktu przerwania**, które można zrobić na dwa sposoby:
 
-
 * Aby dodać nowe warunkowego punktu przerwania, kliknij prawym przyciskiem myszy na marginesu edytora, numer wiersza dla kodu, który chcesz ustawić punkt przerwania, po lewej stronie, a następnie wybierz nowy punkt przerwania:
-
 
  ![Menu kontekstowe punktu przerwania](media/debugging-image4.png)
 
 * Aby dodać warunek istniejącym punkcie przerwania, kliknij prawym przyciskiem myszy punkt przerwania, a następnie wybierz pozycję **właściwości punktu przerwania**, lub w **Konsola punktów przerwania**, wybierz przycisk Edytuj punkt przerwania, przedstawiono poniżej:
 
-
  ![Edytuj istniejący punkt przerwania w konsoli punktów przerwania](media/debugging-image5.png)
-
 
 Następnie możesz wprowadzić warunek, pod którym ma punkt przerwania, wystąpienia:
 
@@ -91,12 +84,16 @@ Poniżej przedstawiono cztery przyciski:
 *   **Step Into** — spowoduje to również wykonanie następnego wiersza kodu. Jeśli następny wiersz jest wywołanie funkcji, Step Into przestanie w pierwszym wierszu funkcji, co pozwala na dalsze wiersz po wierszu debugowanie funkcji. Jeśli następny wiersz nie jest funkcją, będzie ona działać taka sama jak Step Over.
 *   **Step Out** — spowoduje to zwrócenie do wiersza gdy wywołana została funkcja bieżąca.
 
-
 ## <a name="debugging-monos-class-libraries"></a>Debugowanie biblioteki klas platformy Mono firmy
+
 Produkty platformy Xamarin są dostarczane z kodu źródłowego dla bibliotek klas firmy Mono i służy to do pojedynczego kroku z debugera, aby sprawdzić, jak wszystko działa pod maską.
 
 Ponieważ ta funkcja zużywa więcej pamięci podczas debugowania, jego jest domyślnie wyłączona.
 
 Aby włączyć tę funkcję, przejdź do **programu Visual Studio dla komputerów Mac > Preferencje > debuger** i upewnij się, że "**Debuguj tylko kod projektu nie wkraczaj do kodu struktury.** " opcja jest **niezaznaczone**, jak pokazano poniżej:
 
- ![Nie wkraczaj do framework kod — opcja](media/debugging-image8.png)
+![Nie wkraczaj do framework kod — opcja](media/debugging-image8.png)
+
+## <a name="see-also"></a>Zobacz także
+
+- [Debugowanie w programie Visual Studio (w Windows)](/visualstudio/debugger/)

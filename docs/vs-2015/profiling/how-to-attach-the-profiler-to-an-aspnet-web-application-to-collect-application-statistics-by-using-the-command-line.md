@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 caps.latest.revision: 38
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40f64b25b17143feb4b43b2305ee3e019f57b26f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8bed31651ca52097675c9584091b618ea8757192
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908135"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762430"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

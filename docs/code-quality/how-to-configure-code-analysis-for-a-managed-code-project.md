@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie analizy kodu w programie Visual Studio
+title: Konfigurowanie analizy kodu
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204235"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062425"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Porady: konfigurowanie analizy kodu dla projektu zarządzanego kodu
 

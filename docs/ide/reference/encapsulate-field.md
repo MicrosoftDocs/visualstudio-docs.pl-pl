@@ -1,5 +1,5 @@
 ---
-title: Refaktoryzuj pole do właściwości w programie Visual Studio
+title: Refaktoryzuj pole do właściwości
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942923"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049940"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Hermetyzuj pole refaktoryzacji
 

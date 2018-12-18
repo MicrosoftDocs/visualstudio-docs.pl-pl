@@ -1,0 +1,231 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 1027f1a8f8fbad0c236dd0c895fb82a969621ae4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048505"
+documentType: LandingData
+title: Tworzenie aplikacji na platformie Azure przy użyciu programu Visual Studio
+metadata:
+  title: Programowanie na platformie Azure
+  description: Samouczki i artykuły koncepcyjne dotyczące łączenia aplikacji i usług na platformie Azure i tworzenie usług systemu Azure.
+  author: ghogen
+  manager: douge
+  ms.prod: visual-studio-dev15
+  ms.technology: vs-azure
+  ms.topic: landing-page
+  ms.date: 10/09/2018
+  ms.author: ghogen
+  ms.custom: seodec18
+sections:
+- title: Publikowanie na platformie Azure
+  items:
+  - type: paragraph
+    text: Wdrażanie aplikacji na platformie Azure dla środowisk przejściowych lub produkcyjnych z programem Visual Studio lub konfigurowanie ciągłej integracji i ciągłego wdrażania (CI/CD).
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
+      title: Publikowanie aplikacji platformy ASP.NET Core na platformie Azure
+    - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_NET.svg
+      title: Publikowanie aplikacji sieci Web platformy ASP.NET na platformie Azure
+    - href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+      title: Publikowanie funkcji Azure Functions
+    - href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_octokitty.svg
+      title: Ciągłe wdrażanie na platformie Azure przy użyciu programu Visual Studio i Git
+    - href: /azure/devops/pipelines/get-started-yaml?view=vsts&viewFallbackFrom=aspnetcore-2.1
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/azure/devops/_img/index/DevOpsIconPipelines96.svg
+      title: Ciągłe wdrażanie na platformie Azure za pomocą usługi Azure Pipelines
+    - href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
+      title: Publikowanie aplikacji internetowej platformy ASP.NET na maszynie wirtualnej platformy Azure
+- title: Usługa Azure App Services i Azure Functions
+  items:
+  - type: paragraph
+    text: Samouczki dotyczące tworzenia aplikacji sieci web i funkcjom bezserwerowym hostowanych na platformie Azure
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
+      html: <p>Tworzenie i hostowanie aplikacji sieci web na platformie Azure</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AppService.svg
+      title: ASP.NET Core
+    - href: /azure/azure-functions/functions-develop-vs
+      html: <p>Przetwarzanie zdarzeń za pomocą kodu bezserwerowego</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+      title: Usługa Azure Functions
+    - href: https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_NET.svg
+      title: Zestaw Azure SDK dla platformy .NET i .NET Core deweloperów
+- title: Tworzenie kontenerów
+  items:
+  - type: paragraph
+    text: Programowanie za pomocą kontenerów platformy Docker, opublikuj na platformie Azure, Kubernetes i więcej.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_categorize.svg
+      text: Tworzenie kontenerów
+      href: /visualstudio/containers
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_docker.svg
+      text: Narzędzia aparatu docker w programie Visual Studio
+      href: /visualstudio/docker/vs-azure-tools-docker-setup
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
+      text: Narzędzia usługi Kubernetes
+      href: /visualstudio/deployment/tutorial-kubernetes-tools
+- title: Debugowanie i monitorowanie wydajności
+  items:
+  - type: paragraph
+    text: " Dowiedz się, jak debugowanie aplikacji na platformie Azure w celu monitorowania wydajności."
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /visualstudio/debugger/remote-debugging-azure
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
+      title: Debugowanie programu ASP.NET Core w usługach IIS na platformie Azure
+    - href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_debug.svg
+      title: Debugowanie usługi w chmurze na platformie Azure
+    - href: vs-azure-tools-debug-cloud-services-virtual-machines.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
+      title: Debugować aplikację uruchomioną na maszynie wirtualnej
+    - href: vs-azure-tools-performance-profiling-cloud-services.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_code-performance.svg
+      title: Zmierzyć wydajność dla usług w chmurze na platformie Azure
+- title: Połącz swoje aplikacje na platformie Azure przy użyciu programu Visual Studio podłączone usługi
+  items:
+  - type: paragraph
+    text: Szybko nawiązać połączenie projektu aplikacji lub usługi różnych usług platformy Azure przy użyciu programu Visual Studio podłączonych usług do automatycznego dodawania kodu połączenia i konfiguracji.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/Storage.svg
+      text: Azure Storage
+      href: vs-azure-tools-connected-services-storage.md
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/KeyVault.svg
+      text: Usługa Azure Key Vault
+      href: /azure/key-vault/vs-key-vault-add-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg
+      text: Azure Active Directory
+      href: /azure/active-directory/develop/vs-active-directory-add-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Cognitive Services
+      href: /visualstudio/azure/cognitive-services-connected-services
+- title: Usług Azure Cloud Services
+  items:
+  - type: paragraph
+    text: Usługi Azure Cloud Services to technologia ogólnego przeznaczenia do tworzenia ogólnego usług platformy Azure, dzięki dostępowi do usługi Azure storage i innych zasobów platformy Azure.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: vs-azure-tools-azure-project-create.md
+      html: <p>Tworzenie i konfigurowanie projektów usług w chmurze platformy Azure</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_config-tools.svg
+      title: Projekty
+    - href: vs-azure-tools-debugging-cloud-services-overview.md
+      html: <p>Debugowanie usług w chmurze, lokalnie i na platformie Azure</p>
+      image:
+        src: https://docs.microsoft.com//media/common/i_debug.svg
+      title: Debugowanie
+    - href: vs-azure-tools-performance-profiling-cloud-services.md
+      html: <p>Użyj programu Visual Studio profiler</p>
+      image:
+        src: https://docs.microsoft.com//media/common/i_code-performance.svg
+      title: Analizowanie wydajności
+    - href: vs-azure-tools-publishing-a-cloud-service.md
+      html: <p>Publikowanie usługi w chmurze na platformie Azure</p>
+      image:
+        src: https://docs.microsoft.com//media/common/i_deploy.svg
+      title: Publikowanie
+    - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
+      html: <p>Monitorowanie i diagnozowanie usług w chmurze i maszyn wirtualnych działających na platformie Azure</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_load-testing.svg
+      title: Diagnostyka
+- title: Praca z zasobami platformy Azure w programie Visual Studio
+  items:
+  - type: paragraph
+    text: Eksplorator chmury w programie Visual Studio oferuje wygodny sposób dostępu do zasobów platformy Azure, takich jak konta magazynu i maszyn wirtualnych.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
+      html: <p>Dostęp do konta magazynu platformy Azure w programie Visual Studio</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_dashboard.svg
+      title: Magazyn
+    - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
+      html: <p>Dostęp do maszyn wirtualnych w programie Visual Studio</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
+      title: Maszyny wirtualne
+- title: Inne zasoby programowanie na platformie Azure
+  items:
+  - type: paragraph
+    text: Z obciążeniem programowanie na platformie Azure, zainstalowane, Visual Studio zapewnia szablony projektu dla odmian projektów tej Włącz, których używasz Programowanie przy użyciu określonych usług platformy Azure.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/azure/azure-resource-manager/media/index/azure-resource-manager.svg
+      text: Grupa zasobów platformy Azure
+      href: https://docs.microsoft.com/azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/Azure-Data-Lake-Analytics-COLOR.svg
+      text: Usługa Data Lake Analytics
+      href: https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/StreamAnalytics.svg
+      text: Stream Analytics
+      href: https://docs.microsoft.com/azure/stream-analytics/stream-analytics-quick-create-vs
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/Fabric.svg
+      text: Usługa Service Fabric
+      href: https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started

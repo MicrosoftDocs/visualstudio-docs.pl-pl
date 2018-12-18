@@ -17,12 +17,12 @@ ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b76aca2c1bf5fa820f9bdf8278c93bf45dfdc9bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 877318c231cfb2ec06839c70b942940ca8ca6e39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814535"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720999"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Porównuje obiekt z tym obiektem.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT IsEqual(   
+HRESULT IsEqual(   
    IDebugObject* pObject,  
    BOOL*         pfIsEqual  
 );  

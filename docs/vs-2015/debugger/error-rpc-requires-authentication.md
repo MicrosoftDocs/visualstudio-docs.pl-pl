@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 88362b3b-8fbe-431f-96a4-80e2d822bbc7
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5643e815386541bb9045eb56cacbd68e7e9b998d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a693b8ad331bbee5a920b0853f43ba521de2a105
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193839"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806805"
 ---
 # <a name="error-rpc-requires-authentication"></a>Błąd: RPC wymaga uwierzytelnienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

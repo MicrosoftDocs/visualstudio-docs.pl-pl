@@ -1,22 +1,23 @@
 ---
 title: Szablon projektów internetowych Django dla języka Python
-description: Przegląd szablonów programu Visual Studio dla aplikacji sieci web napisanych w języku Python przy użyciu platformy Django.
-ms.date: 07/03/2018
+description: Visual Studio zapewniają kompleksowego szablonu do szybkiego tworzenia aplikacji sieci web Django przy użyciu języka Python.
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100968"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066525"
 ---
 # <a name="django-web-project-template"></a>Szablon projektów internetowych Django
 
@@ -50,19 +51,19 @@ W konsoli zarządzania Django odbywa się za pośrednictwem różnych poleceń n
 
 - **Otwórz powłokę Django**: otwiera powłokę w kontekście swojej aplikacji, która umożliwia Ci manipulowanie swoimi modelami:
 
-    ![Konsola](media/template-django-console-shell.png)
+    ![Wyniki polecenia Otwórz powłokę Django](media/template-django-console-shell.png)
 
 - **Baza danych synchronizacji Django**: wykonuje `manage.py syncdb` w **Interactive** okna:
 
-    ![Konsola](media/template-django-console-sync-db.png)
+    ![Wynik użycia polecenia Baza danych synchronizacji Django](media/template-django-console-sync-db.png)
 
 - **Zbieraj statyczne**: wykonuje `manage.py collectstatic --noinput` do skopiowania wszystkich plików statycznych w ścieżce określonej przez `STATIC_ROOT` w swojej *settings.py*.
 
-    ![Konsola](media/template-django-console-collect-static.png)
+    ![Wynik użycia polecenia zbieranie statyczne](media/template-django-console-collect-static.png)
 
 - **Sprawdź poprawność**: wykonuje `manage.py validate`, który zgłasza wszelkie błędy sprawdzania poprawności zainstalowanych modeli określonego przez `INSTALLED_APPS` w Twojej *settings.py*:
 
-    ![Konsola](media/template-django-console-validate.png)
+    ![Wynik użycia polecenia sprawdzania poprawności](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Zobacz także
 

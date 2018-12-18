@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830954"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771531"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,15 +122,15 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
 1.  W TWTestCommandPackageGuids.cs Dodaj identyfikatory poleceń menu trzech elementów po poleceniu istniejących identyfikatorów.  
   
     ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
 2.  W TWTestCommand.cs Dodaj następujący kod w górnej części klasy TWTestCommand.  
   
     ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  W Konstruktorze TWTestCommand po ostatnim wywołaniu `AddCommand` metody, Dodaj kod, aby kierować zdarzenia dla każdego polecenia za pomocą tej samej procedury obsługi.  
@@ -145,7 +145,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -157,7 +157,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
 4.  Dodaj program obsługi zdarzeń do klasy TWTestCommand, aby oznaczyć wybrane polecenie jako zaznaczone.  
   
     ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -170,7 +170,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
 5.  Dodaj program obsługi zdarzeń, która wyświetla komunikat MessageBox, gdy użytkownik wybierze polecenie na kontroler menu:  
   
     ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  

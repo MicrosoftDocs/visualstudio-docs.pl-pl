@@ -32,7 +32,7 @@ Języka Microsoft Visual C++ dla opracowywania aplikacji mobilnych składnika ob
 ### <a name="open-in-xcode"></a>Otwórz w programie XCode
  Aby otworzyć projekt w narzędziu XCode z programu Visual Studio na **maszyny zdalnej** podmenu, wybierz **Otwórz w programie XCode** można otworzyć wybranego projektu na sparowanym komputerze zdalnym. Serwer vcremote służy do środowiska XCode na komputerze Mac Otwórz i przejdź do katalogu tymczasowego, utworzony na komputerze Mac, który zawiera kopię projektu. Program Visual Studio pojawia się okno dialogowe, które zawiera katalog tymczasowy używany dla projektu. Akcje wykonywane na komputerze zdalnym są także wyświetlane w **dane wyjściowe** okna w programie Visual Studio. Aby je wyświetlić, konieczne może być wybierz **Visual C++ maszyny zdalnej** w **Pokaż dane wyjściowe z** listy rozwijanej w górnej części **dane wyjściowe** okna.
 
- ![W oknie danych wyjściowych zawiera akcje maszyny zdalnej. ] (../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
+ ![W oknie danych wyjściowych zawiera akcje maszyny zdalnej. ](../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
 
  Na komputerze Mac można użyć narzędzia XCode do edytowania kodu i zasobów, scenorysy i akcji. W programie Visual Studio projekt aplikacji systemu iOS jest oznaczony za pomocą "Otwarte w środowisku XCode" wskazują, że zmiany mogą być dokonywane na komputerze zdalnym. Po zakończeniu edycji ściąganie z lokalizacji zdalnej lub przyrostowe ściąganie z poleceń zdalnych można użyć do skopiowania zmiany do projektu programu Visual Studio.
 

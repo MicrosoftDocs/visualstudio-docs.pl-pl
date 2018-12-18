@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379641"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954087"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych innych firm
+# <a name="install-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych
 
 Visual Studio Test Explorer można uruchamiać dowolną jednostkę struktury testowej, która opracowała interfejs adapter dla Eksploratora. Program instalacyjny Framework instaluje pliki binarne i dodaje szablony projektu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowany w Eksploratorze testów. Rozwiązania programu Visual Studio może zawierać projektów testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków. Eksplorator testów wykonuje na nich wszystkich.
 
-## <a name="acquire-third-party-frameworks"></a>Uzyskiwanie struktur innych firm
+[MSTest](getting-started-with-unit-testing.md) to struktura testów, dostarczane przez program Visual Studio i jest domyślnie instalowany z programem Visual Studio.
 
-Można pobrać i zainstalować wiele platform testów jednostkowych innych firm, korzystając z Menedżera rozszerzeń programu Visual Studio lub z witryny Marketplace programu Visual Studio. Można również pobrać struktur w innych witrynach, takich jak witryny sieci Web Framework.
+## <a name="acquire-frameworks"></a>Uzyskiwanie struktur
+
+Możesz pobrać i zainstalować platform testów jednostkowych innych firm, korzystając z Menedżera rozszerzeń programu Visual Studio lub [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Można również pobrać struktur w innych witrynach, takich jak witryny sieci Web Framework.
 
 ### <a name="install-from-visual-studio"></a>Instalowanie za pomocą programu Visual Studio
 
@@ -64,7 +66,7 @@ Aktualizacja najnowszych adaptera testowego stabilny, aby lepiej testów odkrywa
 
 1. Otwórz Menedżera pakietów Nuget dla rozwiązania, przechodząc do **narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**.
 
-2. Kliknij pozycję **aktualizacje** kartę i wyszukaj NUnit czy xUnit testu kart, które są zainstalowane.
+2. Kliknij pozycję **aktualizacje** kartę i wyszukaj xUnit, MSTest i NUnit testu kart, które są zainstalowane.
 
 3. Wybierz kartę każdego testu, a następnie wybierz najnowszą stabilną wersję, w menu rozwijanym.
 

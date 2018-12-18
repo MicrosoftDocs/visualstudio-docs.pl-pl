@@ -1,7 +1,7 @@
 ---
 title: Użycie pomiar procesora CPU w twoich aplikacjach
 description: Analizuj problemy z wydajnością procesora CPU w aplikacji za pomocą narzędzia diagnostyczne zintegrowane z debugerem.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898242"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065765"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Wydajność aplikacji profilującej w programie Visual Studio
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Miara wydajności aplikacji, analizując użycie procesora CPU
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
   
 Gdy debuger zatrzymuje, **użycie procesora CPU** Narzędzie gromadzi informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonując pracę i zawiera wykres osi czasu, w którym można skupić się na poszczególnych segmentach sesji pobierania próbek.
@@ -69,7 +69,7 @@ W tym samouczku wykonasz następujące czynności:
 
      ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Aby uzyskać więcej informacji na temat zdarzeń, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
+     Aby uzyskać więcej informacji na temat zdarzeń, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6.  Uruchom scenariusz, który spowoduje, że pierwszy punkt przerwania na.
 

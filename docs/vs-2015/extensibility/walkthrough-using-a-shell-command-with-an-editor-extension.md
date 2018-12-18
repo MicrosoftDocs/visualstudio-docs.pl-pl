@@ -15,12 +15,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea320b18dc9164c0cbf87cbccf1c33ea7fab2230
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185591"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773044"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 4.  Ten plik powinien zawierać klasę o nazwie `CommentAdornment`.  
   
     ```  
-    internal class CommentAdornment  
+    internal class CommentAdornment  
     ```  
   
 5.  Dodaj trzy pola `CommentAdornment` klasy dla <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, autor i opis.  
@@ -168,9 +168,9 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     ```csharp  
     private Geometry textGeometry;  
     private Grid commentGrid;  
-    private static Brush brush;  
-    private static Pen solidPen;  
-    private static Pen dashPen;  
+    private static Brush brush;  
+    private static Pen solidPen;  
+    private static Pen dashPen;  
     ```  
   
 5.  Dodaj Konstruktor, który definiuje zakończeń komentarz, a następnie dodaje odpowiedni tekst.  
@@ -245,7 +245,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 6.  Także implementować <xref:System.Windows.Controls.Panel.OnRender%2A> program obsługi zdarzeń, który rysuje zakończeń.  
   
     ```csharp  
-    protected override void OnRender(DrawingContext dc)  
+    protected override void OnRender(DrawingContext dc)  
     {  
         base.OnRender(dc);  
         if (this.textGeometry != null)  
@@ -282,7 +282,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 4.  Implementowanie <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że wywołuje statyczną `Create()` zdarzenia `CommentAdornmentManager`.  
   
     ```csharp  
-    public void TextViewCreated(IWpfTextView textView)  
+    public void TextViewCreated(IWpfTextView textView)  
     {  
         CommentAdornmentManager.Create(textView);  
     }  
@@ -291,16 +291,16 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 5.  Dodaj metodę, którego można użyć w celu wykonania tego polecenia.  
   
     ```csharp  
-    static public void Execute(IWpfTextViewHost host)  
+    static public void Execute(IWpfTextViewHost host)  
     {  
         IWpfTextView view = host.TextView;  
-        //Add a comment on the selected text.   
+        //Add a comment on the selected text.   
         if (!view.Selection.IsEmpty)  
         {  
             //Get the provider for the comment adornments in the property bag of the view.  
             CommentAdornmentProvider provider = view.Properties.GetProperty<CommentAdornmentProvider>(typeof(CommentAdornmentProvider));  
   
-            //Add some arbitrary author and comment text.   
+            //Add some arbitrary author and comment text.   
             string author = System.Security.Principal.WindowsIdentity.GetCurrent().Name;  
             string comment = "Four score....";  
   
@@ -362,7 +362,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     private CommentAdornmentProvider(ITextBuffer buffer)  
     {  
         this.buffer = buffer;  
-        //listen to the Changed event so we can react to deletions.   
+        //listen to the Changed event so we can react to deletions.   
         this.buffer.Changed += OnBufferChanged;  
     }  
   
@@ -371,9 +371,9 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 6.  Dodaj `Create()` metody.  
   
     ```csharp  
-    public static CommentAdornmentProvider Create(IWpfTextView view)  
+    public static CommentAdornmentProvider Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
     }  
   
     ```  
@@ -381,11 +381,11 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 7.  Dodaj `Detach()` metody.  
   
     ```csharp  
-    public void Detach()  
+    public void Detach()  
     {  
         if (this.buffer != null)  
         {  
-            //remove the Changed listener   
+            //remove the Changed listener   
             this.buffer.Changed -= OnBufferChanged;  
             this.buffer = null;  
         }  
@@ -395,15 +395,15 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 8.  Dodaj `OnBufferChanged` programu obsługi zdarzeń.  
   
     ```csharp  
-    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
+    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
     {  
         //Make a list of all comments that have a span of at least one character after applying the change. There is no need to raise a changed event for the deleted adornments. The adornments are deleted only if a text change would cause the view to reformat the line and discard the adornments.  
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             Span span = comment.Span.GetSpan(e.After);  
-            //if a comment does not span at least one character, its text was deleted.   
+            //if a comment does not span at least one character, its text was deleted.   
             if (span.Length != 0)  
             {  
                 keptComments.Add(comment);  
@@ -421,25 +421,25 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 9. Dodaj deklarację dla `CommentsChanged` zdarzeń.  
   
     ```csharp  
-    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
+    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
     ```  
   
 10. Utwórz `Add()` metody w celu dodania zakończeń.  
   
     ```csharp  
-    public void Add(SnapshotSpan span, string author, string text)  
+    public void Add(SnapshotSpan span, string author, string text)  
     {  
         if (span.Length == 0)  
-            throw new ArgumentOutOfRangeException("span");  
+            throw new ArgumentOutOfRangeException("span");  
         if (author == null)  
-            throw new ArgumentNullException("author");  
+            throw new ArgumentNullException("author");  
         if (text == null)  
-            throw new ArgumentNullException("text");  
+            throw new ArgumentNullException("text");  
   
         //Create a comment adornment given the span, author and text.  
         CommentAdornment comment = new CommentAdornment(span, author, text);  
   
-        //Add it to the list of comments.   
+        //Add it to the list of comments.   
         this.comments.Add(comment);  
   
         //Raise the changed event.  
@@ -453,19 +453,19 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 11. Dodaj `RemoveComments()` metody.  
   
     ```csharp  
-    public void RemoveComments(SnapshotSpan span)  
+    public void RemoveComments(SnapshotSpan span)  
     {  
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;  
   
         //Get a list of all the comments that are being kept   
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
-            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
+            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
             {  
-                //Raise the change event to delete this comment.   
+                //Raise the change event to delete this comment.   
                 if (commentsChanged != null)  
                     commentsChanged(this, new CommentsChangedEventArgs(null, comment));  
             }  
@@ -483,24 +483,24 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
     {  
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();  
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
                 overlappingComments.Add(comment);  
         }  
   
-        return new Collection<CommentAdornment>(overlappingComments);  
+        return new Collection<CommentAdornment>(overlappingComments);  
     }  
     ```  
   
 13. Dodaj klasę o nazwie `CommentsChangedEventArgs`, wykonując następujące czynności.  
   
     ```csharp  
-    internal class CommentsChangedEventArgs : EventArgs  
+    internal class CommentsChangedEventArgs : EventArgs  
     {  
-        public readonly CommentAdornment CommentAdded;  
+        public readonly CommentAdornment CommentAdded;  
   
-        public readonly CommentAdornment CommentRemoved;  
+        public readonly CommentAdornment CommentRemoved;  
   
         public CommentsChangedEventArgs(CommentAdornment added, CommentAdornment removed)  
         {  
@@ -537,9 +537,9 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 4.  Dodaj kilka pól prywatnych.  
   
     ```csharp  
-    private readonly IWpfTextView view;  
-    private readonly IAdornmentLayer layer;  
-    private readonly CommentAdornmentProvider provider;  
+    private readonly IWpfTextView view;  
+    private readonly IAdornmentLayer layer;  
+    private readonly CommentAdornmentProvider provider;  
     ```  
   
 5.  Dodaj Konstruktor, który subskrybuje Menedżera <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> i <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> zdarzenia, a także `CommentsChanged` zdarzeń. Konstruktor nie jest prywatny, ponieważ Menedżer jest tworzone przez statyczną `Create()` metody.  
@@ -561,22 +561,22 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 6.  Dodaj `Create()` metody, która pobiera dostawcy lub co powoduje utworzenie, jeśli jest to wymagane.  
   
     ```csharp  
-    public static CommentAdornmentManager Create(IWpfTextView view)  
+    public static CommentAdornmentManager Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
     }  
     ```  
   
 7.  Dodaj `CommentsChanged` programu obsługi.  
   
     ```csharp  
-    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
+    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
     {  
-        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
+        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
         if (e.CommentRemoved != null)  
             this.layer.RemoveAdornmentsByTag(e.CommentRemoved);  
   
-        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
+        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
         if (e.CommentAdded != null)  
             this.DrawComment(e.CommentAdded);  
     }  
@@ -585,7 +585,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 8.  Dodaj <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> programu obsługi.  
   
     ```csharp  
-    private void OnClosed(object sender, EventArgs e)  
+    private void OnClosed(object sender, EventArgs e)  
     {  
         this.provider.Detach();  
         this.view.LayoutChanged -= OnLayoutChanged;  
@@ -596,19 +596,19 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
 9. Dodaj <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> programu obsługi.  
   
     ```csharp  
-    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
+    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
     {  
         //Get all of the comments that intersect any of the new or reformatted lines of text.  
         List<CommentAdornment> newComments = new List<CommentAdornment>();  
   
-        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
-        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
+        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
+        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
         foreach (Span span in e.NewOrReformattedSpans)  
         {  
             newComments.AddRange(this.provider.GetComments(new SnapshotSpan(this.view.TextSnapshot, span)));  
         }  
   
-        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
+        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
         //Sort the list and skip duplicates.  
         newComments.Sort(delegate(CommentAdornment a, CommentAdornment b) { return a.GetHashCode().CompareTo(b.GetHashCode()); });  
   

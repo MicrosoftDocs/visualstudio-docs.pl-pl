@@ -1,5 +1,5 @@
 ---
-title: Określ wartość procentową z użytkownicy wirtualni sprawdzająca dane w pamięci podręcznej sieci Web użycie dla obciążenia w programie Visual Studio
+title: Określ wartości procentowej użytkowników wirtualnych danych pamięci podręcznej sieci Web użycie dla testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379374"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060242"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania przy użyciu **edytora testu obciążenia**. Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Procent nowych użytkowników** właściwość jest ustawiona **właściwości** okna. Edytuj właściwości scenariusza testów obciążenia w **edytora testu obciążenia**.
 

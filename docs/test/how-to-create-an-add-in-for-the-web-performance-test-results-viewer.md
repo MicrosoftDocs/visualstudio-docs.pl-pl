@@ -1,5 +1,5 @@
 ---
-title: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
+title: Tworzenie dodatku dla podglądu wyników testu wydajności sieci Web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949319"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068344"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Porady: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
 
@@ -28,7 +28,9 @@ Możesz rozszerzyć w interfejsie użytkownika dla **podglądu wyników testu wy
 
 Ponadto musisz dodać odwołanie do biblioteki DLL LoadTestPackage, która znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* folderu.
 
--   Aby rozszerzyć **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika, należy utworzyć dodatek programu Visual Studio i kontrolki użytkownika. W poniższych procedurach opisano sposób tworzenia dodatku, formantu użytkownika oraz sposób implementacji klas niezbędnych do rozszerzenia **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika.
+Aby rozszerzyć **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika, należy utworzyć dodatek programu Visual Studio i kontrolki użytkownika. W poniższych procedurach opisano sposób tworzenia dodatku, formantu użytkownika oraz sposób implementacji klas niezbędnych do rozszerzenia **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Utwórz lub Otwórz rozwiązanie, które zawiera projekt testu wydajności i obciążenia sieci web i aplikacji sieci web ASP.NET
 

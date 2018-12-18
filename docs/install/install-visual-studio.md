@@ -1,7 +1,8 @@
 ---
-title: Instalowanie programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+title: Instalowanie programu Visual Studio
+titleSuffix: ''
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -19,16 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856174"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159740"
 ---
 # <a name="install-visual-studio-2017"></a>Instalowanie programu Visual Studio 2017
 
 Nowy sposób instalowania programu Visual Studio — Zapraszamy! W naszych najnowszych wersji wprowadziliśmy je łatwiej można wybierać i instalować tylko funkcje, których potrzebujesz. Również zmniejszyliśmy minimalnego śladu programu Visual Studio, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Zainstaluj program Visual Studio dla komputerów Mac](/visualstudio/mac/installation).
 
 Chcesz dowiedzieć się więcej na temat inne nowości w tej wersji? Zobacz nasze [informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes).
 
@@ -122,7 +126,7 @@ Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z
 
 ## <a name="step-7---change-the-installation-location-optional"></a>Krok 7 — zmiana lokalizacji instalacji (opcjonalnie)
 
-**Nowość w wersji 15.7**: mogą teraz zmniejszać miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
+**Nowość w wersji 15.7**: Teraz można zmniejszyć miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
   ![Program Visual Studio 2017 — zmiana lokalizacji instalacji](media/installation-options-by-location.png "zmiana lokalizacji instalacji")
 
@@ -149,4 +153,4 @@ Aby uzyskać więcej informacji, zobacz [zmiana lokalizacji instalacji programu 
 * [Odinstaluj program Visual Studio 2017](uninstall-visual-studio.md)
 * [Tworzenie instalacji offline programu Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Konfigurowanie i instalowanie programu Visual Studio dla komputerów Mac](/visualstudio/mac/installation)
+* [Zainstaluj program Visual Studio dla komputerów Mac](/visualstudio/mac/installation)

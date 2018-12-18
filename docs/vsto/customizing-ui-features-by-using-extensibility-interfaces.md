@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873977"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670848"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów
   Narzędzi programistycznych pakietu Office w programie Visual Studio zawierają klasy i projektantów, które obsługują wiele szczegółów implementacji, gdy ich użyć do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionach formularzy programu Outlook w dodatku VSTO. Jednak możesz również wdrożyć *interfejsu rozszerzalności* dla każdej funkcji samodzielnie, jeśli masz specjalne wymagania.  
@@ -71,7 +71,7 @@ ms.locfileid: "49873977"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
-  Aby uzyskać więcej informacji o implementowaniu <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, zobacz [Tworzenie niestandardowych okienek zadań w 2007 Office system](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) w dokumentacji programu Microsoft Office.  
+  Aby uzyskać więcej informacji o implementowaniu <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, zobacz [Tworzenie niestandardowych okienek zadań w 2007 Office system](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) w dokumentacji programu Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Zastępowanie metody RequestService przykład  
  Poniższy przykład kodu demonstruje sposób zastąpienia <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodę, aby zwrócić wystąpienia `TaskPaneHelper` klasy z poprzedniego przykładu kodu. Sprawdza wartość *serviceGuid* parametru, aby określić, który interfejs jest wymagana, a następnie zwraca obiekt, który implementuje ten interfejs.  

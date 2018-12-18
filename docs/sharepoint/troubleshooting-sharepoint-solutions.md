@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219786"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296050"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami SharePoint
-  Następujące problemy lub alerty, mogą wystąpić podczas debugowania rozwiązań programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązania przepływu pracy programu SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Następujące problemy lub alerty, mogą wystąpić podczas debugowania rozwiązań programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązania przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Ograniczenia tokenu w trybie piaskownicy wizualne części sieci web
  Wizualne części sieci web w trybie piaskownicy rozwiązań nie może przetworzyć standardowa tokenów, takich jak $SPUrl, który obsługuje środowisko wykonawcze programu SharePoint. W rezultacie adres URL nie zostanie rozwiązany i nie można przeglądać zawartość w widoku projektowania projektanta wizualnego składnika web part, jeśli odwołujesz się do niego bezpośrednio w elemencie skryptu, takie jak w poniższym przykładzie:  
@@ -105,7 +105,7 @@ ms.locfileid: "50219786"
  Brak.  
   
 ### <a name="resolution"></a>Rozwiązanie  
- Ten problem występuje z powodu nieprawidłowej wartości w **ścieżki** właściwość Konfiguracja definicji witryny webtemp plików, takich jak *webtemp_SiteDefinitionProject1.xml*. W **ścieżki** właściwość pliku webtemp znajdujący się w folderze **lokalizacji wdrożenia**, zmień odpowiednie ustawienia regionalne 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Na przykład aby użyć japońskich ustawieniach regionalnych zmień wartość 1041. Aby uzyskać więcej informacji, zobacz [identyfikatory ustawień regionalnych przypisane przez firmę Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) w witrynie MSDN w sieci Web.  
+ Ten problem występuje z powodu nieprawidłowej wartości w **ścieżki** właściwość Konfiguracja definicji witryny webtemp plików, takich jak *webtemp_SiteDefinitionProject1.xml*. W **ścieżki** właściwość pliku webtemp znajdujący się w folderze **lokalizacji wdrożenia**, zmień odpowiednie ustawienia regionalne 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Na przykład aby użyć japońskich ustawieniach regionalnych zmień wartość 1041. Aby uzyskać więcej informacji, zobacz [identyfikatory ustawień regionalnych przypisane przez firmę Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Błąd pojawia się podczas wdrażania projektu przepływu pracy w systemie czyste
  Ten problem występuje, gdy wdrożysz projektu przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] systemie czyste. Oczyść system to komputer, który ma nowej instalacji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i programu SharePoint, ale żadne projekty wdrożonej przepływu pracy.  

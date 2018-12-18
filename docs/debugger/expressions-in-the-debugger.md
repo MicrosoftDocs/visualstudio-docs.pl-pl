@@ -21,20 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926192"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257257"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają przy wprowadzaniu wyrażenia w **QuickWatch** okno dialogowe **Obejrzyj** oknie lub **bezpośrednie** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okna i wielu innych miejscach w debugerze.
   
- Poniższe sekcje zawierają szczegółowe informacje o wyrażeniach w różnych językach.  
+ Poniższe sekcje w tym artykule opisano ograniczenia obliczenia wyrażenia dla języków obsługiwanych przez program Visual Studio.
   
-## <a name="f-expressions-are-not-supported"></a>Wyrażeń języka F # nie są obsługiwane.  
- Wyrażeń języka F # nie są rozpoznawane. Jeśli debugujesz kod F # należy do translacji wyrażenia w języku C# składni przed rozpoczęciem wprowadzania wyrażeń w debugerze okno lub okno dialogowe. Podczas tłumaczenia jest wyrażenia z języka F # do języka C#, należy pamiętać, że C# używa `==` operatora do testowania pod kątem równości, podczas gdy F # używa pojedynczego `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#wyrażenia nie są obsługiwane.  
+ F#wyrażenia nie są rozpoznawane. Jeśli debugujesz F# kodu, potrzebne jest tłumaczenie wyrażenia do C# składni przed rozpoczęciem wprowadzania wyrażeń w debugerze okno lub okno dialogowe. Podczas tłumaczenia wyrażeń z F# do C#, należy koniecznie pamiętać, że C# używa `==` operatora do testowania pod kątem równości, podczas F# używa pojedynczego `=`.  
   
 ## <a name="c-expressions"></a>Wyrażeń języka C++  
  Aby dowiedzieć się, jak przy użyciu operatorów kontekstu przy użyciu wyrażenia w języku C++, zobacz [kontekstu — Operator (C++)](../debugger/context-operator-cpp.md).  

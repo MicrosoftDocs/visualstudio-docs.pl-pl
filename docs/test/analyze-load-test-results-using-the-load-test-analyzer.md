@@ -1,5 +1,5 @@
 ---
-title: Analizowanie wyników testów obciążenia w programie Visual Studio
+title: Analizowanie wyników testów obciążenia
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 719163e53b1f8c68850b3f4f211838631a25274a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845455"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055611"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia za pomocą analizatora testu obciążenia
 
-Znajdź wąskie gardła, identyfikowanie błędów i zmierzyć ulepszenia w aplikacji, korzystając z **analizatora testu obciążenia**. Analizowanie wyników testów obciążenia w następujący sposób:
+Znajdź wąskie gardła, identyfikowanie błędów i zmierzyć ulepszenia w aplikacji, korzystając z **analizatora testu obciążenia**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Analizowanie wyników testów obciążenia w następujący sposób:
 
 -   Badania obciążenia należy monitorować wtedy, gdy jest uruchomiona.
 
@@ -46,6 +50,6 @@ Możesz wykonać te zadania, czy uruchomić test obciążenia z Visual Studio En
 |Zadania|Skojarzone tematy|
 |-|-|
 |**Uzyskiwanie dostępu do wyników testu obciążenia:** po uruchomieniu testu obciążenia z edytora testu obciążenia, automatycznego otwierania wyników testów obciążenia, i uruchamianie testu obciążenia jest wyświetlana w **analizatora testu obciążenia**.|-   [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Dodaj notatki analizy do testu obciążeniowego:** Dodawanie komentarzy do testu obciążeniowego podczas przeprowadzania analizy. Komentarze są przechowywane trwale, wraz z wynikiem testu obciążenia. Wyświetla opis, który możesz również wprowadzić **opis** kolumny, która jest skojarzona z testu obciążenia w **Otwórz i Zarządzaj wynikami testu** okno dialogowe w edytorze testu obciążeniowego.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Ponadto komentarze są wyświetlane, gdy tworzysz raport programu Excel dla obciążenia wyniki testu.<br /><br /> Aby uzyskać więcej informacji, zobacz [testy obciążenia raportowanie wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).|-   [Porady: dodawanie komentarzy podczas analizowania zakończonego testu obciążenia](../test/how-to-add-comments-on-a-completed-load-test.md)|
+|**Dodaj notatki analizy do testu obciążeniowego:** Dodawanie komentarzy do testu obciążeniowego podczas przeprowadzania analizy. Komentarze są przechowywane trwale, wraz z wynikiem testu obciążenia. Wyświetla opis, który możesz również wprowadzić **opis** kolumny, która jest skojarzona z testu obciążenia w **Otwórz i Zarządzaj wynikami testu** okno dialogowe w edytorze testu obciążeniowego.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Ponadto komentarze są wyświetlane, gdy tworzysz raport programu Excel dla obciążenia wyniki testu.<br /><br /> Aby uzyskać więcej informacji, zobacz [testy obciążenia raportowanie wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).||
 |**Analizowanie wyników testu obciążeniowego:** po uzyskujesz dostęp do danych przebiegu testu obciążeniowego, można analizować dane wynikowe. Możesz wyświetlić podsumowanie testu obciążeniowego, aby szybko poznać wyniki. Podsumowanie testu obciążeniowego przedstawia wyniki klucza w formacie zwarty i łatwe do odczytu.<br /><br /> Podsumowanie testu obciążeniowego można wydrukować. Ułatwia to używane podczas komunikowania się wyniki do zainteresowanych stron.<br /><br /> Szczegóły wyników testu obciążenia można analizować za pomocą wykresów i tabel w wynikach. Obejmują one **błędy**, **stron**, **żądań**, **śledzenia SQL**, **testy**,  **Progi**, i **transakcji**.|-   [Przegląd podsumowania wyników testu obciążenia](../test/load-test-results-summary-overview.md)<br />-   [Porady: wyświetlanie odpowiedzi strony sieci web](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [Analizowanie naruszeń zasady progu](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|
 |**Analizowanie aktywności wirtualnego użytkownika w wynikach testu obciążenia można wyizolować problemy z wydajnością:** wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie, co robią użytkownicy wirtualni podczas testu obciążeniowego. Może to pomóc wyizolować skoków Procesora lub przerwy w żądań na sekundę i określić, które testy lub stron, które są uruchomione podczas tych wzrostów i spadnie.|-   [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)|

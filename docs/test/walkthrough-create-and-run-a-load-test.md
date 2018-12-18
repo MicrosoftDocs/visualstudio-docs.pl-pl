@@ -1,5 +1,5 @@
 ---
-title: Tworzenie i uruchamianie testu obciążenia w programie Visual Studio
+title: Tworzenie i uruchamianie testów obciążeniowych
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381019"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055773"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Przewodnik: Tworzenie i uruchamianie testu obciążenia zawierającego testy jednostkowe
 
 W tym instruktażu utworzysz testu obciążenia, który zawiera testy jednostkowe.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Ten instruktaż prowadzi przez tworzenie, a następnie ponownie uruchomić test obciążenia przy użyciu programu Visual Studio Enterprise. Test obciążenia jest kontenerem testów wydajności sieci web i testów jednostkowych. Tworzenie testów obciążenia za pomocą **nowego kreatora testu obciążenia**.
 

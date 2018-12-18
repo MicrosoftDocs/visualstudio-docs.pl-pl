@@ -1,5 +1,6 @@
 ---
 title: Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -12,19 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6de309ca6ff9c1813a2a2a6ebc54ea6baa3a795f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811924"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060481"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
+
 Za pomocą zestawu Modeling SDK for Visual Studio, można utworzyć zaawansowane opartych na modelu narzędzia programistyczne, które można zintegrować z programem Visual Studio. W ten sam sposób można utworzyć co najmniej jedną definicję modelu i zintegrować ją w zestaw narzędzi.
 
- Centralnym elementem zestawu MSDK jest definicja modelu tworzona w celu przedstawienia koncepcji z obszaru biznesowego. Można otoczyć model z szeroką gamą narzędzi, takich jak widok diagramowy, możliwość generowania kodu i innych artefaktów, polecenia przekształcania modelu oraz możliwość interakcji z kodem i innych obiektów w programie Visual Studio. Podczas opracowywania modelu można połączyć go z innymi modelami i narzędziami w celu utworzenia zestawu narzędzi o dużych możliwościach, który będzie wspomagał proces projektowania.
+Centralnym elementem zestawu MSDK jest definicja modelu tworzona w celu przedstawienia koncepcji z obszaru biznesowego. Można otoczyć model z szeroką gamą narzędzi, takich jak widok diagramowy, możliwość generowania kodu i innych artefaktów, polecenia przekształcania modelu oraz możliwość interakcji z kodem i innych obiektów w programie Visual Studio. Podczas opracowywania modelu można połączyć go z innymi modelami i narzędziami w celu utworzenia zestawu narzędzi o dużych możliwościach, który będzie wspomagał proces projektowania.
 
- Zestaw MSDK umożliwia szybkie opracowanie modelu z użyciem języka specyficznego dla domeny (DSL). Należy rozpocząć od użycia specjalnego edytora w celu zdefiniowania schematu lub abstrakcyjnej składni wraz z notacją graficzną. Na podstawie tej definicji zestaw VMSDK generuje następujące elementy:
+Zestaw MSDK umożliwia szybkie opracowanie modelu z użyciem języka specyficznego dla domeny (DSL). Należy rozpocząć od użycia specjalnego edytora w celu zdefiniowania schematu lub abstrakcyjnej składni wraz z notacją graficzną. Na podstawie tej definicji zestaw VMSDK generuje następujące elementy:
 
 - Implementacja modelu z silnie typizowanym interfejsem API, który działa w magazynie opartym na transakcjach.
 
@@ -36,13 +38,13 @@ Za pomocą zestawu Modeling SDK for Visual Studio, można utworzyć zaawansowane
 
 - Możliwości generowania kodu programu i innych artefaktów przy użyciu funkcji tworzenia szablonów tekstu.
 
-  Wszystkie te funkcje można dostosowywać i rozszerzać. Rozszerzenia są integrowane w taki sposób, że można aktualizować definicję DSL oraz ponownie generować funkcje bez utraty używanych rozszerzeń.
+Wszystkie te funkcje można dostosowywać i rozszerzać. Rozszerzenia są integrowane w taki sposób, że można aktualizować definicję DSL oraz ponownie generować funkcje bez utraty używanych rozszerzeń.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- [Wpisy w blogu pokrewne](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[Wpisy w blogu pokrewne](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
 
- Aby uzyskać wskazówki dotyczące zaawansowanych technik i rozwiązywania problemów, odwiedź stronę [forum Visual Studio DSL & Modeling Tools Extensibility](http://go.microsoft.com/fwlink/?LinkID=186074).
+Aby uzyskać wskazówki dotyczące zaawansowanych technik i rozwiązywania problemów, odwiedź stronę [forum Visual Studio DSL & Modeling Tools Extensibility](http://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Wprowadzenie do języków specyficznych dla domeny](../modeling/getting-started-with-domain-specific-languages.md)

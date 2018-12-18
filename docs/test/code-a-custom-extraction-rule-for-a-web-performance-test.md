@@ -1,5 +1,5 @@
 ---
-title: Kodowanie niestandardowej reguły wyodrębniania dla testów wydajności sieci web w programie Visual Studio
+title: Kodowanie niestandardowej reguły wyodrębniania dla testów wydajności sieci Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283213"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066681"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kod niestandardowej reguły wyodrębniania dla testów wydajności sieci web
 
@@ -28,6 +28,8 @@ Użytkownicy mogą tworzyć własne reguły wyodrębniania. W tym celu należy u
 
 > [!NOTE]
 > Można również tworzyć niestandardowe reguły sprawdzania poprawności. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Aby utworzyć niestandardową regułę wyodrębniania
 

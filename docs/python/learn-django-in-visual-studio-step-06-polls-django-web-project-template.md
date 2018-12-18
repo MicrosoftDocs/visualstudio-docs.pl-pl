@@ -1,22 +1,24 @@
 ---
-title: Samouczek — Dowiedz się, Django w programie Visual Studio, w kroku 6
+title: Poznaj samouczek Django w Visual Studio w kroku 6, szablon projektu sond
+titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności funkcje szablonu projektu sieci Web Django sond, takich jak administracyjne dostosowywania.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e874db45bca2938a3bceb976c679f45ecf39d69
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143479"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062499"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Należy użyć szablonu projektu sieci Web Django sond
 

@@ -1,8 +1,8 @@
 ---
-title: Tworzenie aplikacji internetowej platformy ASP.NET Core w języku C# przy użyciu programu Visual Studio
+title: Tworzenie aplikacji internetowej platformy ASP.NET Core wC#
 description: Dowiedz się, jak utworzyć prostą aplikację sieci web Hello World w programie Visual Studio w języku C# i ASP.NET Core, który krok po kroku.
 ms.custom: mvc
-ms.date: 09/23/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,22 +14,34 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ab4ce9393e922dec6677d37d7679e1a400a2b5fc
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028939"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158882"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web platformy ASP.NET Core
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio
 
 W ramach tego wprowadzenia 5 – 10 minut, jak używać programu Visual Studio utworzysz prostą aplikację sieci web "Hello World" przy użyciu szablonu projektu programu ASP.NET i języka programowania C#.
 
+## <a name="before-you-begin"></a>Przed rozpoczęciem
+
+### <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+### <a name="update-visual-studio"></a>Aktualizowanie programu Visual Studio
+
+Jeśli po zainstalowaniu programu Visual Studio, upewnij się, że używasz najnowszej wersji. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio 2017 do najnowszej wersji](../install/update-visual-studio.md) strony.
+
+### <a name="choose-your-theme-optional"></a>Wybierz kompozycję (opcjonalnie)
+
+Ten samouczek Szybki Start zawiera zrzuty ekranu, używanego przez ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Poniżej przedstawiono sposób.
+Aby rozpocząć, należy utworzyć projekt aplikacji sieci web platformy ASP.NET Core. Poniżej przedstawiono sposób.
 
 1. Otwórz program Visual Studio 2017.
 
@@ -37,14 +49,17 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Poniżej 
 
 1. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**. Następnie nadaj plikowi nazwę `HelloWorld` i wybierz polecenie **OK**.
 
-1. W **Nowa aplikacja internetowa ASP.NET Core** okna dialogowego Sprawdź, czy **ASP.NET Core 2.0** pojawia się w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web** i wybierz polecenie **OK**.
+1. W **Nowa aplikacja internetowa ASP.NET Core** okno dialogowe, wybierz opcję **ASP.NET Core 2.0** lub nowszych z górnego menu rozwijanego, a następnie wybierz **aplikacji sieci Web**.
+
+   > [!NOTE]
+   > Jeśli nie widzisz **ASP.NET Core 2.0** lub nowszej z górnego menu rozwijanego, upewnij się, że używasz najnowszej wersji programu Visual Studio. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio 2017 do najnowszej wersji](../install/update-visual-studio.md) strony.
 
    ![Wyświetl plik animowany obraz GIF, który pokazuje, jak utworzyć projekt C# ASP.NET Core w programie Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
    Wkrótce potem Visual Studio otwiera plik projektu.
 
    > [!NOTE]
-   > Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie.
+   > Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie. (W zależności od ustawień wyświetlania, trzeba będzie Przewinięcie w celu wyświetlenia go.)
    >
    > ![Instalator programu Visual Studio Otwórz okno dialogowe Nowy projekt](../ide/media/open-visual-studio-installer.png)
    >
@@ -77,7 +92,7 @@ Następnie będzie tworzenie i uruchamianie aplikacji sieci web "Hello World". P
    ![Wyświetl animowany obraz GIF pliku, który pokazuje, jak utworzyć i uruchomić aplikację sieci web platformy ASP.NET Core C# w programie Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
-   > Jeśli otrzymasz komunikat o błędzie informujący, że, **nie można połączyć się z serwerem sieci web usług IIS Express**, zamknij program Visual Studio, a następnie otwórz go za pomocą **Uruchom jako administrator** opcję z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
+   > Jeśli otrzymasz komunikat o błędzie informujący, że, **nie można połączyć się z serwerem sieci web usług IIS Express**, lub komunikat o błędzie dotyczący certyfikatu SSL, zamknij program Visual Studio. Następnie otwórz program Visual Studio przy użyciu **Uruchom jako administrator** opcję z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
 
 1. W przeglądarce sieci web, upewnij się, że **o** strona zawiera zaktualizowane tekstu.
 

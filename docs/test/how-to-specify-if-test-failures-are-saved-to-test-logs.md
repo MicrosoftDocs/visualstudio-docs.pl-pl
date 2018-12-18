@@ -1,5 +1,5 @@
 ---
-title: Zapisz dziennik testu obciążenia w przypadku niepowodzenia testów w programie Visual Studio
+title: Zapisz dziennik testu obciążenia w przypadku niepowodzenia testów
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c583418fa34a44d4bc0bf78996df4cb35908b4f0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381456"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064407"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Porady: Określanie, czy niepowodzenia testu są zapisywane do testowania dzienników za pomocą edytora testu obciążenia
 
@@ -25,6 +25,7 @@ Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenio
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Aby określić, jeśli dziennik testu jest zapisywany, gdy test zakończy się niepowodzeniem w przypadku scenariusza
 
@@ -48,5 +49,3 @@ Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenio
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
-- [Porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności wirtualnych użytkowników](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [Porady: Określanie, jak często zapisywane są dzienniki testów](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

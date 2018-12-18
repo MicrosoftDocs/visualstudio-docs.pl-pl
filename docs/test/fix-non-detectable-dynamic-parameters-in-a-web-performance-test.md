@@ -1,5 +1,5 @@
 ---
-title: Napraw niewykrywalnych parametrów dynamicznych w teście wydajności sieci web w programie Visual Studio
+title: Napraw niewykrywalnych parametrów dynamicznych w teście wydajności sieci web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177828"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063784"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 
@@ -30,6 +30,8 @@ Niektóre witryny sieci Web używają parametrów dynamicznych do przetwarzania 
 -   Wartości parametrów dynamicznych ustawione jako ciąg zapytania lub formularza Parametry księgowania. Są one obsługiwane za pomocą wykrywania parametrów dynamicznych po zarejestrowaniu testu wydajności sieci web.
 
 Niektóre typy parametrów dynamicznych nie są wykrywane. Parametr dynamiczny niewykryte spowoduje, że test wydajności sieci web niepowodzenie podczas uruchamiania, ponieważ wartość dynamiczna będzie prawdopodobnie inny ilekroć dany test jest uruchomiony. Aby prawidłowo obsługiwać te parametry, można dodać reguły wyodrębniania do parametrów dynamicznych w testach wydajności sieci web ręcznie.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Tworzenie i uruchamianie aplikacji sieci web z parametrami dynamicznymi
 

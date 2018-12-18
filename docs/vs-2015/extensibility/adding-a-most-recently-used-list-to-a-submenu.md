@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87e9fb6ec0b4d0339427175fd18fdb79f6ef500b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818109"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744353"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Dodawanie listy ostatnio używanych elementów do podmenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
 2.  W `Symbols` sekcji w `GuidSymbol` węzeł o nazwie guidTestCommandPackageCmdSet, dodać symbol `MRUListGroup` grupy i `cmdidMRUList` polecenia w następujący sposób.  
   
     ```csharp  
-    <IDSymbol name="MRUListGroup" value="0x1200"/>  
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
+    <IDSymbol name="MRUListGroup" value="0x1200"/>  
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
   
 3.  W `Groups` sekcji i Dodaj grupy zadeklarowanych po istniejące wpisy grupy.  
@@ -93,7 +93,7 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
   
     ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
-    public const uint cmdidMRUList = 0x200;  
+    public const uint cmdidMRUList = 0x200;  
     ```  
   
 2.  W TestCommand.cs Dodaj następującą instrukcję using.  
@@ -155,7 +155,7 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
 6.  Po `InitMRUMenu` metody, Dodaj następujący kod `OnMRUQueryStatus` metody. To jest program obsługi, który ustawia tekst dla każdego elementu listy ostatnio używanych.  
   
     ```csharp  
-    private void OnMRUQueryStatus(object sender, EventArgs e)  
+    private void OnMRUQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -163,7 +163,7 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
             }  
         }  
     }  
@@ -172,7 +172,7 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
 7.  Po `OnMRUQueryStatus` metody, Dodaj następujący kod `OnMRUExec` metody. To jest obsługa zaznaczenie elementu MRU. Ta metoda Przenosi wybrany element do góry listy, a następnie wyświetla wybrany element w oknie komunikatu.  
   
     ```csharp  
-    private void OnMRUExec(object sender, EventArgs e)  
+    private void OnMRUExec(object sender, EventArgs e)  
     {  
         var menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -180,7 +180,7 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                string selection = this.mruList[MRUItemIndex] as string;  
+                string selection = this.mruList[MRUItemIndex] as string;  
                 for (int i = MRUItemIndex; i > 0; i--)  
                 {  
                     this.mruList[i] = this.mruList[i - 1];  

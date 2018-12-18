@@ -1,7 +1,7 @@
 ---
-title: Format Specyfikatory w debugerze (C#) | Dokumentacja firmy Microsoft
+title: Specyfikatory w debugerze formatu (C#) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -27,20 +27,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e8605671d1c245826ce6d699e91795fcd7ee32e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756863"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305393"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w C# w debugerze programu Visual Studio
-Można zmienić format wyświetlania wartości w **czujki** okna używanie specyfikatorów formatu. Umożliwia także specyfikatory formatu w **Immediate** okna, **polecenia** okna w [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w systemie windows źródła. Jeśli zostanie wstrzymana na wyrażeniu w oknach, wyniki będą wyświetlane w etykietki danych. Etykietki danych będzie odzwierciedlać specyfikator formatu wyświetlania etykietek danych.  
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu C# w debugerze programu Visual Studio
+Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu. Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)i w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) wyświetlania określonego formatu.  
   
- Aby użyć specyfikatora formatu, wpisz wyrażenie rozdzielanych przecinkami. Po przecinku Dodaj odpowiednie specyfikator.  
+ Aby użyć specyfikatora formatu, wprowadź wyrażenie zmienne, a następnie przecinek i odpowiednie specyfikator.  
   
-## <a name="using-format-specifiers"></a>Używanie specyfikatorów formatu  
- Jeśli masz następujący kod:  
+## <a name="set-format-specifiers"></a>Zestaw specyfikatorów formatu  
+Użyjemy poniższy przykład kodu:   
   
 ```csharp  
 {  
@@ -50,25 +50,25 @@ Można zmienić format wyświetlania wartości w **czujki** okna używanie specy
 }  
 ```  
   
- Dodaj `my_var1` zmienną do okna czujki (podczas debugowania, **debugowania > Windows > czujki > Obejrzyj 1**) i ustawić szesnastkowy (w **czujki** okna, kliknij prawym przyciskiem myszy zmienną i Wybierz **wyświetlacz**). Teraz **czujki** okna pokazuje, że zawiera on wartość 0x0065. Aby zobaczyć tę wartość, wyrażony jako dziesiętną liczbą całkowitą, a nie szesnastkową liczby całkowitej w kolumnie Nazwa po nazwie zmiennej, Dodaj specyfikator formatu dziesiętnego: **, d**. Wartość kolumny są obecnie wyświetlane wartości dziesiętnej 101  
+ Dodaj `my_var1` zmienną **Obejrzyj** okna podczas debugowania, **debugowania** > **Windows** > **Obejrzyj**  >  **Obejrzeć 1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz **wyświetlanie szesnastkowe**. Teraz **Obejrzyj** okno pokazuje wartość 0x0065. Aby wyświetlić tę wartość jako dziesiętna liczba całkowita, a nie jako szesnastkowa liczba całkowita, Dodaj specyfikator formatu dziesiętnego **, d** w **nazwa** kolumn po nazwie zmiennej. **Wartość** zawiera obecnie kolumnę **101**.   
   
  ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")  
   
 ## <a name="format-specifiers"></a>Specyfikatory formatu  
- W poniższej tabeli przedstawiono C# rozpoznawanie specyfikatorów formatu przez debuger.  
+ W poniższej tabeli opisano C# formatowania specyfikatory dla debugera programu Visual Studio.  
   
 |Specyfikator|Format|Oryginalnej wartości czujki|Wyświetla|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Wymuszenie obliczenia wyrażenia. Może to być przydatne, jeśli niejawne obliczanie właściwości i niejawne wywołania funkcji jest wyłączona.|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<wartość >|  
-|d|dziesiętną liczbą całkowitą|0x0065|101|  
-|dynamic|Wyświetla określony obiekt przy użyciu widoku dynamicznego|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla widok dynamiczny|  
+|AC|Wymuszenie obliczenia wyrażenia, które mogą być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone.|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<value>|  
+|d|Liczba całkowita dziesiętna|0x0065|101|  
+|dynamic|Wyświetla określony obiekt przy użyciu dynamicznego widoku|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla tylko widoku dynamicznego|  
 |h|Szesnastkowa liczba całkowita|61541|0x0000F065|  
-|nq|Ciąg zawierający nie oferty|"Mój ciągu"|Moje ciągu|  
-|nse|Określa zachowanie, nie formatu. Oblicza wyrażenie z "Żadnych efektów ubocznych". Jeśli wyrażenie nie mogą być interpretowane tylko można rozwiązać przez ocenę (np. wywołanie funkcji), zamiast tego zostanie wyświetlony błąd.|Brak|Brak|
-|hidden|Wyświetla wszystkie publiczne i niepubliczne elementy członkowskie|Wyświetla publiczne elementy członkowskie|Wyświetla wszystkie elementy członkowskie|  
-|nieprzetworzone|Wyświetla elementu wyświetlaną w węźle elementu raw. Prawidłowy na tylko obiekty serwera proxy.|Słownik\<T >|Pierwotny widok słownika\<T >|  
-|wyniki|Używany ze zmienną typu, który implementuje interfejs IEnumerable lub IEnumerable\<T >, zazwyczaj wynikiem wyrażenia zapytania. Wyświetla tylko elementy członkowskie, które zawierają wyniku zapytania.|Wyświetla wszystkie elementy członkowskie.|Wyświetla elementy Członkowskie spełniają warunki zapytania.|  
+|nq|ciąg znaków z nie cudzysłowów|"Mój String"|Moje ciągu|  
+|nse|Określa zachowanie, nie formatu. Oblicza wyrażenie za pomocą "Żadnych efektów ubocznych". Jeśli wyrażenie nie mogą być interpretowane a tylko można rozwiązać poprzez ocenę (takie jak wywołania funkcji), zamiast tego zostanie wyświetlony błąd.|Brak|Brak|
+|hidden|Wyświetla wszystkie publiczne i niepubliczne składowe|Wyświetla publiczne elementy członkowskie|Wyświetla wszystkie elementy członkowskie|  
+|nieprzetworzone|Wyświetla elementu, jak wygląda na to, w węźle pierwotne elementu. Prawidłowy tylko obiektów serwera proxy.|Słownik\<T >|Surowy widok tego słownika\<T >|  
+|wyniki|Używane z zmienną typu, który implementuje interfejs IEnumerable lub typ IEnumerable\<T >, zazwyczaj wynikiem wyrażenia zapytania. Wyświetla tylko elementów członkowskich, które zawierają wyniku zapytania.|Wyświetla wszystkie elementy członkowskie|Wyświetla elementy Członkowskie spełniają warunki zapytania|  
   
-## <a name="see-also"></a>Zobacz też  
- [Oglądanie i QuickWatch systemu Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Automatyczne i ustawień regionalnych systemu Windows](../debugger/autos-and-locals-windows.md)
+## <a name="see-also"></a>Zobacz także  
+ [Oknach wyrażenie kontrolne i QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
+ [Okien zmiennych automatycznych i zmiennych lokalnych](../debugger/autos-and-locals-windows.md)

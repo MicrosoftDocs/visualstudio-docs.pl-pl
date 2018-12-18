@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53a54c0d3ead9670f745258260461c86849cf0b9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a07545fb9a7ddb2fc70ba5053ad131d2e214636
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671316"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
   Aby skonfigurować komputerze deweloperskim, można użyć narzędzia Microsoft Office developer tools w programie Visual Studio, wykonaj instrukcje przedstawione w tym temacie. Musi mieć uprawnienia administracyjne na komputerze deweloperskim, aby wykonać te kroki.  
@@ -37,7 +37,7 @@ ms.locfileid: "35677165"
 3.  Jeśli masz angielską wersję programu Visual Studio, ale użyj ustawień innej niż angielska dla Windows, możesz zainstalować [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pakiet językowy, aby zobaczyć [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wiadomości w języku Windows. W innych wersjach językowych programu Visual Studio automatycznie zainstalować pakiet językowy. Pakiet językowy jest dostępny z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Zobacz także  
- [What's new in Office development](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [What's new in Office development](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Porady: Instalowanie Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Porady: podstawowe zestawy międzyoperacyjne pakietu Office instalacji](../vsto/how-to-install-office-primary-interop-assemblies.md)  

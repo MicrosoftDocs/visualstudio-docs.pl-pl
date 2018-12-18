@@ -1,10 +1,10 @@
 ---
-title: Tworzenie aplikacji internetowej platformy ASP.NET Core w języku C# przy użyciu programu Visual Studio
+title: Tworzenie aplikacji internetowej platformy ASP.NET Core wC#
 description: Dowiedz się, jak utworzyć prostą aplikację sieci web Hello World w programie Visual Studio w języku C# i ASP.NET Core, który krok po kroku.
-ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: mvc,seodec18
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -14,22 +14,34 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 90b1f8209928922c388325163f37f0b1d7e983bb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: fb9dbc94d06bbb260884a2379e2427969fec1031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135608"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159246"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web platformy ASP.NET Core
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio
 
 W ramach tego wprowadzenia 5 – 10 minut, jak używać programu Visual Studio utworzysz prostą aplikację sieci web "Hello World" przy użyciu szablonu projektu programu ASP.NET i języka programowania C#.
 
+## <a name="before-you-begin"></a>Przed rozpoczęciem
+
+### <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+### <a name="update-visual-studio"></a>Aktualizowanie programu Visual Studio
+
+Jeśli po zainstalowaniu programu Visual Studio, upewnij się, że używasz najnowszej wersji. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio 2017 do najnowszej wersji](../install/update-visual-studio.md) strony.
+
+### <a name="choose-your-theme-optional"></a>Wybierz kompozycję (opcjonalnie)
+
+Ten samouczek Szybki Start zawiera zrzuty ekranu, używanego przez ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ projektu jest dostarczany z wszystkich plików szablonów do tworzenia aplikacji sieci web, przed nawet dodano niczego!
+Aby rozpocząć, należy utworzyć projekt aplikacji sieci web platformy ASP.NET Core. Typ projektu jest dostarczany z wszystkich plików szablonów do tworzenia aplikacji sieci web, przed nawet dodano niczego!
 
 1. Otwórz program Visual Studio 2017.
 
@@ -40,7 +52,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
    ![Utwórz nowy projekt aplikacji sieci Web programu ASP.NET Core dla języka C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie.
+   > Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie. (W zależności od ustawień wyświetlania, trzeba będzie Przewinięcie w celu wyświetlenia go.)
    >
    > ![Instalator programu Visual Studio Otwórz okno dialogowe Nowy projekt](../ide/media/open-visual-studio-installer.png)
    >
@@ -50,7 +62,12 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
    >
    > (Może być ma zamknięcie programu Visual Studio, zanim będzie można kontynuować instalowania nowego obciążenia).
 
-1. W **Nowa aplikacja internetowa ASP.NET Core** okna dialogowego Sprawdź, czy **ASP.NET Core 2.0** pojawia się w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web** i wybierz polecenie **OK**.
+1. W **Nowa aplikacja internetowa ASP.NET Core** okno dialogowe, wybierz opcję **ASP.NET Core 2.0** lub nowszych z górnego menu rozwijanego.
+
+   > [!NOTE]
+   > Jeśli nie widzisz **ASP.NET Core 2.0** lub nowszym, upewnij się, że używasz najnowszej wersji programu Visual Studio. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio 2017 do najnowszej wersji](../install/update-visual-studio.md) strony.
+
+1. Następnie wybierz pozycję **aplikacji sieci Web**, a następnie wybierz **OK**.
 
    ![Okno dialogowe nowej aplikacji sieci Web programu ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
 
@@ -91,7 +108,7 @@ Wkrótce potem Visual Studio otwiera plik projektu.
 1. Naciśnij klawisz **Ctrl**+**F5** Uruchom aplikację i otworzyć go w przeglądarce sieci web.
 
    > [!NOTE]
-   > Jeśli otrzymasz komunikat o błędzie informujący, że, **nie można połączyć się z serwerem sieci web usług IIS Express**, zamknij program Visual Studio, a następnie otwórz go za pomocą **Uruchom jako administrator** opcję z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
+   > Jeśli otrzymasz komunikat o błędzie informujący, że, **nie można połączyć się z serwerem sieci web usług IIS Express**, lub komunikat o błędzie dotyczący certyfikatu SSL, zamknij program Visual Studio. Następnie otwórz program Visual Studio przy użyciu **Uruchom jako administrator** opcję z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
 
 1. W górnej części strony sieci web wybierz **o**.
 
@@ -114,4 +131,4 @@ Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 ## <a name="see-also"></a>Zobacz także
 
-[Publikowanie aplikacji sieci web w usłudze Azure App Service przy użyciu programu Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Publikowanie aplikacji sieci web w usłudze Azure App Service przy użyciu programu Visual Studio](../deployment/quickstart-deploy-to-azure.md)

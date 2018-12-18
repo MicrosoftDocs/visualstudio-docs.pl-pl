@@ -1,5 +1,5 @@
 ---
-title: Analiza kodu dla kodu zarządzanego w programie Visual Studio
+title: Statyczna analiza kodu dla kodu zarządzanego
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320818"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389315"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Omówienie analizy kodu dla kodu zarządzanego
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Omówienie statycznej analizy kodu dla kodu zarządzanego w programie Visual Studio
 
-Program Visual Studio 2017 analizuje kod zarządzany na dwa sposoby: za pomocą starszej wersji *FxCop* analizy statycznej zestawów zarządzanych, a dzięki platformie kompilatora .NET *analizatory*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów platformie kompilatora .NET, zobacz [analizatorów Przegląd Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Program Visual Studio 2017 można wykonać analizy kodu dla kodu zarządzanego na dwa sposoby: za pomocą *FxCop* analizy statycznej zestawów zarządzanych, a za pomocą nowoczesnych więcej *analizatorów Roslyn*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów kodu, zobacz [analizatorów Przegląd Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje informacje o zestawach, takie jak naruszenia programowania i projektowania reguły określone w wytycznych projektowych programu Microsoft .NET Framework.
 
@@ -51,7 +51,7 @@ Często jest to użyteczne, aby wskazać, że ostrzeżenie nie ma zastosowania. 
 Pomijanie ostrzeżeń w źródłowej jest implementowane za pomocą atrybutów niestandardowych. Aby pominąć ostrzeżenie, Dodaj atrybut `SuppressMessage` do kodu źródłowego, jak pokazano w poniższym przykładzie:
 
 ```csharp
-[System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
 Public class MyClass
 {
    // code

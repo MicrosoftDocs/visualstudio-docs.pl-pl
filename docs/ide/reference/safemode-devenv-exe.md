@@ -1,5 +1,5 @@
 ---
-title: -Tryb awaryjny (devenv.exe)
+title: -SafeMode (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c678d7304c879cf42c24de9d83704971043676
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6df78ec4be1fc94951634b84a98e80dc1403a41b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704151"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948741"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-Uruchamia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w trybie awaryjnym, ładowanie tylko domyślnego środowiska i usług.
+Uruchamia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w trybie awaryjnym, ładowanie tylko środowisko domyślne i usługi.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,10 +31,10 @@ devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Uwagi
- Ten przełącznik zapobiega podczas ładowania wszystkich innych firm VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zostanie uruchomiony, w związku z tym zapewnienia stabilnej wykonywania.
+ Ten przełącznik uniemożliwia załadowanie, kiedy wszystkich innych pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoczyna się, co pozwala na zapewnienie stabilne wykonywania.
 
 ## <a name="description"></a>Opis
- W następującym przykładzie uruchomiono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w trybie awaryjnym.
+ Poniższy przykład rozpoczyna się [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w trybie awaryjnym.
 
 ## <a name="code"></a>Kod
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918028"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561715"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 
@@ -141,7 +141,7 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
     {
         //get the COLORREF structure
         uint win32Color;
-        uiShell.GetVSSysColorEx(VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
+        uiShell2.GetVSSysColorEx((int)__VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
 
         //translate it to a managed Color structure
         Color myColor = ColorTranslator.FromWin32((int)win32Color);

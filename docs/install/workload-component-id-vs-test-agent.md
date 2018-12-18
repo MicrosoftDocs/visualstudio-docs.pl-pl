@@ -1,11 +1,12 @@
 ---
 title: Visual Studio Test Agent 2017 obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Użyj obciążenia programu Visual Studio i identyfikatory składników do uruchamiania testów automatycznych i testy obciążeniowe zdalnie
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: 17ff87f1b498a523db2835d3ccf9f9cfe7f242a1
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: d75fe8a1dee373dc7d8b48ac1f03c3a2592c705e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138597"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048386"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 składników katalogu
 

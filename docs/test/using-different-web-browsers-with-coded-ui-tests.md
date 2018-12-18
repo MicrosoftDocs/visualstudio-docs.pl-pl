@@ -1,5 +1,5 @@
 ---
-title: Za pomocą różnych przeglądarek, za pomocą kodowanych testów interfejsu użytkownika w programie Visual Studio
+title: Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,28 +9,30 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380720"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895109"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Użyj innej przeglądarki za pomocą kodowanych testów interfejsu użytkownika
 
 Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji internetowych przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji internetowych.
 
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
 Najpierw zainstaluj [Selenium components for coded UI cross testowania przeglądarki](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Co jest obsługiwane we wszystkich przeglądarkach sieci web?
 
--   [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.
+-   [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.
 
 -   Wyskakujące okienka i okna dialogowe
 
--   [Wykonaj podstawowy kod JavaScript bez zwrotu typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+-   [Wykonaj podstawowy kod JavaScript bez zwrotu typu](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+-   Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Dlaczego należy używać zakodowanych testów interfejsu użytkownika w kilku przeglądarkach sieci Web?
 

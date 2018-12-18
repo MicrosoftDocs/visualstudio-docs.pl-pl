@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowego edytora HTTP dla edytora testów wydajności sieci Web w programie Visual Studio
+title: Tworzenie niestandardowego edytora HTTP dla edytora testów wydajności sieci Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83ed50b5f242f5a869e1c0a69bf6a0674bdf4d69
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862466"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068412"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Porady: tworzenie HTTP niestandardowego edytora treści do edytora testów wydajności sieci Web
 
 Można tworzyć Edytor treści niestandardowych, który umożliwia edytowanie treść ciągu lub dane binarne ciała treści żądania usługi sieci web, na przykład SOAP, REST, asmx, wcf, RIA i inne typy żądań usług sieci web.
 
- Można zaimplementować te rodzaje edytorów:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Można zaimplementować te rodzaje edytorów:
 
 -   **Edytor zawartości ciągu** ten sposób jest implementowany przy użyciu <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> interfejsu.
 

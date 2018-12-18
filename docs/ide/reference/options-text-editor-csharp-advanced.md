@@ -1,6 +1,6 @@
 ---
 title: Opcje, edytor tekstu, C#, zaawansowane
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356746"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670718"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
@@ -36,7 +36,7 @@ Użyj **zaawansowane** Strona opcji, aby modyfikować ustawienia formatowania ed
 
 - Umieść najpierw dyrektywy "System" podczas sortowania deklaracji Using
 
-   Po wybraniu **Usuń i Sortuj wyrażenia Using** w sortuje menu kliknij prawym przyciskiem myszy polecenie `using` dyrektywy i miejsc przestrzeni nazw "System" w górnej części listy
+   Po wybraniu **Usuń i Sortuj wyrażenia Using** w sortuje menu kliknij prawym przyciskiem myszy polecenie `using` dyrektywy i miejsc przestrzeni nazw "System" w górnej części listy.
 
    Przed rozpoczęciem sortowania:
 
@@ -89,9 +89,10 @@ Użyj **zaawansowane** Strona opcji, aby modyfikować ustawienia formatowania ed
    using System.Linq;
    ```
    
-- Dodaj dyrektywy Using dla typów odwołań do zestawów i pakietów NuGet 
+- Sugeruj dyrektywy Using dla typów w zestawach referencyjnych 
+- Sugeruj dyrektywy Using dla typów w pakietach NuGet 
 
-   Po wybraniu [szybka akcja](../quick-actions.md) jest dostępna zainstalować pakiet NuGet i dodać `using` dyrektywy dla typów bez odwołań.
+   Po wybraniu tych opcji [szybka akcja](../quick-actions.md) jest dostępna zainstalować pakiet NuGet i dodać `using` dyrektywy dla typów bez odwołań.
 
    ![Szybkie działanie, aby zainstalować pakiet NuGet w programie Visual Studio](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ Użyj **zaawansowane** Strona opcji, aby modyfikować ustawienia formatowania ed
 - Przejdź do trybu konspektu po otwarciu plików
 
    Po wybraniu automatycznie przedstawia plik kodu, który tworzy zwijany bloków kodu. Przy pierwszym otwarciu pliku #regions bloków i bloków nieaktywnego kodu Zwiń.
+
+- Pokaż separatory wierszy procedury
+
+   Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana *.vb* pliki źródłowe projektu w lokalizacjach wymienione w poniższej tabeli:
+
+   |Lokalizacja w pliku źródłowym .vb|Przykład lokalizację wiersza|
+   |---------------------------------|------------------------------|
+   |Po zamknięciu bloku konstrukcja deklaracji|-Na końcu klasy, struktury, moduł, interfejs lub wyliczenie<br />-After właściwości, funkcji lub sub<br />-Nie między get i set klauzule we właściwości|
+   |Po zestaw konstrukcji w jednym wierszu|-After instrukcje importowania, przed definicją typu w pliku klasy<br />-After zmienne zadeklarowane w klasie, zanim wszelkie procedury|
+   |Po jednym wierszu deklaracji (-block deklaracje poziomu)|— Następujące instrukcje importu dziedziczy instrukcji, deklaracji zmiennych, deklaracji zdarzeń, delegat deklaracje i biblioteki DLL zadeklarować instrukcji|
 
 ## <a name="editor-help"></a>Pomoc Edytora
 

@@ -16,12 +16,12 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4b955879380166aae7d9a8e210ac7d5e53f882f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6577a10446ce1db36746959f6d456a56e4667bb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873477"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761065"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Komentowanie kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

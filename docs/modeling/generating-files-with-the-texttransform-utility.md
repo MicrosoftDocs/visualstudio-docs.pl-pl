@@ -1,5 +1,5 @@
 ---
-title: Generowanie plików za pomocą narzędzia TextTransform w programie Visual Studio
+title: Generowanie plików za pomocą narzędzia TextTransform
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 554ed126aa46b15148b902b901d8e9b664e3cdbd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928662"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062299"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generowanie plików za pomocą narzędzia TextTransform
 
@@ -62,7 +62,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory >|Katalog, który zawiera szablony tekstowe zawarte w szablonie określony tekst.|
 |**-P** \<referencepath >|Katalog do przeszukania zestawy określone w szablonie tekstu lub przy użyciu **- r** opcji.<br /><br /> Na przykład aby uwzględnić zestawy używany do Visual Studio API, należy użyć<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Nazwa, pełna nazwa typu i zestawu procesor dyrektywy, który może służyć do przetwarzania niestandardowych dyrektyw szablonu tekstu.|
-|**-** [processorName]! [directiveName]! \<parameterName >! \<parameterValue >|Określ wartość parametru dla procesora dyrektywy. Jeśli określisz tylko nazwy parametru i wartości parametru będą dostępne dla wszystkich procesorów dyrektyw. Jeśli określisz procesor dyrektywy, parametr jest dostępna tylko w określonym procesorem. Jeśli określisz nazwę dyrektywy, parametr jest dostępna tylko wtedy, gdy określony dyrektywa jest przetwarzany.<br /><br /> Dostęp do wartości parametrów z procesora dyrektywy lub szablonu tekstu, należy użyć [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). W szablonie tekstu, obejmują `hostspecific` w dyrektywie szablonu i wywołania wiadomości na `this.Host`. Na przykład:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zawsze wpisać "!" oznacza, nawet jeśli parametr zostanie pominięty, opcjonalny procesora i nazwy dyrektyw. Na przykład:<br /><br /> `-a !!param!value`|
+|**-** [processorName]! [directiveName]! \<parameterName >! \<parameterValue >|Określ wartość parametru dla procesora dyrektywy. Jeśli określisz tylko nazwy parametru i wartości parametru będą dostępne dla wszystkich procesorów dyrektyw. Jeśli określisz procesor dyrektywy, parametr jest dostępna tylko w określonym procesorem. Jeśli określisz nazwę dyrektywy, parametr jest dostępna tylko wtedy, gdy określony dyrektywa jest przetwarzany.<br /><br /> Dostęp do wartości parametrów z procesora dyrektywy lub szablonu tekstu, należy użyć [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)). W szablonie tekstu, obejmują `hostspecific` w dyrektywie szablonu i wywołania wiadomości na `this.Host`. Na przykład:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zawsze wpisać "!" oznacza, nawet jeśli parametr zostanie pominięty, opcjonalny procesora i nazwy dyrektyw. Na przykład:<br /><br /> `-a !!param!value`|
 |**-h**|Zawiera Pomoc.|
 
 ## <a name="related-topics"></a>Tematy pokrewne

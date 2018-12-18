@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6077fb8a9f0db360389953ef6a7ed25c6d242247
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370591"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821295"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Wprowadzenie do analizatorów Roslyn
 
@@ -30,12 +30,14 @@ Za pomocą analizatorów kodu na żywo, na podstawie projektu w programie Visual
 
 [Analizator Roslyn rzeczywistych](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , możesz też obejrzeć jako [mówić](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Kilka przykładów w witrynie github, pogrupowane według trzy rodzaje analizatorów](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[Kilka przykładów w witrynie GitHub, pogrupowane według trzy rodzaje analizatorów](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
 [Wprowadzenie i przewodnik po kilku analizatorów](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Omówienie analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md)
-- [Więcej dokumentów w witrynie github OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [Samouczek: Pisanie Twojego pierwszego analizator i poprawkę kodu](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+- [Odwołanie do .NET kompilatora platformy wersji pakietu](roslyn-version-support.md)
+- [Więcej dokumentów w witrynie GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Reguł programu FxCop implementowane za pomocą analizatorów Roslyn w witrynie GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

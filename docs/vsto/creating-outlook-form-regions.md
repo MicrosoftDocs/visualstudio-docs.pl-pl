@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866431"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673084"
 ---
 # <a name="create-outlook-form-regions"></a>Tworzenie regionów formularzy programu Outlook
   Regiony formularzy służy do dostosowywania formularzy programu Microsoft Office Outlook. Visual Studio zapewnia zaawansowane narzędzia, które ułatwiają służących do projektowania, opracowywania i debugowania regionów formularza.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866431"
   
 - Wyświetl niestandardowy interfejs użytkownika, w okienku odczytu i inspektorzy.  
   
-  Aby uzyskać więcej informacji, zobacz [dostosowywanie stron formularza i regionów formularzy w](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Aby uzyskać więcej informacji, zobacz [dostosowywanie stron formularza i regionów formularzy w](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Dodawanie regionów formularzy programu Outlook do projektu  
  Możesz użyć **nowy Region formularza programu Outlook** kreatora w celu zaprojektowania nowego regionu formularza lub zaimportować regionu formularza zaprojektowanego w programie Outlook. Ponadto jeśli region formularza, które było używane w innym projekcie dodatku narzędzi VSTO dla programu Outlook, można ponownie użyć Twojego istniejącego regionu formularza.  

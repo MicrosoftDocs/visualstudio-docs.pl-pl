@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debugging [Visual Basic], Windows applications
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4997aa5f184fb5d6f0e9a3ccd08a9d829c26a0cc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885138"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765625"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Przygotowanie debugowania: aplikacje Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego
   
  Można debugować aplikacje Windows Forms z wewnątrz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub przez dołączenie do już uruchomionego aplikacji. Aby uzyskać więcej informacji na temat dołączania, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Aby debugować aplikację języka C#, F # lub Visual Basic Windows Forms  
+### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Aby debugować C#, F#, lub aplikacji Visual Basic Windows Forms  
   
 1. Otwórz projekt w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -76,7 +76,7 @@ Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [C#, F # i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Porady: Ustaw wartość Debug i Release konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)   
  [Ustawienia projektu dla języka C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   

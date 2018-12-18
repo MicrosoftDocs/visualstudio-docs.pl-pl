@@ -1,7 +1,7 @@
 ---
 title: Edytowanie kodu języka R
-description: Program Visual Studio oferuje dostosowane środowisko edytowania dla R przy zachowaniu wszystkie funkcje i możliwości, aby korzystać z rozszerzeń.
-ms.date: 01/24/2018
+description: Visual Studio zawiera dostosowane środowisko edytowania dla języka R, zachowując wszystkie funkcje i możliwości, aby korzystać z rozszerzeń.
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,126 +10,126 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238363"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220882"
 ---
-# <a name="edit-r-code-in-visual-studio"></a>Edytuj kod języka R w programie Visual Studio
+# <a name="edit-r-code-in-visual-studio"></a>Edytowanie kodu języka R w programie Visual Studio
 
-R narzędzi dla programu Visual Studio (RTVS) dostosowanie programu Visual Studio edytowania specjalnie z myślą o R przy zachowaniu wszystkie funkcje i możliwości, aby korzystać z rozszerzeń. (Na przykład, jeśli wolisz powiązań klucza VIM, można zainstalować bezpłatną [rozszerzenia VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) z galerii programu Visual Studio.)
+Narzędzia R Tools for Visual Studio (RTVS) dostosowanie programu Visual Studio, edytowanie specjalnie dla języka R przy zachowaniu wszystkich funkcji i możliwości, aby korzystać z rozszerzeń. (Na przykład, jeśli wolisz VIM klawiszy, można zainstalować bezpłatne [rozszerzenia VsVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim) z witryny Marketplace programu Visual Studio.)
 
-Oprócz funkcji w tym artykule, zobacz też [IntelliSense](r-intellisense.md), [linting](linting-r-code.md), [wstawki kodu](code-snippets-for-r.md), i [R Markdown](rmarkdown-with-r-in-visual-studio.md).
+Oprócz funkcji w tym artykule, zobacz też [IntelliSense](r-intellisense.md), [Zaznaczanie błędów](linting-r-code.md), [fragmenty kodu](code-snippets-for-r.md), i [R Markdown](rmarkdown-with-r-in-visual-studio.md).
 
-## <a name="syntax-highlighting"></a>wyróżnianie składni
+## <a name="syntax-highlighting"></a>Wyróżnianie składni
 
-Oprócz kolorowania różnych części kodu, na przykład ciągi, komentarze i słów kluczowych, RTVS wyróżnia i umożliwia łącza w komentarzach:
+Oprócz kolorowania różnych części kodu, takich jak ciągi, komentarze i słów kluczowych, RTVS wyróżnia i umożliwia łącza w komentarzach:
 
-![Kolorowania dla kodu języka R](media/editing-syntax-colors.png)
+![Kolorowania kodu języka R](media/editing-syntax-colors.png)
 
-Aby dostosować czcionki i kolory niektórych wyróżnienia, wybierz opcję **narzędzia** > **opcje** polecenia, przejdź do **środowiska**  >  **Czcionki i kolory**, następnie zmiany ustawień dla elementów powiązanych R **wyświetlania elementów** pola:
+Aby dostosować, czcionki i kolory określone wyróżnienia, zaznacz **narzędzia** > **opcje** polecenia, przejdź do folderu **środowiska**  >  **Czcionki i kolory**, następnie zmień ustawienia dla elementów związanych z języka R w **wyświetlania elementów** pola:
 
 ![Czcionki i kolory dla kodu języka R](media/editing-syntax-colors-options.png)
 
-Visual Studio również podkreśla błędów składni w edytorze:
+Program Visual Studio również podkreśla błędy składniowe w edytorze:
 
-![Błąd składniowy wyróżnianie w kodzie języka R](media/editing-syntax-error.png)
+![Błąd składniowy wyróżniania w kodzie języka R](media/editing-syntax-error.png)
 
 Aby zmienić to zachowanie, zobacz **zaawansowane** > **sprawdzanie składni** w obszarze [opcji edytora](#editor-options).
 
-## <a name="edit-and-organize-code"></a>Edytuj i organizowanie kodu
+## <a name="edit-and-organize-code"></a>Edytuj i organizowania kodu
 
-Podczas pisania kodu RTVS możliwość automatycznego uzupełniania, zgodnie z opisem na [IntelliSense](r-intellisense.md) strony. Powoduje także, automatycznego formatowania, takie jak uzupełnianie nawiasy i nawiasy: 
+Podczas pisania kodu RTVS zapewnia automatyczne uzupełnianie, zgodnie z opisem na [IntelliSense](r-intellisense.md) strony. Wykonuje też, automatycznego formatowania, takie jak uzupełnianie nawiasów klamrowych i nawiasy: 
 
-![Animacja wbudowanego formatowania](media/editing-inline-formatting.gif)
+![Animacja formatowanie wbudowanych](media/editing-inline-formatting.gif)
 
-Podczas wpisywania wywołania funkcji, które mają wiele parametrów, często chcesz wyrównać parametrów, aby ułatwić kod. RTVS pamięta wcięcie zestawu parametrów i automatycznie stosuje ten wcięcie dla kolejnych wierszy:
+Podczas wpisywania wywołań funkcji, które mają wiele parametrów, często ma być wiersz w górę parametry, aby poprawić czytelność kodu. RTVS pamięta wcięcie zestawu parametrów i automatycznie stosuje ten wcięć dla kolejnych wierszy:
 
-![Animacja automatyczne wcięcia](media/editing-auto-indentation.gif)
+![Animacja Automatyczne wcięcie](media/editing-auto-indentation.gif)
 
 Aby zmienić to zachowanie, zobacz [opcji edytora](#editor-options) dla **karty** grupy.
 
-Regiony zwijanej kodu pozwalają tymczasowo ukryć część kodu w edytorze. Visual Studio utworzy różnych regionach automatycznie, podobnie jak w przypadku instrukcji wiele wierszy, chyba że **zaawansowane** > **Tworzenie konspektu** > **zwijanie kodu**  opcja ma wartość Off.
+Zwijane regiony kodu umożliwiają tymczasowo ukryć części kodu w edytorze. Program Visual Studio tworzy różnych regionów dla Ciebie automatycznie, jak w przypadku wielowierszowe instrukcje, chyba że **zaawansowane** > **konspekt** > **zwijanie kodu**  opcja jest ustawiona na wyłączone.
 
-Można utworzyć obszaru własny, przestrzennego odpowiedni kod z komentarzami, których nazwa kończy `---`. Mały +/-kontrolki do lewej strony kodu pozwala następnie rozwijanie i zwijanie obszarów:
+Utworzyć odpowiedni kod regionu własny, Otocz z komentarzami, które kończą się `---`. Mała +/-kontrolek z lewej strony kodu pozwala następnie rozwijanie i zwijanie regionów:
 
-![Tworzenie zwijanej region z komentarzami](media/editing-collapsible-regions.gif)
+![Tworzenie region zwijany z komentarzami](media/editing-collapsible-regions.gif)
 
-Domyślnie program Visual Studio Wstawia spacje po naciśnięciu **kartę** klucza. Można ponownie zmienić to zachowanie, zgodnie z opisem na [karty Opcje, Edytor tekstu,](../ide/reference/options-text-editor-all-languages.md).
+Domyślnie program Visual Studio Wstawia spacje, po naciśnięciu klawisza **kartę** klucza. Można ponownie zmienić to zachowanie, zgodnie z opisem na [karty Opcje, Edytor tekstu](../ide/reference/options-text-editor-all-languages.md).
 
-## <a name="code-navigation"></a>Nawigacja w kodzie
+## <a name="code-navigation"></a>Nawigowanie po kodzie
 
-Nawigacja w kodzie umożliwia szybki dostęp do kodu źródłowego z programem R i jego bibliotek. Te funkcje zachować w przepływie pracy, a nie konieczności ręcznego wyszukiwania kodu.
+Nawigowanie po kodzie umożliwia szybki dostęp do kodu źródłowego programu R i jego bibliotek. Te funkcje na bieżąco przepływ pracy, niż musieć go ręcznie wyszukiwanie w kodzie.
 
-**Przejdź do definicji** szybko przechodzi do definicji funkcji lub wyskakującej wbudowanego edytora mini odczytać kodu źródłowego funkcji biblioteki. Kliknij prawym przyciskiem myszy właśnie funkcja odsetek i wybierz **przejdź do definicji**, albo umieść kursor w funkcji i naciśnij klawisz **F12**.
+**Przejdź do definicji** szybko skacze do definicji funkcji lub pojawia się wbudowany mini edytor, którego można odczytać kodu źródłowego funkcji biblioteki. Po prostu kliknij prawym przyciskiem myszy funkcję, zainteresowań, a następnie wybierz pozycję **przejdź do definicji**, albo umieść kursor w funkcji i naciśnij klawisz **F12**.
 
-To polecenie powoduje otwarcie nowego okna edytora kodu źródłowego dla funkcji. Kursor jest znajdują się na początku definicji funkcji.
+To polecenie otwiera nowe okno edytora zawierające kod źródłowy dla funkcji. Wygodnie kursora na początku definicji funkcji.
 
-**Podgląd definicji**, wywołana w menu kontekstowym lub **Alt**+**F12**, wstawia region tylko do odczytu, którą można przewijać zawierające kod źródłowy funkcji poniżej Wywołanie funkcji:
+**Zobacz definicję**, wywoływana w menu kliknij prawym przyciskiem myszy lub **Alt**+**F12**, wstawia region tylko do odczytu, którą można przewijać zawierające kod źródłowy funkcji poniżej Wywołanie funkcji:
 
 ![Animacja dla definicji wglądu](media/editing-peek-definition.gif)
 
-## <a name="send-code-to-the-interactive-window"></a>Wyślij kod na okno interaktywne
+## <a name="send-code-to-the-interactive-window"></a>Wyślij kod do okna interaktywnego
 
-Wielu deweloperów, takich jak do pisania kodu w edytorze, a następnie wyślij kod do [okna interaktywnego](interactive-repl-for-r-in-visual-studio.md) natychmiastowego testowania (znanej także jako odczytu oceny-drukowania-pętla lub REPL). Naciśnięcie przycisku **Ctrl**+**Enter** w R Edytor bieżącego wiersza kodu do okna interaktywnego, a następnie umieszcza kursor w następnym wierszu. Z **Ctrl**+**Enter**, następnie, można efektywnie przejrzeć kodu w edytorze.
+Wielu programistów chce pisanie kodu w edytorze, a następnie wyślij kod do [okna interaktywnego](interactive-repl-for-r-in-visual-studio.md) do natychmiastowego testowania (znany także jako odczytu — ocena-Print-Loop lub REPL). Naciśnięcie klawisza **Ctrl**+**Enter** języka R w edytorze bieżący wiersz kodu do okna interaktywnego, a następnie umieszcza kursor w następnym wierszu. Za pomocą **Ctrl**+**Enter**, następnie można skutecznie przejść przez kod w edytorze.
 
-Możesz też wybrać kod i naciśnij klawisz **Ctrl**+**Enter** do zastosowania tego całego zaznaczenia. Alternatywnie kliknij zaznaczenie prawym przyciskiem myszy i wybierz **Execute w Interactive**.
+Możesz również wybrać kod i naciśnij klawisz **Ctrl**+**Enter** do zastosowania tej całego wyboru. Alternatywnie, kliknij prawym przyciskiem myszy zaznaczenie i wybierz **Execute w Interactive**.
 
 ## <a name="format-code"></a>Formatowanie kodu
 
-Automatyczne formatowanie programu Visual Studio zachowuje kod, który zapisu, a także kod, który możesz wkleić do edytora sformatowane jako zestaw przez swoje preferencje. Należy również wybrać opcję, kliknij prawym przyciskiem myszy, a następnie wybierz **Wybieranie formatu** (**Ctrl**+**K**,**F**) do zastosowania tych Preferencje. Na przykład, jeśli masz definicji funkcji wszystko w jednym wierszu:
+Automatyczne formatowanie w programie Visual Studio przechowuje kod, który pisania, a także kod, który możesz wkleić do edytora, sformatowane według stawki ustalonej przez preferencje. Można także dokonać wyboru, kliknij prawym przyciskiem myszy, a następnie wybierz **Formatuj zaznaczenie** (**Ctrl**+**K**,**F**) do zastosowania tych Preferencje. Na przykład, gdyby definicja funkcji wszystko w jednym wierszu:
 
 ```R
 f<-function  (a){  return(a + 1) }
 ```
 
-Formatowania czyści go jako:
+Stosuje formatowanie czyści ją jako:
 
 ```R
 f <- function(a) { return(a + 1) }
 ```
 
-Do ponownego formatowania pliku całego kodu, wybierz **Edytuj** > **zaawansowane** > **dokumentu w formacie** (**Ctrl** + **E**,**D**).
+Aby ponownie formatować całego pliku z kodem, wybierz **Edytuj** > **zaawansowane** > **Formatuj dokument** (**Ctrl** + **E**,**D**).
 
-Automatyczne formatowanie jest operacją oddzielne, którą można cofnąć. Na przykład, jeśli kod wkleić do edytora i formatowanie ma to zastosowanie, wybranie opcji **Edytuj** > **Cofnij** lub naciskając klawisz **Ctrl** + **Z** raz odwraca formatowanie; drugi **Cofnij** odwraca Wklej samej siebie.
+Automatyczne formatowanie jest oddzielnym operacji, która może być cofnięte. Na przykład, jeśli Wklej kod w edytorze i formatowanie ma zastosowanie, wybranie opcji **Edytuj** > **Cofnij** lub naciskając **Ctrl** + **Z** raz odwraca formatowanie; drugi **Cofnij** odwraca wklejania, sam.
 
-Opcje formatowania (w tym wyłączenie opcji formatowania) są ustawiane za pomocą **narzędzia** > **opcje** na **Edytor tekstu**  >  **R** > **zaawansowane** kartę. Można przejść bezpośrednio do tej strony za pomocą **narzędzia R** > **opcji edytora** poleceń lub przez kliknięcie prawym przyciskiem myszy w edytorze i wybraniu **Opcjeformatowania**. Zobacz [opcji edytora](#editor-options) sekcji, aby uzyskać szczegółowe informacje.
+Opcje formatowania (w tym wyłączenie opcji formatowania) są ustawiane za pomocą **narzędzia** > **opcje** na **edytora tekstów**  >  **R** > **zaawansowane** kartę. Możesz przejść bezpośrednio do tej strony, przy użyciu **R Tools** > **opcji edytora** polecenia lub przez kliknięcie prawym przyciskiem myszy w edytorze i wybraniu **Opcjeformatowania**. Zobacz [opcji edytora](#editor-options) sekcji, aby uzyskać szczegółowe informacje.
 
-## <a name="inserting-roxygen-comments"></a>Wstawianie Roxygen komentarzy
+## <a name="inserting-roxygen-comments"></a>Wstawianie komentarzy Roxygen
 
-RTVS przewiduje generowania skrótu [Roxygen](http://roxygen.org/) komentarzy przy użyciu nazwy parametrów funkcji. Po prostu wpisz `###` na pusty wiersz powyżej definicji funkcji:
+RTVS zapewnia skrót do generowania [Roxygen](http://roxygen.org/) komentarze, przy użyciu nazwy parametrów funkcji. Po prostu wpisz `###` w pustym wierszu powyżej definicji funkcji:
 
-![Animacja wstawiania komentarz Roxygen](media/editing-roxygen-comments.gif)
+![Animacja Wstawianie komentarza Roxygen](media/editing-roxygen-comments.gif)
 
 ## <a name="editor-options"></a>Opcje edytora
 
-Opcje edytora są ustawiane za pomocą **narzędzia** > **opcje** polecenia, przechodząc do **Edytor tekstu** > **R**, lub użyj polecenia skrót **narzędzia R** > **opcji edytora**.
+Opcji edytora specyficznych są ustawiane za pomocą **narzędzia** > **opcje** polecenia, przechodząc do **edytora tekstów** > **R**, lub użyj polecenia skrót **R Tools** > **opcji edytora**.
 
-Opcje na **ogólne**, **paski przewijania**, i **karty** karty nie są specyficzne dla języka R, ale są raczej ogólne ustawienia programu Visual Studio, dostępne dla wszystkich języków, ale zastosowane na Podstawa dla języka. Aby uzyskać więcej informacji zobacz następujące artykuły:
+Opcje na **ogólne**, **paski przewijania**, i **karty** karty nie są specyficzne dla języka R, ale są raczej ogólne ustawienia programu Visual Studio, dostępne dla wszystkich języków, ale zastosowane na Podstawa dla języka. Aby uzyskać szczegółowe informacje zobacz następujące artykuły:
 
-- [Opcje, Edytor tekstu, wszystkie języki](../ide/reference/options-text-editor-all-languages.md)
-- [Śledzenie można kodu dostosowując pasek przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
-- [Opcje, Edytor tekstu, karty](../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Opcje, Edytor tekstów, Wszystkie języki](../ide/reference/options-text-editor-all-languages.md)
+- [Śledzić możesz kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Karty Opcje, Edytor tekstu](../ide/reference/options-text-editor-all-languages-tabs.md)
 
-Opcje na **R** > **zaawansowane** są specyficzne dla RTVS:
+Opcje na **R** > **zaawansowane** karty są specyficzne dla RTVS:
 
 | Grupa | Opcja | Domyślny | Opis |
 | --- | --- | --- | --- |
-| Formatowanie | Automatyczne formatowanie | On | Formatuje kodu podczas pisania. Nie wpływa na **Wybieranie formatu** lub **dokumentu w formacie** poleceń. |
-| | Rozwinięte nawiasów klamrowych | Off | Umieszcza otwarty {w nowym wierszu. |
-| | Format po wklejeniu | On | Stosuje formatowanie podczas wklejania. |
-| | Format zakresu na} | On | Formaty zakresu po wpisaniu zamykającego}. |
-| | Miejsca po przecinku | On | Umieszcza odstęp po przecinkach. |
-| | Ilość miejsca po — słowo kluczowe | On | Umieszcza spację po słów kluczowych, takich jak `if`, `while`, i `repeat`. |
-| | Odstęp przed { | On | Umieszcza spacji przed i otwieranie {. |
-| | Spacje wokół = | On | Umieszcza spacje wokół znaku równości. |
-| IntelliSense | Zatwierdź na klawisz Enter | Off | Zatwierdza wyboru automatycznego uzupełniania po **Enter** zostanie naciśnięty. |
-| | Zatwierdź klucza miejsca | Off | Zatwierdza wyboru automatycznego uzupełniania po **miejsca** zostanie naciśnięty.|
-| | Listy uzupełniania w pierwszym znakiem | On | Zawiera listę uzupełniania pierwszy typów znaków. Kiedy, zostanie wyświetlona lista uzupełniania z **Edytuj** > **IntelliSense** > **członków listy** (**Ctrl** + **J**). |
-| | Listy uzupełniania w **kartę** klucza | Off | Wywołuje listy uzupełniania wpisując co najmniej jeden znak i naciskając klawisz **kartę**. |
-| | Niezgodne typy częściowo nazwy argumentów | Off | Podczas wpisywania nazwy argumentów w wywołaniu funkcji, podpisu pomocy zawiera opis argumentu, który najlepiej odpowiada. |
-| Okno interaktywne | Sprawdzanie składni w konsoli języka R | Off | Stosuje składni sprawdzanie w oknie interaktywnym. Sprawdzanie składni może nie działać poprawnie w instrukcjach wiele wierszy. | 
-| Tworzenie konspektu | Zwijanie kodu | On | Automatycznie tworzy zwijanej regionów obszarów, takich jak wiele wierszy instrukcji. |
-| Sprawdzanie składni | Pokaż błędy składniowe | On | Umożliwia automatyczne składni Sprawdzanie kodu. |
+| Formatowanie | Formatowanie automatyczne | On | Formatuje kodu podczas wpisywania. Nie ma wpływu na **Formatuj zaznaczenie** lub **Formatuj dokument** poleceń. |
+| | Rozwinięty nawiasów klamrowych | Off | Umieszcza otwartą {w nowym wierszu. |
+| | Formatuj przy wklejeniu | On | Stosuje formatowanie przy wklejaniu. |
+| | Format zakresu} | On | Zakres formatów po wpisaniu zamykającego}. |
+| | Odstęp po przecinku | On | Umieszcza odstęp po przecinkach. |
+| | Odstęp po — słowo kluczowe | On | Umieszcza spację po słów kluczowych, takich jak `if`, `while`, i `repeat`. |
+| | Odstęp przed { | On | Umieszcza spacji przed i otwierania {. |
+| | Miejsca do magazynowania kolem znaku = | On | Umieszcza spacje wokół znaku równości. |
+| IntelliSense | Zatwierdzenie w klawisza Enter | Off | Zatwierdzenia automatyczne uzupełnianie zaznaczenia podczas **Enter** naciśnięciu. |
+| | Zatwierdź klucza miejsca | Off | Zatwierdzenia automatyczne uzupełnianie zaznaczenia podczas **miejsca** naciśnięciu.|
+| | Listy uzupełniania w pierwszym znakiem | On | Zawiera listy uzupełniania w pierwszym typy znaków. Gdy wyłączone, zostanie wyświetlona lista uzupełniania z **Edytuj** > **IntelliSense** > **List Members** (**Ctrl** + **"J"**). |
+| | Listy uzupełniania w **kartę** klucza | Off | Wywołuje listy uzupełniania, wpisując jeden lub więcej znaków, a następnie naciskając klawisz **kartę**. |
+| | Dopasowanie częściowe typy nazwy argumentu | Off | Podczas wpisywania nazwy argumentów w wywołaniu funkcji, pomocy dotyczącej sygnatur zawiera opis argumentu, który najlepiej odpowiada. |
+| Okno interaktywne | Kontrola syntaxe v Konzole R | Off | Stosuje składni sprawdzania w oknie interaktywnym. Sprawdzanie składni mogą nie działać poprawnie w instrukcjach wiele wierszy. | 
+| Tworzenie konspektu | Zwijanie kodu | On | Automatycznie tworzy zwijane regiony dla zagadnień, takich jak wielowierszowe instrukcje. |
+| Sprawdzanie składni | Pokaż błędy składniowe | On | Umożliwia automatyczne sprawdzanie kodu składni. |

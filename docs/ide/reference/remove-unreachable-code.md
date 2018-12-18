@@ -1,5 +1,5 @@
 ---
-title: Usuwanie nieosiągalnego kodu jest Refaktoryzacja w programie Visual Studio
+title: Usuwanie nieosiągalnego kodu refaktoryzacji
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -8,15 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd06fb7cd7b0e31df777a488c34a59e5a036e3b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836388"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059314"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Usuwanie nieosiągalnego kodu refaktoryzacji
 

@@ -1,6 +1,6 @@
 ---
 title: Zautomatyzowane testy interfejsu użytkownika
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371085"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896643"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
 Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkownika (UI) są znane jako *kodowane testy interfejsu użytkownika* (CUITs) w programie Visual Studio. Te testy obejmują, aplikacja jest funkcjonalna kontrolek interfejsu użytkownika. Umożliwiają one możesz sprawdzić, czy całej aplikacji, w tym interfejs użytkownika działa poprawnie. Kodowane testy interfejsu użytkownika są szczególnie przydatne, gdy sprawdzanie poprawności lub inna logika interfejsu użytkownika, na przykład na stronie sieci web. Są one również często używane do automatyzowania istniejącego testu ręcznego.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Jak pokazano na poniższej ilustracji, w środowisku projektowym typowe może być where, początkowo wystarczy skompilować aplikację i kliknij przycisk za pomocą kontrolek interfejsu użytkownika, aby sprawdzić, czy wszystko działa poprawnie. Następnie można zdecydować, do tworzenia automatycznych testów, dzięki czemu nie trzeba ręcznie przetestować aplikację w dalszym ciągu. W zależności od konkretnej funkcji testowane w aplikacji można napisać kod dla funkcjonalności testu lub test integracji, który może być lub może nie zawierać testowania na poziomie interfejsu użytkownika. Jeśli chcesz uzyskać bezpośredni dostęp do niektórych logiki biznesowej, może być kodu testu jednostkowego. Jednak w pewnych okolicznościach może być korzystne uwzględnić testowania różnych kontrolek interfejsu użytkownika w aplikacji. Kodowany test interfejsu użytkownika sprawdzić, czy ten postęp dokonany w kodzie nie ma wpływu na funkcjonalność aplikacji.
 
@@ -402,7 +404,7 @@ Aby uzyskać i ustawić określone wartości właściwości kontrolki interfejsu
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Aby pobierać lub ustawiać właściwości z kontrolek testu interfejsu użytkownika bezpośrednio
 
-Za pomocą kontrolek, które wynikają z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, takich jak [listy HTML](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) lub [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), można uzyskać lub ustawić bezpośrednio ich wartości właściwości. Poniższy kod pokazuje kilka przykładów:
+Za pomocą kontrolek, które wynikają z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, takich jak [listy HTML](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) lub [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), można uzyskać lub ustawić bezpośrednio ich wartości właściwości. Poniższy kod pokazuje kilka przykładów:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -443,7 +445,7 @@ Możesz analizować kodowanych testów interfejsu użytkownika za pomocą zakodo
 
 - [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Dodawanie obsługi kontrolek niestandardowych:** kodowanych testów interfejsu użytkownika nie obsługuje każdego możliwego interfejsu użytkownika i może nie obsługiwać interfejsu użytkownika, którą chcesz przetestować. Na przykład nie można od razu utworzyć kodowany test interfejsu użytkownika interfejsu użytkownika dla programu Microsoft Excel. Można jednak utworzyć rozszerzenie kodowanych testów interfejsu użytkownika, który będzie obsługiwać formant niestandardowy.
 

@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855820"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780792"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX language pack — dokumentacja schematu 2.0
 
@@ -31,7 +31,7 @@ Schemat pakietu językowego VSIX informacje zlokalizowanej instalację pakietów
 
 Element główny pliku pakiet języka jest `<PackageLanguagePackManifest>`, z atrybutem `Version`, czyli wersji formatu pakietu języka. W tym artykule opisano w wersji 2.0 formatu pakietu języka, który jest określany w manifeście przez ustawienie `Version` atrybut na wartość `Version="2.0.0"`. Element główny zawiera dokładnie jeden element podrzędny `<Metadata>` elementu.
 
-### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest element
+### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest element
 
 W ramach `<PackageLanguagePackManifest>` element musi istnieć następującego elementu:
 

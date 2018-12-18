@@ -16,12 +16,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa71856cf21853d2e234b104ea5345bd46a7311a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 149ffa4fd0f4847cffbba915fc1d2714234ce792
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852430"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745255"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
     uint itemid;  
   
     // Retrieve shell interface in order to get current selection  
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;  
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;  
     if (monitorSelection == null)  
         throw new InvalidOperationException();  
   

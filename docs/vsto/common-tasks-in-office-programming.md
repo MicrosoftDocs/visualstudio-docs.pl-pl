@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 085ed1a4f430be957d96991798458e411bc22992
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676208"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672811"
 ---
 # <a name="common-tasks-in-office-programming"></a>Typowe zadania w programowaniu pakietu Office
   Ten temat jest przeznaczony do pomóc w znalezieniu odpowiedzi na następujące kategorie często zadawane pytania dotyczące programowania rozwiązań pakietu Office przy użyciu programu Visual Studio.  
@@ -47,7 +47,7 @@ ms.locfileid: "35676208"
   
 -   [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Porady: rozwiązań pakietu Office uaktualnienia](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
+-   [Porady: rozwiązań pakietu Office uaktualnienia](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
   
 -   [Porady: podstawowe zestawy międzyoperacyjne pakietu Office instalacji](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
@@ -219,19 +219,19 @@ ms.locfileid: "35676208"
   
 ##  <a name="deployment"></a> Zadania związane z wdrażaniem  
   
--   [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+-   [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Porady: publikowanie rozwiązania pakietu Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [Porady: publikowanie rozwiązania pakietu Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
--   [Porady: Instalowanie rozwiązań pakietu ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
+-   [Porady: Instalowanie rozwiązań pakietu ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
   
--   [Porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+-   [Porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
--   [Porady: Przygotowanie usługi IIS do wdrożenia rozwiązań dla pakietu Office](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
+-   [Porady: Przygotowanie usługi IIS do wdrożenia rozwiązań dla pakietu Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Porady: Aktualizacja wdrożony rozwiązań pakietu Office](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Porady: Aktualizacja wdrożony rozwiązań pakietu Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
--   [Jak: zmienić ścieżkę instalacji rozwiązania do pakietu Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+-   [Jak: zmienić ścieżkę instalacji rozwiązania do pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

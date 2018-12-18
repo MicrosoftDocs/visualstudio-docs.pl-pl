@@ -1,17 +1,17 @@
 ---
-title: Program Visual Studio for Mac rozwiązywania problemów
+title: Rozwiązywanie problemów
 description: Typowe problemy i rozwiązania dla programu Visual Studio dla komputerów Mac użytkowników.
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624338"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294646"
 ---
 # <a name="troubleshooting"></a>Rozwiązywanie problemów
 
@@ -23,7 +23,7 @@ Dzienniki można znaleźć, przechodząc do **Pomoc > Otwórz katalog dziennikó
 
 ## <a name="viewing-exceptions"></a>Wyświetlanie wyjątków
 
-Gdy wyjątek został przechwycony, pojawi się bąbelków wyjątku. Aby wyświetlić więcej szczegółów, wybierz **Wyświetl szczegóły** przycisku:
+Gdy zostaje przechwycony wyjątek, pojawi się bąbelków wyjątku. Aby wyświetlić więcej szczegółów, wybierz **Wyświetl szczegóły** przycisku:
 
 ![Wyświetl szczegółowe informacje o wyjątku](media/troubleshooting-image2.png)
 
@@ -45,4 +45,8 @@ Ważne sekcje okno dialogowe, które są numerowane powyżej opisano szczegóło
 10. Domyślnie jest ono ustawione na co **Debuguj tylko kod projektu** ustawiono opcję w ustawieniach debugera. Zaznaczenie tego pola spowoduje włączenie cały kod niezwiązany z użytkownikiem zwinąć w jednym wierszu w stacktrace.
 11. Przycisk kopiowania, aby skopiować `exception.ToString()` dane wyjściowe do Schowka.
 
-Należy pamiętać, że niektóre z tych sekcji będą widoczne tylko, gdy wyjątek ma wyjątek wewnętrzny.
+Należy pamiętać, że niektóre sekcje te są widoczne tylko, gdy wyjątek ma wyjątek wewnętrzny.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Zasoby dla rozwiązywania problemów z błędami środowiska IDE (Visual Studio Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

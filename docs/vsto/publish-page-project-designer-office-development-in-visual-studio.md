@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4d315a00f527953500b47095ee4080b4eafd4cc
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904716"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672720"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Strona publikowania, Projektant projektu (Office development w programie Visual Studio)
   **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrożenia.  
@@ -32,7 +32,7 @@ ms.locfileid: "49904716"
  Dostępu do tej strony, wybierz projekt w **Eksploratora rozwiązań**, a następnie na **projektu** menu, wybierz *Projectname* **właściwości** . Jeśli **Publikuj** nie zostanie wyświetlona strona, wybierz polecenie **Publikuj** kartę.  
   
 > [!NOTE]  
->  Można również ustawić lokalizację publikowania w **Kreatora publikacji**. Aby uzyskać więcej informacji, zobacz [porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  Można również ustawić lokalizację publikowania w **Kreatora publikacji**. Aby uzyskać więcej informacji, zobacz [porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika  
  **Lokalizacja folderu publikowania (witryny sieci web, serwer ftp lub ścieżka do pliku)**  
@@ -55,7 +55,7 @@ ms.locfileid: "49904716"
   
  Jeśli pliki instalacyjne znajdują się w lokalizacji względnej wobec dokumentu lub program instalacyjny, takich jak z opcją dysku CD, pozostaw to pole puste.  
   
- Tę wartość można przypisać później przez administratora. Aby uzyskać więcej informacji, zobacz [jak: zmienić ścieżkę instalacji rozwiązania do pakietu Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Tę wartość można przypisać później przez administratora. Aby uzyskać więcej informacji, zobacz [jak: zmienić ścieżkę instalacji rozwiązania do pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Wymagania wstępne**  
  Wymagania wstępne, mogą być dołączone do programu instalacyjnego lub pobrane na żądanie, podczas instalacji.  
@@ -113,6 +113,6 @@ ms.locfileid: "49904716"
 ## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Wymagania wstępne rozwiązania pakietu Office wdrożenia](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Wymagania wstępne rozwiązania pakietu Office wdrożenia](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

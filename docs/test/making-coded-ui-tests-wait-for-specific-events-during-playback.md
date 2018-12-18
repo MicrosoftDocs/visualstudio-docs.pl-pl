@@ -1,5 +1,5 @@
 ---
-title: Wprowadź oczekiwania testy kodowane interfejsu użytkownika dla określonych zdarzeń w programie Visual Studio
+title: Wprowadź oczekiwania testy kodowane interfejsu użytkownika dla określonych zdarzeń
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faee56676329d9dd70f189eeddac82bba680a1d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912789"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894771"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Utworzyć kodowane testy interfejsu użytkownika, poczekaj, aż określonych zdarzeń podczas odtwarzania
 
 Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu oczekiwania dla określonych zdarzeń, takiego jak okno pojawia się pasek postępu zniknąć i tak dalej. Aby to zrobić, użyj odpowiedniej metody UITestControl.WaitForControlXXX(), zgodnie z opisem w poniższej tabeli. Przykład kodowanego testu interfejsu użytkownika, która czeka formantu, który ma zostać włączone za pomocą <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> metody, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Wymagania**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Wymagania**
+
+Visual Studio Enterprise
 
 > [!TIP]
-> Można również dodać opóźnienia przed akcji za pomocą edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [porady: wstawianie opóźnienia przed akcją UI za pomocą edytora kodowanego testu interfejsu użytkownika](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> Można również dodać opóźnienia przed akcji za pomocą edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [porady: wstawianie opóźnienia przed akcją UI za pomocą edytora kodowanego testu interfejsu użytkownika](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
+**UITestControl.WaitForControlXXX() Methods**
 
- **UITestControl.WaitForControlXXX() Methods**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+Czeka na formant aby być gotowy do akceptowania myszy i klawiatury. Aparat niejawnie wywołuje ten interfejs API dla wszystkich akcji, oczekiwania na formant będzie gotowa, przed wykonaniem wszelkich operacji. W niektórych wybór scenariusza może mieć celu jawnym wywołaniem.
 
- Czeka na formant aby być gotowy do akceptowania myszy i klawiatury. Aparat niejawnie wywołuje ten interfejs API dla wszystkich akcji, oczekiwania na formant będzie gotowa, przed wykonaniem wszelkich operacji. W niektórych wybór scenariusza może mieć celu jawnym wywołaniem.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+Czeka na formant aby można włączyć, gdy kreator wykonuje niektóre asynchroniczne sprawdzanie poprawności danych wejściowych przez wykonywanie wywołań do serwera. Można na przykład metodę, aby czekać na **dalej** przycisk kreatora Aby być (włączone). Aby uzyskać przykład tej metody, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- Czeka na formant aby można włączyć, gdy kreator wykonuje niektóre asynchroniczne sprawdzanie poprawności danych wejściowych przez wykonywanie wywołań do serwera. Można na przykład metodę, aby czekać na **dalej** przycisk kreatora Aby być (włączone). Aby uzyskać przykład tej metody, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+Czeka na formant, który ma być wyświetlana w Interfejsie użytkownika. Na przykład po aplikacji ma wykonać sprawdzanie poprawności parametrów są oczekiwane okna dialogowego błędu. Czas potrzebny do sprawdzania poprawności jest zmienna. Ta metoda umożliwia oczekiwania dla okna dialogowego błędu.
 
- Czeka na formant, który ma być wyświetlana w Interfejsie użytkownika. Na przykład po aplikacji ma wykonać sprawdzanie poprawności parametrów są oczekiwane okna dialogowego błędu. Czas potrzebny do sprawdzania poprawności jest zmienna. Ta metoda umożliwia oczekiwania dla okna dialogowego błędu.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+Czeka na formant są usuwane z interfejsu użytkownika. Na przykład możesz poczekać, aż pasek postępu zniknąć.
 
- Czeka na formant są usuwane z interfejsu użytkownika. Na przykład możesz poczekać, aż pasek postępu zniknąć.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+Czeka, aż do określonej właściwości formantu, aby mieć dana wartość. Na przykład trzeba odczekać tekstu stanu zmienić **gotowe**.
 
- Czeka, aż do określonej właściwości formantu, aby mieć dana wartość. Na przykład trzeba odczekać tekstu stanu zmienić **gotowe**.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+Czeka, aż do określonej właściwości formantu, aby mieć przeciwieństwo określoną wartość. Na przykład po odczekaniu pole edycji, aby nie może być tylko do odczytu, oznacza to, że można edytować.
 
- Czeka, aż do określonej właściwości formantu, aby mieć przeciwieństwo określoną wartość. Na przykład po odczekaniu pole edycji, aby nie może być tylko do odczytu, oznacza to, że można edytować.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- Oczekuje określony predykat zwraca się `true`. To może służyć do operacji oczekiwania złożonych (np. warunków OR) na określonej kontrolki. Na przykład możesz poczekaj, aż będzie tekst statusu **Powodzenie** lub **niepowodzenie** jak pokazano w poniższym kodzie:
+Oczekuje określony predykat zwraca się `true`. To może służyć do operacji oczekiwania złożonych (np. warunków OR) na określonej kontrolki. Na przykład możesz poczekaj, aż będzie tekst statusu **Powodzenie** lub **niepowodzenie** jak pokazano w poniższym kodzie:
 
 ```csharp
 
@@ -113,4 +114,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 - [Wskazówki: Tworzenie, edytowanie i obsługa kodowanego interfejsu użytkownika testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)
 - [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Porady: wstawianie opóźnienia przed akcją UI za pomocą edytora kodowanego testu interfejsu użytkownika](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+- [Porady: wstawianie opóźnienia przed akcją UI za pomocą edytora kodowanego testu interfejsu użytkownika](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

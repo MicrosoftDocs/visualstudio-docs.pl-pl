@@ -1,5 +1,5 @@
 ---
-title: Właściwości magazynowania szczegółów chronometrażu dla ustawień testu obciążenia w programie Visual Studio
+title: Właściwości magazynowania szczegółów chronometrażu dla ustawień uruchomienia testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842173"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054587"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Porady: Określanie właściwości magazynowania szczegółów chronometrażu dla ustawień przebiegu testu obciążeniowego
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** Aby zmienić ustawienia w celu spełnienia potrzeb i celów testowania.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Możesz edytować ustawienia przebiegu **przechowywanie informacji** wartości właściwości w **właściwości** okna. **Przechowywanie informacji** właściwość można ustawić na dowolną z następujących opcji:
 

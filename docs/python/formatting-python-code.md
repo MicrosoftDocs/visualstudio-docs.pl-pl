@@ -1,6 +1,6 @@
 ---
 title: Formatowanie kodu w języku Python
-description: Opis sposobu automatycznego formatowania kodu w języku Python w programie Visual Studio, w tym odstępy, instrukcji, zawijania i komentarze.
+description: Program Visual Studio można automatycznie ponownie sformatować kodu języka Python, w tym odstępy, instrukcji, zawijania i komentarze.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219552"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052196"
 ---
 # <a name="format-python-code"></a>Formatowanie kodu w języku Python
 
@@ -29,7 +30,7 @@ Opcje są ustawiane za pomocą **narzędzia** > **opcje** > **edytora tekstów**
 
 ![Opcje w programie Visual Studio formatowania języka Python](media/options-editor-formatting.png)
 
-Opcje formatowania, które domyślnie są ustawione na zgodny nadzbiorem [8 program ten przewodnik stylistyczny](http://www.python.org/dev/peps/pep-0008/). **Ogólne** kartę Określa, kiedy stosowane to formatowanie; ustawienia dla trzech kartach są opisane w tym artykule.
+Opcje formatowania, które domyślnie są ustawione na zgodny nadzbiorem [8 program ten przewodnik stylistyczny](https://www.python.org/dev/peps/pep-0008/). **Ogólne** kartę Określa, kiedy stosowane to formatowanie; ustawienia dla trzech kartach są opisane w tym artykule.
 
 [Obsługa języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) dodaje również przydatne [ **wypełnienia akapitu komentarz** ](#fill-comment-paragraph-command) polecenia do **Edytuj**  >   **Zaawansowane** menu, zgodnie z opisem w dalszej części tego tematu.
 

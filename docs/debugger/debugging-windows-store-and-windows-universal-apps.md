@@ -1,6 +1,6 @@
 ---
-title: Debugowanie aplikacji platformy uniwersalnej systemu Windows — program Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Debugowanie aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 01/17/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 628c847817db073daeed3cd6c04b1722502e80ca
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511534"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064024"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Debugowanie aplikacji Universal Windows (UWP) w programie Visual Studio
 

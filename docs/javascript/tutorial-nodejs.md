@@ -192,7 +192,7 @@ Następnie zamierzasz uruchomić aplikację w debugerze programu Visual Studio. 
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Wybierz cel debugowania na pasku narzędzi debugowania, takie jak przeglądarki Edge lub Chrome.
+1. Wybierz cel debugowania na pasku narzędzi debugowania, takie jak przeglądarki Microsoft Edge lub Chrome.
 
     ![Wybierz element docelowy debugowania](../javascript/media/tutorial-nodejs-deploy-target.png)
 

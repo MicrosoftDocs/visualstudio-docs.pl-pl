@@ -1,5 +1,5 @@
 ---
-title: Tworzenie nowego testu usługi internetowej w programie Visual Studio
+title: Tworzenie nowego testu usługi internetowej
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380671"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053402"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Porady: Tworzenie nowego testu usługi internetowej
 
 Test wydajności sieci web służy do testowania usług sieci web. Za pomocą **Wstaw żądanie** i **Wstaw żądanie usługi sieci Web** opcje, można dostosować poszczególne żądania w **edytora testów wydajności sieci Web** można zlokalizować w sieci web strony usługi. Zazwyczaj tych stron nie wyświetla w aplikacji sieci web. W związku z tym należy dostosować żądanie, aby uzyskać do nich dostęp.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 W poniższych procedurach użyto usługi sieci web, która jest zawarta w Commerce Starter Kit. Możesz ją pobrać z [ASP.NET commerce starter kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
- **Wymagania**
+**Wymagania**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Aby przetestować usługę sieci web
 

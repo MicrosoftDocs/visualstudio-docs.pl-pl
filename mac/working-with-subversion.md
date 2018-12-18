@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 81c33d426989f9bab3216802aa4e815228e1e82a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623936"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295205"
 ---
 # <a name="working-with-subversion"></a>Praca z Podwersją
 
@@ -50,7 +50,10 @@ To umożliwia wyświetlanie wszystkich zmian w każdym pliku projektu z możliwo
 
 Aby przekazać plik do repozytorium zdalnego, naciśnij zatwierdzenia..., wprowadź wiadomość dotyczącą zatwierdzenia i upewnij się, za pomocą przycisku zatwierdzenia:
 
-
 ![Zatwierdzanie pliku](media/version-control-svnCommit.png)
 
 Spowoduje to wysłanie zmiany do repozytorium, gdzie tworzą nowa poprawka wprowadzonych zmian.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Konfigurowanie repozytorium podwersji](set-up-subversion-repository.md)

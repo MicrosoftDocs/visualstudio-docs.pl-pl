@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_lineNumberEnd method
 ms.assetid: b101853e-2bcf-47c1-acef-e13984c7ea9d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90f3ed88675edd28e09ab20f8e9941e1cc78aca8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a25ddaffb08b9ac1ad588870e46cef2f77fa8488
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899321"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800760"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instruk
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT get_lineNumberEnd (   
+HRESULT get_lineNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  

@@ -17,9 +17,9 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34571816"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: schema zamówienia zakupu
+# <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: schemat zamówienia zakupu
 
-Następujący plik XSD jest używany w przykładach różnych w dokumentacji projektanta schematu XSD. Ten plik jest schematu zamówienia zakupu.
+Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu.
 
 ```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"

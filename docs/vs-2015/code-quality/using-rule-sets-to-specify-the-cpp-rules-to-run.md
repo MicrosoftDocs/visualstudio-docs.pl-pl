@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac3877e6-5349-4c03-9541-3d5be259f1e8
 caps.latest.revision: 7
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42c8926403825032f295c31e2ce113bef4ff1bbd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859671"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810291"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

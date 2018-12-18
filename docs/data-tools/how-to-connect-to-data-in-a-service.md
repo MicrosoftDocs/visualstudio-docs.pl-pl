@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0affe931e5b85d32acdc95fecaa50f3b7f2fe8f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175702"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305016"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Porady: łączenie z danymi w usłudze
 
 Łączenie aplikacji z danymi zwróconymi z usługi, uruchamiając [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png) i wybierając polecenie **usługi** na **wybierz typ źródła danych**strony.
 
-Po zakończeniu działania kreatora, jest dodawany do projektu odwołanie do usługi i jest natychmiast dostępna w [okna źródeł danych](add-new-data-sources.md).
+Po zakończeniu działania kreatora, jest dodawany do projektu odwołanie do usługi i jest natychmiast dostępna w [okna źródeł danych](add-new-data-sources.md#data-sources-window).
 
 > [!NOTE]
-> Elementy, które pojawiają się w **źródeł danych** okna są zależne od informacji, zwracanemu przez usługę. Niektóre usługi mogą nie dostarczać wystarczających informacji dla **Kreatora konfiguracji źródła danych** do tworzenia obiektów, które można powiązać. Na przykład, jeśli usługa zwraca zestaw danych bez typu, żadne elementy nie są wyświetlane w **okna źródeł danych** po ukończeniu kreatora. Jest to spowodowane nietypizowanych zbiorów danych nie zapewniają schematu, dlatego Kreator nie ma wystarczających informacji, aby utworzyć źródło danych.
+> Elementy, które pojawiają się w **źródeł danych** okna są zależne od informacji, zwracanemu przez usługę. Niektóre usługi mogą nie dostarczać wystarczających informacji dla **Kreatora konfiguracji źródła danych** do tworzenia obiektów, które można powiązać. Na przykład, jeśli usługa zwraca zestaw danych bez typu, żadne elementy nie są wyświetlane w **źródeł danych** okna po ukończeniu kreatora. Jest to spowodowane nietypizowanych zbiorów danych nie zapewniają schematu, dlatego Kreator nie ma wystarczających informacji, aby utworzyć źródło danych.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

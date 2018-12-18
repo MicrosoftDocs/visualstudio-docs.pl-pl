@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3d763209d60440066df758b6c1eca087dea9b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9f065a32fc26d372b97a31eb70836451b31fa00
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670731"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Porady: programowane zapisywanie dokumentów programu Visio
   Istnieje kilka sposobów na zapisywanie dokumentów programu Microsoft Office Visio:  
@@ -32,7 +32,7 @@ ms.locfileid: "49906679"
   
 - Zapisz dokument z określonymi argumentami.  
   
-  Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) metody [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) metoda i [ Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) metody.  
+  Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Document.Save](/office/vba/api/Visio.Document.Save) metody [Microsoft.Office.Interop.Visio.Document.SaveAs](/office/vba/api/Visio.Document.SaveAs) metoda i [ Microsoft.Office.Interop.Visio.Document.SaveAsEx](/office/vba/api/Visio.Document.SaveAsEx) metody.  
   
 ## <a name="save-an-existing-document"></a>Zapisz istniejący dokument  
   

@@ -17,12 +17,12 @@ ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78efab35ff56d98cb16da746939abac99f2d741c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8707e293983b066074cdcaab201f5422bae581
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851757"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793883"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Pobiera zakres instrukcji pliku kontekstu dokumentu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp#  
-HRESULT GetStatementRange(   
+HRESULT GetStatementRange(   
    TEXT_POSITION* pBegPosition,  
    TEXT_POSITION* pEndPosition  
 );  
 ```  
   
 ```csharp  
-int GetStatementRange(   
+int GetStatementRange(   
    TEXT_POSITION[] pBegPosition,  
    TEXT_POSITION[] pEndPosition  
 );  

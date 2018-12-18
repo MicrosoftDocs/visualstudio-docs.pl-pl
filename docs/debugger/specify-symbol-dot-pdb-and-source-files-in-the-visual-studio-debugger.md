@@ -1,7 +1,7 @@
 ---
-title: Określanie plików symboli (.pdb) i plików źródłowych w debugerze | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+title: Ustaw symboli (.pdb) i plików źródłowych w debugerze
+ms.custom: seodec18
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850246"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060449"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (pdb) i plików źródłowych w debugerze programu Visual Studio
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
 Baza danych programu (*.pdb*) plików, nazywany również pliki symboli mapowania identyfikatorów i instrukcje w kodzie źródłowym projektu do odpowiednich identyfikatorów i zgodnie z instrukcjami w skompilowanych aplikacji. 
 
@@ -73,7 +73,7 @@ Ponadto debuger wyszukuje pliki symboli w następujących lokalizacjach:
    
    - Dowolnego folderu pamięci podręcznej symboli.  
   
-   - Określonej sieci internet, lub lokalne serwery symboli i lokalizacje, takie jak serwery symboli firmy Microsoft, w przypadku wybrania. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można pobierać pliki symboli debugowania z serwerów symboli, które implementują `symsrv` protokołu. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) i [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) to dwa narzędzia, które mogą korzystać z serwerów symboli. 
+   - Określonej sieci internet, lub lokalne serwery symboli i lokalizacje, takie jak serwery symboli firmy Microsoft, w przypadku wybrania. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można pobierać pliki symboli debugowania z serwerów symboli, które implementują `symsrv` protokołu. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) i [Debugging Tools for Windows](/windows-hardware/drivers/debugger/index) to dwa narzędzia, które mogą korzystać z serwerów symboli.
       
      Serwery symboli, które mogą obejmować:  
       
@@ -182,7 +182,7 @@ Podczas budowania projektu z programu Visual Studio IDE ze standardem **debugowa
   
   - *\<Projekt > .pdb* 
     
-    *\<Projekt > .pdb* plik przechowuje wszystkie informacje debugowania dla projektu *.exe* pliku i znajduje się w *\debug* podkatalogu. *\<Projekt > .pdb* plik zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w *VC\<x > .pdb*. 
+     *\<Projekt > .pdb* plik przechowuje wszystkie informacje debugowania dla projektu *.exe* pliku i znajduje się w *\debug* podkatalogu.  *\<Projekt > .pdb* plik zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w *VC\<x > .pdb*. 
   
   Zarówno *VC\<x > .pdb* i  *\<Projekt > .pdb* pliki zezwalają na aktualizacje przyrostowe. Konsolidator osadza także ścieżkę do *.pdb* pliki *.exe* lub *.dll* utworzonych plików.  
   

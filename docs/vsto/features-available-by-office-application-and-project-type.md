@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672469"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Typ funkcji według aplikacji pakietu Office i projekt
   Program Visual Studio zawiera kilka typów szablonów projektu obsługi różnych scenariuszy biznesowych aplikacji pakietu Microsoft Office, w tym następujących typów:  
@@ -62,9 +62,9 @@ ms.locfileid: "49929858"
 |Udostępnianie obiektu w dodatku narzędzi VSTO dla programów do innych rozwiązań programu Microsoft Office.|Dodatek projekty VSTO.|[Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Następujące kontrolki hosta:<br /><br /> -Wykresu<br />— ListObject<br />-NamedRange<br />-Zawartość kontrolki<br />-Zakładki|Projektów na poziomie dokumentu.<br /><br /> Dodatek projektów VSTO dla programów Word i Excel.|[Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)|  
 |Następujące kontrolki hosta:<br /><br /> — XMLMappedRange<br />-XMLNode<br />-XMLNodes|Projektów na poziomie dokumentu.|[Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)|  
-|Wdrażanie wielu projektów.|Projektów na poziomie dokumentu.<br /><br /> Dodatek projekty VSTO.|[Przewodnik: Wdrażanie wielu rozwiązań pakietu Office w jednym Instalatorze ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Wdrażanie wielu projektów.|Projektów na poziomie dokumentu.<br /><br /> Dodatek projekty VSTO.|[Przewodnik: Wdrażanie wielu rozwiązań pakietu Office w jednym Instalatorze ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Regionach formularzy programu Outlook.|Dodatek projektów VSTO dla programu Outlook.|[Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Akcje po wdrożeniu.|Projektów na poziomie dokumentu.<br /><br /> Dodatek projekty VSTO.|[Wskazówki: Kopiowanie dokumentu do komputera użytkownika końcowego po zakończeniu instalacji ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Akcje po wdrożeniu.|Projektów na poziomie dokumentu.<br /><br /> Dodatek projekty VSTO.|[Wskazówki: Kopiowanie dokumentu do komputera użytkownika końcowego po zakończeniu instalacji ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Dostosowywanie Wstążki.|Projektów na poziomie dokumentu.<br /><br /> Dodatek projektów VSTO dla następujących aplikacji:<br /><br /> — Excel<br />-Program InfoPath (InfoPath 2013 i InfoPath 2010)<br />-Programu outlook<br />— PowerPoint<br />-Projekt<br />-Programu Visio<br />-Programu Word|[Wstążka — omówienie](../vsto/ribbon-overview.md)|  
 |Projektant wizualny dokumentu.|Projektów na poziomie dokumentu.|[Projekty pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

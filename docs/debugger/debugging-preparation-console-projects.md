@@ -1,6 +1,6 @@
 ---
-title: 'Przygotowanie debugowania: Projekty konsoli | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Przygotowywanie do debugowania projektów konsoli | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -19,19 +19,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516b2a6191cc76c3380875fda4679048e255f394
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55c588bfffbf11d4abd26fbae1490cf0039373c3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902083"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057084"
 ---
-# <a name="debugging-preparation-console-projects"></a>Przygotowanie debugowania: projekty konsoli
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Przygotowanie debugowania: Projekty konsoli (C#, C++, Visual Basic F#)
+
 Przygotowywanie do debugowania projektu konsoli jest podobny do przygotowania do debugowania projektu Windows, za pomocą kilka dodatkowych kwestii dotyczących. Aby uzyskać więcej informacji, zobacz [aplikacji z formularzem Windows](../debugger/debugging-preparation-windows-forms-applications.md), i [przygotowanie debugowania: Windows Forms aplikacji (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Z powodu podobieństwa wszystkich aplikacji konsoli w tym temacie omówiono następujące typy projektu:  
   
-- Aplikacja Konsolowa C#  
-  
-- Aplikacja Konsolowa w języku Visual Basic  
+- C#, Visual Basic i F# aplikacji konsoli  
   
 - Aplikacja Konsolowa w języku C++ (platforma .NET)  
   
@@ -46,13 +45,11 @@ Przygotowywanie do debugowania projektu konsoli jest podobny do przygotowania do
 ## <a name="starting-the-application"></a>Uruchamianie aplikacji  
  Niektóre aplikacje konsoli uruchomić, zostało ukończone i zamknij. To zachowanie może nie dać wystarczająco dużo czasu na przerwanie wykonywania i debugowania. Aby można było debugować aplikację, użyj jednej z poniższych procedur do uruchamiania aplikacji:  
   
-- Aplikacja rozpoczyna wykonywanie i działa aż do napotkania punktu przerwania.  
+- Ustaw punkt przerwania w kodzie i uruchomić aplikację.
   
-- Rozpoczyna się i natychmiast przerywa w pierwszym wierszu kodu źródłowego aplikacji.  
+- Rozpocznij swojej aplikacji za pomocą **F10** (**debugowania** > **Step Over**) lub **F11** (**debugowania**  >  **Step Into**), a następnie przejdź przez kod przy użyciu innych opcji, takich jak **Uruchom do kliknięcia**.
   
-- W oknie kodu źródłowego, kliknij prawym przyciskiem myszy linię i wybierz **Uruchom do kursora**.  
-  
-   Aplikacja rozpoczyna się i uruchamia wybranego wiersza lub punkt przerwania, jeśli punkt przerwania zostaje trafiony przed wierszem.  
+- W edytorze kodu, kliknij prawym przyciskiem myszy linię i wybierz **Uruchom do kursora**.  
   
   Podczas debugowania aplikacji konsoli można uruchomić aplikacji z poziomu wiersza polecenia, a nie z programu Visual Studio. W takim przypadku można uruchomić aplikacji z poziomu wiersza polecenia i do niej dołączyć debuger programu Visual Studio. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
@@ -62,6 +59,6 @@ Przygotowywanie do debugowania projektu konsoli jest podobny do przygotowania do
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)   
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Typy projektów Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#, F # i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)

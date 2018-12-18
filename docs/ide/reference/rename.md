@@ -1,5 +1,5 @@
 ---
-title: Refaktoryzacja zmiany nazwy w programie Visual Studio
+title: Refaktoryzacja zmiany nazwy
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908756"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063156"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Zmień nazwę symbolu kodu refaktoryzacji
 
@@ -66,7 +66,7 @@ Ta Refaktoryzacja mają zastosowanie do:
       ![Rename - VB](media/rename-rename-vb.png)
 
    > [!TIP]
-   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy także [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** pole, które pojawia się u góry bezpośrednio z edytora.
+   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy także [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** wyświetlonym u góry bezpośrednio z edytora.
 
 4. Po zakończeniu zmiany wybierz **Zastosuj** przycisk lub naciśnij klawisz **Enter** i zmiany zostaną zatwierdzone.
 

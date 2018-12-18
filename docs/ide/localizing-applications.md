@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84223f9758302064622313cd5406b10c872f170
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 16b8c3a35a7d4a489a199b4de9f7fbe34bca9361
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179908"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671017"
 ---
 # <a name="localizing-applications"></a>Lokalizowanie aplikacji
 
@@ -42,6 +42,6 @@ ms.locfileid: "39179908"
 
  [Globalizacja formularzy Windows](/dotnet/framework/winforms/advanced/globalizing-windows-forms) dostarcza łącza do stron dotyczących tworzenia aplikacji Windows, które obsługują wielu kulturach.
 
- [Globalizacja i lokalizacja](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) dostarcza łącza do stron dotyczących tworzenia aplikacji sieci web, które obsługują wielu kulturach.
+ [Globalizacja i lokalizacja](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) dostarcza łącza do stron dotyczących tworzenia aplikacji sieci web, które obsługują wielu kulturach.
 
- [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) zawiera informacje na temat programowania dla międzynarodowych grupy odbiorców, takich jak zagadnienia dotyczące projektowania i terminologii.
+ [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) zawiera informacje na temat programowania dla międzynarodowych grupy odbiorców, takich jak zagadnienia dotyczące projektowania i terminologii.

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 79d96ac61bcec198c899d709677df775332db383
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624093"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295283"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -27,9 +27,9 @@ Ponadto odwołania sieci Web i odwołania natywne również można dodać do ka�
 
 ## <a name="assembly-references"></a>Odwołania do zestawów
 
-Każdy struktury platformy Xamarin jest dostarczany z ponad tuzina zestawów. Nie wszystkie te pakiety zestawu w projekcie są określone przez domyślny. 
+Każdy struktury platformy Xamarin jest dostarczany z ponad tuzina zestawów. Nie wszystkie te pakiety zestawu w projekcie są określone przez domyślny.
 
-Aby edytować pakietów, do których istnieją odwołania w projekcie, należy użyć _Edytuj odwołania_ okno dialogowe, które można wyświetlić, klikając dwukrotnie plik w folderze odwołania lub wybierz opcję Edytuj odniesienia do jego akcje menu kontekstowe:
+Aby edytować pakietów, do których istnieją odwołania w projekcie, należy użyć **Edytuj odwołania** okno dialogowe, które można wyświetlić, klikając dwukrotnie plik w folderze odwołania lub wybierając **Edytuj odwołania** na kontekst menu Akcje:
 
 ![Okno dialogowe odwołania do zestawu](media/projects-and-solutions-image11.png)
 
@@ -42,3 +42,8 @@ NuGet jest najbardziej popularnych Menedżer pakietów dla programowania na plat
 Aby to zrobić, kliknij prawym przyciskiem myszy **pakietu** folderu w konsoli rozwiązania, a następnie wybierz opcję Dodaj pakiety.
 
 Więcej informacji na temat korzystania z pakietu NuGet jest podawany jako [pakietu w tym NuGet w projekcie](nuget-walkthrough.md) wskazówki.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Zarządzanie odwołaniami (Visual Studio Windows)](/visualstudio/ide/managing-references-in-a-project)
+- [Dodawaniem odwołań za pomocą NuGet a extension SDK (Visual Studio Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

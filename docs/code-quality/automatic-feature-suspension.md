@@ -1,5 +1,5 @@
 ---
-title: Funkcja automatycznej zawieszenia w programie Visual Studio
+title: Automatyczne wstrzymanie funkcji
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,58 +14,58 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: d75c02bf6b817d03492a15b1f827f94eaaf3e306
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b97a58a7f5ba3808c658b838de942e94c12b9b79
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31893930"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049097"
 ---
-# <a name="automatic-feature-suspension"></a>Funkcja automatycznej zawieszenia
+# <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 
-Jeśli pamięci dostępnej w systemie znajduje się 200 MB lub mniej, Visual Studio wyświetli następujący komunikat w edytorze kodu:
+Jeśli Twoje dostępnej pamięci systemowej kwalifikuje się do 200 MB lub mniej, Visual Studio wyświetla następujący komunikat w edytorze kodu:
 
-![Tekst alertu wstrzymywania Pełna analiza rozwiązania](../code-quality/media/fsa_alert.png)
+![Tekst alertu zawieszanie pełnej analizy rozwiązania](../code-quality/media/fsa_alert.png)
 
-Visual Studio, wykrycie braku pamięci, automatycznie wstrzymuje niektórych zaawansowanych funkcji, aby ułatwić trwały. Visual Studio w dalszym ciągu działać tak jak poprzednio, ale jego wydajność jest ograniczone.
+Gdy program Visual Studio wykryje stan braku pamięci, automatycznie wstrzymuje niektórych zaawansowanych funkcji, aby ułatwić sobie trwały. Program Visual Studio w dalszym ciągu działać tak jak poprzednio, ale jego wydajność jest obniżona.
 
-Stan braku pamięci następujące akcje miejsce:
+W stan braku pamięci wykonane następujące akcje:
 
-- Pełna analiza rozwiązania dla programu Visual C# i Visual Basic jest wyłączona.
+- Pełnej analizy rozwiązania dla programu Visual C# i Visual Basic jest wyłączona.
 
-- [Wyrzucanie elementów bezużytecznych](/dotnet/standard/garbage-collection/index) tryb małych opóźnieniach (GC) dla programu Visual C# i Visual Basic jest wyłączona.
+- [Wyrzucanie elementów bezużytecznych](/dotnet/standard/garbage-collection/index) trybu o małych opóźnieniach (GC) dla Visual C# i Visual Basic jest wyłączona.
 
-- Visual Studio pamięci podręcznych są opróżniane.
+- Visual Studio pamięci podręczne są opróżniane.
 
-## <a name="improve-visual-studio-performance"></a>Poprawianie wydajności programu Visual Studio
+## <a name="improve-visual-studio-performance"></a>Poprawa wydajności programu Visual Studio
 
-Aby uzyskać porady i wskazówki na temat sposobów usprawnienia wydajności programu Visual Studio podczas pracy z rozwiązaniami dużych i ilość pamięci jest mała, zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Aby uzyskać porady i wskazówki na temat sposobu poprawy wydajności programu Visual Studio podczas zajmowania się warunki małej ilości pamięci lub dużych rozwiązań, zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="full-solution-analysis-suspended"></a>Pełna analiza rozwiązania zawieszone
+## <a name="full-solution-analysis-suspended"></a>Pełnej analizy rozwiązania zawieszone
 
-Domyślnie Pełna analiza rozwiązania jest włączona dla programu Visual Basic i wyłączone Visual C#. Jednak w stanie małej ilości pamięci, pełną analizę rozwiązania jest automatycznie wyłączana dla języka Visual Basic i Visual C#, niezależnie od ich ustawień w oknie dialogowym Opcje. Jednak można ponownie włączyć pełną analizę rozwiązania, wybierając **ponownie włączyć** przycisk informacji pasek po jego wyświetleniu wybierając **Włącz pełną analizę rozwiązania** pole wyboru w oknie dialogowym Opcje lub przez ponowne uruchomienie programu Visual Studio. Opcje — okno dialogowe zawsze zawiera bieżące rozwiązanie pełne ustawienia analizy. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Domyślnie pełnej analizy rozwiązania jest włączona dla języka Visual Basic i wyłączone dla języka Visual C#. Jednak w stan braku pamięci pełnej analizy rozwiązania jest automatycznie wyłączana dla języka Visual Basic i Visual C#, niezależnie od ich ustawień w oknie dialogowym Opcje. Jednakże, można ponownie włączyć pełnej analizy rozwiązania, wybierając **ponownie włączyć** informacje paska, gdy pojawia się, wybierając przycisk **Włączanie pełnej analizy rozwiązania** pole wyboru w oknie dialogowym Opcje, lub ponowne uruchomienie programu Visual Studio. Okno dialogowe Opcje zawsze wyświetla bieżące rozwiązanie pełną ustawień analizy. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
-## <a name="gc-low-latency-disabled"></a>Wykaz Globalny małych opóźnieniach wyłączone
+## <a name="gc-low-latency-disabled"></a>GC o małych opóźnieniach wyłączone
 
-Aby ponownie włączyć tryb małych opóźnieniach GC, uruchom ponownie program Visual Studio. Domyślnie program Visual Studio pozwala tryb małych opóźnieniach GC miarę wpisywania, aby upewnić się, że wpisane hasło nie blokują żadnych operacji GC. Jednak jeśli niedobór pamięci powoduje, że Visual Studio, aby wyświetlić ostrzeżenie automatyczne zawieszenie, tryb małych opóźnieniach GC jest wyłączone dla tej sesji. Ponownie uruchomić ponownie program Visual Studio umożliwia domyślne zachowanie GC. Aby uzyskać więcej informacji, zobacz <xref:System.Runtime.GCLatencyMode>.
+Aby ponownie włączyć tryb o małych opóźnieniach GC, uruchom ponownie program Visual Studio. Domyślnie program Visual Studio Włącza tryb o małych opóźnieniach GC, zawsze wtedy, gdy są wpisywanie, aby upewnić się, że wpisany tekst nie blokuje żadnych operacji GC. Jednak jeśli stan braku pamięci powoduje, że Visual Studio, aby wyświetlić ostrzeżenie automatyczne zawieszenie, GC o małych opóźnieniach tryb zostanie wyłączony dla tej sesji. Ponowne uruchomienie programu Visual Studio włączające domyślne zachowanie GC. Aby uzyskać więcej informacji, zobacz <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Visual Studio pamięci podręcznych opróżniany
+## <a name="visual-studio-caches-flushed"></a>Visual Studio pamięci podręcznych opróżnione
 
-Jeśli kontynuować bieżącej sesji rozwoju lub uruchom ponownie program Visual Studio, wszystkich usług pamięć podręczna programu Visual Studio natychmiast zostały opróżnione, ale rozpocząć ponownie wypełnić. Pamięci podręczne opróżnionych obejmują pamięci podręcznych następujące funkcje:
+Jeśli nadal bieżącej sesji rozwoju lub uruchom ponownie program Visual Studio, wszystkie bufory programu Visual Studio są natychmiast opróżnić, ale rozpocząć ponownie wypełnić. Pamięci podręczne opróżnione to pamięci podręczne dla następujących funkcji:
 
 - Znajdź wszystkie odwołania
 
 - Przejdź do
 
-- Dodawanie Using
+- Dodaj instrukcję Using
 
-Ponadto pamięci podręcznych używane dla operacji wewnętrznych programu Visual Studio również zostaną wyłączone.
+Ponadto używane dla operacji programu Visual Studio wewnętrznych pamięci podręcznych również zostaną wyczyszczone.
 
 > [!NOTE]
-> Ostrzeżenie zawieszenia funkcji automatycznego miejsce tylko raz na podstawie na rozwiązanie, a nie na podstawie sesji. Oznacza to, że jeśli przełącznika z języka Visual Basic, Visual C# (lub odwrotnie) i uruchom na inny stan braku pamięci, prawdopodobnie Ci innego ostrzeżenie zawieszenia funkcji automatycznego.
+> Ostrzeżenie dotyczące zawieszenia funkcji automatycznego pojawia się tylko raz na podstawie danego rozwiązania, a nie na podstawie sesji. Oznacza to, że jeśli przełączyć się z języka Visual Basic do Visual C# (lub odwrotnie) i w inny stan braku pamięci, prawdopodobnie uzyskasz innej ostrzeżenie dotyczące zawieszenia funkcji automatycznego.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Włączanie i wyłączanie Pełna analiza rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Podstawy dotyczące odzyskiwania pamięci](/dotnet/standard/garbage-collection/fundamentals)
 - [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

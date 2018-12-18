@@ -1,5 +1,5 @@
 ---
-title: Wyodrębnij metodę w programie Visual Studio
+title: Wyodrębnij metodę
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930599"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064617"
 ---
 # <a name="extract-a-method-refactoring"></a>Wyodrębnij także refaktoryzację — metoda
 
@@ -60,7 +60,7 @@ Ta Refaktoryzacja mają zastosowanie do:
    Metoda zostanie utworzona natychmiast. W tym miejscu można teraz zmienić nazwę metody po prostu wpisując nową nazwę.
 
    > [!TIP]
-   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy także [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** pole, które pojawia się u góry rogu zintegrowanego środowiska Projektowego.
+   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy, jak i [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** wyświetlonym u góry rogu zintegrowanego środowiska Projektowego.
 
    - C#:
 

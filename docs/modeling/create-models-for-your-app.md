@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849453"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966547"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 
@@ -52,10 +52,10 @@ Aby zwizualizować architektury systemu lub istniejącego kodu, należy utworzy�
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używanie modeli uściślenia i komunikują się potrzeby użytkowników.|
 |[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|Używanie modeli do opisania ogólną strukturę i zachowanie systemu i upewnij się, że spełnia potrzeby użytkowników.|
 |[Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)|Upewnij się, że oprogramowanie pozostaje zgodny z potrzebami użytkowników i ogólną architekturę systemu.|
-|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używaj modeli w Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używanie modeli, aby pomóc Ci zrozumieć i zmienić systemu podczas jego tworzenia.|
+|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używaj modeli w Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używanie modeli, aby pomóc Ci zrozumieć i zmienić systemu podczas jego tworzenia.|
 |[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizowania modeli w dużych i średnich projektu.|
 
 ## <a name="resources"></a>Resources
 
 - [Program Visual Studio visualization and Modeling Tools Forum](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Forum dotyczące rozszerzania programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Forum dotyczące rozszerzania programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

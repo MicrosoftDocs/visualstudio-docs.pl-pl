@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b48a9cae19faa592eecb2f02af67e9ad8b2ca9b3
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885762"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348325"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -33,7 +33,7 @@ Możesz tworzyć prawie wszystko w środowisku IDE programu Visual Studio jako z
 |Obszar|Zadanie|Więcej informacji|
 |----------|----------| - |
 |Instalacja|Zainstaluj program Visual Studio.|[Instalowanie programu Visual Studio](../install/install-visual-studio.md)|
-||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie i zarządzania lokalną zawartością Pomocy](../ide/install-and-manage-local-content.md)|
+||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie i zarządzania lokalną zawartością Pomocy](../help-viewer/install-manage-local-content.md)|
 |Przybornik|Dodawanie klasycznych formantów COM do **przybornika**.|[Przybornik](../ide/reference/toolbox.md)|
 |Kompilowanie|Użyj zdarzenia mające miejsce po kompilacji, które rejestrują składnik.|[Omówienie niestandardowych kroków kompilacji i zdarzenia kompilacji](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Obejmują etapu rejestracji podczas kompilowania projektów języka C++.||

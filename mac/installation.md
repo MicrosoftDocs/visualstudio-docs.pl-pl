@@ -3,19 +3,19 @@ title: Zainstaluj program Visual Studio dla komputerów Mac
 description: Instrukcje dotyczące sposobu instalowania programu Visual Studio dla komputerów Mac i dodatkowe składniki wymagane dla wieloplatformowego opracowywania aplikacji.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934616"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158960"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>Konfigurowanie i instalowanie programu Visual Studio dla komputerów Mac
+# <a name="set-up-and-install-visual-studio-for-mac"></a>Ustaw w pionie i zainstaluj program Visual Studio dla komputerów Mac
 
-## <a name="setup"></a>Konfiguracja
+## <a name="requirements"></a>Wymagania
 
 Do rozpoczęcia tworzenia natywnych, aplikacje dla wielu platform, po pobraniu programu Visual Studio dla komputerów Mac istnieje kilka rzeczy, które należy zainstalować i skonfigurować w ramach przygotowań.
 
@@ -25,11 +25,14 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
 * Xcode 8.3 lub nowszej. Najnowsza stabilna wersja zazwyczaj jest zalecane.
 * Tego identyfikatora firmy Apple. Jeśli nie masz jeszcze identyfikatora Apple ID można utworzyć nowe konto na https://appleid.apple.com. Należy mieć identyfikator Apple ID do instalowania i rejestrowania się w środowisku Xcode.
 
+> [!TIP]
+> Visual Studio 2019 r dla komputerów Mac (wersja zapoznawcza) jest [udostępniono](install-preview.md) do testowania.
+
 ## <a name="install"></a>Zainstaluj
 
 1. Pobierz program Visual Studio dla komputerów Mac z [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
-2. Po pobraniu pakietu Instalatora kliknij przycisk **VisualStudioInstaller.dmg** pliku, aby zainstalować Instalatora i uruchom go, klikając dwukrotnie plik logo, jak pokazano na poniższej ilustracji:
+2. Po pobraniu pakietu Instalatora kliknij przycisk **VisualStudioForMacInstaller.dmg** pliku, aby zainstalować Instalatora i uruchom go, klikając dwukrotnie plik logo, jak pokazano na poniższej ilustracji:
 
    ![Okno dialogowe Instalator](media/installer-image1.png)
 
@@ -86,7 +89,6 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
 > [!NOTE]
 > Jeśli została wybrana opcja Instaluj platformy lub narzędzia podczas oryginalnej instalacji (cofając go w kroku #6), należy uruchomić [Instalatora](https://visualstudio.microsoft.com/vs/) ponownie w razie potrzeby można później dodać składniki.
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Zainstaluj program Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
 
 Aby zainstalować program Visual Studio dla komputerów Mac za zaporą, niektóre punkty końcowe muszą być udostępnione w celu pobrania wymagane narzędzia i aktualizacje oprogramowania.
@@ -104,7 +106,6 @@ Instalowanie programu Visual Studio dla komputerów Mac pozwala rozpocząć pisa
 1. [Witaj, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [Aprowizowanie urządzenia](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(w celu uruchomienia aplikacji na urządzeniu).
 
-
 ### <a name="android"></a>Android
 
 1. [Przy użyciu Menedżera zestawów SDK platformy Xamarin Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
@@ -114,3 +115,7 @@ Instalowanie programu Visual Studio dla komputerów Mac pozwala rozpocząć pisa
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje platformy .NET core, aplikacje sieci web platformy ASP.NET Core, tworzenia gier Unity
 
 W przypadku innych obciążeń zobacz [obciążeń](workloads.md) strony.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Instalowanie programu Visual Studio 2017 (na Windows)](/visualstudio/install/install-visual-studio)

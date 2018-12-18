@@ -2,7 +2,7 @@
 title: Publikowanie aplikacji Node.js w usłudze App Service w systemie Linux
 description: Można opublikować aplikacji Node.js w programie Visual Studio do usługi App Service Linux na platformie Azure
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924959"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750774"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikowanie aplikacji Node.js na platformie Azure (Linux App Service)
 
@@ -33,7 +33,7 @@ W tym samouczku pokazano, jak utworzyć aplikację Node.js, zaczynając od szabl
 
 W tym samouczku dowiesz się, jak:
 > [!div class="checklist"]
-> * Tworzenie projektu środowiska Node.js
+> * Tworzenie projektu platformy Node.js
 > * Utwórz repozytorium GitHub dla kodu
 > * Tworzenie usługi App Service dla systemu Linux na platformie Azure
 > * Wdrażanie w systemie Linux
@@ -42,15 +42,19 @@ W tym samouczku dowiesz się, jak:
 
 1. Utwórz nowy TypeScript Express aplikacji za pomocą **pliku** > **nowy projekt** okno dialogowe.
 
+1. W obszarze **TypeScript** węzeł **podstawowe aplikację Node.js Express 4**.
+
     ![Utwórz nową aplikację TypeScript Express](../javascript/media/azure-ts-express-app.png)
 
-2. Naciśnij klawisz **F5** tworzenie i uruchamianie aplikacji i upewnij się, że wszystko działa zgodnie z oczekiwaniami.
+1. Kliknij przycisk **OK** do utworzenia projektu w programie Visual Studio.
 
-3. Wybierz **pliku** > **Dodaj do kontroli źródła** do tworzenia lokalnego repozytorium Git dla projektu.
+1. Naciśnij klawisz **F5** tworzenie i uruchamianie aplikacji i upewnij się, że wszystko działa zgodnie z oczekiwaniami.
+
+1. Wybierz **pliku** > **Dodaj do kontroli źródła** do tworzenia lokalnego repozytorium Git dla projektu.
 
     W tym momencie Node.js aplikacji przy użyciu platformy Express i napisanych w TypeScript działa i zaewidencjonowane do kontroli źródła lokalnego.
 
-4. Edytuj projekt zgodnie z potrzebami przed przejściem do następnych kroków.
+1. Edytuj projekt zgodnie z potrzebami przed przejściem do następnych kroków.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>Wypychanie kodu w programie Visual Studio do usługi GitHub
 

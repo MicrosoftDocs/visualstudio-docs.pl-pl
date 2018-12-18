@@ -1,11 +1,12 @@
 ---
 title: Visual Studio Desktop Express 2017 obciążeń i składników identyfikatorów
+titleSuffix: ''
 description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifestu VSIX
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 469444051956a766bd44d517dd59ec6d945039b0
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 6b11aec1291847e917ad7c5d53ad81a3a5b37390
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139291"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051746"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express składników katalogu
 
@@ -62,10 +63,10 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6.27406.0 | Wymagane
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Narzędzia programistyczne programu .NET framework 4.6.1 | 15.8.27825.0 | Wymagane
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Narzędzia programistyczne programu .NET framework 4 – 4.6 | 15.6.27406.0 | Wymagane
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowania | 1.10.50912.1 | Wymagane
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowania | 15.9.28107.0 | Wymagane
 Microsoft.VisualStudio.Component.CoreEditor | Edytor rdzeni programu Visual Studio | 15.8.27729.1 | Wymagane
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 tools | 15.6.27406.0 | Wymagane
-Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 15.8.27825.0 | Wymagane
+Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 15.9.28016.0 | Wymagane
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języków C# i Visual Basic Roslyn | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# i Visual Basic | 15.8.27729.1 | Wymagane
 Microsoft.VisualStudio.Component.SQL.ADAL | Środowisko uruchomieniowe SQL ADAL | 15.6.27406.0 | Wymagane
@@ -74,12 +75,12 @@ Microsoft.VisualStudio.Component.SQL.CMDUtils | Narzędzia wiersza polecenia pro
 Microsoft.VisualStudio.Component.SQL.DataSources | Źródła danych na potrzeby obsługi programu SQL Server | 15.0.26621.2 | Wymagane
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | Wymagane
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Wymagane
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | Wymagane
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Wymagane
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy statycznej | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.TextTemplating | Przekształcenia szablonu tekstu | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ interfejsu wiersza polecenia | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilatory języka Visual C++ i bibliotek dla ARM | 15.8.27825.0 | Wymagane
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilatory języka Visual C++ i bibliotek dla architektury ARM64 | 15.6.27309.0 | Wymagane
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilatory języka Visual C++ i bibliotek dla architektury ARM64 | 15.9.28230.55 | Wymagane
 Microsoft.VisualStudio.Component.VisualStudioData | Źródła danych i odwołania do usług | 15.6.27406.0 | Wymagane
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | System Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Wymagane
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | System Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Wymagane

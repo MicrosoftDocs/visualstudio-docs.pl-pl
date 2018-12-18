@@ -1,5 +1,5 @@
 ---
-title: Tworzenie kodowanego testu interfejsu użytkownika w programie Visual Studio
+title: Tworzenie kodowanego testu interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382399"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895525"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 
 W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego interfejsu użytkownika testu do testowania aplikacji Windows Presentation Framework (WPF). Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy dotyczące synchronizacji i refaktoryzacją kontroli.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-wpf-app"></a>Tworzenie aplikacji WPF
 
@@ -361,7 +363,7 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 
-[Kodowane testy interfejsu użytkownika — często zadawane pytania](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
+[Kodowane testy interfejsu użytkownika — często zadawane pytania](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
 ## <a name="see-also"></a>Zobacz także
 

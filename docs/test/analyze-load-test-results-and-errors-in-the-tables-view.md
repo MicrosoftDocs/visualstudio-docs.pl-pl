@@ -1,5 +1,5 @@
 ---
-title: Analizowanie wyników testów obciążenia oraz błędów w programie Visual Studio
+title: Analizowanie wyników testów obciążenia oraz błędów
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928675"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068568"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli analizatora testu obciążenia
 
 Po wyświetleniu wyników przebiegu testu obciążeniowego można wyświetlić różnych okienek, które udostępniają różne sposoby analizować dane. Dane można wyświetlić jako wykresu, aby zobaczyć, jak zmienia się wraz z upływem czasu, lub można wyświetlić dane jako tabele szczegółów.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Aby przełączyć się do widoku tabeli, wybierz opcję **tabel** na **testu obciążeniowego** paska narzędzi. Aby przełączyć się między różnymi tabelami, należy użyć **tabeli** listy rozwijanej na pasku narzędzi powyżej siatkę tabeli. W widoku tabeli można wyświetlić maksymalnie cztery tabele w danym momencie. Aby uzyskać więcej informacji, zobacz [tabele testu obciążeniowego kafelka](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) w tym temacie.
 
@@ -41,14 +43,14 @@ Większość wartości liczbowych, wyświetlane w formie tabeli liczników wydaj
 > [!NOTE]
 > Kolumny o nazwie **ostatniego** są dostępne tylko wtedy, gdy test obciążeniowy jest wykonywany. Po zakończeniu testu obciążenia tych kolumn nie są dostępne.
 
- Większość tabel można sortować, wybierając tytuł kolumny, która ma zostać wykonane sortowanie. Domyślnie niektóre tabele nie są wyświetlane wszystkie dostępne kolumny. Jeśli dostępnych kolumn, można dodać do tabel, kolumn. Aby dodać kolumny, kliknij prawym przyciskiem myszy tabelę, a następnie wybierz **Dodaj/Usuń kolumny**.
+Większość tabel można sortować, wybierając tytuł kolumny, która ma zostać wykonane sortowanie. Domyślnie niektóre tabele nie są wyświetlane wszystkie dostępne kolumny. Jeśli dostępnych kolumn, można dodać do tabel, kolumn. Aby dodać kolumny, kliknij prawym przyciskiem myszy tabelę, a następnie wybierz **Dodaj/Usuń kolumny**.
 
 > [!NOTE]
 > Możesz skopiować dane z tabeli do innych aplikacji, takich jak program Excel dodatkowe analizy.
 
 ## <a name="the-load-test-tables"></a>Tabele testu obciążenia
 
- Poniższa tabela zawiera listę tabel, które są dostępne do analizowania przebiegów testów obciążeniowych.
+Poniższa tabela zawiera listę tabel, które są dostępne do analizowania przebiegów testów obciążeniowych.
 
 |Nazwa tabeli|Opis|
 |-|-|

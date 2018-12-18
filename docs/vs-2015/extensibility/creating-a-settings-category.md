@@ -15,12 +15,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60b500fa0defff3fc038ae4550f580dd7742939d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885619"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730358"
 ---
 # <a name="creating-a-settings-category"></a>Tworzenie kategorii ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używa�
 3.  W MyToolsOptionsPackage.cs, Dodaj `float` właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.  
   
     ```csharp  
-    public class OptionPageGrid : DialogPage  
+    public class OptionPageGrid : DialogPage  
     {  
-        private int optionInt = 256;  
-        private float optionFloat = 3.14F;  
+        private int optionInt = 256;  
+        private float optionFloat = 3.14F;  
   
         [Category("My Options")]  
         [DisplayName("My Integer option")]  
         [Description("My integer option")]  
-        public int OptionInteger  
+        public int OptionInteger  
         {  
             get { return optionInt; }  
             set { optionInt = value; }  
@@ -73,7 +73,7 @@ W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używa�
         [Category("My Options")]  
         [DisplayName("My Float option")]  
         [Description("My float option")]  
-        public float OptionFloat  
+        public float OptionFloat  
         {  
             get { return optionFloat; }  
             set { optionFloat = value; }  

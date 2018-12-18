@@ -1,6 +1,6 @@
 ---
-title: 'Porady: określanie wersji programu .NET Framework do debugowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Określanie wersji programu .NET Framework do debugowania | Dokumentacja firmy Microsoft
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,19 +18,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79bbe6e6feefa8e7ccab04fe5bae5c2ec7c214ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902961"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056011"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Porady: określanie wersji programu .NET Framework do debugowania
-[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] Debuger obsługuje debugowanie starszych wersji programu Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oraz bieżącej wersji. W przypadku uruchomienia aplikacji w programie Visual Studio, debuger zawsze można zidentyfikować poprawną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dla aplikacji jest debugowany. Jeśli aplikacja jest już uruchomiona, a używasz **dołączyć do**, debuger może nie zawsze można zidentyfikować starszą wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Jeśli tak się stanie, zostanie wyświetlony komunikat o błędzie informujący, że,  
-  
- Debuger podejścia biznesowego uczyniło nieprawidłowe założenie dotyczące [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji aplikacji zamierza użyć.  
-  
- W tych rzadkich przypadkach można ustawić klucz rejestru, aby wskazać do debugera w wyborze wersji do użycia.  
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Porady: określanie wersji programu .NET Framework do debugowania (C#, Visual Basic F#)
+
+Debuger programu Visual Studio obsługuje debugowanie starszych wersji programu Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oraz bieżącej wersji. W przypadku uruchomienia aplikacji w programie Visual Studio, debuger zawsze można zidentyfikować poprawną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dla aplikacji jest debugowany. Jednak jeśli aplikacja jest już uruchomiona i możesz rozpocząć debugowanie za pomocą **dołączyć do**, debuger może nie zawsze można zidentyfikować starszą wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Jeśli tak się stanie, zostanie wyświetlony komunikat o błędzie informujący, że,  
+
+``` cmd 
+The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version your application is going to use.  
+```
+
+W rzadkich przypadkach, gdy zostanie wyświetlony ten błąd można ustawić klucz rejestru, aby wskazać do debugera w wyborze wersji do użycia.  
   
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>Aby określić wersji programu .NET Framework do debugowania  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60a1de6a499b033f99844280c3d2aa73b6ed8ba6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935071"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294971"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów
   Podczas tworzenia rozwiązania programu SharePoint, Visual Studio dodaje funkcje programu SharePoint domyślne do pakietu w rozwiązaniu. Przed wdrożeniem końcowego może Dodawanie i usuwanie elementów projektu programu SharePoint oraz funkcje, aby zmodyfikować pakiet programu SharePoint.  
@@ -64,5 +64,5 @@ ms.locfileid: "49935071"
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Porady: Tworzenie pakietu](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
+ [Porady: Tworzenie pakietu](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
   

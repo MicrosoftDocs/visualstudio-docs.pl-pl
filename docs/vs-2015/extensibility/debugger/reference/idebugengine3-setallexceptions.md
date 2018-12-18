@@ -17,12 +17,12 @@ ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 243b34ec96b65058eb1de48967392f0583f7fb1f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9da26eda5b369cfbaf5f405bf036a1ae6096cc85
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825468"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816843"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ Ta metoda ustawia stan wszystkich oczekujących wyjątków.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT SetAllExceptions(  
-   EXCEPTION_STATE dwState  
+HRESULT SetAllExceptions(  
+   EXCEPTION_STATE dwState  
 );  
 ```  
   

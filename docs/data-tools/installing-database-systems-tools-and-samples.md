@@ -1,5 +1,5 @@
 ---
-title: Zgodność bazy danych programu Visual Studio
+title: Zgodności bazy danych
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,48 +14,48 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: ddb950fd916df6ff514e13435765b118e1e579dd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089198"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049563"
 ---
-# <a name="compatible-database-systems-for-visual-studio"></a>Systemy zgodne bazy danych dla programu Visual Studio
+# <a name="compatible-database-systems-for-visual-studio"></a>Zgodne systemy bazy danych dla programu Visual Studio
 
-Aby opracować połączone dane aplikacji w programie Visual Studio, zwykle Zainstaluj system bazy danych na komputerze deweloperskim lokalne, a następnie wdrażanie aplikacji i baz danych w środowisku produkcyjnym, gdy są one gotowe. Visual Studio instaluje na komputerze programu SQL Server Express LocalDB w ramach **magazynu danych i przetwarzania** obciążenia. To wystąpienie bazy danych LocalDB jest przydatne w przypadku tworzenia połączenia danych aplikacji, szybkie i łatwe.
+Do tworzenia aplikacji połączonych danych w programie Visual Studio, zazwyczaj instaluje system bazy danych na lokalnej maszynie do programowania, a następnie wdrażanie aplikacji i baz danych w środowisku produkcyjnym kiedy będą gotowe. Program Visual Studio instaluje program SQL Server Express LocalDB na swojej maszynie w ramach **przechowywanie i przetwarzanie danych** obciążenia. To wystąpienie LocalDB jest przydatne w przypadku tworzenia aplikacji połączonych z usługą danych, szybkie i łatwe.
 
-System bazy danych mają być dostępne z aplikacji .NET i które będą widoczne w Visual Studio danych narzędzi systemu windows musi on mieć dostawcy danych ADO.NET. Dostawcy specjalnie musi obsługiwać Entity Framework, jeśli planujesz używanie modeli danych jednostki w aplikacji .NET. Wielu dostawców są dostępne za pośrednictwem Menedżera pakietów NuGet lub za pomocą programu Visual Studio Marketplace.
+System bazy danych jest dostępny z poziomu aplikacji .NET i być widoczne w oknach narzędzi danych programu Visual Studio musi on mieć dostawcy danych ADO.NET. Dostawca musi obsługiwać specjalnie Entity Framework, jeśli planowane jest użycie jednostki danych modeli w aplikacji .NET. Wielu dostawców są oferowane za pośrednictwem Menedżera pakietów NuGet lub za pośrednictwem witryny Marketplace programu Visual Studio.
 
-Jeśli używasz usługi Azure storage interfejsów API, aby uniknąć naliczania opłat, aż wszystko będzie gotowe do wdrożenia w środowisku produkcyjnym należy zainstalować te emulatory magazynu Azure na komputerze lokalnym podczas tworzenia. Aby uzyskać więcej informacji, zobacz [użyć emulatora magazynu Azure do programowania i testowania](/azure/storage/common/storage-use-emulator).
+Korzystając z interfejsów API usługi Azure storage, aby uniknąć opłat, dopóki nie będziesz gotowy do wdrożenia w środowisku produkcyjnym należy zainstalować emulatorów magazynu platformy Azure na komputerze lokalnym podczas tworzenia. Aby uzyskać więcej informacji, zobacz [korzystanie z emulatora magazynu Azure do tworzenia i testowania](/azure/storage/common/storage-use-emulator).
 
-Poniższa lista zawiera niektóre z najpopularniejszych systemów bazy danych, które mogą być używane w projektach Visual Studio. Lista nie jest kompletną. Aby uzyskać listę dostawców innych firm, które oferują dostawcy danych ADO.NET, umożliwiających głęboką integrację z narzędziami Visual Studio, zobacz [dostawcy danych ADO.NET](/dotnet/framework/data/adonet/data-providers).
+Poniższa lista zawiera niektóre z najpopularniejszych systemów bazy danych, które mogą być używane w projektach programu Visual Studio. Lista nie jest wyczerpująca. Aby uzyskać listę dostawców innych firm, które oferują dostawców danych ADO.NET, które umożliwiają ścisłą integrację z narzędzia programu Visual Studio, zobacz [dostawcy danych ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-Program SQL Server jest bazą danych programu Microsoft najważniejszych oferty. SQL Server 2016 zapewnia wydajność przełomowe, zabezpieczeniami zaawansowanymi i rozbudowane, zintegrowane raportowania i analiz. Ten składnik jest dostarczany w różnych wersjach, które są przeznaczone do różnych celów: z analizy biznesowe wysoce skalowalną, wysokiej wydajności, do użycia na pojedynczym komputerze. SQL Server Express to oferujący wszystkie funkcje wersja programu SQL Server, które są dopasowane do rozpowszechniania i osadzania.  LocalDB to Uproszczona wersja programu SQL Server Express, która nie wymaga konfigurowania i działa w procesie aplikacji. Możesz pobrać jedną lub obie te produkty z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Większość przykładów SQL w tej sekcji służy bazy danych LocalDB programu SQL Server. SQL Server Management Studio (SSMS) jest aplikacją zarządzania autonomicznej bazy danych, która ma więcej funkcji niż jaka jest dostępna w Eksploratorze obiektów serwera SQL programu Visual Studio. Możesz pobrać ze strony poprzedniej konsolidacji SSMS.
+SQL Server jest baza danych programu Microsoft sztandarowe oferty. SQL Server 2016 zapewnia przełomową wydajność, zabezpieczeniami zaawansowanymi i rozbudowane, zintegrowane raportowania i analizy. Jest on dostarczany w różnych wersjach, które są przeznaczone do różnych celów: z analiz biznesowych o wysokim stopniu skalowalności, wysokiej wydajności, do użycia na jednym komputerze. SQL Server Express jest w pełni funkcjonalna wersja programu SQL Server, które są dopasowane do ponownej dystrybucji i osadzania.  LocalDB to Uproszczona wersja programu SQL Server Express, która nie wymaga konfigurowania i działa w procesie aplikacji. Możesz pobrać jednego lub obu tych produktów z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Wiele przykładów SQL w tej sekcji Użyj programu SQL Server LocalDB. SQL Server Management Studio (SSMS) to aplikacja do zarządzania autonomicznej bazy danych, który ma więcej funkcji niż podana w Eksploratorze obiektów serwera SQL programu Visual Studio. Możesz pobrać program SSMS z poprzedniej konsolidacji.
 
 ## <a name="oracle"></a>Oracle
 
-Możesz pobrać płatną lub bezpłatnej wersji bazy danych programu Oracle [Oracle technologii sieci](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) strony. Obsługę projektowania dla programu Entity Framework i TableAdapters należy [Oracle Developer tools dla Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Inne oficjalnego produktów Oracle, w tym błyskawicznych klienta Oracle, są dostępne za pośrednictwem Menedżera pakietów NuGet. Możesz pobrać Oracle przykładowe schematy zgodnie z instrukcjami w [dokumentacji online Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+Możesz pobrać płatną lub bezpłatnej wersji bazy danych programu Oracle z [sieci technologii Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) strony. Obsługę projektowania dla programu Entity Framework i TableAdapters, konieczne będzie [Oracle Developer tools dla programu Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Inne oficjalne produktów Oracle, w tym błyskawiczne wersję klienta Oracle, są dostępne za pośrednictwem Menedżera pakietów NuGet. Możesz pobrać schematów przykładowej bazy danych Oracle, postępując zgodnie z instrukcjami wyświetlanymi w [dokumentacji online Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ## <a name="mysql"></a>MySQL
 
-MySQL to system popularnych open source bazy danych, który jest powszechnie używany w przedsiębiorstwach i witryn sieci Web. Pliki do pobrania dla programu MySQL, MySQL dla programu Visual Studio oraz pokrewnych produktów są na [MySQL w systemie Windows](http://www.mysql.com/why-mysql/windows/). Stron trzecich oferują różne rozszerzenia programu Visual Studio i aplikacje autonomiczne zarządzania dla programu MySQL. Możesz przeglądać ofert Menedżera pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) .
+MySQL to system popularnych bazy danych typu open source, który jest powszechnie używana w przedsiębiorstwach i witryn sieci Web. Pliki do pobrania dla MySQL, są MySQL dla programu Visual Studio oraz pokrewne produkty [bazy danych MySQL na Windows](http://www.mysql.com/why-mysql/windows/). Trzecim oferują różne rozszerzenia programu Visual Studio i zarządzania autonomicznej aplikacji pod kątem MySQL. Możesz przeglądać ofert w Menedżerze pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) .
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL to bezpłatne, open source obiektu system relacyjnej bazy danych. Aby go zainstalować w systemie Windows, możesz pobrać go z [stronę pobierania PostgreSQL](http://www.postgresql.org/download/windows/). Można również tworzyć PostgreSQL z kodu źródłowego. PostgreSQL core system zawiera interfejs języka C. Wiele podmiotów Podaj pakietów NuGet przy użyciu PostgreSQL z aplikacji .NET. Możesz przeglądać ofert Menedżera pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) . Czasem najpopularniejszych pakietu jest zapewniana przez [npgsql.org](http://www.npgsql.org).
+PostgreSQL jest systemem relacyjnej bazy danych obiektu bezpłatny, open source. Aby go zainstalować na Windows, możesz ją pobrać z [strony pobierania PostgreSQL](http://www.postgresql.org/download/windows/). Można także utworzyć PostgreSQL z kodu źródłowego. PostgreSQL podstawowego systemu obejmuje interfejs języka C. Wiele firm Obejmij pakietów NuGet za pomocą PostgreSQL z poziomu aplikacji .NET. Możesz przeglądać ofert w Menedżerze pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) . Najbardziej popularnych pakietów są dostarczane przez [npgsql.org](http://www.npgsql.org).
 
-## <a name="sqlite"></a>SQLite
+## <a name="sqlite"></a>Bazy danych SQLite
 
-SQLite jest osadzony aparat bazy danych SQL działa w procesie aplikacji. Możesz pobrać go z [stronę pobierania SQLite](http://www.sqlite.org/download.html). Dostępne są także wiele innych firm pakietów NuGet dla bazy danych SQLite. Możesz przeglądać ofert Menedżera pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) .
+Bazy danych SQLite jest osadzony aparat bazy danych SQL działa w procesie własnych aplikacji. Możesz ją pobrać z [strony pobierania oprogramowania SQLite](http://www.sqlite.org/download.html). Dostępne są także wiele innych pakietów NuGet dla bazy danych SQLite. Możesz przeglądać ofert w Menedżerze pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) .
 
 ## <a name="firebird"></a>Firebird
 
-Firebird to system bazy danych SQL typu open source. Możesz pobrać go z [stronę pobierania Firebird](http://firebirdsql.org/en/downloads/). Dostawca danych ADO.NET jest dostępna za pośrednictwem Menedżera pakietów NuGet.
+Firebird to system bazy danych SQL typu open source. Możesz ją pobrać z [strony pobierania Firebird](http://firebirdsql.org/en/downloads/). Dostawca danych programu ADO.NET jest dostępna za pośrednictwem Menedżera pakietów NuGet.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [Jak ustalić, wersji i wydania programu SQL Server i jego składników](http://support.microsoft.com/kb/321185)
+- [Jak określić wersję i wydanie programu SQL Server i jego składników](http://support.microsoft.com/kb/321185)

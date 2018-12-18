@@ -1,5 +1,5 @@
 ---
-title: -Odbudować (devenv.exe)
+title: -Rebuild (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e462e64df90a7672efa890897b48726a0e764e6c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704658"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948612"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
-Czyści a potem kompiluje określona konfiguracja rozwiązania.
+Czyści, a następnie kompiluje konfigurację określonego rozwiązania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,22 +43,22 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 
  / Project `ProjName`
 
- Opcjonalna. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu do pliku projektu lub nazwa wyświetlana projektu lub pełną ścieżkę i nazwę pliku projektu.
+ Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.
 
  / projectconfig `ProjConfigName`
 
- Opcjonalna. Nazwa projektu kompilacji konfiguracji do użycia podczas odbudowywania `/project` o nazwie.
+ Opcjonalna. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas odbudowywania `/project` o nazwie.
 
 ## <a name="remarks"></a>Uwagi
 
--   Ta opcja wykonuje taką samą funkcję jak **Kompiluj ponownie rozwiązanie** polecenia menu w zintegrowane środowisko programistyczne (IDE).
+-   Ta opcja wykonuje taką samą funkcję jak **Kompiluj rozwiązanie** polecenia menu w ramach zintegrowanego środowiska programistycznego (IDE).
 
 -   Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
 
--   Podsumowanie informacji na temat Czyści i kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okna, lub określić za pomocą pliku dziennika `/out` przełącznika.
+-   Podsumowanie informacji na temat Czyści i kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie Czyści i odtwarza projektu `CSharpWinApp`za pomocą `Debug` konfigurację kompilacji projektu w `Debug` Konfiguracja rozwiązania o `MySolution`.
+ W tym przykładzie Czyści i ponownie kompiluje projekt `CSharpWinApp`przy użyciu `Debug` konfigurację kompilacji projektu w ramach `Debug` Konfiguracja rozwiązania o `MySolution`.
 
 ```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -67,6 +67,6 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ## <a name="see-also"></a>Zobacz też
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/ Kompilacji (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

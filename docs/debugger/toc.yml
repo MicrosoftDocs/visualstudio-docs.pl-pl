@@ -2,26 +2,34 @@ items:
 - name: Dokumentacja debugera
   href: index.md
 - name: Omówienie
-  href: debugger-overview.md
+  items:
+  - name: Co to jest debugowanie?
+    href: what-is-debugging.md
+  - name: Usuwanie błędów przez pisanie lepszego kodu w języku C#
+    href: write-better-code-with-visual-studio.md
 - name: Przewodniki Szybki Start
   items:
   - name: Pierwsze spojrzenie na debugera
     href: debugger-feature-tour.md
-  - name: Debugowanie aplikacji zarządzanej
+  - name: Debugowanie aplikacji w języku C# lub Visual Basic
     href: quickstart-debug-with-managed.md
-  - name: Debugowanie aplikacji natywnej
+  - name: Debugowanie aplikacji w języku C++
     href: quickstart-debug-with-cplusplus.md
   - name: Debugowanie aplikacji platformy ASP.NET
     href: quickstart-debug-aspnet.md
 - name: Samouczki
   items:
-  - name: Nauka debugowania przy użyciu programu Visual Studio
+  - name: Dowiedz się, jak debugować w języku C#
     href: getting-started-with-the-debugger.md
+  - name: Dowiedz się, jak debugować w języku C++
+    href: getting-started-with-the-debugger-cpp.md
+  - name: Dowiedz się, jak debugować w języku Visual Basic
+    href: getting-started-with-the-debugger-vb.md
   - name: Uruchamianie kodu w języku Python w debugerze...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Debugowanie działającej aplikacji platformy Azure
     href: debug-live-azure-applications.md
-  - name: Debugowanie kodu zarządzanego i natywnego
+  - name: Debugowanie kodu w językach C# i C++
     href: how-to-debug-managed-and-native-code.md
   - name: Sprawdzanie poprzednich stanów aplikacji
     href: view-historical-application-state.md
@@ -101,7 +109,7 @@ items:
       items:
       - name: Korzystanie z funkcji Edytuj i kontynuuj [C#]
         href: how-to-use-edit-and-continue-csharp.md
-      - name: Obsługiwane zmiany kodu (C#)
+      - name: Obsługiwane zmiany kodu
         href: supported-code-changes-csharp.md
     - name: Edytuj i kontynuuj (Visual Basic)
       href: edit-and-continue-visual-basic.md
@@ -367,7 +375,7 @@ items:
       - name: Rozpoczynanie sesji debugowania aplikacji platformy UWP
         href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
         items:
-        - name: Uruchamianie aplikacji platformy UWP na komputerze zdalnym
+        - name: Debugowanie aplikacji platformy UWP na maszynie zdalnej
           href: run-windows-store-apps-on-a-remote-machine.md
         - name: Uruchamianie aplikacji platformy UWP w symulatorze
           href: run-windows-store-apps-in-the-simulator.md
@@ -409,7 +417,7 @@ items:
           href: debugging-preparation-windows-forms-applications.md
         - name: 'Przygotowanie debugowania: usługi systemu Windows'
           href: debugging-preparation-windows-services.md
-      - name: Komunikaty diagnostyczne w oknie danych wyjściowych
+      - name: Wysyłanie komunikatów do okna danych wyjściowych
         href: diagnostic-messages-in-the-output-window.md
       - name: Potwierdzenia w kodzie zarządzanym
         href: assertions-in-managed-code.md
@@ -832,9 +840,9 @@ items:
   items:
   - name: Co nowego w debugerze programu Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: cc81f388e27fff52376d384af8c45546ef2b13c4
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050381"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821399"

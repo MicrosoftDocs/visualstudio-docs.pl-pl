@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 586d7181c1a8eb3c94a8ad236d4ff40602378199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869265"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294984"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Porady: Określanie deskryptora typu parametru
-  Deskryptor typu zawiera właściwości, które opisują typ danych parametru. Deskryptor typu może zdefiniować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
+  Deskryptor typu zawiera właściwości, które opisują typ danych parametru. Deskryptor typu może zdefiniować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Aby zdefiniować deskryptor typu parametru  
   
@@ -46,7 +46,7 @@ ms.locfileid: "49869265"
   
 2.  Na liście obok **TypeName** właściwości, wybierz odpowiedni typ danych (na przykład **Int32**).  
   
-     Aby uzyskać informacje na temat innych parametrów opcjonalnych, zobacz [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
+     Aby uzyskać informacje na temat innych parametrów opcjonalnych, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-an-entity"></a>Aby zdefiniować jednostkę  
   

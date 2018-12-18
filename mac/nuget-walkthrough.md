@@ -5,22 +5,22 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: af10c9b6f5b2d2462d0dfd08bb8010c2bbe74e2f
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 0a98425ba12ae7aba16a2bc6ffa29e701c1b9f11
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624209"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948625"
 ---
-# <a name="including-a-nuget-package-in-your-project"></a>Dołączanie pakietu NuGet w projekcie
+# <a name="include-a-nuget-package-in-your-project"></a>Uwzględnione pakietu NuGet w projekcie
 
 NuGet jest najbardziej popularnych Menedżer pakietów dla programowania na platformie .NET i wbudowanej w program Visual Studio dla komputerów Mac i Visual Studio na Windows. Można wyszukiwać i dodawać pakiety do projektów Xamarin.iOS i Xamarin.Android przy użyciu dowolnego środowiska IDE.
 
-W tym dokumencie pokazano, jak obejmujący pakiet NuGet w projekcie i pokazuje łańcuch narzędzi, który sprawia, że proces jest bezproblemowe.
+W tym artykule opisano, jak dołączyć pakietu NuGet w projekcie i pokazuje łańcuch narzędzi, który sprawia, że proces jest bezproblemowe.
 
 ## <a name="nuget-in-visual-studio-for-mac"></a>NuGet w programie Visual Studio dla komputerów Mac
 
-Aby zademonstrować funkcje pakietu NuGet najpierw przeprowadzimy przez tworzenie nowej aplikacji i dodawanie pakietu do niego. Następnie omówimy funkcji środowiska IDE, które ułatwia zarządzanie pakietami.
+Aby zademonstrować funkcje pakietu NuGet, najpierw przeprowadzimy przez tworzenie nowej aplikacji i dodawanie pakietu do niego. Następnie omówimy funkcji środowiska IDE, które ułatwia zarządzanie pakietami.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
@@ -30,20 +30,19 @@ Najpierw utwórz projekt o nazwie `HelloNuget` tak jak przedstawiono poniżej. W
 
 ## <a name="adding-a-package"></a>Dodawanie pakietu
 
-Otwórz w programie Visual Studio dla komputerów Mac projektu, kliknij prawym przyciskiem myszy **pakietów** folderu w **konsoli rozwiązania** i wybierz **Dodawanie pakietów...** :
+Otwórz w programie Visual Studio dla komputerów Mac projektu, kliknij prawym przyciskiem myszy **pakietów** folderu w **konsoli rozwiązania** i wybierz **Dodawanie pakietów**:
 
 ![Dodaj nową akcję kontekstu pakietu NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
-Spowoduje to uruchomienie _Dodawanie pakietów..._  okna. Upewnij się, że źródło listy rozwijanej, jest ustawiona na `nuget.org`:
+Spowoduje to uruchomienie **Dodawanie pakietów** okna. Upewnij się, że źródło listy rozwijanej, jest ustawiona na `nuget.org`:
 
 ![Źródło listy rozwijanej](media/nuget-walkthrough-Source.png)
 
-Gdy zostanie wyświetlone okno dialogowe będzie on ładować listę pakietów z domyślnego pakietu źródłowego: nuget.org. Początkowe wyniki wyglądać następująco:
+Po otwarciu przez okna ładuje listę pakietów z domyślnego źródła pakietu: nuget.org. Początkowe wyniki wyglądać następująco:
 
 ![Lista pakietów NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć określony pakiet, na przykład `azure`. Po znalezieniu pakietu, który chcesz użyć, zaznacz go i kliknij **Dodaj pakiet** przycisk, aby rozpocząć instalację.
-
+Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć określony pakiet, na przykład `azure`. Po znalezieniu pakietu, który chcesz użyć, zaznacz go i kliknij **Dodaj pakiet** przycisk, aby rozpocząć instalację.
 
 [Dodaj pakiet NuGet platformy Azure](media/nuget-walkthrough-AddPackages2.png)
 
@@ -55,9 +54,9 @@ Po pobraniu pakietu zostanie dodany do projektu. Rozwiązanie zmieni się w nast
 
 ## <a name="using-nuget-packages"></a>Za pomocą pakietów NuGet
 
-Po został dodany pakiet NuGet i zaktualizować odwołania do projektu można programować względem interfejsów API tak jak przy użyciu dowolnego odwołania do projektu.
+Po dodaniu pakietu NuGet i odwołania do projektu, zaktualizowany, można programować względem interfejsy API, co w przypadku dowolnego odwołania do projektu.
 
-Upewnij się, Dodaj wymagane `using` dyrektywy na początku pliku:
+Upewnij się, Dodaj wymagane `using` dyrektywy na początku pliku:
 
 ```csharp
 using Newtonsoft.Json;
@@ -81,7 +80,7 @@ Kliknij prawym przyciskiem myszy **pakietów** dostęp do menu kontekstowego:
 *   **Aktualizacja** — sprawdza, czy serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
 *   **Przywróć** — pliki do pobrania wszystkie brakujące pakiety (bez aktualizowania istniejące pakiety do nowszych wersji).
 
-Aktualizacja opcje przywracania są również dostępne na poziomie rozwiązania i wpływają na wszystkie projekty w rozwiązaniu. 
+Aktualizacja opcje przywracania są również dostępne na poziomie rozwiązania i wpływają na wszystkie projekty w rozwiązaniu.
 
 Użytkownik może również kliknij prawym przyciskiem myszy poszczególnych pakietów na dostęp do menu kontekstowego:
 
@@ -91,12 +90,11 @@ Użytkownik może również kliknij prawym przyciskiem myszy poszczególnych pak
 *   **Aktualizacja** — sprawdza, czy serwer źródłowy i pliki do pobrania jest nowsza wersja (jeśli istnieje).
 *   **Usuń** — usuwa pakiet z tego projektu i usunięcie odpowiednich zestawów z odwołaniami do projektów.
 
-
 ## <a name="adding-package-sources"></a>Dodawanie źródła pakietów
 
 Dostępne do zainstalowania pakietów początkowo są pobierane z witryny nuget.org. Jednak dodać inne lokalizacje pakietu programu Visual Studio dla komputerów Mac. Może to być przydatne w przypadku testowania pakietów NuGet w fazie projektowania lub użyć prywatny serwer NuGet wewnątrz firmy lub organizacji.
 
-W programie Visual Studio dla komputerów Mac, przejdź do **programu Visual Studio > Preferencje... > NuGet > źródeł** do wyświetlania i edytowania listy źródeł pakietów. Należy pamiętać, że źródła może być (określone za pomocą adresu URL) serwera zdalnego lub katalogu lokalnego. 
+W programie Visual Studio dla komputerów Mac, przejdź do **programu Visual Studio > Preferencje > NuGet > źródeł** do wyświetlania i edytowania listy źródeł pakietów. Należy pamiętać, że źródła może być (określone za pomocą adresu URL) serwera zdalnego lub katalogu lokalnego.
 
 ![Źródła pakietów](media/nuget-walkthrough-PackageSource.png)
 
@@ -110,9 +108,12 @@ Następnie można wybrać różnych źródeł, aby wyszukać pakiety:
 
 ## <a name="version-control"></a>Kontrola wersji
 
-W tym artykule omówiono dokumentacji NuGet [za pomocą narzędzia NuGet nie poświęcając pakietów do kontroli źródła](https://docs.microsoft.com/nuget/consume-packages/packages-and-source-control). Jeśli nie chcesz przechowywać pliki binarne i nieużywanych informacji w kontroli źródła, można skonfigurować programu Visual Studio dla komputerów Mac automatycznie przywrócić pakiety z serwera. Oznacza to, że kiedy Deweloper pobiera projektu z kontroli źródła po raz pierwszy, Visual Studio dla komputerów Mac automatycznie pobierze i zainstaluje wymagane pakiety.
+W tym artykule omówiono dokumentacji NuGet [za pomocą narzędzia NuGet nie poświęcając pakietów do kontroli źródła](/nuget/consume-packages/packages-and-source-control). Jeśli nie chcesz przechowywać pliki binarne i nieużywanych informacji w kontroli źródła, można skonfigurować program Visual Studio for Mac automatycznie przywrócić pakiety z serwera. Oznacza to, że kiedy Deweloper pobiera projektu z kontroli źródła po raz pierwszy, Visual Studio dla komputerów Mac automatycznie pobierze i zainstaluje wymagane pakiety.
 
 ![Automatycznie przywracanie pakietów](media/nuget-walkthrough-AutoRestore.png)
 
 Można znaleźć w dokumentacji kontroli konkretnego źródła, aby uzyskać szczegółowe informacje na temat wykluczania `packages` katalogu z są śledzone.
 
+## <a name="see-also"></a>Zobacz także
+
+* [Instalowanie i używanie pakietu w programie Visual Studio (na Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624088"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294243"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie oraz Oczyszczanie projektów i rozwiązań
 
@@ -32,17 +32,18 @@ Aby skompilować, odbudować lub Wyczyść całe rozwiązanie:
     * **Kompiluj wszystko ponownie** — czyści rozwiązania, a następnie kompiluje go.
     * **Wyczyść wszystko** — usuwa wszystkie produkty kompilacji z rozwiązania.
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub ponownie skompilować pojedynczego projektu
 
 1. W konsoli rozwiązania wybierz projekt.
 
 2. Na pasku menu wybierz polecenie Kompiluj, a następnie wybierz albo kompilacji [nazwa_projektu], [nazwa_projektu] odbudować lub wyczyścić [nazwa_projektu].
 
-
 ## <a name="to-stop-a-build"></a>Aby zatrzymać kompilację
 
 Aby zatrzymać kompilację, naciśnij czerwony kwadrat w obszarze stanu:
 
- ![Naciśnij klawisz czerwonego kwadratu można zatrzymać kompilacji](media/compiling-and-building-image3.png)
+![Naciśnij klawisz czerwonego kwadratu można zatrzymać kompilacji](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>Zobacz także
+
+- [Kompilowanie i czyszczenie projektów i rozwiązań (Visual Studio Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

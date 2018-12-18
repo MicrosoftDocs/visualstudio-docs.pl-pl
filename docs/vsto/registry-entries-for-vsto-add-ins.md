@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881784"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673019"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   W przypadku wdrażania dodatków narzędzi VSTO, które są tworzone za pomocą programu Visual Studio, należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru Podaj informacje, które umożliwiają aplikacji Microsoft Office wykrycie i załadowanie dodatku narzędzi VSTO.  
@@ -88,7 +88,7 @@ ms.locfileid: "49881784"
   
  Podobnie jak inne wpisy rejestru współużytkowane przez wszystkie dodatki narzędzi VSTO dla programów, Visual Studio tworzy formularz region wpisy rejestru na komputerze deweloperskim podczas kompilowania projektu. Jeśli używasz technologii ClickOnce do wdrażania dodatku narzędzi VSTO dla programów wpisy rejestru są tworzone automatycznie na komputerze użytkownika końcowego. Jeśli używasz Instalatora Windows do wdrożenia dodatku narzędzi VSTO dla programów, należy skonfigurować projekt InstallShield Limited Edition, aby utworzyć wpisy rejestru na komputerze użytkownika końcowego.  
   
- Aby uzyskać więcej informacji na temat wpisów rejestru regionu formularza, zobacz [Określ lokalizację regionów formularzy w niestandardowym formularzu](http://msdn.microsoft.com/library/office/ff868998.aspx). Aby uzyskać więcej informacji na temat regionów formularzy programu Outlook, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).  
+ Aby uzyskać więcej informacji na temat wpisów rejestru regionu formularza, zobacz [Określ lokalizację regionów formularzy w niestandardowym formularzu](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Aby uzyskać więcej informacji na temat regionów formularzy programu Outlook, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Wartości Loadbehaviour  
  **LoadBehavior** wpis w *głównego*\Software\Microsoft\Office\\*Nazwa aplikacji*\Addins\\*dodatku Identyfikator* klucz zawiera bitowa kombinacja wartości, które określają zachowanie wykonywania dodatku narzędzi VSTO. Znaczącego bitu (wartości 0 i 1) wskazuje, czy dodatku narzędzi VSTO jest obecnie załadowane lub załadowane. Inne usługi bits wskazywać, kiedy aplikacja próbuje załadować dodatku narzędzi VSTO.  

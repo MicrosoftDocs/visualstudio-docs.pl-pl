@@ -16,17 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e27b0a19005b7076629f2848f95c8cb5749c096f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d800fbe0a6dda6fc7c5160d607d393afcb920cd9
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677505"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671576"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Porady: programowane zamykanie dokumentów programu Visio
   Możesz zamknąć aktywny dokument programu Microsoft Visio pakietu Office przy użyciu `Microsoft.Office.Interop.Visio.Document.Close` metody.  
   
- Aby uzyskać szczegółowe informacje o tej metodzie, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) metody.  
+ Aby uzyskać szczegółowe informacje o tej metodzie, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Document.Close](/office/vba/api/Visio.Document.Close) metody.  
   
 ## <a name="close-the-active-document"></a>Zamyka aktywny dokument.  
   

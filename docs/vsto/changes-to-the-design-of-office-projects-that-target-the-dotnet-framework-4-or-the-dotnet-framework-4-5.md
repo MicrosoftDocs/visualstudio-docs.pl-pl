@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, what's new
 - what's new [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c202fb5101542a17a736f2c615c9644d63b88f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676384"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248247"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Zmienia się na projekt projektów Office obiektu docelowego .NET Framework 4 lub .NET Framework 4.5
   Począwszy od [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio wprowadzone pewne zmiany do projekt projektów Office obiektu docelowego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej. Jeśli jesteś zaznajomiony z projektów pakietu Office w poprzednich wersjach programu Visual Studio, należy pamiętać o tych zmianach przed opracowywanie projektach dla pakietu Office przeznaczonych dla tych wersji programu .NET Framework 4.0 lub nowszego. Domyślnie wszystkie projekty, które tworzysz przy użyciu programu Visual Studio 2013 lub nowszy dla środowiska .NET Framework 4.0 lub nowszy.  
@@ -61,7 +61,7 @@ ms.locfileid: "35676384"
   
 ## <a name="see-also"></a>Zobacz także  
  [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [What's new in Office development](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [What's new in Office development](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
   

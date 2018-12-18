@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a731f7a481280d5755d72a83a4532eb8e6998f97
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 396bbfdb915d0e3ecc31f516d60eab80cca6a421
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370643"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295153"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Narzędzia, scenariusze i możliwości testowania dla deweloperów
 
@@ -31,7 +31,7 @@ Zasięg i unikanie regresji z funkcją IntelliTest. Funkcja IntelliTest znacznie
 ![Funkcja IntelliTest w działaniu](media/devtest-intellitest.png)
 
 * [Wprowadzenie do funkcji IntelliTest w programie Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [IntelliTest — jeden test, by wszystkimi rządzić](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
+* [IntelliTest — jeden test, by wszystkimi rządzić](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
 * [Klipy wideo programu IntelliTest](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Rozpoczynanie pracy z funkcją IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Podręcznik dotyczący funkcji IntelliTest](intellitest-manual/index.md)
@@ -80,7 +80,7 @@ Visual Studio jest również extensible i otwiera drzwi biblioteki testowania ka
 ## <a name="see-also"></a>Zobacz także
 
 * [Wprowadzenie do testów jednostkowych](getting-started-with-unit-testing.md)
-* [Przyspieszenie wykonywania testów jednostkowych w programie Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
-* [Równoległe i kontekstu wykonania testu jednostki poufne](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Przyspieszenie wykonywania testów jednostkowych w programie Team Foundation Server](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/)
+* [Równoległe i kontekstu wykonania testu jednostki poufne](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Testy jednostkowe, analiza kodu klonowania z programem Visual Studio (Lab) i pokrycia kodu](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)

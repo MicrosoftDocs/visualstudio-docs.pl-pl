@@ -1,5 +1,5 @@
 ---
-title: Porady dotyczące wydajności dla programu Visual Studio
+title: Wskazówki dotyczące produktywności
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5c93edd089c09fff1423b7375bebb10dc18168
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179635"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067981"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
 
@@ -78,7 +78,7 @@ Możesz dodatkowo przeszukiwać środowisko IDE dla poleceń, plików i opcji, o
 
 Debugowanie może zajmować dużo czasu, ale poniższe porady mogą pomóc przyspieszyć proces.
 
-- **Testowanie strony, aplikacji lub witryny w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między przeglądarkami zainstalowanych w sieci web, w tym [narzędzie Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), bez konieczności otwierania **przeglądanie za pomocą** okno dialogowe. Możesz użyć **Debuguj element docelowy** listę, która znajduje się na **standardowa** pasku narzędzi obok pozycji **Rozpocznij debugowanie** przycisk, aby szybko sprawdzić, jakiej przeglądarki używasz podczas debugowania lub Wyświetlanie stron.
+- **Testowanie strony, aplikacji lub witryny w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między przeglądarkami zainstalowanych w sieci web, w tym [narzędzie Page Inspector (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), bez konieczności otwierania **przeglądanie za pomocą** okno dialogowe. Możesz użyć **Debuguj element docelowy** listę, która znajduje się na **standardowa** pasku narzędzi obok pozycji **Rozpocznij debugowanie** przycisk, aby szybko sprawdzić, jakiej przeglądarki używasz podczas debugowania lub Wyświetlanie stron.
 
     ![Wybierz opcje debugowania w przeglądarce sieci web](../ide/media/webbrowserdropdowntoolbar.png)
 

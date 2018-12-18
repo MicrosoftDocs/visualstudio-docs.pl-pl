@@ -1,7 +1,7 @@
 ---
-title: Debugowanie aplikacji wielowątkowych w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
-ms.date: 09/05/2017
+title: Debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft
+ms.custom: seodec18
+ms.date: 11/06/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -23,37 +23,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d238f1c6be12753fe87cece03139185e1c24ad6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854777"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059681"
 ---
-# <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
+# <a name="debug-multithreaded-applications-in-visual-studio"></a>Debugowanie aplikacji wielowątkowych w programie Visual Studio
 Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas procesora. Każdy proces, który jest uruchomiony w systemie operacyjnym, składa się z co najmniej jeden wątek. Procesy, które mają więcej niż jeden wątek nazywane są wielowątkowymi.  
   
-Komputery z wieloma procesorami, procesory wielordzeniowe lub procesy hyperthreading mogą uruchomić wiele wątków, w tym samym czasie. Równoległe przetwarzanie wiele wątków może znacznie poprawić wydajność programów, ale może również sprawić, że debugowanie trudniejsze ponieważ wprowadza konieczność, aby śledzić wiele wątków.  
+Komputery z wieloma procesorami, procesory wielordzeniowe lub procesy hyperthreading można uruchomić wiele wątków jednocześnie. Równoległe przetwarzanie przy użyciu wielu wątków może znacznie poprawić wydajność programów, ale to może również, że debugowanie trudniejsze ponieważ prześledzić wiele wątków.  
   
-Ponadto wielowątkowość wprowadza kilka nowych rodzajów potencjalnych błędów. Często na przykład dwa lub więcej wątków, trzeba mieć dostęp do tego samego zasobu, ale tylko jeden wątek może bezpiecznie uzyskać dostępu do zasobu w danym momencie. Niektóre forma wzajemnego wykluczania jest niezbędne upewnić się, że tylko jeden wątek uzyskuje dostęp do zasobów w danym momencie. Jeśli wzajemne wykluczanie jest wykonywane niepoprawnie, może utworzyć *zakleszczenia* warunku, gdzie żaden wątek nie może wykonać. Zakleszczenia mogą być problemem szczególnie trudnym do debugowania.
+Wielowątkowość wprowadzić nowych rodzajów potencjalnych błędów. Na przykład dwa lub więcej wątków może być konieczne dostęp do tego samego zasobu, ale tylko jeden wątek jednocześnie może bezpiecznie uzyskać dostęp do zasobu. Niektóre forma wzajemnego wykluczania jest niezbędne upewnić się, że tylko jeden wątek uzyskuje dostęp do zasobu w dowolnym momencie. Jeśli wzajemne wykluczenie jest zaimplementowana nieprawidłowo, może utworzyć *zakleszczenia* warunku, gdzie żaden wątek nie zostanie wykonana. Zakleszczenie są często twardych problem do debugowania.
+
+## <a name="tools-for-debugging-multithreaded-apps"></a>Narzędzia do debugowania aplikacji wielowątkowych
 
 Visual Studio zapewnia różne narzędzia do użycia podczas debugowania aplikacji wielowątkowych.
 
-- Dla wątków, podstawowe narzędzia do debugowania wątków to **wątków** okna, znaczniki wątków w oknach źródłowych **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** oknie i **Lokalizacja debugowania** paska narzędzi. Aby dowiedzieć się więcej na temat **wątków** okna i **Lokalizacja debugowania** narzędzi, zobacz [wskazówki: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md). Aby dowiedzieć się, jak używać **stosów równoległych** i **równoległego wyrażenia kontrolnego** systemu windows, zobacz [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). Zarówno tematach opisano sposób użycia znaczników wątków.
+- Dla wątków, podstawowe narzędzia do debugowania wątków to **wątków** okna, znaczniki wątków w oknach źródłowych **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okna, a **Lokalizacja debugowania** paska narzędzi. Aby dowiedzieć się więcej na temat **wątków** okna i **Lokalizacja debugowania** narzędzi, zobacz [wskazówki: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md). Aby dowiedzieć się, jak używać **stosów równoległych** i **równoległego wyrażenia kontrolnego** systemu windows, zobacz [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). Zarówno tematach opisano sposób użycia znaczników wątków.
   
-- Dla kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania są **stosów równoległych** okna, **Równoległego wyrażenia kontrolnego** oknie i **zadania** okna ( **zadania** okna obsługuje również JavaScript). Aby rozpocząć pracę, zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) i [wskazówki: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
+- Dla kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania są **stosów równoległych** okna, **Równoległego wyrażenia kontrolnego** oknie i **zadania** okno, które również obsługuje język JavaScript. Aby rozpocząć pracę, zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) i [wskazówki: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
 - Do debugowania wątków na procesor GPU, jest podstawowym narzędziem **wątków GPU** okna. Zobacz [porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
 - Dla procesów, podstawowe narzędzia to **dołączyć do procesu** okno dialogowe **procesy** oknie i **Lokalizacja debugowania** paska narzędzi.  
   
-Visual Studio udostępnia również zaawansowane punkty przerwania i punkty śledzenia, które mogą być bardzo przydatne podczas debugowania aplikacji wielowątkowych. Aby umieścić punkty przerwania na jednym z wątków, można użyć warunków punktu przerwania i filtry. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md). 
+Visual Studio udostępnia również zaawansowane punkty przerwania i punkty śledzenia, które mogą być przydatne podczas debugowania aplikacji wielowątkowych. Użyj warunków punktu przerwania i filtry, aby umieścić punkty przerwania na jednym z wątków. Punkty śledzenia pozwalają na wykonywanie śledzenia programu bez przerywania do badania problemów, takich jak zakleszczenia. Aby uzyskać więcej informacji, zobacz [akcje punktu przerwania i punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints).
+
+Debugowanie aplikacji wielowątkowej, która ma interfejs użytkownika może być szczególnie trudne. Można rozważyć uruchamiania aplikacji na drugim komputerze i za pomocą zdalnego debugowania. Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
   
-Debugowanie aplikacji wielowątkowej, która ma interfejs użytkownika może być szczególnie trudne. W takim przypadku można rozważyć uruchamiania aplikacji na drugim komputerze i za pomocą zdalnego debugowania. Aby uzyskać informacje, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
-  
-## <a name="in-this-section"></a>W tej sekcji
- [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md).  
- Przewodnik po funkcjach debugowania wątku, z naciskiem na funkcje w **stosów równoległych** okna i **równoległego wyrażenia kontrolnego** okna.
+## <a name="articles-about-debugging-multithreaded-apps"></a>Artykuły na temat debugowania aplikacji wielowątkowych
+
+ [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)   
+ Przewodnik po funkcjach debugowania wątku, podkreślając funkcji **stosów równoległych** okna i **równoległego wyrażenia kontrolnego** okna.
 
  [Narzędzia do debugowania wątków i procesów](../debugger/debug-threads-and-processes.md)  
  Wyświetla listę funkcji narzędzia do debugowania wątków i procesów.  
@@ -64,16 +67,16 @@ Debugowanie aplikacji wielowątkowej, która ma interfejs użytkownika może by�
  [Przewodnik: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).  
  Przewodnik, który pokazuje, jak używać **wątków** okna i **Lokalizacja debugowania** paska narzędzi. 
 
- [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Przewodnik, który pokazuje, jak używać **stosów równoległych** i **zadania** systemu windows.  
   
  [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
- Trzy sposoby przełączenia kontekstu debugowania do innego wątku.  
+ Rożne sposoby przełączenia kontekstu debugowania do innego wątku.  
   
- [Instrukcje: flagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md)  
+ [Porada: oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md)  
  Oznacz lub Oflaguj wątki, które chcesz poświęcić szczególną uwagę podczas debugowania.    
   
- [Instrukcje: debugowanie w klastrze o wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [Porady: debugowanie w klastrze o wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  Techniki debugowania aplikacji, która działa w klastrze wysokiej wydajności.  
 
  [Wskazówki dotyczące debugowania wątków w kodzie natywnym](../debugger/tips-for-debugging-threads-in-native-code.md)  
@@ -85,22 +88,11 @@ Debugowanie aplikacji wielowątkowej, która ma interfejs użytkownika może by�
  [Instrukcje: ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
  Nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna. 
   
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Używanie punktów przerwania](../debugger/using-breakpoints.md)
+## <a name="see-also"></a>Zobacz także  
 
-- Warunki punktu przerwania lub filtrów należy używać do debugowania wątków.  
-  
-- Punkty śledzenia pozwalają na wykonywanie śledzenia programu bez przerywania. Może to być przydatne do badania problemów, takich jak zakleszczenia.  
-  
-  [Wątkowość](/dotnet/standard/threading/index)  
-  Pojęcia wielowątkowości w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programowania, w tym przykładzie kodu.  
-  
-  [Wielowątkowość w składnikach](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
-  Jak używać wielowątkowości w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] składników.  
-  
-  [Obsługa wielowątkowości w przypadku starszego kodu (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
-  Pojęcia wielowątkowości i przykładowy kod dla programistów C++ przy użyciu biblioteki MFC.  
-  
-## <a name="see-also"></a>Zobacz też  
+[Używanie punktów przerwania](../debugger/using-breakpoints.md)  
+[Wątkowość](/dotnet/standard/threading/index)  
+[Wielowątkowość w składnikach](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+[Obsługa wielowątkowości w przypadku starszego kodu (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
  [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

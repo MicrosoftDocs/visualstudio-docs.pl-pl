@@ -1,22 +1,23 @@
 ---
 title: Trybu mieszanego debugowania dla języka Python
-description: Jak można jednocześnie debugować C++ i Python w programie Visual Studio, w tym przechodzenie między środowiskami, wyświetlanie wartości i wyrażeń.
-ms.date: 06/26/2018
+description: Jednocześnie debugować C++ i Python w programie Visual Studio, w tym przechodzenie między środowiskami, wyświetlanie wartości i wyrażeń.
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552087"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052238"
 ---
 # <a name="debug-python-and-c-together"></a>Debugowanie języka Python i C++ razem
 
@@ -35,7 +36,7 @@ Funkcje debugowania trybu mieszanego zawierają następujące informacje, jak wy
 - Zobacz Python reprezentacje obiektów w ramek natywnych i na odwrót
 - Debugowanie w kontekście projektu w języku Python lub projektu C++
 
-![Debugowanie w trybie mieszanym](media/mixed-mode-debugging.png)
+![Debugowanie w trybie mieszanym dla języka Python w programie Visual Studio](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
@@ -96,7 +97,7 @@ Wszystkie poprzednie wersje programu Visual Studio debugowanie w trybie mieszany
 
 **Stos wywołań** okno zawiera natywny i ramek stosu języka Python z przeplotem, za pomocą przejścia oznaczone między tymi dwoma:
 
-![Stos wywołań połączone](media/mixed-mode-debugging-call-stack.png)
+![Stos wywołań połączone w debugowaniu trybu mieszanego](media/mixed-mode-debugging-call-stack.png)
 
 Przejścia są traktowane jako **[kod zewnętrzny]**, bez określania kierunku przejście, jeśli **narzędzia** > **opcje**  >  **Debugowanie** > **ogólne** > **Włącz tylko mój kod** ustawiono opcję.
 
@@ -110,11 +111,11 @@ Korzystając z **Step Into** (**F11**) lub **Step Out** (**Shift**+**F11**) pole
 
 Po uaktywnieniu ramka natywna (C lub C++) jej zmienne lokalne wyświetlane w debugerze **lokalne** okna. W moduły macierzyste rozszerzenia języka Python, wiele z tych zmiennych są typu `PyObject` (czyli element typedef dla `_object`), lub kilka innych Python typy podstawowe (patrz lista poniżej). W debugowaniu trybu mieszanego, te wartości obecne dodatkowe podrzędnym etykietą **[widok Python]**. Po rozwinięciu ten węzeł zawiera reprezentację Python zmiennej, taka sama jak co widział, jeśli zmienna lokalna odwołuje się do tego samego obiektu znajdował się w ramce języka Python. Element podrzędny tego węzła są edytowalne.
 
-![Wyświetl języka Python](media/mixed-mode-debugging-python-view.png)
+![Widok języka Python w oknie zmienne lokalne](media/mixed-mode-debugging-python-view.png)
 
 Aby wyłączyć tę funkcję, kliknij prawym przyciskiem myszy **lokalne** okna i Przełącz **Python** > **Pokaż węzły widoku Python** opcji menu:
 
-![Włączanie widoku języka Python](media/mixed-mode-debugging-enable-python-view.png)
+![Włączanie widok języka Python w oknie zmienne lokalne](media/mixed-mode-debugging-enable-python-view.png)
 
 C typy przedstawiające **[widok Python]** węzłów (jeśli jest włączona):
 
@@ -143,11 +144,11 @@ Opcja alternatywny (i lepsze) jest wykonanie czynności opisanych [3123 program 
 
 Podobnie jak w poprzedniej sekcji, aby umożliwić **[C++ widok]** natywnej wartości w **lokalne** okna, jeśli ramka Python jest aktywny. Ta funkcja nie jest włączona domyślnie, dzięki czemu możesz ją włączyć, kliknij prawym przyciskiem myszy w **lokalne** okna i przełączania **Python** > **Pokaż węzły widoku C++** menu Opcja.
 
-![Włączanie widoku C++](media/mixed-mode-debugging-enable-cpp-view.png)
+![Włączanie widok C++ w oknie zmienne lokalne](media/mixed-mode-debugging-enable-cpp-view.png)
 
 **[C++ widok]** węzła zawiera reprezentację wewnętrzna struktura C/C++ dla wartości, taka sama jak zobaczysz w ramka natywna. Na przykład pokazuje wystąpienie `_longobject` (dla której `PyLongObject` jest element typedef) dla języka Python liczba całkowita typu long, a stara się wnioskowanie typów dla natywnych klas, które zostały zredagowane samodzielnie. Element podrzędny tego węzła są edytowalne.
 
-![Wyświetl C++](media/mixed-mode-debugging-cpp-view.png)
+![Widok C++ w oknie zmienne lokalne](media/mixed-mode-debugging-cpp-view.png)
 
 Jeśli pole podrzędne obiektu jest typu `PyObject`, lub jednego z innych obsługiwanych typów, a następnie w nim **[widok Python]** reprezentacji węzła (Jeśli te oświadczenia są włączone), dzięki czemu można przejść do obiektu wykresów where łącza nie są bezpośrednio widoczne dla języka Python.
 

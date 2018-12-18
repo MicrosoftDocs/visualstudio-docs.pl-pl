@@ -1,5 +1,5 @@
 ---
-title: Dodaj niestandardowe zbiory liczników dla testy obciążeniowe w programie Visual Studio
+title: Dodaj niestandardowe zbiory liczników do testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204092"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051487"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Porady: Dodawanie zbiorów liczników niestandardowych za pomocą edytora testu obciążenia
 
@@ -29,6 +29,8 @@ Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenio
 Zarządzasz licznikami w **edytora testu obciążenia**. Zbiory liczników, które zostały już dodane do testu są widoczne w **zestawów liczników** węzeł testu obciążeniowego. Po utworzeniu Testu obciążenia, można dodać do niego nowe niestandardowe zbiory liczników.
 
 ![Niestandardowy zbiór liczników](../test/media/loadtestcustomcounter.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Aby dodać niestandardowy zbiór liczników do Testu obciążenia
 

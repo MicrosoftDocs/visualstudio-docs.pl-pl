@@ -16,12 +16,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb21fe95b2e351ca64a4f9434354abb0bfc42b1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303566"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780987"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../includes/
   
     -   CLSID  
   
-         Wymagane. Określa identyfikator biblioteki klas składnika modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Wymagana. Określa identyfikator biblioteki klas składnika modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
     -   GeneratesDesignTimeSource  
   
-         Wymagane. Wskazuje, czy typy plikom, które są generowane przez niestandardowe narzędzie były dostępne dla projektantów wizualnych. Wartość tego parametru musi być 0 (zero) typy nie są dostępne do projektantów wizualnych lub 1 (co) dla typów dostępnych projektantów wizualnych.  
+         Wymagana. Wskazuje, czy typy plikom, które są generowane przez niestandardowe narzędzie były dostępne dla projektantów wizualnych. Wartość tego parametru musi być 0 (zero) typy nie są dostępne do projektantów wizualnych lub 1 (co) dla typów dostępnych projektantów wizualnych.  
   
     > [!NOTE]
     >  Należy zarejestrować niestandardowe narzędzie osobno dla każdego języka, dla którego chcesz narzędzie niestandardowe, które mają być dostępne.  

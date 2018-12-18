@@ -1,22 +1,23 @@
 ---
-title: Napraw program Visual Studio 2017 | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak naprawić instalację programu Visual Studio 2017.
-keywords: ''
+title: Napraw program Visual Studio
+titleSuffix: ''
+description: Dowiedz się, jak naprawić instalację programu Visual Studio 2017
+ms.date: 09/28/2017
+ms.technology: vs-acquisition
+ms.custom: seodec18
+ms.prod: visual-studio-dev15
+ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
 manager: douge
-ms.date: 09/28/2017
-ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7717a9ef889ee575afb3cc0b01fbb573a54f1f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a622c005626c28a1275915f3f464b7961cdbd914
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880454"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158830"
 ---
 # <a name="repair-visual-studio-2017"></a>Napraw program Visual Studio 2017
 

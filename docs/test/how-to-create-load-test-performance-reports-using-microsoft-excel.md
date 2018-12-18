@@ -1,5 +1,5 @@
 ---
-title: Tworzenie programu Visual Studio raportów wydajności testu obciążenia za pomocą programu Microsoft Excel
+title: Tworzenie raportów wydajności testu obciążenia za pomocą programu Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861920"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064999"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia
 
-Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań. Dostępne są dwa typy raportów testów obciążenia:
+Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Dostępne są dwa typy raportów testów obciążenia:
 
 -   **Uruchom porównanie** tworzy zestaw raportów, który porównuje dane z dwóch wyniki testu obciążenia za pomocą tabel i wykresów słupkowych.
 
@@ -45,7 +49,7 @@ Na poniższej ilustracji przedstawiono przykładowy raport, który pokazuje zwi�
 Raporty programu Excel można albo wygenerować w **analizatora testu obciążenia**, za pomocą **Utwórz raport programu Excel** przycisk na pasku narzędzi lub z programu Excel przy użyciu **raport z testu obciążenia** opcji **testu obciążeniowego** karcie **Office** wstążki.
 
 > [!NOTE]
-> Po dodaniu komentarzy do testu obciążenia pojawią się one w raporcie programu Excel. Aby uzyskać więcej informacji, zobacz [porady: dodawanie komentarzy podczas analizowania zakończonego testu obciążenia](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Po dodaniu komentarzy do testu obciążenia są wyświetlane w raporcie programu Excel.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Aby wygenerować raporty porównania testów obciążenia za pomocą programu Excel
 

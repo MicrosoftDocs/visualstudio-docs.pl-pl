@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671966"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Porady: programowane wyszukiwanie tekstu w zakresach arkusza
-  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolne ciągi błędów, które mogą wystąpić w komórce arkusza, takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągi błędów, zobacz [komórki wartości błędów](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolne ciągi błędów, które mogą wystąpić w komórce arkusza, takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągi błędów, zobacz [komórki wartości błędów](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   

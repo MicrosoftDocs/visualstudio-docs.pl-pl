@@ -1,5 +1,6 @@
 ---
-title: Samouczek — Dowiedz się, Flask w programie Visual Studio, krok 5
+title: Poznaj samouczek Flask w Visual Studio w kroku 5, szablon projektu sond
+titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności funkcje szablonów projektu sieci Web Flask ankiety i projektu sieci Web Flask/Jade ankiety.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143206"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066002"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
 

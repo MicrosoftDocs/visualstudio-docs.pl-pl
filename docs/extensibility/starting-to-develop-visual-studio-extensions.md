@@ -14,21 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849544"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349666"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń programu Visual Studio
+
 Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, prawdopodobnie masz kilka pytań. Wymieniono niektóre najbardziej typowe w tym miejscu. Jeśli nie widzisz informacji szukasz, użyj przycisków opinii (**ta strona była pomocna?** u dołu ekranu) aby poprosić o co chcesz.
 
+> [!NOTE]
+> Ten artykuł dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Rozszerzanie programu Visual Studio dla komputerów Mac](/visualstudio/mac/extending-visual-studio-mac).
+
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Jakie oprogramowanie należy do tworzenia rozszerzenia programu Visual Studio?
- Musisz zainstalować Visual Studio SDK oprócz programu Visual Studio, aby tworzyć rozszerzenia programu Visual Studio. Visual Studio SDK można zainstalować jako część regularnych instalacji lub można zainstalować ją później. Aby uzyskać więcej informacji na temat instalowania programu Visual Studio SDK, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+
+Musisz zainstalować Visual Studio SDK oprócz programu Visual Studio, aby tworzyć rozszerzenia programu Visual Studio. Visual Studio SDK można zainstalować jako część regularnych instalacji lub można zainstalować ją później. Aby uzyskać więcej informacji na temat instalowania programu Visual Studio SDK, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Jakiego rodzaju rzeczy można zrobić za pomocą rozszerzeń programu Visual Studio?
- Nie ma użytkownika limit, jeśli chodzi o opracowująca w wyobraźni inne rozszerzenia programu Visual Studio. Oczywiście większość rozszerzenia mają coś zrobić w pisaniu kodu, ale które nie mają w przypadku. Poniżej przedstawiono kilka przykładów rodzajów rozszerzeń, które można tworzyć:
+
+Nie ma użytkownika limit, jeśli chodzi o opracowująca w wyobraźni inne rozszerzenia programu Visual Studio. Oczywiście większość rozszerzenia mają coś zrobić w pisaniu kodu, ale które nie mają w przypadku. Poniżej przedstawiono kilka przykładów rodzajów rozszerzeń, które można tworzyć:
 
 - Obsługa języków, które nie są uwzględnione w programie Visual Studio, z obsługą kompilatora i debugowania, IntelliSense i kolorowanie składni
 
@@ -36,12 +42,13 @@ Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, pr
 
 - Projektant specyficznego dla domeny dla scenariuszy, takich jak obsługa danych projektu lub w chmurze
 
-  Aby zapoznać się z przykładami rozszerzeń, zapoznaj się z [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Wiele rozszerzeń jest open source, a witryna Marketplace zawiera łącza do swojego repozytorium GitHub.
+Aby zapoznać się z przykładami rozszerzeń, zapoznaj się z [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Wiele rozszerzeń jest open source, a witryna Marketplace zawiera łącza do swojego repozytorium GitHub.
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>Funkcje programu Visual Studio, które można rozszerzyć?
- Teoretycznie można rozszerzyć o niemal dowolnym część programu Visual Studio: menu, paski narzędzi, polecenia, systemu windows, rozwiązania, projekty, edytory i tak dalej.
 
- W praktyce znaleźliśmy, czy funkcje, których większość osób chce rozszerzyć polecenia, menu i paski narzędzi, windows, funkcji IntelliSense i projektów. Poniżej podano linki do odpowiednich sekcji:
+Teoretycznie można rozszerzyć o niemal dowolnym część programu Visual Studio: menu, paski narzędzi, polecenia, systemu windows, rozwiązania, projekty, edytory i tak dalej.
+
+W praktyce znaleźliśmy, czy funkcje, których większość osób chce rozszerzyć polecenia, menu i paski narzędzi, windows, funkcji IntelliSense i projektów. Poniżej podano linki do odpowiednich sekcji:
 
 -   [Rozszerzenie menu i poleceń](../extensibility/extending-menus-and-commands.md): Dodawanie własnych elementów do programu Visual Studio, menu i paski narzędzi. Można je uruchomić nowe funkcje programu Visual Studio lub własnych aplikacji zewnętrznych pomocnika. Można również dołączyć skrótów niestandardowych elementów menu.
 
@@ -88,3 +95,7 @@ Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, pr
  Można zainstalować rozszerzenia na innym komputerze lub wysyłania dla Twoich znajomych, jako plik .vsix, instalowania, klikając go dwukrotnie. Możesz dowiedzieć się więcej na temat pakietów VSIX w [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
  Można również publikować swoje rozszerzenie Visual Studio Marketplace, który sprawia, że widoczne dla dużej liczby klientów w programie Visual Studio. Na przykład pakowania rozszerzenia w portalu Marketplace, zobacz [przewodnik: publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji na temat co należy zrobić, aby publikować w portalu Marketplace, zobacz [produkty i rozszerzenia programu Visual Studio](/azure/devops/extend/overview?view=vsts).
+
+## <a name="see-also"></a>Zobacz także
+
+- [Rozszerzenie programu Visual Studio dla komputerów Mac](/visualstudio/mac/extending-visual-studio-mac)
