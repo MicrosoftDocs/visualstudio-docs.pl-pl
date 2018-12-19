@@ -1,42 +1,30 @@
 ---
-title: Numery wersji i daty wydania programu Visual Studio
-titleSuffix: ''
-description: Listę wydane wersje i numerów kompilacji dla programu Visual Studio 2017 i nowszym, posortowane według daty.
+title: Program Visual Studio 2017 numery wersji i daty wydania
+description: Lista wydane wersje i numerów kompilacji dla programu Visual Studio 2017, posortowane według daty.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 12/11/2018
+ms.date: 11/06/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
-ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 47c51b1f4f5ce168e679027a704ffb2b23482817
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
-ms.translationtype: MT
+ms.openlocfilehash: 46d19383738846cfef0fc0e389ec13e044adce92
+ms.sourcegitcommit: 21407c19d933bacf6bb4a75d9337cdd245da1680
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248260"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273145"
 ---
-# <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
-
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+# <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Program Visual Studio 2017 numery wersji i daty wydania
 
 W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2017 do daty.
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.4 | Wydanie | 11 grudnia 2018 r. | 15.9.28307.222 |
-| 15.0.20 | Wydanie | 11 grudnia 2018 r. | 15.0.26228.64 |
-| 15.9.3 | Wersja zapoznawcza 1 | 28 listopada 2018 r. | 15.9.28307.145 |
-| 15.9.3 | Wydanie | 28 listopada 2018 r. | 15.9.28307.145 |
-| 15.9.2 | Wydanie | 19 listopada 2018 r. | 15.9.28307.108 |
-| 15.9.1 | Wydanie | 15 listopada 2018 r. | 15.9.28307.105 |
-| 15.9.0 | Wydanie | 13 listopada 2018 r. | 15.9.28307.53 |
-| 15.9.0 w wersji zapoznawczej 6 | Wersja zapoznawcza | 13 listopada 2018 r. | 15.9.28307.53 |
 | 15.9.0 w wersji zapoznawczej 5 | Wersja zapoznawcza | 6 listopada 2018 r. | 15.9.28302.56 |
 | 15.8.9 | Wydanie | 2 listopada 2018 r. | 15.8.28010.2050 |
 | 15.8.8 | Wydanie | 24 października 2018 r. | 15.8.28010.2048 |
@@ -92,35 +80,35 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.6.0 Podgląd 7 | Wersja zapoznawcza | 2 marca 2018 r. | 15.6.27428.1 |
 | 15.6.0 w wersji zapoznawczej 6 | Wersja zapoznawcza | 23 lutego 2018 r. | 15.6.27421.1 |
 | 15.0.10 | Wydanie | 21 lutego 2018 r. | 15.0.26228.28 |
-| 15.5.7 | Wydanie | 20 lutego 2018 r. | 15.0.27130.2036 |
+| 15.5.7 | Wydanie | 20 lutego 2018 r. | 15.5.27130.2036 |
 | 15.6.0 w wersji zapoznawczej 5 | Wersja zapoznawcza | 14 lutego 2018 r. | 15.6.27413.0 |
 | 15.6.0 w wersji zapoznawczej 4 | Wersja zapoznawcza | 7 lutego 2018 r. | 15.6.27406.0 |
 | 15.0.9 | Wydanie | 2 lutego 2018 r. | 15.0.26228.23 |
-| 15.5.6 | Wydanie | 29 stycznia 2018 r. | 15.0.27130.2027 |
-| 15.5.5 | Wydanie | 25 stycznia 2018 r. | 15.0.27130.2026 |
+| 15.5.6 | Wydanie | 29 stycznia 2018 r. | 15.5.27130.2027 |
+| 15.5.5 | Wydanie | 25 stycznia 2018 r. | 15.5.27130.2026 |
 | 15.6.0 Podgląd 3 | Wersja zapoznawcza | 25 stycznia 2018 r. | 15.6.27323.2 |
-| 15.5.4 | Wydanie | 16 stycznia 2018 r. | 15.0.27130.2024 |
+| 15.5.4 | Wydanie | 16 stycznia 2018 r. | 15.5.27130.2024 |
 | 15.6.0 preview 2 | Wersja zapoznawcza | 10 stycznia 2018 r. | 15.6.27309.0 |
-| 15.5.3 | Wydanie |  9 stycznia 2018 r. | 15.0.27130.2020 |
+| 15.5.3 | Wydanie |  9 stycznia 2018 r. | 15.5.27130.2020 |
 | 15.0.8 | Wydanie |  9 stycznia 2018 r. | 15.0.26228.21 |
-| 15.5.2 | Wydanie | 14 grudnia 2017 r. | 15.0.27130.2010 |
+| 15.5.2 | Wydanie | 14 grudnia 2017 r. | 15.5.27130.2010 |
 | 15.6.0 Podgląd 1 | Wersja zapoznawcza | 14 grudnia 2017 r. | 15.6.27205.2004 |
-| 15.5.1 | Wydanie | 7 grudnia 2017 r. | 15.0.27130.2003 |
+| 15.5.1 | Wydanie | 7 grudnia 2017 r. | 15.5.27130.2003 |
 | 15.6.0 Podgląd 1 | Wersja zapoznawcza | 7 grudnia 2017 r. | 15.6.27205.0 |
 | 15.0.7 | Wydanie | 6 grudnia 2017 r. | 15.0.26228.18 |
-| 15.5 | Wydanie | 4 grudnia 2017 r. | 15.0.27130.0 |
-| 15.5.0 w wersji zapoznawczej 5 | Wersja zapoznawcza | 30 listopada 2017 r. | 15.0.27128.1 |
-| 15.4.5 | Wydanie | 27 listopada 2017 r. | 15.0.27004.2010 |
-| 15.5.0 w wersji zapoznawczej 4 | Wersja zapoznawcza | 14 listopada 2017 r. | 15.0.27110.0 |
-| 15.4.4 | Wydanie | 14 listopada 2017 r. | 15.0.27004.2009 |
+| 15.5 | Wydanie | 4 grudnia 2017 r. | 15.5.27130.0 |
+| 15.5.0 w wersji zapoznawczej 5 | Wersja zapoznawcza | 30 listopada 2017 r. | 15.5.27128.1 |
+| 15.4.5 | Wydanie | 27 listopada 2017 r. | 15.4.27004.2010 |
+| 15.5.0 w wersji zapoznawczej 4 | Wersja zapoznawcza | 14 listopada 2017 r. | 15.5.27110.0 |
+| 15.4.4 | Wydanie | 14 listopada 2017 r. | 15.4.27004.2009 |
 | 15.0.6 | Wydanie | 14 listopada 2017 r. | 15.0.26228.17 |
-| 15.4.3 | Wydanie | 8 listopada 2017 r. | 15.0.27004.2008 |
-| 15.5.0 Podgląd 3 | Wersja zapoznawcza | 6 listopada 2017 r. | 15.0.27102.0 |
-| 15.4.2 | Wydanie | Do 31 października 2017 r. | 15.0.27004.2006 |
-| 15.5.0 preview 2 | Wersja zapoznawcza | 23 października 2017 r. | 15.0.27019.1 |
-| 15.4.1 | Wydanie | 19 października 2017 r. | 15.0.27004.2005 |
+| 15.4.3 | Wydanie | 8 listopada 2017 r. | 15.4.27004.2008 |
+| 15.5.0 Podgląd 3 | Wersja zapoznawcza | 6 listopada 2017 r. | 15.5.27102.0 |
+| 15.4.2 | Wydanie | Do 31 października 2017 r. | 15.4.27004.2006 |
+| 15.5.0 preview 2 | Wersja zapoznawcza | 23 października 2017 r. | 15.5.27019.1 |
+| 15.4.1 | Wydanie | 19 października 2017 r. | 15.4.27004.2005 |
 | 15.5 Podgląd 1 | Wersja zapoznawcza | 11 października 2017 r. | 15.0.27009.1 |
-| 15.4 | Wydanie | 9 października 2017 r. | 15.0.27004.2002 |
+| 15.4 | Wydanie | 9 października 2017 r. | 15.0.27004.20002 |
 | 15.4 w wersji zapoznawczej 6 | Wersja zapoznawcza | 9 października 2017 r.| 15.0.27004.20002 |
 | 15.4 w wersji zapoznawczej 5 | Wersja zapoznawcza | 6 października 2017 r. | 15.0.27004.2000 |
 | 15.4 w wersji zapoznawczej 4 | Wersja zapoznawcza | 2 października 2017 r. | 15.0.26929.2 |
@@ -135,7 +123,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.3.1 | Wydanie | 18 sierpnia 2017 r. | 15.0.26730.08 |
 | 15.3.1 Podgląd 1 | Wersja zapoznawcza | 18 sierpnia 2017 r. | 15.0.26730.08 |
 | 15.3.1  | Wydanie | 18 sierpnia 2017 r. | 15.0.26730.08 |
-| 15.4 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 24 sierpnia 2017 r. | 15.0.26823.1 |
+| 15.4 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 24 sierpnia 2017 r. | 15.4.26823.1 |
 | 15.3 | Wydanie | 14 sierpnia 2017 r. | 15.0.26730.3 |
 | 15.3 Podgląd 7.1 | Wersja zapoznawcza | 11 sierpnia 2017 r. | 15.0.26730.3 |
 | 15.3 Podgląd 7 | Wersja zapoznawcza | 1 sierpnia 2017 r. | 15.0.26730.0 |
@@ -169,15 +157,6 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.0.1  | Wydanie | 14 marca 2017 r. | 15.0.26228.9 |
 | 15.1 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 7 marca 2017 r. | 15.0.26304.0 |
 | 15.0.0 | Wydanie | 7 marca 2017 r. | 15.0.26228.4 |
-
-## <a name="visual-studio-2019-preview"></a>Visual Studio Preview 2019 r
-
-W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio Preview 2019 do daty.
-
-| **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
-| ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.0.0 | 1.1 (wersja zapoznawcza) | 10 grudnia 2018 r. | 16.0.28408.50 |
-| 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

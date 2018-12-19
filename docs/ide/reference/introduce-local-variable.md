@@ -1,5 +1,5 @@
 ---
-title: Wprowadzanie zmiennej lokalnej
+title: Wprowadzanie zmiennej lokalnej w programie Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MT
+ms.openlocfilehash: 97e0e994a15c9587ae781280743b42329753e43d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068085"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294945"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Wprowadzanie zmiennej lokalnej w programie Visual Studio
 

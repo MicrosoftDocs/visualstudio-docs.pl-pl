@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 035a38abc2285f744841b1d095387f61a21335a7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: 572b92d6a74a3ef61f85e13494856c1193a7770f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671537"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677425"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Dostosowywanie wstążki do programu Outlook
   Podczas dostosowywania wstążki w programie Microsoft Outlook pakietu Office, należy rozważyć, gdzie Twoje niestandardowa Wstążka pojawią się w aplikacji. Program Outlook wyświetli wstążki w głównej aplikacji interfejsu użytkownika (UI), a w systemie windows, które otwierają, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail. Tych aplikacji systemu windows są nazywane inspektorzy.  
@@ -41,12 +41,12 @@ ms.locfileid: "50671537"
   
  Jeśli używasz **Wstążka (Projektant graficzny)** element, kliknij przycisk **RibbonType** właściwości wstążki w **właściwości** okna, a następnie wybierz co najmniej jedną wstążki identyfikatory z Lista wartości.  
   
- Możesz dodać więcej niż jeden wstążki do projektu. Jeśli więcej niż jeden Wstążka udostępnia identyfikator wstążki, zastępują `CreateRibbonExtensibilityObject` method in Class metoda `ThisAddin` klasy projektu, aby określić, które wstążki do wyświetlenia w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md). Aby uzyskać więcej informacji o każdym typie wstążki, zobacz artykuł techniczny [dostosowania wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).  
+ Możesz dodać więcej niż jeden wstążki do projektu. Jeśli więcej niż jeden Wstążka udostępnia identyfikator wstążki, zastępują `CreateRibbonExtensibilityObject` method in Class metoda `ThisAddin` klasy projektu, aby określić, które wstążki do wyświetlenia w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md). Aby uzyskać więcej informacji o każdym typie wstążki, zobacz artykuł techniczny [dostosowania wstążki w programie Outlook 2007](http://msdn.microsoft.com/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Określ typ wstążki za pomocą XML wstążki  
  Jeśli używasz **wstążki (XML)** , należy sprawdzić wartość *ribbonID* parametr <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody i zwrócenie odpowiedniego wstążki.  
   
- <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Metody jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. *RibbonID* parametru jest ciąg, który identyfikuje programu Explorer lub określonego typu inspector. Aby uzyskać pełną listę możliwych wartości *ribbonID* parametru, zobacz artykuł techniczny [dostosowania wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).  
+ <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Metody jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. *RibbonID* parametru jest ciąg, który identyfikuje programu Explorer lub określonego typu inspector. Aby uzyskać pełną listę możliwych wartości *ribbonID* parametru, zobacz artykuł techniczny [dostosowania wstążki w programie Outlook 2007](http://msdn.microsoft.com/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
  Poniższy przykład kodu demonstruje sposób wyświetlania niestandardowej tylko we wstążce `Microsoft.Outlook.Mail.Compose` inspector. To narzędzie inspector, która zostanie otwarta, gdy użytkownik tworzy nową wiadomość e-mail. Na Wstążce, aby wyświetlić została określona w `GetResourceText()` metody, która jest generowany w **wstążki** klasy. Aby uzyskać więcej informacji na temat **wstążki** klasy, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).  
   

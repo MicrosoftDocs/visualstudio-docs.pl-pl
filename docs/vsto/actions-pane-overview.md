@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: John-Hart
-ms.author: johnhart
+author: TerryGLee
+ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MT
+ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305679"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677527"
 ---
 # <a name="actions-pane-overview"></a>Okienko akcji ― omówienie
   Okienka akcji jest dostosowywany **akcji dla dokumentów** okienka zadań, który jest dołączony do określonego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. W okienku Akcje znajduje się wewnątrz okienka zadań pakietu Office oraz inne okienka wbudowanego zadania, takie jak **źródła XML** okienka zadań w programie Excel lub **style i formatowanie** okienka zadań w programie Word. Formanty Windows Forms lub kontrolek WPF umożliwia projektowanie interfejsu użytkownika w okienku Akcje.
@@ -48,16 +48,16 @@ ms.locfileid: "52305679"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Dodawanie wielu formantów do okienka akcji  
  Gdy dodasz wiele kontrolek w okienku Akcje powinien grupowanie kontrolek w kontrolce użytkownika, a następnie dodać formant użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwości. Ten proces obejmuje następujące kroki:  
 
-1. Tworzenie interfejsu użytkownika (UI) w okienku Akcje, dodając **kontrolki okienka akcji** lub **kontrolki użytkownika** elementu do projektu. Oba te elementy obejmują niestandardowych formularzy Windows <xref:System.Windows.Forms.UserControl> klasy. **Kontrolki okienka akcji** i **kontrolki użytkownika** elementy są równoważne; jedyna różnica polega na ich nazwy.  
+1.  Tworzenie interfejsu użytkownika (UI) w okienku Akcje, dodając **kontrolki okienka akcji** lub **kontrolki użytkownika** elementu do projektu. Oba te elementy obejmują niestandardowych formularzy Windows <xref:System.Windows.Forms.UserControl> klasy. **Kontrolki okienka akcji** i **kontrolki użytkownika** elementy są równoważne; jedyna różnica polega na ich nazwy.  
 
-2. Dodaj formanty Windows Forms do <xref:System.Windows.Forms.UserControl> za pomocą projektanta lub napisanie kodu.  
+2.  Dodaj formanty Windows Forms do <xref:System.Windows.Forms.UserControl> za pomocą projektanta lub napisanie kodu.  
 
-   > [!NOTE]  
-   >  Można również dodać kontrolki WPF w okienku Akcje, dodając WPF <xref:System.Windows.Controls.UserControl> do formularzy Windows Forms <xref:System.Windows.Forms.UserControl>. Aby uzyskać więcej informacji, zobacz [WPF Użyj kontrolki w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md).  
+    > [!NOTE]  
+    >  Można również dodać kontrolki WPF w okienku Akcje, dodając WPF <xref:System.Windows.Controls.UserControl> do formularzy Windows Forms <xref:System.Windows.Forms.UserControl>. Aby uzyskać więcej informacji, zobacz [WPF Użyj kontrolki w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3. Dodaje wystąpienie kontrolki użytkownika niestandardowego do formantów, które są zawarte w `ActionsPane` pole `ThisWorkbook` (dla programu Excel) lub `ThisDocument` (dla programu Word) klasy w projekcie.  
+3.  Dodaje wystąpienie kontrolki użytkownika niestandardowego do formantów, które są zawarte w `ActionsPane` pole `ThisWorkbook` (dla programu Excel) lub `ThisDocument` (dla programu Word) klasy w projekcie.  
 
-   Aby uzyskać przykłady ilustrujące ten proces bardziej szczegółowo, zobacz [porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+ Aby uzyskać przykłady ilustrujące ten proces bardziej szczegółowo, zobacz [porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Ukrywanie okienka akcji  
  Mimo że <xref:Microsoft.Office.Tools.ActionsPane> klasa ma <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metody i <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> właściwości nie można usunąć okienka akcji z poziomu interfejsu użytkownika przy użyciu wszystkich członków <xref:Microsoft.Office.Tools.ActionsPane> samej klasy. Wywoływanie <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metody lub ustawienie <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> właściwości **false** powoduje ukrycie formantów w okienku akcji; nie ukrywa okienko zadań.  

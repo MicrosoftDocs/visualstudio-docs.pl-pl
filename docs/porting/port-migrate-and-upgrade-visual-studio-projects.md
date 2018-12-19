@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MT
+ms.openlocfilehash: c1ceaf0fc805ce9fb2b284de203bfde6f418a4a1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067064"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220840"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu programu Visual Studio 2017
 
@@ -68,7 +68,7 @@ Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapozn
 | Program Visual Studio Extensibility/VSIX | Projekty z MinimumVersion 14.0 lub mniej są aktualizowane do deklarowania 15.0 MinimumVersion, która uniemożliwia otwarcie we wcześniejszych wersjach programu Visual Studio projekt. Aby zezwolić na projekt otworzyć we wcześniejszych wersjach, ustaw MinimumVersion `$(VisualStudioVersion)`. Zobacz też [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Możesz użyć programu Microsoft Test Manager lub programu Visual Studio 2010 z dodatkiem SP1 i nowszych, aby otwierać środowiska, utworzone w którejkolwiek z tych wersji. Jednak dla Visual Studio 2010 SP1 wersji programu Microsoft Test Manager musi odpowiadać wersji programu Team Foundation Server, zanim będzie można utworzyć środowiska. |
 | Visual Studio Tools for Apache Cordova | Projekty mogą być otwierane w programie Visual Studio 2017, ale nie są wstecznie zgodne. Po otwarciu projektu programu Visual Studio 2015, zostanie wyświetlony monit pozostawienia do projektu. Ta modyfikacja uaktualnia projekt do korzystania z procesami zamiast `taco.json` plik, aby zarządzać wersjami biblioteki Cordova, jego platformy, jej wtyczek i jego zależności node/npm. Zobacz [Przewodnik po migracji](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) Aby uzyskać więcej informacji. |
-| Wdrażanie w Internecie (wdproj) | Obsługa dla wdrażania w Internecie projektów została usunięta w programie Visual Studio 2012 z dodatkiem obsługi profilu publikowania. Ponieważ nie ma odpowiednika w programie Visual Studio 2017, nie ma automatycznej migracji ścieżki dla takich projektów. Zamiast tego otwórz plik wdproj w edytorze tekstów i kopiowanie i wklejanie jakiekolwiek dostosowania do pubxml (profil publikowania) pliku, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Zobacz też [plany dotyczące projekty wdrażania w sieci web i witryny sieci Web](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Wdrażanie w Internecie (wdproj) | Obsługa dla wdrażania w Internecie projektów została usunięta w programie Visual Studio 2012 z dodatkiem obsługi profilu publikowania. Ponieważ nie ma odpowiednika w programie Visual Studio 2017, nie ma automatycznej migracji ścieżki dla takich projektów. Zamiast tego otwórz plik wdproj w edytorze tekstów i kopiowanie i wklejanie jakiekolwiek dostosowania do pubxml (profil publikowania) pliku, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Zobacz też [plany dotyczące projekty wdrażania sieci web i witryny sieci Web (blogi MSDN)](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
 | Windows Communication Foundation, Windows Workflow Foundation | Możesz otworzyć ten projekt w Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 i Visual Studio 2012 |
 | Windows Presentation Foundation | Możesz otworzyć ten projekt w programie Visual Studio 2013, Visual Studio 2012 i Visual Studio 2010 SP1. |
 | Aplikacje Windows Store/Phone | Projekty Windows Store 8.1 i 8.0 oraz Windows Phone 8.1 i 8.0 nie są obsługiwane w programie Visual Studio 2017. Aby obsługiwać te aplikacje, należy nadal używać programu Visual Studio 2015. Aby obsługiwać projekty systemu Windows Phone 7.x, należy używać programu Visual Studio 2012. |
@@ -95,13 +95,7 @@ Aby zapewnić maksymalną zgodność z projektów utworzonych w starszych wersja
 
 W tym kontekście naturalnie powstaje pytanie, czy należy starać się ręcznie zaktualizować lub migracji projektu do nowszej `ToolsVersion` wartość. Wprowadzanie tych zmian nie jest konieczne i prawdopodobnie wygeneruje wiele błędów i ostrzeżeń, które należy rozwiązać uzyskać ponownie skompilować projekt. Ponadto jeśli program Visual Studio spadnie pomocy technicznej dla określonego `ToolsVersion` w przyszłości, otwierając projekt spowoduje wyzwolenie procesu migracji projektu w szczególności, ponieważ `ToolsVersion` można zmienić wartości. W takim przypadku podsystem dla tego typu określonego projektu wie dokładnie co musi zostać zmieniona i automatycznie, zgodnie z opisem we wcześniejszej części tego artykułu wprowadzania tych zmian.
 
-# <a name="next-steps"></a>Następne kroki
-
 Zapoznaj się z następującymi artykułami, aby poznać inne:
 
 - [Wskazówki dotyczące ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Określanie wartości docelowej wskazówki dotyczące Framework](../ide/visual-studio-multi-targeting-overview.md)
-
-## <a name="see-also"></a>Zobacz także
-
-[Odwołanie do migracji i uaktualniania projektu dla Visual Studio Preview 2019 r](port-migrate-upgrade-visual-studio-projects-2019.md)

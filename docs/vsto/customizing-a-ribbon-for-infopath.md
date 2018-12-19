@@ -16,27 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942065"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676345"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Dostosowywanie wstążki do InfoPath
   Podczas dostosowywania wstążki w programie Microsoft InfoPath pakietu Office, należy rozważyć, gdzie Twoje niestandardowa Wstążka pojawią się w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] może wyświetlać wstążki w trzech następujących rodzajów InfoPath aplikacji systemu windows:  
   
-- Windows, wyświetlające szablonu formularza, który jest otwierany w trybie projektowania.  
+-   Windows, wyświetlające szablonu formularza, który jest otwierany w trybie projektowania.  
   
-- Windows, do wyświetlania formularza, który jest oparty na szablonie formularza.  
+-   Windows, do wyświetlania formularza, który jest oparty na szablonie formularza.  
   
-- Okno podglądu wydruku.  
+-   Okno podglądu wydruku.  
   
-  **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu InfoPath 2010. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu InfoPath 2010. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
-  Użytkownicy i projektanci Otwórz szablon formularza w trybie projektowania, aby zmodyfikować wygląd i układ szablonu. Użytkownicy otworzyć formularze, które opierają się w szablonie formularza, aby dodać zawartość.  
+ Użytkownicy i projektanci Otwórz szablon formularza w trybie projektowania, aby zmodyfikować wygląd i układ szablonu. Użytkownicy otworzyć formularze, które opierają się w szablonie formularza, aby dodać zawartość.  
   
-  Okno podglądu wydruku umożliwia projektantów i użytkowników wyświetlić podgląd strony formularza lub szablonu formularza, przed ich drukowanie.  
+ Okno podglądu wydruku umożliwia projektantów i użytkowników wyświetlić podgląd strony formularza lub szablonu formularza, przed ich drukowanie.  
   
 > [!NOTE]  
 >  **AddIns** karta nie pojawi się w oknie Podgląd wydruku. Jeśli chcesz, aby niestandardowej karty pojawią się w oknie Podgląd wydruku, upewnij się, że **OfficeId** nie ustawiono właściwości karty **TabAddIns**.  

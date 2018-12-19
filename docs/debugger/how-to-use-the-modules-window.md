@@ -1,7 +1,6 @@
 ---
-title: Wyświetlanie plików dll i plików wykonywalnych
-titleSuffix: Visual Studio Modules window
-ms.custom: seodec18
+title: Wyświetlanie plików dll i pliki wykonywalne w oknie moduły | Dokumentacja firmy Microsoft
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -26,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MT
+ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066785"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296271"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Wyświetlanie plików dll i pliki wykonywalne w oknie modułów (C#, C++, Visual Basic F#)
+# <a name="view-dlls-and-executables-in-the-modules-window"></a>Wyświetlanie plików dll i pliki wykonywalne w oknie modułów
  
 Podczas debugowania programu Visual Studio, **modułów** okno wyświetla i zawiera informacje o bibliotekach DLL i plików wykonywalnych (*.exe* pliki) używany przez aplikację. 
 

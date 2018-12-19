@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
-ms.translationtype: MT
+ms.openlocfilehash: a5b1175caf0ac7f6654fbe20b5300327679eccbc
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001181"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294295"
 ---
 # <a name="build-actions"></a>Akcja kompilacji
 
@@ -28,7 +28,3 @@ Akcje niektóre typowe kompilacji dla projektów języka C#:
 Użytkownik może wybrać więcej niż jeden plik w Eksploratorze rozwiązań, co pozwala ustawić akcji kompilacji do wielu plików jednocześnie.
 
 Ponadto istnieją akcje kompilacji dla konkretnych projektów. Projekty Xamarin.iOS mają **BundleResource** tworzenie akcji, która doda go jako część pakietu aplikacji. Informacje o akcjach określonej kompilacji platformy Xamarin.Android znajdują się w [proces kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) przewodnik.
-
-## <a name="see-also"></a>Zobacz także
-
-- [Tworzenie akcji (Visual Studio Windows)](/visualstudio/ide/build-actions)
