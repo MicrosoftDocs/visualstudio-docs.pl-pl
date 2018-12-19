@@ -1,2 +1,0 @@
-> [!NOTE]
->  W [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], możesz nawiązać bazy danych programu SQL Server z poziomu **Eksplorator obiektów SQL Server** lub **połączeń danych** w węźle **Eksploratora serwera**. **Eksplorator obiektów SQL Server** udostępnia widok przypominający SQL Server Management Studio. Aby otworzyć Eksploratora z paska menu, wybierz **widoku**, **Eksplorator obiektów SQL Server**. Aby uzyskać więcej informacji, zobacz [programowanie połączonej bazy danych](http://go.microsoft.com/fwlink/?LinkId=233646).
