@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e42c86cf94115d317eb20df66f4cef005e05eba9
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ad8e2576ace02296e680355071576f1cf1eabd5f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281800"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648389"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ Typowy scenariusz aplikacji jest wyświetlany wybranych danych w formularzu. Na 
   
 2.  Przeciągnij **klientów** węzła z **źródeł danych** okna do formularza.  
   
-     A <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
+     A <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
 ## <a name="addparameterization-search-functionality-to-the-query"></a>Addparameterization (funkcji wyszukiwania) do zapytania  
  Możesz dodać klauzulę WHERE do oryginalnego zapytania za pomocą **Konstruktor kryteriów wyszukiwania** okno dialogowe.  
@@ -152,10 +152,9 @@ Typowy scenariusz aplikacji jest wyświetlany wybranych danych w formularzu. Na 
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza sparametryzowanego. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:  
   
--   Dodawanie formantów, które wyświetlają pokrewne dane. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie powiązanych danych w aplikacji Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+-   Dodawanie formantów, które wyświetlają pokrewne dane.  
   
 -   Edytowanie zestawu danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

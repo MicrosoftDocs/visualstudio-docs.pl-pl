@@ -10,23 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7b45a8673685dce5eabd0459f470525e5e2d99a
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905067"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443876"
 ---
 # <a name="remote-debugger-port-assignments"></a>Przypisania portów debugera zdalnego
 Zdalny debuger programu Visual Studio można uruchomić jako aplikację lub usługę w tle. Po jego uruchomieniu jako aplikacja wykorzystuje port, który jest domyślnie przypisane w następujący sposób:  
 
-- Program Visual Studio 2017:4022
+- Visual Studio 2019 r.: 4024
 
-- Program Visual Studio 2015:4020  
+- Visual Studio 2017: 4022
+
+- Visual Studio 2015: 4020  
   
-- Program Visual Studio 2013:4018  
+- Visual Studio 2013: 4018  
   
-- Program Visual Studio 2012:4016  
+- Program Visual Studio 2012: 4016  
   
   Innymi słowy numer portu przypisany do zdalnego debugera jest zwiększany przez 2 dla każdej wersji. Możesz ustawić inny numer portu, np. Firma Microsoft wyjaśniono, jak ustawić numery portów w dalszej części tego tematu.  
   
@@ -40,19 +42,19 @@ Zdalny debuger programu Visual Studio można uruchomić jako aplikację lub usł
  Można znaleźć zdalnego debugera przełączniki wiersza polecenia zdalnego debugowania pomocy (naciśnij klawisz **F1** lub kliknij przycisk **Pomoc > użycie** w oknie debugera zdalnego).  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Port debugera zdalnego na 64-bitowych systemach operacyjnych  
- Podczas uruchamiania 64-bitowej wersji zdalnego debugera domyślnie używa portu 4022.  Jeśli debugujesz proces 32-bitowy, 64-bitowej wersji zdalnego debugera uruchamia 32-bitowej wersji zdalnego debugera na port 4023. Jeśli uruchamiasz 32-bitowy zdalny debuger, używa ona 4022 i 4023 nie jest używany.  
+ Po uruchomieniu 64-bitowej wersji zdalnego debugera, używa ona głównym portu (4022) domyślnie.  Jeśli debugujesz proces 32-bitowy, 64-bitowej wersji zdalnego debugera uruchamia 32-bitowej wersji zdalnego debugera na port 4023 (numer portu głównego zwiększane o 1). Jeśli uruchamiasz 32-bitowy zdalny debuger, używa ona 4022 i 4023 nie jest używany.  
   
- Ten port jest konfigurowane z poziomu wiersza polecenia: **Msvsmon/wow64port \<numer portu >**.  
+ Ten port jest można skonfigurować z poziomu wiersza polecenia: **Polecenie Msvsmon/wow64port \<numer portu >**.  
   
 ## <a name="the-discovery-port"></a>Port odnajdywania  
  UDP 3702 służy do znajdowania uruchomionych wystąpień zdalnego debugera w sieci (na przykład **znaleźć** okna dialogowego w **dołączyć do procesu** okna dialogowego). Jest on używany tylko w przypadku odnajdywania maszyny z systemem zdalnego debugera, dzięki czemu jest to opcjonalne, jeśli masz inny sposób określenia nazwy komputera lub adres IP komputera docelowego. Jest to port standardowy dla odnajdywania, aby numer portu nie można skonfigurować.  
   
- Czy chcesz włączyć funkcję odnajdywania, można uruchomić polecenia msvsmon z wiersza polecenia, z odnajdywaniem wyłączone: **Msvsmon /nodiscovery**.  
+ Jeśli chcesz włączyć odnajdywanie, można uruchomić polecenia msvsmon z wiersza polecenia z odnajdywaniem wyłączone:  **Polecenie Msvsmon /nodiscovery**.  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Portów debugera zdalnego na platformie Azure  
  Następujące porty są używane przez debuger zdalny na platformie Azure. Porty w usłudze w chmurze są mapowane na porty na poszczególnych maszyn wirtualnych. Wszystkie porty są TCP.  
   
-|połączenia|Port w usłudze w chmurze|Port na maszynie Wirtualnej|
+|Połączenie|Port w usłudze w chmurze|Port na maszynie Wirtualnej|
 |-|-|-|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  

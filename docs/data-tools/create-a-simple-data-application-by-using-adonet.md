@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064875"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740104"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 
@@ -37,7 +37,7 @@ Aby utworzyć aplikację, będą potrzebne:
 
 -   SQL Server Express LocalDB. Jeśli nie masz programu SQL Server Express LocalDB, możesz zainstalować go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć aplikacji Windows Forms, dodawać formularze do projektu, umieszczać przyciski i inne formanty w formularzach, ustaw właściwości kontrolek i kodować proste zdarzenia. Jeśli nie masz doświadczenia z tych zadań, zalecamy wykonanie [wprowadzenie do wizualizacji C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tematu przed rozpoczęciem tego instruktażu.
+W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć aplikacji Windows Forms, dodawać formularze do projektu, umieszczać przyciski i inne formanty w formularzach, ustaw właściwości kontrolek i kodować proste zdarzenia. Jeśli nie masz doświadczenia z tych zadań, zalecamy wykonanie [wprowadzenie do wizualizacji C# i Visual Basic](../ide/quickstart-visual-basic-console.md) tematu przed rozpoczęciem tego instruktażu.
 
 ## <a name="set-up-the-sample-database"></a>Konfigurowanie przykładowej bazy danych
 
@@ -61,7 +61,7 @@ Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 
 7. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
-     Po przez krótki czas odliczania zapytanie, a następnie są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: klienta i zamówień. Te tabele zawierają początkowo żadnych danych, ale możesz dodać dane po uruchomieniu aplikacji, który utworzysz. Baza danych zawiera również czterech prostych przechowywanych procedur.
+     Po przez krótki czas odliczania zapytanie, a następnie są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: Klienta i zamówienia. Te tabele zawierają początkowo żadnych danych, ale możesz dodać dane po uruchomieniu aplikacji, który utworzysz. Baza danych zawiera również czterech prostych przechowywanych procedur.
 
 ## <a name="create-the-forms-and-add-controls"></a>Tworzenie formularzy i dodawanie formantów
 

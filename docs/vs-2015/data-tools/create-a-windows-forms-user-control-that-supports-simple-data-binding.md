@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 607c324e11591211593522957dcd08747d230279
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b0925fde98d4a10e3391ded538e0842833a61ce5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219831"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647866"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika formularzy Windows obsługującego proste powiązanie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach Windows, można wybra�
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są:  
   
--   Dostęp do przykładowej bazy danych Northwind. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+-   Dostęp do przykładowej bazy danych Northwind.
   
 ## <a name="create-a-windows-application"></a>Tworzenie aplikacji Windows  
  Pierwszym krokiem jest utworzenie **aplikacji Windows**.  
@@ -116,7 +116,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach Windows, można wybra�
 3.  Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Utwórz źródło danych z bazy danych  
- Ten krok używa **konfiguracji źródła danych** kreatora w celu utworzenia źródła danych na podstawie `Customers` tabeli w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje na temat konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+ Ten krok używa **konfiguracji źródła danych** kreatora w celu utworzenia źródła danych na podstawie `Customers` tabeli w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia.
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
@@ -166,7 +166,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach Windows, można wybra�
   
 -   Przeciągnij główny **klientów** węzła z **źródeł danych** okna do formularza i upewnij się, że `PhoneNumberBox` formant jest używany do wyświetlania danych w `Phone` kolumny.  
   
-     Formanty powiązane z danymi z etykietami opisowymi są wyświetlane w formularzu, oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
+     Formanty powiązane z danymi z etykietami opisowymi są wyświetlane w formularzu, oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
 ## <a name="run-the-application"></a>Uruchamianie aplikacji  
   
@@ -184,4 +184,3 @@ Podczas wyświetlania danych w formularzach w aplikacjach Windows, można wybra�
 ## <a name="see-also"></a>Zobacz też  
  [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-

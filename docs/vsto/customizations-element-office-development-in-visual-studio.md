@@ -1,6 +1,7 @@
 ---
 title: '&lt;dostosowania&gt; — element (Office development w programie Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - <customizations> element
 - customizations element
 - application manifests [Office development in Visual Studio], <customizations> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 6f324b65e6a008aa25df03ef5870617b9a8427e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676183"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646670"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;dostosowania&gt; — element (Office development w programie Visual Studio)
   `customizations` Elementu `vstov4` przestrzeń nazw zawiera wszystkie informacje o instalowaniu i ładowanie każde z tych rozwiązań pakietu Office.  
@@ -65,7 +66,7 @@ ms.locfileid: "35676183"
  `customizations` Element ma następujący element podrzędny.  
   
 ### <a name="customization"></a>Dostosowywanie  
- Wymagane. `customization` Element `vstov4` przestrzeń nazw została zdefiniowana w [ &#60;dostosowywania&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Wymagana. `customization` Element `vstov4` przestrzeń nazw została zdefiniowana w [ &#60;dostosowywania&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Przykład dostosowywania poziomie dokumentu  
   

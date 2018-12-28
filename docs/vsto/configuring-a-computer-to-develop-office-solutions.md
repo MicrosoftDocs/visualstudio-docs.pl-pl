@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a0e6f44b923bf515977c07bbfec69b9c8e58593c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672229"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441421"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
 
@@ -32,7 +32,7 @@ Do tworzenia dodatków narzędzi VSTO dla programów i dostosowania pakietu Micr
 |.NET Framework|-.NET Framework 4 lub nowszej.|
 |Microsoft Office|<ul><li>Dowolna wersja pakietu Office, w tym Office Professional Plus dla Office 365.</li><li>Dowolny z następujących aplikacji:<br /><br /> <ul><li>Excel</li><li>InfoPath (pakiet Office 2013 i Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musi być zainstalowany jako część pakietu Office. **Ważne:** Szybka instalacja wersji aplikacji pakietu Office 2010 nie są obsługiwane.|
 
-Aby uzyskać szczegółowe kroki instalacji, zobacz [porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
+Aby uzyskać szczegółowe kroki instalacji, zobacz [jak: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
 ## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Jeśli szablony projektu nie pojawiają się lub nie działają w programie Visual Studio
 
@@ -53,7 +53,7 @@ Jeśli nadal występują problemy, zobacz [dodatkowa obsługa błędów w rozwi�
 ## <a name="see-also"></a>Zobacz także
 
 [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Porady: Instalowanie Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Porady: podstawowe zestawy międzyoperacyjne pakietu Office instalacji](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[Instrukcje: Zainstalować Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
 [Typ funkcji według aplikacji pakietu Office i projekt](../vsto/features-available-by-office-application-and-project-type.md)

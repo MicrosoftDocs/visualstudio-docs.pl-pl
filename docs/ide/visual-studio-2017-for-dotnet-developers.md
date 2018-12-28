@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645149"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684983"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -115,7 +115,7 @@ Program Visual Studio 2017 oferuje wiele funkcji ułatwiające wyszukiwanie i pr
 | Przejdź do definicji | **F12** lub **Ctrl**+**kliknij**| Naciśnij i przytrzymaj **Ctrl** przy zaznaczaniu navgiate do definicji |
 | Zobacz definicję | **ALT**+**F12** | Wbudowany view definicji |
 | Wizualizator struktury | Szare, kropkowana — linie między nawiasy klamrowe | Po wskazaniu wskaźnikiem, aby zobaczyć strukturę kodu |
-| Nawigacja do dekompilowanych zestawów | **F12** lub **Ctrl**+**kliknij** | Przejdź do źródła zewnętrznego (decompiled przy użyciu narzędzia do dekompilacji) poprzez włączenie funkcji: **narzędzia** > **opcje** > **edytora tekstów**  >  **C#** > **zaawansowane** > **Włącz nawigację do dekompilowanych źródeł**. |
+| Nawigacja do dekompilowanych zestawów | **F12** lub **Ctrl**+**kliknij** | Przejdź do źródła zewnętrznego (decompiled przy użyciu narzędzia do dekompilacji) poprzez włączenie funkcji: **Narzędzia** > **opcje** > **edytora tekstów**  >  **C#**  >   **Zaawansowane** > **Włącz nawigację do dekompilowanych źródeł**. |
 
 ![Przejdź do wszystkich i Znajdź wszystkie odwołania](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +135,7 @@ Dodaliśmy wiele nowych funkcji debugowania w programie Visual Studio 2017:
 
 - *Uruchom do kliknięcia* umożliwia umieść obok wiersza kodu, trafienia zieloną ikonę "play", który pojawia się i uruchomić program, aż do osiągnięcia tego wiersza.
 - Nowy **pomocnika wyjątków** umieszcza najważniejsze informacje, takie jak zmienna, która jest w obiektu NullReferenceException, na najwyższym poziomie, w oknie dialogowym "null".
-- [Cofnijmy](../debugger/how-to-use-intellitrace-step-back.md) debugowanie pozwala na wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości.
+- [Cofnijmy](../debugger/view-historical-application-state.md) debugowanie pozwala na wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości.
 - [Debugowanie migawki](/azure/application-insights/app-insights-snapshot-debugger) umożliwia badanie stanu aplikacji internetowej na żywo w tej chwili Wystąpił wyjątek (musi być na platformie Azure).
 
 ![Nowy Pomocnik wyjątków w programie Visual Studio 2017](../ide/media/VSGuide_Debugging.png)

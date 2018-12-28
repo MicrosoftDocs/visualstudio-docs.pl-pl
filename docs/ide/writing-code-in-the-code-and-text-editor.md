@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 127e858b913f49810eae166681b313622e6840ea
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160117"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684888"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
@@ -93,5 +93,5 @@ Aby uzyskać więcej informacji na temat dostosowywania edytora, zobacz [dostoso
 - [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Wprowadzenie do języka C++ w programie Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
-- [Wprowadzenie do języka C# i platformy ASP.NET w programie Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
+- [Wprowadzenie do języka C# i platformy ASP.NET w programie Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 - [Rozpoczynanie pracy z językiem Python w programie Visual Studio](../ide/quickstart-python.md)

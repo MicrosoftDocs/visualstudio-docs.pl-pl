@@ -22,17 +22,17 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], about VBA and document-level customizations
 - managed code [Office development in Visual Studio], Visual Basic for Applications and
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878079"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441720"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Łączenie VBA i dostosowywanie na poziomie dokumentu
   Za pomocą języka Visual Basic for Applications (VBA) kodu w dokumencie, który jest częścią dostosowywania poziomie dokumentu dla programu Microsoft Office Word lub Microsoft Office Excel. Możesz wywołać kod VBA w dokumencie z zestawu dostosowywania lub projektu w celu włączenia kodu z VBA w dokumencie w celu wywołania kodu w zestaw dostosowania można skonfigurować.  
@@ -118,7 +118,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
   3.  Ustaw **ReferenceAssemblyFromVbaProject** właściwości każdej klasy elementu hosta w projekcie, aby **True**. To zestaw dostosowania biblioteki typów są osadzone w zestawie i dodaje odwołanie do biblioteki typów do projektu VBA w dokumencie.  
   
-  Aby uzyskać szczegółowe instrukcje, zobacz [instrukcje: udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) i [instrukcje: udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+  Aby uzyskać szczegółowe instrukcje, zobacz [jak: Udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) i [jak: Udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
   **EnableVbaCallers** i **ReferenceAssemblyFromVbaProject** właściwości są dostępne tylko w **właściwości** okna w czasie projektowania; nie można używać w czasie wykonywania . Aby wyświetlić właściwości, otwórz projektanta dla elementu hosta w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji na temat konkretnych zadań wykonywanych w programie Visual Studio do ustawiania tych właściwości, zobacz [zadania wykonywane przez hosta właściwości elementu](#PropertyTasks).  
   
@@ -253,10 +253,10 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Po zmianie nazwy zestawu dostosowywania kod VBA tworzy wywołania w zestawie dostosowywania przestanie działać.|Jeśli zmienisz nazwę zestawu dostosowywania po udostępnisz ją dla kodu VBA, łącza między projektu VBA w dokumencie i zestaw dostosowania zostanie przerwane. Aby rozwiązać ten problem, zmień **ReferenceFromVbaAssembly** właściwość w projekcie na **False** , a następnie ponownie do **True**, a następnie Zastąp wszystkie odwołania do starych zestawu Nazwa kodu z VBA w ramach nowej nazwy zestawu.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Porady: udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Wskazówki: Wywoływanie kodu z VBA w projekcie Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Wskazówki: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Instrukcje: Udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Instrukcje: Udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Przewodnik: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
+ [Przewodnik: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [Rozwiązania VBA i pakietu Office w Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  

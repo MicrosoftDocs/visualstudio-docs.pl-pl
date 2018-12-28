@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64018143403555dfa671c7fb79be09dcd04d9011
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562175"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edytowanie kodu i kontynuowanie debugowania w programie Visual Studio (C#, VB, C++)
 Edytuj i Kontynuuj jest funkcją zaoszczędzić czas, która pozwala do wprowadzania zmian w kodzie źródłowym, gdy program działa w trybie przerwania. Po wznowieniu działania programu, wybierając polecenie wykonania, takie jak **Kontynuuj** lub **kroku**, Edytuj i Kontynuuj automatycznie stosuje te zmiany kodu, z pewnymi ograniczeniami. Dzięki temu można wprowadzić zmiany do kodu podczas sesji debugowania, nie trzeba zatrzymać, ponownie skompilować całego programu i ponownie uruchomić sesję debugowania.  
   
  Ta sekcja zawiera następujące tematy:   
   
- [Instrukcje: włączanie i wyłączanie funkcji Edytuj i kontynuuj](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Instrukcje: Włącz i Wyłącz Edytuj i Kontynuuj](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
- [Instrukcje: zatrzymywanie zmian kodu](../debugger/how-to-stop-code-changes.md)   
+ [Instrukcje: Zatrzymywanie zmian kodu](../debugger/how-to-stop-code-changes.md)   
   
  [Edytuj i kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -49,4 +49,4 @@ Edytuj i Kontynuuj jest funkcją zaoszczędzić czas, która pozwala do wprowadz
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)   
- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

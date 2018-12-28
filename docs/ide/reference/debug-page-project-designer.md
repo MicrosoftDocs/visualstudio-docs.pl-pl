@@ -15,49 +15,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: c7b79b5aa5054781813d561089dab204bd1763bf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090026"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684765"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 
-Użyj **debugowania** strony **projektanta projektu** można ustawić właściwości dla debugowania zachowanie w projektach Visual Basic lub C#.
+Użyj **debugowania** strony **projektanta projektu** do ustawiania właściwości do debugowania zachowania w projekcie języka Visual Basic lub C#.
 
-Aby uzyskać dostęp do **debugowania** wybierz węzeł projektu w **Eksploratora rozwiązań**. Na **projektu** menu, wybierz  **\<ProjectName > właściwości**. Gdy **Projektant projektu** zostanie wyświetlony, kliknij przycisk **debugowania** kartę.
+Aby uzyskać dostęp do **debugowania** wybierz węzeł projektu w **Eksploratora rozwiązań**. Na **projektu** menu, wybierz  **\<nazwa_projektu > właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **debugowania** kartę.
 
 > [!NOTE]
-> Ten temat nie dotyczy aplikacji platformy uniwersalnej systemu Windows. Zobacz [rozpocząć sesję debugowania: (VB, C#, C++ i XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) dla aplikacji platformy uniwersalnej systemu Windows.
+> W tym temacie nie ma zastosowania do aplikacji platformy uniwersalnej systemu Windows. Zobacz [rozpocząć sesję debugowania (VB, C#, C++ i XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) dla aplikacji platformy uniwersalnej systemu Windows.
 
 ## <a name="configuration-and-platform"></a>Konfiguracja i platforma
 
-Poniższe opcje pozwalają na wybierz configuration i platform, aby wyświetlić lub zmodyfikować.
+Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.
 
 **Konfiguracja**
 
-Określa, które ustawienia konfiguracji, aby wyświetlić lub zmodyfikować. Te ustawienia mogą być **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**.
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**.
 
-**Platformy**
+**Platforma**
 
-Określa, które ustawienia platformy, aby wyświetlić lub zmodyfikować. Można wybierać **Any CPU** (ustawienie domyślne), **x64**, i **x86**.
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można wybierać **dowolny Procesor** (ustawienie domyślne), **x64**, i **x86**.
 
-## <a name="start-action"></a>Uruchomienie akcji
+## <a name="start-action"></a>Akcja uruchamiania
 
-**Uruchomienie akcji** wskazuje element, aby uruchomić podczas debugowania aplikacji: projekt, program niestandardowy, adres URL lub nothing. Domyślnie ta opcja jest ustawiona na **rozpoczęcia projektu**. **Akcja uruchamiania** ustawienie **debugowania** strony określa wartość `StartAction` właściwości.
+**Akcja uruchamiania** wskazuje element uruchamianą podczas debugowania aplikacji: projekt, program niestandardowy, adres URL lub nie rób. Domyślnie ta opcja jest ustawiona na **spustit projekt**. **Akcja uruchamiania** ustawienie **debugowania** strony określa wartość `StartAction` właściwości.
 
-**Uruchom projekt**
+**Rozpocznij projekt**
 
-Wybierz tę opcję, aby określić, że plik wykonywalny (w przypadku projektów aplikacji systemu Windows i aplikacji konsoli) powinna być uruchamiana podczas debugowania aplikacji. Ta opcja jest domyślnie wybrana.
+Wybierz tę opcję, aby określić, że plik wykonywalny (dla aplikacji Windows i aplikacji Konsolowej projektów) powinna być uruchamiana podczas debugowania aplikacji. Ta opcja jest domyślnie wybrana.
 
-**Uruchom program zewnętrznych**
+**Uruchom zewnętrzny program**
 
-Wybierz tę opcję, aby określić, że określony program można uruchomić podczas debugowania aplikacji.
+Wybierz tę opcję, aby określić, że określony program powinna być uruchamiana podczas debugowania aplikacji.
 
 **Uruchom przeglądarkę z adresem URL**
 
-Wybierz tę opcję, aby określić, czy adres URL jest dostępna podczas debugowania aplikacji.
+Wybierz tę opcję, aby określić, czy określony adres URL jest dostępny podczas debugowania aplikacji.
 
 ## <a name="start-options"></a>Opcje uruchamiania
 
@@ -67,26 +67,26 @@ W tym polu tekstowym wprowadź argumenty wiersza polecenia używane do debugowan
 
 **Katalog roboczy**
 
-W tym polu tekstowym wprowadź katalogu, z którego będzie uruchamiana projektu. Lub kliknij przycisk Przeglądaj (**...** ) można wybrać katalog.
+W tym polu tekstowym wprowadź katalog, w którym projekt zostanie uruchomiony. Lub kliknij przycisk przeglądania (**...** ) można wybrać katalog.
 
 **Użyj komputera zdalnego**
 
 Aby debugować aplikację z komputera zdalnego, zaznacz to pole wyboru, a następnie wprowadź ścieżkę do komputera zdalnego, w polu tekstowym.
 
-## <a name="debugger-engines"></a>Aparaty debugera
+## <a name="debugger-engines"></a>Aparaty debugowania
 
 **Włącz debugowanie kodu natywnego**
 
-Ta opcja określa, czy obsługiwane jest debugowanie kodu natywnego. Zaznacz to pole wyboru, jeśli wywołania do obiektów COM lub uruchomić program niestandardowy zapisywane w kodzie natywnym, który odwołuje się do projektu i musi debugowanie kodu natywnego. Wyczyść to pole wyboru, aby wyłączyć debugowanie kodu niezarządzanego. To pole wyboru jest domyślnie wyczyszczone.
+Ta opcja określa, czy obsługiwane jest debugowanie kodu natywnego. Zaznacz to pole wyboru, jeśli wywołań do obiektów COM lub uruchomić program niestandardowy napisanymi w kodzie natywnym, który odwołuje się do projektu i muszą debugowanie kodu natywnego. Wyczyść to pole wyboru, aby wyłączyć debugowanie kodu niezarządzanego. To pole wyboru jest domyślnie wyczyszczone.
 
-**Włącz debugowanie serwera SQL**
+**Włącz debugowanie programu SQL Server**
 
-Wybierz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć debugowanie SQL procedur z aplikacji Visual Basic. To pole wyboru jest domyślnie wyczyszczone.
+Zaznacz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć debugowanie procedur SQL z aplikacji Visual Basic. To pole wyboru jest domyślnie wyczyszczone.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w programie Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Konfiguracje debugowania ustawienia projektu w języku C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Instrukcje: debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Debugowanie w programie Visual Studio](../../debugger/debugger-feature-tour.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Instrukcje: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

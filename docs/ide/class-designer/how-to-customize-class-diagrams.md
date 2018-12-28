@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dostosowywanie diagramów klasy (Projektant klas)'
+title: 'Instrukcje: Dostosowywanie diagramów klas (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913218"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684434"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Porady: dostosowywanie diagramów klas
+# <a name="how-to-customize-class-diagrams"></a>Instrukcje: Dostosowywanie diagramów klas
 
 Można zmienić sposób wyświetlania informacji na diagramach klas. Można dostosować cały diagram lub poszczególne typy na powierzchni projektowej.
 
@@ -129,7 +129,6 @@ Możesz usunąć kształt typu z diagramu klasy bez wpływu na podstawowy kod ty
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Praca z diagramami klas](working-with-class-diagrams.md)
-- [Porady: zmiana między notacją składowych i notacją skojarzeń](how-to-change-between-member-notation-and-association-notation.md)
-- [Porady: wyświetlanie istniejących typów](how-to-view-existing-types.md)
-- [Wyświetlanie typów i relacji](viewing-types-and-relationships.md)
+- [Instrukcje: Zmiana między notacją składowych i notacją skojarzeń](how-to-change-between-member-notation-and-association-notation.md)
+- [Instrukcje: Wyświetlanie istniejących typów](how-to-view-existing-types.md)
+- [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)

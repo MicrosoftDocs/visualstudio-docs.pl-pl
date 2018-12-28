@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178920"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561632"
 ---
 # <a name="debugging-web-applications"></a>Debugowanie aplikacji internetowych
 W tej sekcji wyjaśniono, jak można debugować kilka typów aplikacji sieci Web.  
@@ -41,6 +41,5 @@ W tej sekcji wyjaśniono, jak można debugować kilka typów aplikacji sieci Web
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md)   
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)   
- [Debugowanie w programie Visual Studio](../debugger/index.md)  
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md) [debugowania w programie Visual Studio](../debugger/index.md)  
  [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

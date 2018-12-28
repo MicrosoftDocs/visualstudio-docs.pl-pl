@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39;)&#39; w wyrażeniu regularnym (JavaScript) | Dokumentacja firmy Microsoft
+title: Oczekiwano ")" w wyrażeniu regularnym (JavaScript) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279131"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802345"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Oczekiwano &#39;)&#39; w wyrażeniu regularnym (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>Oczekiwano znaku „)" w wyrażeniu regularnym (JavaScript)
 Podjęto próbę utworzenia przechwytywania wyrażeń regularnych, potwierdzenie lub grupy, ale nie zawiera nawias zamykający. Nawiasy ma kilka celów w wyrażeniach regularnych. Przede wszystkim, są one używane do przechwytywania wyrażeń podrzędnych, określ potwierdzenia lub pogrupować wzorców, dzięki czemu elementy mogą być traktowane jako pojedyncza jednostka, *, +,?, i tak dalej.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  

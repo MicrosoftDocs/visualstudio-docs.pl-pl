@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060190"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562103"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Wskazówki: Debugowanie aplikacji równoległych w programie Visual Studio
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Przewodnik: Debugowanie aplikacji równoległych w programie Visual Studio
 Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomaga zrozumieć i zweryfikować zachowanie środowiska uruchomieniowego kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.  
   
  Ten przewodnik zawiera wskazówki te zadania:  
@@ -83,7 +83,7 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
   
     Należy zauważyć, że nie istnieją cztery wywołania `Debugger.Break` (`DebugBreak` w przykładzie w języku C++) w związku z tym, nie trzeba wstawić punktów przerwania; po prostu działania aplikacji spowoduje jego przerwanie w debugerze maksymalnie cztery razy.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Za pomocą równoległych stosów okna: widoku wątków  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Korzystanie z okna stosów równoległych: Widok wątków  
  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**. Poczekaj, aż pierwszy punkt przerwania, aby zostanie osiągnięty.  
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Aby wyświetlić stos wywołań jest jeden wątek  
@@ -298,7 +298,7 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)   
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Programowanie równoległe](/dotnet/standard/parallel-programming/index)   
  [Współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime)   

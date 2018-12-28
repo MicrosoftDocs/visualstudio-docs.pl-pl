@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056921"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648823"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger
 
@@ -36,7 +36,7 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Rozszerzenie Snapshot Debugger jest dostępna tylko dla Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej za pomocą **obciążenie projektowania platformy ASP.NET i sieci web**. Dla platformy ASP.NET Core, należy również **programowania .NET Core** zainstalowanym obciążeniem.
+* Rozszerzenie Snapshot Debugger jest dostępna tylko dla Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej za pomocą **obciążenie programistyczne platformy Azure**. (W obszarze **poszczególne składniki** karty, możesz znaleźć go w folderze **debugowanie i testowanie** > **rozszerzenia Snapshot debugger**.)
 
     Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio Enterprise 2017 w wersji 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) lub nowszej. Jeśli aktualizujesz z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika rozszerzenia Snapshot Debugger **obciążenie projektowania platformy ASP.NET i sieci web**.
 

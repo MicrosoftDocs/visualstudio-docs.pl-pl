@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865924"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592446"
 ---
 # <a name="cpu-and-windows-counters"></a>Liczniki procesora CPU i systemu Windows
 
@@ -113,7 +113,7 @@ Aby wyświetlić listę dostępnych liczników na komputerze w środowisku IDE p
 
 4. Z **kategorii licznika** , wybierz grupę liczników na liście. Licznik Windows grupy jest wyświetlana w polu listy.
 
-     **Uwaga:** kliknij **anulować** aby powrócić do poprzedniej konfiguracji licznika w kolekcji.
+     **Uwaga:** Kliknij przycisk **anulować** aby powrócić do poprzedniej konfiguracji licznika w kolekcji.
 
 ### <a name="command-line"></a>Wiersz polecenia
 
@@ -127,13 +127,11 @@ Za pomocą [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, 
 
      **\<Katalog narzędzi wydajności w usłudze Visual Studio >/querycounters \VSPerfCmd**
 
-     gdzie  *\<katalogu narzędzi wydajności w usłudze Visual Studio >* zazwyczaj jest to ścieżka do narzędzia do oceny wydajności katalogu instalacji programu Visual Studio
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team narzędzia Tools*
+     gdzie  *\<katalogu narzędzi wydajności w usłudze Visual Studio >* jest ścieżką do katalogu narzędzi wydajności instalację programu Visual Studio. Aby uzyskać ścieżkę do narzędzi do oceny wydajności, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 [Omówienia](../profiling/overviews-performance-tools.md)  
-[Instrukcje: wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)  
-[Instrukcje: zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)  
-[Porady: zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Instrukcje: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)  
+[Instrukcje: Zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)  
+[Instrukcje: Zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)

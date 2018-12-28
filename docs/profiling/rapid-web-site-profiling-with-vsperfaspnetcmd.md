@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ccff5ef0575eea9d35239cab7bf3ffa47a11b315
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780545"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592667"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie za pomocą polecenia VSPerfASPNETCmd witryny sieci web
 
-**VSPerfASPNETCmd** narzędzie wiersza polecenia umożliwia łatwe profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia Opcje są mniejsze, żadne zmienne środowiskowe muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Za pomocą **VSPerfASPNETCmd** jest preferowana metoda profilowania za pomocą Autonomiczny profiler. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie autonomicznego profilera](../profiling/how-to-install-the-stand-alone-profiler.md).
+**VSPerfASPNETCmd** narzędzie wiersza polecenia umożliwia łatwe profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia Opcje są mniejsze, żadne zmienne środowiskowe muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Za pomocą **VSPerfASPNETCmd** jest preferowana metoda profilowania za pomocą Autonomiczny profiler. Aby uzyskać więcej informacji, zobacz [jak: Instalowanie autonomicznego profilera](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -29,7 +29,7 @@ ms.locfileid: "43780545"
  W niektórych scenariuszach, takich jak zbieranie danych współbieżności lub wstrzymywanie i wznawianie profilowania, przy użyciu **VSPerfCmd** jest preferowana metoda profilowania.
 
 > [!NOTE]
-> Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w *tools\performance Tools* podkatalogu katalogu instalacyjnego programu Visual Studio. Na komputerach 64-bitowych za pomocą narzędzia VSPerfASPNETCmd znajduje się w 32-bitowych *tools\performance Tools* katalogu. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.  
 
 ## <a name="profile-an-aspnet-application"></a>Profiluj aplikację ASP.NET
 

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f309c2a960d011601a9fdd41e29d767c667de838
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab42c241e1d87d2de31c4fde3aba81294be0520a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003597"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802808"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
@@ -77,7 +77,7 @@ Dla parametrów połączenia w nowym lub istniejącym, wybierz **...** * po praw
 1. Wybieranie **ręcznie wprowadzić poświadczenia** pozwala określić nazwę konta i klucza bezpośrednio przy użyciu informacji z witryny Azure portal. Aby skopiować klucz konta:
     1. Przejdź do konta magazynu w witrynie Azure portal i wybierz **zarządzanie kluczami**.
     1. Aby skopiować klucz konta, przejdź do konta magazynu w witrynie Azure portal, wybierz opcję **Ustawienia > klucze dostępu**, następnie użyj przycisku kopiowania, aby skopiuj podstawowy klucz dostępu do Schowka.
-1. Wybierz jedną z opcji połączenia. **Określ niestandardowe punkty końcowe** prosi o określenie określonych adresów URL dla obiektów blob, tabele i kolejki. Niestandardowe punkty końcowe umożliwiają używanie [domen niestandardowych](/azure/storage/blobs/storage-custom-domain-name.md) i kontrolować dostęp do bardziej dokładnie. Zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string).
+1. Wybierz jedną z opcji połączenia. **Określ niestandardowe punkty końcowe** prosi o określenie określonych adresów URL dla obiektów blob, tabele i kolejki. Niestandardowe punkty końcowe umożliwiają używanie [domen niestandardowych](/azure/storage/blobs/storage-custom-domain-name) i kontrolować dostęp do bardziej dokładnie. Zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string).
 1. Wybierz **OK**, następnie **Plik > Zapisz** można zaktualizować konfiguracji za pomocą nowych parametrów połączenia.
 
 Ponownie podczas publikowania aplikacji na platformie Azure, wybierz pozycję konfiguracji usługi, która zawiera konta usługi Azure storage dla parametrów połączenia. Po opublikowaniu aplikacji, sprawdź, czy aplikacja działa zgodnie z oczekiwaniami w odniesieniu do usług Azure storage.
@@ -89,7 +89,7 @@ Aby uzyskać więcej informacji o sposobie aktualizowania konfiguracji usługi, 
 Rola internetowa zazwyczaj ma jeden punkt końcowy HTTP na porcie 80. Z drugiej strony, rolę procesu roboczego może mieć dowolną liczbę punktów końcowych HTTP, HTTPS lub TCP. Punkty końcowe można wejściowych punktów końcowych, które są dostępne dla klientów zewnętrznych, lub wewnętrznych punktów końcowych, które są dostępne dla innych ról, które działają w usłudze.
 
 - Aby udostępnić punkt końcowy HTTP do klientów zewnętrznych i przeglądarki sieci Web, Zmień typ punktu końcowego na dane wejściowe, a następnie określ nazwę i numeru portu publicznego.
-- Aby udostępnić punkt końcowy HTTPS do klientów zewnętrznych i przeglądarki sieci Web, należy zmienić typ punktu końcowego na **danych wejściowych**, a następnie określ nazwę, numeru portu publicznego i nazwa certyfikatu zarządzania. Należy także zdefiniować certyfikat na **certyfikaty** strony właściwości można było określić certyfikat zarządzania. 
+- Aby udostępnić punkt końcowy HTTPS do klientów zewnętrznych i przeglądarki sieci Web, należy zmienić typ punktu końcowego na **danych wejściowych**, a następnie określ nazwę, numeru portu publicznego i nazwa certyfikatu zarządzania. Należy także zdefiniować certyfikat na **certyfikaty** strony właściwości można było określić certyfikat zarządzania.
 - Aby udostępnić punkt końcowy wewnętrznego dostępu przez inne role w usłudze w chmurze, Zmień typ punktu końcowego wewnętrznego i określ nazwę i możliwe prywatnej portów dla tego punktu końcowego.
 
 ## <a name="local-storage-page"></a>Strona magazynu lokalnego

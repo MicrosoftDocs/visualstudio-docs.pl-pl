@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943001"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561671"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 **Bezpośrednie** okno służy do debugowania i obliczać wyrażeń, wykonywania instrukcji, drukowania wartości zmiennych i tak dalej. Umożliwia wprowadzenie wyrażenia, aby je ocenić lub wykonać przy pomocy języka programowania podczas debugowania. Aby wyświetlić **bezpośrednie** okna, otwórz projekt do edycji, a następnie wybierz **Windows** z **debugowania** menu, a następnie wybierz **bezpośrednie**, lub naciśnij klawisze CTRL + ALT + I.
@@ -76,7 +76,7 @@ ms.locfileid: "49943001"
 
     **Bezpośrednie** uruchomi okna `MyFunction` i wyświetlić `4`.
 
-Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [wskazówki: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).
+Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [instruktażu: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] projektów, projektów sieci web, projektów urządzeń inteligentnych i projektów SQL.
 
@@ -128,8 +128,7 @@ Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów,
 
 - [Nawigowanie po kodzie za pomocą debugera](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Debugowanie w programie Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Podstawowe informacje o debugerze](../../debugger/getting-started-with-the-debugger.md)
-- [Przewodnik: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Pierwsze spojrzenie na debugera](../../debugger/debugger-feature-tour.md)   
+- [Przewodnik: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
 - [Używanie wyrażeń regularnych w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

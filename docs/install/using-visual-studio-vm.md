@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: fdebcfcab1907c6e91b2d4926b86038c560d040e
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159974"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425815"
 ---
 # <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
 
@@ -32,13 +32,13 @@ Jesteś nowym użytkownikiem platformy Azure? [Utwórz bezpłatne konto platform
 
 ## <a name="what-configurations-and-versions-are-available"></a>Jakie konfiguracje i wersje są dostępne?
 
-Obrazy do najnowszej wersji głównych, Visual Studio 2017 i Visual Studio 2015 można znaleźć w witrynie Azure Marketplace. Dla wszystkich wersji głównych Zobacz oryginalnie wydana wersja (RTW) i najnowsze zaktualizowane wersje. Każda z tych wersji oferuje wersje programu Visual Studio Community i program Visual Studio Enterprise. Te obrazy są aktualizowane co miesiąc, obejmujący najnowsze aktualizacje programu Visual Studio i Windows. Gdy nazwy obrazów pozostają takie same, każdy obraz w opisie wersję zainstalowanego produktu i "dzień" obraz.
+Obrazy do najnowszej wersji głównych, Visual Studio 2017 i Visual Studio 2015 można znaleźć w witrynie Azure Marketplace.  Niedawno Dodaliśmy obsługę wersji zapoznawczych mającej się ukazać wersji głównych — Visual Studio 2019 r.  Dla każdej wydanej wersji głównych Zobacz oryginalnie wydana wersja (RTW) i najnowsze zaktualizowane wersje.  Każda z tych wersji oferuje wersje programu Visual Studio Community i program Visual Studio Enterprise.  Te obrazy są aktualizowane co miesiąc, obejmujący najnowsze aktualizacje programu Visual Studio i Windows.  Gdy nazwy obrazów pozostają takie same, każdy obraz w opisie wersję zainstalowanego produktu i "dzień" obraz.
 
 | Wersja                                              | Wersje                     |     Wersja produktu      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019 r.: (Wersja zapoznawcza) (wersja zapoznawcza 1)                   |           Enterprise         | Wersji 16.0.0 Preview 1 |
-| Visual Studio 2017: Najnowsze (w wersji 15.9)                    |    Enterprise, Community     |      Wersja 15.9.0      |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.18     |
+|    Visual Studio 2019 r.: (Wersja zapoznawcza) (wersja zapoznawcza 1)                   |           Enterprise         | Wersji 16.0.0 Preview 1 |
+| Visual Studio 2017: Najnowsze (w wersji 15.9)                    |    Enterprise, Community     |      Wersja 15.9.4      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.20     |
 |   Visual Studio 2015: Najnowsze (Aktualizacja 3)                      |    Enterprise, Community     |  Wersja 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Brak             | (Wygasłe obsługi)  |
 

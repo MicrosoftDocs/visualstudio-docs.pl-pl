@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 116dfd687fbf80488073276a37d706486bd299e0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218425"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647489"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są:  
   
--   Dostęp do przykładowej bazy danych Northwind.  Aby uzyskać więcej informacji, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+-   Dostęp do przykładowej bazy danych Northwind.
   
 ## <a name="create-the-windows-application"></a>Tworzenie aplikacji Windows  
  Pierwszym krokiem jest utworzenie **aplikacji Windows**. Przypisanie nazwy do projektu jest opcjonalny w tym kroku, ale firma Microsoft będzie nadaj jej nazwę, ponieważ planujemy zapisanie go później.  
@@ -73,7 +73,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
      **UpdateMultipleTablesWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
 ## <a name="create-the-data-source"></a>Utwórz źródło danych  
- Spowoduje to utworzenie źródła danych z bazy danych Northwind przy użyciu **Kreatora konfiguracji źródła danych**. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+ Spowoduje to utworzenie źródła danych z bazy danych Northwind przy użyciu **Kreatora konfiguracji źródła danych**. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia.
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
@@ -117,14 +117,14 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 1.  Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.  
   
-     Formanty powiązane z danymi z etykietami opisowymi są wyświetlane w formularzu, oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
+     Formanty powiązane z danymi z etykietami opisowymi są wyświetlane w formularzu, oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
 2.  Przeciągnij powiązane **zamówienia** węzła z **źródeł danych** okna na **Form1**.  
   
     > [!NOTE]
     >  Powiązane **zamówienia** węzeł znajduje się poniżej **faks** kolumny, a jest elementem podrzędnym **klientów** węzła.  
   
-     A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. [OrdersTableAdapter](../data-tools/tableadapter-overview.md) i <xref:System.Windows.Forms.BindingSource> są wyświetlane w zasobniku składnika.  
+     A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. OrdersTableAdapter i <xref:System.Windows.Forms.BindingSource> są wyświetlane w zasobniku składnika.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode aktualizacji bazy danych  
  Zaktualizuj bazy danych, wywołując `Update` metody **klientów** i **zamówienia** adapterów TableAdapter. Domyślnie program obsługi zdarzeń dla **Zapisz** przycisk<xref:System.Windows.Forms.BindingNavigator> zostanie dodany do kodu formularza w celu wysyłania aktualizacji do bazy danych. Ta procedura modyfikuje kod, aby wysłać aktualizacje we właściwej kolejności. Pozwala to wyeliminować możliwość zgłaszania błędów więzów integralności. Kod implementuje również dodanymi komentarzami opakowując wywołania aktualizacji w bloku try-catch. Można zmodyfikować kod odpowiednio do potrzeb aplikacji.  
@@ -149,17 +149,16 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 2.  Należy wprowadzić pewne zmiany do danych z co najmniej jednego rekordu w każdej tabeli.  
   
-3.  Wybierz **Zapisz** przycisku.  
+3.  Wybierz ikonę **Zapisz**.  
   
 4.  Sprawdź wartości w bazie danych, aby sprawdzić, czy zmiany zostały zapisane.  
   
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza powiązanych z danymi w aplikacji Windows. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:  
   
--   Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [porady: dodawanie zapytań parametrycznych do aplikacji Windows Forms](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+-   Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Edytowanie źródła danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [porady: edytowanie zestawu danych](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+-   Edytowanie źródła danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie zestawu danych](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-

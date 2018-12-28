@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — przy użyciu projektantów działań
+title: Projektant przepływu pracy — używanie projektantów działań
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7f6ca4310e8de644f799c8c921ac27cb3e1c458
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758044"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684334"
 ---
 # <a name="using-the-activity-designers"></a>Używanie projektantów działań
 
-Projektanta przepływów pracy zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia Twojej działań i przepływów pracy. W tej sekcji opisano kategorie działań dostarczane przez system i ich projektantów, które są dostępne. Tematy dotyczące poszczególnych działań i ich odpowiednich projektantów w każdej z tych kategorii opisano, co te działania czy i zawierają wskazówki dotyczące sposobu ich używania.
+Projektanta przepływu pracy zawiera wiele działań dostarczane przez system, które można użyć podczas tworzenia swojej działalności i przepływów pracy. W tej sekcji opisano kategorie działań dostarczane przez system i ich projektantów, które są dostępne. Tematy dotyczące poszczególnych działań i ich odpowiednich projektantów w ramach każdej z tych kategorii opisano, co te działania są i wytyczne dotyczące sposobu ich używania.
 
 ## <a name="reference"></a>Tematy pomocy
 
@@ -30,8 +30,6 @@ Projektanta przepływów pracy zawiera kilka działań dostarczane przez system,
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
- [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)
-
- [Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-
- [Pomoc interfejsu użytkownika Projektanta przepływu pracy](../workflow-designer/workflow-designer-ui-help.md)
+- [Używanie projektanta przepływu pracy](../workflow-designer/developing-applications-with-the-workflow-designer.md)
+- [Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+- [Pomoc interfejsu użytkownika Projektanta przepływu pracy](../workflow-designer/workflow-designer-ui-help.md)

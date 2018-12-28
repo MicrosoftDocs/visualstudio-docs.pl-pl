@@ -2,9 +2,8 @@
 title: Projecttemplatelink — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495976"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561502"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Projecttemplatelink — element (szablony Visual Studio)
 Określa ścieżkę do *.vstemplate* pliku jednego projektu w szablonie wieloprojektowym.  
@@ -71,7 +70,7 @@ Określa ścieżkę do *.vstemplate* pliku jednego projektu w szablonie wielopro
  Ten tekst Określa ścieżkę do *.vstemplate* pliku szablonu.  
   
 ## <a name="remarks"></a>Uwagi  
- Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. `ProjectTemplateLink` Element jest używany do określenia lokalizacji *.vstemplate* pliku dla jednego z projektów w szablonie. *.Vstemplate* plik szablonu wieloprojektowego zawiera jeden `ProjectTemplateLink` elementu dla każdego projektu w szablonie. Aby uzyskać więcej informacji o szablonach wieloprojektowych, zobacz [porady: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).  
+ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. `ProjectTemplateLink` Element jest używany do określenia lokalizacji *.vstemplate* pliku dla jednego z projektów w szablonie. *.Vstemplate* plik szablonu wieloprojektowego zawiera jeden `ProjectTemplateLink` elementu dla każdego projektu w szablonie. Aby uzyskać więcej informacji o szablonach wieloprojektowych, zobacz [jak: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie pokazano prosty główny wielu projektów *.vstemplate* pliku. W tym przykładzie szablon zawiera dwa projekty `My Windows Application` i `My Class Library`. `ProjectName` Atrybutu na `ProjectTemplateLink` element ustawia nazwę [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przypisze temu projektowi. Jeśli `ProjectName` nie istnieje atrybut nazwy *.vstemplate* plik jest używany jako nazwa projektu.  
@@ -101,4 +100,4 @@ Określa ścieżkę do *.vstemplate* pliku jednego projektu w szablonie wielopro
 ## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md)
+ [Instrukcje: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md)

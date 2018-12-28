@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676375"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647903"
 ---
 # <a name="debug-office-projects"></a>Debugowanie projektów pakietu Office
   Można debugować projektów pakietu Office przy użyciu tego samego programu Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzia, których używasz dla innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Funkcje debugera, takie jak możliwość Wstawianie punktów przerwania i wyświetlić zmienne w **lokalne** okna, są również dostępne podczas debugowania w projektach pakietu Office. Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzia debugowania, zobacz [debugowania w programie Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
@@ -79,7 +79,7 @@ ms.locfileid: "35676375"
  Do debugowania projektu dokument programu Word, w oparciu o dokument programu Word 97 – 2003 (*/*.doc *) format, folder projektu należy dodać do listy zaufanych folderów. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="debug-disabled-add-ins"></a>Dodatki debugowania wyłączone  
- Aplikacje Microsoft Office może spowodować wyłączenie dodatków narzędzi VSTO dla programów, które nieoczekiwane zachowanie. Aplikacji pakietu Microsoft Office powoduje wyłączenie dodatków narzędzi VSTO, aby uniemożliwić problematycznego kod ładowania każdorazowym uruchomieniu aplikacji. Jednak również jest łatwo spowodować nieoczekiwane zachowanie podczas debugowania typowy. Aby dowiedzieć się, jak ponownie włączyć dodatków narzędzi VSTO dla programów, zobacz [jak: ponowne włączanie dodatku narzędzi VSTO dla programów, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
+ Aplikacje Microsoft Office może spowodować wyłączenie dodatków narzędzi VSTO dla programów, które nieoczekiwane zachowanie. Aplikacji pakietu Microsoft Office powoduje wyłączenie dodatków narzędzi VSTO, aby uniemożliwić problematycznego kod ładowania każdorazowym uruchomieniu aplikacji. Jednak również jest łatwo spowodować nieoczekiwane zachowanie podczas debugowania typowy. Aby dowiedzieć się, jak ponownie włączyć dodatków narzędzi VSTO dla programów, zobacz [jak: Ponowne włączanie dodatku narzędzi VSTO dla programów, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
   
  Istnieją dwa typy wyłączenia, aplikacji Microsoft Office ma być używany dla dodatków narzędzi VSTO: wyłączanie twardych i wyłączanie nietrwałego.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35676375"
   
 ## <a name="see-also"></a>Zobacz także  
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
- [Porady: ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

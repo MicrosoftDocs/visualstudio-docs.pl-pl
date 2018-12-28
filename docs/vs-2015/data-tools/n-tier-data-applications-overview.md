@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01e1c86e7cd601bad22f3e23fd65c4e2b260fa58
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852924"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647549"
 ---
 # <a name="n-tier-data-applications-overview"></a>Aplikacje warstwowe — Przegląd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ N-warstwy * dane aplikacji są sterowany danymi, które są rozdzielone na wiele
   
  Program Visual Studio zawiera kilka funkcji, które ułatwiają deweloperom tworzenie aplikacji n-warstwowych:  
   
--   [Tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md) zapewnia **projektu DataSet** właściwość, która umożliwia rozdzielenie zestawu danych (warstwy jednostek danych) i `TableAdapter`s (Warstwa dostępu do danych) w dyskretne projekty.  
+-   Projektant obiektów DataSet zawiera **projektu DataSet** właściwość, która umożliwia rozdzielenie zestawu danych (warstwy jednostek danych) i `TableAdapter`s (Warstwa dostępu do danych) w dyskretne projekty.  
   
 -   [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) zawiera ustawienia umożliwiające Generowanie klasy DataContext i danych do oddzielnych przestrzeni nazw. Takie rozwiązania pozwala logicznie rozdzielić warstwy dostępu do danych i jednostek danych.  
   
@@ -89,9 +89,9 @@ Warstwa danych
   
  [Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [Przewodnik: tworzenie n-warstwowych aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [Przewodnik: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Wskazówki: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Przewodnik: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
  [N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
@@ -101,4 +101,3 @@ Warstwa danych
  [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)   
  [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

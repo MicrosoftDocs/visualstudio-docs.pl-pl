@@ -1,10 +1,8 @@
 ---
-title: CreateInPlace (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Createinplace — element (szablony Visual Studio)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231400"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561817"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (szablony Visual Studio)
+# <a name="createinplace-element-visual-studio-templates"></a>Createinplace — element (szablony Visual Studio)
 Określa, czy należy utworzyć projekt i przeprowadzić wymiany parametru w określonej lokalizacji lub przeprowadzić wymiany parametru w lokalizacji tymczasowej, a następnie zapisujesz projekt do określonej lokalizacji.  
   
  \<VSTemplate>  

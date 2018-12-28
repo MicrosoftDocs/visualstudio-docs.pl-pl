@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Dodawanie wierszy i kolumn do tabel programu Word'
+title: 'Instrukcje: Programowe Dodawanie wierszy i kolumn do tabel programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], adding to Word tables
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55a755ccdd7f14af5a38fc516cdb9f76e936e10d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818682"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804581"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Porady: programowane Dodawanie wierszy i kolumn do tabel programu Word
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Instrukcje: Programowe Dodawanie wierszy i kolumn do tabel programu Word
   W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Możesz użyć <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Rows> obiektu, aby dodać wiersze do tabeli i <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Columns> obiektu, aby dodać kolumny.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -40,7 +40,7 @@ ms.locfileid: "49818682"
 > - Dokument programu Word 2010  
 > - Szablon programu Word 2010  
 > 
->   Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Word** zestawu, a następnie należy użyć klas z tego zestawu na dodawanie wierszy i kolumn do tabel. Aby uzyskać więcej informacji, zobacz [jak: aplikacje Office docelowej przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>   Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Word** zestawu, a następnie należy użyć klas z tego zestawu na dodawanie wierszy i kolumn do tabel. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Aby dodać wiersz do tabeli  
   
@@ -62,7 +62,7 @@ ms.locfileid: "49818682"
 > [!IMPORTANT]  
 >  Ten kod zadziała tylko w projektach, które tworzysz przy użyciu szablonów w dodatku narzędzi VSTO programu Word.  
 >   
->  Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Word** zestawu, a następnie należy użyć klas z tego zestawu na dodawanie wierszy i kolumn do tabel. Aby uzyskać więcej informacji, zobacz [jak: aplikacje Office docelowej przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Word** zestawu, a następnie należy użyć klas z tego zestawu na dodawanie wierszy i kolumn do tabel. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Aby dodać wiersz do tabeli  
   
@@ -79,8 +79,8 @@ ms.locfileid: "49818682"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Instrukcje: programowe tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)   
- [Porady: programowane Dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Porady: programowane Wypełnianie tabel programu Word właściwościami dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+ [Instrukcje: Programowe tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Instrukcje: Programowe Dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Instrukcje: Programowe Wypełnianie tabel programu Word właściwościami dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

@@ -1,10 +1,9 @@
 ---
-title: TemplateID — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: TemplateId — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7e431e603d0b2844431b5bffaedf7fa82bd7132
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eda4b3134d8e7e589c60ee8b8860042b7e0f1ff5
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560547"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID — Element (szablony Visual Studio)
-Określa identyfikator szablonu elementu, który jest przydzielone do grupy szablonów elementów przez [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elementu.  
+Określa identyfikator szablonu elementu, który dzieli się na grupę szablonów elementów przez [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elementu.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -49,17 +48,17 @@ Określa identyfikator szablonu elementu, który jest przydzielone do grupy szab
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
- A `string` reprezentujący identyfikator szablonu elementu, który jest przydzielone do grupy szablonów elementów przez `TemplateGroupID` elementu.  
+ A `string` reprezentujący identyfikator szablonu elementu, który dzieli się na grupę szablonów elementów przez `TemplateGroupID` elementu.  
   
 ## <a name="remarks"></a>Uwagi  
- `TemplateID` to opcjonalny element.  
+ `TemplateID` element jest opcjonalny.  
   
- Jeśli pominięto plik .vstemplate `TemplateID` elementu, a następnie [nazwa](../extensibility/name-element-visual-studio-templates.md) element jest używany jako identyfikator szablonu.  
+ Jeżeli pominięto plik .vstemplate `TemplateID` elementu, a następnie [nazwa](../extensibility/name-element-visual-studio-templates.md) element jest używany jako identyfikator szablonu.  
   
- Wartość `TemplateID` element jest używany wraz z rejestracji systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) do filtru szablonów, które są widoczne w **Dodaj nowy element** okno dialogowe.  
+ Wartość `TemplateID` element jest używany razem z rejestracji systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) do filtru szablonów, które pojawiają się w **Dodaj nowy element** okno dialogowe.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3b049a80367e4c241c9bb5eada4293b63bbee96
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259912"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647202"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Wyłączanie ograniczeń podczas zapełniania zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,10 @@ Jeśli zestaw danych zawiera ograniczenia (np. ograniczenia foreign key), theyca
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Zawieszenie ograniczenia aktualizacji za pomocą Projektanta obiektów Dataset  
   
-1.  Otwórz swój zestaw danych w [tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md). Aby uzyskać więcej informacji, zobacz [porady: otwieranie zestawu w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Otwórz swój zestaw danych w Projektancie obiektów Dataset. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataSet.EnforceConstraints%2A> na `false`.   
   
 ## <a name="see-also"></a>Zobacz też  
  [Wypełnij zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [Relacje w zestawach danych](../data-tools/relationships-in-datasets.md)
-

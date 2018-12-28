@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39; podczas &#39; | Dokumentacja firmy Microsoft
+title: Oczekiwano instrukcji "while" | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788737"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801979"
 ---
-# <a name="expected-39while39"></a>Oczekiwano &#39; podczas &#39;
-Nie zawiera `while` warunku w `do...while` pętli. A **czy** instrukcja musi mieć odpowiednią `while` testu na końcu bloku kodu.  
+# <a name="expected-while"></a>Oczekiwano instrukcji „while"
+Nie dołączono `while` warunku w `do...while` pętli. A **czy** instrukcja musi mieć odpowiednią `while` testu na końcu bloku kodu.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Obejmują `while` Testuj instrukcję po zamykający nawias klamrowy.  
+-   Obejmują `while` Testuj instrukcję po zamykającym nawiasie klamrowym.  
   
 ## <a name="see-also"></a>Zobacz też  
  [while — instrukcja](../../javascript/reference/while-statement-javascript.md)   

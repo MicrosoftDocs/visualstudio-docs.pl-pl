@@ -3,18 +3,18 @@ title: Zwiększ swoje umiejętności do nauki o danych już dzisiaj za pomocą k
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które są dołączone do wybranej subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863912"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802151"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -24,7 +24,7 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
-1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek korzyści DataCamp w kategorii "Programowanie Professional", a następnie kliknij **Aktywuj**.
    > [!div class="mx-imgBorder"]
@@ -42,12 +42,9 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
     - Rozpocznij nauki języka Python do analizy danych
     - Rozwijać swoje umiejętności wykorzystać do nauki o danych
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   Wystarczy kliknąć z wybranej ścieżki, aby rozpocząć pracę.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp wybierz ścieżkę](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. Po wybraniu ścieżki Możesz ulepszyć swoje ścieżki szkoleniowej, wybierając pozycję celu.  Na przykład jeśli wybrana ścieżka "Tworzenie usługi danych do analizy zestawu umiejętności", zostaną wyświetlone następujące opcje. Wybierz jedną z opcji, lub kliknij przycisk **nie mam pewności.  Pokaż wszystkie ścieżki kariery** utworzyć szersze ścieżki.
    > [!div class="mx-imgBorder"]
@@ -72,18 +69,21 @@ Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Program Visual Studio Professional (standardowy, roczna w chmurze) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Dev Essentials | Brak  | 2 miesiące | Nie. Dostępne tylko dla nowych subskrybentów |
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 
 
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR), ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine* 
+<sup>1</sup>*obejmuje:    Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.

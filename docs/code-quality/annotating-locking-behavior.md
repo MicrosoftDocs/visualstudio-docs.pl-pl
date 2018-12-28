@@ -34,32 +34,32 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 21c67bb8b99c2772e107ded9063a99940a7fac74
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8b7aaa9edfeaa2f1515f3fce890c0d7ba9383d2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901531"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804880"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
-Aby uniknąć współbieżności usterki w programie wielowątkowe, zawsze wykonaj odpowiednie dyscypliny blokowania, użyj adnotacji SAL.
+Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze postępuj zgodnie z odpowiednią dyscypliny blokowania i korzystanie z adnotacji SAL.
 
- Współbieżność usterki są bardzo trudne do odtworzenia, diagnozowanie i debugowania, ponieważ są one deterministyczna. Rozsądkiem o naprzemiennego wykonywania wątku jest trudne w najlepszym i staje się niepraktyczne podczas projektowania treści kodu, który ma więcej niż kilka wątków. W związku z tym jest dobrym rozwiązaniem wykonaj blokowania dyscypliny programów wielowątkowych. Na przykład obeying kolejności blokady podczas pobierania wiele zamków pomaga uniknąć zakleszczenie i uzyskiwanie prawidłowego blokady guarding przed uzyskaniem dostępu do zasobu udostępnionego pomaga zapobiegać wyścigu.
+ Współbieżność usterki są bardzo trudne do odtworzenia, diagnozowanie i debugowanie, ponieważ są one deterministyczna. Uzasadnienie o wątku z przeplotem jest trudne w najlepszym i staje się niepraktyczne, projektując treści kodu, który ma więcej niż kilka wątków. Dlatego jest dobrym rozwiązaniem, postępuj zgodnie z blokowaniem dyscypliny w programach wielowątkowych. Na przykład obeying kolejności blokady podczas uzyskiwania blokady wielu pomaga uniknąć zakleszczenia i uzyskiwanie właściwego guarding blokady przed uzyskaniem dostępu do zasobu udostępnionego zapobiega wyścigu.
 
- Niestety, pozornie proste zasady blokowania zaskakująco trudno jest wykonaj w praktyce. Pewne ograniczenie języków programowania i kompilatory współczesnych jest, czy nie bezpośrednio obsługują specyfikację i analizy wymagania współbieżności. Programiści muszą polegać na komentarze w kodzie nieformalne Express ich cele dotyczące wykorzystania do blokad.
+ Niestety, pozornie proste zasady blokowania zaskakująco trudno jest wykonać w praktyce. Podstawowe ograniczenia w obecnie języków programowania i kompilatory to, że ich nie obsługują bezpośrednio Specyfikacja i analizy wymagania współbieżności. Programiści trzeba polegać na komentarzach nieformalnego kodu, aby wyrazić swoich zamiarach dotyczące wykorzystania do blokady.
 
- Adnotacje SAL współbieżności mają pomagają określić blokowania efekty uboczne, blokowanie odpowiedzialność, opieki danych blokady kolejności hierarchii i innych oczekiwane zachowanie blokowania. Adnotacje SAL współbieżności tworzenia reguł niejawnych jawne, zapewnia spójny sposób dokumentów, jak kod używa zasad blokowania. Adnotacje współbieżności zwiększa się również możliwość znalezienia wyścigu, zakleszczenie operacji synchronizacji niedopasowanych i inne błędy niewielkie współbieżności narzędzi analizy kodu.
+ Adnotacje SAL współbieżności są przeznaczone do pomagają w określeniu blokowania efekty uboczne w celu blokowania odpowiedzialność, opieki danych, blokowanie kolejności hierarchii i innych oczekiwanego zachowania blokującego. Wprowadzając reguł niejawnych jawne, adnotacji współbieżności SAL zapewnia spójny sposób dokumentów, jak Twój kod przy użyciu reguł blokowania. Adnotacje współbieżności również zwiększyć możliwość wyszukiwania, sytuacje wyścigu, zakleszczenia, operacje synchronizacji niedopasowanych i inne błędy współbieżnością subtelnych narzędzi analizy kodu.
 
 ## <a name="general-guidelines"></a>Ogólne wskazówki
- Za pomocą adnotacji, można prezentować umów, które są implikowana przez definicje funkcji między implementacji (callees) oraz klientów (wywołań), a express invariants i inne właściwości program, który może dodatkowo ulepszyć analizy.
+ Za pomocą funkcji adnotacje, można podać umowy, które są też dorozumianych przez definicje funkcji między klientami (obiekty wywołujące) i implementacji (wywoływane), a express invariants i inne właściwości programu, który może dodatkowo ulepszyć analizy.
 
- SAL obsługuje wiele różnych elementów podstawowych blokowania — na przykład sekcje krytyczne, muteksy pokrętła blokad i innych obiektów zasobów. Wiele adnotacji współbieżności zająć wyrażenia blokady jako parametr. Według Konwencji blokady jest wskazywane przez wyrażenie ścieżki obiektu podstawowego blokady.
+ SAL obsługuje wiele różnych elementów podstawowych blokowania — na przykład sekcji krytycznych, muteksy, pokrętła blokad i innych obiektów zasobów. Wiele adnotacji współbieżności zająć wyrażenie blokady, jako parametr. Zgodnie z Konwencją blokady jest określona przez wyrażenie ścieżki obiektu bazowego blokady.
 
- Niektóre reguły własność wątku należy wziąć pod uwagę:
+ Niektóre reguły własność wątku na uwadze:
 
--   SPIN blokady są uncounted blokad, które mają własność wyczyść wątku.
+-   Pokrętła blokady są uncounted blokad, które mieć prawa własności do zwykłego wątku.
 
--   Muteksy i sekcje krytyczne są zliczane blokad, które mają własność wyczyść wątku.
+-   Sekcji krytycznych i Muteksy są liczone blokad, które mieć prawa własności do zwykłego wątku.
 
 -   Semaforów i zdarzenia są zliczane blokad, które nie mają własność wyczyść wątku.
 
@@ -68,44 +68,53 @@ Aby uniknąć współbieżności usterki w programie wielowątkowe, zawsze wykon
 
 |Adnotacja|Opis|
 |----------------|-----------------|
-|`_Acquires_exclusive_lock_(expr)`|Oznacza funkcji i wskazuje, że w post stan funkcji zwiększa o jeden w trybie wyłączności liczbę obiektu blokady o nazwie przez `expr`.|
-|`_Acquires_lock_(expr)`|Oznacza funkcji i wskazuje, że w post stan funkcji zwiększa przez jedną liczbę blokad obiektu blokady o nazwie przez `expr`.|
-|`_Acquires_nonreentrant_lock_(expr)`|Zablokuj o nazwie przez `expr` są uzyskiwane.  Błąd jest zgłaszany, gdy blokada jest już używana.|
-|`_Acquires_shared_lock_(expr)`|Oznacza funkcji oraz wskazuje, czy w post stan funkcji zwiększa o jeden licznik blokady współużytkowanej zablokować obiektu o nazwie przez `expr`.|
-|`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol `name` być poziomu blokady, dzięki czemu mogą być używane w adnotacjach `_Has_Lock_level_` i `_Lock_level_order_`.|
-|`_Has_lock_kind_(kind)`|Oznacza dowolnego obiektu, aby zawęzić kryteria informacji o typie obiektu zasobów. Czasami wspólny typ jest używany dla różnych rodzajów zasobów i przeciążone typ nie jest wystarczających do odróżnienia semantycznego wymagania między różnymi zasobami. Poniżej przedstawiono listę wstępnie zdefiniowanych `kind` parametry:<br /><br /> `_Lock_kind_mutex_`<br /> Identyfikator rodzaju blokady dla muteksy.<br /><br /> `_Lock_kind_event_`<br /> Zablokuj rodzaju identyfikator zdarzenia.<br /><br /> `_Lock_kind_semaphore_`<br /> Identyfikator rodzaju blokady dla semaforów.<br /><br /> `_Lock_kind_spin_lock_`<br /> Identyfikator rodzaju blokady blokad pokrętła.<br /><br /> `_Lock_kind_critical_section_`<br /> Identyfikator rodzaju blokady dla sekcji krytycznych.|
-|`_Has_lock_level_(name)`|Oznacza obiektu blokady i nadaje mu poziom blokady `name`.|
-|`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia blokady kolejności między `name1` i `name2`.|
-|`_Post_same_lock_(expr1, expr2)`|Oznacza funkcji oraz wskazuje, w post stan blokady dwóch `expr1` i `expr2`, są traktowane jako są tego samego obiektu blokady.|
-|`_Releases_exclusive_lock_(expr)`|Oznacza funkcji oraz wskazuje, że w post stan zmniejsza funkcja przez jeden licznik w trybie wyłączności zablokować obiektu o nazwie przez `expr`.|
-|`_Releases_lock_(expr)`|Oznacza funkcji i wskazuje, że w post stan zmniejsza funkcja przez jeden licznik blokady zablokować obiektu o nazwie przez `expr`.|
-|`_Releases_nonreentrant_lock_(expr)`|Zablokuj o nazwie przez `expr` zostanie zwolniony. Błąd jest zgłaszany, gdy blokada nie jest obecnie używana.|
-|`_Releases_shared_lock_(expr)`|Oznacza funkcji i wskazuje, że w post stan zmniejsza funkcja przez jeden licznik blokady współużytkowanej zablokować obiektu o nazwie przez `expr`.|
-|`_Requires_lock_held_(expr)`|Oznacza funkcji oraz wskazuje, w wersji pre stanu liczbę blokad obiektu o nazwie przez `expr` co najmniej jeden.|
-|`_Requires_lock_not_held_(expr)`|Oznacza funkcji oraz wskazuje, w wersji pre stanu liczbę blokad obiektu o nazwie przez `expr` wynosi zero.|
-|`_Requires_no_locks_held_`|Oznacza funkcji i wskazuje, że licznik blokady wszystkich blokad, które są znane, aby narzędzie do sprawdzania zero.|
-|`_Requires_shared_lock_held_(expr)`|Oznacza funkcji oraz wskazuje, w wersji pre stanu blokady współużytkowanej liczba obiektu o nazwie przez `expr` co najmniej jeden.|
-|`_Requires_exclusive_lock_held_(expr)`|Oznacza funkcji oraz wskazuje, w wersji pre stanu liczby w trybie wyłączności obiektu o nazwie przez `expr` co najmniej jeden.|
+|`_Acquires_exclusive_lock_(expr)`|Oznacza stosowanym funkcji i wskazuje, że we wpisie w stan funkcji zwiększa o jeden blokady na wyłączność liczbę blokady obiektu, który jest nazwany przez `expr`.|
+|`_Acquires_lock_(expr)`|Oznacza stosowanym funkcji i wskazuje, że we wpisie w stan funkcji zwiększa o jeden liczbę blokad blokady obiektu, który jest nazwany przez `expr`.|
+|`_Acquires_nonreentrant_lock_(expr)`|Lock, który jest nazwany przez `expr` nabywa się.  Błąd jest zgłaszany, gdy blokada jest już używana.|
+|`_Acquires_shared_lock_(expr)`|Oznacza stosowanym funkcji i wskazuje, że we wpisie w stan funkcji zwiększa o jeden blokady współużytkowanej liczbę blokady obiektu, który jest nazwany przez `expr`.|
+|`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol `name` jako poziom blokady, dzięki czemu mogą być używane w adnotacjach `_Has_Lock_level_` i `_Lock_level_order_`.|
+|`_Has_lock_kind_(kind)`|Oznacza stosowanym dowolnego obiektu, aby uzyskać dokładniejsze informacje o typie obiektu zasobów. Czasami wspólny typ jest używane dla różnych rodzajów zasobów i przeciążone typ nie jest wystarczające do odróżniania wymagania semantycznego między różnymi zasobami. Poniżej przedstawiono listę wstępnie zdefiniowanych `kind` parametry:<br /><br /> `_Lock_kind_mutex_`<br /> Rodzaj Identyfikator blokady dla muteksy.<br /><br /> `_Lock_kind_event_`<br /> Rodzaj Identyfikator blokady dla zdarzeń.<br /><br /> `_Lock_kind_semaphore_`<br /> Rodzaj Identyfikator blokady dla semaforów.<br /><br /> `_Lock_kind_spin_lock_`<br /> Rodzaj Identyfikator blokady blokad pokrętła.<br /><br /> `_Lock_kind_critical_section_`<br /> Rodzaj Identyfikator blokady dla sekcji krytycznych.|
+|`_Has_lock_level_(name)`|Oznacza stosowanym obiektu blokady i nadaje jej poziom blokady `name`.|
+|`_Lock_level_order_(name1, name2)`|Instrukcję, która zapewnia blokady kolejność między `name1` i `name2`.|
+|`_Post_same_lock_(expr1, expr2)`|Oznacza stosowanym funkcji i wskazuje we wpisie w stan blokady dwóch `expr1` i `expr2`, są traktowane tak, jakby są tego samego obiektu blokady.|
+|`_Releases_exclusive_lock_(expr)`|Oznacza stosowanym funkcji i wskazuje, że we wpisie w stanie zmniejsza funkcji przez jeden licznik blokady na wyłączność zablokować obiektu, który jest nazwany przez `expr`.|
+|`_Releases_lock_(expr)`|Oznacza stosowanym funkcji i wskazuje, że we wpisie w stanie zmniejsza funkcji o jeden liczbę blokad blokady obiektu, który jest nazwany przez `expr`.|
+|`_Releases_nonreentrant_lock_(expr)`|Lock, który jest nazwany przez `expr` wydaniu. Błąd jest zgłaszany, jeśli blokada nie jest obecnie nałożona.|
+|`_Releases_shared_lock_(expr)`|Oznacza stosowanym funkcji i wskazuje, że we wpisie w stanie zmniejsza funkcji przez jeden licznik blokady współużytkowanej zablokować obiektu, który jest nazwany przez `expr`.|
+|`_Requires_lock_held_(expr)`|Oznacza stosowanym funkcji i wskazuje, w pre stan obiektu, który jest nazwany przez liczbę blokad `expr` co najmniej jeden.|
+|`_Requires_lock_not_held_(expr)`|Oznacza stosowanym funkcji i wskazuje, w pre stan obiektu, który jest nazwany przez liczbę blokad `expr` wynosi zero.|
+|`_Requires_no_locks_held_`|Oznacza stosowanym funkcji i wskazuje, że liczba blokady wszystkich blokad, które są znane z modułu sprawdzania zero.|
+|`_Requires_shared_lock_held_(expr)`|Oznacza stosowanym funkcji i wskazuje, czy w pre stan blokady współużytkowanej liczba obiekt, który jest nazwany przez `expr` co najmniej jeden.|
+|`_Requires_exclusive_lock_held_(expr)`|Oznacza stosowanym funkcji i wskazuje, czy w pre stan blokady na wyłączność liczba obiekt, który jest nazwany przez `expr` co najmniej jeden.|
 
-## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Funkcje wewnętrzne SAL nieujawnionych blokowanie obiektów
- Niektóre obiekty blokady nie są widoczne przez implementację funkcji blokowania skojarzone.  W poniższej tabeli wymieniono SAL wewnętrzne zmienne, które umożliwią adnotacje dla funkcji, które działają na tych obiektach nieujawnionych blokady.
+## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Wewnętrzne SAL nieujawnionych blokowanie obiektów
+ Niektóre obiekty blokady nie są widoczne przy wdrażaniu funkcji blokowania skojarzone.  W poniższej tabeli wymieniono SAL wewnętrzne zmienne, które umożliwią adnotacje dla funkcji, które działają na tych obiektach nieujawnionych blokady.
 
 |Adnotacja|Opis|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|W tym artykule opisano Anuluj blokadę pokrętła.|
 |`_Global_critical_region_`|W tym artykule opisano krytyczne regionu.|
 |`_Global_interlock_`|W tym artykule opisano operacje blokowane.|
-|`_Global_priority_region_`|W tym artykule opisano region priorytet.|
+|`_Global_priority_region_`|W tym artykule opisano region priorytetu.|
 
 ## <a name="shared-data-access-annotations"></a>Adnotacje dostępu do udostępnionych danych
- W poniższej tabeli wymieniono adnotacje dla dostępu do udostępnionych danych.
+ W poniższej tabeli wymieniono adnotacji, aby uzyskać dostęp do udostępnionych danych.
 
 |Adnotacja|Opis|
 |----------------|-----------------|
-|`_Guarded_by_(expr)`|Oznacza zmienną i wskazuje, że jest dostępny zawsze, gdy zmienna, liczbę blokad obiektu blokady o nazwie przez `expr` co najmniej jeden.|
-|`_Interlocked_`|Oznacza zmienną i stanowi odpowiednik `_Guarded_by_(_Global_interlock_)`.|
-|`_Interlocked_operand_`|Parametr funkcji adnotacjami jest argument docelowy jednego z różnych funkcji blokowaną.  Tych argumentów operacji musi mieć określone dodatkowe właściwości.|
-|`_Write_guarded_by_(expr)`|Oznacza zmienną i wskazuje, że zawsze, gdy zmienna jest, liczbę blokad obiektu blokady o nazwie przez `expr` co najmniej jeden.|
+|`_Guarded_by_(expr)`|Oznacza stosowanym zmienną i wskazuje, że zawsze, gdy zmienna jest dostępny, liczbę blokad blokady obiektu, który jest nazwany przez `expr` co najmniej jeden.|
+|`_Interlocked_`|Oznacza stosowanym zmienną i jest odpowiednikiem `_Guarded_by_(_Global_interlock_)`.|
+|`_Interlocked_operand_`|Parametr funkcji adnotacjami jest operand docelowej jednego z różnych funkcji Interlocked.  Te operandy muszą posiadać określone dodatkowe właściwości.|
+|`_Write_guarded_by_(expr)`|Oznacza stosowanym zmienną i wskazuje, że zawsze, gdy zmienna jest modyfikowany, liczbę blokad blokady obiektu, który jest nazwany przez `expr` co najmniej jeden.|
 
 ## <a name="see-also"></a>Zobacz też
- [Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [opis SAL](../code-quality/understanding-sal.md) [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md) [.zachowaniefunkcjidodawaniaadnotacji](../code-quality/annotating-function-behavior.md) [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md) [określenie, kiedy i gdzie dotyczy adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funkcje wewnętrzne](../code-quality/intrinsic-functions.md) [najlepsze rozwiązania i Przykłady](../code-quality/best-practices-and-examples-sal.md) [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+
+- [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Informacje o języku SAL](../code-quality/understanding-sal.md)
+- [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
+- [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
+- [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
+- [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
+- [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/p/?LinkId=251197)

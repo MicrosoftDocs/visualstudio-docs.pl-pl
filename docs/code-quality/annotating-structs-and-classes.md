@@ -26,12 +26,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: a4fb171ec575fdcf85879ed62252c9d373283f62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228828"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802634"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
 Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą funkcji adnotacje, przypominają invariants — jest uznawana za tę prawdziwe dowolnego wywołania funkcji i funkcji wejścia/wyjścia, która obejmuje otaczającej strukturze jako parametr lub wartość wyniku.
@@ -79,4 +79,12 @@ Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą fu
     ```
 
 ## <a name="see-also"></a>Zobacz też
- [Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [zrozumienie SAL](../code-quality/understanding-sal.md) [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md) [.zachowaniefunkcjidodawaniaadnotacji](../code-quality/annotating-function-behavior.md) [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md) [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funkcje wewnętrzne](../code-quality/intrinsic-functions.md) [najlepszych rozwiązań i Przykłady](../code-quality/best-practices-and-examples-sal.md)
+
+- [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Informacje o języku SAL](../code-quality/understanding-sal.md)
+- [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
+- [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)
+- [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
+- [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)

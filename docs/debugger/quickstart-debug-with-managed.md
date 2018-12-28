@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562077"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki Start: Debugowanie za pomocą C# lub Visual Basic, za pomocą debugera programu Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie za pomocą C# lub Visual Basic, za pomocą debugera programu Visual Studio
 
 Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
 
@@ -151,7 +151,7 @@ Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `c1.Add
 
 Aplikacja kontynuuje wykonywanie, wywołanie `doWork`i zatrzymuje się w wierszu kodu, gdy kliknięto przycisk.
 
-Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
+Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Sprawdzanie zmiennych w datatip
 

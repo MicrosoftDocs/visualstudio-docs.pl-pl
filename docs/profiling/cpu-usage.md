@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063266"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647835"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU 
 
@@ -84,7 +84,7 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. **Uży
 
  System i platforma funkcje, które są wykonywane w kodzie są nazywane *kod zewnętrzny*. Funkcje kodu zewnętrznego Uruchom i Zatrzymaj aplikację, rysowania interfejsu użytkownika, kontrolować wątki i podaj inne niskopoziomowe usługi dla aplikacji. W większości przypadków nie chcesz kodu zewnętrznego, dzięki czemu użycie procesora CPU wywoływać drzewa zbiera informacje funkcji zewnętrznych metody użytkownika w jednym **[kod zewnętrzny]** węzła.  
   
- Zaznacz, aby wyświetlić wywołania ścieżek kodu zewnętrznego na stronie głównej raport diagnostyczny **Pokaż kod zewnętrzny** z **filtru** listy rozwijanej, a następnie wybierz pozycję **Zastosuj**. **Drzewo wywołań** widoku **użycie procesora CPU** strony następnie rozwija wywołania kodu zewnętrznego.  
+ Aby wyświetlić wywołania ścieżek kodu zewnętrznego na stronie głównej raport diagnostyczny (w okienku po prawej stronie), wybierz **Pokaż kod zewnętrzny** z **filtru** listy rozwijanej, a następnie wybierz pozycję **Zastosuj**. **Drzewo wywołań** widoku **użycie procesora CPU** strony następnie rozwija wywołania kodu zewnętrznego. ( **Filtru** listy rozwijanej jest dostępny na stronie głównej diagnostycznych, nie szczegółowe widoki.)
   
  ![Pokaż kod zewnętrzny](../profiling/media/cpu_use_wt_filterview.png "Pokaż kod zewnętrzny")  
   

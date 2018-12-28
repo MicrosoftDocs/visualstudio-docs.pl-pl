@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4d1104af5c2e4f9cfc056e962b34c7d2b4591e33
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079477"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740156"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Praca z zasobami 3D dla gier i aplikacji
 
@@ -44,7 +44,7 @@ W tym dokumencie opisano narzędzia programu Visual Studio, które służy do tw
  Projektanta programu Visual Studio programu do cieniowania, który jest narzędzie do projektowania na podstawie wykresu programu do cieniowania, umożliwia tworzenie niestandardowych efektów wizualnych bez znajomości języka HLSL programowania.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji dotyczących sposobu uruchamiania z programowaniem DirectX, zobacz [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Aby uzyskać więcej informacji na temat debugowania aplikacji opartych na technologii DirectX, zobacz [diagnostyki grafiki (debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
+> Aby uzyskać więcej informacji dotyczących sposobu uruchamiania z programowaniem DirectX, zobacz [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Aby uzyskać więcej informacji na temat debugowania aplikacji opartych na technologii DirectX, zobacz [diagnostyki grafiki (debugowanie grafiki DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics).
 
 ## <a name="directx-version-compatibility"></a>Zgodność wersji programu DirectX
  Visual Studio używa programu DirectX do renderowania zasobów 2D i 3D. Możesz wybrać renderowania programu DirectX 11 lub renderowanie programowe Windows Advanced rasteryzacji platformy WARP (). Moduł renderowania programu DirectX 11 zawiera renderowania o wysokiej wydajności, przyspieszanych sprzętowo programu DirectX 11 i technologii DirectX 10 GPU. Moduł renderowania WARP pomaga upewnić się, że Twoje zasoby współdziałać z szerokiej gamy komputerów — obejmuje to komputery, których nie zainstalowano sprzęt graficzny nowoczesnych i komputerów, które mają zintegrowany sprzętu graficznego. Aby uzyskać więcej informacji na temat WARP, zobacz [przewodnik Windows Advanced rasteryzacji platformy WARP ()](http://go.microsoft.com/fwlink/p/?LinkId=224634).

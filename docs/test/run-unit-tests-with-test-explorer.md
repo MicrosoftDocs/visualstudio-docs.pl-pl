@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939520"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740410"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -101,8 +101,8 @@ Eksplorator testów umożliwia grupowanie testów we wstępnie zdefiniowanych ka
 
 |Grupa|Opis|
 |-|-----------------|
-|**Czas trwania**|Grupuje testy według czasu wykonywania: **Fast**, **średni**, i **wolna**.|
-|**Wynik**|Grupuje testy według wyników wykonania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
+|**Czas trwania**|Grupuje testy według czasu wykonywania: **Szybkie**, **średni**, i **powolne**.|
+|**Wynik**|Grupy testy według wyników wykonania: **Testy zakończone niepowodzeniem**, **testy pominięte**, **przeszedł testy**.|
 |**Cechy**|Grupuje testy według par kategoria/wartość, należy zdefiniować. Składnia określająca kategorie i wartości cech jest zdefiniowana przez strukturę testu jednostki.|
 |**Project**|Grupuje testy według nazw projektów.|
 
@@ -150,7 +150,7 @@ Aby filtrować według różnych kryteriów:
 |**Ścieżka pliku**|Wyszukuje dopasowania WE w pełni kwalifikowanej nazwy pliku źródłowych plików testowych.|
 |**W pełni kwalifikowana nazwa**|Wyszukuje dopasowania WE w pełni kwalifikowanej nazwy pliku testu w przestrzeni nazw, klas i metod.|
 |**Output**|Przeszukuje zdefiniowane przez użytkownika komunikaty o błędach, które są zapisywane do wyjścia standardowego (stdout) lub błędzie standardowym (stderr). Składnia określająca komunikaty wyjściowe są definiowane przez strukturę testu jednostki.|
-|**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
+|**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **testy pominięte**, **przeszedł testy**.|
 
 Aby wykluczyć podzbiór wyników filtrowania, należy użyć następującej składni:
 
@@ -187,7 +187,7 @@ Eksplorator testów umożliwia uruchamianie sesji debugowania dla testów. Kroko
 
 2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu kontekstowym.
 
-   Aby uzyskać więcej informacji dotyczących debugera, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Aby uzyskać więcej informacji dotyczących debugera, zobacz [debugowania w programie Visual Studio](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnozowanie problemów z wydajnością metoda testu
 

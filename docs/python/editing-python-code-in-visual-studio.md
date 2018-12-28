@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062819"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803510"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
@@ -184,7 +184,7 @@ Możesz zobaczyć fragmenty kodu dostępne w **Menedżera wstawek kodu**, otwart
 
 ![Menedżer fragmentów kodu w programie Visual Studio](media/code-editing-code-snippets-manager.png)
 
-Aby utworzyć własne fragmenty kodu, zobacz [wskazówki: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md).
+Aby utworzyć własne fragmenty kodu, zobacz [instruktażu: Utwórz fragment kodu](../ide/walkthrough-creating-a-code-snippet.md).
 
 Jeśli piszesz fragmentu świetnego kodu, które chcesz udostępnić, możesz opublikować ją w gist i [Daj nam znać](https://github.com/Microsoft/PTVS/issues). Firma Microsoft może mieć uwzględniania go w przyszłej wersji programu Visual Studio.
 
@@ -196,7 +196,7 @@ Obsługa języka Python w programie Visual Studio zawiera kilka oznacza, że mo�
 
 Na pasku nawigacyjnym jest wyświetlana w górnej części każdego okna edytora i zawiera listę dwupoziomowej definicji. Lista rozwijana po lewej stronie zawiera klasę najwyższego poziomu i definicje funkcji w bieżącym pliku; prawo rozwijanej Wyświetla listę definicji w zakresie wyświetlane po lewej stronie. Jak zmieniają położenie w edytorze list zaktualizowane, aby wyświetlić bieżący kontekst i można również wybrać wpis z tych list można przechodzić bezpośrednio do.
 
-! [Pasek nawigacyjny] w editor(media/code-editing-navigation-bar.png) programu Visual Studio
+![Pasek nawigacyjny w edytorze programu Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Aby ukryć pasek nawigacyjny, przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **Python**  >  **Ogólne** i wyczyść **ustawienia** > **pasek nawigacyjny**.

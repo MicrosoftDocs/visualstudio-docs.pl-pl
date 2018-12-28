@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882669"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561541"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debugera programu Visual Studio
 
@@ -174,7 +174,7 @@ Kliknij przycisk **stos wywołań** okna podczas debugowania, która jest domyś
 
 Możesz kliknąć dwukrotnie wiersz kodu, aby przyjrzeć się kodu źródłowego i zmienia także bieżący zakres kontrolowanym przez debuger. To nie jest wcześniejsze debugera.
 
-Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okna, aby wykonywać inne czynności. Na przykład, można wstawić punktów przerwania do określonych funkcji, ponowne uruchomienie aplikacji przy użyciu **Uruchom do kursora**i przejść zbadanie kodu źródłowego. Zobacz [jak: analizować stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
+Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okna, aby wykonywać inne czynności. Na przykład, można wstawić punktów przerwania do określonych funkcji, ponowne uruchomienie aplikacji przy użyciu **Uruchom do kursora**i przejść zbadanie kodu źródłowego. Zobacz [jak: Sprawdź stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Sprawdź wyjątek
 
@@ -215,7 +215,7 @@ Aby uzyskać więcej informacji, zobacz [Sprawdź poprzednie Stany aplikacji za 
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku przeznaczono krótkie omówienie wielu funkcji debugowania. Może być bardziej głębszy wgląd w te funkcje za pomocą aplikacji przykładowej
+W tym samouczku przeznaczono krótkie omówienie wielu funkcji debugowania. Możesz bardziej przyjrzeć się dokładnie jeden z tych funkcji, takich jak punkty przerwania.
 
 > [!div class="nextstepaction"]
-> [Naucz się debugować przy użyciu programu Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Informacje na temat używania punktów przerwania](../debugger/using-breakpoints.md)

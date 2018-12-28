@@ -1,5 +1,5 @@
 ---
-title: '&lt;postactiondata —&gt; — element (Office development w Visual Studio)'
+title: '&lt;postactiondata —&gt; — element (Office development w programie Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,46 +17,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f96ecf7f7f6c0d465a9506edff41c4305d8d25e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 58b085e35971fa557d946f3967af4db81b577fff
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692951"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804828"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postactiondata —&gt; — element (Office development w Visual Studio)
-  `postActionData` Elementu `vstav3` przestrzeń nazw określa dane skojarzone z dowolną akcję po wdrożeniu, która jest uruchamiana po zainstalowaniu rozwiązań pakietu Office.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-<postActionData>  
-</postActionData>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `postActionData` Element jest opcjonalny i znajduje się w `vstav3` przestrzeni nazw. Istnieje `postActionData` element zdefiniowany w manifeście aplikacji dla każdej akcji po wdrożeniu.  
-  
- `postActions` Element nie ma żadnych atrybutów.  
-  
- `postActions` nie ma elementów podrzędnych.  
-  
-## <a name="post-deployment-action-example"></a>Przykład akcji po wdrożeniu  
-  
-### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje `postAction` elementu w manifeście aplikacji dla rozwiązań pakietu Office wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykładowy kod jest częścią większego przykładu udostępnionego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Kod  
-  
-```xml  
-<vstav3:postActionData>  
-  data in any format  
-</vstav3:postActionData>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postactiondata —&gt; — element (Office development w programie Visual Studio)
+  `postActionData` Elementu `vstav3` przestrzeń nazw określa dane skojarzone z dowolną akcję po wdrożeniu, która jest uruchamiana po zainstalowaniu rozwiązania dla pakietu Office.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+<postActionData>
+</postActionData>
+```
+
+## <a name="elements-and-attributes"></a>Atrybuty i elementy
+ `postActionData` Element jest opcjonalny, a w `vstav3` przestrzeni nazw. Istnieje `postActionData` elementu zdefiniowanego w manifeście aplikacji dla każdej akcji po wdrożeniu.
+
+ `postActions` Element nie ma żadnych atrybutów.
+
+ `postActions` nie ma elementów podrzędnych.
+
+## <a name="post-deployment-action-example"></a>Przykład akcję powdrożeniową
+
+### <a name="description"></a>Opis
+ W poniższym przykładzie kodu pokazano `postAction` elementu w manifeście aplikacji dla rozwiązań pakietu Office, wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Kod
+
+```xml
+<vstav3:postActionData>
+  data in any format
+</vstav3:postActionData>
+```
+
+## <a name="see-also"></a>Zobacz także
+
+- [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

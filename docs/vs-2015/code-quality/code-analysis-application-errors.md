@@ -1,14 +1,10 @@
 ---
-title: Błędy aplikacji analizy kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Błędy aplikacji analizy kodu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +14,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: douge
+ms.openlocfilehash: b85aceae00085e27ac766280f686c04adac52a7e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561715"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +45,7 @@ Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez 
 |[CA0062](ca0062.md)|Reguła "*RuleId*"odwołanie do zestawu reguł"*RuleSetName*" nie został odnaleziony.|
 |[CA0063](ca0063.md)|Nie można załadować pliku zestawu reguł lub jednej z jego plików zestawu reguł zależnych.|
 |[CA0064](ca0064.md)|Analiza nie została wykonana, ponieważ określonego zestawu reguł nie zawiera żadnych reguł programu FxCop.|
-|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: typ "*TypeName*"zawiera właściwość i pole o tej samej nazwie"*PropertyFieldName*"|
+|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: Typ "*TypeName*"zawiera właściwość i pole o tej samej nazwie"*PropertyFieldName*"|
 |[CA0066](ca0066.md)|Wartość "*VersionID*" udostępniane **dla przełącznika/targetframeworkversion** nie jest rozpoznawaną wersją.|
 |[CA0067](ca0067.md)|Nie znaleziono katalogu.|
 |[CA0068](ca0068.md)|Debugowanie nie można odnaleźć informacji dla zestawu docelowego *"AssemblyName"*.|
@@ -57,11 +53,10 @@ Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez 
 |[CA0070](ca0070.md)|Nie można załadować zestawu lub typu z powodu uprawnień zabezpieczeń.|
 |[CA0501](ca0501.md)|Nie można odczytać raportu wyjściowego.|
 |[CA0502](ca0502.md)|Nieobsługiwany język.|
-|[CA0503](ca0503.md))|Właściwość jest deprectated. Używana przez właściwość|
+|[CA0503](ca0503.md)|Właściwość jest przestarzała. Używana przez właściwość|
 |[CA0504](ca0504.md)|Katalog reguł zostało zignorowane, ponieważ nie istnieje|
-|[CA0505](ca0505.md)|Właściwość jest deprectated. Używana przez właściwość|
+|[CA0505](ca0505.md)|Właściwość jest przestarzała. Używana przez właściwość|
 |[Błędy polecenia FxCopCmd](fxcopcmd-errors.md)|Błędy analizy kodu zarządzanego.|
-|[Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)|Sprawdzanie analizy kodu w błędy zasad.|
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 

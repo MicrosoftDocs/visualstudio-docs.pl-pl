@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie diagramów klasy do projektu (Projektant klas)'
+title: 'Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)'
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901301"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684321"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Porady: Dodawanie diagramów klas do projektu
+# <a name="how-to-add-class-diagrams-to-projects"></a>Instrukcje: Dodawanie diagramów klas do projektów
 
 Do projektowania, edytować i refaktoryzować klasy a innymi typami danych, należy dodać diagram klas do projektu C#, Visual Basic lub C++. Aby wyświetlić różne części kodu w projekcie, należy dodać wiele diagramów klas do projektu.
 
@@ -76,8 +76,6 @@ Diagram klas wypełniane automatycznie jest tworzony.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Tworzenie typów za pomocą projektanta klas](how-to-create-types.md)
-- [Porady: wyświetlanie istniejących typów](how-to-view-existing-types.md)
+- [Instrukcje: Tworzenie typów za pomocą projektanta klas](how-to-create-types.md)
+- [Instrukcje: Wyświetlanie istniejących typów](how-to-view-existing-types.md)
 - [Projektowanie i wyświetlanie klas i typów](designing-and-viewing-classes-and-types.md)
-- [Wyświetlanie typów i relacji](viewing-types-and-relationships.md)
-- [Praca z diagramami klas](working-with-class-diagrams.md)

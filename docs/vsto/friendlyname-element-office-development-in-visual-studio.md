@@ -1,6 +1,7 @@
 ---
-title: '&lt;friendlyName&gt; elementu (Office development w Visual Studio)'
-ms.custom: ''
+title: '&lt;friendlyName&gt; — element (Office development w programie Visual Studio)'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,48 +11,48 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <friendlyName> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 26842ab926ed7ef0ea2cfd62bf032c25b2c69d02
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 4ff600e911ba97a437f998726b900dfc8c267ae8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548479"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802462"
 ---
-# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; elementu (Office development w Visual Studio)
-  `friendlyName` Elementu `vstov4` przestrzeni nazw przechowuje nazwę wyświetlaną na liście zainstalowanych programów.  
-  
-## <a name="syntax"></a>Składnia  
-  
+# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; — element (Office development w programie Visual Studio)
+  `friendlyName` Elementu `vstov4` przestrzeni nazw przechowuje nazwę, która jest wyświetlana na liście zainstalowanych programów.
+
+## <a name="syntax"></a>Składnia
+
 ```xml
-<friendlyName>  
-</friendlyName>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `friendlyName` Elementu jest `vstov4` przestrzeni nazw. Wartości wyświetlane na liście zainstalowanych programów na komputerze, a następnie w oknie dialogowym dodatków COM VSTO w aplikacji pakietu Microsoft Office.  
-  
- `friendlyName` Element nie ma atrybutów ani elementów podrzędnych.  
-  
-## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO  
-  
-### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje `friendlyName` element w rozwiązaniu poziomie aplikacji wdrożone przy użyciu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykładowy kod jest częścią większego przykładu udostępnionego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Kod  
-  
-```xml  
-<vstov4:friendlyName>  
-  ContosoOutlookAddIn  
-</vstov4:friendlyName>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
+<friendlyName>
+</friendlyName>
+```
+
+## <a name="elements-and-attributes"></a>Atrybuty i elementy
+ `friendlyName` Element znajduje się w `vstov4` przestrzeni nazw. Wartość jest wyświetlana na liście zainstalowanych programów na komputerze, a następnie w oknie dialogowym dodatków narzędzi VSTO dla modelu COM aplikacji pakietu Microsoft Office.
+
+ `friendlyName` Element nie ma atrybutów lub elementów podrzędnych.
+
+## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+
+### <a name="description"></a>Opis
+ W poniższym przykładzie kodu pokazano `friendlyName` elementu w rozwiązaniu dodatku poziomu aplikacji wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Kod
+
+```xml
+<vstov4:friendlyName>
+  ContosoOutlookAddIn
+</vstov4:friendlyName>
+```
+
+## <a name="see-also"></a>Zobacz także
+
+- [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

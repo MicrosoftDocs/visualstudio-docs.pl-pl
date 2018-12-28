@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab21fa0616b26aeb41f16a911d5834f40479b09d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233478"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648485"
 ---
 # <a name="working-with-xml-data"></a>Praca z danymi XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,16 +65,10 @@ XML i pokrewnych technologiach odgrywają dużą rolę w taki sposób, w danych 
  W tym artykule omówiono sposób debugowania arkuszy stylów, za pomocą debugera programu Visual Studio.  
   
  [Odwołanie do standardów XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
- Zawiera informacje dotyczące technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.  
-  
- [Tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md)  
- Zawiera wyjaśnienie, narzędzi czasu projektowania do tworzenia zestawów danych.  
+ Zawiera informacje dotyczące technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.
   
  [Usługi sieci Web XML w kodzie zarządzanym](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  W tym artykule omówiono sposób tworzenia i wdrażania usług XML sieci Web oraz dostęp do usług XML sieci Web.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

@@ -18,17 +18,17 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670848"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648894"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów
   Narzędzi programistycznych pakietu Office w programie Visual Studio zawierają klasy i projektantów, które obsługują wiele szczegółów implementacji, gdy ich użyć do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionach formularzy programu Outlook w dodatku VSTO. Jednak możesz również wdrożyć *interfejsu rozszerzalności* dla każdej funkcji samodzielnie, jeśli masz specjalne wymagania.  
@@ -47,7 +47,7 @@ ms.locfileid: "50670848"
   
 |Interface|Opis|Aplikacje|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementuje ten interfejs, aby dostosować interfejs użytkownika wstążki. **Uwaga:** można dodać **wstążki (XML)** elementu do projektu, aby wygenerować domyślny <xref:Microsoft.Office.Core.IRibbonExtensibility> implementacji w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementuje ten interfejs, aby dostosować interfejs użytkownika wstążki. **Uwaga:**  Możesz dodać **wstążki (XML)** elementu do projektu, aby wygenerować domyślny <xref:Microsoft.Office.Core.IRibbonExtensibility> implementacji w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implementuje ten interfejs do tworzenia niestandardowego okienka zadań.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implementuje ten interfejs do tworzenia regionów formularzy programu Outlook.|Outlook|  
   
@@ -84,7 +84,7 @@ ms.locfileid: "50670848"
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39;] &#39; | Dokumentacja firmy Microsoft
+title: Oczekiwano ']' | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31975b80764773f16eb4009322b712c06a4ff4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788632"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804354"
 ---
-# <a name="expected-3939"></a>Oczekiwano &#39;] &#39;
-Wprowadzone odniesienie do elementu tablicy, ale nie zawiera prawego nawiasu. Dowolne wyrażenie, które odwołuje się do elementu tablicy musi zawierać zarówno otwierające i zamykające nawiasy kwadratowe.  
+# <a name="expected-"></a>Oczekiwano znaku „]”
+Wprowadzone odniesienie do elementu tablicy, ale nie zawiera nawias zamykający. Dowolne wyrażenie, które odwołuje się do elementu tablicy musi zawierać zarówno otwierające i zamykające nawiasy kwadratowe.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Dodaj prawego nawiasu do wyrażenia, który odwołuje się do elementu tablicy.  
+-   Dodaj prawy nawias kwadratowy do wyrażenia, które odwołuje się do elementu tablicy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)   
- [Array — obiekt](../../javascript/reference/array-object-javascript.md)
+ [Array, obiekt](../../javascript/reference/array-object-javascript.md)

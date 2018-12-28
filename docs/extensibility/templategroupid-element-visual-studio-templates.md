@@ -1,10 +1,9 @@
 ---
-title: TemplateGroupID — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Templategroupid — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91631975d48f6e7e13646c428cdd5b5473bbeed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68e89b0211c64dcee61507afc15c50bd8e5e85d2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560657"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID — Element (szablony Visual Studio)
-Określa, jaki rodzaj projektu szablonów elementów będą widoczne w. Ten element jest istotne, kiedy [ShowByDefault (szablony Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) ma ustawioną wartość `false`. Gdy [ShowByDefault (szablony Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) ma ustawioną wartość `true`, szablon elementu jest dostępna we wszystkich typach projektu.  
+Określa, jakiego typu Projekt szablonów elementów będą widoczne w. Ten element jest istotne, kiedy [ShowByDefault (szablony Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) ustawiono `false`. Gdy [ShowByDefault (szablony Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) jest ustawiona na `true`, a następnie szablon elementu jest dostępny w wszystkich typów projektów.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -49,7 +48,7 @@ Określa, jaki rodzaj projektu szablonów elementów będą widoczne w. Ten elem
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
@@ -59,19 +58,19 @@ Określa, jaki rodzaj projektu szablonów elementów będą widoczne w. Ten elem
 ## <a name="remarks"></a>Uwagi  
  `TemplateGroupID` jest elementem.  
   
- Wartość `TemplateGroupID` element jest używany wraz z rejestracji systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numer wersji >* \Projects\\) Szablony filtru, które pojawiają się w **Dodaj nowy element** okno dialogowe.  
+ Wartość `TemplateGroupID` element jest używany razem z rejestracji systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numer wersji >* \Projects\\) Filtr szablonów, które pojawiają się w **Dodaj nowy element** okno dialogowe.  
   
 |Visual C++ wartość|Znaczenie|  
 |------------------------|-------------|  
-|VC natywne|Używany dla projektów natywnych. Również domyślny, jeśli nie można określić typu projektu.|  
-|Zarządzane VC|Używany do zarządzanego (/ clr) projektów|  
-|VC Windows|Używane dla wszystkich projektów przeznaczonych dla platformy systemu windows (macierzysty/managed/magazyn)|  
-|WinRT-Native-UAP|Używane w przypadku projektów Sklepu Windows 10|  
-|CodeSharing natywne|Używane w przypadku projektów elementu Shared|  
-|WinRT-Native-6.3|Używane w przypadku projektów Sklepu Windows 8.1|  
-|WinRT-Native-Phone-6.3|Używane w przypadku projektów Windows Phone 8.1|  
-|Natywne WinRT|Używane w przypadku projektów Sklepu Windows 8.0|  
-|VC Android|Używane w przypadku projektów dla systemu Android|  
+|Natywne VC|Używany do natywnych projektów. Również domyślnie, jeśli nie można ustalić typu projektu.|  
+|Zarządzane VC|Używane dla zarządzanych (/ clr) projektów|  
+|Windows VC|Używane dla wszystkich projektów, których platformą docelową będzie system windows (natywnego/zarządzanego/magazyn)|  
+|WinRT-Native-UAP|Używane w projektach magazynu systemu Windows 10|  
+|Natywne CodeSharing|Używane w projektach elementu Shared|  
+|WinRT Native 6.3|Używane w projektach Store Windows 8.1|  
+|WinRT Native-Phone-6.3|Używany do projektów Windows Phone 8.1|  
+|Natywne WinRT|Używany do projektów Windows 8.0 Store|  
+|System Android VC|Używane w projektach systemu Android|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Szybki Start: Tworzenie pierwszej aplikacji Vue.js'
+title: 'Szybki start: Utwórz swoją pierwszą aplikację Vue.js'
 description: W tym przewodniku Szybki Start utworzysz aplikację Vue.js w programie Visual Studio przy użyciu narzędzia Node.js dla programu Visual Studio
 ms.custom: seodec18
 ms.date: 09/24/2018
@@ -15,14 +15,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058954"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441486"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji Vue.js
+# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki start: Utwórz swoją pierwszą aplikację Vue.js przy użyciu programu Visual Studio
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut możesz utworzyć i uruchomić prostą aplikację sieci web Vue.js. Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) strony, aby zainstalować go za darmo.
 
@@ -35,13 +35,13 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 
 1. Jeśli nie masz już zainstalowane środowisko uruchomieniowe Node.js, należy zainstalować wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web.
 
-    Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie zostanie wykryta zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
+    Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli go nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
 
 1. Otwórz program Visual Studio 2017.
 
 1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-1. W **nowy projekt** okno dialogowe, w obszarze **JavaScript** > **Node.js** lub **TypeScript**  >   **Node.js**, wybierz **Podstawowa aplikacja sieci Web Vue.js**, a następnie wprowadź nazwę projektu, a następnie kliknij przycisk **OK**.
+1. W **nowy projekt** okno dialogowe, w obszarze **JavaScript** > **Node.js** lub **TypeScript**  >   **Node.js**, wybierz **Podstawowa aplikacja sieci Web Vue.js**. Wprowadź nazwę projektu, a następnie kliknij przycisk **OK**.
 
      ![Szablon VUE.js](../javascript/media/vuejs-template.png)
 
@@ -75,7 +75,7 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Dodaj plik .vue do projektu
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy dowolny folder takich jak *src* folder, a następnie wybierz **Dodaj** > **nowy element**.
+1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy dowolny folder takich jak *src/components* folder, a następnie wybierz **Dodaj** > **nowy element**.
 
 1. Wybierz opcję **JavaScript Vue pojedynczy plik składnika** lub **TypeScript Vue pojedynczy plik składnika**, a następnie kliknij przycisk **Dodaj**.
 
@@ -85,7 +85,7 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 
 1. (Tylko projekt TypeScript) W programie Visual Studio, wybierz **kompilacji** > **czyste rozwiązanie**.
 
-1. Następnie wybierz pozycję **kompilacji** > **Kompiluj rozwiązanie** do skompilowania projektu. Sprawdź **dane wyjściowe** okno, aby wyświetlić wyniki kompilacji.
+1. Następnie wybierz pozycję **kompilacji** > **Kompiluj rozwiązanie** do skompilowania projektu. Sprawdź **dane wyjściowe** okno, aby wyświetlić wyniki kompilacji, a następnie wybierz **kompilacji** z **Pokaż dane wyjściowe z** listy.
 
     Szablon projektu Vue.js używa `build` zdarzenie kompilacji npm skryptu, konfigurując wpis. Jeśli chcesz zmodyfikować to ustawienie, otwórz plik projektu (*\<projectname\>.njsproj*) z Eksploratora Windows i znajdź ten wiersz kodu:
 
@@ -105,7 +105,7 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 
 1. Zamknij przeglądarkę sieci web.
 
-Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że przedstawianymi nieco o korzystaniu z programu Visual Studio IDE z Vue.js. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek z **samouczki** części spisu treści.
+Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że przedstawianymi nieco o korzystaniu z programu Visual Studio IDE z Vue.js. Jeśli chcesz delve głębiej do jego możliwości, kontynuować samouczek z **samouczki** części spisu treści.
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: a00ae51514f650ca8c166ba24e626838f003119c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ed8d162d3b4cde48515986c475563e368a5946bf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065334"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803109"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Korzystanie z kreatora publikacji aplikacji platformy Azure programu Visual Studio
 
@@ -95,7 +95,7 @@ Konto usługi Azure storage przechowuje pakietu dla wdrożenia aplikacji. Po wdr
 
 ![Ustawienia diagnostyki](./media/vs-azure-tools-publish-azure-application-wizard/diagnostic-settings.png)
 
-Diagnostyka umożliwia rozwiązywanie problemów z usługą w chmurze platformy Azure (lub maszyn wirtualnych platformy Azure). Aby uzyskać informacje o diagnostyce, zobacz [Konfigurowanie diagnostyki dla usług Azure Cloud Services i Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Aby uzyskać informacje na temat usługi Application Insights, zobacz [co to jest usługa Application Insights?](/azure/application-insights/app-insights-overview.md).
+Diagnostyka umożliwia rozwiązywanie problemów z usługą w chmurze platformy Azure (lub maszyn wirtualnych platformy Azure). Aby uzyskać informacje o diagnostyce, zobacz [Konfigurowanie diagnostyki dla usług Azure Cloud Services i Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Aby uzyskać informacje na temat usługi Application Insights, zobacz [co to jest usługa Application Insights?](/azure/application-insights/app-insights-overview).
 
 ## <a name="summary-page"></a>Strona podsumowania
 
@@ -122,4 +122,4 @@ Po skonfigurowaniu wszystkich ustawień dla wdrażania projektu, wybierz **Publi
 
 - [Konfigurowanie diagnostyki dla usług Azure Cloud Services i Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
-- [Co to jest usługa Application Insights?](/azure/application-insights/app-insights-overview.md)
+- [Co to jest usługa Application Insights?](/azure/application-insights/app-insights-overview)

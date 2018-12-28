@@ -1,6 +1,7 @@
 ---
-title: Wyświetlanie plików dll i pliki wykonywalne w oknie moduły | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+title: Wyświetlanie plików dll i plików wykonywalnych
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296271"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443928"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window"></a>Wyświetlanie plików dll i pliki wykonywalne w oknie modułów
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Wyświetlanie plików dll i pliki wykonywalne w oknie modułów (C#, C++, Visual Basic F#)
  
 Podczas debugowania programu Visual Studio, **modułów** okno wyświetla i zawiera informacje o bibliotekach DLL i plików wykonywalnych (*.exe* pliki) używany przez aplikację. 
 
@@ -41,7 +42,7 @@ Podczas debugowania programu Visual Studio, **modułów** okno wyświetla i zawi
   
 ## <a name="use-the-modules-window"></a>Korzystanie z okna modułów
 
-Aby otworzyć okno modułów podczas debugowania, wybierz **debugowania** > **Windows** > **modułów**. 
+Aby otworzyć okno modułów podczas debugowania, wybierz **debugowania** > **Windows** > **modułów** (lub naciśnij **Ctrl + Alt + U** ). 
   
 Domyślnie **modułów** okna sortuje moduły według kolejności ładowania. Aby sortować według dowolnej kolumny okna, wybierz nagłówek w górnej części kolumny.  
   

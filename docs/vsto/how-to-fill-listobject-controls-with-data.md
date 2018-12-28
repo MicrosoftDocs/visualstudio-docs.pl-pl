@@ -1,5 +1,5 @@
 ---
-title: 'Porady: formanty wypełnienia ListObject danymi'
+title: 'Instrukcje: Wypełnianie formantów ListObject danymi'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,61 +15,61 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 - data binding, ListObject controls
 - worksheets, populating with data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9e255d4099a90173b9dbc7ff6fd7b2225d0622d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: cafaaebeea2a6fd5d4c750e89e90747da28b254d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255707"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646692"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Porady: formanty wypełnienia ListObject danymi
-  Powiązanie danych można użyć jako sposób, aby szybko dodać dane do dokumentu. Po powiązaniu danych na obiekt listy, możesz odłączyć obiekt listy są wyświetlane dane, ale nie jest już powiązany ze źródłem danych.  
+# <a name="how-to-fill-listobject-controls-with-data"></a>Instrukcje: Wypełnianie formantów ListObject danymi
+  Powiązanie danych można użyć jako sposób, aby szybko dodać dane do dokumentu. Po powiązaniu danych na obiekt listy, możesz odłączyć na obiekt listy, wyświetla dane, ale nie jest już powiązany ze źródłem danych.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak: utworzyć listę w programie Excel, który jest połączony z listy programu SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Utwórz listę w programie Excel, która jest połączona z listą programu SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
-### <a name="to-bind-data-to-a-listobject-control"></a>Wiązanie danych do formantu ListObject  
+### <a name="to-bind-data-to-a-listobject-control"></a>Aby powiązać dane do formantu ListObject  
   
 1.  Utwórz <xref:System.Data.DataTable> na poziomie klasy.  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]  
   
-2.  Dodawanie kolumn próbki i dane w `Startup` obsługi zdarzeń `Sheet1` klasy (w projektach na poziomie dokumentu) lub `ThisAddIn` klasy (w projektach na poziomie aplikacji).  
+2.  Dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku poziomu aplikacji).  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]  
   
-3.  Wywołanie <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> — metoda i przekaż nazwy kolumn w kolejności, powinien zostać wyświetlony. Kolejność kolumn w obiekcie listy może się różnić od kolejności, w jakiej występują w <xref:System.Data.DataTable>.  
+3.  Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Kolejność kolumn w obiekcie listy mogą różnić się od kolejności, w jakiej występują w <xref:System.Data.DataTable>.  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]  
   
-### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>Aby odłączyć ListObject — formant ze źródła danych  
+### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>Aby odłączyć kontrolki ListObject ze źródła danych  
   
-1.  Wywołanie <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metody `List1`.  
+1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metody `List1`.  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]  
   
-## <a name="compile-the-code"></a>Kompilowanie kodu  
- Ten przykład kodu zakłada masz istniejącą <xref:Microsoft.Office.Tools.Excel.ListObject> o nazwie `list1` w arkuszu, w której znajduje się ten kod.  
+## <a name="compile-the-code"></a>Skompilować kod  
+ Ten przykład kodu zakłada, masz istniejącą <xref:Microsoft.Office.Tools.Excel.ListObject> o nazwie `list1` w arkuszu, w której występuje ten kod.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Porady: kolumn mapy ListObject do danych](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Instrukcje: Mapowanie kolumn ListObject do danych](../vsto/how-to-map-listobject-columns-to-data.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject — formant](../vsto/listobject-control.md)   
- [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Porady: zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Porady: zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Instrukcje: Zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Instrukcje: Zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

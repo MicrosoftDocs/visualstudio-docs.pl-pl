@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie formantów zakładek do dokumentów programu Word'
+title: 'Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33afb16b9862f418f4d661bb5432ea4bb3866f16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878612"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647793"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Porady: dodawanie formantów zakładek do dokumentów programu Word
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word
   W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów dowolnego otwartego dokumentu w czasie wykonywania.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -135,6 +135,6 @@ ms.locfileid: "49878612"
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Porady: zmiana rozmiaru formantów zakładki](../vsto/how-to-resize-bookmark-controls.md)  
+ [Instrukcje: Zmiana rozmiaru formantów zakładki](../vsto/how-to-resize-bookmark-controls.md)  
   
   

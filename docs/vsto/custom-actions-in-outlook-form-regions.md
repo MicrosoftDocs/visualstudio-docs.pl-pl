@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e2ad8e1c3b55d479cb031fe920e3027dbc1788c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671069"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441663"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
   Akcje wyświetlanie przycisków, które umożliwiają użytkownikom odpowiedzieć na element programu Microsoft Office Outlook. Na przykład, aby odpowiedzieć elementu poczty, użytkownik kliknie **odpowiedzi**, **Odpowiedz wszystkim**, lub **do przodu** przyciski akcji. Każda z tych akcji tworzy nowy element poczty i wypełni pola elementu przy użyciu informacji z oryginalnego elementu.  
@@ -56,7 +56,7 @@ ms.locfileid: "50671069"
   
 ## <a name="see-also"></a>Zobacz także  
  [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)   
- [Wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

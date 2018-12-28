@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7a4475cba023f792c2ff96895eb4dd7e0b4ebcf5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d14db3c10fb9e656596e89a43e75b765b67aa7c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050217"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804529"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak używać narzędzia CTest dla języka C++ w programie Visual Studio
 
-CMake (co obejmuje narzędzia CTest) jest zintegrowana w środowisku IDE programu Visual Studio domyślnie jako część **Develoment pulpitu za pomocą języka C++** obciążenia. Jeśli musisz zainstalować go na komputerze, Otwórz program Instalator programu Visual Studio, kliknij pozycję **Modyfikuj** przycisk, a następnie sprawdź [narzędzia CMake w języku Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) pod listą składników obciążenia.
+CMake (co obejmuje narzędzia CTest) jest zintegrowana w środowisku IDE programu Visual Studio domyślnie jako część **programowanie aplikacji klasycznych w języku C++** obciążenia. Jeśli musisz zainstalować go na komputerze, Otwórz program Instalator programu Visual Studio, kliknij pozycję **Modyfikuj** przycisk, a następnie sprawdź [narzędzia CMake w języku Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) pod listą składników obciążenia.
 
 ## <a name="to-write-tests"></a>Do pisania testów
 
@@ -26,7 +26,7 @@ Obsługa CMake w programie Visual Studio nie obejmują systemu projektu programu
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>Aby uruchomić testy (Visual Studio 2017 w wersji 15.6)
 
-W programie Visual Studio 2017 w wersji 15.6 narzędzia CTest jest w pełni zintegrowana z **Eksplorator testów** i obsługuje także jednostki Google i zwiększenie wydajności, testowanie struktur. Te struktury są domyślnie dołączone jako składników w **Develoment pulpitu za pomocą języka C++** obciążenia. Jednak w przypadku uaktualniania projektu ze starszej wersji programu Visual Studio, może być konieczne zainstalowanie tych środowisk przy użyciu programu Instalatora programu Visual Studio.
+W programie Visual Studio 2017 w wersji 15.6 narzędzia CTest jest w pełni zintegrowana z **Eksplorator testów** i obsługuje także jednostki Google i zwiększenie wydajności, testowanie struktur. Te struktury są domyślnie dołączone jako składników w **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak w przypadku uaktualniania projektu ze starszej wersji programu Visual Studio, może być konieczne zainstalowanie tych środowisk przy użyciu programu Instalatora programu Visual Studio.
 
 Na poniższej ilustracji przedstawiono wyniki narzędzia CTest uruchamiane przy użyciu framework platformy Google Test:
 

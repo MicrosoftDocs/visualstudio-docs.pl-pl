@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie diagnostyki dla usług Azure Cloud Services i virtual machines | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak skonfigurować diagnostykę dla debugowania cloude platformy Azure, usług i maszyn wirtualnych (VM) w programie Visual Studio.
+description: Dowiedz się, jak skonfigurować diagnostykę dla debugowania usług Azure cloud services i maszyn wirtualnych (VM) w programie Visual Studio.
 author: mikejo5000
 manager: douge
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 4448825c5d443887833a405aab14d2243a0e5216
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f767d293d2b50dff1cdbe6fb92ee20a89798432e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003625"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803180"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 Gdy zachodzi potrzeba Rozwiązywanie problemów z usługą w chmurze platformy Azure lub maszynie wirtualnej, można użyć programu Visual Studio na łatwiejsze konfigurowanie diagnostyki platformy Azure. Diagnostyka przechwytuje dane systemu i rejestrowania danych na maszynach wirtualnych i wystąpień maszyn wirtualnych, które są uruchamiane usługi w chmurze. Dane diagnostyczne jest przekazywany do wybranego konta magazynu. Aby uzyskać więcej informacji o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -70,28 +70,28 @@ W programie Visual Studio może zbierać dane diagnostyczne dla ról, które dzi
 
 1. W menu skrótów dla roli, wybierz **właściwości**. W tej roli **właściwości** okno dialogowe, wybierz opcję **konfiguracji** kartę.
 2. W **diagnostyki** sekcji, upewnij się, że **Włącz diagnostykę** pole wyboru jest zaznaczone.
-   
+
     ![Dostęp do opcji Włącz diagnostykę](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
 3. Aby określić konto magazynu dla danych diagnostycznych, wybierz przycisk wielokropka (...).
-   
+
     ![Określ konto magazynu do użycia](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
 4. W **utworzyć parametry połączenia magazynu** okna dialogowego należy określić, czy chcesz nawiązać połączenie przy użyciu emulatora usługi Azure storage, subskrypcję platformy Azure, lub ręcznie wprowadzić poświadczenia.
-   
+
     ![Okno dialogowe konta magazynu](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
-   
+
    * Jeśli wybierzesz **emulator usługi Microsoft Azure storage**, ciąg połączenia jest ustawiona na `UseDevelopmentStorage=true`.
    * Jeśli wybierzesz **subskrypcji**, wybierz subskrypcję platformy Azure, którego chcesz używać i wprowadź nazwę konta. Aby zarządzać subskrypcjami platformy Azure, wybierz pozycję **Zarządzanie kontami**.
    * Jeśli wybierzesz **ręcznie wprowadzić poświadczenia**, wprowadź nazwę i klucz konta platformy Azure, którego chcesz używać.
-5. Aby wyświetlić **konfiguracji diagnostyki** okno dialogowe, wybierz opcję **Konfiguruj**. Z wyjątkiem **ogólne** i **katalogi dzienników**, każda karta reprezentuje źródło danych diagnostyki, które można zbierać. Wartość domyślna **ogólne** kartę oferuje następujące diagnostyki opcji zbierania danych: **tylko błędy**, **wszystkie informacje**, i **niestandardowy plan**. Wartość domyślna **tylko błędy** opcja przy użyciu najmniejszą ilością miejsca, ponieważ nie transferu, ostrzeżenia i komunikaty dotyczące śledzenia. **Wszystkie informacje** opcji przesyła najwięcej informacji, używa najwięcej pamięci masowej i dlatego jest to opcja najbardziej kosztowne.
+5. Aby wyświetlić **konfiguracji diagnostyki** okno dialogowe, wybierz opcję **Konfiguruj**. Z wyjątkiem **ogólne** i **katalogi dzienników**, każda karta reprezentuje źródło danych diagnostyki, które można zbierać. Wartość domyślna **ogólne** kartę oferuje następujące diagnostyki opcji zbierania danych: **Tylko błędy**, **wszystkie informacje**, i **niestandardowy plan**. Wartość domyślna **tylko błędy** opcja przy użyciu najmniejszą ilością miejsca, ponieważ nie transferu, ostrzeżenia i komunikaty dotyczące śledzenia. **Wszystkie informacje** opcji przesyła najwięcej informacji, używa najwięcej pamięci masowej i dlatego jest to opcja najbardziej kosztowne.
 
    > [!NOTE]
    > Minimalny rozmiar obsługiwanych "Dysku limitu przydziału w MB" wynosi 4GB. Jednak przypadku zbierania zrzutów pamięci zwiększyć to wyższej wartości, np. 10GB.
    >
-  
+
     ![Włącz diagnostykę platformy Azure i Konfiguracja](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. W tym przykładzie wybierz **niestandardowy plan** opcji, dzięki czemu możesz dostosować zebranych danych.
 7. W **przydział dysku w MB** pole, można ustawić ilości wykorzystanego miejsca można przydzielić na koncie usługi storage dla danych diagnostycznych. Można zmienić lub zaakceptuj wartość domyślną.
-8. Na każdej karcie danych diagnostycznych, które mają być zbierane, wybierz **Włączanie przekazywania \<typ dziennika\>**  pole wyboru. Na przykład, jeśli chcesz zbierać Dzienniki aplikacji na **Dzienniki aplikacji** zaznacz **Włączanie przekazywania dzienników aplikacji** pole wyboru. Ponadto określ wszelkie inne informacje wymagane przez każdego typu danych diagnostycznych. Aby uzyskać informacje o konfiguracji dla każdej z kart, zobacz sekcję **konfigurowania źródeł danych diagnostycznych** w dalszej części tego artykułu. 
+8. Na każdej karcie danych diagnostycznych, które mają być zbierane, wybierz **Włączanie przekazywania \<typ dziennika\>**  pole wyboru. Na przykład, jeśli chcesz zbierać Dzienniki aplikacji na **Dzienniki aplikacji** zaznacz **Włączanie przekazywania dzienników aplikacji** pole wyboru. Ponadto określ wszelkie inne informacje wymagane przez każdego typu danych diagnostycznych. Aby uzyskać informacje o konfiguracji dla każdej z kart, zobacz sekcję **konfigurowania źródeł danych diagnostycznych** w dalszej części tego artykułu.
 9. Po włączeniu zbierania danych diagnostycznych chcesz, aby wybrać **OK**.
 10. Uruchom projekt usługi w chmurze platformy Azure w programie Visual Studio w zwykły sposób. Ponieważ korzystać z aplikacji, informacje dziennika, które zostały włączone są zapisywane do konta usługi Azure storage, który określiłeś.
 
@@ -103,32 +103,32 @@ W programie Visual Studio może zbierać dane diagnostyczne maszyn wirtualnych p
 1. W Eksploratorze serwera wybierz węzeł platformy Azure, a następnie połącz się z subskrypcją platformy Azure, jeśli jeszcze nie zostało nawiązane.
 2. Rozwiń **maszyn wirtualnych** węzła. Możesz utworzyć nową maszynę wirtualną lub wybierz istniejący węzeł.
 3. W menu skrótów dla maszyny wirtualnej, należy wybrać **Konfiguruj**. Zostanie wyświetlone okno dialogowe konfiguracji maszyny wirtualnej.
-   
+
     ![Skonfiguruj maszynę wirtualną platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
 4. Jeśli nie jest jeszcze zainstalowany, należy dodać rozszerzenie diagnostyki agenta monitorowania Microsoft. Za pomocą tego rozszerzenia można zbierać dane diagnostyczne dla maszyny wirtualnej platformy Azure. W obszarze **zainstalowane rozszerzenia**w **Wybierz dostępne rozszerzenie** polu listy rozwijanej wybierz **diagnostyki agenta monitorowania Microsoft**.
-   
+
     ![Instalowanie rozszerzenia maszyny wirtualnej platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
-   
+
     > [!NOTE]
    > Inne rozszerzenia diagnostyki są dostępne dla maszyn wirtualnych. Aby uzyskać więcej informacji, zobacz [rozszerzeń maszyn wirtualnych i funkcji dla Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
-   > 
-   > 
+   >
+   >
 5. Aby dodać rozszerzenie i wyświetl jego **konfiguracji diagnostyki** okno dialogowe, wybierz opcję **Dodaj**.
 6. Aby określić konto magazynu, zaznacz **Konfiguruj**, a następnie wybierz pozycję **OK**.
-   
+
     Każda karta (z wyjątkiem **ogólne** i **katalogi dzienników**) reprezentuje źródło danych diagnostyki, które można zbierać.
-   
+
     ![Włącz diagnostykę platformy Azure i Konfiguracja](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
-   
-    Na karcie domyślnej **ogólne**, oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje**, i **niestandardowy plan**. Opcja domyślna **tylko błędy**, przyjmuje najmniejszą ilością miejsca, ponieważ nie transferu, ostrzeżenia i komunikaty dotyczące śledzenia. **Wszystkie informacje** opcji przekazuje najbardziej informacje i dlatego jest opcja najbardziej kosztowne pod względem magazynu.
+
+    Na karcie domyślnej **ogólne**, oferuje następujące opcje zbierania danych diagnostycznych: **Tylko błędy**, **wszystkie informacje**, i **niestandardowy plan**. Opcja domyślna **tylko błędy**, przyjmuje najmniejszą ilością miejsca, ponieważ nie transferu, ostrzeżenia i komunikaty dotyczące śledzenia. **Wszystkie informacje** opcji przekazuje najbardziej informacje i dlatego jest opcja najbardziej kosztowne pod względem magazynu.
 7. W tym przykładzie wybierz **niestandardowy plan** opcji, dzięki czemu możesz dostosować dane zbierane.
 8. **Przydział dysku w MB** pole określa ilość miejsca, które mają zostać przydzielone na koncie usługi storage dla danych diagnostycznych. Jeśli chcesz, możesz zmienić wartość domyślną.
 9. Na każdej karcie danych diagnostycznych, które mają być zbierane, wybierz jego **Włączanie przekazywania \<typ dziennika\>**  pole wyboru.
-   
+
     Na przykład jeśli chcesz zbierać Dzienniki aplikacji, wybierz pozycję **Włączanie przekazywania dzienników aplikacji** pole wyboru na **Dzienniki aplikacji** kartę. Ponadto określ wszelkie inne informacje, które są wymagane dla każdego typu danych diagnostycznych. Aby uzyskać informacje o konfiguracji dla każdej z kart, zobacz sekcję **konfigurowania źródeł danych diagnostycznych** w dalszej części tego artykułu.
 10. Po włączeniu kolekcji wszystkich danych diagnostycznych, które chcesz zaznaczyć **OK**.
 11. Zapisz zaktualizowany projekt.
-    
+
     Wiadomości w **dziennik aktywności platformy Microsoft** okno wskazuje, czy maszyna wirtualna została zaktualizowana.
 
 ## <a name="set-up-diagnostics-data-sources"></a>Konfigurowanie źródła danych diagnostycznych
@@ -195,7 +195,7 @@ Procesy obecnie śledzone są wymienione na następnym zrzucie ekranu. Zaznacz p
 
 ![Zrzuty awaryjne](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Aby uzyskać więcej informacji, zobacz [przejąć kontrolę nad rejestrowanie i śledzenie na platformie Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) i [Microsoft Azure Diagnostics część 4: składników rejestrowanie niestandardowych i zmiany Azure Diagnostyka 1.3](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
+Aby uzyskać więcej informacji, zobacz [przejąć kontrolę nad rejestrowanie i śledzenie na platformie Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) i [Microsoft Azure Diagnostics część 4: Rejestrowanie niestandardowe składniki i zmiany Azure Diagnostyka 1.3](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Wyświetl dane diagnostyczne
 Po po zebraniu danych diagnostycznych dotyczących usługi w chmurze lub maszyny wirtualnej, można je wyświetlić.
@@ -203,20 +203,20 @@ Po po zebraniu danych diagnostycznych dotyczących usługi w chmurze lub maszyny
 ### <a name="to-view-cloud-service-diagnostics-data"></a>Aby wyświetlić dane diagnostyki usługi w chmurze
 1. Wdrażanie usługi w chmurze w zwykły sposób, a następnie uruchom go.
 2. Mogą wyświetlać dane diagnostyczne w raporcie, który generuje programie Visual Studio lub w tabelach, w ramach konta magazynu. Aby wyświetlić dane w raporcie, otwórz Eksploratora chmury lub Eksploratora serwera, otwórz menu skrótów węzła dla roli, a następnie wybierz **widoku danych diagnostycznych**.
-   
+
     ![Wyświetl dane diagnostyczne](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748912.png)
-   
+
     Zostanie wyświetlony raport, który pokazuje dostępne dane.
-   
+
     ![Microsoft Azure Diagnostics raportu w programie Visual Studio](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
-   
+
     Najnowsze dane nie jest widoczne, trzeba czekać na okres transfer może upłynąć.
-   
+
     Aby natychmiast zaktualizować dane, wybierz **Odśwież** łącza. Aby dane aktualizowane automatycznie, wybierz interwał w **automatyczne odświeżanie** pole listy rozwijanej. Aby wyeksportować dane błędu, wybierz **Eksportuj do pliku CSV** przycisk, aby utworzyć plik wartości rozdzielanych przecinkami, które można otworzyć w arkuszu programu Excel.
-   
+
     W programie Cloud Explorer lub w Eksploratorze serwera należy otworzyć konto magazynu, która jest skojarzona z wdrożenia.
-3. Otwórz w tabelach diagnostycznych w podglądzie tabeli, a następnie przejrzyj dane, które zostały zebrane. Dzienniki usług IIS i niestandardowe dzienniki można otworzyć kontenera obiektów blob. W poniższej tabeli wymieniono tabele lub kontenery obiektów blob, które zawierają dane dla różnych plikach dziennika. Oprócz danych dla tego pliku dziennika zawiera wpisy tabeli **EventTickCount**, **DeploymentId**, **roli**, i **RoleInstance** , aby pomóc w zidentyfikowaniu, które maszyny wirtualnej i roli wygenerowanych danych i kiedy. 
-   
+3. Otwórz w tabelach diagnostycznych w podglądzie tabeli, a następnie przejrzyj dane, które zostały zebrane. Dzienniki usług IIS i niestandardowe dzienniki można otworzyć kontenera obiektów blob. W poniższej tabeli wymieniono tabele lub kontenery obiektów blob, które zawierają dane dla różnych plikach dziennika. Oprócz danych dla tego pliku dziennika zawiera wpisy tabeli **EventTickCount**, **DeploymentId**, **roli**, i **RoleInstance** , aby pomóc w zidentyfikowaniu, które maszyny wirtualnej i roli wygenerowanych danych i kiedy.
+
    | Dane diagnostyczne | Opis | Lokalizacja |
    | --- | --- | --- |
    | Dzienniki aplikacji |Dzienniki generowane przez kod przez wywołanie metody **System.Diagnostics.Trace** klasy. |WADLogsTable |
@@ -232,15 +232,15 @@ Po po zebraniu danych diagnostycznych dotyczących usługi w chmurze lub maszyny
 
 ### <a name="to-view-virtual-machine-diagnostics-data"></a>Aby wyświetlić dane diagnostyczne maszyny wirtualnej
 1. W menu skrótów dla maszyny wirtualnej wybierz **dane diagnostyczne widoku**.
-   
+
     ![Wyświetl dane diagnostyczne w maszynie wirtualnej platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766027.png)
-   
+
     **Souhrn Diagnostiky** pojawi się okno dialogowe.
-   
-    ![Souhrn diagnostiky maszyny wirtualnej platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)  
-   
+
+    ![Souhrn diagnostiky maszyny wirtualnej platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
+
     Najnowsze dane nie jest widoczne, trzeba czekać na okres transfer może upłynąć.
-   
+
     Aby natychmiast zaktualizować dane, wybierz **Odśwież** łącza. Aby dane aktualizowane automatycznie, wybierz interwał w **automatyczne odświeżanie** pole listy rozwijanej. Aby wyeksportować dane błędu, wybierz **Eksportuj do pliku CSV** przycisk, aby utworzyć plik wartości rozdzielanych przecinkami, które można otworzyć w arkuszu programu Excel.
 
 ## <a name="set-up-cloud-service-diagnostics-after-deployment"></a>Konfigurowanie diagnostyki usługi w chmurze po wdrożeniu
@@ -248,12 +248,12 @@ Jeśli badasz problem z usługą w chmurze, która jest już uruchomiona, można
 
 ### <a name="to-set-up-diagnostics-for-a-running-cloud-service"></a>Aby skonfigurować diagnostykę dla uruchomionej usługi w chmurze
 1. W oknie Eksploratora serwera rozwiń **usług w chmurze** węzła, a następnie rozwiń listę węzłów, aby zlokalizować rolę wystąpienia (i/lub), którą chcesz zbadać.
-   
+
     ![Konfigurowanie diagnostyki](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748913.png)
 2. W menu skrótów dla węzła wystąpienia lub węzeł roli wybierz **aktualizacji ustawień diagnostycznych**, a następnie wybierz pozycję Ustawienia diagnostyczne, które mają być zbierane.
-   
+
     Aby uzyskać informacje o ustawieniach konfiguracji, zobacz sekcję **konfigurowania źródeł danych diagnostycznych** w tym artykule. Aby dowiedzieć się, jak wyświetlać dane diagnostyczne, zobacz sekcję **wyświetlać dane diagnostyczne** w tym artykule.
-   
+
     Jeśli zmienisz zbierania danych w Eksploratorze serwera, zmiany obowiązują do momentu, w pełni ponownie wdrożyć usługę w chmurze. Jeśli użytkownik korzysta z domyślnych ustawień publikowania, zmiany nie zostaną zastąpione. Domyślne ustawienie publikowania jest, aby zaktualizować istniejące wdrożenie, a nie robić pełne ponowne wdrożenie. Aby upewnić się, że ustawienia wyczyść w czasie wdrażania, przejdź do **Zaawansowane ustawienia** kartę w Kreatorze publikacji, a następnie wyczyść **wdrożenia aktualizacji** pole wyboru. Podczas ponownego wdrażania za pomocą tego pola wyboru wyczyszczone przywrócone do tych w pliku .wadcfgx (lub .wadcfg) według stawki ustalonej przez **właściwości** edytora dla roli. Jeśli zaktualizujesz wdrożenia, Azure przechowuje wcześniejsze ustawienia.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Rozwiązywanie problemów z usługami w chmurze platformy Azure
@@ -273,8 +273,8 @@ Okres transferu to ilość czasu, który przechwytuje upłynie między danymi. P
 Sygnatury czasowe znajdują się w lokalnej strefie czasowej centrum danych, który jest hostem usługi w chmurze. Używane są następujące trzy godziny sygnatury kolumny w tabelach dziennika:
 
 * **PreciseTimeStamp**: ETW sygnatura czasowa zdarzenia. Oznacza to, że czas zdarzenie jest rejestrowane przez klienta.
-* **Sygnatura CZASOWA**: wartość **PreciseTimeStamp** zaokrąglone w dół do granic częstotliwość przekazywania. Na przykład częstotliwość usługi przekazywania jest 5 minut i zdarzenia, czas 00:17:12, znacznik czasu: czy 00:15:00.
-* **Sygnatura czasowa**: sygnatura czasowa, w której jednostka została utworzona w tabeli platformy Azure.
+* **SYGNATURA CZASOWA**: Wartość **PreciseTimeStamp** zaokrąglone w dół do granic częstotliwość przekazywania. Na przykład częstotliwość usługi przekazywania jest 5 minut i zdarzenia, czas 00:17:12, znacznik czasu: czy 00:15:00.
+* **Sygnatura czasowa**: Sygnatura czasowa, w której jednostka została utworzona w tabeli platformy Azure.
 
 **Jak zarządzać kosztami, podczas zbierania informacji diagnostycznych?**
 
@@ -288,7 +288,7 @@ Domyślnie usługi IIS nie zbiera dzienniki żądanie nie powiodło się. Można
 
 Metody **RoleEntryPoint** są wywoływane w kontekście WAIISHost.exe nie w usługach IIS. Informacje o konfiguracji w pliku web.config, który normalnie umożliwia włączenie śledzenia nie ma zastosowania. Aby rozwiązać ten problem, Dodaj plik .config do projektu roli sieci web i nazwę pliku na zgodną z zestawu danych wyjściowych, który zawiera **RoleEntryPoint** kodu. W projekcie roli sieć web domyślna nazwa pliku .config powinien być WAIISHost.exe.config. Dodaj następujące wiersze do tego pliku:
 
-```
+```xml
 <system.diagnostics>
   <trace>
       <listeners>
@@ -303,5 +303,4 @@ Metody **RoleEntryPoint** są wywoływane w kontekście WAIISHost.exe nie w usł
 W **właściwości** oknie **Kopiuj do katalogu wyjściowego** właściwości **zawsze Kopiuj**.
 
 ## <a name="next-steps"></a>Następne kroki
-Aby dowiedzieć się więcej o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie diagnostyki w usługach Azure Cloud Services i virtual machines](/azure/cloud-services/cloud-services-dotnet-diagnostics.md) i [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
-
+Aby dowiedzieć się więcej o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie diagnostyki w usługach Azure Cloud Services i virtual machines](/azure/cloud-services/cloud-services-dotnet-diagnostics) i [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).

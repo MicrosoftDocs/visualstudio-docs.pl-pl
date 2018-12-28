@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966534"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425776"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Porady: generowanie danych metryk kodu
+# <a name="how-to-generate-code-metrics-data"></a>Instrukcje: Generowanie danych metryk kodu
 
 Można wygenerować wyniki metryki kodu dla co najmniej jeden projekt lub całe rozwiązanie. Metryki kodu jest dostępna w środowisku opracowywanie interakcyjne (IDE) programu Visual Studio i dla C# i projektach języka Visual Basic, w wierszu polecenia.
 
@@ -68,7 +68,7 @@ Aby wygenerować plik wykonywalny *Metrics.exe*, wykonaj następujące kroki:
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Plik wykonywalny o nazwie *Metrics.exe* jest generowany w *pliki binarne* katalogu w katalogu głównym repozytorium.
+   Plik wykonywalny o nazwie *Metrics.exe* jest generowany w *artifacts\bin* katalogu w katalogu głównym repozytorium.
 
    > [!TIP]
    > Tworzenie *Metrics.exe* w [ze starszej wersji trybu](#legacy-mode), wykonaj następujące polecenie:

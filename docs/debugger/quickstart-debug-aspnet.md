@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82288b67916255914d352e4f0f6f2fd75aa9571d
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636990"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561960"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Szybki Start: Debugowanie projektów platformy ASP.NET za pomocą debugera programu Visual Studio
+# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Szybki start: Debugowanie projektów platformy ASP.NET za pomocą debugera programu Visual Studio
 
 Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
 
@@ -103,7 +103,7 @@ Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `return
 
 Aplikacja kontynuuje wykonywanie i wstrzymuje w wierszu kodu, gdy kliknięto przycisk.
 
-Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
+Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Sprawdzanie zmiennych w datatip
 

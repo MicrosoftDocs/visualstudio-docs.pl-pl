@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 27a76ab16da00fe68b6dffbc072b926bf04fa502
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750790"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441772"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
 Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i technologii IntelliSense i innych wbudowanych funkcji, które obsługuje środowiska Node.js. W tym samouczku dla programu Visual Studio utworzysz projekt aplikacji sieci web Node.js za pomocą szablonu programu Visual Studio. Następnie utworzysz prostą aplikację przy użyciu platformy React.
 
-W tym samouczku dowiesz się, jak:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
 > * Tworzenie projektu platformy Node.js
 > * Dodaj pakiety npm
@@ -258,7 +258,7 @@ W poprzednich krokach dodano *webpack config.js* do projektu. Następnie dodasz 
     }
     ```
 
-    Kod konfiguracji webpack powoduje, że Webpack, aby użyć modułu ładującego TypeScript do transpiluj JSX.
+    Kod konfiguracji webpack powoduje, że webpack, aby użyć modułu ładującego TypeScript do transpiluj JSX.
 
 1. Otwórz *tsconfig.json* i Zastąp następujący kod, który określa opcje kompilatora TypeScript w kodzie domyślnym:
 

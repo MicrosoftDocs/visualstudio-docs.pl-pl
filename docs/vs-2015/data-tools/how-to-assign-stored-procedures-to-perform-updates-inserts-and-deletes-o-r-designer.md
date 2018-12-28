@@ -1,5 +1,5 @@
 ---
-title: 'Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (Projektant O-R) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (Projektant O-R) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 09c1beaa38cff27917263f6efa8219c1dc590daa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232717"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648421"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -71,8 +71,6 @@ Procedury składowane, które mogą być dodawane do Projektanta obiektów relac
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Wskazówki: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Wskazówki: Tworzenie procedur składowanych aktualizacji dla tabeli klientów Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
+ [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Operacje wstawiania, aktualizowania i usuwania](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-

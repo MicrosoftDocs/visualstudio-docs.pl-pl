@@ -1,5 +1,5 @@
 ---
-title: Nie można przypisać do &#39;to&#39; | Dokumentacja firmy Microsoft
+title: Nie można przypisać do "this" | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47e55d39e85675b37d2ac9741d1207a9e81d369e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f47778075b0395e4f0791d8f485188d40fab87a4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856655"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802595"
 ---
-# <a name="cannot-assign-to-39this39"></a>Nie można przypisać do &#39;to&#39;
+# <a name="cannot-assign-to-this"></a>Nie można przypisać do „tego"
 Próba przypisania wartości do **to**. **to** jest [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] — słowo kluczowe, która odwołuje się do albo:
 
 - Obiekt metody, w trakcie wykonywania

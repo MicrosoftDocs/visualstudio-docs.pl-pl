@@ -2,9 +2,8 @@
 title: Odwołuje się Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#References
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fa4b760f9762c07ede4a21dbb37d00ef9f84dd59
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639165"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561986"
 ---
 # <a name="references-element-visual-studio-templates"></a>References — element (szablony Visual Studio)
 Grupuje odwołania do zestawów, które szablon dodaje się do projektów.  

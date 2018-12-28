@@ -14,14 +14,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159610"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684473"
 ---
-# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Utwórz swoją pierwszą aplikację konsoli w programie Visual Studio za pomocą Visual Basic
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki start: Utwórz swoją pierwszą aplikację konsoli w programie Visual Studio za pomocą Visual Basic
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz prostą aplikację języka Visual Basic, która działa na konsoli.
 
@@ -91,4 +91,4 @@ Dodajmy trochę kodu, aby zatrzymać aplikację, a następnie poproś na dane we
 Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już nieco Visual Basic i Visual Studio IDE. Aby dowiedzieć się więcej, przejdź do następującego samouczka.
 
 > [!div class="nextstepaction"]
-> [Wprowadzenie do języka Visual Basic w programie Visual Studio](tutorial-visual-basic-console.md)
+> [Wprowadzenie do języka Visual Basic w programie Visual Studio](../get-started/visual-basic/tutorial-console.md)

@@ -2,9 +2,8 @@
 title: Supportscodeseparation — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140745"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561394"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation — Element (szablony Visual Studio)
-Określa, czy **umieść kod w osobnym pliku** pole wyboru jest włączone w **Dodaj nowy element** okno dialogowe.  
+Określa, czy **umieść kod w oddzielnym pliku** pole wyboru jest włączone w **Dodaj nowy element** okno dialogowe.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -49,22 +48,22 @@ Określa, czy **umieść kod w osobnym pliku** pole wyboru jest włączone w **D
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false`, wskazujące, czy **umieść kod w osobnym pliku** pole wyboru jest włączone w **Dodaj nowy element** okno dialogowe.  
+ Tekst musi być albo `true` lub `false`oznaczający czy **umieść kod w oddzielnym pliku** pole wyboru jest włączone w **Dodaj nowy element** okno dialogowe.  
   
 ## <a name="remarks"></a>Uwagi  
- `SupportsCodeSeparation` to opcjonalny element. Wartość domyślna to `false`.  
+ `SupportsCodeSeparation` element jest opcjonalny. Wartość domyślna to `false`.  
   
  `SupportsCodeSeparation` Element jest dostępny tylko dla szablonów elementów sieci Web.  
   
- Separacją kodu lub modelu strony związane z kodem, pozwala na zachowanie znaczników w jednym pliku i programowania kodu w innym pliku. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] i innymi językami .NET Użyj tego modelu.  
+ Separacja kodu lub modelu strony związanym z kodem, pozwala na zachowanie znaczników w jednym pliku i programowania kod w innym pliku. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] i innymi językami .NET użyć tego modelu.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie do wyświetlenia **umieść kod w osobnym pliku** opcji.  
+ Poniższy przykład określa, aby wyświetlić **umieść kod w oddzielnym pliku** opcji.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

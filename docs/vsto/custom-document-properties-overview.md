@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671524"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441447"
 ---
 # <a name="custom-document-properties-overview"></a>Przegląd właściwości niestandardowego dokumentu
 
@@ -58,5 +58,5 @@ Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje o pliku
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Porady: tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Instrukcje: Publikowanie rozwiązań pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)

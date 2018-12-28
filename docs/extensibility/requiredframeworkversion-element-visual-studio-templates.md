@@ -2,9 +2,8 @@
 title: RequiredFrameworkVersion, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c219d2f929122163b49d51d5280c25490aaccb1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635925"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739789"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion, element (szablony Visual Studio)
 
@@ -88,4 +87,4 @@ W tym przykładzie minimalnej wersji systemu .NET Framework, która jest wymagan
 
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Odwoływać się do określonej wersji środowiska .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Odwoływać się do określonej wersji środowiska .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

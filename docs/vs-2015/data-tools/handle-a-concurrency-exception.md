@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c784bbcb73190abd2b12bf6cc7768d27087b2e14
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220420"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647711"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W celu przeprowadzenia tego instruktażu, należy:  
   
--   Dostęp do przykładowej bazy danych Northwind z uprawnieniami do wykonywania aktualizacji. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+-   Dostęp do przykładowej bazy danych Northwind z uprawnieniami do wykonywania aktualizacji.
   
 > [!NOTE]
 >  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -211,7 +211,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 8.  W pierwszym rekordzie na formularzu (`ALFKI`), zmień`ContactName` do `Maria Anders1`.  
   
-9. Wybierz **Zapisz** przycisku.  
+9. Wybierz ikonę **Zapisz**.  
   
      Błąd współbieżności, a pojawi się okno komunikatu.  
   

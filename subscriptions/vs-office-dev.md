@@ -3,18 +3,18 @@ title: Korzyści dla deweloperów usługi Office 365 w ramach subskrypcji progra
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Więcej informacji na temat korzyści Office 365 dla deweloperów, zawarte w Twojej subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758391"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739724"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -68,14 +68,19 @@ Aby dowiedzieć się więcej na temat subskrypcji dewelopera Office 365, zapozna
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Uwzględnione      |  Tak          |
-| Program Visual Studio Professional (standardowy, roczna w chmurze) | VL, Azure, Retail                                       | Niedostępne                                                            |NAZWA         |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  NAZWA         |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | NAZWA         |
-| Visual Studio Dev Essentials | NAZWA  | Niedostępne |NAZWA |
-| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono      |  Tak          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | Nie dotyczy         |
+| Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy |
+| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.  Nie obejmuje: Sieci Microsoft Partner Network (MPN), Wyobraź sobie, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje:    Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.  Nie obejmuje:  Microsoft Partner Network (MPN), Wyobraź sobie, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).*
+
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

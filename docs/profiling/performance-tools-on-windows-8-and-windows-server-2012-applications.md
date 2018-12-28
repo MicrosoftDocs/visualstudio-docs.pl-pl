@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592940"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012
 
@@ -76,7 +76,7 @@ Do profilu aplikacji na urządzeniach, które nie zainstalowano program Visual S
 
 - Pobierz narzędzia jako część pakietu Remote Tools for Visual Studio z [witryny sieci web MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Kopiowanie i uruchom program instalacyjny narzędzia autonomicznego profilera z komputera programu Visual Studio. Programy instalacyjne znajdują się w *%VSInstallDir%\Team Tools\Setups narzędzia* folderu. Wybierz Instalatora systemu operacyjnego — x86/x64 64 komputera zdalnego.
+- Kopiowanie i uruchom program instalacyjny narzędzia autonomicznego profilera z komputera programu Visual Studio. Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Wybierz Instalatora systemu operacyjnego — x86/x64 64 komputera zdalnego.
 
 > [!NOTE]
 > Aby zbierać Porada danych profilowania, należy zainstalować autonomicznego profilera z poziomu Twojej maszyny programu Visual Studio na komputerze zdalnym.

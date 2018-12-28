@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382752"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562064"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie w programie Visual Studio za pomocą debugera just in Time
 
@@ -42,9 +42,9 @@ Można skonfigurować debugowania programu Visual Studio Just-In-Time **narzędz
 
    ![Włączanie lub wyłączanie debugowania JIT](../debugger/media/dbg-jit-enable-or-disable.png "włączyć lub wyłączyć debugowanie JIT")
 
-1. W **włączyć debugowanie just in Time dla tych typów kodu** wybierz typy kodu, które chcesz, aby debugowanie debugowania Just In Time: **zarządzane**, **natywnych**, i/lub  **Skrypt**.
+1. W **włączyć debugowanie just in Time dla tych typów kodu** wybierz typy kodu, które chcesz, aby debugowanie debugowania Just In Time: **Zarządzane**, **natywnych**, i/lub **skryptu**.
    
-1. Wybierz **OK**.
+1. Kliknij przycisk **OK**.
 
 Po włączeniu Just-In-Time debugera, ale nie zostanie otwarte, gdy aplikacja ulegnie awarii lub błędy, zobacz [Rozwiązywanie problemów z debudowanie](#jit_errors).
 
@@ -107,7 +107,7 @@ Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza W
 
 Na przykład wprowadzisz aplikację konsoli C# w programie Visual Studio, które zgłasza [obiektu NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. W programie Visual Studio, tworzenie aplikacji konsolowej C# (**pliku** > **New** > **projektu** > **Visual C#**  >  **Aplikację konsolową**) o nazwie *ThrowsNullException*. Aby uzyskać więcej informacji dotyczących tworzeniu projektów w programie Visual Studio, zobacz [wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. W programie Visual Studio, tworzenie aplikacji konsolowej C# (**pliku** > **New** > **projektu** > **Visual C#**  >  **Aplikację konsolową**) o nazwie *ThrowsNullException*. Aby uzyskać więcej informacji dotyczących tworzeniu projektów w programie Visual Studio, zobacz [instruktażu: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
    
 1. Po otwarciu projektu w programie Visual Studio, otwórz *Program.cs* pliku. Zastąp następujący kod, który wyświetla wiersz do konsoli i następnie zgłasza obiektu NullReferenceException metody Main():
    
@@ -138,7 +138,7 @@ Na przykład wprowadzisz aplikację konsoli C# w programie Visual Studio, które
    
    W obszarze **dostępne debugery**, wybierz opcję **nowe wystąpienie klasy \<Twojego preferowanego wersji programu Visual Studio/wydania >**, jeśli jeszcze nie wybrano. 
    
-1. Wybierz **OK**.
+1. Kliknij przycisk **OK**.
    
    Projekt ThrowsNullException zostanie otwarty w nowym wystąpieniu programu Visual Studio z wykonywaniem został zatrzymany na wierszu, który wygenerował wyjątek:
    
@@ -161,7 +161,7 @@ Jeśli Just-In-Time debugowania nie zaczyna się, gdy aplikacja ulegnie awarii, 
 
   - **Raportowanie błędów HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
     
-  - (Na komputerach 64-bitowych): **raportowanie błędów HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
+  - (Dla 64-bitowych komputerów): **Raportowanie błędów HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
   
   Aby uzyskać więcej informacji, zobacz [. Ustawienia raportowania błędów systemu Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
   
@@ -172,7 +172,7 @@ Jeśli Just-In-Time debugowania nie zaczyna się, gdy aplikacja ulegnie awarii, 
   
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - (Na komputerach 64-bitowych): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - (Dla 64-bitowych komputerów): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 Można napotkać następujące komunikaty o błędach podczas Just-In-Time debugging:
 
@@ -196,6 +196,6 @@ Można napotkać następujące komunikaty o błędach podczas Just-In-Time debug
 
 ## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Opcje debugowania Just-In-Time okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)
 - [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

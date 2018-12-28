@@ -1,5 +1,5 @@
 ---
-title: Może &#39; ma t &#39; kontynuować &#39; poza pętlą | Dokumentacja firmy Microsoft
+title: Nie można "continue" występować poza pętlą | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,37 +20,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788833"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531248"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>Może &#39; ma t &#39; kontynuować &#39; poza pętlą
-Podjęto próbę użycia **kontynuować** instrukcji poza pętlą. **Kontynuować** instrukcja może być używana tylko w treści a:  
+# <a name="cant-have-continue-outside-of-loop"></a>Instrukcja „continue" nie może występować poza pętlą
+Podjęto próbę użycia **nadal** instrukcji poza pętlą. **Nadal** instrukcja może być używana tylko w treści Odp.:  
   
--   `do-while`Pętla,  
+-   `do-while` pętli  
   
--   `while`Pętla,  
+-   `while` pętli  
   
 -   **Aby uzyskać** pętli  
   
--   **/ w** pętli.  
+-   **dla/w** pętli.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, że **kontynuować** występuje instrukcja w treści a:  
+-   Upewnij się, że **nadal** występuje instrukcja w treści Odp.:  
   
-    -   `do-while`Pętla,  
+    -   `do-while` pętli  
   
-    -   `while`Pętla,  
+    -   `while` pętli  
   
     -   **Aby uzyskać** pętli  
   
-    -   **/ w** pętli.  
+    -   **dla/w** pętli.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Continue — instrukcja](../../javascript/reference/continue-statement-javascript.md)   
  [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
- [Rozwiązywanie problemów w skryptach](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+ [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

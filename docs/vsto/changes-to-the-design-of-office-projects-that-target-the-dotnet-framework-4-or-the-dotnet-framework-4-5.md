@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248247"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739487"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Zmienia się na projekt projektów Office obiektu docelowego .NET Framework 4 lub .NET Framework 4.5
   Począwszy od [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio wprowadzone pewne zmiany do projekt projektów Office obiektu docelowego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej. Jeśli jesteś zaznajomiony z projektów pakietu Office w poprzednich wersjach programu Visual Studio, należy pamiętać o tych zmianach przed opracowywanie projektach dla pakietu Office przeznaczonych dla tych wersji programu .NET Framework 4.0 lub nowszego. Domyślnie wszystkie projekty, które tworzysz przy użyciu programu Visual Studio 2013 lub nowszy dla środowiska .NET Framework 4.0 lub nowszy.  
@@ -35,7 +35,7 @@ ms.locfileid: "53248247"
   
 -   [Zaktualizuj projekty programu Excel i Word, są migrowane do programu .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [Aktualizowanie regionów formularzy w projektach programu Outlook, są migrowane do programu .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53248247"
 |---------------------|-----------------|  
 |<xref:System.Security.SecurityTransparentAttribute> Nie jest już używana lub obsługiwane w projektach pakietu Office.|Ten atrybut należy usunąć z pliku AssemblyInfo kodu w projektach pakietu Office, uaktualniani z programu Visual Studio 2008. Aby uzyskać więcej informacji, zobacz [wymagane zmiany w celu uruchamiania projektów pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |**ExcelLocale1033Attribute** nie jest już używana lub obsługiwane w projektach programu Excel.|Należy usunąć ten atrybut z *AssemblyInfo* plik kodu w projektach programu Excel. Aby uzyskać więcej informacji, zobacz [aktualizacji programu Excel i Word projektów, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Model programowania **Wstążka (Projektant graficzny)** elementy projektu została zmieniona.|Należy zmodyfikować plik CodeBehind dla wszelkich elementów wstążki w projekcie. Musisz także zmodyfikować każdy kod, który tworzy formantów wstążki w czasie wykonywania, obsługi zdarzeń Wstążki lub programowo Ustawia położenie składnika wstążki. Aby uzyskać więcej informacji, zobacz [dostosowań Wstążki aktualizacji w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
+|Model programowania **Wstążka (Projektant graficzny)** elementy projektu została zmieniona.|Należy zmodyfikować plik CodeBehind dla wszelkich elementów wstążki w projekcie. Musisz także zmodyfikować każdy kod, który tworzy formantów wstążki w czasie wykonywania, obsługi zdarzeń Wstążki lub programowo Ustawia położenie składnika wstążki. Aby uzyskać więcej informacji, zobacz [dostosowań Wstążki aktualizacji w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|  
 |Model programowania w regionach formularzy programu Outlook został zmieniony.|Należy zmodyfikować plik CodeBehind dla dowolnego regionów formularza w projekcie i wszelki kod, który tworzy wystąpienie niektórych klas regionu formularza w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [aktualizowanie regionów formularzy w projektach programu Outlook, są migrowane do programu .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Zmienił się model programowania tagów inteligentnych w projektach programu Excel i Word. Tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Jeśli Twoje rozwiązanie używa inteligentnych tagów, wystąpią błędy podczas kompilowania projektu. Ponieważ tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)], należy usunąć tagów, przed przeprowadzeniem testu i debugowania rozwiązań w [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] lub nowszej.|  
 |Składnia `GetVstoObject` i `HasVstoObject` metody została zmieniona.|Należy przekazać `Globals.Factory` obiektu tych metod, gdy dostęp do natywnych obiektów z podstawowych zestawów międzyoperacyjnych (PIA) lub możesz uzyskać dostęp tych metod w obiekcie, który jest zwracany przez `Globals.Factory` właściwość w projekcie. Aby uzyskać więcej informacji, zobacz [aktualizacji programu Excel i Word projektów, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  

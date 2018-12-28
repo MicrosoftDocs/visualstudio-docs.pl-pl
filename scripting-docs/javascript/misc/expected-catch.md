@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39; catch &#39; | Dokumentacja firmy Microsoft
+title: Oczekiwano instrukcji "catch" | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,22 +20,22 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6cd1e57137d220ebcf3834070e36d8257e2dca7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788995"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801986"
 ---
-# <a name="expected-39catch39"></a>Oczekiwano &#39; catch &#39;
-Użyto obsługi wyjątków **spróbuj** zablokować, ale nie zapisano skojarzony **catch** instrukcji. Mechanizm obsługi wyjątków wymaga, aby kod, który może zakończyć się niepowodzeniem, wraz z kodem, który nie należy wykonać, jeśli wystąpi wyjątek, być ujęte w **spróbuj** bloku. Wyjątki są zgłaszane z poziomu **spróbuj** zablokowane, używając **throw** instrukcji i zgłoszony poza **spróbuj** bloku co najmniej jednym **catch**instrukcje.  
+# <a name="expected-catch"></a>Oczekiwano instrukcji „catch"
+Została użyta Obsługa wyjątków **spróbuj** blokują, ale nie zapisano skojarzonego **catch** instrukcji. Mechanizm obsługi wyjątków wymaga zawinięta kod, który może zakończyć się niepowodzeniem, wraz z kodem, który nie powinien zostać wykonany, jeżeli wystąpi wyjątek, wewnątrz **spróbuj** bloku. Wyjątki są zgłaszane z poziomu **spróbuj** zablokowane, używając **throw** instrukcji, a przechwycony poza **spróbuj** blok z co najmniej jeden **catch**instrukcji.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Dodaj skojarzony **catch** bloku.  
+-   Dodaj powiązane **catch** bloku.  
   
--   Spróbuj użyć **koniec** zablokować zamiast **catch** bloku.  
+-   Spróbuj użyć **na koniec** block zamiast **catch** bloku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [try... catch... finally — instrukcja](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Error — obiekt](../../javascript/reference/error-object-javascript.md)
+ [Error, obiekt](../../javascript/reference/error-object-javascript.md)

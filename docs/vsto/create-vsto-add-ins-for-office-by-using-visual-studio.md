@@ -1,6 +1,7 @@
 ---
 title: Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -8,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670877"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441499"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
   Microsoft Office developer tools w programie Visual Studio umożliwia tworzenie aplikacji .NET Framework, rozszerzających pakiet Office. Te aplikacje są również nazywane *rozwiązań pakietu Office*.  
@@ -90,7 +91,7 @@ ms.locfileid: "50670877"
  Zawiera łącza do szczegółowych informacji o podstawowe zestawy międzyoperacyjne pakietu Office, manifestów, elementy interfejsu użytkownika i komunikaty o błędach.  
   
  [Dokumentacja zarządzana usługi &#40;programowanie Office w Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- Zawiera łącza do informacji na temat interfejsu API w przestrzeni nazw i typy, które są używane w pakiecie Office projekty [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Aby uzyskać dokumentację referencyjną interfejsu API o obszary nazw i typy, które są używane w projektach pakietu Office, przeznaczonych dla programu .NET Framework 3.5, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio 2008: [dokumentacjazarządzana2007system](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Zawiera łącza do informacji na temat interfejsu API w przestrzeni nazw i typy, które są używane w pakiecie Office projekty [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Dla dokumentacji interfejsu API o obszary nazw i typy, które są używane w projektach pakietu Office przeznaczonych programu .NET Framework 3.5, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio 2008: [Dokumentacja zarządzana usługi systemu 2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Niezarządzany wykaz interfejsów API &#40;programowanie Office w Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Zawiera łącza do informacji dotyczących interfejsów COM, które umożliwia wykonywanie akcji, takich jak ładowanie i zwalnianie zarządzanych dodatków narzędzi VSTO w aplikacjach pakietu Office.  

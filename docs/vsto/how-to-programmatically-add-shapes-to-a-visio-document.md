@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Dodawanie kształtów do dokumentu programu Visio'
+title: 'Instrukcje: Programowe Dodawanie kształtów do dokumentu programu Visio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], adding Visio shapes
 - shapes [Office development in Visual Studio], adding Visio shapes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94e8b43830c26aad82937cc0533ca19e109f33d0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 09bc0ca6d0c84f87a1a1621c9028c3a147373bc5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671875"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802666"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Porady: programowane Dodawanie kształtów do dokumentu programu Visio
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Instrukcje: Programowe Dodawanie kształtów do dokumentu programu Visio
   Pobieranie serwerów głównych ze wzornika i upuszczając kształtów na aktywnej stronie, można dodać kształtów do dokumentu programu Microsoft Visio pakietu Office.  
   
  Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) metody [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) właściwości i [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) metody.  
@@ -43,6 +43,6 @@ ms.locfileid: "50671875"
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
  [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md)   
- [Porady: programowane kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [Instrukcje: Programowe kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

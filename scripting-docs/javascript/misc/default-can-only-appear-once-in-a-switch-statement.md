@@ -1,5 +1,5 @@
 ---
-title: '&#39; domyślne &#39; może wystąpić tylko raz w &#39; Przełącz &#39; Instrukcja | Dokumentacja firmy Microsoft'
+title: "\"default\" może wystąpić tylko raz w instrukcji \"switch\" | Dokumentacja firmy Microsoft"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,21 +20,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788761"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803886"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; domyślne &#39; może wystąpić tylko raz w &#39; Przełącz &#39; — Instrukcja
-Podjęto próbę użycia **domyślne** instrukcji więcej niż raz w instrukcji switch. W przypadku domyślnej jest zawsze ostatniej instrukcji case w instrukcji switch (jest to fall-through).  
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>Element „default” może wystąpić tylko raz w instrukcji „switch”.
+Podjęto próbę użycia **domyślne** instrukcji więcej niż jeden raz w instrukcji switch. Przypadek domyślny jest zawsze ostatniej instrukcji case w instrukcji switch (jest przypadek fall poprzez).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Usuń wszystkie dodatkowe **domyślne** przypadek oświadczenia użytkownika `switch` instrukcji (Użyj na większości jeden domyślny instrukcji case w instrukcji switch).  
+-   Usuń wszystkie dodatkowe **domyślne** zamierzone, Zapisz instrukcji z Twojej `switch` — instrukcja (Użyj w większości jeden domyślny instrukcji case w instrukcji switch).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Switch — instrukcja](../../javascript/reference/switch-statement-javascript.md)   
  [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
- [JavaScript słowa zastrzeżone](../../javascript/reference/javascript-reserved-words.md)
+ [Słowa zastrzeżone JavaScript](../../javascript/reference/javascript-reserved-words.md)

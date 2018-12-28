@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33b272143c58058d23945986ea9b6594183307c9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a517ae7680923e70919c4bb8903bb29a2b402179
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065215"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648231"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ A *dataset* to zbiór obiektów, które przechowuje dane z bazy danych w pamięc
 ## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Dodaj tabelę bazy danych lub inny obiekt do istniejącego zestawu danych
  Ta procedura pokazuje, jak dodać tabelę z tej samej bazy danych, którego użyto do utworzenia zestawu danych.
 
-1.  Kliknij węzeł zestawu danych w **Eksploratora rozwiązań** zapewnić Projektanta obiektów dataset fokus.
+1.  Kliknij węzeł zestawu danych w **Eksploratora rozwiązań** zapewnić Projektanta obiektów DataSet fokus.
 
 2.  Kliknij przycisk **źródeł danych** kartę na lewym marginesie programu Visual Studio, lub wprowadź `Data Sources` w **szybkiego uruchamiania**.
 
@@ -94,6 +94,6 @@ A *dataset* to zbiór obiektów, które przechowuje dane z bazy danych w pamięc
 
 2.  Przeciągnij <xref:System.Data.DataTable> klasy z **DataSet** karcie **przybornika** na **Projektanta obiektów Dataset**.
 
-3.  Dodawanie kolumn do definiowania tabeli danych. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie kolumn do DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3.  Dodawanie kolumn do definiowania tabeli danych. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kolumn do DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
 4.  Tabele autonomicznej konieczne wdrożenie `Fill` logiki w tabelach autonomicznej tak, aby wypełnić je danymi. Instrukcje dotyczące Wypełnianie tabel danych autonomicznych, zobacz [wypełnianie zestawu danych z elementu DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

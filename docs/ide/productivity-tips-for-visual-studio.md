@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ecaae21757c5a23eeb13858026d5f4fcfe3dab22
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067981"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684893"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
 
@@ -118,11 +118,11 @@ W dowolnym momencie może być działa w wielu plikach kodów i poruszać się m
 
      Można również zarządzać plikami łatwiej, tworząc inną instancję **Eksploratora rozwiązań** i przenosząc ją na inny monitor. Aby utworzyć inną instancję programu **Eksploratora rozwiązań**, otwórz menu skrótów na liście **Eksploratora rozwiązań**, a następnie wybierz **nowy widok Eksploratora rozwiązań**.
 
-- **Dostosowywanie czcionek, które są wyświetlane w programie Visual Studio**. Można zmienić krój czcionki, rozmiar i kolor, który jest używany dla tekstu w IDE. Na przykład możesz dostosować kolor elementów konkretnego kodu w edytorze i krój czcionki w narzędzie systemu windows lub w całej IDE. Aby uzyskać więcej informacji, zobacz [porady: zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) i [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Dostosowywanie czcionek, które są wyświetlane w programie Visual Studio**. Można zmienić krój czcionki, rozmiar i kolor, który jest używany dla tekstu w IDE. Na przykład możesz dostosować kolor elementów konkretnego kodu w edytorze i krój czcionki w narzędzie systemu windows lub w całej IDE. Aby uzyskać więcej informacji, zobacz [jak: Zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) i [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Porady: Dostosowywanie menu i paski narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Instrukcje: Dostosowywanie menu i paski narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Przewodnik: Tworzenie prostej aplikacji](../get-started/csharp/tutorial-wpf.md)
 - [Ułatwienia dostępu, porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md)

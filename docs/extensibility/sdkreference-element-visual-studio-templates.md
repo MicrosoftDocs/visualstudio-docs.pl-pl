@@ -2,24 +2,23 @@
 title: SDKReference, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64008bb473a64fece6ce1430f743148496633058
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ac32f5cae1e2e31f40a7d49c861757aec43fa5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136645"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562012"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference, element (szablony Visual Studio)
-Określa, że szablon elementu używa odwołania do zestawu SDK.  
+Określa, że szablon elementu używa odwołanie do zestawu SDK.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,13 +43,13 @@ Określa, że szablon elementu używa odwołania do zestawu SDK.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do projektu.|  
+|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu do dodania, gdy element zostanie dodany do projektu.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
 ## <a name="remarks"></a>Uwagi  
- Ten tekst Określa odwołanie do zestawu SDK, aby dodać do projektu podczas tworzenia wystąpienia klasy szablonu elementu.  
+ Ten tekst Określa dokumentacja zestawu SDK, aby dodać do projektu przy tworzeniu wystąpienia szablonu elementu.  
   
 ```xml  
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">   
@@ -63,7 +62,7 @@ Określa, że szablon elementu używa odwołania do zestawu SDK.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania — Element (szablony Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
+ [References — Element (szablony Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
  [Reference — Element (szablony Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

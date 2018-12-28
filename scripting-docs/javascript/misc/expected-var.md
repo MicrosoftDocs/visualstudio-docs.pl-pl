@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39; var &#39; | Dokumentacja firmy Microsoft
+title: Oczekiwano "var" | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a99bfdd61d6c7007af2c0984219f3e458b313a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788809"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803471"
 ---
-# <a name="expected-39var39"></a>Oczekiwano &#39; var &#39;
+# <a name="expected-var"></a>Oczekiwano „var"
 Oczekiwano "var" (ERRnoVar 1034))  
   
- Nie można dodać var — słowo kluczowe, gdy był wymagany.  
+ Nie można dodać var — słowo kluczowe, gdy było wymagane.  
   
- Aby uzyskać więcej informacji na temat var — słowo kluczowe, zobacz [instrukcja var](../../javascript/reference/var-statement-javascript.md).
+ Aby uzyskać więcej informacji na temat słowa kluczowego var zobacz [instrukcja var](../../javascript/reference/var-statement-javascript.md).

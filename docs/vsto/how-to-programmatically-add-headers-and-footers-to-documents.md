@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Dodawanie nagłówków i stopek do dokumentów'
+title: 'Instrukcje: Programowe Dodawanie nagłówków i stopek do dokumentów'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding headers
 - documents [Office development in Visual Studio], adding footers
 - footers, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf8fd8d679760a6758ffb4afb71262a897845e87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849912"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803379"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Porady: programowane Dodawanie nagłówków i stopek do dokumentów
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Instrukcje: Programowe Dodawanie nagłówków i stopek do dokumentów
   Możesz dodać tekst nagłówków i stopek w dokumencie za pomocą <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> właściwości i <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> właściwość <xref:Microsoft.Office.Interop.Word.Section>. Każda sekcja dokumentu zawiera trzy nagłówki i stopki:  
   
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
@@ -73,7 +73,7 @@ ms.locfileid: "49849912"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)   
- [Porady: programowane rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Porady: programowane przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
+ [Instrukcje: Programowe tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Instrukcje: Programowe rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Instrukcje: Programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
    

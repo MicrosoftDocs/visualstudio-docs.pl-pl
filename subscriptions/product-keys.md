@@ -9,12 +9,12 @@ description: Dowiedz się, jak uzyskać i zarządzać kluczami produktu w ramach
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900855"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803827"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcji programu Visual Studio
 
@@ -32,14 +32,14 @@ Jeśli zostały zgłoszone klucze produktów dostępne w ramach Twojej subskrypc
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Handel detaliczny i licencjonowania zbiorowego wersje produktów
 Subskrypcje programu Visual Studio oferuje szereg sprzedaży detalicznej i licencjonowania zbiorowego wersje produktów firmy Microsoft. Niektóre produkty są dostępne pliki do pobrania tylko w wersji detalicznej lub tylko w wersji licencjonowania zbiorowego; Niektóre są dostępne w obu wersjach. Ogólnie rzecz biorąc produkty wymagają aktywacji, takich jak Windows, Windows Server i produktów klienckich pakietu Office, jest oferowana tylko w ich wersji detalicznej za pośrednictwem plików do pobrania.
 
-Klienci usługi licencjonowania zbiorowego można również pobrać oprogramowanie z woluminu licencjonowania Service Center (VSLC) można pobrać wersji produktów licencjonowania zbiorowego (i odpowiednie klucze produktów).  Dostęp do centrum VLSC jest zarządzany przez wyznaczonych administratorów w organizacji klienta.
+Klienci usługi licencjonowania zbiorowego można również pobrać oprogramowanie z woluminu licencjonowania Service Center (VLSC) można pobrać wersji produktów licencjonowania zbiorowego (i odpowiednie klucze produktów).  Dostęp do centrum VLSC jest zarządzany przez wyznaczonych administratorów w organizacji klienta.
 
 ## <a name="daily-product-key-claim-limits"></a>Klucz produktu oświadczenia limity
 Firma Microsoft zobowiązała się do ochrony integralności programu subskrypcji Visual Studio oraz wartości oprogramowania i korzyści zapewnianych prawowitym subskrybentom odbieranie ich inwestycję. Ramach wspierania tego zaangażowania firma Microsoft zaimplementowała uznane dzienne limity zgłoszeń kluczy dla subskrypcji programu Visual Studio. Dzienne limity zgłoszeń kluczy ograniczają liczbę kluczy, które można zgłosić każdego dnia na subskrypcję.
 
 Dzienny limit zgłoszeń kluczy wynosi 10 kluczy dla wszystkich subskrypcji programu Visual Studio, uwzględniając oferowane za pośrednictwem MPN, BizSpark, MCT Software & Services i MCT, z wyjątkiem programu Visual Studio Professional (MPN), który ma klucz dziennie oświadczenia limit kluczy 7.
 
-Uwaga: Klucz limity zgłoszeń mogą ulec zmianie. Sprawdź tutaj, aby uzyskać najbardziej aktualne limity.
+Uwaga: Limity zgłoszeń kluczy mogą ulec zmianie. Sprawdź tutaj, aby uzyskać najbardziej aktualne limity.
 
 Jeśli zostanie zgłoszona maksymalna liczba kluczy dostępnych dla Twojej subskrypcji przed upływem 24-godzinnego, pojawi się błąd informujący, że osiągnięto limit. Limit jest resetowany co 24 godziny, począwszy od 00:01:00 czasu pacyficznego.
 

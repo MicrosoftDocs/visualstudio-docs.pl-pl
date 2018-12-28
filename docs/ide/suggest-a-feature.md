@@ -1,43 +1,49 @@
 ---
-title: Zaproponuj funkcję
-description: W tym artykule opisano sugestie dotyczą w społeczności deweloperów, jak Wyraź sugestię i jak sugestie są używane przez firmę Microsoft w planach programu Visual Studio
-ms.date: 11/15/2018
+title: proponowanie funkcji
+description: W tym artykule opisano sugestie dotyczą w społeczności deweloperów, jak Wyraź sugestię i jak sugestie są używane przez firmę Microsoft w mapy drogowej w programie Visual Studio.
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160039"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592459"
 ---
-# <a name="overview-suggest-a-feature"></a>Omówienie: Zaproponuj funkcję
+# <a name="overview-suggest-a-feature"></a>Przegląd: Zaproponuj funkcję
 
-Wprowadziliśmy zupełnie nowe środowisko sugerując funkcje wraz z bieżącym możliwość zgłaszanie problemów na [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com). Jest to nowy sposób, który może uprawniony współpracować bezpośrednio z programu Visual Studio inżynieryjnym przepływie pracy.
+Dodaliśmy nowe środowisko sugerując funkcje wraz z bieżącym możliwość zgłaszanie problemów na [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com). Jest to nowy sposób, który może uprawniony współpracować bezpośrednio z programu Visual Studio inżynieryjnym przepływie pracy.
 
-Do tej pory użytkowników programu Visual Studio mają umożliwia Zaproponuj pomysły na funkcje forum User Voice. *Zaproponuj funkcję* doświadczenie w społeczności deweloperów pozwala na przejście od forum User Voice na jednej platformie za Twoją opinię, która uczestniczy bezpośrednio z zespołów produktów Visual Studio.
+![Zaproponuj przycisku funkcji na społeczności deweloperów](media/suggest-a-feature/suggest-feature-button.png)
 
-Zmigrowaliśmy początkowego zestawu pomysły z forum User Voice do społeczności deweloperów. Migracja została wykonana w zależności od wpływu społeczności opinii i priorytetów plan naszych produktów. Oczekiwana Zobacz tutaj sugestii, które mogły zostać pominięte firma Microsoft, możesz dodać go do społeczności deweloperów.
+Sugestię dotyczącą funkcji można uruchomić bezpośrednio z programu Visual Studio, wybierając **sugestię** z **Podaj opinię** ikonę w prawym górnym rogu okna głównego programu Visual Studio:
 
-## <a name="votes"></a>Głosów
+![Zapewnij menu sugestii, w programie Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Głosowania systemu w User Voice działa inaczej w głosów w społeczności deweloperów. Aby zachować integralność liczby głosu społeczności deweloperów i uniknąć pochylanie głosów, pokazujemy liczba głosów User Voice, zawsze jako tag obok każdego sugestii funkcji. W miarę postępu głosować w sprawie propozycji w rozszerzonej społeczności deweloperów Twojej nowej liczby głosów będą wyświetlane osobno z liczbą głosów User Voice.
+Wybieranie **sugestię** spowoduje przejście do [społeczności deweloperów](https://developercommunity.visualstudio.com), w którym możesz wprowadzić swoją sugestię.
 
 ## <a name="user-voice"></a>User Voice
 
-W witrynie User Voice jest teraz tylko do odczytu, dzięki czemu możesz sprawdzić nagrania, ponieważ należy do kontekstu. Wszystkie nowe sugestie funkcji powinny być przekazywane w społeczności deweloperów.
+Do tej pory użytkowników programu Visual Studio zaproponowano nowe pomysły na funkcje w usłudze User Voice. Dodając *Zaproponuj funkcję* funkcje do społeczności deweloperów, wszystkie swoje opinie dla zespołu produktu Visual Studio jest teraz w jednym miejscu.
+
+W witrynie User Voice stało się tylko do odczytu. Można spojrzeć wstecz jako należy do kontekstu, ale wszystkie nowe sugestie funkcji powinny być przekazywane w społeczności deweloperów.
+
+Zmigrowaliśmy początkowego zestawu pomysły z forum User Voice społeczności deweloperów. Migracja została wykonana w zależności od wpływu społeczności opinii i priorytetów plan naszych produktów. Oczekiwana Zobacz tutaj sugestii, które mogły zostać pominięte firma Microsoft, możesz dodać go do społeczności deweloperów.
+
+## <a name="votes"></a>Głosów
+
+Głos użytkownika różni się systemu głosowania w społeczności deweloperów. Aby zachować integralność liczby głosu społeczności deweloperów i uniknąć pochylanie głosów, pokazujemy liczba głosów User Voice, zawsze jako tag obok każdego sugestii funkcji. W miarę postępu głosować w sprawie propozycji w rozszerzonej społeczności deweloperów Twojej nowej liczby głosów będą wyświetlane osobno z liczbą głosów User Voice.
 
 ## <a name="suggestion-status"></a>Stan sugestii
 
-Po przesłaniu sugestię dotyczącą funkcji stany wskazują, gdzie Twoje zgłoszenie funkcji jest etapie jej cyklu życia. Firma Microsoft uwzględnienia opinii i przenieś ją wzdłuż przepływu pracy, możemy go otagować odpowiadający mu stan.
-
-Różne stany, skojarzone z propozycje dotyczące funkcji znajduje się poniżej, oraz opis ich znaczenia i wskaźniki kolorów.
+Po przesłaniu sugestię dotyczącą funkcji stany wskazują, gdzie Twoje zgłoszenie funkcji jest etapie jej cyklu życia. Firma Microsoft uwzględnienia opinii i przenieś ją wzdłuż przepływu pracy, możemy go otagować odpowiadający mu stan. Różnych stanów skojarzone z propozycje dotyczące funkcji są wymienione w tym miejscu oraz opis ich znaczenia i wskaźniki kolorów.
 
 ![Nowy stan dla sugestie społeczności deweloperów](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +128,7 @@ Głosowania systemu w User Voice działa inaczej od głosów w społeczności de
 Angażujemy pełni do nasłuchiwania na swoje propozycje dotyczące funkcji i wykonanie czynności, aby zapewnić wartościowe środowiska dla naszych klientów. Akcje na sugestie są uporządkowane w oparciu o wpływie na szerszą społeczność rozwiązań typu. Nawet jeśli nie możemy osobiście co sugestią, wybierzemy się, że Twoja opinia pobiera odpowiedni zespół, a następnie jest szacowana dokładnie.
 
 Czas odpowiedzi zależy od stanu, w której znajduje się Twoja opinia. Przejrzyj opis stany, w tym dokumencie, aby zrozumieć, czasy odpowiedzi.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Przedstawiamy, zaproponować funkcję w społeczności deweloperów (blog Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

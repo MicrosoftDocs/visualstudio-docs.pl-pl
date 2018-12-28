@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bddcb7b36cd119f20fe8e03ed1152662284ac8c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280886"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561580"
 ---
 # <a name="using-the-tasks-window"></a>Korzystanie z okna zadań
 
@@ -51,8 +51,8 @@ Kolumny w **zadania** okna są wyświetlane następujące dane.
 |-----------------|-----------------|
 |**flagi**|Umożliwia Flagowanie zadania lub i przedstawia zadania, które są oznaczone.|
 |**Ikony**|Żółta strzałka wskazuje bieżącego zadania. Bieżące zadanie jest zadaniem najważniejsze dla bieżącego wątku.<br /><br /> Biały strzałek wskazuje zadania istotne, czyli ten, który były aktualne, gdy debuger został wywołany.<br /><br /> Ikona Wstrzymaj wskazuje zadanie, które są zablokowane przez użytkownika. Można Zablokuj i Odblokuj zadania, klikając prawym przyciskiem myszy na liście.|
-|**ID**|Liczba dostarczane przez system dla zadania. W kodzie natywnym jest to adres zadania.|
-|**Status**|Bieżący stan (zaplanowane, aktywne, zablokowane, prawdopodobnie zakleszczone, oczekiwanie na lub ukończone) zadania. Zaplanowane zadanie to taki, który nie został jeszcze uruchomiony i dlatego nie ma jeszcze stos wywołań, przypisany wątek lub powiązane informacje.<br /><br /> Aktywne zadanie to taki, który był wykonywany kod przed przerwanie w debugerze.<br /><br /> Oczekiwanie na lub zablokowane zadania to taki, który jest zablokowane, ponieważ trwa oczekiwanie na zdarzenie ma być zasygnalizowany, blokady mogą być wprowadzane lub inne zadanie, aby zakończyć.<br /><br /> Prawdopodobnie zakleszczone zadanie jest zadanie oczekujące, w których wątek jest zakleszczone przez inny wątek.<br /><br /> Umieść kursor nad **stan** komórki dla prawdopodobnie zakleszczone lub Oczekiwanie na zadanie, aby zobaczyć więcej informacji na temat tego bloku. **Ostrzeżenie:** **zadania** okna raporty zakleszczenia tylko w przypadku zablokowanych zadanie, które używa podstawowego synchronizacji, który jest obsługiwany przez przejście przez łańcuch oczekiwania (WCT). Na przykład prawdopodobnie zakleszczone <xref:System.Threading.Tasks.Task> obiektu, który używa WCT, debuger raporty **oczekujące, zakleszczone**. Prawdopodobnie zakleszczone zadania, który jest zarządzany przez środowisko uruchomieniowe współbieżności, która nie korzysta z WCT, raportów jest debugera **oczekiwania**. Aby uzyskać więcej informacji na temat WCT zobacz [oczekiwania przechodzenie łańcucha](/windows/desktop/Debug/wait-chain-traversal).|
+|**Identyfikator**|Liczba dostarczane przez system dla zadania. W kodzie natywnym jest to adres zadania.|
+|**Status**|Bieżący stan (zaplanowane, aktywne, zablokowane, prawdopodobnie zakleszczone, oczekiwanie na lub ukończone) zadania. Zaplanowane zadanie to taki, który nie został jeszcze uruchomiony i dlatego nie ma jeszcze stos wywołań, przypisany wątek lub powiązane informacje.<br /><br /> Aktywne zadanie to taki, który był wykonywany kod przed przerwanie w debugerze.<br /><br /> Oczekiwanie na lub zablokowane zadania to taki, który jest zablokowane, ponieważ trwa oczekiwanie na zdarzenie ma być zasygnalizowany, blokady mogą być wprowadzane lub inne zadanie, aby zakończyć.<br /><br /> Prawdopodobnie zakleszczone zadanie jest zadanie oczekujące, w których wątek jest zakleszczone przez inny wątek.<br /><br /> Umieść kursor nad **stan** komórki dla prawdopodobnie zakleszczone lub Oczekiwanie na zadanie, aby zobaczyć więcej informacji na temat tego bloku. **Ostrzeżenie:**  **Zadania** okna raporty zakleszczenia tylko w przypadku zablokowanych zadanie, które używa podstawowego synchronizacji, który jest obsługiwany przez przejście przez łańcuch oczekiwania (WCT). Na przykład prawdopodobnie zakleszczone <xref:System.Threading.Tasks.Task> obiektu, który używa WCT, debuger raporty **oczekujące, zakleszczone**. Prawdopodobnie zakleszczone zadania, który jest zarządzany przez środowisko uruchomieniowe współbieżności, która nie korzysta z WCT, raportów jest debugera **oczekiwania**. Aby uzyskać więcej informacji na temat WCT zobacz [oczekiwania przechodzenie łańcucha](/windows/desktop/Debug/wait-chain-traversal).|
 |**Godzina rozpoczęcia**|Czas, w którym zadanie stały się aktywne.|
 |**Czas trwania**|Liczba sekund, które zadania była aktywna.|
 |**Czas ukończenia**|Czas, w którym zadanie jest ukończone.|
@@ -70,7 +70,7 @@ Kolumny w **zadania** okna są wyświetlane następujące dane.
  ![Menu Widok skrótów w oknie zadania](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>Sortowanie zadania
- Aby posortować zadania według kryteriów kolumny, kliknij nagłówek kolumny. Na przykład klikając **identyfikator** nagłówek kolumny można posortować zadania według Identyfikatora zadania podrzędnego: 1,2,3,4,5 i tak dalej. Aby odwrócić porządek sortowania, kliknij nagłówek kolumny ponownie. Według bieżącej kolumny i sortowania kolejności sortowania jest wskazywany przez strzałkę w kolumnie.
+ Aby posortować zadania według kryteriów kolumny, kliknij nagłówek kolumny. Na przykład klikając **identyfikator** nagłówek kolumny można posortować zadania według Identyfikatora zadania: 1,2,3,4,5 i tak dalej. Aby odwrócić porządek sortowania, kliknij nagłówek kolumny ponownie. Według bieżącej kolumny i sortowania kolejności sortowania jest wskazywany przez strzałkę w kolumnie.
 
 ## <a name="grouping-tasks"></a>Grupowania zadań
  Można grupować zadania oparte na dowolną kolumnę w widoku listy. Na przykład, klikając prawym przyciskiem myszy **stan** nagłówek kolumny, a następnie klikając polecenie **Grupuj według** > **[*stan*]**, możesz Grupa wszystkich zadań, które mają ten sam stan. Na przykład można szybko wyświetlić, oczekujące na zadania, dzięki czemu możesz skupić się na dlaczego są blokowane. Można również zwinąć grupy, która nie jest przedmiotem zainteresowania podczas sesji debugowania. W ten sam sposób można grupować według innych kolumn. Grupa może być (NZ) po prostu przez kliknięcie przycisku obok nagłówka grupy. Poniższa ilustracja przedstawia **zadania** okna w trybie zgrupowane.
@@ -96,9 +96,9 @@ Kolumny w **zadania** okna są wyświetlane następujące dane.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 - [Programowanie równoległe](/dotnet/standard/parallel-programming/index)
 - [Środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime)
 - [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)
-- [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)

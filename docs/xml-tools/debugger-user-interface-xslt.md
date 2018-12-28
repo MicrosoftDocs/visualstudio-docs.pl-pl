@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847386"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561921"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
 
@@ -92,15 +92,15 @@ Aby uzyskać więcej informacji, zobacz [debugowanie odwołań do interfejsu uż
 
 -   Funkcje zdefiniowane przez użytkownika nie są dozwolone.
 
-Aby uzyskać więcej informacji, zobacz [instrukcje: Ocena wyrażenia XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Aby uzyskać więcej informacji, zobacz [jak: Ocena wyrażenia XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Dezasemblacja, okno
  Okno dezasemblacji zawiera kod zestawu, który jest generowany przez kompilator XSLT. Tego okna może służyć w taki sam sposób, jak wszystkie inne okna dezasemblacji programu Visual Studio.
 
- Aby uzyskać więcej informacji [porady: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md).
+ Aby uzyskać więcej informacji [jak: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)
-- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)   
 - [Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych w programie Visual Studio](../debugger/autos-and-locals-windows.md)

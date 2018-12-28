@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Korzystanie z interfejsów API Profiler | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Za pomocą interfejsów API Profiler | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928064"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592641"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Przewodnik: korzystanie z interfejsów API profilera
+# <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Za pomocą interfejsów API profilera
 
 Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API narzędzi profilowania. Użyjesz interfejsów API profilera, aby ograniczyć ilość danych zebranych podczas profilowania instrumentacji.  
   
@@ -32,16 +32,18 @@ Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUD
   
  Profilera Visual Studio umożliwia ograniczenie zbierania danych. Ten przewodnik udostępnia przykładowy sposób ograniczyć zbieranie danych przy użyciu interfejsów API profilera. Profilera Visual Studio zapewnia kontrolowanie zbierania danych z aplikacji interfejsu API.  
   
- Dla kodu natywnego programu Visual Studio profiler interfejsów API znajdują się w *VSPerf.dll*. Plik nagłówkowy *VSPerf.h*i bibliotekę importu *VSPerf.lib*, znajdują się w *Microsoft narzędzia Visual Studio 9\Team narzędzia* katalogu.  
+ Dla kodu natywnego programu Visual Studio profiler interfejsów API znajdują się w *VSPerf.dll*. Plik nagłówkowy *VSPerf.h*i bibliotekę importu *VSPerf.lib*, znajdują się w *programu Microsoft Visual Studio\2017\Team narzędzia Tools\PerfSDK* katalog.  Dla aplikacji 64-bitowych jest folder *Tools\x64\PerfSDK narzędzia Studio\2017\Team Visual firmy Microsoft*
   
- Dla kodu zarządzanego, program profilujący interfejsów API znajdują się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w *Microsoft narzędzia Visual Studio 9\Team narzędzia* katalogu. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Profiler>.  
+ Dla kodu zarządzanego, program profilujący interfejsów API znajdują się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu. Dla aplikacji 64-bitowych jest folder *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W tym przewodniku przyjęto założenie, że preferowanego środowiska deweloperskiego jest skonfigurowany do obsługi debugowania i pobierania próbek. Przegląd wymagań wstępnych można znaleźć w następujących tematach:  
   
- [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
+ [Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)  
   
- [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Instrukcje: Informacje o symbolach Windows odwołania](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Domyślnie po uruchomieniu profilera, profiler zbiera dane na poziomie globalnym. Następujący kod na początku programu, włącza globalnego profilowania na wyłączone.  
   
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Utwórz nowy projekt C# w programie Visual Studio, lub użyć kompilacji wiersza polecenia, w zależności od preferencji.  
   
     > [!NOTE]
-    >  Musi odwoływać się do kompilacji *Microsoft.VisualStudio.Profiler.dll* biblioteki, na terenie *Microsoft narzędzia Visual Studio 9\Team narzędzia* katalogu.  
+    >  Musi odwoływać się do kompilacji *Microsoft.VisualStudio.Profiler.dll* biblioteki, na terenie *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu.  
   
 2.  Skopiuj i wklej następujący kod do projektu:  
   
@@ -151,15 +153,15 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**  
   
-3.  Wpisz następujące polecenie: **VSInstr \<nazwa pliku > .exe**  
+3.  Wpisz następujące polecenie: **Narzędzie VSInstr \<nazwa pliku > .exe**  
   
-4.  Wpisz następujące polecenie: **/Output polecenia VSPerfCmd:\<nazwa pliku > .vsp**  
+4.  Wpisz następujące polecenie: **/ OUTPUT polecenia VSPerfCmd:\<nazwa pliku > .vsp**  
   
-5.  Wpisz następujące polecenie: **VSPerfCmd /globaloff**  
+5.  Wpisz następujące polecenie: **Narzędzia VSPerfCmd /globaloff**  
   
 6.  Wykonywanie programu.  
   
-7.  Wpisz następujące polecenie: **VSPerfCmd/shutdown**  
+7.  Wpisz następujące polecenie: **Narzędzia VSPerfCmd/shutdown**  
   
 8.  Wpisz następujące polecenie: **VSPerfReport/calltrace:\<nazwa pliku > .vsp**  
   

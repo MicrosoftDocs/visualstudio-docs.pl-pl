@@ -3,18 +3,18 @@ title: MSDN Magazine korzyści w ramach subskrypcji programu Visual Studio | Dok
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/13/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawarte w Twojej subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941272"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739599"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
 
@@ -51,18 +51,21 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> |Drukowane edition       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Program Visual Studio Professional (standardowy, roczna w chmurze) | VL, Azure, Retail                                       | Drukowane edition                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> |Drukowane edition       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Drukowane edition                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
-|Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze)   | Azure |Niedostępne      |  NAZWA         |
-|Visual Studio Dev Essentials| NAZWA |Wersja cyfrowa       |  Tak|
+|Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze)   | Azure |Niedostępne      |  Nie dotyczy         |
+|Visual Studio Dev Essentials| Nie dotyczy |Wersja cyfrowa       |  Tak|
 
-<sup>1</sup>*wydrukowana edition: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, Microsoft Partner Network (przedsiębiorstwo), Imagine (Premium).*
+<sup>1</sup>*wydrukowana wersji:    Nie do odsprzedaży, Visual Studio Industry Partner (VSIP) ekwiwalentu pełnego wymiaru czasu, Microsoft Partner Network (przedsiębiorstwo), Imagine (Premium).*
 
 *Wersja cyfrowa: MCT Software & Services, Microsoft wycenia Professional (Professional), dyrektor Region (usług pulpitu zdalnego).*
 
-*Nie obejmuje: Imagine (standardowa), BizSpark, MCT Software & Services dla deweloperów*
+*Nie obejmuje:  Wyobraź sobie (metoda standardowa), BizSpark, MCT Software & Services dla deweloperów*
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.

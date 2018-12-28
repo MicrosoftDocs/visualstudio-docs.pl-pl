@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Przywracanie ukrytych poleceń debugera | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Przywracanie ukrytych poleceń debugera | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ee37e72a52f866f5b67afaeacfd248628a3484
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7686ccd303bf47d9c3ef2ba570f2f483a4145d61
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176846"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561333"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>Porady: przywracanie ukrytych poleceń debugera
+# <a name="how-to-restore-hidden-debugger-commands"></a>Instrukcje: Przywracanie ukrytych poleceń debugera
 Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybranie zestawu domyślnego ustawienia środowiska IDE dla Twojego nadrzędnego języka programowania. Domyślne ustawienia IDE w przypadku niektórych języków może ukryć niektórych poleceń debugera.  
   
  Jeśli chcesz korzystać z funkcji debugera, które zostały ukryte przez domyślne ustawienia IDE, można dodać polecenie do menu, korzystając z następującej procedury.  
@@ -76,4 +76,4 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

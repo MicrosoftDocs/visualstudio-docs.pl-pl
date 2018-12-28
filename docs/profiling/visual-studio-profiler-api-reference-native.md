@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063007"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592771"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio interfejsy API profilera (native)
 Profilera Visual Studio interfejsy API umożliwiają programowo kontroli ilości zbieranych danych i wstaw znaczniki zarówno sygnatura czasowa, jak i profilu podczas profilowania. Aby korzystać z natywnych interfejsów API, obejmują *VSPerf.h* nagłówka pliku i Dodaj *VSPerf.lib* w projekcie.  
   
 > [!NOTE]
->  Domyślnie *VSPerf.h* i *VSPerf.lib* znajdują się w folderze o nazwie *PerfSDK*. *\<dysk >: \Program Files\Microsoft 14.0\Team programu Visual Studio Tools\PerfSDK narzędzia* katalogu, na przykład.  
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  
@@ -48,4 +48,4 @@ Profilera Visual Studio interfejsy API umożliwiają programowo kontroli ilości
   
 ## <a name="see-also"></a>Zobacz także  
  [Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)   
- [Przewodnik: korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)
+ [Przewodnik: Za pomocą interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)

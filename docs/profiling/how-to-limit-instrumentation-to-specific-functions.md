@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: ograniczanie Instrumentacji do określonych funkcji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Ograniczanie Instrumentacji do określonych funkcji | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ef6ef7a562f03f84184a86944a93f99c1d13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e145a50c3fdb643affb67989ae11346bf7e30f9
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592862"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Instrukcje: ograniczanie Instrumentacji do określonych funkcji
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Instrukcje: Ograniczanie instrumentacji do określonych funkcji
 Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną funkcję, ustawiając opcje w **zaawansowane** strony **sesji wydajności** ani kierowania stron właściwości binarnych:  
   
 - Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są instrumentowane w instrumentowanych danych binarnych na sesji.  
@@ -46,7 +46,7 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
   
    > [!NOTE]
-   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
+   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), a następnie wpisz **vsinstr /DumpFuncs**  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Ograniczenie Instrumentacji do określonych funkcji w pliku binarnym  
   
@@ -65,9 +65,9 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
   
    > [!NOTE]
-   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
+   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), a następnie wpisz **vsinstr /DumpFuncs**  
   
 ## <a name="see-also"></a>Zobacz także  
  [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)   
- [Instrukcje: ograniczanie Instrumentacji do określonych bibliotek DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Instrukcje: określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Instrukcje: Ograniczenie Instrumentacji do określonych bibliotek DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [Instrukcje: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)

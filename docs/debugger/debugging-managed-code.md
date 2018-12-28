@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "39179482"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561895"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 
-W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych aplikacji lub aplikacje napisane w językach przeznaczonych środowisko uruchomieniowe języka wspólnego, takich jak Visual Basic, C# i C++. Techniki opisane w tym miejscu są techniki wysokiego poziomu. Aby uzyskać więcej informacji, zobacz [za pomocą debugera](../debugger/getting-started-with-the-debugger.md).
+W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych aplikacji lub aplikacje napisane w językach przeznaczonych środowisko uruchomieniowe języka wspólnego, takich jak Visual Basic, C# i C++. Techniki opisane w tym miejscu są techniki wysokiego poziomu. [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -40,7 +40,7 @@ W tym artykule opisano potwierdzenia w zarządzanym kodzie, których warunki, kt
 [Instrukcje „Stop” w języku Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 W tym artykule opisano `Stop` instrukcji, co stanowi alternatywę dla ustawienie punktu przerwania. Przykładowy kod znajduje się również, wraz z porównania między `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.
 
-[Przewodnik: debugowanie formularza Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
+[Przewodnik: Debugowanie formularza Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
 Zapewnia instrukcje krok po kroku dotyczące tworzenia formularzy Windows i debugowanie formularza. Formularz Windows, standardowy składnik zarządzanej aplikacji Windows, jest jednym z najczęściej używanych aplikacji zarządzanych. W tym instruktażu wykorzystano Visual C# i Visual Basic, ale techniki tworzenia formularzy Windows w języku C++ ogólnie wygląda podobnie.
 
 [Debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -49,7 +49,7 @@ Zawiera przykłady kodu, aby umożliwić debugowanie `OnStart` metody to zarząd
 [Debugowanie w trybie mieszanym](../debugger/debugging-mixed-mode-applications.md)  
 W tym artykule omówiono debugowanie aplikacji w trybie mieszanym. Oznacza to, każda aplikacja, która łączy kodu natywnego za pomocą kodu zarządzanego.
 
-[Błąd: Debugowanie nie jest możliwe, ponieważ debuger jądra został wyłączony z poziomu systemu](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+[Błąd: Debugowanie jest niemożliwe, ponieważ w systemie jest włączony debuger jądra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
 W tym artykule opisano komunikat o błędzie występujący, jeśli zostanie podjęta próba debugowanie kodu zarządzanego na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], lub systemu Windows NT, który został uruchomiony w trybie debugowania.
 
 [Optymalizacja i debugowanie JIT](../debugger/jit-optimization-and-debugging.md)  
@@ -58,7 +58,7 @@ Opisuje skutki optymalizację JIT na temat debugowania.
 [Debugowanie LINQ i DLINQ](../debugger/debugging-linq.md)  
 W tym artykule omówiono techniki debugowania zapytań LINQ.
 
-[Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+[Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
 Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
@@ -88,7 +88,7 @@ Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje dotycz
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wskazówki: Debugowanie niestandardowych Windows formantów formularzy w czasie projektowania](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+[Przewodnik: Debugowanie Windows niestandardowych formantów formularzy w czasie projektowania](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 [zabezpieczenia debugera](../debugger/debugger-security.md)
 [debugowania w programie Visual Studio](../debugger/index.md) 
  [ Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

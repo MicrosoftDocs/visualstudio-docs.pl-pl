@@ -2,9 +2,8 @@
 title: CustomParameter, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6f5bf513d9d3582ba05bf7a34471d13743f8de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 2efb89f53244f2a14031ef386021e83c48b5048c
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500686"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561281"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter, element (szablony Visual Studio)
 Zawiera nazwę niestandardowego parametru i wartości do użycia podczas projektu lub elementu jest tworzone na podstawie szablonu.  
@@ -38,8 +37,8 @@ Zawiera nazwę niestandardowego parametru i wartości do użycia podczas projekt
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagane. Nazwa parametru. Format parametrów jest $*nazwa*$.|  
-|`Value`|Wymagane. Wartość zastąpienia dla parametru.|  
+|`Name`|Wymagana. Nazwa parametru. Format parametrów jest $*nazwa*$.|  
+|`Value`|Wymagana. Wartość zastąpienia dla parametru.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  

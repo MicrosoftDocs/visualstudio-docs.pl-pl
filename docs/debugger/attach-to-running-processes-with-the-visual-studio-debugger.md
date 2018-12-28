@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561645"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowania** > **dołączyć do procesu** lub naciśnij **Ctrl**+**Alt** + **P** w programie Visual Studio oraz za pomocą **dołączyć do procesu** okno dialogowe, aby dołączyć debuger do procesu.
 
 Możesz użyć **dołączyć do procesu** Aby debugować aplikacje uruchomione na komputerze lokalnym lub zdalnym, Debuguj kilka procesów jednocześnie, debugowanie aplikacji, które nie zostały utworzone w programie Visual Studio lub debugowanie dowolna aplikacja nie została uruchomiona w programie Visual Studio Debuger jest dołączony. Na przykład jeśli korzystasz z aplikacji bez debugera i napotkała wyjątek, należy można dołączyć debuger do procesu uruchamiania aplikacji i rozpocząć debugowanie.
 
-Aby dowiedzieć się, jak podstawowe debugowania w programie Visual Studio, zobacz [wprowadzenie do debugera](../debugger/getting-started-with-the-debugger.md).
+Aby dowiedzieć się, jak podstawowe debugowania w programie Visual Studio, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Nie masz pewności czy użyć **dołączyć do procesu** dla danego scenariusza debugowania? Zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios). 
@@ -119,7 +119,7 @@ Więcej instrukcje dotyczące debugowania aplikacji ASP.NET, które zostały wdr
    - Aby wyszukać procesy uruchomione na wszystkich kontach użytkownika, wybierz **Pokaż procesy wszystkich użytkowników** pole wyboru.
       
      >[!NOTE]
-     >Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie potwierdzenie okno dialogowe zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie potwierdzenie okno dialogowe zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
 5. W **dołączyć do** pola, upewnij się, typ planu do debugowania kodu, który ma na liście. Wartość domyślna **automatyczne** ustawienie działa w przypadku większości typów aplikacji. 
   
@@ -162,7 +162,7 @@ Szybkie wybieranie uruchomionego procesu można dołączyć do programu Visual S
 |Zdalne debugowanie platformy ASP.NET 4 lub 4.5 na serwerze IIS|Użyj narzędzi zdalnych i **dołączyć do procesu**|*W3wp.exe*|Zobacz [zdalne debugowanie dla platform ASP.NET na zdalnym komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Platforma ASP.NET Core debugowania zdalnego na serwerze IIS|Użyj narzędzi zdalnych i **dołączyć do procesu**|*dotnet.exe*|Wdrożenie aplikacji, zobacz [publikowania w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html). Do debugowania, zobacz [zdalnego debugowania programu ASP.NET Core na zdalnym komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Debugowanie skryptu po stronie klienta na lokalnym serwerze usług IIS, dla typów obsługiwanych aplikacji |Użyj **dołączyć do procesu**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, lub *iexplore.exe*|Debugowanie skryptu musi być włączona. Dla programu Chrome, należy uruchomić dla programu Chrome w trybie debugowania i wybierz pozycję **kodu aparatu Webkit** w **dołączyć do** pola.|
-|Debugowanie aplikacji w języku C#, Visual Basic lub C++ na komputerze lokalnym|Użyj jednej [standardowe debugowanie](../debugger/getting-started-with-the-debugger.md) lub **dołączyć do procesu**|*\<Nazwa aplikacji > .exe*|W większości przypadków użyć standardowego debugowania i nie **dołączyć do procesu**.|
+|Debugowanie aplikacji w języku C#, Visual Basic lub C++ na komputerze lokalnym|Użyj jednej [standardowe debugowanie](../debugger/debugger-feature-tour.md) lub **dołączyć do procesu**|*\<Nazwa aplikacji > .exe*|W większości przypadków użyć standardowego debugowania i nie **dołączyć do procesu**.|
 |Zdalne debugowanie aplikacji pulpitu Windows|Zdalne narzędzia|Brak| Zobacz [zdalne debugowanie aplikacji w języku C# lub Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalne debugowanie aplikacji w języku C++](../debugger/remote-debugging-cpp.md)|
 |Debugowanie aplikacji platformy ASP.NET na komputerze lokalnym, po uruchomieniu aplikacji bez debugera|Użyj **dołączyć do procesu**|*iiexpress.exe*|Może to być przydatne zapewnić aplikacji obciążenia szybciej, takich jak (na przykład) podczas profilowania. |
 |Debugowanie innych typów aplikacji obsługiwanych w proces serwera|Jeśli serwer jest zdalny, należy użyć narzędzia zdalnej i **dołączyć do procesu**|*Chrome.exe*, *iexplore.exe*, lub inne procesy|Jeśli to konieczne, należy użyć Monitora zasobów ułatwiają identyfikację procesu. Zobacz [zdalne debugowanie](../debugger/remote-debugging.md).|

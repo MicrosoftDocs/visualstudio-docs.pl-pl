@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4eae301ca32ef986c76203fd04e7bd6dc9302fec
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634557"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740182"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 
-Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez narzędzie do analizy kodu zarządzanego. Aby uzyskać pomoc dotyczącą konkretnego komunikatu o błędzie, należy wpisać numer błędu w **poszukaj** pola w indeksie.
+Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez narzędzie do analizy kodu zarządzanego.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -45,7 +45,7 @@ Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez 
 |[CA0062](ca0062.md)|Reguła "*RuleId*"odwołanie do zestawu reguł"*RuleSetName*" nie został odnaleziony.|
 |[CA0063](ca0063.md)|Nie można załadować pliku zestawu reguł lub jednej z jego plików zestawu reguł zależnych.|
 |[CA0064](ca0064.md)|Analiza nie została wykonana, ponieważ określonego zestawu reguł nie zawiera żadnych reguł programu FxCop.|
-|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: typ "*TypeName*"zawiera właściwość i pole o tej samej nazwie"*PropertyFieldName*"|
+|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: Typ "*TypeName*"zawiera właściwość i pole o tej samej nazwie"*PropertyFieldName*"|
 |[CA0066](ca0066.md)|Wartość "*VersionID*" udostępniane **dla przełącznika/targetframeworkversion** nie jest rozpoznawaną wersją.|
 |[CA0067](ca0067.md)|Nie znaleziono katalogu.|
 |[CA0068](ca0068.md)|Debugowanie nie można odnaleźć informacji dla zestawu docelowego *"AssemblyName"*.|
@@ -53,12 +53,12 @@ Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez 
 |[CA0070](ca0070.md)|Nie można załadować zestawu lub typu z powodu uprawnień zabezpieczeń.|
 |[CA0501](ca0501.md)|Nie można odczytać raportu wyjściowego.|
 |[CA0502](ca0502.md)|Nieobsługiwany język.|
-|[CA0503](ca0503.md)|Właściwość jest przestarzała. Używana przez właściwość|
+|[CA0503](ca0503.md)|Właściwość jest przestarzała. Użyj właściwości zastępującej|
 |[CA0504](ca0504.md)|Katalog reguł zostało zignorowane, ponieważ nie istnieje|
-|[CA0505](ca0505.md)|Właściwość jest przestarzała. Używana przez właściwość|
+|[CA0505](ca0505.md)|Właściwość jest przestarzała. Użyj właściwości zastępującej|
 |[Błędy polecenia FxCopCmd](fxcopcmd-errors.md)|Błędy analizy kodu zarządzanego.|
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
 - [Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)
-- [Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- [Analiza jakości zarządzanego kodu](../code-quality/code-analysis-for-managed-code-overview.md)

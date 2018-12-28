@@ -3,18 +3,18 @@ title: Użyj narzędzia WhiteSource Bolt korzyści | Dokumentacja firmy Microsof
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/11/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartych w ramach subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935781"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739987"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
@@ -79,14 +79,19 @@ Click the green **Install** button if you are using Azure DevOps Services, or th
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak          |
-| Program Visual Studio Professional (standardowy, roczna w chmurze) | VL, Azure, Retail                                       | Nie jest dostępna                                                           |NAZWA         |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  NAZWA         |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | NAZWA         |
-| Visual Studio Dev Essentials | NAZWA  | Niedostępne |NAZWA |
-| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Nie jest dostępna                                                           |Nie dotyczy         |
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | Nie dotyczy         |
+| Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy |
+| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>*obejmuje: sieci Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje: Inne Not for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Microsoft Partner Network () Professional).*
+<sup>1</sup>*obejmuje:    Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje: Inne Not for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Microsoft Partner Network (Professional ).*
+
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

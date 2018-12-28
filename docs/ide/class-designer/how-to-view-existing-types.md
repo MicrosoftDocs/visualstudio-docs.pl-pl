@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wyświetlanie istniejących typów (Projektant klas)'
+title: 'Instrukcje: Wyświetlanie istniejących typów (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,55 +16,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956656"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684447"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Porady: wyświetlanie istniejących typów w Projektancie klas
+# <a name="how-to-view-existing-types-in-class-designer"></a>Instrukcje: Wyświetlanie istniejących typów w Projektancie klas
 
-Aby wyświetlić istniejącego typu i jej elementów członkowskich, należy dodać jego kształtu do diagramu klas.
+Aby wyświetlić istniejący typ i jej elementów członkowskich, należy dodać jego kształtu do diagramu klas.
 
 Można zobaczyć typy lokalne i typy odwołania. Typ lokalny istnieje w aktualnie otwartym projekcie i jest do odczytu/zapisu. Typ odwołania istnieje w innym projekcie lub w zestawie odwołania i jest tylko do odczytu.
 
-Projektowanie nowych typów w diagramach klas, zobacz [porady: Tworzenie typów za pomocą projektanta klas](how-to-create-types.md).
+Aby zaprojektować nowe typy diagramów klas, zobacz [jak: Tworzenie typów za pomocą projektanta klas](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Aby wyświetlić typy w projekcie na diagramie klasy
 
-1.  Z projektu w **Eksploratora rozwiązań**, otwórz istniejący plik diagramu (.cd) klasy. Lub jeśli nie istnieje żaden diagram klas, dodaj nowy diagram klas do projektu. Zobacz [porady: Dodawanie diagramów klasy do projektów](how-to-add-class-diagrams-to-projects.md).
+1.  Z projektu w **Eksploratora rozwiązań**, otwórz istniejący plik diagramu klasy (.cd). Lub jeśli nie istnieje żaden diagram klas, dodaj nowy diagram klas do projektu. Zobacz [jak: Dodawanie diagramów klas do projektów](how-to-add-class-diagrams-to-projects.md).
 
-2.  Z projektu w **Eksploratora rozwiązań**, przeciągnij pliku kodu źródłowego do diagramu klas.
+2.  Z projektu w **Eksploratora rozwiązań**, przeciągnij plik kodu źródłowego do diagramu klas.
 
     > [!NOTE]
-    > Jeśli rozwiązanie zawiera projekt, który udostępnia kod wielu aplikacjom, można przeciągnąć plików lub kodu do diagramu klas tylko z tych źródeł:
+    > Jeśli rozwiązanie ma projektu, który udostępnia kod przez wiele aplikacji, można przeciągnąć pliki lub kod do diagramu klasy tylko z tych źródeł:
     >
-    > - Projekt aplikacji, który zawiera diagramu
-    > - Udostępnionego projektu, które zostały zaimportowane na podstawie projektu aplikacji
+    > - Projekt aplikacji, który zawiera diagram
+    > - Współdzielony projekt zaimportowany przez projekt aplikacji
     > - Projekt odwołania
     > - Zestaw
 
     Kształty przedstawiające typy zdefiniowane w pliku kodu źródłowego są wyświetlane na diagramie w miejscu, gdzie przeciągnąłeś plik.
 
-Możesz również wyświetlić typów w projekcie, przeciągając je z węzła projektu w co najmniej jeden typ **widoku klasy** do diagramu klas.
+Możesz również wyświetlić typy w projekcie, przeciągając jeden lub więcej typów z węzła projektu w **Widok klas** do diagramu klas.
 
 > [!TIP]
-> Jeśli **widoku klasy** nie jest otwarte, otwórz **widoku klasy** z **widoku** menu.
+> Jeśli **Widok klas** nie jest otwarty, otwórz **Widok klas** z **widoku** menu.
 
-Aby wyświetlić typy w lokalizacji domyślnej na diagramie, wybierz jeden lub więcej typów w **widoku klasy**, kliknij prawym przyciskiem myszy wybranych typów i wybierz **widoku diagramu klas**.
+Aby wyświetlić typy w lokalizacjach domyślnych na diagramie, zaznacz jeden lub więcej typów w **Widok klas**, kliknij prawym przyciskiem myszy wybrane typy i wybierz **Pokaż Diagram klas**.
 
 > [!NOTE]
-> Jeśli zamknięty diagram klas zawierający typ już istnieje w projekcie, diagram klas się otworzy, aby wyświetlić kształt typu. Jeśli jednak nie klasy diagram zawierający typ istnieje w projekcie, **Projektant klas** tworzy nowy diagram klas do projektu i otwarcie go, aby wyświetlić typu.
+> Jeśli zamknięty diagram klas zawierający typ już istnieje w projekcie, diagram klas się otworzy, aby wyświetlić kształt typu. Jednak jeśli nie diagram klas zawierający typ znajduje się w projekcie, **projektanta klas** tworzy nowy diagram klas w projekcie i otwiera go, aby wyświetlić typ.
 
 Przy pierwszym wyświetleniu typu na diagramie, jego kształt pojawia się domyślnie zwinięty. Można rozwinąć kształt, aby wyświetlić jego zawartość.
 
-### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Aby wyświetlić zawartość projektu na diagramie klas
+### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Aby wyświetlić zawartość projektu na diagramie klasy
 
-W **Eksploratora rozwiązań** lub **widoku klasy**, kliknij prawym przyciskiem myszy projekt i wybierz **widoku**, a następnie wybierz **widoku diagramu klas**. Tworzony jest automatycznie wypełniony Diagram klas.
+W **Eksploratora rozwiązań** lub **Widok klas**, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **widoku**, następnie wybierz **Pokaż Diagram klas**. Tworzony jest automatycznie wypełniony Diagram klas.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: wyświetlanie dziedziczenia pomiędzy typami](how-to-view-inheritance-between-types.md)
-- [Porady: dostosowywanie diagramów klasy](how-to-customize-class-diagrams.md)
-- [Wyświetlanie typów i relacji](viewing-types-and-relationships.md)
+- [Instrukcje: Wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)
+- [Instrukcje: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md)
+- [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)

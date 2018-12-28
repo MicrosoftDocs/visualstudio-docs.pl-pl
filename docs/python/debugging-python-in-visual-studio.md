@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068438"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561752"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -84,7 +84,7 @@ Po zatrzymaniu w punkcie przerwania, możesz mieć różne sposoby, aby przejś�
 
 ### <a name="inspect-and-modify-values"></a>Sprawdzanie i modyfikowanie wartości
 
-Po zatrzymaniu debugera, można sprawdzić i modyfikować wartości zmiennych. Można również użyć **Obejrzyj** okna, aby monitorować poszczególne zmienne, a także wyrażeń niestandardowych. (Zobacz [sprawdzanie zmiennych](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) Aby uzyskać ogólne informacje.)
+Po zatrzymaniu debugera, można sprawdzić i modyfikować wartości zmiennych. Można również użyć **Obejrzyj** okna, aby monitorować poszczególne zmienne, a także wyrażeń niestandardowych. (Zobacz [sprawdzanie zmiennych](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) Aby uzyskać ogólne informacje.)
 
 Aby wyświetlić przy użyciu wartości **DataTips**, po prostu umieść kursor myszy nad dowolnej zmiennej w edytorze. Możesz kliknąć na wartości, aby ją zmienić:
 

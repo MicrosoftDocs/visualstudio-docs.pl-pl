@@ -2,9 +2,8 @@
 title: Description — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
@@ -13,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13a93ce9eb5bca506751e215fe74477839e961d9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 897f1576fa029aa38d8f0d0b021d93bc7a81c692
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500803"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561934"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description — element (szablony Visual Studio)
 Określa opis szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  

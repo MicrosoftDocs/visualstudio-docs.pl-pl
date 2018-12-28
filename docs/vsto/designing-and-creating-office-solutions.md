@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating solutions
 - solutions [Office development in Visual Studio], creating
 - Office project types in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671251"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648810"
 ---
 # <a name="design-and-create-office-solutions"></a>Projektowanie i tworzenie rozwiązań pakietu Office
   Visual Studio udostępnia szablony projektów, których można utworzyć kilka różnych typów rozwiązań dla pakietu Office. Ten rozdział dokumentacji zawiera opis szablonów projektów i zawiera wskazówki dotyczące tworzenia projektów pakietu Office. Aby uzyskać informacje o sposobie implementacji dostosowania interfejsu użytkownika oraz kodu po utworzeniu projektu, zobacz [rozwiązań Office tworzenie](../vsto/developing-office-solutions.md).  
@@ -34,7 +34,7 @@ ms.locfileid: "50671251"
 >  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  
   
 ## <a name="create-office-projects"></a>Tworzenie projektów Office  
- Przed rozpoczęciem należy określania wymagań dotyczących i Odkryj typ rozwiązania, które oferuje najlepszym rozwiązaniem. Jeśli na przykład rozwiązania pakietu Office należy uruchomić każdym aplikacji jest używany, dodatku narzędzi VSTO najlepsze uniwersalna, odpowiednia wymagań. Jeśli kod jest ściśle zintegrowany z pojedynczego dokumentu, należy utworzyć dostosowywania poziomie dokumentu. Te typy projektów są dostępne jako szablony projektu Visual Studio. Aby uzyskać więcej informacji na temat szablonów projektu pakietu Office, które są dołączone do programu Visual Studio, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md). Aby uzyskać więcej informacji na temat tworzenia projektów pakietu Office, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Przed rozpoczęciem należy określania wymagań dotyczących i Odkryj typ rozwiązania, które oferuje najlepszym rozwiązaniem. Jeśli na przykład rozwiązania pakietu Office należy uruchomić każdym aplikacji jest używany, dodatku narzędzi VSTO najlepsze uniwersalna, odpowiednia wymagań. Jeśli kod jest ściśle zintegrowany z pojedynczego dokumentu, należy utworzyć dostosowywania poziomie dokumentu. Te typy projektów są dostępne jako szablony projektu Visual Studio. Aby uzyskać więcej informacji na temat szablonów projektu pakietu Office, które są dołączone do programu Visual Studio, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md). Aby uzyskać więcej informacji na temat tworzenia projektów pakietu Office, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Projekty pakietu Office ma funkcje i elementy projektu, które różnią się od innych typów projektów w programie Visual Studio. Na przykład podczas tworzenia projektu na poziomie dokumentu, dokument lub skoroszyt w projekcie można go otworzyć i edytować w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [projekty pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
@@ -51,9 +51,9 @@ ms.locfileid: "50671251"
   
   W przypadku migrowania projektów dodatku narzędzi VSTO, który jest przeznaczony dla .NET Framework 3.5 programu Visual Studio zmiany platformy docelowej projektu do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszego, w zależności od wersji pakietu Office, który został zainstalowany.  
   
-  Jednak po programu Visual Studio zmian platformy docelowej, konieczne może modyfikować część kodu w projekcie, jeżeli będzie używał pewnych funkcji. Aby uzyskać więcej informacji o tym, jak zmienić platformę docelową, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Aby uzyskać więcej informacji o zmianach, konieczne może być w projekcie, zobacz [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+  Jednak po programu Visual Studio zmian platformy docelowej, konieczne może modyfikować część kodu w projekcie, jeżeli będzie używał pewnych funkcji. Aby uzyskać więcej informacji o tym, jak zmienić platformę docelową, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Aby uzyskać więcej informacji o zmianach, konieczne może być w projekcie, zobacz [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Jeśli program Visual Studio zmieni docelową aplikację .NET Framework dla projektu, a używasz ClickOnce do wdrażania rozwiązania, upewnij się, możesz również wybrać odpowiednią wersję programu .NET Framework w **wymagania wstępne** okno dialogowe. Zaznacz to pole wyboru nie zmienia się automatycznie, gdy zmienić platformę docelową dla projektu. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Jeśli program Visual Studio zmieni docelową aplikację .NET Framework dla projektu, a używasz ClickOnce do wdrażania rozwiązania, upewnij się, możesz również wybrać odpowiednią wersję programu .NET Framework w **wymagania wstępne** okno dialogowe. Zaznacz to pole wyboru nie zmienia się automatycznie, gdy zmienić platformę docelową dla projektu. Aby uzyskać więcej informacji, zobacz [jak: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Nie można skierowane do .NET Framework 3.5 lub wyżej w projektach pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] wymagają funkcji, które zostały najpierw wprowadzone w [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
@@ -66,7 +66,7 @@ ms.locfileid: "50671251"
 ### <a name="understand-the-client-profile"></a>Zrozumienie client profile  
  .NET Framework Client Profile jest podzbiorem pełny program .NET Framework. Można kierować platformy .NET Framework Client Profile, należy użyć tylko funkcje klienta w programie .NET Framework, jeśli chcesz udostępnić najszybszy środowisko wdrażania dla rozwiązania pakietu Office. Aby uzyskać więcej informacji, zobacz [profil klienta .NET Framework](/dotnet/framework/deployment/client-profile).  
   
- Podczas tworzenia projektu Office współpracującego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] domyślny. Jeśli chcesz programować dla pełnego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], należy ustawić tę opcję, po utworzeniu projektu. Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+ Podczas tworzenia projektu Office współpracującego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] domyślny. Jeśli chcesz programować dla pełnego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], należy ustawić tę opcję, po utworzeniu projektu. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Tworzenie rozwiązań dla 64-bitowej wersji pakietu Microsoft Office  
  Microsoft Office jest dostępny w wersji 64-bitowe i 32-bitowych. Aby utworzyć rozwiązania pakietu Office, które mogą być uruchamiane w każdej wersji, ustawienie obiektu docelowego platformy dla projektu musi być równa **dowolny Procesor**. Jest to wartość domyślna dla projektów pakietu Office. Aby uzyskać więcej informacji, zobacz [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).  
@@ -96,13 +96,13 @@ ms.locfileid: "50671251"
   
 ## <a name="see-also"></a>Zobacz także  
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)   
- [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Projekty pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Właściwości w projektach pakietu Office](../vsto/properties-in-office-projects.md)   
  [Uruchamianie rozwiązań w różnych wersjach pakietu Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [Porady: aplikacje Office docelowej przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
- [Porady: Ustawianie informacji o konfiguracji dla rozwiązań pakietu Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
+ [Instrukcje: Ustawianie informacji o konfiguracji dla rozwiązań pakietu Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [Użyj funkcji pakietu Office w Visual Studio](../vsto/using-office-functionality-inside-of-visual-studio.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: źródło debugowania środowiska .NET Framework | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Debugowanie źródła .NET Framework | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389283"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443915"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Porady: źródło debugowania środowiska .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Instrukcje: Debugowanie źródła programu .NET Framework
 
 Aby debugować źródła .NET Framework, musisz mieć:
 
@@ -33,9 +33,9 @@ Aby debugować źródła .NET Framework, musisz mieć:
   
 1. W obszarze **narzędzia** (lub **debugowania**) > **opcje** > **debugowania** > **ogólne**, wybierz opcję **Włącz .NET Framework źródła stepping**.  
    
-   - Jeśli masz włączoną opcję tylko mój kod, okno dialogowe ostrzeżenia informuje, że tylko mój kod jest teraz wyłączony. Wybierz **OK**.  
+   - Jeśli masz włączoną opcję tylko mój kod, okno dialogowe ostrzeżenia informuje, że tylko mój kod jest teraz wyłączony. Kliknij przycisk **OK**.  
    
-   - Jeśli nie masz pamięci podręcznej symboli zestawu, okno dialogowe ostrzeżenia informuje, że ustawiono domyślny pamięci podręcznej symboli. Wybierz **OK**.  
+   - Jeśli nie masz pamięci podręcznej symboli zestawu, okno dialogowe ostrzeżenia informuje, że ustawiono domyślny pamięci podręcznej symboli. Kliknij przycisk **OK**.  
    
 1. Wybierz **OK** zamknąć **opcje** okna dialogowego.
   
@@ -55,7 +55,7 @@ Aby debugować źródła .NET Framework, musisz mieć:
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Aby załadować symbole z modułów lub stos wywołań systemu windows  
   
-1. Podczas debugowania, Otwórz okno, wybierając **debugowania** > **Windows** > **modułów** lub **stos wywołań** . 
+1. Podczas debugowania, Otwórz okno, wybierając **debugowania** > **Windows** > **modułów** (lub naciśnij **Ctrl + Alt + U**) lub **debugowania** > **Windows** > **stos wywołań** (**Ctrl + Alt + C**). 
    
 1. Kliknij prawym przyciskiem myszy moduł, dla którego nie załadowano symboli. W **modułów** oknie symbol podczas ładowania stanu jest **stan symboli** kolumny. W **stos wywołań** oknie Stan jest **stan ramki** kolumny i ramki jest wyszarzona. 
    

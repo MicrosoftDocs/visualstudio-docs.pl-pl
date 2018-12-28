@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4d8ef69258d9c672bb5deb01b9c2e0972d4e8303
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f68e27d164164141a8d438326b7d7bb6a3169607
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193547"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648899"
 ---
-# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Wskazówki: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek
+# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -28,7 +28,7 @@ ms.locfileid: "49193547"
  Domyślnie logiki, aby przeprowadzić aktualizacje są dostarczane przez [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] środowiska uruchomieniowego. Środowisko uruchomieniowe tworzy domyślne instrukcji Insert, Update i Delete na podstawie schematu tabeli (definicje kolumn i informacje o kluczu podstawowym). Gdy użytkownik nie chce Użyj zachowania domyślnego, można skonfigurować zachowanie aktualizacji i wyznaczyć określonych procedur składowanych do wykonania niezbędnych operacji wstawiania, aktualizacji, i usuwa wymagane do pracy z danymi w bazie danych. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacje, przy użyciu procedur składowanych](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
->  Ten poradnik wymaga dostępności **InsertCustomer**, **UpdateCustomer**, i **DeleteCustomer** procedury składowane dla bazy danych Northwind. Aby uzyskać szczegółowe informacje o sposobie tworzenia tych procedurach składowanych, zobacz [wskazówki: tworzenie aktualizacji procedury składowanej dla tabeli klientów Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+> Ten poradnik wymaga dostępności **InsertCustomer**, **UpdateCustomer**, i **DeleteCustomer** procedury składowane dla bazy danych Northwind.
   
  Ten przewodnik zawiera kroki, które należy wykonać, aby zastąpić domyślne LINQ do zachowania w czasie wykonywania SQL do zapisywania danych do bazy danych przy użyciu procedur składowanych.  
   
@@ -51,9 +51,9 @@ ms.locfileid: "49193547"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są następujące elementy:  
   
--   Dostęp do wersji programu SQL Server w bazie danych Northwind. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+-   Dostęp do wersji programu SQL Server w bazie danych Northwind.
   
--   **InsertCustomer**, **UpdateCustomer**, i **DeleteCustomer** procedury składowane dla bazy danych Northwind. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie aktualizacji procedury składowanej dla tabeli klientów Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+-   **InsertCustomer**, **UpdateCustomer**, i **DeleteCustomer** procedury składowane dla bazy danych Northwind.
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Tworzenie aplikacji i dodawanie LINQ do klas SQL  
  Ponieważ będzie on pracować z [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy i wyświetlanie danych w formularzu Windows, Utwórz nową aplikację Windows Forms i Dodaj LINQ do klas SQL pliku.  
@@ -86,14 +86,14 @@ ms.locfileid: "49193547"
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Utwórz klasę jednostki klienta i skonfigurować źródło danych z nią  
   
-1.  W **Eksploratora serwera**/**Eksplorator bazy danych**, Znajdź w tabeli klienta w wersji programu SQL Server w bazie danych Northwind. Aby uzyskać więcej informacji, zobacz [porady: łączenie z bazą danych Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
+1.  W **Eksploratora serwera**/**Eksplorator bazy danych**, Znajdź w tabeli klienta w wersji programu SQL Server w bazie danych Northwind.
   
 2.  Przeciągnij **klientów** węzła z **Eksploratora serwera**/**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] powierzchni.  
   
      Klasa jednostki o nazwie **klienta** zostanie utworzony. Posiada właściwości, które odnoszą się do kolumn w tabeli Customers. Klasa jednostki nosi nazwę **klienta** (nie **klientów**), ponieważ reprezentuje on jednego klienta z tabeli Customers.  
   
     > [!NOTE]
-    >  Zmiana nazwy jest to *pluralizacja*. Można je włączyć lub wyłączyć [okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md). Aby uzyskać więcej informacji, zobacz [porady: Włączanie pluralizacja włączać i wyłączać (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    >  Zmiana nazwy jest to *pluralizacja*. Można je włączyć lub wyłączyć [okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md). Aby uzyskać więcej informacji, zobacz [jak: Włącz pluralizacja włączać i wyłączać (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3.  Na **kompilacji** menu, kliknij przycisk **kompilacji UpdatingwithSProcsWalkthrough** do skompilowania projektu.  
   
@@ -252,12 +252,12 @@ ms.locfileid: "49193547"
 10. Naciśnij klawisz F5, a następnie sprawdź, czy usunięto rekord został usunięty z bazy danych.  
   
     > [!NOTE]
-    >  Jeśli aplikacja używa programu SQL Server Express Edition, w zależności od wartości **Kopiuj do katalogu wyjściowego** właściwości pliku bazy danych, zmiany mogą być niewidoczne po naciśnięciu klawisza F5 w kroku 10. Aby uzyskać więcej informacji, zobacz [jak: Manage Local Data Files in Your Project](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
+    > Jeśli aplikacja używa programu SQL Server Express Edition, w zależności od wartości **Kopiuj do katalogu wyjściowego** właściwości pliku bazy danych, zmiany mogą być niewidoczne po naciśnięciu klawisza F5 w kroku 10.
   
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które warto wykonać po utworzeniu [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klas jednostek. Niektóre udoskonalenia, których można dokonać w tej aplikacji są następujące:  
   
--   Implementowanie współbieżności sprawdzanie podczas aktualizacji. Aby uzyskać informacje, zobacz [Optymistyczna współbieżność: omówienie](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+-   Implementowanie współbieżności sprawdzanie podczas aktualizacji. Aby uzyskać informacje, zobacz [optymistycznej współbieżności: Omówienie](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
 -   Dodawanie zapytań LINQ do filtrowania danych. Aby uzyskać informacje, zobacz [wprowadzenie do zapytań LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
@@ -266,6 +266,5 @@ ms.locfileid: "49193547"
  [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Zapytania LINQ to SQL](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [PAVE What's New do tworzenia aplikacji danych w programie Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)
-

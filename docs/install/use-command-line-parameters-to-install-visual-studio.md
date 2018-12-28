@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159727"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561908"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
@@ -56,7 +56,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `update` | Aktualizuje zainstalowany produkt. |
 | `repair` | Naprawia zainstalowany produkt. |
 | `uninstall` | Odinstalowuje zainstalowany produkt. |
-| `export` | **Nowość w 15.9**: Eksportuje wybór instalacji do pliku konfiguracji instalacji. |
+| `export` | **Nowość w 15.9**: Eksportuje wybór instalacji do pliku konfiguracji instalacji. **Uwaga**: Należy używać tylko z vs_installer.exe. |
 
 | **Opcję instalacji** | **Opis** |
 | ----------------------- | --------------- |

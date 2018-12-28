@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160195"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740401"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 
@@ -223,7 +223,7 @@ Można poruszać się i Wyświetl migawki za pomocą **krok do tyłu** i **krok 
 
 ![Okno dialogowe nowego pomocnika wyjątków w programie Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "przyciski krok do tyłu i do przodu")
 
-Aby uzyskać więcej informacji, zobacz [wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu](../debugger/how-to-use-intellitrace-step-back.md) strony.
+Aby uzyskać więcej informacji, zobacz [wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu](../debugger/view-historical-application-state.md) strony.
 
 ### <a name="containerization"></a>Konteneryzacji
 
@@ -278,7 +278,7 @@ Aby uzyskać więcej informacji na temat platformy uniwersalnej systemu Windows,
 
 Jako część obciążenia "Programowanie aplikacji mobilnych przy użyciu platformy .NET" deweloperom zapoznać się z C# .NET i Visual Studio może dostarczać natywnych aplikacji systemów Android, iOS i Windows za pomocą platformy Xamarin. Deweloperzy mogą korzystać takie same możliwości i wydajność podczas pracy z platformą Xamarin dla aplikacji mobilnych, w tym zdalnego debugowania na urządzeniach z systemem Android, iOS i Windows&mdash;bez konieczności uczenia się natywnych kodowania w językach Objective-C lub Java.
 
-Aby uzyskać więcej informacji, zobacz [Visual Studio i Xamarin](../cross-platform/visual-studio-and-xamarin.md) strony.
+Aby uzyskać więcej informacji, zobacz [Visual Studio i Xamarin](/xamarin/) strony.
 
 ### <a name="entitlements-editor"></a>Edytor uprawnień
 
@@ -366,7 +366,7 @@ Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for AI](../ai/about
 Firma Microsoft aktualizuje program Visual Studio 2017 często z nowymi funkcjami, które mogą ułatwić programowanie jeszcze lepsze środowisko. Poniżej przedstawiono podsumowanie niektórych nasze najbardziej znaczące aktualizacje, które znajdują się w eksperymentalnej wersji zapoznawczej:
 
 * **[Na żywo udziału](https://visualstudio.microsoft.com/services/live-share/)**, nowe narzędzie, które pozwala na udostępnianie kodu i kontekst współpracownikom i uzyskać natychmiastowy współpracy dwukierunkowej bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.<br><br>Aby uzyskać więcej informacji, zobacz [często zadawane pytania dotyczące udostępniania na żywo](/visualstudio/liveshare/faq).<br><br>
-* **[Rozszerzenie IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, nową możliwość, która rozszerza Wytwarzanie oprogramowania za pomocą sztucznej Inteligencji do dostarczania uzupełnienia lepiej oparte na kontekście kodu przewodnik deweloperom kodu do wzorców i style ich zespołu, znajdowanie problemów z kodem trudne catch , i przeglądy kodu skoncentrować się na obszarach, które naprawdę mają znaczenie. <br><br>Aby uzyskać więcej informacji, zobacz [IntelliCode — często zadawane pytania](../ide/not-in-toc/intellicode-faq.md).
+* **[Rozszerzenie IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, nową możliwość, która rozszerza Wytwarzanie oprogramowania za pomocą sztucznej Inteligencji do dostarczania uzupełnienia lepiej oparte na kontekście kodu przewodnik deweloperom kodu do wzorców i style ich zespołu, znajdowanie problemów z kodem trudne catch , i przeglądy kodu skoncentrować się na obszarach, które naprawdę mają znaczenie. <br><br>Aby uzyskać więcej informacji, zobacz [IntelliCode — często zadawane pytania](/visualstudio/intellicode/faq).
 
 Chcesz wiedzieć więcej o tym, co jeszcze jest działa w programie Visual Studio 2017? Zobacz [Visual Studio plan](/visualstudio/productinfo/vs2018-roadmap) strony.
 
@@ -376,7 +376,7 @@ Chcesz wiedzieć więcej o tym, co jeszcze jest działa w programie Visual Studi
 
 Jeśli chcesz sugestię o jak możemy ulepszyć program Visual Studio, lub Dowiedz się więcej o opcjach pomocy technicznej produktu, zapoznaj się z artykułem [Porozmawiaj z nami](../ide/talk-to-us.md) strony.
 
-### <a name="report-a-problem"></a>Zgłoś problem
+### <a name="report-a-problem"></a>zgłaszanie problemu
 
  Czasami komunikat nie jest wystarczająca do przekazania pełnego wpływu napotkany problem. Występują zawieszenie, awarii lub innych problemów z wydajnością, możesz w prosty sposób udostępniać Odtwórz kroki i pliki pomocnicze (takie jak zrzuty ekranu i śledzenia i sterty pliki zrzutu) z nami za pomocą **Zgłoś Problem** narzędzia. Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [jak zgłosić problem](how-to-report-a-problem-with-visual-studio-2017.md) strony.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO'
+title: 'Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,19 +17,19 @@ helpviewer_keywords:
 - custom XML parts [Office development in Visual Studio], adding
 - documents [Office development in Visual Studio], custom XML parts
 - application-level add-ins [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b5cbdd401466e2aa5be5efd5824a73477943664
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826899"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648525"
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
   Dane XML można przechowywać w następujące typy dokumentów, tworząc z niestandardowym elementem XML w dodatku VSTO:  
   
 - Skoroszyt programu Microsoft Office Excel.  
@@ -40,7 +40,7 @@ ms.locfileid: "49826899"
   
   Aby uzyskać więcej informacji, zobacz [przegląd części niestandardowy plik XML](../vsto/custom-xml-parts-overview.md).  
   
-  **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programów Excel, PowerPoint i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programów Excel, PowerPoint i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Aby dodać niestandardowe części XML do skoroszytu programu Excel  
   
@@ -86,6 +86,6 @@ ms.locfileid: "49826899"
   
 ## <a name="see-also"></a>Zobacz także  
  [Niestandardowe części XML ― omówienie](../vsto/custom-xml-parts-overview.md)   
- [Porady: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+ [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

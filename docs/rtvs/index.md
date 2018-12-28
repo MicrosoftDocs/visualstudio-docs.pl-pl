@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667018"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804082"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Praca z języka R w programie Visual Studio
 
@@ -43,7 +43,7 @@ Następnie użyj linków poniżej, aby dowiedzieć się więcej o funkcjach jęz
 | [Okno interaktywne](interactive-repl-for-r-in-visual-studio.md) | Zapewnia pełne środowisko REPL dla języka R, umożliwia łatwe uruchamianie kodu w pliku źródłowym, w oknie interaktywnym. | n/d |
 | [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md) | Plotting jest integralną częścią środowiska języka R, a RTVS obsługuje wiele powierzchni niezależnie od systemu windows, każdy z własnych historii i możliwość przenoszenia drukuje między oknami. Wykresy można zapisać mapy bitowej i pliki PDF lub skopiowany do Schowka jako mapa bitowa lub metaplik.  | n/d |
 | [Eksplorator zmiennych](variable-explorer.md) | Sprawdź zmienne w zakresach globalnych lub specyficzne dla pakietu, z możliwością oglądania tabel można sortować i Eksportuj do pliku CSV. | n/d |
-| [Oferujący debugowania](debugging-r-in-visual-studio.md) | Obejmuje integrację z okna interaktywnego. | [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Oferujący debugowania](debugging-r-in-visual-studio.md) | Obejmuje integrację z okna interaktywnego. | [Debugowanie w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
 
 Zobacz też [— często zadawane pytania](faq.md).
 
@@ -53,8 +53,8 @@ Zobacz też [— często zadawane pytania](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Wyślij nam swoją opinię!
 
-1. **Problemy usługi GitHub**: jest najlepszym sposobem, aby skontaktować się z zespołem RTVS [rejestrując problem w serwisie GitHub](https://github.com/Microsoft/RTVS/issues), lub za pomocą **R Tools** > **opinii** menu.
+1. **Problemy usługi GitHub**: Najlepszym sposobem skontaktować się z zespołem RTVS jest [rejestrując problem w serwisie GitHub](https://github.com/Microsoft/RTVS/issues), lub za pomocą **R Tools** > **opinii** menu.
 
 1. **Wyślij uśmiech / łuk w dół**: **R Tools** > **opinii** menu jest szybkim sposobem wysyłania opinii i dołączenie plików dziennika RTVS, aby pomóc w diagnozowaniu problemu. (Dzienniki są zapisywane do *%temp%/RTVSlogs.zip* w przypadku, gdy chcesz wysyłać je oddzielnie.) Rejestrowanie jest wyłączona, jeśli został wyłączony, z telemetrii programu Visual Studio za pośrednictwem **pomocy** > **opinii** > **ustawienia** polecenie menu lub podczas instalacji.
 
-1. **Adres e-mail**: bezpośrednich opinii można wysłać do zespołu w *rtvsuserfeedback (adresem)*.
+1. **adres e-mail**: Możesz wysłać bezpośrednich opinii do zespołu w *rtvsuserfeedback (adresem)*.

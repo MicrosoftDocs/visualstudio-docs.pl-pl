@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672967"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425867"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia protokołu Language Server Protocol
 
@@ -48,46 +48,46 @@ Następujące funkcje LSP są obsługiwane w programie Visual Studio do tej pory
 
 Komunikat | Obsługuje w programie Visual Studio
 --- | ---
-Inicjowanie | Tak
-zainicjowany | Tak
-shutdown | Tak
-Zakończ | Tak
-$/ cancelRequest | Tak
-okno/obiektu | Tak
-Okno/showMessageRequest | Tak
-Okno/logmessage — | Tak
+Inicjowanie | tak
+zainicjowany | tak
+shutdown | tak
+Zakończ | tak
+$/ cancelRequest | tak
+okno/obiektu | tak
+Okno/showMessageRequest | tak
+Okno/logmessage — | tak
 zdarzenia/telemetrii |
 client/registerCapability |
 client/unregisterCapability |
-workspace/didChangeConfiguration | Tak
-workspace/didChangeWatchedFiles | Tak
-obszar roboczy/symbol | Tak
-workspace/executeCommand | Tak
-obszar roboczy/applyEdit | Tak
-textDocument/publishDiagnostics | Tak
-textDocument/didOpen | Tak
-textDocument/didChange | Tak
+workspace/didChangeConfiguration | tak
+workspace/didChangeWatchedFiles | tak
+obszar roboczy/symbol | tak
+workspace/executeCommand | tak
+obszar roboczy/applyEdit | tak
+textDocument/publishDiagnostics | tak
+textDocument/didOpen | tak
+textDocument/didChange | tak
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave | Tak
-textDocument/didClose | Tak
-textDocument/zakończenia | Tak
-ukończenie/rozwiązania. | Tak
-textDocument/po wskazaniu wskaźnikiem | Tak
-textDocument/signatureHelp | Tak
-textDocument/odwołania | Tak
-textDocument/documentHighlight | Tak
-textDocument/documentSymbol | Tak
-textDocument/formatowania | Tak
-textDocument/rangeFormatting | Tak
+textDocument/didSave | tak
+textDocument/didClose | tak
+textDocument/zakończenia | tak
+ukończenie/rozwiązania. | tak
+textDocument/po wskazaniu wskaźnikiem | tak
+textDocument/signatureHelp | tak
+textDocument/odwołania | tak
+textDocument/documentHighlight | tak
+textDocument/documentSymbol | tak
+textDocument/formatowania | tak
+textDocument/rangeFormatting | tak
 textDocument/onTypeFormatting |
-textDocument/definicji | Tak
-textDocument/codeAction | Tak
+textDocument/definicji | tak
+textDocument/codeAction | tak
 textDocument/codeLens |
 Funkcja codeLens/rozwiązania. |
 textDocument/documentLink |
 documentLink/resolve |
-textDocument/zmiany nazwy | Tak
+textDocument/zmiany nazwy | tak
 
 ## <a name="getting-started"></a>Wprowadzenie
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -242,8 +242,8 @@ Kliknij pozycję Nowy, aby utworzyć nowy element zawartości:
 
 ![Definiowanie zasobów MEF](media/lsp-define-asset.png)
 
-* **Type**: Microsoft.VisualStudio.MefComponent
-* **Źródło**: Projekt w bieżącym rozwiązaniu
+* **Typ**: Microsoft.VisualStudio.MefComponent
+* **źródło**: Projekt w bieżącym rozwiązaniu
 * **Projekt**: [project]
 
 ### <a name="content-type-definition"></a>Definicja typu zawartości
@@ -326,8 +326,8 @@ Wykonaj następujące kroki poniżej, aby dodać obsługę ustawień do rozszerz
 
    ![Edytowanie zasobów pakietu vspackage](media/lsp-add-vspackage-asset.png)
 
-   * **Type**: Microsoft.VisualStudio.VsPackage
-   * **Źródło**: plik w systemie plików
+   * **Typ**: Microsoft.VisualStudio.VsPackage
+   * **źródło**: Plików w systemie plików
    * **Ścieżka**: [ścieżka do Twojej *.pkgdef* plików]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Edytowanie ustawień dla obszaru roboczego użytkownika

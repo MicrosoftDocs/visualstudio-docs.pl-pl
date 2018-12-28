@@ -36,17 +36,17 @@ helpviewer_keywords:
 - custom XML parts, content controls
 - templates [Office development in Visual Studio], content controls
 - BuildingBlockGalleryContentControl class
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a4cb82609ef8f1a37379c1451e733e8b046313e2
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672902"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441525"
 ---
 # <a name="content-controls"></a>Formanty zawartości
   Formanty zawartości umożliwiają dla Ciebie dokumentów projektów i szablonów, które mają następujące funkcje:  
@@ -72,13 +72,13 @@ ms.locfileid: "50672902"
   
 - Powiąż części dokumentu lub szablonu z danymi. Formanty zawartości można powiązać obiekty zarządzane w polach bazy danych [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementy XML, które są przechowywane w dokumencie i innych źródeł danych.  
   
-  W projektach na poziomie dokumentu można dodać kontrolek zawartości do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO formanty zawartości można dodać do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  W projektach na poziomie dokumentu można dodać kontrolek zawartości do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO formanty zawartości można dodać do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Formanty zawartości można użyć tylko w dokumentach, które są zapisane w formacie Open XML. Formanty zawartości nie można używać w dokumentach, które są zapisane w dokumencie programu Word 97 – 2003 (*doc*) format.  
   
 ## <a name="types-of-content-controls"></a>Typy kontrolek zawartości  
- Istnieje dziewięciu różne rodzaje formantów zawartości, które można dodać do dokumentów. Większość formanty zawartości mają odpowiedni typ w <xref:Microsoft.Office.Tools.Word> przestrzeni nazw. Możesz również użyć ogólnego <xref:Microsoft.Office.Tools.Word.ContentControl>, który może reprezentować jedną z dostępnych kontrolek zawartości. Aby uzyskać wskazówki, który demonstruje sposób używania każdego z dostępnych kontrolek zawartości, zobacz [wskazówki: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+ Istnieje dziewięciu różne rodzaje formantów zawartości, które można dodać do dokumentów. Większość formanty zawartości mają odpowiedni typ w <xref:Microsoft.Office.Tools.Word> przestrzeni nazw. Możesz również użyć ogólnego <xref:Microsoft.Office.Tools.Word.ContentControl>, który może reprezentować jedną z dostępnych kontrolek zawartości. Aby uzyskać wskazówki, który demonstruje sposób używania każdego z dostępnych kontrolek zawartości, zobacz [instruktażu: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Tworzenie galerii bloku  
  Galeria modułów konstrukcyjnych umożliwia użytkownikom wybranie z listy *bloki konstrukcyjne dokumentu* do wstawienia do dokumentu. Blok konstrukcyjny dokumentu jest zawartość, która została utworzona w celu można użyć wiele razy, takie jak wspólne stronę tytułową, sformatowania tabeli lub nagłówkiem. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Aby uzyskać więcej informacji na temat bloków konstrukcyjnych, zobacz [Nowości dla deweloperów w programie Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
@@ -112,15 +112,15 @@ ms.locfileid: "50672902"
 ### <a name="generic-content-control"></a>Ogólny formantu zawartości  
  Jest ogólny formantu zawartości <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu, który może reprezentować dowolny z dostępnych typów formantów zawartości. Możesz zmienić <xref:Microsoft.Office.Tools.Word.ContentControl> obiekt, aby zachowywać się jak innego typu formantu zawartości przy użyciu <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A> właściwości. Na przykład, jeśli tworzysz <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu, że reprezentuje zwykłego tekstu kontrolować, można zmienić jej w czasie wykonywania, aby zachowuje się jak pole kombi.  
   
- Możesz utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektów tylko w czasie wykonywania, nie w czasie projektowania. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ Możesz utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektów tylko w czasie wykonywania, nie w czasie projektowania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 ## <a name="common-features-of-content-controls"></a>Często używane funkcje kontrolek zawartości  
  Formanty najbardziej zawartości mają zestaw elementów członkowskich, które służą do wykonywania typowych zadań. W poniższej tabeli opisano niektóre zadania, które można wykonać przy użyciu tych elementów członkowskich.  
   
 |Dla tego zadania:|wykonaj następujące czynności:|  
 |--------------------|--------------|  
-|Pobieranie lub ustawianie tekstu wyświetlanego w kontrolce.|Użyj **tekstu** właściwości. **Uwaga:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> i <xref:Microsoft.Office.Tools.Word.ContentControl> typów nie ma tej właściwości.|  
-|Pobierz lub ustaw tymczasowe tekst, który jest wyświetlany w formancie, dopóki użytkownik nie dokona edycji formantu, formant jest wypełniony danymi ze źródła danych lub zawartość formantu są usuwane.|Użyj **PlaceholderText** właściwości. **Uwaga:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> typ nie ma tej właściwości.|  
+|Pobieranie lub ustawianie tekstu wyświetlanego w kontrolce.|Użyj **tekstu** właściwości. **Uwaga:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> i <xref:Microsoft.Office.Tools.Word.ContentControl> typów nie ma tej właściwości.|  
+|Pobierz lub ustaw tymczasowe tekst, który jest wyświetlany w formancie, dopóki użytkownik nie dokona edycji formantu, formant jest wypełniony danymi ze źródła danych lub zawartość formantu są usuwane.|Użyj **PlaceholderText** właściwości. **Uwaga:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> Typ nie ma tej właściwości.|  
 |Pobieranie lub Ustawianie tytułu, który jest wyświetlany w obramowania formantu zawartości, gdy użytkownik kliknie przycisk.|Użyj **tytuł** właściwości.|  
 |Usuń kontrolki z dokumentu automatycznie po użytkownik dokona edycji formantu. (Tekst w kontrolce pozostaje w dokumencie).|Użyj **tymczasowe** właściwości.|  
 |Uruchom kod, gdy użytkownik kliknie w formancie zawartości lub gdy kursor jest przenoszony do formantu zawartości programowo.|Obsługa <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> zdarzeń formantu.|  
@@ -142,7 +142,7 @@ ms.locfileid: "50672902"
 > [!NOTE]  
 >  Jeśli tworzysz <xref:Microsoft.Office.Tools.Word.GroupContentControl> zawierającą osadzone formanty zawartości, embedded formanty zawartości nie są automatycznie chronione. Należy użyć **LockContents** właściwości każdego z osadzonych formantu, aby uniemożliwić użytkownikom edytowanie ich zawartości.  
   
- Aby uzyskać więcej informacji o jak ochrona części dokumentów za pomocą formantów zawartości, zobacz [porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Aby uzyskać więcej informacji o jak ochrona części dokumentów za pomocą formantów zawartości, zobacz [jak: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ##  <a name="DataBinding"></a> Wiązanie danych z kontrolkami zawartości  
  Aby wyświetlić dane w dokumentach, powiązania kontrolki zawartości ze źródłem danych. Po zaktualizowaniu źródło danych zmiany zostały uwzględnione formantu zawartości. Można także zapisać zmiany do źródła danych.  
@@ -158,7 +158,7 @@ ms.locfileid: "50672902"
 ### <a name="use-the-windows-forms-data-binding-model"></a>Przy użyciu modelu Windows Forms powiązania danych  
  Większość zawartości kontrolki obsługuje model powiązania proste dane, który korzysta z Windows Forms. Proste powiązanie danych oznacza, że kontrolka jest powiązana z elementu danych jednego, takiego jak wartość w kolumnie tabeli danych. Aby uzyskać więcej informacji, zobacz [powiązanie danych oraz Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- W projektach na poziomie dokumentu, można powiązać danych z kontrolkami zawartości przy użyciu **źródeł danych** okna [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji na temat dodawania powiązanych z danymi kontrolek zawartości do dokumentów, zobacz [porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md) i [porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+ W projektach na poziomie dokumentu, można powiązać danych z kontrolkami zawartości przy użyciu **źródeł danych** okna [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji na temat dodawania powiązanych z danymi kontrolek zawartości do dokumentów, zobacz [jak: Zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md) i [jak: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
  W poniższej tabeli wymieniono formantami zawartości, które można powiązać danego typu danych w **źródeł danych** okna.  
   
@@ -170,7 +170,7 @@ ms.locfileid: "50672902"
   
  W poziomie dokumentu i projektów dodatku VSTO można powiązać kontrolki zawartości ze źródłem danych programowo przy użyciu <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metody <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości formantu. Jeśli to zrobisz, Przekaż w ciągu **tekstu** do *propertyName* parametru <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metody. **Tekstu** właściwość jest domyślna właściwość wiązanie danych kontrolek zawartości.  
   
- Formanty zawartości obsługują także powiązanie dwukierunkowe danych, w którym zmiany w formancie są aktualizowane w źródle danych. Aby uzyskać więcej informacji, zobacz [porady: aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Formanty zawartości obsługują także powiązanie dwukierunkowe danych, w którym zmiany w formancie są aktualizowane w źródle danych. Aby uzyskać więcej informacji, zobacz [jak: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
 >  Formanty zawartości nie obsługują złożone powiązanie danych. Jeżeli powiążesz <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> lub <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ze źródłem danych przy użyciu modelu danych programu Windows Forms, użytkownicy będą widzieć tylko jedną wartość, po kliknięciu formantu. Jeśli chcesz powiązać te kontrolki do zestawu wartości danych, które użytkownicy mogą wybierać spośród tych kontrolek można powiązać elementy w niestandardowym elementem XML.  
@@ -188,7 +188,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- Aby uzyskać wskazówki, który demonstruje, jak powiązać formanty zawartości do niestandardowych części XML bardziej szczegółowo, zobacz [wskazówki: powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Aby uzyskać wskazówki, który demonstruje, jak powiązać formanty zawartości do niestandardowych części XML bardziej szczegółowo, zobacz [instruktażu: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
  Gdy powiąże formant zawartości z niestandardowym elementem XML powiązanie dwukierunkowe danych jest automatycznie włączone. Jeśli użytkownik dokona edycji tekstu w kontrolce, odpowiednie elementy XML są automatycznie aktualizowane. Podobnie jeśli wartości elementów w niestandardowych części XML zostanie zmieniony, formanty zawartości, które są powiązane elementy XML wyświetli nowe dane.  
   
@@ -229,7 +229,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="event-limitations"></a>Zdarzenia ograniczenia  
  Formanty zawartości nie są oferowane zdarzenie, które jest wywoływane, gdy użytkownik zmieni tekst lub innych elementów w formancie. Na przykład, nie ma żadnego zdarzenia, które jest wywoływane, gdy użytkownik wybierze inny element w <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> lub <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
   
- Aby określić, gdy użytkownik edytuje zawartość formantu zawartości, można powiązać kontrolkę z niestandardowym elementem XML i następnie obsłużyć <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> zdarzeń. To zdarzenie jest wywoływane, gdy użytkownik zmieni zawartości formantu, który jest powiązany z niestandardowym elementem XML. Aby uzyskać przewodnik pokazuje, jak powiązać kontrolkę zawartości do niestandardowych części XML, zobacz [wskazówki: powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Aby określić, gdy użytkownik edytuje zawartość formantu zawartości, można powiązać kontrolkę z niestandardowym elementem XML i następnie obsłużyć <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> zdarzeń. To zdarzenie jest wywoływane, gdy użytkownik zmieni zawartości formantu, który jest powiązany z niestandardowym elementem XML. Aby uzyskać przewodnik pokazuje, jak powiązać kontrolkę zawartości do niestandardowych części XML, zobacz [instruktażu: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ###  <a name="checkbox"></a> Formanty zawartości pól wyboru w projektach programu Word  
  Word 2010 wprowadzono nowy typ formantu zawartości, który reprezentuje pole wyboru. Jednak [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nie zapewnia odpowiedni typ CheckBoxContentControl można ich używać w projektach pakietu Office. Aby utworzyć kontrolkę zawartości pola wyboru w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub w projekcie programu Word 2010, użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> metodę w celu utworzenia <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu i przekaż <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> wartości do metody, aby określić kontrolkę zawartości pola wyboru. Poniższy przykład kodu pokazuje, jak to zrobić.  
@@ -239,8 +239,8 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
 ## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
- [Porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Wskazówki: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
+ [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Przewodnik: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

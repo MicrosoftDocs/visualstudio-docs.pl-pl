@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 68c565091deeef19436d3a2efaeb9ccbc15aa1d3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219734"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648660"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,9 +228,8 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Przetestuj formularz  
- Teraz można przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami.  
-  
-#### <a name="to-test-the-form"></a>Aby przetestować formularz  
+
+Teraz można przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami.
   
 1.  Wybierz **F5** do uruchomienia aplikacji.  
   
@@ -243,15 +242,15 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
      Pole tekstowe wyświetla schematu XML w pliku XML.  
   
 ## <a name="next-steps"></a>Następne kroki  
- W tym instruktażu dowiesz się, podstawowe informacje dotyczące odczytywania pliku XML do zestawu danych, a także do tworzenia schematów na podstawie zawartości pliku XML. Poniżej przedstawiono niektóre zadania, które użytkownik może zrobić dalej:  
+
+W tym instruktażu dowiesz się, podstawowe informacje dotyczące odczytywania pliku XML do zestawu danych, a także do tworzenia schematów na podstawie zawartości pliku XML. Poniżej przedstawiono niektóre zadania, które użytkownik może zrobić dalej:  
   
 -   Edytowanie danych w zestawie danych i zapisu go wycofać jako XML. Aby uzyskać więcej informacji, zobacz <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Edytowanie danych w zestawie danych, a następnie zapisać ją z bazą danych. Aby uzyskać więcej informacji, zobacz [zapisywanie danych](../data-tools/saving-data.md).  
+-   Edytowanie danych w zestawie danych, a następnie zapisać ją z bazą danych.
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki dotyczące danych](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [Przygotowanie aplikacji na odbieranie danych](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-

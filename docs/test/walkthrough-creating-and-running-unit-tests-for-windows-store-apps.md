@@ -14,14 +14,14 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 66a107fbd738bc26fdf608223ff43f958754e3ae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87f7b724f2b7712e4318bc2bfbef4f06ee5ee9bb
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065303"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802488"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
 
 Program Visual Studio obejmuje obsługę aplikacji uniwersalnych platformy Windows (UWP) Testy jednostkowe. Obejmuje szablony projektów testów jednostkowych dla języka Visual C#, Visual Basic i Visual C++.
 
@@ -108,5 +108,5 @@ W **Edytor kodu**, Edytuj test jednostkowy oraz Dodaj potwierdzenia i logikę wy
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Testowanie aplikacji platformy uniwersalnej systemu Windows z programem Visual Studio](../test/testing-store-apps-with-visual-studio.md)
+- [Testowanie aplikacji platformy uniwersalnej systemu Windows z programem Visual Studio](../test/unit-test-your-code.md)
 - [Tworzenie i testowanie aplikacji platformy uniwersalnej systemu Windows](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

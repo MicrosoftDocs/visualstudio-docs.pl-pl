@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1032e3db1513f628e540643acf7b1d98f89b5bff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de928086a2f8cb15d7d904359b573a1f9c4535b2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865599"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562324"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, których możesz nie mieliby, szczególnie w przypadku debugowania zdalnego. Złośliwy debuger może skutkować problemem dla całego zniszczenia na maszynie debugowany.  
@@ -39,7 +39,7 @@ Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, któr
 ### <a name="managed-debugging-security"></a>Zarządzanie debugowaniem zabezpieczeń  
  Poniżej przedstawiono ogólne zalecenia, które mają zastosowanie do wszystkich zarządzanych debugowania.  
   
-- Należy zachować ostrożność podczas dołączania do procesu niezaufanego użytkownika: Jeśli tak zrobisz, zakładać, że jest zaufane. Podczas próby dołączyć do procesu niezaufanego użytkownika potwierdzenia okno dialogowe Ostrzeżenie zabezpieczeń będą wyświetlane pytaniem, czy chcesz dołączyć do procesu. "Zaufanych użytkowników" należy uwzględnić, a zestaw standardowych użytkowników często definiowane na maszynach mających systemu.NET Framework, takich jak **aspnet**, **localsystem**, **networkservice**, i **localservice**. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+- Należy zachować ostrożność podczas dołączania do procesu niezaufanego użytkownika: Jeśli tak zrobisz, zakładać, że jest zaufane. Podczas próby dołączyć do procesu niezaufanego użytkownika potwierdzenia okno dialogowe Ostrzeżenie zabezpieczeń będą wyświetlane pytaniem, czy chcesz dołączyć do procesu. "Zaufanych użytkowników" należy uwzględnić, a zestaw standardowych użytkowników często definiowane na maszynach mających systemu.NET Framework, takich jak **aspnet**, **localsystem**, **networkservice**, i **localservice**. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
 - Należy zachować ostrożność podczas pobierania z projektem Internetu i załadowanie go do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jest to bardzo ryzykowne nawet bez debugowania. Gdy to zrobisz, są przy założeniu projektu i kodu, który zawiera są godne zaufania.  
   
@@ -81,6 +81,5 @@ Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, któr
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)   
- [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Ostrzeżenie o zabezpieczeniach: debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md) [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
+ [Ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

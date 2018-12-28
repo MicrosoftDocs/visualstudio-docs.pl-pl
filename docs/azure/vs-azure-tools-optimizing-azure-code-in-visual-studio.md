@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: 2ce6ca1ed33d1d521a0273816a6055d30bf13098
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 043219fa46907ca3ff95cd4663f720f9cbd3f56d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057686"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803125"
 ---
 # <a name="optimizing-your-azure-code"></a>Optymalizacja kodu platformy Azure
 Podczas programowania używasz aplikacje korzystające z Microsoft Azure, istnieją pewne praktyk kodowania, które należy wykonać, aby pomóc uniknąć problemów z skalowalność aplikacji, zachowanie i wydajność w środowisku chmury. Firma Microsoft udostępnia narzędzia do analizy kodu platformy Azure, rozpoznaje i identyfikuje kilka z tych problemów często napotykanych i pomoże Ci je rozwiązać. Możesz pobrać narzędzia w programie Visual Studio za pomocą narzędzia NuGet.
@@ -36,7 +36,7 @@ Udostępnij swoje pomysły i opinie na [opinii analizy kodu Azure](http://go.mic
 ### <a name="reason"></a>Przyczyna
 Domyślnie tryb stanu sesji, które są określone w pliku web.config jest w trakcie. Ponadto jeśli żadnego wpisu określone w pliku konfiguracji, tryb stanu sesji domyślnie w procesie. Tryb w procesie przechowuje stanu sesji w pamięci na serwerze sieci web. Po ponownym uruchomieniu wystąpienia lub nowe wystąpienie jest używany do równoważenia obciążenia lub obsługę trybu failover, stan sesji, przechowywane w pamięci na serwerze sieci web nie są zapisywane. Ta sytuacja zapobiega aplikację jest skalowalna w chmurze.
 
-Stanu sesji programu ASP.NET obsługuje kilka opcji innego magazynu dla danych stanu sesji: InProc, StateServer, SQLServer, niestandardowe i Off. Zaleca się używać trybu niestandardowego do przechowywania danych na zewnętrznego magazynu stanu sesji, takie jak [dostawcy stanu sesji usługi Azure redis Cache](http://go.microsoft.com/fwlink/?LinkId=401521).
+Stanu sesji programu ASP.NET obsługuje kilka opcji innego magazynu danych stanu sesji: InProc, StateServer, SQLServer, niestandardowe i Off. Zaleca się używać trybu niestandardowego do przechowywania danych na zewnętrznego magazynu stanu sesji, takie jak [dostawcy stanu sesji usługi Azure redis Cache](http://go.microsoft.com/fwlink/?LinkId=401521).
 
 ### <a name="solution"></a>Rozwiązanie
 Jedno rozwiązanie zalecane jest przechowywanie stanu sesji usługi zarządzana pamięć podręczna. Dowiedz się, jak używać [dostawcy stanu sesji usługi Azure redis Cache](http://go.microsoft.com/fwlink/?LinkId=401521) do przechowywania Twojego stanu sesji. Można również przechowywanie stanu sesji w innych miejscach, aby upewnić się, że aplikacja jest skalowalna w chmurze. Aby dowiedzieć się więcej na temat rozwiązań alternatywnych, przeczytaj [trybów stanu sesji](https://msdn.microsoft.com/library/ms178586).
@@ -58,7 +58,7 @@ Umieść wszystkie operacje asynchroniczne poza [Run()](https://msdn.microsoft.c
 
 Poniższy fragment kodu przedstawia poprawki kodu dla tego problemu:
 
-```
+```csharp
 public override void Run()
 {
     RunAsync().Wait();
@@ -101,7 +101,7 @@ Aby zwiększyć bezpieczeństwo usługi Azure Active Directory zastępuje ACS uw
 ### <a name="solution"></a>Rozwiązanie
 Korzystanie z uwierzytelniania sygnatury dostępu Współdzielonego w aplikacjach. Poniższy przykład pokazuje, jak uzyskać dostęp do przestrzeni nazw usługi service bus lub jednostki za pomocą istniejącego tokenu sygnatury dostępu Współdzielonego.
 
-```
+```csharp
 MessagingFactory listenMF = MessagingFactory.Create(endpoints, new StaticSASTokenProvider(subscriptionToken));
 SubscriptionClient sc = listenMF.CreateSubscriptionClient(topicPath, subscriptionName);
 BrokeredMessage receivedMessage = sc.Receive();
@@ -136,7 +136,7 @@ Aby zwiększyć wydajność platformy Azure infrastruktura obsługi komunikatów
 
 Oto przykład użycia **OnMessage** do odbierania komunikatów.
 
-```
+```csharp
 void ReceiveMessages()
 {
     // Initialize message pump options.
@@ -147,7 +147,7 @@ void ReceiveMessages()
 
     // Start receiving messages.
     QueueClient client = QueueClient.Create("myQueue");
-    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is recieved, calling close on the client will stop the pump.
+    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is received, calling close on the client will stop the pump.
     {
         // Process the message.
     }, options);
@@ -157,7 +157,7 @@ void ReceiveMessages()
 
 Oto przykład użycia **Receive** czas oczekiwania, serwer domyślny.
 
-```
+```csharp
 string connectionString =  
 CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
@@ -190,7 +190,7 @@ while (true)
 
 Oto przykład użycia **Receive** czas oczekiwania, serwer inny niż domyślny.
 
-```
+```csharp
 while (true)  
 {   
    BrokeredMessage message = Client.Receive(new TimeSpan(0,1,0));
@@ -248,7 +248,7 @@ Partycjonowanie tematów i kolejek usługi Service Bus, ponieważ ogólną przep
 ### <a name="solution"></a>Rozwiązanie
 Poniższy fragment kodu przedstawia sposób partycjonowanie jednostki do obsługi komunikatów.
 
-```
+```csharp
 // Create partitioned topic.
 NamespaceManager ns = NamespaceManager.CreateFromConnectionString(myConnectionString);
 TopicDescription td = new TopicDescription(TopicName);
@@ -277,7 +277,7 @@ Usuń instrukcję, która ustawia czas rozpoczęcia zasady dostępu współdziel
 
 Poniższy fragment kodu pokazuje poprawki kodu dla tego problemu.
 
-```
+```csharp
 // The shared access policy provides  
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -309,7 +309,7 @@ Aby uzyskać więcej informacji na temat zarządzania zabezpieczeniami, zobacz w
 
 Oto przykład nie określając godziny rozpoczęcia zasady dostęp współdzielony.
 
-```
+```csharp
 // The shared access policy provides  
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -324,7 +324,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 
 Oto przykład określenia godziny rozpoczęcia dostęp współdzielony zasad z okresem ważności zasad więcej niż pięć minut.
 
-```
+```csharp
 // The shared access policy provides  
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -367,7 +367,7 @@ with
 
 Poniżej przedstawiono przykładowy sposób zapisać ustawienia konfiguracji w pliku App.config lub Web.config. Dodaj ustawienia w sekcji appSettings pliku konfiguracji. Poniżej znajduje się plik Web.config w poprzednim przykładzie kodu.
 
-```
+```xml
 <appSettings>
     <add key="webpages:Version" value="3.0.0.0" />
     <add key="webpages:Enabled" value="false" />
@@ -396,7 +396,7 @@ Store parametry połączenia w środowiskach platformy Azure i plików konfigura
 * W przypadku aplikacji sieci web obsługiwane przez usługi IIS umożliwiają przechowywanie parametrów połączenia pliku web.config.
 * W przypadku aplikacji ASP.NET vNext configuration.json do przechowywania używa parametrów połączenia.
 
-Aby uzyskać informacje na temat korzystania z plików konfiguracji, takich jak plik web.config lub app.config, zobacz [wskazówki dotyczące konfigurowania sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Aby uzyskać informacje, jak usługa Azure działania zmiennych środowiskowych, zobacz [witryny sieci Web systemu Azure: How Application Strings and pracy ciągów połączenia](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Aby uzyskać informacje na przechowywanie parametrów połączenia w kontroli źródła, zobacz [należy unikać umieszczania poufne informacje, takie jak parametry połączenia w plikach, które są przechowywane w repozytorium kodu źródłowego](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Aby uzyskać informacje na temat korzystania z plików konfiguracji, takich jak plik web.config lub app.config, zobacz [wskazówki dotyczące konfigurowania sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Aby uzyskać informacje, jak usługa Azure działania zmiennych środowiskowych, zobacz [witryny sieci Web systemu Azure: Sposób działania ciągów Application Strings and połączenia](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Aby uzyskać informacje na przechowywanie parametrów połączenia w kontroli źródła, zobacz [należy unikać umieszczania poufne informacje, takie jak parametry połączenia w plikach, które są przechowywane w repozytorium kodu źródłowego](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Użyj pliku konfiguracji diagnostyki
 ### <a name="id"></a>ID
@@ -408,12 +408,12 @@ Zamiast konfigurować ustawienia diagnostyki w kodzie, takie jak za pomocą Micr
 Udostępnij swoje pomysły i opinie na [opinii analizy kodu Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Przyczyna
-Przed Azure SDK 2.5, (która korzysta z usługi Diagnostyka Azure 1.3), usługi Azure Diagnostics (WAD) może zostać skonfigurowany przy użyciu kilku różnych metod: dodanie go do obiektu blob konfiguracji w magazynie, przy użyciu kodu imperatywnego, konfiguracja deklaratywne lub wartość domyślną Konfiguracja. Jednak preferowany sposób, aby skonfigurować diagnostykę jest użycie plik konfiguracyjny XML (diagnostics.wadcfg lub diagnositcs.wadcfgx dla zestawu SDK 2.5 i nowszych) w projekcie aplikacji. W tym podejściu pliku diagnostics.wadcfg całkowicie definiuje konfigurację można zaktualizować i ponownie wdrażana w momencie. Mieszanie korzystanie z pliku konfiguracji diagnostics.wadcfg przy użyciu metody programowe ustawienia konfiguracji za pomocą [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)lub [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)można klas wprowadzać w błąd. Zobacz [inicjowania lub zmiana konfiguracji diagnostyki Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Aby uzyskać więcej informacji.
+Przed Azure SDK 2.5, (która korzysta z usługi Diagnostyka Azure 1.3), usługi Azure Diagnostics (WAD) może zostać skonfigurowany przy użyciu kilku różnych metod: dodanie go do obiektu blob konfiguracji w magazynie, przy użyciu kodu imperatywnego, konfiguracja deklaratywne lub wartość domyślną Konfiguracja. Jednak preferowany sposób, aby skonfigurować diagnostykę jest użycie plik konfiguracyjny XML (diagnostics.wadcfg lub diagnostics.wadcfgx dla zestawu SDK 2.5 i nowszych) w projekcie aplikacji. W tym podejściu pliku diagnostics.wadcfg całkowicie definiuje konfigurację można zaktualizować i ponownie wdrażana w momencie. Mieszanie korzystanie z pliku konfiguracji diagnostics.wadcfg przy użyciu metody programowe ustawienia konfiguracji za pomocą [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)lub [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)można klas wprowadzać w błąd. Zobacz [inicjowania lub zmiana konfiguracji diagnostyki Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Aby uzyskać więcej informacji.
 
 Począwszy od 1.3 WAD (dołączone do zestawu SDK Azure 2.5), już nie jest możliwe użycie kodu, aby skonfigurować diagnostykę. Co w efekcie można podać tylko konfiguracji podczas stosowania lub aktualizowania rozszerzenie diagnostyki.
 
 ### <a name="solution"></a>Rozwiązanie
-Korzystanie z projektanta konfiguracji diagnostyki, aby przenieść ustawienia diagnostyczne do pliku konfiguracji diagnostyki (diagnositcs.wadcfg lub diagnositcs.wadcfgx dla zestawu SDK 2.5 i nowszych). Zalecane jest również, że instalujesz program [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) i korzystać z najnowszych funkcji diagnostyki.
+Korzystanie z projektanta konfiguracji diagnostyki, aby przenieść ustawienia diagnostyczne do pliku konfiguracji diagnostyki (diagnostics.wadcfg lub diagnostics.wadcfgx dla zestawu SDK 2.5 i nowszych). Zalecane jest również, że instalujesz program [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) i korzystać z najnowszych funkcji diagnostyki.
 
 1. W menu skrótów dla roli, który chcesz skonfigurować wybierz polecenie Właściwości, a następnie wybierz kartę Konfiguracja.
 2. W **diagnostyki** sekcji, upewnij się, że **Włącz diagnostykę** pole wyboru jest zaznaczone.
@@ -440,7 +440,7 @@ Zadeklarować typu DBContext jako zmienna lokalna lub pole wystąpienia niestaty
 
 Poniższy przykład klasa kontrolera MVC pokazano, jak używać obiektu DBContext.
 
-```
+```csharp
 public class BlogsController : Controller
     {
         //BloggingContext is a subclass to DbContext        

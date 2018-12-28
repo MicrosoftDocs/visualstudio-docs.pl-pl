@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39;]&#39; w wyrażeniu regularnym (JavaScript) | Dokumentacja firmy Microsoft
+title: Oczekiwano ']' w wyrażeniu regularnym (JavaScript) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64ef929ba309f0b496e72f3cf740daf6970d08fb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283720"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804419"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Oczekiwano &#39;]&#39; w wyrażeniu regularnym (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>Oczekiwano znaku „]" w wyrażeniu regularnym (JavaScript)
 Podjęto próbę utworzenia klasy znaków dopasowania wyrażenia regularnego, ale nie zawiera nawias zamykający. Pojedynczy znak literału kombinacje mogą być włączane do klasy znaków w, umieszczając je w nawiasach. Klasa znaków dopasowuje dowolny znak zawartych w nim. Na przykład / [abc] / pasuje do dowolnej litery "a", "b", lub "c".  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  

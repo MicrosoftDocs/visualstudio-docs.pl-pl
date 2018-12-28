@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b48a9cae19faa592eecb2f02af67e9ad8b2ca9b3
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348325"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684681"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -38,7 +38,7 @@ Możesz tworzyć prawie wszystko w środowisku IDE programu Visual Studio jako z
 |Kompilowanie|Użyj zdarzenia mające miejsce po kompilacji, które rejestrują składnik.|[Omówienie niestandardowych kroków kompilacji i zdarzenia kompilacji](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Obejmują etapu rejestracji podczas kompilowania projektów języka C++.||
 |Debugowanie|Debugowanie aplikacji, które działają z podwyższonymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
-||Debugowanie aplikacji, które działają innego użytkownika konta, takich jak witryny sieci Web platformy ASP.NET.|[Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Debugowanie aplikacji, które działają innego użytkownika konta, takich jak witryny sieci Web platformy ASP.NET.|[Debugowanie aplikacji ASP.NET i AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Debugowanie w strefie dla aplikacji przeglądarki XAML (XBAP).|[Host WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Korzystanie z emulatora do debugowania projektów usług w chmurze dla systemu Microsoft Azure.|[Debugowanie usługi w chmurze w programie Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Konfigurowanie zapory dla zdalnego debugowania.|[Debugowanie zdalne](../debugger/remote-debugging.md)|

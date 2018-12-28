@@ -1,8 +1,9 @@
 ---
-title: Wprowadzenie do edycji
+title: Wprowadzenie do edycji w edytorze kodu
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027533"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803336"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
 W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe dodamy kod do pliku w celu Spójrz na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+> [!TIP]
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
-W tym artykule przyjęto założenie, że jesteś zaznajomiony z językiem programowania. Jeśli nie masz, zalecamy najpierw się jednej z programowania przewodników Szybki Start, takie jak tworzenie aplikacji sieci web i [Python](../ide/quickstart-python.md) lub [C#](../ide/tutorial-csharp-aspnet-core.md), lub Utwórz aplikację konsoli przy użyciu [języka Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+W tym artykule przyjęto założenie, że jesteś zaznajomiony z językiem programowania. Jeśli nie masz, zalecamy najpierw się jednej z programowania przewodników Szybki Start, takie jak tworzenie aplikacji sieci web i [Python](../ide/quickstart-python.md) lub [C#](../get-started/csharp/tutorial-aspnet-core.md), lub Utwórz aplikację konsoli przy użyciu [języka Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Utwórz nowy plik kodu
 
@@ -42,7 +44,7 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 Program Visual Studio oferuje przydatne *fragmenty kodu* , umożliwia szybkie i łatwe generowanie najczęściej używane bloki kodu. [Fragmenty kodu](../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym C#, Visual Basic i C++. Dodajmy języka C# `void Main` fragment kodu do naszego pliku.
 
-1. Umieść kursor nad końcowego zamykającego nawiasu klamrowego **}** w pliku i wpisz znaki `svm` (który oznacza `static void Main` &mdash;nie martw się zbyt dużo Jeśli nie masz pewności co oznacza to, że).
+1. Umieść kursor nad końcowego zamykającego nawiasu klamrowego **}** w pliku, a następnie wpisz znaki `svm`. (`svm` oznacza `static void Main`; [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metodą jest punkt wejścia dla C# aplikacji.)
 
    Wyskakujące okno dialogowe pojawia się z informacjami o `svm` fragmentu kodu.
 
@@ -50,7 +52,7 @@ Program Visual Studio oferuje przydatne *fragmenty kodu* , umożliwia szybkie i 
 
 1. Naciśnij klawisz **kartę** dwa razy, aby wstawić fragment kodu.
 
-   Zostanie wyświetlony `static void Main()` podpis metody poproś o dodanie Cię do pliku. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metodą jest punkt wejścia dla aplikacji w języku C#.
+   Zostanie wyświetlony `static void Main()` podpis metody poproś o dodanie Cię do pliku.
 
 Fragmenty kodu dostępne różnią się w różnych językach programowania. Można przyjrzeć się fragmentów kodu dostępne dla danego języka, wybierając **Edytuj** > **IntelliSense** > **Wstaw fragment kodu**, a następnie Wybieranie folderu danego języka. Dla języka C# listy wygląda następująco:
 

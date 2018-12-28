@@ -1,5 +1,5 @@
 ---
-title: 'Krok 2: Uruchamianie programu'
+title: Krok 2. Uruchom program
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 13983379dec4ec998172d0d11e0a7810c8cf02c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179063"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561684"
 ---
-# <a name="step-2-run-your-program"></a>Krok 2: Uruchamianie programu
+# <a name="step-2-run-your-program"></a>Krok 2. Uruchom program
 Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, który uruchamia. Większość nie robi jeszcze — po prostu wyświetla puste okno, które pokazuje **Form1** na pasku tytułu. Ale działał, zgodnie z którą chcesz dowiedzieć się.
 
- ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# -1 wideo](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ## <a name="to-run-your-program"></a>Aby uruchomić program
 
@@ -55,10 +55,10 @@ Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, k
     -   Wybierz **X** przycisk w prawym górnym rogu **Form1** okna.
 
     > [!NOTE]
-    >  Kiedy uruchamiasz program z wewnątrz IDE, jest wywoływana, debugowania, ponieważ jest to zazwyczaj Aby znaleźć i naprawić usterki (błędy) w programie. Chociaż program ten jest mały i naprawdę nic jeszcze nie, nadal jest to prawdziwy program. Postępuj zgodnie z tą samą procedurą, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md).
+    >  Kiedy uruchamiasz program z wewnątrz IDE, jest wywoływana, debugowania, ponieważ jest to zazwyczaj Aby znaleźć i naprawić usterki (błędy) w programie. Chociaż program ten jest mały i naprawdę nic jeszcze nie, nadal jest to prawdziwy program. Postępuj zgodnie z tą samą procedurą, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
 -   Aby przejść do następnego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Tworzenie projektu aplikacji formularzy Windows](../ide/step-1-create-a-windows-forms-application-project.md).
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Utwórz projekt Windows Forms aplikacji](../ide/step-1-create-a-windows-forms-application-project.md).

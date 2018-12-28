@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b5711b90e2b160f48c05835ae833bfbe7cd29fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 34fa13bbeee3289e19acdff7e45fe6e4a99f30d9
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730675"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443941"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -128,8 +128,8 @@ Wyłącza optymalizację JIT kodu zarządzanego, gdy moduł jest załadowany a J
 **Włącz debugowanie kodu JavaScript dla platformy ASP.NET (przeglądarki Chrome, krawędzi i programu Internet Explorer)**:  
 Włącza debugera skryptów w przypadku aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane. Wyłącz tę opcję, aby przywrócić starsze zachowanie.
 
-**Włącz narzędzia deweloperskie przeglądarki Microsoft Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)**:  
-Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Microsoft Edge.
+**Włącz narzędzia deweloperskie przeglądarki Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)**:  
+Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Edge.
 
 **Włącz starsze debugera języka JavaScript w przeglądarce Chrome dla platformy ASP.NET**:  
 Włącza starsze debugera skryptów JavaScript w przeglądarce Chrome dla aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane.
@@ -156,7 +156,7 @@ Zastępuje domyślny aparat starszą wersją, aby włączyć te scenariusze debu
 - Chcesz włączyć Edytuj i Kontynuuj dla projektów C++ podczas debugowania w trybie mieszanym.
 
 > [!NOTE]
-> Trybu, wybierając zgodności zarządzanej wyłącza niektóre funkcje, które są zaimplementowane tylko w domyślnym aparacie debugowania.
+> Trybu, wybierając zgodności zarządzanej wyłącza niektóre funkcje, które są zaimplementowane tylko w domyślnym aparacie debugowania. Starego aparatu debugowania zostało zastąpione w programie Visual Studio 2012.
 
 **Użyj starszego C# i ewaluatory wyrażeń VB**:  
 Debuger użyje programu Visual Studio 2013 C# lub ewaluatory wyrażeń języka Visual Basic zamiast ewaluatory wyrażeń opartych na programie Visual Studio 2015 Roslyn.

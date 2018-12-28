@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: b4aa3a045b34271eb421339751aa5c763479eec0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320985"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647848"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* narzędzie umożliwia uruchamianie i zatrzymywanie zbierania danych o wydajności. Używa następującej składni:  
@@ -61,9 +61,9 @@ VSPerfCmd [/U] [/options]
 |Opcja|Opis|  
 |------------|-----------------|  
 |[Uruchom](../profiling/launch.md) **:** *pliku wykonywalnego*|Uruchamia określoną aplikację i rozpoczyna się profilowanie.|  
-|[Argumenty](../profiling/args.md) **:** *argumentów*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|  
+|[Argumenty](../profiling/args.md) **:** *argumenty*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|  
 |[Console](../profiling/console.md)|Uruchamia określone polecenie w nowym oknie wiersza polecenia.|  
-|[Dołącz](../profiling/attach.md) **:** *PID*[**,**_PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą Identyfikatora procesu lub nazwę procesu.|  
+|[Dołącz](../profiling/attach.md) **:** *IDENTYFIKATOR PID*[**,**_PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą Identyfikatora procesu lub nazwę procesu.|  
 |[Odłącz](../profiling/detach.md)[**:**_PID_[,_PID_]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować za pomocą Identyfikatora procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostało zatrzymane dla wszystkich procesów.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**alokacji**`&#124;`**okres istnienia**}]|Służy do zbierania danych pamięci .NET alokacji i obiekt okresu istnienia. Za pomocą tylko **VSPerfCmdLaunch** opcji.|  
   
@@ -85,11 +85,11 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security**, \< **Zezwalaj&#124;ODMÓW**>, *po prawej stronie*[ *po prawej stronie*], \< *użytkownika* &#124; *Grupy*>|Zezwala lub nie zezwala określonemu użytkownikowi lub grupie dostępu do usług profilowania.<br /><br /> `Right` może być:<br /><br /> CrossSession — zapewnia użytkownikowi dostęp do usługi w celu krzyżowego sesji profilowania.<br /><br /> SampleProfiling — daje użytkownikowi dostęp do sterownika, aby włączyć profilowanie próbkowania. Umożliwia również dostęp do informacji przejścia jądra podczas profilowania śledzenia.<br /><br /> FullAccess — zapewnia dostęp zarówno CrossSession, jak i SampleProfiling.|  
 |**Admin:Security, lista**|Wyświetla listę bieżącego stanu usług profilowania i wyświetla listę uprawnień użytkownika.|  
-|**Administrator:** \< *usługi*&#124;*sterownika*>\<**START**&#124;**STOP**  &#124; **Zainstalować**&#124;**DEZINSTALACJI**>|Uruchamia, zatrzymuje, instaluje lub odinstalowuje składnik usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver).|  
-|**Administrator:** \< *usługi*&#124;*sterownika*>**AutoStart**\<**na** &#124; **OFF**>|Włącza lub wyłącza automatyczne uruchamianie usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver) po ponownym uruchomieniu.|  
+|**Administrator:** \<*Usługa*&#124;*sterownika*>\<**START**&#124;**ZATRZYMAĆ**&#124;**instalacji** &#124; **DEZINSTALACJI**>|Uruchamia, zatrzymuje, instaluje lub odinstalowuje składnik usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver).|  
+|**Administrator:** \<*Usługa*&#124;*sterownika*>**AutoStart**\<**ON**&#124;**OFF**>|Włącza lub wyłącza automatyczne uruchamianie usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver) po ponownym uruchomieniu.|  
   
 ## <a name="vsperfcmd-driver"></a>Driver/Driver narzędzia VSPerfCmd  
- **Driver/Driver narzędzia VSPerfCmd** opcja jest obecnie przestarzała. Użyj **VsPerfCmdAdmin** opcje dla tej funkcji.  
+ **Driver/Driver narzędzia VSPerfCmd** opcja jest obecnie przestarzała. Użyj **Admin narzędzia VsPerfCmd** opcje dla tej funkcji.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Narzędzie VSInstr](../profiling/vsinstr.md)   

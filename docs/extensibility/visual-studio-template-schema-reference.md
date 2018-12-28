@@ -2,9 +2,8 @@
 title: Odwołanie do schematu szablonu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 0774cdbba791c62a5794c7f837d6ce6b32c49432
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586342"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561830"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odwołanie do schematu szablonu Visual Studio
 Ta sekcja zawiera informacje o elementach języka XML w *.vstemplate* pliki, które są plikami, które przechowują metadane szablonów projektów, szablonów elementów i startowe.
@@ -74,7 +73,7 @@ Ta sekcja zawiera informacje o elementach języka XML w *.vstemplate* pliki, kt�
 |[Supportslanguagedropdown —](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|
 |[Supportsmasterpage —](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Projekt<br /><br /> Odwołania<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Projekt<br /><br /> Odwołania<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Nazwa<br /><br /> Opis<br /><br /> Ikona<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Hidden<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
 |[Templategroupid —](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|

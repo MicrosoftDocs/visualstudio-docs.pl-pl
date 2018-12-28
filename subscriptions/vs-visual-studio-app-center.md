@@ -3,18 +3,18 @@ title: Korzyści z programu Visual Studio App Center w subskrypcji programu Visu
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/15/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Więcej informacji na temat korzyści programu Visual Studio App Center uwzględniony w subskrypcjach programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a1a50888666f1597da008cec5a13c86a23a805e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940986"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738641"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcji programu Visual Studio
 
@@ -26,7 +26,7 @@ App Center to centrum sterowania dla aplikacji.
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 Wprowadzenie do programu Visual Studio App Center jest proste.
-1.  Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek Visual Studio App Center, a następnie kliknij przycisk **wprowadzenie**.
     > [!div class="mx-imgBorder"]
@@ -44,21 +44,26 @@ Wprowadzenie do programu Visual Studio App Center jest proste.
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze, chmura miesięczne)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, NFR<sup>1</sup> | Uwzględnione       |  Tak          |
-| Program Visual Studio Professional (standardowy, roczna w chmurze, chmura miesięczne) | VL, Azure, Retail                                       | Uwzględnione                                                            |Tak |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Uwzględnione                                                            |Tak |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Uwzględnione                                                            |Tak |
-| Visual Studio Dev Essentials | NAZWA  | Uwzględnione                                                            |Tak |
+| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, NFR<sup>1</sup> | Dołączono       |  Tak          |
+| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dołączono                                                            |Tak |
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
+| Visual Studio Dev Essentials | Nie dotyczy  | Dołączono                                                            |Tak |
 
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), Imagine sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego).* 
+<sup>1</sup>*obejmuje:    Nie do odsprzedaży, Wyobraź sobie ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP), sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego).*
+
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P: czy pojawia się błąd, przeglądarka jest obsługiwany.  Co jest nie tak?
-Odp.: app Center wymaga nowszej możliwości, które nie mogą być dostarczane przez niektóre starsze przeglądarki.  Jeśli Twoja przeglądarka nie jest obsługiwana, wykonaj następujące czynności:
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>PYT.:  Pojawia się błąd, czy przeglądarka jest nieobsługiwana.  Co jest nie tak?
+Odp.:  App Center wymaga nowszej możliwości, które nie mogą być dostarczane przez niektóre starsze przeglądarki.  Jeśli Twoja przeglądarka nie jest obsługiwana, wykonaj następujące czynności:
 1.  Otwórz innej przeglądarki, takich jak Microsoft Edge lub najnowsze wersje Google Chrome lub Firefox i Safari.
 2.  Łączenie programu Visual Studio [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i zaloguj się.
 3.  Teraz kliknąć **wprowadzenie** łącze na kafelku programu Visual Studio App Center.

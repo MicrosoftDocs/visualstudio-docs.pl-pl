@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320894"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802569"
 ---
 # <a name="devops-with-unity-apps"></a>Metodyka DevOps dla aplikacji Unity
 
@@ -26,7 +26,7 @@ Poniższe tabele określają, jak funkcje DevOps w programie Visual Studio zasto
 
 ## <a name="agile-tools"></a>Narzędzia agile
 
-Opis łącza: [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts) (przy użyciu platformy Azure, tablic lub TFS, w tym Team Explorer Everywhere)
+Opis łącza: [Zarządzanie projektem o narzędzi Agile i Agile](/azure/devops/boards/backlogs/overview?view=vsts) (przy użyciu platformy Azure, tablic lub TFS, w tym Team Explorer Everywhere)
 
 Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od typu projektu i języków programowania.
 
@@ -40,9 +40,9 @@ Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od 
 
 ## <a name="modeling"></a>Modelowanie
 
-Opis łącza:  **[analiza i architektura modelu](../modeling/analyze-and-model-your-architecture.md)**
+Opis łącza: **[Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)**
 
-Komentarz ogólny: Mimo że te funkcje projektu są albo, niezależnie od języka programowania, lub pracować z języków .NET, takich jak C#, działają one na paradygmatu tradycyjnych aplikacji za pomocą hierarchii obiektów i relacji klas. Projektowanie gier w ramach aparatu Unity pociąga za sobą paradygmatu różne, a mianowicie relacje obiektów graficznych, dźwięki, programów do cieniowania, skrypty i tak dalej. Z tego powodu programu Visual Studio, diagram modelowania narzędzia nie są szczególnie istotne dla całego projektu środowiska Unity. Prawdopodobnie można ich użyć do zarządzanie relacjami w skrypty języka C#, ale to tylko jednej części całości.
+Komentarz ogólny: Chociaż te funkcje projektu są albo, niezależnie od języka programowania lub pracy w językach .NET, takich jak C#, działają na paradygmatu tradycyjnych aplikacji za pomocą hierarchii obiektów, a klasy relacji. Projektowanie gier w ramach aparatu Unity pociąga za sobą paradygmatu różne, a mianowicie relacje obiektów graficznych, dźwięki, programów do cieniowania, skrypty i tak dalej. Z tego powodu programu Visual Studio, diagram modelowania narzędzia nie są szczególnie istotne dla całego projektu środowiska Unity. Prawdopodobnie można ich użyć do zarządzanie relacjami w skrypty języka C#, ale to tylko jednej części całości.
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
@@ -75,7 +75,7 @@ Specjalne uwagi dotyczące kontroli wersji przy użyciu aparatu Unity:
 
 ## <a name="build"></a>Kompilacja
 
-Opis łącza:  **[potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)**
+Opis łącza: **[Potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)**
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
@@ -98,19 +98,19 @@ Opis łącza:  **[potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="improve-code-quality"></a>Poprawianie jakości kodu
 
-Opis łącza:  **[poprawią jakość kodu](../test/improve-code-quality.md)**
+Opis łącza: **[Poprawianie jakości kodu](../test/improve-code-quality.md)**
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|[Analizowanie jakości kodu zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
+|[Analizowanie jakości kodu zarządzanego](../code-quality/code-analysis-for-managed-code-overview.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
 |[Znajdowanie kodu zduplikowanego przy użyciu wykrywania klonu kodu](https://msdn.microsoft.com/library/hh205279.aspx)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
-|[Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
+|[Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/code-metrics-values.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (Unity witryny sieci Web).|
 |[Analizowanie problemów pamięci .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie ma punktów zaczepienia w ramy Mono (jako używane przez środowisko Unity) do profilowania. Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja aparatu Unity).|
 
 ## <a name="release-management"></a>Release Management
 
-Opis łącza: [kompilowania i wydawania w potokach platformy Azure i TFS](/azure/devops/pipelines/overview?view=vsts)
+Opis łącza: [Kompilowania i wydawania w potokach platformy Azure i TFS](/azure/devops/pipelines/overview?view=vsts)
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
@@ -120,7 +120,7 @@ Opis łącza: [kompilowania i wydawania w potokach platformy Azure i TFS](/azure
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorowanie za pomocą platformy HockeyApp
 
-Opis łącza:  **[monitorowanie za pomocą platformy HockeyApp](https://www.hockeyapp.net/features/)**
+Opis łącza: **[Monitorowanie za pomocą platformy HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|

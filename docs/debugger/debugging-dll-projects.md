@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305315"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561697"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debugowanie bibliotek DLL w programie Visual Studio (C#, C++, Visual Basic F#)
 
@@ -52,7 +52,7 @@ Gdy używasz szablonu projektu programu Visual Studio do tworzenia aplikacji, [!
 - [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Ustawienia dla projektu C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Porady: konfiguracji ustaw wartość Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [Instrukcje: Ustaw wartość Debug i Release konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>Set C++ DebuggableAttribute
 
@@ -84,7 +84,7 @@ Dla projektów C/C++ można ustawić nagłówek i lokalizacje plików LIB na str
    
 1. W obszarze **konsolidatora** > **dane wejściowe** > **dodatkowe zależności**, określ pełną ścieżkę i nazwę pliku dla plików LIB.
 
-1. Wybierz **OK**.
+1. Kliknij przycisk **OK**.
 
 Aby uzyskać więcej informacji na temat ustawień projektu C++, zobacz [strony właściwości (Visual C++)](/cpp/ide/property-pages-visual-cpp).
   
@@ -102,7 +102,7 @@ Nie można uruchomić biblioteki DLL bezpośrednio. Musi ona zostać wywołana p
 
 Aby debugować bibliotekę DLL, możesz [rozpocząć debugowanie aplikacji wywołującej](#vxtskdebuggingdllprojectsthecallingapplication), lub [debugowanie z projektu DLL](how-to-debug-from-a-dll-project.md) , określając jego aplikacji wywołującej. Można również użyć debugera [bezpośrednim](#vxtskdebuggingdllprojectstheimmediatewindow) można obliczyć wartości funkcji DLL lub metody w czasie projektowania, bez korzystania z aplikacji wywołującej.
 
-Aby uzyskać więcej informacji, zobacz [wprowadzenie do debugera](getting-started-with-the-debugger.md).
+Aby uzyskać więcej informacji, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Rozpocznij debugowanie aplikacji wywołującej
 
@@ -119,11 +119,11 @@ Aby debugować bibliotekę DLL z aplikacji wywołującej, można wykonywać nast
 
   lub  
 
-- Dołącz do aplikacji, która jest już wdrożona i uruchomiona na komputerze testowym lub produkcyjnym. Użyj tej metody dla bibliotek DLL w witrynach sieci Web lub aplikacji sieci web. Aby uzyskać więcej informacji, zobacz [porady: dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Dołącz do aplikacji, która jest już wdrożona i uruchomiona na komputerze testowym lub produkcyjnym. Użyj tej metody dla bibliotek DLL w witrynach sieci Web lub aplikacji sieci web. Aby uzyskać więcej informacji, zobacz [jak: Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Przed rozpoczęciem debugowania aplikacji wywołującej, należy ustawić punkt przerwania w DLL. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md). Po osiągnięciu punktu przerwania DLL możesz przejrzeć kod, obserwując działanie w każdym wierszu. Aby uzyskać więcej informacji, zobacz [Przechodzenie do kodu w debugerze](../debugger/navigating-through-code-with-the-debugger.md).
   
-Podczas debugowania, możesz użyć **modułów** okna, aby sprawdzić biblioteki dll i *.exe* pliki obciążenia aplikacji. Aby otworzyć **modułów** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **modułów**. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md). 
+Podczas debugowania, możesz użyć **modułów** okna, aby sprawdzić biblioteki dll i *.exe* pliki obciążenia aplikacji. Aby otworzyć **modułów** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **modułów**. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Użyj okna bezpośredniego  
 
@@ -142,7 +142,7 @@ Na przykład, aby przetestować metodę o nazwie `Test` w klasie `Class1`:
    Class1 obj = new Class1();  
    ```  
   
-   W C#, wszystkie nazwy muszą być w pełni kwalifikowana. Wszelkie metody lub zmienne musi być w bieżącym zakresie i kontekście, gdy usługa językowa podejmuje próbę obliczenia wyrażenia.  
+   W języku C# wszystkie nazwy muszą być w pełni kwalifikowana. Wszelkie metody lub zmienne musi być w bieżącym zakresie i kontekście, gdy usługa językowa podejmuje próbę obliczenia wyrażenia.  
    
 1. Przy założeniu, że `Test` ma jedną `int` parametru oceny `Test` przy użyciu **bezpośrednie** okna:  
    
@@ -158,7 +158,7 @@ Na przykład, aby przetestować metodę o nazwie `Test` w klasie `Class1`:
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debugowanie w trybie mieszanym  
 
-Można napisać wywoływania aplikacji dla bibliotek DLL z kodu zarządzanego lub natywnego. Jeśli chcesz debugować oba aplikacji natywnej wywołuje zarządzanej biblioteki DLL, można włączyć zarówno debugery zarządzanego i natywnego we właściwościach projektu. Dokładne proces zależy od tego, czy chcesz rozpocząć debugowanie z projektu DLL lub wywoływania projektu aplikacji. Aby uzyskać więcej informacji, zobacz [porady: debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md). 
+Można napisać wywoływania aplikacji dla bibliotek DLL z kodu zarządzanego lub natywnego. Jeśli chcesz debugować oba aplikacji natywnej wywołuje zarządzanej biblioteki DLL, można włączyć zarówno debugery zarządzanego i natywnego we właściwościach projektu. Dokładne proces zależy od tego, czy chcesz rozpocząć debugowanie z projektu DLL lub wywoływania projektu aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md). 
 
 Można również debugować natywną bibliotekę DLL z zarządzanego projektu wywołującego. Aby uzyskać więcej informacji, zobacz [sposób debugowania kodu zarządzanego i natywnego](how-to-debug-managed-and-native-code.md). 
 

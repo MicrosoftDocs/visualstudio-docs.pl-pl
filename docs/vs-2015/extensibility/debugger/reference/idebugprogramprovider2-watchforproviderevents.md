@@ -17,12 +17,12 @@ ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6034898ad8c10583a8fa982a978fa05aa884d25a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: c7cca6de370d9a93fc574c8e314554636941a382
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787695"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804479"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -179,7 +179,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
                                 if ( 0 == m_pPidList->GetCount() )  
                                     this->Cleanup();  
                             }  
-                            // This is needed for cases where the SDM has not yet recieved program create  
+                            // This is needed for cases where the SDM has not yet received program create  
                             // by the time that we need to detach (example: the managed attach succeeds,  
                             // but some other attach step fails).  
                             else  

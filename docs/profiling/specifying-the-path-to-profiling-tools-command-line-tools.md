@@ -10,26 +10,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1afb0b00a7e121c611dedbc235684a67cc9cec53
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 7ef2434cdea3183fc55ad72fafb36175a726c58e
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814498"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592901"
 ---
-# <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Określ ścieżkę do narzędzia wiersza polecenia narzędzi profilowania
-Ścieżka [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzi profilowania nie została dodana do zmiennej środowiskowej PATH. Na komputerach z 32-bitowego narzędzia znajdują się w jeden katalog. Istnieje 32-bitowe i 64-bitowe wersje narzędzi profilowania na komputerach 64-bitowych.  
+# <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Określ ścieżkę do narzędzia wiersza polecenia narzędzia profilowania
+Ścieżka [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools nie została dodana do zmiennej środowiskowej PATH. Na komputerach z 32-bitowe narzędzia znajdują się w jednym katalogu. Istnieje 32-bitowych i 64-bitowe wersje narzędzi profilowania na komputerach 64-bitowych.  
   
 ## <a name="32-bit-computers"></a>32-bitowych komputerów  
- Na komputerach z 32-bitowy, domyślny katalog narzędzia profiler jest *: dysk rozruchowy\Program 11.0\Team Files\Microsoft Visual Studio Tools narzędzia*.  
+ Dla kodu natywnego programu Visual Studio profiler interfejsów API znajdują się w *VSPerf.dll*. Plik nagłówkowy *VSPerf.h*i bibliotekę importu *VSPerf.lib*, znajdują się w *programu Microsoft Visual Studio\2017\Team narzędzia Tools\PerfSDK* katalog.
+  
+ Dla kodu zarządzanego, program profilujący interfejsów API znajdują się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu.
   
 ## <a name="64-bit-computers"></a>Komputery 64-bitowe  
- Na komputerach 64-bitowych należy określić ścieżkę zgodnie z platformą docelową PROFILOWANEGO aplikacji.  
+ Na komputerach 64-bitowych Określ ścieżkę zależnie od platformy docelowej profilowanej aplikacji.  
   
 -   Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
   
-     *: dysk rozruchowy\Program pliki (x86) \Microsoft Visual Studio 11.0\Team narzędzia narzędzia*  
+     (natywna) *Programu Microsoft Visual Studio\2017\Team narzędzia Tools\PerfSDK* (zarządzane) *Studio\Shared\Common\VSPerfCollectionTools Visual firmy Microsoft*  
   
--   Dla 64-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
+-   Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:  
   
-     *: dysk rozruchowy\Program pliki (x86) \Microsoft Visual Studio 11.0\Team Tools\x64 narzędzia*
+     (natywna) *Programu Microsoft Visual Studio\2017\Team narzędzia Tools\x64\PerfSDK* (zarządzane) *Studio\Shared\Common\VSPerfCollectionTools\x64 Visual firmy Microsoft*

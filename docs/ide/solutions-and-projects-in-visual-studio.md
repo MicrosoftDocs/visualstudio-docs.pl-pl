@@ -11,7 +11,6 @@ f1_keywords:
 - vs.addnewitem
 - vs.addexistingitem
 - VS.SolutionExplorer
-- vs.newproject
 - vs.addexistingsolutionitem
 - vs.environment.solutions
 - VS.SolutionExplorer.Solutions
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db576170443952a3090d57fc8046b34428cc8095
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 0d6d5b6e6d8af8d03301c7f9f8e192e8f10df3ef
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348339"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425763"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 

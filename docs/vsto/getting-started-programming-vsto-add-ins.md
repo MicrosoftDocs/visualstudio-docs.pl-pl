@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], getting started
 - add-ins [Office development in Visual Studio], getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858891"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648684"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Wprowadzenie do programowania dodatków narzędzi VSTO
   Za pomocą dodatków narzędzi VSTO automatyzację aplikacji Microsoft Office, Rozszerz funkcje aplikacji i dostosowywanie interfejsu użytkownika (UI) aplikacji. Aby uzyskać informacji na temat jak dodatków narzędzi VSTO wypadają w porównaniu do innych typów rozwiązań dla pakietu Office, można utworzyć przy użyciu programu Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -33,7 +33,7 @@ ms.locfileid: "49858891"
 ## <a name="create-vsto-add-in-projects"></a>Tworzenie projektów dodatku narzędzi VSTO  
  Tworzenie projektów w dodatku narzędzi VSTO za pomocą jednego z dodatku narzędzi VSTO szablonów projektów w **nowy projekt** okno dialogowe. Te szablony zawierają odwołania do zestawów wymagane, a pliki projektu. Visual Studio udostępnia dodatku narzędzi VSTO szablony projektów dla większości aplikacji pakietu Office.  
   
- Aby uzyskać więcej informacji o sposobie tworzenia projektu dodatku narzędzi VSTO dla programów, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji na temat szablonów projektu, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).  
+ Aby uzyskać więcej informacji o sposobie tworzenia projektu dodatku narzędzi VSTO dla programów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji na temat szablonów projektu, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).  
   
 ## <a name="develop-vsto-add-in-projects"></a>Tworzenie projektów dodatku narzędzi VSTO  
  Podczas tworzenia projektu dodatku narzędzi VSTO dla programu Visual Studio automatycznie tworzy *ThisAddIn.vb* (w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) lub *ThisAddIn.cs* plik kodu (w języku C#). Ten plik zawiera `ThisAddIn` klasy, która stanowi podstawę dla dodatku VSTO. Elementy członkowskie tej klasy można użyć do uruchomienia kodu po dodatku narzędzi VSTO jest załadowany lub zwolnione, dostępu do modelu obiektu aplikacji hosta, a także aby rozszerzyć funkcje aplikacji. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
@@ -77,11 +77,11 @@ ms.locfileid: "49858891"
   
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
-- [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
-- [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
@@ -90,7 +90,7 @@ ms.locfileid: "49858891"
   Aby uzyskać listę tematów, które prowadzą użytkownika przez niektóre typowe zadania w projektach pakietu Office, zobacz [typowe zadania w programowaniu Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   

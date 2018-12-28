@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561515"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -332,4 +332,4 @@ Po znalezieniu region kodu z tym problemem, należy użyć debugera, aby zbadać
 W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić dowiedzieć się więcej na temat debugera.
 
 > [!div class="nextstepaction"]
-> [Naucz się debugować przy użyciu programu Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

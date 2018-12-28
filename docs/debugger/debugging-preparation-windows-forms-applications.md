@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13673e14ae7257dceba8638f24d6b2d5d222efd8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066421"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561450"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Przygotowanie debugowania: aplikacje Windows Forms
+# <a name="debugging-preparation-windows-forms-applications"></a>Przygotowanie debugowania: Aplikacje Windows Forms
 Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest bardzo proste. Aby uzyskać więcej informacji, zobacz [Tworzenie projektu aplikacji Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Po utworzeniu projektu Windows Forms przy użyciu szablonu projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia konfiguracji Debug i Release. Jeśli to konieczne, możesz zmienić te ustawienia. Te ustawienia można zmienić w programie  **\<Nazwa projektu > Właściwości strony** okno dialogowe (**mój projekt** w języku Visual Basic).  
@@ -63,12 +63,12 @@ Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego
   
 3. Na **debugowania** menu, kliknij przycisk **Start**.  
   
-4. Debugowanie za pomocą techniki opisane w [podstawy debugera](../debugger/getting-started-with-the-debugger.md).  
+4. Debugowanie za pomocą techniki opisane w [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Porady: Ustaw wartość Debug i Release konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [Instrukcje: Ustaw wartość Debug i Release konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)   
  [Ustawienia projektu dla języka C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   

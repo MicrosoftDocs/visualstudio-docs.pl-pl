@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 221200938db7f0501081d0d1d4152292634e6bfa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d4c2468c7cfa074a63151eef262ee57ca552eb07
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055794"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802558"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z programu Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
 Aby móc korzystać z usług hostingu i możliwości skalowania platformy Azure, możesz chcieć migrację i wdrażanie aplikacji sieci web w usłudze w chmurze platformy Azure. Wymagane są tylko minimalne zmiany. W tym artykule opisano wdrażanie usług w chmurze. usługi App Service, zobacz [wdrażanie aplikacji sieci web w usłudze Azure App Service](/azure/app-service/app-service-deploy-local-git).
 
@@ -38,7 +38,7 @@ Aby móc korzystać z usług hostingu i możliwości skalowania platformy Azure,
 
 Wszelkie ostrzeżenia lub błędy, które występują wskazują na problemy, aby naprawić przed przystąpieniem do wdrażania na platformie Azure, takie jak brak zestawy.
 
-Jeśli tworzenie aplikacji, uruchomić go lokalnie za pomocą emulatora obliczeń lub opublikować go na platformie Azure zostanie wyświetlony błąd: "określona ścieżka i nazwa pliku są za długie." Ten błąd wskazuje, że długość nazwy FQDN projekt platformy Azure przekracza 146 znaków. Aby rozwiązać ten problem, należy przenieść swoje rozwiązanie do innego folderu o krótszej ścieżce.
+Tworzenie aplikacji, uruchomić go lokalnie za pomocą emulatora obliczeń lub opublikować go na platformie Azure może zostać wyświetlony błąd: "Określoną ścieżkę i/lub nazwa pliku jest zbyt długa." Ten błąd wskazuje, że długość nazwy FQDN projekt platformy Azure przekracza 146 znaków. Aby rozwiązać ten problem, należy przenieść swoje rozwiązanie do innego folderu o krótszej ścieżce.
 
 Aby uzyskać więcej informacji na temat Traktuj ostrzeżenia jako błędy, zobacz [Konfigurowanie projektu usługi w chmurze platformy Azure przy użyciu programu Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
 
@@ -92,13 +92,17 @@ Poniższa tabela zawiera szczegółowe informacje dotyczące uruchamiania aplika
 1. Określ parametry połączenia w `web.config` pliku w następującym formacie, a następnie zapisz plik:
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     Aktualizacja *connectionString* wartość przy użyciu parametrów połączenia ADO.NET dla bazy danych SQL Azure w następujący sposób:
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>Szablony projektów obsługiwane

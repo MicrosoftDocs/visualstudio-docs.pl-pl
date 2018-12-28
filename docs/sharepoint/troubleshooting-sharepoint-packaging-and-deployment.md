@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46cd388079db9d7869bcae733c6baef33c07a212
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898060"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805136"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint
   W tym temacie omówiono różne problemy, które mogą wystąpić podczas pakowania i wdrażania rozwiązań programu SharePoint.
@@ -40,10 +40,10 @@ ms.locfileid: "49898060"
  Aby zdiagnozować między Visual Studio, SharePoint i innymi warstwami, klucza rejestru EnableDiagnostics służy do wyświetlania śladu stosu. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint debugowania](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="add-project-output-to-the-solution-package"></a>Dodaj dane wyjściowe projektu do pakietu rozwiązań
- Dane wyjściowe projektu można dodać do pakietu przy użyciu projektanta pakietów. Jednak podczas dodawania danych wyjściowych projektu upewnij się, że platforma projektu odpowiada platformie rozwiązania SharePoint. Firma Microsoft zaleca użycie **dowolny Procesor** platformy docelowej dla zespołów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz [strona kompilowania, Projektant projektu &#40;języka Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) i [okno dialogowe Zaawansowane ustawienia kompilatora &#40;języka Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Dane wyjściowe projektu można dodać do pakietu przy użyciu projektanta pakietów. Jednak podczas dodawania danych wyjściowych projektu upewnij się, że platforma projektu odpowiada platformie rozwiązania SharePoint. Firma Microsoft zaleca użycie **dowolny Procesor** platformy docelowej dla zespołów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz [strona kompilowania, Projektant projektu &#40;języka Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) i [okno dialogowe Zaawansowane ustawienia kompilatora &#40;języka Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Walidacja ostrzeżeń i błędów
- Narzędzia projektowania programu SharePoint w programie Visual Studio wykonują czynności sprawdzania poprawności, aby sprawdzić, czy pakiet rozwiązania jest poprawnie uformowany. Można również utworzyć niestandardowe kroki sprawdzania poprawności dla pakietów i funkcji. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Narzędzia projektowania programu SharePoint w programie Visual Studio wykonują czynności sprawdzania poprawności, aby sprawdzić, czy pakiet rozwiązania jest poprawnie uformowany. Można również utworzyć niestandardowe kroki sprawdzania poprawności dla pakietów i funkcji. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Rozwiązywanie konfliktów wdrażania
  Podczas wdrażania rozwiązania programu SharePoint, może wystąpić kolizja, gdy element na serwerze ma nazwę, adres URL lub identyfikator co element z pakietu rozwiązania. Możesz zmienić **Rozwiązywanie konfliktów wdrażania** właściwość, aby rozwiązać, zaraportować lub zignorować kolizje dla modułów, części sieci Web, przejrzenia listy wystąpień i typów zawartości.
@@ -65,18 +65,18 @@ ms.locfileid: "49898060"
 
 3. Ustaw kolejność aktywacji funkcji zgodnie z hierarchią w Projektancie pakietu.
 
-   Możesz dodać kroki wdrażania niestandardowego do dalszych zmian **F5** zachowanie. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Możesz dodać kroki wdrażania niestandardowego do dalszych zmian **F5** zachowanie. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Opóźnienie wyświetlania strony programu SharePoint podczas wdrażania wizualnego składnika web part
  Strony programu SharePoint wymaga dużo czasu, pojawiają się podczas wdrażania wizualnego składnika Web part do folderu Bin na [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], lub [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Jeśli zmienisz wszystkie pliki w najwyższego poziomu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] następuje rekompilacja całej aplikacji sieci Web w katalogu, takiego jak katalog Bin. Może to spowodować opóźnienie maksymalnie 25 sekund dla strony programu SharePoint do renderowania.
 
-### <a name="error-message"></a>komunikat o błędzie
+### <a name="error-message"></a>Komunikat o błędzie
  Brak.
 
 ### <a name="resolution"></a>Rozwiązanie
  Aby obejść ten problem, wykonaj następujące czynności:
 
-1.  Zainstaluj aktualizację KB967535, zgodnie z opisem w artykule firmy Microsoft Support [ROZWIĄZAĆ: poprawka jest dostępna rozwiązać dwa problemy w programie ASP.NET przez usługi IIS 7.0, Windows Vista i Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1.  Zainstaluj aktualizację KB967535, zgodnie z opisem w artykule firmy Microsoft Support [NAPRAW: Poprawka jest dostępna rozwiązać dwa problemy w programie ASP.NET przez usługi IIS 7.0, Windows Vista i Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
 2.  Dodaj następujący wiersz do pliku Web.config:
 
@@ -87,8 +87,8 @@ ms.locfileid: "49898060"
 ## <a name="sharepoint-project-deployment-fails-with-error-failed-to-extract-the-cab-file-in-the-solution"></a>Wdrażanie projektu programu SharePoint kończy się niepowodzeniem z powodu błędu "Nie można wyodrębnić pliku cab w rozwiązaniu"
  Jeśli nazwa dowolnego elementu projektu programu SharePoint zawiera nawiasy, rozwiązania kończy się niepowodzeniem wdrożenia z powodu błędu.
 
-### <a name="error-message"></a>komunikat o błędzie
- Wystąpił błąd podczas kroku wdrażania "Dodaj rozwiązanie": nie można wyodrębnić pliku cab w rozwiązaniu.
+### <a name="error-message"></a>Komunikat o błędzie
+ Wystąpił błąd podczas kroku wdrażania "Dodaj rozwiązanie": Nie można wyodrębnić pliku cab w rozwiązaniu.
 
 ### <a name="resolution"></a>Rozwiązanie
  Aby obejść ten problem, należy usunąć wszelkie nawiasy w nazwach elementów projektu programu SharePoint.
@@ -96,8 +96,8 @@ ms.locfileid: "49898060"
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Błąd pojawia się podczas wdrażania wizualnego składnika web part do witryny innej aplikacji sieci web
  Przy pierwszym wdrożeniu wizualny składnik Web part do witryny aplikacji sieci Web innej niż ta, na którym jest aktualnie wdrożony (przez zmianę właściwości SiteUrl wizualnego składnika Web part), wystąpi błąd.
 
-### <a name="error-message"></a>komunikat o błędzie
- Wystąpił błąd podczas kroku wdrażania "Dodaj rozwiązanie": funkcja o identyfikatorze [#] został już zainstalowany w tej farmie. Użyj atrybutu force, aby jawnie ponownie zainstalować tę funkcję.
+### <a name="error-message"></a>Komunikat o błędzie
+ Wystąpił błąd podczas kroku wdrażania "Dodaj rozwiązanie": Funkcja o identyfikatorze [#] został już zainstalowany w tej farmie. Użyj atrybutu force, aby jawnie ponownie zainstalować tę funkcję.
 
 ### <a name="resolution"></a>Rozwiązanie
  Ten błąd występuje ze względu na sposób, w jaki funkcje programu visual Web part jest wycofana w programie SharePoint. Aby pomyślnie wdrożyć wizualny składnik Web part, należy ponownie wdrożyć rozwiązanie, wybierając **F5** klucza.
@@ -105,7 +105,7 @@ ms.locfileid: "49898060"
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Ostrzeżenie pojawia się podczas wdrażania zagnieżdżonych formantów użytkownika
  Ostrzeżenie to pojawia się podczas wdrażania rozwiązania programu SharePoint, które ma zagnieżdżone formanty użytkownika, takie jak wizualny składnik Web part, który zawiera formant użytkownika lub formant użytkownika, który zawiera wizualny składnik Web part lub inny formant użytkownika. Ostrzeżenie to pojawia się, czy dodajesz formant do projektanta, przeciągając go z przybornika lub przy użyciu @Register dyrektywy w widoku źródła.
 
-### <a name="error-message"></a>komunikat o błędzie
+### <a name="error-message"></a>Komunikat o błędzie
  Ostrzeżenie 1 Element ' [*nazwa kontrolki*] "nie jest znanym elementem. Może to wystąpić, jeśli wystąpi błąd kompilacji w witrynie sieci Web, lub brakuje pliku web.config.
 
 ### <a name="resolution"></a>Rozwiązanie
@@ -114,5 +114,5 @@ ms.locfileid: "49898060"
  Aby usunąć to ostrzeżenie, skompiluj projekt i następnie zamknij i ponownie otwórz projektanta lub wyłącz automatyczne wycofanie opcji dla projektu. Aby to zrobić, należy wyczyścić **automatycznie Wycofaj po debugowaniu** pole wyboru na **SharePoint** karty w oknie dialogowym właściwości projektu.
 
 ## <a name="see-also"></a>Zobacz także
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 
+- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

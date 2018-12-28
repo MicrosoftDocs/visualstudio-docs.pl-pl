@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Zmiana danych w pamięci podręcznej ze skoroszytu na serwerze'
+title: 'Przewodnik: Zmień dane w pamięci podręcznej ze skoroszytu na serwerze'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f9f2ac3873bf59b30f8efa3e45d6cbdd0aebd4f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30f2c8576aaf26d2cb643327fb989d90a8964552
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672872"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804380"
 ---
-# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Wskazówki: Zmiana danych w pamięci podręcznej ze skoroszytu na serwerze
+# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Przewodnik: Zmień dane w pamięci podręcznej ze skoroszytu na serwerze
   W tym instruktażu pokazano, jak zmodyfikować zestawu danych, który jest buforowany w skoroszytu programu Microsoft Excel pakietu Office bez uruchamiania programu Excel przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "50672872"
 
 -   Dostęp do uruchomionego wystąpienia programu Microsoft SQL Server lub programu Microsoft SQL Server Express ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Aby uzyskać więcej informacji na temat dołączania bazy danych zobacz następujące tematy:
 
-    -   Aby dołączyć bazę danych przy użyciu programu SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [porady: dołączanie bazy danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Aby dołączyć bazę danych przy użyciu programu SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [jak: Dołączanie bazy danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [porady: dołączanie pliku bazy danych do programu SQL Server Express](/previous-versions/sql/).
+    -   Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [jak: Dołączanie pliku bazy danych do programu SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Utwórz projekt biblioteki klas, który definiuje zestaw danych
  Aby użyć tego samego zestawu danych w projekcie skoroszytu programu Excel i aplikacji konsoli, należy zdefiniować zestaw danych w osobnym zestawie, który odwołuje się do obu tych projektów. W ramach tego przewodnika należy zdefiniować zestaw danych w projekcie biblioteki klas.
@@ -89,7 +89,7 @@ ms.locfileid: "50672872"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Zdefiniuj zestaw danych w projekcie biblioteki klas
  Zdefiniuj typizowany zestaw danych, która zawiera dane z bazy danych AdventureWorksLT dla programu SQL Server 2005. W dalszej części tego przewodnika będziesz odwoływać się tego zestawu danych z projektu skoroszytu programu Excel i projekt aplikacji konsoli.
 
- Zestaw danych jest *typizowany zestaw danych* który reprezentuje dane w tabeli Product bazy danych AdventureWorksLT. Aby uzyskać więcej informacji na temat zestawów, zobacz [narzędzia zestawu danych w programie Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Zestaw danych jest *typizowany zestaw danych* który reprezentuje dane w tabeli Product bazy danych AdventureWorksLT. Aby uzyskać więcej informacji na temat zestawów, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Aby zdefiniować typizowany zestaw danych w projekcie biblioteki klas
 
@@ -313,4 +313,4 @@ ms.locfileid: "50672872"
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wskazówki: Wstawianie danych do skoroszytu na serwerze](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
+- [Przewodnik: Wstawianie danych do skoroszytu na serwerze](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)

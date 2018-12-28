@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
-ms.translationtype: MT
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567471"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647782"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizacja i lokalizacja rozwiązania programu Excel
   Ta sekcja zawiera informacje o specjalne uwagi dotyczące rozwiązania Microsoft Office Excel, które będą uruchamiane na komputerach, które mają ustawienia innej niż angielska dla Windows. Większością aspektów globalizacja i lokalizacja pakietu Microsoft Office jest taki sam, Ci zaznajomić się podczas tworzenia innych rodzajów rozwiązań przy użyciu programu Visual Studio. Aby uzyskać ogólne informacje, zobacz [Globalize i lokalizacja aplikacji](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -39,7 +39,7 @@ ms.locfileid: "39567471"
   
  Mimo, że używasz formatu angielski (Stany Zjednoczone) dla danych, które są przekazywane lub zmieniane przez kod zarządzany, program Excel interpretuje i wyświetla dane prawidłowo zgodnie z ustawień regionalnych użytkownika końcowego. Excel można prawidłowo sformatować dane ponieważ kodu zarządzanego przekazuje format 1033 identyfikator ustawień regionalnych wraz z danymi, co oznacza, że dane są w języku angielskim (Stany Zjednoczone) i dlatego musi być ponownie sformatowany do dopasowania ustawień regionalnych użytkownika.  
   
- Na przykład, jeśli użytkownicy końcowi mają swoich Opcje regionalne ustawienia regionalne niemiecki (Niemcy), spełniają oczekiwane data 29 czerwca 2005 r. do sformatowania w ten sposób: 29.06.2005. Jednak rozwiązanie przeszedł daty do programu Excel jako ciąg znaków, należy sformatować datę zgodnie z formatem języka angielskiego (Stany Zjednoczone): 6/29/2005. Komórka jest w formacie komórka typu Data, programu Excel wyświetli datę w formacie niemiecki (Niemcy).  
+ Na przykład jeśli użytkownicy końcowi mają swoich Opcje regionalne ustawienia regionalne niemiecki (Niemcy), spełniają oczekiwane data 29 czerwca 2005 r. do sformatowania w ten sposób: 29.06.2005. Jednak rozwiązanie przekazuje daty do programu Excel jako ciąg znaków, należy sformatować datę zgodnie z formatem języka angielskiego (Stany Zjednoczone): 6/29/2005. Komórka jest w formacie komórka typu Data, programu Excel wyświetli datę w formacie niemiecki (Niemcy).  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Przekaż inne identyfikatory ustawień regionalnych do modelu obiektów programu Excel  
  Środowisko uruchomieniowe języka wspólnego (CLR) przekazuje automatycznie 1033 identyfikator ustawień regionalnych dla wszystkich metod i właściwości w modelu obiektów programu Excel, które akceptują dane zależne od ustawień regionalnych. Nie istnieje żaden sposób, aby zmienić to zachowanie, automatycznie dla wszystkich wywołań modelu obiektów. Jednak można przekazać identyfikator innych ustawień regionalnych do określonej metody przy użyciu <xref:System.Type.InvokeMember%2A> do wywoływania metody i przekazując identyfikator ustawień regionalnych *kultury* parametru metody.  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  Wszelki kod, który zostanie otwarty lub w przeciwnym razie używa danych zewnętrznych, takich jak pliki, które zawierają wartości rozdzielanych przecinkami (CSV files) wyeksportowany ze starszego systemu może mieć wpływ również, jeśli takie pliki są eksportowane formacie oprócz en US. Dostęp do bazy danych nie może być wpływu, ponieważ wszystkie wartości powinny być w formacie binarnym, chyba że baza danych przechowuje daty w postaci ciągów lub wykonuje operacje, które nie korzystają z formatu binarnego. Ponadto można utworzyć zapytań SQL za pomocą danych z programu Excel, konieczne może być upewnij się, że są one w formacie en US, w zależności od funkcji, której używasz.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: docelowy Office wielojęzyczny interfejs użytkownika](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Instrukcje: Docelowy urząd wielojęzyczny interfejs użytkownika](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   

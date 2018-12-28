@@ -1,10 +1,9 @@
 ---
-title: SolutionFolder — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Solutionfolder — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SolutionFolder
 helpviewer_keywords:
@@ -16,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635ebd5a8cfc962dd7b56b928b86a9d583a3575d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5e47729d55b9c248b81c5867175fed75e8b93a8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561593"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder — Element (szablony Visual Studio)
 Grupowanie projektów w szablonach wieloprojektowych.  
   
  \<VSTemplate>  
  \<TemplateContent >  
- \<Projectcollection — >  
+ \<ProjectCollection >  
  \<SolutionFolder >  
   
 ## <a name="syntax"></a>Składnia  
@@ -52,21 +51,21 @@ Grupowanie projektów w szablonach wieloprojektowych.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Projecttemplatelink —](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa ścieżkę do pliku .vstemplate jednego projektu w szablonie wieloprojektowym.|  
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa ścieżkę do pliku .vstemplate jednego projektu w szablonie wieloprojektowym.|  
 |`SolutionFolder`|Element opcjonalny.<br /><br /> Grupowanie projektów w szablonach wieloprojektowych.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Projectcollection —](../extensibility/projectcollection-element-visual-studio-templates.md)|Określa organizację i zawartość szablonów wieloprojektowych.|  
+|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Określa organizację i zawartość szablonów wieloprojektowych.|  
 |`SolutionFolder`|Grupowanie projektów w szablonach wieloprojektowych.|  
   
 ## <a name="remarks"></a>Uwagi  
- Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. `SolutionFolder` Element służy do organizowania projektów w szablonie w grupy. Foldery określone przez `SolutionFolder` elementy są tworzone jako foldery rozwiązania w projekcie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji dotyczących szablonów wielu projektów, zobacz [porady: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).  
+ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. `SolutionFolder` Element służy do organizowania projektów w szablonie w grupy. Foldery określone przez `SolutionFolder` elementy są tworzone jako folderów rozwiązania, projektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji o szablonach wieloprojektowych, zobacz [jak: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie użyto `SolutionFolder` elementu, aby podzielić na dwie grupy szablonów wielu projektów `Math Classes` i `Graphics Classes`. Szablon zawiera cztery projektów, z których dwa są umieszczane w każdym folderze rozwiązania.  
+ W tym przykładzie użyto `SolutionFolder` elementu, aby podzielić szablonu wieloprojektowego na dwie grupy `Math Classes` i `Graphics Classes`. Szablon zawiera cztery projektów, dwie z nich są umieszczane w każdym folderze rozwiązania.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -102,5 +101,5 @@ Grupowanie projektów w szablonach wieloprojektowych.
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: Tworzenie szablonów obejmujących wiele projektów](../ide/how-to-create-multi-project-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
+ [Instrukcje: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md)

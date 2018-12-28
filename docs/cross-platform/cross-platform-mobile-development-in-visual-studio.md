@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
-ms.translationtype: MT
+ms.openlocfilehash: 7a51fab355f1c306fcfff4963d13e1ca59c3e503
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496145"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738823"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych dla wielu platform w programie Visual Studio
 
@@ -42,7 +42,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 
 ###  <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu
 
- Za tworzenie natywnych aplikacji dla systemu Android, iOS i Windows przy użyciu języka C# lub F # (Visual Basic nie jest obsługiwane w tej chwili).  Aby rozpocząć pracę, zainstaluj program Visual Studio 2017, wybierz **programowanie aplikacji mobilnych przy użyciu platformy .NET** opcji w Instalatorze.
+ Tworzyć natywne aplikacje dla systemów Android, iOS i Windows przy użyciu C# lub F# (Visual Basic nie jest obsługiwane w tej chwili).  Aby rozpocząć pracę, zainstaluj program Visual Studio 2017, wybierz **programowanie aplikacji mobilnych przy użyciu platformy .NET** opcji w Instalatorze.
 
  Jeśli masz już program Visual Studio 2017, uruchom ponownie **Instalatora programu Visual Studio** i wybierz taki sam **programowanie aplikacji mobilnych przy użyciu platformy .NET** opcji dla platformy Xamarin (powyżej).
 
@@ -54,7 +54,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Projektowanie jeden zestaw stron, które są renderowane dla wszystkich urządzeń za pomocą platformy Xamarin.Forms
 
- W zależności od złożoności projektu aplikacji, można rozważyć wbudowanie jej za pomocą *Xamarin.Forms* szablonów w **Mobile Apps** grupy szablonów projektu. Xamarin.Forms to zestaw narzędzi interfejsu użytkownika, który umożliwia tworzenie jednego interfejsu, którą można współdzielić między systemów Android, iOS i Windows.  Podczas kompilowania rozwiązania platformy Xamarin.Forms, uzyskasz aplikację systemu Android aplikacji systemu iOS i aplikacji Windows. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o programowaniu rozwiązań mobilnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) i [dokumentacji zestawu narzędzi Xamarin.Forms](/xamarin/xamarin-forms/).
+ W zależności od złożoności projektu aplikacji, można rozważyć wbudowanie jej za pomocą *Xamarin.Forms* szablonów w **Mobile Apps** grupy szablonów projektu. Xamarin.Forms to zestaw narzędzi interfejsu użytkownika, który umożliwia tworzenie jednego interfejsu, którą można współdzielić między systemów Android, iOS i Windows.  Podczas kompilowania rozwiązania platformy Xamarin.Forms, uzyskasz aplikację systemu Android aplikacji systemu iOS i aplikacji Windows. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o programowaniu rozwiązań mobilnych za pomocą platformy Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) i [dokumentacji zestawu narzędzi Xamarin.Forms](/xamarin/xamarin-forms/).
 
 ####  <a name="ShareHTML"></a> Współdziel kod między systemami Android, iOS i aplikacji Windows
 

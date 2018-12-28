@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906029"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739164"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj nowe funkcje do programu Visual Studio. Można dystrybuować swoje rozszerzenia innym użytkownikom, a także do witryny Marketplace programu Visual Studio. Poniżej przedstawiono kilka sposobów, w którym można rozszerzyć Visual Studio:  
@@ -79,7 +79,7 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
 ## <a name="see-also"></a>Zobacz także  
  [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [Często zadawane pytania: Konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Zarządzanie wieloma wątkami w kodzie zarządzanym](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Rozszerzenie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [Dodawanie poleceń do pasków narzędzi](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Korzystanie z usług i dostarczanie](../extensibility/using-and-providing-services.md)   
  [Zarządzanie pakietami VSPackage](../extensibility/managing-vspackages.md)   
- [Programu Visual Studio isolated shell](../extensibility/visual-studio-isolated-shell.md)   
+ [Programu Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [W programie Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Obsługa programu Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   

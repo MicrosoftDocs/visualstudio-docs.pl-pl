@@ -1,18 +1,19 @@
 ---
 layout: LandingPage
-title: Debugowanie aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Debugowanie aplikacji | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak używać programu Visual Studio 2017 do debugowania aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: f64c2748688f06e5f0f7035b1a98bc93d7a6a61c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: 2ee721d3febc070435419f2750b52bd4daf533b1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348126"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560716"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 
@@ -20,53 +21,35 @@ Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywan
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="What is debugging?">
+                            </div>
                         </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Wprowadzenie do debugera</h3>
+                        <div class="cardText">
+                            <h3>Co to jest debugowanie?</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/write-better-code-with-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_code-quality.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Debugowanie dla całkowicie początkujących</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Dowiedz się, jak debugowanie</h3>
+                        <h3>Zapis C# kodu z mniej błędów!</h3>
                     </div>
                 </div>
             </div>
@@ -80,7 +63,7 @@ Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywan
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -91,18 +74,136 @@ Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywan
         </div>
         </a>
     </li>
+</ul>
+
+<h2>Wprowadzenie do debugera</h2>
+
+<ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/remote-debugging">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o zdalnym debugowaniu</h3>
+                        <h3>Zobacz, co można zrobić debugera</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Absolute beginners">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Przewodnik dla początkujących bezwzględne</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_csharp.svg" alt="C#">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Debugowanie C# aplikacji</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Debugowanie aplikacji w języku C++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Debugowanie aplikacji w języku Visual Basic</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>Bardziej szczegółowo omawiają za pomocą debugera</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/using-breakpoints">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="Use breakpoints">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Dowiedz się więcej na temat punktów przerwania</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Tips and tricks">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Porady i wskazówki dotyczące debugera</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +217,7 @@ Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywan
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="View historical app state">
                         </div>
                     </div>
                     <div class="cardText">
@@ -134,65 +235,11 @@ Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywan
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Azure">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Debugowanie aplikacji w usłudze Azure App Service na żywo</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Debuger porady i wskazówki</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Debugowanie aplikacji wielowątkowych</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Zobacz, jak&#39;nowego w debugerze</h3>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: ustawianie właściwości analizy kodu dla projektów C/C++'
+title: 'Instrukcje: Ustawianie właściwości analizy kodu dla projektów C/C++'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,36 +20,38 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2800ce4784f5a8215dfe49b00194925c3cdb588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920680"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803155"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Porady: ustawianie właściwości analizy kodu dla projektów C/C++
-Można skonfigurować reguły używane przez narzędzie do analizy kodu do analizowania kodu w każdej konfiguracji projektu. Ponadto można kierować analizy kodu w celu pominięcia ostrzeżenia z kodu, który został wygenerowany i dodany do projektu za pomocą narzędzia innych firm.
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Instrukcje: Ustawianie właściwości analizy kodu dla projektów C/C++
+Można skonfigurować zasady, które używa narzędzie do analizy kodu w celu analizowania kodu w każdej konfiguracji projektu. Ponadto można kierować analizy kodu, aby pominąć ostrzeżenia, od kodu, który został wygenerowany i dodany do projektu za pomocą narzędzia innych firm.
 
 ## <a name="code-analysis-property-page"></a>Strona właściwości analizy kodu
- **Analizy kodu** strony właściwości zawiera wszystkie ustawienia konfiguracji analizy kodu dla projektu. Aby otworzyć stronę właściwości analizy kodu dla projektu w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**. Następnie rozwiń węzeł **właściwości konfiguracji** i wybierz **analizy kodu** kartę.
+ **Analizy kodu** strona właściwości zawiera wszystkie ustawienia konfiguracji analizy kodu dla projektu. Aby otworzyć stronę właściwości analizy kodu dla projektu w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**. Następnie rozwiń węzeł **właściwości konfiguracji** i wybierz **analizy kodu** kartę.
 
-## <a name="project-configuration-and-platform"></a>Konfiguracja projektu i platforma
- **Konfiguracji** listy i **platformy** listy umożliwiają zastosowanie ustawień analizy kodu różnych kombinacji konfiguracji i platformy inny projekt. Na przykład można kierować tworzy analizy kodu, aby zastosować jeden zestaw reguł do projektu do debugowania i inny zestaw w wersji kompilacji.
+## <a name="project-configuration-and-platform"></a>Konfiguracja projektu i Platform
+ **Konfiguracji** listy i **platformy** listy umożliwiają zastosowanie ustawienia analizy kodu w różnych kombinacji konfiguracji i platformy inny projekt. Na przykład można kierować kompilacje analizy kodu, aby zastosować jeden zestaw reguł do projektu do debugowania i inny zestaw w wersji kompilacji.
 
-## <a name="enabling-code-analysis"></a>Włączenie analizy kodu
- Określenie, czy włączyć analizy kodu dla projektu, wybierając **Włącz kod — analiza C/C++ podczas kompilacji**. W połączeniu z **konfiguracji** listy, można na przykład zdecydujesz się wyłączyć analizy kodu dla kompilacji do debugowania i włącz go w wersji kompilacji.
+## <a name="enabling-code-analysis"></a>Włączanie analizy kodu
+ Zdecyduj, czy włączyć analizy kodu dla projektu, wybierając **Włącz kod analiza C/C++ podczas kompilacji**. W połączeniu z **konfiguracji** listy, można na przykład zdecydujesz się wyłączyć analizę kodu dla kompilacji do debugowania i włącz ją dla wersji kompilacji.
 
- Jeśli projekt zawiera kod zarządzany, możesz zdecydować, czy włączać lub wyłączać analizy kodu, wybierając **Włącz analizę kodu podczas kompilacji**.
+ Jeśli projekt zawiera kod zarządzany, możesz zdecydować, czy włączyć lub wyłączyć analizy kodu, wybierając **Włącz analizę kodu podczas kompilacji**.
 
- Kod — analiza zaprojektowano w celu poprawy jakości kodu i uniknąć typowych problemów. Dlatego zastanów się, czy wyłączyć analizy kodu. Lepiej wyłączyć zestawy reguł lub poszczególnych reguł, które nie mają zastosowania do projektu.
+ Analiza kodu jest przeznaczony do pomagają poprawić jakość kodu i uniknąć typowych pułapek. W związku z tym, zastanów się, czy wyłączyć analizę kodu. Jest to zazwyczaj lepiej wyłączyć zestawy reguł lub poszczególnych reguł, które mają być stosowane do projektu.
 
 ## <a name="generated-code"></a>Wygenerowany kod
- Deweloperzy często narzędzia ułatwia szybkie opracowywanie aplikacji. Te narzędzia można wygenerować kodu, który zostanie dodany do projektu. Możesz wyświetlić naruszenia reguły, które wykrywa analizy kodu w wygenerowanym kodzie. Jednak nie można je wyświetlić, jeśli nie chcesz zachować kod.
+ Deweloperzy często narzędzia ułatwiające szybkie tworzenie aplikacji. Narzędzia te może wygenerować kod, który jest dodawany do projektu. Możesz chcieć wyświetlić naruszenia reguły, które analizy kodu, który umożliwia odnalezienie w wygenerowanym kodzie. Jednak możesz nie chcieć je wyświetlić, jeśli nie chcesz utrzymywać kod.
 
- **Pomijaj wyniki z wygenerowany kod** pole wyboru na **ogólne** strona właściwości umożliwia wybranie, czy mają być wyświetlane ostrzeżenia analizy kodu z kodu zarządzanego, który jest generowany przez narzędzie innej firmy .
+ **Pomijaj wyniki z wygenerowany kod** pole wyboru na **ogólne** strony właściwości można wybrać, czy mają być wyświetlane ostrzeżenia analizy kodu z kodu zarządzanego, który jest generowany przez narzędzia innej firmy .
 
 ## <a name="rule-sets"></a>Zestawy reguł
- Jeśli projekt zawiera kod zarządzany, możesz wybrać zasady do zastosowania w analizy kodu, wybierając zestaw z reguł **Uruchom ten zestaw reguł** listy.
+ Jeśli projekt zawiera kod zarządzany, możesz wybrać zasady do zastosowania w analizy kodu, wybierając zestaw reguł z **Uruchom ten zestaw reguł** listy.
 
 ## <a name="see-also"></a>Zobacz też
- [Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [analiza kodu dla C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [Analiza jakości zarządzanego kodu](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Analiza kodu C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)

@@ -3,24 +3,24 @@ title: Subskrypcje programu Visual Studio jest oferowana dla partnerów w progra
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Szczegółowe informacje dotyczące subskrypcji, które są oferowane, jakie zasady są stosowane i ilu subskrypcji są oferowane w programie MPN.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876772"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739455"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio jest oferowana dla partnerów w programie Microsoft Partner Network (MPN)
 Partnerzy, którzy Zdobądź kompetencję lub kto kupować Action Pack w programie MPN to kwalifikujących się do korzystania z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane na poszczególnych użytkowników, a także obowiązują tylko wtedy, gdy jest przypisany do określonego nazwanego użytkownika, który działa w przypadku firmy partnera.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Subskrypcje dla partnerów z kompetencją MPN
-Gdy partner zdobywa kompetencji — poziomie silver lub gold poziom — partnerzy zdobyć liczbą rdzeni subskrypcji programu Visual Studio Enterprise. Tego podstawowego korzyści zmian, jeśli partner zdobywa co najmniej jeden kompetencji gold. Subskrypcja programu Visual Studio Enterprise jest niestandardowe oferta, która jest w przybliżeniu do [rocznej subskrypcji chmury programu Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), ale niektóre zalety usunięte (wiele z nich są dostępne osobno do partnerzy jako ogólne korzyści MPN, a nie jako część subskrypcji programu Visual Studio Enterprise oferowane za pośrednictwem sieci MPN).
+Gdy partner zdobywa kompetencji — poziomie silver lub gold poziom — partnerzy zdobyć liczbą rdzeni subskrypcji programu Visual Studio Enterprise. Tego podstawowego korzyści zmian, jeśli partner zdobywa co najmniej jeden kompetencji gold. Subskrypcji programu Visual Studio Enterprise to oferta typu niestandardowego, która jest w przybliżeniu równa [Visual Studio Enterprise standardowa subskrypcja programu](https://visualstudio.microsoft.com/vs/pricing/), ale niektóre zalety usunięte (wiele z nich są dostępne osobno dla partnerów jako ogólne korzyści MPN, a nie jako część subskrypcji programu Visual Studio Enterprise oferowane za pośrednictwem sieci MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Podstawowe korzyści z programu Visual Studio dla zarabiać co najmniej jeden kompetencji dowolnego rodzaju
 

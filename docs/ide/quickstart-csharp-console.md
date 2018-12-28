@@ -15,14 +15,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158609"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441538"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki Start: Tworzenie pierwszej przy użyciu programu Visual Studio C# aplikacji konsoli
+# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki start: Tworzenie pierwszej przy użyciu programu Visual Studio C# aplikacji konsoli
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz prostą C# aplikację, która działa na konsoli.
 
@@ -99,4 +99,4 @@ Dodajmy trochę kodu, aby zatrzymać aplikację, tak aby nie zamyka okna konsoli
 Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już nieco C# i środowisku IDE programu Visual Studio. Aby dowiedzieć się więcej, przejdź do następujących samouczków.
 
 > [!div class="nextstepaction"]
-> [Wprowadzenie do aplikacji konsolowej C# w programie Visual Studio](tutorial-csharp-console.md)
+> [Wprowadzenie do aplikacji konsolowej C# w programie Visual Studio](../get-started/csharp/tutorial-console.md)

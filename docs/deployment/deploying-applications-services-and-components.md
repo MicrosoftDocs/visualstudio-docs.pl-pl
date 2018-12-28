@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861634"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805162"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki Start: Pierwsze spojrzenie na wdrażanie, w programie Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki start: Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
 Wdrażanie aplikacji, usług lub składników, rozpowszechnianie ich w celu instalacji na innych komputerach, urządzeniach lub serwerów lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Wiele typów aplikacji obsługuje inne narzędzia wdrażania takich jak wdrażanie z wiersza polecenia lub NuGet, które nie zostały opisane w tym miejscu).
 
@@ -41,21 +41,21 @@ Zobacz, przewodniki Szybki Start i samouczków, aby uzyskać instrukcje krok po 
 
 Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoczęcia wdrożenia etapowego, w którym inne narzędzie służy do wdrażania końcowego.
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i. **.NET Core**: Użyj narzędzia publikowania do wdrożenia w lokalnym folderze. Opcje dostępne są zależne od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) Następnie wybierz pozycję **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie w lokalnym folderze](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i. **.NET Core**: Narzędzie publikowania do wdrożenia w lokalnym folderze. Opcje dostępne są zależne od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) Następnie wybierz pozycję **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie w lokalnym folderze](quickstart-deploy-to-local-folder.md).
 
     ![Wybierz polecenie Publikuj](../deployment/media/quickstart-publish.png)
 
-- **Środowisko uruchomieniowe Visual C++**: możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia lokalnego lub łączenia statycznego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Środowisko uruchomieniowe Visual C++**: Możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia lokalnego lub łączenia statycznego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Python**, i **Node.js**: narzędzie publikowania umożliwia szybkie wdrażanie aplikacji w usłudze Azure App Service lub Azure Virtual Maszyny. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) W oknie dialogowym publikowania wybierz **usługi App Service** lub **maszyn wirtualnych platformy Azure**, a następnie wykonaj kroki konfiguracji.
+- **ASP.NET**, **platformy ASP.NET Core**, **Python**, i **Node.js**: Narzędzie publikowania szybko Wdrażaj aplikacje w usłudze Azure App Service lub na maszynie wirtualnej platformy Azure. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) W oknie dialogowym publikowania wybierz **usługi App Service** lub **maszyn wirtualnych platformy Azure**, a następnie wykonaj kroki konfiguracji.
 
     ![Usługa Azure App Service wybierz](../deployment/media/quickstart-publish-azure.png "wybierz usługi Azure App Service")
 
     W programie Visual Studio 2017 wersji 15.7 lub nowszej można wdrażać aplikacje platformy ASP.NET Core **usługi App Service dla systemu Linux**.
 
-    Dla aplikacji w języku Python, zobacz też [językiem Python — publikowanie w usłudze Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Dla aplikacji w języku Python, zobacz też [językiem Python — publikowanie w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Szybkie wprowadzenie, zobacz [Opublikuj na platformie Azure](quickstart-deploy-to-azure.md) i [publikowania w systemie Linux](quickstart-deploy-to-linux.md). Zobacz też [publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Do wdrożenia przy użyciu narzędzia Git, zobacz [ciągłe wdrażanie platformy ASP.NET Core na platformie Azure przy użyciu narzędzia Git](/aspnet/core/publishing/azure-continuous-deployment).
 
@@ -66,7 +66,7 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikuj w sieci Web lub wdrożyć do udziału sieciowego
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, i **Python**: narzędzia publikowania można użyć do wdrożenia w witrynie sieci Web przy użyciu protokołu FTP lub narzędzie Web Deploy. Aby uzyskać więcej informacji, zobacz [Wdrażanie witryny sieci web,](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, i **Python**: Narzędzie publikowania do wdrożenia w witrynie sieci Web przy użyciu protokołu FTP lub narzędzie Web Deploy. Aby uzyskać więcej informacji, zobacz [Wdrażanie witryny sieci web,](quickstart-deploy-to-a-web-site.md).
 
     W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) W narzędziu do publikowania wybierz opcję ma i postępuj zgodnie z instrukcjami konfiguracji.
 
@@ -76,7 +76,7 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
     Można także wdrożyć aplikacji ASP.NET i usług na wiele różnych sposobów. Aby uzyskać więcej informacji, zobacz [usług i aplikacji sieci web ASP.NET wdrażanie](http://www.asp.net/aspnet/overview/deployment).
 
-- **Środowisko uruchomieniowe Visual C++**: możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia centralnego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Środowisko uruchomieniowe Visual C++**: Możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia centralnego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows desktop** możesz opublikować aplikację pulpitu Windows, na serwerze sieci web lub w sieciowym udziale plików za pomocą wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) i [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -84,11 +84,11 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
 W programie Visual Studio można utworzyć pakiety aplikacji do wdrożenia w Microsoft Store.
 
-- **Platformy uniwersalnej systemu Windows**: możesz Zapakuj aplikację i wdróż je przy użyciu elementów menu. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji platformy uniwersalnej systemu Windows przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **PLATFORMY UNIWERSALNEJ SYSTEMU WINDOWS**: Można Tworzenie pakietu dla aplikacji i wdróż je przy użyciu elementów menu. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji platformy uniwersalnej systemu Windows przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Tworzenie pakietu aplikacji](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows desktop**: można wdrożyć na Microsoft Store przy użyciu Desktop Bridge począwszy od programu Visual Studio 2017 w wersji 15.4. Aby to zrobić, Rozpocznij od utworzenia projekt pakietu aplikacji Windows. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji klasycznej dla Microsoft Store (mostek pulpitu)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Windows desktop**: Można wdrożyć Microsoft Store przy użyciu Desktop Bridge począwszy od programu Visual Studio 2017 w wersji 15.4. Aby to zrobić, Rozpocznij od utworzenia projekt pakietu aplikacji Windows. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji klasycznej dla Microsoft Store (mostek pulpitu)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Mostek pulpitu](../deployment/media/feature-tour-desktop-bridge.png)
 

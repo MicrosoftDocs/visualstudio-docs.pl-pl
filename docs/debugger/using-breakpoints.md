@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068451"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425854"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
@@ -61,7 +60,7 @@ W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonyw
   
  ![Punkt przerwania wykonywania zatrzymana](../debugger/media/breakpointexecution.png "punktu przerwania wykonywania")  
   
- Po zatrzymaniu debugera w punkcie przerwania, można sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stosu wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
+ Po zatrzymaniu debugera w punkcie przerwania, można sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stosu wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Punkt przerwania jest przełącznikiem. Można kliknąć go, naciśnij **F9**, lub użyj **debugowania** > **Przełącz punkt przerwania** usunąć lub ponownie.
   
@@ -89,7 +88,7 @@ Punkt przerwania stosu wywołań jest wyświetlany w **punktów przerwania** okn
 
 Debuger przerywa w instrukcji.  
 
-Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md). 
+Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md). 
 
 Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -220,7 +219,7 @@ Punkty przerwania z zestawem warunków są wyświetlane razem ze **+** symbol w 
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Wyrażenie warunkowe
 
-Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **ma wartość true** lub **po zmianie**. Wybierz **ma wartość true** na przerwanie, gdy wyrażenie jest spełniony, lub **po zmianie** na przerwanie, gdy zmieniono wartość wyrażenia.  
+Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **Ma wartość true** lub **po zmianie**. Wybierz **ma wartość true** na przerwanie, gdy wyrażenie jest spełniony, lub **po zmianie** na przerwanie, gdy zmieniono wartość wyrażenia.  
   
  W poniższym przykładzie zostaje trafiony punkt przerwania tylko wtedy, gdy wartość `testInt` jest **4**:  
   
@@ -306,8 +305,9 @@ Wartości parametrów należy ująć w cudzysłów. Można połączyć klauzule 
 
 Punkty śledzenia są wyświetlane jako czerwone diamenty na lewym marginesie kodu źródłowego i **punktów przerwania** systemu windows. 
   
-## <a name="see-also"></a>Zobacz także  
- [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
- [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)  
- [Rozwiązywanie problemów z punktów przerwania w debugerze programu Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>Zobacz także
+
+- [Co to jest debugowanie?](../debugger/what-is-debugging.md)
+- [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)
+- [Rozwiązywanie problemów z punktów przerwania w debugerze programu Visual Studio](../debugger/troubleshooting-breakpoints.md)

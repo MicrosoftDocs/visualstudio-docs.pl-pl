@@ -1,5 +1,5 @@
 ---
-title: '&#39; &#39; nie jest dostępne w ECMA 327 Compact Profile | Dokumentacja firmy Microsoft'
+title: "\"with\" nie są dostępne w ECMA 327 Compact Profile | Dokumentacja firmy Microsoft"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e9a9acebd0225c5bcb86573698dbd7d116e0d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 61546ac1dbc03184691e4e178070ecbd7c86cf75
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788830"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801999"
 ---
-# <a name="39with39-not-available-in-the-ecma-327-compact-profile"></a>&#39; &#39; nie jest dostępne w ECMA 327 Compact Profile
-"with" nie jest dostępne w ECMA 327 Compact Profile (ErrWithNotInCP  
+# <a name="with-not-available-in-the-ecma-327-compact-profile"></a>„with" nie jest dostępne w ECMA 327 Compact Profile
+"with" nie są dostępne w ECMA 327 Compact Profile (ErrWithNotInCP  
   
- Nie możesz korzystać ze słowem kluczowym Compact profilu.  
+ Nie możesz korzystać ze słowem kluczowym w Compact Profile.  
   
- Aby uzyskać więcej informacji na temat słów kluczowych, zobacz [z instrukcją](../../javascript/reference/with-statement-javascript.md).
+ Aby uzyskać więcej informacji na temat za pomocą słowa kluczowego, zobacz [z instrukcją](../../javascript/reference/with-statement-javascript.md).

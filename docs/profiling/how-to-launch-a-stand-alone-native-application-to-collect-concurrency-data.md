@@ -1,5 +1,5 @@
 ---
-title: 'Porady: uruchamianie natywnej aplikacji autonomicznej przy użyciu Profiler do zbierania danych współbieżności przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Uruchamianie natywnej aplikacji autonomicznej przy użyciu Profiler do zbierania danych współbieżności przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27c2969286d61738ed059e3973b09843bebc5153
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: a144462902ec13d116a083c3475b6ec3f8f01a8a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592587"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Porady: uruchamianie natywnej aplikacji autonomicznej z profilerem do zbierania danych współbieżności przy użyciu wiersza polecenia
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Uruchamianie natywnej aplikacji autonomicznej z profilerem w celu zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia Profiling Tools do uruchamiania aplikacji natywnej autonomicznej (klienta) i zbierania danych współbieżności procesu i wątku.  
   
  Sesję profilowania zawiera następujące elementy:  
@@ -29,8 +29,8 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 -   Kończenie sesji profilowania  
   
 > [!NOTE]
->  Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w *tools\performance Tools* podkatalog [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć programu profilującego w wierszu polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH **polecenia** okna lub dodać do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-  
+>  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+
 ## <a name="start-the-application-with-the-profiler"></a>Uruchom aplikację za pomocą profilera  
  Aby uruchomić aplikację docelową przy użyciu profilera, należy użyć [VSPerfCmd.exe](../profiling/vsperfcmd.md)**/start** i **/uruchamianie** opcji, aby zainicjować Profiler i uruchom aplikację. Można określić **/start** i **/uruchamianie** oraz ich odpowiednie opcje. Można również dodać **/globaloff** opcję, aby wstrzymać zbieranie danych przy uruchamianiu aplikacji docelowej. Następnie użyj **globalon** do rozpoczęcia zbierania danych.  
   
@@ -88,4 +88,4 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 2.  Zamknij program profilujący, wpisując następujące polecenie w wierszu polecenia:  
   
-     **Narzędzia VSPerfCmd** [ /shutdown  ](../profiling/shutdown.md)
+     **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)

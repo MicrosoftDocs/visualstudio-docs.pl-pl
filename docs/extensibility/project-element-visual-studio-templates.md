@@ -2,9 +2,8 @@
 title: Project — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 464f6498ccf06f5087c0fa6b12a456082a36c2bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 19374e37f295b6d344b2c0f3991109371b1f4454
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639142"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561778"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project — element (szablony Visual Studio)
 Określa plików lub katalogów do dodania do projektu.  

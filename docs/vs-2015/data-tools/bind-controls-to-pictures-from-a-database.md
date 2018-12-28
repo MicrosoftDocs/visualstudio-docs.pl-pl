@@ -26,12 +26,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e50a3126407c9306e2a1f00a411e08f69c69602
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189504"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647070"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Powiązywanie kontrolek z obrazami z bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Możesz użyć **źródeł danych** okna obrazu w bazie danych można powiązać
   
  Obrazy w bazie danych są zazwyczaj przechowywane jako tablice typu byte. Elementy w **źródeł danych** okna, które są przechowywane jako tablice typu byte kontrolujesz ich typ równa **Brak** domyślnie, ponieważ tablice bajtów może zawierać wszystko, od prostej tablicy bajtów do pliku wykonywalnego dużych aplikacji. Aby utworzyć formant powiązany z danymi elementu tablicy bajtów w **źródeł danych** okno, które reprezentuje obraz, należy wybrać formant do utworzenia.  
   
- W poniższej procedurze przyjęto, że **źródeł danych** okna jest już wypełniony elementu, który jest powiązany z obrazu. Aby uzyskać więcej informacji, zobacz [porady: łączenie z danymi w bazie danych](../data-tools/how-to-connect-to-data-in-a-database.md).  
+ W poniższej procedurze przyjęto, że **źródeł danych** okna jest już wypełniony elementu, który jest powiązany z obrazu.
   
-### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Obraz w bazie danych można powiązać kontrolki  
+## <a name="bind-a-picture-in-a-database-to-a-control"></a>Powiązania obrazu w bazie danych do kontrolki  
   
 1.  Upewnij się, że chcesz dodać formant do powierzchni projektowej jest otwarty w Projektancie WPF lub projektanta Windows Forms.  
   
@@ -59,4 +59,3 @@ Możesz użyć **źródeł danych** okna obrazu w bazie danych można powiązać
   
 ## <a name="see-also"></a>Zobacz też  
  [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)
-

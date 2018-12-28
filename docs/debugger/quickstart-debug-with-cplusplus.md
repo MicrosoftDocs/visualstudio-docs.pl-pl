@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561765"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki Start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
 
 Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
 
@@ -103,7 +103,7 @@ Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `c1.pus
 
 Aplikacja kontynuuje wykonywanie, wywołanie `doWork`i zatrzymuje się w wierszu kodu, gdy kliknięto przycisk.
 
-Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
+Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Sprawdzanie zmiennych w datatip
 

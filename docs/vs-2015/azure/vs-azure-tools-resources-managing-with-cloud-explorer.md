@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: a5b75aa5e1310e02befe162199472eef987d7cd9
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f387a4a0bb8c9555bc1ca1f8b3cc800cecd7637d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003431"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803106"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
-Eksplorator chmury umożliwia wyświetlanie zasobów platformy Azure i grup zasobów, badania ich właściwości i akcje klucza dewelopera diagnostyki z poziomu programu Visual Studio. 
+Eksplorator chmury umożliwia wyświetlanie zasobów platformy Azure i grup zasobów, badania ich właściwości i akcje klucza dewelopera diagnostyki z poziomu programu Visual Studio.
 
-Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud Explorer jest oparta na stosie usługi Azure Resource Manager. W związku z tym, rozumie Eksploratora chmury, zasoby, takie jak grupy zasobów platformy Azure i usług platformy Azure, takich jak Logic apps i API apps i obsługuje [kontroli dostępu opartej na rolach](/azure/role-based-access-control/role-assignments-portal.md) (RBAC). 
+Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud Explorer jest oparta na stosie usługi Azure Resource Manager. W związku z tym, rozumie Eksploratora chmury, zasoby, takie jak grupy zasobów platformy Azure i usług platformy Azure, takich jak Logic apps i API apps i obsługuje [kontroli dostępu opartej na rolach](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -34,19 +34,19 @@ Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Dodaj platformę Azure konta do Eksploratora chmury
 
-Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz dodać konto do programu Cloud Explorer. 
+Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz dodać konto do programu Cloud Explorer.
 
 1. W **programu Cloud Explorer**, wybierz opcję **ustawienia konta platformy Azure**.
 
    ![Ikona ustawień konta Azure Eksploratora chmury](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Wybierz **Zarządzanie kontami**. 
+1. Wybierz **Zarządzanie kontami**.
 
    ![Łącze Dodaj konto Eksploratora chmury](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
-1. Zaloguj się do konta platformy Azure zasoby, których chcesz przeglądać. 
+1. Zaloguj się do konta platformy Azure zasoby, których chcesz przeglądać.
 
-1. Po zalogowaniu się do konta platformy Azure, Wyświetl subskrypcje skojarzone z tym kontem. Zaznacz pole wyboru dla subskrypcji konta, aby przejrzeć i wybrać pozycję **Zastosuj**. 
+1. Po zalogowaniu się do konta platformy Azure, Wyświetl subskrypcje skojarzone z tym kontem. Zaznacz pole wyboru dla subskrypcji konta, aby przejrzeć i wybrać pozycję **Zastosuj**.
 
    ![Eksplorator chmury: Wybierz subskrypcję platformy Azure do wyświetlenia](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
@@ -54,7 +54,7 @@ Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz dodać konto
 
    ![Eksplorator zasobów dla konta platformy Azure w chmurze](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
-## <a name="remove-an-azure-account-from-cloud-explorer"></a>Usuń konto platformy Azure z Eksploratora chmury 
+## <a name="remove-an-azure-account-from-cloud-explorer"></a>Usuń konto platformy Azure z Eksploratora chmury
 
 1. W **programu Cloud Explorer**, wybierz opcję **zarządzania kontami**.
 
@@ -76,9 +76,9 @@ Aby wyświetlić zasoby platformy Azure, możesz wybrać dowolną **typów zasob
 
    ![Listę rozwijaną Eksploratora chmury, aby wybrać widok żądanych zasobów](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
-1. Z menu kontekstowego wybierz żądany widok: 
+1. Z menu kontekstowego wybierz żądany widok:
 
-   * **Typy zasobów** view - typowy widok na [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), pokazuje Twoich zasobów platformy Azure, pogrupowane według ich typu, na przykład aplikacje sieci web, kont magazynu i maszyn wirtualnych. 
+   * **Typy zasobów** view - typowy widok na [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), pokazuje Twoich zasobów platformy Azure, pogrupowane według ich typu, na przykład aplikacje sieci web, kont magazynu i maszyn wirtualnych.
    * **Grupy zasobów** view - kategoryzuje zasobów platformy Azure przez grupę zasobów platformy Azure, z którymi są powiązane. Grupa zasobów to zbiór zasobów platformy Azure, zwykle używane przez określoną aplikację. Aby dowiedzieć się więcej na temat grup zasobów platformy Azure, zobacz [Omówienie usługi Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
 
    Na poniższej ilustracji przedstawiono porównanie widoki dwóch zasobów:

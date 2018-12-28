@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 5364bf8ba45e4b569649920175c6e94fc46128ed
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257059"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561804"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informacje o oknie rejestrów w programie Visual Studio (C#, C++, Visual Basic F#)
 
@@ -52,5 +52,5 @@ ms.locfileid: "52257059"
  Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Jeśli możesz kliknąć prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające listę grup, które można wyświetlić lub ukryć zgodnie z potrzebami.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)   
- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
+ [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)   
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
