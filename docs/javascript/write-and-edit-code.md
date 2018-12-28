@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 293a402e701cb316b9fb3dacf27b905462d2dc06
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
+ms.openlocfilehash: 5f511b668c207ae719dbb981d7dc5640f0fa124c
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443379"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802699"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
 W tym krótkie wprowadzenie do edytora kodu w programie Visual Studio omówimy kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **obciążenie develoment Node.js** z programem Visual Studio.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
 
-W tym artykule przyjęto założenie, że już znasz develoment języka JavaScript. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [utworzyć aplikację Node.js lub Express](../javascript/tutorial-nodejs.md) pierwszy.
+W tym artykule przyjęto założenie, że już znasz za pomocą języka JavaScript. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [utworzyć aplikację Node.js lub Express](../javascript/tutorial-nodejs.md) pierwszy.
 
 > [!TIP]
 > Aby skorzystać z tego artykułu, upewnij się, że wybrano dla programu Visual Studio ustawienia języka JavaScript. Aby dowiedzieć się, jak wybranie ustawienia dla zintegrowanego środowiska programistycznego (IDE), zobacz [ustawienia środowiska](../ide/environment-settings.md). Podczas importowania ustawień należy zaimportować **JavaScript** ustawienia.
@@ -108,7 +108,7 @@ Umieść kursor w miejscu gdzie chcesz wstawić fragment kodu, kliknij prawym pr
 
 ![Fragment kodu w programie Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
-**Wstaw fragment kodu** pojawi się okno pojawia się w edytorze. Wybierz **ogólne** a następnie kliknij dwukrotnie **dla** element na liście.
+**Wstaw fragment kodu** pojawi się okno w edytorze. Wybierz **ogólne** a następnie kliknij dwukrotnie **dla** element na liście.
 
 ![Fragment kodu dotyczący pętli w programie Visual Studio](../javascript/media/write-code-insert-snippet-for-loop.png)
 

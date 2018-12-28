@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 546d666ce233b1c52e6746592dd41fd0055813a5
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
+ms.openlocfilehash: 5c7e8c81b52744d62dbdc60259462e7dedc1388e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443480"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804906"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 
@@ -28,7 +28,7 @@ Visual Studio *zintegrowanego środowiska programistycznego* to twórczych uruch
 
 Ten obraz pokazuje programu Visual Studio Otwórz projekt języka Python i kilkoma oknami narzędzi kluczy, które będą prawdopodobnie używane:
 
-- [**Eksplorator rozwiązań** ](../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](../ide/quickstart-projects-solutions.md).
+- [**Eksplorator rozwiązań** ](../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](/visualstudio/get-started/tutorial-projects-solutions).
     - Wraz z **Eksploratora rozwiązań** jest [ **środowiska Python**](managing-python-environments-in-visual-studio.md), gdzie zarządzać różnych interpreterów języka Python, które są zainstalowane na tym komputerze.
 
 - [Okna edytora](../ide/writing-code-in-the-code-and-text-editor.md) (center), gdzie prawdopodobnie spędzisz większość czasu, wyświetla zawartość pliku. To jest, gdy użytkownik [edycji kodu w języku Python](editing-python-code-in-visual-studio.md)nawigować do kodu struktury i ustawiać punkty przerwania podczas debugowania sesji. Za pomocą języka Python, możesz również wybrać kod i naciśnij klawisze Ctrl + Enter, aby uruchomić ten kod w [okna interaktywnego REPL](python-interactive-repl-in-visual-studio.md).

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e7c4935a84c85dd165f75834bd4c4968319474c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: 4ac332e7feca281f49ad6b56030a26dbd9a41e47
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739513"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803075"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Projektowanie XAML w programie Visual Studio
 
@@ -42,7 +42,7 @@ Dla najbardziej podstawowe zadania środowisko IDE programu Visual Studio i Blen
 
 - **Funkcja XAML IntelliSense:** Oba środowiska IDE obsługuje wszystkie typowe funkcje, których można oczekiwać od uzupełniania instrukcji, obsługa typowych operacji edytora, takich jak komentowania i formatowanie kodu i nawigacji do zasobów, powiązania i kodu w tym funkcji IntelliSense.
 
-- **Podstawowe możliwości debugowania:** Można teraz debugować w programie Blend, w tym ustawianie punktów przerwania w kodzie, aby debugować uruchomionej aplikacji. Aby zapewnić spójne środowisko debugowania w programie Visual Studio, program Blend for Visual Studio zawiera większość debugowania systemu windows i paski narzędzi programu Visual Studio. Zaawansowane możliwości debugowania, takie jak dane diagnostyczne i analiza kodu są dostępne tylko w programie Visual Studio. Zobacz [debugowania w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour).
+- **Podstawowe możliwości debugowania:** Można teraz debugować w programie Blend, w tym ustawianie punktów przerwania w kodzie, aby debugować uruchomionej aplikacji. Aby zapewnić spójne środowisko debugowania w programie Visual Studio, program Blend for Visual Studio zawiera większość debugowania systemu windows i paski narzędzi programu Visual Studio. Zaawansowane możliwości debugowania, takie jak dane diagnostyczne i analiza kodu są dostępne tylko w programie Visual Studio. Zobacz [debugowania w programie Visual Studio](../debugger/debugger-feature-tour.md).
 
 - **Środowisko ponownego ładowania pliku:** Edytowanie plików XAML w każdej Blend for Visual Studio lub Visual Studio i mieć edytowanych plików podczas przełączania między nimi Załaduj ponownie. Aby zminimalizować przestoje przepływu pracy, można teraz ustawić pliku preferencji Załaduj ponownie w oknie dialogowym ponowne załadowanie pliku.
 
