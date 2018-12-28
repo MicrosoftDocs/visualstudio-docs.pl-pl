@@ -30,17 +30,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949685"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647651"
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń w przypadku dostosowań na poziomie dokumentu są nieco inne niż dodatków narzędzi VSTO dla programów obsługi zdarzeń.  
@@ -48,7 +48,7 @@ ms.locfileid: "49949685"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>Projektów na poziomie dokumentu  
- Program Visual Studio udostępnia wygenerowany kod związany z nowych lub istniejących dokumentów lub arkuszy w dostosowaniach na poziomie dokumentu. Ten kod wywołuje dwóch różnych zdarzeń: **uruchamiania** i **zamknięcia**.  
+ Program Visual Studio udostępnia wygenerowany kod związany z nowych lub istniejących dokumentów lub arkuszy w dostosowaniach na poziomie dokumentu. Ten kod wywołuje dwóch różnych zdarzeń: **Uruchamianie** i **zamknięcia**.  
   
 ### <a name="startup-event"></a>Startup — Zdarzenie  
  **Uruchamiania** zdarzenie jest wywoływane dla każdego z elementów hosta (dokumentu, skoroszytu lub arkusza) po dokumentu i całego kodu inicjowania w zestawie została uruchomiona. To ostatnia rzecz do uruchamiania w konstruktorze klasy, działający w kodzie. Aby uzyskać więcej informacji na temat elementów hosta, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "49949685"
   
 ## <a name="see-also"></a>Zobacz także  
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
- [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  

@@ -1,7 +1,7 @@
 ---
-title: 'Wskazówki: Korzystanie z programu MSBuild | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Korzystanie z programu MSBuild | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 12/18/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13493b9ab21386ff5856fd6046e963d362071570
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880152"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648923"
 ---
-# <a name="walkthrough-use-msbuild"></a>Przewodnik: Używanie programu MSBuild
+# <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
 Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Studio. Ten przewodnik stanowi wprowadzenie do bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild. Uzyskasz informacje na temat:
 
 -   Tworzenie i manipulowanie pliku projektu.
@@ -116,24 +116,28 @@ Zadanie komunikatu jest jednym z wielu zadań, które jest dostarczany za pomoc�
 Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejściowych i wyświetla je na urządzeniu wyjściowym. Docelowy HelloWorld wykonuje zadanie komunikatu dwa razy: najpierw po to, aby wyświetlić "Hello", a następnie, aby wyświetlić "World".
 
 ## <a name="build-the-target"></a>Tworzenie obiektu docelowego
- Uruchom program MSBuild z **Visual Studio Command Prompt** do tworzenia pod kątem HelloWorld zdefiniowanych powyżej. Użyj - docelowego lub -t przełącznik wiersza polecenia do wybierz docelową.
+ Uruchom program MSBuild z **wiersz polecenia dla deweloperów** dla programu Visual Studio do tworzenia pod kątem HelloWorld zdefiniowanych powyżej. Użyj - docelowego lub -t przełącznik wiersza polecenia do wybierz docelową.
 
 > [!NOTE]
->  Będziemy nazywać **Visual Studio Command Prompt** jako **okna polecenia** w poniższych sekcjach.
+>  Będziemy nazywać **wiersz polecenia dla deweloperów** jako **okna polecenia** w poniższych sekcjach.
 
 #### <a name="to-build-the-target"></a>Aby zbudować obiekt docelowy
 
-1.  Kliknij przycisk **Start**, następnie kliknij przycisk **wszystkie programy**. Zlokalizuj i kliknij **Visual Studio Command Prompt** w **Visual Studio Tools** folderu.
+1. Otwórz **okna polecenia**.
 
-2.  W oknie polecenia przejdź do folderu zawierającego plik projektu, w tym przypadku *D:\BuildApp\BuildApp*.
+   (System Windows 10) W polu wyszukiwania na pasku zadań, należy uruchomić, wpisując nazwę narzędzia, takie jak `dev` lub `developer command prompt`. Wyświetlenie listy zainstalowanych aplikacji spełniających kryteria wyszukiwania.
 
-3.  Msbuild wykonywania za pomocą polecenia przełącznika - t: HelloWorld. Wybiera i tworzy element docelowy HelloWorld:
+   Jeśli potrzebujesz ręcznie znaleźć, plik jest *LaunchDevCmd.bat* w  *<visualstudio installation folder> \<wersji > \Common7\Tools* folderu.
+
+2. W oknie polecenia przejdź do folderu zawierającego plik projektu, w tym przypadku *D:\BuildApp\BuildApp*.
+
+3. Msbuild wykonywania za pomocą polecenia przełącznika - t: HelloWorld. Wybiera i tworzy element docelowy HelloWorld:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Sprawdź dane wyjściowe w **okna polecenia**. Powinny zostać wyświetlone dwa wiersze "Hello" i "World":
+4. Sprawdź dane wyjściowe w **okna polecenia**. Powinny zostać wyświetlone dwa wiersze "Hello" i "World":
 
     ```
     Hello
@@ -225,10 +229,10 @@ $(PropertyName)
  Niemal wszystkie elementy programu MSBuild może mieć atrybutu warunku. Aby uzyskać więcej dyskusję na temat przy użyciu atrybutu warunku, zobacz [warunki](../msbuild/msbuild-conditions.md).
 
 ### <a name="reserved-properties"></a>Właściwości zastrzeżone
- Program MSBuild rezerwuje niektóre nazwy właściwości do przechowywania informacji o pliku projektu oraz pliki binarne programu MSBuild. MSBuildToolsPath znajduje się przykład właściwości zastrzeżonych. Właściwości zastrzeżone są przywoływane przy użyciu notacji $, podobnie jak inne właściwości. Aby uzyskać więcej informacji, zobacz [porady: odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) i [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ Program MSBuild rezerwuje niektóre nazwy właściwości do przechowywania informacji o pliku projektu oraz pliki binarne programu MSBuild. MSBuildToolsPath znajduje się przykład właściwości zastrzeżonych. Właściwości zastrzeżone są przywoływane przy użyciu notacji $, podobnie jak inne właściwości. Aby uzyskać więcej informacji, zobacz [jak: Odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) i [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Zmienne środowiskowe
- Możesz odwoływać się zmiennych środowiskowych w plikach projektu taki sam sposób, jak właściwości kompilacji. Na przykład aby użyć zmiennej środowiskowej PATH w pliku projektu, należy użyć składni $(Path). Jeśli projekt zawiera definicję właściwości, która ma taką samą nazwę jako zmienną środowiskową, właściwość w projekcie zastępuje wartość zmiennej środowiskowej. Aby uzyskać więcej informacji, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Możesz odwoływać się zmiennych środowiskowych w plikach projektu taki sam sposób, jak właściwości kompilacji. Na przykład aby użyć zmiennej środowiskowej PATH w pliku projektu, należy użyć składni $(Path). Jeśli projekt zawiera definicję właściwości, która ma taką samą nazwę jako zmienną środowiskową, właściwość w projekcie zastępuje wartość zmiennej środowiskowej. Aby uzyskać więcej informacji, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Ustawianie właściwości w wierszu polecenia
  Właściwości mogą być określone w wierszu polecenia za pomocą - lub -p właściwości przełącznik wiersza polecenia. Wartości właściwości odebranych w wierszu polecenia zastępują wartości właściwości ustawione w projekcie plików i zmiennymi środowiskowymi.
@@ -290,7 +294,7 @@ Aby uzyskać więcej informacji, zobacz [znaki specjalne MSBuild](../msbuild/msb
 </ItemGroup>
 ```
 
- Definiuje grupy elementów zawierających dwa elementy. Typ elementu kompilacji ma dwie wartości: *Program.cs* i *Properties\AssemblyInfo.cs*.
+ Definiuje grupy elementów zawierających dwa elementy. Typ elementu kompilacji ma dwie wartości: *Plik program.cs* i *Properties\AssemblyInfo.cs*.
 
  Poniższy kod tworzy tego samego typu elementu, deklarując oba pliki w jednym atrybucie Include, rozdzielając je średnikiem.
 
@@ -388,7 +392,7 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
 <Photos Include="images\**.jpeg" />
 ```
 
- dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w *obrazów* folder i wszystkie jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).
+ dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w *obrazów* folder i wszystkie jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).
 
  Należy zauważyć, że podaną elementów dodanych do typu elementu. Na przykład
 
@@ -409,7 +413,7 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- dodaje wszystkie pliki z rozszerzeniem pliku *.cs* kompilacji typu elementu, z wyjątkiem plików których nazwy zawierają ciąg *projektanta*. Aby uzyskać więcej przykładów, zobacz [porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
+ dodaje wszystkie pliki z rozszerzeniem pliku *.cs* kompilacji typu elementu, z wyjątkiem plików których nazwy zawierają ciąg *projektanta*. Aby uzyskać więcej przykładów, zobacz [jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
 
 Ten atrybut wykluczania dotyczy tylko elementy dodane przez atrybut Include w pozycji elementu, który zawiera oba te. Na przykład
 
@@ -561,8 +565,8 @@ Na przykład element lista plików źródłowych mogą zostać przekształcone n
 
 Zwróć uwagę, że metadane wyrażone w tej składni nie powoduje, że przetwarzanie wsadowe.
 
-## <a name="whats-next"></a>Jaka jest przyszłość?
- Informacje na temat tworzenia pliku prostego projektu w jednym kroku w danym momencie, wypróbuj [wskazówki: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+## <a name="whats-next"></a>Co dalej?
+ Informacje na temat tworzenia pliku prostego projektu w jednym kroku w danym momencie, wypróbuj [instruktażu: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Zobacz także
 

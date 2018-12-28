@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office'
+title: 'Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - prerequisites [Office development in Visual Studio]
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a07545fb9a7ddb2fc70ba5053ad131d2e214636
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 848994aec796b25c031e7367db10f67e95f09f79
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671316"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648477"
 ---
-# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
+# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
   Aby skonfigurować komputerze deweloperskim, można użyć narzędzia Microsoft Office developer tools w programie Visual Studio, wykonaj instrukcje przedstawione w tym temacie. Musi mieć uprawnienia administracyjne na komputerze deweloperskim, aby wykonać te kroki.  
   
 ### <a name="to-configure-the-development-computer"></a>Aby skonfigurować komputerze deweloperskim  
@@ -39,7 +39,7 @@ ms.locfileid: "50671316"
 ## <a name="see-also"></a>Zobacz także  
  [What's new in Office development](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Porady: Instalowanie Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Porady: podstawowe zestawy międzyoperacyjne pakietu Office instalacji](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Instrukcje: Zainstalować Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

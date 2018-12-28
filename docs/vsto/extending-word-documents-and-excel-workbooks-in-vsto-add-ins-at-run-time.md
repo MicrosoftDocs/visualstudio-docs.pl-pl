@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895785"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647822"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania
   Dodatku narzędzi VSTO służy do dostosowywania dokumentów programu Word i skoroszytów programu Excel w następujący sposób:  
@@ -39,7 +39,7 @@ ms.locfileid: "49895785"
   
   Aby używać tej funkcji, musisz wygenerować obiektu w czasie wykonywania, który rozszerza dokument lub skoroszyt.  
   
-  **Dotyczy:** informacje przedstawione w tym artykule mają zastosowanie do projektów dodatku VSTO dla następujących aplikacji: Excel i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Dotyczy:** Informacje przedstawione w tym artykule mają zastosowanie do projektów dodatku VSTO dla następujących aplikacji: Program Excel i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generowanie rozszerzonych obiektów w dodatków narzędzi VSTO  
  *Obiekty rozszerzone* wystąpień typów przy użyciu programu Visual Studio Tools dla pakietu Office runtime, które dodają funkcje do obiektów, które istnieją w sposób natywny w modele obiektów programu Word lub Excel (o nazwie *natywnych obiektów pakietu Office*). Aby wygenerować rozszerzonego obiektu dla obiektu programu Word lub Excel, należy użyć `GetVstoObject` metody. Przy pierwszym wywołaniu `GetVstoObject` obiektu metodę dla określonego programu Word lub Excel, zwraca nowy obiekt, który rozszerza określony obiekt. Każdorazowo, wywołaj metodę i określić tego samego programu Word lub Excel obiektu, zwraca ten sam obiekt rozszerzonej.  

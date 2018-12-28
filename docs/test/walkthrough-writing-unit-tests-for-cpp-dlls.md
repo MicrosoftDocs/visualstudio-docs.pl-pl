@@ -1,5 +1,5 @@
 ---
-title: 'Porady: pisanie testów jednostkowych dla bibliotek DLL języka C++'
+title: 'Instrukcje: Pisanie testów jednostkowych dla bibliotek DLL języka C++'
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877260"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740169"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Porady: pisanie testów jednostkowych dla bibliotek DLL języka C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: Pisanie testów jednostkowych dla bibliotek DLL języka C++
 
 W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy użyciu metodologii wczesnego testowania. Podstawowe kroki są następujące:
 
@@ -329,8 +329,8 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy uż
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Korzystanie z elementu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-- [Wskazówki: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importowanie i eksportowanie](/cpp/build/importing-and-exporting)

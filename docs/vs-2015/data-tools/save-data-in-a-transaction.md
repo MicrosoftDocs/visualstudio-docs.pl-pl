@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: dc838a144b1218ebec2c8a46c7c200cf5def1153
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219305"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647533"
 ---
 # <a name="save-data-in-a-transaction"></a>Zapisywanie danych w ramach transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "50219305"
 W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy użyciu <xref:System.Transactions> przestrzeni nazw. W tym przykładzie użyto `Customers` i `Orders` tabel z przykładowej bazy danych Northwind.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Ten przewodnik wymaga dostępu do przykładowej bazy danych Northwind. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+ Ten przewodnik wymaga dostępu do przykładowej bazy danych Northwind.
   
 ## <a name="create-a-windows-application"></a>Tworzenie aplikacji Windows  
  Pierwszym krokiem jest utworzenie **aplikacji Windows**.  
@@ -90,14 +90,14 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 -   Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md),<xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
+     A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
 -   Przeciągnij powiązane **zamówienia** węzła (nie main **zamówienia** węzła, ale poniżej węzła powiązanej tabeli podrzędnej **faks** kolumny) do poniższego formularza  **CustomersDataGridView**.  
   
-     A <xref:System.Windows.Forms.DataGridView> pojawia się w formularzu. [OrdersTableAdapter](../data-tools/tableadapter-overview.md) i <xref:System.Windows.Forms.BindingSource> są wyświetlane w zasobniku składnika.  
+     A <xref:System.Windows.Forms.DataGridView> pojawia się w formularzu. OrdersTableAdapter i <xref:System.Windows.Forms.BindingSource> są wyświetlane w zasobniku składnika.  
   
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Dodaj odwołanie do zestawu System.Transactions  
- Użyj transakcji <xref:System.Transactions> przestrzeni nazw. Odwołanie do zestawu system.transactions nie zostanie dodany domyślnie, więc trzeba ręcznie dodać ją.  
+ Użyj transakcji <xref:System.Transactions> przestrzeni nazw. Odwołanie do zestawu System.Transactions nie zostanie dodany domyślnie, więc trzeba ręcznie dodać ją.  
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Aby dodać odwołanie do pliku System.Transactions DLL  
   
@@ -165,4 +165,3 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-

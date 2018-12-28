@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063729"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684265"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Porady: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Instrukcje: Zastosowanie zmian w trybie przerwania za pomocą Edytuj i Kontynuuj (Visual Basic)
 Edytuj i Kontynuuj umożliwia edytowanie kodu w trybie przerwania, a następnie kontynuuj bez zatrzymywania i ponownego uruchamiania wykonywania.  
   
-Ograniczenia dotyczące używania Edytuj i Kontynuuj podczas debugowania, zobacz [obsługiwane zmiany kodu (C# i Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Ograniczenia dotyczące używania Edytuj i Kontynuuj podczas debugowania, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).
   
 ### <a name="to-edit-code-in-break-mode"></a>Do edycji kodu w trybie przerwania  
   
@@ -52,7 +52,7 @@ Ograniczenia dotyczące używania Edytuj i Kontynuuj podczas debugowania, zobacz
   
 2.  Wprowadź wszelkie zmiany kodu żądaną i objęty pomocą techniczną.  
   
-     Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  Jeśli spróbujesz kodu, zmiany, które nie jest dozwolona przez Edytuj i Kontynuuj, zmiany będą podkreślone purpurowa linia falista i zadania pojawi się na liście zadań. Nie można kontynuować wykonywania kodu, chyba że można cofnąć zmiany kodu niedozwolony.  
@@ -62,5 +62,5 @@ Ograniczenia dotyczące używania Edytuj i Kontynuuj podczas debugowania, zobacz
      Kod wykonuje teraz stosowane edycji włączone do projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obsługiwane zmiany kodu (C# i Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [Edytuj i kontynuuj (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

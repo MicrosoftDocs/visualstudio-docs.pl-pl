@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: c1271d87342695e41f84248b8f73583c43aadb77
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281852"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647911"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
  `GetChanges` samodzielnie rekordy wszystkie zmienione. Z kolei przekazując żądaną <xref:System.Data.DataRowState> jako parametr do `GetChanges` metody, można określić podzbiór zmienionych rekordów, które mają: nowo dodane rekordy, rekordy, które zostały oznaczone do usunięcia, odłączony rekordów lub zmodyfikowanych rekordów.  
   
- Wprowadzenie podzestaw zmienionych rekordów jest przydatne w przypadku, gdy użytkownik chce przesłać rekordów do innego składnika do przetworzenia. Zamiast przesyłania całego zestawu danych, można zmniejszyć koszty komunikowania się z innego składnika przez pobieranie tylko rekordy, które wymaga składnika. Aby uzyskać więcej informacji, zobacz [porady: pobieranie zmienione wiersze](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Wprowadzenie podzestaw zmienionych rekordów jest przydatne w przypadku, gdy użytkownik chce przesłać rekordów do innego składnika do przetworzenia. Zamiast przesyłania całego zestawu danych, można zmniejszyć koszty komunikowania się z innego składnika przez pobieranie tylko rekordy, które wymaga składnika. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie zmienionych wierszy](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Zatwierdza zmiany w zestawie danych  
  Zmiany w zestawie danych, <xref:System.Data.DataRow.RowState%2A> ustawiono właściwość zmienionych wierszy. Ustanowionych, przechowywane i udostępniane przez pierwotnym i bieżącym wersje rekordów <xref:System.Data.DataRowView.RowVersion%2A> właściwości. Metadane, które są przechowywane we właściwościach tych zmienionych wierszy jest niezbędne do wysyłania właściwe aktualizacje w źródle danych.  
@@ -221,7 +221,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
  Można sprawdzić poprawność danych na kilka sposobów:  
   
-- W warstwie biznesowej, dodając kod do aplikacji w taki sposób, aby sprawdzić poprawność danych. Zestaw danych jest w jednym miejscu, możesz to zrobić. Zestaw danych zawiera niektóre zalety weryfikacji zaplecza — takie jak możliwość sprawdzenia poprawności zmian, jak zmieniają się wartości kolumn i wierszy. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md).  
+- W warstwie biznesowej, dodając kod do aplikacji w taki sposób, aby sprawdzić poprawność danych. Zestaw danych jest w jednym miejscu, możesz to zrobić. Projektant obiektów DataSet zawiera niektóre zalety weryfikacji zaplecza — takie jak możliwość sprawdzenia poprawności zmian, jak zmieniają się wartości kolumn i wierszy. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md).  
   
 - W warstwie prezentacji przez dodawanie walidacji do formularzy. Aby uzyskać więcej informacji, zobacz [walidacji danych wejściowych użytkownika w formularzach Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
@@ -275,14 +275,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
 >  Można również ustawić wartości w `Parameters` kolekcji samodzielnie w kodzie, co zwykle należy w obsłudze zdarzeń adaptera danych <xref:System.Data.DataTable.RowChanging> zdarzeń.  
   
 ## <a name="see-also"></a>Zobacz też  
- [TableAdapter — Przegląd](../data-tools/tableadapter-overview.md)   
  [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Przegląd aplikacji w programie Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [O łączeniu z danymi w programie Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
  [Przygotowanie aplikacji na odbieranie danych](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Pobieranie danych do aplikacji](../data-tools/fetching-data-into-your-application.md)   
  [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Edytowanie danych w aplikacji](../data-tools/editing-data-in-your-application.md)   
  [Sprawdzanie poprawności danych](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Zapisywanie danych](../data-tools/saving-data.md)
-

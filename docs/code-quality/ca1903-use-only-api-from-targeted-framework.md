@@ -1,5 +1,5 @@
 ---
-title: 'CA1903: Używaj tylko API z frameworku docelowego'
+title: 'CA1903: Używaj tylko interfejsu API platformy docelowej'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822816"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738875"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko API z frameworku docelowego
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822816"
 |Program .NET Framework 3,5|.NET Framework 3.5 SP1|
 |Program .NET Framework 4|Brak|
 
- Aby zmienić platformę docelową projektu, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Aby zmienić platformę docelową projektu, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby usunąć zależność od dodatku service pack, należy usunąć wszystkie użycia nowego elementu członkowskiego lub typu. Jeśli jest to zamierzone zależności, ostrzeżenia lub wyłącz tę regułę.
@@ -69,4 +69,4 @@ ms.locfileid: "49822816"
 ## <a name="see-also"></a>Zobacz także
 
 - [Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)
-- [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/visual-studio-multi-targeting-overview.md)

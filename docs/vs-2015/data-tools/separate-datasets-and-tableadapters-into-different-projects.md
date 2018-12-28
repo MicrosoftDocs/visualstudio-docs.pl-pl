@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37f415111930336e2505694566ad22d1d66093e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824331"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648747"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49824331"
   
 Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i klasy zestawu danych mogą być generowane w oddzielnych projektów. Dzięki temu można szybko oddzielnymi warstwami aplikacji i generowania aplikacji n warstwowa danych.  
   
- W poniższej procedurze opisano sposób korzystania z[tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md) do generowania kodu zestawu danych do projektu, który jest oddzielony od projektu, który zawiera wygenerowaną `TableAdapter` kodu.  
+ W poniższej procedurze opisano proces za pomocą Projektanta obiektów Dataset, aby wygenerować kod zestawu danych do projektu, który jest oddzielony od projektu, który zawiera wygenerowaną `TableAdapter` kodu.  
   
 ## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets i TableAdapters  
  Kiedy oddzielisz kodu zestawu danych z `TableAdapter` kodu, projekt, który zawiera kod zestawu danych musi znajdować się w bieżącym rozwiązaniu. Jeśli ten projekt nie znajduje się w bieżącym rozwiązaniu, nie będzie dostępna w **projektu DataSet** listy w **właściwości** okna.  
@@ -75,4 +75,3 @@ Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](http://msdn.
  [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)   
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
-

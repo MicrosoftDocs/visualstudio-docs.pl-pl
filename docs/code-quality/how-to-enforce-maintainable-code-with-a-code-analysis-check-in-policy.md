@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wymuszanie kodu za pomocą zasad ewidencjonowania analizy kodu'
+title: 'Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad analizy kodu zaewidencjonowania'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892094"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739383"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Porady: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad analizy kodu zaewidencjonowania
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad analizy kodu zaewidencjonowania
 
 Deweloperzy mogą używać narzędzia metryki kodu do mierzenie złożoności i łatwości konserwacji kodu, ale nie można wywołać metryki kodu jako części zasad ewidencjonowania. Jednak można włączyć reguły analizy kodu, które sprawdza zgodność kodu z normami metryki kodu i Wymuszanie reguł za pomocą zasad ewidencjonowania. Aby uzyskać więcej informacji na temat metryki kodu, zobacz [kodu wartości metryk](../code-quality/code-metrics-values.md).
 
@@ -47,13 +47,13 @@ Administratorzy kontroli wersji serwera Team Foundation można dodać reguły ut
 
 2. Zaznacz pola wyboru dla następujących reguł:
 
-   - Głębokość dziedziczenia: **CA1501 AvoidExcessiveInheritance** — próg: ostrzeżenie w więcej niż 5 poziomów w głąb
+   - Głębokość dziedziczenia: **CA1501 AvoidExcessiveInheritance** -progu: Ostrzeżenie o więcej niż 5 poziomów w głąb
 
-   - Złożoność: **CA1502 AvoidExcessiveComplexity** — próg: ostrzeżenie na więcej niż 25
+   - Złożoność: **CA1502 AvoidExcessiveComplexity** -progu: Ostrzeżenie na więcej niż 25
 
-   - Indeks łatwości utrzymania: **CA1505 AvoidUnmaintainableCode** — próg: ostrzeżenie na mniej niż 20
+   - Indeks łatwości utrzymania: **CA1505 AvoidUnmaintainableCode** -progu: Ostrzeżenie w mniej niż 20
 
-   - Sprzężenia klas: **CA1506 AvoidExcessiveClassCoupling** — próg: ostrzeżenie w więcej niż 80 dla klasy i więcej niż 30 dla metody
+   - Sprzężenia klas: **CA1506 AvoidExcessiveClassCoupling** -progu: Ostrzeżenie na więcej niż 80 dla klasy i więcej niż 30 dla metody
 
      Ponadto naruszenie reguły, aby zapobiec pomyślnej kompilacji, wybierz **Traktuj ostrzeżenie jako błąd** pole wyboru obok opis reguły.
 
@@ -62,4 +62,4 @@ Administratorzy kontroli wersji serwera Team Foundation można dodać reguły ut
 ## <a name="see-also"></a>Zobacz także
 
 - [Wartości metryk kodów](../code-quality/code-metrics-values.md)
-- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

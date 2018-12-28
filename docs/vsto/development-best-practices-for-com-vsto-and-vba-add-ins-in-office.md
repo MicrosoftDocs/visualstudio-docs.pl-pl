@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671096"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648910"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania programistyczne dla modelu COM, VSTO i VBA dodatków pakietu Office
   Jeśli tworzysz COM, VSTO i VBA dodatków pakietu Office, postępuj zgodnie z najlepszych rozwiązań programistycznych opisanych w tym artykule.   Ułatwi to zapewnienie:
@@ -28,13 +28,13 @@ ms.locfileid: "50671096"
 -  Złożoności wdrażania dodatku dla użytkowników i administratorów IT.
 -  Nie występują niezamierzone instalacji lub środowisko uruchomieniowe błędów dodatku.
 
->Uwaga: Przy użyciu [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) przygotować swoje COM, VSTO i VBA dodatku Store Windows nie jest obsługiwane. COM, VSTO i VBA dodatki nie mogą być dystrybuowane w Windows Store lub Store pakietu Office. 
+>Uwaga: Za pomocą [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) przygotować swoje COM, VSTO i VBA dodatku Store Windows nie jest obsługiwane. COM, VSTO i VBA dodatki nie mogą być dystrybuowane w Windows Store lub Store pakietu Office. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Nie sprawdzaj Office podczas instalacji  
  Nie zaleca się posiadanie dodatku wykryć, czy pakietu Office jest zainstalowana podczas procesu instalacji dodatku. Jeśli nie zainstalowano pakietu Office, można zainstalować dodatku, a użytkownik będzie mógł uzyskać do niego dostęp, po zainstalowaniu pakietu Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Użyj osadzone typy międzyoperacyjne (NoPIA)  
-Jeśli Twoje rozwiązanie używa programu .NET 4.0 lub nowszym, użyj osadzone typy współdziałania (NoPIA) zamiast w zależności od pakietu Office podstawowego Interop zestawy MIĘDZYOPERACYJNE pakiet redystrybucyjny. Za pomocą typu osadzania zmniejsza rozmiar instalacji rozwiązania i gwarantuje zgodności w przyszłości. Pakiet Office 2010 został najnowszej wersji pakietu Office, dostarczanej PIA do dystrybucji. Aby uzyskać więcej informacji, zobacz [wskazówki: osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) i [równoważność typów i osadzone typy międzyoperacyjne](/windows/uwp/porting/desktop-to-uwp-root).
+Jeśli Twoje rozwiązanie używa programu .NET 4.0 lub nowszym, użyj osadzone typy współdziałania (NoPIA) zamiast w zależności od pakietu Office podstawowego Interop zestawy MIĘDZYOPERACYJNE pakiet redystrybucyjny. Za pomocą typu osadzania zmniejsza rozmiar instalacji rozwiązania i gwarantuje zgodności w przyszłości. Pakiet Office 2010 został najnowszej wersji pakietu Office, dostarczanej PIA do dystrybucji. Aby uzyskać więcej informacji, zobacz [instruktażu: Osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) i [równoważność typów i osadzone typy międzyoperacyjne](/windows/uwp/porting/desktop-to-uwp-root).
 
 Jeśli rozwiązanie używa starszej wersji oprogramowania .NET, zaleca się zaktualizowanie rozwiązania na platformie .NET 4.0 lub nowszy. Przy użyciu platformy .NET 4.0 lub nowszy zmniejsza wymagania wstępne dotyczące środowiska uruchomieniowego, w nowszych wersjach systemu Windows.
   

@@ -14,22 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdcb3e273e3e2c7b957a78280511980fa9c93fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905314"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684866"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
 **Autonomiczny moduł zbierający IntelliTrace** umożliwia zbieranie danych diagnostycznych IntelliTrace dla aplikacji na serwerach produkcyjnych lub innych środowiskach bez instalowania programu Visual Studio na maszynie docelowej i bez wprowadzania zmian docelowe środowiska systemu. Autonomiczny moduł zbierający IntelliTrace działa w sieci web programu SharePoint, aplikacje WPF i Windows Forms. Po zakończeniu zbierania danych, po prostu usuń moduł zbierający aby go odinstalować.
 
- Obejrzyj działanie IntelliTrace: [zbieranie i analizowanie danych IntelliTrace w produkcji do debugowania (wideo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ Obejrzyj działanie IntelliTrace: [Zbieranie i analizowanie danych IntelliTrace w produkcji do debugowania (wideo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 >  Może również zbierać te same dane funkcji IntelliTrace dla sieci web i aplikacje programu SharePoint uruchomionych na komputerach zdalnych przy użyciu **Microsoft Monitoring Agent** w **śledzenia** trybu.
 >
 >  Zdarzenia związane z wydajnością w danych funkcji IntelliTrace można zbierać, uruchamiając agenta w **Monitor** trybu. **Monitor** tryb ma mniejszy wpływ na wydajność niż **śledzenia** tryb lub **autonomiczny moduł zbierający IntelliTrace**. Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu. Zobacz [przy użyciu programu Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+>  Autonomiczny moduł zbierający IntelliTrace nie obsługuje przetwarzania migawek.
 
  **Wymagania**
 
@@ -225,8 +226,8 @@ ms.locfileid: "49905314"
     |||
     |-|-|
     |*Puli aplikacji*|Nazwa puli aplikacji, w której działa Twoja aplikacja|
-    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik .xml, który konfiguruje ustawienia dla modułu zbierającego.<br /><br /> Można określić plan, który jest dostarczany z modułem zbierającym. Następujące plany działają w przypadku aplikacji sieci Web i aplikacji programu SharePoint:<br /><br /> -ASP.NET.default.XML<br />     Zbiera tylko zdarzenia IntelliTrace i zdarzenia programu SharePoint, łącznie z wyjątkami, wywołaniami bazy danych i żądaniami serwera sieci Web.<br />-collection_plan.ASP.NET.trace.xml<br />     Wywołania funkcji gromadzenia i wszystkie dane w ASP.NET.default.XML. Ten plan jest dobry szczegółową analizę, ale może spowolnić działanie Twojej aplikacji bardziej niż collection_plan.ASP.NET.default.xml.<br /><br /> Aby nie spowalniać pracy swojej aplikacji, Dostosuj te plany lub Utwórz własny plan. Względów bezpieczeństwa należy umieścić plany kolekcji niestandardowej w tym samym bezpiecznym miejscu, co pliki modułów zbierających. Zobacz [tworzenie i dostosowywanie planów zbierania IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) i [jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:** domyślnie maksymalny rozmiar pliku .iTrace wynosi 100 MB. W przypadku pliku.itrace osiągnie ten limit, moduł zbierający usuwa najwcześniej wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj plan kolekcji `MaximumLogFileSize` atrybutu. <br /><br /> *Gdzie można znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
-    |*FullPathToITraceFileDirectory*|Pełna ścieżka do katalogu plików .iTrace. **Uwaga dotycząca zabezpieczeń:** Podaj pełną ścieżkę, nie ścieżkę względną.|
+    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik .xml, który konfiguruje ustawienia dla modułu zbierającego.<br /><br /> Można określić plan, który jest dostarczany z modułem zbierającym. Następujące plany działają w przypadku aplikacji sieci Web i aplikacji programu SharePoint:<br /><br /> -ASP.NET.default.XML<br />     Zbiera tylko zdarzenia IntelliTrace i zdarzenia programu SharePoint, łącznie z wyjątkami, wywołaniami bazy danych i żądaniami serwera sieci Web.<br />-collection_plan.ASP.NET.trace.xml<br />     Wywołania funkcji gromadzenia i wszystkie dane w ASP.NET.default.XML. Ten plan jest dobry szczegółową analizę, ale może spowolnić działanie Twojej aplikacji bardziej niż collection_plan.ASP.NET.default.xml.<br /><br /> Aby nie spowalniać pracy swojej aplikacji, Dostosuj te plany lub Utwórz własny plan. Względów bezpieczeństwa należy umieścić plany kolekcji niestandardowej w tym samym bezpiecznym miejscu, co pliki modułów zbierających. Zobacz [tworzenie i dostosowywanie planów zbierania IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) i [jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:**  Domyślnie maksymalny rozmiar pliku .iTrace wynosi 100 MB. W przypadku pliku.itrace osiągnie ten limit, moduł zbierający usuwa najwcześniej wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj plan kolekcji `MaximumLogFileSize` atrybutu. <br /><br /> *Gdzie można znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
+    |*FullPathToITraceFileDirectory*|Pełna ścieżka do katalogu plików .iTrace. **Uwaga dotycząca zabezpieczeń:**  Podaj pełną ścieżkę, nie ścieżkę względną.|
 
      Moduł zbierający dołącza do puli aplikacji i rozpoczyna zbieranie danych.
 
@@ -234,7 +235,7 @@ ms.locfileid: "49905314"
 
 2.  Odtwórz problem.
 
-3.  Aby zrobić migawkę bieżącego pliku dziennika .iTrace, użyj następującej składni:
+3.  Aby utworzyć punkt kontrolny plik .iTrace, użyj następującej składni:
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
 
@@ -264,8 +265,8 @@ ms.locfileid: "49905314"
     |||
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|Pełna ścieżka do pliku wykonywalnego modułu zbierającego IntelliTraceSC.exe|
-    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik .xml, który konfiguruje ustawienia dla modułu zbierającego.<br /><br /> Można określić plan, który jest dostarczany z modułem zbierającym. Następujące plany działają w przypadku zarządzanych aplikacji:<br /><br /> -ASP.NET.default.XML<br />     Zbiera tylko zdarzenia IntelliTrace, łącznie z wyjątkami, wywołaniami bazy danych i żądaniami serwera sieci Web.<br />-collection_plan.ASP.NET.trace.xml<br />     Wywołania funkcji gromadzenia i wszystkie dane w ASP.NET.default.XML. Ten plan jest dobry szczegółową analizę, ale może spowolnić działanie Twojej aplikacji bardziej niż collection_plan.ASP.NET.default.xml.<br /><br /> Aby nie spowalniać pracy swojej aplikacji, Dostosuj te plany lub Utwórz własny plan. Względów bezpieczeństwa należy umieścić plany kolekcji niestandardowej w tym samym bezpiecznym miejscu, co pliki modułów zbierających. Zobacz [tworzenie i dostosowywanie planów zbierania IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) i [jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:** domyślnie maksymalny rozmiar pliku .iTrace wynosi 100 MB. W przypadku pliku.itrace osiągnie ten limit, moduł zbierający usuwa najwcześniej wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj plan kolekcji `MaximumLogFileSize` atrybutu. <br /><br /> *Gdzie można znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
-    |*FullPathToITraceFileDirectoryAndFileName*|Pełna ścieżka do katalogu plików .iTrace i nazwa pliku .iTrace z **.itrace** rozszerzenia. **Uwaga dotycząca zabezpieczeń:** Podaj pełną ścieżkę, nie ścieżkę względną.|
+    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik .xml, który konfiguruje ustawienia dla modułu zbierającego.<br /><br /> Można określić plan, który jest dostarczany z modułem zbierającym. Następujące plany działają w przypadku zarządzanych aplikacji:<br /><br /> -ASP.NET.default.XML<br />     Zbiera tylko zdarzenia IntelliTrace, łącznie z wyjątkami, wywołaniami bazy danych i żądaniami serwera sieci Web.<br />-collection_plan.ASP.NET.trace.xml<br />     Wywołania funkcji gromadzenia i wszystkie dane w ASP.NET.default.XML. Ten plan jest dobry szczegółową analizę, ale może spowolnić działanie Twojej aplikacji bardziej niż collection_plan.ASP.NET.default.xml.<br /><br /> Aby nie spowalniać pracy swojej aplikacji, Dostosuj te plany lub Utwórz własny plan. Względów bezpieczeństwa należy umieścić plany kolekcji niestandardowej w tym samym bezpiecznym miejscu, co pliki modułów zbierających. Zobacz [tworzenie i dostosowywanie planów zbierania IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) i [jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:**  Domyślnie maksymalny rozmiar pliku .iTrace wynosi 100 MB. W przypadku pliku.itrace osiągnie ten limit, moduł zbierający usuwa najwcześniej wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj plan kolekcji `MaximumLogFileSize` atrybutu. <br /><br /> *Gdzie można znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
+    |*FullPathToITraceFileDirectoryAndFileName*|Pełna ścieżka do katalogu plików .iTrace i nazwa pliku .iTrace z **.itrace** rozszerzenia. **Uwaga dotycząca zabezpieczeń:**  Podaj pełną ścieżkę, nie ścieżkę względną.|
     |*PathToAppExecutableFileAndFileName*|Ścieżka i nazwa pliku Twojej aplikacji zarządzanej|
 
 2.  Zatrzymaj zbieranie danych podczas zamknięcie aplikacji.
@@ -379,7 +380,7 @@ ms.locfileid: "49905314"
 
 -   W programie Visual Studio Enterprise sesję debugowania funkcji IntelliTrace, zobacz temat [funkcji IntelliTrace](../debugger/intellitrace-features.md).
 
--   W sesji testowej w programie Microsoft Test Manager, zobacz [porady: zbieranie danych IntelliTrace, aby ułatwić debugowanie problemów](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
+-   W sesji testowej w programie Microsoft Test Manager, zobacz [jak: Zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 
 ## <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?
  [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)
@@ -399,4 +400,4 @@ ms.locfileid: "49905314"
  [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>Wideo
- [Wideo Channel 9: zbieranie i analizowanie danych IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)
+ [Wideo Channel 9: Zbieranie i analizowanie danych IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)

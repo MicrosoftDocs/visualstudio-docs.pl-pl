@@ -23,12 +23,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5958aafb39fface87020fb8ee75c7ca5a1497c73
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204831"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647714"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jedneg
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W celu przeprowadzenia tego instruktażu, należy:  
   
--   Dostęp do przykładowej bazy danych Northwind. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+-   Dostęp do przykładowej bazy danych Northwind.
   
 ## <a name="create-the-windows-application"></a>Tworzenie aplikacji Windows  
   
@@ -107,7 +107,7 @@ Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jedneg
   
 -   Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
+     A <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
 ## <a name="create-the-second-form-form2"></a>Utwórz drugi formularz (formularz2)  
   
@@ -119,7 +119,7 @@ Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jedneg
   
 3.  Przeciągnij główny **zamówienia** węzła z **źródeł danych** okna na **formularz2**.  
   
-     A <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w **formularz2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
+     A <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w **formularz2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
 4.  Usuń **OrdersBindingNavigator** do zasobnika składnika.  
   
@@ -201,4 +201,3 @@ Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jedneg
   
 ## <a name="see-also"></a>Zobacz też  
  [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

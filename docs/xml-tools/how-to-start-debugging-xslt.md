@@ -1,5 +1,5 @@
 ---
-title: 'Porady: rozpoczynanie debugowania kodu XSLT'
+title: 'Instrukcje: Rozpoczynanie debugowania kodu XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e3251d83361623aea0c0a54a2752c97b06a66f8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178351"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561869"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Porady: rozpoczynanie debugowania kodu XSLT
+# <a name="how-to-start-debugging-xslt"></a>Instrukcje: Rozpoczynanie debugowania kodu XSLT
 
 Debuger XSLT może służyć do debugowania, arkusz stylów XSLT lub aplikacji XSLT. Podczas debugowania, można wykonać jednego wiersza kodu naraz, przechodzenie do, pominięcie lub przechodzenie krok po kroku z kodu. Te polecenia, aby korzystać z funkcji przeglądania kodu są takie same jak w przypadku programu Visual Studio w debugerze XSLT debugery. Po rozpoczęciu debugowania, debuger XSLT otwiera systemu windows, aby pokazać, że dokument wejściowy i XSLT danych wyjściowych.
 
@@ -94,4 +94,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)   

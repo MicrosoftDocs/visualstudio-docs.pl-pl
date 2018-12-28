@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel'
+title: 'Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f70511d0490032204789dc037a13847a10b5cbe6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948364"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648242"
 ---
-# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Porady: dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel
+# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel
   Aby dodać okienek akcji do dokumentu programu Microsoft Office Word lub skoroszytu programu Microsoft Excel, należy najpierw utworzyć formant użytkownika interfejsu Windows Forms. Następnie dodaj formant użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwość `ThisDocument.ActionsPane` pola (w programie Word) lub `ThisWorkbook.ActionsPane` pola (Excel) w projekcie.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -59,7 +59,7 @@ ms.locfileid: "51948364"
   
 6.  W języku C# należy dodać moduł obsługi zdarzenia kliknięcia przycisku. Możesz umieścić ten kod w `HelloControl` konstruktora, po wywołaniu `InitializeComponent`.  
   
-     Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [porady: Tworzenie procedury obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+     Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
@@ -80,8 +80,8 @@ ms.locfileid: "51948364"
   
 ## <a name="see-also"></a>Zobacz także  
  [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)   
- [Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Porady: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [Instrukcje: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

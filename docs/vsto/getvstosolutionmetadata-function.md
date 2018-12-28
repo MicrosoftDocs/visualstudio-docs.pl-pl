@@ -8,17 +8,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e6289a0d19bc6621d98edfc974ad265791876a70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: baa5cf48d317da80f78d19a1b72f81824b1bed62
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677605"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647272"
 ---
 # <a name="getvstosolutionmetadata-function"></a>Getvstosolutionmetadata — funkcja
   Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  

@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320712"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739862"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu C/C++ — Przegląd
 
@@ -52,15 +52,15 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>Obsługa #pragma
 
-Możesz użyć `#pragma` dyrektywy Traktuj ostrzeżenia jako błędy; Włącz lub wyłącz ostrzeżenia i pomijanie ostrzeżeń dla pojedynczych wierszy kodu. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie właściwości analizy kodu dla projektów C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Możesz użyć `#pragma` dyrektywy Traktuj ostrzeżenia jako błędy; Włącz lub wyłącz ostrzeżenia i pomijanie ostrzeżeń dla pojedynczych wierszy kodu. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie właściwości analizy kodu dla projektów C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="annotation-support"></a>Obsługa adnotacji
 
-Adnotacje poprawić analizy kodu. Adnotacje zawierają dodatkowe informacje o warunkach wstępnych oraz po o parametrów funkcji i zwracanych typów. Aby uzyskać więcej informacji, zobacz [porady: Określanie dodatkowych informacji o kodzie za pomocą funkcji __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Adnotacje poprawić analizy kodu. Adnotacje zawierają dodatkowe informacje o warunkach wstępnych oraz po o parametrów funkcji i zwracanych typów. Aby uzyskać więcej informacji, zobacz [jak: Określanie dodatkowych informacji o kodzie za pomocą funkcji __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Uruchom narzędzie do analizy jako część zasad ewidencjonowania
 
-Można wymagać, że wszystkie źródła kodu zaewidencjonowania spełniały pewne zasady. W szczególności chcesz upewnić się, że analiza została uruchomiona jako krok najnowszych kompilacji, lokalne. Aby uzyskać więcej informacji na temat włączania zasad analizy kodu ewidencjonowania, zobacz [tworzyć i za pomocą zasad analizy kodu zaewidencjonowania](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Można wymagać, że wszystkie źródła kodu zaewidencjonowania spełniały pewne zasady. W szczególności chcesz upewnić się, że analiza została uruchomiona jako krok najnowszych kompilacji, lokalne. Aby uzyskać więcej informacji na temat włączania zasad analizy kodu ewidencjonowania, zobacz [tworzyć i za pomocą zasad analizy kodu zaewidencjonowania](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Integracji kompilacji zespołu
 
@@ -69,7 +69,7 @@ Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie
 ## <a name="see-also"></a>Zobacz także
 
 - [Szybki Start: Analiza kodu C/c++](quick-start-code-analysis-for-c-cpp.md)
-- [Wskazówki: Analizowanie kodu C/C++ pod względem wad](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Przewodnik: Analizowanie kodu C/C++ pod względem wad](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Analiza kodu C/C++ — ostrzeżenia](code-analysis-for-c-cpp-warnings.md)
 - [Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++](using-the-cpp-core-guidelines-checkers.md)
 - [W języku C++ podstawowych wytycznych dotyczących sprawdzania odwołania](code-analysis-for-cpp-corecheck.md)

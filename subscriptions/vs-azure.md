@@ -3,18 +3,18 @@ title: Korzyści z platformy Microsoft Azure | Dokumentacja firmy Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/3/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Dowiedz się, jak aktywować korzyść platformy Azure, zawarte w Twojej subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862349"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739815"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Dzięki platformie Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -26,11 +26,9 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 
 |                 Poziom subskrypcji / Program                 |           Korzyść           |                         Podlega odnowieniu?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 USD środków miesięcznie     |                             Tak                             |
-|               Visual Studio Enterprise annual                |     150 USD środków miesięcznie     |                             Tak                             |
+|              Visual Studio Enterprise Standard               |     150 USD środków miesięcznie     |                             Tak                             ||
 |               Visual Studio Enterprise miesięczna               |        Niedostępne        |                                                             |
-|             Visual Studio Professional Standard              |     50 USD środków miesięcznie      |                             Tak                             |
-|              Visual Studio Professional roczna               |     50 USD środków miesięcznie      |                             Tak                             |
+|             Visual Studio Professional Standard              |     50 USD środków miesięcznie      |                             Tak                            
 |              Visual Studio Professional miesięczna              |        Niedostępne        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Tak                             |
 |                        Platformy MSDN                        |     miesięczne środki w wysokości 100 USD     |                             Tak                             |
@@ -47,11 +45,16 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 
 * Zawiera nie for Resale (NFR), Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP)
 
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+
+
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
-1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek Azure w sekcji narzędzia dotyczące zalet strony, a następnie kliknij przycisk **Aktywuj** link w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
@@ -73,17 +76,17 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 
-### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: jak przesłać zdarzenie pomocy technicznej w witrynie Azure Portal?
-Odp.: przesłanie żądania pomocy technicznej w witrynie Azure portal jest procesem trzech krokach.
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>PYT.: Jak przesłać zdarzenie pomocy technicznej w witrynie Azure Portal?
+Odp.:  Przesyłanie żądania pomocy technicznej w witrynie Azure portal jest procesem trzech krokach.
 1. Aktywuj korzyść pomocy technicznej i uzyskać swojego identyfikatora umowy identyfikator dostępu.
 2. Połącz umowę na pomoc techniczną do subskrypcji platformy Azure.
 3. Prześlij żądanie pomocy technicznej.
 
 Odwiedź stronę [pomocy technicznej](vs-tech-support.md) dokumentacji, aby uzyskać szczegółowe informacje.
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: czy mogę otrzymał komunikat z informacją, że moje dostęp do platformy Azure wkrótce się zakończy.  Co mogę zrobić, aby kontynuować korzystanie z platformy Azure?
+### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>PYT.: Czy mogę otrzymał komunikat z informacją, że moje dostęp do platformy Azure wkrótce się zakończy.  Co mogę zrobić, aby kontynuować korzystanie z platformy Azure?
 
-Odp.: Otrzymujesz tę wiadomość e-mail, ponieważ używasz korzyści platformy Azure skojarzonych z subskrypcją programu Visual Studio, a subskrypcja wygasła lub została usunięta.  Aby kontynuować korzystanie z systemu Azure, masz kilka opcji:
+Odp.:  Otrzymujesz tę wiadomość e-mail, ponieważ używasz korzyści platformy Azure skojarzonych z subskrypcją programu Visual Studio, a subskrypcja wygasła lub została usunięta.  Aby kontynuować korzystanie z systemu Azure, masz kilka opcji:
 
 **Zalecana akcja:**
 

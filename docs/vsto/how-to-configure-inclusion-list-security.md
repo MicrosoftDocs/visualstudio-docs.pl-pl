@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Konfigurowanie zabezpieczeń listy dołączania'
+title: 'Instrukcje: Konfigurowanie zabezpieczeń listy dołączania'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,35 +11,35 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255840"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647738"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Porady: Konfigurowanie zabezpieczeń listy dołączania
-  Jeśli użytkownik ma uprawnienia administratora, możesz skonfigurować [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufany monit kontroli czy użytkownicy końcowi otrzymują możliwość instalowania rozwiązań pakietu Office przez zapisanie decyzji dotyczącej zaufania lista dołączania. Aby uzyskać informacje o listach dołączania, zobacz [zaufania rozwiązań pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
+# <a name="how-to-configure-inclusion-list-security"></a>Instrukcje: Konfigurowanie zabezpieczeń listy dołączania
+  Jeśli masz uprawnienia administratora, można skonfigurować [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufany monit formant czy użytkownicy końcowi otrzymają możliwość instalowania rozwiązań pakietu Office, zapisując decyzji dotyczącej zaufania do listy dołączania. Aby uzyskać informacje o listach dołączania, zobacz [zaufania rozwiązań pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Rozwiązania, znajdujących się we wszystkich pięciu stref można ustawić następujące opcje:  
+ Dla rozwiązania, które znajdują się w każdej z pięciu strefy można ustawić następujące opcje:  
   
--   Włącz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania monitu o klucz i lista dołączania. Umożliwia użytkownikom udzielenia zaufania do rozwiązań pakietu Office, które są podpisane za pomocą dowolnego certyfikatu.  
+-   Włącz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania monitu klucz i lista dołączania. Możesz zezwolić użytkownikom końcowym udzielenia zaufania do rozwiązań pakietu Office, które są podpisane za pomocą każdego certyfikatu.  
   
--   Ogranicz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania monitu o klucz i lista dołączania. Umożliwia użytkownikom końcowym zainstalować rozwiązań pakietu Office, które są podpisane za pomocą certyfikatu, który identyfikuje wydawcę, ale który nie jest zaufany.  
+-   Ogranicz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania monitu klucz i lista dołączania. Można zezwolić użytkownikom końcowym zainstalować rozwiązań pakietu Office, które są podpisane za pomocą certyfikatu, który identyfikuje wydawcy, ale który nie jest zaufany.  
   
--   Wyłącz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania monitu o klucz i lista dołączania. Aby uniemożliwić użytkownikom końcowym zainstalowanie wszelkich rozwiązań pakietu Office, który nie jest podpisany przy użyciu jawnie zaufanych certyfikatów.  
+-   Wyłącz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania monitu klucz i lista dołączania. Aby uniemożliwić użytkownikom instalowanie dowolnego rozwiązania pakietu Office, który nie jest podpisany za pomocą jawnego zaufanego certyfikatu.  
   
-## <a name="enable-the-inclusion-list"></a>Włącz listy dołączania  
- Lista dołączania dla strefy należy włączyć użytkownicy końcowi będą widoczne z możliwością instalowania i uruchamiania dowolnego rozwiązania pakietu Office, które pochodzą z tej strefy.  
+## <a name="enable-the-inclusion-list"></a>Włączanie listy dołączania  
+ Włącz lista dołączania dla strefy, jeśli chcesz, aby użytkownicy końcowi będą prezentowane za pomocą opcji instalowania i uruchamiania żadne rozwiązanie Office, który pochodzi z tej strefy.  
   
-### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Aby włączyć za pomocą Edytora rejestru listy dołączania  
+### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Aby włączyć lista dołączania za pomocą Edytora rejestru  
   
 1.  Otwórz Edytor rejestru:  
   
@@ -53,23 +53,23 @@ ms.locfileid: "35255840"
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
-3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli są one jeszcze nie istnieją, z powiązanymi wartościami.  
+3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami.  
   
-    |Podklucz wartość ciągu|Wartość|  
+    |Ciąg wartość podklucza|Wartość|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**wyłączone**|  
-    |**Mój komputer**|**włączone**|  
-    |**LocalIntranet**|**włączone**|  
-    |**TrustedSites:**|**włączone**|  
+    |**UntrustedSites**|**Disabled (Wyłączone)**|  
+    |**Mój komputer**|**Włączone**|  
+    |**LocalIntranet**|**Włączone**|  
+    |**TrustedSites:**|**Włączone**|  
   
      Domyślnie **Internet** ma wartość **AuthenticodeRequired** i **UntrustedSites** ma wartość **wyłączone**.  
   
-### <a name="to-enable-the-inclusion-list-programmatically"></a>Aby programowo włączyć listy dołączania  
+### <a name="to-enable-the-inclusion-list-programmatically"></a>Aby programowo włączyć lista dołączania  
   
-1.  Utwórz aplikację konsoli języka Visual Basic lub Visual C#.  
+1.  Tworzenie języka Visual Basic lub Visual C# aplikacji konsoli.  
   
-2.  Otwórz *Program.vb* lub *Program.cs* pliku do edycji i Dodaj następujący kod.  
+2.  Otwórz *Program.vb* lub *Program.cs* plik do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -95,10 +95,10 @@ ms.locfileid: "35255840"
   
 3.  Skompiluj i uruchom aplikację.  
   
-## <a name="restrict-the-inclusion-list"></a>Ograniczenia dotyczące listy dołączania  
- Lista dołączania należy ograniczyć, tak aby rozwiązań muszą być podpisane przy mają znane tożsamości, zanim użytkownicy są monitowani o decyzji dotyczącej zaufania certyfikatom Authenticode.  
+## <a name="restrict-the-inclusion-list"></a>Ograniczenia listy dołączania  
+ Ograniczyć lista dołączania rozwiązania muszą być podpisane za pomocą jeszcze opracowywana tożsamość, zanim użytkownicy będą monitowani o decyzji dotyczącej zaufania certyfikatom Authenticode.  
   
-### <a name="to-restrict-the-inclusion-list"></a>Ograniczenia dotyczące listy dołączania  
+### <a name="to-restrict-the-inclusion-list"></a>Aby ograniczyć lista dołączania  
   
 1.  Otwórz Edytor rejestru:  
   
@@ -112,11 +112,11 @@ ms.locfileid: "35255840"
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
-3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli są one jeszcze nie istnieją, z powiązanymi wartościami.  
+3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami.  
   
-    |Podklucz wartość ciągu|Wartość|  
+    |Ciąg wartość podklucza|Wartość|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**wyłączone**|  
+    |**UntrustedSites**|**Disabled (Wyłączone)**|  
     |**Internet**|**AuthenticodeRequired**|  
     |**Mój komputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
@@ -124,11 +124,11 @@ ms.locfileid: "35255840"
   
      Domyślnie **Internet** ma wartość **AuthenticodeRequired** i **UntrustedSites** ma wartość **wyłączone**.  
   
-### <a name="to-restrict-the-inclusion-list-programmatically"></a>Programowo ograniczenia dotyczące listy dołączania  
+### <a name="to-restrict-the-inclusion-list-programmatically"></a>Aby programowo ograniczyć lista dołączania  
   
-1.  Utwórz aplikację konsoli języka Visual Basic lub Visual C#.  
+1.  Tworzenie języka Visual Basic lub Visual C# aplikacji konsoli.  
   
-2.  Otwórz *Program.vb* lub *Program.cs* pliku do edycji i Dodaj następujący kod.  
+2.  Otwórz *Program.vb* lub *Program.cs* plik do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -154,10 +154,10 @@ ms.locfileid: "35255840"
   
 3.  Skompiluj i uruchom aplikację.  
   
-## <a name="disable-the-inclusion-list"></a>Wyłącz listy dołączania  
- Lista dołączania można wyłączyć, aby użytkownicy końcowi przy użyciu certyfikatu zaufanego i znanego można zainstalować tylko rozwiązania, które są podpisane.  
+## <a name="disable-the-inclusion-list"></a>Wyłącz lista dołączania  
+ Tak, aby użytkownicy końcowi tylko można zainstalować rozwiązania, które są podpisane za pomocą certyfikatu zaufanego i znanego, można wyłączyć lista dołączania.  
   
-### <a name="to-disable-the-inclusion-list"></a>Aby wyłączyć listy dołączania  
+### <a name="to-disable-the-inclusion-list"></a>Aby wyłączyć lista dołączania  
   
 1.  Otwórz Edytor rejestru:  
   
@@ -169,21 +169,21 @@ ms.locfileid: "35255840"
   
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
-3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli są one jeszcze nie istnieją, z powiązanymi wartościami.  
+3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami.  
   
-    |Podklucz wartość ciągu|Wartość|  
+    |Ciąg wartość podklucza|Wartość|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**wyłączone**|  
-    |**Internet**|**wyłączone**|  
-    |**Mój komputer**|**wyłączone**|  
-    |**LocalIntranet**|**wyłączone**|  
-    |**TrustedSites:**|**wyłączone**|  
+    |**UntrustedSites**|**Disabled (Wyłączone)**|  
+    |**Internet**|**Disabled (Wyłączone)**|  
+    |**Mój komputer**|**Disabled (Wyłączone)**|  
+    |**LocalIntranet**|**Disabled (Wyłączone)**|  
+    |**TrustedSites:**|**Disabled (Wyłączone)**|  
   
-### <a name="to-disable-the-inclusion-list-programmatically"></a>Aby wyłączyć programowo listy dołączania  
+### <a name="to-disable-the-inclusion-list-programmatically"></a>Aby wyłączyć programowo lista dołączania  
   
-1.  Utwórz aplikację konsoli języka Visual Basic lub Visual C#.  
+1.  Tworzenie języka Visual Basic lub Visual C# aplikacji konsoli.  
   
-2.  Otwórz *Program.vb* lub *Program.cs* pliku do edycji i Dodaj następujący kod.  
+2.  Otwórz *Program.vb* lub *Program.cs* plik do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -211,7 +211,7 @@ ms.locfileid: "35255840"
 3.  Skompiluj i uruchom aplikację.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Zaufania rozwiązań pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [Zaufanie rozwiązań pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)  
   
   

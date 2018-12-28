@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie formantów wykresu do arkuszy'
+title: 'Instrukcje: Dodawanie formantów wykresu do arkuszy'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Chart control [Office development in Visual Studio], adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 713657c7df5bfd3dd3f864c15ffc86dd1d531eac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f1c5cd15710e3886e3e8b0ed7483ba3776cef15
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919926"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648936"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>Porady: dodawanie formantów wykresu do arkuszy
+# <a name="how-to-add-chart-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów wykresu do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.Chart> kontrolek do arkusza programu Microsoft Office Excel, w czasie projektowania i w czasie wykonywania w dostosowaniach na poziomie dokumentu. Można również dodać <xref:Microsoft.Office.Tools.Excel.Chart> formantów w czasie wykonywania w dodatkach VSTO.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

@@ -9,12 +9,12 @@ description: Dowiedz się, jak znaleźć i pobrać produktów firmy Microsoft, z
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831435"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803217"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Za pomocą dla subskrybentów pliki do pobrania w ramach subskrypcji programu Visual Studio
 W ramach korzyści dla subskrybenta masz dostęp do szerokiej gamy programów do pobrania.
@@ -30,7 +30,7 @@ Istnieje kilka powodów dlaczego poszczególnych produktów mogą nie być dost�
 - **Produkt jest publicznie dostępny.** Narzędzia, zestawy SDK i DDK oraz dodatki service pack są dostępne publicznie [Microsoft Download Center](https://www.microsoft.com/download). Niektóre z tych produktów mogą nie być publikowane do plików do pobrania.
 - **Produkt nie został jeszcze wydany.**  Wiele wersji wstępnych (beta) i release Candidate są dostępne pliki do pobrania. Jednak nie wszystkie wersje beta może być uwzględnione; na przykład niektóre wersje beta wymagają specjalnej rejestracji lub uprawnień. Aby uzyskać więcej informacji na temat programów otwartych technicznych wersji beta, odwiedź [witryny Microsoft Connect](http://connect.microsoft.com/).
 - **Produkt nie jest dostępny w Twoim kraju.** Niektóre produkty firmy Microsoft nie są dostępne ze względu na ograniczenia regionalne.
-- **Oprogramowanie nadmiarowe.** Niektóre pakiety Office i autonomiczny urząd pliki do pobrania i klucze produktów nie są już dostępne w subskrypcjach obejmujących pakiet Office. Pliki do pobrania i klucze produktów są dostępne dla odpowiedniego najwyższego typu pakietu Office w tej samej wersji.  Na przykład w przypadku wyszukiwania dla programu Powerpoint 2010, wyszukiwanie nie generuje żadnych wyników.  Można jednak wyszukiwania dla pakietu Office 2010 — pakiet Office, który zawierał Powerpoint 2010 - i pobrać pakiet.
+- **Oprogramowanie nadmiarowe.** Niektóre pakiety Office i autonomiczny urząd pliki do pobrania i klucze produktów nie są już dostępne w subskrypcjach obejmujących pakiet Office. Pliki do pobrania i klucze produktów są dostępne dla odpowiedniego najwyższego typu pakietu Office w tej samej wersji.  Na przykład w przypadku wyszukiwania dla programu PowerPoint 2010, wyszukiwanie nie generuje żadnych wyników.  Można jednak wyszukiwania dla pakietu Office 2010 — pakiet Office, który zawierał PowerPoint 2010 - i pobrać pakiet.
 
 ## <a name="what-do-i-get"></a>Jakie korzyści?
 Liczba i typ plików do pobrania zależy od subskrypcji członkostwa poziom i programów.  Na przykład standardowy subskrypcją programu Visual Studio Enterprise, mogą mieć różne pliki do pobrania dostępne dla nich od subskrybentów, którzy uzyskali swoje subskrypcje w ramach subskrypcji programu Microsoft Partner Network czy BizSpark.  Aby dowiedzieć się więcej o jakie pliki do pobrania są dostępne dla poszczególnych poziomów subskrypcji, Pobierz listę [produktów, korzyści z poziomu](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).

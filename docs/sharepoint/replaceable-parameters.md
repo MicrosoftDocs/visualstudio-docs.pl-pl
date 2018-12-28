@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879301"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684694"
 ---
 # <a name="replaceable-parameters"></a>Parametry wymienne
-  Parametry wymienne lub *tokenów*, może służyć w plikach projektu o podanie wartości elementów rozwiązania programu SharePoint, w których rzeczywiste wartości nie są znany w czasie projektowania. Są one podobne w funkcji standardu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokenów szablonu. Aby uzyskać więcej informacji, zobacz [parametry szablonu](/visualstudio/ide/template-parameters).  
+  Parametry wymienne lub *tokenów*, może służyć w plikach projektu o podanie wartości elementów rozwiązania programu SharePoint, w których rzeczywiste wartości nie są znany w czasie projektowania. Są one podobne w funkcji standardu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokenów szablonu. Aby uzyskać więcej informacji, zobacz [parametry szablonu](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Format tokenu
  Tokeny rozpoczynać się i kończyć znakiem dolara ($). We wdrożeniu, wszystkie tokeny używane są zastępowane wartości rzeczywiste gdy projekt jest pakowana do pakietu rozwiązania programu SharePoint (*.wsp* pliku). Na przykład token **$SharePoint.Package.Name$** może zostać rozwiązana do ciągu "Pakietu testowego programu SharePoint".  
@@ -111,4 +111,3 @@ ms.locfileid: "49879301"
   
 ## <a name="see-also"></a>Zobacz także
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

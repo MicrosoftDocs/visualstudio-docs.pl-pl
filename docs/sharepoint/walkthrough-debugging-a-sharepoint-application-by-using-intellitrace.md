@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295588"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804289"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace
 
@@ -32,7 +32,7 @@ Za pomocą funkcji IntelliTrace, można łatwiej debugować rozwiązania program
 
  W tym przewodniku pokazano, jak debugowanie projektu programu SharePoint 2010 lub SharePoint 2013 w programie Visual Studio przy użyciu programu Microsoft Monitoring Agent do gromadzenia danych IntelliTrace z wdrożonych aplikacji. Aby analizować te dane, należy użyć programu Visual Studio Enterprise. Ten projekt zawiera odbiorcę funkcji, gdy funkcja jest aktywowana, dodaje zadanie do listy zadań i powiadomienia na liście anonsów. Gdy ta funkcja jest aktywna, zadanie jest oznaczone jako ukończone, a drugi ogłoszenie zostanie dodany do listy anonsów. Jednak procedura zawiera logiczny błąd, który uniemożliwia poprawne działanie projektu. Za pomocą funkcji IntelliTrace, możesz znaleźć i popraw błąd.
 
- **Dotyczy:** informacje przedstawione w tym temacie mają zastosowanie do rozwiązania programu SharePoint 2010 i SharePoint 2013, które zostały utworzone w programie Visual Studio.
+ **Dotyczy:** Informacje przedstawione w tym temacie mają zastosowanie do rozwiązania programu SharePoint 2010 i SharePoint 2013, które zostały utworzone w programie Visual Studio.
 
  W instruktażu przedstawiono następujące zagadnienia:
 
@@ -206,7 +206,7 @@ Następnie dodaj kod, aby dwie metody w odbiorcy funkcji: `FeatureActivated` i `
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ Teraz, gdy kod jest dodawany do odbiorcy funkcji i modułów zbierających dane 
 
 2. Wyświetl zawartość list anonsów i zadania.
 
-     Lista anonsów powinny mieć nowy anons, który nosi nazwę **funkcji aktywowano: IntelliTraceTest_Feature1**, i na liście zadania powinny mieć nowe zadanie, który nosi nazwę **funkcji Dezaktywuj: IntelliTraceTest_ Feature1**. Jeśli brakuje jednej z tych elementów, sprawdź, czy funkcja jest aktywowana. Jeśli go nie została aktywowana, aktywuj go.
+     Lista anonsów powinny mieć nowy anons, który nosi nazwę **aktywowano funkcji: IntelliTraceTest_Feature1**, i na liście zadania powinny mieć nowe zadanie, który nosi nazwę **Dezaktywuj funkcji: IntelliTraceTest_Feature1**. Jeśli brakuje jednej z tych elementów, sprawdź, czy funkcja jest aktywowana. Jeśli go nie została aktywowana, aktywuj go.
 
 3. Dezaktywuj tę funkcję, wykonując następujące czynności:
 
@@ -280,9 +280,9 @@ Teraz, gdy kod jest dodawany do odbiorcy funkcji i modułów zbierających dane 
 Jeśli zainstalujesz program Microsoft Monitoring Agent w systemie, na którym uruchomiony jest SharePoint można debugować rozwiązania programu SharePoint przy użyciu danych, które są bardziej szczegółowe niż ogólne informacje, które zwraca IntelliTrace. Agent działa poza programem Visual Studio przy użyciu poleceń cmdlet programu PowerShell do przechwytywania informacji debugowania podczas przebiegów rozwiązania programu SharePoint.
 
 > [!NOTE]
-> Informacje o konfiguracji w tej sekcji są specyficzne dla tego przykładu. Aby uzyskać więcej informacji na temat innych opcji konfiguracji, zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+> Informacje o konfiguracji w tej sekcji są specyficzne dla tego przykładu. Aby uzyskać więcej informacji na temat innych opcji konfiguracji, zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-1. Na komputerze, na którym działa program SharePoint [skonfigurować program Microsoft Monitoring Agent i rozpocząć monitorowanie rozwiązania](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. Na komputerze, na którym działa program SharePoint [skonfigurować program Microsoft Monitoring Agent i rozpocząć monitorowanie rozwiązania](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 2. Dezaktywowanie funkcji:
 
@@ -310,7 +310,7 @@ Teraz możesz wyświetlać plikiem dziennika funkcji IntelliTrace w programie Vi
 
 2. Wybierz **wyjątek debugowania** przycisku.
 
-     Jeśli zostanie wyświetlony monit, ładować pliki symboli. W **IntelliTrace** okna, wyjątek jest wyróżniony jako "zgłoszenia: Wystąpił poważny błąd!".
+     Jeśli zostanie wyświetlony monit, ładować pliki symboli. W **IntelliTrace** okna, wyjątek jest wyróżniony jako "zgłoszenia: Wystąpił poważny błąd! ".
 
      W oknie IntelliTrace wybierz wyjątek, aby wyświetlić kod, który uległ awarii.
 
@@ -334,6 +334,6 @@ Teraz możesz wyświetlać plikiem dziennika funkcji IntelliTrace w programie Vi
 
 ## <a name="see-also"></a>Zobacz także
 
-[Sprawdź i możliwe jest debugowanie kodu programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Wskazówki: Sprawdź, czy kod programu SharePoint, za pomocą testów jednostkowych](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [Sprawdź i możliwe jest debugowanie kodu programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [Przewodnik: Sprawdź kod programu SharePoint przy użyciu testów jednostkowych](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

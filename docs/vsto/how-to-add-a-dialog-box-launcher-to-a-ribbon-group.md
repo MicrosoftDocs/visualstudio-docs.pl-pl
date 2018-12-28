@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie przycisk Uruchom okno dialogowe do grupy wstążek'
+title: 'Instrukcje: Dodaj przycisk Uruchom okno dialogowe do grupy wstążki'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,49 +11,49 @@ dev_langs:
 helpviewer_keywords:
 - dialog box launcher [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], dialog box launcher
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2513113b473341f2ed099ef0c5ff5961694acb19
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: f6ec94b8fc170f195b00a6c093605860c97048ed
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548396"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648700"
 ---
-# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Porady: Dodawanie przycisk Uruchom okno dialogowe do grupy wstążek
-  Uruchom okno dialogowe można dodać do żadnej grupy na Wstążce. Uruchom okno dialogowe jest mała ikona, który pojawia się w grupie. Użytkownicy kliknij tę ikonę, aby otworzyć określone okno dialogowe lub okienka zadań, które zapewniają więcej opcji, które odnoszą się do grupy.  
+# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Instrukcje: Dodaj przycisk Uruchom okno dialogowe do grupy wstążki
+  Możesz dodać przycisk Uruchom okno dialogowe z żadną grupą na Wstążce. Przycisk Uruchom okno dialogowe jest mała ikona, która pojawia się w grupie. Użytkownicy, kliknij tę ikonę, aby otworzyć określone okno dialogowe lub okienka zadań, które zapewniają więcej opcji, które odnoszą się do tej grupy.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Aby dodać przycisk Uruchom okno dialogowe do grupy wstążek  
+### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Aby dodać przycisk Uruchom okno dialogowe do grupy wstążki  
   
 1.  Wybierz plik kodu wstążki (*.vb* lub *.cs* pliku) w **Eksploratora rozwiązań**.  
   
 2.  Na **widoku** menu, kliknij przycisk **projektanta**.  
   
-3.  W Projektancie wstążki, kliknij prawym przyciskiem myszy dowolną grupę, a następnie kliknij przycisk **dodać DialogBoxLauncher**.  
+3.  W Projektancie wstążki, kliknij prawym przyciskiem myszy dowolną grupę, a następnie kliknij przycisk **Dodaj element DialogBoxLauncher**.  
   
-     Dodaj kod, aby <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> zdarzeń grupy, aby otworzyć okno dialogowe niestandardowych i wbudowanych.  
+     Dodaj kod, aby <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> zdarzeń grupę, aby otworzyć okno dialogowe niestandardowych i wbudowanych.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
+ [Wstążka — omówienie](../vsto/ribbon-overview.md)   
  [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
  [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md)   
- [XML wstążki](../vsto/ribbon-xml.md)   
- [Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Porady: zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
- [Porady: dodawanie formantów do widoku zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [XML — Wstążka](../vsto/ribbon-xml.md)   
+ [Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Instrukcje: Zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Instrukcje: Dodawanie formantów do widoku zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Porady: dodatek Pokaż błędy interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Wskazówki: Aktualizowanie formantów na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

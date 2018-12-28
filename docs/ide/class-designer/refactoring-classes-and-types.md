@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84850d9de539267385ddddf39cea55672ad60034
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922526"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684707"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refaktoryzacja klas i typów w Projektancie klas
 
@@ -39,9 +39,9 @@ Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, 
 
 |Zadanie|Zawartość pomocnicza|
 |----------| - |
-|**Refaktoryzacja klas:** można użyć operacji refaktoryzacji, podzielić klasę na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Porady: podział klasy na klasy częściowe](how-to-split-a-class-into-partial-classes.md)|
-|**Praca z interfejsów:** w Projektancie klas można zaimplementować interfejsu na diagramie klas łącząc je do klasy, która zawiera kod dla metody interfejsu.|-   [Porady: Implementowanie interfejsu](how-to-implement-an-interface.md)|
-|**Refaktoryzacja typy, elementy członkowskie typu i parametry:** za pomocą projektanta klas, można zmienić nazwy typów, Przesłoń składowe typu lub przenieść je z jednego typu na inny. Można również utworzyć typy dopuszczające wartości null.|-   [Zmiana nazwy, typy i elementy członkowskie typu](#rename-types-and-type-members)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](#move-type-members-from-one-type-to-another)<br />-   [Porady: Tworzenie typu dopuszczającego wartość null](how-to-create-a-nullable-type.md)|
+|**Refaktoryzacja klas:** Można użyć operacji refaktoryzacji, podział klasy na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Jak: Podział klasy na klasy częściowe](how-to-split-a-class-into-partial-classes.md)|
+|**Praca z interfejsów:** W Projektancie klas można zaimplementować interfejsu na diagramie klas, łącząc je do klasy, która zawiera kod dla metody interfejsu.|-   [Jak: Implementowanie interfejsu](how-to-implement-an-interface.md)|
+|**Refaktoryzacja, typy, elementy członkowskie typu i parametry:** Za pomocą projektanta klas, można zmienić nazwy typów, Przesłoń składowe typu lub przenieść je z jednego typu na inny. Można również utworzyć typy dopuszczające wartości null.|-   [Zmiana nazwy, typy i elementy członkowskie typu](#rename-types-and-type-members)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](#move-type-members-from-one-type-to-another)<br />-   [Jak: Tworzenie typu dopuszczającego wartość null](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Zmiana nazwy, typy i elementy członkowskie typu
 
@@ -90,5 +90,4 @@ Za pomocą **projektanta klas**, można przenieść elementu członkowskiego typ
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wyświetlanie typów i relacji](viewing-types-and-relationships.md)
-- [Projektowanie klas i typów](designing-classes-and-types.md)
+- [Projektowanie klas i typów](designing-and-viewing-classes-and-types.md)

@@ -34,17 +34,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937502"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647977"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Host formantów Przegląd obiektów hosta i
   Obiekty hosta i kontrolek hosta są typy, które pomagają modelu programowania rozwiązań pakietu Office, które są tworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio. Obiekty hosta i kontrolek hosta upewnij się, interakcji z modeli obiektów programu Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, bardziej jak interakcji z obiektami zarządzanymi, takie jak kontrolek formularzy Windows.  
@@ -131,21 +131,21 @@ ms.locfileid: "49937502"
   
   Aby uzyskać więcej informacji o sposobie dodawania formantów hosta do dokumentów zobacz następujące tematy:  
   
-- [Porady: dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Instrukcje: Dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
-- [Porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Instrukcje: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
-- [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Instrukcje: Dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
-- [Porady: dodawanie formantów XMLMappedRange do arkuszy](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Instrukcje: Dodawanie formantów XMLMappedRange do arkuszy](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
-- [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [Porady: Dodawanie zawartości formantów do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Instrukcje: Dodaj zawartość formantów do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
-- [Porady: dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Instrukcje: Dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
-- [Porady: dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Instrukcje: Dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Nazwa kontrolki hosta  
  Przeciągnięcie formantu hosta z **przybornika** do dokumentu, kontrolka ma automatycznie nadawaną nazwę z liczbą przyrostową na koniec za pomocą typu formantu. Na przykład zakładki są nazywane **bookmark1**, **bookmark2**i tak dalej. Jeśli używasz macierzystą funkcjonalność programu Word lub Excel, aby dodać kontrolkę, można mu nazwę w czasie jego tworzenia. Można również zmienić nazwę kontrolki, zmieniając wartość **nazwa** właściwość **właściwości** okna.  
@@ -166,7 +166,7 @@ ms.locfileid: "49937502"
 >  Nie usuwaj programowo kontrole podczas `Shutdown` programu obsługi zdarzeń w dokumencie lub arkuszu. Elementy interfejsu użytkownika nie są już dostępne podczas `Shutdown` wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń takich jak `BeforeClose` lub `BeforeSave`.  
   
 ### <a name="program-against-host-control-events"></a>Program w odniesieniu do zdarzeń kontrolki hosta  
- Jednym ze sposobów, że formanty hosta rozszerzyć obiektów pakietu Office jest dodanie zdarzenia. Na przykład <xref:Microsoft.Office.Interop.Excel.Range> obiektu w programie Excel i <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu w programie Word braku zdarzenia, ale [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rozszerza te obiekty, dodając programowalny zdarzenia. Masz dostęp i kod dla tych zdarzeń, taki sam sposób dostępu zdarzeń formantów na formularzach Windows Forms: za pomocą listy rozwijanej zdarzeń w języku Visual Basic i na stronie właściwości zdarzenia w języku C#. Aby uzyskać więcej informacji, zobacz [Instruktaż: Program w odniesieniu do zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Jednym ze sposobów, że formanty hosta rozszerzyć obiektów pakietu Office jest dodanie zdarzenia. Na przykład <xref:Microsoft.Office.Interop.Excel.Range> obiektu w programie Excel i <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu w programie Word braku zdarzenia, ale [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rozszerza te obiekty, dodając programowalny zdarzenia. Masz dostęp i kod dla tych zdarzeń, taki sam sposób dostępu zdarzeń formantów na formularzach Windows Forms: za pomocą listy rozwijanej zdarzeń w języku Visual Basic i na stronie właściwości zdarzenia w języku C#. Aby uzyskać więcej informacji, zobacz [instruktażu: Program w odniesieniu do zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
 > [!NOTE]  
 >  Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel, aby **false**. Ustawienie tej właściwości na **false** zapobiega podnoszenie żadnych wydarzeń, takich jak zdarzenia kontrolki hosta programu Excel.  

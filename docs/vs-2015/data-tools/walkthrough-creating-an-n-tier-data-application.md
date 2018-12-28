@@ -20,14 +20,14 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 050562a8ac0549bb36712781ba80f58aaf2fc82d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890182"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648371"
 ---
-# <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
+# <a name="walkthrough-creating-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -57,15 +57,15 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
   
 - Pisz kod, aby wypełnić tabele danych.  
   
-  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") wersja wideo tego tematu, zobacz [poradnik wideo: tworzenie aplikacji N-warstwowa danych](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") wersja wideo tego tematu, zobacz [poradnik wideo: Tworzenie aplikacji N-warstwowa danych](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są:  
   
--   Dostęp do przykładowej bazy danych Northwind. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+-   Dostęp do przykładowej bazy danych Northwind.
   
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Tworzenie rozwiązanie N-warstwowe i biblioteki klas, aby pomieścić zestawu danych (DataEntityTier)  
- Pierwszym krokiem w tym instruktażu jest tworzyć rozwiązania i dwa projekty bibliotek klas. Najwyższej klasy biblioteki będzie przechowywać zestawu danych (wygenerowany wpisanych klasy DataSet i DataTable, który będzie przechowywać dane aplikacji). Ten projekt jest używany jako warstwy jednostek danych, aplikacji i zwykle znajduje się w warstwie środkowej. [Tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md) służy do tworzenia początkowego zestawu danych i automatyczne dzielenie kod biblioteki dwóch klas.  
+ Pierwszym krokiem w tym instruktażu jest tworzyć rozwiązania i dwa projekty bibliotek klas. Najwyższej klasy biblioteki będzie przechowywać zestawu danych (wygenerowany wpisanych klasy DataSet i DataTable, który będzie przechowywać dane aplikacji). Ten projekt jest używany jako warstwy jednostek danych, aplikacji i zwykle znajduje się w warstwie środkowej. Projektanta obiektów Dataset służy do tworzenia początkowego zestawu danych i automatycznie odseparowania kodu w bibliotekach klas dwa.  
   
 > [!NOTE]
 >  Pamiętaj poprawnie nazwę projektu i rozwiązania, zanim klikniesz pozycję **OK**. Ten sposób ułatwi służących do przeprowadzenia tego instruktażu.  
@@ -106,7 +106,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
  Następnym krokiem jest, aby utworzyć typizowany zestaw danych. Typizowane zestawy danych są tworzone przy użyciu zarówno klasy zestawu danych (w tym klasy DataTable) i `TableAdapter` klas w jednym projekcie. (Wszystkie klasy są generowane w jednym pliku). Kiedy oddzielisz zestawu danych i `TableAdapter`s do różnych projektów, to klasa zestawu danych, która zostanie przeniesiony do innego projektu, pozostawiając `TableAdapter` klas w oryginalnym projekcie. W związku z tym, należy utworzyć zestaw danych w projekcie, który ostatecznie będzie zawierać `TableAdapter`s (projekcie DataAccessTier). Utworzysz zestaw danych za pomocą **Kreatora konfiguracji źródła danych**.  
   
 > [!NOTE]
->  Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące sposobu konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+> Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia.
   
 #### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych  
   
@@ -177,9 +177,9 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Aby utworzyć metodę w warstwie dostępu do danych, która zwraca tabelę Klienci  
   
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie NorthwindDataset.xsd, aby otworzyć zestaw danych w [tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md).  
+1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie NorthwindDataset.xsd, aby otworzyć zestaw danych w Projektancie obiektów Dataset.  
   
-2.  Kliknij prawym przyciskiem myszy CustomersTableAdapter, a następnie kliknij przycisk **Dodaj zapytanie** otworzyć [edytowanie TableAdapters](../data-tools/editing-tableadapters.md).  
+2.  Kliknij prawym przyciskiem myszy CustomersTableAdapter, a następnie kliknij przycisk **Dodaj zapytanie** do edycji elementu Tableadapter.  
   
 3.  Na **wybierz typ polecenia** zostaw wartość domyślną **użyj instrukcji SQL** i kliknij przycisk **dalej**.  
   
@@ -385,7 +385,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które warto wykonać po zapisaniu powiązanych danych w aplikacji systemu Windows. Na przykład można wprowadzić następujące ulepszenia do tej aplikacji:  
   
--   Dodawanie walidacji do zestawu danych. Aby uzyskać informacje, zobacz [wskazówki: Dodawanie sprawdzania poprawności do danych aplikacji N-warstwowa](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+-   Dodawanie walidacji do zestawu danych. Aby uzyskać informacje, zobacz [instruktażu: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 -   Dodaj dodatkowe metody do usługi w przypadku aktualizowania danych w bazie danych.  
   
@@ -393,4 +393,3 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
  [Praca z zestawami danych w aplikacjach n warstwowych](../data-tools/work-with-datasets-in-n-tier-applications.md)   
  [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)   
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

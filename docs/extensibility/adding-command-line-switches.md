@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901050"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738592"
 ---
 # <a name="add-command-line-switches"></a>Dodawanie przełączników wiersza polecenia
 Możesz dodać przełączniki wiersza polecenia, które są stosowane do Twojego pakietu VSPackage podczas *devenv.exe* jest wykonywany. Użyj <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> do deklarowania nazwę przełącznika i jego właściwości. W tym przykładzie przełącznika MySwitch zostanie dodany do podklasy pakietu VSPackage o nazwie **AddCommandSwitchPackage** bez argumentów i za pomocą pakietu VSPackage ładowane automatycznie.  
@@ -76,4 +76,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)   
  [Narzędzie CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
- [. Pliki Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [. Pliki Pkgdef](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

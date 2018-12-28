@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e95677bde8fbd1a05e83ab460396201316a7786d
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 4fcd280ad048d15b7a3b2e641b7f9d990d44dfe5
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050316"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684772"
 ---
 # <a name="project-element-msbuild"></a>Project — element (MSBuild)
 Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.  
@@ -62,7 +62,7 @@ Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 | `InitialTargets` | Atrybut opcjonalny.<br /><br /> Początkowa docelowego lub obiekty docelowe do uruchomienia przed obiektów docelowych określonych w `DefaultTargets` atrybutu lub w wierszu polecenia. Wiele elementów docelowych to rozdzielana średnikami (`;`) rozdzielonych. Jeśli zdefiniowano wielu plików zaimportowanych `InitialTargets`, zostaną uruchomione wszystkie elementy docelowe, które wspomniano, w kolejności polecenie importuje napotkaniu. |
 | `Sdk` | Atrybut opcjonalny. <br /><br /> Nazwa zestawu SDK i opcjonalnie wersja służące do tworzenia niejawne zaimportuj instrukcje, które są dodawane do pliku .proj. Jeśli wersja nie jest określona, program MSBuild będzie podejmować próby rozwiązania domyślnej wersji.  Na przykład `<Project Sdk="Microsoft.NET.Sdk" />` lub `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Atrybut opcjonalny.<br /><br /> Można określić wartości dla $(MSBuildBinPath) i $(MSBuildToolsPath) korzysta z wersji programu MSBuild zestawu narzędzi. |
-| `TreatAsLocalProperty` | Atrybut opcjonalny.<br /><br /> Nazwy właściwości, które nie były uznawane za będzie globalnym. Ten atrybut zapobiega zastępowanie wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych i wszystkie Importy kolejnych określonych właściwości wiersza polecenia. Wiele właściwości są rozdzielonych średnikami (;) rozdzielonych.<br /><br /> Zwykle globalne właściwości zastępują wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych. Jeśli właściwość jest wymieniona w `TreatAsLocalProperty` wartość, wartość właściwości globalnej nie zastępuje wartości właściwości, które są ustawiane w pliku i wszystkie Importy kolejne. Aby uzyskać więcej informacji, zobacz [porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Uwaga:** ustawić globalne właściwości w wierszu polecenia, używając **— właściwość** (lub **-p**) przełącznika. Możesz również ustawić lub zmodyfikować globalnych właściwości dla projektów podrzędnych w kompilacji wielu projektów za pomocą `Properties` atrybut zadanie programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Atrybut opcjonalny.<br /><br /> Nazwy właściwości, które nie były uznawane za będzie globalnym. Ten atrybut zapobiega zastępowanie wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych i wszystkie Importy kolejnych określonych właściwości wiersza polecenia. Wiele właściwości są rozdzielonych średnikami (;) rozdzielonych.<br /><br /> Zwykle globalne właściwości zastępują wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych. Jeśli właściwość jest wymieniona w `TreatAsLocalProperty` wartość, wartość właściwości globalnej nie zastępuje wartości właściwości, które są ustawiane w pliku i wszystkie Importy kolejne. Aby uzyskać więcej informacji, zobacz [jak: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Uwaga:**  Należy określić globalne właściwości w wierszu polecenia przy użyciu **— właściwość** (lub **-p**) przełącznika. Możesz również ustawić lub zmodyfikować globalnych właściwości dla projektów podrzędnych w kompilacji wielu projektów za pomocą `Properties` atrybut zadanie programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md). |
 | `Xmlns` | Atrybut opcjonalny.<br /><br /> Jeśli zostanie określony, `xmlns` atrybut musi mieć wartość `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
 ### <a name="child-elements"></a>Elementy podrzędne  
@@ -71,7 +71,9 @@ Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 | - | - |
 | [Wybierz opcję](../msbuild/choose-element-msbuild.md) | Element opcjonalny.<br /><br /> Ocenia elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementy i/lub `PropertyGroup` elementy do oceny. |
 | [Importujuj](../msbuild/import-element-msbuild.md) | Element opcjonalny.<br /><br /> Umożliwia pliku projektu zaimportować innego pliku projektu. Może wynosić zero lub więcej `Import` elementy w projekcie. |
+| [Importgroup —](../msbuild/importgroup-element.md) | Element opcjonalny.<br /><br /> Zawiera kolekcję `Import` elementy, które są zgrupowane w obszarze opcjonalny warunek. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Element opcjonalny.<br /><br /> Element grouping dla poszczególnych elementów. Elementy określone za pomocą [elementu](../msbuild/item-element-msbuild.md) elementu. Może wynosić zero lub więcej `ItemGroup` elementy w projekcie. |
+| [ItemDefinitionGroup —](../msbuild/itemdefinitiongroup-element-msbuild.md) | Element opcjonalny.<br /><br /> Umożliwia zdefiniowanie zestawu definicji elementów, które są wartości metadanych, które są stosowane do wszystkich elementów w projekcie, domyślnie. ItemDefinitionGroup — zastępuje konieczność stosowania `CreateItem` zadań i `CreateProperty` zadań. |
 | [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Element opcjonalny.<br /><br /> Zapewnia sposób, aby utrwalić non -[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacje zawarte w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. Może mieć zero lub jeden `ProjectExtensions` elementy w projekcie. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Element opcjonalny.<br /><br /> Element grouping dla poszczególnych właściwości. Właściwości są określane za pomocą [właściwość](../msbuild/property-element-msbuild.md) elementu. Może wynosić zero lub więcej `PropertyGroup` elementy w projekcie. |
 | [Sdk](../msbuild/sdk-element-msbuild.md) | Element opcjonalny.<br /><br /> Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zestawu SDK.  Ten element może służyć jako alternatywę do atrybutu zestawu Sdk. |
@@ -82,7 +84,7 @@ Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
  Brak.  
 
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Określ, która docelowa do tworzenia najpierw](../msbuild/how-to-specify-which-target-to-build-first.md)   
+ [Instrukcje: Określ, która docelowa do tworzenia najpierw](../msbuild/how-to-specify-which-target-to-build-first.md)   
  [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](../msbuild/msbuild.md)

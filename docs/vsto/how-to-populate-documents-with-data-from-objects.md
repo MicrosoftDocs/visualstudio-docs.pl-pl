@@ -1,5 +1,5 @@
 ---
-title: 'Porady: zapełnianie dokumentów danymi z obiektów'
+title: 'Instrukcje: Zapełnianie dokumentów danymi z obiektów'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,68 +11,68 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef3d1441f9587bceeca0c4aacdc054a4769a2369
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 87e194aa29a44458c23e5057d7813e5e21ffbc42
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758115"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648384"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Porady: zapełnianie dokumentów danymi z obiektów
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Instrukcje: Zapełnianie dokumentów danymi z obiektów
 
-Dane w celu dostępu w obiekcie danych działa tak samo w projektach na poziomie dokumentu, dla programu Microsoft Office Word, co w projektach formularzy systemu Windows. Użyj tego samego narzędzia i kod do przeniesienia danych z obiektu do rozwiązania, a formanty formularzy systemu Windows można użyć do wyświetlania danych. Ponadto można wyświetlić dane za pomocą formantów hosta. Formanty hosta są obiektów macierzystych w programie Microsoft Office Word, które zostały rozszerzone za pomocą zdarzeń i możliwość powiązania danych. Aby uzyskać więcej informacji, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).
+Dane w celu dostępu w obiekcie danych działa tak samo w projektach na poziomie dokumentu, dla programu Microsoft Office Word, jak w projektach Windows Forms. Użyj tego samego narzędzia i kod do przenoszenia danych z obiektu do rozwiązania i kontrolek formularzy Windows Forms służy do wyświetlania danych. Ponadto można wyświetlić dane za pomocą kontrolki hosta. Formanty hosta to natywnych obiektów w programie Microsoft Word pakietu Office, które zostały rozszerzone ze zdarzeniami i możliwości wiązania danych. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 Należy wykonać trzy podstawowe kroki, aby wypełnić dokumentu przy użyciu danych z obiektu:
 
--   Dodawanie formantu do dokumentu, które można powiązać z danymi.
+-   Dodawanie formantu do dokumentu, który można powiązać z danymi.
 
 -   Dodaj obiekt danych do dokumentu.
 
--   Połącz obiekt danych do parametru BindingSource.
+-   Łączyć się z pomocą elementu BindingSource z obiektu danych.
 
 ## <a name="to-add-a-data-object"></a>Aby dodać obiekt danych
 
-Aby dodać obiekt danych, otwórz **źródeł danych** okna i Utwórz źródło danych z obiektu. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md).
+Aby dodać obiekt danych, otwórz **źródeł danych** okna i Utwórz źródło danych z obiektu. Aby uzyskać więcej informacji, zobacz [dodasz nowe źródła danych](../data-tools/add-new-data-sources.md).
 
-## <a name="connect-the-data-object-to-the-bindingsource"></a>Połącz obiekt danych do parametru BindingSource
+## <a name="connect-the-data-object-to-the-bindingsource"></a>Obiekt danych nawiązać połączenie z pomocą elementu BindingSource
 
-W projektach na poziomie dokumentu Dodaj formanty do dokumentu i powiązać je z danymi w czasie projektowania.
+W projektach na poziomie dokumentu możesz dodać kontrolki do dokumentu i powiązać je z danymi w czasie projektowania.
 
-Projektów dodatku VSTO służy do tworzenia kontrolek i powiązać je w czasie wykonywania.
+W projektach dodatku narzędzi VSTO tworzenia formantów i powiązać je w czasie wykonywania.
 
 ### <a name="document-level-projects"></a>Projektów na poziomie dokumentu
 
-Aby połączyć obiekt danych do parametru BindingSource:
+Aby podłączyć obiekt danych do kontrolki BindingSource:
 
-1.  Przeciągnij pole danych z **źródeł danych** okna do dokumentu. Powoduje to automatyczne utworzenie formantu.
+1.  Przeciągnij pole danych z **źródeł danych** okna dokumentu. Powoduje to automatyczne utworzenie kontrolki.
 
-2.  W kodzie należy utworzyć wystąpienia typu obiektu, który został wybrany dla źródła danych.
+2.  W kodzie należy utworzyć wystąpienie typu obiektu, który został wybrany dla źródła danych.
 
 3.  Przypisz wystąpienie do <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Projektów na poziomie aplikacji
 
-Aby połączyć obiekt danych do parametru BindingSource:
+Aby podłączyć obiekt danych do kontrolki BindingSource:
 
-1.  W kodzie należy utworzyć wystąpienia typu obiektu, który jest skojarzony ze źródłem danych.
+1.  W kodzie należy utworzyć wystąpienie typu obiektu, który jest skojarzony ze źródłem danych.
 
-2.  Utwórz wystąpienie <xref:System.Windows.Forms.BindingSource>.
+2.  Utwórz wystąpienie obiektu <xref:System.Windows.Forms.BindingSource>.
 
-3.  Źródło danych, aby przypisać <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
+3.  Wystąpienie źródła danych, aby przypisać <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
 
-4.  Dodaj źródło danych jako powiązań danych z formantem.
+4.  Dodaj źródło danych jako wiązanie danych do kontrolki.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)
-- [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Porady: aktualizowanie źródła danych danymi z formanty hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+- [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Instrukcje: Zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Instrukcje: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [BindingSource, składnik — omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview)

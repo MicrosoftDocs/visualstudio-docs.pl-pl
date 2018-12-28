@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ed4bdca8b438d8daa10e385e768825c403bf54
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303345"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648331"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Termin *tabeli odnośników* (nazywane czasem *powiązanie wyszukiwania odnośni
   
 1.  Dodaj jeden z następujących rodzajów źródeł danych za pomocą powiązanych danych do projektu:  
   
-    -   Zestaw danych lub modelu Entity Data Model. Aby uzyskać więcej informacji, zobacz [porady: łączenie z danymi w bazie danych](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Zestaw danych lub modelu Entity Data Model.
+
+    -   Usługi danych WCF, usługi WCF lub usługi sieci Web. Aby uzyskać więcej informacji, zobacz [jak: Łączenie z danymi w usłudze](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   Usługi danych WCF, usługi WCF lub usługi sieci Web. Aby uzyskać więcej informacji, zobacz [porady: łączenie z danymi w usłudze](../data-tools/how-to-connect-to-data-in-a-service.md).  
-  
-    -   Obiekty. Aby uzyskać więcej informacji, zobacz [porady: łączenie z danymi w obiektach](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    -   Obiekty. Aby uzyskać więcej informacji, zobacz [jak: Łączenie z danymi w obiektach](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     >  Zanim można utworzyć tabeli odnośników, dwie pokrewne tabele lub obiekty musi istnieć jako źródło danych dla projektu.  
@@ -103,5 +103,4 @@ Termin *tabeli odnośników* (nazywane czasem *powiązanie wyszukiwania odnośni
  [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Wyświetlanie powiązanych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)   
- [Wskazówki: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Przewodnik: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

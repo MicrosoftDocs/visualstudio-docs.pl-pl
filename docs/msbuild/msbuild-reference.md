@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120386"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739841"
 ---
 # <a name="msbuild-reference"></a>Odwołanie do narzędzia MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest systemem kompilacji dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Poniższe linki prowadzą do tematów, które zawierają [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacje referencyjne.  
@@ -61,7 +61,7 @@ ms.locfileid: "48120386"
  [Riles odpowiedzi](../msbuild/msbuild-response-files.md)  
  Wyjaśnia *rsp* pliki zawierające przełączniki wiersza polecenia.  
   
- [Dodatkowe zasoby](../msbuild/additional-resources-for-msbuild.md)  
+ [Dodatkowe zasoby](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  Zawiera łącza do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] witryn sieci Web i grup dyskusyjnych.  
   
  [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  

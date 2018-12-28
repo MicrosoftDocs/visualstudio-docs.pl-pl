@@ -16,22 +16,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4149a6cc7974f1c38c146620c0f3a6e95f760ad3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa33123a813739eeec9678f8393925d1ba12ba3a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936657"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684538"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
+
 Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony menu. Nie można użyć **Szybkie uruchamianie** wyszukiwania kodu i symbole. **Szybkie uruchamianie** pole wyszukiwania znajduje się w prawym górnym rogu paska menu i jest dostępny, wybierając klawisze Ctrl + Q. Po prostu wprowadź wyszukiwany ciąg w polu. Do wyszukiwania ciągów zawierających @, użyj ”@@”. 
 
- **Szybkie uruchamianie** jest włączona domyślnie po zainstalowaniu programu Visual Studio. Na pasku menu, można wyświetlić lub ukryć **Szybkie uruchamianie** , wybierając **narzędzia**, **opcje**. Rozwiń **środowisk** węzła, a następnie wybierz **Szybkie uruchamianie**. Zaznacz lub wyczyść **Włącz pasek Szybkie uruchamianie** pole wyboru. Można również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
+**Szybkie uruchamianie** jest włączona domyślnie po zainstalowaniu programu Visual Studio. Na pasku menu, można wyświetlić lub ukryć **Szybkie uruchamianie** , wybierając **narzędzia**, **opcje**. Rozwiń **środowisk** węzła, a następnie wybierz **Szybkie uruchamianie**. Zaznacz lub wyczyść **Włącz pasek Szybkie uruchamianie** pole wyboru. Można również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
 
 ## <a name="category-list"></a>Lista kategorii
- Szybkie uruchomieni wyszukiwania są wyświetlane w czterech kategorii: **ostatnio używane**, **menu**, **opcje**, i **otwarte dokumenty**, wraz z programem Liczba elementów w kategorii. Przechodzenie za pośrednictwem wyników wyszukiwania według kategorii, wybierz klawisze Ctrl + Q, aby Pokaż wszystkie wyniki z kategorii dalej. Po ostatnim kategoria zostanie wyświetlona, Ctrl + Q pokazuje kilka wyniki z każdej kategorii. Ctrl + Shift + Q służy do nawigowania do kategorii w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
 
- Można użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonej kategorii.
+Szybkie uruchomieni wyszukiwania są wyświetlane w czterech kategorii: **Większość ostatnio używane**, **menu**, **opcje**, i **otwarte dokumenty**, wraz z liczbą elementów w kategorii. Przechodzenie za pośrednictwem wyników wyszukiwania według kategorii, wybierz klawisze Ctrl + Q, aby Pokaż wszystkie wyniki z kategorii dalej. Po ostatnim kategoria zostanie wyświetlona, Ctrl + Q pokazuje kilka wyniki z każdej kategorii. Ctrl + Shift + Q służy do nawigowania do kategorii w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
+
+Można użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonej kategorii.
 
 |Kategoria|Skrót|Opis skrótów|
 |--------------|--------------| - |
@@ -43,13 +45,12 @@ Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie 
 > [!NOTE]
 > Klawisze skrótów można zmienić na **ogólne**, **klawiatury** strony w **opcje** okno dialogowe.
 
-
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
- Domyślnie termin wyszukiwania, które można wprowadzić nie są utrwalane między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczone, jeśli wyszukasz termin, przesuń kursor poza **Szybkie uruchamianie** obszaru, a następnie przejdź kopii. Do przechowywania wyników wyszukiwania, przejdź do **opcje** okna dialogowego wybierz **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki poprzedniego wyszukiwania gdy pasek Szybkie uruchamianie jest aktywny.** Pole wyboru. Następnym razem, przeprowadź wyszukiwanie lub pozostaw obszaru szybkiego uruchamiania, a wrócić, szybkiego uruchamiania będzie zachowują wyszukiwany termin, ostatnio używane i również wyświetlanie wyników wyszukiwania.
 
- Aby uzyskać najnowsze porady i wskazówki dotyczące korzystania z **Szybkie uruchamianie**, zobacz [Blog dotyczący programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
+Domyślnie termin wyszukiwania, które można wprowadzić nie są utrwalane między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczone, jeśli wyszukasz termin, przesuń kursor poza **Szybkie uruchamianie** obszaru, a następnie przejdź kopii. Do przechowywania wyników wyszukiwania, przejdź do **opcje** okna dialogowego wybierz **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki poprzedniego wyszukiwania gdy pasek Szybkie uruchamianie jest aktywny.** Pole wyboru. Następnym razem, przeprowadź wyszukiwanie lub pozostaw obszaru szybkiego uruchamiania, a wrócić, szybkiego uruchamiania będzie zachowują wyszukiwany termin, ostatnio używane i również wyświetlanie wyników wyszukiwania.
+
+Aby uzyskać najnowsze porady i wskazówki dotyczące korzystania z **Szybkie uruchamianie**, zobacz [Blog dotyczący programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Ogólne elementy interfejsu użytkownika (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

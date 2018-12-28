@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283239"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740078"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Instrukcje: Tworzenie lub aktualizowanie standardowych zasad analizy kodu zaewidencjonowania
 
 Możesz wymagać, można uruchomić analizę kodu dla wszystkich projektów kodu w projekcie DevOps platformy Azure w przy użyciu zasady analizy kodu ewidencjonowania. Wymaga analizy kodu może poprawić jakość kodu, który jest ewidencjonowany w kodzie podstawowym.
 
@@ -71,4 +71,4 @@ Aby uzyskać więcej informacji o sposobie tworzenia i wdrażania reguły niesta
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

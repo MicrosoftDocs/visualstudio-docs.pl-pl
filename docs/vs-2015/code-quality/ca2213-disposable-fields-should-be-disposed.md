@@ -20,14 +20,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b4e59dd35ab1f787dcaada5448443e35efc1f6c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5663619ef25b3e61c1044300c90f3e349413505c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910507"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739460"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola usuwalne powinny zostać usunięte
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola możliwe do rozporządzania należy rozporządzać
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,7 +50,7 @@ ms.locfileid: "49910507"
  Bezpiecznie Pomijaj ostrzeżeń dla tej reguły, jeśli nie jesteś odpowiedzialny dla przy zwalnianiu zasobów przechowywanych przez pole lub jeśli wywołanie <xref:System.IDisposable.Dispose%2A> występuje dokładniejsze wywoływania niż sprawdzanie reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typu `TypeA` implementującej <xref:System.IDisposable> (`FT` w dyskusji previosu).
+ W poniższym przykładzie pokazano typu `TypeA` implementującej <xref:System.IDisposable> (`FT` w poprzednim dyskusji).
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 

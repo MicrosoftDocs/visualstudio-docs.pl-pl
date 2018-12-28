@@ -10,14 +10,14 @@ ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: c548d143802a9924753fa4c86f652189357dada5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 784fd5fd4459c77e757cc501ff5f62bce13d5282
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673695"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739846"
 ---
-# <a name="debugging-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze Docker
+# <a name="debugging-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 ## <a name="overview"></a>Omówienie
 Program Visual Studio 2017 zapewnia spójny sposób programowania w kontenerze platformy Docker i zweryfikowania aplikacji w środowisku lokalnym.
 Nie trzeba ponownie uruchomić kontener każdorazowo, gdy wprowadzeniu zmiana w kodzie.
@@ -34,7 +34,7 @@ Możesz użyć [przybornika Docker](https://www.docker.com/products/docker-toolb
 
 Jeśli używasz przybornika platformy Docker, konieczne będzie [Konfigurowanie klienta platformy Docker](vs-azure-tools-docker-setup.md)
 
-## <a name="1-create-a-web-app"></a>1. Tworzenie aplikacji sieci web
+## <a name="1-create-a-web-app"></a>1. tworzenie aplikacji internetowej
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 
 ## <a name="2-edit-your-code-and-refresh"></a>2. Edytuj kod i odświeżanie
@@ -75,7 +75,7 @@ Często zmian będzie potrzebna jest dalsza inspekcji, korzystając z funkcji de
 5. Przejdź do strony informacje, aby trafić punkt przerwania.
 6. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania i sprawdzić wartość komunikatu.
 
-   ![][2]
+   ![Punkt przerwania](media/vs-azure-tools-docker-edit-and-refresh/breakpoint.png)
 
 ## <a name="summary"></a>Podsumowanie
 Dzięki obsłudze platformy Docker w programie Visual Studio 2017 możesz uzyskać wydajność pracy lokalnie, za pomocą realizmu produkcji rozwijających się w kontenerze platformy Docker.
@@ -100,5 +100,3 @@ Dzięki obsłudze platformy Docker w programie Visual Studio 2017 możesz uzyska
 * [Steve Lasker: VS Live Las Vegas 2016 - e2e platformy Docker](https://github.com/SteveLasker/Presentations/blob/master/VSLive2016/Vegas/)
 * [Wprowadzenie do platformy ASP.NET Core @ build 2016 — której możesz w wersji demonstracyjnej](https://channel9.msdn.com/Events/Build/2016/B810)
 * [Tworzenie aplikacji .NET w kontenerach, Channel 9](https://blogs.msdn.microsoft.com/stevelasker/2016/02/19/developing-asp-net-apps-in-docker-containers/)
-
-[2]: media/vs-azure-tools-docker-edit-and-refresh/breakpoint.png

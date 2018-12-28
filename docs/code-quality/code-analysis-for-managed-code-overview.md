@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389315"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739685"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Omówienie statycznej analizy kodu dla kodu zarządzanego w programie Visual Studio
 
@@ -30,13 +30,13 @@ Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje in
 Narzędzie do analizy reprezentuje kontrole wykonywane podczas analizy jako komunikaty ostrzegawcze. Komunikaty ostrzegawcze identyfikują wszystkie istotne błędy programowania i projektowania i gdy jest możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.
 
 > [!NOTE]
-> Statyczna analiza kodu nie jest obsługiwana dla projektów .NET Core i .NET Standard w programie Visual Studio. Po uruchomieniu analizy kodu dla projektu .NET Core lub .NET Standard w ramach programu msbuild, zobaczysz błąd podobny do **błąd: CA0055: nie można zidentyfikować platformy dla \<your.dll >**. Aby przeanalizować kod w projektach .NET Core lub .NET Standard, należy użyć [analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md) zamiast tego.
+> Statyczna analiza kodu nie jest obsługiwana dla projektów .NET Core i .NET Standard w programie Visual Studio. Po uruchomieniu analizy kodu dla projektu .NET Core lub .NET Standard w ramach programu msbuild, zobaczysz błąd podobny do **błąd: CA0055: Nie można zidentyfikować platformy dla \<your.dll >**. Aby przeanalizować kod w projektach .NET Core lub .NET Standard, należy użyć [analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md) zamiast tego.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integracja z IDE (zintegrowanym środowiskiem programistycznym)
 
 Możesz uruchomić analizę kodu projektu, ręcznie lub automatycznie.
 
-Aby uruchomić analizę kodu za każdym razem, tworzysz projekt, wybierz **Włącz analizę kodu podczas kompilacji** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Aby uruchomić analizę kodu za każdym razem, tworzysz projekt, wybierz **Włącz analizę kodu podczas kompilacji** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Aby ręczne przeprowadzanie analizy kodu dla projektu, na pasku menu wybierz **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<projektu >**.
 
@@ -71,7 +71,7 @@ Jako organizacja można wymagać, aby wszystkie zaewidencjonowania spełniały p
 
 - Uruchamianie analizy kodu jako część najnowszej kompilacji.
 
-Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad zaewidencjonowania projektu](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad zaewidencjonowania projektu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Integracji kompilacji zespołu
 
@@ -81,4 +81,4 @@ Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie
 
 - [Omówienie analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Instrukcje: włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Instrukcje: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

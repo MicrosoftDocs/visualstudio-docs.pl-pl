@@ -1,5 +1,5 @@
 ---
-title: 'Porady: zmiana położenia zakładki na Wstążce'
+title: 'Instrukcje: Zmiana położenia zakładki na Wstążce'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,20 +10,20 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08bbdf81023be466d30e49215fc0dbe1d3812f20
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255392"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647119"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Porady: zmiana położenia zakładki na Wstążce
-  Można zmienić kolejność kart niestandardowych na Wstążce za pomocą **edytora kolekcji kartę**. Niestandardowe karty można umieścić przed lub po wbudowanej karty na Wstążce. Tabulator wbudowana jest karta, która jest już na Wstążce aplikacji pakietu Microsoft Office. Na przykład **danych** karta jest wbudowanej karty w programie Excel.  
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Instrukcje: Zmiana położenia zakładki na Wstążce
+  Można zmienić kolejność niestandardowych kart na Wstążce za pomocą **Edotor kolekcji zakładek**. Można określić położenie niestandardowych kart przed lub po wbudowanej karcie na Wstążce. Wbudowana karty to karta, która jest już na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
@@ -35,35 +35,35 @@ ms.locfileid: "35255392"
   
 3.  Kliknij prawym przyciskiem myszy projektanta wstążki, a następnie kliknij przycisk **właściwości**.  
   
-4.  W **właściwości** wybierz **karty** właściwości, a następnie kliknij przycisk wielokropka (![przenośnych elipsy projektanta ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Projektant elipsy")).  
+4.  W **właściwości** wybierz **karty** właściwości, a następnie kliknij przycisk wielokropka (![przenośnych elipsy projektanta ASP.NET](../sharepoint/media/mwellipsis.gif "przenośnych ASP.NET Projektant elipsy")).  
   
-     **Edytora kolekcji kartę** pojawi się.  
+     **Edotor kolekcji zakładek** pojawia się.  
   
-5.  W **edytora kolekcji kartę**w **członków** listy, wybierz kartę, aby przenieść i kliknij w górę lub strzałkę w dół, aby zmienić kolejność tabulacji.  
+5.  W **Edotor kolekcji zakładek**w **członków** listy, wybierz kartę, aby przenieść i kliknij w górę lub strzałkę w dół, aby zmienić kolejność tabulacji.  
   
-### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Aby umieścić na karcie przed lub po wbudowanej karty na Wstążce  
+### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Aby umieścić na karcie przed lub po wbudowanej karcie na Wstążce  
   
-1.  Projektant wstążki wybierz kart niestandardowych.  
+1.  W Projektancie wstążki wybierz kartę niestandardową.  
   
-2.  W **właściwości** okna, rozwiń węzeł **ControlId** właściwości, a następnie upewnij się, że wartość **ControlIdType** właściwość jest ustawiona na **niestandardowy**.  
+2.  W **właściwości** okna, rozwiń węzeł **ControlId** właściwości, a następnie upewnij się, że wartość **ControlIdType** właściwość jest ustawiona na **niestandardowe**.  
   
 3.  W **właściwości** okna, rozwiń węzeł **pozycji** właściwości.  
   
-4.  Ustaw **PositionType** odpowiedniej wartości dla właściwości:  
+4.  Ustaw **PositionType** właściwość do odpowiedniej wartości:  
   
     -   **BeforeOfficeId** umieszcza grupy przed określonym wbudowanej karty.  
   
     -   **AfterOfficeId** umieszcza grupy po określonym wbudowanej karty.  
   
-5.  Ustaw **OfficeId** właściwość identyfikatora formantu karty wbudowane.  
+5.  Ustaw **OfficeId** właściwości Identyfikator kontrolki wbudowanej karty.  
   
-     Lista kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: identyfikatory formantu interfejsu użytkownika fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Aby uzyskać listę kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: Identyfikatory kontrolki interfejsu użytkownika fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
+ [Wstążka — omówienie](../vsto/ribbon-overview.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
- [XML wstążki](../vsto/ribbon-xml.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [XML — Wstążka](../vsto/ribbon-xml.md)   
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

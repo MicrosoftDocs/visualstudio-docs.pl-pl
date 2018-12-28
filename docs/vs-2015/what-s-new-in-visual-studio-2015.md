@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062441"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740276"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;s Nowość w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Aby dowiedzieć się więcej na temat wiele ulepszeń oraz nowe funkcje w progra
 -   **C++ / Android**. Użyj [Visual C++ for Cross-Platform Mobile Development](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) szablony wraz z narzędziami innych firm, takich jak [zestawu Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) może tworzyć aplikacje natywne dla Windows i Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debugowanie i diagnostyka
- Aby dowiedzieć się, jak what's new in debugowania, zobacz [co nowego w debugerze programu Visual Studio 2015 jest](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Aby dowiedzieć się, jak what's new in debugowania, zobacz [co nowego w debugerze programu Visual Studio 2015 jest](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Aby uzyskać informacje o nowościach w diagnostyce, zobacz [What's New in Profiling Tools](./profiling/what-s-new-in-profiling-tools.md).
 
  Następujące elementy są nowe lub udoskonalone narzędzia, które wykonują różne rodzaje diagnostykę i analizę w kodzie:
 
 ### <a name="perftips"></a>Perftip
- Perftip wyświetlić czas wykonywania metody podczas debugowania, dzięki któremu można szybko wykrywaj wąskie gardła, bez konieczności wywoływania profilera. Aby rozpocząć pracę, zobacz [Perftip: informacje dotyczące wydajności w skrócie podczas debugowania za pomocą programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ Perftip wyświetlić czas wykonywania metody podczas debugowania, dzięki któremu można szybko wykrywaj wąskie gardła, bez konieczności wywoływania profilera. Aby rozpocząć pracę, zobacz [Perftip: Wydajność informacji o skrócie podczas debugowania przy użyciu programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Lista błędów
  Lista błędów obsługuje teraz filtrowanie według dowolnej kolumny. Pokazuje także widok na żywo, błędy, ostrzeżenia i analizy kodu dla całego rozwiązania języka C# lub Visual Basic podczas wpisywania, nawet jeśli zmiany w kodzie tworzy tysiące ostrzeżenia. Nowa lista błędów jest zgodny z powrotem z użyciem istniejących. Aby uzyskać więcej informacji, zobacz [okno listy błędów](./ide/reference/error-list-window.md).
@@ -190,11 +190,11 @@ Aby dowiedzieć się więcej na temat wiele ulepszeń oraz nowe funkcje w progra
 
 - Pobieranie historii dla całego pliku z kodem w edytorze programu Visual Studio.
 
-   ![CodeLens: Uzyskaj kod szczegółów pliku](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Pobierz kod szczegółów pliku](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Zobacz wykres pokazujący osoby, która zmieniła swój kod. Może to pomóc Ci znaleźć wzorce w zmiany swojego zespołu i ocena ich skutków.
 
-   ![CodeLens: Zmian kodu Zobacz historię jako Graf](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Zobacz historię zmian kod jako Graf](./ide/media/codelens.png "CodeLens")
 
 - Łatwo zobaczyć, kiedy ostatniej zmiany kodu.
 

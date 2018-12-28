@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e01b13fb1bec83cc7254133c99c16a98220e22
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949295"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648834"
 ---
 # <a name="edit-data-in-datasets"></a>Edytowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +81,9 @@ Możesz edytować dane w tabelach danych tak, jak edytować dane w tabeli w dowo
   
 - Każdy wiersz danych zawiera informacje powiązane z jego <xref:System.Data.DataRow.RowState%2A> (na przykład <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, lub <xref:System.Data.DataRowState>).  
   
-- Każdy zmieniony wiersz danych zawiera wiele wersji tego wiersza (<xref:System.Data.DataRowVersion>), wersja oryginalna (przed zmianami) i bieżącej wersji (po zmianach). W okresie, gdy zmiany oczekujące (czas, kiedy, pozwalające reagować na <xref:System.Data.DataTable.RowChanging> zdarzeń), trzecia wersja — wersja proponowana — jest także dostępna. Aby uzyskać więcej informacji, zobacz [porady: pobieranie określonych wersji DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Każdy zmieniony wiersz danych zawiera wiele wersji tego wiersza (<xref:System.Data.DataRowVersion>), wersja oryginalna (przed zmianami) i bieżącej wersji (po zmianach). W okresie, gdy zmiany oczekujące (czas, kiedy, pozwalające reagować na <xref:System.Data.DataTable.RowChanging> zdarzeń), trzecia wersja — wersja proponowana — jest także dostępna.
   
-  <xref:System.Data.DataSet.HasChanges%2A> Metoda zestawu danych zwraca `true` Jeśli wprowadzono zmiany w zestawie danych. Po ustaleniu, że istnieją zmienione wiersze, można wywołać `GetChanges` metody <xref:System.Data.DataSet> lub <xref:System.Data.DataTable> zwrócić zestaw zmienionych wierszy. Aby uzyskać więcej informacji, zobacz [porady: pobieranie zmienione wiersze](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  <xref:System.Data.DataSet.HasChanges%2A> Metoda zestawu danych zwraca `true` Jeśli wprowadzono zmiany w zestawie danych. Po ustaleniu, że istnieją zmienione wiersze, można wywołać `GetChanges` metody <xref:System.Data.DataSet> lub <xref:System.Data.DataTable> zwrócić zestaw zmienionych wierszy. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie zmienionych wierszy](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Aby ustalić, czy wprowadzono zmiany do wszystkich wierszy  
   
@@ -115,4 +115,3 @@ Możesz edytować dane w tabelach danych tak, jak edytować dane w tabeli w dowo
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

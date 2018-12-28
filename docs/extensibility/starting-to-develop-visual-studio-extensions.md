@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349666"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739922"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń programu Visual Studio
 
@@ -64,7 +64,7 @@ W praktyce znaleźliśmy, czy funkcje, których większość osób chce rozszerz
 
 -   [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
+-   [Visual Studio Isolated Shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> Szablony projektów, które są dostarczane przez VSSDK?
  Dwa główne typy rozszerzeń to rozszerzenia pakietów VSPackage i MEF. Ogólnie rzecz biorąc rozszerzenia pakietu VSPackage są używane dla rozszerzeń korzystających z lub rozszerzenia poleceń, okien narzędzi i projektów. Rozszerzenia MEF są używane do rozszerzenie lub dostosowanie edytora programu Visual Studio.
@@ -75,7 +75,7 @@ W praktyce znaleźliśmy, czy funkcje, których większość osób chce rozszerz
 
  Szablon Isolated Shell jest używany do pakietu rozszerzenia w wersji powłoki programu Visual Studio, którą można oznaczyć i rozpowszechniać jako własny. Poniższe tematy przedstawiają, jak rozpocząć pracę z każdym rodzajem rozszerzenia:
 
--   Polecenia menu: [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   Polecenia menu: [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 -   Narzędzia systemu windows: [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
 
@@ -83,7 +83,7 @@ W praktyce znaleźliśmy, czy funkcje, których większość osób chce rozszerz
 
 -   Podstawowe pakietów VSPackage: [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Szablon projektu VSIX: [rozpoczęcie korzystania z szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   Szablon projektu VSIX: [Wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Jak uzyskać Moje rozszerzenia, aby wyglądał jak Visual Studio?
  Doskonałe porady dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [dotyczące środowiska użytkownika w usłudze Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -94,7 +94,7 @@ W praktyce znaleźliśmy, czy funkcje, których większość osób chce rozszerz
 ## <a name="how-can-i-distribute-my-extension"></a>Jak można rozpowszechniać Moje rozszerzenie?
  Można zainstalować rozszerzenia na innym komputerze lub wysyłania dla Twoich znajomych, jako plik .vsix, instalowania, klikając go dwukrotnie. Możesz dowiedzieć się więcej na temat pakietów VSIX w [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Można również publikować swoje rozszerzenie Visual Studio Marketplace, który sprawia, że widoczne dla dużej liczby klientów w programie Visual Studio. Na przykład pakowania rozszerzenia w portalu Marketplace, zobacz [przewodnik: publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji na temat co należy zrobić, aby publikować w portalu Marketplace, zobacz [produkty i rozszerzenia programu Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Można również publikować swoje rozszerzenie Visual Studio Marketplace, który sprawia, że widoczne dla dużej liczby klientów w programie Visual Studio. Na przykład pakowania rozszerzenia w portalu Marketplace, zobacz [instruktażu: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji na temat co należy zrobić, aby publikować w portalu Marketplace, zobacz [produkty i rozszerzenia programu Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Zobacz także
 

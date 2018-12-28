@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], MSI
 - publishing Office solutions [Office development in Visual Studio], setup project
 - Office applications [Office development in Visual Studio], MSI
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5aaf0cdff2795ff0726ca2de36e794179f2d924
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673058"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648771"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
 Dowiedz się, jak utworzyć Instalatora Windows dla rozwiązania pakietu Office przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -528,7 +528,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 9. Na pasku menu wybierz **kompilacji** > **skompiluj OfficeAddInSetup**.  
 
-   Po zakończeniu kompilacji, można zlokalizować *setup.exe* pliku **OfficeAddInSetup** projektu w następującej lokalizacji: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
+   Po zakończeniu kompilacji, można zlokalizować *setup.exe* pliku **OfficeAddInSetup** projektu w następującej lokalizacji: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
 
 
 ## <a name="see-also"></a>Zobacz także  

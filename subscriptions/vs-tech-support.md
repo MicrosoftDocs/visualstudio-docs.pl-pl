@@ -3,18 +3,18 @@ title: Korzyści z pomocy technicznej
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączonej subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950073"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740436"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -95,13 +95,18 @@ Po wykonaniu tych czynności będzie można wybrać plan pomocy technicznej, sko
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
-| Program Visual Studio Professional (standardowy, roczna w chmurze) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
+| Visual Studio Professional (standardowa) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
 | Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                               | Tak         |
-| Visual Studio Dev Essentials | NAZWA | Niedostępne |NAZWA|
-| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
+| Visual Studio Dev Essentials | Nie dotyczy | Niedostępne |Nie dotyczy|
+| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup> *obejmuje: Imagine Premium. Nie obejmuje: Nie, for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine Standard, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Usługi.*
+<sup>1</sup> *obejmuje: Imagine Premium. Nie obejmuje: Nie do odsprzedaży Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine Standard, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services.*
 
 <sup>2</sup> *obejmuje: Imagine Standard.*
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+
+Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.

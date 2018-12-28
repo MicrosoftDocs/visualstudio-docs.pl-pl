@@ -3,18 +3,18 @@ title: Wyróżnij RZUTOWANIA korzyści w subskrypcji programu Visual Studio | Do
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat wyróżnienia RZUTOWANIA korzyści dostępne w wybranych subskrypcjach programu Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 74ed8a20195936c5ba7ef9c7ce7591838b620d5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7ee8059a8e80834b6b35f93be888d7fd90e4a3a3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896963"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740000"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Wyróżnij RZUTOWANIA korzyści w ramach subskrypcji programu Visual Studio
 
@@ -25,7 +25,7 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
-1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek korzyści wyróżnić RZUTOWANIE w kategorii "Narzędzia", a następnie kliknij **uzyskać kod**.
 
@@ -89,8 +89,8 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | Ocena 5 aplikacji przez 30 dni|  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Program Visual Studio Professional (standardowy, roczna w chmurze) | VL, Azure, Retail                                       | Niedostępne                                                             |  Brak          |
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | Ocena 5 aplikacji przez 30 dni|  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                             |  Brak          |
 | Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak           |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Visual Studio Dev Essentials | Brak  | Niedostępne | Brak |
@@ -99,8 +99,11 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
 
 
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR), ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>*obejmuje:    Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.

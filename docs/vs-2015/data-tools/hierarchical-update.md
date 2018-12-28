@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a7c20424d43fe9c10a9a6fda9517f40a1231d698
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220182"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648488"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
  Domyślnie zestaw traktuje powiązane tabele jako "tylko relacje" oznacza to, że nie to wymuszania ograniczeń klucza obcego. Możesz zmodyfikować to ustawienie w czasie projektowania za pomocą Projektanta obiektów Dataset. Zaznacz wiersz relacji między dwiema tabelami, aby wyświetlić **relacji** okno dialogowe. Zmiany wprowadzone w tym miejscu będzie określają sposób TableAdapterManager zachowania, gdy jest w stanie wysyłać zmian w tabelach pokrewnych w bazie danych.  
   
 ## <a name="enablehierarchical-update-in-a-dataset"></a>Aktualizacja Enablehierarchical w zestawie danych  
- Domyślnie hierarchiczna aktualizacja jest włączona dla wszystkich nowych zestawów danych, które są dodawane lub utworzone w projekcie. Włączyć lub wyłączyć aktualizację hierarchiczną, ustawiając **hierarchicznej aktualizacji** właściwości zestawu danych wpisywanych w [tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md) do **True** lub **False**:  
+ Domyślnie hierarchiczna aktualizacja jest włączona dla wszystkich nowych zestawów danych, które są dodawane lub utworzone w projekcie. Włączyć lub wyłączyć aktualizację hierarchiczną, ustawiając **hierarchicznej aktualizacji** właściwość typizowany zestaw danych w Projektancie obiektów DataSet, aby **True** lub **False**:  
   
  ![Ustawienia aktualizacji hierarchicznej](../data-tools/media/hierarchical-update-setting.png "ustawienie hierarchicznej aktualizacji")  
   
@@ -59,7 +59,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
   
  Domyślnie tabele danych w zestawie danych są generowane przy użyciu relacji (<xref:System.Data.DataRelation>) zgodnych relacji w bazie danych. Przyjrzyjmy się relacji w zestawie danych nie jest generowany jako ograniczenie klucza obcego. <xref:System.Data.DataRelation> Jest skonfigurowany jako **tylko relacji** bez <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> lub <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> obowiązywać.  
   
- Domyślnie aktualizacje i usuwanie kaskadowe kaskadowe są wyłączone nawet, jeśli relacje bazy danych została ustawiona za pomocą kaskadowych aktualizacji i/lub usuwanie kaskadowe włączona. Na przykład utworzenie nowego klienta i nowe zamówienia, a następnie próba zapisania danych może powodować konflikt z ograniczenia klucza obcego, które są zdefiniowane w bazie danych. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie ograniczeń klucz obcy zestaw](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
+ Domyślnie aktualizacje i usuwanie kaskadowe kaskadowe są wyłączone nawet, jeśli relacje bazy danych została ustawiona za pomocą kaskadowych aktualizacji i/lub usuwanie kaskadowe włączona. Na przykład utworzenie nowego klienta i nowe zamówienia, a następnie próba zapisania danych może powodować konflikt z ograniczenia klucza obcego, które są zdefiniowane w bazie danych. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie ograniczeń klucza obcego w zestawie danych](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
   
 ## <a name="set-the-order-to-perform-updates"></a>Ustaw kolejność przeprowadzania aktualizacji  
  Ustawienie kolejności do przeprowadzania aktualizacji ustawia kolejność poszczególnych wstawia, aktualizacji i usunięć, które są wymagane do zapisania zmodyfikowanych danych we wszystkich tabelach zestawu danych. Po włączeniu aktualizacji hierarchicznej wstawia są wykonane jako pierwsze, a następnie aktualizuje, a następnie usuwa. `TableAdapterManager` Zapewnia `UpdateOrder` właściwości, które mogą być zestawem do przeprowadzania aktualizacji po pierwsze, a następnie wstawiania i usuwania.  
@@ -67,7 +67,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
 > [!NOTE]
 >  Jest ważne dowiedzieć się, że kolejność aktualizacji jest z uwzględnieniem wszystkich. Oznacza to kiedy aktualizacje są wykonywane, wstawiania i usuwania są wykonywane dla wszystkich tabel w zestawie danych.  
   
- Aby ustawić `UpdateOrder` właściwości po przeciąganie elementów z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) w formularzu Wybierz `TableAdapterManager` w zasobniku składnika, a następnie ustaw `UpdateOrder` właściwości w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie kolejności podczas przeprowadzania hierarchicznej aktualizacji](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
+ Aby ustawić `UpdateOrder` właściwości po przeciąganie elementów z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) w formularzu Wybierz `TableAdapterManager` w zasobniku składnika, a następnie ustaw `UpdateOrder` właściwości w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie kolejności podczas przeprowadzania hierarchicznej aktualizacji](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Tworzenie kopii zapasowej zestawu danych przed przystąpieniem do wykonywania hierarchicznej aktualizacji  
  Podczas zapisywania danych (przez wywołanie metody `TableAdapterManager.UpdateAll()` metoda), `TableAdapterManager` próbuje zaktualizować dane dla każdej tabeli w ramach jednej transakcji. Jeśli którejkolwiek aktualizacji dla każdej tabeli zakończy się niepowodzeniem, cała transakcja zostanie wycofana. W większości sytuacji wycofywanie zwraca aplikacji do stanu pierwotnego.  
@@ -124,8 +124,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
 |`UpdateAll` — Metoda|Zapisuje wszystkie dane ze wszystkich tabel danych.|  
 |`BackUpDataSetBeforeUpdate` Właściwość|Określa, czy chcesz utworzyć kopię zapasową danych przed wykonaniem `TableAdapterManager.UpdateAll` metody. Wartość logiczna.|  
 |*Właściwość tableName* `TableAdapter` właściwości|Reprezentuje `TableAdapter`. Wygenerowany `TableAdapterManager` zawiera właściwości dla każdego `TableAdapter` zarządza. Na przykład zestaw danych z tabeli Customers i Orders jest generowany przy użyciu `TableAdapterManager` zawierający `CustomersTableAdapter` i `OrdersTableAdapter` właściwości.|  
-|`UpdateOrder` Właściwość|Określa kolejność poszczególnych insert, update i polecenia delete. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczenia.<br /><br /> Domyślnie `UpdateOrder` ustawiono **InsertUpdateDelete**. Oznacza to, że wstawia, a następnie aktualizuje i usuwa są wykonywane dla wszystkich tabel w zestawie danych. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie kolejności podczas przeprowadzania hierarchicznej aktualizacji](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|`UpdateOrder` Właściwość|Określa kolejność poszczególnych insert, update i polecenia delete. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczenia.<br /><br /> Domyślnie `UpdateOrder` ustawiono **InsertUpdateDelete**. Oznacza to, że wstawia, a następnie aktualizuje i usuwa są wykonywane dla wszystkich tabel w zestawie danych. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie kolejności podczas przeprowadzania hierarchicznej aktualizacji](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-

@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d8beee1f52d2fa58862697f569a91afe2bceb39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890572"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647399"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Rekordy Accessrelated  
+## <a name="access-related-records"></a>Dostęp do powiązanych rekordów  
  W przypadku tabel w zestawie danych są powiązane, <xref:System.Data.DataRelation> obiektu można udostępnić powiązanych rekordów w innej tabeli. Na przykład zestaw danych zawierający `Customers` i `Orders` tabele mogą być udostępniane.  
   
  Możesz użyć <xref:System.Data.DataRelation> obiekt do zlokalizowania rekordy pokrewne, wywołując <xref:System.Data.DataRow.GetChildRows%2A> metody <xref:System.Data.DataRow> w tabeli nadrzędnej. Ta metoda zwraca tablicę powiązane rekordy podrzędne. Można też wywołać <xref:System.Data.DataRow.GetParentRow%2A> metody <xref:System.Data.DataRow> w tabeli podrzędnej. Ta metoda zwraca pojedynczą <xref:System.Data.DataRow> z tabeli nadrzędnej.  
@@ -71,7 +71,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
  Ta strona zawiera przykłady użycia typizowanych zestawów danych. Aby dowiedzieć się, jak nawigowanie po relacjach w nietypizowane zbiory danych, zobacz [przejść elementów DataRelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Jeśli pracujesz w aplikacji Windows Forms i przy użyciu funkcji wiązania danych, aby wyświetlić dane, wygenerowany przez projektanta formularzy może zapewnić wystarczającą ilość funkcjonalność dla aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Ściślej mówiąc, zobacz[porady: wyświetlanie powiązanych danych w aplikacji Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) i [wskazówki: wyświetlanie powiązanych danych w formularzu Windows](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Jeśli pracujesz w aplikacji Windows Forms i przy użyciu funkcji wiązania danych, aby wyświetlić dane, wygenerowany przez projektanta formularzy może zapewnić wystarczającą ilość funkcjonalność dla aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  Poniższe przykłady kodu pokazują, jak poruszać się po relacjach w typizowanych zestawów danych. Użyj przykłady kodu wpisane <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) i wygenerowany `FindBy` *PrimaryKey* (`FindByCustomerID`) metody znajdź żądany wiersz i zwracać powiązanych rekordów. Przykłady skompilować i uruchomić się poprawnie, tylko wtedy, gdy masz:  
   
@@ -81,7 +81,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
   
 - Relacji o nazwie `FK_Orders_Customers`dotyczące dwóch tabel dostępnych w zakresie kodu  
   
-  Ponadto obie tabele muszą zostać wypełnione danymi dla rekordów do zwrócenia.  
+Ponadto obie tabele muszą zostać wypełnione danymi dla rekordów do zwrócenia.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Aby powrócić podrzędne rekordy wybrany rekord nadrzędny  
   
@@ -96,4 +96,3 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

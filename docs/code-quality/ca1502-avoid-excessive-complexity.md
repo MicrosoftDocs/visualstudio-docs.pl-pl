@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819306"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740328"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Unikaj nadmiernej złożoności
 
@@ -50,7 +50,7 @@ gdy węzeł reprezentuje Rozgałęzienie logiki i krawędź reprezentuje linię 
 
 Reguły raporty naruszenie zasad, gdy złożoność cyklomatyczna jest więcej niż 25.
 
-Dowiedz się więcej na temat metryk kodu [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Dowiedz się więcej na temat metryk kodu [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -108,4 +108,4 @@ Poniższe przykłady przedstawiają metody, które mają różnej złożoności 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/code-metrics-values.md)

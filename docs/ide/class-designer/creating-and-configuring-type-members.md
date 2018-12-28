@@ -31,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1141c8d54bf545983c89e13ddbf17ffd41e5011
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938802"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684944"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Tworzenie i konfigurowanie składowych typu w Projektancie klas
 
@@ -59,12 +59,12 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 
 |Zadanie|Zawartość pomocnicza|
 |----------| - |
-|**Wprowadzenie:** zanim utworzysz i skonfigurujesz składowe typu, należy otworzyć **szczegóły klasy** okna.|- [Otwieranie okna Szczegóły klasy](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Uwagi dotyczące użycia szczegóły klasy](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Wyświetlanie informacji tylko do odczytu](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Skróty myszy i klawiatury w oknie Diagram klas i szczegóły klasy](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Tworzenie i modyfikowanie składowych typu:** tworzenia nowych elementów członkowskich, modyfikowanie składowych i Dodawanie parametrów do metody przy użyciu **szczegóły klasy** okna.|- [Utwórz członków](creating-and-configuring-type-members.md#create-members)<br />- [Modyfikowanie składowych typu](creating-and-configuring-type-members.md#modify-type-members)<br />- [Dodaj parametry do metod](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Rozpocznij pracę:** Zanim utworzysz i skonfigurujesz składowe typu, należy otworzyć **szczegóły klasy** okna.|- [Otwieranie okna Szczegóły klasy](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Uwagi dotyczące użycia szczegóły klasy](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Wyświetlanie informacji tylko do odczytu](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Skróty myszy i klawiatury w oknie Diagram klas i szczegóły klasy](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Tworzenie i modyfikowanie składowych typu:** Tworzenie nowych elementów członkowskich, modyfikowanie składowych i Dodawanie parametrów do metody przy użyciu **szczegóły klasy** okna.|- [Utwórz członków](creating-and-configuring-type-members.md#create-members)<br />- [Modyfikowanie składowych typu](creating-and-configuring-type-members.md#modify-type-members)<br />- [Dodaj parametry do metod](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Otwieranie okna Szczegóły klasy
 
-Domyślnie **szczegóły klasy** zostanie wyświetlone okno automatycznie po otwarciu nowego diagramu klas. Zobacz [porady: Dodawanie diagramów klas do projektów](how-to-add-class-diagrams-to-projects.md)). Możesz również otworzyć **szczegóły klasy** okna w następujący sposób:
+Domyślnie **szczegóły klasy** zostanie wyświetlone okno automatycznie po otwarciu nowego diagramu klas. Zobacz [jak: Dodawanie diagramów klas do projektów](how-to-add-class-diagrams-to-projects.md)). Możesz również otworzyć **szczegóły klasy** okna w następujący sposób:
 
 - Kliknij prawym przyciskiem myszy w dowolnej klasie na diagramie, aby wyświetlić menu kontekstowe, a następnie wybierz **szczegóły klasy**.
 
@@ -124,7 +124,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
 4.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
 
-     **Uwaga:** skróty klawiaturowe można również użyć do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty myszy i klawiaturowe w diagramie klas i szczegóły klasy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+     **Uwaga:** Skróty klawiaturowe można również użyć do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty myszy i klawiaturowe w diagramie klas i szczegóły klasy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modyfikowanie składowych typu
 
@@ -209,7 +209,7 @@ Wiersze parametrów zawierają następujące elementy:
 
      Ostatni wiersz parametru elementu członkowskiego zawiera tekst **<add parameter>** w **nazwa** komórki. Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-**Właściwości** okno wyświetla te same właściwości parametru wyświetlane w **szczegóły klasy** okna: **nazwa**, **typu**,  **Modyfikator**, **Podsumowanie**, jak również **opcjonalny domyślny** właściwości. Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.
+**Właściwości** okno wyświetla te same właściwości parametru wyświetlane w **szczegóły klasy** okna: **Nazwa**, **typu**, **modyfikator**, **Podsumowanie**, jak również **opcjonalny domyślny** właściwości. Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.
 
 > [!NOTE]
 > Aby dodać parametr do delegata, zobacz [Utwórz członków](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +320,5 @@ Macierzystego kodu C++ nie można edytować za pomocą projektanta klas lub **sz
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wyświetlanie typów i relacji](viewing-types-and-relationships.md)
+- [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)
 - [Refaktoryzacja klas i typów](refactoring-classes-and-types.md)

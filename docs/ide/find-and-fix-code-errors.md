@@ -1,6 +1,6 @@
 ---
-title: Usuń błędy programu i poprawić kod
-description: W tym artykule opisano niektóre podstawowe sposoby Visual Studio ułatwia znajdowanie i rozwiązywanie problemów w kodzie, w tym błędy kompilacji, analizy kodu, narzędzi i testów jednostkowych debugowania.
+title: Napraw błędy programu i poprawienia kodu
+description: W tym artykule opisano niektóre podstawowe sposoby programu Visual Studio może pomóc znajdowania i rozwiązywania problemów w kodzie, w tym błędy kompilacji analizy kodu, narzędzi i testy jednostkowe debugowania.
 ms.date: 05/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,153 +11,153 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065120"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684824"
 ---
-# <a name="make-code-work-in-visual-studio"></a>Wprowadź kod działa w programie Visual Studio
+# <a name="make-code-work-in-visual-studio"></a>Kodu, pracy w programie Visual Studio
 
-Program Visual Studio udostępnia zaawansowany zestaw zintegrowanych kompilacji projektu oraz narzędzia debugowania. W tym artykule Dowiedz się, jak Visual Studio może pomóc w znalezieniu problemów w kodzie za pomocą danych wyjściowych kompilacji analizy kodu, narzędzia debugowania i testów jednostkowych.
+Program Visual Studio zapewnia bogaty zestaw zintegrowanych kompilacja projektu i narzędzi do debugowania. W tym artykule Dowiedz się, jak Visual Studio może pomóc problemów możesz znaleźć w kodzie przy użyciu danych wyjściowych kompilacji analizy kodu, narzędzi do debugowania i testów jednostkowych.
 
-Już znalezienia edytora i utworzyć kodu. Chcesz teraz, upewnij się, że kod działa prawidłowo. W programie Visual Studio, podobnie jak w przypadku większości IDEs są dwie fazy do wprowadzania pracy kodu: tworzenia kod, aby przechwycić i usuń błędy projektu i kompilatora i uruchamiania kod, aby znaleźć błędy środowiska wykonawczego i dynamicznych.
+Po zapewnieniu edytora i utworzony jakiś kod. Teraz chcesz upewnij się, że kod działa poprawnie. W programie Visual Studio, podobnie jak w przypadku większości środowisk IDE, są dwie fazy znaczenie kodu: kod, aby przechwycić i usuń błędy projektu i kompilatora kompilowania i uruchamiania kodu, aby znaleźć błędy czasu wykonywania i dynamicznych.
 
 ## <a name="build-your-code"></a>Tworzenie kodu
 
-Istnieją dwa typy podstawowe konfiguracji kompilacji: **debugowania** i **wersji**. **Debugowania** konfiguracja daje wolniej, większy plik wykonywalny, który umożliwia bardziej zaawansowane funkcje interaktywne środowisko debugowania środowiska wykonawczego. **Debugowania** plik wykonywalny nigdy nie powinny być wysyłane. **Wersji** konfiguracji kompilacje szybsze, zoptymalizowanego pliku wykonywalnego, który jest odpowiedni na potrzeby wysłania (co najmniej z punktu widzenia kompilatora). Domyślna konfiguracja kompilacji jest **debugowania**.
+Istnieją dwa podstawowe rodzaje konfiguracji kompilacji: **Debugowanie** i **wersji**. **Debugowania** konfiguracja daje wolniej, większy plik wykonywalny, który umożliwia bogatszych interaktywne środowisko debugowania środowiska wykonawczego. **Debugowania** plik wykonywalny nigdy nie powinny być wysyłane. **Wersji** konfiguracji kompilacji szybciej i zoptymalizowany plik wykonywalny, który jest odpowiedni do wysłania (co najmniej z punktu widzenia kompilatora). W domyślnej konfiguracji kompilacji **debugowania**.
 
-Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale można również uruchomić kompilacji, wybierając **kompilacji** > **Kompiluj rozwiązanie** z poziomu menu głównego.
+Najprostszym sposobem utworzenia projektu jest naciśnięcie **F7**, ale można również uruchomić kompilację, wybierając **kompilacji** > **Kompiluj rozwiązanie** z menu głównego.
 
-![Opcja menu projektu kompilacji programu Visual Studio](../ide/media/vs_ide_gs_debug_build_menu_item.png)
+![Wybór menu projektu kompilacji programu Visual Studio](../ide/media/vs_ide_gs_debug_build_menu_item.png)
 
-Można obserwować proces kompilacji w **dane wyjściowe** okna w dolnej części interfejsu użytkownika programu Visual Studio. Operacje kompilacji, ostrzeżenia i błędy są wyświetlane tutaj. Jeśli masz błędów (lub w przypadku ostrzeżenia powyżej skonfigurowanego poziomu) kompilacji nie powiedzie się. Możesz kliknąć na błędy i ostrzeżenia, aby przejść do wiersza, w którym wystąpił. Ponownie skompiluj projekt przez albo naciskając klawisz **F7** ponownie (, aby ponownie skompilować tylko pliki z błędami) lub **Ctrl**+**Alt**+**F7**  (dla czystego i pełne ponowne tworzenie).
+Możesz obserwować proces kompilacji w **dane wyjściowe** okna w dolnej części interfejsie użytkownika programu Visual Studio. W tym miejscu są wyświetlane błędy, ostrzeżenia i operacji kompilacji. Jeśli masz błędów (lub w przypadku ostrzeżenia wyższym poziomie skonfigurowany) kompilacja kończy się niepowodzeniem. Możesz kliknąć błędy i ostrzeżenia, aby przejść do wiersza, w którym wystąpiło. Ponownie skompiluj projekt, albo naciskając **F7** ponownie (, aby ponownie skompilować tylko te pliki z błędami) lub **Ctrl**+**Alt**+**F7**  (dla przejrzystości oraz pełną ponowną kompilację).
 
-W oknie wyników poniżej edytorze istnieją dwa okna z kartami: **dane wyjściowe** okna, które zawiera kompilator pierwotnych danych wyjściowych (w tym komunikaty o błędach); i **listy błędów** okna, które zawiera Sortowanie i filtrowanie listy wszystkie błędy i ostrzeżenia.
+Istnieją dwa okien z zakładkami w oknie wyników poniżej edytora: **dane wyjściowe** okno, które zawiera kompilator nieprzetworzonych danych wyjściowych (w tym komunikaty o błędach); i **lista błędów** okno, które zawiera Sortowanie i filtrowanie listę wszystkich błędów i ostrzeżeń.
 
-Gdy kompilacja zakończy się pomyślnie, zobacz wyniki, tak jak poniżej w **dane wyjściowe** okno:
+Jeśli kompilacja zakończy się pomyślnie, zobaczysz wyniki, tak jak poniżej w **dane wyjściowe** okna:
 
-![Visual Studio pomyślnego utworzenia kompilacji w danych wyjściowych](../ide/media/vs_ide_gs_debug_success_build.png)
+![Wyjścia udanej kompilacji usługi Visual Studio](../ide/media/vs_ide_gs_debug_success_build.png)
 
 ## <a name="review-the-error-list"></a>Przejrzyj listę błędów
 
-Jeśli nie dokonano żadnych zmian do kodu, który została wcześniej i pomyślnie skompilowana prawdopodobnie wystąpił błąd. Jeśli jesteś nowym użytkownikiem kodowania, prawdopodobnie partii z nich. Błędy czasami są oczywiste, np. Błąd składniowy prostego lub nieprawidłową nazwę zmiennej, a czasami są trudne do zrozumienia się one niezrozumiałe kod prowadzące. Czyszczący widoku problemy, przejdź do dolnej części kompilacji **dane wyjściowe** okna, a następnie kliknij przycisk **listy błędów** kartę. Przejście do bardziej zorganizowany widok błędów i ostrzeżeń dla projektu i udostępnia pewne dodatkowe opcje.
+O ile nie wprowadzono żadnych modyfikacji kodu, który została wcześniej i pomyślnie skompilowana, prawdopodobnie wystąpił błąd. Jeśli jesteś nowym użytkownikiem kodowania, masz prawdopodobnie wiele z nich. Błędy są czasami oczywiste, takie jak błąd prostą składnię lub nieprawidłowa nazwa zmiennej, a czasami są trudne do zrozumienia, z pozoru kodem przeprowadzenie Cię. Widok oczyszczarki problemów, przejdź do dolnej części kompilacji **dane wyjściowe** okna, a następnie kliknij przycisk **lista błędów** kartę. Przejście do bardziej zorganizowane widoku błędów i ostrzeżeń dotyczących projektu i zapewnia pewne dodatkowe opcje.
 
-![Dane wyjściowe programu Visual Studio i listy błędów](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
+![Dane wyjściowe programu Visual Studio i lista błędów](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Kliknij przycisk błąd w wierszu **listy błędów** okna, aby przejść do wiersza błąd występuje w. (Lub Włącz numery wierszy, klikając w **Szybkie uruchamianie** paska w prawym górnym, wpisując "numerów linii" go, a naciśnięcie przycisku **Enter**. Jest to najszybszy sposób na uzyskanie dostępu do **opcje** okna dialogowego, w którym można włączyć numerów wierszy. Dowiedz się, jak używać **Szybkie uruchamianie** pasek i zaoszczędzić dużo kliknięć interfejsu użytkownika!)
+Kliknij wiersz błędu w **lista błędów** odbywa się w oknie, aby przejść do wiersza błędu. (Lub włączyć numery wierszy, klikając w **Szybkie uruchamianie** paska w prawym górnym rogu, wpisując "numery wierszy" do niego, a następnie naciskając klawisz **Enter**. Jest to najszybszy sposób, aby przejść do **opcje** okna dialogowego, w którym można włączyć numery wierszy. Dowiedz się, jak używać **Szybkie uruchamianie** paska i zaoszczędzić dużo kliknięć interfejsu użytkownika!)
 
-![Visual Studio edytor z numery wierszy](../ide/media/vs_ide_gs_debug_line_numbers.png)
+![Edytor programu Visual Studio z numerami wierszy](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
 ![Opcja numery wiersza w usłudze Visual Studio](../ide/media/vs_ide_gs_debug_options_line_numbers.png)
 
-Naciśnij klawisz **Ctrl**+**G** Aby szybko przejść do numer wiersza, w którym wystąpił błąd.
+Naciśnij klawisz **Ctrl**+**G** można szybko przechodzić do numer wiersza w którym wystąpił błąd.
 
-Błąd jest identyfikowany przez czerwony znak podkreślenia "Zygzakowata". Umieść kursor nad go, aby uzyskać dodatkowe szczegóły. Wprowadzić poprawki i to możliwe, chociaż może powodować nowy błąd z korekty. (Jest to nazywane "regresji").
+Ten błąd jest identyfikowany przez czerwony znak podkreślenia "Zygzakowata". Umieść kursor nad jej, aby uzyskać więcej informacji. Wprowadzić poprawki i jego znikną, chociaż może powodować nowy błąd z korekty. (Jest to nazywane "regresji").
 
-![Visual Studio błędów aktywacji](../ide/media/vs_ide_gs_debug_error_hover1.png)
+![Umieść błąd w usłudze Visual Studio](../ide/media/vs_ide_gs_debug_error_hover1.png)
 
-Przeprowadzenie listy błędów i rozwiąż wszystkie problemy występujące w kodzie.
+Omówimy listę błędów i naprawić wszystkie błędy w kodzie.
 
-![Visual Studio Debugowanie błędów okna](../ide/media/vs_ide_gs_debug_error_list.png)
+![Visual Studio debugować błędy okna](../ide/media/vs_ide_gs_debug_error_list.png)
 
 ### <a name="review-errors-in-detail"></a>Przejrzyj błędy szczegółowe
 
-Wiele błędów mogą nie ma sensu do Ciebie ma inną pisownię, ponieważ są one w kategoriach kompilatora. W takich przypadkach będą potrzebne dodatkowe informacje. Z **listy błędów** okna, możliwość automatycznego wyszukiwania usługi Bing, aby uzyskać więcej informacji na temat błędu lub ostrzeżenia. Kliknij prawym przyciskiem myszy na odpowiednim wpis wierszu, a następnie wybierz **Pokaż błąd pomóc** z menu kontekstowego, lub kliknij wartość kodu błędu Link w **kod** kolumny **listy błędów**.
+Wiele błędów może nie ma sensu dla Ciebie ma inną pisownię, są one w warunkach użytkowania kompilator. W takich przypadkach należy uzyskać dodatkowe informacje. Z **lista błędów** okna, możecie automatyczne wyszukiwanie Bing, aby uzyskać więcej informacji na temat błędu lub ostrzeżenia. Kliknij prawym przyciskiem myszy w odpowiednim wierszu wpis, a następnie wybierz pozycję **Pokaż Pomoc błędu** z menu kontekstowego lub kliknij wartość kodu błędu hiperłącza w **kodu** kolumny **lista błędów**.
 
-![Lista błędów w usłudze Visual Studio wyszukiwania usługi Bing](../ide/media/vs_ide_gs_debug_error_list_error_help.png)
+![Lista błędów w usłudze Visual Studio wyszukiwanie Bing](../ide/media/vs_ide_gs_debug_error_list_error_help.png)
 
-W zależności od ustawień przeglądarki sieci web wyświetla wyniki wyszukiwania dla kodu błędu i tekst albo karty zostanie otwarty w programie Visual Studio i wyświetla wyniki wyszukiwania usługi Bing. Wyniki są z różnych źródeł w Internecie, a nie wszystkie mogą być pomocne.
+W zależności od ustawień przeglądarki sieci web wyświetla wyniki wyszukiwania dla kodu błędu i tekstu albo karcie zostanie otwarta w programie Visual Studio i przedstawiono wyniki wyszukiwania Bing. Wyniki są z różnych źródeł w Internecie, a nie wszystkie dane mogą być pomocne.
 
-## <a name="use-code-analysis"></a>Użycie analizy kodu
+## <a name="use-code-analysis"></a>Użyj analizy kodu
 
-Analizatorów kodu szukać typowe problemy kodu, które może prowadzić do błędów czasu wykonywania lub problemów w kodzie zarządzania.
+Analizatorów kodu szukać typowych problemów z kodu, które mogą prowadzić do błędów czasu wykonywania lub problemy z zarządzania kodem.
 
-### <a name="c-and-visual-basic-code-analysis"></a>Analiza kodu C# i Visual Basic
+### <a name="c-and-visual-basic-code-analysis"></a>C#i analiza kodu języka Visual Basic
 
-Visual Studio 2017 zawiera zestaw wbudowanych [analizatorów platformy kompilatora .NET](../code-quality/roslyn-analyzers-overview.md) który badanie kodu C# i Visual Basic podczas pisania. Można zainstalować dodatkowe analizatorów jako rozszerzenia programu Visual Studio lub pakietu NuGet. W przypadku znalezienia naruszeń zasady są raportowane zarówno w edytorze kodu jako dowolnym kształcie kodem ataku i w **listy błędów**.
+Visual Studio 2017 zawiera zestaw wbudowanych [analizatory platformie kompilatora .NET](../code-quality/roslyn-analyzers-overview.md) , sprawdź C# i kodu języka Visual Basic podczas typu. Można zainstalować dodatkowe analizatorów, jako rozszerzenie programu Visual Studio lub jako pakiet NuGet. Jeśli zostaną znalezione naruszeń zasady, są zgłaszane zarówno w edytorze kodu jako falista pod kodem powodujący problemy, a w **lista błędów**.
 
 ### <a name="c-code-analysis"></a>Analiza kodu C++
 
-Aby przeanalizować kod w języku C++, uruchom [statycznej analizy kodu](../code-quality/quick-start-code-analysis-for-c-cpp.md). Pobierz w celu przejrzenia po zostały wyczyszczone oczywiste błędy, które uniemożliwiają pomyślnego utworzenia kompilacji i zająć trochę czasu w celu rozwiązania ostrzeżeń, które może ona powodować jego uruchomieniem. Zaoszczędzisz samodzielnie niektórych problemów występujących i mogą dowiedzieć się kilka technik styl kodu.
+Do analizowania kodu w języku C++, należy uruchomić [statycznej analizy kodu](../code-quality/quick-start-code-analysis-for-c-cpp.md). Pobierz w celu przejrzenia ją uruchomić, gdy zostały wyczyszczone oczywiste błędów, które zapobiegania pomyślnej kompilacji i zająć trochę czasu, aby rozwiązać ostrzeżeń, które może ona generować. Zaoszczędzisz samodzielnie niektórych problemów występujących i mogą dowiedzieć się kilka technik stylu kodu.
 
-Naciśnij klawisz **Alt**+**F11** (lub wybierz **Analizuj** > **uruchamiania analizy kodu dla rozwiązania** z górnego menu) do Uruchom statycznej analizy kodu.
+Naciśnij klawisz **Alt**+**F11** (lub wybierz **analizy** > **Uruchom analizę kodu dla rozwiązania** z górnego menu) do Rozpocznij statycznej analizy kodu.
 
-![Z menu programu Visual Studio kod — analiza](../ide/media/vs_ide_gs_debug_run_code_analysis.png)
+![Element menu w usłudze Visual Studio Code Analysis](../ide/media/vs_ide_gs_debug_run_code_analysis.png)
 
-Wszelkie nowe lub zaktualizowane ostrzeżenia są wyświetlane w **listy błędów** u dołu IDE. Polecenie ostrzeżenia, aby przejść do nich w kodzie.
+Wszelkie nowe lub zaktualizowane ostrzeżenia są wyświetlane w **lista błędów** karta w dolnej części IDE. Polecenie ostrzeżenia, aby przejść do nich w kodzie.
 
 ![Lista błędów programu Visual Studio z ostrzeżeniami](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Użyj żarówki do naprawienia lub zrefaktoryzuj kod
+## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Użyj żarówki, aby naprawić lub refaktoryzacji kodu
 
-[Szybkie akcje](../ide/quick-actions.md), dostępne z żarówkę lub ikonę śrubokręt let Refaktoryzuj wbudowanego kodu. Są one łatwe rozwiązać typowe ostrzeżenia szybkie i skuteczne w kodzie C#, C++ i Visual Basic. Aby uzyskiwać do nich dostęp, kliknij prawym przyciskiem myszy na wężyk ostrzeżenie i wybierz **szybkie akcje i refaktoryzacje**. Lub, gdy kursor znajduje się w wierszu kolorowe wężyk, naciśnij klawisz **Ctrl**+**.** lub wybierz żarówkę lub ikonę śrubokręt na marginesie. Zobaczysz listę możliwych poprawki lub refaktoryzacje, które można zastosować do wiersza kodu.
+[Szybkie akcje](../ide/quick-actions.md), która jest dostępna z żarówkę lub ikonę śrubokręt Pozwól, Refaktoryzuj kod inline. Są one prosty sposób, aby rozwiązać typowe ostrzeżenia szybko i skutecznie w C#, C++ i Visual Basic code. Aby uzyskać do nich dostęp, kliknij prawym przyciskiem myszy na wężyk ostrzeżenie, a następnie wybierz **szybkie akcje i refaktoryzacje**. Lub, jeśli kursor znajduje się na wiersz z kolorowym wężyk, naciśnij klawisze **Ctrl**+**.** lub wybierz żarówkę lub śrubokręt ikonę na marginesie. Zobaczysz listę możliwych poprawki lub refaktoryzacji, które można zastosować do tego wiersza kodu.
 
-![Visual Studio żarówki podglądu](../ide/media/quick-actions-options.png)
+![Visual Studio żarówka — Podgląd](../ide/media/quick-actions-options.png)
 
-Szybkie akcje można tam, gdzie analizatorów kodu określić istnieje możliwość napraw zrefaktoryzuj, lub zwiększyć kodu. Kliknij w każdym wierszu kodu, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe i wybierz **szybkie akcje i refaktoryzacje**. Jeśli dostępne są opcje refaktoryzacji lub poprawy jakości, zostaną one wyświetlone. W przeciwnym razie komunikat **tutaj dostępne nie szybkie akcje** wyświetla w lewym dolnym rogu IDE.
+Szybkie akcje może służyć wszędzie tam, gdzie określić analizatorów kodu, jest możliwość rozwiązać problem, Refaktoryzacja, lub poprawić kod. Kliknij pozycję w każdym wierszu kodu, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe i wybierz **szybkie akcje i refaktoryzacje**. Jeśli opcje refaktoryzacji i poprawy jakości obsługi są dostępne, zostaną one wyświetlone. W przeciwnym razie komunikat **nie tutaj dostępne szybkie akcje** wyświetlane w lewym dolnym rogu IDE.
 
-![Brak dostępnych tekstu szybkie akcje](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Brak tekstu dostępne szybkie akcje](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Z obsługą, można szybko użyj klawiszy strzałek i **Ctrl**+**.** Aby sprawdzić możliwości refaktoryzacji łatwe i czyszczenie kodu!
+Za pomocą środowiska, możesz za pomocą klawiszy strzałek oraz **Ctrl**+**.** Aby sprawdzić, czy są dostępne możliwości refaktoryzacji łatwe i wyczyścić kod!
 
-## <a name="debug-your-running-code"></a>Debugowanie kodu uruchomione
+## <a name="debug-your-running-code"></a>Debugowanie kodu uruchomionego
 
-Teraz, gdy został pomyślnie skompilowany kod i wykonać nieco oczyszczanie, uruchom go przez naciśnięcie przycisku **F5** lub wybierając **debugowania** > **Rozpocznij debugowanie**. Spowoduje to uruchomienie aplikacji w środowisku debugowania, można zaobserwować jego zachowanie szczegółowo. Środowiska IDE programu Visual Studio zmian w uruchomionej aplikacji: **dane wyjściowe** okno zostało zastąpione przez dwa nowe (w oknie Konfiguracja domyślna), **automatycznych/zmienne lokalne/oglądanie** kartach okna i **Wywołać/punktów przerwania/wyjątek witryny Stack ustawienia/wyjścia** okno z kartami. Te okna, ma wiele kart, które można sprawdzić i oceny zmiennych aplikacji, wątki stosy wywołań i różnych innych zachowań podczas jego wykonywania.
+Teraz, po pomyślnym utworzeniu kodu i wykonać nieco czyszczenia, uruchom ją, naciskając klawisz **F5** lub wybierając **debugowania** > **Rozpocznij debugowanie**. Spowoduje to uruchomienie aplikacji w środowisku debugowania, dzięki czemu możesz obserwować jego zachowanie szczegółowo. Środowiska IDE programu Visual Studio zmienia się po uruchomieniu aplikacji: **dane wyjściowe** okna zastępuje dwóch nowych komentarzy (w oknie Konfiguracja domyślna), **Autos/zmienne lokalne/Obejrzyj** z zakładkami, okna i **Wywołanie wyjątku-stosu/punktów przerwania ustawienia/Output** okien z kartami. Te okna mają wiele kart, które pozwalają na sprawdzanie i ocenić zmienne Twojej aplikacji, wątki, stosy wywołań i różnych innych zachowań, ponieważ działa.
 
-![Automatycznych programu Visual Studio i Windows stosu wywołań](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
+![Automatyczne programu Visual Studio i Windows stosu wywołań](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
 Zatrzymaj aplikację, naciskając klawisz **Shift**+**F5** lub przez kliknięcie przycisku **zatrzymać** przycisku. Alternatywnie możesz po prostu zamknąć główne okno aplikacji (lub okno wiersza polecenia).
 
-Jeśli kod został uruchomiony idealnie i dokładnie jako oczekiwane, Gratulacje! Jednak jeśli zawiesił, lub awaria lub udostępniła Ci pewnych wyników dziwne, należy odnaleźć źródła tych problemów i napraw błędy.
+Jeżeli kod działa bez zarzutu i dokładnie tak jak oczekiwano, Gratulacje! Jednak jeśli nieuruchamianie lub uległ awarii lub udostępniła Ci niektóre dziwne wyniki, należy znaleźć źródło tych problemów i naprawiania błędów.
 
-### <a name="set-simple-breakpoints"></a>Ustaw punkty przerwania proste
+### <a name="set-simple-breakpoints"></a>Ustawianie punktów przerwania prosty
 
-[Punkty przerwania](../debugger/using-breakpoints.md) są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio należy zawiesić kodu uruchomionej, aby móc przeglądać wartości zmiennych, ani zachowanie pamięci lub czy jest pobieranie uruchamiana gałąź kodu. Nie ma potrzeby Odbuduj projekt po ustawiania i usuwania punktów przerwania.
+[Punkty przerwania](../debugger/using-breakpoints.md) są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu. Nie trzeba ponownie skompiluj projekt po ustawiania i usuwania punktów przerwania.
 
-Ustaw punkt przerwania, klikając na marginesie daleko wiersza miejscu podziału wystąpienia lub naciśnij klawisz **F9** można ustawić punktu przerwania w bieżącym wierszu kodu. Po uruchomieniu kodu wstrzyma (lub *podziału*) przed wykonaniem instrukcji ten wiersz kodu.
+Ustaw punkt przerwania, klikając w końcu margines linii, na którym ma podziału wystąpienia lub naciśnij **F9** ustawiany jest punkt przerwania w bieżącym wierszu kodu. Podczas uruchamiania kodu spowoduje wstrzymanie (lub *podziału*) przed wykonywane są instrukcje dotyczące ten wiersz kodu.
 
-![Visual Studio punktu przerwania.](../ide/media/vs_ide_gs_debug_breakpoint1.png)
+![Visual Studio punktu przerwania](../ide/media/vs_ide_gs_debug_breakpoint1.png)
 
 Najczęstsze zastosowania dla punktów przerwania obejmują:
 
-- Aby zawęzić źródło awarię lub zawieszenie, wykres punktowy punktów przerwania w całym i wokół kod wywołania metody, które zdaniem użytkownika powoduje awarię. W momencie uruchamiania kodu w debugerze Usuń, a następnie zresetować punktów przerwania bliżej razem do momentu znalezienia ataku wiersz kodu. Zobacz następną sekcję, aby dowiedzieć się, jak uruchamianie kodu w debugerze.
+- Aby zawęzić źródło awarię lub zawieszenie, wykres punktowy punktów przerwania w całej i wokół kodu wywołania metody, które Twoim zdaniem jest przyczyną błędu. Podczas wykonywania kodu w debugerze Usuń, a następnie zresetować punktów przerwania bliżej razem do momentu znalezienia naruszającym wierszem kodu. Zobacz następną sekcję, aby dowiedzieć się, jak uruchamiać kod w debugerze.
 
-- Podczas wprowadzania nowy kod, ustaw punkt przerwania na początku, a następnie uruchom kod, aby upewnić się, że zachowuje się zgodnie z oczekiwaniami.
+- Po wprowadzeniu nowego kodu, ustaw punkt przerwania na początku, a następnie uruchom kod, aby upewnić się, że zachowuje się zgodnie z oczekiwaniami.
 
-- Jeśli zostały zaimplementowane skomplikowane zachowanie, ustaw punkty przerwania algorytmicznego kodu, więc możesz sprawdzić wartości zmiennych i danych, gdy program dzieli.
+- Jeśli zastało zaimplementowane skomplikowane zachowanie, ustaw punkty przerwania w konsolidatorze kodu, dzięki czemu można sprawdzić wartości zmiennych i danych, kiedy program przerywa.
 
-- Jeśli pisania kodu języka C lub C++ Użyj punktów przerwania, aby zatrzymać kod, więc można zbadać wartości adresów (poszukaj NULL) oraz liczby odwołań podczas debugowania dla błędów związanych z pamięcią.
+- Jeśli piszesz kod C lub C++, użyj punktów przerwania, aby zatrzymać wykonywanie kodu, dzięki czemu można sprawdzić wartości adresów (Zwróć uwagę na wartość NULL) i liczby odwołań podczas debugowania błędów związanych z pamięcią.
 
-Aby uzyskać więcej informacji na temat używania punktów przerwania odczytu [używanie punktów przerwania](../debugger/using-breakpoints.md).
+Aby uzyskać więcej informacji na temat używania punktów przerwania, przeczytaj [używanie punktów przerwania](../debugger/using-breakpoints.md).
 
-### <a name="inspect-your-code-at-run-time"></a>Sprawdź kod w czasie wykonywania
+### <a name="inspect-your-code-at-run-time"></a>Sprawdzanie kodu w czasie wykonywania
 
-Po kodzie uruchomionych trafienia punktu przerwania i wstrzymuje działanie, wiersz kodu oznaczone kolorem żółtym (bieżącej instrukcji) nie ma jeszcze wykonane. W tym momencie można wykonać bieżącej instrukcji, a następnie sprawdź zmienionymi wartościami. Można użyć kilku *krok* poleceń do wykonania kodu w debugerze. Kod oznaczone w przypadku wywołania metody, można krok do niego, naciskając **F11**. Możesz również *Przekrocz nad* wiersz kodu, naciskając klawisz **F10**. Aby uzyskać dodatkowe polecenia i szczegółowe informacje na temat krokowo kodu, przeczytaj [Przejdź kodu za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
+Kiedy uruchomiony kod uderza w punkt przerwania i wstrzymuje, wiersz kodu oznaczone kolorem żółtym (bieżąca instrukcja) nie ma jeszcze wykonane. W tym momencie można wykonać bieżącej instrukcji, a następnie sprawdź zmienionymi wartościami. Można użyć kilku *kroku* poleceń do wykonania kodu w debugerze. Oznaczone kodu w przypadku wywołania metody, można było do niego przejść, naciskając klawisz **F11**. Możesz również *Przekrocz nad* wiersza kodu, naciskając klawisz **F10**. Aby uzyskać dodatkowe polecenia i szczegółowe informacje na temat przejść przez kod, przeczytaj [Przechodzenie do kodu z debugerem](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Visual Studio wartość czasu wykonywania inspekcji](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Inspekcja wartości czasu wykonywania w usłudze Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
-Na powyższej ilustracji, można odtwarzać instrukcja debugera jeden naciskając albo **F10** lub **F11** (ponieważ nie Brak wywołania metody, zarówno polecenia mają ten sam rezultat).
+Na poprzedniej ilustracji, można odtwarzać instrukcja debugera jeden, naciskając klawisz albo **F10** lub **F11** (ponieważ brak wywołania metody, oba polecenia mają ten sam wynik).
 
-Gdy debuger jest wstrzymana, można sprawdzić zmiennych i stosy, aby określić, co się dzieje wywołań. Czy wartości w zakresach, które chcesz wyświetlić? Są wykonywane w odpowiedniej kolejności wywołań?
+Gdy debuger jest wstrzymany, można sprawdzić zmiennych i Wywołaj stosy, aby ustalić, co się dzieje. Są wartości z zakresów, które powinny być widoczne? Są wykonywane w odpowiedniej kolejności wywołań?
 
-![Visual Studio wartość czasu wykonywania inspekcji](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Inspekcja wartości czasu wykonywania w usłudze Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Umieść kursor nad zmiennej, aby zobaczyć jego bieżącej wartości i odwołań. Jeśli widzisz wartość, która Nieoczekiwane wyrażenie prawdopodobnie usterki w poprzednim lub wywołującego kodu. Aby uzyskać więcej szczegółowych informacji debugowania [więcej](../debugger/getting-started-with-the-debugger.md) o korzystanie z debugera.
+Umieść kursor nad zmiennej, aby zobaczyć jego bieżąca wartość i odwołania. Jeśli widzisz wartość, którą Nieoczekiwane wyrażenie, prawdopodobnie masz usterki na poprzednim lub wywoływania w kodzie. Aby uzyskać więcej szczegółowych informacji debugowania [więcej](../debugger/debugger-feature-tour.md) o korzystaniu z debugera.
 
-Ponadto Wyświetla Visual Studio **narzędzia diagnostyczne** okna, w którym można obserwować użycia Procesora i pamięci aplikacji w czasie. Później podczas programowania aplikacji można użyć tych narzędzi do wyszukania nieprzewidziane duże obciążenie lub pamięci alokacji Procesora. Używany w połączeniu z **czujki** okno i punktów przerwania, aby określić przyczynę nieoczekiwany duże obciążenie lub Publikuj zasobów. Aby uzyskać więcej informacji, zobacz [profilowania samouczek funkcji](../profiling/profiling-feature-tour.md).
+Ponadto, Visual Studio Wyświetla **narzędzia diagnostyczne** okna, w którym można obserwować wykorzystanie Procesora i pamięci aplikacji wraz z upływem czasu. W dalszej części Tworzenie aplikacji można użyć tych narzędzi do wyszukania nieprzewidziane duże obciążenie lub pamięć alokacji Procesora. Używane w połączeniu z **Obejrzyj** okien i punkty przerwania, aby sprawdzić, co powoduje nieoczekiwany duże obciążenie lub niewydany zasobów. Aby uzyskać więcej informacji, zobacz [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md).
 
-## <a name="run-unit-tests"></a>Uruchom testy jednostkowe
+## <a name="run-unit-tests"></a>Uruchamianie testów jednostkowych
 
-Testy jednostkowe są pierwszą linię obrony przed usterki kodu, ponieważ, jeśli zostaną prawidłowo wykonane, przetestować jeden kod, zwykle jednej funkcji "jednostki" i są łatwiejsze do debugowania niż pełne programu. Visual Studio instaluje struktur testowania jednostki firmy Microsoft dla kodu zarządzane i natywne. Do tworzenia testów jednostkowych, uruchom je i raportuje o wynikach tych testów, należy użyć framework testowania jednostki. Testów jednostkowych Uruchom ponownie po wprowadzeniu zmian, aby sprawdzić, czy kod nadal działa poprawnie. Za pomocą programu Visual Studio Enterprise edition można automatycznie uruchomić testy po każdej kompilacji.
+Testy jednostkowe są Twoje pierwszą linią obrony przed usterki kodu, ponieważ, jeśli zostaną prawidłowo wykonane, test pojedynczego "jednostka" kodu, zazwyczaj jednej funkcji i są łatwiejsze do debugowania niż pełny program. Program Visual Studio instaluje struktur testowania jednostek pochodzących od firmy Microsoft dla kodu zarządzanego i natywnego. Testowania jednostkowego umożliwia tworzenie testów jednostkowych, uruchamiaj je i raportuje o wynikach tych testów. Jednostka ponownie uruchom testy po wprowadzeniu zmian, aby sprawdzić, czy kod nadal działa poprawnie. Za pomocą programu Visual Studio Enterprise edition można uruchomić testy automatyczne po każdej kompilacji.
 
-Aby rozpocząć, przeczytaj [Generowanie testów jednostek dla kodu za pomocą IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Aby rozpocząć pracę, przeczytaj [Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
-Aby dowiedzieć się więcej na temat testów jednostkowych w Visual Studio i sposób ich mogą pomóc tworzyć lepsze jakości kodu, przeczytaj [testu jednostkowego podstawy](../test/unit-test-basics.md).
+Aby dowiedzieć się więcej na temat testów jednostkowych w programie Visual Studio i jak mogą one pomóc tworzyć lepszy kod jakości, przeczytaj [podstawy testów jednostkowych](../test/unit-test-basics.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
-- [Dowiedz się więcej o korzystaniu z debugera](../debugger/getting-started-with-the-debugger.md)
-- [Generowanie i napraw kodu](../ide/code-generation-in-visual-studio.md)
+- [Dowiedz się więcej na temat używania debugera](../debugger/debugger-feature-tour.md)
+- [Generowanie i naprawianie kodu](../ide/code-generation-in-visual-studio.md)

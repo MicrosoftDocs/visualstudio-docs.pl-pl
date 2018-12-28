@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1695a23ba9dddc27a37f23c714678fe6b779d328
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 55561d570605cfd5690fc0459444b2fbadeca51a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676383"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684811"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Właściwości MsBuild obsługiwane przez program SharePoint
   Wszelkie [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości zdefiniowane w pliku, plik projektu lub pliku użytkownika projektu Microsoft.VisualStudio.SharePoint.targets mogą być używane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów programu SharePoint. Oprócz typowe [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości dostarczonych przez projekt programu SharePoint definiuje dodatkowe właściwości, które są specyficzne dla projektów programu SharePoint.  
@@ -57,5 +57,5 @@ ms.locfileid: "35676383"
 >  Można użyć dowolnego [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] składni zmiennych `$(` *propertyName* `)` lub składni zmiennych środowiskowych `%` *propertyName* `%` Aby określić właściwości.  
   
 ## <a name="see-also"></a>Zobacz także
- [Odwołanie do narzędzia MSBuild](/visualstudio/msbuild/msbuild-reference)  
-  
+
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  

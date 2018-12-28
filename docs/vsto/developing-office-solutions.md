@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 - solutions [Office development in Visual Studio], developing
 - Office solutions [Office development in Visual Studio], developing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a95c5f5767e227c35763cfaea1e3619093fffda3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833073"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648855"
 ---
 # <a name="develop-office-solutions"></a>Opracowywania rozwiązań pakietu Office
   Po Projektowanie projektu przy użyciu narzędzi Office developer tools w programie Visual Studio i konfigurowanie plików projektu, możesz rozpocząć koncentrować się na realizacji kodu i niestandardowego interfejsu użytkownika (UI).  
@@ -63,14 +63,14 @@ ms.locfileid: "49833073"
 |[Ułatwienia dostępu w projektach pakietu Office](../vsto/accessibility-in-office-projects.md)|Opisuje funkcje ułatwień dostępu, które są dostępne w rozwiązaniach pakietu Office.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [Porady: Odczyt z i zapisu do właściwości dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)   
- [Porady: docelowy Office wielojęzyczny interfejs użytkownika](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)   
+ [Instrukcje: Odczytywanie i zapisywanie właściwości dokumentów](../vsto/how-to-read-from-and-write-to-document-properties.md)   
+ [Instrukcje: Docelowy urząd wielojęzyczny interfejs użytkownika](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
  [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
- [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
+ [Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
  [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
- [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
+ [Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
  [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   

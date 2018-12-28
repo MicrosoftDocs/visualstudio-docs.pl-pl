@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080611"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804068"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Zdarzenia buforu tekstu w starszej wersji interfejsu API
 Obiekt buforu tekstu emituje szereg różnych zdarzeń, które umożliwiają reagowanie na różnych sytuacjach.  
   
- Jeśli używasz starszej wersji interfejsu API, należy zaimplementować następujące interfejsy w celu otrzymywania powiadomień o zmianach w buforze tekstu. Uwidacznia interfejsów do buforu tekstu przy użyciu `IConnectionPointContainer` interfejsu w buforze tekstu, aby otrzymać powiadomienie o wiersz zmieni się z buforu. Aby uzyskać więcej informacji, zobacz [porady: rejestrowanie zdarzeń buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). W przypadku właściwości `IVsTextStreamEvents` lub `IVsTextLinesEvents` interfejsów, zmiany są zwracane w albo jednego lub dwu dimensional współrzędne, odpowiednio.  
+ Jeśli używasz starszej wersji interfejsu API, należy zaimplementować następujące interfejsy w celu otrzymywania powiadomień o zmianach w buforze tekstu. Uwidacznia interfejsów do buforu tekstu przy użyciu `IConnectionPointContainer` interfejsu w buforze tekstu, aby otrzymać powiadomienie o wiersz zmieni się z buforu. Aby uzyskać więcej informacji, zobacz [jak: Zarejestruj się, aby zdarzenia buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). W przypadku właściwości `IVsTextStreamEvents` lub `IVsTextLinesEvents` interfejsów, zmiany są zwracane w albo jednego lub dwu dimensional współrzędne, odpowiednio.  
   
 ## <a name="text-buffer-interfaces"></a>Interfejsy buforu tekstu  
  Poniżej przedstawiono interfejsy implementowane przez obiekt buforu tekstu.  
@@ -53,4 +53,6 @@ Obiekt buforu tekstu emituje szereg różnych zdarzeń, które umożliwiają rea
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Powiadamia klientów o ostatnim gestu zatwierdzenia, aby wyzwolić zdarzenie i oferuje zakres zmiany tekstu. `IVsFinalTextChangeCommitEvents` Interfejsu nie jest uruchamiany w odpowiedzi na cofanie lub ponowne wykonywanie poleceń. Zdarzenia wyzwalać tylko dla buforów, które mają menedżera cofania. `IVsFinalTextChangeCommitEvents` jest przeznaczony do użytku tylko przez usługi w języka lub inne obiekty, które mają pełną kontrolę nad edytowaniem. Usługi pakietu VSPackage należy monitorować, albo `IVsPreliminaryTextChangeCommitEvents` interfejsu lub `IVsFinalTextChangeCommitEvents` interfejs, ale nie oba.|  
   
 ## <a name="see-also"></a>Zobacz także
- [Dostęp do buforu tekstowego przy użyciu starszej wersji interfejsu API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [porady: rejestrowanie zdarzeń buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+
+- [Dostęp do buforu tekstowego przy użyciu starszej wersji interfejsu API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)
+- [Instrukcje: Zarejestruj się, aby zdarzenia buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 85adcf5cc0bddf6d023eb2043181ebc33a7935cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219721"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648392"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są:  
   
--   Dostęp do przykładowej bazy danych Northwind. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+-   Dostęp do przykładowej bazy danych Northwind.
   
 ## <a name="create-a-windows-application"></a>Tworzenie aplikacji Windows  
  Pierwszym krokiem jest utworzenie **aplikacji Windows**.  
@@ -66,7 +66,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
      **TableAdapterDbDirectMethodsWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Utwórz źródło danych z bazy danych  
- Ten krok używa **Kreatora konfiguracji źródła danych** można utworzyć źródła danych, na podstawie `Region` tabeli w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/how-to-install-sample-databases.md).  
+ Ten krok używa **Kreatora konfiguracji źródła danych** można utworzyć źródła danych, na podstawie `Region` tabeli w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia.
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
@@ -101,7 +101,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 -   Przeciągnij główny **Region** węzła z **źródeł danych** okna na formularzu.  
   
-     A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [RegionTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
+     A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), RegionTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
 #### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Aby dodać przyciski, który będzie wybierany poszczególnych TableAdapter dbdirect — metody  
   
@@ -157,10 +157,9 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza powiązanych z danymi. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:  
   
--   Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [porady: dodawanie zapytań parametrycznych do aplikacji Windows Forms](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+-   Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Dodawanie dodatkowych tabel do zestawu danych, wybierając **Konfigurowanie zestawu danych za pomocą kreatora** z poziomu **źródeł danych** okna. Można dodawać formanty, które wyświetlają pokrewne dane, przeciągając pokrewne węzły na formularzu. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie powiązanych danych w aplikacji Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+-   Dodawanie dodatkowych tabel do zestawu danych, wybierając **Konfigurowanie zestawu danych za pomocą kreatora** z poziomu **źródeł danych** okna. Można dodawać formanty, które wyświetlają pokrewne dane, przeciągając pokrewne węzły na formularzu. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-

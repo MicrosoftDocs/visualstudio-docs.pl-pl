@@ -27,12 +27,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d49806ff4925dfb1eab978c08bf1111c503e14a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891131"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647908"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
  Możesz potwierdzić, że dane, które są zapisywane do zestawu danych jest prawidłowy, tworząc sprawdzanie poprawności do zestawu danych. Zestaw danych można sprawdzić dane, niezależnie od tego, jak jest wykonywana aktualizacja — czy bezpośrednio przez kontrolek w formularzu w składniku lub w inny sposób. Ponieważ zestaw danych jest częścią Twojej aplikacji (w przeciwieństwie do bazy danych zaplecza), jest logiczne miejsce do kompilacji sprawdzania poprawności specyficznych dla aplikacji.  
   
- Jest najlepszym miejscem, aby dodać sprawdzanie poprawności do aplikacji w pliku częściowej klasy zestawu danych. W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../includes/csprcs-md.md)], otwórz **Projektanta obiektów Dataset** i dwukrotnie kliknij kolumny lub tabeli, dla której chcesz utworzyć sprawdzania poprawności. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> programu obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) lub [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Aby uzyskać kompletny przykład, zobacz [wskazówki: Dodawanie sprawdzania poprawności do zestawu danych](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
+ Jest najlepszym miejscem, aby dodać sprawdzanie poprawności do aplikacji w pliku częściowej klasy zestawu danych. W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../includes/csprcs-md.md)], otwórz **Projektanta obiektów Dataset** i dwukrotnie kliknij kolumny lub tabeli, dla której chcesz utworzyć sprawdzania poprawności. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> programu obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) lub [jak: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Aby uzyskać kompletny przykład, zobacz [instruktażu: Dodawanie walidacji do zestawu danych](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
   
 ## <a name="validate-data"></a>Sprawdzanie poprawności danych  
  Sprawdzanie poprawności w zestawie danych może się odbywać w następujący sposób:  
   
-- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany.  Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany.  Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 - Tworząc klucze, ograniczenia unikatowe, i tak dalej jako część definicji rzeczywiste schemat zestawu danych. Aby uzyskać więcej informacji o dołączaniu sprawdzania poprawności do definicji schematu, zobacz [ograniczając DataColumn zawiera unikatowe wartości](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
@@ -57,9 +57,9 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
   Kilka zdarzeń są inicjowane przez <xref:System.Data.DataTable> obiektu, kiedy zmiana odbywa się w rekordzie:  
   
-- <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia są wywoływane podczas i po każdej zmianie do poszczególnych kolumn. <xref:System.Data.DataTable.ColumnChanging> Zdarzeń jest przydatne w przypadku, gdy chcesz zweryfikować zmiany w określonych kolumnach. Informacje o proponowana zmiana jest przekazywany jako argument ze zdarzeniem. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia są wywoływane podczas i po każdej zmianie do poszczególnych kolumn. <xref:System.Data.DataTable.ColumnChanging> Zdarzeń jest przydatne w przypadku, gdy chcesz zweryfikować zmiany w określonych kolumnach. Informacje o proponowana zmiana jest przekazywany jako argument ze zdarzeniem. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane podczas i po każdym zmianę w wierszu. <xref:System.Data.DataTable.RowChanging> Zdarzeń jest bardziej ogólny. Oznacza, że zmiany występuje gdzieś w wierszu, ale nie wiesz, która kolumna została zmieniona. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane podczas i po każdym zmianę w wierszu. <xref:System.Data.DataTable.RowChanging> Zdarzeń jest bardziej ogólny. Oznacza, że zmiany występuje gdzieś w wierszu, ale nie wiesz, która kolumna została zmieniona. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
   Domyślnie każda zmiana z kolumną w związku z tym wywołuje cztery zdarzenia. Pierwsza to <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia dla określonej kolumny, która jest zmieniany. Następnie są <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia. Jeśli wiersz wprowadzono wiele zmian, zdarzenia zostanie wygenerowany dla każdej zmiany.  
   
@@ -100,14 +100,14 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 - Opcjonalnie użyć <xref:System.Windows.Forms.ErrorProvider> formantu, aby wyświetlić komunikat o błędzie dla użytkownika. Aby uzyskać więcej informacji, zobacz [ErrorProvider, składnik](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
-  Można również wykonać sprawdzanie poprawności podczas <xref:System.Data.DataTable.RowChanging> zdarzeń. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  Można również wykonać sprawdzanie poprawności podczas <xref:System.Data.DataTable.RowChanging> zdarzeń. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach  
  Można napisać kod, aby sprawdzić, czy każda kolumny, której chcesz sprawdzić zawiera dane, które spełniają wymagania aplikacji. To zrobić, ustawiając kolumny, aby wskazać, że zawiera błąd, jeżeli proponowana wartość jest nieakceptowana. W następujących przykładach ustawiona jest błąd kolumny gdy `Quantity` kolumna jest mniejsza lub równa 0. Programy obsługi zdarzeń zmiany wiersza powinien przypominać poniższe przykłady.  
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Do sprawdzania poprawności danych, gdy wiersz zmieni (Visual Basic)  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [porady: otwieranie zestawu w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.RowChanging> program obsługi zdarzeń <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.  
   
@@ -118,7 +118,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Aby sprawdzić poprawność danych, gdy wiersz zmieni (C#)  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [porady: otwieranie zestawu w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja tworzy plik częściowy klasy dla <xref:System.Data.DataTable>.  
   
@@ -148,7 +148,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
     ```  
   
 ## <a name="to-retrieve-changed-rows"></a>Pobieranie zmienionych wierszy  
- Każdy wiersz w tabeli danych ma <xref:System.Data.DataRow.RowState%2A> właściwość, która przechowuje informacje o bieżący stan tego wiersza przy użyciu wartości w <xref:System.Data.DataRowState> wyliczenia. Może zwrócić zmienionych wierszy z tabeli zestawu danych lub dane, wywołując `GetChanges` metody <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>. Możesz sprawdzić, czy istnieją zmiany przed wywołaniem `GetChanges` przez wywołanie metody <xref:System.Data.DataSet.HasChanges%2A> metoda zestawu danych. Aby uzyskać więcej informacji na temat <xref:System.Data.DataSet.HasChanges%2A>, zobacz [jak: Sprawdź, czy są zmienione wiersze](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
+ Każdy wiersz w tabeli danych ma <xref:System.Data.DataRow.RowState%2A> właściwość, która przechowuje informacje o bieżący stan tego wiersza przy użyciu wartości w <xref:System.Data.DataRowState> wyliczenia. Może zwrócić zmienionych wierszy z tabeli zestawu danych lub dane, wywołując `GetChanges` metody <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>. Możesz sprawdzić, czy istnieją zmiany przed wywołaniem `GetChanges` przez wywołanie metody <xref:System.Data.DataSet.HasChanges%2A> metoda zestawu danych. Aby uzyskać więcej informacji na temat <xref:System.Data.DataSet.HasChanges%2A>, zobacz [jak: Wyszukiwanie zmienionych wierszy](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
 >  Po zatwierdzeniu zmiany do zestawu danych lub danych tabeli (przez wywołanie metody <xref:System.Data.DataSet.AcceptChanges%2A> metoda), `GetChanges` metoda nie zwraca żadnych danych. Jeśli Twoja aplikacja potrzebuje do przetwarzania zmienionych wierszy, musisz przetwarzać zmiany przed wywołaniem `AcceptChanges` metody.  
@@ -217,9 +217,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
      [!code-csharp[VbRaddataEditing#22](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#22)]
      [!code-vb[VbRaddataEditing#22](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#22)]  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie i edytowanie wpisanych zestawów danych](../data-tools/creating-and-editing-typed-datasets.md)   
- [Porady: łączenie z danymi w bazie danych](../data-tools/how-to-connect-to-data-in-a-database.md)   
- [Porady: Sprawdzanie poprawności danych w kontrolce DataGridView formularzy Windows Forms](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
- [Instrukcje: wyświetlanie ikon błędów dotyczących weryfikacji formularza za pomocą składnika ErrorProvider formularzy Windows Forms](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)
+## <a name="see-also"></a>Zobacz także
 
+- [Instrukcje: Sprawdzanie poprawności danych w kontrolce DataGridView formularzy Windows Forms](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
+- [Instrukcje: Wyświetlanie ikon błędów weryfikacji formularza za pomocą składnika ErrorProvider formularzy Windows](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)

@@ -14,16 +14,17 @@ ms.tgt_pltfrm: na
 ms.workload: multiple
 ms.date: 06/08/2016
 ms.author: mlearned
-ms.openlocfilehash: b409c280999ee08705028695b0447adce1ac1850
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 01b7d2a8fa0ea496966e9c19caf1dcfb9d29543f
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673789"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738166"
 ---
-# <a name="configure-a-docker-host-with-virtualbox"></a>Konfigurowanie hosta platformy Docker przy użyciu VirtualBox
+# <a name="configure-a-docker-host-with-virtualbox"></a>Konfigurowanie hosta platformy Docker przy użyciu rozwiązania VirtualBox
 ## <a name="overview"></a>Omówienie
-Ten artykuł przeprowadzi Cię przez Konfigurowanie domyślnego wystąpienia platformy Docker przy użyciu maszyny platformy Docker i VirtualBox. Jeśli używasz [Docker for Windows](https://www.docker.com/products/docker-desktop), ta konfiguracja nie jest konieczne.
+Ten artykuł przeprowadzi Cię przez Konfigurowanie domyślnego wystąpienia platformy Docker przy użyciu maszyny platformy Docker i VirtualBox.
+Jeśli używasz [Docker for Windows](https://www.docker.com/products/docker-desktop), ta konfiguracja nie jest konieczne.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 Następujące narzędzia muszą być zainstalowane.
@@ -34,35 +35,30 @@ Następujące narzędzia muszą być zainstalowane.
 Aby skonfigurować klienta platformy Docker, po prostu otwórz program Windows PowerShell i wykonaj następujące czynności:
 
 1. Tworzenie hosta platformy docker domyślnego wystąpienia.
-   
+
     ```PowerShell
     docker-machine create --driver virtualbox default
     ```
 2. Sprawdź, czy wystąpienie domyślne to skonfigurowany i uruchomiony. (Powinna być widoczna wystąpienia o nazwie "default" systemem.
-   
+
     ```PowerShell
-    docker-machine ls 
+    docker-machine ls
     ```
-   
-    ![dane wyjściowe ls maszyny platformy docker][0]
+
+    ![dane wyjściowe ls maszyny platformy docker](media/vs-azure-tools-docker-setup/docker-machine-ls.png)
 3. Ustaw wartość domyślną jako bieżący host, a następnie skonfiguruj powłoki.
-   
+
     ```PowerShell
     docker-machine env default | Invoke-Expression
     ```
 4. Wyświetlanie aktywnych kontenerów platformy Docker. Lista powinna być pusta.
-   
+
     ```PowerShell
     docker ps
     ```
-   
-    ![dane wyjściowe programu platformy docker ps][1]
+
+    ![dane wyjściowe programu platformy docker ps](media/vs-azure-tools-docker-setup/docker-ps.png)
 
 > [!NOTE]
 > Każdym ponownym uruchomieniu komputera deweloperskiego, będzie konieczne ponowne uruchomienie usługi hosta lokalnego platformy docker.
 > Aby to zrobić, należy wydać następujące polecenie w wierszu polecenia: `docker-machine start default`.
-> 
-> 
-
-[0]: media/vs-azure-tools-docker-setup/docker-machine-ls.png
-[1]: media/vs-azure-tools-docker-setup/docker-ps.png

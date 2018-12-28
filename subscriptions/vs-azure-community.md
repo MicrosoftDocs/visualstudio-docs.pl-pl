@@ -3,18 +3,18 @@ title: Korzyści społeczności platformy Azure w ramach subskrypcji programu Vi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/08/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Więcej informacji na temat korzyści społeczności platformy Azure, zawarte w wybranych subskrypcjach programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937463"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739390"
 ---
 # <a name="azure-community"></a>Azure Community
 
@@ -23,7 +23,7 @@ Pobierz pomocy bezpośrednio od zespołu platformy Azure w ramach wybierz fora p
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
 | [Usługi w chmurze (role sieci Web i proces roboczy)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc) | [Azure Networking (DNS, usługi Traffic Manager, VPN, VNET)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc) | [Usługa Azure App Service — aplikacje sieci Web](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)         |
-| [Usługa Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)                    | [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)                             | [Usługi Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)                    |
+| [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)                    | [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)                             | [Usługi Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)                    |
 | [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Usługa Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Usługa Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
 | [Usługa Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)                       | [Usługa Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)                                     | [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)                    |
 | [Usługa Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Cennik i rozliczenia](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Narzędzia wiersza polecenia i skryptów platformy Azure](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
@@ -34,7 +34,7 @@ Pobierz pomocy bezpośrednio od zespołu platformy Azure w ramach wybierz fora p
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 Rozpoczynanie pracy ze społecznością platformy Azure jest łatwe.
-1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek społeczności platformy Azure w sekcji pomocy technicznej, a następnie kliknij przycisk **Uzyskaj Pomoc** łącza.
     > [!div class="mx-imgBorder"]
@@ -54,15 +54,19 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Podlega odnowieniu? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Program Visual Studio Enterprise (standardowy, roczna w chmurze)                           | VL, Azure, Retail |   Jeden rok    |    Tak     |
-|                          Program Visual Studio Professional (standardowy, roczna w chmurze)                          | VL, Azure, Retail |   Jeden rok    |    Tak     |
+|                           Visual Studio Enterprise (standardowa)                           | VL, Azure, Retail |   Jeden rok    |    Tak     |
+|                          Visual Studio Professional (standardowa)                          | VL, Azure, Retail |   Jeden rok    |    Tak     |
 |                              Visual Studio Test Professional (standardowa)                               |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |
 |                                       Platformy MSDN (standardowa)                                       |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |
 | Program Visual Studio Enterprise (miesięcznych w chmurze), program Visual Studio Professional (miesięcznych w chmurze), NFR<sup>1</sup> |        Wszystkie        | Niedostępne |     Nie     |
 |                                     Visual Studio Dev Essentials                                      |        Brak        | Niedostępne |     Nie     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR), Microsoft ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)* 
+<sup>1</sup>*obejmuje:    Nie do odsprzedaży Microsoft ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+> [!NOTE]
+> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

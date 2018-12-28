@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wprowadzenie do dostosowywania wstążki'
+title: 'Instrukcje: Wprowadzenie do dostosowywania wstążki'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], adding
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, adding Ribbon to project
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e52efc4cfd1252ff908785195df5c06b8bc90baa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838351"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647152"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Porady: wprowadzenie do dostosowywania wstążki
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Instrukcje: Wprowadzenie do dostosowywania wstążki
   Aby dostosować Wstążki aplikacji pakietu Microsoft Office, należy dodać **Wstążka (Projektant graficzny)** lub **wstążki (XML)** elementu do projektu programu pakietu Office.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  

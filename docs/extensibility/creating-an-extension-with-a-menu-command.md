@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248141"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739270"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polecenia menu, który uruchamia program Notatnik.  
@@ -126,4 +126,4 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
   
 5. Dodaj strony Opcje i właściwości i ustawienia użytkownika do rozszerzenia: [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzenie ustawienia użytkownika i Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
-   Innych rodzajów rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub implementacji usługi rozszerzenie w izolowanej powłoki: [Programu Visual Studio isolated shell](../extensibility/visual-studio-isolated-shell.md)
+   Innych rodzajów rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub implementacji usługi rozszerzenie w izolowanej powłoki: [Programu Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

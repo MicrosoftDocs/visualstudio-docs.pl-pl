@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)'
+title: 'Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,38 +16,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000497"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684486"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Porady: wyświetlanie dziedziczenia pomiędzy typami w Projektancie klas
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Instrukcje: Wyświetlanie dziedziczenia między typami w Projektancie klas
 
-Można znaleźć relacji dziedziczenia, jeśli istnieje, między typem bazowym i jego typów pochodnych na diagramie klas w **Projektant klas**. Aby utworzyć relację dziedziczenia, jeśli żadnego nie ma, między dwoma typami, zobacz [porady: Tworzenie dziedziczenia pomiędzy typami](how-to-create-inheritance-between-types.md).
+Można znaleźć relacji dziedziczenia, jeśli istnieje między typem podstawowym i jego typów pochodnych na diagramie klasy w **projektanta klas**. Aby utworzyć relację dziedziczenia, jeśli nie istnieją między dwoma typami, zobacz [jak: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md).
 
-## <a name="to-find-the-base-type"></a>Aby znaleźć typu podstawowego
+## <a name="to-find-the-base-type"></a>Aby znaleźć typ podstawowy
 
-1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klasy podstawowej lub interfejsu.
+1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klasy bazowej lub interfejsu.
 
-2.  Na **diagramu klas** menu, wybierz **Pokaż klasa podstawowa** lub **Pokaż interfejsy Base**.
+2.  Na **Diagram klas** menu, wybierz **Pokaż klasy podstawowe** lub **Pokaż interfejsy Base**.
 
-     Typ klasy podstawowej lub interfejsu widoczny jako zaznaczony na diagramie. Wszystkie wiersze ukryte dziedziczenia pojawią się między dwoma kształtów.
+     Typ klasy bazowej lub interfejsu widoczny jako zaznaczony na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między dwoma kształtami.
 
-Można również przyciskiem myszy typ, którego typ podstawowy, które chcesz wyświetlić, a następnie wybierz pozycję **Pokaż klasy podstawowej** lub **Pokaż interfejsach podstawowych**.
+Również kliknięciu prawym przyciskiem myszy typ, którego typ podstawowy, które chcesz wyświetlić, a następnie wybierz **Pokaż klasy bazowej** lub **Pokaż interfejsy podstawowe**.
 
 ## <a name="to-find-the-derived-types"></a>Aby znaleźć typy pochodne
 
-1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić interfejsów lub klas pochodnych.
+1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klas pochodnych lub interfejsów.
 
-2.  Na **diagramu klas** menu, wybierz **Pokaż klas pochodnych** lub **Pokaż interfejsy pochodnych**.
+2.  Na **Diagram klas** menu, wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.
 
-     Klasy pochodne typu lub interfejsy są wyświetlane na diagramie. Wszystkie wiersze ukryte dziedziczenia pojawią się między kształtami.
+     Klasy pochodne typu lub interfejsy są wyświetlane na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między kształtów.
 
-Również kliknięciu prawym przyciskiem myszy typ, dla którego chcesz wyświetlić jego typów pochodnych, a następnie wybierz **Pokaż klas pochodnych** lub **Pokaż interfejsy pochodnych**.
+Również kliknięciu prawym przyciskiem myszy typ, dla którego chcesz wyświetlić jego typów pochodnych, a następnie wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Tworzenie skojarzenia między typami](how-to-create-associations-between-types.md)
-- [Wyświetlanie typów i relacji](viewing-types-and-relationships.md)
+- [Instrukcje: Tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)
+- [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)

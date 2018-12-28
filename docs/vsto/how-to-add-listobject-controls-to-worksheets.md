@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie formantów ListObject do arkuszy'
+title: 'Instrukcje: Dodawanie formantów ListObject do arkuszy'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - ListObject control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949256"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646974"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Porady: dodawanie formantów ListObject do arkuszy
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów ListObject do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek do arkusza programu Microsoft Office Excel, w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49949256"
  [ListObject — formant](../vsto/listobject-control.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
- [Porady: zmiana rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Instrukcje: Zmiana rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49f3c0e9cdd1feee0161c95d30bed03244d14e15
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 622655f1ed05ab77b36a3c4756a0176fcad74ac4
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857630"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684931"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 
@@ -39,8 +39,8 @@ Aby dowiedzieć się, jakie wersje programu Visual Studio obsługują każdej fu
 |||
 |-|-|
 |**Poznaj kodu i jej relacje:**<br /><br /> Mapowanie relacji między określonych fragmentów kodu.<br /><br /> Zobacz Omówienie relacji w kodzie dla całego rozwiązania.|- [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />- [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
-|**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie, tworząc diagramów klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Opisz projektowania wysokiego poziomu systemu, a następnie walidować kod dla tego projektu:**<br /><br /> Opisz projektowania wysokiego poziomu systemu i jego zależności zamierzone, tworząc diagramów zależności. Walidować kod dla tego projektu, aby upewnić się, że zależności w kodzie zachować spójność z projektem.|- [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
+|**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie, tworząc diagramów klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
+|**Opisz projektowania wysokiego poziomu systemu, a następnie walidować kod dla tego projektu:**<br /><br /> Opisz projektowania wysokiego poziomu systemu i jego zależności zamierzone, tworząc diagramów zależności. Walidować kod dla tego projektu, aby upewnić się, że zależności w kodzie zachować spójność z projektem.|- [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

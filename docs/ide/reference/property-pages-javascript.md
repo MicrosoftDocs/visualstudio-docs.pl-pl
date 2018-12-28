@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: eabc82926c821fb5a8d83637fb9118bc25df82bc
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220033"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684996"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 **Stron właściwości** zapewnia dostęp do ustawień projektu. Można użyć stron, które pojawiają się w **stron właściwości** można zmienić właściwości projektu.
@@ -39,11 +39,11 @@ Następujące strony i opcje są wyświetlane w **stron właściwości**.
 
  **Konfiguracja**
 
- Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, **wszystkie konfiguracje**, lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie debugowania i zwalniania konfiguracji w programie Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, **wszystkie konfiguracje**, lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji w programie Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Platforma**
 
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia są **dowolny Procesor** (domyślne dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji), **x64**, **ARM**, **x86**, lub platforma zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie debugowania i zwalniania konfiguracji w programie Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia są **dowolny Procesor** (domyślne dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji), **x64**, **ARM**, **x86**, lub platforma zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji w programie Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Strona ogólna
  Następujące opcje służą do ustawiania właściwości ogólnych projektu.
@@ -73,7 +73,7 @@ Następujące strony i opcje są wyświetlane w **stron właściwości**.
 
  Określa host domyślny dla debugera.
 
--   Wybierz **komputera lokalnego** Aby uruchomić aplikację na komputerze-hoście programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](../../debugger/run-windows-store-apps-on-the-local-machine.md).
+-   Wybierz **komputera lokalnego** Aby uruchomić aplikację na komputerze-hoście programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 -   Wybierz **symulator** Aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [uruchamiania aplikacji w symulatorze](../../debugger/run-windows-store-apps-in-the-simulator.md).
 

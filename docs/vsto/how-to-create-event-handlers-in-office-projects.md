@@ -1,5 +1,5 @@
 ---
-title: 'Porady: tworzenie obsługi zdarzeń w projektach pakietu Office'
+title: 'Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,20 +13,20 @@ helpviewer_keywords:
 - event handlers [Office development in Visual Studio]
 - Visual C# [Office development in Visual Studio], event handlers
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b7e55ee7f094ad104d9c8eb6ef3057621bcccee
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254247"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648603"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>Porady: tworzenie obsługi zdarzeń w projektach pakietu Office
-  Istnieje kilka sposobów, aby utworzyć procedury obsługi zdarzeń w Visual Basic i C#. W widoku Projekt, można utworzyć domyślnie obsługi zdarzeń dla formantów przez dwukrotne kliknięcie formantu, lub za pomocą okienka zdarzenia z **właściwości** okna, aby utworzyć programy obsługi dla dowolnego zdarzenia w formancie. Jednak jeśli jesteś w widoku kodu, nie możesz przełączyć do widoku projektu, aby utworzyć program obsługi zdarzeń.  
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office
+  Istnieje kilka sposobów, aby utworzyć procedury obsługi zdarzeń w języku Visual Basic i C#. W widoku Projekt, możesz utworzyć domyślny procedury obsługi zdarzeń dla kontrolek przez dwukrotne kliknięcie formantu lub za pomocą okienka zdarzenia z **właściwości** okna, aby utworzyć procedury obsługi dla dowolnego zdarzenia w formancie. Jednak jeśli jesteś w widoku kodu, może nie chcesz przełączyć do widoku projektu, aby utworzyć program obsługi zdarzeń.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -34,28 +34,28 @@ ms.locfileid: "35254247"
   
 ### <a name="to-create-an-event-handler-in-visual-basic"></a>Aby utworzyć program obsługi zdarzeń w języku Visual Basic  
   
-1.  Z **Nazwa klasy** listy rozwijanej na górze edytora kodu, wybierz obiekt, który chcesz utworzyć program obsługi zdarzeń dla.  
+1.  Z **Nazwa klasy** listy rozwijanej u góry strony edytora kodu, zaznacz obiekt, który chcesz utworzyć program obsługi zdarzeń dla.  
   
     > [!NOTE]  
-    >  Jeśli chcesz utworzyć obsługi zdarzeń `ThisDocument` lub `ThisWorkbook`, musisz wybrać **(ThisDocument zdarzeń)** lub **(ThisWorkbook zdarzeń)** w **Nazwa klasy**listy rozwijanej  
+    >  Jeśli chcesz tworzyć programy obsługi zdarzeń dla `ThisDocument` lub `ThisWorkbook`, musisz wybrać **(ThisDocument zdarzenia)** lub **(ThisWorkbook zdarzenia)** w **Nazwa klasy**listy rozwijanej  
   
-2.  Z **nazwę metody** listy rozwijanej na górze edytora kodu, wybierz zdarzenie.  
+2.  Z **nazwę metody** listy rozwijanej u góry strony edytora kodu, wybierz zdarzenie.  
   
-     Visual Studio tworzy program obsługi zdarzeń i przenosi punkt wstawiania do obsługi zdarzeń nowo utworzony. Jeśli program obsługi zdarzeń już istnieje, punkt wstawiania zostanie przeniesiony do istniejącego programu obsługi zdarzeń.  
+     Visual Studio tworzy program obsługi zdarzeń i przenosi punkt wstawiania do nowo utworzonego zdarzenia programu obsługi. Jeśli program obsługi zdarzeń już istnieje, punkt wstawiania przechodzi do istniejącego programu obsługi zdarzeń.  
   
-### <a name="to-create-an-event-handler-in-c"></a>Aby utworzyć program obsługi zdarzeń w języku C#  
+### <a name="to-create-an-event-handler-in-c"></a>Aby utworzyć program obsługi zdarzeń wC#  
   
-1.  Utworzyć delegata zdarzenia w **uruchamiania** zdarzeń klasy, wpisując nazwę kwalifikowaną zdarzenia spację, a następnie wpisując **+=** później bez spacji. Na przykład:  
+1.  Utwórz delegata zdarzenia w **uruchamiania** zdarzeń klasy przez wpisanie nazwy kwalifikowanej zdarzeń, spację, a następnie wpisując **+=** później bez spacji. Na przykład:  
   
      `this.<object name>.<event name> +=`  
   
-2.  Na koniec wiersza kodu dwukrotnie naciśnij klawisz TAB.  
+2.  Na końcu wiersza kodu naciśnij klawisz TAB dwa razy.  
   
-     Visual Studio automatycznie zakończeniu wiersza kodu, tworzy program obsługi zdarzeń i przenosi punkt wstawiania do obsługi zdarzeń nowo utworzony.  
+     Visual Studio automatycznie zakończy wiersz kodu, tworzy program obsługi zdarzeń i przenosi punkt wstawiania do nowo utworzonego zdarzenia programu obsługi.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
- [Wskazówki: Program w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Przewodnik: Program w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)  
   
   

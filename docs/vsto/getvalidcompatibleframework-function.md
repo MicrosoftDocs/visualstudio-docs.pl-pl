@@ -8,17 +8,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8cc16544df224e09724cae8a1f09f72039cb61e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b93e0de5f1d8c1d4e93189e7bfee36d44db19319
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894498"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648881"
 ---
 # <a name="getvalidcompatibleframework-function"></a>Getvalidcompatibleframework — funkcja
   Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  

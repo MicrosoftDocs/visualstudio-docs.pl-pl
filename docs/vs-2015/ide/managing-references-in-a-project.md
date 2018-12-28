@@ -28,19 +28,19 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 464b5703a33caefe4533d8ecd726bbb9d6910de4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195601"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740372"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, projekt musi zawierać odwołanie do niej. Zasadniczo wpis w pliku projektu, który zawiera informacje o wymaganych przez program Visual Studio do zlokalizuj składnik lub usługa jest odwołaniem.  
   
- Aby dodać odwołanie, w węźle odwołania w Eksploratorze rozwiązań kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj odwołanie**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
+ Aby dodać odwołanie, w węźle odwołania w Eksploratorze rozwiązań kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj odwołanie**. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
   
  ![Dodaj odwołanie w Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")  
   
@@ -113,7 +113,7 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
 ## <a name="project-to-project-references"></a>Odwołania projektu do projektu  
  Odwołania projektu do projektu są odwołaniami do projektów, które zawierają zestawy; Tworzenie przy użyciu **projektu** kartę. Program Visual Studio można znaleźć zestawu przy podanej ścieżki do projektu.  
   
- Jeśli masz projekt, który tworzy zestaw, należy odwoływać się do projektu i używaj odwołanie do pliku (patrz poniżej). Zaletą odwołania projektu do projektu jest to, że tworzy ono zależność między projektami w systemie kompilacji. Projekt zależny zostanie skompilowany, jeśli została zmieniona od czasu ostatniego konstruowania projektu z odwołaniem. Odwołanie pliku nie tworzy zależność kompilacji, więc istnieje możliwość skompilowania projektu z odwołaniem bez kompilowania projektu zależnego, a odwołanie może się okazać zbędne. (Oznacza to, że projekt może odwoływać się do uprzednio utworzonej wersji projektu.) Może to spowodować, że kilka wersjach pojedynczego pliku DLL jest wymagana w katalogu bin, który nie jest możliwe. Po wystąpieniu takiego konfliktu pojawi komunikat takich jak [Ostrzeżenie: nie można skopiować zależności 'Plik' w projekcie 'projekt' do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie 'Plik'. ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-file.md). Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami uszkodzone](../ide/troubleshooting-broken-references.md) i [porady: tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Jeśli masz projekt, który tworzy zestaw, należy odwoływać się do projektu i używaj odwołanie do pliku (patrz poniżej). Zaletą odwołania projektu do projektu jest to, że tworzy ono zależność między projektami w systemie kompilacji. Projekt zależny zostanie skompilowany, jeśli została zmieniona od czasu ostatniego konstruowania projektu z odwołaniem. Odwołanie pliku nie tworzy zależność kompilacji, więc istnieje możliwość skompilowania projektu z odwołaniem bez kompilowania projektu zależnego, a odwołanie może się okazać zbędne. (Oznacza to, że projekt może odwoływać się do uprzednio utworzonej wersji projektu.) Może to spowodować, że kilka wersjach pojedynczego pliku DLL jest wymagana w katalogu bin, który nie jest możliwe. Po wystąpieniu takiego konfliktu pojawi komunikat takich jak [Ostrzeżenie: nie można skopiować zależności 'Plik' w projekcie 'projekt' do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie 'Plik'. ](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami uszkodzone](../ide/troubleshooting-broken-references.md) i [jak: Tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Odwołanie pliku zamiast odwołania projektu do projektu jest tworzony, jeśli wersji docelowej programu .NET Framework jednego projektu jest wersja 4.5 i wersję docelową innego projektu jest w wersji 2, 3, 3.5 lub 4.0.  

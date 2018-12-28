@@ -22,12 +22,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce8cc39880908d099c72142699b4cb19fb514e6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237474"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647244"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Powiązywanie kontrolek Windows Forms z danymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "49237474"
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Powiązywanie danych w formancie DataGridView  
- Dla formantu DataGridView cała tabela jest powiązany do tego pojedynczego formantu. Podczas przeciągania DataGridView formularza narzędzia paska do nawigowania między rekordami (<xref:System.Windows.Forms.BindingNavigator>) pojawia się również. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika. Na poniższej ilustracji TableAdapterManager również zostanie dodany, ponieważ tabela klientów zawiera relację z tabeli Orders. Te zmienne są wszystkie zadeklarowane w automatycznie wygenerowany kod jako prywatne składowe klasy formularza. Automatycznie wygenerowany kod do wypełniania formantu DataGridView znajduje się w obsłudze zdarzeń form_load. Kod do zapisywania danych do aktualizacji bazy danych znajduje się w program obsługi zdarzeń Zapisz BindingNavigator. Można przenieść lub zmodyfikuj ten kod, zgodnie z potrzebami.  
+ Dla formantu DataGridView cała tabela jest powiązany do tego pojedynczego formantu. Podczas przeciągania DataGridView formularza narzędzia paska do nawigowania między rekordami (<xref:System.Windows.Forms.BindingNavigator>) pojawia się również. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika. Na poniższej ilustracji TableAdapterManager również zostanie dodany, ponieważ tabela klientów zawiera relację z tabeli Orders. Te zmienne są wszystkie zadeklarowane w automatycznie wygenerowany kod jako prywatne składowe klasy formularza. Automatycznie wygenerowany kod do wypełniania formantu DataGridView znajduje się w obsłudze zdarzeń form_load. Kod do zapisywania danych do aktualizacji bazy danych znajduje się w program obsługi zdarzeń Zapisz BindingNavigator. Można przenieść lub zmodyfikuj ten kod, zgodnie z potrzebami.  
   
  ![GridView za pomocą BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView za pomocą BindingNavigator")  
   
@@ -68,4 +68,3 @@ ms.locfileid: "49237474"
   
 ## <a name="see-also"></a>Zobacz też  
  [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 745f846d1d9e0200b7b6ba5555bf73a19286e5d3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812637"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647579"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +82,11 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (.mdf), po zainstalo
   
        -   Aby użyć określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13`, w których wersja V12 jest LocalDB 2014 i V13 jest LocalDB 2016.  
   
-   -   **Dołącz plik bazy danych**: ścieżka fizyczna głównego pliku .mdf.  
+   -   **Dołącz plik bazy danych**: Ścieżka fizyczna głównego pliku .mdf.  
   
-   -   **Nazwa logiczna**: nazwa, którą chcesz korzystać z plikiem.  
+   -   **Nazwa logiczna**: Nazwa, którą chcesz korzystać z plikiem.  
   
-3. Wybierz **OK** przycisku.  
+3. Wybierz przycisk **OK**.  
   
 4. Po wyświetleniu monitu wybierz **tak** przycisk, aby uaktualnić plik.  
   
@@ -120,11 +120,6 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (.mdf), po zainstalo
   
 3. W **nazwa wystąpienia serwera SQL** tekst pola, określ nazwę wystąpienia programu SQL Server Express lub LocalDB, którego chcesz używać. Jeśli nie jest nazwane wystąpienie, określ `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.  
   
-4. Wybierz **OK** przycisku.  
+4. Wybierz przycisk **OK**.  
   
    SQL Server Express będzie domyślny aparat bazy danych dla aplikacji.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Dane lokalne — Przegląd](../data-tools/local-data-overview.md)   
- [Wskazówki: Łączenie z danymi w pliku lokalnej bazy danych (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

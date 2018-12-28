@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b431e8223c0cacf28d5e8251b655e2d86769e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9fceb83f915eb1a90a781d886c84fd40651cc0a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935709"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647326"
 ---
 # <a name="introducing-spy"></a>Wprowadzenie programu Spy++
 Spy ++ umożliwia wykonywanie następujących zadań:  
@@ -42,7 +42,7 @@ Spy ++ umożliwia wykonywanie następujących zadań:
 >  Istnieją dwa narzędzia, które przypominają Spy ++: PView, który przedstawia szczegółowe informacje dotyczące procesów i wątków oraz DDESPY. Plik EXE, który umożliwia monitorowanie komunikatów dynamicznej wymiany danych (DDE).  
   
 ## <a name="64-bit-operating-systems"></a>64-bitowych systemach operacyjnych  
- Istnieją dwie wersje programu Spy ++. Pierwsza wersja, o nazwie Spy ++ (spyxx.exe) jest przeznaczony do wyświetlania komunikatów wysłanych do okno, w którym jest uruchomiony w procesie 32-bitowym. Na przykład programu Visual Studio działa w procesie 32-bitowych. W związku z tym, służy narzędzie Spy ++ do wyświetlania komunikatów wysłanych do **Eksploratora rozwiązań**. Ponieważ konfigurację domyślną dla większości kompilacje w programie Visual Studio jest uruchamiane w procesie 32-bitowych, pierwszej wersji programu Spy ++ jest jedną, która jest [dostępne na **narzędzia** menu](../debugger/how-to-start-spy-increment.md) w programie Visual Studio.  
+ Istnieją dwie wersje programu Spy ++. Pierwsza wersja, o nazwie Spy ++ (spyxx.exe) jest przeznaczony do wyświetlania komunikatów wysłanych do okno, w którym jest uruchomiony w procesie 32-bitowym. Na przykład programu Visual Studio działa w procesie 32-bitowych. W związku z tym, służy narzędzie Spy ++ do wyświetlania komunikatów wysłanych do **Eksploratora rozwiązań**. Ponieważ konfigurację domyślną dla większości kompilacje w programie Visual Studio jest uruchamiane w procesie 32-bitowych, pierwszej wersji programu Spy ++ jest ten, który jest dostępny na **narzędzia** menu w programie Visual Studio, jeśli [wymaganych składników zainstalowane](../debugger/how-to-start-spy-increment.md). 
   
  Druga wersja, o nazwie Spy ++ (64-bitowy) (spyxx_amd64.exe) jest przeznaczony do wyświetlania komunikatów wysłanych do okno, w którym jest uruchomiony w procesie 64-bitowym. Na przykład na 64-bitowym systemie operacyjnym Notatnik działa w procesie 64-bitowych. W związku z tym służy narzędzie Spy ++ (64-bitowy) aby wyświetlić komunikaty wysyłane do Notatnika. Spy ++ (64-bitowy) znajduje się w  
   
@@ -54,7 +54,7 @@ Spy ++ umożliwia wykonywanie następujących zadań:
 >  Mimo że Spy ++ (64-bitowy) nazwa zawiera "amd", działa na dowolnej x64 systemu operacyjnego Windows.  
   
 ## <a name="see-also"></a>Zobacz też 
- [Porady: Uruchom narzędzie Spy ++](../debugger/how-to-start-spy-increment.md)   
+ [Instrukcje: Uruchom narzędzie Spy ++](../debugger/how-to-start-spy-increment.md)   
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
  [Widoków programu Spy ++](../debugger/spy-increment-views.md)   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

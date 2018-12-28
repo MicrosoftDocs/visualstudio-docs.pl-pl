@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie kontrolek formularzy Windows forms do dokumentów pakietu Office'
+title: 'Instrukcje: Dodawanie kontrolek formularzy Windows forms do dokumentów pakietu Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], adding
 - controls [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], Windows Forms controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b5a6246a79d2d1f910b6ca39ce290f6c325dbe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 10fa7da3028c2d4706ec380bb4ceeae1d55b45af
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892756"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647861"
 ---
-# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Porady: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office
+# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Instrukcje: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office
   Możesz dodać kontrolek formularzy Windows Forms do programu Microsoft Office Excel i Microsoft Office Word dokumentów w czasie projektowania w projektach na poziomie dokumentu. W czasie wykonywania można dodawać formanty w dostosowaniach na poziomie dokumentu i dodatków narzędzi VSTO. Na przykład można dodać <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> sterowania do arkusza, co użytkownicy mogą wybrać z listy opcji.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
@@ -38,7 +38,7 @@ ms.locfileid: "49892756"
   
 - [Dodawanie formantów w czasie wykonywania w dodatkach VSTO](#runtimeaddin)  
   
-  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: dodać kontrolki do dokumentu powierzchni w czasie wykonywania?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Dodawanie formantów do powierzchni dokument w czasie wykonywania? ](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="designtime"></a> Dodawanie formantów w czasie projektowania  
  Istnieje kilka sposobów, aby dodać kontrolek formularzy Windows Forms do dokumentów w projekcie na poziomie dokumentu w czasie projektowania.  
@@ -47,7 +47,7 @@ ms.locfileid: "49892756"
   
 ### <a name="to-drag-a-windows-forms-control-to-the-document"></a>Przeciągnij formant programu Windows Forms do dokumentów  
   
-1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: utworzyć projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  W **wspólnych formantów** karcie **przybornika**, kliknij kontrolkę, którą chcesz dodać i przeciągnij go do dokumentu.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "49892756"
   
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Rysowanie formantu Windows Forms w dokumencie  
   
-1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: utworzyć projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  W **wspólnych formantów** karcie **przybornika**, kliknij kontrolkę, którą chcesz dodać.  
   
@@ -69,7 +69,7 @@ ms.locfileid: "49892756"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Aby dodać formant programu Windows Forms do dokumentu przez pojedyncze kliknięcie formantu  
   
-1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: utworzyć projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  W **wspólnych formantów** karcie **przybornika**, kliknij kontrolkę, którą chcesz dodać  
   
@@ -82,7 +82,7 @@ ms.locfileid: "49892756"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Aby dodać formant programu Windows Forms do dokumentu przez dwukrotne kliknięcie formantu  
   
-1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: utworzyć projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  W **wspólnych formantów** karcie **przybornika**, kliknij dwukrotnie formant, którego chcesz dodać.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49892756"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Aby dodać formant programu Windows Forms w dokumencie, naciskając klawisz Enter  
   
-1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz lub Otwórz skoroszyt programu Excel, projektu lub projektu dokument programu Word w programie Visual Studio, tak aby dokument był widoczny w projektancie. Aby uzyskać informacje dotyczące tworzenia projektów, zobacz [jak: Tworzenie projektów Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  W **wspólnych formantów** karcie **przybornika**, kliknij kontrolkę chcesz dodać, a następnie naciśnij klawisz **Enter** klucza.  
   
@@ -138,7 +138,7 @@ ms.locfileid: "49892756"
 ## <a name="see-also"></a>Zobacz także  
  [Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Porady: zmiana rozmiaru formantów w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [Instrukcje: Zmiana rozmiaru formantów w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   

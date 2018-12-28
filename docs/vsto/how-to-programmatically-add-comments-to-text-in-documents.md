@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Dodawanie komentarzy do tekstu w dokumentach'
+title: 'Instrukcje: Programowe Dodawanie komentarzy do tekstu w dokumentach'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - comments, adding to documents
 - documents [Office development in Visual Studio], adding comments
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0d15ee69bb58aae765c03c1233a78bfeeb119c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676202"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804607"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Porady: programowane Dodawanie komentarzy do tekstu w dokumentach
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Instrukcje: Programowe Dodawanie komentarzy do tekstu w dokumentach
   Właściwość komentarze klasy dokumentu dodaje komentarz do zakresu w dokumencie programu Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -50,7 +50,7 @@ ms.locfileid: "35676202"
  Aby zmienić inicjały użytkownika, które program Word dodaje do komentarzy, użyj <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> właściwości.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [Instrukcje: Programowe usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Element hosta dokumentu](../vsto/document-host-item.md)  
   
   

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: b2864c0fc812148892a04336c29086afbe814e9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793779"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802999"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA wariantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Zastąpienia wielu przykładowe Wygładzanie (MSAA) ustawień dla wszystkich ele
   
 - Urządzenie obsługuje liczność próbki żądanej (0, 2 lub 4) i jakość próbkowania (0) dla żądanego docelowej format (członek D3D11_TEXTURE2D_DESC::Format), zgodnie z ustaleniami renderowania `ID3D11Device::CheckMultisampleQualityLevels`.  
   
-  Jeśli element członkowski D3D11_TEXTURE2D_DESC::BindFlags ma D3D_BIND_SHADER_RESOUCE lub D3D11_BIND_UNORDERED_ACCESS flag ustawionych, są tworzone dwie wersje tekstury; pierwszy ma tych flag wyczyszczone do użycia jako obiektu docelowego renderowania, a drugi to teksturę bez MSAA, która ma te flagi niezmienione może pełnić rolę bufora rozwiązania dla pierwszej wersji. Jest to konieczne, ponieważ prawdopodobnie nie będzie obowiązywać przy użyciu tekstury MSAA jako zasób programu do cieniowania lub nieuporządkowanego dostępu — na przykład programu do cieniowania, działające na nim będzie wygenerować niepoprawne wyniki, ponieważ go oczekiwać tekstury bez MSAA. Jeśli wariant utworzył tekstury dodatkowej bez MSAA, następnie zawsze wtedy, gdy cel renderowania MSAA usunięta z kontekstu urządzenia, jego zawartość są rozwiązywane do tekstury bez MSAA. Podobnie zawsze wtedy, gdy renderowania MSAA docelowy powinien zostać powiązany jako zasób programu do cieniowania lub jest używany w widok nieuporządkowanego dostępu, tekstury rozwiązany bez MSAA jest powiązana zamiast tego.  
+  Jeśli element członkowski D3D11_TEXTURE2D_DESC::BindFlags ma D3D_BIND_SHADER_RESOURCE lub D3D11_BIND_UNORDERED_ACCESS flag ustawionych, są tworzone dwie wersje tekstury; pierwszy ma tych flag wyczyszczone do użycia jako obiektu docelowego renderowania, a drugi to teksturę bez MSAA, która ma te flagi niezmienione może pełnić rolę bufora rozwiązania dla pierwszej wersji. Jest to konieczne, ponieważ prawdopodobnie nie będzie obowiązywać przy użyciu tekstury MSAA jako zasób programu do cieniowania lub nieuporządkowanego dostępu — na przykład programu do cieniowania, działające na nim będzie wygenerować niepoprawne wyniki, ponieważ go oczekiwać tekstury bez MSAA. Jeśli wariant utworzył tekstury dodatkowej bez MSAA, następnie zawsze wtedy, gdy cel renderowania MSAA usunięta z kontekstu urządzenia, jego zawartość są rozwiązywane do tekstury bez MSAA. Podobnie zawsze wtedy, gdy renderowania MSAA docelowy powinien zostać powiązany jako zasób programu do cieniowania lub jest używany w widok nieuporządkowanego dostępu, tekstury rozwiązany bez MSAA jest powiązana zamiast tego.  
   
   Te wariantów również zastąpienia ustawień MSAA wszystkie łańcuchy wymiany utworzone za pomocą `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, i `ID3D11CreateDeviceAndSwapChain`.  
   

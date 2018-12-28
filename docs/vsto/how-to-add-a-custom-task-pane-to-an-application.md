@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie niestandardowego okienka zadań do aplikacji'
+title: 'Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,20 +11,20 @@ dev_langs:
 helpviewer_keywords:
 - task panes [Office development in Visual Studio], adding to application
 - custom task panes [Office development in Visual Studio], adding to application
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8608fcc263be4750c38b6fe3f84967f40dd34ab
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548817"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647000"
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Porady: Dodawanie niestandardowego okienka zadań do aplikacji
-  Możesz dodać niestandardowego okienka zadań do aplikacji wymienionych powyżej przy użyciu dodatku VSTO. Aby uzyskać więcej informacji, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md).  
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji
+  Możesz dodawać niestandardowego okienka zadań do aplikacji z wymienionych powyżej, za pomocą dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -33,36 +33,36 @@ ms.locfileid: "34548817"
   
 ## <a name="add-a-custom-task-pane-to-an-application"></a>Dodawanie niestandardowego okienka zadań do aplikacji  
   
-### <a name="to-add-a-custom-task-pane-to-an-application"></a>Aby dodać niestandardowego okienka zadań do aplikacji  
+### <a name="to-add-a-custom-task-pane-to-an-application"></a>Dodawanie niestandardowego okienka zadań do aplikacji  
   
-1.  Otwórz lub Utwórz projekt dodatku VSTO dla jednej z aplikacji wymienionych powyżej. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Otwórz lub Utwórz projekt dodatku narzędzi VSTO dla jednej z aplikacji wymienionych powyżej. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  Na **projektu** menu, kliknij przycisk **Dodaj kontrolkę użytkownika**.  
   
-3.  W **Dodaj nowy element** okno dialogowe Zmień nazwę nowego formantu użytkownika do **MyUserControl**, a następnie kliknij przycisk **Dodaj**.  
+3.  W **Dodaj nowy element** okna dialogowego pole, Zmień nazwę nowej kontrolki użytkownika w celu **MyUserControl**, a następnie kliknij przycisk **Dodaj**.  
   
-     Kontrola użytkownika zostanie otwarty w projektancie.  
+     Formant użytkownika zostanie otwarty w projektancie.  
   
-4.  Dodaj formanty formularzy systemu Windows co najmniej jeden z **przybornika** do kontrolki użytkownika.  
+4.  Dodaj co najmniej jednej kontrolki Windows Forms z **przybornika** do kontrolki użytkownika.  
   
 5.  Otwórz **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu.  
   
-6.  Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje wystąpienia `MyUserControl` i <xref:Microsoft.Office.Tools.CustomTaskPane> jako elementy członkowskie `ThisAddIn` klasy.  
+6.  Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje wystąpień `MyUserControl` i <xref:Microsoft.Office.Tools.CustomTaskPane> jako elementy członkowskie `ThisAddIn` klasy.  
   
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]  
   
-7.  Dodaj następujący kod do `ThisAddIn_Startup` obsługi zdarzeń. Ten kod tworzy nową <xref:Microsoft.Office.Tools.CustomTaskPane> przez dodanie `MyUserControl` do obiektu `CustomTaskPanes` kolekcji. Kod są również wyświetlane w okienku zadań.  
+7.  Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod tworzy nową <xref:Microsoft.Office.Tools.CustomTaskPane> , dodając `MyUserControl` obiekt `CustomTaskPanes` kolekcji. Kod jest również wyświetlane w okienku zadań.  
   
      [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
   
     > [!NOTE]  
-    >  Ten kod kojarzy niestandardowego okienka zadań z aktywnego okna aplikacji. Dla pewnych aplikacji możesz modyfikować ten kod, aby zapewnić z innymi dokumenty lub elementy w aplikacji okienka zadań. Aby uzyskać więcej informacji, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md).  
+    >  Ten kod kojarzy niestandardowego okienka zadań z aktywnego okna aplikacji. W przypadku niektórych aplikacji można modyfikować ten kod, aby upewnić się, że w okienku zadań pojawia się z innych dokumentów lub elementów w aplikacji. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)   
  [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)   
- [Wskazówki: Zautomatyzować aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+ [Przewodnik: Automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
   
   

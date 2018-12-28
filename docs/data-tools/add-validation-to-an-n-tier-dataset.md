@@ -17,17 +17,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778064"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739471"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do n-warstwowego zestawu danych
 Dodawanie walidacji do zestawu danych, który jest podzielony na rozwiązanie n warstwowa zasadniczo jest taka sama, jak dodawanie sprawdzania poprawności do pojedynczego pliku zestawu danych (zestawu danych w jednym projekcie). Proponowana lokalizacja na sprawdzenie poprawności danych jest w trakcie <xref:System.Data.DataTable.ColumnChanging> i/lub <xref:System.Data.DataTable.RowChanging> zdarzenia tabeli danych.
 
- Zestaw danych zawiera funkcje do tworzenia klas częściowych, do których można dodać kod użytkownika do zmiany kolumny i wiersza zdarzeń tabel danych w zestawie danych. Aby uzyskać więcej informacji na temat dodawania kodu zestawu danych w rozwiązaniu wielowarstwowym, zobacz [Dodawanie kodu do zestawów danych w aplikacjach n warstwowa](../data-tools/add-code-to-datasets-in-n-tier-applications.md), i [Dodawanie kodu do TableAdapters w aplikacjach n warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Aby uzyskać więcej informacji na temat częściowych klas, zobacz [porady: podział klasy na klasy częściowe (Projektant klas)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) lub [klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Zestaw danych zawiera funkcje do tworzenia klas częściowych, do których można dodać kod użytkownika do zmiany kolumny i wiersza zdarzeń tabel danych w zestawie danych. Aby uzyskać więcej informacji na temat dodawania kodu zestawu danych w rozwiązaniu wielowarstwowym, zobacz [Dodawanie kodu do zestawów danych w aplikacjach n warstwowa](../data-tools/add-code-to-datasets-in-n-tier-applications.md), i [Dodawanie kodu do TableAdapters w aplikacjach n warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Aby uzyskać więcej informacji na temat częściowych klas, zobacz [jak: Podział klasy na klasy częściowe (Projektant klas)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) lub [klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  Kiedy oddzielisz zestawy danych z TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.
@@ -55,7 +55,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Aby dodać sprawdzanie poprawności podczas zmiany wartości poszczególnych kolumn
 
-1.  Otwórz zestaw danych, klikając dwukrotnie *XSD* w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otwórz zestaw danych, klikając dwukrotnie *XSD* w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Kliknij dwukrotnie kolumnę, którą chcesz zweryfikować. Ta akcja powoduje utworzenie <xref:System.Data.DataTable.ColumnChanging> programu obsługi zdarzeń.
 
@@ -111,7 +111,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Aby dodać sprawdzanie poprawności podczas zmiany do całych wierszy
 
-1.  Otwórz zestaw danych, klikając dwukrotnie *XSD* w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otwórz zestaw danych, klikając dwukrotnie *XSD* w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Kliknij dwukrotnie pasek tytułu tabeli danych w projektancie.
 

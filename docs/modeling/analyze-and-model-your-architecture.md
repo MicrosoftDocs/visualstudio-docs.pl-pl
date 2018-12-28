@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348882"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740448"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizowanie i modelowanie architektury
 
@@ -49,15 +49,15 @@ Upewnij się, że Twoja aplikacja spełnia wymagania dotyczące architektury prz
 
 * Twórz modele na różnych poziomach szczegółowości w całym cyklu życia aplikacji w ramach procesu tworzenia aplikacji.
 
-Zobacz [scenariusza: zmiana projektu z wykorzystaniem wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
+Zobacz [scenariusza: Zmiana projektu z wykorzystaniem wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
 ## <a name="to"></a>Zadanie
 
 |||
 |-|-|
-|**Wizualizacja kodu**:<br /><br /> — Zobacz organizacją i relacje w kodzie przez utworzenie map kodów. Wizualizacja zależności między zestawów, przestrzeni nazw, klas, metod i tak dalej.<br />— Zobacz klasy, struktury i elementy członkowskie dla określonego projektu, tworząc diagramów klas z kodu.<br />-Znajdowanie konfliktów między kodu i jego projekt, tworząc diagramów zależności, aby walidować kod.|-   [Wizualizacja kodu](../modeling/visualize-code.md)<br />-   [Praca z klasami i innymi typami (Projektant klas)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Wideo: Poznawanie projektu na podstawie kodu dzięki mapom kodu w programie Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
-|**Zdefiniuj architektury**:<br /><br /> -Definiowanie i wymuszanie ograniczeń zależności między składnikami kodu przez tworzenie diagramów zależności.|-   [Wideo: Sprawdzanie poprawności zależności architektury w programie Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Weryfikacja systemu z wymaganiami i przeznaczony projektu:**<br /><br /> — Sprawdzanie poprawności zależności kodu przy użyciu diagramów zależności, które opisują planowaną architekturę i uniemożliwiają zmiany, które mogą powodować konflikty z projektem.|-   [Wideo: Sprawdzanie poprawności zależności architektury w programie Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Wizualizacja kodu**:<br /><br /> — Zobacz organizacją i relacje w kodzie przez utworzenie map kodów. Wizualizacja zależności między zestawów, przestrzeni nazw, klas, metod i tak dalej.<br />— Zobacz klasy, struktury i elementy członkowskie dla określonego projektu, tworząc diagramów klas z kodu.<br />-Znajdowanie konfliktów między kodu i jego projekt, tworząc diagramów zależności, aby walidować kod.|-   [Wizualizacja kodu](../modeling/visualize-code.md)<br />-   [Praca z klasami i innymi typami (Projektant klas)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Wideo: Poznawanie projektu na podstawie kodu dzięki mapom kodu w programie Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Zdefiniuj architektury**:<br /><br /> -Definiowanie i wymuszanie ograniczeń zależności między składnikami kodu przez tworzenie diagramów zależności.|-   [Wideo: Sprawdzanie poprawności architektury zależności za pomocą programu Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Weryfikacja systemu z wymaganiami i przeznaczony projektu:**<br /><br /> — Sprawdzanie poprawności zależności kodu przy użyciu diagramów zależności, które opisują planowaną architekturę i uniemożliwiają zmiany, które mogą powodować konflikty z projektem.|-   [Wideo: Sprawdzanie poprawności architektury zależności za pomocą programu Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Dostosowywanie diagramów i modeli**:<br /><br /> — Utwórz swoje własne języki specyficzne dla domeny.|-   [Modeling SDK for Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**Generowanie tekstu przy użyciu szablonów T4**:<br /><br /> — Użyj bloków tekstu i logiki formantu wewnątrz szablonów do generowania plików tekstowych.<br /> -T4 szablonów kompilacji za pomocą narzędzia MSBuild zawarte w Visual Studio|-   [Generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md)|
 |**Udostępnianie modeli, diagramy i map kodu za pomocą kontroli wersji serwera Team Foundation**:<br /><br /> — Umieść map kodu, projektów i diagramów zależności w ramach kontroli wersji Team Foundation, dzięki czemu możesz udostępnić je.| |

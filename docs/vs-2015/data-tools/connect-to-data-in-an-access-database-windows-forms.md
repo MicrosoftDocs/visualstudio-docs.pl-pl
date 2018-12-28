@@ -23,18 +23,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de570bb79bd59fa5af4c6343dd313e09f6e2533e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207353"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647344"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze Windows)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Bazy danych programu Access (plik mdf lub pliku accdb) można nawiązać za pomocą programu Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze. Jeśli chcesz zrozumieć, jak system projektu w programie Visual Studio zarządza tych plików lokalnej bazy danych, zobacz [jak: Manage Local Data Files in Your Project](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
+Bazy danych programu Access (plik mdf lub pliku accdb) można nawiązać za pomocą programu Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby korzystać z tych procedur, należy na projekt aplikacji Windows Forms i bazy danych programu Access (plik accdb) lub bazy danych programu Access 2000-2003 (plik mdb). Wykonaj procedurę, która odnosi się do typu Twojego pliku.  
@@ -129,17 +128,13 @@ Bazy danych programu Access (plik mdf lub pliku accdb) można nawiązać za pomo
   
 -   Zaznacz elementy w **źródeł danych** okna i przeciągnij je na formularzu (zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
   
--   Otwórz źródło danych w [Projektanta obiektów Dataset](../data-tools/creating-and-editing-typed-datasets.md) można dodawać lub edytować obiekty, które składają się dataset.  
+-   Otwórz źródło danych w Projektancie obiektów Dataset, aby dodać lub edytować obiekty, które składają się dataset.  
   
 -   Dodaj logikę walidacji do <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> wydarzenia tabel danych w zestawie danych (zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md)).  
   
-## <a name="see-also"></a>Zobacz też  
- [O łączeniu z danymi w programie Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Przygotowanie aplikacji na odbieranie danych](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Pobieranie danych do aplikacji](../data-tools/fetching-data-into-your-application.md)   
- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Edytowanie danych w aplikacji](../data-tools/editing-data-in-your-application.md)   
- [Sprawdzanie poprawności danych](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Zapisywanie danych](../data-tools/saving-data.md)   
- [Wskazówki dotyczące danych](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+## <a name="see-also"></a>Zobacz też
 
+ [Przygotowanie aplikacji na odbieranie danych](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Sprawdzanie poprawności danych](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Wskazówki dotyczące danych](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

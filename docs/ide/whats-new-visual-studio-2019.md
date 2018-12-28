@@ -2,7 +2,7 @@
 title: What's new in Visual Studio Preview 2019 r
 titleSuffix: ''
 description: Więcej informacji na temat nowych funkcji w wersji zapoznawczej programu Visual Studio 2019 r.
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
 ms.custom: seodec18
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159753"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647767"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s nowego w programie Visual Studio Preview 2019 r
 
@@ -50,6 +50,8 @@ Pierwszą rzeczą, zauważysz, po otwarciu programu Visual Studio 2019 r jest je
    ![Nowe okno początek w Visual Studio 2019 r.](../ide/media/start-window.png)
 
 To nowe okno rozpoczęcia przedstawia opcje, aby sklonować lub zapoznaj się z kodu, otwórz projekt lub rozwiązanie, otwórz folder lokalny lub Utwórz nowy projekt. Posiadanie tych opcji w oknie dialogowym proste pomaga zarówno początkujących i zaawansowanych użytkowników programu Visual Studio, przejść do kodu szybko.
+
+Aby uzyskać więcej informacji, zobacz [uzyskać dostęp do kodu: Jak został zaprojektowany nowe okno uruchamiania programu Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) wpis w blogu.
 
 ### <a name="better-search"></a>Lepsze wyszukiwania
 
@@ -82,6 +84,8 @@ Możesz również sformatować, jak wartość jest wyświetlana w oknach wyraże
 [Visual Studio funkcja udostępniania na żywo](https://visualstudio.microsoft.com/services/live-share/) to usługa dla deweloperów, która umożliwia udostępnianie kodu i kontekst współpracownikom i uzyskać natychmiastowy współpracy dwukierunkowej bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.
 
 I za pomocą programu Visual Studio 2019 r (wersja zapoznawcza), ta usługa jest instalowana domyślnie.
+
+Aby uzyskać więcej informacji, zobacz [Visual Studio udostępniania na żywo do przeglądów kodu w czasie rzeczywistym i interaktywne edukacji](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) wpis w blogu.
 
 ## <a name="modern-development-support"></a>Obsługa nowoczesnego projektowania
 
@@ -122,7 +126,7 @@ Początkowo obsługiwane tylko C# kiedy możemy najpierw podglądu rozszerzenia 
 
 A jeśli używasz C#, dodaliśmy także możliwość uczenia modelu niestandardowego na własny kod.
 
-Aby uzyskać więcej informacji o rozszerzeniu i można go pobrać, zobacz [Visual Studio IntelliCode — wersja zapoznawcza](https://go.microsoft.com/fwlink/?linkid=872707) stronie DevLabs firmy Microsoft.
+Aby uzyskać więcej informacji o najnowszych aktualizacjach, zobacz [Visual Studio IntelliCode obsługuje więcej języków i uczy się z kodu](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) wpis w blogu. A, aby uzyskać więcej informacji na temat rozszerzenia i jak ją pobrać, zobacz [Visual Studio IntelliCode — wersja zapoznawcza](https://go.microsoft.com/fwlink/?linkid=872707) stronie DevLabs firmy Microsoft.
 
 ## <a name="give-us-feedback"></a>Przekaż nam swoją opinię
 
@@ -135,4 +139,5 @@ Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ tra
 ## <a name="see-also"></a>Zobacz także
 
 * [Informacje o wersji programu Visual Studio 2019 r](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); conference 2018 r.](https://www.microsoft.com/connectevent)
 * [Co nowego w programie Visual Studio 2017](whats-new-in-visual-studio.md)

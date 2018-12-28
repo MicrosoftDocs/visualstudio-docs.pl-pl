@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie zawartości formantów do dokumentów programu Word'
+title: 'Instrukcje: Dodaj zawartość formantów do dokumentów programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,19 +24,19 @@ helpviewer_keywords:
 - ComboBoxContentControl, adding to documents
 - DatePickerContentControl, adding to documents
 - Word [Office development in Visual Studio], restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936969"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648049"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Porady: Dodawanie zawartości formantów do dokumentów programu Word
+# <a name="how-to-add-content-controls-to-word-documents"></a>Instrukcje: Dodaj zawartość formantów do dokumentów programu Word
   W projektach programu Word na poziomie dokumentu można dodać formanty zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO programu Word można dodać formanty zawartości dowolnego otwartego dokumentu w czasie wykonywania.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -58,7 +58,7 @@ ms.locfileid: "49936969"
   
 - Dodawanie zawartości kontrolki do dokumentu w taki sam sposób możesz dodać macierzystym formancie zawartości w programie Word.  
   
-- Przeciągnij formant zawartości do dokumentu z **źródeł danych** okna. Jest to przydatne, jeśli chcesz powiązać kontrolkę z danymi, po utworzeniu kontrolki. Aby uzyskać więcej informacji, zobacz [porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md) i [porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Przeciągnij formant zawartości do dokumentu z **źródeł danych** okna. Jest to przydatne, jeśli chcesz powiązać kontrolkę z danymi, po utworzeniu kontrolki. Aby uzyskać więcej informacji, zobacz [jak: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md) i [jak: Zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49936969"
 2.  Na wstążce kliknij **Developer** kartę.  
   
     > [!NOTE]  
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  W **formantów** grupy, kliknij ikonę formantu zawartości, który chcesz dodać.  
   

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 098c0f50f24e216a407343ceb446d0073370fed1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966547"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740143"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 
@@ -40,9 +40,9 @@ Aby zwizualizować architektury systemu lub istniejącego kodu, należy utworzy�
 
 |**Diagram**|**Pokazuje**|
 |-|-|
-|[Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
+|[Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|
-|Diagramy klas wygenerowany kod<br /><br /> [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)|Typy i ich relacje w kodzie .NET|
+|Diagramy klas wygenerowany kod<br /><br /> [Praca z diagramami klas (Projektant klas)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Typy i ich relacje w kodzie .NET|
 
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych
 

@@ -14,12 +14,12 @@ ms.tgt_pltfrm: NA
 ms.workload: NA
 ms.date: 05/21/2018
 ms.author: mlearned
-ms.openlocfilehash: a033f60d636be8d1e093bf06ee757e0520368a53
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 8364211080deb0f7f7b22822d1a0653090e15345
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248184"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739197"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET w rejestrze kontenerów przy użyciu programu Visual Studio
 ## <a name="overview"></a>Omówienie
@@ -53,10 +53,8 @@ Poniższe kroki prowadzą przez proces tworzenia podstawowej aplikacji platformy
     | **[JEDNOSTKA SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa (Standard) | Warstwy usługi container Registry  |
     | **Lokalizacja w rejestrze** | Bliską lokalizację | Wybierz lokalizację w [region](https://azure.microsoft.com/regions/) okolicy lub w pobliżu innych usług używających usługi container registry. |
 
-    ![Visual Studio utworzyć okno dialogowe usługi Azure Container Registry][0]
+    ![Visual Studio utworzyć okno dialogowe usługi Azure Container Registry](media/vs-azure-tools-docker-hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
 5. Kliknij przycisk **Utwórz**.
 
 Możesz teraz ściągnąć kontenera z rejestru na dowolnym hoście może uruchamiać obrazy Docker, na przykład [usługi Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
-
-[0]:media/vs-azure-tools-docker-hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png

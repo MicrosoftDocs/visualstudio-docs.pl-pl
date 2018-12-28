@@ -1,5 +1,5 @@
 ---
-title: 'Porady: kolumny mapy ListObject do danych'
+title: 'Instrukcje: Mapowanie kolumn ListObject do danych'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677470"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646841"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Porady: kolumny mapy ListObject do danych
+# <a name="how-to-map-listobject-columns-to-data"></a>Instrukcje: Mapowanie kolumn ListObject do danych
   Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolę <xref:System.Data.DataTable>, możesz nie chcieć wyświetlić wszystkie kolumny na liście lub może być określone kolumny, które nie są powiązane z danymi. Można mapować kolumny, które mają być wyświetlane w <xref:Microsoft.Office.Tools.Excel.ListObject> podczas wywoływania <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Tworzenie listy w programie Excel, która jest połączona z listą programu SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Utwórz listę w programie Excel, która jest połączona z listą programu SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>Mapowanie kolumn  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35677470"
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Porady: ListObject wypełnienia kontrolki z danymi](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Instrukcje: Wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject — formant](../vsto/listobject-control.md)  
   

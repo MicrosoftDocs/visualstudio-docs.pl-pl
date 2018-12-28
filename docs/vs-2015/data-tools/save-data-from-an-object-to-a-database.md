@@ -21,18 +21,18 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90a9368ac723d49710c937483133b64876fd3a7c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207457"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648450"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z obiektu do jednej z TableAdapter dbdirect — metody (na przykład `TableAdapter.Insert`). Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/tableadapter-overview.md).  
+Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z obiektu do jednej z TableAdapter dbdirect — metody (na przykład `TableAdapter.Insert`).
   
  Aby zapisać dane z kolekcji obiektów, w pętli poprzez kolekcji obiektów (na przykład pętli for dalej) i wysłać wartości dla każdego obiektu do bazy danych przy użyciu jednej z TableAdapter dbdirect — metody.  
   
@@ -85,4 +85,3 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-

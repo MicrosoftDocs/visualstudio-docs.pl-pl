@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880796"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647528"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Do opracowywania rozwiązań korzystających z programu Microsoft Office Excel, możesz korzystać z obiektami dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:  
@@ -48,7 +48,7 @@ ms.locfileid: "49880796"
   
   Ten temat zawiera krótkie omówienie modelu obiektów programu Excel. Dla zasobów można znaleźć więcej informacji na temat całego modelu obiektów programu Excel, zobacz [zapoznaj się z dokumentacją model obiektu Excel](#ExcelOMDocumentation).  
   
-  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób użycia I: obsługi zdarzeń w programie Excel 2007 dodatku?](http://go.microsoft.com/fwlink/?LinkID=130291), i [jak kształty Użyj I: Tworzenie wykresu bąbelkowego w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Użyj procedur obsługi zdarzeń w dodatek programu Excel 2007? ](http://go.microsoft.com/fwlink/?LinkID=130291), i [jak: Za pomocą kształtów można utworzyć wykres bąbelkowy w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Uzyskiwanie dostępu do obiektów w projekcie programu Excel  
  Podczas tworzenia nowego projektu dodatku narzędzi VSTO dla programu Excel, programu Visual Studio automatycznie tworzy *ThisAddIn.vb* lub *ThisAddIn.cs* pliku kodu. Dostęp do obiektu aplikacji przy użyciu `Me.Application` lub `this.Application`.  
@@ -106,7 +106,7 @@ ms.locfileid: "49880796"
  Aby uzyskać pełne informacje na temat modelu obiektów programu Excel mogą odwoływać się do programu Excel odwołanie do zestawu podstawowej usługi międzyoperacyjnej (PIA) i dokumentacja modelu obiektów języka VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do zestawu podstawowej usługi międzyoperacyjnej  
- Dokumentacja referencyjna programu Excel PIA opisano typy w podstawowy zestaw międzyoperacyjny dla programu Excel. Ta dokumentacja jest dostępna z następującej lokalizacji: [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+ Dokumentacja referencyjna programu Excel PIA opisano typy w podstawowy zestaw międzyoperacyjny dla programu Excel. Ta dokumentacja jest dostępna z następującej lokalizacji: [Odwołanie do zestawu podstawowej usługi międzyoperacyjnej Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
  Aby uzyskać więcej informacji na temat projektowania PIA programu Excel, takich jak różnice między klasami i interfejsy, które PIA i sposobu implementacji zdarzenia w PIA, zobacz [Przegląd klasy i interfejsy podstawowe zestawy międzyoperacyjne pakietu Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

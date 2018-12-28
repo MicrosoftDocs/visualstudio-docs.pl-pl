@@ -127,12 +127,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924827"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805110"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji proste — wartości skalarnych, a wskaźniki do struktur i klas — i większość typów buforów.  Ten artykuł zawiera również typowe wzorce użycia na potrzeby adnotacji. Dla dodatkowych adnotacji that are related to funkcji, zobacz [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
@@ -495,4 +495,12 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
  [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Zobacz też
- [Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [zrozumienie SAL](../code-quality/understanding-sal.md) [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md) [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md) [ Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md) [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funkcje wewnętrzne](../code-quality/intrinsic-functions.md) [najlepsze praktyki i przykłady](../code-quality/best-practices-and-examples-sal.md)
+
+- [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Informacje o języku SAL](../code-quality/understanding-sal.md)
+- [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
+- [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
+- [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)
+- [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
+- [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)

@@ -23,17 +23,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio]
 - task panes [Office development in Visual Studio], about custom task panes
 - custom task panes [Office development in Visual Studio], about custom task panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79384ac86afe15afda8e6c99e15a519e66302014
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889766"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648271"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna aplikacji Microsoft Office są okienka zadań. Niestandardowe okienka zadań zapewniają możliwość tworzenia własnych okienka zadań i użytkownikom znany interfejs dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać mechanizmy uruchamianie kodu na modyfikowanie dokumentów lub wyświetlania danych ze źródła danych.  
@@ -59,7 +59,7 @@ ms.locfileid: "49889766"
   
 2. Przekazując formantu użytkownika, aby utworzyć wystąpienia niestandardowego okienka zadań <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> obiektu w dodatku VSTO. Ta kolekcja zwraca nowy <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt, który służy do modyfikowania wyglądu okienka zadań i reagowania na zdarzenia użytkownika.  
   
-   Aby uzyskać więcej informacji, zobacz [porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+   Aby uzyskać więcej informacji, zobacz [jak: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 ### <a name="create-the-user-interface"></a>Tworzenie interfejsu użytkownika  
  Wszystkie niestandardowe okienka zadań, które są tworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio zawiera <xref:System.Windows.Forms.UserControl> obiektu. Ten formant użytkownika udostępnia interfejs użytkownika niestandardowego okienka zadań. Można utworzyć kontrolkę użytkownika w czasie projektowania lub w czasie wykonywania. Jeśli utworzysz formant użytkownika w czasie projektowania, można użyć programu Windows Forms Designer do utworzenia interfejsu użytkownika okienka zadań.  
@@ -86,7 +86,7 @@ ms.locfileid: "49889766"
 ## <a name="access-the-application-from-the-task-pane"></a>Uzyskaj dostęp do aplikacji z okienka zadań  
  Jeśli chcesz zautomatyzować aplikacji z kontrolki użytkownika, możesz bezpośrednio uzyskać dostęp modelu obiektów przy użyciu `Globals.ThisAddIn.Application` w kodzie. Statyczne `Globals` klasy zapewnia dostęp do `ThisAddIn` obiektu. `Application` Pola tego obiektu jest punktem wejścia do modelu obiektu aplikacji.  
   
- Aby uzyskać więcej informacji na temat `Application` pole `ThisAddIn` obiektu, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md). Aby uzyskać wskazówki, który demonstruje sposób automatyzacja aplikacji z niestandardowego okienka zadań, zobacz [wskazówki: automatyczne aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Aby uzyskać więcej informacji na temat `Globals` klasy, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Aby uzyskać więcej informacji na temat `Application` pole `ThisAddIn` obiektu, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md). Aby uzyskać wskazówki, który demonstruje sposób automatyzacja aplikacji z niestandardowego okienka zadań, zobacz [instruktażu: Automatyczne aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Aby uzyskać więcej informacji na temat `Globals` klasy, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Zarządzanie interfejsem użytkownika okienka zadań  
  Po utworzeniu okienka zadań, można użyć właściwości i zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt do kontrolowania interfejsu użytkownika w okienku zadań i odpowiadać, jeśli użytkownik zmieni okienka zadań.  
@@ -96,7 +96,7 @@ ms.locfileid: "49889766"
   
  Użytkownikom można zamknąć okienko zadań w dowolnym momencie, klikając **Zamknij** przycisku (X) w rogu okienka zadań. Jednak nie ma domyślnego możliwości dla użytkowników ponownie otworzyć niestandardowego okienka zadań. Jeśli użytkownik zamknie niestandardowego okienka zadań, ten użytkownik nie można wyświetlić niestandardowego okienka zadań ponownie, jeśli nie podasz sposób, aby go wyświetlić.  
   
- Jeśli utworzysz niestandardowego okienka zadań w dodatku narzędzi VSTO dla programów, należy również utworzyć elementu interfejsu użytkownika, takie jak przycisk, który użytkownicy mogą kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań. Jeśli utworzysz niestandardowego okienka zadań w aplikacji pakietu Microsoft Office, który obsługuje dostosowywania Wstążki można dodać grupę formantów na Wstążce za pomocą przycisku, który wyświetla lub ukrywa niestandardowego okienka zadań. Aby uzyskać wskazówki, które pokazuje, jak to zrobić, zobacz [Instruktaż: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+ Jeśli utworzysz niestandardowego okienka zadań w dodatku narzędzi VSTO dla programów, należy również utworzyć elementu interfejsu użytkownika, takie jak przycisk, który użytkownicy mogą kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań. Jeśli utworzysz niestandardowego okienka zadań w aplikacji pakietu Microsoft Office, który obsługuje dostosowywania Wstążki można dodać grupę formantów na Wstążce za pomocą przycisku, który wyświetla lub ukrywa niestandardowego okienka zadań. Aby uzyskać wskazówki, które pokazuje, jak to zrobić, zobacz [instruktażu: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
  Jeśli utworzysz niestandardowego okienka zadań w aplikacji pakietu Microsoft Office, który nie obsługuje dostosowywania wstążki, można dodać <xref:Microsoft.Office.Core.CommandBarButton> , wyświetla lub ukrywa niestandardowego okienka zadań.  
   
@@ -140,7 +140,7 @@ ms.locfileid: "49889766"
   
 - [Word, InfoPath i PowerPoint](#WordAndInfoPath)  
   
-  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób zarządzać I: okienka zadań w dodatkach VSTO programu Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Zarządzanie okienka zadań w dodatkach VSTO programu Word? ](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Program Outlook  
  Po utworzeniu niestandardowego okienka zadań programu Outlook niestandardowego okienka zadań jest skojarzony z określonym oknie Eksploratora lub Inspektora. Eksploratory usługi są systemu windows, które wyświetlają zawartość folderu i inspektorzy, wyświetlające element, taki jak wiadomość e-mail lub zadania.  
@@ -221,7 +221,7 @@ ms.locfileid: "49889766"
 -   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Wskazówki: Automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Wskazówki: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Przewodnik: Automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Przewodnik: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
