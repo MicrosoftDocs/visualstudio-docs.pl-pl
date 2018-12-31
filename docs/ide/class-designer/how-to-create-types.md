@@ -1,5 +1,5 @@
 ---
-title: 'Porady: tworzenie typów za pomocą Projektanta klas'
+title: 'Instrukcje: Tworzenie typów za pomocą projektanta klas'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842264"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685695"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Porady: Tworzenie typów za pomocą projektanta klas
+# <a name="how-to-create-types-by-using-class-designer"></a>Instrukcje: Tworzenie typów za pomocą projektanta klas
 
-Do projektowania nowych typów dla C# i projektach języka Visual Basic, należy je utworzyć na diagramie klasy. Aby wyświetlić istniejące typy, zobacz [porady: wyświetlanie istniejących typów](how-to-view-existing-types.md).
+Do projektowania nowych typów dla C# i projektach języka Visual Basic, należy je utworzyć na diagramie klasy. Aby wyświetlić istniejące typy, zobacz [jak: Wyświetlanie istniejących typów](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Utwórz nowy typ
 
@@ -91,8 +91,7 @@ Do projektowania nowych typów dla C# i projektach języka Visual Basic, należy
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
-- [Porady: Tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)
+- [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
+- [Instrukcje: Tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)
 - [Tworzenie i konfigurowanie składowych typu](creating-and-configuring-type-members.md)
-- [Praca z diagramami klas](working-with-class-diagrams.md)
 - [Projektowanie klas i typów](designing-and-viewing-classes-and-types.md)
