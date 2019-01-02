@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Określanie ustawień debugera | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie ustawień debugera | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279205"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847181"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Porady: Określanie ustawień debugera
+# <a name="how-to-specify-debugger-settings"></a>Instrukcje: Określanie ustawień debugera
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można określić różne ustawienia dla zachowania debugera, w tym, jak zmienne są wyświetlane, czy są prezentowane niektórych ostrzeżeń, jak ustawić punktów przerwania i wpływ podziału na uruchomione programy. Określanie ustawień debugera w **opcje** okno dialogowe.  
   
 ### <a name="to-set-debugger-options"></a>Aby ustawić opcje debugera  

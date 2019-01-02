@@ -2,7 +2,6 @@
 title: Edytowanie kodowanych testów interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0e8e21129392ff949290576dbbbd9a315256b592
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959696"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
 
@@ -186,7 +185,7 @@ Czasami możesz chcieć wykonać próbę, poczekaj, aż niektóre zdarzenia, tak
 
 ![Dodaje się z 5 sekund opóźnienia](../test/media/codeduidealy2.png)
 
-W **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz wstawić opóźnienie przed. Wybieranie akcji interfejsu użytkownika. Następnie otwórz menu skrótów dla działania interfejsu użytkownika i wybierz polecenie **Wstaw opóźnienie przed**. Opóźnienie jest wstawiany i wyróżnione przed wybranej akcji interfejsu użytkownika w następującym tekstem: **poczekaj 1 w sekundach dla opóźnienia użytkownika między akcjami**. W **właściwości** okna, zmień wartość **opóźnienie** żądaną liczbę milisekund.
+W **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz wstawić opóźnienie przed. Wybieranie akcji interfejsu użytkownika. Następnie otwórz menu skrótów dla działania interfejsu użytkownika i wybierz polecenie **Wstaw opóźnienie przed**. Opóźnienie jest wstawiany i wyróżnione przed wybranej akcji interfejsu użytkownika w następującym tekstem: **Poczekaj 1 w sekundach dla opóźnienia użytkownika między akcjami**. W **właściwości** okna, zmień wartość **opóźnienie** żądaną liczbę milisekund.
 
 Po zakończeniu Wstawianie opóźnienia, czy zapisać zmiany *UIMap.Designer* pliku, wybierając **Zapisz** na pasku narzędzi programu Visual Studio.
 
@@ -197,4 +196,4 @@ Jeśli potrzebujesz upewnić się, że jest określona kontrolka jest dostępny 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
 - [Tworzenie opartych na danych kodowanego testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md)
-- [Wskazówki: Tworzenie, edytowanie i obsługa kodowanego interfejsu użytkownika testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

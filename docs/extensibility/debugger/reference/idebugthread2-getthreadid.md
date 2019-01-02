@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::GetThreadId | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::GetThreadId
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4968bdd26607f68c8a1e8e4467904939ee0f528d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec9275519568473f3d762d7b709270ab53770f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854070"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Pobiera identyfikator wątku systemu.  
@@ -28,13 +25,13 @@ Pobiera identyfikator wątku systemu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetThreadId (   
+HRESULT GetThreadId (   
    DWORD* pdwThreadId  
 );  
 ```  
   
 ```csharp  
-int GetThreadId (   
+int GetThreadId (   
    out uint pdwThreadId  
 );  
 ```  

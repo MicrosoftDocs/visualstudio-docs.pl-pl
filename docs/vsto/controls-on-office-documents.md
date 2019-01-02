@@ -1,9 +1,6 @@
 ---
 title: Formanty w dokumentach pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c166ef848f3c9de321bf3451cccdf9c16cfb472
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930599"
 ---
 # <a name="controls-on-office-documents"></a>Formanty w dokumentach pakietu Office
   Narzędzia programistyczne pakietu Office w programie Visual Studio służy do dodawania kontrolek formularzy Windows Forms i *hostowania kontrolek* do dokumentów programu Word i arkusze programu Excel. Formanty hosta to obiekty, które rozszerzają różnych obiektów interfejsu użytkownika w modelach obiektów programu Word i Excel.  
@@ -54,5 +51,3 @@ ms.locfileid: "53441473"
   
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  W tym artykule opisano sposób wyświetlania danych w dokumentach programu Word i Excel przez powiązanie danych kontrolki hosta w dokumencie.  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7264648775f078af16a0a26ecc3bba3a129374c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b02cd0b2e7d9b853a63e3461d627307dce38e542
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891375"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 Pobiera typ danego typu pierwotnego.  

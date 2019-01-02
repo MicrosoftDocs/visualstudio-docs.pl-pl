@@ -34,15 +34,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9f2202c96799fcc2e258e79f050d15fb474d0aa
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847931"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 
@@ -60,7 +59,7 @@ Usługi danych WCF jest implementacją standardowego protokołu Open Data (OData
 
 Model programowania WCF opiera się na komunikację między dwiema jednostkami: usługi WCF i klienta WCF. Model programowania jest hermetyzowany w <xref:System.ServiceModel> przestrzeni nazw w programie .NET Framework.
 
-### <a name="wcf-service"></a>WCF Service
+### <a name="wcf-service"></a>Usługa WCF
 
 Usługa WCF opiera się na interfejs, który definiuje kontrakt między usługą i klienta. Jest on oznaczony wartością <xref:System.ServiceModel.ServiceContractAttribute> atrybutu, jak pokazano w poniższym kodzie:
 
@@ -93,7 +92,7 @@ Po utworzeniu klienta programu WCF możesz odwoływać się usługi w kodzie tak
 
 ## <a name="wcf-tools-in-visual-studio"></a>Narzędzia WCF w programie Visual Studio
 
-Visual Studio zapewnia narzędzia ułatwiające tworzenie usług WCF i klienci WCF. Aby wskazówki, który demonstruje narzędzia, zobacz [wskazówki: tworzenie prostą usługę WCF w formularzach Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+Visual Studio zapewnia narzędzia ułatwiające tworzenie usług WCF i klienci WCF. Aby uzyskać wskazówki, który demonstruje narzędzia, zobacz [instruktażu: Tworzenie prostą usługę WCF w formularzach Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
 
 ### <a name="create-and-test-wcf-services"></a>Tworzenie i testowanie usług WCF
 
@@ -131,7 +130,7 @@ Program Visual Studio upraszcza proces tworzenia klienci WCF, automatycznego gen
 
 **Konfigurowanie odwołania do usług** okno dialogowe umożliwia dostosowanie konfigurację dla usługi. Można zmienić adres usługi, określ poziom dostępu, zachowanie asynchroniczne i typy kontraktu komunikatu i konfigurować ponowne użycie typu.
 
-## <a name="how-to-select-a-service-endpoint"></a>Porady: Wybieranie punktu końcowego usługi
+## <a name="how-to-select-a-service-endpoint"></a>Instrukcje: Wybierz punkt końcowy usługi
 
 Niektóre usługi Windows Communication Foundation (WCF) ujawniają wiele punktów końcowych, za pomocą których klient może komunikować się z usługą. Na przykład usługa może narazić jeden punkt końcowy, który używa powiązanie HTTP i nazwę użytkownika i hasło zabezpieczeń i drugi punkt końcowy, który korzysta z protokołu FTP i uwierzytelniania Windows. Pierwszy punkt końcowy mogą być używane przez aplikacje uzyskujące dostęp do usługi z poza zaporą, podczas gdy drugi mogą być używane w sieci intranet.
 
@@ -175,7 +174,7 @@ W takim przypadku można określić `endpointConfigurationName` jako parametr do
 
 4.  Wewnątrz `<EndPoint>` tagu, można znaleźć `name="` *SomeService* `"` parametru (gdzie *SomeService* reprezentuje nazwę punktu końcowego). Jest to nazwa punktu końcowego, który może być przekazywany do `endpointConfigurationName As String` przeciążenia konstruktora odwołania do usługi.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Instrukcje: asynchroniczne wywoływanie metody usługi
+## <a name="how-to-call-a-service-method-asynchronously"></a>Instrukcje: Asynchroniczne wywoływanie metody usługi
 
 Większość metod w usług Windows Communication Foundation (WCF) może zostać wywołana synchronicznie lub asynchronicznie. Asynchroniczne wywołanie metody umożliwia aplikacji, aby kontynuować pracę, podczas gdy metoda jest wywoływana, gdy działa przez wolne połączenie.
 
@@ -194,7 +193,7 @@ Domyślnie gdy odwołanie do usługi zostanie dodany do projektu, go jest skonfi
 
 3.  W **Konfiguruj odwołanie do usługi** okno dialogowe, wybierz opcję **Eneruj operacje asynchroniczne** pole wyboru.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Porady: powiązywanie danych zwracanych przez usługę
+## <a name="how-to-bind-data-returned-by-a-service"></a>Instrukcje: Powiązanie danych zwracanych przez usługę
 
 Można powiązać danych zwracanych przez usługę Windows Communication Foundation (WCF) do formantu, tak samo, jak dowolnego innego źródła danych można powiązać formant. Po dodaniu odwołania do usługi WCF, jeśli usługa zawiera złożone typy, które zwracają dane, są automatycznie dodawane do **źródeł danych** okna.
 
@@ -228,7 +227,7 @@ Można powiązać danych zwracanych przez usługę Windows Communication Foundat
 
 5.  Przeciągnij węzeł na formularzu. Formanty są dodawane do formularza, wraz z <xref:System.Windows.Forms.BindingSource> składnika i <xref:System.Windows.Forms.BindingNavigator> składnika.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Porady: Konfigurowanie usługi do ponownego użycia istniejących typów
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Instrukcje: Konfigurowanie usługi do ponownego użycia istniejących typów
 
 Po dodaniu do projektu odwołanie do usługi żadnych typów zdefiniowanych w usłudze są generowane w projekcie lokalnym. W wielu przypadkach tworzy to typy zduplikowanych, gdy usługa korzysta z wspólnego typów programu .NET Framework lub gdy typy są definiowane w bibliotece udostępnionej.
 
@@ -256,10 +255,10 @@ Aby uniknąć tego problemu, typów w przywoływanych zestawach są udostępnion
 
 | Tytuł | Opis |
 | - | - |
-| [Przewodnik: tworzenie prostej usługi WCF w aplikacji Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Zawiera instrukcje krok po kroku Pokaz tworzenia i używania usług WCF w programie Visual Studio. |
-| [Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Zawiera pokaz krok po kroku dotyczące tworzenia i używania usług danych WCF w programie Visual Studio. |
+| [Przewodnik: Tworzenie prostą usługę WCF w formularzach Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Zawiera instrukcje krok po kroku Pokaz tworzenia i używania usług WCF w programie Visual Studio. |
+| [Przewodnik: Tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Zawiera pokaz krok po kroku dotyczące tworzenia i używania usług danych WCF w programie Visual Studio. |
 | [Używanie narzędzi deweloperskich programu WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | W tym artykule omówiono sposób tworzenia i testowania usługi WCF w programie Visual Studio. |
-| | [Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| | [Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md) | Przedstawia informacje o typowych błędów, które mogą wystąpić, za pomocą odwołań do usług i sposobu zapobiegania im. |
 | [Debugowanie usług WCF](../debugger/debugging-wcf-services.md) | Zawiera opis typowych problemów debugowania i technik, które mogą wystąpić podczas debugowania usług WCF. |
 | [Przewodnik: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Instrukcje krok po kroku dotyczące tworzenia typizowany zestaw danych i oddzielenie kodu TableAdapter i zestaw danych do wielu projektów. |

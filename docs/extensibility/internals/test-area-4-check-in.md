@@ -1,9 +1,6 @@
 ---
-title: 'Obszar testu 4: Zaewidencjonuj | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Obszar testowy 4: Zaewidencjonuj | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f3e8a343823016f391735aae59e58dfefe1a5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80b3603480964daf618040a983b181a9a82f7407
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853297"
 ---
-# <a name="test-area-4-check-in"></a>Obszar testu 4: Zaewidencjonuj
-Ten obszar testu wtyczkę kontroli źródła obejmuje wysyłanie zaktualizowane elementy do magazynu wersji za pomocą **Zaewidencjonuj** polecenia.  
+# <a name="test-area-4-check-in"></a>Obszar testowy 4: Zaewidencjonuj
+Ten obszar testowy wtyczki kontroli źródła obejmuje wysyłanie zaktualizowanych elementów do magazynu wersji za pomocą **Zaewidencjonuj** polecenia.  
   
-## <a name="command-menu-access"></a>Dostęp do poleceń Menu  
- Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] programowanie zintegrowanego środowiska menu ścieżki są używane w przypadku testowego.  
+## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
+ Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.  
   
 ##### <a name="check-in"></a>Zamelduj się:  
  **Plik**, **kontroli źródła**, **zaewidencjonować**.  
@@ -34,40 +31,40 @@ Ten obszar testu wtyczkę kontroli źródła obejmuje wysyłanie zaktualizowane 
   
  Menu skrótów **Zaewidencjonuj**.  
   
-## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie  
+## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.  
   
--   Projekty i pliki dodane do rozwiązania lub projektu pod kontrolą źródła są wyświetlane w **Zaewidencjonuj** okno dialogowe i **oczekujących zaewidencjonowań** okna.  
+-   Projekty i pliki dodane do rozwiązania lub projektu objętego kontrolą źródła są wyświetlane w **Zaewidencjonuj** okno dialogowe i **oczekujące elementy do zaewidencjonowania** okna.  
   
--   Po zaewidencjonowaniu dodawanych elementów są wyświetlane w kontroli źródła.  
+-   Po zaewidencjonowaniu dodane elementy są wyświetlane w kontroli źródła.  
   
--   Po zaewidencjonowaniu zaktualizowane elementy są poprawnie określonej wersji w magazynie.  
+-   Po zaewidencjonowaniu zaktualizowane elementy są prawidłowo wersjonowanych w magazynie.  
   
 ## <a name="test-cases"></a>Przypadki testowe  
  Poniżej przedstawiono określonych przypadków testowych dla obszaru testów zaewidencjonowania.  
   
-### <a name="case-4a-modified-items"></a>Przypadek 4a: zmodyfikowane elementy  
- Zawiera opis funkcji w akcji można zaktualizować pliku pod kontrolą źródła, które zostały zmodyfikowane.  
+### <a name="case-4a-modified-items"></a>Wielkość 4a: Zmodyfikowane elementy  
+ Opisano sposób używania sprawdzenie w działaniu można zaktualizować pliku objętego kontrolą źródła, który został zmodyfikowany.  
   
-|Akcja|Kroki testu|Oczekiwanych rezultatów, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  
-|Modyfikowanie pliku tekstowego, który został wyewidencjonowany, sprawdź w pliku tylko (**Zaewidencjonuj** okno dialogowe)|1.  Utwórz nowy projekt z pliku tekstowego.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Wyewidencjonuj i modyfikowania pliku tekstowego.<br />4.  Sprawdź w za pomocą okna dialogowego zaewidencjonowania (**pliku**, **kontroli źródła**, **Zaewidencjonuj**).|Typowe oczekiwane zachowanie.|  
-|Modyfikowanie pliku tekstowego, który został wyewidencjonowany, sprawdź w pliku tylko (**oczekujących zaewidencjonowań** okna)|1.  Utwórz nowy projekt z pliku tekstowego.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Wyewidencjonuj i modyfikowania pliku tekstowego.<br />4.  Sprawdź w za pomocą **oczekujących zaewidencjonowań** okna.|Typowe oczekiwane zachowanie.|  
+|Zmodyfikuj plik tekstowy, który został wyewidencjonowany, sprawdź w pliku tylko (**Zaewidencjonuj** okno dialogowe)|1.  Utwórz nowy projekt za pomocą pliku tekstowego.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zapoznaj się z i zmodyfikuj plik tekstowy.<br />4.  Sprawdź plik w folderze za pomocą okna dialogowego zaewidencjonowania (**pliku**, **kontroli źródła**, **Zaewidencjonuj**).|Typowe oczekiwane zachowanie.|  
+|Zmodyfikuj plik tekstowy, który został wyewidencjonowany, sprawdź w pliku tylko (**oczekujące elementy do zaewidencjonowania** okna)|1.  Utwórz nowy projekt za pomocą pliku tekstowego.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zapoznaj się z i zmodyfikuj plik tekstowy.<br />4.  Zaewidencjonuj za pośrednictwem **oczekujące elementy do zaewidencjonowania** okna.|Typowe oczekiwane zachowanie.|  
   
-### <a name="case-4b-adding-files"></a>Przypadek 4b: Dodawanie plików  
- Podczas dodawania pliku projektu lub elementu do rozwiązania, projektu lub rozwiązania należy również zmienić. W związku z tym pliku nadrzędnego również jest wyewidencjonowany i musi być zaewidencjonowany przeprowadzenie operacji dodawania.  
+### <a name="case-4b-adding-files"></a>Wielkość 4b: Trwa dodawanie plików  
+ Podczas dodawania pliku do projektu lub elementu do rozwiązania, projektu lub rozwiązania, należy również zmienić. Tym samym pliku nadrzędnego również jest wyewidencjonowany i muszą zostać zaewidencjonowane, aby zakończyć dodawanie.  
   
-|Akcja|Kroki testu|Oczekiwanych rezultatów, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  
-|Dodaj plik tekstowy i zaewidencjonuj wszystko (**Zaewidencjonuj** okno dialogowe)|1.  Utwórz nowy projekt.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj plik tekstowy do projektu.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie projektu.<br />5.  Wybierz rozwiązanie w **Eksploratora rozwiązań**.<br />6.  Sprawdź w z **Zaewidencjonuj** okno dialogowe.|Typowe oczekiwane zachowanie.|  
-|Dodaj plik tekstowy i zaewidencjonuj wszystko (**oczekujących zaewidencjonowań** okna)|1.  Utwórz nowy projekt.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj plik tekstowy do projektu.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie projektu.<br />5.  Sprawdź w rozwiązaniu z **oczekujących zaewidencjonowań** okna.|Typowe oczekiwane zachowanie|  
+|Dodaj plik tekstowy i zaewidencjonuj wszystko przed (**Zaewidencjonuj** okno dialogowe)|1.  Utwórz nowy projekt.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj plik tekstowy do projektu.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowania projektu.<br />5.  Wybierz rozwiązanie w **Eksploratora rozwiązań**.<br />6.  Sprawdź **Zaewidencjonuj** okno dialogowe.|Typowe oczekiwane zachowanie.|  
+|Dodaj plik tekstowy i zaewidencjonuj wszystko przed (**oczekujące elementy do zaewidencjonowania** okna)|1.  Utwórz nowy projekt.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj plik tekstowy do projektu.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowania projektu.<br />5.  Zaewidencjonuj rozwiązanie z **oczekujące elementy do zaewidencjonowania** okna.|Typowe oczekiwane zachowanie.|  
   
-### <a name="case-4c-adding-projects"></a>Przypadek 4c: dodawanie projektów  
- Po dodaniu projektu do rozwiązania, należy także zmienić rozwiązania. W związku z tym plik rozwiązania również jest wyewidencjonowany i musi być zaewidencjonowany przeprowadzenie operacji dodawania.  
+### <a name="case-4c-adding-projects"></a>W przypadku 4c: Dodawanie projektów  
+ Po dodaniu projektu do rozwiązania, należy także zmienić rozwiązania. Dlatego pliku rozwiązania jest wyewidencjonowany również i muszą zostać zaewidencjonowane, aby zakończyć dodawanie.  
   
-|Akcja|Kroki testu|Oczekiwanych rezultatów, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  
-|Dodaj projekt do rozwiązania puste pod kontrolą źródła (**Zaewidencjonuj** okno dialogowe)|1.  Utwórz puste rozwiązanie.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj nowy projekt.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie rozwiązania.<br />5.  Sprawdź w z **Zaewidencjonuj** okno dialogowe.|Typowe oczekiwane zachowanie.|  
-|Dodaj projekt do rozwiązania puste pod kontrolą źródła (**oczekujących zaewidencjonowań** okna)|1.  Utwórz puste rozwiązanie.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj nowy projekt.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie rozwiązania.<br />5.  Sprawdź w rozwiązaniu z **oczekujących zaewidencjonowań** okna.|Typowe oczekiwane zachowanie.|  
+|Dodaj projekt do puste rozwiązanie pod kontrolą źródła (**Zaewidencjonuj** okno dialogowe)|1.  Utwórz puste rozwiązanie.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj nowy projekt.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie rozwiązania.<br />5.  Sprawdź **Zaewidencjonuj** okno dialogowe.|Typowe oczekiwane zachowanie.|  
+|Dodaj projekt do puste rozwiązanie pod kontrolą źródła (**oczekujące elementy do zaewidencjonowania** okna)|1.  Utwórz puste rozwiązanie.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj nowy projekt.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie rozwiązania.<br />5.  Zaewidencjonuj rozwiązanie z **oczekujące elementy do zaewidencjonowania** okna.|Typowe oczekiwane zachowanie.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

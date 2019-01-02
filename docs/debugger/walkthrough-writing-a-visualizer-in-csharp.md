@@ -2,7 +2,6 @@
 title: Pisanie wizualizatora w C# | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 872f1a899bf9731dd86d5d9c14e5639c2a4630aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79127504259fde6e3b8d0a917b7a83554eaf23cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925225"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Wskazówki: Pisanie wizualizatora w C# #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: Pisanie wizualizatora w języku C# #
 W tym instruktażu pokazano, jak pisanie prostego wizualizatora przy użyciu języka C#. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu okna komunikatu Windows forms. Ten Wizualizator prostego ciągu nie jest szczególnie przydatne w sobie, ale pokazuje podstawowe kroki, które należy wykonać, aby utworzyć bardziej użyteczny, wizualizatorów dla innych typów danych.
 
 > [!NOTE]
@@ -222,7 +221,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 
    Gratulacje. Mieć po prostu tworzone i testowane na Twoje pierwsze wizualizatora.
 
-   Aby korzystanie z wizualizatora w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamiast po prostu wywoływanie z kontroler testów, należy go zainstalować. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md).
+   Aby korzystanie z wizualizatora w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamiast po prostu wywoływanie z kontroler testów, należy go zainstalować. Aby uzyskać więcej informacji, zobacz [jak: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Tworzenie za pomocą szablonu elementu Wizualizator wizualizatora
 
@@ -261,5 +260,5 @@ Najpierw należy utworzyć nowy projekt biblioteki klas.
 ## <a name="see-also"></a>Zobacz także
 
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
-- [Instrukcje: instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)
+- [Instrukcje: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

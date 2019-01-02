@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Ukrywanie formantów w arkuszu podczas drukowania'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 322c314a768545996f343526367de44c667ce89b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d245e6d1d4af1d0135abe88c89f54490a0f5296e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873434"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Instrukcje: Ukrywanie formantów w arkuszu podczas drukowania
   Podczas drukowania dokument programu Microsoft Office Excel, który zawiera formanty Windows Forms, formanty są widoczne na drukowanego arkusza. Można ukryć formantów podczas drukowania arkusza.  
@@ -49,5 +46,3 @@ ms.locfileid: "53646802"
  [Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Instrukcje: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Instrukcje: Zmiana rozmiaru formantów w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
-  
-  

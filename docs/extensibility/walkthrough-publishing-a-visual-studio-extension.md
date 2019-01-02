@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852456"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 
@@ -33,7 +30,7 @@ W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual S
 
 W tym artykule użyto rozszerzenia pakietu VSPackage domyślnego, ale kroki są prawidłowe dla każdego rodzaju rozszerzenia.
 
-1. Tworzenie pakietu VSPackage w języku C# o nazwie `TestPublish` zawierający polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie pierwszego rozszerzenia: Hello World](../extensibility/extensibility-hello-world.md).
+1. Tworzenie pakietu VSPackage w języku C# o nazwie `TestPublish` zawierający polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie pierwszego rozszerzenia: Witaj, świecie](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Pakiet rozszerzenia
 
@@ -71,7 +68,7 @@ W tym artykule użyto rozszerzenia pakietu VSPackage domyślnego, ale kroki są 
 
 6. Wybierz wydawcę, którego chcesz użyć, aby przekazać Twoje rozszerzenie. Możesz zmienić wydawcy, klikając na liście po lewej stronie nazwy wydawcy. Kliknij pozycję **nowe rozszerzenie** i wybierz **programu Visual Studio**.
 
-7. W **1: Przekaż rozszerzenia**, możesz przekazać plik VSIX bezpośrednio do programu Visual Studio Marketplace lub po prostu Dodaj link do własnej witryny sieci Web. W tym przykładzie rozszerzenie *TestPublish.vsix* zostanie przekazany. Przeciągnij i upuść Twojego rozszerzenia lub użyj **kliknij** link, aby przejść do pliku. Znajdź rozszerzenia w folderze \bin\Release projektu.  Kliknij przycisk **Kontynuuj**.
+7. W **1: Przekazywanie rozszerzenia**, możesz przekazać plik VSIX bezpośrednio do programu Visual Studio Marketplace lub po prostu Dodaj link do własnej witryny sieci Web. W tym przykładzie rozszerzenie *TestPublish.vsix* zostanie przekazany. Przeciągnij i upuść Twojego rozszerzenia lub użyj **kliknij** link, aby przejść do pliku. Znajdź rozszerzenia w folderze \bin\Release projektu.  Kliknij przycisk **Kontynuuj**.
 
 8. W **2: Podaj szczegóły rozszerzenia**, niektóre pola są wypełniane automatycznie z *source.extension.vsixmanifest* plik z Twojego rozszerzenia. Znajdź więcej szczegółów dotyczących poszczególnych poniżej:
 
@@ -123,13 +120,13 @@ Portal Marketplace obsługuje udzielanie użytkownikom dodatkowe uprawnienia do 
 
 3. Następnie możesz określić adres e-mail użytkownika, o których chcesz dodać, a następnie przyznać odpowiedni poziom dostępu w ramach **wybierz rolę**.  Można wybrać następujące opcje:
 
-   * **Twórca**: użytkownik może publikowania rozszerzenia, ale nie wyświetlić ani nimi zarządzać rozszerzenia publikowane przez innych użytkowników.
+   * **Twórca**: Użytkownika można publikować rozszerzenia, ale nie można wyświetlić lub zarządzać rozszerzenia publikowane przez innych użytkowników.
   
-   * **Czytnik**: użytkownika można wyświetlanie tych rozszerzeń, ale nie można opublikować lub Zarządzaj rozszerzeniami.
+   * **Czytnik**: Użytkownika można wyświetlanie tych rozszerzeń, ale nie można publikować lub Zarządzaj rozszerzeniami.
   
-   * **Współautor**: użytkownika można publikować i zarządzania rozszerzeniami, ale nie można edytować ustawienia wydawcy lub zarządzanie dostępem.
+   * **Współautor**: Użytkownika można publikować i zarządzania rozszerzeniami, ale nie można edytować ustawienia wydawcy lub zarządzania dostępem.
   
-   * **Właściciel**: użytkownik może opublikować i zarządzać rozszerzeniami, edytować ustawienia wydawcy i zarządzanie dostępem.
+   * **Właściciel**: Użytkownik może opublikować Zarządzaj rozszerzeniami, edytować ustawienia wydawcy i zarządzanie dostępem do.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Należy zainstalować rozszerzenie z witryny Marketplace programu Visual Studio
 

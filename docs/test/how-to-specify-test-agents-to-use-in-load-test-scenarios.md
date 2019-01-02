@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f6debabdb154e091a8021ccd998bb31d8f88d28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932262"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Porady: Określ test agentów do użycia w obciążenia przetestować scenariusze
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Instrukcje: Określanie agentów testowych do użycia w scenariuszach testów obciążenia
 
 Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
 
@@ -69,6 +68,6 @@ Jeśli komputer agenta testowego ma więcej niż 75 procent wykorzystania proces
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
+- [Przewodnik: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)

@@ -1,12 +1,11 @@
 ---
-title: 'CA2218: Zastąp GetHashCode przy przesłanianiu Equals | Dokumentacja firmy Microsoft'
+title: 'CA2218: Przesłaniaj metodę GetHashCode w przesłaniania metody Equals | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bc9e72639e123e0a99c4423b460bc4122995971c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26e004958fa498115b7cfad2b5c5d44c22c17fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929046"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Zastąp GetHashCode przy przesłanianiu Equals
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Przesłaniaj metodę GetHashCode w przesłaniania metody Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -98,11 +97,11 @@ ms.locfileid: "49881914"
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1046: Nie przeciążaj operatora równości w typach referencyjnych](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Przeciążenia operatora mają nazwane alternatywy](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Operator overloads ma nazwanych zastępców](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
  [CA2226: Operatory powinny mieć symetryczne przeciążenia](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Przesłaniaj metodę Equals w przypadku przeciążania operacji równości operatorów](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Przesłoń metodę equals, przeciążając operator equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 

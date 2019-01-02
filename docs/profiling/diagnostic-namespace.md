@@ -1,8 +1,6 @@
 ---
 title: Namespace diagnostycznych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: c46f67281fe62de36472d9007f21841e843c20fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839446"
 ---
 # <a name="diagnostic-namespace"></a>Diagnostic — przestrzeń nazw
-`diagnostics` Przestrzeń nazw zapewnia funkcje do emitowania znaczników wizualizatora współbieżności.  
+`diagnostics` Przestrzeń nazw zawiera funkcje do emitowania znaczników narzędzia Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,19 +34,19 @@ namespace diagnostic;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[marker_series, klasa](../profiling/marker-series-class.md)|Reprezentuje serial kanału zdarzeń generowanych przez jednego dostawcę.|  
+|[marker_series, klasa](../profiling/marker-series-class.md)|Reprezentuje serial kanał zdarzeń generowanych przez jednego dostawcę.|  
 |[span, klasa](../profiling/span-class.md)|Definiuje fazy aplikacji.|  
   
 ### <a name="enumerations"></a>Wyliczenia  
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[Wyliczenie marker_importance](../profiling/marker-importance-enumeration.md)|Reprezentuje poziom ważności znaczników wizualizatora współbieżności.|  
+|[Wyliczenie marker_importance](../profiling/marker-importance-enumeration.md)|Reprezentuje poziom ważności znaczników narzędzia Concurrency Visualizer.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkersobj.h*  
   
- **Namespace:** współbieżności  
+ **Namespace:** Współbieżność  
   
 ## <a name="see-also"></a>Zobacz także  
- [Przestrzeń nazw współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+ [Przestrzeń nazwy współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)

@@ -1,9 +1,7 @@
 ---
 title: Architektura rozwiązań pakietu Office w programie Visual Studio
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5916ca091d7479b76c21aff914811d090f6667
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: c5fd58f487aa7323450f1236f9ac39ef11769bdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837985"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura rozwiązań pakietu Office w programie Visual Studio
   Tematy w tej sekcji Podaj informacje o współpracy rozwiązania utworzone przy użyciu narzędzi Office developer tools w programie Visual Studio.  
@@ -59,5 +57,3 @@ ms.locfileid: "53247903"
   
  [Informacje ogólne &#40;programowanie Office w Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Zawiera łącza do informacji o użytkowniku elementy interfejsu w projektach pakietu Office, aplikacje i manifesty wdrożenia dla projektów pakietu Office i interfejsy API w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane pobieranie folderu według nazwy'
-ms.custom: ''
+title: 'Instrukcje: Programowe pobieranie folderu według nazwy'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 622ad7057b50f73dbd74108e3d9619017c354b86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d772f5cb71a6921c7a89cdf8d176890c927add65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872677"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Porady: programowane pobieranie folderu według nazwy
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Instrukcje: Programowe pobieranie folderu według nazwy
   W tym przykładzie pobiera odwołanie do folderu o nazwie niestandardowego, a następnie wyświetla zawartość tego folderu.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -37,8 +34,6 @@ ms.locfileid: "35676381"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z folderami](../vsto/working-with-folders.md)   
- [Porady: programowane wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Porady: programowane wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Porady: programowane Tworzenie niestandardowych elementów folderu](../vsto/how-to-programmatically-create-custom-folder-items.md)  
-  
-  
+ [Instrukcje: Programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [Instrukcje: Programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Instrukcje: Programowe tworzenie niestandardowych elementów folderu](../vsto/how-to-programmatically-create-custom-folder-items.md)  

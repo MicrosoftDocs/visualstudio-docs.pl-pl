@@ -1,9 +1,6 @@
 ---
 title: 'Obszar testowy 1: Dodawanie do otwierania z kontroli źródła | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3541fc3a4d4b802e4cd89b14dac6d6caf222152
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842675"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj / Otwórz z kontroli źródła
 Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiązań lub projektów pod kontrolą źródła i pobierania ich z kontroli źródła.  
@@ -27,15 +24,15 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
  Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadki testowe:  
   
-- Dla [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Otwórz z kontroli źródła: **pliku**, **Otwórz**, **projektu**/**rozwiązania**; Szukaj w [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] lokalizacji.  
+- Aby uzyskać [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Otwórz z kontroli źródła: **Plik**, **Otwórz**, **projektu**/**rozwiązania**; Szukaj w [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] lokalizacji.  
   
-- Dla innych źródła wtyczek kontroli, Otwórz z kontroli źródła: **pliku**, **kontroli źródła**, **Otwórz z kontroli źródła**.  
+- Dla innych źródła wtyczek kontroli Otwórz z kontroli źródła: **Plik**, **kontroli źródła**, **Otwórz z kontroli źródła**.  
   
-- Dodaj do kontroli źródła: **pliku**, **kontroli źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj Wybrane projekty do kontroli źródła**.  
+- Dodaj do kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**.  
   
 - Menu skrótów (projekt/rozwiązanie) **Dodaj rozwiązanie do kontroli źródła**.  
   
-- Dodaj z kontroli źródła: **pliku**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**.  
+- Dodaj z kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**.  
   
 - Dla [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Dodaj ze źródła kontrolki jest również dostępna z **pliku**, **Dodaj**, **istniejący projekt**; Szukaj w [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] lokalizacji.  
   
@@ -57,7 +54,7 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
 ## <a name="test-cases"></a>Przypadki testowe  
  Poniżej przedstawiono określonych przypadków testowych do dodawania / Otwórz z kontroli źródła obszar testowy.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Zamierzone, Zapisz 1a: Dodaj rozwiązanie do kontroli źródła  
+### <a name="case-1a-add-solution-to-source-control"></a>Wielkość 1a: Dodaj rozwiązanie do kontroli źródła  
  Ten przypadek testowy koncentruje się na dodawanie rozwiązania do kontroli źródła.  
   
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  

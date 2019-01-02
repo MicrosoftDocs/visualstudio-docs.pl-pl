@@ -1,8 +1,6 @@
 ---
-title: 'Porady: dołączanie do skryptu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dołączanie do skryptu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b533a82f02d0c993ea4ecc58aca700c540e6a39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73dbb479c7f579739d04a2c378fb984fbba1f72b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934907"
 ---
-# <a name="how-to-attach-to-script"></a>Porady: dołączanie do skryptu
+# <a name="how-to-attach-to-script"></a>Instrukcje: Dołączanie do skryptu
 W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Studio do pliku skryptu w celu debugowania.  
   
 ### <a name="to-attach-to-a-running-process"></a>Aby dołączyć do uruchomionego procesu  
@@ -44,7 +42,7 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
   
 3. Kliknij proces, który chcesz dołączyć do.  
   
-4. W **dołączyć do** polu, powinien zostać wyświetlony **kod skryptu** lub **automatyczne: kod skryptu**. Jeśli widzisz czymkolwiek, wykonaj następujące kroki:  
+4. W **dołączyć do** polu, powinien zostać wyświetlony **kod skryptu** lub **automatyczne: Kod skryptu**. Jeśli widzisz czymkolwiek, wykonaj następujące kroki:  
   
    1.  Kliknij przycisk **wybierz**.  
   
@@ -54,16 +52,16 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
   
 5. Kliknij przycisk **dołączyć**.  
   
-    W tym momencie może być wyświetlone ostrzeżenie informujące o tym, że debugowanie skryptów jest wyłączone w programie Internet Explorer. Jeśli ma to miejsce, zobacz [Ostrzeżenie: debugowanie skryptu — wyłączone](../debugger/warning-script-debugging-disabled.md).  
+    W tym momencie może być wyświetlone ostrzeżenie informujące o tym, że debugowanie skryptów jest wyłączone w programie Internet Explorer. Jeśli ma to miejsce, zobacz [ostrzeżenia: Debugowanie skryptu wyłączone](../debugger/warning-script-debugging-disabled.md).  
   
    **Dostępne procesy** zostanie wyświetlona lista automatycznie po otwarciu **procesy** okno dialogowe. Procesy można uruchomić i zatrzymać w tle, gdy jest otwarte okno dialogowe. W związku z tym zawartość może nie zawsze być nieaktualne. Można odświeżyć listę w dowolnym momencie, aby wyświetlić bieżącą listę procesów, naciskając klawisz **Odśwież** przycisku.  
   
-   Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w pasku narzędzi debugowania lokalizacji. Aby uzyskać więcej informacji, zobacz [porady: ustawienie bieżącego procesu](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
+   Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w pasku narzędzi debugowania lokalizacji. Aby uzyskać więcej informacji, zobacz [jak: Ustaw bieżący proces](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
   
    Wszystkie **debugowania** poleceń menu wpływają na aktywny program. W oknie dialogowym procesów, może przerwać dowolnego debugowanego programu. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
->  Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie okna dialogowego potwierdzenia zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+>  Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie okna dialogowego potwierdzenia zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
  W niektórych przypadkach podczas debugowania w sesji usług terminalowych (pulpitu zdalnego), lista dostępnych procesów nie będą wyświetlane wszystkie dostępne procesy. Na [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] lub nowsze wersje, jeśli używasz programu Visual Studio jako użytkownik, lista dostępnych procesów będą wyświetlały procesy uruchomione w sesji 0, które jest używane w przypadku usług i innych procesów serwera, w tym w3wp.exe. Problem można rozwiązać, uruchamiając program Visual Studio przy użyciu konta administratora lub przez uruchomienie programu Visual Studio z konsoli serwera zamiast sesji usług terminalowych. Jeśli żadna z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu, wpisując polecenie vsjitdebugger.exe -p ProcessId w wierszu polecenia Windows. Za pomocą tlist.exe, należy określić identyfikator procesu. Aby uzyskać tlist.exe, Pobierz i zainstaluj debugowanie Tools for Windows, dostępne pod adresem [Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/).  
   

@@ -1,8 +1,6 @@
 ---
 title: Tworzenie niestandardowych pakietów programu inicjującego
-ms.custom: ''
 ms.date: 05/02/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878393"
 ---
 # <a name="create-bootstrapper-packages"></a>Tworzenie niestandardowych pakietów programu inicjującego
 Setup program jest generycznym Instalatorem, który można skonfigurować, aby wykrywać i instalować składników pakietu redystrybucyjnego, takich jak Instalator Windows (*.msi*) plików i programów wykonywalnych. Instalator jest również znany jako program inicjujący. Jest programowane za pomocą zestawu manifestów XML, które określają metadane w celu zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub warunek wstępny, który pojawia się w **wymagania wstępne** okno dialogowe ClickOnce jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wstępnie wymaganego składnika. 
@@ -35,13 +33,13 @@ Setup program jest generycznym Instalatorem, który można skonfigurować, aby w
 Program inicjujący najpierw wykrywa, czy dowolny z wymagań wstępnych są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw program inicjujący wyświetli umów licencyjnych. Po drugie, po użytkownik akceptuje umów licencyjnych, rozpocznie się instalacja dla wymagań wstępnych. W przeciwnym razie jeśli zostaną wykryte wszystkie wymagania wstępne, program inicjujący tylko uruchamia Instalatora aplikacji.  
   
 ## <a name="create-custom-bootstrapper-packages"></a>Utwórz niestandardowe pakiety programu inicjującego  
-Za pomocą edytora XML w programie Visual Studio można wygenerować manifestów programu inicjującego. Aby zobaczyć przykład utworzenia pakietu bootstrapper, zobacz [wskazówki: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+Za pomocą edytora XML w programie Visual Studio można wygenerować manifestów programu inicjującego. Aby zobaczyć przykład utworzenia pakietu bootstrapper, zobacz [instruktażu: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
 Aby utworzyć pakiet bootstrapper, masz do tworzenie manifestu produktu i, dla każdego zlokalizowanego wersji składnika, jak również manifestu pakietu.
   
-* Manifest produktu *product.xml*, zawiera wszystkie metadane niezależny od języka dla pakietu. Zawiera to metadane wspólne dla wszystkich lokalizowanych wersji komponentu do redystrybucji.  Aby utworzyć ten plik, zobacz [porady: tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).
+* Manifest produktu *product.xml*, zawiera wszystkie metadane niezależny od języka dla pakietu. Zawiera to metadane wspólne dla wszystkich lokalizowanych wersji komponentu do redystrybucji.  Aby utworzyć ten plik, zobacz [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).
   
-* Manifest pakietu *package.xml*, zawiera metadane specyficzne dla języka; typowo zawiera lokalizowane komunikaty o błędzie. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika. Aby utworzyć ten plik, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).
+* Manifest pakietu *package.xml*, zawiera metadane specyficzne dla języka; typowo zawiera lokalizowane komunikaty o błędzie. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika. Aby utworzyć ten plik, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).
   
 Po utworzeniu tych plików, należy umieścić plik manifestu produktu w folderze o nazwie niestandardowy program inicjujący. Plik manifestu pakietu przechodzi do folderu nazwanego na podstawie lokalizacji. Na przykład w przypadku pliku manifestu pakietu do redystrybucji w języku angielskim, należy umieścić plik w folderze o nazwie en. Powtórz ten proces dla poszczególnych ustawień regionalnych, takich jak ja w języku japońskim i "de" dla języka niemieckiego. Końcowe niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
 
@@ -60,7 +58,7 @@ Po utworzeniu tych plików, należy umieścić plik manifestu produktu w folderz
         package.xml
     ```
   
-Następnie skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+Następnie skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).
  
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
     
@@ -97,7 +95,7 @@ Aby uniemożliwić Twoich plików redystrybucyjnych w projektach konfiguracji wd
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-Redystrybucyjna lista jest plikiem XML, który należy nadać nazwę w następującym formacie:  *\<nazwa firmy >.\< Nazwa składnika >. RedistList.xml*. Tak, na przykład, jeśli składnik ten jest wywoływany przez Acme Datawidgets, użyj *Acme.DataWidgets.RedistList.xml*. Przykład zawartości listy do dystrybucji może wyglądać następująco:  
+Redystrybucyjna lista jest plikiem XML, należy nadać nazwę w następującym formacie: *\<Nazwa firmy >. \<Nazwa składnika >. RedistList.xml*. Tak, na przykład, jeśli składnik ten jest wywoływany przez Acme Datawidgets, użyj *Acme.DataWidgets.RedistList.xml*. Przykład zawartości listy do dystrybucji może wyglądać następująco:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -107,7 +105,7 @@ Redystrybucyjna lista jest plikiem XML, który należy nadać nazwę w następuj
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Instrukcje: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Wymagania wstępne, okno dialogowe](../ide/reference/prerequisites-dialog-box.md)   
  [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)   
  [Użyj bootstrapper programu Visual Studio 2005, aby uruchomić instalację](http://go.microsoft.com/fwlink/?LinkId=107537)

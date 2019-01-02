@@ -1,8 +1,6 @@
 ---
 title: Idiastackwalkframe — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,46 +12,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f16d6f824b3b150406c23cce87e186fe9b120999
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa93204c7011fb13a079c22a0f18bede145631c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927210"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
-Przechowuje stosu kontekstu między wywołań [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md) metody.  
+Utrzymuje kontekst stosu między wywołań [idiaframedata::EXECUTE —](../../debugger/debug-interface-access/idiaframedata-execute.md) metody.  
   
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDiaStackWalkFrame : IUnknown  
+IDiaStackWalkFrame : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDiaStackWalkFrame`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Pobiera wartość rejestru.|  
 |[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Ustawia wartość rejestru.|  
-|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Odczytuje pamięci z obrazu.|  
-|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Wyszukuje ramka określonej wartości atrybutu stosu dla najbliższej adres zwrotny funkcji.|  
-|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Wyszukuje ramka stosu określony dla adres zwrotny lub prawie określony adres.|  
+|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Odczytuje pamięć z obrazu.|  
+|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Wyszukuje ramki określonego stosu, dla najbliższej adres zwrotny funkcji.|  
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Wyszukuje ramki określonego stosu, dla adres zwrotny po lub w pobliżu podanym adresem.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs jest używany podczas wykonywania programu do odczytu i zapisu rejestrów, a także uzyskiwać dostęp do pamięci i znaleźć adres zwrotny.  
+ Ten interfejs jest używany podczas wykonywania programu odczytu i zapisu rejestrów, a także uzyskiwania dostępu do pamięci oraz znaleźć adres zwrotny.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Aplikacja kliencka implementuje ten interfejs i przekazuje wystąpienie interfejsu do [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md) metody. To samo wystąpienie elementu ten interfejs jest używany wielokrotnie w celu zachowania stanu rejestrów podczas każdego wywołania elementu `execute` metody. `execute` Metody również używa tego interfejsu w celu określenia adres zwrotny.  
+ Aplikacja kliencka implementuje ten interfejs i przekazanie wystąpienia interfejsu do [idiaframedata::EXECUTE —](../../debugger/debug-interface-access/idiaframedata-execute.md) metody. To samo wystąpienie elementu ten interfejs jest używany wielokrotnie w celu zachowania stanu rejestrów podczas każdego wywołania elementu `execute` metody. `execute` Metoda również używa tego interfejsu do określenia adres zwrotny.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

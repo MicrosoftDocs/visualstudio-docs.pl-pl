@@ -1,8 +1,6 @@
 ---
-title: 'Porady: znaki specjalne ucieczki w MSBuild | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Znaki specjalne ucieczki w MSBuild | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - special characters, escaping
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 701db598872f6dde5a07740ef7601a6c8de7c5f0
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 5e6af51127548b59646ec7243863491115b77e08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854623"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Porady: znaki specjalne ucieczki w MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Instrukcje: Znaki specjalne ucieczki w MSBuild
 
 Niektóre znaki mają specjalne znaczenie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu. Przykłady znaków średnikami (`;`) i gwiazdki (`*`). Aby uzyskać pełną listę tych znaków specjalnych, zobacz [znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md).
   

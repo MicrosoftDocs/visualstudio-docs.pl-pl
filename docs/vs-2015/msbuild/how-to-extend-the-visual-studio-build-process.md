@@ -1,12 +1,11 @@
 ---
-title: 'Porady: rozszerzanie procesu kompilacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Rozszerzanie procesu kompilacji | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,14 +18,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e552b75ea5ba34004d0c53850f1af77a120b20cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a3a530f74e1cf90012f9724d68493b1602b0e6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938724"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Porady: rozszerzanie procesu kompilacji programu Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: Rozszerzanie procesu kompilacji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 
@@ -64,7 +63,7 @@ ms.locfileid: "53050260"
 |Nazwa obiektu docelowego|Opis|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po zakończeniu kompilacji podstawowe zadania. Większość dostosowań są wykonywane tylko w jednym z następujących dwóch elementów docelowych.|
-|`BeforeBuild`, `AfterBuild`|Zadania wstawione w jednym z następujących elementów docelowych uruchomi się przed lub po wszystko inne w kompilacji. **Uwaga:** `BeforeBuild` i `AfterBuild` elementy docelowe zostały już zdefiniowane w komentarzach na końcu większości plików projektów. Dzięki temu można w prosty sposób dodać zdarzenia przed i po kompilacji do pliku projektu.|
+|`BeforeBuild`, `AfterBuild`|Zadania wstawione w jednym z następujących elementów docelowych uruchomi się przed lub po wszystko inne w kompilacji. **Uwaga:**  `BeforeBuild` i `AfterBuild` elementy docelowe zostały już zdefiniowane w komentarzach na końcu większości plików projektów. Dzięki temu można w prosty sposób dodać zdarzenia przed i po kompilacji do pliku projektu.|
 |`BeforeRebuild`, `AfterRebuild`|Zadania wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe odbudować funkcji jest wywoływana. Kolejność wykonanie docelowego w Microsoft.Common.targets ma: `BeforeRebuild`, `Clean`, `Build`, a następnie `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Zadania wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe czysta funkcja jest wywoływana.|
 |`BeforePublish`, `AfterPublish`|Zadania wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe publikowanie funkcji jest wywoływana.|

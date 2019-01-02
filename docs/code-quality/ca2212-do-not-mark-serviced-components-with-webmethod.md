@@ -1,8 +1,7 @@
 ---
-title: 'CA2212: Nie należy oznaczać obsługiwanych składników znacznikiem WebMethod'
+title: 'CA2212: Nie oznaczaj usługowych składników atrybutem WebMethod'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2212
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d1595c6bdf7eafb5b86daba99e943aad3f02ac7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 402e27bcfb94adc73aa5376ca71271e8d55f5d8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856673"
 ---
-# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Nie należy oznaczać obsługiwanych składników znacznikiem WebMethod
+# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Nie oznaczaj usługowych składników atrybutem WebMethod
 
 |||
 |-|-|

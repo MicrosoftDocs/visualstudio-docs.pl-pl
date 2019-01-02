@@ -1,9 +1,6 @@
 ---
 title: Podaj określająca zakres wsparcia w ramach usługi w języka | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ae8a6aeba28fbe90e68305f2b48021b4327c26
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a26d9dbc67f502e30968f3db89834b12e02ae3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965554"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Instrukcje: zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Instrukcje: Zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej
 Dostępne są dwie opcje do rozszerzania możliwości programu obsługi zwijania dla danego języka, poza obsługi **Zwiń do definicji** polecenia. Można Dodawanie regionów kontrolowane przez Edytor konturu i dodawanie regionów konspektu kontrolowane przez klienta.  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>Dodawanie regionów kontrolowane przez Edytor konspektu  
@@ -56,4 +53,4 @@ Dostępne są dwie opcje do rozszerzania możliwości programu obsługi zwijania
     > [!NOTE]
     >  Podczas wywoływania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, można określić klienta tekstu ukrytego (czyli <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> obiektu). Ten klient powiadamia użytkownika, gdy tekstu ukrytego lub konspektu region jest rozwinięta czy zwinięta przez użytkownika.  
   
-4.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> struktury) parametru: Określ wartość <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> w `iType` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury, aby wskazać, tworzysz region konspektu, zamiast ukryty region. Określ, czy region jest kontrolowany przez klienta lub Edytor kontrolowane w `dwBehavior` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Inteligentne implementacji konspektu może zawierać kombinację regionów konspektu kontrolowane przez Edytor i klienta. Podaj tekst transparentu, który jest wyświetlane, gdy w Twoim regionie konspektu jest zwinięte, takie jak "..." w `pszBanner` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Edytor domyślny Baner tekst ukryty region jest "...".
+4.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> struktury) parametr: Określ wartość <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> w `iType` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury, aby wskazać, tworzysz region konspektu, zamiast ukryty region. Określ, czy region jest kontrolowany przez klienta lub Edytor kontrolowane w `dwBehavior` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Inteligentne implementacji konspektu może zawierać kombinację regionów konspektu kontrolowane przez Edytor i klienta. Podaj tekst transparentu, który jest wyświetlane, gdy w Twoim regionie konspektu jest zwinięte, takie jak "..." w `pszBanner` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Edytor domyślny Baner tekst ukryty region jest "...".

@@ -1,8 +1,6 @@
 ---
 title: Idiastackwalker — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9c4509e56949d739af3e39e04b89f289edfbe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9fc53f20ea051c995c32fa9e049af7e870564fe1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935981"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-Zapewnia metody do stosu objaśniono, korzystając z informacji w pliku PDB.  
+Udostępnia metody stosu szczegółowe, korzystając z informacji w pliku .pdb.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -30,19 +28,19 @@ Zapewnia metody do stosu objaśniono, korzystając z informacji w pliku PDB.
 IDiaStackWalker: IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDiaStackWalker`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Pobiera moduł wyliczający ramki stosu dla x86 platform.|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Pobiera moduł wyliczający ramki stosu dla typu określonej platformy.|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Pobiera moduł wyliczający ramek stosu dla x86 platform.|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Pobiera moduł wyliczający ramek stosu dla typu określonej platformy.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs jest używany do uzyskiwania listy ramek stosu załadować modułu. Każdej z metod jest przekazywany [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) obiektu (zaimplementowana przez aplikację klienta), który zawiera informacje potrzebne do utworzenia listy ramek stosu.  
+ Ten interfejs jest używany do uzyskiwania listy ramek stosu dla załadowanym module. Każdej z metod jest przekazywany [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) obiektu (implementowane przez aplikację klienta), który dostarcza niezbędne informacje, aby utworzyć listę ramek stosu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs są uzyskiwane przez wywołanie metody `CoCreateInstance` metody za pomocą identyfikatora klasy `CLSID_DiaStackWalker` i identyfikator interfejsu `IID_IDiaStackWalker`. W przykładzie przedstawiono sposób uzyskiwania tego interfejsu.  
+ Ten interfejs jest można uzyskać przez wywołanie `CoCreateInstance` metody z identyfikatorem klasy `CLSID_DiaStackWalker` i identyfikator interfejsu `IID_IDiaStackWalker`. W przykładzie przedstawiono sposób uzyskiwania tego interfejsu.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie pokazano, jak uzyskać `IDiaStackWalker` interfejsu.  
@@ -62,12 +60,12 @@ if (FAILED(hr))
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 827a558c61a402ad5dadcea608a50af3883f88b4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 08d5023da83c99fd3581509c697b2db4e928fd58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925103"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (skrypt programu Windows PowerShell)
 Wdraża aplikację sieci web do maszyny wirtualnej. Skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
@@ -55,7 +54,7 @@ Nazwa subskrypcji platformy Azure, w której chcesz utworzyć maszynę wirtualn�
 | Akceptować symbole wieloznaczne? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-Ścieżka do pakietu wdrożeniowego sieci web do publikowania do maszyny wirtualnej. Ten pakiet jest tworzony za pomocą kreatora Publikowanie w sieci Web w programie Visual Studio. Zobacz [jak: utworzyć pakiet wdrożeniowy sieci Web w programie Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+Ścieżka do pakietu wdrożeniowego sieci web do publikowania do maszyny wirtualnej. Ten pakiet jest tworzony za pomocą kreatora Publikowanie w sieci Web w programie Visual Studio. Zobacz [jak: Utwórz pakiet wdrażania sieci Web w programie Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
 
 | Aliasy | brak |
 | --- | --- |
@@ -182,4 +181,3 @@ Plik konfiguracji JSON określa szczegóły co ma zostać wdrożony. Zawiera inf
 ```
 
 Można edytować plik JSON konfiguracji do zmiany, co jest aprowizowana. Maszyny wirtualne i usługi w chmurze są wymagane, ale sekcja bazy danych jest opcjonalna.
-

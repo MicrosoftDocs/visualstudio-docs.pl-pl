@@ -1,8 +1,6 @@
 ---
 title: Widok wskaźników instrukcji (IP) - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,37 +10,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3b3d0d0334ed8073a125d8b2c435f8e5d58299d4
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 9d3ad0bc9239c0cee9bdb425f2a475391654125a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964166"
 ---
-# <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Widok wskaźników instrukcji (IP) - dane próbkowania pamięci .NET
-Wyświetlanie adresów IP dla danych pamięci .NET alokacji profilowania zebrane przy użyciu metody pobierania próbek list instrukcje zestawu, które przydzielonej pamięci podczas przebiegu profilowania. Kolumny w widoku listy również rozmiaru i liczby alokacji.  
+# <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Widok wskaźników instrukcji (IP) - dane próbkowania pamięci platformy .NET
+Widok adresów IP dla platformy .NET dane alokacji pamięci profilowania zebrane przy użyciu metody próbkowania wymieniono instrukcje montażu, które pamięci przydzielonej podczas uruchomienia profilowania. Kolumny widoku Wyświetl listę, rozmiar i liczba przydziałów.  
   
- Tylko wyłączne wartości są wymienione.  
+ Tylko wartości wyłącznych są wyświetlane.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|**Identyfikator procesu**|Identyfikator PID profilowania Uruchom proces.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
 |**Nazwa procesu**|Nazwa procesu.|  
 |**Nazwa modułu**|Nazwa modułu, który zawiera instrukcję.|  
-|**Ścieżka modułu**|Ścieżka moduł, który zawiera instrukcję.|  
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera instrukcję.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera instrukcję.|  
 |**Nazwa funkcji**|Nazwa funkcji.|  
-|**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Adres funkcji**|Początkowy adres funkcji.|  
-|**Początek wiersza źródłowego**|Numer wiersza początkowego w pliku źródłowym, w którym wystąpiła Alokacja.|  
-|**Źródło końca wiersza**|Końcowy numer wiersza pliku źródłowego, w którym wystąpiła Alokacja.|  
-|**Rozpocznij znaków źródła**|Przesunięcie początkowy znaku w wierszu pliku źródłowego, o której wystąpiła Alokacja.|  
-|**Źródło znak końcowy**|Przesunięcie znak końcowy w wiersza pliku źródłowego, w którym wystąpiła Alokacja.|  
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
+|**Adres funkcji**|Adres początkowy funkcji.|  
+|**Początkowy wiersz w źródle**|Numer wiersza początkowego w pliku źródłowym, w którym wystąpiła Alokacja.|  
+|**Końcowy wiersz w źródle**|Końcowy numer wiersza w pliku źródłowym, w którym wystąpiła Alokacja.|  
+|**Początkowy znak w źródle**|Przesunięcie początkowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|  
+|**Końcowy znak w źródle**|Przesunięcie końcowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|  
 |**Adres instrukcji**|Adres instrukcji.|  
-|**Wyłączny alokacji**|Całkowita liczba obiektów, które zostały utworzone przez instrukcję.|  
-|**% Wyłącznego alokacji**|Procent wszystkich obiektów, które zostały utworzone w przebiegu profilowania, przydzielone przez instrukcję.|  
-|**Wyłączny bajtów**|Liczba bajtów pamięci przydzielone w przebiegu, który profilowania przydzielone przez instrukcję.|  
-|**% Wyłącznego bajtów**|Procent wszystkich bajtów pamięci, która była przydzielona w przebiegu profilowania przydzielone przez instrukcję.|  
+|**Przydziały wyłączne**|Całkowita liczba obiektów, które zostały utworzone przez instrukcję.|  
+|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone podczas uruchomienia profilowania, które zostały przydzielone przez instrukcję.|  
+|**Bajty wyłączne**|Liczba bajtów pamięci, które zostały przydzielone w profilowania, została przydzielona przez instrukcję.|  
+|**% Bajtów wyłącznych**|Procent przydzielonych przez instrukcję wszystkich bajtów pamięci, która została przydzielona podczas uruchomienia profilowania.|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)

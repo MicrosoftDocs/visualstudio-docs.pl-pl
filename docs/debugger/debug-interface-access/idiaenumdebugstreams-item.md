@@ -1,8 +1,6 @@
 ---
 title: Idiaenumdebugstreams::Item — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae82df1f2af6acba7f94bf0d14682aff27a830bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e098f15238cdf84121cae81685191047c4b04447
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963343"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Pobiera strumień debugowania za pomocą indeksu lub nazwy.  
@@ -27,7 +25,7 @@ Pobiera strumień debugowania za pomocą indeksu lub nazwy.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    VARIANT                   index,  
    IDiaEnumDebugStreamData** stream  
 );  

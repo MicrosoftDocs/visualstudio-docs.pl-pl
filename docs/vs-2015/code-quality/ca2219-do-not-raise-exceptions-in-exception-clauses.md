@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b5f08043985b6a2eb2b5fe0267fefb58ad00587
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0436606f78acc1e6edeec0c8f9387ffae386459
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964697"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +57,3 @@ ms.locfileid: "49891183"
 
 ## <a name="see-also"></a>Zobacz też
  [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)
-
-
-

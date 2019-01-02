@@ -1,9 +1,6 @@
 ---
 title: Używanie czcionek i kolorów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
@@ -17,62 +14,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4415d00e5a1233bfdf14dbc86a3a7ed2f7b8e770
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1b4f5b8108ff4027f936abe094efe41647719a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941235"
 ---
 # <a name="using-fonts-and-colors"></a>Używanie czcionek i kolorów
-[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Zapewnia obsługę czcionki i kolory do wyświetlania tekstu.  
+[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Zapewnia obsługę wyświetlania tekstu przy użyciu czcionek i kolorów.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Omówienie kolorów i czcionek](../extensibility/font-and-color-overview.md)  
- W tym artykule omówiono ustawienia czcionek i kolorów tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). Również pojęcia związane z kategorii i Wyświetl elementy, a w tym artykule opisano, jak pakiety VSPackage i Edytor core używają atrybutów tekstu.  
+ [Omówienie czcionek i kolorów](../extensibility/font-and-color-overview.md)  
+ W tym artykule omówiono ustawienia czcionek i kolorów tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Ponadto wprowadza pojęcia kategorii i wyświetlenie elementów i w tym artykule opisano, jak pakietów VSPackage i podstawowy edytor za pomocą atrybutów tekstu.  
   
- [Pobieranie czcionek i kolorów informacje dotyczące tekstu kolorowania](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
- Zawiera wskazówki dotyczące wprowadzania tekstu kolorowania w VSPackages zarządzające **kategorii** innych niż **Edytor tekstu**.  
+ [Uzyskiwanie informacji o czcionkach i kolorach na potrzeby kolorowania tekstu](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
+ Zawiera wskazówki dotyczące implementowania Kolorowanie tekstu w pakietach VSPackage, zarządzać **kategorie** innych niż **edytora tekstów**.  
   
- [Dostęp do przechowywanej czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md)  
- Wyjaśniono, jak bieżący czcionek i kolorów ustawienia mogą być przechowywane, pobrać i stosowane.  
+ [Uzyskiwanie dostępu do przechowywanych ustawień czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md)  
+ Wyjaśnia, jak bieżący czcionek i kolorów ustawień mogą być przechowywane pobierane i stosowane.  
   
- [Implementowanie niestandardowych kategorii i wyświetlania elementów](../extensibility/implementing-custom-categories-and-display-items.md)  
- Opisano podstawowe kroki, za pomocą których można tworzyć i używać własnej z okna **wyświetlania elementów** i **kategorii** do obsługi wyświetlania tekstu.  
+ [Implementowanie kategorii niestandardowych i elementów wyświetlanych](../extensibility/implementing-custom-categories-and-display-items.md)  
+ W tym artykule opisano podstawowe kroki, według których okna można tworzyć i używać własnego programu **wyświetlania elementów** i **kategorie** do obsługi wyświetlania tekstu.  
   
- Ta metoda wymaga pakiet VSPackage do zaimplementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu i interfejsy powiązane.  
+ Takie podejście wymaga pakietu VSPackage do zaimplementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu i interfejsy powiązane.  
   
- [Porady: dostęp do wbudowanych czcionek i schemat kolorów](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
- W tym artykule omówiono sposób zdefiniować i zarejestrować kategorię za pomocą wbudowanych czcionek i kolorów i inicjowania stosowania kolorów i czcionek dostarczane przez system.  
+ [Instrukcje: Dostęp do wbudowanych czcionek i schemat kolorów](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ W tym artykule omówiono, jak zdefiniować i zarejestrować kategorii przy użyciu wbudowanych czcionek i kolorów i zainicjować użycie dostarczane przez system czcionek i kolorów.  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
- Udostępnia wystąpienie `IVsFontAndColorDefaults` lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejsu odpowiadającego danego elementu na liście **Pokaż ustawienia dla** na liście **czcionki i kolory** strony **Opcje** okno dialogowe.  
+ Udostępnia wystąpienia `IVsFontAndColorDefaults` lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejs, który odnosi się do określonego elementu na liście **Pokaż ustawienia dla** listy w **czcionki i kolory** strony **Opcje** okno dialogowe.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>  
- Włącza pakiet VSPackage do obsługi IDE **czcionki i kolory** strony, definiując domyślnej czcionki i kolory w oknie lub składnik interfejsu użytkownika.  
+ Włącza VSPackage do obsługi środowiska IDE **czcionki i kolory** strony, definiując domyślny czcionki i kolory w oknie lub składnik interfejsu użytkownika.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>  
- Udostępnia mechanizm, za pomocą którego pakiet VSPackage, który zapewnia obsługę czcionek i kolorów można określić grupę wyświetlanego elementu - nadtypem kategorię, która reprezentuje sumę dwóch lub więcej kategorii.  
+ Udostępnia mechanizm, za pomocą którego pakietu VSPackage, który zapewnia obsługę czcionek i kolorów można określić grupę wyświetlanego elementu — bardzo kategorię, która reprezentuje sumę dwóch lub więcej kategorii.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>  
- Włącza pakiet VSPackage można pobrać danych czcionek i kolorów lub zapisać go w rejestrze.  
+ Umożliwia VSPackage można pobrać danych czcionek i kolorów lub zapisać go w rejestrze.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
- Powiadamia VSPackages używanym czcionek i kolorów informacji na temat zmian w ustawieniach czcionek i kolorów.  
+ Powiadamia pakietów VSPackage przy użyciu czcionek i kolorów informacje o zmianach wprowadzonych w ustawieniach czcionek i kolorów.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities>  
- Udostępnia narzędzia do pracy z danymi wejściowymi i wyjściowymi, który jest używany przez metody [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **czcionek i kolorów** mechanizmu.  
+ Udostępnia narzędzia do pracy z danych wejściowych i wyjściowych, który jest używany przez metody [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **czcionek i kolorów** mechanizm.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
- Określa buforowanie ustawienia czcionek i kolorów.  
+ Kontroluje, buforowanie ustawienia czcionek i kolorów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)  
- W tym artykule omówiono, jak VSPackages języka usługi służy do dostosowywania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytora.  
+ W tym artykule omówiono, jak pakietów VSPackage języka usługi służy do dostosowywania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytora.  
   
  [Kolorowania składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)  
- Descries jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor korzysta z usług języka Aby zaimplementować kolorowanie składni.  
+ Descries sposób, w jaki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor używa usług językowych do zaimplementowania kolorowanie składni.  
   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Wyjaśniono, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usługi w celu utworzenia elementów interfejsu użytkownika, zgodne z resztą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Opis sposobu użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usługi, aby tworzyć elementy interfejsu użytkownika, które pasują reszty [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

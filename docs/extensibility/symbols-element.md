@@ -1,9 +1,6 @@
 ---
 title: Symbole Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4186f53ec84c44b97acbc3a59d663404a52dd255
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeeaff19eb0eb479cdb7faa441c2cde8f60f52d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965898"
 ---
 # <a name="symbols-element"></a>Symbols, element
 Określa identyfikatory GUID i identyfikatory, które są używane przez inne elementy VSCT. Dla niezarządzanego kodu, te informacje zazwyczaj pochodzą z pliki nagłówkowe, które są określone przez [Extern, Element](../extensibility/extern-element.md). Zarządzany kod używa elementów podrzędnych elementu symbole, aby zdefiniować te informacje.  
   
- Jeśli tworzysz pliku vsct z istniejącego pliku .cto symbole zostanie wygenerowany jako elementy podrzędne elementu symboli. Aby uzyskać więcej informacji, zobacz [porady: tworzenie. Plik Vsct z istniejącej. Dyrektor ds. technologii pliku](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).  
+ Jeśli tworzysz pliku vsct z istniejącego pliku .cto symbole zostanie wygenerowany jako elementy podrzędne elementu symboli. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie. Plik Vsct z istniejącej. Dyrektor ds. technologii pliku](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).  
   
  Symbols, element nie należy mylić z [zdefiniować Element](../extensibility/define-element.md), która definiuje pary nazwa wartość do użytku przez preprocesor.  
   

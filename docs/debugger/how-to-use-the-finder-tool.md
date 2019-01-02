@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Korzystanie z narzędzia wyszukiwania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z narzędzia wyszukiwania | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965265"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
+# <a name="how-to-use-the-finder-tool"></a>Instrukcje: Korzystanie z narzędzia wyszukiwania
 Można użyć narzędzia wyszukiwania w **Znajdź okno** okno dialogowe, aby wyświetlić okno właściwości lub komunikaty. Narzędzia wyszukiwania można zlokalizować okien podrzędnych wyłączone i określenia, które okno, aby wyróżnić Jeśli wyłączone podrzędnych nakładają się z systemu windows.  
   
  ![Szpieguj&#43; &#43; okno dialogowe Znajdź okno](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  

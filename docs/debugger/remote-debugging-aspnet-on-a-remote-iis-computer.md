@@ -2,7 +2,6 @@
 title: Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 683e0cae09144777cbb27ef294676cc44dc0a1a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830836"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w programie Visual Studio 2017
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
@@ -189,7 +188,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
     W programie Visual Studio powinny trafiony punkt przerwania.
 
-## <a name="bkmk_openports"></a> Rozwiązywanie problemów: Otworzyć wymagane porty w systemie Windows Server
+## <a name="bkmk_openports"></a> Rozwiązywanie problemów: Otwieranie portów wymaganych w systemie Windows Server
 
 W większości konfiguracji wymagane porty są otwarte przez instalację programu ASP.NET i zdalny debuger. Jednak może być konieczne Sprawdź, czy porty zostały otwarte.
 

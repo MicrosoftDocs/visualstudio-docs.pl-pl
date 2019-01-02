@@ -1,8 +1,6 @@
 ---
 title: Idiaaddressmap::put_relativevirtualaddressenabled — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9e908e03dced75bf8fa3dfce3f31e6bbe148b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a973c5ba66dbe63cf0c9751effbfd73c45b5b29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963336"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 Pozwoli to klientowi włączyć lub wyłączyć Obliczanie i Użyj względnych adresów wirtualnych (RVA).  
@@ -27,7 +25,7 @@ Pozwoli to klientowi włączyć lub wyłączyć Obliczanie i Użyj względnych a
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT put_relativeVirtualAddressEnabled (   
+HRESULT put_relativeVirtualAddressEnabled (   
    BOOL NewVal  
 );  
 ```  

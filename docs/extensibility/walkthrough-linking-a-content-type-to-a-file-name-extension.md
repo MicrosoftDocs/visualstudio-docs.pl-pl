@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926190"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Wskazówki: Łączenie typu zawartości na rozszerzenie nazwy pliku
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku
 Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy użyciu rozszerzenia Managed Extensibility Framework (MEF) edytora. W niektórych przypadkach rozszerzenie nazwy pliku jest już zdefiniowany przez usługę języka. Jednak aby używać go z MEF, nadal należy połączyć go z typem zawartości.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
@@ -93,7 +90,7 @@ Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Dodaj typ zawartości do edytora eksportowanie  
   
-1.  Tworzenie rozszerzenia edytora. Na przykład, można użyć rozszerzenia symbol margines opisanego w [wskazówki: tworzenie marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Tworzenie rozszerzenia edytora. Na przykład, można użyć rozszerzenia symbol margines opisanego w [instruktażu: Utwórz marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Dodaj klasę, które zostały zdefiniowane w tej procedurze.  
   

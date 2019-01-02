@@ -1,8 +1,6 @@
 ---
 title: Tworzenie aplikacji ClickOnce z wiersza polecenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926268"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza polecenia
 W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], można kompilować projekty z wiersza polecenia, nawet jeśli są one tworzone w zintegrowanym środowisku programistycznym (IDE). W rzeczywistości, można ponownie utworzyć projekt, który został utworzony za pomocą [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na innym komputerze, który ma tylko [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zainstalowane. Dzięki temu można odtworzyć za pomocą zautomatyzowanego procesu kompilacji, na przykład w centralnej kompilacji laboratorium lub za pomocą zaawansowane techniki poza zakres tematyczny skompilowanie projektu, sama obsługi skryptów.  
@@ -37,7 +35,7 @@ W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
   
  `/target:publish` Polecenie informuje program MSBuild, aby wywołać docelową lokalizację publikacji. Lokalizacja docelowa publikowania zależy od docelowej kompilacji. Oznacza to, że operacja publikowania jest nadzbiorem operacji tworzenia. Na przykład jeśli zmiany zostały wprowadzone do jednego z plików źródłowych języka Visual Basic lub C#, odpowiedni zestaw może automatycznie odbudować przez operację publikowania.  
   
- Aby uzyskać informacje dotyczące generowania pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą narzędzia wiersza polecenia Mage.exe, aby utworzyć swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Aby uzyskać informacje dotyczące generowania pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą narzędzia wiersza polecenia Mage.exe, aby utworzyć swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu, zobacz [wskazówki: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Utwórz i skompiluj podstawowych aplikacji ClickOnce za pomocą narzędzia MSBuild  
   
@@ -171,4 +169,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Wskazówki: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+ [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

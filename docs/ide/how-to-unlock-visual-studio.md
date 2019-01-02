@@ -1,8 +1,7 @@
 ---
-title: 'Porady: odblokować program Visual Studio'
+title: 'Instrukcje: Odblokować program Visual Studio'
 ms.date: 07/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -10,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: c2cf3980e92f6e95b058b51667f584492ecf9aea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844957"
 ---
-# <a name="how-to-unlock-visual-studio"></a>Porady: odblokować program Visual Studio
+# <a name="how-to-unlock-visual-studio"></a>Instrukcje: Odblokować program Visual Studio
 
 Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Logując się do IDE przedłuża okres próbny 90 dni. Aby nadal korzystać z programu Visual Studio, należy odblokować środowisko IDE przez:
 

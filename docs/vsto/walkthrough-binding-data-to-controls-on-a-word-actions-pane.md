@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Powiązywanie danych z kontrolkami w okienku akcji programu Word'
-ms.custom: ''
+title: 'Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926453"
 ---
-# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Wskazówki: Powiązywanie danych z kontrolkami w okienku akcji programu Word
+# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Word
   W tym instruktażu przedstawiono powiązanie danych z kontrolkami w okienku akcji programu Word. Formanty pokazują wzorzec/szczegół relacji między tabelami w bazie danych programu SQL Server.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -61,7 +58,7 @@ ms.locfileid: "49873893"
   
 1.  Tworzenie projektu dokument programu Word z nazwą **Moje okienku akcji programu Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje **Moje okienku akcji programu Word** projekt **Eksploratora rozwiązań**.  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49873893"
      [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
   
-2.  W języku C#, należy dołączyć program obsługi zdarzeń do <xref:System.Windows.Forms.UserControl.Load> zdarzeń. Możesz umieścić ten kod w `ActionsControl` konstruktora, po wywołaniu `InitializeComponent`. Aby uzyskać więcej informacji na temat tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  W języku C#, należy dołączyć program obsługi zdarzeń do <xref:System.Windows.Forms.UserControl.Load> zdarzeń. Możesz umieścić ten kod w `ActionsControl` konstruktora, po wywołaniu `InitializeComponent`. Aby uzyskać więcej informacji na temat tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
@@ -234,13 +231,11 @@ ms.locfileid: "49873893"
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono podstawowe informacje dotyczące powiązania danych z kontrolkami w okienku akcji programu Word. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Powiązanie danych z kontrolkami w programie Excel. Aby uzyskać więcej informacji, zobacz [wskazówki: powiązywanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+-   Powiązanie danych z kontrolkami w programie Excel. Aby uzyskać więcej informacji, zobacz [instruktażu: Wiązanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
 -   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)   
- [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Komunikat zadania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Message
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b61bf9def1ba37667302850527715eed1db4ff
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84f169d221ad8e6920844f2ccc2675277bb4af74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869836"
 ---
 # <a name="message-task"></a>Komunikat — Zadanie
 Rejestruje komunikat podczas kompilacji.  

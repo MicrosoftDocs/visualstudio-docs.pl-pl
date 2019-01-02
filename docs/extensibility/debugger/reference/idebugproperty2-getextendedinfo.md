@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::GetExtendedInfo | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetExtendedInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ed932909845dc992c62ba884d6d48e2b788a61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0366d547dea7f181c42fd5cccbacb568418c203
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935414"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Pobiera rozszerzone informacje dla właściwości.  
@@ -28,14 +25,14 @@ Pobiera rozszerzone informacje dla właściwości.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetExtendedInfo (   
+HRESULT GetExtendedInfo (   
    REFGUID* guidExtendedInfo,  
    VARIANT* pExtendedInfo  
 );  
 ```  
   
 ```csharp  
-int GetExtendedInfo (   
+int GetExtendedInfo (   
    ref Guid guidExtendedInfo,  
    out object pExtendedInfo  
 );  
@@ -46,7 +43,7 @@ int GetExtendedInfo (
  [in] Identyfikator GUID, który określa typ danych rozszerzonych do pobrania. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
   
  `pExtendedInfo`  
- [out] Zwraca `VARIANT` (C++) lub obiekt (C#), który może służyć do pobierania informacji właściwości rozszerzonej. Na przykład, ten parametr może zwrócić `IUnknown` interfejsu, który może być odpytywany dla [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
+ [out] Zwraca `VARIANT` (C++) lub obiekt (C#) można pobrać informacji o właściwości rozszerzonej. Na przykład, ten parametr może zwrócić `IUnknown` interfejsu, który może być odpytywany dla [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Jeśli rozszerzonych informacji do pobrania.  

@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Rozwiązywanie problemów z usługami | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Rozwiązywanie problemów z usługami | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2e1e59b5d2bd1210511b355676407a1368143f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce33e86714c68d8eac39dca236e67b156187448d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877945"
 ---
-# <a name="how-to-troubleshoot-services"></a>Porady: Rozwiązywanie problemów z usługami
+# <a name="how-to-troubleshoot-services"></a>Instrukcje: Rozwiązywanie problemów z usługami
 Istnieje kilka typowych problemów, które mogą wystąpić przy próbie usługi:  
   
 - Usługa nie jest zarejestrowana na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -41,7 +38,7 @@ if (log == null) return;
   
 ## <a name="to-troubleshoot-a-service"></a>Rozwiązywania problemów z usługą  
   
-1. Sprawdź Rejestr systemu, aby zobaczyć, czy usługa została prawidłowo zarejestrowana. Aby uzyskać więcej informacji, zobacz [porady: udostępnianie usługi](../extensibility/how-to-provide-a-service.md).  
+1. Sprawdź Rejestr systemu, aby zobaczyć, czy usługa została prawidłowo zarejestrowana. Aby uzyskać więcej informacji, zobacz [jak: Oferuje usługi](../extensibility/how-to-provide-a-service.md).  
   
     Następujące *reg* fragment pliku pokazuje, jak usługa SVsTextManager może zostać zarejestrowana:  
   

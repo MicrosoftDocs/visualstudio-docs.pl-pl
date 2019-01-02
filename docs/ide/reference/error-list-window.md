@@ -2,7 +2,6 @@
 title: Okno listy błędów
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 50cc9a5198df29385519364455eda319b5aeae68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963874"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 

@@ -1,8 +1,7 @@
 ---
-title: 'Porady: tworzenie i usuwanie zależności projektu'
+title: 'Instrukcje: Tworzenie i usuwanie zależności projektu'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24f44545ebc591a8e3b1a8359e0d7db8dddbb5d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925699"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Porady: tworzenie i usuwanie zależności projektu
+# <a name="how-to-create-and-remove-project-dependencies"></a>Instrukcje: Tworzenie i usuwanie zależności projektu
 
 Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być konieczne do tworzenia niektórych projektów najpierw, aby wygenerować kod używany przez inne projekty. Gdy projekt korzysta z kodu wykonywalnego, generowane przez inny projekt, projekt, który generuje kod nazywa się zależności projektu, projektu, który wykorzystuje kod. Takie relacji zależności można zdefiniować w **zależności projektu** okno dialogowe.
 

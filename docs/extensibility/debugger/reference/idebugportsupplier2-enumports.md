@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplier2::EnumPorts | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier2::EnumPorts
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43eb1171b11dd3afadee45b222f49e7a6b30f4a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e317c3047b370b0ba5eb491f803b50b0496651ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964260"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 Pobiera listę wszystkich portów dostarczanych przez dostawcę portu.  
@@ -28,13 +25,13 @@ Pobiera listę wszystkich portów dostarczanych przez dostawcę portu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT EnumPorts(   
+HRESULT EnumPorts(   
    IEnumDebugPorts2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumPorts(   
+int EnumPorts(   
    out IEnumDebugPorts2 ppEnum  
 );  
 ```  

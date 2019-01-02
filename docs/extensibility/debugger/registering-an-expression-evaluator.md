@@ -1,9 +1,6 @@
 ---
 title: Rejestrowanie ewaluatora wyrażeń | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0650a437b4e703405ee9e8a06bfbbf9ac6c5a247
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 738bcc59d4ff6dafd5b4c928ec0e2996aad7e603
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845853"
 ---
 # <a name="register-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -113,7 +110,7 @@ namespace EEMC
   
 2.  Wywołuje funkcję Pomocnika `SetEEMetric` zarejestrować za pomocą programu Visual Studio metryki EE pokazano w poniższej tabeli. Funkcja `SetEEMetric` i metryki, określić następujący są częścią *dbgmetric.lib* biblioteki. Zobacz [pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Aby uzyskać szczegółowe informacje.  
   
-    |Metryki|Opis|  
+    |Metryka|Opis|  
     |------------|-----------------|  
     |`metricCLSID`|`CLSID` fabryki klas EE|  
     |`metricName`|Nazwa EE jako ciąg zawiera|  

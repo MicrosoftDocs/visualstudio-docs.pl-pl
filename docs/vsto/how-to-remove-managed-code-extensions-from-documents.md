@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów'
-ms.custom: ''
+title: 'Instrukcje: Usuwanie rozszerzenia kodu zarządzanego z dokumentów'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964776"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Instrukcje: Usuwanie rozszerzenia kodu zarządzanego z dokumentów
   Zestaw dostosowania można programowo usunąć dokument lub skoroszyt, który jest częścią dostosowywania poziomie dokumentu dla programu Microsoft Office Word lub Microsoft Office Excel. Użytkownicy mogą otwierać dokumentów i wyświetlanie zawartości, ale dowolnego niestandardowego interfejsu użytkownika (UI) dodawanie do dokumentów, nie będą widoczne, a kod nie będzie działał.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Możesz usunąć zestaw dostosowania przy użyciu jednej z `RemoveCustomization` metod dostarczonych przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Wybór metody zależy od tego, czy chcesz usunąć dostosowania w czasie wykonywania (oznacza to, uruchamiając kod w dostosowaniu podczas wyraz dokument lub skoroszyt programu Excel jest otwarty), lub jeśli chcesz usunąć dostosowania z zamkniętej dokumentu lub że s na serwerze, który ma zainstalowany w Microsoft Office.  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: należy dołączyć lub odłącz zestaw narzędzi VSTO dla programów z dokumentu programu Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak zrobić I: Dołączanie lub odłączanie zestaw narzędzi VSTO dla programów z dokumentu programu Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>Aby usunąć zestaw dostosowania w czasie wykonywania  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35677467"
   
 ## <a name="see-also"></a>Zobacz także  
  [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Porady: dołączanie zarządzanego kodu rozszerzenia do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [Instrukcje: Dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

@@ -1,8 +1,6 @@
 ---
 title: Wspólne wzorce dla nieprawidłowo działających aplikacji wielowątkowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
@@ -13,62 +11,62 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 19f868089c5f8a6187d1bdd36adaf22162b8e2b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878747"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
-Narzędzia Concurrency Visualizer ułatwia deweloperom zachowanie aplikacji wielowątkowych wizualizacji. To narzędzie zawiera galerię wspólne wzorce dla aplikacji wielowątkowych, które zachowują się nieprawidłowo. Galeria zawiera typowe i rozpoznawalnych visual wzorców, które są udostępniane za pomocą narzędzia, wraz z wyjaśnieniem zachowanie jest reprezentowana przez każdego wzorca prawdopodobnie wynik tego zachowania oraz najczęściej go rozwiązać.
+Narzędzie Concurrency Visualizer pomaga deweloperom do wizualizacji zachowania aplikacji wielowątkowych. To narzędzie zawiera galerię wspólne wzorce dla aplikacji wielowątkowych, które zachowują się nieprawidłowo w inny sposób. Galeria zawiera typowe i rozpoznawalny visual wzorców, które są udostępniane za pośrednictwem narzędzia, wraz z wyjaśnieniem zachowanie, który jest reprezentowany przez każdy wzorzec prawdopodobnie wynik tego zachowania i najbardziej typowym podejściem go rozwiązać.
 
-## <a name="lock-contention-and-serialized-execution"></a>Kolizje blokad oraz wykonywania serializacji
+## <a name="lock-contention-and-serialized-execution"></a>Rywalizacja o blokady i wykonywanie serializacji
 
-![Blokowanie rywalizacji, co powoduje wykonanie serializacji](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
+![Blokowanie rywalizacji skutkuje wykonywania serializacji](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
 
-Czasami zrównoleglone aplikacji stubbornly kontynuuje wykonywanie pojedynczo, nawet jeśli ma kilka wątków i komputer ma wystarczającej liczby rdzeni logicznych. Pierwszy objaw jest niska wydajność wielowątkowe, czasem wręcz nieco wolniej niż serial implementacji. W widoku wątków nie ma wiele wątki uruchomione równolegle; Zamiast tego możesz sprawdzić, czy tylko jeden wątek jest wykonywany w dowolnym momencie. W tym momencie po kliknięciu segmentu synchronizacji w wątku widać stosu wywołań dla wątku zablokowanych (blokujący stos wywołań) i wątku, który usunąć warunek blokowania (stosu wywołań odblokowywania). Ponadto jeśli w proces analizowania występuje stosu wywołań odblokowywania, wyświetlany jest łącznik gotowości wątku. Z tego punktu można przejść do kodu z stosy wywołań blokowania i odblokowywania, aby zbadać przyczynę serializacji jeszcze więcej.
+Czasami aplikacja równoległego stubbornly nadal wykonywane szeregowo, nawet jeśli ma on wiele wątków i komputer ma wystarczającej liczby rdzeni logicznych. Pierwszy symptomem jest niską wydajnością wielowątkowych, wręcz Fatalne nieco wolniej niż serial implementacji. W widoku wątków nie ma wiele wątków, uruchamianych równolegle; Zamiast tego zostanie wyświetlony tylko jeden wątek wykonuje w dowolnym momencie. W tym momencie Jeśli klikniesz pozycję segment synchronizacji w wątku, zostanie wyświetlony stos wywołań zablokowanych wątków (blokujący stos wywołań) i wątku, który usunięte blokowania warunek (stos wywołań odblokowania). Ponadto jeśli stos wywołań odblokowania wystąpi proces analizowania, łącznik gotowości wątku jest wyświetlany. Od tego momentu możesz przejść do kodu za pomocą stosów wywołań blokowania i odblokowywania, aby zbadać przyczynę serializacji jeszcze więcej.
 
-Jak pokazano na poniższej ilustracji, Concurrency Visualizer również może narazić ten symptom w widoku wykorzystania procesora CPU, where, niezależnie od obecności wielu wątków aplikacji wymaga tylko jednego rdzenia logicznego.
+Jak pokazano na poniższej ilustracji, Concurrency Visualizer również może narazić ten symptom w widoku wykorzystania procesora CPU, where, niezależnie od obecności wielu wątków, aplikacja używa tylko jednego rdzenia logicznego.
 
-Aby uzyskać więcej informacji, zobacz "wzorzec wydajności 1: identyfikujące rywalizacji blokad" w Hazim Shafi [równoległe narzędzia wydajności dla systemu Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu w witrynie MSDN blog sieci Web.
+Aby uzyskać więcej informacji, zobacz "wzorca wydajności 1: Identyfikowanie Rywalizacja o blokady"w Hazim Shafi [równoległe narzędzia do oceny wydajności dla Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu w witrynie sieci Web blog MSDN.
 
-![Blokowanie rywalizacji](../profiling/media/lockcontention_2.png "LockContention_2")
+![Rywalizacja o blokady](../profiling/media/lockcontention_2.png "LockContention_2")
 
 ## <a name="uneven-workload-distribution"></a>Rozkład normalny obciążenia
 
-![Nierówna obciążeń](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Nierównomiernego obciążenia](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
 
-W przypadku nieprawidłowych rozkład pracy między kilka równoległych wątków w aplikacji, wzorzec typowe schodki jest widoczne jako każdy wątek nie ukończy pracy, jak pokazano na poprzedniej ilustracji. Narzędzia Concurrency Visualizer zawiera najczęściej ścisłe czasu dla każdego wątku współbieżnych. Jednak te wątków zwykle zakończona w nieprawidłowy sposób zamiast końcowy jednocześnie. Ten wzorzec wskazuje nieregularne dystrybucji pracy grupie równoległych wątków, które może spowodować zmniejszenie wydajności. Na przykład problem najlepiej Aby obliczyć ponownie algorytm za pomocą którego został podzielony między równoległych wątków roboczych.
+W przypadku nieregularne rozkład pracy między wiele równoległych wątków w aplikacji, wzorzec typowe schodki pojawia się zgodnie z każdego wątku ukończy pracę, jak pokazano na poprzedniej ilustracji. Narzędzie Concurrency Visualizer zawiera w większości przypadków godziny rozpoczęcia ścisłe dla każdego wątku współbieżnych. Jednak te wątki zazwyczaj kończy się w sposób nieprawidłowy zamiast końcowy jednocześnie. Ten wzorzec wskazuje nieregularne rozkład pracy między grupą równoległych wątków, które może spowodować obniżenie wydajności. Najlepszym podejściem do takiego problemu jest to ponowne ocenienie algorytm, za pomocą którego został podzielony między równoległych wątków roboczych.
 
-Jak pokazano na poniższej ilustracji, Concurrency Visualizer również może narazić ten symptom w widoku wykorzystania procesora CPU jako stopniowego step-down użycia procesora CPU.
+Jak pokazano na poniższej ilustracji, Concurrency Visualizer również może narazić ten symptom w widok wykorzystania CPU jako step-down stopniowy wzrost użycia procesora CPU.
 
-![Nierówna obciążeń](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Nierównomiernego obciążenia](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
 
-## <a name="oversubscription"></a>Nadsubskrypcji
+## <a name="oversubscription"></a>Nadsubskrypcja
 
-![Nadsubskrypcji](../profiling/media/oversubscription.png "Nadsubskrypcji")
+![Nadsubskrypcja](../profiling/media/oversubscription.png "Nadsubskrypcji")
 
-W przypadku nadsubskrypcji liczba aktywnych wątków w procesie jest większa niż liczba dostępnych rdzenie logiczne w systemie. Na poprzedniej ilustracji przedstawiono wyniki nadsubskrypcji z pominiętym wywłaszczanie znaczących w wszystkie aktywne wątki. Ponadto Legenda pokazuje spędzony znaczną część czasu w wywłaszczanie (procent 84 w tym przykładzie). Może to oznaczać, że proces jest zapytaniem systemu można wykonać większą liczbę jednoczesnych wątków niż liczba rdzeni logicznych. Jednak może to także oznaczać czy inne procesy w systemie korzystają z zasobów, które zostały zakłada, że mają być dostępne dla tego procesu.
+W przypadku nadsubskrypcji liczba aktywnych wątków w procesie jest większa niż liczba dostępnych rdzeni logicznych w systemie. Na poprzedniej ilustracji przedstawiono wyniki nadsubskrypcji z znaczne wywłaszczania pominiętym w wszystkich aktywnych wątków. Ponadto legendy pokazuje, że znaczną część czasu działania jest Wywłaszczania (procent 84 w tym przykładzie). Może to oznaczać, że proces jest zapytaniem systemu na potrzeby wykonywania większą liczbę jednoczesnych wątków niż liczba rdzeni logicznych. Jednak może to również wskazywać innych procesów w systemie korzystania zasoby, które zostały zakłada, że mają być dostępne dla tego procesu.
 
-Podczas oceny ten problem, należy rozważyć następujące:
+Podczas oceny tego problemu, należy wziąć pod uwagę następujące czynności:
 
-- Może być oversubscribed całego systemu. Należy wziąć pod uwagę, że inne procesy w systemie może preempting Twojego wątków. W przypadku wstrzymania przez segment wywłaszczanie w widoku wątków etykietka narzędzia określi wątku i procesu wywłaszczone wątku. Ten proces nie jest niekoniecznie ten, który jest wykonywany podczas procesu została przeniesiona przez cały czas, ale stanowi wskazówkę o co utworzone wykorzystania wywłaszczanie względem procesu.
+- Może być oversubscribed całego systemu. Należy wziąć pod uwagę, że inne procesy w systemie może wywłaszczanie wątki. W przypadku wstrzymania przez segment wywłaszczania w widoku wątków etykietka narzędzia będzie identyfikować wątku i procesu, który wątek przerywane. Ten proces niekoniecznie jest ten, który jest wykonywany podczas procesu została przeniesiona przez cały czas, ale stanowi wskazówkę o tym, co tworzone wykorzystanie wywłaszczania względem procesu.
 
-- Należy ocenić, jak procesu Określa odpowiedniej liczby wątków wykonywania w tej fazie pracy. Jeśli procesie oblicza bezpośrednio liczba aktywnych wątków równoległe, należy rozważyć zmodyfikowanie tego algorytmu kontu lepsze liczby dostępne rdzenie logiczne w systemie. Jeśli używasz współbieżności środowiska wykonawczego, biblioteka zadań równoległych lub PLINQ te biblioteki wykonały obliczania liczby wątków.
+- Należy ocenić, jak proces określa odpowiedniej liczby wątków do wykonania w tej fazie pracy. Jeśli proces bezpośrednio oblicza liczbę aktywnych wątków równoległych, należy rozważyć zmodyfikowanie tego algorytmu do lepszego konta liczbę dostępnych rdzeni logicznych w systemie. Jeśli używasz środowiska uruchomieniowego współbieżności, biblioteka zadań równoległych lub PLINQ tych bibliotek wykonywania pracy obliczającej liczbę wątków.
 
-## <a name="inefficient-io"></a>Nieefektywne we/wy
+## <a name="inefficient-io"></a>Nieefektywne operacji We/Wy
 
 ![Inefficient I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-Nadmierne zużycie lub ich nieuprawnione użycie operacji We/Wy jest częstą przyczyną wydajność w aplikacjach. Należy wziąć pod uwagę poprzedniej ilustracji. Profil widocznej osi czasu pokazuje, że 44 procent czasu widoczne wątku jest używany przez operacje We/Wy. Oś czasu pokazuje dużo operacji We/Wy, co oznacza, że profilowana aplikacja często jest zablokowana z powodu operacji We/Wy. Aby wyświetlić szczegółowe informacje o rodzajach We/Wy i gdy program jest zablokowany, powiększenie fragmentu regionów powodować problemy, przejrzyj profil widocznej osi czasu, a następnie kliknij określonego bloku we/wy, aby wyświetlić bieżące stosy wywołań.
+Nadmierne zużycie lub ich nieuprawnione użycie operacji We/Wy jest typową przyczyną nieefektywności w aplikacjach. Należy wziąć pod uwagę poprzedniej ilustracji. Profil widocznej osi czasu pokazuje, że 44 procent czasu wątku widoczny jest używany przez operacje We/Wy. Oś czasu zawiera dużą ilością operacji We/Wy, co oznacza, że profilowanej aplikacji często jest zablokowany przez operacje We/Wy. Aby wyświetlić szczegółowe informacje o rodzajach operacji We/Wy i gdy program jest zablokowany, powiększenie problematyczne regionów, sprawdź profil widocznej osi czasu, a następnie kliknij określonego bloku operacji We/Wy, aby wyświetlić stosy wywołań bieżącego.
 
 ## <a name="lock-convoys"></a>Konwojów blokady
 
 ![Blokowanie konwojów](../profiling/media/lock_convoys.png "Lock_Convoys")
 
-Blokady konwojów wystąpić, gdy aplikacja uzyskuje blokady w kto, obsługiwane w pierwszej kolejności i przyjęcia szybkości blokady jest wyższy niż częstotliwość nabycia. Kombinacja tych dwóch sytuacji powoduje, że żądania blokady rozpocząć tworzenie kopii zapasowej. Jednym ze sposobów zwalczania tego problemu polega na użyciu "nieuczciwych" blokad, blokad, które zapewniają dostęp do pierwszego wątku je znaleźć w Stanach odblokowane. Na poprzedniej ilustracji przedstawiono to zachowanie który. Rozwiązuje problem, spróbuj zmniejszyć rywalizacji o obiektów synchronizacji i spróbuj użyć nieuczciwej blokad.
+Konwojów blokady występują, gdy aplikacja uzyskuje blokady w kto, obsługiwane w pierwszej kolejności, a kiedy wskaźnik przybycia na blokady jest wyższy niż szybkości pozyskiwania. Kombinacja tych dwóch warunków powoduje, że żądania na blokadę rozpocząć tworzenie kopii zapasowej. Jednym ze sposobów, aby walczyć z tego problemu jest użycie "nieuczciwych" blokady lub blokad, które zapewniają dostęp do pierwszego wątku, aby je znaleźć w Stanach odblokowane. Na poprzedniej ilustracji przedstawiono to zachowanie konwoju. Aby rozwiązać ten problem, spróbuj zmniejszyć rywalizację dla obiektów synchronizacji, a następnie spróbuj użyć nieuczciwych blokad.
 
 ## <a name="see-also"></a>Zobacz także
 

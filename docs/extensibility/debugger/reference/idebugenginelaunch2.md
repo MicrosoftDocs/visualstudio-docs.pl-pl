@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineLaunch2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineLaunch2
@@ -15,44 +12,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1abff9f393b34bbf5950c9e56b6f489f332840db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06ca3d52c58ea1d8aff78936f8b7240e1b77e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934268"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
-Używane przez aparat debugowania (DE) do uruchomienia i zakończenia programów.  
+Używane przez aparat debugowania (DE) do uruchomienia, a następnie Zakończ działanie programów.  
   
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDebugEngineLaunch2 : IDebugEngine2  
+IDebugEngineLaunch2 : IDebugEngine2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ten interfejs jest implementowany przez niestandardowe DE, jeśli ma specjalne wymagania dotyczące uruchamiania procesu, które nie mogą być obsługiwane wyłącznie przez port niestandardowy. Jest to zazwyczaj wielkość liter, jeśli DE jest częścią interpreter i debugowany proces jest skryptem: interpretera musi być uruchamiany najpierw, a następnie ładowany i uruchomić skrypt. Port można uruchomić interpretera, ale skrypt może wymagają specjalnej obsługi, (czyli gdzie DE ma rolę). Ten interfejs jest implementowany tylko wtedy, gdy istnieją unikatowe wymagania dotyczące uruchamiania programu, który nie może obsługiwać użyć niestandardowego numeru portu.  
+ Ten interfejs jest implementowany przez niestandardowe DE, jeśli ma on specjalnych wymagań co do uruchamiania procesu, który nie może być obsługiwane wyłącznie przez port niestandardowy. Jest to typowe w przypadku, gdy DE jest częścią tłumacza debugowanego procesu jest skryptem: interpreter musi być uruchamiany najpierw, a następnie załadować i uruchomić skrypt. Port można uruchomić interpretera, ale skrypt mogą wymagać specjalnej obsługi, (czyli gdzie DE rolę). Ten interfejs jest implementowany tylko wtedy, gdy istnieją unikatowe wymagania dotyczące uruchamiania programu, który nie może obsługiwać port niestandardowy.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest wywoływana przez menedżera sesji debugowania (SDM) Jeśli SDM można uzyskać interfejsu z [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfejs (przy użyciu metody QueryInterface). Jeśli ten interfejs można uzyskać, SDM wie, że DE ma specjalne wymagania i wywołuje ten interfejs, aby uruchomić program zamiast portu, uruchom ją.  
+ Ten interfejs jest wywoływana przez Menedżer debugowania sesji (SDM) Jeśli SDM znajdziesz ten interfejs z [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfejs (przy użyciu funkcji QueryInterface). Jeśli ten interfejs można uzyskać, SDM wie, że Niemcy ma specjalne wymagania i wywołuje ten interfejs, aby uruchomić program zamiast port, uruchom ją.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugEngineLaunch2`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Uruchamia proces, za pomocą DE.|  
-|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Wznawia przetworzyć wykonywania.|  
-|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Określa, czy Proces może zostać zakończone.|  
+|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Wznawia wykonanie procesu.|  
+|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Określa, proces może zostać zakończone.|  
 |[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Kończy proces.|  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

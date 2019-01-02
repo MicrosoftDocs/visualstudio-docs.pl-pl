@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885630"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznym dla domeny (DSL) utworzone za pomocą Visual Studio Visualization i Modeling SDK można zmienić, co się dzieje, gdy użytkownik kopiuje i wkleja elementów.
@@ -88,7 +87,7 @@ Zastąp *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` w projekcie Dsl
 Zastąp *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` w projekcie DslPackage.
 
  **Zachowaj układ kształtu przy użyciu kopii i Wklej.**
-Po użytkownik kopiuje wielu kształtów, można zachować swoje położenie względne, gdy zostaną wklejone. Ta technika jest przedstawiona według przykładu w [VMSDK: Przykładowe schematy obwodów](http://go.microsoft.com/fwlink/?LinkId=213879).
+Po użytkownik kopiuje wielu kształtów, można zachować swoje położenie względne, gdy zostaną wklejone. Ta technika jest przedstawiona według przykładu w [VMSDK: Przykładowe diagramy obwodu](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Aby uzyskać ten efekt, Dodaj kształty i łączniki do ElementGroupPrototype skopiowany. Najbardziej wygodną metodę, aby zastąpić to ElementOperations.CreateElementGroupPrototype(). Aby to zrobić, Dodaj następujący kod do projektu Dsl:
 
@@ -144,7 +143,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Wklejanie kształtów w wybranej lokalizacji, na przykład w bieżącej pozycji kursora.**
-Po użytkownik kopiuje wielu kształtów, można zachować swoje położenie względne, gdy zostaną wklejone. Ta technika jest przedstawiona według przykładu w [VMSDK: Przykładowe schematy obwodów](http://go.microsoft.com/fwlink/?LinkId=213879).
+Po użytkownik kopiuje wielu kształtów, można zachować swoje położenie względne, gdy zostaną wklejone. Ta technika jest przedstawiona według przykładu w [VMSDK: Przykładowe diagramy obwodu](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Aby uzyskać ten efekt, Zastąp `ClipboardCommandSet.ProcessOnMenuPasteCommand()` użyć lokalizacji określonej wersji `ElementOperations.Merge()`. Aby to zrobić, Dodaj następujący kod w projekcie DslPackage:
 
@@ -211,7 +210,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **Umożliwia użytkownikowi na przeciąganie i upuszczanie elementów.**
-Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="customizeLinks"></a> Dostosowywanie zachowania dotyczącego kopiowania łącza
  Po użytkownik kopiuje element, standardowe zachowanie jest dowolnym osadzone elementy są również kopiowane. Standardowe zachowanie kopiowania można modyfikować. W definicji DSL, wybierz rolę po jednej stronie relacji i w zestawie okna właściwości **propaguje kopiowania** wartość.
@@ -282,7 +281,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Odbieranie elementów przeciągnięte z innymi modelami
- ElementOperations może również służyć do definiowania zachowania kopiowania, przenoszenie, usuwanie i przeciągania i upuszczania. Jako pokaz użytkowania ElementOperations przykład podane tutaj definiuje niestandardowe zachowanie przeciągnij i upuść. Jednak w tym celu należy rozważyć alternatywne podejście, które opisano w [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md), co jest bardziej rozszerzonego.
+ ElementOperations może również służyć do definiowania zachowania kopiowania, przenoszenie, usuwanie i przeciągania i upuszczania. Jako pokaz użytkowania ElementOperations przykład podane tutaj definiuje niestandardowe zachowanie przeciągnij i upuść. Jednak w tym celu należy rozważyć alternatywne podejście, które opisano w [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md), co jest bardziej rozszerzonego.
 
  Zdefiniuj dwie metody w klasie ElementOperations:
 
@@ -367,7 +366,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Zachowania dotyczącego kopiowania standardowe
  Kod w tej sekcji przedstawiono metody, które można przesłonić, aby zmienić zachowanie kopiowania. Aby ułatwić Zobacz, jak utworzyć własne dostosowania osiągnąć w tej sekcji przedstawiono kod, który zastępuje metody związane z kopiowania, ale nie zmienia standardowe zachowanie.
 
- Gdy użytkownik naciśnie klawisze CTRL + C lub korzysta z polecenia menu kopia, Metoda <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> jest wywoływana. Zobaczysz, jak to jest skonfigurowana w **DslPackage\Generated Code\CommandSet.cs**. Aby uzyskać więcej informacji na temat sposobu polecenia są, konfigurowanie, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Gdy użytkownik naciśnie klawisze CTRL + C lub korzysta z polecenia menu kopia, Metoda <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> jest wywoływana. Zobaczysz, jak to jest skonfigurowana w **DslPackage\Generated Code\CommandSet.cs**. Aby uzyskać więcej informacji na temat sposobu polecenia są konfigurowanie Zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  Możesz zastąpić ProcessOnMenuCopyCommand przez dodanie definicji klasy częściowej *MyDsl* `ClipboardCommandSet` w projekcie DslPackage.
 
@@ -559,6 +558,6 @@ namespace Company.MyDsl
 - [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md)
 - [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md)
-- [Próbki: Przykładowe wykresy obwodu VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Przykład: Przykładowe wykresy obwodu VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

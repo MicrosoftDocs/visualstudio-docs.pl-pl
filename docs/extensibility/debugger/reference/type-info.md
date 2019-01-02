@@ -1,9 +1,6 @@
 ---
 title: TYPE_INFO | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TYPE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6068388cc422d9f72ac873f9650f1c2e1b7a151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823123"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Ta struktura określa różne rodzaje informacji na temat typu pola.  
@@ -66,7 +63,7 @@ public struct TYPE_INFO {
  Nazwa Unii.  
   
  unionmember  
- [Tylko język C#] To typ odpowiednią strukturą ustalane na podstawie Marshal `dwKind`.  
+ [C# tylko] To typ odpowiednią strukturą ustalane na podstawie Marshal `dwKind`.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest przekazywany do [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) metody, gdzie jest wypełnione. Sposób interpretowania zawartość struktury opiera się na `dwKind` pola.  
@@ -74,7 +71,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [Tylko w języku C++] Jeśli `dwKind` jest równa `TYPE_KIND_BUILT`, jest zwolnić bazowego [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu, kiedy niszczenie `TYPE_INFO` struktury. Jest to realizowane przez wywołanie `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- [Tylko język C#] W poniższej tabeli przedstawiono, jak interpretować `unionmember` składowej dla każdego rodzaju typu. W przykładzie pokazano, jak to zrobić dla jednego rodzaju.  
+ [C# tylko] W poniższej tabeli przedstawiono, jak interpretować `unionmember` składowej dla każdego rodzaju typu. W przykładzie pokazano, jak to zrobić dla jednego rodzaju.  
   
 |`dwKind`|`unionmember` interpretowane jako|  
 |--------------|----------------------------------|  
@@ -109,9 +106,9 @@ namespace MyPackage
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

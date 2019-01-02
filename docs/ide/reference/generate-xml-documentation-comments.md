@@ -2,21 +2,20 @@
 title: Wstaw komentarze dokumentacji XML
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 05104b9c734b35226fcd9a964372802f351605df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964286"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Porady: wstawianie komentarzy XML do generowania dokumentacji
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Instrukcje: Wstawianie komentarzy XML do generowania dokumentacji
 
 Program Visual Studio może pomóc dokumentów elementów kodu, takich jak klasy i metody, przez automatyczne generowanie standardowych strukturę komentarzy dokumentacji XML. W czasie kompilacji można wygenerować pliku XML, który zawiera komentarze dokumentacji. Plik XML generowanych przez kompilator mogą być dystrybuowane wraz z Twojego zestawu platformy .NET tak, aby program Visual Studio i innych środowisk IDE umożliwia IntelliSense pokazywanie szybkich informacji na temat typów i elementów członkowskich. Ponadto plik XML mogą być uruchamiane za pomocą takich narzędzi [DocFX](https://dotnet.github.io/docfx/) i [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) do generowania dokumentacja interfejsu API witryn sieci Web.
 
@@ -52,7 +51,7 @@ Program Visual Studio może pomóc dokumentów elementów kodu, takich jak klasy
 
 - [Komentarze dokumentacji XML (C# Programming Guide)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Dokumentowanie kodu przy użyciu komentarzy XML (C# przewodnik)](/dotnet/csharp/codedoc)
-- [Porady: tworzenie dokumentacji XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Instrukcje: Tworzenie dokumentacji XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Komentarze języka C++](/cpp/cpp/comments-cpp)
 - [Dokumentacja XML (C++)](/cpp/ide/xml-documentation-visual-cpp)
 - [Generowanie kodu](../code-generation-in-visual-studio.md)

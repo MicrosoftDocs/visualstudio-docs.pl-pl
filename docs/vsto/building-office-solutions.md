@@ -1,8 +1,6 @@
 ---
 title: Tworzenie rozwiązań pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -29,12 +27,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00df7bded676fdae89dc6fb44e9e89fac814504e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8733c4e068bd7c4be2674e302707b81cc180cfd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963246"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
   Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowania i debugowania innych rodzajów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [skompilować i utworzyć w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

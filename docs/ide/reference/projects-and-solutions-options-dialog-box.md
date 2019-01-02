@@ -2,7 +2,6 @@
 title: Opcje projektów i rozwiązań — okno dialogowe
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926316"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Strony Projekty i rozwiązania, okno dialogowe Opcje
 
@@ -89,11 +88,11 @@ Określa domyślną lokalizację, gdzie program Visual Studio tworzy nowe projek
 
 ### <a name="user-project-templates-location"></a>Lokalizacja szablonów projektów użytkownika
 
-Określa domyślną lokalizację, **nowy projekt** okno dialogowe używa w celu utworzenia listy **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Znajdź i organizowania szablony](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Określa domyślną lokalizację, **nowy projekt** okno dialogowe używa w celu utworzenia listy **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Lokalizacja szablonów elementów użytkownika
 
-Określa domyślną lokalizację, **Dodaj nowy element** okno dialogowe używa w celu utworzenia listy **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Znajdź i organizowania szablony](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Określa domyślną lokalizację, **Dodaj nowy element** okno dialogowe używa w celu utworzenia listy **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5a9aad4aaecb629f5860fadf56e35a55455be63
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17a56fcf0c89ef63033cdcd538e5b9cf9e3efe49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928292"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych
 Możesz rozszerzyć funkcjonalności TableAdapter, tworząc plik częściowe klasy dla TableAdapter i dodając kod do niego (zamiast opcji dodawania kodu *DatasetName.DataSet.Designer* pliku). Klasy częściowe Włącz kod dla określonej klasy do podzielone między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type).

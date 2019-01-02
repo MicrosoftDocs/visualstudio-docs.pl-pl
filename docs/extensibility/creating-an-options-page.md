@@ -1,9 +1,6 @@
 ---
 title: Tworzenie strony opcji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b9d61b4a57e0255577fdb0621dafd4263fc127c
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 162c03fec6119985636122a414c00c96e384b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843690"
 ---
 # <a name="create-an-options-page"></a>Tworzenie strony opcji
 Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki właściwości w celu zbadania i ustawić właściwości.  

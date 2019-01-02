@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Zmiana formatowania arkusza za pomocą formantów CheckBox'
-ms.custom: ''
+title: 'Przewodnik: Zmiana formatowania arkusza za pomocą formantów CheckBox'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935102"
 ---
-# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Wskazówki: Zmiana formatowania arkusza za pomocą formantów CheckBox
+# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Przewodnik: Zmiana formatowania arkusza za pomocą formantów CheckBox
   W tym instruktażu przedstawiono podstawy używania pola wyboru w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby zmienić formatowanie. Użyjesz narzędzi programistycznych pakietu Office w programie Visual Studio do tworzenia i dodać kod do projektu. Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49843538"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Utwórz projektu skoroszytu programu Excel o nazwie **Moje formatowania programu Excel**. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz projektu skoroszytu programu Excel o nazwie **Moje formatowania programu Excel**. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje formatowania programu Excel** projekt **Eksploratora rozwiązań**.  
   
@@ -142,7 +139,7 @@ ms.locfileid: "49843538"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]  
   
-5.  W języku C#, należy dodać obsługę zdarzeń dla pola wyboru, aby <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> zdarzeń, jak pokazano poniżej. Aby uzyskać informacje na temat tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  W języku C#, należy dodać obsługę zdarzeń dla pola wyboru, aby <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> zdarzeń, jak pokazano poniżej. Aby uzyskać informacje na temat tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]  
   
@@ -161,10 +158,9 @@ ms.locfileid: "49843538"
  W tym instruktażu przedstawiono podstawy korzystania z pola wyboru oraz formatowania tekstu w arkuszach programu Excel. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
 -   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
--   Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
  [Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

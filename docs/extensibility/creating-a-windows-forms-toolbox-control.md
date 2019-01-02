@@ -1,9 +1,6 @@
 ---
 title: Tworzenie Windows Forms kontrolki przybornika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: b84c554427d443d54d117b72cec5a423e10e7887
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872924"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje się w Visual Studio Tools Extensibility (zestaw SDK programu VS) pozwala utworzyć formant, który jest automatycznie dodawany do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak utworzyć formant prostego licznika, który można rozdystrybuować innym użytkownikom za pomocą szablonu.  

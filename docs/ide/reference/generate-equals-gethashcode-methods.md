@@ -2,19 +2,18 @@
 title: Generowanie C# Equals i GetHashCode — metoda przesłonięcia
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e7b1f2f196e8cb737d179e12e49d829b1651c5d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960907"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generowanie elementu Equals i GetHashCode — metoda zastępuje w programie Visual Studio
 
@@ -22,9 +21,9 @@ Dotyczy to generowanie kodu:
 
 - C#
 
-**Co:** pozwala wygenerować **jest równa** i **GetHashCode** metody.
+**Co:** Umożliwia wygenerowanie **jest równa** i **GetHashCode** metody.
 
-**Kiedy:** generować te zastąpienia, gdy masz typ, który należy porównać przez co najmniej jedno pole, a nie według lokalizacji obiektu w pamięci.
+**Kiedy:** W przypadku typów, które powinny być porównywane według jedną lub więcej pól, a nie według lokalizacji obiektu w pamięci, należy wygenerować te zastąpienia.
 
 **Dlaczego:**
 

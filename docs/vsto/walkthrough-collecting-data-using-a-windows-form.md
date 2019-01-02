@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Zbieranie danych za pomocą formularza Windows'
-ms.custom: ''
+title: 'Przewodnik: Zbieranie danych za pomocą formularza Windows'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e9b73671a8c4b03c33169739ea8fd02b486568
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926636"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Wskazówki: Zbieranie danych przy użyciu formularza Windows
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Przewodnik: Zbieranie danych przy użyciu formularza Windows
   W tym instruktażu pokazano, jak otworzyć formularz Windows z dostosowywania poziomie dokumentu dla programu Microsoft Office Excel, zbiera informacje o użytkowniku i zapisanie tych informacji w komórce arkusza.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -94,7 +91,7 @@ ms.locfileid: "49900478"
 2. W <xref:Microsoft.Office.Tools.Excel.Workbook.Open> program obsługi zdarzeń `ThisWorkbook`, Dodaj następujący kod, aby zadeklarować zmienną formularza `GetInputString` i wyświetlić formularz.  
   
    > [!NOTE]  
-   >  W języku C#, należy dodać program obsługi zdarzeń, jak pokazano na <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> poniższe zdarzenie. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   >  W języku C#, należy dodać program obsługi zdarzeń, jak pokazano na <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> poniższe zdarzenie. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
@@ -146,5 +143,3 @@ ms.locfileid: "49900478"
  [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)   
  [Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)  
-  
-  

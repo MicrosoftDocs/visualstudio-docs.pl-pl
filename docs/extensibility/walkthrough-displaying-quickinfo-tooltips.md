@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965807"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>Instruktażu: Etykietek narzędzi Szybkieinfo ekran
+# <a name="walkthrough-display-quickinfo-tooltips"></a>Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo
 Skrócone informacje jest funkcja IntelliSense, który wyświetla podpisy metod i opisy, gdy użytkownik przesuwa wskaźnik myszy nad nazwą metody. Definiowanie identyfikatory, które zawierają opisy skrócone informacje, a następnie tworząc etykietka narzędzia, w której chcesz wyświetlić zawartość można zaimplementować opartych na języku funkcje, takie jak skrócone informacje. Można zdefiniować skrócone informacje w kontekście usługi językowej, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i wyświetlić skrócone informacje dla właśnie tego typu lub skrócone informacje może wyświetlać dla istniejącego typu zawartości (na przykład "text"). W tym instruktażu przedstawiono sposób wyświetlenia sekcji szybkich informacji dla typu zawartości "text".  
   
  W przykładzie skrócone informacje w tym przewodniku Wyświetla etykietki narzędzi, gdy użytkownik przesuwa wskaźnik myszy nad nazwą metody. Ten projekt wymaga implementują te interfejsy cztery:  
@@ -178,4 +175,4 @@ Skrócone informacje jest funkcja IntelliSense, który wyświetla podpisy metod 
 4.  Przesuń wskaźnik nad jednym z wystąpień "Dodaj". Podpis i opis `add` metoda powinna być wyświetlana.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wskazówki: Łączenie typu zawartości na rozszerzenie nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

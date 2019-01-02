@@ -1,9 +1,6 @@
 ---
 title: Funkcja SccAddFromScc | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f03b9af3f34fe7d06d2612a036e3ecd6003ee5c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 717820bdd16daf9c32b32d873035a652d68f6348
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965103"
 ---
 # <a name="sccaddfromscc-function"></a>Funkcja SccAddFromScc
 Ta funkcja umożliwia użytkownikowi przeglądanie w poszukiwaniu plików, które znajdują się już w systemie kontroli źródła i następnie wprowadzić tych plików będących częścią bieżącego projektu. Na przykład tej funkcji można uzyskać z wspólnego pliku nagłówkowego do bieżącego projektu bez kopiowania pliku. Zwracana tablica plików, `lplpFileNames`, zawiera listę plików, które użytkownik chce, aby dodać do projektu środowiska IDE.  

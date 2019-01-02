@@ -1,8 +1,6 @@
 ---
-title: 'Porady: debugowanie zoptymalizowanego kodu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie zoptymalizowanego kodu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843479"
 ---
-# <a name="how-to-debug-optimized-code"></a>Porady: debugowanie zoptymalizowanego kodu
+# <a name="how-to-debug-optimized-code"></a>Instrukcje: Debugowanie zoptymalizowanego kodu
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).

@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::Enum | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff182c2600a41a0e7c13ed460418e93f88baaed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fd383270dabc0117434badf50f48af6f4e695a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966216"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 Pobiera moduł wyliczający dla właściwości, w tym zestawie.  
@@ -27,7 +25,7 @@ Pobiera moduł wyliczający dla właściwości, w tym zestawie.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Enum (   
+HRESULT Enum (   
    IEnumSTATPROPSTG** ppenum  
 );  
 ```  

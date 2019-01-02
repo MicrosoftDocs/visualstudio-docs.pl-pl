@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 197a6c4a743f5f30e060950413b7e2214fb91b36
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a2a8b32ae161a2c3ba0f58c37e2a369b00db534e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963647"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawienia testu w programie Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Instrukcje: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testów w programie Visual Studio
 
 Adapter danych diagnostycznych profilera ASP.NET służy do zbierania informacji z profilera środowiska ASP.NET. Ten adapter danych diagnostycznych zbiera dane wydajności dla aplikacji ASP.NET.
 
@@ -31,7 +30,7 @@ Adapter danych diagnostycznych profilera ASP.NET umożliwia zbieranie danych pro
 > [!NOTE]
 > Adapter danych diagnostycznych profilera ASP.NET profiluje proces Internet Information Services (IIS). W związku z tym nie będzie on działał dla serwera sieci web development. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym działa program IIS. Agent testowy nie będzie generował obciążenia, a jedynie pośredniczył w zbieraniu danych. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-Aby uzyskać więcej informacji, zobacz [jak: utworzyć ustawienia testu dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Aby uzyskać więcej informacji, zobacz [jak: Utwórz ustawienie testu dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Konfiguracja profilera ASP.NET do ustawień testu
 
@@ -63,5 +62,5 @@ Adapter danych diagnostycznych profilera ASP.NET skonfigurowany w ustawieniach t
 ## <a name="see-also"></a>Zobacz także
 
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
-- [Porady: Tworzenie ustawień testu dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Instrukcje: Utwórz ustawienie testu dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)

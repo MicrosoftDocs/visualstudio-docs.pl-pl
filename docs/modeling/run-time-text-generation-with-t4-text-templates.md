@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939930"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 
@@ -300,7 +299,7 @@ Dyrektywa include można używanych w dowolnym miejscu w tekście pliku szablonu
 
 Możesz udostępnić zawartości między szablonów czasu wykonywania, pisząc szablonu klasy bazowej, które mogą być abstrakcyjne. Użyj `inherits` parametru `<@#template#>` dyrektywy, aby odwoływać się do innej klasy szablonu środowiska uruchomieniowego.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Wzorzec dziedziczenia: fragmenty w metodach Base
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Wzorzec dziedziczenia: Fragmenty w metod bazowych
 
 We wzorcu używanych w przykładzie poniżej Zwróć uwagę następujące kwestie:
 
@@ -355,7 +354,7 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>Wzorzec dziedziczenia: Tekst w treści podstawowy
+#### <a name="inheritance-pattern-text-in-base-body"></a>Wzorzec dziedziczenia: Tekst podstawowy treści
 
 W tym o innym podejściu do przy użyciu szablonu dziedziczenia duża część tekstu jest zdefiniowana w szablonie podstawowym. Pochodne szablony zawierają dane i fragmentów tekstu, który mieści się w podstawowej zawartości.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Porady: uruchamianie kodu gdy projekt SharePoint jest wdrożony lub wycofany | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Uruchom kod, gdy projekt SharePoint jest wdrożony lub wycofany | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,27 +12,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da1b6dd4ff71bcc78043ea88c8f833b9c0f32a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933625"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Porady: uruchamianie kodu, podczas projektu programu SharePoint jest wdrożony lub wycofany
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Instrukcje: Uruchamianie kodu, podczas projektu programu SharePoint jest wdrożony lub wycofany
   Jeśli chcesz wykonać dodatkowe zadania, podczas projektu programu SharePoint jest wdrożony lub wycofany, może obsługiwać zdarzenia, które są wywoływane przez program Visual Studio. Aby uzyskać więcej informacji, zobacz [pakowaniem i wdrażaniem SharePoint rozszerzyć](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Do uruchomienia kodu, podczas projektu programu SharePoint jest wdrożony lub wycofany  
   
 1. Tworzenie rozszerzenia elementu projektu, rozszerzenia projektu lub definicji typu elementu projektu. Więcej informacji znajduje się w następujących tematach:  
   
-   -   [Porady: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+   -   [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-   -   [Porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+   -   [Instrukcje: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-   -   [Porady: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+   -   [Instrukcje: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2. W rozszerzeniu usługi dostęp <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu. Aby uzyskać więcej informacji, zobacz [porady: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
+2. W rozszerzeniu usługi dostęp <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
 3. Obsługa <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> zdarzenia z usługi projektu.  
   
@@ -58,5 +55,4 @@ ms.locfileid: "49832449"
   
 ## <a name="see-also"></a>Zobacz także
  [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [Porady: uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
-  
+ [Instrukcje: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  

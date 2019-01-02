@@ -1,8 +1,6 @@
 ---
 title: Manifest aplikacji ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929231"
 ---
 # <a name="clickonce-application-manifest"></a>Manifest aplikacji ClickOnce
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji jest plik XML, który opisuje aplikację, która jest wdrażany za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -46,7 +44,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest apl
 ## <a name="file-location"></a>Lokalizacja pliku  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji jest specyficzny dla jednej wersji wdrożenia. Z tego powodu powinny być przechowywane oddzielnie od manifesty wdrożenia. Typową Konwencją jest umieszczenie ich w podkatalogu nazwanym tak skojarzoną wersję.  
 
- Zawsze w manifeście aplikacji muszą być podpisane przed wdrożeniem. Jeśli ręcznie zmienisz manifest aplikacji, należy użyć *mage.exe* do ponownego podpisania manifestu aplikacji, zaktualizuj manifest wdrożenia, a następnie ponownie podpisać manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Zawsze w manifeście aplikacji muszą być podpisane przed wdrożeniem. Jeśli ręcznie zmienisz manifest aplikacji, należy użyć *mage.exe* do ponownego podpisania manifestu aplikacji, zaktualizuj manifest wdrożenia, a następnie ponownie podpisać manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
 
 ## <a name="file-name-syntax"></a>Składnia nazwy pliku  
  Nazwa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliku manifestu aplikacji powinna być pełną nazwę i rozszerzenie aplikacji, jak wskazano w `assemblyIdentity` elementu, a następnie rozszerzenia *.manifest*. Na przykład manifest aplikacji, która odwołuje się do *Example.exe* aplikacja będzie używać następującej składni nazwy pliku.  

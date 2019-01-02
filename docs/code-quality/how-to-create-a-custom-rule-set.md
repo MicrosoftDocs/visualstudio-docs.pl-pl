@@ -2,7 +2,6 @@
 title: Tworzenie zestawu reguł analizy kodu niestandardowego
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929925"
 ---
 # <a name="customize-a-rule-set"></a>Dostosuj zestaw reguł
 
@@ -48,7 +47,7 @@ Można również utworzyć nowego pliku zestawu reguł z **nowy plik** okno dial
 
 2. W **nowy plik** okno dialogowe, wybierz opcję **ogólne** kategorii po lewej stronie, a następnie wybierz pozycję **zestawu reguł analizy kodu**.
 
-3. Wybierz **Otwórz**.
+3. Wybierz pozycję **Otwórz**.
 
    Nowy *.ruleset* plik zostanie otwarty w edytorze zestawu reguł.
 
@@ -85,7 +84,7 @@ Można również utworzyć nowego pliku zestawu reguł z **nowy plik** okno dial
 
 - Jeśli ta sama zasada wymienionych dwóch lub więcej razy w regule ustawić za pomocą *tego samego* ważność, zobaczysz poniższe ostrzeżenie w **lista błędów**:
 
-   **CA0063: nie można załadować pliku zestawu reguł "\[swoje] .ruleset" lub jednej z jej regułą zależnego zestawu plików. Plik nie jest zgodny ze schematem zestawu reguł.**
+   **CA0063: Nie można załadować pliku zestawu reguł "\[swoje] .ruleset" lub jednej z jej regułą zależnego zestawu plików. Plik nie jest zgodny ze schematem zestawu reguł.**
 
 - Jeśli zestaw reguł zawiera zestaw przy użyciu reguł podrzędnych **Include** tagu i zestawów reguł nadrzędnymi i podrzędnymi zarówno listy tę samą regułę, ale z różnymi poziomami ważności, następnie ważność zestawu reguł nadrzędnego pierwszeństwo. Na przykład:
 

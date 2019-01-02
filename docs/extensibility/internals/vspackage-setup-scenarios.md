@@ -1,9 +1,6 @@
 ---
 title: Scenariusze instalacji pakietu VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
@@ -12,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932947"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 
@@ -61,7 +58,7 @@ W tym scenariuszu jest dostarczany zaktualizowaną wersję Instalatora pakietu V
 
 W tym scenariuszu przedstawiono nowego Instalatora pakietu VSPackage, korzystając z zalet Instalatora Windows obsługę niewielkie uaktualnienia. Użytkownicy instalują wersji 1.1 i uaktualni ona w wersji 1.0. Jednak nie jest konieczne w wersji 1.0 w systemie. Tym samym Instalator zainstaluje wersji 1.1 w systemie bez wersji 1.0. Zaletą zapewnienie niewielkie uaktualnienia w ten sposób jest to, że nie jest konieczne przechodzą przez prac związanych z tworzeniem uaktualnienia Instalatora i Instalator pełnego produktu. Jeden Instalator wykonuje oba zadania. Poprawkę zabezpieczeń lub service pack może zamiast tego skorzystaj z zalet poprawek Instalatora Windows. Aby uzyskać więcej informacji, zobacz [stosowanie poprawek i uaktualnień](/windows/desktop/Msi/patching-and-upgrades).
 
-## <a name="scenario-3-side-by-side-vspackage"></a>Scenariusz 3: Side-by-Side VSPackage
+## <a name="scenario-3-side-by-side-vspackage"></a>Scenariusz 3: Side-by-Side pakietu VSPackage
 
 W tym scenariuszu przedstawiono dwa pliki instalacyjne pakietu VSPackage — jeden dla każdej wersji programu Visual Studio .NET 2003 i programu Visual Studio. Każdy Instalator instaluje side-by-side i prywatnych, pakietu VSPackage (jedna, która jest specjalnie utworzone zainstalowane dla konkretnej wersji programu Visual Studio). Każdego pakietu VSPackage znajduje się w jego własnej składnika. W związku z tym, każdy może być indywidualnie obsługiwany przy użyciu poprawek lub obsługi wersji. Ponieważ biblioteki DLL pakietu VSPackage teraz jest specyficzny dla wersji, jest bezpieczne dołączyć swoje informacje rejestracyjne w jednym składniku jako biblioteki DLL.
 

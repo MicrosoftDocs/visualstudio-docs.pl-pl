@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892306"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowane w programie Visual Studio, pozwalają na projektowanie języka specyficznego dla domeny, a następnie wygenerować wszystko, co użytkownicy muszą mieć do tworzenia modeli, które są oparte na języku.
@@ -66,7 +65,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="validation-in-dsl-tools"></a>Sprawdzanie poprawności w narzędzia DSL
  Język DSL zapewnia jeden poziom sprawdzania poprawności, aby upewnić się, że model domeny spełnia wymagania podstawowe do generowania kodu. Zwykle podczas tworzenia języka specyficznego dla domeny, możesz dodać weryfikację określenie reguł logiki biznesowej. Aby uzyskać więcej informacji na temat niestandardowego sprawdzania poprawności, zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).
 
- Zaleca się sprawdzenie poprawności języka specyficznego dla domeny często podczas projektowania. Jeśli języka specyficznego dla domeny ma błędy sprawdzania poprawności, nie można wygenerować kodu źródłowego. Proces generowania kodu źródłowego z szablonów odbywa się przez kliknięcie przycisku **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań. Przy każdej modyfikacji definicji języka Pamiętaj również o **Przekształć wszystkie szablony**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Zaleca się sprawdzenie poprawności języka specyficznego dla domeny często podczas projektowania. Jeśli języka specyficznego dla domeny ma błędy sprawdzania poprawności, nie można wygenerować kodu źródłowego. Proces generowania kodu źródłowego z szablonów odbywa się przez kliknięcie przycisku **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań. Przy każdej modyfikacji definicji języka Pamiętaj również o **Przekształć wszystkie szablony**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Dostosowywanie narzędzia DSL
  Możesz podać dodatkowe kodu, aby dostosować zachowanie w modelu i zdefiniować ograniczenia za pośrednictwem języka. W razie potrzeby możesz wprowadzeniem znaczących zmian, modyfikując szablony tekstowe.

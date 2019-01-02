@@ -1,8 +1,6 @@
 ---
-title: 'Porady: zbieranie danych licznika Windows | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zbieranie danych licznika Windows | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea074024e605d2dcc91500fb00fe0d7b6781692
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9fc551fd84197e936ef0f6069ecbc4beaecdf25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961377"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Porady: zbieranie danych licznika Windows
+# <a name="how-to-collect-windows-counter-data"></a>Instrukcje: Zbieranie danych licznika Windows
 
 Liczniki Windows są liczniki wydajności systemu, które mogą być zbierane podczas profilowania w ustalonych odstępach czasu. W widoku znaczniki raportu narzędzi profilowania z wiersza jest oznaczona etykietą **AutoMark** dla każdego interwału zbierania. Wiersz zawiera kolumny, które opisują wartości licznika wydajności, w tym odstępach czasu. Aby ograniczyć analizę do okresu czasu między dwoma określonymi znacznikami, zaznacz znaki, kliknij prawym przyciskiem myszy, a następnie wybierz **Filtruj wg** > **znaczniki** z menu skrótów.
 

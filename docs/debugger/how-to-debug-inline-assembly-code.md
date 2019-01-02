@@ -1,8 +1,6 @@
 ---
-title: 'Porady: debugowanie kodu zestawu wbudowanego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie kodu zestawu wbudowanego | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.inline
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88865df3dcf507cc9a6f6be13e7ab1ff55877c25
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e0bf97141b78079c8080fb4b624c524ee0a6065f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935427"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Porady: debugowanie kodu zestawu wbudowanego
+# <a name="how-to-debug-inline-assembly-code"></a>Instrukcje: Debugowanie kodu zestawu wbudowanego
 
 > [!NOTE]
 > Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).

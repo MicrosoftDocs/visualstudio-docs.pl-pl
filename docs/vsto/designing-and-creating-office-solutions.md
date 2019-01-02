@@ -1,9 +1,6 @@
 ---
 title: Projektowanie i tworzenie rozwiązań pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b1911feec92e802fb8534623c903bb6461832bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935992"
 ---
 # <a name="design-and-create-office-solutions"></a>Projektowanie i tworzenie rozwiązań pakietu Office
   Visual Studio udostępnia szablony projektów, których można utworzyć kilka różnych typów rozwiązań dla pakietu Office. Ten rozdział dokumentacji zawiera opis szablonów projektów i zawiera wskazówki dotyczące tworzenia projektów pakietu Office. Aby uzyskać informacje o sposobie implementacji dostosowania interfejsu użytkownika oraz kodu po utworzeniu projektu, zobacz [rozwiązań Office tworzenie](../vsto/developing-office-solutions.md).  
@@ -108,5 +105,3 @@ ms.locfileid: "53648810"
  [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

@@ -1,9 +1,7 @@
 ---
 title: Debugowanie kodu dla całkowicie początkujących
 description: Jeśli debugujesz po raz pierwszy, zapoznaj się z pomocą techniczną firmy kilka zasad, aby uzyskać pomoc przy uruchamianiu aplikacji w trybie debugowania przy użyciu programu Visual Studio
-ms.custom: ''
 ms.date: 07/06/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 35f9e866f58d52b7f74ac0a136b0eeb49382c612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927327"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 

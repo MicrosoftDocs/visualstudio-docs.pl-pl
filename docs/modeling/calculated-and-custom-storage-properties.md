@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f54589d70bc7cab3959d7f0a7ad2a84d3b028754
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938325"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą być wyświetlane użytkownikowi na diagramie, a w Eksploratorze języka i są dostępne dla kodu programu. Jednak właściwości różnią się w taki sposób, że ich wartości są przechowywane.
@@ -45,7 +44,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 4.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-     Pojawi się następujący komunikat o błędzie: "*YourClass* nie zawiera definicji Get*YourProperty*."
+     Zostanie zgłoszony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji Get*YourProperty*."
 
 5.  Kliknij dwukrotnie komunikat o błędzie.
 

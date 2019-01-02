@@ -1,12 +1,11 @@
 ---
-title: 'CA1415: P-Invoke poprawnie Zadeklaruj | Dokumentacja firmy Microsoft'
+title: 'CA1415: Poprawnie Zadeklaruj P-Invoke | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2a945029652f67fe7332a336e62523bba8175f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f79029f1962a56f333d0c64492457adb82bd1797
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871458"
 ---
-# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Należy poprawnie zadeklarować P/Invokes
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Poprawnie Zadeklaruj P/Invokes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,6 +55,3 @@ ms.locfileid: "49857292"
 
 ## <a name="see-also"></a>Zobacz też
  [Współdziałanie z kodem niezarządzanym](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
-
-
-

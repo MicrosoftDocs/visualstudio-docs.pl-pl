@@ -1,9 +1,6 @@
 ---
 title: Dane w pamięci podręcznej dostosowywane na poziomie dokumentu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248299"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964653"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dane w pamięci podręcznej dostosowywane na poziomie dokumentu
   Podstawowym celem dostosowania poziomu dokumentu jest oddzielenie danych z widoku w dokumentach pakietu Office. Danych odnosi się do informacji, które są przechowywane w dokumencie, w tym liczby i tekst. Widok odwołuje się do interfejsu użytkownika i modelu obiektów programu Microsoft Office Word i Microsoft Office Excel.  
@@ -66,5 +63,3 @@ ms.locfileid: "53248299"
 ## <a name="see-also"></a>Zobacz także  
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
  [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

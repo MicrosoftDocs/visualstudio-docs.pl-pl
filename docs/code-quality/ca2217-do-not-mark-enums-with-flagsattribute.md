@@ -2,7 +2,6 @@
 title: 'CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cc5f9fc58ac533d118b693587cf807f44b288f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852482"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute
 
@@ -38,39 +37,39 @@ ms.locfileid: "32031647"
 
 ## <a name="cause"></a>Przyczyna
 
-Wyliczenie widoczne na zewnątrz jest oznaczony atrybutem <xref:System.FlagsAttribute>i ma jedną lub więcej wartości, które nie są potęgami liczby dwa lub kombinacji innych wartości określone w wyliczeniu.
+Widoczne na zewnątrz wyliczenie jest oznaczona za pomocą <xref:System.FlagsAttribute>i ma jedną lub więcej wartości, które nie są potęgami dwa lub kombinacji innych zdefiniowanych wartości w wyliczeniu.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wyliczenie powinny mieć <xref:System.FlagsAttribute> występuje tylko wtedy, gdy każda wartość zdefiniowana w wyliczeniu jest potęgą liczby dwa lub kombinacji zdefiniowanych wartości.
+Wyliczenie powinny mieć <xref:System.FlagsAttribute> obecny tylko wtedy, gdy każda wartość zdefiniowana w wyliczeniu jest potęgą liczby dwa lub kombinację zdefiniowane wartości.
 
-## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby rozwiązać naruszenie tej reguły, Usuń <xref:System.FlagsAttribute> z wyliczenia.
+Aby naprawić naruszenie tej zasady, Usuń <xref:System.FlagsAttribute> z wyliczenia.
 
-## <a name="when-to-suppress-warnings"></a>Kiedy pomijanie ostrzeżeń
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Przykład, który nie powinien mieć atrybut
+## <a name="example-that-should-not-have-the-attribute"></a>Przykład, który nie powinien mieć atrybutu
 
-W poniższym przykładzie przedstawiono wyliczenie `Color`, który zawiera wartość 3. 3 nie jest potęgą liczby dwa lub więcej dowolnych zdefiniowanymi wartościami. `Color` Wyliczenie nie powinien być oznaczony przez <xref:System.FlagsAttribute>.
+W poniższym przykładzie przedstawiono wyliczenie `Color`, która zawiera wartość 3. 3 nie jest potęgą liczby dwa lub więcej dowolnych zdefiniowanymi wartościami. `Color` Wyliczenia nie powinien być oznaczony przez <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Przykład, w którym powinien mieć atrybut
+## <a name="example-that-should-have-the-attribute"></a>Przykład, w którym powinien mieć atrybutu
 
-W poniższym przykładzie przedstawiono wyliczenie `Days`, która spełnia wymagania dotyczące oznaczana z <xref:System.FlagsAttribute>.
+W poniższym przykładzie przedstawiono wyliczenie `Days`, który spełnia wymagania są oznaczone <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_2.vb)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
 
-[CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: Oznacz Typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 8d5a44ffd5c524d1f7e410f203e17b647907e32d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925186"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -68,7 +67,7 @@ W tym przewodniku należy rozpocząć od tworzenia projektu dla usługi danych W
 
 2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
 
-3. Rozwiń **Visual C#**  lub **języka Visual Basic**, a następnie wybierz pozycję **Web**.
+3. Rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz pozycję **Web**.
 
 4. Wybierz **aplikacji sieci Web ASP.NET** szablonu projektu.
 
@@ -80,7 +79,7 @@ W tym przewodniku należy rozpocząć od tworzenia projektu dla usługi danych W
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie modelu danych jednostki usługi
 
-Aby udostępnić dane do aplikacji przy użyciu usługi danych WCF, należy zdefiniować model danych do usługi. Usługi danych WCF obsługuje dwa typy modeli danych: modeli danych jednostek i modeli danych niestandardowych, które są zdefiniowane przy użyciu wspólnego języka wspólnego (CLR) obiekty, które implementują <xref:System.Linq.IQueryable%601> interfejsu. W tym instruktażu utworzysz Model danych jednostki do modelu danych.
+Aby udostępnić dane do aplikacji przy użyciu usługi danych WCF, należy zdefiniować model danych do usługi. Usługi danych WCF obsługuje dwa typy modeli danych: Jednostki danych modeli i modeli danych niestandardowych, które są definiowane za pomocą wspólnego języka wspólnego (CLR) obiekty, które implementują <xref:System.Linq.IQueryable%601> interfejsu. W tym instruktażu utworzysz Model danych jednostki do modelu danych.
 
 1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
@@ -135,7 +134,7 @@ Aby wyświetlić dane z usługi danych WCF, należy utworzyć nową aplikację W
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, kliknij przycisk **Dodaj**i wybierz **nowy projekt**.
 
-2. W **nowy projekt** okna dialogowego, rozwiń węzeł **Visual C#**  lub **języka Visual Basic**, a następnie wybierz pozycję **Windows**.
+2. W **nowy projekt** okna dialogowego, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie wybierz pozycję **Windows**.
 
 3. Wybierz **aplikacji WPF** szablonu projektu.
 
@@ -231,7 +230,7 @@ Tworzenie formantów, które wyświetlają rekordy klientów, przeciągając `Sa
 
 Aby załadować dane sprzedaży z usługi, należy użyć obiektu serwera proxy usługi. Następnie przypisz zwróconych danych do źródła danych dla <xref:System.Windows.Data.CollectionViewSource> okna WPF.
 
-1. W projektancie, aby utworzyć `Window_Loaded` procedura obsługi zdarzeń, kliknij dwukrotnie tekst, który odczytuje: **MainWindow**.
+1. W projektancie, aby utworzyć `Window_Loaded` procedura obsługi zdarzeń, kliknij dwukrotnie tekst, który odczytuje: **Główne**.
 
 2. Zastąp następujący kod obsługi zdarzeń. Upewnij się, że można zastąpić *localhost* adresów w tym kodzie adres hosta lokalnego na komputerze deweloperskim.
 
@@ -307,7 +306,7 @@ Po ukończeniu tego przewodnika, należy wykonać następujące zadania:
 
 - Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby powiązać WPF formanty do innych typów źródeł danych. Aby uzyskać więcej informacji, zobacz [WPF powiązać formanty do zestawu danych](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby wyświetlić powiązane dane (czyli w relacji nadrzędny podrzędny) w formantach WPF. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby wyświetlić powiązane dane (czyli w relacji nadrzędny podrzędny) w formantach WPF. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,9 +1,6 @@
 ---
 title: IDebugPortEvents2::Event | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortEvents2::Event
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c8ae7eaf353b7d682368bf3694ee73087d6e47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c5271fa63852287ff352906935ed26d330d7e58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845048"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Ta metoda wysyła zdarzenia, które oznaczają tworzenia i niszczenia, procesów i programy na porcie.  

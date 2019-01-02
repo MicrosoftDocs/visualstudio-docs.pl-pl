@@ -1,8 +1,6 @@
 ---
 title: Docelowy Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e82a92e0470d754093c419357f7eb4247c1aa65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965252"
 ---
 # <a name="target-element-msbuild"></a>TARGET — element (MSBuild)
 Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei.  
@@ -62,8 +60,8 @@ Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 |---------------|-----------------|  
 |`Name`|Atrybut wymagany.<br /><br /> Nazwa elementu docelowego.|  
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Jeśli warunek jest `false`, element docelowy nie zostanie wykonany treści obiektu docelowego lub obiektów docelowych, które są ustawiane w `DependsOnTargets` atrybutu. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wejściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Pliki znacznikami czasu będą porównywane ze znacznikami czasu plików w `Outputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Atrybut opcjonalny.<br /><br /> Pliki wyjściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Pliki znacznikami czasu będą porównywane ze znacznikami czasu plików w `Inputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wejściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Pliki znacznikami czasu będą porównywane ze znacznikami czasu plików w `Outputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [jak: Kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Atrybut opcjonalny.<br /><br /> Pliki wyjściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Pliki znacznikami czasu będą porównywane ze znacznikami czasu plików w `Inputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [jak: Kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Atrybut opcjonalny.<br /><br /> Zestaw elementów, które będą dostępne do zadań, które wywołują ten element docelowy, na przykład zadania programu MSBuild. Wiele elementów docelowych są oddzielone średnikami. Jeśli nie mają elementów docelowych w pliku `Returns` atrybuty danych wyjściowych atrybuty są używane zamiast tego w tym celu.|  
 |`KeepDuplicateOutputs`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, są rejestrowane przez wiele odwołań do tego samego elementu w element docelowy.  Domyślnie ten atrybut jest `false`.|  
 |`BeforeTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych.  Jeśli zostanie określony, wskazuje, że ten element docelowy powinien być wykonywany przed określonego obiektu docelowego lub miejsc docelowych. Dzięki temu autora projektu rozszerzenia istniejącego zestawu obiektów docelowych bez modyfikowania ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [kolejność kompilacji docelowej](../msbuild/target-build-order.md).|  

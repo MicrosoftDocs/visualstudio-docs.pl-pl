@@ -3,7 +3,6 @@ title: Debugowanie kodu w języku Python na komputerach zdalnych systemu Linux
 description: Debugowanie kodu w języku Python uruchomiona na zdalnym komputerów z systemem Linux, w tym wymagane kroki konfiguracji, zabezpieczeń i rozwiązywanie problemów przy użyciu programu Visual Studio.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964893"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Zdalne debugowanie kodu w języku Python w systemie Linux
 
@@ -27,7 +26,7 @@ Korzystając z ptvsd, debugowanego kodu w języku Python hostuje serwer debugowa
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Wprowadzenie do zdalnego debugowania, zobacz [Deep Dive: zdalne debugowanie dla wielu platform](https://youtu.be/y1Qq7BrV6Cc) (witrynie youtube.com, 6m22s), która ma zastosowanie do programu Visual Studio 2015 i 2017. |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Wprowadzenie do zdalnego debugowania, zobacz [szczegółowe informacje: Zdalne debugowanie dla platform](https://youtu.be/y1Qq7BrV6Cc) (witrynie youtube.com, 6m22s), która ma zastosowanie do programu Visual Studio 2015 i 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Konfigurowanie komputera z systemem Linux
 
@@ -122,8 +121,8 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
 
     | Visual Studio w wersji | Wersja narzędzi/ptvsd języka Python |
     | --- | --- |
-    | 2017 15.8 | 4.1.1a9 (starszy debuger: 3.2.1.0) |
-    | 2017 wersji 15.7 | 4.1.1a1 (starszy debuger: 3.2.1.0) |
+    | 2017 15.8 | 4.1.1a9 (debuger starszej wersji: 3.2.1.0) |
+    | 2017 wersji 15.7 | 4.1.1a1 (debuger starszej wersji: 3.2.1.0) |
     | 2017 15.4, 15.5, wersji 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |

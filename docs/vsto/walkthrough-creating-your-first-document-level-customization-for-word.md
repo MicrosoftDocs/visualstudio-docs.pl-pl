@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856443"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Word. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy określony dokument jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny dokument jest otwarty.  
@@ -147,15 +144,15 @@ ms.locfileid: "49928818"
   
 -   Zadania związane z programowaniem, które są specyficzne dla dostosowywania poziomie dokumentu dla programu Word: [Word rozwiązania](../vsto/word-solutions.md).  
   
--   Za pomocą modelu obiektów programu Word: [model obiektu Word — omówienie](../vsto/word-object-model-overview.md).  
+-   Za pomocą modelu obiektów programu Word: [Word — omówienie modelu obiektu](../vsto/word-object-model-overview.md).  
   
--   Dostosowywanie interfejsu użytkownika programu Word, na przykład przez dodawanie kart niestandardowych do Wstążki lub tworzenie własnych okienko akcji: [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
+-   Dostosowywanie interfejsu użytkownika programu Word, na przykład dodawania niestandardowej karty do Wstążki lub tworząc własne okienko akcji: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
--   Do wykonywania zadań, która nie jest możliwa za pomocą modelu obiektów programu Word (na przykład hostingu zarządzane formanty w dokumentach i powiązanie formanty programu Word z danymi przy użyciu danych Windows Forms przy użyciu rozszerzonych obiektów programu Word, dostarczone przez rozwiązań pakietu Office w Visual Studio Powiązanie modelu): [automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).  
+-   Do wykonywania zadań, która nie jest możliwa za pomocą modelu obiektów programu Word (na przykład hostingu zarządzane formanty w dokumentach i powiązanie formanty programu Word z danymi przy użyciu danych Windows Forms przy użyciu rozszerzonych obiektów programu Word, dostarczone przez rozwiązań pakietu Office w Visual Studio Powiązanie modelu): [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Kompilowanie i debugowanie dostosowań poziomu dokumentu dla programu Word: [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).  
+-   Kompilowanie i debugowanie dostosowań poziomu dokumentu dla programu Word: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
   
--   Wdrażanie dostosowań poziomu dokumentu dla programu Word: [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
+-   Wdrażanie dostosowań poziomu dokumentu dla programu Word: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -167,5 +164,3 @@ ms.locfileid: "49928818"
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
-  
-  

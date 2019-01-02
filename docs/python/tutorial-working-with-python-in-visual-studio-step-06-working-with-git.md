@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Krok 6 wskazówki podstawowych języka Python w programie Visual Studio, obejmujące funkcje związane z Git programu Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6c23a1d9835b7b065f24536c89a8f0befb03717c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87a4e8c67d7d0f6f1fecabad87d7c2b9ebf7a422
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928938"
 ---
-# <a name="step-6-work-with-git"></a>Krok 6: Pracy z usługą Git
+# <a name="step-6-work-with-git"></a>Krok 6. Praca z usługą Git
 
-**Poprzedni krok: [zainstalować pakiety i zarządzać środowiskiem Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Poprzedniego kroku: [Instalowanie pakietów i zarządzanie nimi w środowisku Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio zapewnia bezpośrednią integrację z usługą lokalne repozytoria Git i repozytoria zdalne w usługach, takich jak GitHub i repozytoriów platformy Azure. Integracja obejmuje klonowanie repozytorium, zatwierdzanie zmian i zarządzania gałęzi.
 
@@ -56,7 +55,7 @@ Ten artykuł zawiera ogólne omówienie tworzenia lokalnego repozytorium Git dla
 
 ## <a name="go-deeper"></a>Przejdź dalej
 
-Aby uzyskać krótki przewodnik tworzenia projektu ze zdalnego repozytorium Git, zobacz [Szybki Start: klonowanie repozytorium kodu w języku Python w programie Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Aby uzyskać krótki przewodnik tworzenia projektu ze zdalnego repozytorium Git, zobacz [Szybki Start: Klonowanie repozytorium kodu w języku Python w programie Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 Samouczek znacznie bardziej złożone, w tym obsługa konfliktów scalania, przeglądanie kodu za pomocą żądań ściągnięcia, zmienianie bazy i selekcjonowanie zmiany między gałęziami, zobacz [Rozpoczynanie pracy z usługą Git i repozytoriów platformy Azure](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
 

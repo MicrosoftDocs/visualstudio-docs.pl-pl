@@ -1,7 +1,6 @@
 ---
 title: Debugowanie usług platformy Azure | Dokumentacja firmy Microsoft
 ms.date: 09/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -11,24 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 1d22a8a34a5e49e6e7cde01d048f261956bd9c3b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 29de81a15a042c2033a055749565f76684753425
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932171"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Debugowanie usług platformy Azure w programie Visual Studio
 
-Za pomocą programu Visual Studio można debugować usług platformy Azure w różnych scenariuszach:
+Visual Studio umożliwia debugowanie usług platformy Azure w różnych scenariuszach:
 
-- Debugowanie aplikacji produkcyjnej hostowanych w usłudze Azure App Service, zobacz [debugowania na żywo aplikacji ASP.NET przy użyciu debugera migawki](../debugger/debug-live-azure-applications.md).
+- Aby debugować aplikacji produkcyjnej, hostowana w usłudze Azure App Service, zobacz [debugowania na żywo aplikacji ASP.NET przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md).
 
-- Debugowanie aplikacji produkcyjnej, za pomocą usługi Application Insights i hostowane w usłudze Azure App Service lub sieci szkieletowej usług, zobacz [debugowania migawek na wyjątki w aplikacjach .NET](/azure/application-insights/app-insights-snapshot-debugger).
+- Aby debugować aplikacji produkcyjnej za pomocą usługi Application Insights i hostowanych w usłudze Azure App Service lub Service Fabric, zobacz [debugowanie migawek wyjątków w aplikacjach .NET](/azure/application-insights/app-insights-snapshot-debugger).
 
-- Do zdalnego debugowania ASP.NET w usługach IIS (usługi Azure App Service lub maszynie Wirtualnej platformy Azure), zobacz [zdalnego debugowania ASP.NET na platformie Azure](remote-debugging-azure.md).
+- Do zdalnego debugowania programu ASP.NET w usługach IIS (usługi Azure App Service lub Maszynie wirtualnej platformy Azure), zobacz [zdalnego debugowania platformy ASP.NET w usłudze Azure](remote-debugging-azure.md).
 
-- Do zdalnego debugowania ASP.NET w sieci szkieletowej usług Azure, zobacz [debugowania zdalnego aplikacji sieci szkieletowej usług](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Do zdalnego debugowania programu ASP.NET w usłudze Azure Service Fabric, zobacz [debugowania zdalnego aplikacji usługi Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/index.md)

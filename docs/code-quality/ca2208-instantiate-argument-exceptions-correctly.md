@@ -1,8 +1,7 @@
 ---
-title: 'CA2208: Utwórz poprawne wystąpienia wyjątków argumentów'
+title: 'CA2208: Poprawne wystąpienia wyjątków argumentów'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2208
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a10d126d5432a80b146fe2086c01064d83006e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 64b44ea52c446b4264bfaf8f63f4099e4e6025b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844161"
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Utwórz poprawne wystąpienia wyjątków argumentów
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Poprawne wystąpienia wyjątków argumentów
 
 |||
 |-|-|

@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Ochrona programu Outlook przed wyświetlaniem regionów formularzy'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aaeafe14f35092be30c982ebb758e40afedb8aa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a7df2aef4348e95a30c0b14b26686764890b6abf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647084"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849753"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Instrukcje: Ochrona programu Outlook przed wyświetlaniem regionów formularzy
   Może to być sytuacje, w których nie ma programu Microsoft Office Outlook do wyświetlania regionu formularza dla określonego elementu. Na przykład skontaktuj się z pomocą element zawiera adres służbowy, może uniemożliwić pokazujący lokalizacji firmy na mapie wyświetlaniu regionu formularza.  
@@ -48,5 +45,3 @@ ms.locfileid: "53647084"
  [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Polecenie wdrożenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965424"
 ---
 # <a name="command-implementation"></a>Implementacja poleceń
 Aby zaimplementować polecenia w VSPackage, należy wykonać następujące zadania:  
@@ -70,17 +67,17 @@ if ( null != mcs )
   
 -   Jeśli implementacja jednej z metod rozpoznaje zarówno identyfikatora GUID, a polecenie, a następnie metoda powinna być ustawiona na pole flag poleceń każdego polecenia (w `prgCmds` parametr) przy użyciu następujących <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:  
   
-    -   `OLECMDF_SUPPORTED`: To polecenie jest obsługiwane.  
+    -   `OLECMDF_SUPPORTED`: Polecenie jest obsługiwane.  
   
-    -   `OLECMDF_INVISIBLE`: To polecenie nie powinny być widoczne.  
+    -   `OLECMDF_INVISIBLE`: Polecenie nie powinny być widoczne.  
   
-    -   `OLECMDF_LATCHED`: To polecenie jest przełączona w i prawdopodobnie zostały sprawdzone.  
+    -   `OLECMDF_LATCHED`: Polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.  
   
-    -   `OLECMDF_ENABLED`: To polecenie jest włączone.  
+    -   `OLECMDF_ENABLED`: Polecenie jest włączone.  
   
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Powinien być ukryty polecenie, jeśli jest wyświetlana w menu skrótów.  
+    -   `OLECMDF_DEFHIDEONCTXTMENU`: Polecenie powinna być ukryta, jeśli jest wyświetlana w menu skrótów.  
   
-    -   `OLECMDF_NINCHED`: To polecenie jest kontroler menu i nie jest włączone, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).  
+    -   `OLECMDF_NINCHED`: Polecenie kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).  
   
 -   Jeśli polecenie została zdefiniowana w *vsct* plik z `TextChanges` Flaga, ustaw następujące parametry:  
   

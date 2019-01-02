@@ -1,9 +1,6 @@
 ---
-title: 'Porady: zmiana rozmiaru formantów w komórkach arkusza'
-ms.custom: ''
+title: 'Instrukcje: Zmiana rozmiaru formantów w komórkach arkusza'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927353"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Porady: zmiana rozmiaru formantów w komórkach arkusza
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Instrukcje: Zmiana rozmiaru formantów w komórkach arkusza
   Podczas zmiany rozmiaru kolumn lub wierszy w arkuszu, wszystkie kontrolki hosta w komórkach automatycznie Zmień rozmiar na wysokość lub szerokość komórki, który został zmieniony. Kontrolek formularzy Windows Forms nie rozmiar zmienia się automatycznie domyślnie.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35677285"
   
 ## <a name="see-also"></a>Zobacz także  
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
- [Porady: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Porady: ukrywanie kontrolek w arkuszu podczas drukowania](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Instrukcje: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Instrukcje: Ukrywanie formantów w arkuszu podczas drukowania](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

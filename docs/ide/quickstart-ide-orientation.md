@@ -3,21 +3,20 @@ title: Przewodnik po środowisku IDE programu Visual Studio
 titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 057297bf3460811a848b86c84363771d2de0ed21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856708"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut przeniesiemy się części okna, menu i inne funkcje interfejsu użytkownika.
 

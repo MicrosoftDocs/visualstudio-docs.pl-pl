@@ -1,8 +1,6 @@
 ---
 title: Instrukcje stop w Visual Basic | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,23 +19,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: fefd2c2957ea7f659d3cbf7a0c866cc3586b2ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934469"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instrukcje stop w Visual Basic
-Instrukcji Stop Visual Basic zapewnia programowy alternatywne ustawienia punktu przerwania. Gdy debuger napotka instrukcję Stop, przerywa wykonywanie programu (przejdzie do trybu przerwania). C# programistów można osiągnąć ten sam efekt za pomocą wywołania System.Diagnostics.Debugger.Break.  
+Instrukcja języka Visual Basic, Zatrzymaj zapewnia programowy alternatywa ustawienie punktu przerwania. Jeśli debuger napotka instrukcję Stop, przerywa wykonywanie programu (przejdzie do trybu przerwania). Programiści języka C# można osiągnąć ten sam efekt przy użyciu wywołania do System.Diagnostics.Debugger.Break.  
   
- Ustawić lub usunąć instrukcję Stop, edytując kod źródłowy. Nie można ustawić lub wyczyścić instrukcje Stop za pomocą poleceń debugera, jak w przypadku punktu przerwania.  
+ Ustaw lub usuń instrukcję Stop, edytując kodu źródłowego. Nie można ustawić lub wyczyścić instrukcje Stop — przy użyciu poleceń debugera, jak w przypadku punktu przerwania.  
   
- W przeciwieństwie do instrukcji End instrukcji Stop nie Resetuj zmienne lub powrót do trybu projektowania. Można kontynuować z menu debugowanie, aby kontynuować uruchamianie aplikacji.  
+ W przeciwieństwie do instrukcji End instrukcji Stop zresetować zmiennych lub nie powrót do trybu projektowania. Kontynuuj można wybrać z menu debugowanie, aby kontynuować uruchamianie aplikacji.  
   
- Debugowanie jest włączone po uruchomieniu aplikacji Visual Basic poza debugerem instrukcję Stop uruchomi debugera, jeśli Just in Time. Jeśli Just in Time debugowanie nie jest włączone, instrukcja Stop zachowuje się tak, jakby była instrukcji End Kończenie wykonywania. Nie QueryUnload lub Unload zdarzenie, więc musisz usunąć wszystkie instrukcje Stop w wersji aplikacji Visual Basic. Aby uzyskać więcej informacji, zobacz [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md).  
+ Po uruchomieniu aplikacji w języku Visual Basic poza debugerem instrukcję Stop spowoduje uruchomienie debugera, jeśli Just-in-Time, debugowanie jest włączone. Jeśli Just-in-Time debugowanie nie jest włączone, instrukcja Stop zachowuje się tak, jakby był to End — instrukcja, Kończenie wykonywania. Wystąpi zdarzenie nie QueryUnload lub zwolnij, więc należy usunąć wszystkie instrukcje Stop w wersji aplikacji Visual Basic. Aby uzyskać więcej informacji, zobacz [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
- Aby uniknąć usunięcia instrukcje Stop, można użyć kompilacja warunkowa:  
+ Aby uniknąć konieczności usuwania instrukcje Stop, można użyć kompilacji warunkowej:  
   
 ```cpp
 #If DEBUG Then  
@@ -47,13 +45,13 @@ Instrukcji Stop Visual Basic zapewnia programowy alternatywne ustawienia punktu 
 #End If  
 ```  
   
- Alternatywą jest instrukcja Assert zamiast instrukcji Stop. Instrukcja Debug.Assert dzieli wykonanie tylko wtedy, gdy określony warunek nie jest spełniony, a zostanie automatycznie usunięta, podczas tworzenia wersji. Aby uzyskać więcej informacji, zobacz [potwierdzenia w kod zarządzany](../debugger/assertions-in-managed-code.md). Chcąc instrukcję Assert, która zawsze spowoduje przerwanie wykonywania w wersji do debugowania, możesz to zrobić:  
+ Innym sposobem jest używanie instrukcji asercji zamiast instrukcji zatrzymania. Instrukcja Debug.Assert przerywa wykonywanie tylko wtedy, gdy określony warunek nie jest spełniony i zostanie automatycznie usunięta po zbudować wersję przeznaczoną do. Aby uzyskać więcej informacji, zobacz [potwierdzenia w kodzie zarządzany](../debugger/assertions-in-managed-code.md). Jeśli chcesz, aby instrukcję Assert, która zawsze przerywa wykonywanie w wersji do debugowania, można to zrobić:  
   
 ```csharp
 Debug.Assert(false)  
 ```  
   
- Jeszcze inną alternatywą jest przy użyciu metody Debug.Fail:  
+ Jeszcze inną alternatywą jest użycie metody Debug.Fail:  
   
 ```csharp
 Debug.Fail("a clever output string goes here")  
@@ -61,5 +59,5 @@ Debug.Fail("a clever output string goes here")
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [C#, F # i typy projektów Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+ [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

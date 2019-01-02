@@ -1,8 +1,6 @@
 ---
 title: Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927145"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce
 

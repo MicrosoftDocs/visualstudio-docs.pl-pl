@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Podsumowanie funkcji języka Python w programie Visual Studio, dzięki czemu najlepsze środowisko IDE języka Python na Windows (znany także jako narzędzi Python Tools for Visual Studio, PTVS).
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927340"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -45,9 +44,9 @@ Użyj **Otwórz okno interaktywne** polecenie, aby uruchomić interaktywnie jęz
 
 Informacje dodatkowe:
 
-- Wideo (2 mln 35s): [środowiska Python Zarządzanie](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Dokumentacja: [środowiska Python Zarządzanie](managing-python-environments-in-visual-studio.md)
-- Dokumentacja: [odwoływać się do środowiska Python](python-environments-window-tab-reference.md)
+- Wideo (2 mln 35s): [Zarządzanie środowiskami Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Dokumentacja: [Zarządzanie środowiskami Python](managing-python-environments-in-visual-studio.md)
+- Dokumentacja: [Dokumentacja środowiska Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zaawansowane edytowanie, IntelliSense i zrozumienie kodu
 
@@ -57,12 +56,12 @@ Program Visual Studio zapewnia najwyższej klasy Edytor języka Python obejmują
 
 Informacje dodatkowe:
 
-- Wideo (2 mln 30 sekund): [kod edycji języka Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Dokumentacja: [edycji kodu w języku Python](editing-python-code-in-visual-studio.md)
-- Dokumentacja: [formatowania kodu](formatting-python-code.md)
+- Wideo (2 mln 30 sekund): [Edytowanie kodu w języku Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Dokumentacja: [Edytowanie kodu w języku Python](editing-python-code-in-visual-studio.md)
+- Dokumentacja: [Formatowanie kodu](formatting-python-code.md)
 - Dokumentacja: [Refaktoryzacja kodu](refactoring-python-code.md)
 - Dokumentacja: [Użyj linter](linting-python-code.md)
-- Dokumentacja funkcji ogólne Visual Studio: [funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- Dokumentacja funkcji ogólne Visual Studio: [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Okno interaktywne
 
@@ -76,9 +75,9 @@ Program Visual Studio obsługuje również IPython/Jupyter w rozwiązaniu REPL, 
 
 Informacje dodatkowe:
 
-- Wideo (2 mln 22s: [okno interaktywne języka Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Dokumentacja: [okno interaktywne](python-interactive-repl-in-visual-studio.md)
-- Dokumentacja: [IPython w programie Visual Studio](interactive-repl-ipython.md)
+- Wideo (2 mln 22s: [Okno interaktywne języka Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Dokumentacja: [Okno interaktywne](python-interactive-repl-in-visual-studio.md)
+- Dokumentacja: [Program IPython w programie Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>System projektów i szablonów projektów i elementów
 
@@ -92,12 +91,12 @@ Szablony projektów i elementów zautomatyzować proces konfigurowania różnych
 
 Informacje dodatkowe:
 
-- Dokumentacja: [projektów języka Python Zarządzanie](managing-python-projects-in-visual-studio.md)
-- Dokumentacja: [dotyczące szablonów elementu](python-item-templates.md)
-- Dokumentacja: [szablony projektów języka Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Dokumentacja: [pracować z C++ i Python](working-with-c-cpp-python-in-visual-studio.md)
-- Dokumentacja funkcji ogólne Visual Studio: [szablonów projektów i elementów](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Dokumentacja funkcji ogólne Visual Studio: [rozwiązań i projektów w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Dokumentacja: [Projekty Python](managing-python-projects-in-visual-studio.md)
+- Dokumentacja: [Dokumentacja dotycząca szablonów elementu](python-item-templates.md)
+- Dokumentacja: [Szablony projektów języka Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Dokumentacja: [Praca z C++ i Python](working-with-c-cpp-python-in-visual-studio.md)
+- Dokumentacja funkcji ogólne Visual Studio: [Szablony projektów i elementów](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Dokumentacja funkcji ogólne Visual Studio: [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Oferujący debugowania
 
@@ -107,11 +106,11 @@ Jedną z mocnych programu Visual Studio jest jego zaawansowany debuger. Dla jęz
 
 Informacje dodatkowe:
 
-- Wideo: [debugowania języka Python 3 m 32s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Dokumentacja: [debugowania języka Python](debugging-python-in-visual-studio.md)
-- Dokumentacja: [debugowanie trybu mieszanego języków Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Dokumentacja: [zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
-- Dokumentacja funkcji ogólne Visual Studio: [funkcji samouczek debuger programu Visual Studio](../debugger/debugger-feature-tour.md)
+- Wideo: [Debugowanie języka Python 3m 32s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
+- Dokumentacja: [Debugowanie języka Python](debugging-python-in-visual-studio.md)
+- Dokumentacja: [Debugowanie dla języków Python/C++ w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Dokumentacja: [Zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
+- Dokumentacja funkcji ogólne Visual Studio: [Przewodnik po funkcjach debugera programu Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Narzędzia profilowania przy użyciu kompleksowe raportowanie
 
@@ -121,8 +120,8 @@ Profilowanie przedstawiono, jak jest zużywany czas w aplikacji. Visual Studio o
 
 Informacje dodatkowe:
 
-- Wideo: [profilowania Python 3 m 00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
-- Dokumentacja: [języka Python w narzędziach profilowania](profiling-python-code-in-visual-studio.md)
+- Wideo: [Profilowanie Python 3m 00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
+- Dokumentacja: [Narzędzia profilowania języka Python](profiling-python-code-in-visual-studio.md)
 - Dokumentacja funkcji ogólne Visual Studio: [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md). (Nie wszystkie funkcje profilowania programu Visual Studio są dostępne dla języka Python).
 
 ## <a name="unit-testing-tools"></a>Narzędzia do testowania jednostkowego
@@ -133,9 +132,9 @@ Odkryj, uruchamianie i zarządzanie testami w Visual Studio **Eksplorator testó
 
 Informacje dodatkowe:
 
-- Wideo: [testowania Python 2 mln 31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Dokumentacja: [testów jednostkowych narzędzia dla języka Python](unit-testing-python-in-visual-studio.md)
-- Dokumentacja funkcji ogólne Visual Studio: [kodu testu jednostkowego](../test/unit-test-your-code.md).
+- Wideo: [Testowanie Python 2 mln 31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Dokumentacja: [Narzędzia do testowania jednostkowego w języku Python](unit-testing-python-in-visual-studio.md)
+- Dokumentacja funkcji ogólne Visual Studio: [Kod testu jednostkowego](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 
@@ -147,7 +146,7 @@ Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](a
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | <ul><li>[Wprowadzenie do programowania w języku Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Początkujący Python: ciągi i funkcje](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Podstawy języka Python: listy i pętle](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Najczęściej zadawane pytania w języku Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | <ul><li>[Wprowadzenie do programowania w języku Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Początkujący Python: Ciągi i funkcje](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Podstawy języka Python: Listy i pętle](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Najczęściej zadawane pytania w języku Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 

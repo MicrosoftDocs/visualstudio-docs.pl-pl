@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843622"
 ---
 # <a name="load-test-scenario-properties"></a>Właściwości scenariusza testów obciążenia
 
@@ -43,7 +42,7 @@ Zmienić ustawienia właściwości scenariusza testu obciążenia w programie Vi
 
 |Właściwość|Definicja|
 |-|----------------|
-|**Agenci do użycia**|Określa, że agenci, którzy mają używać, jeśli uruchamiasz obciążenie dany Scenariusz testów zdalnie. Na przykład można określić konkretny zestaw agentów, aby zachować spójność podczas analizowania trendów wydajności. Agenci mogą być również rozproszeni geograficznie, tak aby istniała koligacja między skryptami wykonywanymi przez agentów a lokalizacją agentów.<br /><br />Agenci muszą być rozdzielone przecinkami, na przykład "**agenta agenta 1, agenta 2, 3**". Niewypełnienie tej właściwości oznacza, że scenariusz powinien wykorzystywać wszystkich dostępnych agentów.<br /><br />Aby uzyskać więcej informacji, zobacz [porady: Określanie agentów testowych należy użyć](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Agenci do użycia**|Określa, że agenci, którzy mają używać, jeśli uruchamiasz obciążenie dany Scenariusz testów zdalnie. Na przykład można określić konkretny zestaw agentów, aby zachować spójność podczas analizowania trendów wydajności. Agenci mogą być również rozproszeni geograficznie, tak aby istniała koligacja między skryptami wykonywanymi przez agentów a lokalizacją agentów.<br /><br />Agenci muszą być rozdzielone przecinkami, na przykład "**agenta agenta 1, agenta 2, 3**". Niewypełnienie tej właściwości oznacza, że scenariusz powinien wykorzystywać wszystkich dostępnych agentów.<br /><br />Aby uzyskać więcej informacji, zobacz [jak: Określanie agentów testowych do użycia](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Zastosuj rozkład do opóźnienia do**|Wartość logiczna, która służy do określania, czy chcesz stosowane typowe rozkłady opóźnienia model testu mieszanego z tempem użytkownika. Ta właściwość ma zastosowanie tylko, jeśli **typ testu mieszanego** właściwość jest ustawiona na **oparty na tempie użytkownika**.<br /><br />Aby uzyskać więcej informacji, zobacz [jak: Zastosuj rozkład do opóźnienia do](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**Przełączanie adresów IP**|Wartość logiczna, która służy do określania, jeśli używane jest przełączanie IP.<br /><br />Przełączanie IP pozwala agentowi testowemu wysyłać żądania do serwera przy użyciu szeregu różnych adresów IP. Symuluje to wywołania, które pochodzą z różnych komputerów klienckich. Przełączanie IP jest ważne w przypadku, gdy testujemy obciążenia o zrównoważonym obciążeniu farmy sieci web. Większość usług równoważenia obciążenia ustanawia koligację między klientem i serwerem namierzenie internetowego przy użyciu adresu IP klienta. Jeśli wszystkie żądania wydają się przychodzić od jednego klienta, moduł równoważenia obciążenia nie zrównoważy obciążenia. Aby uzyskać równowagę obciążenia w kolektywie serwerów sieci web, jest ważne, że żądania pochodzą z zakresu adresów IP.<br /><br />Funkcja przełączania adresów IP jest dostępna w przypadku używania agenta testowego.|
 |**Maksymalna liczba iteracji testu**|Wartość liczbowa służąca do określenia maksymalnej liczby testów, jakie mają zostać wykonane w scenariuszu. Wartość 0 oznacza brak maksimum.<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie iteracji testowych dla scenariuszy](../test/configure-test-iterations-in-a-load-test-scenario.md).|

@@ -1,8 +1,6 @@
 ---
 title: Element metadanych w przetwarzaniu wsadowym obiektów docelowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486169788ad4533f5d45bf48c979ce3d0f5f7920
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f46f71303dead8c44881098a89fa7518d05e7d4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856400"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadane elementu w przetwarzaniu wsadowym obiektów docelowych
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zdolność przeprowadzania analizy zależności wejść i wyjść docelowej kompilacji. Jeśli okaże się, że dane wejściowe lub wyjściowe, obiektu docelowego są aktualne, element docelowy zostanie pominięta, a kompilacja będzie kontynuowana. `Target` Użyj elementów `Inputs` i `Outputs` atrybutów, aby określić elementy, aby sprawdzić podczas analizy zależności.  
@@ -68,7 +66,7 @@ ms.locfileid: "39081062"
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md)   
+ [Instrukcje: Kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md)   
  [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
  [TARGET — element (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Metadane elementu w przetwarzaniu wsadowym zadań](../msbuild/item-metadata-in-task-batching.md)

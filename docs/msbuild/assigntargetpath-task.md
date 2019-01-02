@@ -1,8 +1,6 @@
 ---
 title: AssignTargetPath, zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccbd96de96e750c0f149924ab69785e077591755
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8a711c20198b117b53536f9b0fe043a468eb8a0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930664"
 ---
 # <a name="assigntargetpath-task"></a>Assigntargetpath — zadanie
 To zadanie akceptuje listę plików i dodaje `<TargetPath>` atrybuty, jeśli nie są już określone.  

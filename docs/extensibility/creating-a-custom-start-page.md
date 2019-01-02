@@ -1,9 +1,6 @@
 ---
 title: Tworzenie niestandardowej strony początkowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 52050641ee9d2d522ff07dd5eaed72ecbec2b09e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941443"
 ---
 # <a name="creating-a-custom-start-page"></a>Tworzenie niestandardowej strony początkowej
 Można utworzyć niestandardowej strony początkowej, wykonując kroki opisane w tym dokumencie.  
@@ -87,8 +84,8 @@ Można utworzyć niestandardowej strony początkowej, wykonując kroki opisane w
 -   Po po przetestowaniu stronę początkową i on stabilny, użyj **Dostosuj stronę początkową** opcji **opcje** okno dialogowe, aby ją zaznaczyć jako stronę startową w podstawowego wystąpienia programu Visual Studio  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wskazówki: Dodawanie niestandardowych XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
+ [Przewodnik: Dodaj niestandardowe XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [Dodaj kontrolkę użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)   
  [Dodawanie poleceń programu Visual Studio do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [Przewodnik: Zapisywanie ustawień użytkownika na stronie sieci uruchomić](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [Przewodnik: Zapisz ustawienia użytkownika na stronie sieci uruchomić](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [Wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md)

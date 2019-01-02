@@ -1,9 +1,6 @@
 ---
 title: Narzędzie CreateExpInstance | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0f7f52f45023106d3e504258a538823c1c8fbb4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961105"
 ---
 # <a name="createexpinstance-utility"></a>Narzędzie CreateExpInstance
 Użyj **CreateExpInstance** narzędzie do tworzenia, zresetuj lub Usuń wystąpienie doświadczalne programu Visual Studio. Wystąpienie eksperymentalne umożliwia debugowanie i testowanie rozszerzenia programu Visual Studio bez zmiany podstawowego produktu.  
@@ -39,7 +36,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  **/ Reset**  
  Usuwa wystąpienie eksperymentalne programu, a następnie tworzy nową.  
   
- **/ Clean**  
+ **/Clean**  
  Usuwa wystąpienie eksperymentalne.  
   
  **/ VSInstance**  

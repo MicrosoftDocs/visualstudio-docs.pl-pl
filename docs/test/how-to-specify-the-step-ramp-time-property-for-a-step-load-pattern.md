@@ -9,17 +9,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 81373e30498ad02f4007e096cfbc6a7cff953402
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4338ba11116ce8077cff8e15a6bb8093214917d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925761"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Instrukcje: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego
 
-Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -38,7 +37,7 @@ Krokowego wzorca obciążenia umożliwia zwiększenie obciążenia na serwerze l
 
 -   Czas trwania kroku (w sekundach): 1800
 
--   Czas narastania (w sekundach): 20
+-   Czas do zwiększenia kroku (w sekundach): 20
 
 -   Liczba użytkowników zwiększana podczas kroku: 100
 

@@ -1,9 +1,6 @@
 ---
 title: Praca z elementami poczty
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,31 +15,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 722f89a2fea0c5533106b010a08ed9f862ac02e8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c331840a47df154d15840a41b6086a8e70c3a735
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926852"
 ---
 # <a name="work-with-mail-items"></a>Praca z elementami poczty
-  <xref:Microsoft.Office.Interop.Outlook.MailItem> Klasa zawiera metody i właściwości można używać do wykonywania zadań z wiadomościami e-mail.  
+  <xref:Microsoft.Office.Interop.Outlook.MailItem> Klasa zawiera metody i właściwości, które umożliwiają wykonywanie zadań przy użyciu wiadomości e-mail.  
   
 |Zadanie|Procedura|  
 |----------|---------------|  
-|Utwórz wiadomość e-mail.|[Porady: programowane Tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Wyślij wiadomość e-mail.|[Porady: programowane wysyłanie wiadomości e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
-|Odpowiedz na nowych wiadomości e-mail przy użyciu niestandardowej akcji.|[Porady: programowane wykonywanie akcji po odebraniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
-|Zapisywanie załączników.|[Porady: programowane zapisywanie załączników z elementów poczty e-mail programu Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
-|Dodawanie załączników|[Porady: programowane dołączanie plików do elementów poczty e-mail programu Outlook](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
-|Iterowanie wszystkich nieprzeczytanych wiadomości.|[Porady: programowane pobieranie nieprzeczytanych wiadomości ze skrzynki odbiorczej](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
+|Tworzenie wiadomości e-mail.|[Instrukcje: Programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
+|Wyślij wiadomość e-mail.|[Instrukcje: Programowo Wyślij wiadomość e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Odpowiadanie na wiadomości e-mail przy użyciu akcji niestandardowej.|[Instrukcje: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
+|Zapisz załączniki.|[Instrukcje: Programowe zapisywanie załączników z elementów poczty e-mail programu Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
+|Dodawanie załączników|[Instrukcje: Programowe dołączanie plików do elementów poczty e-mail programu Outlook](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
+|Wykonaj iterację wszystkie nieprzeczytane wiadomości.|[Instrukcje: Programowe pobieranie nieprzeczytanych wiadomości ze skrzynki odbiorczej](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
   
- Aby uzyskać więcej informacji na temat zadań programu Outlook i modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).  
+ Aby uzyskać więcej informacji o zadaniach programu Outlook i modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)   
  [Praca z folderami](../vsto/working-with-folders.md)   
  [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)   
  [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: Konfigurowanie analizy kodu
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939764"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Porady: konfigurowanie analizy kodu dla projektu zarządzanego kodu
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego
 
 W programie Visual Studio, można wybrać z listy analizy kodu [zestawów reguł](../code-quality/rule-set-reference.md)) do zastosowania do projektu kodu zarządzanego. Domyślnie **reguł zalecanych Minimum Microsoft** zestaw reguł jest zaznaczone, ale można zastosować inną regułę, ustaw, jeśli to konieczne. Zestawy reguł można zastosować do jednego lub wielu projektów w rozwiązaniu.
 
 > [!TIP]
-> Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci web ASP.NET, zobacz [jak: Konfigurowanie analizy kodu dla aplikacji ASP.NET aplikację sieci web](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci web ASP.NET, zobacz [jak: Konfigurowanie analizy kodu dla sieci web platformy ASP.NET w aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Aby skonfigurować zestaw reguł dla projektu .NET Framework
 
@@ -77,4 +76,4 @@ Domyślnie są przypisywane projektów zarządzanych rozwiązania *reguł zaleca
 ## <a name="see-also"></a>Zobacz także
 
 - [Informacje o zestawie reguł analizy kodu](../code-quality/rule-set-reference.md)
-- [Porady: Konfigurowanie analizy kodu dla sieci web platformy ASP.NET w aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Instrukcje: Konfigurowanie analizy kodu dla sieci web platformy ASP.NET w aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

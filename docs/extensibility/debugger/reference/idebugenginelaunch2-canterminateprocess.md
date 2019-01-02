@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineLaunch2::CanTerminateProcess | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineLaunch2::CanTerminateProcess
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de1fece83161b70a3df6d8faed358ca2d22cd232
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d75fe5b61455029a0c22b5f2deac6ed1d93ee2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964273"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 Określa, proces może zostać zakończone.  
@@ -28,13 +25,13 @@ Określa, proces może zostać zakończone.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT CanTerminateProcess (   
+HRESULT CanTerminateProcess (   
    IDebugProcess2* pProcess  
 );  
 ```  
   
 ```csharp  
-int CanTerminateProcess (   
+int CanTerminateProcess (   
    IDebugProcess2 pProcess  
 );  
 ```  

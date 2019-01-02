@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane zapisywanie dokumentów'
-ms.custom: ''
+title: 'Instrukcje: Programowe zapisywanie dokumentów'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821597"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Porady: programowane zapisywanie dokumentów
+# <a name="how-to-programmatically-save-documents"></a>Instrukcje: Programowe zapisywanie dokumentów
   Istnieje kilka sposobów, aby zapisać dokumenty Microsoft Word pakietu Office. Można zapisać dokumentu, bez zmiany nazwy dokumentu lub zapisaniu dokumentu pod nową nazwą.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883480"
 -   Aby zapisać dokument pod nową nazwą, katalog o nazwie *testu* musi istnieć na dysku C.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)   
- [Porady: programowane otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Instrukcje: Programowe zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)   
+ [Instrukcje: Programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Element hosta dokumentu](../vsto/document-host-item.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Tworzenie niestandardowego tekstu znaczniki | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie niestandardowego tekstu znaczniki | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965223"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Porady: Tworzenie niestandardowego tekstu znaczników
+# <a name="how-to-create-custom-text-markers"></a>Instrukcje: Tworzenie niestandardowego tekstu znaczników
 Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub organizowanie kodu, należy wykonać następujące czynności:  
   
 - Zarejestruj nowy znacznik tekst tak, aby inne narzędzia do niego dostęp.  
@@ -29,7 +26,7 @@ Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub 
   
 - Tworzenie usługi, która może służyć przez inne procesy, aby użyć znacznika tekstu.  
   
-  Szczegółowe informacje na temat sposobu stosowania znacznika tekstu do regionu kodu, [porady: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md).  
+  Szczegółowe informacje na temat sposobu stosowania znacznika tekstu do regionu kodu, [jak: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Aby zarejestrować znacznika niestandardowego  
   
@@ -92,6 +89,6 @@ Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub 
   
 ## <a name="see-also"></a>Zobacz także  
  [Korzystanie ze znaczników tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
- [Porady: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
- [Porady: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)
+ [Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
+ [Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
+ [Instrukcje: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)

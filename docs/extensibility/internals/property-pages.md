@@ -1,9 +1,6 @@
 ---
 title: Strony właściwości | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837891"
 ---
 # <a name="property-pages"></a>Strony właściwości
 Użytkownicy mogą przeglądać i zmieniać właściwości zależne od konfiguracji i - niezależny od projektu za pomocą strony właściwości. A **stron właściwości** przycisk jest aktywny w **właściwości** oknie lub na pasku narzędzi Eksploratora rozwiązań dla obiektów, które zapewniają widok strony właściwości wybranego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla projektów i rozwiązań. Jednak mogą również być udostępnione dla elementów projektu, które należy używać właściwości zależne od konfiguracji. Ta funkcja może być używany, gdy pliki w obrębie projektu wymaga ustawienia przełącznika kompilatora różnych, aby kompilować się właściwie.  

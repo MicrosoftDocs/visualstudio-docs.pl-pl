@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db0ac06d26e7e597d9f8d4b3c11a9cf8db188e80
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: bdaf4abfa1c1e931328466cc4fb4c525b47310b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935323"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Brakuje właściwości połączenia w pliku ustawień aplikacji lub jest ona niepoprawna
 

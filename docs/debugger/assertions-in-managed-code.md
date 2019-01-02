@@ -1,8 +1,6 @@
 ---
 title: Potwierdzenia w zarządzanym kodzie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07f422348a10bbe6d5c02a50073c9486a679cfaf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce83c69893e4623dc5989561d0edfb6415708d56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880182"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 Na potwierdzenie lub `Assert` instrukcji sprawdza warunek, który jest określony jako argument do `Assert` instrukcji. Jeśli warunek jest spełniony, występuje żadna akcja. Gdy warunek jest spełniony, potwierdzenie nie powiedzie się. Jeśli korzystasz z kompilacji debugowania, programach przechodzi w tryb podziału.  
@@ -219,6 +217,6 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Śledzenie i Instrumentacja aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)   
- [Porady: kompilowanie warunkowe ze śledzeniem i debugowaniem](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)   
- [C#, F # i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Instrukcje: Kompilowanie warunkowe ze śledzeniem i debugowaniem](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)   
+ [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

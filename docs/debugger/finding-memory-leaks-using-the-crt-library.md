@@ -1,8 +1,6 @@
 ---
 title: Znajdź, przecieki pamięci za pomocą biblioteki CRT | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931030"
 ---
-# <a name="find-memory-leaks-with-the-crt-library"></a>Znajdź przecieki pamięci za pomocą biblioteki CRT
+# <a name="find-memory-leaks-with-the-crt-library"></a>Znajdowanie przecieków pamięci za pomocą biblioteki CRT
 
 Przecieki pamięci znajdują się wśród najbardziej subtelnych i twardych wykrywania usterek w aplikacjach języka C/C++. W wyniku awarii można poprawnie cofnąć alokacji pamięci, która była przydzielona wcześniej przecieki pamięci. Niewielki przeciek pamięci, mogą nie być niezauważone na początku, ale wraz z upływem czasu, może powodować objawy, począwszy od niskiej wydajności do uległa awarii, gdy aplikacji skończy się pamięć. Przeciek aplikacji, która używa się całą dostępną pamięć może powodować awarię inne aplikacje, tworzenie nieporozumienie co do tego aplikacji, która jest odpowiedzialna. Nawet nieszkodliwe przecieki pamięci mogą wskazywać na inne problemy, które powinny zostać poprawione.  
 

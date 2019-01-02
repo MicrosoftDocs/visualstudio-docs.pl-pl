@@ -1,8 +1,6 @@
 ---
 title: Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856660"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Klastry profilu na HPC (przetwarzanie o wysokiej wydajności)
 
@@ -55,8 +53,8 @@ Aby przeprowadzić profilowanie w węźle obliczeń HPC, wykonaj następujące c
 | | |
 |------------------| - |
 | *%HeadNode%* | Nazwa węzła głównego klastra. |
-| *%FxPath%* | Ścieżka do [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalatora. Na nośniku instalacyjnym programu Visual Studio jest ścieżka: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Ścieżka do wersji autonomicznego Instalatora narzędzi profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka to: autonomiczny Profiler\x64\vs_profiler.exe |
+| *%FxPath%* | Ścieżka do [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalatora. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Ścieżka do wersji autonomicznego Instalatora narzędzi profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: Profiler\x64\vs_profiler.exe autonomiczny |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil w węźle obliczeń HPC
 
@@ -150,4 +148,3 @@ Można zmienić właściwości sesji wydajności, które ustawione w Kreatorze p
 | **Argumenty skryptu przed profilu** | Określa argumenty do przekazania do skryptu przed profilu. |
 | **Po utworzeniu profilu skryptu** | Określa ścieżkę i nazwę skryptu do uruchomienia na lokalnym komputerze deweloperskim, po zakończeniu sesji profilowania. |
 | **Po utworzeniu profilu argumenty skryptu** | Określa argumenty do przekazania do skryptu po profilu. |
-

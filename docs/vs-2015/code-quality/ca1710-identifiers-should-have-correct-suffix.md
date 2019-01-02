@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2256e3f20dfdb4ddb8efa28d7ecdd203a139bcc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5232ebdaa18586f261322503b99b323cab1e2dfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965241"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny przyrostek
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny sufiks
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,12 +51,12 @@ ms.locfileid: "49940167"
 |<xref:System.Attribute?displayProperty=fullName>|Atrybut|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Wyjątek|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Kolekcja|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Słownik|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Kolekcja|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Kolekcja lub kolejki|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Kolekcja lub stos|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Kolekcja|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Słownik|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Kolekcji lub elementu DataTable|
@@ -98,7 +97,4 @@ foreach(SomeType x in SomeDictionary.Values) { }
  [CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Atrybuty](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: zdarzenia i delegatów](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [Atrybuty](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Zdarzenia i delegatów](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)

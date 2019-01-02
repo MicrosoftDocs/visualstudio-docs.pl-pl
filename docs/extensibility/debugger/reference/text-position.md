@@ -1,9 +1,6 @@
 ---
 title: TEXT_POSITION | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TEXT_POSITION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f77fa2f79f6e2e60a4a1b29e3c1a85e791c75b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcd07f34fb790f593653547f94112bffce248c55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941378"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Określa lokalizację wierszy i kolumn w podanym tekście.  
@@ -28,14 +25,14 @@ Określa lokalizację wierszy i kolumn w podanym tekście.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-typedef struct _tagTEXT_POSITION {   
+typedef struct _tagTEXT_POSITION {   
    DWORD dwLine;  
    DWORD dwColumn;  
 } TEXT_POSITION;  
 ```  
   
 ```csharp  
-public struct TEXT_POSITION {   
+public struct TEXT_POSITION {   
    public uint dwLine;  
    public uint dwColumn;  
 };  
@@ -76,9 +73,9 @@ public struct TEXT_POSITION {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

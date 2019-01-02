@@ -1,11 +1,4 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 875bd78f6e1c6298d7f94360363dcf731cc3e992
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874439"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Przeglądaj magazyn do przekazywania danych lub pobrać dzienniki i modeli
 

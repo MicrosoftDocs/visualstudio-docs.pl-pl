@@ -1,9 +1,6 @@
 ---
 title: Kreator publikacji (Office development w programie Visual Studio)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a76a333b8a692a8d7dc0a2c0f093e2eaf586c33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965924"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office development w programie Visual Studio)
   Użyj **Kreatora publikacji** Aby skopiować pliki rozwiązania do określonej lokalizacji, Utwórz pliki manifestu i Utwórz program instalacyjny.  
@@ -53,7 +50,7 @@ ms.locfileid: "50672758"
 >  Jeśli na komputerze docelowym systemem Windows Vista jest więcej istotnych kwestii. Musisz być administratorem na komputerze Windows Vista do korzystania z opcji publikowania lokalnych. Ponadto domyślna lokalizacja to zawsze *publikowania\\*  katalogu, niezależnie od tego, czy zostały zainstalowane usługi IIS.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Co to jest domyślna ścieżka instalacji na komputerach użytkowników końcowych?  
- Ścieżka instalacji jest opcjonalne. Można ustawić ścieżki instalacji później, jeśli użytkownik sobie tego życzy. Aby uzyskać więcej informacji, zobacz [jak: zmienić ścieżkę instalacji rozwiązania do pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Ścieżka instalacji jest opcjonalne. Można ustawić ścieżki instalacji później, jeśli użytkownik sobie tego życzy. Aby uzyskać więcej informacji, zobacz [jak: Zmień ścieżkę instalacji rozwiązania do pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  Ścieżka instalacji jest katalog, z którego użytkownik zainstaluje dostosowania. Należy również ścieżki, który rozwiązanie będzie używany do sprawdzenia aktualizacji. **Kreatora publikacji** nie wdrażają rozwiązania do tej lokalizacji, chyba, że ścieżka jest taka sama jak wprowadzona w **Określ lokalizację do publikowania tej aplikacji** pole na poprzedniej stronie.  
   
@@ -72,5 +69,3 @@ ms.locfileid: "50672758"
  [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Strona publikowania, Projektant projektu &#40;programowanie Office w Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
-  
-  

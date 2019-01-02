@@ -1,8 +1,6 @@
 ---
-title: marker_series::write_message — metoda | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Metoda marker_series::write_message | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e413267623d4e9bb4b8d4c1f46fd9c6ecf7808
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 03a99aa603dec83751a0254897ad9c6f40215016
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965606"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message — metoda
-Zapisuje komunikat do pliku śledzenia wizualizatora współbieżności.  
+Zapisuje komunikat do pliku śledzenia w Wizualizatorze współbieżności.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,7 +49,7 @@ void write_message(
   
 #### <a name="parameters"></a>Parametry  
  `_Format`  
- Ciąg formatu złożony, który zawiera tekst zmieszać zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
+ Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
   
  `_Importance`  
  Poziom ważności.  
@@ -65,4 +63,4 @@ void write_message(
  **Namespace:** CONCURRENCY::Diagnostic —  
   
 ## <a name="see-also"></a>Zobacz także  
- [marker_series — klasa](../profiling/marker-series-class.md)
+ [marker_series, klasa](../profiling/marker-series-class.md)

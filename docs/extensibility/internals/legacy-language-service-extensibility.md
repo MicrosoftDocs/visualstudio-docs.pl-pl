@@ -1,9 +1,6 @@
 ---
-title: Rozszerzalność usługi starszej wersji języka | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Rozszerzalność usługi starszego języka | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,42 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb7d8165060fa3b9a6445ad71a977c79414056f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e5dbb6e5b592a166c5110623886534967613d95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853505"
 ---
-# <a name="legacy-language-service-extensibility"></a>Rozszerzalność usługi starszej wersji języka
-Usługa języka zapewnia obsługę specyficzny dla języka edycji kodu źródłowego w środowisku IDE.  
+# <a name="legacy-language-service-extensibility"></a>Rozszerzalność starszej wersji usługi językowej
+Usługa języka obsługuje specyficzny dla języka do edycji kodu źródłowego w środowisku IDE.  
   
- Usługi w starszej wersji języka są zaimplementowane jako część pakiet VSPackage, ale jest nowsza sposób implementowania funkcji usługi języka Aby korzystać z rozszerzeń MEF. Aby dowiedzieć się więcej o nowy sposób wdrożenia usługi języka, zobacz [edytora i rozszerzenia usługi języka](../../extensibility/editor-and-language-service-extensions.md).  
+ Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi języka, zobacz [edytora i rozszerzenia usługi w języka](../../extensibility/editor-and-language-service-extensions.md).  
   
- W tej sekcji omówiono struktury i implementacji usługi starszej wersji języka.  
+ W tej sekcji omówiono struktury i implementacji starszej wersji usługi językowej.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Migrowanie starszej wersji usługi językowej](../../extensibility/internals/migrating-a-legacy-language-service.md)  
- Opisano sposób aktualizowania usługi języka z programu Visual Studio 2008 do najnowszej wersji.  
+ Wyjaśnia, jak zaktualizować usługę języka z programu Visual Studio 2008 do najnowszej wersji.  
   
  [Podstawowe informacje dotyczące starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-essentials.md)  
- Zawiera ważne informacje dotyczące sposobu tworzenia usługi języka Aby zintegrować język programowania Visual Studio.  
+ Zawiera ważne informacje dotyczące sposobu tworzenia usług językowych, nad zintegrowaniem język programowania Visual Studio.  
   
  [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)  
- Zawiera łącza do tematów, które ułatwiają tworzenie usługi języka.  
+ Zawiera łącza do tematów, które mogą pomóc Ci Tworzenie usługi języka.  
   
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- Zawiera informacje dotyczące obsługi wyróżniania składni za pośrednictwem usługi języka.  
+ Zawiera informacje dotyczące obsługi wyróżniania składni w ramach usługi w języka.  
   
- [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Zawiera informacje o sposobie używania framework zarządzanego pakietu (MPF) do wdrożenia usługi oferujący wszystkie funkcje języka w kodzie zarządzanym.  
+ [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Zawiera informacje o tym, jak wdrożyć usługę w pełni funkcjonalne języka w kodzie zarządzanym przy użyciu środowiska pakietu zarządzanego (MPF).  
   
  [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- Opisuje, biblioteki i narzędzia umożliwiające przeglądanie widok drzewa symboli w IDE.  
+ W tym artykule opisano, biblioteki i narzędzia umożliwiające przeglądanie widoków drzewa symboli w środowisku IDE.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md)  
- Zawiera omówienie programu Visual Studio edytory.  
+ Zawiera omówienie edytory programu Visual Studio.  
   
  [Obsługa usługi językowej do debugowania](../../extensibility/internals/language-service-support-for-debugging.md)  
- Zawiera informacje i łącza do programu Visual Studio debugowanie SDK, który zawiera informacje wymagane do tworzenia i dostosowywania debugera składniki używane do debugowania programów.
+ Zapewnia informacje i łącza do programu Visual Studio debugowanie SDK, który zawiera informacje, które są wymagane do tworzenia i dostosowywania składniki debugera, używane do debugowania programów.

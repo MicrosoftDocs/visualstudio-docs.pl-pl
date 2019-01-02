@@ -3,7 +3,6 @@ title: Zasoby do projektowania dostępnych aplikacji
 description: Dowiedz się, jak tworzyć aplikacje dostępne, aby ułatwić ich dla osób niepełnosprawnych, można użyć.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959628"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 
@@ -37,7 +36,7 @@ Użyj następujących linków, aby znaleźć informacje o technologii obsługuj�
 
 ## <a name="windows-applications"></a>Aplikacje systemu Windows
 
-* **[Wskazówki: Tworzenie dostępnej aplikacji z systemem Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  ten artykuł zawiera instrukcje krok po kroku, w tym pięć wymagania związane z dostępem do logo "Certified for Windows" w Windows próbki aplikacja.
+* **[Wskazówki: Tworzenie dostępnej aplikacji opartych na Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  ten artykuł zawiera instrukcje krok po kroku, w tym pięć wymagania związane z dostępem do logo "Certified for Windows" w przykładowej aplikacji Windows.
 
 * **Wskazówki dotyczące klawiatury użytkownika projekt interfejsu** artykułu technicznego na ten temat opisuje sposób projektowania aplikacji Windows, które użytkownicy mogą przejść z klawiatury. Aby uzyskać więcej informacji, zobacz [projekt interfejsu wskazówki dotyczące klawiatury użytkownika](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
@@ -45,7 +44,7 @@ Użyj następujących linków, aby znaleźć informacje o technologii obsługuj�
 
 ## <a name="websites"></a>Witryny internetowe
 
--   [Wskazówki: Dostęp — wytyczne dla za pomocą kontrolki obrazu, kontrolek Menu i AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten artykuł zawiera instrukcje krok po kroku, w tym formantów dostępny w przykładowej strony internetowej. Daje ona również niektóre ułatwień dostępu wskazówki dotyczące projektowania dla sieci Web.
+-   [Przewodnik: Wytyczne dotyczące ułatwień dostępu za pomocą kontrolki obrazu, kontrolek Menu i AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten artykuł zawiera instrukcje krok po kroku, w tym formantów dostępny w przykładowej strony internetowej. Daje ona również niektóre ułatwień dostępu wskazówki dotyczące projektowania dla sieci Web.
 
 -   **Tworzenie stron sieci Web dostępny za pomocą DHTML** artykułu technicznego na ten temat zawiera listę elementów HTML 4.0, które są dostępne, a także wskazówki dotyczące projektowania internetowego. Aby uzyskać więcej informacji, zobacz [tworzenia dostępny stron sieci web za pomocą DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 

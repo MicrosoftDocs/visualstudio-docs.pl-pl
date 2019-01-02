@@ -1,8 +1,6 @@
 ---
 title: Nie można nawiązać połączenia z programem Microsoft Visual Studio Monitor debugera zdalnego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 08/24/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 8babc9b86cc006e120a76a037260b62852e8f041
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931336"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 Ten komunikat może wystąpić, ponieważ monitor debugera zdalnego jest nie prawidłowo skonfigurowane na komputerze zdalnym lub maszynie zdalnej jest niedostępny z powodu problemów z siecią lub obecności zapory.

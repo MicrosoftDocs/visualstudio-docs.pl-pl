@@ -2,7 +2,6 @@
 title: Zautomatyzowane testy interfejsu użytkownika
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840645"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -146,7 +145,7 @@ Aby uzyskać dostęp do narzędzi do testowania interfejsu użytkownika kodowany
 
 Pozostałe sekcje w tym temacie więcej szczegółowych informacji o krokach w tej procedurze.
 
-Aby uzyskać bardziej szczegółowym przykładem, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). W instruktażu utworzysz prostą aplikację Windows Presentation Foundation (WPF) w celu zademonstrowania sposobu tworzenia, edytowania i obsługa kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.
+Aby uzyskać bardziej szczegółowym przykładem, zobacz [instruktażu: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). W instruktażu utworzysz prostą aplikację Windows Presentation Foundation (WPF) w celu zademonstrowania sposobu tworzenia, edytowania i obsługa kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.
 
 ## <a name="start-and-stop-the-application-under-test"></a>Uruchamianie i zatrzymywanie testowaną aplikację
 
@@ -293,7 +292,7 @@ Po utworzeniu kodowanego testu interfejsu użytkownika można edytować jej za p
 
     - Po utworzeniu kodowanego testu interfejsu użytkownika, można zmodyfikować, aby była opartych na danych. Aby uzyskać więcej informacji, zobacz [tworzenie opartych na danych kodowanego testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu oczekiwania dla określonych zdarzeń, takiego jak okno pojawia się pasek postępu zniknąć i tak dalej. Aby to zrobić, należy dodać odpowiednią metodę UITestControl.WaitForControlXXX(). Aby uzyskać pełną listę dostępnych metod, zobacz [utworzyć kodowane testy interfejsu użytkownika oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Na przykład kodowane testy interfejsu użytkownika, która czeka na formant włączyć przy użyciu metody WaitForControlEnabled zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu oczekiwania dla określonych zdarzeń, takiego jak okno pojawia się pasek postępu zniknąć i tak dalej. Aby to zrobić, należy dodać odpowiednią metodę UITestControl.WaitForControlXXX(). Aby uzyskać pełną listę dostępnych metod, zobacz [utworzyć kodowane testy interfejsu użytkownika oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Na przykład kodowane testy interfejsu użytkownika, która czeka na formant włączyć przy użyciu metody WaitForControlEnabled zobacz [instruktażu: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
     - Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HTML5, które są dołączone do programu Internet Explorer 9 i Internet Explorer 10. Aby uzyskać więcej informacji, zobacz [HTML5 za pomocą kontrolki w kodowanych testów interfejsu użytkownika](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -437,17 +436,17 @@ Za pomocą kontrolek, które wynikają z <xref:Microsoft.VisualStudio.TestTools.
 
 Możesz analizować kodowanych testów interfejsu użytkownika za pomocą zakodowanych dziennikach testów interfejsu użytkownika. Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który uruchamia ważne informacje dotyczące Twojego kodowanego testu interfejsu użytkownika. Format dzienniki umożliwia szybkie debugowanie problemów. Aby uzyskać więcej informacji, zobacz [analizowanie kodowanych testów interfejsu użytkownika, za pomocą zakodowanych dziennikach testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="whats-next"></a>Jaka jest przyszłość?
+## <a name="whats-next"></a>Co dalej?
 
-**Dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika:** można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika z programu Microsoft Test Manager lub za pomocą potoków usługi Azure. Kodowane testy interfejsu użytkownika są automatyzowane, mają wchodzić w interakcje z pulpitem po uruchomieniu, w przeciwieństwie do innych testów automatycznych.
+**Dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika:** Można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika z programu Microsoft Test Manager lub za pomocą potoków usługi Azure. Kodowane testy interfejsu użytkownika są automatyzowane, mają wchodzić w interakcje z pulpitem po uruchomieniu, w przeciwieństwie do innych testów automatycznych.
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 
 - [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Dodawanie obsługi kontrolek niestandardowych:** kodowanych testów interfejsu użytkownika nie obsługuje każdego możliwego interfejsu użytkownika i może nie obsługiwać interfejsu użytkownika, którą chcesz przetestować. Na przykład nie można od razu utworzyć kodowany test interfejsu użytkownika interfejsu użytkownika dla programu Microsoft Excel. Można jednak utworzyć rozszerzenie kodowanych testów interfejsu użytkownika, który będzie obsługiwać formant niestandardowy.
+**Dodawanie obsługi kontrolek niestandardowych:**  Kodowanych testów interfejsu użytkownika nie obsługuje każdego możliwego interfejsu użytkownika i może nie obsługiwać interfejsu użytkownika, którą chcesz przetestować. Na przykład nie można od razu utworzyć kodowany test interfejsu użytkownika interfejsu użytkownika dla programu Microsoft Excel. Można jednak utworzyć rozszerzenie kodowanych testów interfejsu użytkownika, który będzie obsługiwać formant niestandardowy.
 
 - [Włącz testowanie kodowanego interfejsu użytkownika dla kontrolek](../test/enable-coded-ui-testing-of-your-controls.md)
 

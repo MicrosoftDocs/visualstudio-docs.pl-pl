@@ -3,7 +3,6 @@ title: Wyświetl poprzedni stan aplikacji za pomocą funkcji IntelliTrace
 description: Dowiedz się, jak tworzyć migawki i wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu
 ms.custom: seodec18
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939982"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Sprawdź poprzednie Stany aplikacji przy użyciu funkcji IntelliTrace krok do tyłu w programie Visual Studio
 
@@ -112,7 +111,7 @@ Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Koszt
   * Alternatywnie: 
     1. Zainstaluj zestaw narzędzi VC++ 2015.3 v140 dla składnika komputera stacjonarnego (x86, x64) przy użyciu Instalatora programu Visual Studio.
     2. Skompiluj aplikację docelową.
-    3. W wierszu polecenia użyj narzędzia polecenia editbin można ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład, można użyć tego polecenia (po zaktualizowaniu ścieżka): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
+    3. W wierszu polecenia użyj narzędzia polecenia editbin można ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład można użyć tego polecenia (po zaktualizowaniu ścieżka): "C:\Program pliki (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
     4. Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Teraz migawki są wykonywane na debuger nie wchodzi i punktów przerwania.
 
        > [!Note]

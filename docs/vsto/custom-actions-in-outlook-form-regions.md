@@ -1,9 +1,6 @@
 ---
 title: Niestandardowe akcje w regionach formularzy programu Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869522"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
   Akcje wyświetlanie przycisków, które umożliwiają użytkownikom odpowiedzieć na element programu Microsoft Office Outlook. Na przykład, aby odpowiedzieć elementu poczty, użytkownik kliknie **odpowiedzi**, **Odpowiedz wszystkim**, lub **do przodu** przyciski akcji. Każda z tych akcji tworzy nowy element poczty i wypełni pola elementu przy użyciu informacji z oryginalnego elementu.  
@@ -58,5 +55,3 @@ ms.locfileid: "53441663"
  [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)   
  [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Określanie zdarzeń kompilacji (C#)'
+title: 'Instrukcje: Określanie zdarzeń kompilacji (C#)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964679"
 ---
-# <a name="how-to-specify-build-events-c"></a>Porady: Określanie zdarzeń kompilacji (C#)
+# <a name="how-to-specify-build-events-c"></a>Instrukcje: Określanie zdarzeń kompilacji (C#)
 
 Korzystanie ze zdarzeń kompilacji określić polecenia, które są uruchamiane przed rozpoczęciem kompilacji lub po zakończeniu kompilacji. Zdarzenia kompilacji są wykonywane tylko wtedy, gdy kompilacja pomyślnie osiągnie tych punktów w procesie kompilacji.
 
@@ -61,7 +60,7 @@ Podczas kompilowania projektu zdarzenia sprzed kompilacji są dodawane do pliku 
     > [!NOTE]
     > Jeśli zdarzenia sprzed kompilacji lub po kompilacji nie zostanie ukończone pomyślnie, możesz zakończyć działanie kompilacji przez akcję zdarzenia zakończyć pracę z kodem niż zero (0), co oznacza pomyślne akcji.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Przykład: Jak zmienić informacje manifestu za pomocą zdarzenia postkompilacyjnego
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Przykład: Jak zmienić informacje manifestu za pomocą zdarzenia mające miejsce po kompilacji
 
 Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu operacyjnego w manifeście aplikacji przy użyciu *.exe* polecenia, która jest wywoływana z zdarzenia postkompilacyjnego ( *. exe.manifest* w pliku katalog projektu). Wersja minimalna wersja systemu operacyjnego jest Czteroczęściowy numer, takich jak 4.10.0.0. Aby to zrobić, polecenia zmieni `<dependentOS>` sekcji manifestu:
 
@@ -189,5 +188,5 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
 
 - [Strona zdarzenia, Projektant projektu kompilacji (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — zdarzenie prekompilacyjne](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Porady: Określanie Tworzenie zdarzenia (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

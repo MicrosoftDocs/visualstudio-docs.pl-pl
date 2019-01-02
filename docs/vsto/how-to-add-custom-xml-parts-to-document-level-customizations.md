@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f3e817e91c4a99f5a3aae6decdc500469c10b8f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 80d8b809464cd9209b8125595fef8793fc052943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846389"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu
   Dane XML można przechowywać w skoroszycie programu Microsoft Office Excel lub dokumentu programu Microsoft Office Word, tworząc z niestandardowym elementem XML w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [przegląd części niestandardowy plik XML](../vsto/custom-xml-parts-overview.md).  
@@ -63,4 +60,3 @@ ms.locfileid: "53647561"
 ## <a name="see-also"></a>Zobacz także  
  [Niestandardowe części XML ― omówienie](../vsto/custom-xml-parts-overview.md)   
  [Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  

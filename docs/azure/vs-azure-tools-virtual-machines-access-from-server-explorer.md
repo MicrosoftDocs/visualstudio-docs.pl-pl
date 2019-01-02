@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a353caf4781a2c321a8a0b385e023686ca78cde
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 317103b1367f5181f8a806925df67b88215ce6a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849316"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
 

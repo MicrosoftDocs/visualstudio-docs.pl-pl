@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback2::RestrictOriginalPathAccess | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Idialoadcallback2::restrictoriginalpathaccess — | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3cd1f4989e88c41039328cdc4d54071ff49bac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7b88ea861c34eef8761b22cdc4c23f4e79a6b978
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872303"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
-Określa, czy można wyszukać plik PDB w oryginalnym katalogu debugowania.  
+Określa, czy można szukać pliku .pdb w oryginalny katalog debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,10 +29,10 @@ HRESULT RestrictOriginalPathAccess ();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Inne niż powrotnych kodu `S_OK` uniemożliwia szuka pliku PDB w oryginalnym katalogu debugowania. Oryginalny katalog debugowania jest ścieżka do pliku symboli skompilowany do pliku wykonywalnego, gdy włączone jest debugowanie. Ta ścieżka nie jest zawsze taka sama jak ścieżka, w której istnieje plik wykonywalny.  
+ Dowolny kod powrotu innych niż `S_OK` zapobiega szuka pliku .pdb w oryginalny katalog debugowania. Oryginalny katalog debugowania jest ścieżką do pliku symboli, skompilowany do pliku wykonywalnego, jeśli debugowanie jest włączone. Ta ścieżka nie jest zawsze taki sam jak ścieżki, w którym znajduje się plik wykonywalny.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 019d02b8cd5031148a2902ed3bda54640dcc6587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849287"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś P/Invokes do klasy NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +93,7 @@ ms.locfileid: "49913868"
 ## <a name="unsafenativemethods-example"></a>Przykład UnsafeNativeMethods
 
 ### <a name="description"></a>Opis
- Metody P/Invoke, który nie można bezpiecznie wywołać i który może spowodować skutki uboczne powinien znajdować się w klasie o nazwie **UnsafeNativeMethods**. Te metody powinny być starannie sprawdzane, aby upewnić się, że ich nie są widoczne dla użytkownika przypadkowo. Reguła [CA2118: przegląd wykorzystania SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) może w tym pomóc. Alternatywnie metody powinny mieć inny uprawnienia, które jest wymagane zamiast **UnmanagedCode** po ich używają.
+ Metody P/Invoke, który nie można bezpiecznie wywołać i który może spowodować skutki uboczne powinien znajdować się w klasie o nazwie **UnsafeNativeMethods**. Te metody powinny być starannie sprawdzane, aby upewnić się, że ich nie są widoczne dla użytkownika przypadkowo. Reguła [CA2118: Przejrzyj przypadki użycia atrybutu SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) może w tym pomóc. Alternatywnie metody powinny mieć inny uprawnienia, które jest wymagane zamiast **UnmanagedCode** po ich używają.
 
  W poniższym przykładzie przedstawiono **Cursor.Hide** metodę, która otacza **wartość** funkcji z user32.dll.
 
@@ -104,6 +103,3 @@ ms.locfileid: "49913868"
 
 ## <a name="see-also"></a>Zobacz też
  [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)
-
-
-

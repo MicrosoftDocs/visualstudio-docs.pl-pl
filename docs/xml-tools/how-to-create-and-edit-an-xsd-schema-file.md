@@ -2,7 +2,6 @@
 title: Tworzenie i edytowanie pliku schematu XSD
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
@@ -10,35 +9,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 015523e35f3593523ee362faeb6aa544139e1103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855510"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Porady: tworzenie i edytowanie pliku schematu XSD
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Instrukcje: Tworzenie i edytowanie pliku schematu XSD
 
 W tym temacie opisano, jak utworzyć nowy plik schematu XML (XSD), a następnie dodać zawartość do pliku XSD.
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Aby utworzyć nowy plik schematu XML
 
-1. W programie Visual Studio Otwórz **pliku** menu i wybierz **nowy** > **pliku**. Lub użyj **Ctrl**+**N** skrót klawiaturowy.
+1. W programie Visual Studio, otwórz **pliku** menu, a następnie wybierz **New** > **pliku**. Możesz też korzystać z **Ctrl**+**N** skróty klawiaturowe.
 
 2. W **nowy plik** okno dialogowe, wybierz opcję **schematu XML** , a następnie wybierz **Otwórz**.
 
-   Tworzony jest nowy plik. Widok Start i pustą **Eksploratora schematu XML** okna są wyświetlane w programie Visual Studio.
+   Tworzony jest nowy plik. Widoku startowego oraz pustą **Eksploratora schematu XML** okna pojawiają się w programie Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Aby edytować plik
 
-1. Wybierz **Użyj edytora XML możesz wyświetlać i edytować pliku schematu XML** łącza w widoku startowego.
+1. Wybierz **Użyj edytora XML możesz wyświetlać i edytować podstawowego pliku schematu XML** link widoku startowego.
 
-   Edytor XML pojawi się nowy po otwarciu pliku.
+   Edytor XML pojawia się po otwarciu nowego pliku.
 
-2. Skopiuj schematu XML przykładowego kodu z [schematu zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.
+2. Skopiuj przykładowy kod XML schematu z [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.
 
-   **Eksploratora schematu XML** został zaktualizowany o nowy zestaw schematu.
+   **Eksploratora schematu XML** będą aktualizowane przy użyciu nowego zestawu schematu.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Praca z danych XML](../xml-tools/working-with-xml-data.md)
+- [Praca z danymi XML](../xml-tools/working-with-xml-data.md)
