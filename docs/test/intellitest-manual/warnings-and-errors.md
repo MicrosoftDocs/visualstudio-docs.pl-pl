@@ -22,7 +22,7 @@ ms.locfileid: "51000617"
 
 ## <a name="warnings-and-errors-by-category"></a>Ostrzeżenia i błędy według kategorii
 
-* **Granice
+* **Granice**
   * [Przekroczono MaxBranches](#maxbranches-exceeded)
   * [Przekroczono MaxConstraintSolverTime](#maxconstraintsolvertime-exceeded)
   * [Przekroczono MaxConditions](#maxconditions-exceeded)
