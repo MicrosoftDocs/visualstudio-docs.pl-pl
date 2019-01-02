@@ -1,9 +1,6 @@
 ---
 title: Language Server Protocol — omówienie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828228"
 ---
 # <a name="language-server-protocol"></a>Language Server Protocol
 
@@ -52,13 +49,13 @@ Poniżej przedstawiono przykład sposobu narzędzie a serwerem języka komunikac
 
 ![diagram przepływu LSP](media/lsp-flow-diagram.png)
 
-* **Użytkownik otwiera plik (nazywane dokumentu) w narzędziu**: narzędzie informuje serwer języka czy dokument jest otwarty ("textDocument/didOpen"). Od teraz prawdziwych informacji o zawartości dokumentu nie jest już w systemie plików, ale przechowywane za pomocą narzędzia w pamięci.
+* **Użytkownik otwiera plik (nazywane dokumentu) w narzędziu**: Narzędzie informuje serwer języka czy dokument jest otwarty ("textDocument/didOpen"). Od teraz prawdziwych informacji o zawartości dokumentu nie jest już w systemie plików, ale przechowywane za pomocą narzędzia w pamięci.
 
-* **Użytkownik dokona edycji**: narzędzie informuje serwer o zmianie dokumentów ("textDocument/didChange"), a także informacji semantycznych programu jest aktualizowana przez serwer języka. Ponieważ tak się stanie, serwer języka analizuje te informacje i powiadamia narzędzie z wykrytych błędów i ostrzeżeń ("textDocument/publishDiagnostics").
+* **Użytkownik dokona edycji**: Narzędzie informuje serwer o zmianie dokumentów ("textDocument/didChange"), a następnie informacji semantycznych programu jest aktualizowana przez serwer języka. Ponieważ tak się stanie, serwer języka analizuje te informacje i powiadamia narzędzie z wykrytych błędów i ostrzeżeń ("textDocument/publishDiagnostics").
 
-* **Użytkownik wykonuje "Przejdź do definicji" w symbolu w edytorze**: narzędzie wysyła żądanie "textDocument/definicji" z dwoma parametrami: (1) identyfikator URI dokumentu i (2 położenie tekstu, z której zainicjowano przejdź do definicji żądania do serwera. W odpowiedzi serwer podaje identyfikator URI dokumentu i położenie definicji symbolu w dokumencie.
+* **Użytkownik wykonuje "Przejdź do definicji" w symbolu w edytorze**: Narzędzie wysyła żądanie "textDocument/definicji" z dwoma parametrami: (1 identyfikator URI dokumentu i (2 położenie tekstu, z której zainicjowano przejdź do definicji żądania do serwera. W odpowiedzi serwer podaje identyfikator URI dokumentu i położenie definicji symbolu w dokumencie.
 
-* **Użytkownik zamyka dokument (plik)**: "textDocument/didClose" powiadomienia są wysyłane za pomocą narzędzia informowanie serwera języka, który dokument jest już w pamięci, które bieżącą zawartość jest teraz na bieżąco w systemie plików.
+* **Użytkownik zamyka dokument (plik)**: Za pomocą narzędzia informowanie serwera języka, który dokument jest już w pamięci, które bieżącą zawartość jest teraz na bieżąco w systemie plików jest wysyłane powiadomienie "textDocument/didClose".
 
 Ten przykład ilustruje, jak protokół komunikuje się z serwerem języka na poziomie funkcji edytora, takich jak "Przejdź do definicji", "Znajdź wszystkie odwołania". Typy danych używany przez protokół to edytor lub IDE "typy danych", takie jak dokument tekstowy aktualnie otwarte i położenie kursora. Typy danych nie są na poziomie modelu programowania domeny języka, który zapewni zwykle drzewa abstrakcyjnej składni i kompilatora symbole (na przykład rozpoznać typy, przestrzenie nazw,...). Znacznie upraszcza protokołu.
 

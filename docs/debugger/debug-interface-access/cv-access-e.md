@@ -1,8 +1,6 @@
 ---
 title: Cv_access_e — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6de95d74b8d7edc3bde08437c3d018270758112
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 373149884078b58926493fd7f37756ddb4eb8829
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838758"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Określa zakres widoczności (poziom dostępu), funkcji składowych i zmiennych.  
@@ -27,7 +25,7 @@ Określa zakres widoczności (poziom dostępu), funkcji składowych i zmiennych.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-typedef enum CV_access_e {   
+typedef enum CV_access_e {   
    CV_private   = 1,  
    CV_protected = 2,  
    CV_public    = 3  

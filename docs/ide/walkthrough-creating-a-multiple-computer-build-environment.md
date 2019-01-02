@@ -1,8 +1,7 @@
 ---
-title: 'Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach'
+title: 'Przewodnik: tworzenie środowiska kompilowania na wielu komputerach'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 104584f415e3b4167206632e75e1c7b6d29bb6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836314"
 ---
-# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
+# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
 Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowanie programu Visual Studio na komputerze-hoście, a następnie kopiowanie różnych plików i ustawień na inny komputer, aby uczestniczyć w kompilacji. Nie trzeba zainstalować program Visual Studio na innym komputerze.
 

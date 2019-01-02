@@ -1,30 +1,29 @@
 ---
-title: 'Przewodnik: używanie hierarchii XSLT'
+title: 'Przewodnik: Korzystanie z hierarchii XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834727"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Wskazówki: Użyj hierarchii XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Przewodnik: Użycie hierarchii XSLT
 
-Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z projektowaniem XML. Arkusz stylów XSLT często używa `includes` i `imports` instrukcje. Kompilacja rozpoczyna się od arkusza stylów podmiotu zabezpieczeń, ale po wyświetleniu błędu w wyniku kompilowanie arkusz stylów XSLT błędu mogą pochodzić z innego źródła niż arkusza stylów podmiotu zabezpieczeń. Naprawienie błędu lub edycji arkusza stylów mogą wymagać dostępu do arkuszy stylów dołączone lub importowany. Krokowe arkusza stylów w debugerze może Otwórz arkusze stylów dołączone i importowane, i chcesz dodać punkt przerwania w pewnym momencie jednego lub więcej arkuszy stylów dołączone.
+Narzędzie hierarchii XSLT upraszcza wiele zadań programistycznych XML. Arkusz stylów XSLT często używa `includes` i `imports` instrukcje. Kompilacja zaczyna się od arkusza stylów jednostki, ale gdy zostanie wyświetlony błąd w wyniku kompilacji arkusz stylów XSLT błędu mogą pochodzić z innego źródła niż arkusza stylów podmiotu zabezpieczeń. Naprawianie błędu lub edytowania arkusza stylów mogą wymagać dostępu do arkuszy stylów dołączanego lub importowanego. Krokowego wykonywania arkusza stylów w debugerze mogą otwierać arkusze stylów dołączone i importowanie i chcesz dodać punkt przerwania w pewnym momencie w co najmniej jednej arkusze stylów dołączone.
 
-Inny scenariusz, gdzie mogą być przydatne narzędzie hierarchii XSLT jest umieścić punkty przerwania reguł wbudowanych szablonów. Szablon reguły są specjalne szablony wygenerowany dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates` po nie innych szablonów nie odpowiada węzła. Aby zaimplementować debugowania w regułach wbudowanych szablonów, debuger XSLT generuje plik z zasadami w folderze tymczasowym i kompiluje je razem z arkusza stylów podmiotu zabezpieczeń. Bez Przechodzenie do kodu z niektórych `xsl:apply-template`, może być trudne można znaleźć arkusze stylów, które zostały uwzględnione w arkuszu stylów główną lub znajdowanie i Otwieranie arkusza stylów przy użyciu reguł wbudowanych szablonów.
+Inny scenariusz, w którym narzędzie hierarchii XSLT może być przydatne jest umieszczenie punktów przerwania w regułach wbudowany szablon. Szablon reguły są specjalne szablony generowane dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates` gdy szablon nie pasuje do węzła. Aby zaimplementować profilowanie wbudowanych szablonów reguł, debuger XSLT generuje plik z zasadami w folderze tymczasowym i kompiluje je wraz z arkusza stylów podmiotu zabezpieczeń. Bez Przechodzenie do kodu z niektórych `xsl:apply-template`, może być trudno znaleźć arkuszy stylów, które zostały uwzględnione w arkuszu stylów podmiotu zabezpieczeń lub znaleźć i otworzyć arkusz stylów za pomocą wbudowanego szablonu reguły.
 
-W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do którego istnieje odwołanie.
+W przykładzie w tym temacie pokazano, debugowanie w arkuszu stylów odwołania.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>Debugowanie w arkuszu stylów do którego istnieje odwołanie
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Aby debugować w arkuszu stylów odwołania
 
-1. Otwórz dokument XML w Visual Studio. W tym przykładzie użyto następującym dokumencie:
+1. Otwórz dokument XML w programie Visual Studio. W tym przykładzie użyto następujący dokument:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +47,7 @@ W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do któreg
     </COLLECTION>
     ```
 
-1. Dodaj następujące *xslincludefile.xsl*:
+1. Dodaj następujący kod *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -71,7 +70,7 @@ W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do któreg
     </xsl:stylesheet>
     ```
 
-3.  Dodaj następujące *xslinclude.xsl* pliku:
+3.  Dodaj następujący kod *xslinclude.xsl* pliku:
 
     ```xml
     <?xml version='1.0'?>
@@ -109,8 +108,8 @@ W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do któreg
 
 5.  Rozpocznij debugowanie.
 
-6.  Gdy debuger zatrzymuje się na instrukcję `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz **Step Into** przycisku. Debugowanie może być kontynuowane w arkuszu stylów do którego istnieje odwołanie. Hierarchia jest widoczna i Projektant zawiera prawidłową ścieżkę.
+6.  Gdy debuger zatrzymuje się w instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz **Step Into** przycisku. Debugowanie może być kontynuowane w arkuszu stylów odwołania. Hierarchia jest widoczna i Projektant wyświetla prawidłową ścieżkę.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wskazówki: Profilera XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Przewodnik: XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md)

@@ -2,7 +2,6 @@
 title: Zmień nazwę, nazwa_pliku, aby dopasować typ
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 42e1d3cad1752649446a35abd863390166a57271
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834584"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Wpisz nazwę pliku lub nazwę pliku do refaktoryzacji typu synchronizacji
 
@@ -27,11 +26,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** pozwala zmienić nazwę typu, aby dopasować nazwę pliku lub zmienić nazwę pliku, który będzie pasował do typu, które zawiera.
+**Co:** Pozwala zmienić nazwę typu, aby dopasować nazwę pliku lub zmienić nazwę pliku, który będzie pasował do typu, które zawiera.
 
-**Kiedy:** zmieniono nazwę pliku lub typ i nie zostały jeszcze zaktualizowane odpowiedniego pliku lub typ do dopasowania.
+**Kiedy:** Zmieniono nazwę pliku lub typ, a nie zostały jeszcze zaktualizowane odpowiedniego pliku lub typ do dopasowania.
 
-**Dlaczego:** umieszczenie typu w pliku o innej nazwie lub odwrotnie, go, które są trudne do znalezienia, czego szukasz. Zmieniając typ lub nazwa pliku, kod staje się bardziej czytelny i łatwiejszą nawigacją.
+**Dlaczego:** Wprowadzenie do typu w pliku o innej nazwie lub odwrotnie, go, które są trudne do znalezienia, czego szukasz. Zmieniając typ lub nazwa pliku, kod staje się bardziej czytelny i łatwiejszą nawigacją.
 
 ## <a name="how-to"></a>Instrukcje
 

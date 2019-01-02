@@ -1,8 +1,6 @@
 ---
 title: Zagadnienia dotyczące zabezpieczeń internetowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,29 +16,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799cc8700c450fb2d8b81293bf410903e498e19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819565"
 ---
 # <a name="visualizer-security-considerations"></a>Zagadnienia dotyczące zabezpieczeń internetowych
-Pisanie wizualizatora polega na potencjalne zagrożenia. Nie znanego wykorzystać nie istnieje dla tych potencjalnych zagrożeń, ale deweloperów powinien mieć świadomość ich i podjąć odpowiednie środki ostrożności, zgodnie z opisem w tym miejscu, w celu ochrony przed lukami w przyszłości.  
+Pisanie wizualizatora polega na potencjalne zagrożenia. Dla tych potencjalnych zagrożeń istnieje obecnie nie znane luki, ale deweloperów powinna wiedzieć o tym i podjąć odpowiednie środki ostrożności, zgodnie z opisem w tym miejscu, w celu ochrony przed programami wykorzystującymi luki w przyszłości.  
   
- Wizualizatory debugera wymagają uprawnień większa, niż jest to dozwolone przez aplikację częściowej relacji zaufania. Wizualizatory nie zostanie załadowany, gdy zostały zatrzymane w kodzie z częściowa relacja zaufania. Aby debugować przy użyciu wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
+ Wizualizatory debugera wymagają większe uprawnienia niż jest to dozwolone przez aplikację do częściowego zaufania. Wizualizatory nie zostanie załadowany, gdy zostały zatrzymane w kod z częściowej relacji zaufania. Aby debugować za pomocą wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
   
-## <a name="possible-malicious-debuggee-component"></a>Możliwe złośliwego składnika obiektu debugowanego  
- Wizualizatory składają się z co najmniej dwie klasy: na stronie debugera i jeden po stronie debugowanego obiektu. Wizualizatory często są wdrażane w oddzielne zestawy umieścić w katalogach specjalne, ale mogą również być załadowany z obiektem debugowanym. W takim przypadku debuger kodu poza obiekt debugowany i uruchamia go wewnątrz debugera przy pełnym zaufaniu.  
+## <a name="possible-malicious-debuggee-component"></a>Możliwe złośliwego składnik obiekcie debugowanym  
+ Wizualizatory składają się z co najmniej dwóch klas: na stronie debugera i jeden po stronie debugowanego obiektu. Wizualizatory są często wdrażana w oddzielne zestawy, umieść w katalogach specjalne, ale mogą również być załadowany z debugowanego obiektu. W takiej sytuacji debuger kodu poza obiekt debugowany i uruchamia go wewnątrz debugera z pełnym zaufaniem.  
   
- Uruchomienia kodu po stronie debugowanego obiektu z pełnym zaufaniem staje się powodować problemy podczas debugowany nie jest w pełni zaufany. Jeśli wizualizatora próbuje załadować częściowo zaufanego zestawu z obiektem debugowanym do debugera, Visual Studio spowoduje przerwanie wizualizatora.  
+ Uruchamianie kodu po stronie debugowanego obiektu z pełnym zaufaniem staje się problematyczne Jeśli obiekt debugowany nie jest w pełni zaufany. Jeśli wizualizatora próbuje załadować zestaw częściowej relacji zaufania z debugowanym obiekcie do debugera, Visual Studio przestanie obowiązywać wizualizatora.  
   
- Jednak nadal istnieje luka pomocniczych. Po stronie debugowanego obiektu można skojarzyć z strona debugera, która została załadowana z innego źródła (nie debugowany). Po stronie debugowanego obiektu następnie można określić, która zaufanych po stronie debugera do wykonania akcji w jego imieniu. Jeśli zaufane klasy po stronie debugera udostępnia mechanizm "Usuń ten plik", na przykład obiekt debugowany częściowego zaufania może wywołać mechanizmu gdy użytkownik wywoła jego wizualizatora.  
+ Jednak nadal istnieje pomocnicza luk w zabezpieczeniach. Po stronie debugowanego obiektu można skojarzyć z boku debugera, który został załadowany z innego źródła (a nie obiekt debugowany). Po stronie debugowanego obiektu można powiedzieć, zaufanych stronie debugera do wykonania akcji w jej imieniu. Jeśli zaufany klasy po stronie debugera udostępnia mechanizm "Usuń ten plik", na przykład obiekt debugowany częściowego zaufania może wywołać ten mechanizm po użytkownik wywołuje jego wizualizatora.  
   
- Aby zmniejszyć tę lukę w zabezpieczeniach, należy zachować ostrożność, interfejsów udostępnianych przez użytkownika wizualizatora.  
+ Aby zmniejszyć tę lukę w zabezpieczeniach, należy zachować ostrożność, interfejsów udostępnianych przez usługi wizualizatora.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Architektura wizualizatora](../debugger/visualizer-architecture.md)   
- [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)   
- [Utwórz niestandardowe Wizualizatory](../debugger/create-custom-visualizers-of-data.md)   
+ [Instrukcje: Pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

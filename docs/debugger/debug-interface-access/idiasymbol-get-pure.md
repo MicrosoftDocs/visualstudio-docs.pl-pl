@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_pure — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f79523cec58c34039db817f36eaf22efe4e6acd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06418ee8f95ad08b5d69ef272820dbe05f3e7bf8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843783"
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
 Pobiera flagę określającą, czy funkcja jest czysty wirtualnego.  
@@ -27,7 +25,7 @@ Pobiera flagę określającą, czy funkcja jest czysty wirtualnego.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_pure (   
+HRESULT get_pure (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
 title: Zestaw debugowania i zwalniania konfiguracji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.builds
@@ -33,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837761"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Zestaw debugowania i zwalniania konfiguracji w programie Visual Studio
 
@@ -126,4 +124,4 @@ Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfigurac
 [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 [Ustawienia projektu dla konfiguracji debugowania języka C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[Porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
+[Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)

@@ -1,9 +1,6 @@
 ---
 title: Odwołanie (rozszerzalność narzędzi SharePoint) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,23 +12,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0699df6d6826cf2079f2fcfe0358ce4e0a7eebd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ffc082f992542f54c9545e9567a924b5480fc8b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847051"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Odwołanie (rozszerzalność narzędzi SharePoint)
-  Ta sekcja zawiera dokumentacja referencyjna dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
+  Ta sekcja zawiera dokumentacja dotycząca Rozszerzanie narzędzi SharePoint w programie Visual Studio.  
   
 ## <a name="in-this-section"></a>W tej sekcji
  [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
- Zawiera dokumentacja referencyjna dla *.spdata —* pliku schematu.  
+ Zawiera dokumentację referencyjną dla *spdata* pliku schematu.  
   
  [Dokumentacja interfejsu API &#40;rozszerzalność narzędzi SharePoint&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  
- Zawiera dokumentacji interfejsu API dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
+ Zawiera dokumentację API rozszerzania narzędzi programu SharePoint w Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz także
- [Rozszerzanie narzędzi SharePoint w Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
-  
+ [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  

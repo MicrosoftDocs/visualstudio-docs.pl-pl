@@ -1,9 +1,6 @@
 ---
-title: Obsługa narzędzia do przeglądania Symbol | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Obsługa narzędzi do przeglądania symboli | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
@@ -21,37 +18,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08185f64310da610253dc35e69323b17ab0177fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77ba75a0b62f2b0cbac1d7c60875dd322d0feaf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841982"
 ---
-# <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzia do przeglądania Symbol
-**Przeglądarka obiektów**, **widoku klasy**, **przeglądarce wywołań** i **wyniki Znajdź Symbol** narzędzia zapewniają symbol Przeglądanie możliwości programu Visual Studio. Te narzędzia wyświetlanie widoków hierarchiczne drzewo symboli i prezentują jedynie relacje między symbolami w drzewie. Symbole może reprezentować przestrzeni nazw, obiektów, klas, elementy członkowskie klasy i inne elementy języka zawarte w różnych składników. Następujące składniki projektów programu Visual Studio, zewnętrznych [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] składniki i biblioteki typów (.tlb). Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).  
+# <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzi do przeglądania symboli
+**Przeglądarka obiektów**, **Widok klas**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli** narzędzia udostępniają symbol przeglądania w programie Visual Studio. Te narzędzia wyświetlanie widoków drzewa hierarchicznego symboli i pokazanie relacji między symbolami w drzewie. Symbole mogą reprezentować przestrzenie nazw, obiektów, klas, składowych klasy i inne elementy języka zawarte w różnych składników. Składniki obejmują projektów programu Visual Studio, zewnętrzne [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] składniki i biblioteki typów (.tlb). Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).  
   
-## <a name="symbol-browsing-libraries"></a>Przeglądanie symbol bibliotek  
- Jako implementujący języka można rozszerzyć możliwości przeglądania symbol Visual Studio, tworząc bibliotek, śledzić symbole w składniki, które stanowią listę symboli do Menedżera obiektów Visual Studio za pomocą zestawu interfejsów. Biblioteki jest opisane przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interfejsu. Menedżera obiektów Visual Studio odpowiada na żądania dla nowych danych z narzędzia przeglądanie symbol uzyskując dane z biblioteki i organizowanie go. Następnie wypełnia lub aktualizacji narzędzi z żądanych danych. Aby uzyskać odwołania do Menedżera obiektów Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, przekazać <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> identyfikator usługi `GetService` — metoda.  
+## <a name="symbol-browsing-libraries"></a>Biblioteki przeglądania symboli  
+ Jako implementującego języka możesz rozszerzyć możliwości przeglądania symboli programu Visual Studio, tworząc bibliotek, Śledź symbole w poszczególnych składnikach, które zapewniają listy symboli do Menedżera obiektów programu Visual Studio za pomocą zestawu interfejsów. Biblioteka jest opisana przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interfejsu. Menedżer obiektów programu Visual Studio odpowiada na żądania dla nowych danych narzędzi do przeglądania symboli przez uzyskanie danych z biblioteki i organizowania go. Następnie wypełnia lub narzędzia zostaje zaktualizowana o żądanych danych. Aby uzyskać odwołanie do Menedżera obiektów w programie Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, przekazać <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> identyfikator do usługi `GetService` metody.  
   
- Każdej biblioteki należy zarejestrować się w Menedżerze obiektów Visual Studio gromadzi informacje o wszystkich bibliotek. Aby zarejestrować bibliotekę, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody. W zależności od tego, które narzędzie inicjuje żądanie Menedżer obiektów Visual Studio znajdzie odpowiednią bibliotekę i wysyła żądanie danych. Dane przesyłane między bibliotekami i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów na listach symboli opisanego przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu.  
+ Każdej biblioteki należy zarejestrować przy użyciu Menedżera obiektów programu Visual Studio, który gromadzi informacje o wszystkich bibliotek. Aby zarejestrować bibliotekę, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody. W zależności od narzędzie, które inicjuje żądanie Menedżer obiektów programu Visual Studio znajdzie odpowiednią bibliotekę i żąda danych. Dane przesyłane między bibliotekami i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów na listach symbole opisanego przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów jest odpowiedzialny za okresowego odświeżania przeglądanie symbol narzędzia do uwzględnienia najnowszych danych zawartych w bibliotekach.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów jest odpowiedzialny za okresowego odświeżania narzędzi do przeglądania symboli do odzwierciedlenia najnowszych danych zawartych w bibliotekach.  
   
- Na poniższym diagramie podano przykładowe kluczowych elementów procesu wymiany żądań/danych między biblioteką a Menedżera obiektów Visual Studio. Interfejsy na diagramie są częścią aplikacji kodu zarządzanego.  
+ Poniższy diagram zawiera przykład kluczowe elementy procesu wymiany żądań/danych między biblioteką a Menedżera obiektów programu Visual Studio. Interfejsy na diagramie są częścią aplikacji kodu zarządzanego.  
   
  ![Przepływ danych między biblioteką a Menedżera obiektów](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
   
- Zapewnienie list symboli do Menedżera obiektów Visual Studio, najpierw należy zarejestrować bibliotekę z Menedżera obiektów Visual Studio przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody. Po zarejestrowaniu biblioteki menedżera obiektów Visual Studio żądań niektórych informacji na temat możliwości biblioteki. Na przykład żądania flagi biblioteki i obsługiwane kategorie wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> metody. W pewnym momencie po jednym z narzędzi żąda danych z tej biblioteki menedżera obiektów żąda najwyższego poziomu lista symboli przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> metody. W odpowiedzi, biblioteki wytwarza lista symboli i udostępnia go do Menedżera obiektów Visual Studio za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Obiektu manager Określa, ile elementów znajdują się na liście, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> metody. Wszystkie następujące żądania odnoszą się do danego elementu na liście i podaj numer indeksu w każdym żądaniu. Menedżer obiektów Visual Studio będzie kontynuowana, zbierać informacje dotyczące typu, dostępności i inne właściwości elementu przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> metody.  
+ Aby utworzyć listy symboli dla Menedżera obiektów programu Visual Studio, musisz najpierw zarejestrować biblioteki z Menedżera obiektów programu Visual Studio przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody. Po zarejestrowaniu biblioteki menedżera obiektów programu Visual Studio żądań pewne informacje na temat funkcji biblioteki. Na przykład żądania flagi biblioteki i obsługiwane kategorie, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> metody. W pewnym momencie, gdy jedno z narzędzi żąda danych z tej biblioteki menedżera obiektów żądań najwyższego poziomu lista symboli przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> metody. W odpowiedzi biblioteki są produkowane lista symboli i udostępniła je systemowi Menedżera obiektów programu Visual Studio za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów określa, ile elementów znajdują się na liście, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> metody. Wszystkie następujące żądania odnoszą się do danego elementu na liście i podaj numer indeksu elementu w każdym żądaniu. Menedżer obiektów programu Visual Studio przechodzi zbierać informacje dotyczące typu, dostępności i inne właściwości elementu przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> metody.  
   
- Określa nazwę elementu wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> — metoda i żąda informacji ikona przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> metody. Ikona jest wyświetlana na lewo od nazwy elementu i przedstawia typu elementu, dostępności i inne właściwości.  
+ Określa nazwę elementu, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> metody i żądania informacje o ikonie przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> metody. Ikona jest wyświetlana na lewo od nazwy elementu i przedstawia typ elementu, dostępności i inne właściwości.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Obiekt Menedżera wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> metodę, aby ustalić, czy element danej listy można rozwijać i zawiera elementy podrzędne. Jeśli interfejsu użytkownika wysyła żądanie do rozszerzenia elementu, Menedżera obiektów żądania podrzędnego lista symboli przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> metody. Proces jest kontynuowany różnych części drzewa tworzone na żądanie.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Obiekt Menedżera wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> metodę, aby ustalić, czy element danej listy można rozwijać i zawiera elementy podrzędne. Jeśli interfejs użytkownika wysyła żądanie, aby rozwinąć element, Menedżera obiektów żądania podrzędnego lista symboli, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> metody. Proces jest kontynuowany, za pomocą różnych częściach drzewa kompilowana na żądanie.  
   
 > [!NOTE]
->  Aby zaimplementować dostawcę symbol kodu natywnego, użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsów.  
+>  Aby zaimplementować dostawcę symbolu kodu natywnego, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: rejestrowanie biblioteki z Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Porady: udostępnianie list symboli udostępniane przez bibliotekę do Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Instrukcje: identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+ [Instrukcje: Rejestrowanie biblioteki przy użyciu Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Instrukcje: Uwidacznianie listy symboli udostępnianych przez bibliotekę dla Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
+ [Instrukcje: Identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

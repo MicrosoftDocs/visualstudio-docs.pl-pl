@@ -2,7 +2,6 @@
 title: Okno polecenia
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841862"
 ---
 # <a name="command-window"></a>Okno polecenia
 **Polecenia** okna jest używana do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Można wykonać polecenia menu i poleceń, które nie są wyświetlane w żadnym menu. Aby wyświetlić **polecenia** okna, wybierz **Windows inne** z **widoku** menu, a następnie wybierz **okna polecenia**.
@@ -110,7 +109,7 @@ Jeśli krótkich przełączniki są łączone w grupie, danej wartości tej wart
  Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany. Tu przykładzie pokazano, jak wyszukać wzorzec "^ t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Użyj cudzysłowów dla nazwy ścieżki zawierające spacje
- Jeśli na przykład chcesz otworzyć plik, który zawiera ścieżkę zawierającą spacje, należy umieścić podwójnego cudzysłowu wokół ścieżki lub segment ścieżki, która zawiera spacje: **C:\\"Program Files"** lub **"C:\Program Files"**.
+ Jeśli na przykład chcesz otworzyć plik, który zawiera ścieżkę zawierającą spacje, należy umieścić podwójnego cudzysłowu wokół ścieżki lub segment ścieżki, która zawiera spacje: **C:\\"Pliki programów"** lub **"C:\Program Files"**.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c84fbb3001bffb93d6c06f383551c073461419b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c64658a6c3cf23d2e27a7d2122d257082bc25cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839550"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Uczenie modelu TensorFlow w chmurze
 
@@ -45,13 +44,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 Pobierz ten [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierający wprowadzenie do uczenia głębokiego na TensorFlow, CNTK, Theano i przykłady.
 
-## <a name="open-project"></a>Otwórz projekt
+## <a name="open-project"></a>Otwieranie projektu
 
 - Uruchom program Visual Studio i wybierz **Plik > Otwórz > Projekt/rozwiązanie**.
 
 - Wybierz **przykłady Tensorflow** folderu z repozytorium przykładów pobrany i otwarty **TensorflowExamples.sln** pliku.
 
-   ![Otwórz projekt](media/tensorflow-local/open-project.png)
+   ![Otwieranie projektu](media/tensorflow-local/open-project.png)
 
    ![Otwórz rozwiązanie](media/tensorflow-local/open-solution.png)
 
@@ -72,7 +71,7 @@ W oknie przesyłania:
 
 - Wprowadź **Nazwa zadania**.
 
-- Kliknij przycisk **przesłać**.
+- Kliknij przycisk **Submit** (Prześlij).
 
 ## <a name="check-status-of-job"></a>Sprawdź stan zadania
 Aby wyświetlić stan i szczegółowe informacje dotyczące zadań: rozwiń węzeł maszyna wirtualna przesłano zadanie w **Eksploratora serwera**. Kliknij dwukrotnie **zadań**.

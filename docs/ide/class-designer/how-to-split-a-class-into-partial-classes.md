@@ -1,8 +1,7 @@
 ---
-title: 'Porady: podział klas na klasy częściowe (Projektant klas)'
+title: 'Instrukcje: Podział klasy na klasy częściowe (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -16,14 +15,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 69a0a90315ec906874c94445e904e7dc1274a23e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826248"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Porady: podział klasy na klasy częściowe w Projektancie klas
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Instrukcje: Podział klasy na klasy częściowe w Projektancie klas
 
 Możesz użyć `partial` — słowo kluczowe (`Partial` w języku Visual Basic) do dzielenia deklaracji klasy lub struktury między kilka deklaracji. Można użyć tylu częściowe deklaracje.
 

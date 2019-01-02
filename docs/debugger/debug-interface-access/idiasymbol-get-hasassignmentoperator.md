@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_hasassignmentoperator — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 855f0379a416bab1f05ebec390fe54399feefba9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7677d9dd84f62d4a9efb30b7e317873b88369743
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837800"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika ma wszystkie operatory przypisania zdefiniowane.  
@@ -27,7 +25,7 @@ Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika ma
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_hasAssignmentOperator (   
+HRESULT get_hasAssignmentOperator (   
    BOOL* pRetVal  
 );  
 ```  

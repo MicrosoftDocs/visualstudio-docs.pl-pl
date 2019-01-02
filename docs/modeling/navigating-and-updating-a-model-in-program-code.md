@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857124"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Nawigowanie po modelu i aktualizowanie go w kodzie programu
 
@@ -192,7 +191,7 @@ using (Transaction t =
 
 - Ustaw właściwości nowego elementu, szczególnie właściwość, dla którego `IsName` ma wartość true w DslDefinition. Ta flaga oznacza właściwość, która identyfikuje jednoznacznie elemencie jego właściciel. W tym przypadku właściwość Name ma tę flagę.
 
-- Definicję DSL tego języka DSL muszą zostać załadowane do Store. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to już wartość true. W innych przypadkach możesz jawnie załadować modelu do Store lub użyj <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> go załadować. Aby uzyskać więcej informacji, zobacz [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- Definicję DSL tego języka DSL muszą zostać załadowane do Store. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to już wartość true. W innych przypadkach możesz jawnie załadować modelu do Store lub użyj <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> go załadować. Aby uzyskać więcej informacji, zobacz [jak: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
   Po utworzeniu elementu w ten sposób kształt zostanie utworzony automatycznie (język DSL ma diagramu). Pojawi się on przypisany automatycznie lokalizacji usługi przy użyciu domyślnego kształt, kolor i inne funkcje. Jeśli chcesz kontrolować, gdzie i jak skojarzone kształt pojawia się, zobacz [Tworzenie elementu i jego kształt](#merge).
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  Można również ustawić kolor i inne właściwości narażonych łączniki przy użyciu tej metody.
 
 ### <a name="use-transactions"></a>Użycie transakcji
- Kształty, łączników i diagramy są podtypów <xref:Microsoft.VisualStudio.Modeling.ModelElement> i na żywo w Store. W związku z tym należy zmiany do nich tylko wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+ Kształty, łączników i diagramy są podtypów <xref:Microsoft.VisualStudio.Modeling.ModelElement> i na żywo w Store. W związku z tym należy zmiany do nich tylko wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [jak: Użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Wyświetlanie dokumentów i danych dokumentu
  ![Diagram klas diagram standardowych typów](../modeling/media/dsldiagramsanddocs.png)

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831540"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
@@ -36,7 +35,7 @@ W średnich i dużych projektów strukturę zespołu opiera się na strukturę a
 
 2. Tworzenie rozwiązań programu Visual Studio, którym Zadzwonimy rozwiązania architektury. To rozwiązanie będzie służyć do tworzenia ogólnego projektu systemu. Modele, ale żaden kod nie będzie zawierać.
 
-   Dodaj diagram zależności do tego rozwiązania. Na diagramie zależności narysuj architektury który wybrano dla aplikacji. Na przykład diagram może wyświetlać te warstwy i zależności między nimi: prezentacji; Logika biznesowa; i dane.
+   Dodaj diagram zależności do tego rozwiązania. Na diagramie zależności narysuj architektury który wybrano dla aplikacji. Na przykład diagram może wyświetlać te warstwy i zależności między nimi: Prezentacja; Logika biznesowa; i dane.
 
 4. Utwórz oddzielne rozwiązania Visual Studio dla każdej warstwy w diagram zależności architektury.
 
@@ -76,7 +75,7 @@ W średnich i dużych projektów strukturę zespołu opiera się na strukturę a
 
 1. W rozwiązaniu dla każdej warstwy Dodaj projekt modelowania architektury. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący projekt**. Projekt modelowania pojedynczego jest teraz dostępna z każdego rozwiązania: projekt architektury i projektu rozwoju dla każdej warstwy.
 
-2. W modelu udostępnionego, należy utworzyć pakiet dla każdej warstwy: W **Eksploratora rozwiązań**, wybierz projekt modelowania. W **Eksploratora modelu UML**, kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż **Dodaj**, a następnie kliknij przycisk **pakietu**.
+2. W modelu udostępnionego należy utworzyć pakiet dla każdej warstwy: W **Eksploratora rozwiązań**, wybierz projekt modelowania. W **Eksploratora modelu UML**, kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż **Dodaj**, a następnie kliknij przycisk **pakietu**.
 
    Każdy pakiet tak, będzie zawierać diagramy, które opisują wymagania i projektowania odpowiedniej warstwy.
 

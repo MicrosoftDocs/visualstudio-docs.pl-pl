@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Tworzenie konspektu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Konspekt | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827526"
 ---
-# <a name="walkthrough-outlining"></a>Przewodnik: tworzenie konspektu
+# <a name="walkthrough-outlining"></a>Przewodnik: Tworzenie konspektu
 Konfigurowanie opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwinąć lub zwinąć. Można zdefiniować regionów w kontekście usługi języka lub zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i stosowanie definicji region tylko do tego typu lub zastosować definicje region do istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak zdefiniować i wyświetlanie konspektu regionów.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
@@ -135,4 +132,4 @@ Konfigurowanie opartych na języku funkcje, takie jak tworzenie konspektu, defin
 4.  Powinna istnieć konspektu region, który zawiera oba nawiasy kwadratowe. Można kliknąć przycisk z lewej strony otwierającego nawiasu znak Minus, aby zwinąć konspektu regionu. Gdy region jest zwinięte, symbol wielokropka (*...* ) powinien pojawić się po lewej stronie Zwinięty region, a okno podręczne zawierające tekst **umieść tekst** powinien zostać wyświetlony po umieszczeniu wskaźnika na wielokropek.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wskazówki: Łączenie typu zawartości na rozszerzenie nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

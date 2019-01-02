@@ -2,7 +2,6 @@
 title: Aktualizowanie istniejących szablonów elementów projektu
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -12,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 52f24f76ff217b694a1e5d2b510d16b0911d2fda
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db5b9c3f601ae11b704e54ae2ebcd58f10c4c724
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835831"
 ---
-# <a name="how-to-update-existing-templates"></a>Porady: aktualizowanie istniejących szablonów
+# <a name="how-to-update-existing-templates"></a>Instrukcje: Aktualizowanie istniejących szablonów
 
 Po utworzeniu szablonu i plików do skompresowania *zip* pliku, możesz chcieć zmodyfikować szablon. Można to zrobić ręcznie, zmieniając pliki w szablonie, lub przez wyeksportowanie szablonu z projektu, który jest oparty na szablonie.
 

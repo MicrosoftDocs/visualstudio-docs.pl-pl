@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831891"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dodatek poziomu aplikacji dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte skoroszyty.  
@@ -121,17 +118,17 @@ ms.locfileid: "49949906"
 ## <a name="next-steps"></a>Następne kroki  
  Teraz, gdy utworzono podstawowe dodatku narzędzi VSTO dla programu Excel, można dowiedzieć się więcej o tworzeniu dodatków narzędzi VSTO dla programów w tych tematach:  
   
--   Ogólne zadań programistycznych, które można wykonywać w dodatkach VSTO: [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
+-   Ogólne zadań programistycznych, które można wykonywać w dodatkach VSTO: [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Zadania związane z programowaniem, które są specyficzne dla dodatków narzędzi VSTO programu Excel: [rozwiązań w programie Excel](../vsto/excel-solutions.md).  
+-   Zadania programowania, które są specyficzne dla dodatków narzędzi VSTO programu Excel: [Rozwiązania w programie Excel](../vsto/excel-solutions.md).  
   
--   Za pomocą modelu obiektów programu Excel: [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
+-   Za pomocą modelu obiektów programu Excel: [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
   
--   Dostosowywanie interfejsu użytkownika (UI) programu Excel, na przykład przez dodawanie kart niestandardowych do Wstążki lub tworzenia własnego niestandardowego okienka zadań: [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
+-   Dostosowywanie interfejsu użytkownika (UI) programu Excel, na przykład przez dodawanie kart niestandardowych do Wstążki lub tworzenia własnego niestandardowego okienka zadań: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
--   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Excel: [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).  
+-   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Excel: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
   
--   Wdrażanie dodatków narzędzi VSTO dla programu Excel: [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
+-   Wdrażanie dodatków narzędzi VSTO dla programu Excel: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -142,5 +139,3 @@ ms.locfileid: "49949906"
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
-  
-  

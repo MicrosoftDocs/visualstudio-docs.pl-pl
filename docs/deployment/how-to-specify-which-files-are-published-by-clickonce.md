@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Określanie plików publikowanych za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe2e5ab9f2074c1706f14ac52f655921af4b9a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e11c336f891ae71968a3b325a66a50d4d9a79446
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826958"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Porady: Określanie plików publikowanych za pomocą technologii ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki aplikacji, a wszystkie inne niż kod w projekcie są wdrażane wraz z aplikacji. W niektórych przypadkach mogą nie ma lub musisz opublikować określone pliki lub można zainstalować niektórych plików, na podstawie warunków. Program Visual Studio oferuje możliwości Wyklucz pliki oznaczyć pliki jako pliki danych lub wstępnie wymagane składniki oraz tworzenie grup plików dla warunkowego instalacji.  
   
  Pliki [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są zarządzane w **pliki aplikacji** okno dialogowe, dostępna z **Publikuj** strony **projektanta projektu**.  
@@ -39,7 +37,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 -   Pliki danych, takich jak SQL Database (*.mdf* i *.mdb*) plików i plików XML zostaną oznaczone jako pliki danych domyślnie.  
   
--   Odwołania do zestawów (*.dll* pliki) zostały oznaczone następujący po dodaniu odwołania: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako warunek wstępny zestaw (**wymagań wstępnych (Auto)**), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** okno dialogowe (jako *.ocx* pliku) tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.  
+-   Odwołania do zestawów (*.dll* pliki) zostały oznaczone następujący po dodaniu odwołania: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**wymagań wstępnych (Auto)**), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** okno dialogowe (jako *.ocx* pliku) tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Aby dodać pliki do okna dialogowego pliki aplikacji  
   
@@ -117,4 +115,4 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 ## <a name="see-also"></a>Zobacz także  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

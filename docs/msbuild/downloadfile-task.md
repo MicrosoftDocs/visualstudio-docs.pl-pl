@@ -1,10 +1,8 @@
 ---
 title: Zadanie DownloadFile | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832927"
 ---
 # <a name="downloadfile-task"></a>Zadanie DownloadFile
 Pobiera określone pliki przy użyciu Hyper tekstu Transfer Protocol (HTTP).
@@ -47,7 +45,7 @@ Pobiera określone pliki przy użyciu Hyper tekstu Transfer Protocol (HTTP).
 |`DownloadedFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa plik, który został pobrany.|
 |`Retries`|Opcjonalnie `Int32` parametru.<br /><br /> Określa, ile razy, aby spróbować pobrać, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.|  
 |`RetryDelayMilliseconds`|Opcjonalnie `Int32` parametru.<br /><br /> Określa opóźnienie (w milisekundach) między kolejnymi niezbędnymi ponownymi próbami. Wartość domyślna to 5000.|  
-|`SkipUnchangedFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, pomija pobieranie plików, które nie uległy zmianie. Wartość domyślna to `true`. `DownloadFile` Zadań uzna, że pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam Data ostatniej modyfikacji zgodnie z serwera zdalnego. <br /><br />**Uwaga:** nie wszystkie serwery HTTP wskazania daty ostatniej modyfikacji plików spowoduje, że plik Aby ponownie pobrana.|
+|`SkipUnchangedFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, pomija pobieranie plików, które nie uległy zmianie. Wartość domyślna to `true`. `DownloadFile` Zadań uzna, że pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam Data ostatniej modyfikacji zgodnie z serwera zdalnego. <br /><br />**Uwaga:**  Nie wszystkie serwery HTTP wskazują, Data ostatniej modyfikacji plików spowoduje, że plik Aby ponownie pobrana.|
 |`SourceUrl`|Wymagane `String` parametru.<br /><br /> Określa adres URL do pobrania.|
   
 ## <a name="remarks"></a>Uwagi  

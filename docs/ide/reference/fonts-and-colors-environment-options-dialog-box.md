@@ -2,7 +2,6 @@
 title: Czcionki i kolory, środowisko, opcje — Okno dialogowe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966015"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
@@ -150,7 +149,7 @@ Wyświetl elementy, należą:
 |**Pamięć zmieniła się**|Kolor tekstu używany do wyświetlania zmienionych danych wewnątrz **pamięci** okna.|
 |**Dane pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz **pamięci** okna.|
 |**Pamięć niemożliwa do odczytu**|Kolor tekstu używany do wyświetlania obszary pamięci nie można go odczytać w ramach **pamięci** okna.|
-|**Numer**|Liczba w kodzie, który reprezentuje rzeczywisty wartość liczbową.|
+|**Liczba**|Liczba w kodzie, który reprezentuje rzeczywisty wartość liczbową.|
 |**Operator**|Operatory, takie jak +, -, i! =.|
 |**Inny błąd**|Inne typy błędów nie pasuje do żadnego innymi zygzaki sygnalizujące błędy. Obecnie dotyczy to również prosta zmiany w Edytuj i Kontynuuj.|
 |**Preprocesora — słowo kluczowe**|Słowa kluczowe używane przez preprocesor, takich jak #include.|
@@ -251,4 +250,4 @@ Wyświetla przykładowe styl czcionki, rozmiaru i schemat kolorów na potrzeby *
 
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
 - [Opcje, okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Instrukcje: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

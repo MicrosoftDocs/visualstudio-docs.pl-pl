@@ -1,8 +1,6 @@
 ---
 title: Tworzenie danych niestandardowych wizualizatorów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 99228f525ae85743834c75aa69bf64609d0b5ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834155"
 ---
 # <a name="create-custom-data-visualizers"></a>Tworzenie danych niestandardowych wizualizatorów 
  A *Wizualizator* jest częścią [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfejs użytkownika debugera, który wyświetla zmiennej lub obiektu w sposób odpowiedni do jego typu danych. Na przykład wizualizatora HTML interpretuje ciąg HTML i wyświetla wynik, jak będzie wyglądał w oknie przeglądarki. Wizualizator mapy bitowej interpretuje strukturę mapy bitowej i wyświetla grafiki, którą reprezentuje. Niektóre wizualizatorów umożliwiają modyfikowanie także wyświetlić dane.
@@ -60,7 +58,7 @@ Tylko wtedy, gdy typ jest typem otwartym, można napisać Wizualizator dla typu 
   
 Wizualizatory niestandardowe mogą mieć zagadnienia związane z zabezpieczeniami. Zobacz [zagadnienia dotyczące zabezpieczeń internetowych](../debugger/visualizer-security-considerations.md).  
   
-Poniższe kroki zapewniają ogólne omówienie tworzenia wizualizatora. Aby uzyskać szczegółowe instrukcje, zobacz [wskazówki: pisanie wizualizatora w C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) lub [wskazówki: pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
+Poniższe kroki zapewniają ogólne omówienie tworzenia wizualizatora. Aby uzyskać szczegółowe instrukcje, zobacz [instruktażu: Pisanie wizualizatora w C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) lub [instruktażu: Pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Aby utworzyć po stronie debugera  
   
@@ -84,13 +82,13 @@ Należy określić kod po stronie debugowanego obiektu za pomocą <xref:System.D
   
 ## <a name="see-also"></a>Zobacz także
   
- [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Przewodnik: Pisanie wizualizatora wC#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [Przewodnik: pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [Przewodnik: Pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
- [Instrukcje: instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)  
+ [Instrukcje: Instalacja programu visualizer](../debugger/how-to-install-a-visualizer.md)  
   
- [Instrukcje: testowanie i debugowanie wizualizatora](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Instrukcje: Testowanie i debugowanie wizualizera](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Interfejs API wizualizatora — dokumentacja](../debugger/visualizer-api-reference.md)  
   

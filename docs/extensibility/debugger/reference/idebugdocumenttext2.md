@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentText2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentText2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0dc8344e19f422e65439aae6bafe12e3f62bee4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cae0bfefe4ab39d42f9cc67080d17394b1a1418b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838427"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Ten interfejs reprezentuje dokument tekstowy.  
@@ -28,17 +25,17 @@ Ten interfejs reprezentuje dokument tekstowy.
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Aparat debugowania (DE) implementuje ten interfejs, gdy jest niezbędne do dostarczania kod źródłowy w postaci tekstu. Ponieważ jest to najbardziej typową sytuacją, jeśli implementuje URZ [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejsu, powinien także implementować `IDebugDocumentText2` interfejsu.  
+ Aparat debugowania (DE) implementuje ten interfejs, po kodzie źródłowym, trzeba go dostarczyć w postaci tekstu. Ponieważ jest to najbardziej typowy przypadek, gdy implementuje DE [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejsu, powinien także implementować `IDebugDocumentText2` interfejsu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
  Użyj `QueryInterface` metody uzyskania tego interfejsu z `IDebugDocument2` interfejsu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
- Oprócz metod na `IDebugDocument2` interfejsu, tego interfejsu implementuje następujących metod:  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+ Oprócz metod na `IDebugDocument2` interfejsu, ten interfejs implementuje następujące metody:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
@@ -46,14 +43,14 @@ IDebugDocumentText2 : IDebugDocument2
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Pobiera tekst z określonej pozycji w dokumencie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Obiekt, który implementuje ten interfejs musi implementować też <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfejsu, który dostaw <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfejs na potrzeby [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) obiektu.  
+ Obiekt, który implementuje ten interfejs musi implementować też <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfejsu, które dostarcza <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfejs na potrzeby [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) obiektu.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

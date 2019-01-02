@@ -1,8 +1,6 @@
 ---
 title: WriteContextTLogs | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - WriteContextTLogs
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a01dbd11411204affa082bfa0772530662657853
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9c06c77ef75f279be85435fc507cc82ef6984f66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828397"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 Zapisuje pliki dziennika dla bieżącego kontekstu.  

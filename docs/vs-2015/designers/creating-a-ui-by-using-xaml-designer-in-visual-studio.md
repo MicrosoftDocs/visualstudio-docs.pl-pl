@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8928f725e144c980d3e625d557a71047959b8b9b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837293"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +91,9 @@ Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby u
 
  **Wyświetlanie** określa rozmiarów ekranów i rozwiązań dla aplikacji.
 
- **Orientacja** określa różnych orientacji aplikacji: **pozioma** lub **pionowa**.
+ **Orientacja** określa różnych orientacji aplikacji: **Orientacja pozioma** lub **pionowa**.
 
- **Krawędź** Określa wyrównanie krawędzi różnych aplikacji: **zarówno**, **po lewej stronie**, **po prawej stronie**, lub **Brak**.
+ **Krawędź** Określa wyrównanie krawędzi różnych aplikacji: **Zarówno**, **po lewej stronie**, **po prawej stronie**, lub **Brak**.
 
  **Duży kontrast** Wyświetl podgląd aplikacji, w oparciu o wybrane ustawienie kontrastu. To ustawienie, gdy wartość do wartości innej niż **domyślne**, spowoduje zastąpienie `RequestedTheme` właściwość w pliku App.xaml.
 
@@ -143,4 +142,4 @@ Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby u
  Po prawej stronie każdej właściwości jest wartość *znacznik właściwości* wyświetlany jako symbol pola. Wygląd znacznika właściwość wskazuje, czy powiązanie danych lub zasób stosowany do właściwości. Na przykład symbol białe pola wskazuje wartość domyślną, symbol czarne pole zwykle wskazuje, że zastosowano zasobu lokalnego i pole pomarańczowy zwykle wskazuje, że zastosowano powiązanie danych. Po kliknięciu znacznik właściwości, przejdź do definicji stylu, otworzyć Konstruktor powiązań danych lub otworzyć selektor zasobów.
 
 ## <a name="see-also"></a>Zobacz też
- [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md) [sposób tworzenia i stosowanie zasobów](../designers/how-to-create-and-apply-a-resource.md) [wskazówki: powiązanie z danymi w Projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md) [sposób tworzenia i stosowanie zasobów](../designers/how-to-create-and-apply-a-resource.md) [instruktażu: Powiązanie z danymi w Projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

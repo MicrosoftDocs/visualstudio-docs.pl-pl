@@ -1,5 +1,5 @@
 ---
-title: 'Porady: tworzenie wykresów niestandardowych w wynikach testów obciążenia'
+title: 'Instrukcje: Tworzenie wykresów niestandardowych w wynikach testów obciążenia'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958004"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Porady: Tworzenie wykresów niestandardowych obciążenia wyników testu
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Instrukcje: Tworzenie wykresów niestandardowych obciążenia wyników testu
 
 Można zaprojektować wykresów wyświetlających określone informacje na temat wyników testów obciążenia. Projektujesz niestandardowy wykres, określając liczniki testu obciążenia, które wykresie będą wyświetlane.
 
@@ -40,9 +39,9 @@ Po uruchomieniu testu obciążeniowego lub po zakończeniu działania, można wy
 
      Nowy wykres, który pojawia się w **analizatora testu obciążenia**. Wygląda na to, w panelu aktualnie zaznaczonym wykresem; zastępuje wykres, który został wyświetlony w tym panelu.
 
-3.  Dostosuj nowy wykres, dodając liczniki. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3.  Dostosuj nowy wykres, dodając liczniki. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Instrukcje: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

@@ -1,8 +1,7 @@
 ---
-title: Sortowanie, filtrowanie i grupowanie w Eksploratora schematu XML
+title: Sortowanie, filtrowanie i grupowanie w Eksplorator schematu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
@@ -10,40 +9,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ad0c790ced2d25c63faab8260278b4e02d3015f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820860"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortowanie, filtrowanie i grupowania (Eksploratora schematu XML)
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortowanie, filtrowanie i grupowanie (Eksplorator schematu XML)
 
-W tym temacie opisano opcje, które są dostępne za pośrednictwem **sortowanie, filtrowanie i opcje grupowania** menu **Eksploratora schematu XML** paska narzędzi.
+W tym temacie opisano opcje, które są dostępne za pośrednictwem **opcje grupowanie, filtrowanie i sortowanie** menu **Eksploratora schematu XML** paska narzędzi.
 
 ## <a name="filter-options"></a>Opcje filtru
 
- Dostępne są następujące opcje filtru. Domyślnie **Pokaż obszary nazw** i **Pokaż pliki schematu** są zaznaczone opcje.
+ Dostępne są następujące opcje filtru. Domyślnie **Pokaż przestrzenie nazw** i **Pokaż pliki schematu** są zaznaczone opcje.
 
--   **Pokaż obszary nazw**.
+-   **Pokaż przestrzenie nazw**.
 
--   **Pokaż pliki schematów**.
+-   **Pokaż pliki schematu**.
 
--   **Pokaż Kompozytory (sekwencji/choice/all)**.
+-   **Pokaż Kompozytory (sekwencji/wyboru/all)**.
 
 ## <a name="sorting-options"></a>Opcje sortowania
 
- Dostępne są następujące opcje sortowania. Wartość domyślna to **sortowania według typu**. **Sortuj według** opcje nie dotyczą plików i przestrzenie nazw.
+ Dostępne są następujące opcje sortowania. Wartość domyślna to **sortowania według typu**. **Sortuj według** opcje nie są stosowane do plików i przestrzeni nazw.
 
 -   **Sortuj według typu**.
 
 -   **Sortuj według nazwy**.
 
--   **Dokument kolejności**.
+-   **Dokumentowanie kolejności**.
 
 ### <a name="sort-by-type"></a>Sortuj według typu
 
- Gdy **sortowania według typu** opcja jest zaznaczona, globalne węzły są sortowane w następującej kolejności. Węzły są następnie sortowana alfabetycznie w każdej grupie.
+ Gdy **sortowania według typu** opcja jest zaznaczona, globalne węzły są sortowane w następującej kolejności. Węzły są posortowane alfabetycznie w każdej grupie.
 
 1.  `import` węzły.
 
@@ -65,20 +64,20 @@ W tym temacie opisano opcje, które są dostępne za pośrednictwem **sortowanie
 
 ### <a name="sort-by-name"></a>Sortuj według nazwy
 
- Gdy **sortowania według nazwy** opcja jest zaznaczona, globalne węzły są sortowane w następującej kolejności:
+ Gdy **Sortuj według nazwy** opcja jest zaznaczona, globalne węzły są sortowane w następującej kolejności:
 
-1.  `import` węzły (w kolejności alfabetycznej przestrzeni nazw).
+1.  `import` węzły (w kolejności alfabetycznej według przestrzeni nazw).
 
-2.  `include` węzły (w kolejności alfabetycznej `schemaLocation` atrybutów).
+2.  `include` węzły (w kolejności alfabetycznej według `schemaLocation` atrybutów).
 
-3.  `redefine` węzły (w kolejności alfabetycznej `schemaLocation` atrybutów).
+3.  `redefine` węzły (w kolejności alfabetycznej według `schemaLocation` atrybutów).
 
 4.  Inne węzły globalne w kolejności alfabetycznej.
 
-### <a name="document-order"></a>Kolejności dokumentów
+### <a name="document-order"></a>Kolejności dokumentu
 
  **Kolejności dokumentu** opcja jest dostępna, gdy **Pokaż pliki schematu** opcja jest zaznaczona. Gdy **kolejności dokumentu** jest zaznaczone, globalne węzły są wyświetlane w kolejności, w jakiej występują w pliku schematu.
 
 ## <a name="persisting-sortfilter-options"></a>Utrwalanie opcje sortowania/filtrowania
 
- Sortowanie, filtrowanie i opcje grupowania są zapisywane w rejestrze dla poszczególnych użytkowników, niezależnie od tego, które rozwiązanie lub pliki były otwarte podczas ustawienia zostały zmienione.
+ Sortowanie, filtrowanie i grupowanie opcje są zapisywane w rejestrze dla każdego użytkownika, niezależnie od tego, które rozwiązanie lub pliki były otwarte podczas ustawienia zostały zmienione.

@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineLaunch2::ResumeProcess | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineLaunch2::ResumeProcess
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c24ff23dc7963dca3dddf3a0e725858b3a704d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc5103a412e1164d84bdd44ab737f974919f5b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840281"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 Wznawia wykonanie procesu.  
@@ -28,13 +25,13 @@ Wznawia wykonanie procesu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT ResumeProcess (   
+HRESULT ResumeProcess (   
    IDebugProcess2* pProcess  
 );  
 ```  
   
 ```csharp  
-int ResumeProcess (   
+int ResumeProcess (   
    IDebugProcess2 pProcess  
 );  
 ```  

@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: tworzenie niestandardowego hosta szablonu tekstowego'
+title: 'Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a94819b23b404634434ca3d9cdb210dc8e1dce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840768"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Przewodnik: tworzenie niestandardowego hosta szablonu tekstowego
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Przewodnik: Tworzenie niestandardowego hosta szablonu tekstowego
 
 A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *aparatu przekształceń szablonu tekstu* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* który wymaga pliku lub zestawu, może zażądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).
 
@@ -821,7 +820,7 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym przewodniku utworzono hosta przekształcania szablonu tekstu, który obsługuje podstawową funkcjonalność przekształcania. Możesz rozszerzyć hosta o obsługę szablonów tekstowych, które wywołują niestandardowe lub wygenerowane procesory dyrektyw. Aby uzyskać więcej informacji, zobacz [wskazówki: łączenie hosta z procesorem dyrektywy generowane](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+W tym przewodniku utworzono hosta przekształcania szablonu tekstu, który obsługuje podstawową funkcjonalność przekształcania. Możesz rozszerzyć hosta o obsługę szablonów tekstowych, które wywołują niestandardowe lub wygenerowane procesory dyrektyw. Aby uzyskać więcej informacji, zobacz [instruktażu: Łączenie hosta z generowanym procesorem dyrektywy](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Zobacz także
 

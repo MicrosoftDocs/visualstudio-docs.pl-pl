@@ -1,8 +1,7 @@
 ---
-title: 'CA1302: Nie należy kodować ciągów określonych dla ustawień regionalnych'
+title: 'CA1302: Nie umieszczaj w kodzie ciągów specyficznych dla ustawień regionalnych'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotHardcodeLocaleSpecificStrings
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e56c57343ae61709b6d5875c865857a7475363fd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b05f1aa31a38ff4f8e707d53d062abe3d10617fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827731"
 ---
-# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Nie należy kodować ciągów określonych dla ustawień regionalnych
+# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Nie umieszczaj w kodzie ciągów specyficznych dla ustawień regionalnych
 
 |||
 |-|-|

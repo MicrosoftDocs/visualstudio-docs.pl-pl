@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2 | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829910"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem projektu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu do utworzenia nowego projektu, który zawiera element projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.  
   
- W tym przewodniku kreatora zostanie dodany do szablonu projektu kolumny witryny, która została przedstawiona w [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Gdy użytkownik tworzy projekt kolumny witryny, Kreator zbiera informacje o kolumny witryny (takie jak jego typ podstawowy i grupy) i dodaje te informacje do *Elements.xml* plik w nowym projekcie.  
+ W tym przewodniku kreatora zostanie dodany do szablonu projektu kolumny witryny, która została przedstawiona w [instruktażu: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Gdy użytkownik tworzy projekt kolumny witryny, Kreator zbiera informacje o kolumny witryny (takie jak jego typ podstawowy i grupy) i dodaje te informacje do *Elements.xml* plik w nowym projekcie.  
   
  W tym instruktażu pokazano następujące zagadnienia:  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942078"
 > Aby szereg przykładowych przepływów pracy, zobacz [przepływu pracy SharePoint — przykłady](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby wykonać ten Instruktaż, należy najpierw utworzyć rozwiązanie SiteColumnProjectItem, wykonując [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
+ Aby wykonać ten Instruktaż, należy najpierw utworzyć rozwiązanie SiteColumnProjectItem, wykonując [instruktażu: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
  Wymagane są również następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942078"
   
   Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
   
-- Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md) i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.  
+- Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md) i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.  
   
 - Kolumny witryny w programie SharePoint. Aby uzyskać więcej informacji, zobacz [kolumn](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942078"
 |SharePoint — Polecenia|Są to metody, które są używane przez Kreator modelu danych do wywołania w lokalnej witrynie SharePoint, po uruchomieniu kreatora. Ponieważ polecenia programu SharePoint musi być przeznaczony dla .NET Framework 3.5, te polecenia są implementowane w innym zestawie niż pozostałe kodem kreatora.|  
   
 ## <a name="create-the-projects"></a>Tworzenie projektów
- Do przeprowadzenia tego instruktażu, należy dodać kilka projektów w rozwiązaniu SiteColumnProjectItem, który został utworzony w [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ Do przeprowadzenia tego instruktażu, należy dodać kilka projektów w rozwiązaniu SiteColumnProjectItem, który został utworzony w [instruktażu: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - Projekt WPF. Zostaną zaimplementowane <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejs i zdefiniuj Kreatora interfejsu użytkownika w tym projekcie.  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942078"
   
 3.  Upewnij się, że platforma docelowa jest ustawiona na .NET Framework 4.5, nie .NET Framework 4.5 Client Profile.  
   
-     Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Otwórz menu skrótów dla **ProjectTemplateWizard** projektu, wybierz **Dodaj**, a następnie wybierz **nowy element**.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942078"
   
 13. Jeśli tworzysz projekt języka Visual Basic importowania przestrzeni nazw ProjectTemplateWizard do projektu przy użyciu **projektanta projektu**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie zaimportowane przestrzenie nazw &#40;języka Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie importowanych przestrzeni nazw &#40;języka Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Aby skonfigurować projekt SharePointcommands
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942078"
 1.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Usuwanie pliku key.snk za pomocą szablonu projektu
- W [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), szablon projektu, który został utworzony zawiera plik key.snk, który jest używany do podpisywania każde wystąpienie projektu kolumny witryny. Ten plik key.snk nie jest już konieczne ponieważ Kreator generuje nowy plik key.snk dla każdego projektu. Usuń plik key.snk z szablonu projektu i usuń odwołania do tego pliku.  
+ W [instruktażu: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), szablon projektu, który został utworzony zawiera plik key.snk, który jest używany do podpisywania każde wystąpienie projektu kolumny witryny. Ten plik key.snk nie jest już konieczne ponieważ Kreator generuje nowy plik key.snk dla każdego projektu. Usuń plik key.snk z szablonu projektu i usuń odwołania do tego pliku.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Aby usunąć plik key.snk z szablonu projektu  
   
@@ -546,5 +543,4 @@ ms.locfileid: "49942078"
  [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)  

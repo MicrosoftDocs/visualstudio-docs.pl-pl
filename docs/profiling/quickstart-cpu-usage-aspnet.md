@@ -3,7 +3,6 @@ title: Analizowanie danych użycia procesora CPU (ASP.NET)
 description: Mierzyć wydajność aplikacji w aplikacji ASP.NET przy użyciu narzędzia do diagnostyki użycia procesora CPU
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837397"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Szybki Start: Analizowanie danych użycia procesora CPU w Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Szybki start: Analizowanie danych użycia procesora CPU w Visual Studio (ASP.NET)
 
 Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w analizie problemów z wydajnością w aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji. W tym miejscu przyjrzymy się narzędziem do identyfikowania wąskich gardeł wydajności ze względu na wysokie użycie procesora CPU. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
 
@@ -154,7 +153,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1: Zbierania danych profilowania 
+##  <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania 
   
 1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `Simple` Konstruktor:
 
@@ -195,7 +194,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
      W tym momencie można rozpocząć analizy danych.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2. Analizowanie danych użycia procesora CPU
 
 Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obszarze użycie procesora CPU, identyfikowanie funkcji, które wykonują najwięcej pracy i następnie wykonywanie bliższe spojrzenie na każdym z nich.
 

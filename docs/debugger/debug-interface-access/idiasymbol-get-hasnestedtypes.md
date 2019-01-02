@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_hasnestedtypes — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb894c305fa45216a0c7b6be7dfe10c19145b7d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d1b11f79e47b6b78eed95a1199f0ef8352a0e76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824144"
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika ma zagnieżdżone definicji typu.  
@@ -27,7 +25,7 @@ Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika ma
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_hasNestedTypes (   
+HRESULT get_hasNestedTypes (   
    BOOL* pRetVal  
 );  
 ```  

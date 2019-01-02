@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_length — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f99a2012d0c3f009540c988df6e41b0a7d0cf4e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37e32585e44c7100d673b35e99ad0db081caa9fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824239"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Pobiera liczbę bitów lub bajty pamięci używane przez obiekt reprezentowany przez ten symbol.  
@@ -27,7 +25,7 @@ Pobiera liczbę bitów lub bajty pamięci używane przez obiekt reprezentowany p
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_length (   
+HRESULT get_length (   
    ULONGLONG* pRetVal  
 );  
 ```  

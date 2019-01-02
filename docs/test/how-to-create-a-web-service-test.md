@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f63a1734c7df506c2bda0e51546b2ece04ebb00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833426"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Porady: Tworzenie nowego testu usługi internetowej
+# <a name="how-to-create-a-web-service-test"></a>Instrukcje: Tworzenie testu usługi internetowej
 
 Test wydajności sieci web służy do testowania usług sieci web. Za pomocą **Wstaw żądanie** i **Wstaw żądanie usługi sieci Web** opcje, można dostosować poszczególne żądania w **edytora testów wydajności sieci Web** można zlokalizować w sieci web strony usługi. Zazwyczaj tych stron nie wyświetla w aplikacji sieci web. W związku z tym należy dostosować żądanie, aby uzyskać do nich dostęp.
 

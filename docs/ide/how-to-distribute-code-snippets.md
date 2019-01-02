@@ -1,8 +1,7 @@
 ---
-title: 'Porady: rozprowadzanie wstawek kodu'
+title: 'Instrukcje: Dystrybuowanie fragmentów kodu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,14 +13,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836065"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Porady: rozprowadzanie wstawek kodu
+# <a name="how-to-distribute-code-snippets"></a>Instrukcje: Dystrybuowanie fragmentów kodu
 
 Możesz udostępnić swoje fragmenty kodu programu znajomym i je zainstalowali na swoich komputerach przy użyciu **Menedżera wstawek kodu**. Jednak jeśli masz kilka fragmentów do dystrybucji lub chcesz przekazać je szerzej, dodasz plik fragmentu do pliku w rozszerzeniem programu Visual Studio. Visual Studio użytkownicy mogą następnie zainstalować rozszerzenie.
 
@@ -29,9 +28,9 @@ Visual Studio SDK należy zainstalować, aby można było utworzyć rozszerzenia
 
 ## <a name="set-up-the-extension"></a>Skonfiguruj rozszerzenia
 
-W tej procedurze użyto tym samym fragmencie kodu Hello World, który jest tworzony w [wskazówki: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md). Firma Microsoft będzie dostarczać *.snippet* tekstu, dzięki czemu nie trzeba wrócić i zmienić jedną.
+W tej procedurze użyto tym samym fragmencie kodu Hello World, który jest tworzony w [instruktażu: Utwórz fragment kodu](../ide/walkthrough-creating-a-code-snippet.md). Firma Microsoft będzie dostarczać *.snippet* tekstu, dzięki czemu nie trzeba wrócić i zmienić jedną.
 
-1. Utwórz nowy projekt VSIX, o nazwie **TestSnippet**. (**Pliku** > **nowe** > **projektu** > **Visual C# (lub języka Visual Basic)**  >  **Rozszerzalności**.)
+1. Utwórz nowy projekt VSIX, o nazwie **TestSnippet**. (**Pliku** > **nowe** > **projektu** > **Visual C# (lub Visual Basic)**  >  **Rozszerzalności**.)
 
 2. W **TestSnippet** projektu, Dodaj nowy plik XML i wywołać go *VBCodeSnippet.snippet*. Zastąp zawartość następujący kod XML:
 

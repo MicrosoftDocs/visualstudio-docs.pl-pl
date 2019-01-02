@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProviderDirect::GetCurrentModulesState | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetCurrentModulesState
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc16ce17ed9499036d4eaf29a39d1616eed54c7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e37fd372e0c1c3e75262c4911b7dc86bb91154a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832021"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Pobiera informacje o grupie symbol dostawca symboli jest elementem członkowskim.  

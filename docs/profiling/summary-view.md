@@ -1,8 +1,6 @@
 ---
 title: Widok podsumowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
@@ -17,19 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 5ce66ecc8114d349e0fea241b9f704b1f61de198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842216"
 ---
 # <a name="summary-view"></a>Widok podsumowania
 Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub obiekty podczas uruchomienia profilowania. Ten widok zawiera wykres osi czasu i co najmniej dwóch list najbardziej kosztowne funkcje lub obiekty w oparciu metryki wydajności metody profilowania. Dane w tym widoku jest zależna od metody profilowania, który został użyty (próbkowanie, Instrumentacja lub współbieżności) i tego, czy zebrano alokacji pamięci .NET.  
 
  Wszystkie widoki podsumowanie oprócz widok podsumowania danych współbieżności wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania.  
 
--   Jeśli określisz odcinek czasu na wykresie, możesz przeanalizować dane dla tego segmentu lub zmieniaj segment, który określiłeś osi czasu. Aby uzyskać więcej informacji, zobacz [porady: filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+-   Jeśli określisz odcinek czasu na wykresie, możesz przeanalizować dane dla tego segmentu lub zmieniaj segment, który określiłeś osi czasu. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
 
 -   Możesz kliknąć funkcji na liście Widok podsumowania, aby otworzyć widok szczegółów funkcji dla tej funkcji. Możesz również kliknąć prawym przyciskiem myszy funkcję dla innych opcji widoku.  
 
@@ -40,7 +38,7 @@ Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub
 
 |||  
 |-|-|  
-|**Pokaż kod niezwiązany z użytkownikiem**<br /><br /> **Pokaż tylko mój kod**|Nie są dostępne dla kodu natywnego lub dane, które zostały zebrane przy użyciu metody Instrumentacji profilowania. Przełączenie między wyświetlaniem tylko dane z kodu użytkownika (**Pokaż tylko mój kod**) i wyświetlanie danych z całego kodu, w tym kodu systemowego (**Pokaż kod niezwiązany z użytkownikiem**). Domyślnie dane są ograniczone do kodu użytkownika. Aby zmienić to ustawienie, zobacz [porady: filtrowanie widoków raportu, aby wyświetlić tylko mój kod narzędzi profilowania](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
+|**Pokaż kod niezwiązany z użytkownikiem**<br /><br /> **Pokaż tylko mój kod**|Nie są dostępne dla kodu natywnego lub dane, które zostały zebrane przy użyciu metody Instrumentacji profilowania. Przełączenie między wyświetlaniem tylko dane z kodu użytkownika (**Pokaż tylko mój kod**) i wyświetlanie danych z całego kodu, w tym kodu systemowego (**Pokaż kod niezwiązany z użytkownikiem**). Domyślnie dane są ograniczone do kodu użytkownika. Aby zmienić to ustawienie, zobacz [jak: Filtrowanie widoków raportu, aby wyświetlić tylko mój kod narzędzi profilowania](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
 |**Wyświetl asystę**|Wyświetla ostrzeżenia reguły wydajności w **lista błędów** okna. Aby uzyskać więcej informacji, zobacz [korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|  
 
 ## <a name="report"></a>Raport  
@@ -52,8 +50,8 @@ Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub
 | **Pokaż przycięte drzewo wywołań** | Wyświetla widok drzewa wywołań najbardziej kosztowne wykonania ścieżki. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołania](../profiling/call-tree-view.md). |
 | **Pokaż aktywne wiersze** | Nie jest dostępna dla danych, które zostały zebrane przy użyciu metody Instrumentacji profilowania. Wyświetla najbardziej kosztowne wierszy kodu źródłowego w widoku wierszy. Aby uzyskać więcej informacji, zobacz [widok linii](../profiling/lines-view.md). |
 | **Porównanie raportów** | Wyświetla **wybierz pliki analizy porównanie** okno dialogowe, w którym można określić inny plik danych profilowania do porównania z bieżącym pliku. Aby uzyskać więcej informacji, zobacz [porównywanie plików danych dotyczących wydajności](../profiling/comparing-performance-data-files.md). |
-| **Eksportuj dane raportu** | Wyświetla **Eksportowanie raportu** okno dialogowe, w którym można określić jeden lub więcej widoków raportu można zapisać w formacie wartości rozdzielanych przecinkami (.csv) lub plików XML. Aby uzyskać więcej informacji, zobacz [jak: narzędzi profilowania eksportowanie raportów](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
-| **Zapisz przeanalizowany raport** | Zapisuje bieżący plik danych profilowania w postaci pliku .vsps, który zostanie otwarty szybciej w interfejsie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [porady: zapisywanie analizowane plików danych profilowania](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
+| **Eksportuj dane raportu** | Wyświetla **Eksportowanie raportu** okno dialogowe, w którym można określić jeden lub więcej widoków raportu można zapisać w formacie wartości rozdzielanych przecinkami (.csv) lub plików XML. Aby uzyskać więcej informacji, zobacz [jak: Raporty do narzędzi profilowania eksportu](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
+| **Zapisz przeanalizowany raport** | Zapisuje bieżący plik danych profilowania w postaci pliku .vsps, który zostanie otwarty szybciej w interfejsie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [jak: Zapisz przeanalizowany plików danych profilowania](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
 | **Filtruj dane raportu** | Wyświetla profilowania okienko filtru raportu, na której można określić kryteria, aby ograniczyć dane w widoku raportu. Aby uzyskać więcej informacji, zobacz [filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md) |
 | **Przełącz widok pełnoekranowy** | Włącza lub wyłącza tryb pełnoekranowy dla widoku raportu. |
 

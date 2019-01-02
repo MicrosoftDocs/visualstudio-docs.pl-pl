@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane wyszukiwanie tekstu w zakresach arkusza'
-ms.custom: ''
+title: 'Instrukcje: Programowe wyszukiwanie tekstu w zakresach arkusza'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826130"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Porady: programowane wyszukiwanie tekstu w zakresach arkusza
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Instrukcje: Programowe wyszukiwanie tekstu w zakresach arkusza
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolne ciągi błędów, które mogą wystąpić w komórce arkusza, takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągi błędów, zobacz [komórki wartości błędów](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "50671966"
 > [!NOTE]  
 >  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Metody wyszukiwania jest zawijany do początku zakresu wyszukiwania po osiągnięciu końca zakresu. Kod należy się upewnić, że wyszukiwanie nie otacza w pętli nieskończonej. Przykładowa procedura pokazuje, jak rozwiązać przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> właściwości.  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: Użyj metody Find w dodatku programu Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Użyj metody Find, w dodatku programu Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Aby wyszukać tekst w zakresie arkusza  
   
@@ -81,8 +78,6 @@ ms.locfileid: "50671966"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z zakresami](../vsto/working-with-ranges.md)   
- [Porady: programowane stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Porady: programowane odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Instrukcje: Programowe stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Instrukcje: Programowe odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

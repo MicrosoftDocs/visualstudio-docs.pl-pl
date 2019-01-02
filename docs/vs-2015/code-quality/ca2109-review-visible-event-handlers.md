@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 328df28441fa5c96fee40baed11a54c3044542b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3efcf6e9c4de99a442329c76c1f4c20c7a80505
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833865"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Przejrzyj widoczne programy obsługi zdarzeń
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Przejrzyj widoczne procedury obsługi zdarzeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -71,6 +70,3 @@ ms.locfileid: "49880380"
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName><xref:System.EventArgs?displayProperty=fullName>
  [Wymogów bezpieczeństwa](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
-
-
-

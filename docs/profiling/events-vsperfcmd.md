@@ -1,8 +1,6 @@
 ---
 title: Zdarzenia (VSPerfCmd) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb99ec5bab1098f3551548698919cb1f2fc8f8b1
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1b8d6085f21035408b33b229220e4aea10b2b6c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842086"
 ---
 # <a name="events-vsperfcmd"></a>Zdarzenia (VSPerfCmd)
-*VSPerfCmd.exe* **zdarzenia** opcja kontroluje rejestrowanie zdarzeń śledzenia dla systemu Windows (ETW). Dane funkcji ETW są zapisywane do pliku etl, który różni się od pliku danych profilera. Dane mogą być wyświetlane w raporcie przy użyciu [VSPerfReport](../profiling/vsperfreport.md) polecenia/Summary: ETW.  
+*VSPerfCmd.exe* **zdarzenia** opcja kontroluje rejestrowanie zdarzeń śledzenia dla Windows (ETW). Dane funkcji ETW są zapisywane w pliku etl, który jest oddzielony od plików danych profilera. Dane mogą być wyświetlane w raporcie przy użyciu [VSPerfReport](../profiling/vsperfreport.md) polecenia/Summary: ETW.  
   
  **Zdarzenia** opcji można wywołać w dowolnym momencie przed VSPerfCmd **zamknięcia** polecenia jest wywoływana, aby zatrzymać profilowanie.  
   
@@ -36,33 +34,33 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  Identyfikator GUID kontrolki dostawcy.  
   
  `ProviderName`  
- Nazwa dostawcy, który jest zarejestrowany z Instrumentacji zarządzania Windows (WMI).  
+ Nazwa dostawcy, który jest zarejestrowany za pomocą Instrumentacji zarządzania Windows (WMI).  
   
  `Flags`  
- "0 x"-prefiksem wartość flagi szesnastkowa, która jest definiowana za pomocą dostawcy zdarzeń.  
+ "0 x" — prefiks wartość szesnastkową znaczników, który jest definiowany przez dostawcę zdarzeń.  
   
  `Level`  
- Określa ilość zbieranych danych. `Level` jest zdefiniowany przez dostawcę zdarzeń.  
+ Określa ilość zebranych danych. `Level` jest definicją Dostawca zdarzeń.  
   
- **Zdarzenia** opcji rozumie następujące jądra słowa kluczowe jako nazwy dostawcy:  
+ **Zdarzenia** opcja obsługuje następujące słowa kluczowe jądra jako nazwy dostawcy:  
   
  **Proces**  
- Przetwarzania zdarzeń  
+ Przetwarzanie zdarzeń  
   
  **Wątek**  
  Zdarzenia wątków  
   
  **Obraz**  
- Obraz obciążenia i zwolnić zdarzenia  
+ Obraz ładowanie i zwalnianie zdarzenia  
   
- **dysku**  
- We/Wy dysku zdarzenia  
+ **Dysk**  
+ Zdarzenia We/Wy dysku  
   
  **Plik**  
- Zdarzenia We/Wy pliku  
+ Zdarzenia We/Wy plików  
   
  **Hardfault**  
- Sprzętowych błędów stron  
+ Sprzętowe błędy stron  
   
  **Pagefault**  
  Słabe strony błędów  
@@ -73,22 +71,22 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Registry**  
  Zdarzenia dostępu do rejestru  
   
- Należy pamiętać, że dostawca jądra można włączyć tylko. Nie można wyłączyć ani jej flag można modyfikować, dopóki zamknięcie monitora.  
+ Należy pamiętać, że dostawca jądra można włączyć tylko. Nie można wyłączyć, ani jej flag można modyfikować, dopóki nie wyłącza monitor.  
   
 ## <a name="remarks"></a>Uwagi  
   
 > [!NOTE]
->  Po włączeniu zdarzenia CLR ETW uruchamiania dodatkowych danych również są zbierane w śledzenia Wyświetl raport. Aby wykluczyć zdarzenia uruchamiania były wyświetlane w raporcie, użyj następującego polecenia:  
+>  Po włączeniu zdarzeń CLR ETW uruchamiania dodatkowe są zbierane również w raporcie widoku śledzenia. Aby wykluczyć zdarzenia uruchamiania były wyświetlane w raporcie, użyj następującego polecenia:  
   
 ```cmd  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  Jeśli zdarzenia uruchamiania nie jest wykluczone, ponieważ te zdarzenia nie są wymienione w pliku Managed Object Format (MOF), ich widoczny jako identyfikatorów GUID w raporcie. Aby uzyskać więcej informacji, zobacz tę stronę w witrynie sieci Web firmy Microsoft: [plik przykładowy Managed Object Format (MOF)](http://go.microsoft.com/fwlink/?linkid=37118).  
+>  Jeśli nie wykluczysz zdarzenia uruchamiania, następnie ponieważ te zdarzenia nie są wymienione w pliku Managed Object Format (MOF), zostaną one wyświetlone jako identyfikatory GUID w raporcie. Aby uzyskać więcej informacji zobacz tę stronę w witrynie internetowej firmy Microsoft: [Przykładowy plik Managed Object Format (MOF)](http://go.microsoft.com/fwlink/?linkid=37118).  
   
 ## <a name="see-also"></a>Zobacz także  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

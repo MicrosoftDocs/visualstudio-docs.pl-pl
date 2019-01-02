@@ -1,8 +1,7 @@
 ---
-title: 'Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych'
+title: 'Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840742"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych
 
 Ten instruktaż ilustruje sposób użycia źródła danych, zdefiniowanego w *app.config* pliku dla testów jednostkowych. Przedstawiono sposób tworzenia *app.config* pliku, który definiuje źródła danych, które mogą być używane przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy. Zadania przedstawione w tym przewodniku są następujące:
 
@@ -198,7 +197,7 @@ Teraz, gdy *app.config* pliku została zdefiniowana, utworzy test jednostkowy, k
 
 3. Utwórz dwa pola w `MyDataTable` o nazwie `Arg1` i `Arg2` przy użyciu `Number` typu danych.
 
-4. Dodawanie pięć jednostek do `MyDataTable` z następującymi wartościami dla `Arg1` i `Arg2`odpowiednio: (10,50), (3,2) (6,0) (0,8) i (12312,1000).
+4. Dodaj jednostki pięć `MyDataTable` z następującymi wartościami dla `Arg1` i `Arg2`odpowiednio: (10,50), (3,2) (6,0) (0,8) i (12312,1000).
 
 5. Zapisz i zamknij bazy danych.
 
@@ -212,7 +211,7 @@ Teraz, gdy *app.config* pliku została zdefiniowana, utworzy test jednostkowy, k
 
 3. Utwórz dwa nagłówki kolumn i nazwij je `Val1` i `Val2` w `Sheet1`.
 
-4. Dodawanie pięć jednostek do `Sheet1` z następującymi wartościami dla `Val1` i `Val2`odpowiednio: (1,1), (2, 2,) (3,3) (4,4) i (5,0).
+4. Dodaj jednostki pięć `Sheet1` z następującymi wartościami dla `Val1` i `Val2`odpowiednio: (1,1), (2, 2,) (3,3) (4,4) i (5,0).
 
 5. Zapisz i zamknij arkusza kalkulacyjnego.
 
@@ -272,4 +271,4 @@ Teraz, gdy *app.config* pliku została zdefiniowana, utworzy test jednostkowy, k
 ## <a name="see-also"></a>Zobacz także
 
 - [Kod testu jednostkowego](../test/unit-test-your-code.md)
-- [Instrukcje: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
+- [Jak: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

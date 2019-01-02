@@ -1,9 +1,6 @@
 ---
 title: Kontekst oceny | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 523ef45d52a81a475eca0e3560243e0eb8357bbd
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 58c1ac8a6b9819aee18f8be58bb392b04c22f922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840619"
 ---
 # <a name="evaluation-context"></a>Kontekst oceny
 > [!IMPORTANT]

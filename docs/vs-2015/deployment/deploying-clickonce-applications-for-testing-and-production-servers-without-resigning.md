@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db63915c5bfda3f20992dd400ff72fc5932e91dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964726"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Wdrażanie technologii ClickOnce do testowania i obsługi serwerów produkcyjnych bez ponownego podpisywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ W tym temacie opisano nową funkcję wprowadzone w .NET Framework w wersji 3.5, 
   W drugim przykładzie publikowanie aplikacji ClickOnce, który określa `deploymentProvider`, a następnie zdecydujesz się usunąć go. Raz nowej wersji bez `deploymentProvider` została pobrana do klientów, nie można przekierować ścieżki używany do aktualizacji, dopóki nie zostanie wydana wersja Twojej aplikacji, która ma `deploymentProvider` przywrócona. Podobnie jak w pierwszym przykładzie `deploymentProvider` początkowo musi wskazywać bieżącą lokalizację aktualizacji nie nowej lokalizacji. W tym przypadku próba wstawienia `deploymentProvider` odwołujący się do http://subdomain.adatum.com/MyApplication/, Następna aktualizacja zakończy się niepowodzeniem.  
   
 ## <a name="creating-a-deployment"></a>Tworzenie wdrożenia  
- Aby uzyskać instrukcje krok po kroku dotyczące tworzenia wdrożenia, które mogą zostać wdrożone w różnych lokalizacjach sieciowych, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce, że jest nie wymagają Re-Signing i że zachowuje informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Aby uzyskać instrukcje krok po kroku dotyczące tworzenia wdrożenia, które mogą zostać wdrożone w różnych lokalizacjach sieciowych, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Mage.exe (manifestu narzędzie generowania i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   

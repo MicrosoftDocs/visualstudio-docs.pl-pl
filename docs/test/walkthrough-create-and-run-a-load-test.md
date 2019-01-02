@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d50f51fa2bcf43fd5bc299f803c2607b4f3351e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850807"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Przewodnik: Tworzenie i uruchamianie testu obciążenia zawierającego testy jednostkowe
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Przewodnik: Tworzenie i uruchamianie testu obciążenia, który zawiera testy jednostkowe
 
 W tym instruktażu utworzysz testu obciążenia, który zawiera testy jednostkowe.
 
@@ -37,13 +36,13 @@ W tym instruktażu wykonasz następujące zadania:
 
 -   Uruchom test obciążenia.
 
--   Wykonaj kroki opisane w [wskazówki: tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) do tworzenia prostych biblioteki klas C# zawierającą internetowego wydajności i Załaduj projekt testowy z niektórymi testami jednostkowymi w nim.
+-   Wykonaj kroki opisane w [instruktażu: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) do utworzenia prostej C# biblioteki klasy, która zawiera web wydajności i obciążenia projektu testowego z niektórych jednostek testów w nim.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Tworzenie testu obciążenia zawierającego testy jednostkowe za pomocą Kreatora nowego testu obciążeniowego
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Aby uruchomić Kreatora nowego testu obciążenia
 
-1.  Otwórz rozwiązanie Bank, który został utworzony w [wskazówki: tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Otwórz rozwiązanie Bank, który został utworzony w [instruktażu: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie Bank, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
 

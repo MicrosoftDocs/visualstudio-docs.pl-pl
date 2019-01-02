@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Dodawanie funkcji do edytora niestandardowego | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850404"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>Wskazówki: Dodawanie funkcji do edytora niestandardowego
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>Przewodnik: Dodawanie funkcji do edytora niestandardowego
 Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.  
   
 ## <a name="to-create-an-editor-for-a-vspackage"></a>Aby utworzyć edytora dla pakietu VSPackage  
   
 1.  Tworzenie niestandardowego edytora za pomocą szablonu projektu pakietu Visual Studio.  
   
-     Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Zdecyduj, czy chcesz tego edytora, aby obsługiwać pojedynczy widok lub wielu widoków.  
   
@@ -118,7 +115,7 @@ Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
   
 12. Implementowanie Obsługa pomocy kontekstowej.  
   
-     Ten krok pozwala do zapewnienia pomocy F1 i dynamiczna Pomoc okna obsługi dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [porady: dostarczanie kontekstu edytory](../extensibility/how-to-provide-context-for-editors.md).  
+     Ten krok pozwala do zapewnienia pomocy F1 i dynamiczna Pomoc okna obsługi dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [jak: Dostarczanie kontekstu edytory](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Udostępnianie z edytorem modelu obiektu automatyzacji poprzez implementację `IDispatch` interfejsu.  
   
@@ -157,4 +154,4 @@ Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
   
 ## <a name="see-also"></a>Zobacz także  
  [Współtworzenie modelu automatyzacji](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Porady: dostarczanie kontekstu edytorów](../extensibility/how-to-provide-context-for-editors.md)
+ [Instrukcje: Dostarczanie kontekstu edytorów](../extensibility/how-to-provide-context-for-editors.md)

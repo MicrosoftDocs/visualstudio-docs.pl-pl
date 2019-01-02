@@ -2,19 +2,18 @@
 title: Pisanie testów jednostkowych dla języka C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: eb441d5987a4e1defde83d4ca9737cc27ab278fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840885"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
@@ -73,7 +72,7 @@ Następnie w testu jednostkowego *.cpp* Dodaj `#include` dyrektywy dla wszelkich
 ### <a name="write-test-methods"></a>Pisanie metod testowych
 
 > [!NOTE]
-> W tej sekcji przedstawiono składnię dla Frameworka testów jednostkowych firmy Microsoft dla języka C/C++. Jest opisane tutaj: [dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Aby uzyskać dokumentację platformy Google Test, zobacz [podstawy platformy Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Dla platformy Boost.Test, zobacz [biblioteki Boost Test: platformy testów jednostkowych](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> W tej sekcji przedstawiono składnię dla Frameworka testów jednostkowych firmy Microsoft dla języka C/C++. Jest opisane tutaj: [Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Aby uzyskać dokumentację platformy Google Test, zobacz [podstawy platformy Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Dla platformy Boost.Test, zobacz [biblioteki Boost Test: Framework testów jednostkowych](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 *.Cpp* plik w projekcie testu ma klasy wycinka i metody zdefiniowane jako przykład sposobu pisania testować kod. Pamiętaj, że sygnatury użyć makra TEST_CLASS i TEST_METHOD, które metody stał się wykrywalny z **Eksplorator testów** okna.
 
@@ -119,7 +118,7 @@ Aby uzyskać najlepsze rozwiązania związane z testów jednostkowych, zobacz [p
 
 ## <a name="use-codelens"></a>Używanie funkcji CodeLens
 
-**Visual Studio 2017 w wersji 15.7 Professional i Enterprise tylko**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) pozwala szybko sprawdzić stan jednostki testowania bez opuszczania edytora kodu. Można zainicjować wskaźników CodeLens dla projektu testu jednostkowego języka C++ w jeden z następujących sposobów:
+**Visual Studio 2017 w wersji 15.7 Professional i Enterprise tylko**: [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) pozwala szybko sprawdzić stan jednostki testowania bez opuszczania edytora kodu. Można zainicjować wskaźników CodeLens dla projektu testu jednostkowego języka C++ w jeden z następujących sposobów:
 
 - Edytowanie i tworzenie projektu testu lub rozwiązania.
 - Ponownie skompiluj swój projekt lub rozwiązanie.

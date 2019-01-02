@@ -1,13 +1,8 @@
 ---
-title: Różnice między rozwiązaniami w trybie piaskownicy oraz rozwiązaniami farmy | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Różnice między piaskownicy oraz rozwiązaniami farmy | Dokumentacja firmy Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,31 +15,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 282fe23a9a586d79b745efec99bc014e88777fd6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: f4f37d908448eba54924589cd669dbdda84956d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849750"
 ---
-# <a name="differences-between-sandboxed-and-farm-solutions"></a>Różnice między rozwiązaniami w trybie piaskownicy oraz rozwiązaniami farmy
-  Podczas kompilowania rozwiązania programu SharePoint, wdraża programu SharePoint server i dołącza debuger do jego debugowania. Proces wykorzystywany do debugowania rozwiązania zależy od ustawienia właściwości rozwiązania w trybie piaskownicy: rozwiązania typu piaskownica lub rozwiązaniu farmy.  
+# <a name="differences-between-sandboxed-and-farm-solutions"></a>Różnice między piaskownicy oraz rozwiązaniami farmy
+  Podczas kompilowania rozwiązania programu SharePoint, wdraża ją do serwera programu SharePoint i debuger dołącza do debugowania. Proces używany do debugowania rozwiązania zależy od ustawienia właściwości rozwiązanie w trybie piaskownicy: rozwiązanie w trybie piaskownicy lub rozwiązaniu farmy.  
   
- Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
+ Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
 ## <a name="farm-solutions"></a>Rozwiązania farmy
- Rozwiązania farmy, które są obsługiwane w procesie roboczym usług IIS (W3WP.exe), uruchom kod, który może mieć wpływ na całej farmy. Podczas debugowania projektu SharePoint, w których właściwość rozwiązania w trybie piaskownicy ma wartość "rozwiązanie farmy" puli aplikacji usług IIS systemu odtwarza przed SharePoint wycofuje lub wdraża funkcję tak, aby zwolnić wszystkie pliki zablokowany przez proces roboczy usług IIS. Jest tylko pula aplikacji usług IIS obsługujących adres URL witryny projektu programu SharePoint.  
+ Rozwiązania farmy, które są hostowane w procesie roboczym usług IIS (W3WP.exe), uruchomić kod, który może mieć wpływ na całej farmy. Podczas debugowania projektu programu SharePoint, w których właściwość rozwiązanie w trybie piaskownicy ma wartość "rozwiązania farmy" puli aplikacji usług IIS systemu odtwarza przed SharePoint wycofuje lub wdraża funkcję tak, aby zwolnić wszystkie pliki zablokowane przez proces roboczy usług IIS. Tylko puli aplikacji usług IIS obsługujących adres URL witryny projektu programu SharePoint zostanie odtworzona.  
   
 ## <a name="sandboxed-solutions"></a>Rozwiązania piaskownicy
- Rozwiązania piaskownicy, które są hostowane w programie SharePoint użytkownika kodu rozwiązania proces roboczy (SPUCWorkerProcess.exe), uruchom kod, który można tylko na zbiorze witryn rozwiązania. Pula aplikacji usług IIS ani serwera IIS ponieważ rozwiązań w trybie piaskownicy nie są uruchamiane w procesie roboczym usług IIS, należy ponownie uruchomić. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza debuger do procesu SPUCWorkerProcess, który automatycznie wyzwala usługi SPUserCodeV4 w programie SharePoint i kontrolek. Nie jest niezbędna dla procesu SPUCWorkerProcess do odtworzenia załadować najnowsza wersja rozwiązania.  
+ Rozwiązania w trybie piaskownicy, które znajdują się w programie SharePoint użytkownika kodu rozwiązania procesu roboczego (SPUCWorkerProcess.exe), uruchomić kod, który tylko może mieć wpływ na zbiorze witryn rozwiązania. Ponieważ rozwiązania w trybie piaskownicy nie są uruchamiane w proces roboczy usług IIS, pula aplikacji usług IIS ani na serwerze usług IIS nie wymaga ponownego uruchomienia. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza debuger do procesu SPUCWorkerProcess, wyzwalającego automatycznie usługa SPUserCodeV4 w programie SharePoint i kontroli. Nie jest konieczne do SPUCWorkerProcess w procesie roboczym do załadowania najnowszej wersji rozwiązania.  
   
-## <a name="either-type-of-solution"></a>Wpisz rozwiązania
- Z dowolnego typu rozwiązanie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] również dołącza debuger do przeglądarki, aby włączyć debugowanie skryptów po stronie klienta. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] używa debugowanie aparatu w tym celu skryptu. Aby włączyć debugowanie skryptów, należy zmienić domyślne ustawienia przeglądarki po wyświetleniu monitu.  
+## <a name="either-type-of-solution"></a>Dowolnego typu rozwiązania
+ Za pomocą dowolnego typu rozwiązania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] również dołącza debuger do przeglądarki, aby włączyć debugowanie skryptów po stronie klienta. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] używa tego skryptu w aparacie, w tym celu debugowania. Aby włączyć debugowanie skryptów, możesz zmienić ustawienie domyślnej przeglądarki po wyświetleniu monitu.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza debuger tylko dla procesu W3WP lub SPUCWorkerProcess uruchamiającego bieżącej lokacji. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza również zarządzane COM Plus i aparaty debugowania przepływów pracy.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza debuger tylko procesy W3WP lub SPUCWorkerProcess uruchomione bieżącej lokacji. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza również zarządzane modelu COM Plus i aparaty debugowania przepływów pracy.  
   
 ## <a name="see-also"></a>Zobacz także
  [Debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md)  
-  
+ [Uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md)  

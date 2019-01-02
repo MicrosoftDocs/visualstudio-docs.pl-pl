@@ -2,19 +2,18 @@
 title: Omówienie diagnostyki grafiki | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831381"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Omówienie diagnostyki grafiki w programie Visual Studio
 Program Visual Studio *Graphics Diagnostics* to zestaw narzędzi do rejestrowania i następnie analizowania problemów renderowania i wydajności w aplikacjach Direct3D. Diagnostyka grafiki może służyć w aplikacjach, które działają lokalnie na komputerze z systemem Windows lub na zdalnym komputerze lub urządzeniu.  
@@ -53,7 +52,7 @@ Program Visual Studio *Graphics Diagnostics* to zestaw narzędzi do rejestrowani
 ### <a name="gpu-usage"></a>Użycie procesora GPU  
  Diagnostyka grafiki również profilować wydajności aplikacji Direct3D. Ponieważ dane profilowania będą pochylony przez rejestrowanie szczegółów zdarzenia grafiki, to różni się od przechwytywanie ramek, które ma być używany z analizatora grafiki.  
   
- Zobacz [użycie procesora GPU](gpu-usage.md) Aby uzyskać więcej informacji.  
+ Zobacz [użycie procesora GPU](/visualstudio/profiling/gpu-usage) Aby uzyskać więcej informacji.  
   
 ### <a name="directx-control-panel"></a>Panel sterowania DirectX  
  Panel sterowania DirectX to składnik DirectX, którego można użyć, aby zmienić sposób zachowania DirectX — na przykład włączyć wersję składników wykonawczych DirectX przeznaczoną do debugowania, wybrać rodzaj komunikatów debugowania, które są raportowane, oraz uniemożliwić korzystanie z niektórych funkcji sprzętowych karty graficznej w celu emulacji mniej zaawansowanego sprzętu. Ten poziom kontroli nad DirectX może pomóc w debugowaniu i testowaniu aplikacji DirectX. Dostęp do panelu sterowania DirectX można uzyskać z Visual Studio.  

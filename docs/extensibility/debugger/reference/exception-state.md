@@ -1,9 +1,6 @@
 ---
 title: EXCEPTION_STATE | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - EXCEPTION_STATE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1032be313c6be8c71799ea493e82c03fd9e96ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06bd0a3f68653bc52e79f9b4eb97d7b409ee5488
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833384"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Określa stan wyjątku.  
@@ -28,7 +25,7 @@ Określa stan wyjątku.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-enum enum_EXCEPTION_STATE {   
+enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
@@ -53,7 +50,7 @@ typedef DWORD EXCEPTION_STATE;
 ```  
   
 ```csharp  
-public enum enum_EXCEPTION_STATE {   
+public enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
@@ -132,9 +129,9 @@ public enum enum_EXCEPTION_STATE {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

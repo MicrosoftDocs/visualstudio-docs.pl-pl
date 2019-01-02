@@ -2,21 +2,20 @@
 title: Programowanie sterowane za pomocą narzędzia Eksplorator testów testami
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f38b38fbce688b405887ec39cc6e234f5d7b70d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833931"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki Start: Testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 
 Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego działania kodu przez wiele kroków przyrostowych cyklu rozwoju. Istnieje kilka środowisk, których można użyć do pisania testów jednostkowych, łącznie z niektórymi opracowanymi przez osoby trzecie. Niektóre środowiska testowe są wyspecjalizowane w testowaniu różnych języków lub platform. Eksplorator testów udostępnia jeden interfejs do testów jednostkowych w dowolnym z tych środowisk. Dostępne są adaptery dla większości powszechnie stosowanych środowisk, a następnie można napisać własne adaptery dla innych platform.
 
@@ -53,11 +52,11 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 
     Eksplorator testów otwiera i wyświetla podsumowanie wyników.
 
-   **Aby wyświetlić pełną listę testów:** wybierz **Pokaż wszystko** w dowolnej kategorii.
+   **Aby wyświetlić pełną listę testów:** Wybierz **Pokaż wszystko** w dowolnej kategorii.
 
-   **Aby wyświetlić szczegóły wyniku testu:** zaznacz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.
+   **Aby wyświetlić szczegóły wyniku testu:** Wybierz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.
 
-   **Aby przejść do kodu testu:** kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.
+   **Aby przejść do kodu testu:** Kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.
 
    **Aby debugować test:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz **Debuguj wybrane testy**.
 
@@ -69,7 +68,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 > Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Przewodnik: Używanie testów jednostkowych do opracowania metody
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Przewodnik: Testów przy użyciu jednostki do opracowania metody
  W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Tworzenie testu i metody

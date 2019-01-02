@@ -1,9 +1,6 @@
 ---
 title: Typowe wzorce kontrolki dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832638"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolki dla programu Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Formanty standardowe  
@@ -49,7 +46,7 @@ Przede wszystkim należy wziąć pod uwagę podczas style kontrolki jest, czy fo
   
 -   **Standard (Narzędzia) w oknach dialogowych:** nie motywów. Nie należy ponownie szablon. Użyj domyślnych stylu kontrolki podstawowe.  
   
--   **Narzędzia systemu windows, edytory dokumentu, powierzchni projektowania i motywów okien dialogowych:** używać specjalistycznych wygląd kompozycji przy użyciu usługi kolorów.  
+-   **Okna narzędzi, edytory dokumentu, powierzchni projektowania i motywów okna dialogowe:** Użyj wyspecjalizowane wygląd kompozycji przy użyciu usługi kolorów.  
   
 ###  <a name="BKMK_Scrollbars"></a> Paski przewijania  
  Paski przewijania powinien być zgodny [paski przewijania typowe wzorce interakcji dla Windows](/windows/desktop/Controls/about-scroll-bars) , chyba że są one rozszerzone przy użyciu informacji o zawartości, jak pokazano w edytorze kodu.  
@@ -69,7 +66,7 @@ Przede wszystkim należy wziąć pod uwagę podczas style kontrolki jest, czy fo
   
 -   Wymagane pola powinny mieć  **\<wymagane >** jako znaki wodne w nich. Nie należy zmieniać kolor tła, z wyjątkiem sytuacji, w rzadkich sytuacjach.  
   
--   Błąd weryfikacji: zobacz [powiadomienia i postęp dla programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Błąd sprawdzania poprawności: Zobacz [powiadomienia i postęp dla programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   Pól danych wejściowych z tego względu celu dopasowania do zawartości, nie Dopasuj szerokość okna, w którym są wyświetlane, ani też arbitralnie jest zgodna z długością pola długie, takich jak ścieżki. Długość może to oznaczać użytkownikowi ograniczenia dotyczące liczby znaków są dozwolone w tym polu.  
   
@@ -299,7 +296,7 @@ Wytyczne dotyczące przy użyciu przycisku:
 #### <a name="graphical-buttons"></a>Przyciski graficzne  
 Niektóre przyciski należy zawsze używać graficzny i nigdy nie dołączaj tekstu, aby zaoszczędzić miejsce i uniknąć problemów z lokalizacji. Są one często używane w innych sortowanie list i formanty pola wyboru.  
   
-> **Uwaga:** użytkownicy będą musieli kartę w tych przycisków (nie ma żadnych kluczy dostępu), więc umieść je w kolejności rozsądne. Mapa `name` właściwości przycisku akcję, która zajmuje się tak, aby czytniki zawartości ekranu poprawnie interpretować Akcja przycisku.  
+> **Uwaga:** Użytkownicy muszą kartę w tych przycisków (nie ma żadnych kluczy dostępu), więc umieść je w kolejności rozsądne. Mapa `name` właściwości przycisku akcję, która zajmuje się tak, aby czytniki zawartości ekranu poprawnie interpretować Akcja przycisku.  
   
 | Funkcja | Przycisk |  
 | --- | --- |  
@@ -371,23 +368,23 @@ W widoku drzewa powinna zapewniają możliwość wybierz elementy i rozwijanie/z
 ##### <a name="tree-view-control"></a>Kontrolka widoku drzewa  
 Kontrolki drzewa w usłudze Visual Studio, należy wykonać typowej nawigacji klawiatury:  
   
--   **Strzałkę w górę:** wybierz elementy przez przeniesienie w górę drzewa  
+-   **Strzałka: w górę** Wybierz elementy przez przeniesienie w górę drzewa  
   
--   **Strzałkę w dół:** wybierz elementy, przenosząc niżej na drzewie  
+-   **Strzałka: w dół** Wybierz elementy, przenosząc niżej na drzewie  
   
--   **Strzałka w prawo:** rozwiń węzeł w drzewie  
+-   **Strzałka w prawo:** Rozwiń węzeł w drzewie  
   
--   **Strzałka w lewo:** zwinąć węzeł w drzewie  
+-   **Strzałka w lewo:** Zwiń węzeł w drzewie  
   
--   **Wprowadź klucz:** inicjować, obciążenia, należy wykonać wybranego elementu  
+-   **Wprowadź klucz:** Zainicjuj, obciążenia, należy wykonać wybranego elementu  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (widok drzewa i siatki)  
 Formant trid jest formant złożony, który zawiera widok drzewa w obrębie siatki. Rozwijanie, zwijanie i przechodząc drzewa należy przestrzegać tych samych poleceń klawiatury w widoku drzewa, z następującymi dodatkami:  
   
--   **Strzałka w prawo:** rozwinąć węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.  
+-   **Strzałka w prawo:** Rozwiń węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.  
   
--   **Karta:** Navigates do najbliższej komórki po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.  
+-   **Karta:** Powoduje przejście do najbliższej komórce po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.  
   
--   **Shift + Tab:** Navigates do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.  
+-   **Shift + Tab:** Powoduje przejście do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.  
   
 ![Formant trid w programie Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Formant trid w programie Visual Studio

@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846168"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
 
@@ -89,9 +88,9 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 
 |**To**|**Wykonaj następujące kroki**|
 |-|-|
-|Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram zależności z tych źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md) i [mapy Użyj kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klas** lub **przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:** przeciąganie plików binarnych do diagramu zależności nie powoduje automatycznego dodania odniesień do nich do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W **Dodaj istniejący element** okno dialogowe, przejdź do plików binarnych, zaznacz je, a następnie wybierz **OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksploratora rozwiązań**, wybierz plik binarny, który zostanie dodany, a następnie naciśnij **F4** otworzyć **właściwości** okna.</li><li>Dla każdego pliku binarnego ustaw **Build Action** właściwości **weryfikacji**.</li></ol>|
+|Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram zależności z tych źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md) i [mapy Użyj kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klas** lub **przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu zależności nie powoduje automatycznego dodania odniesień do nich do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W **Dodaj istniejący element** okno dialogowe, przejdź do plików binarnych, zaznacz je, a następnie wybierz **OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksploratora rozwiązań**, wybierz plik binarny, który zostanie dodany, a następnie naciśnij **F4** otworzyć **właściwości** okna.</li><li>Dla każdego pliku binarnego ustaw **Build Action** właściwości **weryfikacji**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu zależności, w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
-|Tworzenie warstwy dla każdego zaznaczonego artefaktu|Naciśnij i przytrzymaj klawisz **SHIFT** klucza podczas przeciągania wszystkich artefaktów na diagram zależności w tym samym czasie. **Uwaga:** Jeśli używasz **SHIFT** klawisz, aby wybrać zakres elementów, zwolnij klawisz po zaznaczeniu artefaktów. Naciśnij i przytrzymaj go ponownie podczas przeciągania artefaktów do diagramu. <br /><br /> Warstwa dla każdego artefaktu pojawia się na diagramie i jest połączona z poszczególnymi artefaktami.|
+|Tworzenie warstwy dla każdego zaznaczonego artefaktu|Naciśnij i przytrzymaj klawisz **SHIFT** klucza podczas przeciągania wszystkich artefaktów na diagram zależności w tym samym czasie. **Uwaga:**  Jeśli używasz **SHIFT** klawisz, aby wybrać zakres elementów, zwolnij klawisz po zaznaczeniu artefaktów. Naciśnij i przytrzymaj go ponownie podczas przeciągania artefaktów do diagramu. <br /><br /> Warstwa dla każdego artefaktu pojawia się na diagramie i jest połączona z poszczególnymi artefaktami.|
 |Dodawanie artefaktu do warstwy|Przeciągnij artefakt do warstwy.|
 |Tworzenie nowej niepołączonej warstwy|W **przybornika**, rozwiń węzeł **Diagram zależności** sekcji, a następnie przeciągnij **warstwy** diagram zależności.<br /><br /> Aby dodać wiele warstw, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz pozycję **wskaźnik** narzędzi lub naciśnij klawisz **ESC** klucza.<br /><br /> - lub -<br /><br /> Otwórz menu skrótów dla diagramu zależność, wybierz polecenie **Dodaj**, a następnie wybierz **warstwy**.|
 |Tworzenie zagnieżdżonych warstw|Przeciągnij istniejącą warstwę na inną warstwę.<br /><br /> - lub -<br /><br /> Otwórz menu skrótów dla warstwy, wybierz polecenie **Dodaj**, a następnie wybierz **warstwy**.|
@@ -162,6 +161,6 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 
 - [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
-- [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)
+- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)
 - [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 - [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)

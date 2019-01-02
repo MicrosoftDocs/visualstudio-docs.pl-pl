@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — Parallel, Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ad0d0d44c18c17dd1602c51954a7c529b84d114
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843609"
 ---
 # <a name="parallel-activity-designer"></a>Parallel, projektant działań
 
@@ -44,7 +43,7 @@ Poniższa tabela pokazuje właściwości działań równoległych i w tym artyku
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **równoległe**. Wartość może być opcjonalnie edytować w **właściwości** siatki lub bezpośrednio w nagłówku projektanta działań.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Zawiera kolekcję działania podrzędne do wykonania.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|Prawda|Zawiera kolekcję działania podrzędne do wykonania.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Oceniane, po zakończeniu gałęzi. Jeśli daje w wyniku **True**, następnie zaplanowane oczekujące gałęzie zostały anulowane. Jeśli ta właściwość nie jest ustawiona lub daje w wyniku **False**, działanie zakończy się po zakończeniu wszystkich swoich działań podrzędnych. Wartość domyślna to **null**.|
 
 ## <a name="see-also"></a>Zobacz także

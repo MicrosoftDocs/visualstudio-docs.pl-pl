@@ -2,19 +2,18 @@
 title: Generowanie pola, właściwości, zmienna lokalna
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3cd886e4ed08bbe4dbeea1b177dc4dd22502d99
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 59d2cc85bb8aa8989e87f55bf105d4ac37117a56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825373"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generowanie pola, właściwości lub zmiennej lokalnej w programie Visual Studio
 
@@ -24,11 +23,11 @@ Dotyczy to generowanie kodu:
 
 - Visual Basic
 
-**Co:** pozwala natychmiast generowania kodu dla wcześniej niezadeklarowany pola, właściwości lub lokalnego.
+**Co:** Pozwala natychmiast generowania kodu dla wcześniej niezadeklarowany pola, właściwości lub lokalnego.
 
-**Kiedy:** wprowadzenie nowego pola, właściwości lub lokalnej podczas wpisywania i aby poprawnie Zadeklaruj go automatycznie.
+**Kiedy:** Wprowadzenie nowego pola, właściwości lub lokalnej podczas wpisywania i aby poprawnie Zadeklaruj go automatycznie.
 
-**Dlaczego:** można zadeklarować pola, właściwości lub lokalnej przed użyciem, jednak wygeneruje deklaracji i automatycznie wpisz tę funkcję.
+**Dlaczego:** Można zadeklarować pola, właściwości lub lokalnym przed jego użyciem, jednak ta funkcja wygeneruje deklaracji i wpisz automatycznie.
 
 ## <a name="how-to"></a>Instrukcje
 

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21b0ecfc26728fa4692a07eaa1e2e43ecdcf9cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: d53e6c512b6f026772339c79c46eeb6854fb0095
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842281"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 Kształty port służy do reprezentowania klasy domeny w wygenerowanym projektancie.
@@ -48,7 +47,7 @@ Kształty port służy do reprezentowania klasy domeny w wygenerowanym projektan
 |Typ Porada narzędzia|Jak etykietka narzędzia jest zdefiniowane (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|brak|
 |Uwagi|Uwagi informacyjne, które są skojarzone z tym kształtem.|\<Brak >|
 |Początkowa wysokość|Początkowa wysokość tego kształtu, w calach.|1|
-|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1.5|
+|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1,5|
 |Kolor wypełnienia uwidocznione jako właściwość<br /><br /> Tryb gradientu wypełnienia narażone<br /><br /> Widoczne kolor konturu jako właściwość<br /><br /> Widoczne stylu kreskowania konturu jako właściwość<br /><br /> Grubość konturu jako właściwość widoczne<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij przycisk **Dodaj udostępniane**.|False|
 |Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|
 |Nazwa wyświetlana|Nazwa która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<Brak >|

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 872547326edb54fc5b843bdd74a8035e1119dca0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ccc2fb2bb6c998ed73bf2d834c28cb34babbafa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837865"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 Zwraca początek zakresu adresów, w którym symbolu lokalnego jest poprawna.  
@@ -27,7 +25,7 @@ Zwraca początek zakresu adresów, w którym symbolu lokalnego jest poprawna.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
+HRESULT get_liveRangeStartRelativeVirtualAddress (   
    DWORD* address  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress (
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
  Biblioteka: diaguids.lib  
   

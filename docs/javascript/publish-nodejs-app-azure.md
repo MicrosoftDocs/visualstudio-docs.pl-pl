@@ -1,9 +1,7 @@
 ---
 title: Publikowanie aplikacji Node.js w usłudze App Service w systemie Linux
 description: Można opublikować aplikacji Node.js w programie Visual Studio do usługi App Service Linux na platformie Azure
-ms.custom: ''
 ms.date: 11/1/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: fcd7c64e15f890c2411327bff5bdc820509fe712
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846259"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikowanie aplikacji Node.js na platformie Azure (Linux App Service)
 
@@ -31,7 +29,7 @@ Usługa App Service Linux wdraża kontenera platformy Docker w systemie Linux do
 
 W tym samouczku pokazano, jak utworzyć aplikację Node.js, zaczynając od szablonu zainstalowane z narzędzia Node.js dla programu Visual Studio, wypychanie kodu do repozytorium w witrynie GitHub i następnie Udostępnij usługi Azure App Service za pośrednictwem portalu sieci web platformy Azure, dzięki czemu można wdrożyć z Repozytorium GitHub. Aby użyć wiersza polecenia do aprowizacji usługi Azure App Service i wypychanie kodu z lokalnego repozytorium Git, zobacz [tworzenie aplikacji Node.js](/azure/app-service/containers/quickstart-nodejs).
 
-W tym samouczku dowiesz się, jak:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
 > * Tworzenie projektu platformy Node.js
 > * Utwórz repozytorium GitHub dla kodu
@@ -84,7 +82,7 @@ Aby skonfigurować usługi GitHub dla programu Visual Studio:
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Tworzenie usługi App Service dla systemu Linux na platformie Azure
 
-1. Zaloguj się do [witryny Azure portal](https://portal.azure.com).
+1. Zaloguj się do witryny [Azure Portal](https://portal.azure.com).
 
 2. Wybierz **App Services** z listy usług po lewej stronie, a następnie kliknij przycisk **Dodaj**.
 

@@ -3,7 +3,6 @@ title: Konfigurowanie zdalnego usługi języka R w systemie Linux
 description: Jak skonfigurować zdalnej usługi języka R na platformach Ubuntu i podsystemu Windows dla systemu Linux.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835948"
 ---
 # <a name="remote-r-service-for-linux"></a>Usługa zdalnego języka R dla systemu Linux
 
@@ -87,9 +86,9 @@ W każdym przypadku komputera zdalnego musi mieć jedną z następujących inter
 
 ### <a name="ubuntu-server-vm-or-data-science-vm-on-azure"></a>Serwer Ubuntu maszyny Wirtualnej lub maszyny Wirtualnej na platformie Azure do analizy danych
 
-#### <a name="create-a-vm"></a>Tworzenie maszyny Wirtualnej
+#### <a name="create-a-vm"></a>Tworzenie maszyny wirtualnej
 
-1. Zaloguj się do [witryny Azure portal](https://portal.azure.com).
+1. Zaloguj się w witrynie [Azure Portal](https://portal.azure.com).
 1. Przejdź do maszyn wirtualnych, a następnie wybierz **Dodaj**.
 1. Na liście dostępnych obrazów maszyn wirtualnych Wyszukaj i wybierz jedną z następujących czynności:
     - Serwer Ubuntu: `Ubuntu Server 16.04 LTS`
@@ -170,4 +169,3 @@ W każdym przypadku komputera zdalnego musi mieć jedną z następujących inter
     ```
 1. Użyj `az container list` polecenie, aby sprawdzić stan. Wyszukaj `provisioningState`: `Succeeded`.
 1. Jeśli aprowizacja została wykonana pomyślnie, teraz można podłączyć do kontenera. Znajdź publiczny adres IP w `ipAddress` pola, które są używane przy użyciu poświadczeń w pliku platformy docker do łączenia się do kontenera z RTVS.
-

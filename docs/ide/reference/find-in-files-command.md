@@ -2,7 +2,6 @@
 title: Znajdź w plikach — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.findinfiles
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 9aab2251f8859cb8e6a5699ba3cd2d4828bd32a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831209"
 ---
 # <a name="find-in-files-command"></a>Znajdź w plikach — Polecenie
-Wyszukiwania plików przy użyciu podzbiór opcje dostępne na **Znajdź w plikach** karcie **Znajdź i Zamień** okna.
+Wyszukiwanie plików za pomocą podzestawu opcji dostępnych w **Znajdź w plikach** karcie **Znajdź i Zamień** okna.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,36 +36,36 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
  `findwhat` Wymagane. Tekst do dopasowania.
 
 ## <a name="switches"></a>Przełączniki
- /Case lub /c opcjonalne. Dopasowań występuje tylko w przypadku wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.
+ /Case lub /c atrybut opcjonalny. Dopasowuje występują tylko wtedy, gdy wielkich i małych liter dokładnie odpowiadać, określone w `findwhat` argumentu.
 
- /ext: `extensions` opcjonalne. Określa rozszerzenia plików dla plików do przeszukania. Jeśli nie zostanie określony, poprzednie rozszerzenie zostanie użyty, jeśli zostało wprowadzone wcześniej.
+ /ext: `extensions` Opcjonalnie. Określa rozszerzenia plików dla plików do przeszukania. Jeśli nie zostanie określony, poprzednie rozszerzenie jest używana, jeśli wcześniej zostało wprowadzone.
 
- /lookin: `searchpath` opcjonalne. Katalog do wyszukiwania. Jeśli ścieżka zawiera spacje, ujmij całą ścieżkę w cudzysłów.
+ /lookin: `searchpath` Opcjonalnie. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, należy ująć w znaki cudzysłowu pełną ścieżkę.
 
- /names lub /n opcjonalne. Wyświetla listę nazw plików, które zawierają dopasowania.
+ /names lub /n atrybut opcjonalny. Wyświetla listę nazw plików, które zawierają dopasowania.
 
- / Options lub /t opcjonalne. Wyświetla listę bieżące ustawienia opcji wyszukiwania, a nie przeprowadza wyszukiwanie.
+ / Options lub/t atrybut opcjonalny. Wyświetla listę bieżących ustawień opcji wyszukiwania, a nie wyszukiwania.
 
- /regex lub /r opcjonalne. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji reprezentujących wzorce tekstu, a nie literał znaków. Pełną listę znaków wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
+ /regex lub /r atrybut opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji, które reprezentują wzorców tekstu, a nie jako znaki literału. Aby uzyskać pełną listę znaki wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
 
- / Reset lub /e opcjonalne. Zwraca opcje Znajdź do ustawień domyślnych i nie wykonuje wyszukiwanie.
+ / Reset lub /e atrybut opcjonalny. Zwraca opcje wyszukiwania do ustawień domyślnych, a nie wyszukiwania.
 
- / stop opcjonalne. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Wyszukiwanie ignoruje wszystkie inne argumenty podczas `/stop` został określony. Na przykład aby zatrzymać bieżące wyszukiwanie należy wprowadzić następujące:
+ / stop atrybut opcjonalny. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Wyszukiwania ignoruje wszystkie inne argumenty po `/stop` została określona. Na przykład można zatrzymać bieżące wyszukiwanie możesz wprowadzić następujące czynności:
 
 ```cmd
 >Edit.FindinFiles /stop
 ```
 
- /Sub lub /s opcjonalne. Wyszukuje podfolderów znajdujących się w katalogu określonym w /lookin:`searchpath` argumentu.
+ / Sub lub /s atrybut opcjonalny. Wyszukuje podfoldery znajdujące się w katalogu wskazanym na /lookin:`searchpath` argumentu.
 
- /text2 lub /2 opcjonalne. Wyświetla wyniki wyszukiwania w oknie Znajdź 2 wyników.
+ /text2 lub /2 atrybut opcjonalny. Wyświetla wyniki wyszukiwania w oknie Znajdź wyniki 2.
 
- /Wild lub /l opcjonalne. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji do reprezentowania znaków ani sekwencji znaków.
+ /Wild lub/l atrybut opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji do reprezentowania znaku lub sekwencji znaków.
 
- opcji lub /w opcjonalne. Wyszukuje tylko całe wyrazy.
+ opcji lub Wn atrybut opcjonalny. Wyszukiwanie tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie szuka btnCancel we wszystkich plikach .cls znajdujące się w folderze "Moje projektów programu Visual Studio" i wyświetla informacje dopasowania w oknie Znajdź 2 wyniki.
+ W tym przykładzie wyszukuje btnCancel we wszystkich plikach .cls znajduje się w folderze "Moje projektów programu Visual Studio" i wyświetla informacje o dopasowania w oknie Znajdź wyniki 2.
 
 ```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
@@ -76,6 +75,6 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 
 - [Znajdź w plikach](../../ide/find-in-files.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

@@ -3,7 +3,6 @@ title: Definiowanie niestandardowych poleceń menu dla projektów języka Python
 description: Edycji projektu i plików obiektów docelowych można dodać niestandardowe polecenia do menu kontekstowego projektu języka Python w programie Visual Studio, aby wywołać programów wykonywalnych, skryptów, moduły, fragmenty kodu i narzędzia pip.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be8befcc549b76c8ac2b6435146c636b592b5494
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3cf0e0984c8051c0301ccb20c5f8dce2850c1514
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820995"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie niestandardowych poleceń dla projektów języka Python
 
@@ -42,7 +41,7 @@ Każde polecenie niestandardowe mogą odwoływać się do pliku Python, moduł j
 >
 > Podczas tworzenia niestandardowych poleceń, jednak te klika przycisk może stać się uciążliwe. To bardziej wydajne przepływu pracy, załadowanie projektu w programie Visual Studio i również otworzyć *.pyproj* plik w edytorze oddzielne całkowicie (takich jak inne wystąpienie programu Visual Studio, Visual Studio Code, program Notatnik, itp.). Podczas zapisywania zmian w edytorze i przełącz się do programu Visual Studio, Visual Studio wykrywa zmiany i zapyta, czy ponownie załadować projektu (**projektu \<name > został zmodyfikowany poza środowiskiem.**). Wybierz **Załaduj ponownie** i zmiany są natychmiast stosowane w tylko jednym kroku.
 
-## <a name="walkthrough-add-a-command-to-a-project-file"></a>Wskazówki: Dodawanie polecenia do pliku projektu
+## <a name="walkthrough-add-a-command-to-a-project-file"></a>Przewodnik: Dodawanie polecenia do pliku projektu
 
 Zapoznać się z niestandardowych poleceń, w tej sekcji przedstawiono prosty przykład jest uruchamiany plik startowy projektu bezpośrednio przy użyciu *python.exe*. (Takie polecenie skutecznie jest taka sama jak za pomocą **debugowania** > **Uruchom bez debugowania**.)
 
@@ -145,10 +144,10 @@ Wszystkie wartości atrybutów jest rozróżniana wielkość liter.
 
 | Atrybut | Wymagane | Opis |
 | --- | --- | --- |
-| TargetType | Tak | Określa atrybut docelowy zawiera i sposobie ich użycia wraz z atrybutem argumenty:<ul><li>**wykonywalny**: Uruchom plik wykonywalny o nazwie w lokalizacji docelowej, dodając wartość w argumentach, tak, jakby wprowadzone bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom *python.exe* przy użyciu nazwy pliku w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Moduł**: Uruchom `python -m` następuje nazwa modułu w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Kod**: uruchamianie kodu wbudowanego znajdujących się w lokalizacji docelowej. Wartość argumentów jest ignorowana.</li><li>**Narzędzie PIP**: Uruchom `pip` za pomocą polecenia w lokalizacji docelowej, a następnie argumentów; jest ExecuteIn jest ustawiona na "wyjściowe", jednak zakłada pip `install` polecenia i używa docelowy jako nazwę pakietu.</li></ul> |
-| Docelowy | Tak | Nazwa pliku, nazwa modułu, kodu lub polecenia pip do użycia, w zależności od TargetType. |
+| TargetType | Tak | Określa atrybut docelowy zawiera i sposobie ich użycia wraz z atrybutem argumenty:<ul><li>**Plik wykonywalny**: Uruchom plik wykonywalny o nazwie w lokalizacji docelowej, dodając wartość w argumentach, tak, jakby wprowadzone bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom *python.exe* przy użyciu nazwy pliku w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Moduł**: Uruchom `python -m` następuje nazwa modułu w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Kod**: Uruchamianie kodu wbudowanego znajdujących się w lokalizacji docelowej. Wartość argumentów jest ignorowana.</li><li>**Narzędzie PIP**: Uruchom `pip` za pomocą polecenia w lokalizacji docelowej, a następnie argumentów; jest ExecuteIn jest ustawiona na "wyjściowe", jednak zakłada pip `install` polecenia i używa docelowy jako nazwę pakietu.</li></ul> |
+| Cel | Tak | Nazwa pliku, nazwa modułu, kodu lub polecenia pip do użycia, w zależności od TargetType. |
 | Argumenty | Optional | Określa ciąg argumentów (jeśli istnieje), oferowanie element docelowy. Należy pamiętać, że po TargetType `script`, podano argumentów do programu Python nie *python.exe*. Ignorowane dla `code` TargetType. |
-| ExecuteIn | Tak | Określa środowisko, w którym należy uruchomić polecenie:<ul><li>**Konsola**: (ustawienie domyślne) uruchamia obiektu docelowego i argumenty, tak jakby one są umieszczone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, a docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: takie Same jak konsoli, ale czeka na naciśnięcie klawisza przed zamknięciem okna.</li><li>**dane wyjściowe**: docelowy działa i wyświetla wyniki w **dane wyjściowe** okna w programie Visual Studio. Jeśli TargetType "pip", Visual Studio używa docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: docelowy działa w [Python Interactive](python-interactive-repl-in-visual-studio.md) okno; opcjonalnie wyświetlana nazwa jest używana dla tytułu okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
+| ExecuteIn | Tak | Określa środowisko, w którym należy uruchomić polecenie:<ul><li>**Konsola**: (Ustawienie domyślne) Uruchamia element docelowy i argumenty, tak, jakby one są umieszczone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, a docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: Taka sama jak konsoli, ale czeka na naciśnięcie klawisza przed zamknięciem okna.</li><li>**Dane wyjściowe**: Uruchamia docelowego i wyświetla wyniki w **dane wyjściowe** okna w programie Visual Studio. Jeśli TargetType "pip", Visual Studio używa docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: Uruchamia docelowego w [Python Interactive](python-interactive-repl-in-visual-studio.md) okno; opcjonalnie wyświetlana nazwa jest używana dla tytułu okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
 | WorkingDirectory | Optional | Folder, w którym należy uruchomić polecenie. |
 | ErrorRegex<br>WarningRegEx | Optional | Używana tylko wtedy, gdy ExecuteIn jest `output`. Obie wartości określić wyrażenie regularne, za pomocą których program Visual Studio analizuje dane wyjściowe, aby wyświetlić błędy i ostrzeżenia w polecenia jego **lista błędów** okna. Jeśli nie zostanie określony, polecenie nie ma wpływu na **lista błędów** okna. Aby uzyskać więcej informacji, w jaki program Visual Studio oczekuje, zobacz [nazwanych grup przechwytywania](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Optional | Listę wymagań dotyczących pakietu dla polecenia, używając tego samego formatu co [ *requirements.txt* ](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Uruchom PyLint** polecenia, na przykład Określa `pylint>=1.0.0`. Przed uruchomieniem polecenia, programu Visual Studio sprawdza, czy są zainstalowane wszystkie pakiety na liście. Visual Studio używa pip, aby zainstalować wszystkie brakujące pakiety. |
@@ -162,7 +161,7 @@ Podczas analizowania błędów i ostrzeżeń z danych wyjściowych polecenia, pr
 - `(?<code>...)`: Kod błędu
 - `(?<filename>...)`: Nazwa pliku, dla której zgłaszany jest błąd
 - `(?<line>...)`: Numer wiersza lokalizacji w pliku, dla której zgłaszany jest błąd.
-- `(?<column>...)`: Numer kolumny w lokalizacji w pliku, dla której zgłaszany jest błąd.
+- `(?<column>...)`: Numer kolumny lokalizacji w pliku, dla której zgłaszany jest błąd.
 
 Na przykład PyLint generuje ostrzeżenia o następującej postaci:
 
@@ -351,7 +350,7 @@ Aby poznać sposób, w jaki **początkowego serwera** i **początkowego serwera 
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-### <a name="message-the-project-file-could-not-be-loaded"></a>Komunikat o błędzie: "w pliku projektu nie można załadować"
+### <a name="message-the-project-file-could-not-be-loaded"></a>Komunikat: "Nie można załadować pliku projektu"
 
 Oznacza, że błędy składni w pliku projektu. Komunikat zawiera konkretny błąd o numerze wiersza i położenie znaku.
 
@@ -374,7 +373,7 @@ Na przykład w następujących elementów, z nazwą "Przykład" w grupie właśc
   </Target>
 ```
 
-### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Komunikat o błędzie: "Wystąpił błąd podczas uruchamiania \<nazwa polecenia >. Nie można pobrać polecenia \<target-name > z projektu. "
+### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Komunikat: "Wystąpił błąd podczas uruchamiania \<nazwa polecenia >. Nie można pobrać polecenia \<target-name > z projektu. "
 
 Oznacza to, że zawartość `<Target>` lub `<CreatePythonCommandItem>` elementy są nieprawidłowe. Możliwe przyczyny:
 

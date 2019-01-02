@@ -1,9 +1,6 @@
 ---
-title: Rejestrowanie VSPackages | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Rejestrowanie pakietów VSPackage | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, registering
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6f7e603fbc023415ad2b8ddc157f239feb53768
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4b5bedbfdeaab6fa3d7d8efe4479a8b7f3e4de4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842609"
 ---
-# <a name="registering-vspackages"></a>Rejestrowanie VSPackages
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zależy od plików .pkgdef do opisu i zlokalizuj pakiet VSPackage. Plik .pkgdef zawiera wszystkie informacje rejestracyjne, które w przeciwnym razie zostanie dodany do rejestru systemowego. Zarządzane VSPackages są rejestrowane przez dodanie atrybutów do kodu źródłowego, a następnie uruchamiając [elementu CreatePkgDef narzędzie](../../extensibility/internals/createpkgdef-utility.md) na zestaw wynikowy do wygenerowania pliku .pkgdef.  
+# <a name="registering-vspackages"></a>Rejestrowanie pakietów VSPackage
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] opiera się na plikach pkgdef do opisywania i zlokalizować pakietu VSPackage. Plik .pkgdef zawiera wszystkich informacji rejestracyjnych które w przeciwnym razie zostaną dodane do rejestru systemowego. Zarządzane pakietów VSPackage są rejestrowane przez dodawanie atrybutów do kodu źródłowego, a następnie uruchamiając [narzędzie CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) w zestawie wynikowym, aby wygenerować plik .pkgdef.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Określanie lokalizacji pliku pakietu VSPackage dla powłoki VS Shell](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Opisuje ścieżki ładowania VSPackages.  
+ Opisuje ścieżkę ładowanie pakietów VSPackage.  
   
  [Rejestrowanie i wyrejestrowywanie pakietów VSPackage](../../extensibility/registering-and-unregistering-vspackages.md)  
- Wyjaśniono, jak zarejestrować pakiet VSPackage.  
+ Wyjaśnia, jak zarejestrować pakietu VSPackage.  

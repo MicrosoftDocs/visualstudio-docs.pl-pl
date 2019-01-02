@@ -2,7 +2,6 @@
 title: Wyświetlanie pamięci dla zmiennych w debugerze | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837228"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Używanie okien pamięci w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 

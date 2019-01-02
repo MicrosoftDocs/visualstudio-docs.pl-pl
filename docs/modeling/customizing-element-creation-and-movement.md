@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821044"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 
@@ -91,7 +90,7 @@ Użytkownicy mogą również wkleić elementy do innych elementów.
 
    1.  W **Eksplorator DSL**, rozwiń węzeł **klasami domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` a następnie kliknij przycisk **Dodaj nowe dyrektywa scalania elementów**.
 
-   2.  Upewnij się, że **szczegóły języka DSL** okno jest otwarte, tak aby widoczne szczegółowe informacje o nowych EMD. (Menu: **widoku**, **innych Windows**, **szczegóły języka DSL**.)
+   2.  Upewnij się, że **szczegóły języka DSL** okno jest otwarte, tak aby widoczne szczegółowe informacje o nowych EMD. (Menu: **Wyświetl**, **innych Windows**, **szczegóły języka DSL**.)
 
 3. Ustaw **klasa indeksowania** w oknie Szczegóły języka DSL w celu zdefiniowania, jakie klasy elementy mogą zostać scalone na `ExampleElement` obiektów.
 
@@ -145,7 +144,7 @@ Zwróć uwagę następujące kwestie z tej procedury:
 
      Jeśli piszesz kod niestandardowy, który tworzy nowe elementy, możesz jawnie wywołać EMD przy użyciu `ElementOperations.Merge` metody. Dzięki temu kod łączy nowych elementów do modelu w taki sam sposób jak inne operacje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Przykład: Dodanie kodu akceptowanie niestandardowe do EMD
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Przykład: Dodawanie kodu EMD akceptowanie niestandardowe
 
 Dodając kod niestandardowy do EMD, można zdefiniować bardziej złożone zachowanie scalania. Ten prosty przykład uniemożliwia użytkownikowi dodanie więcej niż określoną liczbę elementów do diagramu. Przykład modyfikuje domyślne EMD, który towarzyszy relacji osadzania.
 
@@ -208,7 +207,7 @@ Dodając kod niestandardowy do EMD, można zdefiniować bardziej złożone zacho
 
     3.  Sprawdź, że nie można użyć dowolnej z następujących sposobów, aby dodać więcej niż cztery elementy w modelu. Jest to spowodowane wszystkich używają dyrektywa scalania.
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Przykład: Dodanie scalania niestandardowego kodu do EMD
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Przykład: Dodawanie kodu niestandardowego scalania do EMD
 
 W kodzie scalania niestandardowego można zdefiniować, co się dzieje, gdy użytkownik przeciągnie narzędzia lub wkleja na element. Istnieją dwa sposoby, aby zdefiniować niestandardowy scalania:
 

@@ -2,7 +2,6 @@
 title: Ustaw Radix — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setradix
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c18d825ae61dd80ab7b72e1e14c7dc3412582317
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93172b8ed16e2520c060671d12ef0ab35960f6ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829411"
 ---
 # <a name="set-radix-command"></a>Ustaw Radix — Polecenie
-Ustawia lub zwraca base liczbowego, używany do wyświetlania wartości będące liczbami całkowitymi.
+Ustawia lub zwraca base numeryczne, używany do wyświetlania wartości całkowitych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,10 +33,10 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>Argumenty
  `10` lub `16` lub `hex` lub `dec`
 
- Opcjonalna. Wskazuje dziesiętna (10 lub gru) lub liczba szesnastkowa (16 lub szesnastkowych). Jeśli argument zostanie pominięty, zwracany jest bieżąca wartość Podstawa.
+ Opcjonalna. Wskazuje dziesiętne (10 lub gru) lub liczba szesnastkowa (16 lub szesnastkowych). Jeśli argument jest pominięty, zwracany jest bieżąca wartość podstawy.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie środowiska do wyświetlenia w formacie szesnastkowym wartości będące liczbami całkowitymi.
+ W tym przykładzie środowiska, aby wyświetlić wartości całkowite w formacie szesnastkowym.
 
 ```cmd
 >Debug.SetRadix hex
@@ -47,5 +46,5 @@ Debug.SetRadix [10 | 16 | hex | dec]
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

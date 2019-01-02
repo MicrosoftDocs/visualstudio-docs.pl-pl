@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Rejestrowanie typów plików edytora | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Rejestrowanie typów plików edytora | Dokumentacja firmy Microsoft'
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
@@ -12,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857805"
 ---
-# <a name="how-to-register-editor-file-types"></a>Porady: rejestrowanie Edytor typów plików
+# <a name="how-to-register-editor-file-types"></a>Instrukcje: Zarejestruj Edytor typów plików
 Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atrybutów rejestracji w ramach [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] zarządzanych klas framework (MPF) pakietu. W przypadku wdrażania pakietu w trybie macierzystym [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], można także napisać skrypt rejestru, który rejestruje edytora i rozszerzenia skojarzone.
 
 ## <a name="registration-using-mpf-classes"></a>Rejestracja przy użyciu klas MPF

@@ -2,25 +2,24 @@
 title: Pisanie testów jednostkowych dla bibliotek DLL języka C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7de21715053a91b187ccdcc1b87f042cedd1b7de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832453"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Pisanie testów jednostkowych dla bibliotek DLL C++ w programie Visual Studio
 
  Istnieje kilka sposobów, aby przetestować kod biblioteki DLL, w zależności od tego, czy eksportuje ona funkcje, które mają zostać przetestowane. Wybierz jedną z następujących sposobów:
 
- **Testy jednostek wywołania tylko funkcje, które są eksportowane z biblioteki DLL:** Dodaj osobny projekt testów, zgodnie z opisem w [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md). W projekcie testowym Dodaj odwołanie do projektu biblioteki DLL.
+ **Testy jednostkowe wywołać tylko funkcje, które są eksportowane z biblioteki DLL:** Dodaj osobny projekt testów, zgodnie z opisem w [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md). W projekcie testowym Dodaj odwołanie do projektu biblioteki DLL.
 
  Przejdź do procedury [można odwoływać się do eksportowanych funkcji z projektu DLL](#projectRef).
 
@@ -28,13 +27,13 @@ ms.locfileid: "53056178"
 
  Przejdź do procedury [połączyć testy z plikami obiektu lub biblioteki](#objectRef).
 
- **Funkcje nieczłonkowskie wywołanie testy jednostki, które nie są eksportowane z biblioteki DLL i biblioteką DLL może być kompilowany jako biblioteka statyczna:** zmiany projektu biblioteki DLL, tak aby był skompilowany do *.lib* pliku. Dodaj osobny projekt testów, który odwołuje się do testowanego projektu.
+ **Funkcje nieczłonkowskie wywołanie testy jednostki, które nie są eksportowane z biblioteki DLL i biblioteką DLL może być kompilowany jako biblioteka statyczna:** Zmień projekt DLL tak, aby był skompilowany do *.lib* pliku. Dodaj osobny projekt testów, który odwołuje się do testowanego projektu.
 
  Takie podejście ma tę zaletę umożliwia testom używać członkowie wyeksportowane, ale nadal utrzymuje testy w osobnym projekcie.
 
  Przejdź do procedury [zmienić bibliotekę DLL do biblioteki statycznej](#staticLink).
 
- **Testy jednostkowe muszą wywoływać funkcje nieczłonkowskie, które nie są eksportowane i kod musi być kompilowany jako biblioteka dołączana dynamicznie (DLL):** dodać testy jednostkowe w tym samym projekcie, co kod produktu.
+ **Testy jednostkowe muszą wywoływać funkcje nieczłonkowskie, które nie są eksportowane, a kod musi być kompilowany jako biblioteka dołączana dynamicznie (DLL):** Dodawanie testów jednostkowych w tym samym projekcie, co kod produktu.
 
  Przejdź do procedury [Aby dodać testy jednostkowe w tym samym projekcie](#sameProject).
 
@@ -158,6 +157,6 @@ ms.locfileid: "53056178"
 - [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
 - [Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-- [Wskazówki: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importowanie i eksportowanie](/cpp/build/importing-and-exporting)
-- [Szybki start: testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)

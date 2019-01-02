@@ -1,8 +1,6 @@
 ---
-title: Cvreleasemarkerseries — funkcja | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Funkcja CvReleaseMarkerSeries | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvReleaseMarkerSeries
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c5bbc5d47972a4829c4e46f6aafdcf8ee76fad
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 60394b799c2468d45818fa07d876dde2a651467d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822545"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Cvreleasemarkerseries — funkcja
-Zwalnia serii znacznika. Nie używaj obiekt serii znacznika po inaczej wydanie aplikacji mogą ulec awarii. Błąd zwolnienia serii znacznika spowoduje przeciek pamięci.  
+Zwalnia znaczników serii. Nie używaj znaczników serii obiektu po zwalniania w przeciwnym razie aplikacja może ulec awarii. Nie można zwolnić znaczników serii powoduje, że przeciek pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +32,13 @@ HRESULT CvReleaseMarkerSeries(
   
 #### <a name="parameters"></a>Parametry  
  `pMarkerSeries`  
- Adres zmiennej obiektu dostawcy. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.  
+ Adres dostawcy zmiennej obiektu. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK pomyślnie zwolnieniu serii znacznika lub kod błędu w przypadku zostały wszystkie błędy. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
+ S_OK znaczników serii jest pomyślnie zwolnione lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

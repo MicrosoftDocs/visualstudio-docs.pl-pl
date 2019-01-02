@@ -1,9 +1,6 @@
 ---
 title: IDebugPropertyDestroyEvent2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyDestroyEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5ae38bf190a88b91e61971b724893f35c652785
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b8f044b3600e3c6d0b673223751468d5a63075d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846558"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
-Ten interfejs jest wysyłane przez aparat debugowania (DE) z menedżerem sesji debugowania (SDM) ma zostać zniszczone właściwość, która jest skojarzona z określonego dokumentu.  
+Ten interfejs jest wysyłane przez aparat debugowania (DE) do Menedżer debugowania sesji (SDM) ma zostać zniszczone właściwość, która jest skojarzona z określonym dokumentem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,30 +29,30 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Niemcy implementuje ten interfejs do raportowania, że właściwość został zlikwidowany. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](/cpp/atl/queryinterface) dostępu `IDebugEvent2` interfejsu. Ten interfejs jest wdrażany, jeśli DE wcześniej utworzył właściwość skojarzony ze skryptem; niszczenie właściwość usuwa skrypt skojarzony z IDE.  
+ DE implementuje ten interfejs do zgłaszania właściwość została zniszczona. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](/cpp/atl/queryinterface) dostęp do `IDebugEvent2` interfejsu. Ten interfejs jest implementowany, jeśli DE została wcześniej utworzona właściwość skojarzony ze skryptem; niszczenie właściwość usuwa skryptów skojarzonych z poziomu środowiska IDE.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Niemcy tworzy i wysyła do raportu, który został zniszczony właściwości tego obiektu zdarzenia. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcja wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
+ DE tworzy i wysyła tego obiektu zdarzenia do raportu, którego właściwość została zniszczona. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugPropertyDestroyEvent2`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Pobiera właściwości mają zostać zniszczone.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Pobiera właściwości, które mają zostać zniszczone.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zobacz uwagi dla [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) szczegółowe informacje o tym, dlaczego te zdarzenia są używane.  
+ Zobacz uwagi, na [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) Aby uzyskać szczegółowe informacje o tym, dlaczego korzysta z tych zdarzeń.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

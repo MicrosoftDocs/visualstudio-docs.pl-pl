@@ -1,8 +1,6 @@
 ---
-title: Odświeżanie aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Odśwież aplikację platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,35 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a45564f34fe0167821febb511a023c01f7c38358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 43f232157ef9237ba9d401f473ab0db1b1260f40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828726"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>Odśwież w aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Odświeżanie aplikacji platformy UWP w programie Visual Studio
   
- Można wprowadzić zmiany w kodzie podczas debugowania kodu, a następnie Odśwież aplikacji platformy uniwersalnej systemu Windows, przy użyciu języka JavaScript, wybierając **aplikacji odświeżania systemu Windows** znajdującego się na **debugowania** paska narzędzi. Wybranie tego przycisku ponowne załadowanie aplikacji bez zatrzymania i ponownego uruchomienia debugera. Funkcja odświeżania umożliwia modyfikowanie kodu HTML, CSS i JavaScript i szybko wyświetlić wyniki. Ta funkcja jest obsługiwana w przypadku aplikacji platformy uniwersalnej systemu Windows.  
+ Można wprowadzić zmiany do kodu podczas debugowania, a następnie Odśwież aplikację platformy UWP przy użyciu języka JavaScript, wybierając **aplikacji Windows Odśwież** znajdujący się na **debugowania** paska narzędzi. Wybranie tego przycisku ponownie ładuje aplikację bez zatrzymywania i ponownego uruchamiania debugera. Funkcja odświeżania umożliwia modyfikowanie kodu HTML, CSS i JavaScript i szybko wyświetlić wyniki. Ta funkcja jest obsługiwana dla aplikacji platformy uniwersalnej systemu Windows.  
   
- Odświeżanie nie zarządzania stanem Twojej aplikacji lub uwzględnić następujące zmiany do swojej aplikacji:  
+ Odświeżanie nie zarządzania stanem swojej aplikacji lub uwzględnić następujące zmiany w aplikacji:  
   
--   Zmiany pliku manifestu pakietu, w tym zmian do obrazów, określona w manifeście pakietu.  
+-   Zmiany pliku manifestu pakietu, w tym zmiany w manifeście pakietu obrazów.  
   
--   Odwołanie zmiany, takie jak dodanie lub usunięcie odwołania do zestawu SDK lub zmiana składników środowiska wykonawczego systemu Windows (plików winmd).  
+-   Odwołanie zmiany, takie jak dodawanie lub usuwanie odwołania zestawu SDK lub zmiana składników środowiska wykonawczego Windows (winmd).  
   
--   Zmiany zasobów, takie jak zmiany do ciągów w plikach .resjson.  
+-   Zmiany zasobów, takich jak zmiany na ciągi w plikach .resjson.  
   
--   Zmiany pliku projektu, które powodują zmiany nazwy ścieżki, nowe pliki projektu lub usuniętych plików.  
+-   Zmiany pliku projektu, które powodują zmiany nazwy ścieżki, nowe pliki projektu lub usunięte pliki.  
   
--   Zmiany właściwości projektu i elementu, takie jak zmiany na wybranym urządzeniu debugowania lub zmian do pakietu akcji dla plików (w oknie właściwości).  
+-   Zmiany właściwości projektów i elementów, takich jak zmiany na wybranym urządzeniu debugowania lub zmiany Akcja pakietu dla pliku (w oknie dialogowym Właściwości).  
   
 > [!IMPORTANT]
->  Podczas zmiany odwołań, zmień manifest pakietu lub wprowadzić inne zmiany określone w powyższej listy należy zatrzymać i ponownie uruchomić debugera do aktualizacji plików źródłowych HTML, CSS i JavaScript.  
+>  Podczas zmiany odwołania, zmień manifest pakietu lub wprowadzić inne zmiany, określone w powyższej liście musisz zatrzymać i ponownie uruchomić debugera, aby zaktualizować pliki źródłowe HTML, CSS i JavaScript.  
   
-### <a name="to-refresh-an-app"></a>Aby odświeżyć aplikacji  
+### <a name="to-refresh-an-app"></a>Aby odświeżyć aplikację  
   
-1.  Z projektu platformy uniwersalnej systemu Windows otwórz w programie Visual Studio, wybierz **komputera lokalnego** jako cel debugowania.
+1.  Otwórz w programie Visual Studio projekt platformy uniwersalnej systemu Windows wybierz **komputera lokalnego** jako cel debugowania.
   
      ![Wybierz opcję debugowania listy docelowej](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -56,11 +54,11 @@ ms.locfileid: "31476283"
   
 4.  Przełącz się do programu Visual Studio. 
   
-5.  Na stronie głównej aplikacji platformy uniwersalnej systemu Windows edycji niektórych kodu HTML.
+5.  Na stronie głównej aplikacji platformy uniwersalnej systemu Windows należy edytować część HTML.
   
-7.  Kliknij przycisk **aplikacji odświeżania systemu Windows** przycisku, który wygląda podobnie do następującej: ![przycisk aplikacji odświeżania systemu Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Lub naciśnij klawisz F4.)  
+7.  Kliknij przycisk **aplikacji Windows Odśwież** przycisku, który wygląda następująco: ![Odśwież aplikację Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Lub naciśnij klawisz F4).  
   
-8.  Przełącz się do aplikacji. Aplikacja zostanie ponownie załadowana i zaktualizowane HTML używany do renderowania aplikacji.
+8.  Przełącz się do aplikacji. Aplikacja zostanie ponownie załadowana i zaktualizowane HTML jest używany do renderowania aplikacji.
   
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

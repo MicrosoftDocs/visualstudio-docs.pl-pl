@@ -1,9 +1,6 @@
 ---
-title: Witryna sieci Web pomocy technicznej | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Obsługa witryny sieci Web | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
@@ -13,31 +10,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3da310c6695598eef36998cc562f6d477eff29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83e7cb983ec850c0efc9d22f1dd6458c71bcdcb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824772"
 ---
-# <a name="web-site-support"></a>Witryna sieci Web pomocy technicznej
-System projektu witryny sieci Web to system projektu, który tworzy projekty sieci Web. Projekty sieci Web z kolei tworzenie aplikacji sieci Web. Projekt witryny sieci Web generuje jednego pliku wykonywalnego dla każdej strony sieci Web, który jest skojarzony kod. Dodatkowe pliki wykonywalne zostaną wygenerowane na podstawie plików kodu źródłowego w folderze /App_Code.  
+# <a name="web-site-support"></a>Pomoc techniczna dotycząca witryny internetowej
+System projektu witryny sieci Web jest system projektu, który tworzy projektów sieci Web. Projekty sieci Web z kolei tworzyć aplikacje sieci Web. Projekt witryny sieci Web wygenerowanie jednego pliku wykonywalnego, dla każdej strony sieci Web, który jest skojarzony kod. Dodatkowe pliki wykonywalne są generowane na podstawie plików kodu źródłowego w folderze /App_Code.  
   
- Systemy projektu witryny sieci Web są tworzone przez dodanie szablony i atrybuty rejestracji w istniejącym systemie projektu. Wybiera jeden z tych atrybutów dostawcy IntelliSense dla języka. Implementacja dostawcy IntelliSense obsługuje odwołania i wywołuje kompilatora języka zleconą inteligentne strony sieci Web, które nie są buforowane.  
+ Systemy projektu witryny sieci Web są tworzone przez dodanie szablony i atrybuty rejestracji w istniejącym systemie projektu. Wybiera jeden z tych atrybutów dostawcy funkcji IntelliSense dla języka. Implementacja dostawcy IntelliSense obsługuje odwołania i wywołuje kompilator języka zleconą inteligentne strony sieci Web, która nie jest buforowana.  
   
- Kompilator języka używana do kompilowania strony sieci Web musi być zarejestrowana w [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Można użyć [ \<kompilatora > elementu](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) w pliku Web.config, aby zarejestrować kompilatora, jak w poniższym przykładzie:  
+ Kompilator języka używany do kompilowania stron sieci Web muszą być zarejestrowane w usłudze [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Możesz użyć [ \<kompilatora > Element](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) w pliku Web.config, aby zarejestrować kompilatora, jak w poniższym przykładzie:  
   
 ```  
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Szablony pomocy technicznej dotyczącej witryn internetowych](../../extensibility/internals/web-site-support-templates.md)  
- Wyświetla listę szablonów, które służą do tworzenia nowych projektów witryny sieci Web i skojarzone elementy.  
+ Wyświetla listę szablonów, które służy do tworzenia nowych projektów witryny sieci Web i skojarzone elementy.  
   
  [Atrybuty pomocy technicznej dotyczącej witryn internetowych](../../extensibility/internals/web-site-support-attributes.md)  
- Przedstawia informacje o atrybuty rejestracji połączyć projekt witryny sieci Web, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
+ Przedstawia informacje o atrybuty rejestracji, które łączą się z projektu witryny sieci Web, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Projekty internetowe](../../extensibility/internals/web-projects.md)  
- Zawiera omówienie programu dwa rodzaje projektów sieci Web, projektów witryny sieci Web i projekty aplikacji sieci Web.
+ Przedstawia omówienie dwa rodzaje projektów sieci Web, witryny sieci Web, projektów i projektów aplikacji sieci Web.

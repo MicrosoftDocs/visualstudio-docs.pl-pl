@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e85860de7494ae7d93ad37bd0a115fa786f0a87
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 73e3443c5af145934de15f674213ea5bd01384d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951670"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Właściwość \<nazwa właściwości > nie można usunąć
 

@@ -1,9 +1,6 @@
 ---
 title: DUMPTYPE | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DUMPTYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 327b0e2dde4826682be2ffbd907c97369e1586e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952141"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Określa, ile stanu programu (np. uruchamianie wątków, ramek stosu i bieżący adres instrukcji) zrzutu.  
@@ -28,7 +25,7 @@ Określa, ile stanu programu (np. uruchamianie wątków, ramek stosu i bieżący
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-enum enum_DUMPTYPE {   
+enum enum_DUMPTYPE {   
    DUMP_MINIDUMP = 0,  
    DUMP_FULLDUMP = 1  
 };  
@@ -36,7 +33,7 @@ typedef DWORD DUMPTYPE;
 ```  
   
 ```csharp  
-public enum enum_DUMPTYPE {   
+public enum enum_DUMPTYPE {   
    DUMP_MINIDUMP = 0,  
    DUMP_FULLDUMP = 1  
 };  
@@ -55,9 +52,9 @@ public enum enum_DUMPTYPE {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

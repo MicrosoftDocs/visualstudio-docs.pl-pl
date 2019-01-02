@@ -1,13 +1,8 @@
 ---
 title: 'Przewodnik: Wdrażanie definicji listy zadań projektu | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826627"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Przewodnik: Wdrażanie definicji listy zadań projektu
 
@@ -87,7 +82,7 @@ Na liście zadań, można dodać odbiorcy zdarzeń, która automatycznie ustawia
 
 Podczas tworzenia rozwiązania programu SharePoint, programu Visual Studio automatycznie tworzy funkcje domyślne elementów projektu. Za pomocą projektanta funkcji można dostosować ustawienia listy zadań projektu witryny programu SharePoint.
 
-1. W **Eksploratora rozwiązań**, rozwiń węzeł **funkcji**.
+1. W **Eksploratorze rozwiązań** rozwiń węzeł **Funkcje**.
 
 2. Otwórz menu skrótów dla **Feature1**, a następnie wybierz **Projektant widoków**.
 
@@ -143,7 +138,7 @@ Po utworzeniu i przetestowaniu listy zadań projektu, można wdrożyć do *syste
 
 Na pasku menu programu Visual Studio, wybierz **kompilacji** > **wdrożyć rozwiązanie**.
 
-Program Visual Studio odtwarzania puli aplikacji usług IIS, wycofuje wszystkie wersje istniejącego rozwiązania, kopiuje pakietu rozwiązania (*WSP*) pliku do programu SharePoint, a następnie aktywuje jego funkcji. Można teraz używać rozwiązania w programie SharePoint. Aby uzyskać więcej informacji na temat wdrażania, czynności konfiguracyjne, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Program Visual Studio odtwarzania puli aplikacji usług IIS, wycofuje wszystkie wersje istniejącego rozwiązania, kopiuje pakietu rozwiązania (*WSP*) pliku do programu SharePoint, a następnie aktywuje jego funkcji. Można teraz używać rozwiązania w programie SharePoint. Aby uzyskać więcej informacji na temat wdrażania, czynności konfiguracyjne, zobacz [jak: Edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Aby wdrożyć projekt listy zadań do systemu zdalnego
 
@@ -175,7 +170,7 @@ Możesz dowiedzieć się więcej na temat sposobu dostosowywania i wdrażania ro
 
 - [Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
+- [Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Program Windows PowerShell dla programu SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 

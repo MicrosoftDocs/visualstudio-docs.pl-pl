@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 48000bbf05fd15163c0c6f61ff4a13838aaf75b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2627fcb19933d21021c97323982e03ff361bd36f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834285"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definiowanie kształtów i łączników
 Istnieje kilka typów podstawowych kształtów, które mogą być używane do wyświetlania informacji na diagramie w języku specyficznym dla domeny (DSL).

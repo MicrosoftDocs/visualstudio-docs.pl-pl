@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 8d8b5ac6beb6cfb7b40f3f09fded3fef365652a4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ddbc8a221cd883c3f30a583a1c1f03430c5f00ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825508"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Jak uaktualniać projekty do bieżącej wersji narzędzi platformy Azure dla programu Visual Studio
 ## <a name="overview"></a>Omówienie
@@ -33,7 +32,7 @@ Jeśli projekt zostanie automatycznie uaktualniony lub określ, czy chcesz go ua
 * Jeśli pamięć podręczna systemu Azure jest hostowana w co najmniej jednej z ról projektu, niektóre właściwości w definicji usługi (plik csdef) i usługi konfiguracji (plik cscfg) są zmieniane, gdy projekt zostanie uaktualniony. Jeśli projekt używa pakietu NuGet usługi pamięć podręczna Azure, projekt jest uaktualniony do najnowszej wersji pakietu. Należy otworzyć plik web.config i sprawdź, czy konfiguracja klienta została zachowana poprawnie podczas procesu uaktualniania. Jeśli dodano odwołania do zestawów klienta pamięci podręcznej systemu Azure bez przy użyciu pakietu NuGet, te zestawy nie będą aktualizowane; należy ręcznie zaktualizować te odwołania do nowych wersji.
 
 > [!IMPORTANT]
-> Dla projektów F # należy ręcznie zaktualizować odwołania do zestawów platformy Azure, dlatego, że odwołują się do nowszych wersji te zestawy.
+> Aby uzyskać F# projektów, należy ręcznie zaktualizować odwołania do zestawów platformy Azure, dlatego, że odwołują się do nowszych wersji te zestawy.
 > 
 > 
 
@@ -44,4 +43,3 @@ Jeśli projekt zostanie automatycznie uaktualniony lub określ, czy chcesz go ua
     **Aplikacji** karta przedstawia wersja narzędzi, który jest skojarzony z projektem. Jeśli pojawi się bieżącą wersję narzędzia platformy Azure, projekt został już uaktualniony. Jeśli została zainstalowana nowsza wersja narzędzi niż pokazuje, jakie karty, **uaktualnienia** pojawi się przycisk.
 3. Wybierz **uaktualnienia** przycisk, aby uaktualnić projekt do bieżącej wersji narzędzia.
 4. Skompiluj projekt, a następnie adresować wszelkie błędy powstałe w wyniku zmiany interfejsu API. Aby dowiedzieć się, jak zmodyfikować kod do nowej wersji zobacz dokumentację dla określonego interfejsu API.
-

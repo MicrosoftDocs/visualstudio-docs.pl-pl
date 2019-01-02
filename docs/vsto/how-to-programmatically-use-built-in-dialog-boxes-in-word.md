@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane używanie wbudowanych okien dialogowych w programie Word'
-ms.custom: ''
+title: 'Instrukcje: Programowe używanie wbudowanych okien dialogowych w programie Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829066"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Porady: programowane używanie wbudowanych okien dialogowych w programie Word
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Instrukcje: Programowe używanie wbudowanych okien dialogowych w programie Word
   Podczas pracy z programu Microsoft Office Word, istnieją razy, gdy zachodzi potrzeba wyświetlanie okien dialogowych na dane wejściowe użytkownika. Mimo że można tworzyć własne, można także podejścia użycia wbudowanych okien dialogowych w programie Word, które są widoczne w <xref:Microsoft.Office.Interop.Word.Dialogs> zbiór <xref:Microsoft.Office.Interop.Word.Application> obiektu. Umożliwia dostęp do ponad 200 wbudowanych okien dialogowych, które są reprezentowane jako wyliczenia.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35676940"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane używanie okien dialogowych programu Word w trybie ukrytym](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Instrukcje: Programowe używanie okien dialogowych programu Word w trybie ukrytym](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Option strict — instrukcja](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Odbicie (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Odbicie (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

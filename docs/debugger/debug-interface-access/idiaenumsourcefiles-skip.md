@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsourcefiles::SKIP — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e517f03a13debfd13dacfe92b4bb08bfddc727
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5710bcd8cd19b861d90dad47855ad91c6129e4bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837306"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 Pomija określoną liczbę plików źródłowych w kolejności wyliczenia.  
@@ -27,7 +25,7 @@ Pomija określoną liczbę plików źródłowych w kolejności wyliczenia.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

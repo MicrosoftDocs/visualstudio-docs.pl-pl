@@ -1,8 +1,6 @@
 ---
-title: 'Edytuj i Kontynuuj nie są obsługiwane w F # | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Edytuj i Kontynuuj nie obsługiwanie dla F# | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b945f92caa531e4de020f6cd07555b055aef287
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 856940231e65932b208c83bf4ff1231395b04382
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838076"
 ---
 # <a name="edit-and-continue-not-supported-for-f"></a>Opcje edytuj i kontynuuj nie są obsługiwane w F# #
-Edytuj i Kontynuuj nie jest obsługiwana podczas debugowania kodu języka F #. Zmian w kodzie języka F # są możliwe w podczas sesji debugowania, ale należy unikać. Zmiany kodu nie są stosowane podczas sesji debugowania. W związku z tym wszelkie zmiany wprowadzone w kodzie języka F # podczas debugowania spowoduje kod źródłowy, który nie jest zgodny z kodem debugowany.
+Edytuj i Kontynuuj nie jest obsługiwana podczas debugowania F# kodu. Edytuje F# kodu są możliwe podczas sesji debugowania, ale należy unikać. Zmiany w kodzie nie są stosowane podczas sesji debugowania. W związku z tym, wszelkie zmiany wprowadzone do F# spowoduje kodu podczas debugowania kodu źródłowego, który nie jest zgodny z debugowany kod.

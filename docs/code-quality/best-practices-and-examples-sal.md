@@ -2,19 +2,18 @@
 title: Najlepsze praktyki i przykłady (SAL)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51d9526cb9778dd7f4fde61cca5667c7eaece2f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959199"
 ---
 # <a name="best-practices-and-examples-sal"></a>Najlepsze praktyki i przykłady (SAL)
 Oto kilka sposobów, aby wykorzystać poza języka adnotacji kodu źródłowego (SAL) i uniknąć niektórych typowych problemów.

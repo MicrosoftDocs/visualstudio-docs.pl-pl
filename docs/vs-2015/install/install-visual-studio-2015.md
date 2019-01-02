@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828059"
 ---
 # <a name="install-visual-studio-2015"></a>Instalowanie programu Visual Studio 2015
 
@@ -43,10 +42,10 @@ Przed rozpoczęciem omawiania szczegółach poniżej przedstawiono listę nasze 
 |||
 |------------------|----------------|
 |![Pobierz program Visual Studio](../install/media/downloads.png "pliki do pobrania") |**Pliki do pobrania**: Aby zainstalować program Visual Studio 2015, możesz pobrać plik wykonywalny produktu z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) strony (wymagana jest subskrypcja) lub użyć nośnika instalacyjnego z produktu w ramce. [Dowiedz się więcej na temat sposobu pobierania bieżącej lub poprzedniej wersji programu Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
-|![Dowiedz się więcej na temat funkcji](../install/media/features.png "funkcji") |**Funkcje**: Aby dowiedzieć się więcej na temat funkcji w programie Visual Studio 2015, zobacz informacje o wersji dla [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), i [ Z aktualizacją 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
+|![Dowiedz się więcej na temat funkcji](../install/media/features.png "funkcji") |**Funkcje**: Aby dowiedzieć się więcej na temat funkcji w programie Visual Studio 2015, zobacz informacje o wersji dla [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), i [Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
 |![Dowiedz się, co znajduje się w każdej jednostki SKU](../install/media/sku.png "jednostki SKU") |**Jednostki SKU**: Aby dowiedzieć się, co jest dostępne w poszczególnych wydaniach programu Visual Studio 2015, zobacz nasze [porównanie ofert programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142) strony.|
 |![Wyświetl wymagania systemowe](../install/media/system-requirements.png "wymagania systemowe") |**Wymagania systemowe**: Aby wyświetlić wymagania systemowe dla każdej wersji programu Visual Studio 2015, zobacz [zgodność programu Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) strony.|
-|![Znajdź klucz produktu](../install/media/product-keys.png "klucze produktów") |**Klucze produktów**: Aby znaleźć klucz produktu, zobacz [jak: Znajdź Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) tematu.|
+|![Znajdź klucz produktu](../install/media/product-keys.png "klucze produktów") |**Klucze produktów**: Aby zlokalizować klucz produktu, zobacz [jak: Znajdź Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) tematu.|
 |![Tutaj znajdziesz informacje dotyczące licencjonowania](../install/media/licensing.png "licencjonowania") |**Licencjonowanie**: Aby dowiedzieć się o licencjonowaniu opcje zarówno użytkowników indywidualnych, jak i klientów korporacyjnych, zobacz [programu Visual Studio i MSDN — Licencjonowanie](https://www.microsoft.com/download/details.aspx?id=13350) oficjalny dokument.|
 
 ##  <a name="custom"></a> Domyślne programu vs. Instalacja niestandardowa
@@ -112,7 +111,7 @@ Przed rozpoczęciem omawiania szczegółach poniżej przedstawiono listę nasze 
 
  Jeśli uruchamiasz system Windows Server 2008 R2 z włączoną funkcją Hyper-V oraz akcelerowaną kartą grafiki, może wystąpić spowolnienie systemu.
 
- Aby uzyskać więcej informacji, zobacz następującą stronę w witrynie internetowej firmy Microsoft: [wydajność wideo może zmniejszyć, gdy system Windows Server 2008 lub Windows Server 2008 R2, na podstawie komputer ma włączoną rolę funkcji Hyper-V i zainstalowaną akcelerowaną kartę](http://go.microsoft.com/fwlink/?LinkID=231084).
+ Aby uzyskać więcej informacji zobacz następującą stronę w witrynie internetowej firmy Microsoft: [Wydajność wideo może zmniejszyć, gdy system Windows Server 2008 lub Windows Server 2008 R2, na podstawie komputer ma włączoną rolę funkcji Hyper-V i zainstalowaną akcelerowaną kartę](http://go.microsoft.com/fwlink/?LinkID=231084).
 
  **Emulacja urządzeń za pomocą funkcji Hyper-V**
 

@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823652"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Wskazówki: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Przewodnik: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych
   W tym instruktażu przedstawiono tworzenie relacji wzorzec/szczegół w arkuszu, a buforowanie danych, dzięki czemu rozwiązanie może służyć w trybie offline.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933160"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1. Utwórz projektu skoroszytu programu Excel o nazwie **Moje wzorzec / szczegół**, za pomocą języka Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Utwórz projektu skoroszytu programu Excel o nazwie **Moje wzorzec / szczegół**, za pomocą języka Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje wzorzec / szczegół** projekt **Eksploratora rozwiązań**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933160"
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
  [Dane w pamięci podręcznej](../vsto/caching-data.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Idiasession::findsymbolbyva — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46304a95f6e7b42c65d19a1e7bfd51fc1d2ff171
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ade9b7ed62bc52ab3bbf085921acf421605f067c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847064"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu wirtualnego.  
@@ -27,7 +25,7 @@ Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do 
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT findSymbolByVA (   
+HRESULT findSymbolByVA (   
    ULONGLONG    va,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol  

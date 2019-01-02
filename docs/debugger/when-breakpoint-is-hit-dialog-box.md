@@ -1,8 +1,6 @@
 ---
-title: Po osiągnięciu punktu przerwania — okno dialogowe trafień | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Gdy punkt przerwania jest okno dialogowe trafień | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.whenbreakpointishit
@@ -19,25 +17,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2d0940764e64f9179eb8346c271afa6136b72f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 560a79892ee50f3d151971f46bcc2c2b7f205d3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845619"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Okno dialogowe wyświetlane po osiągnięciu punktu przerwania
-Za pomocą tego okna dialogowego można dostosowywać akcję, która występuje, gdy punkt przerwania zostaje trafiony.  
+Z tego okna dialogowego, można dostosować akcję wykonywaną po trafieniu punktu przerwania.  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
- **Drukowanie wiadomości**  
- Drukuje wiadomości, przy użyciu składni DebuggerDisplay. Aby uzyskać więcej informacji, zobacz [za pomocą atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+ **Wydrukuj komunikat**  
+ Drukuje wiadomość, używając składni DebuggerDisplay. Aby uzyskać więcej informacji, zobacz [korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
- To pole tekstowe obsługuje również specjalnych słów kluczowych (na przykład $ADDRESS), które mogą być używane samodzielnie lub w nawiasy klamrowe DebuggerDisplay wyrażenia. Słowa kluczowe dostępne są wyświetlane w oknie dialogowym.  
+ To pole tekstowe obsługuje także słowa kluczowe (takie jak $ADDRESS), które mogą być używane samodzielnie lub w obrębie nawiasów klamrowych DebuggerDisplay wyrażenia. Dostępne słowa kluczowe są wyświetlane w oknie dialogowym.  
   
- **Kontynuować wykonywania**  
- Ten formant jest włączona tylko wtedy, gdy **Drukuj komunikat** jest zaznaczone. Z tym formantem wybrany punkt przerwania jako śledzenia służy do śledzenia sieci wykonania programu, zamiast przerywanie, gdy zostaje trafiony lokalizacji.  
+ **Kontynuuj wykonywanie**  
+ Ta kontrolka jest włączona tylko wtedy, gdy **wydrukuj komunikat** jest zaznaczone. Ten formant jest zaznaczony punkt przerwania można użyć jako punkt śledzenia, śledzenie wykonywania programu, zamiast przerywanie, gdy zostanie osiągnięty jako lokalizację.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)   
- [Za pomocą atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+ [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

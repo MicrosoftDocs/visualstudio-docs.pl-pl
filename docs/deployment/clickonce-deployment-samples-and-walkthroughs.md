@@ -1,8 +1,6 @@
 ---
 title: Wskazówki i przykłady wdrażania ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc171010e1616ebe1fdf2d89397f6c796bf2686d
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d5fd8376cbadd2cc576e0ef3d86c25c53ad98530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850644"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Wskazówki i przykłady wdrażania ClickOnce
 Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i instrukcje krok po kroku instruktaży, które ilustrują składni, struktury i techniki służące do wdrażania Windows Forms, WPF i aplikacji konsoli.

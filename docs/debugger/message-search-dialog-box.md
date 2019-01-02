@@ -1,8 +1,6 @@
 ---
 title: Okno dialogowe Wyszukiwanie komunikatów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
@@ -12,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c125e2659e586d728a18293b9811a4e69743558
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3c1313820ff946499757f8a4240a49d93081e9e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853518"
 ---
 # <a name="message-search-dialog-box"></a>Wyszukiwanie komunikatów — Okno dialogowe
-To okno dialogowe służy do znajdowania i wybierz węzeł dla określonego komunikatu w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, przejść do okna wyświetlania wiadomości. Następnie wybierz pozycję **Znajdź komunikat** z **wyszukiwania** menu.  
+Umożliwia to okno dialogowe Znajdź i wybierz węzeł, aby uzyskać szczegółowy komunikat o błędzie w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do okna widoku komunikatów. Następnie wybierz **Znajdź komunikat** z **wyszukiwania** menu.  
   
  Dostępne są następujące ustawienia:  
   
  **Narzędzia wyszukiwania**  
- Przeciąganie i upuszczanie narzędzie użyć, aby wybrać okno.  
+ Narzędzie przeciągania i upuszczania, używany do wybierania okna.  
   
- **Ukryj Spy ++**  
- Usuwa Spy ++ okno główne i pozostawienie **MessageSearch** okno dialogowe widoczne na innych aplikacji.  
+ **Ukryj narzędzie Spy ++**  
+ Usuwa głównego okna programu Spy ++ i pozostawia **MessageSearch** okno dialogowe widoczne na podstawie innych aplikacji.  
   
- **Dojście**  
+ **uchwyt**  
  Unikatowy identyfikator wiadomości do wyszukania.  
   
  **Typ**  
@@ -40,29 +38,29 @@ To okno dialogowe służy do znajdowania i wybierz węzeł dla określonego komu
  Identyfikator komunikatu do wyszukania.  
   
  **Kierunek wyszukiwania w górę lub w dół**  
- Kierunek początkowy wyszukiwania.  
+ Początkowa kierunek wyszukiwania.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Wyszukiwanie komunikatu w widoku komunikatów](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Wyjaśniono, jak można znaleźć określonego komunikatu w widoku komunikatów.  
+ Wyjaśnia, jak znaleźć szczegółowy komunikat o błędzie w widoku komunikatów.  
   
  [Otwieranie widoku komunikatów w Znajdź okno](../debugger/how-to-open-messages-view-from-find-window.md)  
- Wyjaśniono, jak otwieranie widoku komunikatów w Znajdź okno dialogowe.  
+ Wyjaśnia, jak otwieranie widoku komunikatów w Znajdź okno dialogowe.  
   
  [Widok komunikatów](../debugger/messages-view.md)  
- Wyświetla strumienia komunikatów skojarzony z okno, proces lub wątek.  
+ Przedstawia strumień komunikatu skojarzonego z okna, proces lub wątek.  
   
  [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
+ Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
   
- [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md)  
- Pozwala wybrać wiadomości, które są wyświetlane w widoku komunikatów.  
+ [Opcje komunikatów, okno dialogowe](../debugger/message-options-dialog-box.md)  
+ Używany do wybierania, wiadomości, które są wyświetlane w widoku komunikatów.  
   
- [Okno dialogowe właściwości wiadomości](../debugger/message-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości wybranego w widoku komunikatów wiadomości.  
+ [Właściwości komunikatu, okno dialogowe](../debugger/message-properties-dialog-box.md)  
+ Umożliwia wyświetlenie właściwości wiadomości wybrany w widoku komunikatów.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.
+ Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.

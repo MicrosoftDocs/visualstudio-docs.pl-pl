@@ -1,8 +1,6 @@
 ---
 title: Debugowanie kodu JavaScript przy użyciu konsoli | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840385"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debugowanie kodu JavaScript przy użyciu konsoli w programie Visual Studio
   
@@ -45,7 +43,7 @@ ms.locfileid: "49861829"
 > [!TIP]
 >  Jeśli okno konsoli JavaScript jest zamknięta, wybierz **debugowania**> **Windows** > **konsoli JavaScript** otworzyć go ponownie. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.  
   
- Korzystanie z okna konsoli języka JavaScript, możesz porozmawiać z aplikacji bez zatrzymywania i ponownego uruchamiania debugera. Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md). Aby uzyskać informacje na temat innych debugowanie funkcji, takich jak za pomocą narzędzia DOM Explorer oraz ustawiania punktów przerwania, JavaScript, zobacz [Szybki Start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Korzystanie z okna konsoli języka JavaScript, możesz porozmawiać z aplikacji bez zatrzymywania i ponownego uruchamiania debugera. Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md). Aby uzyskać informacje na temat innych debugowanie funkcji, takich jak za pomocą narzędzia DOM Explorer oraz ustawiania punktów przerwania, JavaScript, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
   
 ##  <a name="InteractiveConsole"></a> Debugowanie przy użyciu okna konsoli języka JavaScript  
  Poniższe kroki umożliwiają utworzenie `FlipView` aplikacji i pokazują, jak interaktywnie debugowanie kodu JavaScript, błąd kodowania.  
@@ -251,11 +249,11 @@ ms.locfileid: "49861829"
  Można również przełączyć kontekst wykonywania za pomocą `cd` polecenie, ale musisz znać nazwę kontekstu wykonywania i odwołania, możesz użyć musi się mieścić w zakresie. **Docelowej** listy zapewnia lepszy dostęp do innych kontekstach wykonywania.   
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md)   
  [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Debugowanie przykładowego kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Szybki Start: Debugowanie HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)   
  [Pomoc techniczna i dostępność](https://visualstudio.microsoft.com/vs/support/)

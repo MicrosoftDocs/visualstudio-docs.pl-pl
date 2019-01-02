@@ -3,19 +3,18 @@ title: Plik reguł zagnieżdżenia Eksploratora rozwiązań
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831157"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Dostosowywanie zagnieżdżania plików w Eksploratorze rozwiązań
 
@@ -136,7 +135,7 @@ Można utworzyć ustawień specyficznych dla rozwiązania i specyficznych dla pr
 
 ![Rozwiązanie i zagnieżdżenia reguły specyficzne dla projektu](media/filenesting_solutionprojectspecific.png)
 
-Ustawienia specyficzne dla rozwiązania i specyficznych dla projektu są połączone z aktywne ustawienia programu Visual Studio. Na przykład może być plikiem puste ustawienia specyficzne dla projektu, ale **Eksploratora rozwiązań** nadal jest zagnieżdżanie plików. Zachowanie zagnieżdżenia pochodzi z ustawienia specyficzne dla rozwiązania lub ustawienia programu Visual Studio. Pierwszeństwo przed scaleniem ustawienia zagnieżdżania plików to: Visual Studio > rozwiązania > Projekt.
+Ustawienia specyficzne dla rozwiązania i specyficznych dla projektu są połączone z aktywne ustawienia programu Visual Studio. Na przykład może być plikiem puste ustawienia specyficzne dla projektu, ale **Eksploratora rozwiązań** nadal jest zagnieżdżanie plików. Zachowanie zagnieżdżenia pochodzi z ustawienia specyficzne dla rozwiązania lub ustawienia programu Visual Studio. Pierwszeństwo przed scaleniem ustawienia zagnieżdżania plików to: Program Visual Studio > rozwiązania > Projekt.
 
 Visual Studio, aby zignorować ustawień specyficznych dla rozwiązania i specyficznych dla projektu, można stwierdzić, nawet jeśli pliki znajdują się na dysku, włączając opcję **ignorowanie ustawień rozwiązania i projektu** w obszarze **narzędzia**  >  **Opcje** > **platformy ASP.NET Core** > **zagnieżdżanie plików**.
 

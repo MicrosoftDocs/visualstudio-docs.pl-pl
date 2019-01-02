@@ -1,9 +1,6 @@
 ---
-title: Język starszej wersji usługi Features1 | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Starszej wersji usługi językowej1 | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
@@ -13,71 +10,71 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c931147d20454a920e20cec61e1f6000a9b043d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0580e9a7482e6de7403de8fca6c6b33fdbaa6ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830449"
 ---
-# <a name="legacy-language-service-features"></a>Funkcje usługi starszej wersji języka
-Usługa języka zarządzanego pakietu framework (MPF) może obsługiwać jeden lub więcej [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcje, takie jak wyróżnianie składni, funkcję IntelliSense i sprawdzanie poprawności punktu przerwania. Każdej funkcji można stosować niezależnie od innych, ale wymaga analizatora składni i skaner z wyjątkiem wyróżnianie składni, które wymaga tylko skanera.  
+# <a name="legacy-language-service-features"></a>Funkcje usługi starszego języka
+Usługa języka zarządzanego pakietu framework (MPF) może obsługiwać co najmniej jeden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji, takich jak wyróżnianie składni, funkcję IntelliSense i weryfikacji punktu przerwania. Poszczególne funkcje można zaimplementować niezależna od innych, ale wymaga analizator i skaner z wyjątkiem wyróżniania składni, która wymaga tylko skaner.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane do obsługi języka pary dopasowania, znanej także jako parowanie nawiasów klamrowych.  
+ W tym artykule opisano, co jest wymagane do obsługi języka pary dopasowanie, znany także jako parowanie nawiasów klamrowych.  
   
  [Komentowanie kodu w starszej wersji usługi językowej](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane do obsługi komentowania i usunięcie komentarza zaznaczonego kodu.  
+ W tym artykule opisano, co jest wymagane do obsługi komentowania i Trwa usuwanie komentarza do zaznaczonego kodu.  
   
  [Niestandardowe właściwości dokumentu w starszej wersji usługi językowej](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
  W tym artykule opisano, co jest wymagane do obsługi właściwości dokumentu, które są osadzone w pliku źródłowym.  
   
  [Zwijanie w starszej wersji usługi językowej](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane w celu obsługi zwijania poprzez wdrożenie ukryte obszary.  
+ W tym artykule opisano, co jest wymagane do obsługi konspekt poprzez wdrożenie ukrytych regionów.  
   
  [Ponowne formatowanie kodu w starszej wersji usługi językowej](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane do obsługi ponownego formatowania kodu.  
+ W tym artykule opisano, co jest wymagane do obsługi formatowania kodu.  
   
  [Obsługa fragmentów kodu w starszej wersji usługi językowej](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane do obsługi fragmentów kodu, które segmentów kodu, które są wstawiane i można go edytować.  
+ W tym artykule opisano, co jest wymagane do obsługi fragmentów kodu, które segmenty kodu, które są wstawiane i można go edytować.  
   
- [Informacje o parametrach w starsza wersja usługi języka](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
- W tym artykule opisano, co jest wymagane do obsługi operacji informacje o parametrach IntelliSense do wyświetlania podpis metody jako metodę został wpisany.  
+ [Informacje o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+ W tym artykule opisano, co jest wymagane do obsługi operacji o parametrach funkcji IntelliSense do wyświetlania podpis metody jako metodę został wpisany.  
   
  [Szybkie informacje w starszej wersji usługi językowej](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane do obsługi operacji IntelliSense szybkie informacje do wyświetlania informacji o identyfikatorze.  
+ W tym artykule opisano, co jest wymagane do obsługi operacji szybkie informacje technologii IntelliSense, aby wyświetlić informacje dotyczące identyfikatora.  
   
  [Uzupełnianie składowych w starszej wersji usługi językowej](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane do obsługi operacji zakończenia elementu członkowskiego IntelliSense do wybierania elementu członkowskiego przestrzeni nazw z listy.  
+ W tym artykule opisano, co jest wymagane do obsługi operacji uzupełnianie składowych IntelliSense służąca do wybierania elementu członkowskiego w przestrzeni nazw z listy.  
   
  [Uzupełnianie wyrazów w starszej wersji usługi językowej](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane do obsługi operacji IntelliSense całe słowo częściowo klawiaturowe ukończenia.  
+ W tym artykule opisano, co jest wymagane do obsługi operacji IntelliSense, dokańczanie słów ukończenia częściowo wpisywanych słów.  
   
  [Obsługa okna zmiennych automatycznych w starszej wersji usługi językowej](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
- W tym artykule opisano, co można zrobić do obsługi usługi języka **automatycznych** okno podczas debugowania.  
+ W tym artykule opisano, co usługa języka zrobić, aby obsługiwać **Autos** okna podczas debugowania.  
   
  [Obsługa paska nawigacyjnego w starszej wersji usługi językowej](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
- Informacje dotyczące używania **pasek nawigacyjny** u góry widoku edytora w celu zapewnienia szybkiego nawigacji do dowolnego typu lub elementu członkowskiego w pliku, w tym widoku.  
+ Opisuje sposób używania **pasek nawigacyjny** w górnej części widoku edytora, aby zapewnić szybką nawigację do dowolnego typu lub elementu członkowskiego w pliku, w tym widoku...  
   
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
- W tym artykule opisano, co jest wymagane w celu obsługi wyróżnianie składni kodu źródłowego.  
+ W tym artykule opisano, co jest wymagane do obsługi, wyróżnianie składni kodu źródłowego.  
   
  [Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
- Zawiera opis usługi języka czynności do obsługi sprawdzania poprawności punktów przerwania poza debugera.  
+ W tym artykule opisano, co usługa języka zrobić, aby obsługiwać sprawdzanie poprawności punktów przerwania poza debugera.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Analizator i skaner starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Opisuje analizatora i skanera, które są wymagane do wykonania wszystkich funkcji usługi języka, która używa w ramach zarządzanego pakietu.  
+ W tym artykule opisano analizator i skaner, które są wymagane do wykonania wszystkich funkcji wersji usługi językowej, która używa środowiska pakietu zarządzanego.  
   
- [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- W tym artykule opisano, co jest wymagane do wdrożenia usługi języka przy użyciu MPF.  
+ [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ W tym artykule opisano, co jest wymagane do wdrożenia usługi językowej przy użyciu MPF.  
   
- [Zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- W tym artykule opisano kroki, które są wymagane do zarejestrowania usługi języka MPF z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ W tym artykule opisano kroki, które są wymagane do zarejestrowania usługi języka opartego na MPF z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)  
- W tym artykule wyjaśniono, jak IntelliSense ułatwia języka odwołania dostępu.  
+ W tym artykule wyjaśniono, jak technologia IntelliSense sprawia, że informacje dotyczące języka łatwy dostęp do.  
   
- [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Zawiera informacje o sposobie używania framework zarządzanego pakietu (MPF) do wdrożenia usługi oferujący wszystkie funkcje języka w kodzie zarządzanym.
+ [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Zawiera informacje o tym, jak wdrożyć usługę w pełni funkcjonalne języka w kodzie zarządzanym przy użyciu środowiska pakietu zarządzanego (MPF).

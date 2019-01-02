@@ -2,23 +2,22 @@
 title: Zestaw reguł All Rules
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 522d8977ed4b4881d2a9b2856438070924864489
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5fe3a00e616af6973b8ffbaeed3fcb5d821813a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31883881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834884"
 ---
 # <a name="all-rules-rule-set"></a>Zestaw reguł All Rules
 
-Zestaw reguł wszystkich reguł zawiera wszystkie reguły dla natywnych i zarządzanych kodu. Zestaw reguł zawiera wszystkie reguły, które zostały opisane w następujących tematach:
+Zestaw reguł wszystkie reguły zawiera wszystkie reguły dla kodu zarządzanego i natywnego. Zestaw reguł zawiera wszystkie reguły, które są opisane w następujących tematach:
 
 - [Analiza kodu C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)
 

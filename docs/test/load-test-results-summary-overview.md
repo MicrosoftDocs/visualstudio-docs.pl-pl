@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 70447148922382cef3e5c3fb9b7ba24613033c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834298"
 ---
 # <a name="load-test-results-summary-overview"></a>Przegląd podsumowania wyników testu obciążenia
 
-Po uruchomieniu testu obciążenia, możesz wyświetlić podsumowanie testu obciążeniowego, aby szybko poznać wyniki. Podsumowanie testu obciążeniowego zapewnia kluczowe wyniki w compact, łatwe do odczytania formacie. Pozwala również na drukowanie podsumowania testu obciążenia. Ułatwia to używane podczas komunikowania się wyniki do zainteresowanych stron. Podsumowanie testu obciążeniowego jest również domyślny widok, po otwarciu wyniku testu obciążeniowego z wcześniej uruchomionego testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
+Po uruchomieniu testu obciążenia, możesz wyświetlić podsumowanie testu obciążeniowego, aby szybko poznać wyniki. Podsumowanie testu obciążeniowego zapewnia kluczowe wyniki w compact, łatwe do odczytania formacie. Pozwala również na drukowanie podsumowania testu obciążenia. Ułatwia to używane podczas komunikowania się wyniki do zainteresowanych stron. Podsumowanie testu obciążeniowego jest również domyślny widok, po otwarciu wyniku testu obciążeniowego z wcześniej uruchomionego testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [jak: Dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Widok podsumowania](../test/media/ltest_summaryview.png)
 
@@ -39,9 +38,9 @@ Podsumowanie testu obciążeniowego jest podzielona na sekcje. Początkowe sekcj
 
 - Ogólne wyniki
 
-- Kluczowe statystyki: 5 najpopularniejszych najwolniejszych stron
+- Kluczowe statystyki: 5 najwolniejszych stron
 
-- Kluczowe statystyki: Top 5 najwolniejszych testów
+- Kluczowe statystyki: 5 najwolniejszych testów
 
 - Kluczowe statystyki: Top 5 najwolniejszych operacji SQL
 
@@ -72,7 +71,7 @@ Ogólny sekcja wyników zawiera podsumowania wyników testu, w tym liczbę żąd
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>Kluczowe statystyki: 5 najwolniejszych stron
 
-Sekcji Najwolniejsze strony zawiera 5 pierwszych Najwolniejsze strony w teście obciążeniowym. Adres URL i czas ładowania strony są wyświetlane dla każdej strony. Strony są wymienione w kolejności malejącej. Możesz wybrać adres URL strony, aby otworzyć **stron** tabeli i sprawdzić szczegółowe informacje dla tej strony. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Sekcji Najwolniejsze strony zawiera 5 pierwszych Najwolniejsze strony w teście obciążeniowym. Adres URL i czas ładowania strony są wyświetlane dla każdej strony. Strony są wymienione w kolejności malejącej. Możesz wybrać adres URL strony, aby otworzyć **stron** tabeli i sprawdzić szczegółowe informacje dla tej strony. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 Wartość percentylu **95% czasu strony (s)** zgłosić, że 95% strony ma być wykonane w czasie krótszym niż ten czas w sekundach.
 
@@ -82,7 +81,7 @@ Najwolniejsze sekcja testów zawiera najważniejsze 5 najwolniejszych testów w 
 
 Wartość percentylu **95% czasu testu (s)** zgłosić, że 95% testy wykonane w czasie krótszym niż ten czas w sekundach.
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>Kluczowe statystyki: 5 najwolniejszych operacji SQL Top
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>Kluczowe statystyki: Top 5 najwolniejszych operacji SQL
 
 Włączenie śledzenia SQL w teście obciążeniowym najwolniejsze sekcja zapytań zawiera najpopularniejsze 5 najwolniejszych zapytania w teście obciążeniowym. Nazwa operacji i czas trwania są wyświetlane dla każdego testu. Czas trwania jest wyświetlany w mikrosekundach (SQL Server 2005) lub milisekund (SQL Server 2000 lub starszym). Testy są wymienione w kolejności malejącej według czasu trwania. Można wybrać nazwę działania, aby otworzyć **śledzenia SQL** tabeli i sprawdzić szczegółowe informacje dla tej operacji. Aby uzyskać więcej informacji, zobacz [tabeli danych śledzenia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
@@ -95,7 +94,7 @@ Sekcja wyniki testu zawiera listę wszystkich testów i scenariusze do testu obc
 
 ## <a name="page-results"></a>Wyniki strony
 
-Sekcja wyniki strona zawiera listę wszystkich stron sieci web w teście obciążeniowym. Adres URL, scenariusz, nazwy testu, czas strony średni i liczby są wyświetlane. Możesz wybrać adres URL strony, aby otworzyć **stron** tabeli i sprawdzić szczegółowe informacje dla tej strony. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Sekcja wyniki strona zawiera listę wszystkich stron sieci web w teście obciążeniowym. Adres URL, scenariusz, nazwy testu, czas strony średni i liczby są wyświetlane. Możesz wybrać adres URL strony, aby otworzyć **stron** tabeli i sprawdzić szczegółowe informacje dla tej strony. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.

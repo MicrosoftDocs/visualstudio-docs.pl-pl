@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Tworzenie rozszerzenia projektu SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie rozszerzenia projektu SharePoint | Dokumentacja firmy Microsoft'
 ms.date: 04/28/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4e1c790e70ba44df967b33d57ac57951e714e130
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836455"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>Porady: Tworzenie rozszerzenia projektu SharePoint
-  Tworzenie rozszerzenia projektu, jeśli chcesz dodać funkcje do żadnego projektu programu SharePoint, która jest otwarta w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
+# <a name="how-to-create-a-sharepoint-project-extension"></a>Instrukcje: Tworzenie rozszerzenia projektu SharePoint
+  Tworzenie rozszerzenia projektu, jeśli chcesz dodać funkcje do każdego projektu programu SharePoint, która jest otwarta w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
 
-### <a name="to-create-a-project-extension"></a>Aby utworzyć rozszerzenia projektu  
+### <a name="to-create-a-project-extension"></a>Aby utworzyć rozszerzenie projektu  
 
-1.  Tworzenie projektu biblioteki klas.  
+1.  Utwórz projekt biblioteki klas.  
 
 2.  Dodaj odwołania do następujących zestawów:  
 
@@ -39,12 +36,12 @@ ms.locfileid: "37120304"
 
 3.  Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interfejsu.  
 
-4.  Dodaj <xref:System.ComponentModel.Composition.ExportAttribute> do klasy. Ten atrybut umożliwia Visual Studio, aby odnaleźć i załadować Twojego <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> typu konstruktora atrybutu.  
+4.  Dodaj <xref:System.ComponentModel.Composition.ExportAttribute> do klasy. Ten atrybut umożliwia środowisku Visual Studio wykrycie i załadowanie swoje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> typu konstruktora atrybutu.  
 
-5.  W implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody, użyj członkami *projectService* parametru Definiowanie zachowania Twoje rozszerzenie. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiekt, który zapewnia dostęp do zdarzeń zdefiniowanych w <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfejsu.  
+5.  W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody, użyj członkowie *projectService* parametru do określania zachowania Twojego rozszerzenia. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu, który zapewnia dostęp do zdarzenia, zdefiniowany w <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfejsu.  
 
 ## <a name="example"></a>Przykład  
- Poniższy przykładowy kod przedstawia sposób tworzenia rozszerzenia prostego projektu, które obsługuje większość zdarzeń projektu programu SharePoint, które są zdefiniowane przez <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfejsu. Aby przetestować kod, Utwórz projekt programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i następnie dodać więcej projektów w rozwiązaniu, zmienić wartości właściwości projektu, lub usuń lub wykluczyć projektu. Rozszerzenie powiadamia o zdarzenia przez napisanie wiadomości **dane wyjściowe** okna i **listy błędów** okna.  
+ Poniższy przykład kodu pokazuje, jak utworzyć rozszerzenie prostego projektu, który obsługuje większość zdarzeń projektu programu SharePoint, które są definiowane przez <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfejsu. Aby przetestować kod, Utwórz projekt programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i następnie dodać więcej projektów w rozwiązaniu, zmiana wartości właściwości projektu, usunąć lub Wyklucz z projektu. Rozszerzenie powiadamia użytkownika, zdarzenia, zapisując komunikatów do **dane wyjściowe** okna i **lista błędów** okna.  
 
   ```vb  
     Imports Microsoft.VisualStudio.SharePoint
@@ -188,22 +185,22 @@ ms.locfileid: "37120304"
   }  
   ```  
 
-W tym przykładzie używane usługa projektu SharePoint można zapisać komunikatu na **dane wyjściowe** okna i **listy błędów** okna. Aby uzyskać więcej informacji, zobacz [korzystania z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
+W tym przykładzie używa usługi projektu programu SharePoint do zapisu do wiadomości **dane wyjściowe** okna i **lista błędów** okna. Aby uzyskać więcej informacji, zobacz [korzystania z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
 
- Aby uzyskać przykłady pokazujące, które przedstawiają sposób obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia, zobacz [porady: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) i [porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
+ Aby uzyskać przykłady ilustrujące sposób obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia, zobacz [jak: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) i [jak: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
 
-## <a name="compile-the-code"></a>Kompilowanie kodu  
- W tym przykładzie wymaga odwołania do następujących zestawów:  
+## <a name="compile-the-code"></a>Skompilować kod  
+ Ten przykład wymaga odwołania do następujących zestawów:  
 
 -   Microsoft.VisualStudio.SharePoint  
 
 -   System.ComponentModel.Composition  
 
 ## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia  
- Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [narzędzia wdrażania rozszerzeń dla programu SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla programu SharePoint narzędzia w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
 
 ## <a name="see-also"></a>Zobacz także
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Porady: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Wskazówki: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+ [Instrukcje: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Instrukcje: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Przewodnik: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

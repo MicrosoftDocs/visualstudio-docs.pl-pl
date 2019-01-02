@@ -1,6 +1,5 @@
 ---
 title: Assembly — Element (rozszerzenie Kreatora szablonów programu Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 07b01c993bb9a20dcb836a67bc2a9e8d78135adb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828189"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly — element (rozszerzenie Kreatora szablonów programu Visual Studio)
 Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejsu.  
@@ -61,7 +60,7 @@ Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejs
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie pokazano metadanych szablon standardowy projekt [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.  
   
-```  
+```xml
 <VSTemplate Version="3.0.0" Type="Item"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -87,9 +86,10 @@ Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejs
         <FullClassName>MyWizard.CustomWizard</FullClassName>  
     </WizardExtension>  
 </VSTemplate>  
-```  
+```
   
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
+- [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

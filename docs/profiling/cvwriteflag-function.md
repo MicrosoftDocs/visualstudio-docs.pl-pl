@@ -1,8 +1,6 @@
 ---
 title: Funkcja CvWriteFlag | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteFlagExVA
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 371be943dc062c5c3b5aac7f59493aa5f4f53002
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1122b662bd9f23bb88f368c02432584c3bbfffe2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819539"
 ---
 # <a name="cvwriteflag-function"></a>Cvwriteflag — funkcja
 Zapisuje plik śledzenia Concurrency Visualizer flagę.  
@@ -86,7 +84,7 @@ HRESULT CvWriteFlagExVA(
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
- **Unicode:** cvwriteflagexw —, cvwriteflagexvw —  
+ **Unicode:** Cvwriteflagexw —, cvwriteflagexvw —  
   
  <strong>ANSI:</strong>cvwriteflagexa —, cvwriteflagexva —  
   

@@ -1,8 +1,6 @@
 ---
 title: Ułatwienia dostępu w projektach pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833329"
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
-  Microsoft Visual Studio i Microsoft Office zawiera wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań, które spełniają wymagania standardowych ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać więcej informacji, zobacz [WWW ułatwień dostępu](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- W większości przypadków projektów pakietu Office w Visual Studio spełnia ułatwień dostępu standardów lub udostępnia właściwości, które można ustawić, aby udostępnić swoje rozwiązania. Istnieją jednak pewne funkcje, które mają ograniczoną dostępność.
+Microsoft Visual Studio i Microsoft Office zawiera wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań, które spełniają wymagania standardowych ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać więcej informacji, zobacz [WWW ułatwień dostępu](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+W większości przypadków projektów pakietu Office w Visual Studio spełnia ułatwień dostępu standardów lub udostępnia właściwości, które można ustawić, aby udostępnić swoje rozwiązania. Istnieją jednak pewne funkcje, które mają ograniczoną dostępność.
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>Ułatwienia dostępu w czasie projektowania
 

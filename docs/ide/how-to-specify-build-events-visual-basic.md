@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Określanie Tworzenie zdarzenia (Visual Basic)'
+title: 'Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828868"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Porady: Określanie Tworzenie zdarzenia (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 
 Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skryptów, makr lub innych działań jako część procesu kompilacji. Zdarzenia prekompilacyjnego występują przed kompilacji; zdarzenia postkompilacyjnego występują po kompilacji.
 
@@ -169,4 +168,4 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
 - [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)
 - [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — zdarzenie prekompilacyjne](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Porady: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Instrukcje: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)

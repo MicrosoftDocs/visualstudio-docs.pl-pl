@@ -1,8 +1,6 @@
 ---
 title: Idiasegment::get_offset — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8283db3533784b9145872c17e1a544ac4905e096
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f78969d128443393c72f374c9ed63dd9ba0d1d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832768"
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
 Pobiera przesunięcie, w segmentach, gdzie rozpoczyna się w sekcji.  
@@ -27,7 +25,7 @@ Pobiera przesunięcie, w segmentach, gdzie rozpoczyna się w sekcji.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_offset (   
+HRESULT get_offset (   
    DWORD* pRetVal  
 );  
 ```  

@@ -3,7 +3,6 @@ title: Przewodnik Szybki Start — Tworzenie projektu języka Python przy użyci
 description: W tym przewodniku Szybki Start utworzysz projekt programu Visual Studio dla języka Python dla podstawowych aplikacji Flask za pomocą wbudowanych szablonów.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f01750978527a02d0d67267f550b8a0c0c558435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964560"
 ---
-# <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu w języku Python na podstawie szablonu w programie Visual Studio
+# <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki start: Tworzenie projektu w języku Python na podstawie szablonu w programie Visual Studio
 
 Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](installing-python-support-in-visual-studio.md), ułatwia utworzenie nowego projektu języka Python przy użyciu różnych szablonów. W tym przewodniku Szybki Start opisano tworzenie prostej aplikacji Flask za pomocą szablonu. Projekt wynikowy jest podobny do projektu, możesz utworzyć ręcznie za pomocą [Szybki Start — tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md).
 
@@ -77,17 +76,17 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 1. Wybierz **debugowania** > **Uruchom bez debugowania** do uruchamiania aplikacji i Otwórz w przeglądarce `localhost:5555`.
 
-**Pytanie: Jakie inne szablony Python programu Visual Studio oferuje?**
+**Pytanie: Jakie inne szablony Python oferuje program Visual Studio?**
 
-**Odpowiedź**: Z zainstalowanym obciążeniem Python programu Visual Studio oferuje różne szablony projektów, między innymi [struktury sieci web Flask, Bottle i Django](../python/python-web-application-project-templates.md), usługi Azure cloud services, różne usługi machine learning scenariusze, a nawet szablon, aby utworzyć projekt z istniejącą strukturę folderu zawierającego aplikację języka Python. Możesz przejść do nich za pośrednictwem **pliku** > **New** > **projektu** okno dialogowe, wybierając **Python** język węzła i jego węzłami podrzędnymi.
+**Odpowiedź**: Z zainstalowanym obciążeniem Python programu Visual Studio oferuje różne szablony projektów, między innymi [struktury sieci web Flask, Bottle i Django](../python/python-web-application-project-templates.md)platformy Azure usługi w chmurze, różne usługi machine learning scenariusze, a nawet szablon, aby utworzyć projekt z istniejącą strukturę folderu zawierającego aplikację języka Python. Możesz przejść do nich za pośrednictwem **pliku** > **New** > **projektu** okno dialogowe, wybierając **Python** język węzła i jego węzłami podrzędnymi.
 
 Visual Studio udostępnia również różnych plików lub *elementu szablony* szybko utworzyć klasę języka Python, pakiet języka Python, test jednotky Pythonu *web.config* pliki i inne. W przypadku otwarcia projektu języka Python, możesz uzyskać dostęp do szablonów elementu za pomocą **projektu** > **Dodaj nowy element** polecenia menu. Zobacz [elementu szablony](python-item-templates.md) odwołania.
 
 Za pomocą szablonów można skrócić znaczące czas podczas uruchamiania projektu lub tworzenia pliku i są również świetnym sposobem Dowiedz się więcej o różnych typów aplikacji i kodu struktury. Warto potrwać kilka minut, aby utworzyć przy użyciu różnych szablonów projektów i elementów do zapoznania się z ich oferty.
 
-**Pytanie: Czy można również użyć szablonów Cookiecutter?**
+**Pytanie: Można również używać z szablonów Cookiecutter?**
 
-**Odpowiedź**: tak! W rzeczywistości program Visual Studio zapewnia bezpośrednią integrację z usługą Cookiecutter, w którym można zapoznać się za pośrednictwem [Szybki Start: Tworzenie projektu z szablonów Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Odpowiedź**: Tak! W rzeczywistości program Visual Studio zapewnia bezpośrednią integrację z usługą Cookiecutter, w którym można zapoznać się za pośrednictwem [Szybki Start: Tworzenie projektu z szablonów Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

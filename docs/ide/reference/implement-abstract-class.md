@@ -2,19 +2,18 @@
 title: Implementowanie klasy abstrakcyjnej
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 551efd07e3e62764c71a6bc4e2a9683517139966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840411"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementuj klasę abstrakcyjną w programie Visual Studio
 
@@ -24,11 +23,11 @@ Dotyczy to generowanie kodu:
 
 - Visual Basic
 
-**Co:** umożliwia natychmiastowe wygenerowanie kodu wymaganego do implementacji klasy abstrakcyjnej.
+**Co:** Umożliwia natychmiastowe generowanie kodu wymaganego do implementacji klasy abstrakcyjnej.
 
-**Kiedy:** ma być dziedziczona z klasy abstrakcyjnej.
+**Kiedy:** Chcesz dziedziczyć z klasy abstrakcyjnej.
 
-**Dlaczego:** wszystkie abstrakcyjne składowe jeden po drugim, można zaimplementować ręcznie, ale tej funkcji będzie generowana automatycznie wszystkich podpisów metody.
+**Dlaczego:** Wszystkie abstrakcyjne składowe jeden po drugim, można zaimplementować ręcznie, jednak ta funkcja będzie generowana automatycznie wszystkich podpisów metody.
 
 ## <a name="how-to"></a>Instrukcje
 

@@ -2,7 +2,6 @@
 title: Ostrzeżenia analizy kodu dla metody anonimowej
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - methods, anonymous
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8bfbf6100eed54589e4ea17a88807f9dd3cca2
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47f90e0a9ca01e76ea1a3686c790dcf00a4becde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860783"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Metody anonimowe i analiza kodu
 

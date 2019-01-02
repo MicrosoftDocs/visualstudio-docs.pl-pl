@@ -1,9 +1,6 @@
 ---
 title: Przewodnik wtyczek kontroli kodu źródłowego testowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df70ef5fcaffb7fe2e06df5b6d47e526ff5162f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827903"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Rozbudowane przegląd typowych obszarów, testowania, a także niektórych bardziej skomplikowanych obszarów, które może być problematyczne, jest dostępna. W tym omówieniu nie stanowi wyczerpującej listy przypadków testowych.  
@@ -40,7 +37,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
  Każdy projekt typu dostępne w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , która obsługuje integrację kontroli źródła (na przykład [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], lub [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
   
  Projekt sieci Web  
- Istnieją cztery typy projektów sieci Web: System plików, lokalnych usług IIS, lokacjami zdalnymi i FTP.  
+ Istnieją cztery rodzaje projektów sieci Web: System plików, lokalnych usług IIS, lokacjami zdalnymi i FTP.  
   
 - Projekty systemu plików są tworzone na ścieżkę lokalną, ale nie wymagają Internet Information Services (IIS) do zainstalowania, ponieważ są używane wewnętrznie za pośrednictwem ścieżki UNC i można umieścić pod kontrolą źródła z wewnątrz IDE, podobnie jak projektów klienckich.  
   
@@ -58,55 +55,55 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
   
 ## <a name="test-areas-covered-in-this-section"></a>Obszary testów, opisanych w tej sekcji  
   
--   [Obszar testowy 1: dodawanie do kontroli kodu źródłowego i otwieranie z poziomu kontroli kodu źródłowego](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Obszar testowy 1: Dodaj / Otwórz z kontroli źródła](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Zamierzone, Zapisz 1a: Dodaj rozwiązanie do kontroli źródła  
+    -   Wielkość 1a: Dodaj rozwiązanie do kontroli źródła  
   
-    -   Zamierzone, Zapisz 1b: Otwórz rozwiązanie z kontroli źródła  
+    -   Wielkość 1b: Otwórz rozwiązanie z kontroli źródła  
   
     -   Przypadek 1c: Dodaj rozwiązanie z kontroli źródła  
   
--   [Obszar testowy 2: pobieranie z kontroli kodu źródłowego](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Obszar testowy 2: Pobieranie z kontroli źródła](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Obszar testowy 3: wyewidencjonowywanie i cofanie wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Obszar testowy 3: Zapoznaj się z / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Przypadek 3: Wyewidencjonowanie / Cofnij wyewidencjonowanie  
+    -   Przypadek 3: Zapoznaj się z / Cofnij wyewidencjonowanie  
   
-    -   Zamierzone, Zapisz 3a: Zapoznaj się z  
+    -   Wielkości liter 3a: Wyewidencjonuj  
   
-    -   Zamierzone, Zapisz 3b: rozłączone wyewidencjonowanie  
+    -   Wielkość 3b: Wyewidencjonowanie bez połączenia  
   
-    -   Przypadek 3c: zapytania Edytuj/zapytanie Zapisz (QEQS)  
+    -   Przypadek 3c: Edytuj zapytanie/zapytanie Zapisz (QEQS)  
   
-    -   Zamierzone, Zapisz 3d: Wyewidencjonuj dyskretnej  
+    -   Zamierzone, Zapisz 3d: Dyskretnej wyewidencjonowania  
   
-    -   Zamierzone, Zapisz 3e: Cofnij wyewidencjonowanie  
+    -   Wielkość 3e: Cofnij wyewidencjonowanie  
   
--   [Obszar testowy 4: ewidencjonowanie](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Obszar testowy 4: Zamelduj się](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Zamierzone, Zapisz 4a: zmodyfikowane elementy  
+    -   Wielkość 4a: Zmodyfikowane elementy  
   
-    -   Zamierzone, Zapisz 4b: Dodawanie plików  
+    -   Wielkość 4b: Trwa dodawanie plików  
   
-    -   Zamierzone, Zapisz 4c: dodawanie projektów  
+    -   W przypadku 4c: Dodawanie projektów  
   
--   [Obszar testowy 5: zmienianie kontroli kodu źródłowego](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Obszar testowy 5: Zmień kontrolę źródła](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Zamierzone, Zapisz 5a: Bind  
+    -   Wielkość 5a: powiązania  
   
-    -   Zamierzone, Zapisz 5b: Usuń powiązanie  
+    -   Wielkość 5b: Usuń powiązanie  
   
-    -   Zamierzone, Zapisz 5c: ponownie powiązać  
+    -   W przypadku 5c: ponowne wiązanie  
   
--   [Obszar testowy 6: usuwanie](../../extensibility/internals/test-area-6-delete.md)  
+-   [Obszar testowy 6: Usuń](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Obszar testowy 7: udostępnianie](../../extensibility/internals/test-area-7-share.md)  
+-   [Obszar testowy 7: Udostępnij](../../extensibility/internals/test-area-7-share.md)  
   
--   [Obszar testowy 8: przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [Obszar testowy 8: Przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Zamierzone, Zapisz 8a: automatyczna zmiana  
+    -   8a przypadków: Automatyczna zmiana  
   
-    -   Zamierzone, Zapisz 8b: oparte na rozwiązaniach zmiany  
+    -   8b przypadków: Oparte na rozwiązaniach zmiany  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)

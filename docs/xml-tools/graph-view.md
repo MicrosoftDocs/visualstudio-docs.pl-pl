@@ -2,7 +2,6 @@
 title: Widok wykresu projektanta schematu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826997"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -103,16 +102,16 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**3**.|
+|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**2**.|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**3**.|
 |**Usuń obszar roboczy**|Usuwa obszar roboczy i powierzchni projektowej.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystkie oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej. Ta opcja jest włączona, w widoku modelu zawartości i w widoku wykresu.|
-|**Od lewej do prawej**|Zmienia układ w widoku wykresu od lewej do prawej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt**+**strzałkę w prawo**.|
-|**Od prawej do lewej**|Zmienia układ w widoku wykresu od prawej do lewej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt**+**Strzałka w lewo**.|
-|**Od góry do dołu**|Zmienia układ w widoku wykresu od góry do dołu hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt**+**Strzałka w dół**.|
-|**Od dołu do góry**|Zmienia układ w widoku wykresu do dołu do góry hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt**+**Strzałka w górę**.|
+|**Od lewej do prawej**|Zmienia układ w widoku wykresu od lewej do prawej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **ALT**+**strzałkę w prawo**.|
+|**Od prawej do lewej**|Zmienia układ w widoku wykresu od prawej do lewej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **ALT**+**Strzałka w lewo**.|
+|**Od góry do dołu**|Zmienia układ w widoku wykresu od góry do dołu hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **ALT**+**Strzałka w dół**.|
+|**Od dołu do góry**|Zmienia układ w widoku wykresu do dołu do góry hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **ALT**+**Strzałka w górę**.|
 
 ## <a name="panscroll"></a>Pan/przewijania
 

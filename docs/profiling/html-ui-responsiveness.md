@@ -2,7 +2,6 @@
 title: Analizowanie czasu odpowiedzi interfejsu użytkownika HTML, w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843531"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML Universal Windows Apps
 W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikacjach przy użyciu Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępne dla uniwersalnych aplikacji dla Windows.  
@@ -69,7 +68,7 @@ W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikac
 6.  Aby zatrzymać profilowanie aplikacji i przeglądanie danych, który program profilujący zebrane, wybierz **Zatrzymaj Kolekcjonowanie**.  
   
 ## <a name="isolate-an-issue"></a>Izolowanie problemu  
- W poniższej sekcji przedstawiono sugestie ułatwiające wyizolować problemy z wydajnością. Uzyskać szczegółowe informacje dotyczące identyfikowanie i rozwiązywanie problemów z wydajnością za pomocą aplikacji testowania wydajnościowego przykładowe, zobacz [wskazówki: poprawa UI responsiveness (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ W poniższej sekcji przedstawiono sugestie ułatwiające wyizolować problemy z wydajnością. Szczegółowe informacje dotyczące identyfikowanie i rozwiązywanie problemów z wydajnością za pomocą aplikacji testowania wydajnościowego próbki, można zobaczyć [instruktażu: Zwiększanie czasu odpowiedzi interfejsu użytkownika (HTML)](/visualstudio/profiling/html-ui-responsiveness).  
   
 ###  <a name="Workflow"></a> Wyizolować problem czasu odpowiedzi interfejsu użytkownika  
  Poniższe kroki zawierają sugerowane przepływu pracy, które mogą ułatwić bardziej efektywne wykorzystanie Profiler czasu odpowiedzi interfejsu użytkownika:  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   Zdarzenie nawigacji, które występuje, gdy przejdziesz do innej strony. Etykietka narzędzia dla zdarzenia zawiera docelowy adres URL strony.  
   
 ###  <a name="CPUUtilization"></a> Wykorzystanie procesora CPU widoku  
- Wykres wykorzystania procesora CPU umożliwia określenie okresy czasu, w którym ma nadmierną aktywność procesora CPU. Zawiera informacje o aplikacji średnie użycie Procesora w danym okresie czasu. Informacje są oznaczone kolorami do reprezentowania następujące kategorie określonego: **ładowania**, **skryptów**, wyrzucanie elementów bezużytecznych (**GC**), **stylów**, **Renderowania**, i **dekodowanie obrazu**. Aby uzyskać więcej informacji na temat tych kategorii, zobacz [odwołanie do zdarzenia Profiler](#profiler-event-reference) w dalszej części tego tematu.  
+ Wykres wykorzystania procesora CPU umożliwia określenie okresy czasu, w którym ma nadmierną aktywność procesora CPU. Zawiera informacje o aplikacji średnie użycie Procesora w danym okresie czasu. Informacje są oznaczone kolorami do reprezentowania następujących określonych kategorii: **Trwa ładowanie**, **skryptów**, wyrzucanie elementów bezużytecznych (**GC**), **style**, **renderowania**, i **obrazu dekodowanie**. Aby uzyskać więcej informacji na temat tych kategorii, zobacz [odwołanie do zdarzenia Profiler](#profiler-event-reference) w dalszej części tego tematu.  
   
  Wykres wykorzystania procesora CPU pokazuje ilość czasu poświęconego na wszystkich wątków aplikacji, łącząc wartości wykorzystanie procesora CPU dla jednego lub więcej procesorów CPU w pojedynczej wartości procentowej. Wartość wykorzystanie Procesora może przekroczyć 100 procent, gdy używany jest więcej niż jednego Procesora.  
   

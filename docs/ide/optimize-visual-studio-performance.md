@@ -11,15 +11,14 @@ manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fe9324360a01700024e14e6c70755d61aa3e60
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9f60acd8e31f9a549406b4b8c40aacdd5327f335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832625"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optymalizacja wydajności programu Visual Studio
 

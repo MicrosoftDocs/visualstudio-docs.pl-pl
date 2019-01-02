@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata::get_lengthprolog — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 635d435cd81286c96a3949168dc27f2b8983c4d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ab2331c5138e11921c33fdbfacf54bc4d9d7ce2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838323"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 Pobiera liczbę bajtów kod prologu w bloku.  
@@ -27,7 +25,7 @@ Pobiera liczbę bajtów kod prologu w bloku.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_lengthProlog (   
+HRESULT get_lengthProlog (   
    DWORD* pRetVal  
 );  
 ```  

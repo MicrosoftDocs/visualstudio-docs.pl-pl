@@ -1,9 +1,6 @@
 ---
 title: Model obiektu Excel ― omówienie
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821772"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Do opracowywania rozwiązań korzystających z programu Microsoft Office Excel, możesz korzystać z obiektami dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:  
@@ -123,5 +120,3 @@ ms.locfileid: "53647528"
 |[Praca z zakresami](../vsto/working-with-ranges.md)|Przykłady pokazujące, jak wykonywać typowe zadania z zakresami.|  
 |[Praca z arkuszami](../vsto/working-with-worksheets.md)|Przykłady pokazujące, jak wykonywać typowe zadania związane z arkuszy.|  
 |[Praca ze skoroszytami](../vsto/working-with-workbooks.md)|Przykłady pokazujące, jak wykonywać typowe zadania za pomocą skoroszytów.|  
-  
-  

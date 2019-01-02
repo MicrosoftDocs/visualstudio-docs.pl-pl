@@ -1,8 +1,6 @@
 ---
 title: '&lt;Opis&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8985bc83299f55cec3c5f41fd3d76c8801fdf34
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d0ad2399cf43b8e86bd45e9c33dd421eeb55416f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828816"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Opis&gt; — element (wdrażanie ClickOnce)
 Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i **apletu Dodaj lub usuń programy** w Panelu sterowania.  
@@ -32,8 +30,8 @@ Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i 
   
 ```xml  
   
-      <description   
-   publisher   
+      <description   
+   publisher   
    product  
    suiteName  
    supportUrl  
@@ -45,8 +43,8 @@ Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`publisher`|Wymagane. Określa nazwę firmy, używane do umieszczenia ikony w Windows **Start** menu i **apletu Dodaj lub usuń programy** w Panelu sterowania, gdy wdrożenie jest skonfigurowane do instalacji.|  
-|`product`|Wymagane. Identyfikuje Pełna nazwa produktu. Używane jako tytuł na ikonę zainstalowane w Windows **Start** menu.|  
+|`publisher`|Wymagana. Określa nazwę firmy, używane do umieszczenia ikony w Windows **Start** menu i **apletu Dodaj lub usuń programy** w Panelu sterowania, gdy wdrożenie jest skonfigurowane do instalacji.|  
+|`product`|Wymagana. Identyfikuje Pełna nazwa produktu. Używane jako tytuł na ikonę zainstalowane w Windows **Start** menu.|  
 |`suiteName`|Opcjonalna. Identyfikuje podfolder w `publisher` folderu w Windows **Start** menu.|  
 |`supportUrl`|Opcjonalna. Określa adres URL pomocy technicznej, która jest wyświetlana w **apletu Dodaj lub usuń programy** w Panelu sterowania. Skrót do tego adresu URL tworzona jest również obsługę aplikacji w Windows **Start** menu, gdy wdrożenie jest skonfigurowane do instalacji.|  
   

@@ -1,8 +1,6 @@
 ---
-title: 'Da0013: znaczące Wykorzystanie String.Split lub String.Substring | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'DA0013: ZNACZĄCE Wykorzystanie funkcji String.Split i String.Substring | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.13
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 722277e65a30d8c40cc245123120650108ebc560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 851c6083152c687869634ca016d53ce353274abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863878"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Znaczące wykorzystanie String.Split lub String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: ZNACZĄCE Wykorzystanie funkcji String.Split i String.Substring
 
 |||  
 |-|-|  

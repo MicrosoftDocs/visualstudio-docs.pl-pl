@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 52a6289d6b17528d31d66e26df2f15b85749aac3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823545"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -124,9 +123,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>P: których baz danych można używać jako źródła danych?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>PYT.: Jakie baz danych można używać jako źródła danych?
 
-**Odp.:** można użyć następujących:
+**ODP.:** Można użyć następujących czynności:
 
 - Program Microsoft SQL Azure.
 
@@ -140,9 +139,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 - Oracle 7.3, 8i, 9i lub 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: jak używać pliku tekstowego (CSV) rozdzielanymi przecinkami jako źródło danych?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>PYT.: Jak używać pliku tekstowego (CSV) rozdzielanymi przecinkami jako źródło danych?
 
-**Odp.:** Oto jak:
+**ODP.:** Oto jak:
 
 1. Utwórz folder do organizowania artefaktów projektów bazy danych i dodać element.
 
@@ -164,9 +163,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      ![Wprowadź nazwę i wybierz plik CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>P: co jeśli Mój istniejący plik CSV nie zawiera nagłówków kolumn?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>PYT.: Co zrobić, jeśli Mój istniejący plik CSV nie zawiera nagłówków kolumn?
 
-**Odp.:** Jeśli nie możesz dodać nagłówków kolumn, można użyć pliku opisu schematu do traktowania plik CSV jako bazy danych.
+**ODP.:** Jeśli nie możesz dodać nagłówków kolumn, można użyć pliku opisu schematu do traktowania plik CSV jako bazy danych.
 
 1. Dodaj nowy plik tekstowy o nazwie *schema.ini*.
 
@@ -215,9 +214,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      ![Źródła danych dodane do testu](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: jak używać pliku XML jako źródło danych?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>PYT.: Jak używać pliku XML jako źródło danych?
 
-**Odp.:** tak.
+**ODP.:** Tak.
 
 1. Utwórz folder do organizowania artefaktów projektów bazy danych i dodać element.
 
@@ -247,9 +246,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      ![Wprowadź nazwę i wybierz plik XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: czy mogę dodać powiązanie danych na żądanie usługi sieci web używającego protokołu SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>PYT.: Można dodać powiązania danych na żądanie usługi sieci web używającego protokołu SOAP?
 
-**Odp.:** tak, należy zmienić plik XML protokołu SOAP ręcznie.
+**ODP.:** Tak, należy ręcznie zmienić XML protokołu SOAP.
 
 1. Wybierz żądanie usługi sieci web w drzewie żądań i w oknie dialogowym właściwości, wybierz wielokropek (...) we właściwości treść ciągu.
 

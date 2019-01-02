@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de77e30f0e9f52af10eef1757048a078d6d4a583
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 419712760d6920874fa89e0da80cc1529f767f1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840372"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Ten interfejs reprezentuje dostawcę symbol, który zawiera symbole i typy, zwracając je jako pola.  
@@ -32,12 +29,12 @@ IDebugSymbolProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawca symbol muszą implementować ten interfejs podanie symbol i podać informacje, aby ewaluatora wyrażeń.  
+ Dostawca symboli muszą implementować ten interfejs, można podać symboli, a następnie wpisz informacje ewaluatora wyrażeń.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest uzyskać za pomocą modelu COM `CoCreateInstance` — funkcja (dla dostawców symbol niezarządzanego) lub przez ładowanie odpowiednie zarządzany zestaw kodu i tworzenia wystąpienia dostawcy symbol, w oparciu o informacje znajdujące się w tym zestawie. Aparat debugowania tworzy wystąpienie dostawcy symbol do pracy w połączeniu z ewaluatora wyrażenia. Zobacz przykład jeden ze sposobów tworzenia wystąpienia tego interfejsu.  
+ Ten interfejs jest uzyskać za pomocą modelu COM `CoCreateInstance` — funkcja (dla dostawców symbol niezarządzanego) lub przez załadowanie odpowiedniego zarządzanego zestawu kodu i tworzenia wystąpienia dostawca symboli, w oparciu o informacje znajdujące się w tym zestawie. Aparat debugowania tworzy dostawca symboli do pracy w połączeniu z Ewaluator wyrażeń. Zobacz przykład jedno z podejść do tworzenia wystąpienia tego interfejsu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugSymbolProvider`.  
   
 |Metoda|Opis|  
@@ -51,24 +48,24 @@ IDebugSymbolProvider : IUnknown
 |[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Mapuje adres debugowania do kontekstu dokumentu.|  
 |[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Pobiera język używany do kompilowania kodu pod adresem debugowania.|  
 |`GetGlobalContainer`|Przestarzałe. Nie używać.|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Pobiera pole reprezentujący nazwę FQDN metody.|  
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Pobiera typ pola Klasa reprezentująca w pełni kwalifikowaną nazwę klasy.|  
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Tworzy moduł wyliczający dla przestrzeni nazw skojarzonych z tym adresem debugowania.|  
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Pobiera pole nazwy FQDN metody reprezentująca.|  
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Pobiera typ pola klasy reprezentujące w pełni kwalifikowaną nazwę klasy.|  
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Tworzy moduł wyliczający dla obszarów nazw skojarzonych z tym adresem debugowania.|  
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Mapuje nazwy symbolu typ symbolu.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Pobiera adres debugowania, znajdujący się na adres danego debugowania w metodzie.|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Pobiera adres debugowania, występującego z adresu podanego debugowania w metodzie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs mapuje pozycji dokumentu na adresy debugowania i na odwrót.  
+ Ten interfejs mapuje położenie dokumentu na adresy, debugowania i na odwrót.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pokazano, jak można utworzyć wystąpienia dostawcy symbol danego identyfikatora GUID (aparat debugowania musi znać tej wartości).  
+ W tym przykładzie przedstawiono sposób tworzenia wystąpienia dostawca symboli, biorąc pod uwagę jego identyfikator GUID (aparat debugowania musi znać tej wartości).  
   
 ```cpp  
 // A debug engine uses its own symbol provider and would know the GUID  

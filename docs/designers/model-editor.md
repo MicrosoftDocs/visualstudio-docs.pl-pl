@@ -2,7 +2,6 @@
 title: Edytor kodu
 ms.date: 04/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.3dscene
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833047"
 ---
 # <a name="model-editor"></a>Edytor modelu
 
@@ -93,14 +92,14 @@ W tej tabeli opisano elementy na **tryb edytora modelu** narzędzi, które są w
 |**Select**|Umożliwia wybór punktów, krawędzi, powierzchni lub obiektów w scenie, w zależności od aktywnego trybu zaznaczenia.|
 |**Przesuwanie**|Umożliwia ruch sceny 3D w względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W **wybierz** trybu, można nacisnąć i przytrzymać **Ctrl** aktywować **Pan** tymczasowo w trybie.|
 |**Zoom**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W **powiększenia** tryb, wybierz punkt w scenie a następnie przesuń w prawo lub w dół, aby powiększyć lub poziomie w lewo lub do powiększania.<br /><br /> W **wybierz** trybie można powiększyć lub przy użyciu kółka myszy podczas trzymania wciśniętego **Ctrl**.|
-|**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:** ten tryb nie działa, gdy **prostopadły** jest włączone rzutowanie.|
+|**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:**  W tym trybie nie ma efektu, gdy **prostopadły** jest włączone rzutowanie.|
 |**Lokalne świata**|Po włączeniu tego elementu przekształcenia wybranego obiektu występują w przestrzeni kuli ziemskiej. W przeciwnym razie przekształcenia na zaznaczonym obiekcie występują w przestrzeni lokalnej.|
 |**Tryb obrotu**|Po włączeniu tego elementu przekształcenia wpływają na położenie i orientację *punkt obrotu* wybranego obiektu (punkt obrotu definiuje środek operacji przesunięcia, skalowania i obrót). W przeciwnym razie przekształcenia wpływają na położenie i orientację geometrii obiektu względem punktu obrotu.|
 |**Zablokuj oś X**|Ogranicza możliwość manipulacji obiektem tylko do osi x. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Zablokuj oś Y**|Ogranicza możliwość manipulacji obiektem tylko do osi y. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Zablokuj oś Z**|Ogranicza możliwość manipulacji obiektem tylko do osi z. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Obiekt w ramce**|Umieszcza zaznaczony obiekt w ramce, tak aby znajdował się w środku widoku.|
-|**Widok**|Ustawienie orientacji widoku. Oto dostępne orientacje:<br /><br /> **Frontonu**<br /> Umieszcza widok przed sceną.<br /><br /> **Wstecz**<br /> Umieszcza widok za sceną.<br /><br /> **po lewej stronie**<br /> Umieszcza widok z lewej strony sceny.<br /><br /> **po prawej stronie**<br /> Umieszcza widok z prawej strony sceny.<br /><br /> **Do góry**<br /> Umieszcza widok nad sceną.<br /><br /> **dolny**<br /> Umieszcza widok pod sceną. **Uwaga:** jest to jedyny sposób zmiany kierunku widoku po **prostopadły** jest włączone rzutowanie.|
+|**Widok**|Ustawienie orientacji widoku. Oto dostępne orientacje:<br /><br /> **Frontonu**<br /> Umieszcza widok przed sceną.<br /><br /> **Wstecz**<br /> Umieszcza widok za sceną.<br /><br /> **po lewej stronie**<br /> Umieszcza widok z lewej strony sceny.<br /><br /> **po prawej stronie**<br /> Umieszcza widok z prawej strony sceny.<br /><br /> **Do góry**<br /> Umieszcza widok nad sceną.<br /><br /> **dolny**<br /> Umieszcza widok pod sceną. **Uwaga:**  Jest to jedyny sposób zmiany kierunku widoku po **prostopadły** jest włączone rzutowanie.|
 |**Projekcja**|Określa rodzaj rzutowania, który służy do rysowania sceny. Oto dostępne rzuty:<br /><br /> **Perspektywa**<br /> W rzutowaniu perspektywicznym obiekty, które są oddalone od punktu obserwacji, wyglądają na mniejsze, i ostatecznie zbiegają się do jednego punktu w odległości.<br /><br /> **Ortogonalnym**<br /> W rzutowaniu prostopadłym obiekty wydają się mieć taki sam rozmiar, niezależnie od ich odległości od punktu obserwacji. Nie są wyświetlane żadne zbieżności. Gdy **prostopadły** włączono projekcję, nie można użyć **Orbita** trybu do ustawienia widoku.|
 |**Styl rysowania**|Określa sposób renderowania obiektów w scenie. Oto dostępne style:<br /><br /> **Szkielet**<br /> Po włączeniu obiekty są renderowane jako szkieletowe.<br /><br /> **Overdraw**<br /> Po włączeniu obiekty są renderowane przy użyciu mieszania sumującego. Umożliwia to wizualizację ilości overdrawingu pojawiającego się w scenie.<br /><br /> **Płaskie cieniowanie**<br /> Po włączeniu obiekty są renderowane przy użyciu podstawowego, płaskiego zacieniowanego modelu oświetlenia. Umożliwia to łatwiejsze obejrzenie powierzchni obiektu.<br /><br /> Jeśli żadna z tych opcji nie jest włączona, każdy obiekt jest renderowany przy użyciu materiału, który jest do niego stosowany.|
 |**Tryb renderowania w czasie rzeczywistym**|Po włączeniu renderowania w czasie rzeczywistym programu Visual Studio odrysowuje powierzchnię projektu, nawet wtedy, gdy jest wykonywana żadna akcja użytkownika. Ten tryb jest przydatny podczas pracy z cieniowaniami zmieniającymi się w czasie.|
@@ -108,7 +107,7 @@ W tej tabeli opisano elementy na **tryb edytora modelu** narzędzi, które są w
 |**Przybornik**|Zamiennie pokazuje i ukrywa **przybornika**.|
 |**Konspekt dokumentu**|Zamiennie pokazuje i ukrywa **konspekt dokumentu** okna.|
 |**Właściwości**|Zamiennie pokazuje i ukrywa **właściwości** okna.|
-|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie z D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Renderowanie z D3D11WARP**<br /> Używa platformy WARP (Windows Advanced Rasterization Platform) programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Zarządzanie sceną**<br /><br /> **Importujuj**<br /> Importuje obiekty z innego pliku modelu 3D do bieżącej sceny.<br /><br /> **Dołącz do nadrzędnego**<br /> Ustanawia pierwszy z wielu zaznaczonych obiektów jako nadrzędny dla pozostałych zaznaczonych obiektów.<br /><br /> **Odłącz od nadrzędnego**<br /> Odłącza zaznaczony obiekt od jego obiektu nadrzędnego. Zaznaczony obiekt staje się *główny obiekt* w scenie. Obiekt główny nie ma obiektu nadrzędnego.<br /><br /> **Utwórz grupę**<br /> Grupuje zaznaczone obiekty jako obiekty równorzędne.<br /><br /> **Scal obiekty**<br /> Łączy zaznaczone obiekty w jeden obiekt.<br /><br /> **Utwórz nowy obiekt z zaznaczenia wielokątnego**<br /> Usuwa z bieżącego obiektu wybrane powierzchnie i dodaje do sceny nowy obiekt zawierający te powierzchnie.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć w Wielokącie**<br /> Przerzuca wybrane wielokąty, tak że kolejność ich wierzchołków i normalnych powierzchni jest odwrócona.<br /><br /> **Usuń wszystkie animacje**<br /> Usuwa dane animacji z obiektów.<br /><br /> **Triangulacji**<br /> Konwertuje zaznaczony obiekt na trójkąty.<br /><br /> **Widok**<br /><br /> Odrzucanie tylnych ścian<br /> Włącza lub wyłącza odrzucanie tylnych ścian.<br /><br /> **Szybkość klatek**<br /> Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.<br /><br /> Ta opcja jest przydatna po włączeniu **tryb renderowania w czasie rzeczywistym** opcji.<br /><br /> **Pokaż wszystko**<br /> Pokazuje wszystkie obiekty w scenie. Spowoduje to zresetowanie **ukryty** właściwości obiektu do **False**.<br /><br /> **Pokaż normalne powierzchni**<br /> Pokazuje normalną każdej powierzchni.<br /><br /> **Pokaż brakujące materiały**<br /> Wyświetla specjalną teksturę na obiektach, które nie mają przypisanych materiałów.<br /><br /> **Pokazuj przestawne**<br /> Włącza lub wyłącza wyświetlanie znacznika osi 3D w punkcie obrotu aktywnego zaznaczenia.<br /><br /> **Pokaż węzły zastępcze**<br /> Pokazuje węzły zastępcze. Węzeł zastępczy jest tworzony podczas grupowania obiektów.<br /><br /> **Pokaż normalne wierzchołka**<br /> Pokazuje normalną każdego wierzchołka. **Porada:** możesz wybrać **skrypty** przycisk, aby ponownie uruchomić ostatni skrypt.|
+|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie z D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Renderowanie z D3D11WARP**<br /> Używa platformy WARP (Windows Advanced Rasterization Platform) programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Zarządzanie sceną**<br /><br /> **Importujuj**<br /> Importuje obiekty z innego pliku modelu 3D do bieżącej sceny.<br /><br /> **Dołącz do nadrzędnego**<br /> Ustanawia pierwszy z wielu zaznaczonych obiektów jako nadrzędny dla pozostałych zaznaczonych obiektów.<br /><br /> **Odłącz od nadrzędnego**<br /> Odłącza zaznaczony obiekt od jego obiektu nadrzędnego. Zaznaczony obiekt staje się *główny obiekt* w scenie. Obiekt główny nie ma obiektu nadrzędnego.<br /><br /> **Tworzenie grupy**<br /> Grupuje zaznaczone obiekty jako obiekty równorzędne.<br /><br /> **Scal obiekty**<br /> Łączy zaznaczone obiekty w jeden obiekt.<br /><br /> **Utwórz nowy obiekt z zaznaczenia wielokątnego**<br /> Usuwa z bieżącego obiektu wybrane powierzchnie i dodaje do sceny nowy obiekt zawierający te powierzchnie.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć w Wielokącie**<br /> Przerzuca wybrane wielokąty, tak że kolejność ich wierzchołków i normalnych powierzchni jest odwrócona.<br /><br /> **Usuń wszystkie animacje**<br /> Usuwa dane animacji z obiektów.<br /><br /> **Triangulacji**<br /> Konwertuje zaznaczony obiekt na trójkąty.<br /><br /> **Widok**<br /><br /> Odrzucanie tylnych ścian<br /> Włącza lub wyłącza odrzucanie tylnych ścian.<br /><br /> **Szybkość klatek**<br /> Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.<br /><br /> Ta opcja jest przydatna po włączeniu **tryb renderowania w czasie rzeczywistym** opcji.<br /><br /> **Pokaż wszystko**<br /> Pokazuje wszystkie obiekty w scenie. Spowoduje to zresetowanie **ukryty** właściwości obiektu do **False**.<br /><br /> **Pokaż normalne powierzchni**<br /> Pokazuje normalną każdej powierzchni.<br /><br /> **Pokaż brakujące materiały**<br /> Wyświetla specjalną teksturę na obiektach, które nie mają przypisanych materiałów.<br /><br /> **Pokazuj przestawne**<br /> Włącza lub wyłącza wyświetlanie znacznika osi 3D w punkcie obrotu aktywnego zaznaczenia.<br /><br /> **Pokaż węzły zastępcze**<br /> Pokazuje węzły zastępcze. Węzeł zastępczy jest tworzony podczas grupowania obiektów.<br /><br /> **Pokaż normalne wierzchołka**<br /> Pokazuje normalną każdego wierzchołka. **Porada:**  Możesz wybrać **skrypty** przycisk, aby ponownie uruchomić ostatni skrypt.|
 
 Oto **edytora modelu** narzędzi:
 
@@ -138,7 +137,7 @@ W poniższej tabeli opisano formanty widoku podstawowego.
 |------------------|-----------------|
 |**Przesuwanie**|Umożliwia ruch sceny 3D w względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W **wybierz** trybu, można nacisnąć i przytrzymać **Ctrl** aktywować **Pan** tymczasowo w trybie.|
 |**Zoom**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W **powiększenia** tryb, wybierz punkt w scenie a następnie przesuń w prawo lub w dół, aby powiększyć lub poziomie w lewo lub do powiększania.<br /><br /> W **wybierz** trybie można powiększyć lub przy użyciu kółka myszy podczas trzymania wciśniętego **Ctrl**.|
-|**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:** ten tryb nie działa, gdy **prostopadły** jest włączone rzutowanie.|
+|**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:**  W tym trybie nie ma efektu, gdy **prostopadły** jest włączone rzutowanie.|
 |**Obiekt w ramce**|Umieszcza zaznaczony obiekt w ramce, tak aby znajdował się w środku widoku.|
 
 Widok jest ustanowiony przez wirtualną kamerę, ale jest również określony przez rzutowanie. Rzut definiuje sposób translacji kształtów i obiektów w widoku na piksele na powierzchni projektowej. Na **edytora modelu** narzędzi, możesz wybrać dowolną **perspektywy** lub **prostopadły** projekcji.
@@ -156,7 +155,7 @@ Aby lepiej zrozumieć obiekt 3D lub scenę, można wyświetlić dodatkowe szczeg
 
 ### Tworzenie i importowanie obiektów 3D <a name="Adding3DObjects"></a>
 
-Aby dodać wstępnie zdefiniowany kształt 3D do sceny, w **przybornika**, wybierz jedną, a następnie przenieś go do powierzchni projektowej. Nowe kształty są umieszczane w źródle sceny. Edytor modelu zawiera siedem kształtów: **stożek**, **modułu**, **Cylinder**, **dysku**, **płaszczyzny**,  **Kula**, i **Czajniczek**.
+Aby dodać wstępnie zdefiniowany kształt 3D do sceny, w **przybornika**, wybierz jedną, a następnie przenieś go do powierzchni projektowej. Nowe kształty są umieszczane w źródle sceny. Edytor modelu zawiera siedem kształtów: **Stożek**, **modułu**, **Cylinder**, **dysku**, **płaszczyzny**, **kuli**i **Czajniczek**.
 
 Można zaimportować obiektu 3D z pliku, na **edytora modelu** narzędzi, wybierz **zaawansowane** > **Zarządzanie sceną** > **importowania**  > i określ plik, który chcesz zaimportować.
 
@@ -193,7 +192,7 @@ Może się to okazać przydatne w pracy z obiektami za pomocą przyciągania do 
 
 Punkt obrotu obiektu definiuje środek obrotu i skalowania. Można zmienić punkt obrotu obiektu, aby zmienić wpływ przekształceń obrotu i skalowania na obiekt. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** można włączyć (lub wyłączyć) tryb obrotu. Po włączeniu trybu obrotu, w punkcie obrotu wybranego obiektu pojawia się mały wskaźnik osi. Następnie można użyć **tłumaczenia** i **obrotu** narzędzia do manipulowania punktem obrotu.
 
-Demonstracyjne, który pokazuje, jak używać punktu obrotu, zobacz [porady: modyfikowanie punktu obrotu modelu 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
+Demonstracyjne, który pokazuje, jak używać punktu obrotu, zobacz [jak: Modyfikowanie punktu obrotu modelu 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Tryby lokalne i świata
 
@@ -265,7 +264,7 @@ W zależności od tego, co obsługuje materiał, można zmienić jego właściwo
 
 Aby usunąć wszystkie materiały z obiektu na **edytora modelu** narzędzi, wybierz **skrypty** > **materiałów** > **Usuń Materiały**.
 
-Możesz użyć **Shader Designer** utworzyć niestandardowe materiały modułu cieniującego, które można stosować do obiektów, sceny 3D. Aby uzyskać informacje o tym, jak utworzyć niestandardowe materiały modułu cieniującego, zobacz [Shader Designer](../designers/shader-designer.md). Aby uzyskać informacje dotyczące sposobu stosowania niestandardowego materiału cieniowania do obiektu, zobacz [porady: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Możesz użyć **Shader Designer** utworzyć niestandardowe materiały modułu cieniującego, które można stosować do obiektów, sceny 3D. Aby uzyskać informacje o tym, jak utworzyć niestandardowe materiały modułu cieniującego, zobacz [Shader Designer](../designers/shader-designer.md). Aby uzyskać informacje dotyczące sposobu stosowania niestandardowego materiału cieniowania do obiektu, zobacz [jak: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Zarządzanie sceną
 

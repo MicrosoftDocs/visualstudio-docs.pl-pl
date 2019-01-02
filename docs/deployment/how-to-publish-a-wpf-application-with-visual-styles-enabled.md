@@ -1,8 +1,6 @@
 ---
-title: 'Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861504"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależności od motywu, wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), więc należy włączyć je ręcznie. Włączanie stylów wizualnych dla aplikacji WPF i opublikować rozwiązanie spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu, a proces publikowania aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych zobacz [style wizualne omówienie](/windows/desktop/Controls/visual-styles-overview). Aby uzyskać więcej informacji na temat komunikatu o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Aby naprawić błąd i opublikować rozwiązanie, należy wykonać następujące zadania:  
@@ -73,7 +71,7 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
          Ten przycisk pokazuje wszystkie elementy projektu, w tym te, które zostały wykluczone, które zwykle są ukryte. Plik manifestu jest wyświetlany jako element projektu.  
   
-2.  Twórz i Publikuj swoje rozwiązanie. Aby uzyskać więcej informacji o sposobie publikowania rozwiązania, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+2.  Twórz i Publikuj swoje rozwiązanie. Aby uzyskać więcej informacji o sposobie publikowania rozwiązania, zobacz [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="create-a-manifest-file"></a>Utwórz plik manifestu  
   

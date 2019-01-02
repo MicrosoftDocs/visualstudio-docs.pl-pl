@@ -2,7 +2,6 @@
 title: Testowanie aplikacji platformy uniwersalnej systemu Windows za pomocą kodowanych testów interfejsu użytkownika
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2ee648a11c04f9ff6da2f7113c37424b4f1f6388
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842047"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Tworzenie kodowanego interfejsu użytkownika testu do testowania aplikacji platformy uniwersalnej systemu Windows
 
@@ -207,17 +206,17 @@ Pierwszym krokiem jest, aby utworzyć prostą aplikację platformy uniwersalnej 
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: Dlaczego nie widzę opcji zapisu mojego kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>PYT.: Dlaczego nie widzę opcji zapisu mojego kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego
 
-**A**: opcja zapisu nie jest obsługiwana dla aplikacji platformy uniwersalnej systemu Windows.
+**A**: Opcja zapisu nie jest obsługiwana dla aplikacji platformy uniwersalnej systemu Windows.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>P: czy można utworzyć kodowany test interfejsu użytkownika dla mojej aplikacji platformy uniwersalnej systemu Windows oparte na WinJS?
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>PYT.: Czy można utworzyć kodowany test interfejsu użytkownika, dla mojej aplikacji platformy uniwersalnej systemu Windows oparte na WinJS?
 
-**Element**: nie są obsługiwane tylko aplikacje oparte na XAML.
+**A**: Nie są obsługiwane tylko aplikacje oparte na XAML.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYT.: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
 
-**A**: dowolnego kodu, zmiany wprowadzone w oknie *UIMapDesigner.cs* pliku zostaną zastąpione za każdym razem, gdy generowane za pomocą kodu **kodowanego testu interfejsu użytkownika**. Jeśli trzeba zmodyfikować nagraną metodę, skopiuj go do *UIMap.cs* plików i zmień jego nazwę. *UIMap.cs* pliku może służyć do zastępowania metod i właściwości w *UIMapDesigner.cs* pliku. Usuń odwołanie do oryginalnej metody w *CodedUITest.cs* plik i zastąp go nazwą metody o zmienionej nazwie.
+**A**: Dowolny kod zmiany wprowadzone w oknie *UIMapDesigner.cs* pliku zostaną zastąpione za każdym razem, gdy generowane za pomocą kodu **kodowanego testu interfejsu użytkownika**. Jeśli trzeba zmodyfikować nagraną metodę, skopiuj go do *UIMap.cs* plików i zmień jego nazwę. *UIMap.cs* pliku może służyć do zastępowania metod i właściwości w *UIMapDesigner.cs* pliku. Usuń odwołanie do oryginalnej metody w *CodedUITest.cs* plik i zastąp go nazwą metody o zmienionej nazwie.
 
 ## <a name="see-also"></a>Zobacz także
 

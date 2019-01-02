@@ -1,8 +1,6 @@
 ---
-title: Wykres wykorzystania CPU | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wykres wykorzystania procesora CPU | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.graph
@@ -14,25 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40bc0be19ffa0daa9a0ea786d7e06a4e9e7dfd4b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 570ddb4472baec04e656db0b36af5a2550720774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830287"
 ---
-# <a name="cpu-utilization-graph"></a>Wykres wykorzystania CPU
-Wykres wykorzystania CPU pokazuje poziom użycia w aplikacji w czasie. Osi x reprezentuje czas trwania śledzenia, a oś y — liczba rdzeni logicznych w systemie. Wykres nie pokazuje, które określonym rdzeniu jest aktywny w danym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego jej użycia.  
+# <a name="cpu-utilization-graph"></a>Wykres wykorzystania procesora CPU
+Wykres wykorzystania procesora CPU pokazuje poziom użycia w aplikacji wraz z upływem czasu. Oś x reprezentuje czas trwania śledzenia, a oś y — liczba rdzeni logicznych w systemie. Wykres nie pokazuje, w którym określonych podstawowe jest aktywny w dowolnym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego wykorzystywane.  
   
-## <a name="cpu-utilization-graph-colors"></a>Kolory Wykres wykorzystania CPU  
+## <a name="cpu-utilization-graph-colors"></a>Kolory Wykres wykorzystania procesora CPU  
   
--   Zielony oznacza użycie przez rdzenie logiczne w systemie przez bieżącego procesu.  
+-   Zielony oznacza użycie rdzeni logicznych w systemie przez bieżący proces.  
   
--   Szary światła wskazuje wykorzystania rdzeni logicznych przez inne procesy w systemie. Wysoki procent światła szarości na wykresie Procesora wskazuje, że system obciążonego przez inne procesy, i proces może być opóźnieniem przez nich. Aby zmniejszyć zużycie rdzeni logicznych przez inne procesy, należy zmniejszyć liczbę ich działa w systemie.  
+-   Jasny zwykle wskazuje użycie rdzeni logicznych przez inne procesy w systemie. Wysoki odsetek szarości światła w wykres czasu procesora CPU wskazuje, że system jest silnie obciążony przez inne procesy, i proces może być wyparte przez nich. Aby zmniejszyć zużycie rdzenie logiczne przez inne procesy, Zmniejsz liczbę ich działa w systemie.  
   
--   Ciemny zwykle wskazuje użycia rdzeni logicznych przez proces systemowy. Nie można bezpośrednio kontrolować to, ale warto wiedzieć, kiedy jest wykonywana, ponieważ może wpłynąć na dostępność rdzeni logicznych procesu.  
+-   Ciemnoszary wskazuje użycia rdzeni logicznych przez proces systemowy. Nie można bezpośrednio kontrolować to, ale warto wiedzieć, kiedy ma miejsce, ponieważ może mieć wpływ na dostępność rdzeni logicznych dla procesu.  
   
--   Białe wskazuje dostępność nieużywane rdzenie logiczne w systemie. Rdzenie te są dostępne dla procesu, jeśli można znaleźć więcej możliwości równoległości.  
+-   Oficjalny wskazuje dostępność nieużywane rdzenie logiczne w systemie. Rdzenie te są dostępne dla procesu, jeśli możesz znaleźć dodatkowe możliwości w równoległości obliczeń.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok wykorzystania](../profiling/utilization-view.md)   

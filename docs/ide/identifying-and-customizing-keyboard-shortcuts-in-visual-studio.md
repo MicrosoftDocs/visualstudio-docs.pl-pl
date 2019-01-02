@@ -2,7 +2,6 @@
 title: Identyfikowanie i dostosowywanie skrótów klawiaturowych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820400"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio
 
@@ -69,7 +68,7 @@ Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, 
 
 2. Rozwiń **środowiska** folder, a następnie wybierz **klawiatury**.
 
-3. Opcjonalnie: Filtrować listę poleceń, wprowadzając całość lub część nazwy polecenia, bez spacji w **Pokaż polecenia zawierające** pole.
+3. Opcjonalne: Filtruj listę poleceń, wprowadzając całość lub część nazwy polecenia, bez spacji w **Pokaż polecenia zawierające** pole.
 
 4. Z listy wybierz polecenie, do którego chcesz przypisać skrót klawiaturowy.
 
@@ -78,7 +77,7 @@ Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, 
     Na przykład, można wybrać **Global** Jeśli chcesz, aby skrót działał we wszystkich kontekstach. Można użyć dowolnego skrótu, który nie jest mapowany (jako globalny) w innym edytorze. W przeciwnym razie edytor zastępuje skrót.
 
     > [!NOTE]
-    > Nie można przypisać następujących klawiszy jako części skrótów klawiaturowych w **Global**: Drukuj podręcznego/Sys Rq, przewiń Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, klawiszy logo Windows, klucz aplikacji znajdujących się w strzałkę klucze lub Enter; Num Lock, Delete lub Clear na klawiaturze numerycznej; Kombinacja klawiszy Ctrl + Alt + Delete.
+    > Nie można przypisać następujących klawiszy jako części skrótów klawiaturowych w **Global**: Drukuj podręcznego/Sys Rq, Scroll Lock, Pause/Break, kartę, włączony klawisz Caps Lock, Insert, Home, End, Page Up, Page Down, klawiszy logo Windows, klucz aplikacji, za pomocą klawiszy strzałek lub Enter; Num Lock, Delete lub Clear na klawiaturze numerycznej; Kombinacja klawiszy Ctrl + Alt + Delete.
 
 6. W **naciśnij klawisze skrótu** wprowadź skrót, którego chcesz użyć.
 

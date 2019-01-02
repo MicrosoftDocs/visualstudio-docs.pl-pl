@@ -1,9 +1,6 @@
 ---
 title: 'Generowanie nowego projektu: Za kulisami, część jednego | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827653"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: za kulisami, część pierwsza
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: Kulisami część pierwsza
 Nigdy nie myśl o tym, jak utworzyć swój własny typ projektu? Zastanawiasz się, co rzeczywiście się dzieje po utworzeniu nowego projektu? Teraz wykonać podglądu pod maską i zobacz, co naprawdę dzieje.  
   
  Istnieje kilka zadań, które współrzędne programu Visual Studio:  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   Można zmienić kolejność sortowania.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Znajdowanie węzeł główny dla typu projektu  
- Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, otworzy wszystkie pliki zip i wyodrębnia pliki vstemplate. Plik .vstemplate używa XML do opisu szablonu aplikacji. Aby uzyskać więcej informacji, zobacz [Generowanie nowego projektu: pod maską, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, otworzy wszystkie pliki zip i wyodrębnia pliki vstemplate. Plik .vstemplate używa XML do opisu szablonu aplikacji. Aby uzyskać więcej informacji, zobacz [Generowanie nowego projektu: Za kulisami, część dwóch](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > tag Określa typ projektu dla aplikacji. Na przykład plik \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip zawiera plik EmptyProject.vstemplate, który zawiera ten tag:  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **Obiekt MyProjectNode** jest wyświetlany jako węzeł podrzędny programu Visual C# tuż pod węzeł Windows.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Generowanie nowego projektu: za kulisami, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Generowanie nowego projektu: Kulisami część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

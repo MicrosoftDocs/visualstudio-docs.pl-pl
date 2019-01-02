@@ -1,8 +1,6 @@
 ---
 title: Edytuj i Kontynuuj — okno dialogowe komunikat o błędzie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828673"
 ---
 # <a name="edit-and-continue-error-message"></a>Edytuj i Kontynuuj komunikat o błędzie 
 
@@ -37,7 +35,7 @@ Możliwe przyczyny tego komunikatu o błędzie:
 -   Podczas próby edytowania zoptymalizowanego kodu. Konieczne może przełączyć się z kompilację wydania do kompilacji debugowania.
 -   Próby edytowania kodu, gdy jest uruchomiona, a nie gdy wstrzymaniu w debugerze. Spróbuj [ustawienie punktu przerwania](../debugger/using-breakpoints.md)i Edycja kodu podczas wstrzymania.
 -   Podczas próby edytowania kodu zarządzanego, gdy włączone jest tylko debugowanie niezarządzane. Edytuj i Kontynuuj nie działa w przypadku [debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).
--   W języku programowania, dzięki czemu kod to zmienić, nie jest obsługiwany przez Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz artykuły [obsługiwane zmiany kodu w języku C#](supported-code-changes-csharp.md), [edycji w języku Visual Basic, Edytuj i Kontynuuj nieobsługiwana](unsupported-edits-in-visual-basic-edit-and-continue.md), i [obsługiwane zmiany kodu C++](supported-code-changes-cpp.md).
+-   W języku programowania, dzięki czemu kod to zmienić, nie jest obsługiwany przez Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz artykuły [obsługiwane zmiany kodu w języku C#](supported-code-changes-csharp.md), [edycji w języku Visual Basic, Edytuj i Kontynuuj nieobsługiwana](/visualstudio/debugger/supported-code-changes-csharp), i [obsługiwane zmiany kodu C++](supported-code-changes-cpp.md).
 -   Próba edycji kodu w aplikacji dołączysz do, zamiast uruchamiania, debugowania z **debugowania** menu.  
 -   Podczas próby edytowania kodu podczas debugowania odzyskiwania po awarii. Zrzut programu Watson.  
 -   Próby edytowania kodu po wystąpieniu nieobsługiwanego wyjątku, a opcja **Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków** nie jest zaznaczone.  

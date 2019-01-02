@@ -7,17 +7,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e23bfe676a8e6852d6bd38bd75a9198ad4bf233
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847840"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Ostrzeżenie: Wprowadzono zmiany do okna dialogowego Konfigurowanie zachowania, które nie zostały zastosowane
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Ostrzeżenie: Wprowadzono zmiany w oknie dialogowym Konfigurowanie zachowania, które nie zostały zastosowane
 
 Ostrzeżenie. Wprowadzono zmiany do okna dialogowego Konfigurowanie zachowania, które nie zostały zastosowane. Czy chcesz zastosować zmiany?
 

@@ -2,7 +2,6 @@
 title: Szybka czujka — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.quickwatch
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce3c95591809b847141dde07b2a770d9b4597a5f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: e8e4ebd4ee4de8cd15a8ec930c200e7224da2186
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837449"
 ---
 # <a name="quick-watch-command"></a>Szybka czujka — Polecenie
-Wyświetla wybrany lub określony tekst w polu wyrażenie [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) okna. To okno dialogowe służy do obliczania bieżącą wartość zmiennej lub wyrażenie rozpoznawane przez debuger lub zawartość rejestru. Ponadto można zmienić wartość zmiennej żadnych wartością stałą lub zawartość dowolnego rejestru.
+Wyświetla zaznaczony lub określony tekst w polu wyrażenie [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) okna. To okno dialogowe służy do obliczania wartości bieżącej zmiennej lub wyrażenia uznane przez debuger lub zawartości rejestru. Ponadto można zmienić wartość dowolnej zmiennej niestały lub zawartość dowolnego rejestru.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,10 +33,10 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>Argumenty
  `text`
 
- Opcjonalna. Tekst, aby dodać do **QuickWatch** okno dialogowe.
+ Opcjonalna. Tekst do dodania do **QuickWatch** okno dialogowe.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli `text` jest pominięty, aktualnie zaznaczonego tekstu lub word wskazywanej przez kursor jest dodawany do okna czujki.
+ Jeśli `text` jest pominięty, aktualnie zaznaczonego tekstu lub word przy kursorze jest dodawany do okna czujki.
 
 ## <a name="example"></a>Przykład
 
@@ -47,8 +46,8 @@ Debug.QuickWatchq [text]
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Ustaw czujki na zmiennych czujki i QuickWatch Windows w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
+- [Ustawianie wyrażenia kontrolnego na zmiennych przy użyciu wyrażenie kontrolne i QuickWatch Windows w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

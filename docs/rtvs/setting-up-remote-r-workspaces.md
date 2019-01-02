@@ -3,19 +3,18 @@ title: Zdalne obszary robocze dla języka R
 description: Jak skonfigurować zdalne R obszary robocze i połączyć je z programu Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837787"
 ---
 # <a name="set-up-remote-workspaces"></a>Konfigurowanie zdalnych obszarów roboczych
 
@@ -171,13 +170,13 @@ Aby uruchomić kod języka R, komputer zdalny musi mieć interpreter języka R z
 
 Z usługami R services uruchomiony na komputerze zdalnym możesz również muszą tworzyć konta użytkowników, ustawianie reguł zapory, konfigurowanie sieci platformy Azure i konfigurowanie certyfikatu SSL.
 
-1. Konta użytkowników: tworzenie kont dla każdego użytkownika, który uzyskuje dostęp do komputera zdalnego. Można tworzyć konta albo lokalnego użytkownika standardowego (nieuprzywilejowany) lub Dołącz do komputera z programem R server do domeny i Dodaj grupy zabezpieczeń odpowiednich do `Users` grupy zabezpieczeń.
+1. Konta użytkowników: Tworzenie kont dla każdego użytkownika, który uzyskuje dostęp do komputera zdalnego. Można tworzyć konta albo lokalnego użytkownika standardowego (nieuprzywilejowany) lub Dołącz do komputera z programem R server do domeny i Dodaj grupy zabezpieczeń odpowiednich do `Users` grupy zabezpieczeń.
 
 1. Reguły zapory: Domyślnie `R Host Broker` nasłuchuje na porcie TCP 5444. W związku z tym, upewnij się, że Windows włączonych reguł zapory dla ruchu przychodzącego i wychodzącego (ruchu wychodzącego jest niezbędne do instalowania pakietów i podobne scenariusze).  Instalator usług języka R Określa, że te reguły automatycznie dla wbudowanej zapory Windows. Jeśli używasz zapory innych firm, otwórz port 5444 `R Host Broker` ręcznie.
 
-1. Konfiguracja platformy Azure: Jeśli komputer zdalny jest maszynę wirtualną na platformie Azure, otwórz port 5444 dla przychodzącego ruchu w sieci platformy Azure jako, który jest niezależny od zapory Windows. Aby uzyskać więcej informacji, zobacz [filtrowanie ruchu sieciowego z sieciową grupą zabezpieczeń](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) w dokumentacji platformy Azure.
+1. Konfiguracja platformy Azure: Jeśli komputer zdalny jest maszyną wirtualną na platformie Azure, należy otworzyć port 5444 dla ruchu przychodzącego w obrębie platformy Azure, jak również sieci, który jest niezależny od zapory Windows. Aby uzyskać więcej informacji, zobacz [filtrowanie ruchu sieciowego z sieciową grupą zabezpieczeń](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) w dokumentacji platformy Azure.
 
-1. Poinformuj brokera hosta R certyfikatu SSL, który można załadować: Jeśli użytkownik instaluje certyfikat na serwerze sieci Intranet, jest prawdopodobne, że w pełni kwalifikowana nazwa domeny serwera jest taka sama jak jego nazwa NETBIOS. W takim przypadku nie ma nic, należy wykonać, ponieważ jest to domyślny certyfikat, który jest ładowany.
+1. Powiedz brokera hosta R certyfikatu SSL, który można załadować: Jeśli instalujesz certyfikat na serwerze sieci Intranet, jest prawdopodobne, że w pełni kwalifikowana nazwa domeny serwera jest taka sama jak jego nazwa NETBIOS. W takim przypadku nie ma nic, należy wykonać, ponieważ jest to domyślny certyfikat, który jest ładowany.
 
     Jednakże jeśli certyfikat jest instalowany na serwerze dostępnym z Internetu (na przykład w przypadku maszyn wirtualnych platformy Azure), użyć w pełni kwalifikowana nazwa domeny (FQDN) serwera, ponieważ nazwę FQDN serwera dostępnego z Internetu nigdy nie jest taka sama jak jego nazwa NETBIOS.
 
