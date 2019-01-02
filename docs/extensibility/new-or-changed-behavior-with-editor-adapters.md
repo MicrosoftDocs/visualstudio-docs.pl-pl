@@ -1,9 +1,6 @@
 ---
 title: Zachowaniem nowe lub zostały zmienione z kartami edytora | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901613"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Zachowaniem nowe lub zostały zmienione z kartami edytora
 Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edytor programu Visual Studio i planujesz używać edytora karty (lub podkładki) zamiast przy użyciu nowego interfejsu API, należy pamiętać o następujących różnicach zachowania kart edytora w odniesieniu do poprzedniego podstawowy edytor.  
@@ -44,7 +41,7 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
  Tryb WPF różni się od trybu Win32 na dwa sposoby. Najpierw wyświetl tekst może być hostowana w kontekście WPF. Dostęp do okienka WPF przez rzutowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> i wywoływać metodę <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>. Drugi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> nadal zwraca HWND, ale ta HWND można tylko sprawdź jego położenie i ustawić fokus na nim. Nie można używać tego HWND odpowiedzieć na komunikat WM_PAINT, ponieważ nie wpłynie to jak edytor umożliwia malowanie okna. Ta HWND znajduje się tylko po to, aby ułatwić przejście do nowego kodu w edytorze za pomocą kart. Zdecydowanie zaleca się, że nie należy używać `VIF_NO_HWND_SUPPORT` Jeśli składnik wymaga do pracy ze względu na ograniczenia w HWND zwrócony z właściwością HWND `GetWindowHandle` while, w tym trybie.  
   
 #### <a name="pass-arrays-as-parameters-in-native-code"></a>Przekazywanie tablic jako parametrów w kodzie natywnym  
- Istnieje wiele metod w edytorze starszej wersji interfejsu API, które mają parametry, które zawierają tablicy i liczbę jej. Przykładami są:  
+ Istnieje wiele metod w edytorze starszej wersji interfejsu API, które mają parametry, które zawierają tablicy i liczbę jej. Oto przykłady:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -58,7 +55,7 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
  Karta bufor zawsze powinna wywołać z wątku interfejsu użytkownika. Karta buforu jest obiekt zarządzany, co oznacza, że wywołanie go z kodu zarządzanego pomijał kierowanie modelu COM i wywołania będą nie automatycznie być przekazywane do wątku interfejsu użytkownika.  W przypadku wywołania adapter buforu z wątku w tle, należy użyć <xref:System.Windows.Threading.Dispatcher.Invoke%2A> lub podobnej metody.  
   
 #### <a name="lockbuffer-methods"></a>Metody LockBuffer  
- Wszystkie metody LockBuffer() są przestarzałe. Przykładami są:  
+ Wszystkie metody LockBuffer() są przestarzałe. Oto przykłady:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   

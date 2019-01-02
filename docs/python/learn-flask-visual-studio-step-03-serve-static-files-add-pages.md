@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności pokazująca, jak obsługa plików statycznych, dodawanie stron do aplikacji i użyć szablonu dziedziczenia
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 22d498ea38494baa12539039960685bb0abda056
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917558"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3. Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 
-**Poprzedni krok: [tworzenie aplikacji Flask za pomocą widoków i stron szablonów](learn-flask-visual-studio-step-02-create-app.md)**
+**Poprzedniego kroku: [Tworzenie aplikacji Flask za pomocą widoków i szablonów stron](learn-flask-visual-studio-step-02-create-app.md)**
 
 W poprzednich krokach w tym samouczku wyjaśniono sposób tworzenia minimalną aplikację Flask za pomocą pojedynczej strony HTML niezależna. Nowoczesne aplikacje sieci web, jednak zwykle składają się z wielu stron i wprowadzić korzystanie z zasobów udostępnionych, takich jak pliki CSS i JavaScript, aby zapewnić spójne stylów i zachowanie.
 
@@ -34,7 +33,7 @@ W tym kroku dowiesz się, jak:
 > - Dodawanie dodatkowych stron do aplikacji (krok 3 z 3)
 > - Użyj szablonu dziedziczenia, aby utworzyć pasek nagłówka, jak i nawigacji, który jest używany na stronach (krok 3 – 4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 1 z 3: zapoznanie się z szablonów elementów
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 1 z 3: Zapoznanie się z szablonów elementów
 
 Podczas opracowywania aplikacji Flask, zazwyczaj należy dodać wiele plików więcej języka Python, HTML, CSS i JavaScript. Dla każdego typu pliku (oraz innych plików, takich jak *web.config* potrzebne do wdrożenia), program Visual Studio zapewnia wygodne [elementu szablony](python-item-templates.md) ułatwią Ci rozpoczęcie pracy.
 
@@ -46,7 +45,7 @@ Aby użyć szablonu, wybrania odpowiedniego szablonu, określ nazwę pliku i wyb
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pytanie: Jak Visual Studio wiesz, które element szablonów do oferty?
 
-Odpowiedź: Visual Studio pliku projektu (*.pyproj*) zawiera identyfikator typu projektu, który oznacza je jako projektu języka Python. Visual Studio używa tego identyfikatora typu, aby pokazać tylko te szablony elementów, które są odpowiednie dla typu projektu. W ten sposób programu Visual Studio można podać bogatego zestawu szablonów elementów, dla typów bez konieczności sortowanie je każdym razem, gdy wiele projektów.
+Odpowiedź: Plik projektu programu Visual Studio (*.pyproj*) zawiera identyfikator typu projektu, który oznacza je jako projektu języka Python. Visual Studio używa tego identyfikatora typu, aby pokazać tylko te szablony elementów, które są odpowiednie dla typu projektu. W ten sposób programu Visual Studio można podać bogatego zestawu szablonów elementów, dla typów bez konieczności sortowanie je każdym razem, gdy wiele projektów.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 2 z 3: Obsługa plików statycznych z aplikacji
 
@@ -119,9 +118,9 @@ Flask udostępnia funkcję o nazwie `serve_static_file` , którą można wywoła
 
 Odpowiedź: Możesz dodać inne pliki CSS, JavaScript i HTML w swojej *statyczne* folderu dowolny sposób. Typowy sposób organizowania plików statycznych jest utworzenie podfoldery o nazwach odpowiadających *czcionki*, *skrypty*, i *zawartości* (dla arkuszy stylów i inne pliki).
 
-### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pytanie: Jak obsługiwać adresu URL zmienne i parametry zapytania w interfejsie API?
+### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pytanie: Jak obsługiwać adresu URL zmienne i parametry zapytania w interfejsie API
 
-Odpowiedź: Zobacz odpowiedź w kroku 1 – 4 dla [pytanie: jak Flask pracować zmiennej tras adresów URL i parametry zapytania?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Odpowiedź: Zobacz odpowiedź w kroku 1 – 4 dla [zapytania: Jak działa Flask za pomocą zmiennej trasy adresu URL i parametry zapytania](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Krok 3 z 3: Dodaj stronę aplikacji
 
@@ -174,11 +173,11 @@ Poniższe kroki Dodawanie strony "About" do projektu "HelloFlask" i łącza do t
 
 1. Uruchom projekt, aby obserwować wyniki i sprawdź Nawigacja między stronami. Zatrzymaj aplikację po zakończeniu.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pytanie: Czy nazwa funkcji strony ma znaczenie do Flask?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pytanie: Czy nazwy funkcji strony ma znaczenie Flask
 
 Odpowiedź: Brak, ponieważ jest on `@app.route` dekoratora, który określa adresy URL, dla których Flask wywołuje funkcję do generowania odpowiedzi. Deweloperzy zazwyczaj jest zgodna z nazwą funkcji, do trasy, ale takie dopasowania nie jest wymagane.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3 – 4: Użyj dziedziczenie w szablonie, aby utworzyć pasku nagłówka, jak i nav
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3 – 4: Użyj szablonu dziedziczenia, aby utworzyć pasku nagłówka, jak i nav
 
 Zamiast łącza nawigacji jawne na każdej stronie, nowoczesne aplikacje internetowe zazwyczaj korzystają ze znakowaniem nagłówek i pasek nawigacyjny, który zawiera najważniejsze łączy strony, menu podręczne i tak dalej. Aby upewnić się, że nagłówek i na pasku nawigacyjnym są takie same na wszystkich stronach, jednak nie chcesz powtórzyć ten sam kod w każdym szablonie strony. Zamiast tego chcesz zdefiniować typowych części wszystkich stron w jednym miejscu.
 

@@ -1,9 +1,6 @@
 ---
 title: IDebugAlias::GetICorDebugValue | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAlias::GetICorDebugValue
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 393d5a7310a136ad83b7cbd74fca966633ffb62e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 941417adad62b7a09abc1515800a9200baf0bfcb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939045"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Pobiera interfejs kodu zarządzanego, który reprezentuje wartość skojarzoną z tego aliasu.  
@@ -28,14 +25,14 @@ Pobiera interfejs kodu zarządzanego, który reprezentuje wartość skojarzoną 
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
 ```csharp  
 int GetICorDebugValue(  
-   out object ppUnk  
+   out object ppUnk  
 );  
 ```  
   

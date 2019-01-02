@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7c1e7f7f642245fe4170c670fafd7366361e6de0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2d0f6681c90d3aba37080e5ac49d406af662e4f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842178"
 ---
 # <a name="export-diagrams-as-images"></a>Eksportowanie diagramów jako obrazów
 W programie Visual Studio możesz zapisać diagramów modelowania w formatach tylko do odczytu, dzięki czemu możesz udostępniać je zainteresowanych stron, użytkowników lub członków zespołu projektu, którzy nie korzystają z tej samej wersji programu Visual Studio.

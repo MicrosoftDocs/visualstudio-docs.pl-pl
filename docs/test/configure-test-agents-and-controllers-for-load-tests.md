@@ -8,13 +8,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c4462c97febc7f1075080bf659a679647bc7bbe5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899840"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurowanie agentów testowych i kontrolerów do prowadzenia testów obciążeniowych testów
 
@@ -43,15 +42,15 @@ Taka architektura ma szereg zalet:
 
    **Konfiguracja lokalna:**
 
-  - Komputer 1: program Visual Studio, kontroler, agent.
+  - Komputer1: Program Visual Studio, kontroler, agent.
 
     ![Za pomocą kontrolera i agenta komputera lokalnego](./media/load-test-configa.png)
 
     **Typowa konfiguracja zdalna:**
 
-  - Komputery 1 i 2: program Visual Studio (wielu testerów może używać tego samego kontrolera).
+  - Komputery 1 i 2: Program Visual Studio (wielu testerów może używać tego samego kontrolera).
 
-  - Komputer 3: kontroler (mogą być na nim również zainstalowani agenci).
+  - KOMPUTER3: Kontroler (mogą być zainstalowani agenci).
 
   - Komputer 4 n: Agent lub agenci skojarzeni z kontrolerem na KOMPUTER3.
 

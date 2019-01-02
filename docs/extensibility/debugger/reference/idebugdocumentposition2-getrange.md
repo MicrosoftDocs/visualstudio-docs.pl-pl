@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentPosition2::GetRange | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentPosition2::GetRange
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 839e6be66ead2a5c76047f40de6142c669667673
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36794360c84b46b623a70526c38f388530254792
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895639"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 Pobiera zakres dla tej pozycji dokumentu.  
@@ -28,14 +25,14 @@ Pobiera zakres dla tej pozycji dokumentu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetRange(   
+HRESULT GetRange(   
    TEXT_POSITION* pBegPosition,  
    TEXT_POSITION* pEndPosition  
 );  
 ```  
   
 ```csharp  
-int GetRange(   
+int GetRange(   
    TEXT_POSITION[] pBegPosition,  
    TEXT_POSITION[] pEndPosition  
 );  

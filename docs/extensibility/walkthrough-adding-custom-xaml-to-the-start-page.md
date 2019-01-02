@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Dodawanie niestandardowych XAML do strony początkowej | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Dodawanie niestandardowych XAML do strony początkowej | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c792f999164c08d3a723a16872df66e69197fe16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929604"
 ---
-# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Wskazówki: Dodawanie niestandardowych XAML do strony początkowej
+# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Przewodnik: Dodaj niestandardowe XAML do strony początkowej
 W tym instruktażu przedstawiono sposób tworzenia niestandardowej programu Visual Studio strony początkowej zawierający przeglądarki sieci Web.  
   
 ## <a name="adding-custom-xaml"></a>Dodawanie niestandardowego XAML  

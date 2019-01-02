@@ -2,7 +2,6 @@
 title: Zmień nazwę i przenieść klas i typów w Projektancie klas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84850d9de539267385ddddf39cea55672ad60034
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e85c4b760bab242ba5aa43f0e1aab0936565af33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891469"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refaktoryzacja klas i typów w Projektancie klas
 

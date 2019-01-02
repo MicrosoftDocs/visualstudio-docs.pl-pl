@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::GetEngineInfo | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::GetEngineInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a560b9c1f576ee35acec4a95ef1c0a3870423680
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf8a3b2fca94451eded823cac23524ea04d6e5d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840953"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Pobiera nazwę i identyfikator GUID aparat debugowania (DE), program został uruchomiony.  
@@ -28,14 +25,14 @@ Pobiera nazwę i identyfikator GUID aparat debugowania (DE), program został uru
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetEngineInfo(   
+HRESULT GetEngineInfo(   
    BSTR* pbstrEngine,  
    GUID* pguidEngine  
 );  
 ```  
   
 ```csharp  
-int GetEngineInfo(   
+int GetEngineInfo(   
    out string pbstrEngine,  
    out GUID   pguidEngine  
 );  

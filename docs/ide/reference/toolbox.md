@@ -2,7 +2,6 @@
 title: Okno przybornika
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef01cb4bb9b9ee3326d3d955aec9c41f9b15b144
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918615"
 ---
 # <a name="toolbox"></a>Przybornik
 

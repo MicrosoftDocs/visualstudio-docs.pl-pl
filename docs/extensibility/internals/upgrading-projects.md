@@ -1,9 +1,6 @@
 ---
 title: Uaktualnianie projektów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
@@ -15,172 +12,172 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea5c29819d0035e45f97122fd108ea1f51d60806
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 2a02bdd92211003388ecd21e370a7a5f64da6227
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918641"
 ---
 # <a name="upgrading-projects"></a>Uaktualnianie projektów
 
-Zmiany w modelu projektu z jednej wersji programu Visual Studio do następnego może wymagać projektów i rozwiązań uaktualnienia, dzięki czemu mogą być uruchamiane na nowszą wersję. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Udostępnia interfejsy, które mogą służyć do implementowania obsługi uaktualniania do własnych projektów.
+Zmiany do modelu projektu z jednej wersji programu Visual Studio do następnego mogą wymagać, że projekty i rozwiązania uaktualnienia, aby umożliwić im uruchamianie w nowszej wersji. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Udostępnia interfejsy, które mogą służyć do implementowania obsługi uaktualnienia do własnych projektów.
 
 ## <a name="upgrade-strategies"></a>Strategie uaktualniania
 
-Do obsługi uaktualnienia, implementacji systemu projektu należy zdefiniować i zaimplementować strategię uaktualnienia. Umożliwiającym określenie strategii, można obsługiwać side-by-side (SxS) w kopii zapasowej i kopii zapasowej.
+Do obsługi uaktualnienia, implementacji systemu projektu muszą definiować ani implementować strategię uaktualnienia. Przy określaniu strategii, istnieje możliwość obsługi kopii zapasowych side-by-side (SxS) i/lub kopii zapasowej.
 
--   SxS kopii zapasowej oznacza, że projekt kopiuje tylko te pliki, które wymagają uaktualnienia w miejscu, dodawanie sufiks nazwy odpowiedniego pliku, na przykład ".old".
+-   Kopia zapasowa SxS oznacza to, czy projekt kopiuje tylko pliki wymagające uaktualnienia w miejscu, dodając sufiks nazwy odpowiedni plik, na przykład ".old".
 
--   Kopii zapasowej oznacza, że projekt kopiuje wszystkie elementy projektu do lokalizacji kopii zapasowej dostarczane przez użytkownika. Następnie uaktualnienia odpowiednie pliki w oryginalnej lokalizacji projektu.
+-   Kopii zapasowej oznacza to, czy projekt kopiuje wszystkie elementy projektu do podanego przez użytkownika lokalizacji kopii zapasowej. Następnie uaktualniane są odpowiednie pliki w oryginalnej lokalizacji projektu.
 
-## <a name="how-upgrade-works"></a>Jak uaktualnić działania
+## <a name="how-upgrade-works"></a>Jak uaktualnić działa
 
-Po otwarciu rozwiązania utworzone we wcześniejszej wersji programu Visual Studio w nowszej wersji, IDE sprawdza plik rozwiązania, aby określić, czy wymagane do uaktualnienia. Jeśli uaktualnianie jest wymagana, **Kreatora uaktualniania** jest uruchamiane automatycznie przeprowadzenie użytkownika przez proces uaktualniania.
+Po otwarciu rozwiązania utworzone we wcześniejszej wersji programu Visual Studio w nowszej wersji, IDE sprawdza, czy plik rozwiązania, aby określić, jeśli musi zostać uaktualniony. Jeśli uaktualnianie jest wymagane, **Kreatora uaktualniania** jest uruchamiane automatycznie przeprowadzi użytkownika przez proces uaktualniania.
 
-Rozwiązanie wymaga uaktualnienia, wysyła zapytanie każdej fabryki projektu dla jego strategii uaktualniania. Strategia określa, czy fabryka projektu obsługuje kopii zapasowej lub kopii zapasowej SxS. Informacje są wysyłane do **Kreatora uaktualniania**, które zbiera informacje wymagane do tworzenia kopii zapasowej i wyświetla użytkownikowi odpowiednie opcje.
+To rozwiązanie wymaga uaktualnienia, wysyła zapytanie każda fabryka projektu dla jego strategii uaktualniania. Strategii, która określa, czy fabryka projektu obsługuje kopii zapasowej lub kopii zapasowej SxS. Informacje są wysyłane do **Kreatora uaktualniania**, która zbiera informacje wymagane do tworzenia kopii zapasowej i wyświetlane odpowiednie opcje dla użytkownika.
 
 ### <a name="multi-project-solutions"></a>Rozwiązania dotyczące wielu projektów
 
-Jeśli rozwiązanie zawiera wiele projektów i strategii uaktualnienia są różne, np. gdy projekt C++, który obsługuje tylko SxS kopii zapasowej i projektu sieci Web, które obsługują tylko kopii zapasowej, fabryki projektu muszą uzgodnić strategii uaktualniania.
+Jeśli rozwiązanie zawiera wiele projektów i uaktualniania strategie są różne, np. gdy projekt C++, który obsługuje tylko SxS kopii zapasowej, a projekt sieci Web, które obsługują tylko kopii zapasowej, fabryk projektów muszą uzgodnić strategii uaktualniania.
 
-Rozwiązanie wysyła zapytanie do każdego projektu fabryki dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Następnie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> Aby sprawdzić, czy pliki projektu globalnego wymagają uaktualnienia i ustalić obsługiwanych strategii uaktualnienia. **Kreatora uaktualniania** następnie jest wywoływana.
+Rozwiązanie zapytania każda fabryka projektu dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Następnie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> Zobacz, czy pliki projektu globalnego wymagają, uaktualnianie i określenia obsługiwanych strategie uaktualnienia. **Kreatora uaktualniania** zostanie następnie wywołana.
 
-Po podaniu kreatora <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> jest wywoływane dla każdego fabrykę projektów do rzeczywistego uaktualnienia. W celu ułatwienia tworzenia kopii zapasowej, podaj metody IVsProjectUpgradeViaFactory <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> usługi do logowania się szczegóły procesu uaktualniania. Nie można buforować tej usługi.
+Po użytkownik Dokańcza pracę z kreatorem, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> jest wywoływana w każdej fabryki projektu do wykonania rzeczywistego uaktualnienia. W celu ułatwienia kopii zapasowej, zapewniają metody IVsProjectUpgradeViaFactory <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> usługę, aby rejestrować szczegóły procesu uaktualniania. Nie można buforować tej usługi.
 
-Po zaktualizowaniu wszystkich odpowiednich plików globalnych, każdej fabryki projektu można wybrać wystąpienia projektu. Implementacja projektu musi obsługiwać <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Wywoływana jest metoda następnie uaktualnić wszystkie elementy odpowiedni projekt.
+Po zaktualizowaniu wszystkie odpowiednie pliki globalnego, każda fabryka projektu można utworzyć projektu. Implementacja projektu musi obsługiwać <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Wywoływana jest metoda następnie uaktualnić wszystkie elementy projektu.
 
 > [!NOTE]
-> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> — Metoda nie dostarcza usługi SVsUpgradeLogger. Tę usługę można uzyskać przez wywołanie metody <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Metody nie dostarcza usługi SVsUpgradeLogger. Tę usługę można uzyskać przez wywołanie metody <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.
 
 ## <a name="best-practices"></a>Najlepsze praktyki
 
-Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> usługi Sprawdź, czy można edytować pliku przed rozpoczęciem edycji i można go zapisać przed zapisaniem. Dzięki temu kopii zapasowej i uaktualniania implementacje obsługują pliki projektu pod kontrolą źródła, pliki z niewystarczające uprawnienia i tak dalej.
+Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> usługi Sprawdź, czy można edytować plik przed jego edycji i można go zapisać przed zapisaniem zmian. Ułatwi to kopia zapasowa i uaktualniania implementacje obsługują pliki projektu objętego kontrolą źródła, pliki o niewystarczających uprawnieniach i tak dalej.
 
-Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> usługi wszystkich fazach kopii zapasowej, a następnie uaktualnić do przekazywania informacji o powodzeniu lub niepowodzeniu procesu uaktualniania.
+Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> usługi podczas wszystkich etapów tworzenia kopii zapasowej i uaktualniania zawiera informacje na temat powodzenie lub niepowodzenie procesu uaktualniania.
 
-Aby uzyskać więcej informacji na temat tworzenia kopii zapasowych i uaktualnianie projektów Zobacz komentarze dla IVsProjectUpgrade w vsshell2.idl.
+Aby uzyskać więcej informacji na temat tworzenia kopii zapasowych i uaktualnianie projektów znajdują się komentarze IVsProjectUpgrade w vsshell2.idl.
 
 ## <a name="upgrading-custom-projects"></a> Uaktualnianie projektów niestandardowych
 
-Jeśli zmienisz informacje utrwalone w pliku projektu między różnymi wersjami programu Visual Studio produktu, a następnie wymaganych do obsługi, uaktualnianie pliku projektu ze starego do nowej wersji. Do obsługi uaktualniania umożliwiający uczestniczyć w **Kreator konwersji Visual Studio**, wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu. Ten interfejs zawiera jedynym mechanizmem uaktualniania kopiowania. W przypadku uaktualniania projektu odbywa się jako część rozwiązania otwiera. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Interfejs jest implementowany przez fabrykę projektów lub musi być co najmniej częściowa z fabryki projektu.
+W przypadku zmiany dane utrwalone w pliku projektu, między różnymi wersjami programu Visual Studio produktu, a następnie potrzeba do obsługi, uaktualnianie pliku projektu ze starej do nowej wersji. Do obsługi, uaktualniania z można uczestniczyć w **Kreator konwersji Visual Studio**, implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu. Ten interfejs zawiera tylko mechanizm dostępne dla uaktualnienie kopii. W przypadku uaktualniania projektu odbywa się jako część rozwiązania zostanie otwarty. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Interfejs jest implementowany przez fabrykę projektu lub powinien wynosić co najmniej możliwe do uzyskania z fabryki projektu.
 
-Stary mechanizm, który używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interfejsu nadal jest obsługiwany, ale koncepcyjnie uaktualnia system projektu jako część otwarciu projektu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Interfejsu w związku z tym jest wywoływana przez program Visual Studio środowiska, nawet jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejs o nazwie lub zaimplementowana. Takie podejście umożliwia użycie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> do wykonania kopii tylko części uaktualniania projektu i delegowanie reszty zadań do wykonania w miejscu (prawdopodobnie w nowej lokalizacji) przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interfejsu.
+Stary mechanizm, który używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interfejsu nadal jest obsługiwany, ale pod względem koncepcyjnym uaktualnia system projektu jako część otwarty projekt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Interfejsu w związku z tym jest wywoływana przez program Visual Studio środowiska, nawet jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejs o nazwie lub zaimplementowana. Takie podejście umożliwia <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> zaimplementować kopię tylko części uaktualnienia projektu i delegować pozostałej pracy do wykonania w miejscu (prawdopodobnie w nowej lokalizacji), <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interfejsu.
 
-Dla implementacji próbki <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, zobacz [przykłady VSSDK](http://aka.ms/vs2015sdksamples).
+Na przykład implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, zobacz [przykłady VSSDK](http://aka.ms/vs2015sdksamples).
 
-Następujące scenariusze wyniknąć z uaktualnienia projektu:
+Następujące scenariusze wynikają z uaktualnienia projektu:
 
--   Jeśli plik jest nowszy format niż projekt może obsługiwać, aplikacja musi zwracać komunikat o błędzie informujący, to. Przy założeniu, że starszej wersji produktu zawiera kod, aby sprawdzić, czy wersja.
+-   Jeśli plik jest nowszy format, niż jest możliwe projektu, aplikacja musi zwracać komunikat o błędzie informujący, to. Przy założeniu, że starszą wersję produktu zawiera kod, aby sprawdzić wersję.
 
--   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> w określono flagę <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metody uaktualniania będzie wykonywane jest uaktualnienie w miejscu przed otwarciem projektu.
+-   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> flaga jest określona w <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metody uaktualnienia będzie można zaimplementować jako uaktualnienie w miejscu, przed otwarciem projektu.
 
--   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP> w określono flagę <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metody uaktualniania jest zaimplementowany jako uaktualnienia kopiowania.
+-   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP> flaga jest określona w <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metody uaktualniania jest implementowany jako uaktualnienie kopii.
 
--   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> w określono flagę <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> wywołań, a następnie użytkownik odebrał monit przez środowisko do uaktualnienia pliku projektu jako uaktualnienia w miejscu po otwarciu projektu. Na przykład środowiska monituje użytkownika o uaktualnienie, gdy użytkownik otwiera starszej wersji rozwiązania.
+-   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> flaga jest określona w <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> wywołać, a następnie monicie użytkownika przez środowisko do uaktualnienia pliku projektu jako uaktualnienie w miejscu, po otwarciu projektu. Na przykład środowisko monituje użytkownika o uaktualnienie, gdy użytkownik otworzy starszej wersji rozwiązania.
 
--   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> flaga nie jest określona w <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> wywołać, a następnie musi monituje użytkownika o zaktualizować pliku projektu.
+-   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> flaga nie jest określony w <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> wywołać, a następnie musi monitować użytkownika o zaktualizować pliku projektu.
 
-     Poniżej znajduje się przykładowy uaktualnienia komunikat Monituj:
+     Oto przykładowy komunikat monitu uaktualnienia:
 
-     "Projekt"%1"został utworzony przy użyciu starszej wersji programu Visual Studio. Jeśli otworzysz go za pomocą tej wersji programu Visual Studio, nie można go otworzyć ze starszymi wersjami programu Visual Studio. Czy chcesz kontynuować i otworzyć ten projekt?"
+     "Projekt"%1"został utworzony w starszej wersji programu Visual Studio. Jeśli otworzysz go za pomocą tej wersji programu Visual Studio, nie można go otworzyć ze starszymi wersjami programu Visual Studio. Czy chcesz kontynuować i otworzyć ten projekt?"
 
 ### <a name="to-implement-ivsprojectupgradeviafactory"></a>Aby zaimplementować IVsProjectUpgradeViaFactory
 
-1.  Implementuje metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu, w szczególności <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metody w implementacji projektu fabryki lub implementacje można wywołać za pomocą implementacji fabryki projektu.
+1.  Implementuje metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu, w szczególności <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metody w danej implementacji fabryka projektu lub implementacji można wywołać za pomocą implementacji fabryka projektu.
 
-2.  Jeśli chcesz wykonać uaktualnienie w miejscu jako część rozwiązania, otwieranie, podaj flagę <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> jako `VSPUVF_FLAGS` parametru w Twojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> implementacji.
+2.  Jeśli chcesz wykonać uaktualnienie w miejscu w ramach rozwiązania, otwierając podać flagę <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> jako `VSPUVF_FLAGS` parametru w swojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> implementacji.
 
-3.  Jeśli chcesz wykonać uaktualnienie w miejscu jako część rozwiązania, otwieranie, podaj flagę <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP> jako `VSPUVF_FLAGS` parametru w Twojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> implementacji.
+3.  Jeśli chcesz wykonać uaktualnienie w miejscu w ramach rozwiązania, otwierając podać flagę <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP> jako `VSPUVF_FLAGS` parametru w swojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> implementacji.
 
-4.  Oba kroki 2 i 3, rzeczywisty plik uaktualnienia czynności przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>, można zaimplementować zgodnie z opisem w temacie "wdrażania `IVsProjectUpgade`" sekcji poniżej lub możesz delegować uaktualnienia rzeczywistego pliku do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
+4.  Oba kroki 2 i 3, rzeczywisty plik uaktualnienia kroków, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>, można zaimplementować zgodnie z opisem w temacie "Implementowanie `IVsProjectUpgade`" sekcji poniżej, lub możesz delegować uaktualnienia rzeczywistego pliku do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
 
-5.  Użyj metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> publikowania uaktualnienia powiązane wiadomości dla użytkownika przy użyciu Kreatora migracji usługi Visual Studio.
+5.  Należy użyć metod <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> do uaktualnienia powiązane komunikaty dla użytkownika przy użyciu Kreatora migracji programu Visual Studio.
 
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> Interfejs jest używany do wykonania dowolnego rodzaju uaktualnienia pliku, który musi zostać przeprowadzona w ramach uaktualnienia projektu. Ten interfejs nie jest wywoływany z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale jest dostarczany jako mechanizm uaktualnienia plików, które są częścią system projektu, ale system projektu może nie być bezpośrednio uwagę. Na przykład tej sytuacji mogą wystąpić, jeśli kompilator powiązanych plików oraz właściwości nie są obsługiwane przez sam zespół deweloperów, obsługująca reszty system projektu.
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> Interfejs jest używany do implementowania dowolny rodzaj uaktualnienia pliku, który musi zostać przeprowadzona w ramach uaktualnienia projektu. Ten interfejs nie jest wywoływana z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale jest dostarczany jako mechanizm do zaktualizowania plików, które są częścią system projektu, ale system projektu może nie być świadome bezpośrednio. Na przykład ta sytuacja może wystąpić, jeśli kompilator związane z plików i właściwości nie są obsługiwane przez ten sam zespół projektowy, obsługujący reszty systemu projektu.
 
 ### <a name="ivsprojectupgrade-implementation"></a>Implementacja IVsProjectUpgrade
 
-Jeśli system projektu implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> , nie mogą uczestniczyć w **Kreator konwersji Visual Studio**. Jednak nawet w przypadku implementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu, można nadal delegować uaktualnienia pliku do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementacji.
+Jeśli zaimplementowano systemu projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> tylko nie mogą uczestniczyć w **Kreator konwersji Visual Studio**. Jednak nawet w przypadku zaimplementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu, można nadal delegować uaktualnienia pliku do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementacji.
 
 #### <a name="to-implement-ivsprojectupgrade"></a>Aby zaimplementować IVsProjectUpgrade
 
-1.  Gdy użytkownik próbuje otworzyć projekt, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> metoda jest wywoływana przez środowisko po otwarciu i przed innymi użytkownika można podjąć akcję w projekcie. Jeśli użytkownik ma już został poproszony o Uaktualnij rozwiązanie, a następnie <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> przekazano wartość flagi `grfUpgradeFlags` parametru. Jeśli użytkownik otwiera projektu bezpośrednio, takich jak przy użyciu **Dodaj istniejący projekt** polecenia, a następnie <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> flaga nie zostanie przekazany i projekt wymaga monit, aby uaktualnić.
+1.  Gdy użytkownik próbuje otworzyć projekt, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> metoda jest wywoływana przez środowisko, po otwarciu i przed żadnego innego użytkownika w projekcie mogły zostać podjęte działania. Jeśli użytkownik ma już został monit o Uaktualnij rozwiązanie, a następnie <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> flaga jest przekazywany w `grfUpgradeFlags` parametru. Jeśli użytkownik otworzy projekt bezpośrednio, takie jako przy użyciu **Dodaj istniejący projekt** polecenia, a następnie <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> flaga nie zostanie przekazany i projekt musi monitować użytkownika o uaktualnienie.
 
-2.  W odpowiedzi na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> wywołanie, musi ocenić projektu, czy plik projektu jest uaktualniany. Jeśli projekt nie jest konieczne uaktualnienie typu projektu do nowej wersji, a następnie po prostu może zwrócić <xref:Microsoft.VisualStudio.VSConstants.S_OK> flagi.
+2.  W odpowiedzi na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> wywołanie, musi ocenić projekt, czy plik projektu jest uaktualniany. Jeśli projekt nie trzeba uaktualniać typu projektu do nowej wersji, a następnie można po prostu zwrócenia <xref:Microsoft.VisualStudio.VSConstants.S_OK> flagi.
 
-3.  Jeśli projekt wymaga uaktualnienia typ projektu do nowej wersji, a następnie musi ustalić, czy plik projektu może być modyfikowana przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> — metoda i przekazywanie wartości <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> dla `rgfQueryEdit` parametru. Następnie projektu należy wykonać następujące czynności:
+3.  Jeśli projekt należy uaktualnić tego typu projektu do nowej wersji, a następnie należy określić, czy plik projektu może być modyfikowana przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> metody i przekazywać wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> dla `rgfQueryEdit` parametru. Projekt musi wykonać następujące czynności:
 
-    -   Jeśli `VSQueryEditResult` wartość zwracana w `pfEditCanceled` parametr jest <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK>, a następnie uaktualnienia można kontynuować, ponieważ mogą być zapisywane w pliku projektu.
+    -   Jeśli `VSQueryEditResult` wartości zwracanej w `pfEditCanceled` parametr jest <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK>, a następnie można kontynuować uaktualniania, ponieważ mogą być zapisywane w pliku projektu.
 
-    -   Jeśli `VSQueryEditResult` wartość zwracana w `pfEditCanceled` parametr jest <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> i `VSQueryEditResult` ma wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyNotUnderScc> bitu, następnie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> musi zwracać błąd, ponieważ użytkownicy powinno rozwiązać uprawnienia wystawić samodzielnie. Projekt, następnie należy wykonać następujące czynności:
+    -   Jeśli `VSQueryEditResult` wartości zwracanej w `pfEditCanceled` parametr jest <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> i `VSQueryEditResult` ma wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyNotUnderScc> bitu, następnie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> musi zwrócić błąd, ponieważ użytkownicy powinna być rozpoznawana uprawnienia wystawić samodzielnie. Projekt następnie należy wykonać następujące czynności:
 
-         Raport o błędzie dla użytkownika, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> i zwracać <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> kodu błędu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
+         Zgłoś błąd dla użytkownika, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> i zwracają <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> kod błędu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
 
-    -   Jeśli `VSQueryEditResult` wartość jest <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> i `VSQueryEditResultFlags` ma wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> bitu, a następnie plik projektu powinien zostać wyewidencjonowany przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>,...).
+    -   Jeśli `VSQueryEditResult` wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> i `VSQueryEditResultFlags` ma wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> bitu, a następnie w pliku projektu można wyewidencjonować przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>,...).
 
-4.  Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> wywołania w pliku projektu powoduje, że plik do wyewidencjonowania najnowszą wersję można pobrać, a następnie zwalnianie i ponownie załadować projektu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Metoda jest wywoływana ponownie po utworzeniu wystąpienia innego projektu. W tym drugie wywołanie pliku projektu mogą być zapisywane na dysku; Zaleca się, że projekt zapisać kopię pliku projektu w poprzednim formacie z. STARE rozszerzenie, zmiany jego niezbędne uaktualnienia i Zapisz plik projektu do nowego formatu. Ponownie, jeśli dowolną część proces uaktualniania zakończy się niepowodzeniem, metoda musi wskazywać błąd zwracając <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED>. Powoduje to, że projekt, aby zostać zwolniony w Eksploratorze rozwiązań.
+4.  Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> wywołanie pliku projektu powoduje, że plik jest wyewidencjonowany i najnowszej wersji, które mają zostać pobrane, a następnie projekt nie zostanie zwolniony i ponownie załadowany. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Jest ponownie wywoływana metoda po utworzeniu inne wystąpienie projektu. W tym drugim wywołaniu, mogą być zapisywane w pliku projektu na dysku; zalecane jest, że projekt zapisać kopię pliku projektu w poprzednim formacie za pomocą. STARE rozszerzenia, zmiany jego niezbędne uaktualnienia i Zapisz plik projektu w nowym formacie. Ponownie, jeśli w dowolnej części proces uaktualniania zakończy się niepowodzeniem, metoda musi wskazywać, błąd, zwracając <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED>. Powoduje to projekt, aby zostać zwolniony w Eksploratorze rozwiązań.
 
-     Ważne jest, aby zrozumieć, Zakończ proces, który występuje w środowisku, w przypadku, w którym można wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> — metoda (wartość ReportOnly określenia) zwraca <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> i <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> flagi.
+     Jest ważne zrozumieć pełny proces, który występuje w środowisku, w przypadku, w którym wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (Określanie wartości ReportOnly) metoda zwraca <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> i <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> flag.
 
-5.  Użytkownik próbuje otworzyć pliku projektu.
+5.  Użytkownik próbuje otworzyć plik projektu.
 
 6.  Wywołania środowiska użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> implementacji.
 
-7.  Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> zwraca `true`, a następnie wywołania środowiska użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> implementacji.
+7.  Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> zwraca `true`, a następnie wywołania środowiska usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> implementacji.
 
-8.  Wywołania środowiska użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> implementacji do otwierania pliku i zainicjowania obiektu projektu, na przykład Project1.
+8.  Wywołania środowiska użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> implementacji Otwórz plik i inicjują obiekt projektu, na przykład projektu Project1.
 
-9. Wywołania środowiska użytkownika `IVsProjectUpgrade::UpgradeProject` implementacji, aby określić, czy plik projektu musi zostać uaktualniony.
+9. Wywołania środowiska użytkownika `IVsProjectUpgrade::UpgradeProject` implementacji, aby ustalić, czy w pliku projektu musi zostać uaktualniony.
 
 10. Należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przekaż wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ReportOnly> dla `rgfQueryEdit` parametru.
 
-11. Zwraca środowiska <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> dla `VSQueryEditResult` i <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> w jest ustawiony bit `VSQueryEditResultFlags`.
+11. Zwraca środowiska <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> dla `VSQueryEditResult` i <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> jest ustawiony bit `VSQueryEditResultFlags`.
 
 12. Twoje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementacja wywołuje `IVsQueryEditQuerySave::QueryEditFiles` (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>).
 
-To wywołanie może spowodować nową kopię pliku projektu wyewidencjonowania i pobrać najnowszą wersję, oraz należy ponownie załadować pliku projektu. W tym momencie być jedną z następujących operacji:
+To wywołanie może spowodować, że nowa kopia pliku projektu do kasy i pobrać najnowszej wersji, a także konieczności ponownego ładowania pliku projektu. W tym momencie stanie jedna z następujących czynności:
 
--   Jeśli obsługiwać własne ponowne załadowanie projektu, następnie środowisko wywołuje Twojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> implementacji (VSITEMID_ROOT). Po odebraniu połączenia Załaduj ponownie pierwsze wystąpienie projektu (Project1) i Kontynuuj uaktualnianie pliku projektu. Środowisko zna obsługiwać własne ponowne załadowanie projektu, jeśli `true` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>).
+-   Jeśli możesz obsługiwać własne ponownie załadować projektu, następnie środowisko wywołuje swoje <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> implementacji (VSITEMID_ROOT). Po otrzymaniu tego wywołania Załaduj ponownie pierwsze wystąpienie projektu (projektu Project1), a następnie kontynuować uaktualnianie pliku projektu. Środowisko wie, obsługiwać własne ponownie załadować projektu, jeśli wrócisz `true` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>).
 
--   Jeśli nie obsługiwać własne ponowne załadowanie projektu, a następnie wróć `false` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>). W takim przypadku przed <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>(QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) zwraca środowiska tworzy nowe wystąpienie innego projektu, na przykład w projekcie 2, w następujący sposób:
+-   Jeśli nie obsługiwać własne ponownie załadować projektu, a następnie wrócisz `false` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>). W tym przypadku przed <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>(QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) zwróci wartość, środowisko tworzy nowe wystąpienie innego projektu, na przykład Project2 w następujący sposób:
 
-    1.  Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> Twojego pierwszego obiektu projektu Project1, w związku z tym umieszczanie tego obiektu w stan nieaktywny.
+    1.  Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> na pierwszy obiekt projektu, projektu Project1, dlatego umieszczanie tego obiektu w stan nieaktywny.
 
-    2.  Wywołania środowiska użytkownika `IVsProjectFactory::CreateProject` implementację, aby utworzyć drugiego wystąpienia projektu, w projekcie 2.
+    2.  Wywołania środowiska użytkownika `IVsProjectFactory::CreateProject` implementacji, aby utworzyć drugie wystąpienie projektu o nazwie Project2.
 
-    3.  Wywołania środowiska użytkownika `IPersistFileFormat::Load` implementację, aby otworzyć plik i zainicjuj drugi obiekt projektu projekcie 2.
+    3.  Wywołania środowiska użytkownika `IPersistFileFormat::Load` implementacji Otwórz plik i zainicjowania drugiego obiektu projektu o nazwie Project2.
 
-    4.  Wywołania środowiska `IVsProjectUpgrade::UpgradeProject` raz drugi w celu ustalenia, czy obiekt project powinny zostać uaktualnione. Jednak to wywołanie nowy, drugie wystąpienie projektu projekcie 2. Jest to projekt, który jest otwarty w rozwiązaniu.
+    4.  Wywołania środowiska `IVsProjectUpgrade::UpgradeProject` raz drugi w celu określenia, czy obiekt projektu powinny zostać uaktualnione. Jednak to wywołanie nowy, drugie wystąpienie projektu o nazwie Project2. Jest to projekt, który jest otwierany w rozwiązaniu.
 
         > [!NOTE]
-        > W przypadku pierwszego projektu, Project1, znajduje się w nieaktywnym stanie, a następnie wróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> z pierwszym wywołaniu z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementacji.
+        > W przypadku pierwszego projektu projektu Project1, jest umieszczany w stan nieaktywny, a następnie musi zwracać <xref:Microsoft.VisualStudio.VSConstants.S_OK> z pierwszego wywołania usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementacji.
 
     5.  Należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przekaż wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ReportOnly> dla `rgfQueryEdit` parametru.
 
-    6.  Zwraca środowiska <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK> i można kontynuować uaktualnianie, ponieważ mogą być zapisywane w pliku projektu.
+    6.  Zwraca środowiska <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK> i można kontynuować uaktualniania, ponieważ mogą być zapisywane w pliku projektu.
 
-Jeśli nie można uaktualnić, zwróć <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> z `IVsProjectUpgrade::UpgradeProject`. Jeśli uaktualnienie nie jest konieczne lub nie chcesz uaktualnić, Traktuj `IVsProjectUpgrade::UpgradeProject` wywołać jako pusta. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED>, węzeł symbol zastępczy zostanie dodany do rozwiązania dla projektu.
+W przypadku awarii do uaktualnienia, zwracają <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> z `IVsProjectUpgrade::UpgradeProject`. Jeśli uaktualnienie nie jest konieczne, lub nie zdecydujesz się na uaktualnienie, należy traktować `IVsProjectUpgrade::UpgradeProject` wywołać jako pusta. Po powrocie <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED>, węzeł zastępczy jest dodawany do rozwiązania dla Twojego projektu.
 
 ## <a name="upgrading-project-items"></a>Uaktualnianie elementów projektu
 
-Jeśli dodasz lub zarządzać elementów w systemach projektu, które nie implementują, konieczne może być uczestniczą w procesie uaktualniania projektu. Crystal Reports to przykład elementu, który można dodać do projektu systemu.
+W przypadku dodania lub zarządzania elementami wewnątrz systemy projektu, który nie należy implementować, konieczne może uczestniczyć w procesie uaktualniania projektu. Crystal Reports znajduje się przykład elementu, który można dodać do systemu projektu.
 
-Zwykle obiektów implementujących element projektu można wykorzystać już pełni wystąpień i uaktualnionych projektów, ponieważ muszą wiedzieć, jakie są odwołania do projektu i jakie będą inne właściwości projektu istnieje dokonanie wyboru uaktualnienia.
+Zazwyczaj chcesz wykorzystać już w pełni utworzona i uaktualnionego projektu, ponieważ muszą wiedzieć, jakie są odwołania do projektu i jakie inne właściwości projektu są podejmowanie decyzji uaktualnienia implementacji elementu projektu.
 
-### <a name="to-get-the-project-upgrade-notification"></a>Aby otrzymywać powiadomienia uaktualniania projektu
+### <a name="to-get-the-project-upgrade-notification"></a>Aby uzyskać powiadomienia o uaktualnieniu projektu
 
-1.  Ustaw <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> Flaga (zdefiniowany w vsshell80.idl) w implementacji elementu projektu. Powoduje to elementu projektu pakiet VSPackage obciążenia automatycznie po Visual Studio shell Określa, czy system projektu trwa uaktualnianie.
+1.  Ustaw <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> flagi (zdefiniowanymi w vsshell80.idl) w danej implementacji elementu projektu. Powoduje to element projektu pakietu VSPackage ładowane automatycznie, gdy powłoki programu Visual Studio Określa, czy system projektu trwa uaktualnianie.
 
-2.  Zalecamy <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interfejsu za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> metody.
+2.  Aby <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interfejsu za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> metody.
 
-3.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> Interfejsu jest wywoływane po implementacji systemu projektu zakończeniu uaktualniania i tworzenia nowego projektu uaktualniony. W zależności od scenariusza <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interfejsu jest uruchamiany po <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>, lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> metody.
+3.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> Interfejsu jest uruchamiany po implementacji systemu projektu został wykonany jego operacji uaktualnienia, a następnie jest tworzony nowy projekt uaktualniony. W zależności od scenariusza <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interfejsu jest wyzwalane po <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>, lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> metody.
 
-### <a name="to-upgrade-the-project-item-files"></a>Aby uaktualnić pliki elementu projektu
+### <a name="to-upgrade-the-project-item-files"></a>Aby uaktualnić plików elementów projektów
 
-1.  Proces tworzenia kopii zapasowej pliku należy starannie zarządzać w implementacji elementu projektu. W szczególności dotyczy to kopia zapasowa side-by-side, gdzie `fUpgradeFlag` parametr <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> ustawiono metodę <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>, w którym pliki kopii zapasowej są umieszczane wzdłuż plików po stronie, które są oznaczone jako ".old". Kopie zapasowe plików starszych niż czas systemowy, gdy projekt został uaktualniony może zostać wyznaczony jako przestarzały. Ponadto one mogą zostać zastąpione, jeśli podjąć specjalne kroki, aby zapobiec takiej sytuacji.
+1.  Należy rozważnie zarządzać procesu tworzenia kopii zapasowej plików w danej implementacji elementu projektu. W szczególności dotyczy to usługi kopii zapasowej side-by-side, gdzie `fUpgradeFlag` parametru <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> ustawiono metodę <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>, gdzie pliki, które miały utworzone kopie zapasowe są umieszczane na stronie pliki, które są oznaczone jako ".old". Kopie zapasowe plików starszych niż czas systemowy, gdy został uaktualniony projekt może być wyznaczony jako nieaktualne. Ponadto one mogą zostać zastąpione, jeśli należy podjąć specjalne kroki, aby zapobiec takiej sytuacji.
 
-2.  W czasie Twojej elementu projektu pobiera powiadomienie z informacją o uaktualnieniu projektu **Kreator konwersji Visual Studio** jest nadal wyświetlany. W związku z tym należy użyć metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interfejsu zapewnienie uaktualnienia wiadomości do interfejsu użytkownika kreatora.
+2.  W tym czasie element projektu pobiera powiadomienie z informacją o uaktualnieniu projektu **Kreator konwersji Visual Studio** jest nadal wyświetlany. Dlatego należy używać metod <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interfejsu, aby zapewnić uaktualnienia wiadomości do Kreatora interfejsu użytkownika.
 
 ## <a name="see-also"></a>Zobacz także
 

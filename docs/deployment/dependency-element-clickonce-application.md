@@ -1,8 +1,6 @@
 ---
 title: '&lt;zależność&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d47775f928fc52fb7ffce2e0818fea19e30dee0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898626"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;zależność&gt; — element (aplikacja ClickOnce)
 Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.  
@@ -129,7 +127,7 @@ Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
 |-----------------------| - |
 | `dependencyType` | Wymagana. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install`. `install` Zestawów jest instalowany jako część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. A `prerequisite` zestawu musi znajdować się w globalnej pamięci podręcznej zestawów (GAC) przed [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można zainstalować aplikacji. |
 | `allowDelayedBinding` | Wymagana. Określa, czy zestaw można załadować programowo w czasie wykonywania. |
-| `group` | Opcjonalna. Jeśli `dependencyType` ma ustawioną wartość atrybutu `install`, Określa nazwaną grupę zestawów tę instalację tylko na żądanie. Aby uzyskać więcej informacji, zobacz [wskazówki: Pobieranie zestawów na żądanie przy użyciu technologii ClickOnce wdrażania interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Jeśli ustawiono `framework` i `dependencyType` ma ustawioną wartość atrybutu `prerequisite`, określa zestaw jako część programu .NET Framework. Dla tego zestawu nie zaznaczono assemby globalnej pamięci podręcznej (GAC), podczas instalowania na [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] i nowszych wersjach. |
+| `group` | Opcjonalna. Jeśli `dependencyType` ma ustawioną wartość atrybutu `install`, Określa nazwaną grupę zestawów tę instalację tylko na żądanie. Aby uzyskać więcej informacji, zobacz [instruktażu: Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Jeśli ustawiono `framework` i `dependencyType` ma ustawioną wartość atrybutu `prerequisite`, określa zestaw jako część programu .NET Framework. Dla tego zestawu nie zaznaczono assemby globalnej pamięci podręcznej (GAC), podczas instalowania na [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] i nowszych wersjach. |
 | `codeBase` | Wymagany, gdy `dependencyType` ma ustawioną wartość atrybutu `install`. Ścieżka do zestawu zależnego. Może być ścieżką bezwzględną lub ścieżką względną wobec manifestu kod podstawowy. Ta ścieżka musi być prawidłowym identyfikatorem URI w kolejności do manifestu zestawu był prawidłowy. |
 | `size` | Wymagany, gdy `dependencyType` ma ustawioną wartość atrybutu `install`. Rozmiar zależnego zestawu, w bajtach. |
 

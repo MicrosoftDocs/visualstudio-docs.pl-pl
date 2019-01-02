@@ -1,8 +1,6 @@
 ---
 title: Co nowego w debugerze programu Visual Studio 2017 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 01/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fee8523f48dd94b0ebeacd87dd7d04f6fa172a91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898141"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Co nowego w debugerze programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

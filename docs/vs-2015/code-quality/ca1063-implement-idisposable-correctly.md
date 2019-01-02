@@ -1,12 +1,11 @@
 ---
-title: 'CA1063: Zaimplementować interfejs IDisposable poprawnie | Dokumentacja firmy Microsoft'
+title: 'CA1063: Poprawnie zaimplementuj interfejs IDisposable | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0b3ac6e8a5ab810e7343fb9d19be9c88cceb285
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877299"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900475"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Należy prawidłowo zaimplementować interfejs IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -129,6 +128,3 @@ public class Resource : IDisposable
     }
 }
 ```
-
-
-

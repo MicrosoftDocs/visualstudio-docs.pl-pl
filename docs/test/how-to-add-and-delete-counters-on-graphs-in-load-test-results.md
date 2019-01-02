@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 079a7390b462dd8d48535f683f391ec2dca4827d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916799"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Porady: dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Instrukcje: Dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia
 
 Możesz użyć **liczniki** panelu, aby dodać liczniki wydajności do wykresu.
 
@@ -30,7 +29,7 @@ Możesz użyć **liczniki** panelu, aby dodać liczniki wydajności do wykresu.
 
 **Zagadnienia interwału próbkowania licznika wydajności**
 
-Wybierz wartość dla **częstotliwość próbkowania** uruchomieniowe właściwości w teście obciążenia, na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, np. wartość domyślna pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. Dla dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [porady: określanie wielkości próbki](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wybierz wartość dla **częstotliwość próbkowania** uruchomieniowe właściwości w teście obciążenia, na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, np. wartość domyślna pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. Dla dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [jak: Określanie wielkości próbki](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Oto niektóre wytyczne dotyczące częstotliwości próbkowania:
 
@@ -49,7 +48,7 @@ Istnieją dwie możliwości włączenia **przechowywanie informacji** właściwo
 
 Ilość miejsca wymaganego w repozytorium wyników testu obciążenia do przechowywania szczegółowych danych o chronometrażu mogą być bardzo duże, szczególnie w przypadku uruchamiania dłuższych testów obciążenia. Ponadto czas przechowywania tych danych w repozytorium wyników testów obciążeniowych na koniec testu obciążenia jest dłuższy, ponieważ te dane są przechowywane w agentach testowych obciążenia do momentu zakończenia testów obciążenia. Po zakończeniu testu obciążenia, dane są przechowywane w repozytorium. Domyślnie **przechowywanie informacji** właściwość jest włączona. Jeśli jest to problem dla środowiska testowego, warto ustawić **przechowywanie informacji** do **Brak**.
 
-Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Aby uzyskać więcej informacji, zobacz [jak: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Aby wyświetlić konkretnego licznika wydajności na wykresie testu obciążenia
 
@@ -87,4 +86,4 @@ Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości maga
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Porady: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Instrukcje: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)

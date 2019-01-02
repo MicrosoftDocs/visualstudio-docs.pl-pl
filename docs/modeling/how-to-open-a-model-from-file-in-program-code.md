@@ -1,5 +1,5 @@
 ---
-title: 'Porady: otwieranie modelu z pliku w kodzie programu'
+title: 'Instrukcje: Otwieranie modelu z pliku w kodzie programu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,20 +8,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938072"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Instrukcje: Otwieranie modelu z pliku w kodzie programu
 W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 
  Z rozszerzenia programu Visual Studio ModelBus służy do tego celu. ModelBus zapewnia standardowego mechanizmu do odwoływania się do modelu lub elementy w modelu, a także do znajdowania modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="target-framework"></a>Platforma docelowa
+## <a name="target-framework"></a>Struktura docelowa
  Ustaw **platformę docelową** projektu aplikacji do **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową

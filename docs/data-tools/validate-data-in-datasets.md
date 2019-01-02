@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936194"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprowadzanych w obiektach danych są zgodne z ograniczeniami w schemacie elementu dataset. Proces weryfikacji potwierdza również, że postępujesz zgodnie z tych wartości reguły, które zostały utworzone dla aplikacji. Jest dobrą praktyką, aby sprawdzić poprawność danych przed wysłaniem aktualizacji do podstawowej bazy danych. Zmniejsza to błędy, a także potencjalną liczbę rund między aplikacją a bazą danych.
@@ -40,9 +39,9 @@ Jest najlepszym miejscem, aby dodać sprawdzanie poprawności do aplikacji w pli
 ## <a name="validate-data"></a>Sprawdzanie poprawności danych
  Sprawdzanie poprawności w zestawie danych odbywa się w następujący sposób:
 
--   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](validate-data-in-datasets.md).
+-   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas zmiany kolumn](validate-data-in-datasets.md).
 
--   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](validate-data-in-datasets.md).
+-   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](validate-data-in-datasets.md).
 
 -   Tworząc klucze, ograniczenia unikatowe, i tak dalej jako część definicji rzeczywiste schemat zestawu danych.
 
@@ -99,7 +98,7 @@ Można napisać kod, aby sprawdzić, czy każda kolumny, której chcesz sprawdzi
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Do sprawdzania poprawności danych, gdy wiersz zmieni (Visual Basic)
 
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.RowChanging> program obsługi zdarzeń <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.
 
@@ -110,7 +109,7 @@ Można napisać kod, aby sprawdzić, czy każda kolumny, której chcesz sprawdzi
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Aby sprawdzić poprawność danych, gdy wiersz zmieni (C#)
 
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja tworzy plik częściowy klasy dla <xref:System.Data.DataTable>.
 
@@ -211,6 +210,6 @@ Przekazywanie <xref:System.Data.DataRowVersion> wartości wraz z indeks kolumny 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Porady: Sprawdzanie poprawności danych w formancie DataGridView formularzy Windows](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Porady: wyświetlanie ikon błędów dla walidacji formularza za pomocą składnika ErrorProvider formularzy Windows](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Instrukcje: Sprawdzanie poprawności danych w formancie DataGridView formularzy Windows](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Instrukcje: Wyświetlanie ikon błędów dla walidacji formularza za pomocą składnika ErrorProvider formularzy Windows](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

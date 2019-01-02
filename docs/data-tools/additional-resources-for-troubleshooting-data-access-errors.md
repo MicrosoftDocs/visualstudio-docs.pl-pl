@@ -1,5 +1,5 @@
 ---
-title: Fora dostępu do danych
+title: Dostęp do danych w usłudze forów
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -223,25 +223,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932723"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Rozwiązywanie problemów z błędami dostępu do danych na forach
 
-Pomoc w rozwiązywaniu problemów błędy i ostrzeżenia można znaleźć na forach publicznego Microsoft Developer Network (MSDN). Poniżej przedstawiono niektóre forach związanych z danymi dostępne w witrynie MSDN:
+Pomoc dotyczącą rozwiązywania problemów z błędów i ostrzeżeń można znaleźć w publiczne fora Microsoft Developer Network (MSDN). Oto niektóre dane powiązane fora dostępne w witrynie MSDN:
 
-- [Formanty danych formularzy systemu Windows i wiązania danych](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Formanty danych Windows Forms i wiązania danych](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [Forum zestawu danych ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
-- [ADO.NET Entity Framework i LINQ do jednostek](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
+- [ADO.NET Entity Framework i LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
 - [Forum usług danych WCF](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
@@ -249,9 +248,9 @@ Pomoc w rozwiązywaniu problemów błędy i ostrzeżenia można znaleźć na for
 
 - [LINQ do SQL forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
-- [Forum dostawcy danych ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
+- [Forum dostawców danych ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-Aby uzyskać informacje dotyczące rozwiązywania problemów z łącznością z programem SQL Server, zobacz [Rozwiązywanie problemów dotyczących nawiązywania połączenia z aparatem bazy danych programu SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+Aby uzyskać informacje o tym, jak rozwiązywać problemy z łącznością do programu SQL Server, zobacz [Rozwiązywanie problemów dotyczących nawiązywania połączenia z aparatem bazy danych programu SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Zobacz także
 

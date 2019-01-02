@@ -1,8 +1,7 @@
 ---
-title: Zrefaktoryzuj kod, aby skonwertować kwerendy LINQ do instrukcji foreach
+title: Refaktoryzuj kod konwertujący zapytania LINQ do instrukcji foreach
 ms.date: 05/15/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,36 +10,36 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3e4e448931e028c53d62c534e2785e4f026a7ec
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 23b8446b0fa44cccc3ae18ad789fd5b45e514033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937299"
 ---
-# <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refaktoryzacja przekonwertować LINQ do instrukcji foreach
+# <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refaktoryzacja do przekonwertowania LINQ do instrukcji foreach
 
-Użyj tego refaktoryzacji, aby przekonwertować [składni zapytań LINQ](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) do [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) instrukcji.
+Użyj tej refaktoryzacji można przekonwertować [składni zapytań LINQ](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) do [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) instrukcji.
 
-Dotyczy to refaktoryzacji:
+Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
-## <a name="how-to-use-it"></a>Jak z niego korzystać
+## <a name="how-to-use-it"></a>Jak z niej korzystać
 
-1. Wybierz całą LINQ zapytania początkowe z `from`.
+1. Zaznacz całą LINQ zapytania począwszy od `from`.
 
    > [!NOTE]
-   > Ta refaktoryzacji tylko można przekonwertować zapytań LINQ wyrażone składnia zapytania i nie składni metody.
+   > Ta Refaktoryzacja należy używać tylko do zapytań LINQ, wyrażone za pomocą składni zapytania i nie metody konwersji.
 
-1. Naciśnij klawisz **Ctrl**+**.** lub kliknij przycisk śrubokręt ![ikona śrubokręt](../media/screwdriver-icon.png) ikony na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl**+**.** lub kliknij przycisk śrubokręt ![ikonę śrubokręt](../media/screwdriver-icon.png) ikonę na marginesie pliku kodu.
 
-   ![Konwertuj menu Szybkie akcje foreach LINQ](media/convert-linq-to-foreach.png)
+   ![Konwertuj LINQ do menu Szybkie akcje foreach](media/convert-linq-to-foreach.png)
 
-1. Wybierz **przekonwertować na "foreach"**. Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
+1. Wybierz **Konwertuj na pętlę "foreach"**. Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
 
 > [!NOTE]
-> Język C#, kod wygenerowany przez te refaktoryzacje używa jawnego typu lub [var](/dotnet/csharp/language-reference/keywords/var) dla zmiennej iteracji `foreach` pętli. Typ w wygenerowanym kodzie, bezpośrednie lub pośrednie, zależy od ustawień styl kodu, które znajdują się w zakresie. Te ustawienia określonego stylu kodu są konfigurowane na poziomie komputera w obszarze **narzędzia** > **opcje** > **Edytor tekstu**  >  **C#** > **styl kodu** > **ogólne** > **\'var " Preferencje**, lub na poziomie rozwiązania [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) pliku. Jeśli zmienisz ustawienie stylu kodu **opcje**, otwórz plik kodu, aby zmiany zaczęły obowiązywać.
+> Aby uzyskać C#, kod wygenerowany przez te operacje refaktoryzacji używa jawnego typu lub [var](/dotnet/csharp/language-reference/keywords/var) dla zmiennej iteracji `foreach` pętli. Typ w wygenerowanym kodzie jawnych lub niejawnych, zależy od ustawienia stylu kodu, które znajdują się w zakresie. Te ustawienia konkretnego stylu kodu są konfigurowane na poziomie komputera, w obszarze **narzędzia** > **opcje** > **edytora tekstów**  >  **C#**  >  **Styl kodu** > **ogólne** > **\'var " Preferencje**, lub na poziomie rozwiązania w [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) pliku. Jeśli zmienisz ustawienia stylu kodu w **opcje**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
 
 ## <a name="see-also"></a>Zobacz także
 

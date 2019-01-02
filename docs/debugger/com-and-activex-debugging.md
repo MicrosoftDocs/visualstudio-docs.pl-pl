@@ -1,8 +1,6 @@
 ---
 title: COM i debugowanie ActiveX | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,32 +21,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820867"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
-Ta sekcja zawiera wskazówki dotyczące debugowanie aplikacji modelu COM i formantów ActiveX.  
+Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontrolek ActiveX.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)  
- Podczas debugowania aplikacji modelu COM, wymienia uwagi. Problemy obejmują: debugowanie kontenera za pomocą dwa projekty w tym samym rozwiązaniu, śledzenie do wywołania, które wykraczają poza granicami procesu Ustawianie punktów przerwania w funkcji wywołania zwrotnego i wykonywanie krok po kroku bok i w kontenery i serwery i serwera COM.  
+ Podczas debugowania aplikacji modelu COM jest wspomniany uwagi. Obejmują problemów: debugowanie kontenera przy użyciu dwóch projektów w obrębie tego samego rozwiązania, śledzenia do wywołania, które bardziej szczegółowo w granicach procesu, ustawiania punktów przerwania w funkcjach wywołania zwrotnego i przechodzenie między oraz kontenery i serwery i serwera COM.  
   
- [Porady: debugowanie formantu ActiveX](../debugger/how-to-debug-an-activex-control.md)  
- Zawiera informacje dotyczące debugowanie formantów ActiveX. Obejmuje to: określenie kontenera dla sesji debugowania zobaczyć, jak wykonuje kod w formantu ActiveX, debugowanie formant ActiveX powiązanego z danymi, symulując określonego kontenera i przechodzenie do kodu kontenera.  
+ [Instrukcje: Debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md)  
+ Zawiera informacje na temat debugowania formantów ActiveX. Obejmuje to: określenie kontenera dla sesji debugowania zobaczyć, jak wykonuje kod w kontrolce ActiveX, debugowania powiązanych z danymi formantu ActiveX, symulując określonego kontenera i przechodzenie do kodu kontenera.  
   
  [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)  
- Wyświetla listę przeglądarek i przykładowe aplikacje, które mogą być użyteczne podczas debugowania aplikacji modelu COM.  
+ Wyświetla listę przeglądarek i przykładowe aplikacje, które mogą być przydatne podczas debugowania aplikacji modelu COM.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)  
- Zawiera łącza do większych sekcji debugowania. Informacje obejmują: nowości w debugerze, ustawienia i przygotowanie, punkty przerwania, obsługa wyjątków, Edytuj i Kontynuuj, debugowanie zarządzanego kodu, debugowanie projektów Visual C++, debugowania COM i ActiveX, debugowanie bibliotek DLL, debugowanie SQL i użytkownika odwołania do interfejsu.  
+ [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)  
+ Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje obejmują: co nowego w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, edytowanie i kontynuowani, debugowanie zarządzanego kodu, debugowania projektów Visual C++, debugowania modelu COM i ActiveX, debugowania bibliotek DLL, debugowanie SQL i użytkownika odwołania do interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Wprowadzenie do COM](/cpp/atl/introduction-to-com)   
+ [Wprowadzenie do modelu COM](/cpp/atl/introduction-to-com)   
  [Kontrolki ActiveX](/cpp/mfc/activex-controls)   
- [Aplikacje serwera SDI](../debugger/sdi-server-applications.md)
+ [Aplikacje serwerowe SDI](../debugger/sdi-server-applications.md)

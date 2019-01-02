@@ -1,9 +1,6 @@
 ---
 title: Ensurevstocomponent — funkcja
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +10,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39dcdcc5e3b8e6e5bc5834e7e05ea22516d8c7e6
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 88ed4de9f126f819f0cbdc7f3f49b4798ccb2195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838966"
 ---
 # <a name="ensurevstocomponent-function"></a>Ensurevstocomponent — funkcja
   Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  
@@ -39,5 +36,3 @@ HRESULT EnsureVSTOComponent(
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli funkcja się powiedzie, zwraca **S_OK**. Jeśli funkcja zawiedzie, zwraca kod błędu.  
-  
-  

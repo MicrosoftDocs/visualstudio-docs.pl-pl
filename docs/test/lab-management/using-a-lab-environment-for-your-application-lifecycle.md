@@ -2,7 +2,6 @@
 title: Użyć środowiska laboratoryjnego do operacji deweloperskich
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7b93e4f065cbd776de9f70fae61594e828a92fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940698"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Użyć środowiska laboratoryjnego dla Twojego metodyki devops
 
@@ -77,15 +76,15 @@ Istnieją dwa rodzaje środowisk laboratoryjnych, które można utworzyć za pom
 
 **Środowisk programu SCVMM:** może zawierać tylko maszyny wirtualne, które są zarządzane przez program SCVMM (System Center Virtual Machine Manager), więc maszyn wirtualnych w środowiskach SCVMM mogą działać tylko na środowisku wirtualizacji funkcji Hyper-V. Jednak środowisk SCVMM zapewniają następujące funkcje automatyzacji i zarządzania, które nie są dostępne w standardowych środowisk:
 
-- **Migawki środowisk:** migawki środowiska zawierają stan środowiska laboratoryjnego, dzięki czemu można szybko przywrócić czystego środowiska lub zapisywania stanu środowiska, który został zmodyfikowany. Przepływ pracy kompilacja wdrożenie test umożliwia również Automatyzowanie zapisywanie i przywracanie migawki środowiska.
+- **Migawki środowiska:** Migawki środowiska zawiera stan środowiska laboratoryjnego, dzięki czemu można szybko przywrócić czystego środowiska lub zapisywania stanu środowiska, który został zmodyfikowany. Przepływ pracy kompilacja wdrożenie test umożliwia również Automatyzowanie zapisywanie i przywracanie migawki środowiska.
 
-- **Przechowywane środowisk:** przechowują kopię środowiska SCVMM, a następnie wdrożyć wiele kopii tego środowiska.
+- **Przechowywane środowiska:** Możesz zapisać kopię środowiska SCVMM i następnie wdrożono wiele kopii tego środowiska.
 
-- **Izolacja sieci:** izolacji sieci umożliwia jednoczesne uruchamianie wielu kopii identycznych środowiska SCVMM, bez konfliktów nazw komputerów.
+- **Izolacja sieci:** Izolacja sieci umożliwia jednoczesne uruchamianie wielu kopii identycznych środowiska SCVMM, bez konfliktów nazw komputerów.
 
-- **Szablony maszyn wirtualnych:** szablonu maszyny wirtualnej jest maszyny wirtualnej, który miał jego nazwy i usunąć innych identyfikatorów. Po wdrożeniu szablonu maszyny Wirtualnej w środowisku SCVMM, Microsoft Test Manager generuje nowych identyfikatorów. Dzięki temu możesz wdrożyć wiele kopii maszyny wirtualnej, w tym samym środowisku, lub do wielu środowisk, a następnie uruchom maszyn wirtualnych jednocześnie.
+- **Szablony maszyn wirtualnych:** Szablon maszyny wirtualnej jest maszyny wirtualnej, który miał jego nazwy i usunąć innych identyfikatorów. Po wdrożeniu szablonu maszyny Wirtualnej w środowisku SCVMM, Microsoft Test Manager generuje nowych identyfikatorów. Dzięki temu możesz wdrożyć wiele kopii maszyny wirtualnej, w tym samym środowisku, lub do wielu środowisk, a następnie uruchom maszyn wirtualnych jednocześnie.
 
-- **Przechowywane maszyny wirtualne:** maszyny wirtualnej, która jest przechowywana w bibliotece projektu i zawiera unikatowych identyfikatorów.
+- **Przechowywane maszyny wirtualne:** Maszyna wirtualna, jest przechowywany w bibliotece projektu, który zawiera unikatowych identyfikatorów.
 
 > [!NOTE]
 > Lab Management nie obsługuje programie SCVMM 2016.

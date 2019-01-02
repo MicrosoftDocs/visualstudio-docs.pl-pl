@@ -1,9 +1,6 @@
 ---
 title: Kolory i style dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914611"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 
@@ -82,7 +79,7 @@ Przed rozpoczęciem korzystania z typowych udostępnione kolory, upewnij się, �
 
 ### <a name="user-customizable-colors"></a>Kolorów można dostosowywać użytkownika
 
-Zobacz: [udostępnianie kolorów dla użytkowników końcowych](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+Zobacz: [Udostępnianie kolorów dla użytkowników końcowych](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
 Czasami można zezwolić użytkownikom końcowym należy dostosować interfejs użytkownika, takich jak podczas tworzenia edytora kodu lub powierzchni projektowej. Elementy interfejsu użytkownika znajdują się w **czcionki i kolory** części **narzędzia &gt; opcje** okno dialogowe, w którym użytkownicy mogą wybierać można zmienić kolor pierwszego planu i kolor tła.
 
@@ -287,7 +284,7 @@ Tylko niewielki podzbiór kolory systemowe może służyć do dużego kontrastu,
 
 ### <a name="system-color-set"></a>Zestaw kolorów systemu
 
-Tabeli u [Blog zespołu programu WPF: odwołanie SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) wskazuje kompletny zestaw nazw kolorów systemowych i odpowiednie odcienie wyświetlane w każdym temacie.
+Tabeli u [Blog zespołu programu WPF: Odwołanie SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) wskazuje kompletny zestaw nazw kolorów systemowych i odpowiednie odcienie wyświetlane w każdym temacie.
 
 Gdy zastosowanie ograniczony zestaw kolorów, aby Twój interfejs użytkownika *oczekuje się, utracisz subtelne szczegółowe informacje, które były obecne w "normal" motywy*. Oto przykład interfejsu użytkownika przy użyciu subtelne szarego kolorów, które są używane do odróżniania obszarów w obrębie okna narzędzi. Po połączeniu się z tym samym oknie, które są wyświetlane w trybie dużego kontrastu, możesz zobaczyć, że wszystkim programistom są tego samego rozwiązania hue, a obramowania te obszary są wskazywane przez samodzielnie obramowania:
 

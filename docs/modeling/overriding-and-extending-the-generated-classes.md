@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929283"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Przesłanianie i rozszerzanie wygenerowanych klas
 
@@ -92,6 +91,6 @@ Magazyn modelowania udostępnia mechanizm zdarzeń, który można użyć do nas�
 
 Można subskrybować niektóre zdarzenia w kształtach. Na przykład możesz nasłuchiwać kliknięć myszą na kształcie. Trzeba napisać kod, która ją subskrybuje zdarzenia dla każdego obiektu. Ten kod można pisać w zastąpieniu obiektu InitializeInstanceResources().
 
-Niektóre zdarzenia są generowane na ShapeFields, które są używane do rysowania dekoratory na kształcie. Aby uzyskać przykład, zobacz [porady: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Niektóre zdarzenia są generowane na ShapeFields, które są używane do rysowania dekoratory na kształcie. Aby uzyskać przykład, zobacz [jak: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Te zdarzenia nie występują zwykle wewnątrz transakcji. Należy utworzyć transakcji, jeśli chcesz wprowadzić zmiany w magazynie.

@@ -1,8 +1,7 @@
 ---
-title: Formatowanie, XML, Edytor tekstu, opcje — Okno dialogowe
+title: Formatowanie, XML, Edytor tekstu, Opcje, okno dialogowe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938595"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatowanie, XML, Edytor tekstu, okno dialogowe Opcje
 
-To okno dialogowe służy do określenia ustawienia formatowania edytora XML. Dostęp można uzyskać **opcje** okno dialogowe z **narzędzia** menu.
+To okno dialogowe umożliwia określenie ustawień formatowania edytora XML. Możesz uzyskać dostęp **opcje** okno dialogowe z **narzędzia** menu.
 
 > [!NOTE]
-> Te ustawienia są dostępne po wybraniu **Edytor tekstu** folderu, **XML** folder, a następnie **formatowanie** opcję **opcje** okno dialogowe.
+> Te ustawienia są dostępne po wybraniu **edytora tekstów** folderze **XML** folder, a następnie **formatowanie** opcję **opcje** okno dialogowe.
 
 ## <a name="attributes"></a>Atrybuty
  **Zachowaj ręczne formatowanie atrybutów**
@@ -32,9 +31,9 @@ To okno dialogowe służy do określenia ustawienia formatowania edytora XML. Do
 > [!NOTE]
 > W przypadku atrybutów w wielu wierszach, Edytor wcięcie każdego wiersza atrybutów, aby dopasować wcięcie elementu nadrzędnego.
 
- **Dopasuj atrybutów na ich własnych wiersza**
+ **Wyrównaj atrybuty na własnej linii**
 
- Wyrównuje druga i kolejna atrybutów w pionie, tak aby dopasować wcięcia pierwszego atrybutu. Przykładem czy wyrównanie atrybutów jest następujący tekst XML.
+ Wyrównuje drugim i kolejnych atrybutów w pionie, aby dopasować wcięcie pierwszego atrybutu. Następujący tekst XML jest przykładem sposobu atrybuty byłaby wyrównana.
 
 ```xml
 <item id = "123-A"
@@ -43,21 +42,21 @@ To okno dialogowe służy do określenia ustawienia formatowania edytora XML. Do
 </item>
 ```
 
-## <a name="auto-reformat"></a>Automatycznego ponownego formatowania
- **Po wklejeniu ze Schowka**
+## <a name="auto-reformat"></a>Automatycznie Formatuj ponownie
+ **Przy wklejaniu ze Schowka**
 
- Formatuje tekstu XML wklejonych ze Schowka.
+ Formatuje tekst XML wklejonych ze Schowka.
 
  **Po zakończeniu tagu końcowego**
 
- Formatuje element po zakończeniu tagu końcowego.
+ Formatuje element, po zakończeniu tagu końcowego.
 
-## <a name="mixed-content"></a>Zawartość mieszaną
- **Zachowaj zawartość mieszaną domyślnie**
+## <a name="mixed-content"></a>Zawartość mieszana
+ **Zachowaj zawartość mieszana domyślnie**
 
- Określa, czy edytor formatuje zawartość mieszana. Domyślnie próbuje ponownie Formatuj zawartość mieszaną, z wyjątkiem przypadków, gdy zawartość znajduje się w edytorze `xml:space="preserve"` zakresu.
+ Określa, czy edytor formatuje zawartość mieszana. Domyślnie, próbuje ponownie Formatuj zawartość mieszaną, z wyjątkiem sytuacji, gdy zawartość znajduje się w edytorze `xml:space="preserve"` zakresu.
 
- Jeśli element zawiera tekst i znacznik, zawartość są traktowane jako mieszanie zawartości. Oto przykład elementu z zawartością mieszaną.
+ Jeśli element zawiera tekst i znacznik, uznaje się zawartość mieszaną zawartość i być. Oto przykład elementu z zawartością mieszane.
 
 ```xml
 <dir>c:\data\AlphaProject\

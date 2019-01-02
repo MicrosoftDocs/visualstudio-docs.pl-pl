@@ -1,9 +1,6 @@
 ---
 title: CommandPlacement, Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5d694f6ed12d3fd7d531ec6a0a01ec70a826561
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941364"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement, element
 CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzględnione w więcej niż jednej grupie lub menu. Przy użyciu elementu CommandPlacement, nie trzeba całkowicie ponownie zdefiniować te elementy, aby zmodyfikować wygląd interfejsu użytkownika.  
@@ -43,7 +40,7 @@ CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzgl
 |---------------|-----------------|  
 |Identyfikator GUID|Wymagana. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Symbols, element](../extensibility/symbols-element.md).|  
 |identyfikator|Wymagana. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
-|priorytet|Wymagana. Określa położenie visual elementu w jego elementu nadrzędnego.|  
+|priority|Wymagana. Określa położenie visual elementu w jego elementu nadrzędnego.|  
 |Warunek|Opcjonalna. Zobacz [warunkowego Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -27,12 +26,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33805f4a5997d25b0c1a79add07fce0dc72edfb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 811c6c26ec3fdfd8689757cd8a46358c3a896a88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938063"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +42,7 @@ Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas
 
  Ponadto wielowątkowość wprowadza kilka nowych rodzajów potencjalnych błędów. Często na przykład dwa lub więcej wątków, trzeba mieć dostęp do tego samego zasobu, ale tylko jeden wątek może bezpiecznie uzyskać dostępu do zasobu w danym momencie. Niektóre forma wzajemnego wykluczania jest niezbędne upewnić się, że tylko jeden wątek uzyskuje dostęp do zasobów w danym momencie. Jeśli wzajemne wykluczanie jest wykonywane niepoprawnie, może utworzyć *zakleszczenia* warunku, gdzie żaden wątek nie może wykonać. Zakleszczenia mogą być problemem szczególnie trudnym do debugowania.
 
- Program Visual Studio udostępnia **wątków** okna, okno wątków GPU, okno czujki równoległej i inne funkcje, które debugowanie wielowątkowe. Najlepszym sposobem, aby dowiedzieć się więcej o funkcjach wątkowości jest wykonanie instrukcji opisanych w przewodnikach. Zobacz [wskazówki: debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md) i [wskazówki: debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Program Visual Studio udostępnia **wątków** okna, okno wątków GPU, okno czujki równoległej i inne funkcje, które debugowanie wielowątkowe. Najlepszym sposobem, aby dowiedzieć się więcej o funkcjach wątkowości jest wykonanie instrukcji opisanych w przewodnikach. Zobacz [instruktażu: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md) i [instruktażu: Debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  Visual Studio udostępnia również zaawansowane punkty przerwania i punkty śledzenia, które mogą być bardzo przydatne podczas debugowania aplikacji wielowątkowych. Filtry punktów przerwania można użyć, aby umieścić punkty przerwania na jednym z wątków. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md)
 
@@ -54,20 +53,20 @@ Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas
 
  [Debugowanie wielu procesów](../debugger/debug-multiple-processes.md) wyjaśnia, jak debugowanie wielu procesów.
 
- [Porady: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md) użyteczne procedury dotyczące debugowania wątków przy użyciu **wątków** okna.
+ [Instrukcje: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md) użyteczne procedury dotyczące debugowania wątków przy użyciu **wątków** okna.
 
- [Porady: przełączanie do innego wątku podczas debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md) trzy sposoby przełączenia kontekstu debugowania do innego wątku.
+ [Instrukcje: Przełącz się do innego wątku podczas debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md) trzy sposoby przełączenia kontekstu debugowania do innego wątku.
 
- [Porady: Flaga i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md) Oznacz lub Oflaguj wątki, które chcesz poświęcić szczególną uwagę podczas debugowania.
+ [Instrukcje: Flaga i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md) Oznacz lub Oflaguj wątki, które chcesz poświęcić szczególną uwagę podczas debugowania.
 
- [Porady: Ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md) nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna.
+ [Instrukcje: Ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md) nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna.
 
- [Porady: Ustawianie nazw wątków w kodzie zarządzany](../debugger/how-to-set-a-thread-name-in-managed-code.md) nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna.
+ [Instrukcje: Ustawianie nazw wątków w kodzie zarządzany](../debugger/how-to-set-a-thread-name-in-managed-code.md) nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna.
 
- [Wskazówki: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md).
+ [Przewodnik: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md).
 Przewodnik po funkcjach debugowania wątku, z naciskiem na funkcje jak do [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].
 
- [Porady: debugowanie w klastrze wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md) techniki debugowania aplikacji, która działa w klastrze o wysokiej wydajności.
+ [Instrukcje: Debugowanie w klastrze wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md) techniki debugowania aplikacji, która działa w klastrze o wysokiej wydajności.
 
  [Porady dotyczące debugowania wątków w kodzie natywnym](../debugger/tips-for-debugging-threads-in-native-code.md) proste techniki, które mogą być przydatne podczas debugowania wątków natywnych.
 
@@ -75,11 +74,11 @@ Przewodnik po funkcjach debugowania wątku, z naciskiem na funkcje jak do [!INCL
 
  [Za pomocą Parallel Stacks Window](../debugger/using-the-parallel-stacks-window.md) wywołanie pokazuje stosy wielu wątków (lub zadaniami) w jednym widoku, a ponadto scala segmenty stosów, które są wspólne miedzy wątkami (lub zadaniami).
 
- [Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) przewodnik, który pokazuje, jak używać okien zadań równoległych i stosów przetwarzania równoległego.
+ [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) przewodnik, który pokazuje, jak używać okien zadań równoległych i stosów przetwarzania równoległego.
 
- [Porady: Użyj okna czujki równoległej](../debugger/how-to-use-the-parallel-watch-window.md) Sprawdź wartości i wyrażenia w wielu wątkach.
+ [Instrukcje: Użyj okna czujki równoległej](../debugger/how-to-use-the-parallel-watch-window.md) Sprawdź wartości i wyrażenia w wielu wątkach.
 
- [Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md) Sprawdź i Praca z wątkami, które są uruchomione w procesorze GPU podczas debugowania.
+ [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md) Sprawdź i Praca z wątkami, które są uruchomione w procesorze GPU podczas debugowania.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)

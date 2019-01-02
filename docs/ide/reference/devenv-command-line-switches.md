@@ -2,7 +2,6 @@
 title: Przełączniki wiersza polecenia Devenv
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 29a86959ccd4b0224e22e480588d36a0d637336e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911981"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 
@@ -82,7 +81,7 @@ Następujące przełączniki wiersza polecenia nie są wyświetlane w środowisk
 |[/Build](../../ide/reference/build-devenv-exe.md)|Tworzy określonego rozwiązania lub projektu, zgodnie z konfiguracją określonego rozwiązania.<br /><br /> `devenv myproj.csproj /build`|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Usuwa wszystkie pliki utworzone za pomocą polecenia kompilacji, bez wywierania wpływu na pliki źródłowe.<br /><br /> `devenv myproj.csproj /clean`|
 |[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Kompiluje rozwiązanie, wraz z plikami niezbędne do wdrożenia, zgodnie z konfiguracją rozwiązania.<br /><br /> `devenv myproj.csproj /deploy`|
-|[/Diff](../../ide/reference/diff.md)|Porównuje dwa pliki. Przyjmuje cztery parametry: SourceFile, TargetFile, SourceDisplayName (opcjonalnie), TargetDisplayName (opcjonalnie).|
+|[/Diff](../../ide/reference/diff.md)|Porównuje dwa pliki. Przyjmuje cztery parametry: (Opcjonalnie) SourceDisplayName SourceFile, TargetFile, TargetDisplayName (opcjonalnie).|
 |[/Out](../../ide/reference/out-devenv-exe.md)|Pozwala określić plik, aby otrzymywać komunikaty o błędach podczas kompilacji.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projekt do kompilacji, czyszczenia lub wdrożenia. Można użyć tego przełącznika, tylko wtedy, gdy podano również/Build, / rebuild, / clean, lub / deploy — przełącznik.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Określa konfigurację projektu do kompilacji lub wdrożenia. Można użyć tego przełącznika, tylko wtedy, gdy podano również przełącznika/Project.|

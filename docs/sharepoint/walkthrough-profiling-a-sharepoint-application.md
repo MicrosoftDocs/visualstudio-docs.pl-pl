@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Profilowanie aplikacji SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Profilowanie aplikacji SharePoint | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913820"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Wskazówki: Profilowanie aplikacji SharePoint
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profil aplikacji programu SharePoint
   Ten poradnik pokazuje jak używać narzędzi profilowania w programie Visual Studio w celu zoptymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest zawierający pętli bezczynności, który obniża wydajność odbiorcę zdarzeń funkcji odbiorcy zdarzeń funkcji programu SharePoint. Profilera Visual Studio umożliwia znalezienie i wyeliminować najbardziej kosztowne (najwolniejsze wykonanie) części projektu, znany także jako *ścieżka aktywna*.  
   
  W tym instruktażu pokazano następujące zagadnienia:  
@@ -280,4 +277,3 @@ ms.locfileid: "49852755"
  [Sesja wydajności — omówienie](/visualstudio/profiling/performance-session-overview)   
  [Profilowanie wydajności — przewodnik dla początkujących](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Znajdź wąskie gardła za pomocą programu Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

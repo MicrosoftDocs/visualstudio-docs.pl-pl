@@ -1,9 +1,6 @@
 ---
-title: 'Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla projektu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931258"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla projektu
   W tym instruktażu przedstawiono sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Project. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte projekty. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
@@ -123,13 +120,13 @@ ms.locfileid: "50671420"
 ## <a name="next-steps"></a>Następne kroki  
  Teraz, gdy utworzono podstawowe dodatku narzędzi VSTO dla projektu, można dowiedzieć się więcej o tworzeniu dodatków narzędzi VSTO dla programów w tych tematach:  
   
--   Ogólnych zadań programowania, które można wykonywać w dodatków narzędzi VSTO dla projektu: [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
+-   Ogólnych zadań programowania, które można wykonywać w dodatków narzędzi VSTO dla projektu: [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Przy użyciu modelu obiektu projektu: [projektu rozwiązania](../vsto/project-solutions.md).  
+-   Przy użyciu modelu obiektu projektu: [Projekt rozwiązania](../vsto/project-solutions.md).  
   
--   Kompilowanie i debugowanie dodatków narzędzi VSTO dla projektu: [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).  
+-   Kompilowanie i debugowanie dodatków narzędzi VSTO dla projektu: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
   
--   Wdrażanie dodatków narzędzi VSTO dla projektu: [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
+-   Wdrażanie dodatków narzędzi VSTO dla projektu: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "50671420"
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
-  
-  

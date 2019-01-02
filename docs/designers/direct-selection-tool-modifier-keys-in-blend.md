@@ -2,7 +2,6 @@
 title: Bezpośrednie zaznaczenie klawisze modyfikujące w programie Blend
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83377aa4dabec81815a1503287cc878ca2fee062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823276"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Bezpośrednie zaznaczenie klawisze modyfikujące w programie Blend
 W poniższej tabeli przedstawiono skróty, które służy do modyfikowania kształt istniejące ścieżki **Zaznaczanie bezpośrednie** narzędzie ![narzędzia Zaznaczanie bezpośrednie](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Aby dodać lub usunąć punkty w istniejącej ścieżki lub Dołącz dwa istniejące ścieżki, użyj **pióra** narzędzia.

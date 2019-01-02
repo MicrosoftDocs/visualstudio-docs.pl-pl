@@ -1,9 +1,6 @@
 ---
 title: Element grupy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34ca01d77856fadabcc8e681d2be3b1eb6173c70
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19bc3f44a4ba87195986327fe756e7419f259076
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827458"
 ---
 # <a name="group-element"></a>Element grupy
 Definiuje grupy poleceń pakietu VSPackage.  
@@ -41,7 +38,7 @@ Definiuje grupy poleceń pakietu VSPackage.
 |---------------|-----------------|  
 |Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
 |identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|  
-|priorytet|Opcjonalna. Wartość liczbowa określająca priorytet.|  
+|priority|Opcjonalna. Wartość liczbowa określająca priorytet.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  

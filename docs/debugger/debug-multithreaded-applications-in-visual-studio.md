@@ -2,7 +2,6 @@
 title: Debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907894"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debugowanie aplikacji wielowątkowych w programie Visual Studio
 Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas procesora. Każdy proces, który jest uruchomiony w systemie operacyjnym, składa się z co najmniej jeden wątek. Procesy, które mają więcej niż jeden wątek nazywane są wielowątkowymi.  
@@ -41,11 +40,11 @@ Wielowątkowość wprowadzić nowych rodzajów potencjalnych błędów. Na przyk
 
 Visual Studio zapewnia różne narzędzia do użycia podczas debugowania aplikacji wielowątkowych.
 
-- Dla wątków, podstawowe narzędzia do debugowania wątków to **wątków** okna, znaczniki wątków w oknach źródłowych **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okna, a **Lokalizacja debugowania** paska narzędzi. Aby dowiedzieć się więcej na temat **wątków** okna i **Lokalizacja debugowania** narzędzi, zobacz [wskazówki: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md). Aby dowiedzieć się, jak używać **stosów równoległych** i **równoległego wyrażenia kontrolnego** systemu windows, zobacz [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). Zarówno tematach opisano sposób użycia znaczników wątków.
+- Dla wątków, podstawowe narzędzia do debugowania wątków to **wątków** okna, znaczniki wątków w oknach źródłowych **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okna, a **Lokalizacja debugowania** paska narzędzi. Aby dowiedzieć się więcej na temat **wątków** okna i **Lokalizacja debugowania** narzędzi, zobacz [instruktażu: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md). Aby dowiedzieć się, jak używać **stosów równoległych** i **równoległego wyrażenia kontrolnego** systemu windows, zobacz [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). Zarówno tematach opisano sposób użycia znaczników wątków.
   
-- Dla kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania są **stosów równoległych** okna, **Równoległego wyrażenia kontrolnego** oknie i **zadania** okno, które również obsługuje język JavaScript. Aby rozpocząć pracę, zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) i [wskazówki: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
+- Dla kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania są **stosów równoległych** okna, **Równoległego wyrażenia kontrolnego** oknie i **zadania** okno, które również obsługuje język JavaScript. Aby rozpocząć pracę, zobacz [instruktażu: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) i [instruktażu: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
-- Do debugowania wątków na procesor GPU, jest podstawowym narzędziem **wątków GPU** okna. Zobacz [porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
+- Do debugowania wątków na procesor GPU, jest podstawowym narzędziem **wątków GPU** okna. Zobacz [jak: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
 - Dla procesów, podstawowe narzędzia to **dołączyć do procesu** okno dialogowe **procesy** oknie i **Lokalizacja debugowania** paska narzędzi.  
   
@@ -67,25 +66,25 @@ Debugowanie aplikacji wielowątkowej, która ma interfejs użytkownika może by�
  [Przewodnik: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).  
  Przewodnik, który pokazuje, jak używać **wątków** okna i **Lokalizacja debugowania** paska narzędzi. 
 
- [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Przewodnik, który pokazuje, jak używać **stosów równoległych** i **zadania** systemu windows.  
   
- [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+ [Instrukcje: Przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
  Rożne sposoby przełączenia kontekstu debugowania do innego wątku.  
   
- [Porada: oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md)  
+ [Instrukcje: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md)  
  Oznacz lub Oflaguj wątki, które chcesz poświęcić szczególną uwagę podczas debugowania.    
   
- [Porady: debugowanie w klastrze o wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [Instrukcje: Debugowanie w klastrze o wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  Techniki debugowania aplikacji, która działa w klastrze wysokiej wydajności.  
 
  [Wskazówki dotyczące debugowania wątków w kodzie natywnym](../debugger/tips-for-debugging-threads-in-native-code.md)  
  Proste techniki, które mogą być przydatne podczas debugowania wątków natywnych. 
 
- [Instrukcje: ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)  
+ [Instrukcje: Ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)  
  Nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna.  
   
- [Instrukcje: ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
+ [Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
  Nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna. 
   
 ## <a name="see-also"></a>Zobacz także  

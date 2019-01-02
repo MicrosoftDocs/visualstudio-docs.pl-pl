@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,17 +15,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e67c0c6b1bf24555e57d09b75317ce562a9f956
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 073ac55cce908a43bed2a2c6acb4e11cc1fa2ead
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824098"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Przewodnik: publikowanie rozszerzenia programu Visual Studio
+# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Uwaga**: Galeria Visual Studio jest zastępowany przez Visual Studio Marketplace. Zobaczyć najnowszą wersję tego tematu, aby uzyskać szczegółowe informacje.
+**Uwaga**: W galerii Visual Studio jest zastępowany przez Visual Studio Marketplace. Zobaczyć najnowszą wersję tego tematu, aby uzyskać szczegółowe informacje.
 
 
 W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual Studio do galerii Visual Studio. Po dodaniu rozszerzenia w galerii, deweloperzy mogą używać **rozszerzenia i aktualizacje** przeglądać dostępne dla nowych i zaktualizowanych rozszerzeń.
@@ -59,13 +58,13 @@ W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual S
 
 4.  Użyj konta Microsoft do logowania. Jeśli nie masz konta Microsoft, możesz go utworzyć w tym momencie.
 
-5.  Kliknij przycisk **przekazywanie**.
+5.  Kliknij pozycję **Przekaż**.
 
-6.  W **krok 1: typ rozszerzenia**, wybierz opcję **narzędzie** a następnie kliknij przycisk **dalej**.
+6.  W **krok 1: Typ rozszerzenia**, wybierz opcję **narzędzie** a następnie kliknij przycisk **dalej**.
 
-7.  W **krok 2: przekazywanie**, można przekazać bezpośrednio do galerii Visual Studio, albo po prostu Dodaj link do własnej witryny sieci Web. W takim przypadku wybierz **chcę przekazać moje narzędzie**. **Wybrać kontrolkę** pojawi się okno. Kliknij przycisk **Przeglądaj** a następnie wybierz TestPublish.vsix w folderze \bin\Release projektu. Kliknij przycisk **Dalej**.
+7.  W **krok 2: Przekaż**, można przekazać bezpośrednio do galerii Visual Studio, albo po prostu Dodaj link do własnej witryny sieci Web. W takim przypadku wybierz **chcę przekazać moje narzędzie**. **Wybrać kontrolkę** pojawi się okno. Kliknij przycisk **Przeglądaj** a następnie wybierz TestPublish.vsix w folderze \bin\Release projektu. Kliknij przycisk **Dalej**.
 
-8.  W **krok 3: podstawowe informacje**, pola z pliku source.extension.vsixmanifest są wyświetlane. Wybierz odpowiednią **kategorii** i Dodaj **tagi** na ułatwienie użytkownikom znalezienia Twojego rozszerzenia. Można dodać bardziej szczegółowe podsumowanie i opis (opis musi składać się przynajmniej 280 znaków). Pozostaw **typ rozszerzenia** jako **nie rozszerzenie Microsoft** i **kategorii kosztu** jako **wersji próbnej**.
+8.  W **krok 3: Podstawowe informacje**, pola z pliku source.extension.vsixmanifest są wyświetlane. Wybierz odpowiednią **kategorii** i Dodaj **tagi** na ułatwienie użytkownikom znalezienia Twojego rozszerzenia. Można dodać bardziej szczegółowe podsumowanie i opis (opis musi składać się przynajmniej 280 znaków). Pozostaw **typ rozszerzenia** jako **nie rozszerzenie Microsoft** i **kategorii kosztu** jako **wersji próbnej**.
 
 9. Przeczytaj Umowa dotycząca materiałów przekazywanych w dolnej części strony i sprawdź **zgodę**.
 
