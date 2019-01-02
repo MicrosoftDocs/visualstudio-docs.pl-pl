@@ -3,7 +3,6 @@ title: Funkcje ułatwień dostępu programu Visual Studio
 description: Dowiedz się więcej na temat funkcji ułatwień dostępu i narzędzi, które sprawić, że zarówno system operacyjny Windows, jak i pakiet dla deweloperów programu Visual Studio bardziej dostępny dla wszystkich użytkowników, w tym osobom niepełnosprawnym.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866481"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkcje ułatwień dostępu programu Visual Studio
 
@@ -46,15 +45,15 @@ Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje 
 
 Więcej informacji znajduje się w następujących tematach:
 
--   [Porady: opcje ułatwień dostępu IDE zestawu](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Instrukcje: Ustawianie opcji ułatwień dostępu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Porady: używanie wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Instrukcje: Używanie wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Porady: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Instrukcje: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Zobacz także
 

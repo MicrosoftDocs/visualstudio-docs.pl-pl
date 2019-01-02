@@ -1,9 +1,7 @@
 ---
-title: 'Krok 7: Zachowanie widoczności par'
-ms.custom: ''
+title: Krok 7. Zachować widoczność par
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
@@ -11,28 +9,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e27a5378aacec6af4ca07f13242f24bd665a762e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d541c28148c6e1fca9b1b1b7411b2b4d99715d8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881000"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Krok 7: Zachowanie widoczności par
-Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast wprowadzania ikony znikają przez włączenie czasomierza (przy użyciu <xref:System.Windows.Forms.Timer.Start> metody), gry powinien zresetowanie tak, aby go jest już rejestrowanie informacji o wszystkich etykiet za pomocą `firstClicked` i `secondClicked` odwoływać się do zmiennych, bez potrzeby resetowania kolory dwie etykiety, które zostały wybrane.
+# <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachować widoczność par
+Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast ukrywania okien przez włączanie czasomierza (za pomocą <xref:System.Windows.Forms.Timer.Start> metoda), gra powinna się zresetować, aby go jest już rejestrowanie informacji o wszystkich etykiet używających `firstClicked` i `secondClicked` odwoływać się do zmiennych, bez resetowania kolory dla dwóch etykiet, które zostały wybrane.
 
 ## <a name="to-keep-pairs-visible"></a>Aby zachować widoczność par
 
-1.  Dodaj następujące `if` instrukcji `label_Click()` metoda obsługi zdarzeń, zbliża się koniec kodu powyżej instrukcji, gdzie uruchomić czasomierza. Przyjrzyj się kodowi podczas dodawania go do programu. Zastanów się, jak działa kod.
+1.  Dodaj następujący kod `if` instrukcję, aby `label_Click()` metody obsługi zdarzeń, pod koniec kodu, tuż nad instrukcją uruchomienia czasomierza. Przyjrzyj się kodowi podczas dodawania go do programu. Zastanów się, jak działa kod.
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
 
-     W pierwszym wierszu `if` instrukcji dodaną sprawdza, czy ikona w etykiecie pierwszy wybierze odtwarzacz jest taka sama jak ikona w drugim etykiety. W przypadku ikony są identyczne, program wykonuje trzy instrukcji między nawiasy klamrowe w języku C# lub trzy instrukcje `if` instrukcji w języku Visual Basic. Pierwsze dwie instrukcje resetowania `firstClicked` i `secondClicked` odwoływać się do zmiennych tak, aby ich nie będzie przechowywać informacje o dowolne etykiety. (Te dwa oświadczenia czasomierza może rozpoznać <xref:System.Windows.Forms.Timer.Tick> obsługi zdarzeń.) Trzecia instrukcja jest `return` instrukcja, która informuje program Pomiń pozostałą część instrukcje w metodzie bez ich wykonywania.
+     W pierwszym wierszu `if` dodanej instrukcji sprawdza, czy ikona w pierwszej etykiecie, którą wybrał gracz, jest taka sama, jak ikona w drugiej etykiety. Jeśli ikony są identyczne, program wykonuje trzy instrukcje między nawiasami klamrowymi w C# lub trzy instrukcje w `if` instrukcji w języku Visual Basic. Pierwsze dwie instrukcje resetują `firstClicked` i `secondClicked` zmienne odwołania, tak aby ich już przechowywać informacji o dowolne etykiety. (Być może rozpoznajesz te dwie instrukcje z czasomierza <xref:System.Windows.Forms.Timer.Tick> programu obsługi zdarzeń.) Trzecia instrukcja to instrukcja `return` instrukcję, która mówi programowi, aby pominąć resztę instrukcji w metodzie bez ich wykonania.
 
-     Jeśli Programowanie w Visual C#, można zauważyć, że niektóre kod używa pojedynczego znaku równości (`=`), podczas gdy inne instrukcje dwóch znaku równości (`==`). Należy wziąć pod uwagę dlaczego `=` jest używana w niektórych miejscach, ale `==` jest używana w innych miejscach.
+     Jeśli Programowanie w języku Visual C#, być może zauważono, że część kodu używa pojedynczego znaku równości (`=`), podczas gdy inne instrukcje używają dwóch znaków równości (`==`). Zastanów się, dlaczego `=` jest używana w niektórych miejscach, ale `==` jest używana w innych miejscach.
 
-     To jest dobry przykład, który pokazuje różnicę. Przyjrzyjmy się staranne kod w nawiasach w `if` instrukcji.
+     To jest dobry przykład, który pokazuje różnicę. Dokładnie Przeanalizuj kod w nawiasach w `if` instrukcji.
 
     ```vb
     firstClicked.Text = secondClicked.Text
@@ -42,7 +40,7 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
     firstClicked.Text == secondClicked.Text
     ```
 
-     Pierwszą instrukcją w bloku kodu po następnie należy dokładnie przejrzeć `if` instrukcji.
+     Następnie Przyjrzyj się bliżej pierwszej instrukcji w bloku kodu po `if` instrukcji.
 
     ```vb
     firstClicked = Nothing
@@ -52,15 +50,15 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
     firstClicked = null;
     ```
 
-     Pierwsza z tych dwóch instrukcji sprawdza, czy dwie ikony są takie same. Ponieważ dwie wartości są porównywane, program Visual C# używa `==` operator równości. Druga instrukcja faktycznie zmienia wartość (o nazwie *przypisania*), to ustawienie `firstClicked` odwołanie do zmiennej równa `null` je zresetować. Dlatego używa `=` operator przypisania zamiast tego. Visual C# używa `=` można ustawić wartości, i `==` do porównania. Używa języka Visual Basic `=` dla porównanie i przypisanie zmiennej.
+     Pierwsza z tych dwóch instrukcji sprawdza, czy dwie ikony są takie same. Ponieważ dwie wartości są porównywane, program Visual C# używa `==` operatora równości. Druga instrukcja faktycznie zmienia wartość (o nazwie *przypisania*), ustawiając `firstClicked` zmienną odwołania do `null` je zresetować. Dlatego używa `=` operator przypisania zamiast tego. Visual C# stosuje `=` do ustawiania wartości, a `==` do porównania. Visual Basic stosuje `=` zarówno przypisanie zmiennej, jak i porównań.
 
-2.  Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. Jeśli wybierzesz parę pasującego nowe `if` wykonywania instrukcji i instrukcji return powoduje, że metoda pomijania kod, który uruchamia czasomierz, więc ikony pozostanie widoczny, jak pokazano na poniższej ilustracji.
+2.  Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. Jeśli wybierzesz pasującą parę nowy `if` wykonuje instrukcję, a instrukcja return spowoduje, że metoda pominie kod uruchamiający czasomierz, tak że ikony pozostaną widoczne, jak pokazano na poniższej ilustracji.
 
-     ![Gry utworzone w tym samouczku](../ide/media/express_finishedgame.png)
-**dopasowania gry** z parami widoczna ikona
+     ![Gra tworzona w ramach tego samouczka](../ide/media/express_finishedgame.png)
+**gra w dopasowywanie** z widocznymi parami ikon
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
 -   Aby przejść do następnego kroku samouczka, zobacz [krok 8: Dodaj metodę, aby sprawdzić, czy gracz wygrał](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodawanie czasomierza](../ide/step-6-add-a-timer.md).
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodaj czasomierz](../ide/step-6-add-a-timer.md).

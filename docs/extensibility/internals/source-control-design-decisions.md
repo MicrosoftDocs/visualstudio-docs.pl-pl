@@ -1,9 +1,6 @@
 ---
-title: Decyzje dotyczące projektu w kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Decyzje projektowe dotyczące kontroli źródła | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0385d5feb7baf7fe60e253616c8db0f326932e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd1ffa27a8dfa7c1d98e7242d71f7cfe83c319d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883188"
 ---
-# <a name="source-control-design-decisions"></a>Decyzje dotyczące projektu kontroli źródła
+# <a name="source-control-design-decisions"></a>Decyzje projektowe dotyczące kontroli kodu źródłowego
 Podczas implementowania kontroli źródła należy rozważyć następujące decyzje dotyczące projektu dla projektów.  
   
-## <a name="will-information-be-shared-or-private"></a>Informacje będą udostępnione lub prywatnej?  
- Najważniejsze decyzji projektowej, które można wprowadzić jest jakie informacje są zabezpieczać i co to jest prywatna. Na przykład lista plików dla projektu jest udostępniony, ale w ramach tej listy plików w przypadku niektórych użytkowników może być powoduje, że pliki prywatne. Ustawienia kompilatora są udostępniane, ale projekt rozruchu jest zazwyczaj prywatnych. Ustawienia są wyłącznie udostępnionego, udostępnionych za pomocą zastąpienia lub całkowicie prywatnej. Zgodnie z projektem, prywatne elementy, takie jak rozwiązania użytkownika opcje plików (.suo) nie są sprawdzane w [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Należy przechowywać poufnych informacji w plikach prywatnych, takich jak plik .suo lub prywatnej określonego pliku, na przykład można utworzyć,. plik csproj.user Visual C# lub. plik vbproj.user dla języka Visual Basic.  
+## <a name="will-information-be-shared-or-private"></a>Informacje będą współużytkowany lub prywatny?  
+ Najważniejsza decyzja projektowa, możesz wprowadzić to, jakie informacje są zabezpieczać i co to jest prywatna. Na przykład lista plików dla projektu jest udostępniany, ale w ramach tej listy plików, niektórzy użytkownicy może być wskazane pliki prywatne. Ustawienia kompilatora są udostępniane, ale projektu startowego jest zwykle oznaczony jako prywatny. Ustawienia są wyłącznie udostępnione, udostępnione za pomocą zastąpienia lub czysto prywatnych. Zgodnie z projektem, prywatne elementy, takie jak rozwiązania użytkownika opcje plików (suo) nie są sprawdzane w [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Należy przechowywać poufnych informacji w plikach prywatnych, takich jak plik .suo lub określonego pliku prywatnego, tworzenia, np. plik csproj.user dla języka Visual C# lub. plik vbproj.user dla języka Visual Basic.  
   
- Ta decyzja nie udostępnia i będzie możliwe na podstawie elementu —.  
+ Ta decyzja nie jest kompleksowych i mogą być wykonane na podstawie elementu —.  
   
-## <a name="will-the-project-include-special-files"></a>Projekt będzie zawierać specjalne pliki?  
- Innej decyzji projektowych ważne jest, czy struktury projektu używa plików specjalnych. Specjalne pliki są ukryte pliki, które opierają się pliki, które są widoczne w Eksploratorze rozwiązań i zaewidencjonowania i wyewidencjonowania okien dialogowych. Jeśli używasz specjalne pliki, zgodna z tymi wytycznymi:  
+## <a name="will-the-project-include-special-files"></a>Projekt zawierają specjalne pliki?  
+ Inny decyzja projektowa ważne jest, czy do struktury projektu używa specjalne pliki. Specjalne pliki są ukryte pliki, które opierają się pliki, które są widoczne w Eksploratorze rozwiązań i zaewidencjonowania i wyewidencjonowania okien dialogowych. Jeśli używasz specjalnych plików, należy przestrzegać następujących wytycznych:  
   
-1.  Nie należy kojarzyć specjalne pliki z węzła głównego projektu — to znaczy w projekcie samym pliku. Plik projektu musi być pojedynczym pliku.  
+1.  Nie należy kojarzyć specjalne pliki z głównego węzła projektu — oznacza to, z projektem samego pliku. Plik projektu musi być pojedynczy plik.  
   
-2.  Gdy specjalne pliki są dodane, usunięte lub zmieniono jego nazwę w projekcie odpowiednich <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> zdarzenia musi być wywoływane z ustawioną flagą wskazującą są specjalne pliki. Te zdarzenia są wywoływane przez środowisko w odpowiedzi na wywołanie odpowiedni projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.  
+2.  Gdy specjalne pliki są dodane, usunięte lub zmieniono jego nazwę w projekcie w języku odpowiednim <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> zdarzenia musi być uruchamiane z ustawioną flagą wskazującą są specjalne pliki. Te zdarzenia są wywoływane przez środowisko w odpowiedzi na projekt wywołanie odpowiedniego <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.  
   
-3.  Gdy wywołuje projekcie lub edytor <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> dla pliku, specjalne pliki skojarzone z tym plikiem nie zostały automatycznie wyewidencjonowane. Przekaż specjalne pliki w wraz z pliku nadrzędnym. Środowisko wykryje relacji między wszystkie pliki, które są przekazywane w i odpowiednio Ukryj specjalne pliki w Interfejsie użytkownika wyewidencjonowywania.  
+3.  Kiedy wywołuje swój projekt lub edytor <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> dla pliku, specjalne pliki skojarzone z tym plikiem nie zostały automatycznie wyewidencjonowane. Przekaż specjalne pliki w wraz z plikiem nadrzędnym. Środowisko wykryje relacji między wszystkie pliki, które są przekazywane w i odpowiednio Ukryj specjalne pliki w Interfejsie użytkownika wyewidencjonowywania.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   

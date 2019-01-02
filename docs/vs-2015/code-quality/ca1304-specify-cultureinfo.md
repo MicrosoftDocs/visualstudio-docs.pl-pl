@@ -1,12 +1,11 @@
 ---
-title: 'CA1304: Określ CultureInfo | Dokumentacja firmy Microsoft'
+title: 'CA1304: Określ klasę CultureInfo | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0078309f1c87e4bd1feb9a8c82d7c654185c13df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec29cb6c0a7d00ca067ababf6634304f4b2fe8ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966445"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ klasę CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -80,10 +79,7 @@ ms.locfileid: "49948807"
  **6/4/1900 12:15:12 PM**
 **06-04-1900 12:15:12**
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1305: Określ interfejs IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+ [CA1305: Określ argument IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Zobacz też
  [NIB: Używanie klasy CultureInfo](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-

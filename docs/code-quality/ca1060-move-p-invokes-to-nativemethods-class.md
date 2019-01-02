@@ -1,8 +1,7 @@
 ---
-title: 'CA1060: Przenieś wywołania P-Invoke do klasy NativeMethods'
+title: 'CA1060: Przenieś P-Invoke do klasy NativeMethods'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3e3f01eb6decb1ac2705655675455485bceb5b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874235"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś P/Invokes do klasy NativeMethods
 
@@ -94,7 +93,7 @@ Te klasy są deklarowane jako `internal` (`Friend`, w języku Visual Basic) i Za
 ## <a name="unsafenativemethods-example"></a>Przykład UnsafeNativeMethods
 
 ### <a name="description"></a>Opis
- Metody P/Invoke, który nie można bezpiecznie wywołać i który może spowodować skutki uboczne powinien znajdować się w klasie o nazwie **UnsafeNativeMethods**. Te metody powinny być starannie sprawdzane, aby upewnić się, że ich nie są widoczne dla użytkownika przypadkowo. Reguła [CA2118: przegląd wykorzystania SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) może w tym pomóc. Alternatywnie metody powinny mieć inny uprawnienia, które jest wymagane zamiast **UnmanagedCode** po ich używają.
+ Metody P/Invoke, który nie można bezpiecznie wywołać i który może spowodować skutki uboczne powinien znajdować się w klasie o nazwie **UnsafeNativeMethods**. Te metody powinny być starannie sprawdzane, aby upewnić się, że ich nie są widoczne dla użytkownika przypadkowo. Reguła [CA2118: Przejrzyj przypadki użycia atrybutu SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) może w tym pomóc. Alternatywnie metody powinny mieć inny uprawnienia, które jest wymagane zamiast **UnmanagedCode** po ich używają.
 
  W poniższym przykładzie przedstawiono **Cursor.Hide** metodę, która otacza **wartość** funkcji z user32.dll.
 

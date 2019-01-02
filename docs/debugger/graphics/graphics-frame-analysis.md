@@ -1,8 +1,6 @@
 ---
 title: Analiza klatek grafiki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875644"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
 Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.  
@@ -191,4 +189,4 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 |**Wymiary tekstury kwartał**|Maksymalne wymiary tekstury na wszystkie tekstury, które nie są renderowane obiekty docelowe do czwartej ich oryginalnego rozmiaru każdego wymiaru. Na przykład tekstury 256 x 128 jest ograniczone do 64 x 32 tekseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant wymiarów tekstury Half/Quarter](half-quarter-texture-dimensions-variant.md).|  
 |**Kompresji tekstury BC**|Umożliwia zablokowanie kompresji dla wszystkich tekstury, które mają B8G8R8X8, B8G8R8A8 lub R8G8B8A8 wariant format pikseli. Warianty format B8G8R8X8 są kompresowane przy użyciu formantów BC1; B8G8R8A8 i wariantów format R8G8B8A8 są kompresowane przy użyciu BC3.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant kompresji tekstury BC](bc-texture-compression-variant.md).|  
   
- Większość wariantów powstaje normatywne: "rozmiar tekstur skracanie o połowę wynosi 25 procent szybciej" lub "Włączanie 2 x MSAA jest tylko 2% wolniej". Inne odmiany może wymagać interpretacji więcej — na przykład, jeśli wariant, który zmienia rozmiary okienka ekranu do 1 x 1 wykazuje duże są bardziej wydajne, może to wskazywać, że renderowanie jest bottlenecked przez współczynnik wypełnienia niski; Alternatywnie Jeśli nie ma żadnych istotnych zmian w wydajności, może to wskazywać, renderowanie jest bottlenecked przez przetwarzanie wierzchołka.
+ Większość wariantów powstaje przetestowanego rozwiązania ze szczegółami: "25 procent szybciej jest zmniejszenie rozmiaru tekstura o połowę" lub "Włączanie 2 x MSAA jest tylko 2% wolniej". Inne odmiany może wymagać interpretacji więcej — na przykład, jeśli wariant, który zmienia rozmiary okienka ekranu do 1 x 1 wykazuje duże są bardziej wydajne, może to wskazywać, że renderowanie jest bottlenecked przez współczynnik wypełnienia niski; Alternatywnie Jeśli nie ma żadnych istotnych zmian w wydajności, może to wskazywać, renderowanie jest bottlenecked przez przetwarzanie wierzchołka.

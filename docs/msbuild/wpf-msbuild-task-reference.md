@@ -1,8 +1,6 @@
 ---
 title: Odwołanie do zadania MSBuild WPF | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f723644744001e39967186d0eeec74bf7d3bd7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 15b307fa11c307a85a9a219b5ea2dd7fbc9c0476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878552"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Odwołanie do zadania WPF MSBuild
 Proces kompilacji Windows Presentation Foundation (WPF) Microsoft build engine (MSBuild) rozszerza możliwości za sprawą dodatkowego zestawu zadań kompilacji, w tym zadania, aby skompilować i zasobów procesowych.  
@@ -34,7 +32,7 @@ Proces kompilacji Windows Presentation Foundation (WPF) Microsoft build engine (
  [FileClassifier](../msbuild/fileclassifier-task.md)  
  Klasyfikuje zestaw zasobów źródłowego, jak te, które zostaną osadzone w zestawie. Jeśli zasób nie jest możliwych do zlokalizowania, jest osadzony w głównym zestawem aplikacji; w przeciwnym razie jest osadzony w zestawie satelickim.  
   
- [Generatetemporarytargetassembly —](../msbuild/generatetemporarytargetassembly-task.md)  
+ [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)  
  Generuje zestaw, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] strony w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowanego zestawu jest usuwany po zakończeniu procesu kompilacji, czy Proces kompilacji zakończy się niepowodzeniem.  
   
  [GetWinFXPath](../msbuild/getwinfxpath-task.md)  
@@ -46,7 +44,7 @@ Proces kompilacji Windows Presentation Foundation (WPF) Microsoft build engine (
  [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)  
  Przeprowadza korektę znaczników kompilacji na [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] pliki, które odwołują się typy w tym samym projekcie.  
   
- [Mergelocalizationdirectives —](../msbuild/mergelocalizationdirectives-task.md)  
+ [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)  
  Scala atrybuty lokalizacji i komentarze, co najmniej jednego [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików binarnych w jeden plik dla całego zestawu.  
   
  [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)  

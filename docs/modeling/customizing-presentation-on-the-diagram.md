@@ -10,16 +10,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 473d0a1e1f9bd215513e7a69f8fc511f6416db7a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e38984ceeaad6971d94afd488a0f4027e7260769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968300"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Dostosowywanie prezentacji na diagramie
-Diagram jest obszaru głównego prezentacji projektanta języka specyficznego dla domeny. Zazwyczaj użytkowników będzie używać diagramu do skonstruowania ich modeli. Diagram można dostosować zgodnie z opisem w poniższych tematach.
+Diagram jest obszaru głównego prezentacji projektanta języka specyficznego dla domeny. Zazwyczaj użytkownicy użyje diagramu do konstruowania ich modeli. Diagram można dostosować zgodnie z opisem w poniższych tematach.
 
 -   [Definiowanie kształtów i łączników](../modeling/defining-shapes-and-connectors.md)
 

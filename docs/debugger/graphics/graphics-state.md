@@ -1,8 +1,6 @@
 ---
 title: Stan grafiki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
@@ -12,31 +10,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80a69c1da16e8e43c1a306a8659bb8e41bed21e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968105"
 ---
 # <a name="graphics-state"></a>Stan grafiki
-Okna stanu grafiki programu Visual Studio diagnostyki pomaga w zrozumieniu stanu grafiki, który jest aktywny w momencie bieżącego zdarzenia, takie jak wywołanie rysowania.  
+Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu grafiki, który jest aktywny w momencie bieżącego zdarzenia, takie jak wywołania rysowania.  
   
-## <a name="understanding-the-state-window"></a>Opis stanu okna  
- Okno stanu zbiera razem stanie, który ma wpływ na renderowanie i przedstawia on hierarchicznie, w jednym miejscu. W zależności od używanej wersji programu Direct3D aplikacji używa, informacje wyświetlone w oknie stanu może być różnice.  
+## <a name="understanding-the-state-window"></a>Omówienie okna stanu  
+ W oknie stanu zbiera dane ze sobą stanu który ma wpływ na renderowania i prezentuje hierarchiczny, w tym miejscu. W zależności od używanej wersji programu Direct3D aplikacja używa, informacje znajdujące się w oknie stanu może być różnice.  
   
-### <a name="state-views"></a>Widoki stanu  
- W tabeli stanu można wyświetlić na kilka różnych sposobów:  
+### <a name="state-views"></a>Widoki stanów  
+ Tabela stanu można wyświetlić na kilka różnych sposobów:  
   
 |Widok|Opis|  
 |----------|-----------------|  
-|Widok stanu danych wejściowych interfejsu API|Ten widok przedstawia stan w układzie podobne do obiektów Direct3D wchodzące w skład stanu.|  
-|Widok stanu danych wejściowych logiczne|Ten widok przedstawia stan w widoku logicznym nie dublujące układu obiektów Direct3D wchodzące w skład stanu.|  
-|Przypięte widok stanu|Zamiast hierarchii Pinned widok stanu przedstawia stan przypiętych elementów jako płaską listę z w pełni kwalifikowanej nazwy. Ten widok sprawia, że jest możliwe wyświetlić wiele elementów stanu z różnych pakietów stanu w małej liczby wierszy.|  
+|Widok stanu danych wejściowych interfejsu API|Ten widok przedstawia stan w układu podobnego do obiekty Direct3D, które tworzą stan.|  
+|Widok logiczny stanu danych wejściowych|Ten widok przedstawia stan, w widoku logicznym odpowiadającej nie układ obiekty Direct3D, które tworzą stan.|  
+|Przypięte widok stanu|Zamiast hierarchii Pinned widok stanu przedstawia stan przypięte elementy w formie płaskiej listy przy użyciu w pełni kwalifikowanej nazwy. Ten widok sprawia, że istnieje możliwość wyświetlania stanu elementów z różnych pakietów stanu w małej liczby wierszy.|  
   
 ##### <a name="to-change-the-state-view"></a>Aby zmienić widok stanu  
   
--   W oknie stanu w górnym lewym poniżej tytułu wybierz przycisk umożliwiająca styl widok stanu, którego chcesz użyć.  
+-   W oknie stanu w prawym górnym lewym tuż poniżej tytułu wybierz przycisk, który odpowiada styl widoku stanu, którego chcesz użyć.  
   
     -   **Pokaż widok stanu danych wejściowych interfejsu API**  
   
@@ -45,29 +43,29 @@ Okna stanu grafiki programu Visual Studio diagnostyki pomaga w zrozumieniu stanu
     -   **Pokaż widok stanu Pinned**  
   
 > [!IMPORTANT]
->  Trzeba przypiąć stanu w **stanu danych wejściowych Pokaż interfejsu API** lub **stanu logicznego Pokaż** widoków dla niego będzie wyświetlana w **Pokaż przypięte widok stanu**.  
+>  Trzeba przypiąć stanu w **Pokaż interfejsu API danych wejściowych w stanie** lub **stanu logicznego Pokaż** widoków dla niego będzie wyświetlana w **Pokaż przypięte widok stanu**.  
   
-### <a name="state-table-format"></a>Format stan tabeli  
- Okno stanu zawiera kilka kolumn informacji.  
+### <a name="state-table-format"></a>Format tabeli stanu  
+ W oknie stanu przedstawia kilka kolumn informacji.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|Nazwa|Nazwa elementu stanu. Jeśli ten element reprezentuje pakiet stanu, można rozszerzyć elementu, aby go wyświetlić.<br /><br /> W **widok stanu danych wejściowych interfejsu API** i **widok stanu logicznego** stany nazwy mają wcięcia hierarchiczną relację między stanami.<br /><br /> W **przypięty widok stanu** stanu, w pełni kwalifikowanej nazwy są wyświetlane w formie listy niezhierarchizowanej.|  
+|Nazwa|Nazwa elementu stanu. Jeśli ten element reprezentuje pakiet, stanu, można rozszerzyć element, aby go wyświetlić.<br /><br /> W **interfejsu API danych wejściowych w widoku stanu** i **widok stanu logicznego** stany, nazwy mają wcięcia hierarchiczną relację między stanami.<br /><br /> W **przypięte widok stanu** stanu, w pełni kwalifikowanej nazwy są wyświetlane w formie płaskiej listy.|  
 |Wartość|Wartość elementu stanu.|  
 |Typ|Typ elementu stanu.|  
   
-### <a name="changed-state"></a>Zmiany stanu  
- Stan grafiki zwykle zmienia przyrostowo między wywołań rysowania kolejnych i wiele rodzajów problemy z renderowaniem są spowodowane stan jest zmieniany niepoprawnie. Aby pomóc w znalezieniu, których stan zmienił się od czasu poprzedniego wywołania rysowania, stan, który jest został zmieniony oznaczone gwiazdką i wyświetlić na czerwono — dotyczy nie tylko do samego stanu, ale jego nadrzędnego stanu elementu także, dzięki czemu można łatwo dodatkowy stan zmieniony na najwyższego poziomu, a następnie przejść do szczegółów.  
+### <a name="changed-state"></a>Zmiana stanu  
+ Stan grafiki zazwyczaj zmienia się stopniowo między wywołaniami rysowania kolejnej i wiele rodzajów problemów z renderowaniem powstają, gdy stan jest zmieniany niepoprawnie. Aby pomóc w znalezieniu, których stan zmienił się od poprzedniego wywołania rysowania, stan, który jest został zmieniony jest oznaczone gwiazdką i wyświetlane na czerwono — dotyczy to nie tylko sam stan, ale jego nadrzędnego stan elementu, dzięki czemu możesz w prosty sposób obserwować zmiany stanu na najwyższego poziomu, a następnie przejść do szczegółów.  
   
-### <a name="pinning-state"></a>Przypinanie stanu  
- Ponieważ wiele aplikacji renderowania podobne obiekty sekwencyjnie, zmiana zestawu znanego stanu, czasami jest przydatne przypiąć zmiany stanów w miejscu, dzięki czemu możesz obserwować zmiany, Przenieś z wywołania rysowania wywołanie rysowania.  
+### <a name="pinning-state"></a>Stan przypinania  
+ Ponieważ wiele aplikacji renderowania podobne obiekty sekwencyjnie, zmieniając znanego zestawu stanu, czasami jest przydatne przypiąć zmiany stanów w miejscu, aby obejrzeć, jak zmienia się przenieść z wywołania rysowania wywołania rysowania.  
   
- Może to być również przydatne, jeśli zostały izolowane źródłem problemu się z powodu zmiany w określonym stanie.  
+ Może to być również przydatne, jeśli został izolowany źródłem problemu się z powodu zmiany w określonym stanie.  
   
 ##### <a name="to-pin-state-in-place"></a>Aby przypiąć stanu w miejscu  
   
-1.  W oknie Stan zlokalizować stan interesuje Cię. Może być konieczne rozwiń wyższego poziomu stanu można znaleźć szczegółowe informacje, które interesują Cię.  
+1.  W oknie stanu odszukaj stan, który chcesz wziąć. Może być konieczne rozwiń wyższego poziomu stanu, aby znaleźć szczegółowe informacje, których interesuje Cię.  
   
-2.  Umieść kursor na stanie, który chcesz. Ikonę pinezki pojawia się po lewej element stanu.  
+2.  Umieść kursor nad stan, który chcesz wziąć. Ikona przypinania pojawia się po lewej stronie element stanu.  
   
-3.  Wybierz ikonę numeru Pin, aby przypiąć element stanu w miejscu.
+3.  Wybierz ikonę pinezki, aby przypiąć element stanu w miejscu.

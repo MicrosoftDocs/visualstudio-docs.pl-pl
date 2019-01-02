@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie obsługi przeciągania i upuszczania'
+title: 'Instrukcje: Dodawanie obsługi przeciągania i upuszczania'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876396"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Instrukcje: Dodawanie obsługi przeciągania i upuszczania
 
 Tak, aby użytkownicy można przeciągnąć elementy na diagramie z innymi diagramami lub z innych części programu Visual Studio, można dodać do DSL, obsługi przeciągania i upuszczania. Można również dodać procedury obsługi dla zdarzenia takie jak kliknie dwukrotnie. Razem obsługi przeciągania i upuszczania i kliknij dwukrotnie plik, są znane jako *procedury obsługi gestów*.
 
@@ -70,7 +69,7 @@ W nowym pliku należy zdefiniować klasę częściową dla kształt lub diagram 
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana, gdy użytkownik kliknie dwukrotnie kształt lub diagram.
 
-     Aby uzyskać więcej informacji, zobacz [porady: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Aby uzyskać więcej informacji, zobacz [jak: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Zdefiniuj `IsAcceptableDropItem(e)` Aby ustalić, czy jest dopuszczalne przeciąganego elementu i ProcessDragDropItem(e) aktualizacji modelu, gdy element zostanie porzucony. Te metody należy najpierw wyodrębnić elementu na podstawie argumentów zdarzeń. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak odwołać się do przeciągniętego elementu](#extracting).
 
@@ -322,7 +321,7 @@ Jeśli przeciąganego elementu jest elementem DSL, możesz otworzyć model źró
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Za pomocą akcji myszy: Przeciąganie elementów z przedziału
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Za pomocą akcji myszy: Przeciąganie elementów na przedział
 
 Można napisać program obsługi, który przechwytuje akcje myszy na pola kształtu. Poniższy przykład pozwala użytkownikowi na zmienianie kolejności elementów na przedział, przeciągając wskaźnik myszy.
 

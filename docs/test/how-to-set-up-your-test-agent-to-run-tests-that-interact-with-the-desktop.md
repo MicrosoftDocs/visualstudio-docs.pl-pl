@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 5fdfa625404ff934faf8e8901bf133d6bc7f873f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894576"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968569"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem
 
 Jeśli chcesz uruchomić testy automatyczne, które współdziałają z pulpitem, musi skonfigurować agenta do uruchamiania jako procesu zamiast usługi. Na przykład jeśli chcesz uruchomić kodowany test interfejsu użytkownika zdalnie przy użyciu kontrolera testów i agenta testowego lub chcesz uruchomić test i przechwytywać nagrania, po uruchomieniu wideo, możesz ustawić agenta do uruchamiania jako proces. Podczas przypisywania agentów do ról w ustawieniach testu przy użyciu programu Visual Studio lub podczas przypisywania agentów do ról w Twoim środowisku za pomocą programu Microsoft Test Manager, możesz zmienić ustawienia dla wszelkich agentów przypisanych do ról, które muszą współdziałać z pulpitem.
 

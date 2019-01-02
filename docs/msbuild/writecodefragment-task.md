@@ -1,8 +1,6 @@
 ---
 title: Writecodefragment — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6246c66299bb713c8b024feefa12eb883e2c0c76
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 85ec6fc761ed117004357ed56f90a058e58f7f10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870245"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment — zadanie
 Generuje plik tymczasowy kod z fragmentu określonego wygenerowanego kodu. Nie powoduje usunięcia pliku.  

@@ -2,21 +2,20 @@
 title: Rozwiązywanie problemów z szablonu projektu i szablon elementu ładowania
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2963bdbd4f788f6321d963bc52001f1875c48a14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4908716ce5f984aef6dbd3d482a26e1aeb94623d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890920"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Porady: Rozwiązywanie problemów z szablonami
+# <a name="how-to-troubleshoot-templates"></a>Instrukcje: Rozwiązywanie problemów z szablonami
 
 Jeśli szablon nie są ładowane w środowisku deweloperskim, istnieją zlokalizowania problemu na kilka sposobów.
 

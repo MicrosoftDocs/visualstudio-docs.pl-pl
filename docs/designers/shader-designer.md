@@ -2,7 +2,6 @@
 title: Shader Designer
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968543"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
@@ -33,9 +32,9 @@ Możesz użyć **Shader Designer** do tworzenia niestandardowych efektów wizual
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (Wyświetl, Edytuj eksport)|
 |-----------------| - | - |
 |Język programu do cieniowania wykresu bezpośredniego|*.dgsl*|Wyświetl, Edytuj|
-|Modułu cieniującego HLSL (kodu źródłowego)|*.hlsl*|Eksportuj|
-|Modułu cieniującego HLSL (kodu bajtowego)|*.CSO*|Eksportuj|
-|Nagłówek języka C++ (tablica kodu bajtowego języka HLSL)|*.h*|Eksportuj|
+|Modułu cieniującego HLSL (kodu źródłowego)|*.hlsl*|Eksportowanie|
+|Modułu cieniującego HLSL (kodu bajtowego)|*.CSO*|Eksportowanie|
+|Nagłówek języka C++ (tablica kodu bajtowego języka HLSL)|*.h*|Eksportowanie|
 
 ## <a name="get-started"></a>Wprowadzenie
 
@@ -98,7 +97,7 @@ W tej tabeli opisano elementy na **trybu projektanta modułu cieniującego** nar
 |**Podgląd przy użyciu płaszczyzny**|Po włączeniu modelu płaszczyzny służy do podglądu modułu cieniującego. Kształt tylko jeden (wersja zapoznawcza) w danym momencie może być włączone.|
 |**Przybornik**|Zamiennie pokazuje i ukrywa **przybornika**.|
 |**Właściwości**|Można również pokazuje lub ukrywa **właściwości** okna.|
-|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksportuj**: umożliwia eksport cieniowania w różnych formatach.<br /><br /> **Eksportuj jako**: eksportuje programu do cieniowania, jako kod źródłowy albo HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [porady: eksport cieniowania](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: Umożliwia wybór modułu renderowania, który służy do wyświetlania na powierzchnię projektową.<br /><br /> **Renderowanie z D3D11**: używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Renderowanie z D3D11WARP**: używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Widok**: Umożliwia wybór dodatkowe informacje na temat Shader Designer.<br /><br /> **Klatki, szybkości**: po włączeniu Wyświetla bieżącą szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. Ta opcja jest przydatna po włączeniu **tryb renderowania w czasie rzeczywistym** opcji.|
+|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksportuj**: Umożliwia eksportowanie cieniowania w różnych formatach.<br /><br /> **Eksportuj jako**: Eksportuje programu do cieniowania, jako kod źródłowy albo HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [jak: Eksport cieniowania](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: Umożliwia wybór modułu renderowania, który służy do wyświetlania na powierzchnię projektową.<br /><br /> **Renderowanie z D3D11**: Używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Renderowanie z D3D11WARP**: Używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Widok**: Umożliwia wybór dodatkowe informacje na temat Shader Designer.<br /><br /> **Klatki, szybkości**: Po włączeniu Wyświetla bieżąca szybkość odtwarzania w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. Ta opcja jest przydatna po włączeniu **tryb renderowania w czasie rzeczywistym** opcji.|
 
 > [!TIP]
 > Możesz wybrać **zaawansowane** przycisk, aby ponownie uruchomić ostatnie polecenie.
@@ -147,12 +146,12 @@ W poniższej tabeli przedstawiono programu do cieniowania, parametry, które mo�
 
 |Parametr|Właściwości|
 |---------------|----------------|
-|**Tekstury 1** - **tekstury 8**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Nazwa pliku**: Pełna ścieżka pliku tekstury, który jest skojarzony z tym rejestrem tekstury.|
-|**Otoczenie materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: kolor rozpraszania bieżącego piksela z powodu oświetlenia pośredniego — lub otoczenia —.|
-|**Rozpraszanie materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: kolor, który opisuje, jak diffuses przez bieżący piksel oświetlenia bezpośredniego.|
-|**Emisja materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: udział koloru materiału bieżącego piksela ze względu na własnym podana oświetlenia.|
-|**Odblask materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: kolor opisujący Odbijanie oświetlenia bezpośredniego przez bieżącego piksela.|
-|**Moc odblasku materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: wykładnik definiujący intensywność światła odbitego na bieżącego piksela.|
+|**Tekstury 1** - **tekstury 8**|**Dostęp do**:                             **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Nazwa pliku**: Pełna ścieżka pliku tekstury, który jest skojarzony z tym rejestrem tekstury.|
+|**Otoczenie materiału**|**Dostęp do**:                             **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Kolor rozpraszania bieżącego piksela z powodu oświetlenia pośredniego — lub otoczenia —.|
+|**Rozpraszanie materiału**|**Dostęp do**: **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**:  Kolor, który opisuje, jak diffuses przez bieżący piksel oświetlenia bezpośredniego.|
+|**Emisja materiału**|**Dostęp do**:                              **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Udział koloru materiału bieżącego piksela ze względu na własnym podana oświetlenia.|
+|**Odblask materiału**|**Dostęp do**:                              **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Kolor opisujący Odbijanie oświetlenia bezpośredniego przez bieżącego piksela.|
+|**Moc odblasku materiału**|**Dostęp do**:                             **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Wykładnik definiujący intensywność światła odbitego na bieżącego piksela.|
 
 #### <a name="time-based-effects"></a>Wpływ na podstawie czasu
 
@@ -172,7 +171,7 @@ Zanim użyjesz modułu cieniującego w swojej aplikacji, należy go wyeksportowa
 
 Programy do cieniowania można wyeksportować jako kod źródłowy języka HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Kod źródłowy języka HLSL jest eksportowany do pliku tekstowego, który ma *.hlsl* rozszerzenie nazwy pliku. Kod bajtowy programu do cieniowania można albo pierwotne plik binarny, który został wyeksportowany *.cso* rozszerzenie nazwy pliku lub do nagłówka C++ (*.h*) plików, które koduje kodu bajtowego programu cieniującego w tablicy.
 
-Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [porady: eksport cieniowania](../designers/how-to-export-a-shader.md).
+Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [jak: Eksport cieniowania](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 

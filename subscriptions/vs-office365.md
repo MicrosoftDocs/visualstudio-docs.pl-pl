@@ -9,20 +9,20 @@ description: Więcej informacji na temat korzyści usługi Office 365, objęte n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968394"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Usługi Office 365 w ramach subskrypcji programu Visual Studio
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Usługi Office 365 Pro Plus w subskrypcji programu Visual Studio
 
-Tworzenie najlepszych. Pracę z dowolnego miejsca dzięki aplikacjom, które zawsze są aktualizowane. Usługa Office 365 jest subskrypcję, która pochodzi z aplikacji — wersja premium, takich jak Word, Excel, PowerPoint, OneNote, programu Outlook, wydawcy i dostępu (wydawcy i dostępny na komputerze tylko dostęp). Aplikacje można zainstalować na wielu urządzeniach, w tym komputerów z systemem Mac, tabletach Ipad, iPhone, tabletów z systemem Android i telefonach z systemem Android. Usługi Office 365 również jest dostarczany z usług, takich jak 1TB miejsca do magazynowania w usłudze OneDrive, 60 minut Skype na miesiąc i Microsoft Czat i telefonicznej pomocy technicznej. Dzięki subskrypcji Uzyskaj najnowsze wersje aplikacji i automatycznie otrzymywać aktualizacje, gdy wystąpią.
+Tworzenie najlepszych. Pracę z dowolnego miejsca dzięki aplikacjom, które zawsze są aktualizowane. Usługi Office 365 Pro Plus jest subskrypcję, która pochodzi z aplikacji — wersja premium, takich jak Word, Excel, PowerPoint, OneNote, programu Outlook, wydawcy i dostępu (wydawcy i dostępny na komputerze tylko dostęp). Aplikacje można zainstalować na wielu urządzeniach, w tym komputerów z systemem Mac, tabletach Ipad, iPhone, tabletów z systemem Android i telefonach z systemem Android. Usługi Office 365 również jest dostarczany z usług, takich jak 1TB miejsca do magazynowania w usłudze OneDrive, 60 minut Skype na miesiąc i Microsoft Czat i telefonicznej pomocy technicznej. Dzięki subskrypcji Uzyskaj najnowsze wersje aplikacji i automatycznie otrzymywać aktualizacje, gdy wystąpią.
 
-## <a name="getting-started-with-office-365"></a>Wprowadzenie do usługi Office 365
+## <a name="getting-started-with-office-365-pro-plus"></a>Rozpoczynanie pracy z usługą Office 365 Pro Plus
 
-Wykonaj następujące kroki, aby pobrać i aktywować usługi Office 365:
+Wykonaj następujące kroki, aby pobrać i aktywować Office 365 Pro Plus:
 1. Zaloguj się do subskrypcji programu Visual Studio Enterprise.  
 2. Kliknij pozycję **pliki do pobrania** kartę.
 3. Zobaczysz listę polecane pliki do pobrania. Na liście pakietu Office, wybierz opcję **usługi Office 365**. 
@@ -63,7 +63,7 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 | Visual Studio Dev Essentials | Brak  | Niedostępne |Brak |
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & usług dla deweloperów BizSpark, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network.*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & usług dla deweloperów BizSpark, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network.*
 
 
 > [!NOTE]

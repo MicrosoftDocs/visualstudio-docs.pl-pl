@@ -1,8 +1,6 @@
 ---
 title: Debugowanie wielu procesów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968582"
 ---
 # <a name="debug-multiple-processes"></a>Debugowanie wielu procesów
 
@@ -50,7 +48,7 @@ Aby rozpocząć debugowanie projektu z **Eksploratora rozwiązań** bez wprowadz
    
 1. Wybierz **bieżące zaznaczenie**, **pojedynczy projekt startowy** i plik projektu lub **wiele projektów startowych**. 
 
-   Jeśli wybierzesz **wiele projektów startowych**, możesz zmienić kolejność uruchamiania i akcji, które można wykonać dla każdego projektu: **Start**, **Uruchom bez debugowania**, lub **Brak**.  
+   Jeśli wybierzesz **wiele projektów startowych**, możesz zmienić kolejność uruchamiania i akcji, które można wykonać dla każdego projektu: **Rozpocznij**, **Uruchom bez debugowania**, lub **Brak**.  
    
 1. Wybierz **Zastosuj**, lub **OK** stosowania i zamknąć okno dialogowe. 
 
@@ -108,7 +106,7 @@ Podczas debugowania aplikacji za pomocą wielu procesów, polecenia debugera pow
   
 W poniższej tabeli przedstawiono zachowania debugowania polecenia, kiedy **Przerwij wszystkie procesy, gdy jeden proces ulegnie przerwaniu** pole wyboru jest zaznaczenia lub usunięcia zaznaczenia:
 
-|**polecenie**|wybrane|Niezaznaczone|  
+|**Polecenie**|Wybrane|Niezaznaczone|  
 |-|-|-|  
 |**Debugowanie**  > **Przerwij wszystko**|Wszystkie procesy zostaną przerwane.|Wszystkie procesy zostaną przerwane.|  
 |**Debugowanie** > **kontynuować**|Wszystkie procesy są wznawiane.|Wszystkie wstrzymane procesy wznawiają działanie.|  
@@ -122,7 +120,7 @@ W poniższej tabeli przedstawiono zachowania debugowania polecenia, kiedy **Prze
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Znajdowanie symboli i źródłowych plików (.pdb)  
 Aby nawigować po kodzie źródłowym procesu, debuger musi mieć dostęp do plików źródłowych i plików symboli. Aby uzyskać więcej informacji, zobacz [określanie plików symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-Jeśli nie masz dostępu plików dla procesu, można nawigować przy użyciu **dezasemblacji** okna. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md).  
+Jeśli nie masz dostępu plików dla procesu, można nawigować przy użyciu **dezasemblacji** okna. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md).  
 
 ###  <a name="BKMK_Switch_between_processes"></a> Przełączać się między procesami  
 
@@ -165,7 +163,7 @@ Aby kontrolować sposób, **Zatrzymaj debugowanie** ma wpływ na poszczególne p
   
 W poniższej tabeli przedstawiono zachowania zatrzymanie debugera, kończenia i odłączania poleceń z wieloma procesami: 
 
-|**polecenie**|**Opis**|  
+|**Polecenie**|**Opis**|  
 |-|-| 
 |**Debugowanie** > **Zatrzymaj debugowanie**|Jeśli zachowanie nie zostało zmienione w **procesów** , zostaną zakończone procesy uruchomione przez debugera, a dołączone procesy są odłączone.|  
 |**Debugowanie** > **Zakończ wszystkie**|Wszystkie procesy zostaną zakończone.|  

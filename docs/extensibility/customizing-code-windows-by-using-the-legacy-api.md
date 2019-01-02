@@ -1,9 +1,6 @@
 ---
 title: Dostosowywanie kodu Windows za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883042"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Dostosowywanie kodu systemu windows przy użyciu starszej wersji interfejsu API
 Okno kodu jest obiekt okna dokumentu, który obsługuje jeden lub więcej widoków tekstu. Dokładne funkcje okna kodu, zależą od usługi skojarzone języka. W trybie interfejsu wielu dokumentów (MDI) w oknie Kod jest podrzędna ramka MDI.  
@@ -36,10 +33,10 @@ W oknie kodu
  `Customizing Code Windows by Using the Legacy API`  
  Opis sposobu dostosowywania kodu systemu windows za pomocą starszej wersji interfejsu API.  
   
- [Instrukcje: hostowanie redaktorem w innym edytorze](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Instrukcje: Host redaktorem w innym edytorze](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Wyjaśnia, jak hostować drugi edytora w oknie edytora.  
   
- [Porady: wyzwolenie zdarzenia po utracie fokusu przez Edytor](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Instrukcje: Wyzwolenie zdarzenia po utracie fokusu przez Edytor](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Wyjaśnia, jak dołączyć widok dokumentu do obiektu danych dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  

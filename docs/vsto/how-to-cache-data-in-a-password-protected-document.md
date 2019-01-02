@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968420"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem
   Możesz dodać dane do pamięci podręcznej danych na dokument lub skoroszyt, który jest chroniony hasłem, zmiany w buforowanych danych nie są zapisywane automatycznie. Aby zapisać zmiany na dane w pamięci podręcznej, zastępowanie dwie metody w projekcie.  
@@ -80,5 +77,3 @@ ms.locfileid: "53647294"
  [Dane w pamięci podręcznej](../vsto/caching-data.md)   
  [Instrukcje: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Instrukcje: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
-  
-  

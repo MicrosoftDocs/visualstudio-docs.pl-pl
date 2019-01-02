@@ -1,8 +1,6 @@
 ---
 title: Widok rdzeni — narzędzie do powiększania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
@@ -14,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c29bacc07268223b9d4e5bf6cef4670c1a1f323
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5bfc05c208a072fbe1e17eeafdebb938b33aaaf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967297"
 ---
 # <a name="cores-view-zoom-tool"></a>Narzędzie do powiększania widoku rdzeni
-Formant powiększania jest suwak, który można powiększać i pomniejszać na osi czasu, dzięki czemu można skupić się na obszarów. Ten formant powiększa na środka bieżącego widoku, więc dostosowanie widoku przed powiększania.  
+Kontrolka powiększenia jest suwaka, w którym można powiększać i pomniejszać na osi czasu, dzięki czemu możesz skupić się na obszarach szczególne znaczenie w odniesieniu. Ten formant powiększa się w Centrum bieżący widok, więc dostosowanie widoku przed powiększania.  
   
-## <a name="other-ways-to-zoom"></a>Inny sposób, aby powiększyć  
+## <a name="other-ways-to-zoom"></a>Inne sposoby, aby powiększyć  
   
--   Powiększanie: przeciągnij, aby wybrać obszar w widoku osi czasu. Po zwolnieniu przycisku myszy widoku osi czasu powiększenie wybranego zakresu.  
+-   Powiększanie: Przeciągnij, aby wybrać obszar w widoku osi czasu. Po zwolnieniu przycisku myszy widok osi czasu powiększa wybranego zakresu.  
   
--   Powiększanie i zmniejszanie: Przesuń kursor myszy osi czasu, a następnie naciśnij klawisz **Ctrl** podczas przenoszenia kółka myszy.  
+-   Powiększanie i zmniejszanie: Umieść kursor nad osi czasu, a następnie naciśnij klawisz **Ctrl** podczas poruszania się obrót kółkiem myszy.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)

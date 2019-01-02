@@ -2,7 +2,6 @@
 title: Zarządzanie zasobami aplikacji (.NET)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966813"
 ---
 # <a name="manage-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 
@@ -50,7 +49,7 @@ Wybierz **zasobów** kartę. Możesz dodać *resx* plik, jeśli projekt nie zawi
 Zasoby są zarządzane w różny sposób w projektach platformy .NET niż w innych typów projektów. Aby uzyskać więcej informacji na temat zasobów:
 
 - Aplikacje uniwersalne platformy Windows (UWP), zobacz [zasobów aplikacji i systemu zarządzania zasobów](/windows/uwp/app-resources/)
-- Projekty języka C++, zobacz [pracy z plikami zasobów](/cpp/windows/working-with-resource-files) i [porady: tworzenie zasobu](/cpp/windows/how-to-create-a-resource)
+- Projekty języka C++, zobacz [pracy z plikami zasobów](/cpp/windows/working-with-resource-files) i [jak: Utwórz zasób](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Zobacz także
 

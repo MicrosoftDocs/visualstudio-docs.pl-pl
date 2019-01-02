@@ -1,8 +1,7 @@
 ---
-title: 'CA1304: Określ CultureInfo'
+title: 'CA1304: Określ klasę CultureInfo'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe02dd66b523e6ee82c5e1a2051f3a68839957d4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 564180330380a7076b091e0b2f793ea575606d53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968488"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ klasę CultureInfo
 
 |||
 |-|-|
@@ -84,7 +83,7 @@ Ten przykład generuje następujące wyniki:
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1305: Określ interfejs IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305: Określ argument IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Zobacz także
 

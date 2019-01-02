@@ -3,7 +3,6 @@ title: Szablon projektu usługi w chmurze platformy Azure dla języka Python
 description: Program Visual Studio udostępnia szablony dla usług Azure cloud services, napisany w języku Python, w tym wdrażanie ról w zależności i rozwiązywania problemów.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5eafbf0b24e464e81447c0677d53096032343580
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879559"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze platformy Azure dla języka Python
 

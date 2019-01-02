@@ -1,13 +1,8 @@
 ---
 title: Tworzenie stron aplikacji dla programu SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ed9c17d68e2386b7a5b5077ee4a7d1764ea5aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876409"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla programu SharePoint
   *Strony aplikacji* jest to strona sieci Web platformy ASP.NET, który jest przeznaczony do użytku w witrynie sieci Web programu SharePoint. Strony aplikacji są specjalistyczną odmianą strony ASP.NET. Główną różnicą między strony aplikacji i standardowej strony ASP.NET jest to, że na stronie aplikacji zawiera zawartość, która jest połączone ze stroną wzorcową programu SharePoint. Strona wzorcowa umożliwia stron aplikacji do udostępniania tego samego wygląd i zachowanie jak innych stron w witrynie.  
@@ -80,4 +75,3 @@ ms.locfileid: "49853145"
  [Rozwój SharePoint Foundation w głębi](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [Omówienie programu ASP.NET](/aspnet/overview)   
  [ASP.NET Web Pages](/aspnet/web-pages/index)   
-  

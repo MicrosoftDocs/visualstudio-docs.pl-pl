@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata::get_lengthblock — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b7d4d93f098fad10670fa12158819cf021d1518
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e2eafc0737a1bb93df73b7648734d1f1c77708a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875958"
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
 Pobiera długość w bajtach, w bloku kodu opisanego przez ramkę.  
@@ -27,7 +25,7 @@ Pobiera długość w bajtach, w bloku kodu opisanego przez ramkę.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_lengthBlock (   
+HRESULT get_lengthBlock (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
-title: Ciągi elementu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Ciągi Element | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Strings element (VSCT XML schema)
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5994144f07b8af84f61d7833737f45593c551b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a57fa611f157fa588158225cece8d38da2babd0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967889"
 ---
-# <a name="strings-element"></a>Element ciągów
-Element ciągi musi zawierać co najmniej **ButtonText** element podrzędny. Wszystkie elementy podrzędne są opcjonalne. Nieprawidłowy kod XML znaków, takich jak "&" i "<" musi być zakodowane jako jednostki ("&amp;"i"&lt;" i tak dalej).  
+# <a name="strings-element"></a>Strings, element
+Strings, element musi zawierać co najmniej jeden **ButtonText** elementu podrzędnego. Wszystkie inne elementy podrzędne są opcjonalne. Nieprawidłowy kod XML znaków takich jak "&" i "<" musi być kodowane jako jednostki ("&amp;"i"&lt;" i tak dalej).  
   
- Znak w ciągu tekstowego określa skrótu klawiaturowego dla polecenia.  
+ Handlowe "i" w ciągu tekstowym określa skrótu klawiaturowego dla polecenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,26 +39,26 @@ Element ciągi musi zawierać co najmniej **ButtonText** element podrzędny. Wsz
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|język|Opcjonalny. Język = ".".|  
+|język|Opcjonalna. Language = ".".|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|ButtonText|To pole i pięć następujących pól tekstowych w definicji poleceń umożliwiają określenie tekstu wyświetlanego w różnych menu. Domyślnie `ButtonText` pole jest wyświetlane w menu kontrolerów. `ButtonText` Pola staje się również domyślnie Jeśli pola tekstowe są puste. `ButtonText` Pola nie może być pusta, nawet jeśli nie określono innych pól tekstowych.|  
-|ToolTipText|`ToolTipText` Pole określa tekst wyświetlany w etykietce narzędzia elementu menu.<br /><br /> Jeśli `ToolTipText` pole jest puste, `ButtonText` pole jest używane.|  
-|MenuText|`MenuText` Pole określa tekst, który jest wyświetlany dla polecenia, jeśli znajduje się w menu głównym pasku narzędzi, w menu skrótów lub w podmenu. Jeśli `MenuText` pole jest puste, zintegrowane środowisko programistyczne (IDE) używa `ButtonText` pola. `MenuText` Pole może także służyć do lokalizacji.<br /><br /> Menu skrótów `MenuText` pole jest nazwa, która jest wyświetlana na pasku menu skrótów, co umożliwia dostosowywanie menu skrótów w IDE. W związku z tym można określonych w co nazwa z menu skrótów. na przykład użyć "Widget Menu skrótów pakietu" zamiast "Skrótów".<br /><br /> Jeśli `MenuText` pole nie zostanie określony, `ButtonText` pole jest używane.|  
-|CommandName|`CommandName` Pole określa tekst wyświetlany w kategorii klawiatury w **polecenia** karcie **Dostosuj** okno dialogowe (dostępne, klikając **Dostosuj**na **narzędzia** menu).|  
-|canonicalName|Angielski `CanonicalName` pole określa nazwę polecenia w angielskiej wersji językowej tekstu, który można wpisać w **polecenia** okno, aby wykonać elementu menu. Usuwa wszystkie znaki, które nie są litery, cyfry, podkreślenia i kropki osadzonego IDE. Ten tekst jest następnie łączony do `ButtonText` Aby zdefiniować polecenia. Na przykład **nowy projekt** na **pliku** polecenie File.NewProject staje się menu.<br /><br /> Jeśli język angielski `CanonicalName` pole nie zostanie określony, używa IDE `ButtonText` pola i pasków limit wszystkie z wyjątkiem litery, cyfry, podkreślenia i kropki osadzonego. Na przykład tekst przycisku "& Definiowanie polecenia..." staje się DefineCommands, gdzie handlowego "i", miejsce i wielokropek zostaną usunięte.<br /><br /> Jeśli `TextChanges` określono flagę i tekst polecenia jest zmieniany, odpowiadające jej polecenie, które są rozpoznawane przez **polecenia** okna nie zmienia; pozostaje forma kanoniczna oryginalnej `ButtonText` lub wjęzykuangielskim`CanonicalName` pól.|  
-|LocCanonicalName|`LocCanonicalName` Pola zachowuje się tak samo język angielski `CanonicalName` pola umożliwia jednak tekst polecenia zlokalizowanych należy określić. Można określić obu pól kanonicznej. Ponieważ IDE analizuje tylko tekst wprowadzony w **polecenia** okno i skojarzone z poleceniem, zarówno w języku angielskim, jak i w innej niż angielska tekst może być skojarzony z tym samym poleceniu.|  
+|ButtonText|To pole i pięć następujących pól tekstowych w definicji polecenia pozwalają określić tekst, który pojawia się w różnych menu. Domyślnie `ButtonText` pole jest wyświetlane w menu kontrolerów. `ButtonText` Pole staje się również wartość domyślna Jeśli inne pola tekstowe są puste. `ButtonText` Pole nie może być pusta, nawet jeśli inne pola tekstowe są określone.|  
+|ToolTipText|`ToolTipText` Pole określa tekst wyświetlany w etykietce narzędzia dla elementu menu.<br /><br /> Jeśli `ToolTipText` pole jest puste, `ButtonText` pole jest używane.|  
+|MenuText|`MenuText` Pole określa tekst, który jest wyświetlany dla polecenia, jeśli znajduje się w menu głównym pasku narzędzi, w menu skrótów lub w podmenu. Jeśli `MenuText` pole jest puste, zintegrowanego środowiska programistycznego (IDE) korzysta `ButtonText` pola. `MenuText` Pola może również służyć do lokalizacji.<br /><br /> Menu skrótów `MenuText` pole jest nazwa, która jest wyświetlana na pasku menu skrótów, co umożliwia dostosowanie menu skrótów w środowisku IDE. Zatem określonego w co nazwy z menu skrótów. na przykład użyć "Widżet Menu skrótu pakietu" zamiast "Skrótu".<br /><br /> Jeśli `MenuText` pole nie zostanie określony, `ButtonText` pole jest używane.|  
+|commandName|`CommandName` Pole określa tekst, który pojawia się w kategorii klawiatury w **polecenia** karcie **Dostosuj** okno dialogowe (dostępna przez kliknięcie przycisku **Dostosuj**na **narzędzia** menu).|  
+|CanonicalName|Angielska `CanonicalName` pola określa nazwę polecenia w tekstu w języku angielskim, które mogą być wprowadzane w **polecenia** okna do wykonania elementu menu. Paski IDE się żadnych znaków, które nie są litery, cyfry, podkreślenia i okresów osadzonego. Ten tekst jest następnie łączone w celu `ButtonText` pola do definiowania polecenia. Na przykład **nowy projekt** na **pliku** menu staje się polecenie File.NewProject.<br /><br /> Jeśli angielska `CanonicalName` pole nie zostanie określony, IDE używa `ButtonText` pola i paski wszystkie z wyjątkiem litery, cyfry, podkreślenia i okresów osadzonych. Na przykład tekst przycisku "i zdefiniuj polecenia..." staje się DefineCommands, gdzie handlowe "i", miejsce i wielokropek są usuwane.<br /><br /> Jeśli `TextChanges` flaga zostanie określona, tekst polecenia nie zostanie zmieniony, odpowiednie polecenie, które są rozpoznawane przez **polecenia** okna nie zmienia; pozostanie forma kanoniczna oryginalny `ButtonText` lub wjęzykuangielskim`CanonicalName` pola.|  
+|LocCanonicalName|`LocCanonicalName` Pola działa identycznie do języka angielskiego `CanonicalName` pola umożliwia jednak tekst polecenia zlokalizowane określenie. Można określić obu pól kanonicznej. Ponieważ IDE analizuje tekst wprowadzony w **polecenia** okna i kojarzy z poleceniem, zarówno w języku angielskim, jak i w innych niż angielski tekst może być skojarzony z tym samym poleceniu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
 |[Button, element](../extensibility/button-element.md)|Definiuje element, który użytkownik może interakcyjnie przeprowadzić.|  
-|[Menu, element](../extensibility/menu-element.md)|Określa pojedynczy element menu.|  
-|[Combo, element](../extensibility/combo-element.md)|Definiuje polecenia, które są wyświetlane w polu kombi.|  
+|[Menu, element](../extensibility/menu-element.md)|Definiuje pojedynczy element menu.|  
+|[Combo, element](../extensibility/combo-element.md)|Określa polecenia, które są wyświetlane w polu kombi.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Porady: wyświetlanie dokumentów skryptu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyświetlanie dokumentów skryptu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,21 +15,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867732"
 ---
-# <a name="how-to-view-script-documents"></a>Porady: wyświetlanie dokumentów skryptu
-W starszych wersjach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], w oknie Eksploratora skryptu pojawił się wygenerowanych ze skryptu po stronie serwera plików skryptu po stronie klienta. Okno Eksploratora skryptu często został ukryty, dzięki czemu dostępności skryptu po stronie klienta nie jest zawsze widoczne.  
+# <a name="how-to-view-script-documents"></a>Instrukcje: Wyświetlanie dokumentów skryptu
+We wcześniejszych wersjach programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], pliki skryptów po stronie klienta wygenerowany na podstawie skryptu po stronie serwera pojawiły się w oknie Eksplorator skryptów. Okno Eksplorator skryptów często zostało ukryte, tak, aby dostępności skryptu po stronie klienta nie jest zawsze oczywiste.  
   
- W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], wygenerowanych ze skryptu po stronie serwera plików skryptu po stronie klienta są wyświetlane w Eksploratorze rozwiązań, które jest domyślnie widoczne. Okno Eksploratora skrypt został wyeliminowany.  
+ W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], pliki skryptu po stronie klienta wygenerowany na podstawie skryptu po stronie serwera są wyświetlane w Eksploratorze rozwiązań, który jest domyślnie widoczny. Okno Eksplorator skryptów zostały wyeliminowane.  
   
- Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy są w trybie debugowania lub w trybie przerwania. Pojawią się one w **dokumentów skryptu** węzła.  
+ Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy jesteś w trybie debugowania lub w trybie przerwania. Pojawiają się na **dokumenty skryptów** węzła.  
   
- Pliki skryptów po stronie serwera są zawsze widoczne. Pojawią się one w  **\<Pathname witryny sieci Web >** węzła. Nazwa węzła podobny w tym przykładzie: `c:\...\Website2\`  
+ Pliki skryptów po stronie serwera są zawsze widoczne. Pojawiają się na  **\<Pathname witryny sieci Web >** węzła. Nazwa węzła jest podobna do poniższego przykładu: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera  
   
@@ -39,15 +37,15 @@ W starszych wersjach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 
   
 2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
   
-     Otwiera plik skryptu po stronie serwera w oknie źródła.  
+     Plik skryptu po stronie serwera, zostanie otwarty w oknie źródła.  
   
 ### <a name="to-view-a-client-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie klienta  
   
-1.  W **Eksploratora rozwiązań**, otwórz **dokumentów skryptu** węzła.  
+1.  W **Eksploratora rozwiązań**, otwórz **dokumenty skryptów** węzła.  
   
 2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
   
-     Otwiera plik skryptu po stronie klienta w oknie źródła.  
+     Plik skryptu po stronie klienta zostanie otwarty w oknie źródła.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

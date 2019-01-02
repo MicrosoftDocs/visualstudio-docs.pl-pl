@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_name — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edd0a96e88b1466fb7c2e2a6220e638d06a52f19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98f659bfbe906e1b25a63b3af6485dd7f583d103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966774"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
 Pobiera nazwę symbolu.  
@@ -27,7 +25,7 @@ Pobiera nazwę symbolu.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_name (   
+HRESULT get_name (   
    BSTR* pRetVal  
 );  
 ```  

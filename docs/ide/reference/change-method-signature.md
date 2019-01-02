@@ -2,7 +2,6 @@
 title: Refaktoryzuj podpis metody
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968407"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Zmień podpis metody refaktoryzacji
 
@@ -30,11 +29,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** umożliwia Usuń lub zmień kolejność parametrów metody.
+**Co:** Umożliwia usunięcie lub zmiana kolejności parametrów metody.
 
-**Kiedy:** chcesz przenieść lub usunąć parametr metody, która jest obecnie używana w różnych lokalizacjach.
+**Kiedy:** Chcesz przenieść lub usunąć parametr metody, która jest obecnie używana w różnych lokalizacjach.
 
-**Dlaczego:** możesz można ręcznie usuń i kolejność parametrów, a następnie Znajdź wszystkie wywołania do tej metody i zmień je pojedynczo, ale która może prowadzić do błędów.  To narzędzie refaktoryzacji będzie automatycznie wykonywać zadania.
+**Dlaczego:** Możesz można ręcznie usuń i kolejność parametrów, a następnie Znajdź wszystkie wywołania do tej metody i zmień je pojedynczo, ale która może prowadzić do błędów.  To narzędzie refaktoryzacji będzie automatycznie wykonywać zadania.
 
 ## <a name="how-to"></a>Instrukcje
 

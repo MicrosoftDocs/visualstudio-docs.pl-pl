@@ -1,9 +1,6 @@
 ---
 title: Tworzenie pakietów rozwiązania SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,69 +13,67 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87b80d7c607cf4de686e601263bcb67dcc2f92ae
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966667"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Tworzenie pakietów rozwiązania SharePoint
-  Przy użyciu projektanta pakietów, można tworzyć i dostosowywać pakiety wdrożeniowe. Na przykład można dodać SharePoint — elementy projektu i funkcje, zresetuj na serwerze usług IIS, ustaw zakresy aktywacji funkcji i zidentyfikować zależności funkcji. Projektant również generuje manifest pliku XML, który opisuje każdego pakietu.  
+  Przy użyciu projektanta pakietów, można tworzyć i dostosowywać pakiety wdrożeniowe. Na przykład można dodać elementów projektu programu SharePoint i funkcji, resetowanie na serwerze usług IIS, ustaw zakresy aktywacji funkcji i zidentyfikować zależności funkcji. Projektant generuje również manifest pliku XML, który zawiera opis każdego pakietu.  
   
 ## <a name="packaging-tools"></a>Narzędzia do tworzenia pakietów
- Można użyć **projektanta pakietów** do dostosowywania pakietu oraz do generowania manifestu. Możesz dołączyć SharePoint — elementy projektu, skonfigurować serwer sieci Web należy zresetować i skonfigurować typ wdrożenia serwera. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
+ Możesz użyć **projektancie pakietu** dostosować pakietu i wygenerować manifest. Może zawierać elementów projektu programu SharePoint, skonfigurować serwer sieci Web należy zresetować i skonfigurować typ serwera wdrożenia. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
- Alternatywnie można użyć **Eksploratora pakietów** Aby zmodyfikować funkcje i elementy w pliku pakietu (*.wsp*). Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Alternatywnie, można użyć **Eksploratora pakietów** Aby zmodyfikować funkcje i elementy w pliku pakietu (*.wsp*). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
- Można użyć do utworzenia pakietu Visual Studio i MSBuild (*WSP*) pliki do wdrożenia rozwiązania programu SharePoint. Ten proces generuje manifestu pliki potrzebne do wdrożenia programu SharePoint. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
+ Można użyć programu Visual Studio i MSBuild, aby utworzyć pakiet (*.wsp*) pliki do wdrożenia rozwiązania programu SharePoint. Ten proces generuje pliki manifestu potrzebne do wdrożenia programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
   
 ## <a name="package-designer-options"></a>Opcje projektanta pakietów
- W poniższej tabeli przedstawiono właściwości można dostosować w pakietach programu SharePoint z **projektanta pakietów**.  
+ W poniższej tabeli przedstawiono właściwości, które można dostosować do pakietów programu SharePoint przy użyciu **projektancie pakietu**.  
   
-|Pakiet właściwości projektanta|Opis ustawienia domyślne|  
+|Właściwość projektanta pakietu|Opis ustawienia domyślne|  
 |-------------------------------|------------------------------------|  
-|Nazwa|Wymagana. Ma ustawioną domyślną nazwę pakietu *ProjectName*.|  
-|Resetuj serwer sieci Web|Opcjonalna. Wybierz, jeśli chcesz ponownie uruchomić serwer sieci Web po *WSP* plik jest zainstalowany na serwerze programu SharePoint.|  
-|Typ serwera wdrażania|Wymagana. Domyślnie zakres wynosi ApplicationServer.<br /><br /> ApplicationServer: Opis serwera, który jest hostem usług.<br /><br /> WebFrontEnd: Opis serwera, który jest hostem witryny sieci Web.|  
-|Elementy w rozwiązaniu|Wszystkie SharePoint — elementy projektu i funkcje, które mogą zostać dodane do pakietu.|  
+|Nazwa|Wymagana. Domyślna nazwa pakietu jest równa *ProjectName*.|  
+|Resetuj serwer sieci Web|Opcjonalna. Wybierz, jeśli chcesz ponownie uruchomić serwer sieci Web po *.wsp* plik jest instalowany na serwerze programu SharePoint.|  
+|Typ serwera wdrożenia|Wymagana. Domyślnie ustawiono zakres ApplicationServer.<br /><br /> ApplicationServer: W tym artykule opisano serwera, który jest hostem usług.<br /><br /> WebFrontEnd: W tym artykule opisano serwera, który jest hostem witryny sieci Web.|  
+|Elementów w rozwiązaniu|Wszystkie elementy projektu programu SharePoint i funkcje, które można dodać do pakietu.|  
 |Elementy w pakiecie|Opcjonalna. Wszystkie elementy programu SharePoint i funkcje, które mają zostać wdrożone w pakiecie.|  
   
 ## <a name="configure-the-packaging-process"></a>Skonfiguruj proces tworzenia pakietu
- Po opracowywanie rozwiązań SharePoint w Visual Studio, można dostosować sposób pakiecie projektów.  
+ Po opracowywania rozwiązań programu SharePoint w programie Visual Studio, można dostosować, jak są pakowane projektów.  
   
- W poniższej tabeli przedstawiono dwa obiekty docelowe MSBuild, które można dostosować sposób *WSP* tworzony jest plik.  
+ W poniższej tabeli przedstawiono dwa obiekty docelowe programu MSBuild, które można dostosować sposób, w jaki *.wsp* zostanie utworzony plik.  
   
-|Docelowy|Opis|  
+|Cel|Opis|  
 |------------|-----------------|  
-|BeforeLayout|Obiekt docelowy wykonuje zadania bezpośrednio przed pliki są kopiowane do katalogu pośrednim. Pliki można zmodyfikować przed utworzeniem pliku pakietu (*.wsp*).|  
-|AfterLayout|Obiekt docelowy, który wykonuje zadania natychmiast po pliki są kopiowane do katalogu pośrednim.|  
+|BeforeLayout|Obiekt docelowy, który wykonuje zadania od razu, zanim pliki są kopiowane do katalogu, pośrednich. Pliki można zmodyfikować przed utworzeniem pliku pakietu (*.wsp*).|  
+|AfterLayout|Obiekt docelowy, który wykonuje zadania natychmiast po zakończeniu pliki są kopiowane do katalogu, pośrednich.|  
   
- Aby uzyskać więcej informacji [porady: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
+ Aby uzyskać więcej informacji [jak: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
   
-## <a name="packaging-architecture"></a>Architektura tworzenia pakietów
- Zostaną wykonane następujące kroki w przypadku utworzenia pakietu programu SharePoint (*WSP*) w programie Visual Studio.  
+## <a name="packaging-architecture"></a>Architektura pakietu
+ Wykonane następujące kroki podczas tworzenia pakietu programu SharePoint (*.wsp*) w programie Visual Studio.  
   
-1.  Funkcje i pakiety są weryfikowane, aby upewnić się, że struktury fizyczne i semantyczne pakietu jest prawidłowa.  
+1.  Funkcji i pakietów są weryfikowane, aby upewnić się, że struktury fizyczne i semantyczne pakietu jest poprawna.  
   
-2.  Wyliczane są funkcje, elementy projektu i plików pakietu w pakiecie. Pliki manifestu pakietów i funkcje są przekształcane uwzględnienie wszystkich informacji niezbędnych do wdrożenia i aktywacji. Tokeny są zastępowane FQDN wartości.  
+2.  Funkcje, elementy projektów i plików pakietu w pakiecie są wyliczane. Pliki manifestu pakietów i funkcje są przekształcane obejmujący wszystkie niezbędne informacje dotyczące wdrażania i aktywacji. Tokeny są zastępowane pełną wartość.  
   
-3.  Można dostosować docelowy programu BeforeLayout MSBuild jest wykonywana. Możesz utworzyć ten krok, aby wszelkie modyfikacje niestandardowy pakiet przed *WSP* tworzony jest plik.  
+3.  Można dostosować element docelowy programu BeforeLayout MSBuild jest wykonywane. Możesz utworzyć ten krok, aby wprowadzać żadnych zmian niestandardowy pakiet przed *.wsp* zostanie utworzony plik.  
   
-4.  Wyliczany pliki są kopiowane do katalogu pośrednim.  
+4.  Wyliczany pliki są kopiowane do katalogu, pośrednich.  
   
-5.  Można dostosować docelowy programu AfterLayout MSBuild jest wykonywana. Możesz utworzyć ten krok, aby wszelkie modyfikacje niestandardowy pakiet przed *WSP* tworzony jest plik.  
+5.  Można dostosować element docelowy programu MSBuild AfterLayout jest wykonywane. Możesz utworzyć ten krok, aby wprowadzać żadnych zmian niestandardowy pakiet przed *.wsp* zostanie utworzony plik.  
   
-6.  Pliki w katalogu pośrednim zostaną dodane do *WSP* pliku.  
+6.  Pliki w katalogu pośrednim zostaną dodane do *.wsp* pliku.  
   
 ## <a name="package-folder-structure"></a>Struktura folderów pakietu
- Podczas pakowania projektu programu SharePoint, *.wsp* pliku jest tworzony w *SolutionFolder\bin\\\<BuildConfiguration >* folderu. Na przykład, jeśli rozwiązanie jest w *2013\Projects\ListDefinition1 C:\Visual Studio* i konfiguracji kompilacji ma ustawioną wartość wersji *.wsp* plik znajduje się w *2013\ C:\Visual Studio Projects\ListDefinition1\bin\Release*.  
+ Podczas pakowania projektu programu SharePoint *.wsp* plik zostanie utworzony w *SolutionFolder\bin\\\<BuildConfiguration >* folderu. Na przykład, jeśli Twoje rozwiązanie jest w *2013\Projects\ListDefinition1 C:\Visual Studio* i konfiguracji kompilacji jest ustawiona na wersji *.wsp* plik znajduje się w *2013\ C:\Visual Studio Projects\ListDefinition1\bin\Release*.  
   
 ## <a name="see-also"></a>Zobacz także
- [Porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
- [Porady: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Porady: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Porady: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
-  
- 
+ [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
+ [Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  

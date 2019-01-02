@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessSecurity | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967959"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` jest implementowana przez dostawcę portu z ostrzeżeniem, że dołączanie do procesu jest niebezpieczne.  
+`IDebugProcessSecurity` jest implementowana przez dostawcę portu, aby ostrzec użytkownika, że dołączanie do procesu jest niebezpieczne.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,26 +26,26 @@ ms.locfileid: "31116256"
 IDebugProcessSecurity : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugProcessSecurity`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Pobiera nazwę użytkownika od dostawcy portu.|  
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Pobiera nazwę użytkownika z dostawcy portu.|  
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Ostrzega użytkownika, że dołączanie do procesu debugowania jest niebezpieczne.|  
   
 ## <a name="remarks"></a>Uwagi  
- Implementuje ten interfejs, aby wyświetlić ostrzeżenie i Zezwalaj użytkownikowi na Anuluj, jeśli proces, do którego jest podłączany mogą być uważane za niebezpieczne.  
+ Implementuje ten interfejs, aby wyświetlić ostrzeżenie i zezwolić użytkownikowi anulowanie, jeśli proces, do którego jest podłączany mogą być uważane za niebezpieczne.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porty](../../../extensibility/debugger/ports.md)   
- [Port dostawcy](../../../extensibility/debugger/port-suppliers.md)   
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Dostawcy portów](../../../extensibility/debugger/port-suppliers.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

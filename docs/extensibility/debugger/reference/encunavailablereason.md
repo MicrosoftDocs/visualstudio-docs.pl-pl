@@ -1,9 +1,6 @@
 ---
 title: EncUnavailableReason | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - EncUnavailableReason
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8228d741848ba90c2d2d39618781e6d915c4b627
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3c68aa25a009bad385bec87dba47fcb9957133d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872047"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Reprezentuje przyczyny, **Edytuj i Kontynuuj** nie jest dostępna.  
@@ -28,7 +25,7 @@ ms.locfileid: "49854653"
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-enum tagEncUnavailableReason {  
+enum tagEncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  
    ENCUN_SQLCLR,  
@@ -37,11 +34,11 @@ enum tagEncUnavailableReason {
    ENCUN_ATTACH,  
    ENCUN_WIN64  
 };  
-typedef enum tagEncUnavailableReason EncUnavailableReason;  
+typedef enum tagEncUnavailableReason EncUnavailableReason;  
 ```  
   
 ```csharp  
-public enum EncUnavailableReason {  
+public enum EncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  
    ENCUN_SQLCLR,  
@@ -80,9 +77,9 @@ public enum EncUnavailableReason {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.idl  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

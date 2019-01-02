@@ -2,7 +2,6 @@
 title: Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968608"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika
 
@@ -65,7 +64,7 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
+5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: **CTRL**+**R**,**T**).
 
     Wynik testu, który pokazuje, jeśli test zakończony powodzeniem lub niepowodzeniem jest wyświetlana w **Eksploratora testów** okna. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.
 
@@ -94,7 +93,7 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
+9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: **CTRL**+**R**,**T**).
 
      W tym momencie wszystkich wartości parametrów są definiowane w ich metod jako stałe. Następnie utworzymy zestaw danych umożliwiają naszym teście opartych na danych.
 
@@ -230,9 +229,9 @@ W poniższej tabeli można użyć parametry źródła danych przykładowych, kop
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYT.: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
 
-**Odp.:** dowolnego kodu, zmiany wprowadzone w oknie *UIMapDesigner.cs* pliku zostaną zastąpione za każdym razem, gdy generowanie kodu za pomocą UIMap - kodowanego testu interfejsu użytkownika. W tym przykładzie i w większości przypadków, zmiany kodu wymaganego do włączenia testów korzystających ze źródła danych może przyjąć pliku z kodem źródłowym testu (czyli *CodedUITest1.cs*).
+**ODP.:** Dowolny kod zmiany wprowadzone w oknie *UIMapDesigner.cs* pliku zostaną zastąpione za każdym razem, gdy generowanie kodu za pomocą UIMap - kodowanego testu interfejsu użytkownika. W tym przykładzie i w większości przypadków, zmiany kodu wymaganego do włączenia testów korzystających ze źródła danych może przyjąć pliku z kodem źródłowym testu (czyli *CodedUITest1.cs*).
 
 Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować go do *UIMap.cs* plików i zmień jego nazwę. *UIMap.cs* pliku może służyć do zastępowania metod i właściwości w *UIMapDesigner.cs* pliku. Należy usunąć odniesienia do oryginalnej metody w kodowany *UITest.cs* plik i zastąp go nazwą metody o zmienionej nazwie.
 

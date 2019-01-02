@@ -1,8 +1,6 @@
 ---
 title: Widok interakcji warstwy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf907b11a715f9e108c71daeb6bebd35be9f1212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967099"
 ---
 # <a name="tier-interactions-view"></a>Widok interakcji warstwowych
 
@@ -38,10 +36,10 @@ Widok interakcji wyświetla dane interakcji między warstwami na dwa okienka:
 
 ## <a name="master-pane"></a>W okienku głównym
 
-|Kolumny|Opis|
+|Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa**|— W przypadku wiersza najwyższego poziomu, nazwa PROFILOWANEGO procesu lub strony sieci Web.<br />– W przypadku wiersza połączenia bazy danych, nazwę serwera, który jest hostem bazy danych.|
-|**Bazy danych**|Nazwa bazy danych (tylko wiersze połączenia bazy danych).|
+|**Baza danych**|Nazwa bazy danych (tylko wiersze połączenia bazy danych).|
 |**Liczba**|Całkowita liczba żądań, które są generowane przez proces, strony sieci Web lub połączenia z bazą danych.|
 |**Łączny czas, który upłynął**|Całkowity czas spędzony na wykonywaniu każde żądanie jeden z procesów, strony sieci Web lub połączenia z bazą danych.|
 |**Maksymalny czas, który upłynął**|Maksymalny czas poświęcony na wykonanie dowolnego jedno żądanie z procesu, strony sieci Web lub połączenia z bazą danych.|
@@ -50,7 +48,7 @@ Widok interakcji wyświetla dane interakcji między warstwami na dwa okienka:
 
 ## <a name="database-connection-details-pane"></a>W okienku szczegółów połączenia bazy danych
 
-|Kolumny|Opis|
+|Kolumna|Opis|
 |------------|-----------------|
 |**Tekst polecenia**|Zapytanie SQL żądania.|
 |**Liczba zapytań**|Liczba przypadków, gdy zapytanie zostało uruchomione.|

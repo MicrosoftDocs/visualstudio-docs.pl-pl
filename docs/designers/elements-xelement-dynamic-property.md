@@ -2,7 +2,6 @@
 title: Elementy (właściwość dynamiczna XElement)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XElement.Elements
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c78dece049aa2d446a0f03b24f3e2c2640131327
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 01bca0771fb02ab8442132eaff4759fe7277ad6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837056"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elementy (właściwość dynamiczna XElement)
 
@@ -46,4 +45,4 @@ Ta właściwość używa odroczonego wykonania.
 
 - [Właściwości dynamiczne klasy XElement](../designers/xelement-class-dynamic-properties.md)
 - [Element](../designers/element-xelement-dynamic-property.md)
-- [Elementy podrzędne](../designers/descendants-xelement-dynamic-property.md)
+- [Elementy potomne](../designers/descendants-xelement-dynamic-property.md)

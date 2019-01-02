@@ -1,22 +1,20 @@
 ---
 title: 'Błąd: Obliczenie funkcji &#39;funkcja&#39; przekroczyła limit czasu i konieczne było przerwanie procesu w niebezpieczny sposób | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 459ece9551ce8bd64703db139f8024ece4953cfa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a72bd821d7ecd32e82b2ad3b02debe03ff511531
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883314"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: Obliczenie funkcji &#39;funkcja&#39; przekroczyła limit czasu i konieczne było przerwanie procesu w niebezpieczny sposób
 
@@ -51,7 +49,3 @@ Jeśli poprzednie rozwiązania nie rozwiązują problemu, przejdź do strony **n
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>Rozwiązanie #4: Włączanie trybu zgodności zarządzanej
 
 Po przełączeniu do starego aparatu debugowania, można wyeliminować ten błąd. Przejdź do **narzędzia** > **opcje**i wybierz ustawienie **debugowanie** > **ogólne**  >  **Użyj zarządzanego trybu zgodności**. Aby uzyskać więcej informacji, zobacz [ogólne opcje debugowania](../debugger/general-debugging-options-dialog-box.md).
-
-
-
-  

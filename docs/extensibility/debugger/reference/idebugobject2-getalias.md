@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::GetAlias | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::GetAlias
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0919fe9617231a94f39b08b83c10e3b5ef645792
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 756f1249fc2adad9cdfa217c3f8fdd05eaa945d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889754"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Pobiera alias skojarzony z tym obiektem, jeśli istnieje.  
@@ -28,14 +25,14 @@ Pobiera alias skojarzony z tym obiektem, jeśli istnieje.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetAlias(  
-   IDebugAlias** ppAlias  
+HRESULT GetAlias(  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
 ```csharp  
-int GetAlias(  
-   out IDebugAlias ppAlias  
+int GetAlias(  
+   out IDebugAlias ppAlias  
 );  
 ```  
   

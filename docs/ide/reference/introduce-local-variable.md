@@ -1,20 +1,19 @@
 ---
-title: Wprowadzanie zmiennej lokalnej w programie Visual Studio
+title: Wprowadzanie zmiennej lokalnej
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97e0e994a15c9587ae781280743b42329753e43d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: 42d3f7da59fc64e70ab453a6dd1f57d95871b684
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968686"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Wprowadzanie zmiennej lokalnej w programie Visual Studio
 
@@ -24,11 +23,11 @@ Dotyczy to generowanie kodu:
 
 - Visual Basic
 
-**Co:** pozwala natychmiast wygenerować zmienną lokalną, aby zastąpić istniejące wyrażenia.
+**Co:** Pozwala natychmiast wygenerować zmienną lokalną, aby zastąpić istniejące wyrażenia.
 
-**Kiedy:** masz kod, który można łatwo wykorzystać także później, jakby był w zmiennej lokalnej.
+**Kiedy:** Masz kod, który można łatwo wykorzystać także później, jakby był w zmiennej lokalnej.
 
-**Dlaczego:** możesz skopiować i wkleić kod wiele razy go używać w różnych miejscach, jednak byłoby lepiej wykonać tę operację jeszcze raz, przechowuje wynik w zmiennej lokalnej i użyć zmiennej lokalnej przez cały.
+**Dlaczego:** Możesz skopiować i Wklej kod wiele razy z niej korzystać w różnych miejscach, jednak byłoby lepiej wykonać tę operację jeszcze raz, przechowuje wynik w zmiennej lokalnej i użyć zmiennej lokalnej przez cały.
 
 ## <a name="how-to"></a>Instrukcje
 

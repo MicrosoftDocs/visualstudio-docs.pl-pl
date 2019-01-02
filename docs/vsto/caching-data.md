@@ -1,9 +1,6 @@
 ---
 title: Dane w pamięci podręcznej
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 66113dae824397f46829a539a016f452cedc0383
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967258"
 ---
 # <a name="cache-data"></a>Dane w pamięci podręcznej
   Może buforować obiekty danych w dostosowaniu na poziomie dokumentu, dzięki czemu dane są dostępne w trybie offline lub bez konieczności otwierania programu Microsoft Office Word lub Microsoft Office Excel. Buforowanie obiektu, obiekt musi mieć typ danych, który spełnia określone wymagania. Wiele standardowe typy danych w programie .NET Framework spełniają te wymagania, w tym <xref:System.String>, <xref:System.Data.DataSet>, i <xref:System.Data.DataTable>.  
@@ -90,6 +87,4 @@ ms.locfileid: "53248127"
  [Instrukcje: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Instrukcje: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Wskazówki: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
-  
-  
+ [Przewodnik: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  

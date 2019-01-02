@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Dodawanie formantów do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO'
-ms.custom: ''
+title: 'Przewodnik: Dodawanie formantów do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aa574abb6f0d14d17a9bfb73c28a6c330885bc2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968647"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Wskazówki: Dodawanie formantów do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Przewodnik: Dodawanie formantów do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO
   Aby dodać formanty do żadnych otwartych arkusza, przy użyciu dodatku narzędzi VSTO dla programu Excel. W tym instruktażu przedstawiono sposób użycia wstążki umożliwiające użytkownikom dodawanie <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>, a <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza. Aby uzyskać informacje, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu Excel. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu Excel. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
@@ -52,7 +49,7 @@ ms.locfileid: "49915701"
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku narzędzi VSTO programu Excel  
   
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt dodatku narzędzi VSTO programu Excel o nazwie **ExcelDynamicControls**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt dodatku narzędzi VSTO programu Excel o nazwie **ExcelDynamicControls**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  Dodaj odwołanie do **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** zestawu. To odwołanie jest wymagane, aby programowo dodać formant programu Windows Forms do arkusza w dalszej części tego przewodnika.  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49915701"
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]  
   
-4.  W C#, należy utworzyć program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzeń. Możesz umieścić ten kod w `ThisAddIn_Startup` metody. Aby uzyskać więcej informacji na temat tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Zastąp `ThisAddIn_Startup` metoda następującym kodem.  
+4.  W C#, należy utworzyć program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzeń. Możesz umieścić ten kod w `ThisAddIn_Startup` metody. Aby uzyskać więcej informacji na temat tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Zastąp `ThisAddIn_Startup` metoda następującym kodem.  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
@@ -195,5 +192,3 @@ ms.locfileid: "49915701"
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
  [ListObject — formant](../vsto/listobject-control.md)  
-  
-  

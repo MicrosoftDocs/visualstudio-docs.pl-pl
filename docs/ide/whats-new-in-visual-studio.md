@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2017.
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881026"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 

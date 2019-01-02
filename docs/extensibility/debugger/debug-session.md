@@ -1,9 +1,6 @@
 ---
 title: Sesja debugowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sessions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67734025b70ee6f910ed46f034dcfb1b10135cc3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 049a2d2e2738c3d3182cd014f0aa52429406a08c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882377"
 ---
 # <a name="debug-session"></a>Sesja debugowania
 Pod względem architektury debugera *sesji*:  

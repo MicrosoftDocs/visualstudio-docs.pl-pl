@@ -1,9 +1,6 @@
 ---
-title: Elementy projektu pakiet VSPackage kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Elementy projektu pakietu VSPackage kontroli źródła | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
@@ -13,26 +10,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb741a7dc7423c27baed2cd79476239f4e41a170
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4446bb0cab421e06910ac7f7c5893680c36edf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872242"
 ---
-# <a name="source-control-vspackage-design-elements"></a>Elementy projektu pakiet VSPackage kontroli źródła
-Tematy w tej sekcji opisano strukturę pakiet VSPackage musi zaimplementować głębokiej integracji kontroli źródła. Wyświetla listę również interfejsów usług, który źródła formantu pakiet VSPackage można zaimplementować i interfejsów i usług kontroli źródła pakiet VSPackage mogą korzystać z innych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składników w celu obsługi źródła kontrolować modelu i funkcjonalność.  
+# <a name="source-control-vspackage-design-elements"></a>Elementy projektu pakietu VSPackage kontroli kodu źródłowego
+Tematy w tej sekcji opisują Struktura pakietu VSPackage musi implementować dla głęboka Integracja kontroli źródła. Zawiera również listę interfejsów, można wdrożyć usługi, że źródło kontrolować pakietu VSPackage i interfejsy oraz usługi pakietu VSPackage kontroli źródła mogą korzystać z innych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składników w celu obsługi źródła kontrolowania modelu i funkcji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Struktura pakietu VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
- Definiuje strukturę pakiet VSPackage kontroli źródła.  
+ Definiuje strukturę do kontroli źródła pakietu VSPackage.  
   
  [Powiązane usługi i interfejsy](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)  
- Wyświetla listę usług i interfejsów związanych z pakietem kontroli źródła.  
+ Wyświetla listę interfejsów związane z pakietu kontroli źródła i usług.  
   
- [Usług](../../extensibility/internals/services-provided-source-control-vspackage.md)  
- Zawiera opis usługi kontroli źródła, które są udostępniane przez pakiet VSPackage kontroli źródła.  
+ [Dostępne usługi](../../extensibility/internals/services-provided-source-control-vspackage.md)  
+ W tym artykule opisano usługi kontroli źródła, które są dostarczane przez pakietu VSPackage kontroli źródła.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Tworzenie pakietu VSPackage kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- W tym artykule omówiono sposób tworzenia kontroli źródła pakiet VSPackage, który nie tylko udostępnia funkcje kontroli źródła, ale może być używana do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródła formantu interfejsu użytkownika.
+ W tym artykule omówiono sposób tworzenia kontroli źródła pakietu VSPackage, który nie tylko zapewnia funkcji kontroli źródła, ale mogą być używane do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródłowej kontrolki interfejsu użytkownika.

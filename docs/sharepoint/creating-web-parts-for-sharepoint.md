@@ -1,9 +1,6 @@
 ---
 title: Tworzenie składników Web Part programu SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879137"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników web Part programu SharePoint
-  Za pomocą składników web Part, można zmodyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki. Części sieci Web to formanty po stronie serwera, które są uruchamiane wewnątrz strona składników web part: są blokami konstrukcyjnymi stron, które pojawiają się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: składniki Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).  
+  Za pomocą składników web Part, można zmodyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki. Części sieci Web to formanty po stronie serwera, które są uruchamiane wewnątrz strona składników web part: są blokami konstrukcyjnymi stron, które pojawiają się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: Składniki Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Można tworzyć i debugować części sieci web w witrynie programu SharePoint przy użyciu szablonów z Visual Studio.  
   
@@ -54,10 +49,10 @@ ms.locfileid: "49906048"
 |plik .webpart|Udostępnia informacje wymagające wyświetlił składnik web part w galerii składników web part programu SharePoint.|  
 |Plik kodu|Zawiera metody, które dodają formanty do składnika web part i które generują niestandardową zawartość wewnątrz składnika web part.|  
   
- Aby uzyskać więcej informacji, zobacz [porady: tworzenie SharePoint web part](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
 ### <a name="visual-web-part-item"></a>Element składnika programu Visual web part
- Program visual web part jest składnikiem web part, utworzonym przy użyciu projektanta Visual Web Developer w programie Visual Studio. Program visual web part działa tak samo, jak inny składnikk web part. Aby dodać formanty, takie jak przyciski i pola tekstowe do składnika web part, Dodaj kod do pliku XML. Jednak dodać formanty do wizualnego składnika web part, przeciągając je lub kopiując do składnika web part programu Visual Studio **przybornika**. Projektant następnie generuje kod wymagany w pliku XML. Zobacz [porady: tworzenie SharePoint składnik web part za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+ Program visual web part jest składnikiem web part, utworzonym przy użyciu projektanta Visual Web Developer w programie Visual Studio. Program visual web part działa tak samo, jak inny składnikk web part. Aby dodać formanty, takie jak przyciski i pola tekstowe do składnika web part, Dodaj kod do pliku XML. Jednak dodać formanty do wizualnego składnika web part, przeciągając je lub kopiując do składnika web part programu Visual Studio **przybornika**. Projektant następnie generuje kod wymagany w pliku XML. Zobacz [jak: Tworzenie części sieciowej SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ## <a name="sharepoint-controls"></a>Formanty programu SharePoint
  Program Visual Studio zapewnia kilka formantów do tworzenia witryn SharePoint, takich jak strony aplikacji. Te kontrolki wyświetlają się w **przybornika** w obszarze **kontrolkami SharePoint**. Funkcja dla tych formantów wywodzi się z [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) przestrzeń nazw, która zawiera formanty serwera ASP.NET, które są używane na stronach witryny i listy programu SharePoint.  
@@ -115,10 +110,9 @@ ms.locfileid: "49906048"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Porady: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Dowiesz się, jak utworzyć składniki web Part dla stron programu SharePoint.|  
-|[Porady: tworzenie części sieciowej SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Dowiesz się, jak utworzyć składniki web Part programu SharePoint przy użyciu powierzchni projektowej.|  
-|[Porady: tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Dowiesz się, jak utworzyć niestandardowe formanty wielokrotnego użytku, które mogą być wykorzystane przez strony aplikacji i składników web Part, które są uruchamiane w programie SharePoint.|  
+|[Instrukcje: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Dowiesz się, jak utworzyć składniki web Part dla stron programu SharePoint.|  
+|[Instrukcje: Tworzenie części sieciowej SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Dowiesz się, jak utworzyć składniki web Part programu SharePoint przy użyciu powierzchni projektowej.|  
+|[Instrukcje: Tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Dowiesz się, jak utworzyć niestandardowe formanty wielokrotnego użytku, które mogą być wykorzystane przez strony aplikacji i składników web Part, które są uruchamiane w programie SharePoint.|  
 |[Przewodnik: Tworzenie składnika web part programu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint.|  
 |[Przewodnik: Tworzenie składnika web part programu SharePoint przy użyciu narzędzia Projektant](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Opisuje sposób projektowania składnika web part programu SharePoint, przeciągając formanty do powierzchni projektowej.|  
 |[Przewodnik: Tworzenie składnika web part Silverlight, który wyświetlającego dane OData dla programu SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint, który obsługuje aplikację Silverlight i wyświetla dane z list programu SharePoint.|  
-  

@@ -1,9 +1,6 @@
 ---
 title: Flagi bitowe używane przez określone polecenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875423"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flagi bitowe używane przez określone polecenia
 Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmodyfikować, ustawiając jeden lub więcej bitów w postaci pojedynczej wartości. Te wartości są określane jako flag bitowych. Różne flagi bitowe używane przez interfejs API wtyczki kontroli źródła są szczegółowo opisane w tym miejscu, pogrupowane według funkcji, która korzysta z nich.  
@@ -37,7 +34,7 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Wtyczka do kontroli źródła oczekuje się, aby automatycznie wykrywać, czy plik jest tekstowe lub binarne.|  
 |`SCC_FILETYPE_TEXT`|0x01|Typ pliku jest tekst.|  
-|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest plikiem binarnym. **Uwaga:** `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` flagi są wzajemnie się wykluczają.   Ustaw dokładnie jeden lub żadnego z tych celów.|  
+|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest plikiem binarnym. **Uwaga:** `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` flagi są wzajemnie się wykluczają. Ustaw dokładnie jeden lub żadnego z tych celów.|  
 |`SCC_ADD_STORELATEST`|0x02|Store tylko najnowszą wersję (nie różnic).|  
   
 ## <a name="diff-flags"></a>Flagi różnic  
@@ -46,7 +43,7 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
 |Flaga|Wartość|Opis|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignoruj różnice wielkości liter.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignoruj różnice odstępu. **Uwaga:** `SCC_DIFF_IGNORECASE` i `SCC_DIFF_IGNORESPACE` flagi są opcjonalne flag bitowych.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignoruj różnice odstępu. **Uwaga:**  `SCC_DIFF_IGNORECASE` i `SCC_DIFF_IGNORESPACE` flagi są opcjonalne flag bitowych.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|Głębokość kolejki przez porównywanie zawartości całego pliku.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|Głębokość kolejki według sumy kontrolnej.|  
 |`SCC_DIFF_QD_TIME`|0x0040|Głębokość kolejki przez sygnaturę daty i godziny pliku.|  
@@ -81,8 +78,8 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
   
 |Flaga|Wartość|Opis|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE nie pliki, to przekazanie katalogi: rozpoczynanie wszystkich plików w katalogach.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE jest przekazanie katalogami: pobieranie tych katalogów oraz ich podkatalogów.|  
+|`SCC_GET_ALL`|0x00000001L|Środowisko IDE jest przekazanie katalogi, nie pliki: Pobierz wszystkie pliki w katalogach.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|Środowisko IDE jest przekazanie katalogi: Skorzystaj z tych katalogów i wszystkich jego podkatalogów.|  
   
 ## <a name="noption-values"></a>wartości nOption  
  Te flagi są używane przez [SccSetOption](../extensibility/sccsetoption-function.md) w `nOption` parametru.  

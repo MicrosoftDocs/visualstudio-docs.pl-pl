@@ -1,8 +1,6 @@
 ---
-title: Cvcreatemarkerseries — funkcja | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Funkcja CvCreateMarkerSeries | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateMarkerSeriesA
@@ -16,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55dd6658aca332937299b2301d8294081bc7d3fd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9395f576e942e799312dad2e22be79942110a8ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967803"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Cvcreatemarkerseries — funkcja
-Tworzy serię znacznika dla podanego dostawcy.  
+Tworzy serię znacznika dla danego dostawcy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,23 +40,23 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
   
 #### <a name="parameters"></a>Parametry  
  `pProvider`  
- Obiekt dostawcy poprzednio inicjowany przez CvInitProvider. Nie może mieć wartości NULL.  
+ Poprzednio inicjowany przez cvinitprovider — obiekt dostawcy. Nie może mieć wartości NULL.  
   
  `pSeriesName`  
- Nazwa serii znacznika. Nie może mieć wartości NULL, ale może być ciągiem pustym.  
+ Nazwa serii znacznika. Nie może mieć wartości NULL, ale dozwolone jest pustym ciągiem.  
   
  `ppMarkerSeries`  
- Adres zmiennej danych wyjściowych, która zapisze w kontekście serii znacznika. Nie może mieć wartości NULL.  
+ Adres zmiennej danych wyjściowych, który będzie przechowywał znaczników serii kontekstu. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK serii znacznika został utworzony pomyślnie lub kod błędu w przypadku zostały wszystkie błędy. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
+ S_OK znaczników serii został pomyślnie utworzony lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
- **Unicode:** CvCreateMarkerSeriesW  
+ **Unicode:** Cvcreatemarkerseriesw —  
   
- **ANSI:** CvCreateMarkerSeriesA  
+ **ANSI:** Cvcreatemarkerseriesa —  
   
 ## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

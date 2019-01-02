@@ -1,8 +1,6 @@
 ---
 title: Just-In-Time, debugowanie, okno dialogowe Opcje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6736e0646193754dbd932e5501a6473ee18c7e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05a1cc9e4847b9ffa2c873b137c35bfbf6f83f83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968118"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-in-time, debugowanie, opcje ― Okno dialogowe
 Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu i kliknij przycisk **opcje**. W **opcje** okna dialogowego rozwiń **debugowanie** a następnie wybierz węzeł **Just-In-Time**. Ta strona umożliwia włączenie debugowania dla kodu zarządzanego, natywnego kodu i skryptów Just-In-Time. Aby uzyskać więcej informacji, zobacz [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md).  
@@ -38,7 +36,7 @@ Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu
   
 - Natywne  
   
-- skrypt  
+- Skrypt  
   
   Debugowanie Just In Time jest techniką debugowanie programu, który jest uruchamiany poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można uruchomić programu, który został utworzony w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowiska. Włączenie debugowania Just-in-time awarii wyświetli okno dialogowe z pytaniem, jeśli chcesz debugować.  
   
@@ -59,4 +57,4 @@ Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie, opcje ― Okno dialogowe](../debugger/debugging-options-dialog-box.md)   
- [Instrukcje: określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)
+ [Instrukcje: Określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Porady: debugowanie w klastrze o wysokiej wydajności | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie w klastrze o wysokiej wydajności | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9964621c216d058581d9298956ba90ac6cdbef86
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966459"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Porady: debugowanie w klastrze o wysokiej wydajności
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności
 Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Istnieją jednak pewne dodatkowe zagadnienia. Aby uzyskać wymagania ogólne instalacji zdalnej, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
   
  Podczas debugowania w klastrze o wysokiej wydajności, można używać wszystkich [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowania systemu windows i technik, które są dostępne dla zdalnego debugowania. Ponieważ przeprowadzasz debugowanie zdalne, jednak zewnętrzne okno konsoli nie jest dostępna.  
   
- **Wątków** okna i **procesy** są szczególnie przydatne podczas debugowania aplikacji równoległych. Aby uzyskać porady na temat sposobu korzystania z tych okien, zobacz [porady: Korzystanie z okna procesów](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) i [wskazówki: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).  
+ **Wątków** okna i **procesy** są szczególnie przydatne podczas debugowania aplikacji równoległych. Aby uzyskać porady na temat sposobu korzystania z tych okien, zobacz [jak: Korzystanie z okna procesów](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) i [instruktażu: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).  
   
  W poniższych procedurach przedstawiono kilka technik, które są szczególnie przydatne podczas debugowania w klastrze o wysokiej wydajności.  
   
@@ -101,7 +99,7 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)   
- [Porady: Korzystanie z okna procesów](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
+ [Instrukcje: Korzystanie z okna procesów](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
  [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Wątków i procesów](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))   
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)

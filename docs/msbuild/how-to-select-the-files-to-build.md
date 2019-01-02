@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Wybieranie plików do kompilacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wybieranie plików do kompilacji | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875410"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Porady: Wybieranie plików do kompilacji
+# <a name="how-to-select-the-files-to-build"></a>Instrukcje: Wybieranie plików do kompilacji
 Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić listę każdego pliku osobno w pliku projektu lub można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów.  
   
 ## <a name="specify-inputs"></a>Określ dane wejściowe  
@@ -172,5 +170,5 @@ Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić list�
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Instrukcje: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Elementy](../msbuild/msbuild-items.md)

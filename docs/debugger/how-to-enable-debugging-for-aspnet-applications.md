@@ -2,7 +2,6 @@
 title: Włącz debugowanie aplikacji ASP.NET | Dokumentacja firmy Microsoft
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881104"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debugowanie aplikacji ASP.NET lub ASP.NET Core w programie Visual Studio
 
@@ -168,11 +167,11 @@ Istnieją różne sposoby publikować aplikacje dla usług IIS. Te kroki pokazuj
      
    - Dla platformy ASP.NET Core, wybierz **System plików**, wybierz folder dla aplikacji, a następnie wybierz **Otwórz**.
 
-1. Wybierz **dalej**. 
+1. Wybierz opcję **Dalej**. 
 
 1. W obszarze **konfiguracji**, wybierz opcję **debugowania** z listy rozwijanej.
 
-1. Wybierz **Zapisz**.
+1. Wybierz pozycję **Zapisz**.
 
 1. W **publikowania** okna dialogowego, upewnij się, że **CustomProfile** (lub nazwę utworzony właśnie profil) zostanie wyświetlony, i **LastUsedBuildConfiguration** jest ustawiona na  **Debugowanie**. 
 
@@ -185,10 +184,9 @@ Istnieją różne sposoby publikować aplikacje dla usług IIS. Te kroki pokazuj
 
 ## <a name="see-also"></a>Zobacz także  
 [Debugowanie ASP.NET: wymagania systemowe](aspnet-debugging-system-requirements.md)   
-[Porady: uruchamianie procesu roboczego w ramach konta użytkownika](how-to-run-the-worker-process-under-a-user-account.md)   
-[Porady: znajdowanie nazwy procesu ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
+[Instrukcje: Uruchamianie procesu roboczego w ramach konta użytkownika](how-to-run-the-worker-process-under-a-user-account.md)   
+[Instrukcje: Znajdowanie nazwy procesu ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
 [Debugowanie wdrożonych aplikacji sieci web](debugging-deployed-web-applications.md)   
-[Wskazówki: Debugowanie formularzy internetowych](walkthrough-debugging-a-web-form.md)   
-[Porady: debugowanie wyjątków ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[Przewodnik: Debugowanie formularzy internetowych](walkthrough-debugging-a-web-form.md)   
+[Instrukcje: Debugowanie wyjątków ASP.NET](how-to-debug-aspnet-exceptions.md)   
+[Debugowanie aplikacji sieci web: Błędy i rozwiązywanie problemów](debugging-web-applications-errors-and-troubleshooting.md)

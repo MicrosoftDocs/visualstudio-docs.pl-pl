@@ -2,7 +2,6 @@
 title: Debuger systemu windows | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875809"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Dowiedz się więcej o debuger Windows w programie Visual Studio
 
@@ -41,7 +40,7 @@ Podczas debugowania programu, można otworzyć większość okien debugera. Aby 
 |Zadania|EWIDENCYJNE: + SHIFT + D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)|
 |Interaktywne debugowania języka Python|SHIFT+ALT+I|[Interaktywna pętla REPL języka Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Konsola JavaScript|CTRL+ALT+V, C|[Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Eksplorator DOM|CTRL + ALT + V, D|[Debugowanie układu przy użyciu eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)|
+|Eksplorator DOM|CTRL + ALT + V, D|[Debugowanie układu przy użyciu eksploratora modelu DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Eksplorator właściwości na żywo|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Procesy|CTRL+ALT+Z|[Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)|

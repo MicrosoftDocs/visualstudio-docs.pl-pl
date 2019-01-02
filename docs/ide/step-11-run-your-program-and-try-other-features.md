@@ -1,9 +1,7 @@
 ---
-title: 'Krok 11: Uruchamianie programu i próbowanie innych funkcji'
-ms.custom: ''
+title: Krok 11. Uruchamianie programu i próbowanie innych funkcji
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
@@ -11,19 +9,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b0a00b328c85758c2be824377d04a0b3cfe122f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968248"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Uruchamianie programu i próbowanie innych funkcji
+# <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11. Uruchamianie programu i próbowanie innych funkcji
 Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustawić kolor tła <xref:System.Windows.Forms.PictureBox>. Aby dowiedzieć się więcej, spróbuj poprawić program zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.
 
  Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek podglądu pełny obraz](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
- ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: tworzenie przeglądarki obrazów w C# -5 wideo](http://go.microsoft.com/fwlink/?LinkId=205206). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# -5 wideo](http://go.microsoft.com/fwlink/?LinkId=205206). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>Aby uruchomić program i ustawić kolor tła
 
@@ -59,6 +57,6 @@ Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustaw
 
 -   Aby dowiedzieć się więcej na temat Visual C#, zobacz [wprowadzenie do C# języka i platformy .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
 
--   Aby przejść do następnego samouczka, zobacz [samouczek 2: utworzenie kwizu matematycznego czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
+-   Aby przejść do następnego samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10: pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
