@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8671c46cf2e88ab5d5797dd7a009ff29b953c4e
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ad784e0438e0b1f02607c3cb748c759b9266dbe6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824579"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projekty baz danych i aplikacji warstwy danych
 
@@ -29,9 +28,9 @@ Aby uzyskać listę funkcji bazy danych, które są obsługiwane przez aplikacje
 
 | Ogólne zadania | Zawartość pomocnicza |
 | - | - |
-| **Rozpocznij tworzenie aplikacji warstwy danych:** koncepcji aplikacji warstwy danych (DAC) programu Microsoft SQL Server 2008. Aplikacji DAC programu zawiera definicję dla bazy danych programu SQL Server i pomocnicze obiekty wystąpienia, które są używane przez serwer do klienta lub aplikacji 3-warstwowej. Aplikacji DAC programu zawiera obiekty bazy danych, takich jak tabele i widoki, wraz z wystąpienia jednostki, takie jak nazwy logowania. Za pomocą programu Visual Studio Utwórz projekt aplikacji DAC, tworzenie pliku pakietu aplikacji DAC i wysyłać plik pakietu aplikacji DAC administrator bazy danych w celu wdrożenia na wystąpienie aparatu bazy danych programu SQL Server. | - [Aplikacje warstwy danych](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Wykonywanie programowanie iteracyjne bazy danych:** deweloperzy mogą zapoznaj się z części projektu i zaktualizować je w środowisku izolowanym rozwoju. Za pomocą tego typu środowiska, możesz testować wprowadzane zmiany, bez wywierania wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian, możesz sprawdzić pliki do kontroli wersji, gdy inni członkowie zespołu mogą uzyskać zmiany i tworzyć i wdrażać je na serwer testowy. | - [Programowanie zorientowane na projekt bazy danych w trybie offline (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Debuger języka Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Tworzenie prototypów, sprawdzanie wyników testów i modyfikowania skryptów bazy danych i obiektów:** można użyć edytora języka Transact-SQL, aby wykonać dowolne spośród tych wspólnych zadań. | - [Edytory zapytania i tekst (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Rozpocznij tworzenie aplikacji warstwy danych:** Pojęcie aplikacji warstwy danych (DAC) została wprowadzona w programie SQL Server 2008. Aplikacji DAC programu zawiera definicję dla bazy danych programu SQL Server i pomocnicze obiekty wystąpienia, które są używane przez serwer do klienta lub aplikacji 3-warstwowej. Aplikacji DAC programu zawiera obiekty bazy danych, takich jak tabele i widoki, wraz z wystąpienia jednostki, takie jak nazwy logowania. Za pomocą programu Visual Studio Utwórz projekt aplikacji DAC, tworzenie pliku pakietu aplikacji DAC i wysyłać plik pakietu aplikacji DAC administrator bazy danych w celu wdrożenia na wystąpienie aparatu bazy danych programu SQL Server. | - [Aplikacje warstwy danych](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Wykonywanie programowanie iteracyjne bazy danych:** Deweloperzy mogą zapoznaj się z części projektu i zaktualizować je w środowisku izolowanym rozwoju. Za pomocą tego typu środowiska, możesz testować wprowadzane zmiany, bez wywierania wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian, możesz sprawdzić pliki do kontroli wersji, gdy inni członkowie zespołu mogą uzyskać zmiany i tworzyć i wdrażać je na serwer testowy. | - [Programowanie zorientowane na projekt bazy danych w trybie offline (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Debuger języka Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Tworzenie prototypów sprawdzanie wyników testów i modyfikowania skryptów bazy danych i obiektów:** Aby wykonać dowolne spośród tych wspólnych zadań, można użyć edytora języka Transact-SQL. | - [Edytory zapytania i tekst (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Zobacz także
 

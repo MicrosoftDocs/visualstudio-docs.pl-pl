@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluationCompleteEvent2::GetExpression | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluationCompleteEvent2::GetExpression
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be83e7ce4e5b3620ffdd24cc0b504d93d4a376a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7dd0be9c8b8237a9d8ab2466dfd7f60b31acabe5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950871"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 Pobiera oryginalne wyrażenie.  
@@ -28,13 +25,13 @@ Pobiera oryginalne wyrażenie.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetExpression(   
+HRESULT GetExpression(   
    IDebugExpression2** ppExpr  
 );  
 ```  
   
 ```csharp  
-int GetExpression(   
+int GetExpression(   
    out IDebugExpression2 ppExpr  
 );  
 ```  

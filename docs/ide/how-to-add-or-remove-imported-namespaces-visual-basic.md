@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)'
+title: 'Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
@@ -16,67 +15,67 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df39b7867cd4c7baa2206b2c63634810b2f29dde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42beee330bcd8ab6003bd44277b77063937cf2d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955188"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Porady: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
 
-Importowanie przestrzeni nazw umożliwia przy użyciu elementów z tej przestrzeni nazw w kodzie bez pełni kwalifikujących się elementu. Na przykład, jeśli chcesz, aby uzyskać dostęp do `Create` metody w `System.Messaging.MessageQueue` klasy, można zaimportować `System.Messaging` przestrzeni nazw i po prostu odwoływać się do elementu, należy w kodzie jako `MessageQueue.Create`.
+Importowanie przestrzeni nazw pozwala na używanie elementów z tej przestrzeni nazw w kodzie bez w pełni kwalifikowanie elementu. Na przykład, jeśli chcesz uzyskać dostęp do `Create` method in Class metoda `System.Messaging.MessageQueue` klasy, można zaimportować `System.Messaging` przestrzeni nazw i po prostu odwoływać się do elementu, należy w kodzie jako `MessageQueue.Create`.
 
- Importowane przestrzenie nazw są zarządzane na **odwołania** strony **projektanta projektu**. Importy określić w tym oknie dialogowym są przekazywane bezpośrednio do kompilatora (*/importuje*) i dotyczą wszystkich plików w projekcie. Użyj `Imports` instrukcję, aby korzystać z obszaru nazw w pliku kodu jednego źródła.
+ Importowane przestrzenie nazw są zarządzane na **odwołania** strony **projektanta projektu**. Polecenie importuje określisz w tym oknie dialogowym są przekazywane bezpośrednio do kompilatora (*/importuje*) i Zastosuj do wszystkich plików w projekcie. Użyj `Imports` instrukcję, aby użyć przestrzeni nazw w pliku kodu jednego źródła.
 
-### <a name="to-add-an-imported-namespace"></a>Aby dodać zaimportowaną przestrzenią nazw
+### <a name="to-add-an-imported-namespace"></a>Aby dodać importowanych przestrzeni nazw
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzła projektu.
+1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzeł dla projektu.
 
 2.  W **projektanta projektu**, kliknij przycisk **odwołania** kartę.
 
-3.  W **importowane przestrzenie nazw** listy, zaznacz pole wyboru dla przestrzeni nazw, które chcesz dodać.
+3.  W **zaimportowane przestrzenie nazw** listy, zaznacz pole wyboru dla przestrzeni nazw, który chcesz dodać.
 
     > [!NOTE]
-    >  Aby można było zaimportować, przestrzeni nazw musi być w składnika. Przestrzeń nazw nie ma na liście, należy dodać odwołanie do składnika, który go zawiera. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md).
+    >  W celu zaimportowania, przestrzeń nazw musi być w składnika. Przestrzeń nazw nie ma na liście, należy dodać odwołanie do składnika, który go zawiera. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md).
 
-### <a name="to-remove-an-imported-namespace"></a>Aby usunąć zaimportowaną przestrzenią nazw
+### <a name="to-remove-an-imported-namespace"></a>Aby usunąć importowanych przestrzeni nazw
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzła projektu.
+1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzeł dla projektu.
 
 2.  W **projektanta projektu**, kliknij przycisk **odwołania** kartę.
 
-3.  W **importowane przestrzenie nazw** listy, wyczyść pole wyboru dla przestrzeni nazw, który chcesz usunąć.
+3.  W **zaimportowane przestrzenie nazw** listy, usuń zaznaczenie pola wyboru dla przestrzeni nazw, który chcesz usunąć.
 
 ## <a name="user-imports"></a>Importy użytkownika
- Importy użytkownika można importować określonej klasy w przestrzeni nazw, a nie cały obszar nazw. Na przykład aplikacja może być importu dla <xref:System.Diagnostics> przestrzeni nazw, ale tylko klasy w tej przestrzeni nazw, która planuje się `Debug` klasy. Można zdefiniować <xref:System.Diagnostics.Debug> jako użytkownik zaimportować, a następnie usuń importu dla <xref:System.Diagnostics>.
+ Importy użytkownika umożliwiają importowanie określonej klasy w przestrzeni nazw, a nie cały obszar nazw. Na przykład aplikacja może mieć import dla <xref:System.Diagnostics> przestrzeni nazw, ale to jedyna klasa w obrębie tej przestrzeni nazw, który Cię interesuje `Debug` klasy. Można zdefiniować <xref:System.Diagnostics.Debug> jako użytkownik zaimportować, a następnie usuń import dla <xref:System.Diagnostics>.
 
- Jeśli później zmienić należy uwzględnić i zdecydować, że jego naprawdę `EventLog` klasy, która jest potrzebna, można wprowadzić <xref:System.Diagnostics.EventLog> jako użytkownik Importuj i Zastąp <xref:System.Diagnostics.Debug> przy użyciu funkcji aktualizacji.
+ Jeśli później zmienić należy pamiętać i zdecyduj, który był naprawdę `EventLog` klasy potrzebne, można wprowadzić <xref:System.Diagnostics.EventLog> jako użytkownik zaimportować, a następnie zastąpić <xref:System.Diagnostics.Debug> przy użyciu funkcji aktualizacji.
 
-### <a name="to-add-a-user-import"></a>Aby dodać importu użytkownika
+### <a name="to-add-a-user-import"></a>Można dodać importu użytkowników
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzła projektu.
+1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzeł dla projektu.
 
 2.  W **projektanta projektu**, kliknij przycisk **odwołania** kartę.
 
-3.  W polu tekstowym poniżej **importowane przestrzenie nazw** listy, wpisz pełną nazwę przestrzeni nazw, które chcesz zaimportować, włącznie z przestrzenią nazw głównych.
+3.  W poniższym polu tekstowym **zaimportowane przestrzenie nazw** listy, należy wprowadzić pełną nazwę przestrzeni nazw, które chcesz zaimportować, włącznie z przestrzenią nazw głównych.
 
-4.  Kliknij przycisk **dodać importu użytkownika** przycisk, aby dodać obszar nazw jako **importowane przestrzenie nazw** listy.
+4.  Kliknij przycisk **dodać import użytkownika** przycisk, aby dodać przestrzeń nazw w celu **zaimportowane przestrzenie nazw** listy.
 
     > [!NOTE]
-    > **Dodać importu użytkownika** przycisk zostanie wyłączona, jeśli przestrzeń nazw pasujący już na liście; nie można dodać importu dwa razy.
+    > **Dodać import użytkownika** przycisk będzie wyłączony, jeśli przestrzeń nazw pasuje do już na liście; nie można dodać importu, dwa razy.
 
-### <a name="to-update-a-user-import"></a>Aby zaktualizować importu użytkownika
+### <a name="to-update-a-user-import"></a>Aby zaktualizować importu użytkowników
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzła projektu.
+1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** węzeł dla projektu.
 
 2.  W **projektanta projektu**, kliknij przycisk **odwołania** kartę.
 
-3.  W **importowane przestrzenie nazw** listy, wybierz obszar nazw, które chcesz zmienić.
+3.  W **zaimportowane przestrzenie nazw** listy, wybierz przestrzeń nazw, którą chcesz zmienić.
 
-4.  W polu tekstowym poniżej **importowane przestrzenie nazw** listy, wprowadź nazwę dla nowej przestrzeni nazw.
+4.  W poniższym polu tekstowym **zaimportowane przestrzenie nazw** listy, wprowadź nazwę dla nowej przestrzeni nazw.
 
-5.  Kliknij przycisk **zaktualizować importu użytkownika** przycisk, aby zaktualizować obszar nazw w **importowane przestrzenie nazw** listy.
+5.  Kliknij przycisk **aktualizacji importu użytkownika** przycisk, aby zaktualizować przestrzeni nazw w **zaimportowane przestrzenie nazw** listy.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,12 +1,11 @@
 ---
-title: 'Porady: tworzenie i uruchamianie instalacji nienadzorowanej | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Utworzyć i uruchomić nienadzorowaną instalację | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,14 +16,14 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951933"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Porady: tworzenie i uruchamianie nienadzorowanej instalacji programu Visual Studio
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Instrukcje: Utworzyć i uruchomić nienadzorowaną instalację programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jako nienadzorowaną (dyskretna) instalacji za pośrednictwem intranetu, zamiast z nośnika, takiego jak DVD. W tym temacie opisano sposób przygotowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dla tego typu instalacji z udziału sieciowego.
@@ -119,7 +118,7 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
 
 2. Otwórz **Start** menu, a następnie wybierz **Uruchom**.
 
-3. Wprowadź następujący tekst: \\ \\ *ServerName*\IDEinstall\vs_*produktu*.exe parametrem/adminfile PathToAdmindeployment.xml pliku
+3. Wprowadź następujący tekst: \\\\*ServerName*\IDEinstall\vs_*produktu*pliku PathToAdmindeployment.xml parametrem/adminfile .exe
 
     AdditionalParametersAsNeeded
 
@@ -178,7 +177,7 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
 
 2.  Wprowadź klucz produktu.
 
-     (Aby uzyskać więcej informacji, zobacz [jak: Znajdź Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) i [porady: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) tematy.)
+     (Aby uzyskać więcej informacji, zobacz [jak: Znajdź klucz produktu programu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) i [jak: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) tematy.)
 
 ## <a name="see-also"></a>Zobacz też
  [Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)

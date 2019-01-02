@@ -1,9 +1,6 @@
 ---
-title: 'Porady: wyczyścić stosu cofania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyczyścić stosu cofania | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - clear undo stack
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a1575093ee78fec887c9fbedcfc29339f86f2e7
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 14cf2af71f492dc4a82f6d8d9cf05fadcb0dcda2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827550"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Porady: wyczyścić stosu cofania
+# <a name="how-to-clear-the-undo-stack"></a>Instrukcje: Wyczyścić stosu cofania
 Następujące Poniższa procedura wyjaśnia, jak wyczyścić stosu cofania.  
   
 ## <a name="to-clear-the-undo-stack"></a>Aby wyczyścić stosu cofania  
@@ -46,4 +43,4 @@ Następujące Poniższa procedura wyjaśnia, jak wyczyścić stosu cofania.
     ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Implementowanie cofania zarządzania](../extensibility/how-to-implement-undo-management.md)
+ [Instrukcje: Implementowanie cofania zarządzania](../extensibility/how-to-implement-undo-management.md)

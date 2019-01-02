@@ -1,9 +1,6 @@
 ---
 title: IDebugClassField::GetDefaultIndexer | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugClassField::GetDefaultIndexer
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75bb1bc0adb63a3c606b03cafc0b8a8c92d956df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350758d4f17f033c31b43bacab0f57f47c25e9ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954075"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Pobiera nazwę indeksatora domyślne.  
@@ -28,7 +25,7 @@ Pobiera nazwę indeksatora domyślne.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetDefaultIndexer(   
+HRESULT GetDefaultIndexer(   
    BSTR* pbstrIndexer  
 );  
 ```  

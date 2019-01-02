@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948397"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 
@@ -50,7 +49,7 @@ Użyj diagramu, zależności, które ułatwiają wykonywanie następujących zad
 
 -   Wzmocnienie planowaną architekturę podczas tworzenia i konserwacji kodu, umieszczając Weryfikacja przy użyciu zaewidencjonowania i operacji kompilacji.
 
-W tym temacie opisano elementy, które można używać na diagram zależności. Aby uzyskać szczegółowe informacje o sposobie tworzenia i Rysowanie diagramów zależności, zobacz [diagramy zależności: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).
+W tym temacie opisano elementy, które można używać na diagram zależności. Aby uzyskać szczegółowe informacje o sposobie tworzenia i Rysowanie diagramów zależności, zobacz [diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Odczytywanie diagramów zależności
 
@@ -78,7 +77,7 @@ Możesz połączyć każdą warstwę artefakty w rozwiązaniu, takich jak projek
 
 Aby uzyskać więcej informacji na temat łączenia warstwami i artefaktami zobacz:
 
--   [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)
+-   [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)
 
 -   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +94,7 @@ Na diagramie zależności, otwórz menu skrótów dla jednej lub kilku warstw, a
 |-|-|
 |**Kategorie**|Rodzaj artefaktu, takie jak klasy, przestrzeni nazw, plik źródłowy i tak dalej|
 |**Warstwa**|Warstwy, który stanowi łącze do artefaktu|
-|**Obsługuje walidację**|Jeśli **True**, a następnie proces sprawdzania poprawności warstwy można sprawdzić, czy projekt jest zgodny ze zależności do lub z tego elementu.<br /><br /> Jeśli **False**, a następnie łącze nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy zależności: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md).|
+|**Obsługuje walidację**|Jeśli **True**, a następnie proces sprawdzania poprawności warstwy można sprawdzić, czy projekt jest zgodny ze zależności do lub z tego elementu.<br /><br /> Jeśli **False**, a następnie łącze nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md).|
 |**Identyfikator**|Odwołanie do połączonych artefaktów|
 
 ## <a name="see-also"></a>Zobacz także

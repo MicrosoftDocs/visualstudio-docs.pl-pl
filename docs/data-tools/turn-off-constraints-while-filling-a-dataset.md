@@ -19,39 +19,38 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: aaf566c211cd79657b67a5af72d53c718cd2507a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951462"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Wyłączanie ograniczeń podczas zapełniania zestawu danych
 
-Jeśli zestaw danych zawiera ograniczenia (np. ograniczenia foreign key), ich Zgłoś błędy związane z kolejnością operacje wykonywane względem zestawu danych. Na przykład ładowanie podrzędnych rekordów przed załadowaniem związane z rekordów nadrzędnych można narusza ograniczenie i spowodować wystąpienie błędu. Natychmiast po załadowaniu podrzędnego rekordu ograniczenie sprawdza rekord nadrzędny pokrewne i zgłasza błąd.
+Jeśli zestaw danych zawiera ograniczenia (np. ograniczenia foreign key), mogą zgłaszać błędy związane z kolejnością operacje, które są wykonywane względem zestawu danych. Na przykład podczas ładowania rekordów podrzędnych przed załadowaniem związane z rekordów nadrzędnych można narusza ograniczenie i powodują wystąpienie błędu. Zaraz po załadowaniu podrzędnego rekordu ograniczenie sprawdza, czy rekord nadrzędny powiązane i zgłasza błąd.
 
-Jeśli nie było mechanizm umożliwia tymczasowe ograniczenie zawieszenie, błąd będzie uruchamiany za każdym razem, gdy próba załadowania rekordu do tabeli podrzędnej. Innym sposobem Wstrzymaj wszystkie ograniczenia zestawu danych jest z <xref:System.Data.DataRow.BeginEdit%2A>, i <xref:System.Data.DataRow.EndEdit%2A> właściwości.
+Gdyby żaden mechanizm umożliwia zawieszenia tymczasowe ograniczenie błędu będzie uruchamiany za każdym razem, gdy próba załadowania rekordu do tabeli podrzędnej. Innym sposobem, aby wstrzymać wszystkie ograniczenia w zestawie danych jest <xref:System.Data.DataRow.BeginEdit%2A>, i <xref:System.Data.DataRow.EndEdit%2A> właściwości.
 
 > [!NOTE]
-> Zdarzenia walidacji (na przykład <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging>) nie zostanie wygenerowany, gdy ograniczenia są wyłączone.
+> Zdarzenia walidacji (na przykład <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging>) nie zostaną wywołane, gdy ograniczenia są wyłączone.
 
-## <a name="to-suspend-update-constraints-programmatically"></a>Aby wstrzymać programowo ograniczenia aktualizacji
+## <a name="to-suspend-update-constraints-programmatically"></a>Aby programowo zawiesić Aktualizuj ograniczenia
 
--   Poniższy przykład przedstawia sposób tymczasowo wyłączyć sprawdzanie w zestawie danych ograniczeń:
+-   Poniższy przykład pokazuje, jak tymczasowo wyłączyć sprawdzanie w zestawie danych ograniczeń:
 
      [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
      [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]
 
-## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Aby wstrzymać ograniczenia aktualizacji za pomocą Projektanta obiektów Dataset
+## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Zawieszenie ograniczenia aktualizacji za pomocą Projektanta obiektów Dataset
 
-1.  Otwórz zestaw danych w **Projektant obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  W **właściwości** ustaw <xref:System.Data.DataSet.EnforceConstraints%2A> właściwości `false`.
+2.  W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataSet.EnforceConstraints%2A> na `false`. 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wypełnianie zbiorów danych przy użyciu TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Relacje w zestawach danych](../data-tools/relationships-in-datasets.md)

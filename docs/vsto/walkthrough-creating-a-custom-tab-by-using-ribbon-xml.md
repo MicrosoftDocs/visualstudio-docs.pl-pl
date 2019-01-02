@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955230"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki
   W tym instruktażu pokazano, jak utworzyć niestandardową kartę Wstążki przy użyciu **wstążki (XML)** elementu.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808927"
   
 1.  Tworzenie **dodatku programu Word** projekt o nazwie **MyRibbonAddIn**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** plik kodu i dodaje **MyRibbonAddIn** projekt **Eksploratora rozwiązań**.  
   
@@ -155,11 +152,9 @@ ms.locfileid: "38808927"
   
 -   Utwórz okienka akcji niestandardowych. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).  
   
--   Dostosowywanie interfejsu użytkownika programu Microsoft Office Outlook przy użyciu regionach formularzy programu Outlook. Aby uzyskać więcej informacji, zobacz [wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Dostosowywanie interfejsu użytkownika programu Microsoft Office Outlook przy użyciu regionach formularzy programu Outlook. Aby uzyskać więcej informacji, zobacz [instruktażu: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wstążka — omówienie](../vsto/ribbon-overview.md)   
  [XML — Wstążka](../vsto/ribbon-xml.md)   
  [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

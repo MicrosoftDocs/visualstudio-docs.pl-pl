@@ -2,7 +2,6 @@
 title: Strona usług, Projektant projektu
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952384"
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 
@@ -31,7 +30,7 @@ Aby uzyskać dostęp do **usług** wybierz węzeł projektu w **Eksploratora roz
 
 ## <a name="task-list"></a>Lista zadań
 
-[Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Instrukcje: Konfigurowanie usług aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
@@ -53,13 +52,13 @@ Aby uzyskać dostęp do **usług** wybierz węzeł projektu w **Eksploratora roz
 
  **Korzystanie z uwierzytelniania formularzy**
 
- Wskazuje, że dostawca uwierzytelniania będzie używać uwierzytelniania formularzy. Oznacza to, że aplikacji należy podać interfejsu użytkownika dla nazwy logowania. Aby uzyskać więcej informacji, zobacz [porady: Implementowanie logowania użytkownika przy użyciu usług aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+ Wskazuje, że dostawca uwierzytelniania będzie używać uwierzytelniania formularzy. Oznacza to, że aplikacji należy podać interfejsu użytkownika dla nazwy logowania. Aby uzyskać więcej informacji, zobacz [jak: Implementowanie logowania użytkownika przy użyciu usług aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Lokalizacja usługi uwierzytelniania**
 
  Używany tylko z uwierzytelniania formularzy. Określa lokalizację usługi uwierzytelniania.
 
- **Opcjonalne: Dostawca poświadczeń**
+ **Opcjonalnie: Dostawca poświadczeń**
 
  Używany tylko z uwierzytelniania formularzy. Wskazuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementacji, które będzie używane przez usługę uwierzytelniania, aby wyświetlić okno dialogowe logowania, gdy Twoja aplikacja wywołuje `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody i przekazuje puste ciągi lub `null` dla parametrów. Jeśli to pole pozostanie puste, należy podać prawidłową nazwę użytkownika i hasło, aby <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Dostawca poświadczeń należy określić nazwę typu kwalifikowanego zestawu. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazw zestawów](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwę typu kwalifikowanego zestawu wyglądają podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`
 
@@ -79,6 +78,6 @@ Aby uzyskać dostęp do **usług** wybierz węzeł projektu w **Eksploratora roz
 
 - [Usługi aplikacji klienckich](/dotnet/framework/common-client-technologies/client-application-services)
 - [Zaawansowane ustawienia dla usług, okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Instrukcje: Konfigurowanie usług aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)

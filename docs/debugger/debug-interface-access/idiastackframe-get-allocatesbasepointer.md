@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame::get_allocatesBasePointer | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a746cc5ceeba8df4a023e10c09ecfe511be557b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 223c8ded44770cc84ed61d35819cd840bca1248b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951514"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 Pobiera flagę wskazującą, czy podstawowy wskaźnik jest przydzielany dla kodu w tym zakresie adresów.  
@@ -27,7 +25,7 @@ Pobiera flagę wskazującą, czy podstawowy wskaźnik jest przydzielany dla kodu
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_allocatesBasePointer (   
+HRESULT get_allocatesBasePointer (   
    BOOL* pRetVal  
 );  
 ```  

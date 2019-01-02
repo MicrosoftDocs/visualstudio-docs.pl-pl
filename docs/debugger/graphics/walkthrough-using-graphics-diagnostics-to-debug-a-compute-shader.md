@@ -1,8 +1,6 @@
 ---
-title: 'Przewodnik: Używanie diagnostyki grafiki do debugowania cieniowania obliczenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Używanie Graphics Diagnostics do debugowania cieniowania obliczenia | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c92a8b24dd3d932eedfcb122b4da9294dd3418
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9644e4b9f9d0a193c0d8088aa9e237d84f276aa1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823318"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Wskazówki: używanie diagnostyki grafiki do debugowania cieniowania obliczenia
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Przewodnik: Używanie Graphics Diagnostics do debugowania cieniowania obliczenia
 W tym instruktażu przedstawiono sposób korzystania z narzędzi Visual Studio diagnostyki grafiki do zbadania cieniowania obliczenia, które generuje nieprawidłowe wyniki.  
   
  Ten instruktaż ilustruje następujące zadania:  
@@ -90,7 +88,7 @@ W tym instruktażu przedstawiono sposób korzystania z narzędzi Visual Studio d
   
     ![Debugowanie cieniowania obliczenia IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Aby zatrzymać debugowanie cieniowania obliczenia na **debugowania** narzędzi, wybierz **Zatrzymaj debugowanie** (klawiatura: Shift + F5).  
+4. Aby zatrzymać debugowanie cieniowania obliczenia na **debugowania** narzędzi, wybierz **Zatrzymaj debugowanie** (klawiatury: SHIFT + F5).  
   
 5. Następnie wybierz drugą `Dispatch` zdarzeń i rozpoczęcia debugowania cieniowania obliczenia, podobnie jak w poprzednim kroku.  
   

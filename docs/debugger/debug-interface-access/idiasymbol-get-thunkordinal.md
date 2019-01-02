@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_thunkordinal — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e3893d7c74d92caa708606c336eb2775c538f1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b13669c7a93141f3b54c15a20a5faee43d5a8747
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953212"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 Pobiera typ thunk funkcji.  
@@ -27,7 +25,7 @@ Pobiera typ thunk funkcji.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_thunkOrdinal (   
+HRESULT get_thunkOrdinal (   
    DWORD* pRetVal  
 );  
 ```  

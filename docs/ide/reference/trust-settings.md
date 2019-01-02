@@ -6,7 +6,6 @@ ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +14,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 17b204a54e2ecd52438f6a05f5190a6ee0f396f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955610"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Konfigurowanie ustawień zaufania dla plików i folderów
 
@@ -37,9 +36,9 @@ Aby zmienić ustawienia zaufania, wykonaj następujące kroki:
 
 2. Wybierz poziom kontroli, które Twoim zdaniem dla plików i folderów. Może mieć różnych kontroli dla każdego z nich. Dostępne są następujące opcje:
 
-   * **Nie weryfikacji**: Visual Studio nie wykonuje żadnych testów.
+   * **Nie weryfikacji**: Program Visual Studio nie wykonuje żadnych testów.
 
-   * **Sprawdź znacznik atrybutu web**: Jeśli plik lub folder zaznaczone jest pole atrybutu sieci web, programu Visual Studio, blokuje i poprosi o podanie uprawnień do otwarcia.
+   * **Sprawdź znacznik atrybutu web**: Jeśli plik lub folder zaznaczone jest pole atrybutu sieci web, programu Visual Studio blokuje i poprosi o podanie uprawnień do otwarcia.
 
    * **Sprawdź ścieżkę jest zaufany**: Jeśli ścieżka pliku lub folderu nie jest częścią **zaufanych ścieżek** listy blokuje programu Visual Studio i poprosi o podanie uprawnień do otwarcia.
 

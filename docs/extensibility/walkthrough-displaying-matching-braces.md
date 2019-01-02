@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Wyświetlanie, dopasowywanie nawiasów klamrowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956586"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Przewodnik: Wyświetlanie parowanych nawiasów klamrowych
 Implementuje funkcje opartych na języku, np. parowanie nawiasów klamrowych, definiując nawiasy klamrowe, które chcesz dopasować i dodaniu tekstu znacznika do parowanych nawiasów klamrowych po karetce na jednym z nawiasami klamrowymi. Można zdefiniować nawiasy klamrowe w kontekście języka, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości i zastosować znaczniki do dokładnie, wpisz lub zastosować znaczniki do istniejącego typu zawartości (na przykład "text"). Następujące instruktaż przedstawia sposób zastosowania parowanie nawiasów klamrowych tagów, aby typ zawartości "text".  
@@ -126,4 +123,4 @@ Implementuje funkcje opartych na języku, np. parowanie nawiasów klamrowych, de
 4.  Po umieszczeniu karetki przed otwierający nawias klamrowy, powinien być wyróżniony tego nawiasów i zamknij nawiasów. Gdy umieścisz kursor zaraz po Zamknij nawias klamrowy, powinien być wyróżniony tego nawiasów i otwierający nawias klamrowy dopasowania.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wskazówki: Łączenie typu zawartości na rozszerzenie nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

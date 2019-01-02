@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane zapisywanie skoroszytów'
-ms.custom: ''
+title: 'Instrukcje: Programowe zapisywanie skoroszytów'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fc715518f31031c65667a2480d7e14111105202
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829174"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Porady: programowane zapisywanie skoroszytów
+# <a name="how-to-programmatically-save-workbooks"></a>Instrukcje: Programowe zapisywanie skoroszytów
   Istnieje kilka sposobów, aby zapisać skoroszyt. Skoroszyt programu bez wprowadzania zmian w ścieżce. Jeśli skoroszyt nie zostały zapisane, zanim należy zapisać skoroszyt, określając ścieżkę. Bez jawnej ścieżki program Microsoft Office Excel zapisuje plik w bieżącym folderze o nazwie, które podano podczas jej tworzenia. Można również zapisać kopię skoroszytu bez modyfikowania Otwórz skoroszyt w pamięci.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -88,9 +85,7 @@ ms.locfileid: "35677164"
 ## <a name="see-also"></a>Zobacz także  
  [Praca ze skoroszytami](../vsto/working-with-workbooks.md)   
  [Element hosta skoroszytu](../vsto/workbook-host-item.md)   
- [Porady: programowane zamykanie skoroszytów](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Instrukcje: Programowe zamykanie skoroszytów](../vsto/how-to-programmatically-close-workbooks.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

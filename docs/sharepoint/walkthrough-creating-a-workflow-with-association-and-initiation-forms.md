@@ -1,13 +1,8 @@
-﻿---
-title: 'Wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+---
+title: 'Przewodnik: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824739"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Przewodnik: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
   W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje korzystanie z formularzy skojarzenia i inicjacji. Są to formularze ASPX umożliwiające dodanie parametrów do przepływu pracy, gdy jest on pierwszy raz skojarzony przez administratora programu SharePoint (formularz skojarzenia) i po uruchomieniu przepływu pracy przez użytkownika (formularz inicjowania).  
   
  Ten przewodnik przedstawia scenariusz, w którym użytkownik chce utworzyć przepływ pracy zatwierdzania w raportach wydatków i ma następujące wymagania:  
@@ -452,5 +447,4 @@ ms.locfileid: "49873880"
   
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [Wskazówki: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  
+ [Przewodnik: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  

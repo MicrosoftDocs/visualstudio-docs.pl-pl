@@ -1,8 +1,7 @@
 ---
-title: 'CA1704: Identyfikatory powinny być napisane poprawnie'
+title: 'CA1704: Identyfikatory powinny być zapisane poprawnie'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1704
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 710e18f4ce8199c76c34683c510d3a64160544e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c39f744556968ff279b3e3e7e9eb923ec069ebc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954412"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Identyfikatory powinny być napisane poprawnie
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Identyfikatory powinny być zapisane poprawnie
 
 |||
 |-|-|
@@ -34,25 +33,25 @@ ms.locfileid: "31916910"
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwa identyfikatora zawiera co najmniej jeden słowa, które nie są rozpoznawane przez moduł sprawdzania pisowni biblioteki. Ta zasada nie Sprawdź konstruktorów lub o nazwie specjalne elementów członkowskich, takich jak get i ustawić metod dostępu do właściwości.
+Nazwa identyfikatora zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni Microsoft. Ta zasada nie Sprawdź konstruktorów lub członków o nazwie specjalne, takie jak pobieranie i ustaw metod dostępu do właściwości.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta zasada analizuje identyfikator w tokenach oraz sprawdzając pisownię każdego tokenu. Algorytm analizy wykonuje następujące przekształcenia:
+Ta reguła analizuje identyfikator na tokeny oraz sprawdzając pisownię każdego tokenu. Algorytm analizy wykonuje następujące przekształcenia:
 
 - Wielkie litery uruchomić nowy token. Na przykład MyNameIsJoe tokenizes "Mój", "Name", "Is", "Jan".
 
-- W przypadku wielu wielkich liter ostatni wielką literę uruchamia nowy token. Na przykład GUIEditor tokenizes do "Graficznym interfejsem użytkownika", "Edytor".
+- Wiele wielkich liter ostatni wielką literą rozpoczyna się nowy token. Na przykład GUIEditor tokenizes do "Graficznym interfejsem użytkownika", "Editor".
 
-- Początkowe i końcowe apostrofów zostaną usunięte. Na przykład "sender" tokenizes do "sender".
+- Początkowe i końcowe apostrofy są usuwane. Na przykład "nadawca" tokenizes do "sender".
 
-- Znaki podkreślenia oznaczającego koniec token i są usuwane. Na przykład Hello_world tokenizes na tekst "Hello", "world".
+- Podkreślenia oznaczającego koniec token i są usuwane. Na przykład Hello_world tokenizes do "Hello", "world".
 
-- Osadzony takie znaki zostaną usunięte. Na przykład dla & mat tokenizes do "format".
+- Takie osadzone znaki zostaną usunięte. Na przykład w przypadku & mat tokenizes do "format".
 
 ## <a name="language"></a>Język
 
-Moduł sprawdzania pisowni obecnie sprawdza tylko względem słowniki kulturę opartą na języku angielskim. Kultura projektu w pliku projektu można zmienić, dodając **CodeAnalysisCulture** elementu.
+Moduł sprawdzania pisowni sprawdza obecnie wyłącznie w odniesieniu do słowników kulturę opartą na język angielski. Możesz zmienić kulturę projektu w pliku projektu, dodając **CodeAnalysisCulture** elementu.
 
 Na przykład:
 
@@ -63,25 +62,25 @@ Na przykład:
 ```
 
 > [!IMPORTANT]
-> Jeśli ustawisz kultury na inny niż kulturę opartą na język angielski, to reguł analizy kodu dyskretnie jest wyłączona.
+> Jeśli ustawisz kultury na coś innego niż kulturę opartą na język angielski, ten reguł analizy kodu dyskretnie jest wyłączone.
 
-## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby rozwiązać naruszenie tej reguły, Popraw pisownię wyrazu, lub Dodaj ten wyraz do słownika niestandardowego.
+Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu, lub Dodaj ten wyraz do słownika niestandardowego.
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>Aby dodać wyrazy do słownika niestandardowego
 
-Nazwa pliku XML słownika *CustomDictionary.xml*. Umieść słownik w katalogu instalacji narzędzia katalogu projektu lub w katalogu, który jest skojarzony z narzędzia w profilu użytkownika (*%USERPROFILE%\Application danych\\...* ). Aby dowiedzieć się, jak dodać słownika niestandardowego do projektu programu Visual Studio, zobacz [porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Nazwa pliku niestandardowego słownika XML *CustomDictionary.xml*. Umieść słowniku, w katalogu instalacji narzędzia do katalogu projektu lub katalogu, który jest skojarzony z narzędzia w ramach profilu użytkownika (*%USERPROFILE%\Application danych\\...* ). Aby dowiedzieć się, jak dodać słownika niestandardowego do projektu programu Visual Studio, zobacz [jak: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
-- Dodaj wyrazy, które nie powinno powodować naruszenie ścieżce Recognized-słownika/słów.
+- Dodaj wyrazy, które nie powinny powodować naruszenie w ścieżce słów/słownik/Recognized.
 
-- Dodaj wyrazy, które powinno spowodować naruszenie ścieżce nierozpoznany-słownika/słów.
+- Dodawanie wyrazów, która powinna powodować naruszenie w ścieżce słów/słownik/nierozpoznane.
 
-- Dodaj wyrazy, które powinny być oznaczone jako przestarzałe w ścieżce słownika/słowa/przestarzały. Zobacz temat powiązane reguły [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md) Aby uzyskać więcej informacji.
+- Dodaj wyrazy, które powinny zostać oznaczone jako przestarzałe w ścieżce słów/słownik/przestarzały. Zobacz temat powiązane reguły [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md) Aby uzyskać więcej informacji.
 
-- Dodawanie wyjątków z regułami wielkości liter akronim do słownika/akronimów/CasingExceptions ścieżki.
+- Dodać wyjątki do reguł stosowania wielkości liter akronim ścieżkę akronimów/słownik/CasingExceptions.
 
-Poniżej przedstawiono przykład struktury pliku słownika:
+Oto przykład struktury pliku słownika niestandardowego:
 
 ```xml
 <Dictionary>
@@ -106,16 +105,16 @@ Poniżej przedstawiono przykład struktury pliku słownika:
 </Dictionary>
 ```
 
-## <a name="when-to-suppress-warnings"></a>Kiedy pomijanie ostrzeżeń
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Pomiń ostrzeżenie od tej zasady tylko wtedy, gdy jest celowe błędne słowo i wyraz dotyczy ograniczony zestaw biblioteki. Poprawnie zapisanych wyrazów skrócić czas nauki wymaganego dla nowej biblioteki oprogramowania.
+Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy dane słowo jest celowo błędnie napisane słowa mają zastosowanie do ograniczonego zestawu biblioteki. Poprawnie właściwej słów skrócić czas nauki, które jest wymagane nowe biblioteki oprogramowania.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
 
 - [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 - [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 - [CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 - [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)
 

@@ -3,7 +3,6 @@ title: Debugowanie kodu zarządzanego | Dokumentacja firmy Microsoft
 description: Debugowanie języka C# lub Visual Basic przy użyciu debugera programu Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: d6b4f6fecabe7947e59a235dbb71e9f5e0803b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955480"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie za pomocą C# lub Visual Basic, za pomocą debugera programu Visual Studio
 

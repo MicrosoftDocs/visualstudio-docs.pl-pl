@@ -2,7 +2,6 @@
 title: 'Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db6bcf1d44be4a904b38877717aff589906995a7
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952644"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Instrukcje: Zmiana między notacją składowych i notacją skojarzeń w Projektancie klas
 

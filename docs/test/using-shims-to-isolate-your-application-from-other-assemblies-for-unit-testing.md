@@ -2,19 +2,18 @@
 title: Stosowanie podkładek do izolowania aplikacji testów jednostkowych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 908a31a50b1af99f7123f292f250f9262a7da62e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947338"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 
@@ -32,7 +31,7 @@ Aby uzyskać omówienie i szybki start wskazówki, zobacz [izolowanie testowaneg
 > [!NOTE]
 > Projekty .NET standard nie są obsługiwane.
 
-## <a name="example-the-y2k-bug"></a>Przykład: Y2K usterki
+## <a name="example-the-y2k-bug"></a>Przykład: Błąd Y2K
 
 Rozważmy metodę, która zgłosiła wyjątek na 1 stycznia 2000:
 
@@ -511,5 +510,5 @@ Nie można użyć podkładki dla wszystkich typów z biblioteki klas podstawowyc
 ## <a name="see-also"></a>Zobacz także
 
 - [Izolowanie testowanego kodu za pomocą Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost blog: podkładek programu Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Wideo (1 godz. 16): testowanie untestable kodu za pomocą elementów sztucznych w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Peter Provost blog: Program Visual Studio 2012 podkładek](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Wideo (1 godz. 16): Testowanie untestable kodu za pomocą elementów sztucznych w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

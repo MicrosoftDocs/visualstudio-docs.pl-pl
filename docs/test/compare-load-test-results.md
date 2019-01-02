@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 52c5ff41a8c1085e39009c240e3416a60a081101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951108"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów
 
@@ -43,8 +42,8 @@ Ponadto plik arkusza kalkulacyjnego mogą być udostępniane zainteresowane stro
 
 |Zadania|Skojarzone tematy|
 |-|-|
-|**Tworzenie raportu wydajności i obciążenia:** można tworzyć raporty na testy wydajności sieci web i obciążenia, przy użyciu programu Microsoft Excel.|- [Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Ręczne tworzenie raportu wydajności i obciążenia za pomocą programu Microsoft Word:** można tworzyć raporty na testy wydajności sieci web i obciążenia ręcznie kopiując i wklejając podsumowanie, tabeli i dane wykresu do dokumentu programu Microsoft Word.|- [Porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Tworzenie raportu wydajności i obciążenia:** Można tworzyć raporty na testy wydajności sieci web i obciążenia, przy użyciu programu Microsoft Excel.|- [Jak: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Ręczne tworzenie raportu wydajności i obciążenia za pomocą programu Microsoft Word:** Możesz tworzyć raporty na testy wydajności sieci web i obciążenia ręcznie przez kopiowanie i wklejanie podsumowanie, tabeli i dane wykresu do dokumentu programu Microsoft Word.|- [Jak: Ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

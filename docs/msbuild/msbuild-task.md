@@ -1,8 +1,6 @@
 ---
 title: Zadanie MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4d7a296902695007541e4c21c661f659fbbaab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3f6ab2b5656d70c455f9ea67fe13d463ddcb85c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861608"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831248"
 ---
 # <a name="msbuild-task"></a>zadanie MSBuild
 Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów z innego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
@@ -45,8 +43,8 @@ Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 | `SkipNonexistentProjects` | Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, pliki projektu, które nie istnieją na dysku zostanie pominięte. W przeciwnym razie takich projektów spowoduje błąd. |
 | `StopOnFirstFailure` | Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, gdy jeden z projektów nie powiedzie się skompilować, zostaną skompilowane żadne projekty więcej. Obecnie nie jest to obsługiwane podczas kompilowania równolegle (z wielu procesorów). |
 | `TargetAndPropertyListSeparators` | Opcjonalnie `String[]` parametru.<br /><br /> Określa listę obiektów docelowych i właściwości jako `Project` metadanych elementu). Separatory będzie niezmieniony przed rozpoczęciem przetwarzania. np. % 3B (o zmienionym znaczeniu ";") będzie traktowane tak, jakby był to niezmieniony ";". |
-| `TargetOutputs` | Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zwraca wszystkie pliki projektu wyjścia skompilowanych elementów docelowych. Tylko dane wyjściowe z elementów docelowych, które zostały określone są zwracane, nie jakiekolwiek dane wyjściowe, które mogą występować na obiekty docelowe, które zależą od tych celów.<br /><br /> `TargetOutputs` Parametr zawiera również następujące metadane:<br /><br /> -   `MSBuildSourceProjectFile`[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Pliku projektu, który zawiera element docelowy ustawić dane wyjściowe.<br />-   `MSBuildSourceTargetName`: Element docelowy ustawić dane wyjściowe. **Uwaga:** Jeśli chcesz zidentyfikować dane wyjściowe z każdego pliku projektu lub docelowe oddzielnie, uruchom `MSBuild` zadań osobno dla każdego pliku projektu lub docelowego. Jeśli uruchamiasz `MSBuild` zadanie tylko raz, aby utworzyć wszystkie pliki projektu, dane wyjściowe wszystkie elementy docelowe są zbierane w tablicy. |
-| `Targets` | Opcjonalnie `String` parametru.<br /><br /> Określa cel lub cele do kompilacji w plikach projektu. Oddziel listę nazw docelowych za pomocą średnika. Jeśli nie określono żadnych elementów docelowych w `MSBuild` zadań, są tworzone w domyślnych elementów docelowych określone w plikach projektu. **Uwaga:** cele musi przypadać w plikach projektu. Jeśli tak się nie stanie, występuje błąd kompilacji. |
+| `TargetOutputs` | Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zwraca wszystkie pliki projektu wyjścia skompilowanych elementów docelowych. Tylko dane wyjściowe z elementów docelowych, które zostały określone są zwracane, nie jakiekolwiek dane wyjściowe, które mogą występować na obiekty docelowe, które zależą od tych celów.<br /><br /> `TargetOutputs` Parametr zawiera również następujące metadane:<br /><br /> -   `MSBuildSourceProjectFile`: [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Pliku projektu, który zawiera element docelowy ustawić dane wyjściowe.<br />-   `MSBuildSourceTargetName`: Obiekt docelowy ustawić dane wyjściowe. **Uwaga:**  Jeśli chcesz zidentyfikować dane wyjściowe z każdego pliku projektu lub docelowe oddzielnie, uruchom `MSBuild` zadań osobno dla każdego pliku projektu lub docelowego. Jeśli uruchamiasz `MSBuild` zadanie tylko raz, aby utworzyć wszystkie pliki projektu, dane wyjściowe wszystkie elementy docelowe są zbierane w tablicy. |
+| `Targets` | Opcjonalnie `String` parametru.<br /><br /> Określa cel lub cele do kompilacji w plikach projektu. Oddziel listę nazw docelowych za pomocą średnika. Jeśli nie określono żadnych elementów docelowych w `MSBuild` zadań, są tworzone w domyślnych elementów docelowych określone w plikach projektu. **Uwaga:**  Cele musi przypadać w plikach projektu. Jeśli tak się nie stanie, występuje błąd kompilacji. |
 | `ToolsVersion` | Opcjonalnie `String` parametru.<br /><br /> Określa `ToolsVersion` do użycia podczas tworzenia projektów przekazany do tego zadania.<br /><br /> Włącza [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania, aby skompilować projekt, który jest przeznaczony dla innej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] niż określona w projekcie. Prawidłowe wartości to `2.0`, `3.0` i `3.5`. Wartość domyślna to `3.5`. |
 | `UnloadProjectsOnCompletion` | Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, projekt zostanie zwolniona po zakończeniu operacji. |
 | `UseResultsCache` | Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, buforowane wynik zostanie zwrócony, jeśli jest obecny.<br /><br />  Jeśli zostanie uruchomione zadanie MSBuild, wynik będzie zapisywane w zakresie <br /><br /> (ProjectFileName GlobalProperties) [TargetNames]<br /><br /> jako listę elementów kompilacji |

@@ -2,7 +2,6 @@
 title: Debugowanie formularza sieci Web | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 66456257e72609183feb5f331c6d5d384c040a61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822181"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>Wskazówki: debugowanie formularzy sieci Web
+# <a name="walkthrough-debugging-a-web-form"></a>Przewodnik: Debugowanie formularzy internetowych
 Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacja internetowa, znany także jako formularz sieci Web. Pokazuje jak uruchomić i zatrzymać wykonywanie, ustawiać punkty przerwania i sprawdzić zmienne w **Obejrzyj** okna.
 
 > [!NOTE]
@@ -69,7 +68,7 @@ Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomo
 
 11. Kliknij dwukrotnie formant przycisku porzucony.
 
-     Spowoduje to przejście do strony kodowej: Default.aspx.cs dla języka C# lub Default.aspx.vb dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Kursor powinien być w funkcji `Button1_Click`.
+     Spowoduje to przejście do strony kodowej: Default.aspx.cs dla C# lub Default.aspx.vb dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Kursor powinien być w funkcji `Button1_Click`.
 
 12. W `Button1_Click` funkcji, Dodaj następujący kod:
 

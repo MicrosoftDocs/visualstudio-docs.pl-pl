@@ -1,8 +1,6 @@
 ---
 title: Funkcje debugowania bardziej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 793cbfdc1e56a8dfdc986c08d4aaad1c5f208218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822681"
 ---
 # <a name="more-debugging-features"></a>Więcej funkcji debugowania
 Ta sekcja zawiera dodatkowe funkcje, które za pomocą debugera programu Visual Studio.  
@@ -40,7 +38,7 @@ Ta sekcja zawiera dodatkowe funkcje, które za pomocą debugera programu Visual 
  [Debugowanie just in time](../debugger/just-in-time-debugging-in-visual-studio.md)  
  W tym artykule omówiono Just-In-Time debugowania, która może automatycznie uruchomić debuger, gdy program ulegnie awarii podczas uruchamiania spoza Visual Studio.  
   
- [Przewodnik: debugowanie w czasie projektowania](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Przewodnik: Debugowanie w czasie projektowania](../debugger/walkthrough-debugging-at-design-time.md)  
  Pokazuje, jak używać programu Visual Studio bezpośrednim do wykonania funkcji lub podprocedury, gdy aplikacja nie jest uruchomiona. 
   
  [Edytuj i kontynuuj](../debugger/edit-and-continue.md)  
@@ -49,5 +47,5 @@ Ta sekcja zawiera dodatkowe funkcje, które za pomocą debugera programu Visual 
  [Używanie plików zrzutów](../debugger/using-dump-files.md)  
  Opisuje pliki zrzutu, w tym instrukcje dotyczące zapisywania i otwierania. Pliki zrzutu zawierają migawkę stanu programu w pewnym momencie w czasie, zwykle po awarii. Jeśli testujesz program na komputerze, który nie zawiera plików źródłowych ani PDB, możesz zapisać plik zrzutu podczas awarii i użyć pliku zrzutu do debugowania po awarii na maszynie kompilacji, który zawiera pliki źródłowe i PDB. 
   
- [Instrukcje: przywracanie ukrytych poleceń debugera](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Instrukcje: Przywracanie ukrytych poleceń debugera](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Opisuje sposób uwidaczniania poleceń debugera, zostały ukryte przez domyślne ustawienia IDE.

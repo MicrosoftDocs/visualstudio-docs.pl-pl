@@ -1,9 +1,6 @@
 ---
 title: FRAMEINFO | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - FRAMEINFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ed3ddbbbffb6e1a92e4c5038fad8f901ecf303e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf77548136b941a4895e300e25612411611645dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958868"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 W tym artykule opisano ramki stosu.  
@@ -28,7 +25,7 @@ W tym artykule opisano ramki stosu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-typedef struct tagFRAMEINFO {   
+typedef struct tagFRAMEINFO {   
    FRAMEINFO_FLAGS    m_dwValidFields;  
    BSTR               m_bstrFuncName;  
    BSTR               m_bstrReturnType;  
@@ -46,7 +43,7 @@ typedef struct tagFRAMEINFO {
 ```  
   
 ```csharp  
-public struct FRAMEINFO {   
+public struct FRAMEINFO {   
    public uint              m_dwValidFields;  
    public string            m_bstrFuncName;  
    public string            m_bstrReturnType;  
@@ -109,9 +106,9 @@ public struct FRAMEINFO {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

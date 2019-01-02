@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e4105d8dda298dd0235acd113a9a0612265fbc0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6db1195203b13ab38f5f3ca74d8b07d96b658f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959084"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +82,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
    ![Dotyczy tylko Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
-   Visual Studio kompiluje i uruchamia aplikację w debugerze. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji. Aby uzyskać więcej informacji, zobacz [Szybki Start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).
+   Visual Studio kompiluje i uruchamia aplikację w debugerze. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji. Aby uzyskać więcej informacji, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> Konfigurowanie sesji debugowania
  Ponieważ skrypt nie jest kompilowana, ustawienia konfiguracji i platformy kompilacji nie mają zastosowania. Jeśli debugujesz, C++ lub zarządzanego składnika, ustawić **konfiguracji** do **debugowania** i wybierz platformę docelową z **konfiguracji** okna dialogowego.
@@ -160,14 +159,14 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ##  <a name="BKMK_Start_the_debugging_session"></a> Rozpocznij sesję debugowania
 
 ###  <a name="BKMK_Start_debugging__F5_"></a> Rozpocznij debugowanie (F5)
- Po wybraniu **Rozpocznij debugowanie** na **debugowania** menu (klawiatura: F5), program Visual Studio uruchamia aplikację w debugerze. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji.
+ Po wybraniu **Rozpocznij debugowanie** na **debugowania** menu (klawiatury: F5), program Visual Studio uruchamia aplikację w debugerze. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji.
 
 ###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Rozpocznij debugowanie (F5), ale opóźnić uruchomienie aplikacji
  Możesz ustawić aplikację, aby uruchomić tryb debugowania, ale zapewnia on zostać uruchomiony przez metody innej niż debugera. Na przykład możesz zechcieć, debugowanie, uruchamianie aplikacji z Start menu lub debugować proces w tle w aplikacji bez uruchamiania aplikacji. Aby opóźnić uruchomienie aplikacji, wykonaj następujące czynności:
 
 1. Na **debugowania** strony aplikacji właściwości projektu, wybierz polecenie **nie** z **Uruchom aplikację** listy.
 
-2. Wybierz **Rozpocznij debugowanie** na **debugowania** menu (klawiatura: F5).
+2. Wybierz **Rozpocznij debugowanie** na **debugowania** menu (klawiatury: F5).
 
 3. Rozpocznij tworzenie aplikacji z menu Start, kontrakt wykonywania lub innej procedury.
 
@@ -266,4 +265,4 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
    Program Visual Studio dołącza debuger do procesu. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji.
 
 ## <a name="see-also"></a>Zobacz też
- [Kontrolować wykonywanie w trakcie sesji debugowania (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [Szybki Start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) [wyzwalacza wstrzymania, wznowienia i zdarzeń Windows Store w tle)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [debugowanie aplikacji w Program Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
+ [Kontrolować wykonywanie w trakcie sesji debugowania (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) [wyzwalacza wstrzymania, wznowienia i zdarzeń Windows Store w tle)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

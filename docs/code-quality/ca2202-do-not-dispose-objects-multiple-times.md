@@ -1,8 +1,7 @@
 ---
-title: 'CA2202: Nie należy usuwać obiektów wiele razy'
+title: 'CA2202: Nie Likwiduj obiektów wiele razy'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f666ba0cf620249e9308179d715ca38bf0f18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac1e6aafd9894cd59db1a1d842d560d4b7229860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822129"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie należy usuwać obiektów wiele razy
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie Likwiduj obiektów wiele razy
 
 |||
 |-|-|

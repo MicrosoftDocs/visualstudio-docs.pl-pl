@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -23,12 +22,12 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d38173e1060534edae580a1b12c43e2d8b3f047a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 68a3646963f7ebbeea9c2ea3ac9a9c1f1729b23a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833894"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +35,7 @@ Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywan
 
  Aby uzyskać krótkie wprowadzenie do debugowania i diagnostyki w programie Visual Studio, zobacz [debugowanie, profilowanie i diagnozowanie](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
--   [Co nowego w debugerze programu Visual Studio 2015 jest](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md) w tym artykule opisano nowe funkcje w programie Visual Studio 2015.
+-   [Co nowego w debugerze programu Visual Studio 2015 jest](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015) w tym artykule opisano nowe funkcje w programie Visual Studio 2015.
 
 -   [Debuger Windows](../debugger/debugger-windows.md)wyświetla inny debuger systemu windows.
 

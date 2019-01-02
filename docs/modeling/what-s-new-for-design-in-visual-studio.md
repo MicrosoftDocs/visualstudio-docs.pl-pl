@@ -2,7 +2,6 @@
 title: Nowości dotyczące projektowania
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe304cafa5e8ed4eae287750aeb8e2db02fbc31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bdea0b8e24347e608ad0e1736b55e34acb4e5854
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956026"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Co nowego w dziedzinie projektowania w programie Visual Studio
 
@@ -73,5 +72,5 @@ Visual Studio 2017 jest dostępny w wielu wersjach. Nie wszystkie te zapewniają
 |-|-|-|-|
 |**Mapy kodu**|Tak|Mapy tylko filtrowania kodu obsługuje map kodu do czytania, dodawanie nowych węzłów ogólny i tworzenie nowy Graf skierowany z zaznaczenia.|-|
 |**Diagramów zależności**|Tak|Obsługuje tylko odczytywanie diagramów zależności.|Obsługuje tylko odczytywanie diagramów zależności.|
-|**Ukierunkowanych wykresów** (diagramy DGML)|Tak|Tak|Tak|
+|**Ukierunkowanych wykresów** (diagramy DGML)|Tak|Yes|Tak|
 |**Klonowanie kodu**|Tak|-|-|

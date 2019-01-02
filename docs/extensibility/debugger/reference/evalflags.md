@@ -1,9 +1,6 @@
 ---
 title: EVALFLAGS | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - EVALFLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef229fb06f8b265b76dc40019b18ae3c796740f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6037abb152c1ff582787c8ebebe16c027c96cc20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947130"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Określa flagi, które kontrolują Obliczanie wyrażenia.  
@@ -28,7 +25,7 @@ Określa flagi, które kontrolują Obliczanie wyrażenia.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-enum enum_EVALFLAGS {  
+enum enum_EVALFLAGS {  
    EVAL_RETURNVALUE = 0x0002,  
    EVAL_NOSIDEEFFECTS = 0x0004,  
    EVAL_ALLOWBPS = 0x0008,  
@@ -41,7 +38,7 @@ typedef DWORD EVALFLAGS;
 ```  
   
 ```csharp  
-public enum enum_EVALFLAGS {  
+public enum enum_EVALFLAGS {  
    EVAL_RETURNVALUE = 0x0002,  
    EVAL_NOSIDEEFFECTS = 0x0004,  
    EVAL_ALLOWBPS = 0x0008,  
@@ -82,9 +79,9 @@ public enum enum_EVALFLAGS {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

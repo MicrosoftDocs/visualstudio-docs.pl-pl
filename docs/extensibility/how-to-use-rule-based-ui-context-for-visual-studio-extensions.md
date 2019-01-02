@@ -1,6 +1,5 @@
 ---
-title: 'Porady: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,14 +7,14 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824291"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Porady: Użyj kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Instrukcje: Użyj kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
 Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dobrze znanych <xref:Microsoft.VisualStudio.Shell.UIContext>s zostaną aktywowane. Jednak tych kontekstach interfejsu użytkownika nie są poprawnie szczegółowej, dlatego twórcy rozszerzeń Brak wyboru, ale do wyboru dostępne kontekstu interfejsu użytkownika, który aktywuje przed punktem chcieli naprawdę pakietu VSPackage do załadowania. Aby uzyskać listę znanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Ładowanie pakietów może mieć negatywny wpływ na wydajność i szybciej, niż jest to potrzebne podczas ich ładowania nie jest najlepszym rozwiązaniem. Program Visual Studio 2015 wprowadzono pojęcie opartych na regułach kontekstów interfejsu użytkownika, mechanizm, który umożliwia twórcy rozszerzeń zdefiniować dokładne warunki kontekstu interfejsu użytkownika jest aktywowana i skojarzonych pakietach VSPackage są ładowane.  
@@ -44,7 +43,7 @@ Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dob
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
    ```  
   
-    W przypadku atrybutów, Dodaj następujące wartości: (szczegółowe informacje o tych atrybutów zostaną wyjaśnione później)  
+    W przypadku atrybutów Dodaj następujące wartości: (Szczegółowe informacje o tych atrybutów zostaną wyjaśnione później)  
   
    ```csharp  
    [ProvideAutoLoad(TestPackage.UIContextGuid)]      

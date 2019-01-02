@@ -1,13 +1,8 @@
 ---
-title: 'Przewodnik: Tworzenie niestandardowego przepływu pracy działania witryny | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Utwórz niestandardową witrynę działanie przepływu pracy | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951816"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Przewodnik: Tworzenie niestandardowego przepływu pracy działania witryny
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Przewodnik: Utwórz niestandardową witrynę działanie przepływu pracy
   W tym instruktażu pokazano, jak utworzyć niestandardowe działanie na poziomie witryny przepływu pracy przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Przepływy pracy poziomie witryny dotyczą całej lokacji, a nie tylko listy w witrynie). Niestandardowe działanie tworzy kopię zapasową listy anonsów i następnie kopiuje zawartość listy ogłoszeń tę sytuację.  
   
  W tym instruktażu pokazano następujące zagadnienia:  
@@ -128,6 +123,5 @@ ms.locfileid: "49894173"
 5.  Na pasku szybkiego uruchamiania wybierz **kopii zapasowej anonsów** łącza. Należy zauważyć, że wszystkie anonsy, które są zawarte w **anonsów** listy zostały skopiowane do tej nowej listy.  
   
 ## <a name="see-also"></a>Zobacz także
- [Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)   
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

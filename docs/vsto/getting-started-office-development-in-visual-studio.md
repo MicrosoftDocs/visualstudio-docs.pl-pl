@@ -3,8 +3,6 @@ title: Uzyskaj wprowadzenie (Office development w programie Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d415fc57cd4923fbe5c62f4f9758dac23a4fccc3
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d0d2868becbdc68f88c8ac191e3a044f3cfc8b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955360"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Uzyskaj wprowadzenie (Office development w programie Visual Studio)
   Ta sekcja zawiera tematy, które ułatwiają rozpoczęcie korzystania z narzędzia Microsoft Office developer tools w programie Visual Studio.  
@@ -78,5 +76,3 @@ ms.locfileid: "53647667"
   
  [Visual Studio Tools dla Office — artykuły techniczne i porady Visual](http://go.microsoft.com/fwlink/?LinkID=106640)  
  Zawiera łącza do filmów wideo i artykułów technicznych dotyczących rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio.  
-  
-  

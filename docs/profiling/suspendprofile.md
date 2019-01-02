@@ -1,8 +1,6 @@
 ---
 title: SuspendProfile | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - SuspendProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 27c52c3821bb545efb8fe16365b11c9820db9214
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952128"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` Metody zwiększa Licznik wstrzymań/wznowień dla określonego poziomu profilowania.  
@@ -67,9 +65,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informacje o funkcji  
- Nagłówek: Zadeklarowanych w *VSPerf.h*  
+ Nagłówek: Zadeklarowane w *VSPerf.h*  
   
- Bibliotekę importowaną: *VSPerf.lib*  
+ Biblioteka importów: *VSPerf.lib*  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie pokazano metodę SuspendProfile. W tym przykładzie założono, że dokonano wcześniejszym wywołaniu StartProfile proces lub wątek identyfikowane przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).  

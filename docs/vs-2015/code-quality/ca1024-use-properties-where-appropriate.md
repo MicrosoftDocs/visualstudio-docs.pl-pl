@@ -1,12 +1,11 @@
 ---
-title: 'CA1024: Używaj właściwości wszędzie gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
+title: 'CA1024: Korzystanie z właściwości, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0116ff7c7bb2486b522edb90319afc6db877b4d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823128"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości wszędzie, gdzie jest to odpowiednie
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Korzystanie z właściwości, gdzie jest to odpowiednie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -125,6 +124,3 @@ namespace Microsoft.Samples
  Poniższy przykład zawiera kilka metod powinny być konwertowane do właściwości i kilku, należy nie, ponieważ nie zachowywać się jak pola.
 
  [!code-csharp[FxCop.Design.MethodsProperties#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.MethodsProperties/cs/FxCop.Design.MethodsProperties.cs#1)]
-
-
-

@@ -1,9 +1,6 @@
 ---
-title: Ciągi używane jako klucze do znajdowania wtyczka do kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
@@ -13,19 +10,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a42eebe67ce1f611cf6e48883bc09139f241e658
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835753"
 ---
-# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Ciągi używane jako klucze do znajdowania wtyczka do kontroli źródła
-Klucze do uzyskiwania dostępu do rejestru, aby znaleźć informacje o kontroli źródła wtyczek są następujące ciągi.  
+# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła
+Następujące ciągi są klucze służące do uzyskiwania dostępu do rejestru, aby znaleźć informacje o kontroli źródła wtyczek.  
   
  `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, i `STR_SCCPROVIDERNAME` kluczy rejestru i wartości używane do rejestrowania biblioteki DLL jako wtyczka do kontroli źródła dla programu Visual Studio.  
   
- `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, i `SCC_STATUS_FILE` służą do opisywania formatu MSSCCPRJ. Plik SCC.  
+ `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, i `SCC_STATUS_FILE` są używane do opisywania formatu MSSCCPRJ. Plik SCC.  
   
 ## <a name="string-keys-and-values"></a>Ciąg kluczy i wartości  
   
@@ -35,21 +32,21 @@ Klucze do uzyskiwania dostępu do rejestru, aby znaleźć informacje o kontroli 
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
 |`STR_SCCPROVIDERPATH`|SCCServerPath|  
 |`STR_SCCPROVIDERNAME`|SCCServerName|  
-|`STR_SCC_INI_SECTION`|Kontroli kodu źródłowego|  
+|`STR_SCC_INI_SECTION`|Kontrola kodu źródłowego|  
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
 |`SCC_STATUS_FILE`|MSSCCPRJ. SCC|  
 |`SCC_KEY`|SCC|  
-|`SCC_FILE_SIGNATURE`|Pliku kontroli kodu źródłowego|  
+|`SCC_FILE_SIGNATURE`|Plik kontroli kodu źródłowego|  
 |`SCC_NSE`|Rozszerzenie Namespace|  
-|`SCC_NSE_PREFIX`|Prefiks Protokół|  
+|`SCC_NSE_PREFIX`|Prefiks od protokołu|  
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|  
 |`STR_SCCHELPCOLLECTION`|HelpCollection|  
 |`STR_UI_LANGUAGE`|UILanguage|  
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   
- [Porady: Instalowanie dodatku Plug-in kontroli źródła](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
+ [Instrukcje: Instalowanie wtyczki kontroli źródła](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Plik MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

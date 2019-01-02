@@ -1,9 +1,6 @@
 ---
 title: Przykładowy implementacji oceny wyrażenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10efa25ba2f692e9cf4a9c3588d210d31f9e8065
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2048fe77987da864271412d7bc72d68191f9e396
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823155"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Przykład implementacji oceny wyrażenia
 > [!IMPORTANT]

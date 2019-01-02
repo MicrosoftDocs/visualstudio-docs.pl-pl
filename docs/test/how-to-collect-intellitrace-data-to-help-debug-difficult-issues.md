@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953001"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Instrukcje: Zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 
 Można skonfigurować adapter danych diagnostycznych narzędzia IntelliTrace do zbierania informacji diagnostycznych śledzenia w Visual stdio —. Adapter może być wykorzystywany przez testy do zbierania informacji o ważnych zdarzeniach diagnostycznych dotyczących aplikacji, na podstawie których deweloper później prześledzi kod i znajdzie przyczyny usterki. Adaptera danych diagnostycznych narzędzia IntelliTrace można używać w testach ręcznych i automatycznych.
 

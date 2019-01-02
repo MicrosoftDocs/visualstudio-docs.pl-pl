@@ -1,9 +1,6 @@
 ---
 title: CONSTRUCTOR_ENUM | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CONSTRUCTOR_ENUM
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8302d89bb90902f2a31a81545f14dd233bbe1f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 199201037889dbcb1b3019ef7632fc81e9c88db4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958660"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 Zaznacza różne rodzaje konstruktorów.  
@@ -28,7 +25,7 @@ Zaznacza różne rodzaje konstruktorów.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-typedef enum ConstructorMatchOptions {   
+typedef enum ConstructorMatchOptions {   
    crAll       = 0,  
    crNonStatic = 1,  
    crStatic    = 2  
@@ -36,7 +33,7 @@ typedef enum ConstructorMatchOptions {
 ```  
   
 ```csharp  
-public enum ConstructorMatchOptions {   
+public enum ConstructorMatchOptions {   
    crAll       = 0,  
    crNonStatic = 1,  
    crStatic    = 2  
@@ -59,9 +56,9 @@ public enum ConstructorMatchOptions {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

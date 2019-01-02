@@ -1,8 +1,6 @@
 ---
-title: Widok modułów - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Widok modułów — dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,38 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5cbae58aeaa1164aab6c254f62e0959da02d31c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a099a30b0a87db8ebae46543528d9af9f28f497a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823027"
 ---
-# <a name="modules-view---net-memory-sampling-data"></a>Widok modułów - dane próbkowania pamięci .NET
-Widok modułów danych alokacji pamięci .NET, które są zbierane za pomocą metody pobierania próbek grupuje dane pamięci przez moduły, które zostały wykonane w przebiegu profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznej. Funkcji modułu są wyświetlane poniżej tego węzła modułu.  
+# <a name="modules-view---net-memory-sampling-data"></a>Widok modułów — dane próbkowania pamięci platformy .NET
+Widok modułów danych alokacji pamięci .NET, które są zbierane przy użyciu metody próbkowania grupuje dane pamięci przez moduły, które zostały wykonane w trakcie uruchomienia profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcji modułu są wyświetlane poniżej tego węzła modułu.  
   
- Numery wierszy pliku źródłowego instrukcji, które przydzielić pamięci są wymienione poniżej tego węzła funkcji, a adresy instrukcji, które wykonują Alokacja są wymienione poniżej tego węzła wiersza. Wartości włącznie i wyłącznego zawsze są takie same dla wiersza danych i instrukcji.  
+ Numery wierszy pliku źródłowego w instrukcji, które przydzielają pamięć są wymienione poniżej tego węzła funkcji, a adresy instrukcji, które wykonują alokacji są wymienione pod węzeł wiersza. Wartości włączne i wyłączne są zawsze takie same dla wiersza danych i danych instrukcji.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa modułu, funkcji, numer wiersza lub adres instrukcji.|  
-|**Identyfikator procesu**|Identyfikator PID profilowania Uruchom proces.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
 |**Nazwa procesu**|Nazwa procesu.|  
-|**Nazwa modułu**|Nazwa modułu zawiera funkcję.|  
+|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|  
 |**Ścieżka modułu**|Ścieżka do modułu.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
-|**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Alokacje włącznie**|— Dla funkcji, całkowita liczba obiektów, które zostały utworzone przez funkcję. Numer obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez tę funkcję.<br />— Dla modułu wykonywania liczbę obiektów w przebiegu profilowania przydzielone podczas co najmniej jedną funkcję z modułu. Liczba obejmuje obiekty, które zostały utworzone w funkcje, które zostały wywołane przez funkcje modułu.<br />— Dla wiersza lub instrukcji, całkowita liczba obiektów, które zostały przydzielone wiersza lub instrukcji.|  
-|**% Alokacji włącznie**|Procent wszystkich obiektów, które zostały przydzielone w przebiegu, który profilowania były włącznie alokacji modułu, funkcji, wiersz lub instrukcji.|  
-|**Wyłączny alokacji**|— Dla bieżącej funkcji, liczbę obiektów, które zostały utworzone, gdy funkcja została uruchomiona kodu treść funkcji (oznacza to, gdy funkcja znajdowała się w górnej części stosu wywołań). Liczba nie obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez tę funkcję.<br />— Dla modułu sumę wyłącznego alokacje funkcji w module.<br />— Dla wiersza lub instrukcji, całkowita liczba obiektów, które zostały utworzone przez tego wiersza lub instrukcji.|  
-|**% Wyłącznego alokacji**|Procent wszystkich obiektów, które zostały przydzielone w przebiegu, który profilowania były wyłącznego alokacji modułu, funkcji, wiersz lub instrukcji.|  
-|**Bajty włącznie**|— Dla funkcji, liczba bajtów, które zostały przyznane przez funkcję. Liczba zawiera bajtów przydzielonych w funkcje, które zostały wywołane przez tę funkcję.<br />— Dla modułu wykonywania liczba bajtów przydzielonych do uruchomienia profilowania przydzielone podczas co najmniej jedną funkcję z modułu. Liczba obejmuje obiekty, które zostały utworzone we wszystkich funkcji, które zostały wywołane przez funkcje modułu.<br />— Dla wiersza lub instrukcji, całkowita liczba obiektów, które zostały utworzone przez wiersz lub instrukcji.|  
-|**% Bajtów włącznie**|Procent wszystkich bajtów przydzielonych w przebiegu, który profilowania były włącznie bajtów modułu, funkcji, wiersz lub instrukcji.|  
-|**Wyłączny bajtów**|— Dla funkcji, całkowita liczba bajtów, które zostały przyznane przez funkcję. Liczba nie obejmuje bajtów przydzielonych w funkcje, które zostały wywołane przez tę funkcję.<br />— Dla modułu sumę wyłącznego bajtów, które zostały przydzielone funkcji w module.<br />— Dla wiersza lub instrukcji, całkowita liczba obiektów, które zostały przydzielonej przez ten wiersz lub instrukcji.|  
-|**% Wyłącznego bajtów**|Procent wszystkich bajtów przydzielonych w przebiegu, który profilowania były wyłącznego bajtów modułu, funkcji, wiersz lub instrukcji.|  
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
+|**Przydziały włączne**|— Dla funkcji, całkowita liczba obiektów, które zostały utworzone przez funkcję. Numer obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez tę funkcję.<br />— Dla modułu powodowała liczba przydzielonych podczas co najmniej jedna funkcja w module obiektów podczas uruchomienia profilowania. Numer obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez funkcje modułu.<br />— Aby wiersz lub instrukcji, całkowita liczba obiektów, które zostały przydzielone wiersza lub instrukcji.|  
+|**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały przydzielone w uruchomienia profilowania były przydziałów włącznych modułu, funkcji, wiersza lub instrukcji.|  
+|**Przydziały wyłączne**|— W przypadku funkcji bieżącej liczby obiektów, które zostały utworzone podczas wykonywania funkcji kodu w treści funkcji (oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań). Liczba nie obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez tę funkcję.<br />— Dla modułu, sumę przydziałów wyłącznych funkcje w module.<br />— Aby wiersz lub instrukcji, całkowita liczba obiektów, które zostały utworzone przez tego wiersza lub instrukcji.|  
+|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały przydzielone w uruchomienia profilowania były przydziałów wyłącznych modułu, funkcji, wiersza lub instrukcji.|  
+|**Bajty włączne**|— W przypadku funkcji liczba bajtów przydzielonych przez funkcję. Liczba uwzględnia przydzielonych bajtów w funkcjach, które zostały wywołane przez tę funkcję.<br />— Dla modułu liczba przydzielonych bajtów w przebiegu profilowania przydzielonych podczas co najmniej jedna funkcja w module wykonywania. Liczba uwzględnia obiekty, które zostały utworzone we wszystkich funkcji, które zostały wywołane przez funkcje modułu.<br />— Aby wiersz lub instrukcji, całkowita liczba obiektów, które zostały utworzone przez wiersz lub instrukcji.|  
+|**% Bajtów włącznych**|Procent wszystkich bajtów przydzielonych w uruchomienia profilowania były bajty włączne modułu, funkcji, wiersza lub instrukcji.|  
+|**Bajty wyłączne**|— Dla funkcji, całkowita liczba bajtów przydzielonych przez funkcję. Liczba nie ma przydzielonych bajtów w funkcjach, które zostały wywołane przez tę funkcję.<br />— Dla modułu, Suma bajtów wyłącznych, przydzielone przez funkcje w module.<br />— Aby wiersz lub instrukcji, całkowita liczba obiektów, które zostały przydzielone przez ten wiersz lub instrukcji.|  
+|**% Bajtów wyłącznych**|Procent wszystkich bajtów przydzielonych w uruchomienia profilowania były bajty wyłączne modułu, funkcji, wiersza lub instrukcji.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-sampling-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)

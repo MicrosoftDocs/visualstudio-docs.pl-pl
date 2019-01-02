@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e610e29c623ecc7e67dcaa87ac1d7ce5417fb5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956208"
 ---
-# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Porady: Dodawanie zbiorów liczników niestandardowych za pomocą edytora testu obciążenia
+# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Instrukcje: Dodawanie zestawów liczników niestandardowych za pomocą edytora testu obciążenia
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego.
 
@@ -43,7 +42,7 @@ Zarządzasz licznikami w **edytora testu obciążenia**. Zbiory liczników, któ
     > [!NOTE]
     > Zestaw liczników jest nadawana nazwa domyślna, takich jak **niestandardowe1**. Nazwę można zmienić za pomocą **właściwości** okna. Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
 
-4.  Aby dodać liczniki do Twojej liczników niestandardowych zestawu, kliknij prawym przyciskiem myszy nowy zbiór liczników, a następnie wybierz **Dodaj liczniki**. Aby uzyskać więcej informacji na temat sposobu dodawania liczników, zobacz [porady: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4.  Aby dodać liczniki do Twojej liczników niestandardowych zestawu, kliknij prawym przyciskiem myszy nowy zbiór liczników, a następnie wybierz **Dodaj liczniki**. Aby uzyskać więcej informacji na temat sposobu dodawania liczników, zobacz [jak: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Istnieje także możliwość dodania niestandardowego zbioru liczników, klikając prawym przyciskiem myszy istniejący zbiór liczników, wybierając kopię i wklejając ją do węzła zbiory liczników. Dodatkowe liczniki, które są kopiowane, ale nie są potrzebne, mogą zostać usunięte. Można zmienić nazwę nowego zbioru liczników przy użyciu **właściwości** okna.

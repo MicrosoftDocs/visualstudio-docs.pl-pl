@@ -1,8 +1,7 @@
 ---
-title: 'Porady: tworzenie tekstury podstawowej'
+title: 'Instrukcje: Tworzenie tekstury podstawowej'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4bd1d34ef2dc31935038bb1be30d548c58208fd
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 680ec789c4a52e0855651fbe4d5caed7b945a8e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822103"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Porady: tworzenie tekstury podstawowej
+# <a name="how-to-create-a-basic-texture"></a>Instrukcje: Tworzenie tekstury podstawowej
 
 W tym artykule przedstawiono sposób używania edytora obrazu, aby utworzyć teksturę podstawową, wykonując następujące czynności:
 
@@ -87,7 +86,7 @@ Docelową teksturę "bullseye" zostało zakończone. Oto finalnego obrazu, przed
 
 ![Ukończone "bullseye" docelowej tekstury](../designers/media/gfx_image_demo_bullseye.png)
 
-Kolejnym krokiem może wygenerować poziomy MIP dla tej tekstury. Aby uzyskać informacje, zobacz [porady: tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Kolejnym krokiem może wygenerować poziomy MIP dla tej tekstury. Aby uzyskać informacje, zobacz [jak: Tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Zobacz także
 

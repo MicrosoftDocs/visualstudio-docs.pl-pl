@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentPositionOffset2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f08b278d75068351d6d65511f74209c7208024cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eeedd1038b577be8a0e0cac46359cf0b05f0dc70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948290"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
-Reprezentuje pozycji w pliku źródłowym jako przesunięcie znaków.  
+Reprezentuje pozycji w pliku źródłowym jako przesunięcie znaku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -30,24 +27,24 @@ IDebugDocumentPositionOffset2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Zaimplementowane IDE i używane przez aparaty debugowania.  
+ Implementowany przez środowisko IDE, są używane przez aparaty debugowania.  
   
 ## <a name="methods"></a>Metody  
  W poniższej tabeli przedstawiono metody `IDebugDocumentPositionOffset2`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Pobiera zakres dla bieżącego położenia dokumentu.|  
+|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Pobiera zakres dla bieżącej pozycji dokumentu.|  
   
 ## <a name="remarks"></a>Uwagi  
- To polecenie zwróci te same informacje co [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) jednak `char` powoduje przesunięcie od początku dokumentu. Wyświetla dokument, tak, czy istnieje on na dysku, to znaczy Jednowymiarowa tablica znaków, zamiast informacji wiersza i kolumny, która zwykle jest zwracana.  
+ Spowoduje to zwrócenie te same informacje co [getrange —](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ale w `char` powoduje przesunięcie od początku dokumentu. Przedstawia dokumentu, takie jak jego istniałby na dysku, oznacza to Jednowymiarowa tablica znaków, a nie informacji wierszy i kolumn, który zazwyczaj jest zwracany.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

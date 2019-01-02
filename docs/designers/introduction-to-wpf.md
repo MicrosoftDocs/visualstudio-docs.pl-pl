@@ -2,7 +2,6 @@
 title: Wprowadzenie do WPF
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
@@ -13,14 +12,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cb2e835a3dac2f85de806e876bc8801d7b1d0dd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955295"
 ---
-# <a name="wpf-overview"></a>WPF — Przegląd
+# <a name="wpf-overview"></a>Omówienie podsystemu WPF
 
 Windows Presentation Foundation (WPF) pozwala tworzyć aplikacje dla Windows klient stacjonarny wizualnie olśniewających graficznie środowisk użytkownika.
 
@@ -91,16 +90,16 @@ Główne zachowanie aplikacji jest do implementacji funkcji, który odpowiada na
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox 
 
 namespace SDKSample
 {
-    public partial class AWindow : Window
+    public partial class AWindow : Window
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
-            // that is defined in markup with this class, including  
+            // InitializeComponent call is required to merge the UI 
+            // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
         }
@@ -117,28 +116,28 @@ namespace SDKSample
 ```vb
 Namespace SDKSample
 
-    Partial Public Class AWindow
+    Partial Public Class AWindow
         Inherits System.Windows.Window
 
-        Public Sub New()
+        Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
-            ' that is defined in markup with this class, including  
+            ' InitializeComponent call is required to merge the UI 
+            ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub 
 
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub 
 
-    End Class 
+    End Class 
 
-End Namespace
+End Namespace
 ```
 
 W tym przykładzie kodu powiązanego implementuje klasę, która pochodzi od klasy <xref:System.Windows.Window> klasy. `x:Class` Atrybut jest używany do skojarzenia z kodu znaczników przy użyciu klasy CodeBehind. `InitializeComponent` jest wywoływana z konstruktora klasy CodeBehind do scalenia interfejs użytkownika, który jest zdefiniowany w znacznikach z klasą CodeBehind. (`InitializeComponent` zostanie wygenerowany podczas kompilowania aplikacji, dlatego nie trzeba zaimplementować go ręcznie.) Kombinacja `x:Class` i `InitializeComponent` upewnij się, że implementacji poprawnie zainicjować po każdym utworzeniu. Klasy związane z kodem implementuje również program obsługi zdarzeń dla przycisku <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzeń. Po kliknięciu przycisku program obsługi zdarzeń wyświetli okno wiadomości przez wywołanie metody <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> metody.
@@ -197,11 +196,11 @@ Podstawa system układu jest położenie względne, co zwiększa możliwości do
 
 System układu jest narażony na formantów podrzędnych za pomocą klasy bazowe WPF. W przypadku typowych układów, takich jak siatki, układanie i dokowanie WPF zawiera kilka formantów układu:
 
-- <xref:System.Windows.Controls.Canvas>: Formanty podrzędne Podaj własne układu.
+- <xref:System.Windows.Controls.Canvas>: Formanty podrzędne zawierają własne układu.
 
 - <xref:System.Windows.Controls.DockPanel>: Formanty podrzędne są wyrównane do krawędzi panelu.
 
-- <xref:System.Windows.Controls.Grid>: Formanty podrzędne są pozycjonowane według wierszy i kolumn.
+- <xref:System.Windows.Controls.Grid>: Formanty podrzędne są rozmieszczane według wierszy i kolumn.
 
 - <xref:System.Windows.Controls.StackPanel>: Formanty podrzędne są ułożone poziomo lub pionowo.
 
@@ -668,7 +667,7 @@ Podobnie jak w przypadku dowolnej platformy programowania WPF można na wiele sp
 Omówiono kluczowe funkcje WPF. Teraz nadszedł czas, aby utworzyć pierwszą aplikację programu WPF.
 
 > [!div class="nextstepaction"]
-> [Wskazówki: Mój pierwszy aplikacja klasyczna WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+> [Przewodnik: Moja pierwsza aplikacja pulpitu WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
 
 ## <a name="see-also"></a>Zobacz także
 

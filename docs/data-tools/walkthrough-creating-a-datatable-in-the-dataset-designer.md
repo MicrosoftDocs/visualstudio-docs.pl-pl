@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: tworzenie DataTable w projektancie obiektów Dataset'
+title: 'Przewodnik: Tworzenie elementu DataTable w Projektancie obiektów Dataset'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824837"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Przewodnik: Tworzenie DataTable w Projektancie obiektów Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Przewodnik: Tworzenie obiektu DataTable w Projektancie obiektów Dataset
 
 W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez TableAdapter) przy użyciu **Projektanta obiektów Dataset**. Aby uzyskać informacje na temat tworzenia tabel danych, które obejmują TableAdapters, zobacz [tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
@@ -63,7 +62,7 @@ W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez Ta
 
 2.  Nadaj kolumnie nazwę `SongID`.
 
-3.  W **właściwości** oknie <xref:System.Data.DataColumn.DataType%2A> właściwość <xref:System.Int16?displayProperty=fullName>.
+3.  W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataColumn.DataType%2A> na <xref:System.Int16?displayProperty=fullName>. 
 
 4.  Powtórz ten proces i dodaj następujące kolumny:
 
@@ -86,5 +85,5 @@ Aby zapisać **DataTableWalkthrough** projektu na **pliku** menu, wybierz opcję
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
-- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Sprawdzanie poprawności danych](../data-tools/validate-data-in-datasets.md)

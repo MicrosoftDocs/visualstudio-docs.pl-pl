@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata::get_maxstack — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb5a7b9365cbcb63e6f260e70c37fe3921e2f61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8f258dfa240fe1f0e659eebd6b1f4397956e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951290"
 ---
 # <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
 Pobiera maksymalną liczbę bajtów wypychane na stos w ramce.  
@@ -27,7 +25,7 @@ Pobiera maksymalną liczbę bajtów wypychane na stos w ramce.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_maxStack (   
+HRESULT get_maxStack (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956845"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Gdy użytkownik wykonuje operacji kontroli źródła z wewnątrz zintegrowanego środowiska programistycznego (IDE), wtyczka do kontroli źródła może być błąd lub komunikatów o stanie dotyczące operacji przekazywania. Wtyczki można wyświetlać swój własny okien komunikatów w tym celu. Jednak aby uzyskać więcej bezproblemową integrację, dodatku typu plug-in można przekazać ciągów do środowiska IDE, następnie wyświetli je w swojej natywnej sposób wyświetlania informacji o stanie. Jest to mechanizm `LPTEXTOUTPROC` wskaźnika funkcji. IDE implementuje tej funkcji (opisane bardziej szczegółowo poniżej) do wyświetlania błędów i stanów.  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Wysyłane z nie ciągu wiadomości.|  
 |`SCC_MSG_STARTCANCEL`|Zaczyna się wyświetlanie **anulować** przycisku.|  
 |`SCC_MSG_STOPCANCEL`|Zatrzymuje wyświetlanie **anulować** przycisku.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|IDE pyta, czy można anulować operacji w tle: zwraca IDE `SCC_MSG_RTN_CANCEL` Jeśli operacja została anulowana; w przeciwnym razie zwraca `SCC_MSG_RTN_OK`. `display_string` Parametru jest rzutowany jako [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struktury, która jest dostarczana przez wtyczka do kontroli źródła.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pyta IDE, czy można anulować operacji w tle: Zwraca IDE `SCC_MSG_RTN_CANCEL` Jeśli operacja została anulowana; w przeciwnym razie zwraca `SCC_MSG_RTN_OK`. `display_string` Parametru jest rzutowany jako [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struktury, która jest dostarczana przez wtyczka do kontroli źródła.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Informuje o pliku IDE, zanim zostaną pobrane z kontroli wersji. `display_string` Parametru jest rzutowany jako [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) struktury, która jest dostarczana przez wtyczka do kontroli źródła.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Informuje o pliku IDE, po pobraniu go z kontroli wersji. `display_string` Parametru jest rzutowany jako [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) struktury, która jest dostarczana przez wtyczka do kontroli źródła.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Informuje IDE bieżącego stanu operacji w tle. `display_string` Parametru jest rzutowany jako [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) struktury, która jest dostarczana przez wtyczka do kontroli źródła.|  

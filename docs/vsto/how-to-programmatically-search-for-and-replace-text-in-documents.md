@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane wyszukiwanie i zastępowanie tekstu w dokumentach'
-ms.custom: ''
+title: 'Instrukcje: Programowe wyszukiwanie i zastępowanie tekstu w dokumentach'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6de96133a810898fe847cce71bb2711dd7c31dd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823678"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Porady: programowane wyszukiwanie i zastępowanie tekstu w dokumentach
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Instrukcje: Programowe wyszukiwanie i zastępowanie tekstu w dokumentach
   <xref:Microsoft.Office.Interop.Word.Find> Obiektu jest elementem członkowskim obu <xref:Microsoft.Office.Interop.Word.Selection> i <xref:Microsoft.Office.Interop.Word.Range> obiektów i możesz użyć dowolnego z nich do wyszukiwania tekstu w dokumentach programu Microsoft Office Word. Polecenie replace jest rozszerzeniem polecenie find.  
   
  Użyj <xref:Microsoft.Office.Interop.Word.Find> obiektu pętli dokumentu Microsoft Office Word i wyszukać określonego tekstu, formatowanie lub styl, a następnie użyj <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> właściwości w celu zastąpienia wszystkich elementów, znaleziono.  
@@ -120,9 +117,8 @@ ms.locfileid: "49822400"
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> zastępuje pierwszego znalezionego elementu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Porady: programowane przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Porady: programowane Przywracanie zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Instrukcje: Programowe Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Instrukcje: Programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Instrukcje: Programowe Przywracanie zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

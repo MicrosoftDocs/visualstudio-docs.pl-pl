@@ -1,8 +1,6 @@
 ---
 title: Skróty klawiaturowe (HTML i JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,26 +13,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949472"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Skróty klawiaturowe (HTML i JavaScript)
   
- Skróty klawiaturowe w programie Visual Studio do debugowania aplikacji platformy uniwersalnej systemu Windows przy użyciu kodu HTML i JavaScript.  
+ Skróty klawiaturowe w programie Visual Studio do debugowania aplikacji platformy uniwersalnej systemu Windows przy użyciu języków HTML i JavaScript.  
   
 ## <a name="general-shortcuts"></a>Skróty ogólne  
- Te skróty działać we wszystkich narzędzi dla aplikacji platformy uniwersalnej systemu Windows przy użyciu kodu HTML i JavaScript.  
+ Poniższe skróty działają we wszystkich narzędzi dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języków HTML i JavaScript.  
   
 |Akcja|Skrót|  
 |------------|--------------|  
-|Odśwież aplikację systemu Windows|Ctrl+Shift+R|  
-|Ponowne uruchomienie aplikacji systemu Windows|Ctrl+Shift+F5|  
+|Odśwież aplikację Windows|Ctrl+Shift+R|  
+|Uruchom ponownie aplikację Windows|Ctrl+Shift+F5|  
 |Zatrzymaj debugowanie|Shift+F5|  
-|Otwórz Centrum diagnostyki i wydajności|Alt+F2|  
+|Otwórz Centrum wydajności i diagnostyki|Alt+F2|  
   
 ## <a name="javascript-console-shortcuts"></a>Skróty konsoli JavaScript  
  Użyj tych skrótów w oknie konsoli języka JavaScript.  
@@ -42,20 +40,20 @@ ms.locfileid: "31475499"
 |Akcja|Skrót|  
 |------------|--------------|  
 |Uruchom polecenie konsoli|Enter|  
-|Wyczyść konsoli|Esc|  
+|Wyczyść konsolę|Esc|  
 |Przełącz między trybem jeden wiersz i wiele wierszy|Ctrl+Alt+M|  
   
-## <a name="dom-explorer-shortcuts"></a>Skróty Eksploratora modelu DOM  
- Użyj tych skrótów w programie DOM Explorer.  
+## <a name="dom-explorer-shortcuts"></a>Skróty narzędzia DOM Explorer  
+ W Eksploratorze DOM, należy użyć tych skrótów.  
   
 |Akcja|Skrót|  
 |------------|--------------|  
 |Wybierz element|Ctrl+B|  
-|Przełącz między wyświetlanie i ukrywanie pola wyróżnienia strony sieci Web, korzystając z **elementu Select**|Ctrl+Shift+I|  
-|Zatwierdź zmiany przy użyciu **edycji w formacie HTML**|Ctrl+Enter|  
-|Odrzuć zmiany przy użyciu **edycji w formacie HTML**|Esc|  
-|Zwiększenie wybranego CSS o 1|Strzałka w górę|  
-|Zmniejsz wybranej wartości CSS o 1|Strzałka w dół|  
+|Przełącz między wyświetlanie i ukrywanie okna wyróżnianie strony sieci Web, korzystając z **zaznacz Element**|Ctrl+Shift+I|  
+|Zatwierdź zmiany przy użyciu **Edytuj jako HTML**|Ctrl+Enter|  
+|Odrzuć zmiany przy użyciu **Edytuj jako HTML**|Esc|  
+|Zwiększ wartość wybranego arkusza CSS, 1|Strzałka w górę|  
+|Zmniejsz wartość wybranego arkusza CSS o 1|Strzałka w dół|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   

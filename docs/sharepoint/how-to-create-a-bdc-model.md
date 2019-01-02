@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Tworzenie modelu BDC | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie modelu BDC | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,54 +13,53 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e2bc47c902707ee896c46fa0d9988551fa6fd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c01b8c54a762436f7bf76fd8186765a4fe1b9b6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955623"
 ---
-# <a name="how-to-create-a-bdc-model"></a>Porady: Tworzenie modelu BDC
-  Dla tego rodzaju elementu przy użyciu szablonu, a następnie dodając modelu do żadnego projektu programu SharePoint, można utworzyć modelu łączności danych biznesowych (BDC). Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md). Aby uzyskać więcej informacji na temat projektowania modelu, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-create-a-bdc-model"></a>Instrukcje: Tworzenie modelu BDC
+  Model łączności danych biznesowych (BDC) można utworzyć za pomocą szablonu dla tego rodzaju elementu, a następnie dodania modelu do każdego projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md). Aby uzyskać więcej informacji na temat projektowania modelu, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-bdc-project"></a>Aby utworzyć projekt usługi łączności danych biznesowych  
+### <a name="to-create-a-bdc-project"></a>Aby utworzyć projekt BDC  
   
-1.  Na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
+1.  Na pasku menu wybierz **pliku** > **New** > **projektu**.  
   
     > [!NOTE]  
-    >  Jeśli środowiskiem IDE wybrano opcję Użyj ustawienia środowiska deweloperskiego Visual Basic, wybierz **pliku** > **nowy projekt**.  
+    >  Jeśli środowisko IDE jest ustawione do użycia z ustawieniami środowiska deweloperskiego Visual Basic, wybierz opcję **pliku** > **nowy projekt**.  
   
      **Nowy projekt** zostanie otwarte okno dialogowe.  
   
-2.  W obszarze albo **Visual Basic** lub **Visual C#**, wybierz **Office i SharePoint**, **rozwiązań SharePoint**.  
+2.  W obszarze **języka Visual Basic** lub **Visual C#** , wybierz **Office/SharePoint**, **rozwiązań programu SharePoint**.  
   
-3.  W **szablony** okienku wybierz **SharePoint 2013 — pusty projekt** elementu, a następnie wybierz pozycję **OK** przycisku.  
+3.  W **szablony** okienku wybierz **SharePoint 2013 — pusty projekt** elementu, a następnie wybierz **OK** przycisku.  
   
-     **Kreator dostosowania programu SharePoint** otwiera.  
+     **Kreator ustawień niestandardowych SharePoint** zostanie otwarty.  
   
-4.  Na **określić poziom lokacji i zabezpieczeń dla debugowania** , podaj adres URL witryny programu SharePoint na komputerze lokalnym, wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz pozycję **Zakończ** przycisku.  
+4.  Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** strony, podaj adres URL witryny programu SharePoint na komputerze lokalnym, wybierz **Wdróż rozwiązanie farmy** przycisk opcji, a następnie wybierz **Zakończ** przycisku.  
   
-     Testuj modelu w określonej witrynie programu SharePoint.  
+     Możesz testować model w witrynie programu SharePoint, który określiłeś.  
   
     > [!IMPORTANT]  
-    >  Ponieważ BDC modele obsługują wyłącznie rozwiązaniami farmy, należy wdrożyć projekt jako rozwiązanie farmy.  
+    >  Ponieważ modele usługi BDC obsługują tylko rozwiązaniami farmy, należy wdrożyć projekt jako rozwiązanie farmy.  
   
-     Pusty projekt SharePoint jest tworzony.  
+     Pusty projekt programu SharePoint jest tworzony.  
   
 5.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
-6.  W **Dodaj nowy element** oknie dialogowym wybierz **Office i SharePoint** węzła.  
+6.  W **Dodaj nowy element** okna dialogowego wybierz **Office/SharePoint** węzła.  
   
-7.  Na liście szablonów programu SharePoint, wybierz **modelu łączności danych biznesowych (farmy rozwiązania tylko)**.  
+7.  Na liście szablonów programu SharePoint, wybierz opcję **modelu łączności danych biznesowych (tylko rozwiązanie farmy)**.  
   
-8.  W **nazwa** polu, określ nazwę modelu usługi łączności danych biznesowych, a następnie wybierz **Dodaj** przycisku.  
+8.  W **nazwa** pola, określ nazwę dla modelu usługi łączności danych biznesowych, a następnie wybierz **Dodaj** przycisku.  
   
-     A **modelu łączności danych biznesowych** element został dodany do projektu. Domyślnie model zostanie wyświetlony w Projektancie usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     A **Model usługi łączności danych biznesowych** element zostanie dodany do projektu. Domyślnie model pojawia się w Projektancie usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Porady: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Porady: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Instrukcje: Dodawanie istniejącego modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
+ [Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [Instrukcje: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  

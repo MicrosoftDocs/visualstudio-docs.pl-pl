@@ -1,5 +1,5 @@
 ---
-title: Zatwierdź wewnątrzprocesowych na formantach powiązanych z danymi przed zapisaniem danych
+title: Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,42 +17,41 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34cf76adc56078303352bef9f01cef5ba774e2be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4ab8d46bd9c19a747231f87eb7ef0bd40025c69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921608"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824408"
 ---
-# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdź wewnątrzprocesowych na formantach powiązanych z danymi przed zapisaniem danych
+# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 
-Podczas edycji wartości w formantach powiązanych z danymi, użytkownicy muszą Przejdź poza bieżącego rekordu można przekazać zaktualizowanej wartości do powiązanej z kontroli źródła danych. Gdy przeciągnij elementy z [Data Sources — okno](add-new-data-sources.md) na formularz, pierwszy element, który musisz porzucić generuje kod w **zapisać** zdarzenia kliknij przycisk <xref:System.Windows.Forms.BindingNavigator>. Ten kod wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource>. W związku z tym wywołaniu <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody są generowane tylko dla pierwszego <xref:System.Windows.Forms.BindingSource> dodana do formularza.
+Podczas edytowania wartości w formantach powiązanych z danymi, użytkownicy muszą Wyjdź bieżącego rekordu, aby zatwierdzić zaktualizowaną wartość do bazowego źródła danych, który formant jest powiązany z. Podczas przeciągania elementów z [okna źródeł danych](add-new-data-sources.md) na formularz, pierwszy element, który usuniesz generuje kod z gałęzią **Zapisz** Zdarzenie kliknięcia przycisku <xref:System.Windows.Forms.BindingNavigator>. Ten kod wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource>. W związku z tym, wywołanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> ma generowaną metodę tylko pierwszy <xref:System.Windows.Forms.BindingSource> który został dodany do formularza.
 
-<xref:System.Windows.Forms.BindingSource.EndEdit%2A> Wywołania zatwierdza wszystkie zmiany, które są w trakcie w formantów powiązanych z danymi, które są aktualnie edytowany. W związku z tym, jeśli formant powiązany z danymi nadal ma fokus i użytkownik kliknie **Zapisz** przycisk wszystkie oczekujące zmiany, w tym kontroli są zaangażowane przed rzeczywiste Zapisz ( `TableAdapterManager.UpdateAll` metody).
+<xref:System.Windows.Forms.BindingSource.EndEdit%2A> Wywołanie zatwierdza wszystkie zmiany, które jest obecnie w toku w żadnych formantów powiązanych z danymi, które są aktualnie edytowanym. W związku z tym, jeśli formant powiązany z danymi nadal ma fokus i kliknij przycisk **Zapisz** przycisk wszystkie oczekujące zmiany, w tym, że kontrolki są zatwierdzane przed rzeczywiste Zapisz ( `TableAdapterManager.UpdateAll` metody).
 
-Można skonfigurować aplikację do automatycznego zatwierdzania zmian, nawet wtedy, gdy użytkownik próbuje zapisać dane bez zatwierdzania zmian, jako część zapisu procesu.
+Można skonfigurować aplikację do automatycznego zatwierdzania zmian, nawet wtedy, gdy użytkownik próbuje zapisać dane bez zatwierdzania zmian, Zapisz w ramach procesu.
 
 > [!NOTE]
-> Dodaje projektanta `BindingSource.EndEdit` kod tylko pierwszy element upuszczone na formularzu. W związku z tym należy dodać wiersza kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource> w formularzu. Można ręcznie dodać wiersza kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource>. Alternatywnie można dodać `EndEditOnAllBindingSources` metody do formularza i wywołać go przed wykonaniem zapisywania.
+> Projektant dodaje `BindingSource.EndEdit` kod tylko dla pierwszego elementu upuszczone na formularzu. W związku z tym, należy dodać wiersz kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource> w formularzu. Można ręcznie dodać wiersz kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource>. Alternatywnie, można dodać `EndEditOnAllBindingSources` metody do formularza, a następnie wywołaj ją przed wykonaniem zapisywania.
 
-Poniższy kod używa [LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/) zapytania w celu wykonania iteracji wszystkie <xref:System.Windows.Forms.BindingSource> składniki i wywołanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource> w formularzu.
+Poniższy kod używa [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) zapytania do wszystkich iteracji <xref:System.Windows.Forms.BindingSource> składników i wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource> w formularzu.
 
-## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Aby wywołać EndEdit dla wszystkich składników BindingSource w formularzu
+## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Aby wywołać EndEdit — dla wszystkich składników BindingSource w formularzu
 
 1.  Dodaj następujący kod do formularza, który zawiera <xref:System.Windows.Forms.BindingSource> składników.
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]
 
-2.  Dodaj następujący wiersz kodu bezpośrednio przed wezwań można zapisać danych formularza ( `TableAdapterManager.UpdateAll()` metody):
+2.  Dodaj następujący wiersz kodu, tuż przed wszelkie wywołania, aby zapisać dane formularza ( `TableAdapterManager.UpdateAll()` metoda):
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)
+- [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)

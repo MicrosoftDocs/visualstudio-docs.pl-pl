@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ccba0314e51116b58aa44bd25309b921c47c8799
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 9010e3f08499b235d4cd4b02e929ab042dca2216
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954106"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
@@ -35,7 +34,7 @@ Następujące operatory logiczne są obsługiwane dla wszystkich typów właści
 | lt |Mniejsze niż |Cena lt 20 |
 | le |Mniejsze niż lub równe |Cena le 100 |
 | ne |Nie równa się |Ne City "Londyn" |
-| and |i |Cena le 200 i cena gt 3.5 |
+| and |Oraz |Cena le 200 i cena gt 3.5 |
 | lub |Lub |Cena le 3.5 lub gt Cena 200 |
 | not |nie |nie isAvailable |
 

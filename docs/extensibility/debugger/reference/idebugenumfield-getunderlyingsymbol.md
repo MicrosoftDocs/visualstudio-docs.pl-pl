@@ -1,9 +1,6 @@
 ---
 title: IDebugEnumField::GetUnderlyingSymbol | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEnumField::GetUnderlyingSymbol
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3caadc10f08d4c3ddb28b03269323913701e91a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7aca0352cddb9f9048056230657b6c4067c01812
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954886"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 Ta metoda zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący nazwę wyliczenia.  

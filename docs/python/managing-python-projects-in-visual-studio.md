@@ -3,7 +3,6 @@ title: Zarządzaj projektami aplikacji języka Python
 description: Projekty w programie Visual Studio Zarządzanie zależnościami między plikami i złożoność relacji w aplikacji.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825295"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -39,7 +38,7 @@ Program Visual Studio udostępnia wiele szablonów projektu języka Python, aby 
 |   |   |
 |---|---|
 | ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) wprowadzenie do projektów języka Python (2 m 17s). |
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Zobacz też [szczegółowe omówienie: Korzystanie z kontroli źródła z projektów języka Python](https://youtu.be/Aq8eqApnugM) (witrynie youtube.com, 8 m 55s). |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Zobacz też [szczegółowe informacje: Korzystanie z kontroli źródła z projektów języka Python](https://youtu.be/Aq8eqApnugM) (witrynie youtube.com, 8 m 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Dodaj pliki, Przypisz plik startowy i ustaw środowisk
 
@@ -93,7 +92,7 @@ Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual 
 
 ## <a name="linked-files"></a>Połączone pliki
 
-Połączone pliki są pliki, które są przenoszone do projektu, ale zazwyczaj znajdują się poza folderów projektu aplikacji. Pojawiają się na **Eksploratora rozwiązań** jako ikonę nałożone skrót normalnej plików: ![połączony plik ikony](media/projects-linked-file-icon.png)
+Połączone pliki są pliki, które są przenoszone do projektu, ale zazwyczaj znajdują się poza folderów projektu aplikacji. Pojawiają się na **Eksploratora rozwiązań** jako ikonę nałożone skrót normalnej plików: ![Ikona połączonego pliku](media/projects-linked-file-icon.png)
 
 Połączone pliki są określone w *.pyproj* plików przy użyciu `<Compile Include="...">` elementu. Połączone pliki są użycie ścieżki względnej poza struktury katalogów, jawnych lub niejawnych użycie ścieżki w ramach **Eksploratora rozwiązań**:
 

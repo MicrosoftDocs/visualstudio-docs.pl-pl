@@ -2,7 +2,6 @@
 title: Dodaj nowy element — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952475"
 ---
 # <a name="add-new-item-command"></a>Dodaj nowy element — Polecenie
-Dodaje nowy element rozwiązania, takie jak htm, CSS, txt lub ramek do obecnego rozwiązania, a następnie go otwiera.
+Dodaje nowy element rozwiązania, takie jak .htm, CSS, txt lub zestaw ramek do bieżącego rozwiązania i otwiera go.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,22 +31,22 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename` Opcjonalne. Nazwa i ścieżka pliku element, aby dodać do rozwiązania.
+ `filename` Opcjonalnie. Ścieżka i nazwa pliku elementu do dodania do rozwiązania.
 
 ## <a name="switches"></a>Przełączniki
- / t: `templatename` opcjonalne. Określa typ pliku ma zostać utworzony. Jeśli nazwa szablonu nie jest określony, domyślnie jest utworzony plik tekstowy.
+ t: `templatename` Opcjonalnie. Określa typ pliku ma zostać utworzony. Jeśli nazwa szablonu nie zostanie określony, domyślnie tworzone jest plikiem tekstowym.
 
- / T:`templatename` składnię argumentu odzwierciedla informacji zamieszczonych w **Dodaj nowy element rozwiązania** okno dialogowe. Należy wprowadzić pełną kategorii oraz typ pliku, oddzielając nazwy kategorii z typem plików przez ukośnik odwrotny (`\`) i otaczającej cały ciąg w cudzysłowie.
+ T:`templatename` składnię argumentu odzwierciedla informacji znajdujących się w **Dodaj nowy element rozwiązania** okno dialogowe. Należy wprowadzić pełną kategorii, typu pliku, oddzielając nazwy kategorii z typu pliku za ukośnik odwrotny, po którym następuje (`\`) i nawiasami cały ciąg w cudzysłowie.
 
- Na przykład, aby utworzyć nowy plik tekstowy, należy wprowadzić następujący kod pod kątem / t:`templatename` argumentu.
+ Na przykład, aby utworzyć nowy plik tekstowy, należy wprowadzić następujące t:`templatename` argumentu.
 
 ```cmd
 /t:"General\Style Sheet"
 ```
 
- / e: `editorname` opcjonalne. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument zostanie określony, ale zostanie podana żadna nazwa edytora, **Otwórz za pomocą** zostanie wyświetlone okno dialogowe.
+ / e: `editorname` Opcjonalnie. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument jest określony, ale nazwa edytora nie został podany, **Otwórz za pomocą** pojawi się okno dialogowe.
 
- / E:`editorname` składnię argumentu korzysta z nazw Edytor znajdujące się w **Otwieranie z okna dialogowego**, ujęty w cudzysłów.
+ / E:`editorname` składnię argumentu używa nazw edytora, w jakiej występują w **Otwórz okno dialogowe za pomocą**, ujęty w znaki cudzysłowu.
 
  Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, należy wprowadzić następujące / e:`editorname` argumentu.
 
@@ -56,7 +55,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
 ## <a name="example"></a>Przykład
- W tym przykładzie dodaje nowy element rozwiązania MyHTMLpg, do bieżącego rozwiązania.
+ Ten przykład dodaje nowy element rozwiązania, MyHTMLpg, do bieżącego rozwiązania.
 
 ```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
@@ -66,5 +65,5 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

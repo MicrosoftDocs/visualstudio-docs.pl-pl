@@ -2,19 +2,18 @@
 title: Porady dotyczące poprawy wydajności
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bdc20f22fc535028cb67939fed9c9472ed081428
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956897"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady dotyczące wydajności programu Visual Studio i wskazówki
 
@@ -123,7 +122,7 @@ Aby uzyskać informacje dotyczące wydajności platformy kompilatora .NET ("Rosl
 
 Środowisko CLR używa systemu zarządzania pamięcią wyrzucania elementów kolekcji. W tym systemie czasami pamięć jest używana przez obiekty, które nie są już potrzebne. Ten stan jest tymczasowa. Moduł zbierający elementy bezużyteczne spowoduje zwolnienie tej pamięci na podstawie jego wydajności i algorytmy heurystyczne użycia zasobów. Można wymusić CLR, aby zbierać wszystkie nieużywane pamięci przy użyciu klawisz dostępu w programie Visual Studio. W przypadku znacznej ilości pamięci oczekiwanie na kolekcji wymuszenia wyrzucania elementów bezużytecznych, powinien zostać wyświetlony użycie pamięci przez *devenv.exe* procesu upuść w **Menedżera zadań**. Jest to rzadko niezbędne do używania tej metody. Jednak po ukończeniu kosztowną operacją (na przykład Pełna kompilacja, sesji debugowania lub zdarzenia otwarte rozwiązanie) może pomóc określić, ile pamięci naprawdę jest on używany przez proces. Ponieważ Visual Studio jest mieszany (zarządzany i natywnego), użytkownik może od czasu do czasu natywnego programu przydzielania i moduł zbierający elementy bezużyteczne konkurują o zasoby pamięci ograniczone. W warunkach wysokiego użycia pamięci może pomóc wymusić moduł odśmiecania pamięci do uruchomienia.
 
-Aby wymusić wyrzucania elementów bezużytecznych, użyj klawisza skrótu: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (naciśnij do dwa razy).
+Aby wymusić wyrzucania elementów bezużytecznych, użyj klawisza skrótu: **CTRL**+**Alt**+**Shift**+**F12**, **Ctrl** + **Alt**+**Shift**+**F12** (naciśnij do dwa razy).
 
 Jeśli niezawodnie wymuszenia wyrzucania elementów bezużytecznych sprawia, że dany scenariusz działał, plik raportu za pomocą narzędzia opinii programu Visual Studio to zachowanie może być usterka.
 

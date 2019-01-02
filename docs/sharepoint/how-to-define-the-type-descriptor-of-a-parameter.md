@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Określanie deskryptora typu parametru | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie deskryptora typu parametru | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953160"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Porady: Określanie deskryptora typu parametru
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Instrukcje: Określanie deskryptora typu parametru
   Deskryptor typu zawiera właściwości, które opisują typ danych parametru. Deskryptor typu może zdefiniować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Aby zdefiniować deskryptor typu parametru  
@@ -42,7 +37,7 @@ ms.locfileid: "51294984"
   
 ### <a name="to-define-a-field"></a>Aby zdefiniować pole  
   
-1.  W **właściwości** oknie **nazwa** właściwości deskryptora typu na nazwę pola w typie, która reprezentuje jednostkę (na przykład: **FirstName**).  
+1.  W **właściwości** oknie **nazwa** właściwości deskryptora typu na nazwę pola w typie, która reprezentuje jednostkę (na przykład: **Imię**).  
   
 2.  Na liście obok **TypeName** właściwości, wybierz odpowiedni typ danych (na przykład **Int32**).  
   
@@ -50,7 +45,7 @@ ms.locfileid: "51294984"
   
 ### <a name="to-define-an-entity"></a>Aby zdefiniować jednostkę  
   
-1.  W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **skontaktuj się z pomocą**).  
+1.  W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Skontaktuj się z pomocą**).  
   
 2.  Ustaw **TypeName** właściwość w pełni kwalifikowaną nazwę typu, która reprezentuje jednostkę. Ten typ może być klasą w projekcie, typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu lub typem zdefiniowanym w modelu usługi BDC.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294984"
   
 2. Na pasku menu wybierz **widoku**, **okno właściwości**.  
   
-3. W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **kontakty**).  
+3. W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Kontaktuje się**).  
   
 4. Ustaw **IsCollection** właściwości **True**. Oznacza to, że ten deskryptor typu jest kolekcję jednostek.  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294984"
   
 ## <a name="see-also"></a>Zobacz także
  [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Porady: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)   
+ [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

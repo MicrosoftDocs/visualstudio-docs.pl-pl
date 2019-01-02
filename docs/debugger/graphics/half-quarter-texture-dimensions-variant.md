@@ -1,8 +1,6 @@
 ---
 title: Ósmej tekstury wymiarów wariant | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94820b2930bbe689c37b90443ac007b137f162d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ecd986f56185b68c8d88788b569dcd2ee0398d6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956221"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Wariant wymiarów tekstury połowie/kwartał
 Maksymalne wymiary tekstury na tekstury, które nie są renderowane elementów docelowych.  
