@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_virtualbasepointeroffset — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fda4a74c1497d48baea1d9e1a817b4b12cf344
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1d55b63827c13c4b92ea2495de7849a321876a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902607"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 Pobiera przesunięcie wirtualnego podstawowy wskaźnik.  
@@ -27,7 +25,7 @@ Pobiera przesunięcie wirtualnego podstawowy wskaźnik.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_virtualBasePointerOffset (   
+HRESULT get_virtualBasePointerOffset (   
    LONG* pRetVal  
 );  
 ```  

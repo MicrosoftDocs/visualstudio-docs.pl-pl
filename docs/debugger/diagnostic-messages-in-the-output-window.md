@@ -1,8 +1,6 @@
 ---
 title: Wysyłanie komunikatów do okna danych wyjściowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906751"
 ---
 # <a name="send-messages-to-the-output-window"></a>Wysyłanie komunikatów do okna danych wyjściowych
 

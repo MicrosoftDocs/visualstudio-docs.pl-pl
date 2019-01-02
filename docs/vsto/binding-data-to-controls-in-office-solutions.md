@@ -1,8 +1,6 @@
 ---
 title: Wiązanie danych do kontrolek w rozwiązaniach pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898638"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Wiązanie danych do kontrolek w rozwiązaniach pakietu Office
   Możesz powiązać kontrolek formularzy Windows Forms i *hostowania kontrolek* na dokument programu Microsoft Office Word lub skoroszyt programu Microsoft Office Excel ze źródłem danych, więc formanty automatycznie wyświetlać dane. Dane można powiązać formanty w projektach na poziomie dokumentu i poziomie aplikacji.  
@@ -89,9 +87,9 @@ ms.locfileid: "53248023"
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Powiązanie danych w projektach dodatku narzędzi VSTO  
  W projektach dodatku narzędzi VSTO formanty można dodać tylko w czasie wykonywania. Poniższe tematy przedstawiają przykłady powiązanie danych w czasie wykonywania:  
   
--   [Wskazówki: Proste powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+-   [Przewodnik: Proste powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
   
--   [Wskazówki: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+-   [Przewodnik: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
   
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Aktualizowanie danych, który jest powiązany z kontrolki hosta  
  Powiązanie danych między źródłem danych i kontrolki hosta obejmuje aktualizację dwukierunkowe danych. W proste powiązanie danych, zmiany w źródle danych są automatycznie odzwierciedlane w kontrolce hosta, ale zmiany w kontrolce hosta wymagają jawnym wywołaniem można zaktualizować źródła danych. Przyczyną jest to, że w niektórych przypadkach, zmiany w jednym polu powiązanych z danymi nie są akceptowane, chyba że towarzyszy im zmiany w innym polu powiązanych z danymi. Na przykład możesz mieć dwa pola, jeden dla wieku i jeden dla lat doświadczenia. Środowisko nie może przekraczać wieku. Użytkownik nie może zaktualizować wiek od 50 do 25, a następnie doświadczenie od 30 do 10, chyba że użytkownik wprowadza zmiany w tym samym czasie. Aby rozwiązać ten problem, pola z proste powiązanie danych nie są aktualizowane, dopóki aktualizacje jawnie są wysyłane przez kod.  
@@ -111,5 +109,3 @@ ms.locfileid: "53248023"
  [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
  [Dane w pamięci podręcznej](../vsto/caching-data.md)   
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)  
-  
-  

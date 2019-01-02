@@ -1,9 +1,7 @@
 ---
 title: Elementy programu MSBuild | Dokumentacja firmy Microsoft
 description: Użyj atrybutu obejmują MSBuild element ItemGroup, aby określić pliki do uwzględnienia w kompilacji
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898703"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki (pliki zostały określone w `Include` atrybutu). Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.  
@@ -55,9 +53,9 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
 -   Począwszy od programu .NET Framework 3.5 `Target` elementy mogą zawierać [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementy, które mogą zawierać elementu elementów.  
   
 ##  <a name="reference-items-in-a-project-file"></a>Przywoływanie elementów w pliku projektu  
- Aby odwoływać się do typów elementów w całym pliku projektu, należy użyć składni @(\<ItemType >). Na przykład czy odwołanie do typu elementu w poprzednim przykładzie za pomocą `@(Compile)`. Przy użyciu tej składni, elementy można przekazać do zadania, określając typ elementu jako parametr danego zadania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
+ Aby odwoływać się do typów elementów w całym pliku projektu, należy użyć składni @(\<ItemType >). Na przykład czy odwołanie do typu elementu w poprzednim przykładzie za pomocą `@(Compile)`. Przy użyciu tej składni, elementy można przekazać do zadania, określając typ elementu jako parametr danego zadania. Aby uzyskać więcej informacji, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
   
- Domyślnie elementów typu elementu są oddzielone średnikami (;), gdy jest on rozwinięty. Można używać składni @(\<ItemType >, "\<separator >") do określenia separator inną niż domyślna. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Domyślnie elementów typu elementu są oddzielone średnikami (;), gdy jest on rozwinięty. Można używać składni @(\<ItemType >, "\<separator >") do określenia separator inną niż domyślna. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Użyj symboli wieloznacznych, aby określić elementy  
 
@@ -81,7 +79,7 @@ Następujący element zaznaczenie wszystkich `.vb` pliki na `D:` dysku:
 
 Jeśli chcesz dołączyć literał `*` lub `?` znaków w elemencie bez rozszerzenia symboli wieloznacznych, należy najpierw [ucieczki symboli wieloznacznych](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
+Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
 
 ##  <a name="use-the-exclude-attribute"></a>Użyj atrybutu wykluczania  
  Może zawierać elementów `Exclude` atrybut, który wyklucza określone elementy (pliki) z tego typu elementu. `Exclude` Atrybut jest zwykle używana wraz z symboli wieloznacznych. Na przykład dodaje następujący kod XML każdego *.cs* plików w katalogu, do typu elementu CSFile, z wyjątkiem *DoNotBuild.cs* pliku.  
@@ -99,7 +97,7 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [porady:
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="item-metadata"></a>Metadane elementu  
  Elementy może zawierać metadane, oprócz tych informacji w `Include` i `Exclude` atrybutów. Te metadane może służyć przez zadania podrzędne, które wymagają więcej informacji o elementach lub cele i zadania podrzędne usługi batch. Aby uzyskać więcej informacji, zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).  
@@ -326,9 +324,9 @@ Output:
 ## <a name="see-also"></a>Zobacz także  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
  [Program MSBuild](../msbuild/msbuild.md)   
- [Porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)   
- [Porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Porady: wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Instrukcje: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)   
+ [Instrukcje: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definicje elementów](../msbuild/item-definitions.md)   
  [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
  [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)

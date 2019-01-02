@@ -1,9 +1,6 @@
 ---
-title: 'Porady: dostarczanie kontekstu edytory | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dostarczanie kontekstu edytory | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8dec051aae8c5693d18a5cab302714fdf152f8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909914"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Porady: dostarczanie kontekstu edytorów
+# <a name="how-to-provide-context-for-editors"></a>Instrukcje: Dostarczanie kontekstu edytorów
 W edytorze kontekst jest aktywne, tylko wtedy, gdy Edytor ma fokus lub były wcześniej fokus natychmiast fokus został przeniesiony do okna narzędzi. Możesz podać kontekstu edytora, wykonując następujące czynności:  
   
 1. Utwórz pakiet z kontekstu.  

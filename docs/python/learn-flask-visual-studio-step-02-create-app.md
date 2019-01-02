@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności kroki tworzenia aplikacji i korzystanie z widoków i szablonów.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9803baf3e9e3f3f2c0d4c07c3f5ddfbf7833c7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905997"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Flask za pomocą widoków i szablonów stron
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji Flask za pomocą widoków i szablonów stron
 
-**Poprzedni krok: [Tworzenie projektu programu Visual Studio i rozwiązania](learn-flask-visual-studio-step-01-project-solution.md)**
+**Poprzedniego kroku: [Tworzenie projektu programu Visual Studio i rozwiązania](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Co znajduje się w kroku 1 w tym samouczku jest aplikacji Flask za pomocą jednej stronie, a cały kod w jednym pliku. Aby umożliwić do przyszłego rozwoju, najlepiej jest Refaktoryzacja kodu i tworzenia struktury szablony stron. W szczególności chcesz oddzielić kodu dla widoków aplikacji od innych aspektów, takich jak kod startowy.
 
@@ -32,7 +31,7 @@ W tym kroku teraz dowiesz się, jak:
 > - Refaktoryzacja kodu aplikacji do oddzielania widoków z uruchamiania kodu (krok 2 - 1)
 > - Renderowanie widoku, używając szablonu strony (krok 2 z 2)
 
-## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Krok 1 z 2: Refaktoryzacja projektu dalszych obsługi opracowywania aplikacji
+## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Krok 1 z 2 Refaktoryzuj projektu dalszych obsługi opracowywania aplikacji
 
 W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć pojedynczy *app.py* pliku, który zawiera kod uruchamiający wraz z jednego widoku. Aby zezwolić na dalszy rozwój aplikacji za pomocą wielu widoków i szablonów, najlepiej jest do oddzielania tych problemów.
 
@@ -109,7 +108,7 @@ Odpowiedź: Zatwierdzanie zmian do kontroli źródła tworzy rekord w dzienniku 
 
 Jak często zdecydujesz się i jak często wypychanie zatwierdzeń do repozytorium zdalnego są dwa różne problemy. Może wzrosnąć wiele zatwierdzeń w lokalnym repozytorium, przed wypchnięciem ich do repozytorium zdalnego. Ponownie jak często zatwierdzenia jest zależna od jak zespół chce zarządzać repozytorium.
 
-## <a name="step-2-2-use-a-template-to-render-a-page"></a>Krok 2 z 2: renderowanie strony za pomocą szablonu
+## <a name="step-2-2-use-a-template-to-render-a-page"></a>Krok 2 z 2 Użyj szablonu do renderowania strony
 
 `home` Funkcja, która należy do tej pory w *views.py* nie więcej niż odpowiedzi HTTP zwykłego tekstu dla strony. Jednak większość rzeczywistych stron sieci web, elastyczniejsze sformatowanego strony HTML, które często obejmują dane na żywo. W rzeczywistości głównym powodem, aby zdefiniować widoku, używając funkcji jest do generowania zawartości dynamicznej.
 
@@ -196,19 +195,19 @@ Ponieważ wartość zwracana dla widoku jest po prostu określonym ciągiem, mo�
 
 1. Zatwierdź zmiany do kontroli źródła i zaktualizować repozytorium zdalnego, jeśli to konieczne, zgodnie z opisem w [krok 1 z 2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pytanie: Czy szablony stron muszą znajdować się w oddzielnym pliku?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pytanie: Szablony stron mają znajdować się w oddzielnym pliku?
 
-Odpowiedź: Mimo że szablony są zazwyczaj obsługiwane w oddzielnych plikach HTML, umożliwia także szablonem wbudowanego. Przy użyciu oddzielnych plików jest zalecane, jednak do obsługi czystą separacji między znaczników i kodu.
+Odpowiedź: Mimo że szablony są zazwyczaj obsługiwane w oddzielnych plikach HTML, można też użyć szablonu wbudowanego. Przy użyciu oddzielnych plików jest zalecane, jednak do obsługi czystą separacji między znaczników i kodu.
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>Pytanie: Szablony korzystać tylko z rozszerzeniem pliku HTML?
 
-Odpowiedź: *.html* rozszerzenie dla plików szablonów strony jest opcjonalne, ponieważ zawsze zidentyfikować dokładną ścieżkę względną do pliku w pierwszym argumencie `render_template` funkcji. Jednak program Visual Studio (i innych edytorów) zazwyczaj zapewnia funkcje, takie jak kod zakończenia i składnia barwy z *.html* pliki, które przewyższa fakt, że stronie Szablony nie są ściśle HTML.
+Odpowiedź: *.Html* rozszerzenie dla plików szablonów strony jest opcjonalne, ponieważ zawsze zidentyfikować dokładną ścieżkę względną do pliku w pierwszym argumencie `render_template` funkcji. Jednak program Visual Studio (i innych edytorów) zazwyczaj zapewnia funkcje, takie jak kod zakończenia i składnia barwy z *.html* pliki, które przewyższa fakt, że stronie Szablony nie są ściśle HTML.
 
 W rzeczywistości podczas pracy z projektem Flask programu Visual Studio automatycznie wykrywa, gdy plik HTML, który jest edytowany jest faktycznie szablonem Flask i zapewnia niektórych funkcji autouzupełniania. Na przykład, po rozpoczęciu wpisywania Flask komentarz szablon strony `{#`, Visual Studio automatycznie umożliwia zamknięcie `#}` znaków. **Dodaj komentarz do zaznaczenia** i **Usuń komentarz zaznaczenia** poleceń (na **Edytuj** > **zaawansowane** menu i na pasku narzędzi) komentarze szablonu można także użyć zamiast komentarze HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pytanie: Uruchamiania projektu, I może zostać wyświetlony komunikat nie można odnaleźć szablonu. Co jest nie tak?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pytanie: Uruchomienie projektu, widzę błąd, którego nie można odnaleźć szablonu. Co jest nie tak?
 
-Odpowiedź: Jeśli widzisz błędy, których nie można znaleźć szablonu, upewnij się, dodaniu aplikacji do projektu Flask *settings.py* w `INSTALLED_APPS` listy. Bez tego wpisu Flask nie będzie wiedzieć, aby zobaczyć w aplikacji *szablony* folderu.
+Odpowiedź: Jeśli widzisz błędy, których nie można znaleźć szablonu, upewnij się, aplikacja może zostać dodana do projektu Flask *settings.py* w `INSTALLED_APPS` listy. Bez tego wpisu Flask nie będzie wiedzieć, aby zobaczyć w aplikacji *szablony* folderu.
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Pytanie: Szablony można podzielić na dalsze podfoldery?
 

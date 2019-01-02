@@ -1,8 +1,6 @@
 ---
 title: Polecenia Menu okna | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window menu commands
@@ -12,30 +10,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1379bb236b1b29cd5747e67e73abcb1bc069acb0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e90d6dc7074ad6d70be783326e7617d0fd7e337
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895652"
 ---
 # <a name="window-menu-commands"></a>Polecenia menu Okna
-**Okna** menu zawiera polecenia do zarządzania Spy ++ systemu windows.  
+**Okna** menu zawiera polecenia do zarządzania programu Spy ++ systemu windows.  
   
- **Kaskadowo**  
- Rozmieszcza wszystkie okna w kaskadowego wzorca.  
+ **Kaskadowe**  
+ Ponownie Rozmieszcza wszystkie systemy windows we wzorcu cascade.  
   
  **Sąsiadująco w poziomie**  
- Rozmieszczanie okien we wzorcu sąsiadująco w poziomie.  
+ Rozmieszczanie wszystkich okien we wzorcu poziomie kafelka.  
   
  **Sąsiadująco w pionie**  
- Rozmieszcza wszystkich okien we wzorcu sąsiadująco w pionie.  
+ Ponownie Rozmieszcza wszystkie systemy windows we wzorcu sąsiadująco w pionie.  
   
  **Rozmieść ikony**  
- Rozmieszcza ikony w widoku, jeśli zminimalizowany systemu windows.  
+ Rozmieszcza ikony, jeśli zminimalizowany systemu windows.  
   
  **Zamknij / Zamknij wszystkie**  
- Zamyka jednego lub wszystkich systemu windows w programie Spy ++.  
+ Zamyka jeden lub wszystkie okna w programie Spy ++.  
   
  **Odśwież**  
  Odświeża aktualnie wybranego widoku.  

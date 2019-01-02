@@ -1,9 +1,6 @@
 ---
 title: Tworzenie kategorii ustawień | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935622"
 ---
 # <a name="create-a-settings-category"></a>Tworzenie kategorii ustawień
 
@@ -121,7 +118,7 @@ Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [
 
      **Eksportowanie ukończone** strony zgłasza, że Twoje ustawienia zostały pomyślnie wyeksportowane.
 
-10. Na **pliku** menu wskaż **Otwórz**, a następnie kliknij przycisk **pliku**. Znajdź *MySettings.vssettings* i otwórz go.
+10. Na **pliku** menu wskaż **Otwórz**, a następnie kliknij przycisk pliku. Znajdź *MySettings.vssettings* i otwórz go.
 
      Możesz znaleźć kategorii właściwości, który został wyeksportowany w poniższej sekcji pliku (swoje identyfikatory GUID będą się różnić).
 

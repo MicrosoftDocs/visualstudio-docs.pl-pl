@@ -1,8 +1,6 @@
 ---
 title: Idiasession::findsymbolbyrvaex — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7dc9cfb435da1a4204c8a7ed23e398478aef0ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 166a5cd0de9980a72cdcf83a4e4cd12f02642d90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895116"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego względnych adresów wirtualnych (RVA) i przesunięcie.  
@@ -27,7 +25,7 @@ Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do 
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT findSymbolByRVAEx (   
+HRESULT findSymbolByRVAEx (   
    DWORD        rva,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol,  

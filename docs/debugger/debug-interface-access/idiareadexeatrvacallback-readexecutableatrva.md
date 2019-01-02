@@ -1,8 +1,6 @@
 ---
 title: Idiareadexeatrvacallback::readexecutableatrva — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69afacf68c77dcb2bca7c951dbd2a1ee9a344cfb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8536d4ef7c6767920eb4d1bc9f3d0dcb44349714
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907245"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 Odczytuje określoną liczbę bajtów, zaczynając od określonego względny adres wirtualny (RVA) z pliku wykonywalnego.  
@@ -27,7 +25,7 @@ Odczytuje określoną liczbę bajtów, zaczynając od określonego względny adr
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT ReadExecutableAtRVA (   
+HRESULT ReadExecutableAtRVA (   
    DWORD  relativeVirtualAddress,  
    DWORD  cbData,  
    DWORD* pcbData,  

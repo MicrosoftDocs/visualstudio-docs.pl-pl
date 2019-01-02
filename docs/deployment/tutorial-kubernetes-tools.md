@@ -1,20 +1,18 @@
 ---
 title: Samouczka dotyczącego narzędzia Kubernetes | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 06/08/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cb250cd319f28b444a8f3bfecef421ecbaac9b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848366"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 

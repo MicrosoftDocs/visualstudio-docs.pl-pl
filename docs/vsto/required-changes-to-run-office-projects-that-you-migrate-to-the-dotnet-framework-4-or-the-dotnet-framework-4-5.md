@@ -1,9 +1,6 @@
 ---
 title: Zmiany wymagane w celu uruchamiania projektów pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 78a46fbffdbf849ab9f9584b72c520d5aa1d3624
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 819a3f1c0ea4541bee55dca2402cac6dbf9848cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917621"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Zmiany wymagane w celu uruchamiania projektów pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
   Jeśli platforma docelowa projektu pakietu Office jest zmieniana na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy z wcześniejszej wersji programu .NET Framework, należy wykonać następujące zadania, aby upewnić się, że rozwiązanie można uruchomić na komputerze deweloperskim i na komputerach użytkowników końcowych:  
@@ -67,12 +64,10 @@ ms.locfileid: "50670796"
 ## <a name="update-the-prerequisites-for-deployment"></a>Wymagania wstępne dotyczące wdrażania aktualizacji  
  Jeśli przekierowanie projektu pakietu Office w taki sposób, aby [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, należy również zaktualizować odpowiednie wstępnie wymaganego programu .NET Framework w **wymagania wstępne** okno dialogowe. W przeciwnym razie wdrażanie ClickOnce lub projekt InstallShield Limited Edition wyszukuje i instaluje poprzedniej wersji programu .NET Framework.  
   
- Aby uzyskać więcej informacji o aktualizowaniu wymagania wstępne dotyczące wdrażania na komputerach użytkowników końcowych, zobacz [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Aby uzyskać więcej informacji o aktualizowaniu wymagania wstępne dotyczące wdrażania na komputerach użytkowników końcowych, zobacz [jak: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Ponownie zainstaluj rozwiązania na komputerach użytkowników końcowych  
  Jeśli użycie technologii ClickOnce do wdrażania rozwiązania pakietu Office, który jest przeznaczony dla .NET Framework 3.5, a następnie zmień platformę docelową projektu, aby [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, użytkownicy końcowi należy odinstalować rozwiązania, a następnie zainstaluj ponownie rozwiązanie po ponownie ją opublikować. Jeśli publikujesz przekierowane rozwiązanie, a rozwiązanie jest aktualizowana na komputerach użytkowników końcowych, użytkownicy końcowi będą otrzymywać <xref:System.Runtime.InteropServices.COMException> uruchamiania do zaktualizowane rozwiązanie.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  
-  
-  

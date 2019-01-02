@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework'
+title: 'Przewodnik: Tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cbafb006091956ce5359bc6b575accd057b2ee37
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b0353688be3b6fa62a0f33338461eeab78ee33d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888507"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: Tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework
 W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] hostowaną w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, a następnie Uzyskaj dostęp z aplikacji Windows Forms.
 
 W tym przewodniku możesz:
@@ -70,7 +69,7 @@ W pierwszym kroku dodasz projekt sieci web do obsługi usługi.
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-2. W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**  i **sieci Web** węzłów, a następnie wybierz polecenie **Aplikacji sieci Web ASP.NET** szablonu.
+2. W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** i **sieci Web** węzłów, a następnie wybierz **ASP. Aplikacja sieci Web NET** szablonu.
 
 3. W **nazwa** tekstu wprowadź **NorthwindWeb**, a następnie wybierz **OK** przycisku.
 
@@ -156,7 +155,7 @@ W następnych krokach utworzysz aplikację klienta Windows Forms do korzystania 
 
 1. Na pasku menu wybierz plik, **Dodaj** > **nowy projekt**.
 
-2. W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**  węzła, wybierz **Windows** węzła, a następnie wybierz pozycję **Windows Forms aplikacji**.
+2. W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** węzła, wybierz **Windows** węzła, a następnie wybierz polecenie  **Windows Forms aplikacji**.
 
 3. W **nazwa** tekstu wprowadź `NorthwindClient`, a następnie wybierz **OK** przycisku.
 
@@ -291,4 +290,4 @@ W następnym opcjonalnym kroku dowiesz się, jak filtrować dane, które są zwr
 ## <a name="see-also"></a>Zobacz także
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

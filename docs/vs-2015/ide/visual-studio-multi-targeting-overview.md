@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54aabe4871ee7f40e32d42cefd8d291276f361cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cf64514f1510a9d4d65930bfc22dc322569853c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886504"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Wielowersyjność kodu Visual Studio ― Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +64,7 @@ W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można okre�
 >  Adresowanie nie gwarantuje, że Twoja aplikacja będzie działać poprawnie. Należy przetestować aplikację w taki sposób, aby upewnić się, że jest uruchamiana w wersji docelowej. Nie można wskazywać wersji struktury, które są starsze niż .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Wybieranie wersji platformy docelowej
- Podczas tworzenia projektu wybierz docelową [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersja **nowy projekt** okno dialogowe. Lista dostępnych szablonów projektów zostanie odfiltrowana według wyboru. W istniejącym projekcie można zmienić docelową [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Podczas tworzenia projektu wybierz docelową [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersja **nowy projekt** okno dialogowe. Lista dostępnych szablonów projektów zostanie odfiltrowana według wyboru. W istniejącym projekcie można zmienić docelową [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 >  W wersjach Express programu Visual Studio, nie można ustawić platformę docelową **nowy projekt** okno dialogowe.
@@ -81,7 +80,7 @@ W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można okre�
  Aby uzyskać więcej informacji na temat odwołań do zestawów, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Włączanie funkcjonalności LINQ
- Kiedy środowiskiem docelowym .NET Framework 3.5 lub nowszy, odniesienie do System.Core i importu poziomu projektu dla System.Linq (tylko w Visual Basic) są dodawane automatycznie. Jeśli chcesz korzystać z funkcji LINQ, użytkownik musi również włączyć opcję wnioskowania (tylko w Visual Basic). Odwołanie i import są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji systemu .NET Framework. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie projektu LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ Kiedy środowiskiem docelowym .NET Framework 3.5 lub nowszy, odniesienie do System.Core i importu poziomu projektu dla System.Linq (tylko w Visual Basic) są dodawane automatycznie. Jeśli chcesz korzystać z funkcji LINQ, użytkownik musi również włączyć opcję wnioskowania (tylko w Visual Basic). Odwołanie i import są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji systemu .NET Framework. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektu LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Zobacz też
  [Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework Wielowersyjność kodu dla projektów sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [wymagań dotyczących zgodności i systemu platformy](http://www.microsoft.com/visualstudio/eng/products/compatibility)

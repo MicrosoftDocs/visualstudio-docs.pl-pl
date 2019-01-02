@@ -1,8 +1,6 @@
 ---
-title: 'Porady: użycie tej samej wartości docelowej w wielu plikach projektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe68d4d6d970ee0c1e5db566caf7c812436589c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7ace0e86a5c65afa2c8c5fb12364b9dba66c093e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905468"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Porady: użycie tej samej wartości docelowej w wielu plikach projektów
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów
 Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu może znasz muszą używać tych samych zadań i obiekty docelowe w plikach inny projekt. Zamiast w każdym pliku projektu w tym pełny opis tych zadań lub miejsc docelowych, można zapisać elementu docelowego w oddzielny plik projektu i następnie zaimportować ten projekt do innego projektu, który musi używać obiektu docelowego.  
   
 ## <a name="use-the-import-element"></a>Użyj elementu importu  

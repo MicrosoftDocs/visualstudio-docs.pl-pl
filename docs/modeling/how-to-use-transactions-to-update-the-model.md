@@ -1,5 +1,5 @@
 ---
-title: 'Porady: użycie transakcji do aktualizacji modelu'
+title: 'Instrukcje: Użycie transakcji do aktualizacji modelu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 97eb050bb99c522f5c5e97ea3355f3146086c29e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f42c7a384b4f46864e4c79d386cd82ca39949a61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938345"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Porady: użycie transakcji do aktualizacji modelu
+# <a name="how-to-use-transactions-to-update-the-model"></a>Instrukcje: Użycie transakcji do aktualizacji modelu
 Transakcje upewnij się, że zmiany wprowadzone do magazynu są traktowane jako grupa. Zmiany, które są grupowane może być przekazana lub wycofana jako pojedyncza jednostka.
 
  Zawsze, gdy kod programu modyfikuje, dodaje lub usuwa dowolnego elementu w Store w Visual Studio Visualization i Modeling SDK, jego musi zrobić wewnątrz transakcji. Musi być aktywne wystąpienie <xref:Microsoft.VisualStudio.Modeling.Transaction> skojarzone z Store, w przypadku zmiany. Dotyczy to wszystkich elementów modelu, relacje, kształty, diagramy i ich właściwości.

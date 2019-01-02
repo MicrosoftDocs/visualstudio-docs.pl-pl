@@ -1,8 +1,6 @@
 ---
 title: Debugowanie aplikacji ASP.NET wdrożonej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 06/30/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,26 +20,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b8c7c9ea2f280eaf60f4592f149ed2989d862b9b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 724f250e6f41203bc1fe56c88703609e67072783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908374"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debugowanie ASP.NET wdrożonej aplikacji
-Aby użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowania wdrożonych aplikacji, należy dołączyć do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego przetwarzania i upewnij się, że debuger ma dostęp do symboli dla aplikacji. Należy również zlokalizuj i Otwórz pliki źródłowe dla aplikacji. Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [porady: znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), i [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
+Aby użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowanie wdrożonej aplikacji, należy dołączyć do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego przetwarzania i upewnij się, że debuger ma dostęp do symboli dla aplikacji. Należy również zlokalizować i Otwórz pliki źródłowe dla aplikacji. Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [jak: Znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), i [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
 
 > [!WARNING]
-> Po dołączeniu do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego do debugowania i trafień punktu przerwania, wszystkie zarządzane kodu w zatrzymanie procesu roboczego. Zatrzymywanie zarządzanego kodu w procesie roboczym może spowodować przerwy w pracy dla wszystkich użytkowników na serwerze. Przed debugowania na serwerze produkcyjnym, należy wziąć pod uwagę potencjalnego wpływu na pracę w środowisku produkcyjnym. 
+> Jeśli dołączysz do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego do debugowania i trafiony punkt przerwania, wszystkie zarządzane kodu w zatrzymanie procesu roboczego. Zatrzymywanie zarządzanego kodu w procesie roboczym, może spowodować przerwy w pracy dla wszystkich użytkowników na serwerze. Przed debugowania na serwerze produkcyjnym, należy wziąć pod uwagę potencjalny wpływ na pracy w środowisku produkcyjnym. 
   
-Dołączanie do procesu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy jest taka sama jak dołączanie do zdalnego procesu. Gdy użytkownik jest podłączony, jeśli nie masz poprawny projekt jest otwarty, zostanie wyświetlone okno dialogowe, gdy dzieli aplikację. To okno dialogowe pyta o lokalizacji plików źródłowych dla aplikacji. Nazwa pliku określona w oknie dialogowym musi odpowiadać nazwie określonej w symbole debugowania na serwerze sieci Web. Aby uzyskać więcej informacji, zobacz [dołączyć do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md). Aby skonfigurować zdalne debugowanie w usługach IIS, zobacz [zdalnego debugowania ASP.NET na komputerze zdalnym IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md).
+Dołączanie do procesu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego jest taki sam jak dołączanie do zdalnego procesu. Gdy użytkownik jest podłączony, jeśli nie masz odpowiedni projekt, Otwórz, pojawi się okno dialogowe, gdy aplikacja zostanie przerwany. To okno dialogowe poprosi o podanie lokalizacji plików źródłowych dla aplikacji. Nazwa pliku, który określisz w oknie dialogowym musi odpowiadać nazwa pliku określona w symbole debugowania na serwerze sieci Web. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md). Aby skonfigurować zdalne debugowanie w programie IIS, zobacz [zdalnego debugowania ASP.NET, na komputerze zdalnym IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md).
  
 > [!NOTE]
->  Wiele [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] bibliotek DLL, które zawierają logiki biznesowej lub inny kod przydatne odwołania aplikacji sieci Web. Odniesienie kopiuje biblioteki DLL z komputera lokalnego, w folderze \bin aplikacji sieci Web katalogu wirtualnego, podczas wdrażania aplikacji. Podczas debugowania, należy pamiętać, że aplikacja sieci Web odwołuje się do tej kopii biblioteki dll, a nie kopię na komputerze lokalnym. 
+>  Wiele [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] bibliotek DLL, które zawierają logikę biznesową lub inny kod przydatne odwoływać się do aplikacji sieci Web. Odniesienie kopiuje biblioteki DLL z komputera lokalnego, do folderu \bin katalog wirtualny dla aplikacji sieci Web, gdy aplikacja jest wdrażana. Podczas debugowania, należy pamiętać, że aplikacja sieci Web odwołuje się do tej kopii biblioteki dll, a nie kopię na komputerze lokalnym. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Porady: Włączanie debugowania dla aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Porady: znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)   
- [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Instrukcje: Włącz debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+ [Instrukcje: Znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)   
+ [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

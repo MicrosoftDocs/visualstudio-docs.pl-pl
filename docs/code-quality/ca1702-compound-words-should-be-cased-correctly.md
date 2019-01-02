@@ -1,8 +1,7 @@
 ---
-title: 'CA1702: Wyrazy złożone należy zapisywać z uwzględnieniem wielkości liter'
+title: 'CA1702: Wyrazy złożone powinny mieć prawidłową wielkość liter'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1702
@@ -16,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4703c43c81df13432f45fb4ba519a02b39a839e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67050291a43be12bab3ac7aee71497e2f58b045b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829579"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Wyrazy złożone należy zapisywać z uwzględnieniem wielkości liter
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Wyrazy złożone powinny mieć prawidłową wielkość liter
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Uruchamiany po wybraniu podziału zestawów.<br /><br /> Bez podziału — po dotyczące parametrów typu.|
+|Zmiana kluczowa|Istotne, kiedy jest uruchamiany na zestawach.<br /><br /> Bez podziału — gdy wywoływane w parametrach typu.|
 
 ## <a name="cause"></a>Przyczyna
 
@@ -38,17 +37,17 @@ Nazwa identyfikatora zawiera wiele wyrazów i co najmniej jeden z nich wydaje si
 
 ## <a name="rule-description"></a>Opis reguły
 
-Nazwa identyfikatora jest podzielony na wyrazy, które są oparte na wielkość liter. Każda kombinacja ciągłe word dwie jest sprawdzana przez moduł sprawdzania pisowni biblioteki. Jeśli został on rozpoznany, identyfikator tworzy naruszenia reguły. Przykłady wyrazy złożone, które powodują naruszenie to "Kontrolną" i "MultiPart", które powinny być pisane w formie "Kontrolną" i "Multipart", odpowiednio. Ze względu na poprzednie użycie wspólnej, kilka wyjątków są wbudowane w zasady i oflagowane kilka pojedynczych słów, takich jak "Narzędzi" i "Filename", które powinny mieć prawidłową wielkość jako dwa różne wyrazy (w tym przypadku "Narzędzi" i "FileName").
+Nazwa identyfikatora jest dzielony na wyrazy, które są oparte na wielkość liter w wyrazie. Kombinacjami word dwóch sąsiadujących jest sprawdzana przez bibliotekę sprawdzania pisowni Microsoft. Jeśli został rozpoznany identyfikator powoduje naruszenie reguły. Przykłady wyrazy złożone, powodujących naruszenie to "CheckSum" i "MultiPart", które powinny być pisane w formie "Checksum" i "Multipart", odpowiednio. Ze względu na poprzednie powszechnie kilkoma wyjątkami są wbudowane w zasady i są oznaczane kilka pojedyncze wyrazy, takie jak "Toolbar" i "Filename", które powinny mieć prawidłową wielkość jako dwa różne wyrazy (w tym przypadku "ToolBar" i "FileName").
 
-Konwencje nazewnictwa Podaj wygląd wspólnej dla bibliotek przeznaczonych środowisko uruchomieniowe języka wspólnego. Zmniejsza to nauki jest wymagany dla nowej biblioteki oprogramowania, którą można tworzyć bardziej niezawodne klienta, czy biblioteka został opracowany przez osobę, która ma doświadczenia w rozwijającym się kodu zarządzanego.
+Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
 
-## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Zmień nazwę, dzięki czemu jest prawidłową wielkość liter.
+Zmień nazwę, dzięki czemu jest poprawna.
 
 ## <a name="language"></a>Język
 
-Moduł sprawdzania pisowni obecnie sprawdza tylko względem słowniki kulturę opartą na języku angielskim. Kultura projektu w pliku projektu można zmienić, dodając **CodeAnalysisCulture** elementu.
+Moduł sprawdzania pisowni sprawdza obecnie wyłącznie w odniesieniu do słowników kulturę opartą na język angielski. Możesz zmienić kulturę projektu w pliku projektu, dodając **CodeAnalysisCulture** elementu.
 
 Na przykład:
 
@@ -59,17 +58,17 @@ Na przykład:
 ```
 
 > [!IMPORTANT]
-> Jeśli ustawisz kultury na inny niż kulturę opartą na język angielski, to reguł analizy kodu dyskretnie jest wyłączona.
+> Jeśli ustawisz kultury na coś innego niż kulturę opartą na język angielski, ten reguł analizy kodu dyskretnie jest wyłączone.
 
-## <a name="when-to-suppress-warnings"></a>Kiedy pomijanie ostrzeżeń
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli obie części wyraz złożony są rozpoznawane przez słownik pisowni i celem jest użycie dwóch wyrazów.
+Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli obie części wyraz złożony są rozpoznawane przez słownik sprawdzania pisowni, a celem jest użycie dwóch słów.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
 
 - [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,9 +1,6 @@
 ---
 title: Konfiguracja rozwiązania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: caf55b341cc34bb4101f27d2468f0da8e5cf6c96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835037"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 Konfiguracje rozwiązania przechowywania właściwości poziomie rozwiązania. Bezpośrednie ich zachowanie **Start** klucza (F5) i **kompilacji** poleceń. Domyślnie te polecenia kompilacji i uruchomić z konfiguracji debugowania. Oba polecenia są wykonywane w kontekście konfiguracji rozwiązania. Oznacza to, czy użytkownika można oczekiwać, że F5 do uruchamiania i kompilacji, niezależnie od aktywnego rozwiązania są konfigurowane za pomocą ustawień. Środowisko zaprojektowano pod kątem rozwiązań, a nie z projektów, jeśli chodzi o tworzenie i uruchamianie.  

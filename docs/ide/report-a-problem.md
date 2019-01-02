@@ -1,9 +1,8 @@
 ---
-title: Zgłoś problem
+title: zgłaszanie problemu
 description: Zawiera omówienie raportu narzędzie Problem i zawiera stany problem i definicje
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
@@ -11,14 +10,14 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934362"
 ---
-# <a name="overview-report-a-problem"></a>Omówienie: Zgłoś Problem
+# <a name="overview-report-a-problem"></a>Przegląd: Zgłoś Problem
 
 Raport narzędzia Problem umożliwia społeczności deweloperów programu Visual Studio, aby przesyłać problemy. Każdej z nich raporty o problemach staje się elementu roboczego na naszych podstawowych inżynierii systemu, co pozwala na angażowanie bezpośrednio z naszych zespołów produktu, aby pomóc nam identyfikować i rozwiązywać problemy z atrakcyjnych. Twoja opinia przesłane zawierających rozbudowane informacje diagnostyczne jest krytyczne dla poprawy rodziny produktów Visual Studio. Naprawdę Doceniamy poświęcenie czasu na zgłaszanie problemów.
 

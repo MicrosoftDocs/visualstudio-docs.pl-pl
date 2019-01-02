@@ -1,9 +1,6 @@
 ---
 title: Identyfikatorów CatID obiektów, które zwykle służą do rozszerzania projektów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, CATIDs
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4d3bc6ce2732ef2b360d083d207bef5b2666b2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2b39faae51029eb962a377a5c658af6336bcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835961"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>Identyfikatorów CatID obiektów, które zwykle służą do rozszerzania projektów
 Poniższa tabela zawiera listę identyfikatorów CatID, które służą do rozszerzania `Project` i `ProjectItem` obiektów automatyzacji, umożliwiających [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektów. Tych identyfikatorów CatID są zdefiniowane w *VSLangProj.olb*.  

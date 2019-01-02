@@ -1,8 +1,6 @@
 ---
 title: Idiasourcefile::get_checksum — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0484fce6f5355361c0c5156cd3c7ad827775c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 463720503440771dcbdfbef39703a53cdc875e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843349"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 Pobiera bajtów sumy kontrolnej.  
@@ -27,7 +25,7 @@ Pobiera bajtów sumy kontrolnej.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_checksum (   
+HRESULT get_checksum (   
    DWORD  cbData,  
    DWORD* pcbData,  
    BYTE   data[]  

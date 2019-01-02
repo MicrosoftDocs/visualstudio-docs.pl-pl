@@ -1,8 +1,6 @@
 ---
-title: Wybierz punkty przerwania — okno dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wybierz punkty przerwania, okno dialogowe | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898794"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Wybierz punkty przerwania — okno dialogowe
-**Wybierz punkty przerwania** zostanie otwarte okno dialogowe, gdy spróbujesz ustawić punkt przerwania z niejednoznaczny wprowadzanie w **nowego punktu przerwania** okno dialogowe. Typowym przykładem niejednoznaczne danych wejściowych jest nazwą przeciążonej funkcji.  
+**Wybierz punkty przerwania** zostanie otwarte okno dialogowe, gdy użytkownik próbuje ustawić punkt przerwania z niejednoznaczne wejścia w **nowego punktu przerwania** okno dialogowe. Typowym przykładem niejednoznacznego wejścia jest nazwa funkcji przeładowanej.  
   
  **Punkty przerwania**  
- Listy możliwych punktów przerwania, które można ustawić w oparciu niejednoznaczne danych wejściowych. Możesz wybrać jeden lub więcej punktów przerwania, aby ustawić.  
+ Wskazuje możliwe punkty przerwania, które mogą być ustawione na podstawie niejednoznaczne dane wejściowe. Można wybrać jeden lub więcej punktów przerwania do ustawienia.  
   
  **Wszystkie**  
- Wybiera wszystkie punkty przerwania na liście **punktów przerwania** pole.  
+ Zaznacza wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.  
   
  **Brak**  
- Czyści wszystkie punkty przerwania na liście **punktów przerwania** pole.  
+ Czyści wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)

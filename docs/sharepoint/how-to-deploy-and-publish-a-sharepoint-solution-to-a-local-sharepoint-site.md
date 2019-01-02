@@ -1,13 +1,8 @@
 ---
-title: 'Porady: wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,37 +13,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e288b5a284ca4155cf70f4458b5b490ca4289cbe
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8dd0dd78ca8f6b6f9791a657546cabc0d098b563
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835329"
 ---
-# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Porady: wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint
-  Można wdrożyć lub publikowanie rozwiązań programu SharePoint do lokalnego serwera programu SharePoint na komputerze deweloperskim. Kopie procesu wdrażania *WSP* pliku na serwerze programu SharePoint, instaluje rozwiązanie, a następnie aktywuje funkcji. Publikowanie przetwarzać tylko kopie *WSP* pliku na serwerze programu SharePoint i instaluje je. Należy ręcznie uaktywnić go w celu włączenia go w programie SharePoint.  
+# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Instrukcje: Wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie SharePoint
+  Można wdrożyć i publikować rozwiązań programu SharePoint na lokalnym serwerze programu SharePoint na komputerze deweloperskim. Kopiuje procesu wdrażania *.wsp* pliku na serwerze programu SharePoint, instaluje rozwiązanie, a następnie aktywuje funkcje. Publikowanie przetwarzać tylko kopie *.wsp* pliku na serwerze programu SharePoint i instaluje je. Należy ręcznie aktywuj go, aby ją włączyć w programie SharePoint.  
   
-## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Aby wdrożyć rozwiązanie programu SharePoint do lokalnego serwera programu SharePoint  
+## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Aby wdrożyć rozwiązania programu SharePoint do lokalnego serwera programu SharePoint  
   
 1.  W **Eksploratora rozwiązań**, wybierz projekt, który chcesz wdrożyć.  
   
 2.  Na pasku menu wybierz **kompilacji**, **wdrożyć rozwiązanie**.  
   
-     *WSP* pliku jest tworzony i zainstalowane na lokalnym serwerze programu SharePoint. Ponadto funkcje zostaną aktywowane.  
+     *.Wsp* pliku jest tworzony i zainstalowane na lokalnym serwerze programu SharePoint. Ponadto funkcje zostaną aktywowane.  
   
-## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Publikowanie rozwiązania SharePoint lokalny serwer SharePoint  
+## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Publikowanie rozwiązania SharePoint na lokalnym serwerze programu SharePoint  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu programu SharePoint, które chcesz opublikować, a następnie wybierz pozycję **publikowania**.  
+1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu programu SharePoint, który chcesz opublikować, a następnie wybierz **Publikuj**.  
   
-2.  W **publikowania** oknie dialogowym wybierz **publikowanie w systemie plików** przycisk opcji.  
+2.  W **Publikuj** okna dialogowego wybierz **opublikowanie w systemie plików** przycisku opcji.  
   
-3.  W **lokalizacji docelowej** polu tekstowym wprowadź ścieżkę lokalną, a następnie wybierz **publikowania** przycisku.  
+3.  W **lokalizacji docelowej** polu tekstowym wprowadź ścieżkę lokalną, a następnie wybierz **Publikuj** przycisku.  
   
-     W programie Visual Studio jest wyświetlany postęp publikowania **dane wyjściowe** okna. Po zakończeniu procesu, rozwiązania (*WSP*) plik jest zainstalowany na lokalnym serwerze programu SharePoint. Jednak on nadal należy aktywować do użycia w programie SharePoint. Jeśli istnieje już plik rozwiązania, błąd jest zgłaszany oraz zapyta, czy chcesz zastąpić istniejący plik. Aby uzyskać informacje na temat uaktualniania pakietu, zobacz sekcję dotyczącą uaktualnianie pakietów zdalnych w [porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+     Publikowanie postępu jest wyświetlana w programie Visual Studio **dane wyjściowe** okna. Po zakończeniu procesu rozwiązania (*.wsp*) plik jest zainstalowany na lokalnym serwerze programu SharePoint. Jednak go nadal należy aktywować ma być używany w programie SharePoint. Jeśli plik rozwiązania już istnieje, występuje błąd i pyta, czy chcesz zastąpić istniejący plik. Aby uzyskać informacje na temat uaktualniania pakietu, zobacz sekcję na temat uaktualniania pakiety zdalne w [jak: Wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ## <a name="see-also"></a>Zobacz także
- [Porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
+ [Instrukcje: Wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
  [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

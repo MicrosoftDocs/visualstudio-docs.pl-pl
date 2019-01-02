@@ -3,7 +3,6 @@ title: Zmierzyć wydajność kodu w języku Python
 description: Użyj profilera Visual Studio, aby sprawdzić wydajność kodu w języku Python, używając interpretery na podstawie języka CPython.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 931bbcea67d8595ec171ef7e08756aa5b84cc2e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 30fb65214db1eda64ef9b39f74d1bb534ba6af91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929727"
 ---
 # <a name="profile-python-code"></a>Profiluj kod języka Python
 

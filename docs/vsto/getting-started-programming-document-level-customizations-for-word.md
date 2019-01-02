@@ -1,9 +1,6 @@
 ---
 title: Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904802"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word
   Jeśli możesz po prostu zaczynasz, tworzenia dostosowań poziomie dokumentu dla programu Microsoft Word pakietu Office przy użyciu programu Visual Studio, Oto, co musisz wiedzieć.  
@@ -74,5 +71,3 @@ ms.locfileid: "53648416"
  [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)   
  [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)   
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

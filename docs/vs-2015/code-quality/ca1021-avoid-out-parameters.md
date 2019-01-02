@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3f90b4487824695fe0045c06638679607e4464b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e68f092212f8a2514d81cf22d88f8f8289e4173
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907954"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: Unikanie parametrów wyjściowych
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: Unikaj parametrów out
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -97,6 +96,3 @@ ms.locfileid: "49917675"
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1045: Nie przekazuj typów przez odwołanie](../code-quality/ca1045-do-not-pass-types-by-reference.md)
-
-
-

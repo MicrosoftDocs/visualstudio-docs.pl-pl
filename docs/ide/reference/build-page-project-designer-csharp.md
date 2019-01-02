@@ -2,7 +2,6 @@
 title: Strona kompilacji, Projektant projektu (C#)
 ms.date: 06/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908020"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 Użyj **kompilacji** strony **projektanta projektu** do określania właściwości konfiguracji kompilacji projektu. Ten temat dotyczy [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] wyłącznie dla projektów.
@@ -33,11 +32,11 @@ Aby uzyskać dostęp do **kompilacji** wybierz węzeł projektu (nie **rozwiąza
 Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.
 
 > [!NOTE]
-> Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. Dlatego te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [porady: zestaw debugowania i zwalniania konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md).
+> Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. Dlatego te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfiguracja** określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **aktywna (debugowanie)** (to jest wartość domyślna), **debugowania**, **wersji**, lub **wszystkie konfiguracje**.
 
-**Platforma** określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawieniem domyślnym jest **aktywna (dowolny procesor CPU)**. Możesz zmienić aktywną platformę przy użyciu **programu Configuration Manager**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
+**Platforma** określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawieniem domyślnym jest **aktywna (dowolny procesor CPU)**. Możesz zmienić aktywną platformę przy użyciu **programu Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Ogólne
 Poniższe opcje umożliwiają skonfigurowanie kilku ustawień kompilatora języka C#.

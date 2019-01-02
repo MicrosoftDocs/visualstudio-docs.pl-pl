@@ -1,9 +1,6 @@
 ---
 title: Typowe zadania w programowaniu pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffdf53a6317f2b06ea550075c104f0528a35c5de
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 234f5c70c05e058cac084780ab2777d9f302834a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911204"
 ---
 # <a name="common-tasks-in-office-programming"></a>Typowe zadania w programowaniu pakietu Office
   Ten temat jest przeznaczony do pomóc w znalezieniu odpowiedzi na następujące kategorie często zadawane pytania dotyczące programowania rozwiązań pakietu Office przy użyciu programu Visual Studio.  
@@ -237,5 +234,3 @@ ms.locfileid: "53441759"
  [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Typ funkcji według aplikacji pakietu Office i projekt](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

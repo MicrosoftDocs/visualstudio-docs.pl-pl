@@ -1,9 +1,8 @@
 ---
-title: Dostępność produktów i usług firmy Microsoft
+title: Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 description: Dowiedzieć się więcej na temat produktów i usług firmy Microsoft, która może sprawić, nasze systemy operacyjne, programy i aplikacje bardziej dostępny dla każdego, tym osobom niepełnosprawnym.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -21,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886322"
 ---
-# <a name="accessibility-products-and-services-from-microsoft"></a>Dostępność produktów i usług firmy Microsoft
+# <a name="accessibility-products-and-services-from-microsoft"></a>Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 
 > [!TIP]
 > Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu do programu Visual Studio, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.

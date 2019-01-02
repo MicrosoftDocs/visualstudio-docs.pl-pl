@@ -2,7 +2,6 @@
 title: Analiza kodu dla C/C++ — Omówienie
 ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -23,12 +22,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896399"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu C/C++ — Przegląd
 

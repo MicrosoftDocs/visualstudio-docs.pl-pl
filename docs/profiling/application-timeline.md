@@ -2,7 +2,6 @@
 title: Analizowanie zużycia zasobów w aplikacjach XAML
 ms.custom: seodec18
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 32368b280faf7b87aa128865cf169c7675a58c95
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 96d770679055acd39f0913aef3e8a38281201762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911315"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie zużycia zasobów i aktywności wątku interfejsu użytkownika (XAML)
 
@@ -124,7 +123,7 @@ Użyj **szczegóły osi czasu** narzędzi, aby sortowanie, filtrowanie i podaj a
   
 ## <a name="see-also"></a>Zobacz także
 
-- [Blog zespołu programu WPF: nowy interfejs użytkownika narzędzia do analizy wydajności dla aplikacji WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
+- [Blog zespołu programu WPF: Nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
 - [Wydajność — najlepsze rozwiązania dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Optymalizowanie wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
 - [Profilowanie w programie Visual Studio](../profiling/index.md)  

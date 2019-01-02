@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919472"
 ---
 # <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 
@@ -49,7 +48,7 @@ Aby naprawić ten błąd:
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Błąd podczas uzyskiwania dostępu do usługi za pośrednictwem pulpitu zdalnego
 
-Gdy użytkownik uzyskuje dostęp do usługi WCF hostowanej w sieci Web za pośrednictwem połączenia pulpitu zdalnego i użytkownik nie ma uprawnienia administracyjne, zostanie użyte uwierzytelnianie NTLM. Jeśli użytkownik nie ma uprawnienia administracyjne, użytkownik może zostać wyświetlony następujący komunikat o błędzie: "żądanie HTTP nie ma autoryzacji przez schemat uwierzytelniania klienta"Anonymous". Nagłówek uwierzytelnienia otrzymany z serwera była "NTLM"."
+Gdy użytkownik uzyskuje dostęp do usługi WCF hostowanej w sieci Web za pośrednictwem połączenia pulpitu zdalnego i użytkownik nie ma uprawnienia administracyjne, zostanie użyte uwierzytelnianie NTLM. Jeśli użytkownik nie ma uprawnienia administracyjne, użytkownik może pojawić się następujący komunikat o błędzie: "Żądanie HTTP nie ma autoryzacji przez schemat uwierzytelniania klienta"Anonymous". Nagłówek uwierzytelnienia otrzymany z serwera była "NTLM"."
 
 Aby naprawić ten błąd:
 
@@ -84,7 +83,7 @@ Aby naprawić ten błąd, należy ręcznie ponownie skompilować projekt usługi
 
 4.  Załaduj projekt usługi WCF.
 
-5.  W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
+5.  W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
 
 6.  W **Eksploratora rozwiązań**, wybierz projekt usługi WCF.
 
@@ -106,4 +105,4 @@ Aby naprawić ten błąd, należy wyłączyć źródła danych RSS:
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

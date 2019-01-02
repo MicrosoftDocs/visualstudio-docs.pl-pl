@@ -1,8 +1,6 @@
 ---
-title: marker_series::write_flag — metoda | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Metoda marker_series::write_flag | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faff304831f8f2ffabed925d2ab3dfc5d64c18af
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: ba32b08de607f28a32cedf4050c4b4db439c1a39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840502"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag — metoda
 Zapisuje plik śledzenia Concurrency Visualizer flagę.  
@@ -51,7 +49,7 @@ void write_flag(
   
 #### <a name="parameters"></a>Parametry  
  `_Format`  
- Ciąg formatu złożony, który zawiera tekst zmieszać zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
+ Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
   
  `_Importance`  
  Poziom ważności.  
@@ -65,4 +63,4 @@ void write_flag(
  **Namespace:** CONCURRENCY::Diagnostic —  
   
 ## <a name="see-also"></a>Zobacz także  
- [marker_series — klasa](../profiling/marker-series-class.md)
+ [marker_series, klasa](../profiling/marker-series-class.md)

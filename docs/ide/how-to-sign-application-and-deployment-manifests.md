@@ -1,8 +1,7 @@
 ---
-title: 'Porady: podpisywanie manifestów aplikacji i wdrożenia'
+title: 'Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852917"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Porady: podpisywanie manifestów aplikacji i wdrożenia
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji
 
 Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifestów aplikacji i wdrożenia muszą być podpisane parą kluczy publiczny/prywatny i podpisany przy użyciu technologii Authenticode. Aby podpisać manifesty, przy użyciu certyfikatu z magazynu certyfikatów Windows lub plikiem klucza.
 
@@ -34,7 +33,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
 
  Podpisywanie manifestów ClickOnce jest opcjonalne w przypadku *.exe*— na podstawie aplikacji. Aby uzyskać więcej informacji zobacz sekcję "Generowanie nieoznaczonych manifestów" w tym dokumencie.
 
- Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [porady: tworzenie pary kluczy publiczny prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+ Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: Tworzenie pary kluczy publiczny prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje tylko te kluczowe pliki wymiany informacji osobistych (PFX), które mają *PFX* rozszerzenia. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów Windows bieżącego użytkownika, klikając **wybierać Store** na **podpisywanie** strony właściwości projektu.
@@ -94,7 +93,7 @@ Podpisywanie manifestów ClickOnce jest opcjonalne w przypadku *.exe*— na pods
 
 2.  Na **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce** pole wyboru.
 
-3.  Resetuj wersję publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikowanej wersji za każdym razem, gdy spróbujesz opublikować aplikację. Aby uzyskać więcej informacji, zobacz [porady: ustawienie ClickOnce wersji publikacji](../deployment/how-to-set-the-clickonce-publish-version.md).
+3.  Resetuj wersję publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikowanej wersji za każdym razem, gdy spróbujesz opublikować aplikację. Aby uzyskać więcej informacji, zobacz [jak: ClickOnce ustawienie wersji publikacji](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4.  Opublikuj aplikację.
 
@@ -112,6 +111,6 @@ Podpisywanie manifestów ClickOnce jest opcjonalne w przypadku *.exe*— na pods
 ## <a name="see-also"></a>Zobacz także
 
 - [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Porady: tworzenie pary kluczy publiczny prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Instrukcje: Tworzenie pary kluczy publiczny prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Strona podpisywania, Projektant projektu](../ide/reference/signing-page-project-designer.md)
 - [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)

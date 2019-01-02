@@ -1,5 +1,5 @@
 ---
-title: 'Porady: zapisywanie danych przy użyciu transakcji'
+title: 'Instrukcje: Zapisywanie danych przy użyciu transakcji'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918754"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Porady: zapisywanie danych przy użyciu transakcji
+# <a name="how-to-save-data-by-using-a-transaction"></a>Instrukcje: Zapisywanie danych przy użyciu transakcji
 
 Zapisywanie danych w ramach transakcji przy użyciu <xref:System.Transactions> przestrzeni nazw. Użyj <xref:System.Transactions.TransactionScope> obiekt, aby uczestniczyć w transakcji, które są zarządzane automatycznie dla Ciebie.
 
@@ -55,4 +54,4 @@ Aby wycofać transakcji zgłoszenie wyjątku przed wywołaniem <xref:System.Tran
 ## <a name="see-also"></a>Zobacz także
 
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-- [Przewodnik: Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)
+- [Przewodnik: Zapisywanie danych w ramach transakcji](../data-tools/save-data-in-a-transaction.md)

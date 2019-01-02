@@ -1,8 +1,6 @@
 ---
-title: Obiekt wywołujący — widok wywoływany - dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Widok elementu wywołującego wywoływanego — dane rywalizacji o zasoby | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,47 +10,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db4b0bf6e29be1607fcf05557c8089074efa9f78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902909"
 ---
 # <a name="callercallee-view----contention-data"></a>Widok wywołujący/wywoływany - dane kontencji
-Widok wywołujący/wywoływany Wyświetla informacje rywalizacji o wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.  
+Widok wywołujący/wywoływany Wyświetla informacje rywalizacji o zasoby dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.  
   
- **Bieżąca funkcja** są wyświetlane w środkowym siatki i zawiera informacje rywalizacji dla wybranych funkcji. Wartości obejmują wszystkie blokujące rywalizacji dla funkcji.  
+ **Bieżąca funkcja** są wyświetlane w siatce Środkowej i zawiera informacje rywalizacji o zasoby dla wybranej funkcji. Wartości obejmują wszystkie rywalizacje blokowania dla tej funkcji.  
   
- **Funkcje, które wywołały bieżącą funkcję** jest wyświetlany w górnym siatki i zawiera funkcje z wartościami wybranej funkcji (bieżącego) poszczególnych wkładów wywołującego (nadrzędnego).  
+ **Funkcje, które wywołały bieżącą funkcję** są wyświetlane w siatce górnym i pokazuje poszczególne wkłady wywołującego (nadrzędnego) funkcji do wartości wybranej funkcji (bieżącego).  
   
- **Funkcje, które zostały wywołane przez bieżącą funkcję** jest wyświetlany w siatce dolnej i zawiera informacje rywalizacji o wywoływany (podrzędny) funkcje wybranej funkcji podczas wywoływania funkcji podrzędnych przez bieżącą funkcję.  
+ **Funkcje, które zostały wywołane przez bieżącą funkcję** są wyświetlane w siatce dolnej i zawiera informacje rywalizacji o zasoby dla wywoływanego (podrzędne) funkcje wybranej funkcji gdy funkcja podrzędnych została wywołana przez bieżącą funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|**Typ**|Kontekst funkcji:<br /><br /> -   **0** -bieżącą funkcję<br />-   **1** — funkcja, która wywołuje bieżącą funkcję<br />-   **2** — funkcja, która jest wywoływana przez bieżącą funkcję<br /><br /> Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
-|**Wyłączny czasu blokowania**|— Dla bieżącej funkcji czas, jaki ta funkcja została zablokowana wykonywanie kodu w treści funkcji. Czas blokowania w funkcjach wywoływanych przez funkcję nie jest włączony.<br />— Dla funkcji wywołującego, część własny czas zablokowanych bieżącej funkcji, który wystąpił podczas tej funkcji wywołały bieżącą funkcję.<br />— Dla funkcji wywoływany, czas, jaki ta funkcja została zablokowana wykonywanie własnego kodu, gdy ta funkcja została wywołana przez bieżącą funkcję. Czas blokowania w funkcjach podrzędnych wywoływanych przez funkcję wywoływanego nie jest włączony.|  
-|**% Wyłącznego czasu blokowania**|Procent wszystkich czas blokowania w przebiegu profilowania, który był własny czas zablokowanych dla tej funkcji w tym kontekście.|  
-|**Wyłączny rywalizacji**|— Dla bieżącego funkcji, ile razy tej funkcji została zablokowana wykonywanie kodu w treści funkcji. Rywalizacji, które wystąpiły w funkcjach, które zostały wywołane przez funkcję nie są uwzględniane.<br />— Dla funkcji wywołującego, liczba rywalizacji wyłącznego bieżącej funkcji, który wystąpił podczas tej funkcji wywołały bieżącą funkcję.<br />— Dla funkcji wywoływany, ile razy tej funkcji został zablokowany w treści funkcji wykonywanie kodu, gdy ta funkcja została wywołana przez bieżącą funkcję. Rywalizacji, które wystąpiły w funkcjach wywoływanych przez funkcję wywoływanego nie są uwzględniane.|  
-|**% Wyłącznego rywalizacji**|Wartość procentowa rywalizacji wszystkie, w którym profilowania były wyłącznego rywalizacji dla tej funkcji w tym kontekście.|  
+|**Typ**|Kontekst funkcji:<br /><br /> -   **0** -bieżącej funkcji<br />-   **1** — funkcji wywołującej bieżącą funkcję<br />-   **2** — funkcja, która jest wywoływana przez bieżącą funkcję<br /><br /> Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
+|**Wyłączny czas blokowania**|— Aby uzyskać bieżącą funkcję czas, jaki ta funkcja została zablokowana z wykonywania kodu w treści funkcji. Czas blokowania w funkcjach wywoływanych przez funkcję nie jest włączony.<br />— Aby wywołujący funkcję część wyłączny czas blokowania bieżącej funkcji, który wystąpił podczas tej funkcji wywołującemu bieżącą funkcję.<br />— W przypadku funkcji / / wywoływany czas, który został zablokowany wykonywania własnego kodu, gdy ta funkcja została wywołana przez bieżącą funkcję tę funkcję. Czas blokowania w funkcjach podrzędnych wywołane przez funkcję / / wywoływany nie jest włączony.|  
+|**% Własnego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, która była wyłączny czas blokowania dla tej funkcji, w tym kontekście.|  
+|**Rywalizacje wyłączne**|— Dla bieżącej funkcji, ile razy ta funkcja została zablokowana z wykonywania kodu w treści funkcji. Rywalizacji, które wystąpiły w funkcje, które zostały wywołane przez funkcję nie są uwzględniane.<br />— Aby funkcja obiekt wywołujący, liczba rywalizacji wyłącznych bieżącej funkcji, który wystąpił podczas tej funkcji wywołującemu bieżącą funkcję.<br />— Dla funkcji / / wywoływany, ile razy ta funkcja została zablokowana z wykonywania kodu w treści funkcji, gdy ta funkcja została wywołana przez bieżącą funkcję. Rywalizacji, które wystąpiły w funkcjach wywoływanych przez funkcję wywoływanego nie są uwzględniane.|  
+|**% Rywalizacji wyłącznych**|Wartość procentowa wszystkie rywalizacje w uruchomienia profilowania były rywalizacji wyłącznych dla tej funkcji, w tym kontekście.|  
 |**Adres funkcji**|Adres funkcji lub token.|  
-|**Nazwa funkcji**|Pełna nazwa funkcji.|  
-|**Całkowity czas blokowania**|— Dla bieżącej funkcji podczas tej funkcji lub jednej z funkcji, które zostały wywołane przez tę funkcję zostało zablokowane z wykonywania. Czas blokowania w funkcje, które zostały wywołane przez bieżącą funkcję jest dołączony.<br />— Dla funkcji wywołującego część z wartościami granicznymi zablokowane czasu bieżącej funkcji, który wystąpił podczas tej funkcji wywołały bieżącą funkcję.<br />— Dla funkcji wywoływanych funkcji tej funkcji lub jednej z funkcji, które została wywołana przy użyciu funkcji została zablokowana wykonywanie, gdy ta funkcja została wywołana przez bieżący czas. Czas blokowania w funkcje, które zostały wywołane przez funkcję wywoływany jest dołączony.|  
-|**Całkowity czas blokowania %**|Procent wszystkich czas blokowania w przebiegu profilowania, która była całkowity czas blokowania dla tej funkcji w tym kontekście.|  
-|**Wraz z wartościami granicznymi rywalizacji**|— Dla bieżącej funkcji liczbę tej funkcji lub jednej z funkcji, które zostały wywołane przez funkcję zostało zablokowane z wykonywania. Uwzględniono rywalizacji, które wystąpiły w funkcjach, które zostały wywołane przez funkcję.<br />— Dla funkcji wywołującego, liczba rywalizacji włącznie z bieżącej funkcji, który wystąpił podczas tej funkcji wywołały bieżącą funkcję.<br />— Dla funkcji wywoływany, ile razy tej funkcji lub jednej z funkcji, które zostały wywołane przez funkcję zostało zablokowane wykonywanie, gdy ta funkcja została wywołana przez bieżącą funkcję. Rywalizacji, które wystąpiły w funkcjach wywoływanych przez funkcję wywoływany są uwzględniane.|  
-|**% Rywalizacji włącznie**|Wartość procentowa rywalizacji wszystkie, w którym profilowania były wyłącznego rywalizacji dla tej funkcji w tym kontekście.|  
-|**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Nazwa modułu**|Nazwa modułu zawiera funkcję.|  
-|**Ścieżka modułu**|Ścieżka moduł, który zawiera funkcję.|  
+|**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|  
+|**Całkowity czas blokowania**|– W przypadku bieżącej funkcji czasu, która tej funkcji lub jednej z funkcji, które były wywoływane przez tę funkcję, została zablokowana wykonania. Czas blokowania w funkcjach, które zostały wywołane przez bieżącą funkcję jest dołączony.<br />— Aby wywołujący funkcję czas bieżącej funkcji, który wystąpił podczas tej funkcji wywołującemu bieżącą funkcję blokowania część włącznie.<br />— W przypadku funkcji / / wywoływany czas, jaki ta funkcja lub jedna z funkcji, które zostało wywołane przez funkcję zablokowano wykonywania, gdy ta funkcja została wywołana przez bieżącą funkcję. Czas blokowania w funkcjach, które zostały wywołane przez funkcję / / wywoływany jest dołączony.|  
+|**% Całkowitego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, która była całkowity czas blokowania dla tej funkcji, w tym kontekście.|  
+|**Rywalizacje włączne**|— Dla bieżącej funkcji, ile razy ta funkcja lub jedna z funkcji, które zostały wywołane przez funkcję zablokowano wykonywania. Uwzględniono rywalizacji, które wystąpiły w funkcje, które zostały wywołane przez funkcję.<br />— Aby funkcja obiekt wywołujący, liczba rywalizacji włącznych bieżącej funkcji, który wystąpił podczas tej funkcji wywołującemu bieżącą funkcję.<br />— Dla funkcji / / wywoływany, ile razy ta funkcja lub jedna z funkcji, które zostały wywołane przez funkcję zablokowano wykonywania, gdy ta funkcja została wywołana przez bieżącą funkcję. Uwzględniono rywalizacji, które wystąpiły w funkcjach wywoływanych przez funkcję / / wywoływany.|  
+|**% Rywalizacji włącznych**|Wartość procentowa wszystkie rywalizacje w uruchomienia profilowania były rywalizacji wyłącznych dla tej funkcji, w tym kontekście.|  
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
+|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|  
+|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|  
 |**Identyfikator procesu**|Identyfikator procesu (PID) procesu, w którym wystąpił rywalizacji.|  
 |**Nazwa procesu**|Nazwa procesu.|  
 |**Nazwa głównej funkcji**|Nazwa bieżącej funkcji. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wywołujący/wywoływany](../profiling/caller-callee-view.md)   
  [Widok wywołujący/wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)   
- [Widok wywołujący/wywoływany - dane Instrumentacji pamięci .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Widok wywołujący/wywoływany - dane próbkowania pamięci .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)

@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Dodawanie odwołania wyjścia projektu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie odwołania wyjścia projektu | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,35 +14,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b6a3d164bbe1ddcda6d131275427fb1f815198
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4e7c93b0c23d14c2b129d165cd3a8d701ace8ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897297"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Porady: Dodawanie odwołania wyjścia projektu
-  Aby wdrożyć zestawy projektu programu SharePoint (lub pliki XAP w projekty Silverlight) w programie SharePoint, należy dodać je jako odwołania wyjścia projektu.  
+# <a name="how-to-add-a-project-output-reference"></a>Instrukcje: Dodawanie odwołania wyjścia projektu
+  Aby wdrożyć zestawy projektu programu SharePoint (lub pliki XAP w projektach programu Silverlight) do programu SharePoint, należy dodać ich jako odwołania wyjścia projektu.  
   
- Ten proces tworzy zależność kompilacji rozwiązania między dwa projekty. Projekty skojarzone z odwołania do danych wyjściowych projektu są skompilowane zanim projekt SharePoint jest skompilowany i wdrożone.  
+ Ten proces tworzy zależność kompilacji rozwiązania, między dwa projekty. Projekty skojarzone z odwołania danych wyjściowych projektu są skompilowane, zanim projekt programu SharePoint jest utworzeniu i wdrożeniu.  
   
-### <a name="to-add-a-project-output-reference"></a>Aby dodać odwołanie do danych wyjściowych projektu
+### <a name="to-add-a-project-output-reference"></a>Aby dodać odwołania wyjścia projektu
   
-1.  Załadowanie rozwiązania, które zawiera co najmniej jeden projekt programu SharePoint i jeden projekt programu SharePoint.  
+1.  Załaduj rozwiązanie, które zawiera co najmniej jeden projekt programu SharePoint i jeden projekt programu SharePoint.  
   
-2.  W **Eksploratora rozwiązań**, wybierz element węzła projektu programu SharePoint.  
+2.  W **Eksploratora rozwiązań**, wybierz element z węzła projektu programu SharePoint.  
   
-3.  W **właściwości** okna, wybierz **preferencje danych wyjściowych projektu** właściwości, a następnie wybierz przycisk wielokropka (![elipsy ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ASP. Projektant Mobile NET elipsy")) przycisk obok niej.  
+3.  W **właściwości** okna, wybierz **odwołania danych wyjściowych projektu** właściwości, a następnie wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP. Projektant Mobile NET elipsy")) przycisk obok niej.  
   
-4.  W **preferencje danych wyjściowych projektu** oknie dialogowym wybierz **Dodaj** przycisku.  
+4.  W **odwołania danych wyjściowych projektu** okna dialogowego wybierz **Dodaj** przycisku.  
   
-5.  W okienku właściwości wybierz strzałkę **typu wdrożenia** właściwości, a następnie wybierz odpowiednią wartość dla elementu programu SharePoint odwołujesz się do, takich jak **ElementFile**.  
+5.  W okienku właściwości wybierz strzałkę obok **typu wdrożenia** właściwości, a następnie wybierz odpowiednią wartość dla elementu programu SharePoint, odwołujesz się do, takich jak **plik elementu**.  
   
-6.  Wybierz strzałkę obok pozycji **Nazwa projektu**, wybierz nazwę elementu projektu programu SharePoint, a następnie wybierz **OK** przycisku.  
+6.  Wybierz strzałkę obok **Nazwa projektu**, wybierz nazwę elementu projektu programu SharePoint, a następnie wybierz **OK** przycisku.  
   
 ## <a name="see-also"></a>Zobacz także
- [Podaj informacje pakowania i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Porady: oznaczanie kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
- [Pakiet i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  
+ [Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+ [Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+ [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

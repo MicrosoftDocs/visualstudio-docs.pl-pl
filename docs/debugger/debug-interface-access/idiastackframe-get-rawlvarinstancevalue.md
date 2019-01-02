@@ -1,8 +1,6 @@
 ---
 title: Idiastackframe::get_rawlvarinstancevalue — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f5e34b766e27693326aba34b7b7259042870f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66056d2f871d142da46cae25b2e9cb589836a580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838440"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 Ta metoda pobiera wartość określonej zmiennej lokalnej, jako bajtów raw.  

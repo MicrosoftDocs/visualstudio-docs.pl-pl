@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Implementowanie fragmentów kodu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Implementowanie fragmentów kodu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902191"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>Wskazówki: Implementowanie wstawki programu
+# <a name="walkthrough-implement-code-snippets"></a>Przewodnik: Implementowanie fragmentów kodu
 Można tworzyć fragmenty kodu i dołączać do rozszerzenia edytora, tak aby użytkownicy rozszerzenia można dodać je do swój własny kod.  
   
  Fragment kodu jest fragmentem kodu lub inny tekst, który może być zawarte w pliku. Aby wyświetlić wszystkie fragmenty kodu, które zostały zarejestrowane dla określonych języków programowania, na **narzędzia** menu, kliknij przycisk **Menedżera fragmentów kodu**. Aby wstawić framgent kodu w pliku, kliknij prawym przyciskiem myszy, którego ten fragment kodu kliknij przycisk Wstaw fragment kodu lub **Otocz**, fragment, chcesz, aby zlokalizować i kliknij ją dwukrotnie. Naciśnij klawisz **kartę** lub **Shift**+**kartę** zmodyfikuj odpowiednie części fragmentu kodu, a następnie naciśnij klawisz **Enter** lub **Esc** go zaakceptować. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).  
@@ -33,7 +30,7 @@ Można tworzyć fragmenty kodu i dołączać do rozszerzenia edytora, tak aby u�
   
 3. Implementowanie rozszerzenia fragmentu kodu.  
   
-   Ten przewodnik jest oparty na [wskazówki: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Ten przewodnik jest oparty na [instruktażu: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, nie instaluj programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -112,7 +109,7 @@ Można tworzyć fragmenty kodu i dołączać do rozszerzenia edytora, tak aby u�
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Aby zarejestrować fragmentów kodu dla określonego identyfikatora GUID  
   
-1.  Otwórz **CompletionTest** projektu. Aby uzyskać informacje dotyczące sposobu tworzenia tego projektu, zobacz [wskazówki: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Otwórz **CompletionTest** projektu. Aby uzyskać informacje dotyczące sposobu tworzenia tego projektu, zobacz [instruktażu: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  W projekcie należy dodać odwołania do następujących zestawów:  
   

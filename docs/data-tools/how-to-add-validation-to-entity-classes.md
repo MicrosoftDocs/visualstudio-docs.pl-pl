@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie walidacji do klas jednostek'
+title: 'Instrukcje: Dodawanie walidacji do klas jednostek'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,48 +10,47 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d102bdf20349d6bd4efdecd1c460f1e46646eb37
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: a9e73fe476dbe323289e7ebe90508aec695b6bd2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942557"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Porady: Dodawanie walidacji do klas jednostek
-*Sprawdzanie poprawności* klas jednostek jest proces potwierdzania wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także do reguły dla aplikacji. Sprawdzanie poprawności danych, aby wysyłać aktualizacje do podstawowej bazy danych jest dobrym rozwiązaniem, które zmniejsza błędy. Zmniejsza liczbę rund między aplikacją i bazy danych.
+# <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: Dodawanie walidacji do klas jednostek
+*Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także zasadami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych, aby wysłać aktualizacje do podstawowej bazy danych jest dobrą praktyką, która zmniejsza błędy. Zmniejsza to także potencjalną liczbę rund między aplikacją a bazą danych.
 
- [Narzędzi LINQ do SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) udostępnia częściowej metody, które użytkownicy mogą rozszerzać kod wygenerowany przez projektanta, który jest uruchamiany podczas operacji wstawiania, aktualizacji i usuwa pełną jednostek, a także podczas i po poszczególnych kolumn zmiany.
+ [LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) dostarcza metod częściowych, które umożliwiają użytkownikom Rozszerz kod wygenerowany przez projektanta, który jest uruchamiany podczas operacji wstawiania, aktualizacji i usuwa pełną jednostek, a także podczas i po poszczególnych kolumn zmiany.
 
 > [!NOTE]
->  Ten temat zawiera podstawowe kroki Dodawanie walidacji do klas jednostek przy użyciu **Projektanta obiektów relacyjnych**. Ponieważ może być trudne dla poniższych kroków ogólnych bez odwołujących się do klasy określonej jednostki, jest dostępne wskazówki, który używa danych rzeczywistych.
+>  Ten temat zawiera podstawowe kroki Dodawanie walidacji do klas jednostek za pomocą **O/R Designer**. Ponieważ może być trudne do tych kroków ogólny bez odwołujące się do klasy określonej jednostki, znajduje się przewodnik, który korzysta z rzeczywistych danych.
 
-## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Dodawanie walidacji do zmiany wartości w określonej kolumnie
- Ta procedura przedstawia sposób sprawdzania poprawności danych w przypadku zmiany wartości w kolumnie. Ponieważ weryfikacja jest przeprowadzana w definicji klasy (a nie w interfejsie użytkownika), jest zwracany wyjątek, jeśli wartość powoduje niepowodzenie sprawdzania poprawności. Implementuje obsługę błędów dla kodu w aplikacji, która próbuje zmienić wartości w kolumnie.
+## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Dodawanie sprawdzania poprawności zmian do wartości w określonej kolumnie
+ Ta procedura pokazuje sposób sprawdzania poprawności danych, po zmianie wartości w kolumnie. Ponieważ Weryfikacja odbywa się wewnątrz definicji klasy (zamiast interfejsu użytkownika), jest zgłaszany wyjątek, jeśli wartość powoduje, że weryfikacja nie powiedzie się. Implementuje obsługę błędów dla kodu w aplikacji, który podejmie próbę zmiany wartości w kolumnach.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-validate-data-during-a-columns-value-change"></a>Aby sprawdzić poprawność danych podczas zmiany wartości kolumny
+### <a name="to-validate-data-during-a-columns-value-change"></a>Aby sprawdzić poprawność danych podczas zmiany wartości w kolumnie
 
-1.  Otwarcia lub utworzenia nowego składnika LINQ to SQL klasy pliku (**.dbml** pliku) w **Projektanta obiektów relacyjnych**. (Kliknij dwukrotnie **.dbml** w pliku **Eksploratora rozwiązań**.)
+1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
 
-2.  W **Projektanta obiektów relacyjnych**, kliknij prawym przyciskiem myszy klasę, dla której chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **kod widoku**.
+2.  W **O/R Designer**, kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.
 
-     Otwiera edytora kodu z klasy częściowej klasy wybranej jednostki.
+     Zostanie otwarty Edytor kodu klasę częściową dla klasy wybranego obiektu.
 
 3.  Umieść kursor w klasie częściowej.
 
 4.  Dla projektów języka Visual Basic:
 
-    1.  Rozwiń węzeł **nazwę metody** listy.
+    1.  Rozwiń **nazwę metody** listy.
 
-    2.  Zlokalizuj **OnCOLUMNNAMEChanging** metodę dla kolumny, aby dodać sprawdzania poprawności.
+    2.  Znajdź **OnCOLUMNNAMEChanging** metody dla kolumny, które chcesz dodać sprawdzanie poprawności, aby.
 
     3.  `OnCOLUMNNAMEChanging` Metoda jest dodawana do klasy częściowej.
 
-    4.  Dodaj następujący kod, aby najpierw sprawdź, czy wprowadzona wartość, a następnie upewnij się, że wartość wprowadzona dla kolumny, która jest możliwa do aplikacji. `value` Argument zawiera proponowanej wartości, a więc Dodaj logikę, aby potwierdzić, że jest nieprawidłowa:
+    4.  Dodaj następujący kod, aby najpierw sprawdź, czy wprowadzona wartość, a następnie upewnij się, że wprowadzona dla kolumny, która wartość jest dopuszczalny dla aplikacji. `value` Argument zawiera proponowana wartość, więc Dodaj logikę, aby upewnić się, że jest prawidłowa wartość:
 
         ```vb
         If value.HasValue Then
@@ -64,7 +63,7 @@ ms.locfileid: "37089341"
 
     Dla projektów C#:
 
-    Ponieważ projektów C# nie generują automatycznie procedury obsługi zdarzeń, można użyć funkcji IntelliSense można utworzyć kolumny, zmiana metody częściowe. Typ `partial` , a następnie miejsce dostęp do listy dostępnych metod częściowych. Kliknij metodę zmiana kolumn dla kolumny, która ma zostać dodany sprawdzania poprawności dla. Poniższy kod podobny kod, który jest generowany, gdy wybrana metoda częściowa zmiana kolumny:
+    Ponieważ C# projektów nie generują automatycznie obsługi zdarzeń, korzystać z technologii IntelliSense, aby utworzyć metody częściowej zmieniającej się kolumny. Typ `partial` i następnie spację, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę zmieniającej się kolumny dla kolumny, które chcesz dodać sprawdzanie poprawności. Poniższy kod jest podobny kod, który jest generowany, gdy wybierzesz metodą częściową zmieniającej się kolumny:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -73,25 +72,25 @@ ms.locfileid: "37089341"
         }
     ```
 
-## <a name="add-validation-for-updates-to-an-entity-class"></a>Dodawanie walidacji aktualizacji do klasy jednostki
- Oprócz sprawdzenia wartości podczas zmiany, można zweryfikować danych podczas próby aktualizacji klasy całą jednostkę. Sprawdzania poprawności podczas próby aktualizacji umożliwia porównanie wartości w wielu kolumnach, jeśli reguły biznesowe wymagają to. Poniższa procedura przedstawia sposób sprawdzania poprawności, gdy podejmowana jest próba aktualizacji klasy całą jednostkę.
+## <a name="add-validation-for-updates-to-an-entity-class"></a>Dodawanie sprawdzania poprawności dla aktualizacji do klasy jednostki
+ Oprócz sprawdzania wartości podczas wprowadzania zmian, możesz również walidować dane podczas próby aktualizacji klasy całą jednostkę. Sprawdzanie poprawności podczas próby aktualizacji umożliwia porównanie wartości w wielu kolumnach, jeśli reguły biznesowe tego wymagać. Poniższa procedura pokazuje, jak sprawdzania poprawności, gdy podejmowana jest próba aktualizacja klasy całą jednostkę.
 
 > [!NOTE]
->  Sprawdzanie poprawności kodu na zakończenie klas jednostek aktualizacji są wykonywane w częściowym <xref:System.Data.Linq.DataContext> klasy (zamiast w klasie częściowej klasy jednostki określonych).
+>  Kod sprawdzania poprawności na zakończenie klas jednostek aktualizacji jest wykonywana w części <xref:System.Data.Linq.DataContext> klasy (a nie w klasie częściowej klasy określonej jednostce).
 
-### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Do sprawdzania poprawności danych podczas aktualizacji do klasy jednostki
+### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Aby sprawdzić poprawność danych podczas aktualizacji do klasy jednostki
 
-1.  Otwarcia lub utworzenia nowego składnika LINQ to SQL klasy pliku (**.dbml** pliku) w **Projektanta obiektów relacyjnych**. (Kliknij dwukrotnie **.dbml** w pliku **Eksploratora rozwiązań**.)
+1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
 
-2.  Kliknij prawym przyciskiem myszy pusty obszar **Projektanta obiektów relacyjnych** i kliknij przycisk **kod widoku**.
+2.  Kliknij prawym przyciskiem myszy pusty obszar **O/R Designer** i kliknij przycisk **Wyświetl kod**.
 
-     Otwiera edytora kodu z klasę częściową dla `DataContext`.
+     Zostanie otwarty Edytor kodu za pomocą klasę częściową dla `DataContext`.
 
 3.  Umieść kursor w klasie częściowej dla `DataContext`.
 
 4.  Dla projektów języka Visual Basic:
 
-    1.  Rozwiń węzeł **nazwę metody** listy.
+    1.  Rozwiń **nazwę metody** listy.
 
     2.  Kliknij przycisk **UpdateENTITYCLASSNAME**.
 
@@ -108,7 +107,7 @@ ms.locfileid: "37089341"
 
     Dla projektów C#:
 
-    Ponieważ projektów C# nie generują automatycznie procedury obsługi zdarzeń, można użyć funkcji IntelliSense do utworzenia częściowego `UpdateCLASSNAME` metody. Typ `partial` , a następnie miejsce dostęp do listy dostępnych metod częściowych. Kliknij metodę aktualizacji dla klasy, w której chcesz dodać sprawdzania poprawności. Poniższy kod podobny kod, który jest generowany po wybraniu `UpdateCLASSNAME` metody częściowej:
+    Ponieważ C# projektów nie generują automatycznie obsługi zdarzeń, korzystać z technologii IntelliSense, aby utworzyć częściowego `UpdateCLASSNAME` metody. Typ `partial` i następnie spację, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę aktualizacji dla klasy, na którym chcesz dodać sprawdzanie poprawności. Poniższy kod jest podobny kod, który jest generowany, gdy wybierzesz `UpdateCLASSNAME` metody częściowej:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)
@@ -123,6 +122,6 @@ ms.locfileid: "37089341"
 
 ## <a name="see-also"></a>Zobacz także
 
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Sprawdzanie poprawności danych](../data-tools/validate-data-in-datasets.md)
-- [LINQ do SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)

@@ -3,7 +3,6 @@ title: Opcje narzędzia języka R
 description: Odwołanie do opcji w programie Visual Studio dla języka R i skojarzone funkcji.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -15,12 +14,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37250958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900564"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Narzędzia języka R dla programu Visual Studio, opcje
 
@@ -30,10 +29,10 @@ Ustawienia są dostępne za pośrednictwem **R Tools** > **opcje** menu lub za p
 
 Opcje i ustawienia specyficzne dla języka R są dostępne przy użyciu poniższych metod. Musisz wybrać **Pokaż wszystkie ustawienia** u dołu **opcje** wszystkie te sekcje się pojawić okno dialogowe.
 
-- Opcje formatowania kodu (zobacz [opcji edytora](editing-r-code-in-visual-studio.md#editor-options): **narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów**  >  **R** > **formatowania**
-- Opcje linter (zobacz [Zaznaczanie błędów](linting-r-code.md)): **narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów**  >   **R** > **Lint**
-- Zaawansowane opcje edytora ([opisanych w tym artykule](#text-editor--r--advanced-options)): **narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów**  >  **R** > **zaawansowane**
-- Opcje zachowania ([opisanych w tym artykule](#r-tools--advanced-options)): **R Tools** > **opcje** menu lub **narzędzia**  >  **Opcje**, następnie przewiń listę do **R Tools**.
+- Opcje formatowania kodu (zobacz [opcji edytora](editing-r-code-in-visual-studio.md#editor-options): **Narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów** > **R** > **formatowania**
+- Opcje linter (zobacz [Zaznaczanie błędów](linting-r-code.md)): **Narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów** > **R** > **Lint**
+- Zaawansowane opcje edytora ([opisanych w tym artykule](#text-editor--r--advanced-options)): **Narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów** > **R** > **zaawansowane**
+- Opcje zachowania ([opisanych w tym artykule](#r-tools--advanced-options)): **Narzędzia języka R** > **opcje** menu lub **narzędzia** > **opcje**, następnie przewiń listę do **R Tools**.
 
 **R Tools** > **ustawienia do nauki o danych** polecenie ma również wpływ na wiele różnych ustawień w programie Visual Studio ogólną. To polecenie jest opisane w następnej sekcji.
 

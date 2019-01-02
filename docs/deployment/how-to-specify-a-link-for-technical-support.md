@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Określanie Linku do pomocy technicznej | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie Linku do pomocy technicznej | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933943"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Porady: Określanie linku do pomocy technicznej
+# <a name="how-to-specify-a-link-for-technical-support"></a>Instrukcje: Określanie linku do pomocy technicznej
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji **adres URL pomocy technicznej** właściwość identyfikuje strony sieci Web lub udziału plików, gdzie użytkownicy mogą przejść w celu uzyskania informacji o aplikacji. Ta właściwość jest opcjonalna. Jeśli nie dostarczono, adres URL będzie wyświetlana w wpisu aplikacji **apletu Dodaj lub usuń programy** okno dialogowe.  
   
  **Adres URL pomocy technicznej** właściwość można ustawić na **Publikuj** strony **projektanta projektu**.  
@@ -48,4 +46,4 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 ## <a name="see-also"></a>Zobacz także  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

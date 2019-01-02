@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsegments::SKIP — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 595623b93bbca7d5818d242f1c1818d24ff48e77
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e8fb7de90f43b6f8c4992366993c0c3d8409aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917582"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
 Pomija określoną liczbę segmentów w kolejności wyliczenia.  
@@ -27,7 +25,7 @@ Pomija określoną liczbę segmentów w kolejności wyliczenia.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

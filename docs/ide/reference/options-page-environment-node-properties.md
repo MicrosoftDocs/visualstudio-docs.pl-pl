@@ -2,7 +2,6 @@
 title: Strona opcji, środowisko — Właściwości węzła
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914971"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z **środowiska** kategorii `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, który umożliwia dostęp do kolekcji właściwości, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
@@ -134,7 +133,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Wyliczenie)|Działanie podejmowane w momencie uruchamiania z <xref:EnvDTE.vsStartUp>, przy użyciu wartości od 0 do 5:<br /><br /> -0: Otwórz stronę główną<br />-1: obciążenia ostatniego załadowania rozwiązania<br />-2: Pokaż **Otwórz projekt** okno dialogowe<br />-3: Pokaż **nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: strona startowa show|
+|OnStartUp|Get/Set (Wyliczenie)|Działanie podejmowane w momencie uruchamiania z <xref:EnvDTE.vsStartUp>, przy użyciu wartości od 0 do 5:<br /><br /> -0: Otwórz stronę główną<br />-1: Załaduj ostatnie załadowanego rozwiązania<br />-2: Pokaż **Otwórz projekt** okno dialogowe<br />-3: Pokaż **nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: Pokaż stronę początkową|
 |StartPageRSSUrl|Get/Set (ciąg)|Adres URL dla źródła danych RSS, jest używany podczas uruchamiania.|
 |StartPageRefreshDownloadedContent|Get/Set (wartość logiczna)|Odświeża strona startowa po każdym przejściu z interwałem określonym w StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (krótki)|Interwał w minutach, aby odświeżyć stronę początkową.|

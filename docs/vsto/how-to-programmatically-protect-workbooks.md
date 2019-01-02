@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Włączanie ochrony skoroszytów'
-ms.custom: ''
+title: 'Instrukcje: Programowe Włączanie ochrony skoroszytów'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900778"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Porady: programowane Włączanie ochrony skoroszytów
+# <a name="how-to-programmatically-protect-workbooks"></a>Instrukcje: Programowe Włączanie ochrony skoroszytów
   Może chronić programu Microsoft Office Excel, dzięki czemu użytkownicy nie mogą dodać lub usuwanie arkuszy i również programowe usuwające ochronę skoroszytu. Opcjonalnie można określić hasło, wskazują, czy mają strukturę chronione (dzięki czemu użytkownicy nie można przenieść arkusze) i wskazuje, czy windows skoroszytu chronionego.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Ochrona skoroszytu nie uniemożliwia użytkownikom edytowanie komórki. Aby chronić dane, należy włączyć ochronę arkuszy. Aby uzyskać więcej informacji, zobacz [porady: programowane Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Ochrona skoroszytu nie uniemożliwia użytkownikom edytowanie komórki. Aby chronić dane, należy włączyć ochronę arkuszy. Aby uzyskać więcej informacji, zobacz [jak: Programowe Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  Poniższe przykłady kodu użyć zmiennej zawierać hasło, które są uzyskiwane przez użytkownika.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35676197"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca ze skoroszytami](../vsto/working-with-workbooks.md)   
- [Porady: programowane Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Porady: programowane ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Instrukcje: Programowe Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Instrukcje: Programowe ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

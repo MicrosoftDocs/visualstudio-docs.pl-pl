@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 484c80e474fdce799bc10787bddf157a19f46740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902922"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testów obciążenia w widoku szczegółów analizatora testu obciążenia
 
@@ -57,9 +56,9 @@ ms.locfileid: "53059911"
 
 |Zadania|Skojarzone tematy|
 |-|-|
-|**Uruchom test obciążeniowy:** po utworzeniu testu obciążenia i skonfigurować go, aby włączyć zbieranie danych aktywności wirtualnego użytkownika, należy uruchomić test do czasu jego zakończenia w celu wyświetlenia **wykres aktywności wirtualnych użytkowników**.||
-|**Wyświetl wyniki testu obciążenia, które zawierają dane o aktywności użytkownika wirtualnego:** po testu obciążenia zostało utworzone, skonfigurowane i zakończy działanie, można wyświetlić dane o aktywności wirtualnego użytkownika za pomocą **wykres aktywności wirtualnych użytkowników** .|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Wyizolować problemy z wydajnością w testach obciążenia:** można użyć **wykres aktywności wirtualnych użytkowników** Aby wyizolować problemy z wydajnością w teście obciążenia.|-   [Przewodnik: Używanie wykresu aktywności wirtualnego użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Uruchom test obciążenia:** Po utworzeniu testu obciążenia i skonfigurować go, aby włączyć zbieranie danych aktywności wirtualnego użytkownika, należy uruchomić test do czasu jego zakończenia w celu wyświetlenia **wykres aktywności wirtualnych użytkowników**.||
+|**Wyświetl wyniki testu obciążenia, które zawierają dane o aktywności użytkownika wirtualnego:** Po testu obciążenia zostało utworzone, skonfigurowane i zakończy działanie, można wyświetlić dane o aktywności wirtualnego użytkownika za pomocą **wykres aktywności wirtualnych użytkowników**.|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Jak: Analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Wyizolować problemy z wydajnością w testach obciążenia:** Możesz użyć **wykres aktywności wirtualnych użytkowników** Aby wyizolować problemy z wydajnością w teście obciążenia.|-   [Wskazówki: Za pomocą wykresu aktywności wirtualnego użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

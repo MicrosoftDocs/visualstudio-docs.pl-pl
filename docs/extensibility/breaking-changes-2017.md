@@ -1,9 +1,6 @@
 ---
 title: Fundamentalne zmiany w rozszerzalności programu Visual Studio 2017 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841953"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -43,9 +40,9 @@ Zmiany formatu VSIX obejmują:
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Tworzenie rozszerzenia programu Visual Studio 2017
 
-Projektanta, narzędzia do tworzenia nowej format manifestu VSIX v3 jest teraz dostępna w programie Visual Studio 2017. Znajduje się w dokumencie towarzyszący [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) szczegółowe informacje na temat przy użyciu narzędzia projektanta lub dokonywania ręczne aktualizacje do projektu i manifest do tworzenia rozszerzenia v3 VSIX.
+Projektanta, narzędzia do tworzenia nowej format manifestu VSIX v3 jest teraz dostępna w programie Visual Studio 2017. Zobacz dokument towarzyszący [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) szczegółowe informacje na temat przy użyciu narzędzia projektanta lub dokonywania ręczne aktualizacje do projektu i manifest do tworzenia rozszerzenia v3 VSIX.
 
-## <a name="change-visual-studio-user-data-path"></a>Zmiany: Ścieżka danych użytkownika programu Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Zmiana: Ścieżka danych użytkownika w usłudze Visual Studio
 
 Wcześniej tylko jedna instalacja każdego wydania programu Visual Studio może znajdować się na każdym komputerze. Aby obsługiwać instalacje side-by-side programu Visual Studio 2017, wiele ścieżek danych użytkownika dla programu Visual Studio może istnieć na komputerze użytkownika.
 
@@ -84,7 +81,7 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 * Jeśli rozszerzenie działa poza procesem programu Visual Studio:
   * Należy wziąć pod uwagę wyszukiwanie zestawów podstawowych programu Visual Studio w obszarze <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* używanie mechanizmu rozpoznawania pliku lub zestawu konfiguracji.
 
-## <a name="change-reduce-registry-impact"></a>Zmiana: Ograniczyć wpływ rejestru
+## <a name="change-reduce-registry-impact"></a>Zmiana: Ograniczenia wpływu rejestru
 
 ### <a name="global-com-registration"></a>Globalne rejestracji modelu COM
 
@@ -95,9 +92,9 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 ### <a name="visual-studio-registry"></a>Visual Studio rejestru
 
 * Wcześniej zainstalowany program Visual Studio wielu kluczy rejestru w systemie **HKEY_LOCAL_MACHINE** i **HKEY_CURRENT_USER** gałęzie w kluczu dotyczące programu Visual Studio:
-  * **HKLM\Software\Microsoft\VisualStudio\{wersji}**: kluczy rejestru utworzonych przez instalatory MSI i rozszerzeń dla poszczególnych komputerów.
-  * **HKCU\Software\Microsoft\VisualStudio\{wersji}**: kluczy rejestru utworzonych przez Visual Studio, aby przechowywać ustawienia specyficzne dla użytkownika.
-  * **HKCU\Software\Microsoft\VisualStudio\{wersji} _Config**: kopię programu Visual Studio HKLM klucz powyżej, a także klucze rejestru są scalane z *.pkgdef* plików według rozszerzenia.
+  * **HKLM\Software\Microsoft\VisualStudio\{wersji}**: Klucze rejestru, tworzone przez instalatory MSI i rozszerzeń dla poszczególnych komputerów.
+  * **HKCU\Software\Microsoft\VisualStudio\{wersji}**: Klucze rejestru, utworzone przez program Visual Studio, aby przechowywać ustawienia specyficzne dla użytkownika.
+  * **HKCU\Software\Microsoft\VisualStudio\{wersji} _Config**: Kopię programu Visual Studio HKLM klucz powyżej, a także klucze rejestru są scalane z *.pkgdef* plików według rozszerzenia.
 * Aby zmniejszyć wpływ na rejestrze, używa teraz program Visual Studio [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) funkcję, aby przechowywać klucze rejestru w prywatnej pliku binarnego w obszarze *[VSAPPDATA]\privateregistry.bin*. Bardzo niewielkiej liczby Visual Studio kluczy pozostają w rejestrze systemowym.
 
 * Nie ma wpływu na istniejącym kodzie działającym wewnątrz procesu programu Visual Studio. Program Visual Studio będzie przekierowywać wszystkie operacje rejestru w kluczu HKCU Visual Studio specyficzne dla do prywatnego rejestru. Odczytywanie i zapisywanie do innych lokalizacji rejestru będzie nadal korzystać z rejestru systemowego.

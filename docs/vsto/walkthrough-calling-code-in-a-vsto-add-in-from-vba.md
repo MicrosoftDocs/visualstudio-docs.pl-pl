@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Wywoływanie kodu w dodatku narzędzi VSTO dla programów z VBA'
-ms.custom: ''
+title: 'Przewodnik: Wywoływanie kodu w dodatku VSTO z kodu VBA'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915906"
 ---
-# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Wskazówki: Wywoływanie kodu w dodatku narzędzi VSTO dla programów z VBA
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Przewodnik: Wywoływanie kodu w dodatku VSTO z kodu VBA
   W tym przewodniku pokazano, jak udostępnić obiektu w dodatku narzędzi VSTO dla programów do innych rozwiązań programu Microsoft Office, w tym Visual Basic for Applications (VBA) i dodatki COM, VSTO.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49843824"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Utwórz projekt dodatku narzędzi VSTO programu Excel o nazwie **ExcelImportData**, przy użyciu szablonu projektu dodatku narzędzi VSTO programu Excel. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz projekt dodatku narzędzi VSTO programu Excel o nazwie **ExcelImportData**, przy użyciu szablonu projektu dodatku narzędzi VSTO programu Excel. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** plik kodu i dodaje **ExcelImportData** projekt **Eksploratora rozwiązań**.  
   
@@ -116,7 +113,7 @@ ms.locfileid: "49843824"
 3.  Na wstążce kliknij **Developer** kartę.  
   
     > [!NOTE]  
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  W **kodu** grupy, kliknij przycisk **języka Visual Basic**.  
   
@@ -149,16 +146,14 @@ ms.locfileid: "49843824"
   
 -   Użyj `ThisAddIn` klasy w celu zautomatyzowania aplikacji hosta oraz wykonywania innych zadań w projektach dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
--   Tworzenie niestandardowego okienka zadań w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md) i [porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+-   Tworzenie niestandardowego okienka zadań w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md) i [jak: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
--   Dostosuj Wstążkę w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md) i [porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   Dostosuj Wstążkę w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md) i [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
- [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

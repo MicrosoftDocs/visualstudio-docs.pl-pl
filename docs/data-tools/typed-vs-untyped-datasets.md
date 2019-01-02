@@ -10,37 +10,36 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d817938a7611d7390e400cfbf69c6836b9256f3b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: bf99d44e25bf33a773865e0bcf2084d3ac0bbe10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888624"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
-Typizowany zestaw dataset jest zestawu danych, który najpierw pochodzi od podstawy <xref:System.Data.DataSet> klasy, a następnie używa informacji z **Projektant obiektów Dataset**, który jest przechowywany w pliku XSD, aby wygenerować nowy, silnie typizowanej klasy dataset. Informacje ze schematu (tabel, kolumn i tak dalej) są generowane i skompilowany w tej nowej klasy dataset jako zestaw obiektów pierwszej klasy i właściwości. Ponieważ typizowanego obiektu dataset pochodząca od klasy podstawowej <xref:System.Data.DataSet> klasy typizowanej klasy przyjęto założenie, wszystkie funkcje <xref:System.Data.DataSet> klasy i mogą być używane z metod, które przyjmują wystąpienia <xref:System.Data.DataSet> klasy jako parametr.
+Typizowany zestaw danych jest zestaw danych, który najpierw pochodzą od podstawy <xref:System.Data.DataSet> klasy, a następnie używa informacji z **Projektanta obiektów Dataset**, który jest przechowywany w pliku XSD, aby wygenerować nowy, silnie typizowanej klasy zestawu danych. Informacje ze schematu (tabele, kolumny i tak dalej) jest wygenerowany i kompilowane do tej nowej klasy dataset jako zbiór obiektów najwyższej klasy i właściwości. Ponieważ typizowany zestaw danych dziedziczy od podstawy <xref:System.Data.DataSet> klasy typizowanej klasy przyjęto założenie, wszystkie funkcje <xref:System.Data.DataSet> klasy i mogą być używane z metod, dla których wystąpienie <xref:System.Data.DataSet> klasy jako parametr.
 
- Nietypizowanego zestawu danych z kolei ma brak odpowiednich wbudowanego schematu. Jak typizowanego obiektu dataset nietypizowanego zestawu danych zawiera tabele, kolumny i tak dalej, ale te są widoczne tylko w kolekcjach. (Jednak utworzony ręcznie tabele i inne elementy w nietypizowanego zestawu danych, można wyeksportować struktury zestawu danych jako schematu za pomocą zestawu danych <xref:System.Data.DataSet.WriteXmlSchema%2A> metody.)
+ Nietypizowany zestaw danych, z kolei ma odpowiedni schemat wbudowany. Jak typizowany zestaw danych jest nietypizowany zestaw danych zawiera tabele, kolumny i tak dalej, ale te są dostępne tylko jako kolekcji. (Jednak utworzony ręcznie tabele i inne elementy w nietypizowany zestaw danych, możesz wyeksportować struktury zestawu danych jako schematu przy użyciu zestawu danych <xref:System.Data.DataSet.WriteXmlSchema%2A> metody.)
 
-## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Kontrast dostępu do danych w zestawach danych typu i bez typu
- Klasy typizowanego zestawu danych ma modelu obiektów, które mają jej właściwości na rzeczywiste nazwy tabel i kolumn. Na przykład jeśli pracujesz z typizowanego zestaw danych, można się odwołać kolumny przy użyciu kodu, takie jak następujące:
+## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Dostęp do danych kontrastu w typizowane i nietypizowane zestawy danych
+ Klasy dla typizowany zestaw danych zawiera model obiektów, które mają jej właściwości na rzeczywiste nazwy tabel i kolumn. Na przykład jeśli pracujesz z typizowany zestaw danych, możesz odwołać kolumny przy użyciu kodu, takie jak następujące:
 
  [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
  [!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
 
- Z kolei podczas pracy z zestawem danych bez typu, jest równoważne kodu:
+ Z kolei jeśli pracujesz z zestawu danych bez typu, jest równoważny kod:
 
  [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
  [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
- Dostęp typu nie jest tylko czytelności, ale również pełni obsługiwane przez funkcję IntelliSense w Visual Studio **edytora kodu**. Oprócz łatwiej współpracować, składnia typizowanego obiektu dataset zawiera typ sprawdzenie w czasie kompilacji, co pozwala znacznie zmniejszyć prawdopodobieństwo wystąpienia błędów w przypisywanie wartości do elementów członkowskich zestawu danych. Jeśli zmienisz nazwę kolumny w Twojej <xref:System.Data.DataSet> klasy, a następnie skompilować aplikację, komunikat o błędzie kompilacji. Klikając dwukrotnie błąd kompilacji w **listy zadań**, można przejść bezpośrednio do wiersze kodu, które odwołują się do starej nazwy kolumny. Dostęp do tabel i kolumn w typizowanego zestawu danych również jest nieco większa w czasie wykonywania, ponieważ dostęp jest określany w czasie kompilacji, nie za pomocą kolekcji w czasie wykonywania.
+ Typizowany dostęp jest nie tylko łatwiej odczytać, ale także w pełni obsługiwane przez funkcję IntelliSense w programie Visual Studio **Edytor kodu**. Oprócz łatwiej pracować z, składnia typizowany zestaw danych zawiera typ sprawdzanie w czasie kompilacji, co pozwala znacznie zmniejszyć prawdopodobieństwo wystąpienia błędów podczas przypisywania wartości do elementów członkowskich zestawu danych. Jeśli zmienisz nazwę kolumny w swojej <xref:System.Data.DataSet> klasy, a następnie skompilować aplikację, zostanie wyświetlony błąd kompilacji. Klikając dwukrotnie błąd kompilacji w **listy zadań**, możesz przejść bezpośrednio do wiersz lub wiersze kodu odwołujące się do starej nazwy kolumny. Dostęp do tabel i kolumn w typizowanego zestawu danych również jest nieco szybsze, w czasie wykonywania, ponieważ dostęp jest określany w czasie kompilacji, a nie przy użyciu kolekcji w czasie wykonywania.
 
- Mimo że typizowane zbiory danych ma wiele zalet, nietypizowanego zestawu danych jest przydatne w różnych sytuacjach. Najbardziej oczywisty scenariusz jest gdy brak schematu nie jest dostępny dla zestawu danych. Taka sytuacja może wystąpić, na przykład jeśli aplikacja prowadzi interakcję z składnik, który zwraca dataset, ale nie znasz z wyprzedzeniem jego struktura jest. Podobnie są razy podczas pracy z danymi, które nie ma on struktury statycznych, przewidywalnych. W takim przypadku jest niemożliwe do użycia typizowanego zestaw danych, ponieważ będzie musiał ponownie wygenerować klasy typizowanego zestawu danych z każdej zmiany w strukturze danych.
+ Mimo że typizowanych zestawów danych ma wiele zalet, nietypizowany zestaw danych jest przydatne w różnych sytuacjach. Scenariusz najbardziej oczywiste jest, gdy schemat nie jest dostępny dla zestawu danych. Taka sytuacja może wystąpić, na przykład, jeśli aplikacja prowadzi interakcję z składnik, który zwraca zestaw danych, ale nie znasz wcześniej jego struktury jest. Analogicznie istnieją razy podczas pracy z danymi, które nie ma statycznego stała, przewidywalna Struktura. W takim przypadku jest to niepraktyczne, aby użyć typizowany zestaw danych, ponieważ trzeba ponownie wygenerować klasę typizowany zestaw danych z każdej zmiany w strukturze danych.
 
- Ogólnie rzecz biorąc są wielokrotnie podczas można dynamicznie utworzyć zestawu danych bez schematu dostępne. W takim przypadku zestawu danych jest po prostu wygodny struktury zachować informacje, jak długo dane można przedstawić w sposób relacyjnej. W tym samym czasie można korzystać z możliwości zestawu danych, takie jak możliwość serializować informacji do przekazania do inny proces lub zapisać pliku XML.
+ Ogólnie rzecz biorąc są wielokrotnie podczas można dynamicznie utworzyć zestaw danych bez schematu, które są dostępne. W takim przypadku zestaw danych jest po prostu wygodne struktury zachować informacje, tak długo, jak długo dane mogą być reprezentowane w taki sposób, relacyjne. W tym samym czasie można wykorzystać możliwości zestawu danych, takich jak możliwość serializacji informacji do przekazania do innego procesu lub zapisać plik XML.
 
 ## <a name="see-also"></a>Zobacz także
 

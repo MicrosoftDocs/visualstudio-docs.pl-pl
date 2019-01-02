@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator3 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2349924dd2f762638dc6ea08b40a71776b9605a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0acf22666546ca7ef960c6da67728aed0a0b8735
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837683"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób wdrażania ewaluatorów wyrażeń jest przestarzały. Aby uzyskać informacje dotyczące wdrożenia ewaluatorów wyrażeń CLR, zobacz [Ewaluatorów wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane próbki ewaluatora wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Reprezentuje ewaluatora wyrażeń (EE) z drzewo rozszerzone analizatora.  
+ Reprezentuje ewaluatora wyrażeń (EE) z drzewem rozszerzone analizatora.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,18 +30,18 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ```  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ta wersja analizatora przekazuje symbol dostawcy i adres oszacowania ramki.  
+ Ta wersja analizator przekazuje dostawca symboli i adres oceny ramki.  
   
 ## <a name="methods"></a>Metody  
- Oprócz metod na [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfejsu, tego interfejsu implementuje następującą metodę:  
+ Oprócz metod na [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfejsu, ten interfejs implementuje następującą metodę:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Konwertuje ciąg wyrażenia wyrażenia przeanalizowanego danego dostawcy symboli i adres oszacowania ramki.|  
+|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Konwertuje ciąg wyrażenia wyrażenie przeanalizowany podany dostawca symboli i adres oceny ramki.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Ee.h  
+ Nagłówek: EE.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

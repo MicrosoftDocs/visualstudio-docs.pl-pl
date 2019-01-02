@@ -1,9 +1,6 @@
 ---
-title: Odwołanie do schematu elementu projektu SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Odwołanie do schematu elementu projektu programu SharePoint | Dokumentacja firmy Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,34 +23,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b94856d4e00cd15f324040ccd49c90bb1be29a7d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895808"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Odwołanie do schematu elementu projektu SharePoint
-  Visual Studio będzie korzystać schematu elementu projektu SharePoint do sprawdzania poprawności zawartości *.spdata —* plików. *.Spdata —* plik Określa zawartości i zachowanie elementu projektu SharePoint. Aby uzyskać więcej informacji o zawartości programu SharePoint — elementy projektu, zobacz [elementu Tworzenie szablonów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+  Program Visual Studio używa schematu elementu projektu programu SharePoint do sprawdzania poprawności zawartości *spdata* plików. *Spdata* plik Określa zawartości i zachowania elementu projektu programu SharePoint. Aby uzyskać więcej informacji o zawartości elementów projektu programu SharePoint, zobacz [Tworzenie elementu szablonów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
- Schemat elementu projektu SharePoint o nazwie ProjectItemModelSchema.xsd i jest instalowany domyślnie w lokalizacji % Program Files (11.0\Xml\Schemas x86)%\Microsoft programu Visual Studio.  
+ Schemat elementu projektu programu SharePoint o nazwie ProjectItemModelSchema.xsd i jest instalowany domyślnie w katalogu % Program Files (11.0\Xml\Schemas x86)%\Microsoft programu Visual Studio.  
   
- Element główny jest [ProjectItem](../sharepoint/projectitem-element.md) elementu. W poniższej tabeli opisano wszystkie elementy z definicją w schemacie.  
+ Element główny jest [ProjectItem](../sharepoint/projectitem-element.md) elementu. W poniższej tabeli opisano wszystkie elementy zdefiniowane w schemacie.  
   
 |Element|Opis|  
 |-------------|-----------------|  
 |[Extensiondata —](../sharepoint/extensiondata-element.md)|Reprezentuje kolekcję elementów danych niestandardowych, które są skojarzone z elementem projektu programu SharePoint.|  
-|[Extensiondataitem —](../sharepoint/extensiondataitem-element.md)|Reprezentuje element danych niestandardowych, który jest skojarzony z elementem projektu programu SharePoint, w formacie klucza i wartości. Klucz i wartość muszą być ciągami.|  
-|[Featureproperties —](../sharepoint/featureproperties-element.md)|Reprezentuje kolekcję wartości właściwości, które są dołączone do funkcji po wdrożeniu programu SharePoint. Po wdrożeniu funkcji można uzyskać dostępu do wartości właściwości, w kodzie.|  
-|[FeatureProperty —](../sharepoint/featureproperty-element.md)|Reprezentuje właściwości niestandardowej, która jest zawarta w funkcji po wdrożeniu programu SharePoint. Po wdrożeniu funkcji można uzyskać dostępu do właściwości, w kodzie.|  
-|[Pliki](../sharepoint/files-element.md)|Określa pliki do wdrożenia z elementu projektu SharePoint, takich jak plik element funkcji lub wyjście projektu.|  
+|[Extensiondataitem —](../sharepoint/extensiondataitem-element.md)|Reprezentuje element danych niestandardowych, który jest skojarzony z elementu projektu programu SharePoint w formacie klucz/wartość. Klucz i wartość muszą być ciągami.|  
+|[Featureproperties —](../sharepoint/featureproperties-element.md)|Reprezentuje kolekcję wartości właściwości, które są uwzględniane przy użyciu funkcji, gdy aplikacja jest wdrożona w programie SharePoint. Po wdrożeniu funkcji wartości właściwości są dostępne w kodzie.|  
+|[FeatureProperty —](../sharepoint/featureproperty-element.md)|Reprezentuje właściwość niestandardowa, która jest uwzględniany w funkcji, gdy aplikacja jest wdrożona w programie SharePoint. Po wdrożeniu funkcji właściwości są dostępne w kodzie.|  
+|[Pliki](../sharepoint/files-element.md)|Określa pliki, aby wdrożyć elementu projektu programu SharePoint, na przykład danych wyjściowych projektu lub pliku elementu funkcji.|  
 |[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint.|  
-|[Projectitemfile —](../sharepoint/projectitemfile-element.md)|Reprezentuje plik programu SharePoint, takich jak plik element funkcji, aby dołączyć z elementem projektu po wdrożeniu programu SharePoint.|  
+|[Projectitemfile —](../sharepoint/projectitemfile-element.md)|Reprezentuje plik programu SharePoint, takich jak funkcja element pliku do uwzględnienia przy użyciu elementu projektu, gdy aplikacja jest wdrożona w programie SharePoint.|  
 |[Projectitemfolder —](../sharepoint/projectitemfolder-element.md)|Reprezentuje zamapowany folder.|  
-|[Projectoutputfile —](../sharepoint/projectoutputfile-element.md)|Reprezentuje dane wyjściowe projektu do dołączenia do elementu projektu po wdrożeniu programu SharePoint.|  
-|[SafeControl —](../sharepoint/safecontrol-element.md)|Reprezentuje kontrolki ASPX lub składnik Web Part jest oznaczony jako bezpieczny dla każdego użytkownika uzyskiwać dostęp do dowolnej strony ASPX w witrynie programu SharePoint.|  
-|[SafeControls —](../sharepoint/safecontrols-element.md)|Reprezentuje kolekcję ASPX kontrolek i składników Web Part, które są wyznaczone jako bezpieczne dla każdego użytkownika uzyskiwać dostęp do dowolnej strony ASPX w witrynie programu SharePoint.|  
+|[Projectoutputfile —](../sharepoint/projectoutputfile-element.md)|Reprezentuje dane wyjściowe projektu do uwzględnienia przy użyciu elementu projektu, gdy aplikacja jest wdrożona w programie SharePoint.|  
+|[SafeControl —](../sharepoint/safecontrol-element.md)|Reprezentuje kontrolki ASPX lub składnik Web Part, który jest wyznaczony jako bezpieczna opcja dla każdemu użytkownikowi dostęp do strony ASPX w witrynie programu SharePoint.|  
+|[SafeControls —](../sharepoint/safecontrols-element.md)|Reprezentuje kolekcję formantów ASPX i składniki Web Part, które zostały oznaczone jako bezpieczne dla każdego użytkownika, dostęp do w dowolnej strony ASPX w witrynie programu SharePoint.|  
   
 ## <a name="see-also"></a>Zobacz także
- [Tworzenie szablonów elementów i szablonów projektu dla SharePoint — elementy projektu](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
-  
+ [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  

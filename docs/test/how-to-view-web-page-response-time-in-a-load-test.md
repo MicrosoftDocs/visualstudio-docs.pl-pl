@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850141"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Porady: wyświetlanie czasu odpowiedzi strony sieci web w teście obciążenia za pomocą analizatora testu obciążenia
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Instrukcje: Czas odpowiedzi strony sieci web widoku w teście obciążenia za pomocą analizatora testu obciążenia
 
 Czas potrzebny na każdej stronie sieci web załadować jest znany jako *czas odpowiedzi*. Podczas tworzenia testu wydajności sieci web, można ustawić docelowy czas odpowiedzi dla każdego żądania strony sieci web w teście wydajności sieci web.
 
@@ -61,7 +60,7 @@ Po uruchomieniu testu wydajności sieci web przy dużym obciążeniu w teście o
    |**Maksymalna**|Strona maksymalny czas odpowiedzi.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
    |**Odchylenie standardowe**|Domyślnie nie są zbierane dane odchylenia standardowego. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
    |**Czas strony**|Średni czas odpowiedzi dla wszystkich żądań, które zostały wprowadzone dla strony sieci web.|
-   |**Cel**|Cel dotyczący czasu strony. Jest to wartość stałą dla strony. **Uwaga:** cel dotyczący czasu strona jest wyświetlana tylko wtedy, gdy celem został zdefiniowany dla żądania w teście wydajności sieci web.|
+   |**Cel**|Cel dotyczący czasu strony. Jest to wartość stałą dla strony. **Uwaga:**  Cel dotyczący czasu strona jest wyświetlana tylko wtedy, gdy celem został zdefiniowany dla żądania w teście wydajności sieci web.|
    |**% Osiągnięcia celu**|Procent żądań, które zostały wprowadzone na stronie sieci web, że zostały spełnione cel dotyczący czasu odpowiedzi.|
 
    Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -96,5 +95,5 @@ Aby wyświetlić dane czasu odpowiedzi w postaci wykresu:
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)
+- [Instrukcje: Wyniki testu obciążeniowego dostęp do analizy](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

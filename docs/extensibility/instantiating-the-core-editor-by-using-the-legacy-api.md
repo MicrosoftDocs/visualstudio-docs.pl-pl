@@ -1,9 +1,6 @@
 ---
 title: Utworzenie wystąpienia podstawowy edytor za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838167"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Utwórz wystąpienie podstawowy edytor przy użyciu starszej wersji interfejsu API
 Edytor jest odpowiedzialny za edycji funkcji, takich jak wstawianie, usuwanie, kopiowanie i wklejanie tekstu. Łączy te funkcje przy użyciu funkcji udostępnianego przez usługi języka, takich jak tekst, kolorowanie, wcięcia i instrukcji IntelliSense.  
@@ -65,9 +62,9 @@ Edytor jest odpowiedzialny za edycji funkcji, takich jak wstawianie, usuwanie, k
   
  Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metoda zwraca to samo polecenie identyfikator GUID edytora tekstu, wystąpienie podstawowy edytor automatycznie uzyskuje wartość domyślna klawiszy skrótów.  
   
- Aby uzyskać ogólne informacje, zobacz [wskazówki: Tworzenie podstawowej edytora i rejestrując typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Aby uzyskać ogólne informacje, zobacz [instruktażu: Tworzenie podstawowej edytora i rejestrując typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   
  [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Przewodnik: Tworzenie edytora podstawowych i rejestrując typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Przewodnik: Tworzenie edytorze podstawowych i rejestrowania typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

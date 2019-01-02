@@ -1,9 +1,6 @@
 ---
 title: Model obiektu Visio ― omówienie
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848470"
 ---
 # <a name="visio-object-model-overview"></a>Model obiektu Visio ― omówienie
   Do opracowywania rozwiązań pakietu Office dla programu Microsoft Office Visio, możesz korzystać z modelu obiektów programu Visio. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowy zestaw międzyoperacyjny dla programu Visio i są definiowane w `Microsoft.Office.Interop.Visio` przestrzeni nazw.  
@@ -83,5 +80,3 @@ ms.locfileid: "50671407"
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md)   
  [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md)  
-  
-  

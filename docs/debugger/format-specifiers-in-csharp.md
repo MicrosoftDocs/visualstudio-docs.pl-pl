@@ -1,8 +1,6 @@
 ---
 title: Specyfikatory w debugerze formatu (C#) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899017"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu C# w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu. Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)i w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) wyświetlania określonego formatu.  
@@ -59,7 +57,7 @@ Użyjemy poniższy przykład kodu:
   
 |Specyfikator|Format|Oryginalnej wartości czujki|Wyświetla|  
 |---------------|------------|--------------------------|--------------|  
-|AC|Wymuszenie obliczenia wyrażenia, które mogą być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone.|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<value>|  
+|ac|Wymuszenie obliczenia wyrażenia, które mogą być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone.|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<wartość >|  
 |d|Liczba całkowita dziesiętna|0x0065|101|  
 |dynamic|Wyświetla określony obiekt przy użyciu dynamicznego widoku|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla tylko widoku dynamicznego|  
 |h|Szesnastkowa liczba całkowita|61541|0x0000F065|  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837972"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Dziennik zmian (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   Naprawiono odwołania do zestawów UnityEngine i UnityEditor dla aplikacji Windows Store.
 
--   Naprawiono błąd przy przechodzeniu w debugerze: nie można wkroczyć ogólny wyjątek.
+-   Naprawiono błąd przy przechodzeniu w debugerze: Nie można przejść, ogólny wyjątek.
 
 -   Stałej liczby trafień punkty przerwania w programie Visual Studio 2015.
 
@@ -206,13 +205,13 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Zainstaluj program Visual Studio Tools dla pakietu Unity dla aparatu Unity 5.
 
--   **Dokumentacja:** poprawić wydajność Generowanie dokumentacji.
+-   **Dokumentacja:** Zwiększ wydajność Generowanie dokumentacji.
 
--   **Kreatorzy:** obsługę nowych metod MonoBehavior Unity 4.6 i aparatu Unity 5.
+-   **Kreatorów:** Obsługa nowych metod MonoBehavior Unity 4.6 i aparatu Unity 5.
 
--   **Unity:** flagi niebezpieczne wyszukiwania i niestandardowych definiuje .rsp — pliki podczas generowania pliku projektu.
+-   **Unity:** Flagi niebezpieczne wyszukiwania i niestandardowych definiuje .rsp — pliki podczas generowania pliku projektu.
 
--   **Interfejs użytkownika:** dodano Visual Studio Tools for Unity **opcje** okna dialogowego w programie Visual Studio.
+-   **INTERFEJS UŻYTKOWNIKA:** Dodano program Visual Studio Tools for Unity **opcje** okna dialogowego w programie Visual Studio.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -246,13 +245,13 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Wyślij dzienniki konsoli Unity do listy błędów programu VS.
 
--   **Dokumentacja:** Popraw generowania dokumentacji dla nowej dokumentacji aparatu unity.
+-   **Dokumentacja:** Generowanie dokumentacji poprawne dla nowej dokumentacji aparatu unity.
 
 -   **Projekt:** Przenieś i Zmień nazwy plików .meta Unity w razie potrzeby, nawet w przypadku folderów.
 
--   **Kreatorzy:** Popraw kolejność parametrów metody MonoBehavior podczas generowania kodu.
+-   **Kreatorów:** Popraw kolejność parametrów metody MonoBehavior podczas generowania kodu.
 
--   **Interfejs użytkownika:** motywy pomocy technicznej programu Visual Studio dla ikony i menu kontekstowego.
+-   **INTERFEJS UŻYTKOWNIKA:** Obsługa kompozycji programu Visual Studio ikony i menu kontekstowego.
 
 ## <a name="20-preview"></a>W wersji 2.0 (wersja zapoznawcza)
  Wydana 2014-11-12
@@ -597,21 +596,21 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   Usunięto usterkę występującą 48 UV: wpisywanie podwójny cudzysłów czasami generuje błąd i przerwanie wszystkich funkcji (uzupełnianie kodu, wyróżnianie składni itp.).
 
--   Usunięto usterkę występującą UV 46: zduplikowany plik otwarty skryptu (UnityScript), po kliknięciu błąd listy z programu Visual Studio.
+-   Usunięto usterkę występującą UV 46: Zduplikowany plik otwarty skryptu (UnityScript), po kliknięciu błąd listy z programu Visual Studio.
 
--   Usunięto usterkę występującą 42 UV: logo łączność platformy Unity na pasku stanu nie obsługuje zdarzenia myszy w VS 2012.
+-   Usunięto usterkę występującą 42 UV: Logo łączność platformy Unity na pasku stanu nie obsługuje zdarzenia myszy w VS 2012.
 
 -   Usunięto usterkę występującą UV 44: CTRL + SHIFT + Q nie jest dostępna w wersji VS 2012 dla szybkich klas Monobehaviour.
 
--   Usunięto usterkę występującą UV 40: wybranych elementów w Eksploratorze projektów aparatu Unity były nieczytelne w przypadku, gdy okno jest nieaktywne VS2012 motywu "ciemny".
+-   Usunięto usterkę występującą UV 40: Wybrane elementy w Eksploratorze projektów aparatu Unity były nieczytelne w przypadku, gdy okno jest nieaktywne VS2012 motywu "ciemny".
 
--   Usunięto usterkę występującą UV 39: tokenizowanie problem poprzedzone znakiem zmiany znaczenia ciągów.
+-   Usunięto usterkę występującą UV 39: Wydać tokenizację ciągów o zmienionym znaczeniu.
 
--   Usunięto usterkę występującą 35 UV: wywoływanie ToString obiektów podczas sprawdzania zmiennych.
+-   Usunięto usterkę występującą 35 UV: Wywołaj ToString obiektów, podczas sprawdzania zmiennych.
 
--   Usunięto usterkę występującą UV 27: niespójność okna przejdź do symbolu z "" ciemny w VS2012.
+-   Usunięto usterkę występującą UV 27: Przejdź do symbolu okna sprzeczność z takimi "" ciemny w VS2012.
 
--   Usunięto usterkę występującą UV-11: zmiennych lokalnych w koprocedury.
+-   Usunięto usterkę występującą UV-11: Zmienne lokalne w koprocedury.
 
 ## <a name="11--beta-release"></a>1.1 — wydanie beta
  Wydana 2014-10-09
@@ -717,9 +716,9 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   Ustala, jak typy są przeszukiwane w załadowanych zestawów do obliczenia wyrażenia.
 
--   Usunięto usterkę występującą UV 21: ocena przydziału obiektów Unity nie ma wpływu.
+-   Usunięto usterkę występującą UV 21: Ocena przydziału obiektów Unity nie ma znaczenia.
 
--   Usunięto usterkę występującą UV 21: nieprawidłowy wskaźnik podczas obliczania wywołanie metody do interfejsu API aparatu Unity matematyczne.
+-   Usunięto usterkę występującą UV 21: Nieprawidłowy wskaźnik podczas obliczania wywołanie metody do interfejsu API aparatu Unity matematyczne.
 
 ## <a name="108"></a>1.0.8
  Wydana 26-2012-09
@@ -818,4 +817,3 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="10--initial-release"></a>Wersji 1.0 — początkowa
  Wydana 22-2012-08
-

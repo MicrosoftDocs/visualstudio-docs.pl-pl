@@ -1,9 +1,6 @@
 ---
 title: Decyzje projektowe dotyczące typów projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bd6d2188b46093c5bfe18f9cabe985a953c000f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01bebdb26b4a3b89d9f9814c9428107d2cef6b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898599"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe dotyczące typów projektów
 Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzji projektowych dotyczących danego typu projektu. Należy zdecydować, jakie rodzaje elementów, który będzie zawarty w projekcie, jak pliki projektu zostaną utrwalone i jakie modelu zobowiązania będą używane.  

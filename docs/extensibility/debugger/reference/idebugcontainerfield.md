@@ -1,9 +1,6 @@
 ---
 title: IDebugContainerField | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugContainerField
@@ -15,45 +12,45 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bee04d21e3181d4590f26b64c794164ab1a84b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51b88bf0302c404883ccbc3d476cb0262eb1e948
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910315"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
-Ten interfejs reprezentuje symbol lub typu, który jest kontenerem dla innych symboli lub typów.  
+Ten interfejs reprezentuje symbol lub typ, który jest kontenerem dla innych symboli lub typów.  
   
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDebugContainerField : IDebugField  
+IDebugContainerField : IDebugField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawca symbol implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu. Ten interfejs jest również klasę podstawową dla wszystkich interfejsów, które reprezentują kontenery.  
+ Dostawca symboli implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu. Ten interfejs jest również klasę bazową dla wszystkich interfejsów, które reprezentują kontenery.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wiele metod w wielu interfejsach zwrócić tego interfejsu. Ponieważ jest to klasa podstawowa dla wszystkich kontenerów, wyspecjalizowanego interfejsów można uzyskać z tego interfejsu za pomocą [QueryInterface](/cpp/atl/queryinterface). Interfejsy obejmują [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), i [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
+ Wiele metod w wielu interfejsach zwraca ten interfejs. Ponieważ jest to klasa bazowa dla wszystkich kontenerów, bardziej wyspecjalizowane interfejsy można uzyskać w tym interfejsie za pomocą [QueryInterface](/cpp/atl/queryinterface). Takie interfejsy zawierają [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), i [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
- Oprócz metod na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu, tego interfejsu implementuje następującą metodę:  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+ Oprócz metod na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu, ten interfejs implementuje następującą metodę:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Tworzy moduł wyliczający dla pól kontenera.|  
   
 ## <a name="remarks"></a>Uwagi  
- Tablice (kontenery zmiennych), klas (kontenerami dla metod i zmienne) i metody (kontenery parametrów i zmiennych lokalnych) są wszystkie przykłady kontenerów.  
+ Tablice (kontenery dla zmiennych), klasy (kontenery dla metody i zmienne) i metody (kontenery parametry i zmienne lokalne) są przykładami kontenerów.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Symbol dostawcy interfejsów](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfejsy dostawca symboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

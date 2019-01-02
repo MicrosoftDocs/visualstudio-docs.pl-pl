@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b96de709ae3ff8e4f8e37e882ca634fb158518a5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2eacbb7f06aa607af0842056870b1bd34b3d66af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912915"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Zwraca liczbę tagów wskaźnika akceleratora w funkcji stub C++ AMP.  
+Zwraca liczbę znaczników wskaźnika akceleratora w funkcji skrótową, C++ AMP.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,13 +30,13 @@ HRESULT findSymbolsForAccleratorPointerTag (
   
 #### <a name="parameters"></a>Parametry  
  `tagValue`  
- [in] Wartość wskaźnika tagu, dla której znajdują się rekordy symbol pointee.  
+ [in] Wartość tagu wskaźnika, dla której rekordy symbol pointee zostaną znalezione.  
   
  `ppResult`  
- [out] Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który został zainicjowany z wynikiem.  
+ [out] Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który jest inicjowany z wynikiem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   

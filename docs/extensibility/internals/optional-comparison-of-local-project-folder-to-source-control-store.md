@@ -1,9 +1,6 @@
 ---
-title: Porównanie folderu projektu do kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Porównaj folderu projektu do Store kontroli źródła | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0f6f2185385ee7ec3942556a43f58d43e7a4da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39e4cea70f407ab4fd9358d35488103aecb2b58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903659"
 ---
-# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Opcjonalne porównanie Folder lokalny projekt do kontroli źródła
-W źródle kontrolować 1.2 interfejsu API wtyczek porównania folder lokalny projektu z kontroli źródła odbywa się za pomocą funkcji [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
+# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Opcjonalne porównanie lokalnego folderu projektu do magazynu kontroli kodu źródłowego
+W źródle kontrolować 1.2 interfejsu API wtyczki porównania między lokalnym folderze projektu i kontrola źródła odbywa się za pomocą funkcji [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
   
- W ramach **Eksploratora rozwiązań**, jeśli wybrano folder zamiast pliku poszczególnych **Porównaj wersje** menu skrótów wywołuje nowe [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [ SccDirDiff](../../extensibility/sccdirdiff-function.md) w wtyczkę kontroli źródła.  
+ W ramach **Eksploratora rozwiązań**, jeśli wybrano folderu zamiast pojedynczego pliku, **Porównaj wersje** menu skrótów wywołuje nowej [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [ SccDirDiff](../../extensibility/sccdirdiff-function.md) w wtyczka do kontroli źródła.  
   
-## <a name="new-capability-flags"></a>Nowe możliwości flagi  
+## <a name="new-capability-flags"></a>Nowe flagi możliwości  
  `SCC_CAP_DIRECTORYDIFF`  
   
  `SCC_CAP_DIRECTORYCHECKOUT`  
@@ -36,10 +33,10 @@ W źródle kontrolować 1.2 interfejsu API wtyczek porównania folder lokalny pr
   
  [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)  
   
- `SccDirQueryInfo` Funkcja jest wywoływana przed `SccDirDiff` do ustalenia, czy katalog roboczy jest pod kontrolą źródła. `SccDirDiff` Funkcja przedstawia różnice między bieżącym katalogu lokalnego i odpowiedniego folderu kontroli źródła. To polecenie zapyta wtyczka do kontroli źródła Aby wyświetlić listę zmian w katalogu. Wtyczka do kontroli źródła udostępnia własnego interfejsu użytkownika, aby wyświetlić różnice.  
+ `SccDirQueryInfo` Funkcja jest wywoływana przed `SccDirDiff` do ustalenia, czy katalog roboczy jest pod kontrolą źródła. `SccDirDiff` Funkcja wyświetla różnice między bieżącym katalogu lokalnego i odpowiedni folder kontroli źródła. To polecenie pyta, czy wtyczka do kontroli źródła Aby wyświetlić listę zmian w katalogu. Wtyczka do kontroli źródła udostępnia własny interfejs użytkownika do wyświetlania różnic.  
   
 > [!NOTE]
->  Ta funkcja korzysta z tej samej flagi polecenie jako [SccDiff](../../extensibility/sccdiff-function.md). Jako dostawca wtyczkę kontroli źródła możesz nie obsługuje operacji "szybkie różnicowego" dla katalogów.  
+>  Ta funkcja używa tego samego flag poleceń jako [SccDiff](../../extensibility/sccdiff-function.md). Jako dostawca wtyczki kontroli źródła istnieje możliwość nie obsługuje operacji "szybkie diff" w przypadku katalogów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

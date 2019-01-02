@@ -1,9 +1,6 @@
 ---
 title: Omówienie integracji kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902994"
 ---
 # <a name="source-control-integration-overview"></a>Omówienie integracji kontroli kodu źródłowego
 W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visual Studio; kontroli źródła wtyczek i pakietu VSPackage, który zapewnia rozwiązanie do kontroli źródła i wyróżnienie nowej funkcji kontroli źródła. Program Visual Studio umożliwia ręczne przełączanie między kontroli źródła pakietów VSPackage i wtyczek kontroli kodu źródłowego, a także automatyczne przełączanie oparte na rozwiązaniach.  
@@ -35,7 +32,7 @@ W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visua
   
 1. Tworzenie biblioteki DLL, która implementuje funkcje wymienione w [wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md).  
   
-2. Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednich (opisanego w [porady: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednich (opisanego w [jak: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Utwórz obiekt pomocnika interfejsu użytkownika i wyświetlanie po wyświetleniu monitu przez pakiet karty kontroli źródła (składnik programu Visual Studio, który obsługuje funkcji kontroli źródła, za pomocą wtyczek kontroli kodu źródłowego)  
   

@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramEngines2::SetEngine | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramEngines2::SetEngine
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9decc11ed13029831d78e1a79deb4134cc377e99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c77cffc8b30d09e4136c6bdd94f30da85a4a77b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916062"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
 Informuje program lub węzeł program który aparat debugowania (DE) do użycia, aby debugować ten program.  
@@ -28,13 +25,13 @@ Informuje program lub węzeł program który aparat debugowania (DE) do użycia,
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT SetEngine(   
+HRESULT SetEngine(   
    REFGUID guidEngine  
 );  
 ```  
   
 ```csharp  
-int SetEngine(   
+int SetEngine(   
    ref Guid guidEngine  
 );  
 ```  

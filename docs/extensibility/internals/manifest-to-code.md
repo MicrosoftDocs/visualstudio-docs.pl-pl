@@ -1,6 +1,5 @@
 ---
-title: Manifestu do kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Manifest kodu | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
@@ -9,54 +8,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895444"
 ---
-# <a name="manifest-to-code"></a>Manifestu do kodu
-Plik manifestu do narzędzia kodu to aplikacja konsolowa, która przyjmuje pliku .imagemanifest dla usługi Visual Studio obrazu i generuje lub pliku otoki dla odwołania do wartości manifestu obrazu w języku C++, C#, VB lub vsct plików dla rozszerzeń programu Visual Studio. Narzędzie to generuje otoki pliki, które mogą być używane dla żądania obrazów z programu Visual Studio obrazu usługi bezpośrednio lub przekazywania manifestu wartości za pośrednictwem interfejsów API, jeśli kod nie obsługuje własnego interfejsu użytkownika i renderowania.  
+# <a name="manifest-to-code"></a>Manifest to Code
+Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjmuje plik .imagemanifest dla usługi obrazów programu Visual Studio i generuje plik z otoką lub plików do odwoływania się do wartości manifestu obrazu w języku C++, C#, VB lub vsct plików dla programu Visual Studio rozszerzenia. To narzędzie generuje pliki otoki, których można użyć dla obrazów żądania z usługi Visual Studio obraz bezpośrednio lub do przekazywania wartości manifestu za pośrednictwem interfejsów API, jeśli kod nie obsługuje żadnego interfejsu użytkownika i renderowania.  
   
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  **Składnia**  
   
- ManifestToCode /manifest:\<plik manifestu obrazu > /language:\<języka kodu > \<opcjonalnych argumentów >  
+ ManifestToCode /manifest:\<pliku manifestu obrazu > /language:\<języka kodu > \<argumentów opcjonalnych >  
   
  **Argumenty**  
   
 ||||  
 |-|-|-|  
-|**Nazwa przełącznika**|**Uwagi**|**Wymagany lub opcjonalny**|  
-|/ manifestu|Ścieżka do manifestu obrazu służące do tworzenia lub aktualizowania otoki kodu.|Wymagane|  
-|/Language|Język, w których chcesz wygenerować otoki kodu.<br /><br /> Prawidłowe wartości: CPP, C++, CS, CSharp, C#, VB lub VSCT wartości jest rozróżniana wielkość liter.<br /><br /> Dla języka VSCT opcja /monikerClass, /classAccess i/Namespace opcje są ignorowane.|Wymagane|  
-|/imageIdClass|Nazwa imageIdClass i skojarzony plik utworzony przez narzędzie. W przypadku opcji języka C++ są generowane tylko pliki .h.<br /><br /> Wartość domyślna: \<manifestu ścieżka > \MyImageIds.\< Lang Ext >|Optional|  
-|/monikerClass|Nazwa monikerClass i skojarzony plik utworzony przez narzędzie. W przypadku opcji języka C++ są generowane tylko pliki .h. To jest ignorowany dla języka VSCT.<br /><br /> Wartość domyślna: \<manifestu ścieżka > \MyMonikers.\< Lang Ext >|Optional|  
-|/classAccess|Modyfikator dostępu imageIdClass i monikerClass. Upewnij się, że modyfikator dostępu jest prawidłowa dla danego języka. To jest ignorowana w VSCT opcją języka.<br /><br /> Domyślne: publiczne|Optional|  
-|/ Namespace|Przestrzeń nazw zdefiniowana w otoki kodu. To jest ignorowana w VSCT opcją języka. Albo "."lub"::" są separatory prawidłowy obszar nazw, niezależnie od opcji wybranego języka.<br /><br /> Domyślne: MyImages|Optional|  
-|/ nologo|Ustawienie tej flagi zatrzymuje produktu i prawa autorskie informacje z drukowania.|Optional|  
-|/?|Wydrukuj informacji pomocy.|Optional|  
-|/help|Wydrukuj informacji pomocy.|Optional|  
+|**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|  
+|/ manifest|Ścieżka do manifestu obrazu do użycia w celu utworzenia lub zaktualizowania otokę kodu.|Wymagane|  
+|/Language|Język, w którym należy wygenerować otokę kodu.<br /><br /> Prawidłowe wartości: CPP, C++, CS, CSharp, C#, VB lub VSCT wartości jest rozróżniana wielkość liter.<br /><br /> Dla języka VSCT opcja /monikerClass, /classAccess i/Namespace opcje są ignorowane.|Wymagane|  
+|/imageIdClass|Nazwa imageIdClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyImageIds. \<Lang Ext >|Optional|  
+|/monikerClass|Nazwa monikerClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h. To jest ignorowany dla języka VSCT.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyMonikers. \<Lang Ext >|Optional|  
+|/classAccess|Modyfikator dostępu dla imageIdClass i monikerClass. Sprawdź, czy modyfikator dostępu jest prawidłowy dla danego języka. To jest ignorowany dla opcji języka VSCT.<br /><br /> Wartość domyślna: Public|Optional|  
+|/ Namespace|Przestrzeń nazw zdefiniowana w otokę kodu. To jest ignorowany dla opcji języka VSCT. Albo '. 'lub'::' są separatory prawidłowy obszar nazw, niezależnie od opcji wybranym języku.<br /><br /> Wartość domyślna: Mojeobrazy|Optional|  
+|/ nologo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
+|/?|Wydrukuj informacje pomocy.|Optional|  
+|/help|Wydrukuj informacje pomocy.|Optional|  
   
  **Przykłady**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:CSharp  
+-   /Manifest:D:\MyManifest.imagemanifest ManifestToCode w/Language: CSharp  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ parametrze/Namespace: mojej:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+-   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Uwagi  
   
--   Zaleca się za pomocą tego narzędzia z obrazu manifestów, które zostały wygenerowane przez Manifest z narzędzia zasobów.  
+-   Firma Microsoft zaleca, użyj tego narzędzia z manifestów obrazu, które zostały wygenerowane przez Manifest za pomocą narzędzia zasobów.  
   
--   Narzędzie analizuje tylko wpisy symbol do generowania otoki kodu. Jeśli manifestu obrazu nie zawiera żadnych symboli, następnie otoki wygenerowanego kodu jest pusta. Jeśli jest obrazem lub zestawu obrazów w manifeście obrazu, które nie korzystają z symboli, następnie one zostaną wykluczone z otoką kodu.  
+-   Narzędzie analizuje tylko wpisy symbolu, aby wygenerować otoki kodu. Jeśli manifestu obrazu nie zawiera żadnych symboli, następnie otoki wygenerowany kod jest pusta. Jeśli jest obraz lub zestaw obrazów w manifeście obrazu, które nie korzystają z symboli, następnie one zostaną wykluczone z otokę kodu.  
   
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe  
- **C# otoki**  
+ **Otoki języka C#**  
   
- Klasy parę identyfikator obrazu proste i moniker obrazu dla C# będą wyglądać podobnie do poniższego kodu:  
+ Parę identyfikator obrazu prostego i moniker obrazu classes dla języka C# będzie wyglądać podobnie do poniższego kodu:  
   
 ```csharp  
 //-----------------------------------------------------------------------------  
@@ -97,9 +96,9 @@ namespace MyImages
 }  
 ```  
   
- **Otoki C++**  
+ **Otoki języka C++**  
   
- Klasy parę identyfikator obrazu proste i moniker obrazu dla C++ będą wyglądać podobnie do poniższego kodu:  
+ Parę identyfikator obrazu prostego i moniker obrazu classes dla języka C++ będą podobne do poniższego kodu:  
   
 ```cpp  
 //-----------------------------------------------------------------------------  
@@ -158,7 +157,7 @@ __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::As
   
  **Otoki Visual Basic**  
   
- Para identyfikator obrazu proste i krótką nazwę obrazu classes dla języka Visual Basic powinien być podobny do poniższego kodu:  
+ Parę identyfikator obrazu prostego i moniker obrazu classes dla języka Visual Basic będą podobne do poniższego kodu:  
   
 ```vb  
 ' -----------------------------------------------------------------------------  
@@ -214,7 +213,7 @@ End Namespace
   
  **Otoka VSCT**  
   
- Zestaw obraz identyfikatorów dla pliku vsct będzie podobny do poniższego:  
+ Zbiór obraz identyfikatory dla pliku vsct będzie podobny do następującego:  
   
 ```xml  
 <?xml version='1.0' encoding='utf-8'?>  

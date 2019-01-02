@@ -2,7 +2,6 @@
 title: Strona właściwości aplikacji dla aplikacji platformy uniwersalnej systemu Windows
 ms.date: 01/23/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - AppPackage.Properties.Application
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 206c856eb87243fd6021c4ff8bb9f6890b8eaf25
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 2808afab24fa4a78d881dd23cc2b1a8efa364b2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898285"
 ---
 # <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy uniwersalnej systemu Windows)
 

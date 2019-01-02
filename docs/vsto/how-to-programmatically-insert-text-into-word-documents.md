@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Wstawianie tekstu w dokumentach programu Word'
-ms.custom: ''
+title: 'Instrukcje: Programowe Wstawianie tekstu w dokumentach programu Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d5a0382726e6fc481001f4afc7820875e436594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828920"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Porady: programowane Wstawianie tekstu w dokumentach programu Word
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Instrukcje: Programowe Wstawianie tekstu w dokumentach programu Word
   Istnieją trzy podstawowe sposoby Wstawianie tekstu w dokumentach programu Microsoft Office Word:  
   
 -   Wstawianie tekstu w zakresie.  
@@ -129,8 +126,6 @@ ms.locfileid: "49881667"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane formatowanie tekstu w dokumentach](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Porady: programowane rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
-  
-  
+ [Instrukcje: Programowe formatowanie tekstu w dokumentach](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Instrukcje: Programowe rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  

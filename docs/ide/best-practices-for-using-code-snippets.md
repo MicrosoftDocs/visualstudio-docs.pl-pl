@@ -2,7 +2,6 @@
 title: Najlepsze praktyki dotyczące korzystania z wstawek kodu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d95b1b95d1859d29f82f7de45aa6ddb9cde7554f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908921"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu
 
@@ -25,7 +24,7 @@ W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś 
 
 ## <a name="handling-exceptions"></a>Obsługa wyjątków
 
-Zazwyczaj fragment kodu Try... CATCH w blokach catch i zgłoś ponownie wszystkie wyjątki. Może to nie być dobrym wyborem dla projektu. Dla każdego wyjątku istnieje kilka sposobów na odpowiedź. Aby uzyskać przykłady, zobacz [jak: obsługi wyjątku za pomocą bloku try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) i [spróbuj... CATCH... Finally — instrukcja (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Zazwyczaj fragment kodu Try... CATCH w blokach catch i zgłoś ponownie wszystkie wyjątki. Może to nie być dobrym wyborem dla projektu. Dla każdego wyjątku istnieje kilka sposobów na odpowiedź. Aby uzyskać przykłady, zobacz [jak: Obsługa wyjątków za pomocą bloku try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) i [spróbuj... CATCH... Finally — instrukcja (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Lokalizacje plików
 

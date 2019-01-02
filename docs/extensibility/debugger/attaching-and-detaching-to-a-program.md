@@ -1,9 +1,6 @@
 ---
 title: Dołączanie i odłączanie programu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd47e214492f0888d7780f8aef5944cdcdeb2591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7576b3c80ff80ec0c26234cf43682aca19a96a7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841602"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Dołączanie i odłączanie do programu
 Dołączanie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń z odpowiednich atrybutów.  

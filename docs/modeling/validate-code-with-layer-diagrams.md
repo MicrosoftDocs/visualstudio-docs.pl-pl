@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907829"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -55,7 +54,7 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
 
 Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Możesz walidować kod ręcznie z diagramu Otwórz zależności w programie Visual Studio lub z wiersza polecenia. Możesz również walidować kod automatycznie podczas uruchamiania lokalnych kompilacji lub Azure potoki kompilacji. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
+Możesz walidować kod ręcznie z diagramu Otwórz zależności w programie Visual Studio lub z wiersza polecenia. Możesz również walidować kod automatycznie podczas uruchamiania lokalnych kompilacji lub Azure potoki kompilacji. Zobacz [wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Jeśli chcesz uruchomić walidację warstwy za pomocą Team Foundation Server (TFS), należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.
@@ -228,12 +227,12 @@ W poniższej sekcji opisano składnię, która jest używana w tych błędach, w
 
 | **Błąd składni** | **Opis błędu** |
 |-|-|
-| DV0001: **nieprawidłową zależność.** | Ten problem jest zgłaszany, gdy element kodu (przestrzeń nazw, typu, składowej) mapowany do odwołania do warstwy element kodu zamapowana do innej warstwy, ale nie ma żadnych strzałki zależności między te warstwy diagram sprawdzania poprawności zależności zawierający tej warstwy. Jest to naruszenie ograniczenia zależności. |
+| DV0001: **Nieprawidłowa zależność** | Ten problem jest zgłaszany, gdy element kodu (przestrzeń nazw, typu, składowej) mapowany do odwołania do warstwy element kodu zamapowana do innej warstwy, ale nie ma żadnych strzałki zależności między te warstwy diagram sprawdzania poprawności zależności zawierający tej warstwy. Jest to naruszenie ograniczenia zależności. |
 | DV1001: **Nazwa Nieprawidłowa przestrzeń nazw** | Ten problem, jest zgłaszany na element kodu skojarzone z warstwą, którego właściwość "Dozwolone nazwy Namespace" nie zawiera przestrzeń nazw, w którym zdefiniowano element tego kodu. Jest to naruszenie ograniczenia nazewnictwa. Należy zauważyć, że składnia "Dozwolone nazwy Namespace", które ma być rozdzielana średnikami lista przestrzeni nazw w kodzie, które elementy związane z są warstwy mogą być zdefiniowane. |
-| DV1002: **zależność od unreferenceable przestrzeni nazw** | Ten problem, jest zgłaszany na element kodu skojarzone z warstwą i odwoływanie się do innego elementu kod zdefiniowany w przestrzeni nazw, która jest zdefiniowana we właściwości "Unreferenceable Namespace" warstwy. Jest to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Unreferenceable przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista przestrzeni nazw, które nie powinny istnieć odwołania w elementach kodu skojarzonych z tą warstwą. |
-| DV1003: **niedozwolone przestrzeni nazw** | Ten problem, jest zgłaszany na element kodu skojarzone z warstwą zawierającą właściwość "Niedozwolone nazwy Namespace" w przestrzeni nazw, w którym zdefiniowano element tego kodu. Jest to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Name niedozwolone przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista nazw w kodzie, który nie powinien być zdefiniowany elementy skojarzone z tą warstwą. |
-| DV3001: **Missing Link** | Warstwa "*LayerName*"łączy"*artefaktu*" którego nie można znaleźć. Czy nie brakuje odwołania do zestawu? |
-| DV9001: **analiza architektoniczna znalazła błędy wewnętrzne** | Wyniki mogą być niepełne. Aby uzyskać więcej informacji, zobacz szczegółowy dziennik zdarzeń kompilacji lub okno danych wyjściowych. |
+| DV1002: **Zależność od unreferenceable przestrzeni nazw** | Ten problem, jest zgłaszany na element kodu skojarzone z warstwą i odwoływanie się do innego elementu kod zdefiniowany w przestrzeni nazw, która jest zdefiniowana we właściwości "Unreferenceable Namespace" warstwy. Jest to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Unreferenceable przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista przestrzeni nazw, które nie powinny istnieć odwołania w elementach kodu skojarzonych z tą warstwą. |
+| DV1003: **Niedozwolona przestrzeni nazw** | Ten problem, jest zgłaszany na element kodu skojarzone z warstwą zawierającą właściwość "Niedozwolone nazwy Namespace" w przestrzeni nazw, w którym zdefiniowano element tego kodu. Jest to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Name niedozwolone przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista nazw w kodzie, który nie powinien być zdefiniowany elementy skojarzone z tą warstwą. |
+| DV3001: **Brakujące łącze** | Warstwa "*LayerName*"łączy"*artefaktu*" którego nie można znaleźć. Czy nie brakuje odwołania do zestawu? |
+| DV9001: **Analiza architektoniczna znalazła błędy wewnętrzne** | Wyniki mogą być niepełne. Aby uzyskać więcej informacji, zobacz szczegółowy dziennik zdarzeń kompilacji lub okno danych wyjściowych. |
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,9 +1,6 @@
 ---
 title: Polecenia uruchamiane po zakończeniu instalacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08e1bcf064a8e94af306230e705f686d2d8037c1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915552"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Polecenia uruchamiane po zakończeniu instalacji
 W przypadku wdrożenia rozszerzenia w ramach *.msi* pliku, należy uruchomić **devenv/Setup** jako część instalacji w kolejności dla programu Visual Studio odnaleźć rozszerzeń.  
@@ -61,7 +58,7 @@ W przypadku wdrożenia rozszerzenia w ramach *.msi* pliku, należy uruchomić **
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Akcja niestandardowa wiersze tabeli, aby uruchomić devenv.exe  
   
-|Akcja|Typ|Źródło|Docelowy|  
+|Akcja|Typ|Źródło|Cel|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|  

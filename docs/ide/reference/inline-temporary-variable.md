@@ -2,7 +2,6 @@
 title: Zamień na wartość Zmienna tymczasowa
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a6fea50f3cceb907cb014d29bb46988ab07dad6c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: aa329dd3fe7d01046c35be9829aed4ca4519c3e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909037"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Wbudowanej zmiennej tymczasowej refaktoryzacji
 
@@ -27,11 +26,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** pozwala usunąć zmienną tymczasową i zamienić ją na jej wartość.
+**Co:** Pozwala usunąć zmienną tymczasową i zamienić ją na jej wartość.
 
-**Kiedy:** wykorzystanie zmiennej tymczasowej sprawia, że kod jest trudniejsze do zrozumienia.
+**Kiedy:** Użycie zmiennej tymczasowej sprawia, że kod jest trudniejsze do zrozumienia.
 
-**Dlaczego:** usuwanie zmiennej tymczasowej może poprawić czytelność kodu.
+**Dlaczego:** Usuwanie zmiennej tymczasowej może czytelność kodu.
 
 ## <a name="how-to"></a>Instrukcje
 
