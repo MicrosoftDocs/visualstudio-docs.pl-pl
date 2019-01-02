@@ -44,7 +44,6 @@
 #### [Czat z doradcą Azure Advisor](vs-azure-advisory-chat.md)
 #### [Społeczność platformy Azure](vs-azure-community.md)
 #### [Pomoc techniczna](vs-tech-support.md)
-#### [Pomoc techniczna od społeczności deweloperów](vs-priority-support.md)
 #### [Obsługa Concierge](vs-concierge-chat.md)
 ## Zarządzanie subskrypcjami
 ### [Obowiązki administratora](admin-responsibilities.md)
