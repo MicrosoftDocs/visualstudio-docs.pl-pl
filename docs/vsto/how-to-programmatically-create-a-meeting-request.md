@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Tworzenie wezwania na spotkanie'
-ms.custom: ''
+title: 'Instrukcje: Programowe tworzenie wezwania na spotkanie'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,15 +14,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5cada5d337eb4f72caf9077afc9bcd42706b21d1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c99f67c1bf445fe33a45292f29205e3eb53537f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890498"
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>Porady: programowane Tworzenie wezwania na spotkanie
-  W tym przykładzie tworzy żądanie spotkania w programie Microsoft Office Outlook i wysyła żądanie do uczestnika wymagane.  
+# <a name="how-to-programmatically-create-a-meeting-request"></a>Instrukcje: Programowe tworzenie wezwania na spotkanie
+  W tym przykładzie tworzy żądanie spotkania Microsoft Office Outlook i wysyła żądanie do wymagany uczestnik.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -36,5 +33,3 @@ ms.locfileid: "35257374"
 ## <a name="see-also"></a>Zobacz także  
  [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)   
  [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

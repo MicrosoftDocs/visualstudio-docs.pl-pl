@@ -1,41 +1,40 @@
 ---
-title: Wykluczone z ochrony informacji systemu Windows
+title: Wykluczone z Windows Information Protection
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a1b38e6e30a816382da72ef8280868fa68dfb10
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 665a4e893b8b146555dd35caad5cc521e1630dd9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891508"
 ---
-# <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Konfigurowanie programu Visual Studio jako aplikacja wykluczona pracy w toku
+# <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Konfigurowanie programu Visual Studio jako aplikacja funkcji WIP wykluczone
 
-[Rozwiązanie Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (pracy w toku) pomaga chronić dane przedsiębiorstwa przed wyciekiem do aplikacji, takich jak poczty e-mail, media społecznościowe i chmura publiczna, które są poza kontrolą przedsiębiorstwa. Pracy w toku pomaga chronić przed wyciekiem danych przypadkowemu z urządzeń należących do przedsiębiorstwa oraz urządzeń osobistych, bez konieczności wprowadzania zmian w Twoim środowisku lub innych aplikacji.
+[Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (PWT) pomaga chronić dane organizacji przed wyciekiem do aplikacji, takich jak wiadomości e-mail, mediów społecznościowych i chmurze publicznej, będących poza kontrolą przedsiębiorstwa. Funkcja WIP ułatwia ochronę przed wyciekami danych na urządzeniach należących do przedsiębiorstwa i urządzeń osobistych bez konieczności wprowadzania zmian w środowisku lub innych aplikacji.
 
-*Z obsługą* aby zapobiec przechodząc do lokalizacji sieciowych niechronione danych przedsiębiorstwa i uniknąć szyfrowania danych osobowych powinny aplikacji do pracy w toku. Program Visual Studio nie jest usprawnionych aplikacji, więc nie działa w środowiskach z obsługą pracy w toku, chyba że go wyłączyć. Wykonaj kroki opisane w tym artykule, aby włączyć program Visual Studio do funkcji na komputerze z włączonym pracy w toku.
+*Z obsługą* aplikacji funkcji WIP oczekują, aby uniemożliwić przechodząc do lokalizacji sieciowych niechronione danych przedsiębiorstwa oraz uniknąć szyfrowania danych osobowych. Program Visual Studio nie jest usprawnionych aplikacji, więc nie działa w środowiskach obsługujących funkcję WIP, o ile nie jest możliwe wykluczenie. Wykonaj kroki opisane w tym artykule, aby umożliwić programowi Visual Studio do funkcji na komputerze z włączoną funkcją WIP.
 
-## <a name="configure-vs-as-a-wip-exempt-app"></a>Konfigurowanie programu VS jako aplikację wykluczona pracy w toku
+## <a name="configure-vs-as-a-wip-exempt-app"></a>Skonfiguruj program VS jako aplikacji funkcji WIP wykluczone
 
-Można zwolnić Visual Studio z ograniczeń pracy w toku, ale nadal zezwolić na używanie danych przedsiębiorstwa. Aplikacje wykluczona pracy w toku mogą łączyć się przy użyciu adresu IP lub nazwy hosta zasobów chmury przedsiębiorstwa. Nie jest zastosowano szyfrowania, a aplikacja może uzyskiwać dostęp do lokalnych plików.
+Można wyłączyć programu Visual Studio z ograniczenia dotyczące funkcji WIP, ale nadal zezwala na korzystanie z danych przedsiębiorstwa. Aplikacje wykluczone funkcji WIP, mogą łączyć się zasoby chmury przedsiębiorstwa przy użyciu adresu IP lub nazwa hosta. Szyfrowanie nie jest stosowana, a aplikacja może uzyskiwać dostęp do plików lokalnych.
 
-Aby wyłączyć program Visual Studio z pracy w toku, wykonaj [kroki, aby zwolnić aplikacji komputerowej](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#exempt-apps-from-a-wip-policy).
+Aby zwolnić programu Visual Studio z funkcji WIP, postępuj zgodnie z [kroki, aby zwolnić aplikację klasyczną](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#exempt-apps-from-a-wip-policy).
 
-## <a name="create-a-wip-exempt-applocker-policy-file"></a>Utwórz plik zasad funkcji AppLocker wykluczona pracy w toku
+## <a name="create-a-wip-exempt-applocker-policy-file"></a>Utwórz plik zasad funkcji AppLocker wykluczone funkcji WIP
 
-Ponieważ program Visual Studio zawiera wiele plików binarnych, [Tworzenie pliku zasad funkcji AppLocker wykluczona pracy w toku](/windows/security/threat-protection/windows-defender-application-control/applocker/run-the-automatically-generate-rules-wizard). Funkcja AppLocker umożliwia automatyczne generowanie reguł dla wszystkich plików w folderze.
+Ponieważ program Visual Studio zawiera wiele plików binarnych, [Utwórz plik zasad funkcji AppLocker w funkcji WIP wykluczone](/windows/security/threat-protection/windows-defender-application-control/applocker/run-the-automatically-generate-rules-wizard). Funkcja AppLocker umożliwia automatyczne generowanie reguł dla wszystkich plików w folderze.
 
 ## <a name="add-appcompat-to-the-enterprise-cloud-resource-policy"></a>Dodaj AppCompat do zasad zasobów chmury przedsiębiorstwa
 
-Aby określić, gdzie programu Visual Studio mają dostęp do danych przedsiębiorstwa w sieci, wykonaj następujące [kroki, aby zdefiniować, gdzie chronionych aplikacji można znaleźć i wysyłać dane przedsiębiorstwa](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Aby zatrzymać systemu Windows blokuje połączenia do chmury zasobów za pomocą adresu IP, upewnij się dodać /\*AppCompat\*/ ciąg do ustawienia.
+Aby określić, gdzie Visual Studio mogą uzyskać dostęp do danych przedsiębiorstwa w sieci, postępuj zgodnie z tymi [kroki, aby określić, gdzie chronionymi aplikacjami można znaleźć i wysłać danych przedsiębiorstwa](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Aby zatrzymać Windows blokuje połączenia z chmurą zasobów za pomocą adresu IP, upewnij się, że dodawanie /\*AppCompat\*/ ciąg do ustawienia.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zachowanie aplikacji z pracy w toku](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)
+- [Zachowanie aplikacji za pomocą funkcji WIP](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

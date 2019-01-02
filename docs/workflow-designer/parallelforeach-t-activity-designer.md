@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — ParallelForEach&lt;T&gt; Projektant dzia�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e411f5e72566753d66ded4e445868e5ab245bf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873911"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach, Projektant działań
 
@@ -47,8 +46,8 @@ W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **ParallelForEach\<Int32 >**. Wartość może być opcjonalnie edytować w **właściwości** siatki lub bezpośrednio w nagłówku projektanta działań.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Działanie do wykonania dla każdego elementu w kolekcji. Można dodać <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> działania, listy działanie z przybornika do **treści** polu na **ParallelForEach\<T >** projektanta działań z tekst wskazówki "Upuść działanie tutaj".|
-|**TypeArgument**|True|Typ elementów w <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekcji określonej przez parametr ogólny *T*. Domyślnie **elementu typeargument w języku** ustawiono **Int32**. Aby zmienić typ T w **ParallelForEach < T\>**  Projektant działań, zmień wartość właściwości **elementu typeargument w języku** pola kombi w siatce właściwości.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Kolekcja elementów do iteracji. Aby ustawić <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, wpisz wyrażenie języka Visual Basic w **wartości** polu na **ForEach < T\>**  projektanta działań w pole zawierające tekst wskazówki "Wprowadź wyrażenie VB" lub  **Wartości** polu na **właściwości** okna.|
+|**TypeArgument**|Prawda|Typ elementów w <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekcji określonej przez parametr ogólny *T*. Domyślnie **elementu typeargument w języku** ustawiono **Int32**. Aby zmienić typ T w **ParallelForEach < T\>**  Projektant działań, zmień wartość właściwości **elementu typeargument w języku** pola kombi w siatce właściwości.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Prawda|Kolekcja elementów do iteracji. Aby ustawić <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, wpisz wyrażenie języka Visual Basic w **wartości** polu na **ForEach < T\>**  projektanta działań w pole zawierające tekst wskazówki "Wprowadź wyrażenie VB" lub  **Wartości** polu na **właściwości** okna.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Oceniane, po zakończeniu każdej iteracji. Jeśli go daje w wyniku wartość true, a następnie zaplanowanych do czasu iteracji są anulowane. Jeśli ta właściwość nie jest ustawiona, wszystkie instrukcje zaplanowane wykonywanie aż do zakończenia.|
 
 Domyślnie iteratora pętli nosi nazwę elementu. Można zmienić nazwy zmiennej iteratora w **ForEach** pole w **ParallelForEach\<T >** projektanta działań. Iteratora pętli można używać w wyrażeniach w elementy podrzędne <xref:System.Activities.Statements.ParallelForEach%601> działania.

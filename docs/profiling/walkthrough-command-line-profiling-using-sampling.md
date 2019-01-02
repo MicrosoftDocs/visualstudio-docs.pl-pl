@@ -1,8 +1,6 @@
 ---
 title: 'Przewodnik: Profilowanie wiersza polecenia przy użyciu metody próbkowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886812"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Przewodnik: Wiersza polecenia, profilowania przy użyciu metody próbkowania
 
@@ -35,7 +33,7 @@ W tym instruktażu będą wykonaj następujące kroki:
 
 - Pośredni wiedzę na temat [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Pośredni, informacje o pracy z narzędzi wiersza polecenia
-- Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)
+- Kopię [peopletrax — przykład](/visualstudio/profiling/performance-explorer)
 - Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilowanie wiersza polecenia przy użyciu metody próbkowania

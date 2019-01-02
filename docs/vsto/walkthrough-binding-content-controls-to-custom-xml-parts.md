@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Powiązywanie kontrolek zawartości do niestandardowych części XML'
-ms.custom: ''
+title: 'Przewodnik: Powiązywanie kontrolek zawartości do niestandardowych części XML'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899655"
 ---
-# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Wskazówki: Powiązywanie kontrolek zawartości do niestandardowych części XML
+# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Przewodnik: Powiązywanie kontrolek zawartości do niestandardowych części XML
   W tym instruktażu pokazano, jak powiązać formanty zawartości w dostosowaniu na poziomie dokumentu dla programu Word z danymi XML, który znajduje się w dokumencie.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -62,7 +59,7 @@ ms.locfileid: "49916754"
   
 ### <a name="to-create-a-new-word-document-project"></a>Aby utworzyć nowy projekt dokumentu programu Word  
   
-1.  Tworzenie projektu dokumentu programu Word z nazwą **EmployeeControls**. Utwórz nowy dokument dla rozwiązania. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu dokumentu programu Word z nazwą **EmployeeControls**. Utwórz nowy dokument dla rozwiązania. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **EmployeeControls** projekt **Eksploratora rozwiązań**.  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49916754"
 5. Na Wstążce, wybierz **Developer** kartę.  
   
    > [!NOTE]  
-   >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6. W **kontrolki** grupy, wybierz **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
   
@@ -296,7 +293,7 @@ ms.locfileid: "49916754"
   
 9. Nadaj plikowi nazwę **EmployeeControls.docx.zip**.  
   
-     **EmployeeControls.docx** dokument zostanie zapisany w formacie Open XML. Zmieniając ten dokument z *zip* rozszerzenie nazwy pliku, można sprawdzić zawartość dokumentu. Aby uzyskać więcej informacji dotyczących Open XML, zobacz artykuł techniczny [Przedstawiamy Open XML pakietu Office (2007) formaty plików](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     **EmployeeControls.docx** dokument zostanie zapisany w formacie Open XML. Zmieniając ten dokument z *zip* rozszerzenie nazwy pliku, można sprawdzić zawartość dokumentu. Aby uzyskać więcej informacji dotyczących Open XML, zobacz artykuł techniczny [Przedstawiamy Open XML pakietu Office (2007) formaty plików](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Otwórz **EmployeeControls.docx.zip** pliku.  
   
@@ -313,19 +310,17 @@ ms.locfileid: "49916754"
 ## <a name="next-steps"></a>Następne kroki  
  Możesz dowiedzieć się więcej na temat sposobu używania kontrolek zawartości w tych tematach:  
   
--   Wszystkie dostępne kontrolki zawartości umożliwia utworzenie szablonu. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   Wszystkie dostępne kontrolki zawartości umożliwia utworzenie szablonu. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 -   Modyfikowanie danych w niestandardowe elementy XML, gdy dokument zostanie zamknięty. Przy następnym otwarciu dokumentu, formanty zawartości, które są powiązane elementy XML będą wyświetlane nowe dane.  
   
--   Użyj kontroli zawartości w celu ochrony części dokumentu. Aby uzyskać więcej informacji, zobacz [porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Użyj kontroli zawartości w celu ochrony części dokumentu. Aby uzyskać więcej informacji, zobacz [jak: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Formanty zawartości](../vsto/content-controls.md)   
- [Porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Instrukcje: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Zapoznanie z wartościami danych Kontencji zasobów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffacfcd5eac9fd88cfd7bbaa2c7d2546836d87c6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3d62b21e83f057c2a1d2e4347b3d7bcf6dbc22ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896633"
 ---
 # <a name="understand-resource-contention-data-values"></a>Zrozumienie wartościami danych kontencji zasobów
 

@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870456"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Porady: Określanie limitów czasu dla kontrolerów testów i agentów testowych
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Instrukcje: Określanie limitów czasu dla kontrolerów testów i agentów testowych
 
 Kontroler testów i agenta testowego ma kilka ustawień limitu czasu, które określają, jak długo należy czekać na odpowiedzi od siebie lub ze źródła danych, zakończy się niepowodzeniem z powodu błędu. W pewnych okolicznościach może być konieczne edytowanie wartości limitu czasu, aby zaspokoić potrzeby topologii lub inne problemy środowiska. Aby edytować wartości limitu czasu, Edytuj plik konfiguracyjny XML, który jest skojarzony z kontrolerem testów lub agenta testowego, zgodnie z opisem w poniższych procedur.
 
@@ -119,5 +118,5 @@ Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testo
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
 - [Modyfikowanie ustawień rejestrowania testu obciążeniowego](../test/modify-load-test-logging-settings.md)
 - [Konfigurowanie portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Porady: określanie maksymalnego rozmiaru pliku dziennika](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Porady: powiązywanie testów kontrolera lub agenta testowego z kartą sieciową](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Instrukcje: Określ maksymalny rozmiar pliku dziennika](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Instrukcje: Powiąż kontroler testów lub agenta testowego z kartą sieciową](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

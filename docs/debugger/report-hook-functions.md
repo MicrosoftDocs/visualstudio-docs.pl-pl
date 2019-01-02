@@ -1,8 +1,6 @@
 ---
 title: Raport funkcji punktów zaczepienia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d39a171d812915a1cf3c1c6450c73098067949
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ce84105fa1a3d7bf5c6f949421b306b5147368a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892358"
 ---
 # <a name="report-hook-functions"></a>Raportowanie funkcji punktów zaczepienia
 Raport funkcji podłączania zainstalowane za pomocą [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), jest wywoływana za każdym razem [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) generuje raport debugowania. Używając go, między innymi do filtrowania raportów skoncentrować się na określonych typów alokacji. Funkcja podłączania raport powinien mieć prototypu, jak pokazano poniżej:  

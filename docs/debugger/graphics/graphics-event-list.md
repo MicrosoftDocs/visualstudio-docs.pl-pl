@@ -1,8 +1,6 @@
 ---
 title: Lista zdarzeń graficznych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3382637dfbdd10618ccbb9a5d9cf66dba603f4dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 555a786ceed97bb83b0924eef45f102c43755b2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841003"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870745"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Studio Eksploruj zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki grach i aplikacjach.  
@@ -110,7 +108,7 @@ Visual Studio 2017 i większa zawierają **Historia zasobów** okna.  Wybierają
 To okno służy do wyświetlania historii elementu wybranego na liście zdarzeń.  Lista rozwijana u góry, można wybrać inne elementy, aby wyświetlić historię.  W górnej połowie okna zawiera **zdarzenia konfiguracji klatki**.  Są to zdarzenia, które można podzielić na *Utwórz* wpisz kategorię i wywołań, które zwykle inicjowania i Utwórz zasób.  Dolnej części okna zawiera **zdarzenia klatki** sekcji.  Te są normalne odczytu i zapisu zdarzenia, które wystąpiły w czasie korzystania z zasobów.  
 
 
-| Kolumny | Opis |
+| Kolumna | Opis |
 |-----------| - |
 | **Typ** | Zazwyczaj zawiera typ wpisu *Utwórz*, *odczytu* i *zapisu*. |
 | **Widok** | Pokazuje Miniatura zasobu w tej chwili czasu.  Dwukrotnie kliknij miniaturę, aby otworzyć widok szczegółów zasobów w tym czasie. |
@@ -119,4 +117,4 @@ To okno służy do wyświetlania historii elementu wybranego na liście zdarzeń
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)
+ [Przewodnik: Brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)

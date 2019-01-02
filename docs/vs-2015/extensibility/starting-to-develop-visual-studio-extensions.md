@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85813c32ec8c4be3e120bbb3a67922379233878c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d44328a335c86d50d4afe951c8b2bbf307531979
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881625"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +71,7 @@ Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, pr
 
  Szablon Isolated Shell jest używany do pakietu rozszerzenia w wersji powłoki programu Visual Studio, którą można oznaczyć i rozpowszechniać jako własny. Poniższe tematy przedstawiają, jak rozpocząć pracę z każdym rodzajem rozszerzenia:
 
--   Polecenia menu: [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   Polecenia menu: [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 -   Narzędzia systemu windows: [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
 
@@ -80,9 +79,9 @@ Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, pr
 
 -   Podstawowe pakietów VSPackage: [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Szablon projektu VSIX: [rozpoczęcie korzystania z szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   Szablon projektu VSIX: [Wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
--   Program Visual Studio isolated shell: [wskazówki: Tworzenie podstawowej aplikacji izolowanej powłoki](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+-   Program Visual Studio isolated shell: [Przewodnik: Tworzenie podstawowej aplikacji Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Jak uzyskać Moje rozszerzenia, aby wyglądał jak Visual Studio?
  Doskonałe porady dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [dotyczące środowiska użytkownika w usłudze Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -93,4 +92,4 @@ Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, pr
 ## <a name="how-can-i-distribute-my-extension"></a>Jak można rozpowszechniać Moje rozszerzenie?
  Można zainstalować rozszerzenia na innym komputerze lub wysyłania dla Twoich znajomych, jako plik .vsix, instalowania, klikając go dwukrotnie. Możesz dowiedzieć się więcej na temat pakietów VSIX w [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Można również publikować swoje rozszerzenie w galerii Visual Studio, dzięki czemu widoczne dla dużej liczby klientów w programie Visual Studio. Na przykład pakowania rozszerzenie w galerii, zobacz [przewodnik: publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji na temat co należy zrobić, aby opublikować w galerii, zobacz [produkty i rozszerzenia programu Visual Studio](https://visualstudiogallery.msdn.microsoft.com/).
+ Można również publikować swoje rozszerzenie w galerii Visual Studio, dzięki czemu widoczne dla dużej liczby klientów w programie Visual Studio. Na przykład pakowania rozszerzenie w galerii, zobacz [instruktażu: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji na temat co należy zrobić, aby opublikować w galerii, zobacz [produkty i rozszerzenia programu Visual Studio](https://visualstudiogallery.msdn.microsoft.com/).

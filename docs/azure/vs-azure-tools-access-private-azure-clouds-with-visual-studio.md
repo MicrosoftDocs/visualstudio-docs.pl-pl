@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 04f2576fcc96f11bda8d46e2c187f6f0030710b6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c1021b68cb6c14b1687dcc62ee4a3c51da8df338
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876054"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Uzyskiwanie dostępu do prywatnej chmury platformy Azure z programem Visual Studio
 
@@ -45,4 +44,3 @@ Domyślnie program Visual Studio obsługuje punkty końcowe REST platformy Azure
     ![Importowanie pliku ustawień publikowania](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
 
     Certyfikaty są zaimportowane z pliku ustawień publikowania w programie Visual Studio i możesz teraz wchodzić w interakcje z zasobami w chmurze prywatnej.
-

@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03cfcf2b4ea2b3a0b4773e9c2632c84091819f45
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 401ad47c6b265e005d36cad7d3cf2ae13d7f4f1d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880963"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępnione kolory dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +71,7 @@ zawsze, gdy tworzysz tytuł menu niestandardowe.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Domyślny tytuł menu](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")
 
@@ -104,7 +103,7 @@ zawsze, gdy tworzysz tytuł menu niestandardowe.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Tytuł menu, po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")
 
@@ -138,7 +137,7 @@ zawsze, gdy tworzysz tytuł menu niestandardowe.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Tytuł menu naciśnięty](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")
 
@@ -174,7 +173,7 @@ zawsze, gdy tworzysz tytuł menu niestandardowe.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Tytuł menu przy użyciu symbolu wyłączone](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")
 
@@ -215,7 +214,7 @@ Aby uzyskać wszystkie listy rozwijanej, który jest uruchamiany z paska menu i 
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Domyślne menu](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")
 
@@ -281,7 +280,7 @@ Aby uzyskać wszystkie listy rozwijanej, który jest uruchamiany z paska menu i 
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Po wskazaniu wskaźnikiem menu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")
 
@@ -329,7 +328,7 @@ Aby uzyskać wszystkie listy rozwijanej, który jest uruchamiany z paska menu i 
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Menu wyłączone](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")
 
@@ -389,7 +388,7 @@ w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   Tło
 
@@ -430,7 +429,7 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Polecenie domyślną ikonę](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")
 
@@ -470,7 +469,7 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Polecenie ikony po wskazaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")
 
@@ -512,7 +511,7 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Ikona polecenia naciśnięty](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")
 
@@ -538,7 +537,7 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Ikona polecenia wyłączone](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")
 
@@ -579,7 +578,7 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Pole wejściowe pola kombi](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")
 
@@ -637,7 +636,7 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Pole kombi pola wejściowego po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")
 
@@ -824,7 +823,7 @@ Podczas tworzenia kontrolki niestandardowej listy rozwijanej.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;w dół do pola wyboru](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")
 
@@ -886,7 +885,7 @@ Podczas tworzenia kontrolki niestandardowej listy rozwijanej.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;w dół do pola wyboru po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")
 
@@ -944,7 +943,7 @@ Podczas tworzenia kontrolki niestandardowej listy rozwijanej.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;w dół do pola wyboru naciśnięty](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")
 
@@ -984,7 +983,7 @@ Podczas tworzenia kontrolki niestandardowej listy rozwijanej.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;w dół do pola wyboru wyłączone](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")
 
@@ -1033,7 +1032,7 @@ Kiedy tworzysz przycisku podziału niestandardowych.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Przycisk podziału](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")
 
@@ -1065,7 +1064,7 @@ Kiedy tworzysz przycisku podziału niestandardowych.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Przycisk podziału po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")
 
@@ -1099,7 +1098,7 @@ Kiedy tworzysz przycisku podziału niestandardowych.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Wciśnięcie przycisku podziału](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")
 
@@ -1133,7 +1132,7 @@ Kiedy tworzysz przycisku podziału niestandardowych.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Przycisk podziału wyłączone](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")
 
@@ -1176,7 +1175,7 @@ dla przycisków, które nie mają podobne funkcje do bardziej opcji lub przycisk
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Więcej opcji](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")
 
@@ -1200,7 +1199,7 @@ dla przycisków, które nie mają podobne funkcje do bardziej opcji lub przycisk
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Więcej opcji po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")
 
@@ -1226,7 +1225,7 @@ dla przycisków, które nie mają podobne funkcje do bardziej opcji lub przycisk
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Więcej opcji naciśnięty](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")
 
@@ -1274,7 +1273,7 @@ dla dowolnego interfejsu użytkownika, których nie chcesz automatycznie umożli
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  Dokument: zadokowany lub liczb zmiennoprzecinkowych
 
@@ -1348,7 +1347,7 @@ dla dowolnego interfejsu użytkownika, których nie chcesz automatycznie umożli
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Ramka koncentruje się na przesunięciu](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")
 
@@ -1388,7 +1387,7 @@ dla dowolnego interfejsu użytkownika, których nie chcesz automatycznie umożli
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Ramka skupia się po naciśnięciu](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")
 
@@ -1441,7 +1440,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Kartę wybraną skupia się](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")
 
@@ -1473,7 +1472,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Po przeniesieniu fokusu kartę wybraną](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")
 
@@ -1555,13 +1554,13 @@ dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element,
 
 - dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.
 
-  **Karta podgląd wybranych: fokus**
+  **Karta wybranego (wersja zapoznawcza): Fokus**
 
   Składnik
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Karta (wersja zapoznawcza) koncentruje się](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")
 
@@ -1585,13 +1584,13 @@ dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element,
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
-  **Karta podgląd wybranych: po przeniesieniu fokusu**
+  **Karta wybranego (wersja zapoznawcza): Po przeniesieniu fokusu**
 
   Składnik
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")
 
@@ -1613,13 +1612,13 @@ dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element,
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
-  **Tło karcie podglądu: domyślna**
+  **Karta (wersja zapoznawcza) tła: Domyślne**
 
   Składnik
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Karta tła w wersji zapoznawczej](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")
 
@@ -1639,13 +1638,13 @@ dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element,
 
   Ustaw kolor tła.
 
-  **Tło karcie podglądu: Zatrzymaj wskaźnik myszy**
+  **Karta (wersja zapoznawcza) tła: Po wskazaniu wskaźnikiem**
 
   Składnik
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Karta tła (wersja zapoznawcza) po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")
 
@@ -1684,7 +1683,7 @@ Podczas tworzenia niestandardowego dokumentu przycisku przepełnienia.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")
 
@@ -1708,7 +1707,7 @@ Podczas tworzenia niestandardowego dokumentu przycisku przepełnienia.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Overflow po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")
 
@@ -1732,7 +1731,7 @@ Podczas tworzenia niestandardowego dokumentu przycisku przepełnienia.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Przepełnienie naciśnięty](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")
 
@@ -1778,7 +1777,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Okno zadokowane](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")
 
@@ -1796,7 +1795,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Okna narzędzi, które skupia się](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")
 
@@ -1814,7 +1813,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Po przeniesieniu fokusu okna narzędzi](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")
 
@@ -1843,7 +1842,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pasek tytułu skupia się](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")
 
@@ -1875,7 +1874,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Po przeniesieniu fokusu paska tytułu](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")
 
@@ -1916,7 +1915,7 @@ przycisków, które są wyświetlane w interfejs użytkownika, który używa tok
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Tytuł paska przycisk skupia się](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")
 
@@ -1956,7 +1955,7 @@ przycisków, które są wyświetlane w interfejs użytkownika, który używa tok
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Przycisk paska tytułu, który skupia się na przesunięciu](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")
 
@@ -1996,7 +1995,7 @@ przycisków, które są wyświetlane w interfejs użytkownika, który używa tok
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Tytuł paska przycisk fokus i naciśnięciu](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")
 
@@ -2045,7 +2044,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Karta okna narzędzia skupia się](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")
 
@@ -2069,7 +2068,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Karta w oknie narzędzia po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")
 
@@ -2095,7 +2094,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Karta tła okna narzędzia](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")
 
@@ -2123,7 +2122,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Karta tła okna narzędzia po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")
 
@@ -2164,7 +2163,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Automatyczne&#45;Ukrywanie karty](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")
 
@@ -2190,7 +2189,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Automatyczne&#45;Ukrywanie karty po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")
 
@@ -2242,7 +2241,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Pole wejściowe wyszukiwania skupia się](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")
 
@@ -2310,7 +2309,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")
 
@@ -2398,7 +2397,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Naciśnięty przycisk akcji wyszukiwania](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
 
@@ -2438,7 +2437,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Wyróżnij pole wejściowe wyszukiwania](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")
 
@@ -2466,7 +2465,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Pole wejściowe wyszukiwania wyłączone](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")
 
@@ -2539,7 +2538,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   Obramowanie
 
@@ -2559,7 +2558,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Wyszukaj sugerowane](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")
 
@@ -2613,7 +2612,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Wyszukaj sugerowane po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")
 
@@ -2665,7 +2664,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Wyszukaj sugerowane naciśnięty](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")
 
@@ -2716,7 +2715,7 @@ dla wszystkich elementów, które nie są hiperłączem.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Domyślne hiperłącze](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")
 
@@ -2730,7 +2729,7 @@ dla wszystkich elementów, które nie są hiperłączem.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Hiperłącza po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")
 
@@ -2744,7 +2743,7 @@ dla wszystkich elementów, które nie są hiperłączem.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Hiperłącze naciśnięty](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")
 
@@ -2758,7 +2757,7 @@ dla wszystkich elementów, które nie są hiperłączem.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Hiperłącze wyłączone](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")
 
@@ -2781,7 +2780,7 @@ dla elementów interfejsu użytkownika, które nie są podobne do paska informac
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pasek informacyjny](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")
 
@@ -2815,7 +2814,7 @@ Podczas tworzenia interfejsu użytkownika, który chcesz dopasować paski przewi
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pasek przewijania](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")
 
@@ -2849,7 +2848,7 @@ Podczas tworzenia interfejsu użytkownika, który chcesz dopasować paski przewi
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pasek przewijania po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")
 
@@ -2883,7 +2882,7 @@ Podczas tworzenia interfejsu użytkownika, który chcesz dopasować paski przewi
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Naciśnięto paska przewijania](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")
 
@@ -2930,7 +2929,7 @@ wszędzie, musisz zaimplementować hierarchiczny widok organizacji.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Widok drzewa](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")
 
@@ -2956,7 +2955,7 @@ wszędzie, musisz zaimplementować hierarchiczny widok organizacji.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Widoku drzewa w przesunięciu](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")
 
@@ -2982,7 +2981,7 @@ wszędzie, musisz zaimplementować hierarchiczny widok organizacji.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Dragover widok drzewa](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")
 
@@ -3008,7 +3007,7 @@ wszędzie, musisz zaimplementować hierarchiczny widok organizacji.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Fokus widoku drzewa](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")
 
@@ -3056,7 +3055,7 @@ wszędzie, musisz zaimplementować hierarchiczny widok organizacji.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Koncentruje się na przesunięciu widoku drzewa](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")
 
@@ -3113,7 +3112,7 @@ dla przycisków, które będą wyświetlane na tle niestandardowego, który nie 
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Przycisk](../../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")
 
@@ -3131,7 +3130,7 @@ dla przycisków, które będą wyświetlane na tle niestandardowego, który nie 
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Przycisk wyłączone](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")
 
@@ -3149,7 +3148,7 @@ dla przycisków, które będą wyświetlane na tle niestandardowego, który nie 
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Przycisk po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")
 
@@ -3167,7 +3166,7 @@ dla przycisków, które będą wyświetlane na tle niestandardowego, który nie 
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Wciśnięcie przycisku](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")
 
@@ -3185,7 +3184,7 @@ dla przycisków, które będą wyświetlane na tle niestandardowego, który nie 
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Fokus przycisku](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")
 
@@ -3212,7 +3211,7 @@ dla dowolnego interfejsu użytkownika, który nie jest kontrolkę pola wyboru.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pole wyboru](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")
 
@@ -3238,7 +3237,7 @@ dla dowolnego interfejsu użytkownika, który nie jest kontrolkę pola wyboru.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pole wyboru wyłączone](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")
 
@@ -3264,7 +3263,7 @@ dla dowolnego interfejsu użytkownika, który nie jest kontrolkę pola wyboru.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pole wyboru po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")
 
@@ -3290,7 +3289,7 @@ dla dowolnego interfejsu użytkownika, który nie jest kontrolkę pola wyboru.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pole wyboru naciśnięty](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")
 
@@ -3316,7 +3315,7 @@ dla dowolnego interfejsu użytkownika, który nie jest kontrolkę pola wyboru.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Pole wyboru, które skupia się](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")
 
@@ -3353,7 +3352,7 @@ listy rozwijane i pole kombi pola, które są również częścią dokumentu.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;dół&#47;pola kombi](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")
 
@@ -3387,7 +3386,7 @@ listy rozwijane i pole kombi pola, które są również częścią dokumentu.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;dół&#47;pola kombi wyłączone](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")
 
@@ -3421,7 +3420,7 @@ listy rozwijane i pole kombi pola, które są również częścią dokumentu.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")
 
@@ -3455,7 +3454,7 @@ listy rozwijane i pole kombi pola, które są również częścią dokumentu.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;dół&#47;pola kombi naciśnięty](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")
 
@@ -3489,7 +3488,7 @@ listy rozwijane i pole kombi pola, które są również częścią dokumentu.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;dół&#47;pola kombi, które skupia się](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")
 
@@ -3523,7 +3522,7 @@ listy rozwijane i pole kombi pola, które są również częścią dokumentu.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   ![Upuść&#45;dół&#47;wprowadź tekst pola kombi](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")
 
@@ -3587,7 +3586,7 @@ dla wszelkich elementów interfejsu użytkownika, który nie jest formantem tabe
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  Domyślny
 
@@ -3650,7 +3649,7 @@ dla wszelkich elementów interfejsu użytkownika, który nie jest formantem tabe
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  Domyślny
 
@@ -3715,7 +3714,7 @@ dla wszelkich elementów interfejsu użytkownika, który nie jest formantem tabe
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   Domyślne (wybrane)
 
@@ -3779,7 +3778,7 @@ dla wszystkich innych typów interfejsu użytkownika.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Tag](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")
 
@@ -3836,7 +3835,7 @@ dla wszystkich innych typów interfejsu użytkownika.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Tag &#40;symbol&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")
 
@@ -3856,7 +3855,7 @@ dla wszystkich innych typów interfejsu użytkownika.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Tag &#40;symbol&#41; po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")
 
@@ -3880,7 +3879,7 @@ dla wszystkich innych typów interfejsu użytkownika.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Tag &#40;symbol&#41; naciśnięty](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")
 
@@ -3904,7 +3903,7 @@ dla wszystkich innych typów interfejsu użytkownika.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Zaznaczony tag](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")
 
@@ -3924,7 +3923,7 @@ dla wszystkich innych typów interfejsu użytkownika.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Tag wybrane po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")
 
@@ -3948,7 +3947,7 @@ dla wszystkich innych typów interfejsu użytkownika.
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Zaznaczony tag naciśnięty](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")
 
@@ -3985,7 +3984,7 @@ dla miejsc, które chcesz dopasować tło środowiska Visual Studio.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   Dolna warstwa
 
@@ -3997,7 +3996,7 @@ dla miejsc, które chcesz dopasować tło środowiska Visual Studio.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   Górną warstwę
 
@@ -4030,7 +4029,7 @@ dla miejsc, które chcesz dopasować tło środowiska Visual Studio.
 
   Element
 
-  Nazwa tokenu: Category.color
+  Nazwa tokenu: Category.Color
 
   Pasek menu
 
@@ -4073,7 +4072,7 @@ dla każdego elementu, który nie jest podobne do przybornika interfejsu użytko
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Węzeł nadrzędny przybornika](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")
 
@@ -4111,7 +4110,7 @@ dla każdego elementu, który nie jest podobne do przybornika interfejsu użytko
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Węzeł podrzędny przybornika po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")
 
@@ -4139,7 +4138,7 @@ dla każdego elementu, który nie jest podobne do przybornika interfejsu użytko
 
  Element
 
- Nazwa tokenu: Category.color
+ Nazwa tokenu: Category.Color
 
  ![Węzeł nadrzędny przybornika skupia się](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")
 

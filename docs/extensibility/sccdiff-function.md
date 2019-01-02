@@ -1,9 +1,6 @@
 ---
 title: Funkcja SccDiff | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccDiff
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 898c5b1b9de186a7ac704b4987fb090de5381f07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 68f90e406a06069403b76749977c5546b10ed790
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872057"
 ---
 # <a name="sccdiff-function"></a>Funkcja SccDiff
 Ta funkcja zawiera (lub opcjonalnie tylko sprawdza, czy) system kontroli różnice między bieżącego pliku (na dysku lokalnym) i jego ostatniej wersji w źródle.  

@@ -1,9 +1,6 @@
 ---
 title: IDebugCanStopEvent2::GetDocumentContext | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCanStopEvent2::GetDocumentContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8a8b26ceca3390466f3300d3692a7ee887ebd91
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 04c69c93a50bce4b3161d6bd9cde7090ebbf363b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873369"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
 Pobiera kontekst dokumentu, opisująca lokalizację tego zdarzenia.  
@@ -28,13 +25,13 @@ Pobiera kontekst dokumentu, opisująca lokalizację tego zdarzenia.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetDocumentContext (   
+HRESULT GetDocumentContext (   
    IDebugDocumentContext2** ppDocCxt  
 );  
 ```  
   
 ```csharp  
-int GetDocumentContext (   
+int GetDocumentContext (   
    out IDebugDocumentContext2 ppDocCxt  
 );  
 ```  

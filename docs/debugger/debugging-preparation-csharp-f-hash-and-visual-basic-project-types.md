@@ -2,7 +2,6 @@
 title: Przygotowywanie do debugowania C#, F#i projektów w języku VB | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866884"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Przygotowanie debugowania: typy projektów C#, F# i Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Przygotowanie debugowania: Typy projektów C#, F# i Visual Basic
 W tematach w tej sekcji opisano sposób debugowania C#, F#, i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu typów utworzonych przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablony projektów.  
   
  Należy zauważyć, że tych typów projektów, które tworzenia bibliotek DLL jako dane wyjściowe, zostały zgrupowane jako [debugowanie projektów DLL](../debugger/debugging-dll-projects.md) z powodu typowe funkcje, które współużytkują one.  

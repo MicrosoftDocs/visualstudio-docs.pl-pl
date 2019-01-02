@@ -1,9 +1,7 @@
 ---
 title: Analizowanie danych użycia procesora CPU (C++)
 description: Mierzyć wydajność aplikacji w języku C++ za pomocą narzędzia do diagnostyki użycia procesora CPU
-ms.custom: ''
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 38bacd51727ea2091e23adb606ff65de901f479a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883175"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki Start: Analizowanie danych użycia procesora CPU w Visual Studio (C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki start: Analizowanie danych użycia procesora CPU w Visual Studio (C++)
 
 Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w analizie problemów z wydajnością w aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji. W tym miejscu przyjrzymy się narzędzie, aby określić wąskie gardła wydajności ze względu na wysokie użycie procesora CPU. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
 
@@ -115,7 +113,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     }
     ```
   
-## <a name="step-1-collect-profiling-data"></a>Krok 1: Zbierania danych profilowania 
+## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania 
   
 1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `main` funkcji:
 
@@ -154,7 +152,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
      W tym momencie można rozpocząć analizy danych.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2. Analizowanie danych użycia procesora CPU
 
 Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obszarze użycie procesora CPU, identyfikowanie funkcji, które wykonują najwięcej pracy i następnie wykonywanie bliższe spojrzenie na każdym z nich.
 

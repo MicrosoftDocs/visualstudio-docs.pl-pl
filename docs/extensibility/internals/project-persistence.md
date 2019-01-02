@@ -1,9 +1,6 @@
 ---
-title: Projekt trwałości | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Trwałość projektu | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - persistence, projects
@@ -14,36 +11,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b85bb6155ca25abec67b582dc4d877dbd8290501
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475120f72962d0ab1c5c0dd6e8441349dfc8086c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890053"
 ---
 # <a name="project-persistence"></a>Trwałość projektu
-Trwałości jest kluczy dla projektu. Elementy projektu, które reprezentują plików; użyj większości projektów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje również projektów, w których dane są nie opartych na pliku. Musi zostać utrwalony plików należących do projektu i pliku projektu. IDE powoduje, że projekt, aby zapisać siebie lub elementu projektu.  
+Trwałość stanowi kluczy dla Twojego projektu. Większość projektów używać elementów projektu, które reprezentują plików. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje również projektów, których dane są inne niż oparte na pliku. Pliki należące do projektu i pliku projektu musi być utrwalone. IDE powoduje, że projekt, aby zapisać siebie lub elementu projektu.  
   
- Szablony projektów są przekazywane do fabryki projektu. Szablony powinien obsługiwać inicjowanie wszystkich elementów projektu, zgodnie z wymaganiami typu określonego projektu. Szablony te można później zapisywane jako pliki projektu i zarządza IDE za pośrednictwem rozwiązania. Aby uzyskać więcej informacji, zobacz [tworzenia projektu wystąpień przez za pomocą fabryk projektów przez ustawienie](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) i [rozwiązań](../../extensibility/internals/solutions.md).  
+ Szablony projektów są przekazywane do fabryki projektu. Szablony powinien obsługiwać inicjowanie wszystkich elementów projektu, zgodnie z wymogami projektu określonego typu. Szablony te można później zapisywanych jako pliki projektu i zarządzane przez środowisko IDE, za pomocą rozwiązania. Aby uzyskać więcej informacji, zobacz [tworzenia projektu wystąpień, przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) i [rozwiązania](../../extensibility/internals/solutions.md).  
   
- Elementy projektu może być opartych na plikach lub systemem plików:  
+ Elementy projektu może być oparte na plikach lub systemem plików:  
   
--   Elementy opartej na plikach może być lokalnym lub zdalnym. W przypadku projektów sieci Web w języku C# na przykład połączenia z plikami w systemie zdalnym utrwalić lokalnie, należy zachować same pliki w systemie zdalnym.  
+-   Elementy opartej na plikach może być lokalny lub zdalny. W projektach sieci Web w języku C# na przykład połączenia z plikami w systemie zdalnym są zachowywane lokalnie, a same pliki utrwalanie w systemie zdalnym.  
   
--   Elementy na podstawie pliku nie można zapisać elementów do bazy danych lub repozytorium.  
+-   Elementy non-file-based zapisać elementy z bazą danych lub repozytorium.  
   
 ## <a name="commit-models"></a>Zatwierdź modeli  
- Po podjęciu decyzji, w którym znajdują się elementy projektu, należy wybrać odpowiednie zatwierdzania modelu. Na przykład w modelu opartych na plikach z lokalnych plików, każdy projekt zapisaniem samodzielnie. W modelu repozytorium możesz zapisać kilka elementów w jednej transakcji. Aby uzyskać więcej informacji, zobacz [decyzji projektowych typ projektu](../../extensibility/internals/project-type-design-decisions.md).  
+ Po podjęciu decyzji o tym, gdzie znajdują się elementy projektu, musisz wybrać model odpowiednie zatwierdzenia. Na przykład w modelu opartych na plikach z lokalnymi plikami, każdy projekt zapisaniem autonomicznie. W modelu repozytorium można zapisać kilka elementów w ramach jednej transakcji. Aby uzyskać więcej informacji, zobacz [decyzje projektowe dotyczące typów projektu](../../extensibility/internals/project-type-design-decisions.md).  
   
- Aby określić rozszerzenia nazw plików, zaimplementuj projekty <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfejsu, która dostarcza informacje umożliwiające klientowi implementacji obiektu **Zapisz jako** okno dialogowe — oznacza to, aby wypełnić **Zapisz jako typ**  rozwijania listy i zarządzanie nimi rozszerzenie nazwy pliku początkowej.  
+ Aby określić rozszerzenia nazw plików, należy zaimplementować projektów <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfejs, który zawiera informacje umożliwiające klientowi implementacji obiektu **Zapisz jako** okno dialogowe — oznacza to, aby wypełnić **Zapisz jako typ**  listy rozwijanej listy i zarządzanie nimi rozszerzenie nazwy pliku początkowej.  
   
- Wywołania IDE `IPersistFileFormat` jako odpowiednie elementy interfejsu na projekt, aby wskazać, że projekt ma utrwalić jego projektu. W związku z tym obiektem jest właścicielem wszystkich aspektów jego plik i format. W tym nazwę formatu obiektu.  
+ Wywołania środowiska IDE `IPersistFileFormat` interfejsu na projekt, aby wskazać, że projekt ma utrwalić projekt elementy odpowiednio. W związku z tym obiekt jest właścicielem wszystkich aspektów jego plik i format. W tym nazwę formatu obiektu.  
   
- W przypadku, gdy elementy nie są plikami `IPersistFileFormat` jest nadal jak plik nieopartych elementy są zachowywane. Pliki, takie jak pliki .vbp dla projektu [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektów lub .vcproj pliki [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektów, musi również zostać utrwalony.  
+ W przypadku, gdy elementy nie są plikami `IPersistFileFormat` jest nadal o tym, jak inne niż file-based elementy są zachowywane. Pliki, takie jak pliki .vbp dla projektu [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektów lub .vcproj pliki [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektów, musi również zostać utrwalone.  
   
- Do zapisania akcje, IDE sprawdza uruchomionej tabeli dokumentów (Normalizacją) i hierarchii przekazuje polecenia do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> interfejsów. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> — Metoda jest zaimplementowana w celu ustalenia, czy element został zmieniony. Jeśli element ma, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> zaimplementowano metody zapisać zmodyfikowanego elementu.  
+ Zapisz akcje, IDE sprawdza uruchomionej tabeli dokumentu (Normalizacją) i hierarchii przekazuje polecenia, aby <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> interfejsów. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> Metoda jest implementowana w celu ustalenia, czy element został zmieniony. Jeśli element ma, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> metoda jest implementowana można zapisać zmodyfikowanego elementu.  
   
- Metody w `IVsPersistHierarchyItem2` interfejsu są używane do ustalenia, czy element może zostać ponownie załadowana i, jeśli element można załadować go ponownie. Ponadto <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> metody mogą zostać wdrożone zmienionych elementów do usunięcia, bez zapisywania.  
+ Metody na `IVsPersistHierarchyItem2` interfejsu są używane do ustalenia, czy można ponownie załadować elementu, a także, jeśli element można załadować go ponownie. Ponadto <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> metoda może być implementowany spowodować zmienionych elementów do usunięcia, bez zapisywany.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   

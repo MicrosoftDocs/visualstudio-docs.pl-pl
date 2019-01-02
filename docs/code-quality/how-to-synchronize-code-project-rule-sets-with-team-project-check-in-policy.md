@@ -1,8 +1,7 @@
 ---
-title: 'Porady: synchronizowanie zestawu reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego'
+title: 'Instrukcje: Synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883246"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Porady: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu DevOps platformy Azure
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Instrukcje: Synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu DevOps platformy Azure
 
 Ustawienia analizy kodu dla projektów kodu z zasadami ewidencjonowania projektu DevOps platformy Azure można zsynchronizować, określając zestaw reguł, który zawiera co najmniej reguły, które są określone w regule ustawić dla zasad ewidencjonowania. Potencjalnych klientów usługi dla deweloperów może poinformować Cię o nazwę i lokalizację zestawu reguł dla zasad ewidencjonowania. Aby upewnić się, że analiza kodu dla projektu używa poprawny zestaw reguł, można użyć jednej z następujących opcji:
 

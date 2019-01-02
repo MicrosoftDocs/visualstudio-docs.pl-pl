@@ -8,15 +8,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 4fa897ff92cb6956bef59dfcb7a860b24d0d8bae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885747"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6
 
@@ -74,7 +73,7 @@ W tym przykładzie użyto programu SQL Server Express LocalDB i przykładowej ba
 
     ![Wybierz obiekty bazy danych dla modelu](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Kreator generuje C# klas, które reprezentują model Entity Framework. Klasy są plain old C# klasy są one efekcie powiązań danych interfejsu użytkownika WPF. *Edmx* pliku w tym artykule opisano relacje i inne metadane, które kojarzy klas obiektów w bazie danych. *.Tt* pliki są szablony T4, które generują kod, który działa na podstawie modelu, a następnie zapisz zmiany w bazie danych. Widzisz wszystkie te pliki w **Eksploratora rozwiązań** w węźle Northwind_model:
+5. Kreator generuje klas języka C#, które reprezentują model Entity Framework. Klasy są plain old C# klasy są one efekcie powiązań danych interfejsu użytkownika WPF. *Edmx* pliku w tym artykule opisano relacje i inne metadane, które kojarzy klas obiektów w bazie danych. *.Tt* pliki są szablony T4, które generują kod, który działa na podstawie modelu, a następnie zapisz zmiany w bazie danych. Widzisz wszystkie te pliki w **Eksploratora rozwiązań** w węźle Northwind_model:
 
       ![Pliki modelu EF Eksploratora rozwiązań](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -355,7 +354,7 @@ Następnie zastąp cały zewnętrzny siatki ten kod znaczników:
 
 W aplikacjach Windows Forms możesz uzyskać obiekt BindingNavigator za pomocą przycisków przechodzenia między wierszy w bazie danych i wykonywania podstawowych operacji CRUD. WPF nie zapewnia BindingNavigator, ale to proste go utworzyć. To zrobić za pomocą przycisków w poziomie StackPanel i skojarzyć przyciski, za pomocą poleceń, które są powiązane z metody w kodzie.
 
-Istnieją fours części logiki polecenie: [1] poleceń, (2 powiązania, (3 przycisków i (4 programy obsługi poleceń w związanym z kodem.
+Istnieją fours części logiki polecenia: (1) poleceń, (2 powiązania, (3 przycisków i (4 programy obsługi poleceń w związanym z kodem.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Dodawanie poleceń, powiązania i przycisków w XAML
 

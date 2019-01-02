@@ -2,7 +2,6 @@
 title: Dodaj istniejący projekt — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.addexistingproject
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c030358eb071613e98d473845708b01235683ded
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2a5b0579037d31cf88de32f4fabda531d92c1b61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880458"
 ---
 # <a name="add-existing-project-command"></a>Dodaj istniejący projekt — Polecenie
 Dodaje istniejący projekt do bieżącego rozwiązania.
@@ -32,17 +31,17 @@ File.AddExistingProject filename
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename` Opcjonalne. Pełna ścieżka i projektu nazwa, z rozszerzeniem projektu do dodania do rozwiązania.
+ `filename` Opcjonalnie. Pełna ścieżka i projektu nazwa, z rozszerzeniem projekt, aby dodać do rozwiązania.
 
- Jeśli `filename` argument zawiera spacje, musi być ujęta w cudzysłów.
+ Jeśli `filename` argument zawiera spacje, muszą być ujęte w znaki cudzysłowu.
 
- Jeśli nazwa pliku nie zostanie określony, polecenie będzie Otwórz okno dialogowe pliku, użytkownik może wybrać projekt.
+ Jeśli nazwa pliku nie zostanie określony, polecenie spowoduje otwarcie okna dialogowego plików, dzięki czemu użytkownik może wybrać projekt.
 
 ## <a name="remarks"></a>Uwagi
- Automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas pisania.
+ Automatyczne uzupełnianie próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie dodaje [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu, TestProject1, do bieżącego rozwiązania.
+ Ten przykład dodaje [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu TestProject1, do bieżącego rozwiązania.
 
 ```cmd
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
@@ -52,5 +51,5 @@ File.AddExistingProject filename
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

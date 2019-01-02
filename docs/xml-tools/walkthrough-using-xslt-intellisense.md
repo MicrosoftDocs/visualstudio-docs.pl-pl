@@ -1,8 +1,7 @@
 ---
-title: 'Przewodnik: używanie funkcji XSLT IntelliSense'
+title: 'Przewodnik: Używanie XSLT IntelliSense'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1cbd8c7d49719ad1b3d04d9336f222b45a0b33d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894405"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: używanie funkcji XSLT IntelliSense
+# <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: Używanie XSLT IntelliSense
 
-W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego zakończenia wartości niektórych atrybutów.
+W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartości niektóre atrybuty XSLT IntelliSense.
 
-## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Aby użyć funkcji IntelliSense w atrybut name elementu xsl: z param i XSL: call-elementów szablonu
+## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Można użyć funkcji IntelliSense w atrybut name elementu xsl: z param i Call-szablonu elementów
 
 1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:
 
@@ -47,24 +46,24 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
     </xsl:stylesheet>
     ```
 
-2.  Wstaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl:call-template` elementu:
+2.  Ustaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujące `xsl:call-template` elementu:
 
     ```xml
     <xsl:call-template name="localized-message">
     </xsl:call-template>
     ```
 
-     Lista nazw szablonu jest wyświetlana w `name=""` atrybutu `xsl:call-template` elementu podczas pisania.
+     Zostanie wyświetlona lista nazwy szablonów w `name=""` atrybutu `xsl:call-template` elementu podczas wpisywania.
 
-3.  Wstaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl:with-param` elementu:
+3.  Ustaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujące `xsl:with-param` elementu:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
     ```
 
-     Lista nazw parametrów jest wyświetlana w `name=""` atrybutu `xsl:with-param` elementu.
+     Zostanie wyświetlona lista nazw parametrów w `name=""` atrybutu `xsl:with-param` elementu.
 
-## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Do używania funkcji IntelliSense w atrybucie tryb xsl: zastosować szablony elementu
+## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Aby korzystać z technologii IntelliSense w atrybucie tryb XSL: Zastosuj szablony elementu
 
 1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:
 
@@ -113,7 +112,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
     </xsl:stylesheet>
     ```
 
-2.  Wstaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl: apply-templates` elementu:
+2.  Ustaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujące `xsl: apply-templates` elementu:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -121,7 +120,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
 
      Lista trybów szablonu jest wyświetlana w `mode=""` atrybutu `xsl:apply-templates` elementu.
 
-## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Używać funkcji IntelliSense w atrybuty arkusza stylów prefiks i prefiksu wynik xsl:namespace — w elemencie aliasu
+## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Aby użyć funkcji IntelliSense w atrybuty prefiks arkusza stylów i wynik prefiks XSL: namespace-alias elementu
 
 1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:
 
@@ -154,13 +153,13 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
     </xsl:stylesheet>
     ```
 
-2.  Wstaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl:namespace-alias` elementu:
+2.  Ustaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujące `xsl:namespace-alias` elementu:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
     ```
 
-     Zwróć uwagę, jak Lista prefiksów znajdowały się w `stylesheet-prefix` i `result-prefix` atrybuty `xsl:namespace-alias` elementu.
+     Zwróć uwagę, jak listę prefiksów pojawiła się `stylesheet-prefix` i `result-prefix` atrybuty `xsl:namespace-alias` elementu.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,8 +1,6 @@
 ---
 title: Polecenia Menu Wyszukaj | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Search menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 266af946d33e0fbbae6367c4a2729cc3977c0452
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6058d3a704119515dc6bb3675d338d1f656cf1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884509"
 ---
 # <a name="search-menu-commands"></a>Polecenia menu Wyszukaj
-**Wyszukiwania** menu zawiera polecenia do wyszukiwania określonego systemu windows.  
+**Wyszukiwania** menu zawiera polecenia służące do wyszukiwania określonego systemu windows.  
   
  **Znajdź/procesu/wątku/komunikatów okien**  
- Otwiera **okna**/**procesu**/**wątku**/**MessageSearch** okno dialogowe Gdy używasz **FinderTool** lub określ kryteria wyszukiwania.  
+ Otwiera **okna**/**procesu**/**wątku**/**MessageSearch** okno dialogowe Gdy używasz **FinderTool** lub określić kryteria wyszukiwania.  
   
  **Znajdź następny**  
- Wyszukuje bieżący widok następne zgodne okno procesu, wątku lub wiadomości. Ten element menu (i przycisku paska narzędzi) jest dostępna tylko wtedy, gdy wynik prawidłowe wyszukiwania, która nie jest unikatowa.  
+ Wyszukuje w bieżącym widoku następne zgodne okno, proces, wątek lub wiadomość. Ten element menu (i przycisk paska narzędzi) jest dostępna tylko wtedy, gdy wynik wyszukiwania prawidłowe, która nie jest unikatowa.  
   
  **Znajdź poprzedni**  
- Wyszukuje bieżący widok poprzednie zgodne okno procesu, wątku lub wiadomości. Ten element menu (i przycisku paska narzędzi) jest dostępna tylko wtedy, gdy wynik prawidłowe wyszukiwania, która nie jest unikatowa.
+ Wyszukuje w bieżącym widoku poprzednie zgodne okno, proces, wątek lub wiadomość. Ten element menu (i przycisk paska narzędzi) jest dostępna tylko wtedy, gdy wynik wyszukiwania prawidłowe, która nie jest unikatowa.

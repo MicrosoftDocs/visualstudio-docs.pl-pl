@@ -1,8 +1,6 @@
 ---
 title: PROFILE_CURRENTID | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - PROFILE_CURRENTID
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d19671e0f9280f02a012ad02b5421f2d62d30926
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ad75506989b326cadf2f1a2b1cd6f133b91649ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886101"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
-PROFILE_CURRENTID zwraca pseudo-token identyfikator wątku lub identyfikator procesu w wywołaniu funkcji NameProfile, StartProfile StopProfile, SuspendProfile i ResumeProfile. Użyj, aby spowodować, że funkcja do działania na bieżącego wątku lub procesu, a nie w szczególności wskazanych jeden.  
+PROFILE_CURRENTID zwraca identyfikator wątku lub identyfikator procesu, w wywołaniu funkcji NameProfile, StartProfile, StopProfile, SuspendProfile i ResumeProfile pseudo-token. Umożliwia ona spowodować, że funkcja działać względem bieżącego wątku lub procesów, zamiast jednego wyraźnie wskazane.  
   
 ## <a name="example"></a>Przykład  
  PROFILE_CURRENTID jest zdefiniowany w *VSPerf.h* jako:  
@@ -30,7 +28,7 @@ static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia PROFILE_CURRENTID. W przykładzie użyto PROFILE_CURRENTID jako parametr identyfikacji bieżący wątek w wywołaniu [StartProfile](../profiling/startprofile.md) funkcji.  
+ Poniższy przykład ilustruje PROFILE_CURRENTID. W przykładzie użyto PROFILE_CURRENTID jako parametr identyfikacji bieżącego wątku w wywołaniu [StartProfile](../profiling/startprofile.md) funkcji.  
   
 ```cpp  
 void ExerciseProfileCurrentID()  

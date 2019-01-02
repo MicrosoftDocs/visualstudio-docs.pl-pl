@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsourcefiles — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33960cf8cfde8d781d52e0519911093019a93941
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ac732052c415341cf0cb8f04bfd94c8b1d797cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872005"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Wylicza różnych plików źródłowych znajdujących się w źródle danych.  
@@ -27,7 +25,7 @@ Wylicza różnych plików źródłowych znajdujących się w źródle danych.
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDiaEnumSourceFiles : IUnknown  
+IDiaEnumSourceFiles : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
@@ -82,7 +80,7 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
  Biblioteka: diaguids.lib  
   

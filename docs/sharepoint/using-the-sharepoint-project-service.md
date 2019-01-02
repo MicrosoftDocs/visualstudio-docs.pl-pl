@@ -1,9 +1,6 @@
 ---
 title: Korzystanie z usługi projektu SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +13,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5d4c2950754ebbef2920720cf784084b2968a82
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a8416d38629c8970e9cc90e0d873138970b16258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875822"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Korzystanie z usługi projektu SharePoint
   Systemu projektu programu SharePoint zawiera usługa projektu, która służy do wykonywania zadań związanych z system projektu. Usługa projektu jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu.  
   
- Dostępne usługi projektu programu SharePoint w wszelkich rozszerzeń narzędzi programu SharePoint. Można także przejść w innych rodzajów rozszerzeń programu Visual Studio, takich jak dodatki i pakiety VSPackages. Aby uzyskać więcej informacji, zobacz [porady: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
+ Dostępne usługi projektu programu SharePoint w wszelkich rozszerzeń narzędzi programu SharePoint. Można także przejść w innych rodzajów rozszerzeń programu Visual Studio, takich jak dodatki i pakiety VSPackages. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
 ## <a name="project-service-features"></a>Funkcje usługi projektu
  Poniższa tabela zawiera listę zadań, które można wykonać przy użyciu usługi projektu programu SharePoint i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> metody lub właściwości służące do wykonania poszczególnych zadań.  
@@ -47,8 +44,7 @@ ms.locfileid: "51295062"
   
 ## <a name="see-also"></a>Zobacz także
  [Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
- [Porady: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
+ [Instrukcje: Pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
- [Porady: uzyskiwanie usługi obiekt DTE](https://msdn.microsoft.com/library/bb166401.aspx)  
-  
+ [Instrukcje: Pobierz usługę z obiektu DTE](https://msdn.microsoft.com/library/bb166401.aspx)  

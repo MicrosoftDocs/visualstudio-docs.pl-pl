@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
@@ -14,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dde728b5617d50f672b67980c524e6d1d48e0b9a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 271d3e181fee4c7491b785808d0b4b9856755e32
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876148"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

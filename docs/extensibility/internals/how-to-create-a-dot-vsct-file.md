@@ -1,9 +1,6 @@
 ---
-title: 'Porady: tworzenie. Pliku Vsct | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie. Pliku Vsct | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885333"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Porady: Tworzenie pliku vsct  
+# <a name="how-to-create-a-vsct-file"></a>Instrukcje: Tworzenie pliku vsct  
   
 Istnieje kilka sposobów, aby utworzyć konfigurację tabeli polecenia opartych na języku XML programu Visual Studio (*vsct*) pliku.  
   
@@ -56,7 +53,7 @@ Istnieje kilka sposobów, aby utworzyć konfigurację tabeli polecenia opartych 
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Porady: Tworzenie pliku vsct z istniejącego pliku .ctc  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Instrukcje: Tworzenie pliku vsct z istniejącego pliku .ctc  
   
 Można tworzyć oparte na języku XML *vsct* plików z istniejącej tabeli polecenia *.ctc* pliku źródłowego. Dzięki temu możesz korzystać z zalet nowego opartego na języku XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] format kompilatora tabeli (VSCT) polecenia.  
   
@@ -87,7 +84,7 @@ Można tworzyć oparte na języku XML *vsct* plików z istniejącej tabeli polec
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Porady: Tworzenie pliku vsct z istniejącego pliku .cto  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Instrukcje: Tworzenie pliku vsct z istniejącego pliku .cto  
   
 Można tworzyć oparte na języku XML *vsct* plik z istniejących danych binarnych *.cto* pliku. W ten sposób pozwala na korzystanie z zalet nowego formatu kompilatora tabeli poleceń. Ten proces działa nawet wtedy, gdy *.cto* plik został skompilowany z *.ctc* pliku. Możesz edytować i skompilować *vsct* pliku do innego pliku .cto.  
   

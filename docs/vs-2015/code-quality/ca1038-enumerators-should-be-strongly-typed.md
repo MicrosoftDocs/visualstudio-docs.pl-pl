@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aafd89a068a57ef1eb89584441195e1ece8b8f52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3274d5c58bef5d4e0dd94e591a1bde93ba488c7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886574"
 ---
-# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Wyliczenia powinny być silnie typizowane
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Moduły wyliczające powinny być silnie typizowane
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -69,6 +68,3 @@ ms.locfileid: "49899074"
  <xref:System.Collections.IEnumerator?displayProperty=fullName><xref:System.Collections.CollectionBase?displayProperty=fullName>
  <xref:System.Collections.DictionaryBase?displayProperty=fullName>
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

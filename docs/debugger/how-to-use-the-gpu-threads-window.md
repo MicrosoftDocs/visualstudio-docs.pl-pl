@@ -1,8 +1,6 @@
 ---
 title: Przeglądanie wątków GPU w debugerze | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e3124f98855f5f7f303aff0d9e8b2608abbbeba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871320"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Porady: korzystanie z okna wątków GPU
+# <a name="how-to-use-the-gpu-threads-window"></a>Instrukcje: Korzystanie z okna wątków GPU
 Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w procesorze GPU w aplikacji, na którym wykonujesz debugowanie. Aby uzyskać więcej informacji na temat aplikacji działających na procesorze GPU, zobacz [Przegląd C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  Okno wątków GPU zawiera tabelę, w którym każdy wiersz reprezentuje zestaw wątków GPU, które mają takie same wartości we wszystkich kolumnach. Można sortować, zmienić kolejność, Usuń i grupowania elementów, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów) z okna wątków GPU. Następujące kolumny są wyświetlane w oknie wątków GPU:  
@@ -70,7 +68,7 @@ Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w pr
   
 ### <a name="to-switch-to-a-different-thread"></a>Aby przełączyć się do innego wątku  
   
--   Kliknij dwukrotnie kolumnę. (Klawiatura: zaznacz wiersz, a następnie wybierz klawisz Enter.)  
+-   Kliknij dwukrotnie kolumnę. (Klawiatura: Zaznacz wiersz i wybierz klawisz Enter).  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Do wyświetlania określonego fragmentu i wątku  
   
@@ -106,5 +104,5 @@ Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w pr
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+ [Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [Przewodnik: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

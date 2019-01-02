@@ -1,8 +1,6 @@
 ---
-title: 'Porady: odświeżanie widoku | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Odśwież widok | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - refreshing views
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3da7466f7f1ac569378d5ce5053c72c55d4ae68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dc7510986c87115a0f93078fb6788644c984460b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880169"
 ---
-# <a name="how-to-refresh-the-view"></a>Porady: Odświeżanie widoku
-Spy ++ pobiera "migawkę" tabel systemowych i odświeżenie widoku na podstawie tych informacji. Należy okresowo odświeżanie widoków systemu. Jeśli masz Spy ++ widoku Otwórz i nie ma odświeżyć widok, nie będą widzieć te procesy, wątki i systemu windows, które następnie są tworzone. Ponadto może zostać wyświetlony elementy, które już istnieją. **Odśwież** polecenie jest dostępne dla wszystkich widokach oprócz widoku komunikatów.  
+# <a name="how-to-refresh-the-view"></a>Instrukcje: Odśwież widok
+Spy ++ tworzy "migawkę" tabel systemowych i odświeża widoku na podstawie tych informacji. Należy okresowo odświeżać widoków systemu. Jeśli masz narzędzie Spy ++ widok Otwórz i nie mają odświeżyć widok, nie zobaczysz te procesy, wątki i systemu windows, które następnie są tworzone. Ponadto możesz zobaczyć elementy, które już istnieją. **Odśwież** polecenie jest dostępne dla wszystkich widoków z wyjątkiem widoku komunikatów.  
   
 ### <a name="to-refresh-the-currently-active-view"></a>Aby odświeżyć widok aktywne  
   
--   Wybierz **Odśwież** z **okna** menu lub kliknij przycisk **Odśwież** przycisku w pasku narzędzi.  
+-   Wybierz **Odśwież** z **okna** menu lub kliknij przycisk **Odśwież** przycisku na pasku narzędzi.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
- [Widoków Spy ++](../debugger/spy-increment-views.md)   
+ [Widoków programu Spy ++](../debugger/spy-increment-views.md)   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Proste powiązanie danych w projekcie na poziomie dokumentu'
-ms.custom: ''
+title: 'Przewodnik: Proste powiązanie danych w projekcie na poziomie dokumentu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895496"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Wskazówki: Proste powiązanie danych w projekcie na poziomie dokumentu
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Przewodnik: Proste powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawy powiązanie danych w projektach na poziomie dokumentu. Jedno pole danych w bazie danych programu SQL Server jest powiązana z nazwanym zakresem w programie Microsoft Office Excel. Przewodnik pokazuje także sposobu dodawania formantów, które umożliwiają użytkownikowi przewiń wszystkie rekordy w tabeli.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49824383"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1. Utwórz projektu skoroszytu programu Excel o nazwie **Moje proste powiązanie danych**, za pomocą Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Utwórz projektu skoroszytu programu Excel o nazwie **Moje proste powiązanie danych**, za pomocą Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje proste powiązanie danych** projekt **Eksploratora rozwiązań**.  
   
@@ -188,15 +185,13 @@ ms.locfileid: "49824383"
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono podstawowe informacje dotyczące powiązania nazwanego zakresu do pola w bazie danych. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Buforuje te dane, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [porady: dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Buforuje te dane, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [jak: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Powiązać z komórek do wielu kolumn w tabeli, a nie jedno pole. Aby uzyskać więcej informacji, zobacz [wskazówki: złożone powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Powiązać z komórek do wielu kolumn w tabeli, a nie jedno pole. Aby uzyskać więcej informacji, zobacz [instruktażu: Złożone powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Użyj <xref:System.Windows.Forms.BindingNavigator> kontroli do przewijania rekordów. Aby uzyskać więcej informacji, zobacz [porady: nawigowanie po danych za pomocą kontrolki BindingNavigator formularzy Windows](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+-   Użyj <xref:System.Windows.Forms.BindingNavigator> kontroli do przewijania rekordów. Aby uzyskać więcej informacji, zobacz [jak: Nawigowanie po danych za pomocą kontrolki BindingNavigator formularzy Windows](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
- [Wskazówki: Złożone powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  
+ [Przewodnik: Złożone powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  

@@ -1,9 +1,6 @@
 ---
 title: Programowanie zespołowe rozwiązań pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b4d22c92bd180eb27f8ebb50e65b24d17a92e47
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876500"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Programowanie zespołowe rozwiązań pakietu Office
   Wielu deweloperów pracować w projekcie programu pakietu Office w taki sam sposób, jak współpracują w innych projektów programu Visual Studio. Program Visual Studio poprawnie lokalizuje instalacji pakietu Microsoft Office, na każdym komputerze, nawet jeśli Office jest zainstalowana w różnych lokalizacjach. Istnieją jednak pewne istotne kwestie, w których trzeba pamiętać.  
@@ -49,5 +46,3 @@ ms.locfileid: "53441551"
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)  
-  
-  

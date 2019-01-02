@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
@@ -14,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e982db6bf37caf201f75e563a23a28a528a61e7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b0e79d65c590973f99d36f7fd81a98e3bae55a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879254"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Wprowadzenie do korzystania z C++ w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ Przez ukończenie tego instruktażu, zapoznasz się z wielu narzędzi i oknach d
 ##  <a name="BKMK_Configure"></a> Zaloguj się do programu Visual Studio
  Po uruchomieniu programu Visual Studio po raz pierwszy podano zyskując szansę na zalogowanie się przy użyciu konta Microsoft, takiego jak Live lub programu Outlook. Logowanie umożliwia ustawienia mają być synchronizowane na wszystkich urządzeniach. Aby uzyskać więcej informacji, zobacz [logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)
 
- Rysunek 1: Środowisko IDE Visual Studio
+ Rysunek 1: Visual Studio IDE
 
  ![Środowisko IDE z Visual C&#43; &#43; ustawienia stosowane](../ide/media/c-ide-defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout C ++")
 
@@ -153,4 +152,4 @@ Przez ukończenie tego instruktażu, zapoznasz się z wielu narzędzi i oknach d
    Gratulujemy zakończenia instruktażu! Jeśli chcesz poznać więcej przykładów, zobacz [Visual Studio Samples](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md) [przykłady Visual Studio](../ide/visual-studio-samples.md) [Rozpocznij tworzenie aplikacji za pomocą programu Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+ [Przewodnik: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md) [przykłady Visual Studio](../ide/visual-studio-samples.md) [Rozpocznij tworzenie aplikacji za pomocą programu Visual Studio](../ide/get-started-developing-with-visual-studio.md)

@@ -3,7 +3,6 @@ title: Trybu mieszanego debugowania dla języka Python
 description: Jednocześnie debugować C++ i Python w programie Visual Studio, w tym przechodzenie między środowiskami, wyświetlanie wartości i wyrażeń.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b654af11ce61cb9331682f8b46e4476c06020ed3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885958"
 ---
 # <a name="debug-python-and-c-together"></a>Debugowanie języka Python i C++ razem
 
@@ -40,7 +39,7 @@ Funkcje debugowania trybu mieszanego zawierają następujące informacje, jak wy
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Wprowadzenie do tworzenia, testowania i debugowania natywnych modułów języka C z programem Visual Studio, zobacz [szczegółowe omówienie: Tworzenie modułów macierzystych](https://youtu.be/D9RlT06a1EI) (witrynie youtube.com, 9 m 09s). Plik wideo ma zastosowanie do programu Visual Studio 2015 i 2017. |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Wprowadzenie do tworzenia, testowania i debugowania natywnych modułów języka C z programem Visual Studio, zobacz [szczegółowe informacje: Tworzenie modułów macierzystych](https://youtu.be/D9RlT06a1EI) (witrynie youtube.com, 9 m 09s). Plik wideo ma zastosowanie do programu Visual Studio 2015 i 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Włącz debugowanie w trybie mieszanym w projekcie języka Python
 
@@ -170,9 +169,9 @@ Debuger trybu mieszanego różni się od [standardowa debugera języka Python](d
 
 - Nieobsługiwane funkcje: warunkowe punkty przerwania, **debugowanie interakcyjne** okno i zdalne debugowanie dla wielu platform.
 - **Natychmiastowe** okna: dostępne ale ograniczonym podzbiorem jego działanie, w tym wszelkie ograniczenia znajduje się w tym miejscu.
-- Obsługiwane wersje języka Python: CPython i w wersji 2.7 3.3 + tylko.
-- Visual Studio Shell: Po przy użyciu języka Python za pomocą programu Visual Studio Shell (na przykład, jeśli został zainstalowany przy użyciu zintegrowanego Instalatora), program Visual Studio nie można otworzyć projektów w języku C++ i środowisko edytowania plików języka C++ jest to edytor tekstu podstawowego. Jednak debugowania języka C/C++ i debugowanie w trybie mieszanym są w pełni obsługiwane w powłoce z kodem źródłowym, przechodzenie do kodu macierzystego i C++ oceny wyrażenia w oknach debugera.
-- Wyświetlanie i rozwijanie obiektów: podczas przeglądania obiektów języka Python w **lokalne** i **Obejrzyj** debugera okien narzędzi debugowania trybu mieszanego pokazuje tylko strukturę obiektów. Go nie automatycznie ocenić właściwości lub Pokaż atrybuty obliczane. Dla kolekcji, pokazywane są tylko elementy kolekcji wbudowanych typów (`tuple`, `list`, `dict`, `set`). Niestandardowe typy kolekcji nie są odzwierciedlane wiernie jako kolekcje, chyba że są one dziedziczone z pewnego typu kolekcji wbudowanych.
+- Obsługiwane wersje języka Python: CPython 2.7 i 3.3 + tylko.
+- Visual Studio Shell: Po za pomocą języka Python za pomocą programu Visual Studio Shell (na przykład, jeśli został zainstalowany przy użyciu zintegrowanego Instalatora), program Visual Studio nie można otworzyć projektów w języku C++ i środowisko edytowania plików języka C++ jest to edytor tekstu podstawowego. Jednak debugowania języka C/C++ i debugowanie w trybie mieszanym są w pełni obsługiwane w powłoce z kodem źródłowym, przechodzenie do kodu macierzystego i C++ oceny wyrażenia w oknach debugera.
+- Wyświetlanie i rozwijanie obiektów: Podczas przeglądania obiektów języka Python w **lokalne** i **Obejrzyj** debugera okien narzędzi debugowania trybu mieszanego pokazuje tylko strukturę obiektów. Go nie automatycznie ocenić właściwości lub Pokaż atrybuty obliczane. Dla kolekcji, pokazywane są tylko elementy kolekcji wbudowanych typów (`tuple`, `list`, `dict`, `set`). Niestandardowe typy kolekcji nie są odzwierciedlane wiernie jako kolekcje, chyba że są one dziedziczone z pewnego typu kolekcji wbudowanych.
 - Obliczanie wyrażenia: patrz poniżej.
 
 ### <a name="expression-evaluation"></a>Szacowanie wyrażeń

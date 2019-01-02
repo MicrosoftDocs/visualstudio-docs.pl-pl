@@ -3,7 +3,6 @@ title: Analizowanie danych użycia procesora CPU (kod zarządzany)
 description: Mierzyć wydajność aplikacji w języku C# i Visual Basic, za pomocą narzędzia do diagnostyki użycia procesora CPU
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 68d8319082fbcbe232989814c190f9a4746c11f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899577"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki Start: Analizowanie danych użycia procesora CPU w programie Visual Studio (kod zarządzany)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki start: Analizowanie danych użycia procesora CPU w programie Visual Studio (kod zarządzany)
 
 Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w analizie problemów z wydajnością w aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji. W tym miejscu przyjrzymy się narzędzie, aby określić wąskie gardła wydajności ze względu na wysokie użycie procesora CPU. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
 
@@ -161,7 +160,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     > [!NOTE]
     > W języku Visual Basic, upewnij się, obiekt startowy jest ustawiony na `Sub Main` (**właściwości** > **aplikacji** > **obiekt początkowy**).
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1: Zbierania danych profilowania
+##  <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
 
 1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `Main` funkcji:
 
@@ -204,7 +203,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
      W tym momencie można rozpocząć analizy danych.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2. Analizowanie danych użycia procesora CPU
 
 Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obszarze użycie procesora CPU, identyfikowanie funkcji, które wykonują najwięcej pracy i następnie wykonywanie bliższe spojrzenie na każdym z nich.
 

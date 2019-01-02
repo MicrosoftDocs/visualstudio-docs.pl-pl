@@ -1,8 +1,6 @@
 ---
 title: Korzystanie z biblioteki debugowania CRT | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
@@ -30,24 +28,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e550a5fa705f3c85b3464046cd3c92d96bc47ca
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 79f75cf227826ec0f9d35d9a7564bbdc25a3cd0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890907"
 ---
 # <a name="crt-debug-library-use"></a>Korzystanie z biblioteki debugowania CRT
-Biblioteki wykonawcze języka C zapewnia zaawansowaną obsługę debugowania. Aby użyć jednej z bibliotek debugowania CRT, należy połączyć z [/DEBUG](/cpp/build/reference/debug-generate-debug-info) i skompiluj z **/mdd**, **/MTd**, lub **/LDd**.  
+Biblioteki wykonawczej C zapewnia rozbudowaną obsługę debugowania. Aby użyć jednego z biblioteki debugowania CRT, należy połączyć z [/DEBUG](/cpp/build/reference/debug-generate-debug-info) i skompiluj z **/mdd**, **/mtd**, lub **/LDd**.  
   
 ## <a name="remarks"></a>Uwagi  
- Definicje głównego i makra debugowania CRT znajdują się w pliku nagłówka CRTDBG.h.  
+ Definicje głównego i makra dla debugowania CRT, można znaleźć w pliku nagłówkowym CRTDBG.h.  
   
- Funkcje bibliotek debugowania CRT z są kompilowane przy użyciu informacji o debugowaniu ([/Zd/z7, / zi, /ZI (Format informacji debugowania)](/cpp/build/reference/z7-zi-zi-debug-information-format)) i bez optymalizacji. Niektóre funkcje zawierają potwierdzenia do Sprawdź parametry przekazywane do nich, i kod źródłowy jest dostępne. Z tego kodu źródłowego można wkraczać do funkcji CRT, aby potwierdzić oczekiwać i sprawdź, czy złych parametrów lub pamięci stanów pracy funkcji. (Niektóre technologii CRT jest zastrzeżone i nie ma kodu źródłowego dla obsługi wyjątków, zmiennoprzecinkowych i kilka innych procedur).  
+ Funkcje z biblioteki debugowania CRT są kompilowane przy użyciu informacji o debugowaniu ([/z7, / zd, / zi, /ZI (Format informacji debugowania)](/cpp/build/reference/z7-zi-zi-debug-information-format)) i bez optymalizacji. Niektóre funkcje zawierać potwierdzenia, aby sprawdzić parametry przekazywane do nich i znajduje się kod źródłowy. Przy użyciu tego kodu źródłowego możesz wejść do funkcji CRT, aby upewnić się, że funkcje działają spodziewać się i sprawdź stany złych parametrów lub pamięci. (Niektóre technologii CRT jest zastrzeżone i nie zawiera kodu źródłowego dla obsługi wyjątków, zmiennoprzecinkowych i kilka innych procedur).  
   
- Po zainstalowaniu programu Visual C++, istnieje możliwość instalowania kodu źródłowego C biblioteki wykonawczej na dysku twardym. Kod źródłowy nie zostanie zainstalowany, należy najpierw CD-ROM Aby wkraczać do funkcji CRT.  
+ Po zainstalowaniu programu Visual C++, istnieje możliwość instalowania kod źródłowy biblioteki wykonawczej języka C na dysku twardym. Jeśli kod źródłowy nie jest zainstalowany, należy dysku CD-ROM, aby wejść do funkcji CRT.  
   
- Aby uzyskać więcej informacji na różnych biblioteki wykonawczej można użyć, zobacz [biblioteki wykonawcze języka C](/cpp/c-runtime-library/crt-library-features).  
+ Aby uzyskać więcej informacji na temat różnych bibliotek środowiska uruchomieniowego, można użyć, zobacz [C Run-Time Libraries](/cpp/c-runtime-library/crt-library-features).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)   

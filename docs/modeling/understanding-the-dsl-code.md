@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886374"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpienia elementu DSL w programie Visual Studio. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano generowanego interfejsu API.
 
-## <a name="the-example-solution-component-diagrams"></a>W rozwiązaniu przykładowym: diagramy składników
+## <a name="the-example-solution-component-diagrams"></a>W rozwiązaniu przykładowym: Diagramy składników
  Aby utworzyć rozwiązanie, który jest źródłem Większość przykładów w tym temacie, należy utworzyć DSL z **modeli składnika** szablonu rozwiązania. Jest to jeden z szablonów standardowych, które pojawia się podczas tworzenia nowego rozwiązania języka DSL.
 
 > [!NOTE]
@@ -66,7 +65,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
 
  `ConnectionBuilders.cs`
 
- Konstruktor połączeń to klasa, która umożliwia tworzenie relacji. Jest kod związany z narzędziem do połączenia. Ten plik zawiera parę klasy dla każdego z narzędzi połączenia. Ich nazwy są uzyskiwane z nazwy domeny narzędzie połączenia i relacji: *relacji*konstruktora, a *ConnectorTool*ConnectAction.
+ Konstruktor połączeń to klasa, która umożliwia tworzenie relacji. Jest kod związany z narzędziem do połączenia. Ten plik zawiera parę klasy dla każdego z narzędzi połączenia. Ich nazwy są uzyskiwane z nazwy domeny narzędzie relacji i połączenia: *Relacja*konstruktora, a *ConnectorTool*ConnectAction.
 
  (W tym przykładzie rozwiązania składnika nosi nazwę jednego z konstruktorów połączenia elementu ConnectionBuilder, to zbieżność, ponieważ relacja domeny nosi nazwę połączenie).
 

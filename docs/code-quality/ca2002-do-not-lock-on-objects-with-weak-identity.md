@@ -1,8 +1,7 @@
 ---
-title: 'CA2002: Nie należy blokować obiektów z słabą tożsamością'
+title: 'CA2002: Nie blokuj obiektów o słabej tożsamości'
 ms.date: 01/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
@@ -18,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ab74b2cf7a2b9da99c673fc6b6822e0d7e67f959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890420"
 ---
-# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Nie należy blokować obiektów z słabą tożsamością
+# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Nie blokuj obiektów o słabej tożsamości
 
 |||
 |-|-|
@@ -72,7 +71,7 @@ Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA2213: Pola możliwe do likwidacji powinny zostać zlikwidowane](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+[CA2213: Pola możliwe do rozporządzania należy rozporządzać](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>Przykład
 

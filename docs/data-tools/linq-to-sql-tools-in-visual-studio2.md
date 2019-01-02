@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68b19993448ed68520f267177ca760975cd4d4aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894158"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Narzędzi LINQ to SQL w programie Visual Studio
 
@@ -42,7 +41,7 @@ Po wybraniu *dbml* pliku w Visual Studio Wyświetla **O/R Designer** powierzchni
 ![LINQ do SQL projektanta](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> **O/R Designer** jest mapowania relacyjnych prostego obiektu, ponieważ obsługuje on tylko relacji mapowanie 1:1. Innymi słowy klasa jednostka może mieć tylko relacji mapowanie 1:1 z tabeli bazy danych lub widoku. Mapowanie złożonych, takie jak mapowanie klasę jednostki do tabeli dołączonym do nie jest obsługiwana; na użytek złożonych mapowania Entity Framework. Ponadto projektanta jest generator kodu jednokierunkowe. Oznacza to, że tylko zmiany wprowadzone do powierzchni projektanta są odzwierciedlane w pliku kodu. Ręczne zmiany w pliku kodu nie są odzwierciedlane w **O/R Designer**. Wszelkie zmiany wprowadzone ręcznie w pliku kodu zostaną zastąpione, gdy projektant jest zapisywana i wygenerowania kodu. Aby uzyskać informacje o tym, jak dodać kod użytkownika i rozszerzać klasy generowane przez **O/R Designer**, zobacz [jak: rozszerzanie kodu wygenerowanego przez projektanta O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> **O/R Designer** jest mapowania relacyjnych prostego obiektu, ponieważ obsługuje on tylko relacji mapowanie 1:1. Innymi słowy klasa jednostka może mieć tylko relacji mapowanie 1:1 z tabeli bazy danych lub widoku. Mapowanie złożonych, takie jak mapowanie klasę jednostki do tabeli dołączonym do nie jest obsługiwana; na użytek złożonych mapowania Entity Framework. Ponadto projektanta jest generator kodu jednokierunkowe. Oznacza to, że tylko zmiany wprowadzone do powierzchni projektanta są odzwierciedlane w pliku kodu. Ręczne zmiany w pliku kodu nie są odzwierciedlane w **O/R Designer**. Wszelkie zmiany wprowadzone ręcznie w pliku kodu zostaną zastąpione, gdy projektant jest zapisywana i wygenerowania kodu. Aby uzyskać informacje o tym, jak dodać kod użytkownika i rozszerzać klasy generowane przez **O/R Designer**, zobacz [jak: Rozszerzanie kodu wygenerowanego przez projektanta O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Tworzenie i konfigurowanie kontekstu danych
 
@@ -50,7 +49,7 @@ Po dodaniu **klasy LINQ do SQL** elementu do projektu i Otwórz **O/R Designer**
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Tworzenie klas jednostek mapowane na bazę danych, tabele i widoki
 
-Można utworzyć klasy jednostek zamapowanych na tabele i widoki, przeciągając bazy danych tabel i widoków z **Eksploratora serwera** lub **Eksplorator bazy danych** na **O/R Designer**. Jak wskazano w poprzedniej sekcji <xref:System.Data.Linq.DataContext> jest skonfigurowany z informacjami o połączeniu, dostarczone przez pierwszy element, który jest zostało przeciągnięte na powierzchnię projektu. Jeśli kolejne elementu, który używa innego połączenia jest dodawany do **O/R Designer**, można zmienić połączenia dla <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie klasy programu LINQ to SQL zamapowanych na tabele i widoki (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Można utworzyć klasy jednostek zamapowanych na tabele i widoki, przeciągając bazy danych tabel i widoków z **Eksploratora serwera** lub **Eksplorator bazy danych** na **O/R Designer**. Jak wskazano w poprzedniej sekcji <xref:System.Data.Linq.DataContext> jest skonfigurowany z informacjami o połączeniu, dostarczone przez pierwszy element, który jest zostało przeciągnięte na powierzchnię projektu. Jeśli kolejne elementu, który używa innego połączenia jest dodawany do **O/R Designer**, można zmienić połączenia dla <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Tworzenie metod DataContext, które wywołują procedur przechowywanych i funkcji
 
@@ -61,15 +60,15 @@ Możesz utworzyć <xref:System.Data.Linq.DataContext> metody, które wywołują 
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Konfigurowanie DataContext zapisują dane pomiędzy klasami jednostki i bazy danych za pomocą procedur składowanych
 
-Jak wspomniano wcześniej, możesz utworzyć <xref:System.Data.Linq.DataContext> metody, które wywołują procedur przechowywanych i funkcji. Ponadto można także przypisać procedur składowanych, które są używane do domyślnego LINQ to SQL zachowanie środowiska uruchomieniowego, które wykonuje wstawiania, aktualizacji i usuwania. Aby uzyskać więcej informacji, zobacz [porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Jak wspomniano wcześniej, możesz utworzyć <xref:System.Data.Linq.DataContext> metody, które wywołują procedur przechowywanych i funkcji. Ponadto można także przypisać procedur składowanych, które są używane do domyślnego LINQ to SQL zachowanie środowiska uruchomieniowego, które wykonuje wstawiania, aktualizacji i usuwania. Aby uzyskać więcej informacji, zobacz [jak: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Dziedziczenie i Relational designer
 
-Podobnie jak inne obiekty można użyć dziedziczenia klasy LINQ do SQL i mogą pochodzić z innych klas. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. **O/R Designer** obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Podobnie jak inne obiekty można użyć dziedziczenia klasy LINQ do SQL i mogą pochodzić z innych klas. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. **O/R Designer** obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych. Aby uzyskać więcej informacji, zobacz [jak: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Zapytania LINQ to SQL
 
-Klas jednostek utworzonych przez **O/R Designer** są przeznaczone do użytku z programem [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Aby uzyskać więcej informacji, zobacz [porady: zapytanie dotyczące informacji](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+Klas jednostek utworzonych przez **O/R Designer** są przeznaczone do użytku z programem [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Aby uzyskać więcej informacji, zobacz [jak: Zapytanie dotyczące informacji](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Oddziel wygenerowanego kodu klasy DataContext i jednostek w różnych obszarach nazw
 

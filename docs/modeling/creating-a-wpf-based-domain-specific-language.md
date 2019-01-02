@@ -8,19 +8,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e2a4e569102623f711bd08e896a39f020de14d04
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9eaae58d9b805888215ccd9e69753061be7695fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877604"
 ---
-# <a name="create-a-wpf-based-domain-specific-language"></a>Utwórz języka specyficznego dla domeny na podstawie WPF
+# <a name="create-a-wpf-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF
 
-Można utworzyć języka specyficznego dla domeny, którego projektanta WPF zamiast graficznego projektanta.
+Można utworzyć języka specyficznego dla domeny, który ma projektanta WPF, zamiast graficznego projektanta.
 
-Informacje i przykłady dotyczące tej funkcji można znaleźć w Visual Studio wizualizacji i modelowania narzędzia witryny sieci Web [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
+Informacje i przykłady dotyczące tej funkcji można znaleźć w Visual Studio Visualization i Modeling Tools witryny sieci Web [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
 
 ## <a name="see-also"></a>Zobacz też
 

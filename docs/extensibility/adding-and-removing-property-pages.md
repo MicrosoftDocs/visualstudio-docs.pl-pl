@@ -1,9 +1,6 @@
 ---
 title: Dodawanie i usuwanie stron właściwości | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e88154f2ea979f69ad8fd2f578282a0b24667a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885320"
 ---
 # <a name="add-and-remove-property-pages"></a>Dodawanie i usuwanie stron właściwości
 W Projektancie projektu stanowi centralną lokalizację służącą do zarządzania właściwości projektu, ustawień i zasobów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Będzie ono wyświetlane jako jednego okna w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko projektowe (IDE) i zawiera szereg okienka po prawej stronie, które są dostępne za pośrednictwem na kartach po lewej stronie. Okienka (często określanymi jako strony właściwości) w Projektancie projektu zależą od typu projektu i język. W Projektancie projektu jest możliwy za pomocą **właściwości** polecenie **projektu** menu.  

@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 714e38e6bf0ca97e683eda6e5cd6303b9f1160fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875274"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Instrukcje: Analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
 Wyświetl aktywność wirtualnego użytkownika skojarzonego z testu obciążenia przy użyciu **wykres aktywności wirtualnych użytkowników**. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. **Wykres aktywności wirtualnych użytkowników** dowiesz się, dokładnie co każdy użytkownik wirtualny był wykonywany podczas testu. Można widać wzorce aktywności użytkowników, wzorce obciążenia, korelowanie testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. **Wykres aktywności wirtualnych użytkowników** jest dostępna tylko w przypadku, po zakończeniu testu obciążenia.
 
@@ -108,4 +107,4 @@ Poniższe procedury pokazują, jak wyświetlić **wykres aktywności wirtualnych
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Przewodnik: Używanie wykresu aktywności wirtualnego użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Przewodnik: Za pomocą wykresu aktywności wirtualnego użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

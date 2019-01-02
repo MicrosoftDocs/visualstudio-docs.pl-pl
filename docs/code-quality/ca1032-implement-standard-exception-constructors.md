@@ -1,8 +1,7 @@
 ---
-title: 'CA1032: Implementowanie standardowych konstruktorów wyjątków'
+title: 'CA1032: Zaimplementuj standardowe konstruktory wyjątku'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1032
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6cd6922cae5e2d182a279e2d1637a19f8572468
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c0a9439150602bdb3f84f9a82aacac39dc2e9517
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881234"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementowanie standardowych konstruktorów wyjątków
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Zaimplementuj standardowe konstruktory wyjątku
 
 |||
 |-|-|
@@ -34,37 +33,37 @@ ms.locfileid: "34454755"
 
 ## <a name="cause"></a>Przyczyna
 
-Rozszerza typ <xref:System.Exception?displayProperty=fullName> , ale nie zadeklarować wszystkie wymagane konstruktorów.
+Rozszerza typ <xref:System.Exception?displayProperty=fullName> , ale nie deklaruje wymagane konstruktorów.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Typy wyjątków musi implementować następujące trzy konstruktory:
+Typy wyjątków należy zaimplementować następujące trzy konstruktory:
 
 - NewException() publiczne
 
 - NewException(string) publiczne
 
-- publiczny NewException (ciąg, wyjątków)
+- publiczne NewException (ciąg, wyjątku)
 
-Ponadto, jeśli używasz starszej wersji programu FxCop statycznej analizy kodu jako przeciwieństwie do [analizatorów FxCop na podstawie Roslyn](../code-quality/roslyn-analyzers-overview.md), brak konstruktora czwarty generuje również naruszenie:
+Ponadto, jeśli używasz starszej wersji programu FxCop statycznej analizy kodu jako przeciwieństwie do [analizatory FxCop analizujące kod z oparte na programie Roslyn](../code-quality/roslyn-analyzers-overview.md), braku czwarty Konstruktor generuje również naruszenie zasad:
 
 - NewException chroniona lub prywatnej (SerializationInfo, StreamingContext)
 
-Niepowodzenie podczas dostarczenia pełnego zestawu konstruktorów może utrudnić poprawną obsługę wyjątków. Na przykład konstruktora, który ma podpis `NewException(string, Exception)` służy do tworzenia wyjątki, które są spowodowane przez inne wyjątki. Bez tego konstruktora nie można utworzyć i throw wystąpienia niestandardowego wyjątku, który zawiera wewnętrzny wyjątek (zagnieżdżonych), czyli w takiej sytuacji należy wykonać, jakie kodu zarządzanego.
+Niepowodzenie podczas dostarczenia pełnego zestawu konstruktorów może utrudnić poprawną obsługę wyjątków. Na przykład konstruktora, który ma podpis `NewException(string, Exception)` służy do tworzenia wyjątków, które są spowodowane przez inne wyjątki. Bez tego konstruktora nie można utworzyć i zgłosić wystąpienie usługi niestandardowy wyjątek, który zawiera wewnętrzny wyjątek (zagnieżdżona), czyli jakich kodu zarządzanego, należy wykonać w takiej sytuacji.
 
-Pierwszy konstruktorów wyjątków trzy są publicznie udostępniane przez Konwencję. Konstruktor czwarty jest chroniona w niezapieczętowanych klas i prywatny w klasie zapieczętowanej. Aby uzyskać więcej informacji, zobacz [CA2229: zaimplementować konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
+Pierwsze konstruktory wyjątku trzech są publiczne przez Konwencję. Czwarty Konstruktor jest chronione niezapieczętowanych klas i prywatny w klasach zapieczętowanych. Aby uzyskać więcej informacji, zobacz [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
 
-## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, Dodaj brakujące konstruktory wyjątek i upewnij się, że poprawne ułatwień dostępu.
+Aby naprawić naruszenie tej zasady, Dodaj brakujące konstruktory wyjątek i upewnij się, że poprawne ułatwień dostępu.
 
-## <a name="when-to-suppress-warnings"></a>Kiedy pomijanie ostrzeżeń
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest to bezpieczne Pomiń ostrzeżenie od tej reguły, gdy naruszenie jest spowodowany przy użyciu poziomu dostępu różnych dla konstruktorów publicznych. Ponadto jest poprawny w celu pominięcia ostrzeżenia dla `NewException(SerializationInfo, StreamingContext)` konstruktora, jeśli tworzysz przenośnej biblioteki klas (PCL).
+Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli naruszenie jest spowodowany przez przy użyciu poziomu różny dostęp dla konstruktorów publicznych. Ponadto nie szkodzi pominąć ostrzeżenie dotyczące `NewException(SerializationInfo, StreamingContext)` konstruktora, jeśli tworzysz biblioteki klas przenośnych (PCL).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład zawiera typ wyjątku, który narusza tę regułę i typ wyjątku, który jest poprawnie zaimplementowana.
+Poniższy przykład zawiera typ wyjątku, który narusza tę regułę i typ wyjątku, który jest implementowana prawidłowo.
 
 [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
 

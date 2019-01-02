@@ -3,7 +3,6 @@ title: Komunikaty o błędach w Projektancie przepływu pracy
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -14,41 +13,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83cbde06b10d1201c7e69c1823714007dfa57397
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 393157c11029a36038b3fea0fa78af413d650ef3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871398"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Komunikaty o błędach w Projektancie przepływu pracy
 
-W tym temacie opisano typy komunikatów o błędach, które mogą wystąpić podczas pracy z projektanta przepływów pracy.
+W tym temacie opisano rodzaje komunikatów o błędach, które można napotkać podczas pracy z projektanta przepływów pracy.
 
-## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Sytuacje, w których występują błędy w Projektancie przepływów pracy
+## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Sytuacje, w których występują błędy w Projektancie przepływu pracy
 
-Błędy w Projektancie przepływów pracy wystąpić w następujących sytuacjach:
+W Projektancie przepływu pracy błędów w następujących sytuacjach:
 
 1.  Istnieje błąd w wyrażeniu.
 
 2.  Ograniczenia sprawdzania poprawności działania nie zostały spełnione.
 
-3.  Wystąpiły błędy w pliku XAML, które powodują działanie, aby nie można załadować.
+3.  Wystąpiły błędy w pliku XAML, które powodują działania nie można załadować.
 
-4.  Wystąpiły błędy w pliku XAML, które powodują uruchomienie przepływu pracy nie można załadować.
+4.  Wystąpiły błędy w pliku XAML, które powodują nie można załadować przepływu pracy.
 
-Nieprawidłowy wyrażeń i ograniczenia walidacji niezadowolony nie powodują uruchomienie przepływu pracy nie można utworzyć. Tworzenie przepływu pracy zakończy się powodzeniem, ale <xref:System.Activities.InvalidWorkflowException> jest zgłaszany w czasie wykonywania. Jeśli wystąpią błędy w pliku XAML, kompilacja kończy się niepowodzeniem.
+Nieprawidłowa wyrażeń i ograniczeń walidacji niezadowolony nie powodują przepływ pracy, aby kompilacja się nie powieść. Tworzenie przepływu pracy zakończy się powodzeniem, ale <xref:System.Activities.InvalidWorkflowException> jest generowany w czasie wykonywania. Jeśli występują błędy w pliku XAML, kompilacja kończy się niepowodzeniem.
 
-W programie Visual Studio, gdy przepływ pracy został załadowany, jego błędy są wyświetlane w **listy błędów**. Aby przejść do działania, który jest źródłem błąd, kliknij dwukrotnie ten błąd w **listy błędów**.
+W programie Visual Studio, gdy przepływ pracy jest ładowany, jego błędy są wyświetlane w **lista błędów**. Aby przejść do działania, który jest źródłem błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów**.
 
-### <a name="expression-errors"></a>Błędy wyrażenia
- Nieprawidłowe wyrażenie jest oznaczona czerwone koło z białym znakiem wykrzyknika, obok wyrażenia. Ustawiając kursor nad ikonę Wyświetla etykietki narzędzia, opisujący przyczynę błędu. W programie Visual Studio kliknij przycisk wyrażenia, aby wyświetlić wiersz podkreśla źródła błędu. Ustawiając kursor nad Wyświetla linie tekst etykietki narzędzia, opisujący przyczynę błędu.
+### <a name="expression-errors"></a>Wyrażenie błędy
+ Nieprawidłowe wyrażenie jest wskazywane przez czerwone kółko z białym wykrzyknika, obok wyrażenia. Przenosząc kursor myszy nad tą ikoną, wyświetla etykietkę narzędzia, która opisuje przyczynę błędu. W programie Visual Studio kliknij przycisk wyrażenia, aby wyświetlić wiersz, który podkreśla źródła błędu. Kursor Wyświetla linie tekstu etykietki narzędzia, która opisuje przyczynę błędu.
 
 ### <a name="activity-validation-errors"></a>Błędy sprawdzania poprawności działania
- Gdy ograniczenia sprawdzania poprawności działania nie zostały spełnione, w prawym górnym rogu działania pojawi się czerwone kółko z białym znakiem wykrzyknika. Ustawiając kursor nad ikonę Wyświetla etykietki narzędzia, opisujący przyczynę błędu.
+ Gdy ograniczenia sprawdzania poprawności działania nie zostały spełnione, w prawym górnym rogu działania pojawi się czerwone kółko z białym wykrzyknika. Przenosząc kursor myszy nad tą ikoną, wyświetla etykietkę narzędzia, która opisuje przyczynę błędu.
 
 ### <a name="xaml-load-errors"></a>Błędy ładowania XAML
- Gdy działanie nie można załadować, z tekstem "działania nie można załadować z powodu błędów w kodzie XAML" wyświetlony. Ten błąd zazwyczaj występuje, gdy nie można rozpoznać typu działania. Nieprawidłowe działanie mogą zostać usunięte w projektancie, wybierając czerwonym prostokątem i usunięcie go.
+ Gdy działanie nie powiodło się ładowanie, zostanie wyświetlone okno z czerwoną, z tekstem "nie można załadować działania z powodu błędów w XAML". Dzieje się tak zazwyczaj, gdy nie można rozpoznać typu działania. Nieprawidłowe działanie można usunąć w projektancie, wybierając czerwoną otoczkę i usunięcie go.
 
 ### <a name="workflow-load-errors"></a>Błędy ładowania przepływu pracy
- Gdy przepływ pracy nie można załadować, tekst "Projektanta przepływów pracy napotkał problemy z danym dokumentem" pojawia się na powierzchni projektowej oraz informacje o wyjątku, który spowodował błąd przepływu pracy do załadowania. Ten błąd zazwyczaj występuje, gdy nie można przeanalizować pliku XAML.
+ Gdy przepływ pracy nie można załadować, tekst "Projektanta przepływów pracy napotkał problemy z dokumentu" pojawia się na powierzchni projektowej oraz informacje o wyjątku, który spowodował awarię przepływu pracy do załadowania. Dzieje się tak zazwyczaj, gdy nie można przeanalizować pliku XAML.

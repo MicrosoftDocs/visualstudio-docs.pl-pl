@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Dodawanie pliku zasobu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodaj plik zasobów | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e21aefb95dab4b4a6fdc852159c7a0f226e613f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877630"
 ---
-# <a name="how-to-add-a-resource-file"></a>Porady: Dodawanie pliku zasobu
+# <a name="how-to-add-a-resource-file"></a>Instrukcje: Dodawanie pliku zasobu
   Polecenia służące do dodawania plików zasobów znajduje się w menu skrótów dla węzła rozwiązania i funkcja węzły w Eksploratorze rozwiązań. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint lokalizowanie](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Aby dodać plik globalnych zasobów do rozwiązania programu SharePoint  
@@ -57,5 +52,3 @@ ms.locfileid: "49861192"
   
 ## <a name="see-also"></a>Zobacz także
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

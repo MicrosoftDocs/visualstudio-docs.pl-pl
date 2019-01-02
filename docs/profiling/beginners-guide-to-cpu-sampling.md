@@ -2,7 +2,6 @@
 title: Przewodnik dla początkujących próbkowania Procesora
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29ef34a15591a87b7eeb70e204f58329c8c55838
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5b58d0ac6746f68fff107c25152f7a897c8df2e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892108"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowania Procesora
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **próbkowania** danych.
@@ -33,10 +32,10 @@ Za pomocą programu Visual Studio profiling tools do analizowania problemów z w
   
  W określonych odstępach czasu **próbkowania** metoda zbiera informacje o funkcjach, które są wykonywane w aplikacji. Po zakończeniu przebiegu profilowania **Podsumowanie** widok profilowania danych zawiera drzewo wywołań najbardziej aktywnych funkcji o nazwie **ścieżka aktywna**, gdzie większość pracy w aplikacji zostało wykonane. Widok również Wyświetla listę funkcji, które wykonywały najbardziej indywidualną pracę i zawiera wykres osi czasu, w którym można skupić się na poszczególnych segmentach sesji pobierania próbek.  
   
- Jeśli **próbkowania** nie oferują danych, których potrzebują, innych metod profilowania kolekcji tools zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. Aby uzyskać więcej informacji o tych innych metodach, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
+ Jeśli **próbkowania** nie oferują danych, których potrzebują, innych metod profilowania kolekcji tools zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. Aby uzyskać więcej informacji o tych innych metodach, zobacz [jak: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Jeśli profilowany kod wywołuje funkcje Windows, należy upewnić się, że najbardziej aktualnej. *pdb* plików. Bez tych plików widok raportu wyświetli listę nazw funkcji Windows, które są tajemnicze i trudne do zrozumienia. Aby uzyskać więcej informacji na temat upewnij się, że pliki potrzebne Ci zobacz [jak: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Jeśli profilowany kod wywołuje funkcje Windows, należy upewnić się, że najbardziej aktualnej. *pdb* plików. Bez tych plików widok raportu wyświetli listę nazw funkcji Windows, które są tajemnicze i trudne do zrozumienia. Aby uzyskać więcej informacji na temat upewnij się, że pliki potrzebne Ci zobacz [jak: Odwoływać się do informacji o symbolach Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="create-and-run-a-performance-session"></a>Tworzenie i uruchamianie sesji wydajności  
  Aby uzyskać dane potrzebne do analizowania, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesji. **Kreatora wydajności** pozwala wykonać obie czynności.  
@@ -64,12 +63,12 @@ Za pomocą programu Visual Studio profiling tools do analizowania problemów z w
   
      Po zakończeniu działania aplikacji, **Podsumowanie** widok danych profilowania pojawia się w głównym oknie programu Visual Studio i pojawi się ikona nowej sesji w **Eksplorator wydajności** okna.  
   
-## <a name="step-2-analyze-sampling-data"></a>Krok 2: Analizowanie danych próbkowania  
+## <a name="step-2-analyze-sampling-data"></a>Krok 2. Analizowanie danych próbkowania  
  Po zakończeniu pracy z sesją wydajności **Podsumowanie** widok raportu profilowania pojawia się w głównym oknie programu Visual Studio.  
   
  Zaleca się rozpocząć analizowanie danych, sprawdzając **ścieżka aktywna** , a następnie listy funkcji, które wykonują najwięcej pracy i ostatecznie przez skupienie się na inne funkcje za pomocą **podsumowania osi czasu** . Można również wyświetlać sugestie profilowania i ostrzeżenia w **lista błędów** okna.  
   
- Należy pamiętać, że metoda pobierania próbek może nie dać użytkownikowi potrzebnych informacji. Na przykład próbki są pobierane tylko wtedy, gdy aplikacja wykonuje kod w trybie użytkownika. W związku z tym niektóre funkcje, takie jak operacje wejścia i wyjścia, nie są przechwytywane przez pobieranie próbek. Narzędzia profilowania zapewniają kilka metod zbierania, które umożliwiają skupić się na ważnych danych. Aby uzyskać więcej informacji o innych metodach, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
+ Należy pamiętać, że metoda pobierania próbek może nie dać użytkownikowi potrzebnych informacji. Na przykład próbki są pobierane tylko wtedy, gdy aplikacja wykonuje kod w trybie użytkownika. W związku z tym niektóre funkcje, takie jak operacje wejścia i wyjścia, nie są przechwytywane przez pobieranie próbek. Narzędzia profilowania zapewniają kilka metod zbierania, które umożliwiają skupić się na ważnych danych. Aby uzyskać więcej informacji o innych metodach, zobacz [jak: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
   
  Każdy ponumerowany obszar na rysunku dotyczy kroku procedury.  
   
@@ -109,7 +108,7 @@ Za pomocą programu Visual Studio profiling tools do analizowania problemów z w
   
     -   Aby wyświetlić szczegółowe informacje na temat ostrzeżenia, kliknij prawym przyciskiem myszy błąd, a następnie kliknij przycisk **Pokaż Pomoc błędu**  
   
-## <a name="step-3-revise-code-and-rerun-a-session"></a>Krok 3: Poprawa kodu i ponowne uruchomienie sesji  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Krok 3. Poprawa kodu i ponowne uruchomienie sesji  
  Po znalezieniu i zoptymalizowaniu jednej lub więcej funkcji, można powtórzyć uruchomienie profilowania i porównać dane, aby wyświetlić tą różnicą, że wprowadzono zmiany wydajności aplikacji.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Aby poprawić kod i uruchomić ponownie program profiler  
@@ -122,7 +121,7 @@ Za pomocą programu Visual Studio profiling tools do analizowania problemów z w
   
 4.  Po ponownym uruchomieniu sesji inny plik danych jest dodawany do *raporty* folder dla sesji w **Eksplorator wydajności**. Wybierz zarówno oryginał, a nowe dane profilowania, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **Porównaj wydajność raportów**.  
   
-     Zostanie otwarte nowe okno raportu, wyświetlające wyniki porównania. Aby uzyskać więcej informacji na temat sposobu korzystania z widoku porównania, zobacz [porady: porównywanie plików danych dotyczących wydajności](../profiling/how-to-compare-performance-data-files.md).
+     Zostanie otwarte nowe okno raportu, wyświetlające wyniki porównania. Aby uzyskać więcej informacji na temat sposobu korzystania z widoku porównania, zobacz [jak: Porównywanie plików danych dotyczących wydajności](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   

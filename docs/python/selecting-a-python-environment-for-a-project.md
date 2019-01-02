@@ -3,7 +3,6 @@ title: Wybierz interpreter języka Python i środowiska dla projektu
 description: Musisz wybrać środowisko Python, w tym Anaconda i środowisk wirtualnych, aby zastosować do określonego projektu.
 ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879361"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Jak wybrać środowisko Python dla projektu
 
@@ -115,7 +114,7 @@ Należy pamiętać, że wyświetlane wpisy nie zawsze są dokładne i instalowan
 Też pamiętać, że program Visual Studio nie obecnie obsługuje `conda` zainstalować pakiety do środowiska conda. Użyj `conda` polecenia zamiast tego wiersza.
 
 > [!Tip]
-> Typowe sytuacji, w którym pip kończy się niepowodzeniem do zainstalowania pakietu jest, gdy pakiet zawiera kod źródłowy składnikami macierzystymi w  *\*.pyd* plików. Bez wymaganą wersję zainstalowanego programu Visual Studio narzędzia pip, nie można skompilować tych składników. Komunikat o błędzie wyświetlany w takiej sytuacji **błąd: nie można odnaleźć vcvarsall.bat**. `easy_install` często jest w stanie pobrać wstępnie skompilowanych plików binarnych, możesz również pobrać odpowiedni kompilatora dla starszych wersji języka Python z [ https://aka.ms/VCPython27 ](https://aka.ms/VCPython27). Aby uzyskać więcej informacji, zobacz [radzenia sobie z problemów z "nie można odnaleźć vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) na Python tools blog zespołu.
+> Typowe sytuacji, w którym pip kończy się niepowodzeniem do zainstalowania pakietu jest, gdy pakiet zawiera kod źródłowy składnikami macierzystymi w  *\*.pyd* plików. Bez wymaganą wersję zainstalowanego programu Visual Studio narzędzia pip, nie można skompilować tych składników. Komunikat o błędzie wyświetlany w takiej sytuacji **błąd: Nie można odnaleźć vcvarsall.bat**. `easy_install` często jest w stanie pobrać wstępnie skompilowanych plików binarnych, możesz również pobrać odpowiedni kompilatora dla starszych wersji języka Python z [ https://aka.ms/VCPython27 ](https://aka.ms/VCPython27). Aby uzyskać więcej informacji, zobacz [radzenia sobie z problemów z "nie można odnaleźć vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) na Python tools blog zespołu.
 
 ## <a name="see-also"></a>Zobacz także
 

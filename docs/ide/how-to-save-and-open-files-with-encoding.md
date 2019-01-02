@@ -1,8 +1,7 @@
 ---
-title: 'Porady: zapisywanie i otwieranie kodowanych plików'
+title: 'Instrukcje: Zapisywanie i otwieranie plików z zastosowaniem kodowania'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
@@ -15,20 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6298e603589d41a6a082b6fe2c1916b3cf8a2a84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38d52cdee3ee0f6ccbdd378e4fb70e356d5826c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869573"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Porady: zapisywanie i otwieranie kodowanych plików
+# <a name="how-to-save-and-open-files-with-encoding"></a>Instrukcje: Zapisywanie i otwieranie plików z zastosowaniem kodowania
 
-Pliki można zapisywać znakiem określonego kodowania w celu włączenia obsługi języków dwukierunkowych. Można również określić kodowania podczas otwierania pliku, tak, aby poprawnie Wyświetla plik programu Visual Studio.
+Pliki można zapisać przy użyciu określonych znaków kodowania w celu włączenia obsługi języków dwukierunkowych. Można również określić kodowanie podczas otwierania pliku, tak aby program Visual Studio Wyświetla plik poprawnie.
 
 ## <a name="to-save-a-file-with-encoding"></a>Aby zapisać plik z kodowaniem
 
-1.  Z **pliku** menu, wybierz **Zapisz plik jako**, a następnie kliknij przycisk listy rozwijanej obok pola **zapisać** przycisku.
+1.  Z **pliku** menu, wybierz **Zapisz plik jako**, a następnie kliknij przycisk listy rozwijanej obok pola **Zapisz** przycisku.
 
      **Zaawansowane opcje zapisywania** zostanie wyświetlone okno dialogowe.
 
@@ -36,30 +35,30 @@ Pliki można zapisywać znakiem określonego kodowania w celu włączenia obsłu
 
 3.  Opcjonalnie w obszarze **zakończenia wierszy**, wybierz format znaki końca wiersza.
 
-     Ta opcja jest przydatna, jeśli zamierzasz wymiany pliku z użytkowników z poziomu innego systemu operacyjnego.
+     Ta opcja jest przydatna, jeśli zamierzasz wymiany plików z użytkownicy systemów operacyjnych.
 
-     Jeśli chcesz pracować z plikiem, który znasz jest zakodowany w określony sposób można stwierdzić, Visual Studio, aby użyć kodowania podczas otwierania pliku. Używanej metody zależy od tego, czy plik jest częścią projektu.
+     Jeśli chcesz pracować z pliku, który został zakodowany w określony sposób można stwierdzić, Visual Studio, aby użyć kodowania podczas otwierania pliku. Metody, których używasz, zależy od tego, czy plik jest częścią projektu.
 
-## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Aby otworzyć zakodowany plik, który jest częścią projektu
+## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Aby otworzyć plik zakodowany, który jest częścią projektu
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik i wybierz opcję **Otwórz za pomocą**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik i wybierz **Otwórz za pomocą**.
 
 2.  W **Otwórz za pomocą** okno dialogowe, wybierz Otwórz plik w edytorze.
 
-     Wiele edytorów Visual Studio, takich jak edytor formularzy Autowykrywanie kodowania, a następnie otwórz plik odpowiednio. Jeśli wybierzesz edytor, który umożliwia wybranie kodowania, **kodowanie** zostanie wyświetlone okno dialogowe.
+     Wiele edytorów programu Visual Studio, takich jak edytor formularzy spowoduje automatyczne wykrywanie kodowania i Otwórz plik odpowiednio. Jeśli wybierzesz Edytor który pozwala wybrać kodowanie **kodowanie** zostanie wyświetlone okno dialogowe.
 
-3.  W **kodowanie** oknie dialogowym Wybierz kodowanie, które powinny być używane w edytorze.
+3.  W **kodowanie** okna dialogowego Wybierz kodowanie, który ma być używany w edytorze.
 
-## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Aby otworzyć zakodowany plik, który nie jest częścią projektu
+## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Aby otworzyć plik zakodowany, który nie jest częścią projektu
 
-1.  Na **pliku** menu wskaż **Otwórz**, wybierz **pliku** lub **plik z sieci Web**, a następnie wybierz plik, aby otworzyć.
+1.  Na **pliku** menu wskaż **Otwórz**, wybierz **pliku** lub **plik z sieci Web**, a następnie wybierz plik aby otworzyć.
 
-2.  Kliknij przycisk listy rozwijanej obok pola **Otwórz** przycisk i wybierz polecenie **Otwórz za pomocą**.
+2.  Kliknij przycisk listy rozwijanej obok pozycji **Otwórz** przycisk, a następnie wybierz **Otwórz za pomocą**.
 
-3.  Wykonaj kroki 2 i 3 w poprzedniej procedurze.
+3.  Wykonaj kroki 2 i 3 poprzedniej procedury.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kodowanie i linii podziału](encodings-and-line-breaks.md)
-- [Globalizacja kodowanie i formularze systemu Windows](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)
-- [Globalize i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)
+- [Kodowanie i linia podziału](encodings-and-line-breaks.md)
+- [Globalizacja formularzy Windows i kodowanie](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)
+- [Sprzedawać i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

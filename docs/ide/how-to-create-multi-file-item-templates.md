@@ -2,7 +2,6 @@
 title: Tworzenie szablonów elementów wielu plików
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -11,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd2cbe6d7a0ff586c0e673a6eb0e3d42aa4dec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877656"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Porady: Tworzenie szablonów elementów wielu plików
+# <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów obejmujących wiele plików
 
 Szablony elementów może określić tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularze Windows wymaga następujących trzech plików:
 
@@ -32,7 +31,7 @@ Szablony elementów wielu plików wymagane parametry, aby upewnić się, że roz
 
 ## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Aby utworzyć szablon elementów wielu plików za pomocą Kreatora eksportowania szablonu
 
-Można utworzyć szablon elementów wielu plików w taki sam sposób, jak szablon elementu pojedynczego pliku. Zobacz [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md). Na **wybierz element do eksportowania** strony kreatora, wybierz plik, który zawiera pliki zależne (na przykład plik formularzy Windows Forms). W kreatorze są automatycznie dostępne pliki zależne, takie jak projektant i pliki zasobów w szablonie.
+Można utworzyć szablon elementów wielu plików w taki sam sposób, jak szablon elementu pojedynczego pliku. Zobacz [jak: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md). Na **wybierz element do eksportowania** strony kreatora, wybierz plik, który zawiera pliki zależne (na przykład plik formularzy Windows Forms). W kreatorze są automatycznie dostępne pliki zależne, takie jak projektant i pliki zasobów w szablonie.
 
 ## <a name="to-manually-create-a-multi-file-item-template"></a>Ręczne tworzenie szablonów elementów wielu plików
 
@@ -59,7 +58,7 @@ Można utworzyć szablon elementów wielu plików w taki sam sposób, jak szablo
 
    Wybrane pliki są kompresowane do *zip* pliku.
 
-1. Kopiuj *zip* plik do lokalizacji szablonów elementów użytkownika. Domyślnie katalog znajduje się *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Kopiuj *zip* plik do lokalizacji szablonów elementów użytkownika. Domyślnie katalog znajduje się *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Zamknij program Visual Studio, a następnie otwórz go ponownie.
 
@@ -97,6 +96,6 @@ Poniższy przykład przedstawia szablon Windows Forms. Gdy element zostanie utwo
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
+- [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)
-- [Instrukcje: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Instrukcje: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md)

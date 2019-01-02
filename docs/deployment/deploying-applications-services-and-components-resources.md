@@ -2,7 +2,6 @@
 title: Omówienie wdrażania | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d578dcf3702b340adcbef36002b64b20f65a5c73
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 4af052f2851e8fa79e60d57aa771d914b3aa2fdd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888156"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Omówienie wdrażania w programie Visual Studio
 

@@ -1,8 +1,6 @@
 ---
 title: Znaczniki CONCURRENCY Visualizer | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf07f939a9ce15d2ebca7afb0ee37695fa5fbf98
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 1eaccebb5b2a70be545b44615c38a9bd95ce610b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885708"
 ---
 # <a name="concurrency-visualizer-markers"></a>Znaczniki CONCURRENCY Visualizer
 W Wizualizatorze współbieżności znaczniki są ikon reprezentujących zdarzenia w aplikacji.  Zazwyczaj aplikacja wygeneruje tych zdarzeń do wyznaczenia fazy lub wystąpień w aplikacji.  Zdarzenia mogą być generowane przez aplikację lub bibliotek i środowisk wykonawczych, przez aplikację.  

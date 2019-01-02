@@ -1,8 +1,6 @@
 ---
 title: Publikowanie w usłudze App Service w systemie Linux
-ms.custom: ''
 ms.date: 07/23/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 6bec894c6968498c185364e917904295f76422a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873783"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji platformy ASP.NET Core w usłudze App Service w systemie Linux przy użyciu programu Visual Studio
 
@@ -42,7 +40,7 @@ Wdrażanie w usłudze App Service w systemie Linux przy użyciu **Publikuj** nar
 
     ![Utwórz usługę App Service](../deployment/media/quickstart-publish-settings-app-service-linux.png "Tworzenie usługi Azure App Service")
 
-1. Wybierz **tworzenie**. Program Visual Studio wdroży aplikację do usługi Azure App Service i ładowania aplikacji sieci web w przeglądarce. Właściwości projektu **Publikuj** okienko zawiera adres URL witryny oraz inne szczegóły.
+1. Wybierz pozycję **Utwórz**. Program Visual Studio wdroży aplikację do usługi Azure App Service i ładowania aplikacji sieci web w przeglądarce. Właściwości projektu **Publikuj** okienko zawiera adres URL witryny oraz inne szczegóły.
 
     ![Okienko właściwości wyświetlanie podsumowania profil publikowania](../deployment/media/quickstart-publish-app-service-summary.png)
 

@@ -2,7 +2,6 @@
 title: Polecenia nawigacji kodu
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877435"
 ---
 # <a name="navigate-code"></a>Przechodzenie do kodu
 
@@ -78,19 +77,19 @@ Po kliknięciu symbolu w kodzie źródłowym, wszystkie wystąpienia tego symbol
 
 Przejdź do zawiera następujące polecenia, które są dostępne w **Edytuj** menu w obszarze **przejdź do**:
 
-- **Przejdź do wiersza** (**Ctrl**+**G**): przenoszenie do wiersza o określonym numerze w aktywnym dokumencie.
+- **Przejdź do wiersza** (**Ctrl**+**G**): Przenieś do wiersza o określonym numerze w aktywnym dokumencie.
 
-- **Przejdź do wszystkich** (**Ctrl**+**T** lub **Ctrl**+**,**): Przejdź do określonego wiersza typu plik, składnika lub symbol.
+- **Przejdź do wszystkich** (**Ctrl**+**T** lub **Ctrl**+**,**): Przenieś do określonego wiersza, typu, plik, składnika lub symbol.
 
-- **Przejdź do pliku** (**Ctrl**+**1**, **Ctrl**+**F**): przenoszenie do określonego pliku w rozwiązanie.
+- **Przejdź do pliku** (**Ctrl**+**1**, **Ctrl**+**F**): Przenieś do określonego pliku w rozwiązaniu.
 
-- **Przejdź do pliku ostatnie** (**Ctrl**+**1**, **Ctrl**+**R**): przenoszenie określony, ostatnio odwiedzone plik rozwiązania (nowy w programie Visual Studio 2017 wersja 15.8).
+- **Przejdź do niedawno używany plik** (**Ctrl**+**1**, **Ctrl**+**R**): Przenieś plik określony, przechodź do ostatnio wyświetlanych w rozwiązaniu (nowe w programie Visual Studio 2017 wersja 15.8).
 
-- **Przejdź do typu** (**Ctrl**+**1**, **Ctrl**+**T**): przenoszenie do określonego typu w rozwiązanie.
+- **Przejdź do typu** (**Ctrl**+**1**, **Ctrl**+**T**): Przejście do określonego typu w rozwiązaniu.
 
-- **Przejdź do elementu członkowskiego** (**Ctrl**+**1**, **Ctrl**+**M**): przenoszenie do określonego elementu członkowskiego w rozwiązanie.
+- **Przejdź do elementu członkowskiego** (**Ctrl**+**1**, **Ctrl**+**M**): Przejście do określonego elementu członkowskiego w rozwiązaniu.
 
-- **Przejdź do symbolu** (**Ctrl**+**1**, **Ctrl**+**S**): przenoszenie do określonego symbolu w rozwiązanie.
+- **Przejdź do symbolu** (**Ctrl**+**1**, **Ctrl**+**S**): Przejście do określonego symbolu w rozwiązaniu.
 
 W Visual Studio 2017 w wersji, należy zachować 15,8 lub nowszą wersją, następujące **przejdź do** nawigacji nie są również dostępne polecenia:
 
@@ -111,7 +110,7 @@ Dane wejściowe | Funkcja
 
 ## <a name="peek-definition"></a>Zobacz definicję
 
-Definicja zaznaczonego elementu w oknie wglądu Wyświetla definicji bez przechodzenia poza bieżącą lokalizację w edytorze kodu. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) i [przejdź do definicji i zobacz definicję](../ide/go-to-and-peek-definition.md).
+Definicja zaznaczonego elementu w oknie wglądu Wyświetla definicji bez przechodzenia poza bieżącą lokalizację w edytorze kodu. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) i [przejdź do definicji i zobacz definicję](../ide/go-to-and-peek-definition.md).
 
 Dane wejściowe | Funkcja
 ------------ | ---
@@ -150,7 +149,7 @@ Aby wyłączyć linie prowadnic struktury, przejdź do **narzędzia** > **opcje*
 
 ## <a name="enhanced-scroll-bar"></a>Rozszerzonego paska przewijania
 
-Aby uzyskać ogólny widok kodu, można użyć rozszerzonego paska przewijania w oknie kodu. W trybie mapy widać podglądy kodu podczas przesuwania kursora w górę i w dół na pasku przewijania. Aby uzyskać więcej informacji, zobacz [porady: śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Aby uzyskać ogólny widok kodu, można użyć rozszerzonego paska przewijania w oknie kodu. W trybie mapy widać podglądy kodu podczas przesuwania kursora w górę i w dół na pasku przewijania. Aby uzyskać więcej informacji, zobacz [jak: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informacje o funkcji CodeLens
 

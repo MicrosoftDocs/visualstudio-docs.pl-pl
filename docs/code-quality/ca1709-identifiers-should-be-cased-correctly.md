@@ -1,8 +1,7 @@
 ---
-title: 'CA1709: Identyfikatory powinny być zapisywane z uwzględnieniem wielkości liter'
+title: 'CA1709: Identyfikatory powinny mieć prawidłową wielkość liter'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881730"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identyfikatory powinny być zapisywane z uwzględnieniem wielkości liter
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identyfikatory powinny mieć prawidłową wielkość liter
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ ms.locfileid: "49891352"
 
  Ta zasada dzieli nazwę w oparciu o wielkość liter w wyrazie wyrazy i sprawdza, czy wszystkie wyrazy dwuliterowych z listą popularne wyrazy dwuliterowych, takie jak "In" lub "Moje". Jeśli nie zostanie znalezione dopasowanie, wyraz zakłada się, że akronim. Ponadto ta reguła zakłada, że znalazł akronim, gdy nazwa zawiera cztery wielkich liter w wierszu albo trzy wielkich liter w wierszu na końcu nazwy.
 
- Zgodnie z Konwencją skrótów dwuliterowych Użyj wielkie litery, a akronimów trzech lub więcej znaków Użyj Pascal wielkość liter w wyrazie. W poniższych przykładach używane tę konwencję nazewnictwa: "DB", "CR", "Cpa" i "Ecma". Poniższe przykłady naruszają Konwencji: "We/wy", "XML" i "DoD" i nazw innych parametrów, "xp" i "Panel sterowania".
+ Zgodnie z Konwencją skrótów dwuliterowych Użyj wielkie litery, a akronimów trzech lub więcej znaków Użyj Pascal wielkość liter w wyrazie. W poniższych przykładach używane jest następująca Konwencja nazewnictwa: "DB", "CR", "Cpa" i "Ecma". Poniższe przykłady naruszają Konwencji: "We/wy", "XML" i "DoD", a w przypadku nazw innych parametrów, "xp" i "Panel sterowania".
 
  'Identyfikator' to specjalny — z uwzględnieniem wielkości liter spowodować naruszenie tej zasady. 'Identyfikator' nie jest akronim, ale stanowi skrót od "Identyfikacja".
 
@@ -60,7 +59,7 @@ ms.locfileid: "49891352"
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jest bezpieczne pominąć to ostrzeżenie, jeśli masz konwencje nazewnictwa, czy identyfikator reprezentuje nazwę odpowiedniego, na przykład nazwę firmy lub technologii.
 
- Można również dodać konkretne terminy, skrótów i akronimów ją do niestandardowego słownika analizy kodu. Terminem do słownika nie spowoduje naruszenie tej zasady. Aby uzyskać więcej informacji, zobacz [porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Można również dodać konkretne terminy, skrótów i akronimów ją do niestandardowego słownika analizy kodu. Terminem do słownika nie spowoduje naruszenie tej zasady. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

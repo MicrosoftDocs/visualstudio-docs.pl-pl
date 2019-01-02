@@ -1,9 +1,6 @@
 ---
 title: Funkcja SccGetVersion | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b997f3724dc3d1bb0f9155f3b575fef3ce9f2802
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879630"
 ---
-# <a name="sccgetversion-function"></a>Funkcja SccGetVersion
-Ta funkcja pobiera numer wersji API dodatku typu Plug-in kontroli źródła obsługiwane przez wtyczkę kontroli źródła.  
+# <a name="sccgetversion-function"></a>SccGetVersion, funkcja
+Ta funkcja pobiera numer wersji interfejsu API wtyczki kontroli źródła obsługiwane przez wtyczka do kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,7 +32,7 @@ LONG SccGetVersion(void);
  Brak.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- A `LONG` typu danych, która zawiera numer wersji obsługiwanych API dodatku typu Plug-in kontroli źródła:  
+ A `LONG` typu danych, który zawiera numer wersji obsługiwanych API wtyczki kontroli źródła:  
   
 |WORD|Opis|  
 |----------|-----------------|  
@@ -43,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|Wersja pomocnicza|  
   
 ## <a name="remarks"></a>Uwagi  
- Na przykład jeśli wtyczka do kontroli źródła obsługuje wersji 1.3 API dodatku typu Plug-in kontroli źródła, ta funkcja zwróci 0x0103.  
+ Na przykład jeśli wtyczka do kontroli źródła obsługuje interfejs API wtyczki kontroli źródła w wersji 1.3, ta funkcja zwróci 0x0103.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

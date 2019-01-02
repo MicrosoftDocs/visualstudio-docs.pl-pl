@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f5e6ceefbff4702d509c18b4a555287a1e9f42
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 94e052865c94d747bcb36cd81e0b1c023262b0c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875157"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Zwraca liczbę tagów wskaźnika akceleratora w funkcji stub C++ AMP.  
+Zwraca liczbę znaczników wskaźnika akceleratora w funkcji skrótową, C++ AMP.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,13 +29,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>Parametry  
  `count`  
- [out] Wskaźnik do `DWORD` przechowuje tagi wskaźnika liczbę klawiszy skrótów w funkcji stub C++ AMP.  
+ [out] Wskaźnik do `DWORD` przechowuje wskaźnik tagi liczba akceleratora w funkcji skrótową, C++ AMP.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana na `IDiaSymbol` interfejs, który odpowiada na funkcję stub akceleratora C++ AMP.  
+ Ta metoda jest wywoływana w `IDiaSymbol` interfejs, który odnosi się do funkcji klasy zastępczej akceleratora C++ AMP.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

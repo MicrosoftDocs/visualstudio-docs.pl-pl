@@ -1,9 +1,6 @@
 ---
 title: Opis współtworzenia i dodatków
-ms.custom: ''
 ms.date: 07/20/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39098a56b3ff17b1e491c15f3b6119978a28a2ca
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 62e73362a04d334027075d5c1fea9cc4c0b5d3bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871073"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Opis współtworzenia i dodatków
 
