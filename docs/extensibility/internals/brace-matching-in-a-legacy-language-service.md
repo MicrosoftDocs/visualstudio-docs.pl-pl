@@ -1,9 +1,6 @@
 ---
 title: Parowanie nawiasów klamrowych w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7564d76485fc60486a581de71a0497a1dc3e4a7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910038"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Parowanie nawiasów klamrowych w starszej wersji usługi językowej
 Parowanie nawiasów klamrowych pomaga dla deweloperów, śledzenie elementów języka, które muszą zostać wykonane ze sobą, takich jak nawiasy i nawiasy klamrowe. Gdy deweloper wprowadza zamykającego nawiasu klamrowego, jest wyróżniona otwierający nawias klamrowy.  
   
  Można dopasować do dwóch lub trzech elementów występujących w tej samej, o nazwie pary i trójek. Trójek to zestawy trzech elementów występujących w tej samej. Na przykład w języku C# `foreach` instrukcji formularzy triple: `foreach()`, `{`, i `}`. Wszystkie trzy elementy wyróżniono po wpisaniu zamykającego nawiasu klamrowego.  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania parowanie nawiasów klamrowych, zobacz [wskazówki: wyświetlanie dopasowywanie nawiasów klamrowych](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania parowanie nawiasów klamrowych, zobacz [instruktażu: Wyświetl pasujące nawiasy klamrowe](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
 >  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  

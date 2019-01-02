@@ -1,8 +1,7 @@
 ---
-title: 'CA2137: Jawne metody muszą zawierać tylko weryfikowalne IL'
+title: 'CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalne IL'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2137
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 131824b22291acb0b83af6ff24e9751a98db3ed1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 76d628b05ae5c0b6ccb8db94a1bf2c09537fd812
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913201"
 ---
-# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Jawne metody muszą zawierać tylko weryfikowalne IL
+# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalne IL
 
 |||
 |-|-|

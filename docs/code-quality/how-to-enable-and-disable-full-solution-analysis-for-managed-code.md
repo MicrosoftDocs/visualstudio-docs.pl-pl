@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Włączanie i wyłączanie Pełna analiza rozwiązania dla zarządzanego kodu'
+title: 'Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego'
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,44 +8,43 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: d227360be39455662d3d2ebe822810debd655dac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b6e5d73f0a08511730cb79eccf60570bad804137
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937887"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Porady: Włączanie i wyłączanie Pełna analiza rozwiązania dla zarządzanego kodu
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego
 
-*Pełna analiza rozwiązania* jest funkcja programu Visual Studio, która umożliwia podgląd problemów dotyczących analizy kodu tylko w otwartych plików Visual C# lub Visual Basic w rozwiązaniu lub także w kodzie pliki, które zostały zamknięte. Domyślnie jest Pełna analiza rozwiązania *włączone* w języku Visual Basic i *wyłączone* Visual C#.
+*Pełnej analizy rozwiązania* jest funkcją programu Visual Studio, która umożliwia wyświetlenie tylko w elemencie wizualnym otwarte, problemów z analizą kodu C# lub plikach języka Visual Basic w rozwiązaniu lub w plikach kodu, które są zamknięte. Domyślnie jest pełnej analizy rozwiązania *włączone* dla języka Visual Basic i *wyłączone* wizualizacji C#.
 
-Można jej użyć wyświetlić wszystkie problemy we wszystkich plikach, ale może też być rozpraszać. Go spowalnia Visual Studio Jeśli rozwiązanie jest bardzo długa lub zawiera wiele plików. Aby ograniczyć liczbę problemów pokazano i zwiększyć wydajność programu Visual Studio, możesz wyłączyć Pełna analiza rozwiązania. W razie potrzeby można łatwo ponownie włączyć tę funkcję.
+Może być przydatne zobaczyć wszystkie problemy we wszystkich plikach, ale może też być rozprasza uwagę. Go spowalnia programu Visual Studio, jeśli rozwiązanie jest bardzo długa lub zawiera wiele plików. Ogranicz liczbę problemów wyświetlane i poprawa wydajności programu Visual Studio, można wyłączyć pełnej analizy rozwiązania. W razie potrzeby można łatwo ponownie włączyć tę funkcję.
 
-## <a name="to-toggle-full-solution-analysis"></a>Aby włączyć pełną analizę rozwiązania
+## <a name="to-toggle-full-solution-analysis"></a>Aby przełączyć pełnej analizy rozwiązania
 
-1. Aby otworzyć **opcje** okno dialogowe, na pasku menu programu Visual Studio wybierz **narzędzia** > **opcje**.
+1. Aby otworzyć **opcje** okno dialogowe, na pasku menu w programie Visual Studio wybierz **narzędzia** > **opcje**.
 
-1. W **opcje** oknie dialogowym wybierz **Edytor tekstu** > **C#** lub **podstawowe**  >   **Zaawansowane**.
+1. W **opcje** okna dialogowego wybierz **edytora tekstów**  >  **C#** lub **podstawowe**  >  **Zaawansowane**.
 
-1. Wybierz **Włącz pełną analizę rozwiązania** pole wyboru, aby włączyć pełną analizę rozwiązania, lub wyczyść pole, aby ją wyłączyć. Wybierz **OK** po zakończeniu.
+1. Wybierz **Włączanie pełnej analizy rozwiązania** pole wyboru, aby włączyć pełnej analizy rozwiązania, lub wyczyść pole, aby je wyłączyć. Wybierz **OK** po zakończeniu.
 
-    ![Zaznacz pole wyboru analizy pełnego rozwiązania.](../code-quality/media/options-enable-full-solution-analysis.png)
+    ![Zaznacz pole wyboru analizy pełne rozwiązanie.](../code-quality/media/options-enable-full-solution-analysis.png)
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Wyniki Włączanie i wyłączanie Pełna analiza rozwiązania
+## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Wyniki Włączanie i wyłączanie pełnej analizy rozwiązania
 
-Na poniższym zrzucie ekranu widać wyniki po włączeniu Pełna analiza rozwiązania. Wszystkie błędy i problemy dotyczące analizy kodu w *wszystkich* plików w rozwiązaniu ma, niezależnie od tego, czy pliki są otwarte, czy nie.
+Na poniższym zrzucie ekranu widać wyników po włączeniu pełnej analizy rozwiązania. Wszystkie błędy i problemy dotyczące analizy kodu w *wszystkich* plików w rozwiązaniu pojawia się, niezależnie od tego, czy pliki są otwarte, czy nie.
 
-![Pełna analiza rozwiązania włączone.](../code-quality/media/fsa_enabled.png)
+![Po włączeniu analizy pełne rozwiązanie.](../code-quality/media/fsa_enabled.png)
 
-Poniższy zrzut ekranu przedstawia wyniki z tym samym rozwiązaniu po wyłączeniu Pełna analiza rozwiązania. Tylko błędów i problemów dotyczących analizy kodu w plikach Otwórz rozwiązanie **listy błędów**.
+Poniższy zrzut ekranu przedstawia wyniki z tego samego rozwiązania po wyłączeniu pełnej analizy rozwiązania. Tylko błędy i problemy dotyczące analizy kodu w plikach otwartego rozwiązania są wyświetlane w **lista błędów**.
 
-![Pełna analiza rozwiązania wyłączone.](../code-quality/media/fsa_disabled.png)
+![Pełnej analizy rozwiązania wyłączone.](../code-quality/media/fsa_disabled.png)
 
-## <a name="automatically-disable-full-solution-analysis"></a>Automatycznie wyłączyć Pełna analiza rozwiązania
+## <a name="automatically-disable-full-solution-analysis"></a>Automatycznie wyłączanie pełnej analizy rozwiązania
 
-Jeśli program Visual Studio wykryje, że 200 MB lub mniej pamięci systemowej jest dostępne, on automatycznie wyłącza Pełna analiza rozwiązania (i inne funkcje) Jeśli jest włączona. W takim przypadku zostanie wyświetlony alert informujący o tym, że program Visual Studio ma wyłączone niektóre funkcje. Przycisk pozwala włączyć pełną analizę rozwiązania, jeśli chcesz.
+Jeśli program Visual Studio wykryje, że 200 MB lub mniej pamięci systemowej, jest dostępnych, automatycznie wyłączany pełnej analizy rozwiązania (i niektórych innych funkcji) Jeśli jest włączone. Jeśli ten problem wystąpi, zostanie wyświetlony alert informujący o tym, że Visual Studio ma wyłączone niektóre funkcje. Przycisk służy do ponownego włączenia pełnej analizy rozwiązania, jeśli chcesz.
 
-![Tekst alertu wstrzymywania Pełna analiza rozwiązania](../code-quality/media/fsa_alert.png)
+![Tekst alertu zawieszanie pełnej analizy rozwiązania](../code-quality/media/fsa_alert.png)

@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015 | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b8950a05c4e4181209190af17eb0d6ccdb35ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915338"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015
 Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.  
@@ -48,7 +45,7 @@ Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.
   
 3.  Dodawanie wersji NuGet zestawów odwołań zestawu SDK programu VS.  W **odwołania Eksploratora rozwiązań** otworzyć węzła **Zarządzaj pakietami NuGet** okna dialogowego.  Jeśli chcesz dowiedzieć się więcej na temat tego okna dialogowego, zobacz [interfejs użytkownika Menedżera pakietów](/NuGet/Tools/Package-Manager-UI). Zestawy odwołań zestawu SDK są publikowane w [nuget.org](http://www.nuget.org) przez [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
-4.  Za pomocą **nuget.org** jako usługi **źródła pakietu**, wyszukaj nazwę pakietu NuGet, odpowiadającego zestawu żądane odwołanie (na przykład: Microsoft.VisualStudio.Shell.14.0) i zainstaluj go w Twojej Projekt.  NuGet może dodać wiele zestawów odwołań, aby spełnić wymagania zależności zestawów początkowej.  
+4.  Za pomocą **nuget.org** jako swojej **źródła pakietu**, wyszukaj nazwę pakietu NuGet, odpowiadającego zestawu żądane odwołanie (na przykład: Microsoft.VisualStudio.Shell.14.0) i zainstaluj go w projekcie.  NuGet może dodać wiele zestawów odwołań, aby spełnić wymagania zależności zestawów początkowej.  
   
      Jeśli wolisz, możesz dodać wszystkie zestawy odwołań zestawu SDK jednocześnie, Instalowanie zestawu SDK dla programu [pakiet Meta](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
   

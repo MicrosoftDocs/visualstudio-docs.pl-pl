@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43b262344965091cf7599a9e1b2c43d6bcdb94f2
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 585b5b5397ebd259476654dc2cc62f1add262af9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918904"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -62,7 +61,7 @@ Utwórz nowy projekt WPF, aby wyświetlić rekordy produktu.
 
 2. Na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-3. Rozwiń **języka Visual Basic** lub **Visual C#** , a następnie wybierz pozycję **Windows**.
+3. Rozwiń **języka Visual Basic** lub **Visual C#**, a następnie wybierz pozycję **Windows**.
 
 4. Wybierz **aplikacji WPF** szablonu projektu.
 
@@ -162,7 +161,7 @@ Tworzenie formantów, które wyświetlają rekordy klientów, przeciągając `Pr
 
     - ROWGUID
 
-    - ModifiedDate
+    - Data modyfikacji
 
 4. Kliknij menu rozwijane **thumbnailphoto usługa** a następnie wybierz węzeł **obraz**.
 
@@ -244,7 +243,7 @@ Po ukończeniu tego przewodnika, możesz spróbować następujące zadania:
 
 - Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby powiązać WPF formanty do innych typów źródeł danych. Aby uzyskać więcej informacji, zobacz [WPF powiązać formanty do usługi danych WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby wyświetlić powiązane dane (czyli w relacji nadrzędny podrzędny) w formantach WPF. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby wyświetlić powiązane dane (czyli w relacji nadrzędny podrzędny) w formantach WPF. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Zobacz także
 

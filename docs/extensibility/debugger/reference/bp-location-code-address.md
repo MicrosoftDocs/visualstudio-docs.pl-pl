@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION_CODE_ADDRESS | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_CODE_ADDRESS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd694d88348a13aefa1dfd7851c6897523009919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 389aaca22043f22347370584a8e3761cf39f613f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925173"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 W tym artykule opisano lokalizacji punktu przerwania pod adresem w kodzie.  
@@ -28,7 +25,7 @@ W tym artykule opisano lokalizacji punktu przerwania pod adresem w kodzie.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-typedef struct _BP_LOCATION_CODE_ADDRESS {   
+typedef struct _BP_LOCATION_CODE_ADDRESS {   
    BSTR bstrContext;  
    BSTR bstrModuleUrl;  
    BSTR bstrFunction;  
@@ -55,9 +52,9 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

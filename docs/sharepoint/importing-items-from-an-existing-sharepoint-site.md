@@ -1,17 +1,12 @@
 ---
 title: Importowanie elementów z istniejącej witryny programu SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918157"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importowanie elementów z istniejącej witryny programu SharePoint
   Importowanie pakietu rozwiązań programu SharePoint szablon projektu umożliwia ponowne używanie elementów, takich jak typy zawartości i pola z istniejącej witryny programu SharePoint, w nowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązania programu SharePoint. Chociaż można uruchomić najbardziej importowanych rozwiązania bez żadnych modyfikacji, istnieją pewnych ograniczeń i zagadnień, które należy wziąć pod uwagę, zwłaszcza wtedy, gdy modyfikować elementów po ich zaimportowaniu.  
@@ -96,20 +91,20 @@ ms.locfileid: "49832111"
   
  Na przykład po zaimportowaniu definicji listy ExpenseForms definicji listy o tej nazwie pojawia się w obszarze **listy definicji** folderu w **Eksploratora rozwiązań** wraz z jego  *Elements.XML* i *Schema.xml* plików. Jednak jego powiązanych formularzy ASPX, jak i HTML można umieścić w folderze o nazwie **ExpenseForms** w obszarze **inne zaimportowane pliki** folderu. Aby ukończyć importowanie, przenosić tych plików, w ramach definicji listy ExpenseForms w **Eksploratora rozwiązań** i zmień **DeploymentType** właściwości dla każdego pliku z **NoDeployment** do **plik elementu**.  
   
- Podczas importowania odbiorcy zdarzeń *Elements.xml* plik jest kopiowany do poprawnej lokalizacji, ale musisz ręcznie dołączyć zestawu w pakiecie rozwiązań, dzięki czemu wdrażania za pomocą rozwiązania. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to zrobić, zobacz [porady: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Podczas importowania odbiorcy zdarzeń *Elements.xml* plik jest kopiowany do poprawnej lokalizacji, ale musisz ręcznie dołączyć zestawu w pakiecie rozwiązań, dzięki czemu wdrażania za pomocą rozwiązania. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to zrobić, zobacz [jak: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Podczas importowania przepływów pracy, formularzy programu InfoPath są kopiowane do **inne zaimportowane pliki** folderu. Jeśli *.wsp* plik zawiera szablon sieci Web, jest ona ustawiona jako stronę startową w **Eksploratora rozwiązań**.  
   
 ## <a name="import-fields-and-property-bags"></a>Pola importowania i zbiory właściwości
  Podczas importowania rozwiązania, który ma wiele pól, wszystkie definicje osobnego pola są scalane w jednym *Elements.xml* plik w węźle w **Eksploratora rozwiązań** o nazwie **pola** . Podobnie, wszystkie wpisy zbioru właściwości są scalane w *Elements.xml* pliku pod węzeł o nazwie **PropertyBags**.  
   
- Pola w programie SharePoint są kolumn typu określone dane, takie jak tekst, Boolean lub wyszukiwania. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: kolumn i typy pól](http://go.microsoft.com/fwlink/?LinkId=182304). Zbiory właściwości umożliwiają dodawanie właściwości do obiektów w programie SharePoint, wszystkie elementy z farmy serwerów do listy w witrynie programu SharePoint. Zbiory właściwości są implementowane jako tabelę mieszania nazw właściwości i wartości. Aby uzyskać więcej informacji, zobacz [Zarządzanie konfiguracją programu SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) lub [ustawienia zbioru właściwości SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
+ Pola w programie SharePoint są kolumn typu określone dane, takie jak tekst, Boolean lub wyszukiwania. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: Kolumny i typy pól](http://go.microsoft.com/fwlink/?LinkId=182304). Zbiory właściwości umożliwiają dodawanie właściwości do obiektów w programie SharePoint, wszystkie elementy z farmy serwerów do listy w witrynie programu SharePoint. Zbiory właściwości są implementowane jako tabelę mieszania nazw właściwości i wartości. Aby uzyskać więcej informacji, zobacz [Zarządzanie konfiguracją programu SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) lub [ustawienia zbioru właściwości SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
   
 ## <a name="delete-items-in-the-project"></a>Usuwanie elementów projektu
  Większość elementów w rozwiązaniach programu SharePoint ma jeden lub więcej elementów zależnych. Na przykład wystąpienia listy są zależne od typów zawartości i typy zawartości są zależne od pola. Po zaimportowaniu rozwiązania programu SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie powiadamia użytkownika o problemach odwołania w przypadku usunięcia elementu w rozwiązaniu, ale nie elementy zależne, dopóki próba wdrożenia rozwiązania. Na przykład jeśli rozwiązanie importowanych ma wystąpienie listy, który zależy od typu zawartości i usunięcie tego typu zawartości, na wdrożenie może wystąpić błąd. Ten błąd występuje, jeśli elementu zależnego nie znajduje się na serwerze programu SharePoint. Podobnie, jeśli usuniętego elementu ma również zbiór powiązanych właściwości, następnie usuń te wpisy zbiór właściwości z **PropertyBags** *Elements.xml* pliku. W związku z tym jeśli otrzymujesz błędy związane z wdrażaniem Usuń wszystkie elementy z zaimportowanych rozwiązania, sprawdź wszystkie elementy zależne muszą również zostaną usunięte.  
   
 ## <a name="restore-missing-feature-attributes"></a>Przywracanie brakujących atrybutów funkcji
- Podczas importowania rozwiązań, niektóre atrybuty opcjonalna funkcja zostały pominięte w manifeście funkcji zaimportowane. Jeśli chcesz przywrócić te atrybuty w nowym pliku funkcji, identyfikowanie brakujących atrybutów, porównując oryginalnego pliku funkcji do nowego manifestu funkcji i postępuj zgodnie z instrukcjami w temacie [porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Podczas importowania rozwiązań, niektóre atrybuty opcjonalna funkcja zostały pominięte w manifeście funkcji zaimportowane. Jeśli chcesz przywrócić te atrybuty w nowym pliku funkcji, identyfikowanie brakujących atrybutów, porównując oryginalnego pliku funkcji do nowego manifestu funkcji i postępuj zgodnie z instrukcjami w temacie [jak: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Wykrywanie konfliktów wdrożenia nie jest wykonywana na wbudowane wystąpienia listy
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie powoduje wykonania wykrywania konfliktów wdrożenia na wbudowane wystąpienia listy (oznacza to, domyślna lista wystąpienia, które pochodzą z programem SharePoint). Aby uniknąć zastąpienia wbudowane wystąpienia listy w programie SharePoint odbywa się nie wykonuje wykrywanie konfliktów. Listy wbudowanych, których wystąpienia są nadal wdrożone zaktualizowane, ale są nigdy nie usunięto lub zastąpione. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
@@ -139,7 +134,7 @@ ms.locfileid: "49832111"
  Brak kontrolki Menedżera skryptów może to stanowić problem podczas importowania [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] projektu do [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], ponieważ 14.0 ma ustawioną wartość atrybutu SharePointProductVersion wszystkich nowych projektów. W przypadku wdrożenia uaktualniony projekt, który ma formularza sieci Web bez Menedżera skryptów formularza nie będą wyświetlane w programie SharePoint.  
   
 ## <a name="see-also"></a>Zobacz także
- [Wskazówki: Importowanie elementów z istniejącej witryny programu SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
+ [Przewodnik: Importowanie elementów z istniejącej witryny programu SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Wytyczne dotyczące importowania wielokrotnych przepływów danych](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
- [Wskazówki: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Porady: Dodawanie istniejącego modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
+ [Instrukcje: Dodawanie istniejącego modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

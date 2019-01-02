@@ -2,7 +2,6 @@
 title: Alias — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.alias
@@ -18,15 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41bddec00866f7c10140abc40c5ff12c623310d3
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fa8b14618085ddae67616f5ef3e30fb1b030e45a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930690"
 ---
 # <a name="alias-command"></a>Alias — Polecenie
-Tworzy nowy alias pełne polecenie, pełny polecenia i argumentów lub inny alias.
+Tworzy nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
 
 > [!TIP]
 > Wpisywanie `>alias` bez żadnych argumentów Wyświetla bieżącą listę aliasów i ich definicje.
@@ -39,24 +38,24 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `aliasname` Opcjonalne. Nazwa nowego aliasu. Jeśli żadna wartość nie jest dostarczony dla `aliasname`, zostanie wyświetlona lista aliasów bieżący oraz ich definicje.
+ `aliasname` Opcjonalnie. Nazwa nowego pola alias. Jeśli nie dostarczono żadnej wartości dla `aliasname`, zostanie wyświetlona lista bieżących aliasów i ich definicje.
 
- `aliasstring` Opcjonalne. Nazwa pełne polecenie lub istniejącego aliasu i wszelkie parametry, które ma zostać utworzony jako alias. Jeśli żadna wartość nie jest dostarczony dla `aliasstring`, nazwa aliasu i alias ciąg Wyświetla określony alias.
+ `aliasstring` Opcjonalnie. Pełna nazwa polecenia lub istniejący alias i wszystkie parametry, które chcesz utworzyć jako alias. Jeśli nie dostarczono żadnej wartości dla `aliasstring`, nazwa aliasu i ciągi aliasów dla określonych aliasów Wyświetla.
 
 ## <a name="switches"></a>Przełączniki
- / delete/del lub /d opcjonalne. Usuwa określony alias, usuwa ją z autocompletion.
+ / DELETE lub/DEL lub /d atrybut opcjonalny. Usuwa określony alias, usuwając go z automatycznego uzupełniania.
 
- / reset opcjonalne. Resetuje listę wstępnie zdefiniowane aliasy pierwotne ustawienia. To, że wszystkie wstępnie zdefiniowane aliasy przywraca i usuwa wszystkie aliasy zdefiniowane przez użytkownika.
+ / reset atrybut opcjonalny. Resetuje listę wstępnie zdefiniowanych aliasów pierwotne ustawienia. Oznacza to, że przywraca wszystkie wstępnie zdefiniowane aliasy i usuwa wszystkie aliasy zdefiniowane przez użytkownika.
 
 ## <a name="remarks"></a>Uwagi
- Ponieważ aliasy stanowią poleceń, muszą one być znajduje się na początku wiersza polecenia.
+ Ponieważ aliasy stanowią polecenia, muszą być umieszczone na początku wiersza polecenia.
 
- Po wykonaniu tego polecenia, należy uwzględnić przełączników natychmiast po poleceniu, nie po aliasy, w przeciwnym razie tego samego przełącznika dołączane jako część ciąg aliasu.
+ Po wykonaniu tego polecenia, należy uwzględnić przełączniki natychmiast po poleceniu nie po aliasach, w przeciwnym razie sam przełącznik zostanie dołączony jako część ciąg aliasu.
 
- `/reset` Przełącznika prosi o potwierdzenie przed aliasy zostaną przywrócone. Brak nie krótkiej formy `/reset`.
+ `/reset` Przełącznik prosi o potwierdzenie zanim aliasy zostaną przywrócone. Brak żadnych krótkich form `/reset`.
 
 ## <a name="examples"></a>Przykłady
- W tym przykładzie jest tworzony nowy alias `upper`, aby uzyskać pełną polecenia Edit.MakeUpperCase.
+ Ten przykład tworzy nowy alias `upper`, dla pełnego polecenia Edit.MakeUpperCase.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase
@@ -68,7 +67,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.alias /delete upper
 ```
 
- W tym przykładzie wyświetla listę wszystkich bieżącego aliasy i definicje.
+ W tym przykładzie wyświetla listę wszystkich bieżących aliasów i definicji.
 
 ```cmd
 >Tools.Alias
@@ -78,5 +77,5 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

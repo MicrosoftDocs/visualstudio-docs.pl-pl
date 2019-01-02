@@ -1,12 +1,11 @@
 ---
-title: 'CA2228: Nie dostarczaj niepublikowanych formatów zasobów | Dokumentacja firmy Microsoft'
+title: 'CA2228: Dostarczaj niepublikowanych formatów zasobów | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb5e595062ca39ba644499012981c78d7a986ced
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d36312e02f19788580cff96673ec0a683fd63c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895839"
 ---
-# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nie dostarczaj niepublikowanych formatów zasobów
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Dostarczaj niepublikowanych formatów zasobów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +47,3 @@ ms.locfileid: "49917542"
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
-
-
-

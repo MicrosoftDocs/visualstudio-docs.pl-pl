@@ -2,19 +2,18 @@
 title: Wprowadzenie do diagnostyki grafiki | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 05/26/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a0fa4ea44cb3a605b8905282a5fe2a7e71e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d92969a52ac7ce97b31ab2e00e16d1d9913cd401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919258"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz pierwszy, a następnie można przechwycić ramki na podstawie aplikacja Direct3D i zbadać je w analizatorze grafiki.  

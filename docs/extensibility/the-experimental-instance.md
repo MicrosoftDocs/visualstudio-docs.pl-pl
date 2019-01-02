@@ -1,9 +1,6 @@
 ---
-title: Eksperymentalne wystąpienie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wystąpienie eksperymentalne | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -15,25 +12,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80c071866e46528fe7edd287e082df3af166973
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cacee26fb84774eb7f1043d940419561bc55ec36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917379"
 ---
-# <a name="the-experimental-instance"></a>Eksperymentalne wystąpienie programu
-Do ochrony środowiska deweloperskiego Visual Studio z zastosowaniem aplikacji, które może go zmienić, VSSDK miejsce eksperymentalne używanej do wykonywania eksperymentów. Tworzenie nowej aplikacji za pomocą programu Visual Studio w zwykły sposób, ale Uruchom za pomocą tego eksperymentalne wystąpienie.  
+# <a name="the-experimental-instance"></a>Wystąpienie eksperymentalne
+Zabezpieczenie środowiska deweloperskiego Visual Studio z nieprzetestowanych aplikacji, które może go zmienić, VSSDK miejsce eksperymentalne używanego do eksperymentowania. Twórz nowe aplikacje za pomocą programu Visual Studio w zwykły sposób, ale można je uruchamiać przy użyciu tego wystąpienie eksperymentalne.  
   
- Każda aplikacja, która zawiera pakiet VSIX uruchamia eksperymentalne wystąpienie programu Visual Studio w trybie debugowania.  
+ Każda aplikacja, która zawiera pakiet VSIX uruchamia wystąpienie eksperymentalne programu Visual Studio w trybie debugowania.  
   
- Jeśli chcesz Uruchom eksperymentalne wystąpienie programu Visual Studio poza konkretnego rozwiązania, uruchom następujące polecenie w oknie wiersza polecenia:  
+ Jeśli chcesz uruchomić doświadczalne wystąpienie programu Visual Studio poza konkretnego rozwiązania, uruchom następujące polecenie w oknie wiersza polecenia:  
   
- "*\<Ścieżki instalacji programu visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp  
+ "*\<Ścieżka instalacji programu visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp  
   
 > [!NOTE]
->  Eksperymentalne wystąpienie są zapisywane w kluczu rejestru `<version number>Exp` i `<version number>Exp_Config` węzłów. Na przykład jest obszar eksperymentalne rejestru programu Visual Studio 2015  
+>  Wystąpienie eksperymentalne są zapisywane w kluczu rejestru `<version number>Exp` i `<version number>Exp_Config` węzłów. Na przykład jest obszar rejestru eksperymentalne programu Visual Studio 2015  
 >   
->  `HKCU\Software\Microsoft\VisualStudio\14.0Exp` I `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`  
+>  `HKCU\Software\Microsoft\VisualStudio\14.0Exp` i `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`  
   
- Zaleca się uruchomienie rozszerzenia w eksperymentalnym wystąpieniu podczas jego tworzenia. Podczas wdrażania rozszerzenia jest uruchamiany w przypadku rozwoju. Aby uzyskać więcej informacji na temat rejestrowania aplikacji, zobacz [rejestrowanie VSPackages](../extensibility/internals/registering-vspackages.md).
+ Firma Microsoft zaleca uruchomienie Twojego rozszerzenia w doświadczalnym wystąpieniu podczas jej opracowywania. Podczas wdrażania rozszerzenia, jest uruchamiane w wystąpieniu rozwoju. Aby uzyskać więcej informacji na temat rejestrowania aplikacji, zobacz [rejestrowanie pakietów VSPackage](../extensibility/internals/registering-vspackages.md).

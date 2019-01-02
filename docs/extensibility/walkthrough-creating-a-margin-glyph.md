@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Tworzenie marginesie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie marginesie | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac8d70c401d543afe73ac14d6f8617e5f375482
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851355"
 ---
-# <a name="walkthrough-create-a-margin-glyph"></a>Przewodnik: Tworzenie marginesie
+# <a name="walkthrough-create-a-margin-glyph"></a>Przewodnik: Utwórz na marginesie
 Za pomocą rozszerzenia niestandardowego edytora, można dostosować wygląd marginesu edytora. W tym przewodniku umieszcza glifów margines wskaźnika zawsze wtedy, gdy wyraz "todo" pojawia się w komentarzu do kodu.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  

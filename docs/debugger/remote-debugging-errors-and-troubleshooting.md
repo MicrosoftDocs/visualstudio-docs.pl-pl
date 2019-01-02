@@ -1,8 +1,6 @@
 ---
-title: Zdalne debugowanie błędów i rozwiązywanie problemów z | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -22,23 +20,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbac9eea6b3510d670aa00e48c85c8dd5bb0e4b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c89898e5f25c552987ee2d3df1c413c608323c2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928753"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
-Mogą wystąpić następujące błędy podczas próby debugowania zdalnego.  
+Mogą wystąpić następujące błędy, podczas próby debugowania zdalnego.  
   
--   [Błąd: Nie można automatycznie Wkrocz do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Błąd: Nie można automatycznie krok po kroku do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
+-   [Błąd: Microsoft Visual Studio Monitor debugera zdalnego (polecenia MSVSMON. Z rozszerzeniem EXE) nie jest uruchomiony na komputerze zdalnym.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)  
   
--   [Nie można nawiązać połączenia z programem Microsoft Visual Studio Monitor debugera zdalnego](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
+-   [Nie można połączyć z monitorem zdalnego debugowania programu Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Błąd: Komputer zdalny nie jest wyświetlany w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+-   [Błąd: Komputer zdalny nie jest wyświetlana w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zdalne](../debugger/remote-debugging.md)

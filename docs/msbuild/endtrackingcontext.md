@@ -1,8 +1,6 @@
 ---
 title: EndTrackingContext | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - EndTrackingContext
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3506e87c1468ff66143b672dca95cd70b0b3dff
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fba2d86ca02bf0ddc12e288b3bcbbd4b7189120e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911510"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 Koniec bieżący kontekst śledzenia.  

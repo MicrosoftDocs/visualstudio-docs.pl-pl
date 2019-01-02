@@ -1,5 +1,5 @@
 ---
-title: Procedury przechowywane w celu przeprowadzenia aktualizacji, wstawiania i usuwania w składniku Linq to SQL Projektanta obiektów relacyjnych
+title: Użyj przechowywane procedury, aby przeprowadzić aktualizację, wstawiania i usuwania w składniku Linq to SQL O/R Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -7,67 +7,66 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b7fd690997b7d7b58f8d1c1f84ea7f471d4fe496
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 21cf1e16d708dcd66bca937600c11690a21dc7dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912720"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawienia i usunięcia (Projektanta obiektów relacyjnych)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 
-Procedury składowane można dodać do **Projektanta obiektów relacyjnych** i wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One również pozwala zastąpić domyślną LINQ do zachowania w czasie wykonywania SQL wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klasami jednostki bazy danych (na przykład podczas wywoływania metody <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).
-
-> [!NOTE]
-> Jeśli Twoja procedura składowana zwraca wartości, które muszą zostać odesłany do klienta (na przykład obliczania wartości w procedurze składowanej), utwórz parametry wyjściowe w Twojej procedur składowanych. Jeśli nie możesz użyć parametrów wyjściowych, zapis zastępuje implementację metody częściowej, zdejmując to zadanie wygenerowany przez Projektanta obiektów relacyjnych. Elementy członkowskie, baza danych wygenerowała wartości muszą należy ustawić odpowiednie wartości po pomyślnym ukończeniu operacji INSERT lub UPDATE. Aby uzyskać więcej informacji, zobacz [obowiązki deweloperów w zastępowanie domyślne zachowanie](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
+Procedury składowane mogą być dodawane do **O/R Designer** i wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One może również zastąpić to ustawienie domyślne LINQ do zachowania w czasie wykonywania SQL wykonuje operacje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klas jednostek bazy danych (na przykład w przypadku, gdy wywołanie <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).
 
 > [!NOTE]
-> LINQ do SQL obsługuje baza danych wygenerowała wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazę danych) i kolumn znaczników czasu. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości generowanych przez bazę danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do **true** i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert ](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), lub [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Jeśli Twoja procedura składowana ma zwracać wartości, które muszą zostać odesłany do klienta (na przykład wartości obliczane w procedurze składowanej), utworzyć parametry wyjściowe w przechowywanych procedur. Jeśli nie możesz użyć parametrów wyjściowych, zapisu przesłonięcia implementację metody częściowej, zamiast polegania na generowany przez projektanta O/R. Wartości wygenerowanych w bazie danych elementów członkowskich muszą być podane odpowiednie wartości po pomyślnym ukończeniu operacji WSTAWIANIA lub aktualizacji. Aby uzyskać więcej informacji, zobacz [obowiązki dewelopera w zastępowanie domyślne zachowanie](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
+
+> [!NOTE]
+> LINQ do SQL obsługuje wygenerowanych w bazie danych wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazy danych) i kolumn sygnatur czasowych. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości wygenerowanych w bazie danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do **true** i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), lub [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Konfigurowanie zachowania aktualizacji klasy jednostki
 
-Domyślnie logika zaktualizować bazę danych (wstawienia, aktualizacje i usunięcia) ze zmianami, które zostały wprowadzone w danych w LINQ w klasach SQL jednostki znajduje się w składniku LINQ to SQL środowiska wykonawczego. Środowisko uruchomieniowe tworzy domyślne polecenia INSERT, UPDATE i DELETE, które są oparte na schemat tabeli (kolumny i informacje o kluczu podstawowym). Jeśli domyślne zachowanie jest niepożądane, można skonfigurować zachowanie aktualizacji przypisując określonych procedur składowanych do wykonania niezbędnych operacji wstawienia, aktualizacje i usunięcia wymagane do obsługi danych w tabeli. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład po z klasami jednostki mapowania do widoków. Ponadto podczas bazy danych wymaga dostępu do tabeli za pomocą procedur składowanych można zastąpić domyślne zachowanie aktualizacji.
+Domyślnie logika aktualizacji bazy danych (operacje wstawiania, aktualizacji i usunięć) za pomocą zmian wprowadzonych do danych w LINQ do klas jednostek SQL znajduje się w składniku LINQ to SQL w czasie wykonywania. Środowisko uruchomieniowe tworzy domyślne polecenia INSERT, UPDATE i DELETE, które opierają się na schemat tabeli (kolumny i informacje o kluczu podstawowym). Gdy zachowanie domyślne jest niepożądany, możesz skonfigurować zachowanie aktualizacji, przypisując określonych procedur składowanych do wykonywania niezbędne operacje wstawiania, aktualizacji i usuwania wymagane do manipulowania danymi w tabeli. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Na koniec można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Aby przypisać procedur składowanych, aby zastąpić domyślne zachowanie klasę jednostki
 
-1.  Otwórz **LINQ do SQL** pliku w projektancie. (Kliknij dwukrotnie **.dbml** w pliku **Eksploratora rozwiązań**.)
+1.  Otwórz **LINQ to SQL** pliku w projektancie. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
 
-2.  W **Eksploratora serwera** lub **Eksploratora bazy danych**, rozwiń węzeł **procedur składowanych** i Znajdź procedur składowanych, których chcesz użyć dla Insert, Update i/lub usunąć polecenia klasy jednostka.
+2.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** i Znajdź procedur przechowywanych, które chcesz na użytek Insert, Update i/lub usuwania polecenia Klasa jednostki.
 
-3.  Przeciągnąć procedurę składowaną na **Projektanta obiektów relacyjnych**.
+3.  Przeciągnij procedurę składowaną do **O/R Designer**.
 
-     Procedura składowana jest dodawany do okienka metod jako <xref:System.Data.Linq.DataContext> metody. Aby uzyskać więcej informacji, zobacz [metodę DataContext (Projektanta obiektów relacyjnych)](../data-tools/datacontext-methods-o-r-designer.md).
+     Procedura składowana jest dodawany do okienka metod jako <xref:System.Data.Linq.DataContext> metody. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4.  Wybierz klasę jednostki, dla którego chcesz użyć procedury składowanej umożliwiające wykonywanie aktualizacji.
+4.  Wybierz klasę jednostki, dla którego chcesz użyć procedury składowanej do wykonywania aktualizacji.
 
-5.  W **właściwości** okna, wybierz polecenie do zastąpienia (**Wstaw**, **aktualizacji**, lub **usunąć**).
+5.  W **właściwości** okna, wybierz polecenie, aby zastąpić (**Wstaw**, **aktualizacji**, lub **Usuń**).
 
-6.  Kliknij przycisk wielokropka (...) obok słowa **Użyj środowiska wykonawczego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
+6.  Kliknij przycisk wielokropka (...) obok wyrazy **Użyj środowiska uruchomieniowego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
 
 7.  Wybierz **dostosować**.
 
-8.  Wybierz odpowiednie procedury składowanej w **Dostosuj** listy.
+8.  Wybierz odpowiednią procedurę składowaną w **Dostosuj** listy.
 
-9. Listę **argumenty metody** i **właściwości klasy** do sprawdzenia, czy **argumenty metody** mapy do odpowiedniego **właściwości klasy**. Mapowanie oryginalnego argumenty metody (`Original_<ArgumentName>`) do jego początkowych właściwości (`<PropertyName> (Original)`) dla `Update` i `Delete` poleceń.
+9. Sprawdź listę **argumenty metody** i **właściwości klasy** do sprawdzenia, czy **argumenty metody** mapy do odpowiedniego **właściwości klasy**. Mapowanie oryginalnego argumenty metody (`Original_<ArgumentName>`) do oryginalne właściwości (`<PropertyName> (Original)`) dla `Update` i `Delete` poleceń.
 
     > [!NOTE]
-    > Domyślnie argumenty metody mapować do właściwości klasy podczas nazwy są zgodne. Po zmianie właściwości nazwy nie jest już zgodne między tabelą i klasy jednostka, może być konieczne wybierz właściwość klasy równoważne do mapowania na, jeśli projektant nie może określić poprawne mapowania.
+    > Domyślnie argumenty metody są mapowane na właściwości klasy, gdy nazwy są zgodne. Zmieniona właściwość, których nazwy nie są już zgodne między tabelą i Klasa jednostki, trzeba wybrać właściwość odpowiednik klasy do mapowania na, jeśli projektant nie może określić poprawne mapowania.
 
 10. Kliknij przycisk **OK** lub **zastosować**.
 
     > [!NOTE]
-    >  Możesz skonfigurować działanie dla każdej kombinacji klasę i zachowanie, pod warunkiem, możesz kliknąć przycisk **Zastosuj** po każdej zmianie. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe zostanie wyświetlone i zapewnia możliwość zastosowania zmian.
+    >  Można kontynuować, skonfiguruj zachowanie dla każdej kombinacji klasę i zachowanie, tak długo, jak możesz kliknąć pozycję **Zastosuj** po wprowadzeniu każdej zmiany. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe ostrzeżenia pojawia się i oferuje możliwość zastosowania zmian.
 
-Aby przywrócić za pomocą domyślnej środowiska uruchomieniowego logiki aktualizacji, kliknij wielokropek **Wstaw**, **aktualizacji**, lub **usunąć** w **właściwości**  okna, a następnie wybierz **Użyj środowiska wykonawczego** w **Konfigurowanie zachowania** okno dialogowe.
+Aby przywrócić za pomocą domyślnej logiki czasu wykonywania aktualizacji, kliknij przycisk wielokropka **Wstaw**, **aktualizacji**, lub **Usuń** polecenia w pliku **właściwości**  okna, a następnie wybierz **korzystania ze środowiska uruchomieniowego** w **Konfigurowanie zachowania** okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)
-- [LINQ do SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Wstawianie, aktualizowanie i usuwanie operacji (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

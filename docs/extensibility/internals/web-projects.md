@@ -1,9 +1,6 @@
 ---
-title: Projekty w sieci Web | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Projektów sieci Web | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
@@ -13,23 +10,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761ad53669d45bc95769c8d81632068101a6e04c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929753"
 ---
-# <a name="web-projects"></a>Projekty sieci Web
-System projektu sieci Web to system projektu, który tworzy projekty sieci Web. Projekty sieci Web z kolei tworzenie aplikacji sieci Web. Zostanie strony sieci Web przy użyciu tradycyjnych języków programowania, takich jak [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], aby zbierać i przetwarzają informacje od użytkownika, zapisz go w bazie danych i tak dalej. Strony sieci Web z kodem skojarzone są nazywane inteligentne stron sieci Web.  
+# <a name="web-projects"></a>Projekty internetowe
+System projektu sieci Web jest system projektu, który tworzy projektów sieci Web. Projekty sieci Web z kolei tworzyć aplikacje sieci Web. Można programować strony sieci Web przy użyciu tradycyjnych językach programowania, takich jak [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], do zbierania i przetwarzania informacji od użytkownika, zapisz go w bazie danych i tak dalej. Strony sieci Web za pomocą skojarzonego kodu są nazywane inteligentne stron sieci Web.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Essentials](../../extensibility/internals/web-project-essentials.md)  
- Przedstawia informacje o ważne elementy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projekty w sieci Web.  
+ [Podstawy](../../extensibility/internals/web-project-essentials.md)  
+ Przedstawia informacje o ważnych elementów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów sieci Web.  
   
  [Pomoc techniczna dotycząca witryny internetowej](../../extensibility/internals/web-site-support.md)  
- Zawiera omówienie programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów witryny sieci Web. Projekt witryny sieci Web generuje jednego pliku wykonywalnego dla każdej inteligentne strony sieci Web. Dodatkowe pliki wykonywalne zostaną wygenerowane na podstawie plików kodu źródłowego w folderze /App_Code.  
+ Przedstawia omówienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów witryny sieci Web. Projekt witryny sieci Web wygenerowanie jednego pliku wykonywalnego, dla każdej inteligentne strony sieci Web. Dodatkowe pliki wykonywalne są generowane na podstawie plików kodu źródłowego w folderze /App_Code.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Projekty](../../extensibility/internals/projects.md)  
- Opisuje sposób rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu systemu.
+ Opisuje sposób rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] systemu projektu.

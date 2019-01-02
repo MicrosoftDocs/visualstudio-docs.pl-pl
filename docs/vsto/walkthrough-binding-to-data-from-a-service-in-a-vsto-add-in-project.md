@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Powiązywanie z danymi z usługi w projekcie dodatku narzędzi VSTO'
-ms.custom: ''
+title: 'Przewodnik: Powiąż z danymi z usługi w projekcie dodatku narzędzi VSTO'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892293"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Wskazówki: Powiązywanie z danymi z usług w projektach dodatku narzędzi VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Przewodnik: Powiąż z danymi z usług w projektach dodatku narzędzi VSTO
   Dane można powiązać kontrolki hosta w projektach dodatku narzędzi VSTO. W tym instruktażu pokazano, jak dodać kontrolki do dokumentu programu Microsoft Office Word, powiązać formanty danych pobranych z usługi zawartości MSDN i reagowania na zdarzenia w czasie wykonywania.  
   
- **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programu Word 2010. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programu Word 2010. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49933186"
   
 1.  Utwórz projekt dodatku narzędzi VSTO programu Word z nazwą **usługi zawartości MTPS**, przy użyciu języka Visual Basic lub C#.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Zostanie otwarty program Visual Studio `ThisAddIn.vb` lub `ThisAddIn.cs` plik i dodaje projekt do **Eksploratora rozwiązań**.  
   
@@ -119,5 +116,3 @@ ms.locfileid: "49933186"
   
 ## <a name="see-also"></a>Zobacz także  
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

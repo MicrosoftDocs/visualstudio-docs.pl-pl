@@ -2,7 +2,6 @@
 title: Menu kontekstowe w Eksplorator schematu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898899"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksplorator schematu XML)
 
 Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwania specyficznego dla schematu i inne operacje.
 
-## <a name="node-type-schema-set"></a>Typ węzła: Ustaw schematu
+## <a name="node-type-schema-set"></a>Typ węzła: Zestaw schematów
 
 W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu węzłów.
 
@@ -32,7 +31,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |**Pokaż elementy globalne**|Umożliwia znalezienie i wyróżnia wszystkie elementy globalne w zestawie schematów.|
 |**Okno właściwości**|Otwiera **właściwości** okna (o ile nie jest jeszcze otwarty). To okno wyświetla informacje o węźle.|
 
-## <a name="node-type-namespace"></a>Typ węzła: Namespace
+## <a name="node-type-namespace"></a>Typ węzła: Przestrzeń nazw
  W poniższej tabeli opisano opcje, które są dostępne dla węzła obszaru nazw.
 
 |Opcja|Opis|
@@ -43,7 +42,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |**Pokaż elementy globalne**|Umożliwia znalezienie i wyróżnia wszystkie elementy globalne w wybranej przestrzeni nazw.|
 |**Okno właściwości**|Otwiera **właściwości** okna (o ile nie jest jeszcze otwarty). To okno wyświetla informacje o węźle.|
 
-## <a name="node-type-file"></a>Typ węzła: plik
+## <a name="node-type-file"></a>Typ węzła: Plik
  W poniższej tabeli opisano opcje, które są dostępne dla węzła pliku.
 
 |Opcja|Opis|
@@ -77,7 +76,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |**Grupa podstawienia show głowic**|Dla elementów globalne, które są elementami członkowskimi grupy podstawienia, znajdzie i wyróżnia wszystkie nagłówki bezpośrednie i pośrednie dla wybranego elementu, takich jak następujące:<br /><br /> -Określonego dla wybranego elementu head grupy podstawienia.<br />-Określony w jej głównego elementu head grupy podstawienia.|
 |**Generowanie przykładowy kod XML**|Dostępne tylko dla elementów globalnej. Generuje przykładowy plik XML dla elementu globalnego.|
 
-## <a name="node-type-global-types"></a>Typ węzła: typy globalne
+## <a name="node-type-global-types"></a>Typ węzła: Typy globalne
  Oprócz opcji do globalnego węzłów opisanych powyżej menu kontekstowe dla węzłów typu globalnego ma następujące opcje:
 
 |Opcja|Opis|
@@ -87,7 +86,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |**Pokaż wszystkie typy pochodne**|Umożliwia znalezienie i wyróżnia wszystkie typy, które bezpośredniego lub pośredniego pochodzą od wybranego typu.|
 |**Wyświetlanie wszystkich elementów nadrzędnych**|Pokaż wszystkie typy nadrzędnego (podstawowa).|
 
-## <a name="node-type-attribute"></a>Typ węzła: atrybut
+## <a name="node-type-attribute"></a>Typ węzła: Atrybut
  Oprócz opcji do globalnego węzłów opisanych powyżej menu kontekstowe dla węzłów atrybutu ma następujące opcje:
 
 |Opcja|Opis|
@@ -96,7 +95,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |**Przejdź do oryginalnego atrybutu**|Atrybut odwołania przechodzi do rzeczywistego definicję atrybutu.|
 |**Pokaż wszystkie odwołania**|Dla atrybutami globalnymi, wyszukuje i wyróżnia wszystkie odwołania (inne atrybuty, które mają `ref="selectedAttribute"`) do wybranego atrybutu.|
 
-## <a name="node-type-attribute-group"></a>Typ węzła: grupy atrybutów
+## <a name="node-type-attribute-group"></a>Typ węzła: Grupa atrybutów
  Oprócz opcji do globalnego węzłów opisanych powyżej menu kontekstowe dla węzłów grupy atrybutu ma następujące opcje:
 
 |Opcja|Opis|
@@ -105,7 +104,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |**Pokaż wszystkie elementy członkowskie**|Umożliwia znalezienie i wyróżnienie wszyscy członkowie grupy atrybutów.|
 |**Pokaż wszystkie odwołania**|Wyszukuje i wyróżnia wszystkie odwołania (grupy, które mają atrybut `ref="selectedAttributeGroup"`) do wybranej grupy atrybutów.|
 
-## <a name="node-type-named-group"></a>Typ węzła: o nazwie grupy
+## <a name="node-type-named-group"></a>Typ węzła: Nazwanej grupy
  Oprócz opcji do globalnego węzłów opisanych powyżej menu kontekstowe dla nazwanej grupy węzłów ma następujące opcje:
 
 |Opcja|Opis|

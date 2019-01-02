@@ -1,9 +1,6 @@
 ---
 title: Struktura pliku [Content_types] .xml | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - content_types
@@ -16,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909898"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struktura pliku [Content_types].xml
 Zawiera informacje na temat rodzajów zawartości w pakiecie VSIX. Program Visual Studio używa pliku [Content_Types] .xml, aby zainstalować pakiet, ale nie jest instalowana w samym pliku.  
   
 > [!NOTE]
->  Mimo że w tym temacie mają zastosowanie tylko do plików XML [Content_Type], które są używane w pakietów VSIX, typu pliku [Content_Types] .xml jest częścią *otwarte konwencje tworzenia pakietów (OPC)* standardowych. Aby uzyskać więcej informacji, zobacz [OPC: nowy Standard do pakowania własnych danych](http://go.microsoft.com/fwlink/?LinkID=148207) w witrynie MSDN w sieci Web.  
+>  Mimo że w tym temacie mają zastosowanie tylko do plików XML [Content_Type], które są używane w pakietów VSIX, typu pliku [Content_Types] .xml jest częścią *otwarte konwencje tworzenia pakietów (OPC)* standardowych. Aby uzyskać więcej informacji, zobacz [OPC: Nowy Standard dla pakowania własnych danych](http://go.microsoft.com/fwlink/?LinkID=148207) w witrynie MSDN w sieci Web.  
   
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy  
  Poniższe sekcje opisują element główny i jego atrybuty i elementy podrzędne.  
@@ -67,7 +64,7 @@ Zawiera informacje na temat rodzajów zawartości w pakiecie VSIX. Program Visua
 ### <a name="attribute-name-attribute"></a>{Atrybut name} Atrybut  
  Program Visual Studio rozpoznaje następujące `ContentType` wartości skojarzonych z nim `Extension` typów.  
   
-|Rozszerzenie|Typ zawartości|  
+|Wewnętrzny|Typ zawartości|  
 |---------------|-----------------|  
 |txt|zwykły tekst|  
 |pkgdef|zwykły tekst|  

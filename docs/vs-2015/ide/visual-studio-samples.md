@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 27a77e7983515c1cb61987ede03a202a50e9f88a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c604684fea431d29c76098a77218e36a63fc770f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936571"
 ---
 # <a name="visual-studio-samples"></a>Visual Studio — przykłady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +42,7 @@ Przykłady Visual Studio można znaleźć na [galerii kodu MSDN](http://go.micro
 |[Przykładowe skrypty JavaScript](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|Pokazuje, jak używać różnych funkcji w języku JavaScript.|
 |[Przykłady w języku C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Pokazuje, jak używać różnych funkcji w języku C++.|
 |[Próbki DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Przedstawiono sposób korzystania z programu DirectX.|
-|[Office Development — przykłady](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Pokazuje, jak używać narzędzi programistycznych pakietu Office w programie Visual Studio. Aby poznać aktualne przykłady, zobacz [Przykłady dewelopera sieci MSDN: Poznaj kod](http://go.microsoft.com/fwlink/?LinkID=248199).|
+|[Office Development — przykłady](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Pokazuje, jak używać narzędzi programistycznych pakietu Office w programie Visual Studio. Aby poznać aktualne przykłady, zobacz [Przykłady dewelopera sieci MSDN: Ucz się dzięki kodowi](http://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Przykłady VSSDK](http://aka.ms/vs2015sdksamples)|Pokazuje, jak rozszerzenie programu Visual Studio.|
 
 ## <a name="see-also"></a>Zobacz też

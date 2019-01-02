@@ -1,9 +1,6 @@
 ---
 title: BP_ERROR_RESOLUTION_INFO | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_ERROR_RESOLUTION_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb2388d93c05500dc3c12bb5d57cd17293f5e16c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8b866681df793e54293268e42e6e172126102aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906699"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 W tym artykule opisano rozwiązania punktu przerwania błędu, takie jak lokalizacja, program i wątku.  
@@ -28,7 +25,7 @@ W tym artykule opisano rozwiązania punktu przerwania błędu, takie jak lokaliz
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-typedef struct _BP_ERROR_RESOLUTION_INFO {   
+typedef struct _BP_ERROR_RESOLUTION_INFO {   
    BPERESI_FIELDS         dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
    IDebugProgram2*        pProgram;  
@@ -39,7 +36,7 @@ typedef struct _BP_ERROR_RESOLUTION_INFO {
 ```  
   
 ```csharp  
-public struct BP_ERROR_RESOLUTION_INFO {   
+public struct BP_ERROR_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  
    public IDebugProgram2         pProgram;  
@@ -74,9 +71,9 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

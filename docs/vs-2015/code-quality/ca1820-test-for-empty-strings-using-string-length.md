@@ -1,12 +1,11 @@
 ---
-title: 'CA1820: Testuj obecność pustych ciągów przy użyciu długości ciągu | Dokumentacja firmy Microsoft'
+title: 'CA1820: Test na obecność pustych ciągów przy użyciu długości ciągu | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 680a9ee1681a98176f2c21fc989331bf82aa2b15
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd9b7c3d254607efb118af3a1ee27856e6f3c523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914655"
 ---
-# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Zbadaj pod kątem ciągów pustych przy użyciu długości ciągu
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testuj obecność pustych ciągów przy użyciu długości ciągu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -55,6 +54,3 @@ ms.locfileid: "49861023"
  Poniższy przykład ilustruje różne techniki, które są używane do wyszukania pusty ciąg.
 
  [!code-csharp[FxCop.Performance.StringTest#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.StringTest/cs/FxCop.Performance.StringTest.cs#1)]
-
-
-

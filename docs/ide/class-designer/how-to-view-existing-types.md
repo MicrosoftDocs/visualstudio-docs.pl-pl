@@ -2,7 +2,6 @@
 title: 'Instrukcje: Wyświetlanie istniejących typów (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e78e92e5d6f8b21dde2660491a944620ac19069b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916669"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Instrukcje: Wyświetlanie istniejących typów w Projektancie klas
 

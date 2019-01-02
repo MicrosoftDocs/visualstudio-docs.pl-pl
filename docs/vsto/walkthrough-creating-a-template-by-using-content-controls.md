@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Tworzenie szablonu za pomocą formantów zawartości'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie szablonu za pomocą formantów zawartości'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931989"
 ---
-# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Wskazówki: Tworzenie szablonu za pomocą formantów zawartości
+# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Przewodnik: Tworzenie szablonu za pomocą formantów zawartości
   W tym instruktażu pokazano, jak utworzyć dostosowywania poziomie dokumentu, który używa kontrolek zawartości do tworzenia zawartości ze strukturą i wielokrotnego użytku w szablonie programu Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -59,7 +56,7 @@ ms.locfileid: "49833190"
   
 ### <a name="to-create-a-new-word-template-project"></a>Aby utworzyć nowy projekt szablonu programu Word  
   
-1.  Utwórz projekt szablonu programu Word o nazwie **MyBuildingBlockTemplate**. W kreatorze należy utworzyć nowy dokument w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz projekt szablonu programu Word o nazwie **MyBuildingBlockTemplate**. W kreatorze należy utworzyć nowy dokument w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zostanie otwarty nowy szablon programu Word w Projektancie i dodaje **MyBuildingBlockTemplate** projekt **Eksploratora rozwiązań**.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49833190"
 5. Na wstążce kliknij **Developer** kartę.  
   
    > [!NOTE]  
-   >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6. W **kontrolki** grupy, kliknij przycisk **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
   
@@ -235,15 +232,13 @@ ms.locfileid: "49833190"
 ## <a name="next-steps"></a>Następne kroki  
  Możesz dowiedzieć się więcej na temat sposobu używania kontrolek zawartości z tego tematu:  
   
--   Powiązywanie kontrolek zawartości do elementów XML, a także o nazwie niestandardowe elementy XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji, zobacz [wskazówki: powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   Powiązywanie kontrolek zawartości do elementów XML, a także o nazwie niestandardowe elementy XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji, zobacz [instruktażu: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Formanty zawartości](../vsto/content-controls.md)   
- [Porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Instrukcje: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

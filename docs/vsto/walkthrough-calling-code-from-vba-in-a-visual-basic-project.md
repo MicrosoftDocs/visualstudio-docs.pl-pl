@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Wywoływanie kodu z VBA w projekcie Visual Basic'
-ms.custom: ''
+title: 'Przewodnik: Wywoływanie kodu z VBA w projektach Visual Basic'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917660"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Wskazówki: Wywoływanie kodu z VBA w projekcie Visual Basic
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Przewodnik: Wywoływanie kodu z VBA w projektach Visual Basic
   W tym instruktażu przedstawiono sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word z Visual Basic for Applications (VBA) kod w dokumencie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę, która `ThisDocument` hosta klasy elementu, ujawnia metody dla kodu VBA, a następnie wywołaj metodę z kodu VBA w dokumencie.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -72,7 +69,7 @@ ms.locfileid: "38808940"
 3.  Na wstążce kliknij **Developer** kartę.  
   
     > [!NOTE]  
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  W **kodu** grupy, kliknij przycisk **języka Visual Basic**.  
   
@@ -214,15 +211,13 @@ ms.locfileid: "38808940"
 ## <a name="next-steps"></a>Następne kroki  
  Możesz dowiedzieć się więcej informacji na temat wywoływanie kodu w rozwiązaniach pakietu Office z VBA w następujących tematach:  
   
--   Wywołaj kod w dostosowaniu Visual C# z języka VBA. Ten proces różni się od procesu języka Visual Basic. Aby uzyskać więcej informacji, zobacz [wskazówki: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+-   Wywołaj kod w dostosowaniu Visual C# z języka VBA. Ten proces różni się od procesu języka Visual Basic. Aby uzyskać więcej informacji, zobacz [instruktażu: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
--   Wywoływanie kodu w dodatku narzędzi VSTO z kodu VBA. Aby uzyskać więcej informacji, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Wywoływanie kodu w dodatku narzędzi VSTO z kodu VBA. Aby uzyskać więcej informacji, zobacz [instruktażu: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)   
  [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Porady: udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Porady: udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Wskazówki: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  
+ [Instrukcje: Udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Instrukcje: Udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Przewodnik: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  

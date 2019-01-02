@@ -1,9 +1,8 @@
 ---
-title: 'Błąd: Monitor debugera zdalnego Microsoft Visual (MSVSMON.EXE) zdaje się nie być uruchomiony na komputerze zdalnym.'
+title: 'Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.server_machine_no_default
@@ -17,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2047174106c552357de69a25b0b676c4ab6a2c3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d143eb9750aecfcadf63fe999df858ae02dd18a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923010"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Błąd: Monitor debugera zdalnego Microsoft Visual (MSVSMON.EXE) zdaje się nie być uruchomiony na komputerze zdalnym.
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.
 Ten komunikat o błędzie oznacza, że program Visual Studio nie można odnaleźć poprawne wystąpienie programu Visual Studio Monitor zdalnego debugowania na komputerze zdalnym. Visual Studio Monitor zdalnego debugowania musi być zainstalowany dla zdalnego debugowania do pracy. Aby uzyskać informacje dotyczące pobierania i konfigurowania zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
   
 > [!IMPORTANT]
 >  Jeśli uważasz, że ten komunikat został przesłany z powodu błędu w produkcie, [Zgłoś ten problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Jeśli potrzebujesz więcej pomocy, zobacz [Porozmawiaj z nami](../ide/talk-to-us.md) sposobów na kontakt z firmą Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Został wyświetlony komunikat, gdy został I debugowania w programie Visual Studio 2010 lub starszy  
- Wersja programu Visual Studio, którego używasz w przypadku programu Visual Studio 2010 lub starszy, ten błąd może również występować Jeśli udostępnianie plików i drukarek nie jest włączona. Aby dowiedzieć się więcej na temat tego problemu, zapoznaj się z programu Visual Studio 2010 w niniejszej dokumentacji: [błąd: Microsoft zdalny Monitor debugowania Visual Studio (MSVSMON. Z rozszerzeniem EXE) nie jest uruchomiony na komputerze zdalnym. — Program visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))  
+ Wersja programu Visual Studio, którego używasz w przypadku programu Visual Studio 2010 lub starszy, ten błąd może również występować Jeśli udostępnianie plików i drukarek nie jest włączona. Aby dowiedzieć się więcej na temat tego problemu, można znaleźć programu Visual Studio 2010 w niniejszej dokumentacji: [Błąd: Microsoft Visual Studio Monitor debugera zdalnego (polecenia MSVSMON. Z rozszerzeniem EXE) nie jest uruchomiony na komputerze zdalnym. — Program visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Został wyświetlony komunikat, gdy został I debugowanie lokalnie  
  Jeśli otrzymujesz ten komunikat, gdy debugujesz lokalnie, oprogramowanie antywirusowe lub zapory innych firm może być stronę. Visual Studio to 32-bitowej aplikacji, więc używa 64-bitowej wersji zdalnego debugera do debugowania 64-bitowych aplikacji. Dwa procesy komunikacji za pośrednictwem sieci lokalnej na komputerze lokalnym. Żaden ruch opuszcza komputera, ale istnieje możliwość, że oprogramowanie zabezpieczeń innych firm mogą blokować komunikacji.  

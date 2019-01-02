@@ -1,8 +1,6 @@
 ---
-title: API rozszerzalności pliku podsumowania zrzutu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Interfejs API rozszerzalności podsumowania pliku zrzutu | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938922"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API rozszerzalności pliku podsumowania zrzutu
-Korzystając z rozszerzalności interfejsów API w tej sekcji, można rozszerzyć. System projektu exe i **zrzutu Podsumowanie** strony do użycia z własnego aparatu debugowania niestandardowych.  
+W tej sekcji, korzystając z rozszerzalności interfejsów API, można rozszerzyć. System projektu exe i **podsumowanie zrzutu** strony do użycia z własnego niestandardowego aparatu debugowania.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- Interfejsy API do rozszerzania **zrzutu Podsumowanie** strony i. System projektu exe są dostępne w następujących nazw:  
+ Interfejsy API, rozszerzania **podsumowanie zrzutu** strony i. System projektu exe są dostępne w następujących nazw:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przy użyciu plików zrzutu](../debugger/using-dump-files.md)
+ [Używanie plików zrzutów](../debugger/using-dump-files.md)

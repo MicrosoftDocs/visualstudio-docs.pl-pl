@@ -1,8 +1,6 @@
 ---
 title: 'Instrukcje: Ograniczanie Instrumentacji do określonych funkcji | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e145a50c3fdb643affb67989ae11346bf7e30f9
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: d0135ea7d3a99f54b8bc61fb77c5b1657992033c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895061"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Instrukcje: Ograniczanie instrumentacji do określonych funkcji
 Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną funkcję, ustawiając opcje w **zaawansowane** strony **sesji wydajności** ani kierowania stron właściwości binarnych:  

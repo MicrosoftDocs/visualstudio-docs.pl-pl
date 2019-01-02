@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findSymbolsForAcceleratorPointerTag | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f53031bd29af50b90f88868a36f340ee460201a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23c304795f01a3dc820c2ca5b3ba1b3558177659
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961299"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 Zwraca wyliczenie symboli dla zmiennej, która odpowiada wartości określonego tagu w obiekcie nadrzędnym funkcji klasy zastępczej akceleratora.  
@@ -25,7 +23,7 @@ Zwraca wyliczenie symboli dla zmiennej, która odpowiada wartości określonego 
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT findSymbolsForAcceleratorPointerTag (   
+HRESULT findSymbolsForAcceleratorPointerTag (   
    IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    IDiaEnumSymbols**     ppResult  

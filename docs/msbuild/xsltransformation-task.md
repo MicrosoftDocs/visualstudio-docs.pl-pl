@@ -1,8 +1,6 @@
 ---
 title: XslTransformation Task | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a18dff58b38dc80eade3ef030b4156b040cc8ce
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fc005efd13acfa3ea50d3e2cd0d04fc40f89de8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966093"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation — zadanie
 Przekształcenia na XML danych wejściowych za pomocą XSLT lub skompilowane XSLT i dane wyjściowe do wyjścia urządzenia lub pliku.  

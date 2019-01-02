@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Dodawanie formantów do widoku Backstage '
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924660"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Instrukcje: Dodawanie formantów do widoku Backstage
   Można użyć projektanta wstążki, aby dodać formanty do menu otwieranego po kliknięciu **pliku** kartę. Po uruchomieniu aplikacji, formanty, które dodajesz do **pliku** karta pojawi się grupa o nazwie **Add-ins**.  
@@ -71,5 +68,3 @@ ms.locfileid: "53647126"
  [XML — Wstążka](../vsto/ribbon-xml.md)   
  [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

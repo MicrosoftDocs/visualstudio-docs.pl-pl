@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- devlang-csharp
+ms.technology: devlang-csharp
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -19,12 +18,12 @@ caps.latest.revision: 49
 author: ghogen
 ms.author: ghogen
 manager: douge
-ms.openlocfilehash: cbee7ee261a2ace30d4e22b81da96a8e23902ede
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 308c62f4e5e978b5ce2facd390740ece28043ea6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852728"
 ---
 # <a name="getting-started-with-visual-c-in-visual-studio-2015"></a>Wprowadzenie do języka Visual C++ w programie Visual Studio 2015
 Ta zawartość została usunięta. Wprowadzenie do programu Visual C++ w programie Visual Studio, zobacz [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).

@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsymbols::SKIP — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d30183d01e74bf5e6171d98b5df21c678c8dbd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 492748dc54f68d4f888b8cfb6ad8e27ec44435d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918628"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 Pomija określoną liczbę symboli w kolejności wyliczenia.  
@@ -27,7 +25,7 @@ Pomija określoną liczbę symboli w kolejności wyliczenia.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

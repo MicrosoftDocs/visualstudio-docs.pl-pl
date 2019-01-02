@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0c39eecadee0cad44c0e448051869b77022282e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911903"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Porady: Zastosuj rozkład do opóźnienia dla użytkownika w tempie model testu mieszanego do
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: Zastosuj rozkład do opóźnienia dla użytkownika w tempie model testu mieszanego do
 
 Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, można użyć edytora testu obciążenia, aby zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
 
@@ -34,7 +33,7 @@ Wartość **dystrybucji Zastosuj rozkład do opóźnienia** można ustawić na w
 
      Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu jest ustawiona na dwóch użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **True**, normalny rozkład statystyczny jest stosowany do czasu oczekiwania między testy. Testy będą nadal działać dwóch testów na godzinę, ale nie będzie zawsze 30-minutowy opóźnienie między nimi. Pierwszy test, może uruchomić po czterech minut i drugi test po 45 minut.
 
-- **FALSE**: testy w tempie, który został określony dla wartości w **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okno dialogowe. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **FALSE**: Testy w tempie, który został określony dla wartości w **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okno dialogowe. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu jest ustawiona na dwóch użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **False**, spowoduje nadanie nie swobodę uruchamiania testów. Test zostanie uruchomiony co 30 minut. Dzięki temu wykonać dwa testy na godzinę.
 
@@ -57,6 +56,6 @@ Wartość **dystrybucji Zastosuj rozkład do opóźnienia** można ustawić na w
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
+- [Przewodnik: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)

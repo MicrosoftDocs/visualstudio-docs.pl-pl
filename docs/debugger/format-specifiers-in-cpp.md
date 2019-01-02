@@ -1,8 +1,6 @@
 ---
 title: Specyfikatory debugera (C++) formatu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -29,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73cd5655a5cb843c29fb628a2ec233860410dc7c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968342"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w języku C++ w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu.  
@@ -76,15 +74,15 @@ int main() {
 |su|Ciąg Unicode (kodowanie UTF-16) (ze znakami cudzysłowu)|\<Lokalizacja > L "hello world"|L "hello world"<br /><br /> u "hello world"|  
 |Sub|Ciąg Unicode (kodowanie UTF-16) (bez cudzysłowu)|\<Lokalizacja > L "hello world"|Cześć ludzie|  
 |bstr|Ciąg binarny BSTR (ze znakami cudzysłowu)|\<Lokalizacja > L "hello world"|L "hello world"|  
-|środowisko|Blok środowiska (ciąg zakończone podwójnej precyzji niż null)|\<Lokalizacja > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
-|**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<Lokalizacja > U "hello world"|U "hello world"|  
+|env|Blok środowiska (ciąg zakończone podwójnej precyzji niż null)|\<Lokalizacja > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<Lokalizacja > U "hello world"|u "hello world"|  
 |**s32b**|Ciąg UTF-32 (bez cudzysłowu)|\<Lokalizacja > U "hello world"|Cześć ludzie|  
-|**pl**|enum|SATURDAY(6)|Sobota|  
+|**en**|enum|SATURDAY(6)|Sobota|  
 |**hv**|Typ wskaźnika — wskazuje, że wartość wskaźnika, poddawanego inspekcji jest wynikiem alokacji sterty w tablicy, na przykład `new int[3]`.|\<Lokalizacja > {\<pierwszy element członkowski >}|\<Lokalizacja > {\<pierwszy element członkowski >, \<drugi element członkowski >,...}|  
-|**Nazwa**|Pomija adres pamięci wskaźnika do obiektu.|\<Lokalizacja >, {elementu członkowskiego = wartość...}|{elementu członkowskiego = wartość...}|  
+|**Nazwa**|Pomija adres pamięci wskaźnika do obiektu.|\<Lokalizacja >, {elementu członkowskiego = wartość...}|{member=value...}|  
 |**ND**|Wyświetla tylko klasy bazowej informacje, ignorując klasy pochodne|`(Shape*) square` zawiera klasy podstawowej i pochodnej informacji o klasie|Wyświetla tylko podstawowy informacji o klasie|  
 |godz.|Kod błędu HRESULT lub Win32. Ten specyfikator jest już potrzebny dla wartości HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|  
-|wc|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|  
+|WC|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|  
 |wm|Numery komunikatu Windows|16|WM_CLOSE|  
 |!|format RAW, ignorowanie wszelkich dostosowań widoków typu danych|\<dostosowane reprezentacji >|4|  
   
@@ -97,7 +95,7 @@ int main() {
 |Specyfikator|Format|Oryginalnej wartości czujki|Wartości wyświetlanej|  
 |---------------|------------|---------------------------|---------------------|  
 |n|Dziesiętna lub **szesnastkowe** liczba całkowita|pBuffer, [32]<br /><br /> pBuffer,**[0x20]**|Wyświetla `pBuffer` jako tablica 32 elementów.|  
-|**[exp]**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą.|pBuffer,[bufferSize]|Wyświetla pBuffer jako tablicę `bufferSize` elementów.|  
+|**[exp]**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą.|pBuffer, [bufferSize]|Wyświetla pBuffer jako tablicę `bufferSize` elementów.|  
 |**expand(n)**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą|pBuffer, expand(2)|Wyświetla trzeci element  `pBuffer`|  
   
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu dla debugowania międzyoperacyjnego przy użyciu języka C + +/ CLI  
@@ -110,16 +108,16 @@ int main() {
 |o|Nieoznaczona ósemkowa liczba całkowita|0xF065|0170145|  
 |x<br /><br />X|Szesnastkowa liczba całkowita|61541|0x0000f065|  
 |**l**<br /><br />**h**|długi lub krótki prefiks dla: d, i, u, o, x X|00406042|0x0c22|  
-|**f**|oznaczona liczba zmiennoprzecinkowa|(3./2.), f|1.500000|  
+|**f**|oznaczona liczba zmiennoprzecinkowa|(3. / 2.), f|1.500000|  
 |**e**|podpisana Notacja naukowa|(3.0/2.0)|1.500000e + 000|  
-|**g**|podpisana zmiennoprzecinkowa lub oznaczona Notacja naukowa<br/> nich okaże się krótsza|(3.0/2.0)|1.5|  
+|**g**|podpisana zmiennoprzecinkowa lub oznaczona Notacja naukowa<br/> nich okaże się krótsza|(3.0/2.0)|1,5|  
 |c|pojedynczy znak|\<Lokalizacja >|101 "e"|  
 |s|Const char * (ze znakami cudzysłowu)|\<Lokalizacja >|"hello world"|  
 |su|Const wchar_t *<br /><br /> Const char16_t\* (ze znakami cudzysłowu)|\<Lokalizacja >|L "hello world"|  
 |Sub|Const wchar_t *<br /><br /> Const char16_t\*|\<Lokalizacja >|Cześć ludzie|  
 |s8|Const char * (ze znakami cudzysłowu)|\<Lokalizacja >|"hello world"|  
 |godz.|Kod błędu HRESULT lub Win32.<br/>Ten specyfikator jest już potrzebny dla wartości HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|  
-|wc|Flaga klasy okna|0x00000040,|WC_DEFAULTCHAR|  
+|WC|Flaga klasy okna|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numery komunikatu Windows|0x0010|WM_CLOSE|  
 |!|format RAW, ignorowanie wszelkich dostosowań widoku typu danych|\<dostosowane reprezentacji >|4|  
   
@@ -128,7 +126,7 @@ int main() {
   
 |Symbol|Format|Oryginalnej wartości czujki|Wartości wyświetlanej|  
 |------------|------------|--------------------------|---------------------|  
-|**ma**|64 znaki ASCII|0x0012ffac|0x0012ffac. 4... 0... ". 0W &... 1T &.0.:W... 1... ". 1. JO &.1.2.. ". 1... 0y... 1|  
+|**ma**|64 znaki ASCII|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
 |**m**|16 bajtów w formacie szesnastkowym, a następnie 16 znaków ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
 |**mb**|16 bajtów w formacie szesnastkowym, a następnie 16 znaków ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
 |**mw**|8 słów|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  

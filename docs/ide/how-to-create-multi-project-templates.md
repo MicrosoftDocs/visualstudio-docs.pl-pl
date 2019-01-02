@@ -2,7 +2,6 @@
 title: Tworzenie szablonów obejmujących wiele projektów
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -11,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34d15de5012ff640ba05b106321c2a534557c3e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925828"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Porady: Tworzenie szablonów wielu projektów
+# <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów obejmujących wiele projektów
 
 Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. Podczas tworzenia projektu jest oparty na szablonie wieloprojektowym z **nowy projekt** okno dialogowe, każdy projekt w szablonie zostanie dodany do rozwiązania.
 
@@ -171,7 +170,7 @@ W tym przykładzie użyto **SolutionFolder** elementu, aby podzielić projekty n
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
+- [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
 - [Visual Studio odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)
 - [Solutionfolder — element (szablony Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Projecttemplatelink — element (szablony Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

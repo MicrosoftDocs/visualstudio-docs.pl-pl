@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — TransactedReceiveScope, Projektant dział
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a42c1cc9dac8e71bfe71f684232fdbf67fadb710
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4860eb391f4aab0f15eaa0536b248140c1e5770
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914932"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope, projektant działań
 
@@ -40,7 +39,7 @@ W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Transacte
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna nazwa przyjazna <xref:System.ServiceModel.Activities.TransactedReceiveScope> działania. Wartość domyślna to TransactedReceiveScope.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nazwa nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć nazwy wyświetlanej.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Spadnie <xref:System.ServiceModel.Activities.Receive> działanie do **żądania** bloku na powierzchni projektanta działań.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Prawda|Spadnie <xref:System.ServiceModel.Activities.Receive> działanie do **żądania** bloku na powierzchni projektanta działań.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Spadnie <xref:System.Activities.Activity> do **treści** bloku na powierzchni projektanta działań.|
 
 ## <a name="see-also"></a>Zobacz także

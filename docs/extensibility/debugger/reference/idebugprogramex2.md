@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramEx2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramEx2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8e26a21e00ff9f0fff664130171a302667ee414
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3131dae9d9bf715d3927f9654224cab3d6a36d53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907887"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-Ten interfejs umożliwia sesji debugowania Menedżera (SDM) dołączyć do programu i uzyskać węzła programu skojarzonego z programem.  
+Ten interfejs umożliwia sesji debugowania manager (SDM) Dołącz do programu i przełączyć węzeł program skojarzony z programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,12 +29,12 @@ IDebugProgramEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawcy niestandardowego numeru portu implementuje ten interfejs dla tego samego obiektu jako [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejsu, aby umożliwić SDM dołączyć do programu, w tym samym czasie co dostawcy portu śledzić wszystkie sesje dołączony do Program. Jeśli wybiera dostawcy niestandardowego numeru portu może zawierać implementację tego interfejsu.  
+ Dostawcy niestandardowego portu implementuje ten interfejs na ten sam obiekt jako [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejsu, aby umożliwić SDM dołączyć do programu, gdy w tym samym czasie co dostawcy portu śledzić wszystkie sesje dołączony do Program. Dostawca numery portów mogą implementować ten interfejs, jeśli go wybierze.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołania SDM [QueryInterface](/cpp/atl/queryinterface) na `IDebugProgram2` interfejsu można uzyskać interfejsu do śledzenia sesji, które zostały dołączone do programów.  
+ Wywołania SDM [QueryInterface](/cpp/atl/queryinterface) na `IDebugProgram2` interfejsu, aby uzyskać ten interfejs do śledzenia sesji, które zostały dołączone do programów.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugProgramEx2`.  
   
 |Metoda|Opis|  
@@ -51,10 +48,10 @@ IDebugProgramEx2 : IUnknown
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

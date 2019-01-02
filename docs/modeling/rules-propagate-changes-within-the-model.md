@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925553"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagowanie zmian jeden element do innego w wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany dowolnego elementu w Store, zasady są zaplanowane do wykonania, zwykle w przypadku, gdy najbardziej zewnętrznej transakcja została zatwierdzona. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak elementu Dodawanie lub usuwanie go. Zasady można dołączyć do określonych typów elementów, kształty i diagramy. Wiele wbudowanych funkcji są definiowane przez reguły: na przykład zasady upewnij się, że diagram jest aktualizowana po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.
@@ -134,7 +133,7 @@ namespace ExampleNamespace
   | Klasa bazowa | Wyzwalacz |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Element, link lub kształt zostanie dodany.<br /><br /> Umożliwia wykrywanie nowych relacji, oprócz nowych elementów. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Wartość właściwość domeny została zmieniona. Argument metody zawiera starej i nowej wartości.<br /><br /> Dla kształtów, ta reguła jest wyzwalana, gdy wbudowane `AbsoluteBounds` zmiany właściwości, jeśli jest przesuwany.<br /><br /> W wielu przypadkach jest bardziej wygodne zastąpić `OnValueChanged` lub `OnValueChanging` w obsłudze właściwości. Te metody są wywoływane bezpośrednio przed zmianą i po niej. Z drugiej strony gdy zasada jest wykonywana zwykle na końcu transakcji. Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:** ta reguła nie jest wyzwalana po utworzeniu lub usunięciu linku. Zamiast tego należy napisać `AddRule` i `DeleteRule` dla relacji domeny. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Wartość właściwość domeny została zmieniona. Argument metody zawiera starej i nowej wartości.<br /><br /> Dla kształtów, ta reguła jest wyzwalana, gdy wbudowane `AbsoluteBounds` zmiany właściwości, jeśli jest przesuwany.<br /><br /> W wielu przypadkach jest bardziej wygodne zastąpić `OnValueChanged` lub `OnValueChanging` w obsłudze właściwości. Te metody są wywoływane bezpośrednio przed zmianą i po niej. Z drugiej strony gdy zasada jest wykonywana zwykle na końcu transakcji. Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:**  Ta zasada nie zostanie wywołany, po utworzeniu lub usunięciu linku. Zamiast tego należy napisać `AddRule` i `DeleteRule` dla relacji domeny. |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Wyzwalane, gdy element lub link ma być usunięty. Właściwość ModelElement.IsDeleting ma wartość true, aż do zakończenia transakcji. |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Wykonywane, gdy element lub link został usunięty. Reguła będzie wykonywana po zostały wykonane wszystkie inne zasady, w tym DeletingRules. ModelElement.IsDeleting ma wartość false, a ModelElement.IsDeleted ma wartość true. Aby zezwolić na kolejne cofania, element nie jest usuwany z pamięci, ale zostanie on usunięty z Store.ElementDirectory. |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Element jest przenoszony z jednego magazynu partycji do innej.<br /><br /> (Zwróć uwagę, że to nie jest powiązana graficzny położenie kształtu). |

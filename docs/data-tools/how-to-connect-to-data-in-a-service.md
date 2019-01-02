@@ -1,5 +1,5 @@
 ---
-title: 'Porady: łączenie z danymi w usłudze'
+title: 'Instrukcje: Łączenie z danymi w usłudze'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 66a13ac6f23caa3e6ccf28d5d68c03b3fe7fdb4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923877"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Porady: łączenie z danymi w usłudze
+# <a name="how-to-connect-to-data-in-a-service"></a>Instrukcje: Łączenie z danymi w usłudze
 
 Łączenie aplikacji z danymi zwróconymi z usługi, uruchamiając [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png) i wybierając polecenie **usługi** na **wybierz typ źródła danych**strony.
 

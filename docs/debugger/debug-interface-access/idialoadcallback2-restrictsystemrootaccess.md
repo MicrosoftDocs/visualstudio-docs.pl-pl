@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback2::RestrictSystemRootAccess | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Idialoadcallback2::restrictsystemrootaccess — | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 000d0b5ce21b6b50b1abab76aa8bf4a7bb1cd62a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 340e6a8cffbf681bb9e976664ccbbe15e6b00786
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918737"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
-Określa, czy potrzeby wyszukiwania plików PDB jest dozwolone w katalogu głównym systemu.  
+Określa, jeśli wyszukiwanie plików .pdb jest dozwolona w katalogu głównym systemu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,10 +29,10 @@ HRESULT RestrictSystemRootAccess();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Inne niż powrotnych kodu `S_OK` uniemożliwia wyszukiwanie katalog główny systemu plików PDB.  
+ Dowolny kod powrotu innych niż `S_OK` zapobiega wyszukiwanie katalog główny systemu plików .pdb.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

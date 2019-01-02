@@ -1,8 +1,6 @@
 ---
 title: Debugowanie kodu GPU | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0fdab78364eaf4c0f9fd86753b8ca1c4178415
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 938d2a81f60b86904d0334380734979c2a39cc43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893947"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (GPU). Obsługa w programie Visual Studio do debugowania GPU obejmuje wykrywania wyścigu, uruchamianie procesów i dołączanie do, a Integracja debugowania systemu windows.  
@@ -55,11 +53,11 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
   
 -   [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)  
   
--   [Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  
+-   [Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 -   [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md) (pasek narzędzi debugowania lokalizacji)  
   
--   [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Wyjątki synchronizacji danych  
  Debuger można określić wiele warunków synchronizacji danych podczas wykonywania. Gdy zostanie wykryty warunek, debuger przejdzie w stan przerwania. Dostępne są dwie opcje —**Przerwij** lub **Kontynuuj**. Za pomocą **wyjątki** okno dialogowe, możesz określić, czy debuger wykryje te warunki, a także jakich warunkach go spowoduje przerwanie dla. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md). Można również użyć **opcje** okno dialogowe, aby określić, czy debuger powinien Ignoruj wyjątki, jeśli dane, które są zapisywane nie zmienia wartość danych. Aby uzyskać więcej informacji, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).  
@@ -75,13 +73,13 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Błąd: Istnieje problem konfiguracji wybranego typu akceleratora debugowania.  
  Ten błąd występuje, gdy występuje niespójność między ustawień projektu i konfiguracji komputera, na którym wykonujesz debugowanie na. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Błąd: Sterownika debugowania odpowiadającego wybranemu typowi akceleratora debugowania nie jest zainstalowany na komputerze docelowym.  
+### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Błąd: Na komputerze docelowym nie zainstalowano sterownika debugowania odpowiadającego wybranemu typowi akceleratora debugowania.  
  Ten błąd występuje, Jeśli debugujesz na komputerze zdalnym. Debuger nie może określić do czasu wykonywania, czy sterowniki są zainstalowane na komputerze zdalnym. Sterowniki są dostępne od producenta karty graficznej.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Błąd: I wykrywania limitu czasu odzyskiwania (TDR) musi być wyłączone w lokacji zdalnej.  
  Istnieje możliwość dla obliczeń C++ AMP może przekroczyć domyślny interwał czasu jest ustawiana przez proces odzyskiwania (TDR) i wykrywania limitu czasu Windows. Jeśli tak się stanie, obliczenie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz [obsługi TDR w bibliotece C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)   
+ [Przewodnik: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)   
  [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Rozpocznij debugowanie GPU w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

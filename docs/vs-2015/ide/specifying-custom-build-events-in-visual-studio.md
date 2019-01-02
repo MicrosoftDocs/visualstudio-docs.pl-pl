@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2dbb785bcc3092872763d23e968cbf699603286
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893555"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Określenie niestandardowych zdarzeń kompilacji w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +29,9 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
 
  Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
 
--   Visual Basic —[porady: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic —[jak: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Wizualne C# i F#—[porady: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   Wizualne C# i F#—[jak: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ —[określanie zdarzeń kompilacji](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -61,4 +60,4 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
     >  `%I` w powyższym kodzie powinno być `%%I` w skryptach wsadowych.
 
 ## <a name="see-also"></a>Zobacz też
- [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md) [wstępnie zdarzeń/po kompilacji — zdarzenia kompilacji wiersza polecenia okno dialogowe](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [znaki specjalne w programie MSBuild](../msbuild/msbuild-special-characters.md) [wskazówki: tworzenie aplikacji](../ide/walkthrough-building-an-application.md)
+ [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md) [wstępnie zdarzeń/po kompilacji — zdarzenia kompilacji wiersza polecenia okno dialogowe](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [znaki specjalne w programie MSBuild](../msbuild/msbuild-special-characters.md) [instruktażu: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)

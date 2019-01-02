@@ -1,9 +1,6 @@
 ---
-title: Kreator (. Pliku Vsz) | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Kreator (. Plik Vsz) | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsz files
@@ -15,20 +12,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0076e1ee7409486a3b7b86ccd0f46bcd02a54a5
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c66665fa927cbd1f7c2f704467750c6c943eb467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898193"
 ---
 # <a name="wizard-vsz-file"></a>Kreator (plik Vsz)
 
-Zintegrowane środowisko programistyczne (IDE) używa plików .vsz, aby uruchomić kreatora. Te pliki .vsz zawierają informacje, które IDE używa w celu określenia, które kreatora w celu wywołania i jakie informacje do przekazania do kreatora.
+Zintegrowane środowisko programistyczne (IDE) korzysta z plików .vsz do uruchamiania kreatorów. Te pliki .vsz zawierają informacje, które używa środowiska IDE, aby określić które kreatora do wywołania i jakie informacje do przekazania do kreatora.
 
-Plik .vsz jest wersja pliku tekstu w formacie pliku ini, który ma sekcji. Informacje o znanych IDE są przechowywane na początku pliku. Zapewnia to łącze między kreatora, który wywołuje IDE oraz parametry, które znajdują się w pliku .vsz do przekazania do środowiska IDE. Pozostała część pliku zawiera parametry specyficznych dla kreatora i które mają zostać zebrane przez IDE i przekazywane do określonych kreatora.
+Plik .vsz jest wersja pliku tekstu w formacie pliku ini, który ma nie sekcji. Informacje znane IDE znajduje się na początku pliku. Zapewnia to łącze między kreatora, który wywołuje IDE i parametry, które znajdują się w pliku .vsz do przekazania do środowiska IDE. Pozostała część pliku zawiera parametry specyficznych dla kreatora, i które mają być zbierane przez środowisko IDE i przekazywane do określonych kreatora.
 
-W poniższym przykładzie przedstawiono zawartość pliku .vsz.
+Poniższy przykład pokazuje zawartość pliku .vsz.
 
 ```
 VSWizard 8.0
@@ -41,13 +38,13 @@ Poniżej przedstawiono części w pliku .vsz.
 
 |Część|Opis|
 |----------|-----------------|
-|VSWizard|Pierwszy parametr w pliku jest numer wersji formatu pliku szablonu. Ten numer wersji musi być w wersji 6.0, 7.0, 7.1 lub 8.0. Inne liczby nie może zostać uruchomiona i spowodować wystąpienie błędu nieprawidłowy Format.|
-|Kreator|To pole zawiera OLE programu kreatora lub identyfikator GUID reprezentację ciągu identyfikatora CLSID kreatora, który jest cocreated IDE.|
-|Param|Części te są opcjonalne. Można dodać więcej niż wymagana.|
+|VSWizard|Pierwszy parametr w pliku jest numer wersji formatu pliku szablonu. Numer wersji musi być w wersji 6.0, 7.0, 7.1 lub 8.0. Inne liczby nie można uruchomić i powodują wystąpienie błędu nieprawidłowy Format.|
+|Kreator|To pole zawiera OLE ProgID kreatora lub też ciąg reprezentujący identyfikator GUID identyfikatora CLSID kreatora, który jest cocreated IDE.|
+|Param|Te elementy są opcjonalne. Możesz dodać dowolną liczbę wymaganych.|
 
-Parametry włączyć plik .vsz można przekazywać dodatkowych parametrów niestandardowych do kreatora. Każda wartość jest przekazywany jako ciąg element w tablicy typu Variant do kreatora. Aby uzyskać więcej informacji, zobacz [niestandardowe parametry](../../extensibility/internals/custom-parameters.md).
+Parametry włączenia pliku .vsz do przekazania dodatkowych parametrów niestandardowych do kreatora. Każda wartość jest przekazywana jako element ciągu w tablicy wariantów do kreatora. Aby uzyskać więcej informacji, zobacz [parametry niestandardowe](../../extensibility/internals/custom-parameters.md).
 
-Aby dodać plik .vsz domyślny identyfikator ustawień regionalnych, określić `FALLBACK_LCID`= xxxx, gdzie xxxx to identyfikator ustawień regionalnych, na przykład 1033 dla języka angielskiego. Gdy `FALLBACK_LCID` zdefiniowano parametru, jeśli bieżący identyfikator nie zostanie znaleziony, kreator używa Identyfikatora ustawień regionalnych rezerwowego.
+Aby dodać domyślny identyfikator ustawień regionalnych do pliku .vsz, określ `FALLBACK_LCID`= xxxx, gdzie xxxx to identyfikator ustawień regionalnych, na przykład 1033 dla języka angielskiego. Gdy `FALLBACK_LCID` zdefiniowano parametru, jeśli bieżący identyfikator nie zostanie znaleziony, kreator używa Identyfikatora ustawień regionalnych rezerwowego.
 
 ## <a name="see-also"></a>Zobacz także
 

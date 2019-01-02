@@ -1,9 +1,6 @@
 ---
 title: Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919027"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
   Mogą wystąpić problemy podczas wykonywania następujących zadań, podczas opracowywania rozwiązań pakietu Office w Visual Studio:  
@@ -57,7 +54,7 @@ ms.locfileid: "50672954"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Błędy podczas tworzenia projektu skoroszytu programu Excel, oparte na istniejący skoroszyt  
  Jeśli tworzysz nowy projekt skoroszytu programu Excel oparty na podstawie istniejącego skoroszytu, można napotkać kombinację następujących błędów.  
   
- Z poziomu programu Excel: "Ostrzeżenie dotyczące prywatności: ten dokument zawiera makra, formanty ActiveX, informacje o pakietach rozszerzeń XML lub składniki sieci Web. Te mogą obejmować informacje osobiste, którego nie można usunąć przez inspektora dokumentu."  
+ Z poziomu programu Excel: "Ostrzeżenie dotyczące prywatności: Ten dokument zawiera makra, formanty ActiveX, informacje o pakietach rozszerzeń XML lub składniki sieci Web. Te mogą obejmować informacje osobiste, którego nie można usunąć przez inspektora dokumentu."  
   
  W programie Visual Studio: "Designer nie można prawidłowo załadować."  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Ten kod powoduje zwrócenie następujących błędów kompilacji:  
   
-- Visual Basic: "odwołanie do klasy"Klasa dokumentu"jest niedozwolone podczas jej zestawu jest połączony, przy użyciu trybu nie-PIA."  
+- Visual Basic: "Odwołania do klasy"Klasa dokumentu"jest niedozwolone podczas jej zestawu jest połączony, przy użyciu trybu nie-PIA."  
   
-- Visual C#: "typu międzyoperacyjnego, który nie może zostać osadzony"Microsoft.Office.Interop.Word.DocumentClass". Użyj odpowiedniego interfejsu."  
+- Wizualne C#: "Typu międzyoperacyjnego, który nie może zostać osadzony"Microsoft.Office.Interop.Word.DocumentClass". Użyj odpowiedniego interfejsu."  
   
   Aby rozwiązać ten problem, należy zmodyfikować kod, aby odwołać zamiast tego odpowiedniego interfejsu. Na przykład, zamiast odwołania <xref:Microsoft.Office.Interop.Word.DocumentClass> obiekt; odwoływać się do wystąpienia <xref:Microsoft.Office.Interop.Word.Document> zamiast tego interfejsu.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Rozwiązywanie problemów z rozwiązań pakietu Office](../vsto/troubleshooting-office-solutions.md)   
  [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)   
  [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

@@ -1,12 +1,11 @@
 ---
-title: 'CA2144: Kod przezroczysty nie powinien ładować zestawów z tablic bajtowych | Dokumentacja firmy Microsoft'
+title: 'CA2144: Przezroczysty kod nie powinien ładować zestawów z tablic bajtowych | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,14 +15,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 395a21b7926f9b47a001eb3021026e27b3e4eb39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02feb0fab6c8cfa4c1e25549639a09a403f88ac4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919711"
 ---
-# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Jawny kod nie powinien ładować zestawów z tablic bajtowych
+# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Przezroczysty kod nie powinien ładować zestawów z tablic bajtowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -55,6 +54,3 @@ ms.locfileid: "49922799"
  Reguła jest uruchamiana na następujący kod, ponieważ metoda przezroczysta pod względem ładuje zestaw z tablicy bajtowej.
 
  [!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2144.transparentmethodsshouldnotloadassembliesfrombytearrays/cs/ca2144 - transparentmethodsshouldnotloadassembliesfrombytearrays.cs#1)]
-
-
-

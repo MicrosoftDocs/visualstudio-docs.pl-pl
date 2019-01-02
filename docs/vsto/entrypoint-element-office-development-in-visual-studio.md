@@ -3,8 +3,6 @@ title: '&lt;punkt wejścia&gt; — element (Office development w programie Visua
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e6e6ffe216d800a58a34696c8577ff08adc94b0f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: c99b6b052fcb411d3f5972d174f804f3000faabe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902132"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punkt wejścia&gt; — element (Office development w programie Visual Studio)
   Każdy `entryPoint` elementu `vstav3` obszar nazw identyfikuje zestaw dostosowania, który powinien zostać uruchomiony, jeśli to [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikacja jest zainstalowana.

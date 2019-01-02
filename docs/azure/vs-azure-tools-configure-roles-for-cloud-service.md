@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: e1b10fc38abaf497332746e1367f5727f0998023
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c9bbc913b98b4acddd04a2cc1e5b331848f85e2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893673"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 
@@ -275,4 +274,3 @@ Aby wyświetlić plik utworzony przez kod w poprzedniej sekcji, wykonaj następu
 
 ## <a name="next-steps"></a>Następne kroki
 Więcej informacji na temat projektów systemu Azure w programie Visual Studio, czytając [Konfigurowanie projektu Azure](vs-azure-tools-configuring-an-azure-project.md). Więcej informacji na temat schematu usługi w chmurze, czytając [odwołanie do schematu](https://msdn.microsoft.com/library/azure/dd179398).
-

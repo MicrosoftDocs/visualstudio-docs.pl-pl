@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane zamykanie skoroszytów'
-ms.custom: ''
+title: 'Instrukcje: Programowe zamykanie skoroszytów'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36b7da02830375161af08bda301e3ead98321741
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0e9cb0402894bc09ff287db1ee42001ee005678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893198"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Porady: programowane zamykanie skoroszytów
+# <a name="how-to-programmatically-close-workbooks"></a>Instrukcje: Programowe zamykanie skoroszytów
   Możesz zamknąć aktywny skoroszyt, lub można określić skoroszytu, aby zamknąć.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -57,10 +54,8 @@ ms.locfileid: "35677471"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca ze skoroszytami](../vsto/working-with-workbooks.md)   
- [Porady: programowane zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)   
- [Porady: programowane otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)   
+ [Instrukcje: Programowe zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Instrukcje: Programowe otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

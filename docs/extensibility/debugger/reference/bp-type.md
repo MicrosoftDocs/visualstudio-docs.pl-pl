@@ -1,9 +1,6 @@
 ---
 title: BP_TYPE | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_TYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c525b30a290a1a0c5f732f65967acb50219c9647
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eba96a742dfe674440e7b4fd2432a56bf8458ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928425"
 ---
 # <a name="bptype"></a>BP_TYPE
 Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacja danych lub inny typ punktu przerwania.  
@@ -28,7 +25,7 @@ Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacj
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-enum enum_BP_TYPE {   
+enum enum_BP_TYPE {   
    BPT_NONE    = 0x0000,  
    BPT_CODE    = 0x0001,  
    BPT_DATA    = 0x0002,  
@@ -38,7 +35,7 @@ typedef DWORD BP_TYPE;
 ```  
   
 ```csharp  
-public enum enum_BP_TYPE {   
+public enum enum_BP_TYPE {   
    BPT_NONE    = 0x0000,  
    BPT_CODE    = 0x0001,  
    BPT_DATA    = 0x0002,  
@@ -65,9 +62,9 @@ public enum enum_BP_TYPE {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

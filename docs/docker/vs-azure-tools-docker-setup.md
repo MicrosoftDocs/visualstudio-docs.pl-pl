@@ -5,7 +5,6 @@ services: azure-container-service
 documentationcenter: na
 author: mlearned
 manager: douge
-editor: ''
 ms.assetid: 0b1335a2-7720-42a8-8260-4e06fc00c9f6
 ms.service: multiple
 ms.devlang: dotnet
@@ -14,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: multiple
 ms.date: 06/08/2016
 ms.author: mlearned
-ms.openlocfilehash: 01b7d2a8fa0ea496966e9c19caf1dcfb9d29543f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e332f0367119ef9b5858a66ff82947b6afb6633d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941763"
 ---
 # <a name="configure-a-docker-host-with-virtualbox"></a>Konfigurowanie hosta platformy Docker przy użyciu rozwiązania VirtualBox
 ## <a name="overview"></a>Omówienie

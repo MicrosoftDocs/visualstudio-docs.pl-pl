@@ -2,7 +2,6 @@
 title: Znajdź wywołania do metody
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f386d3d73de45c539752207fb55200e8e8ee715
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ca479a335cc46e199a107ec38d937dc5774d2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915698"
 ---
 # <a name="view-call-hierarchy"></a>Pokaż hierarchię wywołań
 

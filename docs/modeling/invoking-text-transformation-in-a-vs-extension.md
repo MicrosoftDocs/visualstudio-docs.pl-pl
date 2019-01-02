@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915429"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Wywoływanie transformacji tekstu w rozszerzeniu VS
 Jeśli piszesz rozszerzenie programu Visual Studio, takie jak polecenie menu lub [języka specyficznego dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), można użyć usługi tworzenia szablonów tekstowych do przekształcania szablonów tekstu. Pobierz <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> usługi i obsadź ją <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
@@ -135,8 +134,8 @@ Sample text.
  Wartości z szablonu tekstowego można przekazać za pomocą parametru klasy, która jest pochodną <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Tematy pokrewne
- Aby wygenerować tekst z szablonu tekstowego wstępnie przetworzony: wywołanie `TransformText()` metoda wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Aby wygenerować tekst ze wstępnie przetworzonego szablonu tekstu: Wywołaj `TransformText()` metoda wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Aby wygenerować tekst poza rozszerzeniem programu Visual Studio: Zdefiniuj niestandardowego hosta. Aby uzyskać więcej informacji, zobacz [przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Aby wygenerować kod źródłowy, który można później zostanie skompilowany i wykonany: wywołanie `t4.PreprocessTemplate()` metody <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ Aby wygenerować kod źródłowy, który później zostanie skompilowany i wykonany: Wywołaj `t4.PreprocessTemplate()` metody <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

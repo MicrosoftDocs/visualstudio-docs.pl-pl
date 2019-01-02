@@ -2,7 +2,6 @@
 title: Wyświetlanie kodu dezasemblacji w debugerze | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922237"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Wyświetlanie kodu dezasemblacji w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
@@ -74,4 +73,4 @@ Opcjonalne informacje należy włączyć lub wyłączyć, kliknij prawym przycis
 
 * [Stronicowanie w górę lub w dół w pamięci](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
-* [Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
+* [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

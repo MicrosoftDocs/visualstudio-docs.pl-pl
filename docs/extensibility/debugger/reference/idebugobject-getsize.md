@@ -1,9 +1,6 @@
 ---
 title: IDebugObject::GetSize | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject::GetSize
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08dcc3306d812dafe99b22ec534a81b4420606c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace264318a22dc1f186b75e68cd4dd590a633067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913991"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 Pobiera rozmiar obiektu w bajtach.  
@@ -28,7 +25,7 @@ Pobiera rozmiar obiektu w bajtach.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetSize(   
+HRESULT GetSize(   
    UINT* pnSize  
 );  
 ```  

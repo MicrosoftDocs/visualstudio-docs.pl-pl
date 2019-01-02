@@ -2,7 +2,6 @@
 title: Opcje, Edytor tekstu, XML, różne
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
@@ -10,12 +9,12 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fed24e39b29907784d6101f7871f7a292850c457
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 85f37f4266f4c05d4de016caa07e8cc6e3cf43a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905627"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opcje, Edytor tekstu, XML, różne
 
@@ -59,5 +58,5 @@ Określa lokalizację pamięci podręcznej schematów. Przycisk przeglądania (.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: tworzenie dokumentacji XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Instrukcje: Tworzenie dokumentacji XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Generowanie kodu](../code-generation-in-visual-studio.md)

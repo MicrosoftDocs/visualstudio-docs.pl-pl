@@ -2,7 +2,6 @@
 title: Strona opcji, edytor tekstu — Właściwości węzła
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935674"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Strona opcji, edytor tekstu — Właściwości węzła
 W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są skojarzone z **edytora tekstów** kategorii `DTE.Properties("TextEditor", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, które jest używane do dostępu `Properties` kolekcji, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
@@ -56,7 +55,7 @@ W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są sko
 |WordWrap|Get/Set (wartość logiczna)|Określa, czy widok będzie zawijał długie wiersze na granicy słowa. Ustawienie tej opcji na `true` powoduje, że `VirtualSpace` element właściwości (na tej liście), należy ustawić `false`.|
 |WordWrapGlyphs|Get/Set (wartość logiczna)|Wyświetla znacznik na końcu wiersza; oznacza to, że wiersz jest zawijany do następnego wiersza.|
 |EnableLeftClickForURLs|Get/Set (wartość logiczna)|Określa, czy edytor podkreśla adresy URL i umożliwia pojedynczego przejście do adresu URL w przeglądarce internetowej zarejestrowanych systemu.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Określa styl wcięcia tekstu: domyślne, inteligentne lub brak.|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Określa styl wcięcia tekstu: Domyślne, inteligentne lub Brak.|
 |TabSize|Get/Set (Long)|Reprezentuje liczbę spacji, które są równe tabulatorowi. Ustawienie liczby całkowitej spoza zakresu 1-60 (włącznie) kończy się niepowodzeniem.|
 |InsertTabs|Get/Set (wartość logiczna)|Jeśli `True`, są używane znaki tabulacji.|
 |IndentSize|Get/Set (Long)|Reprezentuje liczbę spacji, która jest równa jednemu poziomowi wcięcia. Ustawienie wartości całkowitej spoza zakresu 1-60 (włącznie) kończy się niepowodzeniem.|

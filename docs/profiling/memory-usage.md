@@ -3,19 +3,18 @@ title: Pomiar użycia pamięci w aplikacjach
 description: Umożliwia znajdowanie przecieków pamięci i nieefektywne pamięci podczas debugowania za pomocą narzędzia diagnostyczne zintegrowane z debugerem.
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 62bf07ba0f5f63daa369e88795824f53f9109ce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942297"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie przecieków pamięci i pamięci nieefektywne **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, zapoznasz się z co najmniej jeden *migawek* sterty pamięci zarządzanego i natywnego ułatwi zrozumienie wpływu użycia pamięci typów obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszany (.NET i natywny) aplikacji.  
@@ -67,7 +66,7 @@ W tym samouczku wykonasz następujące czynności:
      >   
      >  ![Włącz migawki](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Zatrzymaj (klawisz skrótu: **Shift**+**F5**) i uruchom ponownie debugowanie.  
+     >  Zatrzymaj (klawisz skrótu: **Przenieś**+**F5**) i uruchom ponownie debugowanie.  
 
 6.  Aby zrobić migawkę podczas uruchamiania sesji debugowania, wybierz opcję **wykonaj migawkę** na **użycie pamięci** paska narzędzi. (Pomocne może być Ustaw punkt przerwania w tym miejscu także.)
 

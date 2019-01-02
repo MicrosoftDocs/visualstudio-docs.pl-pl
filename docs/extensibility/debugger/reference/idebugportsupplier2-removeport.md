@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplier2::RemovePort | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier2::RemovePort
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557d72561a15f8a330a0fc8eb9bc0b44a296f52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf10f7556c548fa4939a6fe8c678513b0575a380
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903854"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 Usuwa portu.  
@@ -28,13 +25,13 @@ Usuwa portu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT RemovePort(   
+HRESULT RemovePort(   
    IDebugPort2* pPort  
 );  
 ```  
   
 ```csharp  
-int RemovePort(   
+int RemovePort(   
    IDebugPort2 pPort  
 );  
 ```  

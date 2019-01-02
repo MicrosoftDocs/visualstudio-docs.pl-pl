@@ -1,8 +1,6 @@
 ---
-title: 'Porady: debugowanie z projektu DLL | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie z projektu DLL | Dokumentacja firmy Microsoft'
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854077"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Porady: debugowanie z projektu DLL w programie Visual Studio (C#, C++, Visual Basic F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Instrukcje: Debugowanie z projektu DLL w programie Visual Studio (C#, C++, Visual Basic F#)
 
 Jednym ze sposobów, aby debugować projekt DLL jest do określenia aplikacji wywołującej we właściwościach projektu biblioteki DLL. Możesz następnie rozpocząć debugowanie z projektu DLL. Dla tej metody do pracy aplikacja musi wywoływać tej samej biblioteki DLL w tej samej lokalizacji, który można skonfigurować. Jeśli aplikacja wykryje i ładuje inną wersję biblioteki DLL, ta wersja nie będzie zawierał punktów przerwania. Aby uzyskać inne metody debugowanie bibliotek DLL, zobacz [projektów DLL debugowania](../debugger/debugging-dll-projects.md).
   
-Jeśli Twojej aplikacji zarządzanej wywołuje natywnej biblioteki DLL lub aplikacji natywnej wywołuje zarządzanej biblioteki DLL, można debugować zarówno biblioteki DLL i wywołania aplikacji. Aby uzyskać więcej informacji, zobacz [porady: debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).   
+Jeśli Twojej aplikacji zarządzanej wywołuje natywnej biblioteki DLL lub aplikacji natywnej wywołuje zarządzanej biblioteki DLL, można debugować zarówno biblioteki DLL i wywołania aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Natywne i zarządzane projekty biblioteki DLL mają różne ustawienia, aby określić aplikacje. 
 
@@ -51,7 +49,7 @@ Natywne i zarządzane projekty biblioteki DLL mają różne ustawienia, aby okre
    
 1. Dodaj argumenty programu niezbędne do **argumenty wiersza polecenia** pole.  
    
-1. Wybierz **OK**.
+1. Kliknij przycisk **OK**.
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Określanie aplikacji wywołującej w zarządzanego projektu biblioteki DLL  
   

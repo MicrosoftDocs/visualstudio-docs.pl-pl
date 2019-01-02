@@ -2,7 +2,6 @@
 title: W języku C++ podstawowych wytycznych dotyczących sprawdzania odwołania
 ms.date: 03/22/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -12,16 +11,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c11386dcd742e64737a4b06f2db9f55145f535d7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959486"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>W języku C++ podstawowych wytycznych dotyczących sprawdzania odwołania
 
-W tej sekcji przedstawiono podstawowe sprawdzanie wytyczne dotyczące języka C++ ostrzeżenia. Aby uzyskać informacje o analizie kodu, zobacz [/ analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis) i [— Szybki Start: analiza kodu C/c++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+W tej sekcji przedstawiono podstawowe sprawdzanie wytyczne dotyczące języka C++ ostrzeżenia. Aby uzyskać informacje o analizie kodu, zobacz [/ analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis) i [— Szybki Start: Analiza kodu C/c++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Ostrzeżenia należeć do więcej niż jednej grupy, a nie wszystkie ostrzeżenia mają temat pełną dokumentację.
@@ -67,7 +66,7 @@ W tej sekcji przedstawiono podstawowe sprawdzanie wytyczne dotyczące języka C+
 [C26481 NO_POINTER_ARITHMETIC](C26481.md) nie używaj arytmetyki wskaźnika. W zamian użyj zakresu. Zobacz [C++ podstawowe wytyczne Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
-Wyrażenie "% wyrażenie %": nie zanikania tablicy do wskaźnika. Zobacz [C++ podstawowe wytyczne Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+Wyrażenie "% wyrażenie %": Brak zanikania tablicy do wskaźnika. Zobacz [C++ podstawowe wytyczne Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 ## <a name="uniquepointer-group"></a>Grupa UNIQUE_POINTER
 
@@ -97,23 +96,23 @@ Wyrażenie "% wyrażenie %": nie zanikania tablicy do wskaźnika. Zobacz [C++ po
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) inicjator globalny uzyskuje dostęp do obiektu extern "% symbolu %". Zobacz [C++ w podstawowych wytycznych dotyczących I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Unikaj nienazwanych obiektów z niestandardowym konstruowaniem i niszczeniem. Zobacz [ES.84: nie (należy próbować) zadeklarować zmienną lokalną bez nazwy](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Unikaj nienazwanych obiektów z niestandardowym konstruowaniem i niszczeniem. Zobacz [ES.84: Nie (należy próbować) zadeklarować zmienną lokalną bez nazwy](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="class-group"></a>Klasa grupy
 
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) zdefiniuj lub usuń wszelkich operacji domyślną w typie "% symbolu %", zdefiniuj lub usunąć je wszystkie. Zobacz [C++ w podstawowych wytycznych dotyczących C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md) funkcji "% % symbol" powinien być oznaczony przez "override". Zobacz [C.128: funkcji wirtualnych powinna określać dokładnie jeden wirtualny, zastąpienie, lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) funkcji "% % symbol" powinien być oznaczony przez "override". Zobacz [C.128: Funkcje wirtualne powinna określać dokładnie jeden wirtualny, zastąpienie, lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
 [C26434 DONT_HIDE_METHODS](C26434.md) funkcji "% symbol_1%" ukrywa funkcję niewirtualną "% symbol_2%". Zobacz [C++ w podstawowych wytycznych dotyczących C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) funkcji "% % symbol" powinna określać dokładnie jeden "virtual", "override" lub "final". Zobacz [C.128: funkcji wirtualnych powinna określać dokładnie jeden wirtualny, zastąpienie, lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) funkcji "% % symbol" powinna określać dokładnie jeden "virtual", "override" lub "final". Zobacz [C.128: Funkcje wirtualne powinna określać dokładnie jeden wirtualny, zastąpienie, lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) typ "% symbolu %" z funkcją wirtualną wymaga obu publicznego lub chronionego destruktora niewirtualne. Zobacz [C++ w podstawowych wytycznych dotyczących C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) przesłanianie destruktora nie należy używać jawnych "override" ani "virtual" specyfikatorów. Zobacz [C.128: funkcji wirtualnych powinna określać dokładnie jeden wirtualny, zastąpienie, lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) przesłanianie destruktora nie należy używać jawnych "override" ani "virtual" specyfikatorów. Zobacz [C.128: Funkcje wirtualne powinna określać dokładnie jeden wirtualny, zastąpienie, lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 ## <a name="type-group"></a>Typ grupy
@@ -131,7 +130,7 @@ Wyrażenie "% wyrażenie %": nie zanikania tablicy do wskaźnika. Zobacz [C++ po
 [C26440 DECLARE_NOEXCEPT](C26440.md) funkcji "% % symbol" mogą być deklarowane `noexcept`. Zobacz [C++ w podstawowych wytycznych dotyczących F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) zadeklarowano funkcję **noexcept** , ale wywołuje funkcję, która może zgłaszać wyjątki.
-Zobacz [podstawowych wytycznych dotyczących języka C++: F.6: Jeśli Twoja funkcja nie może zgłaszać, Zadeklaruj go noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Zobacz [C++ podstawowych wytycznych dotyczących języka:  F.6: Jeśli funkcja nie może zgłaszać, Zadeklaruj go noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 ## <a name="concurrency-group"></a>Grupa WSPÓŁBIEŻNOŚCI
 
@@ -141,7 +140,7 @@ Zobacz [podstawowych wytycznych dotyczących języka C++: F.6: Jeśli Twoja funk
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) argument odwołania "% argumentu %" dla funkcji "% funkcji %" może być oznaczony jako `const`. Zobacz [C++ podstawowe wytyczne con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): argument wskaźnika "% argumentu %" dla funkcji "% funkcji %" może być oznaczony jako wskaźnik do `const`. Zobacz [C++ podstawowe wytyczne con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): Argument wskaźnika "% argumentu %" dla funkcji "% funkcji %" może być oznaczony jako wskaźnik do `const`. Zobacz [C++ podstawowe wytyczne con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
 [C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) wartość wskazywana przez "% Zmienna %" jest przypisywana tylko raz, oznacz ją jako wskaźnik do `const`. Zobacz [C++ podstawowe wytyczne con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
@@ -185,7 +184,7 @@ Zobacz [podstawowych wytycznych dotyczących języka C++: F.6: Jeśli Twoja funk
 
 ## <a name="bounds-group"></a>Grupy granic
 
-[C26446 USE_GSL_AT](c26446.md) wolą używać `gsl::at()` zamiast niesprawdzonego operatora. Zobacz [podstawowych wytycznych dotyczących języka C++: Bounds.4: nie należy używać funkcji w standardowej bibliotece oraz typy, które nie są sprawdzane przez granice](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) wolą używać `gsl::at()` zamiast niesprawdzonego operatora. Zobacz [C++ podstawowych wytycznych dotyczących języka:  Bounds.4: Nie należy używać funkcji w standardowej bibliotece oraz typy, które nie są sprawdzane przez granice](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md).
 Nie używaj arytmetyki wskaźnika. W zamian użyj zakresu. Zobacz [Bounds.1 wytyczne dotyczące podstawowych języka C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -194,19 +193,19 @@ Nie używaj arytmetyki wskaźnika. W zamian użyj zakresu. Zobacz [Bounds.1 wyty
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) wartość % wartość znajduje się poza granicami (0, powiązanej %) zmiennej "% Zmienna %". Tylko Indeksuj do tablic przy użyciu wyrażeń stałych, które znajdują się w granicach tablicy. Zobacz [Bounds.2 wytyczne dotyczące podstawowych języka C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) wyrażenie "% wyrażenie %": nie zanikania tablicy do wskaźnika. Zobacz [Bounds.3 wytyczne dotyczące podstawowych języka C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) wyrażenie "% wyrażenie %": Brak zanikania tablicy do wskaźnika. Zobacz [Bounds.3 wytyczne dotyczące podstawowych języka C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>Grupa GSL
 
 [C26445 NO_SPAN_REF](c26445.md) odwołanie do `gsl::span` lub `std::string_view` może wskazywać na problem z okresem istnienia.
-Zobacz [C++ podstawowe wytyczne GSL.view: widoków](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+Zobacz [GSL.view wytyczne dotyczące podstawowych języka C++: Widoki](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
-[C26446 USE_GSL_AT](c26446.md) wolą używać `gsl::at()` zamiast niesprawdzonego operatora. Zobacz [podstawowych wytycznych dotyczących języka C++: Bounds.4: nie należy używać funkcji w standardowej bibliotece oraz typy, które nie są sprawdzane przez granice](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) wolą używać `gsl::at()` zamiast niesprawdzonego operatora. Zobacz [C++ podstawowych wytycznych dotyczących języka:  Bounds.4: Nie należy używać funkcji w standardowej bibliotece oraz typy, które nie są sprawdzane przez granice](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) rozważ `gsl::finally` gdy ostateczna akcja jest przeznaczony. Zobacz [C++ podstawowych wytycznych dotyczących języka: GSL.util: narzędzia](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY ](c26448.md) rozważ `gsl::finally` gdy ostateczna akcja jest przeznaczony. Zobacz [C++ podstawowych wytycznych dotyczących języka:  GSL.util: Narzędzia](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` lub `std::string_view` utworzony na podstawie będą nieprawidłowe gdy zostaje unieważniony tymczasowy. Zobacz [C++ podstawowych wytycznych dotyczących języka: GSL.view: widoki](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` lub `std::string_view` utworzony na podstawie będą nieprawidłowe gdy zostaje unieważniony tymczasowy. Zobacz [C++ podstawowych wytycznych dotyczących języka: GSL.view: Widoki](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 
 ## <a name="deprecated-warnings"></a>Przestarzałe ostrzeżenia

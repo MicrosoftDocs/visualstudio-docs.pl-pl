@@ -1,8 +1,6 @@
 ---
 title: Wyłączanie debugera Just In Time | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959790"
 ---
-# <a name="disable-the-just-in-time-debugger"></a>Wyłączanie debugera Just In Time 
+# <a name="disable-the-just-in-time-debugger"></a>Wyłączanie debugera just in time 
 
 Okno dialogowe debuger just in Time może otworzyć po wystąpieniu błędu w uruchomionej aplikacji i uniemożliwić aplikacji, aby kontynuować. 
 
@@ -46,4 +44,3 @@ Jeśli nie masz zainstalowanego programu Visual Studio, można zapobiec debugowa
 Po wyłączeniu debugowania Just-In-Time aplikacji można obsłużyć błąd i będą działać normalnie. 
 
 Jeśli aplikacja ma nadal nieobsługiwany błąd, może zostać wyświetlony komunikat o błędzie lub aplikacja może ulec awarii lub zawieszeniu. Aplikacja nie będzie działać normalnie do czasu naprawienia błędu. Możesz spróbować skontaktować się z właścicielem aplikacji i poproś go, aby rozwiązać ten problem.
-

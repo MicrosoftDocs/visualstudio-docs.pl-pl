@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b74a283a4142cea7753db6e04d922517ae32afe9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1b32addb7dcd767e8848640d79933f9868bdd959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918659"
 ---
 # <a name="animations-for-visual-studio"></a>Animacje dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -253,13 +252,13 @@ ms.locfileid: "53052098"
 
 ##### <a name="animation-properties"></a>Właściwości animacji
 
--   Uruchamianie nieprzezroczystość: % 0 dla wsunąć, 100% w przypadku fade-out
+-   Nieprzezroczystość początkowy: 0% na wsunąć, 100% w przypadku fade-out
 
--   Zakończenie nieprzezroczystość: 100% w przypadku wsunąć, 0% fade-out
+-   Kończenie nieprzezroczystość: 100% w przypadku wsunąć, 0% fade-out
 
--   Czas trwania: 200 MS autonomicznej, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
+-   Czas trwania: autonomiczny 200 MS, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
 
--   Ułatwianie stylu: InOut sinus
+-   Styl sterowania tempem zmian: InOut sinus
 
 ##### <a name="examples"></a>Przykłady
 
@@ -279,13 +278,13 @@ ms.locfileid: "53052098"
 
 ##### <a name="animation-properties"></a>Właściwości animacji
 
--   Kolor początkowy: specyficzne dla interfejsu użytkownika
+-   Kolor początkowy: Specyficzne dla interfejsu użytkownika
 
--   Kolor końcowy: specyficzne dla interfejsu użytkownika
+-   Kolor końcowy: Specyficzne dla interfejsu użytkownika
 
--   Czas trwania: 200 MS autonomicznej, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
+-   Czas trwania: autonomiczny 200 MS, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
 
--   Ułatwianie stylu: InOut sinus
+-   Styl sterowania tempem zmian: InOut sinus
 
 ##### <a name="examples"></a>Przykłady
 
@@ -307,9 +306,9 @@ ms.locfileid: "53052098"
 
 -   Skala Y: % lub określonego wymiaru (w pikselach)
 
--   Zakotwicz pozycja: ogólnie lewa górna (dla języków, od lewej do prawej) lub prawym górnym rogu (dla języków od prawej do lewej)
+-   Pozycji zakotwiczenia: Ogólnie lewa górna (dla języków, od lewej do prawej) lub prawym górnym rogu (dla języków od prawej do lewej)
 
--   Czas trwania: 200 MS autonomicznej, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
+-   Czas trwania: autonomiczny 200 MS, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
 
 ##### <a name="examples"></a>Przykłady
 
@@ -327,15 +326,15 @@ ms.locfileid: "53052098"
 
 ##### <a name="animation-properties"></a>Właściwości animacji
 
--   Pozycja początkowa X i Y: specyficzne dla interfejsu użytkownika
+-   Pozycja początkowa X i Y: Specyficzne dla interfejsu użytkownika
 
--   Pozycja końcowa X i Y: specyficzne dla interfejsu użytkownika
+-   Kończenie X i Y pozycji: Specyficzne dla interfejsu użytkownika
 
 -   Ścieżki ruchu: Brak
 
--   Czas trwania: 200 MS autonomicznej, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
+-   Czas trwania: autonomiczny 200 MS, 100 milisekund, gdy jest używana jako część sekwencji animacji. kombinacja
 
--   Ułatwianie stylu: InOut sinus
+-   Styl sterowania tempem zmian: InOut sinus
 
 ##### <a name="example"></a>Przykład
  Zmiana kolejności kartę
@@ -352,9 +351,9 @@ ms.locfileid: "53052098"
 
 -   Kąt obrotu: 360
 
--   Obrót Centrum: środkowej obiektu
+-   Obrót Centrum: Drugie obiektu
 
--   Czas trwania: ciągłe
+-   Czas trwania: Ciągłe
 
 ##### <a name="example"></a>Przykład
  Wskaźnik postępu nieokreślony (rotowania)
@@ -363,9 +362,9 @@ ms.locfileid: "53052098"
 
 #### <a name="tab-open"></a>Karta Otwórz
 
-- Styl: wyświetlane
+- Styl: Są wyświetlane
 
-- Czas trwania: Zero sekund.
+- Czas trwania: Zero sekund
 
   ![Karcie Animacja Otwórz w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")
 
@@ -373,7 +372,7 @@ ms.locfileid: "53052098"
 
 - Styl: Zmienianie pozycji X
 
-- Czas trwania: 200 ms.
+- Czas trwania: 200 MS
 
   ![Karta Zamknij animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")
 
@@ -381,15 +380,15 @@ ms.locfileid: "53052098"
 
 - Styl: Zmienianie pozycji X
 
-- Czas trwania: 200 ms.
+- Czas trwania: 200 MS
 
   ![Karta zmiany kolejności animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")
 
 #### <a name="close-floating-document"></a>Zamknij dokument zmiennoprzecinkowy
 
-- Styl: wyświetlane
+- Styl: Są wyświetlane
 
-- Czas trwania: 200 ms.
+- Czas trwania: 200 MS
 
   ![Zamknij liczb zmiennoprzecinkowych animacji dokumentu w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")
 
@@ -397,15 +396,15 @@ ms.locfileid: "53052098"
 
 - Styl: Aby zachować spójność z innymi oknami, umożliwiają definiowanie animacji Zamknij dokument bieżącego systemu operacyjnego.
 
-- Czas trwania: 200 ms.
+- Czas trwania: 200 MS
 
   ![Okno stanu przejścia animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")
 
 #### <a name="menu-open"></a>Menu Otwórz
 
-- Styl: wsunąć
+- Styl: Wsunąć
 
-- Czas trwania: 200 ms.
+- Czas trwania: 200 MS
 
   ![Menu Otwórz animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")
 
@@ -413,14 +412,14 @@ ms.locfileid: "53052098"
 
 - Styl: Fade-out
 
-- Czas trwania: 200 ms.
+- Czas trwania: 200 MS
 
   ![Zamknij animację menu w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")
 
 #### <a name="auto-hide-tool-window-reveal"></a>Odsłoń okna narzędzia autoukrywanie
 
-- Styl: wyświetlane
+- Styl: Są wyświetlane
 
-- Czas trwania: Zero sekund.
+- Czas trwania: Zero sekund
 
   ![Automatyczne&#45;Ukryj Animacja okna narzędzi w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")

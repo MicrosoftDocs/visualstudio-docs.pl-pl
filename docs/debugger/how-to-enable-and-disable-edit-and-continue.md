@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Włączanie i wyłączanie funkcji Edytuj i Kontynuuj | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Włączanie i wyłączanie funkcji Edytuj i Kontynuuj | Dokumentacja firmy Microsoft'
 ms.custom: seodec18
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,14 +26,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcdedfb513d9e10f030df4a6e9ba68b807210669
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936181"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Porady: Włączanie i wyłączanie funkcji Edytuj i Kontynuuj (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Instrukcje: Włączanie i wyłączanie funkcji Edytuj i Kontynuuj (C#, VB, C++)
 
 Można wyłączyć lub włączyć **Edytuj i Kontynuuj** w programie Visual Studio **opcje** okno dialogowe, w czasie projektowania. **Edytuj i Kontynuuj** kompilacje działa tylko podczas debugowania. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md). 
   

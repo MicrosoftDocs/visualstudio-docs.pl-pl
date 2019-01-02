@@ -1,9 +1,6 @@
 ---
 title: Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 808b463445934ecf5cc973b571b4b64d181eb692
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4c75b02fa3624ab56539e7ea9fbe7792632c272c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937455"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel
   Jeśli możesz po prostu zaczynasz, tworzenia dostosowań poziomie dokumentu dla programu Microsoft Office Excel przy użyciu programu Visual Studio, Oto, co musisz wiedzieć.  
@@ -74,5 +71,3 @@ ms.locfileid: "53646948"
  [Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)   
  [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)   
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

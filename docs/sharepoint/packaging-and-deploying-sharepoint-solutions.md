@@ -1,13 +1,8 @@
 ---
 title: Pakowanie i wdrażanie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863272"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849022"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Pakowanie i wdrażanie rozwiązań SharePoint
   Zwykle rozwiązania programu SharePoint jest wdrażana na serwerze programu SharePoint przy użyciu pliku pakietu (wsp) rozwiązania. Można użyć programu Visual Studio, aby organizowanie elementów projektu programu SharePoint w funkcji i utworzyć pakiet do wdrożenia funkcji programu SharePoint.  
@@ -40,9 +35,9 @@ ms.locfileid: "49863272"
 -   [Wdrażanie plików w rozwiązaniach programu SharePoint](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>Tworzenie pakietów i funkcji
- Używasz programu Visual Studio do grupowania powiązanych elementów programu SharePoint do *funkcji*. Na przykład funkcję dla definicji listy kontaktów może obejmować wystąpienie listy i definicji listy. Te dwa elementy można łączyć w pojedynczej funkcji do celów wdrożenia. Aby uzyskać więcej informacji o funkcjach, zobacz [bloków konstrukcyjnych: funkcje](http://go.microsoft.com/fwlink/?LinkID=169183).  
+ Używasz programu Visual Studio do grupowania powiązanych elementów programu SharePoint do *funkcji*. Na przykład funkcję dla definicji listy kontaktów może obejmować wystąpienie listy i definicji listy. Te dwa elementy można łączyć w pojedynczej funkcji do celów wdrożenia. Aby uzyskać więcej informacji o funkcjach, zobacz [bloków konstrukcyjnych: Funkcje](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
- Następnie można utworzyć pakietu rozwiązania programu SharePoint (*.wsp*) do połączenia wielu funkcji, lokacji w jeden pakiet, który przechowuje pliki w formacie wymagane przez program SharePoint do wdrożenia pliki do definicji, zespoły i inne pliki serwer. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: rozwiązania](http://go.microsoft.com/fwlink/?LinkID=169186).  
+ Następnie można utworzyć pakietu rozwiązania programu SharePoint (*.wsp*) do połączenia wielu funkcji, lokacji w jeden pakiet, który przechowuje pliki w formacie wymagane przez program SharePoint do wdrożenia pliki do definicji, zespoły i inne pliki serwer. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: Rozwiązania](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
 ## <a name="feature-and-packaging-tool-support"></a>Funkcja i Obsługa narzędzia pakowania
  Narzędzia programistyczne programu SharePoint w programie Visual Studio umożliwia szybkie organizowanie plików programu SharePoint do funkcji i pakietów rozwiązań ułatwia wdrożenia. Aby skonfigurować pakiet funkcji i rozwiązania, można użyć następujących narzędzi.  
@@ -81,9 +76,9 @@ ms.locfileid: "49863272"
   
   Narzędzia projektowania programu SharePoint w programie Visual Studio mają reguły sprawdzania poprawności, aby mieć pewność, że pakiet rozwiązania jest poprawnie uformowany. Ponadto zasad upewnij się, że *.wsp* plik rozwiązania można pomyślnie wdrożyć i aktywować na serwerze programu SharePoint. Aby uzyskać więcej informacji na temat schematu XML dla funkcji, zobacz [schematów funkcji](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  Można dodać funkcji niestandardowej oraz zasady walidacji pakietu do systemu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Można dodać funkcji niestandardowej oraz zasady walidacji pakietu do systemu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
-  Aby uzyskać więcej informacji na temat Eksploratora pakietów, zobacz [porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Aby uzyskać więcej informacji na temat Eksploratora pakietów, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Eksplorator rozwiązań
  Przejdź do otwierania plików projektu programu SharePoint, można użyć Eksploratora rozwiązań. Użyj menu kontekstowego w Eksploratorze rozwiązań, aby dodać funkcje, funkcji zdarzenia odbiorców, a zasoby funkcji. Ponadto można otworzyć funkcji projektantów i projektanci pakietów, do konfigurowania funkcji oraz pakiety na potrzeby wdrażania.  
@@ -109,4 +104,3 @@ ms.locfileid: "49863272"
 ## <a name="see-also"></a>Zobacz także
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

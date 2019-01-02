@@ -2,7 +2,6 @@
 title: Konwertowanie — Okno dialogowe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - jlca_Conversion_F1_3
@@ -16,24 +15,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e914b7601538a049a06a0bbdcaac8e1e58be06
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 39ade3990985bbac635d88ae1e965ee31c55227c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929779"
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 
-**Przekonwertować** okno dialogowe służy do wybierania narzędzie konwersji, aby utworzyć nowy projekt na podstawie starej, takich jak tworzenie [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] projektu z projektu programu Visual Basic 6. Można również użyć [programu Visual Studio projektu konwertera](https://github.com/ssvaidya/VSProjectConverter) do Uaktualnianie projektów utworzonych w poprzednich wersjach programu Visual Studio.
+**Przekonwertować** okno dialogowe umożliwia wybranie narzędzia konwersji, aby utworzyć nowy projekt ze starej, takich jak tworzenie [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] projektu z projektu języka Visual Basic 6. Można również użyć [konwerter projektów Visual Studio](https://github.com/ssvaidya/VSProjectConverter) na uaktualnianie projektów utworzonych w poprzednich wersjach programu Visual Studio.
 
-## <a name="open-the-convert-dialog-box"></a>Otwórz okno dialogowe konwertowania
+## <a name="open-the-convert-dialog-box"></a>Otwórz okno dialogowe Convert
 
 1.  Na pasku menu wybierz **pliku**, **Otwórz**, **przekonwertować**.
 
      Zostanie wyświetlona lista narzędzi konwersji kodu, które są obecnie dostępne.
 
-2.  Wybierz narzędzie, który jest odpowiedni dla twojej aplikacji.
+2.  Wybierz narzędzie, które jest odpowiednie dla twojej aplikacji.
 
 ## <a name="see-also"></a>Zobacz też
 

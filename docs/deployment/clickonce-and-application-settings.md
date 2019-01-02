@@ -1,8 +1,6 @@
 ---
 title: ClickOnce i ustawienia aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850969"
 ---
 # <a name="clickonce-and-application-settings"></a>Ustawienia aplikacji i technologii ClickOnce
 Ustawienia aplikacji dla formularzy Windows Forms można łatwo tworzyć, przechowywać i Obsługa niestandardowych aplikacji i preferencji użytkowników na komputerze klienckim. Poniższy dokument w tym artykule opisano działanie pliki ustawień aplikacji w aplikacji ClickOnce, i jak ClickOnce wykonuje migrację ustawień, po uaktualnieniu do następnej wersji.  

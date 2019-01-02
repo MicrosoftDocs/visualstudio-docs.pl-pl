@@ -1,8 +1,6 @@
 ---
-title: 'Debugowanie F # | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Debugowanie F# | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bb2a9379dd6cd43bb0398ccda2b031b96d56e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0f526eb39a62de33910bfa5e3e1e72220be3ae3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903984"
 ---
 # <a name="debugging-f"></a>Debugowanie F#
-Debugowanie F # jest podobny do debugowania dowolnego języka zarządzanych, z pewnymi wyjątkami:  
+Debugowanie F# jest podobne do debugowania jakiegokolwiek języka zarządzanego, z pewnymi wyjątkami:  
   
--   **Automatycznych** okna nie są wyświetlane zmienne F #.  
+-   **Autos** nie są wyświetlane w oknie F# zmiennych.  
   
--   Edytuj i Kontynuuj nie jest obsługiwane w F #. Edytowanie kodzie języka F # podczas sesji debugowania jest możliwe, ale należy unikać. Ponieważ zmiany kodu nie są stosowane podczas sesji debugowania, Edycja kodzie języka F # podczas debugowania spowoduje, że niezgodność między kodu źródłowego i kod debugowany.  
+-   Edytuj i Kontynuuj nie jest obsługiwana dla F#. Edytowanie F# kodu podczas sesji debugowania jest możliwe, ale należy unikać. Ponieważ zmiany w kodzie nie są stosowane podczas sesji debugowania, edytowanie F# kodu podczas debugowania spowoduje niezgodność między kodem źródłowym i debugowany kod.  
   
--   Debuger nie może rozpoznać wyrażenia F #. Aby wprowadzić wyrażenie okna debugera lub okna dialogowego podczas debugowania F #, musi translacji wyrażenia w C# składni. Podczas tłumaczenia wyrażenia F # w języku C#, upewnij się, że należy pamiętać, że C# używa == jako operator porównania równości i że F # używa pojedynczego =.  
+-   Debuger nie może rozpoznać F# wyrażenia. Wprowadzenia wyrażenia, w oknie debugera lub okno dialogowe podczas F# profilowanie, musi przetłumaczyć wyrażenia w C# składni. Podczas translacji F# wyrażenie C#, upewnij się, że należy pamiętać, że C# używa == jako operator porównania dla równości, które F# używa pojedynczego =.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

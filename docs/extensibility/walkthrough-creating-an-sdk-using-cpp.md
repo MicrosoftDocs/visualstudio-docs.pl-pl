@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Tworzenie zestawu SDK przy użyciu języka C++ | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++ | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a0db4f34315f9e0eb4a5627cdc286a43a904a34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917608"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++
 W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne biblioteki zestawu SDK pakietu SDK jako Visual Studio rozszerzenia (VSIX), a następnie użyć go do tworzenia aplikacji. Instruktażu jest podzielony na następujące kroki:  
@@ -112,7 +109,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-12. Na pasku menu wybierz **widoku** > **Windows inne** > **okno właściwości** (klawiatura: Wybierz **F4**klucza).  
+12. Na pasku menu wybierz **widoku** > **Windows inne** > **okno właściwości** (klawiatury: Wybierz **F4** klucza).  
   
 13. W **Eksploratora rozwiązań**, wybierz opcję **NativeMathWRT.winmd** pliku. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,**.  
   
@@ -177,5 +174,5 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 ## <a name="next-steps"></a>Następne kroki  
   
 ## <a name="see-also"></a>Zobacz także  
- [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [Przewodnik: Tworzenie za pomocą zestawu SDK C# lub Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Utwórz zestaw software development kit](../extensibility/creating-a-software-development-kit.md)

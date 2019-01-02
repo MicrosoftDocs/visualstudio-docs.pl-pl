@@ -1,9 +1,6 @@
 ---
 title: Ramek stosu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - stack frames, debugging
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ef19e1eaf9e98da3e774f1d0038f03c131ec45
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 1a7029f537d6d7ebcb956aa200cb8f22c160e540
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959718"
 ---
 # <a name="stack-frames"></a>Ramki stosu
 W architekturze debugera *ramki stosu*:  

@@ -1,9 +1,6 @@
 ---
 title: Office development ― przykłady i przewodniki
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909791"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office development ― przykłady i przewodniki
   Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i instrukcje krok po kroku instruktaży, które ilustrują składni, struktury i technik, które umożliwia tworzenie rozwiązań programu Microsoft Office.  
@@ -60,5 +57,3 @@ ms.locfileid: "35677269"
 |[Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)|Zawiera listę często zadawane pytania dotyczące programowania przy użyciu programowanie Office w Visual Studio i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.|  
 |[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji dotyczących sposobu tworzenia rozwiązania Microsoft Office i rolę zestawy w rozwiązaniu.|  
 |[Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)|Omówienie okienka zadań poziomie dokumentu, wywoływana w okienku Akcje.|  
-  
-  

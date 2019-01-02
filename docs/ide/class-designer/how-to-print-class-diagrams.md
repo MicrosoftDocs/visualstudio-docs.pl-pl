@@ -1,8 +1,7 @@
 ---
-title: 'Porady: drukowanie diagramów klasy (Projektant klas)'
+title: 'Instrukcje: Drukowanie diagramów klas (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
@@ -13,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e4b38967badbed94c946b04a1434150912c32859
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916257"
 ---
-# <a name="how-to-print-class-diagrams"></a>Porady: drukowanie diagramów klasy
+# <a name="how-to-print-class-diagrams"></a>Instrukcje: Drukowanie diagramów klas
 
-Można wydrukować diagram klasy wydruku funkcji programu Visual Studio.
+Możesz wydrukować diagram klasy za pomocą funkcji drukowania programu Visual Studio.
 
 ## <a name="to-print-a-class-diagram"></a>Aby wydrukować diagram klas
 
@@ -30,9 +29,9 @@ Można wydrukować diagram klasy wydruku funkcji programu Visual Studio.
 
 2.  Kliknij przycisk **drukowania** na **pliku** menu.
 
-Drukuje diagram całej klasy. Może być konieczne dostosowanie ustawień w **ustawienia strony** okno dialogowe, aby można było wydrukować na odpowiedni rozmiar.
+Drukuje całego diagramu klasy. Może być konieczne dostosowanie ustawień w **ustawienia strony** okno dialogowe, aby wydrukować na odpowiedni rozmiar.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: kopiowanie elementów diagramu klasy do dokumentu pakietu Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
-- [Porady: eksportowanie diagramów klasy jako obrazów](how-to-export-class-diagrams-as-images.md)
+- [Instrukcje: Kopiowanie elementów diagramu klas do dokumentu pakietu Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
+- [Instrukcje: Eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md)

@@ -2,7 +2,6 @@
 title: Znajdź w plikach
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
@@ -21,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 956af6e2ffc34a457bd3f5308b7104ef26ec1f4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963382"
 ---
 # <a name="find-in-files"></a>Znajdź w plikach
 
-**Znajdź w plikach** umożliwia wyszukiwanie określonego zestawu plików. Znalezionych dopasowań oraz działania podjęte są wymienione w **znaleźć wyników** wybrany w oknie **powoduje opcje**.
+**Znajdź w plikach** umożliwia wyszukiwanie określonego zestawu plików. Liczba znalezionych dopasowań i akcje wykonywane są wymienione w **Find Results** wybranego w oknie **wyniku opcje**.
 
-Można użyć dowolnej z następujących metod można wyświetlić **Znajdź w plikach** w **Znajdź i Zamień** okna.
+Można użyć dowolnej z następujących metod, do wyświetlenia **Znajdź w plikach** w **Znajdź i Zamień** okna.
 
 ## <a name="to-display-find-in-files"></a>Aby wyświetlić Znajdź w plikach
 
@@ -40,76 +39,76 @@ Można użyć dowolnej z następujących metod można wyświetlić **Znajdź w p
 
 1. Wybierz **Znajdź w plikach**.
 
-Aby anulować operację wyszukiwania, naciśnij klawisz **Ctrl** + **Podziel**.
+Aby anulować operację wyszukiwania, naciśnij klawisz **Ctrl** + **Przerwij**.
 
 > [!NOTE]
-> Narzędzia Znajdź i Zamień nie Szukaj katalogi z `Hidden` lub `System` atrybutu.
+> Znajdź i Zamień narzędzie nie wyszukuje katalogów przy użyciu `Hidden` lub `System` atrybutu.
 
 ## <a name="find-what"></a>Znajdź
 
-Aby wyszukać nowe ciąg tekstowy lub wyrażenie, należy określić w polu. Aby wyszukiwać dowolne ciągi 20, które można przeszukiwać ostatnio, otwarcie listy rozwijanej i wybierz ciąg. Wybierz sąsiadujących **Konstruktor wyrażeń** przycisku, jeśli chcesz używać jednego lub wielu wyrażeń regularnych w wyszukiwanym ciągu. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Aby wyszukać nowy ciąg tekstowy lub wyrażenie, należy je określić w polu. Aby wyszukać dowolne z 20 ciągów, które wyszukiwane ostatnio, Otwieranie listy rozwijanej, a następnie wybierz ciągu. Wybierz sąsiadujących **Konstruktor wyrażeń** przycisk, jeśli chcesz użyć co najmniej jednego wyrażenia regularne w wyszukiwanym ciągu. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
-> **Konstruktor wyrażeń** przycisk zostanie włączona tylko, jeśli wybrano **należy użyć wyrażeń regularnych** w obszarze **dostępne opcje**.
+> **Konstruktor wyrażeń** przycisk zostanie włączona tylko, jeśli wybrano **Użyj wyrażeń regularnych** w obszarze **opcje szukania**.
 
 ## <a name="look-in"></a>Szukaj w
 
-Opcja wybrana z **Szukaj w** listy rozwijanej określa, czy **Znajdź w plikach** wyszukiwanie tylko w plikach obecnie aktywne lub wszystkie pliki przechowywane w określonych folderach. Wybierz zakres wyszukiwania z listy lub kliknij przycisk **Przeglądaj (...)**  przycisk, aby wyświetlić **wybierz foldery wyszukiwania** okno dialogowe i wprowadzania zestawu katalogów. Możesz również wpisać ścieżkę bezpośrednio do **Szukaj w** pole.
+Opcja wybrana z **Szukaj w** listy rozwijanej określa, czy **Znajdź w plikach** wyszukiwanie tylko w obecnie aktywnych plików lub wszystkie pliki przechowywane w określonych folderach. Z listy wybierz zakres wyszukiwania lub kliknij przycisk **przeglądania (...)**  przycisk, aby wyświetlić **Choose Search Folders** okno dialogowe i wprowadzania własnego zestawu katalogów. Możesz również wpisać ścieżkę bezpośrednio do **przeszukania** pole.
 
 > [!WARNING]
-> Z **całego rozwiązania** lub **bieżącego projektu** pliki opcje, projektu i rozwiązania nie są przeszukiwane. Jeśli chcesz wyglądały w plikach projektu, wybierz folder wyszukiwania.
+> Za pomocą **całe rozwiązanie** lub **bieżący projekt** pliki opcje, projektów i rozwiązań nie są przeszukiwane. Jeśli chcesz zobaczyć w plikach projektu wybierz folder wyszukiwania.
 
 > [!NOTE]
-> Jeśli **Szukaj w** opcji powoduje, że użytkownik może wyszukiwać w pliku, który został wyewidencjonowany z kontroli kodu źródłowego, przeszukiwane będą tylko wersję tego pliku, do którego została pobrana na komputer lokalny.
+> Jeśli **przeszukania** wybrana opcja powoduje, że użytkownik może wyszukiwać pliku, który został wyewidencjonowany z kontrolą kodu źródłowego, przeszukiwany jest tylko wersja tego pliku, który został pobrany na komputer lokalny.
 
 ## <a name="include-subfolders"></a>Uwzględnij podfoldery
 
-Określa, że podfoldery **Szukaj w** folderu zostaną przeszukane.
+Określa, że podfoldery **przeszukania** folderu zostaną przeszukane.
 
-## <a name="find-options"></a>Dostępne opcje
+## <a name="find-options"></a>Opcje znajdowania
 
-Można rozwinąć lub zwinąć **dostępne opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
+Można rozwinąć lub zwinąć **opcje szukania** sekcji. Następujące opcje można zaznaczyć lub wyczyścić:
 
-**Wielkość liter**
+**Uwzględnij wielkość liter**
 
-Po wybraniu **znaleźć wyników** wyszukiwanie będzie uwzględniana wielkość liter
+Po wybraniu **Find Results** wyszukiwania jest uwzględniana wielkość liter
 
 **Uwzględnij całe wyrazy**
 
-Po wybraniu **znaleźć wyników** windows zwróci tylko całe wyrazy dopasowań.
+Po wybraniu **Find Results** windows zwróci tylko całe wyrazy dopasowań.
 
 **Używanie wyrażeń regularnych**
 
-Jeśli to pole wyboru jest zaznaczone, można użyć notacji specjalne wzorce tekstu do dopasowania w **Znajdź** lub **Zamień** pól tekstowych. Aby uzyskać listę tych notacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Jeśli to pole wyboru jest zaznaczone, można użyć notacji specjalne do definiowania wzorców tekstu do dopasowania w **Znajdź** lub **Zamień** pól tekstowych. Aby uzyskać listę tych notacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-**Obejrzyj następujące typy plików**
+**Spójrz na następujące typy plików**
 
-Ta lista wskazuje typy plików do przeszukiwania w **Szukaj w** katalogów. Jeśli to pole jest puste, wszystkie pliki w **Szukaj w** katalogi będą wyszukiwane.
+Ta lista wskazuje typy plików, aby wyszukiwać w **przeszukania** katalogów. Jeśli to pole jest puste, wszystkie pliki w **przeszukania** katalogi będą przeszukiwane.
 
-Wybierz dowolną pozycję na liście, wprowadź ciąg wyszukiwania wstępnie skonfigurowane, które zostaną znalezione pliki określonego typu.
+Wybierz dowolny element na liście, aby wprowadzić wstępnie wyszukiwany ciąg, który zawiera pliki określonego typu.
 
 ## <a name="result-options"></a>Opcje wyników
 
-Można rozwinąć lub zwinąć **powoduje opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
+Można rozwinąć lub zwinąć **wyniku opcje** sekcji. Następujące opcje można zaznaczyć lub wyczyścić:
 
-**Znajdź okno wyników 1**
+**Znajdź wyniki 1 okno**
 
-Po wybraniu wyniki wyszukiwania bieżącego zastąpi zawartość **znaleźć 1 wyniki** okna. To okno zostanie otwarty automatycznie do wyświetlania wyników wyszukiwania. Aby otworzyć to okno ręcznie, zaznacz **inne okna** z **widoku** menu i wybierz polecenie **znaleźć 1 wyniki**.
+Po wybraniu wyniki bieżące wyszukiwanie spowoduje zastąpienie zawartości **Znajdź wyniki 1** okna. To okno zostanie otwarty automatycznie do wyświetlenia wyników wyszukiwania. Aby ręcznie otworzyć to okno, wybierz **Windows inne** z **widoku** menu i wybierz polecenie **Znajdź wyniki 1**.
 
-**Znajdź okno wyników 2**
+**Znajdź wyniki 2 okno**
 
-Po wybraniu wyniki wyszukiwania bieżącego zastąpi zawartość **znaleźć 2 wyniki** okna. To okno zostanie otwarty automatycznie do wyświetlania wyników wyszukiwania. Aby otworzyć to okno ręcznie, zaznacz **inne okna** z **widoku** menu i wybierz polecenie **znaleźć 2 wyniki**.
+Po wybraniu wyniki bieżące wyszukiwanie spowoduje zastąpienie zawartości **Znajdź wyniki 2** okna. To okno zostanie otwarty automatycznie do wyświetlenia wyników wyszukiwania. Aby ręcznie otworzyć to okno, wybierz **Windows inne** z **widoku** menu i wybierz polecenie **Znajdź wyniki 2**.
 
-**Wyświetl tylko nazwy plików**
+**Wyświetl tylko nazwy pliku**
 
-Wyświetla listę plików zawierających wyszukiwania odpowiada zamiast wyświetlanie wyszukiwania dopasowuje się.
+Wyświetla listę plików zawierających, search dopasowuje zamiast wyświetlanie wyszukiwanie pasuje do siebie.
 
-**Dołączanie wyników**
+**Dołącz wyniki**
 
-Dołącza wyniki wyszukiwania do wyników poprzedniego wyszukiwania.
+Dołącza wyniki wyszukiwania do wcześniejszych wyników wyszukiwania.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)
 - [Zastąp w plikach](../ide/replace-in-files.md)
-- [Visual Studio — polecenia](../ide/reference/visual-studio-commands.md)
+- [Polecenia programu Visual Studio](../ide/reference/visual-studio-commands.md)

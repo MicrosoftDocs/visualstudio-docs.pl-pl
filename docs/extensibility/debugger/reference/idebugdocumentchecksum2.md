@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentChecksum2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 068447399a8cfd43cb5fe07ea82e7cf4400f460c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 784c8cd4bf762e97b69c6a88ae99701dc993efc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921682"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
-Reprezentuje sumy kontrolnej dla dokumentu debugowania i umożliwia przekazywanie sumy kontrolnej między składnikami.  
+Reprezentuje sumy kontrolnej dla dokumentu debugowania i umożliwia przekazanie sumę kontrolną między składnikami.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -30,7 +27,7 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ten interfejs może być zaimplementowany przez każdego składnika, który ujawnia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu. Jednak jest głównie stosowana przez aparaty debugowania, aby suma kontrolna osadzone w pliku symboli (*.pdb) może być przekazywane z powrotem do środowiska IDE i używana przy wyszukiwaniu źródła.  
+ Ten interfejs może być implementowany przez dowolny składnik, który udostępnia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu. Jednak go jest głównie implementowany przez aparaty debugowania sumy kontrolnej osadzone w pliku symboli (*.pdb) może być przekazywany z powrotem do środowiska IDE i używane przy wyszukiwaniu źródła.  
   
 ## <a name="methods"></a>Metody  
  W poniższej tabeli przedstawiono metody `IDebugDocumentChecksum2`.  
@@ -42,6 +39,6 @@ IDebugDocumentChecksum2 : IUnknown
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

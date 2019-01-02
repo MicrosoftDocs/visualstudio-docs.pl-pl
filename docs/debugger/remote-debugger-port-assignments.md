@@ -2,7 +2,6 @@
 title: Przypisania portów debugera zdalnego | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b45a8673685dce5eabd0459f470525e5e2d99a
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.openlocfilehash: feb5b247bb3e7bb8814946f5648408323a33084c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959751"
 ---
 # <a name="remote-debugger-port-assignments"></a>Przypisania portów debugera zdalnego
 Zdalny debuger programu Visual Studio można uruchomić jako aplikację lub usługę w tle. Po jego uruchomieniu jako aplikacja wykorzystuje port, który jest domyślnie przypisane w następujący sposób:  

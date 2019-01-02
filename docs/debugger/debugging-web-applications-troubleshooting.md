@@ -2,7 +2,6 @@
 title: Debugowanie aplikacji sieci web — Rozwiązywanie problemów z | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923588"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Debugowanie aplikacji internetowych: rozwiązywanie problemów
+# <a name="debugging-web-applications-troubleshooting"></a>Debugowanie aplikacji sieci Web: Rozwiązywanie problemów
 Ta sekcja zawiera typowe procedury, których można użyć, aby naprawić błędy.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: weryfikowanie właściwości ustawień usług IIS](../debugger/how-to-verify-iis-property-settings.md)  
+ [Instrukcje: Weryfikacja właściwości ustawień IIS](../debugger/how-to-verify-iis-property-settings.md)  
  Wyjaśnia, jak poprawnie ustawić właściwości w usługach IIS, aby włączyć debugowanie.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  W tym artykule wyjaśniono rozpoznawania rozwiązywania problemów i błędów.  
   
- [Debugowanie aplikacji internetowych i skryptu](../debugger/debugging-web-applications-and-script.md)  
+ [Debugowanie aplikacji internetowych i skryptu](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  Omówienie debugowanie aplikacji sieci Web, takich jak [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], usługi XML sieci Web i projekty biblioteki ATL z serwera.

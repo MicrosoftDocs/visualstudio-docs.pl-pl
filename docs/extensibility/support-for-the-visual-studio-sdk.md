@@ -1,9 +1,6 @@
 ---
 title: Obsługa programu Visual Studio SDK | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, support options
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe2d5bbc2e06bcfa7bc7f47d6aaebbbdc9b1261
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5f1f54d43c02d02aa2967eaead2de75a664619c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959277"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na temat sposobu rozszerzenia programu Visual Studio zintegrowane środowisko programistyczne (IDE).  
