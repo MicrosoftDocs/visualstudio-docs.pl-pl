@@ -1,28 +1,27 @@
 ---
-title: Projektant przepływu pracy — projektantów działań migracji
+title: Projektant przepływu pracy — Projektanci działań Migration
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7f118f340ab91359f26ee03c3900d734720c128
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc20f1390b3c4e30f3c7233d7f1c0f55ca0d56ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879682"
 ---
-# <a name="migration-activity-designers"></a>Projektanci działań migracji
+# <a name="migration-activity-designers"></a>Projektanci działań Migration
 
-Projektantów działań migracji są używane do wywoływania 3.0/3.5 działań przepływu pracy z przepływu pracy przeznaczonych dla platformy .NET Framework 4. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące sposobu używania projektanta przepływów pracy projektantów działań.
+Projektanci działań Migration są używane do wywoływania 3.0/3.5 działań przepływu pracy z przepływu pracy przeznaczonych dla programu .NET Framework 4. Tematy zawarte w tej sekcji zapewnić wskazówki dotyczące sposobu używania projektanta przepływów pracy Projektanci działań.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- Dla innych typów projektantów działań zobacz następujące tematy.
+ Dla innych typów Projektanci działań zobacz następujące tematy.
 
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
 
@@ -30,7 +29,7 @@ Projektantów działań migracji są używane do wywoływania 3.0/3.5 działań 
 
  [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)
 
- [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)
+ [Obsługa komunikatów](../workflow-designer/messaging-activity-designers.md)
 
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)
 

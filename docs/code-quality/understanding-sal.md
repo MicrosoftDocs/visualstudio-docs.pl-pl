@@ -2,7 +2,6 @@
 title: Poznanie SAL
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -10,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a219590c20e2ec2bb77cc3ffa59bb6249cc52dfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56d416ce154f071804beb9b47d2623f2acee15af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889923"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 
@@ -43,7 +42,7 @@ void * memcpy(
 Można stwierdzić, ta funkcja nie? Gdy funkcja jest zaimplementowana lub o nazwie, niektóre właściwości muszą być utrzymywane, aby sprawdzić ich poprawność program. Po prostu patrząc na deklarację, takiego jak w przykładzie, nie wiadomo, jakie są. Bez adnotacji SAL trzeba polegać na dokumentacji lub komentarze w kodzie. Poniżej przedstawiono w dokumentacji MSDN dla `memcpy` jest wyświetlany komunikat:
 
 > "Kopii liczba bajtów src do miejsca docelowego. Jeśli źródłowe i docelowe nakładają się na siebie, zachowanie memcpy jest niezdefiniowane. Memmove — należy używać do obsługi nakładających się regionów.
-> **Uwaga dotycząca zabezpieczeń:** upewnij się, że bufor docelowy jest taki sam lub większy rozmiar niż bufor źródłowy. Aby uzyskać więcej informacji zobacz unikanie przepełnień bufora."
+> **Uwaga dotycząca zabezpieczeń:** Upewnij się, że bufor docelowy jest taki sam lub większy rozmiar niż bufor źródłowy. Aby uzyskać więcej informacji zobacz unikanie przepełnień bufora."
 
 Dokumentacja zawiera kilka bitów informacje, które sugerują, kod musi obsługiwać niektórych właściwości, aby sprawdzić ich poprawność program:
 
@@ -186,7 +185,7 @@ void InOptCaller()
 
 Visual Studio Code Analysis weryfikuje, czy funkcja przed sprawdza ją pod kątem wartości NULL uzyskuje dostęp do buforu.
 
-### <a name="example-the-out-annotation"></a>Przykład: \_się\_ adnotacji
+### <a name="example-the-out-annotation"></a>Przykład: \_Się\_ adnotacji
 
 `_Out_` obsługuje typowy scenariusz, w którym wskaźnika inną niż NULL, który wskazuje element buforu jest przekazywany w, a funkcja inicjuje element. Obiekt wywołujący nie ma zainicjować buforu przed wywołaniem; wywołana funkcja zobowiązuje się do zainicjowania go przed jego zwracaniem.
 
@@ -212,7 +211,7 @@ void OutCaller()
 
 Narzędzie do analizy kodu programu Visual Studio sprawdza, czy obiekt wywołujący przekazuje wskaźnik ZEROWY do buforu dla `pInt` i że bufor jest inicjowany przez funkcję, przed jego zwracaniem.
 
-### <a name="example-the-outopt-annotation"></a>Przykład: \_się\_zoptymalizowany pod kątem\_ adnotacji
+### <a name="example-the-outopt-annotation"></a>Przykład: \_Się\_zoptymalizowany pod kątem\_ adnotacji
 
 `_Out_opt_` jest taka sama jak `_Out_`, z tą różnicą, że parametr może mieć wartości NULL, i w związku z tym, funkcja powinna sprawdzać, czy to.
 

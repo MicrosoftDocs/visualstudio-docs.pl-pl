@@ -1,9 +1,6 @@
 ---
 title: Rozwiązywanie problemów z rozwiązań pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926557"
 ---
 # <a name="troubleshoot-office-solutions"></a>Rozwiązywanie problemów z rozwiązań pakietu Office
   Ta sekcja zawiera wskazówki dotyczące rozwiązywania typowych problemów, które można napotkać podczas tworzenia rozwiązań za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio.  
@@ -31,7 +28,7 @@ ms.locfileid: "35676186"
  [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  W tym artykule opisano typowe problemy, które mogą wystąpić, gdy są projektowania, uruchamianie i testowanie rozwiązań pakietu Office w Visual Studio.  
   
- [Porady: ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Opisuje sposób ponownie włączyć dodatek narzędzi VSTO dla programów trudne lub nietrwałe wyłączono.  
   
  [Dodatkowa obsługa błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -52,5 +49,3 @@ ms.locfileid: "35676186"
   
  [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
  Listy często zadawane pytania dotyczące programowania rozwiązań pakietu Office i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.  
-  
-  

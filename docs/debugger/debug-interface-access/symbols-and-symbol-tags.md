@@ -1,8 +1,6 @@
 ---
 title: Symbole i tagi symboli | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,29 +12,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f4cb4b6ed35e880e1cb26980420f4e951ffc16
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b9d7c7d3710d7bca7fa76b30b7b2d0e97a0dfd50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843492"
 ---
 # <a name="symbols-and-symbol-tags"></a>Symbole i tagi symboli
-Informacje o debugowaniu o skompilowany program znajduje się w pliku bazy danych (.pdb) program jako symbole, które są dostępne za pośrednictwem interfejsów API zestawu SDK debugowania interfejsu dostępu (DIA). Wszystkie symbole [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) i [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) właściwości. `symTag` Właściwość wskazuje typ symbolu, zgodnie z definicją w [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia. `symIndexId` Właściwość jest `DWORD` wartość, która zawiera identyfikator unikatowy dla każdego wystąpienia symbolu.  
+Informacje debugowania dotyczące skompilowany program znajduje się w pliku bazy danych (PDB) programu jako symbole, które są dostępne przy użyciu interfejsów API zestawu SDK debugowania interfejsu dostępu (DIA). Wszystkie symbole mają [idiasymbol::get_symtag —](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) i [idiasymbol::get_symindexid —](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) właściwości. `symTag` Właściwość wskazuje rodzaj symbolu, zgodnie z definicją [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia. `symIndexId` Właściwość `DWORD` wartość, która zawiera unikatowy identyfikator dla każdego wystąpienia symbolu.  
   
- Symbole zostały także właściwości, które można określić dodatkowe informacje dotyczące symboli, a także odwołania do symboli innych najczęściej [IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) lub [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Kwerendy właściwość, która zawiera odwołanie, odwołanie, jest zwracana jako [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu. Takie właściwości są zawsze łączyć się z innej właściwości o tej samej nazwie, ale suffixed z "Id", na przykład [IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) i [IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Tabele w [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md), [leksykalne hierarchii typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), i [Symbol typu klasy hierarchii](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) konspektu właściwości dla każdego z różnych rodzajów z symbole. Te właściwości mogą mieć istotne informacje dotyczące lub odwołania do innych symboli. Ponieważ `*Id` właściwości są po prostu liczbowe identyfikatory porządkowej ich powiązane właściwości, pominięto dalsze dyskusji. Są one określone tylko wtedy, gdy jest to wymagane dla parametru wyjaśnienie.  
+ Symbole również mieć właściwości, które można określić dodatkowe informacje na temat symboli, a także odwołania do innych symboli, w większości przypadków [idiasymbol::get_lexicalparent —](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) lub [idiasymbol::get_classparent —](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Kiedy wykonujesz zapytanie właściwość, która zawiera odwołanie, odwołanie, jest zwracana jako [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu. Takie właściwości są zawsze skojarzone z innej właściwości o tej samej nazwie, ale sufiksami za pomocą "Id", na przykład [idiasymbol::get_lexicalparentid —](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) i [idiasymbol::get_classparentid —](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Tabele w [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md), [leksykalne hierarchii typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), i [symboli typów klasy hierarchii](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) opisują właściwości dla każdego z różnego rodzaju programu symbole. Te właściwości mogą mieć istotne informacje dotyczące lub odwołania do innych symboli. Ponieważ `*Id` właściwości są po prostu liczbowych porządkowe identyfikatory ich powiązane właściwości, pominięto więcej dyskusji. Są one określone tylko wtedy, gdy jest to wymagane dla parametru wyjaśnienia.  
   
- Podczas próby dostępu do właściwości, jeśli nie występują błędy, a właściwość symbol zostanie przypisana wartość, właściwości "get" zwraca `S_OK`. Zwracana wartość `S_FALSE` wskazuje, że właściwość jest nieprawidłowa dla bieżącego symbolu.  
+ Podczas dostępu do właściwości, jeśli żaden błąd nie wystąpi, a właściwość symbol zostanie przypisana wartość właściwości "get" Metoda zwraca `S_OK`. Zwracana wartość wynosząca `S_FALSE` wskazuje, że właściwość nie jest prawidłowy dla bieżący symbol.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md)  
  W tym artykule opisano różne rodzaje lokalizacje, które mogą mieć symbolu.  
   
  [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
- Zawiera opis typów symboli, które tworzą leksykalne hierarchii, takie jak pliki, moduły i funkcje.  
+ W tym artykule opisano typy symboli, które tworzą leksykalne hierarchii, takie jak pliki, moduły i funkcje.  
   
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
- Opisano typy symbol odpowiadające elementom innego języka, takich jak klasy, tablic i funkcja zwracanych typów.  
+ Opisuje typy symboli, odpowiadające elementom innego języka, takich jak klasy, tablic i funkcji zwracanych typów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zestaw SDK dostępu do interfejsu debugowania](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

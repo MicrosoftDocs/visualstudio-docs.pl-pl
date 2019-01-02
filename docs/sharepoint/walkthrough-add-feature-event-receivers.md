@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Dodawanie odbiorców zdarzeń funkcji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Dodawanie odbiorców zdarzeń funkcji | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7e3471329c6ea798d9d86c594baec2e33815524
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853337"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>Wskazówki: Dodawanie odbiorców zdarzeń funkcji
+# <a name="walkthrough-add-feature-event-receivers"></a>Przewodnik: Dodawanie odbiorców zdarzeń funkcji
   Funkcji odbiorcy zdarzeń są metodami wykonywanymi gdy wystąpi jedno z następujących zdarzeń związanych z funkcji w programie SharePoint:
 
 - Funkcja zostanie zainstalowana.
@@ -122,5 +119,5 @@ ms.locfileid: "49948783"
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
+- [Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

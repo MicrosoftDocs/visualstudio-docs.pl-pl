@@ -2,7 +2,6 @@
 title: Zdalne debugowanie projektu Visual C++ | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884587"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Zdalne debugowanie projektu Visual C++ w programie Visual Studio
 Debugowanie aplikacji Visual Studio na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w którym wdrożysz swoją aplikację, należy skonfigurować projekt, aby połączyć się z komputerem zdalnym z programu Visual Studio, a następnie wdrożyć i uruchomić aplikację.
@@ -73,7 +72,7 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 lub nowszej (nie phone) i 
    |Polecenie zdalne|C:\remotetemp\mymfc.exe|  
    |Katalog roboczy|C:\remotetemp|  
    |Nazwa serwera zdalnego|Listy Dystrybucyjnej MJO:*numer_portu*|  
-   |połączenia|Zdalny z uwierzytelnianiem Windows|  
+   |Połączenie|Zdalny z uwierzytelnianiem Windows|  
    |Typ debugera|Tylko w trybie macierzystym|  
    |Katalog wdrażania|C:\remotetemp.|  
    |Dodatkowe pliki do wdrożenia|C:\data\mymfcdata.txt.|  

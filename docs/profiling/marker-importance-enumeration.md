@@ -1,8 +1,6 @@
 ---
-title: marker_importance — wyliczenie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wyliczenie marker_importance | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_importance
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 330ba15fa62272bd2c2f7ea7b40d6b527ab237c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841693"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance — wyliczenie
-Reprezentuje poziom ważności znaczników wizualizatora współbieżności.  
+Reprezentuje poziom ważności znaczników narzędzia Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,10 +34,10 @@ enum marker_importance;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|`critical_importance`|Określa, czy znacznika ma kluczowe znaczenie.|  
-|`high_importance`|Określa, czy znacznika ma wysokiej ważności.|  
-|`low_importance`|Określa, czy znacznika ma niskiej ważności.|  
-|`normal_importance`|Określa, czy znacznika ma znaczenie normalnego.|  
+|`critical_importance`|Określa, że znacznika ma krytyczne znaczenie.|  
+|`high_importance`|Określa, że znacznika ma o wysokiej ważności.|  
+|`low_importance`|Określa, że znacznika ma niską ważnością.|  
+|`normal_importance`|Określa, że znacznika ma znaczenie normalny.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkersobj.h*  

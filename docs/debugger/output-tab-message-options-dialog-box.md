@@ -1,8 +1,6 @@
 ---
-title: Dane wyjściowe kartę, komunikat opcje — Okno dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Karta dane wyjściowe, okno dialogowe Opcje komunikatów | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Output
@@ -12,47 +10,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e559edf5028d339b6086a413fb2dcb040aafb355
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c79b823b850aabc98290df0157da673d11d9a268
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885838"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Karta danych wyjściowych, okno dialogowe opcji komunikatów
-Użyj **dane wyjściowe** kartę, aby określić, jakie dane z każdy komunikat do listy w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić [okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md), wybierz **komunikaty dziennika** z **Spy** menu.  
+Użyj **dane wyjściowe** kartę, aby określić, jakie dane z każdego komunikatu do listy w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić [okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md), wybierz **komunikaty dziennika** z **Spy** menu.  
   
  Następujące ustawienia są dostępne na **dane wyjściowe** karty:  
   
- **Numery wiersza**  
+ **Numery wierszy**  
  Wyświetlanie numerów wierszy.  
   
- **Poziom zagnieżdżenia komunikatów**  
+ **Poziom zagnieżdżenia komunikatu**  
  Prefiks zagnieżdżonych wiadomości z jedną kropkę na poziomie.  
   
- **Parametry RAW wiadomości**  
- Wyświetl szesnastkowym **wParam** i **lParam** wartości.  
+ **Nieprzetworzone parametry komunikatu**  
+ Wyświetlanie szesnastkowe **wParam** i **lParam** wartości.  
   
- **Parametry dekodowane wiadomości**  
- Wyświetl wyniki dekodowanie specyficzne dla komunikatu **wParam** i **lParam** wartości.  
+ **Parametry zdekodowany komunikat**  
+ Wyświetl wyniki specyficzne dla wiadomości dekodowanie **wParam** i **lParam** wartości.  
   
  **Nieprzetworzone wartości zwracane**  
- Wyświetl szesnastkowym **elementu lResult** zwracają wartość.  
+ Wyświetlanie szesnastkowe **lResult** zwracają wartość.  
   
- **Dekodowane zwracanych wartości**  
- Wyświetl wyniki dekodowanie specyficzne dla komunikatu **elementu lResult** zwracają wartość.  
+ **Dekodowane wartości zwracane**  
+ Wyświetl wyniki specyficzne dla wiadomości dekodowanie **lResult** zwracają wartość.  
   
- **Czas źródła komunikatu**  
- Czas, który upłynął od uruchomienia systemu Windows (tylko dla wysłanych komunikatów).  
+ **Godzina pochodzenia wiadomości**  
+ Czas, jaki upłynął od uruchomienia systemu Windows (tylko dla wysłanych komunikatów).  
   
- **Położenie myszy komunikat**  
- Współrzędne ekranu myszy, gdy wiadomość była umieszczona (tylko dla wysłanych komunikatów).  
+ **Położenie myszy wiadomości**  
+ Współrzędne ekranu myszy, gdy komunikat został opublikowany (tylko dla wysłanych komunikatów).  
   
- **Maksymalna wierszy**  
- Ogranicz liczbę wierszy, które zostaną zachowane w aktualnie wybranego widoku komunikatów.  
+ **Linii maksymalnie**  
+ Ogranicz liczbę wierszy, które są przechowywane w aktualnie wybranego widoku komunikatów.  
   
- **Ponadto w pliku dziennika komunikatów**  
- Określ plik wyjściowy dla dziennika komunikatów. Ten plik dane wyjściowe są zapisywane jednocześnie z oknem komunikatu dziennika.  
+ **Również w pliku dziennika komunikatów**  
+ Określ plik wyjściowy dla dziennik komunikatów. Ten plik wyjściowy został jednocześnie napisany z uwzględnieniem okno Dziennik komunikatów.  
   
- **Zapisz ustawienia jako ustawienia domyślne**  
- Zapisz poprzedniego ustawienia dla nowych okien strumienia wiadomości. Te ustawienia są zapisywane podczas zamykania programu Spy ++.
+ **Zapisz ustawienia jako domyślne**  
+ Zapisz powyższych ustawień dla nowych komunikatów — windows strumienia. Te ustawienia są zapisywane podczas zamykania programu Spy ++.

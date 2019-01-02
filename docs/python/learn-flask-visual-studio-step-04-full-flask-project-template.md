@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności funkcji oferowanych przez Szablony projektu sieci Web Flask i Flask/Jade projektu sieci Web.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5bc7cd5a504a28ac34b80c6455b86bdfc28ac1be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878591"
 ---
-# <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Użyj pełnego szablonu projektu sieci Web Flask
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4. Pełny szablon projektu sieci Web Flask
 
-**Poprzedni krok: [Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Poprzedniego kroku: [Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Teraz, gdy zostały zbadane podstawy Flask, tworząc aplikację od szablonu "Pusty projekt aplikacji Flask" w programie Visual Studio, może łatwo zrozumieć pełniejszego aplikacji, które są generowane przez szablon "Projekt sieci Web Flask".
 
@@ -35,7 +34,7 @@ W tym kroku możesz teraz:
 
 Ten artykuł dotyczy również szablon "Projekt sieci Web Flask/Jade", który tworzy aplikację, która jest identyczna jak "Projektu sieci Web Flask" przy użyciu aparatu Jade szablonów zamiast Jinja. Dodatkowe szczegóły są umieszczane na końcu tego artykułu.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 1 z 4: Tworzenie projektu z szablonu
+## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 1 z 4 Tworzenie projektu z szablonu
 
 1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **LearningFlask** rozwiązanie utworzone we wcześniejszej części tego samouczka, a następnie wybierz pozycję **Dodaj**  >   **Nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
 
@@ -86,9 +85,9 @@ Niemniej jednak aby użyć istniejącego środowiska wirtualnego, należy wykona
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **środowiska Python** a następnie wybierz węzeł **Dodawanie istniejącego środowiska wirtualnego**.
 1. Przejdź do i wybierz folder zawierający środowiska wirtualnego, a następnie wybierz **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 2 z 4: Omówienie widoków i stron szablony utworzone przez szablon projektu
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 2 z 4 Widoki i szablony strony utworzone przez szablon projektu
 
-Jak można zaobserwować, kiedy uruchamiasz projekt, ta aplikacja zawiera trzy widoki: Home około i skontaktuj się z pomocą. Kod dla tych widoków znajduje się w *FlaskWeb/views.py*. Każda funkcja widoku po prostu wywołuje widok `flask.render_template` na ścieżkę do szablonu oraz listy zmiennych argumentów dla wartości, aby zapewnić do szablonu. Na przykład na stronie informacje jest obsługiwany przez `about` — funkcja (których dekoratora zapewnia routing adresów URL):
+Jak można zaobserwować, gdy uruchamiasz projekt, ta aplikacja zawiera trzy widoki: Strona główna i skontaktuj się z pomocą. Kod dla tych widoków znajduje się w *FlaskWeb/views.py*. Każda funkcja widoku po prostu wywołuje widok `flask.render_template` na ścieżkę do szablonu oraz listy zmiennych argumentów dla wartości, aby zapewnić do szablonu. Na przykład na stronie informacje jest obsługiwany przez `about` — funkcja (których dekoratora zapewnia routing adresów URL):
 
 ```python
 @app.route('/about')

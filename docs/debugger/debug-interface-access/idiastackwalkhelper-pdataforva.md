@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::pdataForVA | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a29c1a9fa21b973bca5db03bae07f608f82014f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888026"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Zwraca skojarzony z wirtualnym adresem bloku danych PDATA.  
@@ -27,7 +25,7 @@ Zwraca skojarzony z wirtualnym adresem bloku danych PDATA.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT pdataForVA(   
+HRESULT pdataForVA(   
    ULONGLONG  va,  
    DWORD      cbData,  
    DWORD*     pcbData,  

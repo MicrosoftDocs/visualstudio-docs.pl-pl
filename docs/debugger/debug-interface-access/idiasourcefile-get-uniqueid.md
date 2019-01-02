@@ -1,8 +1,6 @@
 ---
 title: Idiasourcefile::get_uniqueid — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c2996513f3e6464d8f94522c2b427213882f6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3eef4e6f435b60f024067e13c884c7742df0ffa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879478"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 Pobiera wartość klucza proste liczba całkowita, która jest unikatowa dla tego obrazu.  
@@ -27,7 +25,7 @@ Pobiera wartość klucza proste liczba całkowita, która jest unikatowa dla teg
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_uniqueId (   
+HRESULT get_uniqueId (   
    DWORD* pRetVal  
 );  
 ```  

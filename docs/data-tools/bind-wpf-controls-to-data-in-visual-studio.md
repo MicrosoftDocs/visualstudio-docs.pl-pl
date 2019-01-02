@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932788"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek WPF z danymi w programie Visual Studio
 
@@ -54,8 +53,8 @@ W poniższej tabeli wymieniono [!INCLUDE[TLA#tla_titlexaml](../data-tools/includ
 
 | Źródło danych | Generowanie pliku XAML, która wiąże formant ze źródłem danych | Generowanie kodu, który wypełnia źródło danych danymi |
 | - | - | - |
-| Zestaw danych | Tak | Tak |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Tak | Tak |
+| Zestaw danych | Tak | Yes |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Yes | Tak |
 | Usługa | Tak | Nie |
 | Obiekt | Tak | Nie |
 

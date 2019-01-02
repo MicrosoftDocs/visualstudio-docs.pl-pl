@@ -4,16 +4,15 @@ title: Pomiaru wydajności aplikacji za pomocą profilowania | Dokumentacja firm
 description: Dowiedz się, jak używać programu Visual Studio 2017, profilowanie wydajności aplikacji, usług i narzędzi w wybranym języku.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886452"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Mierzyć wydajność aplikacji w programie Visual Studio
 

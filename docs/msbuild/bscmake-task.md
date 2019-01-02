@@ -1,8 +1,6 @@
 ---
 title: Bscmake — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.bscmake
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b93247fcce7502ce96a075dc5d297cd9c87fe640
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6f5a8d7f60793bbd6864fdfa98fc1864d1612955
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887451"
 ---
 # <a name="bscmake-task"></a>Bscmake — zadanie
 > [!IMPORTANT]

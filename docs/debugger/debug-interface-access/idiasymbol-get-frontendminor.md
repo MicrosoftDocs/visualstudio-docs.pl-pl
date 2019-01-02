@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_frontendminor — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f02950b3eb3f55cb46be9689403d3c4f743fc988
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c4cadb5dbea74bcdd3c020ba8a08ccd8bbb76fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847233"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 Pobiera numer wersji pomocniczej frontonu.  
@@ -27,7 +25,7 @@ Pobiera numer wersji pomocniczej frontonu.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_frontEndMinor (   
+HRESULT get_frontEndMinor (   
    DWORD* pRetVal  
 );  
 ```  

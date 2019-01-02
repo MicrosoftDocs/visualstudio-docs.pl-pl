@@ -1,8 +1,6 @@
 ---
-title: Okno dialogowe Wyszukiwanie wątku | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Okno dialogowe Wyszukiwanie wątków | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Thread Search
@@ -12,42 +10,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ce2c01bc943945439e0682b9462f24c7d9c5fd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 654e2a43c45364c7050c84c3d98ca08f6e03e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885864"
 ---
 # <a name="thread-search-dialog-box"></a>Wyszukiwanie wątków — Okno dialogowe
-To okno dialogowe służy do znajdowania i wybierz węzeł określonego wątku [Widok wątków](../debugger/threads-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **wątków** okno widoku. Następnie wybierz pozycję **znaleźć wątku** z **wyszukiwania** menu.  
+Umożliwia to okno dialogowe Znajdź i wybierz węzeł w określonym wątku [Widok wątków](../debugger/threads-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **wątków** okno widoku. Następnie wybierz **Znajdź wątek** z **wyszukiwania** menu.  
   
  Dostępne są następujące ustawienia:  
   
  **Wątek**  
  Identyfikator wątku do wyszukania.  
   
- **Moduł**  
+ **Module**  
  Ciąg modułu do wyszukania.  
   
  **Kierunek wyszukiwania w górę lub w dół**  
- Kierunek początkowy wyszukiwania.  
+ Początkowa kierunek wyszukiwania.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Okno dialogowe właściwości wątku](../debugger/thread-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości wybranego w widoku wątków wątku.  
+ [Właściwości wątku, okno dialogowe](../debugger/thread-properties-dialog-box.md)  
+ Umożliwia wyświetlenie właściwości wybranego w widoku wątków wątek.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.  
+ Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.  
   
  [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Wyjaśniono, jak można znaleźć określonego wątku w widoku wątków.  
+ Wyjaśnia, jak można znaleźć określonego wątku w widoku wątków.  
   
  [Widok wątków](../debugger/threads-view.md)  
- Wyświetla widok drzewa Aktywne wątki  
+ Wyświetla aktywne wątki w widoku drzewa  
   
  [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.

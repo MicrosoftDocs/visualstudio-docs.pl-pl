@@ -1,8 +1,6 @@
 ---
 title: Debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_ia64
@@ -17,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f87173f1a5a5be71e21ffd267c94619aed7b58d2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 24f8281966dba0e7b1a0ad158a870a4a8229724b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964815"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane.
-Visual Studio nie obsługuje trybu mieszanego debugowania kodu zarządzanego i natywnego w procesów IA64. Oznacza to, że podczas debugowania nie można wykonać kroku z kodu zarządzanego do kodu natywnego lub kodu natywnego do zarządzanego kodu.  
+Program Visual Studio nie obsługuje debugowanie kodu zarządzanego i natywnego w procesów IA64 w trybie mieszanym. Oznacza to, że nie możesz wejść z kodu zarządzanego do kodu macierzystego lub kodu natywnego do zarządzanego kodu podczas debugowania.  
   
 ### <a name="workarounds"></a>Rozwiązania  
   
@@ -33,23 +31,23 @@ Visual Studio nie obsługuje trybu mieszanego debugowania kodu zarządzanego i n
   
      —lub—  
   
-     Debugowanie kodu mieszanych jako proces 32-bitowy, zgodnie z opisem w poniższych procedurach.  
+     Debugowanie kodu mieszanego jako proces 32-bitowych, zgodnie z opisem w poniższych procedurach.  
   
-### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Aby zmienić platformę 32-bitowych (Visual Basic lub C#)  
+### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Aby zmienić platformy 32-bitowe (Visual Basic lub C#)  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości** w menu skrótów.  
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nad projektem, a następnie kliknij przycisk **właściwości** w menu skrótów.  
   
-2.  Na stronach właściwości, kliknij przycisk **skompilować** lub **debugowania** kartę.  
+2.  Na stronach właściwości kliknij przycisk **skompilować** lub **debugowania** kartę.  
   
-3.  Kliknij przycisk **platformy** i wybierz z listy platform x86.  
+3.  Kliknij przycisk **platformy** i wybierać x86 listę platform.  
   
-     Domyślnie domyślne Kompilatory języka Visual Basic i C# generuje kod, aby uruchomić na dowolnym Procesora. Na komputerze 64-bitowym tych plików binarnych Uruchom jako procesów 64-bitowych. Aby uruchomić proces 32-bitowy, musisz wybrać **Win32**, a nie **AnyCPU**.  
+     Domyślnie domyślne Kompilatory języka Visual Basic i C# generuje kod wymagany do uruchomienia na dowolny procesor CPU. Na komputerze 64-bitowych te pliki binarne Uruchom jako procesów 64-bitowych. Aby uruchomić proces 32-bitowy, należy wybrać **Win32**, a nie **AnyCPU**.  
   
-### <a name="to-change-the-platform-to-32-bit-cc"></a>Aby zmienić platformę 32-bitowych (C/C++)  
+### <a name="to-change-the-platform-to-32-bit-cc"></a>Aby zmienić platformy 32-bitowych (C/C++)  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości** w menu skrótów.  
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nad projektem, a następnie kliknij przycisk **właściwości** w menu skrótów.  
   
-2.  Na stronach właściwości, kliknij przycisk **platformy** i wybierz z listy platform, Win32  
+2.  Na stronach właściwości kliknij przycisk **platformy** i wybierz listę platform, systemu Win32  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)

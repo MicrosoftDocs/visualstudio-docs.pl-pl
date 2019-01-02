@@ -2,19 +2,18 @@
 title: Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883029"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
@@ -34,7 +33,7 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
 
 ## <a name="audio-control"></a>Kontrolki dźwięku
 
-**Kontrolki dźwięku:** poprawnie zarejestrowane i odtwarzać akcji sterowanie dźwięk HTML5.
+**Kontrolki dźwięku:** Akcje w kontrolce dźwięk HTML5 poprawnie są rejestrowane i odtwarzać.
 
 ![Dźwięk HTML5 kontroli](../test/media/codedui_html5_audio.png)
 
@@ -49,16 +48,16 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
 
 Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) listę właściwości, na których można dodać potwierdzenia.
 
- **Właściwości wyszukiwania:** właściwości wyszukiwania `HtmlAudio` są `Id`, `Name` i `Title`.
+ **Właściwości wyszukiwania:** Właściwości wyszukiwania `HtmlAudio` są `Id`, `Name` i `Title`.
 
- **Właściwości filtru:** właściwości filtru dla `HtmlAudio` są `Src`, `Class`, `ControlDefinition` i `TagInstance`.
+ **Właściwości filtru:** Właściwości filtru dla `HtmlAudio` są `Src`, `Class`, `ControlDefinition` i `TagInstance`.
 
 > [!NOTE]
 > Ilość czasu, która umożliwia wyszukiwanie i wstrzymywanie działania mogą być znaczące. Podczas odtwarzania kodowanego testu interfejsu użytkownika będzie czekać aż do określonej w `(TimeSpan)` przed wstrzymaniem audio. Jeśli przez kilka specjalnych okoliczności określonego czasu minęło przed osiągnięcia polecenie wstrzymania, zostanie zgłoszony wyjątek.
 
 
 ## <a name="video-control"></a>Kontrolki wideo
- **Kontrolki wideo:** poprawnie zarejestrowana i odtwarzać akcji dla kontrolki wideo HTML5.
+ **Kontrolki wideo:** Poprawnie zarejestrowane i odtwarzać akcji dla kontrolki wideo HTML5.
 
  ![Kontrolki wideo HTML5](../test/media/codedui_html5_video.png)
 
@@ -73,15 +72,15 @@ Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 Zobacz [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) listę właściwości, na których można dodać potwierdzenia.
 
- **Właściwości wyszukiwania:** właściwości wyszukiwania `HtmlVideo` są `Id`, `Name` i `Title`.
+ **Właściwości wyszukiwania:** Właściwości wyszukiwania `HtmlVideo` są `Id`, `Name` i `Title`.
 
- **Właściwości filtru:** właściwości filtru dla `HtmlVideo` są `Src`, `Poster`, `Class`, `ControlDefinition` i `TagInstance`.
+ **Właściwości filtru:** Właściwości filtru dla `HtmlVideo` są `Src`, `Poster`, `Class`, `ControlDefinition` i `TagInstance`.
 
 > [!NOTE]
 > Jeśli przewinąć do tyłu lub szybkie przewijanie do przodu wideo przy użyciu etykiet-30s lub +30s, to zostaną zagregowane się w odpowiednim czasie.
 
 ## <a name="progressbar"></a>ProgressBar
- **ProgressBar — formant:** ProgressBar jest formantem interactable. Można dodać asercje `Value` i `Max` właściwości tej kontrolki. Aby uzyskać więcej informacji, zobacz [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **ProgressBar — formant:** ProgressBar jest-interactable kontroli. Można dodać asercje `Value` i `Max` właściwości tej kontrolki. Aby uzyskać więcej informacji, zobacz [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![HTML5 ProgressBar, kontrolka](../test/media/codedui_html5_progressbar.png)
 

@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Aktualizowanie kontrolek na Wstążce w czasie wykonywania'
-ms.custom: ''
+title: 'Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926956"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Wskazówki: Aktualizowanie kontrolek na Wstążce w czasie wykonywania
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania
 
 W tym instruktażu pokazano, jak aktualizowanie formantów na Wstążce po załadowaniu wstążki do aplikacji pakietu Office przy użyciu modelu obiektu wstążki.
 
@@ -68,7 +65,7 @@ Najpierw utwórz projekt dodatku narzędzi VSTO dla programu Outlook.
 
 3.  Zapisz projekt do domyślnego katalogu projektu.
 
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Projektowanie niestandardowych grupy wstążki
 
@@ -294,7 +291,7 @@ Możesz dowiedzieć się więcej na temat sposobu dostosowywania interfejsu uży
 
 -   Dodaj oparte na kontekście interfejsu użytkownika do jakiegokolwiek dostosowywania poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).
 
--   Rozszerz standardowy lub niestandardowy formularz programu Microsoft Office Outlook. Aby uzyskać więcej informacji, zobacz [wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+-   Rozszerz standardowy lub niestandardowy formularz programu Microsoft Office Outlook. Aby uzyskać więcej informacji, zobacz [instruktażu: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 -   Dodawanie niestandardowego okienka zadań do programu Outlook. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
 
@@ -303,13 +300,13 @@ Możesz dowiedzieć się więcej na temat sposobu dostosowywania interfejsu uży
 - [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Wstążka — omówienie](../vsto/ribbon-overview.md)
 - [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)
-- [Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md)
 - [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Porady: zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)
-- [Porady: dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Instrukcje: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Porady: dodatek Pokaż błędy interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Instrukcje: Zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)
+- [Instrukcje: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)

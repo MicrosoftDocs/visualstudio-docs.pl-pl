@@ -2,7 +2,6 @@
 title: Dynamiczne symboliczne wykonywanie | Narzędzie Test Microsoft IntelliTest dla deweloperów
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -11,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834675"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych, za pomocą dynamiczne symboliczne wykonywanie
 
-Funkcja IntelliTest generuje dane wejściowe dla [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) , analizując warunków gałęzi w programie. Dane wejściowe testu są wybierane w zależności od tego, czy można uruchomić nowego zachowania rozgałęziania programu. Analiza jest procesem przyrostowe. Udoskonalanie predykat **pytanie: czy mogę -> {true lub false}** za pośrednictwem formalnych testu parametry wejściowe **I**. **q** reprezentuje zestaw zachowań, które ma zaobserwowane IntelliTest. Początkowo **q: = false**, ponieważ nic nie został jeszcze zaobserwowany.
+Funkcja IntelliTest generuje dane wejściowe dla [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) , analizując warunków gałęzi w programie. Dane wejściowe testu są wybierane w zależności od tego, czy można uruchomić nowego zachowania rozgałęziania programu. Analiza jest procesem przyrostowe. Udoskonalanie predykat **Pyt.: Czy mogę -> {true lub false}** za pośrednictwem formalnych testu parametry wejściowe **I**. **q** reprezentuje zestaw zachowań, które ma zaobserwowane IntelliTest. Początkowo **q: = false**, ponieważ nic nie został jeszcze zaobserwowany.
 
 Procedura pętli jest następująca:
 
@@ -29,7 +28,7 @@ Procedura pętli jest następująca:
 
 1. IntelliTest wykonuje test przy użyciu wybrane dane wejściowe **i**oraz monitoruje wykonanie testu i program w ramach testu.
 
-1. Podczas wykonywania program pobiera określoną ścieżką, która jest określana przez wszystkie gałęzie warunkowego programu. Zestaw wszystkie warunki, które określają wykonywania jest nazywany *warunku ścieżki*, napisana jako predykat **p: czy mogę -> {true lub false}** za pośrednictwem formalnych parametrów wejściowych. Funkcja IntelliTest oblicza reprezentację ten predykat.
+1. Podczas wykonywania program pobiera określoną ścieżką, która jest określana przez wszystkie gałęzie warunkowego programu. Zestaw wszystkie warunki, które określają wykonywania jest nazywany *warunku ścieżki*, napisana jako predykat **p: Czy mogę -> {true lub false}** za pośrednictwem formalnych parametrów wejściowych. Funkcja IntelliTest oblicza reprezentację ten predykat.
 
 1. Zestawy testów funkcji IntelliTest **q: = (q lub p)**. Innymi słowy, rejestruje fakt, że jego obserwowała, jak ścieżki, reprezentowane przez **p**.
 

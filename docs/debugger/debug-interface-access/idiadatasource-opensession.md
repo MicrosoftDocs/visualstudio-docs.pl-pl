@@ -1,8 +1,6 @@
 ---
 title: Idiadatasource::opensession — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843115"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Zostanie otwarta sesja zapytań symboli.  
@@ -27,7 +25,7 @@ Zostanie otwarta sesja zapytań symboli.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  

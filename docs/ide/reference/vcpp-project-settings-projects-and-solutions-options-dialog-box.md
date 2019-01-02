@@ -2,7 +2,6 @@
 title: Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 ms.date: 08/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
@@ -20,26 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: cab1a6841a321489091bcf1e62dbf2d8eeafacdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855026"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
-To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kompilacji i ustawienia dotyczące rejestrowania, wydajności i obsługi typów plików projektu.
+To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kompilacji i ustawienia związane z rejestrowania, wydajności i obsługi typów plików projektu.
 
 ### <a name="to-access-this-dialog-box"></a>Dostęp do tego okna dialogowego
 
 1.  Na **narzędzia** menu, kliknij przycisk **opcje**.
 
-2.  Wybierz **projekty i rozwiązania**, a następnie wybierz **ustawienia projektu VC ++**.
+2.  Wybierz **projekty i rozwiązania**, a następnie wybierz pozycję **ustawienia projektu VC ++**.
 
 ## <a name="build-logging"></a>Rejestrowanie kompilacji
  **Tak**
 
-  Włącza generowanie pliku dziennika kompilacji. Ta opcja powoduje wygenerowanie BuildLog.htm, które znajdują się w katalogu pośrednim plików projektu. Co nowego kompilacji zastępuje poprzedniego pliku BuildLog.htm.
+  Włącza generowanie pliku dziennika kompilacji. Ta opcja powoduje wygenerowanie nazwę BuildLog.htm, które znajdują się w katalogu pośrednie pliki projektu. Każdej nowej kompilacji zastępuje poprzedni plik nazwę BuildLog.htm.
 
  **Brak**
 
@@ -48,32 +47,32 @@ To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/incl
 ## <a name="show-environment-in-log"></a>Pokaż środowisko w rejestrze
  **Tak**
 
- Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa, aby wyświetlić wszystkie zmienne środowiskowe, podczas kompilacji z [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektów, w pliku dziennika kompilacji.
+ Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa, aby wyświetlić wszystkich systemowych zmiennych środowiskowych, podczas kompilacji z [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektów do kompilacji pliku dziennika.
 
  **Brak**
 
- Wyklucz zmienne środowiskowe w pliku dziennika kompilacji.
+ Wyklucz zmienne środowiskowe z pliku dziennika kompilacji.
 
 ## <a name="build-timing"></a>Czas kompilacji
  **Tak**
 
-  Włącza funkcję chronometrażu kompilacji. Jeśli zaznaczone, czas potrzebny na zakończenie kompilacji jest zamieszczana w oknie danych wyjściowych. Aby uzyskać więcej informacji, zobacz [okno danych wyjściowych](../../ide/reference/output-window.md).
+  Włącza międzyczasy kompilacji. Jeśli zaznaczone, czas potrzebny na zakończenie kompilacji jest publikowany w oknie danych wyjściowych. Aby uzyskać więcej informacji, zobacz [okno danych wyjściowych](../../ide/reference/output-window.md).
 
  **Brak**
 
- Wyłącza kolejność kompilacji.
+ Wyłącza międzyczasy kompilacji.
 
-## <a name="maximum-concurrent-c-compilations"></a>Maksimum współbieżnych kompilacji C++
-  Określa maksymalną liczbę rdzeni CPU używanych w równoległej kompilacji C++.
+## <a name="maximum-concurrent-c-compilations"></a>Maksymalna współbieżnych kompilacji języka C++
+  Określa maksymalną liczbę rdzeni Procesora używanych w równoległej kompilacji języka C++.
 
 ## <a name="extensions-to-include"></a>Rozszerzenia do uwzględnienia
-  Określa rozszerzeń nazw plików, które mogą być przenoszone do projektu.
+  Określa rozszerzenia nazw plików, które mogą być przenoszone do projektu.
 
 ## <a name="extensions-to-hide"></a>Ukryte rozszerzenia
-  Określa rozszerzeń nazw plików, które nie będą wyświetlane w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** jest włączona.
+  Określa rozszerzenia nazw plików, które nie będą wyświetlane w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** jest włączona.
 
 ## <a name="build-customization-search-path"></a>Ścieżka wyszukiwania dostosowania kompilacji
-  Określa listę katalogów, zawierające Rules pliki, które pomagają zdefiniować reguły kompilacji dla projektów.
+  Określa listę katalogów, które zawierają pliki Rules, które ułatwiają definiowanie reguł kompilacji dla Twoich projektów.
 
 ## <a name="solution-explorer-mode"></a>Tryb Eksploratora rozwiązań
  **Pokaż tylko pliki w projekcie**
@@ -82,16 +81,16 @@ To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/incl
 
  **Pokaż wszystkie pliki**
 
-  Konfiguruje **Eksploratora rozwiązań** Aby wyświetlić pliki w projekcie i plików na dysku w folderze projektu.
+  Konfiguruje **Eksploratora rozwiązań** Aby wyświetlić pliki w projekcie i pliki na dysku w folderze projektu.
 
 ## <a name="enable-project-caching"></a>Włącz buforowanie projektu
 **Tak**
 
-Umożliwia środowisku Visual Studio do pamięci podręcznej danych projektu tak, aby po przy następnym otwarciu projektu go załadować tych buforowanych danych, zamiast ponownego przetwarzania danych z plików projektu. Przy użyciu danych z pamięci podręcznej można skrócić czas ładowania projektu znacznie.
+Umożliwia środowisku Visual Studio do buforowania danych projektu tak, aby przy następnym otwarciu projektu go załadować tych buforowanych danych, zamiast ponownego przetwarzania danych z plików projektu. Przy użyciu danych z pamięci podręcznej można przyspieszyć czas ładowania projektu znacznie.
 
 **Brak**
 
-Nie należy używać dane buforowane projektu. Przeanalizować ładuje projekt zawsze pliki projektu.
+Nie należy używać danych z pamięci podręcznej programu project. Analizowanie plików projektu, projekt ładuje się każdorazowo.
 
 ## <a name="see-also"></a>Zobacz także
 

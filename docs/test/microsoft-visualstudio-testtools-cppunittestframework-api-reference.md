@@ -2,19 +2,18 @@
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 ms.author: mblome
 manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33cfa33e28bc8bf76122bafd6de3fe1d5e48f6cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849956"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -644,4 +643,3 @@ public:
 
 - [Kod testu jednostkowego](../test/unit-test-your-code.md)
 - [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
-

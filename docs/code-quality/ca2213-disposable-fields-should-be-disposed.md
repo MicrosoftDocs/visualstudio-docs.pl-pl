@@ -1,8 +1,7 @@
 ---
-title: 'CA2213: Pola usuwalne powinny zostać usunięte'
+title: 'CA2213: Pola możliwe do rozporządzania należy rozporządzać'
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be06c9bf38ec360cedc858d92a84b1f89c662856
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: de8df7e124cd8dd8ba9764add4006f7244155de8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882081"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola usuwalne powinny zostać usunięte
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola możliwe do rozporządzania należy rozporządzać
 
 |||
 |-|-|

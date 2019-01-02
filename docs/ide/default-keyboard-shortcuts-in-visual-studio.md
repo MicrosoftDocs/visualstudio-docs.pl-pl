@@ -2,7 +2,6 @@
 title: Domyślne skróty klawiaturowe
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e4e44409b45762eb6c43f16e93017ae0db3750
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dbde2e26ac576758d45ee908e30d9bef3341a3ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849593"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
-Aby uzyskać więcej informacji na temat klawiatura — ułatwienia dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) i [porady: używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Aby uzyskać więcej informacji na temat klawiatura — ułatwienia dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) i [jak: Używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Można uzyskać dostęp do różnych poleceń i okien w programie Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ten temat zawiera listę domyślnych skrótów dla profilu ogólnego projektowania, które być może wybrano podczas instalacji programu Visual Studio. Niezależnie od wybranego profilu, możesz zidentyfikować skrót dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
 

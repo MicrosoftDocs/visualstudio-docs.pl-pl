@@ -3,7 +3,6 @@ title: Miara wydajności o narzędziach profilowania
 description: Przyjrzyj się krótki opis różnych narzędzi diagnostycznych dostępnych w programie Visual Studio.
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880315"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Szybki Start: Pierwsze spojrzenie na narzędziach profilowania
+# <a name="quickstart-first-look-at-profiling-tools"></a>Szybki start: Pierwsze spojrzenie na narzędziach profilowania
 
 Program Visual Studio oferuje szeroką gamę narzędzi, dzięki którym możesz diagnozować różne rodzaje problemów z wydajnością w zależności od typu aplikacji profilowania.
 
@@ -154,18 +153,18 @@ Jeśli potrzebujesz funkcji, takich jak Instrumentacja, które nie są aktualnie
 
 Poniżej przedstawiono listę różnych narzędzi oferowanych przez program Visual Studio i różnych typach projektów można ich używać za pomocą:
   
-|Narzędzia wydajności|Windows desktop|Platforma UWP|ASP.NET/ASP.NET Core| 
+|Narzędzia wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Tak|
-|[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak| 
-|[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak| 
-|[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|
-|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|Tak|tak, aby XAML nie dla kodu HTML|Tak|
-|[Eksplorator wydajności](../profiling/performance-explorer.md)|Tak|Brak|Tak|
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
+|[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak| 
+|[Użycie procesora GPU](../debugger/gpu-usage.md)|tak|tak|Brak| 
+|[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|Brak|
+|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak, aby XAML nie dla kodu HTML|tak|
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|Brak|tak|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET przy użyciu Visual Studio Enterprise|.NET przy użyciu Visual Studio Enterprise|.NET przy użyciu Visual Studio Enterprise|
-|[Użycie sieci](../profiling/network-usage.md)|Brak|Tak|Brak|
+|[Użycie sieci](../profiling/network-usage.md)|Brak|tak|Brak|
 |[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak w języku HTML, nie dla XAML|Brak| 
 |[Pamięć języka JavaScript](../profiling/javascript-memory.md)|Brak|tak w języku HTML, nie dla XAML|Brak|
 
 ## <a name="see-also"></a>Zobacz także  
- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Debugowanie w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour)

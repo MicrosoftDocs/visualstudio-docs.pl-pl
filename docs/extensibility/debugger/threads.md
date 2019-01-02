@@ -1,9 +1,6 @@
 ---
 title: Wątki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], threads
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456ec81c5f39f533bddd58d0a9e4d9d5889f066d
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 0e53ca354bdf29dd004126a7de79b5d2648753f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889780"
 ---
 # <a name="threads"></a>Wątki
 W architekturze debugera *wątku*:  

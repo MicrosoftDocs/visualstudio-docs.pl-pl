@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności pokazująca, jak obsługa plików statycznych, dodawanie stron do aplikacji i użyć szablonu dziedziczenia
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5c53001d31e6ef4ee32aaef2093e04be6fcaac29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829592"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3. Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 
-**Poprzedni krok: [tworzenie aplikacji Django przy użyciu widoków i stron szablonów](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**Poprzedniego kroku: [Tworzenie aplikacji Django przy użyciu widoków i szablonów stron](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 W poprzednich krokach w tym samouczku wyjaśniono sposób tworzenia minimalną aplikację Django z pojedynczej strony HTML niezależna. Nowoczesne aplikacje sieci web, jednak zwykle składają się z wielu stron i wprowadzić korzystanie z zasobów udostępnionych, takich jak pliki CSS i JavaScript, aby zapewnić spójne stylów i zachowanie.
 
@@ -34,7 +33,7 @@ W tym kroku dowiesz się, jak:
 > - Dodawanie dodatkowych stron do aplikacji (krok 3 z 3)
 > - Użyj szablonu dziedziczenia, aby utworzyć pasek nagłówka, jak i nawigacji, który jest używany na stronach (krok 3 – 4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 1 z 3: zapoznanie się z szablonów elementów
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 1 z 3: Zapoznanie się z szablonów elementów
 
 Podczas opracowywania aplikacji Django, zazwyczaj należy dodać wiele plików więcej języka Python, HTML, CSS i JavaScript. Dla każdego typu pliku (oraz innych plików, takich jak *web.config* potrzebne do wdrożenia), program Visual Studio zapewnia wygodne [elementu szablony](python-item-templates.md) ułatwią Ci rozpoczęcie pracy.
 
@@ -46,7 +45,7 @@ Aby użyć szablonu, wybrania odpowiedniego szablonu, określ nazwę pliku i wyb
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pytanie: Jak Visual Studio wiesz, które element szablonów do oferty?
 
-Odpowiedź: Visual Studio pliku projektu (*.pyproj*) zawiera identyfikator typu projektu, który oznacza je jako projektu języka Python. Visual Studio używa tego identyfikatora typu, aby pokazać tylko te szablony elementów, które są odpowiednie dla typu projektu. W ten sposób programu Visual Studio można podać bogatego zestawu szablonów elementów, dla typów bez konieczności sortowanie je każdym razem, gdy wiele projektów.
+Odpowiedź: Plik projektu programu Visual Studio (*.pyproj*) zawiera identyfikator typu projektu, który oznacza je jako projektu języka Python. Visual Studio używa tego identyfikatora typu, aby pokazać tylko te szablony elementów, które są odpowiednie dla typu projektu. W ten sposób programu Visual Studio można podać bogatego zestawu szablonów elementów, dla typów bez konieczności sortowanie je każdym razem, gdy wiele projektów.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 2 z 3: Obsługa plików statycznych z aplikacji
 
@@ -99,7 +98,7 @@ Można organizować pliki przy użyciu dowolnej struktury folderów w ramach *st
 
 ### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pytanie: Co to jest celem {% obciążenia, jakiego staticfiles %} tag?
 
-Odpowiedź: `{% load staticfiles %}` wiersza jest wymagane, aby odwołujące się do plików statycznych w elementach, takich jak `<head>` i `<body>`. W przykładzie przedstawionym w tej sekcji, "staticfiles" odnosi się do niestandardowego Django szablonu tag zestaw, który jest, co pozwala na używanie `{% static %}` składni do odwoływania się do plików statycznych.  Bez `{% load staticfiles %}`, zobaczysz wyjątek po uruchomieniu aplikacji.
+Odpowiedź: `{% load staticfiles %}` Wiersza jest wymagane, aby odwołujące się do plików statycznych w elementach, takich jak `<head>` i `<body>`. W przykładzie przedstawionym w tej sekcji, "staticfiles" odnosi się do niestandardowego Django szablonu tag zestaw, który jest, co pozwala na używanie `{% static %}` składni do odwoływania się do plików statycznych.  Bez `{% load staticfiles %}`, zobaczysz wyjątek po uruchomieniu aplikacji.
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pytanie: Czy istnieją wszystkie konwencje służący do organizowania plików statycznych?
 
@@ -166,13 +165,13 @@ Poniższe kroki Dodawanie strony "About" do projektu "HelloDjangoApp" i łącza 
 
 1. Uruchom projekt, aby obserwować wyniki i sprawdź Nawigacja między stronami. Zamknij serwer po zakończeniu.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pytanie: czy mogę próbowano przy użyciu "index", aby uzyskać link do strony głównej, ale nie sprawdził się. Dlaczego?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pytanie: Podjęto, aby uzyskać link do strony głównej przy użyciu "index", ale nie sprawdził się. Dlaczego?
 
-Odpowiedź: mimo że widoku działa w programach *views.py* nosi nazwę `index`, adresu URL routingu wzorców w projekcie Django *urls.py* plik nie zawiera wyrażenia regularnego, który pasuje do ciągu " Indeks". Aby dopasować te parametry, należy dodać inny wpis dla wzorca `^index$`.
+Odpowiedź: Mimo że widoku działa w programach *views.py* nosi nazwę `index`, adresu URL routingu wzorców w projekcie Django *urls.py* plik nie zawiera wyrażenia regularnego, który pasuje do ciągu "index". Aby dopasować te parametry, należy dodać inny wpis dla wzorca `^index$`.
 
 Jak pokazano w następnej sekcji, to lepiej używać `{% url '<pattern_name>' %}` tagu w szablonie strony do odwoływania się do *nazwa* wzorca, w którym wielkość Django tworzy prawidłowego adresu URL. Na przykład Zastąp ciąg `<div><a href="home">Home</a></div>` w *about.html* z `<div><a href="{% url 'index' %}">Home</a></div>`. Użycie "index" działa, w tym miejscu, ponieważ pierwszy adres URL wzorca w *urls.py* w rzeczywistości o nazwie "index" (na mocy niniejszej `name='index'` argument). Umożliwia także "home" do odwoływania się do drugi wzorzec.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3 – 4: Użyj dziedziczenie w szablonie, aby utworzyć pasku nagłówka, jak i nav
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3 – 4: Użyj szablonu dziedziczenia, aby utworzyć pasku nagłówka, jak i nav
 
 Zamiast łącza nawigacji jawne na każdej stronie, nowoczesne aplikacje internetowe zazwyczaj korzystają ze znakowaniem nagłówek i pasek nawigacyjny, który zawiera najważniejsze łączy strony, menu podręczne i tak dalej. Aby upewnić się, że nagłówek i na pasku nawigacyjnym są takie same na wszystkich stronach, jednak nie chcesz powtórzyć ten sam kod w każdym szablonie strony. Zamiast tego chcesz zdefiniować typowych części wszystkich stron w jednym miejscu.
 

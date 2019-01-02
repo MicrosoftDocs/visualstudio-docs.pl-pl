@@ -1,8 +1,6 @@
 ---
 title: Widok linii - dane próbkowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb965b9a93a278a4c51ea4661f683ebafc2838fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1809680b7bdc8a56bf2058d332541682ec7cccd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845970"
 ---
 # <a name="lines-view---sampling-data"></a>Widok linii — dane próbkowania
 Uruchom wiersze widok pobierania próbek danych zawiera dane o wydajności dla instrukcji, które były wykonywane w chwili przykłady zostały zebranych podczas profilowania.  
@@ -43,7 +41,7 @@ Uruchom wiersze widok pobierania próbek danych zawiera dane o wydajności dla i
   
   Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
 |**Nazwa procesu**|Nazwa procesu.|  

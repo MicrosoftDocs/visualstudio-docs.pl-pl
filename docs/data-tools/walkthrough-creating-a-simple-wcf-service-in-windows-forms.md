@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie prostą usługę WCF w formularzach Windows Forms'
+title: 'Przewodnik: Tworzenie prostą usługę WCF w formularzach Windows Forms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e2c9d0bd58adcd0a0595c061fa4dfaa81f629601
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 466514f0bfd343dc985021a3a081739a91946f8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882068"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: Tworzenie prostą usługę WCF w formularzach Windows Forms
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: Utwórz prostą usługę WCF w formularzach Windows Forms
 
 W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] usługi, testowania i do niego dostęp z aplikacji Windows Forms.
 
@@ -96,7 +95,7 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[vsindigo](.
 
 1.  Na **pliku** menu wskaż **Dodaj** a następnie kliknij przycisk **nowy projekt**.
 
-2.  W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** węzeł **Windows**, a następnie wybierz pozycję  **Windows Forms aplikacji**. Kliknij przycisk **OK** otworzyć projektu.
+2.  W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**  węzła, wybierz opcję **Windows**, a następnie wybierz pozycję  **Windows Forms aplikacji**. Kliknij przycisk **OK** otworzyć projektu.
 
      ![Projekt Windows Forms aplikacji](../data-tools/media/wcf7.png)
 
@@ -131,4 +130,4 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[vsindigo](.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

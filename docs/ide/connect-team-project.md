@@ -2,17 +2,16 @@
 title: Połącz się z projektami w programie Team Explorer
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.author: gewarren
 author: gewarren
 ms.manager: douge
-ms.openlocfilehash: 6b021dbeddc8d8ed5dd0896853d2ca38641b146b
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 28c051375811a79775af53dbb0d796ed74d25003
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848301"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Połącz się z projektami w programie Team Explorer
 

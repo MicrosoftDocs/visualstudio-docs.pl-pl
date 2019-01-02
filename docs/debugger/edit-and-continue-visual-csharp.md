@@ -1,8 +1,6 @@
 ---
 title: Edytuj i Kontynuuj (Visual C#) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,27 +17,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a731daaf548f76166b4b8e4bcc263780d9d9d33a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7be386a7d792c99ba361d70af1f8aac34c809cf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930976"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C#)
- Z opcją Edytuj i Kontynuuj dla języka C# można wprowadzić zmiany w kodzie w trybie przerwania podczas debugowania. Zmiany można zastosować bez konieczności zatrzymać i uruchomić ponownie sesję debugowania. W trybie uruchamiania edytora źródła jest tylko do odczytu.  
+ Z funkcją Edytuj i Kontynuuj dla języka C# można wprowadzić zmiany do kodu w trybie przerwania podczas debugowania. Zmiany można stosować bez konieczności zatrzymania i ponownego uruchomienia sesji debugowania. W trybie uruchamiania Edytor źródła jest tylko do odczytu.  
   
- Edytuj i Kontynuuj obsługuje większość zmian, które można wybrać podczas sesji debugowania, ale istnieją pewne wyjątki. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).  
+ Edytuj i Kontynuuj obsługuje większość zmian, które można wprowadzić podczas sesji debugowania, ale istnieją pewne wyjątki. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).  
 
- Edytuj i Kontynuuj jest obsługiwana w platformy uniwersalnej systemu Windows w systemie Windows 10 i x86 i x64 aplikacji przeznaczonych dla platformy .NET Framework 4.6 pulpitu lub nowszej wersji (.NET Framework jest tylko wersja desktop).
+ Edytuj i Kontynuuj jest obsługiwana w platformy uniwersalnej systemu Windows w systemie Windows 10 i x86 i x64 aplikacji, przeznaczonych dla platformy .NET Framework 4.6 pulpitu lub nowszej wersji (.NET Framework jest tylko wersja desktop).
 
  > [!NOTE]
- > Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, Silverlight 5 i Windows 8.1.
+ > Platform i nieobsługiwanych aplikacji obejmują platformy ASP.NET 5, Silverlight 5 i Windows 8.1.
   
- Gdy Edytuj i Kontynuuj jest włączona, obsługiwane są automatycznie zastosować zmian korzystając z polecenia wykonywania debugera, takie jak **Kontynuuj**, **krok**, **ustawienia następnej instrukcji**, lub wykonaj w oknie debugera Obliczanie funkcji.  
+ Gdy Edytuj i Kontynuuj jest włączona, obsługiwane zmiany są stosowane automatycznie, korzystając z polecenia wykonywania debugera, takie jak **Kontynuuj**, **kroku**, **Ustaw następną instrukcję**, lub wykonać obliczania funkcji w oknie debugera.  
   
- Aby uzyskać więcej informacji, zobacz [porady: Edytuj i Kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Użyj funkcji Edytuj i Kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Korzystanie z opcji Edytuj i Kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Instrukcje: Użyj funkcji Edytuj i Kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md)

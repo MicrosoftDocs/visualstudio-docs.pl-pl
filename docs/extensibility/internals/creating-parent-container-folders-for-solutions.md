@@ -1,9 +1,6 @@
 ---
 title: Tworzenie nadrzędnych folderów kontenera dla rozwiązań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889101"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Tworzenie folderów kontenera dla rozwiązań nadrzędnego
 W źródło sterowania wtyczki interfejsu API w wersji 1.2 użytkownik może określić lokalizację docelową kontroli źródła z jednym elementem głównym dla wszystkich projektów sieci web w ramach rozwiązania. To z jednym elementem głównym jest nazywany Super Unified głównego (dolna Południowa).  
@@ -52,7 +49,7 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], zalecane jest, c
 |Funkcja|Wtyczka interfejsu API w wersji 1.1 kontroli źródła|Wtyczka API w wersji 1.2 kontroli źródła|  
 |-------------| - | - |  
 |Dodaj rozwiązanie do SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Dodaj projekt do rozwiązania pod kontrolą źródła|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Uwaga:** programu Visual Studio zakłada, że rozwiązanie jest element podrzędny elementu SUR.|  
+|Dodaj projekt do rozwiązania pod kontrolą źródła|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Uwaga:**  Program Visual Studio zakłada, że rozwiązanie jest element podrzędny elementu SUR.|  
   
 ## <a name="examples"></a>Przykłady  
  Poniższa lista zawiera dwa przykłady. W obu przypadkach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użytkownik jest monitowany o lokalizację docelową dla rozwiązania pod kontrolą źródła dopóki *user_choice* jest określony jako miejsca docelowego. User_choice jest określony, zostaną dodane rozwiązanie i dwa projekty bez monitowania użytkownika o lokalizacji docelowych kontroli źródła.  

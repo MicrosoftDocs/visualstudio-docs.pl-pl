@@ -1,8 +1,6 @@
 ---
 title: Prawa autorskie dla Spy ++ — pomoc | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - coyright, Spy++
@@ -12,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1779c1aba6d8c15056145994ef4f009ca2b4057
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7ce4f7a9569f68591c6c1251a8d3780a9a4ab690
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851946"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Prawa autorskie dla Spy++ — Pomoc
-Informacje przedstawione w tym dokumencie jest mogą ulec zmianie bez uprzedzenia. Firmy, nazwy i dane używane w przykładach są fikcyjne. Nie części niniejszego dokumentu może odtworzyć lub przekazywać w jakimkolwiek formularzu pomocą jakichkolwiek metod elektronicznych lub mechanicznych, w jakimkolwiek celu, bez pisemnej zgody firmy Microsoft Corporation.  
+Informacje przedstawione w tym dokumencie jest mogą ulec zmianie bez powiadomienia. Firmy, nazwy i dane używane w przykładach w niniejszym dokumencie są fikcyjne. Żadna część tego dokumentu może odtworzyć lub przekazywanych w jakiejkolwiek formie lub w dowolny sposób elektronicznych lub mechanicznych, w dowolnym celu bez pisemnej zgody firmy Microsoft Corporation.  
   
  © 1993-2010 Microsoft Corporation. Wszelkie prawa zastrzeżone.  
   
- Microsoft to zarejestrowany znak towarowy i systemu Windows i Windows NT są znakami towarowymi firmy Microsoft Corporation.
+ Firma Microsoft jest zastrzeżonym znakiem towarowym i Windows i Windows NT są znakami towarowymi firmy Microsoft Corporation.

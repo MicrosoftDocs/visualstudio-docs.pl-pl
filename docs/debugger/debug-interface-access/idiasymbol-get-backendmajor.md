@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_backendmajor — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf32104654d40f314dc3468eaf28dfded6998df9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e501b50b0ecca922cb52ed5406ba4c62b98de96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851498"
 ---
 # <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
 Pobiera zaplecza główny numer wersji kompilatora.  
@@ -27,7 +25,7 @@ Pobiera zaplecza główny numer wersji kompilatora.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_backEndMajor (   
+HRESULT get_backEndMajor (   
    DWORD* pRetVal  
 );  
 ```  

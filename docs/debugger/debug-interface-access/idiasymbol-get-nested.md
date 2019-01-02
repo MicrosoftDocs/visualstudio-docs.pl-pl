@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_nested — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ac690ea408c51b029b01264c9ac5a2009d674b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a6911f603041bf7e717780fefde71e61683f13e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847999"
 ---
 # <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
 Pobiera flagę określającą, czy jest zagnieżdżony typ danych zdefiniowany przez użytkownika.  
@@ -27,7 +25,7 @@ Pobiera flagę określającą, czy jest zagnieżdżony typ danych zdefiniowany p
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_nested (   
+HRESULT get_nested (   
    BOOL* pRetVal  
 );  
 ```  

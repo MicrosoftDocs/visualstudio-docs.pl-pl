@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed2769bae5cf99fdaf8545e8ad0ac2a60a58b038
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31e6d986a4c319e16592a95ef9e816d864ebb6f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887112"
 ---
-# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Nie przeprowadzaj niepotrzebnych operacji rzutowania
+# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Nie Rzutuj niepotrzebnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,6 +63,3 @@ ms.locfileid: "49854907"
 
 ## <a name="see-also"></a>Zobacz też
  [jako](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [jest](http://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
-
-
-

@@ -3,19 +3,18 @@ title: Narzędzia języka R dla programu Visual Studio
 description: Narzędzia R Tools for Visual Studio (RTVS) to bezpłatne, typu open source rozszerzenie, które udostępnia wiele funkcji języka, w tym funkcji IntelliSense, debugowania i zdalnych obszarów roboczych.
 ms.date: 11/13/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: c2ae060c889065f7f8ba543e0cb20e8ea40ec758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883084"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Praca z języka R w programie Visual Studio
 

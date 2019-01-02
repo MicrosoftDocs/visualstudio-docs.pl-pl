@@ -1,8 +1,6 @@
 ---
 title: Żadnej aktywności dysku do pokazania (Widok wątków) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nodiskreport
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7ab1e30eeb20622964cd410adb0300843b964f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 52b522dfe2f213e75454495fb593165edc282d33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836352"
 ---
-# <a name="no-disk-activity-to-show-threads-view"></a>Żadnej aktywności dysku, aby wyświetlić (Widok wątków)
-Nie można wyświetlić aktywności dysku dla bieżącego zakresu czasu w kanałach We/Wy dysku. Aktywność dysku może być wyświetlany, jeśli pomniejszyć lub przewiń. Ponadto upewnij się, że żadne kanały dysku są ukryte.  
+# <a name="no-disk-activity-to-show-threads-view"></a>Żadnej aktywności dysku, aby pokazać (Widok wątków)
+Nie można wyświetlić aktywność dysku dla bieżącego zakresu czasu w kanałach We/Wy dysku. Aktywność dysku może być wyświetlany, jeśli pomniejszyć lub przewiń. Ponadto upewnij się, że kanałów dysku są ukryte.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

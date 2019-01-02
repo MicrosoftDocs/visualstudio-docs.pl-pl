@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb4775feafa1d89656a452ced3ed5558a7ed17f5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 498c653800618a5f7a41f68df92e7345ea04cd8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839396"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Słownik języka Visual dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

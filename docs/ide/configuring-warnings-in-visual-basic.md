@@ -2,7 +2,6 @@
 title: 'Konfigurowanie ostrzeżeń w Visual Basic:'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83ba1314f23ecc2d9166aac6fdc5d722a4fefe95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866572"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w języku Visual Basic
 
@@ -67,57 +66,57 @@ ms.locfileid: "49865969"
 ### <a name="implicit-conversion-warning"></a>Ostrzeżenie niejawnej konwersji
  Wygenerowany dla wystąpienia elementu niejawnej konwersji. Nie obejmują one niejawną konwersję z typu wewnętrznego dla liczbowego na ciąg przy użyciu `&` operatora. Domyślne dla nowych projektów jest wyłączona.
 
- ID: 42016
+ IDENTYFIKATOR: 42016
 
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Rozpoznanie późnego powiązany wywołania metody, a ostrzeżenie rozpoznawania przeciążenia
  Generowane w przypadku wystąpienia z późnym wiązaniem. Domyślne dla nowych projektów jest wyłączona.
 
- ID: 42017
+ IDENTYFIKATOR: 42017
 
 ### <a name="operands-of-type-object-warnings"></a>Argumenty operacji typu "Obiekt" ostrzeżeń
  Wygenerowany, gdy argumentów operacji typu `Object` występują, utworzyć błąd **Option Strict On**. Domyślne dla nowych projektów znajduje się na.
 
- Identyfikator: 42018 i 42019
+ IDENTYFIKATOR: 42018 i 42019
 
 ### <a name="declarations-require-as-clause-warnings"></a>Deklaracje wymagają ostrzeżenia klauzuli "As"
  Generowane, gdy zmiennej, funkcji lub brakujących deklaracji właściwości `As` klauzuli czy utworzono błąd **Option Strict On**. Zmienne, które nie mają typu, przypisane są zakłada się, że typ `Object`. Domyślne dla nowych projektów znajduje się na.
 
- Identyfikator: 42020 (deklaracja zmiennej), 42021 (deklaracji funkcji), a 42022 (deklaracja właściwości).
+ IDENTYFIKATOR: 42020 (deklaracja zmiennej), 42021 (deklaracji funkcji) i 42022 (deklaracja właściwości).
 
 ### <a name="possible-null-reference-exception-warnings"></a>Ostrzeżenia dotyczące wyjątków możliwe odwołanie o wartości null
  Generowane, gdy zmienna jest używana, zanim została do niej przypisana wartość. Domyślne dla nowych projektów znajduje się na.
 
- ID: 42104, 42030
+ IDENTYFIKATOR: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Nieużywane ostrzeżenie zmiennych lokalnych
  Generowane, gdy zmienna lokalna jest zadeklarowana, ale nigdy nie jest określone. Domyślna znajduje się na.
 
- ID: 42024
+ IDENTYFIKATOR: 42024
 
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>Dostęp udostępnionego elementu członkowskiego przez wystąpienie zmiennej ostrzeżenie
  Generowane podczas uzyskiwania dostępu do udostępnionego elementu członkowskiego przez wystąpienie może mieć efekty uboczne lub podczas uzyskiwania dostępu do udostępnionego elementu członkowskiego za pośrednictwem zmiennej wystąpienia nie jest wyrażeniem po prawej stronie lub jest przekazywany jako parametr. Domyślne dla nowych projektów znajduje się na.
 
- ID: 42025
+ IDENTYFIKATOR: 42025
 
 ### <a name="recursive-operator-or-property-access-warnings"></a>Ostrzeżenia dostępu operatora lub właściwość cykliczne
  Generowane, gdy treść procedury używa tego samego operatora lub właściwości, który jest zdefiniowany w. Domyślne dla nowych projektów znajduje się na.
 
- Identyfikator: 42004 (operator), 42026 (właściwość)
+ IDENTYFIKATOR: 42004 (operator), 42026 (właściwość)
 
 ### <a name="function-or-operator-without-return-value-warning"></a>Funkcja lub operator bez zwracają wartość Ostrzeżenie
  Generowane, gdy funkcja lub operator nie jest zwracana wartość określona. W tym pominięcie `Set` do niejawnego zmiennej lokalnej o nazwie identycznej z nazwą funkcji. Domyślne dla nowych projektów znajduje się na.
 
- Identyfikator: 42105 (funkcja), 42016 (operator)
+ IDENTYFIKATOR: 42105 (funkcja), 42016 (operator)
 
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Modyfikator przeciążenia używane w ostrzeżenie modułu
  Wygenerowany, gdy `Overloads` jest używany w `Module`. Domyślne dla nowych projektów znajduje się na.
 
- ID: 42028
+ IDENTYFIKATOR: 42028
 
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Zduplikowany lub nakładający się catch bloki ostrzeżenia
  Wygenerowany, gdy `Catch` bloku nigdy nie zostanie osiągnięty z powodu jej relacji z innymi `Catch` bloki, które zostały zdefiniowane. Domyślne dla nowych projektów znajduje się na.
 
- ID: 42029, 42031
+ IDENTYFIKATOR: 42029, 42031
 
 ## <a name="see-also"></a>Zobacz także
 

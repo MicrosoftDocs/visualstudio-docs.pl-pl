@@ -2,7 +2,6 @@
 title: Organizowanie szablonów
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
@@ -13,14 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c6bca61dd88b164fcae2b2ccb7e2a98086bf102b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 239fd7c4042c52576aa7a7688bf890d53d2b6a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843414"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Porady: lokalizowanie i organizowanie szablonów projektów i elementów
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Instrukcje: Lokalizowanie i organizowanie szablonów projektów i elementów
 
 Pliki szablonu muszą być umieszczone w Visual Studio rozpoznaje dla szablonów, które pojawią się w lokalizacji **nowy projekt** i **Dodaj nowy element** okien dialogowych. Można również utworzyć niestandardowe podkategorii w lokalizacji szablonu użytkownika i kategorie są wyświetlane w **nowy projekt** i **Dodaj nowy element** okien dialogowych.
 
@@ -125,5 +124,5 @@ Możesz włączyć szablonów w podkategorii, które mają być wyświetlane w i
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (szablony Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
-- [Porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
+- [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
+- [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)

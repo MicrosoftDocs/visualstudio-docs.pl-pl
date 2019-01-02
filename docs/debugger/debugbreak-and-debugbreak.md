@@ -1,8 +1,6 @@
 ---
-title: Debugbreak — i __debugbreak | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: DebugBreak i __debugbreak | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - DebugBreak
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5eda428410733bf72174676f5a2303a7f625aa7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933852"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak i __debugbreak
-Można wywołać funkcję debugbreak — Win32 lub [__debugbreak](/cpp/intrinsics/debugbreak) wewnętrzne w dowolnym momencie w kodzie. `DebugBreak` i `__debugbreak` mają ten sam efekt co ustawienie punkt przerwania w tej lokalizacji.  
+Można wywołać funkcję DebugBreak Win32 lub [__debugbreak](/cpp/intrinsics/debugbreak) wewnętrzne w dowolnym momencie w kodzie. `DebugBreak` i `__debugbreak` mają ten sam efekt jak ustawienie punktu przerwania w tej lokalizacji.  
   
- Ponieważ `DebugBreak` jest wywołanie funkcji systemu, musi być zainstalowany symbole zapewniające informacje stosu wywołań poprawne jest wyświetlany po podziału debugowania systemu. W przeciwnym razie informacje stosu wywołań, wyświetlane przez debuger może być wyłączone przez jedną ramkę. Jeśli używasz `__debugbreak`, symbole nie są wymagane.  
+ Ponieważ `DebugBreak` jest wywołaniem funkcji systemowej, debugowania systemu symbole musi być zainstalowany, aby upewnić się, informacje stosu wywołań poprawne jest wyświetlany po ostatniej chwili. W przeciwnym razie informacje stosu wywołań, które są wyświetlane przez debuger może być wyłączone przez jedną klatkę. Jeśli używasz `__debugbreak`, symbole nie są wymagane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje wewnętrzne kompilatora](/cpp/intrinsics/compiler-intrinsics)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)   
- [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

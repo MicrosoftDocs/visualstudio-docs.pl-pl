@@ -1,8 +1,7 @@
 ---
-title: 'CA1712: Nie należy poprzedzać wartości enum nazwą typu'
+title: 'CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1712
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db561355fb59ec187ef87ee767c4706ebddffb9
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 4d91ac6b3312bda8daa88df29c94c6493f5e8546
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890079"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Nie należy poprzedzać wartości enum nazwą typu
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu
 
 |||
 |-|-|
@@ -60,9 +59,9 @@ ms.locfileid: "45547870"
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
- [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: Oznacz Typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz także
 

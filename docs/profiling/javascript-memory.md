@@ -2,7 +2,6 @@
 title: Analizowanie użycia pamięci języka JavaScript w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962379"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci języka JavaScript w aplikacjach platformy UWP
 Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwiają zrozumienia użycia pamięci i znaleźć przecieki pamięci w aplikacjach platformy uniwersalnej systemu Windows stworzona z myślą o Windows przy użyciu języka JavaScript. Obsługiwane aplikacje to aplikacje for Universal Windows Apps.
@@ -99,7 +98,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
 -   [Wyświetlanie różnic migawki](#view-a-snapshot-diff). Pokazuje wartości różnicowych między migawkami. Widoki te Pokaż różnice w obiekcie liczby rozmiar i obiektu.  
   
 ## <a name="isolate-a-memory-leak"></a>Izolowanie przeciek pamięci  
- Poniższe kroki zawierają przepływu pracy, które mogą ułatwić bardziej efektywne wykorzystanie analizatora pamięci JavaScript. Te kroki mogą być przydatne, jeśli podejrzewasz, że Twoja aplikacja ma przeciek pamięci. Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Poniższe kroki zawierają przepływu pracy, które mogą ułatwić bardziej efektywne wykorzystanie analizatora pamięci JavaScript. Te kroki mogą być przydatne, jeśli podejrzewasz, że Twoja aplikacja ma przeciek pamięci. Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [instruktażu: Znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Otwórz aplikację w programie Visual Studio.  
   
@@ -141,7 +140,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
     - Rozmiar sterty różnicowe (po lewej stronie link poniżej rozmiar stosu). Tekst linku zawiera różnicę między Rozmiar sterty bieżącej migawki i Rozmiar sterty poprzednią migawkę.  
   
-    - Liczba obiektów różnicowa (odpowiednie łącze poniżej liczba obiektów). Tekst linku zawiera dwie wartości (na przykład +1858 /-1765): pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki, a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki.  
+    - Liczba obiektów różnicowa (odpowiednie łącze poniżej liczba obiektów). Tekst linku zawiera dwie wartości (na przykład +1858 /-1765): Pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki, a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki.  
   
       Te linki otwarcie widoku szczegółów migawka różnicowa typów na stosie, sortowane rozmiaru zachowanego lub liczba obiektów, w zależności od tego, które łącza jest otwarty.  
   
@@ -197,7 +196,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
 -   Liczba obiektów. Ten licznik pokazuje tylko te obiekty, które utworzonych w swojej aplikacji i odfiltrowuje wbudowanego obiekty utworzone przez środowisko uruchomieniowe JavaScript. Łącza liczba obiektu widok typów szczegóły migawki.  
   
--   Liczba obiektów różnicową. Pokazuje dwie wartości: pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki; a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki. Na przykład na ilustracji przedstawiono, że obiekty 1,859 zostały dodane i 1,733 obiekty zostały usunięte po utworzeniu migawki nr 1. Te informacje następuje czerwona strzałka w górę, jeżeli liczba całkowita obiektów został zwiększony lub zielona strzałka w dół, jeśli zmniejszyło się. Liczba obiektów nie została zmieniona, zostanie wyświetlony tekst **bez zmian** zamiast numeru. Dla pierwszego migawki, zostanie wyświetlony tekst **linii bazowej**. Łącza liczba różnicowej obiektu widok typów porównania migawki.  
+-   Liczba obiektów różnicową. To pokazuje dwie wartości: Pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki; a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki. Na przykład na ilustracji przedstawiono, że obiekty 1,859 zostały dodane i 1,733 obiekty zostały usunięte po utworzeniu migawki nr 1. Te informacje następuje czerwona strzałka w górę, jeżeli liczba całkowita obiektów został zwiększony lub zielona strzałka w dół, jeśli zmniejszyło się. Liczba obiektów nie została zmieniona, zostanie wyświetlony tekst **bez zmian** zamiast numeru. Dla pierwszego migawki, zostanie wyświetlony tekst **linii bazowej**. Łącza liczba różnicowej obiektu widok typów porównania migawki.  
   
 -   Zrzut ekranu przedstawiający ekran w czasie migawki.  
   
@@ -359,7 +358,7 @@ if (performance && performance.mark) {
   
     -   Niektóre obiekty mogą dostarczać `dispose` metody i zalecenia dotyczące użycia. Na przykład, należy wywołać `dispose` na [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) wywołanie listy `createFiltered` metody i następnie opuścić stronę.  
   
-    -   Może być konieczne usunięcie co najmniej jednego odbiornika zdarzeń. Aby uzyskać więcej informacji, zobacz [odbiorników zdarzeń DOM widoku](../debugger/view-dom-event-listeners.md).  
+    -   Może być konieczne usunięcie co najmniej jednego odbiornika zdarzeń. Aby uzyskać więcej informacji, zobacz [odbiorników zdarzeń DOM widoku](/visualstudio/debugger/quickstart-debug-html-and-css).  
   
 -   Obejrzyj w dalszej części [ten film wideo](https://channel9.msdn.com/Events/Build/2013/3-316) z konferencji Build 2013 o analizatora pamięci JavaScript.  
   

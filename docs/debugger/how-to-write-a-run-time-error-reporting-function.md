@@ -2,7 +2,6 @@
 title: Pisanie funkcji raportowania błędów czasu wykonywania | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938176"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Porady: pisanie funkcji raportowania błędów czasu wykonywania
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Instrukcje: Pisanie funkcji raportowania błędów czasu wykonywania
 Raportów niestandardowych funkcji błędów czasu wykonywania musi mieć tej samej deklaracji jako `_CrtDbgReportW`. Wartość 1 powinien zostać zwrócony do debugera.  
   
  Poniższy przykład pokazuje jak zdefiniować niestandardowe funkcji raportowania.  

@@ -2,7 +2,6 @@
 title: Oblicz metryki kodu
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855575"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
 
@@ -24,7 +23,7 @@ Wzrostu złożoności nowoczesnych aplikacji, zwiększa także trudności niezaw
 
 Deweloperzy mogą używać programu Visual Studio do generowania danych metryk kodu, które mierzą złożoności i łatwości konserwacji kodu zarządzanego. Mogą być generowane danych metryki kodu dla całego rozwiązania lub pojedynczego projektu.
 
-Aby dowiedzieć się, jak Generowanie danych metryk kodu w programie Visual Studio, zobacz [porady: generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md).
+Aby dowiedzieć się, jak Generowanie danych metryk kodu w programie Visual Studio, zobacz [jak: Generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Pomiarów oprogramowania
 
@@ -57,5 +56,5 @@ Kod generowany dla formularzy Windows Forms nie jest ignorowana, ponieważ jest 
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Porady: generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)
+- [Instrukcje: Generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)
 - [Korzystanie z okna wyników metryk kodów](../code-quality/working-with-code-metrics-data.md)

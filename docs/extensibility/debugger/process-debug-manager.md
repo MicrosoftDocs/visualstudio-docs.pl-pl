@@ -1,9 +1,6 @@
 ---
 title: Menedżer debugowania przetwarzania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - machine debug manager
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bea7736174c64cb82f2dc1b66609175cb8584555
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 671fc36da33cde3617ef15ad31c5a245c494cb6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850322"
 ---
 # <a name="process-debug-manager"></a>Menedżer debugowania procesów
 Menedżer debugowania procesów (menedżerów PDM) jest składnikiem programu Visual Studio, która zarządza programów i procesów, udostępniając sesji debugowania, Menedżer i aparaty debugowania.  

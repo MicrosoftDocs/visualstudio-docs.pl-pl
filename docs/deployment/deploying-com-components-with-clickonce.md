@@ -1,8 +1,6 @@
 ---
 title: Wdrażanie składników COM za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888455"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składniki potrzebne do zarejestrowania globalnie i ten sposób może spowodować niepożądane skutki uboczne między nakładającymi się aplikacje. Ta sytuacja zwykle nie jest to problem występujący w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub są zgodne z side-by-side. Program Visual Studio umożliwia wdrażanie izolowane składniki COM na wyższe system operacyjny lub Windows XP.  
@@ -165,7 +163,7 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
   
 - Składnik zarządza urządzeniem fizycznym lub wirtualnym systemu, na przykład sterownik urządzenia Bufor wydruku.  
   
-- Składnik jest Data Access redistributable. Aplikacje obsługujące dane wymagają oddzielnych dostępu do danych do dystrybucji przed uruchomieniem przez nich. Nie należy próbować izolowania składników, takich jak formant danych ADO firmy Microsoft, Microsoft OLE DB lub Microsoft Data Access Components (MDAC). Zamiast tego Jeśli aplikacja używa programu MDAC lub SQL Server Express, należy ustawić je jako warunki wstępne; zobacz [porady: instalowanie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Składnik jest Data Access redistributable. Aplikacje obsługujące dane wymagają oddzielnych dostępu do danych do dystrybucji przed uruchomieniem przez nich. Nie należy próbować izolowania składników, takich jak formant danych ADO firmy Microsoft, Microsoft OLE DB lub Microsoft Data Access Components (MDAC). Zamiast tego Jeśli aplikacja używa programu MDAC lub SQL Server Express, należy ustawić je jako warunki wstępne; zobacz [jak: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   W niektórych przypadkach może być możliwe dla dewelopera składnika przeprojektować go dla rejestracji wolnego modelu COM. Jeśli nie jest to możliwe, można nadal tworzyć i publikować aplikacje, które zależą od nich za pośrednictwem schemat standardowy rejestracji, za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md).  
   

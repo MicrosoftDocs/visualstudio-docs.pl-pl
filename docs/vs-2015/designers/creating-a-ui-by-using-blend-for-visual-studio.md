@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883149"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +58,7 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
 |![](../designers/media/b1-5.png "B1_5")|**Narzędzia zasobów** dostępu **zasoby** panelu, i aby wyświetlić ostatnio używane zasobu z biblioteki.|![Objaśnienie E](../designers/media/b5-label-e.png "b5_label_E")|**Kontrolek tekstu**|
 |||![Objaśnienie F](../designers/media/b5-label-f.png "b5_label_F")|**Formanty standardowe**|
 
- **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [narzędzi](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pasek narzędzi](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ##  <a name="Assets"></a> Samouczek panelu Zasoby
  Możesz znaleźć wszystkie formanty w **zasoby** panelu, podobnie jak **przybornika** w programie Visual Studio. Oprócz formantów, znajdziesz wszystko, czego możesz dodać do Twojego obszaru roboczego w **zasoby** panelu, w tym stylów, multimediów, zachowań i efektów.
@@ -126,7 +125,7 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
 |                     ![Objaśnienie 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Suwak gradientu** pojawia się tylko wtedy, gdy wybrano pędzla gradientu.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Pokaż zaawansowane właściwości** kategorii właściwości, które są rzadko używane.                                                                      |
 
- **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panelu właściwości](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panelu właściwości](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Zobacz też
  [Wstawianie kontrolek i modyfikowanie ich zachowania](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [Animowanie obiektów](../designers/animate-objects-in-xaml-designer.md) [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md) [projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

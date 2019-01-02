@@ -1,8 +1,6 @@
 ---
-title: 'Porady: otwieranie widoku komunikatów w Znajdź okno | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Otwieranie widoku komunikatów w Znajdź okno | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acd3df773748fe85832868b0286613f86ecbe8a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847103"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Porady: otwieranie widoku komunikatów w Znajdź okno
+# <a name="how-to-open-messages-view-from-find-window"></a>Instrukcje: Widok Otwórz komunikatów w Znajdź okno
 Może okazać się łatwe w użyciu **Znajdź okno** okno dialogowe, aby wybrać okno docelowego, a następnie otwórz widok komunikatów tego okna.  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Aby otworzyć okno widoku komunikatów za pomocą okna dialogowego Znajdź okno  

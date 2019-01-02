@@ -2,7 +2,6 @@
 title: 'Przewodnik: tworzenie fragmentu kodu'
 ms.date: 10/27/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890712"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
 Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co należy zrobić, Utwórz plik XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. Możesz również dodać parametry odwołań i zastąpień w kodzie. Można dodać fragment kodu do instalacji programu Visual Studio przy użyciu **importu** znajdujący się na **Menedżera wstawek kodu** (**narzędzia**  >   **Menedżer fragmentów kodu**).
@@ -48,7 +47,7 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
 </CodeSnippets>
 ```
 
-### <a name="create-a-code-snippet"></a>Tworzenie fragmentu kodu
+### <a name="create-a-code-snippet"></a>tworzenie fragmentu kodu
 
 1.  Utwórz nowy plik XML w programie Visual Studio i Dodaj ukazany powyżej szablon.
 

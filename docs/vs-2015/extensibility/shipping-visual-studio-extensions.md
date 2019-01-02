@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,17 +16,17 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10e2cacb07c4040fb81aa01e8bd629e1ae593f7c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8c2ed6c687766a9ef3ff6e4a62e69e5b8b334a55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850827"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Dostarczanie rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Uwaga**: Galeria Visual Studio jest zastępowany przez Visual Studio Marketplace. Zobaczyć najnowszą wersję tego tematu, aby uzyskać szczegółowe informacje.
+**Uwaga**: W galerii Visual Studio jest zastępowany przez Visual Studio Marketplace. Zobaczyć najnowszą wersję tego tematu, aby uzyskać szczegółowe informacje.
 
 
 Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na innych komputerach, udostępnić go ze znajomymi współpracowników lub opublikować ją w galerii Visual Studio. W tej sekcji Wyjaśnijmy, wszystkie elementy, które należy wykonać w celu publikowania i obsługa rozszerzenia: Praca z plikami .vsix, publikowania, lokalizacja i aktualizowania.
@@ -42,7 +41,7 @@ Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na inn
 ## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Publikowanie rozszerzenia do galerii Visual Studio
  Można rozpowszechniać swoje rozszerzenia innym osobom poprzez zamieszkania ich plik .vsix lub umieszczenie w na serwerze. Ale najlepszy sposób pozyskania swój kod w ręce wiele osób, umieść je w [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847). Rozszerzenia z galerii programu Visual Studio są dostępne dla użytkowników programu Visual Studio za pośrednictwem **rozszerzenia i aktualizacje**. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
- Aby uzyskać pełny przykład, który pokazuje, jak przekazać rozszerzenie do galerii Visual Studio, zobacz [przewodnik: publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+ Aby uzyskać pełny przykład, który pokazuje, jak przekazać rozszerzenie do galerii Visual Studio, zobacz [instruktażu: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 
 ## <a name="private-galleries"></a>Galerie prywatne
  Podczas opracowywania formanty, szablony i narzędzia, można udostępnianie w organizacji, publikując je ona prywatną galerię w sieci intranet. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../extensibility/private-galleries.md).
@@ -51,7 +50,7 @@ Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na inn
  Jeśli planowane jest wersji Twojego rozszerzenia w różnych ustawień regionalnych, należy rozważyć lokalizowania go. Opis na czym polega znaleźć [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md).
 
 ## <a name="updating-and-versioning-your-extension"></a>Aktualizowanie i przechowywanie wersji rozszerzenia
- Po opublikowaniu Twojego rozszerzenia, będzie dostępna przez czas, kiedy trzeba będzie ją zaktualizować. Aby dowiedzieć się, jak zaktualizować rozszerzenia, które zostały opublikowane w galerii Visual Studio, zobacz [porady: aktualizowanie rozszerzenia](../extensibility/how-to-update-a-visual-studio-extension.md).
+ Po opublikowaniu Twojego rozszerzenia, będzie dostępna przez czas, kiedy trzeba będzie ją zaktualizować. Aby dowiedzieć się, jak zaktualizować rozszerzenia, które zostały opublikowane w galerii Visual Studio, zobacz [jak: Aktualizuj rozszerzenie](../extensibility/how-to-update-a-visual-studio-extension.md).
 
  Można ustawić rozszerzenie obsługi wielu wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
@@ -63,8 +62,8 @@ Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na inn
 |[Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)|W tym artykule opisano składniki pakietu VSIX.|
 |[Szablon projektu VSIX](../extensibility/vsix-project-template.md)|Instrukcje krok po kroku o pakietach i publikowanie rozszerzenia.|
 |[Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)|Wyjaśnia sposób zapewnienia zlokalizowanego tekstu w trakcie instalacji przy użyciu extension.vsixlangpack plików.|
-|[Instrukcje: aktualizowanie rozszerzenia](../extensibility/how-to-update-a-visual-studio-extension.md)|Opisuje sposób aktualizacji rozszerzenia w systemie oraz wdrożenia aktualizacji na istniejące rozszerzenie programu Visual Studio.|
-|[Instrukcje: dodawanie zależności do pakietu VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|W tym artykule opisano, jak dodać odwołania do pakietów wdrożeniowych VSIX.|
+|[Instrukcje: Aktualizuj rozszerzenie](../extensibility/how-to-update-a-visual-studio-extension.md)|Opisuje sposób aktualizacji rozszerzenia w systemie oraz wdrożenia aktualizacji na istniejące rozszerzenie programu Visual Studio.|
+|[Instrukcje: Dodawanie zależności do pakietu VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|W tym artykule opisano, jak dodać odwołania do pakietów wdrożeniowych VSIX.|
 |[Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Wyjaśnia sposób wdrażania rozszerzenia za pomocą Instalatora Windows.|
 |[Podpisywanie pakietów VSIX](../extensibility/signing-vsix-packages.md)|Opisuje sposób rejestrowania pakietów VSIX.|
 |[Galerie prywatne](../extensibility/private-galleries.md)|Wyjaśnia sposób tworzenia prywatnych galerii rozszerzeń.|

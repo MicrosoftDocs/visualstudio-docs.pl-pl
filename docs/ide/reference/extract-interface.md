@@ -2,7 +2,6 @@
 title: Wyodrębnianie interfejsu Refaktoryzacja
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bc315ed49e31e78bc549e446858a30979d7135b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838219"
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnianie interfejsu Refaktoryzacja
 
@@ -29,11 +28,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** umożliwia utworzenie interfejsu przy użyciu istniejących członków z klasy, struktury lub interfejsu.
+**Co:** Umożliwia utworzenie interfejsu przy użyciu istniejących członków z klasy, struktury lub interfejsu.
 
-**Kiedy:** masz kilka klas, struktur lub interfejsy z metod, które można ustanowić typowe i używane przez inne klasy, struktury lub interfejsów.
+**Kiedy:** Istnieje kilka klasy, struktury lub interfejsy z metod, które można ustanowić typowe i używane przez inne klasy, struktury lub interfejsów.
 
-**Dlaczego:** interfejsy są doskonałe konstrukcje projekty zorientowane obiektowo. Wyobraź sobie, mających klasy dla różnych zwierząt (psów i kotów, Bird), które mogą mieć typowych metod, takich jak Eat, napoju, usypiania/budzenia. Przy użyciu interfejsu, takich jak IAnimal pozwoliłoby pies, Cat i Bird mają wspólne "signature" dotyczącej tych metod.
+**Dlaczego:** Interfejsy są doskonałe konstrukcje projekty zorientowane obiektowo. Wyobraź sobie, mających klasy dla różnych zwierząt (psów i kotów, Bird), które mogą mieć typowych metod, takich jak Eat, napoju, usypiania/budzenia. Przy użyciu interfejsu, takich jak IAnimal pozwoliłoby pies, Cat i Bird mają wspólne "signature" dotyczącej tych metod.
 
 ## <a name="how-to"></a>Instrukcje
 

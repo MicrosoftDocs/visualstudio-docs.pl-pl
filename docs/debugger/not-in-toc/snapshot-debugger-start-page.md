@@ -2,19 +2,18 @@
 title: Strona startowa dla rozszerzenia Snapshot Debugger
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853739"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Rozpoczęcie korzystania z rozszerzenia Snapshot Debugger
 

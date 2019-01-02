@@ -1,8 +1,7 @@
 ---
-title: Przykładowy projekt C++ dla analizy kodu
+title: Przykładowy projekt języka C++ dla analizy kodu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: sample
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
@@ -13,32 +12,32 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: aafbaaf682852adaea8f20a1373ea1ae4b025fad
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: ad5a7d3b2c13b603fd3a9f523563c844dda8b67d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852508"
 ---
-# <a name="sample-c-project-for-code-analysis"></a>Przykładowy projekt C++ dla analizy kodu
+# <a name="sample-c-project-for-code-analysis"></a>Przykładowy projekt języka C++ dla analizy kodu
 
-Ten poniższe procedury pokazują, jak utworzyć przykładowy dla [wskazówki: analizowanie kodu C++ pod względem wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Utwórz procedury:
+Ten poniższe procedury pokazują, jak utworzyć przykład dla [instruktażu: Analizowanie kodu C/C++ pod względem wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Utwórz procedury:
 
-- Rozwiązanie programu Visual Studio o nazwie CppDemo.
+- Rozwiązania programu Visual Studio o nazwie CppDemo.
 
 - Projekt biblioteki statycznej o nazwie CodeDefects.
 
 - Projekt biblioteki statycznej o nazwie adnotacji.
 
-Procedury zapewnienia również kodu dla nagłówka i *.cpp* plików dla bibliotek statycznych.
+Procedury również podać kod dla nagłówka i *.cpp* pliki bibliotek statycznych.
 
-## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Tworzenie rozwiązania CppDemo i CodeDefects projektu
+## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Tworzenie rozwiązania CppDemo i projektu CodeDefects
 
-1. Kliknij przycisk **pliku** menu wskaż **nowy**, a następnie kliknij przycisk **nowy projekt**.
+1. Kliknij przycisk **pliku** menu wskaż **New**, a następnie kliknij przycisk **nowy projekt**.
 
-2. W **typy projektów** drzewa listy, jeśli program Visual C++ nie jest domyślnym językiem w programie VS rozwiń **inne języki**.
+2. W **typów projektów** listy drzewa, jeśli program Visual C++ nie jest językiem domyślnym w programie VS rozwiń **inne języki**.
 
-3. Rozwiń węzeł **Visual C++**, a następnie kliknij przycisk **ogólne**.
+3. Rozwiń **Visual C++**, a następnie kliknij przycisk **ogólne**.
 
 4. W **szablony**, kliknij przycisk **pusty projekt**.
 
@@ -48,25 +47,25 @@ Procedury zapewnienia również kodu dla nagłówka i *.cpp* plików dla bibliot
 
 7. W **Nazwa rozwiązania** polu tekstowym **CppDemo**.
 
-## <a name="configure-the-codedefects-project-as-a-static-library"></a>Konfigurowanie projektu CodeDefects jako biblioteki statycznej
+## <a name="configure-the-codedefects-project-as-a-static-library"></a>Konfigurowanie projektu CodeDefects jako biblioteka statyczna
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **CodeDefects** , a następnie kliknij przycisk **właściwości**.
+1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **CodeDefects** a następnie kliknij przycisk **właściwości**.
 
-2. Rozwiń węzeł **właściwości konfiguracji** , a następnie kliknij przycisk **ogólne**.
+2. Rozwiń **właściwości konfiguracji** a następnie kliknij przycisk **ogólne**.
 
-3. W **ogólne** listy, zaznacz tekst, w kolumnie obok **rozszerzenie docelowego**, a następnie wpisz **.lib**.
+3. W **ogólne** listy, zaznacz tekst w kolumnie obok **rozszerzenie docelowe**, a następnie wpisz **.lib**.
 
-4. W **domyślne projektu**, kliknij kolumnę obok **typu konfiguracji**, a następnie kliknij przycisk **statycznej Lib (lib)**.
+4. W **domyślne wartości projektu**, kliknij kolumnę **typu konfiguracji**, a następnie kliknij przycisk **biblioteki statycznej (lib)**.
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Dodawanie pliku nagłówka i źródła do projektu CodeDefects
 
 1. W Eksploratorze rozwiązań rozwiń **CodeDefects**, kliknij prawym przyciskiem myszy **pliki nagłówkowe**, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kod**, a następnie kliknij przycisk **plik nagłówków (.h)**.
+2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kodu**, a następnie kliknij przycisk **plik nagłówka (.h)**.
 
-3. W **nazwa** wpisz **Bug.h** , a następnie kliknij przycisk **Dodaj**.
+3. W **nazwa** wpisz **Bug.h** a następnie kliknij przycisk **Dodaj**.
 
-4. Skopiuj poniższy kod i wklej ją do *Bug.h* plik w edytorze programu Visual Studio.
+4. Skopiuj poniższy kod i wklej go w *Bug.h* plik w edytorze programu Visual Studio.
 
     ```cpp
     #include <windows.h>
@@ -88,13 +87,13 @@ Procedury zapewnienia również kodu dla nagłówka i *.cpp* plików dla bibliot
     const int ACCOUNT_DOMAIN_LEN = 128;
     ```
 
-5. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **pliki źródłowe**, wskaż polecenie **nowy**, a następnie kliknij przycisk **nowy element**.
+5. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **pliki źródłowe**, wskaż polecenie **New**, a następnie kliknij przycisk **nowy element**.
 
 6. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **plik C++ (.cpp)**
 
-7. W **nazwa** wpisz **Bug.cpp** , a następnie kliknij przycisk **Dodaj**.
+7. W **nazwa** wpisz **Bug.cpp** a następnie kliknij przycisk **Dodaj**.
 
-8. Skopiuj poniższy kod i wklej ją do *Bug.cpp* plik w edytorze programu Visual Studio.
+8. Skopiuj poniższy kod i wklej go w *Bug.cpp* plik w edytorze programu Visual Studio.
 
     ```cpp
     #include <stdlib.h>
@@ -156,31 +155,31 @@ Procedury zapewnienia również kodu dla nagłówka i *.cpp* plików dla bibliot
 
 9. Kliknij przycisk **pliku** menu, a następnie kliknij przycisk **Zapisz wszystko**.
 
-## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Dodaj adnotacje projektu i skonfiguruj go jako biblioteki statycznej
+## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Dodaj projekt adnotacje i skonfiguruje je jako biblioteki statycznej
 
 1. W Eksploratorze rozwiązań kliknij **CppDemo**, wskaż polecenie **Dodaj**, a następnie kliknij przycisk **nowy projekt**.
 
-2. W **Dodawanie nowego projektu** okna dialogowego polu Rozwiń Visual C++, kliknij przycisk **ogólne**, a następnie kliknij przycisk **pusty projekt**.
+2. W **Dodaj nowy projekt** okna dialogowego rozwiń Visual C++, kliknij przycisk **ogólne**, a następnie kliknij przycisk **pusty projekt**.
 
 3. W **nazwa** polu tekstowym **adnotacje**, a następnie kliknij przycisk **Dodaj**.
 
-4. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **adnotacje** , a następnie kliknij przycisk **właściwości**.
+4. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **adnotacje** a następnie kliknij przycisk **właściwości**.
 
-5. Rozwiń węzeł **właściwości konfiguracji** , a następnie kliknij przycisk **ogólne**.
+5. Rozwiń **właściwości konfiguracji** a następnie kliknij przycisk **ogólne**.
 
-6. W **ogólne** listy, zaznacz tekst, w kolumnie obok **rozszerzenie docelowego**, a następnie wpisz **.lib**.
+6. W **ogólne** listy, zaznacz tekst w kolumnie obok **rozszerzenie docelowe**, a następnie wpisz **.lib**.
 
-7. W **domyślne projektu**, kliknij kolumnę obok **typu konfiguracji**, a następnie kliknij przycisk **statycznej Lib (lib)**.
+7. W **domyślne wartości projektu**, kliknij kolumnę **typu konfiguracji**, a następnie kliknij przycisk **biblioteki statycznej (lib)**.
 
-## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Dodaj plik nagłówka i plik źródłowy do projektu adnotacji
+## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Dodaj plik nagłówkowy i plik źródłowy do projektu adnotacji
 
 1. W Eksploratorze rozwiązań rozwiń **adnotacje**, kliknij prawym przyciskiem myszy **pliki nagłówkowe**, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **plik nagłówków (.h)**.
+2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **plik nagłówka (.h)**.
 
-3. W **nazwa** wpisz **annotations.h** , a następnie kliknij przycisk **Dodaj**.
+3. W **nazwa** wpisz **annotations.h** a następnie kliknij przycisk **Dodaj**.
 
-4. Skopiuj poniższy kod i wklej ją do *annotations.h* plik w edytorze programu Visual Studio.
+4. Skopiuj poniższy kod i wklej go w *annotations.h* plik w edytorze programu Visual Studio.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -197,13 +196,13 @@ Procedury zapewnienia również kodu dla nagłówka i *.cpp* plików dla bibliot
 
     ```
 
-5. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **pliki źródłowe**, wskaż polecenie **nowy**, a następnie kliknij przycisk **nowy element**.
+5. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **pliki źródłowe**, wskaż polecenie **New**, a następnie kliknij przycisk **nowy element**.
 
-6. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kod** , a następnie kliknij przycisk **plik C++ (.cpp)**
+6. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kodu** a następnie kliknij przycisk **plik C++ (.cpp)**
 
-7. W **nazwa** wpisz **annotations.cpp** , a następnie kliknij przycisk **Dodaj**.
+7. W **nazwa** wpisz **annotations.cpp** a następnie kliknij przycisk **Dodaj**.
 
-8. Skopiuj poniższy kod i wklej ją do *annotations.cpp* plik w edytorze programu Visual Studio.
+8. Skopiuj poniższy kod i wklej go w *annotations.cpp* plik w edytorze programu Visual Studio.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>

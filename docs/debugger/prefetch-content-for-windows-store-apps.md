@@ -1,8 +1,6 @@
 ---
 title: Debugowanie za pomocą pobieranych z wyprzedzeniem zawartości w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 72c4b305152694e8d3664b54aef3477d2f8b1fec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f8ebe41f2775dddd5f70c654e21c7dc64adc44e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835201"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debugowanie aplikacji platformy UWP przy użyciu pobieranych z wyprzedzeniem zawartości w programie Visual Studio
   
@@ -32,7 +30,7 @@ ms.locfileid: "49854589"
   
 1. Uruchom aplikację, aby zarejestrować zawartość pobieranie z wyprzedzeniem identyfikatory URI z aplikacją. Na **debugowania** menu, wybierz **Rozpocznij debugowanie** (skrót klawiaturowy: F5).  
   
-2. Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (skrót klawiaturowy: Shift + F5).  
+2. Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (skrót klawiaturowy: SHIFT + F5).  
   
 3. Na **debugowania** menu, wybierz **inne cele debugowania** , a następnie wybierz **wyzwalacza Windows Store App pobieranie z wyprzedzeniem**.  
   
@@ -42,4 +40,4 @@ ms.locfileid: "49854589"
 >  Powtórz te czynności przy dodawaniu lub zmodyfikować zawartość określona witryna sieci web.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wpis w blogu: wyzwalanie pobierania z wyprzedzeniem for Windows Store Apps w programie Visual Studio 2013 Update 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+ [Wpis w blogu: Wyzwalanie pobierania z wyprzedzeniem dla aplikacji Windows Store w Visual Studio 2013 Update 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

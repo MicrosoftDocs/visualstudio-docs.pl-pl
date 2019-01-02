@@ -2,19 +2,18 @@
 title: Generuj Konstruktor szybka akcja
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895301"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generowanie konstruktora w programie Visual Studio
 
@@ -24,13 +23,13 @@ Dotyczy to generowanie kodu:
 
 - Visual Basic
 
-**Co:** pozwala natychmiast generowania kodu dla nowego konstruktora klasy.
+**Co:** Umożliwia natychmiastowe generowania kodu dla nowego konstruktora klasy.
 
-**Kiedy:** wprowadzenie nowego konstruktora, aby poprawnie Zadeklaruj go automatycznie lub zmodyfikuj istniejące konstruktora.
+**Kiedy:** Wprowadzenie nowego konstruktora i aby poprawnie Zadeklaruj go automatycznie lub zmodyfikuj istniejące konstruktora.
 
-**Dlaczego:** można zadeklarować konstruktora przed użyciem, ale tej funkcji będzie generowana, za pomocą odpowiednich parametrów, automatycznie. Ponadto modyfikowania istniejących Konstruktor wymaga aktualizacji wszystkich callsites, chyba, że ta funkcja umożliwia automatyczne aktualizowanie.
+**Dlaczego:** Można zadeklarować konstruktora przed użyciem, ale tej funkcji będzie generowana, za pomocą odpowiednich parametrów, automatycznie. Ponadto modyfikowania istniejących Konstruktor wymaga aktualizacji wszystkich callsites, chyba, że ta funkcja umożliwia automatyczne aktualizowanie.
 
-**Jak:** istnieje kilka sposobów, aby wygenerować Konstruktor:
+**Jak:** Istnieje kilka sposobów, aby wygenerować Konstruktor:
 
    - [Generuj Konstruktor i wybierz elementy członkowskie](#pick)
    - [Generuj Konstruktor z wybranych pól](#selection)

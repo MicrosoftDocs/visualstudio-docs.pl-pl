@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Tworzenie podstawowego modelu 3D'
+title: 'Instrukcje: Tworzenie podstawowego modelu 3D'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeff9ce5ad4085c77443775fccb82e0eb9e6739d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929620"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Porady: Tworzenie podstawowego modelu 3D
+# <a name="how-to-create-a-basic-3d-model"></a>Instrukcje: Tworzenie podstawowego modelu 3D
 
 W tym artykule przedstawiono sposób używania edytora modelu do tworzenia podstawowego modelu 3D. Omówione są następujące działania:
 
@@ -72,10 +71,10 @@ W tym artykule przedstawiono sposób używania edytora modelu do tworzenia podst
 
    ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png)
 
-   Kolejnym krokiem może stosowanie cieniowania do modelu 3D. Aby uzyskać informacje, zobacz [porady: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Kolejnym krokiem może stosowanie cieniowania do modelu 3D. Aby uzyskać informacje, zobacz [jak: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md)
+- [Instrukcje: Model terenu 3D](../designers/how-to-model-3-d-terrain.md)
 - [Edytor modelu](../designers/model-editor.md)
 - [Projektant cieniowania](../designers/shader-designer.md)

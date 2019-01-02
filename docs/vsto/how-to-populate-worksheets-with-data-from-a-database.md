@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Zapełnianie arkuszy danymi z bazy danych'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53267cdd429b9a4d8848026e460776359b55c023
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: bf375b49525349cf28fb4b9dd1651ddadbf59360
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850063"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Instrukcje: Zapełnianie arkuszy danymi z bazy danych
 

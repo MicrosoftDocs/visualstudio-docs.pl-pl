@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsegments::Next — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9966555c673904a423de1b215e438b5db15479
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56ac8d4811cdad62f22d3d8101dc1530652bcb52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889959"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 Pobiera określoną liczbę segmentów w kolejności wyliczenia.  
@@ -27,7 +25,7 @@ Pobiera określoną liczbę segmentów w kolejności wyliczenia.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG         celt,   
    IDiaSegment** rgelt,  
    ULONG*        pceltFetched  

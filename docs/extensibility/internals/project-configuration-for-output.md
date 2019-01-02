@@ -1,9 +1,6 @@
 ---
 title: Konfiguracja danych wyjściowych projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a02e331484abf2ef1450493d2ea1bdddaabe82bd
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843297"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurowanie projektu dla danych wyjściowych
 Każdej konfiguracji może obsługiwać zestaw procesów kompilacji, które generują dane wyjściowe elementów, takich jak pliki wykonywalne lub zasobu. Te elementy danych wyjściowych są prywatne dla użytkownika i można umieścić w grupach, które łączą powiązanych typów danych wyjściowych, takich jak pliki wykonywalne (.exe, .dll, .lib) i pliki źródłowe (.idl, pliki .h).  

@@ -1,8 +1,6 @@
 ---
-title: 'Porady: debugowanie serwerów COM | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie serwerów COM | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853934"
 ---
-# <a name="how-to-debug-com-servers"></a>Porady: debugowanie serwerów COM
-Debugowanie aplikacji serwera COM stanowi unikatowy zestaw problemów, które nie zawsze są łatwe do rozwiązania.  
+# <a name="how-to-debug-com-servers"></a>Instrukcje: Debugowanie serwerów COM
+Debugowanie aplikacji serwera COM stanowi unikatowy zestaw problemów, które nie zawsze są łatwo rozwiązać.  
   
- Jeśli nie masz lub nie chcesz użyć informacji debugowania dla aplikacji kontenera, uruchamianie do debugowania aplikacji serwera jest trzech etapów procesu.  
+ Jeśli nie masz, lub nie chcesz użyć informacji debugowania dla aplikacji kontenera, uruchamianie na potrzeby debugowania aplikacji serwera jest procesem trzech krokach.  
   
-### <a name="to-debug-a-server-application-without-container-information"></a>Debugowanie aplikacji serwera bez informacji o kontenerze  
+### <a name="to-debug-a-server-application-without-container-information"></a>Aby debugować aplikację serwera bez informacji o kontenerze  
   
-1.  Uruchom profilowanie na serwerze jako normalne aplikacji.  
+1.  Rozpocznij debugowanie serwera jako normalna aplikacja.  
   
 2.  Ustaw punkty przerwania, zgodnie z potrzebami.  
   
@@ -46,7 +44,7 @@ Debugowanie aplikacji serwera COM stanowi unikatowy zestaw problemów, które ni
   
 ## <a name="see-also"></a>Zobacz też  
  [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)   
- [Porady: debugowanie klientów i serwerów za pomocą debugowania RPC COM](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Instrukcje: Debugowanie klientów i serwerów za pomocą debugowania RPC COM](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)   
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+ [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

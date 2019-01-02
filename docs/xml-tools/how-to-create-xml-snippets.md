@@ -1,8 +1,7 @@
 ---
-title: 'Porady: tworzenie fragmentów kodu XML'
+title: 'Instrukcje: Tworzenie fragmentów kodu XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829105"
 ---
-# <a name="how-to-create-xml-snippets"></a>Porady: tworzenie fragmentów kodu XML
+# <a name="how-to-create-xml-snippets"></a>Instrukcje: Tworzenie fragmentów kodu XML
 
 Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawiera fragment XML o nazwie "Fragment", oznacza to fragment standardowy do tworzenia nowych fragmentów kodu XML.
 
@@ -121,5 +120,5 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 ## <a name="see-also"></a>Zobacz także
 
 - [Fragmentów kodu XML](../xml-tools/xml-snippets.md)
-- [Porady: użycie XML fragmentów kodu](../xml-tools/how-to-use-xml-snippets.md)
-- [Porady: generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Instrukcje: Używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

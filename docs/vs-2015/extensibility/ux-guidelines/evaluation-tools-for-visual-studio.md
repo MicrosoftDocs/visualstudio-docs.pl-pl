@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18d055e5fc38c4bd212455773bc5d02ca741edf0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d8ed36ba7ebc4085d24147ff02763bcadf3cb777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885296"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Narzędzi programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -106,7 +105,7 @@ ms.locfileid: "53052458"
 
 #### <a name="dialog-operation-buttons-vs-client-only"></a>Okno dialogowe operacji przycisków (tylko w przypadku klienta programu VS)
 
--   Sprawdź, czy przyciski operacji w podanej kolejności: **OK**, **anulować**, **Zastosuj**.
+-   Sprawdź, czy przyciski operacji w podanej kolejności: **OK**, **anulować**, **zastosować**.
 
 -   Upewnij się, że **OK** i **anulować** przyciski są standardowy rozmiar: 75 x 23 pikseli.
 

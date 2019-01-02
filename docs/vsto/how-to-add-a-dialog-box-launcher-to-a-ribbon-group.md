@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Dodaj przycisk Uruchom okno dialogowe do grupy wstążki'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6ec94b8fc170f195b00a6c093605860c97048ed
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846207"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Instrukcje: Dodaj przycisk Uruchom okno dialogowe do grupy wstążki
   Możesz dodać przycisk Uruchom okno dialogowe z żadną grupą na Wstążce. Przycisk Uruchom okno dialogowe jest mała ikona, która pojawia się w grupie. Użytkownicy, kliknij tę ikonę, aby otworzyć określone okno dialogowe lub okienka zadań, które zapewniają więcej opcji, które odnoszą się do tej grupy.  
@@ -55,5 +52,3 @@ ms.locfileid: "53648700"
  [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

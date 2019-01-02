@@ -1,15 +1,10 @@
 ---
-title: 'Porady: Dodawanie i usuwanie zestawów dodatkowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie i usuwanie zestawów dodatkowych | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887013"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Porady: Dodawanie i usuwanie zestawów dodatkowych
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Instrukcje: Dodawanie i usuwanie zestawów dodatkowych
   Jeśli pakiet programu SharePoint jest zależna od innych zestawów w celu funkcji lub dane, możesz dodać zestawy, do rozwiązania pakietu (wsp). W ten sposób zapewnia, że zainstalowanie zestawów niestandardowych przy użyciu pakietu programu SharePoint server.  
   
  Można dodawać i zmieniać bezpiecznych kontrolek i pliki zasobów klasy skojarzone z zestawów.  
@@ -36,7 +31,7 @@ ms.locfileid: "50219149"
   
 #### <a name="to-add-an-existing-assembly"></a>Aby dodać istniejący zestaw  
   
-1.  Otwórz **pakietu projektanta**. Aby uzyskać więcej informacji, zobacz [porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Otwórz **pakietu projektanta**. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Wybierz **zaawansowane** kartę.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219149"
   
 1.  Otwórz **pakietu projektanta**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Wybierz **zaawansowane** kartę.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219149"
   
 #### <a name="to-delete-an-existing-assembly"></a>Aby usunąć istniejący zestaw  
   
-1.  Otwórz **pakietu projektanta**. Aby uzyskać więcej informacji, zobacz [porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Otwórz **pakietu projektanta**. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Wybierz **zaawansowane** kartę.  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219149"
   
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Porady: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [Instrukcje: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

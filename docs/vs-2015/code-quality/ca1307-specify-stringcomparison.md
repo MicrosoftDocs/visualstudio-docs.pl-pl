@@ -1,12 +1,11 @@
 ---
-title: 'CA1307: Określ StringComparison | Dokumentacja firmy Microsoft'
+title: 'CA1307: Określ argument StringComparison | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90da21195e5bc2f50708bedc869e945da2d291dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 577ca853d6b68696640d368cc9e52e4c7bb051c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887002"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307: Określ StringComparison
+# <a name="ca1307-specify-stringcomparison"></a>CA1307: Określ argument StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,7 +51,4 @@ ms.locfileid: "49853132"
  Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy biblioteka lub aplikacja jest przeznaczona dla ograniczone odbiorców lokalnych i w związku z tym nie będzie lokalizowany.
 
 ## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md) [CA1309: Używaj wyliczenia StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)
-
-
-
+ [Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md) [CA1309: Użyj porządkowego StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

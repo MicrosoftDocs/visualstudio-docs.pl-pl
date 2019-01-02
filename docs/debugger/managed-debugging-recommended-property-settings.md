@@ -2,7 +2,6 @@
 title: Zalecane ustawienia właściwości debugera C#, VB | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b98fe00301ad9230cb4f560a0a1d9dc1d3922f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1acc20c8987b3a5fced5826c8a2bfc068ce18c01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887042"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Zarządzanie debugowaniem: zalecane ustawienia właściwości
+# <a name="managed-debugging-recommended-property-settings"></a>Zarządzanie debugowaniem: Zalecane ustawienia właściwości
 Taki sam sposób dla wszystkich zarządzanych scenariuszy debugowania można ustawić niektórych właściwości.  
   
  Poniższe tabele zawierają zalecane ustawienia właściwości.  
@@ -36,9 +35,9 @@ Taki sam sposób dla wszystkich zarządzanych scenariuszy debugowania można ust
   
 |**Nazwa właściwości**|**Ustawienie**|  
 |-----------------------|-----------------|  
-|**Zdefiniuj stałą DEBUG**|C#i F#: Ustaw pole wyboru zaznaczone. Dzięki temu aplikacja korzysta z klasy Debug.|  
-|**Zdefiniuj stałą TRACE**|C#i F#: Ustaw pole wyboru zaznaczone. Dzięki temu aplikacja korzysta z klasy Trace.|  
-|**Optymalizuj kod**|C#, F#i Visual Basic: Ustaw na wartość false. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio kodowi źródłowemu. Jeśli okaże się, że program ma błąd, który pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod w **dezasemblacji** okna jest generowany na podstawie zoptymalizowane źródła, które mogą być niezgodne zobaczyć w kodzie Edytor. Aby debugować zoptymalizowany kod, należy wyłączyć opcję tylko mój kod. (Zobacz [Ogranicz przechodzenie krok po kroku, aby tylko mój kod](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla języka C# Debuguj konfiguracje](../debugger/project-settings-for-csharp-debug-configurations.md) lub [ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
+|**Zdefiniuj stałą DEBUG**|C#i F#: Ustaw pole wyboru, aby sprawdzić. Dzięki temu aplikacja korzysta z klasy Debug.|  
+|**Zdefiniuj stałą TRACE**|C#i F#: Ustaw pole wyboru, aby sprawdzić. Dzięki temu aplikacja korzysta z klasy Trace.|  
+|**Optymalizuj kod**|C#, F#i Visual Basic: Ustawienie wartości false. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio kodowi źródłowemu. Jeśli okaże się, że program ma błąd, który pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod w **dezasemblacji** okna jest generowany na podstawie zoptymalizowane źródła, które mogą być niezgodne zobaczyć w kodzie Edytor. Aby debugować zoptymalizowany kod, należy wyłączyć opcję tylko mój kod. (Zobacz [Ogranicz przechodzenie krok po kroku, aby tylko mój kod](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla języka C# Debuguj konfiguracje](../debugger/project-settings-for-csharp-debug-configurations.md) lub [ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
 |**Ścieżka wyjściowa**|Ustaw bin\Debug\\.|  
 |**Zaawansowane opcje kompilacji**|Tylko Visual Basic. Kliknij przycisk **zaawansowane** Aby ustawić zaawansowane właściwości, które są opisane w poniższej tabeli.|  
   

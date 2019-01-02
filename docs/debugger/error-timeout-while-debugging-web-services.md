@@ -1,8 +1,6 @@
 ---
 title: 'Błąd: Przekroczono limit czasu podczas debugowania usług sieci Web | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -17,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c6793e1fdf4e3ed2d7e42fbd32bd20ad9f494a
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 98d112528ace581c9173e82af63c502e2124315a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832574"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>Błąd: przekroczono limit czasu podczas debugowania usług sieci Web
-Gdy są Wkraczanie do usługi XML sieci Web, z kodu wywołującego, wywołanie może czasami limit czasu, w wyniku że nie będzie można kontynuować debugowania. Może zostać wyświetlony komunikat błędu, takich jak ta.  
+# <a name="error-timeout-while-debugging-web-services"></a>Błąd: Przekroczono limit czasu podczas debugowania usług sieci Web
+Gdy są Wkraczanie do usługi sieci Web XML, z kodu wywołującego, wywołanie może czasami limit czasu, w wyniku możliwe, że nie można kontynuować debugowanie. Zobaczysz komunikat o błędzie, np. to.  
   
 ```cmd
 An unhandled exception of type 'System.Net.WebException' occurred in   
@@ -34,7 +32,7 @@ Additional information: The operation has timed-out.
 ```  
   
 ## <a name="solution"></a>Rozwiązanie  
- Aby uniknąć tego problemu, należy ustawić wartość limitu czasu dla wywołania usługi XML sieci Web na wartość infinite, jak pokazano w poniższym przykładzie:  
+ Aby uniknąć tego problemu, należy ustawić wartość limitu czasu dla wywołania usługi sieci Web XML na wartość infinite, jak pokazano w poniższym przykładzie:  
   
 ```csharp
 Service1 obj = new Service1();  

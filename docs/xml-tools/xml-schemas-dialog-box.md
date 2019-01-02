@@ -2,7 +2,6 @@
 title: Schematy XML, okno dialogowe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
@@ -10,48 +9,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b1f8f4824d18618b40ad4073dc6be0c81d9aba37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835211"
 ---
 # <a name="xml-schemas-dialog-box"></a>Okno dialogowe schematy XML
 
-**Schematów XML** okno dialogowe służy do wybierania który schematy XML schematu definition language (XSD) do skojarzenia z dokumentu XML. Wybierz schemat z pamięci podręcznej schematu lub określ schemat, który nie znajduje się w pamięci podręcznej. Wybrane schematy są traktowane jako część zestawu schematu. Zestaw schematu jest używany na potrzeby funkcji IntelliSense, a także sprawdzanie poprawności kodu XML dokumentu.
+**Schematów XML** okno dialogowe służy do wybierania które schematy XML schematu definicji języka (XSD) do skojarzenia z dokumentu XML. Wybierz schemat z pamięci podręcznej schematów lub określ schemat, który nie znajduje się w pamięci podręcznej. Wybrane schematy są traktowane jako część zestawu schematu. Zestaw schematu jest używany dla funkcji IntelliSense, a także Walidacja dokumentów XML.
 
-Dostęp można uzyskać **schematów XML** okno dialogowe albo klikając **schematy** przycisk w oknie właściwości dokumentu lub wybierając **schematy** z **XML** menu.
+Możesz uzyskać dostęp **schematów XML** okno dialogowe, albo klikając **schematów** przycisku w oknie dialogowym właściwości dokumentu lub wybierając **schematów** z **XML** menu.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- **Użyj**
+ **Korzystanie**
 
- Wybierz, jak schemat XML ma być używany.
+ Wybierz, jak ma być używany schemat XML.
 
--   **Automatyczne**. Ten schemat nie jest używany przez bieżący dokument, ale jest dostępny na automatyczne kojarzenie. Jeśli dokument XML deklaruje przestrzeni nazw, która odpowiada `targetNamespace` tego schematu schemat zostanie automatycznie skojarzona i znajduje się w zestawie schematów.
+-   **Automatyczne**. W tym schemacie nie jest używany przez bieżącego dokumentu, ale są dostępne na automatyczne kojarzenie. Jeśli dokument XML deklaruje przestrzeni nazw, który odpowiada `targetNamespace` tego schematu schemat zostaną automatycznie skojarzone i znajduje się w zestawie schematów.
 
--   **Używaj tego schematu**. Ten schemat jest używany przez bieżącego dokumentu. Użytkownik ma jawnie żądana, można użyć tego schematu, klikając tę kolumnę lub schemat został automatycznie skojarzone na podstawie zgodności `targetNamespace`.
+-   **Użyj tego schematu**. Ten schemat jest on używany przez bieżącego dokumentu. Użytkownik ma jawnie zażądano, można użyć tego schematu, klikając tę kolumnę lub schemat został automatycznie skojarzone w oparciu o dopasowanie `targetNamespace`.
 
--   **Nie używaj wybranych schematów**. Ten schemat nie jest używany przez bieżący dokument, nawet jeśli schemat ma pasujący `targetNamespace`. To ustawienie może być przydatne podczas rozwiązywania konfliktów, jeśli istnieje więcej niż jedną wersję tego samego schematu w pamięci podręcznej schematu lub rozwiązania.
+-   **Nie używaj wybranych schematów**. W tym schemacie nie jest używany przez bieżącego dokumentu, nawet wtedy, gdy schemat miała zgodną `targetNamespace`. To ustawienie może być przydatne w przypadku rozwiązywania konfliktów, jeśli istnieje więcej niż jedna wersja ten sam schemat w pamięci podręcznej schematów lub rozwiązania.
 
-**Namespace docelowego**
+**TARGET Namespace**
 
-Wyświetla docelową przestrzeń nazw, skojarzone ze schematem XML.
+Wyświetla docelowego obszaru nazw, skojarzone ze schematem XML.
 
 **Nazwa pliku**
 
 Wyświetla nazwę pliku schematu XML.
 
-**Dodaj**
+**Add**
 
-Otwiera **Otwórz schematu XSD** okno dialogowe, które można wybrać dodatkowe schematy do dodania do zestawu schematu. Po dodaniu schematu do schematu ustawiony **użyj** ma ustawioną wartość w kolumnie **używają tego schematu**.
+Otwiera **otwieranie schematu XSD** okno dialogowe, które umożliwia wybranie dodatkowe schematy do dodania do zestawu schematów. Po dodaniu schematu do schematu ustawiony **użyj** jest równa wartości w kolumnie **używają tego schematu**.
 
 **Usuń**
 
-Usuwa obecnie wybrany schemat z zestawu schematów. Spowoduje to usunięcie schematu z pamięci podręcznej schematu w pamięci, ale nie z systemu plików.
+Usuwa aktualnie wybranego schematu z zestawu schematów. Spowoduje to usunięcie schematu z pamięci podręcznej schematów w pamięci, ale nie z systemu plików.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Składniki edytora XML](../xml-tools/xml-editor-components.md)
-- [Porady: Wybieranie schematów XML do użycia](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Instrukcje: Wybieranie schematów XML do użycia](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Pamięci podręcznej schematów](../xml-tools/schema-cache.md)

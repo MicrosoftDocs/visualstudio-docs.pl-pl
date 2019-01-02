@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram3::ExecuteOnThread | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbb2650fc2c001e57de7b1820cff238c8963e8cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889439"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Wykonuje program debugera. Wątek jest zwracany do przedstawienia informacji debugera, na który wątek użytkownika jest wyświetlana podczas wykonywania programu.  
@@ -46,9 +43,9 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>Uwagi  
  Istnieją trzy różne sposoby wznowić wykonywanie po zatrzymaniu debugera:  
   
-- Wykonaj: Anulowanie wszelkich w poprzednim kroku, a następnie uruchom aż do następnego punktu przerwania i tak dalej.  
+- Należy wykonać: Anuluj wszelkie poprzedniego kroku i uruchamianie aż do następnego punktu przerwania i tak dalej.  
   
-- Krok Anulować stary którykolwiek z kroków i uruchamianie aż do zakończenia nowego kroku.  
+- Krok: Anuluj którykolwiek z kroków stary i uruchomić do momentu ukończenia nowy krok.  
   
 - Kontynuuj: Uruchom ponownie i pozostawianie aktywnej stare którykolwiek z kroków.  
   

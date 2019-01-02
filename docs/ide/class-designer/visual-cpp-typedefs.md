@@ -2,7 +2,6 @@
 title: Definicje typów Visual C++ w Projektancie klas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -15,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869193"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 
-[Element TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) instrukcje tworzenia jednej lub kilku warstw pośredników między nazwą jego typ podstawowy. **Projektant klas** obsługuje typy typedef języka C++, które są zadeklarowane ze słowem kluczowym `typedef`, na przykład:
+[Element TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) instrukcji utworzyć jedną lub więcej warstw pośredników między nazwą jej typ podstawowy. **Projektant klasy** obsługuje typy typedef C++, które są zadeklarowane za pomocą słowa kluczowego `typedef`, na przykład:
 
 ```cpp
 typedef class coord
@@ -35,28 +34,28 @@ typedef class coord
 } COORD;
 ```
 
-Tego typu można użyć do zadeklarowania wystąpienie:
+Tego typu można następnie użyć do deklarowania wystąpienie:
 
 `COORD OriginPoint;`
 
 ## <a name="class-and-struct-shapes"></a>Kształty klasy i struktury
 
-W **Projektant klas**, C++ typedef ma kształt z typem określonym w definicji typu. Jeśli źródło deklaruje `typedef class`, kształt zaokrąglonymi narożnikami, a etykieta **klasy**. Aby uzyskać `typedef struct`, kształt ma narożniki i etykiety **struktury**.
+W **projektanta klas**, C++ typedef ma kształt z typem określonym w definicji typu. Jeśli źródło deklaruje `typedef class`, kształt ma zaokrąglone rogi i etykiety **klasy**. Aby uzyskać `typedef struct`, kształt ma ostre rogi i etykieta **struktury**.
 
-Klasy i struktury może mieć zagnieżdżonych definicje typów zadeklarowany w nich. W **Projektant klas**, klasy i struktury kształtów mogą być prezentowane w deklaracji typedef zagnieżdżonych kształtów w zagnieżdżonych.
+Klasy i struktury może mieć definicje typów zagnieżdżonych, zadeklarowany wewnątrz nich. W **projektanta klas**, kształty klasy i struktury można wyświetlić deklaracje typedef zagnieżdżonych kształtów jako zagnieżdżonych.
 
-Element TypeDef shapes pomocy technicznej **Pokaż jako skojarzenie** i **wyświetlić jako kolekcję skojarzeń** polecenia w menu kontekstowym.
+Element TypeDef kształty pomocy technicznej **wyświetlić jako skojarzenie** i **pokazać jako skojarzenia kolekcji** poleceń w menu kontekstowym.
 
-### <a name="class-typedef-example"></a>Przykład klasy — typedef
+### <a name="class-typedef-example"></a>Przykład element typedef dla klasy
 
 ```cpp
 class B {};
 typedef B MyB;
 ```
 
-![Element typedef klasy C++ w Projektancie klas](media/cpp-class-typedef.png)
+![Typedef klasy języka C++ w Projektancie klas](media/cpp-class-typedef.png)
 
-### <a name="struct-typedef-example"></a>Przykład typedef — struktura
+### <a name="struct-typedef-example"></a>Przykład — typedef — struktura
 
 ```cpp
 typedef struct mystructtag
@@ -66,11 +65,11 @@ typedef struct mystructtag
 } mystruct;
 ```
 
-![Element typedef struktury języka C++ w Projektancie klas](media/cpp-struct-typedef.png)
+![Typedef — struktura języka C++ w Projektancie klas](media/cpp-struct-typedef.png)
 
-## <a name="unnamed-typedefs"></a>Nienazwane definicje typów
+## <a name="unnamed-typedefs"></a>Nienazwane elementy TypeDef
 
-Mimo że można zadeklarować jako element typedef nie zawiera nazwy **Projektant klas** nie są używane przez Ciebie nazwą tagu. **Projektant klas** używa nazwy który **widoku klasy** generuje. Na przykład następujące oświadczenie jest prawidłowy, ale wygląda na to w **widoku klasy** i **Projektant klas** jako obiekt o nazwie **__unnamed**:
+Mimo że można zadeklarować element typedef bez nazwy **projektanta klas** nie używa nazwa tagu, który określisz. **Projektant klasy** używa nazwy, **Widok klas** generuje. Na przykład następująca deklaracja jest prawidłowy, ale zostanie on wyświetlony na **Widok klas** i **projektanta klas** jako obiekt o nazwie **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -82,7 +81,7 @@ typedef class coord
 ```
 
 > [!NOTE]
-> **Projektant klas** definicje typów, których typ źródła jest wskaźnik funkcji nie są wyświetlane.
+> **Projektant klasy** definicje typów, których typ źródłowy jest wskaźnik funkcji nie są wyświetlane.
 
 ## <a name="see-also"></a>Zobacz także
 

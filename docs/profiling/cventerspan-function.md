@@ -1,8 +1,6 @@
 ---
-title: Cventerspan — funkcja | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Funkcja CvEnterSpan | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892588"
 ---
 # <a name="cventerspan-function"></a>Cventerspan — funkcja
 Oznacza początek nowy zakres.  
@@ -114,7 +112,7 @@ HRESULT CvEnterSpanExVA(
  Poziom ważności zakresu.  
   
  `pMarkerSeries`  
- Kontekst serii prawidłowy znacznik. Nie może mieć wartości NULL.  
+ Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.  
   
  `pMessage`  
  Ciąg formatu wiadomości. Nie może mieć wartości NULL.  
@@ -123,14 +121,14 @@ HRESULT CvEnterSpanExVA(
  Adres zmiennej, która będzie zawierać wynikowy obiekt zakresu. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość S_OK, gdy wiadomość zostanie pomyślnie zapisany. Kod błędu w przypadku, gdy było żadnych błędów. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
+ S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
- **Unicode:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
+ **Unicode:** Cventerspanw —, cventerspanexvw — cventerspanvw —, cventerspanexw —,  
   
- **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
+ **ANSI:** Cventerspana —, cventerspanexvw — cventerspanva —, cventerspanexa —,  
   
 ## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

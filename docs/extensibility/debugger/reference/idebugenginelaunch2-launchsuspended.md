@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineLaunch2::LaunchSuspended | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe5bdd0619ae5954a34fde50518adb3767d1825
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2c5699c95176074f17d1bc05019ada1796bfd16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882555"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Ta metoda uruchamia proces, za pomocą aparatu debugowania (DE).  
@@ -28,7 +25,7 @@ Ta metoda uruchamia proces, za pomocą aparatu debugowania (DE).
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT LaunchSuspended (   
+HRESULT LaunchSuspended (   
    LPCOLESTR             pszMachine,  
    IDebugPort2*          pPort,  
    LPCOLESTR             pszExe,  

@@ -2,19 +2,18 @@
 title: Zestaw reguł macierzystych reguł zalecanych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 12e9e271e0fd6881ae19581a1678f131719c4b34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882805"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Zestaw reguł macierzystych reguł zalecanych
 
@@ -127,7 +126,7 @@ Aktywność macierzystych reguł zalecanych i najpoważniejszych problemów w ko
 |[C6518](../code-quality/c6518.md)|Rozmiar obszaru do zapisu dla bufora bez możliwości zapisu|
 |[C6522](../code-quality/c6522.md)|Nieprawidłowy typ ciągu rozmiaru|
 |[C6525](../code-quality/c6525.md)|Nieosiągalna lokalizacja ciągu nieprawidłowy rozmiar|
-|[C6527](../code-quality/c6527.md)|Nieprawidłowa adnotacja: właściwość "NeedsRelease" nie może być używana dla wartości typu void|
+|[C6527](../code-quality/c6527.md)|Nieprawidłowa adnotacja: Właściwość "NeedsRelease" nie może być używana dla wartości typu void|
 |[C6530](../code-quality/c6530.md)|Nierozpoznany styl ciągu formatu|
 |[C6540](../code-quality/c6540.md)|Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec|
 |[C6551](../code-quality/c6551.md)|Nieprawidłowa specyfikacja rozmiaru: nie można przeanalizować wyrażenia|
@@ -230,7 +229,7 @@ Aktywność macierzystych reguł zalecanych i najpoważniejszych problemów w ko
 |[C28286](../code-quality/c28286.md)|Dla funkcji, błąd składni w pobliżu końca|
 |[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składni w \_na\_adnotacji () (Nierozpoznana nazwa parametru)|
 |[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w \_na\_adnotacji () (Nieprawidłowa nazwa parametru)|
-|[C28289](../code-quality/c28289.md)|Dla funkcji: elementy ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru|
+|[C28289](../code-quality/c28289.md)|Dla funkcji: Elementy ReadableTo lub WritableTo nie miał elementu limit-spec jako parametru|
 |[C28290](../code-quality/c28290.md)|Adnotacja dla funkcji zawierających więcej obiektów zewnętrznych niż rzeczywista liczba parametrów|
 |[C28291](../code-quality/c28291.md)|Post null/notnull na poziomie deref 0 jest bez znaczenia dla funkcji.|
 |[C28300](../code-quality/c28300.md)|Argumenty operacji wyrażenia o niezgodnych typach dla operatora|

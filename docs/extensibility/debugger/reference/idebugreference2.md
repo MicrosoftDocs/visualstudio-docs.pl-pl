@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb5d5d8b3ab6e608a2454847fc9ec27e384777bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df5eb1558cf2d93866eaa50e3a480ba70f904fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855247"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
-Ten interfejs reprezentuje odwołanie do właściwości ramki stosu lub pewne inne właściwości.  
+Ten interfejs reprezentuje odwołanie do właściwości ramki stosu lub niektóre inne właściwości.  
   
 > [!NOTE]
->  `IDebugReference2` jest zarezerwowany do użytku w przyszłości i wszystkie jego metody powinna zwracać `E_NOTIMPL`.  
+>  `IDebugReference2` jest zarezerwowany do użytku w przyszłości i wszystkie jego metody powinna zwrócić `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,48 +32,48 @@ IDebugReference2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Niemcy implementuje ten interfejs do reprezentowania odwołanie do określonego typu wartości. Na przykład wartość może być wartość liczbową wyniku Obliczanie wyrażenia w kontekście pamięci służący do wyświetlania w pamięci lub lista rejestrów i ich wartości.  
+ DE implementuje ten interfejs do reprezentowania odwołanie do konkretnego typu wartości. Na przykład wartość można wartość liczbową, w wyniku oceny wyrażenia kontekstu pamięci, służący do wyświetlania w pamięci lub Podaj listę rejestrów i ich wartości.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołanie [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) uzyskanie tego interfejsu. [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) i [GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) również zwrócić tego interfejsu.  
+ Wywołaj [getreference —](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) uzyskać ten interfejs. [Getparent —](../../../extensibility/debugger/reference/idebugreference2-getparent.md) i [GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) również zwracać ten interfejs.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugReference2`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Pobiera [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury, która opisuje to odwołanie.|  
-|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Ustawia wartość to odwołanie z ciągu.|  
-|[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Ustawia wartość to odwołanie z innego odwołania.|  
+|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Pobiera [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strukturę, która opisuje to odwołanie.|  
+|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Ustawia wartość tego odwołania z ciągu.|  
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Ustawia wartość odwołanie z innego odwołania.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Wylicza elementy podrzędne tego odwołania.|  
 |[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Pobiera element nadrzędny tego odwołania.|  
-|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Pobiera odwołanie pochodzi większość tego odwołania.|  
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Pobiera bajtów pamięci, do których odwołuje się tego odwołania.|  
+|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Pobiera odniesienie najbardziej pochodnego tego odwołania.|  
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Pobiera bajtów pamięci, do których odnosi się to odwołanie.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Pobiera kontekst pamięci dla tego odwołania.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Pobiera rozmiar w bajtach tego odwołania.|  
-|[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Ustawia tego typu odwołania.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Pobiera rozmiar w bajtach, to odwołanie.|  
+|[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Ustawienie tego typu odwołania.|  
 |[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Porównuje to odwołanie z inną.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 > [!NOTE]
->  Nie należy mylić to użycie "właściwości" z oznacza zmiennej członkowskiej klasy, mimo że `IDebugReference2` może reprezentować taka jednostka.  
+>  To wykorzystania "property" nie należy mylić z tej zmiennej składowej klasy, co oznacza, mimo że `IDebugReference2` może reprezentować podmiot.  
   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) reprezentuje właściwość, podczas gdy `IDebugReference2` reprezentuje odwołanie do właściwości, zwykle odwołanie do obiektu w debugowanym program.  
+ [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) reprezentuje właściwość, podczas gdy `IDebugReference2` reprezentuje odwołanie do właściwości, zwykle odwołanie do obiektu w debugowanego programu.  
   
- Podstawowa różnica między właściwość i odwołanie jest, że właściwość odwołuje się do nazwanego wystąpienia obiektu, gdy odwołanie odnosi się do nazwy wystąpienia. Na przykład właściwość może odwoływać się do obiektu w stosie programu przez `"a.b"`. Inna właściwość może odwoływać się do tego samego obiektu jako `"c.d"`. Sposób odwoływania się do tej właściwości wymaga, aby `"a.b"` lub `"c.d"` się w zakresie. Odwołanie do tego samego obiektu nie została określona; Obiekt można odwoływać się tak długo, jak pamięci dla tego obiektu jest nieprawidłowy.  
+ Główna różnica między właściwością i odwołania jest, że właściwość odwołuje się do nazwanego wystąpienia obiektu, gdy odwołanie odnosi się do nazwy wystąpienia. Na przykład właściwość może odwoływać się do obiektu w stosie tego programu przez `"a.b"`. Inna właściwość może odwoływać się do tego samego obiektu jako `"c.d"`. Sposób odwoływania się do tej właściwości wymaga, aby `"a.b"` lub `"c.d"` się mieścić w zakresie. Odwołanie do tego samego obiektu nie została określona; obiekt może zostać udzielona tak długo, jak pamięć dla tego obiektu jest prawidłowa.  
   
- `IDebugProperty2` Interfejsu można traktować jako wartość z nazwą, typ i adresu. `IDebugReference2`, W drugim ręcznie, można traktować jako typ i adresu.  
+ `IDebugProperty2` Interfejsu można traktować jako wartość składającą się z nazwy, typu i adres. `IDebugReference2`, Z drugiej strony drugiej strony, można traktować jako typ i adresu.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

@@ -1,12 +1,11 @@
 ---
-title: 'CA1700: Nie nadawać wartościom enum oznaczenia &#39;Reserved&#39; | Dokumentacja firmy Microsoft'
+title: 'CA1700: Nie nadawaj wartościom wyliczenia nazwy &#39;Reserved&#39; | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3558e263cd8f2c359109298bf6069d408edbf7f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850880"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nie nadawać wartościom enum oznaczenia &#39;zastrzeżone&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nie nadawaj wartościom wyliczenia nazwy &#39;zastrzeżone&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,15 +59,12 @@ ms.locfileid: "49897995"
  Jest to bezpieczne Pomijaj ostrzeżeń dla tej reguły dla elementu członkowskiego, który jest obecnie używany, lub dla bibliotek, które wcześniej zostały wprowadzone do użytku.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
  [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
  [CA1028: Magazyn typu wyliczeniowego powinien być typu Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
- [CA1008: Wyliczenia powinny zawierać wartość zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008: Typy wyliczeniowe powinny mieć wartości zerowej](../code-quality/ca1008-enums-should-have-zero-value.md)
 
- [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-
-
-
+ [CA1027: Oznacz Typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

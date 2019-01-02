@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_countLiveRanges | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422025e61987a80b365b8db69dde11ee61e38472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d33a87225345137a303284387c93dcec06d07f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933956"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
 Pobiera liczbę zakresów prawidłowy adres skojarzony z symbolu lokalnego.  
@@ -27,7 +25,7 @@ Pobiera liczbę zakresów prawidłowy adres skojarzony z symbolu lokalnego.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_countLiveRanges (   
+HRESULT get_countLiveRanges (   
    DWORD* count  
 );  
 ```  
@@ -40,7 +38,7 @@ HRESULT get_countLiveRanges (
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
  Biblioteka: diaguids.lib  
   

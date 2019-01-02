@@ -2,7 +2,6 @@
 title: Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880413"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 
@@ -123,11 +122,11 @@ Określa rozmiarów ekranów i rozwiązań dla aplikacji.
 
 **Orientacja**
 
-Określa różne orientacje dla aplikacji: **pozioma** lub **pionowa**.
+Określa różne orientacje dla aplikacji: **Orientacja pozioma** lub **pionowa**.
 
-**Krawędź**
+**Edge**
 
-Określa wyrównanie krawędzi różnych aplikacji: **zarówno**, **po lewej stronie**, **po prawej stronie**, lub **Brak**.
+Określa wyrównanie krawędzi różnych aplikacji: **Zarówno**, **po lewej stronie**, **po prawej stronie**, lub **Brak**.
 
 **Duży kontrast**
 
@@ -201,4 +200,4 @@ Po prawej stronie każdej właściwości jest wartość *znacznik właściwości
 
 - [Praca z elementami w projektancie XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Tworzenie i stosowanie zasobów](../designers/how-to-create-and-apply-a-resource.md)
-- [Przewodnik: tworzenie powiązań z danymi w projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Przewodnik: Powiązanie z danymi w Projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

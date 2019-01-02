@@ -2,7 +2,6 @@
 title: Rozwiązywanie problemów z przerwanymi odwołaniami
 ms.date: 03/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - C# projects, references
@@ -15,80 +14,80 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: c4d45dc01201747240f2ebbc50854b77fd31ec0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847129"
 ---
 # <a name="troubleshoot-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 
-Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd wyjątku. W której nie można odnaleźć składnika, do którego istnieje odwołanie jest podstawowy wyzwalacza tego błędu, ale jest wiele sytuacji w których odwołanie jest uznawana za uszkodzony. Wystąpienia te są wyświetlane na poniższej liście:
+Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd wyjątku. Z brakiem, aby odnaleźć składnika, do którego istnieje odwołanie jest podstawowym wyzwalacza dla błędu, ale istnieje kilka sytuacji, w których odwołanie jest uznawana za uszkodzone. Te wystąpienia są wyświetlane na poniższej liście:
 
-- Ścieżka odwołania projektu jest nieprawidłowe lub niekompletne.
+- Ścieżka odwołania projektu jest niepoprawne lub niepełne.
 
 - Usunięto plik, do którego nastąpiło odwołanie.
 
-- Zmieniono nazwę pliku, do którego nastąpiło odwołanie.
+- Zmieniono nazwę pliku, którego dotyczy odwołanie.
 
-- Połączenie z siecią lub uwierzytelnianie nie powiodło się.
+- Połączenie sieciowe lub uwierzytelnianie nie powiodło się.
 
 - Odwołanie jest składnika modelu COM, który nie jest zainstalowany na komputerze.
 
-Poniżej przedstawiono środków zaradczych tych problemów.
+Dostępne są następujące środki zaradcze tych problemów.
 
 > [!NOTE]
-> Pliki w zestawach jest przywoływana za pomocą ścieżki bezwzględne w pliku projektu. W związku z tym jest możliwe w dla użytkowników, którzy pracują w środowisku projektowanie brakuje przywoływanego zestawu w środowisku lokalnym. Aby uniknąć tych błędów, zaleca się w takich przypadkach można dodać odwołania projektu do projektu. Aby uzyskać więcej informacji, zobacz [programowanie za pomocą zestawów](/dotnet/framework/app-domains/programming-with-assemblies).
+> Pliki w zestawach są przywoływane przy użyciu ścieżek bezwzględnych w pliku projektu. Dlatego jest możliwe dla użytkowników, którzy pracują w środowisku projektowanie brakuje przywoływanego zestawu w środowisku lokalnym. Aby uniknąć tych błędów, lepiej jest w takich przypadkach można dodać odwołania projektu do projektu. Aby uzyskać więcej informacji, zobacz [programowanie za pomocą zestawów](/dotnet/framework/app-domains/programming-with-assemblies).
 
 ## <a name="reference-path-is-incorrect"></a>Ścieżka odwołania jest nieprawidłowy
 
-Jeśli projekty są udostępniane na różnych komputerach, niektórych odwołań może nie można odnaleźć, gdy składnik znajduje się w innym katalogu na każdym komputerze. Odwołania są przechowywane w obszarze nazwy pliku składnika (na przykład *MyComponent*). Po dodaniu odwołanie do projektu, lokalizacja folderu pliku składnika (na przykład *C:\MyComponents*) jest dołączany do **ReferencePath** właściwości projektu.
+Jeśli projekty są współdzielone na różnych komputerach, niektóre odwołania nie będzie można znaleźć gdy składnik znajduje się w innym katalogu na każdym komputerze. Odwołania są przechowywane w nazwie pliku składnika (na przykład *MyComponent*). Po dodaniu odwołania do projektu, lokalizacja folderu pliku składnika (na przykład *C:\MyComponents*) jest dołączany do **ReferencePath** właściwość projektu.
 
-Po otwarciu projektu próbuje zlokalizować te pliki składnika przeszukując katalogi w ścieżce odwołania. Jeśli projekt zostanie otwarty na komputerze, który przechowuje składnika w innym katalogu, takie jak *D:\MyComponents*, nie można odnaleźć odwołania i pojawia się błąd w **listy zadań**.
+Po otwarciu projektu próbuje zlokalizować te pliki składnika przez wyszukiwanie w katalogach w ścieżce odwołania. Jeśli projekt jest otwierany na komputerze, na którym są przechowywane składnika w innym katalogu, takie jak *D:\MyComponents*, nie można odnaleźć odwołania i pojawia się błąd w **listy zadań**.
 
-Aby rozwiązać ten problem, możesz usunąć uszkodzone odwołanie i zastąp go przy użyciu **Dodaj odwołanie** okno dialogowe. Innym rozwiązaniem jest użycie **ścieżkę odwołania** element na stronach właściwości projektu i zmodyfikować folderów na liście do punktu w poprawnych lokalizacjach. **Ścieżkę odwołania** właściwości jest trwały dla każdego użytkownika, na każdym komputerze. W związku z tym modyfikowanie ścieżce odwołania nie wpływa na innych użytkowników projektu.
+Aby rozwiązać ten problem, możesz usunąć uszkodzone odwołanie, a następnie zastąp go za pomocą **Dodaj odwołanie** okno dialogowe. Innym rozwiązaniem jest użycie **ścieżkę odwołania** elementów na stronach właściwości projektu i zmodyfikować foldery na liście, aby wskazywał poprawne lokalizacje. **Ścieżkę odwołania** właściwość jest trwały dla każdego użytkownika na każdym komputerze. W związku z tym modyfikując ścieżki odniesienia nie ma wpływu na innych użytkowników projektu.
 
 > [!TIP]
-> Odwołania projektu do projektu nie ma tych problemów. Z tego powodu ich używać zamiast odwołania do pliku, jeśli to możliwe.
+> Odwołania projekt projekt nie ma tych problemów. Z tego powodu ich używać zamiast odwołania do pliku, jeśli to możliwe.
 
-### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Aby rozwiązać odwołania projektu przerwane rozwiązując ścieżkę odwołania
+### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Aby naprawić uszkodzone odwołanie, poprawiając ścieżkę odwołania
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i kliknij przycisk **właściwości**.
 
-   **Projektanta projektu** pojawi się.
+   **Projektanta projektu** pojawia się.
 
-1. Jeśli używasz programu Visual Basic, wybierz **odwołania** i kliknij przycisk **ścieżek odwołania** przycisku. W **ścieżek odwołania** oknie dialogowym wpisz ścieżkę folderu, który zawiera element, który chcesz odwołać w **folderu** pola, a następnie kliknij przycisk **Dodaj Folder** przycisku.
+1. Jeśli używasz języka Visual Basic, wybierz opcję **odwołania** strony, a następnie kliknij przycisk **ścieżki odwołania** przycisku. W **ścieżki odwołania** okna dialogowego wpisz ścieżkę do folderu, który zawiera element, którego chcesz się odwołać w **folderu** pola, a następnie kliknij przycisk **Dodaj Folder** przycisku.
 
-    Jeśli używasz języka C#, wybierz **ścieżek odwołania** strony. W **folderu** wpisz ścieżkę folderu, który zawiera element, który chcesz odwołać, a następnie kliknij przycisk **Dodaj Folder** przycisku.
+    Jeśli używasz C#, wybierz opcję **ścieżki odwołania** strony. W **folderu** wpisz ścieżkę do folderu, który zawiera element, który chcesz odwołać, a następnie kliknij przycisk **Dodaj Folder** przycisku.
 
 ## <a name="referenced-file-has-been-deleted"></a>Przywoływany plik został usunięty.
 
 Jest to możliwe, że plik, do którego nastąpiło odwołanie, został usunięty i już nie istnieje na dysku.
 
-### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Aby rozwiązać odwołania projektu przerwane dla pliku, który nie istnieje na dysku
+### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Aby naprawić przerwane odwołanie do pliku, który już nie istnieje na dysku
 
-- Usuń odwołanie do.
+- Usuń odwołanie.
 
 - Jeśli istnieje odwołanie w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji.
 
 ## <a name="referenced-file-has-been-renamed"></a>Nazwa pliku została zmieniona
 
-Istnieje możliwość, że zmieniono nazwę pliku, do którego nastąpiło odwołanie.
+Istnieje możliwość, że zmieniono nazwę pliku, którego dotyczy odwołanie.
 
-### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Aby naprawić uszkodzone odwołanie pliku, którego nazwa została zmieniona
+### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Aby naprawić uszkodzone odwołanie do pliku, którego nazwa została zmieniona
 
-- Usuń odwołanie do, a następnie dodaj odwołanie do pliku o zmienionej nazwie.
+- Usuń odwołanie, a następnie dodaj odwołanie do pliku o zmienionej nazwie.
 
-- Jeśli istnieje odwołanie w innej lokalizacji na komputerze, należy odczytywać je w tej lokalizacji.
+- Odwołanie istnieje w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji.
 
-## <a name="network-connection-or-authentication-has-failed"></a>Połączenie z siecią lub uwierzytelnianie nie powiodło się
+## <a name="network-connection-or-authentication-has-failed"></a>Połączenie sieciowe lub uwierzytelnianie nie powiodło się
 
-Może istnieć wiele możliwe przyczyny niedostępności plików: połączenie sieciowe nie powiodło się lub niepowodzenia uwierzytelniania, na przykład. Każdy Przyczyna może być unikatowy sposób odzyskiwania; może być konieczne na przykład, skontaktuj się z administratorem lokalnym do uzyskiwania dostępu do wymaganych zasobów. Jednak usunięcie odwołania i zmianie kodu, których użyto go jest zawsze opcję.
+Może istnieć wiele możliwe przyczyny niedostępności plików: połączenie sieciowe nie powiodło się lub niepowodzenie uwierzytelniania, na przykład. Przyczyny dotyczyły, może być unikatowy oznacza, że odzyskiwania; na przykład może być konieczne skontaktuj się z administratorem lokalnym w celu dostępu do wymaganych zasobów. Jednak usunięcie odwołania i naprawianie kodu, których jej jest zawsze opcję.
 
 ## <a name="com-component-is-not-installed-on-computer"></a>Składnik COM nie jest zainstalowany na komputerze
 
-Jeśli użytkownik dodał odwołanie do składnika modelu COM, a drugi użytkownik próbuje uruchomić kod na komputerze, na którym nie zainstalowano tego składnika, drugi użytkownik zostanie zwrócony błąd że odwołanie jest uszkodzona. Instalowanie składnika na drugim komputerze spowoduje Popraw błąd. Aby uzyskać więcej informacji o sposobie używania odwołania do składników modelu COM w projektach, zobacz [współdziałanie COM w aplikacjach .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
+Jeśli użytkownik doda odwołanie do składnika modelu COM, a drugi użytkownik próbuje uruchomić kod na komputerze, na którym nie zainstalowano tego składnika, drugi użytkownik zostanie wyświetlony błąd, czy odwołanie jest uszkodzony. Instalowanie składnika na drugim komputerze spowoduje Popraw błąd. Aby uzyskać więcej informacji o sposobie używania odwołania do składników modelu COM w projektach, zobacz [współdziałanie COM w aplikacjach .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
 
 ## <a name="see-also"></a>Zobacz także
 

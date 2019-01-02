@@ -1,8 +1,7 @@
 ---
-title: 'CA1703: Ciągu zasobu należy zapisywać poprawnie'
+title: 'CA1703: Ciągi zasobów, które powinny być zapisane poprawnie'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ResourceStringsShouldBeSpelledCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8103353fc5d2e0d74b5355259f0e2bc77ddd974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0458fa33413023fe9ae2b693a9bf75ffacda706c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890592"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Ciągu zasobu należy zapisywać poprawnie
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Ciągi zasobów, które powinny być zapisane poprawnie
 
 |||
 |-|-|
@@ -38,27 +37,27 @@ Ciąg zasobu zawiera jeden lub więcej wyrazów, które nie są rozpoznane przez
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta zasada analizowania ciągu zasobu w wyrazy (tokenizację wyrazy złożone) i sprawdzając pisownię każdego wyrazu/tokenu. Uzyskać informacji o algorytmie analizy, zobacz [CA1704: identyfikatory powinny być napisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Ta reguła analizuje ciąg zasobu na słowa (tokenizowanie wyrazy złożone) oraz sprawdzając pisownię każdego wyrazu/tokenu. Aby uzyskać informacji na temat analizy algorytmu, zobacz [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
-## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby rozwiązać naruszenie tej reguły, użyj pełnej słowa, które jest poprawna lub dodać wyraz do słownika. Aby uzyskać informacje o sposobie używania niestandardowych słowników, zobacz [CA1704: identyfikatory powinny być napisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Aby naprawić naruszenie tej zasady, użyj kompletne wyrazy, które jest poprawna, lub Dodaj wyrażenie do słownika niestandardowego. Aby uzyskać informacje o sposobie używania słowników niestandardowych, zobacz [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="change-the-dictionary-language"></a>Zmień język słownika
 
-Domyślnie używana wersja angielski (en) przez moduł sprawdzania pisowni. Jeśli chcesz zmienić język sprawdzania pisowni, możesz to zrobić, dodając jedną z następujących atrybutów do Twojej *AssemblyInfo.cs* lub *AssemblyInfo.vb* pliku:
+Domyślnie używany jest język angielski (en) wersję modułu sprawdzania pisowni. Jeśli chcesz zmienić język sprawdzania pisowni, możesz to zrobić, dodając jedną z następujących atrybutów do Twojej *AssemblyInfo.cs* lub *AssemblyInfo.vb* pliku:
 
-- Użyj <xref:System.Reflection.AssemblyCultureAttribute> do określenia kultury, jeśli w zestawie satelickim zasobów.
-- Użyj <xref:System.Resources.NeutralResourcesLanguageAttribute> do określenia *kultury neutralnej* Twojego zestawu, jeśli zasoby są w tym samym zestawie co kodu.
+- Użyj <xref:System.Reflection.AssemblyCultureAttribute> określić kulturę, jeśli Twoje zasoby znajdują się w zestawie satelickim.
+- Użyj <xref:System.Resources.NeutralResourcesLanguageAttribute> do określenia *kultury neutralnej* zestawu w przypadku zasobów z tego samego zestawu, w jakim znajduje się kod.
 
 > [!IMPORTANT]
-> Jeśli ustawisz kultury na inny niż kulturę opartą na język angielski, to reguł analizy kodu dyskretnie jest wyłączona.
+> Jeśli ustawisz kultury na coś innego niż kulturę opartą na język angielski, ten reguł analizy kodu dyskretnie jest wyłączone.
 
-## <a name="when-to-suppress-warnings"></a>Kiedy pomijanie ostrzeżeń
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły. Poprawnie zapisanych słowa skrócić czas, który jest wymagany, aby dowiedzieć się nowe biblioteki oprogramowania.
+Nie pomijaj ostrzeżeń dla tej reguły. Poprawnie właściwej słów skrócić czas, który jest wymagany, aby dowiedzieć się, nowe biblioteki oprogramowania.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
 
 - [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)

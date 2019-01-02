@@ -2,8 +2,7 @@
 title: Błędy aplikacji analizy kodu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -15,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b85aceae00085e27ac766280f686c04adac52a7e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 0be2af5ccfac6e4bf4c3464abd19405e0daf837a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885448"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

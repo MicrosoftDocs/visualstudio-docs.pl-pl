@@ -1,9 +1,6 @@
 ---
 title: IDebugCanStopEvent2::CanStop | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCanStopEvent2::CanStop
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 545d1ea57c207429b7aeb999384b6d5ffbb6c723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab2078a655062e67c7db8c2fe2be7d5472b31dcf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854313"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 Powiadamia aparat debugowania (DE), czy należy zatrzymać w bieżącej lokalizacji kodu lub po prostu kontynuowanie wykonywania.  
@@ -28,13 +25,13 @@ Powiadamia aparat debugowania (DE), czy należy zatrzymać w bieżącej lokaliza
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT CanStop (   
+HRESULT CanStop (   
    BOOL fCanStop  
 );  
 ```  
   
 ```csharp  
-int CanStop (   
+int CanStop (   
    int fCanStop  
 );  
 ```  

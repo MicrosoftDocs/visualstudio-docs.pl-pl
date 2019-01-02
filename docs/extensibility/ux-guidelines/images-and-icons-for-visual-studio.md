@@ -1,9 +1,6 @@
 ---
 title: Obrazy i ikony dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880705"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Użyj obrazu w programie Visual Studio  
@@ -26,7 +23,7 @@ ms.locfileid: "49949401"
   
 -   **Ikony**. Małe obrazy, które pojawiają się w poleceń, hierarchii, szablonów i tak dalej. Domyślny rozmiar ikony używane w programie Visual Studio jest PNG 16 x 16. Automatycznie generowane przez usługę obraz ikony Generowanie formacie XAML obsługi HDPI.  
   
-     **Uwaga:** obrazy są używane w systemie menu, nie należy tworzyć ikony dla każdego polecenia. Zapoznaj się z [menu i poleceń dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) aby zobaczyć, czy polecenie powinna pojawić się ikony.  
+     **UWAGA:** Gdy obrazy są używane w systemie menu, nie należy tworzyć ikony dla każdego polecenia. Zapoznaj się z [menu i poleceń dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) aby zobaczyć, czy polecenie powinna pojawić się ikony.  
   
 -   **Miniatury.** Obrazy używane w obszarze (wersja zapoznawcza) okno dialogowe, takich jak okna dialogowego Nowy projekt.  
   
@@ -387,7 +384,7 @@ ms.locfileid: "49949401"
   
 |||||  
 |-|-|-|-|  
-|![Ikona alertu](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 45_Alert")<br />Zgłoś alert|![Ikona ostrzeżenia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 48_Warning")<br />Ostrzeżenie|![Ikona zakończonego](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 46_Complete")<br />Wykonaj|![Ikona stop](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 47_Stop")<br />Zatrzymywanie|  
+|![Ikona alertu](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 45_Alert")<br />Alerty|![Ikona ostrzeżenia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 48_Warning")<br />Ostrzeżenie|![Ikona zakończonego](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 46_Complete")<br />Wykonaj|![Ikona stop](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 47_Stop")<br />Zatrzymywanie|  
   
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  Ogólnie rzecz biorąc Visual Studio Online zawiera funkcje obsługiwane w przeglądarce. Kolor zmienia się w różnych środowiskach, ale styl pozostają bez zmian.  

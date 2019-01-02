@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929701"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Kontrolowanie koloru, stylu linii i innych właściwości kształtu
-Niektóre właściwości kształtu, takie jak kolor może być "widoczne" - oznacza to, połączony z właściwością domeny kształtu. Inne muszą być kontrolowane bezpośrednio.
+Niektóre właściwości kształtu takich jak kolor może być "widoczne" — oznacza to, połączony z właściwością domeny kształtu. Inne muszą być kontrolowane bezpośrednio.
 
 ## <a name="exposing-a-property"></a>Udostępnianie właściwości
- Niektóre właściwości kształtu, takie jak kolor można powiązać wartości właściwości domeny.
+ Niektóre właściwości kształtu, np. kolor można połączyć wartości właściwości domeny.
 
- W definicji DSL wybierz kształt, łącznik lub diagramu klas. Menu kontekstowe, wybierz **dodać widoczne**, a następnie wybierz pozycję Właściwości, takie jak kolor wypełnienia.
+ W definicji DSL wybierz kształt, łącznika lub diagramu klasy. W jego menu kontekstowym wybierz **Dodaj udostępniane**, a następnie wybierz polecenie Właściwości ma, takich jak kolor wypełnienia.
 
- Kształt ma teraz właściwość domeny można ustawić w kodzie programu lub użytkownik.
+ Kształt ma teraz właściwość domeny, którego można ustawić w kodzie programu, ani jako użytkownik.
 
-## <a name="dynamically-updating-an-exposed-property"></a>Dynamiczne aktualizowanie ujawnionych właściwości
- Zazwyczaj mają być zależna od innej właściwości ujawnionych właściwości. Można na przykład shape do czerwony, gdy właściwość określonej domeny jest mniejsza od zera. Aby ta zależność, Utwórz [reguły](../modeling/rules-propagate-changes-within-the-model.md). Na przykład:
+## <a name="dynamically-updating-an-exposed-property"></a>Dynamiczne aktualizowanie narażonych właściwości
+ Zazwyczaj mają być narażone właściwość zależna od innej właściwości. Można na przykład kształt na czerwony, zawsze wtedy, gdy właściwość określonej domeny jest mniejsza od zera. Aby wprowadzić tę zależność, należy utworzyć [reguły](../modeling/rules-propagate-changes-within-the-model.md). Na przykład:
 
 ```csharp
 using System;

@@ -1,9 +1,6 @@
 ---
 title: Rozwiązywanie problemów z pakietami VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835974"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pakietu VSPackage i porady, aby rozwiązać problemy.  
@@ -53,7 +50,7 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
   
 5. Sprawdź dziennik aktywności.  
   
-    Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
+    Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
   
 6. Aby uzyskać więcej informacji na temat wyjątków zgłaszanych przez środowisko IDE kliknij **wyjątki** na **debugowania** menu, aby włączyć wyjątki. W **wyjątki** okno dialogowe Wybierz typy wyjątków, o których chcesz uzyskać więcej informacji.  
   
@@ -92,7 +89,7 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
   
 2.  Korzystanie z dziennika aktywności.  
   
-     Śledzenie zachowania pakietu VSPackage, zapisując informacje dziennika aktywności w kluczowych punktach. Ta technika jest szczególnie przydatne podczas uruchamiania pakietu VSPackage w środowisku handlu detalicznego. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
+     Śledzenie zachowania pakietu VSPackage, zapisując informacje dziennika aktywności w kluczowych punktach. Ta technika jest szczególnie przydatne podczas uruchamiania pakietu VSPackage w środowisku handlu detalicznego. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Użyj symboli publicznych.  
   

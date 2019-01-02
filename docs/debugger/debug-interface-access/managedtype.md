@@ -1,8 +1,6 @@
 ---
 title: Managedtype — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 486739ae466431397e514d3248857fc606a74d6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888247"
 ---
 # <a name="managedtype"></a>ManagedType
-Typ zarządzany (żadnych symbol zdefiniowany przez metadane lub macierzystego do pamięci i zasobów funkcji zarządzania języków, takich jak C#) jest identyfikowane przez `SymTagManagedType` symbolu.  
+Typ zarządzany (dowolny symbol zdefiniowany przez metadane lub natywnego do funkcji zarządzania w pamięci i zasobów, języków, takich jak C#) jest identyfikowane za pomocą `SymTagManagedType` symboli.  
   
 ## <a name="properties"></a>Właściwości  
  W poniższej tabeli przedstawiono dodatkowe prawidłowe właściwości dla tego typu symbolu.  
   
 |Właściwość|Typ danych|Opis|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nazwa zarządzanego symbolu.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu symboli.|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nazwy symboli zarządzanych.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu: symbolu.|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagManagedType` (jeden z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wartości).|  
   
 ## <a name="see-also"></a>Zobacz też  

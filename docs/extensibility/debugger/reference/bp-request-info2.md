@@ -1,9 +1,6 @@
 ---
 title: BP_REQUEST_INFO2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_REQUEST_INFO2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68bdf873cdd108428ec05bda6429de70a80e71a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dff8744c9f8d25d32697560ab68c98a45e61601e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876305"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 Zawiera informacje wymagane do zaimplementowania punkt przerwania, w tym identyfikator GUID dostawcy, ograniczenia i śledzenia.  
@@ -28,7 +25,7 @@ Zawiera informacje wymagane do zaimplementowania punkt przerwania, w tym identyf
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-typedef struct _BP_REQUEST_INFO2 {  
+typedef struct _BP_REQUEST_INFO2 {  
    BPREQI_FIELDS   dwFields;  
    GUID            guidLanguage;  
    BP_LOCATION     bpLocation;  
@@ -42,11 +39,11 @@ typedef struct _BP_REQUEST_INFO2 {
    GUID            guidVendor;  
    BSTR            bstrConstraint;  
    BSTR            bstrTracepoint;  
-} BP_REQUEST_INFO2;  
+} BP_REQUEST_INFO2;  
 ```  
   
 ```csharp  
-public struct BP_REQUEST_INFO2 {  
+public struct BP_REQUEST_INFO2 {  
    public uint           dwFields;  
    public Guid           guidLanguage;  
    public BP_LOCATION    bpLocation;  
@@ -109,9 +106,9 @@ public struct BP_REQUEST_INFO2 {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

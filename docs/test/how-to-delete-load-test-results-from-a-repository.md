@@ -1,5 +1,5 @@
 ---
-title: 'Porady: usuwanie wyników testu obciążenia z repozytorium'
+title: 'Instrukcje: Usuwanie wyników testu obciążenia z repozytorium'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e2a7df778ff506c76513af6e6fe926a193f6a18e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1165da402fc10f1562155ef6e4aaff25249b17a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846851"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Porady: z wynikami testów obciążeniowych usunięcia z repozytorium
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Instrukcje: Usuwanie wyników testu obciążenia z repozytorium
 
 Po uruchomieniu testu obciążenia, informacje, które zostały zebrane podczas uruchomienia jest przechowywane w repozytorium wyników testów obciążenia. Repozytorium to zawiera dane licznika wydajności oraz informacje o wszelkich błędach. Aby uzyskać więcej informacji, zobacz [w repozytorium wyników testów obciążenia z wynikami testów obciążeniowych Zarządzaj](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -55,7 +54,7 @@ Wyniki testu obciążeniowego można zarządzać z edytora testu obciążenia, u
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: z wynikami testów obciążeniowych eksportu z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Instrukcje: Eksportuj wyniki testu obciążenia z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Porady: Importuj wyniki testu obciążenia z repozytorium](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Instrukcje: Importuj wyniki testu obciążenia z repozytorium](../test/how-to-import-load-test-results-into-a-repository.md)

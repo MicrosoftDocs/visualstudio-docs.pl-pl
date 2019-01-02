@@ -1,9 +1,6 @@
 ---
 title: Ocena Tools for Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 author: gregvanl
@@ -11,164 +8,164 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a149d9163e61dd49105f123b373ecd9c7c1c278
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3167f0243fb723483a5729698a271db854e86cdb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852680"
 ---
-# <a name="evaluation-tools-for-visual-studio"></a>Ocena Tools for Visual Studio
-## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista kontrolna craftsmanship dla programu Visual Studio  
- Ta lista kontrolna umożliwia oceń jakość środowiska użytkownika w szczegóły visual i interakcji.  
+# <a name="evaluation-tools-for-visual-studio"></a>Narzędzi programu Visual Studio
+## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista kontrolna craftsmanship programu Visual Studio  
+ Ta lista kontrolna umożliwia ocenę jakość środowiska użytkownika dla szczegółów wizualizacji i interakcji.  
   
 ### <a name="overview"></a>Omówienie  
   
--   Upewnij się, że wszystkie polecenia skutkować opinii informujący użytkowników, czy przeprowadzono ich poleceń.  
+-   Upewnij się, że wszystkie polecenia spowoduje opinie, które informuje użytkowników przeprowadzane ich poleceń.  
   
--   Sprawdź, czy wszystkie elementy interfejsu użytkownika i kontrolek są widoczne w wszystkie motywy oraz w trybie dużego kontrastu.  
+-   Sprawdź, czy wszystkie elementy interfejsu użytkownika i formanty są widoczne w wszystkie motywy oraz w trybie dużego kontrastu.  
   
--   Upewnij się, że wybór stanem nieaktywnym i aktywnym zawsze są zróżnicowane, zarówno w trybie dużego kontrastu, jak i standard.  
+-   Upewnij się, że wybór nieaktywne i aktywne zawsze są zróżnicowane, zarówno w wersjach standard i trybu wysokiego kontrastu.  
   
--   Sprawdź, czy fokus jest zawsze widoczne i oczywista.  
+-   Sprawdź, że fokus jest zawsze widoczny i jawnego.  
   
 ### <a name="performance"></a>Wydajność  
   
--   Sprawdź, czy niektóre rodzaju "zajęty" wskaźnika jest wyświetlany, jeśli polecenie ma więcej niż jednej sekundy do ukończenia.  
+-   Sprawdź, niektóre rodzaju "zajęty" wskaźnik jest wyświetlany, jeśli polecenie ma więcej niż jedna sekunda, aby zakończyć.  
   
--   Sprawdź, czy polecenie ma więcej niż 10 sekund, pasek postępu jawne, albo określania (preferowane) lub nieokreślony, jest wyświetlana.  
+-   Sprawdź, czy polecenie ma więcej niż 10 sekund, pasek postępu jawne, albo określony (preferowany) lub niejasnego, jest wyświetlany.  
   
 ### <a name="ui-text"></a>Tekst interfejsu użytkownika  
   
--   Sprawdź, czy pisownia tytułów lub zdaniu wszystkich etykiet i że nie został tekst wyłącznie małe litery.  
+-   Sprawdź, czy wszystkie etykiety case zdania lub tytuł, a nie tekst wyłącznie małe litery.  
   
     ||Popraw|Niepoprawne|  
     |-|-------------|---------------|  
-    |**Tekst polecenia, (wszystkie wersje)**|Zdaniu:<br /><br /> **Nazwa katalogu:**|Nazwa katalogu:|  
-    |**Tekst przycisku (klient)**|Wielkość liter:<br /><br /> **[Ustaw jako domyślny]**|USTAW JAKO DOMYŚLNY|  
-    |**Tekst przycisku (online)**|Zdaniu:<br /><br /> **Ustaw jako domyślny]**||  
+    |**Tekst polecenia, (wszystko)**|Jak w zdaniu:<br /><br /> **Nazwa katalogu:**|Nazwa katalogu:|  
+    |**Tekst przycisku (klient)**|Wielkimi literami:<br /><br /> **[Ustaw jako domyślną]**|USTAW JAKO DOMYŚLNE|  
+    |**Tekst przycisku (online)**|Jak w zdaniu:<br /><br /> **Ustaw jako domyślny]**||  
   
--   Sprawdź, czy wszystkie etykiety, z wyjątkiem nagłówka grupy i przyciski, się kończyć dwukropkiem, a poprzedzać formantu, z którym są skojarzone.  
+-   Sprawdź, czy wszystkie etykiety, z wyjątkiem nagłówków grup i przycisków, kończyć dwukropkiem, a następnie poprzedzać kontrolkę, z którą są skojarzone.  
   
--   Sprawdź, czy przycisków, poleceń i łączy polecenia Uruchom interfejs użytkownika do przechwycenia danych wejściowych użytkownika kończy się wielokropek **[...]** .  
+-   Sprawdź, czy przyciski, polecenia i linki polecenia, które Uruchom interfejs użytkownika do przechwycenia danych wejściowych użytkownika kończy się wielokropek **[...]** .  
   
      Przykłady:  
   
-    -   **[Zaawansowane...]**  przycisk w oknie dialogowym.  
+    -   **[Zaawansowane...]**  przycisku w oknie dialogowym.  
   
-    -   Opcje polecenia w menu Narzędzia (**Narzędzia > Opcje**) nie powinno być wyświetlane wielokropek, ponieważ uruchamianie się okno dialogowe jest celem polecenia.  
+    -   Opcje polecenia w menu Narzędzia (**Narzędzia > Opcje**) nie powinno być wyświetlane wielokropek, ponieważ uruchomienie okna dialogowego, sama jest celem polecenia.  
   
--   Sprawdź, czy interfejs użytkownika zawiera nie skrótów, oprócz standardowych warunków. Na przykład HTML ani TCP/IP muszą być pisane, chociaż za mało pamięci (mało pamięci) i dane osobowe (dane osobowe) powinny.  
+-   Sprawdź, czy interfejs użytkownika zawiera nie skróty, z wyjątkiem warunków będące standardami branżowymi. Na przykład HTML ani TCP/IP nie trzeba województw, chociaż za mało pamięci (mało pamięci) oraz dane osobowe (identyfikowalne dane osobowe) należy.  
   
 ### <a name="keyboard-access"></a>Dostęp za pomocą klawiatury  
   
--   Sprawdź, czy istnieje sposób wykonywania poszczególnych zadań za pomocą klawiatury. Zwykle odbywa się za pomocą klawiatury dostępu dla każdego formantu, ale niektóre wizualnymi obszarów jest dopuszczalne obejście, takich jak przechodzenie do widoku kodu.  
+-   Sprawdź, czy jest to sposób wykonania poszczególnych zadań za pomocą klawiatury. Zazwyczaj jest to realizowane za pośrednictwem dostęp za pomocą klawiatury dla każdego formantu, ale niektóre bogatego obszarów jest dopuszczalne obejście tego problemu, takie jak przechodzenie do widoku kodu.  
   
--   Upewnij się, że można przełączać się między formantów w logiczną kolejnością (od lewej do prawej i góry do dołu). Jest to najlepsze rozwiązanie dla większości formantów, nie wszystkie formanty wymagają tej metody. Na przykład sprawdzić tego przycisku radiowego, który formanty znajdują się w grupie z tabulatorów.  
+-   Upewnij się, że można przełączać się między kontrolek w logicznej kolejności (od lewej do prawej i od góry do dołu). Jest to najlepsze rozwiązanie dla większości kontrolek, nie wszystkie formanty wymagają tego podejścia. Sprawdź na przykład, ten przycisk radiowy, które kontrolki znajdują się w grupie za pomocą tabulatorów.  
   
--   Sprawdź, czy wszystkie formanty miały etykiety, a każda etykieta ma wartość (wyjątków należą niektóre formanty etykietą, które może skorzystać z etykietą kontrolki na karcie).  
+-   Sprawdź, że wszystkie formanty etykiet, a każda etykieta ma wartość (wyjątki obejmuje niektóre-etykietą kontrolki, które może skorzystać z etykietami kontroli na karcie).  
   
--   Sprawdź, czy nie występują żadne konflikty skrótu.  
+-   Sprawdź, czy nie występują żadne konflikty mnemoników.  
   
 ### <a name="fonts"></a>Czcionki  
   
--   Sprawdź, czy wszystkie czcionki (krój, rozmiar, kolor) są zawsze używane i Obsługa hierarchii.  
+-   Sprawdź, czy wszystkie czcionki (rozpoznawania twarzy, rozmiar, kolor) są stosowane konsekwentnie i Obsługa hierarchii.  
   
--   Sprawdź, czy wszystkie elementy interfejsu użytkownika używają środowiska usługi czcionki. (Zobacz [czcionek i formatowania dla programu Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md))  
+-   Sprawdź, czy wszystkie elementy interfejsu użytkownika korzystają z usługi czcionka środowiska. (Zobacz [czcionki i formatowanie dla programu Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md))  
   
-     Aby sprawdzić, czy usługa jest używana, przejdź do **Narzędzia > Opcje > czcionki i kolory**. Na liście rozwijanej Ustawienia czcionki środowiska i zmienić krój czcionki do stylistically inny (na przykład Comic sieci SAN lub Mochnacki) lub ustaw rozmiar na 12 punktów. Kliknij przycisk OK. Może być konieczne ponowne uruchomienie IDE, ale większość interfejsu użytkownika zmieni się natychmiast. Obszary, które nie należy zbierać zmiana czcionki, nawet w przypadku ponownego uruchomienia nie są przy użyciu czcionki środowiska.  
+     Aby sprawdzić, jeśli usługa jest używana, przejdź do **Narzędzia > Opcje > czcionki i kolory**. Na liście rozwijanej Ustawienia wybierz czcionkę środowiska Zmień krój czcionki stylistically inny (na przykład Mochnacki lub sieci SAN Comic) i ustaw rozmiar do 12 (czas pacyficzny). Kliknij przycisk OK. Może być konieczne ponowne uruchomienie środowiska IDE, ale większość interfejsu użytkownika zmieni się natychmiast. Obszary, nie należy zbierać zmiana czcionki, nawet w przypadku ponownego uruchomienia, które nie korzystają z czcionka środowiska.  
   
--   Sprawdź, czy czcionek, które są zależnych usługi (na przykład tekst pogrubieniem lub rozszerzonej) zachowania ich rozmiar i formatowanie względem tekstu "normal", gdy zmienia się rozmiar czcionki środowiska.  
+-   Upewnij się, że czcionek, które są pochodną usługi (na przykład tekst pogrubiony lub rozszerzonej) zachowują ich rozmiar i formatowania w odniesieniu do tekstu "normal", po zmianie rozmiaru czcionki w środowisku.  
   
--   Sprawdź, czy nie występują żadne błędy wycinka z powodu rozszerzonej czcionki. Czcionki, które uzyskać przycięte prawdopodobnie są wynikiem stałą wysokość formantów lub kontenery stałą wysokość.  
+-   Upewnij się, że nie błędy wycinka z powodu rozszerzonej czcionki. Czcionki, które Pobierz przycięte prawdopodobnie są wynikiem stałą wysokość kontrolek lub stałą wysokość kontenerów.  
   
 ### <a name="dialogs"></a>Okna dialogowe  
   
--   Sprawdź, czy tytuł okna dialogowego jest taka sama jak polecenia, który go uruchomić.  
+-   Sprawdź, czy tytuł okna dialogowego jest taka sama jak polecenia, który go uruchomił.  
   
--   Sprawdź, czy wszystkie formanty standardowe są zgodne z systemem operacyjnym: kolor tła jest standardowe i żadne formanty nie powinna mieć stylu szablonem ponowna specjalne są wyświetlane różne od formantów standardowych.  
+-   Sprawdź, czy wszystkie formanty standardowe są zgodne z systemem operacyjnym: kolor tła jest standardowy i brak kontrolek powinien mieć specjalne styl z szablonem re, który sprawia, że będą pojawiać się różni się od standardowych kontrolek.  
   
--   Sprawdź, czy marginesy w formularzu powinny być 12 pikseli i powinna zostać wyświetlona uniform i spójny.  
+-   Sprawdź, czy marginesy w formularzu powinny być 12 pikseli, a powinien zostać wyświetlony jednolite i spójne.  
   
--   Sprawdź, czy okna dialogowe są wyświetlane wyśrodkowany w powłoce programu IDE lub okna zduplikowany je.  
+-   Sprawdź, czy wyśrodkowany w powłoce środowiska IDE lub okno, które je zduplikowany okien dialogowych.  
   
--   Gdy jest to przydatne, okna dialogowe powinna być o zmiennym rozmiarze. W oknach dialogowych, które są o zmiennych rozmiarach Sprawdź, czy po zmianie rozmiaru, kontrole należy zmienić rozmiar, podczas gdy inne części okna dialogowego pozostają takie same.  
+-   Gdy jest to przydatne, okna dialogowe powinna być o zmiennym rozmiarze. W oknach dialogowych, które są o zmiennym rozmiarze Sprawdź, czy po zmianie rozmiaru kontrole należy zmienić rozmiar, podczas gdy inne części okna dialogowego pozostał bez zmian.  
   
--   Upewnij się, że rozmiar okna dialogowe utrwalić dowolnej wielkości dostosowane przez użytkownika (rozmiar, lokalizacji, rozszerzenia formantów okna dialogowego i tak dalej).  
+-   Sprawdź, czy o zmiennym rozmiarze w oknach dialogowych utrwalić dowolnej wielkości dostosowane przez użytkownika (rozmiar, lokalizację, rozszerzenia formantów okna dialogowego i tak dalej).  
   
--   Sprawdź, czy jest brak ikony na pasku tytułu.  
+-   Sprawdź, czy brak ikony na pasku tytułu.  
   
--   Sprawdź, że nie ma żadnych przyciski na pasku tytułu.  
+-   Upewnij się, że nie przyciski na pasku tytułu.  
   
-#### <a name="dialog-operation-buttons-vs-client-only"></a>Okno dialogowe operacji przycisków (tylko klient VS)  
+#### <a name="dialog-operation-buttons-vs-client-only"></a>Okno dialogowe operacji przycisków (tylko w przypadku klienta programu VS)  
   
--   Sprawdź, czy operacja przycisków w następującej kolejności: **OK**, **anulować**, **Zastosuj**.  
+-   Sprawdź, czy przyciski operacji w podanej kolejności: **OK**, **anulować**, **zastosować**.  
   
--   Sprawdź, czy **OK** i **anulować** przyciski są standardowy rozmiar: 75 x 23 pikseli.  
+-   Upewnij się, że **OK** i **anulować** przyciski są standardowy rozmiar: 75 x 23 pikseli.  
   
--   Sprawdź, czy **OK** i **anulować** przyciski mają taki sam rozmiar niezależnie od długości ciągu.  
+-   Upewnij się, że **OK** i **anulować** przyciski są w taki sam rozmiar, niezależnie od długości ciągu.  
   
--   Jeśli etykieta przycisku operacja wymaga przycisku za większy niż standardowe, upewnij się, że odpowiednie **anulować** przycisk jest taki sam rozmiar.  
+-   Jeśli etykieta na przycisku operacja wymaga przycisk za większy niż standardowe, upewnij się, że odpowiednie **anulować** przycisk jest taki sam rozmiar.  
   
--   Sprawdź, czy jest uzupełnienie 6 pikseli między przycisków i skojarzonych formantów.  
+-   Sprawdź, czy uzupełnienie 6 pikseli, między przycisków i skojarzonych formantów.  
   
--   Sprawdź, czy **OK** i **anulować** przyciski nie mają mnemonik (klucze dostępu zdefiniowanych przez podkreślona litera).  
+-   Upewnij się, że **OK** i **anulować** przyciski nie mają mnemonik (klucze dostępu zdefiniowane przez podkreślona litera).  
   
--   Sprawdź, że jeden z przycisków (zazwyczaj **OK**) domyślnie ma fokus.  
+-   Sprawdź, że jeden przycisk (zazwyczaj **OK**) domyślnie ma fokus.  
   
--   Sprawdź, czy **Esc** anuluje okna dialogowego  
+-   Upewnij się, że **Esc** anuluje okna dialogowego  
   
--   Sprawdź, czy **Enter** wykonuje przycisk domyślny, jeśli fokus nie jest formant, który przetwarza Enter.  
+-   Upewnij się, że **Enter** przycisk domyślny jest wykonywany, jeśli zespół nie znajduje się w formant, który przetwarza Enter.  
   
--   Sprawdź, czy **OK** i **anulować** przycisków znajdują się w prawym dolnym rogu okna dialogowego. W rzadkich wyjątki dopuszczalne jest dla nich być ułożone pionowo w prawym górnym rogu.  
+-   Upewnij się, że **OK** i **anulować** przyciski są umieszczone w prawym dolnym rogu okna dialogowego. W wyjątkowych przypadkach jest dopuszczalna być ułożone pionowo w prawym górnym rogu.  
   
--   Sprawdź, czy pionowy konfiguracji jest używany tylko wtedy, gdy inne przyciski w wyrównanie w poziomie w oknie dialogowym.  
+-   Sprawdź, czy pionowy jest ona używana tylko wtedy, gdy inne przyciski znajdują się w wyrównanie w poziomie w oknie dialogowym.  
   
-### <a name="control-standards"></a>Standardy formantu  
+### <a name="control-standards"></a>Standardy kontroli  
   
 #### <a name="general"></a>Ogólne  
   
--   Sprawdź, czy, jeśli to możliwe, wartości domyślne dobrej aby przyspieszyć interakcji z użytkownikiem i poinstruować użytkowników kierunku wyniku wspólnej lub sejfie.  
+-   Sprawdź, czy, jeśli to możliwe, wartości domyślne dobre, aby przyspieszyć interakcji z użytkownikiem i poinstruować użytkowników kierunku wynik bezpiecznych lub wspólnej.  
   
--   Sprawdź, czy formanty standardowe działają tak samo, tak aby użytkownicy wiedzieli, co się stanie, na podstawie doświadczeń wcześniejszych.  
+-   Upewnij się, że standardowych kontrolek działają tak samo, tak aby użytkownicy wiedzieli, co się stanie, na podstawie wcześniejszych doświadczeń.  
   
-#### <a name="label-controls"></a>Etykieta kontrolki  
+#### <a name="label-controls"></a>Formanty etykiet  
   
--   Sprawdź, czy każdego formantu ma etykietę, oraz czy każda etykieta będzie łączyć się z jego kontrolą (zazwyczaj w zakresie pikseli 4 – 6) i jest bliżej niż jego odpowiedniego formantu do innych kontrolek.  
+-   Sprawdź, czy każda kontrolka ma etykietę, i czy każda etykieta wizualnie wraz z jego sterowania (zazwyczaj w zakresie pikseli 4 – 6), a następnie znajduje się bliżej niż jego odpowiedni formant do innych kontrolek.  
   
--   Sprawdź, czy etykiety są rozmieszczone opróżnić lewej za pomocą formantu lewej krawędzi, jeśli znajduje się powyżej i wyśrodkowany w poziomie, dlatego, że linia bazowa etykiety jest wyrównany z linią bazową elementu wejściowego tekstu, jeśli znajduje się po lewej stronie.  
+-   Sprawdź, czy etykiety są rozmieszczone opróżnić po lewej stronie, za pomocą kontrolki lewej krawędzi, jeśli jest umieszczana powyżej i wyśrodkowane w poziomie, dzięki czemu linii bazowej etykiety jest wyrównana z linią bazową elementu wejściowego tekstu, jeśli umieszczony po lewej stronie.  
   
--   Sprawdź, czy jeśli kilka skumulowany etykiety i kontrolki wejściowe są pozycjonowane do lewego rogu formantu, etykiety jest wyrównany do lewej oraz samej odległości od krawędzi okna dialogowego, nigdy nie opróżnić prawo i samej odległości od formantów. Pary powinny rozmieszczana równomiernie, o ile nie potrzebują dodatkowych odstępów wskazująca grupowania.  
+-   Sprawdź, czy w przypadku kilku skumulowany etykiety i formanty wejściowe są umieszczone po lewej stronie kontrolki, etykiety jest wyrównany do lewej, a odległości od krawędzi okna dialogowego, nigdy nie opróżniania po prawej stronie i odległości od kontrolek. Pary powinny równomiernie rozłożony, chyba że potrzebują dodatkowych odstępów, aby wskazać grupowania.  
   
 #### <a name="input-controls-text-boxes-and-combo-boxes"></a>Kontrolki wejściowe (pola tekstowe i pola kombi)  
   
--   Sprawdź, czy podczas korzystania z domyślnej czcionki środowiska, wysokość ekranu dla pól tekstowych, pól kombi i przyciski są wszystkie piksele 23.  
+-   Sprawdź, czy korzystając z domyślną czcionkę środowiska, wysokość wyświetlaną dla pola tekstowe, pola kombi i przyciski wszystkie piksele 23.  
   
--   Jeśli używane jest tekst podpowiedzi, sprawdź, czy kolor ma ustawioną `Environment.ControlEditHintText` przy użyciu usługi kolorów.  
+-   Jeśli jest używany tekst wskazówki, sprawdź, czy jest ustawiony kolor `Environment.ControlEditHintText` przy użyciu usługi kolorów.  
   
 -   Jeśli pole jest wymagane pola, które muszą być określone jako takie, sprawdź:  
   
-    -   tło jest ustawiona `Environment.ControlEditRequiredBackground` i ma ustawioną wartość pierwszego planu `Environment.ControlEditRequiredHintText`  
+    -   tło ustawioną na `Environment.ControlEditRequiredBackground` i ustawiono pierwszego planu `Environment.ControlEditRequiredHintText`  
   
-    -   Brak tekstu podpowiedzi wewnątrz formantu, który jest wyświetlany jako **"\<wymagany >"**  
+    -   czy jest tekst wskazówki w kontrolce, która jest wyświetlana jako **"\<wymagane >"**  
   
 #### <a name="button-controls"></a>formanty przycisków  
   
--   Sprawdź, czy przyciski minimalny rozmiar 75 x 23 pikseli, chyba że obsługa dłużej tekstu.  
+-   Sprawdź, czy przyciski minimalny rozmiar 75 x 23 pikseli, chyba że ograniczanych dłużej tekstu.  
   
--   Sprawdź, czy przyciski jeszcze, a następnie kliknij prawym przyciskiem myszy marginesy 3 – 5 pikseli, a także uzupełnienie zawartości.  
+-   Sprawdź, czy przyciski zostały lewą i prawą marginesy 3 – 5 pikseli, a także dopełnienie zawartości.  
   
--   Można używać małych kwadratowym przycisku tylko osoba lub grupa **[...]**  na nim zamiast **[Przeglądaj]**  przycisk (lub podobne funkcje). Jeśli używana, sprawdź przycisk 23 x 23 rozmiar.  
+-   Dopuszcza się mały kwadratowy przycisk za pomocą tylko wielokropek **[...]**  na nim zamiast **[Przeglądaj …]**  przycisk (lub podobne funkcje). Jeśli używane, sprawdź, czy przycisk jest 23 x 23 rozmiar.  
   
--   Jeśli istnieje więcej niż jeden **[Przeglądaj]**  przycisk w oknie dialogowym, a następnie sprawdź, czy skróconej wersji (tylko do wielokropka **[...]** ) jest używany w przypadku wszystkich.  
+-   Jeśli istnieje więcej niż jedna **[Przeglądaj …]**  znajdujący się w oknie dialogowym, a następnie upewnij się, że wersja (tylko do wielokropka **[...]** ) jest używane dla wszystkich.  
   
--   Sprawdź, że wielokropka **[...]**  przyciski nie mają wartość. Gdy fokus jest ustawiony na kontrolki wprowadzania obok siebie, jedna karta powinien Przenieś fokus na przycisk wielokropka.  
+-   Sprawdź, że wielokropka **[...]**  przyciski nie mają wartość. Gdy fokus jest ustawiony na kontrolki wprowadzania obok niej, jednej karty powinny Przenieś fokus do przycisku wielokropka.  
   
--   Sprawdź, czy przycisków, poleceń i łączy polecenia Uruchom dodatkowej interfejs użytkownika, który przechwytuje więcej danych wejściowych użytkownika musi kończyć się wielokropek **[...]** .  
+-   Sprawdź, czy przyciski, polecenia i linki polecenia, które Uruchom pomocniczy interfejs użytkownika, który przechwytuje dane wejściowe użytkownika więcej może kończyć się wielokropek **[...]** .  
   
 #### <a name="hyperlinks"></a>Hiperłącza  
   
--   Sprawdź, czy formant hiperłącza nigdy nie pojawi się na chwilę czerwony, gdy jest aktywny. Jest to wskaźnik koloru usługi nie jest używana  
+-   Upewnij się, że kontrolki hiperlinku nigdy nie pojawi się czerwony, gdy jest ona aktywna. Jest to wskaźnik usługi kolorów nie jest użycie  
   
 -   Sprawdź, czy kolory programu VS, używane są:  
   
@@ -178,48 +175,48 @@ ms.locfileid: "31147336"
   
     -   `Environment.ControlLinkTextPressed`  
   
--   Sprawdź, czy hiperłącza kolorze niebieskim z bez podkreślenia, chyba że osadzonych akapitu.  
+-   Sprawdź, czy hiperłącza niebieski podkreślony nie, chyba że osadzony w akapicie.  
   
-#### <a name="check-boxes"></a>Zaznaczanie pól  
+#### <a name="check-boxes"></a>Pola wyboru  
   
--   Jeśli pole wyboru ma wiele wierszy tekstu, sprawdź, czy pole wyrównana z pierwszego wiersza tekstu nie wyśrodkowane w pionie w obrębie wszystkich wierszy.  
+-   Jeśli pole wyboru ma tekstu wielowierszowego, sprawdź, czy pole jest wyrównywany z pierwszego wiersza tekstu, nie wyśrodkowane w pionie w obrębie wszystkich wierszy.  
   
--   Sprawdź, czy pola wyboru zawsze wskazywać binarne wyboru i nie użytkownik lub Otwórz nowe okno lub strony.  
+-   Sprawdź, czy pola wyboru zawsze wskazywać charakter binarne i nie użytkownik lub otwieranie nowych okien lub stron.  
   
--   Jeśli pole wyboru opcji związanych z kontrolki wprowadzania, sprawdź, czy jest umieszczony opróżnić po lewej i bardzo Zamknij pod kontrolą tego wskazująca jego relacji.  
+-   Jeśli pole wyboru opcji związanych z kontrolkę wejściową, sprawdź, czy jest umieszczony opróżnić z lewej i bardzo blisko w ramach tej kontrolki, aby wskazać jej relacji.  
   
--   Sprawdź, czy pole wyboru jest **nigdy nie** używane jako środek do włączania całą zawartość okna dialogowego lub strony.  
+-   Sprawdź, czy pole wyboru jest **nigdy nie** jako środek umożliwiają całą zawartość okna dialogowego lub strony.  
   
 #### <a name="group-boxes"></a>Pola grupy  
   
--   Sprawdź, czy okno dialogowe zawiera pole o pojedynczej grupy, w jego zawierający całą zawartość okna dialogowego.  
+-   Sprawdź, czy okno dialogowe zawiera pole pojedynczej grupy znajdujący się w nim, który zawiera całą zawartość okna dialogowego.  
   
--   Sprawdź, czy masz co najmniej dwóch formantów w każdym polu grupy.  
+-   Upewnij się, że co najmniej dwóch kontrolek w obrębie każdego pola grupy.  
   
 -   Rzadko powinny istnieć więcej niż dwa pola grupy w oknie dialogowym.  
   
--   Sprawdź, że nie ma żadnych grup zagnieżdżonych pól.  
+-   Upewnij się, że nie zagnieżdżone pola grupy.  
   
 ### <a name="icons"></a>Ikony  
   
--   Sprawdź, czy ikony są wyświetlane poprawnie odwrócony w przypadku ciemnego motywu.  
+-   Sprawdź, czy ikony są wyświetlane poprawnie odwróconą w ciemnego motywu.  
   
--   Upewnij się, że wszystkie ikony są oparte na podstawowe koncepcje.  
+-   Upewnij się, że wszystkie ikony opierają się na podstawowych pojęć.  
   
--   Sprawdź, czy ikona każdej distinct, łatwe do rozpoznania i nie zawiera więcej niż dwa pojęcia (bez modyfikatora stan/język).  
+-   Sprawdź, czy każda ikona distinct, łatwa do rozpoznania i nie zawiera więcej niż dwoma pojęciami (bez stanu modyfikator/język).  
   
--   Sprawdź, czy podstawowy pojawi się ikona wyśrodkowane w obszarze.  
+-   Sprawdź, czy ikona podstawowej znajduje się wyśrodkowane w obszarze.  
   
 -   Sprawdź, czy wszystkie ikony są wyświetlane w trybie dużego kontrastu do odczytania.  
   
--   Sprawdź, czy żadnych kolor używany wyrównana z normami użycia kolorów.  
+-   Upewnij się, każdy kolor używany jest wyrównywany z normami użycia kolor.  
   
--   Sprawdź, czy nie występują żadne otoczek (obramowanie) wokół ikon. (Jeśli jest obecny, otoczki powinna odpowiadać kolor tła sąsiadujących interfejsu użytkownika).  
+-   Upewnij się, że nie otoczki (obramowanie) wokół ikon. (Jeśli jest obecny, obwódki powinna odpowiadać kolor tła sąsiadujących interfejsu użytkownika).  
   
-### <a name="touch-enabled-ui"></a>Dotykowe interfejsu użytkownika  
+### <a name="touch-enabled-ui"></a>Interfejs użytkownika z obsługą dotykową  
   
--   Sprawdź, czy interaktywnych kontrolek są wystarczająco duże, aby można łatwo touchable — minimalna **pikseli 23 x 23** rozmiaru  
+-   Sprawdź, czy kontrolki interaktywne wystarczająco duży, aby był łatwo touchable — minimalna **pikseli 23 x 23** rozmiaru  
   
--   Sprawdź, czy formanty najczęściej używane są co najmniej **40 40 pikseli** rozmiar.  
+-   Sprawdź, czy są najczęściej używane kontrolki co najmniej **40 40 pikseli** rozmiar.  
   
--   Sprawdź, czy interaktywnych kontrolek mają co najmniej **5 pikseli odstępy** między nimi
+-   Sprawdź, czy kontrolki interaktywne mają co najmniej **5 pikseli odstępy** między nimi

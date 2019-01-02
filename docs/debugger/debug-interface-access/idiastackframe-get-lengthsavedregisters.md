@@ -1,8 +1,6 @@
 ---
 title: Idiastackframe::get_lengthsavedregisters — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5399f43fcbed203e6841980886a9ad857940df33
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d107ab752ba2038cd0d658ac6b0785f09e454a2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935752"
 ---
 # <a name="idiastackframegetlengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
 Pobiera liczba bajtów zapisanych rejestrów wypychane na stos.  
@@ -27,7 +25,7 @@ Pobiera liczba bajtów zapisanych rejestrów wypychane na stos.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_lengthSavedRegisters (   
+HRESULT get_lengthSavedRegisters (   
    DWORD* pRetVal  
 );  
 ```  

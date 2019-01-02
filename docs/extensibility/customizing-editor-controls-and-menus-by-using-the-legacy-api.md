@@ -1,9 +1,6 @@
 ---
 title: Dostosowywanie menu i formantów w edytorze za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - controls and menus
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 30e30bd1ce04c6a554aa1ab737e4c8d7c36163da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851264"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Dostosowywanie formantów w edytorze i Mmenus przy użyciu starszej wersji interfejsu API
 Usługa języka lub widoku tekstu można kontrolować menu kontekstowe i formantów w edytorze. Strony w tej sekcji zawierają szczegółowe instrukcje dotyczące korzystania z tych funkcji.  
@@ -33,7 +30,7 @@ Usługa języka lub widoku tekstu można kontrolować menu kontekstowe i formant
  [Menu kontekstowe](../extensibility/context-menus.md)  
  W tym artykule opisano menu kontekstowe edytora.  
   
- [Porady: aktualizowanie paska stanu](../extensibility/how-to-update-the-status-bar.md)  
+ [Instrukcje: Aktualizacja paska stanu](../extensibility/how-to-update-the-status-bar.md)  
  Zawiera instrukcje dotyczące aktualizowania **pasek stanu**.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

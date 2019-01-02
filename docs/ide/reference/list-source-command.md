@@ -2,7 +2,6 @@
 title: Lista źródeł — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Debug.ListSource
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a5d0699fced4d01d439942081b359454bcf476
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7a94af10921c80b87b7d53f0f587aaf9ca55b22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850365"
 ---
 # <a name="list-source-command"></a>Lista źródeł — Polecenie
-Wyświetla określony wiersze kodu źródłowego.
+Wyświetla określone linie kodu źródłowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,24 +37,24 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 
  Opcjonalna. Określa liczbę wierszy do wyświetlenia.
 
- / Bieżącym
+ / Bieżąca
 
- Opcjonalna. Pokazuje bieżącego wiersza.
+ Opcjonalna. Pokazuje bieżący wiersz.
 
- / Plik:`filename`
+ / Pliku:`filename`
 
  Opcjonalna. Ścieżka pliku do wyświetlenia. Jeśli nazwa pliku nie zostanie określony, polecenie wyświetla kod źródłowy dla wiersza bieżącej instrukcji.
 
- / Wiersz:`number`
+ / Linii:`number`
 
- Opcjonalna. Pokazuje liczbę określonego wiersza.
+ Opcjonalna. Pokazuje określonego numeru wiersza.
 
  / ShowLineNumbers:`yes|no`
 
- Opcjonalna. Określa, czy do wyświetlania numerów wierszy.
+ Opcjonalna. Określa, czy wyświetlanie numerów wierszy.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie przedstawiono kodu źródłowego z wiersza 4 pliku Form1.vb, numery wierszy są widoczne.
+ W tym przykładzie przedstawiono kod źródłowy z wiersz 4 pliku Form1.vb, za pomocą widoczne numery wierszy.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

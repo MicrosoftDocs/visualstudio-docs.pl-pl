@@ -2,7 +2,6 @@
 title: Zestaw reguł Native Minimum Rules
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd988bae2f9fd2776785202a1e632735f989f7ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845489"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Zestaw reguł Native Minimum Rules
 Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemów w kodzie natywnym, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów natywnych.
@@ -70,7 +69,7 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |[C6518](../code-quality/c6518.md)|Rozmiar obszaru do zapisu dla bufora bez możliwości zapisu|
 |[C6522](../code-quality/c6522.md)|Nieprawidłowy typ ciągu rozmiaru|
 |[C6525](../code-quality/c6525.md)|Nieosiągalna lokalizacja ciągu nieprawidłowy rozmiar|
-|[C6527](../code-quality/c6527.md)|Nieprawidłowa adnotacja: właściwość "NeedsRelease" nie może być używana dla wartości typu void|
+|[C6527](../code-quality/c6527.md)|Nieprawidłowa adnotacja: Właściwość "NeedsRelease" nie może być używana dla wartości typu void|
 |[C6530](../code-quality/c6530.md)|Nierozpoznany styl ciągu formatu|
 |[C6540](../code-quality/c6540.md)|Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec|
 |[C6551](../code-quality/c6551.md)|Nieprawidłowa specyfikacja rozmiaru: nie można przeanalizować wyrażenia|
@@ -147,7 +146,7 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |[C28286](../code-quality/c28286.md)|Dla funkcji, błąd składni w pobliżu końca|
 |[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składni w \_na\_adnotacji () (Nierozpoznana nazwa parametru)|
 |[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w \_na\_adnotacji () (Nieprawidłowa nazwa parametru)|
-|[C28289](../code-quality/c28289.md)|Dla funkcji: elementy ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru|
+|[C28289](../code-quality/c28289.md)|Dla funkcji: Elementy ReadableTo lub WritableTo nie miał elementu limit-spec jako parametru|
 |[C28290](../code-quality/c28290.md)|Adnotacja dla funkcji zawierających więcej obiektów zewnętrznych niż rzeczywista liczba parametrów|
 |[C28291](../code-quality/c28291.md)|Post null/notnull na poziomie deref 0 jest bez znaczenia dla funkcji.|
 |[C28300](../code-quality/c28300.md)|Argumenty operacji wyrażenia o niezgodnych typach dla operatora|

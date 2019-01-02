@@ -1,8 +1,7 @@
 ---
-title: CA1713 Zdarzenia nie powinny posiadać prefiksów Before ani After
+title: CA1713 Zdarzenia nie powinny mieć prefiksu before ani after
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - EventsShouldNotHaveBeforeOrAfterPrefix
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c868b1d061fb65f20a43119ca7a2d50416d425a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5133cf03567eabab9eea95b7fadc52304a1d7c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890751"
 ---
-# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713 Zdarzenia nie powinny posiadać prefiksów Before ani After
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713 Zdarzenia nie powinny mieć prefiksu before ani after
 
 |||
 |-|-|

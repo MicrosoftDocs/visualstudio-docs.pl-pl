@@ -1,9 +1,6 @@
 ---
 title: IDebugCoreServer2::EnumPortSuppliers | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer2::EnumPortSuppliers
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97575ebf233cf959ab7a49d50a6e0b8ac1453e08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f16e49aada72c9f238a574f6191b9800f77258a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892809"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 Pobiera listę wszystkich dostawców dostępny port.  
@@ -28,14 +25,14 @@ Pobiera listę wszystkich dostawców dostępny port.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT EnumPortSuppliers(  
-   IEnumDebugPortSuppliers2** ppEnum  
+HRESULT EnumPortSuppliers(  
+   IEnumDebugPortSuppliers2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumPortSuppliers(  
-   out IEnumDebugPortSuppliers2 ppEnum  
+int EnumPortSuppliers(  
+   out IEnumDebugPortSuppliers2 ppEnum  
 );  
 ```  
   

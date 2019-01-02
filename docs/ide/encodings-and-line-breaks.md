@@ -2,7 +2,6 @@
 title: Kodowanie i wiersz znaków podziału
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -19,22 +18,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 11a70e214362d61fa54e83182bec7cc128905b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847704"
 ---
 # <a name="encodings-and-line-endings"></a>Końce kodowania i wiersza
 
 Następujące znaki są interpretowane jako podziały wierszy w programie Visual Studio:
 
-- CR-LF: Znak powrotu karetki i wiersz źródła danych, 000 D + 000A znaki Unicode
+- CR-LF: Znaku powrotu karetki i wysuwu wiersza Unicode znaki 000 D + 000A
 
 - LF: Znak nowego wiersza, Unicode 000A
 
-- Ustaw: Następny wiersz znaków Unicode 0085
+- USTAW: Następny wiersz, znaków Unicode 0085
 
 - LS: Separator wiersza, znaków Unicode 2028
 

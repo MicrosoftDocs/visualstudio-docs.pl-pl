@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e9f4c77f06e1a899cd6490479802ef300bea4256
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 4e3f767eeb6ed79aed3281cbe88b1eb1fe46738d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847491"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Praca z rozwiązaniami dotyczącymi języka specyficznego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony za pomocą rozwiązania Visual Studio. W tej sekcji znajdują się informacje dotyczące konfigurowania i dostosowywania rozwiązania.
@@ -28,14 +27,14 @@ Języka specyficznego dla domeny (DSL) jest tworzony za pomocą rozwiązania Vis
 
  [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md) wyjaśnia, jak wybrać szablon, aby uruchomić projekt języka DSL.
 
- [Porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md) opisano kroki, aby skonfigurować języka DSL.
+ [Instrukcje: Tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md) opisano kroki, aby skonfigurować języka DSL.
 
  [Praca z diagramem definicji DSL](../modeling/working-with-the-dsl-definition-diagram.md) opisano części diagramu.
 
  [Praca z Eksploratorem języka specyficznego dla domeny](../modeling/working-with-the-domain-specific-language-explorer.md) wyjaśnia zawartość Eksploratora
 
- [Porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) kodu generowania za pomocą języka DSL ma przestrzeni nazw, która jest ustawiany podczas inicjowania rozwiązania, ale można go zmienić później.
+ [Instrukcje: Zmień Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) kodu generowania za pomocą języka DSL ma przestrzeni nazw, która jest ustawiany podczas inicjowania rozwiązania, ale można go zmienić później.
 
- [Porady: rozszerzanie projektanta języka specyficznego dla domeny](../modeling/how-to-extend-the-domain-specific-language-designer.md) można dostosować projektanta DSL za pomocą poleceń menu.
+ [Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny](../modeling/how-to-extend-the-domain-specific-language-designer.md) można dostosować projektanta DSL za pomocą poleceń menu.
 
  [Jak zautomatyzować Przekształć wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)) w celu uniknięcia, klikając przycisk Przekształć wszystkie szablony, można tworzyć i automatyczne część kompilacji.

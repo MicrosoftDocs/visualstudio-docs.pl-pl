@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Oflagowanie i usuwanie oflagowania wątków | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Oflagowanie i usuwanie oflagowania wątków | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d26c87867e071b7dafce80d95e4bc46cb88bb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851407"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Porada: Oflagowanie i usuwanie oflagowania wątków
+# <a name="how-to-flag-and-unflag-threads"></a>Instrukcje: Oflagowanie i usuwanie oflagowania wątków
 Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków**, **stosów równoległych** (Widok wątku) **równoległego wyrażenia kontrolnego**i  **Wątki GPU** systemu windows. Ta ikona może pomóc i inne odróżnić oflagowane wątki z innych wątków.  
   
 Oflagowane wątki otrzymają specjalnego traktowania w **wątku** listy na **Lokalizacja debugowania** narzędzi i w innych wielowątkowe debugowanie systemu windows. Możesz wyświetlić wszystkie wątki lub tylko oflagowane wątki w **wątku** listy lub w innych oknach.
