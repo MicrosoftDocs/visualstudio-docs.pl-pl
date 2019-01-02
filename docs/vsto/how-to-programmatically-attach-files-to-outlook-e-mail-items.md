@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane dołączanie plików do elementów poczty e-mail programu Outlook'
-ms.custom: ''
+title: 'Instrukcje: Programowe dołączanie plików do elementów poczty e-mail programu Outlook'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fab5d954136fced3a68b1aaa62233ca5ec9af91b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d8290d354f811795ba83975c406565d17817fa0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866468"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Porady: programowane dołączanie plików do elementów poczty e-mail programu Outlook
-  W tym przykładzie dołącza plik do nowego elementu poczty i wysyła je do Armando Pinto. Przykładzie przyjęto założenie, że osoby o nazwie Armando Pinto istnieje jako odbiorcy.  
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Instrukcje: Programowe dołączanie plików do elementów poczty e-mail programu Outlook
+  W tym przykładzie dołącza plik do nowego elementu poczty i wysyła je do Armando Pinto. W przykładzie założono, że osoby o nazwie Armando Pinto istnieje jako adresata.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -36,8 +33,6 @@ ms.locfileid: "35256630"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z elementami poczty](../vsto/working-with-mail-items.md)   
- [Porady: programowane wysyłanie wiadomości e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Porady: programowane zapisywanie załączników z elementów poczty e-mail programu Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Porady: programowane Tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
-  
-  
+ [Instrukcje: Programowo Wyślij wiadomość e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Instrukcje: Programowe zapisywanie załączników z elementów poczty e-mail programu Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
+ [Instrukcje: Programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)  

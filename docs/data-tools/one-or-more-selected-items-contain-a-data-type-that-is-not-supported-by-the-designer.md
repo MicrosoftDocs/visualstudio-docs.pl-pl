@@ -7,27 +7,26 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68d8675df54e37b9a6122b853e742addc0d8060c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: a5e090951f1771fdf4d50bbedf0757616cabe5d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873421"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Co najmniej jeden wybrany element zawiera typ danych nieobsługiwany przez projektanta
 
-Co najmniej jeden z elementów przeciągnięte z **Eksploratora serwera** lub **Eksploratora bazy danych** na **Projektanta obiektów relacyjnych** zawiera dane typu, który nie jest obsługiwany przez **O /R projektanta**, na przykład [typy danych zdefiniowane przez użytkownika CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Co najmniej jeden z elementów przeciągnięte z **Eksploratora serwera** lub **Eksplorator bazy danych** na **O/R Designer** zawiera typ danych, która nie jest obsługiwana przez **O / R designer**, na przykład [typy CLR zdefiniowane przez użytkownika](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1. Utwórz widok, w którym jest oparty na żądaną tabeli i nie zawiera nieobsługiwany typ danych.
+1. Utwórz widok, który jest oparty na odpowiednią tabelę i nie zawiera nieobsługiwany typ danych.
 
-2. Przeciągnij widoku z **Eksploratora serwera** lub **Eksploratora bazy danych** do projektanta.
+2. Przeciągnij widok z **Eksploratora serwera** lub **Eksplorator bazy danych** do projektanta.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,9 +1,6 @@
 ---
 title: Obsługa paska nawigacyjnego w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ca2b29ca942287180df45629c40a4f38e7a573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9fc9d4339978f84b02a5c922c06139031924bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868816"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 Pasek nawigacyjny u góry widoku edytora Wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane na liście rozwijanej po lewej stronie, a elementy członkowskie są wyświetlane w prawo rozwijanej. Gdy użytkownik wybierze typ, karetkę jest umieszczany w pierwszym wierszu tego typu. Gdy użytkownik wybierze element członkowski, karetkę jest umieszczany w definicji elementu członkowskiego. Pola listy rozwijanej, są aktualizowane zgodnie z bieżącym położeniem karetki.  

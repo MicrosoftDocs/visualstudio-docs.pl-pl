@@ -1,9 +1,6 @@
 ---
 title: Wzorce złożone dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14d9f233d41638092d1a722094cb0c86f368a748
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866910"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio, w odniesieniu do spójności:  
@@ -242,7 +239,7 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
     -   **Polecenie jawne:** prezentera wbudowane  
 
-    -   **Kliknij dwukrotnie pozycję wskaźnika otoczenia:** okno podręczne CodeLens  
+    -   **Kliknij dwukrotnie otoczenia wskaźnika:** Okno podręczne CodeLens  
 
 -   **Zawsze** odrzucić zawartość szczegółów zawsze wtedy, gdy użytkownik naciśnie klawisz Esc.  
 

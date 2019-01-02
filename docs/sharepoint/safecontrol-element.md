@@ -1,9 +1,6 @@
 ---
 title: SafeControl — Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +12,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aded7f246d961bd3f956611ff092dfdcf8b68564
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864141"
 ---
 # <a name="safecontrol-element"></a>SafeControl — element
-  Reprezentuje kontrolki ASPX lub składnik Web Part jest oznaczony jako bezpieczny dla każdego użytkownika uzyskiwać dostęp do dowolnej strony ASPX w witrynie programu SharePoint.  
+  Reprezentuje kontrolki ASPX lub składnik Web Part, który jest wyznaczony jako bezpieczna opcja dla każdemu użytkownikowi dostęp do strony ASPX w witrynie programu SharePoint.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,12 +40,12 @@ ms.locfileid: "37120298"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|**Assembly**|Opcjonalne **xs:string** atrybutu.<br /><br /> Nazwa zestawu, w którym jest zdefiniowany formantu ASPX lub części sieci Web. Domyślnie używa tego atrybutu **$SharePoint.Project.AssemblyFullName$** replaceable parametr dla nazwy zestawu. Aby uzyskać więcej informacji, zobacz [parametry wymienne](../sharepoint/replaceable-parameters.md).|  
-|**IsSafe**|Opcjonalne **xs:boolean** atrybutu.<br /><br /> Określa, czy formant ASPX lub składnik Web Part jest bezpieczna opcja dla niezaufanym użytkownikom na dostęp.|  
-|**IsSafeAgainstScript**|Opcjonalne **xs:boolean** atrybutu.<br /><br /> Określa, czy niezaufanym użytkownikom umożliwia wyświetlenie i edytowanie właściwości formantu ASPX lub części sieci Web.|  
-|**Nazwa**|Opcjonalne **xs:string** atrybutu.<br /><br /> Nazwa tego wpisu kontroli bezpieczne w kolekcji.|  
-|**Namespace**|Opcjonalne **xs:string** atrybutu.<br /><br /> Przestrzeń nazw formantu ASPX lub części sieci Web.|  
-|**właściwość typeName**|Opcjonalne **xs:string** atrybutu.<br /><br /> Nazwa typu formantu ASPX lub części sieci Web.|  
+|**Assembly**|Opcjonalnie **xs:string** atrybutu.<br /><br /> Nazwa zestawu, w którym zdefiniowano kontroli ASPX lub składnik Web Part. Domyślnie ten atrybut używa **$SharePoint.Project.AssemblyFullName$** parametr do zastąpienia dla nazwy zestawu. Aby uzyskać więcej informacji, zobacz [parametrów zastępowalnych](../sharepoint/replaceable-parameters.md).|  
+|**IsSafe**|Opcjonalnie **xs:boolean** atrybutu.<br /><br /> Określa, czy kontrolka ASPX lub składnik Web Part jest bezpieczne dla niezaufanch użytkowników do uzyskania dostępu.|  
+|**IsSafeAgainstScript**|Opcjonalnie **xs:boolean** atrybutu.<br /><br /> Określa, czy niezaufanym użytkownikom można wyświetlać lub edytować właściwości kontrolki ASPX lub składnik Web Part.|  
+|**Nazwa**|Opcjonalnie **xs:string** atrybutu.<br /><br /> Nazwa tego wpisu bezpiecznej kontrolki w kolekcji.|  
+|**Namespace**|Opcjonalnie **xs:string** atrybutu.<br /><br /> Przestrzeń nazw formantu ASPX lub składnik Web Part.|  
+|**Nazwa typu**|Opcjonalnie **xs:string** atrybutu.<br /><br /> Nazwa typu formantu ASPX lub składnik Web Part.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.  
@@ -57,10 +54,10 @@ ms.locfileid: "37120298"
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[SafeControls —](../sharepoint/safecontrols-element.md)|Reprezentuje kolekcję ASPX kontrolek i składników Web Part, które są wyznaczone jako bezpieczne dla każdego użytkownika uzyskiwać dostęp do dowolnej strony ASPX w witrynie programu SharePoint.|  
+|[SafeControls —](../sharepoint/safecontrols-element.md)|Reprezentuje kolekcję formantów ASPX i składniki Web Part, które zostały oznaczone jako bezpieczne dla każdego użytkownika, dostęp do w dowolnej strony ASPX w witrynie programu SharePoint.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aby uzyskać więcej informacji na temat bezpiecznych formantów, zobacz [zawierają informacje pakowania i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Aby uzyskać więcej informacji na temat bezpiecznych kontrolek, zobacz [zapewniają informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Informacje o elementach
   
@@ -68,10 +65,9 @@ ms.locfileid: "37120298"
 |-|-|  
 |**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nazwa schematu**|Schemat elementu projektu SharePoint|  
-|**Sprawdzanie poprawności pliku**|ProjectItemModelSchema.xsd|  
+|**Plik walidacji**|ProjectItemModelSchema.xsd|  
 |**Może być pusta.**|Nie|  
   
 ## <a name="see-also"></a>Zobacz także
  [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Podaj informacje pakowania i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
+ [Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  

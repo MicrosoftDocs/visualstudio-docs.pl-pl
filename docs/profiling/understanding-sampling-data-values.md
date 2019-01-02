@@ -1,8 +1,6 @@
 ---
-title: Zapoznanie z wartościami danych próbkowania | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Opis wartościami danych próbkowania | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -12,46 +10,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d98a34abcd0e17f7b453ab3bd6e706665a9379bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863475"
 ---
-# <a name="understand-sampling-data-values"></a>Zrozumienie wartościami danych próbkowania
+# <a name="understand-sampling-data-values"></a>Informacje z wartościami danych próbkowania
 
-*Próbkowania* metoda Visual Studio Profiling Tools profilowania przerwań procesora komputera w ustalonych odstępach czasu i zbiera stosu wywołań funkcji. A *stosu wywołań* jest strukturą dynamicznych, która przechowuje informacje dotyczące funkcji, które są wykonywane na procesor.
+*Próbkowania* profilowanie metody Visual Studio Profiling Tools przerywa działanie procesora komputera w ustalonych odstępach czasu i gromadzi stos wywołań funkcji. A *stos wywołań* jest dynamiczne struktury, która przechowuje informacje dotyczące funkcji, które są wykonywane na procesorze.
 
-Analiza profilera Określa, czy procesor jest wykonywanie kodu w procesie docelowym. Jeśli procesor nie jest wykonywanie kodu w procesie docelowym, przykładowej zostaną odrzucone.
+Analiza profiler Określa, czy procesor jest wykonywanie kodu w procesie docelowym. Jeśli procesor nie wykonuje kod w procesie docelowym, plik zostanie odrzucony.
 
-Jeśli procesor jest wykonywanie kodu docelowego, profilera zwiększa liczby próbki dla każdej funkcji w stosie wywołań. W tym czasie próbki tylko jednej funkcji w stosie wywołań jest w trakcie wykonywania kodu. Inne funkcje na stosie są nadrzędnych w hierarchii wywołania funkcji, które oczekują na ich elementy podrzędne do zwrócenia.
+Jeśli procesor, jest wykonywany kod docelowy, program profilujący zwiększa liczby próbek dla każdej funkcji na stosie wywołań. W tym czasie jest próbka tylko jednej funkcji — na stosie wywołań aktualnie wykonuje kod. Innych funkcji na stosie są elementów nadrzędnych w hierarchii wywołań funkcji, które oczekują na ich elementy podrzędne do zwrócenia.
 
-Przykładowe zdarzenia zwiększa profilera *wyłącznego* przykładowe liczby funkcji, która jest w trakcie wykonywania instrukcji. Ponieważ wyłącznego próbki jest również częścią łączną (*włącznie*) również jest zwiększany przykłady funkcji liczność próbki włącznie funkcji obecnie aktywne.
+Zdarzenia przykładowe przyrosty profiler *wyłączne* liczba funkcji, która jest w trakcie wykonywania instrukcji próbek. Ponieważ próbek wyłącznych wchodzi w skład całości (*włącznie*) przykłady funkcji liczność próbki włączne aktualnie aktywnych funkcji również jest zwiększany.
 
- Profiler zwiększa liczność próbki z wartościami granicznymi innych funkcji w stosie wywołań.
+ Program profilujący zwiększa liczność próbki włączne wszystkich funkcji w stosie wywołań.
 
-## <a name="inclusive-samples"></a>Przykłady włącznie
+## <a name="inclusive-samples"></a>Próbki włączne
 
 Łączna liczba próbek, które są zbierane podczas wykonywania funkcji docelowej.
 
-Dotyczy to również przykłady, które są zbierane podczas bezpośrednie wykonywanie kodu funkcji i przykłady, które są zbierane podczas wykonywania funkcji podrzędne, które są wywoływane przez funkcję docelowej.
+Obejmuje to przykłady, które są zbierane podczas bezpośredniego wykonywania kodu funkcji i przykłady, które są zbierane podczas wykonywania funkcji podrzędnych, które są wywoływane przez funkcję docelowego.
 
-## <a name="exclusive-samples"></a>Wyłącznych próbek
+## <a name="exclusive-samples"></a>Próbki wyłączne
 
-Liczba próbek, zebrane podczas bezpośrednie wykonywanie instrukcji funkcja docelowej.
+Liczba próbek, które są zbierane podczas bezpośredniego wykonywania instrukcji docelowej funkcji.
 
-Wyłącznych próbek nie zawierają przykłady, które są zbierane podczas wykonywania funkcji wywoływanych przez funkcję docelowej.
+Próbki wyłączne nie zawierają przykłady, które są zbierane podczas wykonywania funkcji wywołanych przez funkcję docelowego.
 
-## <a name="inclusive-percent"></a>Procent włącznie
+## <a name="inclusive-percent"></a>Procent (włącznie)
 
-Wartość procentowa całkowita liczba włącznie przykłady w przebiegu profilowania, które są włącznie przykłady zakresu funkcji lub danych.
+Procent całkowitej liczby włącznych próbek podczas uruchomienia profilowania, które są włącznych próbek zakresu funkcję lub dane.
 
-## <a name="exclusive-percent"></a>Procent wyłączności
+## <a name="exclusive-percent"></a>% Wyłącznych
 
-Procent całkowitej liczby wyłącznych próbek w przebiegu profilowania, które są wyłącznych próbek zakres funkcji lub danych.
+Procent całkowitej liczby próbek wyłącznych podczas uruchomienia profilowania, które są wyłącznych próbek zakres funkcji lub danych.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
+[Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)  
 [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Porady: zbieranie danych dotyczących wydajności dla witryny sieci Web | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zbieranie danych dotyczących wydajności dla witryny sieci Web | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5e50855061a69a8d3b5fd6aa068b0f8c1385173e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864154"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Porady: zbieranie danych wydajności dotyczących witryny sieci web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: Zbieranie danych wydajności dotyczących witryny sieci web
 
 Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web. Można profilować aplikacji sieci web, która jest otwarta w programie Visual Studio lub można profilować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] witryny sieci Web, który znajduje się na komputerze lokalnym i nie jest otwarty w programie Visual Studio IDE.
 

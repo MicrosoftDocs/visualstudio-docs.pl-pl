@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4791566d3c37517c3c93e62e371bf4cbc9fc6604
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9101c6f264d3f4017581a6732e9b93f78e33215d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867017"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 
-Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby użytkowników, rysując diagramy dotyczące ich działania i część systemu jest odtwarzany w pozwala im to osiągnąć swoje cele. Modelu wymagań to zbiór tych diagramów, z których każdy koncentruje się na inny aspekt potrzeb użytkowników. Wideo demonstracyjne – zobacz: [modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
+Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby użytkowników, rysując diagramy dotyczące ich działania i część systemu jest odtwarzany w pozwala im to osiągnąć swoje cele. Modelu wymagań to zbiór tych diagramów, z których każdy koncentruje się na inny aspekt potrzeb użytkowników. Aby uzyskać demonstracyjne wideo – zobacz: [Modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
 Aby zobaczyć, które wersje programu Visual Studio obsługuje każdy typ modelu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 

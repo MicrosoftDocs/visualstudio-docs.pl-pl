@@ -2,7 +2,6 @@
 title: Wyliczenia Visual C++ w Projektancie klas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], enumerations
@@ -12,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a42dfb65cc70704bbed662e35b2e2eb0e9c237c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dde9e749a58935e0b50b604897092f69f16300b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869206"
 ---
-# <a name="visual-c-enumerations-in-class-designer"></a>Visual C++ wyliczenia w Projektancie klas
+# <a name="visual-c-enumerations-in-class-designer"></a>Wyliczenia Visual C++ w w Projektancie klas
 
-**Projektant klas** obsługuje C++ `enum` i zakresami `enum class` typów. Poniżej przedstawiono przykładowy:
+**Projektant klasy** obsługuje C++ `enum` i zakresami `enum class` typów. Poniżej znajduje się przykład:
 
 ```cpp
 enum CardSuit {
@@ -40,7 +39,7 @@ enum class CardSuit {
 };
 ```
 
-Wyliczenie C++ kształt na diagramie klas wyglądu i działania takie jak kształt struktura, z tą różnicą, że etykieta odczytuje **wyliczenia** lub **Enum class**, jest różowy zamiast niebieska i ma kolorowe krawędź w lewo i w górnej marginesy. Zarówno wyliczenie kształtów i struktura ma narożniki.
+Kształt wyliczenia C++ na diagramie klasy wygląda i działa jak kształt struktury, chyba że czyta etykietę **wyliczenia** lub **Enum class**, jest różowy, a nie niebieski i ma kolorowe obramowanie na lewym i górnym marginesy. Zarówno wyliczenia kształtów, jak i struktury mają ostre rogi.
 
 Aby uzyskać więcej informacji o korzystaniu z `enum` typu, zobacz [wyliczenia](/cpp/cpp/enumerations-cpp).
 

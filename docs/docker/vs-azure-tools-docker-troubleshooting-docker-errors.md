@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: devinb
-ms.openlocfilehash: 2981beecdda6d078941539a5044c13c670ecd646
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 987efcb2d45253326ec2744776c304376cd3bc67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865853"
 ---
 # <a name="troubleshoot-visual-studio-2017-development-with-docker"></a>Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio 2017 przy użyciu platformy Docker
 

@@ -2,7 +2,6 @@
 title: Określanie warunków pojawiania się adnotacji
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Group_
@@ -15,12 +14,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bc4d00d8c6b1f6b876700066d93b552b7fe5996
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 4ebdc8592d26c124f98ff9d390e173b6675f09d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863306"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Określanie warunków pojawiania się adnotacji
 W przypadku warunkowego adnotacji może wymagać innych adnotacji, aby określić, że do analizatora.  Na przykład jeśli funkcja zawiera zmienną, która może być synchroniczna lub asynchroniczna, funkcja zachowuje się w następujący sposób: W przypadku synchroniczne go zawsze ostatecznie zakończy się pomyślnie, ale w przypadku asynchronicznej go zgłasza błąd, jeśli nie powiedzie się natychmiast. Gdy funkcja jest wywoływana synchronicznie, wartość wyniku sprawdzania zapewnia żadnej wartości, aby analizator kodu, ponieważ nie będzie mieć zwracane.  Jednak gdy funkcja jest wywoływana asynchronicznie, a wynik funkcji nie jest zaznaczone, może wystąpić po poważnym błędzie. W tym przykładzie pokazano sytuację, w której można użyć `_When_` adnotacji — opisane w dalszej części tego artykułu — Aby włączyć sprawdzanie.

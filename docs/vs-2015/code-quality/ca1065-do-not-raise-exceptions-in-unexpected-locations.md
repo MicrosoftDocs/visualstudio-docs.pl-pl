@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cee2ce8b3f5a0f61f65001ac09772a0f40c04f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865747"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie należy wyrzucać wyjątków w nieoczekiwanych lokalizacjach
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -138,10 +137,7 @@ ms.locfileid: "49887610"
  Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli naruszenie zostało spowodowane przez deklaracji wyjątku zamiast zgłoszony wyjątek.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątku](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>Zobacz też
  [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)
-
-
-

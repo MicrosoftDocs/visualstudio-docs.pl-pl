@@ -1,8 +1,6 @@
 ---
 title: ClickOnce i podpis Authenticode | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fe73ba2ef02ecf6f9eb75663650862fd78fea1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859152"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 *Authenticode* to technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisywania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański jest wirus lub występuje inne szkodliwe program, który złośliwy firm zniesławiającej jako program wiarygodnego źródła ustanowione, godne zaufania. Podpisywanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić, czy zestawów i plików nie były modyfikowane.  
@@ -55,7 +53,7 @@ ms.locfileid: "49907446"
 ### <a name="timestamps"></a>Sygnatury czasowe  
  Certyfikaty używane do podpisywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wygasają po upływie określonego czasu, zwykle przez dwanaście miesięcy. Aby wyeliminować potrzebę stale ponownego podpisywania aplikacji przy użyciu nowych certyfikatów [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] obsługuje sygnatury czasowej. Gdy aplikacja jest podpisana z sygnaturą czasową, jego certyfikat będzie nadal być akceptowane, nawet po wygaśnięciu, pod warunkiem, że sygnatura czasowa jest nieprawidłowa. Dzięki temu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji za pomocą wygasłe certyfikaty, ale nieprawidłowy sygnatury czasowe, aby pobrać i uruchomić. Umożliwia także zainstalowanych aplikacji za pomocą wygasłe certyfikaty, aby w dalszym ciągu pobieranie i instalowanie aktualizacji.  
   
- Aby uwzględnić znacznika czasu w serwera aplikacji, musi być dostępny serwera znacznika czasowego. Aby uzyskać informacje o sposobie wybierania serwera znacznika czasowego, zobacz [porady: podpisywanie aplikacji i manifestów wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Aby uwzględnić znacznika czasu w serwera aplikacji, musi być dostępny serwera znacznika czasowego. Aby uzyskać informacje o sposobie wybierania serwera znacznika czasowego, zobacz [jak: Podpisywanie aplikacji i manifestów wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="update-expired-certificates"></a>Aktualizuj certyfikaty wygasłe  
  We wcześniejszych wersjach programu .NET Framework aktualizowanie aplikacji wygasło którego certyfikat może spowodować tę aplikację, przestanie działać. Aby rozwiązać ten problem, należy użyć jednej z następujących metod:  

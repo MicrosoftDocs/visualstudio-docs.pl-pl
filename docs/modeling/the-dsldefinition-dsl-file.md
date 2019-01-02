@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869258"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 
@@ -97,7 +96,7 @@ Zazwyczaj przestrzeń nazw elementu odwołania (w tym przykładzie `Library` kla
 
 Moniker system wymaga, że elementów równorzędnych w drzewie XML mają różne nazwy. Z tego powodu błędy walidacji występują, jeśli zostanie podjęta próba zapisania definicji języka specyficznego dla domeny, który, na przykład dwóch klas o takiej samej nazwie. Zawsze należy poprawić błędy takie zduplikowana nazwa, zanim zapiszesz plik DslDefinition.dsl, dzięki czemu możesz ponownie załadować je poprawnie później.
 
-Każdy typ ma swój własny typ monikera: DomainClassMoniker, DomainRelationshipMoniker, i tak dalej.
+Każdy typ ma swój własny typ monikera: DomainClassMoniker DomainRelationshipMoniker i tak dalej.
 
 ## <a name="types"></a>Types
 
@@ -228,7 +227,7 @@ Na przykład relacji połączenia łączy elementów członkowskich klasy elemen
 
 Każda relacja zawiera role źródłowe i docelowe, które mają następujące atrybuty:
 
--   `RolePlayer` Atrybut odwołuje się do klasy domeny połączonych wystąpień: elementu OutPort dla źródła, InPort dla obiektu docelowego.
+-   `RolePlayer` Atrybut odwołuje się do klasy domeny połączonych wystąpień: Elementu outPort źródła InPort dla obiektu docelowego.
 
 -   `Multiplicity` Atrybut ma czterech możliwych wartości (wartości ZeroMany, wartość ZeroOne, co i OneMany). Ten atrybut odwołuje się do liczby łączy tę relację, która może być skojarzony z jednego obiektu pełniącego rolę.
 

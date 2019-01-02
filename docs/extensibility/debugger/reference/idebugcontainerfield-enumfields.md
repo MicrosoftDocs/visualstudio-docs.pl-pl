@@ -1,9 +1,6 @@
 ---
 title: IDebugContainerField::EnumFields | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugContainerField::EnumFields
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49874de9166310fc4b9a887fd1fc6d6355682c7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a638afd136bba96615a77ee51e00774caf216fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857468"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 Tworzy moduł wyliczający dla pól kontenera.  
@@ -28,7 +25,7 @@ Tworzy moduł wyliczający dla pól kontenera.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT EnumFields(   
+HRESULT EnumFields(   
    FIELD_KIND         dwKindFilter,  
    FIELD_MODIFIERS    dwModifiersFilter,  
    LPCOLESTR          pszNameFilter,  

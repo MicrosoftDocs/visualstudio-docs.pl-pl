@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::GetENCAvailableState | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::GetENCAvailableState
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f70f685fe8792f698dcc397b2f3fc9ccb6de8dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a114eee347382b5a351f86cee350dacf958626a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860052"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Ta metoda pobiera bieżący stan Edytuj i Kontynuuj proces. Dostawcy niestandardowego portu powinna zawsze zwracać `E_NOTIMPL`.  
@@ -28,8 +25,8 @@ Ta metoda pobiera bieżący stan Edytuj i Kontynuuj proces. Dostawcy niestandard
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetENCAvailableState(  
-   EncUnavailableReason* pReason  
+HRESULT GetENCAvailableState(  
+   EncUnavailableReason* pReason  
 );  
 ```  
   

@@ -1,8 +1,6 @@
 ---
 title: Analizowanie zużycia energii w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860867"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i energii w aplikacjach platformy UWP na urządzeniach tablecie o niskim poziomie zasilania, które działają ciągle lub czasu na własnych bateriach. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii może zwiększyć liczbę użytkowników w Twojej aplikacji i używany przez klientów.  
@@ -29,9 +27,9 @@ Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i e
  Profiler Zużycie energii przechwytuje działania wyświetlacza, procesora i połączeń sieciowych urządzenia podczas sesji profilowania. Następnie generuje szacunki zużycia mocy na potrzeby wykonania tych działań i całkowitej ilości energii dla sesji profilowania.  
   
 > [!NOTE]
->  Profiler energii szacuje pobór mocy i zużycie energii, używając programowego modelu standardowego sprzętu referencyjnego, który jest reprezentatywny dla tabletów o niskim poziomie zasilania, na których może być uruchamiana dana aplikacja. Aby uzyskać najlepsze szacunki, zaleca się zbieranie danych profilu na tablecie o niskim poziomie zasilania.  
+> Profiler energii szacuje pobór mocy i zużycie energii, używając programowego modelu standardowego sprzętu referencyjnego, który jest reprezentatywny dla tabletów o niskim poziomie zasilania, na których może być uruchamiana dana aplikacja. Aby uzyskać najlepsze szacunki, zaleca się zbieranie danych profilu na tablecie o niskim poziomie zasilania.  
 >   
->  Chociaż model zapewnia dobre oszacowania dla różnych urządzeń o niskim poziomie zasilania, rzeczywiste wartości dotyczące profilowanego urządzenia mogą być inne. Należy użyć wartości, aby wykryć działania wyświetlacza, procesora i sieci, które są kosztowne względem innych działań wykorzystujących zasoby, i mogą nadawać się do optymalizacji.  
+> Chociaż model zapewnia dobre oszacowania dla różnych urządzeń o niskim poziomie zasilania, rzeczywiste wartości dotyczące profilowanego urządzenia mogą być inne. Należy użyć wartości, aby wykryć działania wyświetlacza, procesora i sieci, które są kosztowne względem innych działań wykorzystujących zasoby, i mogą nadawać się do optymalizacji.  
   
  Profiler zużycie energii są używane następujące definicje *power* i *energii*:  
   
@@ -54,13 +52,13 @@ Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i e
   
  **Dodawanie znaczników do języka C#, Visual Basic kodu w języku C++**  
   
- Aby dodać znacznik użytkownika do języka C#, Visual Basic kodu w języku C++ należy najpierw utworzyć [loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics](xref:Windows.Foundation.Diagnostics.LoggingChannel) obiektu. Następnie Wstaw wywołania [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) w wywołaniach.  
+ Aby dodać znacznik użytkownika do C#, Visual Basic, kod języka C++, należy najpierw utworzyć <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName> obiektu. Następnie Wstaw wywołania <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) w wywołaniach.  
   
  Gdy jest wykonywana metoda, znacznik użytkownika jest dodawany do danych profilowania wraz z komunikatem.  
   
 > [!NOTE]
 > - Loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics implementuje [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interfejsu (nazywany [System.IDisposable](/dotnet/api/system.idisposable) w języku C# i VB). Aby uniknąć przecieku zasobów systemu operacyjnego, należy wywołać [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) w języku C# i VB) po zakończeniu za pomocą funkcji rejestrowania kanał.  
->   -   Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Próba utworzenia nowego kanału rejestrowania o takiej samej nazwie, jak nazwa aktualnie otwartego kanału, powoduje wyjątek.  
+>  - Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Próba utworzenia nowego kanału rejestrowania o takiej samej nazwie, jak nazwa aktualnie otwartego kanału, powoduje wyjątek.  
   
  Zobacz przykładową zestaw SDK Windows [przykładowe LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) przykłady.  
   
@@ -151,8 +149,9 @@ if (performance && performance.mark) {
   
      Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows umożliwia symulowanie właściwości połączenia danych interfejsów API informacji sieciowych. Zobacz [uruchamianie aplikacji platformy UWP w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   **Synchronizacja funkcji JavaScript** i **użycie procesora CPU** narzędzia mogą pomóc w zmniejszeniu obciążenia Procesora, gdy jest to spowodowane przez nieefektywnie działające funkcje. Zobacz [analizowania procesora](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+-   **Synchronizacja funkcji JavaScript** i **użycie procesora CPU** narzędzia mogą pomóc w zmniejszeniu obciążenia Procesora, gdy jest to spowodowane przez nieefektywnie działające funkcje. Zobacz [analizowania procesora](/visualstudio/profiling/beginners-guide-to-performance-profiling).
 
 ## <a name="see-also"></a>Zobacz także
- [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
+
+- [Profilowanie w programie Visual Studio](../profiling/index.md)  
+- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

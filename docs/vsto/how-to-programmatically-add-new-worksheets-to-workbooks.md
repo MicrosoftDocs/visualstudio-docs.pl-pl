@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Programowe Dodawanie nowych arkuszy do skoroszytu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d5750bebc4b58305133ae762bb6cb52e0d37e62
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0c5cfd48cf65ea8eed18606377cde2092ddaf302
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867673"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Instrukcje: Programowe Dodawanie nowych arkuszy do skoroszytu
   Można programowo utworzyć arkusz, a następnie dodaj arkusz do kolekcji arkuszy w skoroszycie.  
@@ -56,5 +53,3 @@ ms.locfileid: "53805029"
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
  [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

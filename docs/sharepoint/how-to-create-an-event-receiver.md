@@ -1,9 +1,6 @@
 ---
-title: 'Porady: tworzenie obsługiwanego odbiornika | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie obsługiwanego odbiornika | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,24 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861575"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Porady: tworzenie obsługiwanego odbiornika
+# <a name="how-to-create-an-event-receiver"></a>Instrukcje: Tworzenie obsługiwanego odbiornika
   Tworząc *odbiorcy zdarzeń*, mogą odpowiadać, gdy użytkownik korzysta z elementów programu SharePoint, takich jak listy lub elementów listy. Na przykład kod w odbiorcy zdarzeń mogą być wyzwalane, gdy użytkownik zmienia kalendarza lub usuwa nazwę z listy kontaktów. Korzystając z tego tematu, można poznać sposoby dodawania odbiorców zdarzenia do wystąpienia listy.
 
- Aby wykonać te kroki, musisz zainstalować [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i obsługiwane wersje systemu Windows i programu SharePoint. Ponieważ w tym przykładzie wymaga projektu programu SharePoint, należy również wykonać procedurę opisaną w temacie [wskazówki: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+ Aby wykonać te kroki, musisz zainstalować [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i obsługiwane wersje systemu Windows i programu SharePoint. Ponieważ w tym przykładzie wymaga projektu programu SharePoint, należy również wykonać procedurę opisaną w temacie [instruktażu: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 ## <a name="adding-an-event-receiver"></a>Dodanie odbiorcy zdarzeń
- Projekt, który został utworzony w [wskazówki: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) zawiera kolumny niestandardowej witryny, listy niestandardowej i typu zawartości. W poniższej procedurze będzie rozwinąć tego projektu, dodając procedurę obsługi zdarzenia prostego (odbiorca zdarzenia) do wystąpienia listy, aby pokazać sposób obsługi zdarzeń występujących w elementach programu SharePoint, takich jak listy.
+ Projekt, który został utworzony w [instruktażu: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) zawiera kolumny niestandardowej witryny, listy niestandardowej i typu zawartości. W poniższej procedurze będzie rozwinąć tego projektu, dodając procedurę obsługi zdarzenia prostego (odbiorca zdarzenia) do wystąpienia listy, aby pokazać sposób obsługi zdarzeń występujących w elementach programu SharePoint, takich jak listy.
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Aby dodać odbiorca zdarzenia do wystąpienia listy
 
-1.  Otwórz projekt, który został utworzony w [wskazówki: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1.  Otwórz projekt, który został utworzony w [instruktażu: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 2.  W **Eksploratora rozwiązań**, wybierz węzeł projektu programu SharePoint, która nosi nazwę **Clinic**.
 

@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Używanie projektanta schematu XML z literałami XML'
+title: 'Instrukcje: Używanie projektanta schematu XML z literałami XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
@@ -12,14 +11,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1483077142d1c60d3309458aedbe1abd7e2e2b00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863397"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Porady: Używanie projektanta schematu XML z literałami XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: Używanie projektanta schematu XML z literałami XML
 
 W tym temacie opisano sposób wyświetlania schemat jest skojarzony z danymi XML literału w projekcie Visual Basic.
 
@@ -39,7 +38,7 @@ W tym temacie opisano sposób wyświetlania schemat jest skojarzony z danymi XML
 
 3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu, wybierz **Dodaj**, a następnie wybierz pozycję **istniejący element**. **Elementu AddExisting** pojawi się okno dialogowe. Przejdź do *PurchaseOrderSchema.xsd* plików, wybierz ją, a następnie kliknij **Dodaj**.
 
-     Projekt XMLLiterals zawiera teraz dwa pliki: *Module1.vb* i *PurchaseOrderSchema.xsd*.
+     Projekt XMLLiterals zawiera teraz dwa pliki: *Module1.VB* i *PurchaseOrderSchema.xsd*.
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Aby dodać kod języka Visual Basic z literał, XML na podstawie pliku XSD, zawarty w projekcie
 

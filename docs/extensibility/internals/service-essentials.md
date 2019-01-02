@@ -1,9 +1,6 @@
 ---
 title: Usługa Essentials | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867280"
 ---
 # <a name="service-essentials"></a>Podstawowe informacje o usłudze
 Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage udostępnia określony zestaw interfejsów dla innego pakietu VSPackage korzystać. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest to zbiór pakietów VSPackage, które świadczy usługi do innych pakietów VSPackage.  
   
- Na przykład można użyć usługa SVsActivityLog można uzyskać interfejsu IVsActivityLog, które służy do zapisania do dziennika aktywności. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z dziennika aktywności](../../extensibility/how-to-use-the-activity-log.md).  
+ Na przykład można użyć usługa SVsActivityLog można uzyskać interfejsu IVsActivityLog, które służy do zapisania do dziennika aktywności. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z dziennika aktywności](../../extensibility/how-to-use-the-activity-log.md).  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są także niektóre wbudowane usługi, które nie zostały zarejestrowane. Pakietów VSPackage można zastąpić wbudowanych lub innych usług, zapewniając zastąpienie usług. Zastąpienie tylko jedna usługa jest dozwolony dla każdej usługi.  
   
@@ -39,7 +36,7 @@ Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage 
   
 - Usługi lub zastąpienia usługi, które są ładowane na żądanie, oznacza to, że dostawca usług jest ładowany podczas usługi, którą zapewnia, jest wymagany przez innego pakietu VSPackage.  
   
-- Aby zapewnić obsługę ładowania na żądanie, dostawca usług rejestruje jej usług globalnych z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [porady: udostępnianie usługi](../../extensibility/how-to-provide-a-service.md).  
+- Aby zapewnić obsługę ładowania na żądanie, dostawca usług rejestruje jej usług globalnych z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [jak: Oferuje usługi](../../extensibility/how-to-provide-a-service.md).  
   
 - Po uzyskaniu usługi, użyj [QueryInterface](/cpp/atl/queryinterface) (niezarządzany kod) lub rzutowania (kod zarządzany) można pobrać żądanego interfejsu, na przykład:  
   
@@ -63,7 +60,7 @@ Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage 
   
 ## <a name="use-getglobalservice"></a>Użyj GetGlobalService  
   
-Czasami może być konieczne uzyskiwanie usługi okno narzędzia lub kontroli kontenera, które nie zostały zlokalizowane; w przeciwnym razie ma zostały umieszczone u dostawcy usług, które nie wie o usługę, którą chcesz. Na przykład można zapisywać w dzienniku aktywności ze znajdujących się pod kontrolą. Aby uzyskać więcej informacji na temat tych i innych scenariuszy, zobacz [porady: Rozwiązywanie problemów z usługami](../../extensibility/how-to-troubleshoot-services.md).  
+Czasami może być konieczne uzyskiwanie usługi okno narzędzia lub kontroli kontenera, które nie zostały zlokalizowane; w przeciwnym razie ma zostały umieszczone u dostawcy usług, które nie wie o usługę, którą chcesz. Na przykład można zapisywać w dzienniku aktywności ze znajdujących się pod kontrolą. Aby uzyskać więcej informacji na temat tych i innych scenariuszy, zobacz [jak: Rozwiązywanie problemów z usługami](../../extensibility/how-to-troubleshoot-services.md).  
   
 Większość usług Visual Studio można uzyskać przez wywołanie statycznego <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metody.  
   
@@ -92,7 +89,7 @@ Na szczęście <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> d
     End If
     ```  
     
-    Ten kod uzyskuje usługi SVsActivityLog i rzutuje IVsActivityLog interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać przykład, zobacz [porady: Korzystanie z dziennika aktywności](../../extensibility/how-to-use-the-activity-log.md).  
+    Ten kod uzyskuje usługi SVsActivityLog i rzutuje IVsActivityLog interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać przykład, zobacz [jak: Korzystanie z dziennika aktywności](../../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista dostępnych usług](../../extensibility/internals/list-of-available-services.md)   

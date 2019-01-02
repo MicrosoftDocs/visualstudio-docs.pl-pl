@@ -2,7 +2,6 @@
 title: Wyodrębnij metodę
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a505d024f3021a94d90ca1182181148187fe844c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064617"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864767"
 ---
 # <a name="extract-a-method-refactoring"></a>Wyodrębnij także refaktoryzację — metoda
 
@@ -29,11 +28,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** pozwala włączyć fragment kodu do własnej metody.
+**Co:** Pozwala włączyć fragment kodu do własnej metody.
 
-**Kiedy:** masz fragmentu istniejący kod w jakiejś metodzie, która musi zostać wywołana z innej metody.
+**Kiedy:** Masz fragmentu istniejący kod w jakiejś metodzie, która musi zostać wywołana z innej metody.
 
-**Dlaczego:** można kopiujesz/wklejasz kod, ale, co może spowodować dublowania. Lepszym rozwiązaniem jest Refaktoryzacja tego fragmentu do jego własnej metody, która może być wywoływany za darmo przez jakąkolwiek inną metodę.
+**Dlaczego:** Można kopiujesz/wklejasz kod, ale, co może spowodować dublowania. Lepszym rozwiązaniem jest Refaktoryzacja tego fragmentu do jego własnej metody, która może być wywoływany za darmo przez jakąkolwiek inną metodę.
 
 ## <a name="how-to"></a>Instrukcje
 

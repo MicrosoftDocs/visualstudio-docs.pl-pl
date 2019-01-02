@@ -1,8 +1,6 @@
 ---
 title: Stackframetypeenum — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be9a07c961e62870319de10cad77eaee8e12ef1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864013"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Określa typ ramki stosu.  

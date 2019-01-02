@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — Interop, Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 66734cd555c88d960431373d4ccf6a7ca0b39099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867293"
 ---
 # <a name="interop-activity-designer"></a>Interop, projektant działań
 
@@ -48,7 +47,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Interop> w�
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Interop> działania. Wartość domyślna to **międzyoperacyjności**. Chociaż nazwa wyświetlana nie jest wymagane, zaleca się podać jedną.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Określa typ działania zawarte w <xref:System.Activities.Statements.Interop> działania. Ten typ określony muszą pochodzić od <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Prawda|Określa typ działania zawarte w <xref:System.Activities.Statements.Interop> działania. Ten typ określony muszą pochodzić od <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Zobacz także
 

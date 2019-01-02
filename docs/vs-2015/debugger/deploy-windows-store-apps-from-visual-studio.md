@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -19,12 +18,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 797983f2f5fcc9ae4e12ca5426b521034f03700d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6ae55804edffec85ba39a1bd6ad4596959400120
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867415"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Wdrażanie aplikacji Windows Store za pomocą programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +36,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 
 - Gdy element docelowy jest urządzenie zdalne, Visual Studio kopiuje pliki wymagane do maszyny zdalnej i rejestruje aplikację na tym urządzeniu.
 
-  Wdrożenia jest automatycznie podczas debugowania aplikacji w programie Visual Studio przy użyciu **Rozpocznij debugowanie** opcji (klawiatura: F5) lub **Rozpocznij bez debugowania** opcji (klawiatury: CTRL + F5). Można także wdrożyć aplikację ręcznie. Ręczne wdrażanie jest przydatne w następujących scenariuszach:
+  Wdrożenia jest automatycznie podczas debugowania aplikacji w programie Visual Studio przy użyciu **Rozpocznij debugowanie** opcji (klawiatury: F5) lub **Rozpocznij bez debugowania** opcji (klawiatury: CTRL + F5). Można także wdrożyć aplikację ręcznie. Ręczne wdrażanie jest przydatne w następujących scenariuszach:
 
 - Ad hoc testów na komputerze lokalnym lub zdalnym.
 

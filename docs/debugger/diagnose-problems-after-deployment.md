@@ -1,8 +1,6 @@
 ---
 title: Diagnozowanie problemów po wdrożeniu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 04/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860913"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnozowanie problemów po wdrożeniu za pomocą funkcji IntelliTrace
 
@@ -33,7 +31,7 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
 
 -   Programu Visual Studio Enterprise (ale nie w wersji Professional lub Community), aby przejrzeć dane diagnostyczne i Debuguj kod przy użyciu funkcji IntelliTrace
 
-##  <a name="SetUpBuild"></a> Krok 1: Obejmują informacji o Twojej wersji z kompilacji
+##  <a name="SetUpBuild"></a> Krok 1: Zawierają informacje o kompilacji za pomocą swojej wersji
  Skonfiguruj proces kompilacji, aby utworzyć manifest kompilacji (*BuildInfo.config* pliku) dla sieci web projektu i obejmują tę manifestu z danej wersji. Ten manifest zawiera informacje dotyczące projektu kontroli źródła i systemu kompilacji, które zostały użyte do utworzenia konkretnej kompilacji. Informacje te pomagają znaleźć pasującego źródła i symboli, po otwarciu dziennika IntelliTrace, aby przejrzeć zarejestrowane zdarzenia z programu Visual Studio.
 
 ###  <a name="AutomatedBuild"></a> Tworzenie manifestu kompilacji dla zautomatyzowanych kompilacji przy użyciu serwera Team Foundation Server
@@ -160,7 +158,7 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
  Jeśli używasz innych metod do wdrożenia aplikacji, upewnij się, że manifest kompilacji została zmieniona z "*ProjectName*. BuildInfo.config"do"BuildInfo.config"i jest umieszczany w tym samym folderze, z pliku Web.config aplikacji na serwerze sieci web.
 
-## <a name="step-3-monitor-your-app"></a>Krok 3: Monitorowanie aplikacji
+## <a name="step-3-monitor-your-app"></a>Krok 3. Monitorowanie aplikacji
  Konfigurowanie monitorowania wydajności aplikacji na serwerze sieci web tak, aby monitorować swoją aplikację w przypadku problemów, rejestrowanie zdarzeń diagnostycznych i zapisać tych zdarzeń do pliku dziennika IntelliTrace. Zobacz [monitorowania wydania dotycząca problemów z wdrażaniem](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 ##  <a name="InvestigateEvents"></a> Krok 4: Znajdowanie problemu
@@ -170,7 +168,7 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
 1.  Otwórz dziennik IntelliTrace (plik .iTrace) z programu Visual Studio Enterprise. Lub po prostu dwukrotnie kliknąć plik, jeśli masz program Visual Studio Enterprise na tym samym komputerze.
 
-2.  Wybierz **Otwórz rozwiązanie** z Visual Studio automatycznie otwierał pasujące rozwiązanie lub projekt, jeśli projekt nie został zbudowany jako część rozwiązania. [P: czy w dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co zrobić?](#InvalidConfigFile)
+2.  Wybierz **Otwórz rozwiązanie** z Visual Studio automatycznie otwierał pasujące rozwiązanie lub projekt, jeśli projekt nie został zbudowany jako część rozwiązania. [PYT.: W dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co zrobić?](#InvalidConfigFile)
 
      Program Visual Studio automatycznie półki oczekujących zmian, po otwarciu pasujące rozwiązanie lub projekt. Aby uzyskać więcej informacji na temat tego zestawu zmian odłożonych, Szukaj w **dane wyjściowe** okna lub **Team Explorer**.
 
@@ -188,9 +186,9 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
      Aby utworzyć obszar roboczy z określonymi mapowaniami lub nazwą, która nie jest nazwą komputera, wybierz **Zarządzaj**.
 
-     [Pytanie: Dlaczego Visual Studio wskazuje, że moje wybrany obszar roboczy jest nieodpowiedni?](#IneligibleWorkspace)
+     [PYT.: Dlaczego Visual Studio wskazuje, że moje wybrany obszar roboczy jest nieodpowiedni?](#IneligibleWorkspace)
 
-     [P: Dlaczego nie mogę kontynuować, dopóki nie wybiorę kolekcji zespołu lub innej kolekcji?](#ChooseTeamProject)
+     [PYT.: Dlaczego nie mogę kontynuować, dopóki nie wybiorę kolekcji zespołu lub innej kolekcji?](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnozowanie problemów z wydajnością
 
@@ -250,12 +248,12 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
 ###  <a name="FAQ"></a> PYTANIA I ODPOWIEDZI
 
-####  <a name="WhyInclude"></a> P: Dlaczego zawierają informacje o projekcie, kontroli źródła, kompilacji i symboli z mojego wydania?
+####  <a name="WhyInclude"></a> PYT.: Dlaczego zawierają informacje o projekcie, kontroli źródła, kompilacji i symboli z mojego wydania?
  Program Visual Studio używa tych informacji można znaleźć pasujące rozwiązanie i źródła dla wersji, który próbujesz debugować. Po otwarciu dziennika IntelliTrace i wybierz zdarzenie, aby rozpocząć debugowanie, Visual Studio używa symboli do znalezienia i dowiesz się, kod której zaszło zdarzenie. Można przyjrzeć się wartości, które zostały zarejestrowane i szybciej przodu lub do tyłu przez wykonywanie Twojego kodu.
 
  Jeśli używasz serwera TFS, a informacje te nie znajduje się w manifest kompilacji (BuildInfo.config plik), program Visual Studio szuka zgodnego źródła i symboli na Twoje aktualnie połączone TFS. Jeśli program Visual Studio nie może znaleźć poprawne TFS lub pasujące źródło, zostanie wyświetlony monit wybór różnych TFS.
 
-####  <a name="InvalidConfigFile"></a> P: czy w dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co mam zrobić?
+####  <a name="InvalidConfigFile"></a> PYT.: W dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co mam zrobić?
  Może się to zdarzyć, gdy wdrażanie z komputera dewelopera lub nie masz połączenia z TFS podczas wdrażania.
 
 1.  Przejdź do folderu wdrożenia projektu.
@@ -278,11 +276,11 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
   - **TFS**
 
-    - **ProjectCollectionUri**: identyfikator URI dla kolekcji serwera Team Foundation Server i project
+    - **ProjectCollectionUri**: Identyfikator URI dla kolekcji serwera Team Foundation Server i project
 
-    - **ProjectItemSpec**: ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
+    - **ProjectItemSpec**: Ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
 
-    - **ProjectVersionSpec**: wersja projektu
+    - **ProjectVersionSpec**: Wersja projektu
 
       Na przykład:
 
@@ -296,15 +294,15 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
     </SourceControl>
     ```
 
-  - **Git**
+  - **Usługa Git**
 
-    - **GitSourceControl**: lokalizacja **GitSourceControl** schematu
+    - **GitSourceControl**: Lokalizacja **GitSourceControl** schematu
 
-    - **RepositoryUrl**: identyfikator URI dla serwera Team Foundation Server, kolekcji projektów i repozytorium Git
+    - **RepositoryUrl**: Identyfikator URI dla serwera Team Foundation Server, kolekcji projektów i repozytorium Git
 
-    - **ProjectPath**: ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
+    - **ProjectPath**: Ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
 
-    - **CommitId**: identyfikator zatwierdzenie
+    - **CommitId**: Identyfikator dla swojego zatwierdzenia
 
       Na przykład:
 
@@ -324,13 +322,13 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
   - **BuildLabel** (dla TeamBuild): Nazwa i numer kompilacji. Ta etykieta jest również używane jako nazwa zdarzenia wdrażania. Aby uzyskać więcej informacji na temat numerów kompilacji, zobacz [Użyj kompilacji cyfry jako opisowych nazw zakończonych kompilacji](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (zalecane): Lista identyfikatorów URI dla lokalizacji symboli (plik PDB), rozdzielając je średnikami. Te identyfikatory URI może być adresy URL lub UNC. Ułatwia dla programu Visual Studio można znaleźć pasującego symbole, aby pomóc w debugowaniu.
+  - **SymbolPath** (zalecane): Lista identyfikatorów URI dla Twojej lokalizacji symboli (plik PDB), rozdzielonych średnikami. Te identyfikatory URI może być adresy URL lub UNC. Ułatwia dla programu Visual Studio można znaleźć pasującego symbole, aby pomóc w debugowaniu.
 
   - **BuildReportUrl** (dla TeamBuild): Lokalizacja raportu kompilacji w programie TFS
 
-  - **BuildId** (dla TeamBuild): identyfikator URI kompilacji szczegółowych informacji w programie TFS. Ten identyfikator URI jest również używane jako identyfikator zdarzenia wdrażania. To musi identyfikator musi być unikatowy, jeśli nie korzystasz z TeamBuild.
+  - **BuildId** (dla TeamBuild): Identyfikator URI dla szczegółów kompilacji w programie TFS. Ten identyfikator URI jest również używane jako identyfikator zdarzenia wdrażania. To musi identyfikator musi być unikatowy, jeśli nie korzystasz z TeamBuild.
 
-  - **BuiltSolution**: ścieżka do pliku rozwiązania programu Visual Studio używa do znajdowania i otwierania pasującego rozwiązania. To jest zawartość **SolutionPath** właściwości programu MsBuild.
+  - **BuiltSolution**: Ścieżka do pliku rozwiązania, który korzysta z programu Visual Studio do znajdowania i otwierania pasującego rozwiązania. To jest zawartość **SolutionPath** właściwości programu MsBuild.
 
     Na przykład:
 
@@ -348,7 +346,7 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
     </Build>
     ```
 
-  - **Git**
+  - **Usługa Git**
 
     ```xml
     <Build type="MSBuild">
@@ -359,13 +357,13 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> Pytanie: Dlaczego Visual Studio wskazuje, że moje wybrany obszar roboczy jest nieodpowiedni?
- **Odp.:** wybranego obszaru roboczego nie zawiera wszystkich mapowań między folderem kontroli źródła i folderem lokalnym. Aby utworzyć mapowanie dla tego obszaru roboczego, wybierz opcję **Zarządzaj**. W przeciwnym wypadku wybierz już zmapowany obszar roboczy lub utwórz nowy.
+####  <a name="IneligibleWorkspace"></a> PYT.: Dlaczego Visual Studio wskazuje, że moje wybrany obszar roboczy jest nieodpowiedni?
+ **ODP.:** Wybrany obszar roboczy nie ma żadnych mapowań między folderem kontroli źródła i folderem lokalnym. Aby utworzyć mapowanie dla tego obszaru roboczego, wybierz opcję **Zarządzaj**. W przeciwnym wypadku wybierz już zmapowany obszar roboczy lub utwórz nowy.
 
  ![Otwórz z kontroli źródła z Brak mapowanego obszaru roboczego](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> P: Dlaczego nie mogę kontynuować, dopóki nie wybiorę kolekcji zespołu lub innej kolekcji?
- **Odp.:** może się to zdarzyć z następujących powodów:
+####  <a name="ChooseTeamProject"></a> PYT.: Dlaczego nie mogę kontynuować, dopóki nie wybiorę kolekcji zespołu lub innej kolekcji?
+ **ODP.:** Może się to zdarzyć z następujących powodów:
 
 -   Program Visual Studio nie jest połączony z TFS.
 
@@ -381,10 +379,10 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
      ![Otwórz z kontroli źródła &#45; migracji](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> Pyt.: co to jest obszar roboczy?
- **Odp.:** swoje [obszar roboczy przechowuje kopię źródła](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) więc możesz rozwijać i przetestować go oddzielnie przed zaewidencjonowaniem swojej pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.
+####  <a name="WhatWorkspace"></a> PYT.: Co to jest obszar roboczy?
+ **ODP.:** Twoje [obszar roboczy przechowuje kopię źródła](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) więc możesz rozwijać i przetestować go oddzielnie przed zaewidencjonowaniem swojej pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.
 
-####  <a name="UntrustedSymbols"></a> Pyt.: Dlaczego otrzymuję komunikat dotyczący niezaufanych symboli?
+####  <a name="UntrustedSymbols"></a> PYT.: Dlaczego otrzymuję komunikat dotyczący niezaufanych symboli?
  ![Debugowanie przy użyciu ścieżki niezaufanych symboli? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **Odp.:** ten komunikat pojawia się, gdy ścieżki symboli w pliku manifestu kompilacji (\<*ProjectName*>. BuildInfo.config) nie jest dołączone do listy zaufanych ścieżek symboli. Możesz dodać ścieżkę do listy ścieżek symboli w opcjach debugera.
+ **ODP.:** Ten komunikat pojawia się, gdy ścieżki symboli w pliku manifestu kompilacji (\<*ProjectName*>. BuildInfo.config) nie jest dołączone do listy zaufanych ścieżek symboli. Możesz dodać ścieżkę do listy ścieżek symboli w opcjach debugera.

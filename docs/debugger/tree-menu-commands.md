@@ -1,8 +1,6 @@
 ---
 title: Polecenia Menu drzewo | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Tree menu commands
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223821e6884dadd39c03e8af4605f207e6a28a2b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ce1d92bd7a0edd741832c2d5009b671a9d029964
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861682"
 ---
 # <a name="tree-menu-commands"></a>Polecenia menu Drzewo
 **Drzewa** menu zawiera polecenia, aby rozwinąć lub zwinąć widoków.  
   
  **Rozwiń jeden poziom**  
- Rozwija obecnie wybrany element w widoku systemu za pomocą wyświetlania jeden poziom poniżej.  
+ Rozwija obecnie wybranego elementu w widoku systemu, wyświetlając jeden poziom poniżej.  
   
  **Rozwiń gałąź**  
  Rozwija wszystkie poziomy poniżej aktualnie wybranego elementu.  

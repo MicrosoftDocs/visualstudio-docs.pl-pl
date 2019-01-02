@@ -1,9 +1,6 @@
 ---
 title: IDebugCoreServer3::GetServerName | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer3::GetServerName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a6630ecb01bd16584eae7b87f42a11958906ef6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea67af3c46e69373ab361b5e12cc8c7ad1a87f7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866767"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Pobiera nazwę serwera.  
@@ -28,14 +25,14 @@ Pobiera nazwę serwera.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetServerName(  
-   BSTR* pbstrName  
+HRESULT GetServerName(  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetServerName(  
-   out string pbstrName  
+int GetServerName(  
+   out string pbstrName  
 );  
 ```  
   

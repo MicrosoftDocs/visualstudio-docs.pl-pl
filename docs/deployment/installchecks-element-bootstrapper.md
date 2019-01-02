@@ -1,8 +1,6 @@
 ---
 title: '&lt;InstallChecks&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8004ccdcbd320479bcc1e343443ebdb017ee77f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865984"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; — element (program inicjujący)
 `InstallChecks` Element obsługuje uruchamianie szereg testów na komputerze lokalnym, aby upewnić się, że wszystkie odpowiednie wymagania wstępne dotyczące aplikacji zostały zainstalowane.  

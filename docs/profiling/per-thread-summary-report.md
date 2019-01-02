@@ -1,8 +1,6 @@
 ---
-title: Dla każdego wątku — raport podsumowania | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Raport Podsumowanie wątku | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 737e879f040f503ec367438273d2136670a44e21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869586"
 ---
-# <a name="per-thread-summary-report"></a>Dla każdego wątku — raport podsumowania
-Ten wykres słupkowy zawiera część czasu, jaki spędza każdy wątek odkrywane każdej kategorii w aktualnie widocznym zakresie czasu. "Wykonywanie" oznacza, że wątek jest wykonywane; wszystkich innych kategoriach oznacza, że wątek oczekuje na coś.  
+# <a name="per-thread-summary-report"></a>Raport Podsumowanie wątku
+Ten wykres słupkowy zawiera część czas spędzony przez każdy wątek odkrywanie każdej kategorii w aktualnie widocznym zakresie czasu. "Wykonanie" oznacza, że wykonywany jest wątek; wszystkich innych kategoriach oznacza oczekiwania wątku do czegoś.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)   

@@ -2,7 +2,6 @@
 title: Dołącz narzędzia do oceny wydajności do uruchomionego procesu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 193a7bfeeae82147a64643871da70a72400e5054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859688"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Porady: dołączanie i odłączanie narzędzi wydajności do uruchomionego procesu
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: Dołączanie narzędzi do oceny wydajności do uruchomionych procesów i ich odłączanie
 Program profilujący może służyć do dołączenia do lub odłączyć od uruchomionego procesu, aby ułatwić pobierania próbek i zbieranie danych wydajności. Ta metoda umożliwia profilować proces w przypadku, gdy chcesz uniknąć zbierania danych o czas ładowania aplikacji lub do monitorowania wydajności procesu po nim osiągnie określony stan.  
   
 > [!NOTE]
@@ -64,6 +63,6 @@ Program profilujący może służyć do dołączenia do lub odłączyć od uruch
 ## <a name="see-also"></a>Zobacz także  
  [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)   
  [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)   
- [Porady: rozpoczęcia i zakończenia zbierania danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Instrukcje: Rozpoczęcia i zakończenia zbierania danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilowanie i bezpieczeństwo Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

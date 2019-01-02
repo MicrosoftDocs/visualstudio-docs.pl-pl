@@ -1,6 +1,5 @@
 ---
 title: Icon, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40febe9ea2ac45011499dfb38f49fbaa85aa1958
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: db50dd4fa62bb1d6a3947d0c7091c94b2138efff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868082"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon, element (szablony Visual Studio)
 Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która pojawia się w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe dla szablonu.  

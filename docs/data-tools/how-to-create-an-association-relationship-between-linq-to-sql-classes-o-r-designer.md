@@ -1,5 +1,5 @@
 ---
-title: Tworzenie relacji między klasy LINQ do SQL za pomocą Projektanta obiektów relacyjnych
+title: Jak utworzyć relację między klasy LINQ do SQL za pomocą Projektanta obiektów relacyjnych
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -7,51 +7,50 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d247603e14f431e44aa7c1589ba2ecd7463fac02
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 65ec6298b9bdc2aeaec6df0f209cd460f4e70b4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860455"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Porady: Tworzenie skojarzenia między klasy LINQ do SQL (Projektanta obiektów relacyjnych)
-Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] są podobne do relacji między tabelami w bazie danych. Można utworzyć skojarzenia między klasami jednostki przy użyciu **Edytor skojarzenia** okno dialogowe.
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Tworzenie skojarzenia między LINQ to SQL klas (Projektant O/R)
+Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] są analogiczne do relacji między tabelami w bazie danych. Można utworzyć skojarzenia między klasami jednostki przy użyciu **Edytor skojarzeń** okno dialogowe.
 
-Korzystając z należy wybrać klasy nadrzędnej i podrzędnej klasy **Edytor skojarzenia** okno dialogowe, aby utworzyć skojarzenie. Klasa nadrzędna jest klasa jednostki, która zawiera klucz podstawowy; klasy podrzędnej jest klasa jednostki, która zawiera klucz obcy. Na przykład, jeśli klas jednostek zostały utworzone, które są mapowane na `Northwind Customers` i `Orders` tabel, `Customer` klasy będzie klasy nadrzędnej i `Order` klasy będzie klasy podrzędnej.
+Gdy używasz należy wybrać klasy nadrzędnej i podrzędnej klasy **Edytor skojarzeń** okno dialogowe, aby utworzyć skojarzenie. Klasa nadrzędna jest klasa jednostki, który zawiera klucz podstawowy; Klasa potomna jest klasa jednostki, która zawiera klucz obcy. Na przykład, jeśli klas jednostek zostały utworzone mapowane na `Northwind Customers` i `Orders` tabel, `Customer` klasy będzie klasy nadrzędnej i `Order` klasy będzie klasy podrzędnej.
 
 > [!NOTE]
->  Przeciągnięcie tabel z **Eksploratora serwera** lub **Eksploratora bazy danych** na **Projektant obiektów relacyjnych** (**Projektanta obiektów relacyjnych**), skojarzenia są tworzone automatycznie w oparciu o istniejące relacje klucza obcego w bazie danych.
+>  Podczas przeciągania tabel z **Eksploratora serwera** lub **Eksplorator bazy danych** na **Object Relational Designer** (**O/R Designer**), skojarzenia są tworzone automatycznie w oparciu o istniejące relacje klucza obcego w bazie danych.
 
 ## <a name="association-properties"></a>Właściwości skojarzenia
-Po utworzeniu skojarzenia, po wybraniu skojarzenia w **Projektanta obiektów relacyjnych**, brak niektórych właściwości można skonfigurować w **właściwości** okna. (Skojarzenie jest linii między powiązanymi klasami). Poniższa tabela zawiera opisy właściwości skojarzenia.
+Po utworzeniu skojarzenia, po wybraniu skojarzenia w **O/R Designer**, istnieje kilka właściwości możliwych do skonfigurowania w **właściwości** okna. (Skojarzenie jest wiersz między powiązanymi klasami). Poniższa tabela zawiera opis właściwości skojarzenia.
 
 |Właściwość|Opis|
 |--------------|-----------------|
 |**Kardynalność**|Określa, czy skojarzenie jest jeden do wielu lub jeden do jednego.|
-|**Właściwość elementu podrzędnego**|Określa, czy można utworzyć właściwości nadrzędnej, czy jest kolekcja lub odwołanie do rekordów podrzędnych po stronie klucza obcego skojarzenia. Na przykład w przypadku skojarzenia między `Customer` i `Order`, jeśli **właściwość podrzędna** ma ustawioną wartość **True**, właściwość o nazwie `Orders` jest tworzony w klasie nadrzędnej.|
-|**Właściwość nadrzędna**|Właściwość klasy podrzędnej, który odwołuje się do skojarzoną klasę nadrzędną. Na przykład w przypadku skojarzenia między `Customer` i `Order`, właściwość o nazwie `Customer` odwołującą klienta skojarzone zamówienia jest tworzona na `Order` klasy.|
-|**Właściwości uczestniczących**|Wyświetla właściwości skojarzenia oraz **wielokropka** przycisku (...), który otwiera ponownie **Edytor skojarzenia** okno dialogowe.|
-|**Unikatowe**|Określa, czy obce kolumny docelowe mają ograniczenie unikatowości.|
+|**Właściwości elementu podrzędnego**|Określa, czy ma być utworzona właściwość kolekcji lub odwołanie do rekordów podrzędnych po stronie klucza obcego skojarzenia obiektu nadrzędnego. Na przykład w przypadku skojarzenia między `Customer` i `Order`, jeśli **właściwości elementu podrzędnego** ustawiono **True**, właściwość o nazwie `Orders` jest tworzona w klasie nadrzędnej.|
+|**Właściwość nadrzędna**|Właściwość klasy podrzędnej, przywołującej skojarzoną klasę nadrzędną. Na przykład w przypadku skojarzenia między `Customer` i `Order`, właściwość o nazwie `Customer` odwołujący skojarzonego odbiorcy zamówienie zostanie utworzone na `Order` klasy.|
+|**Właściwości uczestniczące**|Wyświetla właściwości skojarzenia oraz **wielokropka** przycisku (...), który otwiera ponownie **Edytor skojarzeń** okno dialogowe.|
+|**unikatowe**|Określa, czy obce kolumny docelowe mają ograniczenie unikatowości.|
 
 ## <a name="to-create-an-association-between-entity-classes"></a>Aby utworzyć skojarzenie między klasami jednostki
 
-1.  Kliknij prawym przyciskiem myszy klasę jednostki, która reprezentuje klasy nadrzędnej skojarzenia, wskaż pozycję **Dodaj**, a następnie kliknij przycisk **skojarzenia**.
+1.  Kliknij prawym przyciskiem myszy klasę jednostki, która reprezentuje klasa nadrzędna do skojarzenia, wskaż opcję **Dodaj**, a następnie kliknij przycisk **skojarzenie**.
 
-2.  Upewnij się, że zostały prawidłowo **klasy nadrzędnej** wybrano w **Edytor skojarzenia** okno dialogowe.
+2.  Sprawdź, czy poprawny **klasy nadrzędnej** wybrano **Edytor skojarzeń** okno dialogowe.
 
 3.  Wybierz **klasy podrzędnej** w polu kombi.
 
-4.  Wybierz **właściwości skojarzenia** dotyczących klas. Zwykle to mapuje relacji klucza obcego w bazie danych. Na przykład w `Customers` i `Orders` skojarzenia, **właściwości skojarzenia** są `CustomerID` dla każdej klasy.
+4.  Wybierz **właściwości skojarzenia** powiązanych klas. Zwykle to mapuje relacji klucza obcego w bazie danych. Na przykład w `Customers` i `Orders` skojarzenia, **właściwości skojarzenia** są `CustomerID` dla każdej klasy.
 
-5.  Kliknij przycisk **OK** można utworzyć skojarzenia.
+5.  Kliknij przycisk **OK** utworzyć skojarzenie.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Wskazówki: Tworzenie LINQ w klasach SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Przewodnik: Tworzenie zapytań LINQ do klas SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Metody DataContext (Projektanta obiektów relacyjnych)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Porady: reprezentuje kluczy podstawowych](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)
+- [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Instrukcje: Reprezentacja kluczy podstawowych](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

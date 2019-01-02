@@ -13,15 +13,14 @@ manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 39dd45f7b66dfe0966f3a8c62841f591d56a195a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865547"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optymalizowanie czasu uruchamiania programu Visual Studio
 
@@ -59,11 +58,11 @@ Można zawsze ponownie włączyć rozszerzenie dla przyszłych sesji przy użyci
 
 3. Wybierz jedną z następujących trzech opcji:
 
-   - **Użyj zachowania domyślnego:** domyślne zachowanie dla okna narzędzia. Utrzymywanie wybrania tej opcji nie poprawi wydajność uruchamiania.
+   - **Użyj zachowania domyślnego:** Domyślne zachowanie okna narzędzia. Utrzymywanie wybrania tej opcji nie poprawi wydajność uruchamiania.
 
-   - **Nie pokazuj okna przy uruchamianiu:** oknie określonego narzędzia jest zawsze zamknięte po otwarciu programu Visual Studio, nawet wtedy, gdy zostanie on otwarty w poprzedniej sesji. Możesz otworzyć okno narzędzia menu odpowiednie, gdy będą potrzebne.
+   - **Nie pokazuj okna przy uruchamianiu:** W oknie określonego narzędzia jest zawsze zamknięte po otwarciu programu Visual Studio, nawet wtedy, gdy zostanie on otwarty w poprzedniej sesji. Możesz otworzyć okno narzędzia menu odpowiednie, gdy będą potrzebne.
 
-   - **Automatycznie Ukryj okno przy uruchamianiu:** Jeśli okno narzędzia zostało pozostawione otwarte w poprzedniej sesji, ta opcja zwija grupy okna narzędzi przy uruchamianiu w celu uniknięcia Inicjowanie okna narzędzia. Ta opcja jest dobrym rozwiązaniem, jeśli często używane okna narzędzi. Okna narzędzi jest nadal dostępna, ale nie będzie miało negatywny wpływ na czas uruchamiania programu Visual Studio.
+   - **Automatycznie Ukryj okno przy uruchamianiu:** Jeśli okno narzędzia zostało pozostawione otwarte w poprzedniej sesji, ta opcja powoduje grupy okna narzędzi przy uruchamianiu w celu uniknięcia Inicjowanie okna narzędzia. Ta opcja jest dobrym rozwiązaniem, jeśli często używane okna narzędzi. Okna narzędzi jest nadal dostępna, ale nie będzie miało negatywny wpływ na czas uruchamiania programu Visual Studio.
 
      ![Zarządzanie wydajnością programu Visual Studio — wyświetlanie okien narzędzi](../ide/media/vside_perfdialog_toolwindows.png)
 

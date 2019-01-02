@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d56d71dd8c8e144c8a2267ed4571b661cca378c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 7014e59b41ff4d8e75fd5f983e6bf07c1e11378d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874049"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -145,7 +144,7 @@ Ten artykuł zawiera następujące zadania integratorzy Visual Studio podglądu 
 
 4.  Dodaj fragment kodu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Dodawanie tekstu określonego języka kodu: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` należy pamiętać, że devLangnu = umożliwia wprowadzenie innych języków. Na przykład devLangnu = "Fortran" spowoduje wyświetlenie Fortran po fragmencie kodu DisplayLanguage = Fortran
+5.  Dodaj kod języka określonego tekstu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Należy pamiętać, że devLangnu = umożliwia wprowadzenie innych języków. Na przykład devLangnu = "Fortran" spowoduje wyświetlenie Fortran po fragmencie kodu DisplayLanguage = Fortran
 
 6.  Dodawanie łączy strony: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -287,13 +286,13 @@ some F# code
 
  Gdy Podgląd pomocy domyślne źródło zawartości pomocy jest równa online (uruchamianie w przeglądarce):
 
-- Funkcje programu Visual Studio Partner (VSP) Dodaj wartość do zbioru właściwości F1 (prefix.keyword zbiór właściwości oraz online adres URL dla prefiksu znaleziony w rejestrze): F1 wysyła adres URL pliku VSP + parametrów do przeglądarki.
+- Funkcje programu Visual Studio Partner (VSP) Dodaj wartość do zbioru właściwości F1 (prefix.keyword zbiór właściwości oraz online adres URL dla prefiksu znaleziony w rejestrze): F1 wysyła adres URL pliku VSP + parametrów w przeglądarce.
 
-- Funkcje programu Visual Studio (Edytor języków, elementy określonego menu programu Visual Studio itp.): F1 wysyła Visual Studio adres URL do przeglądarki.
+- Funkcje programu Visual Studio (Edytor języka, elementy określonego menu programu Visual Studio, itp.):  F1 wysyła Visual Studio adresu URL w przeglądarce.
 
   Gdy Podgląd pomocy domyślne źródło zawartości pomocy jest równa pomocy lokalnej (Uruchom w Podglądzie pomocy):
 
-- VSP funkcji, jeśli słowo kluczowe są takie same między F1 zbiór właściwości, a indeksu magazynu lokalnego (czyli prefix.keyword zbioru właściwości = wartość znajdującą się w indeksie magazynu lokalnego): F1 powoduje wyświetlenie tematu w Podglądzie pomocy.
+- VSP funkcji, jeśli słowo kluczowe są takie same między F1 zbiór właściwości, a indeksu magazynu lokalnego (czyli prefix.keyword zbioru właściwości = wartość znajdującą się w indeksie magazynu lokalnego):  F1 powoduje wyświetlenie tematu w Podglądzie pomocy.
 
 - Funkcje programu Visual Studio (bez opcji VSP zastąpić zbioru właściwości emitowane przez funkcje programu Visual Studio): F1 powoduje wyświetlenie tematu w Podglądzie Pomocy programu Visual Studio.
 
@@ -329,7 +328,7 @@ some F# code
 
    **Podstawowa analiza kodu natywnego Namespace**
 
-   Aby włączyć funkcję analizy podstawowej natywnych przestrzeni nazw, w rejestrze Dodaj nową wartość typu DWORD o nazwie: BaseNativeNamespaces i ustawić jej wartość na 1 (klucz katalogu, który chce obsługiwać).  Na przykład jeśli chcesz używać katalogu programu Visual Studio, można dodać klucza do ścieżki:
+   Aby włączyć w podstawowej przestrzeni nazw natywnych, analizy, w rejestrze Dodaj nową wartość typu DWORD o nazwie: BaseNativeNamespaces i ustawić jej wartość na 1 (klucz katalogu, który chce obsługiwać).  Na przykład jeśli chcesz używać katalogu programu Visual Studio, można dodać klucza do ścieżki:
 
    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
@@ -347,7 +346,7 @@ some F# code
 
   Dodaj następujący klucz rejestru i wartości:
 
-  Klawisz Pomocy HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic: dane wyjściowe debugowania wyświetlanie wartości sprzedaży detalicznej: tak
+  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic klawisz Pomocy: Wyświetlanie danych wyjściowych debugowania w sprzedaży detalicznej wartości: TAK
 
   W środowisku IDE, w menu Pomoc wybierz pozycję "Debuguj kontekst pomocy"
 
@@ -377,7 +376,7 @@ some F# code
 
  Pakiety znakowania są instalowane przez produkt zawierający podglądu pomocy.  W przypadku produktów Visual Studio:
 
-- Bazowy pakiet znakowania (Branding_\<ustawień regionalnych > .mshc) jest zainstalowana w katalogu głównym aplikacji Help Viewer 2.1 (przykład: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) przez pakiet językowy podglądu pomocy.  Jest ono używane w przypadkach, w których nie zainstalowano produkt znakowania pakietów (Brak zawartości został zainstalowany) lub gdzie zainstalowany pakiet znakowania są uszkodzone.  Elementy programu Visual Studio (logo i opinie) są ignorowane, gdy główny rezerwowego znakowania pakietu aplikacji jest używany.
+- Bazowy pakiet znakowania (Branding_\<ustawień regionalnych > .mshc) jest zainstalowana w katalogu głównym aplikacji Help Viewer 2.1 (przykład: \Microsoft Help Viewer\v2.1 pliki (x86) C:\Program) przez pakiet językowy podglądu pomocy.  Jest ono używane w przypadkach, w których nie zainstalowano produkt znakowania pakietów (Brak zawartości został zainstalowany) lub gdzie zainstalowany pakiet znakowania są uszkodzone.  Elementy programu Visual Studio (logo i opinie) są ignorowane, gdy główny rezerwowego znakowania pakietu aplikacji jest używany.
 
 - Po zainstalowaniu usługi zawartości pakietu zawartości programu Visual Studio znakowania pakietów jest również instalowany (w przypadku pierwszego scenariusza instalacji zawartości czasu).  W przypadku aktualizacji do znakowania pakietów, aktualizacja jest zainstalowana podczas następnej aktualizacji zawartości lub Akcja instalacji dodatkowego pakietu.
 
@@ -560,7 +559,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Plik**|**Użyj**|**Wyświetlane źródła zawartości**|
+|**Plik**|**Korzystanie**|**Wyświetlane źródła zawartości**|
 |Strona_główna.htm|Jest to strona, wyświetlająca aktualnie zainstalowaną zawartość i wszystkie inne komunikaty odpowiednie do zaprezentowania użytkownikowi o ich zawartości.  Ten plik zawiera dodatkowe meta danych atrybutu "Microsoft.Help.Id" zawartość = "-1" który umieszcza to zawartości w górnej części lokalnej zawartości spisu treści.||
 ||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, tag \<HomePageTitle >|
 ||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, tag \<HomePageIntroduction >|
@@ -595,7 +594,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Plik**|**Użyj**|**Przykłady**|
+|**Plik**|**Korzystanie**|**Przykłady**|
 |Clear.GIF|Używany do renderowania obszaru zwijany||
 |footer_slice.GIF|Prezentacja stopki||
 |info_icon.GIF|Używany podczas wyświetlania informacji|Zrzeczenie odpowiedzialności|
@@ -732,7 +731,7 @@ some F# code
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US
 
-   Klucz: Wartość ciągu CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] dokumentacji
+   Klucz: Wartość ciągu CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Dokumentacja
 
   **Tworzenie projektu**
 
@@ -809,7 +808,7 @@ some F# code
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en — Stany Zjednoczone
 
-     Klucz: Wartość ciągu CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] dokumentacji. Dla powłoki ISO jest to nazwa katalogu.
+     Klucz: Wartość ciągu CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Dokumentacja. Dla powłoki ISO jest to nazwa katalogu.
 
 15. Skopiuj zawartość (pliki cab lub MSHC i MSHA) do folderu lokalnego.
 

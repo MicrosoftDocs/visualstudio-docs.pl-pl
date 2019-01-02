@@ -1,9 +1,6 @@
 ---
 title: formant XMLNodes
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,33 +13,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18b1a9cf6028b02d16b15b17950b9918b7b79d89
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 227c7b72e8574556cfb18635b6fa329229c4bea6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865430"
 ---
 # <a name="xmlnodes-control"></a>formant XMLNodes
-  **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest przedstawioną wyłącznie do korzyści i użyj osób i organizacji, które znajdują się poza Stanami Zjednoczonymi i jego terytoriów lub używający lub tworzenie programy, które działają na, produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy plik XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word może nie być odczytywane lub używane przez osoby lub organizacji w Stanach Zjednoczonych lub w jego terytoriów użytkowników przy użyciu lub tworzenie programów uruchamianych na produktów Microsoft Word, które są licencjonowane przez firmę Microsoft po 10 stycznia 2010 ; te produkty nie będzie działać taka sama jak produktów licencjonowanych przed tą datą lub zakupione i licencję na korzystanie z niego poza Stanami Zjednoczonymi.  
+  **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant jest zbiór mapowanych obiektów węzła XML, który opisuje zdarzenia. <xref:Microsoft.Office.Tools.Word.XMLNodes> Kontroli jest tworzony tylko wtedy, gdy powtarzający się element schematu jest mapowana na dokument programu Microsoft Office Word. Jeśli powtarzający się element zawiera elementy podrzędne, każdy z elementów podrzędnych tworzona jest również jako <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu.  
+ <xref:Microsoft.Office.Tools.Word.XMLNodes> Kontroli to zbiór mapowanych obiektów węzła XML, który przedstawia zdarzenia. <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant zostanie utworzony tylko wtedy, gdy powtarzający się element schematu jest mapowana na dokument programu Microsoft Office Word. Jeśli powtarzający się element zawiera elementy podrzędne, każdy z elementów podrzędnych jest tworzona jako <xref:Microsoft.Office.Tools.Word.XMLNodes> kontroli.  
   
- Gdy program Visual Studio utworzy kolekcja węzłów XML, można programu względem formantu bezpośrednio, bez konieczności przechodzenia modelu obiektów programu Word. <xref:Microsoft.Office.Tools.Word.XMLNodes> Formantu można usunąć tylko przez usunięcie mapowania elementu z dokumentu.  
+ Gdy program Visual Studio utworzy kolekcję węzłów XML, można programować względem kontrolki bezpośrednio, bez konieczności przechodzenia z modelu obiektów programu Word. <xref:Microsoft.Office.Tools.Word.XMLNodes> Kontroli można usunąć tylko wtedy, usuwając mapowania elementu z dokumentu.  
   
 > [!NOTE]  
->  Jeśli dostęp do elementu podrzędnego <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolować za pośrednictwem <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> właściwości, zwraca <xref:Microsoft.Office.Interop.Word.XMLNode> obiektu zamiast <xref:Microsoft.Office.Tools.Word.XMLNode> formantu. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  Jeśli masz dostępu do elementu podrzędnego <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolować za pośrednictwem <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> właściwość zwraca <xref:Microsoft.Office.Interop.Word.XMLNode> obiektu zamiast <xref:Microsoft.Office.Tools.Word.XMLNode> kontroli. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ## <a name="bind-data-to-the-control"></a>Wiązanie danych do kontrolki  
- <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant nie obsługuje powiązanie danych. Jest to spowodowane <xref:Microsoft.Office.Tools.Word.XMLNodes> formant nie ma złożone powiązanie możliwości danych i proste powiązanie danych nie może reprezentować powtarzanie danych.  
+ <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant nie obsługuje powiązanie danych. Jest to spowodowane <xref:Microsoft.Office.Tools.Word.XMLNodes> formant nie ma powiązania możliwości złożonych danych i proste powiązanie danych nie może reprezentować powtarzających się danych.  
   
 ## <a name="formatting"></a>Formatowanie  
- Żadnego formatowania, który można zastosować do tekstu w dokumencie można zastosować do <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu.  
+ Żadne formatowanie, który można zastosować do tekstu w obrębie dokumentu mogą być stosowane do <xref:Microsoft.Office.Tools.Word.XMLNodes> kontroli.  
   
 ## <a name="events"></a>Zdarzenia  
- Dostępne dla zdarzeń <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu są:  
+ Zdarzenia dostępne dla <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrola to:  
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>  
   
@@ -60,8 +57,8 @@ ms.locfileid: "35258541"
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>  
   
-## <a name="compare-events"></a>Porównanie zdarzenia  
- Można przechwycić zdarzenie, gdy użytkownik przesuwa kursor lub jej w kontekście określonego <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu. Na przykład może być <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu o nazwie `Customer` ma element podrzędny <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu o nazwie `Company`, i `Company` ma dwa podrzędny <xref:Microsoft.Office.Tools.Word.XMLNodes> formantów `CompanyName` i `CompanyRegion` w następujący sposób:  
+## <a name="compare-events"></a>Porównanie zdarzeń  
+ Można przechwycić zdarzenie, gdy użytkownik przesuwa kursor jej w kontekście określonego <xref:Microsoft.Office.Tools.Word.XMLNodes> kontroli. Na przykład, Niewykluczone, że <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu o nazwie `Customer` ma element podrzędny <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu o nazwie `Company`, i `Company` ma dwa podrzędny <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolki o nazwie `CompanyName` i `CompanyRegion` w następujący sposób:  
   
 ```xml  
 <Customer>  
@@ -70,24 +67,22 @@ ms.locfileid: "35258541"
         <CompanyRegion>  
 ```  
   
- Jeśli chcesz wyświetlić formantu w okienku Akcje zawsze, gdy kursor jest przenoszony do `Company` węzła, jego powinien niezależnie od tego, czy znajduje się kursor w `CompanyName` lub `CompanyRegion` ponieważ są one zarówno w kontekście `Company`. W takim przypadku możesz pisać kod <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> zdarzenie `Company`.  
+ Jeśli chcesz wyświetlić formant w okienku Akcje zawsze, gdy kursor jest przenoszony do `Company` węzła, go powinna nie ma znaczenia, czy znajduje się kursor w `CompanyName` lub `CompanyRegion` ponieważ są one zarówno w kontekście `Company`. W tym przypadku pisanie kodu w <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> zdarzenia `Company`.  
   
- W większości przypadków, gdy kursor wprowadza <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolować zarówno <xref:Microsoft.Office.Tools.Word.XMLNodes.Select> i <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> pojawienia się zdarzenia. W poniższej tabeli przedstawiono różnice między tymi zdarzeniami.  
+ W większości przypadków, gdy kursor przejdzie <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolować zarówno <xref:Microsoft.Office.Tools.Word.XMLNodes.Select> i <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> zdarzenia są wywoływane. W poniższej tabeli przedstawiono różnice między tymi zdarzeniami.  
   
 |Wybierz zdarzenie|Zdarzenie ContextEnter|  
 |------------------|------------------------|  
-|Występuje, gdy kursor znajduje się w jednym z węzłów <xref:Microsoft.Office.Tools.Word.XMLNodes> kolekcji.|Występuje, gdy kursor znajduje się w jednym z węzłów lub węzły podrzędne <xref:Microsoft.Office.Tools.Word.XMLNodes> kolekcji z obszaru poza kontekstem węzła. Innymi słowy, jest wywoływane tylko wtedy, gdy zmieni się kontekstu i może nie być zgłaszany wielu zagnieżdżonych <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolki.|  
+|Występuje, gdy kursor znajduje się w jednym z węzłów <xref:Microsoft.Office.Tools.Word.XMLNodes> kolekcji.|Występuje, gdy kursor znajduje się w jednym z węzłów i węzłów podrzędnych <xref:Microsoft.Office.Tools.Word.XMLNodes> kolekcji z obszaru poza kontekstem węzła. Innymi słowy, jest zgłaszany tylko wtedy, gdy zmienia kontekst i może nie być zgłaszany wielu zagnieżdżonych <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolki.|  
   
- Na przykład, gdy kursor jest z poza `Customer` do `CompanyName`, <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> zdarzenia `Customer`, `Company`, i `CompanyName` są zgłaszane. Jeśli następnie przesuń kursor z `CompanyName` do `CompanyRegion`, <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> zdarzenia tylko dla `CompanyRegion` jest zgłaszane, ponieważ kontekst jest taka sama dla obu `Company` i `Customer`. Istnieje wiele `Company` węzły w dokumencie. Przesunięcie kursora z `CompanyName` węzła jednego `Company` do `CompanyName` węzła innego `Company`, kontekst jest taka sama, co pozwoli tylko <xref:Microsoft.Office.Tools.Word.XMLNodes.Select> zdarzenia.  
+ Na przykład, gdy kursor jest z poza `Customer` do `CompanyName`, <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> zdarzeń związanych z `Customer`, `Company`, i `CompanyName` są wywoływane. Jeśli następnie przesuń kursor z `CompanyName` do `CompanyRegion`, <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> zdarzenia tylko dla `CompanyRegion` jest wywoływane, ponieważ kontekst ma takie same dla obu `Company` i `Customer`. Masz wiele `Company` węzły w dokumencie. Jeśli przesuniesz kursor z `CompanyName` jeden węzeł `Company` do `CompanyName` węzła innego `Company`, kontekstu jest taka sama, dlatego tylko <xref:Microsoft.Office.Tools.Word.XMLNodes.Select> zdarzenie jest wywoływane.  
   
  Tym samym różnice między <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave> zdarzeń i <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect> zdarzeń.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
+ [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Formant XMLNode](../vsto/xmlnode-control.md)   
- [Porady: dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)   
- [Porady: mapowanie schematów z dokumentami programu Word w Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  
+ [Instrukcje: Dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)   
+ [Instrukcje: Mapowanie schematów z dokumentami programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

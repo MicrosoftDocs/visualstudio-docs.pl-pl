@@ -1,9 +1,7 @@
 ---
 title: Locationfield — Element (szablony projektu Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76ed39186796b692dd6bc93ab0eaea50f217b7af
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bbdff5e2dcee4611b5a46cc74f0255f94d30744
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868506"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Locationfield — element (szablony projektu Visual Studio)
 Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jest włączone, wyłączone lub ukryty w przypadku szablonu projektu.  

@@ -2,7 +2,6 @@
 title: Strona aplikacji we właściwościach projektu VB
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: eafc6822477f709216f1424d9b4704e6b7acb413
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859045"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 
@@ -66,7 +65,7 @@ Wartość domyślna jest zgodna platformy docelowej, określone w **nowy projekt
 > [!NOTE]
 > Wstępnie wymagane pakiety, które są wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie po otwarciu okna dialogowego po raz pierwszy. Jeśli użytkownik zmieni później platformę docelową projektu, należy określić wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.
 
-Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
+Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [programu Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Typ aplikacji
 

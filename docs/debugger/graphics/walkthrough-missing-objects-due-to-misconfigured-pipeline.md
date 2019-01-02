@@ -1,8 +1,6 @@
 ---
 title: 'Przewodnik: Brak obiektów spowodowany błędnie skonfigurowanym potokiem | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863972"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Wskazówki: brak obiektów spowodowany błędnie skonfigurowanym potokiem
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Przewodnik: Brak obiektów spowodowany błędnie skonfigurowanym potokiem
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na program do cieniowania pikseli nie ustawiono.  
   
  Ten instruktaż ilustruje następujące zadania:  

@@ -1,5 +1,5 @@
 ---
-title: Projektanta wiadomości O-R
+title: Projektanta wiadomości O R
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
@@ -7,25 +7,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859870"
 ---
 # <a name="or-designer-messages"></a>Komunikaty Projektanta obiektów relacyjnych
 
-Ten temat zawiera listę komunikatów, które mogą wystąpić podczas pracy z Projektanta obiektów relacyjnych.
+Ten temat zawiera listę komunikatów, które można napotkać podczas pracy za pomocą Projektanta obiektów relacyjnych.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
- [Nie można utworzyć skojarzenia \<Nazwa skojarzenia >-właściwości są wyświetlane dwa razy](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Nie można utworzyć skojarzenia \<Nazwa skojarzenia > — Właściwość jest wymieniona dwukrotnie](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Nie można utworzyć skojarzenia \<Nazwa skojarzenia >-typów właściwości, które nie są zgodne.](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Nie można utworzyć skojarzenia \<Nazwa skojarzenia > — Typy właściwości nie są zgodne.](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [Zmiany zwracanego typu metody DataContext nie można cofnąć](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
@@ -41,9 +40,9 @@ Ten temat zawiera listę komunikatów, które mogą wystąpić podczas pracy z P
 
  [Obiekty dodawane do projektanta używają innego połączenia danych niż aktualnie używane przez projektanta](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [Właściwość \<właściwość name > nie można usunąć](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [Właściwość \<nazwa właściwości > nie można usunąć](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [Właściwość \<właściwość name > nie można usunąć, ponieważ uczestniczy ona w skojarzeniu \<Nazwa skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [Właściwość \<nazwa właściwości > nie można usunąć, ponieważ uczestniczy w skojarzeniu \<Nazwa skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [Nie można usunąć wybranej klasy, ponieważ jest ona używana jako zwracany typ przez co najmniej jedną metodę DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
@@ -61,5 +60,5 @@ Ten temat zawiera listę komunikatów, które mogą wystąpić podczas pracy z P
 
 ## <a name="see-also"></a>Zobacz także
 
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

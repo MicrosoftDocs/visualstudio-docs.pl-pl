@@ -1,19 +1,18 @@
 ---
 title: Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 ms.date: 10/08/2018
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: mblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3772c2c910188aacb675f267d20f5e0f16565001
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864877"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -49,7 +48,7 @@ Dla projektów plików reguł programu make, które są oparte na szablonie proj
 
 ![Ścieżki dołączanych plików projektu pliku reguł programu make](media/vcpp-intellisense-makefile-include-paths.png)
 
-Aby uzyskać więcej informacji, zobacz [porady: Włączanie funkcji IntelliSense dla projektów plików reguł programu make](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
+Aby uzyskać więcej informacji, zobacz [jak: Włączanie funkcji IntelliSense dla projektów plików reguł programu make](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
 
 ### <a name="open-folder-projects"></a>Otwórz Folder projektów
 

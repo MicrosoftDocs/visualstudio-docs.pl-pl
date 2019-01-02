@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6ca37a7bdcad290f9ab0c6d54814615731f6678c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0d3ecde38059a5558c3681a9109cb8bb12d1bcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859193"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106: Potwierdzanie zabezpieczeń
+# <a name="ca2106-secure-asserts"></a>CA2106: Zabezpiecz asercje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,6 +50,3 @@ ms.locfileid: "49864741"
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [Wytyczne dotyczące bezpiecznego programowania](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
-
-
-

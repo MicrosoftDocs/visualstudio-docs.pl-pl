@@ -2,7 +2,6 @@
 title: Wyświetlanie definicji typu
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868907"
 ---
 # <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typów i elementów członkowskich
 
@@ -52,7 +51,7 @@ Naciśnij klawisz **Ctrl** (lub dowolnego klawisz modyfikujący został wybrany 
 
 Jeśli wgląd w innej definicji w oknie podręcznym zostanie uruchomiona ścieżki linków do stron nadrzędnych, której można nawigować przy użyciu kółka i strzałki, które pojawiają się powyżej okno podręczne.
 
-Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Wyświetlanie metadanych jako kodu źródłowego (C#)
 
@@ -79,4 +78,4 @@ Nowość w programie Visual Studio 2017 w wersji 15.6, można ustawić opcje, ab
 ## <a name="see-also"></a>Zobacz także
 
 - [Przechodzenie do kodu](../ide/navigating-code.md)
-- [Porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Instrukcje: Wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

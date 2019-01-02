@@ -2,7 +2,6 @@
 title: C#fragmenty kodu
 ms.date: 06/05/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be3af132a84b37043cf185beb26293ef5618439b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858246"
 ---
 # <a name="c-code-snippets"></a>C#fragmenty kodu
 
@@ -79,4 +78,4 @@ Domyślnie następujące fragmenty kodu są uwzględnione w programie Visual Stu
 - [Funkcje fragmentów kodu](../ide/code-snippet-functions.md)
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Parametry szablonu](../ide/template-parameters.md)
-- [Porady: użycie fragmentów kodu polecenia Otocz przez](../ide/how-to-use-surround-with-code-snippets.md)
+- [Instrukcje: Użycie fragmentów kodu polecenia Otocz przez](../ide/how-to-use-surround-with-code-snippets.md)

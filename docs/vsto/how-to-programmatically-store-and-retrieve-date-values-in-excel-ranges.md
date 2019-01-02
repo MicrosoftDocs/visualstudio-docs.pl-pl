@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane przechowywanie i pobieranie wartości daty w zakresach programu Excel'
-ms.custom: ''
+title: 'Instrukcje: Programowe przechowywanie i pobieranie wartości daty w zakresach programu Excel'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a28a357aa6a01615d269c6fba41c690f41c7b93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863907"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Porady: programowane przechowywanie i pobieranie wartości daty w zakresach programu Excel
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Instrukcje: Programowe przechowywanie i pobieranie wartości daty w zakresach programu Excel
   Można przechowywać i pobierać wartości w <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -87,8 +84,6 @@ ms.locfileid: "35677256"
  [Praca z zakresami](../vsto/working-with-ranges.md)   
  [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
- [Porady: programowane odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Instrukcje: Programowe odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Instrukcje: Dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c850ce27349f283444a2379f8e277be7298381fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2ea9a86ee2492cc303f36bfd35fda51275469265
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870487"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Powiadomienia i postęp dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,8 +53,8 @@ ms.locfileid: "53052101"
 |[Wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Użycie, w przypadku konieczności raportować postęp (określony lub nieokreślony). Istnieją różne typy wskaźników postępu i użycie określone dla każdego. Zobacz [wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||
 |[Visual Studio powiadomienia okna](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Okno powiadomień nie jest rozszerzalna publicznie. Służy do komunikowania się z szeregu komunikaty dotyczące programu Visual Studio, w tym krytycznych problemów z licencji i informacyjny powiadomienia o aktualizacji do programu Visual Studio lub pakietów.|Nie należy używać dla innych typów powiadomień.|
 |[Lista błędów](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Gdy problem odnosi się bezpośrednio do aktualnie otwartego rozwiązania użytkownika wystąpił problem (/ ostrzeżenia/informacje o błędzie), ich może być konieczne podejmowanie akcji na kod.<br /><br /> To dotyczy, na przykład:<br /><br /> — Komunikaty kompilatora (/ ostrzeżenia/informacje o błędzie)<br /><br /> -Code diagnostycznych analizatora komunikatów o kodzie<br /><br /> — Tworzenie wiadomości<br /><br /> Może być odpowiednie dla zagadnienia odnoszące się do plików projektu lub rozwiązania, ale najpierw należy wziąć pod uwagę wskazanie Eksploratora rozwiązań.|Nie należy używać dla elementów, które nie mają żadnych relacji kodowi otwartego rozwiązania użytkownika.|
-|Edytor powiadomienia: żarówka|Użycie, gdy poprawka jest dostępna rozwiązać problem, który istnieje w otwartego pliku.<br /><br /> Należy zauważyć, że ikona żarówki powinien być używany do hostowania szybkie akcje, które pochodzą od użytkownika kodu na żądanie, takie jak refaktoryzacji, ale w takiej sytuacji nie będą widoczne "style powiadomień".|Nie należy używać dla elementów, które nie mają żadnych relacji do otwartego pliku.|
-|Edytor powiadomienia: faliste linie|Użyj, aby ostrzec użytkownika wystąpił problem z określonego zakresu swój kod open (na przykład czerwona fala błędów).|Nie należy używać dla elementów, które nie odnoszą się do określonego zakresu swój kod open.|
+|Edytor powiadomienia: Żarówka|Użycie, gdy poprawka jest dostępna rozwiązać problem, który istnieje w otwartego pliku.<br /><br /> Należy zauważyć, że ikona żarówki powinien być używany do hostowania szybkie akcje, które pochodzą od użytkownika kodu na żądanie, takie jak refaktoryzacji, ale w takiej sytuacji nie będą widoczne "style powiadomień".|Nie należy używać dla elementów, które nie mają żadnych relacji do otwartego pliku.|
+|Edytor powiadomienia: Faliste linie|Użyj, aby ostrzec użytkownika wystąpił problem z określonego zakresu swój kod open (na przykład czerwona fala błędów).|Nie należy używać dla elementów, które nie odnoszą się do określonego zakresu swój kod open.|
 |[Paski stanu osadzonego](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|Służy do udostępniania informacji o stanie związane z zawartością lub proces w kontekście określonego narzędzia okna, okno dokumentu lub okna dialogowego.|Nie należy używać produktu ogólne powiadomienia, procesy lub elementy, które nie mają żadnych relacji z zawartością w określonym oknie.|
 |[Windows na pasku powiadomień](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|Służy do powierzchni powiadomienia dla procesów procesem lub towarzyszące aplikacje.|Nie należy używać powiadomień, które mają zastosowanie w środowisku IDE.|
 |[Bąbelki powiadomień](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Użyj, aby powiadomić zdalnego procesu lub zmienić **poza** środowiska IDE.|Nie należy używać jako środek do powiadamiania użytkownika procesów **w ramach** IDE.|
@@ -335,13 +334,13 @@ ms.locfileid: "53052101"
 ### <a name="creating-an-infobar"></a>Tworzenie pasek informacyjny
  Pasek informacyjny zawiera cztery sekcje, od lewej do prawej:
 
--   **Ikona:** jest to, gdzie należy dodać wszystkie ikony chcesz wyświetlić na pasku informacyjnym, takie jak ikona ostrzeżenia.
+-   **Ikona:** Jest to, gdzie należy dodać wszystkie ikony chcesz wyświetlić na pasku informacyjnym, takie jak ikona ostrzeżenia.
 
--   **Tekst:** można dodać tekst opisujący użytkownika scenariusz/sytuacji trwa wraz z linkami do tekstu, jeśli jest to wymagane. Pamiętaj, aby tekst zwięzły.
+-   **Tekst:** Można dodać tekst opisujący użytkownika scenariusz/sytuacji trwa wraz z linkami do tekstu, jeśli jest to wymagane. Pamiętaj, aby tekst zwięzły.
 
--   **Akcje:** w tej sekcji może zawierać łącza i przyciski dla akcji, które użytkownik może robić na Twoje informacyjnym.
+-   **Akcje:** W tej sekcji może zawierać łącza i przyciski dla akcji, które użytkownik może robić na Twoje informacyjnym.
 
--   **Przycisk Zamknij:** ostatnia sekcja po prawej stronie może mieć przycisk Zamknij.
+-   **Przycisk zamknięcia:** Ostatnia sekcja po prawej stronie może mieć przycisk Zamknij.
 
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>Tworzenie standardowego paska informacyjnego w kodzie zarządzanym
  Klasa InfoBarModel może służyć do tworzenia źródła danych dla paska informacyjnego. Użyj jednej z tych czterech konstruktorów:

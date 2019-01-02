@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856868"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstu, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablonów tekstowych będzie działać w trybie doświadczalnym podczas debugowania DSL, a także będą działać na komputerze, na którym wdrożono język DSL.
@@ -58,7 +57,7 @@ Here is a list of elements in the model:
 
 - Szablon ładuje plik modelu, który określisz w `requires` właściwości.
 
-- Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest `this.ExampleModel`.
+- Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest to `this.ExampleModel`.
 
 - Mimo że język, w którym zapisywane są fragmenty kodu C#, można wygenerować tekstu dowolnego rodzaju. Można także napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.
 
@@ -143,7 +142,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  Aby załadować plik, najbardziej efektywną metodę jest za pomocą programu Visual Studio ModelBus. W typowym scenariuszu szablon tekstowy użyje dyrektywy specyficzne dla języka DSL załadować pierwszy model w zwykły sposób. Ten model zawiera ModelBus odwołania do innego modelu. ModelBus służy do otwierania przywoływanym modelem i dostęp do konkretnego elementu. Aby uzyskać więcej informacji, zobacz [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- W przypadku mniej zwykle możesz chcieć Otwórz plik modelu, do której masz tylko nazwę pliku, który może nie być w bieżącym projekcie programu Visual Studio. W takim przypadku można otworzyć pliku przy użyciu techniki opisanej w [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+ W przypadku mniej zwykle możesz chcieć Otwórz plik modelu, do której masz tylko nazwę pliku, który może nie być w bieżącym projekcie programu Visual Studio. W takim przypadku można otworzyć pliku przy użyciu techniki opisanej w [jak: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
 ## <a name="generating-multiple-files-from-a-template"></a>Generowanie wielu plików na podstawie szablonu
  Jeśli chcesz wygenerować kilka plików — na przykład, aby wygenerować osobny plik dla każdego elementu w modelu, istnieje kilka możliwych rozwiązań. Domyślnie tylko jeden plik jest generowany dla każdego pliku szablonu.

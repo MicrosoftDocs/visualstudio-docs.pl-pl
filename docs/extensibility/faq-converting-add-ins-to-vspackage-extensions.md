@@ -1,9 +1,6 @@
 ---
-title: 'Często zadawane pytania: Konwertowanie dodatków na rozszerzenia pakietu VSPackage | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9623ec6fd2fed89dbe541d6088f7366d38bc0636
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879150"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Często zadawane pytania: Konwertowanie dodatków na rozszerzenia pakietu VSPackage
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage
 Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual Studio, musisz utworzyć rozszerzenia VSIX. Poniżej przedstawiono odpowiedzi na często zadawane pytania dotyczące jak konwertować dodatek programu Visual Studio rozszerzenia VSIX.  
   
 > [!WARNING]
@@ -53,7 +50,7 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
   
      Zostanie wyświetlone drugie wystąpienie programu Visual Studio. To drugie wystąpienie jest nazywany wystąpienie doświadczalne i może nie mieć tych samych ustawień co wystąpienie programu Visual Studio za pomocą pisania kodu. Podczas pierwszego uruchomienia wystąpienia eksperymentalnego użytkownik jest proszony logować się do usługi VS Online i określ motywu i profilu.  
   
-     Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien zostać wyświetlony komunikat: **wewnątrz TestVSPackagePackage.MenuItemCallback()**.  
+     Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Wewnątrz TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage  
  Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:  

@@ -1,8 +1,6 @@
 ---
 title: Obecne są liczne kategorie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1481d5a6f22606875b0173bf0d3060bb455f022
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b1c366e740b5633e6bcd1db142930a710af4cdff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858094"
 ---
 # <a name="multiple-categories-are-present"></a>Obecne są liczne kategorie
-Wybrano sekcja, która zawiera więcej niż jednego rodzaju aktywności związanej z danym okresie. Powiadomienia, że są wyświetlane dwa kolory i jeden w pionie skumulowany z drugiej strony. Kolory reprezentują tylko górny dwa najczęściej używane działania w danym okresie. Częstotliwości tych dwóch działań są wyświetlane względem siebie jako trzecich lub połowy pionowy pasek. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji widoku wątków.  
+Wybrano sekcji, która zawiera więcej niż jeden rodzaj działania w zakresie w danym momencie. Zwróć uwagę, że nie są wyświetlane dwa kolory, jeden w pionie skumulowany z drugiej strony. Te kolory reprezentują tylko najważniejsze dwa najczęstsze działania w danym okresie. Częstotliwości te dwa działania są wyświetlane względem siebie jako trzecie lub połowami kreska pionowa. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji Widok wątków.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)   

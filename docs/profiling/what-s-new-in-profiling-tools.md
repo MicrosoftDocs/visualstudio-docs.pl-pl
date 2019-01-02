@@ -1,8 +1,6 @@
 ---
 title: What's New in profilowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling
@@ -13,28 +11,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0acc7d48967fba4e05d139a6f84107800cea5393
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0ca95259ad8f31822e235c470e437daf0adaadc3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865482"
 ---
-# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Nowości w narzędziach profilowania w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co nowego w narzędziach profilowania w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-Narzędzia diagnostyki obejmują nowe wizualizacje pomoże zidentyfikować problemy w swojej aplikacji, które wymagają ustalania. Narzędzia diagnostyki teraz obejmuje obsługę aplikacji programu ASP.NET.
+Narzędzia diagnostyczne zawierają nowe wizualizacje, aby pomóc w zidentyfikowaniu problemów w aplikacji, które wymagają ustalania. Narzędzia diagnostyczne obejmują teraz obsługę aplikacji programu ASP.NET.
 
-Aby uzyskać dodatkowe informacje, zobacz [informacje o wersji [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Aby uzyskać więcej informacji, zobacz [informacje o wersji programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
 
-A **Podsumowanie** kartę został dodany do narzędzia, które pozwala skupić się na kluczowe dla analizy wydajności. Na tej karcie pokazuje, ile zdarzenia wystąpiły, można wykonać migawki sterty i pozwala szybko włączyć zbierania danych użycia procesora CPU. Ten widok przedstawia żadnego [usługi Application insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) lub [interfejsu użytkownika analizy](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) zdarzenia. Ponadto dla programu Visual Studio Enterprise, w tym widoku również wyświetlane zdarzenia funkcji IntelliTrace.
+A **Podsumowanie** karta została dodana do narzędzia, które pomaga skoncentrować się na kluczowych obszarach analizy wydajności. Ta karta pokazuje, ile zdarzenia wystąpiły pozwala korzystać z migawki sterty i pozwala na szybkie włączenie zbierania danych użycia procesora CPU. Ten widok przedstawia dowolne [usługi Application insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) lub [analiza interfejsu użytkownika](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) zdarzenia. Ponadto dla programu Visual Studio Enterprise, ten widok również przedstawia zdarzenia funkcji IntelliTrace.
 
-![Karta podsumowania narzędzi diagnostycznych](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
+![Karta podsumowania narzędzia diagnostyczne](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 
-Narzędzie użycia procesora CPU ma [nowe](../profiling/Beginners-Guide-to-Performance-Profiling.md) pomoże zidentyfikować funkcje, które najprawdopodobniej będzie powodować problemy z wydajnością. Nowy **wywołujący/wywoływany** widoku umożliwia sprawdzenie kosztów wywołania funkcji do i z wybranej funkcji.
+Narzędzie użycie procesora CPU ma [nowe wizualizacje](../profiling/Beginners-Guide-to-Performance-Profiling.md) ułatwiający zidentyfikowanie funkcji, które z największym prawdopodobieństwem mogą być przyczyną problemów z wydajnością. Nowy **wywołujący/wywoływany** widoku pozwala na badanie kosztów wywołań funkcji wykonanych do i z wybranej funkcji.
 
-![Widok wywoływany obiekt wywołujący narzędzi diagnostycznych](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+![Widok wywoływany obiekt wywołujący narzędzia diagnostyczne](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Profil w programie Visual Studio](../profiling/index.md)
-- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)
+- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

@@ -3,7 +3,6 @@ title: Uruchamianie, twórz i Debuguj testy jednostkowe w Eksploratorze testów
 description: Dowiedz się, jak uruchomić testy z użyciem Eksplorator testów w programie Visual Studio. W tym temacie opisano, jak włączyć automatyczne testy po kompilacji, wyświetlić wyniki testów, grupy i filtrowanie listy testów, tworzenie listy odtwarzania, Debuguj testy i skróty testu.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858074"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 

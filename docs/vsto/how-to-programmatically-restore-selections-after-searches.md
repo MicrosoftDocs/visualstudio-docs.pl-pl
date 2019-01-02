@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Przywracanie zaznaczenia po wyszukiwaniu'
-ms.custom: ''
+title: 'Instrukcje: Programowe Przywracanie zaznaczenia po wyszukiwaniu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e714773ec000f2f46872f5c60429f313e1f6310
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae27f4e24ac367741bcdf2dfa2bae8598c6c7d99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865612"
 ---
-# <a name="how-to-programmatically-restore-selections-after-searches"></a>Porady: programowane Przywracanie zaznaczenia po wyszukiwaniu
+# <a name="how-to-programmatically-restore-selections-after-searches"></a>Instrukcje: Programowe Przywracanie zaznaczenia po wyszukiwaniu
   Znajdowanie i zastępowanie tekstu w dokumencie, można przywrócić oryginalny wybranych przez użytkownika, po ukończeniu wyszukiwania.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -55,9 +52,7 @@ ms.locfileid: "49891157"
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane wyszukiwanie i zastępowanie tekstu w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Porady: programowane Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Porady: programowane przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Instrukcje: Programowe wyszukiwanie i zastępowanie tekstu w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Instrukcje: Programowe Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Instrukcje: Programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

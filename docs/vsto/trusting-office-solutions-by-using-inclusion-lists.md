@@ -1,9 +1,6 @@
 ---
 title: Zaufanie rozwiązań pakietu Office przy użyciu list dołączania
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857669"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Zaufanie rozwiązań pakietu Office przy użyciu list dołączania
   Włączenie listy umożliwiają użytkownikom udzielenia zaufania do rozwiązań pakietu Office, które są podpisane za pomocą certyfikatu, który identyfikuje wydawcy. Listy dołączania są specyficzne dla użytkownika i może służyć do dostosowywania na poziomie dokumentu i dodatków narzędzi VSTO.  
@@ -48,5 +45,3 @@ ms.locfileid: "38783704"
 ## <a name="see-also"></a>Zobacz także  
  [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)   
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)  
-  
-  

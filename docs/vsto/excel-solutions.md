@@ -1,9 +1,6 @@
 ---
 title: rozwiązania programu Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856858"
 ---
 # <a name="excel-solutions"></a>rozwiązania programu Excel
   Program Visual Studio udostępnia szablony projektów, których można użyć do utworzenia dostosowań poziomu dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Excel. Automatyzowanie programu Excel, rozszerzania funkcji programu Excel i dostosowywanie interfejsu użytkownika (UI) programu Excel, można użyć tych rozwiązań. Aby uzyskać więcej informacji na temat różnic między dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -122,4 +119,3 @@ ms.locfileid: "53647948"
 | [Przewodnik: Dodawanie formantów do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Pokazuje, jak dodać przycisk Windows Forms <xref:Microsoft.Office.Tools.Excel.NamedRange>, a <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza w czasie wykonywania za pomocą dodatku narzędzi VSTO. |
 | [Opis współtworzenia i dodatków](./understanding-coauthoring-and-addins.md) | W tym artykule opisano zmiany konieczne może być do rozwiązania w celu uwzględnienia współtworzenia. |
 | [Excel 2010 w rozwój pakietu Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Zawiera łącza do artykułów i dokumentacji o tworzeniu rozwiązań programu Excel. Nie są specyficzne dla programowania pakietu Office przy użyciu programu Visual Studio. |
-

@@ -1,9 +1,6 @@
 ---
 title: Element hosta arkusza
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,48 +20,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4052e7d9b096d9bae6671834369ece6d31bee4a0
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866741"
 ---
 # <a name="worksheet-host-item"></a>Element hosta arkusza
-  <xref:Microsoft.Office.Tools.Excel.Worksheet> Element hosta jest typem, rozszerzający <xref:Microsoft.Office.Interop.Excel.Worksheet> typu z podstawowego zestawu międzyoperacyjnego dla programu Excel. <xref:Microsoft.Office.Tools.Excel.Worksheet> Element hosta zawiera wszystkie właściwości, metod i zdarzeń jako <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekt, ale także przedstawia dodatkowe zdarzenia i działa jako kontener dla kontrolki hosta i formantów formularzy systemu Windows.  
+  <xref:Microsoft.Office.Tools.Excel.Worksheet> Hosta elementu to typ, który rozszerza <xref:Microsoft.Office.Interop.Excel.Worksheet> typu na podstawie podstawowego zestawu międzyoperacyjnego dla programu Excel. <xref:Microsoft.Office.Tools.Excel.Worksheet> Element hosta zawiera wszystkie właściwości, metody i zdarzenia jako <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu, ale również udostępnia dodatkowe zdarzenia i działa jako kontener dla formantów hosta i kontrolek formularzy Windows Forms.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementy do projektu w czasie projektowania. W dodatku VSTO projektów, można wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementów w czasie wykonywania.  
+ W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementy do projektu w czasie projektowania. W projektach dodatku narzędzi VSTO dla programów, można wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementy w czasie wykonywania.  
   
-## <a name="understand-worksheet-host-items-in-document-level-projects"></a>Zrozumienie obiekty hosta arkusza w projektach na poziomie dokumentu  
- Podczas tworzenia projektu poziomie dokumentu dla programu Excel, programu Visual Studio automatycznie tworzy trzy <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementów w projekcie. Domyślne nazwy arkuszy są `Sheet1`, `Sheet2`, i `Sheet3`. Jeśli tworzysz projekt oparty na podstawie istniejącego skoroszytu, liczba elementów hosta zależy od liczby arkuszy w skoroszycie.  
+## <a name="understand-worksheet-host-items-in-document-level-projects"></a>Omówienie elementów arkusza hosta w projektach na poziomie dokumentu  
+ Po utworzeniu projektu na poziomie dokumentu dla programu Excel, programu Visual Studio automatycznie tworzy trzy <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementy w projekcie. Domyślne nazwy arkuszy są `Sheet1`, `Sheet2`, i `Sheet3`. Jeśli tworzysz projektu, w oparciu o istniejący skoroszyt, liczba elementów hosta zależy od liczby arkuszy w skoroszycie.  
   
- Te klasy arkusza uzyskania dostępu do elementów członkowskich <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta do wykonywania podstawowych zadań w dostosowaniu, takie jak modyfikowanie zawartość arkusza. Te klasy umożliwia także dodawanie formantów do arkuszy. Łącząc różne zestawy formantów i pisanie kodu, formanty można powiązać z danymi, zbiera informacje o użytkowniku i odpowiadania na działania użytkownika. Aby uzyskać więcej informacji, zobacz [programowania dostosowań na poziome dokumentu](../vsto/programming-document-level-customizations.md).  
+ W ramach tych zajęć arkusza udzielić Ci dostępu do elementów członkowskich <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta do wykonywania podstawowych zadań w swojej dostosowania, takie jak modyfikowanie zawartości arkusza. W ramach tych zajęć umożliwia również dodawanie formantów do arkuszy. Łączenie różnych zestawów kontrolek i napisanie kodu, można powiązać formanty z danymi, zbiera informacje o użytkowniku i reagować na działania użytkownika. Aby uzyskać więcej informacji, zobacz [Program dostosowań poziomu dokumentu](../vsto/programming-document-level-customizations.md).  
   
- Klasy arkusza podaj lokalizację, w którym można rozpocząć pisanie kodu w projekcie. Ponieważ klasa zawiera wszystkie właściwości, metod i zdarzeń jako <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu w podstawowego zestawu międzyoperacyjnego dla programu Excel, można również użyć tych klas dostępu do modelu obiektów programu Excel. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
+ Klas arkusza podania lokalizacji, w którym można zacząć pisać kod w projekcie. Ponieważ klasa oferuje wszystkie właściwości, metody i zdarzenia jako <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu podstawowego zestawu międzyoperacyjnego dla programu Excel, można również użyć tych klas dostępu do modelu obiektów programu Excel. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
   
- W projektach na poziomie dokumentu, można dodać dodatkowe <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementy do projektu w czasie projektowania przez dodanie nowego arkusza w skoroszycie w projektancie.  
+ W projektach na poziomie dokumentu, możesz dodać dodatkowe <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementy do projektu w czasie projektowania, dodając nowy arkusz do skoroszytu w projektancie.  
   
-### <a name="rename-worksheets"></a>Zmień nazwę arkuszy  
- W projekcie poziomie dokumentu można zmienić nazwy arkuszy w projektancie programu Visual Studio, ale spowoduje to zmianę tylko nazwa wyświetlana arkusza. Nazwa programowa nadal jest domyślna nazwa arkusza. Jeśli zmienisz nazwę arkusza w **właściwości** okna, programowa nazwa zostanie zmieniona.  
+### <a name="rename-worksheets"></a>Zmiana nazwy arkuszy  
+ W projekcie na poziomie dokumentu można zmienić nazwy arkuszy w Projektancie Visual Studio, ale spowoduje to zmianę tylko nazwa wyświetlana arkusza. Nazwą programową nadal jest domyślna nazwa arkusza. Jeśli zmienisz nazwę arkusza w **właściwości** okna, nazwą programową zostanie zmieniony.  
   
 ### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Ograniczenia element hosta arkusza w projektach na poziomie dokumentu  
- Nie można utworzyć nowego <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementów w czasie wykonywania w projektach na poziomie dokumentu. Jeśli tworzysz nowy arkusz programu Excel w czasie wykonywania, będzie typu <xref:Microsoft.Office.Interop.Excel.Worksheet>. Ponieważ nie jest elementem hosta, nie może zawierać żadnych kontrolki hosta lub formanty formularzy systemu Windows. Aby uzyskać więcej informacji o tworzeniu dokumentów w czasie wykonywania, zobacz [porady: programowane Dodawanie nowych arkuszy ze skoroszytami](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
+ Nie można utworzyć nowego <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementy w czasie wykonywania w projekcie na poziomie dokumentu. Jeśli tworzysz nowy arkusz programu Excel w czasie wykonywania, będą typu <xref:Microsoft.Office.Interop.Excel.Worksheet>. Ponieważ nie jest element hosta, nie może zawierać wszystkie formanty hosta lub kontrolek formularzy Windows Forms. Aby uzyskać więcej informacji na temat tworzenia dokumentów w czasie wykonywania, zobacz [jak: Programowe Dodawanie nowych arkuszy do skoroszytu](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
   
-## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Zrozumienie obiekty hosta arkusza w projektów dodatku VSTO  
- W projektach na poziomie aplikacji, można wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta w czasie wykonywania żadnych arkusz, który jest otwarty w programie Excel. Można użyć <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta do dodawania formantów do arkusza skojarzony, lub do obsługi zdarzeń, które nie są dostępne na <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektów.  
+## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Omówienie elementów arkusza hosta w projektach dodatku narzędzi VSTO  
+ W projektach na poziomie aplikacji, można wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta w czasie wykonywania dla dowolnego arkusza, która jest otwarta w programie Excel. Możesz użyć <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta na dodawanie formantów do arkusza skojarzone lub do obsługi zdarzeń, które nie są dostępne na <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektów.  
   
- Aby wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta, użyj `GetVstoObject` metody. Aby uzyskać więcej informacji, zobacz [dokumentów rozszerzania programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Aby wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta, użyj `GetVstoObject` metody. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
+ [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Element hosta skoroszytu](../vsto/workbook-host-item.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
- [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  
+ [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

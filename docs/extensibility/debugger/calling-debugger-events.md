@@ -1,9 +1,6 @@
 ---
 title: Wywoływanie zdarzeń debugera | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ae37a6f6ed180d13623a04afd357efcc109039f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b4b97ddde0e7cdcd258a8549f588257d90a365a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857335"
 ---
 # <a name="call-debugger-events"></a>Wywoływanie zdarzeń debugera
 Zdarzenia w sesji debugowania występują w określonej kolejności.  

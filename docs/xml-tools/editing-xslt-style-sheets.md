@@ -2,7 +2,6 @@
 title: Edytowanie arkuszy stylów XSLT
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 author: gewarren
@@ -10,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d98fbf2a1041260370946a059599a601f57c482c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867410"
 ---
 # <a name="edit-xslt-style-sheets"></a>Edytowanie arkuszy stylów XSLT
 
-Edytor XML można również edytować arkuszy stylów XSLT. Można wykorzystać domyślny edytor funkcje, takie jak IntelliSense, obramowanie, fragmentów kodu XML i tak dalej. Ponadto istnieją również nowe funkcje, które ułatwiają tworzenie w kodzie XSLT.
+Edytor XML może również edytowanie arkuszy stylów XSLT. Można korzystać z zalet domyślny edytor funkcje, takie jak IntelliSense, tworzenie konspektu, w przypadku fragmentów kodu XML i tak dalej. Ponadto dostępne są także nowe funkcje, które ułatwiają tworzenie w kodzie XSLT.
 
 ## <a name="xslt-features"></a>Funkcje XSLT
- W poniższej tabeli opisano funkcje specyficzne dla pracy z arkuszy stylów XSLT.
+ W poniższej tabeli opisano funkcji przeznaczonych do pracy z arkuszy stylów XSLT.
 
  **Kolorowanie składni**
 
@@ -30,19 +29,19 @@ Edytor XML można również edytować arkuszy stylów XSLT. Można wykorzystać 
 
  **Faliste podkreślenie**
 
- Edytor XML używa zainstalowana *xslt.xsd* pliku do sprawdzania poprawności arkuszy stylów XSLT. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenie. Edytor XML kompiluje również arkusza stylów w tle i raporty o błędach kompilatora lub ostrzeżenia o odpowiednich faliste podkreślenie.
+ Edytor XML używa zainstalowanych *xslt.xsd* plik, aby sprawdzić poprawność arkuszy stylów XSLT. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenia. Edytor XML kompiluje również arkusza stylów w tle i raporty o błędach kompilatora lub ostrzeżenia odpowiednie falistą.
 
  **Obsługa blokach skryptu**
 
- Kod w blokach skryptu jest obsługiwana przez debuger XSLT, dlatego można ustawić punktów przerwania i kroków kod bloku skryptu.
+ Kod w blokach skryptu jest obsługiwana przez debuger XSLT, dzięki czemu można ustawić punktów przerwania i Przechodź przez kod bloku skryptu.
 
- **Wyświetl dane wyjściowe XSLT**
+ **Wyświetlanie danych wyjściowych z XSLT**
 
- Można wykonać przekształcenia XSL i wyświetlić dane wyjściowe z edytora XML. Aby uzyskać więcej informacji, zobacz [porady: wykonywanie transformację XSLT z edytora XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+ Umożliwia wykonywanie transformacji XSL i wyświetlanie danych wyjściowych w edytorze XML. Aby uzyskać więcej informacji, zobacz [jak: Wykonywanie transformacji XSLT w edytorze XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
- **Debugowanie XSLT**
+ **Debugowanie kodu XSLT**
 
- Można uruchomić debugera XSLT z pliku XSLT w edytorze XML. Debuger obsługuje ustawianie punktów przerwania w pliku XSLT, wyświetlanie stanu wykonania XSLT i tak dalej. Ustawiając kursor nad zmiennej XSLT wywołuje etykietkę zawierającą wartość zmiennej. Debuger może służyć do debugowania arkusz stylów lub debugowanie skompilowanych transformacji XSL wywoływane z innej aplikacji. Aby uzyskać więcej informacji, zobacz [profilowanie XSLT](../xml-tools/debugging-xslt.md).
+ Można uruchomić debuger XSLT z pliku XSLT w edytorze XML. Debuger obsługuje ustawianie punktów przerwania w pliku XSLT, wyświetlając stan wykonania XSLT i tak dalej. Kursor jest zmienna XSLT wywołuje etykietka narzędzia z wartością zmiennej. Debuger może służyć do debugowania arkuszy stylów lub Aby debugować skompilowanych przekształcenia XSL wywoływane z innej aplikacji. Aby uzyskać więcej informacji, zobacz [profilowanie XSLT](../xml-tools/debugging-xslt.md).
 
 ## <a name="see-also"></a>Zobacz także
 

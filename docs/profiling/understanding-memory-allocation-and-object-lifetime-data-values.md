@@ -1,8 +1,6 @@
 ---
-title: Zapoznanie z alokacją pamięci i danych o okresie istnienia obiektu wartości | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Zapoznanie z alokacją pamięci i danych o okresie istnienia obiektu wartościami | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
@@ -12,31 +10,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27922f227c6791ad4b64b3258f9107d28b21a964
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 518be5d4126dbfa2713fada4df8451292166dcbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858954"
 ---
-# <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Zrozumienie pamięci alokacji i obiekt okres istnienia wartości danych
+# <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Omówienie pamięci alokacji i obiekt okresu istnienia wartości danych
 
-*Alokacji pamięci .NET* profilowania metody [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania zbiera informacje o rozmiarze i liczba obiektów, które zostały utworzone w alokacji lub zniszczone w wyrzucania elementów bezużytecznych i dodatkowe informacje na temat funkcji *stosu wywołań* wystąpienia zdarzenia. A *stosu wywołań* jest strukturą dynamicznych, która przechowuje informacje dotyczące funkcji, które są wykonywane na procesor.
+*Alokacji pamięci .NET* profilowanie metody [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools umożliwia zbieranie informacji dotyczących rozmiaru i liczby obiektów, które zostały utworzone w alokacji lub zniszczyć wyrzucania elementów bezużytecznych i dodatkowe informacje na temat funkcji *stos wywołań* wystąpienia zdarzenia. A *stos wywołań* jest dynamiczne struktury, która przechowuje informacje dotyczące funkcji, które są wykonywane na procesorze.
 
-Profiler pamięci przerwań procesora komputera na każdej alokacji obiektu .NET Framework w profilowanych aplikacji. Jeśli są zbierane również informacje o okresie istnienia obiektu, profiler przerywa działanie procesora po każdym zdarzeniu wyrzucania elementów bezużytecznych w środowisku .NET Framework. Dane są agregowane dla każdej funkcji profilowanych i dla każdego typu obiektu.
+Profiler pamięci przerywa działanie procesora komputera na każdej alokacji obiekt .NET Framework w profilowanej aplikacji. Jeśli są zbierane również informacje o okresie istnienia obiektu, profiler przerywa działanie procesora po każdym zdarzeniu wyrzucania elementów bezużytecznych w środowisku .NET Framework. Dane są agregowane dla każdej funkcji profilowanych i dla poszczególnych typów obiektu.
 
-## <a name="allocation-data"></a>Alokacja danych
+## <a name="allocation-data"></a>Dane alokacji
 
-Po wystąpieniu zdarzenia .memory całkowitej liczby i rozmiarów obiektów pamięci przydzielony lub niszczone są zwiększane.
+Gdy wystąpi zdarzenie .memory, całkowitej liczby i rozmiarów obiekty przydzielone lub zniszczone pamięci są zwiększane.
 
-Po wystąpieniu zdarzenia alokacji .memory profilera zwiększa liczby próbki dla każdej funkcji w stosie wywołań. Podczas zbierania danych tylko jednej funkcji w stosie wywołań jest aktualnie wykonywany kod w jego treści funkcji. Inne funkcje na stosie są nadrzędnych w hierarchii wywołań funkcji, które oczekują na funkcje, które są nazywane do zwrócenia.
+Gdy wystąpi zdarzenie alokacji .memory, program profilujący zwiększa liczby próbek dla każdej funkcji na stosie wywołań. Podczas zbierania danych tylko jednej funkcji — na stosie wywołań jest aktualnie wykonuje kod w jego treści funkcji. Innych funkcji na stosie są elementów nadrzędnych w hierarchii wywołań funkcji, które oczekują na funkcje, które jest wywoływana w celu zwrócenia.
 
-- Zdarzenia alokacji, zwiększa profilera *wyłącznego* przykładowe liczby funkcji, która jest w trakcie wykonywania instrukcji. Ponieważ wyłącznego próbki jest również częścią łączną (*włącznie*) również jest zwiększany przykłady funkcji liczność próbki włącznie funkcji obecnie aktywne.
+- Dla zdarzenia alokacji, zwiększa profiler *wyłączne* liczba funkcji, która jest w trakcie wykonywania instrukcji próbek. Ponieważ próbek wyłącznych wchodzi w skład całości (*włącznie*) przykłady funkcji liczność próbki włączne aktualnie aktywnych funkcji również jest zwiększany.
 
-- Profiler zwiększa liczność próbki z wartościami granicznymi innych funkcji w stosie wywołań.
+- Program profilujący zwiększa liczność próbki włączne wszystkich funkcji w stosie wywołań.
 
-## <a name="lifetime-data"></a>Okres istnienia danych
+## <a name="lifetime-data"></a>Danych o okresie istnienia
 
-Moduł zbierający elementy bezużyteczne programu .NET Framework zarządza alokacji i wersji pamięci dla aplikacji. Aby zoptymalizować wydajność modułu zbierającego elementy bezużyteczne, sterty zarządzanej jest podzielony na trzy generacje: 0, 1 i 2. Moduł zbierający elementy bezużyteczne czasu wykonywania przechowuje nowych obiektów generacji 0. Obiekty, które pozostają aktualne po kolekcje są awansowane i przechowywane w generacji 1 i 2.
+Moduł odśmiecania pamięci środowiska .NET Framework zarządza alokacją i zwolnieniem pamięci dla aplikacji. W celu zoptymalizowania wydajności moduł zbierający elementy bezużyteczne, zarządzanego stosu jest podzielony na trzy generacje: 0, 1 i 2. Moduł odśmiecania pamięci w czasie wykonywania zapisuje nowe obiekty w generacji 0. Obiekty, które przeżyły kolekcje są promowane i przechowywane w generacji 1 i 2.
 
-Moduł zbierający elementy bezużyteczne zwraca pamięci przez dealokowanie całego generowania obiektów. Dla obiektów utworzonych przez profilowana aplikacja widok okresu istnienia obiektu Wyświetla liczbę i rozmiar obiektów i generowania, gdy są one odzyskać.
+Moduł odśmiecania pamięci odzyskuje pamięć, cofnięcie przydziału całego generacji obiektów. Dla obiektów utworzonych w profilowanej aplikacji widok okresu istnienia obiektu przedstawia liczbę i rozmiar obiektów oraz jego generacji, kiedy są odzyskiwane.

@@ -1,8 +1,6 @@
 ---
 title: Findunderpath — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f7ea93011878e9e47a5daa843a71d904318ce4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 865e291e24bfb161f43e8fb5192a08e93cdb75d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869102"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath — zadanie
 Określa, które elementy w kolekcji określonego elementu mają ścieżek, które znajdują się w lub pod określonym folderze.  

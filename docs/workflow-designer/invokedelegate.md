@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd490d15d5dc1760222446a1ae507d0e764c73f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870538"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -39,7 +38,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.InvokeDeleg
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.InvokeDelegate> działania. Wartość domyślna to InvokeDelegate.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, zaleca się go użyć.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Nazwa <xref:System.Activities.ActivityDelegate> wywoływana, gdy działanie wykonuje. Ta właściwość może być edytowany na powierzchni projektanta i jest wymagana.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Prawda|Nazwa <xref:System.Activities.ActivityDelegate> wywoływana, gdy działanie wykonuje. Ta właściwość może być edytowany na powierzchni projektanta i jest wymagana.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Kolekcja argument wywoływany delegat. Klucze są nazwy obiektów parametru na <xref:System.Activities.ActivityDelegate>, a ich wartości są argumenty, których wyrażenia są obliczane i przypisane do odpowiednich obiektów parametru. Aby wyświetlić **DelegateArguments** okna dialogowego, w którym można ustawić tę właściwość, kliknij przycisk wielokropka w **DelegateArguments** pola siatki właściwości. Kliknij przycisk **Utwórz Argument** pola w celu dodania argumenty.|
 
 ## <a name="see-also"></a>Zobacz także

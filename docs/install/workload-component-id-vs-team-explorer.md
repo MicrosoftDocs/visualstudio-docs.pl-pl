@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 694085412a674731934ac75d62bd2c904e3c7176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860221"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 składników katalogu
 
@@ -36,15 +35,15 @@ Ponadto należy pamiętać, że informacje o stronie:
 * Jeśli chcesz, możesz także zainstalować **zalecane** i **opcjonalnie** składników.
 * Dodaliśmy również sekcję, która zawiera listę dodatkowych składników, które nie są powiązane z dowolnych obciążeń.
 
-Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
+Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
 
 Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz [Użyj parametry wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) strony. I dla listy, obciążenie i identyfikatorów składników dla innych produktów, zobacz [Visual Studio 2017 obciążenia i identyfikatory składnika](workload-and-component-ids.md) strony.
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Edytor Visual Studio core (dołączone do programu Visual Studio Team Explorer 2017)
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.CoreEditor
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Opis:** środowisko powłoki programu Visual Studio core, edytowania kodu uwzględniającej składnię, w tym kontrolą kodu źródłowego i zarządzanie elementami roboczymi.
+**Opis:** Visual Studio podstawowe funkcje powłoki, w tym kodu uwzględniającej składnię, edycji i kontroli kodu źródłowego i zarządzanie elementami roboczymi.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 

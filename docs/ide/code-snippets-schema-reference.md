@@ -2,7 +2,6 @@
 title: Fragmenty kodu — informacje o schemacie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a39040bb76181a7a36e9d8f7b19aa0b4390c400
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864721"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -271,7 +270,7 @@ Zawiera ogólne informacje o fragmencie kodu IntelliSense.
 |-------------------|-----------------|
 |[AUTHOR — element](../ide/code-snippets-schema-reference.md#author-element)|Element opcjonalny. Imię i nazwisko/nazwa osoby lub firmy, która utworzyła fragment kodu. Może mieć zero lub jeden `Author` elementów w `Header` elementu.|
 |[Description — element](../ide/code-snippets-schema-reference.md#description-element)|Element opcjonalny. Opis fragmentu kodu. Może mieć zero lub jeden `Description` elementów w `Header` elementu.|
-|[Helpurl — element](../ide/code-snippets-schema-reference.md#helpurl-element)|Element opcjonalny. Adres URL strony zawierającej poszerzone informacje o fragmencie kodu. Może mieć zero lub jeden `HelpURL` elementy w elemencie nagłówka. **Uwaga:** Visual Studio nie wykorzystuje `HelpUrl` elementu. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.|
+|[Helpurl — element](../ide/code-snippets-schema-reference.md#helpurl-element)|Element opcjonalny. Adres URL strony zawierającej poszerzone informacje o fragmencie kodu. Może mieć zero lub jeden `HelpURL` elementy w elemencie nagłówka. **Uwaga:**  Visual Studio nie wykorzystuje `HelpUrl` elementu. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.|
 |[KEYWORDS — element](../ide/code-snippets-schema-reference.md#keywords-element)|Element opcjonalny. Grupy `Keyword` elementów. Może mieć zero lub jeden `Keywords` elementów w `Header` elementu.|
 |[Shortcut — element](../ide/code-snippets-schema-reference.md#shortcut-element)|Element opcjonalny. Określa tekst skrótu, który pozwala wstawić fragment kodu. Może mieć zero lub jeden `Shortcut` elementów w `Header` elementu.|
 |[Snippettypes — element](../ide/code-snippets-schema-reference.md#snippettypes-element)|Element opcjonalny. Grupy `SnippetType` elementów. Może mieć zero lub jeden `SnippetTypes` elementów w `Header` elementu. W przypadku nie `SnippetTypes` elementów, fragment kodu zawsze jest prawidłowy.|
@@ -666,4 +665,4 @@ Wartość tekstowa jest wymagana. Ten tekst określa adres URL strony z dodatkow
 ## <a name="see-also"></a>Zobacz także
 
 - [Fragmenty kodu](../ide/code-snippets.md)
-- [Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
+- [Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)

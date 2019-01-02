@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872401"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
@@ -23,7 +22,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
 > [!NOTE]
 > W programie Visual Studio 2017 SDK przekształcania szablonu tekstu programu Visual Studio do modelowania SDK są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić za pomocą języka dotyczącego określonej domeny?
 
@@ -386,7 +385,7 @@ Zmień nazwę istniejącej klasy domeny i relacje. Na przykład począwszy od de
 ## <a name="validation-and-commands"></a>Sprawdzanie poprawności i polecenia
  Dalsze tego języka DSL można rozwijać, dodając ograniczenia sprawdzania poprawności. Te ograniczenia są metody, które można zdefiniować, które upewnij się, że model jest w poprawnym stanie. Na przykład można zdefiniować ograniczenie, aby upewnić się, że, Data urodzenia dziecka jest późniejsza niż jego elementów nadrzędnych. Funkcję weryfikacji zostanie wyświetlone ostrzeżenie, jeśli użytkownik DSL próbuje zapisać modelu, który przerywa żadne ograniczenia. Aby uzyskać więcej informacji, zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).
 
- Można również zdefiniować polecenia menu, które użytkownik może wywołać. Polecenia można modyfikować modelu. Może również korzystać z innych modeli w programie Visual Studio oraz z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [porady: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Można również zdefiniować polecenia menu, które użytkownik może wywołać. Polecenia można modyfikować modelu. Może również korzystać z innych modeli w programie Visual Studio oraz z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Wdrażanie język DSL
  Aby umożliwić innym użytkownikom korzystanie z języka specyficznego dla domeny, możesz dystrybuować pliku Visual Studio rozszerzenia (VSIX). Zostanie on utworzony podczas kompilowania rozwiązania DSL.

@@ -1,9 +1,6 @@
 ---
-title: 'Porady: aktualizowanie rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Aktualizowanie rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - update package
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf951215dfb4f6837c157a7b8510fba2d09f140
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 65d27087c0708623f1861bb675a37af84e2360a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858320"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>Porady: aktualizowanie rozszerzenia programu Visual Studio
+# <a name="how-to-update-a-visual-studio-extension"></a>Instrukcje: Aktualizacja rozszerzenia programu Visual Studio
 Można zaktualizować rozszerzenia programu Visual Studio w systemie przy użyciu **rozszerzenia i aktualizacje** zainstalować zaktualizowaną wersję. Jeśli tworzysz zaktualizowaną wersję rozszerzenia, oznaczyć go jako zaktualizowany przez zwiększenie numeru wersji manifestu VSIX.  
   
  Aktualizacje są instalowane podczas manifestu VSIX przychodzących rozszerzenia ma taką samą `ID` jako zainstalowaną wersją i uzyskanie lepszej `Version` numer. Jeśli `Version` numer jest taki sam lub niższy, nie można zainstalować pakietu. Jeśli `ID` wartości nie są zgodne, pakiet, który nie jest jeszcze zainstalowany jest rozpoznawana jako osobne rozszerzenie.  

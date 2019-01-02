@@ -1,6 +1,5 @@
 ---
-title: 'Porady: obsługi asynchronicznego programu Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zapewniają usługi asynchronicznego programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5508490bfd16a3850f6ffee8d0d45d0cced4aae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857831"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Porady: udostępnianie asynchroniczne usługi Visual Studio
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Instrukcje: Dostarcza asynchroniczne usługi Visual Studio
 Jeśli chcesz uzyskać usługi bez blokowania wątku interfejsu użytkownika, należy Tworzenie usługi asynchronicznego i załadować pakiet w wątku tła. W tym celu można użyć <xref:Microsoft.VisualStudio.Shell.AsyncPackage> zamiast <xref:Microsoft.VisualStudio.Shell.Package>i Dodaj usługę za pomocą specjalnych metod asynchronicznych asynchronicznego pakietu.
   
- Aby dowiedzieć się, jak dostarczanie synchroniczne usługi Visual Studio, zobacz [jak: świadczenia usług](../extensibility/how-to-provide-a-service.md).  
+ Aby dowiedzieć się, jak dostarczanie synchroniczne usługi Visual Studio, zobacz [jak: Oferuje usługi](../extensibility/how-to-provide-a-service.md).  
   
 ## <a name="implement-an-asynchronous-service"></a>Wdrożenie usługi asynchroniczne  
   
@@ -173,7 +172,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 1.  Dodaj polecenie menu do projektu. (W **Eksploratora rozwiązań**, wybierz węzeł projektu, kliknij prawym przyciskiem myszy i wybierz **Dodaj** > **nowy element**  >   **Rozszerzalność** > **polecenie niestandardowe**.) Nazwa pliku polecenia *TestAsyncCommand.cs*.  
   
-2.  Ponownie dodaje szablon polecenie niestandardowe `Initialize()` metody *TestAsyncPackage.cs* plik w celu zainicjowania polecenia. W `Initialize()` metody Kopiuj linię, która inicjuje polecenia. Jego powinien wyglądać następująco:  
+2.  Ponownie dodaje szablon polecenie niestandardowe `Initialize()` metody *TestAsyncPackage.cs* plik w celu zainicjowania polecenia. W `Initialize()` metody Kopiuj linię, która inicjuje polecenia. Powinny wyglądać następująco:  
   
     ```csharp
     TestAsyncCommand.Initialize(this);  

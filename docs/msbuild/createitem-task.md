@@ -1,8 +1,6 @@
 ---
 title: Createitem — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e50b1f56be7b32bd21b9b5785caac003b7ee86d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860887"
 ---
 # <a name="createitem-task"></a>CreateItem — zadanie
 Wypełnia kolekcji elementów z elementów wejściowych. Dzięki temu elementy, które mają być kopiowane z jednej listy do innej.  
@@ -38,8 +36,8 @@ Wypełnia kolekcji elementów z elementów wejściowych. Dzięki temu elementy, 
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|Opcjonalnie `String` tablicy parametrów.<br /><br /> Określa dodatkowe metadane, aby dołączyć do elementów wyjściowych.  Określ nazwę metadanych i wartość dla elementu przy użyciu następującej składni:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Wiele pary nazwa/wartość metadanych powinny być oddzielone średnikami. Jeśli nazwa lub wartość zawiera średnikami lub innych znaków specjalnych, muszą być wyjściowym. Aby uzyskać więcej informacji, zobacz [porady: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
-|`Exclude`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa elementy, które mają zostać wykluczone z kolekcji element danych wyjściowych. Ten parametr może zawierać specyfikacji symbolu wieloznacznego. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md) i [porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).|  
+|`AdditionalMetadata`|Opcjonalnie `String` tablicy parametrów.<br /><br /> Określa dodatkowe metadane, aby dołączyć do elementów wyjściowych.  Określ nazwę metadanych i wartość dla elementu przy użyciu następującej składni:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Wiele pary nazwa/wartość metadanych powinny być oddzielone średnikami. Jeśli nazwa lub wartość zawiera średnikami lub innych znaków specjalnych, muszą być wyjściowym. Aby uzyskać więcej informacji, zobacz [jak: Znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
+|`Exclude`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa elementy, które mają zostać wykluczone z kolekcji element danych wyjściowych. Ten parametr może zawierać specyfikacji symbolu wieloznacznego. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md) i [jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).|  
 |`Include`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.<br /><br /> Określa elementy do uwzględnienia w kolekcji elementów danych wyjściowych. Ten parametr może zawierać specyfikacji symbolu wieloznacznego.|  
 |`PreserveExistingMetadata`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `True`, dodatkowe metadane stosowane tylko wtedy, jeśli jeszcze nie istnieje.|  
   

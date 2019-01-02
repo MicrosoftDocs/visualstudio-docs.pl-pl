@@ -1,13 +1,8 @@
 ---
-title: 'Porady: tworzenie SharePoint Web Part za pomocą projektanta | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie części sieciowej SharePoint za pomocą projektanta | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,46 +14,44 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cfe789c5dd16cd55d48c8c1470877a7df60e3caf
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 55104f4e1728208c93dc80080a42059963e3c7a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858451"
 ---
-# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Porady: Tworzenie składnika Web Part programu SharePoint za pomocą projektanta
-  Składnik web part można utworzyć przez dodanie **wizualnego składnika Web Part** element do żadnego projektu programu SharePoint. Spowoduje to otwarcie projektanta Visual Web Developer w programie Visual Studio, w którym można dodać formanty i kod do składnika web part. Części sieci web Visual działają tak samo jak części sieci web. Jedyna różnica polega na tym, że projekt programu visual web części w Projektancie Visual Web Developer.  
+# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Instrukcje: Tworzenie części sieciowej SharePoint za pomocą projektanta
+  Można utworzyć składnik web part, dodając **wizualny składnik Web Part** element do każdego projektu programu SharePoint. Spowoduje to otwarcie projektanta Visual Web Developer w Visual Studio, w którym można dodać formanty i kod do składnika web part. Wizualne części sieci web działają tak samo, jak części sieci web. Jedyna różnica polega na projektowania wizualnego składnika web Part w Projektancie Visual Web Developer.  
   
-### <a name="to-create-a-project-for-visual-web-parts"></a>Aby utworzyć projekt visual składników web Part  
+### <a name="to-create-a-project-for-visual-web-parts"></a>Aby utworzyć projekt służący do wizualnego składnika web Part  
   
-1.  Na pasku menu wybierz **pliku** >**nowy** > **projektu**.  
+1.  Na pasku menu wybierz **pliku** >**New** > **projektu**.  
   
      **Nowy projekt** zostanie otwarte okno dialogowe.  
   
-2.  W **nowy projekt** okno dialogowe, w obszarze albo **Visual C#** lub **Visual Basic**, rozwiń węzeł **Office i SharePoint** węzeł, a następnie wybierz pozycję **rozwiązań SharePoint** kategorii.  
+2.  W **nowy projekt** okno dialogowe, w obszarze **Visual C#**  lub **języka Visual Basic**, rozwiń węzeł **Office/SharePoint** węzła, a następnie Wybierz **rozwiązań programu SharePoint** kategorii.  
   
-3.  Na liście szablony projektów, wybierz **SharePoint 2013 — wizualnego składnika Web Part**, a następnie wybierz pozycję **OK** przycisku.  
+3.  Na liście szablonów projektu wybierz **SharePoint 2013 — wizualny składnik Web Part**, a następnie wybierz **OK** przycisku.  
   
-     **Kreator dostosowania programu SharePoint** pojawi się.  
+     **Kreator ustawień niestandardowych SharePoint** pojawia się.  
   
-4.  Na **określić poziom lokacji i zabezpieczeń dla debugowania** strony, podaj adres URL witryny programu SharePoint, która znajduje się na komputerze lokalnym, a następnie wybierz pozycję **Zakończ** przycisku.  
+4.  Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** strony, podaj adres URL witryny programu SharePoint, która znajduje się na komputerze lokalnym, a następnie wybierz **Zakończ** przycisku.  
   
-     W **Eksploratora rozwiązań**, składnik web Part. Po zaprojektowaniu składnika web part w Projektancie Visual Web Developer, przetestujesz go w lokacji, który określisz.  
+     W **Eksploratora rozwiązań**, pojawi się składnika web part. Po zaprojektowaniu składnika web part w Projektancie Visual Web Developer, będziesz je przetestować na lokacji, który określisz.  
   
-### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Aby dodać wizualny składnik web part do istniejącego projektu SharePoint  
+### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Aby dodać wizualny składnik web part do istniejącego projektu programu SharePoint  
   
 1.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
-2.  W **Dodaj nowy element** oknie dialogowym wybierz **Office i SharePoint** węzła.  
+2.  W **Dodaj nowy element** okna dialogowego wybierz **Office/SharePoint** węzła.  
   
-3.  Na liście szablony projektów, wybierz **wizualnego składnika Web Part**, nadaj jej nazwę, a następnie wybierz **Dodaj** przycisku.  
+3.  Na liście szablonów projektu wybierz **wizualny składnik Web Part**, nadaj jej nazwę, a następnie wybierz **Dodaj** przycisku.  
   
-     W **Eksploratora rozwiązań**, pojawi się składnika web part. Po zaprojektowaniu składnika web part w Projektancie Visual Web Developer, przetestujesz go w lokacji, który określisz.  
+     W **Eksploratora rozwiązań**, pojawi się składnik web part. Po zaprojektowaniu składnika web part w Projektancie Visual Web Developer, będziesz je przetestować na lokacji, który określisz.  
   
 ## <a name="see-also"></a>Zobacz także
- [Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Porady: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [Wskazówki: Tworzenie składnika web part dla SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
- [Wskazówki: Tworzenie składnika web part dla SharePoint za pomocą projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  
+ [Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Instrukcje: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [Przewodnik: Tworzenie składnika web part programu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
+ [Przewodnik: Tworzenie składnika web part programu SharePoint przy użyciu narzędzia Projektant](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  

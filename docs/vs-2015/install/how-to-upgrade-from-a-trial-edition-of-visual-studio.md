@@ -1,12 +1,11 @@
 ---
-title: 'Porady: uaktualnienie z wersji próbnej | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Uaktualnienie z wersji próbnej | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 717f11fe-be6c-4d6e-9006-e7e5220c02bb
@@ -14,14 +13,14 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: eeb70f917d750965fec07f5d3d1174489800ec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 415f60116e3120f9690d20d20dfd37c560d5ad9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867790"
 ---
-# <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Porady: aktualizacja z wersji próbnej wersji programu Visual Studio
+# <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Instrukcje: Uaktualnienie z wersji próbnej programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wstępna wersja programu Visual Studio możesz ocenić 14 dni bez rejestracji produktu. Po zarejestrowaniu, logując się przy użyciu konta Microsoft, aż do daty bomba czasu jest prawidłowy licencji wersji wstępnej.
@@ -49,4 +48,4 @@ Wstępna wersja programu Visual Studio możesz ocenić 14 dni bez rejestracji pr
     >  Dostęp do Internetu jest wymagany, aby zarejestrować i odblokować dowolną wersję programu Visual Studio. Po zarejestrowaniu programu Visual Studio połączenie z Internetem jest opcjonalne.
 
 ## <a name="see-also"></a>Zobacz też
- [Zainstaluj program Visual Studio](../install/install-visual-studio-2015.md) [logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) [jak: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) [Locate or Change the Product Key for Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Zainstaluj program Visual Studio](../install/install-visual-studio-2015.md) [logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) [jak: Znajdź klucz produktu programu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Locate or Change the Product Key for Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

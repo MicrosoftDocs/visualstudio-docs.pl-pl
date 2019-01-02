@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Dostosowywanie wbudowanej karty'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a219d4c5d7a57e73c63ec972ccb29724d616d1a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c9f2506ae22b3d33870c4e636a27f100b70358c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859415"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Instrukcje: Dostosowywanie wbudowanej karty
   Grupy i formanty można dodać do wbudowanej karty. Wbudowana karty to karta, która jest już na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel. Podczas tworzenia grup niestandardowych, zostanie wyświetlone ostatnie na karcie, ale można przenieść grupy dowolne miejsce na karcie.  
@@ -79,5 +76,3 @@ ms.locfileid: "53647340"
  [Instrukcje: Zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Instrukcje: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  

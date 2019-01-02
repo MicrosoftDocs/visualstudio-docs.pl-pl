@@ -2,7 +2,6 @@
 title: Użyj wyrażeń regularnych
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40983e4180db9530983217d581b898806dd85d27
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e272e1aba8f7572ba3c4ce1f90a7b12676eb18b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880614"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 
@@ -31,7 +30,7 @@ Program Visual Studio używa [wyrażeniach regularnych programu .NET Framework](
 
 ## <a name="replacement-patterns"></a>Wzorce zamieniania
 
-Aby użyć grupy numerowanych przechwytywania, należy ująć grupy za pomocą nawiasów we wzorcu wyrażenia regularnego. Użyj `$number`, gdzie `number` jest liczbą całkowitą, zaczynając od 1, aby określić grupę określonego, numerowana we wzorcu zamieniania. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` definiuje dwie grupy: pierwsza grupa zawiera pojedynczą cyfrą dziesiętną, a drugiej grupy pojedynczy znak między **a** i **z**. Wyrażenie umożliwia znalezienie dopasowania cztery następujący ciąg: **1a 2b 3c 4d**. Ciąg zastępujący `z$1` odwołuje się do pierwszej grupy, a następnie konwertuje ciąg na **z1 z2 z3 z4**.
+Aby użyć grupy numerowanych przechwytywania, należy ująć grupy za pomocą nawiasów we wzorcu wyrażenia regularnego. Użyj `$number`, gdzie `number` jest liczbą całkowitą, zaczynając od 1, aby określić grupę określonego, numerowana we wzorcu zamieniania. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` definiuje dwie grupy: pierwsza grupa zawiera pojedynczą cyfrą dziesiętną, a drugiej grupy pojedynczy znak między **a** i **z**. Wyrażenie wyszukuje cztery dopasowań w następujący ciąg: **1a 2b 3c 4d**. Ciąg zastępujący `z$1` odwołuje się do pierwszej grupy, a następnie konwertuje ciąg na **z1 z2 z3 z4**.
 
 Aby uzyskać informacje o wyrażeniach regularnych, które są używane we wzorcach zamieniania, zobacz [podstawienia w wyrażeniach regularnych (Przewodnik platformy .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 

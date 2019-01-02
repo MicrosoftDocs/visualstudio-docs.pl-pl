@@ -2,7 +2,6 @@
 title: Docelowa wersja .NET Framework
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -12,19 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95e2b6bef32bdc5830e54795eb2580e7dd1fa068
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860169"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Porady: docelowa wersja systemu .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Instrukcje: Określanie wersji docelowej programu .NET Framework
 
 W tym dokumencie opisano, jak odwoływać się do wersji programu .NET Framework, po utworzeniu projektu i jak zmienić wersję docelową w istniejących projektach Visual Basic, C#, lub Visual F# projektu.
 
 > [!IMPORTANT]
-> Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [porady: modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+> Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>Aby ukierunkować tworzony projekt na konkretną wersję
 
@@ -46,7 +45,7 @@ Podczas tworzenia projektu dostępne wersje programu .NET Framework są zależne
 
 Można zmienić wersję docelową .NET Framework w języku Visual Basic, C#, lub Visual F# projekt, korzystając z następującej procedury.
 
-Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [porady: modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz zmienić, a następnie wybierz **właściwości**.
 
@@ -74,4 +73,4 @@ Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C
 - [Rozwiązywanie problemów z błędami obiektów docelowych w .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
 - [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [Porady: modyfikowanie docelowego framework i zestaw narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Instrukcje: Modyfikowanie docelowego framework i zestaw narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

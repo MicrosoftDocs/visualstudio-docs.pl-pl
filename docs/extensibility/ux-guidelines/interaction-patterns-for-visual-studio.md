@@ -1,9 +1,6 @@
 ---
 title: Wzorce interakcji dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 author: gregvanl
@@ -11,63 +8,63 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094e16fea46e459dd64338ffa5daf3f7b98afb90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7066b9b5968aaaae2bbf608ee9f56e9c4bcf07e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862956"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Wzorce interakcji dla programu Visual Studio
 ## <a name="overview"></a>Omówienie  
- Wzorzec projektowania, ogólnie rzecz biorąc, stanowi podstawę projektu, który można zastosować w następujących sytuacjach do rozwiązywania problemów z podobne zestawy warunków ograniczających. Funkcja i system projektanci używali tych wzorców projektowych z rozpoczynaniem punktów, które następnie mogą być dostosowywane do ich konkretnej sytuacji.  
+ Wzorzec projektowania, ogólnie rzecz biorąc, to podstawowe rozwiązanie projektowania, które mogą być stosowane w określonych sytuacjach do rozwiązywania problemów z podobne zestawy warunków ograniczających. Projektanci systemu i funkcja pełnić te wzorce projektowe punktów początkowych — które następnie można dostosować do swoich konkretnej sytuacji.  
   
- Visual Studio ma biblioteki typowe wzorce interakcji, które należy wziąć pod uwagę podczas tworzenia nowych funkcji. Istnieją dwa podstawowe kontekstów dla naszych wzorce projektowe: klienta programu Visual Studio (devenv) i Visual Studio Online. Dla niektórych problemów projektu istnieje powszechny wzorzec, który działa dobrze w sytuacji wszystkie. W wielu przypadkach jednak rozwiązanie mogą się różnić dla interfejsu użytkownika, który zobaczy w obrębie przeglądarki i który znajduje się w aplikacji klienta.  
+ Program Visual Studio zawiera bibliotekę typowych wzorców interakcji, które należy uwzględnić podczas tworzenia nowych funkcji. Istnieją dwa konteksty core dla naszych wzorce projektowe: Visual Studio klienta (devenv) i Visual Studio Online. Niektóre problemy projektu jest wszechobecne wzorzec, który działa dobrze we wszystkich sytuacjach. W wielu przypadkach jednak rozwiązanie może być różne dla interfejsu użytkownika, który jest wyświetlenie w przeglądarce i to, co znajduje się w aplikacji klienckiej.  
   
-### <a name="visual-studio-client-pattern-types"></a>Visual Studio klienta wzorca typów  
+### <a name="visual-studio-client-pattern-types"></a>Typy wzorca w usłudze Visual Studio klientów  
   
-|Typ wzorca|Opis|Przykłady|  
+|Typ deseniu|Opis|Przykłady|  
 |------------------|-----------------|--------------|  
 |**Wzorce na poziomie aplikacji**|Wzorce wysokiego poziomu wspólne dla aplikacji, określania lub wyświetlanie kontekst aplikacji i zawierający wzorce złożone i kontroli w nich|— Windows narzędzie<br />-Okna dokumentów|  
-|**Wzorce złożone**|Wspólne wzorce, które mogą obejmować między wzorce aplikacji lub rozpoznanym szablon składa się z kilku formantów w różnych konfiguracji|— Przełączanie Widok<br />— Konstruktorzy listy<br />-Wyświetlanie danych<br />-Powiadomienia<br />-Weryfikacji<br />— Modele wybór|  
-|**Wzorce formantu**|Szczegółowe informacje o formantach jak niskiego poziomu ma zachowywać się|-Widok drzewa<br />-Edycji w formancie siatki|  
+|**Wzorce złożone**|Typowe wzorce, które mogą rozciągać się na wzorce aplikacji lub rozpoznawanym wzorzec składa się z kilku formantów w różnych konfiguracji|-Przełączanie widoku<br />-Konstruktorzy list<br />— Wyświetlanie danych<br />-Powiadomienia<br />— Sprawdzanie poprawności<br />— Modele wybór|  
+|**Wzorce kontrolki**|Szczegółowe informacje, jak niskiego poziomu kontrolki powinny zachowywać się|-Widok drzewa<br />-Edycji w formancie siatki|  
   
 ## <a name="application-patterns"></a>Wzorce aplikacji  
- Na wysokim poziomie interfejsu programu Visual Studio obejmuje wiele systemu windows, okna dialogowe poleceń i paski narzędzi w obrębie jednego IDE. Hierarchia programu Visual Studio Określa menu kontekstowe i dysków. Punkty integracji klucza w interfejsie użytkownika IDE są okna dokumentów, okien narzędzi, projekty, strukturę polecenia, Edytor tekstu, przybornika, okno właściwości i narzędzia > Opcje.  
+ Na wysokim poziomie interfejsu programu Visual Studio składa się z wielu systemu windows, okien dialogowych, poleceń i paski narzędzi w ramach jednego środowiska IDE. Hierarchia programu Visual Studio Określa menu kontekstowe i dysków. Punkty integracji kluczy w interfejsie użytkownika środowiska IDE są okna dokumentów, okien narzędzi, projekty, strukturę polecenia, Edytor tekstu, przybornika, okno właściwości i narzędzia > Opcje.  
   
- Istnieją wzorców użycia podstawowe dla każdego z punktów integracji klucza w interfejsie użytkownika IDE:  
+ Dostępne są wzorce użycia podstawowego dla każdego z punktów integracji kluczy w interfejsie użytkownika środowiska IDE:  
   
--   [Menu i poleceń programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
+-   [Menu i polecenia dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
   
 -   [Wzorce aplikacji dla programu Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)  
   
-    -   [Interakcje okna](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)  
+    -   [Okno interakcji](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)  
   
     -   [Okna narzędzi](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)  
   
-    -   [Konwencje dokumentów edytora](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)  
+    -   [Konwencje Edytor dokumentów](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)  
   
     -   [Okna dialogowe](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)  
   
     -   [Projekty](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)  
   
-## <a name="common-control-patterns"></a>Wspólne wzorce formantu  
- Wzorce kontrolki są głównie informacje o poszczególnych kontrolkach ma zachowywać się. Jest to jeden obszar, w którym jest najważniejszych spójności.  
+## <a name="common-control-patterns"></a>Typowe wzorce kontrolki  
+ Wzorce kontrolki są głównie, informacje o poszczególnych kontrolkach powinny działać. Jest to jeden obszar, w którym jest najbardziej krytycznych spójności.  
   
- Najbardziej typowych formantów w programie Visual Studio powinien postępuj zgodnie z wytycznymi pulpitu systemu Windows. Nasze wskazówki obejmują tylko obszary, w których należy rozszerzyć typowych konwersji z programu Visual Studio specyficzne dla interakcji lub miejsc, w których firma Microsoft zastępują wytyczne wyłącznie w celu dostosowania programu Visual Studio do potrzeb użytkowników zaawansowanych.  
+ Najczęstsze formanty w programie Visual Studio powinien być zgodny z wytycznymi pulpitu Windows. Nasze wskazówki zawierają tylko obszarów, w których należy rozszerzyć typowych konwersji za pomocą programu Visual Studio specyficznych interakcji lub miejsc, w których firma Microsoft zastępują wytycznych całkowicie Aby dostosować Visual Studio, aby zaspokoić potrzeby naszych zaawansowanych użytkowników.  
   
--   [Wspólne wzorce formantu dla programu Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
+-   [Typowe wzorce kontrolek dla programu Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
   
     -   [Formanty standardowe](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CommonControls)  
   
-    -   [Kontrolki tekstu](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)  
+    -   [Kontrolek tekstu](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)  
   
-    -   [Przyciski i hiperłącza](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)  
+    -   [Przyciski i hiperłączy](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)  
   
 ## <a name="composite-patterns"></a>Wzorce złożone  
- Istnieją różne sposoby, które użytkownicy będą wykonywać zadania. Tam gdzie to możliwe, funkcje należy tak zaprojektować do używania tych wzorców interakcji i projekt visual.  
+ Istnieją różne sposoby, które użytkownicy chcą wykonywać zadania. Wszędzie tam, gdzie to możliwe, powinny być zaprojektowane funkcji dzięki tym wzorcom interakcji i projektowania wizualnego.  
   
- Gdy istnieje wiele wzorce złożone w programie Visual Studio, niektóre z najważniejszych w odniesieniu do spójności są:  
+ Dostępnych jest wiele złożonych wzorców w programie Visual Studio, niektóre z najważniejszych w odniesieniu do spójności są:  
   
 -   [Wzorce złożone dla programu Visual Studio](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)  
   
@@ -75,6 +72,6 @@ ms.locfileid: "31142435"
   
     -   [Wybór modeli](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)  
   
-    -   [Trwałość i zapisywania ustawień](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)  
+    -   [Trwałość i zapisywanie ustawień](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)  
   
-    -   [Wprowadzania dotykowego](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
+    -   [Wprowadzanie dotykowe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)

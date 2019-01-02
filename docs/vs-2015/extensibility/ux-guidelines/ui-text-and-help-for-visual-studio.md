@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5f52d4d6121faba201b37ff8fd9fcff62b46935
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e0c71f82a8268f3c52f4b4d0d6794cfdaebdbe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862174"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -122,17 +121,17 @@ ms.locfileid: "53067970"
 
 -   Pomoc frazy łączy tak, aby ich zadać sobie pytanie odpowiedzą tematu.
 
-     Niepoprawna: "Dowiedz się więcej o Windows Azure Mobile Services, cennik"
+     Niepoprawne:  "Dowiedz się więcej na temat cen usług Windows Azure Mobile Services"
 
-     Poprawne: "jakie opcje cenowe są dostępne dla Windows Azure Mobile Services?"
+     Popraw:  "Jakie opcje cenowe są dostępne dla systemu Windows Azure Mobile Services?"
 
 -   Nigdy nie używaj *kliknij...* tekst łącza.
 
 -   Link nigdy nie tylko słowo "tutaj". Jest to problemy w przypadku czytniki ekranu, które będzie głosu hiperłącza słowo.
 
-     Niepoprawna: "informacje dotyczące systemu Windows Azure Mobile Services **tutaj**"
+     Niepoprawne:  "Informacje dotyczące systemu Windows Azure Mobile Services **tutaj**"
 
-     Poprawne: "jakie opcje cenowe są dostępne dla Windows Azure Mobile Services?"
+     Popraw:  "Jakie opcje cenowe są dostępne dla systemu Windows Azure Mobile Services?"
 
 -   Aby uzyskać więcej informacji na styl pisania poprawne linki pomocy zobacz [wskazówki Windows Desktop, aby uzyskać Pomoc](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx).
 
@@ -262,7 +261,7 @@ ms.locfileid: "53067970"
 
 |dobre|Zły|
 |----------|---------|
-|"Numer wybrany użytkownik nie jest już w usłudze. Sprawdź numer i spróbuj ponownie lub wybierz numer 0 dla operatora."|-"Błąd (449): niedozwolony numer"<br />-"Ten błąd nieobsługiwanego wyjątku wskazuje, że operacja została ukończona pomyślnie."<br /><br /> ![Komunikat o błędzie zły w programie Visual Studio](../../extensibility/ux-guidelines/media/0602-a-errordialog.png "0602 a_ErrorDialog")|
+|"Numer wybrany użytkownik nie jest już w usłudze. Sprawdź numer i spróbuj ponownie lub wybierz numer 0 dla operatora."|-"Błąd (449): Niedozwolona liczba"<br />-"Ten błąd nieobsługiwanego wyjątku wskazuje, że operacja została ukończona pomyślnie."<br /><br /> ![Komunikat o błędzie zły w programie Visual Studio](../../extensibility/ux-guidelines/media/0602-a-errordialog.png "0602 a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>Uzyskiwanie dostępu do pomocy
 

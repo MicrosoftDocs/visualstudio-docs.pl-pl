@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — przełącznik<T> Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
 - System.Activities.Statements.Switch`1.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e5e735fb80e6071ad9e9423eecb0284a9823cd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5109b57ba203bbc0bd0a76cb61985ecfaa132967
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873859"
 ---
 # <a name="switcht-activity-designer"></a>Przełącznik\<T > Projektant działań
 
@@ -41,7 +40,7 @@ W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Switch%601> projektanta działań. Wartość domyślna to przełącznik < Int32\>. Wartość może być edytowana w **właściwości** okna lub bezpośrednio w nagłówku projektanta.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Określa wyrażenie używane do porównania z kluczy w kolekcji spraw, aby ustalić którym to przypadku do wykonania.|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Prawda|Określa wyrażenie używane do porównania z kluczy w kolekcji spraw, aby ustalić którym to przypadku do wykonania.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Określa działanie wykonywane, jeśli nie zostanie znalezione dopasowanie. Kliknij przycisk **dodać działanie** przycisku w projektancie, aby otworzyć **domyślne** pola, których można było porzucić działania.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Określa przypadki, które ma zostać obliczone. Aby dodać przypadek, kliknij **Dodaj nowy przypadek** znajdujący się u dołu **przełącznika\<T >** projektanta. Przycisk zmienia się na pola tekstowego (pola kombi, w przypadku wybrania typu ogólnego, podczas dodawania przełącznika\<T > jest ciągiem lub typu wyliczeniowego). Po dodaniu klucza w **wartość Case** w polu Obszar przypadków rozszerza i działania można było porzucić gdzie tekst wskazówki "W tym miejscu listy activity" Aby zdefiniować logiki wykonywania w przypadku.|
 

@@ -3,19 +3,18 @@ title: Fragmenty kodu dla języka R
 description: Fragmenty kodu dla języka R w programie Visual Studio zapewniają skrótów szybko wstawiać bloki kodu o dowolnej długości, pomaga to uniknąć konieczności ponownego wpisywania podobny kod wiele razy.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b9a06a747fb0169c22f251c1beb22dad3b86c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860900"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
@@ -38,7 +37,7 @@ Aby wyświetlić wszystkie dostępne fragmenty kodu, otwórz **narzędzia** > **
 
 ![Okno dialogowe fragmentów kodu dla języka R](media/code-snippet-dialog.png)
 
-Do tworzenia niestandardowych fragmentach kodu, postępując zgodnie z instrukcjami [wskazówki: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md). Ostatecznie fragment kodu jest po prostu plikiem XML. Na przykład, poniższy kod jest fragment kodu dla tej operacji potoku (skrót `>`):
+Do tworzenia niestandardowych fragmentach kodu, postępując zgodnie z instrukcjami [instruktażu: Utwórz fragment kodu](../ide/walkthrough-creating-a-code-snippet.md). Ostatecznie fragment kodu jest po prostu plikiem XML. Na przykład, poniższy kod jest fragment kodu dla tej operacji potoku (skrót `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

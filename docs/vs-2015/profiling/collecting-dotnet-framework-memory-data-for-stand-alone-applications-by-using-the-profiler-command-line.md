@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cf9277b7ef80997fc4300ca7e96569048231c94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: fc3a109f66a7f761cf31dc6892207a00cc484148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866364"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci .NET Framework dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ W tej sekcji opisano procedury składowane i opcje dla zbieranie alokacji pamię
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
-|**Uruchom aplikację i profilu pamięci platformy .NET**|-   [Porady: uruchamianie aplikacji .NET Framework za pomocą Profiler do zbierania danych pamięci](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Dołącz profiler do aplikacji platformy .NET**|-   [Porady: dołączyć Profiler do aplikacji .NET Framework w celu zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumentacja aplikacji w celu zbierania danych pamięci .NET**|-   [Porady: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych pamięci przy użyciu Profiler](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)|  
+|**Uruchom aplikację i profilu pamięci platformy .NET**|-   [Jak: Uruchamianie aplikacji .NET Framework za pomocą Profiler do zbierania danych pamięci](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Dołącz profiler do aplikacji platformy .NET**|-   [Jak: Dołącz Profiler do aplikacji .NET Framework w celu zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrumentacja aplikacji w celu zbierania danych pamięci .NET**|-   [Jak: Instrument składnika autonomicznego .NET Framework i pamięci zbierania danych za pomocą Profiler](/visualstudio/profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
   

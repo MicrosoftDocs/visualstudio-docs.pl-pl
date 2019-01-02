@@ -1,16 +1,11 @@
 ---
 title: Uwagi dotyczące rozwiązania typu piaskownica | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862104"
 ---
 # <a name="sandboxed-solution-considerations"></a>Uwagi dotyczące rozwiązania typu piaskownica
   *Rozwiązania piaskownicy* to funkcja programu Microsoft SharePoint 2010, umożliwiająca użytkownikom kolekcji witryny do przekazania własnych rozwiązań kodu niestandardowego. Typowe rozwiązanie w trybie piaskownicy jest użytkownikom przekazywanie własnych składników Web Part.  
@@ -145,4 +140,3 @@ ms.locfileid: "49890039"
 ## <a name="see-also"></a>Zobacz także
  [Różnice między piaskownicy oraz rozwiązaniami farmy](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

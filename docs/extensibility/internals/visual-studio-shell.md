@@ -1,9 +1,6 @@
 ---
 title: Visual Studio Shell | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ef0bf2811e9858925398637e835be8684c7f9ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 006b5f3ee19eddb528e339a6a056e2ad0d258fa8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865495"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell jest podstawowym agenta integracji w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Powłoki zapewnia niezbędne funkcje umożliwiające pakietów VSPackage udostępnić wspólne usługi. Ponieważ architektury celem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] się w pakietach VSPackage, uprawnienia nabywa podstawowe funkcje powłoki jest to platforma do zapewnienia podstawowej funkcjonalności i obsługi cross komunikacji między jej składowe pakietów VSPackage.  

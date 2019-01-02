@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — Receive, Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb48c19befc3cf2c155248cfc33c01eedd16ce26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858999"
 ---
 # <a name="receive-activity-designer"></a>Receive, projektant działań
 
@@ -43,11 +42,11 @@ W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Receive> 
 | Nazwa właściwości | Wymagane | Użycie |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | Określa przyjazną nazwę <xref:System.ServiceModel.Activities.Receive> działania. Wartość domyślna to Receive.<br /><br /> Mimo że użycie wartości innych niż domyślne przyjazna <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem jest użycie tych wartości. |
-| <xref:System.ServiceModel.Activities.Receive.OperationName%2A> | True | Określa nazwę operacji usługi implementowany przez to <xref:System.ServiceModel.Activities.Receive> działania. Ta właściwość jest używana do konstruowania wartością domyślną dla **akcji** właściwość Jeśli **akcji** właściwość nie została jawnie ustawiona. |
+| <xref:System.ServiceModel.Activities.Receive.OperationName%2A> | Prawda | Określa nazwę operacji usługi implementowany przez to <xref:System.ServiceModel.Activities.Receive> działania. Ta właściwość jest używana do konstruowania wartością domyślną dla **akcji** właściwość Jeśli **akcji** właściwość nie została jawnie ustawiona. |
 | <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> | False | Określa nazwę kontraktu usługi. Ta właściwość jest używana do grupy operacji usługi pojedynczej usługi umowy. Wszystkie <xref:System.ServiceModel.Activities.Receive> działań, które mają taki sam <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> są zgrupowane w tej samej umowy serwisowej (typ portu WSDL). Wartość domyślna to w pełni kwalifikowana nazwa CLR działania najwyższego poziomu (root). |
 | <xref:System.ServiceModel.Activities.Receive.Content%2A> | False | Określa zawartość komunikatu lub parametr do odbierania. Może być albo <xref:System.ServiceModel.Activities.ReceiveMessageContent> działania lub <xref:System.ServiceModel.Activities.ReceiveParametersContent> działania. Edytować tej właściwości, wybierając przycisk wielokropka obok **zawartości** w siatce właściwości lub klikając **Definiuj...**  przycisk obok **zawartości** etykiety na **Receive** powierzchni projektanta działań. Wyświetl oba **definicji zawartości** okna dialogowego. Aby uzyskać więcej informacji na temat używania tego pola, zobacz [definicji zawartości, okno dialogowe](../workflow-designer/content-definition-dialog-box.md) tematu. |
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | False | Określa korelacji między <xref:System.ServiceModel.Activities.Receive> działania w operacji usługi przepływu pracy przy użyciu <xref:System.ServiceModel.MessageQuerySet> obiektu. Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwości siatki właściwości, aby otworzyć **definice Vlastnosti Correlateson** okno dialogowe. Aby uzyskać więcej informacji na temat użycia tego okna dialogowego, zobacz [definicji zawartości, okno dialogowe](../workflow-designer/content-definition-dialog-box.md) tematu. |
-| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | Określa <xref:System.ServiceModel.Activities.CorrelationHandle> używana do rozsyłania wiadomości dla wystąpienia przepływu pracy odpowiednie.<br /><br /> Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> właściwości siatki właściwości, aby otworzyć **edytora wyrażeń** okno dialogowe. Aby uzyskać więcej informacji na temat użycia tego okna dialogowego, zobacz [porady: używanie edytora wyrażeń](../workflow-designer/how-to-use-the-expression-editor.md) tematu. |
+| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | Określa <xref:System.ServiceModel.Activities.CorrelationHandle> używana do rozsyłania wiadomości dla wystąpienia przepływu pracy odpowiednie.<br /><br /> Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> właściwości siatki właściwości, aby otworzyć **edytora wyrażeń** okno dialogowe. Aby uzyskać więcej informacji na temat użycia tego okna dialogowego, zobacz [jak: Używanie edytora wyrażeń](../workflow-designer/how-to-use-the-expression-editor.md) tematu. |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | False | Określa kolekcję elementów <xref:System.ServiceModel.Activities.CorrelationInitializer> obiektów, które zainicjować wielu <xref:System.ServiceModel.Activities.CorrelationHandle> obiektów, które to skonfigurować <xref:System.ServiceModel.Activities.Receive> działania w przepływie pracy. Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> właściwości siatki właściwości, aby otworzyć **Dodaj inicjatory korelacji** okno dialogowe. Aby uzyskać więcej informacji o korzystaniu z tego pola, zobacz [Dodawanie CorrelationInitializers, okno dialogowe](../workflow-designer/add-correlationinitializers-dialog-box.md) tematu. |
 | <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | False | Określa wartość, która określa, czy nowe wystąpienia przepływu pracy jest tworzony przetworzyć komunikatu, jeśli komunikat nie odnoszą się do istniejącego wystąpienia przepływu pracy. Jeśli wartość jest równa **true**, tworzone jest nowe wystąpienie przepływu pracy w przetworzyć komunikatu, gdy komunikat nie jest skorelowany z istniejącym wystąpieniem przepływu pracy. |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Określa kolekcję elementów znanych typów dla operacji usługowej implementowany przez to <xref:System.ServiceModel.Activities.Receive> działania. Ta właściwość powinna być używana w połączeniu z <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> właściwością <xref:System.Runtime.Serialization.DataContractSerializer>. Jest ignorowana, jeśli <xref:System.Xml.Serialization.XmlSerializer> jest używany.<br /><br /> Wybierz przycisk wielokropka obok **element KnownTypes** w siatce właściwości do wyświetlenia **Editor typu Kolekce** okno dialogowe, za pomocą którego można dodawać odpowiednie typy. Aby uzyskać więcej informacji o korzystaniu z tego pola, zobacz [okno dialogowe Edytor kolekcji typów](../workflow-designer/type-collection-editor-dialog-box.md) tematu. |

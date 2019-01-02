@@ -1,9 +1,6 @@
 ---
 title: Podstawy interfejsu użytkownika dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874876"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy interfejsu użytkownika dla programu Visual Studio
 ## <a name="best-practices"></a>Najlepsze rozwiązania  
@@ -63,7 +60,7 @@ ms.locfileid: "49848595"
  - Wysokość początkowego okna dialogowego powinna być **mniejszych niż 700 pikseli**, więc mieści się w minimalna rozdzielczość klatki IDE przy rozdzielczości 96 dpi.
   
 ### <a name="high-density-displays"></a>Wyświetla o wysokiej gęstości  
- Interfejs użytkownika w programie Visual Studio musi działać dobrze w przypadku skalowania czynników, które w Windows obsługuje gotowe wszystkie rozdzielczości: 150%, 200% i 250%.  
+ Interfejs użytkownika w programie Visual Studio musi działać poprawnie na wszystkich urządzeniach skalowania DPI, obsługiwanych przez Windows gotowych: 150%, 200% i 250%.  
   
 ## <a name="anti-patterns"></a>Niezalecane wzorce dotyczące  
  Program Visual Studio zawiera wiele przykładów interfejsu użytkownika, które należy wykonać nasze wskazówki i najlepsze rozwiązania. W ramach działań zmierzających do deweloperów często zapożyczonych z wzorce projektowania interfejsu użytkownika produktu podobnie jak co to jest tworzone. Mimo że jest to dobra metoda, że pomaga nam dysku spójności w interakcji z użytkownikiem i projektowania wizualnego, czasami publikujemy funkcji, korzystając z kilku szczegółowe informacje, które nie spełniają nasze wskazówki ze względu na ograniczenia harmonogramu lub wady priorytetyzacji. W takich przypadkach nie chcemy zespoły skopiowanie jednego z tych "niezalecane wzorce dotyczące", ponieważ mogą mnożyć się nieprawidłowe lub niekonsekwentnie interfejsu użytkownika w środowisku Visual Studio.  
@@ -79,7 +76,7 @@ ms.locfileid: "49848595"
 #### <a name="anti-pattern-solution"></a>Zapobieganie wzorzec rozwiązania  
  Zaraz po użytkownik zainicjował akcję, a przed zakończenia zadania, natychmiast umieścić zatrzymanie krytyczne ikony obok obszarów, które wymagają konfiguracji.  
   
-#### <a name="example-manifest-designer-declarations"></a>Przykład: Projektanta manifestu deklaracji  
+#### <a name="example-manifest-designer-declarations"></a>Przykład: Deklaracje projektanta manifestu  
  Dodawanie deklaracji do listy natychmiast umieszcza je w stanie błędu, który będzie się powtarzać, dopóki użytkownik ustawia wymaganych właściwości.  
   
  W tym przypadku jest kwestią dodatkowych, ponieważ zawiera Ikona używana dla alertu "&times;" ikony, więc nie można używać wspólnych ikonę Usuń obok niej. W rezultacie interfejsu użytkownika używa przycisk Usuń, bardziej clunky kontroli.  
@@ -120,15 +117,15 @@ Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu 
 ### <a name="using-command-bars-for-settings"></a>Za pomocą pasków poleceń dla ustawień  
  **Rysunek** reprezentuje ten wzorzec niezalecane: umieszczanie ustawienie poniżej przycisku polecenia, który ma zastosowanie do więcej niż tylko polecenia. W tym szkic istnieją polecenia oprócz Rozpocznij debugowanie — Wyświetl w przeglądarce, Rozpocznij bez debugowania i Wkrocz, takich jak — która będzie uwzględniać wybrane ustawienie.  
 
-  ![Rysunek A: polecenia paska zapobieganie wzorzec](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "FigureA-Commandbaranti — wzorzec")<br />Rysunek Odp.: wzorzec przed pasku polecenia
+  ![Rysunek Odp.: Wzorzec Układ paska poleceń](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "FigureA-Commandbaranti — wzorzec")<br />Rysunek Odp.: Wzorzec zapobieganie pasek poleceń
   
  Nieco lepiej, ale nadal niepożądanych, jest umieszczenie ustawienia tego typu w paski narzędzi, jak pokazano na **B rysunek**. Przyciski dzielone zajmują mniej miejsca i są w związku z tym poprawę za pośrednictwem list rozwijanych, oba projekty są nadal przy użyciu paska narzędzi do podwyższenia poziomu coś, co tak naprawdę nie jest poleceniem.  
  
- ![Rysunek B: lepsze, ale nadal wzorzec przed pasku polecenia](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "FigureB-Commandbaranti — wzorzec")<br />Rysunek B: lepsze, ale nadal wzorzec zapobieganie pasek poleceń
+ ![Rysunek B: Lepsze, ale nadal wzorzec przed pasku polecenia](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "FigureB-Commandbaranti — wzorzec")<br />Rysunek B: Lepsze, ale nadal wzorzec zapobieganie pasek poleceń
  
   W właściwe podejście pokazano w **rysunek C**, to ustawienie jest powiązany z serię poleceń. Nie ma żadnego ustawienia globalne, ustawiania i firma Microsoft jest po prostu przełączanie między czterech poleceń. Jest to tylko sytuacji, w którym polecenia na pasku narzędzi są akceptowane. 
 
- ![Rysunek C: Popraw Użyj wzorca paska poleceń programu Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "FigureC-Commandbaranti — wzorzec")<br />Rysunek C: poprawne użycie wzorca paska poleceń programu Visual Studio
+ ![Rysunek C: Popraw Użyj wzorca paska poleceń programu Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "FigureC-Commandbaranti — wzorzec")<br />Rysunek C: Prawidłowe użycie wzorca paska poleceń programu Visual Studio
    
 ### <a name="control-anti-patterns"></a>Niezalecane wzorce kontrolki  
  Niektóre niezalecane wzorce są po prostu nieprawidłowe użycie lub prezentacji formantu lub grupy formantów.  
@@ -156,7 +153,7 @@ Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu 
   
    ![Ignorowanie usługi kolorów i za pomocą "Dowiedz się więcej" dla hiperlinków są niezalecane wzorce dotyczące programu Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />Ignorowanie usługi kolorów i za pomocą "Dowiedz się więcej" dla hiperlinków są niezalecane wzorce dotyczące programu Visual Studio.  
   
-   **Lepsze rozwiązania:** pytanie użytkownika, będzie zapytaniem, klikając link.  
+   **Lepszym rozwiązaniem:** Stanowić pytanie, na które użytkownik może zadać, klikając link.  
   
 -   Jak działają usługi Windows Azure?  
   
@@ -165,6 +162,6 @@ Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu 
 #### <a name="using-click-here-for-links"></a>Za pomocą "Kliknij tutaj" dla łączy  
  Hiperlinki powinien być samoopisowe. Jest to niezalecane wzorzec używaj "sformułowania kliknij tutaj" lub dowolnych wariantów podobne.  
   
- **Niewłaściwe:** "Kliknij tutaj, aby uzyskać instrukcje dotyczące sposobu tworzenia nowego projektu."
+ **Zły:** "Kliknij tutaj, aby uzyskać instrukcje dotyczące sposobu tworzenia nowego projektu."
   
  **Dobre:** "Jak utworzyć nowy projekt?"

@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata::get_functionstart — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be173020e4aeb3b69197a038b4bc6d66c7eedc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28dbb603bab183a666d4d0efa6419b1c10b17a6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864219"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.  
@@ -27,7 +25,7 @@ Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_functionStart (   
+HRESULT get_functionStart (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,11 +1,4 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 7e09023659b1f44af1951e157878d78b641be3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915948"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Tworzenie projektu sztucznej Inteligencji z istniejącego kodu
 

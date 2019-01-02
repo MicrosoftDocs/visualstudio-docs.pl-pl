@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane zapisywanie dokumentów programu Visio'
-ms.custom: ''
+title: 'Instrukcje: Programowe zapisywanie dokumentów programu Visio'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9f065a32fc26d372b97a31eb70836451b31fa00
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd49be6f7ab4e87f0592470e1c5af6039a5f56aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865625"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Porady: programowane zapisywanie dokumentów programu Visio
+# <a name="how-to-programmatically-save-visio-documents"></a>Instrukcje: Programowe zapisywanie dokumentów programu Visio
   Istnieje kilka sposobów na zapisywanie dokumentów programu Microsoft Office Visio:  
   
 - Zapisz zmiany w istniejącym dokumencie.  
@@ -80,9 +77,7 @@ ms.locfileid: "50670731"
 ## <a name="see-also"></a>Zobacz także  
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
- [Porady: programowane tworzenie nowych dokumentów programu Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Porady: programowane otwieranie dokumentów programu Visio](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Porady: programowane zamykanie dokumentów programu Visio](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Porady: programowane drukowanie dokumentów programu Visio](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Instrukcje: Programowe tworzenie nowych dokumentów programu Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Instrukcje: Programowe otwieranie dokumentów programu Visio](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Instrukcje: Programowe zamykanie dokumentów programu Visio](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Instrukcje: Programowe drukowanie dokumentów programu Visio](../vsto/how-to-programmatically-print-visio-documents.md)  

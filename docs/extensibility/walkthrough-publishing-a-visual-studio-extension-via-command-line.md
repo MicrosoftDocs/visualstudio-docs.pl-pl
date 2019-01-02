@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 07/12/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857218"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
 
@@ -203,7 +200,7 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
 
 W tym przypadku użyjemy rozszerzenia pakietu VSPackage domyślnego, ale te same kroki są prawidłowe dla każdego rodzaju rozszerzenia.
 
-1. Tworzenie pakietu VSPackage w języku C# o nazwie "TestPublish", który zawiera polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie pierwszego rozszerzenia: Hello World](../extensibility/extensibility-hello-world.md).
+1. Tworzenie pakietu VSPackage w języku C# o nazwie "TestPublish", który zawiera polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie pierwszego rozszerzenia: Witaj, świecie](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Pakiet rozszerzenia
 

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny'
+title: 'Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870193"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 
 Można zmodyfikować zachowanie niektóre standardowe polecenia, które są automatycznie definiowane w DSL. Na przykład, można zmodyfikować **Wytnij** tak, aby nie obejmuje on poufne informacje. Aby to zrobić, można zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs w projekcie DslPackage i są uzyskiwane z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Jeśli chcesz utworzyć własne polecenia menu, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
 ## <a name="what-commands-can-you-modify"></a>Jakie polecenia mogą zmodyfikować?
 
@@ -71,7 +70,7 @@ Utwórz nowy plik, który zawiera deklarację częściowe klasy zestawu poleceń
 
 ## <a name="override-the-command-methods"></a>Przesłaniaj metody polecenia
 
-Większość poleceń ma dwie metody skojarzone: metody o nazwie, takich jak `ProcessOnStatus`... określa, czy polecenie powinno być widoczne i włączone. Jest wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinna wykonać szybkie i nie wprowadzaj żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i należy wykonać funkcję polecenia. Można zastąpić jedną lub obie te metody.
+Większość poleceń mają dwie metody skojarzone: Metody o nazwie, takich jak `ProcessOnStatus`... określa, czy polecenie powinno być widoczne i włączone. Jest wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinna wykonać szybkie i nie wprowadzaj żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i należy wykonać funkcję polecenia. Można zastąpić jedną lub obie te metody.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Aby zmienić, gdy polecenie jest wyświetlane w menu
 
@@ -148,7 +147,7 @@ Aby uzyskać więcej informacji na temat sposobu nawigowania element po elemenci
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Instrukcje: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Instrukcje: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Odwołanie do schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)

@@ -1,8 +1,7 @@
 ---
-title: 'Porady: wykonywanie transformację XSLT w edytorze XML'
+title: 'Instrukcje: Wykonywanie transformacji XSLT w edytorze XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 author: gewarren
@@ -10,60 +9,60 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 3fccad81c2990a93e78f329e2ee4af070d6e5c97
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866520"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Porady: wykonywanie transformację XSLT w edytorze XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: Wykonywanie transformacji XSLT w edytorze XML
 
-Edytor XML umożliwia skojarzenie arkusz stylów XSLT z dokumentu XML na przekształcenie i wyświetlić dane wyjściowe. Dane wyjściowe z przekształcenia XSLT, który jest wyświetlany w nowym oknie dokumentu.
+Edytor XML umożliwia kojarzenie arkusz stylów XSLT z dokumentu XML na przekształcenie i wyświetlić dane wyjściowe. Dane wyjściowe z transformację XSLT jest wyświetlany w nowym oknie dokumentu.
 
-**Dane wyjściowe** właściwość określa nazwę pliku dla danych wyjściowych. Jeśli **dane wyjściowe** właściwość jest pusta, nazwa pliku jest generowany w katalogu tymczasowym. Rozszerzenie pliku jest oparta na `xsl:output` element swojego stylu arkusza i może być. *XML*,. *txt* lub. *htm*.
+**Dane wyjściowe** właściwość określa nazwę pliku dla danych wyjściowych. Jeśli **dane wyjściowe** właściwość jest pusta, nazwa_pliku jest generowany w katalogu tymczasowym. Rozszerzenie pliku zależy od `xsl:output` element swojego stylu arkusz i może być. *XML*,. *txt* lub. *htm*.
 
-Jeśli **dane wyjściowe** właściwość określa nazwę pliku. *htm* lub. *HTML* rozszerzenia, dane wyjściowe XSLT jest przeglądanego przy użyciu [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] programu Internet Explorer. Wszystkie inne rozszerzenia plików otwartych przy użyciu wybranego przez domyślny edytor [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] programu Visual Studio. Na przykład, jeśli rozszerzenie pliku. *xml*, Visual Studio będzie korzystać z edytora XML.
+Jeśli **dane wyjściowe** właściwość określa nazwę pliku. *htm* lub. *HTML* rozszerzenie, dane wyjściowe XSLT jest traktuje, za pomocą [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] programu Internet Explorer. Inne rozszerzenia pliku są otwierane przy użyciu domyślnego edytora wybranego przez [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] programu Visual Studio. Na przykład, jeśli plik ma rozszerzenie. *xml*, Visual Studio korzysta z edytora XML.
 
-## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Do wykonania transformację XSLT z dokumentu XML
+## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Wykonywanie transformacji XSLT z dokumentu XML
 
 1.  Otwórz dokument XML w edytorze XML.
 
-2.  Arkusz stylów XSLT skojarzony z dokumentem XML.
+2.  Arkusz stylów XSLT należy skojarzyć z dokumentu XML.
 
-    -   Dodaj `xml-stylesheet` przetwarzania instrukcji do dokumentu XML. Na przykład, Dodaj następujący wiersz `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` do prologu dokumentu.
+    -   Dodaj `xml-stylesheet` przetwarzania instrukcji w dokumencie XML. Na przykład, Dodaj następujący wiersz `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` się w prologu dokumentu.
 
          —lub—
 
-    -   Dodawanie using arkusz stylów XSLT **właściwości** okna. W dokumencie **okna właściwości**, kliknij przycisk **Przeglądaj** przycisk dla **arkusza stylów** , wybierz arkusz stylów XSLT, a następnie kliknij przycisk **Otwórz**.
+    -   Dodaj using arkusza stylów XSLT **właściwości** okna. W dokumencie **okno właściwości**, kliknij przycisk **Przeglądaj** przycisku **arkusza stylów** , wybierz arkusz stylów XSLT, a następnie kliknij przycisk **Otwórz**.
 
-3.  Kliknij przycisk **dane wyjściowe ShowXSL** znajdującego się na **edytora XML** paska narzędzi.
+3.  Kliknij przycisk **dane wyjściowe ShowXSL** znajdujący się na **edytora XML** paska narzędzi.
 
     > [!NOTE]
-    > Jeśli nie ma żadnych arkusza stylów powiązany z dokumentem XML, okno dialogowe wyświetli monit o Podaj arkusza stylów do użycia.
+    > W przypadku arkusza stylów, nie skojarzonych z dokumentu XML, okno dialogowe monit zapewniają arkusza stylów do użycia.
     >
-    >  Dane wyjściowe z przekształcenia XSLT, który jest wyświetlany w nowym oknie dokumentu.
+    >  Dane wyjściowe z transformację XSLT jest wyświetlany w nowym oknie dokumentu.
 
-## <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Do wykonania transformację XSLT z arkusz stylów XSLT
+## <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Wykonywanie transformacji XSLT z arkusza stylów XSLT
 
-1.  Otwórz arkusz stylów XSLT w edytorze XML.
+1.  Otworzyć arkusz stylów XSLT w edytorze XML.
 
-2.  Określ dokument XML w **dane wejściowe** pole dokumentu **właściwości** okna.
+2.  Określ dokumentu XML w **dane wejściowe** pola dokumentu **właściwości** okna.
 
     > [!NOTE]
-    > Dokument XML jest używany do transformacji dokument wejściowy. Jeśli nie określono dokumentu, gdy przekształcenie XSLT jest uruchomiona, **Otwórz plik** zostanie wyświetlone okno dialogowe, a w tym czasie można określić dokumentu.
+    > Dokument XML jest dokument wejściowy używany do transformacji. Jeśli dokument nie jest określony, uruchamianiu przekształcenie XSLT **Otwieranie pliku** pojawi się okno dialogowe, a w tym czasie można określić dokument.
 
-3.  Kliknij przycisk **dane wyjściowe ShowXSLT** znajdującego się na **edytora XML** paska narzędzi.
+3.  Kliknij przycisk **dane wyjściowe ShowXSLT** znajdujący się na **edytora XML** paska narzędzi.
 
-     Dane wyjściowe z przekształcenia XSLT, który jest wyświetlany w nowym oknie dokumentu.
+     Dane wyjściowe z transformację XSLT jest wyświetlany w nowym oknie dokumentu.
 
-## <a name="to-provide-a-different-output-file-name"></a>Aby podać nazwę pliku wyjściowego różnych
+## <a name="to-provide-a-different-output-file-name"></a>Aby podać nazwę pliku danych wyjściowych inne niż
 
-1.  Określ nazwę pliku w **dane wyjściowe** pole dokumentu **właściwości** okna.
+1.  Określ nazwę pliku w **dane wyjściowe** pola dokumentu **właściwości** okna.
 
-2.  Kliknij przycisk **dane wyjściowe ShowXSLT** znajdującego się na **edytora XML** paska narzędzi.
+2.  Kliknij przycisk **dane wyjściowe ShowXSLT** znajdujący się na **edytora XML** paska narzędzi.
 
-     Dane wyjściowe z przekształcenia XSLT, który jest wyświetlany w nowym oknie dokumentu i rozszerzenie pliku zależy od edytora używane w oknie danych wyjściowych z **dane wyjściowe** właściwości dokumentu.
+     Dane wyjściowe z transformację XSLT jest wyświetlany w nowym oknie dokumentu i Edytor używane w oknie danych wyjściowych jest zależna od rozszerzenia pliku swoje **dane wyjściowe** właściwości dokumentu.
 
 ## <a name="see-also"></a>Zobacz także
 

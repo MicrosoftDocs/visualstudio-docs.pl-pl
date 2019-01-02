@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Programowe Dodawanie komentarzy do tekstu w dokumentach'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857030"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Instrukcje: Programowe Dodawanie komentarzy do tekstu w dokumentach
   Właściwość komentarze klasy dokumentu dodaje komentarz do zakresu w dokumencie programu Microsoft Office Word.  
@@ -52,5 +49,3 @@ ms.locfileid: "53804607"
 ## <a name="see-also"></a>Zobacz także  
  [Instrukcje: Programowe usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Element hosta dokumentu](../vsto/document-host-item.md)  
-  
-  

@@ -7,16 +7,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: bf28747e8bd111767fbe314cbb658a38ef059ae2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 24da256ac835e477465845714cc844ac5bb305d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872755"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Narzędzia do obsługi danych programu Visual Studio dla platformy .NET
 
@@ -42,7 +41,7 @@ Typowy przepływ pracy to:
 
 5. Dodawanie kodu niestandardowego, w przypadku elementów, takich jak reguły biznesowe, wyszukiwania i sprawdzanie poprawności danych lub skorzystaj z zalet funkcji niestandardowych, który udostępnia w źródłowej bazie danych.
 
-Można pominąć krok 3 i programowania aplikacji .NET w celu wydawania poleceń, bezpośrednio do bazy danych, a nie przy użyciu modelu. W takim przypadku możesz znaleźć odpowiednią dokumentację: [ADO.NET](/dotnet/framework/data/adonet/index). Należy zauważyć, że nadal można używać **Kreatora konfiguracji źródła danych** i projektantów, aby wygenerować kod powiązania danych, podczas wypełniania obiektów w pamięci, a następnie powiązanie danych kontrolki interfejsu użytkownika do tych obiektów.
+Można pominąć krok 3 i programowania aplikacji .NET w celu wydawania poleceń, bezpośrednio do bazy danych, a nie przy użyciu modelu. W tym przypadku znajdziesz tutaj odpowiedniej dokumentacji: [ADO.NET](/dotnet/framework/data/adonet/index). Należy zauważyć, że nadal można używać **Kreatora konfiguracji źródła danych** i projektantów, aby wygenerować kod powiązania danych, podczas wypełniania obiektów w pamięci, a następnie powiązanie danych kontrolki interfejsu użytkownika do tych obiektów.
 
 ## <a name="see-also"></a>Zobacz także
 

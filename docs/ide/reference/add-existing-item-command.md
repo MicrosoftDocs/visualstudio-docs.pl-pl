@@ -2,7 +2,6 @@
 title: Dodaj istniejący element — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addexistingitem
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873992"
 ---
 # <a name="add-existing-item-command"></a>Dodaj istniejący element — Polecenie
-Dodaje istniejący plik do bieżącego rozwiązania, a następnie go otwiera.
+Dodaje istniejący plik do bieżącego rozwiązania i otwiera go.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,22 +31,22 @@ File.AddExistingItem filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename` Wymagane. Pełna ścieżka i nazwa pliku, z rozszerzeniem element do dodania do bieżącego rozwiązania. Jeśli ścieżka pliku lub nazwa pliku zawiera spacje, ujmij całą ścieżkę w cudzysłów.
+ `filename` Wymagane. Pełna ścieżka i nazwa pliku, z rozszerzeniem element do dodania do bieżącego rozwiązania. Jeśli ścieżka do pliku lub nazwa pliku zawiera spacje, należy ująć w znaki cudzysłowu pełną ścieżkę.
 
 ## <a name="switches"></a>Przełączniki
- / e: `editorname` opcjonalne. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument zostanie określony, ale zostanie podana żadna nazwa edytora, **Otwórz za pomocą** zostanie wyświetlone okno dialogowe.
+ / e: `editorname` Opcjonalnie. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument jest określony, ale nazwa edytora nie został podany, **Otwórz za pomocą** pojawi się okno dialogowe.
 
- / E:`editorname` składnię argumentu korzysta z nazw Edytor znajdujące się w **Otwieranie z okna dialogowego**, ujęty w cudzysłów. Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, należy wprowadzić następujące / e:`editorname` argumentu.
+ / E:`editorname` składnię argumentu używa nazw edytora, w jakiej występują w **Otwórz okno dialogowe za pomocą**, ujęty w znaki cudzysłowu. Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, należy wprowadzić następujące / e:`editorname` argumentu.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Uwagi
- Autocompletion próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas pisania.
+ Automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie dodaje plik Form1.frm, do bieżącego rozwiązania.
+ Ten przykład dodaje plik Form1.frm, do bieżącego rozwiązania.
 
 ```cmd
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
@@ -57,5 +56,5 @@ File.AddExistingItem filename [/e:editorname]
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

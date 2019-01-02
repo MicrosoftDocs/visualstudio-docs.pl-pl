@@ -1,9 +1,6 @@
 ---
 title: Rejestrowanie zdarzeń dla rozwiązań pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8064c36b6b0e567f868fee7212560d726bbd3c66
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6cca606022a8b35ba43f9174925aac978835d289
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857056"
 ---
 # <a name="event-logging-for-office-solutions"></a>Rejestrowanie zdarzeń dla rozwiązań pakietu Office
   Aby wyświetlić komunikaty o wyjątkach, które są przechwytywane przez służy Podgląd zdarzeń w Windows [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] po zainstalowaniu lub odinstalowaniu rozwiązań pakietu Office. Te komunikaty z Rejestratora zdarzeń służy do instalacji i problemy z wdrażaniem.  
@@ -102,5 +99,3 @@ ms.locfileid: "53647961"
 ## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

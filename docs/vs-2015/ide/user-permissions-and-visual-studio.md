@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83a45aaebbf621a5ae84a0ae4bdf3379697a47e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34eab1bed0113c3fbe39574c9ef2a4c2822af5c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858373"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +38,7 @@ Ze względów bezpieczeństwa należy uruchamiać Visual Studio jako zwykły uż
 |Obszar|Zadanie|Więcej informacji|
 |----------|----------|--------------------------|
 |Instalacja|Instalowanie programu Visual Studio.|[Instalowanie programu Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Aktualizacja z wersji próbnej Visual Studio.|[Instrukcje: aktualizacja z wersji próbnej wersji programu Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Aktualizacja z wersji próbnej Visual Studio.|[Instrukcje: Uaktualnienie z wersji próbnej programu Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości Pomocy.|[Instalowanie zawartości lokalnej i zarządzanie nią](../ide/install-and-manage-local-content.md)|
 |Typy aplikacji|Tworzenie rozwiązań dla programu SharePoint 2010.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Pobieranie licencji deweloperskiej dla [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Uzyskaj licencję dewelopera (aplikacje Windows Store)](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -54,7 +53,7 @@ Ze względów bezpieczeństwa należy uruchamiać Visual Studio jako zwykły uż
 ||Konfigurowanie zapory do zdalnego debugowania.|[Konfigurowanie narzędzi zdalnych na urządzeniu](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Narzędzia wydajności|Profilowanie aplikacji.|[Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)|
 |wdrażania|Wdrażanie aplikacji internetowej do usług Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web ASP.NET u dostawcy hostingu przy użyciu programu Visual Studio lub Visual Web Developer: Wdrażanie w usługach IIS jako środowisku testowym](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Dostarczanie opinii do firmy Microsoft|Zmiana sposobu uczestnictwa w programie konsumenckim programu Visual Studio.|[Porady: wysyłanie opinii](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Dostarczanie opinii do firmy Microsoft|Zmiana sposobu uczestnictwa w programie konsumenckim programu Visual Studio.|[Instrukcje: Prześlij opinię](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Uruchamianie programu Visual Studio jako administrator
  Możesz uruchomić program Visual Studio z uprawnieniami administracyjnymi przy każdym uruchomieniu IDE lub zmodyfikować skrót aplikacji, aby program był zawsze uruchamiany z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz Pomoc systemu Windows.

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_undecoratedname — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a44a69fef0f77bcdbc07efb283aebd0ae95baa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f0259a99d292f5852af36a9503d94d6f2eddb1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867881"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 Pobiera nieozdobioną nazwę zawartej dekorowane, C++ lub połączenia, nazwa.  
@@ -27,7 +25,7 @@ Pobiera nieozdobioną nazwę zawartej dekorowane, C++ lub połączenia, nazwa.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_undecoratedName (   
+HRESULT get_undecoratedName (   
    BSTR* pRetVal  
 );  
 ```  

@@ -3,7 +3,6 @@ title: Dowiedz się, jak debugowanie aplikacji wielowątkowych
 description: Debugowanie za pomocą okna stosów równoległych i równoległego wyrażenia kontrolnego w programie Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863293"
 ---
 # <a name="get-started-debugging-multithreaded-applications"></a>Rozpoczynanie debugowania aplikacji wielowątkowych
 Program Visual Studio udostępnia wiele narzędzi i elementów interfejsu użytkownika w celu ułatwienia debugowania aplikacji wielowątkowych. W tym samouczku pokazano, jak i używaj znaczników wątków **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okien, warunkowe punkty przerwania i filtr punktów przerwania. Ten samouczek umożliwia zapoznanie się z funkcjami programu Visual Studio do debugowania aplikacji wielowątkowych.
@@ -35,9 +34,9 @@ Program Visual Studio udostępnia wiele narzędzi i elementów interfejsu użytk
 
 Dwa następujące tematy zawierają dodatkowe informacje na temat korzystania z innymi narzędziami debugowania wielowątkowe:
 
-- Do użycia **Lokalizacja debugowania** narzędzi i **wątków** okna, zobacz [wskazówki: debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
+- Aby użyć **Lokalizacja debugowania** narzędzi i **wątków** okna, zobacz [wskazówki: Debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
 
-- Dla przykładu, który używa <xref:System.Threading.Tasks.Task> (kodu zarządzanego) i środowisko uruchomieniowe współbieżności (C++), zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md). Aby uzyskać ogólne debugowania porady, które mają zastosowanie do najbardziej wielowątkowe typów aplikacji przeczytaj tego tematu i ten zestaw.
+- Dla przykładu, który używa <xref:System.Threading.Tasks.Task> (kodu zarządzanego) i środowisko uruchomieniowe współbieżności (C++), zobacz [instruktażu: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md). Aby uzyskać ogólne debugowania porady, które mają zastosowanie do najbardziej wielowątkowe typów aplikacji przeczytaj tego tematu i ten zestaw.
   
 Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład.  
   
@@ -47,13 +46,13 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
   
      **Nowy projekt** pojawi się okno dialogowe.  
   
-2.  Wybierz język: **Visual C#** , **Visual C++**, lub **języka Visual Basic**.  
+2.  Wybierz język: **Wizualne C#** , **Visual C++**, lub **języka Visual Basic**.  
   
 3.  W obszarze **pulpitu Windows**, wybierz **aplikacja Konsolowa**.  
   
 4.  W **nazwa** wprowadź MyThreadWalkthroughApp.  
   
-5.  Wybierz **OK**.  
+5.  Kliknij przycisk **OK**.  
   
      Pojawi się nowy projekt konsoli. Po utworzeniu projektu pojawia się pliku źródłowego. W zależności od języka, które zostały wybrane, może mieć nazwę pliku źródłowego *Program.cs*, *MyThreadWalkthroughApp.cpp*, lub *Module1.vb*.  
   
@@ -258,7 +257,7 @@ W **stosów równoległych** okna, można przełączać się między widokiem w�
     Możesz wykonywać różne akcje te menu kliknij prawym przyciskiem myszy, ale w tym samouczku pokazano, jeden z tych szczegółów w **równoległego wyrażenia kontrolnego** okna (w kolejnych sekcjach).
 
     > [!NOTE]
-    > Aby wyświetlić widok listy ze informacji na temat każdego wątku, należy użyć **wątków** okna zamiast tego. Zobacz [wskazówki: debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
+    > Aby wyświetlić widok listy ze informacji na temat każdego wątku, należy użyć **wątków** okna zamiast tego. Zobacz [instruktażu: Debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Ustawianie wyrażenia kontrolnego na zmiennej
 
@@ -345,6 +344,6 @@ Możesz ustawić punkty przerwania dla różnych warunków, takich jak nazwa wą
   
 ## <a name="see-also"></a>Zobacz także  
 [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Porady: Korzystanie z okna równoległego stosu](../debugger/using-the-parallel-stacks-window.md)  
-[Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  
+[Instrukcje: Przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Instrukcje: Korzystanie z okna równoległego stosu](../debugger/using-the-parallel-stacks-window.md)  
+[Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  

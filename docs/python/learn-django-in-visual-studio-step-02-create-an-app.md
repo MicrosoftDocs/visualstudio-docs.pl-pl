@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności kroki tworzenia aplikacji i korzystanie z widoków i szablonów.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce819f5d0a7167c4fce2871894df7c6edd26e6a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871706"
 ---
-# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Django z widoków i szablonów stron
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji Django przy użyciu widoków i szablonów stron
 
-**Poprzedni krok: [Tworzenie projektu programu Visual Studio i rozwiązania](learn-django-in-visual-studio-step-01-project-and-solution.md)**
+**Poprzedniego kroku: [Tworzenie projektu programu Visual Studio i rozwiązania](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
 Posiadane przez Ciebie do tej pory w projekt programu Visual Studio są tylko składniki poziomie witryny Django *projektu*, które można uruchomić co najmniej jeden Django *aplikacji*. Następnym krokiem jest, aby utworzyć swoją pierwszą aplikację za pomocą pojedynczej strony.
 
@@ -34,7 +33,7 @@ W tym kroku teraz dowiesz się, jak:
 > - Renderowania widoku przy użyciu języka HTML (krok 2 – 3)
 > - Renderowanie widoku, używając szablonu strony Django (krok 2 – 4)
 
-## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 1 z 2: tworzenie aplikacji z domyślnej struktury
+## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 1 z 2 Tworzenie aplikacji z domyślnej struktury
 
 Aplikacja Django jest oddzielny pakiet języka Python, który zawiera zestaw powiązanych plików w określonym celu. Projekt Django może zawierać dowolną liczbę aplikacji, która odzwierciedla fakt, że host sieci web może obsługiwać dowolną liczbę punktów oddzielny wpis z pojedynczą nazwę domeny. Na przykład projekt Django dla domeny, np. contoso.com może zawierać jedną aplikację www.contoso.com, drugą aplikację dla support.contoso.com i trzeci aplikację dla docs.contoso.com. W tym przypadku projekt Django obsługuje routing adresów URL i ustawień poziomie witryny (w jego *urls.py* i *settings.py* plików), a każda aplikacja ma swoją własną odrębnych stylów i działanie za pomocą wewnętrznej Routing, widoki, modele, pliki statyczne i interfejsu administracyjnego.
 
@@ -72,9 +71,9 @@ class HelloDjangoAppConfig(AppConfig):
 
 ### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Pytanie: Tworzy aplikację Django w programie Visual Studio inaczej niż Tworzenie aplikacji w wierszu polecenia?
 
-Odpowiedź: Uruchamianie **Dodaj** > **aplikacji Django** polecenia lub przy użyciu **Dodaj** > **nowy element** za pomocą aplikacji Django szablon tworzy tych samych plików w ramach polecenia Django `manage.py startapp <app_name>`. Do tworzenia aplikacji w programie Visual Studio ma folderu aplikacji i wszystkie jego pliki są automatycznie zintegrowane do projektu. Można użyć tego samego polecenia programu Visual Studio, można utworzyć dowolną liczbę aplikacji w projekcie.
+Odpowiedź: Uruchamianie **Dodaj** > **aplikacji Django** polecenia lub przy użyciu **Dodaj** > **nowy element** za pomocą szablonu aplikacji Django Tworzy tych samych plików w ramach polecenia Django `manage.py startapp <app_name>`. Do tworzenia aplikacji w programie Visual Studio ma folderu aplikacji i wszystkie jego pliki są automatycznie zintegrowane do projektu. Można użyć tego samego polecenia programu Visual Studio, można utworzyć dowolną liczbę aplikacji w projekcie.
 
-## <a name="step-2-2-run-the-app-from-the-django-project"></a>Krok 2 z 2: uruchamianie aplikacji z projektu Django
+## <a name="step-2-2-run-the-app-from-the-django-project"></a>Krok 2 z 2 Uruchom aplikację z projektu Django
 
 Jeśli na tym etapie, ponownie uruchom projekt w programie Visual Studio (przy użyciu przycisku paska narzędzi lub **debugowania** > **Rozpocznij debugowanie**), nadal wyświetlić domyślną stronę. Brak zawartości aplikacji pojawia się, ponieważ musisz zdefiniowana strona specyficzny dla aplikacji i dodać ją do projektu Django:
 
@@ -119,17 +118,17 @@ Ponieważ wprowadzono zmiany w kodzie, a następnie zostały one przetestowane p
 
 ### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Pytanie: Co to jest prefiks "r" przed routingu ciągi dla?
 
-Odpowiedź: Prefiks "r" w ciągu w języku Python oznacza "pierwotne" który powoduje, że języka Python, aby nie wprowadzić dowolne znaki ciągu. Ponieważ wyrażenia regularne mogą używać wielu znaków specjalnych, przy użyciu prefiksu "r" sprawia, że te ciągi znacznie łatwiejsze do odczytania niż, jeśli ich zawierała kilka "\\" znaki ucieczki.
+Odpowiedź: Prefiks "r" w ciągu w języku Python oznacza "pierwotne", który powoduje, że Python wyprowadza znaków w ciągu. Ponieważ wyrażenia regularne mogą używać wielu znaków specjalnych, przy użyciu prefiksu "r" sprawia, że te ciągi znacznie łatwiejsze do odczytania niż, jeśli ich zawierała kilka "\\" znaki ucieczki.
 
 ### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Pytanie: Co zrobić, ^ znaków $ oznaczają we wpisach routingu adresów URL i?
 
-Odpowiedź: W wyrażeń regularnych, które definiują wzorce adresów URL ^ oznacza "start wiersza" i oznacza, że $ "koniec wiersza," gdzie ponownie adresy URL są względem katalogu głównego witryny (part, który następuje po `https://www.domain.com/`). Wyrażenie regularne `^$` skutecznie oznacza, że "blank" i w związku z tym pasuje pełnego adresu URL `https://www.domain.com/` (niczego nie dodane do katalogu głównego witryny). Wzorzec `^home$` dopasowuje dokładnie `https://www.domain.com/home/`. (Django nie używają końcowych / w dopasowywanie do wzorców).
+Odpowiedź: W wyrażeniach regularnych, które definiują wzorce adresów URL ^ oznacza "start wiersza" i oznacza, że $ "koniec wiersza," gdzie ponownie adresy URL są względem katalogu głównego witryny (part, który następuje po `https://www.domain.com/`). Wyrażenie regularne `^$` skutecznie oznacza, że "blank" i w związku z tym pasuje pełnego adresu URL `https://www.domain.com/` (niczego nie dodane do katalogu głównego witryny). Wzorzec `^home$` dopasowuje dokładnie `https://www.domain.com/home/`. (Django nie używają końcowych / w dopasowywanie do wzorców).
 
 Jeśli nie używasz końcowe $ w wyrażeniu regularnym, podobnie jak w przypadku `^home`, a następnie dopasowuje wzorzec adresu URL *wszelkie* adresu URL, który rozpoczyna się od "home", takich jak "domowy", "przydzielaj", "homestead" i "home192837".
 
 Aby eksperymentować z różnych wyrażeń regularnych, spróbuj online narzędzia takie jak [regex101.com](https://regex101.com) na [pythex.org](https://www.pythex.org).
 
-## <a name="step-2-3-render-a-view-using-html"></a>Krok 2-3: renderowania widoku przy użyciu języka HTML
+## <a name="step-2-3-render-a-view-using-html"></a>Krok 2-3: Renderowania widoku przy użyciu języka HTML
 
 `index` Funkcja, która należy do tej pory w *views.py* nie więcej niż odpowiedzi HTTP zwykłego tekstu dla strony. Większość rzeczywistych stron sieci web, oczywiście, odpowiedź z rozbudowanych strony HTML, które często obejmują dane na żywo. W rzeczywistości głównym powodem, aby zdefiniować widoku, używając funkcji jest więc można dynamicznie wygenerować tę zawartość.
 
@@ -155,7 +154,7 @@ Uruchom projekt ponownie, aby wyświetlić komunikat podobny do "**Django Hello!
 >
 > ![Uruchom ponownie przycisk na pasku narzędzi debugowania w programie Visual Studio](media/debugging-restart-toolbar-button.png)
 
-## <a name="step-2-4-render-a-view-using-a-page-template"></a>Krok 2 – 4: renderowania widoku, używając szablonu strony
+## <a name="step-2-4-render-a-view-using-a-page-template"></a>Krok 2 – 4: Renderowanie widoku, używając szablonu strony
 
 Generowanie kodu HTML w kodzie działa prawidłowo dla stron bardzo małe, ale jak strony Pobierz bardziej zaawansowane zazwyczaj chcesz zachować statycznych elementów kodu HTML na stronie (wraz z odwołania do plików CSS i JavaScript) jako "strony templates", do których należy następnie Wstaw dynamiczny, wygenerowany kod zawartość. W poprzedniej sekcji, tylko datę i godzinę z `now.strftime` wywołanie jest dynamiczny, co oznacza, wszelką inną zawartością można umieścić w szablonie strony.
 
@@ -249,27 +248,27 @@ Poniższe kroki pokazują użycie szablonów stron:
 
     ![Uruchamianie aplikacji przy użyciu szablonu](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 w wersji 15.7 i wcześniejszych: W ostatnim kroku, należy przenieść szablonów do podfolderu o nazwie taka sama jak aplikację, która tworzy przestrzeń nazw i pozwala uniknąć potencjalnych konfliktów z innymi aplikacjami, które można dodać do projektu. (Szablony w programie VS 2017 15.8 + zrobić to dla Ciebie automatycznie.) Oznacza to, utwórz podfolder w *szablony* o nazwie *HelloDjangoApp*, Przenieś *index.html* do tego podfolderu i modyfikować `index` funkcji do odwoływania się do wyświetlenia Nowa ścieżka tego szablonu, *HelloDjangoApp/index.html*. Uruchom projekt, Sprawdź poprawnie renderuje stronę i zatrzymać serwer.
+1. <a name="template-namespacing"></a>Visual Studio 2017 w wersji 15.7 i starszych: W ostatnim kroku należy przenieść szablonów do podfolderu o nazwie taka sama jak aplikację, która tworzy przestrzeń nazw i pozwala uniknąć potencjalnych konfliktów z innymi aplikacjami, które można dodać do projektu. (Szablony w programie VS 2017 15.8 + zrobić to dla Ciebie automatycznie.) Oznacza to, utwórz podfolder w *szablony* o nazwie *HelloDjangoApp*, Przenieś *index.html* do tego podfolderu i modyfikować `index` funkcji do odwoływania się do wyświetlenia Nowa ścieżka tego szablonu, *HelloDjangoApp/index.html*. Uruchom projekt, Sprawdź poprawnie renderuje stronę i zatrzymać serwer.
 
 1. Zatwierdź zmiany do kontroli źródła i zaktualizować repozytorium zdalnego, jeśli to konieczne, zgodnie z opisem w [krok 2 z 2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pytanie: Czy szablony stron muszą znajdować się w oddzielnym pliku?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pytanie: Szablony stron mają znajdować się w oddzielnym pliku?
 
-Odpowiedź: Mimo że szablony są zazwyczaj obsługiwane w oddzielnych plikach HTML, umożliwia także szablonem wbudowanego. Przy użyciu oddzielnych plików jest zalecane, jednak do obsługi czystą separacji między znaczników i kodu.
+Odpowiedź: Mimo że szablony są zazwyczaj obsługiwane w oddzielnych plikach HTML, można też użyć szablonu wbudowanego. Przy użyciu oddzielnych plików jest zalecane, jednak do obsługi czystą separacji między znaczników i kodu.
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>Pytanie: Szablony korzystać tylko z rozszerzeniem pliku HTML?
 
-Odpowiedź: *.html* rozszerzenie dla plików szablonów strony jest opcjonalne, ponieważ zawsze zidentyfikować dokładną ścieżkę względną do pliku w drugi argument `render` funkcji. Jednak program Visual Studio (i innych edytorów) zazwyczaj zapewnia funkcje, takie jak kod zakończenia i składnia barwy z *.html* pliki, które przewyższa fakt, że stronie Szablony nie są ściśle HTML.
+Odpowiedź: *.Html* rozszerzenie dla plików szablonów strony jest opcjonalne, ponieważ zawsze zidentyfikować dokładną ścieżkę względną do pliku w drugi argument `render` funkcji. Jednak program Visual Studio (i innych edytorów) zazwyczaj zapewnia funkcje, takie jak kod zakończenia i składnia barwy z *.html* pliki, które przewyższa fakt, że stronie Szablony nie są ściśle HTML.
 
 W rzeczywistości podczas pracy z projektem Django, Visual Studio automatycznie wykrywa, gdy plik HTML, który jest edytowany jest faktycznie szablonem Django i zapewnia niektórych funkcji autouzupełniania. Na przykład, po rozpoczęciu wpisywania Django komentarz szablon strony `{#`, Visual Studio automatycznie umożliwia zamknięcie `#}` znaków. **Dodaj komentarz do zaznaczenia** i **Usuń komentarz zaznaczenia** poleceń (na **Edytuj** > **zaawansowane** menu i na pasku narzędzi) komentarze szablonu można także użyć zamiast komentarze HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pytanie: Uruchamiania projektu, I może zostać wyświetlony komunikat nie można odnaleźć szablonu. Co jest nie tak?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pytanie: Uruchomienie projektu, widzę błąd, którego nie można odnaleźć szablonu. Co jest nie tak?
 
-Odpowiedź: Jeśli widzisz błędy, których nie można znaleźć szablonu, upewnij się, dodaniu aplikacji do projektu Django *settings.py* w `INSTALLED_APPS` listy. Bez tego wpisu Django nie będzie wiedzieć, aby zobaczyć w aplikacji *szablony* folderu.
+Odpowiedź: Jeśli widzisz błędy, których nie można znaleźć szablonu, upewnij się, aplikacja może zostać dodana do projektu Django *settings.py* w `INSTALLED_APPS` listy. Bez tego wpisu Django nie będzie wiedzieć, aby zobaczyć w aplikacji *szablony* folderu.
 
-### <a name="question-why-is-template-namespacing-important"></a>Pytanie: Dlaczego jest szablon namespacing istotne?
+### <a name="question-why-is-template-namespacing-important"></a>Pytanie: Dlaczego ważne jest, namespacing szablonu?
 
-Odpowiedź: Gdy Django szuka szablon określony w `render` funkcji używa niezależnie od znajdzie pierwszy plik, zgodna ze ścieżką względną. Jeśli masz wiele aplikacji Django w tym samym projekcie, które używają tej samej struktury folderów dla szablonów, prawdopodobnie, co aplikacja użyje przypadkowo szablonu z innej aplikacji. Aby uniknąć takich błędów, zawsze Utwórz podfolder w aplikacji *szablony* folder, który jest zgodna z nazwą aplikacji, aby uniknąć jego duplikowania wszystkie.
+Odpowiedź: Gdy Django szuka szablonu, określone w `render` funkcji używa niezależnie od znajdzie pierwszy plik, zgodna ze ścieżką względną. Jeśli masz wiele aplikacji Django w tym samym projekcie, które używają tej samej struktury folderów dla szablonów, prawdopodobnie, co aplikacja użyje przypadkowo szablonu z innej aplikacji. Aby uniknąć takich błędów, zawsze Utwórz podfolder w aplikacji *szablony* folder, który jest zgodna z nazwą aplikacji, aby uniknąć jego duplikowania wszystkie.
 
 ## <a name="next-steps"></a>Następne kroki
 

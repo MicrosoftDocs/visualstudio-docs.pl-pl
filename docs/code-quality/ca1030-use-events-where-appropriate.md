@@ -1,8 +1,7 @@
 ---
-title: 'CA1030: Używaj zdarzeń wszędzie, gdzie jest to odpowiednie'
+title: 'CA1030: Używać zdarzeń, gdzie jest to odpowiednie'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f5ec37d38824ca640dd19827db3b1d355d0ad7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 445330d654e870fe12aa2ca19626377972235eac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860811"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń wszędzie, gdzie jest to odpowiednie
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używać zdarzeń, gdzie jest to odpowiednie
 
 |||
 |-|-|

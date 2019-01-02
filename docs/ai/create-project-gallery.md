@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873518"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Utwórz projekt sztucznej Inteligencji z galerii usługi Azure Machine Learning w programie Visual Studio
 
@@ -43,12 +42,12 @@ Po [zainstalowany program Visual Studio Tools for AI](installation.md), ułatwia
 4. W tym przewodniku Szybki Start wybierz pozycję "**mnist ręcznie ZAPISANYCH przy użyciu TensorFlow**" przykładowy, a następnie kliknij przycisk **zainstalować**. Należy dostarczyć następujące elementy:
 
    - **Grupa zasobów**: Grupa zasobów platformy Azure, w którym będą przechowywane metadane
-   - **Konto**: eksperymentowanie w usłudze Azure Machine Learning konta
-   - **Obszar roboczy**: obszar roboczy usługi Azure Machine Learning
-   - **Typ projektu**: framework learning maszyny. W takim przypadku wybierz **TensorFlow**
+   - **Konto**: Usługa Azure Machine Learning eksperymentowania konta
+   - **Obszar roboczy**: Obszar roboczy usługi Azure Machine Learning
+   - **Typ projektu**: Struktura learning maszyny. W takim przypadku wybierz **TensorFlow**
    - **Dodaj do rozwiązania**: Określa, czy należy dodać do bieżącego rozwiązania programu Visual Studio lub Utwórz i Otwórz nowe rozwiązanie
-   - **Ścieżka projektu**: lokalizację, aby zapisać kod
-   - **Nazwa projektu**: typ **TensorFlowMNIST**
+   - **Ścieżka projektu**: Lokalizacja, aby zapisać kod
+   - **Nazwa projektu**: Typ **TensorFlowMNIST**
 
    ![Projekt wynikowy, korzystając z szablonu aplikacji w języku Python](media/create-project-gallery/new-AzureSampleProject.png)
 

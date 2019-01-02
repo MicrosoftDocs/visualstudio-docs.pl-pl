@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_types — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 94ff65cd9218ce26964d4dbb0da6fe2c3ffcae36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868014"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 Pobiera tablicę typów specyficznych dla kompilatora dla tego symbolu.  
@@ -27,7 +25,7 @@ Pobiera tablicę typów specyficznych dla kompilatora dla tego symbolu.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_types (   
+HRESULT get_types (   
    DWORD       cTypes,  
    DWORD*      pcTypes,  
    IDiaSymbol* types[]  

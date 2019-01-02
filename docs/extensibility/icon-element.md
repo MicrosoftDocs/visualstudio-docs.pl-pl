@@ -1,9 +1,6 @@
 ---
 title: Icon, Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870011"
 ---
 # <a name="icon-element"></a>Icon, element
 Atrybut guid tagu ikona jest identyfikatorem guid zdefiniowanych mapy bitowej. `id` Atrybut wybiera gniazda na pasku mapy bitowej. Ten element jest opcjonalny. Jeśli ten element nie jest uwzględniony wartość **guidOfficeIcon:msotcidNoIcon** będzie wynikać.  
@@ -37,8 +34,8 @@ Atrybut guid tagu ikona jest identyfikatorem guid zdefiniowanych mapy bitowej. `
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator guid zdefiniowanych mapy bitowej.|  
-|identyfikator|Wymagane. Wybiera gniazda na pasku mapy bitowej.|  
+|Identyfikator GUID|Wymagana. Identyfikator guid zdefiniowanych mapy bitowej.|  
+|identyfikator|Wymagana. Wybiera gniazda na pasku mapy bitowej.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   

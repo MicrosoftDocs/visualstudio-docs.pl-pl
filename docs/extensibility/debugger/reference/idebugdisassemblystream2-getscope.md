@@ -1,9 +1,6 @@
 ---
 title: IDebugDisassemblyStream2::GetScope | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2::GetScope
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 739c2515d402d4132b2fd5eb10c7ba2cbd5e04b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6fc2e06285530631f5187490dae78095708cba5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866010"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 Pobiera zakres strumienia dezasemblacji.  
@@ -28,13 +25,13 @@ Pobiera zakres strumienia dezasemblacji.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetScope(   
+HRESULT GetScope(   
    DISASSEMBLY_STREAM_SCOPE* pdwScope  
 );  
 ```  
   
 ```csharp  
-int GetScope(   
+int GetScope(   
    out enum_ DISASSEMBLY_STREAM_SCOPE pdwScope  
 );  
 ```  

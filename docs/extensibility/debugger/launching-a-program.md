@@ -1,9 +1,6 @@
 ---
 title: Uruchamianie programu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab4432eed95fd042bd35d34b6a42d3cd036fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862156"
 ---
 # <a name="launch-a-program"></a>Uruchom program
 Użytkownicy, którzy chcą do debugowania programu, można nacisnąć klawisz **F5** do uruchamiania debugera z poziomu środowiska IDE. Spowoduje to rozpoczęcie szereg zdarzeń, które ostatecznie powoduje IDE nawiązywania połączenia z aparatu debugowania (DE), który z kolei jest połączony, lub dołączone do programu w następujący sposób:  

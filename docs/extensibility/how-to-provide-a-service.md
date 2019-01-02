@@ -1,9 +1,6 @@
 ---
-title: 'Porady: udostępnianie usługi | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Oferuje usługi | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857818"
 ---
-# <a name="how-to-provide-a-service"></a>Porady: świadczenia usług
+# <a name="how-to-provide-a-service"></a>Instrukcje: Oferuje usługi
 Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPackage. Do świadczenia usług, pakietu VSPackage należy zarejestrować usługę za pomocą programu Visual Studio, a następnie Dodaj usługę.  
   
  <xref:Microsoft.VisualStudio.Shell.Package> Klasa implementuje interfejsy <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> i <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> zawiera metody wywołania zwrotnego, które zapewniają usługi na żądanie.  
@@ -142,6 +139,6 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
      Wartość `helloString` powinien być "Hello".  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)   
+ [Instrukcje: Uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)   
  [Użyj i świadczenia usług](../extensibility/using-and-providing-services.md)   
  [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)

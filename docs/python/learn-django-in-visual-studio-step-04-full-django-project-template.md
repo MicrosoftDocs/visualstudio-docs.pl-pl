@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności funkcji oferowanych przez szablon projektu sieci Web Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 513f42bd597bf42e0f145b1a47a889f6d28ec95c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864046"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Użyj pełnego szablonów projektów internetowych Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4. Użyj pełnego szablonów projektów internetowych Django
 
-**Poprzedni krok: [Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Poprzedniego kroku: [Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 Teraz, gdy zostały zbadane podstawy Django, tworząc aplikację od szablonu "Pusty projekt sieci Web Django" w programie Visual Studio, może łatwo zrozumieć pełniejszego aplikacji, który jest wytwarzany przez szablon "Projekt sieci Web Django".
 
@@ -35,7 +34,7 @@ W tym kroku możesz teraz:
 
 Szablon zawiera również uwierzytelnianie podstawowe, co zostało omówione w kroku 5.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 1 z 4: Tworzenie projektu z szablonu
+## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 1 z 4 Tworzenie projektu z szablonu
 
 1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **LearningDjango** rozwiązanie utworzone we wcześniejszej części tego samouczka, a następnie wybierz pozycję **Dodaj**  >   **Nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
 
@@ -87,9 +86,9 @@ Niemniej jednak aby użyć istniejącego środowiska wirtualnego, należy wykona
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **środowiska Python** a następnie wybierz węzeł **Dodawanie istniejącego środowiska wirtualnego**.
 1. Przejdź do i wybierz folder zawierający środowiska wirtualnego, a następnie wybierz **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 2 z 4: Omówienie widoków i stron szablony utworzone przez szablon projektu
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 2 z 4 Widoki i szablony strony utworzone przez szablon projektu
 
-Jak można zaobserwować, kiedy uruchamiasz projekt, ta aplikacja zawiera trzy widoki: Home około i skontaktuj się z pomocą. Kod dla tych widoków znajduje się w *aplikacji/widoki* folderu. Każda funkcja widoku po prostu wywołuje widok `django.shortcuts.render` na ścieżkę do szablonu i obiekt słownika prostego. Na przykład na stronie informacje jest obsługiwany przez `about` funkcji:
+Jak można zaobserwować, gdy uruchamiasz projekt, ta aplikacja zawiera trzy widoki: Strona główna i skontaktuj się z pomocą. Kod dla tych widoków znajduje się w *aplikacji/widoki* folderu. Każda funkcja widoku po prostu wywołuje widok `django.shortcuts.render` na ścieżkę do szablonu i obiekt słownika prostego. Na przykład na stronie informacje jest obsługiwany przez `about` funkcji:
 
 ```python
 def about(request):
@@ -167,9 +166,9 @@ W *szablony/aplikacji* folder jest również czwartej stronie *login.html*, wraz
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pytanie: Może {% block %} i {% endblock %} wcięcia w szablonie strony Django?
 
-Odpowiedź: Tak, szablony stron Django działają prawidłowo, gdy wcięcie znaczników bloku, prawdopodobnie po to, aby dopasować je w ramach ich elementy nadrzędne odpowiednie. Są one wcięty szablony stron wygenerowanych przez szablon projektu Visual Studio, aby wyraźnie zobaczyć, gdzie są umieszczone.
+Odpowiedź: Szablony stron Django działają tak, prawidłowo, gdy wcięcie znaczników bloku, prawdopodobnie po to, aby dopasować je w ramach ich elementy nadrzędne odpowiednie. Są one wcięty szablony stron wygenerowanych przez szablon projektu Visual Studio, aby wyraźnie zobaczyć, gdzie są umieszczone.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 3 z 4: Omówienie routingu adresów URL utworzonej przez szablon
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 3 z 4 Omówienie routingu adresów URL utworzonej przez szablon
 
 Projekt Django *urls.py* pliku utworzona przez szablon "Projekt sieci Web Django" zawiera następujący kod:
 
@@ -208,9 +207,9 @@ urlpatterns = [
 
 Pierwsze trzy wzorce adresów URL mapować bezpośrednio do `home`, `contact`, i `about` widoków w aplikacji *views.py* pliku. Wzorce `^login/$` i `^logout$`, z drugiej strony, zamiast widoki zdefiniowane w aplikacji za pomocą wbudowanych widoków Django. Wywołania `url` metoda również zawierać dodatkowe dane w celu dostosowania wyświetlania. Krok 5 odkrywa te wywołania.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pytanie: W projekt, utworzono, dlaczego "about" wzorzec adresu URL korzysta z "^ o" zamiast "^ o$" pokazane tutaj?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pytanie: W projekcie, utworzono, dlaczego "about" wzorzec adresu URL korzysta z "^ o" zamiast "^ o$" pokazane tutaj?
 
-Odpowiedź: Brak końcowe "$" w wyrażeniu regularnym było proste nadzoru w wielu wersjach szablonu projektu. Wzorzec adresu URL działa dobrze dla strony o nazwie "about", ale bez końcowych "$" wzorzec adresu URL dopasowuje również adresy URL takich jak "około = django", "about09876", "aboutoflaughter", a tym samym na. Końcowe "$" jest wyświetlany w tym miejscu utworzyć wzorzec adresu URL, który jest zgodny *tylko* "about".
+Odpowiedź: Brak końcowe "$" w wyrażeniu regularnym jest proste nadzoru w wielu wersjach szablonu projektu. Wzorzec adresu URL działa dobrze dla strony o nazwie "about", ale bez końcowych "$" wzorzec adresu URL dopasowuje również adresy URL takich jak "około = django", "about09876", "aboutoflaughter", a tym samym na. Końcowe "$" jest wyświetlany w tym miejscu utworzyć wzorzec adresu URL, który jest zgodny *tylko* "about".
 
 ## <a name="next-steps"></a>Następne kroki
 

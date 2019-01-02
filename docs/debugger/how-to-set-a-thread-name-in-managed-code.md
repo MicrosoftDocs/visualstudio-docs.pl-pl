@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Ustawianie nazw wątków w kodzie zarządzanym | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym | Dokumentacja firmy Microsoft'
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 39a732f691cbed525e853d74b5cf4e4abb55eb47
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 01869f320318f6708b04fce539ada95211468131
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867647"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Porady: ustawianie nazw wątków w kodzie zarządzanym
-Nazewnictwo wątku jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątku jest przydatne w celu śledzenia wątków w **wątków** okna.
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym
+Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątku jest przydatne do śledzenia wątków w **wątków** okna.
   
- Aby Ustawianie nazw wątków w kodzie zarządzanym, należy użyć <xref:System.Threading.Thread.Name%2A> właściwości.  
+ Aby Ustawianie nazw wątków w kodzie zarządzanym, użyć <xref:System.Threading.Thread.Name%2A> właściwości.  
   
 ## <a name="example"></a>Przykład  
 
@@ -78,5 +76,5 @@ End Sub
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: Ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Instrukcje: Ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_addresstaken — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8244940212237ed6725017cc92d2ba005ccc0d10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc3f3324bd101e907e3b352606b9036b74657576
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859519"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 Pobiera flagę wskazującą, czy inny symbol odwołuje się adres tego symbolu.  
@@ -27,7 +25,7 @@ Pobiera flagę wskazującą, czy inny symbol odwołuje się adres tego symbolu.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_addressTaken (   
+HRESULT get_addressTaken (   
    BOOL* pRetVal  
 );  
 ```  

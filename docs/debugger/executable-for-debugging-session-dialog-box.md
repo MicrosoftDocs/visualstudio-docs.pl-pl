@@ -1,8 +1,6 @@
 ---
-title: Plik wykonywalny dla sesji — okno dialogowe debugowania | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Plik wykonywalny dla sesji, okno dialogowe debugowania | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.exefordebug
@@ -22,24 +20,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cee61b9a43e031daf468555f31349d10023fcc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 681a1b150058c66be42caca7241b9054151098f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858795"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Wykonywalny dla sesji debugowania — Okno dialogowe
-To okno dialogowe pojawia się podczas debugowania biblioteki DLL dla których nie pliku wykonywalnego jest określona. Visual Studio nie może bezpośrednio uruchomić biblioteki DLL. Zamiast tego uruchamia określony plik wykonywalny. Biblioteki DLL można debugować wywołanego przez plik wykonywalny.  
+To okno dialogowe pojawia się podczas próby debugowania biblioteki DLL dla których nie pliku wykonywalnego jest określony. Program Visual Studio nie można uruchomić biblioteki DLL bezpośrednio. Zamiast tego uruchomi określony plik wykonywalny. Można debugować biblioteki DLL, gdy jest wywoływana przez plik wykonywalny.  
   
  **Nazwa pliku wykonywalnego**  
- Wprowadź ścieżkę do pliku wykonywalnego, który wywołuje DLL debugowania.  
+ Wprowadź ścieżkę do pliku wykonywalnego, który wywołuje bibliotekę DLL debugowania.  
   
- **Adres URL, których projekt może być dostęp (tylko serwery ATL)**  
+ **Adres URL, których projekt może być używane (tylko serwery ATL)**  
  Jeśli debugujesz ATL DLL serwera, wprowadź adres URL, gdzie można znaleźć projektu.  
   
- Po wpisaniu, te ustawienia są przechowywane w projekcie strony właściwości, dzięki czemu nie trzeba wprowadzać ich ponownie w kolejnych sesjach debugowania. Jeśli trzeba zmienić ustawienia, można otwierać strony właściwości i zmień wartości. Aby uzyskać więcej informacji na temat określania plik wykonywalny dla sesji debugowania, zobacz [debugowanie bibliotek DLL](../debugger/how-to-debug-from-a-dll-project.md).  
+ Po wprowadzeniu, te ustawienia są przechowywane w projekcie strony właściwości, dzięki czemu nie musisz wprowadzać ich ponownie udział podczas kolejnych sesji debugowania. Jeśli potrzebujesz zmienić ustawienia, można otwierać strony właściwości i zmienić wartości. Aby uzyskać więcej informacji na temat określania plik wykonywalny dla sesji debugowania, zobacz [debugowania bibliotek DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+ [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

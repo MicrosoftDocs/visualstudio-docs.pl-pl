@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentText2::GetSize | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentText2::GetSize
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c62ca1695de65b005fa839c69cbcc02452f1207
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee62052911ab724fd220c7a808022c5f35b49f74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859922"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Pobiera rozmiar tekstu, w tym miejscu w dokumencie.  
@@ -28,14 +25,14 @@ Pobiera rozmiar tekstu, w tym miejscu w dokumencie.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetSize(   
+HRESULT GetSize(   
    ULONG* pcNumLines,  
    ULONG* pcNumChars  
 );  
 ```  
   
 ```csharp  
-int GetSize(   
+int GetSize(   
    ref uint pcNumLines,  
    ref uint pcNumChars  
 );  
@@ -54,7 +51,7 @@ int GetSize(
 ## <a name="remarks"></a>Uwagi  
  [Tylko w języku C++] Jeśli określonej wartości nie jest wymagana, należy przekazać wartość NULL dla parametru.  
   
- [Tylko język C#] Oba parametry muszą być określone.  
+ [C# tylko] Oba parametry muszą być określone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

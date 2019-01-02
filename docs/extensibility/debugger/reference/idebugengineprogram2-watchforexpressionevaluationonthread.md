@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed77975e1a1d337354e7ac743e4b47e3c84ed701
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e6d6379d708caeb746a7b609083131ec1bbcce2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879098"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 Zezwala lub nie zezwala na Obliczanie wyrażenia wystąpić w danym wątku, nawet jeśli zostało zatrzymane.  
@@ -28,7 +25,7 @@ Zezwala lub nie zezwala na Obliczanie wyrażenia wystąpić w danym wątku, nawe
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT WatchForExpressionEvaluationOnThread(   
+HRESULT WatchForExpressionEvaluationOnThread(   
    IDebugProgram2*       pOriginatingProgram,  
    DWORD                 dwTid,  
    DWORD                 dwEvalFlags,  
@@ -38,7 +35,7 @@ HRESULT WatchForExpressionEvaluationOnThread(
 ```  
   
 ```csharp  
-int WatchForExpressionEvaluationOnThread(   
+int WatchForExpressionEvaluationOnThread(   
    IDebugProgram2       pOriginatingProgram,  
    uint                  dwTid,  
    uint                  dwEvalFlags,  

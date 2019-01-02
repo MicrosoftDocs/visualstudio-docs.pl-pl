@@ -1,12 +1,11 @@
 ---
-title: 'CA2105: Pola tablicy nie odczytywane tylko | Dokumentacja firmy Microsoft'
+title: 'CA2105: Pola tablicy nie można odczytać tylko | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e38af5e19b872e1ffbd0afcda9afe9e51d2b986a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858234"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Pola tablicy nie powinny być tylko do odczytu
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Pola tablicy nie powinny być tylko odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,7 +42,7 @@ ms.locfileid: "49894979"
 ## <a name="rule-description"></a>Opis reguły
  Po zastosowaniu `readonly` (`ReadOnly` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) modyfikatora pola, które zawiera tablicę, pola nie można zmienić do odwoływania się do innej tablicy. Można jednak zmienić elementy tablicy, które są przechowywane w polu tylko do odczytu. Kod, który podejmuje decyzje lub wykonuje operacje, które są oparte na elementach tablicy tylko do odczytu, które są publicznie dostępne mogą zawierać luki w zabezpieczeniach kończona.
 
- Należy pamiętać, że mających publiczne pole również narusza regułę projektowania [CA1051: nie deklaruj widocznych pól wystąpień](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Należy pamiętać, że mających publiczne pole również narusza regułę projektowania [CA1051: Nie deklaruj widocznych pól wystąpień](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby rozwiązać problem luki w zabezpieczeniach, która jest identyfikowana przez tę regułę, nie należy polegać na zawartości tablicy tylko do odczytu, które są publicznie dostępne. Zdecydowanie zaleca się korzystanie z jednej z następujących procedur:
@@ -52,7 +51,7 @@ ms.locfileid: "49894979"
 
 - Zastąp pole publiczne metody, która zwróci klon tablicy prywatnej. Ponieważ kod nie polega na klonie, nie ma ryzyka, jeśli elementy są modyfikowane.
 
-  Jeśli została wybrana opcja drugiej metody, nie zastępują pola z właściwością; właściwości zwracające tablice niekorzystnie wpłynąć na wydajność. Aby uzyskać więcej informacji, zobacz [CA1819: właściwości nie powinny zwracać tablic](../code-quality/ca1819-properties-should-not-return-arrays.md).
+  Jeśli została wybrana opcja drugiej metody, nie zastępują pola z właściwością; właściwości zwracające tablice niekorzystnie wpłynąć na wydajność. Aby uzyskać więcej informacji, zobacz [CA1819: Właściwości nie powinny zwracać tablic](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Wykluczenie ostrzeżenie od tej reguły jest zdecydowanie odradzane. Niemal żadnych scenariuszy wystąpić, gdy zawartość pola tylko do odczytu nie są ważne. Jeśli jest to w przypadku danego scenariusza, należy usunąć `readonly` modyfikator zamiast wiadomości z wyjątkiem.
@@ -71,10 +70,7 @@ ms.locfileid: "49894979"
 
  Dane wyjściowe z tego przykładu są:
 
- **Przed naruszeniem: klas: 90, 90, 90 stopni prywatne: 90, 90, 90 Secure klas, 90, 90, 90**
-**po naruszeniu: klas: 90, 555, 90 stopni prywatne: 90, 555, 90 Secure klas, 90, 90, 90**
+ **Przed naruszeniem: Klasy: 90, 90, 90 stopni prywatnych: 90, 90, 90 secure klas, 90, 90, 90**
+**po naruszeniu: Klasy: 90, 555, 90 stopni prywatnych: 90, 555, 90 secure klas, 90, 90, 90**
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Array?displayProperty=fullName><xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

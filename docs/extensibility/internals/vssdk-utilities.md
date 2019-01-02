@@ -1,9 +1,6 @@
 ---
 title: Narzędzia VSSDK | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Architecture, Visual Studio Integration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8622e23eb4961f623d8909b7b2b540dd08285300
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dff0ce7a418766637a8744424eb58981fe9bc084
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869797"
 ---
 # <a name="vssdk-utilities"></a>Narzędzia VSSDK
 W tematach w tej sekcji opisano narzędzia, które są dostarczane z VSSDK.  

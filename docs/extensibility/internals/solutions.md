@@ -1,9 +1,6 @@
 ---
 title: Rozwiązania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, VSPackages
@@ -14,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d04b64eaec14fb91e76cf1d5edc6c7151b0008b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c2a5f9d5c9d2a3a7a3425ee34f8e895a856052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869482"
 ---
 # <a name="solutions"></a>Rozwiązania
-Rozwiązanie to grupa składająca się z jednego lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Informacje odnoszą się do rozwiązania projekt i stan są przechowywane w dwóch plików rozwiązania, plik tekstowy solution (.sln) i pliku binarnego rozwiązania użytkownika opcji (.suo).  
+Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Projekt i stan informacje, które odnoszą się do rozwiązania są przechowywane w dwóch plików rozwiązań, plik tekstowy rozwiązania (.sln) i pliku binarnego rozwiązania użytkownika opcji (suo).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Omówienie](../../extensibility/internals/solutions-overview.md)  
- W tym artykule omówiono typy plików rozwiązania, znajdujących się w rozwiązania, a proces, który występuje po otwarciu rozwiązania.  
+ W tym artykule omówiono typy plików rozwiązania, zawarte w rozwiązaniu i proces, który występuje, gdy rozwiązanie jest otwarte.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Plik rozwiązania (Sln)](../../extensibility/internals/solution-dot-sln-file.md)  
- Wyjaśnienie struktury pliku sln.  
+ Wyjaśnienie struktury pliku .sln.  
   
  [Plik opcji użytkownika rozwiązania (Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
- W tym artykule wyjaśniono plik .suo.
+ W tym artykule wyjaśniono pliku .suo.

@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointEvent2::EnumBreakpoints | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6015d9251d5e9cf26220d069a26a742cde89ad3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd7f82a50e8a0d4b17ec63204248ccb88544ba6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868844"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Tworzy moduł wyliczający dla wszystkich punktów przerwania, które były uruchamiane w bieżącej lokalizacji kodu.  
+Tworzy moduł wyliczający dla wszystkich punktów przerwania, które są uruchamiane w bieżącej lokalizacji kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +38,13 @@ int EnumBreakpoints(
   
 #### <a name="parameters"></a>Parametry  
  `ppEnum`  
- [out] Zwraca [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) obiektu, który wylicza wszystkie punkty przerwania skojarzony z bieżącą lokalizacją kodu.  
+ [out] Zwraca [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) obiekt, który wylicza wszystkie punkty przerwania skojarzony z bieżącą lokalizacją kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Nie wszystkie punkty przerwania w określonej lokalizacji mogą wyzwalać w określonym czasie (na przykład punkt przerwania z warunkiem nie zostanie uruchomiony do momentu spełnienia warunku).  
+ Nie wszystkie punkty przerwania w danej lokalizacji może wyzwalać w określonym czasie (na przykład punkt przerwania z warunkiem nie zostanie uruchomiony do momentu spełnienia warunku).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

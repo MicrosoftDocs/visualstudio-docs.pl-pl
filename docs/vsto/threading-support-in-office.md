@@ -1,9 +1,6 @@
 ---
 title: Obsługa wątkowości w Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857896"
 ---
 # <a name="threading-support-in-office"></a>Obsługa wątkowości w Office
   Ten artykuł zawiera informacje dotyczące sposobu wątkowości jest obsługiwana w modelu obiektów programu Microsoft Office. Model obiektów programu pakietu Office nie jest bezpieczny dla wątków, ale można pracować z wieloma wątkami w rozwiązań pakietu Office. Aplikacje pakietu Office są serwery Component Object Model (COM). COM umożliwia klientom wywoływanie serwerów COM na dowolnych wątków. W przypadku serwerów COM, które nie są bezpieczne dla wątków COM zapewnia mechanizm serializacji współbieżnych wywołań, tak aby tylko jeden wątek logicznych jest wykonywana na serwerze w dowolnym momencie. Ten mechanizm jest określany jako model apartamentem jednowątkowym (przedziale STA). Ponieważ wywołania są serializowane, wywołań może być blokowany przez czas, gdy serwer jest zajęty lub obsługuje inne wywołania w wątku tła.  
@@ -79,5 +76,3 @@ ms.locfileid: "49871113"
  [Wątkowość (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [wątkowość (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [Użyj wątki i wątkowość](/dotnet/standard/threading/using-threads-and-threading)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

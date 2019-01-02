@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Tworzenie raportu porównania profilera z wiersza polecenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie raportu porównania Profiler w wierszu polecenia z | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 author: mikejo5000
@@ -10,28 +8,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88fac8339491acbe73a4a446cde8afb54fa63143
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: e63e366bbfe29d56ffc61085e986372ac0a9a2f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880770"
 ---
-# <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Porady: Tworzenie raportu porównania profilera z wiersza polecenia
-Możesz wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania raport, który porównuje dane dotyczące wydajności dwóch danych profilowania (. *Vsp* notebooka. *vsps*) plików. Raport przedstawia różnice, regresji wydajności i ulepszenia, które nastąpiły jednej sesji profilowania. Wartości w raporcie przedstawia zmian lub zmiany z linii bazowej pierwszego pliku, który określisz. Tej różnicowej jest obliczana przez określenie różnica między stara wartość jest wartością linii bazowej, i wartość wyniku z nowego analizy. Porównywanie danych profilera może bazować na funkcje w kodzie, modułów w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.  
+# <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Instrukcje: Tworzenie raportu porównania profilera z wiersza polecenia
+Możesz wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools raport, który porównuje dane dotyczące wydajności dwóch danych profilowania (. *Vsp* lub. *vsps*) plików. Ten raport prezentuje różnic, największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego. Wartości w raporcie przedstawiają zmian lub zmiany z linią bazową pierwszego pliku, który określisz. Tę deltę jest obliczana przez określenie różnica między stara wartość, czyli wartość punktu odniesienia, a wartość wyniku z analizy nowych. Porównywanie danych profilera może bazować na funkcje w kodzie, moduły w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.  
   
- Aby wyświetlić listę identyfikatorów porównania kategorii i pola, wpisz następujące polecenie w wierszu:  
+ Aby wyświetlić listę identyfikatorów kategorii porównania i pola, wpisz następujące polecenie w wierszu:  
   
- **VSPerfReport przełącznika/querydifftables***VspFileName1* *VspFileName2*  
+ **VSPerfReport/querydifftables zwraca***VspFileName1* *VspFileName2*  
   
- Aby utworzyć raport Porównanie, należy użyć następującej składni:  
+ Aby utworzyć raport porównawczy, należy użyć następującej składni:  
   
- **VSPerfReport/diff** `VspFileName1` *VspFileName2* [**/**`Options`]  
+ **VSPerfReport/diff** `VspFileName1` *VspFileName2* [**/**`Options`]    
   
  Można dodać opcji z poniższej tabeli, aby **VSPerfReport/diff** wiersza polecenia.  
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**DiffThreshold:**[*wartość*]|Różnica należy pominąć, jeśli jest poniżej tej wartości procentowej wartości progu. Ponadto nowe dane z wartościami, które znajdują się poniżej tego progu nie będą wyświetlane.|  
-|**DiffTable:** *TableName*|Ta tabela służy do porównywania plików. Domyślnie jest używana w tabeli funkcji. Określ identyfikator, który znajduje się w **VSPerfReport przełącznika/querydifftables**.|  
-|**DiffColumn:** *ColumnName*|Ta kolumna służy do porównywania wartości. Domyślnie jest używana kolumna procentową wyłącznych próbek. Określ identyfikator, który znajduje się w **VSPerfReport przełącznika/querydifftables**.|
+|**DiffThreshold:**[*wartość*]|Różnica należy pominąć, jeśli jest poniżej tej wartości procentowej wartości progu. Ponadto nowe dane przy użyciu wartości znajdujących się poniżej tego progu nie będą wyświetlane.|  
+|**DiffTable:** *Właściwość TableName*|Ta tabela służy do porównywania plików. Domyślnie jest używany w tabeli funkcji. Określ identyfikator, który znajduje się w **VSPerfReport/querydifftables zwraca**.|  
+|**DiffColumn:** *NazwaKolumny*|Ta kolumna służy do porównywania wartości. Domyślnie kolumna % próbek wyłącznych jest używana. Określ identyfikator, który znajduje się w **VSPerfReport/querydifftables zwraca**.|

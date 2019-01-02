@@ -1,13 +1,8 @@
 ---
-title: 'Wskazówki: Tworzenie strony aplikacji SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie strony aplikacji SharePoint | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867842"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Przewodnik: Tworzenie strony aplikacji SharePoint
  
@@ -158,5 +153,5 @@ Możesz dowiedzieć się więcej o projektowaniu zawartości strony SharePoint p
 
 ## <a name="see-also"></a>Zobacz także
 
-[Porady: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)  
+[Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)  
 [Typ strony układu aplikacji](http://go.microsoft.com/fwlink/?LinkID=169274)

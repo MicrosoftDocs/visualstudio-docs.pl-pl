@@ -1,9 +1,6 @@
 ---
 title: Interfejsy usługi starszego języka | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsLanguageInfo interface
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e195862ae2cd164a2c62ac16eb17c7a2f07e5c09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: affb6fac59413fc80f07c6e5ff238b4f9d56ee33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858334"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy starszej wersji usługi językowej
 Dla określonego języka programowania jednocześnie może istnieć tylko jedno wystąpienie usługi języka. Jednak usługa jeden język może obsługiwać więcej niż jeden z nich.  
@@ -55,4 +52,4 @@ Dla określonego języka programowania jednocześnie może istnieć tylko jedno 
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Lista kontrolna: tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+ [Lista kontrolna: Tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
