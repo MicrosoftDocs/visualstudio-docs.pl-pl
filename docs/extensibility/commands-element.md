@@ -1,9 +1,6 @@
 ---
 title: Polecenia elementu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Commands
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31f34dbf974ef860ddabd29af0e94b3c65a11f32
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 704a37b1aeb211921b962fd816af89abb686a14e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955935"
 ---
 # <a name="commands-element"></a>Commands, element
 Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage. Kolekcja może mieć podsekcje maksymalnie pięć w następujący sposób: menu, grup, przyciski, combos i map bitowych.  

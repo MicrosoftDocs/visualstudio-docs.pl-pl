@@ -1,8 +1,7 @@
 ---
-title: 'CA1409: Typy widoczne dla modelu COM powinny być możliwe do utworzenia'
+title: 'CA1409: Typy widoczne dla modelu COM powinny mieć możliwość utworzenia'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 817c2215245412faf0bb30d46aec40a953f239b5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821691"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Typy widoczne dla modelu COM powinny być możliwe do utworzenia
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Typy widoczne dla modelu COM powinny mieć możliwość utworzenia
 
 |||
 |-|-|

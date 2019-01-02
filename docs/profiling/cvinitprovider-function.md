@@ -1,8 +1,6 @@
 ---
-title: CvInitProvider — funkcja | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Funkcja CvInitProvider | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvInitProvider
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 171537a752818e31ba6a3e7e185fd02017dcb967
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967712"
 ---
-# <a name="cvinitprovider-function"></a>CvInitProvider — funkcja
-Inicjuje dostawcę znacznika. Musi zostać wywołana przed jakichkolwiek innych funkcji zestawu SDK wizualizatora współbieżności.  
+# <a name="cvinitprovider-function"></a>Cvinitprovider — funkcja
+Inicjuje dostawcę znaczników narzędzia. Musi zostać wywołana przed wszystkie inne funkcje SDK narzędzia Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,13 +36,13 @@ HRESULT CvInitProvider(
  Identyfikator guid dostawcy. Nie może mieć wartości NULL.  
   
  `ppProvider`  
- Adres zmiennej wyjściowego, który będzie przechowywał kontekstu dostawcy. Nie może mieć wartości NULL.  
+ Adres zmiennej danych wyjściowych, który będzie przechowywał kontekstu dostawcy. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość S_OK, gdy dostawca pomyślnie zainicjowano lub kod błędu w przypadku zostały wszystkie błędy. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
+ Pomyślnie zainicjowano dostawcy lub kod błędu w przypadku zostały wszystkie błędy, S_OK. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

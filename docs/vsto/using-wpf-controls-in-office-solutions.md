@@ -1,9 +1,6 @@
 ---
 title: Użyj kontrolek WPF w rozwiązaniach pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822278"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Użyj kontrolek WPF w rozwiązaniach pakietu Office
 
@@ -56,11 +53,11 @@ Nie można dodać kontrolki WPF bezpośrednio do elementów interfejsu użytkown
 
 5.  Dodaj okienko akcji, region formularza lub niestandardowego okienka zadań do projektu:
 
-    -   Dla regionów formularza należy dodać **Region formularza programu Outlook** do projektu. Aby uzyskać więcej informacji, zobacz [porady: dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    -   Dla regionów formularza należy dodać **Region formularza programu Outlook** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Okienka akcji można dodać **kontrolki okienka akcji** lub **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) i [porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    -   Okienka akcji można dodać **kontrolki okienka akcji** lub **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) i [jak: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Niestandardowe okienka zadań, można dodać **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    -   Niestandardowe okienka zadań, można dodać **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6.  Z *ProjectName* **kontrolek użytkownika WPF** karcie **przybornika**, przeciągnij formanty użytkownika WPF designer okienko akcji, region formularza lub niestandardowego okienka zadań.
 
@@ -113,11 +110,11 @@ Aby uzyskać więcej informacji na temat architektury i zagadnienia dotyczące p
 
 Aby uzyskać więcej informacji na temat dodawania formantów WPF do kontrolek formularzy Windows Forms i formularzy w programie Visual Studio w czasie projektowania zobacz następujące tematy:
 
--   [Wskazówki: Tworzenie nowej zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+-   [Przewodnik: Tworzenie nowej zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
--   [Wskazówki: Rozmieszczanie zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+-   [Przewodnik: Rozmieszczanie zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [Wskazówki: Stylu zawartości WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+-   [Przewodnik: Stylu zawartości WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Zobacz także
 
@@ -126,6 +123,6 @@ Aby uzyskać więcej informacji na temat dodawania formantów WPF do kontrolek f
 - [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)
 - [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
-- [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Porady: dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

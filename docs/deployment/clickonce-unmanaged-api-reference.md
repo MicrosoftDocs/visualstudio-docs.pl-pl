@@ -1,6 +1,5 @@
 ---
 title: ClickOnce niezarządzany wykaz interfejsów API | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -12,7 +11,6 @@ api_type:
 - COM
 topic_type:
 - apiref
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -30,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968144"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce niezarządzany wykaz interfejsów API
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] niezarządzane publiczne interfejsy API z dfshim.dll.  

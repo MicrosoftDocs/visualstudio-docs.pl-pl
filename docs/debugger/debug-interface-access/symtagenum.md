@@ -1,8 +1,6 @@
 ---
 title: Symtagenum — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b3f28858bdeb6783175301de40de0d492739a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35ea533cc9388d16de0c9c8bc632d60ef2c9c228
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942466"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Określa typ symbolu.  
@@ -27,7 +25,7 @@ Określa typ symbolu.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-enum SymTagEnum {   
+enum SymTagEnum {   
    SymTagNull,  
    SymTagExe,  
    SymTagCompiland,  

@@ -2,7 +2,6 @@
 title: Lista modułów — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmodules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e975cf886f0bb8392bd3679a28bae6bb6bfe00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962652"
 ---
 # <a name="list-modules-command"></a>Lista modułów — Polecenie
 Wyświetla listę modułów dla bieżącego procesu.
@@ -37,11 +36,11 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 #### <a name="parameters"></a>Parametry
  / Adres:`yes|no`
 
- Opcjonalna. Określa, czy wyświetlać adresy pamięci w modułach. Wartość domyślna to `yes`.
+ Opcjonalna. Określa, czy ma być wyświetlana adresów pamięci modułów. Wartość domyślna to `yes`.
 
  / Name:`yes|no`
 
- Opcjonalna. Określa, czy są wyświetlane nazwy modułów. Wartość domyślna to `yes`.
+ Opcjonalna. Określa, czy pokazać nazwy modułów. Wartość domyślna to `yes`.
 
  / Order:`yes|no`
 
@@ -49,15 +48,15 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 
  / Path:`yes|no`
 
- Opcjonalna. Określa, czy ścieżki modułów. Wartość domyślna to `yes`.
+ Opcjonalna. Określa, czy ma być wyświetlana ścieżki modułów. Wartość domyślna to `yes`.
 
- / Proces:`yes|no`
+ / Process:`yes|no`
 
- Opcjonalna. Określa, czy Pokaż procesy modułów. Wartość domyślna to `no`.
+ Opcjonalna. Określa, czy ma być wyświetlana procesy modułów. Wartość domyślna to `no`.
 
  / SymbolFile:`yes|no`
 
- Opcjonalna. Określa, czy wyświetlać pliki symboli modułów. Wartość domyślna to `no`.
+ Opcjonalna. Określa, czy ma być wyświetlana pliki symboli modułów. Wartość domyślna to `no`.
 
  / SymbolStatus:`yes|no`
 
@@ -65,14 +64,14 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 
  / Sygnatura czasowa:`yes|no`
 
- Opcjonalna. Określa, czy pokazywać sygnatury czasowe modułów. Wartość domyślna to `no`.
+ Opcjonalna. Określa, czy ma być wyświetlana sygnatury czasowe modułów. Wartość domyślna to `no`.
 
  / Version:`yes|no`
 
- Opcjonalna. Określa, czy Pokaż wersje modułów. Wartość domyślna to `no`.
+ Opcjonalna. Określa, czy ma być wyświetlana wersje modułów. Wartość domyślna to `no`.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie przedstawiono nazwy modułu, adresy i sygnatury czasowe dla bieżącego procesu.
+ W tym przykładzie zawiera listę nazw modułów, adresów i sygnatury czasowe dla bieżącego procesu.
 
 ```
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
@@ -82,4 +81,4 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Porady: Korzystanie z okna modułów](../../debugger/how-to-use-the-modules-window.md)
+- [Instrukcje: Korzystanie z okna modułów](../../debugger/how-to-use-the-modules-window.md)

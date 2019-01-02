@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -39,12 +38,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 847e4144c8846f0247d735ec640fc878a75fa82e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e66c47c0bf36bf98e4d5f0439d1c3cb84c6b999
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955411"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (VB, C#, C++ i XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,7 +227,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ##  <a name="BKMK_Start_the_debugging_session"></a> Rozpocznij sesję debugowania
 
 ###  <a name="BKMK_Start_debugging__F5_"></a> Rozpocznij debugowanie (F5)
- Po wybraniu **Rozpocznij debugowanie** (klawiatura: F5) na **debugowania** menu programu Visual Studio uruchamia aplikację w debugerze. Wykonywanie jest kontynuowane, dopóki nie zostanie osiągnięty punkt przerwania, ręcznie zawieszenie wykonywania, wystąpi wyjątek, lub aplikacja kończy się.
+ Po wybraniu **Rozpocznij debugowanie** (klawiatury: F5) na **debugowania** menu programu Visual Studio uruchamia aplikację w debugerze. Wykonywanie jest kontynuowane, dopóki nie zostanie osiągnięty punkt przerwania, ręcznie zawieszenie wykonywania, wystąpi wyjątek, lub aplikacja kończy się.
 
 ###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Rozpocznij debugowanie (F5), ale opóźnić uruchomienie aplikacji
  Możesz ustawić aplikację, aby uruchomić tryb debugowania, ale początek metody innej niż debugera. Na przykład możesz zechcieć, debugowanie, uruchamianie aplikacji z Start menu lub debugować proces w tle w aplikacji bez uruchamiania aplikacji. Aby opóźnić uruchomienie aplikacji, wykonaj następujące czynności:
@@ -239,7 +238,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
   -   W przypadku aplikacji Visual C++, wybierz **tak** z **Uruchom aplikację** listy.
 
-- Wybierz **Rozpocznij debugowanie** na **debugowania** menu (klawiatura: F5).
+- Wybierz **Rozpocznij debugowanie** na **debugowania** menu (klawiatury: F5).
 
 - Rozpocznij tworzenie aplikacji z menu Start, kontrakt wykonywania lub innej procedury.
 

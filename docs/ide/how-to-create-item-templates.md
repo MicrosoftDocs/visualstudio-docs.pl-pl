@@ -2,23 +2,22 @@
 title: Tworzenie szablonów elementów
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952264"
 ---
-# <a name="how-to-create-item-templates"></a>Porady: Tworzenie szablonów elementów
+# <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementów
 
-W tym artykule pokazano, jak utworzyć szablon elementu za pomocą **Kreatora eksportowania szablonu**. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [porady: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).
+W tym artykule pokazano, jak utworzyć szablon elementu za pomocą **Kreatora eksportowania szablonu**. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).
 
 ## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Aby dodać szablon elementu użytkownika do okna dialogowego Dodaj nowy element
 
@@ -26,7 +25,7 @@ W tym artykule pokazano, jak utworzyć szablon elementu za pomocą **Kreatora ek
 
 1. Dodaj element do projektu i zmodyfikuj go, jeśli chcesz.
 
-1. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji, zobacz [instrukcje: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. Na **projektu** menu, wybierz **Eksportuj szablon**.
 
@@ -113,7 +112,7 @@ W niektórych przypadkach możesz chcieć ręcznie utworzyć szablon elementu od
 
 1. Zmodyfikuj element projektu, dopóki nie jest gotowa do zapisania jako szablonu.
 
-1. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru wystąpi, jeśli w dowolnym miejscu. Aby uzyskać więcej informacji na temat wymiany parametru zobacz [instrukcje: zastępowanie parametrów w szablonie.](../ide/how-to-substitute-parameters-in-a-template.md)
+1. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru wystąpi, jeśli w dowolnym miejscu. Aby uzyskać więcej informacji na temat wymiany parametru zobacz [jak: Zastępowanie parametrów w szablonie.](../ide/how-to-substitute-parameters-in-a-template.md)
 
 1. Utwórz plik XML i zapisz go z *.vstemplate* rozszerzenie pliku, w tym samym katalogu co plik elementu projektu.
 
@@ -123,10 +122,10 @@ W niektórych przypadkach możesz chcieć ręcznie utworzyć szablon elementu od
 
 1. W **Eksplorator Windows**, zaznacz pliki, które chcesz uwzględnić w szablonie. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz **wysyłać** > **skompresowany folder (zip)**. Wybrane pliki są kompresowane do *zip* pliku.
 
-1. Kopiuj *zip* plików i wklej go w lokalizacji szablonów elementów użytkownika. W programie Visual Studio 2017, domyślnym katalogiem jest *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [porady: lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Kopiuj *zip* plików i wklej go w lokalizacji szablonów elementów użytkownika. W programie Visual Studio 2017, domyślnym katalogiem jest *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Porady: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md)
+- [Instrukcje: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md)
 - [Visual Studio odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)

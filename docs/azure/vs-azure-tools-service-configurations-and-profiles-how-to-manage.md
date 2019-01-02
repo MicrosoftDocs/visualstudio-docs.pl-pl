@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 1b520edc52c21d3edfc03b7e501a838eabe775ff
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: bfd24092d2f6cf3ff28236fc1dd76ba1d2404d87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821680"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
 ## <a name="overview"></a>Omówienie
@@ -45,7 +44,7 @@ Możesz również otworzyć **Zarządzanie konfiguracjami** okno dialogowe ze st
    
     **Konfiguracje usługi Zarządzanie** pojawi się okno dialogowe.
 2. Aby usunąć konfigurację usługi, wybierz konfigurację, którą chcesz usunąć z **nazwa** listy, a następnie wybierz pozycję **Usuń**. Aby sprawdzić, czy chcesz usunąć tę konfigurację, pojawi się okno dialogowe.
-3. Wybierz **Usuń**.
+3. Wybierz pozycję **Usuń**.
    
      Plik konfiguracji usługi zostanie usunięty z projektu platformy Azure w Eksploratorze rozwiązań.
 
@@ -58,7 +57,7 @@ Możesz również otworzyć **Zarządzanie konfiguracjami** okno dialogowe ze st
     Nazwa pliku konfiguracji usługi jest zmieniona w projekcie platformy Azure w Eksploratorze rozwiązań.
 
 ### <a name="to-change-a-service-configuration"></a>Aby zmienić konfigurację usługi
-* Jeśli chcesz zmienić konfiguracji usługi, otwórz menu skrótów dla określonej roli, aby zmiany w projekcie platformy Azure, a następnie wybierz **właściwości**. Zobacz [porady: Konfigurowanie ról dla usługi Azure Cloud Service za pomocą programu Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) Aby uzyskać więcej informacji.
+* Jeśli chcesz zmienić konfiguracji usługi, otwórz menu skrótów dla określonej roli, aby zmiany w projekcie platformy Azure, a następnie wybierz **właściwości**. Zobacz [jak: Konfigurowanie ról dla usługi Azure Cloud Service za pomocą programu Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) Aby uzyskać więcej informacji.
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Wprowadź ustawienie różnych kombinacji przy użyciu profilów
 Za pomocą profilu, można automatycznie wypełnić **Kreatora publikacji** z różnymi kombinacjami ustawienia do różnych celów. Na przykład może mieć jeden profil debugowania, a drugi dla wersji kompilacji. W takim przypadku swoje **debugowania** miałby profilu **IntelliTrace** włączone i **debugowania** wybranej, konfiguracji i **wersji** Profil musi **IntelliTrace** wyłączone i **wersji** wybranej konfiguracji. Aby wdrożyć usługę przy użyciu innego konta magazynu można także użyć różnych profilów.
@@ -99,4 +98,3 @@ Po uruchomieniu kreatora po raz pierwszy, tworzony jest profil domyślny. Progra
 
 ## <a name="next-steps"></a>Następne kroki
 Aby dowiedzieć się więcej o konfigurowaniu innych części projektu platformy Azure z programu Visual Studio, zobacz [Konfigurowanie projektu platformy Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075)
-

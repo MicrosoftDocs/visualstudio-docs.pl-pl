@@ -1,9 +1,6 @@
 ---
 title: IDebugManagedObject::GetManagedObject | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugManagedObject::GetManagedObject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f30c76dfd0c2f9dafa4844f815ce2506e70346f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9915e4b9096f9e7ac42700012ea55ee23baef46c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823053"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 Zwraca interfejs, który reprezentuje obiektu zarządzanego.  
@@ -28,7 +25,7 @@ Zwraca interfejs, który reprezentuje obiektu zarządzanego.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetManagedObject(   
+HRESULT GetManagedObject(   
    IUnknown** ppManagedObject  
 );  
 ```  

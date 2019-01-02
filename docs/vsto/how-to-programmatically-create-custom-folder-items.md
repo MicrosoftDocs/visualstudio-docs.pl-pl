@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Tworzenie niestandardowych elementów folderu'
-ms.custom: ''
+title: 'Instrukcje: Programowe tworzenie niestandardowych elementów folderu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45423b134f3bc9e0a4e9c791bef8ea24761e38f4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2e02ad5e021323b2c673263dfbb35173d2372bdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968287"
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>Porady: programowane Tworzenie niestandardowych elementów folderu
-  W tym przykładzie tworzy nowy folder w programie Microsoft Office Outlook. Nazwa użytkownika, który jest zalogowany jest używana nazwa folderu.  
+# <a name="how-to-programmatically-create-custom-folder-items"></a>Instrukcje: Programowe tworzenie niestandardowych elementów folderu
+  Ten przykład tworzy nowy folder w usłudze Microsoft Office Outlook. Nazwa użytkownika, który jest zalogowany na jest używany dla nazwy folderu.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -33,7 +30,5 @@ ms.locfileid: "35257663"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z folderami](../vsto/working-with-folders.md)   
- [Porady: programowane Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Porady: programowane tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)  
-  
-  
+ [Instrukcje: Programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
+ [Instrukcje: Programowe tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)  

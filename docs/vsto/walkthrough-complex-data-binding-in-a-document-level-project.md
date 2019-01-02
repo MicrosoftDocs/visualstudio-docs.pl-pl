@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Złożone powiązanie danych w projekcie na poziomie dokumentu'
-ms.custom: ''
+title: 'Przewodnik: Złożone powiązanie danych w projekcie na poziomie dokumentu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964062"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Wskazówki: Złożone powiązanie danych w projekcie na poziomie dokumentu
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Przewodnik: Złożone powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe informacje o złożone powiązanie danych w projekcie na poziomie dokumentu. Pola w bazie danych Northwind programu SQL Server można powiązać wiele komórek w arkuszu programu Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -58,7 +55,7 @@ ms.locfileid: "49841887"
   
 1.  Utwórz projektu skoroszytu programu Excel o nazwie **Moje złożone powiązanie danych**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje złożone powiązanie danych** projekt **Eksploratora rozwiązań**.  
   
@@ -181,7 +178,7 @@ ms.locfileid: "49841887"
   
 2. Dodaj następujące informacje w pusty wiersz.  
   
-   |employeeID|Nazwisko|Imię|Tytuł|  
+   |employeeID|LastName|FirstName|Tytuł|  
    |----------------|--------------|---------------|-----------|  
    |10|Pawłowski|Marek|Kierownikiem ds. sprzedaży|  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841887"
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono podstawowe informacje dotyczące powiązania tabeli w bazie danych na obiekt listy. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Buforuje te dane, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [porady: dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Buforuje te dane, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [jak: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Wdrażanie rozwiązania. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
   
--   Tworzenie relacji wzorzec/szczegół między polem i tabelę. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Tworzenie relacji wzorzec/szczegół między polem i tabelę. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
- [Wskazówki: Proste powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  
+ [Przewodnik: Proste powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  

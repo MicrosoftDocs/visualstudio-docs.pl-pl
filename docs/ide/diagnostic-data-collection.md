@@ -1,36 +1,35 @@
 ---
-title: Dzienniki generowane przez system i danych diagnostycznych
+title: Dane diagnostyczne i dzienniki generowane przez system
 ms.date: 05/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: michma
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f55d8a0f32886ed477026e298ed2c8c5d6e26f16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 873d0be0e1efee220e0a702fc537beace1d7aa32
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34478349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824515"
 ---
-# <a name="system-generated-logs-collected-by-visual-studio"></a>Dzienniki generowane przez system zebrane przez program Visual Studio
+# <a name="system-generated-logs-collected-by-visual-studio"></a>Dzienniki generowane przez system, zebrane przez program Visual Studio
 
-Visual Studio zbiera dzienniki generowanych przez system do rozwiązywania problemów oraz do poprawy jakości produktu za pomocą [Program poprawy jakości obsługi klienta programu Visual Studio](visual-studio-experience-improvement-program.md). Ten artykuł zawiera niektóre informacje na temat typów danych, które zbieramy, i jak możemy użyć. Umożliwia także wskazówki dotyczące sposobu rozszerzenia autorów można uniknąć lub przypadkowego ujawnienia informacji osobistych lub poufnych.
+Program Visual Studio zbiera dzienniki generowane przez system do rozwiązywania problemów i poprawić jakość produktu za pośrednictwem [programu poprawy jakości obsługi klienta programu Visual Studio](visual-studio-experience-improvement-program.md). W tym artykule udostępniono pewne informacje o typach danych, które zbieramy, i jak firma Microsoft używa. Zawiera także wskazówki dotyczące sposobu twórcy rozszerzeń można uniknąć przypadkowego ujawnienia informacji osobistych lub poufnych.
 
 ## <a name="types-of-collected-data"></a>Typy zebranych danych
 
-Visual Studio zbiera dzienniki awarii (Crash), zawiesza się, brak reakcji interfejsu użytkownika i wysokiego użycia procesora CPU lub pamięci generowanych przez system. Możemy również zbierać informacji na temat błędów występujących podczas instalacji produktu lub użycia. Zebrane dane w zależności od błędu i mogą zawierać ślady stosu, zrzuty pamięci i informacje o wyjątku:
+Program Visual Studio zbiera dzienniki generowane przez system dla awarii, zawieszenia, brak reakcji interfejsu użytkownika i wysokie użycie procesora CPU lub pamięci. Zbierane są również informacje na temat błędów napotkanych podczas instalacji produktu lub użycia. Zebrane dane w zależności od błędu i mogą obejmować następujące ślady stosu, zrzuty pamięci i informacje o wyjątku:
 
-- Wysokie użycie procesora CPU i braku odpowiedzi są zbierane śladów stosu odpowiednich wątków programu Visual Studio.
+- Wysokie użycie procesora CPU i sek ślady stosu, odpowiednie wątków programu Visual Studio są zbierane.
 
-- Przypadki, w którym śladów stosu niektórych wątków nie są wystarczająco dużo, aby określić katalog główny przyczyną tego problemu, na przykład awarii (Crash), zawiesza się lub wysokie użycie pamięci, jakie zbieramy pamięci *zrzutu*. Zrzut reprezentuje stan procesu, gdy wystąpił błąd.
+- Przypadki, w którym ślady stosu wątków nie są wystarczająco dużo, aby określić katalog główny przyczyną problemu, na przykład awarii zawiesza się lub wysokie użycie pamięci, Trwa zbieranie pamięci *zrzutu*. Zrzutu reprezentuje stan procesu w momencie wystąpienia błędu.
 
-- Wystąpił nieoczekiwany błąd warunki, na przykład wystąpił wyjątek podczas próby zapisu do pliku na dysku, zbierane są informacje o wyjątku. Informacje obejmują nazwę wyjątku, ślad stosu wątku, w którym wystąpił wyjątek, komunikat skojarzony z wyjątkiem i inne informacje potrzebne do określonego wyjątku.
+- Nieoczekiwany błąd warunki, na przykład wyjątek podczas próby zapisania pliku na dysku, zbierane są informacje o wyjątku. Informacje obejmują nazwę wyjątku, ślad stosu wątku, w którym wystąpił wyjątek, komunikat skojarzony z wyjątku i inne informacje, które są istotne dla określonego wyjątku.
 
-   Poniższy przykład przedstawia zebrane dane przedstawia nazwa wyjątku, ślad stosu i komunikat o wyjątku:
+   Poniższy przykład zebranych danych przedstawia nazwę wyjątku, ślad stosu i komunikat o wyjątku:
 
    ```text
    "Reserved.DataModel.Fault.Exception.TypeString": "System.IO.IOException",
@@ -48,31 +47,31 @@ Visual Studio zbiera dzienniki awarii (Crash), zawiesza się, brak reakcji inter
    "Reserved.DataModel.Fault.Exception.Message": " The process cannot access the file 'C:\\Users\\[UserName]\\AppData\\Local\\Microsoft\\VisualStudio\\Packages\\_Channels\\4CB340F5\\channelManifest.json' because it is being used by another process."
    ```
 
-## <a name="how-we-use-system-generated-logs"></a>Wykorzystanie dzienników generowanych przez system
+## <a name="how-we-use-system-generated-logs"></a>Jak firma Microsoft używa dzienników generowanych przez system
 
-Przepływ pracy, aby ustalić przyczynę błędu zależy od typu błędu i jego ważności.
+Przepływ pracy, aby ustalić przyczynę błędu różni się w zależności od rodzaju błąd i jego ważności.
 
 ### <a name="error-classification"></a>Błąd klasyfikacji
 
-Oparty na dziennikach, błędy są sklasyfikowane i zliczane priorytety dochodzenia. Na przykład firma Microsoft może stwierdzić, że "System.IO. \__Error.WinIOError "na"System.IO.FileStream.Init"Wystąpił 500 razy w wersji \<x > produktu, i ma najwyższy stopień wystąpienie w tej wersji.
+Oparte na dziennikach, błędy są klasyfikowane i zliczane, do badania ich priorytety. Na przykład firma Microsoft może stwierdzić, że "System.IO. \__Error.WinIOError "na"System.IO.FileStream.Init"Wystąpił 500 razy w wersji \<x > produktu, i ma najwyższy stopień wystąpienie w tej wersji.
 
-### <a name="work-items-for-tracking"></a>Elementy pracy dla śledzenia
+### <a name="work-items-for-tracking"></a>Elementy robocze do śledzenia
 
-Elementy pracy dla poszczególnych, priorytetową błędy są tworzone i przypisane do engineers, aby umożliwić zbadanie problemu. Te elementy robocze zawierają zwykle klasyfikacji, priorytet i informacje diagnostyczne dotyczące typu błędu. Te informacje jest pochodną zebranych dzienników generowanych przez system tego błędu. Na przykład elementu pracy dla awarii może zawierać ślad stosu, gdzie występuje awaria.
+Elementy robocze dla indywidualnych, priorytetyzacji błędy zostały utworzone i przypisane do inżynierów w celu zbadania problemu. Te elementy robocze, zwykle zawierają klasyfikacji, priorytetu i informacje diagnostyczne, które są istotne dla typu błędu. Informacja ta jest tworzony na podstawie zebranych dzienników generowanych przez system dla błędu. Na przykład element roboczy dla awarii może zawierać ślad stosu, gdzie występuje awaria.
 
 ### <a name="error-investigation"></a>Błąd podczas badania
 
-Inżynierów użyć informacji dostępnych w elementu roboczego do ustalenia głównej przyczyny błędu. W niektórych przypadkach potrzebuje więcej informacji, niż jest to w element roboczy w takim przypadku odnoszą się do oryginalnej dziennika generowanych przez system, który został zebrany. Na przykład inżyniera może sprawdzić zrzutu pamięci, aby zrozumieć awarii produktu.
+Inżynierowie skorzystaj z informacji, które są dostępne w elemencie roboczym ustalania głównej przyczyny błędu. W niektórych przypadkach potrzebują więcej informacji, niż co to jest obecny w elemencie roboczym, w którym to przypadku odnoszą się do oryginalnego dziennika generowanych przez system, które zostały zebrane. Na przykład inżynier może sprawdzić zrzut pamięci, aby zrozumieć awarię produktu.
 
-## <a name="tips-for-extension-authors"></a>Porady dotyczące autorów rozszerzenia
+## <a name="tips-for-extension-authors"></a>Porady dotyczące twórcy rozszerzeń
 
-Autorzy rozszerzenia należy ograniczyć ujawnienia informacji osobistych, które nie są używane osobistych lub inne poufne informacje w nazwach modułów, typy i metody. W przypadku awarii lub podobne błąd z kodem na stosie, te informacje pobiera zbierane w ramach dzienników generowanych przez system.
+Twórcy rozszerzeń należy ograniczyć narażenie informacje osobiste, nie korzystając osobistych lub inne poufne informacje w nazwach swoich modułów, typów i metod. Sytuacji awarię lub podobne warunku błędu z tym kodem na stosie, te informacje pobiera zbierane w ramach dzienników generowanych przez system.
 
-## <a name="opt-out-of-data-collection"></a>Opcja rezygnacji z zbierania danych
+## <a name="opt-out-of-data-collection"></a>Zrezygnować ze zbierania danych
 
-Podane dane, które zbieramy i ograniczenia dotyczące jego dostępu i przechowywania, zalecane jest użycie domyślnych ustawień prywatności dla programu Visual Studio i Windows. Można jednak [zrezygnować](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) z programu poprawy jakości obsługi programu Visual Studio. Aby zrezygnować z kolekcji dziennika generowanych przez system dla wszystkich programów, zobacz [diagnostyki, opinie i ochrona prywatności w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Opcje mogą się różnić w zależności od wersji systemu Windows używasz.
+Biorąc pod uwagę cel zbieranych danych oraz ograniczenia dotyczące jego dostępu i przechowywania, zalecane jest użycie domyślnych ustawień prywatności dla programu Visual Studio i Windows. Można jednak [zrezygnować](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) z programu poprawy jakości obsługi programu Visual Studio. Aby zrezygnować z zbieranie dzienników generowanych przez system dla wszystkich programów, zobacz [diagnostyki, opinie i ochrony prywatności w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Opcje mogą się różnić w zależności od wersji Windows używasz.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
-- [Diagnostyka, opinie i ochrona prywatności w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)
+- [Diagnostyka, opinie i ochrony prywatności w systemie Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

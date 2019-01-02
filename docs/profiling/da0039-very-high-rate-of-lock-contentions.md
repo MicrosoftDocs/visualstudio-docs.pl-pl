@@ -1,8 +1,6 @@
 ---
 title: 'DA0039: Bardzo wysoki współczynnik rywalizacji o blokadę | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.39
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4548e190b7008c887ccf1c149a95f52bd8d7892d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d806b6f6bb375dd05cebc56faadc396e3d80516
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962574"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Bardzo wysoka liczba rywalizacji blokad
 
@@ -48,7 +46,7 @@ ms.locfileid: "49845709"
  Ta reguła jest uruchamiana, gdy pomiarów dokonanych podczas uruchomienia profilowania wskazuje jest zbyt wysoki stopień Rywalizacja o blokady. Rywalizacji blokad opóźnienie wykonania wątków, które oczekują na blokadę. Należy zbadać nawet stosunkowo małe ilości Rywalizacja o blokady w testach jednostkowych lub w testach obciążenia uruchomione na dolnej sprzętowych zakończenia.  
 
 > [!NOTE]
->  Gdy liczba rywalizacji blokad zgłoszone w danych profilowania jest istotne, ale nie nadmierne [DA0038: wysoki współczynnik rywalizacji blokad](../profiling/da0038-high-rate-of-lock-contentions.md) komunikat z informacjami o wyzwoleniu zamiast ten komunikat ostrzegawczy.  
+>  Gdy liczba rywalizacji blokad zgłoszone w danych profilowania jest istotne, ale nie nadmierne [DA0038: Wysoki współczynnik rywalizacji blokad](../profiling/da0038-high-rate-of-lock-contentions.md) komunikat z informacjami o wyzwoleniu zamiast ten komunikat ostrzegawczy.  
 
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
  Kliknij dwukrotnie komunikat, aby przejść do [znaczniki](../profiling/marks-view.md) widoku danych profilowania.  Znajdź **.NET CLR LocksAndThreads\Contention szybkość / sec** kolumny. Określa, czy określone faz wykonywania programu Rywalizacja o blokady w przypadku większych niż pozostałych faz.  

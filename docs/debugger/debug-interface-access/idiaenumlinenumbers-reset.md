@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumLineNumbers::Reset | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Idiaenumlinenumbers::reset — | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 655b36e09656edf52d3f8d2a9af9e2994ffdaadc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c73fe81631938f70f42d03494f6c98dc59ff10f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963178"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
-Resetuje sekwencję wyliczenia na początku.  
+Resetuje sekwencji wyliczenia na początku.  
   
 ## <a name="syntax"></a>Składnia  
   

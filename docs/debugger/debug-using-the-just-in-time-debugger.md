@@ -1,8 +1,6 @@
 ---
 title: Debugowanie za pomocą debugera just in Time | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831553"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie w programie Visual Studio za pomocą debugera just in Time
 
@@ -107,7 +105,7 @@ Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza W
 
 Na przykład wprowadzisz aplikację konsoli C# w programie Visual Studio, które zgłasza [obiektu NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. W programie Visual Studio, tworzenie aplikacji konsolowej C# (**pliku** > **New** > **projektu** > **Visual C#**  >  **Aplikację konsolową**) o nazwie *ThrowsNullException*. Aby uzyskać więcej informacji dotyczących tworzeniu projektów w programie Visual Studio, zobacz [instruktażu: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. W programie Visual Studio, tworzenie aplikacji konsolowej C# (**pliku** > **New** > **projektu** > **Visual C#**  >  **Aplikację konsolową**) o nazwie *ThrowsNullException*. Aby uzyskać więcej informacji dotyczących tworzeniu projektów w programie Visual Studio, zobacz [instruktażu: Tworzenie prostej aplikacji](/visualstudio/get-started/csharp/tutorial-wpf).
    
 1. Po otwarciu projektu w programie Visual Studio, otwórz *Program.cs* pliku. Zastąp następujący kod, który wyświetla wiersz do konsoli i następnie zgłasza obiektu NullReferenceException metody Main():
    

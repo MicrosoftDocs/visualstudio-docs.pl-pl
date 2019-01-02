@@ -1,8 +1,6 @@
 ---
-title: Nie można zmienić wartości — okno dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Nie można zmienić wartości, okno dialogowe | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.variables.failededit
@@ -20,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a6eb8059d9780e3b7343c6a7864896a0c529c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5fd6b184b72acc2ecd08123160a512e5473e6611
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966550"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Nie można zmienić wartości — okno dialogowe
 ## <a name="error"></a>Błąd  
  `The value of this variable cannot be changed` &#124;`The name` *nazwa* `does not exist in the current context` &#124; *różne inne komunikaty*  
   
- Ten komunikat zostanie wyświetlony podczas próby zmiany zawartości zmiennej na niedozwoloną wartość okna debugera (windows samochodów, obejrzyj ani lokalnych) lub QuickWatch — okno dialogowe. Na przykład Jeśli spróbujesz ustawić wartość zmiennej liczby całkowitej na ciąg znaków, zostanie wyświetlony ten komunikat.  
+ To okno komunikatu pojawia się podczas próby zmiany zawartości zmiennej na niedozwoloną wartość okna debugera (windows automatyczne, wyrażenie kontrolne lub lokalne) lub okna dialogowego QuickWatch. Na przykład Jeśli spróbujesz ustawić wartość zmiennej liczby całkowitej na ciąg znaków, pojawi się to okno komunikatu.  
   
 ## <a name="solution"></a>Rozwiązanie  
- Upewnij się, dane wejściowe, można wpisać do okna debugera lub QuickWatch — okno dialogowe reprezentuje dozwoloną wartością zmiennej, którą próbujesz skonfigurować.  
+ Upewnij się, dane wejściowe, można wpisać w oknie debugera lub okno dialogowe QuickWatch reprezentuje dozwoloną wartością dla zmiennej, którą chcesz ustawić.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md)

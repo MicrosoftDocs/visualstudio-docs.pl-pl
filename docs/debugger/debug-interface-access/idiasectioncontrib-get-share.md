@@ -1,8 +1,6 @@
 ---
 title: Idiasectioncontrib::get_share — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a4632521c21a17495ccb9e969ee53fcf2b6d40
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ddbc8252395532c4aa7329e927d0cc1b07dddd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954101"
 ---
 # <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
 Pobiera flagę wskazującą, czy sekcja mogą być udostępniane w pamięci.  
@@ -27,7 +25,7 @@ Pobiera flagę wskazującą, czy sekcja mogą być udostępniane w pamięci.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_share (   
+HRESULT get_share (   
    BOOL* pRetVal  
 );  
 ```  

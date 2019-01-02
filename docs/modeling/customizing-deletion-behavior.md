@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940956"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usuwanie elementu zwykle powoduje, że powiązanych elementów można również usunąć. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne są usuwane. To zachowanie jest o nazwie *Usuń propagacji*. Można dostosować propagacji delete, na przykład aby rozmieścić, że dodatkowe powiązane elementy zostaną usunięte. Pisząc kod programu, można wprowadzić propagacji delete zależą od stanu modelu. Może również spowodować inne zmiany w odpowiedzi na usunięcie.
@@ -140,7 +139,7 @@ partial class MusicLibDeleteClosure
 
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> jest wywoływana, gdy element został usunięty. Pozostaje w stosie CLR, aby cofania mogą być wykonywane, jeśli jest to wymagane, ale jest rozłączony od innych elementów i usunięty z `store.ElementDirectory`. W przypadku relacji role nadal odwoływać się do starej obiekty pełniące role.`IsDeleted` ma wartość true.
 
-3. OnDeleting i OnDeleted są wywoływane, gdy użytkownik wywołuje cofania po utworzeniu elementu i wcześniejsze usunięcie jest powtarzany w ponawiania. Użyj `this.Store.InUndoRedoOrRollback` w celu uniknięcia aktualizowania elementów Sklepu w tych przypadkach. Aby uzyskać więcej informacji, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. OnDeleting i OnDeleted są wywoływane, gdy użytkownik wywołuje cofania po utworzeniu elementu i wcześniejsze usunięcie jest powtarzany w ponawiania. Użyj `this.Store.InUndoRedoOrRollback` w celu uniknięcia aktualizowania elementów Sklepu w tych przypadkach. Aby uzyskać więcej informacji, zobacz [jak: Użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
    Na przykład poniższy kod usuwa albumu po usunięciu jej ostatniego elementu podrzędnego utworu:
 

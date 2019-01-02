@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95f184628af5b56845f76d1c7279608b6826c151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826790"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
 
 Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań.
 
@@ -31,7 +30,7 @@ Dostępne są dwa typy raportów testów obciążenia:
 -   **Trend** możesz wygenerować analizy trendu na podstawie dwóch lub więcej wyników testu obciążenia. Wyniki są wyświetlane przy użyciu wykresów liniowych, ale dane są dostępne w raportach tabeli przestawnej.
 
 > [!TIP]
-> Można również ręcznie utworzyć raporty w programie Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania, widoku wykresów i widoku tabel. Zobacz [porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Można również ręcznie utworzyć raporty w programie Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania, widoku wykresów i widoku tabel. Zobacz [jak: Ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Raport może służyć do udostępniania danych dotyczących wydajności zainteresowanym osobom i przekazywania, czy ogólna wydajność i kondycja systemu jest coraz lepsza czy gorsza.
 
@@ -104,7 +103,7 @@ Raporty programu Excel można albo wygenerować w **analizatora testu obciążen
    - **Porównanie błędów —** porównuje typy błędów napotkanych między dwoma uruchomieniami i liczbę wystąpień.
 
      > [!TIP]
-     > Aby uzyskać lepsze raporty kilka właściwości są dostępne w testach obciążenia i testy wydajności sieci web, które umożliwiają bardziej rozbudowane raporty. Żądanie strony ma dwie właściwości, które są wyświetlane w raportach: cel i nazwa raportowania. Czasy reakcji stron będą raportowane względem celu, a nazwa raportowania będzie używana zamiast adresu URL w raportach. W teście obciążeniowym parametrów uruchomieniowych, w obszarze Zarządzaj zbiorem liczników właściwość znaczniki komputerów jest przedstawiona w nazwach komputerów raportów. Jest to bardzo przydatne do opisywania roli danej maszyny w raporcie.
+     > Aby uzyskać lepsze raporty kilka właściwości są dostępne w testach obciążenia i testy wydajności sieci web, które umożliwiają bardziej rozbudowane raporty. Żądanie strony ma dwie właściwości, które są wyświetlane w raportach: Cel i nazwa raportowania. Czasy reakcji stron będą raportowane względem celu, a nazwa raportowania będzie używana zamiast adresu URL w raportach. W teście obciążeniowym parametrów uruchomieniowych, w obszarze Zarządzaj zbiorem liczników właściwość znaczniki komputerów jest przedstawiona w nazwach komputerów raportów. Jest to bardzo przydatne do opisywania roli danej maszyny w raporcie.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Aby wygenerować raporty trendów testów obciążenia za pomocą programu Excel
 
@@ -144,7 +143,7 @@ Raporty programu Excel można albo wygenerować w **analizatora testu obciążen
 9. Raport jest generowany ze spisem treści, zawierającym łącza do różnych kart skoroszytu programu Excel generowanych w raporcie. Łącza są oparte na licznikach wybranych dla raportu trendu. Na przykład jeśli domyślne liczniki wybrane w kroku 7, następnie raport wygeneruje dane, które są przedstawiane na osobnych kartach w programie Excel dla każdego licznika wymienionego w kroku 7. Dane, który jest generowany dla każdego licznika są przedstawione w wykresów trend styl.
 
    > [!TIP]
-   > Aby uzyskać lepsze raporty kilka właściwości są dostępne w testach obciążenia i testy wydajności sieci web, które umożliwiają bardziej rozbudowane raporty. Żądanie strony ma dwie właściwości, które są wyświetlane w raportach: cel i nazwa raportowania. Czasy reakcji stron będą raportowane względem celu, a nazwa raportowania będzie używana zamiast adresu URL w raportach. W teście obciążeniowym parametrów uruchomieniowych, w obszarze Zarządzaj zbiorem liczników właściwość znaczniki komputerów jest przedstawiona w nazwach komputerów raportów. Jest to bardzo przydatne do opisywania roli danej maszyny w raporcie.
+   > Aby uzyskać lepsze raporty kilka właściwości są dostępne w testach obciążenia i testy wydajności sieci web, które umożliwiają bardziej rozbudowane raporty. Żądanie strony ma dwie właściwości, które są wyświetlane w raportach: Cel i nazwa raportowania. Czasy reakcji stron będą raportowane względem celu, a nazwa raportowania będzie używana zamiast adresu URL w raportach. W teście obciążeniowym parametrów uruchomieniowych, w obszarze Zarządzaj zbiorem liczników właściwość znaczniki komputerów jest przedstawiona w nazwach komputerów raportów. Jest to bardzo przydatne do opisywania roli danej maszyny w raporcie.
 
 ## <a name="net-framework-security"></a>zabezpieczenia .NET Framework
 

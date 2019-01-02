@@ -1,8 +1,6 @@
 ---
-title: 'Błąd: Udostępnianie plików systemu Windows została skonfigurowana... | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Błąd: Udostępnianie plików Windows skonfigurowano... | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,34 +14,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942216"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>Błąd: Udostępnianie plików systemu Windows zostało skonfigurowano...
-Udostępnianie plików systemu Windows została skonfigurowana, dzięki czemu będą łączyć się z komputerem zdalnym przy użyciu innej nazwy użytkownika. Jest to niezgodne z funkcją debugowania zdalnego  
+# <a name="error-windows-file-sharing-has-been-configured"></a>Błąd: Udostępnianie plików systemu Windows zostało skonfigurowane...
+Udostępnianie plików Windows został skonfigurowany, tak aby połączy się z komputerem zdalnym przy użyciu innej nazwy użytkownika. Jest to niezgodne z funkcją debugowania zdalnego  
   
- Aby połączyć się z komputerem zdalnym przy użyciu innej nazwy użytkownika skonfigurowano bieżącego pliku konfiguracji do udostępniania. Debugowanie zdalne nie jest możliwe w tym scenariuszu.  
+ Bieżący plik Konfiguracja udostępniania jest skonfigurowany do łączenia się z komputerem zdalnym przy użyciu innej nazwy użytkownika. Zdalne debugowanie nie jest możliwe, w tym scenariuszu.  
   
- Aby rozwiązać ten problem, zaloguj się na komputerze przy użyciu nazwy konta lub zmienić udostępnianie plików do używania nazwy konta, które debugowania w obszarze.  
+ Aby rozwiązać ten problem, zaloguj się na komputerze przy użyciu nazwy konta lub zmienić udostępniania plików do używania nazwy konta, który debugujesz w obszarze.  
   
- Jeśli chcesz się połączyć z komputerem zdalnym przy użyciu tej nazwy użytkownika, należy najpierw odłączyć z komputera zdalnego.  
+ Jeśli chcesz się połączyć z komputerem zdalnym przy użyciu tej nazwy użytkownika, musisz najpierw odłączyć z komputera zdalnego.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  Zaloguj się na komputerze lokalnym komputerze, na którym debugowania, przy użyciu nazwy konta.  
+1.  Zaloguj się na komputerze lokalnym komputera, który debugujesz, przy użyciu nazwy konta.  
   
      —lub—  
   
-     . Zakończyć połączenie z komputerem zdalnym, a następnie ponownie skonfigurować udostępnianie plików nawiązać połączenia z innego komputera przy użyciu nazwy konta:  
+     . Rozłącz z komputera zdalnego, a następnie ponownie skonfiguruj Udostępnianie plików, połączyć się z innego komputera przy użyciu nazwy konta:  
   
-    1.  Na **Start** menu wskaż **Akcesoria**, a następnie kliknij przycisk **wiersza polecenia**.  
+    1.  Na **Start** menu wskaż **Akcesoria**, a następnie kliknij przycisk **polecenia**.  
   
-    2.  W wierszu polecenia systemu Windows wpisz:  
+    2.  W wierszu polecenia Windows wpisz:  
   
          `net use /delete computer_name`  
   
-    3.  Zmiany ustawień udostępniania plików przy użyciu dowolnej z metod opisanych w Pomocy systemu Windows.
+    3.  Zmień ustawienia udostępniania plików przy użyciu dowolnej z metod opisanych w Pomocy Windows.

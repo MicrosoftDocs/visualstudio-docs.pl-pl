@@ -1,15 +1,10 @@
 ---
-title: 'Porady: Dodawanie i usuwanie elementów do funkcji SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964020"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Porady: Dodawanie i usuwanie elementów do funkcji SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint
   Podczas tworzenia rozwiązania programu SharePoint, programu Visual Studio dodaje domyślne elementy projektu programu SharePoint do Twojej funkcji. Przed przystąpieniem do wdrożenia można dodawać i usuwać elementów projektu programu SharePoint, aby zmodyfikować funkcji programu SharePoint.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>Dodaj elementy projektu programu SharePoint do funkcji  
@@ -35,7 +30,7 @@ ms.locfileid: "49854835"
   
 1. Otwórz projektanta funkcji.  
   
-    Aby uzyskać więcej informacji, zobacz [porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Dodaj jeden lub więcej elementów z **elementów w rozwiązaniu** do listy **elementy w funkcji** listę, wykonując jedną lub więcej z następujących czynności:  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854835"
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::GetBackingFieldForProperty | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::GetBackingFieldForProperty
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d788d048fc428825cbc667b18424b32c68ddc5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ee7d6c998cb511425fa9a9e2314eeb3a7346f22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954029"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 Pobiera pola lub zmiennej (jeśli istnieje), mogą tworzyć kopię właściwość reprezentowany przez ten obiekt.  
@@ -28,14 +25,14 @@ Pobiera pola lub zmiennej (jeśli istnieje), mogą tworzyć kopię właściwoś�
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
+HRESULT GetBackingFieldForProperty(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
+int GetBackingFieldForProperty(  
+   out IDebugObject2 ppObject  
 );  
 ```  
   

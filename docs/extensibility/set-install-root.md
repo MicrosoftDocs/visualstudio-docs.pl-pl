@@ -1,9 +1,6 @@
 ---
-title: Instalowanie znajduje się poza folderem rozszerzeń z VSIX v3 | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Instalowanie poza folderem rozszerzeń o rozszerzeniu VSIX v3 | Dokumentacja firmy Microsoft
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
@@ -11,38 +8,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8476b300974d66efc60f647c897ec6892191e7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968501"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Instalowanie znajduje się poza folderem rozszerzeń
+# <a name="installing-outside-the-extensions-folder"></a>Instalowanie poza folderem rozszerzeń
 
-Począwszy od wersji programu Visual Studio 2017 i VSIX 3 (wersja 3) obsługuje teraz instalowanie rozszerzeń zasobów poza folderem rozszerzenia. Obecnie następujące lokalizacje są włączone jako lokalizacje prawidłowej instalacji (gdzie [INSTALLDIR] jest mapowany na katalog instalacyjny wystąpienie programu Visual Studio):
+Począwszy od programu Visual Studio 2017 i VSIX v3 (wersja 3) jest teraz obsługiwane Instalowanie rozszerzenia zasobów poza folderem rozszerzeń. Obecnie następujących lokalizacji są włączone jako lokalizacje prawidłowej instalacji (gdzie [INSTALLDIR] jest mapowany do katalogu instalacyjnego w wystąpieniu programu Visual Studio):
 
 * \MSBuild [INSTALLDIR]
-* \Xml\Schemas [INSTALLDIR]
+* [INSTALLDIR] \Xml\Schemas
 * \Common7\IDE\PublicAssemblies [INSTALLDIR]
 * \Licenses [INSTALLDIR]
 * \Common7\IDE\ReferenceAssemblies [INSTALLDIR]
 * \Common7\IDE\RemoteDebugger [INSTALLDIR]
 * \Common7\IDE\VC\VCTargets [INSTALLDIR]
 
->**Uwaga:** format pliku VSIX nie zezwoli na zainstalowanie poza struktura folderów instalacji programu VS.
+>**Uwaga:** VSIX format nie umożliwiają instalowanie poza strukturą folderu instalacji programu VS.
 
-Aby zapewnić obsługę instalowanie na tych katalogów, pliku VSIX musi być zainstalowana "poszczególnych wystąpień dla maszyny". Można je włączyć, zaznaczając pole wyboru "wszystkich użytkowników" w Projektancie extension.vsixmanifest:
+W celu obsługi instalacji tych katalogów, VSIX musi być zainstalowany "dla wystąpienia na komputerze". Tę można włączyć, zaznaczając pole wyboru "wszystkich użytkowników" w Projektancie extension.vsixmanifest:
 
-![Sprawdź wszyscy użytkownicy](media/check-all-users.png)
+![Zaznacz wszystkich użytkowników](media/check-all-users.png)
 
-## <a name="how-to-set-the-installroot"></a>Jak ustawić InstallRoot
+## <a name="how-to-set-the-installroot"></a>Jak ustawić element InstallRoot
 
 Aby ustawić katalogi instalacyjne, można użyć **właściwości** okna w programie Visual Studio. Na przykład można ustawić `InstallRoot` właściwości odwołania projektu do jednej z powyższych lokalizacji:
 
-![Zainstaluj właściwości głównej](media/install-root-properties.png)
+![Zainstaluj właściwości katalogu głównego](media/install-root-properties.png)
 
-Spowoduje to dodanie niektóre metadane do odpowiednich `ProjectReference` właściwości wewnątrz pliku .csproj projektu VSIX:
+Spowoduje to dodanie niektórych metadanych do odpowiednich `ProjectReference` właściwości wewnątrz pliku .csproj projekt VSIX:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -52,15 +49,15 @@ Spowoduje to dodanie niektóre metadane do odpowiednich `ProjectReference` wła�
  </ProjectReference>
 ```
 
->**Uwaga:** edycji pliku .csproj bezpośrednio, jeśli wolisz.
+>**Uwaga:** Możesz bezpośrednio edytować plik .csproj, jeśli użytkownik sobie tego życzy.
 
-## <a name="how-to-set-a-subpath-under-the-installroot"></a>Jak ustawić podrzędną katalog_główny_instalacji
+## <a name="how-to-set-a-subpath-under-the-installroot"></a>Jak ustawić podrzędną w ramach InstallRoot
 
-Jeśli chcesz zainstalować podrzędną poniżej `InstallRoot`, możesz to zrobić przez ustawienie `VsixSubPath` podobnie jak właściwość `InstallRoot` właściwości. Na przykład chcemy dane wyjściowe nasze odwołanie projektu do zainstalowania "[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0". Firma Microsoft to łatwo zrobić przy użyciu projektanta właściwości:
+Jeśli chcesz zainstalować podrzędną poniżej `InstallRoot`, możesz to zrobić, ustawiając `VsixSubPath` podobnie jak właściwość `InstallRoot` właściwości. Na przykład chcemy, aby nasz odwołania projektu danych wyjściowych, aby zainstalować "[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0". Firma Microsoft może łatwo to zrobić za pomocą projektanta właściwości:
 
 ![zestaw podrzędną](media/set-subpath.png)
 
-Odpowiednie zmiany .csproj będzie wyglądać następująco:
+Odpowiednie zmiany w pliku csproj będzie wyglądać następująco:
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -73,4 +70,4 @@ Odpowiednie zmiany .csproj będzie wyglądać następująco:
 
 ## <a name="extra-information"></a>Dodatkowe informacje
 
-Zmiany projektanta właściwości są stosowane do więcej niż tylko odwołania do projektu; można ustawić `InstallRoot` metadanych dla elementów wewnątrz projektu również (przy użyciu tych samych metod opisanych powyżej).
+Zmiany projektanta właściwości są stosowane do więcej niż tylko odwołania do projektu; Możesz ustawić `InstallRoot` metadanych dla elementów wewnątrz projektu również (przy użyciu tych samych metod opisanych powyżej).

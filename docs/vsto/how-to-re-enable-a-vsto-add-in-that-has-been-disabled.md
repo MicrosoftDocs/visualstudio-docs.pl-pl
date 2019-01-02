@@ -1,9 +1,6 @@
 ---
-title: 'Porady: ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona'
-ms.custom: ''
+title: 'Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939401"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Porady: ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona
   Aplikacje Microsoft Office może spowodować wyłączenie dodatków narzędzi VSTO dla programów, które nieoczekiwane zachowanie. Jeśli aplikacja nie można załadować dodatku narzędzi VSTO dla programów podczas próby debugowania aplikacji może być twardych wyłączone lub wyłączone nietrwałego dodatku narzędzi VSTO dla programów.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35677469"
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)   
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)  
-  
-  

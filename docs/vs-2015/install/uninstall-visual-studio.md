@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 71e1318444c0b03ee5b2b9024c13bfbeb51b5c41
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 985f99afb0f9c0e659586d7878df94bf1b7266c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050134"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822428"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalowywanie programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +46,7 @@ Na tej stronie przeprowadzą odinstalowywania programu Visual Studio 2015 starsz
 1.  Znajdź plik .exe programu Visual Studio (na przykład zlokalizuj "vs_enterprise.exe").
 
     > [!NOTE]
-    >  Plik powinien znajdować się w podfolderze "%ProgramData%\Package Cache", na przykład: pamięć podręczna C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
+    >  Plik powinien znajdować się w podfolderze "%ProgramData%\Package Cache", na przykład: Pamięć podręczna C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
 
 2.  Uruchom plik .exe, używając / uninstall/force parametry wiersza polecenia.
 
@@ -77,7 +76,7 @@ Na tej stronie przeprowadzą odinstalowywania programu Visual Studio 2015 starsz
 
 2. Zainstaluj lub ponownie zainstaluj starszą wersję programu Visual Studio, której chcesz użyć.
 
-   Nawet wtedy, gdy możesz zainstalować poprzednią wersję programu Visual Studio, program instalacyjny może nadal próbować użyć nowszej wersji lub wydania, jeśli jest on dostępny. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tematu.
+   Nawet wtedy, gdy możesz zainstalować poprzednią wersję programu Visual Studio, program instalacyjny może nadal próbować użyć nowszej wersji lub wydania, jeśli jest on dostępny. Aby uzyskać więcej informacji, zobacz [jak: Instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tematu.
 
 ## <a name="see-also"></a>Zobacz też
  [Instalowanie programu Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

@@ -1,9 +1,6 @@
 ---
 title: METADATA_ADDRESS_FIELD | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - METADATA_ADDRESS_FIELD
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2896cff4133db49ca02aa3b0a08f227f389ab713
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 505267eac618a65434457b0e77f5d53da8e00ee1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967483"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 Ta struktura reprezentuje adresu pola klasy lub struktury.  
@@ -51,9 +48,9 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

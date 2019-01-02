@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 98013b53641efec6a088c1e89bf521613fc7659e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 6a15432e170c814a6e80aebb86a9db31d073a98b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966573"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835224"
 ---
 # <a name="properties-of-compartment-shapes"></a>Właściwości kształtów przedziałów
 Kształtów przedziałów są jednymi z kształtami, które służy do wyświetlania klasy domeny w języku specyficznym dla domeny. Można rozwijać i zwijać przedziałów.
@@ -34,7 +33,7 @@ Kształtów przedziałów są jednymi z kształtami, które służy do wyświetl
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Poziome|
 |Geometrii|Geometria tego kształtu (prostokąt lub prostokąt zaokrąglony).|Prostokąt|
 |Ma domyślne punkty połączenia|Jeśli `True`kształt użyje górnej, dolnej, lewej i połączenia na odpowiednie punkty w wygenerowanym projektancie.|False|
-|Jeden przedział, nagłówek jest widoczny|Jeśli `False`i kształt ma jeden przedział, nagłówek przedziału nie jest widoczny.|True|
+|Jeden przedział, nagłówek jest widoczny|Jeśli `False`i kształt ma jeden przedział, nagłówek przedziału nie jest widoczny.|Prawda|
 |Kolor konturu|Kolor konturu tego kształtu.|Czarny|
 |Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (stałe, kreski, kropki, DashDot, DashDotDot, niestandardowe).|Stałe|
 |Grubość konturu|Grubość konturu tego kształtu.|0.03125|
@@ -50,7 +49,7 @@ Kształtów przedziałów są jednymi z kształtami, które służy do wyświetl
 |Typ etykietki narzędzia|Jak etykietka narzędzia jest zdefiniowane (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|brak|
 |Uwagi|Uwagi informacyjne, które są skojarzone z tym kształtem.|\<Brak >|
 |Początkowa wysokość|Początkowa wysokość tego kształtu, w calach. Dla kształtów przedziałów jest wysokość w sekcji nagłówka i nie można zmienić rozmiaru.|1|
-|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1.5|
+|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1,5|
 |Kolor wypełnienia uwidocznione jako właściwość<br /><br /> Tryb gradientu wypełnienia narażone<br /><br /> Widoczne kolor konturu jako właściwość<br /><br /> Widoczne stylu kreskowania konturu jako właściwość<br /><br /> Grubość konturu jako właściwość widoczne<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij przycisk **Dodaj udostępniane**.|False|
 |Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|
 |Nazwa wyświetlana|Nazwa która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<Brak >|

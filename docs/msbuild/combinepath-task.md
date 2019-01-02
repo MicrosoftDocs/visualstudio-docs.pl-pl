@@ -1,8 +1,6 @@
 ---
 title: Combinepath — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e380c6207b3f59b1717ebff6f17261acc7ee52
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 542efb2cb1de44da95f640efbc316dc2cf373212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966498"
 ---
 # <a name="combinepath-task"></a>CombinePath — zadanie
 Łączy określonych ścieżek w pojedynczą ścieżkę.  

@@ -1,9 +1,8 @@
 ---
 title: Co to jest debugowanie?
 description: Zrozumienie, co oznacza debugować aplikację
-ms.custom: debug-experiments
+ms.custom: debug-experiment
 ms.date: 10/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830972"
 ---
 # <a name="what-is-debugging"></a>Co to jest debugowanie?
 

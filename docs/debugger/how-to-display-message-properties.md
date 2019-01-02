@@ -1,8 +1,6 @@
 ---
-title: 'Porady: wyświetlanie właściwości komunikatu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyświetlanie właściwości komunikatu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message properties in SpyHelp
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54294ec72df4abfd6ba96e334017e58fca3d18c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ff62a6d88d7a85638029542363722d9e7e7179c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962117"
 ---
-# <a name="how-to-display-message-properties"></a>Porady: wyświetlanie właściwości komunikatów
+# <a name="how-to-display-message-properties"></a>Instrukcje: Wyświetlanie właściwości komunikatu
 Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md).  
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości komunikatu  

@@ -1,9 +1,6 @@
 ---
 title: Tworzenie systemu podstawowego projektu, część 2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967777"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy instrukcje przedstawione w tej serii [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak tworzenie systemu podstawowego projektu. W tym przewodniku opiera się na systemu podstawowego projektu, dodając szablonu programu Visual Studio, strony właściwości i inne funkcje. Pierwszym przewodniku należy wykonać przed rozpoczęciem korzystania z niej.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Zresetuj wystąpienie eksperymentalne programu Visual Studio SDK.  
   
-    Na [!INCLUDE[win7](../debugger/includes/win7_md.md)]: na **Start** menu, Znajdź **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** folder, a następnie wybierz **resetowania eksperymentalne programu Microsoft Visual Studio wystąpienie**.  
+    Na [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Na **Start** menu, Znajdź **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** folder, a następnie wybierz **Zresetuj wystąpienie eksperymentalne programu Visual Studio Microsoft**.  
   
-    W nowszych wersjach systemu Windows: na **Start** ekranu, wpisz **zresetować programu Microsoft Visual Studio \<wersji > eksperymentalne wystąpienie**.  
+    W nowszych wersjach systemu Windows: Na **Start** ekranu, wpisz **zresetować programu Microsoft Visual Studio \<wersji > eksperymentalne wystąpienie**.  
   
 2. Zostanie wyświetlone okno wiersza polecenia. Po wyświetleniu wyrazy **naciśnij dowolny klawisz, aby kontynuować**, kliknij przycisk **ENTER**. Po zamknięciu okna, Otwórz program Visual Studio.  
   

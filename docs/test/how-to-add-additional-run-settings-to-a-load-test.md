@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d23da01a9f36501789991b7d261a819879fd50ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962259"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Porady: Dodawanie dodatkowych ustawień przebiegu testu obciążenia
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Instrukcje: Dodawanie dodatkowych ustawień przebiegu testu obciążenia
 
 Parametry uruchomieniowe testu obciążeniowego decydują o różnych innych ustawieniach. Należą do nich ustawienia czasu trwania testu, poziomu szczegółowości zbierania wyników oraz zbiorów liczników, z których dane mają być zbierane podczas przebiegów testowych. Dla każdego testu obciążeniowego można utworzyć i zapisać wiele parametrów uruchomieniowych, a następnie wybrać jedno konkretne ustawienie do użycia podczas wykonywania testu. Początkowy parametr uruchomieniowy dodaje się do testu obciążeniowego podczas tworzenia testu obciążeniowego za pomocą **Kreatora nowego testu obciążeniowego**.
 
@@ -40,7 +39,7 @@ Do testu obciążeniowego można dodać więcej parametrów uruchomieniowych z r
 
      **Właściwości** zostanie wyświetlone okno z właściwościami, dla wybranego ustawienia uruchamiania.
 
-5.  W **właściwości** okna, użyj pola tekstowego dla **nazwa** właściwości nadaj nowemu Ustawianie nazwy, która opisuje przeznaczenie parametru uruchomieniowego (na przykład **parametr uruchomieniowy: przebieg pięciominutowy** ).
+5.  W **właściwości** okna, użyj pola tekstowego dla **nazwa** właściwości nadaj nowemu Ustawianie nazwy, która opisuje przeznaczenie parametru uruchomieniowego (na przykład **parametr uruchomieniowy: Przebieg pięciominutowy**).
 
 6.  Użyj **właściwości** okna, aby zmienić parametry uruchomieniowe. Na przykład zmienić czas trwania testu na **00:05:00** Aby uruchomić test na pięć minut.
 

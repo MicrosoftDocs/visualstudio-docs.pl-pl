@@ -3,7 +3,6 @@ title: Projektant przepływu pracy — FlowSwitch<T> Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLink.UI
 - System.Activities.Statements.FlowSwitch`1.UI
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 783f3101f567f5fe45a1de24a8dad866ea619a39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 046dd00b89b8f14da3082e60a04a92f8152ecc08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942388"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > Projektant działań
 
@@ -44,9 +43,9 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.FlowSwitch%
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|Określa wyrażenie, które jest obliczane, aby określić, które <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> Aby przełączyć się do ścieżki wykonywania.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Prawda|Określa wyrażenie, które jest obliczane, aby określić, które <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> Aby przełączyć się do ścieżki wykonywania.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Określa unikatowy mapowanie możliwe wyniki uzyskane z oceny <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> do zestawu <xref:System.Activities.Statements.FlowNode> obiektów.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|Określa mapowanie podczas obliczania <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> nie pasuje do jednej wartości zawartych w <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> obiektu.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Prawda|Określa mapowanie podczas obliczania <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> nie pasuje do jednej wartości zawartych w <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> obiektu.|
 
 ## <a name="see-also"></a>Zobacz także
 

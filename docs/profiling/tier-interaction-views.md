@@ -1,8 +1,6 @@
 ---
-title: Warstwy widoków interakcji | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Warstwa widoki interakcji między | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, tier interaction method views
@@ -11,18 +9,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2752ae770fa5926839dc9bd5ab097564e02843
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f83cd5fc4b7f15fe98f39f24d9deea3dfbb9c6e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961863"
 ---
 # <a name="tier-interaction-views"></a>Widok interakcji warstwowej
 
-Profilowanie interakcji między warstwami udostępnia dodatkowe informacje o czas wykonywania funkcji w aplikacjach wielowarstwowych, które komunikują się z bazami danych za pośrednictwem [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Dane są zbierane tylko dla wywołań synchronicznych funkcji. Warstwa danych o interakcji między mogą obejmować wszystkie metody profilowania.
+Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje na temat czasu wykonania funkcji w aplikacji wielowarstwowych, które komunikują się z bazami danych za pośrednictwem [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Dane są zbierane tylko w przypadku wywołania funkcji synchronicznej. Dane interakcji między warstwami można uwzględnić w wszystkich metod profilowania.
 
-Widok interakcji warstwowej są dostępne tylko w programie Visual Studio Enterprise.
+Widoki interakcji między warstwami są dostępne tylko w programie Visual Studio Enterprise.
 
 ## <a name="in-this-section"></a>W tej sekcji
 

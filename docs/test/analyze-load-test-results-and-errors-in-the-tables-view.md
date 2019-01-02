@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962639"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli analizatora testu obciążenia
 
@@ -55,7 +54,7 @@ Poniższa tabela zawiera listę tabel, które są dostępne do analizowania prze
 |Nazwa tabeli|Opis|
 |-|-|
 |błędy|Wyświetla listę błędów, które wystąpiły podczas przebiegu testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [tabeli błędów](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) w tym temacie i [wyniki testu obciążenia analizy](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Strony|Wyświetla listę stron dostęp podczas przebiegu testu obciążeniowego. Niektóre dane w tej tabeli jest dostępna tylko wtedy, gdy test obciążenia został ukończony. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Strony|Wyświetla listę stron dostęp podczas przebiegu testu obciążeniowego. Niektóre dane w tej tabeli jest dostępna tylko wtedy, gdy test obciążenia został ukończony. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Żądania|Wyświetla szczegóły dotyczące poszczególnych żądań wystawiony podczas testu obciążeniowego. Obejmuje to wszystkie żądania HTTP i zależne żądania, taką jak obrazy. Aby uzyskać więcej informacji, zobacz [tabeli Requests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) w tym temacie.|
 |Śledzenie SQL|Wyświetla wyniki śledzenia SQL. Ta tabela jest dostępna tylko w przypadku, po zakończeniu testu obciążenia i tylko wtedy, gdy Śledzenie SQL został użyty podczas testu. Aby uzyskać więcej informacji, zobacz [tabeli danych śledzenia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) w tym temacie.|
 |Testy|Wyświetla szczegóły dotyczące indywidualnych testów są uruchamiane podczas testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [tabeli testy](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) w tym temacie.|
@@ -66,7 +65,7 @@ Poniższa tabela zawiera listę tabel, które są dostępne do analizowania prze
 
 ## <a name="collect-percentile-data"></a>Zbieranie danych percentyl
 
- Niektóre tabele testu obciążenia mogą zawierać dodatkowe kolumny, które obejmują percentyl danych i czasów odpowiedzi podzielonej na grup oparty na emulacji sieci. Te dane nie są zbierane domyślnie. Percentyli jest dostępna tylko w przypadku, gdy zapisujesz wyniki do bazy danych, a nie w przypadku, gdy zapiszesz lokalnie. Aby uzyskać więcej informacji, zobacz [w repozytorium wyników testów obciążenia z wynikami testów obciążeniowych zarządzanie](../test/manage-load-test-results-in-the-load-test-results-repository.md). Ponadto aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz konkretny uruchamiania węzła Ustawienia można zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **StatisticsOnly** lub **AllIndividualDetails**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ Niektóre tabele testu obciążenia mogą zawierać dodatkowe kolumny, które obejmują percentyl danych i czasów odpowiedzi podzielonej na grup oparty na emulacji sieci. Te dane nie są zbierane domyślnie. Percentyli jest dostępna tylko w przypadku, gdy zapisujesz wyniki do bazy danych, a nie w przypadku, gdy zapiszesz lokalnie. Aby uzyskać więcej informacji, zobacz [w repozytorium wyników testów obciążenia z wynikami testów obciążeniowych zarządzanie](../test/manage-load-test-results-in-the-load-test-results-repository.md). Ponadto aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz konkretny uruchamiania węzła Ustawienia można zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **StatisticsOnly** lub **AllIndividualDetails**. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Tabela żądań
 
@@ -118,9 +117,9 @@ Poniższa tabela zawiera listę tabel, które są dostępne do analizowania prze
  W poniższej tabeli wymieniono w kolumnach **transakcji** tabeli.
 
 > [!NOTE]
-> Aby wyświetlić wszystkie kolumny, należy włączyć właściwości przechowywanie informacji, które jest skojarzone z aktywnego parametru uruchomieniowego. Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Aby wyświetlić wszystkie kolumny, należy włączyć właściwości przechowywanie informacji, które jest skojarzone z aktywnego parametru uruchomieniowego. Aby uzyskać więcej informacji, zobacz [jak: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Kolumny|Opis|Widoczna bez szczegółowych informacji o czasie|
+|Kolumna|Opis|Widoczna bez szczegółowych informacji o czasie|
 |-|-|-|
 |**Transakcja**|Nazwa transakcji.|Tak|
 |**Scenariusz**|Nazwa scenariusza.|Tak|
@@ -133,8 +132,8 @@ Poniższa tabela zawiera listę tabel, które są dostępne do analizowania prze
 |**Najmniejszy czas odpowiedzi**|Nie dotyczy to czasy reakcji.|Nie|
 |**Największy czas odpowiedzi**|Nie dotyczy to czasy reakcji.|Nie|
 |**Mediana czasu odpowiedzi**|Nie dotyczy to czasy reakcji.|Nie|
-|**90% czasu odpowiedzi**|Wartość 90. percentyla dla czasu transakcji. Nie dotyczy to czasy reakcji. **Uwaga:** różni się to od agenta Visual Studio Team System 2008 testu obciążenia, które używane **90% czasu transakcji** wartość.|Nie|
-|**95% czasu odpowiedzi**|Wartość 95. percentyla dla czasu transakcji. Nie dotyczy to czasy reakcji. **Uwaga:** różni się to od agenta Visual Studio Team System 2008 testu obciążenia, które używane **95% czasu transakcji** wartość.|Nie|
+|**90% czasu odpowiedzi**|Wartość 90. percentyla dla czasu transakcji. Nie dotyczy to czasy reakcji. **Uwaga:**  To różni się od agenta Visual Studio Team System 2008 testu obciążenia, które używane **90% czasu transakcji** wartość.|Nie|
+|**95% czasu odpowiedzi**|Wartość 95. percentyla dla czasu transakcji. Nie dotyczy to czasy reakcji. **Uwaga:**  To różni się od agenta Visual Studio Team System 2008 testu obciążenia, które używane **95% czasu transakcji** wartość.|Nie|
 |**99% czasu odpowiedzi**|99. percentyl wartość czasu transakcji. Nie dotyczy to czasy reakcji.|Nie|
 |**Odchylenie standardowe czasu odpowiedzi**|Nie dotyczy to czasy reakcji.|Nie|
 
@@ -244,7 +243,7 @@ W widoku tabeli można wyświetlić maksymalnie cztery tabele w czasie, bez tabe
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)
+- [Instrukcje: Wyniki testu obciążeniowego dostęp do analizy](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analizowanie naruszeń zasady progu](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)

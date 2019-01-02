@@ -2,7 +2,6 @@
 title: Analizowanie użycia sieci w aplikacjach platformy UWP
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 195353903ca9f9db8142a6909f3a2a6bab15b4aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822826"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje sieciowe, wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i pobrać wydajności.  
@@ -74,7 +73,7 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
   
 ## <a name="see-also"></a>Zobacz także  
  [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
- [Blog dotyczący programu Visual Studio: Inspektor sieci wprowadzenie do programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Wideo Channel 9: Narzędzia diagnostyczne programu VS — nowy Profiler sieci](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Visual Studio blog: Wprowadzenie do programu Visual Studio, inspektor sieci](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Wideo Channel 9: Narzędzia diagnostyczne VS - nowy Profiler sieci](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
  [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

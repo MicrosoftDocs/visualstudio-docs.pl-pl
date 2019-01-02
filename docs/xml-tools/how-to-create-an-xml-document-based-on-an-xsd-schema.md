@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Tworzenie dokumentu XML na podstawie schematu XSD'
+title: 'Instrukcje: Tworzenie dokumentu XML na podstawie schematu XSD'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
@@ -10,44 +9,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820202"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Porady: Tworzenie dokumentu XML na podstawie schematu XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Instrukcje: Tworzenie dokumentu XML na podstawie schematu XSD
 
-**Generowanie XML próbki** funkcja generuje przykładowy plik XML na podstawie Twojego pliku schematu XML (XSD).
+**Generowanie XML przykładowe** funkcja generuje przykładowy plik XML na podstawie pliku schematu XML (XSD).
 
  Tej opcji można użyć w następujących scenariuszach:
 
--   Aby zrozumieć użycie różne konstrukcje w schemat.
+-   Aby poznać użycie różnych konstrukcji w schemacie.
 
 -   Aby upewnić się, że schemat wykonuje co ma na celu.
 
-**Generowanie XML próbki** funkcja jest dostępna tylko na elementy globalne i wymaga prawidłowego zestawu schematu XML.
+**Generowanie XML przykładowe** funkcja jest dostępna tylko na elementy globalne i wymaga prawidłowego zestawu schematu XML.
 
-Ta funkcja generuje zwykle ważnych dokumentów XML. Jednak jeśli schemat zawiera jeden lub więcej z następujących czynności, próbki mogą być nieprawidłowe:
+Ta funkcja generuje zwykle ważnych dokumentów XML. Jednakże, jeśli schemat zawiera co najmniej jeden z następujących czynności, próbki mogą być nieprawidłowe:
 
 -   `xs:key`, `xs:keyref`, I `xs:unique` ograniczenia tożsamości.
 
--   `xs:pattern` aspekty.
+-   `xs:pattern` zestawy reguł.
 
--   Wyliczenia `xs:QName` typu.
+-   Wyliczenia o `xs:QName` typu.
 
 -   `xs:ENTITY`, `xs:ENTITIES`, i `xs:NOTATION` typów.
 
-Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerowany tylko wtedy, gdy występują wyliczenia w schematu dla tego typu.
+Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerowany tylko wtedy, gdy wyliczenia występują w schematu dla tego typu.
 
-## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Aby wygenerować wystąpienia dokumentu XML na podstawie pliku XSD
+## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Można wygenerować wystąpienia dokumentu XML na podstawie pliku XSD
 
-1.  Postępuj zgodnie z instrukcjami [porady: tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  W [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), kliknij prawym przyciskiem myszy `PurchaseOrder` element globalny. Wybierz **Generowanie przykładowy kod XML**.
+2.  W [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), kliknij prawym przyciskiem myszy `PurchaseOrder` element globalny. Wybierz **wygenerować przykładowy kod XML**.
 
-     Po wybraniu tej opcji, PurchaseOrder. *xml* pliku o następującej treści XML próbki zostanie wygenerowany i otwarty w edytorze XML:
+     Po wybraniu tej opcji, PurchaseOrder. *xml* pliku o następującej zawartości XML przykładowych zostanie wygenerowany i otwarty w edytorze XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -78,4 +77,4 @@ Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerow
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Praca z danych XML](../xml-tools/working-with-xml-data.md)
+- [Praca z danymi XML](../xml-tools/working-with-xml-data.md)

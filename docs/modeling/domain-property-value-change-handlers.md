@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941667"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Alternatywna metoda: obliczane właściwości
+### <a name="alternative-technique-calculated-properties"></a>Alternatywna metoda: Obliczony właściwości
 
 W poprzednim przykładzie pokazano, jak OnValueChanged() może służyć do propagowania wartości z właściwości w jednej domenie. Każda właściwość ma swój własny przechowywanej wartości.
 
@@ -105,7 +104,7 @@ Zamiast poprzedni przykład można ustawić **rodzaj** pole `TextLengthCount` ja
 
 Potencjalną wadą właściwości obliczeniowej jest jednak, że wyrażenie jest obliczane, za każdym razem, gdy wartość jest używana, które mogą stanowić problem z wydajnością. Ponadto jest mało bez OnValueChanging() i OnValueChanged() na obliczonej właściwości.
 
-### <a name="alternative-technique-change-rules"></a>Alternatywna metoda: zmiana reguł
+### <a name="alternative-technique-change-rules"></a>Alternatywna metoda: Zmiany zasad
 
 Jeśli zdefiniujesz ChangeRule, jest ono wykonywane na końcu transakcji, w którym ulega zmianie wartość właściwości.  Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 

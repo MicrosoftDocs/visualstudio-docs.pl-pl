@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ac8f1c1d631e4d5f682fea5e1841e3914241d14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 78a737c953446773c8788875d1924ce21f64f599
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964708"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji Offline programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +68,7 @@ Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 201
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dotfuscator i Analytics Community Edition 5.19.1 (dla wersji Community, Professional i Enterprise programu Visual Studio, zgodnie z zainstalowanym **Windows 7 z dodatkiem SP1** i **systemu Windows Server 2008 R2**) |                                                                                                                                       Jeśli komputer w trybie offline działa **Windows 7 z dodatkiem SP1** lub **systemu Windows Server 2008 R2**, przed zainstalowaniem programu Visual Studio 2015, należy wykonać następujące czynności:<br /><br /> 1.  Konfigurowanie serwera plików lub sieci web do pobierania plików CTL.<br /><br /> 2.    Microsoft automatycznej aktualizacji adres URL przekierowania środowisku bez połączenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaufanych certyfikatów głównych i niedopuszczalne certyfikaty](https://technet.microsoft.com/library/dn265983.aspx) strony w witrynie Microsoft TechNet.                                                                                                                                       |
 |                                                                                  Instalacja zestawu android SDK (poziom interfejsu API)                                                                                   |                                                                        Musi mieć połączenie internetowe, aby zainstalować pakiety zestawu SDK systemu Android (poziom interfejsu API). Jeśli korzystasz z sieci z ograniczeniami, po zainstalowaniu programu Visual Studio muszą zezwalać na dostęp do następujących adresów URL:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Aby uzyskać więcej informacji o tym, jak rozwiązać problemy z ustawieniami serwera proxy, zobacz [niepowodzeniami (Instalacja zestawu Android SDK) za serwerem Proxy instalacji programu Visual Studio 2015](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) wpis w blogu.                                                                         |
-|                             Szablony elementów rozszerzalności programu Visual Studio<br /><br /> Rozszerzenie GitHub dla programu Visual Studio<br /><br /> Narzędzia programu PowerShell dla programu Visual Studio                             | Jeśli nie masz dostępu do Internetu, po zainstalowaniu programu Visual Studio 2015, można użyć specjalnego Kanał informacyjny offline do generowania układu instalacji w trybie offline. **Uwaga:** to specjalne źródło danych zawiera najnowsze aktualizacje programu Visual Studio 2015. <br /><br /> Aby utworzyć specjalne Kanał informacyjny offline, uruchom następujące polecenie: / Layout *dysków:* \VisualStudio2015 /overridefeeduri *adres URL do źródła danych xml*<br /><br /> Na przykład język angielski specjalne Kanał informacyjny offline programu Visual Studio 2015 Enterprise, uruchom:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Aby uzyskać pełną listę adresów URL, które służy do tworzenia specjalnej Kanał informacyjny offline w wybranym języku zobacz w poniższej tabeli. |
+|                             Szablony elementów rozszerzalności programu Visual Studio<br /><br /> Rozszerzenie GitHub dla programu Visual Studio<br /><br /> Narzędzia programu PowerShell dla programu Visual Studio                             | Jeśli nie masz dostępu do Internetu, po zainstalowaniu programu Visual Studio 2015, można użyć specjalnego Kanał informacyjny offline do generowania układu instalacji w trybie offline. **Uwaga:**  To specjalne źródło danych zawiera najnowsze aktualizacje programu Visual Studio 2015. <br /><br /> Aby utworzyć specjalne Kanał informacyjny offline, uruchom następujące polecenie: / Layout *dysków:* \VisualStudio2015 /overridefeeduri *adres URL do źródła danych xml*<br /><br /> Na przykład język angielski specjalne Kanał informacyjny offline programu Visual Studio 2015 Enterprise, uruchom:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Aby uzyskać pełną listę adresów URL, które służy do tworzenia specjalnej Kanał informacyjny offline w wybranym języku zobacz w poniższej tabeli. |
 
  Użyj następujących adresów URL do utworzenia specyficzny dla języka specjalnego Kanał informacyjny offline, zgodnie z opisem w powyższej tabeli.
 
@@ -84,7 +83,7 @@ Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 201
 |        Hiszpański        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
 |        Francuski         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
 |        Włoski        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
-|       japoński        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
+|       Japoński        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
 |        koreański         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
 |        polski         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
 |      Portugalski       | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |

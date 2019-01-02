@@ -1,8 +1,7 @@
 ---
-title: Wskazówki analizowanie zarządzanego kodu pod względem wad kodu | Dokumentacja firmy Microsoft
+title: Przewodnik analizowanie kodu zarządzanego pod względem wad kodu | Dokumentacja firmy Microsoft
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -12,34 +11,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955256"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: Analizowanie zarządzanego kodu dla kodu usterki
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu
 
-W tym przewodniku będziesz analizowanie zarządzanego projektu pod względem wad kodu za pomocą narzędzie do analizy kodu.
+W tym przewodniku będzie analizować zarządzanego projektu pod względem wad kodu za pomocą narzędzia analizy kodu.
 
-Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania ponownie zestawy kod zarządzany .NET dla zgodności z wytycznymi projektowania Microsoft .NET Framework.
+Ten przewodnik przeprowadzi Cię przez proces przy użyciu analizy kodu, aby analizować swoje zestawy kodu zarządzanego na platformie .NET dla zapewnienia zgodności z wytycznymi projektowania Microsoft .NET Framework.
 
-## <a name="create-a-class-library"></a>Tworzenie biblioteki klas
+## <a name="create-a-class-library"></a>Utwórz bibliotekę klas
 
-### <a name="to-create-a-class-library"></a>Do tworzenia biblioteki klas
+### <a name="to-create-a-class-library"></a>Aby utworzyć bibliotekę klas
 
-1. Na **pliku** menu, wybierz **nowy** > **projektu**.
+1. Na **pliku** menu, wybierz **New** > **projektu**.
 
-1. W **nowy projekt** okna dialogowego rozwiń **zainstalowana** > **Visual C#**, a następnie wybierz pozycję **Windows Desktop**.
+1. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** > **Visual C#** , a następnie wybierz **pulpitu Windows**.
 
 1. Wybierz **biblioteki klas (.NET Framework)** szablonu.
 
-1. W **nazwa** polu tekstowym **CodeAnalysisManagedDemo** , a następnie kliknij przycisk **OK**.
+1. W **nazwa** polu tekstowym **CodeAnalysisManagedDemo** a następnie kliknij przycisk **OK**.
 
 1. Po utworzeniu projektu otwórz *Class1.cs* pliku.
 
-1. Zastąp istniejący tekst w Class1.cs następujący kod:
+1. Zastąp istniejący tekst w Class1.cs z następującym kodem:
 
    ```csharp
    using System;
@@ -59,7 +58,7 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 
 ## <a name="analyze-the-project"></a>Analizowanie projektu
 
-### <a name="to-analyze-a-managed-project-for-code-defects"></a>Do analizowania zarządzanego projektu pod względem wad kodu
+### <a name="to-analyze-a-managed-project-for-code-defects"></a>Aby analizować zarządzanych projekt pod względem wad kodu
 
 1. Wybierz projekt CodeAnalysisManagedDemo **Eksploratora rozwiązań**.
 
@@ -69,73 +68,73 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 
 1. Wybierz **analizy kodu** kartę.
 
-1. Upewnij się, że **Włącz analizę kodu podczas kompilacji** jest zaznaczony.
+1. Upewnij się, że **Włącz analizę kodu podczas kompilacji** jest zaznaczone.
 
-1. Z **Uruchom ten zestaw reguł** listy rozwijanej wybierz **Microsoft wszystkie reguły**.
+1. Z **Uruchom ten zestaw reguł** listy rozwijanej wybierz **wszystkie reguły firmy Microsoft**.
 
-1. Na **pliku** menu, kliknij przycisk **zapisać wybrane elementy**, a następnie zamknij na stronach właściwości.
+1. Na **pliku** menu, kliknij przycisk **Zapisz wybrane elementy**, a następnie zamknij na stronach właściwości.
 
 1. Na **kompilacji** menu, kliknij przycisk **kompilacji CodeAnalysisManagedDemo**.
 
-    Ostrzeżenia kompilacji projektu CodeAnalysisManagedDemo są wyświetlane w **listy błędów** i **dane wyjściowe** systemu windows.
+    Ostrzeżenia kompilacji projektu CodeAnalysisManagedDemo są wyświetlane w **lista błędów** i **dane wyjściowe** systemu windows.
 
-## <a name="correct-the-code-analysis-issues"></a>Rozwiąż problemy dotyczące analizy kodu
+## <a name="correct-the-code-analysis-issues"></a>Rozwiązać problemy dotyczące analizy kodu
 
-### <a name="to-correct-code-analysis-rule-violations"></a>Aby rozwiązać naruszeń reguł analizy kodu
+### <a name="to-correct-code-analysis-rule-violations"></a>Aby poprawić naruszeń reguł analizy kodu
 
-1. Na **widoku** menu, wybierz **listy błędów**.
+1. Na **widoku** menu, wybierz **lista błędów**.
 
-    W zależności od wybranego profilu deweloper może być konieczne wskaż **inne okna** na **widoku** menu, a następnie wybierz pozycję **listy błędów**.
+    W zależności od wybranego profilu deweloper może być konieczne wskaż **Windows inne** na **widoku** menu, a następnie wybierz **lista błędów**.
 
 1. W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki**.
 
 1. Rozwiń węzeł właściwości, a następnie otwórz *AssemblyInfo.cs* pliku.
 
-1. Użyj następujących wskazówek, aby naprawić ostrzeżenia:
+1. Skorzystaj z następujących porad, aby poprawić ostrzeżenia:
 
-   [CA1014: Oznacz zestawy atrybutem CLSCompliant](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "pokaz" powinien być oznaczony atrybutem CLSCompliant, a jego wartość powinna mieć wartość true.
+   [CA1014: Oznacz zestawy atrybutem CLSCompliant](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "pokaz" powinien być oznaczony atrybutem CLSCompliant, a jej wartość powinna być prawdziwe.
 
    1. Dodaj kod `using System;` w pliku AssemblyInfo.cs.
 
-   1. Następnie dodaj kod `[assembly: CLSCompliant(true)]` na końcu pliku AssemblyInfo.cs.
+   1. Następnie dodaj ten kod `[assembly: CLSCompliant(true)]` -to-end w pliku AssemblyInfo.cs.
 
-   [CA1032: Implementowanie standardowych konstruktorów wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następujący Konstruktor do tej klasy: demo(String) publiczny
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: demo(String) publiczne
 
    1. Dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo`.
 
-   [CA1032: Implementowanie standardowych konstruktorów wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następujący Konstruktor do tej klasy: Pokaz publiczny (ciąg, wyjątków)
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: Pokaz publiczny (String, wyjątku)
 
    1. Dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo`.
 
-   [CA1032: Implementowanie standardowych konstruktorów wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następujący Konstruktor do tej klasy: chronione pokaz (SerializationInfo, StreamingContext)
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: chronione pokaz (SerializationInfo, StreamingContext)
 
    1. Dodaj kod `using System.Runtime.Serialization;` na początku pliku Class1.cs.
 
-   1. Następnie dodaj konstruktora `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. Następnie dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA1032: Implementowanie standardowych konstruktorów wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następujący Konstruktor do tej klasy: demo() publiczny
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: help.Start() publiczne
 
    1. Dodaj Konstruktor `public demo () : base() { }` do klasy `demo` **.**
 
-   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w nazwie przestrzeni nazw "testCode" przez zmianę na "TestCode".
+   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie nazwę przestrzeni nazw "testCode" przez zmianę na "TestCode".
 
-   1. Zmień wielkość liter w przestrzeni nazw `testCode` do `TestCode`.
+   1. Zmień wielkość liter w wyrazie przestrzeń nazw `testCode` do `TestCode`.
 
    [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie nazwy typu "pokaz" przez zmianę na "Pokaz".
 
    1. Zmień nazwę elementu członkowskiego do `Demo`.
 
-   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w nazwie elementu członkowskiego "elementu" przez zmianę na "Item".
+   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie name "elementu członkowskiego" przez zmianę na "Item".
 
    1. Zmień nazwę elementu członkowskiego do `Item`.
 
-   [CA1710: Identyfikatory powinny mieć poprawny przyrostek](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Zmień nazwę "testCode.demo" do końca w "Wyjątek".
+   [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Zmień nazwę "testCode.demo" w celu w "Exception".
 
-   1. Zmień nazwę klasy i jej konstruktorów `DemoException`.
+   1. Zmień nazwę klasy i jego konstruktorów do `DemoException`.
 
-   [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Podpisz "CodeAnalysisManagedDemo" przy użyciu klucza silnej nazwy.
+   [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Zaloguj się "CodeAnalysisManagedDemo" kluczem silnej nazwy.
 
-   1. Na **projektu** menu, wybierz **CodeAnalysisManagedDemo właściwości**.
+   1. Na **projektu** menu, wybierz **właściwości CodeAnalysisManagedDemo**.
 
       Właściwości projektu są wyświetlane.
 
@@ -143,21 +142,21 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 
    1. Wybierz **Podpisz zestaw** pole wyboru.
 
-   1. W **wybierz plik klucza o nazwie ciąg** listy, wybierz  **\<nowy... >**.
+   1. W **wybierz plik klucza o nazwie ciąg** listy wybierz  **\<nowy... >**.
 
-      **Tworzenie silnej nazwy klucza** zostanie wyświetlone okno dialogowe.
+      **Utwórz klucz silnej nazwy** pojawi się okno dialogowe.
 
    1. W **nazwę pliku klucza**, wpisz TestKey.
 
-   1. Wprowadź hasło, a następnie wybierz pozycję **OK**.
+   1. Wprowadź hasło, a następnie wybierz **OK**.
 
-   1. Na **pliku** menu, wybierz **zapisać wybrane elementy**, a następnie zamknij strony właściwości.
+   1. Na **pliku** menu, wybierz **Zapisz wybrane elementy**, a następnie zamknij na stronach właściwości.
 
-   [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Dodaj atrybut [Serializable] na typ "demonstracją", ponieważ ten typ implementuje interfejs ISerializable.
+   [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Dodaj atrybut [Serializable] do typu "pokaz", ponieważ ten typ implementuje interfejs ISerializable.
 
    1. Dodaj `[Serializable ()]` do klasy atrybutu `demo`.
 
-   Po zakończeniu zmiany pliku Class1.cs powinna wyglądać następująco:
+   Po zakończeniu zmiany pliku Class1.cs powinien wyglądać następująco:
 
    ```csharp
    using System;
@@ -186,16 +185,16 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 
 ### <a name="to-exclude-code-defect-warnings"></a>Aby wyłączyć ostrzeżenia wad kodu
 
-1. Dla każdego z pozostałych ostrzeżeń wykonaj następujące czynności:
+1. Dla każdej z pozostałych ostrzeżenia należy wykonać następujące czynności:
 
-    1. Wybrać ostrzeżenie w **listy błędów**.
+    1. Wybrać ostrzeżenie w **lista błędów**.
 
-    1. Z menu kliknij prawym przyciskiem myszy lub kontekstu wybierz **Pomiń** > **w pliku pominięć**.
+    1. Wybierz z menu kliknij prawym przyciskiem myszy lub kontekst **Pomiń** > **w pliku pominięć**.
 
 1. Skompiluj ponownie projekt.
 
-     Tworzy projekt bez żadnych ostrzeżeń ani błędów.
+     Projekt zostanie skompilowany bez żadnych ostrzeżeń ani błędów.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Analiza kodu dla zarządzanego kodu](../code-quality/code-analysis-for-managed-code-overview.md)
+[Analiza kodu dla kodu zarządzanego](../code-quality/code-analysis-for-managed-code-overview.md)

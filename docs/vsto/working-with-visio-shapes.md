@@ -1,9 +1,6 @@
 ---
-title: Praca z kształtów Visio
-ms.custom: ''
+title: Praca z dokumentami Visio shapes
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,24 +13,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 385b546e812c3772188abf3ee2d1a2767d28eb46
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa78a0b8956b390e48221f7a516c7a41e6f5ced9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942323"
 ---
-# <a name="work-with-visio-shapes"></a>Praca z kształtów Visio
-  Tematy w tej sekcji zawierają procedury krok po kroku i przykładów kodu do pracy z kształtów w projektach pakietu Office przy użyciu modelu obiektów programu Microsoft Office Visio.  
+# <a name="work-with-visio-shapes"></a>Praca z dokumentami Visio shapes
+  Tematy w tej sekcji Obejmij procedury krok po kroku i przykłady kodu za pomocą modelu obiektów programu Microsoft Visio pakietu Office do pracy z kształtów w projektach pakietu Office.  
   
 |Zadanie|Procedura|  
 |----------|---------------|  
-|Dodaj kształty z wzornika do dokumentu programu Visio.|[Porady: programowane Dodawanie kształtów do dokumentu programu Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|  
-|Kopiowanie kształty z jednej strony Visio i wklej je w innej strony.|[Porady: programowane kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|  
+|Dodaj kształty z wzornika do dokumentu programu Visio.|[Instrukcje: Programowe Dodawanie kształtów do dokumentu programu Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|  
+|Kopiowanie kształty z jednej strony programu Visio i wklej je w innej strony.|[Instrukcje: Programowe kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
-  
-  

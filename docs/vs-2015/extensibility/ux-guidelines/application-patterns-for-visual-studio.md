@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0deaad86e5b14bfd0dee4d73c9ceb51916231ff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e4dd4eaeac9c6a818148b2ded7027c8dc15badea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960976"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -166,15 +165,15 @@ ms.locfileid: "53060399"
 
 - **Edytor tekstowy:** Edytor kodu, plików dziennika
 
-- **Powierzchni projektowej:** WPF formularzy projektanta Windows forms
+- **Obszar projektu:** WPF formularzy projektanta Windows forms
 
-- **Edytor stylów okna dialogowego:** projektanta manifestu, właściwości projektu
+- **Edytor stylów okna dialogowego:** Projektant manifestu, właściwości projektu
 
 - **Projektant modeli:** projektanta przepływów pracy, takim jak codemap, diagram architektury, postępu
 
   Istnieje kilka typów innych niż edytora, które również korzystają z dokumentu. Podczas nie edytuje samych dokumentach, muszą one wykonaj standardowych interakcji dla okna dokumentu.
 
-- **Raporty:** IntelliTrace raportu, raport funkcji Hyper-V raportów profilera
+- **Raporty:** Raport funkcji IntelliTrace, funkcji Hyper-V raportu, raport programu profilującego
 
 - **Pulpit nawigacyjny:** Centrum diagnostyki
 
@@ -413,8 +412,8 @@ ms.locfileid: "53060399"
 
 |Mechanizm przełączania|Zalety i właściwego użycia|Wady i nieodpowiednie użycie|
 |-------------------------|------------------------------------|-----------------------------------------|
-|Kontrolki karty|Logiczne grupowanie stron okien dialogowych w powiązane zestawy<br /><br /> Przydatne w przypadku mniej niż pięć (lub liczba kart, które mieszczą się w jednym wierszu w oknie dialogowym) stron pokrewnych formantów w oknie dialogowym<br /><br /> Karta musi być krótki: jeden lub dwa wyrazy, które można łatwo zidentyfikować zawartości<br /><br /> Typowe style okna dialogowego systemu<br /><br /> Przykład: **folder Eksplorator plików > element właściwości**|Wprowadzanie opisowymi etykietami krótki może okazać się trudne<br /><br /> Na ogół nie skalować ostatnie pięć kart w jednym oknie dialogowym<br /><br /> Nieodpowiedni, jeśli masz zbyt wiele kart dla jednego wiersza; Użyj alternatywnych warstwowe techniki<br /><br /> Nie jest rozszerzalna|
-|Nawigacyjny pasek boczny|Proste przełączania urządzenia, które może obsłużyć więcej kategorii niż karty<br /><br /> Niezhierarchizowana lista kategorii (bez hierarchii)<br /><br /> Rozszerzalna<br /><br /> Przykład: **dostosować... > Dodaj — polecenie**|Nie dobrze wykorzystane miejsce w poziomie, jeśli ma mniej niż trzy grup<br /><br /> Zadanie może być lepiej dopasowany do listy rozwijanej|
+|Kontrolki karty|Logiczne grupowanie stron okien dialogowych w powiązane zestawy<br /><br /> Przydatne w przypadku mniej niż pięć (lub liczba kart, które mieszczą się w jednym wierszu w oknie dialogowym) stron pokrewnych formantów w oknie dialogowym<br /><br /> Karta musi być krótki: jeden lub dwa wyrazy, które można łatwo zidentyfikować zawartości<br /><br /> Typowe style okna dialogowego systemu<br /><br /> Przykład: **Folder Eksplorator plików > element właściwości**|Wprowadzanie opisowymi etykietami krótki może okazać się trudne<br /><br /> Na ogół nie skalować ostatnie pięć kart w jednym oknie dialogowym<br /><br /> Nieodpowiedni, jeśli masz zbyt wiele kart dla jednego wiersza; Użyj alternatywnych warstwowe techniki<br /><br /> Nie jest rozszerzalna|
+|Nawigacyjny pasek boczny|Proste przełączania urządzenia, które może obsłużyć więcej kategorii niż karty<br /><br /> Niezhierarchizowana lista kategorii (bez hierarchii)<br /><br /> Rozszerzalna<br /><br /> Przykład: **Dostosowywanie... > Dodaj — polecenie**|Nie dobrze wykorzystane miejsce w poziomie, jeśli ma mniej niż trzy grup<br /><br /> Zadanie może być lepiej dopasowany do listy rozwijanej|
 |Kontrolka drzewa|Umożliwia nieograniczony kategorii<br /><br /> Umożliwia grupowanie i/lub hierarchia kategorii<br /><br /> Rozszerzalna<br /><br /> Przykład: **Narzędzia > Opcje**|Wielokrotnie zagnieżdżone hierarchie mogą powodować nadmierne przewijanie w poziomie<br /><br /> Program Visual Studio zawiera overabundance widoków drzewa|
 |Kreator|Pomoc ukończenie zadania przez przeprowadzi opartego na zadaniach, kolejne kroki. Kreator przedstawia zadania wysokiego poziomu, a poszczególne zespoły reprezentują podzadania wymaganych do zrealizowania całego zadania.<br /><br /> Przydatne, gdy zadanie przekracza granice interfejsu użytkownika, jak po użytkownik przeciwnym razie byłoby trzeba użyć wielu edytory i narzędzi systemu windows do ukończenia zadania<br /><br /> Przydatne, gdy zadanie wymaga rozgałęzianie<br /><br /> Przydatne, gdy zadanie zawiera zależności między krokami<br /><br /> Parametr jest przydatne, gdy kilka podobnych zadań z rozwidlenia decyzji co do przedstawienia w jednym okno dialogowe, aby zmniejszyć liczbę różnych podobne okien dialogowych.|Nieodpowiednie dla dowolnego zadania, które nie wymagają sekwencyjnego przepływu pracy<br /><br /> Użytkownicy mogą stać się przeciążeniu i mylić przez kreatora, za pomocą zbyt wiele kroków<br /><br /> Kreatorzy założenia mają ograniczoną powierzchnię ekranu|
 
@@ -458,11 +457,11 @@ ms.locfileid: "53060399"
 
  Z punktu widzenia przeciągnij i upuść stosuje następujące właściwości dla każdego typu projektu w ramach **Eksploratora rozwiązań**:
 
-- **Na podstawie odwołań projektu:** kluczowy punkt to, że projekt jest przeciąganie wokół odwołanie do elementu w magazynie. Jeśli odwołanie do projektu działa jako źródło dla operacji przenoszenia, go tylko należy usunąć odwołanie do elementu z projektu. Nie element faktycznie można usunąć z dysku twardego. Jeśli działa na podstawie odwołań projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), dodawaj odwołania do oryginalnego elementu źródłowego bez wprowadzania prywatną kopię elementu.
+- **Na podstawie odwołań projektu:** Kluczowym punktem jest, że projekt jest przeciąganie wokół odwołanie do elementu w magazynie. Jeśli odwołanie do projektu działa jako źródło dla operacji przenoszenia, go tylko należy usunąć odwołanie do elementu z projektu. Nie element faktycznie można usunąć z dysku twardego. Jeśli działa na podstawie odwołań projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), dodawaj odwołania do oryginalnego elementu źródłowego bez wprowadzania prywatną kopię elementu.
 
-- **Oparte na katalog projektu:** projekt z punktu widzenia przeciągania i upuszczania, przeciąga wokół elementu fizycznego, a nie odwołanie. Jeśli projekt na podstawie katalogu działa jako źródło dla operacji przenoszenia, powinny kończyć się się usunięcie elementu fizycznego z dysku twardego, a także usunięcie go z projektu. Jeśli działa na poziomie katalogu projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), jego Utwórz kopię elementu źródłowego, w lokalizacji docelowej.
+- **Oparte na katalog projektu:** Z punktu widzenia przeciągania i upuszczania projekt przeciąga wokół elementu fizycznego, a nie odwołanie. Jeśli projekt na podstawie katalogu działa jako źródło dla operacji przenoszenia, powinny kończyć się się usunięcie elementu fizycznego z dysku twardego, a także usunięcie go z projektu. Jeśli działa na poziomie katalogu projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), jego Utwórz kopię elementu źródłowego, w lokalizacji docelowej.
 
-- **Projekt docelowy mieszane:** z punktu widzenia przeciągania i upuszczania, zachowanie tego typu projektu zależy od rodzaju elementu przeciąganie (odwołanie do elementu w magazynie) albo sam element. Poprawne zachowanie elementów fizycznych i odwołania do opisanych powyżej.
+- **Projekt docelowy mieszany:** Z punktu widzenia przeciągania i upuszczania zachowanie tego typu projektu zależy od rodzaju elementu przeciąganie (odwołanie do elementu w magazynie) albo sam element. Poprawne zachowanie elementów fizycznych i odwołania do opisanych powyżej.
 
   Gdyby tylko jeden typ projektu w **Eksploratora rozwiązań**, wyniósłby operacji przeciągania i upuszczania proste. Ponieważ każdy system projektu ma możliwość definiowania zachowanie przeciągnij i upuść, niektóre wytyczne dotyczące (oparte na zachowanie przeciągnij i upuść Eksploratora Windows) powinna znajdować się zapewniają przewidywalne działanie:
 
@@ -496,7 +495,7 @@ ms.locfileid: "53060399"
 #### <a name="reference-based-projects"></a>Projekty oparte na odwołanie
  Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (a także wycinania/kopiowania/wklejania), które należy wykonać oparte na rodzaju źródła elementu i modyfikator klawiszy dla projektów docelowych na podstawie odwołania:
 
-|||Element źródłowy: odwołania/łącze|Element źródłowy: element lub plik systemu fizycznego (CF_HDROP)|
+|||Element źródłowy: Odwołanie/łącze|Element źródłowy: Fizyczny element lub systemu plików (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nie modyfikatora|Akcja|Przenieś|Łącze|
 |Nie modyfikatora|Docelowy|Dodaje odwołanie do oryginalnego elementu|Dodaje odwołanie do oryginalnego elementu|
@@ -527,7 +526,7 @@ ms.locfileid: "53060399"
 #### <a name="directory-based-projects"></a>Projekty oparte na katalog
  Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (a także wycinania/kopiowania/wklejania), które powinny być wykonywane w oparciu o charakter źródło elementu i modyfikator klawiszy, w przypadku projektów opartych na katalog docelowy:
 
-|||Element źródłowy: odwołania/łącze|Element źródłowy: element lub plik systemu fizycznego (CF_HDROP)|
+|||Element źródłowy: Odwołanie/łącze|Element źródłowy: Fizyczny element lub systemu plików (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nie modyfikatora|Akcja|Przenieś|Przenieś|
 |Nie modyfikatora|Docelowy|Kopiuje element do lokalizacji docelowej|Kopiuje element do lokalizacji docelowej|
@@ -554,7 +553,7 @@ ms.locfileid: "53060399"
 #### <a name="mixed-target-projects"></a>Projektów docelowych mieszane
  Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (a także wycinania/kopiowania/wklejania), które powinny być wykonywane w oparciu o charakter naciśnięto dla projektów docelowych mieszane klucze elementów i modyfikator źródła:
 
-|||Element źródłowy: odwołania/łącze|Element źródłowy: element lub plik systemu fizycznego (CF_HDROP)|
+|||Element źródłowy: Odwołanie/łącze|Element źródłowy: Fizyczny element lub systemu plików (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nie modyfikatora|Akcja|Przenieś|Przenieś|
 |Nie modyfikatora|Docelowy|Dodaje odwołanie do oryginalnego elementu|Kopiuje element do lokalizacji docelowej|

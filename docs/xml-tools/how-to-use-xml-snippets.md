@@ -2,7 +2,6 @@
 title: Jak używać fragmentów kodu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
@@ -10,110 +9,110 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 514e3efe56c18288a596d4414512064ed4dcc157
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940735"
 ---
-# <a name="how-to-use-xml-snippets"></a>Porady: użycie XML wstawki kodu programu
+# <a name="how-to-use-xml-snippets"></a>Instrukcje: Używanie fragmentów kodu XML
 
-Można wywołać fragmentów kodu XML za pomocą następujących dwóch poleceń menu skrótów edytora XML. **Wstawić fragment** polecenia wstawia fragment kodu XML w bieżącej pozycji kursora. **z funkcji Otocz przez** polecenia opakowuje fragment kodu XML wokół zaznaczonego tekstu. Każdy fragment kodu XML wyznaczył fragment typów. Typy fragment określają, czy fragment kodu jest dostępna z **wstawić fragment** polecenia **z funkcji Otocz przez** polecenia lub obie.
+Możesz wywołać fragmentów kodu XML za pomocą dwóch poniższych poleceń w menu kontekstowym edytora XML. **Wstaw fragment kodu** polecenia wstawia fragment kodu XML w położeniu kursora. **Otocz** polecenia opakowuje fragment kodu XML wokół zaznaczonego tekstu. Każdy fragment kodu XML został wyznaczony typy fragmentu kodu. Typy fragment określają, czy ten fragment kodu jest dostępna z **Wstaw fragment kodu** polecenia **Otocz** polecenia i / lub.
 
-Po dodaniu fragment kodu XML do edytora wszystkie pola edycji we fragmencie są wyróżnione kolorem żółtym i kursor znajduje się na pierwsze pole można edytować.
+Po dodaniu fragment kodu XML do edytora wszelkie edytowalnego pola we fragmencie są wyróżnione na żółto. Ponadto kursor znajduje się na pierwsze pole można edytować.
 
-## <a name="insert-snippet"></a>Wstawianie fragmentu kodu
+## <a name="insert-snippet"></a>Wstaw fragment kodu
 
-W poniższych procedurach opisano sposób uzyskiwania dostępu do **wstawić fragment** polecenia.
+W poniższych procedurach opisano sposób uzyskiwania dostępu do **Wstaw fragment kodu** polecenia.
 
 > [!NOTE]
-> **Wstawić fragment** polecenia jest również dostępny za pośrednictwem skrótu klawiaturowego (**Ctrl**+**K**, następnie **Ctrl** + **X**).
+> **Wstaw fragment kodu** polecenia jest także dostępny za pomocą skrótu klawiaturowego (**Ctrl**+**K**, następnie **Ctrl** + **X**).
 
-### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Do wstawienia fragmentów kodu z menu skrótów
+### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Aby wstawić fragmentów kodu z menu skrótów
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
-2. Kliknij prawym przyciskiem myszy i wybierz **wstawić fragment**.
+2. Kliknij prawym przyciskiem myszy i wybierz **Wstaw fragment kodu**.
 
    Zostanie wyświetlona lista dostępnych fragmentów kodu XML.
 
-3. Wybierz fragment z listy za pomocą myszy lub wpisując nazwę fragment kodu i naciskając klawisz **kartę** lub **Enter**.
+3. Wybierz fragment listy za pomocą myszy lub wpisując nazwę fragmentu kodu i naciskając klawisz **kartę** lub **Enter**.
 
-### <a name="to-insert-snippets-using-the-intellisense-menu"></a>Do wstawienia fragmentów kodu za pomocą IntelliSense menu
+### <a name="to-insert-snippets-using-the-intellisense-menu"></a>Aby wstawić fragmentów kodu za pomocą menu funkcji IntelliSense
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
-2. Z **Edytuj** menu wskaż **IntelliSense**, a następnie wybierz **wstawić fragment**.
+2. Z **Edytuj** menu wskaż **IntelliSense**, a następnie wybierz pozycję **Wstaw fragment kodu**.
 
    Zostanie wyświetlona lista dostępnych fragmentów kodu XML.
 
-3. Wybierz fragment, wpisując nazwę fragment kodu i naciskając klawisz lub na liście za pomocą myszy **kartę** lub **Enter**.
+3. Wybierz fragment listy za pomocą myszy lub wpisując nazwę fragmentu kodu i naciskając klawisz **kartę** lub **Enter**.
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Do wstawienia fragmentów kodu za pomocą listy całe słowo IntelliSense
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Aby wstawić fragmentów kodu za pośrednictwem listy Dokończ wyraz IntelliSense
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
-2. Rozpocznij wpisywanie fragment kodu XML, który chcesz dodać do pliku. Jeśli jest włączona funkcja automatycznego uzupełniania, zostanie wyświetlona lista całe słowo IntelliSense. Jeśli nie są wyświetlane, naciśnij klawisz **Ctrl**+**miejsca** aby aktywować go.
+2. Rozpocznij wpisywanie fragment kodu XML, który chcesz dodać do pliku. Jeśli jest włączona funkcja automatycznego uzupełniania, zostanie wyświetlona lista Dokończ wyraz IntelliSense. Jeśli nie zostanie wyświetlony, naciśnij klawisz **Ctrl**+**miejsca** go uaktywnić.
 
-3. Fragment kodu XML wybierz z listy całe słowo.
+3. Wybierz fragment kodu XML z listy Dokończ wyraz.
 
-4. Naciśnij klawisz **kartę**, **kartę** do wywołania fragment kodu XML.
+4. Naciśnij klawisz **kartę**, **kartę** do wywoływania fragmencie kodu XML.
 
 > [!NOTE]
-> Mogą wystąpić przypadki, fragment kodu XML nie pobrać wywołania. Na przykład, jeśli podczas próby wstawienia `xs:complexType` element wewnątrz `xs:element` węzła, edytor nie generuje fragment kodu XML. Gdy `xs:complexType` element jest używany wewnątrz `xs:element` węzła, nie są wymagane atrybuty lub podelementów, dlatego edytor nie ma żadnych danych do wstawienia.
+> Można wykluczyć sytuacji podczas wywoływania fragmencie kodu XML nie uzyskać. Na przykład, jeśli podczas próby wstawienia `xs:complexType` element wewnątrz `xs:element` węzła, edytor nie generuje fragmentu kodu XML. Gdy `xs:complexType` elementu jest używana wewnątrz `xs:element` węzła, brak wymaganych atrybutów i dozwolone podelementy, więc edytor nie ma żadnych danych, aby wstawić.
 
-### <a name="to-insert-snippets-using-the-shortcut-name"></a>Do wstawienia fragmentów kodu przy użyciu nazwy skrótu
+### <a name="to-insert-snippets-using-the-shortcut-name"></a>Aby wstawić fragmentów kodu przy użyciu nazwy skrótu
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
 2. Typ `<` w okienku edytora.
 
-3. Naciśnij klawisz **Esc** zamknąć listy całe słowo IntelliSense.
+3. Naciśnij klawisz **Esc** zamknąć lista Dokończ wyraz IntelliSense.
 
-4. Wpisz nazwę fragment kodu, a następnie naciśnij klawisz skrótu **kartę** do wywołania fragment kodu XML.
+4. Wpisz nazwę skrótów fragmentu kodu, a następnie naciśnij klawisz **kartę** do wywoływania fragmencie kodu XML.
 
 ## <a name="surround-with"></a>Otocz przez
 
-W poniższych procedurach opisano sposób uzyskiwania dostępu do **z funkcji Otocz przez** polecenia.
+W poniższych procedurach opisano sposób uzyskiwania dostępu do **Otocz** polecenia.
 
 > [!NOTE]
-> **z funkcji Otocz przez** polecenia jest również dostępny za pośrednictwem skrótu klawiaturowego (**Ctrl**+**K**, następnie **Ctrl** + **S**).
+> **Otocz** polecenia jest także dostępny za pomocą skrótu klawiaturowego (**Ctrl**+**K**, następnie **Ctrl** + **S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Aby korzystać z funkcji Otocz przez z menu kontekstowego
 
-1. Zaznacz tekst, który należy ująć w edytorze XML.
+1. Zaznacz tekst, aby ująć w edytorze XML.
 
-2. Kliknij prawym przyciskiem myszy i wybierz **z funkcji Otocz przez**.
+2. Kliknij prawym przyciskiem myszy i wybierz **Otocz**.
 
-   Zostanie wyświetlona lista dostępnych obudowy z fragmentów kodu XML.
+   Zostanie wyświetlona lista dostępnych otacza przy użyciu fragmentów kodu XML.
 
-3. Wybierz fragment z listy za pomocą myszy lub wpisując nazwę fragment kodu i naciskając klawisz **kartę** lub **Enter**.
+3. Wybierz fragment listy za pomocą myszy lub wpisując nazwę fragmentu kodu i naciskając klawisz **kartę** lub **Enter**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Aby korzystać z funkcji Otocz przez menu IntelliSense
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Aby użyć Otocz menu funkcji IntelliSense
 
-1. Zaznacz tekst, który należy ująć w edytorze XML.
+1. Zaznacz tekst, aby ująć w edytorze XML.
 
-2. Z **Edytuj** menu wskaż **IntelliSense**, a następnie wybierz **z funkcji Otocz przez**.
+2. Z **Edytuj** menu wskaż **IntelliSense**, a następnie wybierz pozycję **Otocz**.
 
-   Zostanie wyświetlona lista dostępnych obudowy z fragmentów kodu XML.
+   Zostanie wyświetlona lista dostępnych otacza przy użyciu fragmentów kodu XML.
 
-3. Wybierz fragment z listy za pomocą myszy lub wpisując nazwę fragment kodu i naciskając klawisz **kartę** lub **Enter**.
+3. Wybierz fragment listy za pomocą myszy lub wpisując nazwę fragmentu kodu i naciskając klawisz **kartę** lub **Enter**.
 
-## <a name="use-xml-snippets"></a>Użyj fragmentów kodu XML
+## <a name="use-xml-snippets"></a>Używanie fragmentów kodu XML
 
-Po wybraniu fragment kodu XML tekst fragment kodu jest wprowadzana automatycznie na pozycji kursora. Wszystkie pola edycji we fragmencie są wyróżnione, a pierwsze pole edycji jest wybierana automatycznie. Aktualnie zaznaczone pole jest opakowany.
+Po wybraniu fragmentu kodu XML, tekst fragment kodu dodaje się automatycznie w położeniu kursora. Wszystkie pola edycji we fragmencie są wyróżnione, a pierwsze pole można edytować jest wybrana automatycznie. Aktualnie wybrane pole jest opakowany.
 
-Po zaznaczeniu pola, możesz wpisać nową wartość dla pola. Naciśnięcie przycisku **kartę** przełączanie po kolei edytowalne pola fragmentu; naciskając klawisz **Shift**+**kartę** przełączanie po kolei je w odwrotnej kolejności. Kliknięcie pola umieszcza kursor w polu, a następnie dwukrotne kliknięcie pola zaznacza go. Jeśli pole zostanie wyróżniona, etykietkę narzędzia mogą być wyświetlane, oferty opis pola.
+Gdy pole jest zaznaczone, możesz wpisać nową wartość dla pola. Naciśnięcie klawisza **kartę** przełączanie po kolei edytowalnego pola fragment kodu; naciśnięcie **Shift**+**kartę** przewijać je w odwrotnej kolejności. Kliknięcie pola umieszcza kursor w polu, a następnie dwukrotne kliknięcie pola zaznacza go. Wyróżnionego pola etykietki narzędzia może być wyświetlany, oferując opis pola.
 
-Można edytować jest tylko pierwsze wystąpienie danego pola. Gdy to pole jest podświetlona, podane są inne wystąpienia tego pola. Po zmianie wartości pola można edytować pola jest zmieniany wszędzie tam, gdzie jest używany we fragmencie.
+Tylko pierwsze wystąpienie określonego pola jest edytowalny. To pole jest wyróżniony, opisano inne wystąpienia tego pola. Po zmianie wartości pola można edytować tego pola jest zmieniany, wszędzie tam, gdzie jest używany w tym fragmencie kodu.
 
-Naciśnięcie przycisku **Enter** lub **Esc** anuluje pola edycji i zwraca edytor na normalny.
+Naciśnięcie klawisza **Enter** lub **Esc** anuluje edytowanie pola i powróci do typowej wartości edytora.
 
-Domyślne kolory pola fragment kodu można edytować, można zmienić, modyfikując **pola fragment kodu** w **czcionki i kolory** okienku **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Domyślne kolory dla pól fragmentu kodu można edytować można zmienić, modyfikując **pole fragmentu kodu** w **czcionki i kolory** okienku **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Fragmentów kodu XML](../xml-tools/xml-snippets.md)
-- [Porady: generowanie fragment kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Porady: tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md)
+- [Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Instrukcje: Tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md)

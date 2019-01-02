@@ -1,9 +1,6 @@
 ---
 title: Dodawanie projektu i szablony elementów projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db53ddce3161097347760026aea16a51f8098519
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c89f38c98047a8fab57317c491c051474995f472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963660"
 ---
 # <a name="add-project-and-project-item-templates"></a>Dodaj projekt oraz szablony elementów projektu
 Podczas tworzenia własnych typów projektu musi udostępniać pomoc techniczną do dodawania nowych projektów i elementów projektu przy użyciu standardu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrated development środowiska (IDE), okno dialogowe. W poniższych tematach omówiono różne techniki dodawanie projektów i elementów projektu.  
@@ -53,10 +50,10 @@ Podczas tworzenia własnych typów projektu musi udostępniać pomoc techniczną
  Wyświetla listę identyfikatorów CatID obiektów, które służą do rozszerzania [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] systemy projektów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Porady: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
  Instrukcje krok po kroku do otwierania elementu wewnętrznie powiązany z określonego edytora dla projektu.  
   
- [Porady: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)  
+ [Instrukcje: Otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)  
  Instrukcje krok po kroku do otwierania Edytora standardowego.  
   
  [Podtypy projektów](../../extensibility/internals/project-subtypes.md)  
