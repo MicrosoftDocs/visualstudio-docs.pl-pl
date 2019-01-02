@@ -1,5 +1,5 @@
 ---
-title: 'Diagramy zależności: Wskazówki'
+title: 'Diagramy zależności: Wytyczne dotyczące'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924426"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 
-Opis architektury aplikacji na wysokim poziomie, tworząc *diagramów zależności* w programie Visual Studio. Upewnij się, że kod pozostaje zgodny z tym projektem, sprawdzanie poprawności kodu za pomocą diagram zależności. Można także dodać sprawdzanie poprawności warstwy w procesie kompilacji. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
+Opis architektury aplikacji na wysokim poziomie, tworząc *diagramów zależności* w programie Visual Studio. Upewnij się, że kod pozostaje zgodny z tym projektem, sprawdzanie poprawności kodu za pomocą diagram zależności. Można także dodać sprawdzanie poprawności warstwy w procesie kompilacji. Zobacz [wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -32,7 +31,7 @@ Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zoba
 
 ## <a name="what-is-a-dependency-diagram"></a>Co to jest diagram zależności?
 
-Przykład diagramu tradycyjna architektura diagram zależności identyfikuje główne składniki lub jednostki organizacyjne projektu i ich współzależności. Wywołuje się, każdy węzeł na diagramie *warstwy*, reprezentuje grupę logiczną przestrzenie nazw, projekty lub inne artefakty. Aby narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do diagramu tradycyjna architektura można zweryfikować, że rzeczywiste zależności w kodzie źródłowym są zgodne z zależności zamierzone, które zostały określone przez. Dokonując weryfikacji część regularnych kompilacji na [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], można upewnić się, że kod programu nadal stosować się do architektury systemu poprzez przyszłe zmiany. Zobacz [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md).
+Przykład diagramu tradycyjna architektura diagram zależności identyfikuje główne składniki lub jednostki organizacyjne projektu i ich współzależności. Wywołuje się, każdy węzeł na diagramie *warstwy*, reprezentuje grupę logiczną przestrzenie nazw, projekty lub inne artefakty. Aby narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do diagramu tradycyjna architektura można zweryfikować, że rzeczywiste zależności w kodzie źródłowym są zgodne z zależności zamierzone, które zostały określone przez. Dokonując weryfikacji część regularnych kompilacji na [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], można upewnić się, że kod programu nadal stosować się do architektury systemu poprzez przyszłe zmiany. Zobacz [diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Jak zaprojektować lub zaktualizuj aplikację przy użyciu diagramów zależności
 
@@ -125,7 +124,7 @@ Jeśli nie jest to możliwe, kod będzie trudniejsze do zmieniają się przez ca
 
 Po uruchomieniu rozwoju nowy projekt lub nowy obszar w nowym projekcie można narysować warstw i zależności w celu identyfikowania głównych składników przed przystąpieniem do tworzenia kodu.
 
--   **Pokaż do zidentyfikowania wzorców architektonicznych** diagramy zależność, jeśli jest to możliwe. Na przykład diagram zależności, opisujący aplikacji pulpitu może obejmować warstw, takich jak prezentacja, logika domeny i Data Store. Diagram zależności, który obejmuje pojedynczej funkcji w aplikacji może być warstw, takich jak Model, widok i kontroler. Aby uzyskać więcej informacji o tych wzorcach, zobacz [wzorców i praktyk: Architektura aplikacji](http://go.microsoft.com/fwlink/?LinkId=145794).
+-   **Pokaż do zidentyfikowania wzorców architektonicznych** diagramy zależność, jeśli jest to możliwe. Na przykład diagram zależności, opisujący aplikacji pulpitu może obejmować warstw, takich jak prezentacja, logika domeny i Data Store. Diagram zależności, który obejmuje pojedynczej funkcji w aplikacji może być warstw, takich jak Model, widok i kontroler. Aby uzyskać więcej informacji o tych wzorcach, zobacz [wzorce i rozwiązania: Architektura aplikacji](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 -   **Tworzenie artefaktu kodu, dla każdej warstwy** takich jak przestrzeń nazw, klasy lub składnika. Ułatwia podążają za kodem i łączenie artefaktów kodu do warstw. Zaraz po utworzeniu każdego artefaktu, połącz go do odpowiedniej warstwy.
 

@@ -1,9 +1,6 @@
 ---
-title: Szczegóły czasu wykonywania kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Szczegóły środowiska uruchomieniowego kontroli źródła | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], runtime details
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b972218258ded1ebf2f9f606927ba351e77afa01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 800d659130354a5dfb7089c3f881c6dd87e48228
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932288"
 ---
-# <a name="source-control-runtime-details"></a>Szczegóły czasu wykonywania kontroli źródła
-Projekt zostanie dodany do kontroli źródła, gdy użytkownik dodaje plik do projektu do kontroli źródła, albo przez kontroler automatyzacji, takich jak kreatora. Projekt nie określa dla siebie jest pod kontrolą źródła. obsługuje kontroli źródła, ale należy je dodać ręcznie do niego.  
+# <a name="source-control-runtime-details"></a>Szczegóły środowiska uruchomieniowego kontroli kodu źródłowego
+Projekt jest dodawany do kontroli źródła, gdy użytkownik dodaje plik w projekcie do kontroli źródła lub za pośrednictwem kontroler automatyzacji, takie jak kreatora. Projekt nie określa wykorzystywany jest pod kontrolą źródła. obsługuje kontroli źródła, ale należy ręcznie dodać do niego.  
   
 ## <a name="registering-with-a-source-control-package"></a>Rejestrowanie przy użyciu pakietu kontroli źródła  
- Gdy plik projektu zostanie dodany do kontroli źródła, środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> zapewnienie cztery nieprzezroczyste ciągów, które są używane jako plików cookie przez system kontroli źródła. Przechowuj te ciągi w pliku projektu. Te ciągi powinny zostać przekazane do Stub kontroli źródła (składnika programu Visual Studio, która zarządza pakietów kontroli źródła) uruchamianie projektu typu przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>. To z kolei ładuje pakiet kontroli odpowiednie źródłowe i przekazuje wywołanie jej implementacja `IVsSccManager2::RegisterSccProject`.  
+ Gdy plik w projekcie zostanie dodany do kontroli źródła, środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> zapewnienie cztery nieprzezroczyste ciągów, które są używane jako plików cookie przez system kontroli źródła. Store tych ciągów w pliku projektu. Te ciągi powinien zostać przekazany do klasy zastępczej kontroli źródła (składnika programu Visual Studio, który zarządza pakietów kontroli kodu źródłowego) przy uruchamianiu tego typu projektu, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>. To z kolei ładuje pakiet kontroli odpowiednie źródłowe i przekazuje wywołanie do jego implementacja obiektu `IVsSccManager2::RegisterSccProject`.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>   

@@ -1,9 +1,6 @@
 ---
 title: Kody błędów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931976"
 ---
 # <a name="error-codes"></a>Kody błędów
 Po powrocie z funkcji API wtyczki kontroli źródła wystąpił błąd oczekuje się jedną z następujących kodów błędów. Wszystkie błędy są negatywne, ostrzeżenia i kody błędów informacyjny dodatnia, i sukcesu ma wartość 0.  
@@ -64,7 +61,7 @@ Po powrocie z funkcji API wtyczki kontroli źródła wystąpił błąd oczekuje 
 |`SCC_E_FILESYNTAXERR`|-27|Błąd składniowy w pliku.|  
 |`SCC_E_FILENOTEXIST`|-28|Błąd, plik lokalny nie istnieje.|  
 |`SCC_E_CONNECTIONFAILURE`|-29|Błąd: Wystąpił błąd połączenia.|  
-|`SCC_E_UNKNOWNERROR`|-30|Wystąpił nieznany błąd.|  
+|`SCC_E_UNKNOWNERROR`|-30|Nieznany błąd.|  
 |`SCC_E_BACKGROUNDGETINPROGRESS`|-31|Operacja pobierania w tle jest obecnie w toku.|  
   
 ## <a name="macros-provided-for-quick-checking"></a>Makra przewidziane szybkie sprawdzanie  

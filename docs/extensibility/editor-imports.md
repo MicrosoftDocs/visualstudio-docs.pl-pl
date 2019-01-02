@@ -1,9 +1,6 @@
 ---
 title: Importy edytora | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893934"
 ---
 # <a name="editor-imports"></a>Importy edytora
 Można zaimportować szereg usług edytora, fabryk i brokerzy, umożliwiające rozszerzenie z różnymi rodzajami dostępu do podstawowy edytor. Na przykład można importować <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> zapewnienie użytkownikowi <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> dla danego typu zawartości. (To navigator pozwala wykonywać różne rodzaje wyszukiwania dla bufora tekstowego.)  
@@ -45,19 +42,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Aby uzyskać więcej przykładów użycia importów zobacz następujące instruktaże:  
   
- [Przewodnik: Tworzenie marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Przewodnik: Utwórz na marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Wskazówki: Dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Przewodnik: Dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [Przewodnik: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)  
   
- [Instruktażu: Etykietek narzędzi Szybkieinfo ekran](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Przewodnik: Wyświetlanie uzupełniania](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Przewodnik: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Przewodnik: Wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [Przewodnik: Wyświetl sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="import-the-service-provider"></a>Importuj dostawcę usług  
  Możesz również zaimportować <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (które można znaleźć w zestawie Microsoft.VisualStudio.Shell.Immutable.10.0) w taki sam sposób, aby uzyskać dostęp do usług Visual Studio:  
@@ -67,12 +64,12 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Zobacz [Instruktaż: dostęp do obiektu DTE z rozszerzenia edytora](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Aby uzyskać więcej informacji.  
+ Zobacz [instruktażu: Dostęp do obiektu DTE z rozszerzenia edytora](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Aby uzyskać więcej informacji.  
   
 ## <a name="services"></a>Usługi  
  Edytor usługi są ogólnie pojedynczych jednostek, świadczenia usług, które są współużytkowane przez wiele składników.  
   
-|{1&gt;Importuj&lt;1}|Zawiera|  
+|Import|Zawiera|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Relacja między rozszerzeniami plików i <xref:Microsoft.VisualStudio.Utilities.IContentType> obiektów.|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Kolekcja <xref:Microsoft.VisualStudio.Utilities.IContentType> obiektów.|  
@@ -114,7 +111,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Pozostałe Importy  
  Fabryki dostawców i brokerów są zwykle jednostek, które mogą mieć wiele wystąpień w wielu składników.  
   
-|{1&gt;Importuj&lt;1}|Zawiera|  
+|Import|Zawiera|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> Typu <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) dla podanego buforu.|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Moduł tagujący znacznika tekstu ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>).|  

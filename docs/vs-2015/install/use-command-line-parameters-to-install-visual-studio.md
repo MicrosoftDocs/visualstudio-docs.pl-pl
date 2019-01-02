@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e84d9d7bde30ab781da2f135c94baf74b697e567
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e81e9f7fad5976ad853254e04289d89d09b87ac6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922186"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +62,7 @@ Po zainstalowaniu programu Visual Studio 2015 w wierszu polecenia można użyć 
 |**/ Repair**|Naprawia program Visual Studio.|
 |**/ SuppressRefreshPrompt**|Zapobiega wyświetlaniu dostępne okno dialogowe aktualizacji w Kreatorze instalacji, w związku z tym, Kreator instalacji automatycznie zaakceptuje wszystkie wymagane lub zalecane zaktualizowane wersje.|
 |**/u**<br /><br /> **/ Uninstall**|Odinstalowuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|**/ Uninstall/Force**<br /><br /> **/u/Force**|Odinstalowuje program Visual Studio i wszystkie funkcje, które są współużytkowane z innymi produktami. **Ostrzeżenie:** użycie tego parametru, inne produkty, które są zainstalowane na tym samym komputerze mogą przestać działać poprawnie.|
+|**/ Uninstall/Force**<br /><br /> **/u/Force**|Odinstalowuje program Visual Studio i wszystkie funkcje, które są współużytkowane z innymi produktami. **Ostrzeżenie:**  Jeśli użyto tego parametru, inne produkty zainstalowane na tym samym komputerze mogą nie działać poprawnie.|
 
 ## <a name="see-also"></a>Zobacz też
  [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)

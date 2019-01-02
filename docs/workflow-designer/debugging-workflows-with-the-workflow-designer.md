@@ -3,7 +3,6 @@ title: Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -13,38 +12,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923432"
 ---
-# <a name="debug-workflows-with-the-workflow-designer"></a>Debugowania przepływów pracy za pomocą projektanta przepływów pracy
+# <a name="debug-workflows-with-the-workflow-designer"></a>Debugowanie przepływów pracy za pomocą projektanta przepływów pracy
 
-**Projektanta przepływów pracy** umożliwia debugowanie przepływów pracy i działań niestandardowych. Proces i zachowanie są podobne do elementu domyślny debuger programu Visual Studio.
+**Projektanta przepływów pracy** umożliwia debugowanie przepływów pracy i działania niestandardowe. Ten proces i zachowania są podobne do, domyślny debuger programu Visual Studio.
 
-## <a name="invoke-the-workflow-debugger"></a>Wywoływanie debugger przepływu pracy
+## <a name="invoke-the-workflow-debugger"></a>Wywoływanie debugera przepływu pracy
 
-Ogólnie rzecz biorąc można debugowania przepływów pracy, tak samo, jak debugować programów napisanych w innych językach programowania Visual Studio. Debuger przepływu pracy można uruchomić w następujący sposób:
+Ogólnie rzecz biorąc należy debugowania przepływów pracy, tak samo, jak można debugować programy napisane w różnych językach programowania Visual Studio. Można uruchomić debugera przepływu pracy, w następujący sposób:
 
-- Wybierz **dołączyć do procesu** na **debugowania** menu, aby wybrać uruchomionego procesu hosta dla swojego wystąpienia przepływu pracy. Ta procedura jest taka sama jak dołączanie do procesu hosta w kodzie zarządzanym.
+- Wybierz **dołączyć do procesu** na **debugowania** menu, aby wybrać uruchomionego procesu hosta dla wystąpienia przepływu pracy. Ta procedura jest taka sama jak dołączanie do procesu hosta w kodzie zarządzanym.
 
-- Naciśnij klawisz **F5** uruchomione wystąpienie przepływu pracy lub kontynuować działanie po został trafiony punkt przerwania.
+- Naciśnij klawisz **F5** uruchomione wystąpienie przepływu pracy lub będą nadal działać po został trafiony punkt przerwania.
 
-- Użyj zdalnego debugowania. Informacje na temat używania zdalnego debugowania, zobacz [porady: Włączanie debugowania zdalnego](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
+- Użyj zdalnego debugowania. Aby uzyskać informacje na temat korzystania z debugowania zdalnego, zobacz [jak: Włączanie debugowania zdalnego](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
 
    > [!NOTE]
-   > Jeśli aplikacja przepływu pracy jest przeznaczony dla x86 architektury jest obsługiwany na maszynie z systemem 64-bitowym systemie operacyjnym, a następnie zdalne debugowanie nie będzie działać, chyba że Visual Studio jest zainstalowany na zdalnym komputerze lub element docelowy dla aplikacji przepływu pracy jest zmieniana na  **Wszelkie Procesora**.
+   > Jeśli aplikacja przepływu pracy jest przeznaczony dla x86 architektury, która jest hostowana na maszynie z systemem 64-bitowym systemie operacyjnym, a następnie zdalne debugowanie nie będzie działać, chyba że program Visual Studio jest zainstalowany na komputerze zdalnym lub obiekt docelowy dla aplikacji przepływu pracy jest zmieniana na  **Dowolny procesor CPU**.
 
-## <a name="step-through-code"></a>Krokowo kodu
+## <a name="step-through-code"></a>Przejść przez kod
 
-- **Krok w**: Wkrocz do działania przez naciśnięcie przycisku **F11**. Kroki debugera do dowolnego obsługi, który jest zdefiniowany. Jeśli obsługa nie jest zdefiniowana, Przekrocz nad działania lub z działań złożonych, które zawierają inne działania, Wkrocz pierwszy wykonywanego działania.
+- **Krok**: Krok po kroku do działania, naciskając klawisz **F11**. Debuger nie wchodzi do dowolnej procedury obsługi, który jest zdefiniowany. Jeśli żadna procedura obsługi nie jest zdefiniowany, Przekrocz działania lub za pomocą złożonych działań, które zawierają inne działania, wkroczenia do pierwszego działania wykonywania.
 
-- **Limit krok:** wychodzenia z działania, naciskając klawisz **Shift**+**F11**. Wykonywanie krok po kroku, poza działanie uruchamia bieżące działanie i jego element równorzędny działania do zakończenia. Debuger następnie dzieli na nadrzędnego bieżącego działania. Przy przechodzeniu z obsługi kodu, debuger dzieli się na działania, z którym jest skojarzony program obsługi.
+- **Wyjdź:** Wyjdź z działania, naciskając klawisz **Shift**+**F11**. Przechodzenie krok po kroku, poza działanie uruchamia bieżące działanie i jego element równorzędny działania ukończone. Debuger jest następnie przerywa w nadrzędnego bieżącego działania. Przy przechodzeniu od obsługi kodu, debuger przerywa na działaniu, z którą jest skojarzony program obsługi.
 
-- **Step Over**: Przekrocz działania przez naciśnięcie przycisku **F10**. Przy przechodzeniu przez działanie złożone, debuger dzieli na pierwszy element podrzędny wykonywalnego działania złożonego. Przy przechodzeniu przez z systemem innym niż złożone, takich jak <xref:System.Activities.Statements.Assign> działania, debuger wykonuje działanie i jego skojarzony programów obsługi i podziału na następne działanie. Działania, która jest wykonywana w przypadku ostatniego działania podrzędne działania złożonego, następnie, po wykonaniu debuger dzieli na działania nadrzędnego.
+- **Przekrocz nad**: Przekrocz nad działania, naciskając klawisz **F10**. Przy przechodzeniu przez działanie złożone, debuger przerywa na pierwszy element podrzędny wykonywalnego działanie złożone. Przy przechodzeniu przez inne niż złożone, takich jak <xref:System.Activities.Statements.Assign> działania, debuger wykonuje działanie i jego związanymi obsługami i przerw na następne działanie. Jeśli działania, który jest wykonywany jest ostatniego działania podrzędne działania złożonego, następnie, po wykonaniu debuger przerywa na działanie nadrzędne.
 
-## <a name="debug-with-f5"></a>Debugowanie przy użyciu F5
+## <a name="debug-with-f5"></a>Debugowanie za pomocą F5
 
-Jeśli tworzysz aplikację konsoli przepływu pracy, wystarczy nacisnąć klawisz **F5** aby rozpocząć debugowanie do aplikacji i przepływ pracy. Jeśli tworzysz Biblioteka działań samodzielnie, należy określić aplikacji hosta wykonywalny jako projekt startowy. Aby ustawić projekt startowy w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu hosta i wybierz **Ustaw jako projekt startowy**.
+Jeśli tworzysz aplikację konsoli przepływu pracy, po prostu nacisnąć skrót **F5** aby rozpocząć debugowanie w aplikacji sieci Web i przepływ pracy. Jeśli tworzysz biblioteki działań samodzielnie, należy określić aplikację hosta wykonywalny jako projekt startowy. Aby ustawić projekt startowy w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu, hosta i wybierz **Ustaw jako projekt startowy**.

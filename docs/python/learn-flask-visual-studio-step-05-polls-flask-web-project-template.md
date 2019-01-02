@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności funkcje szablonów projektu sieci Web Flask ankiety i projektu sieci Web Flask/Jade ankiety.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5938bceeb3dc7393437f44102c21d1ef16c45b63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923799"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5. Użyj szablonu projektu sieci Web Flask sond
 
-**Poprzedni krok: [użyj pełnego szablonu projektu sieci Web Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Poprzedniego kroku: [Pełny szablon projektu sieci Web Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Po zrozumieniu szablon "Projekt sieci Web Flask" Visual Studio teraz zapoznanie się z trzeciej szablonu Flask "Sond Flask projektu sieci Web", która opiera się na tej samej bazy kodu.
 
@@ -36,7 +35,7 @@ W tym kroku dowiesz się, jak:
 
 Visual Studio udostępnia również szablon "Projekt sieci Web Flask/Jade sond", która wytwarza identyczną aplikację, ale używa aparatu tworzenia szablonów Jinja Jade rozszerzenia. Aby uzyskać więcej informacji, zobacz [krok 4 — szablon projektu sieci Web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>Krok 1 z 5: Tworzenie projektu
+## <a name="step-5-1-create-the-project"></a>Krok 1 z 5 Utwórz projekt
 
 1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **LearningFlask** rozwiązanie utworzone we wcześniejszej części tego samouczka, a następnie wybierz pozycję **Dodaj**  >   **Nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
 
@@ -76,7 +75,7 @@ Visual Studio udostępnia również szablon "Projekt sieci Web Flask/Jade sond",
 
 Wspomniane wcześniej. Większość co to jest projekt utworzony z szablonu "Projekt sieci Web Flask sond" (i szablonów "Projekt sieci Web Flask/Jade sond") należy się zapoznać, jeśli zostały przedstawione z szablonów projektów w programie Visual Studio. Dodatkowe kroki w tym artykule podsumowanie bardziej znaczące zmiany i uzupełnienia, a mianowicie modeli danych i dodatkowe widoki.
 
-## <a name="step-5-2-understand-the-data-models"></a>Krok 5 — 2: omówienie modeli danych
+## <a name="step-5-2-understand-the-data-models"></a>Krok 2 z 5 Zrozumienie modeli danych
 
 Modele danych dla aplikacji są klasy języka Python o nazwie sondowania i wyboru, które są zdefiniowane w *modeli /\_\_init\_\_.py*. Sondowaniu reprezentuje zapytania, dla którego kolekcję wystąpień wyboru reprezentują dostępne odpowiedzi. Sondowaniu przechowuje także całkowita liczba głosów (dla dowolnej), a metoda, aby obliczyć statystyki, które są używane do generowania widoków:
 
@@ -112,7 +111,7 @@ class Choice(object):
 
 Te modele danych są ogólne elementy abstrakcji, umożliwiające widoków aplikacji, aby pracować z różnego rodzaju kopii magazyny danych, które są opisane w następnym kroku.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 5 — 3: omówienie tworzenie kopii zapasowych magazynów danych
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 3 z 5 Zrozumienie tworzenie kopii zapasowych magazynów danych
 
 Aplikacja utworzona przez szablon "Projekt sieci Web Flask sond" można uruchomić względem magazynu danych w pamięci, usługa Azure table storage lub bazie danych Mongo DB.
 
@@ -234,9 +233,9 @@ Wywołanie `repository.add_sample_polls()` kończy się w jednym z konkretnym `R
 
 Po zakończeniu tego procesu, `redirect('/')` instrukcji w `seed` metoda wraca do strony głównej. Ponieważ `repository.get_polls` teraz zwraca obiekt danych warunkowego znaczniki *templates\index.html* teraz renderuje tabelę zawierającą ankiety.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pytanie: Jak jeden dodaje nowe sonduje usługę do aplikacji?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pytanie: Jak jeden dodać nowe sonduje usługę do aplikacji?
 
-Odpowiedź: Aplikacji, zgodnie z postanowieniami przy użyciu szablonu projektu nie zawiera funkcji do dodawania lub edytowania ankiety. Możesz zmodyfikować *models\samples.json* Aby utworzyć nowe dane inicjowania, ale oznacza to resetowanie magazynu danych. Aby zaimplementować funkcje edycji, musisz rozszerzyć `Repository` interfejsu klasy za pomocą metod, aby utworzyć niezbędne `Choice` i `Poll` wystąpień, implementować interfejs użytkownika w dodatkowych stron, które korzystają z tych metod.
+Odpowiedź: Aplikacja, zgodnie z postanowieniami przy użyciu szablonu projektu nie zawiera funkcji do dodawania lub edytowania ankiety. Możesz zmodyfikować *models\samples.json* Aby utworzyć nowe dane inicjowania, ale oznacza to resetowanie magazynu danych. Aby zaimplementować funkcje edycji, musisz rozszerzyć `Repository` interfejsu klasy za pomocą metod, aby utworzyć niezbędne `Choice` i `Poll` wystąpień, implementować interfejs użytkownika w dodatkowych stron, które korzystają z tych metod.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5 — 4: Omówienie widoków szczegółów i wyniki sondowania
 
@@ -348,7 +347,7 @@ def results(key):
 ## <a name="next-steps"></a>Następne kroki
 
 > [!Note]
-> Jeśli do kontroli źródła w toku w tym samouczku został zostały zatwierdzanie rozwiązania programu Visual Studio, teraz jest dobry moment, aby wykonać inną zatwierdzenia. Rozwiązanie powinno pasuje do kodu źródłowego samouczek, w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — platformy flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+> Jeśli do kontroli źródła w toku w tym samouczku został zostały zatwierdzanie rozwiązania programu Visual Studio, teraz jest dobry moment, aby wykonać inną zatwierdzenia. Rozwiązania powinny odpowiadać kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — platformy flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
 Teraz zostały zbadane materiałami szablony "Pusty projekt sieci Web Flask", "Projekt sieci Web Flask [/Jade]" i "Sond projektu sieci Web Flask [/Jade]" w programie Visual Studio. Wiesz już, podstawy Flask, takich jak routing i korzystanie z widoków i szablonów i zostały już, jak używać tworzenie kopii zapasowych magazynów danych. Teraz można rozpocząć pracę w aplikacji sieci web własne z dowolną widoki i modele, które są potrzebne.
 

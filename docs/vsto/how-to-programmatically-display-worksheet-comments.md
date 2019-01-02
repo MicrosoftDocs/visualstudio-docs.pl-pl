@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane wyświetlanie komentarzy do arkusza'
-ms.custom: ''
+title: 'Instrukcje: Programowe wyświetlanie komentarzy do arkusza'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,26 +13,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f4875e75562d9fa1f6d9cd4982ae2148e35a1c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c246eae0465c64598aae1191c4053f8ba266b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831566"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>Porady: programowane wyświetlanie komentarzy do arkusza
-  Można programowo pokazywać i ukrywać komentarzy w arkuszach programu Microsoft Office Excel.  
+# <a name="how-to-programmatically-display-worksheet-comments"></a>Instrukcje: Programowe wyświetlanie komentarzy do arkusza
+  Można programowo pokazywanie i ukrywanie komentarzy w arkuszach programu Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="to-display-all-comments-on-a-worksheet-in-a-document-level-customization"></a>Aby wyświetlić wszystkie komentarze do arkusza w dostosowaniu poziomie dokumentu  
+## <a name="to-display-all-comments-on-a-worksheet-in-a-document-level-customization"></a>Aby wyświetlić wszystkie komentarze w skoroszycie w dostosowaniu na poziomie dokumentu  
   
-1.  Ustaw <xref:Microsoft.Office.Interop.Excel.Comment.Visible%2A> właściwości **true** Jeśli chcesz wyświetlić komentarze; w przeciwnym razie **false**. Ten kod muszą znajdować się w klasie arkusza nie znajduje się w `ThisWorkbook` klasy.  
+1.  Ustaw <xref:Microsoft.Office.Interop.Excel.Comment.Visible%2A> właściwości **true** Jeśli chcesz wyświetlić komentarze; w przeciwnym razie **false**. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#31)]  
   
-## <a name="to-display-all-comments-on-a-worksheet-in-an-application-level-vsto-add-in"></a>Aby wyświetlić wszystkie komentarze do arkusza w dodatku VSTO poziomie aplikacji  
+## <a name="to-display-all-comments-on-a-worksheet-in-an-application-level-vsto-add-in"></a>Aby wyświetlić wszystkie komentarze w skoroszycie w dodatku narzędzi VSTO dla dodatku poziomu aplikacji  
   
 1.  Ustaw <xref:Microsoft.Office.Interop.Excel.Comment.Visible%2A> właściwości **true** Jeśli chcesz wyświetlić komentarze; w przeciwnym razie **false**.  
   
@@ -44,7 +41,5 @@ ms.locfileid: "35257689"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Porady: programowane Dodawanie i usuwanie komentarzy do arkusza](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
- [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
-  
-  
+ [Instrukcje: Programowe Dodawanie i usuwanie komentarzy do arkusza](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
+ [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)  

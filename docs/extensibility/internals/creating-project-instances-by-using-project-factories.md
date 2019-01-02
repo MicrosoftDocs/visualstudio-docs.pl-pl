@@ -1,9 +1,6 @@
 ---
 title: Tworzenie wystąpień projektów przy użyciu fabryk projektów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project factories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938125"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektów przy użyciu fabryk projektów
 Typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyj *fabryka projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do fabryki klas standard dla obiektów COM, cocreatable. Obiekty projektu nie są jednak cocreatable; mogą one można tworzyć tylko za pomocą fabryki projektu.  

@@ -1,7 +1,6 @@
 ---
 title: Często zadawane pytania dotyczące debugowania migawek | Dokumentacja firmy Microsoft
 ms.date: 11/07/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - debugger
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b35746a7b0d639d4c954c8ef1a5221973e1abc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: ce6f242486afd82508e60d2e20c053735e61d6f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924166"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
 

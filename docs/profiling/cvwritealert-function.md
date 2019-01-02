@@ -1,8 +1,6 @@
 ---
-title: Cvwritealert — funkcja | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Funkcja CvWriteAlert | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 743cec7c632bbfca7faf3659ffba5b337553ecee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921996"
 ---
 # <a name="cvwritealert-function"></a>Cvwritealert — funkcja
 Zapisuje plik śledzenia Concurrency Visualizer alertu.  
@@ -61,20 +59,20 @@ HRESULT CvWriteAlertVA(
  Lista argumentów.  
   
  `pMarkerSeries`  
- Kontekst serii prawidłowy znacznik. Nie może mieć wartości NULL.  
+ Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.  
   
  `pMessage`  
- Ciąg formatu wiadomości. Nie może mieć wartości NULL.  
+ Ciąg formatu komunikatów. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość S_OK, gdy wiadomość zostanie pomyślnie zapisany. Kod błędu w przypadku, gdy było żadnych błędów. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
+ S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
- **Unicode:** CvWriteAlertW, CvWriteAlertVW  
+ **Unicode:** Cvwritealertw —, cvwritealertvw —  
   
- **ANSI:** CvWriteAlertA, CvWriteAlertVA  
+ **ANSI:** Cvwritealerta —, cvwritealertva —  
   
 ## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

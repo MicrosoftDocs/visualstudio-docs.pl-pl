@@ -3,7 +3,6 @@ title: Instalowanie obsługi języka Python
 description: Jak zainstalować narzędzia Python Tools for Visual Studio (PTVS) w programie Visual Studio 2017, 2015, 2013, 2012 i 2010, łącznie z opcjami i lokalizacje instalacji.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e306bffe8f2cd59332f367822cd90b54b44b7635
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3c59aee52ca547b4d209870516beb359d7138366
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961754"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio na Windows
 
@@ -60,7 +59,7 @@ Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instala
 
     | Opcja | Opis |
     | --- | --- |
-    | Dystrybucje języka Python | Wybierz dowolną kombinację wariantów 32-bitowych i 64-bitowe języka Python 2, 3 języka Python, anaconda2, wersja i Anaconda3 dystrybucji, które zamierzasz pracować. Każde zawiera obsługę dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, to w szczególności platforma analizy otwartej obsługi danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można zwrócić do Instalatora programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.)  **Uwaga**: po zainstalowaniu dystrybucji poza Instalatora programu Visual Studio, czy nie ma potrzeby Sprawdź tutaj opcji równoważne. Program Visual Studio automatycznie wykrywa istniejącej instalacji środowiska Python. Zobacz [okna środowiska Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Ponadto jeśli nowszą wersję języka Python jest dostępny od przedstawionego w oknie Instalatora tej wersji można zainstalować oddzielnie i Visual Studio wykryje go. |
+    | Dystrybucje języka Python | Wybierz dowolną kombinację wariantów 32-bitowych i 64-bitowe języka Python 2, 3 języka Python, anaconda2, wersja i Anaconda3 dystrybucji, które zamierzasz pracować. Każde zawiera obsługę dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, to w szczególności platforma analizy otwartej obsługi danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można zwrócić do Instalatora programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.)  **Uwaga**: Jeśli po zainstalowaniu dystrybucji poza Instalatora programu Visual Studio, nie ma potrzeby do sprawdzenia opcji równoważne w tym miejscu. Program Visual Studio automatycznie wykrywa istniejącej instalacji środowiska Python. Zobacz [okna środowiska Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Ponadto jeśli nowszą wersję języka Python jest dostępny od przedstawionego w oknie Instalatora tej wersji można zainstalować oddzielnie i Visual Studio wykryje go. |
     | **Obsługa szablonów Cookiecutter** | Instaluje Cookiecutter graficznego interfejsu użytkownika, aby odnaleźć szablonów, wprowadź opcje szablonu i tworzenie projektów i plików. Zobacz [używanie rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Obsługa sieci web w języku Python** | Instaluje narzędzia do tworzenia aplikacji internetowych, w tym HTML, CSS i JavaScript, edycję, wraz z szablonów dla projektów przy użyciu platformy Bottle, Flask i Django. Zobacz [internetowa szablony projektów w języku Python](python-web-application-project-templates.md). |
     | **Obsługa IoT w języku Python** | Obsługuje rozwój systemu Windows IoT Core przy użyciu języka Python. |
@@ -83,7 +82,7 @@ Jeśli napotkasz problemy, instalowanie i uruchamianie języka Python w programi
 - Użyj [ **naprawy** ](../install/repair-visual-studio.md) opcji w Instalatorze programu Visual Studio.
 - Naprawić lub zainstalować ponownie języka Python za pomocą **ustawienia** > **aplikacje i funkcje** w Windows.
 
-**Przykład błędu**: nie można uruchomić procesu interaktywnego: System.ComponentModel.Win32Exception (0x80004005): nieznany błąd (0xc0000135) Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
+**Przykład błędu**: Nie można uruchomić procesu interaktywnego: System.ComponentModel.Win32Exception (0x80004005): Nieznany błąd (0xc0000135) Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -134,4 +133,3 @@ gdzie:
 ### <a name="user-specific-installations-15-and-earlier"></a>Instalacje specyficzne dla użytkownika (1,5 raza więcej i starszych)
 
 Narzędzia Python Tools for Visual Studio w wersji 1.5 i starszych dozwolone instalacji dla bieżącego użytkownika, w którym to przypadku ścieżka instalacji jest *%LocalAppData%\Microsoft\VisualStudio\\narzędzia \Extensions\Microsoft\Python < VS_ver > dla programu Visual Studio\\< PTVS_ver >* gdzie &lt;VS_ver&gt; i &lt;PTVS_ver&gt; są takie same, jak opisano powyżej.
-

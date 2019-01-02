@@ -1,9 +1,6 @@
 ---
-title: Tworzenie kolumn witryn, typów zawartości i list dla SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Tworzenie kolumn witryn, typów zawartości oraz list dla SharePoint | Dokumentacja firmy Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.ContentTypeSetting
@@ -21,37 +18,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9a5340b7fc5b36da7fe2a46175571a569fdf38e
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931950"
 ---
-# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Tworzenie kolumn witryn, typów zawartości i list dla SharePoint
-  Program Visual Studio udostępnia szablony elementów projektu dla wielu różnych podstawowych elementów programu SharePoint, w tym *wymieniono* i *typy zawartości*, które można zastosować kolumny witryny (lub  *pola*). Nowych Designer dla typów zawartości oraz list należy tworzenia tych elementów jest łatwiejsze niż kiedykolwiek wcześniej.  
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Tworzenie kolumn witryn, typów zawartości oraz list dla SharePoint
+  Program Visual Studio udostępnia szablony elementów projektu dla wielu różnych podstawowych elementów programu SharePoint, łącznie z *Wyświetla* i *typy zawartości*, które można uwzględnić kolumny witryny (lub  *pola*). Nowe projektantów dla typów zawartości i list upewnij się, tworzenie tych elementów jest łatwiejsze niż kiedykolwiek.  
   
 ## <a name="site-columns"></a>Kolumny witryny
- Kolumny witryny są jednym z najbardziej podstawowe elementy, które można dodać do projektu SharePoint. Kolumny witryny reprezentuje typ danych, takich jak numer telefonu, komentarza lub nazwę miejscowości kontaktu w listy kontaktów.  
+ Kolumny witryny są jednymi z najbardziej podstawowe elementy, które można dodać do projektu programu SharePoint. Kolumna witryny reprezentuje typ danych, takich jak numer telefonu, komentarz lub nazwę miasta kontakt na liście kontaktów.  
   
- Nowy szablon elementu projektu kolumn witryny ułatwia tworzenie kolumn witryn niż w starszej wersji programu Visual Studio. Po utworzeniu nowej kolumny witryny, można zmodyfikować kod XML w kolumnie lokacji *Elements.xml* pliku, aby uwzględnić informacje, które mają, takie jak jego nazwa wyświetlana, jego typu danych i grupy, w której ma zostać kolumny witryny w wynikach Programu SharePoint. Aby uzyskać więcej informacji na temat kolumny witryny, zobacz [wprowadzenie do kolumn](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ Nowego szablonu elementu projektu kolumn witryny ułatwia tworzenie kolumn witryn niż w starszej wersji programu Visual Studio. Po utworzeniu nowej kolumny witryny, możesz zmodyfikować XML w kolumnie witryny *Elements.xml* pliku, aby uwzględnić informacje, które mają, takie jak jego nazwę wyświetlaną, typ danych i grupy, w której chcesz kolumny witryny, które będą wyświetlane na Program SharePoint. Aby uzyskać więcej informacji na temat kolumn witryn, zobacz [wprowadzenie do kolumn](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
-## <a name="content-types-and-lists"></a>Typy zawartości oraz list
- Typy zawartości oraz list należą do często używanych elementów w programie SharePoint.  
+## <a name="content-types-and-lists"></a>Typy zawartości i list
+ Typy zawartości i list elementów między najczęściej używanych w programie SharePoint.  
   
- Typ zawartości definiuje metadanych, przepływu pracy i zachowanie dla kategorii elementów SharePoint listy lub biblioteki dokumentów. Na przykład można utworzyć typu zawartości, informacje w listy kontaktów lub listy zadań. Skontaktuj się z pomocą typ zawartości może zawierać kolumny, takie jak nazwa, adres E-mail, numer telefonu i adres. Typ zawartości, którego można zdefiniować na poziomie witryny jest niezależna od wszelkich listy lub biblioteki dokumentów w witrynie. Używając tego samego typu zawartości z innej listy lub biblioteki dokumentów w witrynie programu SharePoint. Można również używać kilka typów zawartości w tej samej listy lub biblioteki dokumentów.  
+ Typ zawartości definiuje metadanych, przepływu pracy i zachowanie dla kategorii elementów w bibliotece dokumentów lub listy programu SharePoint. Na przykład można utworzyć typu zawartości, aby uzyskać informacje na liście kontaktów lub listy zadań. Skontaktuj się z pomocą typ zawartości może zawierać kolumny, takie jak nazwa, adres E-mail, numer telefonu i adres. Typ zawartości, który zdefiniujesz na poziomie witryny jest niezależna od wszelkich listy lub biblioteki dokumentów w witrynie. Można użyć tego samego typu zawartości z innej listy lub biblioteki dokumentów w witrynie programu SharePoint. Umożliwia także kilka typów zawartości w tej samej listy lub biblioteki dokumentów.  
   
- Lista jest zbiorem informacji w programie SharePoint, które można udostępniać innym użytkownikom. Wyświetla składają się z wierszy kolumn zawierających dane. Oto przykłady list: Lista zadań, listy kontaktów i listy anonsów.  
+ Lista jest zbiorem informacji w programie SharePoint, które można udostępniać innym osobom. Wyświetla składają się z wierszy kolumn zawierających dane. Niektóre przykłady list: listy zadań, listy kontaktów i jest lista anonsów.  
   
- Nowego typu zawartości i listy projektantów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] upewnij tworzenie typy zawartości i list znacznie łatwiejsze i bardziej intuicyjne niż w starszej wersji programu Visual Studio. Interfejsu użytkownika pozwala wizualnie tworzenia typów zawartości i list w sposób znanych i umożliwia sortować i grupować dane na listach i używanie nagłówków. Aby uzyskać więcej informacji na temat typów zawartości, zobacz [typy zawartości](http://go.microsoft.com/fwlink/?LinkId=224997). Aby uzyskać więcej informacji na temat list, zobacz [listy Forms](http://go.microsoft.com/fwlink/?LinkId=224998) i [widoki List](http://go.microsoft.com/fwlink/?LinkId=224999).  
+ Nowy typ zawartości i listy projektantów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] upewnij tworzenie typy zawartości oraz list znacznie łatwiejsze i bardziej intuicyjne niż w starszej wersji programu Visual Studio. Interfejs użytkownika umożliwia wizualne konstruowania typów zawartości i list w sposób znanych i można sortować i grupować dane na listach i użyj nagłówków grup. Aby uzyskać więcej informacji na temat typów zawartości, zobacz [typy zawartości](http://go.microsoft.com/fwlink/?LinkId=224997). Aby uzyskać więcej informacji na temat list, zobacz [formularze List](http://go.microsoft.com/fwlink/?LinkId=224998) i [widoki List](http://go.microsoft.com/fwlink/?LinkId=224999).  
   
 ## <a name="related-topics"></a>Tematy pokrewne
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Przedstawia sposób tworzenia kolumny witryny, które są używane w niestandardowych typu zawartości. Typ zawartości jest następnie używana listy niestandardowej.|  
+|[Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Pokazuje, jak tworzenie kolumn witryn, które są używane w niestandardowych typu zawartości. Typ zawartości jest następnie używany w niestandardowej listy.|  
   
 ## <a name="see-also"></a>Zobacz także
- [Rozpocząć wdrażanie na platformie SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  
-  
- 
+ [Rozpocznij tworzenie aplikacji w programie SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  

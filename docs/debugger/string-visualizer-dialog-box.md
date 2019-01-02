@@ -1,8 +1,6 @@
 ---
 title: Wyświetl parametry w wizualizatorze ciąg | Dokumentacja firmy Microsoft
-ms.custom: ''
-ms.date: 07/11/2018
-ms.technology: vs-ide-debug
+ms.date: 10/10/2018
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: d4808e1a6f3086e15162bf2f25c1df369ab90866
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901233"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Wyświetl parametry w wizualizatorze ciągów w programie Visual Studio
 

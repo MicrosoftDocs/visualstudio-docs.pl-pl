@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Zaznaczanie arkuszy'
-ms.custom: ''
+title: 'Instrukcje: Programowe Zaznaczanie arkuszy'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924478"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Porady: programowane Zaznaczanie arkuszy
+# <a name="how-to-programmatically-select-worksheets"></a>Instrukcje: Programowe Zaznaczanie arkuszy
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> Metoda wybiera określony obiekt, który przenosi wybranych przez użytkownika do nowego obiektu. Użyj <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> metody, aby przenieść fokus do obiektu bez wprowadzania zmian w wybranych przez użytkownika.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,14 +49,12 @@ ms.locfileid: "35677653"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Porady: programowane Drukowanie arkuszy](../vsto/how-to-programmatically-print-worksheets.md)   
- [Porady: programowane usuwanie arkuszy ze skoroszytu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Porady: programowane ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Porady: programowane Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Instrukcje: Programowe Drukowanie arkuszy](../vsto/how-to-programmatically-print-worksheets.md)   
+ [Instrukcje: Programowe usuwanie arkuszy ze skoroszytu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Instrukcje: Programowe ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Instrukcje: Programowe Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Element hosta arkusza](../vsto/worksheet-host-item.md)   
  [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

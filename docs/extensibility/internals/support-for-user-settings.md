@@ -1,9 +1,6 @@
 ---
 title: Obsługa ustawień użytkowników | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Custom Settings Points
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea4d5bd890c28721539fa9528df72446fedc126
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930911"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
 Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, które są zmienne stanu, które utrzymują się, gdy użytkownik wybierze **importu/eksportu ustawień** polecenie **narzędzia** menu. Aby włączyć ten stan trwały, użyj ustawienia interfejsów API w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -61,4 +58,3 @@ Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, kt
 | Kategoria | REG_SZ | Identyfikator GUID | Identyfikator GUID kategorii ustawień.<br /><br /> Implementacje, w oparciu o zestawy międzyoperacyjne, ta wartość może być dowolnie wybrany identyfikator GUID, który [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE przekazuje do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> metody. Wszystkich implementacjach te dwie metody, należy sprawdzić ich argumentów identyfikatora GUID.<br /><br /> W oparciu o MPF implementacji tego identyfikatora GUID jest uzyskiwana przez <xref:System.Type> implementacji klasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mechanizm ustawienia. |
 | ResourcePackage | REG_SZ | Identyfikator GUID | Opcjonalna.<br /><br /> Ścieżka do satelitarne biblioteki DLL zawierających zlokalizowanych ciągów Jeśli implementującej pakietu VSPackage nie dostarcza je.<br /><br /> MPF używa odbicia w celu uzyskania odpowiedniego zasobu pakietu VSPackage, więc <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasy nie ustawia tego argumentu. |
 | AlternateParent | REG_SZ | Nazwa folderu, w obszarze strony Opcje narzędzi zawierające ten punkt ustawienia niestandardowe. | Opcjonalna.<br /><br /> Należy ustawić tę wartość, tylko wtedy, gdy implementacja ustawienia obsługuje **opcje narzędzi** stron korzystających z mechanizmu stanu trwałego w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] zamiast mechanizmu w modelu automatyzacji, który ma być zapisany stan.<br /><br /> W takich przypadkach jest wartością w kluczu AlternateParent `topic` części `topic.sub-topic` ciąg używany do identyfikowania danej **ToolsOptions** strony. Na przykład w przypadku **ToolsOptions** strony `"TextEditor.Basic"` wartość AlternateParent będzie `"TextEditor"`.<br /><br /> Gdy <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> generuje punkt ustawienia niestandardowe, jest taka sama jak nazwa kategorii. |
-

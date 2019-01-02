@@ -1,9 +1,6 @@
 ---
 title: Zarządzanie skojarzenia plików Side-by-Side | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bbc06ba777939857876221a2796eef6786ec44c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fdee9d9b3d96c97ba738d974ff9691417068121e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826945"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Zarządzaj skojarzeniami plików side-by-side
 Jeśli Twoje pakietu VSPackage udostępnia skojarzenia plików, należy zdecydować, jak obsługiwać instalacje side-by-side, w którym konkretnej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powinny być używane w celu otwarcia pliku. Niezgodnych formatów pliku złożone problem.  
@@ -52,7 +49,7 @@ Jeśli Twoje pakietu VSPackage udostępnia skojarzenia plików, należy zdecydow
   
   ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Akcja niestandardowa wiersze tabeli, które określają najnowszą wersję programu Visual Studio  
   
-  |Akcja|Typ|Źródło|Docelowy|  
+  |Akcja|Typ|Źródło|Cel|  
   |------------|----------|------------|------------|  
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  

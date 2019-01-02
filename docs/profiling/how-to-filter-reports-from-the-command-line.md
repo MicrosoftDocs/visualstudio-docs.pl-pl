@@ -1,8 +1,6 @@
 ---
-title: 'Porady: filtrowanie raportów z wiersza polecenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Filtrowanie raportów z poziomu wiersza polecenia | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
 author: mikejo5000
@@ -10,22 +8,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c173fb5cdea4c18f3d470bd1e92bd7f9b68a62e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 2d53af6417a4eb3b78c6063455bf44e7243a13d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933518"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>Porady: filtrowanie raportów z wiersza polecenia
-Za pomocą opcji **VSPerfReport** polecenia, można filtrować raporty do segmentu określony czas plik danych profilowania lub ograniczanie danych do co najmniej jednego procesu lub wątki. Aby uzyskać więcej informacji na temat tego polecenia, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
+# <a name="how-to-filter-reports-from-the-command-line"></a>Instrukcje: Filtrowanie raportów z poziomu wiersza polecenia
+Za pomocą opcji **VSPerfReport** polecenia, można filtrować raporty na segment określony czas w pliku danych profilowania lub ograniczyć je do procesów lub wątków. Aby uzyskać więcej informacji na temat tego polecenia, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
 |Opcje|Opis|  
 |-------------|-----------------|  
-|**Czas rozpoczęcia:**[*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
-|**Wartość EndTime:**[*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
-|**FilterFile:** `VSPFFile`|Określa lokalizację pliku filtru, który został wygenerowany na podstawie **raport dotyczący wydajności programu Visual Studio** okna.|  
-|**MsFilter:**[*StartTime, czas trwania*]|Wyświetla tylko dane z `StartTime` do długości `Duration` (w milisekundach).|  
+|**Godzina rozpoczęcia:**[*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
+|**EndTime:**[*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
+|**FilterFile:** `VSPFFile`|Określa lokalizację pliku filtru, który został wygenerowany z **raport dotyczący wydajności programu Visual Studio** okna.|  
+|**MsFilter:**[*godzina rozpoczęcia, czas trwania*]|Wyświetla tylko dane z `StartTime` aż do długości `Duration` (w milisekundach).|  
 |**Proces:**[*Pid*]|Wyświetla tylko dane z określonego procesu.|  
 |**Wątek:**[*ThreadID*]|Wyświetla tylko dane z określonego wątku.|  
 |**Wątek:**[*Identyfikator_wątku, Identyfikator_procesu*]|Wyświetla tylko dane z określonego wątku, który jest skojarzony z określonym procesem.|

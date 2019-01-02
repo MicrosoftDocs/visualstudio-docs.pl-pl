@@ -1,9 +1,6 @@
 ---
 title: Dostosowywanie interfejsu użytkownika pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924830"
 ---
 # <a name="office-ui-customization"></a>Dostosowywanie interfejsu użytkownika pakietu Office
   Możesz dostosować interfejs użytkownika (UI) aplikacji pakietu Microsoft Office, przy użyciu narzędzi Office developer tools w programie Visual Studio. W tym temacie opisano funkcje interfejsu użytkownika, które można dostosować w następujących sekcjach:  
@@ -96,7 +93,7 @@ ms.locfileid: "49836771"
  Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md) i [Windows forms, formanty na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menu skrótów  
- Menu skrótów pojawia się po kliknięciu prawym przyciskiem myszy w oknie aplikacji lub dokumentu. Możesz ustawić menu skrótów, po wystąpieniu zdarzenia, takie jak kiedy użytkownik kliknie prawym przyciskiem myszy dokumentu, skoroszytu lub kontrolki hosta. Liczba różnych menu poleceń lub kontrolek można dodać do menu skrótów. Tworzenie menu skrótów za pomocą pliku XML. Jeśli dodasz **wstążki (XML)** element XML do projektu pakietu Office, można dodać do pliku XML wstążki, aby utworzyć menu skrótów. Aby uzyskać więcej informacji na temat za pomocą języka XML, aby utworzyć menu skrótów, zobacz [porady: Dodawanie poleceń do menu skrótów](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Menu skrótów pojawia się po kliknięciu prawym przyciskiem myszy w oknie aplikacji lub dokumentu. Możesz ustawić menu skrótów, po wystąpieniu zdarzenia, takie jak kiedy użytkownik kliknie prawym przyciskiem myszy dokumentu, skoroszytu lub kontrolki hosta. Liczba różnych menu poleceń lub kontrolek można dodać do menu skrótów. Tworzenie menu skrótów za pomocą pliku XML. Jeśli dodasz **wstążki (XML)** element XML do projektu pakietu Office, można dodać do pliku XML wstążki, aby utworzyć menu skrótów. Aby uzyskać więcej informacji na temat za pomocą języka XML, aby utworzyć menu skrótów, zobacz [jak: Dodawanie poleceń do menu skrótów](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wstążka — omówienie](../vsto/ribbon-overview.md)   
@@ -105,8 +102,6 @@ ms.locfileid: "49836771"
  [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)   
  [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)   
  [Użyj kontrolek WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Porady: pokazywanie karty dewelopera na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Porady: dodatek Pokaż błędy interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [Wskazówki: Zbieranie danych za pomocą formularza Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  
+ [Instrukcje: Pokazywanie karty dewelopera na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Przewodnik: Zbieranie danych za pomocą formularza Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  

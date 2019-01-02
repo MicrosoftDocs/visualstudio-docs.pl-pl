@@ -1,9 +1,6 @@
 ---
 title: Nadrzędny Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902440"
 ---
 # <a name="parent-element"></a>Element nadrzędny
 Element nadrzędny przycisk lub pola kombi mogą być tylko grupy. Nadrzędny menu lub grupa może być dowolnego menu lub grupę. W [CommandPlacement, element](../extensibility/commandplacement-element.md), ten element jest wymagany; w innych wystąpieniach jest opcjonalne. W przypadku pominięcia tego elementu nadrzędnego `Group_Undefined:0` będzie wynikać.  
@@ -37,8 +34,8 @@ Element nadrzędny przycisk lub pola kombi mogą być tylko grupy. Nadrzędny me
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator polecenia dla identyfikatora GUID/identyfikator GUID.|  
-|identyfikator|Wymagane. Identyfikator polecenia identyfikator GUID/ID.|  
+|Identyfikator GUID|Wymagana. Identyfikator polecenia dla identyfikatora GUID/identyfikator GUID.|  
+|identyfikator|Wymagana. Identyfikator polecenia identyfikator GUID/ID.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak  

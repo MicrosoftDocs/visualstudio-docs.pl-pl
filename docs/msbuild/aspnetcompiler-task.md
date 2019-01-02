@@ -1,8 +1,6 @@
 ---
 title: Wstępna kompilacja aplikacji ASP.NET przy użyciu aspnetcompiler — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 69971e72569dcae1f02f1e2b7988ef15f881fe85
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 84367bdf99ae7c29f5ecac4d345cd21c8cc17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935292"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler — zadanie
 `AspNetCompiler` Zawija zadanie *aspnet_compiler.exe*, narzędzie wstępnej kompilacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji.  

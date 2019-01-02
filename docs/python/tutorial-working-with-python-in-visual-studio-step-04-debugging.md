@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Krok 4 przewodnika podstawowe możliwości języka Python w programie Visual Studio, obejmujących sposobu uruchamiania kodu w języku Python w debugerze.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931544"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
+# <a name="step-4-run-code-in-the-debugger"></a>Krok 4. Uruchamianie kodu w debugerze
 
-**Poprzedni krok: [korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Poprzedniego kroku: [Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Oprócz zarządzania projektami, zapewniając bogate środowisko, edytowania i **Interactive** okna, program Visual Studio oferuje w pełni funkcjonalne debugowania dla kodu w języku Python. W debugerze można uruchomić kod krok po kroku, łącznie z każdą iteracją pętli. Można również wstrzymać program zawsze wtedy, gdy są spełnione określone warunki. W dowolnym momencie gdy program jest wykorzystywana w debugerze, można sprawdzić stan całego programu i zmień wartości zmiennych. Takie działania są niezbędne do śledzenia szczegółów błędów programu i również zapewniają pomoc bardzo przydatne dla dokładnie zgodnie z przepływem programu dokładne.
 

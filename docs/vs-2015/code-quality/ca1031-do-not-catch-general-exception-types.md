@@ -1,12 +1,11 @@
 ---
-title: 'CA1031: Nie Przechwytuj wyjątków typów ogólnych | Dokumentacja firmy Microsoft'
+title: 'CA1031: Nie przechwytuj typów wyjątków ogólnych | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2548fe0e54e57e4374f8ae92e9d43302df419aa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e0a401f5e37e6ca1889117c5eabcb78490e23fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923908"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Nie przechwytuj wyjątków typów ogólnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +59,4 @@ ms.locfileid: "49940193"
  [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionAndSystemException/vb/FxCop.Design.ExceptionAndSystemException.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2200: Zgłoś ponownie wyjątek, aby zachować szczegóły stosu](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
-
-
-
+ [CA2200: Ponownie, aby zachować szczegóły stosu](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)

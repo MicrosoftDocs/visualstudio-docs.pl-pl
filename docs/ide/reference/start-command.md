@@ -2,7 +2,6 @@
 title: Uruchomienie — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.start
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd2d64d8103afe1e303052c9b27fc2cc85cab58
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f3e15e9bcea439e6e01ff3bb233622d119fa4b46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903933"
 ---
 # <a name="start-command"></a>Uruchomienie — Polecenie
-Rozpoczyna debugowania projektu startowego.
+Rozpoczyna się debugowanie projektu startowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,13 +33,13 @@ Debug.Start [address]
 ## <a name="arguments"></a>Argumenty
  `address`
 
- Opcjonalna. Adres, pod którym program wstrzymuje wykonywanie, podobnie jak punkt przerwania w kodzie źródłowym. Ten argument jest prawidłowy tylko w trybie debugowania.
+ Opcjonalna. Adres, w którym program zawiesza wykonywanie, podobnie jak punkt przerwania w kodzie źródłowym. Ten argument jest prawidłowy tylko w trybie debugowania.
 
 ## <a name="remarks"></a>Uwagi
  **Start** polecenia po wykonaniu wykonuje operację RunToCursor do określonego adresu.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie uruchomienie debugera i ignoruje wszelkie wyjątki, które występują.
+ W tym przykładzie Uruchamia debuger i ignoruje wszelkie wyjątki, które występują.
 
 ```cmd
 >Debug.Start
@@ -50,5 +49,5 @@ Debug.Start [address]
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

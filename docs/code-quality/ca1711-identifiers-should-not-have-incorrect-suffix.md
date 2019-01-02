@@ -1,8 +1,7 @@
 ---
-title: 'CA1711: Identyfikatory powinny mieć poprawny przyrostek'
+title: 'CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 86bcd9373fda82c1f650da88a87d905a7ba1e6a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920436"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory powinny mieć poprawny przyrostek
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu
 
 |||
 |-|-|
@@ -45,13 +44,13 @@ W poniższej tabeli wymieniono zarezerwowanym sufiksem i typy podstawowe i inter
 |Suffix|Interfejs podstawowy|
 |------------|--------------------------|
 |Atrybut|<xref:System.Attribute?displayProperty=fullName>|
-|Kolekcja|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
+|Collection|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |Słownik|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|Delegat programu obsługi zdarzeń|
 |Wyjątek|<xref:System.Exception?displayProperty=fullName>|
 |Uprawnienie|<xref:System.Security.IPermission?displayProperty=fullName>|
-|kolejki|<xref:System.Collections.Queue?displayProperty=fullName>|
+|Kolejka|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stos|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Strumień|<xref:System.IO.Stream?displayProperty=fullName>|
 

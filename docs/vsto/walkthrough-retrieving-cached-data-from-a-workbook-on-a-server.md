@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1972b18588cc90621c71c1ce68d2046509dec4ee
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0c64ed8606a1c6fec4562048c517bdb883c61320
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888130"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Przewodnik: Pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze
   W tym instruktażu pokazano, jak pobierać dane z zestawu danych, który jest buforowany w skoroszytu programu Microsoft Excel pakietu Office bez uruchamiania programu Excel przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.

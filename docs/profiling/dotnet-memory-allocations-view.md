@@ -1,8 +1,6 @@
 ---
 title: Widok alokacji pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f866eba741dd84286bc969e64b8c36068c824a90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895548"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Widok alokacji pamięci
 Widok alokacji zawiera typy, które zostały utworzone podczas uruchomienia profilowania. Każdy typ jest węzeł główny drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały alokacji typu.  
@@ -40,7 +38,7 @@ Widok alokacji zawiera typy, które zostały utworzone podczas uruchomienia prof
   
 -   Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy typu lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa przydzielonego typu lub funkcji.|  
 |**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
@@ -49,7 +47,7 @@ Widok alokacji zawiera typy, które zostały utworzone podczas uruchomienia prof
 |**Ścieżka modułu**|Ścieżka modułu, który zawiera typu lub funkcji.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla typu lub funkcji.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej definicji typu lub funkcji w pliku źródłowym.|  
-|**poziom**|Wskazuje, czy dane są dla typu lub funkcji.|  
+|**Poziom**|Wskazuje, czy dane są dla typu lub funkcji.|  
 |**Przydziały włączne**|— Dla funkcji, całkowita liczba obiektów o typie elementu nadrzędnego, które zostały utworzone przez funkcję. Liczba ta obejmuje obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  
 |**% Przydziałów włącznych**|— Dla funkcji, wartość procentowa wszystkie obiekty utworzone w trakcie uruchomienia profilowania, które zostały przydziałów włącznych typu nadrzędnego przez funkcję.<br />— Dla typu procent całkowitej liczby obiektów, które zostały utworzone w profilowania, były wystąpienia typu.|  
 |**Przydziały wyłączne**|— W przypadku funkcji liczbę obiektów, które zostały utworzone podczas wykonywania bezpośrednio w górnej części stosu wywołań funkcji. Ta liczba nie ma obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  

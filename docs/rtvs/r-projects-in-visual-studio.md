@@ -3,19 +3,18 @@ title: Projekty języka R
 description: Jak utworzyć Menedżera projekty języka R w programie Visual Studio, w tym jej właściwości, polecenia projektów i szablonów.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: d9e20b53597ebca2eb079418a0838ff5449678a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924335"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 

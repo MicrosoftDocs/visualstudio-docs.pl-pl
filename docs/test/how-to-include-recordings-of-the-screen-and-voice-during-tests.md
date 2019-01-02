@@ -9,22 +9,21 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832141"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Porady: obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testu
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Instrukcje: Obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testu
 
 Z edytora konfiguracji w programie Visual Studio można skonfigurować adapter danych diagnostycznych, który nagrywa ekran i głos użytkownika, który uruchamia test. Ten adapter danych diagnostycznych zapisuje nagrywanie ekranu i głosu z sesji pulpitu podczas testu. Nagranie jest zapisywane z wynikiem testu lub mogą być dołączane do błędów. Inni członkowie zespołu można użyć rejestrowania, aby wyizolować defekty aplikacji, które są trudne do odtworzenia.
 
 > [!WARNING]
 > Nagrania ekranu i głosu nie obsługują wielu konfiguracji monitora.
 
-Nagrywanie ekranu i głosu może służyć za pomocą testów ręcznych i automatycznych. Na przykład zdalne uruchamianie kodowanego testu interfejsu użytkownika można nagrać pulpit, aby zobaczyć kodowany test interfejsu użytkownika podczas jego wykonywania. Aby uzyskać więcej informacji o sposobie przechwytywania nagrywania ekranu i głosu zdalnie, zobacz [porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+Nagrywanie ekranu i głosu może służyć za pomocą testów ręcznych i automatycznych. Na przykład zdalne uruchamianie kodowanego testu interfejsu użytkownika można nagrać pulpit, aby zobaczyć kodowany test interfejsu użytkownika podczas jego wykonywania. Aby uzyskać więcej informacji o sposobie przechwytywania nagrywania ekranu i głosu zdalnie, zobacz [jak: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -54,9 +53,9 @@ Nagrywanie ekranu i głosu może służyć za pomocą testów ręcznych i automa
 
     1.  **Szybkość klatek:** Określ liczbę klatek na sekundę, które mają być używane w nagrywaniu ekranu i głosu. Wartość domyślna to 4 klatki na sekundę. Można określić wartości z zakresu od 2 do 20.
 
-    2.  **Szybkość transmisji bitów:** Określ liczbę kilobitów na sekundę, której chcesz używać w nagrywaniu ekranu i głosu. Wartość domyślna to 512. Można określić wartości z zakresu od 512 do 10 000.
+    2.  **Szybkość transmisji bitów:** Określ liczbę kilobitów na sekundę do użycia w nagrywaniu ekranu i głosu. Wartość domyślna to 512. Można określić wartości z zakresu od 512 do 10 000.
 
-    3.  **Quality(1-100):** można określić jakość nagrywania ekranu i głosu, wybierając zakres od 1 do 100. Wartością domyślną jest 50 (zakres średni).
+    3.  **Quality(1-100):** Można określić jakość nagrywania ekranu i głosu, wybierając zakres od 1 do 100. Wartością domyślną jest 50 (zakres średni).
 
 7.  Wybierz **OK**. Ustawienia modułu zbierającego śledzenia diagnostycznego są teraz skonfigurowane i zapisane w ustawieniach testu.
 

@@ -2,7 +2,6 @@
 title: Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -127,12 +126,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e958674858eaa2de01cf837de12f70ed17b4f210
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921020"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji proste — wartości skalarnych, a wskaźniki do struktur i klas — i większość typów buforów.  Ten artykuł zawiera również typowe wzorce użycia na potrzeby adnotacji. Dla dodatkowych adnotacji that are related to funkcji, zobacz [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)

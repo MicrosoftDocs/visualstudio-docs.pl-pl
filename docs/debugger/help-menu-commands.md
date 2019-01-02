@@ -1,8 +1,6 @@
 ---
 title: Polecenia Menu Pomoc | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Help menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d23d0fdc601c36ae75c1fbdab2bf2e1964d3c2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 22ea48a465b273f3dfcb3934c620cf053597b4ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922445"
 ---
 # <a name="help-menu-commands"></a>Polecenia menu Pomoc
-**Pomocy** menu zawiera polecenia do otwierania plików pomocy.  
+**Pomocy** menu zawiera polecenia służące do otwierania plików pomocy.  
   
  **Index**  
- Otwiera ekran zawartość Spy ++ pomocy.  
+ Otwiera ekran zawartość programu Spy ++ pomocy.  
   
  **Korzystanie z pomocy**  
- Otwiera plik Pomocy opisano, jak korzystać z pomocy.  
+ Otwiera plik pomocy, która opisuje, jak korzystać z pomocy.  
   
- **O Spy ++**  
- Przedstawia informacje oprogramowania wersji i prawa autorskie dla Spy ++.
+ **Informacje o programie Spy ++**  
+ Przedstawia informacje wersji i prawach autorskich oprogramowania dla programu Spy ++.

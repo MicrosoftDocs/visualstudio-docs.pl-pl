@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_scoped — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0018bfdbf52f92a35dff3a21fb5baf71aab6639
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11027e90e76a400b5a4c0a3ed155c53955efa558
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875699"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika pojawia się w zakresie leksykalnym nieglobalnej.  
@@ -27,7 +25,7 @@ Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika po
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_scoped (   
+HRESULT get_scoped (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
 title: Lib — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922023"
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 Opakowuje narzędzie Microsoft 32-bitowy Library Manager *lib.exe*. Menedżer biblioteki tworzy i zarządza Biblioteka plików obiektów Common Object File Format (COFF). Menedżer biblioteki można tworzyć pliki eksportu i Importuj biblioteki do definicji odwołanie, eksportowane. Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki LIB](/cpp/build/reference/lib-reference) i [uruchamianie LIB](/cpp/build/reference/running-lib).  

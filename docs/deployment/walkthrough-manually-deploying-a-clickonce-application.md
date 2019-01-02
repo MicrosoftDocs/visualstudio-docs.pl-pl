@@ -1,8 +1,6 @@
 ---
-title: 'Wskazówki: Ręczne wdrażanie aplikacji ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Ręczne wdrażanie aplikacji ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923273"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Wskazówki: Ręczne wdrażanie aplikacji ClickOnce
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce
 Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji lub jeśli trzeba korzystać z zaawansowanego wdrożenia funkcji, takich jak wdrażanie zaufanych aplikacji, należy użyć *Mage.exe* narzędzie wiersza polecenia, aby utworzyć swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestów. W tym przewodniku opisano sposób tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia przy użyciu wiersza polecenia wersji (*Mage.exe*) lub wersji graficznego (*MageUI.exe*) generowania manifestu i Narzędzia do edycji.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
@@ -45,7 +43,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
   
 - Określ sposób dystrybucji wdrożenia.  
   
-   Dostępne są następujące opcje dystrybucji: sieci Web, udziału plików lub dysku CD. Aby uzyskać więcej informacji, zobacz [wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md).  
+   Dostępne są następujące opcje dystrybucji: W sieci Web, udziału plików lub dysku CD. Aby uzyskać więcej informacji, zobacz [wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md).  
   
 - Ustal, czy aplikacja wymaga podwyższonego poziomu zaufania.  
   

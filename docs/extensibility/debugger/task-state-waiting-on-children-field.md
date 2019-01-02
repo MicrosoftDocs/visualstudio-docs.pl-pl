@@ -1,9 +1,6 @@
 ---
 title: Pole TASK_STATE_WAITING_ON_CHILDREN | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfee9939df0f525d147b46f304c69214c22aa7f
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 8a12652ccd999e7ec1c8a3e87fe1af12c9d91201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924497"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>Pole TASK_STATE_WAITING_ON_CHILDREN
 Zadanie zostało zakończone, wykonywanie jej delegata i niejawnie Trwa oczekiwanie na ukończenie dołączonych zadań podrzędnych.  

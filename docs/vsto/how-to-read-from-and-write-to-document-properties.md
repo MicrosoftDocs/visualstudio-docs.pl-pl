@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Odczyt z i zapisu do właściwości dokumentu'
-ms.custom: ''
+title: 'Instrukcje: Odczytywanie i zapisywanie właściwości dokumentów'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43c74a206ecbe544a6ccb32448104e17a48aaee6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825425"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Porady: Odczyt z i zapisu do właściwości dokumentu
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Instrukcje: Odczytywanie i zapisywanie właściwości dokumentów
   Można zapisać właściwości dokumentu z dokumentu. Aplikacje pakietu Office zapewniają szereg wbudowanych właściwości, takie jak tworzenie, tytuł i temat. W tym temacie przedstawiono sposób ustawiania właściwości dokumentu w programie Microsoft Office Excel i Microsoft Office Word.  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: dostępu i manipulowania niestandardowe właściwości dokumentu w programie Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Dostęp i manipulowania nimi niestandardowe właściwości dokumentu w programie Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
@@ -86,6 +83,4 @@ ms.locfileid: "49924231"
 ## <a name="see-also"></a>Zobacz także  
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Porady: tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)  
-  
-  
+ [Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)  

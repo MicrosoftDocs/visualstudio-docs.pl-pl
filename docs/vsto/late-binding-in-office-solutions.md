@@ -1,9 +1,6 @@
 ---
-title: Późne wiązania w rozwiązaniach pakietu Office
-ms.custom: ''
+title: Późne powiązania w rozwiązaniach pakietu Office
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,49 +15,49 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c886305b3cfe63ef2d2821752d97099d93689891
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847259"
 ---
-# <a name="late-binding-in-office-solutions"></a>Późne wiązania w rozwiązaniach pakietu Office
-  Niektóre typy modeli obiektów w aplikacji pakietu Office zawierają funkcje, które są dostępne za pośrednictwem funkcji późnego wiązania. Na przykład niektóre metody i właściwości może zwracać różne typy obiektów, w zależności od kontekstu aplikacji pakietu Office, a niektóre typy mogą uwidaczniać różne metody lub właściwości w różnych kontekstach.  
+# <a name="late-binding-in-office-solutions"></a>Późne powiązania w rozwiązaniach pakietu Office
+  Niektóre typy modeli obiektów w aplikacji pakietu Office udostępniają funkcje, które są dostępne za pośrednictwem funkcji późnego wiązania. Na przykład niektóre metody i właściwości może zwracać różne typy obiektów, w zależności od kontekstu aplikacji pakietu Office, a w niektórych typów może narazić różne metody lub właściwości w różnych kontekstach.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Where projekty Visual Basic **Option Strict** jest wyłączone i Visual C# projektów przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] może współpracować bezpośrednio z typów, korzystających z tych funkcji późnego wiązania.  
+ Projektów języka Visual Basic, gdzie **Option Strict** jest wyłączone i wizualna C# projekty [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] może współpracować bezpośrednio z typami, korzystających z tych funkcji późne powiązania.  
   
 ## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Wartości zwracane jawne i niejawne rzutowanie obiektu  
- Wiele metod i właściwości pakietu Microsoft Office, zwróć podstawowe zestawy międzyoperacyjne (PIAs) <xref:System.Object> wartości, ponieważ zwracają kilka różnych typów obiektów. Na przykład <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> zwraca <xref:System.Object> ponieważ jej wartość zwrotna może być <xref:Microsoft.Office.Interop.Excel.Worksheet> lub <xref:Microsoft.Office.Interop.Excel.Chart> obiektu, w zależności od tego, co to jest aktywnym arkuszu.  
+ Wielu metod i właściwości w programie Microsoft Office, podstawowe zestawy międzyoperacyjne (PIA) zwracają <xref:System.Object> wartości, ponieważ zwracają kilka różnych typów obiektów. Na przykład <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> właściwość zwraca <xref:System.Object> jego zwracanej wartości mogą być <xref:Microsoft.Office.Interop.Excel.Worksheet> lub <xref:Microsoft.Office.Interop.Excel.Chart> obiektu, w zależności od aktywnego arkusza.  
   
- Gdy metoda lub właściwość zwraca <xref:System.Object>, jawnie przekonwertuj (w języku Visual Basic) obiektu poprawnego typu w projektach Visual Basic gdzie **Option Strict** znajduje się na. Nie trzeba jawnie rzutowania <xref:System.Object> zwracają wartości w projektach Visual Basic gdzie **Option Strict** jest wyłączona.  
+ Gdy metoda lub właściwość zwraca <xref:System.Object>, jawnie przekonwertuj (w języku Visual Basic) obiektu do poprawnego typu w projektach języka Visual Basic gdzie **Option Strict** znajduje się na. Nie trzeba jawnie rzutowane <xref:System.Object> wartości zwracane w projektach języka Visual Basic gdzie **Option Strict** jest wyłączona.  
   
- W większości przypadków dokumentacji referencyjnej zawiera typy zwracane wartości dla elementu członkowskiego, który zwraca <xref:System.Object>. Konwertowanie albo rzutowanie obiektu włącza IntelliSense dla obiekt w edytorze kodu.  
+ W większości przypadków dokumentację referencyjną zawiera listę możliwych typów wartość zwracaną dla elementu członkowskiego, która zwraca <xref:System.Object>. Konwertowanie lub Rzutowanie obiektu temu IntelliSense dla obiektów w edytorze kodu.  
   
- Aby uzyskać informacje o konwersji w języku Visual Basic, zobacz [Konwersje jawne i niejawne &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) i [CType — funkcja &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Aby uzyskać informacje o konwersji w języku Visual Basic, zobacz [Konwersje jawne i niejawne &#40;języka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) i [funkcja CType &#40;języka Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Przykłady  
- Poniższy przykład kodu pokazuje, jak można rzutować obiektu określonego typu w projektach Visual Basic gdzie **Option Strict** znajduje się na. W tym typie projektu, należy jawnie rzutować <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> właściwości <xref:Microsoft.Office.Interop.Excel.Range>. W tym przykładzie wymaga projektu poziomie dokumentu programu Excel z arkusza klasę o nazwie `Sheet1`.  
+ Poniższy przykład kodu pokazuje, jak można rzutować obiektu określonego typu w projekcie Visual Basic gdzie **Option Strict** znajduje się na. W tym typie projektu, musisz jawnie rzutowane <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Range>. W tym przykładzie wymaga dokumentu projektów programu Excel z arkusza klasę o nazwie `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]  
   
- W poniższym przykładzie pokazano, jak niejawnie rzutowania obiektu określonego typu w projektach Visual Basic gdzie **Option Strict** jest wyłączony lub w projektach Visual C#, którego celem jest [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. W przypadku tych typów projektów <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> właściwości niejawnie jest rzutowane na <xref:Microsoft.Office.Interop.Excel.Range>. W tym przykładzie wymaga projektu poziomie dokumentu programu Excel z arkusza klasę o nazwie `Sheet1`.  
+ Poniższy przykład kodu pokazuje, jak niejawnie rzutowany obiektu określonego typu w projekcie Visual Basic gdzie **Option Strict** jest wyłączony lub element wizualny C# projektu, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. W przypadku tych typów projektów <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> właściwość jest niejawnie rzutowany na <xref:Microsoft.Office.Interop.Excel.Range>. W tym przykładzie wymaga dokumentu projektów programu Excel z arkusza klasę o nazwie `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="access-members-that-are-available-only-through-late-binding"></a>Dostęp do elementów członkowskich, które są dostępne tylko za pośrednictwem późne wiązanie  
- Niektóre właściwości i metody w PIAs pakietu Office są dostępne tylko za pośrednictwem późnego wiązania. W języku Visual Basic, projekty where **Option Strict** jest wyłączony lub w projektach Visual C# kierowanych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], umożliwia funkcji późne wiązania w tych językach dostęp do elementów członkowskich z późnym wiązaniem. W języku Visual Basic, projekty where **Option Strict** jest włączone, aby dostęp do tych elementów członkowskich, należy użyć odbicia.  
+## <a name="access-members-that-are-available-only-through-late-binding"></a>Elementy członkowskie dostępu, które są dostępne wyłącznie za pośrednictwem późne wiązanie  
+ Niektóre właściwości i metody w zestawy PIA pakietu Office są dostępne wyłącznie za pośrednictwem późnego wiązania. W języku Visual Basic projektów, gdzie **Option Strict** jest wyłączone lub w elemencie wizualnym C# projektów, których celem [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], można użyć funkcji późne powiązania w tych językach na dostęp do elementów członkowskich z późnym wiązaniem. W języku Visual Basic projektów, gdzie **Option Strict** jest włączona, należy używać odbicia do dostęp do tych elementów członkowskich.  
   
 ### <a name="examples"></a>Przykłady  
- W poniższym przykładzie pokazano, jak dostęp do elementów członkowskich późno powiązanym w projektach Visual Basic gdzie **Option Strict** jest wyłączony lub w projektach Visual C#, którego celem jest [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. W tym przykładzie uzyskuje dostęp do późnym wiązaniem **nazwa** właściwość **Otwórz plik** okno dialogowe w programie Word. Aby użyć tego przykładu, uruchom go z `ThisDocument` lub `ThisAddIn` klasy w projekcie programu Word.  
+ Poniższy przykład kodu pokazuje, jak uzyskać dostęp z późnym wiązaniem członków w projektach Visual Basic gdzie **Option Strict** jest wyłączony lub element wizualny C# projektu, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Ten przykład uzyskuje dostęp z późnym wiązaniem **nazwa** właściwość **Otwórz plik** okno dialogowe w programie Word. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie programu Word.  
   
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
   
- Poniższy przykład kodu pokazuje sposób użycia odbicia do wykonania tego samego zadania w projektach Visual Basic gdzie **Option Strict** znajduje się na.  
+ Poniższy przykład kodu pokazuje, jak używać odbicia w celu wykonania tego samego zadania w projekcie Visual Basic gdzie **Option Strict** znajduje się na.  
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
@@ -72,5 +69,3 @@ ms.locfileid: "34572553"
  [Odbicie (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Odbicie (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

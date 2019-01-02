@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramNode2::GetHostPid | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2::GetHostPid
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d6931efe0025d1437e91a0194807e8ea7c9783b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 718d326247dee1b42b6a4e67c46f5134001d6dfc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897326"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Pobiera identyfikator procesu systemu dla procesu hostingu programu.  
@@ -28,13 +25,13 @@ Pobiera identyfikator procesu systemu dla procesu hostingu programu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetHostPid (   
+HRESULT GetHostPid (   
    AD_PROCESS_ID * pdwHostPid  
 );  
 ```  
   
 ```csharp  
-int GetHostPid (   
+int GetHostPid (   
    out AD_PROCESS_ID pdwHostPid  
 );  
 ```  

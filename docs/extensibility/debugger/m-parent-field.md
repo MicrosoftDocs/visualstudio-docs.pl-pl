@@ -1,9 +1,6 @@
 ---
 title: Pole m_parent | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_parent field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2246a846324710cee0cb49913c1debd3bad0436
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1b0b6fcc5cea15cdd48b4dbf9320b7bb4408bc12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896555"
 ---
 # <a name="mparent-field"></a>pole m_parent
 Pole zapasowe dla <xref:System.Threading.Tasks.Task?displayProperty=fullName> `Parent` właściwości.  

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_objectpointertype — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c82c52fc49b76e6c3adb8b58bb03fafa28531f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e21418da2516553f2c62e2c746e6a75e3f67cbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961741"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 Pobiera typ wskaźnika obiektu dla metody klasy.  
@@ -27,7 +25,7 @@ Pobiera typ wskaźnika obiektu dla metody klasy.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_objectPointerType (   
+HRESULT get_objectPointerType (   
    IDiaSymbol** pRetVal  
 );  
 ```  

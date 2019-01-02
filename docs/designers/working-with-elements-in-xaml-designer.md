@@ -2,7 +2,6 @@
 title: Praca z elementami w Projektancie XAML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922602"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w Projektancie XAML
 Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w XAML, w kodzie lub przy użyciu projektanta XAML. W tym temacie opisano sposób pracy z elementami w Projektancie XAML w programie Visual Studio lub Blend for Visual Studio.
@@ -65,9 +64,9 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
 
 1.  Wybierz elementy, które mają zostać wyrównane. Można wybrać więcej niż jeden element przez naciśnięcie i przytrzymanie **Ctrl** klucza podczas wybierania elementów.
 
-2.  Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w **układ** okna właściwości: **po lewej stronie**, **Centrum**, **Po prawej stronie**, lub **Stretch**.
+2.  Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w **układ** okna właściwości: **Po lewej stronie**, **Centrum**, **po prawej stronie**, lub **Stretch**.
 
-3.  Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w **układ** okna właściwości: **górnej**, **Centrum**, **Dolnej**, lub **Stretch**.
+3.  Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w **układ** okna właściwości: **TOP**, **Centrum**, **dolnej**, lub **Stretch**.
 
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Aby wyrównać co najmniej dwa elementy za pomocą linii przyciągania
 

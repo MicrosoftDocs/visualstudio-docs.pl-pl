@@ -2,7 +2,6 @@
 title: Lista rejestrów — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 942ab10a1d660ea5e33ca2cb679e4655bd6b3fbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959968"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
-Wyświetla wartość wybranego rejestruje i umożliwia zmodyfikowanie listy rejestrów do wyświetlenia.
+Wyświetla wartość wybranego rejestruje i pozwala zmodyfikować listę rejestrów, aby pokazać.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,33 +34,33 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Przełączniki
- / Wyświetlić [{`register`&#124;`registerGroup`}...]
+ / Wyświetlania [{`register`&#124;`registerGroup`} …]
 
- Wyświetla wartości z określonego `register` lub `registerGroup`. Jeśli nie `register` lub `registerGroup` jest określona, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie jest określony, zachowanie jest takie same. Na przykład:
+ Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie `register` lub `registerGroup` jest określony, wyświetlany jest domyślną listę rejestrów. Jeśli przełącznik nie zostanie określony, zachowanie jest takie same. Na przykład:
 
  `Debug.ListRegisters /Display eax`
 
- jest równoważny
+ odpowiada wyrażeniu
 
  `Debug.ListRegisters eax`
 
  / List
 
- Wyświetla wszystkie grupy rejestru na liście.
+ Wyświetla wszystkie zarejestrować grupy na liście.
 
- / Obejrzyj [{`register`&#124;`registerGroup`}...]
+ / Obejrzyj [{`register`&#124;`registerGroup`} …]
 
- Dodaje co najmniej jeden `register` lub `registerGroup` wartości do listy.
+ Dodaje jeden lub więcej `register` lub `registerGroup` wartości do listy.
 
- / Unwatch [{`register`&#124;`registerGroup`}...]
+ / Cofnijwyrażeniekontrolne [{`register`&#124;`registerGroup`} …]
 
  Usuwa jeden lub więcej `register` lub `registerGroup` wartości z listy.
 
 ## <a name="remarks"></a>Uwagi
- Alias `r` można użyć zamiast `Debug.ListRegisters`.
+ Alias `r` mogą być używane zamiast `Debug.ListRegisters`.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie użyto `Debug.ListRegisters` alias `r` do wyświetlania wartości rejestru grupy `Flags`.
+ W tym przykładzie użyto `Debug.ListRegisters` alias `r` do wyświetlania wartości grupy rejestru `Flags`.
 
 ```cmd
 r /Display Flags
@@ -71,4 +70,4 @@ r /Display Flags
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Podstawy debugowania: Okno rejestrów](../../debugger/debugging-basics-registers-window.md)
-- [Porady: Korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)
+- [Instrukcje: Korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)

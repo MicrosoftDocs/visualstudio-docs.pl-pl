@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::RemoveAllSetExceptions | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::RemoveAllSetExceptions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d569362de2e71a462bcfe90bd5c7180256f981b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c870c158a0ad3bcd0769c9bf9c0e0e4595a9c9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873807"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 Usuwa listy wyjątków, ustawionych przez środowisko IDE dla określonej architektury środowiska wykonawczego lub języka.  
@@ -28,13 +25,13 @@ Usuwa listy wyjątków, ustawionych przez środowisko IDE dla określonej archit
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT RemoveAllSetExceptions(   
+HRESULT RemoveAllSetExceptions(   
    REFGUID guidType  
 );  
 ```  
   
 ```csharp  
-int RemoveAllSetExceptions(   
+int RemoveAllSetExceptions(   
    ref Guid guidType  
 );  
 ```  

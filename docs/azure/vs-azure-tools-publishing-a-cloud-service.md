@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b90a0dcaaafa2b3d83c949592951e564fce974f2
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: eee8ca669384f202fe430f4ec836f8e4b1fea9c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923093"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publikowanie usługi w chmurze za pomocą programu Visual Studio
 
@@ -33,7 +32,7 @@ Publikowanie aplikacji platformy Azure i zaktualizuj rolę sieci web za pomocą 
 
 Podczas publikowania aplikacji systemu Azure, możesz wykonać jedną z następujących czynności:
 
-- Utwórz pakiet usługi: można użyć tego pakietu i pliku konfiguracji usługi, aby opublikować aplikację w środowisku wdrażania z [witryny Azure portal](https://portal.azure.com).
+- Utwórz pakiet usługi: Można użyć tego pakietu i pliku konfiguracji usługi, aby opublikować aplikację w środowisku wdrażania z [witryny Azure portal](https://portal.azure.com).
 
 - Publikowanie projektu platformy Azure z programu Visual Studio: Aby opublikować aplikację bezpośrednio na platformie Azure, należy użyć Kreatora publikacji. Aby uzyskać informacje, zobacz [Kreator publikowania aplikacji Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
@@ -69,13 +68,13 @@ Zaktualizuj rolę sieci web w projekcie w przypadku infrastruktury zaplecza apli
 
 ### <a name="requirements-for-using-web-deploy"></a>Wymagania dotyczące korzystania z narzędzia Web Deploy
 
-- **Do tworzenia i testowania wyłącznie do celów**: zmiany zostaną wprowadzone bezpośrednio do maszyny wirtualnej, którym jest uruchomiona rola sieci web. Jeśli ta maszyna wirtualna ma zostać odzyskany, zmiany zostaną utracone, ponieważ oryginalny pakiet, który został opublikowany jest używana do odtworzenia maszyny wirtualnej dla roli. Ponownie opublikować aplikację, aby pobrać najnowsze zmiany w roli sieci web.
+- **Do tworzenia i testowania wyłącznie do celów**: Zmiany zostaną wprowadzone bezpośrednio do maszyny wirtualnej, w którym jest uruchomiona rola sieci web. Jeśli ta maszyna wirtualna ma zostać odzyskany, zmiany zostaną utracone, ponieważ oryginalny pakiet, który został opublikowany jest używana do odtworzenia maszyny wirtualnej dla roli. Ponownie opublikować aplikację, aby pobrać najnowsze zmiany w roli sieci web.
 
-- **Można aktualizować tylko role sieci web**: nie można zaktualizować ról procesów roboczych. Ponadto nie można zaktualizować `RoleEntryPoint` w `web role.cs`.
+- **Można aktualizować tylko role sieci web**: Nie można zaktualizować ról procesów roboczych. Ponadto nie można zaktualizować `RoleEntryPoint` w `web role.cs`.
 
-- **Może obsługiwać tylko jedno wystąpienie roli sieci web**: nie może mieć wiele wystąpień dowolnej roli sieci web w środowisku wdrażania. Wiele ról sieci web każdy tylko z jednym wystąpieniem są jednak obsługiwane.
+- **Może obsługiwać tylko jedno wystąpienie roli sieci web**: Nie może mieć wiele wystąpień dowolnej roli sieci web w środowisku wdrażania. Wiele ról sieci web każdy tylko z jednym wystąpieniem są jednak obsługiwane.
 
-- **Włączenie połączeń pulpitu zdalnego**: wymaganie to umożliwia, narzędzie Web Deploy na potrzeby połączenia z maszyną wirtualną, aby wdrożyć zmiany dla serwera, na którym działa program Internet Information Services (IIS) użytkownika i hasło. Ponadto może być konieczne łączenie z maszyną wirtualną, aby dodać zaufany certyfikat usług IIS na tej maszynie wirtualnej. (Ten certyfikat zapewnia to bezpieczne połączenia zdalnego dla usług IIS, która jest używana przez narzędzia Web Deploy).
+- **Włączenie połączeń pulpitu zdalnego**: Wymaganie to umożliwia, narzędzie Web Deploy na potrzeby połączenia z maszyną wirtualną, aby wdrożyć zmiany dla serwera, na którym działa program Internet Information Services (IIS) użytkownika i hasło. Ponadto może być konieczne łączenie z maszyną wirtualną, aby dodać zaufany certyfikat usług IIS na tej maszynie wirtualnej. (Ten certyfikat zapewnia to bezpieczne połączenia zdalnego dla usług IIS, która jest używana przez narzędzia Web Deploy).
 
 W poniższej procedurze przyjęto, że używasz **publikowanie aplikacji platformy Azure** kreatora.
 

@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891063"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Porady: powiązywanie testów kontrolera lub agenta testowego z kartą sieciową
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Instrukcje: Powiąż kontroler testów lub agenta testowego z kartą sieciową
 
 Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie agenta testowego ma kilka kart sieciowych, należy określić adres IP zamiast nazwy komputera w celu identyfikacji tego testu kontrolera lub agenta testowego.
 
@@ -135,5 +134,5 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
 - [Modyfikowanie ustawień rejestrowania testu obciążeniowego](../test/modify-load-test-logging-settings.md)
 - [Konfigurowanie portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Porady: określanie maksymalnego rozmiaru pliku dziennika](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Porady: Określanie limitów czasu dla kontrolerów testów i agentów testowych](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Instrukcje: Określ maksymalny rozmiar pliku dziennika](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Instrukcje: Określanie limitów czasu dla kontrolerów testów i agentów testowych](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

@@ -1,8 +1,6 @@
 ---
 title: OnError — Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#OnError
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c33f32e46621bb2f56231b2c992712fd42126f1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43e76a9ffece66a6330b634bb982ec14b10b803c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924556"
 ---
 # <a name="onerror-element-msbuild"></a>OnError — element (MSBuild)
 Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` atrybut jest `false` dla zadania nie powiodło się.  

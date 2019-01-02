@@ -2,7 +2,6 @@
 title: Tworzenie szablonów internetowych
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -12,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 052e9daa7911051138e831436cad23de7ae7ee8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921854"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Porady: ręczne tworzenie szablonów sieci web
+# <a name="how-to-manually-create-web-templates"></a>Instrukcje: Ręczne tworzenie szablonów sieci web
 
 Tworzenie szablonu sieci web jest inny niż tworzenie innych rodzajów szablonów. Ponieważ szablony projektów internetowych są wyświetlane w **Dodaj nową witrynę sieci Web** okno dialogowe, a projekt sieci web, które elementy są pogrupowane według języka programowania, *vstemplate* pliku należy określić szablon jako szablon sieci web i zidentyfikować języka programowania.
 

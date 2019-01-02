@@ -1,22 +1,21 @@
 ---
-title: Projektant przepływu pracy — projektantów działań transakcji
+title: Projektant przepływu pracy — Projektanci działań Transaction
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6019675929870309c48398a12dbb43f6c34fce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8bf5d3042d6d8556ed63d1fe97f17e924049e96a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922945"
 ---
-# <a name="transaction-activity-designers"></a>Projektanci działań transakcji
+# <a name="transaction-activity-designers"></a>Projektanci działań Transaction
 
-Działanie transakcji, które projektantów są używane do tworzenia i konfigurowania transakcyjne działań takich jak kompensacji i potwierdź. Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawierają wskazówki dotyczące sposobu używania projektanta przepływów pracy działania i projektantom szablonu.
+Działania transakcji, projektantów są używane do tworzenia i konfigurowania transakcyjnych działań, takich jak wyrównania i potwierdź. Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawiera wskazówek na temat korzystania z projektanta przepływów pracy działania i projektanci szablonu.

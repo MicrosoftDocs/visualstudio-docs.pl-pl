@@ -1,9 +1,6 @@
 ---
 title: Model obiektu Word — omówienie
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922280"
 ---
 # <a name="word-object-model-overview"></a>Model obiektu Word — omówienie
   Podczas opracowywania rozwiązań programu Word w programie Visual Studio możesz korzystać z modelu obiektów programu Word. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowy zestaw międzyoperacyjny dla programu Word i są definiowane w <xref:Microsoft.Office.Interop.Word> przestrzeni nazw.  
@@ -122,7 +119,7 @@ ms.locfileid: "49878014"
  Aby uzyskać pełne informacje na temat modelu obiektów programu Word mogą odwoływać się do programu Word odwołanie do zestawu podstawowej usługi międzyoperacyjnej (PIA) i Visual Basic for Applications (VBA) odwołania do modelu obiektu.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do zestawu podstawowej usługi międzyoperacyjnej  
- Dokumentacja referencyjna programu Word PIA opisano typy w podstawowy zestaw międzyoperacyjny dla programu Word. Ta dokumentacja jest dostępna z następującej lokalizacji: [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ Dokumentacja referencyjna programu Word PIA opisano typy w podstawowy zestaw międzyoperacyjny dla programu Word. Ta dokumentacja jest dostępna z następującej lokalizacji: [Odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Aby uzyskać więcej informacji na temat projektowania PIA słowa, takie jak różnice między klasami i interfejsy, które PIA i sposobu implementacji zdarzenia w PIA, zobacz [Przegląd klasy i interfejsy podstawowe zestawy międzyoperacyjne pakietu Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -140,5 +137,3 @@ ms.locfileid: "49878014"
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

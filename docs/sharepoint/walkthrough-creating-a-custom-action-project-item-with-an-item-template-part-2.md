@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2 | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913939"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem elementu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu można dodać nowe wystąpienie elementu projektu do projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.  
   
- W tym przewodniku kreatora zostanie dodany do niestandardowej akcji elementu projektu, która została przedstawiona w [wskazówki: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Gdy użytkownik doda niestandardowej akcji elementu projektu do projektu programu SharePoint, Kreator zbiera informacje o akcji niestandardowej (na przykład lokalizacji i adres URL do nawigacji po użytkownik końcowy ją wybierze) i dodaje te informacje do *Elements.xml* plików do nowego elementu projektu.  
+ W tym przewodniku kreatora zostanie dodany do elementu projektu Akcja niestandardowa, która została przedstawiona w [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Gdy użytkownik doda niestandardowej akcji elementu projektu do projektu programu SharePoint, Kreator zbiera informacje o akcji niestandardowej (na przykład lokalizacji i adres URL do nawigacji po użytkownik końcowy ją wybierze) i dodaje te informacje do *Elements.xml* plików do nowego elementu projektu.  
   
  W tym instruktażu pokazano następujące zagadnienia:  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296245"
 >  Możesz pobrać próbkę z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) pokazujący sposób tworzenia działań niestandardowych do przepływu pracy.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby wykonać ten Instruktaż, należy najpierw utworzyć rozwiązanie CustomActionProjectItem, wykonując [wskazówki: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+ Aby wykonać ten Instruktaż, należy najpierw utworzyć rozwiązanie CustomActionProjectItem, wykonując [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Wymagane są również następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:  
   
@@ -50,12 +47,12 @@ ms.locfileid: "51296245"
   
   Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
   
-- Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md) i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.  
+- Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md) i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.  
   
 - Akcje niestandardowe w programie SharePoint. Aby uzyskać więcej informacji, zobacz [Akcja niestandardowa](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Utwórz projekt Kreatora
- Do przeprowadzenia tego instruktażu, należy dodać projekt do rozwiązania CustomActionProjectItem, który został utworzony w [wskazówki: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Zostaną zaimplementowane <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejs i zdefiniuj Kreatora interfejsu użytkownika w tym projekcie.  
+ Do przeprowadzenia tego instruktażu, należy dodać projekt do rozwiązania CustomActionProjectItem, który został utworzony w [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Zostaną zaimplementowane <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejs i zdefiniuj Kreatora interfejsu użytkownika w tym projekcie.  
   
 #### <a name="to-create-the-wizard-project"></a>Aby utworzyć projekt Kreatora  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296245"
   
 2.  W **projektanta projektu**, upewnij się, że platforma docelowa jest ustawiona na .NET Framework 4.5.  
   
-     Projekty Visual C#, tę wartość można ustawić na **aplikacji** kartę. Projekty języka Visual Basic tę wartość można ustawić na **skompilować** kartę. Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Projekty Visual C#, tę wartość można ustawić na **aplikacji** kartę. Projekty języka Visual Basic tę wartość można ustawić na **skompilować** kartę. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  W **ItemTemplateWizard** projektu, Dodaj **okno (WPF)** elementu do projektu, a następnie nadaj nazwę elementu **WizardWindow**.  
   
@@ -349,6 +346,5 @@ ms.locfileid: "51296245"
  [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Identyfikatory i domyślne lokalizacje niestandardową akcję](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

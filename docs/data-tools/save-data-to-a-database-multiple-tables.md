@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924803"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 
@@ -79,7 +78,7 @@ Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**. Przypi
 
 ## <a name="create-the-data-source"></a>Utwórz źródło danych
 
-Spowoduje to utworzenie źródła danych z bazy danych Northwind przy użyciu **Kreatora konfiguracji źródła danych**. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/installing-database-systems-tools-and-samples.md).
+Spowoduje to utworzenie źródła danych z bazy danych Northwind przy użyciu **Kreatora konfiguracji źródła danych**. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [jak: Zainstalować przykładowe bazy danych](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Na **danych** menu, wybierz opcję **Pokaż źródła danych**.
 
@@ -154,7 +153,7 @@ Zaktualizuj bazy danych, wywołując `Update` metody **klientów** i **zamówien
 
 2. Należy wprowadzić pewne zmiany do danych z co najmniej jednego rekordu w każdej tabeli.
 
-3. Wybierz **Zapisz** przycisku.
+3. Wybierz ikonę **Zapisz**.
 
 4. Sprawdź wartości w bazie danych, aby sprawdzić, czy zmiany zostały zapisane.
 

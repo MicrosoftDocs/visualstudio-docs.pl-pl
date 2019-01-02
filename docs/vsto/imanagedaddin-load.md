@@ -1,9 +1,6 @@
 ---
 title: IManagedAddin::Load
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1ea659d59e780beba3949e7cae363affa312c17
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67a1f330862ad6156d85a8f86afcfe863d776850
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924452"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Wywołuje się, gdy jest ładowany zarządzanych dodatku narzędzi VSTO.  
@@ -51,5 +48,3 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="see-also"></a>Zobacz także  
  [Imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)  
-  
-  

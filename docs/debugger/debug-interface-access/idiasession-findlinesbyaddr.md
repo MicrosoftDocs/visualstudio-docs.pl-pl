@@ -1,8 +1,6 @@
 ---
 title: Idiasession::findlinesbyaddr — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29718d355e1b6afb1f85fbb27b5d7b5dc7cfd610
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8b6735d51d993b60c55170af38943986526c5d1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923747"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Pobiera wierszy w określonej compiland —, które zawierają określony adres.  
@@ -27,7 +25,7 @@ Pobiera wierszy w określonej compiland —, które zawierają określony adres.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT findLinesByAddr (   
+HRESULT findLinesByAddr (   
    DWORD                 seg,  
    DWORD                 offset,  
    DWORD                 length,  

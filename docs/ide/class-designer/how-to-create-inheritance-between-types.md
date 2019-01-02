@@ -1,8 +1,7 @@
 ---
-title: 'Porady: Tworzenie dziedziczenia pomiędzy typami (Projektant klas)'
+title: 'Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -15,43 +14,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925566"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Porady: Tworzenie dziedziczenia pomiędzy typami w Projektancie klas
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami w Projektancie klas
 
-Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy przy użyciu **Projektant klas**, Uzyskuj dostęp do typu podstawowego jego pochodny typ lub typy. Może mieć relację dziedziczenia między dwiema klasami, między klasą a interfejsem lub między dwa interfejsy.
+Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy przy użyciu **projektanta klas**, połączenie typu podstawowego z jego typu pochodnego lub typu. Może mieć relacji dziedziczenia między dwoma klasami, między klasą a interfejsem lub między dwa interfejsy.
 
-## <a name="to-create-an-inheritance-between-types"></a>Aby utworzyć dziedziczenia pomiędzy typami
+## <a name="to-create-an-inheritance-between-types"></a>Aby utworzyć dziedziczenia między typami
 
-1.  Z projektu w **Eksploratora rozwiązań**, otwórz plik diagramu (.cd) klasy.
+1.  Z projektu w **Eksploratora rozwiązań**, otwórz plik diagramu klasy (.cd).
 
-     Jeśli nie masz diagramu klas, należy go utworzyć. Zobacz [porady: Dodawanie diagramów klasy do projektów](how-to-add-class-diagrams-to-projects.md).
+     Jeśli nie masz diagram klas, należy go utworzyć. Zobacz [jak: Dodawanie diagramów klas do projektów](how-to-add-class-diagrams-to-projects.md).
 
-2.  W **przybornika**w obszarze **Projektant klas**, kliknij przycisk **dziedziczenia**.
+2.  W **przybornika**w obszarze **projektanta klas**, kliknij przycisk **dziedziczenia**.
 
-3.  Na diagramie klas Rysowanie linii dziedziczenia pomiędzy typami, które mają, zaczynając od:
+3.  Na diagramie klasy można narysować linię dziedziczenia między typami, które chcesz, zaczynając od:
 
-    -   Klasa pochodna do klasy podstawowej
+    -   Klasy pochodnej do klasy bazowej
 
-    -   Klasa implementująca jak zaimplementowany interfejs
+    -   Klasa implementująca zaimplementowanego interfejsu
 
-    -   Rozszerzanie interfejs do rozszerzonego interfejsu
+    -   Rozszerzanie interfejsu do rozszerzonego interfejsu
 
-4.  Opcjonalnie Jeśli typ pochodny od typu ogólnego, kliknij przycisk linii dziedziczenia. W **właściwości** ustaw **argumentów typu** właściwości pasuje do typu, który ma obowiązywać dla typu ogólnego.
+4.  W przypadku typ pochodny od typu ogólnego, opcjonalnie kliknij przycisk linii dziedziczenia. W **właściwości** oknie **argumentów typu** właściwość będzie pasował do typu odpowiedniego dla typu ogólnego.
 
     > [!NOTE]
-    > Jeśli nadrzędnej klasy abstrakcyjnej zawiera co najmniej jeden abstrakcyjny element członkowski, wszystkie abstrakcyjne elementy członkowskie są zaimplementowane jako dziedziczące klasy nieabstrakcyjnej.
+    > Jeśli klasa abstrakcyjna nadrzędny zawiera co najmniej jedną abstrakcyjną składową, wszystkie abstrakcyjne składowe są zaimplementowane jako nieabstrakcyjne klasy dziedziczące.
     >
-    >  Mimo że można Wizualizuj istniejące typy ogólne, nie można utworzyć nowych typów ogólnych. Nie można zmienić również parametry typu dla istniejących typów ogólnych.
+    >  Mimo że można wizualizować istniejące typy rodzajowe, nie można utworzyć nowych typów rodzajowych. Ponadto nie można zmienić parametrów typu dla istniejących typów rodzajowych.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Dziedziczenie](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Podstawowe informacje o dziedziczeniu](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Porady: wyświetlanie dziedziczenia pomiędzy typami](how-to-view-inheritance-between-types.md)
+- [Instrukcje: Wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)
 - [Klasy Visual C++ w Projektancie klas](visual-cpp-classes.md)

@@ -2,7 +2,6 @@
 title: Wyświetlanie danych w programie Blend
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924400"
 ---
 # <a name="display-data-in-blend"></a>Wyświetlanie danych w programie Blend
 
@@ -33,9 +32,9 @@ Przykładowe dane były wyświetlane na stronach sieci, podczas uruchamiania apl
 
 ![Włącz element menu podczas uruchamiania aplikacji](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **Obejrzyj krótki film wideo:** ![ikonę odtwarzania](../designers/media/bldadminconsoleinitialconfigicon.PNG) [utworzyć dane przykładowe od podstaw](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+ **Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [utworzyć dane przykładowe od podstaw](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
- **Obejrzyj krótki film wideo:** ![ikonę odtwarzania](../designers/media/bldadminconsoleinitialconfigicon.PNG) [mieszanie się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+ **Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [mieszanie się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="generate-sample-data-from-a-class"></a>Generowanie przykładowych danych z klasy
 
@@ -43,13 +42,13 @@ Jeśli utworzono już klas, które opisują strukturę danych, można wygenerowa
 
 Aby wygenerować dane przykładowe z klasy, należy otworzyć dokument XAML, a następnie w polu **danych** panelu, kliknij przycisk **utworzyć dane przykładowe** ![Utwórz przykładowe dane ikony](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) przycisk, a następnie kliknij przycisk **Utworzyć dane przykładowe z klas**.
 
-**Obejrzyj krótki film wideo:** ![ikonę odtwarzania](../designers/media/bldadminconsoleinitialconfigicon.PNG) [utworzyć dane przykładowe z klasy](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
+**Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [utworzyć dane przykładowe z klasy](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
-**Obejrzyj krótki film wideo:** ![ikonę odtwarzania](../designers/media/bldadminconsoleinitialconfigicon.PNG) [mieszały się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+**Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [mieszały się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="show-live-data-in-a-wpf-application"></a>Pokaż dane na żywo w aplikacji WPF
 
-**Obejrzyj krótki film wideo:** ![ikonę odtwarzania](../designers/media/bldadminconsoleinitialconfigicon.PNG) [tworzenie źródła danych XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
+**Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [tworzenie źródła danych XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Pokaż dane na żywo w app store lub telefonu
 

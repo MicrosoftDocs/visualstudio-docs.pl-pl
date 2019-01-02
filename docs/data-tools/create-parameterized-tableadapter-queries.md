@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d344fdd444a46b3e0434e70850946ef242864b0
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fc4164ff4cf88edad8c4b0e4e69a41fc18a0b58c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900216"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 
@@ -73,7 +72,7 @@ Tworzenie sparametryzowanych zapytań adaptera TableAdapter w **Projektanta obie
 
 5.  W **tekst zapytania** wpisz kwerendę, która przyjmuje parametry.
 
-6.  Wybierz **OK**.
+6.  Kliknij przycisk **OK**.
 
      Co formantu, aby parametr wejściowy, a co **obciążenia** przycisk są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontroli.
 

@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess2::Terminate | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::Terminate
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6ce0c0448a72d2511736ca221bafebfc3ecefe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aec9bb39b23fcaea1c44855c8e146292ac0f996
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932408"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 Kończy proces.  
@@ -28,8 +25,8 @@ Kończy proces.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT Terminate(   
-   void   
+HRESULT Terminate(   
+   void   
 );  
 ```  
   

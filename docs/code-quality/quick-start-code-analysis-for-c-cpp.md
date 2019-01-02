@@ -1,8 +1,7 @@
 ---
-title: 'Szybki start: Analiza kodu dla C/C++'
+title: 'Szybki Start: Analiza kodu C/C++'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,14 +11,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825204"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>Szybki start: analiza kodu C/C++
+# <a name="quickstart-code-analysis-for-cc"></a>Szybki start: Analiza kodu C/C++
 
 Aby poprawić jakość aplikacji, należy regularnie uruchamiania analizy kodu dla kodu C lub C++. To może pomóc w znalezieniu typowe problemy, naruszeń dobrą praktyką programowania lub usterki, które są trudne do odnajdywania za pomocą testowania. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ analiza kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu.
 

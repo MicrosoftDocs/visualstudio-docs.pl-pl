@@ -1,9 +1,6 @@
 ---
 title: IDebugPropertyCreateEvent2::GetDebugProperty | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyCreateEvent2::GetDebugProperty
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce698e59ef01f8595d34bc6a7381b190aaee0872
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7614cb66b9e4bbcb31804e78f2b24ebeee66473
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901834"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Pobiera nową właściwość.  
@@ -28,13 +25,13 @@ Pobiera nową właściwość.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetDebugProperty (   
+HRESULT GetDebugProperty (   
    IDebugProperty2** ppProperty  
 );  
 ```  
   
 ```csharp  
-int GetDebugProperty (   
+int GetDebugProperty (   
    out IDebugProperty2 ppProperty  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess2::CauseBreak | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::CauseBreak
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 594e945a0805e9d14a358d98cfeb9a207e3da76f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a52a360773443b1b179ad3cdec91f3924cedc9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923023"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 Żądania następnego program jest uruchomiony kod w ramach tego procesu, Zatrzymaj i wysłać [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) obiektem zdarzenia.  
@@ -28,13 +25,13 @@ ms.locfileid: "49856044"
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT CauseBreak(   
+HRESULT CauseBreak(   
    void  
 );  
 ```  
   
 ```csharp  
-int CauseBreak();  
+int CauseBreak();  
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620993582501e157bc8d53e5c295b4cfe5cb50d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0c084bf3bb9b28a6af0ddc1aa53c0707d8876966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827981"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Biorąc pod uwagę odpowiadającą mu wartość tagu, ta metoda zwraca wyliczenie symboli, które są zawarte w tej funkcji stub pod określonym adresem względnym wirtualnego.  
+Biorąc pod uwagę odpowiadająca wartość tagu, Metoda ta zwraca wyliczenie symboli, które są zawarte w tej funkcji klasy zastępczej w określonym względny adres wirtualny.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,19 +31,19 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>Parametry  
  `tagValue`  
- [in] Wartość wskaźnika tagu, dla której znajdują się rekordy symbol pointee.  
+ [in] Wartość tagu wskaźnika, dla której rekordy symbol pointee zostaną znalezione.  
   
  `rva`  
- [in] Adres rva, który służy do filtrowania symbole, które odnoszą się do zmiennej pointee o wartości określonego tagu.  
+ [in] Adres rva, która jest używana do filtrowania symboli, które odnoszą się do zmiennej pointee wartością określonego tagu.  
   
  `ppResult`  
- [out] Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który został zainicjowany z wynikiem.  
+ [out] Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który jest inicjowany z wynikiem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Tę metodę można wywołać tylko w systemie `IDiaSymbol` interfejs, który odpowiada funkcja stub akceleratora.  
+ Tę metodę należy wywołać tylko w systemach `IDiaSymbol` interfejs, który odnosi się do funkcji klasy zastępczej akceleratora.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   

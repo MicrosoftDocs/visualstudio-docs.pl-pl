@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 76cf2ff3cd5ab3f18f76a5c6ea68be2411b76d84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896334"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Porady: Dodawanie reguły progu za pomocą edytora testu obciążenia
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Instrukcje: Dodawanie reguły progu za pomocą edytora testu obciążenia
 
 Reguły progów w testach obciążenia porównanie wartości licznika wydajności za pomocą wartości stałej lub inną wartość licznika wydajności.
 
@@ -38,7 +37,7 @@ Reguły progów w testach obciążenia porównanie wartości licznika wydajnośc
 
      **Dodaj regułę progową** zostanie wyświetlone okno dialogowe.
 
-5.  Można wybrać spośród dwóch typów zasad: **Porównaj stałą** i **porównanie liczników**. Wybierz odpowiedni typ i ustaw wartości.
+5.  Możesz wybrać spośród dwóch typów zasad: **Porównanie ze stałą** i **porównanie liczników**. Wybierz odpowiedni typ i ustaw wartości.
 
     > [!NOTE]
     > Ustaw **alertu, gdy nastąpi przekroczenie** właściwości **True** do wskazania przekroczenia progu to problemu, lub **False** do wskazywania objętych poniżej wartości progowej problem.

@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: generowanie kodu przy użyciu szablonów tekstowych'
+title: 'Przewodnik: Generowanie kodu przy użyciu szablonów tekstowych'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5785dee0da189da4db7aad15ee8eff18b20ee49a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898089"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: generowanie kodu przy użyciu szablonów tekstowych
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: Generowanie kodu przy użyciu szablonów tekstowych
 
 Generowanie kodu można wygenerować kodu programu, która jest jednoznacznie określone i jeszcze można łatwo zmienić po zmianie modelu źródłowego. Kontrastu to przy użyciu alternatywnych techniki pisania absolutnie ogólny program, który akceptuje w pliku konfiguracji, który jest bardziej elastyczna, ale wyniki w kodzie, który nie jest tak łatwe do odczytu i zmienić, ani nie ma takich dobrą wydajność. W tym instruktażu pokazano tej korzyści.
 

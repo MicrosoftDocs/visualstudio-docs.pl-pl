@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane sortowanie danych w arkuszach'
-ms.custom: ''
+title: 'Instrukcje: Programowe sortowanie danych w arkuszach'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d895f7ba8e192361ea262263af053da868a21e65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960592"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Porady: programowane sortowanie danych w arkuszach
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Instrukcje: Programowe sortowanie danych w arkuszach
   Można sortować dane znajdujące się na listach i zakresach arkusza w czasie wykonywania. Poniższy kod sortuje zakres wielokolumnowych o nazwie `Fruits` przez dane w pierwszej kolumnie, a następnie dane w drugiej kolumnie.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -66,11 +63,9 @@ ms.locfileid: "49914219"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Porady: programowane automatyczne wypełnienie zakresów przyrostowo zmieniającymi się danymi](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Porady: programowane odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Porady: programowane stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Instrukcje: Programowe automatyczne wypełnienie zakresów przyrostowo zmieniającymi się danymi](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Instrukcje: Programowe odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Instrukcje: Programowe stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
  [ListObject — formant](../vsto/listobject-control.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

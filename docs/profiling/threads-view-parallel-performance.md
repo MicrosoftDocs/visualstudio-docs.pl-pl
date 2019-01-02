@@ -1,8 +1,6 @@
 ---
 title: Wątki widoku w Wizualizatorze współbieżności | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7cf5cf0534a0e989b65d6e67451fe2a7c496ab
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6302adfab98b343e34e042f0294ec509b232b951
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891790"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Widok wątków w Wizualizatorze współbieżności
 

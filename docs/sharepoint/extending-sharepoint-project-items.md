@@ -1,9 +1,6 @@
 ---
 title: Rozszerzanie pozycji projektu SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,31 +14,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b83d5f92a54d58aae2d4c7860e6648920615d63f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d02871b991c999c490aac8aaeafc677711c95266
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959975"
 ---
 # <a name="extend-sharepoint-project-items"></a>Rozszerzanie elementów projektu programu SharePoint
   Tworzenie rozszerzenia elementu projektu, jeśli chcesz dodać funkcje do typu elementu projektu programu SharePoint, która jest już zainstalowana w programie Visual Studio. Na przykład można utworzyć rozszerzenia dla wbudowanej **odbiorcy zdarzeń** lub **definicji listy** elementy projektu w programie Visual Studio lub można utworzyć rozszerzenia dla typu elementu niestandardowego projektu. Można również utworzyć rozszerzenia dla wszystkich typów elementów projektu programu SharePoint.  
   
 ## <a name="tasks-for-extending-sharepoint-project-items"></a>Zadania dla rozszerzanie pozycji projektu SharePoint
- Tworzenie zestawu rozszerzeń programu Visual Studio, który implementuje rozszerzenie elementu projektu, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfejsu. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Tworzenie zestawu rozszerzeń programu Visual Studio, który implementuje rozszerzenie elementu projektu, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfejsu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
  Rozszerzenie elementu projektu, można również dodać następujące funkcje do elementu projektu:  
   
-- Dodaj element menu skrótów do elementu projektu. Element menu pojawia się po otwarciu menu skrótów dla elementu projektu w **Eksploratora rozwiązań**. Otwórz menu skrótów, klikając prawym przyciskiem myszy element projektu lub wybierając je, a następnie wybierając **Shift**+**F10** kluczy. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu programu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
+- Dodaj element menu skrótów do elementu projektu. Element menu pojawia się po otwarciu menu skrótów dla elementu projektu w **Eksploratora rozwiązań**. Otwórz menu skrótów, klikając prawym przyciskiem myszy element projektu lub wybierając je, a następnie wybierając **Shift**+**F10** kluczy. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu programu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
   
-- Dodawanie właściwości niestandardowych do elementu projektu. Właściwość pojawia się w **właściwości** okna po wybraniu elementu projektu w **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
+- Dodawanie właściwości niestandardowych do elementu projektu. Właściwość pojawia się w **właściwości** okna po wybraniu elementu projektu w **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
   
-  Aby uzyskać wskazówki, które pokazuje, jak tworzenie, wdrażanie i testowanie rozszerzenia elementu projektu, zobacz [przewodnik: rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
+  Aby uzyskać wskazówki, które pokazuje, jak tworzenie, wdrażanie i testowanie rozszerzenia elementu projektu, zobacz [instruktażu: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Zrozumienie relacji między rozszerzenia elementu projektu i wystąpienia elementów projektu
  Podczas tworzenia rozszerzenia elementu projektu programu Visual Studio wczytuje Twojego rozszerzenia, gdy element projektu o skojarzony typ zostanie dodany do projektu programu SharePoint. Na przykład, jeśli tworzysz rozszerzenie **odbiorcy zdarzeń** elementów projektu programu Visual Studio wczytuje Twojego rozszerzenia, gdy użytkownik doda **odbiorcy zdarzeń** element projektu do projektu. Visual Studio używa tego samego wystąpienia rozszerzenia dla wszystkich wystąpień tego typu elementu skojarzonego projektu. W poprzednim przykładzie, jeśli użytkownik doda sekundy **odbiorcy zdarzeń** element projektu do projektu, to samo wystąpienie elementu rozszerzenia jest używany do dostosowywania drugiego elementu projektu.  
   
- Dostęp do określonego wystąpienia typu elementu projektu, rozszerzania, obsługiwać jeden z <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> zdarzenia *projectItemType* parametru w danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody. Na przykład, aby określić, kiedy rozszerzania typu elementu projektu jest dodawany do projektu, obsługę <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> zdarzeń. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Dostęp do określonego wystąpienia typu elementu projektu, rozszerzania, obsługiwać jeden z <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> zdarzenia *projectItemType* parametru w danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody. Na przykład, aby określić, kiedy rozszerzania typu elementu projektu jest dodawany do projektu, obsługę <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> zdarzeń. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identyfikatory elementów projektu programu SharePoint
  Każdy element projektu programu SharePoint ma odpowiedni identyfikator ciągu. Identyfikator elementu projektu musisz wiedzieć, aby wykonać następujące zadania:  
@@ -68,9 +65,8 @@ ms.locfileid: "49823635"
 |Formularz skojarzenia przepływu pracy|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
 ## <a name="see-also"></a>Zobacz także
- [Porady: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Porady: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
- [Porady: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
+ [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Instrukcje: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Instrukcje: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [Przewodnik: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
-  

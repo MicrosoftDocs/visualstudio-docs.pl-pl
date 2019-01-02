@@ -1,8 +1,6 @@
 ---
 title: Idiasectioncontrib::get_code — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 122b9ad10413e9ba89bf309011e2449e9f6707fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 207eb1768f298421cc4ec9c6887065f4aafb51fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828475"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 Pobiera flagę wskazującą, czy sekcja zawiera kod wykonywalny.  
@@ -27,7 +25,7 @@ Pobiera flagę wskazującą, czy sekcja zawiera kod wykonywalny.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_code (   
+HRESULT get_code (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
 title: '&lt;zależność&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e210b0787c3325a009bc54505812f22c44da84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834168"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależność&gt; — element (wdrażanie ClickOnce)
 Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście aplikacji.  

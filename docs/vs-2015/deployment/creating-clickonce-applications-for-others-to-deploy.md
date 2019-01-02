@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 187ef43dd4b19d45feabbe75ae05ec1af3cc4ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862089"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826700"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Nie wszyscy deweloperzy, którzy tworzą wdrożeń technologii ClickOnce firma z
   
  Przy użyciu certyfikatu z podpisem własnym do manifestu wdrażania przedstawia kilka zalet. Dzięki wyeliminowaniu konieczności dla klienta uzyskać lub utworzyć własne certyfikatu Authenticode `<useManifestForTrust>` upraszcza wdrażanie klienta, zapewniając dla deweloperów do obsługi własnej marki tożsamości w aplikacji. Wynik jest zestaw podpisem wdrożeń, które są bardziej bezpieczne i korzystają z tożsamości aplikacji unikatowy. Pozwala to wyeliminować potencjalnych konfliktów, które mogą wystąpić z wdrażanie tej samej aplikacji dla wielu klientów.  
   
- Aby uzyskać szczegółowe informacje o sposobie tworzenia składników wdrożenia ClickOnce za pomocą `<useManifestForTrust>` włączone, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce, że jest nie wymagają Re-Signing i że zachowuje informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Aby uzyskać szczegółowe informacje o sposobie tworzenia składników wdrożenia ClickOnce za pomocą `<useManifestForTrust>` włączone, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Jak aplikacja manifestu dla relacji zaufania działa w czasie wykonywania  
  Aby uzyskać lepsze zrozumienie sposobu działania dla zaufania przy użyciu manifest aplikacji w czasie wykonywania, rozważmy następujący przykład. Aplikacji ClickOnce, który jest przeznaczony dla .NET Framework 3.5 jest tworzone przez firmę Microsoft. Manifest aplikacji używa `<useManifestForTrust>` elementu i jest podpisany przez firmę Microsoft. Firma Adventure Works podpisuje manifest wdrożenia przy użyciu certyfikatu z podpisem własnym. Adventure Works, klienci są skonfigurowani do zaufania dowolnej aplikacji podpisane przez firmę Microsoft.  
@@ -107,8 +107,8 @@ Nie wszyscy deweloperzy, którzy tworzą wdrożeń technologii ClickOnce firma z
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażanie aplikacji ClickOnce do testowania i obsługi serwerów produkcyjnych bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
- [Wskazówki: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Przewodnik: ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)
 
 
 

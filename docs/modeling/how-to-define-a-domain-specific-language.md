@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959498"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć rozwiązanie programu Visual Studio z szablonu. Kluczowym elementem rozwiązania jest diagramem definicji DSL, który jest przechowywany w DslDefinition.dsl. W definicji DSL definiuje klasy i kształty język DSL. Po zmodyfikowaniu i dodawane do tych elementów, można dodać kod programu, aby dostosować DSL bardziej szczegółowo.
 
-Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Wybieranie szablonu rozwiązania
  Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
@@ -169,9 +168,9 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
 |Sposób wyświetlania elementu|Klasa nadrzędna (osadzanie)|Przykład szablonu rozwiązania dotyczącego języka DSL|
 |-|-|-|
-|Kształt na diagramie.<br /><br /> Swimlane.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadanie: Klasa aktora.|
-|Kształt w toru.|Klasa domeny elementów, które są wyświetlane jako ścieżek.|Przepływ zadań: Zadania klasy.|
-|Element na liście w kształcie, gdy element zostanie usunięty po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowana na kształt kontenera.|Diagram klas: klasy atrybutu.<br /><br /> Diagram składników: Port klasy.|
+|Kształt na diagramie.<br /><br /> Swimlane.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadań: Klasa aktora.|
+|Kształt w toru.|Klasa domeny elementów, które są wyświetlane jako ścieżek.|Przepływ zadań: Klasa zadania.|
+|Element na liście w kształcie, gdy element zostanie usunięty po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowana na kształt kontenera.|Diagram klasy: Klasy atrybutu.<br /><br /> Diagram składników: Klasa portu.|
 |Element na liście, nie zostanie usunięty po usunięciu kontenera.|Klasa główna DSL.<br /><br /> Na liście zostaną wyświetlone linki odwołań.||
 |Nie bezpośrednio wyświetlane.|Klasy, które wchodzi w skład części.||
 
@@ -187,7 +186,7 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 >  Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy funkcje z obiektów nadrzędnych.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Dodawanie właściwości domeny do każdej klasy domeny
- Właściwości domeny przechowywać wartości. Przykładami są: nazwa, tytuł, niż data publikacji.
+ Właściwości domeny przechowywać wartości. Oto przykłady: Nazwa, nazwa, Data publikacji.
 
  Kliknij przycisk **właściwości domeny** w klasie, naciśnij klawisz ENTER, a następnie wpisz nazwę właściwości. Domyślny typ właściwości domeny jest ciąg. Jeśli chcesz zmienić typ, wybierz właściwość domeny i ustaw **typu** w **właściwości** okna. Jeśli typ, który ma nie znajduje się na liście rozwijanej, zobacz [dodanie typów właściwości](#addTypes).
 
@@ -409,7 +408,7 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
    Po przetestowaniu najpierw łącznik, możesz chcieć dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a> Definiowanie kształtów, które zawierają listy: kształtów przedziałów
+## <a name="compartments"></a> Definiowanie kształtów, które zawierają listy: Kształtów przedziałów
  Kształt przedziału zawiera jedną lub więcej list elementów. Na przykład w języku DSL biblioteki utworów muzycznych wystarczą kształtów przedziałów do reprezentowania utworów muzycznych albumy. W przypadku każdego albumu ma listę utworów.
 
  ![Kształt przedziału](../modeling/media/compartmentshape.png)
@@ -605,7 +604,7 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
  Dlatego należy pamiętać, że zmiana niektórych relacji w definicji DSL, nie jest niczym niezwykłym, błędy, należy podać podczas zapisywania definicji lub gdy Transformuj wszystkie szablony. Większość z tych błędów jest łatwo rozwiązać. Kliknij dwukrotnie raport o błędach, aby zobaczyć pozycję Lokalizacja błędu.
 
- Zobacz też [porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Zobacz też [jak: Zmień Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Rozwiązywanie problemów
  Poniższa lista zawiera niektóre z najczęściej występujących problemów napotkanych podczas projektowania DSL, wraz z sugestie dotyczące ich rozwiązania. Więcej porad jest dostępny na [Extensibililty Forum narzędzia wizualizacji](http://go.microsoft.com/fwlink/?LinkId=186074).
@@ -619,7 +618,7 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 | Po utworzeniu klasy domeny, ale nie można utworzyć wystąpienia w Eksploratorze języka. | Każda klasa domeny, z wyjątkiem głównego musi być elementem docelowym relacji osadzania. |
 | W Eksploratorze dla mojego języka DSL elementy są wyświetlane tylko w przypadku ich nazwy typu. | W definicji DSL wybierz właściwość domeny klasy, a w oknie właściwości ustaw oknie **jest nazwa elementu** na wartość true. |
 | Moje DSL zawsze zostanie otwarty w edytorze XML. | Może to nastąpić z powodu błędu podczas odczytu pliku. Jednak mimo należy naprawić ten błąd, możesz jawnie zresetować edytora projektanta DSL.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz pozycję * YourLanguage ***projektanta (ustawienie domyślne)**. |
-| Przybornik Moje DSL nie pojawia się po zmianie nazwy zestawu. | Sprawdzić i zaktualizować **DslPackage\GeneratedCode\Package.tt** Aby uzyskać więcej informacji, zobacz [porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| Przybornik Moje DSL nie pojawia się po zmianie nazwy zestawu. | Sprawdzanie i zaktualizuj **DslPackage\GeneratedCode\Package.tt** Aby uzyskać więcej informacji, zobacz [jak: Zmień Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | Przybornik Moje DSL nie pojawia się, ale nie uległy zmianie nazwy zestawu.<br /><br /> Lub pojawia się komunikat z raportowania błędów, które można załadować rozszerzenia. | Zresetuj wystąpienie eksperymentalne programu i ponownie skompiluj rozwiązanie.<br /><br /> 1.  Windows — w menu Start, w obszarze **wszystkie programy**, rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], następnie **narzędzia**, a następnie kliknij przycisk **Zresetuj Microsoft Visual Studio wystąpienie eksperymentalne programu**.<br />2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. |
 
 ## <a name="see-also"></a>Zobacz też

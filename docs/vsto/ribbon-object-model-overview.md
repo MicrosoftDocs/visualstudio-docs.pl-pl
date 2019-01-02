@@ -1,9 +1,6 @@
 ---
 title: Model obiektu Wstążka ― omówienie
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961312"
 ---
 # <a name="ribbon-object-model-overview"></a>Model obiektu Wstążka ― omówienie
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Udostępnia model silnie typizowany obiekt, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania. Na przykład użytkownik może dynamicznie wypełnianie kontrolek menu lub wyświetlania i ukrywania kontrolek kontekstowe. Na Wstążce, ale tylko w przypadku, przed załadowaniem wstążki według aplikacji pakietu Office, można dodać karty, grupy i formanty. Aby uzyskać informacje, zobacz [Ustaw właściwości, które stają się tylko do odczytu](#SettingReadOnlyProperties).  
@@ -58,7 +55,7 @@ ms.locfileid: "49910592"
 |**Lista rozwijana**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**Pole edycji**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Galeria**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**Grupy**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
+|**Grupa**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Etykieta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
@@ -190,13 +187,12 @@ ms.locfileid: "49910592"
 ## <a name="see-also"></a>Zobacz także  
  [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Wstążka — omówienie](../vsto/ribbon-overview.md)   
- [Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
  [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Wskazówki: Aktualizowanie kontrolek na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
- [Porady: dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Instrukcje: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Porady: dodatek Pokaż błędy interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Instrukcje: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)  

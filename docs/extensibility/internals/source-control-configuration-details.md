@@ -1,9 +1,6 @@
 ---
 title: Szczegóły konfiguracji kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85ba74ba9d9beabaefd22607df0fac6ebaaf2235
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca634ae50268a87f637dd812508ae793bad74115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894236"
 ---
 # <a name="source-control-configuration-details"></a>Szczegóły konfiguracji kontroli kodu źródłowego
 W celu wdrożenia kontroli źródła, należy poprawnie skonfigurować system projektu lub edytora, aby wykonać następujące czynności:

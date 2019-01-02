@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: tworzenie aplikacji warstwowych'
+title: 'Przewodnik: Tworzenie aplikacji warstwowych'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71c1c8dbaf34613d07ce29fa3f5e08d8e9c6961f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924270"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych
 *N-warstwowa* danych aplikacji są aplikacje, uzyskiwać dostęp do danych, które są rozdzielone na wiele warstw logiczne, lub *warstwy*. Rozdzielanie składników aplikacji na dyskretne warstwy, łatwość konserwacji i zwiększa skalowalność aplikacji. Dzieje się tak, należy włączyć ułatwia przyjęcie nowych technologii, które mogą być stosowane do poszczególnych warstw, bez konieczności zmiany projektu całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji, warstwy środkowej i warstwy danych. Warstwa środkowa zazwyczaj zawiera warstwy dostępu do danych, warstwy logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzania poprawności. Warstwa danych obejmuje relacyjnej bazy danych. N-warstwowych zazwyczaj przechowują wrażliwe informacje w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji użytkowników końcowych, którzy uzyskują dostęp warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
 
 Pierwszym sposobem rozdzielenia różnych warstw w n warstwowej aplikacji jest utworzenie dyskretnych projektów dla każdej warstwy, które mają zostać uwzględnione w aplikacji. Typizowanych elementów DataSet zawiera `DataSet Project` właściwość określający, które projekty wygenerowanego zestawu danych i `TableAdapter` kodu, należy przejść do.
@@ -50,7 +49,7 @@ Z tego instruktażu należy wykonać następujące czynności:
 
 -   Pisz kod, aby wypełnić tabele danych.
 
-![Link do wideo](../data-tools/media/playvideo.gif) wersja wideo tego tematu, zobacz [poradnik wideo: tworzenie aplikacji n warstwowa danych](http://go.microsoft.com/fwlink/?LinkId=115188).
+![Link do wideo](../data-tools/media/playvideo.gif) wersja wideo tego tematu, zobacz [poradnik wideo: Tworzenie aplikacji n warstwowa danych](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Northwind.
@@ -79,7 +78,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-2. Rozwiń **Visual C#**  lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
 
 3. W środkowym okienku wybierz **biblioteki klas** typ projektu.
 
@@ -106,7 +105,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
  Następnym krokiem jest, aby utworzyć typizowany zestaw danych. Typizowane zestawy danych są tworzone za pomocą klasy zestawu danych (w tym `DataTables` klasy) oraz `TableAdapter` klas w jednym projekcie. (Wszystkie klasy są generowane w jednym pliku). Po oddzieleniu zestawu danych i TableAdapters do różnych projektów, to klasa zestawu danych, która zostanie przeniesiony do innego projektu, pozostawiając `TableAdapter` klas w oryginalnym projekcie. W związku z tym należy utworzyć zestaw danych w projekcie, który ostatecznie będzie zawierać TableAdapters (projekcie DataAccessTier). Tworzenie zestawu danych przy użyciu **Kreatora konfiguracji źródła danych**.
 
 > [!NOTE]
-> Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące sposobu konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/installing-database-systems-tools-and-samples.md).
+> Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące sposobu konfigurowania przykładowej bazy danych Northwind, zobacz [jak: Zainstalować przykładowe bazy danych](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
 
@@ -156,7 +155,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 5. Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
 
-   Zestaw danych i TableAdapters są podzielone na dwie klasy projekty biblioteki. Projekt, który pierwotnie zawierał całego zestawu danych (`DataAccessTier`) zawiera teraz tylko adapterów TableAdapter. Projekt umieszczoną **projektu DataSet** właściwości (`DataEntityTier`) zawiera typizowany zestaw danych: *NorthwindDataSet.Dataset.Designer.vb* (lub  *NorthwindDataSet.Dataset.Designer.cs*).
+   Zestaw danych i TableAdapters są podzielone na dwie klasy projekty biblioteki. Projekt, który pierwotnie zawierał całego zestawu danych (`DataAccessTier`) zawiera teraz tylko adapterów TableAdapter. Projekt umieszczoną **projektu DataSet** właściwości (`DataEntityTier`) zawiera typizowany zestaw danych: *NorthwindDataSet.Dataset.Designer.vb* (lub *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie zostaną automatycznie przeniesione. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.
@@ -226,7 +225,7 @@ W tym instruktażu przedstawiono sposób dostępu do warstwy dostępu do danych 
  Teraz, gdy warstwa dostępu do danych zawiera metody, aby zwrócić dane, tworzyć metody w usłudze danych do wywołania metody w warstwie dostępu do danych.
 
 > [!NOTE]
-> Aby uzyskać C# projektów, należy dodać odwołanie do `System.Data.DataSetExtensions` zestawu dla następujący kod do skompilowania.
+> Dla projektów C#, należy dodać odwołanie do `System.Data.DataSetExtensions` zestawu dla następujący kod do skompilowania.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Aby utworzyć funkcji GetCustomers i GetOrders usługi danych
 

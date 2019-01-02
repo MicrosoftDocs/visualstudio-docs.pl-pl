@@ -2,7 +2,6 @@
 title: Trwa znajdowanie odwołań w kodzie
 ms.date: 09/26/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
@@ -12,42 +11,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac09eace078ef60f36bd57e9a2c4a1e5f1c510c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4f1e1e01721ae261b756bd6f3567b8f06dc73f12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921341"
 ---
 # <a name="find-references-in-your-code"></a>Znajdowanie odwołań w kodzie
 
-Można użyć **Znajdź wszystkie odwołania** polecenia można znaleźć, której elementy określonego kodu są przywoływane w całym baza kodu. **Znajdź wszystkie odwołania** polecenie jest dostępne w menu kontekstowym (kliknij prawym przyciskiem myszy) ma zostać odnaleziona odwołania do elementu. Lub, jeśli jesteś użytkownikiem klawiatury, naciśnij klawisz **Shift + F12**.
+Możesz użyć **Znajdź wszystkie odwołania** polecenie, aby dowiedzieć się, gdzie elementy określonego kodu do których istnieją odwołania w całej bazie kodu. **Znajdź wszystkie odwołania** polecenie jest dostępne w menu kontekstowym (kliknij prawym przyciskiem myszy), które ma zostać odnaleziona odwołania do elementu. Lub, jeśli jesteś użytkownikiem klawiatury, naciśnij klawisz **Shift + F12**.
 
-Wyniki są wyświetlane w oknie narzędzia o nazwie  **<element> odwołania**, gdzie *elementu* jest nazwa elementu, którego szukasz. Pasek narzędzi w **odwołania** okna umożliwia:
-- Zmień zakres wyszukiwania w polu listy rozwijanej. Można wybrać do przeszukania tylko zmienione dokumenty do całego rozwiązania.
-- Kopiuj wybrany element do którego istnieje odwołanie, wybierając **kopiowania** przycisku.
-- Wybierz przycisk, aby przejść do następnej lub poprzedniej lokalizacji na liście lub naciśnij klawisz **F8** i **Shift + F8** kluczy, aby to zrobić.
-- Usuń wszystkie filtry wyników zwróconych przez wybranie **wyczyść wszystkie filtry** przycisku.
-- Zmień sposób zwracane elementy są pogrupowane według wybranie ustawienia w **Grupuj według:** pole listy rozwijanej.
-- Zachowaj bieżące okno wyników wyszukiwania, wybierając **przechowywać wyniki** przycisku. Jeśli ten przycisk bieżące wyniki wyszukiwania pozostać w tym oknie, a nowe wyniki wyszukiwania są wyświetlane w nowym oknie narzędzia.
-- Wyszukiwanie ciągów w wynikach wyszukiwania, wprowadzając tekst w **wyszukiwania Znajdź wszystkie odwołania** pola tekstowego.
+Wyniki są wyświetlane w oknie narzędzi o nazwie  **<element> odwołania**, gdzie *elementu* jest nazwa elementu, którego szukasz. Pasek narzędzi w **odwołania** okno umożliwia:
+- Zmień zakres wyszukiwania w polu listy rozwijanej. Można szukać tylko zmienione dokumenty do całego rozwiązania.
+- Kopiuj wybrany element odwołania, wybierając **kopiowania** przycisku.
+- Wybierz przyciski, aby przejść do następnej lub poprzedniej lokalizacji na liście lub naciśnij **F8** i **Shift + F8** kluczy, aby to zrobić.
+- Usuń wszystkie filtry na zwróconych wynikach, wybierając **wyczyść wszystkie filtry** przycisku.
+- Zmień sposób zwrócone elementy są grupowane, wybierając ustawienia w **Grupuj według:** pole listy rozwijanej.
+- Zachowaj bieżące okno wyników wyszukiwania, wybierając **Zachowaj wyniki** przycisku. Po wybraniu tego przycisku, pozostają aktualne wyniki wyszukiwania, w tym oknie, a nowe wyniki wyszukiwania są wyświetlane w nowym oknie narzędzia.
+- Wyszukaj ciąg w wynikach wyszukiwania, wprowadzając tekst w **wyszukiwania Znajdź wszystkie odwołania** pola tekstowego.
 
-Można również ustawić kursor myszy nad dowolny wynik wyszukiwania, aby zobaczyć podgląd odwołania.
+Możesz również umieścić kursor myszy dowolny wynik wyszukiwania, aby wyświetlić podgląd odwołania.
 
-![Znajdź wszystkie odwołania okna narzędzi](../ide/media/vside_findallreferences.png)
+![Znajdź wszystkie odwołania do okna narzędzi](../ide/media/vside_findallreferences.png)
 
 ## <a name="navigate-to-references"></a>Przejdź do odwołania
-Można użyć następujących metod można przejść do odwołań w **odwołania** okno:
+Można użyć następujących metod można przejść do odwołań w **odwołania** okna:
 
-- Naciśnij klawisz **F8** aby przejść do następnego odwołanie, lub **Shift + F8** aby przejść do poprzedniej odwołania.
-- Naciśnij klawisz **Enter** klucza na odwołanie, lub kliknij dwukrotnie, aby przejść do niego w kodzie.
+- Naciśnij klawisz **F8** można przejść do następnego odwołanie, lub **Shift + F8** można przejść do poprzedniej odwołania.
+- Naciśnij klawisz **Enter** klucz odwołanie lub kliknij dwukrotnie, aby przejść do niego w kodzie.
 - W menu kontekstowym odwołanie, wybierz **przejdź do poprzedniej lokalizacji** lub **przejdź do następnej lokalizacji** poleceń.
-- Wybierz **Strzałka w górę** i **Strzałka w dół** kluczy (jeśli są one włączone w **opcje** okno dialogowe). Aby włączyć tę funkcję na pasku menu wybierz **narzędzia** > **opcje** > **środowiska**  >   **Karty i okna** > **kartę Podgląd**, a następnie wybierz **Zezwalaj na nowe pliki w karcie podglądu** i **Podgląd zaznaczonych plików w Wyniki Znajdź** pola.
+- Wybierz **Strzałka w górę** i **strzałkę w dół** kluczy (jeśli są one włączone w **opcje** okno dialogowe). Aby włączyć tę funkcję, na pasku menu wybierz **narzędzia** > **opcje** > **środowiska**  >   **Karty i Windows** > **karcie podglądu**, a następnie wybierz pozycję **Zezwalaj na nowe pliki były otwierane w karcie podglądu** i **Podgląd zaznaczonych plików w Znajdź wyniki** pola.
 
-## <a name="change-reference-groupings"></a>Zmiana grupy odwołania
-Domyślnie odwołania są pogrupowane według projektu, następnie przez definicję. Jednak to zamówienie grupowania można zmienić, zmieniając ustawienie w **Grupuj według:** pole listy rozwijanej na pasku narzędzi. Na przykład można zmienić go z ustawieniem domyślnym **następnie projektu definicji** do **definicji, a następnie projektu**, jak również do innych ustawień.
+## <a name="change-reference-groupings"></a>Zmień odwołania grupowania
+Domyślnie odwołania są pogrupowane według projektu, następnie zgodnie z definicją. Jednak ta kolejność grupowania można zmienić, zmieniając ustawienie w **Grupuj według:** pole listy rozwijanej na pasku narzędzi. Na przykład można zmienić go z ustawieniem domyślnym **projekt, a następnie definicja** do **definicja, a następnie projekt**, jak również do innych ustawień.
 
-**Definicja** i **projektu** są używane dwa domyślne grupowania, ale można dodać inne, wybierając **grupowanie** polecenia w menu kontekstowym wybranego elementu. Dodanie więcej grup może być przydatne, jeśli rozwiązanie zawiera wiele plików i ścieżek.
+**Definicja** i **projektu** są używane dwie domyślne grupowania, ale możesz dodać inne, wybierając **grupowanie** polecenia w menu kontekstowym wybranego elementu. Dodawanie więcej grupowań mogą być przydatne, jeśli rozwiązanie ma wiele plików i ścieżek.
 
 ## <a name="see-also"></a>Zobacz także
 

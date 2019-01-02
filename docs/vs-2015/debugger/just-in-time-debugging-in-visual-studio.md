@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -21,12 +20,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b89dd1e0a395e034fa2321269e4174da359b336
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ea9cb8b37c95153cc7a9509cced643c094fc7c20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960438"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +67,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 
 3. W **debugowanie** folderu, wybierz **Just-In-Time** strony.
 
-4. W **włączyć debugowanie just in Time tych rodzajów kodu** zaznacz lub wyczyść typy odpowiednich programów: **zarządzane**, **natywnych**, lub **skryptu**.
+4. W **włączyć debugowanie just in Time tych rodzajów kodu** zaznacz lub wyczyść typy odpowiednich programów: **Zarządzane**, **natywnych**, lub **skryptu**.
 
     Aby wyłączyć debugowanie po jego włączeniu Just-In-Time, musi działać z uprawnieniami administratora. Włączanie Just-In-Time debugging Ustawia klucz rejestru, a wymagane są uprawnienia administratora, aby zmienić ten klucz.
 
@@ -132,7 +131,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 
  Na potrzeby tej sekcji wprowadzimy aplikację konsoli C# w programie Visual Studio, które zgłasza <xref:System.NullReferenceException>.
 
- W programie Visual Studio, tworzenie aplikacji konsolowej C# (**plik / nowy / Project / Visual C# / Aplikacja konsoli**) o nazwie **ThrowsNullException**. Aby uzyskać więcej informacji dotyczących tworzeniu projektów w programie Visual Studio, zobacz [wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+ W programie Visual Studio, tworzenie aplikacji konsolowej C# (**plik / nowy / Project / Visual C# / Aplikacja konsoli**) o nazwie **ThrowsNullException**. Aby uzyskać więcej informacji dotyczących tworzeniu projektów w programie Visual Studio, zobacz [instruktażu: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
  Po otwarciu projektu w programie Visual Studio, otwórz plik Program.cs. Zastąp następujący kod, który wyświetla wiersz do konsoli i następnie zgłasza obiektu NullReferenceException metody Main():
 
@@ -202,4 +201,4 @@ static void Main(string[] args)
      Aby rozwiązać ten problem, należy użyć dysku instalacyjnego ponownie zainstalować lub naprawić instalację programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
- [Zabezpieczenia debugera](../debugger/debugger-security.md) [podstawy debugera](../debugger/debugger-basics.md) [Just-In-Time, debugowanie, okno dialogowe Opcje](../debugger/just-in-time-debugging-options-dialog-box.md) [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Zabezpieczenia debugera](../debugger/debugger-security.md) [podstawowe informacje o debugerze](../debugger/debugger-basics.md) [Just-In-Time, debugowanie, okno dialogowe Opcje](../debugger/just-in-time-debugging-options-dialog-box.md) [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)

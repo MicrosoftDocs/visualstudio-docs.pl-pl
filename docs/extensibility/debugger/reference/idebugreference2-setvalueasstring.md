@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::SetValueAsString | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::SetValueAsString
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b4c7af3a7cedd56b72032ad51ecc6ef4df04d8c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 508405cdcc55d57f010ed6d19218afeaae01fffb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846480"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Ustawia wartość odniesienia z ciągu. Zarezerwowane do użytku w przyszłości.  
@@ -28,7 +25,7 @@ Ustawia wartość odniesienia z ciągu. Zarezerwowane do użytku w przyszłości
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT SetValueAsString (   
+HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    DWORD     dwRadix,  
    DWORD     dwTimeout  
@@ -36,7 +33,7 @@ HRESULT SetValueAsString (
 ```  
   
 ```csharp  
-int SetValueAsString (   
+int SetValueAsString (   
    string pszValue,  
    uint   dwRadix,  
    uint   dwTimeout  

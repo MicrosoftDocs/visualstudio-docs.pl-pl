@@ -1,8 +1,6 @@
 ---
 title: Idiasession — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2791f318a921a25535d5e9a8f17e2c595f1f56
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d469ea89b7ef5f09296fce03fa10c47a7500e52e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923838"
 ---
 # <a name="idiasession"></a>IDiaSession
 Udostępnia kontekst zapytania dla symboli debugowania.  
@@ -27,7 +25,7 @@ Udostępnia kontekst zapytania dla symboli debugowania.
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDiaSession : IUnknown  
+IDiaSession : IUnknown  
 ```  
   
 ## <a name="methods"></a>Metody  
@@ -35,45 +33,45 @@ IDiaSession : IUnknown
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Pobiera adres obciążenia dla pliku wykonywalnego, który odpowiada symboli w tym magazynie symboli. To jest taka sama jak wartość została przekazana do `put_loadAddress` metody.|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Ustawia adres obciążenia dla pliku wykonywalnego, który odpowiada symboli w tym magazynie symboli. **Uwaga:** ważne jest, aby wywołać tę metodę, gdy zostanie wyświetlony `IDiaSession` obiektu i przed rozpoczęciem korzystania z obiektu.|  
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Pobiera adres obciążenia dla pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli. Jest to tę samą wartość, która została przekazana `put_loadAddress` metody.|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Ustawia adres obciążenia dla pliku wykonywalnego, który odpowiada symboli w tym magazynie symboli. **Uwaga:**  Ważne jest, aby wywołać tę metodę, gdy otrzymasz `IDiaSession` obiektu i przed rozpoczęciem korzystania z obiektu.|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Pobiera odwołanie do zakresu globalnego.|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Pobiera moduł wyliczający dla wszystkich tabel znajdujących się w magazynie symboli.|  
-|[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Pobiera moduł wyliczający dla wszystkie nazwane symbole w lokalizacjach statycznych.|  
-|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Pobiera wszystkie elementy podrzędne elementu identyfikator określonego elementu nadrzędnego, zgodnych z typem nazwę i symbol.|  
-|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|Pobiera typ określony symbol, który zawiera lub zbliżony do określonego adresu.|  
-|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Pobiera typ określony symbol, który zawiera lub zbliżony do określonej wirtualnej adresem względnym (RVA).|  
-|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|Pobiera typ określony symbol, który zawiera lub najbliższy określony adres wirtualny (VA).|  
+|[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Pobiera moduł wyliczający dla wszystkich nazwanych symboli w lokalizacjach statyczne.|  
+|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Pobiera wszystkie obiekty podrzędne identyfikatora określonego elementu nadrzędnego, które jest zgodny z typem nazwy i symboli.|  
+|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu.|  
+|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego względny adres wirtualny (RVA).|  
+|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu wirtualnego (oceny luk w zabezpieczeniach).|  
 |[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|Pobiera symbol, który zawiera token określonych metadanych.|  
 |[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|Sprawdza, czy dwa symbole są równoważne.|  
-|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Pobiera symbol przez jego unikatowy identyfikator.|  
-|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Pobiera typ określony symbol, który zawiera lub najbliższy określony wirtualny adres względny i przesunięcie.|  
-|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Pobiera typ określony symbol, który zawiera lub najbliższy określony wirtualny adres i przesunięcie.|  
-|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Pobiera compiland i nazwa pliku źródłowego.|  
+|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Pobiera symbol według unikatowego identyfikatora.|  
+|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego względny adres wirtualny i przesunięcie.|  
+|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu wirtualnego i przesunięcie.|  
+|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Pobiera compiland — i nazwa pliku źródłowego.|  
 |[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Pobiera pliku źródłowego przez identyfikator pliku źródłowego.|  
-|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Pobiera numerów wierszy w ramach określonej źródłowe i compiland identyfikator pliku.|  
-|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Pobiera wierszy w określonych compiland, które zawierają określony adres.|  
-|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Pobiera wierszy w określonych compiland, które zawierają określony wirtualny adres względny.|  
-|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Odnajduje informacje numer wiersza dla wierszy zawartych w dla określonego zakresu adresów.|  
-|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Pobiera wierszy w określonych compiland przez źródło pliku i numer wiersza.|  
+|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Pobiera numery wierszy w określonej źródłowe i compiland — identyfikator pliku.|  
+|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Pobiera wierszy w określonej compiland —, które zawierają określony adres.|  
+|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Pobiera wierszy w określonej compiland —, które zawierają określony względny adres wirtualny.|  
+|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Wyszukuje informacje o numerze wiersza dla wierszy znajdujących się w zakresie określonego adresu.|  
+|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Pobiera wiersze w określonym compiland — przez źródło pliku i numer wiersza.|  
 |[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Pobiera źródło, który został umieszczony w magazynie symboli przez dostawców atrybut lub innych części procesu kompilacji.|  
-|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Pobiera sekwencję wyliczany debugowania strumieni danych.|  
-|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Pobiera wyliczenie umożliwia klientowi iterację wszystkie ramki wbudowane w podanym adresem.|  
-|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Pobiera wyliczenie umożliwia klientowi iterację wszystkie ramki wbudowane w określonej wirtualnej adresem względnym (RVA).|  
-|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Pobiera wyliczenie umożliwia klientowi iterację wszystkie ramki wbudowane na określony adres wirtualny (VA).|  
-|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Pobiera wyliczenie umożliwia klientowi Iterowanie za pomocą informacji o numerze linii wszystkie funkcje, które są wbudowane, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego.|  
-|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Pobiera wyliczenie umożliwia klientowi Iterowanie za pomocą informacji o numerze linii wszystkie funkcje, które są wbudowane, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego i znajdują się w zakresie określonego adresu.|  
-|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Pobiera wyliczenie umożliwia klientowi Iterowanie za pomocą informacji o numerze linii wszystkie funkcje, które są wbudowane, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego, który są zawarte w określonej wirtualnej adres względny (RVA).|  
-|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Pobiera wyliczenie umożliwia klientowi Iterowanie za pomocą informacji o numerze linii wszystkie funkcje, które są wbudowane, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego i znajdują się w określonym wirtualnego adresu (VA).|  
-|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Pobiera wyliczenie umożliwia klientowi iterację informacja o numerach wierszy wszystkich funkcji, które są wbudowane, bezpośrednio lub pośrednio w określonym źródle liczbę plików i wierszy.|  
-|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Pobiera wyliczenie umożliwia klientowi iterację informacja o numerach wierszy wszystkich funkcji śródwierszowych, zgodne określonej nazwy.|  
-|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Zwraca wyliczenie symboli dla zmiennej, która odpowiada wartości określonego tagu w obiekcie nadrzędnym funkcja stub akceleratora.|  
-|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|Biorąc pod uwagę odpowiadającą mu wartość tagu, ta metoda zwraca wyliczenie symboli, które są zawarte w funkcji stub akceleratora określonego elementu nadrzędnego pod określonym adresem względnym wirtualnego.|  
-|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Zwraca wyliczenie symboli dla ramki wbudowane odpowiadający wbudowanego określonej nazwy funkcji.|  
-|[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Zwraca wyliczenie symboli dla ramek wbudowanych, które odpowiadają na określoną lokalizacją źródłową.|  
+|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Pobiera sekwencję wyliczany strumieni danych debugowania.|  
+|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane danego adresu.|  
+|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane w określonym względny adres wirtualny (RVA).|  
+|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane na określony adres wirtualny (oceny luk w zabezpieczeniach).|  
+|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego.|  
+|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego i znajdują się w obrębie określonego zakresu adresów.|  
+|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego i znajdują się w określonym względny adres wirtualny (RVA).|  
+|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego i znajdują się w określonym wirtualnego adresu (oceny luk w zabezpieczeniach).|  
+|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Pobiera wyliczenie, które umożliwia klientowi do iterowania po informacje o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio w określone źródło pliku i numer wiersza.|  
+|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Pobiera wyliczenie, które umożliwia klientowi do iterowania po informacje o numerze wiersza wszystkich funkcji śródwierszowych, które odpowiadają określonej nazwie.|  
+|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Zwraca wyliczenie symboli dla zmiennej, która odpowiada wartości określonego tagu w obiekcie nadrzędnym funkcji klasy zastępczej akceleratora.|  
+|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|Biorąc pod uwagę odpowiadająca wartość tagu, Metoda ta zwraca wyliczenie symboli, które są zawarte w funkcji klasy zastępczej akceleratora określonego elementu nadrzędnego w określonym względny adres wirtualny.|  
+|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Zwraca wyliczenie symboli dla ramki wbudowane odpowiadającej nazwie funkcji określone w jednej linii.|  
+|[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Zwraca wyliczenie symboli dla ramek wbudowanych, które odnoszą się do określonej lokalizacji źródłowej.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ważne jest, aby wywołać [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metody po utworzeniu `IDiaSession` obiektu — i wartość przekazana do `put_loadAddress` metoda musi być różna od zera — wszystkie właściwości wirtualnego adresu (VA) symboli jako dostępny. Adres obciążenia pochodzi z niezależnie od programu załadowany plik wykonywalny debugowania. Na przykład można wywołać funkcji Win32 `GetModuleInformation` można pobrać adresu obciążenia dla pliku wykonywalnego, podane dojście do pliku wykonywalnego.  
+ Ważne jest, aby wywołać [idiasession::put_loadaddress —](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metoda po utworzeniu `IDiaSession` obiektu — i wartość przekazana do `put_loadAddress` metoda musi być różna od zera — symboli jako właściwości wirtualnego adresu (oceny luk w zabezpieczeniach) dostępne. Adres obciążenia pochodzi z dowolnych program jest ładowany do debugowanego pliku wykonywalnego. Na przykład, można wywołać funkcję Win32 `GetModuleInformation` można pobrać adresu obciążenia dla pliku wykonywalnego, biorąc pod uwagę jego uchwyt do pliku wykonywalnego.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie pokazano, jak uzyskać `IDiaSession` interfejsu jako część ogólne inicjowanie DIA SDK.  
@@ -112,18 +110,18 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [Wywołanie pliku exe](../../debugger/debug-interface-access/exe.md)   
+ [plik exe](../../debugger/debug-interface-access/exe.md)   
  [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
+ [Idiadatasource::opensession —](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+ [Idiasymbol::findchildren —](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [Używanie zapytań dotyczących pliku .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

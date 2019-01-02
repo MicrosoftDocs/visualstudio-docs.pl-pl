@@ -1,8 +1,6 @@
 ---
 title: 'DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAMemoryBound
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30bb9fea29215eb190ab83ea73394b87e4cd15fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67882c56492f8b98daf6f2f1cca1972be8e4f667
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932710"
 ---
-# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Wyjątkowo wysoki stopień stronicowania aktywnej pamięci na dysku
+# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk
 
 |||  
 |-|-|  
@@ -43,7 +41,7 @@ ms.locfileid: "49914555"
  Często strony są dysku zapisu lub odczytu z dysku podczas operacji stronicowania zbiorczego. Na przykład jest często znacznie większa niż liczba zapisy stron/s, liczba stron wyjścia na sekundę. Ponieważ dane wyjściowe strony na sekundę obejmuje również stron zmienione dane z pamięci podręcznej systemu plików. Jednak nie zawsze jest proste ustalenie, który proces jest bezpośrednio odpowiedzialna za stronicowanie i dlaczego.  
 
 > [!NOTE]
->  Ta reguła jest uruchamiana, gdy stopień stronicowania aktywnej pamięci osiągną bardzo wysoki współczynnik. Reguły informacyjne, jeśli poziom stronicowania jest istotne, ale nie extreme [DA0017: intensywne stronicowanie aktywnej pamięci na dysk](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) generowane w zamian.  
+>  Ta reguła jest uruchamiana, gdy stopień stronicowania aktywnej pamięci osiągną bardzo wysoki współczynnik. Reguły informacyjne, jeśli poziom stronicowania jest istotne, ale nie extreme [DA0017: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) generowane w zamian.  
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [znaczniki](../profiling/marks-view.md) widoku. Znajdź **Pamięć\Strony/s** kolumny. Określa, czy określone faz wykonywania programu stronicowania działanie we/wy w przypadku większych niż inne.  

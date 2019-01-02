@@ -2,7 +2,6 @@
 title: Znane problemy z kontenerami
 description: Dowiedz się więcej o znanych problemach, które mogą wystąpić podczas instalowania programu Visual Studio kompilacji narzędzia 2017 do kontenera Windows.
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d817b7d45c23e813a8d3f80e2b74ea860bb8a3cf
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 62bbcabe25a4cbefed3e1e928eaac8942e3c8de2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905192"
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy z kontenerami
 

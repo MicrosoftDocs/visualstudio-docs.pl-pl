@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Lokalizowanie znacznika ASPX | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Lokalizowanie znacznika ASPX | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,46 +13,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68e74f743c1c00bb940a89039e4fd5cfcf8e63e4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959871"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Porady: Lokalizowanie znacznika ASPX
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony (aspx) używają zwykle ustalony ciągami. Do zlokalizowania te ciągi, należy je zastąpić przy użyciu wyrażeń, które odwołują się zlokalizowanych zasobów.  
+# <a name="how-to-localize-aspx-markup"></a>Instrukcje: Lokalizowanie znacznika ASPX
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (aspx) stron zazwyczaj używają ciągu ustalonych wartości. Aby zlokalizować te ciągi, należy zastąpić je za pomocą wyrażeń, które odwołują się zlokalizowanych zasobów.  
   
 ## <a name="localize-aspx-markup"></a>Lokalizowanie znacznika ASPX  
   
-#### <a name="to-localize-aspx-markup"></a>Aby lokalizowanie znacznika ASPX  
+#### <a name="to-localize-aspx-markup"></a>Do zlokalizowania znaczników ASPX  
   
-1.  Dodaj pliki zasobów oddzielne: jeden język domyślny i jeden dla każdego zlokalizowanego języka.  
+1.  Dodaj pliki zasobów oddzielne: jeden dla języka domyślnego i jeden dla każdego zlokalizowanego języka.  
   
-     Jeśli są lokalizowanie tylko znaczników i kodu nie, Dodaj element projektu globalnego pliku zasobów. Jeśli są lokalizowanie kodu i znaczników, Dodaj element projektu pliku zasobów.  
+     Jeśli lokalizujesz wyłącznie znaczników i kodu nie można dodać elementu projektu globalnego pliku zasobów. Jeśli lokalizujesz kodu i znaczników, Dodaj element projektu pliku zasobów.  
   
-    1.  Aby dodać plik zasobów globalnych w **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu SharePoint, a następnie wybierz **Dodaj** > **nowy element**. W obszarze programu SharePoint **2010** węzła, wybierz **globalnego pliku zasobów** szablonu.  
+    1.  Aby dodać plik zasobów globalnych w **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu programu SharePoint, a następnie wybierz **Dodaj** > **nowy element**. W ramach programu SharePoint **2010** węzła, wybierz **plik zasobów globalnych** szablonu.  
   
-    2.  Aby dodać plik zasobów w **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu SharePoint, a następnie wybierz **Dodaj** > **nowy element**. W obszarze albo **Visual Basic** lub **Visual C#** węzła, wybierz **pliku zasobów** szablonu.  
+    2.  Aby dodać plik zasobów w **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu programu SharePoint, a następnie wybierz **Dodaj** > **nowy element**. W obszarze **języka Visual Basic** lub **Visual C#**  węzła, wybierz **plik zasobów** szablonu.  
   
     > [!NOTE]  
-    >  Pamiętaj dodać pliki zasobów do elementu projektu SharePoint, aby włączyć właściwość typu wdrożenia. Ta właściwość jest wymagana w dalszej części tej procedury. Jeśli rozwiązania nie ma elementu projektu SharePoint, możesz dodać pusty projekt programu SharePoint i Usuń domyślny *Elements.xml* pliku.  
+    >  Pamiętaj dodać pliki zasobów do elementu projektu programu SharePoint, aby włączyć właściwość typu wdrożenia. Ta właściwość jest wymagana w dalszej części tej procedury. Jeśli rozwiązanie nie ma elementu projektu programu SharePoint, możesz dodać pusty projekt programu SharePoint i Usuń domyślny *Elements.xml* pliku.  
   
-2.  Nadaj nazwę dołączyć do dowolnego pliku zasobów języka domyślnego *.resx* rozszerzenie, na przykład MyAppResources.resx. Użyj takiej samej nazwie podstawowej dla każdego pliku zlokalizowanych zasobów, ale Dodaj kultura [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Na przykład nazwa niemiecki zlokalizowanych zasobów *MyAppResources.de DE.resx*.  
+2.  Nadaj plikowi zasobów języka domyślnego nazwę wybraną z dołączonym *resx* rozszerzenie, np. MyAppResources.resx. Użyj tej samej nazwie bazowej dla każdego zlokalizowanego pliku zasobów, ale Dodaj kulturę [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Na przykład, nazwij niemieckie zlokalizowane zasoby *MyAppResources.de-DE.resx*.  
   
-3.  Zmień wartość **typu wdrożenia** właściwości każdego pliku zasobu do **AppGlobalResource** powodując wdrażanie w folderze App_GlobalResources serwera.  
+3.  Zmień wartość właściwości **typu wdrożenia** właściwości każdego pliku zasobu na **AppGlobalResource** aby spowodować ich wdrażanie do folderu App_GlobalResources na serwerze.  
   
-4.  Jeśli używasz zasobów do zlokalizowania kodu oprócz znacznika ASPX, pozostaw wartość **Akcja kompilacji** właściwość jako **osadzonego zasobu**. Jeśli używane są pliki zasobów tylko do zlokalizowania znaczników, opcjonalnie można zmienić wartości właściwości plików do **zawartości**. Aby uzyskać więcej informacji, zobacz [rozwiązań Localize SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
+4.  Jeśli używasz zasobów do lokalizowania kodu Oprócz oznakowania aspx, pozostaw wartość **Build Action** właściwości każdego plików jako **zasób osadzony**. Jeśli używasz plików zasobów tylko do zlokalizowania znaczników, opcjonalnie można zmienić wartość właściwości plików do **zawartości**. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint lokalizowanie](../sharepoint/localizing-sharepoint-solutions.md).  
   
-5.  Otwórz każdy plik zasobu i Dodaj zlokalizowanych ciągów, za pomocą tych samych parametrach identyfikatorów w każdym pliku.  
+5.  Otwórz każdy plik zasobów i Dodaj zlokalizowane ciągi, przy użyciu tego samego ciągu identyfikatorów w każdym pliku.  
   
-6.  W [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] kod znaczników dla strony ASPX i kontrolki, Zamień ciągi stałe wartości, które należy użyć następującego formatu:  
+6.  W [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] znaczników strony ASPX lub formantu, Zastąp zakodowane sprzętowo ciągi wartościami, które należy użyć następującego formatu:  
   
     ```aspx-csharp  
     <%$Resources:Resource File Name, String ID%>  
     ```  
   
-     Na przykład do zlokalizowania tekst formantu etykiety na stronie aplikacji, można zmienić:  
+     Na przykład aby zlokalizować tekstu dla formantu etykiety na stronę aplikacji, możesz zmienić:  
   
     ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -75,13 +70,12 @@ ms.locfileid: "37120332"
   
 7.  Wybierz **F5** klawisz, aby skompilować i uruchomić aplikację.  
   
-8.  W programie SharePoint zmień język wyświetlania domyślnego.  
+8.  W programie SharePoint zmień język wyświetlania z domyślnego.  
   
-     Zlokalizowanych ciągów są wyświetlane w aplikacji. Aby wyświetlić zlokalizowanych zasobów, serwer programu SharePoint musi mieć zainstalowany pakiet językowy zgodny plik zasobu kultury.  
+     W aplikacji, pojawiają się zlokalizowane ciągi. Aby wyświetlić zasoby zlokalizowane, serwer programu SharePoint musi mieć zainstalowany pakiet językowy pasujący plik zasobów kultury.  
   
 ## <a name="see-also"></a>Zobacz także
  [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Porady: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)   
- [Porady: Dodawanie pliku zasobów](../sharepoint/how-to-add-a-resource-file.md)   
- [Porady: Lokalizowanie kodu](../sharepoint/how-to-localize-code.md)  
-  
+ [Instrukcje: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)   
+ [Instrukcje: Dodawanie pliku zasobu](../sharepoint/how-to-add-a-resource-file.md)   
+ [Instrukcje: Lokalizowanie kodu](../sharepoint/how-to-localize-code.md)  

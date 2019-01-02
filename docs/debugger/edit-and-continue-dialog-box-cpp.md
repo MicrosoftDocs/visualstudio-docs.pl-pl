@@ -1,8 +1,6 @@
 ---
 title: Edytuj i Kontynuuj — okno dialogowe (C++) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c6d598605f229f306571e792c9b4dcfadfbda92
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1b7f2929dbb1946b9e4852006260e7ac8c45fa45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923721"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Edytuj i Kontynuuj — okno dialogowe (C++)
 Edytuj i Kontynuuj nie może zastosować zmiany wprowadzone w kodzie natywnym. Może to być tymczasowa sytuacja. Czasami Edytuj i Kontynuuj nie można zastosować zmian w kodzie macierzystym natychmiast, ale można stosować je później, podczas sesji debugowania (na przykład po bieżącym wywołaniu procedury wykonywania teraz). Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).  

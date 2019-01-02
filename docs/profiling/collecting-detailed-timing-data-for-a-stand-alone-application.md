@@ -1,8 +1,6 @@
 ---
 title: Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 21cb675136ba5180c8a7d26073ea16e6c6831aac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831683"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczegółowe dane dla składnika klienta (autonomiczny) przy użyciu metody Instrumentacji z wiersza polecenia.  
@@ -27,8 +25,8 @@ W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczeg�
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
-|**Profilowanie aplikacji .NET Framework przy użyciu Instrumentacji**|-   [Porady: Instrumentacja elementu .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
-|**Profil aplikacji C/C++ przy użyciu Instrumentacji**|-   [Porady: Instrumentowanie składnika natywnego i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
+|**Profilowanie aplikacji .NET Framework przy użyciu Instrumentacji**|-   [Jak: Instrumentacja elementu .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**Profil aplikacji C/C++ przy użyciu Instrumentacji**|-   [Jak: Instrumentacja składnika natywnego i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Zadania powiązane

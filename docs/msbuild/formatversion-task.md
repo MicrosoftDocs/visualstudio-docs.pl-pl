@@ -1,8 +1,6 @@
 ---
 title: FormatVersion, zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,21 +13,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f9cae12a66e2b442d6c42032d3f4bf65942127
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7f9b2cf2daff750f626f35b8c98f8269577b4099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934073"
 ---
 # <a name="formatversion-task"></a>Formatversion — zadanie
 Dołącza numer wersji do numeru wersji.  
   
--   Przypadek #1: Dane wejściowe: wersja =\<niezdefiniowana >;  Poprawka =\<nieważne >;   Dane wyjściowe: OutputVersion = "1.0.0.0"  
+-   Przypadek #1: Dane wejściowe: Wersja =\<niezdefiniowana >;  Poprawka =\<nieważne >;   Dane wyjściowe: OutputVersion = "1.0.0.0"  
   
--   Przypadek #2: Dane wejściowe: wersji = poprawkę "1.0.0.*" = "5" w danych wyjściowych: OutputVersion = "1.0.0.5"  
+-   Przypadek #2: Dane wejściowe: Wersja = poprawkę "1.0.0.*" = "5" w danych wyjściowych: OutputVersion = "1.0.0.5"  
   
--   Przypadek #3: Dane wejściowe: wersja = "1.0.0.0" poprawki =\<nieważne >;  Dane wyjściowe: OutputVersion = "1.0.0.0"  
+-   W przypadku #3: Dane wejściowe: Wersja = "1.0.0.0" poprawki =\<nieważne >;  Dane wyjściowe: OutputVersion = "1.0.0.0"  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `FormatVersion` zadania.  

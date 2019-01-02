@@ -1,5 +1,5 @@
 ---
-title: 'Porady: generowanie szablonów z szablonów przy użyciu sekwencji unikowych'
+title: 'Instrukcje: Generowanie szablonów z szablonów przy użyciu sekwencji ucieczki'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 13ca6a9aef2f0944ba1f42c849d9f8079a56a82b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8aa0d2203db6080260bc702429758fbd7f6b1a4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938150"
 ---
-# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Porady: generowanie szablonów z szablonów przy użyciu sekwencji unikowych
-Można utworzyć szablon tekst, który tworzy innego szablonu tekstowego jako dane wyjściowe wygenerowane tekstu. Aby to zrobić, możesz korzystać sekwencji unikowych do odróżniać znaczniki szablonu tekstowego. Jeśli nie używasz sekwencji unikowych, szablon wygenerowanego tekstu ma wstępnie zdefiniowane znaczenie. Aby uzyskać więcej informacji o użyciu sekwencji unikowych w szablonach tekstowych, zobacz [przy użyciu sekwencji unikowych w szablonach tekstowych](../modeling/using-escape-sequences-in-text-templates.md).
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Instrukcje: Generowanie szablonów z szablonów przy użyciu sekwencji ucieczki
+Można utworzyć szablon tekstowy, który tworzy inny szablon tekstowy jako dane wyjściowe wygenerowanego tekstu. Aby to zrobić, należy użyć sekwencje ucieczki aby odróżnić tagi szablonu tekstu. Jeśli nie korzystanie z sekwencji ucieczki, szablon wygenerowany tekst będzie mieć znaczenie wstępnie zdefiniowane. Aby uzyskać więcej informacji na temat przy użyciu sekwencji unikowych w szablonach tekstowych, zobacz [przy użyciu sekwencji unikowych w szablonach tekstowych](../modeling/using-escape-sequences-in-text-templates.md).
 
-### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Aby wygenerować szablonu tekstowego z szablonu tekstowego
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Aby wygenerować z szablonu tekstu w szablonie tekstu
 
--   Użyj kreska ułamkowa odwrócona (\\) jako znaku ucieczki tworzy niezbędne znaczników w szablonie tekst dyrektywy instrukcje, wyrażenia i funkcji w pliku tekstowym oddzielnego szablonu klasy.
+-   Użyj ukośnik odwrotny (\\) jako znak ucieczki do produkcji niezbędne znaczniki w szablonie tekstu dla dyrektywy, instrukcje, wyrażenia i funkcji w pliku szablonu tekstu oddzielne klasy.
 
     ```
     \<#@ directive \#>
@@ -33,7 +32,7 @@ Można utworzyć szablon tekst, który tworzy innego szablonu tekstowego jako da
     ```
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie użyto znaki specjalne w celu utworzenia szablonu tekstowego z szablonu tekstowego. `output` Dyrektywa określa typ pliku docelowego na typ pliku szablonu tekstowego (.TT —).
+ W poniższym przykładzie użyto znaki ucieczki, aby utworzyć szablon tekstowy z szablonu tekstu. `output` Dyrektywa określa docelowy typ pliku z typem pliku szablonu tekstu (.tt).
 
 ```csharp
 \<#@ output extension=".tt" \#>
@@ -54,7 +53,7 @@ XmlDocument xDoc = new XmlDocument();
 \#>
 ```
 
- Wygenerowany tekst wyjściowy jest szablonu tekstowego.
+ Wygenerowany tekst wyjściowy jest szablonu tekstu.
 
 ```
 <#@ output extension=".tt" #>

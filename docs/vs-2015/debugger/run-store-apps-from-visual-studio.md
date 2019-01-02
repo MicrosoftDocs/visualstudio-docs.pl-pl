@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -19,12 +18,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe96f2cb19940bccfe003a9c7e92104e0cd2fd2b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 05f4b32aa759ad5e73c76fbc334dbd62dda5ad94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921129"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Uruchamianie aplikacji Store za pomocą programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

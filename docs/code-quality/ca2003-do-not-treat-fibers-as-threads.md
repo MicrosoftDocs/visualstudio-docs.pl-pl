@@ -1,8 +1,7 @@
 ---
-title: 'CA2003: Nie traktuj włókien jako wątków'
+title: 'CA2003: Nie Traktuj włókien jak wątków'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2003
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3322b968266ad6fdfe1be2e5bdaac73aad32b9c7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ceedee8dc355392cae34fe3ed5fae5708b6d02d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844174"
 ---
-# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Nie traktuj włókien jako wątków
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Nie Traktuj włókien jak wątków
 
 |||
 |-|-|

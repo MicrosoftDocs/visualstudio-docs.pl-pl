@@ -1,9 +1,8 @@
 ---
-title: 'Samouczek: Debugowanie kodu zarządzanego i natywnego (tryb mieszany)'
+title: 'Samouczek: Debugowanie C# i kodu w języku C++ (tryb mieszany)'
 description: Dowiedz się, jak można debugować natywną bibliotekę DLL z aplikacji platformy .NET Core lub .NET Framework za pomocą debugowania trybu mieszanego
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
 - CSharp
@@ -16,14 +15,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: 475160a7ba08cb334eeb26be26731deea547f6ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920871"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Samouczek: Debugowanie kodu zarządzanego i natywnego w tej samej sesji debugowania
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: Debugowanie C# i C++ w tej samej sesji debugowania
 
 Program Visual Studio pozwala włączyć więcej niż jeden typ debugera w sesji debugowania, która jest wywoływana, debugowanie w trybie mieszanym. W tym samouczku przedstawiono sposób debugowania kodu zarządzanego i natywnego w jednej sesji debugowania. 
 

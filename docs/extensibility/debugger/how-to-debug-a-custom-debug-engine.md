@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Debugowanie niestandardowego aparatu debugowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdc01eec9982f7e3a03cd84424bc56b031846a7d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962392"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Instrukcje: Debugowanie niestandardowego aparatu debugowania
 Typ projektu spowoduje uruchomienie aparatu debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiane pod kontrolą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kontrolowanie tego typu projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie można debugować DE. Poniżej przedstawiono kroki, które umożliwiają debugowanie Twojego niestandardowego DE.  
   
 > [!NOTE]
->  : W procedurze "Debugowanie niestandardowego aparatu debugowania" należy poczekać DE do uruchomienia, zanim będzie możliwe dołączenie do niej. Jeśli na początku swoje DE, który jest wyświetlany, gdy rozpoczyna się DE okno komunikatu, możesz dołączyć w tym momencie, a następnie wyczyść okno komunikatu, aby kontynuować. W ten sposób możesz przechwytywać wszystkie zdarzenia DE.  
+>  :     W procedurze "Debugowanie niestandardowego aparatu debugowania" należy poczekać DE do uruchomienia, zanim będzie możliwe dołączenie do niej. Jeśli na początku swoje DE, który jest wyświetlany, gdy rozpoczyna się DE okno komunikatu, możesz dołączyć w tym momencie, a następnie wyczyść okno komunikatu, aby kontynuować. W ten sposób możesz przechwytywać wszystkie zdarzenia DE.  
   
 > [!WARNING]
 >  Konieczne jest posiadanie zdalne debugowanie, przed rozpoczęciem poniższej procedury. Zobacz [zdalne debugowanie](../../debugger/remote-debugging.md) Aby uzyskać szczegółowe informacje.  

@@ -3,7 +3,6 @@ title: Przewodnik Szybki Start — klonować repozytorium kodu w języku Python
 description: W tym przewodniku Szybki Start utworzysz projektu języka Python w programie Visual Studio przez Sklonowanie repozytorium koans języka Python za pomocą programu Visual Studio Team Explorer.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922848"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: Sklonuj repozytorium kodu w języku Python w programie Visual Studio
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki start: Klonowanie repozytorium kodu w języku Python w programie Visual Studio
 
 Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](installing-python-support-in-visual-studio.md), można dodać rozszerzenie GitHub dla programu Visual Studio. Rozszerzenie pozwala łatwo sklonować repozytorium kodu w języku Python i Utwórz projekt z niego z poziomu środowiska IDE. Można zawsze klonowanie repozytoriów z wiersza polecenia i pracować z nimi w programie Visual Studio.
 

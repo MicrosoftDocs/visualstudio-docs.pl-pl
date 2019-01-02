@@ -1,6 +1,5 @@
 ---
 title: Promptforsaveoncreation — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e26a5466dfeb08a927323d11f6ec49e53730c4
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: bafe937bee5b51498fa7b7d5978c5cbf7e151a07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961053"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Promptforsaveoncreation — element (szablony Visual Studio)
 Określa, czy użytkownik jest monitowany o miejsce za pośrednictwem zapisania projektu **nowy projekt** okno dialogowe podczas tworzenia projektu. Jeśli ten element jest ustawiony na `true`, a następnie użytkownik jest monitowany o zapisanie lokalizacji; Jeśli `false`, wówczas nie będą monitowani. (Oznacza to, że projekt tymczasowy jest tworzony).  
