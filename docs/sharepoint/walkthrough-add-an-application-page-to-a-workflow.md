@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Dodawanie strony aplikacji do przepływu pracy | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Dodawanie strony aplikacji do przepływu pracy | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938202"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Wskazówki: Dodawanie strony aplikacji do przepływu pracy
-  W tym instruktażu pokazano, jak dodać stronę aplikacja wyświetlającą dane pochodzące z przepływu pracy do projektu przepływu pracy. Opiera się na projekt, opisana w temacie [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Przewodnik: Dodawanie strony aplikacji do przepływu pracy
+  W tym instruktażu pokazano, jak dodać stronę aplikacja wyświetlającą dane pochodzące z przepływu pracy do projektu przepływu pracy. Opiera się na projekt, opisana w temacie [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  W tym instruktażu pokazano następujące zagadnienia:
 
@@ -45,14 +42,14 @@ ms.locfileid: "49866899"
 
 -   Program Visual Studio.
 
--   Musisz też ukończenia projektu w temacie [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+-   Musisz też ukończenia projektu w temacie [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend kod przepływu pracy
  Najpierw dodaj wiersz kodu do przepływu pracy, aby ustawić wartość kolumny wynik ilość raportu wydatków. Ta wartość jest używana w dalszej części Obliczanie podsumowania raportu wydatków.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Aby ustawić wartość kolumny wynik w przepływie pracy
 
-1.  Ładowanie ukończone projektu z tematu [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1.  Ładowanie ukończone projektu z tematu [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 2.  Otwórz kod *Workflow1.cs* lub *Workflow1.vb* (w zależności od języka programowania).
 
@@ -352,7 +349,7 @@ ms.locfileid: "49866899"
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Porady: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)
+- [Przewodnik: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)
 - [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

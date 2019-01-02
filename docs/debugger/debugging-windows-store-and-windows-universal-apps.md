@@ -2,7 +2,6 @@
 title: Debugowanie aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 01/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 58f271bd1d4e0a7a15d1f08fe89b1ef252bdefd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902204"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Debugowanie aplikacji Universal Windows (UWP) w programie Visual Studio
 
@@ -34,4 +33,4 @@ Debuger programu Visual Studio zapewnia pełną obsługę do debugowania aplikac
 
   
 ## <a name="see-also"></a>Zobacz też  
- [Analizowanie jakości kodu przy użyciu statycznej analizy kodu](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
+ [Analizowanie jakości kodu przy użyciu statycznej analizy kodu](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

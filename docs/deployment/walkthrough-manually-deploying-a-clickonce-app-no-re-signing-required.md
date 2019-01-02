@@ -1,8 +1,6 @@
 ---
-title: 'Wskazówki: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898154"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Wskazówki: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
 Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadaj mu klientowi do publikowania i wdrażania, tradycyjnie miał odbiorcy do manifestu wdrażania aktualizacji i ponownie zaloguj się. Która nadal jest preferowaną metodą w większości przypadków, .NET Framework 3.5 pozwala na tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą być wdrażane przez klientów bez konieczności ponownie wygenerować nowy manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [aplikacji wdrażania technologii ClickOnce do testowania i produkcji serwerów bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
  Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadać mu klientowi do publikowania i wdrażania, można użyć znakowania przez klienta lub można zachować znakowanie aplikacji. Na przykład jeśli aplikacja jest pojedynczą aplikacją własności, warto zachować znakowanie. Jeśli aplikacja jest wysoce dostosowane dla każdego klienta, możesz chcieć użyć znakowania przez klienta. .NET Framework 3.5 umożliwia zachowanie znakowanie, informacje o wydawcy i sygnatury bezpieczeństwa po zapewnieniu umożliwia wdrażanie aplikacji dla organizacji. Aby uzyskać więcej informacji, zobacz [ClickOnce tworzenie aplikacji dla innych użytkowników wdrożyć](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
   
 > [!NOTE]
->  W tym instruktażu utworzysz wdrożeń ręcznie za pomocą narzędzia wiersza polecenia *Mage.exe* lub graficznego narzędzia *MageUI.exe*. Aby uzyskać więcej informacji na temat ręcznego wdrożenia, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+>  W tym instruktażu utworzysz wdrożeń ręcznie za pomocą narzędzia wiersza polecenia *Mage.exe* lub graficznego narzędzia *MageUI.exe*. Aby uzyskać więcej informacji na temat ręcznego wdrożenia, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać kroki opisane w tym przewodniku potrzebne są następujące elementy:  

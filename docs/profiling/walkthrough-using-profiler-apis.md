@@ -1,8 +1,6 @@
 ---
 title: 'Przewodnik: Za pomocą interfejsów API Profiler | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 09368aceed6828e63c0e5c9d20a77d1787bc2c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891271"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Za pomocą interfejsów API profilera
 

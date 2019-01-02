@@ -2,7 +2,6 @@
 title: Rozwiązywanie problemów z fragmentami kodu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - IntelliSense Code Snippets, troubleshooting
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61485e50c61580b69c1dfcb5434849ea9122bde7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4505d9d280e8a55ca03fcc8364f10b939e6378a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842570"
 ---
 # <a name="troubleshoot-snippets"></a>Rozwiązywanie problemów z fragmentami kodu
 

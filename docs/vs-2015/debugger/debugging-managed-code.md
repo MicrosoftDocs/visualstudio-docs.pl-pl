@@ -26,12 +26,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 801a4654b2297e3c19929063716339c7a4fcd50b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 84e41d06fb490cf3528f19eade08000f1ae27587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930149"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Instrukcje „Stop” w języku Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  W tym artykule opisano `Stop` instrukcji, co stanowi alternatywę dla ustawienie punktu przerwania. Przykładowy kod znajduje się również, wraz z porównania między `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.  
   
- [Przewodnik: debugowanie formularza Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [Przewodnik: Debugowanie formularza Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
  Zapewnia instrukcje krok po kroku dotyczące tworzenia formularzy Windows i debugowanie formularza. Formularz Windows, standardowy składnik zarządzanej aplikacji Windows, jest jednym z najczęściej używanych aplikacji zarządzanych. W tym instruktażu wykorzystano Visual C# i Visual Basic, ale techniki tworzenia formularzy Windows w języku C++ ogólnie wygląda podobnie.  
   
  [Debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -57,7 +57,7 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Debugowanie w trybie mieszanym](../debugger/debugging-mixed-mode-applications.md)  
  W tym artykule omówiono debugowanie aplikacji w trybie mieszanym. Oznacza to, każda aplikacja, która łączy kodu natywnego za pomocą kodu zarządzanego.  
   
- [Błąd: Debugowanie nie jest możliwe, ponieważ debuger jądra został wyłączony z poziomu systemu](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Błąd: Debugowanie jest niemożliwe, ponieważ w systemie jest włączony debuger jądra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  W tym artykule opisano komunikat o błędzie występujący, jeśli zostanie podjęta próba debugowanie kodu zarządzanego na [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)], lub systemu Windows NT, który został uruchomiony w trybie debugowania.  
   
  [Optymalizacja i debugowanie JIT](../debugger/jit-optimization-and-debugging.md)  
@@ -66,7 +66,7 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Debugowanie LINQ i DLINQ](../debugger/debugging-linq.md)  
  W tym artykule omówiono techniki debugowania zapytań LINQ.  
   
- [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -88,14 +88,14 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Debugowanie skryptów i aplikacji sieci Web](../debugger/debugging-web-applications-and-script.md)  
  Zawiera opis typowych problemów debugowania i technik, które można napotkać podczas debugowania skryptów i aplikacji sieci Web.  
   
- [Co nowego w debugerze programu Visual Studio 2015](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
+ [Co nowego w debugerze programu Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)  
  Opis nowych funkcji debugowania, dodane w tej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Debugowanie strony głównej](../debugger/debugging-in-visual-studio.md)  
  Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje dotyczące nowości w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, Edytuj i Kontynuuj, debugowanie kodu zarządzanego, debugowania projektów Visual C++, debugowania modelu COM i ActiveX, debugowanie bibliotek DLL, debugowanie SQL, a użytkownik odwołania do interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Debugowanie niestandardowych Windows formantów formularzy w czasie projektowania](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [Przewodnik: Debugowanie Windows niestandardowych formantów formularzy w czasie projektowania](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
 

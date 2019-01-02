@@ -2,7 +2,6 @@
 title: Live Unit Testing — często zadawane pytania
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935596"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing — często zadawane pytania
 
@@ -97,7 +96,7 @@ Tak. Live Unit Testing działa przy użyciu platformy .NET Core i .NET Framework
 
 Jeśli rozwiązanie wymaga niestandardowych kroków, aby uruchomić Instrumentacji (Live Unit Testing), które nie są wymagane dla "regularne" nieinstrumentowanego kompilacji, a następnie można dodać kod do projektu lub *.targets* pliki, które sprawdza, czy dla `BuildingForLiveUnitTesting` właściwości i wykonuje kroki procesu kompilacji niestandardowej pre lub używanego po nim. Możesz również usunąć niektórych kroków kompilacji (takich jak publikowanie lub generowania pakietów) lub dodać kroki procesu kompilacji (takich jak kopiowanie wymagania wstępne) do Live Unit Testing kompilacji, na podstawie tej właściwości projektu. Dostosowywanie kompilacji na podstawie tej właściwości nie zmienia regularnych kompilacji w dowolny sposób i ma wpływ tylko na funkcję Live Unit Testing kompilacji.
 
-Na przykład może być obiekt docelowy, który tworzy pakiety NuGet podczas regularnego kompilacji. Prawdopodobnie nie ma pakietów NuGet zostanie wygenerowany po każdej modyfikacji, wprowadzone. Dlatego można wyłączyć obiektu docelowego w kompilacji Live Unit Testing w sposób podobny do poniższego:  
+Na przykład może być obiekt docelowy, który tworzy pakiety NuGet podczas regularnego kompilacji. Prawdopodobnie nie ma pakietów NuGet zostanie wygenerowany po każdej modyfikacji, wprowadzone. Dlatego można wyłączyć obiektu docelowego w kompilacji Live Unit Testing w sposób podobny do poniższego:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Ten błąd może wystąpić, jeśli proces kompilacji dla rozwiązania bezwarunk
 
 Na przykład, jeśli kompilacja zastępuje `<OutputPath>` jak pokazano poniżej:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Na przykład, jeśli kompilacja zastępuje `<OutputPath>` jak pokazano poniżej:
 
 następnie można zastąpić go następujący kod XML:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,14 +137,14 @@ Nie zastępują `<OutDir>` bezpośrednio w procesie kompilacji; należy zastąpi
 ## <a name="set-the-location-of-build-artifacts"></a>Ustaw lokalizację artefaktów kompilacji
 **Chcę, aby artefakty kompilacji Live Unit Testing można przejść do określonej lokalizacji, zamiast domyślnej lokalizacji, w obszarze *.vs* folderu. Jak zmienić który?**
 
-Ustaw `LiveUnitTesting_BuildRoot` zmiennej środowiskowej poziomu użytkownika do ścieżki, którego Live Unit Testing artefakty kompilacji do go porzucić. 
+Ustaw `LiveUnitTesting_BuildRoot` zmiennej środowiskowej poziomu użytkownika do ścieżki, którego Live Unit Testing artefakty kompilacji do go porzucić. 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Test Explorer programu vs. Przebiegi testów Live Unit Testing 
 **Jak działa testów z okna Eksploratora testów różni się od uruchamiania testów w Live Unit Testing?**
 
 Istnieje kilka różnic:
 
-- Działania lub debugowania testów z **Eksplorator testów** okno uruchamia regularne plików binarnych, a Live Unit Testing są uruchamiane instrumentowanych danych binarnych. Jeśli chcesz debugować instrumentowanych danych binarnych, dodając [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) wywołania metody w metodzie testowej powoduje, że debuger zawsze, gdy Uruchom, że metoda jest wykonywana (w tym gdy jest ono wykonywane przez funkcję Live Unit Testing), a następnie Dołączanie i Debuguj instrumentowanego pliku binarnego. Mamy nadzieję, że nasze jest jednak, że Instrumentacja jest niewidoczne dla większości scenariuszy użytkowników i potrzebujesz do debugowania Instrumentacji danych binarnych.
+- Działania lub debugowania testów z **Eksplorator testów** okno uruchamia regularne plików binarnych, a Live Unit Testing są uruchamiane instrumentowanych danych binarnych. Jeśli chcesz debugować instrumentowanych danych binarnych, dodając [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) wywołania metody w metodzie testowej powoduje, że debuger do uruchomienia w każdym przypadku, gdy czy metoda jest wykonywana (w tym gdy jest ono wykonywane przez funkcję Live Unit Testing), a następnie Dołącz i debugowanie można przeprowadzać instrumentowanego pliku binarnego. Mamy nadzieję, że nasze jest jednak, że Instrumentacja jest niewidoczne dla większości scenariuszy użytkowników i potrzebujesz do debugowania Instrumentacji danych binarnych.
 
 - Live Unit Testing nie powoduje utworzenia nowej domeny aplikacji, aby uruchomić testy, ale testy uruchamiane z **Eksplorator testów** okna Tworzenie nowej domeny aplikacji.
 
@@ -203,7 +202,7 @@ Testy, które zależą od tych wartości może zakończyć się niepowodzeniem, 
 
 Można tworzyć rozwiązania, nawet wtedy, gdy nie jest wprowadzanie zmian, jeśli proces kompilacji rozwiązania generuje kod źródłowy, który jest częścią samego rozwiązania, a pliki docelowe kompilacji ma odpowiednie wejściami i wyjściami, określony. Obiekty docelowe powinien być podawany listy danych wejściowych i wyjściowych, aby program MSBuild mógł kontrole odpowiedniej aktualności i ustalić, czy wymagana jest nowa kompilacja.
 
-Live Unit Testing uruchamia kompilację, gdy wykryje, że zostały zmienione pliki źródłowe. Ponieważ kompilacji rozwiązania generuje pliki źródłowe, Live Unit Testing zostanie wyświetlony w pętli nieskończonej kompilacji. Jeśli jednak dane wejściowe i wyjściowe, obiektu docelowego są zaznaczone rozpoczęciu Live Unit Testing drugą kompilację (po wykryciu nowo wygenerowanych plików źródłowych z poprzedniej kompilacji), spowoduje przerwanie dostęp do najaktualniejszych kompilacji, ponieważ będzie sprawdza dane wejściowe i wyjściowe Wskazuje, że wszystko jest aktualne.  
+Live Unit Testing uruchamia kompilację, gdy wykryje, że zostały zmienione pliki źródłowe. Ponieważ kompilacji rozwiązania generuje pliki źródłowe, Live Unit Testing zostanie wyświetlony w pętli nieskończonej kompilacji. Jeśli jednak dane wejściowe i wyjściowe, obiektu docelowego są zaznaczone rozpoczęciu Live Unit Testing drugą kompilację (po wykryciu nowo wygenerowanych plików źródłowych z poprzedniej kompilacji), spowoduje przerwanie dostęp do najaktualniejszych kompilacji, ponieważ będzie sprawdza dane wejściowe i wyjściowe Wskazuje, że wszystko jest aktualne.  
 
 ## <a name="lightweight-solution-load"></a>Uproszczone ładowanie rozwiązań
 **Jak odbywa się testowanie współpracują z funkcję uproszczone ładowanie rozwiązań jednostek na żywo?**
@@ -223,12 +222,12 @@ Jest to znany problem, należy ustalić w kolejnych aktualizacji programu Visual
 
 Ten problem zostanie rozwiązany i nie istnieje w programie Visual Studio 2017 w wersji 15.3. Uaktualnij do tej wersji programu Visual Studio.
 
-W starszych wersjach programu Visual Studio 2017 jest to znany problem. Aby obejść ten problem, należy wprowadzić zmiany do każdego pliku, po mają być dołączone lub wykluczone testów. 
+W starszych wersjach programu Visual Studio 2017 jest to znany problem. Aby obejść ten problem, należy wprowadzić zmiany do każdego pliku, po mają być dołączone lub wykluczone testów. 
 
 ## <a name="editor-icons"></a>Edytor ikon
 **Dlaczego nie widzę żadnych ikon w edytorze, mimo że Live Unit Testing wydaje się działać testu, w zależności od komunikaty w oknie danych wyjściowych?**
 
-Ikony w edytorze mogą być niewidoczne, jeśli nie są zestawy, które Live Unit Testing działa na dowolnej przyczyny. Na przykład Live Unit Testing nie jest zgodne z projektami, które ustawił `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. W takim przypadku Twój proces kompilacji musi zostać zaktualizowany, albo usuń to ustawienie lub zmień ją na `true` dla Live Unit Testing do pracy. 
+Ikony w edytorze mogą być niewidoczne, jeśli nie są zestawy, które Live Unit Testing działa na dowolnej przyczyny. Na przykład Live Unit Testing nie jest zgodne z projektami, które ustawił `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. W takim przypadku Twój proces kompilacji musi zostać zaktualizowany, albo usuń to ustawienie lub zmień ją na `true` dla Live Unit Testing do pracy. 
 
 ## <a name="capture-logs"></a>Przechwytywanie dzienników
 **Jak zbierania bardziej szczegółowych dzienników do pliku raportów usterek?**

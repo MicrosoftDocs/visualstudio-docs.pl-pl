@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentTextEvents2::OnUpdateTextAttributes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ceb40f54c4af0285576545efb0d228e65af493
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f464bba9bc07087c0b0dfc3379281f1b0c4ef252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936520"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 Powiadamia pakietu debugowania, atrybuty zostały zaktualizowane w dokumencie.  
@@ -28,14 +25,14 @@ Powiadamia pakietu debugowania, atrybuty zostały zaktualizowane w dokumencie.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT onUpdateTextAttributes(   
+HRESULT onUpdateTextAttributes(   
    TEXT_POSITION pos,  
    DWORD         dwNumToUpdate  
 );  
 ```  
   
 ```csharp  
-int onUpdateTextAttributes(   
+int onUpdateTextAttributes(   
    enum_TEXT_POSITION pos,  
    uint               dwNumToUpdate  
 );  

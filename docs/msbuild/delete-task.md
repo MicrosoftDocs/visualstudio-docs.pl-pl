@@ -1,8 +1,6 @@
 ---
 title: Usuń zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Delete
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4e0d4aa2567656e8aa37f88b59128bb60a786c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a61a81c3a3d3644f82f955b362b74fd990351c05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851433"
 ---
 # <a name="delete-task"></a>Delete — Zadanie
 Usuwa określone pliki.  

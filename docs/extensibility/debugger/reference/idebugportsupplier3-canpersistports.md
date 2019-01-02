@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplier3::CanPersistPorts | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d9038663bd74b5dabeda92d8b6b9e4e31d092de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939969"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 Ta metoda określa, czy dostawca portu można utrwalić portów (zapisując je na dysku) między wywołań debugera.  
@@ -28,21 +25,21 @@ Ta metoda określa, czy dostawca portu można utrwalić portów (zapisując je n
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
 ```csharp  
-int CanPersistPorts();  
+int CanPersistPorts();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  Brak.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `S_OK` Jeśli porty może zostać utrwalona, lub `S_FALSE` wskazująca, czy porty nie może zostać utrwalona.  
+ `S_OK` Jeśli porty mogą zostać utrwalone, lub `S_FALSE` do wskazania, czy porty nie może zostać utrwalona.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli dostawca portu można utrwalić portów, powinien robić, gdy został zniszczony i ponownie załadować, gdy zostanie uruchomiony ponownie.  
+ Jeśli dostawcy portu można utrwalić portów, należy to zrobić, kiedy niszczony jest i ponownie załadować, gdy zostanie uruchomiony ponownie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

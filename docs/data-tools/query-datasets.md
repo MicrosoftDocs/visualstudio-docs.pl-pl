@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2276828a67cec2562063d220ef3173d98fdf487b
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: b3b51946c9fbf6ba38249c8ca7056179b58ee8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852495"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 Aby wyszukać konkretne rekordy w zestawie danych, należy użyć `FindBy` metody w elemencie DataTable pisania własnych instrukcji foreach do pętli kolekcji wierszy w tabeli lub użyj [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -98,4 +97,4 @@ Ponadto obie tabele muszą zostać wypełnione danymi dla rekordów do zwróceni
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

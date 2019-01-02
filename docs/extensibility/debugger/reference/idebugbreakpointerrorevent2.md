@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointErrorEvent2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointErrorEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f7cd8bdb5e8a36539807970958efda8f152e5c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c64bd12bba1c3935575078a551d2edf06702e68d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900380"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
-Ten interfejs informuje menedżera debugowania sesji (SDM) oczekującym punktem przerwania nie można go powiązać załadować program, albo z powodu ostrzeżenia lub błędu.  
+Ten interfejs informuje Menedżer debugowania sesji (SDM), czy oczekujący punkt przerwania nie można powiązać załadować program, z powodu ostrzeżenia lub błędu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,12 +29,12 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Niemcy implementuje ten interfejs w ramach wsparcia dla punktów przerwania. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu (używa SDM [QueryInterface](/cpp/atl/queryinterface) dostępu `IDebugEvent2` interfejs).  
+ DE implementuje ten interfejs jako część jego obsługę punktów przerwania. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu (SDM używa [QueryInterface](/cpp/atl/queryinterface) dostęp do `IDebugEvent2` interfejsu).  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Niemcy tworzy i wysyła ten obiekt zdarzeń, gdy oczekującym punktem przerwania nie może być powiązany debugowanego programu. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) dostarczonych przez SDM, gdy jest on dołączony do debugowanego programu funkcja wywołania zwrotnego.  
+ DE tworzy i wysyła tego obiektu zdarzenia, jeśli oczekujący punkt przerwania nie można powiązać z debugowanego programu. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego dostarczonych przez model SDM, gdy jest on dołączony do debugowanego programu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugBreakpointErrorEvent2`.  
   
 |Metoda|Opis|  
@@ -45,16 +42,16 @@ IDebugBreakpointErrorEvent2 : IUnknown
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Pobiera [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfejsu, który opisuje ostrzeżenia lub błędu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zawsze, gdy punkt przerwania jest powiązany, zdarzenia są wysyłane do SDM. Jeśli nie można powiązać punktu przerwania, `IDebugBreakpointErrorEvent2` wysłane, a w przeciwnym razie [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) są wysyłane.  
+ Zawsze, gdy punkt przerwania jest związany, zdarzenia są wysyłane do SDM. Jeśli nie można powiązać punkt przerwania, `IDebugBreakpointErrorEvent2` jest wysyłany; w przeciwnym razie [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) są wysyłane.  
   
- Na przykład gdy warunek skojarzony z oczekującym punktem przerwania nie można przeanalizować lub ewaluacji, wysyłane jest ostrzeżenie, że w tej chwili nie można powiązać oczekującym punktem przerwania. Może to nastąpić, jeśli kod dla punktu przerwania nie została jeszcze załadowana.  
+ Na przykład gdy warunek skojarzony z Oczekujący punkt przerwania nie można przeanalizować lub oceń, wysyłane jest ostrzeżenie, że w tej chwili nie można powiązać oczekujący punkt przerwania. Może to nastąpić, jeśli kod dla punktu przerwania nie został jeszcze załadowany.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::GetLanguageInfo | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::GetLanguageInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8b9c31f5d681c80c1fe961fac039f8f9a6b5b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ab4402e183018b26ad4acfa71a8b3ef2a448cbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891660"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 Pobiera język skojarzone z tym kontekstem dokumentu.  
@@ -28,14 +25,14 @@ Pobiera język skojarzone z tym kontekstem dokumentu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetLanguageInfo(   
+HRESULT GetLanguageInfo(   
    BSTR* pbstrLanguage,  
    GUID* pguidLanguage  
 );  
 ```  
   
 ```csharp  
-int GetLanguageInfo(   
+int GetLanguageInfo(   
    out string pbstrLanguage,  
    out Guid   pguidLanguage  
 );  

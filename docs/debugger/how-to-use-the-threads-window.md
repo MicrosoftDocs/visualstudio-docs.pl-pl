@@ -1,9 +1,7 @@
 ---
 title: Debugowanie aplikacji wielowątkowych
 description: Debugowanie za pomocą okna wątki i narzędzi debugowania lokalizacji, w programie Visual Studio
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893710"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Przewodnik: Debugowanie aplikacji wielowątkowych, za pomocą okna wątków
 
@@ -99,7 +97,7 @@ Oflagowanie i usuwanie oflagowania wątków z Edytor kodu źródłowego lub **w�
 
 1. Otwórz **Lokalizacja debugowania** narzędzi, wybierając **widoku** > **pasków narzędzi** > **Lokalizacja debugowania**. Możesz również kliknąć prawym przyciskiem myszy obszar paska narzędzi i wybierz **Lokalizacja debugowania**. 
    
-1. **Lokalizacja debugowania** narzędzi ma trzy pola: **procesu**, **wątku**, i **ramki stosu**. Lista rozwijana **wątku** listy i zwróć uwagę, jak wiele wątków są. W **wątku** listy aktualnie wykonywany wątek jest oznaczony za **>** symboli. 
+1. **Lokalizacja debugowania** narzędzi ma trzy pola: **Proces**, **wątku**, i **ramki stosu**. Lista rozwijana **wątku** listy i zwróć uwagę, jak wiele wątków są. W **wątku** listy aktualnie wykonywany wątek jest oznaczony za **>** symboli. 
    
 1. W oknie kodu źródłowego wskaźnik myszy na ikonie znacznika wątku, na marginesie, a następnie wybierz ikonę flagi (lub jedną z ikon flagi pusta) w DataTip. Ikony flagi zmieni kolor na czerwony. 
    
@@ -188,4 +186,4 @@ Teraz znasz już podstawowe informacje dotyczące debugowania aplikacji wielową
   
 ## <a name="see-also"></a>Zobacz także  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Instrukcje: Przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)

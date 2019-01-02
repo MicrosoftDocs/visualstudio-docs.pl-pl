@@ -2,7 +2,6 @@
 title: 'Przykładowy plik XSD: Schemat zamówienia zakupu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c26272b2e30fa505a196828ecddc9fc8385fe4c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f7b26fdef946d37824c0595821541b3cb2adce20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941482"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: schemat zamówienia zakupu
+# <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: Schemat zamówienia zakupu
 
 Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu.
 

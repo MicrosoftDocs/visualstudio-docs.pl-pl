@@ -1,9 +1,6 @@
 ---
 title: Wymagane interfejsy dostawcy portów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - port suppliers, required interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c727cb39b480d72a3e0aa2083ca795bb65ac0ff
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 79991880b244165f6041903c2f71188a25d910cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850820"
 ---
 # <a name="required-port-supplier-interfaces"></a>Wymagane interfejsy dostawcy portów
 Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfejsu.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
@@ -55,13 +52,13 @@ Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/deb
   
     -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
   
-    -   [Getname —](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
+    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
     -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
     -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
-    -   [Getprocessid —](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
+    -   [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
   
     -   [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
   
@@ -73,7 +70,7 @@ Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/deb
   
      W tym artykule opisano logicznych program. Co najmniej należy zaimplementować następujące metody:  
   
-    -   [Getname —](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
+    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
   
     -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
   

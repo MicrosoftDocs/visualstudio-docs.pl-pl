@@ -1,8 +1,6 @@
 ---
-title: Widok okien | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wyświetl Windows | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
@@ -14,50 +12,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940417"
 ---
 # <a name="windows-view"></a>Widok okien
-Przy pierwszym otwarciu Spy ++, widoku systemu Windows wyświetla drzewo wszystkie okna i formantów w systemie. Nazwa okna obsługi i klasa są wyświetlane. Bieżące okno pulpitu jest w górnej części drzewa. Inne systemu windows są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchii standardowego okna. Okna równorzędne są wyświetlane na listach expansible poniżej ich elementów nadrzędnych.  
+Przy pierwszym otwarciu programu Spy ++, widok Windows wyświetla drzewo wszystkich okien i formantów w systemie. Nazwa okna dojścia i klasy są wyświetlane. Bieżące okno pulpitu jest w górnej części drzewa. Inne okna są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchią standardowego okna. Okna równorzędne są wyświetlane na listach expansible poniżej nadrzędnych.  
   
- Na poniższym rysunku przedstawiono typowy widok Spy ++ systemu Windows z najwyższy węzeł rozwinięty.  
+ Na poniższym rysunku przedstawiono typowy widok programu Spy ++ Windows za pomocą węzła najwyższego poziomu, rozwinięty.  
   
- ![Spy&#43; &#43; widoku systemu Windows](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
-Widok okien Spy ++  
+ ![Szpieguj&#43; &#43; widoku Windows](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
+Wyświetl Windows Spy ++  
   
- Bieżące okno pulpitu jest w górnej części drzewa. Inne systemu windows są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchii standardowe okno z tego samego poziomu systemu windows uporządkowanych według kolejności. Można rozwinąć lub zwinąć dowolnego węzła nadrzędnego drzewa, klikając pozycję + lub - symbol obok węzła.  
+ Bieżące okno pulpitu jest w górnej części drzewa. Inne okna są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchią standardowego okna z okna równorzędne uporządkowane według porządku osi Z. Można rozwinąć lub zwinąć dowolnego węzła nadrzędnego w drzewie, klikając pozycję + lub - symbol obok węzła.  
   
- Po aktywowaniu widoku systemu Windows, można użyć narzędzia wyszukiwania w [wyszukiwania okna, okno dialogowe](../debugger/window-search-dialog-box.md) do wyświetlania informacji z otwartego okna w systemie.  
+ Po aktywowaniu widoku Windows, można użyć narzędzia wyszukiwania w [okno dialogowe Wyszukiwanie](../debugger/window-search-dialog-box.md) do wyświetlania informacji z otwartego okna w systemie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: Korzystanie z narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md)  
- Pokazuje, jak to narzędzie skanowania w oknie właściwości lub komunikaty.  
+ [Instrukcje: Korzystanie z narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md)  
+ Pokazuje, jak to narzędzie skanowania systemu windows do właściwości lub komunikaty.  
   
- [Instrukcje: wyszukiwanie okna w widoku okien](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Wyjaśniono, jak można znaleźć w określonym oknie w widoku systemu Windows.  
+ [Instrukcje: Wyszukiwanie okna w widoku Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ Wyjaśnia, jak można odnaleźć określonego okna w widoku Windows.  
   
- [Porady: wyświetlanie właściwości okna](../debugger/how-to-display-window-properties.md) m  
+ [Instrukcje: Wyświetlanie właściwości okna](../debugger/how-to-display-window-properties.md) m  
  Procedury otwierając okno dialogowe Właściwości okna.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
+ Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
   
  [Okno dialogowe Znajdź okno](../debugger/find-window-dialog-box.md)  
- Używany do wyświetlania właściwości lub komunikaty z określonym oknie.  
+ Używane, aby wyświetlić właściwości lub komunikaty z określonym oknie.  
   
- [Wyszukiwanie okien — okno dialogowe](../debugger/window-search-dialog-box.md)  
- Umożliwia znalezienie węzła w określonym oknie w widoku systemu Windows.  
+ [Wyszukiwanie okien, okno dialogowe](../debugger/window-search-dialog-box.md)  
+ Umożliwia znalezienie węzła w określonym oknie, w widoku Windows.  
   
- [Okno dialogowe właściwości](../debugger/window-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości przedziału wybranego w widoku systemu Windows.  
+ [Właściwości okna, okno dialogowe](../debugger/window-properties-dialog-box.md)  
+ Umożliwia wyświetlenie właściwości wybranego w widoku Windows okna.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.
+ Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.

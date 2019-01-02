@@ -1,9 +1,6 @@
 ---
 title: BP_PASSCOUNT | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_PASSCOUNT
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 105c6668c50d690bcc0016f888ce1f241130d1eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15026cc5b51c5a7caf4d7abb11029ff9d800cb39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927301"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
 W tym artykule opisano, liczbę i warunki, na których jest uruchamiany warunkowego punktu przerwania.  
@@ -28,14 +25,14 @@ W tym artykule opisano, liczbę i warunki, na których jest uruchamiany warunkow
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-typedef struct _BP_PASSCOUNT {   
+typedef struct _BP_PASSCOUNT {   
    DWORD              dwPassCount;  
    BP_PASSCOUNT_STYLE stylePassCount;  
 } BP_PASSCOUNT;  
 ```  
   
 ```csharp  
-public struct BP_PASSCOUNT {   
+public struct BP_PASSCOUNT {   
    public uint dwPassCount;  
    public uint stylePassCount;  
 };  
@@ -56,9 +53,9 @@ public struct BP_PASSCOUNT {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

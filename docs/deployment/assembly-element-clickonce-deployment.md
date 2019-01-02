@@ -1,8 +1,6 @@
 ---
 title: '&lt;zestaw&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 10e9119f54eeb428e94b9e9055b9845fbc7cb9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899827"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;zestaw&gt; — element (wdrażanie ClickOnce)
 Element najwyższego poziomu do manifestu wdrażania.  
@@ -32,7 +30,7 @@ Element najwyższego poziomu do manifestu wdrażania.
   
 ```xml  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -44,7 +42,7 @@ Element najwyższego poziomu do manifestu wdrażania.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`manifestVersion`|Wymagane. Ten atrybut musi być równa `1.0`.|  
+|`manifestVersion`|Wymagana. Ten atrybut musi być równa `1.0`.|  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie kodu pokazano `assembly` elementu w manifeście wdrożenia dla aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  

@@ -1,8 +1,6 @@
 ---
 title: Tylko mój kod (Widok wątków) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.jmc
@@ -14,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b194dbddcd4a0b89c05944de9160bb2e39d43c6
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 825bf6e16aa0420a24b80dbfaaeb869325b3e68b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877422"
 ---
 # <a name="just-my-code-threads-view"></a>Tylko mój kod (Widok wątków)
-Wybranie tej opcji spowoduje filtrowanie stos wywołań, aby wyświetlić tylko kodu oraz jeden poziom funkcji o nazwie.  
+Jeśli wybierzesz tę opcję, będzie filtrować stos wywołań, aby pokazać tylko Twój kod i jeden poziom funkcji o nazwie.  
   
- Przez włączenie tej opcji, można znacznie zmniejszyć złożoność stosu wywołań i może ułatwić zdiagnozowania określonego problemu.  
+ Przez włączenie tej opcji, można znacznie zmniejszyć złożoność stos wywołań i być może ułatwić diagnozowanie konkretnych problemów.  
   
- W niektórych przypadkach wybranie tej opcji może odfiltrować blokowania wywołania. Jeśli potrzebujesz szczegóły stosu wywołań pełną, aby kierować się, usuń zaznaczenie tej opcji do udostępnienia stosu wywołań pełna.  
+ W niektórych przypadkach wybranie tej opcji może odfiltrować wywołania blokowania. Jeśli potrzebujesz pełnego wywołanie stosu szczegóły, aby kierować się, usuń zaznaczenie tej opcji, aby udostępnić pełny stos wywołania.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)   

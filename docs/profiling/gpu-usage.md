@@ -1,20 +1,18 @@
 ---
 title: Użycie procesora GPU | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941089"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 
@@ -41,7 +39,7 @@ Dodaj następujące wymagania dotyczące korzystania z narzędzia użycie proces
 
 **Aby uruchomić narzędzie użycie procesora GPU:**
 
-1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatura: naciśnij klawisze Alt + F2).
+1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatury: Naciśnij klawisze Alt + F2).
 
 2. W Centrum wydajności i diagnostyki, zaznacz pole wyboru obok pozycji **użycie procesora GPU**. Opcjonalnie zaznacz pola wyboru obok inne narzędzia, których interesuje Cię. Możesz uruchomić kilka wydajności i narzędzia diagnostyczne jednocześnie, aby uzyskać pełniejszy obraz wydajności Twojej aplikacji.
 
@@ -104,13 +102,13 @@ Aby znaleźć, czego szukasz, filtr raportu użycia procesora GPU na podstawie n
 |--------------------|-----------------|
 |**Proces**|Nazwa procesu, który Cię interesuje. Wszystkie procesy, które używały procesora GPU podczas sesji diagnostycznej znajdują się na tej liście rozwijanej. Kolor skojarzony z procesu w tej listy rozwijanej jest kolor działanie wątku na osiach czasu poniżej.|
 |**Wątek**|Identyfikator wątku, który Cię interesuje. W przypadku aplikacji wielowątkowych tych informacji może pomóc wyizolować określoną wątków, które należą do procesu, który chcesz wziąć. Zdarzenia związane z wybranym wątku są wyróżnione w każdym osi czasu.|
-|**Wyświetlanie**|Liczba wyświetlania, w których częstotliwość odświeżania jest wyświetlana **Uwaga:** niektóre sterowniki można skonfigurować, aby prezentować wiele ekranów fizycznych jako pojedyncze, duże ekran wirtualnego. Widoczne mogą być tylko jeden ekran, na liście, nawet wtedy, gdy komputer ma wiele ekranów dołączone.|
+|**Wyświetlanie**|Liczba wyświetlania, w których częstotliwość odświeżania jest wyświetlana **Uwaga:**  Niektóre sterowniki można skonfigurować do przedstawienia wielu ekranów fizycznych jako pojedyncze, duże ekran wirtualnego. Widoczne mogą być tylko jeden ekran, na liście, nawet wtedy, gdy komputer ma wiele ekranów dołączone.|
 |**Filtr**|Słowa kluczowe, które Cię interesuje. Zdarzenia w dolnej części raportu będzie zawierał tylko te, które odpowiadają — słowo kluczowe w całości lub części. Można określić wiele słów kluczowych, oddzielając je średnikami (;).|
 |**Sortuj hierarchii**|Pole wyboru, która wskazuje, czy hierarchie zdarzeń — definiowane przy użyciu znaczniki użytkownika — są zachowywane lub zignorować.|
 
  Lista zdarzeń w dolnej części raportu użycia procesora GPU przedstawiono szczegóły każdego zdarzenia.
 
-|Kolumny|Opis|
+|Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa zdarzenia**|Nazwa zdarzenia grafiki. Zdarzenie jest zazwyczaj odnosi się do zdarzenia na osi czasu wątku procesora CPU i zdarzenia osi czasu procesora GPU.<br /><br /> Nazwy zdarzeń może być "unattributed", jeśli użycie procesora GPU nie może określić nazwę zdarzenia. Aby uzyskać więcej informacji zobacz uwagi pod tą tabelą.|
 |**Uruchomienie procesora CPU (ns)**|Czas zdarzenia zostało zainicjowane na procesorze CPU, wywołując interfejs API Direct3D. Czas jest mierzony w nanosekundach względem podczas uruchamiania aplikacji.|
@@ -128,7 +126,7 @@ Można skonfigurować narzędzie użycie procesora GPU można odroczyć kolekcji
 
 **Aby odłożyć profilowania od samego początku aplikacji:**
 
-1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatura: naciśnij klawisze Alt + F2).
+1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatury: Naciśnij klawisze Alt + F2).
 
 2. W Centrum wydajności i diagnostyki, postępuj zgodnie z **ustawienia** łącze obok **użycie procesora GPU**.
 

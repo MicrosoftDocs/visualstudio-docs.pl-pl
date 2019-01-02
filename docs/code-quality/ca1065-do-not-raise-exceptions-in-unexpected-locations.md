@@ -1,8 +1,7 @@
 ---
-title: 'CA1065: Nie należy wyrzucać wyjątków w nieoczekiwanych lokalizacjach'
+title: 'CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1065
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4999770367ad7b170398333cf7c7cf2cb9d1c407
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 824f257c19b219f78d226a82469cffb315f3069a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881620"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie należy wyrzucać wyjątków w nieoczekiwanych lokalizacjach
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach
 
 |||
 |-|-|
@@ -148,7 +147,7 @@ Jeśli naruszenie zostało spowodowane przez deklaracji wyjątku zamiast zgłosz
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątku](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>Zobacz także
 

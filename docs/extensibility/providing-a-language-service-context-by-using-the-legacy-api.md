@@ -1,9 +1,6 @@
 ---
 title: Dostarczanie kontekstu usługi języka za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940261"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Zapewnianie kontekstu usługi języka przy użyciu starszej wersji interfejsu API
 Dostępne są dwie opcje usługi języka zapewnić kontekst użytkownika za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowy edytor: dostarczy w kontekście znacznika tekstu, lub wszystkie kontekstu użytkownika. Różnice między nimi opisano w tym miejscu.  
   
- Aby uzyskać więcej informacji na temat podawania kontekstu usługi języka, który jest podłączony do własnego edytora, zobacz [porady: dostarczanie kontekstu edytory](../extensibility/how-to-provide-context-for-editors.md).  
+ Aby uzyskać więcej informacji na temat podawania kontekstu usługi języka, który jest podłączony do własnego edytora, zobacz [jak: Dostarczanie kontekstu edytory](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Podaj w kontekście znacznika tekstu do edytora  
  Aby zapewnić kontekst dla błędów kompilatora wskazywanym przez znaczników tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] core editor, implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfejsu. W tym scenariuszu Usługa językowa udostępnia kontekst, tylko wtedy, gdy kursor znajduje się na znacznika tekstu. Dzięki temu w edytorze — słowo kluczowe w lokalizacji kursora, aby zapewnić **dynamiczna Pomoc** okno z żadnych atrybutów.  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934378"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
  Jeżeli masz wyświetlić lub edytować dwóch lokalizacjach jednocześnie w dokumencie, można podzielić systemu windows. Aby dokumentu należy podzielić na dwie sekcje niezależnie przewijania, kliknij przycisk **podziału** na **okna** menu. Kliknij przycisk **Usuń podział** na **okna** menu, aby przywrócić jednego widoku.
 
 ### <a name="toolbars"></a>Paski narzędzi
- Paski narzędzi mogą być ułożone przez przeciąganie lub za pomocą **Dostosuj** okno dialogowe. Aby uzyskać więcej informacji o tym, jak to pozycjonowania i dostosowywanie pasków narzędzi, zobacz [porady: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Paski narzędzi mogą być ułożone przez przeciąganie lub za pomocą **Dostosuj** okno dialogowe. Aby uzyskać więcej informacji o tym, jak to pozycjonowania i dostosowywanie pasków narzędzi, zobacz [jak: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Rozmieszczanie i dokowanie Windows
  Zarówno dokumentów systemu windows i okna narzędzi mogą być *zadokowany*, dzięki czemu ma położenie i rozmiar w obrębie ramki okna środowiska IDE lub zmiennoprzecinkowego jako oddzielne okno niezależnie od środowiska IDE. Narzędzia systemu windows może być zadokowane w dowolne miejsce wewnątrz ramki IDE; Niektóre narzędzia systemu windows może być zadokowane jako okien z zakładkami w ramce edytora. Okna dokumentów, może być zadokowane w ramce edytora i można przypiąć do bieżącego położenia w kolejności tabulacji. Można zadokować wiele okien, aby przestawić razem na "tratwie" nad lub poza IDE. Można również ukryte okna narzędzi lub zminimalizowana.
@@ -168,7 +167,7 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 
      Jeśli masz wielu konfiguracji monitora, w miejscu pracy oraz pojedynczy monitor komputera przenośnego w domu, można utworzyć układów, które są zoptymalizowane dla każdego komputera.
 
-     Uwaga: Jeśli zastosujesz układ wielu monitorów w systemie jednego monitora zmiennoprzecinkowy systemu windows, które umieszczone na drugim monitorze będzie teraz ukryty pod okna programu Visual Studio. Możesz użyć tych okien do przodu, naciskając klawisze Alt + Tab. Po otwarciu programu Visual Studio z wieloma monitorami, stosując ponownie układ można przywrócić systemu windows do ich określonych pozycji.
+     Uwaga: Jeśli zastosujesz układ wielu monitorów w systemie jednego monitora zmiennoprzecinkowy systemu windows, które umieszczone na drugim monitorze teraz będzie ukryty pod okna programu Visual Studio. Możesz użyć tych okien do przodu, naciskając klawisze Alt + Tab. Po otwarciu programu Visual Studio z wieloma monitorami, stosując ponownie układ można przywrócić systemu windows do ich określonych pozycji.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Zarządzanie i są przekazywane układów
 
@@ -185,6 +184,6 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Rodzaje Windows](../misc/kinds-of-windows.md)|W tym artykule omówiono różnice między oknami narzędzi i oknami dokumentu w IDE.|
-|[Porady: Aranżowanie i dokowanie Windows](../misc/how-to-arrange-and-dock-windows.md)|W tym artykule opisano, jak dokować, automatycznie ukrywać i rozkładać sąsiadująco okna, a także jak zresetować układ okien.|
-|[Instrukcje: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|W tym artykule opisano, jak przechodzić kolejno przez otwarte okna w IDE, w kolejności ich użycia. Opisano również, jak można przejść do określonych dokumentów.|
+|[Instrukcje: Aranżowanie i dokowanie Windows](../misc/how-to-arrange-and-dock-windows.md)|W tym artykule opisano, jak dokować, automatycznie ukrywać i rozkładać sąsiadująco okna, a także jak zresetować układ okien.|
+|[Instrukcje: Poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|W tym artykule opisano, jak przechodzić kolejno przez otwarte okna w IDE, w kolejności ich użycia. Opisano również, jak można przejść do określonych dokumentów.|
 |[Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Zawiera informacje dotyczące kombinacji ustawień i wpływu ustawień na układy okien, skróty klawiaturowe i inne elementy w IDE.|

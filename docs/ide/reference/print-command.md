@@ -2,7 +2,6 @@
 title: Print — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.print
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef4f0c5c6bd5be2820e1f666529fc43fac59763
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 31f604d6df45cb22d18401b5925867d5ab0e02b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900889"
 ---
 # <a name="print-command"></a>Print — Polecenie
 Oblicza wyrażenie lub wyświetla określony tekst.
@@ -38,7 +37,7 @@ Debug.Print text
  Wymagana. Wyrażenie do oceny lub tekst do wyświetlenia.
 
 ## <a name="remarks"></a>Uwagi
- Znak zapytania (?) można użyć jako alias dla tego polecenia. Tak na przykład, polecenie
+ Dla tego polecenia, można użyć znaku zapytania (?) jako alias. Tak na przykład polecenie
 
 ```cmd
 >Debug.Print expA
@@ -50,7 +49,7 @@ Debug.Print text
 >? expA
 ```
 
- Obie wersje to polecenie zwróci bieżącą wartość wyrażenia `expA`.
+ Obie wersje to polecenie zwraca bieżącą wartość wyrażenia `expA`.
 
 ## <a name="example"></a>Przykład
 
@@ -63,5 +62,5 @@ Debug.Print text
 - [Oceń instrukcję, polecenie](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

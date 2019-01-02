@@ -1,9 +1,8 @@
 ---
-title: 'Szybki Start: Tworzenie usługi sieci web platformy ASP.NET Core wF#'
+title: 'Szybki start: Tworzenie usługi sieci web platformy ASP.NET Core wF#'
 description: Dowiedz się, jak tworzyć usługi sieci web platformy ASP.NET Core w programie Visual Studio F#krok po kroku.
 ms.date: 08/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -13,14 +12,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 884dfec4d3b8050fa6059cb0f505e1c7619336f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9cdd97349732b4e228c77ce59990e47a396a0112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961874"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej usługi sieci web platformy ASP.NET Core wF#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Umożliwia utworzenie pierwszej usługi sieci web platformy ASP.NET Core w programie Visual StudioF#
 
 W ramach tego wprowadzenia 5 – 10 minut, aby F# w programie Visual Studio, utworzysz F# aplikacji sieci web platformy ASP.NET Core.
 

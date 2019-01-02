@@ -2,7 +2,6 @@
 title: Zastąp w plikach — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf54892d17a877cd8e2c3ffd21ebd513e303d6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960015"
 ---
 # <a name="replace-in-files-command"></a>Zastąp w plikach — Polecenie
-Zamienia tekst w plikach za pomocą podzbiór opcje dostępne na **Zastąp w plikach** karcie **Znajdź i Zamień** okna.
+Zastępuje tekst w plikach za pomocą podzestawu opcji dostępnych w **Zamień w plikach** karcie **Znajdź i Zamień** okna.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,7 +40,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
  `replacewith`
 
- Wymagana. Tekst do zastąpienia dla dopasowanego tekstu.
+ Wymagana. Tekst do podstawienia w dopasowany tekst.
 
 ## <a name="switches"></a>Przełączniki
  / all lub /a
@@ -50,7 +49,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
  /Case lub /c
 
- Opcjonalna. Dopasowań występuje tylko wtedy, gdy po wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.
+ Opcjonalna. Dopasowuje występują tylko wtedy, gdy po wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.
 
  /ext: `extensions`
 
@@ -58,50 +57,50 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
  /Keep lub /k
 
- Opcjonalna. Określa, że wszystkie zmodyfikowane pliki pozostają otwarte.
+ Opcjonalna. Określa, że wszystkie zmodyfikowane pliki są pozostawione otwarte.
 
  /lookin: `searchpath`
 
- Opcjonalna. Katalog do wyszukiwania. Jeśli ścieżka zawiera spacje, ujmij całą ścieżkę w cudzysłów.
+ Opcjonalna. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, należy ująć w znaki cudzysłowu pełną ścieżkę.
 
- / Options lub /t
+ / Options lub/t
 
- Opcjonalna. Wyświetla listę bieżące ustawienia opcji wyszukiwania, a nie przeprowadza wyszukiwanie.
+ Opcjonalna. Wyświetla listę bieżących ustawień opcji wyszukiwania, a nie wyszukiwania.
 
- /regex lub /r
+ /regex lub/r
 
- Opcjonalna. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji reprezentujących wzorce tekstu, a nie literał znaków. Pełną listę znaków wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
+ Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji, które reprezentują wzorców tekstu, a nie jako znaki literału. Aby uzyskać pełną listę znaki wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
 
- / Reset lub/e
+ / Reset i/e
 
- Opcjonalna. Zwraca opcje Znajdź do ustawień domyślnych i nie wykonuje wyszukiwanie.
+ Opcjonalna. Zwraca opcje wyszukiwania do ustawień domyślnych, a nie wyszukiwania.
 
  / stop
 
- Opcjonalna. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Zamień ignoruje wszystkie inne argumenty podczas `/stop` został określony. Na przykład można zatrzymać bieżącej zastąpienia należy wprowadzić następujące czynności:
+ Opcjonalna. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Zastąp ignoruje wszystkie inne argumenty po `/stop` została określona. Na przykład aby zatrzymać zastąpienie bieżącego wprowadziłbyś następujące czynności:
 
 ```
 >Edit.ReplaceinFiles /stop
 ```
 
- /Sub lub/s
+ / Sub lub /s
 
- Opcjonalna. Wyszukuje podfolderów znajdujących się w katalogu określonym w /lookin:`searchpath` argumentu.
+ Opcjonalna. Wyszukuje podfoldery znajdujące się w katalogu wskazanym na /lookin:`searchpath` argumentu.
 
  /text2 lub /2
 
- Opcjonalna. Wyświetla wyniki zastąpienia w **znaleźć 2 wyniki** okna.
+ Opcjonalna. Wyświetla wyniki zastąpienia w **Znajdź wyniki 2** okna.
 
  /Wild lub/l
 
- Opcjonalna. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji do reprezentowania znaków ani sekwencji znaków.
+ Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji do reprezentowania znaku lub sekwencji znaków.
 
- opcji lub /w
+ opcji lub Wn
 
- Opcjonalna. Wyszukuje tylko całe wyrazy.
+ Opcjonalna. Wyszukiwanie tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie wyszukuje `btnCancel` i zastępuje go tekstem `btnReset` w .cls wszystkie pliki znajdujące się w folderze "Moje projekty visual studio" i wyświetla informacje dotyczące zastępowania w **znaleźć 2 wyniki** okna.
+ W tym przykładzie wyszukuje `btnCancel` i zastępuje go tekstem `btnReset` w .cls wszystkie pliki znajdujące się w folderze "Moje projekty programu visual studio" i wyświetla informacje dotyczące zastępowania w **Znajdź wyniki 2** okna.
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
@@ -112,6 +111,6 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 - [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)
 - [Zastąp w plikach](../../ide/replace-in-files.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

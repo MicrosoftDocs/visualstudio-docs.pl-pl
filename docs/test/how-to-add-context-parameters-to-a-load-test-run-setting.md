@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898391"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Instrukcje: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
 
 Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
 
@@ -38,9 +37,9 @@ Jeśli przypisujesz wartość parametru kontekstowego serwer_sieci_Web_1 do `htt
 
 Ponadto, przypisując różne wartości do parametru kontekstu przy użyciu tej samej nazwie w uruchomieniowych testu obciążeniowego różnych, można uruchomić testu obciążeniowego za pomocą różnych środowiskach:
 
-- Firmowy serwer sieci Web przemieszczania uruchomieniowy: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
+- Serwer sieci Web firmy przemieszczania uruchomieniowy: Parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
 
-- Firmowy serwer sieci Web w środowisku produkcyjnym uruchomieniowy: parametr kontekstu, który nosi nazwę `WebServer1=http://CorporateProductionWebServer`
+- Ustawienia uruchamiania firmowy serwer sieci Web w środowisku produkcyjnym: Parametr kontekstowy o nazwie `WebServer1=http://CorporateProductionWebServer`
 
   **Zmienianie ustawień wykonywania w wierszu polecenia**
 

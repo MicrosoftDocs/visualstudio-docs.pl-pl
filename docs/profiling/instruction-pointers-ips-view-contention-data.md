@@ -1,8 +1,6 @@
 ---
 title: Widok wskaźników instrukcji (IP) - dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,40 +10,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853479"
 ---
-# <a name="instruction-pointers-ips-view---contention-data"></a>Widok wskaźników instrukcji (IP) - dane kontencji
-Adresy IP widok danych kontencji Wyświetla listę danych instrukcje zestawu, które zostały zablokowane w przebiegu profilowania.  
+# <a name="instruction-pointers-ips-view---contention-data"></a>Widok wskaźników instrukcji (IP) — dane rywalizacji
+Adresy IP widok rywalizacji o zasoby danych zawierający dane, instrukcje zestawu, które zostały zablokowane wykonania podczas uruchomienia profilowania.  
   
- W poniższej tabeli przedstawiono wartości w kolumnach widok wskaźników instrukcji.  
+ W poniższej tabeli przedstawiono wartości w kolumnach w widok wskaźników instrukcji.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|**Wyłączny czasu blokowania**|Czas blokowania w tej funkcji.|  
-|**% Wyłącznego czasu blokowania**|Wartość procentowa czasu blokowania, podczas gdy instrukcja została wykonana.|  
-|**Wyłączny rywalizacji**|Liczba rywalizacji, które wystąpiły podczas instrukcji zostało wykonane.|  
-|**% Wyłącznego rywalizacji**|Procent wszystkich rywalizacji w przebiegu profilowania, które wystąpiły podczas instrukcji zostało wykonane.|  
-|**Adres funkcji**|Początkowy adres pamięci funkcji w załadować dane binarne.|  
+|**Wyłączny czas blokowania**|Czas blokowania w tej funkcji.|  
+|**% Własnego czasu blokowania**|Procent czasu blokowania, gdy została wykonana instrukcja.|  
+|**Rywalizacje wyłączne**|Liczba rywalizacji, które wystąpiły w trakcie instrukcji zostało wykonane.|  
+|**% Rywalizacji wyłącznych**|Procent wszystkich rywalizacji podczas uruchomienia profilowania, które wystąpiły w trakcie instrukcji zostało wykonane.|  
+|**Adres funkcji**|Początkowy adres pamięci funkcja w załadowano danych binarnych.|  
 |**Nazwa funkcji**|Nazwa funkcji, która zawiera instrukcję.|  
-|**Adres instrukcji**|Adres pamięci z instrukcjami w załadować dane binarne.|  
-|**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
+|**Adres instrukcji**|Adres pamięci, instrukcja w załadowano danych binarnych.|  
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Nazwa modułu**|Nazwa modułu, który zawiera instrukcję.|  
-|**Ścieżka modułu**|Ścieżka moduł, który zawiera instrukcję.|  
-|**Identyfikator procesu**|Identyfikator PID procesu PROFILOWANEGO procesu.|  
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera instrukcję.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) dla PROFILOWANEGO procesu.|  
 |**Nazwa procesu**|Nazwa procesu.|  
-|**Rozpocznij znaków źródła**|Przesunięcie znaku w wierszu pliku źródłowego, w którym rozpoczyna się tej instrukcji.|  
-|**Źródło znak końcowy**|Przesunięcie znaku w wiersza pliku źródłowego, w którym kończy się w tej instrukcji.|  
+|**Początkowy znak w źródle**|Przesunięcie znaku w wierszu pliku źródłowego, w którym rozpoczyna się tej instrukcji.|  
+|**Końcowy znak w źródle**|Przesunięcie znaku w wierszu pliku źródłowego, w którym kończy się w tej instrukcji.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera instrukcję.|  
-|**Początek wiersza źródłowego**|Numer wiersza pliku źródłowego, w którym rozpoczyna się tej instrukcji.|  
-|**Źródło końca wiersza**|Numer wiersza pliku źródłowego, w którym kończy się w tej instrukcji.|  
+|**Początkowy wiersz w źródle**|Numer wiersza w pliku źródłowym, w którym rozpoczyna się tej instrukcji.|  
+|**Końcowy wiersz w źródle**|Numer wiersza w pliku źródłowym, w którym kończy się w tej instrukcji.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md)   
  [Wskaźników instrukcji (IP) View - próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)

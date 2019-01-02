@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87d4e11ffcb485ac96d2ecdb53951532a2c1305a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932041"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](create-and-configure-tableadapters.md) i klasy zestawu danych mogą być generowane w oddzielnych projektów. Dzięki temu można szybko oddzielnymi warstwami aplikacji i generowania aplikacji n warstwowa danych.
@@ -63,6 +62,6 @@ Domyślnie po oddzielić zestaw danych i kod TableAdapter wynik jest plik klasy 
 
 - [Omówienie aplikacji N-warstwowa danych](../data-tools/n-tier-data-applications-overview.md)
 - [Przewodnik: Tworzenie aplikacji N-warstwowa danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
-- [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)
+- [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki'
-ms.custom: ''
+title: 'Instrukcje: Programowe zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891803"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Porady: programowane Zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Instrukcje: Programowe zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
   Możesz zmienić czcionkę cały wiersz, który zawiera zaznaczonej komórki, dlatego, że tekst jest pogrubiony.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891287"
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Porady: programowane stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Porady: programowane kopiowanie danych i formatowanie między arkuszami](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Instrukcje: Programowe stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Instrukcje: Programowe kopiowanie danych i formatowanie między arkuszami](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

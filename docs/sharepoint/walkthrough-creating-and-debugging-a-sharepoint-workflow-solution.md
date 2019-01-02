@@ -1,16 +1,11 @@
 ---
-title: 'Wskazówki: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912993"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
   W tym instruktażu pokazano, jak utworzyć szablon podstawowy sekwencyjny przepływ pracy. Właściwość Biblioteka dokumentów udostępnionych w celu ustalenia, czy dokument został przejrzany sprawdza, czy przepływ pracy. Jeśli dokument został przejrzany, przepływ pracy zakończy się.  
@@ -127,7 +122,7 @@ ms.locfileid: "42626491"
      Ta strona umożliwia określenie, po rozpoczęciu pracy. Domyślnie, przepływ pracy jest uruchamiany albo po użytkownik ręcznie uruchamia go w programie SharePoint lub po utworzeniu elementu, z którym jest skojarzony przepływ pracy.  
   
 ## <a name="create-workflow-activities"></a>Tworzenie działań przepływu pracy
- Przepływy pracy zawierają co najmniej jeden *działania* reprezentujące akcje do wykonania. Rozmieść działań przepływu pracy za pomocą projektanta przepływu pracy. Dwa działania w tej procedurze zostanie dodany do przepływu pracy: działanie HandleExternalEventActivity i OnWorkFlowItemChanged. Te działania monitorowania stanu przeglądu dokumentów w **dokumenty udostępnione** listy  
+ Przepływy pracy zawierają co najmniej jeden *działania* reprezentujące akcje do wykonania. Rozmieść działań przepływu pracy za pomocą projektanta przepływu pracy. W tej procedurze dodamy dwa działania do przepływu pracy: Działanie HandleExternalEventActivity i OnWorkFlowItemChanged. Te działania monitorowania stanu przeglądu dokumentów w **dokumenty udostępnione** listy  
   
 #### <a name="to-create-workflow-activities"></a>Do tworzenia działań przepływu pracy  
   
@@ -296,4 +291,3 @@ ms.locfileid: "42626491"
  [Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

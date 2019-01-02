@@ -1,9 +1,6 @@
 ---
 title: Usługi językowej i edytora punkty rozszerzenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907965"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punkty rozszerzenia usługi oraz edytora języka
 Edytor umożliwia punktów rozszerzeń, rozszerzających jako części składowe Managed Extensibility Framework (MEF), w tym większość funkcji usługi języka. Poniżej przedstawiono kategorie punktu rozszerzenia główne:  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: skojarzone z zakończeń.  
   
   > [!NOTE]
-  >  Na przykład <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, zobacz definicję HighlightWordTag w [przewodnik: wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md).  
+  >  Na przykład <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, zobacz definicję HighlightWordTag w [instruktażu: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: skojarzone z regionów, które mogą być rozwijane czy zwijane w tworzenie konspektu.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Aby zastosować tę definicję format tagu, należy odwoływać się do nazwy, ustawione w atrybucie nazwa klasy (nie nazwę wyświetlaną).  
   
 > [!NOTE]
->  Na przykład <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, zobacz opis klasy HighlightWordFormatDefinition w [przewodnik: wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md).  
+>  Na przykład <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, zobacz opis klasy HighlightWordFormatDefinition w [instruktażu: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Rozszerzanie zakończeń  
  Zakończeń zdefiniować efektów wizualnych, które można dodać w celu tekst, który jest wyświetlany w widoku tekstu lub w tekście wyświetlić sam. Można zdefiniować własne zakończeń jako dowolny typ <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: Nazwa zakończeń.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: porządkowanie zakończeń w odniesieniu do innych warstw zakończeń. Klasa <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definiuje cztery warstwy domyślne: wybór, tworzenie konspektu, karetki i tekst.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: porządkowanie zakończeń w odniesieniu do innych warstw zakończeń. Klasa <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definiuje cztery warstwy domyślne: Wybór, zwijanie, karetki i tekst.  
   
   Poniższy przykład pokazuje atrybuty eksportu w definicji warstwy zakończeń.  
   
@@ -546,11 +543,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Aby uzyskać więcej informacji o implementowaniu źródeł IntelliSense zobacz następujące instruktaże:  
   
- [Instruktażu: Etykietek narzędzi Szybkieinfo ekran](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Przewodnik: Wyświetlanie uzupełniania](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Przewodnik: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implement-an-intellisense-controller"></a>Implementuje kontroler IntelliSense  
  Aby dostosować kontrolerem, należy zaimplementować <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> interfejsu. Ponadto należy zaimplementować dostawcę kontrolera wraz z następującymi atrybutami:  
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Aby uzyskać więcej informacji o korzystaniu z funkcji IntelliSense kontrolerów zobacz następujące instruktaże:  
   
- [Instruktażu: Etykietek narzędzi Szybkieinfo ekran](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

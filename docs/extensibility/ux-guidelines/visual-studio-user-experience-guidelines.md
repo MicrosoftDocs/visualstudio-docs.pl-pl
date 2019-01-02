@@ -1,9 +1,6 @@
 ---
 title: Wskazówki dotyczące interfejsu użytkownika programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7488702bd19e8a0e8576d2cdc21e4350e8443b
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: e5c6fa30d97c309534486a0ded6bac5b019f56fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913546"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
 W przypadku projektowania nowych funkcji programu Visual Studio, postępuj zgodnie z programu Visual Studio wskazówki dotyczące interfejsu użytkownika. Te wytyczne zawierają informacje o typowych modeli użytkownika i wzorce interakcji, umożliwiające projektantów nowe interfejsy użytkownika (UI) można utworzyć funkcji użytkownika, które są bezproblemową i spójną w środowisku deweloperskim.  

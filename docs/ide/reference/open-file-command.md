@@ -2,7 +2,6 @@
 title: Otwórz plik — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openfile
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: b5ade09e52db37b64f2bbd36af6f7f9dd67f3c89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924003"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902633"
 ---
 # <a name="open-file-command"></a>Otwórz plik — polecenie
 
@@ -37,7 +36,7 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-Wymagane. Pełnej lub częściowej ścieżkę i nazwę pliku, aby otworzyć. Ścieżki zawierające spacje muszą być ujęte w znaki cudzysłowu.
+Wymagana. Pełnej lub częściowej ścieżkę i nazwę pliku, aby otworzyć. Ścieżki zawierające spacje muszą być ujęte w znaki cudzysłowu.
 
 ## <a name="switches"></a>Przełączniki
 

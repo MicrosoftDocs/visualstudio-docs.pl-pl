@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess2::GetName | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::GetName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06b4d22a0d15a3e600afa286abd1b86756c61c85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ae9fc5608a6dbb6aeb493ee5937b15aa346b636
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960527"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 Pobiera tytuł, przyjazną nazwę lub nazwę procesu.  
@@ -28,16 +25,16 @@ Pobiera tytuł, przyjazną nazwę lub nazwę procesu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetName(   
-   GETNAME_TYPE  gnType,  
-   BSTR*         pbstrName  
+HRESULT GetName(   
+   GETNAME_TYPE  gnType,  
+   BSTR*         pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetName(   
-   enum_GETNAME_TYPE  gnType,  
-   out string         pbstrName  
+int GetName(   
+   enum_GETNAME_TYPE  gnType,  
+   out string         pbstrName  
 );  
 ```  
   

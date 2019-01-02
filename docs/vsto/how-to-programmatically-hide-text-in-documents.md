@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane ukrywanie tekstu w dokumentach'
-ms.custom: ''
+title: 'Instrukcje: Programowe ukrywanie tekstu w dokumentach'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e820cd3b4ed9ea97d9fa7268253663e2ef328c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928438"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Porady: programowane ukrywanie tekstu w dokumentach
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Instrukcje: Programowe ukrywanie tekstu w dokumentach
   Można ukryć tekstu w dokumencie, ustawiając <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> właściwość <xref:Microsoft.Office.Interop.Word.Range.Font%2A> dla określonego zakresu tekstu.  
   
  Na przykład, można tymczasowo ukryć tekstu w <xref:Microsoft.Office.Tools.Word.Bookmark> (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Bookmark> (w VSTO Add-) przed wysłaniem dokumentu do drukarki.  
@@ -58,10 +55,8 @@ ms.locfileid: "35677525"
  Ten przykład kodu zakłada, że dokument zawiera <xref:Microsoft.Office.Tools.Word.Bookmark> formantu (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Bookmark> formantu (w VSTO Add-), który nosi nazwę `bookmark1`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md)   
- [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Porady: programowane Resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Porady: programowane Aktualizowanie tekstu zakładki](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Instrukcje: Programowe drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md)   
+ [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Instrukcje: Programowe Resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Instrukcje: Programowe Aktualizowanie tekstu zakładki](../vsto/how-to-programmatically-update-bookmark-text.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

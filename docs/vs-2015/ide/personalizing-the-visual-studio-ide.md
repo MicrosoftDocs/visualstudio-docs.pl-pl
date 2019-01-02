@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81b2f98694ee34b6fc4c442a4d4746b436025583
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916781"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +40,10 @@ Ta sekcja opisuje sposób Personalizowanie programu Visual Studio na różne spo
  Aby utworzyć niestandardową stronę początkową dla Ciebie i Twojego zespołu, zobacz [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)
 
 ### <a name="environment-color-themes"></a>Motywy kolorów środowiska
- Aby zmienić motyw kolorów między jasny i ciemny niebieski, typu środowiska w **szybkiego uruchamiania** i wybierz polecenie **środowiska &#124; ogólne**. Aby zmienić opcje kolorowanie w edytorze, wpisz `environment` w **szybkiego uruchamiania** i wybierz polecenie **środowiska &#124; czcionki i kolory**. Zobacz też [porady: zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Aby zmienić motyw kolorów między jasny i ciemny niebieski, typu środowiska w **szybkiego uruchamiania** i wybierz polecenie **środowiska &#124; ogólne**. Aby zmienić opcje kolorowanie w edytorze, wpisz `environment` w **szybkiego uruchamiania** i wybierz polecenie **środowiska &#124; czcionki i kolory**. Zobacz też [jak: Zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Menu i paski narzędzi
- Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [porady: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [jak: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Wielkość liter w wyrazie menu głównego
  Ze względu na żądanie popularne, można zmienić menu głównego wielkość liter w wyrazie między **wielkimi literami** i **wersalikami** , wpisując `environment` w **szybkiego uruchamiania** i wybierając pozycję **Środowiska &#124; ogólne**.

@@ -1,12 +1,11 @@
 ---
-title: 'Ca1306: należy Ustawić ustawienia regionalne dla typów danych | Dokumentacja firmy Microsoft'
+title: 'CA1306: OKREŚL Ustaw ustawienia regionalne dla typów danych | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a089a26d4dfb10fc6017efbc422a8284fbfaf66d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 007bce553d99f8c79a835cb4caa731962b739a2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930223"
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Należy ustawić ustawienia regionalne dla typów danych
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: OKREŚL Ustaw ustawienia regionalne dla typów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -59,6 +58,3 @@ ms.locfileid: "49825603"
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>
  <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>
  <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>
-
-
-

@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugThreads2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugThreads2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3405a8ab52591e79f5a865016b68c69c61e6cf8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fbb062f61266595b6dc0ae914341b4e9f1d3610
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842346"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 Ta interfac wylicza wątki uruchomione w bieżącej sesji debugowania.  
@@ -35,33 +32,33 @@ IEnumDebugThreads2 : IUnknown
  Aparat debugowania (DE) implementuje ten interfejs reprezentujący listę wątków w programie.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołanie [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) uzyskać ten interfejs reprezentujący listę wszystkie wątki we wszystkich programach uruchomionych w procesie. Wywołanie [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) uzyskać ten interfejs reprezentujący listę wątki uruchomione w programie.  
+ Wywołaj [enumthreads —](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) uzyskać ten interfejs reprezentujący listę wszystkich wątków we wszystkich programów uruchomionych w ramach procesu. Wywołaj [enumthreads —](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) uzyskać ten interfejs reprezentujący listę wątków uruchomionych w programie.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IEnumDebugThreads2`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[Next](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Pobiera określoną liczbę wątków w kolejności wyliczenia.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Pomija określoną liczbę wątków w kolejności wyliczenia.|  
-|[Resetowanie](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Resetuje sekwencję wyliczenia na początku.|  
-|[klonowania](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Tworzy moduł wyliczający, który zawiera takim samym stanie wyliczenie jako bieżący.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżący.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Pobiera liczbę wątków w moduł wyliczający.|  
   
 ## <a name="remarks"></a>Uwagi  
- Visual Studio zwykle uzyskuje aktualizacji w tym interfejsie **wątków** okna również, aby otrzymać pierwszym wątkiem listy, aby można było wywołać [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Kontynuuj](../../../extensibility/debugger/reference/idebugprocess3-continue.md), i [Krok](../../../extensibility/debugger/reference/idebugprocess3-step.md).  
+ Program Visual Studio zwykle uzyskuje tego interfejsu, aby zaktualizować **wątków** okna również, aby otrzymać pierwszym wątkiem listy, aby wywołać [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Kontynuuj](../../../extensibility/debugger/reference/idebugprocess3-continue.md), i [Kroku](../../../extensibility/debugger/reference/idebugprocess3-step.md).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
- [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Enumthreads —](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
+ [Enumthreads —](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
  [Krok](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
  [Kontynuuj](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
- [Wykonanie](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
+ [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

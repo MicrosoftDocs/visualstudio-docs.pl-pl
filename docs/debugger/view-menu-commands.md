@@ -1,8 +1,6 @@
 ---
-title: Wyświetlić Menu poleceń | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wyświetl polecenia Menu | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - View menu commands
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfbcd8d586c1c6d2d3b208c3d7d62b2b333845d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6c4d30268bc5a41ec45875640aafa0458733c89e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915377"
 ---
 # <a name="view-menu-commands"></a>Polecenia menu Widok
 **Widoku** menu zawiera polecenia służące do kontrolowania Spy ++ interfejsu użytkownika.  
   
- **Czcionki**  
- Otwiera **czcionki** okno dialogowe, w którym można wybrać czcionki do użycia w bieżącym widoku Spy ++.  
+ **Czcionka**  
+ Otwiera **czcionki** okno dialogowe, w którym można wybrać czcionki do użycia w bieżącym widoku programu Spy ++.  
   
  **Pasek narzędzi**  
  Ukrywa lub Wyświetla pasek narzędzi.  
@@ -32,4 +30,4 @@ ms.locfileid: "31481778"
  Ukrywa lub Wyświetla pasek stanu.  
   
  **Właściwości**  
- Otwiera **właściwości** okno dialogowe aktywnego widoku.
+ Otwiera **właściwości** okno dialogowe bieżącym widokiem.

@@ -2,7 +2,6 @@
 title: Przenieś deklarację zmiennej blisko odwołania
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9bc661331ee03af6d34caeae847b717db1f21fc5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86a0ffb984cc18c1269630c25bfca3646ef17451
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907193"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Przenoszenie deklaracji blisko odwołania refaktoryzacji
 
@@ -24,11 +23,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
-**Co:** pozwala na przechodzenie bliżej deklaracje zmiennych do ich użycia.
+**Co:** Pozwala na przechodzenie bliżej deklaracje zmiennych do ich użycia.
 
-**Kiedy:** masz deklaracji zmiennych, które mogą znajdować się w węższy zakres.
+**Kiedy:** Masz deklaracji zmiennych, które mogą znajdować się w węższy zakres.
 
-**Dlaczego:** może ona pozostaw, ponieważ istnieje, ale mogą powodować problemy czytelność lub ukrywanie informacji. Jest to możliwość refaktoryzacji w celu poprawienia czytelności.
+**Dlaczego:** Można go pozostaw, ponieważ istnieje, ale mogą powodować problemy czytelność lub ukrywanie informacji. Jest to możliwość refaktoryzacji w celu poprawienia czytelności.
 
 ## <a name="how-to"></a>Instrukcje
 

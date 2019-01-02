@@ -1,5 +1,5 @@
 ---
-title: 'Porady: określanie wielkości próbki dla ustawień testu obciążenia'
+title: 'Instrukcje: Określanie wielkości próbki dla ustawień uruchomienia testu obciążenia'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: b022b4648931bf0e403df589d37cb086fb2a9c2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 896975330db08a0121aedd4bf3bea38f660e17fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931271"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Porady: określanie wielkości próbki dla ustawień przebiegu testu obciążeniowego
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Instrukcje: Określ częstotliwość próbkowania dla testu obciążenia, ustawienia uruchamiania
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości w celu spełnienia potrzeb i celów testowania.
 
@@ -25,7 +24,7 @@ Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenio
 
 Za pomocą **edytora testu obciążenia**, można edytować ustawienia przebiegu **częstotliwość próbkowania** wartości właściwości w **właściwości** okna. Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
-Wybierz odpowiednią wartość dla **częstotliwość próbkowania** właściwość uruchomieniowych testu obciążeniowego na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, np. wartość domyślna pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. Dla dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [porady: określanie wielkości próbki dla ustawień przebiegu testu obciążeniowego](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wybierz odpowiednią wartość dla **częstotliwość próbkowania** właściwość uruchomieniowych testu obciążeniowego na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, np. wartość domyślna pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. Dla dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [jak: Określ częstotliwość próbkowania dla testu obciążeniowego uruchomieniowy](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Oto niektóre wytyczne dotyczące częstotliwości próbkowania:
 
