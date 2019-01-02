@@ -1,9 +1,6 @@
 ---
 title: BP_COND_STYLE | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_COND_STYLE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f279981b7a9d6cd8fa269c4781b9be1148c392f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885890"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Określa styl warunku punktu przerwania dla oczekujące i powiązane punkty przerwania.  
@@ -28,7 +25,7 @@ Określa styl warunku punktu przerwania dla oczekujące i powiązane punkty prze
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-enum enum_BP_COND_STYLE {   
+enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -37,7 +34,7 @@ typedef DWORD BP_COND_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_COND_STYLE {   
+public enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -60,9 +57,9 @@ public enum enum_BP_COND_STYLE {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

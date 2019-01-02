@@ -1,8 +1,6 @@
 ---
 title: Idiastackframe::get_lengthparams — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6754a729d6493defaad05266fd8b44d996b3ebfd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9f26d84a0211681ea43a77ac12be58d8d4b4f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842635"
 ---
 # <a name="idiastackframegetlengthparams"></a>IDiaStackFrame::get_lengthParams
 Pobiera liczbę bajtów parametrów wypychane na stos.  
@@ -27,7 +25,7 @@ Pobiera liczbę bajtów parametrów wypychane na stos.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_lengthParams (   
+HRESULT get_lengthParams (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
-title: 'Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a9bbf558558b7eff673d255e525d6b69677e906
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850245"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 Podczas kompilowania projektów kompilacji są często te same składniki z opcjami różne kompilacje. Na przykład można utworzyć kompilacji debugowania przy użyciu informacji o symbolach lub kompilację wydania z nie informacji o symbolach, ale z włączonymi optymalizacjami. Możesz też skompilować projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. W takich przypadkach większości opcji kompilacji pozostają takie same; tylko kilka opcji zostały zmienione, aby kontrolować konfigurację kompilacji. Za pomocą [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], użyj właściwości i warunki do tworzenia innych konfiguracji kompilacji.  
   
 ## <a name="use-properties-to-modify-projects"></a>Użyj właściwości, aby zmodyfikować projektów  
@@ -80,7 +78,7 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
   ```  
   
-  Zmienne środowiskowe są także traktowane jako właściwości i są automatycznie włączone przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Aby uzyskać więcej informacji na temat używania zmiennych środowiskowych, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Zmienne środowiskowe są także traktowane jako właściwości i są automatycznie włączone przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Aby uzyskać więcej informacji na temat używania zmiennych środowiskowych, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
   Wartość właściwości, która jest określona w wierszu polecenia mają pierwszeństwo przed wszystkie wartości, który jest skonfigurowany dla tej samej właściwości w pliku projektu, a wartość w pliku projektu mają pierwszeństwo przed wartość w zmiennej środowiskowej.  
   

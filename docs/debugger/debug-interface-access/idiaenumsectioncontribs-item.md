@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsectioncontribs::Item — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: adbba44ed860c825d1e0baac417bc91e0b33e703
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a9d627aeb14b8844ba5c67e1d2c158f9e65c8cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896593"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
 Pobiera sekcji wkładów za pomocą indeksu.  
@@ -27,7 +25,7 @@ Pobiera sekcji wkładów za pomocą indeksu.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD                index,  
    IDiaSectionContrib** section  
 );  

@@ -1,9 +1,6 @@
 ---
 title: FIELD_KIND_EX | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 125c333b53c8d3d54df0f2235c6cc020e71c7ca5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6954aaf92c5d77ad4d8f51e6b342bfc021b37a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870878"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Wylicza dodatkowe rodzajów pól, które [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt może zawierać. To wyliczenie rozszerza [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) wyliczenia.  
@@ -46,7 +43,7 @@ public enum enum_FIELD_KIND_EX
   
 ## <a name="members"></a>Elementy członkowskie  
  FIELD_KIND_EX_NONE  
- Pole nie zawiera typu rozszerzonej.  
+ Pole nie zawiera typie rozszerzonym.  
   
  FIELD_TYPE_EX_METHODVAR  
  Pole zawiera zmienną metody.  
@@ -55,11 +52,11 @@ public enum enum_FIELD_KIND_EX
  Pole zawiera zmienną klasy.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Sh.h  
+ Nagłówek: SH.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -2,7 +2,6 @@
 title: Przeniesienie typu do pasującego refaktoryzacji pliku
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 793ae8f86bf4c4641a3170cde011a3912d0d38ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870550"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Przeniesienie typu do pasującego pliku refaktoryzacji
 
@@ -27,11 +26,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** umożliwia przeniesienie wybranego typu do osobnego pliku o takiej samej nazwie.
+**Co:** Umożliwia przeniesienie wybranego typu do osobnego pliku o takiej samej nazwie.
 
-**Kiedy:** masz wiele klas, struktur, interfejsów, itp. w tym samym pliku, który chcesz oddzielić.
+**Kiedy:** W tym samym pliku, który chcesz oddzielić masz wiele klas, struktur, interfejsów, itp.
 
-**Dlaczego:** umieszczenie różnych typów, w tym samym pliku może utrudnić można znaleźć tych typów. Przenosząc typów plików o takiej samej nazwie, kod staje się bardziej czytelny i łatwiejszą nawigacją.
+**Dlaczego:** Wprowadzenie do wielu typów, w tym samym pliku może utrudnić znaleźć tych typów. Przenosząc typów plików o takiej samej nazwie, kod staje się bardziej czytelny i łatwiejszą nawigacją.
 
 ## <a name="how-to"></a>Instrukcje
 

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Więcej informacji na temat nowych funkcji w wersji zapoznawczej programu Visual Studio 2019 r.
 ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e387485d2a11867944e980a9bad26261fd4a707c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848551"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s nowego w programie Visual Studio Preview 2019 r
 

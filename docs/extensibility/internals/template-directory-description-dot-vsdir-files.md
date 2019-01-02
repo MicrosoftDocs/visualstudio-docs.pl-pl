@@ -1,9 +1,6 @@
 ---
 title: Opis katalogu szablonu (. Pliki Vsdir) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e2cf5dcb898614750aecd7e4fe997fbde0b5cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925212"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (pliki Vsdir)
 Plik opis katalogu szablonu (vsdir) to plik tekstowy, który umożliwia zintegrowanego środowiska programistycznego (IDE), aby wyświetlić folderów, plików .vsz kreatora i plików szablonów, które są skojarzone z projektem w oknach dialogowych. Zawartość obejmują jeden rekord w pliku lub folderu. Wszystkich plików .vsdir w lokalizacji, do którego istnieje odwołanie są scalane, mimo że .vsdir tylko jeden plik jest zazwyczaj podawana do opisania wiele folderów, pliki szablonów lub kreatorów.  
@@ -43,8 +40,8 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Pole | Opis |
 | - | - |
 | Nazwa ścieżki względnej (RelPathName) | Nazwa pliku folderu, szablonu lub .vsz, takie jak HeaderFile.h lub MyWizard.vsz. To pole może być również nazwa używana do reprezentowania folderem. |
-| {clsidPackage} | Identyfikator GUID pakietu VSPackage, który umożliwia dostęp do zlokalizowanych ciągów, takich jak LocalizedName, opis, IconResourceId i SuggestedBaseName, w ramach pakietu VSPackage satelitarnej dołączana dynamicznie biblioteka (DLL) zasobów. IconResourceId ma zastosowanie, jeśli nie zostanie dostarczona ścieżka dll. **Uwaga:** to pole jest opcjonalne, chyba że co najmniej jeden poprzednie pola Identyfikator zasobu. To pole jest zwykle puste w przypadku plików .vsdir, które odpowiadają za pomocą kreatorów innych firm, które nie jest lokalizowany ich tekst. |
-| LocalizedName | Zlokalizowana nazwa pliku szablonu lub kreatora. To pole może być ciąg lub identyfikator zasobu formularza "#ResID". Ta nazwa będzie wyświetlana w **Dodaj nowy element** okno dialogowe. **Uwaga:** Jeśli LocalizedName jest identyfikatorem zasobu, a następnie {clsidPackage} jest wymagana. |
+| {clsidPackage} | Identyfikator GUID pakietu VSPackage, który umożliwia dostęp do zlokalizowanych ciągów, takich jak LocalizedName, opis, IconResourceId i SuggestedBaseName, w ramach pakietu VSPackage satelitarnej dołączana dynamicznie biblioteka (DLL) zasobów. IconResourceId ma zastosowanie, jeśli nie zostanie dostarczona ścieżka dll. **Uwaga:**  To pole jest opcjonalne, chyba że co najmniej jeden poprzednie pola Identyfikator zasobu. To pole jest zwykle puste w przypadku plików .vsdir, które odpowiadają za pomocą kreatorów innych firm, które nie jest lokalizowany ich tekst. |
+| LocalizedName | Zlokalizowana nazwa pliku szablonu lub kreatora. To pole może być ciąg lub identyfikator zasobu formularza "#ResID". Ta nazwa będzie wyświetlana w **Dodaj nowy element** okno dialogowe. **Uwaga:**  Jeśli LocalizedName jest identyfikatorem zasobu {clsidPackage} jest wymagana. |
 | SortPriority | Liczba całkowita reprezentująca względny priorytet tej pliku szablonu lub kreatora. Na przykład jeśli ten element ma wartość 1, ten element jest wyświetlany obok innych elementów o wartości 1 i wcześniejsze wszystkie elementy z wartością sortowania 2 lub większy.<br /><br /> Priorytet sortowania jest określana względem elementów w tym samym katalogu. Może istnieć więcej niż jeden plik .vsdir w tym samym katalogu. W takim przypadku elementy ze wszystkich <em>.</em> pliki vsdir, w tym katalogu są scalane. Elementy z tym samym priorytecie są wyświetlane w porządku leksykograficznym bez uwzględniania wielkości liter nazwę wyświetlaną. `_wcsicmp` Funkcja jest używana w celu uporządkowania elementów.<br /><br /> Elementy, które nie zostały opisane w plikach .vsdir obejmują większy niż najwyższy priorytet, na liście plików .vsdir priorytety. Wynik jest, że te elementy są na końcu wyświetlonej listy, niezależnie od ich nazwy. |
 | Opis | Zlokalizowany opis pliku szablonu lub kreatora. To pole może być ciąg lub identyfikator zasobu formularza "#ResID". Ten ciąg jest wyświetlana w **nowy projekt** lub **Dodaj nowy element** okno dialogowe, gdy element jest zaznaczony. |
 | DLLPath lub {clsidPackage} | Używane do ładowania ikony dla pliku szablonu lub kreatora. Ikona jest ładowana jako zasób z pliku .dll lub .exe przy użyciu IconResourceId. Ten plik .dll i .exe można zidentyfikować za pomocą pełną ścieżkę lub przy użyciu identyfikatora GUID pakietu VSPackage. Implementacja DLL pakietu VSPackage jest używana do ładowania ikona (nie satelitarną bibliotekę DLL). |
