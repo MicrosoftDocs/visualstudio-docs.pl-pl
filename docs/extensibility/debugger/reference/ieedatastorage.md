@@ -1,9 +1,6 @@
 ---
 title: IEEDataStorage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeb98c4c4d3b544616412b3cf5cf8a162fddbd6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0db1dc01c67c93c5cabfb40af8acf55b34ad660
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820150"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Ten interfejs reprezentuje tablicę bajtów.  
@@ -32,32 +29,32 @@ IEEDataStorage : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ewaluator wyrażeń (EE) implementuje ten interfejs do reprezentowania tablicę bajtów (używany przez wizualizatorach typu do pobierania i zmian w danych za pośrednictwem [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfejs). EE zwykle implementuje ten interfejs obsługuje wizualizatorach typu zewnętrznego.  
+ Ewaluator wyrażeń (EE) implementuje ten interfejs reprezentujący tablicę bajtów (używane przez wizualizatorów typu do pobierania danych i ich zmienianie za pośrednictwem [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfejsu). EE zwykle implementuje ten interfejs obsługuje wizualizatorów typu zewnętrznego.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Metody w `IPropertyProxyEESide` interfejsu wszystkich zwrócić tego interfejsu. Wywołanie [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) uzyskanie [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfejsu. Wywołanie [QueryInterface](/cpp/atl/queryinterface) na [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu uzyskanie [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) interfejsu.  
+ Metody na `IPropertyProxyEESide` interfejsu wszystkie zwracać ten interfejs. Wywołaj [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) uzyskać [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfejsu. Wywołaj [QueryInterface](/cpp/atl/queryinterface) na [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejs w celu uzyskania [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) interfejsu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
- `IEEDataStorage` Implementuje interfejs następujące metody:  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+ `IEEDataStorage` Interfejsu implementuje następujące metody:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Pobiera określoną liczbę bajtów danych do dostarczonego buforu.|  
+|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Pobiera określoną liczbę bajtów danych do dostarczony bufor.|  
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Pobiera liczba dostępnych bajtów danych.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs jest używany przez wizualizatora typ dostępu do danych przechowywanych przez konkretnego obiektu. Dane są traktowane jako tablicę bajtów, umożliwiając wizualizatora typu do manipulowania go w dowolnie wybrany sposób jest wymagany do wyświetlane dla użytkownika.  
+ Ten interfejs jest używany przez Wizualizator typów dostępu do danych przechowywanych przez konkretnego obiektu. Dane są traktowane jako tablicę bajtów, dzięki czemu Wizualizator typów do manipulowania je w sposób, który jest wymagany do zaprezentowania użytkownikowi.  
   
- Podglądu niestandardowego może również używać tego interfejsu w razie potrzeby, chociaż więcej zwykle podglądu niestandardowego użyje niestandardowego interfejsu [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) lub [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (dla dane zorientowane na ciąg znaków).  
+ Przeglądarka niestandardowa umożliwia również tego interfejsu, jeśli to konieczne, chociaż zazwyczaj Przeglądarka niestandardowa wykorzystany niestandardowy interfejs [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) lub [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (Aby uzyskać dane zorientowane na ciąg znaków).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [Wizualizator typów i przeglądarka niestandardowa](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

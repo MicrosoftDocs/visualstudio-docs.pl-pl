@@ -2,7 +2,6 @@
 title: Widok modelu zawartości projektanta schematu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a151daa4419c24464aeeafd9a3b58d202a6e82b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a38ca198c4f5a84b1792142078f92398aeeaa4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951475"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
@@ -83,9 +82,9 @@ Widok modelu zawartości zapewnia graficzną reprezentację węzłów schematu l
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**3**.|
+|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**2**.|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**3**.|
 |**Usuń obszar roboczy**|Usuwa obszar roboczy i powierzchni projektowej.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystkie oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej.|

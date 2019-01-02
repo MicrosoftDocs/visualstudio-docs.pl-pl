@@ -1,8 +1,6 @@
 ---
-title: Widok rdzeni — osi czasu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Widok rdzeni — oś czasu | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.threads
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14bf030ce1adb1dede9ad2a377d8fb435d75e0c6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64dc3965c94a8427c0a5112d7b08715991cf8cb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949605"
 ---
 # <a name="cores-view-timeline"></a>Oś czasu widoku rdzeni
-Każdy wiersz na osi czasu reprezentuje rdzeń procesora logicznego w systemie PROFILOWANEGO. Dla każdego wiersza osi poziomej pokazuje, który wątek była uruchomiona na rdzenia logicznego w danym punkcie w czasie. Można umieść kursor nad kolor odsetek na osi czasu, aby zwrócić etykietka narzędzia, która identyfikuje wątku. Aby ułatwić identyfikację wątku, legendy w dolnej części okna Pokazuje każdy kolor reprezentuje. Narzędzie do powiększania umożliwia powiększać i pomniejszać, klikając i przeciągając lub naciskając klawisz CTRL i kółka myszy przenoszenia. Spójność powiększenia jest obsługiwana podczas przełączania się między widokiem rdzeni i wątków.  
+Każdy wiersz na osi czasu reprezentuje rdzenia procesora logicznego w systemie profilowane. Dla każdego wiersza oś pozioma ukazuje, który wątek była uruchomiona na rdzeń logiczny w danym punkcie w czasie. Możesz umieścić kursor kolor zainteresowania na osi czasu do zwrócenia etykietkę narzędzia, która identyfikuje wątku. Aby ułatwić identyfikację wątku, legendę u dołu okna pokazuje, co reprezentuje każdy kolor. Narzędzie do powiększania umożliwia powiększać i pomniejszać, klikając i przeciągając lub naciskając klawisz CTRL i przesuwanie kółka myszy. Spójność powiększenia jest zachowywane podczas przełączania się między widokiem rdzeni i wątków.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)   

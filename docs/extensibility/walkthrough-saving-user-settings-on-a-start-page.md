@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Zapisywanie ustawień użytkownika na stronie początkowej | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Zapisywanie ustawień użytkownika na stronie początkowej | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
@@ -11,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa57fb8c4e0c85ff7a9c1b258f1c326a241442c3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948774"
 ---
-# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Przewodnik: Zapisywanie ustawień użytkownika na stronie sieci uruchomić
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Przewodnik: Zapisz ustawienia użytkownika na stronie sieci uruchomić
 Jednak można utrwalić ustawienia użytkownika dla stronę początkową. Dzięki temu przewodnikowi, można utworzyć formant, który zapisuje ustawienie w rejestrze, gdy użytkownik kliknie przycisk, a następnie pobiera ustawienie za każdym razem, gdy ładowania strony początkowej. Ponieważ szablon projektu strona początkowa zawiera kontrolki użytkownika można dostosowywać, a domyślny Start strony XAML wywołuje tę kontrolkę, nie trzeba modyfikować strony początkowej, sam.  
   
- Ustawienia magazynu, który zostanie uruchomiony w ramach tego przewodnika jest wystąpieniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfejs, który odczytuje i zapisuje je w następującej lokalizacji rejestru, gdy jest wywoływana: **HKCU\Software\Microsoft\VisualStudio\14.0\\ \<Nazwa_kolekcji >**  
+ Ustawienia magazynu, który zostanie uruchomiony w ramach tego przewodnika jest wystąpieniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfejs, który odczytuje i zapisuje je w następującej lokalizacji rejestru, gdy wywoływana jest: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<nazwa_kolekcji >**  
   
  Gdy uruchomiona jest w doświadczalnym wystąpieniu programu Visual Studio, z magazynu ustawień wykonującej Odczyt i zapis **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<nazwa_kolekcji >.**  
   

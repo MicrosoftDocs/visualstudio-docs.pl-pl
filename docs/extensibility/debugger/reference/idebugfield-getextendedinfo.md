@@ -1,9 +1,6 @@
 ---
 title: IDebugField::GetExtendedInfo | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::GetExtendedInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b276b2bff8e8ab5af0f007fbc5bd5dd6074c4d9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef431fbc3bf14124ee0ea08a2439c0473e958a91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945213"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Ta metoda pobiera rozszerzone informacje dotyczące pola.  
@@ -28,7 +25,7 @@ Ta metoda pobiera rozszerzone informacje dotyczące pola.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetExtendedInfo(   
+HRESULT GetExtendedInfo(   
    REFGUID guidExtendedInfo,  
    BYTE**  prgBuffer,  
    DWORD*  pdwLen  

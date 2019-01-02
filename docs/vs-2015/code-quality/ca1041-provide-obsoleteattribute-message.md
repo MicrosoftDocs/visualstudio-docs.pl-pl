@@ -1,12 +1,11 @@
 ---
-title: 'CA1041: Zapewnianie wiadomości ObsoleteAttribute | Dokumentacja firmy Microsoft'
+title: 'CA1041: Określ komunikat ObsoleteAttribute | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f67bbd93816da3bcae389493b74623f0cf4776c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 76d07425a14bcffebcdb040cd37e3fa584e0b39d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950045"
 ---
-# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Zapewnianie wiadomości ObsoleteAttribute
+# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Określ komunikat ObsoleteAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,6 +57,3 @@ ms.locfileid: "49914726"
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.ObsoleteAttribute?displayProperty=fullName>
-
-
-

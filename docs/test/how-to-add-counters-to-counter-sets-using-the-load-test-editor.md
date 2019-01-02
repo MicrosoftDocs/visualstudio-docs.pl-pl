@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: b2a6ba058ba7c09eb66c15cb578fcaaf36d2ced2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: bed707fe5677467e66ff83678675ffdb40a5e081
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950254"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Porady: Dodawanie liczników do zestawów liczników za pomocą edytora testu obciążenia
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Instrukcje: Dodawanie liczników do zestawów liczników za pomocą edytora testu obciążenia
 
 Po utworzeniu testu obciążenia za pomocą **kreatora testu obciążenia**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 

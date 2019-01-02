@@ -1,8 +1,6 @@
 ---
 title: Udostępnianie poleceń | Dokumentacja firmy Microsoft
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac673709ea648a3c0fb6602797af90f86f33f0e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949722"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfejs użytkownika (UI) mogą stać się przepełniona za pomocą poleceń. Można programować pakietu w celu ograniczenia tego problemu w następujący sposób:

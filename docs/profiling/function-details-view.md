@@ -1,8 +1,6 @@
 ---
 title: Widok szczegółów funkcji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba470b4ec9ef3bc52f9c7250649fc098c999149
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945343"
 ---
 # <a name="function-details-view"></a>Widok szczegółów funkcji
 **Widok szczegółów funkcji** wyświetlane są następujące informacje:  
@@ -72,7 +70,7 @@ ms.locfileid: "49951226"
 ## <a name="function-performance-details"></a>Szczegóły wydajności — funkcja  
  Tabela Szczegóły wydajności funkcji zawiera podsumowania danych dla metryki wydajności wybranej funkcji. Są wyświetlane zarówno wartość, jak i wartość procentowa. Określ Określ tabelę danych profilowania, których są wyświetlane na wykresie i szczegóły **Metryka wydajności** listy.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Wyłączne**|-Ilość metryki wydajności, który wystąpił podczas wykonywania treści funkcji.|  
 |**W wywołaniach**|-Ilość metryki wydajności, który wystąpił w funkcje, które wywołały wybranej funkcji.|  

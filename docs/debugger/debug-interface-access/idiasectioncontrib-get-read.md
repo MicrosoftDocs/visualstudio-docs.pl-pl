@@ -1,8 +1,6 @@
 ---
 title: Idiasectioncontrib::get_read — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40919422ebdb60a6262d57958e961b1312f6fba4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a7e4dd66a04ba74d097ddec0b9a2e379317ab28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948670"
 ---
 # <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
 Pobiera flagę wskazującą, czy może odczytywać sekcji.  
@@ -27,7 +25,7 @@ Pobiera flagę wskazującą, czy może odczytywać sekcji.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_read (   
+HRESULT get_read (   
    BOOL* pRetVal  
 );  
 ```  

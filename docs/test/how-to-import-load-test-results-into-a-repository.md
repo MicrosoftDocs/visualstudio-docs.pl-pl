@@ -1,5 +1,5 @@
 ---
-title: 'Porady: importowanie wyników testu obciążenia do repozytorium'
+title: 'Instrukcje: Importuj wyniki testu obciążenia z repozytorium'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4f4b62f13a78ae716fd7bfe4e1a158450590a864
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 491c09a73d1a6a1ff8d4c5356901aba21c7ed140
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945135"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Porady: Importuj wyniki testu obciążenia z repozytorium
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Instrukcje: Importuj wyniki testu obciążenia z repozytorium
 
 Podczas wykonywania testu obciążeniowego informacje zebrane w trakcie sesji są zapisywane w repozytorium wyników testu obciążeniowego. Repozytorium to zawiera dane licznika wydajności oraz informacje o wszelkich błędach. Aby uzyskać więcej informacji, zobacz [w repozytorium wyników testów obciążenia z wynikami testów obciążeniowych Zarządzaj](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -59,4 +58,4 @@ Wyniki testu obciążeniowego można zarządzać z edytora testu obciążenia, u
 
 - [Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Porady: z wynikami testów obciążeniowych eksportu z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Instrukcje: Eksportuj wyniki testu obciążenia z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)

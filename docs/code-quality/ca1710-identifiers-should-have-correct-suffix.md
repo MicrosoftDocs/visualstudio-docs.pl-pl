@@ -1,8 +1,7 @@
 ---
-title: 'CA1710: Identyfikatory powinny mieć poprawny przyrostek'
+title: 'CA1710: Identyfikatory powinny mieć poprawny sufiks'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263870511715757c8771b0b596e443d82be91525
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944713"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny przyrostek
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny sufiks
 
 |||
 |-|-|
@@ -49,12 +48,12 @@ W poniższej tabeli wymieniono typy podstawowe i interfejsy, które mają skojar
 |<xref:System.Attribute?displayProperty=fullName>|Atrybut|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Wyjątek|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Kolekcja|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Słownik|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Kolekcja|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Kolekcja lub kolejki|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Kolekcja lub stos|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Kolekcja|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Słownik|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Kolekcji lub elementu DataTable|

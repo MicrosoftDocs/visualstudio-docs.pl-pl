@@ -1,8 +1,6 @@
 ---
 title: Widok rdzeni — Legenda | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.legend
@@ -14,28 +12,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 61d05ffc3bb2a43b29e2e5c91a7b28f5b8d1224a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949527"
 ---
 # <a name="cores-view-legend"></a>Widok rdzeni — Legenda
-Widok rdzeni — Legenda identyfikuje każdy wątek, kolor i nazwę. Zawiera kolumny, które zawierają liczby przełączeń kontekstu różnych rdzeniach, przełączeń kontekstu całkowitej i procent przełączeń kontekstu przecinających rdzenie. Wiersze w legendzie są sortowane według liczby przełączeń kontekstu różnych rdzeniach, w kolejności malejącej.  
+Widok rdzeni — Legenda identyfikuje każdy wątek, kolor i nazwę. Zawiera on kolumny, które pokazują liczby przełączeń kontekstu między rdzeniami, całkowita liczba przełączeń kontekstu i procent przełączeń kontekstu przecinających rdzenie. Wiersze w legendzie są sortowane według liczby przełączeń kontekstu między rdzeniami, w kolejności malejącej.  
   
- Możesz wybrać wiersze legendy do filtrowania wątków, które są wyświetlane na osi czasu. Tylko wybrane wątki są wyświetlane na osi czasu. Jeśli nie wybrano żadnych wierszy, wszystkie wiersze są wyświetlane na osi czasu.  
+ Możesz wybrać wierszy w legendzie, aby filtrować wątki, które są wyświetlane na osi czasu. Tylko wybrane wątki są wyświetlane na osi czasu. Jeśli nie zaznaczono żadnych wierszy, wszystkie wiersze są wyświetlane na osi czasu.  
   
- Kontekst różnych rdzeniach zmienia koszt koszty i wydajność w ponad przełączników, które pozostają na tego samego rdzenia logicznego. Podczas przełączeń kontekstu rejestrów procesora jest zapisywany i przywracany, wykonywany jest kod jądra systemu operacyjnego translacji równoległej buforu wpisy są ładowane i procesora potok jest opróżniany. Przełączenia kontekstu różnych rdzeniach może być nawet droższe niż inne przełączenia kontekstu, ponieważ dane pamięci podręcznej jest nieprawidłowa dla tego wątku w innym core. Z kolei jeśli kontekst przełączona na podstawowy, który wcześniej został uruchomiony wątek, istnieje prawdopodobieństwo, że przydatne dane są nadal w pamięci podręcznej. Zwiększono przełączeń kontekstu core między próbami Zarządzanie wątku spada koligacji i wydajności, rozważyć, czy w celu rozwiązania tego problemu. Uruchom przez wyeliminowanie koligacji wątków, a następnie sprawdź efekty różnych rdzeniach.  
+ Kontekstu między rdzeniami zmienia kosztów, koszty i wydajność w ponad przełączników, które pozostają na tym samym rdzeń logiczny. Podczas przełączeń kontekstu rejestry procesora jest zapisywany i przywracany, wykonywany jest kod jądra systemu operacyjnego, wpisy buforu referencyjnych tłumaczenia są ponownie załadowany i jest opróżniany potoku procesora. Przełączenia kontekstu między rdzeniami może być jeszcze bardziej kosztowne niż inne przełączeń kontekstu, ponieważ danych w pamięci podręcznej jest nieprawidłowa dla tego wątku na inny core. Z kolei jeśli wątek jest przełączania kontekstu na rdzeń, który wcześniej został uruchomiony, jest prawdopodobne, że przydatne dane są nadal w pamięci podręcznej. Gdy zostały zwiększone przełączeń kontekstu między rdzeniami przez próby Zarządzanie wątku koligacji i wydajność jest obniżona, rozważ, czy rozwiązać ten problem. Rozpocznij poprzez wyeliminowanie koligacji wątku, a następnie obserwować wynikowe zachowania między rdzeniami.  
   
  W poniższej tabeli opisano elementy legendy.  
   
 |Element|Definicja|  
 |-------------|----------------|  
-|Nazwa wątku|Zawiera kolor wątku w poprzednim oś czasu rdzeni i nazwę tego wątku.|  
-|Przełączenia kontekstu różnych rdzeniach|Liczba przełączeń kontekstu dla wątku, który również przełączono z jednego rdzenia logicznego do innego. Go nie odróżnić przełączenia kontekstu różnych rdzeniach, które przechodzą z jednym procesorem struktury do drugiej i tych, które pozostają w tej samej struktury.|  
-|Przełączenia kontekstu całkowita|Całkowita liczba przełączeń kontekstu dla danego wątku w okresie próbkowania. Zalicza się każdej zmianie wątku jedno przełączenie kontekstu kontekstu (na przykład pochodzący z wykonania na synchronizacji).|  
-|Procent przełączeń kontekstu przecinających rdzenie|Obliczony jako procent przez podzielenie liczby przełączeń kontekstu różnych rdzeniach według liczby przełączeń kontekstu całkowitej. Im większa tej wartości procentowej, tym większy efekt narzut na różnych rdzeniach kontekstu zmienia się na wydajność tego konkretnego wątku.|  
+|Nazwa wątku|Zawiera kolor wątku w poprzednim osi czasu rdzeni i nazwę tego wątku.|  
+|Przełączenia kontekstu między rdzeniami|Liczba przełączeń kontekstu dla wątku, który również przełączono z jednego rdzenia logicznego do innego. Go nie odróżnia przełączeń kontekstu między rdzeniami przecinających się z jednym procesorem struktury do innej i te, które pozostanie w tej samej struktury.|  
+|Całkowita liczba przełączeń kontekstu|Całkowita liczba przełączeń kontekstu dla danego wątku w okresie próbkowania. Każdej zmianie wątku jedno przełączenie kontekstu kontekstu (na przykład z wykonywania w celu synchronizacji) jest liczony.|  
+|Procent przełączeń kontekstu przecinających rdzenie|Obliczane jako wartość procentowa w wyniku dzielenia liczby przełączeń kontekstu między rdzeniami przez liczbę całkowita liczba przełączeń kontekstu. Im większa ta wartość procentowa, tym większe ogólny efekt pracy związanej z kontekstu między rdzeniami przełącza się na wydajność tego określonego wątku.|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)

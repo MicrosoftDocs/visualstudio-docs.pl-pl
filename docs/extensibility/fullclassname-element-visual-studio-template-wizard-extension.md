@@ -1,9 +1,7 @@
 ---
 title: FullClassName, Element (rozszerzenie Kreatora szablonów programu Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f185d791010c545dd56326505d871fb964a71b66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943742"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName, element (rozszerzenie Kreatora szablonów programu Visual Studio)
 W pełni kwalifikowaną nazwę klasy, która implementuje `IWizard` interfejsu.  
@@ -93,4 +91,4 @@ W pełni kwalifikowaną nazwę klasy, która implementuje `IWizard` interfejsu.
 ## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

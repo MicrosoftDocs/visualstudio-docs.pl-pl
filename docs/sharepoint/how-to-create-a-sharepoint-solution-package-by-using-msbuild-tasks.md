@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,31 +12,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a9a954c00c616ff156d786386c92d41dcbe85c13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818329"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Porady: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
-  Kompilacji, czyszczenia i sprawdzanie poprawności pakietu programu SharePoint (*WSP*) przy użyciu zadań MSBuild wiersza polecenia na komputerze dewelopera. Można również używać tych poleceń, aby zautomatyzować proces kompilacji za pomocą programu Team Foundation Server na komputerze kompilacji.  
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
+  Kompilacji, czyszczenia i sprawdzanie poprawności pakietu programu SharePoint (*.wsp*) przy użyciu wiersza polecenia zadania programu MSBuild na komputerze deweloperskim. Te polecenia umożliwia również Automatyzowanie procesu kompilacji za pomocą programu Team Foundation Server na komputerze kompilacji.  
   
 ## <a name="build-a-sharepoint-package"></a>Tworzenie pakietu programu SharePoint  
   
 #### <a name="to-build-a-sharepoint-package"></a>Aby utworzyć pakiet programu SharePoint  
   
-1.  W systemie Windows **Start** menu, wybierz **wszystkie programy** > **Akcesoria** > **wiersza polecenia**.  
+1.  Na Windows **Start** menu, wybierz **wszystkie programy** > **Akcesoria** > **polecenia**.  
   
 2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.  
   
-3.  Wprowadź następujące polecenie, aby utworzyć pakiet dla projektu. Zastąp *ProjectFileName* z nazwą projektu.  
+3.  Wprowadź następujące polecenie, aby utworzyć pakiet dla projektu. Zastąp *ProjectFileName* nazwą projektu.  
   
     ```cmd  
     msbuild /t:Package ProjectFileName  
     ```  
   
-     Na przykład można uruchomić jeden z poniższych poleceń, aby pakiet projektu programu SharePoint o nazwie ListDefinition1.  
+     Na przykład można uruchomić jeden z poniższych poleceń, aby utworzyć projekt programu SharePoint o nazwie ListDefinition1 pakiet.  
   
     ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
@@ -56,13 +51,13 @@ ms.locfileid: "37120286"
   
 2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.  
   
-3.  Wprowadź następujące polecenie, aby wyczyścić pakietu dla projektu. Zastąp *ProjectFileName* z nazwą projektu.  
+3.  Wprowadź następujące polecenie, aby wyczyścić pakietu dla projektu. Zastąp *ProjectFileName* nazwą projektu.  
   
     ```cmd  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
-     Na przykład można Uruchom jedno z poniższych poleceń, aby wyczyścić projektu programu SharePoint o nazwie ListDefinition1.  
+     Na przykład można uruchomić jedną z poniższych poleceń, aby wyczyścić projektu programu SharePoint o nazwie ListDefinition1.  
   
     ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
@@ -77,13 +72,13 @@ ms.locfileid: "37120286"
   
 2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.  
   
-3.  Wprowadź następujące polecenie, aby sprawdzić poprawności pakietu dla projektu. Zastąp *ProjectFileName* z nazwą projektu.  
+3.  Wprowadź następujące polecenie, aby zweryfikować pakietu dla projektu. Zastąp *ProjectFileName* nazwą projektu.  
   
     ```cmd  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
-     Na przykład można Uruchom jedno z poniższych poleceń, aby sprawdzić poprawność projektu programu SharePoint o nazwie ListDefinition1.  
+     Na przykład można uruchomić jedną z poniższych poleceń, aby sprawdzić projekt programu SharePoint o nazwie ListDefinition1.  
   
     ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
@@ -92,13 +87,13 @@ ms.locfileid: "37120286"
   
 ## <a name="set-properties-in-a-sharepoint-package"></a>Ustawianie właściwości w pakiecie programu SharePoint  
   
-#### <a name="to-set-a-property-in-a-sharepoint-package"></a>Aby ustawić właściwość w pakiecie programu SharePoint  
+#### <a name="to-set-a-property-in-a-sharepoint-package"></a>Do ustawiania właściwości w pakiecie programu SharePoint  
   
 1.  Otwórz okno wiersza polecenia.  
   
 2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.  
   
-3.  Wprowadź następujące polecenie, aby ustawić właściwość pakietu dla projektu. Zastąp *PropertyName* razem z właściwością, który chcesz ustawić.  
+3.  Wprowadź następujące polecenie, aby ustawić właściwość pakietu dla projektu. Zastąp *PropertyName* z właściwościami, który chcesz ustawić.  
   
     ```cmd  
     msbuild /property:PropertyName=Value  
@@ -112,5 +107,5 @@ ms.locfileid: "37120286"
   
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Porady: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
+ [Instrukcje: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

@@ -1,8 +1,6 @@
 ---
 title: Nie można dołączyć do procesu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.unable2attach
@@ -16,50 +14,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7036210f47e99ca11edbdb86fdf1f44e40829237
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: affcff981ee516810f2ed9f6c2337c5145ebc572
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819578"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Nie można dołączyć do procesu
-Nie można dołączyć do procesu. Składnik debugera na serwerze otrzymał odmowa dostępu podczas nawiązywania połączenia z tego komputera.  
+Nie można dołączyć do procesu. Składnik debugera na serwerze Odebrano odmowa dostępu podczas łączenia z tą maszyną.  
   
- Istnieją dwa typowe scenariusze, które są przyczyną tego błędu:  
+ Istnieją dwa typowe scenariusze, które przyczyny wystąpienia tego błędu:  
   
- **Scenariusz 1:** maszyny A systemem Windows XP. Komputer B działa system Windows Server 2003. Rejestr na komputerze B zawiera następujące wartości DWORD:  
+ **Scenariusz 1:** A maszynie jest uruchomiony Windows XP. Komputer B jest uruchomiony system Windows Server 2003. Rejestr na komputerze B zawiera następującą wartość DWORD:  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
- Użytkownik 1 uruchamia sesji serwera terminali (sesji 1) na komputerze B i zaczyna się aplikacją zarządzaną w tej sesji.  
+ Użytkownik 1 uruchamia sesję serwera terminali (sesja 1) na komputerze B i uruchamia aplikację zarządzaną z tej sesji.  
   
- Użytkownik 2, który jest administratorem na obu komputerach, jest rejestrowane na komputerze A. Z tego miejsca użytkownik próbuje dołączanie do aplikacji działających w sesji 1 na komputerze B.  
+ Użytkownik 2, który jest administratorem na obu komputerach, jest zalogowany do komputera A. W efekcie użytkownik próbuje dołączyć do aplikacji uruchomionej w sesji 1 na maszynie B.  
   
- **Scenariusz 2:** jeden użytkownik jest zalogowany na dwóch komputerach, A i B, w tej samej grupie roboczej, przy użyciu tego samego hasła na obu komputerach. Debuger jest uruchomiony na komputerze A, a próby dołączenia zarządzanej aplikacji uruchomionych na maszynie B. maszyny, A ma **dostęp sieciowy: udostępnianie i model zabezpieczeń dla kont lokalnych** ustawioną **gościa**.  
+ **Scenariusz 2:** Jeden użytkownik jest zalogowany na dwóch komputerach, A i B, w tej samej grupie roboczej, za pomocą tego samego hasła na obu komputerach. Debuger jest uruchomiony na komputerze A, a następnie próbujesz podłączyć się do zarządzanej aplikacji uruchomionych na maszynie B. maszyny, A ma **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** równa **gościa**.  
   
 ### <a name="to-solve-scenario-1"></a>Aby rozwiązać scenariusz 1  
   
--   Uruchom debuger i zarządzanych aplikacji w ramach tej samej nazwy konta użytkownika i hasła.  
+-   Uruchom debuger i zarządzanych aplikacji w ramach tej samej nazwy konta użytkownika i hasło.  
   
-### <a name="to-solve-scenario-2"></a>Aby rozwiązać Scenariusz 2  
+### <a name="to-solve-scenario-2"></a>Aby rozwiązać scenariuszu 2  
   
 1.  Z **Start** menu, wybierz **Panelu sterowania**.  
   
-2.  W Panelu sterowania, kliknij dwukrotnie **narzędzia administracyjne**.  
+2.  W Panelu sterowania kliknij dwukrotnie **narzędzia administracyjne**.  
   
 3.  W oknie Narzędzia administracyjne kliknij dwukrotnie **zasady zabezpieczeń lokalnych**.  
   
-4.  W oknie Zasady zabezpieczeń lokalnych, wybierz **zasady lokalne**.  
+4.  W oknie lokalne zasady zabezpieczeń wybierz **zasady lokalne**.  
   
-5.  W **zasady** kolumny, kliknij dwukrotnie **dostęp sieciowy: udostępnianie i model zabezpieczeń dla kont lokalnych**.  
+5.  W **zasady** kolumny, kliknij dwukrotnie **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych**.  
   
-6.  W **dostęp sieciowy: udostępnianie i model zabezpieczeń dla kont lokalnych** okno dialogowe Zmień ustawienia zabezpieczeń lokalnych, aby **klasycznego**i kliknij przycisk **OK**.  
+6.  W **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** okna dialogowego pole, zmień ustawienie zabezpieczeń lokalnych, aby **klasycznego**i kliknij przycisk **OK**.  
   
     > [!CAUTION]
-    >  Zmiana klasycznego modelu zabezpieczeń może spowodować nieoczekiwane dostęp do udostępnionych plików i składników DCOM components. Jeśli wprowadzisz tej zmiany, użytkownik zdalny można uwierzytelniać z Twojego konta użytkownika lokalnego, a nie gościa. Jeśli zdalnego użytkownika spełnia swoją nazwę użytkownika i hasło, ten użytkownik będzie można uzyskać dostępu do dowolnego folderu lub udostępnione limit obiektu modelu DCOM. Użycie tego modelu zabezpieczeń, upewnij się że wszystkie konta użytkowników na komputerze silnych haseł lub skonfigurować wyspę sieci izolowanej do debugowania i debugowania maszyny, aby uniemożliwić nieautoryzowany dostęp.  
+    >  Zmiana modelu zabezpieczeń do klasycznego modelu może spowodować nieoczekiwany dostęp do udostępnionych plików i składników DCOM components. W przypadku wprowadzenia tej zmiany użytkownika zdalnego mogą uwierzytelniać za pomocą Twojego konta użytkownika lokalnego, a nie gościa. Jeśli użytkownik zdalny pasuje do nazwy użytkownika i hasło, ten użytkownik będzie można uzyskać dostęp do dowolnego folderu lub udostępnione się obiekt modelu DCOM. Jeśli używasz tego modelu zabezpieczeń, upewnij się, że wszystkie konta użytkowników na komputerze silnych haseł lub konfigurowanie sieci izolowanej wyspie debugowanie i debugować maszyn w celu uniemożliwienia nieupoważnionego dostępu.  
   
 7.  Zamknij wszystkie okna.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 25fa9581dff49dbdebe9ce79f6f0143d393bb275
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f228d1cf68357711d106b9399477badce350f558
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943749"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika jest znaczący. Na przykład modem DSL umożliwia użytkownikom rysowanie drzewa rodziny osób oraz ich elementów nadrzędnych, można zapisać ograniczenie, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementy nadrzędne.
@@ -213,7 +212,7 @@ partial class MyLanguageCommandSet
 ...
 ```
 
- Aby uzyskać więcej informacji, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Aby uzyskać więcej informacji, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  Można również utworzyć kontroler osobnego sprawdzania poprawności i zarządzać samodzielnie błędy. Na przykład:
 

@@ -1,8 +1,6 @@
 ---
-title: marker_series::write_alert — metoda | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Metoda marker_series::write_alert | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 43da603670f2eccca408b8a47b13c8a9b9ea79ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950027"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert — metoda
 Zapisuje plik śledzenia Concurrency Visualizer alertu.  
@@ -35,7 +33,7 @@ void write_alert(
   
 #### <a name="parameters"></a>Parametry  
  `_Format`  
- Ciąg formatu złożony, który zawiera tekst zmieszać zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
+ Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkersobj.h*  
@@ -43,4 +41,4 @@ void write_alert(
  **Namespace:** CONCURRENCY::Diagnostic —  
   
 ## <a name="see-also"></a>Zobacz także  
- [marker_series — klasa](../profiling/marker-series-class.md)
+ [marker_series, klasa](../profiling/marker-series-class.md)

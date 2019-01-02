@@ -1,8 +1,6 @@
 ---
 title: StopProfile | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952238"
 ---
 # <a name="stopprofile"></a>StopProfile
-`StopProfile` Funkcja ustawia licznik 0 (wyłączone) dla określonego poziomu profilowania.  
+`StopProfile` Funkcja ustawia licznik na 0 (funkcja wyłączona) dla określonego poziomu profilowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,46 +31,46 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 #### <a name="parameters"></a>Parametry  
  `Level`  
   
- Wskazuje poziom profilu do wydajności, które mogą być stosowane zbierania danych. Następujące **PROFILE_CONTROL_LEVEL** moduły wyliczające można oznaczać jeden z trzech poziomów do wydajności, które mogą być stosowane zbierania danych:  
+ Wskazuje poziom profilu do wydajności, które mogą być stosowane zbierania danych. Następujące **PROFILE_CONTROL_LEVEL** moduły wyliczające może służyć do wskazania jednego z trzech poziomów wydajności, które zbieranie danych można stosować:  
   
 |Moduł wyliczający|Opis|  
 |----------------|-----------------|  
-|PROFILE_GLOBALLEVEL|Globalne ustawienia poziomu dotyczą wszystkich procesów i wątków w przebiegu profilowania.|  
-|PROFILE_PROCESSLEVEL|Ustawienie poziomu proces wpływają na wszystkie wątki, które są częścią określony proces.|  
-|PROFILE_THREADLEVEL|Wątek profilowania ustawienie poziomu dotyczy określonego wątku.|  
+|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomie ma wpływ na wszystkie procesy i wątki podczas uruchomienia profilowania.|  
+|PROFILE_PROCESSLEVEL|Ustawienie poziomie proces wpływają na wszystkie wątki, które są dostępne w ramach określonego procesu.|  
+|PROFILE_THREADLEVEL|Wątek ustawienie poziomie profilowania dotyczy określonego wątku.|  
   
  `dwId`  
   
  Proces lub wątek identyfikator generowany przez system.  
   
-## <a name="property-valuereturn-value"></a>Wartość właściwości wartość/powrotu  
- Funkcja wskazuje powodzenie lub Niepowodzenie przy użyciu **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
+## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość  
+ Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
   
 |Moduł wyliczający|Opis|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Identyfikator elementu profilowania nie istnieje.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Określony poziom profilowania nie istnieje.|  
-|PROFILE_ERROR_MODE_NEVER|Tryb profilowania została ustawiona na nie, gdy została wywołana funkcja.|  
-|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Profilowania wywołanie funkcji, profilowania poziomu lub kombinacja wywołania i poziomu nie została jeszcze zaimplementowana.|  
+|PROFILE_ERROR_MODE_NEVER|W trybie profilowania zostało ustawione na nigdy nie w przypadku, gdy funkcja została wywołana.|  
+|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Profilowania wywołanie funkcji, profilowania poziom lub kombinacji wywołania i poziom nie została jeszcze zaimplementowana.|  
 |PROFILE_OK|Wywołanie zakończyło się pomyślnie.|  
   
 ## <a name="remarks"></a>Uwagi  
- StartProfile i StopProfile kontrolować stan uruchamiania i zatrzymywania profilowania poziomu. Wartość domyślna uruchamiania i zatrzymywania wynosi 1. Wartość początkowa można zmienić w rejestrze. Każde wywołanie StartProfile ustawia uruchamiania i zatrzymywania 1; Każde wywołanie StopProfile ustawia ją na 0.  
+ StartProfile i StopProfile kontrolować stan uruchomień/zatrzymań poziomu profilowania. Wartość domyślna uruchomień/zatrzymań jest 1. Początkowa wartość można zmienić w rejestrze. Każde wywołanie StartProfile ustawia uruchomień/zatrzymań 1; Każde wywołanie StopProfile ustawia ją na 0.  
   
- Podczas uruchamiania/zatrzymywania jest większa niż 0, stan uruchamiania i zatrzymywania poziomu ma wartość ON. Gdy jest mniejsza lub równa 0, uruchamiania i zatrzymywania stan został WYŁĄCZONY.  
+ Podczas uruchamiania/zatrzymywania jest większa niż 0, stan uruchomień/zatrzymań poziomu ma wartość ON. Gdy jest on mniejszy niż lub równa 0, stan uruchomień/zatrzymań został WYŁĄCZONY.  
   
- Podczas uruchamiania i zatrzymywania stan i stan wstrzymań/wznowień są na, stan profilowania poziomu ma wartość ON. Dla wątku być profilowane, proces globalnych i poziomu stany wątku dla wątku musi mieć wartość ON.  
+ W przypadku uruchomień/zatrzymań stan i stan wstrzymań/wznowień zarówno na, stan profilowania dla poziomu ma wartość ON. Na wątek być profilowane, globalne, proces i poziomu stany wątku dla wątku musi być włączone.  
   
-## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET framework  
+## <a name="net-framework-equivalent"></a>Równoważne z .NET framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## <a name="function-information"></a>Informacji o funkcji  
- Nagłówek: Zadeklarowany w VSPerf.h  
+## <a name="function-information"></a>Informacje o funkcji  
+ Nagłówek: Zadeklarowane w VSPerf.h  
   
- Importuj biblioteki: VSPerf.lib  
+ Biblioteka importów: VSPerf.lib  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metodę StopProfile. W przykładzie założono wprowadzono dla tego samego wątku lub procesu identyfikowane przez wywołanie do metody StartProfile [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
+ W poniższym przykładzie pokazano metodę StopProfile. W przykładzie założono, czy Wykonano wywołanie metody StartProfile dla tego samego wątku lub proces zidentyfikowany przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
   
 ```cpp  
 void ExerciseStopProfile()  

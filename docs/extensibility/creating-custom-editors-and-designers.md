@@ -1,9 +1,6 @@
 ---
 title: Tworzenie niestandardowych edytorów i projektantów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c3f7a4b3f3219be4a4e3a40a0bb792b34599ce0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947000"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać różne rodzaje Edytor:  
@@ -73,10 +70,10 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać 
    Jeśli mogą być osadzone, należy utworzyć okno hosta zewnętrznego edytora, a następnie wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metody i ustaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartość wyliczenia do `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przewodnik: Tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Wyjaśnia, jak utworzyć niestandardowy Edytor.  
   
- [Wskazówki: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Przewodnik: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Opis sposobu dodawania funkcji do edytora niestandardowego.  
   
  [Projektanta konfiguracji inicjowania i metadane](../extensibility/designer-initialization-and-metadata-configuration.md)  

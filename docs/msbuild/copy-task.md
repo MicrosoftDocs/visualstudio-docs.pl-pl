@@ -1,8 +1,6 @@
 ---
 title: Copy — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Copy
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a261c6c692fe0a1bc08f185f0b37c73e8838375
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ba0e7e85f4367c775c8b9185c6c2684b728cc4d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943905"
 ---
 # <a name="copy-task"></a>Copy — Zadanie
 Kopiowanie plików do nowej lokalizacji w systemie plików.  
@@ -42,9 +40,9 @@ Kopiowanie plików do nowej lokalizacji w systemie plików.
 |`DestinationFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa listę plików, do których należy skopiować pliki źródłowe. Ta lista powinna być zmapowana jeden-do-jednego na listę określoną w parametrze `SourceFiles`. Oznacza to, że pierwszy plik określony w parametrze `SourceFiles` będzie kopiowany do pierwszej lokalizacji określonej w parametrze `DestinationFiles` itd.|  
 |`DestinationFolder`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa katalog, do którego pliki mają zostać skopiowane. Musi to być katalog, a nie plik. Jeśli katalog nie istnieje, zostanie utworzony automatycznie.|  
 |`OverwriteReadOnlyFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Zastępowanie plików następuje nawet wtedy, gdy są oznaczone jako tylko do odczytu.|  
-|`Retries`|Opcjonalnie `Int32` parametru.<br /><br /> Określa, ile razy należy podjąć próbę kopiowania, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.<br /><br /> **Uwaga:** stosowanie ponownych prób może maskować problem z synchronizacją w procesie kompilacji.|  
+|`Retries`|Opcjonalnie `Int32` parametru.<br /><br /> Określa, ile razy należy podjąć próbę kopiowania, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.<br /><br /> **Uwaga:** Stosowanie ponownych prób może maskować problem z synchronizacją w procesie kompilacji.|  
 |`RetryDelayMilliseconds`|Opcjonalnie `Int32` parametru.<br /><br /> Określa opóźnienie między kolejnymi niezbędnymi ponownymi próbami. Wartością domyślną jest wartość argumentu RetryDelayMillisecondsDefault, który jest przekazywany do konstruktora CopyTask.|  
-|`SkipUnchangedFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ma wartość `true`, następuje pomijanie kopiowania plików, które są niezmienione między lokalizacjami źródłowymi i docelowymi. Zadanie `Copy` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji. <br /><br /> **Uwaga:** Jeśli ten parametr jest ustawiony na `true`, nie należy używać analizy zależności do miejsca docelowego, ponieważ zostałoby wykonane tylko wtedy zadanie w przypadku ostatniej modyfikacji plików źródłowych są nowsze niż ostatniej modyfikacji czasu pliki docelowe.|  
+|`SkipUnchangedFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ma wartość `true`, następuje pomijanie kopiowania plików, które są niezmienione między lokalizacjami źródłowymi i docelowymi. Zadanie `Copy` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji. <br /><br /> **Uwaga:**  Jeśli w parametrze zostanie ustawiona wartość `true`, nie należy stosować analizy zależności do miejsca docelowego, ponieważ zadanie zostałoby wykonane tylko wtedy, gdy czasy ostatniej modyfikacji plików źródłowych są nowsze niż czasy ostatniej modyfikacji plików docelowych.|  
 |`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do skopiowania.|  
 |`UseHardlinksIfPossible`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ma wartość `true`, będą tworzone twarde łącza do kopiowanych plików zamiast kopiowania plików.|  
   

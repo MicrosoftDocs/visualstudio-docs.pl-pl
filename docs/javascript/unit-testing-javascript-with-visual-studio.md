@@ -1,9 +1,7 @@
 ---
 title: Testowanie jednostek w środowisku Node.js
 description: Program Visual Studio udostępnia obsługują kodu JavaScript przy użyciu narzędzia Node.js dla programu Visual Studio testy jednostkowe
-ms.custom: ''
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952767"
 ---
 # <a name="unit-testing-in-nodejs"></a>Testowanie jednostek w środowisku Node.js
 

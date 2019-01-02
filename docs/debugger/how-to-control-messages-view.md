@@ -1,8 +1,6 @@
 ---
-title: 'Porady: kontrolowanie widoku komunikatów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Kontrolowanie widoku komunikatów | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, Messages View
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b83107d4dda72aea7db9e9c911305c96de7097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 299bed89ecd2c73b1f8e8fe976bf570a19a6b20f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944395"
 ---
-# <a name="how-to-control-messages-view"></a>Porady: kontrolowanie widoku komunikatów
+# <a name="how-to-control-messages-view"></a>Instrukcje: Kontrolowanie widoku komunikatów
 Z programem Spy ++ mają znaczną kontrolę nad zawartością programu [widoku komunikatów](../debugger/messages-view.md) okna. Możesz [uruchamiają i zatrzymują](../debugger/how-to-start-and-stop-the-message-log-display.md) wyświetlanie komunikatów w każdej chwili można określić:  
   
 - Typy komunikatów, które mają być wyświetlane.  

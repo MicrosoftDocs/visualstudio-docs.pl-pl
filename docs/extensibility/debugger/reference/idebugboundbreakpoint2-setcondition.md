@@ -1,9 +1,6 @@
 ---
 title: IDebugBoundBreakpoint2::SetCondition | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBoundBreakpoint2::SetCondition
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07512dbec66d3abd3c380629a32bd8468b253eb1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3e672b2a10445b5f5a6d26dd6182248fedc22d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944066"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Ustawia lub zmienia warunek skojarzony z ten powiązany punkt przerwania.  
@@ -29,13 +26,13 @@ Ustawia lub zmienia warunek skojarzony z ten powiązany punkt przerwania.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT SetCondition(   
+HRESULT SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
 ```csharp  
-int SetCondition(   
+int SetCondition(   
    enum_BP_CONDITION bpCondition  
 );  
 ```  

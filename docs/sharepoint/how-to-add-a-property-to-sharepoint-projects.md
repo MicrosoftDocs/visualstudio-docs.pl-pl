@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Dodawanie właściwości do projektów programu SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie właściwości do projektów programu SharePoint | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1b8b56fde8c3d84f887dd90dc50574c60c297cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950475"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Porady: Dodawanie właściwości do projektów SharePoint
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Instrukcje: Dodawanie właściwości do projektów SharePoint
   Można użyć rozszerzenia projektu, aby dodać właściwość do każdego projektu programu SharePoint. Właściwość pojawia się w **właściwości** okna, jeśli projekt jest wybrany w **Eksploratora rozwiązań**.  
   
- W następujących krokach założono, że utworzono już rozszerzenia projektu. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ W następujących krokach założono, że utworzono już rozszerzenia projektu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Aby dodać właściwość do projektu programu SharePoint  
   
@@ -63,7 +60,7 @@ ms.locfileid: "49898417"
   
 -   <xref:System.ComponentModel.DefaultValueAttribute>: Określa domyślną wartość właściwości.  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowy konwersji między ciąg, który jest wyświetlany w **właściwości** okna, a wartość właściwości innych niż ciąg.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowe konwersji między ciąg, który jest wyświetlany w **właściwości** okna, a wartość właściwości innych niż ciąg.  
   
 -   <xref:System.ComponentModel.EditorAttribute>: Określa niestandardowy Edytor służące do modyfikowania właściwości.  
   
@@ -85,8 +82,6 @@ ms.locfileid: "49898417"
   
 ## <a name="see-also"></a>Zobacz także
  [Rozszerzanie projektów SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Porady: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Instrukcje: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Instrukcje: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Co&#39;s Nowość w wersji programu MSBuild 15 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 03/01/2017
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2333f45cca5510a4ba3bb0f54abf45a569454cf8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 3712f009262abd9590653af3f3ef4e4e81c87e84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943580"
 ---
 # <a name="whats-new-in-msbuild-15"></a>What's new in MSBuild 15
 
@@ -40,7 +38,7 @@ Program MSBuild jest teraz dostępny jako część [zestawu .NET Core SDK](https
 - `SDK35ToolsPath` i `SDK40ToolsPath` właściwości wskaż .NET Framework SDK, który jest spakowany w tej wersji programu Visual Studio (na przykład 10.0A narzędzi 4.X).
 
 ## <a name="updates"></a>Aktualizacje
-- [Project — element](../msbuild/project-element-msbuild.md) ma nową `SDK` atrybutu. Również `Xmlns` atrybutu jest teraz opcjonalny. Aby uzyskać więcej informacji na temat `SDK` atrybutów, zobacz [jak: projektu programu MSBuild z użycia zestawów SDK](../msbuild/how-to-use-project-sdk.md), [pakiety, metapakiety i struktury](/dotnet/core/packages) i [ma zostać dodany do pliku csproj formatowania dla platformy .NET Podstawowe](/dotnet/core/tools/csproj).
+- [Project — element](../msbuild/project-element-msbuild.md) ma nową `SDK` atrybutu. Również `Xmlns` atrybutu jest teraz opcjonalny. Aby uzyskać więcej informacji na temat `SDK` atrybutów, zobacz [jak: Korzystanie z zestawów SDK projektu MSBuild](../msbuild/how-to-use-project-sdk.md), [pakiety, metapakiety i struktury](/dotnet/core/packages) i [ma zostać dodany do pliku csproj formatowania dla platformy .NET Core](/dotnet/core/tools/csproj).
 - [Item — element](../msbuild/item-element-msbuild.md) poza cele ma nową `Update` atrybutu. Ponadto ograniczeń dotyczących `Remove` atrybut został wyeliminowany.
 - *Directory.Build.props* jest plikiem zdefiniowanych przez użytkownika zawiera dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z *Microsoft.Common.props* chyba że właściwość `ImportDirectoryBuildTargets` ustawiono **false**. *Directory.Build.targets* zaimportowanych przez *Microsoft.Common.targets*.
 - Wszystkie metadane o nazwie, który jest zgodny z bieżącą listę atrybutów opcjonalnie może być wyrażona jako atrybut. Aby uzyskać więcej informacji, zobacz [elementu](../msbuild/item-element-msbuild.md).

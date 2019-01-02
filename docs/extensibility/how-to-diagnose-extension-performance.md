@@ -1,9 +1,6 @@
 ---
-title: 'Porady: diagnozowanie wydajności rozszerzenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Diagnozowanie wydajności rozszerzenia | Dokumentacja firmy Microsoft'
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943424"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mierzenie wpływu rozszerzenie przy uruchamianiu
 
@@ -31,7 +28,7 @@ Aby ułatwić użytkownikom poznania zakresu przedstawionego wypływu, dodaliśm
 Ten dokument ma na celu pomoc deweloperom rozszerzenie poprzez opisanie, jak jest obliczana wpływ rozszerzenia. W tym dokumencie opisano również, jak wpływ rozszerzenia można analizować lokalnie. Lokalnie analizowanie wpływu rozszerzenia określi, jeśli rozszerzenie może być wyświetlany jako wydajności, wpływ na rozszerzenia.
 
 > [!NOTE]
-> Ten dokument koncentruje się na temat wpływu rozszerzeń na rozwiązanie i uruchamiania obciążenia. Rozszerzenia również wpływ na wydajność programu Visual Studio podczas spowodują interfejsu użytkownika przestanie odpowiadać. Aby uzyskać więcej informacji na ten temat, zobacz [porady: diagnozowanie opóźnień interfejsu użytkownika powodowanych przez rozszerzenia](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Ten dokument koncentruje się na temat wpływu rozszerzeń na rozwiązanie i uruchamiania obciążenia. Rozszerzenia również wpływ na wydajność programu Visual Studio podczas spowodują interfejsu użytkownika przestanie odpowiadać. Aby uzyskać więcej informacji na ten temat, zobacz [jak: Diagnozowanie interfejsu użytkownika powodowanych przez rozszerzenia opóźnienia](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Wpływ uruchamiania rozszerzenia
 
@@ -51,11 +48,11 @@ Dodaliśmy wiele funkcji, począwszy od programu Visual Studio 2015. Te funkcje 
 
 Więcej informacji o tych funkcjach można znaleźć w następujących dokumentach:
 
-[Konteksty interfejsu użytkownika opartego na regułach](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): bardziej rozbudowane oparty na regułach aparat zbudowane wokół kontekstów interfejsu użytkownika pozwala na tworzenie kontekstów niestandardowego na podstawie typów projektów, odmian i atrybuty. Konteksty niestandardowego może służyć do ładowania pakietu podczas bardziej specyficznych scenariuszy. Określone scenariusze obejmują obecności projekt z konkretną funkcją, zamiast uruchamiania. Konteksty niestandardowych również zezwolić [polecenia widoczność ograniczeni do kontekstowego](visibilityconstraints-element.md) na podstawie składników projektów lub innych dostępnych warunków. Ta funkcja eliminuje potrzebę załadowanie pakietu, aby zarejestrować procedurę obsługi poleceń stan zapytania.
+[Konteksty interfejsu użytkownika opartego na regułach](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Bardziej rozbudowane aparat oparty na regułach zbudowane wokół kontekstów interfejsu użytkownika umożliwia tworzenie kontekstów niestandardowego na podstawie typów projektów, odmian i atrybuty. Konteksty niestandardowego może służyć do ładowania pakietu podczas bardziej specyficznych scenariuszy. Określone scenariusze obejmują obecności projekt z konkretną funkcją, zamiast uruchamiania. Konteksty niestandardowych również zezwolić [polecenia widoczność ograniczeni do kontekstowego](visibilityconstraints-element.md) na podstawie składników projektów lub innych dostępnych warunków. Ta funkcja eliminuje potrzebę załadowanie pakietu, aby zarejestrować procedurę obsługi poleceń stan zapytania.
 
-[Obsługa asynchronicznego pakietu](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): nowe klasy bazowej AsyncPackage w programie Visual Studio 2015 umożliwia pakietów programu Visual Studio do załadowania w tle asynchroniczne ładowanie pakiet został żądanie atrybutu obciążenia automatycznie lub zapytania usługi asynchroniczne . To ładowanie tła umożliwia IDE na bieżąco dynamiczny. Środowisko IDE jest elastyczny, nawet wtedy, gdy rozszerzenie zostanie zainicjowana w tle i nie ma wpływu na scenariuszy o kluczowym znaczeniu, takie jak uruchamianie i rozwiązanie obciążenia.
+[Obsługa asynchronicznego pakietu](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Nowe klasy bazowej AsyncPackage w programie Visual Studio 2015 umożliwia pakietów programu Visual Studio mają zostać załadowane w tle asynchronicznie jeśli ładowanie pakiet żądanej atrybutu obciążenia automatycznie lub zapytania asynchroniczne usługi. To ładowanie tła umożliwia IDE na bieżąco dynamiczny. Środowisko IDE jest elastyczny, nawet wtedy, gdy rozszerzenie zostanie zainicjowana w tle i nie ma wpływu na scenariuszy o kluczowym znaczeniu, takie jak uruchamianie i rozwiązanie obciążenia.
 
-[Asynchronicznych usług](how-to-provide-an-asynchronous-visual-studio-service.md): Z obsługą pakietów asynchronicznego dodaliśmy również obsługę zapytań usług asynchronicznie i możliwość rejestrowania asynchronicznych usług. Co ważniejsze pracujemy nad konwertowanie podstawowych usług Visual Studio do obsługi asynchronicznej kwerendy, tak aby większość pracy w zapytaniu async odbywa się w wątków w tle. SComponentModel (Visual Studio MEF host) jest jednym z głównych usług, które obsługuje teraz zapytania asynchronicznego umożliwia rozszerzeń do obsługi asynchroniczne ładowanie całkowicie.
+[Asynchronicznych usług](how-to-provide-an-asynchronous-visual-studio-service.md): Dzięki obsłudze asynchronicznego pakietu dodaliśmy są również obsługę zapytań usług asynchronicznie i możliwość rejestrowania asynchronicznych usług. Co ważniejsze pracujemy nad konwertowanie podstawowych usług Visual Studio do obsługi asynchronicznej kwerendy, tak aby większość pracy w zapytaniu async odbywa się w wątków w tle. SComponentModel (Visual Studio MEF host) jest jednym z głównych usług, które obsługuje teraz zapytania asynchronicznego umożliwia rozszerzeń do obsługi asynchroniczne ładowanie całkowicie.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Zmniejszenie wpływu automatycznie załadować rozszerzeń
 
@@ -167,11 +164,11 @@ Teraz w widoku będzie wyświetlana tylko koszt, który jest skojarzony z zestaw
 
 W przykładzie powyżej niektóre ciekawe wywołania będą stosów:
 
-1. We/Wy przy użyciu `System.IO` klasy: całkowity koszt te klatki nie może być zbyt drogie w śledzeniu, są potencjalną przyczyną problemu, ponieważ szybkość operacji We/Wy pliku będą się różnić od maszyny.
+1. We/Wy przy użyciu `System.IO` klasy: Całkowity koszt te klatki nie może być zbyt drogie w śledzeniu, są potencjalną przyczyną problemu, ponieważ szybkość operacji We/Wy pliku będą się różnić od maszyny.
 
    ![system We/Wy ramki](media/perfview-system-io-frames.png)
 
-2. Blokuje wywołania oczekiwanie na inne zadanie asynchroniczne: W tym przypadku całkowity czas reprezentuje czas główny wątek jest zablokowany na ukończenie zadań asynchronicznych.
+2. Blokowanie oczekiwanie na inne zadanie asynchroniczne wywołania: W tym przypadku całkowity czas reprezentuje czas, w których główny wątek jest zablokowany na ukończenie zadań asynchronicznych.
 
    ![blokowanie ramek wywołania](media/perfview-blocking-call-frames.png)
 

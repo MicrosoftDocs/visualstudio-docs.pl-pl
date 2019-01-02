@@ -1,9 +1,6 @@
 ---
-title: Ukończenie elementu członkowskiego w starsza wersja usługi języka | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Uzupełnianie składowych w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
@@ -15,59 +12,59 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f618c9500b79ec5e1ef0db8c2c6b8b130c6c75b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 173ec03743e9dc1eaf78ae0cca0b3396f0600295
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955597"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Uzupełnianie składowych w starszej wersji usługi językowej
 
-IntelliSense zakończenia elementu członkowskiego jest etykietka narzędzia, która wyświetla listę możliwych elementów członkowskich z określonego zakresu, takich jak klasy, struktury, wyliczenia lub przestrzeni nazw. Na przykład w języku C#, jeśli użytkownik wpisze "to" następuje okres, listę wszystkich elementów członkowskich klasy lub struktury w bieżącym zakresie jest podana w listę, z którego użytkownik może wybrać.
+Uzupełnianie składowych IntelliSense jest etykietka narzędzia, która zawiera listę możliwych elementów członkowskich z określonego zakresu, takich jak klasy, struktury, wyliczenia lub przestrzeni nazw. Na przykład w języku C#, jeśli użytkownik wpisze "this" następuje kropka, listę wszystkich elementów członkowskich klasy lub struktury w bieżącym zakresie jest przedstawiona na liście, z którego użytkownik może wybrać.
 
-Framework zarządzanego pakietu (MPF) zapewnia obsługę etykietka narzędzia i zarządzanie nimi na liście w etykietce narzędzia; wszystkie niezbędne jest współpracy z analizatora do dostarczania danych, który znajduje się na liście.
+Środowiska pakietu zarządzanego (MPF) zapewnia obsługę etykietki narzędzia i zarządzanie nimi na liście w etykietce narzędzia; wszystko, co jest potrzebne jest współpraca z analizatora do dostarczania danych, który pojawia się na liście.
 
-Usługi w starszej wersji języka są zaimplementowane jako część pakiet VSPackage, ale jest nowsza sposób implementowania funkcji usługi języka Aby korzystać z rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie edytora i usług języka](../../extensibility/extending-the-editor-and-language-services.md).
+Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Zaleca się zacząć Edytor nowy interfejs API tak szybko, jak to możliwe. Spowoduje to poprawić wydajność usługi języka i pozwala korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="how-it-works"></a>Jak to działa
 
-Poniżej przedstawiono dwa sposoby, w których listy członków jest wyświetlany za pomocą klasy MPF:
+Poniżej przedstawiono dwa sposoby, w których lista składowych jest wyświetlana przy użyciu klas MPF:
 
-- Pozycjonowanie karetkę na podstawie identyfikatora lub po znaku zakończenia elementu członkowskiego i wybierając **członków listy** z **IntelliSense** menu.
+- Pozycjonowanie karetkę na identyfikator lub po znaku zakończenia elementu członkowskiego i wybierając polecenie **List Members** z **IntelliSense** menu.
 
-- <xref:Microsoft.VisualStudio.Package.IScanner> Skaner wykrywa znak zakończenia elementu członkowskiego i ustawia token trigger [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) dla tego znaku.
+- <xref:Microsoft.VisualStudio.Package.IScanner> Skanera wykrywa znak zakończenia elementu członkowskiego i ustawia token wyzwalacza [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) dla tego znaku.
 
-Znak zakończenia elementu członkowskiego oznacza element członkowski klasy, struktury lub wyliczenia do wykonania. Na przykład w języku C# lub Visual Basic znak zakończenia elementu członkowskiego jest `.`, a w języku C++ znak albo `.` lub `->`. Gdy znak wybierz element członkowski jest skanowany ustawionej wartości wyzwalacza.
+Znak zakończenia elementu członkowskiego wskazuje członek klasy, struktury lub wyliczenia z. Na przykład w języku C# lub Visual Basic znak zakończenia elementu członkowskiego jest `.`, a w języku C++ znak albo `.` lub `->`. Wyzwalacz ma wartość po znaku wybierz element członkowski jest skanowany.
 
 ### <a name="the-intellisense-member-list-command"></a>Polecenie List Członkowskich IntelliSense
 
-<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Polecenie inicjuje wywołanie <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda <xref:Microsoft.VisualStudio.Package.Source> klasy i <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> z kolei wywołuje metody <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizatora składni metody przyczynę analizy [ParseReason.DisplayMemberList ](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
+<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Polecenie inicjuje wywołanie <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy i <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> z kolei wywołuje metody <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizatora metoda przyczynę analizy [ParseReason.DisplayMemberList ](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
 
-Analizator Określa kontekst bieżącej pozycji, a także token w obszarze lub bezpośrednio przed bieżącym położeniu. Lista deklaracji w oparciu o ten token, jest widoczne. Na przykład w języku C#, jeśli położenie karetki na element członkowski klasy i wybierz **członków listy**, zostanie wyświetlona lista wszystkich elementów członkowskich klasy. Jeśli umieścisz karetkę po upływie znajdujący się zmienna obiektu powoduje wyświetlenie listy wszystkich elementów członkowskich klasy, które reprezentuje obiekt. Należy pamiętać, że jeśli karetka jest ustawiana w elemencie członkowskim, gdy jest wyświetlana lista elementów członkowskich, wybierając element członkowski z listy zastępuje element członkowski, który karetka znajduje się na jednym na liście.
+Analizator Określa kontekst aktualnej pozycji, a także token w obszarze lub bezpośrednio przed bieżącej pozycji. Oparte na ten token, zobaczy listy deklaracji. Na przykład w języku C#, jeśli położenie karetki na składowej klasy i wybierz **List Members**, zostanie wyświetlona lista wszystkich elementów członkowskich klasy. Jeśli umieścisz karetki, po upływie czasu, który następuje po zmiennej obiektu, masz dostęp do listy wszystkich elementów członkowskich klasy, które reprezentuje obiekt. Należy pamiętać, że karetka jest ustawiana na elemencie członkowskim, gdy jest wyświetlana lista członków, wybierając członka z listy zastąpienie elementu członkowskiego, który karetka znajduje się na każdy z nich na liście.
 
 ### <a name="the-token-trigger"></a>Token wyzwalacza
 
-[TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) wyzwalacza inicjuje wywołanie <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda <xref:Microsoft.VisualStudio.Package.Source> klasy i <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda z kolei wywołuje analizator przyczynę analizy [ ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Jeśli token wyzwalacza również uwzględniony [TokenTriggers.MatchBraces](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) flagi, z powodu analizy jest [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), który łączy wyboru elementu członkowskiego i wyróżnianie nawiasów klamrowych .
+[TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) wyzwalacza inicjuje wywołanie <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy i <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metody, z kolei wywołuje analizator przyczynę analizy [ ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Jeśli dołączone do tokenów wyzwalacza [TokenTriggers.MatchBraces](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) Flaga, z powodu analizy jest [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), która łączy Wybór elementu członkowskiego i wyróżnianie nawiasów .
 
-Analizator Określa kontekst bieżącej pozycji oraz co zostało wpisane przed zaznacz element członkowski. Z tej informacji analizator tworzy listę wszystkich elementów członkowskich w żądanym zakresie. Ta lista deklaracji są przechowywane w <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiekt, który jest zwracany z <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody. Jeśli wszelkimi deklaracjami są zwracane, jest wyświetlana etykietka narzędzia elementu członkowskiego ukończenia. Etykietka narzędzia, która jest zarządzana przez wystąpienie <xref:Microsoft.VisualStudio.Package.CompletionSet> klasy.
+Analizator Określa kontekst bieżącej pozycji, a także został wpisany należy wybrać znak. Z tej informacji analizator tworzy listę wszystkich elementów członkowskich w żądanym zakresie. Ta lista deklaracji jest przechowywany w <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiekt, który jest zwracany z <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody. Jeśli zwracane są wszystkie deklaracje, jest wyświetlana etykietka narzędzia elementu członkowskiego ukończenia. Etykietka narzędzia która jest zarządzana przez wystąpienie <xref:Microsoft.VisualStudio.Package.CompletionSet> klasy.
 
-## <a name="enable-support-for-member-completion"></a>Włącz obsługę uzupełniania elementu członkowskiego
+## <a name="enable-support-for-member-completion"></a>Włącz obsługę uzupełnianie składowych
 
-Musi mieć `CodeSense` wpis rejestru ustawioną wartość 1 do obsługi żadnej operacji IntelliSense. Ten wpis rejestru można ustawić za pomocą nazwany parametr przekazany do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybut użytkownika skojarzonego z pakietem języka. Klasy usługi języka odczytać wartości wpisu rejestru z <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy.
+Konieczne jest posiadanie `CodeSense` wpis rejestru równa 1, aby obsługiwać dowolną operację funkcji IntelliSense. Ten wpis rejestru można ustawić za pomocą nazwany parametr przekazywany do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybut użytkownika skojarzonego z pakietem języka. Klasy usługi w języka odczytać wartości wpisu rejestru z <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy.
 
-Jeśli skaner zwraca token trigger [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)i z analizatora zwraca listę deklaracje, a następnie zostanie wyświetlona lista uzupełniania elementu członkowskiego.
+Jeśli skaner zwróci tokenów wyzwalacza [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>), Twoje analizatora zwraca listę deklaracje, a następnie jest wyświetlany na liście uzupełniania elementu członkowskiego.
 
-## <a name="support-member-completion-in-the-scanner"></a>Obsługa uzupełniania elementu członkowskiego skanera
+## <a name="support-member-completion-in-the-scanner"></a>Obsługuje uzupełnianie składowych skanera
 
-Skaner musi być w stanie wykryć znak zakończenia elementu członkowskiego i ustawić wyzwalacz tokenu [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) podczas analizowania znaku.
+Skaner musi być w stanie wykryć znak zakończenia elementu członkowskiego i ustaw tokenów wyzwalacza [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) po znaku jest analizowany.
 
 ### <a name="scanner-example"></a>Przykład skanera
 
-Oto uproszczony przykład wykrywanie znak zakończenia elementu członkowskiego i ustala odpowiedni <xref:Microsoft.VisualStudio.Package.TokenTriggers> flagi. W tym przykładzie jest tylko w celach ilustracyjnych. Przyjęto założenie, że skaner zawiera metodę `GetNextToken` identyfikuje i zwraca tokenów z wiersza tekstu. Przykładowy kod ustawia wyzwalacza przy każdym stwierdzeniu rodzaj znaku.
+Oto uproszczony przykład wykrywanie znaku zakończenia elementu członkowskiego i ustawiając odpowiednią <xref:Microsoft.VisualStudio.Package.TokenTriggers> flagi. Ten przykład dotyczy tylko w celach ilustracyjnych. Zakłada się, że skaner zawiera metodę `GetNextToken` , identyfikuje i zwraca tokenów z wiersza tekstu. Przykładowy kod po prostu ustawia wyzwalacz zawsze wtedy, gdy jej widzi właściwego rodzaju znak.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -100,17 +97,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="support-member-completion-in-the-parser"></a>Obsługa uzupełniania elementu członkowskiego w analizatorze składni
+## <a name="support-member-completion-in-the-parser"></a>Obsługuje uzupełnianie składowych w analizatorze składni
 
-Na zakończenie elementu członkowskiego <xref:Microsoft.VisualStudio.Package.Source> klasy wywołania <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> metody. Lista musi implementować w klasie pochodzącej z <xref:Microsoft.VisualStudio.Package.Declarations> klasy. Zobacz <xref:Microsoft.VisualStudio.Package.Declarations> klasy, aby uzyskać szczegółowe informacje o metodach musi implementować.
+Na zakończenie elementu członkowskiego <xref:Microsoft.VisualStudio.Package.Source> klasy wywołania <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> metody. Listy należy zaimplementować w klasie, która jest pochodną <xref:Microsoft.VisualStudio.Package.Declarations> klasy. Zobacz <xref:Microsoft.VisualStudio.Package.Declarations> klasy, aby uzyskać szczegółowe informacje o metodach, należy zaimplementować.
 
-Analizator jest wywoływana z [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) lub [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) po wpisaniu znaku wybierz element członkowski. Lokalizacji określonej <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt jest bezpośrednio po znaku wybierz element członkowski. Analizator musi pobrać nazwy wszystkich elementów członkowskich, które mogą być wyświetlane na liście elementu członkowskiego, w tym punkcie określonego w kodzie źródłowym. Następnie analizator należy przeanalizować bieżący wiersz do określenia zakresu, które użytkownik chce skojarzone z znak wybierz element członkowski.
+Analizator jest wywoływana z [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) lub [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) po wpisaniu znaku wybierz element członkowski. Lokalizacji określonej <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt jest natychmiast po zakończeniu elementu członkowskiego, wybierz znak. Analizator musi zebrać nazwy wszystkich elementów członkowskich, które mogą być wyświetlane na liście składowych w konkretnym momencie w kodzie źródłowym. Następnie analizator musi przeanalizować bieżący wiersz, aby określić zakres, który użytkownik chce skojarzone ze znakiem wybierz element członkowski.
 
-Ten zakres jest oparty na typie identyfikatora, przed zaznacz element członkowski. Na przykład w języku C#, otrzyma zmiennej członkowskiej `languageService` mający typ `LanguageService`, wpisz **languageService.** Tworzy listę wszystkich członków `LanguageService` klasy. Również w języku C# wpisując **to.** Tworzy listę wszystkich elementów członkowskich klasy w bieżącym zakresie.
+Ten zakres opiera się na typ identyfikatora, należy wybrać znaków. Na przykład w języku C#, biorąc pod uwagę zmiennej składowej `languageService` zawierający typ `LanguageService`, wpisz **languageService.** Tworzy listę wszystkich członków `LanguageService` klasy. Również w języku C# wpisując **to.** Tworzy listę wszystkich elementów członkowskich klasy w bieżącym zakresie.
 
 ### <a name="parser-example"></a>Przykład analizatora
 
-Poniższy przykład przedstawia sposób wypełnienia <xref:Microsoft.VisualStudio.Package.Declarations> listy. Ten kod przyjęto założenie, że analizator konstruuje deklaracji i dodaje go do listy, wywołując `AddDeclaration` metoda `TestAuthoringScope` klasy.
+Poniższy przykład przedstawia sposób wypełnić <xref:Microsoft.VisualStudio.Package.Declarations> listy. Ten kod przyjęto założenie, że analizator tworzy deklarację i dodaje go do listy, wywołując `AddDeclaration` metody `TestAuthoringScope` klasy.
 
 ```csharp
 using System.Collections;

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego'
+title: 'Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4fdcdbead361a189d6b99a32ba09063e784aa5e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 799e6fdc50cad91ebd5ee5081b1d80fa296f5a7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947957"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego
+# <a name="how-to-access-and-constrain-the-current-selection"></a>Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego
 
 Kiedy piszesz obsługi polecenia lub gestu dla języka specyficznego dla domeny, można określić elementu użytkownik kliknął prawym przyciskiem myszy. Można również uniemożliwić niektórych kształtów lub pól są zaznaczone. Na przykład można rozmieścić, że po kliknięciu ikony dekorator kształtu, który go zawiera zamian zostanie wybrany. Ograniczając zaznaczenia w ten sposób powoduje zmniejszenie liczby programów obsługi, które trzeba napisać. Ponadto ułatwia dla użytkownika, który może kliknij w dowolnym miejscu w kształcie bez konieczności uniknąć dekoratora.
 

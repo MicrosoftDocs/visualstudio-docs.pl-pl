@@ -1,8 +1,6 @@
 ---
-title: 'Porady: debugowanie hostowania samoobsługowego WCF usługi | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie hostowania samoobsługowego WCF usługi | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a847071fa62e0ae168a5c830bd7f52a80edf740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956130"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Porady: debugowanie hostowania samoobsługowego WCF
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Instrukcje: Debugowanie hostowania samoobsługowego WCF usługi
 A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w usługach IIS, Host usługi WCF, lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera projektowego. Najprostszym sposobem na debugowanie hostowania samoobsługowego WCF jest skonfigurowanie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do uruchomienia klienta i serwera, po wybraniu **Rozpocznij debugowanie** na **debugowania** menu.  
   
  Jeśli usługa WCF jest hostingu samodzielnego wewnątrz, czy Proces, który nie można uruchomić w ten sposób, takich jak usługa NT nie można użyć tej metody. Zamiast tego możesz wykonać jedną z następujących czynności:  
@@ -58,4 +56,4 @@ A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w us
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)   
  [Ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Instrukcje: przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md)
+ [Instrukcje: Przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md)

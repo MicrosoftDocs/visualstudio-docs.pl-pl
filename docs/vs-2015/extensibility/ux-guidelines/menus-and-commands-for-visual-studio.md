@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f892c96a40f9edfc01ea0c6a8de15e59b20fb067
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 270ea37a7e16934452b2a6598fc213fd628bcbbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943374"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu i poleceń dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +55,7 @@ ms.locfileid: "53061276"
  Jest to przydatne do polecenia należy umieścić w pobliżu obszar koncentracji uwagi użytkownika. Jednym ze sposobów, w tym celu jest tworzenie osadzonym pasku narzędzi u góry okna narzędzi lub dokumentu edytora. Polecenia umieszczone na pasku narzędzi powinny być specyficzne dla regionu zawartości w oknie. Nie zduplikowane udostępnionych poleceń na te paski narzędzi. Na przykład nigdy nie należy umieścić "Zapisz" w osadzonym pasku narzędzi.
 
 ### <a name="content-and-command-visibility"></a>Widoczność zawartości i polecenia
- Polecenia istnieje w następujących zakresów: **środowiska**, **hierarchii**, i **dokumentu**. Znać każdego zakresu, aby mieć pewność, w położenie polecenia.
+ Istnieją polecenia w następujących zakresów: **Środowisko**, **hierarchii**, i **dokumentu**. Znać każdego zakresu, aby mieć pewność, w położenie polecenia.
 
  Polecenia w **środowiska** zakresu ustanowić kontekst podstawowy i są współużytkowane w wielu kontekstach. Zmieniają widoczność lub układ dokumentów i okien narzędzi. Wśród poleceń w środowisku są zakresu **nowy projekt**, **Połącz z serwerem**, **dołączanie procesu**, **Wytnij**,  **Kopiuj**, **Wklej**, **znaleźć**, **opcje**, **dostosować**, **nowe okno**, i **Wyświetl Pomoc**.
 
@@ -288,7 +287,7 @@ ms.locfileid: "53061276"
 
 - **Postępuj zgodnie z wytycznymi Windows, aby ustalić, które modyfikator kluczy mogą wykorzystać.** Użyj kombinacji klawiszy Ctrl dla polecenia, które mają wpływ na dużą skalę, takich jak polecenia, które są stosowane do całego dokumentu. Użyj kombinacji klawisza Shift dla poleceń, które rozszerzyć lub uzupełniają działania klawisza skrótu standard. Nie należy używać kombinacji klawiszy Ctrl + Alt.
 
-- **Usuń skróty nadmiarowe.** Jeśli masz starszej wersji funkcji, rozważ usunięcie skróty, które są używane z infrequency extreme (mniej niż 10 razy w danych programu CEIP) lub umiarkowane infrequency (mniej niż 100 razy dane programu CEIP), jeśli klucz dostępu zapewnia szybki dostęp do tego samego polecenia. Na przykład: C Alt-H, spowoduje to otwarcie/spis treści pomocy.
+- **Usuń skróty nadmiarowe.** Jeśli masz starszej wersji funkcji, rozważ usunięcie skróty, które są używane z infrequency extreme (mniej niż 10 razy w danych programu CEIP) lub umiarkowane infrequency (mniej niż 100 razy dane programu CEIP), jeśli klucz dostępu zapewnia szybki dostęp do tego samego polecenia. Na przykład: C ALT-H, spowoduje to otwarcie/spis treści pomocy.
 
   Nie jest to prosty sposób sprawdzić dostępność skrótów. Jeśli chcesz dodać skrót, wykonaj następujące kroki:
 

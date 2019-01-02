@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLinesByVA | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f004b189a22c510599ae9a5f1c719a151ed7d39f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f9af3fec19ebdbb07bf5c363e1602b329c4efea6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818504"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 Pobiera wyliczenie, które umożliwia klientowi do iterowania po informacje o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, w tym symbolu w ramach określonego wirtualnego adresu (oceny luk w zabezpieczeniach).  
@@ -25,7 +23,7 @@ Pobiera wyliczenie, które umożliwia klientowi do iterowania po informacje o nu
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT findInlineeLinesByVA (   
+HRESULT findInlineeLinesByVA (   
    ULONGLONG             va,  
    DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  

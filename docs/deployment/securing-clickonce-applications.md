@@ -1,8 +1,6 @@
 ---
 title: Zabezpieczanie aplikacji ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/17/2017
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a49bf9cbf2c43cd7692592b53b9aca2b256313
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944275"
 ---
 # <a name="secure-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje podlegają ograniczenia zabezpieczeń dostępu kodu na platformie .NET Framework, co pomaga ograniczyć dostęp tego kodu do chronionych zasobów i operacji. Dlatego ważne jest, że rozumiesz implikacje zabezpieczenia dostępu kodu, aby zapisać swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednio. W celu ograniczenia dostępu aplikacje mogą używać pełnego zaufania lub stref częściowych, takich jak strefy Internet i Intranet.  
@@ -40,14 +38,14 @@ ms.locfileid: "39080343"
 |Instalacja z sieciowego udziału plików|Strefa Lokalny intranet|  
 |Instalacja z dysku CD-ROM|Pełne zaufanie|  
   
- Uprawnienia domyślne są określane na podstawie lokalizacji, z której została wdrożona oryginalna wersja aplikacji; aktualizacje aplikacji będą dziedziczyć te uprawnienia. Jeśli aplikacja jest skonfigurowana do sprawdzania, czy w sieci Web lub lokalizacji sieciowej są dostępne aktualizacje, oryginalna instalacja może otrzymać uprawienia dla strefy Internet lub Intranet, a nie uprawnienia pełnego zaufania. Aby zapobiec monitowaniu użytkowników, administrator systemu może określić zasady wdrażania technologii ClickOnce definiujące określonego wydawcę aplikacji jako zaufane źródło. Na komputerach, na których zostaną wdrożone te zasady, uprawnienia będą udzielane automatycznie i użytkownicy nie będą monitowani. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Aby skonfigurować zaufane wdrożenie aplikacji, certyfikat można zainstalować na poziomie komputera lub przedsiębiorstwa. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
+ Uprawnienia domyślne są określane na podstawie lokalizacji, z której została wdrożona oryginalna wersja aplikacji; aktualizacje aplikacji będą dziedziczyć te uprawnienia. Jeśli aplikacja jest skonfigurowana do sprawdzania, czy w sieci Web lub lokalizacji sieciowej są dostępne aktualizacje, oryginalna instalacja może otrzymać uprawienia dla strefy Internet lub Intranet, a nie uprawnienia pełnego zaufania. Aby zapobiec monitowaniu użytkowników, administrator systemu może określić zasady wdrażania technologii ClickOnce definiujące określonego wydawcę aplikacji jako zaufane źródło. Na komputerach, na których zostaną wdrożone te zasady, uprawnienia będą udzielane automatycznie i użytkownicy nie będą monitowani. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Aby skonfigurować zaufane wdrożenie aplikacji, certyfikat można zainstalować na poziomie komputera lub przedsiębiorstwa. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Zasady zabezpieczenia dostępu kodu  
- Uprawnienia dla aplikacji są określane przez ustawienia w [ \<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) elementu w manifeście aplikacji. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie generuje te informacje, na podstawie ustawień projektu **zabezpieczeń** stronę właściwości. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja otrzymuje tylko te uprawnienia, których aplikacja zażąda. Na przykład w sytuacji, gdy dostęp do plików wymaga uprawnień pełnego zaufania, a aplikacja żąda uprawnienia dostępu do pliku, zostanie jej udzielone tylko uprawnienie dostępu do plików, a nie uprawnienia pełnego zaufania. Podczas tworzenia usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, upewnij się, że są żądane tylko uprawnienia, których potrzebuje aplikacja. W większości przypadków można użyć stref Internet lub Lokalny intranet, aby ograniczyć aplikację do częściowego zaufania. Aby uzyskać więcej informacji, zobacz [porady: ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Jeśli aplikacja wymaga uprawnień niestandardowych, można utworzyć strefę niestandardową. Aby uzyskać więcej informacji, zobacz [porady: ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Uprawnienia dla aplikacji są określane przez ustawienia w [ \<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) elementu w manifeście aplikacji. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie generuje te informacje, na podstawie ustawień projektu **zabezpieczeń** stronę właściwości. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja otrzymuje tylko te uprawnienia, których aplikacja zażąda. Na przykład w sytuacji, gdy dostęp do plików wymaga uprawnień pełnego zaufania, a aplikacja żąda uprawnienia dostępu do pliku, zostanie jej udzielone tylko uprawnienie dostępu do plików, a nie uprawnienia pełnego zaufania. Podczas tworzenia usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, upewnij się, że są żądane tylko uprawnienia, których potrzebuje aplikacja. W większości przypadków można użyć stref Internet lub Lokalny intranet, aby ograniczyć aplikację do częściowego zaufania. Aby uzyskać więcej informacji, zobacz [jak: Ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Jeśli aplikacja wymaga uprawnień niestandardowych, można utworzyć strefę niestandardową. Aby uzyskać więcej informacji, zobacz [jak: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Dołączenie uprawnienia, które nie wchodzi w skład domyślnego zestawu uprawnień dla strefy, z której została wdrożona aplikacja, spowoduje, że użytkownik końcowy będzie w czasie instalacji lub aktualizacji monitowany o udzielenie uprawnienia. Aby zapobiec monitowaniu użytkowników, administrator systemu może określić zasady wdrażania technologii ClickOnce definiujące określonego wydawcę aplikacji jako zaufane źródło. Na komputerach, na których zostaną wdrożone te zasady, uprawnienia będą udzielane automatycznie i użytkownicy nie będą monitowani.  
   
- Deweloper jest odpowiedzialny za zagwarantowanie, że jego aplikacja będzie działać z odpowiednimi uprawnieniami. Jeśli aplikacja w czasie wykonywania zażąda uprawnień spoza strefy, może wystąpić wyjątek zabezpieczeń. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umożliwia debugowanie aplikacji w docelowej strefie zabezpieczeń. i oferuje pomoc w zakresie projektowania bezpiecznych aplikacji. Aby uzyskać więcej informacji, zobacz [porady: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Deweloper jest odpowiedzialny za zagwarantowanie, że jego aplikacja będzie działać z odpowiednimi uprawnieniami. Jeśli aplikacja w czasie wykonywania zażąda uprawnień spoza strefy, może wystąpić wyjątek zabezpieczeń. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umożliwia debugowanie aplikacji w docelowej strefie zabezpieczeń. i oferuje pomoc w zakresie projektowania bezpiecznych aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Aby uzyskać więcej informacji dotyczących zabezpieczeń dostępu kodu i technologii ClickOnce, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
@@ -68,7 +66,7 @@ ms.locfileid: "39080343"
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Domyślnie argumenty ciągu zapytania są wyłączone. Aby je włączyć, atrybut `trustUrlParameters` musi być ustawiona w manifeście wdrożenia aplikacji. Tę wartość można ustawić w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i MageUI.exe. Aby uzyskać szczegółowe instrukcje dotyczące sposobu włączania przekazywania ciągów zapytania, zobacz [porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Domyślnie argumenty ciągu zapytania są wyłączone. Aby je włączyć, atrybut `trustUrlParameters` musi być ustawiona w manifeście wdrożenia aplikacji. Tę wartość można ustawić w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i MageUI.exe. Aby uzyskać szczegółowe instrukcje dotyczące sposobu włączania przekazywania ciągów zapytania, zobacz [jak: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Nigdy nie należy przekazywać argumentów odebranych za pośrednictwem ciągu zapytania do bazy danych lub wiersza polecenia bez sprawdzenia, czy argumenty są bezpieczne. Argumentami niebezpiecznymi są argumenty zawierające znaki ucieczki bazy danych lub wiersza polecenia, które mogłyby umożliwić złośliwemu użytkownikowi „zmuszenie” aplikacji do wykonywania dowolnie wybranych przez niego poleceń.  
   

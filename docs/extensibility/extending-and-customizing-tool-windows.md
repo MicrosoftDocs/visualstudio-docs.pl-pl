@@ -1,9 +1,6 @@
 ---
 title: Rozszerzanie i dostosowywanie narzędzi Windows | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949839"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Rozszerzanie i dostosowywanie okien narzędzi
 Visual Studio zawiera kilka różnych typów windows, na przykład okien, okien dokumentu i okno dialogowe systemu windows. Inne okna, takie jak **właściwości** oknie **dane wyjściowe** oknie i **listy zadań** oknie rodzaje okien narzędzi.  
@@ -39,9 +36,9 @@ Visual Studio zawiera kilka różnych typów windows, na przykład okien, okien 
   
  Narzędzie okienka mogą hostowanie kontrolki użytkownika WPF i obsługiwać pasków narzędzi. Można zastąpić <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> właściwość zwraca uchwyt obsługiwanego formantu.  
   
- Możesz dodać wiele różnych funkcji do okna narzędzi. Na przykład można dodać paska narzędzi: [dodać pasek narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) lub menu skrótów: [Dodawanie menu skrótów w oknie narzędzia](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Można dodać kontrolkę wyszukiwania, która umożliwia wyszukiwanie elementów wewnątrz okna narzędzia: [Dodawanie wyszukiwania do okna narzędzi](../extensibility/adding-search-to-a-tool-window.md).  
+ Możesz dodać wiele różnych funkcji do okna narzędzi. Na przykład można dodać paska narzędzi: [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) lub menu skrótów: [Dodawanie menu skrótów w oknie narzędzia](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Można dodać kontrolkę wyszukiwania, która umożliwia wyszukiwanie elementów wewnątrz okna narzędzia: [Dodawanie wyszukiwania do okna narzędzi](../extensibility/adding-search-to-a-tool-window.md).  
   
- Można subskrybować zdarzenia okna narzędzia: [subskrybować zdarzenie](../extensibility/subscribing-to-an-event.md).  
+ Można subskrybować zdarzenia okna narzędzia: [Subskrybowanie zdarzenia](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extend-existing-tool-windows"></a>Rozszerzanie istniejących narzędzi systemu windows  
  Można dodać informacji o okna narzędzia do nowego **opcje** strony i nowe ustawienie na **właściwości** strony, zapisać **listy zadań** i **danych wyjściowych**  systemu windows. Aby uzyskać więcej informacji, zobacz [rozszerzyć okna właściwości, listy zadań, danych wyjściowych i opcji](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) i [rozszerzyć okna właściwości, listy zadań, danych wyjściowych i opcji](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  

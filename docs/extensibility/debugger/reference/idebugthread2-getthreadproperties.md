@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::GetThreadProperties | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::GetThreadProperties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169c33bc000e45ea44600b738a05bd25fd0f6a0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3faf7607be0fb0addbae273cd6c22ce8c67b9a43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948436"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Pobiera właściwości, które opisują tego wątku.  
@@ -28,14 +25,14 @@ Pobiera właściwości, które opisują tego wątku.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetThreadProperties (   
+HRESULT GetThreadProperties (   
    THREADPROPERTY_FIELDS dwFields,  
    THREADPROPERTIES*     ptp  
 );  
 ```  
   
 ```csharp  
-int GetThreadProperties (   
+int GetThreadProperties (   
    enum_THREADPROPERTY_FIELDS dwFields,  
    THREADPROPERTIES[]         ptp  
 );  

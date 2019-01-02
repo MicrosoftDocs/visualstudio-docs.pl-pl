@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948975"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word
   Ten Przewodnik wprowadzający przedstawia sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Word. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte dokumenty.  
@@ -124,17 +121,17 @@ ms.locfileid: "49940973"
 ## <a name="next-steps"></a>Następne kroki  
  Teraz, gdy utworzono podstawowe dodatku narzędzi VSTO dla programu Word, można dowiedzieć się więcej o tworzeniu dodatków narzędzi VSTO dla programów w tych tematach:  
   
--   Ogólne zadań programistycznych, które można wykonywać w dodatkach VSTO: [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
+-   Ogólne zadań programistycznych, które można wykonywać w dodatkach VSTO: [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Zadania związane z programowaniem, które są specyficzne dla dodatków narzędzi VSTO programu Word: [Word rozwiązania](../vsto/word-solutions.md).  
+-   Zadania programowania, które są specyficzne dla dodatków narzędzi VSTO programu Word: [Word rozwiązania](../vsto/word-solutions.md).  
   
--   Za pomocą modelu obiektów programu Word: [model obiektu Word — omówienie](../vsto/word-object-model-overview.md).  
+-   Za pomocą modelu obiektów programu Word: [Word — omówienie modelu obiektu](../vsto/word-object-model-overview.md).  
   
--   Dostosowywanie interfejsu użytkownika programu Word, na przykład przez dodawanie kart niestandardowych do Wstążki lub tworzenia własnego niestandardowego okienka zadań: [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
+-   Dostosowywanie interfejsu użytkownika programu Word, na przykład przez dodawanie kart niestandardowych do Wstążki lub tworzenia własnego niestandardowego okienka zadań: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
--   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Word: [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).  
+-   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Word: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
   
--   Wdrażanie dodatków narzędzi VSTO dla programu Word: [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
+-   Wdrażanie dodatków narzędzi VSTO dla programu Word: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -145,5 +142,3 @@ ms.locfileid: "49940973"
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
-  
-  

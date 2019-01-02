@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji'
-ms.custom: ''
+title: 'Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943093"
 ---
-# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji
+# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji
   W tym przewodniku pokazano, jak utworzyć okienka akcji w dokumencie programu Microsoft Office Word. W okienku Akcje zawiera dwie kontrolki, które gromadzenia danych wejściowych, a następnie wyślij tekstu do dokumentu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -51,7 +48,7 @@ ms.locfileid: "51948728"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu dokument programu Word z nazwą **Moje podstawowe okienko akcji**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu dokument programu Word z nazwą **Moje podstawowe okienko akcji**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje **Moje podstawowe okienko akcji** projekt **Eksploratora rozwiązań**.  
   
@@ -145,7 +142,7 @@ ms.locfileid: "51948728"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  W języku C# należy dodać moduł obsługi zdarzenia kliknięcia przycisku. Możesz umieścić ten kod w `InsertTextControl` konstruktora, po wywołaniu `InitializeComponent`. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  W języku C# należy dodać moduł obsługi zdarzenia kliknięcia przycisku. Możesz umieścić ten kod w `InsertTextControl` konstruktora, po wywołaniu `InitializeComponent`. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
@@ -178,15 +175,13 @@ ms.locfileid: "51948728"
 ## <a name="next-steps"></a>Następne kroki  
  Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Tworzenie okienek akcji w programie Excel. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie okienek akcji do skoroszytów programu Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
+-   Tworzenie okienek akcji w programie Excel. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie okienek akcji do skoroszytów programu Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
--   Wiązanie danych z kontrolkami w okienku Akcje. Aby uzyskać więcej informacji, zobacz [wskazówki: powiązywanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Wiązanie danych z kontrolkami w okienku Akcje. Aby uzyskać więcej informacji, zobacz [instruktażu: Wiązanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)   
- [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Porady: Dodawanie okienek akcji do skoroszytów programu Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
- [Porady: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Instrukcje: Dodawanie okienek akcji do skoroszytów programu Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
+ [Instrukcje: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [BOOKMARK, kontrolka](../vsto/bookmark-control.md)  
-  
-  

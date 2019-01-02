@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsegments::get__newenum — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb9d165fa0b9ee023ba6e9fdc0c4e3e9ab575f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae66e59fdd10075508ed10b81bcd65c04ecacf84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951004"
 ---
 # <a name="idiaenumsegmentsgetnewenum"></a>IDiaEnumSegments::get__NewEnum
 Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.  
@@ -27,7 +25,7 @@ Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get__NewEnum (   
+HRESULT get__NewEnum (   
    IUnknown** pRetVal  
 );  
 ```  

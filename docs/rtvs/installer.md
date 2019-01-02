@@ -3,19 +3,18 @@ title: Narzędzia języka R dla programu Visual Studio — Zapraszamy
 description: Informacje podsumowujące dla deweloperów, którzy zainstalowali R Tools for Visual Studio.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 91204ea5b4303b38397d90761fd9648159174dd4
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: e90baa84316f36295d003675bb7fae39b28f72a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952916"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Narzędzia języka R dla programu Visual Studio — Zapraszamy
 

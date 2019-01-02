@@ -1,8 +1,7 @@
 ---
-title: Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
-ms.technology: vs-ide-debug
+title: Sprawdzanie zmiennych - okien zmiennych automatycznych i zmiennych lokalnych | Dokumentacja firmy Microsoft
+ms.custom: seodec18
+ms.date: 10/18/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -16,24 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa37831ad79a55effe849f8605ae6b5d299d3a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947416"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych
 
-**Autos** i **lokalne** systemu windows umożliwia wyświetlanie wartości zmiennych podczas debugowania. Systemu windows są dostępne tylko podczas sesji debugowania.
+**Autos** i **lokalne** systemu windows umożliwia wyświetlanie wartości zmiennych podczas debugowania. Systemu windows są dostępne tylko podczas sesji debugowania. **Autos** okno wyświetla zmienne używane wokół bieżącego punktu przerwania. **Lokalne** okno wyświetla zmienne zdefiniowane w zakresie lokalnym, zwykle jest to bieżąca funkcja lub metoda. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md) i [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
-**Autos** okno wyświetla zmienne używane wokół bieżącego punktu przerwania. **Lokalne** okno wyświetla zmienne zdefiniowane w zakresie lokalnym, zwykle jest to bieżąca funkcja lub metoda.
-
-Aby otworzyć **automatyczne** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **Autos**, lub naciśnij **Ctrl**+**Alt**+**V** > **A**.
+ **Autos** oknie jest dostępna dla C#, kodu języka Visual Basic, C++ i Python, ale nie dla języka JavaScript lub F#.
+  
+Aby otworzyć **automatyczne** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **Autos**, lub naciśnij **Ctrl**+**Alt**+**V** > **A**.  
 
 Aby otworzyć **zmiennych lokalnych** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **lokalne**, lub naciśnij **Alt**+**4**.
-
-Aby uzyskać więcej informacji dotyczących debugowania podstawowe zobacz [wprowadzenie do debugera](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [wizualizacje danych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations).
@@ -73,9 +70,7 @@ Ustaw punkt przerwania, a następnie rozpocząć debugowanie. Po osiągnięciu p
 
 ![Pasek narzędzi lokalizacji debugowania](../debugger/media/debuglocationtoolbar.png "narzędzi debugowania lokalizacji")
 
-## <a name="bkmk_whatvariables"></a> Zmienne w oknie Autos
-
- **Autos** oknie jest dostępna dla C#, Visual Basic i C++ kod, ale nie dla języka JavaScript lub F#.
+## <a name="bkmk_whatvariables"></a> Zmienne w oknie Autos (C#, języka Python w języku C++, Visual Basic)
 
  Inny kod języków wyświetlać różne zmienne w **Autos** okna.
 
@@ -147,13 +142,13 @@ private static int subtractVars(int i, int j)
 
 Aby wyświetlić wartości zwracanych metody `sumVars()` i `subtractVars()` wywołania metod w oknie Autos:
 
-1. Ustaw punkt przerwania na `int x = sumVars(a, b) + subtractVars(c, d);` wiersza.
-
-1. Rozpocznij debugowanie, a po wstrzymuje wykonywanie w punkcie przerwania, wybierz **Step Over** lub naciśnij **F10**. Powinien zostać wyświetlony następujący wartości zwracane w **Autos** okna:
-
-  ![Wartość zwracana przez automatyczne C# ](../debugger/media/autosreturnvaluecsharp2.png "Autos zwracają wartośćC#")
-
-## <a name="see-also"></a>Zobacz także
-
-- [Okna debugera](../debugger/debugger-windows.md)
-- [Wizualizacje danych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations)
+1. Ustaw punkt przerwania na `int x = sumVars(a, b) + subtractVars(c, d);` wiersza.  
+   
+1. Rozpocznij debugowanie, a po wstrzymuje wykonywanie w punkcie przerwania, wybierz **Step Over** lub naciśnij **F10**. Powinien zostać wyświetlony następujący wartości zwracane w **Autos** okna:  
+   
+  ![Wartość zwracana przez automatyczne C# ](../debugger/media/autosreturnvaluecsharp2.png "Autos zwracają wartośćC#")  
+  
+## <a name="see-also"></a>Zobacz także  
+ [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
+ [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)  
+ [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md) [okna debugera](../debugger/debugger-windows.md)

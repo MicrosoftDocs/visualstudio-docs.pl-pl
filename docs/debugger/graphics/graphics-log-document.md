@@ -1,8 +1,6 @@
 ---
 title: Dokument dziennika grafiki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.vsglog.error
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab888fa800e8be695b6dca4cf38f2a0ed478ebb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad9c458891a13a28d9b13ec9674a4a9e829b95a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955282"
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
 Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gdy aplikacja została uruchomiona w ramach sesji diagnostyki grafiki. Po rejestrowane, można sprawdzić dziennik w analizatora grafiki programu Visual Studio do diagnozowania problemów z renderowaniem i wydajności.  
@@ -44,7 +42,7 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gd
 ## <a name="playback-machine"></a>Maszyna odtwarzająca  
  Wyświetlany w prawym górnym rogu **lista ramek** jest **maszynę odtwarzającą**. Maszyna odtwarzania jest komputerem lub urządzeniem, który służy do odtwarzania zdarzenia grafiki z pliku dziennika grafiki podczas sesji diagnostyki grafiki nowsze. Za pomocą innego urządzenia zamiast komputera deweloperskiego do odtwarzania przechwytywanych zdarzeń, bardziej precyzyjne można odtworzyć środowiska wykonawczego, w której występuje problem — na przykład, można użyć maszyny, sprzęt graficzny różnych lub sterowniki niż te, które korzysta z komputera deweloperskiego lub inne rodzaje urządzeń, takich jak tablety przeznaczone dla komputerów z procesorem ARM z systemem Windows RT lub urządzenia Windows Phone.  
 
- Aby uzyskać informacje o sposobie określania maszyny odtwarzania, zobacz [porady: zmiana maszyny odtwarzania diagnostyki grafiki](how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Aby uzyskać informacje o sposobie określania maszyny odtwarzania, zobacz [jak: Zmiana maszyny odtwarzania diagnostyki grafiki](how-to-change-the-graphics-diagnostics-playback-machine.md).  
 
 ## <a name="graphics-log-summary-information"></a>Podsumowanie dziennika grafiki  
  Gdy plik dziennika grafiki jest aktywny dokument **właściwości** okna wyświetla informacje o środowisku, który hostuje sesji przechwytywania diagnostyki grafiki. Zostaną wyświetlone różne kategorie informacji.  
@@ -78,7 +76,7 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gd
 
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Path**|Ścieżka pliku .vsglog. **Uwaga:** w starszej wersji przechwytywania, ta właściwość jest używana.|  
+|**Path**|Ścieżka pliku .vsglog. **Uwaga:**  W obszarze przechwytywania starszej wersji ta właściwość jest nieużywany.|  
 
  **Informacje o module**  
  Wyświetla nazwę i wersję biblioteki dołączanej dynamicznie (dll), które zostały załadowane przez aplikację podczas sesji przechwytywania.  
@@ -116,4 +114,4 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gd
 
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [Przewodnik: Debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

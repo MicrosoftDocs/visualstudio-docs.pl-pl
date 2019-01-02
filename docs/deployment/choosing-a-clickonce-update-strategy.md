@@ -1,8 +1,6 @@
 ---
 title: Wybieranie strategii aktualizacji ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4da8dddc667b032c6c284dc62197ff05a1a328f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e09bdaff6d3b5a584091f05eae7d21b0aba256b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946662"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Wybieranie strategii aktualizacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] może dostarczać automatyczne aktualizacje aplikacji. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji co jakiś czas odczytuje swój plik manifestu wdrożenia, aby zobaczyć, czy są dostępne aktualizacje do aplikacji. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.  
@@ -124,4 +122,4 @@ ms.locfileid: "39081800"
  [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Jak technologia ClickOnce wykonuje aktualizacje aplikacji](../deployment/how-clickonce-performs-application-updates.md)   
- [Porady: Zarządzanie aktualizacji dla aplikacji ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+ [Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

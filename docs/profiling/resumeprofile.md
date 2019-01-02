@@ -1,8 +1,6 @@
 ---
 title: ResumeProfile | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - ResumeProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c503c0fccf6cd78a01914647294a37e0b86f55e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677272"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947910"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` Metoda zmniejsza wstrzymań/wznowień licznik do określonego poziomu profilowania.  
@@ -67,9 +65,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informacje o funkcji  
- Nagłówek: Zadeklarowanych w *VSPerf.h*  
+ Nagłówek: Zadeklarowane w *VSPerf.h*  
   
- Bibliotekę importowaną: *VSPerf.lib*  
+ Biblioteka importów: *VSPerf.lib*  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie pokazano funkcję ResumeProfile. W przykładzie założono, czy Wykonano wywołanie metody SuspendProfile dla tego samego wątku lub proces zidentyfikowany przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).  

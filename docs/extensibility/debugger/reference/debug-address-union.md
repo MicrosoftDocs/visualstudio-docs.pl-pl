@@ -1,9 +1,6 @@
 ---
 title: DEBUG_ADDRESS_UNION | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_ADDRESS_UNION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37b22b6a67df981920b2288e6f917d57a67dd762
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947208"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 W tym artykule opisano różne rodzaje adresów.  
@@ -90,12 +87,12 @@ public struct DEBUG_ADDRESS_UNION {
  [Tylko w języku C++] Nazwa Unii.  
   
  unionmember  
- [Tylko język C#] Ta wartość musi być wprowadzane do typu odpowiednią strukturą na podstawie `dwKind`. Zobacz uwagi dla skojarzenia między `dwKind` i interpretacji Unii.  
+ [C# tylko] Ta wartość musi być wprowadzane do typu odpowiednią strukturą na podstawie `dwKind`. Zobacz uwagi dla skojarzenia między `dwKind` i interpretacji Unii.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest częścią [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury i reprezentuje jeden z wielu różnych rodzajów adresów ( `DEBUG_ADDRESS` struktury jest wypełniane przez wywołanie [getaddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metody).  
   
- [Tylko język C#] W poniższej tabeli przedstawiono, jak interpretować `unionmember` składowej dla każdego rodzaju adresu. W przykładzie pokazano, jak to zrobić dla jednego rodzaju adresu.  
+ [C# tylko] W poniższej tabeli przedstawiono, jak interpretować `unionmember` składowej dla każdego rodzaju adresu. W przykładzie pokazano, jak to zrobić dla jednego rodzaju adresu.  
   
 |`dwKind`|`unionmember` interpretowane jako|  
 |--------------|----------------------------------|  
@@ -137,9 +134,9 @@ namespace MyPackage
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

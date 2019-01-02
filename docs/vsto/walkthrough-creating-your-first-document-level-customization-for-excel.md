@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955321"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy wybrany skoroszyt jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny skoroszyt jest otwarty.  
@@ -157,17 +154,17 @@ ms.locfileid: "49849037"
   
 -   Ogólne zadania programowania, które można wykonywać w dostosowaniach na poziomie dokumentu: [Program dostosowań poziomu dokumentu](../vsto/programming-document-level-customizations.md).  
   
--   Zadania związane z programowaniem, które są specyficzne dla dostosowywania poziomie dokumentu dla programu Excel: [rozwiązań w programie Excel](../vsto/excel-solutions.md).  
+-   Zadania związane z programowaniem, które są specyficzne dla dostosowywania poziomie dokumentu dla programu Excel: [Rozwiązania w programie Excel](../vsto/excel-solutions.md).  
   
--   Za pomocą modelu obiektów programu Excel: [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
+-   Za pomocą modelu obiektów programu Excel: [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
   
--   Dostosowywanie interfejsu użytkownika programu Excel, na przykład przez dodawanie kart niestandardowych do Wstążki lub tworzenie własnych okienko akcji: [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
+-   Dostosowywanie interfejsu użytkownika programu Excel, na przykład dodawania niestandardowej karty do Wstążki lub tworząc własne okienko akcji: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
--   Do wykonywania zadań, która nie jest możliwa za pomocą modelu obiektów programu Excel (na przykład hostingu zarządzane formanty w dokumentach i powiązanie kontrolki programu Excel z danymi za pomocą formularzy Windows przy użyciu rozszerzonych obiektów programu Excel, udostępniane przez narzędzia programistyczne pakietu Office w programie Visual Studio model powiązania danych): [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md).  
+-   Do wykonywania zadań, która nie jest możliwa za pomocą modelu obiektów programu Excel (na przykład hostingu zarządzane formanty w dokumentach i powiązanie kontrolki programu Excel z danymi za pomocą formularzy Windows przy użyciu rozszerzonych obiektów programu Excel, udostępniane przez narzędzia programistyczne pakietu Office w programie Visual Studio model powiązania danych): [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Kompilowanie i debugowanie dostosowań poziomu dokumentu dla programu Excel: [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).  
+-   Kompilowanie i debugowanie dostosowań poziomu dokumentu dla programu Excel: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
   
--   Wdrażanie dostosowań poziomu dokumentu dla programu Excel: [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
+-   Wdrażanie dostosowań poziomu dokumentu dla programu Excel: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -179,5 +176,3 @@ ms.locfileid: "49849037"
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
-  
-  

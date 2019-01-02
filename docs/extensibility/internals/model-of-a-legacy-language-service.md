@@ -1,9 +1,6 @@
 ---
 title: Model dla starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 381c5b37cdc5d8a166003bdf7dd931dd95e6dcb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4478ef31c107fcf437a452a857eabe2cd015734
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819903"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model starszej wersji usługi językowej
 Usługa języka definiuje elementy i funkcje dla określonego języka i służy do zapewnienia edytora z użyciem informacji specyficznych dla danego języka. Na przykład edytor musi znać elementów i słów kluczowych języka w celu obsługi kolorowanie składni.  

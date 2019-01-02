@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Tworzenie strony aplikacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie strony aplikacji | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820228"
 ---
-# <a name="how-to-create-an-application-page"></a>Porady: Tworzenie strony aplikacji
+# <a name="how-to-create-an-application-page"></a>Instrukcje: Tworzenie strony aplikacji
   Możesz utworzyć stronę sieci web ASP.NET w przynajmniej jednej witryny programu SharePoint. W programie SharePoint te strony są nazywane stron aplikacji. W przeciwieństwie do strony strony aplikacji zawiera kod, który uruchamia się w stronę. Aby uzyskać więcej informacji, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>Aby utworzyć stronę aplikacji  
@@ -50,9 +45,8 @@ ms.locfileid: "51296206"
   
 7.  Jeśli chcesz obsługiwać zdarzenia formantu, Dodaj kod do pliku kodu strony aplikacji.  
   
-     Plik kodu po rozwinięciu węzła pliku strony ASP.NET i jest *.cs* lub *.vb* rozszerzenia, w zależności od języka projektu. Jak utworzyć witrynę aplikacji, na przykład end-to-end, zobacz [wskazówki: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
+     Plik kodu po rozwinięciu węzła pliku strony ASP.NET i jest *.cs* lub *.vb* rozszerzenia, w zależności od języka projektu. Jak utworzyć witrynę aplikacji, na przykład end-to-end, zobacz [instruktażu: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
   
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Przewodnik: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

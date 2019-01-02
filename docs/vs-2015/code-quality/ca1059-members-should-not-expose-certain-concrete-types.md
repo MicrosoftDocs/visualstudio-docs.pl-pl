@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 894b4c22aaab2b0cce81053e6466b791a50b089a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bc5fce0285ab4fe0da9211eb27f89bc1fc38bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944689"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Elementy członkowskie nie powinny uwidaczniać pewnych typów konkretnych
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,7 +57,4 @@ ms.locfileid: "49816888"
  Jest bezpieczne pominąć komunikat od tej reguły, jeśli określone funkcje zapewniane przez konkretny typ jest wymagany.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1011: Rozważ przekazanie typów podstawowych jako parametrów](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
-
-
-
+ [CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

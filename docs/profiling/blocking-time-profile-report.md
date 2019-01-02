@@ -1,8 +1,6 @@
 ---
 title: Czas blokowania raport profilowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4621170ba1ab37ef22bf8a2a974d01d36ddfb705
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946425"
 ---
 # <a name="blocking-time-profile-report"></a>Raport profil czasu blokowania
 Profilu, raportów Obejmij zagregowane dane czasu blokowania stosy wywołań, które są specyficzne dla każdej kategorii blokowania (na przykład "We/wy" lub "Synchronizacji"). Raport Wywłaszczania zawiera listę procesów, które przerywane bieżący proces wraz z liczbą wystąpień wywłaszczania. Aby skompilować blokowania raport profilu, narzędzie umożliwia zbieranie informacji o blokadzie wywołań interfejsu API i gromadzi ich do drzewa stosów wywołań. Dane wyświetlane w tych raportach różni się przez bieżącego zakresu czasu, ukrytych wątków i następujące dwa filtry, które mogą być stosowane:  
@@ -40,7 +38,7 @@ Profilu, raportów Obejmij zagregowane dane czasu blokowania stosy wywołań, kt
 |**Czas blokowania włącznych**|Łączny czas spędzony na dla wszystkich stosów, które składają się na tym poziomie drzewo stosu wywołań blokowania. Numer (włącznie) jest sumą własny czas blokowania dla tej funkcji i wyłączny czas blokowania dla wszystkich jego węzłów podrzędnych.|  
 |**Czas blokowania wyłącznych**|Całkowity czas blokowania spędzonego w taki sposób, w której ta funkcja jest najniższy poziom stosu wywołań. Wpis stosu wywołań unikatowy, która ma wysoką własny czas blokowania może być funkcja zainteresowania.|  
 |**Kategoria oczekiwania/API**|Pokazano tylko dla funkcji na najniższym poziomie stosu wywołań. W przypadku, gdy zostanie rozpoznany podpis wywołania blokowania, znajduje się nazwa blokowania interfejsu API. Jeśli podpis nie zostanie rozpoznany, który jest zgłaszany przez jądro informacje.|  
-|**Szczegółowe informacje**|W pełni kwalifikowana nazwa funkcji. Obejmuje to liczba wierszy, gdy będzie ona dostępna.|  
+|**Szczegóły**|W pełni kwalifikowana nazwa funkcji. Obejmuje to liczba wierszy, gdy będzie ona dostępna.|  
   
 ### <a name="synchronization"></a>Synchronizacja  
  Synchronizacja przedstawia wywołania, które są odpowiedzialne za segmentów, które blokują synchronizacji i agregacji, blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas synchronizacji](../profiling/synchronization-time.md)  

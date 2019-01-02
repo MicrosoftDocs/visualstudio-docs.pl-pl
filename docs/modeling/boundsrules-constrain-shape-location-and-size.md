@@ -10,21 +10,20 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 104a74a38099286675a742ce9eea367d9eeabe84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 449fb0c12b11163ba0ceca981e66a7da0c399e1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950202"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu
 
-A *zasada granic* jest klasa, która definiuje limit na rozmiar i położenie kształtu. Zapewnia on metodę, który jest wywoływany cyklicznie, gdy użytkownik przeciąga kształtu lub narożniki lub krawędzi kształtu.
+A *reguły granice* jest klasa, która definiuje ograniczenia na rozmiar i położenie kształtu. Zapewnia metodę, która często jest wywoływana, gdy użytkownik przeciąga kształtu lub rogów lub stron kształtu.
 
-Poniższy przykład ogranicza prostokątnego kształtu jako pasek o stałym rozmiarze, pozioma lub pionowa. Gdy użytkownik przeciąga narożniki lub stron, konturu Przerzuca między dwie konfiguracje dozwolonych wysokość i szerokość.
+Poniższy przykład ogranicza prostokątnego kształtu do paska o stałym rozmiarze, poziomej lub pionowej. Gdy użytkownik przeciągnie rogów lub stron, konspektu Przerzuca między dwie konfiguracje dozwolonych wysokość i szerokość.
 
-Zasada granic jest klasa pochodna od <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. W kształcie tworzone jest wystąpienie reguły:
+Granice reguły jest klasa jest pochodną <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. W kształcie, tworzone jest wystąpienie reguły:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling.Diagrams; ...

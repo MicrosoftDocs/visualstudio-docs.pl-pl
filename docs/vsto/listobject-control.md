@@ -1,9 +1,6 @@
 ---
 title: ListObject — formant
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fe8191acc2bab7fbcfa2f21ef203f6057535a75
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945187"
 ---
 # <a name="listobject-control"></a>ListObject — formant
   <xref:Microsoft.Office.Tools.Excel.ListObject> Formant jest listę, która udostępnia zdarzenia i może być powiązana z danymi. Po dodaniu listy do arkusza programu Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który można programować względem bezpośrednio, bez konieczności przechodzenia z modelu obiektów programu Microsoft Office Excel.  
@@ -34,7 +31,7 @@ ms.locfileid: "35677184"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>Tworzenie formantu  
- W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek do arkusza w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> formantów do arkuszy tylko w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie ListObject formantów do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek do arkusza w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> formantów do arkuszy tylko w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Domyślnie, dynamicznie utworzoną listę obiektów, nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -49,7 +46,7 @@ ms.locfileid: "35677184"
   
  Ponieważ dane są niezależne od <xref:Microsoft.Office.Tools.Excel.ListObject>, należy dodać i usunąć dane za pomocą zestawu powiązanych danych, a nie bezpośrednio za pomocą <xref:Microsoft.Office.Tools.Excel.ListObject>. Jeśli dane w zestawie danych powiązane są aktualizowane przy użyciu dowolnego mechanizmu <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli automatycznie uwzględnia zmiany. Aby uzyskać więcej informacji, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Można szybko wypełniać <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli przez powiązanie <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych. Jeśli edytujesz danych powiązanych z danymi <xref:Microsoft.Office.Tools.Excel.ListObject>, zmiany zostaną zastosowane automatycznie ze źródła danych. Jeśli chcesz wypełnić <xref:Microsoft.Office.Tools.Excel.ListObject> , a następnie Włącz użytkownikowi na zmianę danych w <xref:Microsoft.Office.Tools.Excel.ListObject> bez modyfikowania źródła danych, możesz użyć <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metodę, aby odłączyć <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródła danych. Aby uzyskać więcej informacji, zobacz [jak: ListObject wypełnienia kontrolki z danymi](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Można szybko wypełniać <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli przez powiązanie <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych. Jeśli edytujesz danych powiązanych z danymi <xref:Microsoft.Office.Tools.Excel.ListObject>, zmiany zostaną zastosowane automatycznie ze źródła danych. Jeśli chcesz wypełnić <xref:Microsoft.Office.Tools.Excel.ListObject> , a następnie Włącz użytkownikowi na zmianę danych w <xref:Microsoft.Office.Tools.Excel.ListObject> bez modyfikowania źródła danych, możesz użyć <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metodę, aby odłączyć <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródła danych. Aby uzyskać więcej informacji, zobacz [jak: Wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 > [!NOTE]  
 >  Powiązanie danych nie jest obsługiwana w nakładających się <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki.  
@@ -58,7 +55,7 @@ ms.locfileid: "35677184"
  Odczytywanie pliku XML do powiązanych z danymi <xref:Microsoft.Office.Tools.Excel.ListObject> formant jest zwykle wolniej, jeśli najpierw powiązać formant, a następnie wywołaj <xref:System.Data.DataSet.ReadXml%2A> do wypełniania zestawu danych. Aby zwiększyć wydajność, należy wywołać <xref:System.Data.DataSet.ReadXml%2A> przed powiązać formant.  
   
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>Odłącz formantów ListObject ze źródła danych  
- Po wypełnieniu <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki z danymi, tworząc powiązanie ze źródłem danych, można go odłączyć tak, aby modyfikacje wprowadzone do danych w obiekcie listy nie wpływają na źródle danych. Aby uzyskać więcej informacji, zobacz [jak: ListObject wypełnienia kontrolki z danymi](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Po wypełnieniu <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki z danymi, tworząc powiązanie ze źródłem danych, można go odłączyć tak, aby modyfikacje wprowadzone do danych w obiekcie listy nie wpływają na źródle danych. Aby uzyskać więcej informacji, zobacz [jak: Wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 ### <a name="restore-column-and-row-order"></a>Przywróć kolejność kolumn i wierszy  
  Po powiązaniu danych w celu <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który został dodany do dokumentu w czasie projektowania programu Visual Studio przechowuje informacje o kolejności wierszy i kolumn w każdym przypadku, gdy skoroszyt jest zapisywany. Jeśli użytkownik przenosi <xref:Microsoft.Office.Tools.Excel.ListObject> kolumny lub wiersze, w czasie wykonywania, nową kolejność jest zachowywana przy następnym otwarciu skoroszytu i <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli wiąże się ze źródłem danych ponownie.  
@@ -72,7 +69,7 @@ ms.locfileid: "35677184"
  Nie można ręcznie dodać lub usunąć kolumny w powiązanym z danymi <xref:Microsoft.Office.Tools.Excel.ListObject> formantu w czasie wykonywania. Jeśli użytkownik końcowy próbuje usunąć kolumnę, zostanie natychmiast przywrócona i wszystkie kolumny dodane zostaną usunięte. Dlatego jest ważne, aby napisać kod, Wyjaśnij użytkownikom, dlaczego nie mogą wykonywać te akcje na <xref:Microsoft.Office.Tools.Excel.ListObject> , jest powiązany z danymi. Program Visual Studio zapewnia kilka zdarzeń na <xref:Microsoft.Office.Tools.Excel.ListObject> związane z powiązanie danych. Na przykład, można użyć <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> zdarzenie, aby ostrzec użytkowników, które dane będą oni próbowali do usunięcia nie można usunąć została przywrócona.  
   
 ## <a name="add-and-remove-rows-at-runtime"></a>Dodawanie i usuwanie wierszy w czasie wykonywania  
- Możesz ręcznie dodawać i usuwać wiersze w powiązanych z danymi <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolować, pod warunkiem że źródło danych umożliwia dodawanie nowych wierszy i nie jest tylko do odczytu. Można napisać kod w odniesieniu do zdarzeń, takich jak <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> sprawdzania poprawności danych. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych, po dodaniu nowego rzędu do kontrolki ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
+ Możesz ręcznie dodawać i usuwać wiersze w powiązanych z danymi <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolować, pod warunkiem że źródło danych umożliwia dodawanie nowych wierszy i nie jest tylko do odczytu. Można napisać kod w odniesieniu do zdarzeń, takich jak <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> sprawdzania poprawności danych. Aby uzyskać więcej informacji, zobacz [jak: Walidacja danych po dodaniu nowego rzędu do kontrolki ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
   
  Czasami relacji na obiekt listy do źródła danych powoduje, że błędy procedur. Na przykład można mapować kolumny, które mają być wyświetlane w <xref:Microsoft.Office.Tools.Excel.ListObject>, więc Jeśli pominiesz kolumny, które mają ograniczenia, takie jak pola, które nie akceptuje wartości null, błędy są wywoływane za każdym razem, gdy jest tworzona w wierszu. Można napisać kod, aby dodać brakujące wartości w obsłudze zdarzeń dla <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> zdarzeń.  
   
@@ -112,17 +109,15 @@ ms.locfileid: "35677184"
   
 ## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
- [Porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Porady: zmiana rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Porady: Sprawdzanie poprawności danych, po dodaniu nowego rzędu do formantu ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Porady: kolumny mapy ListObject do danych](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Porady: ListObject wypełnienia kontrolki z danymi](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Instrukcje: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Instrukcje: Zmiana rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Instrukcje: Walidacja danych po dodaniu nowego rzędu do kontrolki ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [Instrukcje: Mapowanie kolumn ListObject do danych](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Instrukcje: Wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
  [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Porady: zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Instrukcje: Zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

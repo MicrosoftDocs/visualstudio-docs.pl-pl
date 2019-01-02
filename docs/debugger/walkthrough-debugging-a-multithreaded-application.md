@@ -1,8 +1,6 @@
 ---
 title: Wyświetl wątki w debugerze | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,44 +23,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946165"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Widok wątków w debugerze programu Visual Studio, korzystając z okna wątków
-W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który debugujesz. Aby uzyskać szczegółowe instrukcje dotyczące sposobu używania **wątków** okna, zobacz [wskazówki: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).
+W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który debugujesz. Aby uzyskać szczegółowe instrukcje dotyczące sposobu używania **wątków** okna, zobacz [instruktażu: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Korzystanie z okna wątków 
  **Wątków** okno zawiera tabelę, w którym każdy wiersz w tym artykule opisano oddzielnego wątku w aplikacji. Domyślnie w tabeli wymieniono wszystkie wątki w swojej aplikacji, ale można filtrować listę, aby wyświetlić wątki, które Cię interesują. Każda kolumna zawiera opis innego typu informacji. Można także ukryć niektóre kolumny. Jeśli wyświetlane są wszystkie kolumny, następujące kolumny są wyświetlane, od lewej do prawej:  
   
-- **Flaga**: W tej kolumnie bez etykiety, można oznaczyć wątek, do którego chcesz zwrócić szczególną uwagę. Aby uzyskać informacje o sposobie Flagowanie wątku, zobacz [jak: Flaga i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md).  
+- **Flaga**: W tej kolumnie bez etykiety można oznaczyć wątek, do którego chcesz zwrócić szczególną uwagę. Aby uzyskać informacje o sposobie Flagowanie wątku, zobacz [jak: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md).  
   
-- **Bieżący wątek**: W tej kolumnie bez etykiety, żółta strzałka wskazuje bieżący wątek. Konspekt Strzałka wskazuje bieżący kontekst debugera dla wątku innej niż bieżąca.
+- **Bieżący wątek**: W tej kolumnie bez etykiety żółta strzałka wskazuje bieżący wątek. Konspekt Strzałka wskazuje bieżący kontekst debugera dla wątku innej niż bieżąca.
   
-- **Identyfikator**: Wyświetla numer identyfikacyjny dla każdego wątku.  
+- **IDENTYFIKATOR**: Wyświetla numer identyfikacyjny dla każdego wątku.  
   
 - **Zarządzany identyfikator**: Wyświetla numery identyfikacyjne zarządzanych dla wątków zarządzanych.  
   
 - **Kategoria**: Wyświetla kategorii wątki wątki interfejsu użytkownika, obsługa wywołania procedury zdalnej lub wątków roboczych. Kategoria specjalne identyfikuje wątku głównego aplikacji.  
   
-- **Nazwa**: identyfikuje każdy wątek przy użyciu nazwy, jeśli taki istnieje, lub jako \<Brak nazwy >.  
+- **Nazwa**: Identyfikuje każdy wątek przy użyciu nazwy, jeśli taki istnieje, lub jako \<Brak nazwy >.  
   
 - **Lokalizacja**: Pokazuje, gdzie wątek jest uruchomiony. Można rozwinąć tej lokalizacji, aby wyświetlić pełny stos wywołania dla wątku.  
   
-- **Priorytet**: Zaawansowane kolumny (domyślnie ukryte) powoduje wyświetlenie priorytet lub pierwszeństwo przypisana przez system do każdego wątku.  
+- **Priorytet**: Zaawansowane (domyślnie ukryte) wyświetlana kolumna priorytet lub pierwszeństwo przypisana przez system do każdego wątku.  
   
-- **Maska koligacji**: Zaawansowane kolumna (domyślnie ukryte), która pokazuje Maska koligacji procesorów dla każdego wątku. W systemie wieloprocesorowym Maska koligacji Określa, które procesory, na których można uruchomić wątku.  
+- **Maska koligacji**: Zaawansowane kolumnę (domyślnie ukryte) przedstawiającą Maska koligacji procesorów dla każdego wątku. W systemie wieloprocesorowym Maska koligacji Określa, które procesory, na których można uruchomić wątku.  
   
-- **Zawieszone liczba**: Zaawansowane kolumny (domyślnie ukryte), która Wyświetla licznik wstrzymany. Liczba ta określa, czy można uruchomić wątku. Aby uzyskać więcej informacji na temat liczby wstrzymania zobacz [Zablokuj i Odblokuj wątki](#freeze-and-thaw-threads).  
+- **Zawieszone liczba**: Zaawansowane (domyślnie ukryte) wyświetlana kolumna licznik wstrzymany. Liczba ta określa, czy można uruchomić wątku. Aby uzyskać więcej informacji na temat liczby wstrzymania zobacz [Zablokuj i Odblokuj wątki](#freeze-and-thaw-threads).  
   
-- **Nazwa procesu**: Zaawansowane kolumny (domyślnie ukryte), która przedstawia proces, do której należy każdego wątku. Dane w tej kolumnie może być przydatne podczas debugowania wielu procesów.  
+- **Nazwa procesu**: Zaawansowane kolumny (domyślnie ukryte), który wyświetla ten proces, do której należy każdego wątku. Dane w tej kolumnie może być przydatne podczas debugowania wielu procesów.  
 
-- **Identyfikator procesu**: IDENTYFIKATORA zaawansowane kolumny (domyślnie ukryte), która przedstawia proces, do którego należy każdego wątku. 
+- **Identyfikator procesu**: Zaawansowane kolumny (domyślnie ukryte), który wyświetla identyfikator procesu, do której należy każdego wątku. 
 
-- **Kwalifikator transportu**: Zaawansowane kolumny (domyślnie ukryte) który unikatowo identyfikuje komputer, do którego jest podłączony debugera. 
+- **Kwalifikator transportu**: Zaawansowane kolumny (domyślnie ukryte) który jednoznacznie identyfikuje maszyny, do którego jest podłączony debugera. 
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Aby wyświetlić okno wątków w trybie przerwania lub w trybie uruchamiania  
   

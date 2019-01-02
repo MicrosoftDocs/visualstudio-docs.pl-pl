@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramHost2::GetHostName | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramHost2::GetHostName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e2ccf73ffdaa905585841eef99f84f59513867
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9853313806cf7fc43e12cd27edb571e1c40deb3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947637"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Pobiera tytuł, przyjazną nazwę lub nazwę pliku procesu hostingu tego programu.  
@@ -28,14 +25,14 @@ Pobiera tytuł, przyjazną nazwę lub nazwę pliku procesu hostingu tego program
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetHostName(   
+HRESULT GetHostName(   
    DWORD dwType,  
    BSTR* pbstrHostName  
 );  
 ```  
   
 ```csharp  
-int GetHostName(   
+int GetHostName(   
    uint dwType,  
    out string pbstrHostName  
 );  

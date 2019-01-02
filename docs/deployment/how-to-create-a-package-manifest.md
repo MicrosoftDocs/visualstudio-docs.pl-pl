@@ -1,8 +1,6 @@
 ---
-title: 'Porady: tworzenie manifestu pakietu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie manifestu pakietu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943476"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Porady: tworzenie manifestu pakietu
+# <a name="how-to-create-a-package-manifest"></a>Instrukcje: Tworzenie manifestu pakietu
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Zestawu funkcji wspólnych w różnych wersjach zlokalizowanych powinny należeć do manifestu produktu.  
   
- Aby uzyskać więcej informacji na temat manifestów pakietu zobacz [porady: tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).  
+ Aby uzyskać więcej informacji na temat manifestów pakietu zobacz [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).  
   
 ## <a name="create-the-package-manifest"></a>Tworzenie manifestu pakietu  
   

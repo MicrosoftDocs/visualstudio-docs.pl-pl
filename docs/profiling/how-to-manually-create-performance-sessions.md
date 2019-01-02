@@ -1,8 +1,6 @@
 ---
-title: 'Porady: ręczne tworzenie sesji wydajności | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Ręczne tworzenie sesji wydajności | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
@@ -16,27 +14,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bf92b01828764652cd75de648b1def01bb722c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c186fdd2c54697b5cda7845547eb33f3fca16ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819682"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Porady: ręczne tworzenie sesji wydajności
-Można ręcznie utworzyć sesję wydajności. Nie trzeba otworzyć projekt w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w tym celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).  
+# <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: Ręczne tworzenie sesji wydajności
+Można ręcznie utworzyć sesję wydajności. Nie należy otworzyć projekt w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w tym celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).  
   
 ### <a name="to-manually-create-a-performance-session"></a>Ręczne tworzenie sesji wydajności  
   
-1.  Na **debugowania** menu wskaż **profilera**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **nowej sesji wydajności**.  
+1.  Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **nowa sesja wydajności**.  
   
-     Sesja wydajności pusty jest dodawany do **Eksplorator wydajności**.  
+     Sesja wydajności puste jest dodawany do **Eksplorator wydajności**.  
   
-2.  Kliknij prawym przyciskiem myszy **elementy docelowe**, a następnie kliknij przycisk **dodać docelowy binarne**.  
+2.  Kliknij prawym przyciskiem myszy **cele**, a następnie kliknij przycisk **Dodaj binarne docelowej**.  
   
-3.  W **dodać docelowy binarne** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**.  
+3.  W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**.  
   
-     Dodawany jest nowych danych binarnych.  
+     Zostanie dodany nowy plik binarny.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   

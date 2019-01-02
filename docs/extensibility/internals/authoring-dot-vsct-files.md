@@ -1,9 +1,6 @@
 ---
 title: Tworzenie. Pliki Vsct | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945265"
 ---
 # <a name="author-vsct-files"></a>Tworzenie plików vsct
 W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, paski narzędzi i inne elementy interfejsu użytkownika do programu Visual Studio zintegrowane środowisko programistyczne (IDE). Wykonaj następujące czynności, po dodaniu elementów interfejsu użytkownika do pakietu Visual Studio (pakietu VSPackage), który nie ma jeszcze *vsct* pliku.  
@@ -26,14 +23,14 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
  Dla nowych projektów, zalecane jest użycie szablonu pakietu programu Visual Studio, ponieważ generuje on *vsct* pliku, który w zależności od ustawień, jest już wymagane elementy dla polecenia menu, okna narzędzi lub edytora niestandardowego . Można to modyfikować *vsct* pliku do wymagań Twojego pakietu VSPackage. Aby uzyskać więcej informacji na temat sposobu modyfikowania *vsct* plików, zobacz przykłady w [rozszerzenia menu i poleceń](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="author-the-file"></a>Tworzenie pliku  
- Autor *vsct* pliku w tych etapów: tworzenie struktury plików i zasobów, Zadeklaruj elementy interfejsu użytkownika, umieść elementy interfejsu użytkownika w środowisku IDE i Dodaj wszelkie specjalne zachowania.  
+ Autor *vsct* pliku w tych etapów: Tworzenie struktury plików i zasobów, Zadeklaruj elementy interfejsu użytkownika, umieść elementy interfejsu użytkownika w środowisku IDE i Dodaj wszelkie specjalne zachowania.  
   
 ### <a name="file-structure"></a>Struktura plików  
  Podstawowa struktura *vsct* plik jest [CommandTable](../../extensibility/commandtable-element.md) element główny, który zawiera [polecenia](../../extensibility/commands-element.md) elementu i [symbole](../../extensibility/symbols-element.md) elementu.  
   
 #### <a name="to-create-the-file-structure"></a>Tworzenie struktury pliku  
   
-1.  Dodaj *vsct* plik do projektu, wykonując kroki opisane w [porady: Tworzenie pliku vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Dodaj *vsct* plik do projektu, wykonując kroki opisane w [jak: Tworzenie pliku vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2. Dodaj wymagane przestrzenie nazw do `CommandTable` elementu, jak pokazano w poniższym przykładzie:  
   
@@ -54,9 +51,9 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
   
 1. W górnej części `CommandTable` elementu, dodaj je `Extern` elementu dla każdego pliku zewnętrznego, odwołania i ustawiania `href` atrybut nazwy pliku. Możesz odwołać się następujące pliki nagłówków, aby uzyskać dostęp do zasobów programu Visual Studio:  
   
-   -   *Stdidcmd.h*: definiuje identyfikatorów dla wszystkich poleceń udostępnianych przez program Visual Studio.  
+   -   *Stdidcmd.h*: Definiuje identyfikatorów dla wszystkich poleceń udostępnianych przez program Visual Studio.  
   
-   -   *Vsshlids.h*: zawiera identyfikatory poleceń menu programu Visual Studio.  
+   -   *Vsshlids.h*: Zawiera identyfikatory poleceń menu programu Visual Studio.  
   
 2. Jeśli pakiet wymaga dowolne polecenia, które zostały zdefiniowane przez program Visual Studio lub innych pakietów, należy dodać `UsedCommands` elementu po `Commands` elementu. Wypełnij ten element z [UsedCommand](../../extensibility/usedcommand-element.md) elementu dla każdego polecenia, oznacza to wywołanie nie jest częścią pakietu. Ustaw `guid` i `id` atrybuty `UsedCommand` elementy do wartości Identyfikator GUID i identyfikator polecenia do wywołania. 
 

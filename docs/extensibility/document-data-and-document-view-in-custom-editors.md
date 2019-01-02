@@ -1,9 +1,6 @@
 ---
 title: Dane dokumentu i dokument widok w edytorach niestandardowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818878"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i Widok dokumentu w edytorach niestandardowych
 Niestandardowy edytor, który składa się z dwóch części: obiekt danych dokumentu i obiekt widoku dokumentu. Jak sugerują nazwy dokumentu obiekt danych reprezentuje dane tekstowe, które mają być wyświetlane. Podobnie obiekt widoku dokumentu (lub "view") przedstawia jednego lub kilku okien, w której chcesz wyświetlić obiekt danych dokumentu.  
@@ -42,7 +39,7 @@ Niestandardowy edytor, który składa się z dwóch części: obiekt danych doku
 ## <a name="see-also"></a>Zobacz także  
  [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md)   
  [Uproszczone osadzanie](../extensibility/simplified-embedding.md)   
- [Porady: dołączanie widoków do danych dokumentu](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Instrukcje: Dołączanie widoków do danych dokumentu](../extensibility/how-to-attach-views-to-document-data.md)   
  [Zarządzanie właścicielem blokady dokumentu](../extensibility/document-lock-holder-management.md)   
  [Widoki jedną i wieloma kartami](../extensibility/single-and-multi-tab-views.md)   
  [Zapisywanie standardowego dokumentu](../extensibility/internals/saving-a-standard-document.md)   

@@ -1,8 +1,7 @@
 ---
-title: 'Porady: tworzenie cieniowania tekstury podstawowej'
+title: 'Instrukcje: Tworzenie cieniowania tekstury podstawowej'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 85de6bcaa4b3b62c9a3ad03464d9b95cb0134a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946071"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Porady: tworzenie cieniowania tekstury podstawowej
+# <a name="how-to-create-a-basic-texture-shader"></a>Instrukcje: Tworzenie cieniowania tekstury podstawowej
 
 W tym artykule pokazano, jak używać Shader Designer i język programu do cieniowania wykres kierowany (DGSL) do tworzenia modułu cieniującego jednego tekstury. Ten program do cieniowania Ustawia kolor końcowy bezpośrednio RGB i wartości alfa, które są próbkowane z tekstury.
 
@@ -54,7 +53,7 @@ Niektórych kształtów udostępniać lepsze wersje zapoznawcze niektórych prog
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Edytor obrazów](../designers/image-editor.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

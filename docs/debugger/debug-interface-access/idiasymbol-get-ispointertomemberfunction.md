@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isPointerToMemberFunction | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d241fdc15af586dc218e9667e02c45dafda0e356
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c9e712c0b48fc0ae0815dde66b4ae21970ee946
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818812"
 ---
 # <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
 Określa, czy ten symbol jest wskaźnikiem do funkcji członkowskiej.  
@@ -31,10 +29,10 @@ HRESULT get_isPointerToMemberFunction(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Wskaźnik do `BOOL` określający, czy ten symbol jest wskaźnikiem do funkcji członkowskiej.  
+ [out] Wskaźnik do `BOOL` określająca, czy ten symbol jest wskaźnikiem do funkcji członkowskiej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

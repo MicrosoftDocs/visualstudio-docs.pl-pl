@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -22,12 +21,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 028e323ce928313148d0d58d2d01e0978125691c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b0554d3ac1ea0de9f3f7143c5a1d9f2221a52b87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820418"
 ---
 # <a name="view-dom-event-listeners"></a>Podgląd odbiorników zdarzeń DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -3,7 +3,6 @@ title: Instalowanie narzędzia Visual Studio Build Tools do kontenera
 titleSuffix: ''
 description: Dowiedz się, jak zainstalować narzędzia Visual Studio Build Tools w kontenerze Windows do obsługi ciągłej integracji i przepływów pracy ciągłego dostarczania (CI/CD).
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 3e98ff7f21ab7620092f2b535f17c55ab4d584b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946636"
 ---
 # <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
 

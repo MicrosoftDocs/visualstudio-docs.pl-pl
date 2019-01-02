@@ -1,12 +1,11 @@
 ---
-title: 'CA2100: Należy przejrzeć zapytania SQL pod kątem luk w zabezpieczeniach | Dokumentacja firmy Microsoft'
+title: 'CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -21,14 +20,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b92d09ac03cb488ec92cf034cdcbc1d322e4ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954190"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Należy przejrzeć zapytania SQL w poszukiwaniu luk w zabezpieczeniach
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -93,6 +92,3 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 ## <a name="see-also"></a>Zobacz też
  [Przegląd zabezpieczeń](http://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
-
-
-

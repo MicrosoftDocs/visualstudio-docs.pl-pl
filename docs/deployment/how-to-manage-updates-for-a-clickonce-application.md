@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Zarządzanie aktualizacji dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945902"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Porady: Zarządzanie aktualizacji dla aplikacji ClickOnce
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje można sprawdzić dostępność aktualizacji automatycznie lub programowo. Jako deweloper masz dużą elastyczność określania moment i sposób aktualizacji są sprawdzane, czy aktualizacje są obowiązkowe i którym aplikacja ma sprawdzać dostępność aktualizacji.  
   
  Można skonfigurować aplikację, aby sprawdzał dostępność aktualizacji, automatycznie przed uruchomieniem aplikacji lub w ustalonych odstępach czasu, po uruchomieniu aplikacji. Ponadto można określić minimalnej wymaganej wersji; oznacza to jeśli jego wersja jest starsza niż wymagana wersja jest instalowana aktualizacja.  
@@ -103,7 +101,7 @@ ms.locfileid: "44283655"
   
 5.  W **zaktualizować lokalizację** wprowadź lokalizacji aktualizacji za pomocą w pełni kwalifikowanym adresem URL, przy użyciu formatu *http://Hostname/ApplicationName*, lub ścieżkę UNC w formacie  *\\\Server\ ApplicationName*, lub kliknij przycisk **Przeglądaj** przycisku Przeglądaj w poszukiwaniu lokalizacji aktualizacji. Lokalizacja aktualizacji jest, gdzie aplikacja będzie szukać zaktualizowaną wersję samego.  
   
-6.  Utwórz przycisk, element menu lub innego elementu interfejsu użytkownika w formularzu Windows, która będzie wybierać użytkowników, aby sprawdzał dostępność aktualizacji. Z tego elementu procedura obsługi zdarzeń Wywołaj metodę, aby wyszukać i zainstalować aktualizacje. Przykładowy kod języka Visual Basic i Visual C# można znaleźć metody w [porady: sprawdzanie aktualizacji aplikacji, programowo przy użyciu wdrażania interfejsu API ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Utwórz przycisk, element menu lub innego elementu interfejsu użytkownika w formularzu Windows, która będzie wybierać użytkowników, aby sprawdzał dostępność aktualizacji. Z tego elementu procedura obsługi zdarzeń Wywołaj metodę, aby wyszukać i zainstalować aktualizacje. Można znaleźć przykład Visual Basic i Visual C# kod dla metody w [jak: Sprawdzanie aktualizacji aplikacji, programowo przy użyciu wdrażania interfejsu API ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Tworzenie aplikacji.  
   
@@ -112,5 +110,5 @@ ms.locfileid: "44283655"
  [Okno dialogowe aktualizacji aplikacji](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publikowanie w aplikacjach ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Porady: sprawdzanie aktualizacji aplikacji, programowo przy użyciu wdrażania interfejsu API ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Instrukcje: Sprawdzanie aktualizacji aplikacji, programowo przy użyciu wdrażania interfejsu API ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

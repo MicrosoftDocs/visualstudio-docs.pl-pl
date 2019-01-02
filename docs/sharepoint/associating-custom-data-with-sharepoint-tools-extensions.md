@@ -1,9 +1,6 @@
 ---
 title: Kojarzenie danych niestandardowych z programem SharePoint rozszerzeń narzędzi | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4e3cba7d4b05de4d32f31bd39c0e462174695fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951043"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
   Możesz dodać niestandardowe dane do niektórych obiektów w rozszerzenia narzędzi programu SharePoint. Jest to przydatne, gdy masz dane w jednej części Twojego rozszerzenia, który chcesz uzyskać dostęp później z innym kodem Twojego rozszerzenia. Zamiast wykonywania niestandardowych sposób przechowywania i dostępu do danych, można skojarzyć dane z obiektu w rozszerzeniu i następnie później pobrać dane z tego samego obiektu.  
@@ -77,16 +74,14 @@ ms.locfileid: "49939504"
   
 - <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Ta metoda zwraca dane obiektu, jeśli kończy pracę, lub **null** Jeśli nie istnieje. Tej metody można użyć tylko w celu pobrania wystąpienia typu referencyjnego.  
   
-  Poniższy przykład kodu Określa, czy obiekt danych jest już skojarzony z elementem projektu. Jeśli obiekt danych nie jest już skojarzona z elementem projektu, a następnie ten kod dodaje obiekt do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości elementu projektu. Aby wyświetlić ten przykład w kontekście większego przykładu, zobacz [porady: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+  Poniższy przykład kodu Określa, czy obiekt danych jest już skojarzony z elementem projektu. Jeśli obiekt danych nie jest już skojarzona z elementem projektu, a następnie ten kod dodaje obiekt do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości elementu projektu. Aby wyświetlić ten przykład w kontekście większego przykładu, zobacz [jak: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>Zobacz także
  [Koncepcje programowania oraz funkcje dla rozszerzeń narzędzi SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Wskazówki: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Porady: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
-   
- 
+ [Instrukcje: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Instrukcje: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)

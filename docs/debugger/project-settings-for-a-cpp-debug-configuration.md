@@ -2,7 +2,6 @@
 title: Ustawienia projektu dla konfiguracji debugowania języka C++
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957913"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w języku C++
-Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual C++ lub C w **stron właściwości** okno dialogowe, zgodnie z opisem w [porady: zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.  
+Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual C++ lub C w **stron właściwości** okno dialogowe, zgodnie z opisem w [jak: Zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.  
   
 > [!NOTE]
 >  Ustawienia projektu debugowania w **właściwości konfiguracji/debugowanie** kategorii różnią się dla aplikacji platformy uniwersalnej systemu Windows i składników napisanych w języku C++. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
@@ -143,15 +142,15 @@ Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual
 | **Nazwa serwera zdalnego** (debuger zdalny Windows) | Określa nazwę komputera (innego niż Twój), na którym chcesz debugować aplikację.<br /><br /> Makro kompilacji RemoteMachine jest ustawiona na wartość tej właściwości; Aby uzyskać więcej informacji, zobacz [makra dla kompilacji polecenia i właściwości](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Połączenie** (debuger zdalny Windows) | Umożliwia przełączanie między typami połączeń standardowych i nieuwierzytelnionymi dla debugowania zdalnego. Określ nazwę komputera zdalnego, w **nazwa serwera zdalnego** pole. Typy połączeń obejmują następujące czynności:<br /><br /> -   **Zdalny z uwierzytelnianiem Windows**<br />-   **Zdalny bez bez uwierzytelnienia**<br /><br /> **Uwaga** zdalne debugowanie bez uwierzytelniania może opuścić narażony na naruszenia zabezpieczeń komputera zdalnego. Tryb uwierzytelniania Windows jest bezpieczniejszy.<br /><br /> Aby uzyskać więcej informacji, zobacz [zdalnego debugowania konfiguracji](../debugger/remote-debugging.md). |
 | **Adres URL HTTP** (sieci Web usługi debugera i debuger przeglądarki sieci Web) | Określa adres URL, w którym znajduje się projekt, który debugujesz. |
-| **Typ debugera** | Określa typ debugera, który ma być używany: **tylko natywny**, **tylko zarządzane**, **tylko GPU**, **mieszany**, **automatycznie**(ustawienie domyślne) lub **skryptu**.<br /><br /> -   **Tylko w trybie macierzystym** jest dla niezarządzanego kodu C++.<br />-   **Tylko zarządzany** jest dla kodu, który jest uruchamiany w ramach środowiska uruchomieniowego języka wspólnego (kod zarządzany).<br />-   **Mieszane** wywołuje debugery dla obu kodu zarządzanego i niezarządzanego.<br />-   **Automatyczne** Określa typ debugera na podstawie kompilatora i informacji EXE.<br />-   **Skrypt** wywołuje debugera skryptów.<br />-   **Tylko GPU** jest dla kodu C++ AMP, który jest uruchamiany na urządzeniu GPU lub na rasteryzatorze referencyjnym. Zobacz [kodu debugowania GPU](../debugger/debugging-gpu-code.md). |
+| **Typ debugera** | Określa typ debugera, który ma być używany: **Tylko w trybie macierzystym**, **tylko zarządzane**, **tylko GPU**, **mieszany**, **automatycznie** (ustawienie domyślne) lub **skryptu**.<br /><br /> -   **Tylko w trybie macierzystym** jest dla niezarządzanego kodu C++.<br />-   **Tylko zarządzany** jest dla kodu, który jest uruchamiany w ramach środowiska uruchomieniowego języka wspólnego (kod zarządzany).<br />-   **Mieszane** wywołuje debugery dla obu kodu zarządzanego i niezarządzanego.<br />-   **Automatyczne** Określa typ debugera na podstawie kompilatora i informacji EXE.<br />-   **Skrypt** wywołuje debugera skryptów.<br />-   **Tylko GPU** jest dla kodu C++ AMP, który jest uruchamiany na urządzeniu GPU lub na rasteryzatorze referencyjnym. Zobacz [kodu debugowania GPU](../debugger/debugging-gpu-code.md). |
 | **Środowisko** (debuger Windows lokalnego i debugera zdalnego Windows) | Określa zmienne środowiskowe dla debugowanego programu. Użyj składni zmiennych standardowego środowiska (na przykład `PATH="%SystemRoot%\..."`). Te zmienne zastępują środowisko systemu lub są scalane w środowisku systemu, w zależności od **Scal środowisko** ustawienie. Po kliknięciu lewym przyciskiem myszy w kolumnie ustawień "Edytuj" pojawia się. Wybierz łącze, aby edytować zmienne środowiskowe. |
 | **Scal środowisko** (debuger Windows lokalnego) | Określa, czy zmienne, które są określone w **środowiska** pola zostaną scalone ze środowiskiem, która jest zdefiniowana przez system operacyjny. Ustawienie domyślne to Yes. |
 | **Debugowanie SQL** (wszystko oprócz debugera klastra MPI) | Włącza debugowanie procedur SQL z Twojej [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikacji. Domyślne ustawienie to nie. |
 | **Typ akceleratora debugera** (tylko debugowanie GPU) | Określa urządzenie GPU używane do debugowania. Instalowanie sterowników urządzeń w przypadku kompatybilnych urządzeń GPU spowoduje dodanie dodatkowych opcji. Ustawieniem domyślnym jest **GPU — Emulator programowy**. |
 | **Domyślne zachowanie punktu przerwania GPU** (tylko debugowanie GPU) | Określa, czy dla każdego wątku w otoce SIMD powinno być generowane zdarzenie punktu przerwania. Ustawieniem domyślnym jest generowanie zdarzenia przerwania tylko raz na wiązkę. |
 | **Akcelerator domyślny amp** | Określa domyślny akcelerator AMP podczas debugowania kodu GPU. Wybierz **akcelerator oprogramowania WARP** Zbadaj, czy problem jest spowodowany przez sprzęt lub sterownik zamiast kodu. |
-| **Katalog wdrożenia** (debuger zdalny Windows) | Określa ścieżkę na komputerze zdalnym, w której projekt wyjściowy będzie skopiowany przed uruchomieniem. Ścieżka może być udziałem sieciowym na komputerze zdalnym lub może być ścieżką do folderu na komputerze zdalnym. Ustawieniem domyślnym jest pusty, co oznacza, że dane wyjściowe projektu nie jest kopiowany do udziału sieciowego. Aby włączyć wdrażanie plików, należy również wybrać **Wdróż** pole wyboru w oknie dialogowym programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md). |
-| **Dodatkowe pliki do wdrożenia** (debuger zdalny Windows) | Jeśli ustawiono właściwość katalogu wdrażania, to rozdzielana średnikami lista dodatkowych plików do skopiowania do katalogu wdrażania. Ustawieniem domyślnym jest pusty, oznacza to, że żadne dodatkowe pliki są kopiowane do katalogu wdrażania. Aby włączyć wdrażanie plików, należy również wybrać **Wdróż** pole wyboru w oknie dialogowym programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md). |
+| **Katalog wdrożenia** (debuger zdalny Windows) | Określa ścieżkę na komputerze zdalnym, w której projekt wyjściowy będzie skopiowany przed uruchomieniem. Ścieżka może być udziałem sieciowym na komputerze zdalnym lub może być ścieżką do folderu na komputerze zdalnym. Ustawieniem domyślnym jest pusty, co oznacza, że dane wyjściowe projektu nie jest kopiowany do udziału sieciowego. Aby włączyć wdrażanie plików, należy również wybrać **Wdróż** pole wyboru w oknie dialogowym programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md). |
+| **Dodatkowe pliki do wdrożenia** (debuger zdalny Windows) | Jeśli ustawiono właściwość katalogu wdrażania, to rozdzielana średnikami lista dodatkowych plików do skopiowania do katalogu wdrażania. Ustawieniem domyślnym jest pusty, oznacza to, że żadne dodatkowe pliki są kopiowane do katalogu wdrażania. Aby włączyć wdrażanie plików, należy również wybrać **Wdróż** pole wyboru w oknie dialogowym programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md). |
 | **Wdrażanie bibliotek środowiska uruchomieniowego Visual C++ Debug** (debuger zdalny Windows) | Jeśli ustawiono właściwość katalogu wdrażania, określa czy biblioteki wykonawcze debugowania Visual C++ dla bieżącej platformy powinny zostać skopiowane do udziału sieciowego. Ustawienie domyślne to Yes. |
   
 ## <a name="cc-folder-general-category"></a>Folder C/C++ (Kategoria Ogólne)  

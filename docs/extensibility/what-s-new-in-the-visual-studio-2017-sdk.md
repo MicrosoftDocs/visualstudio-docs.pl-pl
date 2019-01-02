@@ -1,9 +1,6 @@
 ---
 title: Co&#39;s Nowość w wersji programu Visual Studio 2017 SDK | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952212"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Co&#39;s Nowość w wersji programu Visual Studio 2017 SDK
 
@@ -41,7 +38,7 @@ Aby dowiedzieć się więcej o tych zmianach, zobacz następujące tematy:
 
 ## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
-Aby dowiedzieć się, jak zaktualizować ich manifesty VSIX i Twoich projektów rozszerzalności do programu Visual Studio 2017, zobacz [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Aby dowiedzieć się, jak zaktualizować ich manifesty VSIX i Twoich projektów rozszerzalności do programu Visual Studio 2017, zobacz [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="custom-project-and-item-templates"></a>Niestandardowych szablonów projektów i elementów
 
@@ -49,4 +46,4 @@ Począwszy od programu Visual Studio 2017, skanowanie w poszukiwaniu szablonów 
 
 ## <a name="updated-extension-performance-guidelines"></a>Wytyczne dotyczące wydajności zaktualizowane rozszerzenie
 
-Pojawiły się nowe [porady: diagnozowanie wydajności rozszerzenia](how-to-diagnose-extension-performance.md) artykuł w obszarze [Zarządzanie pakietami VSPackage](managing-vspackages.md) i pokazuje, jak wykrywać i analizowanie wpływu rozszerzeń w programie Visual Studio uruchamiania i ładowania rozwiązań razy.
+Pojawiły się nowe [jak: Diagnozowanie wydajności rozszerzenia](how-to-diagnose-extension-performance.md) artykuł w obszarze [Zarządzanie pakietami VSPackage](managing-vspackages.md) i pokazuje, jak wykrywać i analizowanie wpływu rozszerzeń w programie Visual Studio uruchamiania i ładowania rozwiązań razy.

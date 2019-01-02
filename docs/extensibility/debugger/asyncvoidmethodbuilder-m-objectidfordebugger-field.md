@@ -1,9 +1,6 @@
 ---
 title: Pole AsyncVoidMethodBuilder.m_objectIdForDebugger | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_objectIdForDebugger field, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e9b0fc96eca5582be01745f4fe934cfe812bc65
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d24affabaf22f44e56b7e3c818b302ea6bd3b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944421"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Pole AsyncVoidMethodBuilder.m_objectIdForDebugger
 Reprezentuje obiekt opóźnieniem zainicjowane, używany przez debuger do jednoznacznego identyfikowania tego konstruktora.  

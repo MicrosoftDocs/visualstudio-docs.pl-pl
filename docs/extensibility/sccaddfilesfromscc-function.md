@@ -1,9 +1,6 @@
 ---
 title: Funkcja SccAddFilesFromSCC | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccAddFilesFromSCC
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b827e1f7e26fb98e9d49de4e9fe2388e46ee07cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b650810ea0c3a7df32d6a058947d83fb8842b7f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818968"
 ---
 # <a name="sccaddfilesfromscc-function"></a>Funkcja SccAddFilesFromSCC
 Ta funkcja dodaje listę plików z kontroli źródła do aktualnie otwartym projekcie.  
@@ -77,7 +74,7 @@ SCCRTN SccAddFilesFromSCC(
 |SCC_E_PROJNOTOPEN|Projekt nie jest otwarty.|  
 |SCC_E_OPNOTPERFORMED|Połączenie nie jest w tym samym projekcie, określony przez `lpAuxProjPath.`|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do aktualizacji bazy danych.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił nieznany błąd.|  
+|SCC_E_NONSPECIFICERROR|Nieznany błąd.|  
 |SCC_I_RELOADFILE|Pliku lub projektu wymaga ponownego załadowania.|  
   
 ## <a name="see-also"></a>Zobacz także  

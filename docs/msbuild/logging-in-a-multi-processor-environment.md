@@ -1,8 +1,6 @@
 ---
 title: Logowanie w środowisku wielu procesorów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, multi-processor logging
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: aad9079322dcc561922e37ffa8b56f417d9b932b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950056"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Logowanie w środowisku wielu procesorów
 Możliwość używania wielu procesorów MSBuild może znacznie skrócić czas tworzenia projektu, ale również dodaje złożoności do rejestrowania. W środowisku jednoprocesorowym rejestratora może obsługiwać przychodzących zdarzenia, wiadomości, ostrzeżenia i błędy w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzenia z kilku źródeł mogą pojawić się równocześnie lub poza sekwencją. MSBuild zapewnia nowy Rejestrator procesorów uwzględniających oraz umożliwia tworzenie niestandardowych "przekazywania rejestratorów."  

@@ -1,9 +1,6 @@
 ---
 title: Odwołanie do zestawu SDK programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, reference
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 8281a6d367ae4d6b51576160479ba492ebdf805a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943344"
 ---
 # <a name="visual-studio-sdk-reference"></a>Odwołanie w Visual Studio SDK
 Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, pokrewne obszary nazw i innych obszarach zainteresowań dla deweloperów, którzy korzystają z zestawu SDK programu Visual Studio.  

@@ -1,9 +1,6 @@
 ---
 title: IDebugEvent2::GetAttributes | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEvent2::GetAttributes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 515775a064d1e260d9eb028c6e1b6020b7d642cd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d523a055f27961fe0d7676ba4f8e914b3d0f97be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935305"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950163"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 Pobiera atrybuty dla tego zdarzenia debugowania.  
@@ -28,13 +25,13 @@ Pobiera atrybuty dla tego zdarzenia debugowania.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetAttribute(   
+HRESULT GetAttribute(   
    DWORD* pdwAttrib  
 );  
 ```  
   
 ```csharp  
-int GetAttribute(   
+int GetAttribute(   
    out uint pdwAttrib  
 );  
 ```  

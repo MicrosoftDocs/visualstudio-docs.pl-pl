@@ -1,8 +1,6 @@
 ---
 title: '&lt;punkt wejścia&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56996f83f0ac8d9e7b2bce81ab7e2c8e13faee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e37021c6c8492b0c882a84cbb88fe1cd9b5458e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950267"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punkt wejścia&gt; — element (aplikacja ClickOnce)
 Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana na komputerze klienckim.  
@@ -90,12 +88,12 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../d
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
 
- Aplikacja, która zawiera customUX element należy podać niestandardowego Instalatora, które używa <xref:System.Deployment.Application.InPlaceHostingManager> klasy w celu wykonania instalacji operacji. Nie można zainstalować aplikacji przy użyciu tego elementu przez dwukrotne kliknięcie jej manifestu lub setup.exe wymagań wstępnych programu inicjującego. Można utworzyć niestandardowego Instalatora, elementy menu Start, skróty i wpisy apletu Dodaj lub usuń programy. Jeśli niestandardowego Instalatora nie powoduje utworzenia wpisu Dodaj lub usuń programy, identyfikator subskrypcji, dostarczone przez musi zostać zapisana <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> właściwość i umożliwiają użytkownikowi Odinstaluj tę aplikację później, przez wywołanie metody <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> metody. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
+ Aplikacja, która zawiera customUX element należy podać niestandardowego Instalatora, które używa <xref:System.Deployment.Application.InPlaceHostingManager> klasy w celu wykonania instalacji operacji. Nie można zainstalować aplikacji przy użyciu tego elementu przez dwukrotne kliknięcie jej manifestu lub setup.exe wymagań wstępnych programu inicjującego. Można utworzyć niestandardowego Instalatora, elementy menu Start, skróty i wpisy apletu Dodaj lub usuń programy. Jeśli niestandardowego Instalatora nie powoduje utworzenia wpisu Dodaj lub usuń programy, identyfikator subskrypcji, dostarczone przez musi zostać zapisana <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> właściwość i umożliwiają użytkownikowi Odinstaluj tę aplikację później, przez wywołanie metody <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> metody. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
 
 ## <a name="remarks"></a>Uwagi  
  Ten element określa zestaw i punktu wejścia dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
 
- Nie można użyć `commandLine` do przekazania parametrów do aplikacji w czasie wykonywania. Dostępne parametry ciągu zapytania dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia z poziomu aplikacji <xref:System.AppDomain>. Aby uzyskać więcej informacji, zobacz [porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Nie można użyć `commandLine` do przekazania parametrów do aplikacji w czasie wykonywania. Dostępne parametry ciągu zapytania dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia z poziomu aplikacji <xref:System.AppDomain>. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
 
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie kodu pokazano `entryPoint` elementu w manifeście aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md) tematu.  

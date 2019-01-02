@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Implementowanie zagnieżdżonych projektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Implementowanie zagnieżdżonych projektów | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945812"
 ---
-# <a name="how-to-implement-nested-projects"></a>Porady: Implementowanie zagnieżdżonych projektów
+# <a name="how-to-implement-nested-projects"></a>Instrukcje: Implementowanie zagnieżdżonych projektów
 
 Po utworzeniu typu projektu zagnieżdżonego, istnieje kilka dodatkowych kroków, które muszą zostać zaimplementowane. Projekt nadrzędny przejmuje niektóre z tych samych obowiązków, które rozwiązanie ma jego projektów zagnieżdżonych (elementów podrzędnych). Projekt nadrzędny jest kontenerem projektów, które są podobne do rozwiązania. W szczególności istnieje kilka zdarzeń, które muszą zostać wywołane przez rozwiązania i projekty nadrzędnego do tworzenia hierarchii zagnieżdżonych projektów. Zdarzenia te są opisane w ramach następującego procesu tworzenia zagnieżdżonych projektów.
 

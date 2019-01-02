@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane używanie okien dialogowych programu Word w trybie ukrytym'
-ms.custom: ''
+title: 'Instrukcje: Programowe używanie okien dialogowych programu Word w trybie ukrytym'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819630"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Porady: programowane używanie okien dialogowych programu Word w trybie ukrytym
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Instrukcje: Programowe używanie okien dialogowych programu Word w trybie ukrytym
   Złożonych operacji za pomocą jednego wywołania metody można wykonywać za pomocą wbudowanych okien dialogowych w programie Microsoft Office Word bez wyświetlania ich do użytkownika. Można to zrobić za pomocą <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metody <xref:Microsoft.Office.Interop.Word.Dialog> obiektu bez wywoływania <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> metody.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35677228"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: programowane używanie wbudowanych okien dialogowych w programie Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Instrukcje: Programowe używanie wbudowanych okien dialogowych w programie Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)   
  [Późne powiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md)   
  [Odbicie (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Odbicie (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

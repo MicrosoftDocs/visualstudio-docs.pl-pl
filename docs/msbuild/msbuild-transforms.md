@@ -1,8 +1,6 @@
 ---
 title: Przekształcenia w programie MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a3ff7cbd2025a909ab0c5fb044bb61b24388ff
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f2f4dfeb57ab26e985625bd1b62154b9e6924eb8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942882"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia w programie MSBuild
 Transformacja jest konwersją jeden do jednego jeden element listy do innej. Oprócz włączenia projektu można przekonwertować listy elementów, przekształcenia umożliwia docelowego w celu identyfikowania bezpośrednie mapowanie między ich dane wejściowe i wyjściowe. W tym temacie opisano przekształceń i w jaki sposób [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] są one używane do kompilowania projektów wydajniej.  
@@ -50,7 +48,7 @@ Na przykład, jeśli elementy na liście elementu @(RESXFile) *Form1.resx*, *For
 ## <a name="dependency-analysis"></a>Analiza zależności  
  Przekształcenia gwarantuje mapowanie jeden do jednego między listy elementów przekształcone i oryginalnej listy elementów. W związku z tym, jeśli obiekt docelowy tworzy dane wyjściowe, które są przekształcenia danych wejściowych, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] można analizować sygnatury czasowe z wejściami i wyjściami i zdecyduj, czy chcesz pominąć, tworzenie lub częściowo odbudować obiektu docelowego.  
   
- W [zadanie kopiowania](../msbuild/copy-task.md) w poniższym przykładzie każdy plik w `BuiltAssemblies` listy elementów mapy do pliku w folderze docelowym zadania określone za pomocą przekształcenia w `Outputs` atrybutu. Jeśli plik w `BuiltAssemblies` elementu Lista zmian `Copy` zadanie jest uruchamiane tylko w przypadku zmienionego pliku, a wszystkie inne pliki są pomijane. Aby uzyskać więcej informacji na temat analizy zależności oraz jak użyć przekształceń, zobacz [porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md).  
+ W [zadanie kopiowania](../msbuild/copy-task.md) w poniższym przykładzie każdy plik w `BuiltAssemblies` listy elementów mapy do pliku w folderze docelowym zadania określone za pomocą przekształcenia w `Outputs` atrybutu. Jeśli plik w `BuiltAssemblies` elementu Lista zmian `Copy` zadanie jest uruchamiane tylko w przypadku zmienionego pliku, a wszystkie inne pliki są pomijane. Aby uzyskać więcej informacji na temat analizy zależności oraz jak użyć przekształceń, zobacz [jak: Kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md).  
   
 ```xml  
 <Target Name="CopyOutputs"  
@@ -107,4 +105,4 @@ extension: .xsd
 ## <a name="see-also"></a>Zobacz także  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
- [Porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md)
+ [Instrukcje: Kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md)

@@ -1,9 +1,6 @@
 ---
 title: Pisanie kodu w rozwiązaniach pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -36,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c26607d918c4fce457222337a287014943b9a0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942976"
 ---
 # <a name="write-code-in-office-solutions"></a>Pisanie kodu w rozwiązaniach pakietu Office
   Istnieją pewne aspekty pisanie kodu w projektach pakietu Office, które różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic odnoszą się do sposobu modele obiektów pakietu Office są widoczne dla kodu zarządzanego. Inne różnice są związane z projekt projektów Office.

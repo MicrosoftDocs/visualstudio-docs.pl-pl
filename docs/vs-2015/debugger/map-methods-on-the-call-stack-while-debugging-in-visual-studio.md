@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -35,12 +34,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 8088996a0111ac6f8c79e3fe6434eafef01b625a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 48cf2bd5e2e94b40f5473f75250b417da96bf3b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951399"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +54,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 - Kod, który można debugować, taki jak Visual C# .NET, Visual Basic .NET, C++, JavaScript lub X ++
 
-  Zobacz: [film wideo: debugowanie wizualne za pomocą integracji debugera mapy kodu (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [Mapuj stos wywołań](#MapStack) • [robienie notatek dotyczących kodu](#MakeNotes) • [aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap) • [Dodawanie kodu pokrewnego do mapy](#AddRelatedCode) • [znajdowanie błędów za pomocą mapy](#FindBugs) • [pytań i odpowiedzi](#QA)
+  Zobacz: [Wideo: Wizualne debugowanie dzięki integracji debugera mapy kodu (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [Mapuj stos wywołań](#MapStack) • [robienie notatek dotyczących kodu](#MakeNotes) • [aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap)• [Dodawanie kodu pokrewnego do mapy](#AddRelatedCode) • [znajdowanie błędów za pomocą mapy](#FindBugs) • [pytań i odpowiedzi](#QA)
 
   Szczegóły poleceń i akcji, można użyć podczas pracy z mapami kodu można znaleźć [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -63,7 +62,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 1.  Rozpocznij debugowanie. (Klawiatura: **F5**)
 
-2.  Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **Ctrl** + **Shift** + **`**)
+2.  Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **CTRL** + **Shift** + **`**)
 
      ![Wybierz mapę kodu, aby rozpocząć mapowanie stosu wywołań](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -136,7 +135,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
    Zmiana na mapie w żaden sposób nie wpływa na kod. Możesz dowolnie zmienić nazwę, przenieść lub usunąć elementy na mapie.
 
-- **Co oznacza komunikat: "diagram może opierać się na starszej wersji kodu"?**
+- **Co oznacza komunikat: "Diagram może opierać się na starszej wersji kodu"?**
 
    Kod mógł ulec zmianie po ostatniej aktualizacji mapy. Na przykład wywołanie mapy może już nie istnieć w kodzie. Zamknij komunikat, a następnie spróbuj odbudować rozwiązanie przed ponowną aktualizacją mapy.
 
@@ -168,7 +167,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
    ![Co oznaczają ikony na mapie kodu stosu wywołań ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")
 
-  Zobacz: [Mapuj stos wywołań](#MapStack) • [robienie notatek dotyczących kodu](#MakeNotes) • [aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap) • [Dodawanie kodu pokrewnego do mapy](#AddRelatedCode) • [ Znajdowanie błędów za pomocą mapy](#FindBugs)
+  Zobacz: [Mapuj stos wywołań](#MapStack) • [robienie notatek dotyczących kodu](#MakeNotes) • [aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap) • [Dodawanie kodu pokrewnego do mapy](#AddRelatedCode) • [znajdowania usterek za pomocą mapy](#FindBugs)
 
 ## <a name="see-also"></a>Zobacz też
  [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md) [mapy Użyj kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md) [Znajdź potencjalne problemy przy użyciu kodu mapy analizatory](../modeling/find-potential-problems-using-code-map-analyzers.md) [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md)

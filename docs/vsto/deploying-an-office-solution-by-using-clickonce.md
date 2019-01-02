@@ -1,9 +1,6 @@
 ---
 title: Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31e0ccb271c985a4c521762883fead2c0a1d8775
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946844"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Można wdrożyć rozwiązania pakietu Office w mniejszej liczby czynności, jeśli użycie technologii ClickOnce. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym, należy rozważyć użycie Instalatora Windows (*.msi*) Jeśli więcej niż jeden użytkownik uruchomi swoje rozwiązanie na tym samym komputerze.

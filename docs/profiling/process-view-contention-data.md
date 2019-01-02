@@ -1,8 +1,6 @@
 ---
-title: Widok procesu — dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Widok procesu — dane rywalizacji o zasoby | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,34 +10,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943892"
 ---
-# <a name="process-view---contention-data"></a>Widok procesu — dane kontencji
-Widok procesu przedstawia dane rywalizacji procesów i wątków, które zostały wykonane podczas przebiegu profilowania.  
+# <a name="process-view---contention-data"></a>Widok procesu — dane rywalizacji
+Widok procesu przedstawia dane rywalizacji o zasoby dotyczące procesów i wątków, które zostały wykonane podczas uruchomienia profilowania.  
   
- Gdy są dostępne symbole, procesy są wyświetlane według nazwy. Jeśli symbole nie są dostępne, procesy są wyświetlane według ich adres pamięci w formacie szesnastkowym. Wątki są wyświetlane jako elementy podrzędne procesu, który je utworzył.  
+ Po symbole są dostępne, procesy są wyświetlane według nazwy. Gdy symbole nie są dostępne, procesy są wyświetlane według ich adres pamięci, w formacie szesnastkowym. Wątki są wyświetlane jako elementy podrzędne procesu, który je utworzył.  
   
- W poniższej tabeli przedstawiono wartości kolumn w tabeli widoku procesu.  
+ W poniższej tabeli przedstawiono wartości kolumn w tabeli widoku proces.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|**Godzina rozpoczęcia**|Liczba milisekund lub cyklów procesora od początku profilowania na początku proces lub wątek.|  
-|**Czas blokowania**|Łączny czas, w którym funkcje proces lub wątek został zablokowany wykonywania.|  
-|**% Czasu blokowania**|Procent istnienia proces lub wątek, w którym funkcje proces lub wątek został zablokowany wykonywania.|  
-|**Rywalizacji**|Ile razy wykonywania funkcji proces lub wątek został zablokowany.|  
-|**% Rywalizacji**|Wartość procentowa rywalizacji wszystkie, w którym profilowania były rywalizacji proces lub wątek.|  
-|**Godzina zakończenia**|Liczba milisekund lub cyklów procesora od początku profilowania na końcu proces lub wątek.|  
-|**ID**|Wygenerowana przez system identyfikator proces lub wątek.|  
-|**Okres istnienia**|Liczba milisekund lub cyklów procesora od początku proces lub wątek do końca proces lub wątek lub zakończenia profilowania.|  
+|**Czas rozpoczęcia**|Liczba milisekund, czyli cykli procesora od rozpoczęcia profilowania do początku proces lub wątek.|  
+|**Czas blokowania**|Całkowity czas, w którym funkcje proces lub wątek został zablokowany wykonywania.|  
+|**% Czasu blokowania**|Wartość procentowa okresu istnienia proces lub wątek, w którym funkcje proces lub wątek został zablokowany wykonywania.|  
+|**Rywalizacje**|Liczba prób wykonania funkcji proces lub wątek został zablokowany.|  
+|**% Rywalizacji**|Wartość procentowa wszystkie rywalizacje w uruchomienia profilowania były rywalizacji procesów lub wątków.|  
+|**Godzina zakończenia**|Liczba milisekund, czyli cykli procesora od czasu rozpoczęcia profilowania do końca proces lub wątek.|  
+|**Identyfikator**|Wygenerowana przez system identyfikator proces lub wątek.|  
+|**Okres istnienia**|Liczba milisekund, czyli cykli procesora od początku proces lub wątek do końca proces lub wątek lub końca okresu profilowania.|  
 |**Typ**|Typ wiersza, przetwarzania lub wątku.<br /><br /> Tylko w **VSReport** raporty wiersza polecenia. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Nazwa**|Nazwa proces lub wątek.|  
-|**Unikatowy identyfikator.**|Identyfikator generowanych przez profiler jest unikatowy dla proces lub wątek.|  
+|**Unikatowy identyfikator**|Identyfikator wygenerowany przez program profilujący jest unikatowy dla proces lub wątek.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok procesu](../profiling/process-view.md)

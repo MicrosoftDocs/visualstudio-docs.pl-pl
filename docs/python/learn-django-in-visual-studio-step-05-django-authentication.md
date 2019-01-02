@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności funkcje uwierzytelniania określone szablony projektów internetowych Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 26a8268508f4d53a488d2c9d5fd54ef9330b2fc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820309"
 ---
-# <a name="step-5-authenticate-users-in-django"></a>Krok 5: Uwierzytelnianie użytkowników w Django
+# <a name="step-5-authenticate-users-in-django"></a>Krok 5. Uwierzytelnianie użytkowników w Django
 
-**Poprzedni krok: [użyj pełnego szablonów projektów internetowych Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Poprzedniego kroku: [Użyj pełnego szablonów projektów internetowych Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Ponieważ uwierzytelnianie jest typowe potrzeby aplikacji sieci web, szablon "Projekt sieci Web Django" obejmuje przepływ uwierzytelniania podstawowego. (Szablon "Projekt sieci Web Django sond" omówiono w kroku 6 procedury w tym samouczku także sam przepływ.) W przypadku stosowania Django szablony projektu Visual Studio zawiera wszystkie moduły niezbędne do uwierzytelniania w projekcie Django *settings.py*.
 
@@ -31,7 +30,7 @@ W tym kroku dowiesz się:
 > [!div class="checklist"]
 > - Jak korzystać z tego przepływu uwierzytelniania podany w szablonach programu Visual Studio (krok 5 - 1)
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Krok 5-1: przepływ uwierzytelniania
+## <a name="step-5-1-use-the-authentication-flow"></a>Krok 1 z 5 Przepływ uwierzytelniania
 
 Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu, które są zaangażowane:
 
@@ -208,7 +207,7 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
 
 ### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: Co to jest celem {% csrf_token %} tagów, które pojawia się w \<formularza\> elementy?
 
-Odpowiedź: `{% csrf_token %}` znacznik obejmuje wbudowane w Django [fałszerstwo żądania międzywitrynowego (csrf) ochrony](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Zazwyczaj Dodaj ten tag do dowolnego elementu, która obejmuje metody żądania POST, PUT lub DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia na potrzeby ochrony.
+Odpowiedź: `{% csrf_token %}` Znacznik obejmuje wbudowane w Django [fałszerstwo żądania międzywitrynowego (csrf) ochrony](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Zazwyczaj Dodaj ten tag do dowolnego elementu, która obejmuje metody żądania POST, PUT lub DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia na potrzeby ochrony.
 
 ## <a name="next-steps"></a>Następne kroki
 

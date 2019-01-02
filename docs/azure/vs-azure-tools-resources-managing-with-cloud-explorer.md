@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: feb56bb0edd66a24b8505c26587129437dd4b971
-ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
+ms.openlocfilehash: 443e2ac54782dd3807f6b165757cf231ebea6bae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52459751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950506"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 

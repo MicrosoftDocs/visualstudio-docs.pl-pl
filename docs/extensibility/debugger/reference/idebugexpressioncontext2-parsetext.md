@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionContext2::ParseText | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionContext2::ParseText
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8672dcdf92ce7341c7ae540c4836a1775671da7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4178520b1d51e57a302c817c6c97a10c640aa6fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945421"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analizuje wyrażenia w postaci tekstu do późniejszego obliczenia.  
@@ -28,7 +25,7 @@ Analizuje wyrażenia w postaci tekstu do późniejszego obliczenia.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT ParseText(   
+HRESULT ParseText(   
    LPCOLESTR           pszCode,  
    PARSEFLAGS          dwFlags,  
    UINT                nRadix,  
@@ -39,7 +36,7 @@ HRESULT ParseText(
 ```  
   
 ```csharp  
-int ParseText(   
+int ParseText(   
    string                pszCode,  
    enum_PARSEFLAGS       dwFlags,  
    uint                  nRadix,  

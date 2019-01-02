@@ -2,7 +2,6 @@
 title: Import i eksport ustawień — Polecenie
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 38144381520002e1e3e9f9c7b440d6b87b90cb6d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943330"
 ---
 # <a name="import-and-export-settings-command"></a>Import i eksport ustawień — Polecenie
 

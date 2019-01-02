@@ -1,9 +1,6 @@
 ---
 title: Ocenianie wyrażenia kontrolnego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, watch expressions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f83e7b124745d089f1632060c552b5424e5ccde
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14635c18fe772df566cdd16a285816ece0cdf485
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945015"
 ---
 # <a name="evaluate-a-watch-expression"></a>Ocena wyrażenia kontrolnego
 > [!IMPORTANT]

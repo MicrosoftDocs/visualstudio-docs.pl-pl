@@ -3,7 +3,6 @@ title: Pisanie rozszerzeń języka C++ dla języka Python
 description: Przewodnik po Tworzenie rozszerzenia C++ dla języka Python za pomocą programu Visual Studio, CPython i PyBind11, włączając debugowanie w trybie mieszanym.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947845"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -136,7 +135,7 @@ Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne proj
     > Jeśli nie widzisz karty C/C++ we właściwościach projektu jest to, ponieważ projekt nie zawiera wszystkie pliki, które identyfikuje go jako pliki źródłowe C/C++. Ten stan może wystąpić, jeśli utworzysz plik źródłowy bez *.c* lub *.cpp* rozszerzenia. Na przykład, jeśli przypadkowo wprowadzone `module.coo` zamiast `module.cpp` w okno dialogowe nowego elementu wcześniej, następnie programu Visual Studio tworzy plik, ale nie ustawiono typu pliku "C / C + kodu," który jest co aktywuje kartę właściwości języka C/C++. Takie misidentification pozostaje tak, nawet w przypadku zmiany nazwy pliku z `.cpp`. Aby prawidłowo ustawić typ pliku, kliknij prawym przyciskiem myszy plik w **Eksploratora rozwiązań**, wybierz opcję **właściwości**, a następnie ustaw **typ pliku** do **kodu C/C++**.
 
     > [!Warning]
-    > Zawsze wartość **C/C++** > **generowania kodu** > **biblioteki środowiska uruchomieniowego** opcję **Multi-threaded biblioteki DLL (/ MD)**, nawet dla konfiguracji debugowania, ponieważ jest to ustawienie, co to są tworzone za pomocą plików binarnych języka Python bez debugowania. Jeśli masz ustawiony **Multi-threaded DLL debugowania (/ MDd)** opcję tworzenia **debugowania** konfiguracji powoduje błąd **C1189: Py_LIMITED_API jest niezgodna z Py_DEBUG, Py_TRACE_REFS, i Py_REF_DEBUG**. Ponadto jeśli usuniesz `Py_LIMITED_API` w celu uniknięcia błędów kompilacji, Python ulega awarii podczas próby zaimportowania modułu. (Awaria się dzieje w ramach wywołania biblioteki DLL `PyModule_Create` opisana poniżej, z komunikatu wyjściowego **błąd krytyczny Python: PyThreadState_Get: nie bieżącego wątku**.)
+    > Zawsze wartość **C/C++** > **generowania kodu** > **biblioteki środowiska uruchomieniowego** opcję **Multi-threaded biblioteki DLL (/ MD)**, nawet dla konfiguracji debugowania, ponieważ jest to ustawienie, co to są tworzone za pomocą plików binarnych języka Python bez debugowania. Jeśli masz ustawiony **Multi-threaded DLL debugowania (/ MDd)** opcję tworzenia **debugowania** konfiguracji powoduje błąd **C1189: Py_LIMITED_API jest niezgodna z Py_DEBUG Py_TRACE_REFS i Py_REF_DEBUG**. Ponadto jeśli usuniesz `Py_LIMITED_API` w celu uniknięcia błędów kompilacji, Python ulega awarii podczas próby zaimportowania modułu. (Awaria się dzieje w ramach wywołania biblioteki DLL `PyModule_Create` opisana poniżej, z komunikatu wyjściowego **błąd krytyczny Python: PyThreadState_Get: nie bieżącego wątku**.)
     >
     > Opcja/mdd służy do tworzenia plików binarnych debugowania języka Python (takie jak *python_d.exe*), ale wybierając go z rozszerzeniem DLL nadal powoduje błąd kompilacji za pomocą `Py_LIMITED_API`.
 
@@ -266,7 +265,7 @@ Jeśli wykonaniu kroków opisanych w poprzedniej sekcji, możesz bez obaw zauwa�
 
 Modułu języka C++ mogą kompilacja nie powiedzie się z następujących powodów:
 
-- Nie można zlokalizować *Python.h* (**E1696: nie można otworzyć pliku źródłowego "Python.h"** i/lub **C1083: nie może zawierać Otwórz plik: "Python.h": nie ma takiego pliku lub katalogu**): Upewnij się, że Ścieżka w **C/C++** > **ogólne** > **dodatkowe katalogi dołączenia** w punktach właściwości projektu do języka Python instalacji *obejmują* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-projects).
+- Nie można zlokalizować *Python.h* (**E1696: nie można otworzyć pliku źródłowego "Python.h"** i/lub **C1083: Otwórz, nie można dołączyć plik: "Python.h": Nie ma takiego pliku lub katalogu**): Upewnij się, że ścieżka w **C/C++** > **ogólne** > **dodatkowe katalogi dołączenia** w Projekt właściwości punkty z instalacją języka Python *obejmują* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-projects).
 
 - Nie można zlokalizować biblioteki języka Python: Upewnij się, że ścieżka w **konsolidatora** > **ogólne** > **dodatkowe katalogi bibliotek** w projekcie wskazuje właściwości z instalacją języka Python *libs* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-projects).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF'
+title: 'Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4553dda8efd4d176312839bdc4eda449a6aa70b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948251"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF
 A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Użyj **Dodaj odwołanie do usługi** okno dialogowe, aby wyszukać [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w bieżącym rozwiązaniu lokalnie, w sieci lokalnej lub w Internecie.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]

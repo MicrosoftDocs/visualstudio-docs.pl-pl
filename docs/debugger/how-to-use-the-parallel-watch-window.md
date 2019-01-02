@@ -1,8 +1,6 @@
 ---
 title: Ustawianie wyrażenia kontrolnego na zmiennych w równoległych wątków | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946987"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Ustawianie wyrażenia kontrolnego na zmiennych w równoległych wątków w programie Visual Studio
 W oknie czujki równoległej może jednocześnie wyświetlać wartości, które zawiera jedno wyrażenie, w wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc każdy wiersz reprezentuje wywołanie funkcji, w których funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienić kolejność, Usuń i grupować elementy, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów). Następujące kolumny są wyświetlane w **równoległego wyrażenia kontrolnego** okna:  
@@ -64,7 +62,7 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
   
 ### <a name="to-switch-to-another-thread"></a>Aby przełączyć się do innego wątku  
   
--   Kliknij dwukrotnie kolumnę bieżącego wątku (druga kolumna). (Klawiatura: zaznacz wiersz, a następnie naciśnij klawisz Enter.)  
+-   Kliknij dwukrotnie kolumnę bieżącego wątku (druga kolumna). (Klawiatura: Zaznacz wiersz i naciśnij klawisz Enter).  
   
 ### <a name="to-sort-a-column"></a>Aby posortować kolumnę  
   
@@ -88,5 +86,5 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+ [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Przewodnik: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

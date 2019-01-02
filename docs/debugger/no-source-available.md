@@ -1,8 +1,6 @@
 ---
-title: Jest dostępne żadne źródło | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Brak dostępnego źródła | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
@@ -19,28 +17,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aae4b2428470e3e33477cfdb36699c2c1da20c1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8673db7f0e31a32e7e4fdf92e447f373b5a29dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945278"
 ---
 # <a name="no-source-available"></a>Nie jest dostępne żadne źródło
-Projekt nie zawiera kodu źródłowego dla kodu, który chcesz wyświetlić. Najczęstszą przyczyną jest dwukrotnie moduł, który nie ma kodu źródłowego w **okna stosu wywołań** lub **okno wątków**. Można kontynuować debugowania, ale nie można użyć okna źródła można ustawić punktów przerwania i wykonywać inne akcje w tej lokalizacji. Jeśli trzeba ustawić punkt przerwania, użyj **dezasemblacja, okno** zamiast tego.  
+Projekt nie zawiera kodu źródłowego dla kodu, który chcesz wyświetlić. Najczęstszą przyczyną jest dwukrotne kliknięcie modułu, który nie ma kodu źródłowego w **okna stosu wywołań** lub **okno wątków**. Można kontynuować debugowania, ale nie można użyć okna źródła do ustawiania punktów przerwania i wykonywać inne działania w tej lokalizacji. Jeśli potrzebujesz ustawić punkt przerwania, użyj **okna dezasemblacji** zamiast tego.  
   
- Na stronach właściwości rozwiązania można zmienić katalogi, w której debuger wyszukuje pliki źródłowe i poinformuj debugera do ignorowania plików wybranego źródła. Zobacz [debugowania źródła plików, typowe właściwości rozwiązania właściwości strony — okno dialogowe](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  
+ Na stronach właściwości rozwiązania można zmienić katalogi, gdzie debuger wyszukuje pliki źródłowe i polecić debugerowi, aby zignorować wybrane źródło plików. Zobacz [debugowania okno dialogowe strony właściwości rozwiązania źródła plików, typowe właściwości,](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  
   
- **Przejdź do kodu źródłowego**  
- Kliknij to łącze, aby otworzyć okno dialogowe, którego można przeglądać można znaleźć kodu źródłowego.  
+ **Przeglądaj w poszukiwaniu kodu źródłowego**  
+ Kliknij ten link, aby otworzyć okno dialogowe, w którym możesz przejść do znalezienia kodu źródłowego.  
   
  **Pokaż Dezasemblację**  
- Uruchamia **dezasemblacja, okno**.  
+ Uruchamia **okna dezasemblacji**.  
   
  **Zawsze pokazuj dezasemblację dla brakujących plików źródłowych**  
- Wybierz tę opcję, aby wyświetlić **dezasemblacja, okno** automatycznie Jeśli żadne źródło nie jest dostępny. To ustawienie można zmienić w **opcje** okno dialogowe **debugowanie** kategorii, **ogólne** strony, zaznaczając lub usuwając **Pokaż dezasemblację, jeśli źródło nie jest dostępne**.  
+ Wybierz tę opcję, aby wyświetlić **okna dezasemblacji** automatycznie, gdy jest dostępne żadne źródło. To ustawienie można zmienić w **opcje** okno dialogowe **debugowanie** kategorii **ogólne** strony, zaznaczając lub usuwając **Pokaż dezasemblację Jeśli źródło jest niedostępne**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie źródła plików, typowe właściwości rozwiązania właściwości strony — okno dialogowe](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
+ [Okno dialogowe strony właściwości rozwiązania źródła pliki, typowe właściwości debugowania](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [SOS.dll (rozszerzenie do debugowania SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

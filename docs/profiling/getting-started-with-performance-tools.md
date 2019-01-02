@@ -1,8 +1,6 @@
 ---
 title: Wprowadzenie do narzędzia do oceny wydajności | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: cf973c05e3ee70654fee1655591da11f54bc826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942856"
 ---
 # <a name="getting-started-with-performance-tools"></a>Wprowadzenie do narzędzia do oceny wydajności
 
@@ -28,9 +26,9 @@ Visual Studio oferuje kilka sposobów zbierania, wyświetlanie i analizowanie da
 
 - Raporty dotyczące wydajności zawierają widoki różnych poziomów struktury aplikacji, wiersze kodu źródłowego i procesów. Raporty dotyczące wydajności pokazują danych wykonawczych aplikacji, od wywołania i nazywane funkcjami konkretnej funkcji w drzewie całej aplikacji.  
   
-Szybkie profilowanie projektu, aplikacji lub witryny sieci Web ASP.NET, wybierz **debugowania** > **Profiler wydajności**i wybierz **kreatora wydajności**. Aby uzyskać szczegółowe instrukcje, zobacz [początkujących przewodnik dotyczący profilowanie wydajności](../profiling/beginners-guide-to-cpu-sampling.md) i [porady: zbieranie danych wydajności dotyczących witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+Szybkie profilowanie projektu, aplikacji lub witryny sieci Web ASP.NET, wybierz **debugowania** > **Profiler wydajności**i wybierz **kreatora wydajności**. Aby uzyskać szczegółowe instrukcje, zobacz [początkujących przewodnik dotyczący profilowanie wydajności](../profiling/beginners-guide-to-cpu-sampling.md) i [jak: Zbieranie danych wydajności dotyczących witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
 
-Aby ręcznie określić i skonfigurować sesję profilowania wydajności, wybierz **debugowania** > **Profiler** > **Eksplorator wydajności**. Użyj **cele** folder i **właściwości** stron w **Eksplorator wydajności** do skonfigurowania sesji. Aby uzyskać instrukcje, zobacz [porady: ręczne tworzenie sesji wydajności](../profiling/how-to-manually-create-performance-sessions.md).  
+Aby ręcznie określić i skonfigurować sesję profilowania wydajności, wybierz **debugowania** > **Profiler** > **Eksplorator wydajności**. Użyj **cele** folder i **właściwości** stron w **Eksplorator wydajności** do skonfigurowania sesji. Aby uzyskać instrukcje, zobacz [jak: Ręczne tworzenie sesji wydajności](../profiling/how-to-manually-create-performance-sessions.md).  
   
 **Zobacz też:**
   

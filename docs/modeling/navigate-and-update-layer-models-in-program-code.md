@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948657"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Nawigowanie i aktualizowanie modeli warstw w kodzie programu
 
-W tym artykule opisano elementy i relacje w modelach warstwy, które można znaleźć i zaktualizować przy użyciu kodu programu. Aby uzyskać więcej informacji dotyczących diagramów zależności z punktu widzenia użytkownika, zobacz [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md) i [diagramów zależności: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md).
+W tym artykule opisano elementy i relacje w modelach warstwy, które można znaleźć i zaktualizować przy użyciu kodu programu. Aby uzyskać więcej informacji dotyczących diagramów zależności z punktu widzenia użytkownika, zobacz [diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md) i [diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md).
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Modelu opisane w tym temacie jest fasada w bardziej ogólnej <xref:Microsoft.VisualStudio.GraphModel> modelu. Jeśli piszesz [rozszerzenie menu polecenia lub gestu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), użyj `Layer` modelu. Jeśli piszesz [rozszerzenie sprawdzania poprawności warstwy](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), jest łatwiejszy w obsłudze `GraphModel`.
 
@@ -137,4 +136,4 @@ public void ... (...)
 - [Dodawanie niestandardowej walidacji architektury do diagramów zależności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Dodawanie właściwości niestandardowych do diagramów zależności](../modeling/add-custom-properties-to-layer-diagrams.md)
 - [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
-- [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)
+- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)

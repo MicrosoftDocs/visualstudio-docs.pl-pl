@@ -1,8 +1,6 @@
 ---
 title: Raport dotyczący operacji (Widok wątków) na dysku | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.diskoperations
@@ -14,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d145b57b2cacce68b609ddc7aea5cef41cf69762
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 95173f260ce8ed40c607c7026df727267dd3866e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955269"
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
-Raport dotyczący operacji dysku zawiera operacje We/Wy dysku w kanałach dysku.  
+Raport operacji dyskowych pokazuje operacje We/Wy dysku w kanałach dysku.  
   
- Dla każdego dysku dostępu, który występuje w imieniu procesu, który jest poddawany profilowaniu okno czasu widoczne jest zgłaszany te informacje:  
+ Te informacje są zgłaszane dla każdego dostępu dysku występujący w imieniu procesu, który jest profilowany w przedziale czasowym aktualnie widoczne:  
   
--   Nazwa i identyfikator PID procesu wykonać dostępu do dysku  
+-   Nazwa i identyfikator PID procesu, który wykonał dostępu do dysku  
   
 -   Identyfikator wątku, który uzyskał dostęp do dysku  
   
--   Nazwa pliku, do którego próbował uzyskać dostęp  
+-   Nazwa pliku, którego uzyskano dostęp  
   
--   Liczba odczytów na plik  
+-   Liczba operacji odczytu na pliku  
   
--   Liczba odczytanych bajtów  
+-   Liczba Bajty odczytane  
   
 -   Opóźnienie odczytu, w milisekundach  
   
--   Liczba operacji zapisu  
+-   Liczba zapisów  
   
--   Liczba zapisanych bajtów  
+-   Liczba bajtów zapisanych  
   
 -   Opóźnienie zapisu, w milisekundach  
   

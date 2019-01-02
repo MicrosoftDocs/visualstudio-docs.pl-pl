@@ -1,8 +1,6 @@
 ---
 title: Idiaenumtables::Next — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c7a038bbc6fecddb69950722f4423ab326c1b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27d9811fe55a3b942cd020ae8038f07df8bf7a2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949411"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Pobiera określoną liczbę tabel w kolejności wyliczenia.  
@@ -27,7 +25,7 @@ Pobiera określoną liczbę tabel w kolejności wyliczenia.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG       celt,  
    IDiaTable** rgelt,  
    ULONG*      pceltFetched  

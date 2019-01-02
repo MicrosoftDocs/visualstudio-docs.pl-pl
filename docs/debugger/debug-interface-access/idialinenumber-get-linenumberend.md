@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber::get_linenumberend — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0dfff78c54c1e051e04c33ae73d82691bf0d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73d20175422a78a2b84c1b969f7a9776a45b2522
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951540"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instrukcja lub wyrażenie.  
@@ -27,7 +25,7 @@ Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instruk
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_lineNumberEnd (   
+HRESULT get_lineNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  

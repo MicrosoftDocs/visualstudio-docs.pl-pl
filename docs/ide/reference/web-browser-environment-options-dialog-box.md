@@ -2,7 +2,6 @@
 title: Przeglądarka sieci Web, środowisko, opcje — Okno dialogowe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955162"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Przeglądarka sieci Web, środowisko, opcje — Okno dialogowe
 
@@ -55,7 +54,7 @@ Ustawia Edytor używana w celu otwarcia strony sieci Web, w przypadku wybrania *
 
 -   **Edytor źródła** wybierz, aby wyświetlić źródła w [edytora](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Edytor HTML** wybierz, aby wyświetlić źródła w [projektancie HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować strony sieci Web na jeden z dwóch widoków: widoku projektu lub standardowy widok źródła oparte na tekście.
+-   **Edytor HTML** wybierz, aby wyświetlić źródła w [projektancie HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować strony sieci Web na jeden z dwóch widoków: Widok projektu lub standardowy widok źródła oparte na tekście.
 
 -   **Edytor zewnętrzny** zaznacz, aby wyświetlić kod źródłowy w innym edytorze. Określ ścieżkę do dowolnego edytora, który wybierzesz, na przykład Notepad.exe.
 

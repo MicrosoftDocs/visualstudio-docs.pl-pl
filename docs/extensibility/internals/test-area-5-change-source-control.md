@@ -1,9 +1,6 @@
 ---
-title: 'Obszar testowy 5: Zmienianie kontroli źródła | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Obszar testowy 5: Zmień kontrolę źródła | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7093d50290c4c0612faf6c7691f90e62a08267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942635"
 ---
-# <a name="test-area-5-change-source-control"></a>Obszar testowy 5: zmienianie kontroli kodu źródłowego
+# <a name="test-area-5-change-source-control"></a>Obszar testowy 5: Zmień kontrolę źródła
 Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła, za pośrednictwem **Zmień kontrolę źródła** polecenia.  
 
  **Zmień kontrolę źródła** polecenie dostarcza cztery podstawowe funkcje dla użytkownika:  
@@ -36,7 +33,7 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła
 
 - **Łączenie/rozłączanie połączeń:**  
 
-  Włącza lub wyłącza połączonych lub offline stan rozwiązania kontrolowanego, co zostało omówione w obszarze 3. Aby uzyskać więcej informacji, zobacz [testu obszarze 3: wyewidencjonowanie / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Włącza lub wyłącza połączonych lub offline stan rozwiązania kontrolowanego, co zostało omówione w obszarze 3. Aby uzyskać więcej informacji, zobacz [3 obszaru testu: Zapoznaj się z / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
 
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
  Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego rozwoju środowiska menu Ścieżka jest używana w przypadkach testowych.  
@@ -46,7 +43,7 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła
 ## <a name="test-cases"></a>Przypadki testowe  
  Poniżej przedstawiono określonych przypadków testowych dla **Zmień kontrolę źródła** polecenia obszar testowy.  
 
-### <a name="case-5a-bind"></a>Zamierzone, Zapisz 5a: Bind  
+### <a name="case-5a-bind"></a>Wielkość 5a: powiązania  
  Powiązania zezwala użytkownikowi na dodawanie informacji o kontroli kodu źródłowego do wybranych projektów i rozwiązań. Użytkownik jest zwykle monitowany do identyfikowania projektu w kontroli źródła, do której są dodane. Użytkownik nie może utworzyć nowy projekt w kontroli źródła w ramach tej operacji (kontrast za pomocą Dodaj do kontroli źródła).  
 
 
@@ -58,7 +55,7 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła
 | Powiąż rozwiązania, które było nigdy nie pod kontrolą źródła | 1.  Utwórz pusty folder w kontroli źródła.<br />2.  Utwórz projekt klienta.<br />3.  Otwórz **Zmień kontrolę źródła** okno dialogowe (**pliku**, **kontroli źródła**, **Zmień kontrolę źródła**).<br />4.  Powiązać rozwiązanie z pustą lokalizację w kontroli źródła.<br />5.  Kliknij przycisk **OK** zamknąć **Zmień kontrolę źródła** okno dialogowe.<br />6.  Kliknij przycisk **Kontynuuj z tymi powiązaniami** w oknie dialogowym potwierdzenia.<br />7.  Kliknij przycisk **OK** w oknie dialogowym ostrzeżenia, jeśli zostanie wyświetlona. | Rozwiązanie zostanie dodany do kontroli źródła.<br /><br /> Rozwiązania i projektu są wyewidencjonowane. |
 | Anuluj powiązania | 1.  Utwórz projekt.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Otwórz okno dialogowe zmiana kontroli źródła.<br />4.  Usunąć wszystkie powiązania.<br />5.  Kliknij przycisk **OK** przycisk, aby zamknąć okno dialogowe. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />6.  Otwórz ponownie **Zmień kontrolę źródła** okno dialogowe.<br />7.  Powiąż z niepowiązanych lokalizacji.<br />8.  Kliknij przycisk **anulować**. | `Result from Step 5:`<br /><br /> Rozwiązanie nie jest już pod kontrolą źródła<br /><br /> `Result from Step 8:`<br /><br /> Rozwiązanie jest nadal nie pod kontroli źródła. |
 
-### <a name="case-5b-unbind"></a>Zamierzone, Zapisz 5b: Usuń powiązanie  
+### <a name="case-5b-unbind"></a>Wielkość 5b: Usuń powiązanie  
  Usuń powiązanie informacje o kontroli kodu źródłowego powoduje usunięcie z projektów i ich rozwiązania. Dotyczy projekty i rozwiązania są oparte na kombinacji wybór użytkownika i jak elementy zostały dodane do kontroli źródła.  
 
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
@@ -66,7 +63,7 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła
 |Usuń powiązanie rozwiązanie zawierające jeden System plików lub lokalny projekt sieci Web usług IIS i jeden klient z projektu|1.  Utwórz System plików lub lokalny projekt sieci Web usług IIS.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj nowy projekt klienta do rozwiązania.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować zapoznaj się z rozwiązania.<br />5.  Otwórz **Zmień kontrolę źródła** okno dialogowe.<br />6.  Kliknij przycisk **Unbind**.<br />7.  Kliknij przycisk **OK** , aby zamknąć okno dialogowe.<br />8.  Próba zapoznaj się z rozwiązania, projektu, elementy rozwiązania, elementy projektu.|Rozwiązanie i projekty nie są pod kontrolą źródła.<br /><br /> Polecenia menu kontroli źródła nie są wyświetlane.|  
 |Usuń powiązanie Anuluj|1.  Utwórz projekt.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Otwórz **Zmień kontrolę źródła** okno dialogowe.<br />4.  Kliknij przycisk **usunąć wszystkie powiązania**.<br />5.  Kliknij przycisk **anulować**.|Rozwiązanie jest pod kontrolą źródła.|  
 
-### <a name="case-5c-rebind"></a>Zamierzone, Zapisz 5c: ponownie powiązać  
+### <a name="case-5c-rebind"></a>W przypadku 5c: ponowne wiązanie  
  Ponowne wiązanie jest po prostu kombinacją Usuń powiązanie i powiąż — proces ponownego wiązania projekt/rozwiązanie, poprzednio pod kontrolą źródła, która została niepowiązanej.  
 
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
