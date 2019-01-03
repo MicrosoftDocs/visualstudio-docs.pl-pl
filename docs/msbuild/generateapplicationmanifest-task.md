@@ -1,8 +1,6 @@
 ---
 title: Generateapplicationmanifest — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9526c2c62d9ace81127c61ef313cf55971fc1692
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900694"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — zadanie
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub manifest macierzysty. Manifest natywny zawiera opis składnika poprzez określenie unikatowej tożsamości składnika i identyfikację wszystkich zestawów i plików, które tworzą składnik. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji rozszerza manifest natywny przez wskazanie punktu wejścia aplikacji i określenie poziomu zabezpieczeń aplikacji.  

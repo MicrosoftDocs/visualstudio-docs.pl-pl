@@ -5,7 +5,7 @@ items:
   href: installing-the-visual-studio-sdk.md
 - name: Rozpoczynanie tworzenia rozszerzeń Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Tworzenie pierwszego rozszerzenia: Hello World'
+- name: 'Tworzenie pierwszego rozszerzenia: Witaj Świecie'
   href: extensibility-hello-world.md
 - name: Co nowego w zestawie Visual Studio 2017 SDK
   href: what-s-new-in-the-visual-studio-2017-sdk.md
@@ -125,42 +125,42 @@ items:
       href: editor-imports.md
     - name: Obsługa wtyczki EditorConfig
       href: supporting-editorconfig.md
-    - name: 'Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku'
+    - name: 'Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku'
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-    - name: 'Przewodnik: tworzenie symbolu na marginesie'
+    - name: 'Przewodnik: Tworzenie symbolu na marginesie'
       href: walkthrough-creating-a-margin-glyph.md
-    - name: 'Przewodnik: dostosowywanie widoku tekstu'
+    - name: 'Przewodnik: Dostosowywanie widoku tekstu'
       href: walkthrough-customizing-the-text-view.md
-    - name: 'Przewodnik: tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)'
+    - name: 'Przewodnik: Tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)'
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 'Przewodnik: wyróżnianie tekstu'
+    - name: 'Przewodnik: Wyróżnianie tekstu'
       href: walkthrough-highlighting-text.md
-    - name: 'Przewodnik: tworzenie konspektu'
+    - name: 'Przewodnik: Tworzenie konspektu'
       href: walkthrough-outlining.md
-    - name: 'Przewodnik: wyświetlanie parowanych nawiasów klamrowych'
+    - name: 'Przewodnik: Wyświetlanie parowanych nawiasów klamrowych'
       href: walkthrough-displaying-matching-braces.md
-    - name: 'Przewodnik: wyświetlanie etykietek narzędzi SzybkieInfo'
+    - name: 'Przewodnik: Wyświetlanie etykietek narzędzi SzybkieInfo'
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: 'Przewodnik: wyświetlanie pomocy dotyczącej sygnatur'
+    - name: 'Przewodnik: Wyświetlanie pomocy dotyczącej podpisów'
       href: walkthrough-displaying-signature-help.md
-    - name: 'Przewodnik: wyświetlanie uzupełniania instrukcji'
+    - name: 'Przewodnik: Wyświetlanie uzupełniania składni'
       href: walkthrough-displaying-statement-completion.md
-    - name: 'Przewodnik: implementowanie fragmentów kodu'
+    - name: 'Przewodnik: Implementowanie fragmentów kodu'
       href: walkthrough-implementing-code-snippets.md
-    - name: 'Przewodnik: wyświetlanie sugestii „żarówka”'
+    - name: 'Przewodnik: Wyświetlanie sugestii „żarówka”'
       href: walkthrough-displaying-light-bulb-suggestions.md
-    - name: 'Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora'
+    - name: 'Przewodnik: Używanie polecenia powłoki z rozszerzeniem edytora'
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: 'Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora'
+    - name: 'Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora'
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-    - name: 'Przewodnik: uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora'
+    - name: 'Przewodnik: Uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora'
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
   - name: Tworzenie niestandardowych edytorów i projektantów
     href: creating-custom-editors-and-designers.md
     items:
-    - name: 'Przewodnik: tworzenie edytora niestandardowego'
+    - name: 'Przewodnik: Tworzenie edytora niestandardowego'
       href: walkthrough-creating-a-custom-editor.md
-    - name: 'Przewodnik: dodawanie funkcji do edytora niestandardowego'
+    - name: 'Przewodnik: Dodawanie funkcji do edytora niestandardowego'
       href: walkthrough-adding-features-to-a-custom-editor.md
     - name: Inicjowanie projektanta i konfiguracja metadanych
       href: designer-initialization-and-metadata-configuration.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Assembly — Element (rozszerzenie kreatora szablonów programu Visual Studio)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (szablony Visual Studio)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: BuildOnLoad, atrybut i element (szablony Visual Studio)
+      href: buildonload-visual-studio-templates.md
+    - name: BuildProjectOnload, element (szablony Visual Studio)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (szablony Visual Studio)
       href: createinplace-visual-studio-templates.md
     - name: CreateNewFolder — Element (szablony Visual Studio)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: RequiredFrameworkVersion — Element (szablony Visual Studio)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: RequiredPlatformVersion, element (szablony Visual Studio)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: SDKReference, element (szablony Visual Studio)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (szablony Visual Studio)
       href: showbydefault-visual-studio-templates.md
     - name: SolutionFolder — Element (szablony Visual Studio)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: SupportsMasterPage — Element (szablony Visual Studio)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: TargetPlatformName, element (szablony Visual Studio)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: TemplateContent — Element (szablony Visual Studio)
       href: templatecontent-element-visual-studio-templates.md
     - name: TemplateData — Element (szablony Visual Studio)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: WizardExtension — Element (szablony Visual Studio)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnload, element (szablony Visual Studio)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion, element (szablony Visual Studio)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference, element (szablony Visual Studio)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName, element (szablony Visual Studio)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Odwołanie do schematu manifestu szablonu Visual Studio
     href: visual-studio-template-manifest-schema-reference.md
 - name: Rozszerzanie opcji i ustawień użytkownika
@@ -365,13 +365,13 @@ items:
   - name: Tworzenie niestandardowej strony początkowej
     href: creating-a-custom-start-page.md
     items:
-    - name: 'Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej'
+    - name: 'Przewodnik: Dodawanie niestandardowych elementów XAML do strony początkowej'
       href: walkthrough-adding-custom-xaml-to-the-start-page.md
     - name: Dodawanie kontrolki użytkownika do strony początkowej
       href: adding-user-control-to-the-start-page.md
     - name: Dodawanie poleceń programu Visual Studio do strony początkowej
       href: adding-visual-studio-commands-to-a-start-page.md
-    - name: 'Przewodnik: zapisywanie ustawień użytkownika na stronie początkowej'
+    - name: 'Przewodnik: Zapisywanie ustawień użytkownika na stronie początkowej'
       href: walkthrough-saving-user-settings-on-a-start-page.md
     - name: Wdrażanie niestandardowych stron początkowych
       href: deploying-custom-start-pages.md
@@ -426,11 +426,11 @@ items:
     href: vsix-project-template.md
   - name: Wprowadzenie do szablonu projektu VSIX
     href: getting-started-with-the-vsix-project-template.md
-  - name: 'Przewodnik: publikowanie rozszerzenia programu Visual Studio'
+  - name: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio'
     href: walkthrough-publishing-a-visual-studio-extension.md
-  - name: 'Przewodnik: publikowanie rozszerzenia programu Visual Studio za pośrednictwem wiersza polecenia'
+  - name: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pośrednictwem wiersza polecenia'
     href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-  - name: 'Przewodnik: tworzenie pakietu rozszerzeń'
+  - name: 'Przewodnik: Tworzenie pakietu rozszerzeń'
     href: walkthough-create-extension-pack.md
   - name: Dodawanie zależności do pakietu VSIX
     href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -728,11 +728,11 @@ items:
 - name: Tworzenie zestawu SDK
   href: creating-a-software-development-kit.md
   items:
-  - name: 'Przewodnik: tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic'
+  - name: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic'
     href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-  - name: 'Przewodnik: tworzenie zestawu SDK przy użyciu języka C++'
+  - name: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++'
     href: walkthrough-creating-an-sdk-using-cpp.md
-  - name: 'Przewodnik: tworzenie zestawu SDK przy użyciu języka JavaScript'
+  - name: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript'
     href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Rozszerzalność platformy kompilatora .NET („Roslyn”)
   href: dotnet-compiler-platform-roslyn-extensibility.md
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Dokumentacja wersji pakietu Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967496"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562363"

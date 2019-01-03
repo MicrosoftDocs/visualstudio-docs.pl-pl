@@ -1,8 +1,6 @@
 ---
 title: Idiastackframe::get_lengthlocals — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c14046edc62c91b47ab02ec5e78905fd07c5c55b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e47653dad67b06107bbc1c363a4e0fe2f82e33b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918670"
 ---
 # <a name="idiastackframegetlengthlocals"></a>IDiaStackFrame::get_lengthLocals
 Pobiera liczbę bajtów zmienne lokalne są wypychane na stos.  
@@ -27,7 +25,7 @@ Pobiera liczbę bajtów zmienne lokalne są wypychane na stos.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_lengthLocals (   
+HRESULT get_lengthLocals (   
    DWORD* pRetVal  
 );  
 ```  

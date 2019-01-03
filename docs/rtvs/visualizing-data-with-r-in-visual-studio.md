@@ -1,93 +1,92 @@
 ---
-title: Wizualizacja danych za pomocą języka R
-description: Jak do wykreślenia danych z programów R w programie Visual Studio przy użyciu systemu windows kreślenia.
+title: Wizualizowanie danych przy użyciu języka R
+description: Jak dane z programów języka R w programie Visual Studio przy użyciu systemu windows kreślenia wykresu.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859084"
 ---
-# <a name="create-visual-data-plots-with-r"></a>Utwórz danych wizualnych powierzchni z języka R
+# <a name="create-visual-data-plots-with-r"></a>Tworzenie wykresów danych wizualnych języka r
 
-Kreślenia jest kluczowym elementem naukowca danych przepływu pracy. W menu Narzędzia R dla programu Visual Studio (RTVS) wszystkie działania kreślenia koncentruje się wokół co najmniej jeden wykres systemu windows, które mają na celu poprawę wydajności dzięki tego klucza działania.
+Plotting jest kluczowym elementem analitykiem danych przepływu pracy. W R Tools for Visual Studio (RTVS) wszystkie działania wykreślania koncentruje się wokół co najmniej jeden wykres systemu windows, które są przeznaczone do poprawienia wydajności pracy z tym działaniem klucza.
 
-![Obraz bohater kreślenia](media/plotting-hero-image.png)
+![Obraz Hero wykreślania](media/plotting-hero-image.png)
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (witrynie youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) na kreślenia z R (2 m 02s). |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (w witrynie youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) na wykreślania języka r (2 m 02s). |
 
-## <a name="the-plot-window"></a>Okno kreślenia
+## <a name="the-plot-window"></a>W oknie Diagram
 
-Okno kreślenia przechowuje serii wykresów, gdzie każdy wykres jest generowany przez `plot` polecenia. Na przykład za pomocą `plot(1:100)` tworzy nowe okno wykresu, jeśli jeden nie jest już dostępny:
+Okno wykres zawiera szereg powierzchni, w którym każdy diagram jest generowany przez `plot` polecenia. Na przykład za pomocą `plot(1:100)` tworzy nowe okno wykresu, jeśli jeden nie jest już dostępna:
 
 ![Wykres liniowy 1 do 100](media/plotting-1-to-100.png)
 
-Jak to działa, R `plot` polecenia renderować swoje dane wyjściowe do urządzenia graficznego R; okna kreślenia renderuje zawartość urządzenia graficznego R, dlatego każde okno kreślenia znajduje się numer urządzenia.
+Technicznie rzecz biorąc, R `plot` polecenia renderowania swoje dane wyjściowe do urządzenia graficznego R; okno kreślenia renderuje zawartość urządzenia grafiki języka R, dlatego każde okno kreślenia otrzymuje numer urządzenia.
 
-Windows kreślenia są niezależne od projektów programu Visual Studio i pozostają otwarte, obciążenia i zamknąć projektów.
+Wykres systemu windows są niezależne od projektów programu Visual Studio i pozostają otwarte, ponieważ ładowania i zamknąć projektów.
 
-Generowanie wykresu używa okna kreślenia "active" zapisywania wszystkie poprzednie wykreślenia go historii kreślenia (zobacz [wykreślenia historii](#plot-history)). Na przykład wprowadź `plot(100:1)` i pierwszy wykres jest zastępowany wiersz w dół.
+Generowanie wykres używa okna wykres "aktywny" Zapisywanie wszystkie poprzednie wykreślania go do wykresu historii (zobacz [wykresu historii](#plot-history)). Na przykład, wprowadź `plot(100:1)` i pierwszy wykres jest zastępowany linię w dół.
 
-Podobnie jak wszystkie inne okna programu Visual Studio. Okno kreślenia obsługuje niestandardowe układy (zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Kreślenia systemu windows można zadokowane w różnych lokalizacjach w ramce programu Visual Studio, zmiany rozmiaru w tej ramce lub pobierane poza ramki dla całkowicie niezależne zmiany rozmiaru. 
+Podobnie jak inne okna programu Visual Studio. w oknie Diagram obsługuje układy niestandardowe (zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Wykres systemu windows można zadokowane w różnych lokalizacjach w ramce programu Visual Studio, zmiany rozmiaru w tej ramce lub pobierane poza ramkę, całkowicie dla niezależnie od rozmiaru. 
 
-Zmiana rozmiaru okna kreślenia zawsze renderuje ponownie kreślenia, aby zapewnić najlepszą jakość obrazu. Zwykle można zmienić rozmiar wykresu przed wyeksportowaniem na powierzchni do pliku lub do Schowka za pomocą poleceń opisanych w następnej sekcji.
+Ponownie zmiany rozmiaru okna diagram zawsze renderuje wykres, aby zapewnić najlepszą jakość obrazu. Zwykle Aby zmienić rozmiar wykresu przed wyeksportowaniem na powierzchni do pliku lub do Schowka, przy użyciu polecenia opisane w następnej sekcji.
 
-## <a name="plot-window-commands"></a>Polecenia okna kreślenia
+## <a name="plot-window-commands"></a>Wykres okna polecenia
 
-Pasek narzędzi okna kreślenia posiada odpowiednich poleceń, z których większość są również dostępne za pośrednictwem **narzędzia R** > **powierzchni** menu.
+Pasek narzędzi okna wykres zawiera odpowiednie polecenia, a większość z nich jest również dostępna za pośrednictwem **R Tools** > **powierzchni** menu.
 
 | Przycisk | Polecenie | Opis | 
 | --- | --- | --- |
-| ![Nowy przycisk okna kreślenia](media/plotting-toolbar-01-new-plot-window.png) | Nowe okno wykresu | Tworzy okno oddzielnych powierzchni z własną historią. Zobacz [wiele okien kreślenia](#multiple-plot-windows). |
-| ![Włączenie przycisku okna kreślenia](media/plotting-toolbar-02-activate-plot-window.png) | Uaktywnij okno kreślenia | Ustawia bieżące okno kreślenia jako aktywne okno, tak że kolejne `plot` polecenia są renderowane do tego okna. Zobacz [wiele okien kreślenia](#multiple-plot-windows). Zobacz [wiele okien kreślenia](#multiple-plot-windows). |
-| ![Wykres historii okna](media/plotting-toolbar-03-plot-history.png) | Okno historii kreślenia | Otwiera okno z wszystkich powierzchni w historii wyświetlane jako miniatury. Zobacz [wykreślenia historii](#plot-history). |
-| ![Przyciski historii kreślenia](media/plotting-toolbar-04-plot-history-arrows.png) | Poprzedni i następny kreślenia |  Powoduje przejście do poprzedniego lub następnego kreślenia w historii. Można także przechodzić historii kodu za pomocą klawiszy Ctrl + Alt + F11 (poprzedni) i Ctrl + Alt + F12 (dalej). Zobacz [wykreślenia historii](#plot-history). |
-| ![Zapisz jako obraz przycisku](media/plotting-toolbar-05-save-as-image.png)| Zapisz jako obrazu | Monit o podanie nazwy pliku i zapisanie bieżącego kreślenia (zawartość okna, w rozmiarze okna) do pliku obrazu. Są dostępne formaty `.png`, `.jpg`, `.bmp`, i `.tif`. |
-| ![Zapisz jako przycisk PDF](media/plotting-toolbar-06-save-as-pdf.png)| Zapisz jako PDF | Zapisuje bieżący kreślenia plik PDF, za pomocą bieżącego rozmiaru okna. Powierzchni ponownie spowoduje, że w przypadku zmiany skali pliku PDF. |
-| ![Kopiuj jako przycisk mapy bitowej](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopiuj jako mapy bitowej | Kopiuje powierzchni do Schowka jako rastrowe mapy bitowej, przy użyciu bieżącego rozmiaru okna. | 
-| ![Kopiuj jako przycisk metaplik](media/plotting-toolbar-08-copy-as-metafile.png)| Kopiuj jako metaplik | Kopiuje do Schowka jako powierzchni [Windows metafile](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
-| ![Usuń przycisk kreślenia](media/plotting-toolbar-09-remove-plot.png)| Usuń kreślenia | Usuwa bieżący kreślenia z historii. |
-| ![Przycisk Wyczyść wszystko powierzchni](media/plotting-toolbar-10-clear-all-plots.png) | Wyczyść wszystkie powierzchnie | Usuwa wszystkie powierzchnie z historii (wyświetla monit o potwierdzenie). |
+| ![Przycisk okno nowy wykres](media/plotting-toolbar-01-new-plot-window.png) | Nowe okno wykresu | Tworzy okno, diagram oddzielnych z własną historią. Zobacz [wiele okien kreślenia](#multiple-plot-windows). |
+| ![Uaktywnij przycisk Okno wykresu](media/plotting-toolbar-02-activate-plot-window.png) | Uaktywnij okno wykresu | Ustawia bieżące okno wykresu jako aktywne okno zatem oznacza kolejne `plot` renderowania do tego okna polecenia. Zobacz [wiele okien kreślenia](#multiple-plot-windows). Zobacz [wiele okien kreślenia](#multiple-plot-windows). |
+| ![Wykres historii okna](media/plotting-toolbar-03-plot-history.png) | Wykres historii okna | Otwiera okno z wszystkich powierzchni w historii wyświetlane jako miniatury. Zobacz [wykresu historii](#plot-history). |
+| ![Wykres historii przycisków](media/plotting-toolbar-04-plot-history-arrows.png) | Wykres poprzednie/dalej |  Powoduje przejście do poprzedniego lub następnego kreślenia w historii. Możesz także przejść historii za pomocą klawiszy Ctrl + Alt + F11 (wstecz) i Ctrl + Alt + F12 (dalej). Zobacz [wykresu historii](#plot-history). |
+| ![Zapisz jako obraz przycisku](media/plotting-toolbar-05-save-as-image.png)| Zapisz jako obraz | Monituje o podanie nazwy pliku i zapisuje bieżący diagram (zawartość okna, w rozmiarze okna) do pliku obrazu. Dostępne formaty `.png`, `.jpg`, `.bmp`, i `.tif`. |
+| ![Zapisz jako plik PDF przycisku](media/plotting-toolbar-06-save-as-pdf.png)| Zapisz jako plik PDF | Zapisuje bieżący diagram do pliku PDF, przy użyciu bieżącego rozmiaru okna. Wykres będą renderowane ponownie, jeśli plik PDF jest skalowany. |
+| ![Kopiuj jako przycisk mapy bitowej](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopiuj jako mapy bitowej | Kopiuje wykres do Schowka jako mapę bitową rastrowych, przy użyciu bieżącego rozmiaru okna. | 
+| ![Kopiuj jako przycisk metaplik](media/plotting-toolbar-08-copy-as-metafile.png)| Kopiuj jako metaplik | Kopiuje wykres do Schowka jako [metaplik Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Usuwanie przycisku Wykres](media/plotting-toolbar-09-remove-plot.png)| Odebrat diagram | Usuwa bieżący diagram z historii. |
+| ![Przycisk Wyczyść wszystko powierzchni](media/plotting-toolbar-10-clear-all-plots.png) | Wyczyść wszystkie powierzchnie | Usuwa wszystkie powierzchnie z historii (monituje o potwierdzenie). |
 
-## <a name="multiple-plot-windows"></a>Wiele okien kreślenia
+## <a name="multiple-plot-windows"></a>Wiele okien wykres
 
-Ponieważ analityków danych często pracować z wielu powierzchni z wielu różnych zestawów danych, RTVS pozwala utworzyć dowolną liczbę niezależnych kreślenia systemu windows. Następnie można rozmieścić tych z systemem windows, jednak chcesz całkowicie w ramce Visual Studio lub spoza tej ramki. (Zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) ogólne informacje na temat zadokowane i zmiany rozmiaru okna.)
+Ponieważ analityków, którzy często pracują z wielu powierzchniach z wielu różnych zestawów danych, RTVS pozwala utworzyć dowolną liczbę kreślenia niezależnie od systemu windows. Następnie można rozmieścić tych oknach, jednak chcesz całkowicie w ramce programu Visual Studio lub na zewnątrz tej ramki. (Zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) ogólne informacje na temat dokowanie i zmiany rozmiaru okna.)
 
-Utwórz nowe okno wykresu za pomocą przycisku paska narzędzi lub **narzędzia R** > **powierzchni** > **nowe okno wykresu**. Staje się nowe okno wykresu *active* okna, które jest, gdzie mają być renderowane nowych powierzchni. Aby zmienić aktywnego okna, przełącz się do niego, a następnie wybierz **aktywować okno wykreślenia** przycisku paska narzędzi lub **narzędzia R** > **geograficzne**  >  **Uaktywnij okno kreślenia**.
+Utwórz nowe okno wykresu za pomocą przycisku paska narzędzi lub **R Tools** > **powierzchni** > **nowe okno wykresu**. Staje się nowe okno wykresu *active* okna, czyli, gdzie mają być renderowane nowych powierzchni. Aby zmienić aktywne okno, przełącz się do niego, a następnie wybierz **Aktywuj okno wykresu** przycisku paska narzędzi lub **R Tools** > **drukuje**  >  **Uaktywnij okno kreślenia**.
 
-Wykresy, zbyt, są niezależne obiektów, co oznacza można skopiować lub przenieść je między kreślenia systemu windows za pomocą obu przeciągania i upuszczania za pomocą myszy lub za pomocą **kopiowania**, **Wytnij**, i **Wklej** polecenia w kontekście kliknij prawym przyciskiem myszy i **Edytuj** menu.
+Powierzchnie, zbyt, są niezależne obiektów, co oznacza, można skopiować lub przenieść je między kreślenia systemu windows za pomocą obu przeciągania i upuszczania za pomocą myszy lub za pomocą **kopiowania**, **Wytnij**, i **Wklej** polecenia w kontekście kliknij prawym przyciskiem myszy i **Edytuj** menu.
 
-Domyślnym zachowaniem przeciągania i upuszczania jest kopiowania; Aby przenieść, przeciągnij i upuść trzymając wciśnięty **Shift** klucza.
+Domyślne zachowanie przeciągnij i upuść to kopia; Aby przenieść, przeciągnij i upuść przytrzymując naciśnięty **Shift** klucza.
 
-## <a name="plot-history"></a>Historia kreślenia
+## <a name="plot-history"></a>Wykres historii
 
-Polecenia kreślenia są obsługiwane w historii wykresu dla każdego okna, zapewniając, że wszystkie Twoje kreślenia w ramach sesji jest zachowywany. Aby Przejdź historii, użyj przycisków strzałek na pasku narzędzi okna kreślenia lub **Ctrl**+**Alt**+**F11** i **Ctrl** + **Alt**+**F12**. Można również usunąć pojedynczego powierzchni lub wyczyść wszystkie powierzchnie z okna ponownie, używając przycisków paska narzędzi lub **narzędzia R** > **geograficzne** poleceń menu.
+Wykres polecenia są obsługiwane w historii wykresu dla każdego okna, zapewniając, że wszystkie Twoje kreślenia w ramach sesji jest zachowywany. Przejdź do historii, użyj przycisków strzałek na pasku narzędzi okna wykres lub **Ctrl**+**Alt**+**F11** i **Ctrl** + **Alt**+**F12**. Można również usunąć jednej powierzchni lub usuń zaznaczenie wszystkich powierzchni z okna ponownie, używając przycisków paska narzędzi lub **R Tools** > **drukuje** poleceń menu.
 
-Aby wyświetlić całą kolekcję powierzchni, Otwórz okno Historia kreślenia za pomocą przycisku paska narzędzi lub **narzędzia R** > **geograficzne** > **okno historii kreślenia**.
-Historia zawiera listę miniatur dla powierzchni, które były wyświetlane w danym przedziale pogrupowane według różnych kreślenia systemu windows (lub urządzenia). Używanie przycisków powiększenia na pasku narzędzi zmienia rozmiar miniatur.
+Aby wyświetlić całą kolekcję powierzchnie, Otwórz okno Historia wykres, korzystając z przycisku paska narzędzi lub **R Tools** > **drukuje** > **okno Historia kreślenia**.
+Historia zawiera listę miniatury dla wykresów, które były wyświetlane w tym oknie, pogrupowane według różnych kreślenia systemu windows (lub urządzenia). Na pasku narzędzi, za pomocą przycisków powiększenia zmienia rozmiar miniatury.
 
-![Okno historii kreślenia](media/plotting-plot-history-window.png)
+![Wykres historii okna](media/plotting-plot-history-window.png)
 
-Aby otworzyć wykresu w jego oknie skojarzone, kliknij dwukrotnie ten wykres, zaznacz go, a następnie wybierz **Pokaż kreślenia** przycisku paska narzędzi lub kliknij prawym przyciskiem myszy i wybierz **Pokaż kreślenia**. Możesz również wybrać poszczególne kreślenia i skopiuj, Wytnij lub Usuń kontekst kliknij prawym przyciskiem myszy lub **Edytuj** menu.
+Aby otworzyć wykres w jego oknie skojarzone, kliknij dwukrotnie ten wykres, zaznacz go, a następnie wybierz **Pokaż wykres** przycisku paska narzędzi lub kliknij prawym przyciskiem myszy i wybierz **Pokaż wykres**. Możesz również wybrać osoba wykres i kopiowania, wycinania lub usunięcie z kontekstu kliknij prawym przyciskiem myszy lub **Edytuj** menu.
 
-Okres istnienia historii kreślenia we wszystkich okien jest powiązany z okres istnienia sesji R interaktywnego. Zresetuj sesję R lub zamknięcia i ponownego uruchomienia programu Visual Studio jest resetowany historii kreślenia.
+Okres istnienia historię kreślenia we wszystkich oknach jest powiązany z okresem istnienia interaktywnych sesji języka r. Resetowanie sesji języka r. lub zamknięcia i ponownego uruchomienia programu Visual Studio historię wykresu jest resetowany.
 
-## <a name="programmatically-manipulate-plot-windows"></a>Programowo manipulować kreślenia systemu windows
+## <a name="programmatically-manipulate-plot-windows"></a>Programowe zmienianie kreślenia systemu windows
 
-Można programowo manipulować windows kreślenia z kodu języka R, przy użyciu numerów urządzeń do identyfikowania kreślenia określonego systemu windows. 
+Można programowo manipulować windows wykres z kodu języka R do identyfikowania określonych kreślenia systemu windows przy użyciu numerów urządzeń. 
 
-- `dev.list()`: Wyświetl listę wszystkich urządzeń grafiki w bieżącej sesji R.
-- `dev.new()`: Tworzenie nowego urządzenia graficznego (nowe okno wykresu).
-- `dev.set(<device number>)`: Ustaw urządzenia active graficznego.
-- `dev.off()`: Usuwanie aktywnego urządzenia.
+- `dev.list()`: Wyświetl listę wszystkich urządzeń grafiki w bieżącej sesji języka R:.
+- `dev.new()`: Tworzenie nowego urządzenia grafiki (nowe okno wykresu).
+- `dev.set(<device number>)`: Ustaw urządzenia grafiki aktywnej.
+- `dev.off()`: Usuń aktywnych urządzeń.

@@ -1,6 +1,6 @@
 items:
 - name: Dokumentacja programu Visual Studio
-  href: ide/index.md
+  href: ide/index.yml
 - name: Omówienie
   items:
   - name: Informacje o programie Visual Studio 2017
@@ -140,32 +140,24 @@ items:
     href: ide/quickstart-fsharp.md
   - name: 'C#: tworzenie aplikacji internetowej'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C#: tworzenie aplikacji platformy uniwersalnej systemu Windows'
-    href: ide/quickstart-uwp-csharp.md
   - name: 'C#: tworzenie aplikacji konsoli'
     href: ide/quickstart-csharp-console.md
   - name: 'Visual Basic: tworzenie aplikacji konsoli'
     href: ide/quickstart-visual-basic-console.md
 - name: Samouczki
   items:
-  - name: Język C++ w programie Visual Studio...
-    href: /cpp/build/vscpp-step-0-installation
-  - name: Język Python w programie Visual Studio...
-    href: python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-  - name: Język R w programie Visual Studio...
-    href: rtvs/getting-started-with-r.md
-  - name: Środowisko Node.js w programie Visual Studio
-    href: javascript/tutorial-nodejs.md
-  - name: Język C# w programie Visual Studio
-    items:
-    - name: 'C#: tworzenie aplikacji internetowej'
-      href: ide/tutorial-csharp-aspnet-core.md
-    - name: 'C#: tworzenie aplikacji konsoli'
-      href: ide/tutorial-csharp-console.md
-  - name: Visual Basic w programie Visual Studio
-    href: ide/tutorial-visual-basic-console.md
-  - name: Debugowanie w programie Visual Studio
-    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default&contextView=vs-2017
+  - name: C#
+    href: get-started/csharp/
+  - name: F#
+    href: /dotnet/fsharp/
+  - name: Visual Basic
+    href: get-started/visual-basic/
+  - name: C++
+    href: /cpp/get-started/tutorials/
+  - name: Python
+    href: python/
+  - name: Node.js
+    href: javascript/
 - name: Przewodniki z instrukcjami
   items:
   - name: Programowanie
@@ -517,7 +509,7 @@ items:
     - name: Dodatkowe samouczki
       items:
       - name: Tworzenie aplikacji WPF w języku C# lub Visual Basic
-        href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
+        href: /visualstudio/get-started/csharp/tutorial-wpf
       - name: Samouczki aplikacji Windows Forms
         items:
         - name: 'Samouczek 1: tworzenie przeglądarki obrazów (C#)'
@@ -1120,9 +1112,10 @@ items:
       href: ide/developer-community-privacy.md
   - name: Jak zgłosić problem w programie Visual Studio
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Przegląd: zgłaszanie problemu'
-    href: ide/report-a-problem.md
-  - name: 'Przegląd: proponowanie funkcji'
+    items:
+    - name: Zgłaszanie problemu — stany i często zadawane pytania
+      href: ide/report-a-problem.md
+  - name: Zaproponuj funkcję programu Visual Studio
     href: ide/suggest-a-feature.md
   - name: Program poprawy jakości obsługi klienta
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1126,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Porozmawiaj z nami
     href: ide/talk-to-us.md
-ms.openlocfilehash: ea2c50939b41a1495f02330ad5ca5fb0e0472666
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 65504b4cf7bfd126edceacfdcfd1cc71e725e8ca
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348453"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740426"
