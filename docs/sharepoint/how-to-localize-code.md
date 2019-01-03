@@ -1,13 +1,8 @@
 ---
-title: 'Porady: Lokalizowanie kodu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Lokalizowanie kodu | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,50 +13,50 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d170906a66ffaaa0e73d4d7d236c8f41290abe55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990795"
 ---
-# <a name="how-to-localize-code"></a>Porady: Lokalizowanie kodu
-  Niezlokalizowany kodzie użyto wartości ciągu ustalony. Do localize — ciągi kodu, zastąp je z wywołań <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, czyli metody, która odwołuje się do zlokalizowanych zasobów.  
+# <a name="how-to-localize-code"></a>Instrukcje: Lokalizowanie kodu
+  Niezlokalizowany kod używa ciągu ustalonych wartości. Aby zlokalizowania ciągi kodów, zastąp je wywołaniami do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, czyli metody, która odwołuje się do zlokalizowanych zasobów.  
   
 ## <a name="localize-code"></a>Lokalizowanie kodu  
   
-#### <a name="to-localize-code"></a>Aby lokalizowanie kodu  
+#### <a name="to-localize-code"></a>Aby zlokalizować kod  
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu, a następnie wybierz **Dodaj** > **modułu**.  
   
-     Wybierz **pliku zasobów** szablonu.  
+     Wybierz **plik zasobów** szablonu.  
   
     > [!NOTE]  
-    >  Pamiętaj dodać pliku zasobu do elementu projektu SharePoint, aby właściwość Typ wdrożenia jest dostępna. Ta właściwość jest wymagana w dalszej części tej procedury.  
+    >  Pamiętaj dodać plik zasobów do elementu projektu programu SharePoint, tak aby właściwość typu wdrażania była dostępna. Ta właściwość jest wymagana w dalszej części tej procedury.  
   
-2.  Nadaj nazwę dołączyć do dowolnego pliku zasobów języka domyślnego *.resx* rozszerzenia, takie jak *MyAppResources.resx*.  
+2.  Nadaj plikowi zasobów języka domyślnego nazwę wybraną z dołączonym *resx* rozszerzenia, takie jak *MyAppResources.resx*.  
   
-3.  Powtórz kroki 1 i 2, aby dodać pliki oddzielnych zasobów do elementu projektu SharePoint: zlokalizowany jednej dla każdego języka.  
+3.  Powtórz kroki 1 i 2, aby dodać pliki zasobów oddzielne w elemencie projektu programu SharePoint: jeden dla każdego zlokalizowanego języka.  
   
-     Użyj takiej samej nazwie podstawowej dla każdego pliku zlokalizowanych zasobów, ale Dodaj identyfikator kultury. Na przykład nazwa niemiecki zlokalizowanych zasobów *MyAppResources.de DE.resx*.  
+     Użyj tej samej nazwie bazowej dla każdego zlokalizowanego pliku zasobów, ale Dodaj identyfikator kultury. Na przykład, nazwij niemieckie zlokalizowane zasoby *MyAppResources.de-DE.resx*.  
   
-4.  Otwórz każdy plik zasobu i Dodaj zlokalizowanych ciągów. Użyj tych samych parametrach identyfikatorów w każdym pliku.  
+4.  Otwórz każdy plik zasobów i Dodaj zlokalizowane ciągi. Użyj tego samego ciągu identyfikatorów w każdym pliku.  
   
-5.  Zmień wartość **typu wdrożenia** właściwości każdego pliku zasobu do **AppGlobalResource** spowodować każdego pliku wdrożyć folderze App_GlobalResources serwera.  
+5.  Zmień wartość właściwości **typu wdrożenia** właściwości każdego pliku zasobu na **AppGlobalResource** na każdy plik wdrożyć do folderu App_GlobalResources na serwerze.  
   
-6.  Pozostaw wartość **Akcja kompilacji** właściwość jako **osadzonego zasobu**.  
+6.  Pozostaw wartość **Build Action** właściwości każdego plików jako **zasób osadzony**.  
   
      Zasoby osadzone są kompilowane do projektu biblioteki DLL.  
   
-7.  Skompiluj projekt do utworzenia zasobu satelitarne biblioteki dll.  
+7.  Skompiluj projekt, aby utworzyć satelitarne biblioteki DLL zasobu.  
   
-8.  W **projektanta pakietów**, wybierz **zaawansowane** karcie, a następnie dodaj zestawu satelickiego.  
+8.  W **projektancie pakietu**, wybierz **zaawansowane** kartę, a następnie dodaj zestawu satelickiego.  
   
-9. W **lokalizacji** i dołączy identyfikator kultury folderu na ścieżkę lokalizacji, takich jak *de-DE\\\<nazwy elementu projektu >. resources.dll*.  
+9. W **lokalizacji** pola, Dodaj folder ID kultury do ścieżki lokalizacji, takich jak *de-DE\\\<nazwy elementu projektu >. resources.dll*.  
   
-10. Rozwiązanie nie zawiera już odwołania zestawu System.Web, Dodaj odwołanie do niej i dodanie dyrektywy kod w celu <xref:System.Web>.  
+10. Jeśli rozwiązanie nie odwołuje się jeszcze do zestawu System.Web, Dodaj odwołanie do niej i Dodaj dyrektywę w kodzie do <xref:System.Web>.  
   
-11. Znajdź wszystkie ciągi ustalony w kodzie, które są widoczne dla użytkowników, takich jak tekst interfejsu użytkownika, błędy i tekst komunikatu. Zamień wywołanie <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> metodę przy użyciu następującej składni:  
+11. Zlokalizuj wszystkie ciągi zakodowane sprzętowo, które są widoczne dla użytkowników, takie jak tekst interfejsu użytkownika, błędy i tekst komunikatu. Zastąp je wywołaniem do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> metody przy użyciu następującej składni:  
   
     ```csharp  
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")  
@@ -69,13 +64,12 @@ ms.locfileid: "37120562"
   
 12. Wybierz **F5** klawisz, aby skompilować i uruchomić aplikację.  
   
-13. W programie SharePoint zmień język wyświetlania domyślnego.  
+13. W programie SharePoint zmień język wyświetlania z domyślnego.  
   
-     Zlokalizowanych ciągów są wyświetlane w aplikacji. Aby wyświetlić zlokalizowanych zasobów, serwer programu SharePoint musi mieć zainstalowany pakiet językowy zgodny plik zasobu kultury.  
+     W aplikacji, pojawiają się zlokalizowane ciągi. Aby wyświetlić zasoby zlokalizowane, serwer programu SharePoint musi mieć zainstalowany pakiet językowy pasujący plik zasobów kultury.  
   
 ## <a name="see-also"></a>Zobacz także
  [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Porady: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)   
- [Porady: Lokalizowanie znacznika ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Porady: Dodawanie pliku zasobów](../sharepoint/how-to-add-a-resource-file.md)  
-
+ [Instrukcje: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)   
+ [Instrukcje: Lokalizowanie znacznika ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Instrukcje: Dodawanie pliku zasobu](../sharepoint/how-to-add-a-resource-file.md)  

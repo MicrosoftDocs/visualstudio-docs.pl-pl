@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2de92d2b6083fd587dc38a67e189fa9ca24b660d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ea22577acc6c0a50c0f4639ebd6877890a8ce79d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991196"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolki dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +52,7 @@ ms.locfileid: "53052143"
 
 -   **Standard (Narzędzia) w oknach dialogowych:** nie motywów. Czy nie re szablonu. Użyj domyślnych stylu kontrolki podstawowe.
 
--   **Narzędzia systemu windows, edytory dokumentu, powierzchni projektowania i motywów okien dialogowych:** używać specjalistycznych wygląd kompozycji przy użyciu usługi kolorów.
+-   **Okna narzędzi, edytory dokumentu, powierzchni projektowania i motywów okna dialogowe:** Użyj wyspecjalizowane wygląd kompozycji przy użyciu usługi kolorów.
 
 ###  <a name="BKMK_Scrollbars"></a> Paski przewijania
  Paski przewijania powinien być zgodny [typowe wzorce interakcji dla Windows paski przewijania](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) chyba, że ich zostały rozszerzone o informacje o zawartości, takie jak w edytorze kodu.
@@ -73,13 +72,13 @@ ms.locfileid: "53052143"
 
 -   Wymagane pola powinny mieć  **\<wymagane >** jako znaki wodne w nich. Nie należy zmieniać kolor tła, z wyjątkiem sytuacji, w rzadkich sytuacjach.
 
--   Błąd weryfikacji: zobacz [powiadomienia i postęp dla programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+-   Błąd sprawdzania poprawności: Zobacz [powiadomienia i postęp dla programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
 -   Pól danych wejściowych z tego względu celu dopasowania do zawartości, nie Dopasuj szerokość okna, w którym są wyświetlane, ani też arbitralnie jest zgodna z długością długie pola, na przykład ścieżki. Długość może to oznaczać użytkownikowi ograniczenia dotyczące liczby znaków są dozwolone w tym polu.
 
-     ![Szerokość formantu nieprawidłowe pole wejściowe](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl") **długość nieprawidłowe pole wejściowe: jest mało prawdopodobne, że nazwa będzie długich.**
+     ![Szerokość formantu nieprawidłowe pole wejściowe](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl") **długość nieprawidłowe pole wejściowe: Jest mało prawdopodobne, że nazwa będzie długich.**
 
-     ![Popraw szerokość formantu pola wejściowego](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl") **Popraw dane wejściowe długość pola: pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości.**
+     ![Popraw szerokość formantu pola wejściowego](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl") **Popraw dane wejściowe długość pola: Pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości.**
 
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Pola kombi i list rozwijanych
  Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wskazówki dotyczące list rozwijanych i pól kombi](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
@@ -116,9 +115,9 @@ ms.locfileid: "53052143"
 
 -   Dostosowanie pól wyboru z linią bazową elementu pierwszego wiersza tekstu.
 
-     ![Wyrównanie nieprawidłowe pole wyboru](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign") **wyrównanie nieprawidłowe pole wyboru: pole wyboru skupia się na tekst.**
+     ![Nieprawidłowe pole wyboru wyrównanie](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign") **wyrównanie nieprawidłowe pole wyboru: Pole wyboru skupia się na tekst.**
 
-     ![Popraw wyrównanie pole wyboru](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign") **Popraw wyrównanie pola wyboru: pole wyboru jest wyrównana z linią bazową elementu pierwszego wiersza tekstu.**
+     ![Popraw wyrównanie pole wyboru](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign") **Popraw wyrównanie pola wyboru: Pole wyboru jest powiązana z linią bazową elementu pierwszego wiersza tekstu.**
 
 ###  <a name="BKMK_RadioButtons"></a> Przyciski radiowe
  Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wytyczne dotyczące przycisków radiowych](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
@@ -425,24 +424,24 @@ ms.locfileid: "53052143"
 ##### <a name="tree-view-control"></a>Kontrolka widoku drzewa
  Kontrolki drzewa w usłudze Visual Studio, należy wykonać typowej nawigacji klawiatury:
 
--   **Strzałkę w górę:** wybierz elementy przez przeniesienie w górę drzewa
+-   **Strzałka: w górę** Wybierz elementy przez przeniesienie w górę drzewa
 
--   **Strzałkę w dół:** wybierz elementy, przenosząc niżej na drzewie
+-   **Strzałka: w dół** Wybierz elementy, przenosząc niżej na drzewie
 
--   **Strzałka w prawo:** rozwiń węzeł w drzewie
+-   **Strzałka w prawo:** Rozwiń węzeł w drzewie
 
--   **Strzałka w lewo:** zwinąć węzeł w drzewie
+-   **Strzałka w lewo:** Zwiń węzeł w drzewie
 
--   **Wprowadź klucz:** inicjować, obciążenia, należy wykonać wybranego elementu
+-   **Wprowadź klucz:** Zainicjuj, obciążenia, należy wykonać wybranego elementu
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (widok drzewa i siatki)
  Formant trid jest formant złożony, który zawiera widok drzewa w obrębie siatki. Rozwijanie, zwijanie i przechodząc drzewa należy przestrzegać tych samych poleceń klawiatury w widoku drzewa, z następującymi dodatkami:
 
-- **Strzałka w prawo:** rozwinąć węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.
+- **Strzałka w prawo:** Rozwiń węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.
 
-- **Karta:** Navigates do najbliższej komórki po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.
+- **Karta:** Powoduje przejście do najbliższej komórce po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.
 
-- **Shift + Tab:** Navigates do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.
+- **Shift + Tab:** Powoduje przejście do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.
 
   ![Trid sterowania w programie Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")
 

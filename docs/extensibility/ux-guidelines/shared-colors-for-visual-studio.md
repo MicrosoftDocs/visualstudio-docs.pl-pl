@@ -1,9 +1,6 @@
 ---
 title: Udostępnione kolory dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d628f2f83943b88a415699dddd78f033597983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991246"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępnione kolory dla programu Visual Studio
 Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby Twoje element interfejsu, aby były zgodne z podobne funkcje, umożliwia już istniejącymi nazwami tokenu w plikach definicji pakietu wybierz i przypisania kolorów. Gwarantuje to, że Twój interfejs użytkownika pozostaje zgodny z całego środowiska programu Visual Studio i że jest aktualizowana automatycznie po motywy są dodawane lub aktualizowane.  
@@ -50,7 +47,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Przycisk standardowy](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Przycisk standardowy
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Przycisk | `CommonControls.Button` |
 | Obramowanie przycisku | `CommonControls.ButtonBorder` |
@@ -59,7 +56,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Przycisk domyślny](../../extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Przycisk domyślny
 
-| Element | Nazwa tokenu: Category.color | 
+| Element | Nazwa tokenu: Category.Color | 
 | --- | --- | 
 | Przycisk | `CommonControls.ButtonDefault` |
 | Obramowanie przycisku | `CommonControls.ButtonBorderDefault` |
@@ -68,7 +65,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Przycisk wyłączone](../../extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Przycisk wyłączone  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Przycisk | `CommonControls.ButtonDisabled` |
 | Obramowanie przycisku | `CommonControls.ButtonBorderDisabled` |
@@ -77,7 +74,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Przycisk po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Przycisk po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Przycisk | `CommonControls.ButtonHover` |
 | Obramowanie przycisku | `CommonControls.ButtonBorderHover` |
@@ -86,7 +83,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Po naciśnięciu przycisku](../../extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Po naciśnięciu przycisku  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Przycisk | `CommonControls.ButtonPressed` |
 | Obramowanie przycisku | `CommonControls.ButtonBorderPressed` |
@@ -95,7 +92,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Przycisk ukierunkowanych](../../extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Przycisk fokusem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Przycisk | `CommonControls.ButtonFocused` |
 | Obramowanie przycisku | `CommonControls.ButtonBorderFocused` |
@@ -111,7 +108,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Pole wyboru](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303 162_Checkbox")<br />Pole wyboru domyślnego
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.CheckBoxBackground` |
 | Obramowanie | `CommonControls.CheckBoxBorder` |
@@ -122,7 +119,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Wyłączone pole wyboru](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303 163_CheckboxDisabled")<br />Wyłączone pole wyboru  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.CheckBoxBackgroundDisabled` |
 | Obramowanie | `CommonControls.CheckBoxBorderDisabled` |
@@ -133,7 +130,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
  ![Pole wyboru po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-164_checkboxhover.png "0303 164_CheckboxHover")<br />Pole wyboru po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.CheckBoxBackgroundHover` |
 | Obramowanie | `CommonControls.CheckBoxBorderHover` |
@@ -144,7 +141,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Po naciśnięciu pola wyboru](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303 165_CheckboxPressed")<br />Po naciśnięciu pola wyboru  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.CheckBoxBackgroundPressed` |
 | Obramowanie | `CommonControls.CheckBoxBorderPressed` |
@@ -155,7 +152,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Pole wyboru ukierunkowanych](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303 166_CheckboxFocused")<br />Pole wyboru fokusem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.CheckBoxBackgroundFocused` |
 | Obramowanie | `CommonControls.CheckBoxBorderFocused` |
@@ -174,7 +171,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Domyślne listy — dół/kombi](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303 168_DropDownComboBox")<br />Domyślne listy — dół/kombi
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.ComboBoxBackground` |
 | Obramowanie | `CommonControls.ComboBoxBorder` |
@@ -187,7 +184,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Wyłączone pole listy — dół/kombi](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")<br />Wyłączone pole listy — dół/kombi
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.ComboBoxBackgroundDisabled` |
 | Obramowanie | `CommonControls.ComboBoxBorderDisabled` |
@@ -200,7 +197,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Pola listy — dół/kombi po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")<br />Pola listy — dół/kombi po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.ComboBoxBackgroundHover` |
 | Obramowanie | `CommonControls.ComboBoxBorderHover` |
@@ -213,7 +210,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Naciśnięciu pola kombi — dół/upuszczania](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")<br />Po naciśnięciu pola listy — dół/kombi  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.ComboBoxBackgroundPressed` |
 | Obramowanie | `CommonControls.ComboBoxBorderPressed` |
@@ -226,7 +223,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
  ![Listy — dół/kombi naciśnięty widoku elementu listy](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")<br />Listy — dół/kombi naciśnięty widoku elementu listy  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
 | Obramowanie | `CommonControls.ComboBoxListBorder`<br />`CommonControls.ComboBoxListBorderHover`<br />`CommonControls.ComboBoxListBorderPressed`<br />`CommonControls.ComboBoxListBorderFocused` |
@@ -237,7 +234,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Pola listy — dół/kombi z fokusem](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")<br />Pola listy — dół/kombi z fokusem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.ComboBoxBackgroundFocused` |
 | Obramowanie | `CommonControls.ComboBoxBorderFocused` |
@@ -250,7 +247,7 @@ Gdy używasz standardowego paska poleceń programu Visual Studio w Twojej funkcj
 
 ![Wybór wprowadzania tekstu pola kombi — dół/upuszczania](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")<br />Wybór danych wejściowych tekst pola kombi — dół/upuszczania  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Wyróżnij | `CommonControls.ComboBoxTextInputSelection` |
 
@@ -268,7 +265,7 @@ Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonaln
 
 **Nagłówek kolumny: domyślny stan**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Header.Default` |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextActive` |
@@ -277,7 +274,7 @@ Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonaln
 
 **Nagłówek kolumny: Umieść kursor stanu**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Header.MouseOver` |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextHover` |
@@ -286,7 +283,7 @@ Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonaln
 
 **Nagłówek kolumny: naciśnięty stanu**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `CommonControls.CheckBoxBackgroundPressed` |
 | Pierwszego planu (tekst) | `CommonControls.CheckBoxBorderPressed` |
@@ -298,7 +295,7 @@ Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonaln
 
 **Wyświetl elementy listy: domyślny stan**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Przezroczyste |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextActive` |
@@ -306,7 +303,7 @@ Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonaln
 
 **Wyświetl elementy listy: stanu aktywnego**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemActive` |
 | Pierwszego planu (tekst) | `TreeView.SelectedItemActiveText` |
@@ -314,7 +311,7 @@ Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonaln
 
 **Wyświetl elementy listy: stan nieaktywny**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemInactive` |
 | Pierwszego planu (tekst) | `TreeView.SelectedItemInactiveText` |
@@ -327,7 +324,7 @@ Tekst zawiera wyraźną wyjaśnienie głównym, co można zrobić na stronie okn
 
 ![Domyślny tekst](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Tekst domyślny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.ControlText` |
 
@@ -336,7 +333,7 @@ Na stronach dokumentu z dużą liczbą tekstu i formantów instruktażowy tekst 
 
 ![Tekst pomocniczy](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Tekst pomocniczy
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.ControlEditHintText` |
 
@@ -347,7 +344,7 @@ Tekst wskazówki wyświetlany w kontrolce pusty, poniżej kontrolki lub powierzc
 
 ![Domyślny tekst wskazówki](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Domyślny tekst wskazówki
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.ControlEditHintText` |
 
@@ -355,7 +352,7 @@ Tekst wskazówki wyświetlany w kontrolce pusty, poniżej kontrolki lub powierzc
 
 ![Wymagany tekst wskazówki](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Tekst wskazówki wymagane
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.ControlRequiredHintText` |
 | Tło | `Environment.ControlRequiredBackground` |
@@ -366,7 +363,7 @@ Tekst wskazówki wyświetlany w kontrolce pusty, poniżej kontrolki lub powierzc
 
 ![Wyszukaj tekst kontrolki pola](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Tekst kontrolki pola wyszukiwania
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `SearchControl.UnfocusedWatermarkText` |
 
@@ -383,7 +380,7 @@ Hiperlink jest jeden formant, który nie ma parę tła/na pierwszym planie. We w
 
 ![Domyślnego hiperlinku](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303 134_Hyperlink")<br />Domyślnego hiperlinku
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.PanelHyperlink` |
 
@@ -391,7 +388,7 @@ Hiperlink jest jeden formant, który nie ma parę tła/na pierwszym planie. We w
 
 ![Hiperłącza po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-135_hyperlinkhover.png "0303 135_HyperlinkHover")<br />Hiperłącza po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.PanelHyperlinkHover` |
 
@@ -399,7 +396,7 @@ Hiperlink jest jeden formant, który nie ma parę tła/na pierwszym planie. We w
 
 ![Po naciśnięciu hiperłącze](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303 136_HyperlinkPressed")<br />Po naciśnięciu hiperłącza  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.PanelHyperlinkPressed` |
 
@@ -407,7 +404,7 @@ Hiperlink jest jeden formant, który nie ma parę tła/na pierwszym planie. We w
 
 ![Wyłączone hiperłącze](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "0303 137_HyperlinkDisabled")<br />Hiperłącze wyłączone  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.PanelHyperlinkDisabled` |
 
@@ -424,7 +421,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Domyślnie pasek informacyjny](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303 139_Infobar")<br />Domyślne informacyjny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.InfoBarBackground` |
 | Pierwszego planu (tekst) | `InfoBar.InfoBar` |
@@ -434,7 +431,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Zamknij pasek informacyjny domyślne (&times;) przycisk](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Zamknij pasek informacyjny domyślne (&times;) przycisku
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.CloseButton` |
 | Obramowanie | `InfoBar.CloseButtonBorder` |
@@ -444,7 +441,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Zamknij pasek informacyjny (&times;) przycisku po umieszczeniu na](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Zamknij pasek informacyjny (&times;) przycisku po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.CloseButtonHover` |
 | Obramowanie | `InfoBar.CloseButtonHoverBorder` |
@@ -454,7 +451,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Naciśnięto Zamknij pasek informacyjny (&times;) przycisk](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Naciśnięto Zamknij pasek informacyjny (&times;) przycisku
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.CloseButtonDown` |
 | Obramowanie | `InfoBar.CloseButtonDownBorder` |
@@ -464,7 +461,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk hiperłącze informacyjnym domyślny](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Domyślny przycisk hiperłącze pasek informacyjny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `InfoBar.Hyperlink` |
 
@@ -472,7 +469,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk hiperłącza informacyjny po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Przycisk hiperłącza informacyjny po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Infobar.HyperlinkMouseOver`<br />(Z podkreślenie) |
 
@@ -480,7 +477,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk hiperłącza po naciśnięciu informacyjnym](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Przycisk hiperłącza po naciśnięciu pasek informacyjny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Infobar.HyperlinkMouseDown`<br />(Z podkreślenie) |
 
@@ -488,7 +485,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Domyślny wbudowany pasek informacyjny hiperłącze przycisk](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Domyślny wbudowany pasek informacyjny hiperłącze przycisk
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `InfoBar.Hyperlink` |
 
@@ -496,7 +493,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk hiperłącza wbudowany pasek informacyjny po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Przycisk hiperłącza wbudowany pasek informacyjny po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Infobar.HyperlinkMouseOver`<br />(Z podkreślenie) |
 
@@ -504,7 +501,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk hiperłącza wbudowany pasek informacyjny po naciśnięciu](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Naciśnięty przycisk hiperłącza wbudowany pasek informacyjny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Infobar.HyperlinkMouseDown`<br />(Z podkreślenie) |
 
@@ -512,7 +509,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Domyślny przycisk paska informacyjnego](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Przycisk paska informacyjnego domyślny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.Button` |
 | Pierwszego planu (tekst) | `InfoBar.Button` |
@@ -522,7 +519,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk paska informacyjnego po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Przycisk paska informacyjnego po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.ButtonMouseOver` |
 | Pierwszego planu (tekst) | `InfoBar.ButtonMouseOver` |
@@ -532,7 +529,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Informacyjny po naciśnięciu przycisku](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Informacyjny po naciśnięciu przycisku
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.ButtonMouseDown` |
 | Pierwszego planu (tekst) | `InfoBar.ButtonMouseDown` |
@@ -542,7 +539,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk wyłączone informacyjnym](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Przycisk wyłączone pasek informacyjny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.ButtonDisabled` |
 | Pierwszego planu (tekst) | `InfoBar.ButtonDisabled` |
@@ -552,7 +549,7 @@ Infobars są używane do Podaj więcej informacji na temat danego kontekstu i za
 
 ![Przycisk ukierunkowanych informacyjnym](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Przycisk ukierunkowanych pasek informacyjny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `InfoBar.ButtonFocus` |
 | Pierwszego planu (tekst) | `InfoBar.ButtonFocus` |
@@ -571,7 +568,7 @@ Paski przewijania mają różne przez środowisko Visual Studio i nie będzie ju
 
 ![Pasek przewijania domyślne](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "0303 141_Scrollbar")<br />Domyślne paska przewijania
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pasek przewijania | `Environment.ScrollBarBackground` |
 | Pierwszego planu (przycisku przewijania) | `Environment.ScrollBarThumbBackground` |
@@ -580,7 +577,7 @@ Paski przewijania mają różne przez środowisko Visual Studio i nie będzie ju
 
 ![Pasek przewijania po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-143_scrollbarhover.png "0303 143_ScrollbarHover")<br />Pasek przewijania po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pasek przewijania | `Environment.ScrollBarBackground` |
 | Pierwszego planu (przycisku przewijania) | `Environment.ScrollBarThumbMouseOverBackground` |
@@ -589,7 +586,7 @@ Paski przewijania mają różne przez środowisko Visual Studio i nie będzie ju
 
 ![Pasek przewijania po naciśnięciu](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "0303 145_ScrollbarPressed")<br />Naciśnięto paska przewijania  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pasek przewijania | `Environment.ScrollBarBackground` |
 | Pierwszego planu (przycisku przewijania) | `Environment.ScrollBarThumbPressedBackground` |
@@ -598,7 +595,7 @@ Paski przewijania mają różne przez środowisko Visual Studio i nie będzie ju
 
 ![Strzałki paska przewijania domyślne](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303 142_ScrollbarArrow")<br />Strzałki paska przewijania domyślne
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ScrollBarArrowBackground`<br />(Ustawione na ten sam kolor jak pasek przewijania). |
 | Pierwszego planu (symbol) | `Environment.ScrollBarArrowGlyph` |
@@ -607,7 +604,7 @@ Paski przewijania mają różne przez środowisko Visual Studio i nie będzie ju
 
 ![Przewiń w pasku strzałkę po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-144_scrollbararrowhover.png "0303 144_ScrollbarArrowHover")<br />Strzałki paska przewijania po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ScrollBarArrowMouseOverBackground`<br />(Ustawione na ten sam kolor jak pasek przewijania). |
 | Pierwszego planu (symbol) | `Environment.ScrollBarArrowGlyphMouseOver` |
@@ -616,7 +613,7 @@ Paski przewijania mają różne przez środowisko Visual Studio i nie będzie ju
 
 ![Strzałki paska przewijania po naciśnięciu](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br />Kliknięciu strzałki paska przewijania
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ScrollBarArrowPressedBackground`<br />(Ustawione na ten sam kolor jak pasek przewijania). |
 | Pierwszego planu (symbol) | `Environment.ScrollBarArrowGlyphPressed` |
@@ -645,7 +642,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Pole wejściowe wyszukiwania ukierunkowanych](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br />Koncentruje się pole wejściowe wyszukiwania  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.FocusedBackground` |
 | Pierwszego planu (tekst) | `SearchControl.FocusedBackground` |
@@ -656,7 +653,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br />Pole wejściowe wyszukiwania po przeniesieniu fokusu, aktywne
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.SearchActiveBackground` |
 | Pierwszego planu (tekst) | `SearchControl.SearchActiveBackground` |
@@ -667,7 +664,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Pole wejściowe wyszukiwania po przeniesieniu fokusu, nieaktywne](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Pole wejściowe wyszukiwania po przeniesieniu fokusu, nieaktywne  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.Unfocused` |
 | Pierwszego planu (tekst) | `SearchControl.Unfocused` |
@@ -678,7 +675,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Pole wejściowe podświetlony wyszukiwany](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br />Podświetlony wyszukiwany pola wejściowego
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.Selection` |
 | Pierwszego planu (tekst) | `SearchControl.FocusedBackground` |
@@ -689,7 +686,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Pole wejściowe wyszukiwania wyłączone](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br />Pole wejściowe wyszukiwania wyłączone
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.Disabled` |
 | Pierwszego planu (tekst) | `SearchControl.Disabled` |
@@ -700,7 +697,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Fokus przycisku akcji Wyszukaj](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br />Przycisk akcji ukierunkowane wyszukiwanie
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol wyszukiwania) | `SearchControl.SearchGlyph` |
@@ -712,7 +709,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Przycisk akcji po przeniesieniu fokusu wyszukiwania](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br />Przycisk akcji wyszukiwania po przeniesieniu fokusu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol wyszukiwania) | `SearchControl.SearchGlyph` |
@@ -724,7 +721,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Przycisk akcji po naciśnięciu wyszukiwania](../../extensibility/ux-guidelines/media/0303-116-1_searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br />Naciśnięty przycisk Akcja wyszukiwania
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.ActionButtonMouseDown` |
 | Pierwszego planu (symbol) | `SearchControl.ActionButtonMouseDownGlyph` |
@@ -734,7 +731,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Wyszukiwanie akcji przycisk wyłączone](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br />Przycisk akcji wyszukiwania wyłączone
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol) | `SearchControl.ActionButtonDisabledGlyph` |
@@ -744,7 +741,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Przycisk listy rozwijanej wyszukiwania ukierunkowanych](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")<br />Przycisk listy rozwijanej ukierunkowane wyszukiwanie
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.FocusedDropDownButton` |
 | Pierwszego planu (symbol) | `SearchControl.FocusedDropDownButtonGlyph` |
@@ -754,7 +751,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Przycisk listy rozwijanej wyszukiwania po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")<br />Przycisk listy rozwijanej wyszukiwania po przeniesieniu fokusu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.UnfocusedDropDownButton` |
 | Pierwszego planu (symbol) | `SearchControl.UnfocusedDropDownButtonGlyph` |
@@ -764,7 +761,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Wyszukiwanie po naciśnięciu przycisku rozwijanego](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />Naciśnięty przycisk listy rozwijanej wyszukiwania
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.MouseDownDropDownButton` |
 | Pierwszego planu (symbol) | `SearchControl.MouseDownDropDownButtonGlyph` |
@@ -774,7 +771,7 @@ Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wz
 
 ![Przycisk listy rozwijanej wyszukiwania wyłączone](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br />Przycisk listy rozwijanej wyszukiwania wyłączone
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | Brak |
 | Pierwszego planu (symbol) | `SearchControl.DisabledDownButtonGlyph` |
@@ -792,7 +789,7 @@ Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne 
 
 **Elementy listy rozwijanej wyszukiwania**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Obramowanie | `SearchControl.PopupBorder` |
 | Separator | `SearchControl.PopupSectionHeaderSeparator` |
@@ -802,7 +799,7 @@ Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne 
 
 ![Domyślne wyszukiwanie sugerowane](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303 125_SearchSuggested")<br />Domyślne sugerowane wyszukiwania  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `SearchControl.PopupItemText` |
@@ -811,7 +808,7 @@ Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne 
 
 ![Zalecane wyszukiwania po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br />Sugerowane wyszukiwania po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `SearchControl.PopupMouseOverItemText` |
@@ -823,7 +820,7 @@ Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne 
 
 ![Opcje wyszukiwania](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303 127_SearchOptions")<br />Domyślne opcje wyszukiwania (link)  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (pole tekstowe) | `SearchControl.PopupCheckboxText` |
@@ -837,7 +834,7 @@ Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne 
 
 ![Opcje (link) wyszukiwania po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303 130_SearchOptionsHover")<br />Opcje wyszukiwania (link) po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (pole tekstowe) | `SearchControl.PopupCheckboxMouseDownText` |
@@ -850,7 +847,7 @@ Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne 
 
 ![Naciśnięto opcje wyszukiwania (link)](../../extensibility/ux-guidelines/media/0303-132_searchoptionspressed.png "0303 132_SearchOptionsPressed")<br />Naciśnięto opcje wyszukiwania (link)  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło pola wyboru | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (pole tekstowe) | `SearchControl.PopupCheckboxMouseDownText` |
@@ -871,7 +868,7 @@ Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i
 
 ![Element widoku drzewa domyślny](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303 148_TreeView")<br />Element widoku drzewa domyślny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.Background` |
 | Pierwszego planu (tekst) | `TreeView.Background` |
@@ -882,7 +879,7 @@ Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i
 
 ![Element widoku drzewa po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303 149_TreeViewHover")<br />Element widoku drzewa po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.Background` |  
 | Pierwszego planu (tekst) | `TreeView.Background` |
@@ -893,7 +890,7 @@ Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i
 
 ![Drzewo elementu widoku w sprawie przeciągnij za pośrednictwem](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303 150_TreeViewDragOver")<br />Przeciągnij element widoku drzewa w  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.DragOverItem` |
 | Pierwszego planu (tekst) | `TreeView.DragOverItem` |
@@ -904,7 +901,7 @@ Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i
 
 ![Zaznaczone, a podczas projektowania położono elementu widoku drzewa](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303 151_TreeViewFocused")<br />Element widoku drzewa wybranego i skupionego projektu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemActive` |
 | Pierwszego planu (tekst) | `TreeView.SelectedItemActive` |
@@ -915,7 +912,7 @@ Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i
 
 ![Element widoku drzewa wybranych i po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303 152_TreeViewUnfocused")<br />Element widoku drzewa wybranych i po przeniesieniu fokusu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemInactive` |
 | Pierwszego planu (tekst) | `TreeView.SelectedItemInactive` |
@@ -926,7 +923,7 @@ Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i
 
 ![Zaznaczone, a podczas projektowania położono elementu widoku drzewa po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br />Element widoku drzewa wybranego i skupionego projektu po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemActive` |
 | Pierwszego planu (tekst) | `TreeView.SelectedItemActive` |
@@ -937,7 +934,7 @@ Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i
 
 ![Element widoku drzewa wybranych i po przeniesieniu fokusu po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br />Element widoku drzewa wybranych i po przeniesieniu fokusu po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemInactive` |
 | Pierwszego planu (tekst) | `TreeView.SelectedItemInactive` |
@@ -958,7 +955,7 @@ Tło środowiska składa się z dwóch warstw. Dolna warstwa jest jednolitego ko
 
 **Dolnej warstwie powłoki wyglądu**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | `Environment.EnvironmentBackground` |
 
@@ -966,7 +963,7 @@ Tło środowiska składa się z dwóch warstw. Dolna warstwa jest jednolitego ko
 
 > Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | `Environment.EnvironmentBackgroundGradientBegin`<br />`Environment.EnvironmentBackgroundGradientEnd`<br />`Environment.EnvironmentBackgroundGradientMiddle1`<br />`Environment.EnvironmentBackgroundGradientMiddle2` |  
 
@@ -984,7 +981,7 @@ Dwa zestawy token nazwy są używane do tła półki polecenia: on ustawiony, na
 
 > Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
@@ -992,7 +989,7 @@ Dwa zestawy token nazwy są używane do tła półki polecenia: on ustawiony, na
 
 > Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | `Environment.CommandShelfBackgroundGradientBegin`<br />`Environment.CommandShelfBackgroundGradientMiddle`<br />`Environment.CommandShelfBackgroundGradientEnd` |
 
@@ -1008,33 +1005,33 @@ Manifest Designer został zaprojektowany jako sposób, aby ułatwić edytowanie 
 
 **Karta wybranego projektanta manifestu: domyślny stan**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `ManifestDesigner.TabActive` |
 | Obramowanie | Brak |
 
 **Okienko projektanta manifestu w opis wybranej: domyślny stan**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `ManifestDesigner.DescriptionPane` |
 
 **Manifest Designer wybranej strony zawartości: domyślny stan**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `ManifestDesigner.Background` |
 | Tekst pomocy w oknie dialogowym | `ManifestDesigner.WatermarkText`<br />(Ta nazwa tokenu nie odpowiada jego funkcji.) |
 
 **Karta projektanta manifestu: Usunięto zaznaczenie stanu**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `ManifestDesigner.Tab.Inactive` |
 
 **Karta projektanta manifestu: Umieść kursor stanu**
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `ManifestDesigner.Tab.Mouseover` |
 
@@ -1066,7 +1063,7 @@ Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjo
 
 ![Domyślny tytuł menu z symbol](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br />Domyślny tytuł menu z glifów
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextActive` |
@@ -1079,7 +1076,7 @@ Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjo
 
 ![Tytuł menu z symbol po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-005_menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")<br />Tytuł menu z symbol po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextHover` |
@@ -1092,7 +1089,7 @@ Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjo
 
 ![Naciśnięto tytuł menu z symbol](../../extensibility/ux-guidelines/media/0303-007_menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")<br />Naciśnięto tytuł menu z glifów
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextActive` |
@@ -1103,7 +1100,7 @@ Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjo
 
 ![Tytuł menu przy użyciu symbolu wyłączone](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br />Tytuł menu wyłączone z glifów
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextInactive` |
@@ -1124,7 +1121,7 @@ Element menu poszczególnych składa się z tekst menu i opcjonalnej ikony, pole
 
 ![Domyślne elementy menu](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "0303 010_MenuDefault")<br />Domyślne elementy menu  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextActive` |
@@ -1140,7 +1137,7 @@ Element menu poszczególnych składa się z tekst menu i opcjonalnej ikony, pole
 
 ![Wybrane menu](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303 012_MenuSelected")<br />Wybrany element menu    
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Znacznik wyboru | `Environment.CommandBarCheckBox` |  
 | Znacznik wyboru tła | `Environment.CommandBarSelectedIcon` |  
@@ -1155,7 +1152,7 @@ Element menu poszczególnych składa się z tekst menu i opcjonalnej ikony, pole
 
 ![Po wskazaniu wskaźnikiem menu wybrane](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303 015_MenuHoverSelected")<br />Wybrany element menu po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMenuItemMouseOver` |
 | Pierwszego planu (tekst) | `Environment.CommandBarMenuItemMouseOver` |
@@ -1171,7 +1168,7 @@ Element menu poszczególnych składa się z tekst menu i opcjonalnej ikony, pole
 
 ![Zaznaczone wyłączone menu](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303 017_MenuDisabledChecked")<br />Wyłączony element menu znacznika wyboru
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextInactive` |
 | Pierwszego planu (podmenu symbol) | `Environment.CommandBarMenuSubmenuGlyph` |
@@ -1204,7 +1201,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 **Grupa paska poleceń: domyślny stan**  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Obramowanie | `Environment.CommandBarToolBarBorder` |
@@ -1225,7 +1222,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Polecenie domyślną ikonę](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303 023_CommandIconDefault")<br />Domyślna ikona polecenia
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | N/d (dziedziczy tło paska poleceń) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextActive` |
@@ -1235,7 +1232,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Domyślnie, ikona wybranego polecenia](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br />Domyślnie, ikona wybranego polecenia  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarSelected` |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextSelected` |
@@ -1245,7 +1242,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Ikona polecenia po wskazaniu wskaźnikiem lub fokus](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303 025_CommandIconHover")<br />Ikona polecenia po wskazaniu wskaźnikiem lub koncentracji uwagi
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextHover` |
@@ -1255,7 +1252,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Wybrana ikona polecenia po wskazaniu wskaźnikiem lub fokus](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303 026_CommandIconHoverSelected")<br />Ikona wybranego polecenia po wskazaniu wskaźnikiem lub koncentracji uwagi
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarHoverOverSelected` |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextHoverOverSelected` |
@@ -1265,7 +1262,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Naciśnięto ikona polecenia](../../extensibility/ux-guidelines/media/0303-027_commandiconpressed.png "0303 027_CommandIconPressed")<br />Ikona po naciśnięciu polecenia
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextMouseDown` |
@@ -1275,7 +1272,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Ikona polecenia wyłączenia](../../extensibility/ux-guidelines/media/0303-028_commandicondisabled.png "0303 028_CommandIconDisabled")<br />Ikona polecenia wyłączenia
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | N/d (dziedziczy tło paska poleceń) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextInactive` |
@@ -1297,7 +1294,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Polecenie Pasek danych wejściowych polu kombi](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303 030_ComboBoxInputField")<br />Pole wejściowe pole kombi pasek poleceń  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxBackground` |
 | Pierwszego planu (tekst) | `Environment.ComboBoxText` |
@@ -1308,7 +1305,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Listy pola kombi&#45;naciśnięty przycisk](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Przycisk listy rozwijanej na pasku poleceń
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | N/d (dziedziczy tło paska poleceń) |
 | Pierwszego planu (symbol) | `Environment.ComboBoxGlyph` |
@@ -1317,7 +1314,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Listy rozwijanej na pasku poleceń](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br />Listy rozwijanej na pasku poleceń
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxPopupBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.ComboBoxItemText` |
@@ -1327,7 +1324,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Polecenie Pasek danych wejściowych polu kombi po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br />Polecenie Pasek danych wejściowych polu kombi po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.ComboBoxMouseOverText` |
@@ -1338,7 +1335,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Przycisk listy rozwijanej paska poleceń po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")<br />Przycisk listy rozwijanej paska poleceń po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxButtonMouseOverBackground` |
 | Pierwszego planu (symbol) | `Environment.ComboBoxMouseOverGlyph` |
@@ -1347,7 +1344,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
  ![Lista listę rozwijaną paska poleceń po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")<br />Lista listę rozwijaną paska poleceń po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | W tle (element Menu) | `Environment.ComboBoxItemMouseOverBackground` |
 | Pierwszego planu (tekst) | `Environment.ComboBoxItemMouseOverText` |
@@ -1357,7 +1354,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Fokus pasku pole wejściowe pola kombi poleceń](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br />Koncentruje się pole wejściowe pole kombi pasek poleceń
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxFocusedBackground` |
 | Pierwszego planu (tekst) | `Environment.ComboBoxFocusedText` |
@@ -1368,7 +1365,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Fokus pasku przycisk listy rozwijanej poleceń](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")<br />Polecenie ukierunkowanych paska przycisk listy rozwijanej
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxFocusedButtonBackground` |
 | Pierwszego planu (symbol) | `Environment.ComboBoxFocusedGlyph` |
@@ -1377,7 +1374,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Naciśnięto polecenia paska pole wejściowe pola kombi](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br />Naciśnięciu pola wejściowego pole kombi pasek poleceń
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxMouseDownBackground` |
 | Pierwszego planu (tekst) | `Environment.ComboBoxMouseDownText` |
@@ -1388,7 +1385,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Naciśnięto pasku przycisk listy rozwijanej poleceń](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")<br />Naciśnięto polecenia paska przycisk listy rozwijanej  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxButtonMouseDownBackground` |
 | Pierwszego planu (symbol) | `Environment.ComboBoxMouseDownGlyph` |
@@ -1397,7 +1394,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Wyłączone pasku pole wejściowe pola kombi poleceń](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br />Polecenia wyłączonego paska pole wejściowe pola kombi  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ComboBoxDisabledBackground` |
 | Pierwszego planu (tekst) | `Environment.ComboBoxDisabledText` |
@@ -1408,7 +1405,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Wyłączone pasku przycisk listy rozwijanej poleceń](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br />Polecenie wyłączonego paska przycisk listy rozwijanej
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Environment.ComboBoxDisabledGlyph` |
@@ -1429,7 +1426,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Domyślnie polecenia paska pola wyboru z listy rozwijanej](../../extensibility/ux-guidelines/media/0303-043_dropdownselectionfield.png "0303 043_DropdownSelectionField")<br />Domyślne polecenia pasek wyboru z listy rozwijanej pole  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DropDownBackground` |
 | Pierwszego planu (tekst) | `DropDownText` |
@@ -1440,7 +1437,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Domyślnie polecenia paska przycisk listy rozwijanej](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303 044_DropdownButton")<br />Przycisk listy rozwijanej paska poleceń domyślny  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Environment.DropDownGlyph` |
@@ -1449,7 +1446,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Domyślnie polecenia paska menu rozwijanego](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303 045_DropdownList")<br />Domyślne polecenia pasek menu rozwijanego  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DropDownPopupBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.ComboBoxItemText` |
@@ -1460,7 +1457,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Polecenie pasek wyboru z listy rozwijanej pola po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br />Polecenie pasek wyboru z listy rozwijanej pola po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DropDownMouseOverBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.DropDownMouseOverText` |
@@ -1471,7 +1468,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Przycisk listy rozwijanej paska poleceń po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303 047_DropdownButtonHover")<br />Przycisk listy rozwijanej paska poleceń po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DropDownButtonMouseOverBackground` |
 | Pierwszego planu (symbol) | `Environment.DropDownMouseOverGlyph` |
@@ -1480,7 +1477,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Lista listę rozwijaną paska poleceń po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303 048_DropdownListHover")<br />Lista listę rozwijaną paska poleceń po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | W tle (element Menu) | `Environment.ComboBoxItemMouseOverBackground` |
 | Pierwszego planu (tekst) | `Environment.ComboBoxItemMouseOverText` |
@@ -1490,7 +1487,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Upuść&#45;w dół do pola wyboru naciśnięty](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Naciśnięto polecenia paska pola wyboru z listy rozwijanej
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DropDownMouseDownBackground` |
 | Pierwszego planu (tekst) | `Environment.DropDownMouseDownText` |
@@ -1501,7 +1498,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Naciśnięto pasku przycisk listy rozwijanej poleceń](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")<br />Naciśnięto polecenia paska przycisk listy rozwijanej  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DropDownButtonMouseDownBackground` |
 | Pierwszego planu (symbol) | `Environment.DropDownMouseDownGlyph` |
@@ -1510,7 +1507,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Wyłączone pasku pola wyboru z listy rozwijanej poleceń](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")<br />Polecenie wyłączonego paska pola wyboru z listy rozwijanej
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DropDownDisabledBackground` |
 | Pierwszego planu (tekst) | `Environment.DropDownDisabledText` |
@@ -1521,7 +1518,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 
 ![Wyłączone pasku przycisk listy rozwijanej poleceń](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")<br />Polecenie wyłączonego paska przycisk listy rozwijanej
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Environment.DropDownDisabledGlyph` |
@@ -1540,7 +1537,7 @@ Przyciski dzielone udostępniać wiele tokenów nazwy inne kontrolki paska polec
 
 ![Domyślny przycisk podziału paska poleceń](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303 054_SplitButton")<br />Przycisk podziału paska poleceń domyślne  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextActive` |
@@ -1552,7 +1549,7 @@ Przyciski dzielone udostępniać wiele tokenów nazwy inne kontrolki paska polec
 
 ![Przycisk, po najechaniu wskaźnikiem podziału paska poleceń](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303 055_SplitButtonHover")<br />Pasek poleceń podziału przycisku po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextHover` |
@@ -1564,7 +1561,7 @@ Przyciski dzielone udostępniać wiele tokenów nazwy inne kontrolki paska polec
 
 ![Naciśnięty przycisk podziału paska poleceń](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303 056_SplitButtonPressed")<br />Przycisk podziału paska poleceń po naciśnięciu  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.CommandBarTextMouseDown` |
@@ -1576,7 +1573,7 @@ Przyciski dzielone udostępniać wiele tokenów nazwy inne kontrolki paska polec
 
 ![Wyłączony przycisk podziału paska poleceń](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br />Przycisk podziału wyłączonego paska poleceń
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (tekst) | `Environment.ComboBoxItemTextInactive` |
@@ -1599,7 +1596,7 @@ Przycisk "Więcej opcji" jest używany, gdy grupy pasek poleceń jest możliwe d
 
 ![Domyślnie polecenia paska przycisku "Overflow ma wartość"](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303 060_Overflow")<br />Domyślnym przyciskiem "Overflow ma" pasku polecenia
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarOptionsBackground` |
 | Pierwszego planu (symbol) | `Environment.CommandBarOptionsGlyph` |
@@ -1610,7 +1607,7 @@ Przycisk "Więcej opcji" jest używany, gdy grupy pasek poleceń jest możliwe d
 
 ![Pasek poleceń "Overflow ma wartość" przycisku, po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303 062_OverflowOptions")<br />Pasek poleceń "Overflow ma wartość" przycisku, po najechaniu wskaźnikiem   
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (symbol) | `Environment.CommandBarOptionsMouseDownGlyph` |
@@ -1621,7 +1618,7 @@ Przycisk "Więcej opcji" jest używany, gdy grupy pasek poleceń jest możliwe d
 
 ![Przepełnienie naciśnięty](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303 064_OverflowPressed")<br />Naciśnięty przycisk "Overflow ma wartość" pasek poleceń  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (symbol) | `Environment.CommandBarOptionsMouseDownGlyph` |
@@ -1644,7 +1641,7 @@ Okna dokumentów może być zadokowane w IDE lub zmiennoprzecinkową jako oddzie
 
 **Okno dokumentu zadokowany lub przestawny: domyślny stan**  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Zależy od typu dokumentu |
 | Pierwszego planu (tekst) | Zależy od typu dokumentu |
@@ -1654,7 +1651,7 @@ Okna dokumentów może być zadokowane w IDE lub zmiennoprzecinkową jako oddzie
 
 ![Domyślne fokus, liczb zmiennoprzecinkowych ramki okna dokumentu](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303 067_FrameFocused")<br />Domyślne fokus, liczb zmiennoprzecinkowych ramki okna dokumentu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowFloatingFrame` |
 | Pierwszego planu (tekst) | `Environment.ToolWindowFloatingFrame` |
@@ -1666,7 +1663,7 @@ Okna dokumentów może być zadokowane w IDE lub zmiennoprzecinkową jako oddzie
 
 ![Ramka okna po przeniesieniu fokusu zmiennoprzecinkowy dokument domyślny](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303 068_FrameUnfocused")<br />Domyślnie po przeniesieniu fokusu dokument zmiennoprzecinkowy ramki okna
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowFloatingFrameInactive` |
 | Pierwszego planu (tekst) | `Environment.ToolWindowFloatingFrameInactive` |
@@ -1678,7 +1675,7 @@ Okna dokumentów może być zadokowane w IDE lub zmiennoprzecinkową jako oddzie
 
 ![Ukierunkowane liczb zmiennoprzecinkowych ramki okna dokumentu po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303 069_FrameFocusedHover")<br />Ukierunkowane liczb zmiennoprzecinkowych ramki okna dokumentu po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło (symbol) | `Environment.RaftedWindowButtonHoverActive` |
 | Pierwszego planu (symbol) | `Environment.RaftedWindowButtonHoverActiveGlyph` |
@@ -1688,7 +1685,7 @@ Okna dokumentów może być zadokowane w IDE lub zmiennoprzecinkową jako oddzie
 
 ![Po przeniesieniu fokusu dokument zmiennoprzecinkowy ramki okna po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303 070_FrameUnfocusedHover")<br />Po przeniesieniu fokusu, liczb zmiennoprzecinkowych ramki okna dokumentu po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło (symbol) | `EnvironmentRaftedWindowButtonHoverInactive` |
 | Pierwszego planu (symbol) | `Environment.RaftedWindowButtonHoverInactiveGlyph` |
@@ -1698,7 +1695,7 @@ Okna dokumentów może być zadokowane w IDE lub zmiennoprzecinkową jako oddzie
 
 ![Ukierunkowane liczb zmiennoprzecinkowych ramki okna dokumentu przy naciśnięciu](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303 071_FrameFocusedPressed")<br />Ukierunkowane liczb zmiennoprzecinkowych ramki okna dokumentu przy naciśnięciu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło (symbol) | `Environment.RaftedWindowButtonDown` |
 | Pierwszego planu (symbol) | `Environment.RaftedWindowButtonDownGlyph` |
@@ -1731,7 +1728,7 @@ Każdy otwarty dokument ma kartę w kanale kartę dokumentu, który wyświetla j
 
 ![Zaznaczone, fokus karty dokumentu](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303 074_SelectedTabFocused")<br />Karty wybrane, ukierunkowane dokumentu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabSelectedGradientTop`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.FileTabSelectedText` |
@@ -1742,7 +1739,7 @@ Każdy otwarty dokument ma kartę w kanale kartę dokumentu, który wyświetla j
 
 ![Karta wybrany dokument po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br />Karta wybrany dokument po przeniesieniu fokusu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabInactiveGradientTop`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.FileTabInactiveText` |
@@ -1753,7 +1750,7 @@ Każdy otwarty dokument ma kartę w kanale kartę dokumentu, który wyświetla j
 
 ![Karta dokumentu tło domyślne](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303 076_BackgroundTab")<br />Karta dokumentu tło domyślne  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabBackground` |
 | Pierwszego planu (tekst) | `Environment.FileTabText` |
@@ -1763,7 +1760,7 @@ Każdy otwarty dokument ma kartę w kanale kartę dokumentu, który wyświetla j
 
 ![Karty dokumentu w tle po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303 077_BackgroundTabHover")<br />Karty dokumentu w tle po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabHotGradientTop`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.FileTabHotText` |
@@ -1783,7 +1780,7 @@ Skrót "tymczasowe" kartę. Karta (wersja zapoznawcza) pojawia się po prawej st
 
 ![Karcie podglądu ukierunkowanych, wybrane](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303 079_PreviewTabFocused")<br />Karta ukierunkowanych, wybrane (wersja zapoznawcza)
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabProvisionalSelectedActive` |
 | Pierwszego planu (tekst) | `Environment.FileTabProvisionalSelectedActiveForeground` |
@@ -1794,7 +1791,7 @@ Skrót "tymczasowe" kartę. Karta (wersja zapoznawcza) pojawia się po prawej st
 
 ![Karcie podglądu po przeniesieniu fokusu, wybrane](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br />Karta po przeniesieniu fokusu, wybrane (wersja zapoznawcza)
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabProvisionalSelectedInactive` |
 | Pierwszego planu (tekst) | `Environment.FileTabProvisionalSelectedInactiveForeground` |
@@ -1805,7 +1802,7 @@ Skrót "tymczasowe" kartę. Karta (wersja zapoznawcza) pojawia się po prawej st
 
 ![Karta Podgląd tło domyślne](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br />Karta Podgląd tło domyślne  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabProvisionalInactive` |
 | Pierwszego planu (tekst) | `Environment.FileTabProvisionalInactiveForeground` |
@@ -1815,7 +1812,7 @@ Skrót "tymczasowe" kartę. Karta (wersja zapoznawcza) pojawia się po prawej st
 
 ![Tło karcie podglądu po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br />Tło karcie podglądu po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.FileTabProvisionalHover` |
 | Pierwszego planu (tekst) | `Environment.FileTabProvisionalHoverForeground` |
@@ -1835,7 +1832,7 @@ Przycisk przepełnienie dokument jest obecny, jeśli istnieje jeden lub więcej 
 
 ![Przycisk przepełnienie dokument domyślny](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303 084_Overflow")<br />Przycisk przepełnienie dokument domyślny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DocWellOverflowButtonBackground` |
 | Pierwszego planu (symbol) | `Environment.DocWellOverflowButtonGlyph` |
@@ -1845,7 +1842,7 @@ Przycisk przepełnienie dokument jest obecny, jeśli istnieje jeden lub więcej 
 
 ![Przycisk przepełnienie dokument po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-085_overflowhover.png "0303 085_OverflowHover")<br />Przycisk przepełnienie dokument po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DocWellOverflowButtonMouseOverBackground` |
 | Pierwszego planu (symbol) | `Environment.DocWellOverflowButtonMouseOverGlyph` |
@@ -1855,7 +1852,7 @@ Przycisk przepełnienie dokument jest obecny, jeśli istnieje jeden lub więcej 
 
 ![Przycisk przepełnienie dokument przy naciśnięciu](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303 086_OverflowPressed")<br />Przycisk przepełnienie dokument przy naciśnięciu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.DocWellOverflowButtonMouseDownBackground` |
 | Pierwszego planu (symbol) | `Environment.DocWellOverflowButtonMouseDownGlyph` |
@@ -1876,7 +1873,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Znacznik domyślny](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303 177_Tag")<br />Tag domyślny
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | `Tag.Background` |
 | Pierwszego planu (tekst) | `Tag.Background` |
@@ -1885,7 +1882,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Tag po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-178_taghover.png "0303 178_TagHover")<br />Tag po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | `Tag.HoverBackground` |
 | Pierwszego planu (tekst) | `Tag.HoverBackgroundText` |
@@ -1894,7 +1891,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Naciśnięto tag](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303 179_TagPressed")<br />Po naciśnięciu tagu  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Tag.PressedBackground` |
 | Pierwszego planu (tekst) | `Tag.PressedBackgroundText` |
@@ -1903,7 +1900,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Zaznaczony tag](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "0303 180_TagSelected")<br />Wybrany tag  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Tag.SelectedBackground` |
 | Pierwszego planu (tekst) | `Tag.SelectedBackgroundText` |
@@ -1914,7 +1911,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Domyślne Zamknij (&times;) symbol tagu](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303 181_TagGlyph")<br />Domyślne Zamknij (&times;) symbol tagu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |  
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Tag.TagHoverGlyph` |
@@ -1923,7 +1920,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Zamknij (&times;) tag symbol po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303 182_TagGlyphHover")<br />Zamknij (&times;) tag symbol po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Tag.TagHoverGlyphHoverBackground` |
 | Pierwszego planu (symbol) | `Tag.TagHoverGlyphHover` |
@@ -1933,7 +1930,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Naciśnięto Zamknij (&times;) symbol tagu](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303 183_TagGlyphPressed")<br />Naciśnięto Zamknij (&times;) symbol tagu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Tag.TagHoverGlyphPressedBackground` |
 | Pierwszego planu (symbol) | `Tag.TagHoverGlyphPressed` |
@@ -1943,7 +1940,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Domyślnie wybrany tag opcją Zamknij (&times;) symbol](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303 184_TagSelected")<br />Domyślnie wybrany tag opcją Zamknij (&times;) glifów
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Tag.TagSelectedGlyph` |
@@ -1953,7 +1950,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 ![Zaznaczony tag z Zamknij (&times;) symbol po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303 185_TagSelectedHover")<br />Zaznaczony tag z Zamknij (&times;) symbol po najechaniu wskaźnikiem  
 
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Tag.TagSelectedGlyphHoverBackground` |
 | Pierwszego planu (symbol) | `Tag.TagSelectedGlyphHover` |
@@ -1963,7 +1960,7 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 
 ![Zaznaczone, naciśnięciu oznaczanie numerem Zamknij (&times;) symbol](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303 186_TagSelectedPressed")<br />Zaznaczone, naciśnięciu oznaczanie numerem Zamknij (&times;) glifów
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Tag.TagSelectedGlyphPressedBackground` |
 | Foreground(Glyph) | `Tag.TagSelectedGlyphPressed` |
@@ -1991,7 +1988,7 @@ Okna narzędzi w programie Visual Studio są używane w przypadku wielu różnyc
 
 ![Okna narzędzi zadokowanych](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303 089_ToolWindowDocked")<br />Okno zadokowane  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowBackground` |
 | Obramowanie | `Environment.ToolWindowBorder` |
@@ -2000,7 +1997,7 @@ Okna narzędzi w programie Visual Studio są używane w przypadku wielu różnyc
 
 ![Opływanie, skupia się okna narzędzia](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303 090_ToolWindowFocused")<br />Opływanie, skupia się okna narzędzi
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowBackground` |
 | Obramowanie | `Environment.MainWindowActiveDefaultBorder` |
@@ -2009,7 +2006,7 @@ Okna narzędzi w programie Visual Studio są używane w przypadku wielu różnyc
 
 ![Przestawne, po przeniesieniu fokusu okna narzędzi](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303 091_ToolWindowUnfocused")<br />Przestawne okna narzędzi po przeniesieniu fokusu  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowBackground` |
 | Obramowanie | `Environment.MainWindowInactiveBorder` |
@@ -2029,7 +2026,7 @@ Przybornik jest jednym z najczęściej używanych typowych okien narzędzi w pro
 
 ![Węzeł podrzędny przybornika domyślnego](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303 191_ToolboxChildNode")<br />Węzeł podrzędny przybornika domyślnego
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolboxContent`<br />(Nagłówki) |
 | Tło | `Environment.ToolWindowBackground`<br />(Pojedynczych elementów lub całe okno, jeśli brak dostępnych kontrolek) |
@@ -2041,7 +2038,7 @@ Przybornik jest jednym z najczęściej używanych typowych okien narzędzi w pro
 
 ![Węzeł podrzędny przybornika po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br />Węzeł podrzędny przybornika po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolboxContentMouseOver`<br />(Tylko w pojedynczych elementów) |
 | Obramowanie | Brak |
@@ -2053,7 +2050,7 @@ Przybornik jest jednym z najczęściej używanych typowych okien narzędzi w pro
 
 ![Węzeł podrzędny przybornika ukierunkowanych, wybrane](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br />Węzeł podrzędny ukierunkowanych, wybrane przybornika
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemActive`<br />Z [widoku drzewa](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) kategorii |
 | Obramowanie | `TreeView.FocusVisualBorder`<br />Z [widoku drzewa](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) kategorii |
@@ -2066,7 +2063,7 @@ Przybornik jest jednym z najczęściej używanych typowych okien narzędzi w pro
 
 ![Węzeł podrzędny przybornika zaznaczona, po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br />Węzeł podrzędny przybornika zaznaczona, po przeniesieniu fokusu  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `TreeView.SelectedItemInactive`<br />Z [widoku drzewa](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) kategorii |
 | Obramowanie | Brak |
@@ -2086,7 +2083,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Pasek tytułu ukierunkowanych](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "0303 093_TitleBarFocused")<br />Pasek tytułu fokusem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.TitleBarActiveGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.TitleBarActiveText` |
@@ -2097,7 +2094,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Po przeniesieniu fokusu paska tytułu](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303 094_TitleBarUnfocused")<br />Pasek tytułu po przeniesieniu fokusu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.TitleBarInactiveGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.TitleBarInactiveText` |
@@ -2116,7 +2113,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Domyślnie, skupia się przycisków na pasku tytułu](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br />Domyślnie przycisków na pasku tytułu fokusem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Environment.ToolWindowButtonActiveGlyph` |
@@ -2126,7 +2123,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Domyślnie, przycisków na pasku tytułu po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br />Domyślnie przycisków na pasku tytułu po przeniesieniu fokusu    
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Environment.ToolWindowButtonInactiveGlyph` |
@@ -2136,7 +2133,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Fokus przycisków na pasku tytułu po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br />Przyciski paska tytułu ukierunkowanych po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowButtonHoverActive` |
 | Pierwszego planu (symbol) | `Environment.ToolWindowButtonHoverActiveGlyph` |
@@ -2146,7 +2143,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Przyciski paska tytułu po przeniesieniu fokusu po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br />Przyciski paska tytułu po przeniesieniu fokusu po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowButtonHoverInactive` |
 | Pierwszego planu (symbol) | `Environment.ToolWindowButtonHoverInactiveGlyph` |
@@ -2156,7 +2153,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Poświęcone przycisków na pasku tytułu naciśnij](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br />Przyciski paska tytułu wąsko zdefiniowany przy naciśnięciu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowButtonDown` |
 | Pierwszego planu (symbol) | `Environment.ToolWindowButtonDownActiveGlyph` |
@@ -2166,7 +2163,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Przy naciśnięciu przycisków na pasku tytułu po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br />Przy naciśnięciu przycisków na pasku tytułu po przeniesieniu fokusu  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowButtonDown` |
 | Pierwszego planu (symbol) | `Environment.ToolWindowButtonDownInactiveGlyph` |
@@ -2183,7 +2180,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Zaznaczone, skupia się karta w oknie narzędzia](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br />Karta okna narzędzia wybrane, ukierunkowane
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowTabSelectedTab` |
 | Pierwszego planu (tekst) | `Environment.ToolWindowTabSelectedActiveText` |
@@ -2193,7 +2190,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Karta okna narzędzia zaznaczona, po przeniesieniu fokusu](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br />Karta okna narzędzia zaznaczona, po przeniesieniu fokusu
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowTabSelectedTab` |
 | Pierwszego planu (tekst) | `Environment.ToolWindowTabSelectedText` |
@@ -2203,7 +2200,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Karta okna narzędzia tło domyślne](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br />Karta w oknie narzędzia domyślne tło  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Zatrzymania gradientu Ustaw na tę samą wartość koloru w programie Visual Studio 2013.) |
 | Pierwszego planu (tekst) | `Environment.ToolWindowTabText` |
@@ -2213,7 +2210,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Karta okna narzędzia tło po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br />Karta okna narzędzia tło po najechaniu wskaźnikiem
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Zatrzymania gradientu Ustaw na tę samą wartość koloru w programie Visual Studio 2013.) |
 | Pierwszego planu (tekst) | `Environment.ToolWindowTabMouseOverText` |
@@ -2231,7 +2228,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Karta Autoukrywanie domyślne](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "0303 108_AutoHideTab")<br />Domyślną kartę autoukrywanie
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.AutoHideTabBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.AutoHideTabText` |
@@ -2241,7 +2238,7 @@ Obramowania paska tytułu, nie ma wartość true, obramowanie okazał się Gruba
 
 ![Automatyczne ukrywanie karty po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "0303 109_AutoHideTabHover")<br />Autoukrywanie kartę po najechaniu wskaźnikiem  
 
-| Element | Nazwa tokenu: Category.color |
+| Element | Nazwa tokenu: Category.Color |
 | --- | --- |
 | Tło | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst) | `Environment.AutoHideTabMouseOverText` |

@@ -1,9 +1,6 @@
 ---
 title: Tworzenie typów projektów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a453e8ed6c59f242e8a3aadbf056f956aedcaca
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d80dd7fcaa75b5090145821307dfe7def28afbc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987411"
 ---
 # <a name="create-project-types"></a>Tworzenie typów projektów
 Możesz rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , tworząc nowy typ projektu. Aby utworzyć nowy typ projektu, należy zrozumieć kilka koncepcji i wykonać kilka czynności. Omówienie sposobu tworzenia typów projektów można znaleźć w następujących tematach.  

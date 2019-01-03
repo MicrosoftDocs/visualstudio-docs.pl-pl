@@ -3,19 +3,18 @@ title: Narzędzie Variable Explorer dla języka R
 description: Narzędzie Variable Explorer w programie Visual Studio zawiera wszystkie zmienne w danym zakresie w bieżącej sesji języka R:.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988939"
 ---
 # <a name="variable-explorer"></a>Eksplorator zmiennych
 
@@ -71,7 +70,7 @@ Możesz również przełączyć się do zakresu funkcji, po zatrzymaniu w punkci
 
 ## <a name="import-data-into-variable-explorer"></a>Importowanie danych do Eksplorator zmiennych
 
-Dwa polecenia w **narzędzie Variable Explorer** narzędzi, które są również dostępne za pośrednictwem **R Tools** > **danych** menu zewnętrznych CSV zestawy danych importowania do usługi języka R Sesja: **zestawu importowania danych do sesji języka R na adres URL sieci Web** i **zestawu importowania danych do sesji języka R z pliku tekstowego**.
+Dwa polecenia w **narzędzie Variable Explorer** narzędzi, które są również dostępne za pośrednictwem **R Tools** > **danych** menu zewnętrznych CSV zestawy danych importowania do usługi języka R Sesja:  **Importowanie zestawu danych do sesji języka R na adres URL sieci Web** i **zaimportować zestaw danych do sesji języka R z pliku tekstowego**.
 
 Po zidentyfikowaniu pliku CSV można zaimportować Visual Studio Wyświetla **Importowanie zestawu danych** okna dialogowego, w którym masz opcje do kontrolowania, jak ten plik danych jest analizowany (oznacza to, co to jest separator pola i sposób obsługi ofert). Można także wyświetlić podgląd ramki zaimportowanych danych i oryginalny plik danych:
 
