@@ -2,7 +2,6 @@
 title: Właściwości pliku, JavaScript
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -27,48 +26,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9809c48b9226e05b7617c860af524b1ac6daf6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8706264733faf147c2f53ffceff401ca42432d6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910233"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
-Wskaż, jakie akcje system projektu należy wykonać na plikach, można użyć właściwości pliku. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik powinien być dodany do pakietu jako plik zasobów.
+Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można użyć właściwości pliku. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik należy dodać do pakietu jako plik zasobów.
 
- Można wybrać dowolny plik w Eksploratorze rozwiązań i sprawdź jej właściwości w oknie właściwości. Pliki JavaScript ma cztery właściwości: **Kopiuj do katalogu wyjściowego**, **Akcja opakowaniu**, **nazwę pliku**, i **ścieżka pliku**.
+ Można wybrać dowolny plik w Eksploratorze rozwiązań i następnie sprawdź jego właściwości w oknie dialogowym właściwości. Pliki JavaScript ma cztery właściwości: **Kopiuj do katalogu wyjściowego**, **pakietu akcji**, **nazwa pliku**, i **ścieżki pliku**.
 
 ## <a name="file-properties"></a>Właściwości pliku
  W tej sekcji opisano właściwości wspólne dla plików JavaScript.
 
-### <a name="copy-to-output-directory-property"></a>Kopiuj do właściwości katalogu wyjściowego
- Ta właściwość określa warunki, w których plik wybranego źródła zostanie skopiowany do katalogu wyjściowego. Wybierz **nie należy kopiować** Jeśli plik nie ma zostać skopiowany do katalogu wyjściowego. Wybierz **skopiuj zawsze** Jeśli plik jest zawsze ma zostać skopiowany do katalogu wyjściowego. Wybierz **Kopiuj, jeśli nowszy** Jeśli plik jest do skopiowania tylko wtedy, gdy jest nowsza niż istniejący plik o tej samej nazwie w katalogu wyjściowego.
+### <a name="copy-to-output-directory-property"></a>Skopiuj do właściwości katalogu danych wyjściowych
+ Ta właściwość określa warunki, w których wybranym pliku źródłowym zostaną skopiowane do katalogu wyjściowego. Wybierz **nie Kopiuj** Jeśli plik nigdy nie ma zostać skopiowany do katalogu wyjściowego. Wybierz **zawsze Kopiuj** Jeśli plik jest zawsze był kopiowany do katalogu wyjściowego. Wybierz **Kopiuj Jeśli nowszy** Jeśli plik jest kopiowany, tylko wtedy, gdy jest nowsza niż istniejący plik o takiej samej nazwie w katalogu wyjściowym.
 
 ### <a name="package-action"></a>Akcja pakietu
- **Akcja opakowaniu** właściwość wskazuje co program Visual Studio nie przy użyciu pliku podczas wykonywania kompilacji. **Czynność dotycząca pakietów** może mieć jeden z kilku wartości:
+ **Akcja pakietu** właściwość wskazuje co program Visual Studio przy użyciu pliku po wykonaniu kompilacji. **Pakiet akcji** może mieć jeden z kilku wartości:
 
--   **Brak** — plik nie jest dołączony do manifestu pakietu. Przykład to plik tekstowy, który zawiera dokumentację, takich jak plik Readme.
+-   **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy, który zawiera dokumentację, takich jak plik Readme.
 
--   **Zawartości** — plik jest dołączony do manifestu pakietu. Na przykład to ustawienie jest wartością domyślną dla htm, js, CSS, obrazów, plików audio i wideo.
+-   **Zawartość** — plik jest uwzględniony w manifeście pakietu. Na przykład to ustawienie jest wartością domyślną dla .htm, js, CSS, obrazów, plików audio i wideo.
 
--   **Manifest** — plik nie jest dołączony do manifestu pakietu. Zamiast tego pliku jest używany dla danych wejściowych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku package.appxmanifest.
+-   **Manifest** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego pliku jest używany dla danych wejściowych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku package.appxmanifest.
 
--   **Zasób** — plik nie jest dołączony do manifestu pakietu. Zamiast tego zawartość pliku są indeksowane w indeksu zasobów pakietu (PRI), który jest przesyłany do manifestu pakietu. Zwykle służy do plików zasobów.
+-   **Zasób** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego należy zawartość pliku są indeksowane w indeksie zasobów pakietu (PRI), prowadzące do manifestu pakietu. Zazwyczaj służy do plików zasobów.
 
-Wartość domyślna dla **Akcja opakowaniu** zależy od rozszerzenie pliku, który można dodać do rozwiązania.
+Wartością domyślną dla **Akcja pakietu** zależy od rozszerzenia pliku, który można dodać do rozwiązania.
 
-### <a name="file-name-property"></a>Właściwość nazwy pliku
- Wyświetla nazwę pliku jako wartość tylko do odczytu. Aby zmienić nazwę pliku, należy kliknąć prawym przyciskiem myszy w Eksploratorze rozwiązań i wybrać **zmienić**.
+### <a name="file-name-property"></a>Właściwość Nazwa pliku
+ Wyświetla nazwę pliku jako wartość tylko do odczytu. Aby zmienić nazwę pliku, należy kliknąć prawym przyciskiem myszy w Eksploratorze rozwiązań i wybrać **Zmień nazwę**.
 
 ### <a name="full-path-property"></a>Pełna ścieżka właściwości
- Wyświetla pełną ścieżkę do pliku jako wartość tylko do odczytu. Aby zmienić ścieżkę do pliku, możesz przeciągania i upuszczania plików w Eksploratorze rozwiązań.
+ Wyświetla pełną ścieżkę do pliku jako wartość tylko do odczytu. Aby zmienić ścieżkę pliku, możesz przeciąganie i upuszczanie plików w Eksploratorze rozwiązań.
 
-## <a name="reference-file-properties"></a>Odwołanie do właściwości pliku
- W tej sekcji opisano właściwości wspólne dla plików odwołanie z aplikacji platformy uniwersalnej systemu Windows, utworzony przy użyciu języka JavaScript. Po wybraniu odwołania, takich jak plik winmd, odwołanie do zestawu SDK, odwołanie projektu do projektu lub odwołania do zestawu w Eksploratorze rozwiązań innych właściwości mogą być wyświetlane w oknie właściwości zgodnie z typem pliku.
+## <a name="reference-file-properties"></a>Właściwości odwołania do pliku
+ W tej sekcji opisano właściwości wspólne dla plików odwołanie z aplikacji platformy UWP skompilowane przy użyciu języka JavaScript. Po wybraniu odwołania, takich jak plik winmd, odwołanie do zestawu SDK, odwołanie projektu do projektu lub odwołanie do zestawu w Eksploratorze rozwiązań, inne właściwości mogą być wyświetlane w oknie dialogowym właściwości zgodnie z typem pliku.
 
-### <a name="culture"></a>Kultury
- Wyświetla język skojarzony z odwołania.
+### <a name="culture"></a>Kultura
+ Wyświetla język skojarzonej z odwołaniem.
 
 ### <a name="file-type"></a>Typ pliku
  Wyświetla typ pliku odwołania.
@@ -83,13 +82,13 @@ Wartość domyślna dla **Akcja opakowaniu** zależy od rozszerzenie pliku, któ
  Wyświetla nazwę skojarzonej z odwołaniem manifestu pakietu.
 
 ### <a name="resolved-path"></a>Rozpoznana ścieżka
- Wyświetla ścieżkę odwołania, który jest używany w projekcie.
+ Wyświetla ścieżkę do odwołania, który jest używany w projekcie.
 
 ### <a name="sdk-path"></a>Ścieżka zestawu SDK
- Wyświetla ścieżkę do pliku odwołania zestawu SDK.
+ Wyświetla ścieżkę do pliku zestawu SDK.
 
 ### <a name="uri"></a>Identyfikator URI
- Wyświetla identyfikator URI, który musi być uwzględniona w HTML lub JavaScript pliki projektu do załączenia pliku jako pliku źródłowego.
+ Wyświetla identyfikator URI, który muszą być zawarte w plikach HTML i JavaScript projektu Aby dołączyć plik jako plik źródłowy.
 
 ### <a name="version"></a>Wersja
  Wyświetla wersję odwołania.

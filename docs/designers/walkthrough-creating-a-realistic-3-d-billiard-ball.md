@@ -1,8 +1,7 @@
 ---
-title: 'Wskazówki: Tworzenie realistycznej kuli Bilardowej w 3D'
+title: 'Przewodnik: Tworzenie realistycznej kuli Bilardowej w 3D'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913494"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Przewodnik: tworzenie realistycznej kuli bilardowej w 3D
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Przewodnik: Tworzenie realistycznej kuli bilardowej w 3D
 
 W tym przewodniku przedstawiono sposób tworzenia realistycznej kuli bilardowej w 3D przy użyciu programu Shader Designer i edytora obrazów w programie Visual Studio. Wygląd 3D kuli bilardowej odbywa się przez połączenie kilku technik cieniowania z odpowiednimi zasobami tekstury.
 
@@ -79,7 +78,7 @@ Upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
 3. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury. Ustaw wartość **tekstury** właściwość **próbki tekstury** węzeł **Texture1**, a następnie określ plik tekstury za pomocą **Filename**właściwość **Texture1** grupy właściwości w tym samym oknie właściwości.
 
-   Aby uzyskać więcej informacji dotyczących sposobu stosowania tekstury w cieniowaniu, zobacz [porady: tworzenie cieniowania tekstury podstawowej](../designers/how-to-create-a-basic-texture-shader.md).
+   Aby uzyskać więcej informacji dotyczących sposobu stosowania tekstury w cieniowaniu, zobacz [jak: Tworzenie cieniowania tekstury podstawowej](../designers/how-to-create-a-basic-texture-shader.md).
 
    Twoja Bila powinna wyglądać mniej więcej tak:
 
@@ -101,7 +100,7 @@ W grafice komputerowej *modele oświetlenia*— uproszczone przybliżenia złoż
 
 - Opcjonalnie można dostosować, jak oświetlenie, konfigurując **MaterialDiffuse** właściwości wykresu cieniowanego. Aby uzyskiwać dostęp do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie zlokalizuj właściwość, do której chcesz uzyskać dostęp w **właściwości** okna.
 
-Aby uzyskać więcej informacji na temat zastosowania oświetlenia Lambert w cieniowaniu, zobacz [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
+Aby uzyskać więcej informacji na temat zastosowania oświetlenia Lambert w cieniowaniu, zobacz [jak: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Zastosowania oświetlenia Lamberta Bila powinna wyglądać mniej więcej tak:
 
@@ -123,7 +122,7 @@ Model oświetlenie Phong opiera się na modelu oświetlenia Lamberta do uwzględ
 
 2. Opcjonalnie można dostosować sposób, który odblasków zachowuje się przez skonfigurowanie właściwości odblasków (**MaterialSpecular** i **MaterialSpecularPower**) modułu cieniującego. Do dostępu do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie w **właściwości** okna, zlokalizuj właściwość, której chcesz uzyskać dostęp.
 
-   Aby uzyskać więcej informacji na temat sposobu stosowania światła odbitego w cieniowaniu, zobacz [porady: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md).
+   Aby uzyskać więcej informacji na temat sposobu stosowania światła odbitego w cieniowaniu, zobacz [jak: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md).
 
    Wyróżnieniem odblasków zastosowane, oświetlenia zwierciadlanego Bila powinna wyglądać mniej więcej tak:
 
@@ -211,8 +210,8 @@ Pierwszym krokiem jest, aby utworzyć tekstury mapy sześcianu. W wielu rodzajac
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
-- [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)
+- [Instrukcje: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Edytor obrazów](../designers/image-editor.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

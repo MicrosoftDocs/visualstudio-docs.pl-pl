@@ -1,8 +1,7 @@
 ---
-title: 'Porady: tworzenie cieniowania tekstury skali szarości'
+title: 'Instrukcje: Tworzenie cieniowania tekstury skali szarości'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 0634d08f386c638cf141b6e8085982b74377ab55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933544"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Porady: tworzenie cieniowania tekstury skali szarości
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Instrukcje: Tworzenie cieniowania tekstury skali szarości
 
 W tym artykule przedstawiono sposób użycia języka programu do cieniowania wykres kierowany (DGSL) i Projektant programu do cieniowania do tworzenie cieniowania tekstury skali szarości. Ten program do cieniowania Modyfikuje wartość koloru RGB próbki tekstury, a następnie używa go wraz z zostały zmodyfikowane wartości alfa, można ustawić ostateczny kolor.
 
@@ -27,7 +26,7 @@ Przed napisaniem kolor końcowych danych wyjściowych, zmieniając wartość kol
 
 Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Tworzenie cieniowania tekstury podstawowej, zgodnie z opisem w [porady: tworzenie cieniowania tekstury podstawowej](../designers/how-to-create-a-basic-texture-shader.md).
+1.  Tworzenie cieniowania tekstury podstawowej, zgodnie z opisem w [jak: Tworzenie cieniowania tekstury podstawowej](../designers/how-to-create-a-basic-texture-shader.md).
 
 2.  Odłącz **RGB** terminali z **próbki tekstury** węzła z **RGB** terminali z **ostateczny kolor** węzła. W **wybierz** trybie wybierz **RGB** terminali z **próbki tekstury** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.
 
@@ -51,8 +50,8 @@ Niektórych kształtów udostępniać lepsze wersje zapoznawcze niektórych prog
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
+- [Instrukcje: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)
 - [Edytor obrazów](../designers/image-editor.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

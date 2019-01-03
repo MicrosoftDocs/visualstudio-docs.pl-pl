@@ -1,9 +1,6 @@
 ---
-title: Witryna sieci Web pomocy technicznej atrybuty | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Atrybuty pomocy technicznej dotyczącej witryn sieci Web | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
@@ -13,32 +10,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b312322c1d707f13c5121f1fd159f3fd7736886c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea55937318d22a40b90cddb54490b87ab0c44325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916825"
 ---
-# <a name="web-site-support-attributes"></a>Witryna sieci Web pomocy technicznej atrybutów
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt witryny sieci Web może zostać rozszerzony do zapewniają obsługę sieci Web języków programowania. Język musi się zarejestrować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby szablony projektu może występować w **nowej witryny sieci Web** okno dialogowe, gdy jest wybrany język.
+# <a name="web-site-support-attributes"></a>Atrybuty pomocy technicznej dotyczącej witryn internetowych
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt witryny sieci Web można rozszerzony w celu zapewnienia wsparcia dla sieci Web, języków programowania. Język musi zarejestrować się przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby szablonów projektu może znajdować się w **nową witrynę sieci Web** okno dialogowe po wybraniu języka.
 
-Przykład IronPython Studio obsługuje witryny sieci web. Próbka zawiera następujące klasy atrybutu zarejestrować IronPython jako język plik codebehind dla nowych projektów sieci Web.
+Przykład IronPython Studio obejmuje obsługę witryny sieci web. Przykład zawiera następujące klasy atrybutu do zarejestrowania IronPython jako język codebehind dla nowych projektów sieci Web.
 
 ## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute
- Ten atrybut jest umieszczany w projekcie języka. Dodaje język do listy języków programowania w sieci Web **języka** na liście **nowej witryny sieci Web** okno dialogowe. Na przykład następujący kod dodaje IronPython do listy:
+ Ten atrybut jest umieszczany w projekcie języka. Dodaje do listy języków programowania w sieci Web języka **języka** listy w **nową witrynę sieci Web** okno dialogowe. Na przykład poniższy kod dodaje IronPython do listy:
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- Ten atrybut określa również ścieżkę szablony, aby wskazywała na folder szablonów. Aby uzyskać więcej informacji o lokalizacji folderu Szablony, zobacz [szablony witryn sieci Web pomocy technicznej](../../extensibility/internals/web-site-support-templates.md).
+ Ten atrybut ustawia również ścieżki szablonów, by wskazywał folder szablonów. Aby uzyskać więcej informacji na temat lokalizacji folderu szablonów, zobacz [witryny sieci Web pomocy technicznej szablony](../../extensibility/internals/web-site-support-templates.md).
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- Ten atrybut jest umieszczany w projekcie języka. Umożliwia projekt witryny sieci Web zagnieździć jeden typ pliku (dotyczących) w obszarze innego typu pliku (podstawowy) w **Eksploratora rozwiązań**.
+ Ten atrybut jest umieszczany w projekcie języka. Pozwala ono projektu witryny sieci Web zagnieździć jednego typu pliku (powiązane) w ramach innego typu pliku (podstawowy) **Eksploratora rozwiązań**.
 
- Na przykład następujący kod określa, że plik został IronPython jest powiązany z plikiem aspx. Po utworzeniu nowej strony sieci Web .aspx w rozwiązaniu witryny sieci IronPython Web plik źródłowy PY i jest generowany i będzie wyświetlany jako węzeł podrzędny strony .aspx.
+ Na przykład poniższy kod określa, czy plik codebehind IronPython jest powiązany z pliku .aspx. Po utworzeniu nowej strony sieci Web .aspx w rozwiązaniu witryny sieci IronPython Web nowy plik źródłowy PY zostanie wygenerowany i jest wyświetlany jako elementem podrzędnym strony .aspx.
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
@@ -46,16 +43,16 @@ public class PythonProjectPackage : ProjectPackage
 ```
 
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- Ten atrybut jest umieszczona na pakiet projektu języka. Jest ona wybierana dostawcy IntelliSense dla języka.
+ Ten atrybut jest umieszczany na pakietu projektu języka. Wybiera dostawcę funkcji IntelliSense dla języka.
 
- Na przykład następujący kod określa, że wystąpienie PythonIntellisenseProvider, która implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, powinny być tworzone na żądanie do świadczenia usług języka.
+ Na przykład, poniższy kod określa, że wystąpienie PythonIntellisenseProvider, która implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, należy utworzyć na żądanie do usługi języka.
 
 ```
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]
 public class PythonPackage : Package, IOleComponent
 ```
 
- Implementacja IVsIntellisenseProject obsługuje odwołania i wywołuje kompilatora języka, gdy strony sieci Web z kodu jest wymagane, ale nie są buforowane.
+ Implementacja IVsIntellisenseProject obsługuje odwołania i wywołuje kompilator języka, gdy żądania strony sieci Web przy użyciu kodu, ale nie są buforowane.
 
 ## <a name="see-also"></a>Zobacz też
  [Pomoc techniczna dotycząca witryny internetowej](../../extensibility/internals/web-site-support.md)

@@ -1,16 +1,11 @@
 ---
 title: Wdrażanie, publikowanie i aktualizowanie pakietów rozwiązania SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SharePointProjectPropertyTab
 - VS.SharePointTools.Project.Publishing
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,53 +16,52 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17578fbfb58d354f06e91c78f067d228b92860fe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8bef002d1d32abf4f97a63f284545cbaa6eee403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853460"
 ---
-# <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie i uaktualnić pakietów rozwiązania SharePoint
-  Po tworzenia rozwiązań programu SharePoint w Visual Studio, można wdrożyć pliku pakietu (wsp) na lokalny serwer SharePoint lub opublikować go do lokalnego lub zdalnego serwera programu SharePoint. W przypadku wdrożenia z plików, można dostosować, sposób wdrożenia pliki pakietu (wsp).  
+# <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint
+  Po opracowywania rozwiązania programu SharePoint w programie Visual Studio, możesz wdrożyć jego pliku pakietu (wsp) na lokalnym serwerze programu SharePoint lub opublikować ją w lokalnym lub zdalnym serwerem programu SharePoint. Jeśli pliki są wdrożone, można dostosować, jak wdrożonych plików pakietu (wsp).  
   
 > [!NOTE]  
->  Obecnie tylko rozwiązań w trybie piaskownicy mogą być publikowane na serwerach zdalnych programu SharePoint. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
+>  Obecnie tylko rozwiązania w trybie piaskownicy mogą być publikowane do serwerów zdalnych programu SharePoint. Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
-## <a name="deploy-publish-and-upgrade"></a>Wdrażanie, publikowanie i uaktualnienia
- *Wdrażanie* odwołuje się do kopiowania pliku rozwiązania programu SharePoint skompilowane z projektu programu SharePoint w Visual Studio dla hosta lokalnego. W rozwiązaniu wdrożone można skonfigurować kroków wdrażania, takie jak odtwarzanie puli usług Internet Information Services (IIS), aktywacja po wdrożeniu rozwiązania i tak dalej. Aby wdrożyć, użyj **Wdróż** na **kompilacji** menu. Aby uzyskać więcej informacji, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) i [porady: wdrażanie oraz publikowanie rozwiązania SharePoint do witryny programu SharePoint lokalnego](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+## <a name="deploy-publish-and-upgrade"></a>Wdrażanie, publikowanie oraz aktualizowanie
+ *Wdrażanie* odwołuje się do kopiowania pliku rozwiązania programu SharePoint, utworzony na podstawie projektu programu SharePoint w programie Visual Studio do hosta lokalnego. W wdrożonym rozwiązaniem należy skonfigurować kroków wdrażania, takie jak odtwarzanie puli usług Internet Information Services (IIS), aktywowanie rozwiązania po wdrożeniu i tak dalej. Aby wdrożyć, użyj **Wdróż** polecenie **kompilacji** menu. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) i [jak: Wdrażanie oraz publikowanie rozwiązania SharePoint w witrynie programu SharePoint w lokalnej](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
- *Publikowanie* odwołuje się do przekazywania pliku rozwiązania piaskownicy programu SharePoint do zdalnego programu SharePoint lokacji; oznacza to, że znajduje się w innym systemie lokacji. Można również opublikować plik rozwiązania w trybie piaskownicy programu SharePoint w lokalnej witrynie programu SharePoint, ale niezależnie od tego, czy witryny, opublikowane w lokalnym lub zdalnym, nie można skonfigurować jego kroki wdrażania.  
+ *Publikowanie* odwołuje się do przekazania plik piaskownicy rozwiązań programu SharePoint do zdalnego programu SharePoint site, czyli znajduje się w innym systemie lokacji. Możesz również opublikować plik rozwiązania w trybie piaskownicy programu SharePoint w lokalnej witrynie programu SharePoint, ale niezależnie od tego, czy lokacji publikowane w lokalnym lub zdalnym, nie można skonfigurować jej kroki związane z wdrażaniem.  
   
- *Uaktualnianie* odwołuje się do aktualizacji istniejącego zdalnie lub lokalnie opublikowanych rozwiązania programu SharePoint. Po wszelkich zmian do rozwiązania programu SharePoint w Visual Studio, możesz zmienić nazwę pliku pakietu rozwiązania, ponownie opublikować rozwiązania, a następnie Uaktualnij rozwiązanie po pomyślnym publikuje ponownie. Jeśli ponownie opublikować lokalnie opublikowanych rozwiązania można zastąpić istniejącego pliku rozwiązania.  
+ *Uaktualnianie* odwołuje się do aktualizowania istniejącego zdalne lub lokalne opublikowane rozwiązania programu SharePoint. Po wszelkie zmiany zostaną wprowadzone do rozwiązania programu SharePoint w programie Visual Studio, możesz zmienić nazwę pliku pakietu rozwiązania, ponownie opublikować rozwiązanie, a następnie Uaktualnij rozwiązania po pomyślnym publikuje ponownie. Jeśli ponownie opublikować opublikowanych lokalnie rozwiązania może spowodować zastąpienie istniejącego pliku rozwiązania.  
   
 ## <a name="deploy-packages"></a>Wdrażanie pakietów
- Pliki pakietu do serwera programu SharePoint można wdrożyć na komputerze deweloperskim, testowanie i debugowanie. Można również utworzyć plik pakietu, który można zainstalować na innym komputerze, wybierając **publikowanie w systemie plików** przycisków opcji w **publikowania** okno dialogowe. Pakiet jest utworzony i skopiowany do folderu określonego pliku lokalnego. Aby wdrożyć rozwiązanie programu SharePoint na serwerze lokalnym, należy użyć **Wdróż** na **kompilacji** menu. Aby uzyskać więcej informacji, zobacz [porady: wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+ Pliki pakietu programu SharePoint server można wdrożyć na komputerze deweloperskim do testowania i debugowania. Można również utworzyć plik pakietu, który można zainstalować na innym komputerze, wybierając **opublikowanie w systemie plików** przycisków opcji w **Publikuj** okno dialogowe. Pakiet jest utworzony i skopiowany do ścieżkę do określonego pliku lokalnego. Aby wdrożyć rozwiązania programu SharePoint na serwerze lokalnym, użyj **Wdróż** polecenie **kompilacji** menu. Aby uzyskać więcej informacji, zobacz [jak: Wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
- Aby dowiedzieć się, jak wdrażanie definicji listy, Dodaj odbiorcy zdarzeń i użyj funkcji projektanta i projektanta pakietów, zobacz [wskazówki: Wdrażanie definicji listy zadań projektu](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md).  
+ Aby dowiedzieć się, jak wdrażanie definicji listy, dodawania odbiorców zdarzenia i korzystać z projektanta funkcji i projektancie pakietu, zobacz [instruktażu: Wdrażanie definicji listy zadań projektu](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md).  
   
 ## <a name="customize-the-deployment-process"></a>Dostosowywanie procesu wdrażania
  W poniższej tabeli przedstawiono z dwiema konfiguracjami wdrożenia używanych podczas debugowania i wdrażania rozwiązania programu SharePoint.  
   
-|Konfiguracja wdrażania|Opis|  
+|Konfiguracja wdrożenia|Opis|  
 |------------------------------|-----------------|  
-|Domyślny|Domyślna konfiguracja wdrożenia. Wykonywane są następujące kroki wdrażania:<br /><br /> 1.  Uruchom polecenie przed wdrożeniem.<br />2.  Odtwórz pulę aplikacji usług IIS.<br />3.  Wycofywanie rozwiązania.<br />4.  Dodaj rozwiązanie.<br />5.  Aktywacja funkcji.<br />6.  Uruchom polecenie po wdrożeniu.<br /><br /> Po odinstalowaniu pakietu są wykonywane następujące kroki wycofywania.<br /><br /> 1.  Odtwórz pulę aplikacji usług IIS.<br />2.  Wycofywanie rozwiązania.|  
-|Nie aktywacji|Konfiguracja wdrożenia uruchamia te same kroki jako konfiguracji domyślnej, ale pomija krok aktywacji.|  
+|Domyślny|Domyślna konfiguracja wdrożenia. Wykonywane są następujące wdrożenia:<br /><br /> 1.  Wykonywanie polecenia przed wdrożeniem.<br />2.  Odtwórz pulę aplikacji usług IIS.<br />3.  Wycofaj rozwiązanie.<br />4.  Dodaj rozwiązanie.<br />5.  Aktywacja funkcji.<br />6.  Wykonywanie polecenia po wdrożeniu.<br /><br /> Po odinstalowaniu pakietu są wykonywane następujące kroki wycofywania.<br /><br /> 1.  Odtwórz pulę aplikacji usług IIS.<br />2.  Wycofaj rozwiązanie.|  
+|Nie aktywacji|Tej konfiguracji wdrożenia jest uruchamiane te same kroki jako konfiguracji domyślnej, ale pomija krok aktywacji.|  
   
- Możesz utworzyć własne konfiguracji wdrażania, aby ukończyć pojedynczy krok lub zmiana kolejności kroków w ramach procesu wdrażania. Aby uzyskać więcej informacji, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
+ Możesz tworzyć własne konfiguracje wdrożenia na ukończenie jednego kroku lub zmiana kolejności kroków w procesie wdrażania. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
 
- Można również dodać polecenia do uruchomienia przed i po wdrożeniu. Aby uzyskać więcej informacji, zobacz [porady: poleceń wdrażania SharePoint ustawić](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
+ Można również dodać polecenia do uruchomienia przed i po wdrożeniu. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie poleceń wdrażania SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
   
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Publikowanie pakietów na serwerze lokalnym lub zdalnym
- Publikowanie rozwiązania w trybie piaskownicy programu SharePoint na serwerze zdalnym, na pasku menu wybierz **kompilacji**, **publikowania**, a następnie w **publikowania** okno dialogowe Wybierz **Publikowania do witryny SharePoint** przycisk opcji, podając adres URL zdalnego serwera, takich jak **https://someremoteserver.sharepoint.microsoftonline.com**.  
+ Aby opublikować rozwiązanie w trybie piaskownicy programu SharePoint na serwerze zdalnym, na pasku menu wybierz **kompilacji**, **Publikuj**, a następnie w **Publikuj** okna dialogowego wybierz **Publikowania w witrynie SharePoint** przycisk opcji, podając adres URL serwera zdalnego, takich jak **https://someremoteserver.sharepoint.microsoftonline.com**.  
   
- Publikowanie rozwiązania SharePoint na serwerze lokalnym, w **publikowania** oknie dialogowym wybierz **publikowanie w systemie plików** przycisk opcji, podając ścieżkę systemu lokalnego.  
+ Publikowanie rozwiązania SharePoint na serwerze lokalnym, w **Publikuj** okna dialogowego wybierz **opublikowanie w systemie plików** przycisk opcji, podając ścieżkę systemu lokalnego.  
   
- Po rozwiązaniu pomyślnie publikuje do programu SharePoint, rozwiązanie zdaje się w **galerii rozwiązań** gdzie możesz to zrobić. Aby uzyskać więcej informacji, zobacz [porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+ Po rozwiązania pomyślnie publikuje w programie SharePoint, rozwiązania pojawia się w **Galeria rozwiązań** możesz tu aktywować go. Aby uzyskać więcej informacji, zobacz [jak: Wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
-### <a name="upgrade-published-packages"></a>Uaktualnij opublikowane pakiety
- Jeśli zostaną wprowadzone zmiany do projektu SharePoint w Visual Studio po opublikowaniu opublikowanego pakietu muszą zostać uaktualnione, aby uwzględnić zmiany. Aby pomyślnie uaktualnić, pakiet musi mieć unikatową nazwę. Jeśli pakiet o takiej samej nazwie znajduje się w witrynie programu SharePoint — które mogą wystąpić podczas aktualizowania istniejących aplikacji — alerty o błędach na nazwę pliku w konflikcie i pozwala zmienić nazwę pakietu. Po ponownie opublikować, nowy pakiet pojawia się w witrynie programu SharePoint i może zostać uaktualniony. Uaktualnionego pakietu aktualizacji rozwiązania przy użyciu danych z starszej pakiet, a następnie aktywuje rozwiązań w programie SharePoint. Aby uzyskać więcej informacji, zobacz [porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+### <a name="upgrade-published-packages"></a>Uaktualnij pakiety opublikowane
+ Jeśli wprowadzisz zmiany do projektu programu SharePoint w programie Visual Studio po opublikowaniu, opublikowany pakiet musi zostać uaktualniony, aby uwzględnić zmiany. Aby pomyślnie przeprowadzić uaktualnienie, pakiet musi mieć unikatową nazwę. Jeśli pakiet o tej samej nazwie znajduje się w witrynie programu SharePoint — które mogą wystąpić, gdy aktualizujesz istniejącą aplikację — alerty błędów nazwę pliku w konflikcie i umożliwia zmianę nazwy pakietu. Po ponowne opublikowanie, nowy pakiet pojawia się w witrynie programu SharePoint i mogą być uaktualniane. Uaktualnionego pakietu aktualizacji rozwiązania przy użyciu danych z pakietu starsze, a następnie aktywuje rozwiązanie w programie SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ## <a name="see-also"></a>Zobacz także
- [Pakiet i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+ [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

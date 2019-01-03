@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef1860274c9234774b8af42525a0215d9468a858
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 88590c49938ef61344a1092dffb42565a81755d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920144"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 
@@ -65,7 +64,7 @@ Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**.
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-2. Rozwiń **Visual C#**  lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
 
 3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
 
@@ -75,7 +74,7 @@ Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Utwórz źródło danych z bazy danych
 
-Ten krok używa **Kreatora konfiguracji źródła danych** można utworzyć źródła danych, na podstawie `Region` tabeli w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/installing-database-systems-tools-and-samples.md).
+Ten krok używa **Kreatora konfiguracji źródła danych** można utworzyć źródła danych, na podstawie `Region` tabeli w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [jak: Zainstalować przykładowe bazy danych](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 

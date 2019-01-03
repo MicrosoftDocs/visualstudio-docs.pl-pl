@@ -2,7 +2,6 @@
 title: Debugowanie formularza Windows | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d0e04b407303b1d6f98862fdef36bb8228fd780
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851972"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Wskazówki: Debugowanie formatu Windows
+# <a name="walkthrough-debugging-a-windows-form"></a>Przewodnik: Debugowanie formularza Windows
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.  
   
  Po pierwsze, należy zamknąć wszystkie otwarte rozwiązania.  

@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane kopiowanie danych i formatowanie między arkuszami'
-ms.custom: ''
+title: 'Instrukcje: Programowe kopiowanie danych i formatowanie między arkuszami'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a4cce083bee8b57ff37276ae909799a9a6791d7
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 9995b347fdfcb60acf72c79b0e1bddc20bab717b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924868"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Porady: programowane kopiowanie danych i formatowanie między arkuszami
-  Można skopiować danych z zakresu na jeden arkusz do wszystkich arkuszy w skoroszycie za pomocą <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metody. Określ zakres, i określa, czy chcesz skopiować dane, formatowanie lub oba.  
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Instrukcje: Programowe kopiowanie danych i formatowanie między arkuszami
+  Możesz skopiować dane z zakresu na jeden arkusz do innych arkuszy w skoroszycie za pomocą <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metody. Określ zakres, oraz czy mają zostać skopiowane dane, formatowanie lub obu.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
@@ -34,13 +31,11 @@ ms.locfileid: "35256685"
  [!code-csharp[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#44)]
  [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]  
   
-## <a name="compile-the-code"></a>Kompilowanie kodu  
- W tym przykładzie wymaga zakres o nazwie `rangeData` w arkuszu.  
+## <a name="compile-the-code"></a>Skompilować kod  
+ W tym przykładzie wymaga danych o nazwie `rangeData` w arkuszu.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Porady: programowane Dodawanie nowych arkuszy ze skoroszytami](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Porady: programowane Zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
+ [Instrukcje: Programowe Dodawanie nowych arkuszy do skoroszytu](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Instrukcje: Programowe zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

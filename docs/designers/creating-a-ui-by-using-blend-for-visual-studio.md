@@ -3,7 +3,6 @@ title: Tworzenie interfejsu użytkownika — Blend for Visual Studio
 titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b44f49c08be44ec16cbd90d06cef96cb091e67f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934508"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 
@@ -47,7 +46,7 @@ Możesz użyć **narzędzia** panel w programie Blend for Visual Studio do tworz
 |![Narzędzia zasobów](../designers/media/b1_5.png)|**Narzędzia zasobów** dostępu **zasoby** panelu, i aby wyświetlić ostatnio używane zasobu z biblioteki.|![Objaśnienie E](../designers/media/b5_label_e.png)|**Kontrolek tekstu**|
 |||![Objaśnienie F](../designers/media/b5_label_f.png)|**Formanty standardowe**|
 
-**Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [narzędzi](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+**Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [narzędzi](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="tour-of-the-assets-panel"></a>Samouczek panelu Zasoby
 
@@ -116,7 +115,7 @@ Ten panel umożliwia wyświetlanie i modyfikowanie właściwości obiektu. Możn
 |![Objaśnienie 16](../designers/media/b5_label_16.png)|**Suwak gradientu** pojawia się tylko wtedy, gdy wybrano pędzla gradientu.|
 |![Pokaż zaawansowane właściwości](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Pokaż zaawansowane właściwości** kategorii właściwości, które są rzadko używane.|
 
-**Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [panelu właściwości](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+**Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [panelu właściwości](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Zobacz także
 

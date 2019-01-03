@@ -2,7 +2,6 @@
 title: Uruchom proces roboczy w ramach konta użytkownika | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893255"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Porady: uruchamianie procesu roboczego z konta użytkownika
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Instrukcje: Uruchamianie procesu roboczego w ramach konta użytkownika
 Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe) w ramach konta użytkownika, wykonaj następujące kroki.  
 
  > [!IMPORTANT]
@@ -89,4 +88,3 @@ Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp
 ## <a name="see-also"></a>Zobacz też  
 [Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [Debugowanie ASP.NET: Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)  
-  

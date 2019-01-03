@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Korzystanie ze znaczników tekstu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie ze znaczników tekstu | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a3b766e4eacc04bbf4d4a8e4c022484d452954f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 825f567098d86a0f643de84eef395e5404d3b0f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895704"
 ---
-# <a name="how-to-use-text-markers"></a>Porady: Korzystanie ze znaczników tekstu
+# <a name="how-to-use-text-markers"></a>Instrukcje: Korzystanie ze znaczników tekstu
 Znaczniki tekstu można zastosować do edycji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> obiektu.  
   
 ## <a name="procedures"></a>Procedury  
@@ -57,6 +54,6 @@ Znaczniki tekstu można zastosować do edycji <xref:Microsoft.VisualStudio.TextM
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie ze znaczników tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
- [Porady: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
- [Porady: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)
+ [Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
+ [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
+ [Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)

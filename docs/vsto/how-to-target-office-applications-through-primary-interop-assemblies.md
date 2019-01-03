@@ -1,9 +1,6 @@
 ---
-title: 'Porady: aplikacje Office docelowej przy użyciu podstawowych zestawów międzyoperacyjnych'
-ms.custom: ''
+title: 'Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845905"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Porady: aplikacje Office docelowej przy użyciu podstawowych zestawów międzyoperacyjnych
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
   Podczas tworzenia nowego projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do programu Microsoft Office podstawowe zestawy międzyoperacyjne (PIA), które są wymagane do kompilowania projektu. Należy dodać odwołania do innych zestawów PIA w następujących scenariuszach:  
   
 - Chcesz korzystać z funkcji innych aplikacji pakietu Microsoft Office w projekcie. Na przykład można używać funkcji programu Microsoft Office Excel w projekcie dla programu Microsoft Office Word.  
@@ -58,6 +55,4 @@ ms.locfileid: "49863753"
  [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)   
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
- [Porady: podstawowe zestawy międzyoperacyjne pakietu Office instalacji](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

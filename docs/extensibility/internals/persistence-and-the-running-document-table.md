@@ -1,9 +1,6 @@
 ---
-title: Trwałość i uruchamiania dokumentu tabeli | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Trwałość i uruchamianie dokumentu tabeli | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - persistence, managing
@@ -16,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51f3d2cc41c9adaf97215701ad01da2e59d245a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05584f7bd7fe9743d12ddb1cdda41f9ef9aedff0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935609"
 ---
-# <a name="persistence-and-the-running-document-table"></a>Trwałość i uruchomiona tabeli dokumentu
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, projekty są całkowicie odpowiedzialny za zarządzanie trwałości ich elementów projektu, które one osiągnąć za pomocą usługi, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumenty są jednostkę podstawową trwałości w środowisku Visual Studio. Projekty koordynować otwieranie, zapisywanie i zmiana nazwy dokumentów z uruchomionej tabeli dokumentów (Normalizacją) z zasobem, który śledzi stan wszystkich otwartych dokumentów.  
+# <a name="persistence-and-the-running-document-table"></a>Trwałość i uruchamianie tabeli dokumentów
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, projekty są całkowicie odpowiedzialni za zarządzanie trwałości ich elementów projektu, które realizowane przy użyciu usługi, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumenty są podstawową jednostką trwałości w środowisku Visual Studio. Projekty koordynować otwieranie, zapisywanie i zmiana nazwy dokumentów za pomocą uruchomionej tabeli dokumentu (Normalizacją) z zasobem, który śledzi stan wszystkich otwartych dokumentach.  
   
 ## <a name="managing-persistence"></a>Zarządzanie trwałości  
- Projekty kontrolować w środowisku usługi utrwalania, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> interfejsu. Gdy środowiska pytanie, nigdy nie bezpośrednio dokumentu się, zapyta posiadający je projekt (lub hierarchii) można zapisać dokumentu. Umożliwia projekt, aby zapisać dane elementu projektu do lokalnych plików, pliki zdalne, bazy danych, repozytorium lub innych średnia liczba godzin.  
+ Projekty sterowania usługą trwałości środowiska poprzez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> interfejsu. Podczas środowiska prosi nigdy bezpośrednio dokumentu się, prosi będąca właścicielem projektu (lub hierarchia) można zapisać dokumentu. Dzięki temu możliwe dla projektu, aby zapisać swoje dane elementu projektu w lokalnych plików, pliki zdalne, bazę danych, repozytorium lub innego nośnika.  
   
- Globalne środowiska przechowuje Normalizacją. Środowisko obsługuje wpisy dla wszystkich okien i dokumentów w Normalizacją, co umożliwia im odbieranie powiadomień specjalnych, takich jak zamknięcia rozwiązania. Ponadto Normalizacją umożliwia środowiska śledzić swoje odpowiadających im węzłów w **Eksploratora rozwiązań**. Normalizacją obsługuje jeden rekord dla każdego obiektu otwarty, możliwy do utrwalenia, w tym zarówno pliki projektu i elementu projektu dokumentów.  
+ W środowisku globalnym zachowuje Normalizacją. Środowisko obsługuje wpisy dla wszystkich okien i dokumentów w Normalizacją, co umożliwia im odbieranie powiadomień specjalne, np. po zamknięciu rozwiązania. Ponadto Normalizacją umożliwia środowiska śledzić ich odpowiednich węzłów w **Eksploratora rozwiązań**. Normalizacją utrzymuje jeden rekord dla każdego obiektu otwarte, stałe, w tym pliki projektu i elementu projektu dokumentów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Uruchomionej tabeli dokumentu](../../extensibility/internals/running-document-table.md)   
+ [Uruchamianie tabeli dokumentu](../../extensibility/internals/running-document-table.md)   
  [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

@@ -1,8 +1,6 @@
 ---
 title: Dokumentacja interfejsu API wizualizatora | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902217"
 ---
 # <a name="visualizer-api-reference"></a>Wizualizator API — Odwołanie
 
@@ -44,6 +42,6 @@ Wizualizator interfejsów API znajdują się dla użytkowników, którzy chcą p
   
 ## <a name="see-also"></a>Zobacz też
 
- [Wskazówki: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)   
- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+ [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Instrukcje: Pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

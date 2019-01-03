@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_unmodifiedtype — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e636a35d1cfed085ddf1bc44d60249a71d0b69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe76a3155941c9f7a3c6cc02d02291e61c8e4e89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898560"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Pobiera oryginalnego typu dla tego symbolu. Zastosowania [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) jest ustawiony do typu.  
@@ -27,7 +25,7 @@ Pobiera oryginalnego typu dla tego symbolu. Zastosowania [symtagenum — wylicze
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_unmodifiedType(   
+HRESULT get_unmodifiedType(   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_unmodifiedType(
  Bieżącym typem jest modyfikacji oryginalnego typu zwracanego. Oryginalny typ symbolu można określić najpierw wprowadzenie typ symbolu, a następnie odpytywanie, które zwróciło typ do oryginalnego typu. Należy pamiętać, że niektóre symbole nie ma zmodyfikowany typ oryginalnego typu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
  Biblioteka: diaguids.lib  
   

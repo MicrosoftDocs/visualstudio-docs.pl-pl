@@ -1,8 +1,6 @@
 ---
 title: Idiaaddressmap::get_addressmapenabled — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d0b3ac64724881ab72cb9d9d873bc02f3bec9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc632a0eda039c5f3268d2007f45d7cddd096baa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896659"
 ---
 # <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 Wskazuje, czy mapa adresu została ustanowiona dla określonej sesji.  
@@ -27,7 +25,7 @@ Wskazuje, czy mapa adresu została ustanowiona dla określonej sesji.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_addressMapEnabled (   
+HRESULT get_addressMapEnabled (   
    BOOL* pRetVal  
 );  
 ```  

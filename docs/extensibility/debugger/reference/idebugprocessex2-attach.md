@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessEx2::Attach | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcessEx2::Attach
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0432fe2861b10b4dedd2151033bf61665465f3b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bef8e8016d89c2a7a4c98e9f486358fa8ba108a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937216"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905114"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 Ta metoda informuje proces, że sesji jest teraz debugowanie procesu.  
@@ -28,7 +25,7 @@ Ta metoda informuje proces, że sesji jest teraz debugowanie procesu.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT Attach(   
+HRESULT Attach(   
    IDebugSession2* pSession  
 );  
 ```  

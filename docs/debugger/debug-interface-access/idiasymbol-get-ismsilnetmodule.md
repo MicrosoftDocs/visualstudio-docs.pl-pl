@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_ismsilnetmodule — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a66b8d64849f5c05efa8cc7922ba738ebc43097f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919748"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Pobiera flagę wskazującą, czy moduł jest .netmodule (Microsoft Intermediate Language (MSIL) moduł, który zawiera tylko metadane i nie natywnych symboli).  

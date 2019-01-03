@@ -1,12 +1,11 @@
 ---
-title: 'Porady: Zmiana czcionek i kolorów'
+title: 'Instrukcje: Zmiana czcionek i kolorów'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,20 +16,20 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eee3b8a72ab530e4f480fb4927736e809488cb84
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915364"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Porady: Zmiana czcionek i kolorów w Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Instrukcje: Zmiana czcionek i kolorów w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz dostosować kolor IDE ramki i narzędzi systemu windows w programie Visual Studio na kilka sposobów.
 
 > [!TIP]
->  Aby uzyskać informacje o zmienianiu kolorów w edytorze kodu, zobacz [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Aby uzyskać informacje o zmienianiu kolorów w edytorze kodu, zobacz [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Zmiana koloru tematu IDE
 
@@ -71,4 +70,4 @@ Możesz dostosować kolor IDE ramki i narzędzi systemu windows w programie Visu
 5.  W **rozmiar** , wybierz rozmiar tekstu, a następnie wybierz **OK** przycisku.
 
 ## <a name="see-also"></a>Zobacz też
- [Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

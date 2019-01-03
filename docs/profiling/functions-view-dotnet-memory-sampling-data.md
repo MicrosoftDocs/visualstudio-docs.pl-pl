@@ -1,8 +1,6 @@
 ---
 title: Widok funkcji - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,34 +10,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a4380d3367177bec4036aecd819ed6513c0efd6
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: c4c689a39a606c57b6e534390ce98fd92b2e572d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920040"
 ---
-# <a name="functions-view---net-memory-sampling-data"></a>Widok funkcji - dane próbkowania pamięci .NET
-Widok funkcji alokacji pamięci .NET profilowania dane zebrane przy użyciu metody pobierania próbek zawiera listę funkcji, które przydzielonej pamięci podczas przebiegu profilowania i w raportach, rozmiar i liczba przydziałów.  
+# <a name="functions-view---net-memory-sampling-data"></a>Widok funkcji - dane próbkowania pamięci platformy .NET
+Widok funkcji danych, które zostały zebrane przy użyciu metody pobierania próbek profilowania alokacji pamięci .NET zawiera listę funkcji, które pamięci przydzielonej podczas uruchomienia profilowania i zgłasza rozmiar i liczba przydziałów.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|**Identyfikator procesu**|Identyfikator PID profilowania Uruchom proces.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
 |**Nazwa procesu**|Nazwa procesu.|  
-|**Nazwa modułu**|Nazwa modułu zawiera funkcję.|  
-|**Ścieżka modułu**|Ścieżka moduł, który zawiera funkcję.|  
+|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|  
+|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
-|**Nazwa funkcji**|Pełna nazwa funkcji.|  
-|**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
+|**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|  
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Adres funkcji**|Adres funkcji.|  
-|**Alokacje włącznie**|Całkowita liczba obiektów przydzielonych w tej funkcji i jej funkcji podrzędnych.|  
-|**% Alokacji włącznie**|Procent wszystkich obiektów, które zostały przydzielone w przebiegu, który profilowania były alokacji włącznie tej funkcji.|  
-|**Wyłączny alokacji**|Liczba obiektów, które zostały utworzone podczas wykonywania bezpośrednio w górnej części stosu wywołań funkcji. Ta liczba nie obejmuje obiekty, które zostały utworzone w funkcjach podrzędnych.|  
-|**% Wyłącznego alokacji**|Procent wszystkich obiektów, które zostały przydzielone w przebiegu, który profilowania były wyłącznego alokacji tej funkcji.|  
-|**Bajty włącznie**|Liczba bajtów pamięci, które zostały przydzielone tej funkcji i jej funkcji podrzędnych.|  
-|**% Bajtów włącznie**|Procent wszystkich bajtów pamięci przydzielone w przebiegu, który profilowania były bajtów włącznie tej funkcji.|  
-|**Wyłączny bajtów**|Liczba bajtów pamięci, które zostały przydzielone przez tę funkcję, ale nie przez jej funkcji podrzędnych.|  
-|**% Wyłącznego bajtów**|Procent wszystkich bajtów pamięci przydzielone w przebiegu, który profilowania były wyłącznego bajtów tej funkcji.|  
+|**Przydziały włączne**|Całkowita liczba przydzielonych w tej funkcji i jej funkcji podrzędnych obiektów.|  
+|**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały przydzielone w uruchomienia profilowania były przydziałów włącznych tej funkcji.|  
+|**Przydziały wyłączne**|Liczba obiektów, które zostały utworzone podczas wykonywania bezpośrednio w górnej części stosu wywołań funkcji. Ta liczba nie obejmuje obiekty, które zostały utworzone w funkcjach podrzędnych.|  
+|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały przydzielone w uruchomienia profilowania były przydziałów wyłącznych tej funkcji.|  
+|**Bajty włączne**|Liczba bajtów pamięci, które zostały przydzielone przez tej funkcji i jej funkcji podrzędnych.|  
+|**% Bajtów włącznych**|Procent wszystkich bajtów pamięci przydzielonych w uruchomienia profilowania były bajty włączne tej funkcji.|  
+|**Bajty wyłączne**|Liczba bajtów pamięci przydzielonych przez tę funkcję, ale nie przez jej funkcji podrzędnych.|  
+|**% Bajtów wyłącznych**|Procent wszystkich bajtów pamięci przydzielonych w uruchomienia profilowania były bajty wyłączne tej funkcji.|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

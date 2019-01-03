@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Korzystanie ze znaczników wizualizatora współbieżności SDK | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Użyj znaczników wizualizatora współbieżności SDK | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
@@ -10,19 +8,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a608c5539e905ba7836f4dcfb5e785dc9630c28a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 82815ea756d7f7ae72f15d46c5418adb8eb72c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933596"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Porady: Użyj znaczników wizualizatora współbieżności SDK
-W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżności SDK do tworzenia zakresów i zapisać flagi, wiadomości i alerty.  
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Instrukcje: Korzystanie ze znaczników wizualizatora współbieżności SDK
+W tym temacie pokazano, jak za pomocą SDK narzędzia Concurrency Visualizer utworzyć zakresy i zapisać flagi, wiadomości i alerty.  
   
-### <a name="to-use-c"></a>Aby użyć C++  
+### <a name="to-use-c"></a>Aby użyć języka C++  
   
-1.  Dodawanie obsługi SDK wizualizatora współbieżności dla aplikacji. Aby uzyskać więcej informacji, zobacz [SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md).  
+1.  Dodanie obsługi SDK narzędzia Concurrency Visualizer do aplikacji. Aby uzyskać więcej informacji, zobacz [SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md).  
   
 2.  Dodaj `include` instrukcji i `using` instrukcji dla zestawu SDK.  
   
@@ -33,7 +31,7 @@ W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżno
   
     ```  
   
-3.  Dodaj kod, aby utworzyć trzy zakresy w domyślnej serii znacznika i zapisywanie flagi, komunikat oraz alertu, do każdego zakresu. Metody można zapisać flagi, wiadomości i alerty są elementami członkowskimi [marker_series](../profiling/marker-series-class.md) klasy. Konstruktor [span](../profiling/span-class.md) wymaga klasy `marker_series` obiektu, dzięki czemu każdy zakres jest skojarzony z serii określonego znacznika. A `span` kończy się po jej usunięciu.  
+3.  Dodaj kod, aby utworzyć trzy zakresy w domyślnej znaczników serii i zapis flagi, wiadomości i alertu, jeden na każdy zakres. Metody, które można zapisać flagi, wiadomości i alerty są elementami członkowskimi [marker_series](../profiling/marker-series-class.md) klasy. Konstruktor [span](../profiling/span-class.md) klasa wymaga `marker_series` obiektu tak, aby każdy zakres jest skojarzony z serii określonego znacznika. A `span` kończy się, gdy zostanie usunięta.  
   
     ```C++  
   
@@ -52,11 +50,11 @@ W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżno
   
     ```  
   
-4.  Na pasku menu wybierz **Analizuj**, **Concurrency Visualizer**, **rozpoczynać się od bieżącego projektu** Aby uruchomić aplikację i wyświetlić wizualizatora współbieżności. Na poniższej ilustracji przedstawiono trzy znaczniki i trzy zakresy w wizualizatora współbieżności.  
+4.  Na pasku menu wybierz **analizy**, **Concurrency Visualizer**, **Rozpocznij od bieżącego projektu** Aby uruchomić aplikację i wyświetlić wizualizatora współbieżności. Na poniższej ilustracji przedstawiono trzy znaczniki i trzy zakresy w Wizualizatorze współbieżności.  
   
-     ![CONCURRENCY Visualizer z 3 znaczniki i alertami](../profiling/media/cvmarkersnative.png "CvMarkersNative")  
+     ![Narzędzie CONCURRENCY Visualizer z 3 znaczniki i alertami](../profiling/media/cvmarkersnative.png "CvMarkersNative")  
   
-5.  Dodaj kod, aby utworzyć dodatkowe, niestandardowe znacznika serii przez wywołanie konstruktora dla `marker_series` pobierającej nazwy ciągu serii znacznika.  
+5.  Dodaj kod, aby utworzyć dodatkowe, niestandardowych znaczników serii przez wywołanie konstruktora dla `marker_series` która pobiera nazwę ciągu dla serii znacznika.  
   
     ```C++  
   
@@ -76,13 +74,13 @@ W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżno
   
     ```  
   
-6.  Uruchom bieżącego projektu, aby wyświetlić wizualizatora współbieżności. Znacznik dwóch serii pojawiają się w ich własnych pasm w widoku wątków. Na poniższej ilustracji przedstawiono dwa nowe zakresy.  
+6.  Uruchom bieżący projekt do wyświetlenia w Wizualizatorze współbieżności. Serii dwóch znacznika pojawiają się w ich własnych pasmach w widoku wątków. Poniższa ilustracja przedstawia dwa nowe zakresy.  
   
-     ![CONCURRENCY Visualizer z 3 serii znacznika niestandardowego](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")  
+     ![Narzędzie CONCURRENCY Visualizer 3 serii znacznika niestandardowego](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")  
   
 ### <a name="to-use-visual-basic-or-c"></a>Aby użyć programu Visual Basic lub C# #
   
-1.  Dodawanie obsługi SDK wizualizatora współbieżności dla aplikacji. Aby uzyskać więcej informacji, zobacz [SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md).  
+1.  Dodanie obsługi SDK narzędzia Concurrency Visualizer do aplikacji. Aby uzyskać więcej informacji, zobacz [SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md).  
   
 2.  Dodaj `using` lub `Imports` instrukcji dla zestawu SDK.  
   
@@ -95,7 +93,7 @@ W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżno
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Dodaj kod, aby utworzyć trzy zakresy na domyślną serię znacznika i zapisywanie flagi, komunikat oraz alertu, do każdego zakresu. Możesz utworzyć <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> obiektu przez wywołanie metody statycznych `EnterSpan` metody. Można zapisać do serii domyślnej, użyj metody statycznej zapisu <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> klasy.  
+3.  Dodaj kod, aby utworzyć trzy zakresy na domyślnej znaczników serii i wpisać flagi, wiadomości i alertu, jeden na każdy zakres. Możesz utworzyć <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> obiektu przez wywołanie statycznego `EnterSpan` metody. Można zapisać do domyślnej serii, użyj metod statycznych zapisu <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> klasy.  
   
     ```VB  
   
@@ -136,11 +134,11 @@ W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżno
     alertSpan.Leave();  
     ```  
   
-4.  Na pasku menu wybierz **Analizuj**, **Concurrency Visualizer**, **rozpoczynać się od bieżącego projektu** Aby uruchomić aplikację i wyświetlić wizualizatora współbieżności. Na poniższej ilustracji przedstawiono trzy znaczniki i trzy zakresy w widoku wątków wizualizatora współbieżności.  
+4.  Na pasku menu wybierz **analizy**, **Concurrency Visualizer**, **Rozpocznij od bieżącego projektu** Aby uruchomić aplikację i wyświetlić wizualizatora współbieżności. Na poniższej ilustracji przedstawiono trzy znaczniki i trzy zakresy w widoku wątków narzędzia Concurrency visualizer.  
   
-     ![CONCURRENCY Visualizer ze znacznikami i alerty](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
+     ![Narzędzie CONCURRENCY Visualizer ze znacznikami i alerty](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
   
-5.  Dodaj kod, aby utworzyć serii znacznika klienta przy użyciu statycznych <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> metody. <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> Klasa zawiera metody służące do tworzenia zakresów i zapisywanie flagi, wiadomości i alerty.  
+5.  Dodaj kod, aby utworzyć serii znacznika klienta przy użyciu statycznej <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> metody. <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> Klasa zawiera metody służące do tworzenia zakresów i zapisywanie flagi, wiadomości i alerty.  
   
     ```VB  
   
@@ -174,9 +172,9 @@ W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżno
     messageSeriesSpan.Leave();  
     ```  
   
-6.  Uruchom bieżącego projektu, aby wyświetlić wizualizatora współbieżności. Seria trzech znacznika pojawiają się w ich własnych pasm w widoku wątków. Na poniższej ilustracji przedstawiono trzy nowe zakresy.  
+6.  Uruchom bieżący projekt do wyświetlenia w Wizualizatorze współbieżności. Serii trzech znacznika pojawiają się w ich własnych pasmach w widoku wątków. Poniższa ilustracja przedstawia trzy nowe zakresy.  
   
-     ![CONCURRENCY Visualizer z 3 serii znacznika niestandardowego](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
+     ![Narzędzie CONCURRENCY Visualizer 3 serii znacznika niestandardowego](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
 ## <a name="see-also"></a>Zobacz także  
  [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

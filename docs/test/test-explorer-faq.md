@@ -2,7 +2,6 @@
 title: Eksplorator testów — często zadawane pytania
 ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -16,12 +15,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6f4d93f81cb653cda5af7a4b75affef4a845790f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910439"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -122,7 +121,7 @@ Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do ko
 
 Ostatnie projekty testowe platformy uniwersalnej systemu Windows, określ właściwość kompilacji platformy testu, która pozwala zwiększyć wydajność do identyfikowania aplikacje testowe. W przypadku projektu testowego platformy uniwersalnej systemu Windows, który został zainicjowany przed Visual Studio w wersji 15.7 może zostać wyświetlony ten błąd wystąpił w **dane wyjściowe** > **testy**:
 
-**System.AggregateException: Wystąpił co najmniej jednego błędu. ---> System.InvalidOperationException: nie można odnaleźć następującego obiektu TestContainer {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+**System.AggregateException: Wystąpił co najmniej jednego błędu. ---> System.InvalidOperationException: Nie można odnaleźć następującego obiektu TestContainer {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
 
 Aby naprawić ten błąd:
 

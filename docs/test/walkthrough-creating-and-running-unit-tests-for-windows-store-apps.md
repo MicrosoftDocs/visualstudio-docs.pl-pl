@@ -2,7 +2,6 @@
 title: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
@@ -14,12 +13,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 87f7b724f2b7712e4318bc2bfbef4f06ee5ee9bb
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 1aa81512b06546ea2af89faf545db3a86da08218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917163"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
 

@@ -1,9 +1,6 @@
 ---
 title: Podstawowe informacje o usłudze starszego języka | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847207"
 ---
 # <a name="legacy-language-service-essentials"></a>Podstawowe informacje dotyczące starszej wersji usługi językowej
 Należy podać usługa języka, do integracji z językiem programowania w Visual Studio. W tym temacie opisano funkcje dostępne w usługach starszego języka.  
@@ -50,4 +47,3 @@ Należy podać usługa języka, do integracji z językiem programowania w Visual
 |-----------------------| - |
 | Ewaluatory wyrażeń | Obsługuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugera, sprawdzanie poprawności punktów przerwania i przekazując lista wyrażeń do wyświetlenia w **Autos** okna debugowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [Obsługa usługi językowej do debugowania](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Narzędzia do przeglądania symboli | Obsługuje **przeglądarka obiektów**, **Widok klas**, **przeglądarka wywołań**, i **wyniki Znajdź Symbol**. |
-

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e263678cca7e85993fefd01866352cafc83a74c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 04d79b78642310b636c6f9e7dd90f86d4f43e1ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902995"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory poleceń programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +37,7 @@ Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visua
 
 #### <a name="to-locate-a-command-definition"></a>Aby zlokalizować definicji poleceń
 
-1. W programie Visual Studio, otwórz następujące pliki w *ścieżka instalacji programu Visual Studio SDK*folderu \VisualStudioIntegration\Common\Inc\: SharedCmdDef.vsct ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.
+1. W programie Visual Studio, otwórz następujące pliki w *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ folderu: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.
 
     Większość poleceń programu Visual Studio są definiowane w SharedCmdDef.vsct i ShellCmdDef.vsct. VsDbgCmdUsed.vsct definiuje polecenia, które odnoszą się do debugera i Venusmenu.vsct definiuje polecenia, które są specyficzne dla programowania dla sieci Web.
 

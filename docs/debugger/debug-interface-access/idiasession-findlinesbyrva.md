@@ -1,8 +1,6 @@
 ---
 title: Idiasession::findlinesbyrva — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2f3713407ad17f468e125a1592ee8d684d27d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4c2758f6d1b134cd2cc645b99304aba4e8fe1b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918800"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 Pobiera wierszy w określonej compiland —, które zawierają określony względny adres wirtualny (RVA).  
@@ -27,7 +25,7 @@ Pobiera wierszy w określonej compiland —, które zawierają określony wzglę
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT findLinesByRVA (   
+HRESULT findLinesByRVA (   
    DWORD                 rva,  
    DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  

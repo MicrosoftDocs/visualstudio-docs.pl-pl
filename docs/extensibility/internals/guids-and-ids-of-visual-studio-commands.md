@@ -1,9 +1,6 @@
 ---
 title: Identyfikatory GUID i identyfikatory poleceń programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1440eb7da0299b79aa063d999d581cc159a88e50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898297"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory programu Visual Studio poleceń
 Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visual Studio zintegrowane środowisko programistyczne (IDE) są definiowane w .vsct — pliki, które są zainstalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -34,7 +31,7 @@ Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visua
   
 ### <a name="to-locate-a-command-definition"></a>Aby zlokalizować definicji poleceń  
   
-1. W programie Visual Studio, otwórz następujące pliki w *< ścieżka instalacji programu Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  folder: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
+1. W programie Visual Studio, otwórz następujące pliki w *< ścieżka instalacji programu Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  folderu: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
   
     Większość poleceń programu Visual Studio są zdefiniowane w *SharedCmdDef.vsct* i *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* definiuje polecenia, które odnoszą się do debugera i *Venusmenu.vsct* definiuje polecenia, które są specyficzne dla programowania dla sieci Web.  
   

@@ -2,7 +2,6 @@
 title: Mobilność — Ostrzeżenia
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.MobilityRules
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f40803e4e491382e958c1954d2608cb712ad82b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2125f8fc674c91d5bbb301c13a3a898b79e174a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889969"
 ---
 # <a name="mobility-warnings"></a>Mobilność — Ostrzeżenia
-Ostrzeżenia mobilności obsługuje zużycia energii wydajne.
+Ostrzeżenia dotyczące mobilności obsługują zużycie energii wydajne.
 
 ## <a name="in-this-section"></a>W tej sekcji
 

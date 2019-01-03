@@ -1,8 +1,6 @@
 ---
 title: VSPerfReport | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
@@ -17,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915471"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-VSPerfReport — narzędzie wiersza polecenia jest używany do tworzenia raportów za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania pliku danych profilowania. Domyślny format raportu. *csv* pliku.  
+Umożliwia tworzenie raportów przy użyciu narzędzia wiersza polecenia VSPerfReport [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools pliku danych profilowania. Domyślny format raportu. *csv* pliku.  
   
  VSPerfReport używa następującej składni:  
   
@@ -33,9 +31,9 @@ VSPerfReport — narzędzie wiersza polecenia jest używany do tworzenia raport�
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- Należy pamiętać, że `filename` musi być prawidłowy. *Vsp* lub. *vsps* pliku.  
+ Należy pamiętać, że `filename` musi być prawidłowym. *Vsp* lub. *vsps* pliku.  
   
- VSPerfReport — narzędzie wiersza polecenia jest również używana do porównania. *vsp* lub. *vsps* plików. Aby wygenerować raport różnica ("diff"), należy użyć następującej składni:  
+ Vsperfreport — narzędzie wiersza polecenia jest również używana do porównania. *vsp* lub. *vsps* plików. Aby wygenerować raport różnica ("diff"), użyj następującej składni:  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
@@ -44,52 +42,52 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` musi być prawidłowy. *vsp* lub. *vsps* plików.  
   
 ## <a name="symbol-files"></a>Pliki symboli  
- Aby wyświetlić informacje dotyczące symboli, takich jak funkcja nazwy i numery wierszy, VSPerfReport wymaga dostępu do symbolu (. Pliki PDB) PROFILOWANEGO składników i pliki symboli systemu Windows. Aby uzyskać więcej informacji, zobacz [porady: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, VSPerfReport wymaga dostępu do symbolu (. Pliki PDB) profilowanych składników i pliki symboli Windows. Aby uzyskać więcej informacji, zobacz [jak: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
-## <a name="general-report-options"></a>Opcje raportu ogólne  
+## <a name="general-report-options"></a>Opcje ogólne raportu  
  W poniższej tabeli opisano ogólne raportu, formatowanie i opcje, które wybrać dane do przekazania.  
   
 |Opcje|Opis|  
 |-------------|-----------------|  
-|**U**|Raportu i konsoli przekierowane dane wyjściowe są zapisywane jako Unicode. Musi być pierwszą opcję określony.|  
-|**Podsumowanie:**[*typy*]|Tworzy jeden lub więcej typów raportów.<br /><br /> -   `All` -generowane są wszystkie typy raportów.<br />-   `CallerCallee` -relacji nadrzędny/podrzędny między funkcji.<br />-   `Function` -Funkcje wywołane.<br />-   `CallTree` -hierarchię wywołanych funkcji.<br />-   `Counter` -wartości licznika wszystkie znaczniki wraz z wydajność systemu Windows.<br />-   `Ip` -instrukcje profilowaniu.<br />-   `Life` -istnienia przydzielonych obiektów (dostępne, gdy alokacji dane zostały zebrane.)<br />-   `Line` dane profilu wiersza kodu źródłowego.<br />-   `Header` -Raport zawiera informacje o nagłówku.<br />-   `Mark` wszystkie znaczniki.<br />-   `Module` -modułów profilowaniu.<br />-   `Process` -procesów profilowaniu.<br />-   `Thread` -wątków profilowaniu.<br />-   `Type` -przydzielone typy.<br />-   `Contention` -kontencji zasobów.<br />-   `RuleWarnings` -problemy z wydajnością reguły<br />-   `ETW` -wszystkie zdarzenia funkcji Śledzenie zdarzeń systemu Windows () zebranych podczas przebiegu profilowania. Plik etl danych musi być w jej oryginalnej lokalizacji lub do katalogu zawierającego plik Vsp lub vsps.|  
+|**U**|Dane wyjściowe raportu i konsoli przekierowane dane wyjściowe są zapisywane jako Unicode. Musi być pierwsza opcja określona.|  
+|**Podsumowanie:**[*typy*]|Tworzy jeden lub więcej typów raportów.<br /><br /> -   `All` — wszystkie typy raportów są generowane.<br />-   `CallerCallee` -relacje nadrzędne/podrzędne między funkcjami.<br />-   `Function` — funkcje wywoływane.<br />-   `CallTree` -hierarchię wywołanych funkcji.<br />-   `Counter` — wszystkie znaczniki wraz z wydajności Windows wartości liczników.<br />-   `Ip` — instrukcje profilowania.<br />-   `Life` -okresów istnienia przydzielonych obiektów (dostępne, gdy zostały zebrane dane alokacji).<br />-   `Line` źródła danych profilu wiersza kodu.<br />-   `Header` -Raport zawiera informacje o pliku nagłówka.<br />-   `Mark` wszystkie znaczniki.<br />-   `Module` -Moduły profilowania.<br />-   `Process` -profilowanych procesów.<br />-   `Thread` -profilowanych wątków.<br />-   `Type` -przydzielonych typów.<br />-   `Contention` -rywalizacje o zasoby.<br />-   `RuleWarnings` -problemy z wydajnością reguły<br />-   `ETW` — wszystkie zdarzenia śledzenie zdarzeń dla Windows (ETW) zebranych podczas uruchomienia profilowania. Plik etl danych musi być w jej oryginalnej lokalizacji lub do katalogu zawierającego plik .vsp lub .vsps.|  
 |**Xml**|Dane wyjściowe raportu w formacie XML.|  
-|**CallTrace**|Tworzy listę funkcji wejścia i wyjścia, zdarzenia ETW i znaki.|  
-|**ClearPackedSymbols**|Usuwa wcześniej osadzone symbole z pliku danych profilera. Uruchom to polecenie przed uruchomieniem PackSymbols drugi czasu.|  
-|**SymbolPath:** `path`|Określa jeden lub więcej ścieżek wyszukiwania lub symbol serwerów, które zawierają symbole dla pliku danych profilera.|  
-|**DebugSymPath**|Wyświetla lokalizacje, które są wyszukiwane symbole i czy zostały znalezione. Ta opcja jest przydatna rozwiązać problemy z rozpoznawaniem symbolu.|  
-|**PackSymbols**|Zapisuje symboli na plik danych (Vsp) profilowania tak tego symbolu (. *PDB*) plików nie są wymagane do analizy.|  
-|**Dane wyjściowe:** *ścieżki*&#124;*filename*|Określa alternatywną lokalizację plików wygenerowanego raportu. Domyślnie raporty są tworzone w bieżącym katalogu.|  
-|**SummaryFile**|Analizuje i zapisuje przeanalizowane informacje w pliku podsumowania vsps.|  
-|**PrintMarks**|Wyświetla nazwy i sygnatury czasowe dla wszystkich znaczników w pliku określonego raportu.|  
+|**CallTrace**|Tworzy listę wejście funkcji i wyjścia, zdarzenia ETW i znaczników.|  
+|**ClearPackedSymbols**|Usuwa wcześniej osadzone symbole z pliku danych profilera. Uruchom następujące polecenie przed uruchomieniem PackSymbols na sekundę czasu.|  
+|**SymbolPath:** `path`|Określa jedną lub więcej ścieżek wyszukiwania lub serwerów symboli, które zawierają symbole dla pliku danych profilera.|  
+|**DebugSymPath**|Wyświetla listę lokalizacji, które są przeszukiwane pod kątem symboli i tego, czy zostaną znalezione. Ta opcja jest przydatna rozwiązać problemy z rozpoznawaniem symboli.|  
+|**PackSymbols**|Zapisuje symboli do pliku danych (Vsp) profilowania więc symbolu (. *plik PDB*) plików nie są wymagane do analizy.|  
+|**Dane wyjściowe:** *ścieżki*&#124;*nazwy pliku*|Określa alternatywną lokalizację plików wygenerowany raport. Domyślnie raporty są tworzone w bieżącym katalogu.|  
+|**SummaryFile**|Analizuj i zapisuje przeanalizowane informacje w pliku podsumowania vsps.|  
+|**PrintMarks**|Wyświetla nazwy i sygnatury czasowe dla wszystkich znaków w pliku określonego raportu.|  
 |**?**|Wyświetla informacje o użyciu.|  
 |**NoLogo**|Ukrywa informacje o wersji, gdy raport jest uruchomiony.|  
-|**UserRulesDirectory**|Określa katalog zawierający reguły wydajności zdefiniowanych przez użytkownika [nie została jeszcze zaimplementowana].|  
+|**UserRulesDirectory**|Określa katalog zawierający reguły wydajności zdefiniowanej przez użytkownika [nie została jeszcze zaimplementowana].|  
   
 ## <a name="filter-options"></a>Opcje filtru  
  W poniższej tabeli opisano opcje filtrowania dostępnych danych.  
   
 |Opcje|Opis|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`] [,`callee`]]|Pokaż tylko użytkowników aplikacji wywołania funkcji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - Ukryj wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez użytkownika funkcji aplikacji.|  
-|**Czas rozpoczęcia:**[*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
-|**Wartość EndTime:**[*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
+|**JustMyCode**[**:**[`caller`] [,`callee`]]|Pokaż tylko użytkowników wywołań funkcji aplikacji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - ukryć wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez funkcje aplikacji użytkownika.|  
+|**Godzina rozpoczęcia:**[*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
+|**EndTime:**[*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
 |**FilterFile:** `VSPFFile`|Określa lokalizację pliku filtru, który został wygenerowany z okna Raport dotyczący wydajności programu Visual Studio.|  
-|**MsFilter:**[*starttime, czas trwania*]|Wyświetla tylko dane z `starttime` do długości `duration` (w milisekundach).|  
+|**MsFilter:**[*godzina rozpoczęcia, czas trwania*]|Wyświetla tylko dane z `starttime` aż do długości `duration` (w milisekundach).|  
 |**Proces:**[*pid*]|Wyświetla tylko dane z określonego procesu.|  
 |**Wątek:**[*threadid*]|Wyświetla tylko dane z określonego wątku.|  
 |**Wątek:**[*identyfikator_wątku, identyfikator_procesu*]|Wyświetla tylko dane z określonego wątku skojarzone z określonym procesem.|  
   
 ## <a name="difference-report-options"></a>Opcje raportu różnicy  
- W poniższej tabeli opisano opcje porównywanie plików raportów.  
+ W poniższej tabeli opisano opcje porównywania plików raportu.  
   
 |Opcje|Opis|  
 |-------------|-----------------|  
-|**różnicowego**  `vspfile1 vspfile2`|Porównanie dwóch plików raportu (. *Vsp* lub. *vsps*) plików. Opcje podsumowania zostaną zignorowane przy użyciu opcji różnic.|  
-|**Diff:**[*wartość*]|Poniżej tego progu różnicy pomiędzy dwoma wartościami zostaną zignorowane. Ponadto nowe dane o wartościach poniżej tego progu nie będą wyświetlane.|  
+|**Diff**  `vspfile1 vspfile2`|Porównaj dwa pliki raportów (. *Vsp* lub. *vsps*) plików. Opcje podsumowania zostaną zignorowane przy użyciu opcji różnic.|  
+|**Diff:**[*wartość*]|Poniżej tej wartości progowe różnicę między dwiema wartościami zostaną zignorowane. Ponadto nowe dane o wartościach poniżej tego progu nie będą wyświetlane.|  
 |**DiffTable:**[*tablename*]|Użyj tej konkretnej tabeli do porównywania plików. Wartość domyślna to tabeli funkcji.|  
-|**DiffColumn:**[*columnname*]|Użyj tej konkretnej kolumny Porównaj wartości. Wartość domyślna to kolumny procentową wyłącznych próbek.|  
-|**Querydifftables zwraca**|Wyświetl listę prawidłowych tabel i kolumn dla dwóch plików raportu, pod warunkiem.|  
+|**DiffColumn:**[*columnname*]|Użyj tej wartości porównania określonej kolumny. Wartość domyślna to kolumna procentu próbki wyłączne.|  
+|**QueryDiffTables**|Listę prawidłowych tabel i kolumn dla tych dwóch plików raportu, pod warunkiem.|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widoki raportu wydajności](../profiling/performance-report-views.md)

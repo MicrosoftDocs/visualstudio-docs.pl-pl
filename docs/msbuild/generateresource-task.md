@@ -1,8 +1,6 @@
 ---
 title: Generateresource — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917504"
 ---
 # <a name="generateresource-task"></a>GenerateResource — zadanie
 Wykonuje konwersję między *.txt* i *resx* plików (w formacie zasobów opartych na języku XML) i środowisko uruchomieniowe języka wspólnego binarne *Resources* pliki, które można osadzić w binarnym środowiska uruchomieniowego pliku wykonywalnego lub skompilowane do zestawów satelickich. To zadanie jest zazwyczaj używana do konwersji *.txt* lub *resx* plików *Resources* plików. `GenerateResource` Zadanie jest podobne do [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -46,7 +44,7 @@ Wykonuje konwersję między *.txt* i *resx* plików (w formacie zasobów opartyc
 |`PublicClass`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, tworzy silnie typizowanej klasy zasobów jako klasę publiczną.|  
 |`References`|Opcjonalnie `String[]` parametru.<br /><br /> Odwołania można załadować typów w *resx* plików z. *resx* elementy danych pliku może mieć typ architektury .NET. Gdy *resx* plik jest do odczytu, musi to być rozwiązane. Zwykle rozwiązania problemu pomyślnie za pomocą standardowej, trwa ładowanie reguł. Jeśli podasz zestawów w `References`, ich wyższy priorytet.<br /><br /> Ten parametr nie jest wymagane dla silnie typizowanych zasobów.|  
 |`SdkToolsPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak *resgen.exe*.|  
-|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy do przekonwertowania. Pozycji przekazanych do tego parametru musi mieć jedną z następujących rozszerzeń pliku:<br /><br /> -   *.txt*: Określa rozszerzenie pliku tekstowego do przekonwertowania. Pliki tekstowe mogą zawierać tylko zasoby w postaci ciągów.<br />-   *resx*: Określa rozszerzenie pliku zasobów w formacie XML do konwersji.<br />-   *restext*: określa ten sam format jak *.txt*. To rozszerzenie innej jest przydatne, jeśli chcesz wyraźnie odróżnić pliki źródłowe, zawierające zasoby z innych plikach źródłowych w procesie kompilacji.<br />-   *.resources*: Określa rozszerzenie pliku zasobu do konwersji.|  
+|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy do przekonwertowania. Pozycji przekazanych do tego parametru musi mieć jedną z następujących rozszerzeń pliku:<br /><br /> -   *.txt*: Określa rozszerzenie pliku tekstowego do przekonwertowania. Pliki tekstowe mogą zawierać tylko zasoby w postaci ciągów.<br />-   *resx*: Określa rozszerzenie pliku zasobów w formacie XML do konwersji.<br />-   *restext*: Określa tego samego formatu co *.txt*. To rozszerzenie innej jest przydatne, jeśli chcesz wyraźnie odróżnić pliki źródłowe, zawierające zasoby z innych plikach źródłowych w procesie kompilacji.<br />-   *.resources*: Określa rozszerzenie pliku zasobu do konwersji.|  
 |`StateFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa ścieżkę do pliku opcjonalne pamięci podręcznej, który jest używany w celu przyspieszenia sprawdzania łączy w zależności *resx* plików wejściowych.|  
 |`StronglyTypedClassName`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę klasy dla silnie typizowanej klasy zasobów. Jeśli ten parametr nie jest określony, używany jest podstawowej nazwy pliku zasobów.|  
 |`StronglyTypedFilename`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa nazwę pliku dla pliku źródłowego. Jeśli ten parametr nie jest określony, nazwa klasy jest używany jako podstawowej nazwy pliku z rozszerzeniem zależne od języka. Na przykład: *MyClass.cs*.|  
@@ -87,7 +85,7 @@ Wykonuje konwersję między *.txt* i *resx* plików (w formacie zasobów opartyc
  Przy założeniu, że zestaw jest o nazwie myAssembly, poniższy kod generuje osadzony zasób o nazwie *someQualifier.someResource.resources*:  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Bez \<LogicalName > metadane, będą miały postać zasobu *myAssembly.myResource.resources*.  Ten przykład dotyczy tylko dla procesu kompilacji w Visual Basic i Visual C#.  

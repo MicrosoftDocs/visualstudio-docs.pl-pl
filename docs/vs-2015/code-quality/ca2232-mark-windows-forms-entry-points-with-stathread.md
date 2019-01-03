@@ -1,12 +1,11 @@
 ---
-title: 'CA2232: Punkty wejścia formularzy Windows znacznik za pomocą atrybutu STAThread | Dokumentacja firmy Microsoft'
+title: 'CA2232: Punkty wejścia znacznik Windows Forms za pomocą atrybutu STAThread | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ef67681bcb0f16e8d7f75ebfcad079c85d47ab4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6dc1b16b7920084f9718de65de1dd94a97c741f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904515"
 ---
-# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Oznacz punkty wpisu formularzy systemu Windows za pomocą STAThread
+# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Punkty wejścia znacznik Windows Forms za pomocą atrybutu STAThread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -57,6 +56,3 @@ ms.locfileid: "49919289"
 
  [!code-csharp[FxCop.Usage.StaThread#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/cs/FxCop.Usage.StaThread.cs#1)]
  [!code-vb[FxCop.Usage.StaThread#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/vb/FxCop.Usage.StaThread.vb#1)]
-
-
-

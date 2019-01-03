@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenEx | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5304c77dd772a1aa74b90d89df7eb73361ab7561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7014bf0b42e9fcaab313c6b89d0caf1f1678a297
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928714"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Pobiera elementy podrzędne symbolu. Symbole lokalne, które są zwracane obejmują informacje dotyczące zakresów na żywo, jeśli program został skompilowany z optymalizacji na.  
@@ -27,7 +25,7 @@ Pobiera elementy podrzędne symbolu. Symbole lokalne, które są zwracane obejmu
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT findChildrenEx (   
+HRESULT findChildrenEx (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -55,7 +53,7 @@ HRESULT findChildrenEx (
  Ta metoda jest rozszerzona wersja [idiasymbol::findchildren —](../../debugger/debug-interface-access/idiasymbol-findchildren.md).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
  Biblioteka: diaguids.lib  
   

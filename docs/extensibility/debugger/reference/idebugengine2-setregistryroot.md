@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::SetRegistryRoot | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::SetRegistryRoot
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07e62715bc5bdce655c4fa5493bb9043ce241dca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee67aac4941378e86fdea68e1ecc5045e87d4e81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921991"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 Ustawia katalog główny rejestru dla aparatu debugowania (DE).  
@@ -28,13 +25,13 @@ Ustawia katalog główny rejestru dla aparatu debugowania (DE).
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT SetRegistryRoot(   
+HRESULT SetRegistryRoot(   
    LPCOLESTR pszRegistryRoot  
 );  
 ```  
   
 ```csharp  
-int SetRegistryRoot(   
+int SetRegistryRoot(   
    string pszRegistryRoot  
 );  
 ```  

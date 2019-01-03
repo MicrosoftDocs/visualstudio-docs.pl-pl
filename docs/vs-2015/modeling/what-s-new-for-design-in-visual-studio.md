@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 666402a0488fdfd0e09e12e711c9b74b2f3b2fd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5b824316c8268122d20144d48e51620ac8bbb6b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894803"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Co nowego w dziedzinie projektowania w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

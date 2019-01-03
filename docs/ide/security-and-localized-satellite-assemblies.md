@@ -2,7 +2,6 @@
 title: Zabezpieczenia a zlokalizowane zestawy satelickie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - key pairs for strong-named assemblies
@@ -19,18 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7eb391f01bc5a709aeaf0002ac647c358355e5f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4d0c38ae4353c7761b1cff4173b995ab6c89e0a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892056"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>Zabezpieczenia a zlokalizowane zestawy satelickie
 
-Jeśli Twoje główny zestaw używa silne nazwy, zestawów satelickich muszą być podpisane przy użyciu tego samego klucza prywatnego jako główny zestaw. Jeśli klucz publiczny i prywatny pary różni się od głównego i zestawy satelickie, zasobów nie zostanie załadowany. Aby uzyskać więcej informacji na zestawy podpisywania, zobacz [porady: podpisać zestaw o silnej nazwie](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Jeśli zestaw głównych używa, silne nazwy, zestawy satelickie muszą być podpisane przy użyciu tego samego klucza prywatnego jako zestawu głównego. Jeśli klucz publiczny/prywatny, które pary jest niezgodny między głównym i zestawy satelickie, zasoby nie będą ładowane. Aby uzyskać więcej informacji na temat podpisywania zestawów, zobacz [jak: Podpisywanie zestawu silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
- Ogólnie rzecz biorąc należy do grupy podpisywania firmy lub organizacji zewnętrznych podpisywania, zaloguj się przy użyciu klucza prywatnego. Jest to spowodowane wrażliwych klucza prywatnego: dostęp do często jest ograniczony do kilku osób. Możesz użyć podpisywanie opóźnione podczas programowania. Aby uzyskać więcej informacji, zobacz [opóźnione podpisywanie zestawu](/dotnet/framework/app-domains/delay-sign-assembly).
+ Ogólnie rzecz biorąc może być konieczne podpisywania grupy w organizacji lub zewnętrznego organizacji podpisywania, zaloguj się przy użyciu klucza prywatnego. Jest to spowodowane wrażliwych klucza prywatnego: dostęp do często jest ograniczony do kilku osób. Możesz użyć opóźnionego podpisywania w czasie projektowania. Aby uzyskać więcej informacji, zobacz [opóźnienie podpisywania zestawu](/dotnet/framework/app-domains/delay-sign-assembly).
 
 ## <a name="see-also"></a>Zobacz także
 

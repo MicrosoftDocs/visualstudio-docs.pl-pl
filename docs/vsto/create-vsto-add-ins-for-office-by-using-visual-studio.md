@@ -3,8 +3,6 @@ title: Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual 
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7708bc32e240f5976f1a7b6b9f9a1afb4c950743
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942661"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
   Microsoft Office developer tools w programie Visual Studio umożliwia tworzenie aplikacji .NET Framework, rozszerzających pakiet Office. Te aplikacje są również nazywane *rozwiązań pakietu Office*.  
@@ -114,5 +112,3 @@ ms.locfileid: "53441499"
   
  [Programowanie .NET framework w programie Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Omówienie tworzenia aplikacji przy użyciu platformy .NET Framework w języku Visual Basic i Visual C#.  
-  
-  

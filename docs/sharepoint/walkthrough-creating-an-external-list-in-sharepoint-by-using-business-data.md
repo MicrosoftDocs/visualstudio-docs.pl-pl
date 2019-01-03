@@ -1,13 +1,8 @@
 ---
-title: 'Wskazówki: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych | Dokumentacja firmy Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918787"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych
 
@@ -189,9 +184,9 @@ Dodawanie określonej metody wyszukiwania do jednostki Contact przy użyciu **sz
 
     |Nazwa|Nazwa typu|
     |----------|---------------|
-    |Imię|System.String|
-    |Nazwisko|System.String|
-    |Telefon|System.String|
+    |FirstName|System.String|
+    |LastName|System.String|
+    |Numer telefonu|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
@@ -275,9 +270,9 @@ Kiedy uruchamiasz projekt, otwiera się witryna SharePoint i Visual Studio dodaj
 
 Możesz dowiedzieć się więcej o projektowaniu modeli usługi łączności danych biznesowych w programie SharePoint w tych tematach:
 
-- [Porady: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md).
-- [Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md).
-- [Porady: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md).
+- [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md).
+- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md).
+- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,9 +1,8 @@
 ---
-title: 'Porady: Ustawianie opcji ułatwień dostępu IDE'
+title: 'Instrukcje: Ustawianie opcji ułatwień dostępu środowiska IDE'
 description: Dowiedz się, jak ustawić opcje ułatwień dostępu w programie Visual Studio, który ułatwi jego zintegrowanego środowiska programistycznego (IDE) dla każdego, w tym dla osób niedowidzących do odczytu, jak i dla osób o ograniczonej sprawności ruchowej, aby zapisać.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906777"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Porady: Ustawianie opcji ułatwień dostępu IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Instrukcje: Ustawianie opcji ułatwień dostępu środowiska IDE
 
 > [!TIP]
 > Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
@@ -90,7 +89,7 @@ Ponadto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje 
 
 4.  Z **wyświetlania elementów**, wybierz element, którego ekran zachodzi potrzeba zmiany, takie jak **zwykły tekst**, **margines wskaźnika**, **pokazuj biały znak**, **Nazwa atrybutu HTML**, lub **atrybutu XML**.
 
-5.  Wybierz pozycję Wyświetl ustawienia dostępne są następujące opcje: **pierwszy plan elementu**, **tła elementu**, i **Bold**.
+5.  Wybierz ustawienia wyświetlania spośród następujących opcji: **Pierwszy plan elementu**, **tła elementu**, i **Bold**.
 
 6.  Wybierz **OK**.
 

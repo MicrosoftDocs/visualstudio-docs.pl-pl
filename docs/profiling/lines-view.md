@@ -1,8 +1,6 @@
 ---
 title: Widok linii | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.lines
@@ -16,33 +14,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c298f6801b5c66a978ac39953eb2edc92838c30
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a6d34b0ecb7ef7c47acca8d725ffc734e58cae06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922075"
 ---
 # <a name="lines-view"></a>Widok linii
-Widok linii jest dostępna tylko w przypadku dane zebrane przy użyciu metody próbkowania profilera. Widok nie jest dostępna dla danych, które zostały zebrane przy użyciu Instrumentacji.  
+Widok linii jest dostępna tylko dla danych profilera, które zostały zebrane przy użyciu metody próbkowania. Widok nie jest dostępna dla danych, które zostały zebrane przy użyciu Instrumentacji.  
   
- Do pobierania próbek danych profilu, widok linii identyfikuje instrukcji w funkcji, która powodowała bezpośrednio po próbki został zebrany. W przypadku danych pamięci .NET widok linii identyfikuje instrukcji, które przydzielić pamięci.  
+ Dla pobierania próbek danych profilowych, widok linii identyfikuje instrukcji w funkcji, która bezpośrednio był wykonywany, gdy zostały zebrane próbki. W przypadku danych pamięci .NET widok linii określa instrukcje, które przydzielić pamięci.  
   
- W pliku źródłowym instrukcję może obejmować więcej tego wiersza w pliku źródłowym i jednym wierszu może zawierać więcej niż jedną instrukcję.  
+ W pliku źródłowym instrukcji może obejmować więcej tego wiersza w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.  
   
- Instrukcja jest identyfikowany przez następujące czynności:  
+ Instrukcja jest identyfikowane przez następujące elementy:  
   
 -   Plik źródłowy, który zawiera deklarację funkcji.  
   
 -   Funkcja, która zawiera instrukcję.  
   
--   Wiersza źródłowego, w którym rozpoczyna się instrukcji.  
+-   Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Po znaku wiersza źródłowego, w którym rozpoczyna się instrukcji.  
+-   Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
   
 -   Wiersza źródłowego, w którym kończy się instrukcji.  
   
--   Po znaku wiersza źródłowego, w którym kończy się instrukcji.  
+-   Znak w wierszu źródłowym, w którym kończy się instrukcji.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok linii](../profiling/lines-view-sampling-data.md)   

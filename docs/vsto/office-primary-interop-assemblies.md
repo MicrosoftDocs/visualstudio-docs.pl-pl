@@ -1,9 +1,6 @@
 ---
 title: podstawowe zestawy międzyoperacyjne pakietu Office
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926740"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
@@ -82,7 +79,7 @@ Zestawy PIA pakietu Office nie są wymagane na komputerach użytkowników końco
 
 Każdy szablon projektu pakietu Office w programie Visual Studio jest przeznaczona do pracy z pojedynczą aplikacją Microsoft Office. Aby korzystać z funkcji wielu aplikacji pakietu Microsoft Office lub korzystać z funkcji w aplikacji lub składnika, który nie ma projektu w programie Visual Studio, należy dodać odwołanie do wymaganych zestawów PIA.  
   
-W większości przypadków należy dodać odwołania do zestawów PIA, które są instalowane przez program Visual Studio w obszarze `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` katalogu. Te wersje zestawów są wyświetlane na **Framework** karcie **Menadżer odwołań** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: aplikacje Office docelowej przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+W większości przypadków należy dodać odwołania do zestawów PIA, które są instalowane przez program Visual Studio w obszarze `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` katalogu. Te wersje zestawów są wyświetlane na **Framework** karcie **Menadżer odwołań** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 Jeśli masz zainstalowane i zarejestrowane zestawy PIA w globalnej pamięci podręcznej, te wersje zestawów są wyświetlane na **COM** karcie **Menadżer odwołań** okno dialogowe. Dodawanie odwołania do tych wersji zespołów, należy unikać, ponieważ istnieją pewne problemy projektowe, które mogą wystąpić podczas korzystania z nich. Na przykład, jeśli zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej zestawów, projekt będzie automatycznie wiązany wersji zestawu, która została zarejestrowana jako ostatnia — nawet jeśli określisz inną wersję zestawu na  **COM** karcie **Menadżer odwołań** okno dialogowe.  
   
@@ -113,7 +110,7 @@ W poniższej tabeli wymieniono podstawowe zestawy międzyoperacyjne, które są 
 |Biblioteka obiektów programu Microsoft Publisher 14.0<br /><br /> Biblioteka obiektów programu Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|  
 |Microsoft SharePoint Designer 14.0 Web Bibliotaka odwołań|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Microsoft SharePoint Designer 14.0 obiektu strony Reference Library|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Biblioteki typów w wersji 2.0 inteligentnych tagów Microsoft **Uwaga:** tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
+|2.0 biblioteki typów tagów inteligentnych Microsoft **Uwaga:**  Tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
 |Program Microsoft Visio 14.0 Biblioteka typów<br /><br /> Biblioteki typów w programie Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|  
 |Program Microsoft Visio 14.0 Zapisz jako biblioteki typów sieci Web<br /><br /> Program Microsoft Visio 15.0 Zapisz jako biblioteki typów sieci Web|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Biblioteka typów kontroli rysunku programu Microsoft Visio 14.0<br /><br /> Biblioteka typów kontroli rysunku programu Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Podczas instalowania i rejestrowania zestawów Office PIA w globalnej pamięci p
 
 Na przykład kiedy rozwiązanie odwołujące [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] zestawu, który jest uruchamiany na komputerze, który ma [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] wersji tego samego podstawowego zestawu międzyoperacyjnego, zestawu powiązania przekierowania nakazuje [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] środowiska uruchomieniowego do załadowania [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] Wersja podstawowy zestaw międzyoperacyjny. 
 
-Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie automatycznego przekierowywania powiązań](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznego przekierowywania powiązań](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Zobacz także  
 
-- [Porady: aplikacje Office docelowej przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)   
 - [Rozwiązania InfoPath](../vsto/infopath-solutions.md)   
 - [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie auto
 - [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
 - [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)   
 - [Informacje ogólne &#40;programowanie Office w Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: '&lt;wdrożenie&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e919574ffaa6b1e5545f4c97685722a3017c2182
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3165337a7386d90d674b42e7fd7e6f29822b284
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906933"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;wdrożenie&gt; — element (wdrażanie ClickOnce)
 Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie na system.  
@@ -69,11 +67,11 @@ Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie 
 | `minimumRequiredVersion` | Opcjonalna. Określa minimalną wersję tej aplikacji, które można uruchomić na komputerze klienckim. Jeśli numer wersji aplikacji jest mniejszy niż podany w pliku manifestu wdrożenia numer wersji, aplikacja nie będzie działać. Numer wersji musi być określona w formacie `N.N.N.N`, gdzie `N` jest liczbą całkowitą bez znaku. Jeśli `install` atrybut jest `false`, `minimumRequiredVersion` nie może być ustawiony. |
 | `mapFileExtensions` | Opcjonalna. Wartość domyślna to `false`. Jeśli `true`, wszystkie pliki we wdrożeniu musi mieć rozszerzenie .deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będzie paska to rozszerzenie tych plików, jak najszybciej pobiera je z serwera sieci Web. W przypadku publikowania aplikacji za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], automatycznie doda to rozszerzenie do wszystkich plików. Ten parametr umożliwia wszystkich plików w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia mają być pobrane z serwera sieci Web, która blokuje przekazywania plików kończące się na "niebezpieczny" rozszerzeń, takich jak .exe. |
 | `disallowUrlActivation` | Opcjonalna. Wartość domyślna to `false`. Jeśli `true`, uniemożliwia zainstalowanej aplikacji po uruchomieniu, klikając adres URL lub wprowadzić adres URL w programie Internet Explorer. Jeśli `install` atrybut nie jest obecny, atrybut ten jest ignorowany. |
-| `trustURLParameters` | Opcjonalna. Wartość domyślna to `false`. Jeśli `true`, zezwala na adres URL, aby zawierać parametrów ciągu zapytania, które są przekazywane do aplikacji, wiele podobnych argumenty wiersza polecenia są przekazywane do wiersza polecenia aplikacji. Aby uzyskać więcej informacji, zobacz [porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Jeśli `disallowUrlActivation` atrybut jest `true`, `trustUrlParameters` być wykluczone z manifestu, lub jawnie ustawione na `false`. |
+| `trustURLParameters` | Opcjonalna. Wartość domyślna to `false`. Jeśli `true`, zezwala na adres URL, aby zawierać parametrów ciągu zapytania, które są przekazywane do aplikacji, wiele podobnych argumenty wiersza polecenia są przekazywane do wiersza polecenia aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Jeśli `disallowUrlActivation` atrybut jest `true`, `trustUrlParameters` być wykluczone z manifestu, lub jawnie ustawione na `false`. |
 
  `deployment` Element zawiera także następujących elementów podrzędnych.  
 
-## <a name="subscription"></a>Subskrypcja  
+## <a name="subscription"></a>subskrypcja  
  Opcjonalna. Zawiera `update` elementu. `subscription` Element nie ma żadnych atrybutów. Jeśli `subscription` element nie istnieje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji nigdy nie rozpocznie skanowanie aktualizacji. Jeśli `install` atrybutu `deployment` element jest `false`, `subscription` element jest ignorowany, ponieważ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, który jest zawsze uruchamiany z sieci korzysta z najnowszej wersji.  
 
 ## <a name="update"></a>Aktualizacja  

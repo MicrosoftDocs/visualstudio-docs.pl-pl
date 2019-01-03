@@ -1,9 +1,6 @@
 ---
 title: PowerPoint — rozwiązania
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906049"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint — rozwiązania
   Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft PowerPoint pakietu Office. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu PowerPoint, Rozszerz funkcje programu PowerPoint lub dostosowywanie interfejsu użytkownika (UI) programu PowerPoint.  
@@ -37,7 +34,7 @@ ms.locfileid: "49906562"
 > [!NOTE]  
 >  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Tworzenie dodatku dla programu Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Tworzenie dodatku dla programu Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>W programie PowerPoint zautomatyzować za pomocą modelu obiektów programu PowerPoint  
  Model obiektów programu PowerPoint uwidacznia wiele typów, których można użyć do zautomatyzowania programu PowerPoint. Te typy umożliwiają pisanie kodu w celu wykonywania typowych zadań:  
@@ -56,7 +53,7 @@ ms.locfileid: "49906562"
  Aby uzyskać pełne informacje o modelu obiektów programu PowerPoint mogą odwoływać się do programu PowerPoint odwołanie do zestawu podstawowej usługi międzyoperacyjnej (PIA) i dokumentacja modelu obiektów języka VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do zestawu podstawowej usługi międzyoperacyjnej  
- Dokumentacja referencyjna programu PowerPoint PIA w tym artykule opisano typy w podstawowy zestaw międzyoperacyjny dla programu PowerPoint. Ta dokumentacja jest dostępna z następującej lokalizacji: [odwołanie do zestawu podstawowej usługi międzyoperacyjnej PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ Dokumentacja referencyjna programu PowerPoint PIA w tym artykule opisano typy w podstawowy zestaw międzyoperacyjny dla programu PowerPoint. Ta dokumentacja jest dostępna z następującej lokalizacji: [Odwołanie do zestawu podstawowej usługi międzyoperacyjnej PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Aby uzyskać więcej informacji na temat projektowania PIA programu PowerPoint, takie jak różnice między klasami i interfejsy, które PIA i sposobu implementacji zdarzenia w PIA, zobacz [Przegląd klasy i interfejsy podstawowe zestawy międzyoperacyjne pakietu Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
@@ -72,7 +69,7 @@ ms.locfileid: "49906562"
 |----------|--------------------------|  
 |Tworzenie niestandardowego okienka zadań.|[Niestandardowe okienka zadań](../vsto/custom-task-panes.md)|  
 |Dodaj niestandardowe karty do wstążki.|[Wstążka — omówienie](../vsto/ribbon-overview.md)|  
-|Dodaj niestandardowe grupy do wbudowanej karty na Wstążce.|[Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Dodaj niestandardowe grupy do wbudowanej karty na Wstążce.|[Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  Aby uzyskać więcej informacji o dostosowywaniu interfejsu użytkownika programu PowerPoint i inne aplikacje Microsoft Office, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
@@ -81,11 +78,9 @@ ms.locfileid: "49906562"
  [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
  [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)   
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)   
  [PowerPoint 2010 w rozwój pakietu Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

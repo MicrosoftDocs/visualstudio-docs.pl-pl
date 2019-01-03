@@ -1,8 +1,6 @@
 ---
-title: 'Porady: Page Up lub w dół w pamięci | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Page Up lub w dół w pamięci | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902230"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Porady: stronicowanie w górę lub w dół w pamięci
+# <a name="how-to-page-up-or-down-in-memory"></a>Instrukcje: Page Up lub w dół w pamięci
 
 Podczas wyświetlania zawartości pamięci w **pamięci** okna lub **dezasemblacji** okna, można użyć pionowy pasek przewijania można przenieść w górę lub w dół w obszarze pamięci.  
   
@@ -50,5 +48,5 @@ Podczas wyświetlania zawartości pamięci w **pamięci** okna lub **dezasemblac
   
 ## <a name="see-also"></a>Zobacz też  
  [Windows pamięci](../debugger/memory-windows.md)   
- [Porady: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)   
+ [Instrukcje: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

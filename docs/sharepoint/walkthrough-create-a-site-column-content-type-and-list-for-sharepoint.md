@@ -1,17 +1,12 @@
 ---
 title: 'Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852534"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint
   Poniższe procedury przedstawiają sposób tworzenia kolumn niestandardowych witryny programu SharePoint — lub *pola*— a także typu zawartości, która korzysta z kolumny witryny. Pokazano również, jak utworzyć listę, która korzysta z nowego typu zawartości.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900127"
     </Field>  
     ```  
   
-4.  Przy użyciu tej samej procedury, Dodaj dwie kolumny witryny do projektu: **identyfikator pacjenta** (typ = "Integer") i **nazwa lekarzem** (typ = "Text"). Ustaw wartość ich grupy **kolumny witryny kliniki**.  
+4.  Korzystając z tej samej procedury, należy dodać dwie kolumny witryny do projektu: **Identyfikator pacjentów** (typ = "Integer") i **nazwa lekarzem** (typ = "Text"). Ustaw wartość ich grupy **kolumny witryny kliniki**.  
   
 ## <a name="create-a-custom-content-type"></a>Tworzenie niestandardowego typu zawartości
  Następnie utwórz typ zawartości — na podstawie typu zawartości kontakty — zawierającej kolumny witryny, które zostały utworzone w poprzedniej procedurze. Użycie typu zawartości na istniejącego typu zawartości, można zaoszczędzić czas, ponieważ podstawowym typem zawartości zapewnia kilka kolumn witryn, do użytku w nowego typu zawartości.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900127"
   
      W ten sposób zapewnia dostęp do innych kolumn potencjalnie przydatne witryn, skontaktuj się z typu zawartości, oprócz kolumny witryny, które zostały wcześniej zdefiniowane.  
   
-6.  Po typie zawartości pojawi się okno projektanta, w **kolumn** kartę, Dodaj trzy lokacji kolumn, które zostały wcześniej zdefiniowane: **nazwa pacjenta**, **identyfikator pacjenta**i **Nazwa lekarzem**. Aby dodać te kolumny, wybierz na pierwszej liście, na liście kolumn witryn, w obszarze **nazwę wyświetlaną**, a następnie wybierz na liście jedną każdej kolumny witryny w danym momencie.  
+6.  Po typie zawartości pojawi się okno projektanta, w **kolumn** kartę, Dodaj trzy lokacji kolumn, które zostały wcześniej zdefiniowane: **Nazwa pacjentów**, **pacjentów identyfikator**, i **nazwa lekarzem**. Aby dodać te kolumny, wybierz na pierwszej liście, na liście kolumn witryn, w obszarze **nazwę wyświetlaną**, a następnie wybierz na liście jedną każdej kolumny witryny w danym momencie.  
   
     > [!TIP]  
     >  Aby wybrać kolumny witryny szybciej, filtrować listę, wprowadzając kilka pierwszych liter nazwy kolumny.  
@@ -229,7 +224,6 @@ ms.locfileid: "49900127"
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie kolumn witryn, typów zawartości oraz list dla SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Porady: Tworzenie niestandardowego pola typu](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Instrukcje: Tworzenie niestandardowego pola typu](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Typy zawartości](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Kolumny](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

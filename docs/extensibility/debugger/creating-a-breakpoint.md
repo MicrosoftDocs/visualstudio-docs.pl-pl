@@ -1,9 +1,6 @@
 ---
 title: Tworzenie punktu przerwania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, creating
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04eefdca7459f95da3ddef0430a59f9af52e581e
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 9641dc70fb1aa175c0d9e1017a1eb866bc5e3737
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903055"
 ---
 # <a name="create-a-breakpoint"></a>Utwórz punkt przerwania
 Poniżej opisano proces tworzenia punktu przerwania.  

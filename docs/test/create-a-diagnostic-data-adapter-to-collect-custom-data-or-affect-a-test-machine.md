@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 67eb1a1128a811868db97dfc682c7b4eec7b2c61
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b948691650c744a253bbf3f1758994277e1b7351
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895876"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Tworzenie adaptera danych diagnostycznych do zbierania danych niestandardowych lub wpływać na komputer testowy
 
@@ -34,8 +33,8 @@ Użyj następujących tematów pomocnych przy tworzeniu Adapterów danych diagno
 
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
-|**Tworzenie adaptera danych diagnostycznych:** tworzenie adaptera danych diagnostycznych, tworząc bibliotekę klas, a następnie zebrać informacje lub mieć wpływ na system testowy, który jest używany do uruchamiania testów za pomocą interfejsu API adaptera danych diagnostycznych.|-   [Porady: tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Wybranie niestandardowego adaptera danych diagnostycznych do użycia gdy testy są uruchamiane:** tak, że karta jest używana podczas uruchamiania testów, można wybrać kartę danych diagnostycznych, w której do użycia w ustawieniach testu.|-   [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Tworzenie adaptera danych diagnostycznych:** Tworzenie adaptera danych diagnostycznych, tworząc bibliotekę klas, a następnie zebrać informacje lub mieć wpływ na system testowy, który jest używany do uruchamiania testów za pomocą interfejsu API adaptera danych diagnostycznych.|-   [Jak: Tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)|
+|**Wybranie niestandardowego adaptera danych diagnostycznych do użycia gdy testy są uruchamiane:** Tak, że karta jest używana podczas uruchamiania testów, można wybrać kartę danych diagnostycznych, w której do użycia w ustawieniach testu.|-   [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 
 ## <a name="see-also"></a>Zobacz także
 

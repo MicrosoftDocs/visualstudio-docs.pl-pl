@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Automatyzacja aplikacji z niestandardowego okienka zadań'
-ms.custom: ''
+title: 'Przewodnik: Automatyzacja aplikacji z niestandardowego okienka zadań'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915091"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Wskazówki: Automatyzacja aplikacji z niestandardowego okienka zadań
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Przewodnik: Automatyzacja aplikacji z niestandardowego okienka zadań
   Ten przewodnik przedstawia sposób tworzenia niestandardowego okienka zadań, która automatyzuje programu PowerPoint. Niestandardowego okienka zadań wstawia daty do slajdu, gdy użytkownik kliknie <xref:System.Windows.Forms.MonthCalendar> formant, który znajduje się na niestandardowego okienka zadań.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "35676235"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Utwórz projekt dodatku narzędzi VSTO dla programu PowerPoint o nazwie **MyAddIn**, za pomocą szablonu projektu dodatku programu PowerPoint. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz projekt dodatku narzędzi VSTO dla programu PowerPoint o nazwie **MyAddIn**, za pomocą szablonu projektu dodatku programu PowerPoint. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** plik kodu i dodaje **MyAddIn** projekt **Eksploratora rozwiązań**.  
   
@@ -139,14 +136,12 @@ ms.locfileid: "35676235"
   
 -   Tworzenie niestandardowego okienka zadań w dodatku narzędzi VSTO dla różnych aplikacji. Aby uzyskać więcej informacji na temat aplikacji, które obsługują niestandardowe okienka zadań, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
   
--   Utwórz przycisk wstążki, który może służyć do ukryć lub wyświetlić niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [Instruktaż: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Utwórz przycisk wstążki, który może służyć do ukryć lub wyświetlić niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [instruktażu: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
--   Tworzenie niestandardowego okienka zadań dla każdej wiadomości e-mail, który jest otwierany w programie Outlook. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Tworzenie niestandardowego okienka zadań dla każdej wiadomości e-mail, który jest otwierany w programie Outlook. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)   
- [Porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Wskazówki: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Przewodnik: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  

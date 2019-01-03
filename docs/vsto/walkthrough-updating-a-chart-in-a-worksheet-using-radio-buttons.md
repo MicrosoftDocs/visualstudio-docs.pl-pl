@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: aktualizacja wykresu w arkuszu za pomocą przycisków radiowych'
-ms.custom: ''
+title: 'Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891945"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Wskazówki: aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
+# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
   W tym przewodniku przedstawiono podstawowe informacje dotyczące za pomocą przycisków radiowych w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby dać użytkownikowi możliwość szybkiego przełączania się między opcjami. W tym przypadku opcje zmieniają styl wykresu.  
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -96,7 +93,7 @@ ms.locfileid: "49866444"
 
 1.  Utwórz projektu skoroszytu programu Excel o nazwie **Moje wykresu programu Excel**. W kreatorze Wybierz **Kopiuj istniejący dokument**.  
 
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Kliknij przycisk **Przeglądaj** przycisk, a następnie przejdź do skoroszytu, utworzonej we wcześniejszej części tego przewodnika.  
 
@@ -203,7 +200,7 @@ ms.locfileid: "49866444"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]  
 
-5.  W języku C# należy dodać obsługę zdarzeń dla przycisków radiowych. Możesz dodać kod do `ChartOptions` Konstruktor poniżej wywołania `InitializeComponent`. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  W języku C# należy dodać obsługę zdarzeń dla przycisków radiowych. Możesz dodać kod do `ChartOptions` Konstruktor poniżej wywołania `InitializeComponent`. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]  
 
@@ -234,7 +231,7 @@ ms.locfileid: "49866444"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]  
 
-2.  W języku C#, należy dodać program obsługi zdarzeń dla formantu użytkownika, aby <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> zdarzeń, jak pokazano poniżej. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  W języku C#, należy dodać program obsługi zdarzeń dla formantu użytkownika, aby <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> zdarzeń, jak pokazano poniżej. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]  
 
@@ -254,10 +251,9 @@ ms.locfileid: "49866444"
 
 -   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
 
--   Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
 
--   Zmiana formatowania arkusza za pomocą pola wyboru. Aby uzyskać więcej informacji, zobacz [Instruktaż: arkusz Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Zmiana formatowania arkusza za pomocą pola wyboru. Aby uzyskać więcej informacji, zobacz [instruktażu: Arkusz Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
 
 ## <a name="see-also"></a>Zobacz także  
  [Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)  
-

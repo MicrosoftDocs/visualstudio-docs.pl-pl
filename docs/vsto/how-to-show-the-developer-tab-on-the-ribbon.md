@@ -1,9 +1,6 @@
 ---
-title: 'Porady: pokazywanie karty dewelopera na Wstążce'
-ms.custom: ''
+title: 'Instrukcje: Pokazywanie karty dewelopera na Wstążce'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906803"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Porady: pokazywanie karty dewelopera na Wstążce
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Instrukcje: Pokazywanie karty dewelopera na Wstążce
   Aby uzyskać dostęp do **Developer** karty na Wstążce aplikacji pakietu Office, musisz skonfigurować je, aby pokazywała tę kartę, ponieważ nie jest wyświetlane domyślnie. Na przykład musisz wyświetlić tę kartę, jeśli chcesz dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> do dostosowywania poziomie dokumentu dla programu Word.  
   
 > [!NOTE]  
->  Niniejsze wytyczne mają zastosowanie do pakietu Office 2010 lub nowszej tylko aplikacji. Jeśli chcesz wyświetlić tę kartę w pakietu Microsoft Office 2007, zobacz następującą wersję tego tematu [jak: wyświetlić kartę Deweloper na wstążce](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+>  Niniejsze wytyczne mają zastosowanie do pakietu Office 2010 lub nowszej tylko aplikacji. Jeśli chcesz wyświetlić tę kartę w pakietu Microsoft Office 2007, zobacz następującą wersję tego tematu [jak: Pokazywanie karty dewelopera na wstążce](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -69,5 +66,3 @@ ms.locfileid: "51349627"
   
 ## <a name="see-also"></a>Zobacz także  
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)  
-  
-  

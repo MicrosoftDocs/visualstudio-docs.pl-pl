@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908647"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definicji DSL, wraz z wszelki kod niestandardowy program, który może zapisać. Większość kodu programu w rozwiązaniu DSL jest generowany na podstawie tego pliku.
@@ -54,7 +53,7 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
 
  ![Relacji osadzania i dokumentacja](../modeling/media/music_classes.png)
 
- Na ilustracji przedstawiono cztery klasy domeny: utworów muzycznych, fotograficzne, wykonawcy i utworu. Klasy domeny definiują właściwości domeny, takie jak nazwy, tytułu i tak dalej. W modelu wystąpień wartości niektóre z tych właściwości są wyświetlane na diagramie.
+ Na ilustracji przedstawiono cztery klasy domeny: Muzyka, fotograficzne, wykonawcy i utworu. Klasy domeny definiują właściwości domeny, takie jak nazwy, tytułu i tak dalej. W modelu wystąpień wartości niektóre z tych właściwości są wyświetlane na diagramie.
 
  Między klasami są relacje domeny: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs i ArtistAppearedOnAlbums. Relacje zostały Liczebność punktów, takich jak 1..1, 0.. *. Na przykład każdy utwór musi być powiązany do dokładnie jednego albumu relacji AlbumHasSongs. Każdego albumu może mieć dowolną liczbę utworów.
 

@@ -1,8 +1,7 @@
 ---
-title: Błędy projektanta klas
+title: Błędy Projektanta klas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
@@ -30,24 +29,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: cfafcedae225522ec71e0bc35854d827047af2fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33963636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901691"
 ---
-# <a name="class-designer-errors"></a>Błędy projektanta klas
+# <a name="class-designer-errors"></a>Błędy Projektanta klas
 
-**Projektant klas** nie śledzi lokalizację plików źródłowych, więc modyfikowania struktury projektu i przenoszenie plików źródłowych w projekcie może spowodować **Projektant klas** utratę informacji typu, na przykład jest wspólny dla Zmodyfikuj typ źródła jako element typedef, klas podstawowych i skojarzenia typów. Błąd może pojawić się takie jak **Projektant klas nie może wyświetlić tego typu**. Aby rozwiązać problem, przeciągnij kod źródłowy przeniesiono lub modyfikacji do diagramu klas ponownie, aby go wyświetlić.
+**Projektant klasy** "nie Śledź" lokalizację plików źródłowych, więc modyfikowania do struktury projektu i przenoszenie plików źródłowych w projekcie może spowodować **projektanta klas** utratę informacji o typie, na przykład, jest często Zmodyfikuj typ źródła typedef, klas podstawowych i skojarzenia typów. Może zostać wyświetlony błąd taki jak **Projektant klas nie może wyświetlić tego typu**. Aby naprawić błąd, przeciągnij kod źródłowy zmodyfikowany lub przenoszone do diagramu klas ponownie, aby go wyświetlić.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
-Pomoc w innych błędów i ostrzeżeń można znaleźć w następujących zasobach:
+Pomoc dotyczącą inne błędy i ostrzeżenia można znaleźć w następujących zasobach:
 
-- [Praca z kodem Visual C++](working-with-visual-cpp-code.md) zawiera informacje o wyświetlaniu C++ na diagramie klas dotyczące rozwiązywania problemów.
-- [Visual Studio Projektant klas forum](http://go.microsoft.com/fwlink/?LinkId=160754) zawiera forum pytania na temat **Projektant klas**.
+- [Praca z kodem języka Visual C++](working-with-visual-cpp-code.md) zawiera informacje o wyświetlaniu C++ na diagramie klasy dotyczące rozwiązywania problemów.
+- [Forum usługi Visual Studio Projektant klas](http://go.microsoft.com/fwlink/?LinkId=160754) udostępnia forum dla pytania o **projektanta klas**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Projektowanie i widoku klas i typów](designing-and-viewing-classes-and-types.md)
+- [Projektowanie i wyświetlanie klas i typów](designing-and-viewing-classes-and-types.md)

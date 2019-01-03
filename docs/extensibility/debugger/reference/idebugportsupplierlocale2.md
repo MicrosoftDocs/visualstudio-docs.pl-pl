@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplierLocale2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1cd0160b1ec5b1c9d86c277f2b47011d1b7610c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c41d3bf89403344d80659074f0f486a90f089c55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915984"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Zapewnia obsługę ustawień regionalnych dla portu dostawcy.  
+Zapewnia obsługę ustawień regionalnych dla dostawcy portu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -30,23 +27,23 @@ IDebugPortSupplierLocale2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawcy niestandardowego numeru portu implementuje ten interfejs, aby ustawić ustawienia regionalne.  
+ Dostawcy niestandardowego portu implementuje ten interfejs, aby ustawić ustawienia regionalne.  
   
 ## <a name="methods"></a>Metody  
  W poniższej tabeli przedstawiono metody **IDebugPortSupplierLocale2**.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Określa ustawienia regionalne dla dostawcy portu.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Ustawia ustawienia regionalne dla dostawcy portu.|  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

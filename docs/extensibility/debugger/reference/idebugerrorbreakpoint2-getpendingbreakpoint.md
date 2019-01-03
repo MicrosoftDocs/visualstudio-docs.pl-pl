@@ -1,9 +1,6 @@
 ---
 title: IDebugErrorBreakpoint2::GetPendingBreakpoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugErrorBreakpoint2::GetPendingBreakpoint
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb5d634671e1a8fb7fc517cb50145e88f46ca7be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 214f8ce0bc0ec5a9f7cc7358d118aefc99ed2d2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854298"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 Pobiera oczekujący punkt przerwania, które spowodowały błąd.  
@@ -28,13 +25,13 @@ Pobiera oczekujący punkt przerwania, które spowodowały błąd.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetPendingBreakpoint (   
+HRESULT GetPendingBreakpoint (   
    IDebugPendingBreakpoint2** ppPendingBreakpoint  
 );  
 ```  
   
 ```csharp  
-int GetPendingBreakpoint (   
+int GetPendingBreakpoint (   
    out IDebugPendingBreakpoint2 ppPendingBreakpoint  
 );  
 ```  

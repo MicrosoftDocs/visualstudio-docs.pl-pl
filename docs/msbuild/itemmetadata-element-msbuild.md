@@ -1,8 +1,6 @@
 ---
 title: Itemmetadata — Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78e9bfffc38ac54ec7aeb525665dc7e3a8927f74
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 64786e5066476fcaca161fe0511f97a1fd2c7fd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917530"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Itemmetadata — element (MSBuild)
 Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.  

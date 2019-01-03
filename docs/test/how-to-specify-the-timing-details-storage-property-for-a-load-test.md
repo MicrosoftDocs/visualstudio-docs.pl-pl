@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 43975e57e37a16522b483990c83d0db22a6eb27d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896074"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Porady: Określanie właściwości magazynowania szczegółów chronometrażu dla ustawień przebiegu testu obciążeniowego
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Instrukcje: Określanie właściwości magazynowania szczegółów chronometrażu dla ustawień przebiegu testu obciążeniowego
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** Aby zmienić ustawienia w celu spełnienia potrzeb i celów testowania.
 
@@ -26,14 +25,14 @@ Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenio
 
 Możesz edytować ustawienia przebiegu **przechowywanie informacji** wartości właściwości w **właściwości** okna. **Przechowywanie informacji** właściwość można ustawić na dowolną z następujących opcji:
 
-- **Wszystkie szczegółowe dane:** zbiera i przechowuje dane o poszczególnych chronometrażach dla każdego testu, transakcji i strony podczas testu.
+- **Wszystkie szczegółowe dane:** Zbiera i przechowuje dane o poszczególnych chronometrażach dla każdego testu, transakcji i strony podczas testu.
 
   > [!NOTE]
   > **Wszystkie szczegółowe dane** należy wybrać opcję, aby włączyć informacje o danych użytkownika wirtualnego w wyniki testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-- **Brak:** nie gromadzi żadnych indywidualnych szczegółów chronometrażu. Jednakże wartości średnie są nadal dostępne.
+- **Brak:** Nie gromadzi żadnych indywidualnych szczegółów chronometrażu. Jednakże wartości średnie są nadal dostępne.
 
-- **Tylko statystyki:** przechowuje dane o poszczególnych chronometrażach, ale tylko jako danych percentyl. Oszczędza to zasoby miejsca.
+- **Tylko statystyki:** Przechowuje dane o poszczególnych chronometrażach, ale tylko jako danych percentyl. Oszczędza to zasoby miejsca.
 
   **Zagadnienia dotyczące właściwości magazynowania szczegółów chronometrażu**
 
@@ -59,9 +58,9 @@ Możesz edytować ustawienia przebiegu **przechowywanie informacji** wartości w
 
 5.  W obszarze **wyniki** kategorii, wybierz **przechowywanie informacji** właściwości i wybierz pozycję **wszystkie szczegółowe dane**.
 
-     Po skonfigurowaniu **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwości, można uruchamiać obciążenia testowania i wyświetlania **wykres aktywności wirtualnych użytkowników**. Aby uzyskać więcej informacji, zobacz [porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążeniowego](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Po skonfigurowaniu **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwości, można uruchamiać obciążenia testowania i wyświetlania **wykres aktywności wirtualnych użytkowników**. Aby uzyskać więcej informacji, zobacz [jak: Analizowanie, co robią użytkownicy wirtualni podczas testu obciążeniowego](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Przewodnik: Używanie wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Przewodnik: Za pomocą wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

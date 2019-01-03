@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 0d0ac9d18e72ff656877e47b9858ac460e54e7cf
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 786292d3d566f2b1da27bdd254019460929fbc0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921372"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Zachowywanie stałego wirtualnego adresu IP usługi w chmurze platformy Azure
 Po zaktualizowaniu usługi w chmurze, która jest hostowana na platformie Azure może być konieczne upewnić się, że nie zmienia się wirtualnego adresu IP (VIP) usługi. Wiele usług zarządzania domeny na użytek systemu nazw domen (DNS) rejestracji nazw domen. DNS działa tylko wtedy, gdy adres VIP pozostają bez zmian. Możesz użyć **Kreatora publikacji** w narzędziach platformy Azure, aby upewnić się, że VIP usługi w chmurze nie zmienia się podczas aktualizacji. Aby uzyskać więcej informacji o sposobie zarządzania domeny DNS na użytek usług w chmurze, zobacz [Konfigurowanie niestandardowej nazwy domeny dla usługi w chmurze Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -55,4 +54,3 @@ Możesz określić ustawienia wdrażania **Kreatora publikacji**, która obsług
 
 ## <a name="next-steps"></a>Następne kroki
 - [Za pomocą programu Visual Studio Azure Kreatorze publikacji aplikacji](vs-azure-tools-publish-azure-application-wizard.md)
-

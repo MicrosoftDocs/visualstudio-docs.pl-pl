@@ -10,19 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 51c9971d35eb5b7a369041eeaefd32fa00aa3571
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 47caaa39a1783588994277ba079e64e353a167a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925108"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Porady: Wybierz ustawienie, aby korzystać z wiersza polecenia do uruchomienia testu obciążenia
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Instrukcje: Wybierz ustawienie, aby korzystać z wiersza polecenia do uruchomienia testu obciążenia
 
 Test obciążenia może obejmować *parametrów uruchomieniowych*, które są właściwościami, które mają wpływ na sposób wykonywania testu obciążeniowego. Ustawienia uruchamiania są zorganizowane według kategorii w **właściwości** okna. Po uruchomieniu testu obciążenia używa uruchomieniowy, który jest aktualnie ustawiona jako aktywna.
 
-Jeśli test obciążeniowy zawiera tylko jedno ustawienie uruchamiania, zawsze jest aktywnym węźle. Jeśli test obciążeniowy zawiera wiele węzłów parametrów uruchomieniowych, możesz wybrać jeden do użycia podczas uruchamiania testu obciążenia z wiersza polecenia. Zobacz [porady: Dodawanie dodatkowych parametrów uruchomieniowych do testu obciążeniowego](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Jeśli test obciążeniowy zawiera tylko jedno ustawienie uruchamiania, zawsze jest aktywnym węźle. Jeśli test obciążeniowy zawiera wiele węzłów parametrów uruchomieniowych, możesz wybrać jeden do użycia podczas uruchamiania testu obciążenia z wiersza polecenia. Zobacz [jak: Dodawanie dodatkowych parametrów uruchomieniowych do testu obciążeniowego](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,5 +39,5 @@ Jeśli test obciążeniowy zawiera tylko jedno ustawienie uruchamiania, zawsze j
 
 - [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)
 - [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Porady: Dodawanie dodatkowych ustawień przebiegu testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)
-- [Porady: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
+- [Instrukcje: Dodawanie dodatkowych ustawień przebiegu testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Instrukcje: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame3 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame3
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635b53bf63eb83cc868e4bf9b7d5fbb31fe5aa08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 376807a2963e93b3713d85b2d166c741671079bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932775"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
-Ten interfejs stanowi rozszerzenie [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) do obsługi wyjątków przechwycone.  
+Ten interfejs rozszerza [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) aby obsłużyć wyjątki przechwycone.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,13 +29,13 @@ IDebugStackFrame3 : IDebugStackFrame2
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Aparat debugowania (DE) implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interfejs do obsługi wyjątków przechwycone.  
+ Aparat debugowania (DE) implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obsługiwany wyjątki przechwycone przez interfejs.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołanie [QueryInterface](/cpp/atl/queryinterface) na `IDebugStackFrame2` interfejs do uzyskania tego interfejsu.  
+ Wywołaj [QueryInterface](/cpp/atl/queryinterface) na `IDebugStackFrame2` interfejsu w celu uzyskania tego interfejsu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
- Oprócz dziedziczone z metody [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` udostępnia następujące metody.  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+ Oprócz metod odziedziczone [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
@@ -46,25 +43,25 @@ IDebugStackFrame3 : IDebugStackFrame2
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Zwraca kontekst kodu, gdyby wystąpić odwijania stosu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wyjątek przechwycone oznacza, że debuger może przetwarzać wyjątek przed wszystkie procedury obsługi wyjątków normalne są nazywane w czasie wykonywania. Zasadniczo przechwycenia wyjątek oznacza czas uruchomienia podawać, że jest obecny, nawet wtedy, gdy nie ma obsługi wyjątków.  
+ Wyjątek przechwycone oznacza, że debuger może przetwarzać wyjątku przed wywołaniem dowolnej procedury obsługi wyjątków normalne są w czasie wykonywania. Przechwytuje wyjątek zasadniczo oznacza w czasie wykonywania poudawać, że jest obecny, nawet wtedy, gdy nie ma obsługi wyjątków.  
   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) jest wywoływana podczas wszystkich zdarzeń wywołania zwrotnego normalne wyjątków (Jedynym wyjątkiem jest, jeśli są debugowanie kodu trybu mieszanego (zarządzanych i niezarządzanych kodu), w którym to przypadku wyjątku nie może zostać przechwycone podczas Wywołanie zwrotne ostatniej szansy). Jeśli DE nie implementuje `IDebugStackFrame3`, lub DE zwraca błąd z IDebugStackFrame3::`InterceptCurrentException` (takie jak `E_NOTIMPL`), a następnie debuger będzie obsługiwać wyjątek zwykle.  
+ [Interceptcurrentexception —](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) jest wywoływana podczas wszystkich zdarzeń wywołania zwrotnego normalny wyjątek (Jedynym wyjątkiem jest, Jeśli debugujesz kod trybu mieszanego (kodu zarządzanego i niezarządzanego), w którym to przypadku wyjątku nie może zostać przechwycone podczas Wywołanie zwrotne ostatniej szansy). Jeśli nie implementuje DE `IDebugStackFrame3`, lub DE zwraca błąd z IDebugStackFrame3::`InterceptCurrentException` (takie jak `E_NOTIMPL`), debuger będzie zwykle obsłużyć wyjątek, a następnie.  
   
- Przechwycenie wyjątku, debuger może zezwolić użytkownikowi na zmianę stanu debugowanego programu i wznowienia wykonywania w momencie, gdy wyjątek został zgłoszony.  
+ Przechwycenie wyjątku, debuger umożliwia użytkownikowi dokonać zmian stanu debugowanego programu, a następnie Wznów wykonywanie w punkcie, w którym został zgłoszony wyjątek.  
   
 > [!NOTE]
->  Przechwycone wyjątki są dozwolone tylko w kodzie zarządzanym, oznacza to, w programie, który działa w obszarze środowiska uruchomieniowego języka wspólnego (CLR).  
+>  Przechwycone wyjątki są dozwolone tylko w kodzie zarządzanym, oznacza to, w programie, który jest uruchomiony w ramach środowiska uruchomieniowego języka wspólnego (CLR).  
   
- Aparat debugowania wskazuje, że obsługuje przechwytywaniu wyjątków przez ustawienie "metricExceptions" na wartość 1 w czasie wykonywania za pomocą `SetMetric` funkcji. Aby uzyskać więcej informacji, zobacz [pomocników zestawu SDK dla debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ Aparat debugowania wskazuje, że obsługuje wyjątki przechwytujący przez ustawienie "metricExceptions" na wartość 1 w czasie wykonywania za pomocą `SetMetric` funkcji. Aby uzyskać więcej informacji, zobacz [pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [Pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -1,9 +1,6 @@
 ---
 title: Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903253"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
   Możesz użyć `ServerDocument` klasy w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zarządzanie kilka aspektów dostosowywania poziomie dokumentu, nawet jeśli nie zainstalowano programu Microsoft Office Word i Microsoft Office Excel. Można wykonać następujące zadania:  
@@ -61,13 +58,12 @@ ms.locfileid: "49939140"
 |Zadanie|Element członkowski do użycia|  
 |----------|-------------------|  
 |Aby określić, czy dokument jest częścią dostosowywania poziomie dokumentu.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> Metody.|  
-|Aby programowo dołączyć dostosowanie do dokumentu w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: dołączanie rozszerzenia kodu do dokumentów zarządzanego](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Jedną z <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody.|  
-|Aby programowo usunąć dostosowania dokumentu w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: usuwanie zarządzanego kodu rozszerzenia z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Metody.|  
+|Aby programowo dołączyć dostosowanie do dokumentu w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: Dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Jedną z <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody.|  
+|Aby programowo usunąć dostosowania dokumentu w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: Usuwanie kodu zarządzanego rozszerzenia z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Metody.|  
 |Aby uzyskać adres URL manifestu wdrażania, który jest skojarzony z dokumentem.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> Właściwości.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: dołączanie rozszerzenia kodu do dokumentów zarządzanego](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Instrukcje: Dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [Instrukcje: Usuwanie rozszerzenia kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Dane w pamięci podręcznej](../vsto/caching-data.md)  
-  

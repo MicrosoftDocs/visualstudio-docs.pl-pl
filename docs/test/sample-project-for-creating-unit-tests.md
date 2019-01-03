@@ -3,7 +3,6 @@ title: Przykładowy kod dotyczący tworzenia testów jednostkowych
 description: Ten artykuł zawiera przykładowy kod, który może być testowany z testów jednostkowych w programie Visual Studio.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b98e8fc926917d4da8bc805110f464ead24d405c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51293450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898950"
 ---
 # <a name="sample-code-for-testing"></a>Przykładowy kod do testowania
 
@@ -130,9 +129,9 @@ namespace BankAccountNS
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
-Aby pracować przy użyciu tego kodu, najpierw Utwórz projekt dla niego w programie Visual Studio. Postępuj zgodnie z instrukcjami, aby utworzyć projekt w [wskazówki: tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
+Aby pracować przy użyciu tego kodu, najpierw Utwórz projekt dla niego w programie Visual Studio. Postępuj zgodnie z instrukcjami, aby utworzyć projekt w [instruktażu: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Przewodnik: Używanie narzędzia testowania wiersza polecenia](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Przewodnik: Użyj narzędzia testowania wiersza polecenia](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

@@ -2,7 +2,6 @@
 title: Aktualizowanie instalacji sieciowej
 description: Dowiedz się, jak zaktualizować instalacji programu Visual Studio za pośrednictwem sieci przy użyciu polecenia — układ
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 736f8dc9c79faa5c81055296c9fbf534c512f6fa
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 55509f49aff21d5c4e4319a35de20b29a6bc3f75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906406"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aktualizowanie instalacji sieciowej programu Visual Studio 2017
 

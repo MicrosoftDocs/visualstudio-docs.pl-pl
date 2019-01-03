@@ -1,9 +1,6 @@
 ---
-title: Optymalizacja Menu i pasków narzędzi poleceń | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Optymalizacja Menu i polecenia paska narzędzi | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], menus
@@ -17,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92072668f96a69a0dc5ff78839b54fa7ecc656bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9e3f6f5a2bfe65943784d052e7835f5023fed2e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900831"
 ---
-# <a name="optimizing-menu-and-toolbar-commands"></a>Optymalizacja Menu i poleceń paska narzędzi
-Dodanie VSPackages oraz ich odpowiednich poleceń, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może spowodować dużo elementów interfejsu użytkownika. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia metody, aby zminimalizować ryzyko pomyłek polecenia interfejsu użytkownika.  
+# <a name="optimizing-menu-and-toolbar-commands"></a>Optymalizacja poleceń menu i paska narzędzi
+Dodawanie pakietów VSPackage i ich odpowiednie polecenia, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może spowodować, że dużo elementów interfejsu użytkownika. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera sposoby, aby zminimalizować ryzyko pomyłek poleceń interfejsu użytkownika.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Udostępnianie poleceń](../../extensibility/internals/making-commands-available.md)  
- Zawiera ogólne wskazówki dotyczące minimalizując skupienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika po dodaniu VSPackages.  
+ Zawiera ogólne wskazówki dotyczące minimalizowania skupienia się [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika podczas dodawania pakietów VSPackage.  
   
  [Wskazówki dotyczące umieszczania](../../extensibility/internals/command-placement-guidelines.md)  
- Zawiera szczegółowe wytyczne stosowania pakiet VSPackage na podstawie rozmiaru zestawu poleceń.  
+ Zawiera konkretne wskazówki dotyczące implementowania VSPackage zgodnie z rozmiarem zestawu poleceń.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
- Wyjaśnia sposób tworzenia interfejsu użytkownika, który zawiera menu, paski narzędzi i polecenia pola kombi.
+ Wyjaśnia, jak utworzyć interfejs użytkownika, który zawiera menu, paski narzędzi i pola kombi polecenia.

@@ -1,9 +1,6 @@
 ---
-title: 'Wskazówki: Zmiana formatowania dokumentu za pomocą formantów CheckBox'
-ms.custom: ''
+title: 'Przewodnik: Zmiana formatowania dokumentu za pomocą formantów CheckBox'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913872"
 ---
-# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Wskazówki: Zmiana formatowania dokumentu za pomocą formantów CheckBox
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Przewodnik: Zmiana formatowania dokumentu za pomocą formantów CheckBox
   W tym instruktażu pokazano, jak użyć kontrolek formularzy Windows Forms w dostosowywania poziomie dokumentu dla programu Microsoft Office Word, aby zmienić formatowanie tekstu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "49863935"
   
 1.  Tworzenie projektu dokument programu Word z nazwą **Moje formatowania Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje **Moje formatowania Word** projekt **Eksploratora rozwiązań**.  
   
@@ -137,7 +134,7 @@ ms.locfileid: "49863935"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  W C#, należy dodać procedury obsługi zdarzeń dla pól tekstowych do <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+6.  W C#, należy dodać procedury obsługi zdarzeń dla pól tekstowych do <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
@@ -155,9 +152,9 @@ ms.locfileid: "49863935"
 ## <a name="next-steps"></a>Następne kroki  
  W tym instruktażu przedstawiono podstawy korzystania z pola wyboru oraz programowe Zmienianie tekstu w dokumentach programu Word. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Użyj przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Użyj przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [wskazówki: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [instruktażu: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 
 ## <a name="see-also"></a>Zobacz także  
@@ -165,5 +162,3 @@ ms.locfileid: "49863935"
  [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
  [Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

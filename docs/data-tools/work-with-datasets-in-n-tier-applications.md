@@ -18,23 +18,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23dc346ac1d8495c3aef191ee3228087e1b222c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d89c3a5582ef1c84c455801d3766d65246e34dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899642"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
 
-*Aplikacje warstwowe —* są skoncentrowane na dane aplikacji, które są podzielone na kilka logicznych warstw (lub *warstw*). Innymi słowy aplikacji warstwowych jest aplikacja, która jest podzielony na wiele projektów z warstwą dostępu do danych, warstwy logiki biznesowej, a warstwą prezentacji każdego własnego projektu. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
+*Aplikacje warstwowe —* są aplikacji biznesowych przetwarzających dane, które są rozdzielone na wiele warstw logiczne (lub *warstwy*). Innymi słowy aplikacja n warstwowa danych jest aplikacja, która jest dzielony na wiele projektów z warstwy dostępu do danych, warstwy logiki biznesowej i warstwy prezentacji każdego we własnym projekcie. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
 
-Typizowane zbiory danych zostały rozszerzone, aby klasy TableAdapters i danych mogą być generowane w projektach dyskretnych. Zapewnia możliwość szybkiego oddzielne warstwy aplikacji i generowanie aplikacji warstwowych.
+Tak, aby klas TableAdapters i zestawu danych mogą być generowane w dyskretne projekty zostały rozszerzone typizowanych zestawów danych. Zapewnia to możliwość szybkiego oddzielnymi warstwami aplikacji i generowania aplikacji n warstwowa danych.
 
-Obsługa N-warstwowa w typizowanych zbiorach danych umożliwia iteracyjne projektowanie architektura n warstwowa projektu. Eliminuje konieczność ręcznie podzielić kod na więcej niż jednym projekcie. Uruchamiane projektowania Warstwa danych przy użyciu **Projektant obiektów Dataset**. Jeśli wszystko jest gotowa do sporządzenia architektura projektowi wielowarstwowej, ustaw **projektu DataSet** właściwości zestawu danych do generowania klasy dataset w oddzielny projekt.
+Obsługa N-warstwowej w typizowanych zbiorach danych umożliwia iteracyjne projektowanie architektury aplikacji n warstwowa projektowi. Usuwa wymaganie, aby ręcznie odseparowania kodu do więcej niż jeden projekt. Rozpocząć projektowanie warstwę danych przy użyciu **Projektanta obiektów Dataset**. Gdy wszystko będzie gotowe, umożliwiające architektura n warstwowa projektu, należy ustawić **projektu DataSet** właściwości zestawu danych, aby wygenerować klasę zestawu danych do oddzielnego projektu.
 
 ## <a name="reference"></a>Tematy pomocy
 
@@ -43,14 +42,14 @@ Obsługa N-warstwowa w typizowanych zbiorach danych umożliwia iteracyjne projek
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie aplikacji warstwowych](../data-tools/n-tier-data-applications-overview.md)
-- [Wskazówki: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Omówienie aplikacji N-warstwowa danych](../data-tools/n-tier-data-applications-overview.md)
+- [Przewodnik: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Dodawanie walidacji do n-warstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md)
 - [Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
-- [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)
-- [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)
+- [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md)
-- [N-warstwowa oraz zdalnych aplikacji za pomocą LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [N-warstwowe i zdalne aplikacje za pomocą LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

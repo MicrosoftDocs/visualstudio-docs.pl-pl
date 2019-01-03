@@ -1,8 +1,6 @@
 ---
-title: 'Porady: podpisywanie plików za pomocą SignTool.exe (ClickOnce) konfiguracji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Znak plików konfiguracji przy użyciu SignTool.exe (ClickOnce) | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b66d9440ebcf62c59049b45769a2244fc773480e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 845c1511ebb4555fee12c92b5534b11fb23cbb45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845327"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Porady: podpisywanie plików za pomocą SignTool.exe (ClickOnce) konfiguracji
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: Znak plików konfiguracji przy użyciu SignTool.exe (ClickOnce)
 Możesz użyć *SignTool.exe* się program instalacyjny (*setup.exe*). Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  
   
  Domyślnie ClickOnce zalogował się manifestów i podpisem program instalacyjny. Jednak jeśli chcesz zmienić parametry Instalatora później, należy zalogować się Instalatora później. Jeśli zmienisz parametry po podpisaniu program instalacyjny, podpis jest uszkodzony.  
@@ -79,4 +77,4 @@ Możesz użyć *SignTool.exe* się program instalacyjny (*setup.exe*). Ten proce
     ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: ponowne podpisywanie manifestów aplikacji i wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Instrukcje: Ponowne podpisywanie manifestów aplikacji i wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

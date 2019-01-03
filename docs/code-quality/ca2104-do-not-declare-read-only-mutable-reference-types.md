@@ -1,8 +1,7 @@
 ---
-title: 'CA2104: Nie deklaruj zmiennych typów referencyjnych tylko do odczytu'
+title: 'CA2104: Nie deklaruj odczytu modyfikowalnych typów referencyjnych tylko'
 ms.date: 11/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f1c4f19349d94cb7dedfd22a82dc86b6f33b5b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844213"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Nie deklaruj zmiennych typów referencyjnych tylko do odczytu
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Nie deklaruj odczytu modyfikowalnych typów referencyjnych tylko
 
 |||
 |-|-|
@@ -51,7 +50,7 @@ Modyfikator tylko do odczytu ([tylko do odczytu](/dotnet/csharp/language-referen
 
 Ta zasada może przypadkowo Pokaż naruszenie dla typu, jest rzeczywiście, niezmienne. W takiej sytuacji jest bezpieczne pominąć to ostrzeżenie.
 
-Pola tablicy tylko do odczytu są wykluczone z tej reguły, ale zamiast tego spowodować naruszenie [CA2105: pola tablicy nie można odczytać tylko](../code-quality/ca2105-array-fields-should-not-be-read-only.md) reguły.
+Pola tablicy tylko do odczytu są wykluczone z tej reguły, ale zamiast tego spowodować naruszenie [CA2105: Pola tablicy nie można odczytać tylko](../code-quality/ca2105-array-fields-should-not-be-read-only.md) reguły.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 

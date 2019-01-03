@@ -1,9 +1,6 @@
 ---
 title: IDebugCustomAttribute::GetAttributeBytes | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5aa1713aba2def384a9dd8290d6ae6afcee6ba64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b892f6b12937c4cd68d718a3dc7e6d957ad1325d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913136"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Pobiera informacje o atrybutach jako obiekt blob bajtów.  
@@ -28,7 +25,7 @@ Pobiera informacje o atrybutach jako obiekt blob bajtów.
 ## <a name="syntax"></a>Składnia  
   
 ```cpp  
-HRESULT GetAttributeBytes(   
+HRESULT GetAttributeBytes(   
    BYTE*  ppBlob,  
    DWORD* pdwLen  
 );  

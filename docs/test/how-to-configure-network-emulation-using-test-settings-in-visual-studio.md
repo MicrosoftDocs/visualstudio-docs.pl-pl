@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ae6e3aaf204b54e413a76a8d07e0391a214b007d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900733"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Instrukcje: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
 
 Można skonfigurować adapter danych diagnostycznych do testowania aplikacji w różnych środowiskach sieciowych w programie Visual Studio. Może być również skonfigurowane do testowania sztuczne obciążenie sieciowe lub wąskich gardeł, po uruchomieniu testów.
 
@@ -78,12 +77,12 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
 
 4.  Jeśli dołączysz adapter danych diagnostycznych emulacji sieci w ustawieniach testu i zamierzasz używać go na komputerze lokalnym, następnie należy również powiązać sterownik emulacji sieci do jednej z kart sieciowych na komputerze. Sterownik emulacji sieci jest wymagana dla adaptera danych diagnostycznych emulacji sieciowej do funkcji. Sterownik emulacji sieci jest zainstalowany i powiązany z kartą sieciową na dwa sposoby:
 
-    -   **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Agent:** program Microsoft Visual Studio Test Agent może służyć zarówno komputerów zdalnych, jak i komputerze lokalnym. Po zainstalowaniu programu Visual Studio Test Agent, proces instalacji obejmuje krok konfiguracji, który wiąże sterownik emulacji sieci z kartą sieciową. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+    -   **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Agent:** Microsoft Visual Studio Test Agent może służyć zarówno komputerów zdalnych, jak i komputerze lokalnym. Po zainstalowaniu programu Visual Studio Test Agent, proces instalacji obejmuje krok konfiguracji, który wiąże sterownik emulacji sieci z kartą sieciową. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Professional:** podczas korzystania z emulacji sieci po raz pierwszy monit powiązanie sterownika emulacji sieci z kartą sieciową.
+    -   **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Professional:** Podczas korzystania z emulacji sieci po raz pierwszy monit powiązanie sterownika emulacji sieci z kartą sieciową.
 
     > [!TIP]
-    > Można również zainstalować sterownik emulacji sieci z poziomu wiersza polecenia na komputerze lokalnym bez instalowania agenta testowego programu Visual Studio za pomocą następującego polecenia: **VSTestConfig NETWORKEMULATION/Install**
+    > Można również zainstalować sterownik emulacji sieci z poziomu wiersza polecenia na komputerze lokalnym bez konieczności instalowania agenta testowego programu Visual Studio przy użyciu następującego polecenia: **VSTestConfig NETWORKEMULATION/Install**
 
 ## <a name="see-also"></a>Zobacz także
 

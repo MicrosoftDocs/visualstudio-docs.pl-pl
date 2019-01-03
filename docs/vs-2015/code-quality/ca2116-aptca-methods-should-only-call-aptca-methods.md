@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ba80dc732b407cf32ec388583734fa0fd7a4f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905895"
 ---
-# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA powinny wywoływać tylko metody APTCA
+# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody z atrybutem APTCA powinny wywoływać tylko metody z atrybutem APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -79,10 +78,7 @@ ms.locfileid: "49819553"
  **Wymaga, aby uzyskać pełne zaufanie: żądanie nie powiodło się. ** 
  **ClassRequiringFullTrust.DoWork została wywołana.**
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy podstawowe z atrybutem APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+ [CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy bazowe APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Zobacz też
  [Wytyczne dotyczące bezpiecznego programowania](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [zestawy .NET Framework wywoływane przez częściowo zaufany kod](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [używanie bibliotek pochodzących z częściowo zaufanego kodu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [zapotrzebowanie](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Link zapotrzebowanie](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dane i modelowanie](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-

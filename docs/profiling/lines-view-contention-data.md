@@ -1,8 +1,6 @@
 ---
 title: Widok linii - dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0afb540a314d1e980e9b0a6ccace0b36145cce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905429"
 ---
 # <a name="lines-view---contention-data"></a>Widok linii — dane rywalizacji
 Widok wierszy danych rywalizacji o zasoby wyświetla dane o wydajności dla instrukcji, które były wykonywane w chwili przykłady zostały zebrane podczas uruchomienia profilowania. W pliku źródłowym instrukcji może obejmować więcej niż jeden wiersz w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.  
@@ -40,7 +38,7 @@ Widok wierszy danych rywalizacji o zasoby wyświetla dane o wydajności dla inst
   
   W poniższej tabeli opisano kolumny raportu widok wierszy.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Wyłączny czas blokowania**|Ilość czasu, w którym ta instrukcja został zablokowany wykonywanie kodu w instrukcji z powodu zdarzenia rywalizacji o zasoby. Czas blokowania w funkcje, które wywołały instrukcja nie jest włączony.|  
 |**% Własnego czasu blokowania**|Procent wszystkich czas blokowania w procesie, który był wyłączny czas blokowania instrukcji.|  
@@ -65,7 +63,7 @@ Widok wierszy danych rywalizacji o zasoby wyświetla dane o wydajności dla inst
 |**Końcowy wiersz w źródle**|Numer wiersza w pliku źródłowym, w którym kończy się instrukcji.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok linii](../profiling/lines-view.md)   
  [Widok linii - próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Widok linii](../profiling/lines-view-sampling-data.md)

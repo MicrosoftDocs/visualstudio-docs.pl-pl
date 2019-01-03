@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910142"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Przewodnik: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
   W tym instruktażu pokazano, jak używać przycisków i pola tekstowe w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word.  
@@ -49,7 +46,7 @@ ms.locfileid: "49822569"
   
 1.  Tworzenie projektu dokument programu Word z nazwą **przycisk Moje Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje **przycisk Moje Word** projekt **Eksploratora rozwiązań**.  
   
@@ -90,7 +87,7 @@ ms.locfileid: "49822569"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]  
   
-3.  W C#, należy dodać program obsługi zdarzeń dla przycisku, aby <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  W C#, należy dodać program obsługi zdarzeń dla przycisku, aby <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
@@ -108,15 +105,13 @@ ms.locfileid: "49822569"
 ## <a name="next-steps"></a>Następne kroki  
  W tym instruktażu przedstawiono podstawy używania przycisków i pola tekstowe w dokumentach programu Word. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Za pomocą pola kombi, aby zmienić formatowanie. Aby uzyskać więcej informacji, zobacz [Instruktaż: dokument Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Za pomocą pola kombi, aby zmienić formatowanie. Aby uzyskać więcej informacji, zobacz [instruktażu: Dokument Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [wskazówki: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [instruktażu: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)   
  [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
- [Porady: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Instrukcje: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)  
-  
-  
