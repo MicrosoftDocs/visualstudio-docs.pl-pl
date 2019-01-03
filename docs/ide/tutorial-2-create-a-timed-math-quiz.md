@@ -1,9 +1,7 @@
 ---
-title: 'Samouczek 2: Tworzenie quiz matematyczny'
-ms.custom: ''
+title: 'Samouczek 2: Utwórz quiz matematyczny'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d6dc353f7c296dce86bd2b410cfef09683576943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985725"
 ---
-# <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Tworzenie quiz matematyczny
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Utwórz quiz matematyczny
 
 W tym samouczku tworzysz quiz, w którym osoba wypełniająca quiz musi rozwiązać cztery losowe problemy arytmetyczne w określonym czasie. Dowiesz się, jak:
 
@@ -46,10 +44,10 @@ Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek quiz matematyc
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Krok 1: Tworzenie projektu i dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Rozpocznij tworzenie projektu, zmieniając właściwości i dodając `Label` kontrolki.|
-|[Krok 2. Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md)|Stwórz problem dodatku i użyj `Random` klasy w celu generowania liczb losowych.|
-|[Krok 3. Dodawanie czasomierza odliczania](../ide/step-3-add-a-countdown-timer.md)|Dodawanie czasomierza odliczania, dzięki czemu może być synchronizowane quizu.|
-|[Krok 4. Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Dodaj metodę, aby sprawdzić, czy osoba wypełniająca quiz wprowadziła poprawną odpowiedź dla problemu.|
+|[Krok 2: Utwórz problem losowego dodawania](../ide/step-2-create-a-random-addition-problem.md)|Stwórz problem dodatku i użyj `Random` klasy w celu generowania liczb losowych.|
+|[Krok 3: Dodawanie czasomierza odliczania](../ide/step-3-add-a-countdown-timer.md)|Dodawanie czasomierza odliczania, dzięki czemu może być synchronizowane quizu.|
+|[Krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Dodaj metodę, aby sprawdzić, czy osoba wypełniająca quiz wprowadziła poprawną odpowiedź dla problemu.|
 |[Krok 5: Dodawanie obsługi zdarzeń Enter dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Dodawanie obsługi zdarzeń, które ułatwiają zająć quiz.|
-|[Krok 6. Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md)|Dodawanie problemu odejmowania, który generuje liczby losowe, używa czasomierza i sprawdza, czy odpowiedzi są poprawne.|
-|[Krok 7. Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md)|Dodawanie problemów mnożenia i dzielenia, które generują liczby losowe, używają czasomierza i sprawdź, czy odpowiedzi są poprawne.|
+|[Krok 6: Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md)|Dodawanie problemu odejmowania, który generuje liczby losowe, używa czasomierza i sprawdza, czy odpowiedzi są poprawne.|
+|[Krok 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md)|Dodawanie problemów mnożenia i dzielenia, które generują liczby losowe, używają czasomierza i sprawdź, czy odpowiedzi są poprawne.|
 |[Krok 8: Dostosowywanie kwizu](../ide/step-8-customize-the-quiz.md)|Spróbuj innych funkcji, takich jak zmienianie kolorów i dodawanie wskazówki.|

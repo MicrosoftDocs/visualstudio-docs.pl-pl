@@ -2,7 +2,6 @@
 title: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -15,14 +14,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989179"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 
 Ten artykuł przeprowadzi Cię przez tworzenie, uruchamianie, i dostosowywać serie jednostek testów za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego i programu Visual Studio **Eksploratora testów**. Rozpocznij z projektu języka C#, który jest w fazie projektowania, tworzy testy, które wykonują kod, uruchom testy i bada wyniki. Następnie można zmienić kodu projektu i ponownie uruchom testy.
 

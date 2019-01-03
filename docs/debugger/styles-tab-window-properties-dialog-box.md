@@ -1,8 +1,6 @@
 ---
-title: Style — karta, okno dialogowe właściwości | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Karta style, okno dialogowe właściwości | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Styles Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccccced77f508bdced130012645aa475124e87b5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 464f2908784011074754ca68a29edbd52d992c95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990324"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Karta stylów, okno dialogowe właściwości okna
-Użyj **style** kartę, aby wyświetlić styl stosowany do wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku systemu Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  
+Użyj **style** kartę, aby pokazać stylów zastosowana do wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
   
  Następujące ustawienia są dostępne na **style** karty:  
   
 |Wpis|Opis|  
 |-----------|-----------------|  
-|**Style okna**|Kombinację okna styl kody i kontrolować style, jeśli ma to zastosowanie.|  
-|**Rozszerzone style**|Kombinacja kodów styl okna rozszerzonej.|
+|**Style okna ramowego**|Kombinacja okna stylu kodów i kontrolować style, jeśli ma to zastosowanie.|  
+|**Rozszerzone style**|Kombinacja kodów style rozszerzone okno.|

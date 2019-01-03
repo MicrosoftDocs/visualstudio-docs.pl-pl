@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986170"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
@@ -249,7 +248,7 @@ namespace MyMefExtension
 
 Procedury obsługi gestu poradzenie sobie z obiektami, które zostało przeciągnięte na diagramie z dowolnym miejscu, wewnątrz lub na zewnątrz programu Visual Studio. Poniższy przykład pozwala użytkownikowi na przeciągnij pliki z Eksploratora Windows na diagramie. Tworzy elementy, które zawierają nazwy plików.
 
-Można napisać procedury obsługi, aby poradzić sobie z drags z innymi modelami DSL i modeli UML. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Można napisać procedury obsługi, aby poradzić sobie z drags z innymi modelami DSL i modeli UML. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ```csharp
 using System.ComponentModel.Composition;

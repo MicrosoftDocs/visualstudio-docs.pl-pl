@@ -1,9 +1,6 @@
 ---
-title: 'Porady: programowane Włączanie ochrony dokumentów i części dokumentów'
-ms.custom: ''
+title: 'Instrukcje: Programowe Włączanie ochrony dokumentów i części dokumentów'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991113"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Porady: programowane Włączanie ochrony dokumentów i części dokumentów
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Instrukcje: Programowe Włączanie ochrony dokumentów i części dokumentów
   Można dodać ochrony do dokumentów programu Microsoft Office Word, aby uniemożliwić użytkownikom wprowadzanie żadnych zmian w dokumencie.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "35676166"
 > [!NOTE]  
 >  Poniższy przykład nie korzysta z ochrony haseł. Jednak warto wziąć pod uwagę przy użyciu hasła, podczas dodawania ochrony dokumentu. Aby uzyskać więcej informacji, zobacz przykład ochrony dokumentu w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  
   
- Formanty zawartości umożliwia również ochrona części dokumentów. Aby uzyskać więcej informacji, zobacz [porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Formanty zawartości umożliwia również ochrona części dokumentów. Aby uzyskać więcej informacji, zobacz [jak: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Chroń dokument, który jest częścią dostosowywania poziomie dokumentu  
   
@@ -74,8 +71,6 @@ ms.locfileid: "35676166"
 ## <a name="see-also"></a>Zobacz także  
  [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
  [Ochrona za pomocą hasła w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)   
- [Instrukcje: zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Instrukcje: Zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

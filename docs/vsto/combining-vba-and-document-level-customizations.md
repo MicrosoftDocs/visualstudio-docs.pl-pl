@@ -1,9 +1,6 @@
 ---
 title: Łączenie VBA i dostosowywanie na poziomie dokumentu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
@@ -27,12 +24,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987891"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Łączenie VBA i dostosowywanie na poziomie dokumentu
   Za pomocą języka Visual Basic for Applications (VBA) kodu w dokumencie, który jest częścią dostosowywania poziomie dokumentu dla programu Microsoft Office Word lub Microsoft Office Excel. Możesz wywołać kod VBA w dokumencie z zestawu dostosowywania lub projektu w celu włączenia kodu z VBA w dokumencie w celu wywołania kodu w zestaw dostosowania można skonfigurować.  
@@ -260,5 +257,3 @@ GetManagedClass(pdispInteropObject Object) As Object
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [Rozwiązania VBA i pakietu Office w Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
-  
-  

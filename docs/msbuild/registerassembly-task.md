@@ -1,8 +1,6 @@
 ---
 title: Registerassembly — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssembly
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1e3eb6108ac96716895ff996b043bc486c16e38
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4b4242ed9b1e18879c724b996baa393e0371e115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988604"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly — zadanie
 Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru, co umożliwia klientom COM utworzyć [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klasy w sposób niewidoczny dla użytkownika. Zachowanie to zadanie jest podobne, ale nie są identyczne, z [Regasm.exe (narzędzie rejestracji zestawów)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  

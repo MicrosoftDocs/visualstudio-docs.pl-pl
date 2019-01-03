@@ -1,12 +1,11 @@
 ---
-title: 'CA1409: Typy widoczne dla modelu Com powinny mieć możliwość utworzenia | Dokumentacja firmy Microsoft'
+title: 'CA1409: Typy widoczne dla modelu COM powinny mieć możliwość utworzenia | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8d6a28acea085fad99549739a0c4ab132169a436
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11a852cba3283c437d34f43ca354a052859dedd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985675"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Typy widoczne dla modelu COM powinny być możliwe do utworzenia
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Typy widoczne dla modelu COM powinny mieć możliwość utworzenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,6 +57,3 @@ ms.locfileid: "49889781"
 
 ## <a name="see-also"></a>Zobacz też
  [Kwalifikowanie typów .NET do międzyoperacyjności](http://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [współdziałanie z niezarządzanego kodu](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
-
-
-

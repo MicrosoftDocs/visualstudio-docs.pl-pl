@@ -1,9 +1,6 @@
 ---
-title: Zdefiniowane IDE poleceń do rozszerzania systemów projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, project systems
@@ -14,20 +11,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4941f5d842f311f078594ee9a9deef02219ea05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e3dc6a30dedebd8a5bc25c53e86aff4d3315ff8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990873"
 ---
-# <a name="ide-defined-commands-for-extending-project-systems"></a>Definicja IDE poleceń do rozszerzania systemów projektów
-Gdy chcesz rozszerzyć systemów projektów, można użyć poleceń i polecenia grup dostarczonych przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+# <a name="ide-defined-commands-for-extending-project-systems"></a>Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu
+Gdy chcesz rozszerzyć systemy projektu, można użyć poleceń i polecenia grupy udostępniane przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- Poniższe sekcje zawierają listę elementów polecenia, które są szczególnie użyteczne w przypadku rozszerzania systemów projektów.  
+ W poniższych sekcjach wymieniono elementy polecenia, które są szczególnie przydatne do rozszerzania systemów projektu.  
   
 ## <a name="command-menus"></a>Polecenia menu  
- W poniższej tabeli przedstawiono menu poleceń, które są przydatne w lokalizacji można umieścić polecenia wysokiego poziomu, które wywołują rozszerzeń projektu.  
+ W poniższej tabeli przedstawiono menu poleceń, które są przydatne w lokalizacjach na przetestowanie wysokiego poziomu poleceń, które wywołują rozszerzenia projektu.  
   
 |Polecenia menu|Opis|  
 |------------------|-----------------|  
@@ -35,44 +32,44 @@ Gdy chcesz rozszerzyć systemów projektów, można użyć poleceń i polecenia 
 |IDM_VS_TOOL_PROJWIN|**Eksploratora rozwiązań** paska narzędzi.|  
   
 ## <a name="shortcut-menus"></a>Menu skrótów  
- W poniższej tabeli przedstawiono menu skrótów, które są stosowane po wybraniu jednego węzła w **Eksploratora rozwiązań**, lub gdy występują jednorodnego wielokrotny w **Eksploratora rozwiązań**, czyli gdy wszystkie wybrane węzły są tego samego typu.  
+ W poniższej tabeli przedstawiono menu skrótów, które są stosowane po wybraniu jednego węzła w **Eksploratora rozwiązań**, lub gdy występują jednorodnego wielokrotny w **Eksploratora rozwiązań**, czyli kiedy wszystkie wybrane węzły są tego samego typu.  
   
 |Menu skrótów|Opis|  
 |-------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Stosuje się po wybraniu węzła projektu.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Ma zastosowanie w przypadku wybrania pliku.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|Ma zastosowanie w przypadku wybrania folderu.|  
-|IDM_VS_CTXT_WEBREFFOLDER|Stosuje przy wybraniu folderu odwołania sieci Web.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Ma zastosowanie w przypadku wybrania odwołań do węzła głównego o nazwie "Odwołuje się do".|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Ma zastosowanie, gdy wybrano węzłów odwołania; należą do zestawu COM i tylko odwołania do projektu. Nie ma odwołań sieci Web.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Ma zastosowanie, gdy zaznaczony jest węzeł projektu.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Ma zastosowanie, gdy plik jest zaznaczony.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|Ma zastosowanie przy wybraniu folderu.|  
+|IDM_VS_CTXT_WEBREFFOLDER|Ma zastosowanie przy wybraniu folderu odwołań sieci Web.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Ma zastosowanie, gdy wybrano węzeł główny odwołania, które są nazywane "Odwołaniami".|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Ma zastosowanie, gdy wybrano węzły odwołanie; należą do zestawu modelu COM i tylko odwołania do projektu. Nie ma odwołań sieci Web.|  
   
- W poniższej tabeli przedstawiono menu skrótów, które są stosowane podczas wyboru w **Eksploratora rozwiązań** obejmuje wielu hierarchii  
+ W poniższej tabeli przedstawiono menu skrótów, które są stosowane podczas wyboru w **Eksploratora rozwiązań** obejmuje wiele hierarchii  
   
 |Menu skrótów|Opis|  
 |-------------------|-----------------|  
-|IDM_VS_CTXT_XPROJ_SLNPROJ|Ma zastosowanie, gdy bieżące zaznaczenie zawiera węzeł rozwiązania i węzłów głównych projektu.|  
+|IDM_VS_CTXT_XPROJ_SLNPROJ|Ma zastosowanie, gdy bieżące zaznaczenie zawiera węzeł rozwiązania i węzłów projektu głównego.|  
 |IDM_VS_CTXT_XPROJ_SLNITEM|Ma zastosowanie, gdy bieżące zaznaczenie zawiera elementy węzła i projektu rozwiązania.|  
-|IDM_VS_CTXT_XPROJ_MULTIPROJ|Ma zastosowanie, gdy bieżące zaznaczenie składa się z wielu głównego projektu tylko węzłów.|  
-|IDM_VS_CTXT_XPROJ_PROJITEM|Ma zastosowanie, gdy bieżące zaznaczenie zawiera mieszane węzłów głównych projektów i elementów projektu. Ponadto zaznaczenie może zawierać węzeł rozwiązania.|  
-|IDM_VS_CTXT_XPROJ_MULTIITEM|Ma zastosowanie, gdy bieżące zaznaczenie zawiera elementy projektu z wielu projektów w rozwiązaniu lub po wybraniu elementów różnych typów w tym samym projekcie.|  
+|IDM_VS_CTXT_XPROJ_MULTIPROJ|Ma zastosowanie, gdy bieżące zaznaczenie składa się z wielu projektów węzłów głównych tylko.|  
+|IDM_VS_CTXT_XPROJ_PROJITEM|Ma zastosowanie, gdy bieżące zaznaczenie zawiera główny węzły projektów i elementów projektu. Ponadto zaznaczenie może zawierać węzła rozwiązania.|  
+|IDM_VS_CTXT_XPROJ_MULTIITEM|Ma zastosowanie, gdy bieżące zaznaczenie zawiera elementy projektu z wielu projektów w rozwiązaniu lub wybranie elementów różnego typu w tym samym projekcie.|  
   
-## <a name="command-groups"></a>Polecenie grup  
- W poniższej tabeli przedstawiono grupy poleceń, które można używać podczas rozszerzania projektów i dostępnej za pośrednictwem <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> menu skrótów.  
+## <a name="command-groups"></a>Grup poleceń  
+ W poniższej tabeli przedstawiono grupy poleceń, używane podczas rozszerzania projektów, a dostępny za pośrednictwem <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> menu skrótów.  
   
-|Polecenie grupy|Opis|  
+|Grupa poleceń|Opis|  
 |-------------------|-----------------|  
-|IDG_VS_CTXT_PROJECT_BUILD|Polecenia służące do tworzenia, ponowne tworzenie i wdrażanie projektu.|  
-|IDG_VS_CTXT_COMPILELINK|Polecenia kompilowanie i łączenie projektu.|  
-|IDG_VS_CTXT_PROJECT_CONFIG|Polecenia, które ustawienia konfiguracji projektu i kolejność kompilowania.|  
+|IDG_VS_CTXT_PROJECT_BUILD|Polecenia służące do tworzenia, ponownie skompilować i wdrażania projektu.|  
+|IDG_VS_CTXT_COMPILELINK|Polecenia służące do kompilowania i łączenia projektu.|  
+|IDG_VS_CTXT_PROJECT_CONFIG|Polecenia, które ustawienia konfiguracji projektu i kolejność kompilacji.|  
 |IDG_VS_CTXT_PROJECT_ADD|Polecenia, które umożliwia dodanie elementów do projektu.|  
-|IDG_VS_CTXT_PROJECT_START|Polecenia, które Ustaw projekt startowy skojarzone z klawisz F5.|  
-|IDG_VS_CTXT_PROJECT_SAVE|Polecenia zapisywania elementów projektu.|  
-|IDG_VS_CTXT_PROJECT_DEBUG|Polecenia do debugowania.|  
+|IDG_VS_CTXT_PROJECT_START|Polecenia, które Ustaw projekt uruchamiania skojarzone z klawisz F5.|  
+|IDG_VS_CTXT_PROJECT_SAVE|Polecenia zapisywanie elementów projektu.|  
+|IDG_VS_CTXT_PROJECT_DEBUG|Polecenia służące do debugowania.|  
 |IDG_VS_CTXT_PROJECT_SCC|Polecenia służące do kontroli źródła.|  
 |IDG_VS_CTXT_PROJECT_TRANSFER|Polecenia Wytnij, operacje kopiowania i wklejania.|  
 |IDG_VS_CTXT_PROJECT_PROPERTIES|Polecenia, które zapewniają dostęp do **właściwości projektu** okno dialogowe.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [MenuCommands programu Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Tworzenie grup przycisków do wielokrotnego użytku](../../extensibility/creating-reusable-groups-of-buttons.md)

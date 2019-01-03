@@ -1,8 +1,6 @@
 ---
 title: Dostęp do wstążki w czasie wykonywania
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989493"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Dostęp do wstążki w czasie wykonywania
   Można napisać kod, aby pokazać, ukrywanie i modyfikowania Wstążki i umożliwienie użytkownikom uruchomić kod z kontrolek w niestandardowego okienka zadań, okienka akcji lub region formularza programu Outlook.  
@@ -63,6 +61,6 @@ ms.locfileid: "52304626"
  [XML — Wstążka](../vsto/ribbon-xml.md)   
  [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md)   
  [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Wskazówki: Aktualizowanie kontrolek na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)  

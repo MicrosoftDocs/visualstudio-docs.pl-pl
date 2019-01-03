@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: badeb0d01347bf4410b645dc901f3ec518178574
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989247"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w testach obciążenia za pomocą analizatora testu obciążenia
 
@@ -39,7 +38,7 @@ W przypadku wszelkich naruszeniach, **naruszenia progu** hiperłącze pojawia si
 |Kolumny|Opis|Domyślnie widoczny|
 |-|-|-|
 |Godzina|Czas podczas ładowania testu, w której nastąpiło naruszenie zasad.|Tak|
-|Komputer|Nazwa komputera w ramach testu, w którym wystąpiło naruszenie. **Uwaga:** jest to istotne, kiedy uruchamiasz testy obciążenia na stanowiska.|Tak|
+|Komputer|Nazwa komputera w ramach testu, w którym wystąpiło naruszenie. **Uwaga:**  Jest to istotne, kiedy uruchamiasz testy obciążenia na stanowiska.|Tak|
 |Kategoria|Kategoria licznika wydajności, w którym wystąpiło naruszenie.|Tak|
 |Licznik|Nazwa licznika wydajności, w którym wystąpiło naruszenie.|Tak|
 |Wystąpienie|Wystąpienie licznika wydajności, w którym wystąpiło naruszenie.|Tak|

@@ -1,9 +1,6 @@
 ---
 title: Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,55 +12,54 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 202ddd802978c54c7ba773919ed3fd66a406cc05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987249"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint)
-  Ta sekcja zawiera dokumentacji interfejsu API dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
+  Ta sekcja zawiera dokumentację API rozszerzania narzędzi programu SharePoint w Visual Studio.  
   
 ## <a name="in-this-section"></a>W tej sekcji
  <xref:Microsoft.VisualStudio.SharePoint>  
- Zawiera typy, które umożliwiają rozszerzanie systemu projektu SharePoint. Na przykład wbudowana SharePoint — projekty i elementy projektu można rozszerzyć lub można utworzyć własne elementy projektu.  
+ Zawiera typy, które służą do rozszerzenia systemu projektu programu SharePoint. Na przykład można rozszerzyć wbudowane projekty programu SharePoint i elementy projektu, lub możesz utworzyć własne elementy projektu.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Commands>  
- Zawiera typy, które służy do tworzenia niestandardowych *polecenia SharePoint*. Polecenie programu SharePoint jest to metoda, która wywołuje w modelu obiektów programu SharePoint server z rozszerzeniem narzędzia programu SharePoint.  
+ Zawiera typy, które służą do tworzenia niestandardowych *poleceń programu SharePoint*. Polecenie programu SharePoint jest metodą, która wywołuje w modelu obiektów serwera SharePoint z rozszerzenia narzędzi programu SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>  
- Zawiera typy, które umożliwiają rozszerzanie procesu wdrażania dla projektów programu SharePoint.  
+ Zawiera typy, które służą do rozszerzenia procesu wdrażania dla projektów programu SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Explorer>  
- Zawiera typy, które zostało użyte do rozszerzenia węzłów programu SharePoint w **Eksploratora serwera** lub do zdefiniowania własnych typów węzłów.  
+ Zawiera typy, które służą do rozszerzenia węzłów programu SharePoint w **Eksploratora serwera** lub do zdefiniowania własnych typy węzłów.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>  
- Zawiera typy, których można użyć, aby uzyskać informacje o wbudowanych **Eksploratora serwera** węzłów, które reprezentują pojedynczych składników w witrynie programu SharePoint, na przykład węzeł, który reprezentuje listy, pola lub typu zawartości.  
+ Zawiera typy, które można użyć, aby uzyskać informacje o wbudowanych **Eksploratora serwera** węzły, które reprezentują poszczególne składniki w witrynie programu SharePoint, takich jak węzeł, który reprezentuje listę, pole lub typ zawartości.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Features>  
  Zawiera typy, które umożliwiają dostęp do definicji funkcji w projekcie programu SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Packages>  
- Zawiera typy, które umożliwiają dostęp do definicji pakietu w projekcie programu SharePoint.  
+ Zawiera typy, które umożliwiają dostęp do definicji pakietów w projekcie programu SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Remote.Authentication>  
- Zawiera typy używane do uwierzytelniania i komunikować się z aplikacji dla programu SharePoint, które są wdrażane do zdalnej witryny programu SharePoint.  
+ Zawiera typy używane do uwierzytelnienia i komunikowania się za pomocą aplikacji dla programu SharePoint, które są wdrażane w zdalnej witrynie programu SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Remote.Commands>  
- Zawiera typy, których można używać do tworzenia poleceń zdalnych programu SharePoint, które są używane przez aplikacje dla programu SharePoint, które są wdrażane do zdalnej witryny programu SharePoint.  
+ Zawiera typy, które służy do tworzenia zdalnych poleceń programu SharePoint, które są używane przez aplikacje dla programu SharePoint, które są wdrażane w zdalnej witrynie programu SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Tasks>  
- Zawiera typy używane przez program Visual Studio jako tworzenie zadań związanych z pakowaniem i debugowanie projektów programu SharePoint, aplikacje pakietu Office i aplikacji dla programu SharePoint. Ten interfejs API obsługuje infrastrukturę pakietu Office i programu SharePoint i nie jest przeznaczona do użycia bezpośrednio w kodzie.  
+ Zawiera typy używane w programie Visual Studio jako zdania kompilacji do pakowania i debugowania projektów programu SharePoint, aplikacji dla pakietu Office i aplikacji dla programu SharePoint. Ten interfejs API obsługuje infrastrukturę pakietu Office i programu SharePoint i nie jest przeznaczona do użycia bezpośrednio w kodzie.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
- Zawiera typy, które służy do dostosowywania zachowania weryfikacji funkcji i pakiet w projekcie programu SharePoint.  
+ Zawiera typy, które służy do dostosowywania funkcji i zachowania poprawności pakietu dla projektu programu SharePoint.  
   
 ## <a name="see-also"></a>Zobacz także
  [Odwołanie &#40;rozszerzalność narzędzi SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
- [Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
+ [Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [Wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  
+ [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  

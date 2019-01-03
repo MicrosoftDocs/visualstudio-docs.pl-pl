@@ -1,9 +1,6 @@
 ---
 title: dwTYPE_KIND | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - dwTYPE_KIND
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4339c18f7aa745c8b741c0a431b6073300ff145b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2d350b429b86c9ab3082816605c4c79e56982bb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988235"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 Określa, jak interpretować typ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  
@@ -61,9 +58,9 @@ public enum enum_dwTYPE_KIND {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

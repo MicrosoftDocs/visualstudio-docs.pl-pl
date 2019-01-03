@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce6d1a39f568986dfd77ed47fc2da18bf3da7ee4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a553119fe8cfbd9013357b63be07b300b59f9530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989077"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +41,11 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 
  ![Okno dialogowe odstępy dla etykiety powyżej kontrolki](../../extensibility/ux-guidelines/media/0801-a-utilityspacingabove.png "0801 a_UtilitySpacingAbove")
 
- **Rysunek 08.01-a: Odstępy wytycznych w oknach dialogowych narzędzia, za pomocą etykiet powyżej formantów**
+ **Rysunek 08.01-o: Wytyczne odstępy w oknach dialogowych narzędzia, za pomocą etykiet powyżej formantów**
 
  ![Okno dialogowe odstępy dla etykiety z lewej strony kontrolki](../../extensibility/ux-guidelines/media/0801-b-utilityspacingleft.png "0801 b_UtilitySpacingLeft")
 
- **Rysunek 08.01-b: Odstępy wytycznych w oknach dialogowych narzędzia, za pomocą etykiety z lewej strony kontrolki**
+ **Rysunek 08.01-b: Wytyczne odstępy w oknach dialogowych narzędzia, za pomocą etykiety z lewej strony kontrolki**
 
 ### <a name="layout-details"></a>Szczegóły układu
 
@@ -96,7 +95,7 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 
  ![Zagnieżdżone kontroli nad położeniem](../../extensibility/ux-guidelines/media/0801-e-controlalign.png "0801 e_ControlAlign")
 
- **Rysunek 08.01 — e: Zagnieżdżone kontroli nad położeniem kontrolki**
+ **Rysunek 08.01 — e: Wyrównanie zagnieżdżony formant**
 
 #### <a name="control-width"></a>Szerokość formantu
  Szerokość pola tekstowego lub innych podobnych kontrolek, należy nie dłuższą niż średnia dane wejściowe dla pola. Średnia słowa angielskiego jest pięć znaków. Na przykład pola tekstowego, który wymaga długiej nazwy powinna być tak długo, jak w układzie poziomym pozwala, podczas gdy listy rozwijanej dla nazw platform powinny być tylko długości, która pozwala na zapis najdłuższy.
@@ -118,11 +117,11 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 
   ![Przyciski poziome OK i Anuluj](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")
 
-  **Rysunek 08.01-f: Pionowy wnętrza przycisków z poziomy OK/anulować**
+  **Rysunek 08.01-f: Pionowe przyciski posługiwanie się nimi za pomocą polecenia poziomy OK/Anuluj**
 
   ![Przyciski pionowy OK i Anuluj](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")
 
-  **Rysunek 08.01-g: Poziomy przyciski posługiwanie się nimi pionowy OK/anulować**
+  **Rysunek 08.01-g: Posługiwanie się nimi przyciski poziome za pomocą polecenia pionowy OK/Anuluj**
 
 #### <a name="browse-button"></a>[Przeglądaj …] przycisk
  **[Przeglądaj …]**  przycisków poniżej pola tekstowego powinien zawierają bardziej "Przeglądaj..." w całości, w tym wielokropka. Jeśli ilość miejsca jest ścisła lub dostępnych jest wiele **[Przeglądaj …]**  przyciski na ekranie przycisku można zmniejszyć do właśnie wielokropka.
@@ -147,19 +146,19 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 ### <a name="themed-dialog-layout-examples"></a>Przykłady układu okna dialogowego motywów
  ![Układ okna dialogowego motywem](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801 h_ThemedDialog")
 
- **Rysunek 08.01-h: Okno dialogowe motywem**
+ **Rysunek 08.01-h: Okno dialogowe motywów**
 
  ![Wymiary okna dialogowego motywem](../../extensibility/ux-guidelines/media/0801-i-themeddialogdimensions.png "0801 i_ThemedDialogDimensions")
 
- **Rysunek 08.01-i: Dialogowe motywem — wymiarów**
+ **Rysunek 08.01-i: Okno dialogowe motywem — wymiarów**
 
  ![Czcionki okna dialogowego motywem](../../extensibility/ux-guidelines/media/0801-j-themeddialogfonts.png "0801 j_ThemedDialogFonts")
 
- **Rysunek 08.01-j: Dialogowe motywem — czcionek**
+ **Rysunek 08.01-j: Okno dialogowe motywem — czcionek**
 
  ![Okno motywem kolorów](../../extensibility/ux-guidelines/media/0801-k-themeddialogcolors.png "0801 k_ThemedDialogColors")
 
- **Rysunek 08.01-k: Dialogowe motywem — kolory**
+ **Rysunek 08.01-k: Okno dialogowe motywem — kolory**
 
 ## <a name="see-also"></a>Zobacz też
  [Wzorce aplikacji dla programu Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md) [formantów (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [okien dialogowych (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)

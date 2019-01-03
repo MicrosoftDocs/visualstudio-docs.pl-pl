@@ -2,7 +2,6 @@
 title: Jak poruszać się w środowisku IDE
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfae0808ff5daa10f8faa621e6af293543bce66
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bf2c00350b6b366e0e1d5ea02a8e260c8927b348
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988887"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Porady: poruszanie się w środowisku IDE programu Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: Poruszanie się w środowisku IDE programu Visual Studio
 
 Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożliwia przenoszenie okna okna i plikami na kilka różnych sposobów, w zależności od wymagań preferencji lub projektu. Można przełączać się między otwartych plików w edytorze lub przechodzić przez wszystkie aktywne okna narzędzi w IDE. Możesz również przełączyć bezpośrednio do dowolnego otwartego pliku w edytorze, niezależnie od kolejności, w którym ostatniego dostępu. Te funkcje może pomóc zwiększyć produktywność podczas pracy w środowisku IDE.
 

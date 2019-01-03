@@ -1,8 +1,6 @@
 ---
-title: marker_series::marker_series — Konstruktor | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Konstruktor marker_series::marker_series | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::marker_series
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc397fa88c722f6a7f16ac92f4388525073c0fa
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 8fad8eec19346273a7ea302da4653faa1bdec032
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987236"
 ---
-# <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series — Konstruktor
+# <a name="markerseriesmarkerseries-constructor"></a>Konstruktor marker_series::marker_series
 Inicjuje nowe wystąpienie klasy `marker_series` klasy.  
   
 ## <a name="syntax"></a>Składnia  
@@ -42,7 +40,7 @@ marker_series(
   
 #### <a name="parameters"></a>Parametry  
  `_SeriesName`  
- Nazwa serii do utworzenia.  
+ Nazwa serii, aby utworzyć.  
   
  `_ProviderGuid`  
  Identyfikator GUID dostawcy serii.  
@@ -53,4 +51,4 @@ marker_series(
  **Namespace:** CONCURRENCY::Diagnostic —  
   
 ## <a name="see-also"></a>Zobacz także  
- [marker_series — klasa](../profiling/marker-series-class.md)
+ [marker_series, klasa](../profiling/marker-series-class.md)

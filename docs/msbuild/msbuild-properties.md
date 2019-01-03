@@ -1,8 +1,6 @@
 ---
 title: Właściwości programu MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987041"
 ---
 # <a name="msbuild-properties"></a>właściwości programu MSBuild
 Właściwości to pary nazwa-wartość, których można używać do konfigurowania kompilacji. Stanową przydatny mechanizm przekazywania wartości do zadań, obliczania warunków i przechowywania wartości, do których będą prowadziły odwołania z różnych miejsc pliku projektu.  
@@ -46,7 +44,7 @@ Właściwości to pary nazwa-wartość, których można używać do konfigurowan
 ## <a name="reserved-properties"></a>Właściwości zastrzeżone  
  Program MSBuild rezerwuje niektóre nazwy właściwości do przechowywania informacji o pliku projektu oraz pliki binarne programu MSBuild. Odwołania do tych właściwości tworzy się przy użyciu notacji $, podobnie jak w przypadku pozostałych właściwości. Na przykład odwołanie $(MSBuildProjectFile) zwraca pełną nazwę pliku projektu, łącznie z rozszerzeniem.  
   
- Aby uzyskać więcej informacji, zobacz [porady: odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) i [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) i [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="environment-properties"></a>Środowisko — właściwości  
  Odwołania do zmiennych środowiskowych w plikach projektów tworzy się tak samo jako odwołania do właściwości zastrzeżonych. Na przykład aby w pliku projektu użyć zmiennej środowiskowej `PATH`, należy użyć składni $(Path). Jeśli projekt zawiera definicję właściwości o takiej samej nazwie jak właściwość środowiska, właściwość w projekcie zastępuje wartość zmiennej środowiskowej.  
@@ -58,7 +56,7 @@ Właściwości to pary nazwa-wartość, których można używać do konfigurowan
 > [!TIP]
 >  Nie wszystkie zmienne środowiskowe są wczytywane jako właściwości początkowe. Wszystkie zmienne środowiskowe, którego nazwa jest nieprawidłowa MSBuild właściwości Nazwa, np. "386" jest ignorowany.  
   
- Aby uzyskać więcej informacji, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="registry-properties"></a>Właściwości rejestru  
  Systemu można odczytać wartości rejestru przy użyciu następującej składni, gdzie `Hive` jest gałęzią rejestru (na przykład **HKEY_LOCAL_MACHINE**), `Key` to nazwa klucza `SubKey` jest nazwą podklucza, a `Value`to wartość podklucza.  
@@ -94,7 +92,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
   
  Właściwości globalne można także ustawiać i modyfikować dla projektów podrzędnych w kompilacjach wieloprojektowych. Służy do tego atrybut `Properties` zadania programu MSBuild. Właściwości globalne również są przekazywane do projektów podrzędnych, chyba że `RemoveProperties` atrybut zadanie MSBuild służy do określania listy właściwości nie można przesłać dalej. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md).
   
- Jeśli właściwość zostanie określona za pomocą atrybutu `TreatAsLocalProperty` w znaczniku projektu, wartość właściwości globalnej nie zastępuje wartości właściwości ustawionej w pliku projektu. Aby uzyskać więcej informacji, zobacz [Project — element (MSBuild)](../msbuild/project-element-msbuild.md) i [porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
+ Jeśli właściwość zostanie określona za pomocą atrybutu `TreatAsLocalProperty` w znaczniku projektu, wartość właściwości globalnej nie zastępuje wartości właściwości ustawionej w pliku projektu. Aby uzyskać więcej informacji, zobacz [Project — element (MSBuild)](../msbuild/project-element-msbuild.md) i [jak: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
 ## <a name="property-functions"></a>Funkcje właściwości  
  Począwszy od środowiska .NET Framework w wersji 4 do obliczania skryptów programu MSBuild można używać funkcji właściwości. Funkcje umożliwiają odczytywanie godziny systemowej, porównywanie ciągów tekstowych, porównywanie wyrażeń regularnych i wykonywanie wielu innych czynności w skrypcie kompilacji bez używania zadań programu MSBuild.  
@@ -141,8 +139,8 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="see-also"></a>Zobacz także  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)  
- [Porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md)   
- [Porady: odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
- [Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
+ [Instrukcje: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md)   
+ [Instrukcje: Odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
+ [Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [Program MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Property — element (MSBuild)](../msbuild/property-element-msbuild.md)

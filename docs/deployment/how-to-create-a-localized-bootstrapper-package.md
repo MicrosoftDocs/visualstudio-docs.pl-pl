@@ -1,8 +1,6 @@
 ---
-title: 'Porady: tworzenie zlokalizowanego pakietu programu inicjującego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1083633410c42c63f8c3e9a2ff341a2278f0b63a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 129f684c7dca4fc8da27286d51a9c3309ed87531
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990402"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Porady: tworzenie zlokalizowanego pakietu programu inicjującego
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego
 Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla poszczególnych ustawień regionalnych, można utworzyć zlokalizowane wersje pakietu programu inicjującego: postanowienia licencyjne dotyczące oprogramowania plików (takich jak *eula.rtf*) oraz manifest pakietu (*package.xml*).  
   
- Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4 Client Profile, 2.0 środowisko uruchomieniowe F # i F # 4.0 środowiska uruchomieniowego. Zlokalizowane pakiety dla innych programów inicjujących można utworzyć, wykonując trzy kroki.  
+ Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4 Client Profile F# środowiska uruchomieniowego w wersji 2.0 i F# 4.0 środowiska uruchomieniowego. Zlokalizowane pakiety dla innych programów inicjujących można utworzyć, wykonując trzy kroki.  
   
 1.  Utwórz folder o nazwie po nazwie ustawień regionalnych *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.  
   
@@ -66,7 +64,7 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
   
 2.  Utwórz plik, który zawiera postanowienia licencyjne dotyczące oprogramowania pakietu programu inicjującego i umieścić go w nowym folderze.  
   
-3.  Tworzenie manifestu pakietu o nazwie *package.xml* i umieścić go w nowym folderze. Aby uzyskać więcej informacji, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
+3.  Tworzenie manifestu pakietu o nazwie *package.xml* i umieścić go w nowym folderze. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Aktualizacja `<Strings>` części pakietu manifestu, tak aby ciągi znajdują się w prawidłowym języku dla ustawień regionalnych.  
   
@@ -95,4 +93,4 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
 ## <a name="see-also"></a>Zobacz także  
  [Tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md)   
  [Wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md)   
- [Instrukcje: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)
+ [Instrukcje: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)

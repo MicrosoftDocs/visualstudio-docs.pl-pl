@@ -1,9 +1,6 @@
 ---
-title: Visual Studio Otwórz Folder rozszerzalności omówienie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Przegląd rozszerzalności usługi Visual Studio, otwórz Folder | Dokumentacja firmy Microsoft
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
 author: vukelich
@@ -11,42 +8,42 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcb2d1d922b4ebd4943c42c478400c5873af9cc4
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986014"
 ---
 # <a name="open-folder-extensibility"></a>Otwórz Folder rozszerzalności
 
-[Otwórz Folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) funkcja umożliwia użytkownikom otwieranie żadnego kodu w programie Visual Studio bez konieczności pliki projektu lub rozwiązania. Otwórz Folder zawiera użytkownicy funkcji oczekują z programu Visual Studio, takich jak:
+[Otwórz Folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) funkcja umożliwia użytkownikom otworzyć dowolny bazy kodu w programie Visual Studio bez konieczności plików projektu ani rozwiązania. Otwórz Folder zapewnia, że użytkownicy funkcji oczekiwać od programu Visual Studio, takich jak:
 
-* Integracja z Eksploratora rozwiązań i wyszukiwania
+* Integracja z Eksploratorem rozwiązań i wyszukiwanie
 * Kolorowanie edytora
 * Przejdź do nawigacji
 * Znajdź w plikach wyszukiwania
 
-W przypadku użycia z obciążeń, takich jak w przypadku rozwoju .NET i C++, użytkownicy również uzyskać:
+W przypadku użycia z obciążeniami takie samo jak w przypadku programowania .NET i C++, użytkownicy również otrzymać:
 
-* Zaawansowana Intellisense
+* Rozbudowana funkcja Intellisense
 * Funkcje językowe
 
-Otwórz folder rozszerzenia autorzy mogą tworzyć rozbudowane funkcje dla żadnego języka. Brak interfejsów API do obsługi kompilowanie, debugowanie i wyszukiwania symboli dla ścieżce bazowej kodu każdy plik z użytkownikiem. Bieżący rozszerzeń można aktualizować ich istniejących funkcji programu Visual Studio, aby zrozumieć kodu bez zapasowego projektów lub rozwiązanie.
+Otwórz Folder twórcy rozszerzenia umożliwia tworzenie zaawansowanych funkcji w dowolnym języku. Brak interfejsów API do obsługi tworzenia, debugowania i wyszukiwania symboli dla każdego pliku w użytkownika ścieżce bazowej kodu zespołu. Bieżący rozszerzeń można zaktualizować ich istniejących funkcji programu Visual Studio, aby zrozumieć kod bez zapasowego projektów lub rozwiązań.
 
-## <a name="an-api-without-project-systems"></a>Interfejs API bez systemów projektów
+## <a name="an-api-without-project-systems"></a>Interfejs API bez systemy projektu
 
-W przeszłości Visual Studio zrozumiał plików rozwiązania i jego projekty systemów projektu. System projektu jest odpowiedzialny za interakcje funkcji i użytkownika załadowanego projektu. Sam co pliki jego projektu zawiera wizualną reprezentację zawartości projektu, zależności do innych projektów i modyfikacji podstawowych pliku projektu. Jest za pośrednictwem tych hierarchii i możliwości, które inne składniki działają w imieniu użytkownika. Nie wszystkie codebases również są przedstawiane w strukturze projektu i rozwiązania. Języki skryptów i kodu open source napisana w języku C++ dla systemu Linux są dobre przykłady. Przy otwartym folderze programu Visual Studio pozwala użytkownikom nowy sposób interakcji z ich kodu źródłowego.
+W przeszłości Visual Studio rozumieć pliki w rozwiązaniu i jego projekty, korzystając z systemów projektu. System projektu jest odpowiedzialny za interakcje funkcji i użytkownika załadowanego projektu. Sam co pliki projekt zawiera wizualnej reprezentacji treści projektu zależności w innych projektach i modyfikacji elementu bazowego pliku projektu. Jest za pośrednictwem tych hierarchie i możliwości, które inne składniki działają w imieniu użytkownika. Nie wszystkie ścieżek bazowych kodów również są reprezentowane w strukturze projektu i rozwiązania. Języki skryptów i kodu typu open source napisana w języku C++ dla systemu Linux są dobre przykłady. Z otwartego folderu programu Visual Studio zapewnia użytkownikom nowy sposób interakcji z kodu źródłowego.
 
-Interfejsy API otwarty Folder podlegają `Microsoft.VisualStudio.Workspace.*` przestrzeni nazw i są dostępne dla rozszerzeń do tworzenia i wykorzystywania danych lub akcje wokół plików w otwartym folderze. Rozszerzenia mogą zapewniać funkcje dotyczące wielu obszarów, w tym przy użyciu poniższych interfejsów API:
+Otwarte interfejsy API w folderze znajdują się pod `Microsoft.VisualStudio.Workspace.*` przestrzeni nazw są dostępne dla urządzenia Extender do tworzenia i wykorzystywania danych lub akcje wokół pliki znajdujące się w otwartym folderze. Rozszerzenia można użyć tych interfejsów API umożliwiają korzystanie z funkcji do wielu obszarów, takich jak:
 
-- [Obszary robocze](workspaces.md) — od punktu Otwórz Folder rozszerzalności jest obszar roboczy i jej interfejsów API.
-- [Konteksty i akcje plików](workspace-file-contexts.md) — realizowane za pośrednictwem pliku kontekstów analizy kodu określonych plików.
-- [Indeksowanie](workspace-indexing.md) — zbieranie i zachować dane na temat obszarów roboczych Otwórz Folder.
-- [Usługi językowe](workspace-language-services.md) -integrowania usług języka Otwórz Folder obszarów roboczych.
-- [Tworzenie](workspace-build.md) — Obsługa obszarów roboczych Otwórz Folder kompilacji.
+- [Obszary robocze](workspaces.md) — od punktu funkcja otwierania folderu rozszerzeń jest obszar roboczy i jej interfejsów API.
+- [Plik kontekstów i akcje](workspace-file-contexts.md) — plik określonego kodu analizy dostępne za pośrednictwem konteksty plików.
+- [Indeksowanie](workspace-indexing.md) — zbierania, i utrwalić dane dotyczące obszarów roboczych Otwórz Folder.
+- [Usługi języka](workspace-language-services.md) -Integrowanie usług językowych Otwórz Folder w obszarach roboczych.
+- [Tworzenie](workspace-build.md) — Obsługa otwierania folderu obszarów roboczych kompilacji.
 
-Funkcje korzystające z następujących typów konieczne będzie wdrożenie nowych interfejsów API do obsługi Otwórz Folder:
+Funkcje, które korzystają z następujących typów należy przyjąć nowe interfejsy API do obsługi Otwórz Folder:
 
 - `IVsHierarchy`
 - `IVsProject`
@@ -54,7 +51,7 @@ Funkcje korzystające z następujących typów konieczne będzie wdrożenie nowy
 
 ## <a name="feedback-comments-issues"></a>Opinie, komentarze, problemy
 
-Otwórz Folder i `Microsoft.VisualStudio.Workspace.*` opracowywane active są interfejsów API. Jeśli widzisz nieoczekiwanego zachowania, zobacz znane problemy dotyczące wersji zainteresowań. [Społeczność deweloperów](https://developercommunity.visualstudio.com) jest zalecane miejsce do głosowania i tworzyć problemy. Dla każdego opinii zdecydowanie zaleca się szczegółowy opis problemu. Obejmują projektujesz dla używanej wersji programu Visual Studio, interfejsy API używasz (zostały zaimplementowane i co w przypadku interakcji z), oczekiwany wynik i rzeczywiste wyniki. Jeśli to możliwe zawierać zrzut procesu devenv.exe. Użyj śledzenia do przekazywania opinii na ten problem GitHub i związanych z dokumentacją.
+Otwórz Folder i `Microsoft.VisualStudio.Workspace.*` interfejsy API są opracowywane active. Jeśli widzisz nieoczekiwane zachowanie, zobacz znane problemy dotyczące wersji zainteresowania. [Społeczność deweloperów](https://developercommunity.visualstudio.com) jest to zalecane miejsce do głosowania i utworzyć wszelkie problemy. Dla każdej informacji zwrotnych zdecydowanie zalecamy szczegółowy opis problemu. Obejmują wersji programu Visual Studio, którą tworzysz oprogramowanie, interfejsów API, używasz (zastało zaimplementowane i jakie są interakcje z), oczekiwany wynik i rzeczywistym wynikiem. Jeśli to możliwe obejmują zrzut procesu devenv.exe. Użyj śledzenie wyrażanie opinii na ten problem z serwisu GitHub i związane z dokumentacją.
 
 ## <a name="next-steps"></a>Następne kroki
 

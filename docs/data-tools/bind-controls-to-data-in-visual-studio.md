@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e27f5ce9536e7128330ebe932709a9be408b7e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: a84fb954d0d632c217e9a4282f7c33fd6226d677
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987223"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek z danymi w programie Visual Studio
 
@@ -34,16 +33,16 @@ W kontekście powiązania danych źródło danych reprezentuje dane w pamięci, 
 
 | Źródło danych | Obsługa przeciągania i upuszczania w **Windows Forms Designer** | Obsługa przeciągania i upuszczania w **projektanta WPF** | Obsługa przeciągania i upuszczania w **projektanta Silverlight** |
 | - | - | - | - |
-| Zestaw danych | Tak | Tak | Nie |
+| Zestaw danych | Tak | Yes | Nie |
 | Entity Data Model | Tak<sup>1</sup> | Tak | Tak |
 | Klasy LINQ do SQL | Nie<sup>2</sup> | Nie<sup>2</sup> | Nie<sup>2</sup> |
-| Usługi (łącznie z [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services oraz usług sieci web) | Tak | Tak | Tak |
-| Obiekt | Tak | Tak | Tak |
-| Program SharePoint | Tak | Tak | Tak |
+| Usługi (łącznie z [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services oraz usług sieci web) | Tak | Yes | Tak |
+| Obiekt | Tak | Yes | Tak |
+| Program SharePoint | Tak | Yes | Tak |
 
 1. Generowanie modelu przy użyciu **modelu Entity Data Model** kreatora, a następnie przeciągnij te obiekty do projektanta.
 
-2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie klasy programu LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>Data Sources — Okno
 

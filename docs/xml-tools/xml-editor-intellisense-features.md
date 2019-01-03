@@ -2,7 +2,6 @@
 title: Funkcje IntelliSense w edytorze XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986209"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 
@@ -45,7 +44,7 @@ Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edyto
 
 -   Nazwy parametru dla danego szablonie o podanej nazwie.
 
-Aby uzyskać więcej informacji, zobacz [Instruktaż: za pomocą XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tematu.
+Aby uzyskać więcej informacji, zobacz [instruktażu: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tematu.
 
 ## <a name="auto-completion"></a>Automatyczne uzupełnianie
  Edytor XML sprawia, że łatwiej XML do edycji, wypełniając wymaganej składni XML dla Ciebie. Jeśli na przykład wpisz następujący tag początkowy:

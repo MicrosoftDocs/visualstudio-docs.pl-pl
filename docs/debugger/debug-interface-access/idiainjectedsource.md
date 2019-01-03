@@ -1,8 +1,6 @@
 ---
 title: Idiainjectedsource — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,43 +12,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c0d10820504ab3f3f93f29c0a579a5a26b82c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 31a29c4b3dbf4541f11770c4bc32eb922f120325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990259"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
-Uzyskuje dostęp do dodane przechowywane w źródle danych DIA kodu źródłowego.  
+Uzyskuje dostęp do wprowadzony kod źródłowy, przechowywane w źródle danych DIA.  
   
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDiaInjectedSource : IUnknown  
+IDiaInjectedSource : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDiaInjectedSource`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) obliczana na podstawie liczby bajtów kodu źródłowego.|  
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) obliczonym na podstawie kodu źródłowego w bajtach.|  
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Pobiera liczbę bajtów kodu.|  
-|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Pobiera nazwę pliku dla tego źródła.|  
+|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Pobiera nazwę pliku źródłowego.|  
 |[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Pobiera nazwę pliku obiektu, do którego został skompilowany źródła.|  
-|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Pobiera nazwę do kodu źródłowego z systemem innym niż plik; oznacza to, że kod, który zostało dodane.|  
-|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Pobiera wskaźnik źródła kompresji używany.|  
-|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Pobiera bajtów kodu źródłowego.|  
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Pobiera nazwę do kodu źródłowego-file; oznacza to, że kod, który został wprowadzony.|  
+|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Pobiera wskaźnik kompresji źródła używane.|  
+|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Pobiera bajty kodu źródłowego.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wprowadzony źródło jest tekst, który jest dodane podczas kompilacji. Nie oznacza to preprocesora `#include` używany w języku C++.  
+ Wstrzyknięte źródło to tekst, które są wstrzykiwane podczas kompilacji. Nie oznacza to, preprocesor `#include` używany w języku C++.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Uzyskanie przez wywołanie metody tego interfejsu [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) lub [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) metody. Zobacz [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfejsu, na przykład uzyskania `IDiaInjectedSource` interfejsu.  
+ Uzyskanie tego interfejsu, wywołując [idiaenuminjectedsources::Item —](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) lub [idiaenuminjectedsources::Next —](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) metody. Zobacz [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfejsu, na przykład uzyskiwania `IDiaInjectedSource` interfejsu.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie wyświetlono danych dostępnych z `IDiaInjectedSource` interfejsu. Aby uzyskać informacje o innym podejściu przy użyciu [idiapropertystorage —](../../debugger/debug-interface-access/idiapropertystorage.md) interfejsu, zapoznaj się z przykładem w [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfejsu.  
+ W tym przykładzie wyświetla określone dane, które są dostępne z `IDiaInjectedSource` interfejsu. Aby uzyskać informacje o innym podejściu przy użyciu [idiapropertystorage —](../../debugger/debug-interface-access/idiapropertystorage.md) interfejsu, zobacz przykład w [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfejsu.  
   
 ```C++  
 void PrintInjectedSource(IDiaInjectedSource* pSource)  
@@ -115,14 +113,14 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
- [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
+ [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiaenuminjectedsources::Item —](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
+ [Idiaenuminjectedsources::Next —](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

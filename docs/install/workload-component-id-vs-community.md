@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: c5573f5501c4723ed6eede9bba82ebc7fdf31730
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0c08a78d49a637b37570a0b77063bf307e97cba2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063279"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990899"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017 składników katalogu
 
@@ -36,15 +35,15 @@ Ponadto należy pamiętać, że informacje o stronie:
 * Jeśli chcesz, możesz także zainstalować **zalecane** i **opcjonalnie** składników.
 * Dodaliśmy również sekcję, która zawiera listę dodatkowych składników, które nie są powiązane z dowolnych obciążeń.
 
-Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
+Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
 
 Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz [Użyj parametry wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) strony. I dla listy, obciążenie i identyfikatorów składników dla innych produktów, zobacz [Visual Studio 2017 obciążenia i identyfikatory składnika](workload-and-component-ids.md) strony.
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2017"></a>Edytor Visual Studio core (dostarczane z Visual Studio Community 2017)
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.CoreEditor
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Opis:** środowisko powłoki programu Visual Studio core, edytowania kodu uwzględniającej składnię, w tym kontrolą kodu źródłowego i zarządzanie elementami roboczymi.
+**Opis:** Visual Studio podstawowe funkcje powłoki, w tym kodu uwzględniającej składnię, edycji i kontroli kodu źródłowego i zarządzanie elementami roboczymi.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -55,9 +54,9 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Program Visual Studio
 
 ## <a name="azure-development"></a>Programowanie na platformie Azure
 
-**ID:** Microsoft.VisualStudio.Workload.Azure
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Azure
 
-**Opis:** zestawy SDK platformy Azure, narzędzia i projekty do opracowywania aplikacji w chmurze, tworzenia zasobów i kompilowania kontenerów, w tym obsługę platformy Docker.
+**Opis:** Zestawy SDK platformy Azure, narzędzia i projekty do tworzenia aplikacji w chmurze obsługuje tworzenie zasobów i kompilowania kontenerów platformy Docker.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -149,9 +148,9 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ## <a name="data-storage-and-processing"></a>Magazynowanie i przetwarzanie danych
 
-**ID:** Microsoft.VisualStudio.Workload.Data
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Data
 
-**Opis:** łączenie, opracowywanie i testowanie rozwiązań danych przy użyciu programu SQL Server, usługa Azure Data Lake lub usługi Hadoop.
+**Opis:** Łączenie, opracowywanie i testowanie rozwiązań danych przy użyciu programu SQL Server, usługa Azure Data Lake lub usługi Hadoop.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -210,9 +209,9 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F#Obsługa pulpitu języka | 1
 
 ## <a name="data-science-and-analytical-applications"></a>Aplikacje do analizy i przetwarzania danych
 
-**ID:** Microsoft.VisualStudio.Workload.DataScience
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.DataScience
 
-**Opis:** języki i narzędzia do tworzenia aplikacji do analizy danych, w tym języka Python, R i F#.
+**Opis:** Języki i narzędzia do tworzenia aplikacji do analizy danych, w tym języka Python, R i F#.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -255,9 +254,9 @@ Microsoft.VisualStudio.Component.Windows81SDK | Zestaw SDK systemu Windows 8.1 |
 
 ## <a name="net-desktop-development"></a>Programowanie aplikacji klasycznych dla platformy .NET
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.ManagedDesktop
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**Opis:** kompilacji WPF, Windows Forms i aplikacji konsolowych przy użyciu C#, Visual Basic i F#.
+**Opis:** Tworzenie WPF, Windows Forms i aplikacji konsolowych przy użyciu C#, Visual Basic i F#.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -330,9 +329,9 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET i tworzenie a
 
 ## <a name="game-development-with-unity"></a>Programowanie gier za pomocą aparatu Unity
 
-**ID:** Microsoft.VisualStudio.Workload.ManagedGame
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.ManagedGame
 
-**Opis:** tworzenie gier 2D i 3D za pomocą aparatu Unity, zaawansowane Międzyplatformowe środowisko programistyczne.
+**Opis:** Twórz gry 2D i 3D za pomocą aparatu Unity, zaawansowane Międzyplatformowe środowisko programistyczne.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -350,9 +349,9 @@ Component.UnityEngine.x86 | Unity 5.6 32-bitowych edytora | 15.6.27406.0 | Zalec
 
 ## <a name="linux-development-with-c"></a>Programowanie dla systemu Linux przy użyciu języka C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeCrossPlat
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
-**Opis:** tworzenie i debugowanie aplikacji w środowisku systemu Linux.
+**Opis:** Twórz i Debuguj aplikacje działające w środowisku systemu Linux.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -370,9 +369,9 @@ Component.MDD.Linux.GCC.arm | Osadzonych i IoT rozwoju | 15.6.27309.0 | Optional
 
 ## <a name="desktop-development-with-c"></a>Programowanie aplikacji klasycznych w języku C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeDesktop
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeDesktop
 
-**Opis:** Twórz aplikacje klasyczne Windows przy użyciu zestawu narzędzi Microsoft C++, ATL lub MFC.
+**Opis:** Twórz aplikacje pulpitu Windows przy użyciu zestawu narzędzi Microsoft C++, ATL lub MFC.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -410,12 +409,12 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | System Windows 10 SDK (10.
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | System Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | System Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | System Windows 10 SDK (10.0.15063.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [ARM i ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Zestaw SDK systemu Windows 8.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | Windows XP podporu androidu Pro C++ | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK i UCRT SDK | 15.6.27406.0 | Optional
@@ -425,9 +424,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="game-development-with-c"></a>Programowanie gier w języku C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeGame
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeGame
 
-**Opis:** używać pełnych możliwości języka C++ do tworzenia profesjonalnych gier obsługiwanych przez program DirectX, Unreal i Cocos2d.
+**Opis:** Użyj pełnych możliwości języka C++, aby tworzyć profesjonalne gry obsługiwane przez program DirectX, Unreal i Cocos2d.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -470,12 +469,12 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | System Windows 10 SDK (10.
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | System Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | System Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | System Windows 10 SDK (10.0.15063.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [ARM i ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Zestaw SDK systemu Windows 8.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK i UCRT SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | System Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
@@ -483,7 +482,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="mobile-development-with-c"></a>Tworzenie aplikacji mobilnych w języku C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeMobile
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeMobile
 
 **Opis:** Twórz aplikacje Międzyplatformowe dla systemów iOS, Android lub Windows przy użyciu języka C++.
 
@@ -514,9 +513,9 @@ Component.MDD.IOS | Narzędzia programistyczne dla systemu iOS C++ | 15.0.26621.
 
 ## <a name="net-core-cross-platform-development"></a>Programowanie dla wielu platform .NET core
 
-**ID:** Microsoft.VisualStudio.Workload.NetCoreTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**Opis:** tworzyć aplikacje dla wielu platform przy użyciu platformy .NET Core, ASP.NET Core, HTML/JavaScript i kontenerów, w tym obsługę platformy Docker.
+**Opis:** Twórz aplikacje dla wielu platform przy użyciu platformy .NET Core, ASP.NET Core, HTML/JavaScript i kontenerów, w tym obsługę platformy Docker.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -582,7 +581,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Obsługa usług IIS w cza
 
 ## <a name="mobile-development-with-net"></a>Tworzenie aplikacji mobilnych przy użyciu platformy .NET
 
-**ID:** Microsoft.VisualStudio.Workload.NetCrossPlat
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
 **Opis:** Twórz aplikacje Międzyplatformowe dla systemów iOS, Android i Windows za pomocą platformy Xamarin.
 
@@ -624,9 +623,9 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Narzędzia platformy Windows
 
 ## <a name="aspnet-and-web-development"></a>ASP.NET i tworzenie aplikacji internetowych
 
-**ID:** Microsoft.VisualStudio.Workload.NetWeb
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetWeb
 
-**Opis:** tworzenie aplikacji sieci web za pomocą programu ASP.NET, ASP.NET Core, HTML/JavaScript i kontenerów, w tym obsługę platformy Docker.
+**Opis:** Twórz aplikacje sieci web za pomocą programu ASP.NET, ASP.NET Core, HTML/JavaScript i kontenerów, w tym obsługę platformy Docker.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -712,9 +711,9 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ## <a name="nodejs-development"></a>Tworzenia aplikacji node.js
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.Node
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Node
 
-**Opis:** tworzenie skalowalnych aplikacji sieciowych przy użyciu platformy Node.js i asynchronicznego oparte na zdarzeniach środowiska uruchomieniowego JavaScript. 
+**Opis:** Tworzenie skalowalnych aplikacji sieciowych przy użyciu platformy Node.js i asynchronicznego oparte na zdarzeniach środowiska uruchomieniowego JavaScript. 
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -738,9 +737,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 w wersji 15.9 v14
 
 ## <a name="officesharepoint-development"></a>Programowanie Office/SharePoint
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.Office
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Office
 
-**Opis:** dodatków narzędzi VSTO Tworzenie pakietu Office i programu SharePoint dodatków oraz rozwiązań programu SharePoint przy użyciu języka C#, VB i JavaScript.
+**Opis:** Tworzenie dodatków narzędzi VSTO za pomocą pakietu Office i programu SharePoint dodatków oraz rozwiązań programu SharePoint C#, VB i JavaScript.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -805,9 +804,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia programistyczne pro
 
 ## <a name="python-development"></a>Programowanie w języku Python
 
-**ID:** Microsoft.VisualStudio.Workload.Python
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Python
 
-**Opis:** edycji, debugowania, interaktywne rozwoju i kontroli źródłowego dla języka Python.
+**Opis:** Edytowanie, debugowanie, opracowywanie interakcyjne oraz kontrola źródła dla języka Python.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -888,9 +887,9 @@ Microsoft.VisualStudio.ComponentGroup.Web | Wymagania wstępne dotyczące narzę
 
 ## <a name="universal-windows-platform-development"></a>Opracowywanie zawartości dla platformy Windows Universal
 
-**ID:** Microsoft.VisualStudio.Workload.Universal
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Universal
 
-**Opis:** tworzenie aplikacji dla platformy uniwersalnej Windows przy użyciu języka C#, VB, JavaScript lub opcjonalnie C++.
+**Opis:** Tworzenie aplikacji uniwersalnych platformy Windows za pomocą C#, VB, JavaScript lub opcjonalnie C++.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -936,12 +935,12 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | System Windows 10 SDK (10.
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | System Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | System Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | System Windows 10 SDK (10.0.15063.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [ARM i ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | System Windows 10 SDK (10.0.17763.0) | 15.9.28218.60 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | Połączenie urządzenia USB | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ Universal Windows Platform tools | 15.9.28107.0 | Optional
@@ -950,9 +949,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="visual-studio-extension-development"></a>Programowanie rozszerzeń programu Visual Studio
 
-**ID:** Microsoft.VisualStudio.Workload.VisualStudioExtension
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**Opis:** Utwórz dodatki i rozszerzenia programu Visual Studio, w tym nowe polecenia, analizatory kodu i okna narzędzi.
+**Opis:** Twórz dodatki i rozszerzenia dla programu Visual Studio, w tym nowe polecenia, analizatory kodu i okna narzędzi.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -986,9 +985,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 w wersji 15.9 v14
 
 ## <a name="mobile-development-with-javascript"></a>Tworzenie aplikacji mobilnych za pomocą języka JavaScript
 
-**ID:** Microsoft.VisualStudio.Workload.WebCrossPlat
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.WebCrossPlat
 
-**Opis:** tworzenia aplikacji systemu Android, iOS i platformy uniwersalnej systemu Windows przy użyciu narzędzi Tools for Apache Cordova.
+**Opis:** Twórz aplikacje systemu Android, iOS i platformy uniwersalnej systemu Windows przy użyciu narzędzi Tools for Apache Cordova.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 

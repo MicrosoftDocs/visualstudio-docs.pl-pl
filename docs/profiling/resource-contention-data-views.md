@@ -1,8 +1,6 @@
 ---
 title: Widok danych Kontencji zasobów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profilng tools,concurrency profiling method view
@@ -13,50 +11,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320ccc34840cb56646a52f82dc2eb8985fdb5da6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea7cbe0ff412e7955a4a255018e335e1ae6336da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990610"
 ---
 # <a name="resource-contention-data-views"></a>Widok danych kontencji zasobów
-Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profilera plików danych, które zawierają dane profilowania rywalizacji wątku.  
+Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane profilowania rywalizacja wątków.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Widok podsumowania - dane Kontencji profilera](../profiling/resource-contention-data-views.md)  
- Wyświetla graficzny osi czasu danych profilowania i wymieniono funkcje i zasoby, które brał udział w najbardziej blokowania zdarzenia.  
+ [Widok podsumowania - dane Kontencji Profiler](../profiling/resource-contention-data-views.md)  
+ Wyświetla graficzny oś czasu danych profilowania i wymieniono funkcje i zasoby, które brał udział w najbardziej blokowania zdarzenia.  
   
  [Widok drzewa wywołań](../profiling/call-tree-view-contention-data.md)  
- Wyświetla hierarchiczną drzewa, który reprezentuje ścieżek wykonywania i danych kontencji zasobów funkcji w przebiegu profilowania.  
+ Wyświetla hierarchiczne drzewo, które reprezentuje ścieżki wykonywania i danych kontencji zasobów funkcji podczas uruchomienia profilowania.  
   
  [Widok modułów](../profiling/modules-view-contention-data.md)  
- List funkcje wierszy kodu źródłowego i instrukcje, które były wykonywane podczas blokowania zdarzeń wystąpił i organizuje dane kontencji wątku i zasobów przez moduł.  
+ Organizuje dane rywalizacji wątków i zasobu przez moduł i wyświetla listę funkcji, wierszy kodu źródłowego i instrukcji, które były wykonywane w chwili blokowanie zdarzeń wystąpiło.  
   
- [Obiekt wywołujący / wywoływany widok - dane Kontencji](../profiling/caller-callee-view-contention-data.md)  
- Wyświetla dane kontencji wątku i zasobów dla wybranej funkcji i funkcji o nazwie, które zostały wywołane przez wybranej funkcji.  
+ [Element wywołujący / widok / / wywoływany - dane Kontencji](../profiling/caller-callee-view-contention-data.md)  
+ Wyświetla listę danych rywalizacji wątków i zasobów dla wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.  
   
  [Widok szczegółów zasobów](../profiling/resource-details-view-contention-data.md)  
- Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego zasobu contended oraz listę stosu wywołań zdarzeń blokowania.  
+ Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego zasobu rywalizacją i wyświetla stos wywołań zdarzeń blokujących.  
   
  [Widok szczegółów wątku](../profiling/thread-details-view-contention-data.md)  
- Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego wątku oraz listę stosu wywołań zdarzeń blokowania.  
+ Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego wątku i wyświetla stos wywołań zdarzeń blokujących.  
   
  [Widok funkcji](../profiling/functions-view-contention-data.md)  
- Wyświetla dane kontencji wątku i zasobów przez funkcję.  
+ Wyświetla listę danych rywalizacji wątków i zasobu przez funkcję.  
   
- [Widok Kontencji zasobów](../profiling/resource-contentions-view-contention-data.md)  
- Wyświetla listę danych kontencji zasobów przez zasób zablokowany.  
+ [Widok rywalizacji o zasoby](../profiling/resource-contentions-view-contention-data.md)  
+ Wyświetla listę danych kontencji zasobów przez zasób zablokowane.  
   
  [Widok linii](../profiling/lines-view-contention-data.md)  
- Wyświetla listę danych kontencji zasobów przez wiersz kodu źródłowego.  
+ Wyświetla listę danych kontencji zasobów według wiersza kodu źródłowego.  
   
  [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
- Wyświetla rywalizacji instrukcji.  
+ Wyświetla listę rywalizacji o zasoby według instrukcji.  
   
  [Widok procesu](../profiling/process-view-contention-data.md)  
- Wyświetla listę rywalizacji procesów i wątków.  
+ Wyświetla listę rywalizacji zasobów, procesów i wątków.  
   
 ## <a name="reference"></a>Tematy pomocy  
  [Widok szczegółów funkcji](../profiling/function-details-view.md)  
- Wyświetla wykres graficzny relacji między wybranej funkcji i funkcji o nazwie, które zostały wywołane przez wybranej funkcji.
+ Wyświetla graficzny wykres zależności między wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.

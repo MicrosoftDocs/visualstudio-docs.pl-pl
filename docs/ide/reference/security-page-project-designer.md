@@ -2,7 +2,6 @@
 title: Strona zabezpieczeń, Projektant projektu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -15,74 +14,74 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75877dfd8620af9d3fdfecb5cfcb10761a739515
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987956"
 ---
 # <a name="security-page-project-designer"></a>Strona zabezpieczeń, Projektant projektu
 
-**Zabezpieczeń** strony **projektanta projektu** służy do konfigurowania ustawień zabezpieczeń dostępu kodu dla aplikacji, które są wdrażane za pomocą [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] wdrożenia. Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
+**Zabezpieczeń** strony **projektanta projektu** służy do konfigurowania ustawień zabezpieczeń dostępu kodu dla aplikacji, które są wdrażane przy użyciu [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] wdrożenia. Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
- Aby uzyskać dostęp do **zabezpieczeń** kliknij węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** zostanie wyświetlony, kliknij przycisk **zabezpieczeń** kartę.
+ Aby uzyskać dostęp do **zabezpieczeń** kliknij węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **zabezpieczeń** kartę.
 
 ## <a name="security-settings"></a>Ustawienia zabezpieczeń
 
- **Włączanie ustawień zabezpieczeń technologii ClickOnce**
+ **Włączenie ustawień zabezpieczeń technologii ClickOnce**
 
- Określa, czy ustawienia zabezpieczeń zostały włączone w czasie projektowania. Po wyłączeniu tej opcji, wszystkie pozostałe opcje na **zabezpieczeń** strony są niedostępne.
+ Określa, czy ustawienia zabezpieczeń są włączone w czasie projektowania. Jeśli ta opcja jest wyczyszczone, wszystkie inne opcje na **zabezpieczeń** strony są niedostępne.
 
 > [!NOTE]
-> Po opublikowaniu aplikacji za pomocą **publikowania** kreatora, ta opcja jest automatycznie włączone.
+> Po opublikowaniu aplikacji za pomocą **Publikuj** kreatora, ta opcja jest automatycznie włączona.
 
 
- Po wybraniu tej opcji, masz wybór wybierając jedną z dwóch przycisków radiowych: **to jest aplikacja pełne zaufanie** lub **jest częściowo zaufanych aplikacji**.
+ Po wybraniu tej opcji, użytkownik może wybrać jedną z dwóch przycisków radiowych: **Jest to aplikacja w trybie pełnego zaufania** lub **to częściowo zaufanych aplikacji**.
 
- Domyślnie w przypadku projektów aplikacji przeglądarki sieci Web WPF ta opcja jest zaznaczona.
+ Domyślnie projektów aplikacji przeglądarki sieci Web programu WPF ta opcja jest zaznaczona.
 
  Domyślnie dla wszystkich innych typów projektów ta opcja jest zaznaczona.
 
- **To jest aplikacja pełnego zaufania**
+ **Jest to aplikacja w trybie pełnego zaufania**
 
- Jeśli wybierzesz tę opcję, aplikacji żądania uprawnień pełnego zaufania, jeśli jest zainstalowana lub uruchomić na komputerze klienckim. Unikaj przy użyciu pełnego zaufania, jeśli to możliwe, ponieważ aplikacja zostanie przyznany nieograniczony dostęp do zasobów, takich jak system plików i rejestru.
+ Jeśli wybierzesz tę opcję, aplikacja żąda uprawnień pełnego zaufania, gdy jest on zainstalowany, lub uruchomić na komputerze klienckim. Należy unikać przy użyciu pełnego zaufania, jeśli jest to możliwe, ponieważ zostanie przyznany aplikacji nieograniczony dostęp do zasobów, takich jak system plików i rejestru.
 
- Domyślnie w przypadku projektów aplikacji przeglądarki sieci Web WPF ta opcja ma ustawioną zaufania częściowego.
+ Domyślnie projektów aplikacji przeglądarki sieci Web programu WPF ta opcja jest równa częściowego zaufania.
 
- Domyślnie dla wszystkich innych typów projektów opcja jest ustawiona na pełne zaufanie.
+ Domyślnie dla wszystkich innych typów projektów ta opcja jest ustawiona na pełne zaufanie.
 
- **To jest częściowo zaufanych aplikacji**
+ **Jest to aplikacja częściowej relacji zaufania**
 
- Jeśli wybierzesz tę opcję, aplikacji żądań uprawnieniami częściowego zaufania, jeśli jest zainstalowana lub uruchomić na komputerze klienckim. *Częściowa relacja zaufania* oznacza, że tylko akcje, które są dozwolone w obszarze uprawnienia zabezpieczeń dostępu kodu żądany zostanie uruchomiony. Aby uzyskać więcej informacji na temat konfigurowania uprawnień zabezpieczeń, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
+ Jeśli wybierzesz tę opcję, aplikacja żąda uprawnień częściowego zaufania, gdy jest on zainstalowany, lub uruchomić na komputerze klienckim. *Częściowej relacji zaufania* oznacza, że będą uruchamiane tylko akcje, które są dozwolone w obszarze uprawnienia zabezpieczeń dostępu kodu żądanej. Aby uzyskać więcej informacji o sposobie konfigurowania uprawnień zabezpieczeń, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
- Można określić ustawienia zabezpieczeń częściowego zaufania, konfigurując opcje w **uprawnień zabezpieczeń ClickOnce** obszaru.
+ Możesz określić ustawienia zabezpieczeń częściowego zaufania, konfigurując opcje w **uprawnienia zabezpieczeń aplikacji ClickOnce** obszaru.
 
-## <a name="clickonce-security-permissions"></a>Uprawnienia zabezpieczeń technologii ClickOnce
+## <a name="clickonce-security-permissions"></a>Uprawnienia zabezpieczeń aplikacji ClickOnce
 
- **Strefy, aplikacja zostanie zainstalowana z**
+ **Strefy, w której aplikacja zostanie zainstalowana z**
 
- Określa domyślny zestaw uprawnień zabezpieczeń dostępu kodu. Wybierz **Internet** lub **lokalny Intranet** ograniczonych uprawnień ustawić, lub opcję **(niestandardowy)** w celu skonfigurowania uprawnień niestandardowych ustawić. Jeśli aplikacja wymaga więcej uprawnień niż przyznane w strefie, monit zaufania ClickOnce zostanie wyświetlony dla użytkownika końcowego można udzielać dodatkowych uprawnień. Aby uzyskać więcej informacji na temat konfigurowania uprawnień zabezpieczeń, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
+ Określa domyślny zestaw uprawnień zabezpieczeń dostępu kodu. Wybierz **Internet** lub **lokalny Intranet** ograniczonych uprawnień zestawu, lub opcję **(niestandardowy)** Aby skonfigurować niestandardowe uprawnienia należy ustawić. Jeśli aplikacja żąda więcej uprawnień niż udzielone w strefie, użytkownikowi końcowemu udzielać dodatkowych uprawnień pojawia się monit o udzielenie zaufania ClickOnce. Aby uzyskać więcej informacji o sposobie konfigurowania uprawnień zabezpieczeń, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
- Domyślnie projektów aplikacji przeglądarki sieci Web WPF, ta opcja jest ustawiona na **Internet**.
+ Domyślnie projektów aplikacji przeglądarki sieci Web programu WPF, ta opcja jest ustawiona na **Internet**.
 
  **Edytuj uprawnienia XML**
 
- Otwiera szablon manifestu aplikacji (app.manifest) do konfigurowania uprawnień dla **(niestandardowy)** zestaw uprawnień.
+ Otwiera szablon manifestu aplikacji (app.manifest) Aby skonfigurować uprawnienia dla **(niestandardowy)** zestaw uprawnień.
 
  **Zaawansowane**
 
- Otwiera [okno dialogowe Zaawansowane ustawienia zabezpieczeń](../../ide/reference/advanced-security-settings-dialog-box.md), który służy do konfigurowania ustawień do debugowania aplikacji z ograniczonymi uprawnieniami. Ustawienia te są sprawdzane podczas debugowania i wyjątków uprawnienia wskazują, że aplikacja może wymagać więcej uprawnień niż zdefiniowana w strefie.
+ Otwiera [okno dialogowe Zaawansowane ustawienia zabezpieczeń](../../ide/reference/advanced-security-settings-dialog-box.md), która umożliwia konfigurowanie ustawień na potrzeby debugowania aplikacji z ograniczonymi uprawnieniami. Te ustawienia są sprawdzane podczas debugowania, a uprawnienie wyjątki wskazują na to, że aplikacja może być konieczne więcej uprawnień niż zdefiniowana w strefie.
 
 ## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
 - [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)
-- [Instrukcje: włączenie ustawień zabezpieczeń technologii ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [Instrukcje: ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Instrukcje: ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Instrukcje: debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Instrukcje: Włączenie ustawień zabezpieczeń technologii ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
+- [Instrukcje: Ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Instrukcje: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../../deployment/clickonce-security-and-deployment.md)
 - [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)
 - [Zaawansowane ustawienia zabezpieczeń, okno dialogowe](../../ide/reference/advanced-security-settings-dialog-box.md)

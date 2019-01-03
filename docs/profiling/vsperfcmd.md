@@ -1,8 +1,6 @@
 ---
 title: Narzędzia VSPerfCmd | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4aa3a045b34271eb421339751aa5c763479eec0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ab432c5dfe316dc540fdfe6937263bc12abc967c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990428"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* narzędzie umożliwia uruchamianie i zatrzymywanie zbierania danych o wydajności. Używa następującej składni:  

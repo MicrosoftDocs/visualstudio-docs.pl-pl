@@ -1,9 +1,6 @@
 ---
 title: Funkcje wywołania zwrotnego implementowane przez środowisko IDE | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c76a9ef3ab81cf764d5f82fdfb9c8d6a86f24bee
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3dd5196fae42079249f0632a065aacbf504938a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990782"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkcje wywołania zwrotnego implementowane przez środowisko IDE
 Aby Integracja z usługą zintegrowanego środowiska programistycznego (IDE) jako Bezproblemowa, jak to możliwe i w celu zapewnienia ujednoliconego końcowego wtyczka do kontroli źródła można użyć funkcji wywołania zwrotnego, które są implementowane przez środowisko IDE. Wtyczka może wywołać te funkcje w odpowiednim czasie podczas operacji kontroli źródła do przekazywania informacji do IDE; IDE może następnie wyświetlić te informacje jako elementy osadzone w ich natywnym interfejsem użytkownika. Użytkownik ma zmniejszenie fragmentacji środowisko, w tym scenariuszu niż Jeśli wtyczka zatrudnionych własnego interfejsu użytkownika.  

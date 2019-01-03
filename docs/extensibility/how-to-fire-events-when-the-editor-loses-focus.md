@@ -1,9 +1,6 @@
 ---
-title: 'Porady: wyzwolenie zdarzenia po utracie fokusu przez Edytor | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyzwolenie zdarzenia po utracie fokusu przez Edytor | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d579b30c5eac25c815739149d3b3baacc22dc439
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990769"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Porady: wyzwolenie zdarzenia po utracie fokusu przez Edytor
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Instrukcje: Wyzwolenie zdarzenia po utracie fokusu przez Edytor
 Czasami zachodzi konieczność wiadomo, kiedy redaktorem traci fokus ramki okna. Na przykład może być konieczne pobierania kodu z okna kodu, po edytor nie ma już fokusu w nim. Poniższa procedura zawiera kroki, które trzeba wykonać, aby otrzymać powiadomienie o Edytorze utraci fokus.  
   
 ## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Aby wyzwolić zdarzenie w odpowiedzi na Edytor tracąc koncentracji  

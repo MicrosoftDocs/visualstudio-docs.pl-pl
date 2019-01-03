@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d2463c9c81e963494ed6865956b6e9c36934e07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988926"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Porady: tworzenie wtyczki na poziomie żądania
+# <a name="how-to-create-a-request-level-plug-in"></a>Instrukcje: Tworzenie wtyczki na poziomie żądania
 
 *Żądania* są deklaratywne instrukcje, które stanowią testów wydajności sieci web. Wtyczki sieci Web wydajności testów umożliwiają izolowanie i ponowne użycie kodu poza głównym deklaracyjne oświadczeń do testu wydajności sieci web. Można tworzyć dodatki plug-in i dodać je do pojedynczego żądania także do testu wydajności sieci web, która go zawiera. Dostosowany *wtyczkę żądania* umożliwia wywoływanie kodu podczas uruchamiania poszczególnych żądań w teście wydajności sieci web.
 
@@ -84,7 +83,7 @@ Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą test
     > [!WARNING]
     > Możesz otrzymać błąd podobny do następującego po uruchomieniu testu wydajności sieci web lub testu obciążenia, który korzysta z Twojej wtyczki:
     >
-    > **Żądanie nie powiodło się: wyjątek w \<wtyczki > zdarzeń: nie można załadować pliku lub zestawu "\<pliku dll"Nazwa wtyczki">, wersji =\<n.n.n.n >, Culture = neutral, PublicKeyToken = null" lub jednej z jego zależności. System nie może odnaleźć określonego pliku.**
+    > **Żądanie nie powiodło się: Wyjątek w \<wtyczki > zdarzenia: Nie można załadować pliku lub zestawu "\<pliku dll"Nazwa wtyczki">, wersja =\<n.n.n.n >, Culture = neutral, PublicKeyToken = null" lub jednej z jego zależności. System nie może odnaleźć określonego pliku.**
     >
     > Dzieje się tak Jeśli wprowadzasz zmiany kodu do dowolnego typu plug-ins i utworzyć nową wersję biblioteki DLL **(wersja = 0.0.0.0)**, ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
     >
@@ -126,5 +125,5 @@ namespace RequestPluginNamespace
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Kod niestandardowej reguły wyodrębniania dla testów wydajności sieci web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Kod niestandardowej reguły walidacji dla testów wydajności sieci web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
+- [Instrukcje: Tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
 - [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md)

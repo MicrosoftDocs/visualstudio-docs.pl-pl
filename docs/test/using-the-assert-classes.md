@@ -2,7 +2,6 @@
 title: MSTest assert klasy i metody
 ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - Assert classes
@@ -13,41 +12,41 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91198e9b7048b384bf2095840abbd012042025ed
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 8e6dcd374426cc8f5e7fd218ac33e570f1ef57dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989519"
 ---
-# <a name="use-assert-classes-for-unit-testing"></a>Użyj klas potwierdzeń w celu przeprowadzania testów jednostkowych
+# <a name="use-assert-classes-for-unit-testing"></a>Użyj klas potwierdzeń testów jednostkowych
 
-Użyj klasy Assert <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzeni nazw, aby sprawdzić określonych funkcji. Metody testowej jednostki wykonuje kod metody w kodzie aplikacji, ale tylko wtedy, gdy obejmują Assert-instrukcje zgłasza poprawność działania kodu.
+Korzystanie z klas potwierdzeń z <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzeni nazw w celu sprawdzenia określonych funkcji. Metodę testu jednostkowego wykonuje kod do metody w kodzie twojej aplikacji, ale raporty poprawność zachowania kodu, tylko wtedy, gdy zawierają Assert-instrukcje.
 
-## <a name="kinds-of-asserts"></a>Typy z potwierdzeń
+## <a name="kinds-of-asserts"></a>Rodzaje z asercji
 
 <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Przestrzeń nazw zawiera kilka rodzajów klas potwierdzeń.
 
-W Twojej metody testowej, można wywołać żadnych metod <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName> klas, takich jak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType>. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> Klasa ma wiele metod do wyboru, a wiele metod ma kilka przeciążeń.
+W metodzie testowej, można wywołać dowolnej metody <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName> klasy, takie jak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType>. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> Klasa ma wiele metod do wyboru, a wiele metod ma kilka przeciążeń.
 
-### <a name="compare-strings-and-collections"></a>Porównywanie ciągów i kolekcji
+### <a name="compare-strings-and-collections"></a>Porównanie ciągów i zbiorów
 
-Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> klasy porównywanie kolekcji obiektów lub Sprawdź stan kolekcji.
+Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> klasy, aby porównać kolekcje obiektów lub aby zweryfikować stan kolekcji.
 
-Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> klasę, aby porównać i sprawdź, czy ciągi. Ta klasa zawiera różne przydatne metody <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=nameWithType>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Matches%2A?displayProperty=nameWithType>, i <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.StartsWith%2A?displayProperty=nameWithType>.
+Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> klasy do porównywania i zbadać ciągów. Ta klasa zawiera różne przydatne metody <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=nameWithType>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Matches%2A?displayProperty=nameWithType>, i <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.StartsWith%2A?displayProperty=nameWithType>.
 
 ### <a name="exceptions"></a>Wyjątki
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> Wyjątek zawsze, gdy test zakończy się niepowodzeniem. Test kończy się niepowodzeniem, jeśli przekroczy limit czasu, wygeneruje nieoczekiwany wyjątek lub zawiera instrukcję assert, która powoduje **niepowodzenie**.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> Wyjątek jest zgłaszany, gdy test zakończy się niepowodzeniem. Test kończy się niepowodzeniem, jeśli przekroczy limit czasu, wygeneruje nieoczekiwany wyjątek lub zawiera instrukcję assert, która powoduje **niepowodzenie**.
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException> Jest zgłaszany, gdy test daje w wyniku **niejednoznacznego**. Zazwyczaj dodaje się <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> instrukcji do testu, który użytkownik nadal pracuje, aby wskazać, nie jest jeszcze gotowy do uruchomienia.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException> Jest generowany, gdy test wygeneruje wynik w postaci **niejednoznaczny**. Zazwyczaj dodajesz <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> instrukcję, aby test, który nadal pracujesz, aby wskazać, nie jest jeszcze gotowy do uruchomienia.
 
 > [!NOTE]
-> Strategia alternatywnych jest oznaczenie testu, który nie jest gotowy do uruchomienia z <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute> atrybutu. Ma to jednak wadą, który nie może łatwo wygenerować raport liczby testów, które nie są zaimplementowane.
+> Strategia alternatywna jest do oznaczania test, który nie jest gotowy do uruchomienia przy użyciu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute> atrybutu. Ma to jednak wadą, który nie może łatwo wygenerować raport dotyczący liczby testów, które nie są implementowane.
 
-Podczas pisania nowy assert klasy wyjątku, dziedziczą z klasy podstawowej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> aby ułatwić identyfikację wyjątku, ponieważ błąd potwierdzenia zamiast nieoczekiwany wyjątek w kodzie testowym lub produkcyjnym.
+Jeśli piszesz nowy assert klasy wyjątku, dziedziczą z klasy bazowej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> aby ułatwić identyfikację wyjątku, ponieważ wystąpił błąd asercji zamiast nieoczekiwany wyjątek zgłaszany w kodzie testowym lub produkcyjnym.
 
-Dekoracji metody testowej z <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> atrybut, jeśli chcesz, aby metody testowej, można zweryfikować, że faktycznie jest zgłaszany wyjątek może zostać zgłoszony przez metodę w kodzie aplikacji.
+Dekoracji metodę testową z <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> atrybutu, jeśli chcesz, aby metody testowej, aby sprawdzić, czy faktycznie jest zgłaszany wyjątek oczekujesz, że będzie zgłaszany przez metodę w kodzie aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 

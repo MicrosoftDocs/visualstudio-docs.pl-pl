@@ -1,8 +1,6 @@
 ---
 title: Zapoznanie z wartościami danych Instrumentacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation
@@ -12,92 +10,92 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 10353dabf0ae0e0bbee726c2f816a04c2af99f90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991100"
 ---
 # <a name="understand-instrumentation-data-values"></a>Zrozumienie wartościami danych Instrumentacji
 
-*Instrumentacji* metoda rejestruje Visual Studio profilowania szczegółowe informacje o chronometrażu dla wywołania funkcji, wierszy i instrukcje w profilowanych aplikacji
+*Instrumentacji* profilowanie metody rekordy programu Visual Studio szczegółowe informacje o czasie wywołania funkcji, wierszy i zgodnie z instrukcjami w profilowanej aplikacji
 
-Metoda Instrumentacji injects kod na początku i końcu funkcji docelowego w profilowanych danych binarnych, a przed i po każdym wywołaniu przez te funkcje do innych funkcji. Wprowadzony kod rejestruje następujące informacje:
+Metoda Instrumentacja wprowadza kod na początku i końca funkcji docelowego profilowanych plików binarnych, a przed i po każdym wywołaniu przez te funkcje do innych funkcji. Wprowadzony kod rejestruje następujące informacje:
 
-- Interwał między to zdarzenie kolekcji i poprzedni.
+- Interwał między to zdarzenie kolekcji, a poprzednią.
 
-- Określa, czy system operacyjny wykonał operację w interwale. Na przykład system operacyjny może odczytu lub zapisu na dysku, albo Przełącz między wątek docelowy i inny wątek w innym procesie.
+- Czy system operacyjny wykonał operację w interwale. Na przykład system operacyjny może odczytu lub zapisu na dysku lub przełącznika między wątek docelowy i inny wątek w innym procesie.
 
-Dla każdego interwału analizy profilera rekonstruuje stos wywołań, która znajdowała się na końcu zakresu. Stos wywołań jest lista funkcji, które są aktywne na procesora w punkcie w czasie. Tylko jednej funkcji (funkcja bieżącej) jest wykonywanie kodu; inne funkcje są łańcuch wywołań funkcji, które zakończyły się wywołanie funkcji bieżącego (stosu wywołań).
+Dla każdego interwału analizy profiler rekonstruuje stos wywołań, który nie ma pod koniec interwału. Stos wywołań znajduje się lista funkcji, które są aktywne w wyjątkach procesora w punkcie w czasie. Wykonuje kod; w tylko jednej funkcji — (bieżącej funkcji) inne funkcje są łańcuch wywołań funkcji, które wpłynęły na wywołanie funkcji bieżącej (stosu wywołań).
 
-Dla każdej funkcji w stosie wywołań podczas interwał została zarejestrowana, analizy profilera dodaje interwał do co najmniej jednej z czterech danych wartości dla funkcji. Analiza dodaje interwał do wartości danych dla funkcji, na podstawie dwóch kryteriów:
+Dla każdej funkcji na stosie wywołań zameldowania interwał analizy profiler dodaje interwał do co najmniej jednej wartości czterech danych dla tej funkcji. Analiza dodaje interwał do wartości danych dla funkcji na podstawie dwóch kryteriów:
 
-- Określa, czy interwał wystąpił w kodzie funkcji lub w *funkcji podrzędnych* (funkcja została wywołana przez funkcję).
+- Czy wystąpił interwału w kodzie, funkcji lub w *funkcji podrzędnych* (funkcja została wywołana przy użyciu funkcji).
 
-- Określa, czy wystąpiło zdarzenie systemu operacyjnego w interwale.
+- Czy wystąpiło zdarzenie systemu operacyjnego w interwale.
 
-Wartości danych dla interwału zakresu funkcję lub dane są nazywane *upłynął włącznie*, *upłynął wyłącznego*, *aplikacji włącznie*, i  *Aplikacja na wyłączność*:
+Wartości danych dla interwału zakresu funkcję lub dane są nazywane *upłynęło włącznie*, *upłynęło wyłączne*, *aplikacji włącznie*, i  *Aplikacja wyłącznie*:
 
-- Wartość danych, który upłynął włącznie mają zostać dodane interwały wszystkich funkcji.
+- Wszystkich interwałów w funkcji są dodawane do wartości danych upłynęło włącznie.
 
-- Jeśli interwał wystąpił w kodzie funkcji, a nie w funkcji podrzędnych, interwał jest dodawany do wartość danych, który upłynął wyłącznego funkcji.
+- W przypadku interwału w kodzie funkcji i nie znajduje się w funkcji podrzędnych, interwał jest dodawany do wartość danych, który upłynął wyłączne funkcji.
 
-- Jeśli zdarzenia systemu operacyjnego nie zostało przeprowadzone w danym okresie, interwał jest dodawany do aplikacji z wartościami granicznymi wartości danych.
+- Jeśli zdarzenia systemu operacyjnego nie wystąpił w danym okresie, interwał jest dodawany do wartości danych aplikacji (włącznie).
 
-- Jeśli zdarzenia systemu operacyjnego nie zostało przeprowadzone w zakresie, a interwał podczas bezpośrednie wykonywanie kodu funkcji (czyli go nie wystąpił w funkcji podrzędnego), interwał jest dodawana do aplikacji wyłącznego wartości danych.
+- Jeśli zdarzenia systemu operacyjnego nie były wykonywane w zakresie, a interwał podczas bezpośrednie wykonywanie kodu funkcji (czyli go nie wystąpił w funkcji podrzędnych), interwał zostanie dodany do aplikacji wyłączne wartości danych.
 
-Narzędzia profilowania raporty agregacji łączne wartości funkcji w sesji profilowania i procesy, wątki i pliki binarne sesji.
+Narzędzia profilowania raporty agregują sumę wartości funkcji w sesji profilowania i procesy, wątki i pliki binarne sesji.
 
-## <a name="elapsed-inclusive-values"></a>Czas wartości włącznie
+## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości
 
-Łączny czas, który został podczas wykonywania funkcji i jej funkcji podrzędnych.
+Całkowity czas, który był poświęcony na wykonywanie funkcji i jej funkcji podrzędnych.
 
-Czas wartości z wartościami granicznymi obejmują interwałów, które zostały poświęconego bezpośrednie wykonywanie kodu funkcji i interwałów, które zostały podczas wykonywania funkcji podrzędnych funkcji docelowej. Interwały funkcji i jej funkcji podrzędnych, które obejmują oczekujące dla systemu operacyjnego znajdują się również w wartości, który upłynął włącznie.
+Upłynęło włącznie wartości obejmują interwałów, które spędzono bezpośrednie wykonywanie kodu funkcji i interwały spędzono w wykonywaniu funkcji podrzędnych funkcji docelowej. Interwały funkcji i jej funkcji podrzędnych, obejmujących oczekiwania dla systemu operacyjnego znajdują się również w wartości upłynęło włącznie.
 
-## <a name="elapsed-exclusive-values"></a>Czas wartości wyłączności
+## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości
 
-Czas, jaki był poświęcony na wykonywanie funkcji, z wyłączeniem czas przeznaczony na funkcje podrzędne.
+Czas, jaki był poświęcony na wykonanie funkcji, z wyłączeniem czas spędzony w funkcjach podrzędnych.
 
-Czas wyłącznego wartości to interwałów, które zostały poświęconego bezpośrednie wykonywanie kodu funkcji, niezależnie od tego, czy wystąpiło zdarzenie systemu operacyjnego w interwale. Wszystkich interwałów w funkcji podrzędne, które zostały wywołane przez funkcję docelowych nie znajdują się w wartości, który upłynął wyłącznego.
+Czas wyłączny wartości obejmują interwałów, które spędzono bezpośrednio wykonywania kodu funkcji, niezależnie od tego, czy wystąpiło zdarzenie systemu operacyjnego w interwale. Wszystkich interwałów w funkcji podrzędnych, które zostały wywołane przez funkcję docelowej nie są uwzględnione w wartości, który upłynął wyłączności.
 
-## <a name="application-inclusive-values"></a>Wartości z wartościami granicznymi aplikacji
+## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji
 
-Czas, jaki był poświęcony na wykonywanie funkcji i jej funkcji podrzędnych, z wyłączeniem czas przeznaczony na zdarzenia systemu operacyjnego.
+Czas, jaki był poświęcony na wykonywanie funkcji i jej funkcji podrzędnych, z wyłączeniem czas spędzony w zdarzeniach systemu operacyjnego.
 
-Wartości z wartościami granicznymi aplikacji nie zawierają interwałów, które zawierają zdarzenia systemu operacyjnego. Wartości z wartościami granicznymi aplikacji obejmują wszystkich interwałów, które zostały podczas wykonywania funkcji, niezależnie od tego, czy interwał był poświęcony na bezpośrednie wykonywanie kodu funkcji lub był poświęcony w funkcjach podrzędnych funkcji docelowej.
+Wartości Włączne aplikacji nie są uwzględniane interwałów, które zawiera zdarzenia systemu operacyjnego. Wartości Włączne aplikacji obejmują wszystkich interwałów, które zostały poświęcony na wykonanie funkcji, niezależnie od tego, czy interwał był poświęcony na bezpośrednie wykonywanie kodu funkcji lub był poświęcony w funkcjach podrzędnych funkcji docelowej.
 
-## <a name="application-exclusive-values"></a>Wartości wyłącznego aplikacji
+## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji
 
-Czas, jaki był poświęcony na wykonywanie funkcji, z wyłączeniem czas przeznaczony na funkcje podrzędne i czas przeznaczony na zdarzenia systemu operacyjnego.
+Czas, jaki był poświęcony na wykonanie funkcji, z wyłączeniem czasu spędzony w funkcjach podrzędnych i czas spędzony w zdarzeniach systemu operacyjnego.
 
-Nie dołączaj wyłącznego wartości aplikacji, interwałów, które zawierają zdarzenia systemu operacyjnego lub interwałów, które zostały podczas wykonywania funkcji, które zostały wywołane przez funkcję. Wartości wyłącznego aplikacji obejmują tylko tych interwałów, które zostały poświęconego bezpośrednie wykonywanie kodu funkcji i nie zawiera zdarzeń systemu operacyjnego.
+Wartości wyłączne aplikacji nie dołączaj interwałów, które zawiera zdarzenia systemu operacyjnego lub interwałów, które zostały spędzony na wykonywaniu funkcji, które zostały wywołane przez funkcję. Wartości wyłączne aplikacji obejmują tylko tych odstępach czasu, spędzono bezpośrednio wykonywania kodu funkcji i nie zawiera zdarzenia systemu operacyjnego.
 
-## <a name="elapsed-inclusive-percent"></a>Czas procent włącznie
+## <a name="elapsed-inclusive-percent"></a>Upłynęło włącznie procent
 
-Procent upłynął włącznie wartości sum sesji profilowania będące upłynął włącznie wartości funkcji modułu, wątku lub procesu.
+Procent całkowitej upłynęło włącznie wartości sesji profilowania, które były upłynęło włącznie wartości funkcji modułu, wątek lub procesu.
 
-100 * funkcji, jaki upłynął włącznie / sesji, który upłynął włącznie
+100 * funkcja upłynęło włącznie / sesji, który upłynął (włącznie)
 
-## <a name="elapsed-exclusive-percent"></a>Czas procent wyłączności
+## <a name="elapsed-exclusive-percent"></a>Czas wyłączny procent
 
-Procent upłynął włącznie wartości sum sesji profilowania będące upłynął wyłącznego wartości funkcji modułu, wątku lub procesu.
+Procent całkowitej upłynęło włącznie wartości sesji profilowania, które były upłynęło wyłączne wartości funkcji modułu, wątek lub procesu.
 
-100 * funkcji wzajemnie dotychczasowy / sesji, który upłynął włącznie
+100 * funkcja upłynęło wyłącznie / sesji, który upłynął (włącznie)
 
-## <a name="application-inclusive-percent"></a>Procent włącznie aplikacji
+## <a name="application-inclusive-percent"></a>Całkowity procent aplikacji
 
-Procent całkowitej aplikacji włącznie wartości sesja profilowania będące aplikacji włącznie wartości funkcji modułu, wątku lub procesu.
+Procent aplikacji w ramach całościowych wartości sum sesji profilowania, które były aplikacji włącznie wartości funkcji modułu, wątek lub procesu.
 
-100 * funkcji aplikacji włącznie / sesji aplikacji włącznie
+100 * działać aplikacja włącznie / sesji aplikacji (włącznie)
 
-## <a name="application-exclusive-percent"></a>Procent wyłącznego aplikacji
+## <a name="application-exclusive-percent"></a>% Wyłącznych aplikacji
 
-Procent aplikacji włącznie wartości sum sesji profilowania będące aplikacji wyłącznego interwałów funkcji modułu, wątku lub procesu.
+Procent aplikacji w ramach całościowych wartości sum sesji profilowania, które były aplikacji wyłączne interwałów funkcji modułu, wątek lub procesu.
 
-100 * funkcji aplikacji na wyłączność / sesji aplikacji włącznie
+100 * działać aplikacja wyłącznie / sesji aplikacji (włącznie)
 
 ## <a name="see-also"></a>Zobacz także
 
 [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)  
-[Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
+[Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)

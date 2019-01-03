@@ -2,19 +2,18 @@
 title: 'Instrukcje: Kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 4087ea9d97970621a2ec8b51dc37d38f0306b0e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989020"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Instrukcje: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
 
@@ -81,5 +80,5 @@ Program elementu linqtoxmldatabinding — umożliwia użytkownikowi wyświetlani
 ## <a name="see-also"></a>Zobacz także
 
 - [Powiązanie danych WPF za pomocą LINQ to XML — przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Wskazówki: Elementu linqtoxmldatabinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Przewodnik: Elementu linqtoxmldatabinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Porady: uwzględnianie pliku danych w aplikacji ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Uwzględnianie pliku danych w aplikacji ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990217"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Porady: uwzględnianie pliku danych w aplikacji ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Instrukcje: Uwzględnianie pliku danych w aplikacji ClickOnce
 Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowania aplikacji jest przypisany do katalogu danych na dysku lokalnym komputera docelowego, gdzie aplikacja można zarządzać swoimi danymi. Pliki danych może zawierać pliki dowolnego typu: pliki tekstowe, pliki XML lub nawet bazy danych Microsoft Access (*.mdb*) plików. Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Aby dołączyć plik danych przy użyciu Mage.exe  

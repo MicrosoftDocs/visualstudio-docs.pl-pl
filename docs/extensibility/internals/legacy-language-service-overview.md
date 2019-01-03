@@ -1,9 +1,6 @@
 ---
-title: Omówienie usługi starszej wersji języka | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Omówienie usługi starszego języka | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8641a3e009cb5a7b61d8334b6dcb2440d186f4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29d98bd0e474a503b84cb21a1bca25cb2836a433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989606"
 ---
-# <a name="legacy-language-service-overview"></a>Omówienie usługi starszej wersji języka
-Usługa języka zapewnia obsługę edytora, który umożliwia wdrożenie niektórych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji. Klasy usługi języka zarządzane pakietu Framework (MPF) zapewniają pełną obsługę często używane funkcje i częściowe obsługę innych funkcji.  
+# <a name="legacy-language-service-overview"></a>Omówienie starszej wersji usługi językowej
+Usługa języka zapewnia pomoc techniczna do edytora, które umożliwia Implementowanie pewnych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji. Klasy usługi języka zarządzanego pakietu Framework (MPF) zapewniają pełną obsługę dla najczęściej używanych funkcji i częściowa Obsługa innych funkcji.  
   
-## <a name="fully-supported-features-in-the-mpf"></a>Pełni obsługiwane funkcje w MPF  
- Klasy usługi języka MPF obsługuje następujące funkcje:  
+## <a name="fully-supported-features-in-the-mpf"></a>Funkcje w pełni obsługiwana w MPF  
+ Klasy usługi w języka MPF obsługuje następujące funkcje:  
   
--   wyróżnianie składni  
+-   Wyróżnianie składni  
   
 -   Tworzenie konspektu  
   
@@ -34,35 +31,35 @@ Usługa języka zapewnia obsługę edytora, który umożliwia wdrożenie niektó
   
 -   Parowanie nawiasów klamrowych  
   
--   Wstawki kodu  
+-   Fragmenty kodu  
   
 -   Niestandardowe właściwości dokumentu  
   
--   Informacje o parametrach IntelliSense  
+-   Informacje o parametrach funkcji IntelliSense  
   
--   Informacje o szybkie IntelliSense  
+-   Funkcja IntelliSense, szybkie informacje  
   
--   IntelliSense zakończenia elementu członkowskiego  
+-   Uzupełnianie składowych funkcji IntelliSense  
   
--   Uzupełnianie word IntelliSense  
+-   Uzupełnianie wyrazów IntelliSense  
   
 ## <a name="partially-supported-features-in-the-mpf"></a>Częściowo obsługiwane funkcje w MPF  
  MPF zapewnia tylko częściowe obsługę następujących funkcji. Oznacza to, że musi implementować metody, które są wywoływane przez MPF.  
   
--   Ponowne formatowanie kodu. Należy podać kod, który implementuje ponownego formatowania.  
+-   Automatyczne formatowanie kodu. Możesz podać kod, który implementuje, ponownego formatowania.  
   
--   Sprawdzanie poprawności punktów przerwania, określając prawidłowy kod zakresów. Należy podać kod, który identyfikuje fragmentu kodu.  
+-   Sprawdzanie poprawności punktów przerwania, określając prawidłowy kod zakresów. Możesz podać kod, który identyfikuje zakresy kodu.  
   
--   Obsługa debugera **automatycznych** okna wyświetlania zmiennych. Należy podać kod, który określa, jakie do wyświetlenia w oknie.  
+-   Obsługa debugera **Autos** okna do wyświetlania zmiennych. Możesz podać kod, który określa, co do wyświetlenia w oknie.  
   
--   Obsługa **pasek nawigacyjny** Szybkie nawigowanie między typy i składniki. Wdrożenie i zwrócić klasę pomocy, które wypełnia list w **pasek nawigacyjny** pola kombi.  
+-   Obsługa **pasek nawigacyjny** Szybkie nawigowanie między typów i elementów członkowskich. Implementowanie i zwracają klasy pomocnika, która wypełnia listy w **pasek nawigacyjny** pola kombi.  
   
 ## <a name="implementation"></a>Implementacja  
- Należy wykonać kilka czynności implementowania samej usługi języka oraz funkcji usługi języka, które mają być obsługiwane dla danego języka. Te kroki opisano w następujących tematach:  
+ Należy wykonać kilka kroków dotyczących implementacji samą usługę języka i funkcji usługi języka, które mają być obsługiwane dla danego języka. W poniższych tematach omówiono następujące kroki:  
   
--   [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+-   [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [Zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+-   [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
 -   [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
@@ -84,7 +81,7 @@ Usługa języka zapewnia obsługę edytora, który umożliwia wdrożenie niektó
   
 -   [Uzupełnianie składowych w starszej wersji usługi językowej](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
--   [Informacje o parametrach w starsza wersja usługi języka](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+-   [Informacje o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
 -   [Szybkie informacje w starszej wersji usługi językowej](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
@@ -93,5 +90,5 @@ Usługa języka zapewnia obsługę edytora, który umożliwia wdrożenie niektó
 -   [Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+ [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Rozszerzalność starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-extensibility.md)

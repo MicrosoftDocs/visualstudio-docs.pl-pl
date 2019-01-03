@@ -1,9 +1,6 @@
 ---
 title: Uaktualnianie i migracja rozwiązań pakietu Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0f8a1ca1fa9c3d59b7fa95a12d08d5bb82ab422b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988368"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Uaktualnianie i migracja rozwiązań pakietu Office
   Jeśli masz projekt Microsoft Office, który został utworzony we wcześniejszej wersji programu Visual Studio, musisz uaktualnić projekt, aby używać go w bieżącej wersji programu Visual Studio. Aby uaktualnić projekt Microsoft Office, otwórz go w wersji programu Visual Studio, który zawiera narzędzia Microsoft Office developer tools. Aby uzyskać więcej informacji na temat wersji programu Visual Studio, obejmujących Microsoft Office developer tools, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,8 +85,6 @@ ms.locfileid: "50671745"
  Jeśli chcesz używać technologii ClickOnce do wdrażania dodatku narzędzi VSTO dla programów, możesz całkowicie usunąć Instalatora lub InstallShield Limited Edition projekt. Aby uzyskać więcej informacji na temat wdrażania dodatków narzędzi VSTO za pomocą technologii ClickOnce zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: rozwiązań dla uaktualnienie pakietu Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Instrukcje: Aktualizacja rozwiązań pakietu Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Okno dialogowe Opcje uaktualniania, projekt](../vsto/project-upgrade-options-dialog-box.md)  
-  
-  

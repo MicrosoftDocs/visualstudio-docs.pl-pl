@@ -1,9 +1,6 @@
 ---
 title: Wykonywanie krokowe w trybie przerwania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - break mode, stepping
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fff7edc494c763407c65785fe1de0b3fd77d7b2
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 95b4cbe8faa42e5eca87dadcb06aa604856e1b91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988861"
 ---
 # <a name="stepping-in-break-mode"></a>Wykonywanie krokowe w trybie przerwania
 W poniższej sekcji opisano proces, który występuje, gdy debuger jest w trybie przerwania, a także musi przejść przez kod:  

@@ -1,9 +1,6 @@
 ---
 title: 'Instrukcje: Zarządzanie układem formantu w okienkach akcji'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991178"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Instrukcje: Zarządzanie układem formantu w okienkach akcji
   Okienka akcji jest zadokowany po prawej stronie dokument lub skoroszyt, domyślnie; jednak może być zadokowane po lewej stronie, w górę lub w dół. Jeśli używasz wielu kontrolek użytkownika, można napisać kod, aby prawidłowo stosu kontrolki użytkownika w okienku akcji. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).  
@@ -74,5 +71,3 @@ ms.locfileid: "53647052"
  [Instrukcje: Dodaj okienko akcji do dokumentów programu Word lub Excel skoroszytów](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

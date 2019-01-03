@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,49 +12,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 735b15f76d9cb679e6fda2327e4af0dc3d84c8a0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a5cc240b6818e3d020b018546f801a3ca890a287
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988666"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
-Uzyskuje dostęp do informacji opisano proces mapowania z bloku bajtów tekstu obrazu numer wiersza pliku źródłowego.  
+Uzyskuje dostęp do informacji w tym artykule opisano proces mapowanie bloku bajtów tekst obrazu na numer wiersza pliku źródłowego.  
   
 ## <a name="syntax"></a>Składnia  
   
 ```  
-IDiaLineNumber : IUnknown  
+IDiaLineNumber : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDiaLineNumber`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Pobiera odwołanie do symbolu dla compiland, która była przyczyną bajtów tekstu obrazu.|  
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Pobiera odwołanie do symbolu dla compiland —, mówiąca bajtów tekst obrazu.|  
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Pobiera odwołanie do obiektu pliku źródłowego.|  
 |[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Pobiera numer wiersza w pliku źródłowym.|  
-|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Pobiera numer wiersza jedynki źródła, gdy kończy się instrukcja lub wyrażenie.|  
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instrukcja lub wyrażenie.|  
 |[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Pobiera numer kolumny, w którym rozpoczyna się wyrażenia lub instrukcji.|  
 |[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Pobiera numer kolumny, w którym kończy się wyrażenia lub instrukcji.|  
-|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Pobiera część sekcji adres pamięci, w którym rozpoczyna się blok.|  
-|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Pobiera przesunięcia część adresu pamięci, w którym rozpoczyna się bloku.|  
+|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Pobiera część sekcji adres pamięci, gdzie rozpoczyna się w bloku.|  
+|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Pobiera przesunięcia część adresu pamięci, gdzie rozpoczyna się w bloku.|  
 |[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Pobiera obraz wirtualny adres względny (RVA) bloku.|  
-|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Pobiera adres wirtualny (VA) bloku.|  
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Pobiera adres wirtualny (oceny luk w zabezpieczeniach) w bloku.|  
 |[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Pobiera liczbę bajtów w bloku.|  
-|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Pobiera identyfikator unikatowy źródła pliku dla pliku źródłowego, która była przyczyną tego wiersza.|  
-|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Pobiera flagę wskazującą, czy te informacje w tym artykule opisano na początku instrukcji w źródle programu.|  
-|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Pobiera unikatowy identyfikator dla compiland, która była przyczyną tego wiersza.|  
+|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Pobiera źródło Unikatowy identyfikator pliku dla pliku źródłowego, które przyczyniły się tego wiersza.|  
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Pobiera flagę wskazującą, czy te informacje w tym artykule opisano początku instrukcji w źródle programu.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Pobiera unikatowy identyfikator compiland —, które przyczyniły się tego wiersza.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Uzyskanie przez wywołanie metody tego interfejsu [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) lub [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) metody.  
+ Uzyskanie tego interfejsu, wywołując [idiaenumlinenumbers::Item —](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) lub [idiaenumlinenumbers::Next —](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) metody.  
   
 ## <a name="example"></a>Przykład  
- Następująca funkcja wyświetla numery wierszy używany w funkcji (reprezentowane przez `pSymbol`).  
+ Poniższa funkcja wyświetlają się numery wierszy używany w funkcji (reprezentowane przez `pSymbol`).  
   
 ```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  
@@ -137,14 +135,14 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
+ [Idiaenumlinenumbers::Item —](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
  [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)

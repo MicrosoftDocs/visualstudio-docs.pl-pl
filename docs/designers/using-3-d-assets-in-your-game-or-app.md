@@ -2,7 +2,6 @@
 title: Korzystanie z zasobów 3D w grach i aplikacjach
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986768"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Korzystanie z zasobów 3D w grach i aplikacjach
 
@@ -95,7 +94,7 @@ Korzystając z narzędzia potoku zawartości obrazu do tworzenia zasobów tekstu
 |**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **Bez kompresji**<br />-   **Kompresja bc1_unorm**<br />-   **Kompresja bc1_unorm_srgb**<br />-   **Kompresja bc2_unorm**<br />-   **Kompresja bc2_unorm_srgb**<br />-   **Kompresja bc3_unorm**<br />-   **Kompresja bc3_unorm_srgb**<br />-   **Kompresja bc4_unorm**<br />-   **Kompresja bc4_snorm**<br />-   **Kompresja bc5_unorm**<br />-   **Kompresja bc5_snorm**<br />-   **Kompresja bc6h_uf16**<br />-   **Kompresja bc6h_sf16**<br />-   **Kompresja bc7_unorm**<br />-   **Kompresja bc7_unorm_srgb**<br /><br /> Aby uzyskać informacje o kompresji formaty są obsługiwane w różnych wersjach programu DirectX, zobacz [przewodnik programowania w infrastrukturze dxgi](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Konwertuj na wstępnie przemnożonego alfa formatu|**Tak** konwersji obrazu wstępnie przemnożonego alfa format w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy pozostaje niezmieniony.|
 |**Generuj Mips**|**Tak** do generowania pełnego łańcucha MIP w czasie kompilacji i uwzględnić go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie zawierał łańcuch MIP; w przeciwnym wypadku plik wyjściowy będzie zawierał żadnego łańcucha MIP.|
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:** zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
+|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguracja potoku zawartości siatki
 
@@ -103,7 +102,7 @@ Gdy używasz narzędzia potoku zawartości siatki do tworzenia zawartości siatk
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:** zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
+|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Konfiguracja potoku zawartości modułu cieniującego
 
@@ -111,13 +110,13 @@ Korzystając z narzędzia potoku zawartości modułu cieniującego do tworzenia 
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:** zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
+|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Ładowanie i używanie zasobów 3D w czasie wykonywania
 
 ### <a name="use-textures-and-images"></a>Użyj teksturami i obrazami
 
-Program Direct3D oferuje funkcje tworzenia zasobów tekstur. W interfejsie Direct3D 11 Biblioteka narzędzi D3DX11 oferuje dodatkowe funkcje tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazu. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w interfejsie Direct3D 11, zobacz [tekstury](http://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji o sposobie używania biblioteki D3DX11 do utworzenia zasobu tekstury lub widoku zasobu z pliku obrazu, zobacz [porady: inicjowanie tekstury z pliku](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Program Direct3D oferuje funkcje tworzenia zasobów tekstur. W interfejsie Direct3D 11 Biblioteka narzędzi D3DX11 oferuje dodatkowe funkcje tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazu. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w interfejsie Direct3D 11, zobacz [tekstury](http://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji o sposobie używania biblioteki D3DX11 do utworzenia zasobu tekstury lub widoku zasobu z pliku obrazu, zobacz [jak: Inicjowanie tekstury z pliku](http://go.microsoft.com/fwlink/p/?LinkId=246268).
 
 ### <a name="use-3d-models"></a>Modele 3D
 
@@ -208,8 +207,8 @@ cbuffer MiscVars : register(b3)
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|
-|[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|
-|[Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|
+|[Instrukcje: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|
+|[Instrukcje: Eksportowanie tekstury wykorzystującej ma wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|
+|[Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|
 |[Praca z zasobami 3D dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Opisuje narzędzia edycji programu Visual Studio oferuje do tworzenia i manipulowania zasobami 3D, które obejmują tekstury i obrazy, modele 3D i cieniowania.|
-|[Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|
+|[Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|

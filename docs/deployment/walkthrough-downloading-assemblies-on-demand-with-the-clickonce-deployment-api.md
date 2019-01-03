@@ -1,8 +1,6 @@
 ---
-title: 'Wskazówki: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c45f600462d1862b9f50e12c5849d9d7175310a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989218"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Wskazówki: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak mogą mieć części aplikacji, które są używane w małej grupie użytkowników. W tym przypadku chcesz pobrać zestaw tylko wtedy, gdy tworzysz w jednym z jej typów. Następujące Instruktaż pokazuje, jak oznaczyć określone zestawy w aplikacji jako "opcjonalny", jak je pobrać za pomocą klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy wymagane przez środowisko uruchomieniowe języka wspólnego (CLR).  
   
 > [!NOTE]
@@ -102,7 +100,7 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Aby oznaczyć zestawów jako opcjonalne w aplikacji ClickOnce za pomocą MageUI.exe  
   
-1.  Za pomocą *MageUI.exe*, utworzyć manifest aplikacji, zgodnie z opisem w [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest aplikacji, użyj następujących ustawień:  
+1.  Za pomocą *MageUI.exe*, utworzyć manifest aplikacji, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest aplikacji, użyj następujących ustawień:  
   
     -   Nazwy w manifeście aplikacji `ClickOnceOnDemand`.  
   
@@ -110,7 +108,7 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
   
     -   Na **pliki** stronie *ClickOnceLibrary.dll* wiersz, wpisz `ClickOnceLibrary.dll` w **grupy** kolumny.  
   
-2.  Za pomocą *MageUI.exe*, utworzyć manifest wdrożenia, zgodnie z opisem w [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest wdrożenia, użyj następujących ustawień:  
+2.  Za pomocą *MageUI.exe*, utworzyć manifest wdrożenia, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest wdrożenia, użyj następujących ustawień:  
   
     -   Nazwa pliku manifestu wdrożenia `ClickOnceOnDemand`.  
   

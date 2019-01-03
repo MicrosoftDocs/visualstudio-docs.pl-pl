@@ -1,9 +1,6 @@
 ---
 title: rozwiązania programu Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b443cd985910cbb6e81ce79016193623bdeb2dd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986755"
 ---
 # <a name="word-solutions"></a>rozwiązania programu Word
   Program Visual Studio udostępnia szablony projektów, których można użyć do utworzenia dostosowań poziomu dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Word. Rozwiązania te można użyć do zautomatyzowania programu Word, Rozszerz funkcje programu Word i dostosowania interfejsu użytkownika (UI) programu Word. Aby uzyskać więcej informacji na temat różnic między dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -62,7 +59,7 @@ ms.locfileid: "35676395"
 ##  <a name="doclevel"></a> Opracowywanie dostosowań poziomu dokumentu dla programu Word  
  Dostosowania poziomu dokumentu dla programu Microsoft Office Word składa się z zestawu, który jest skojarzony z określonym dokumentem. Zestaw zazwyczaj rozszerza dokument przez dostosowanie interfejsu użytkownika i automatyzowanie programu Word. W przeciwieństwie do dodatku narzędzi VSTO, który jest skojarzony z samym programem Word, funkcja implementowana w dostosowaniu jest dostępna tylko wtedy, gdy skojarzony dokument jest otwarty w programie Word.  
   
- Aby utworzyć projekt dostosowania poziomu dokumentu dla programu Word, korzystanie z szablonów projektów dokumentów programu Word lub szablon programu Word w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Aby utworzyć projekt dostosowania poziomu dokumentu dla programu Word, korzystanie z szablonów projektów dokumentów programu Word lub szablon programu Word w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Aby uzyskać więcej informacji na temat działania dostosowań na poziomie dokumentów [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).  
   
@@ -74,7 +71,7 @@ ms.locfileid: "35676395"
 ##  <a name="applevel"></a> Tworzenie dodatków narzędzi VSTO dla programu Word  
  Dodatek narzędzi VSTO dla programu Microsoft Office Word składa się z zestawu, który jest ładowany przez program Word. Zestaw zazwyczaj rozszerza program Word przez dostosowanie interfejsu użytkownika i automatyzowanie programu Word. W przeciwieństwie do dostosowywania poziomie dokumentu, który jest skojarzony z określonym dokumentem, funkcje implementowane w dodatku narzędzi VSTO dla programów nie jest ograniczone do pojedynczego dokumentu.  
   
- Aby utworzyć projekt dodatku narzędzi VSTO dla programu Word, korzystanie z dodatku programu Word szablonów projektów w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Aby utworzyć projekt dodatku narzędzi VSTO dla programu Word, korzystanie z dodatku programu Word szablonów projektów w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Aby uzyskać ogólne informacje o współdziałaniu dodatków narzędzi VSTO dla programów, zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
@@ -92,15 +89,15 @@ ms.locfileid: "35676395"
 |Zadanie|Więcej informacji|  
 |----------|--------------------------|  
 |Dostosuj Wstążkę.|[Wstążka — omówienie](../vsto/ribbon-overview.md)|  
-|Dodaj formanty Windows Forms lub rozszerzone formanty programu Word do dokumentu niestandardowego (dla dostosowania poziomu dokumentu) lub dowolnego otwartego dokumentu (w przypadku dodatku narzędzi VSTO).|[Porady: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
+|Dodaj formanty Windows Forms lub rozszerzone formanty programu Word do dokumentu niestandardowego (dla dostosowania poziomu dokumentu) lub dowolnego otwartego dokumentu (w przypadku dodatku narzędzi VSTO).|[Instrukcje: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>Opcje dla dostosowywania poziomie dokumentu  
  Poniższej tabeli wymieniono opcje dostosowywania, które są dostępne tylko dla dostosowywania poziomie dokumentu.  
   
 |Zadanie|Więcej informacji|  
 |----------|--------------------------|  
-|Dodawanie okienek akcji do dokumentu.|[Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)<br /><br /> [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Dodaj rozszerzoną XMLNode i formanty XMLNodes do powierzchni dokumentu.|[Porady: dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Porady: dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
+|Dodawanie okienek akcji do dokumentu.|[Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)<br /><br /> [Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Dodaj rozszerzoną XMLNode i formanty XMLNodes do powierzchni dokumentu.|[Instrukcje: Dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Instrukcje: Dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
   
 ### <a name="options-for-vsto-add-ins"></a>Opcje dotyczące dodatków narzędzi VSTO  
  Poniższej tabeli wymieniono opcje dostosowywania, które są dostępne tylko dla dodatków narzędzi VSTO.  
@@ -118,7 +115,5 @@ ms.locfileid: "35676395"
 |[Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|W tym artykule opisano, jak dodać kontrolek formularzy Windows Forms do dokumentów programu Word.|  
 |[Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Pokazuje, jak utworzyć podstawowe dostosowanie poziomu dokumentu dla programu Word.|  
 |[Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Pokazuje, jak utworzyć podstawowy dodatku narzędzi VSTO dla programu Word.|  
-|[Wskazówki: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Pokazuje, jak dodać Windows Forms przycisk, a co <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu w czasie wykonywania za pomocą dodatku narzędzi VSTO.|  
+|[Przewodnik: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Pokazuje, jak dodać Windows Forms przycisk, a co <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu w czasie wykonywania za pomocą dodatku narzędzi VSTO.|  
 |[Word 2010 w rozwój pakietu Office](http://go.microsoft.com/fwlink/?LinkId=199020)|Zawiera łącza do artykułów i dokumentacji o tworzeniu rozwiązań programu Word (nie odnoszą się do rozwoju pakietu Office przy użyciu programu Visual Studio).|  
-  
-  

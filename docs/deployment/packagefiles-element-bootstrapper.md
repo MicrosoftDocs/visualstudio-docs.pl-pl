@@ -1,8 +1,6 @@
 ---
 title: '&lt;Zadaniach PackageFiles&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990350"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Zadaniach PackageFiles&gt; — element (program inicjujący)
 `PackageFiles` Element zawiera `PackageFile` elementów, które definiują pakietów instalacyjnych, wykonywane na `Command` elementu.  

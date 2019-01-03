@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_hasdebuginfo — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e442bab5b0c7670ca3b42fa24f396252a46331
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 738428e2d1d26e3f94398d3b1967f10140fd668b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985894"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 Pobiera flagę określającą, jeśli [compiland —](../../debugger/debug-interface-access/compiland.md) zawiera informacje o debugowaniu.  

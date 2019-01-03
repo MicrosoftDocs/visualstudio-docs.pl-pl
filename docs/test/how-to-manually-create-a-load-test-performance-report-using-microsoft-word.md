@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 32cdb45a57b218645e6f9eaa84c5e198aeacc620
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987644"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Instrukcje: Ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 
 Można ręcznie utworzyć raporty testu obciążenia w programie Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania wyników testu obciążeniowego i widok wykresów. Do danych, które są prezentowane w widoku podsumowania i widoku wykresy jest stosowany format HTML, podczas ich kopiowania.
 
@@ -28,7 +27,7 @@ Można ręcznie utworzyć raporty testu obciążenia w programie Microsoft Word 
 > Można kopiować zwykły tekst z widoku tabel i zrzutów ekranu z widoku szczegółów do programu Microsoft Word, ale nie ma zastosowania w formacie HTML i będzie wymagać dodatkowego formatowania i edycji.
 
 > [!TIP]
-> Można również wygenerować zorganizowane raporty programu Excel automatycznie. Aby uzyskać więcej informacji, zobacz [porady: tworzenie za pomocą programu Microsoft Excel za pomocą raportów wydajności testu obciążenia](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> Można również wygenerować zorganizowane raporty programu Excel automatycznie. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel za pomocą](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Skopiuj dane widoku podsumowania
 
@@ -46,7 +45,7 @@ Można ręcznie utworzyć raporty testu obciążenia w programie Microsoft Word 
 
 1.  W **wyniki testu obciążeniowego**, jeśli wykresy widok nie jest aktualnie wyświetlany, wybierz **wykresów** na pasku narzędzi.
 
-2.  (Opcjonalnie) Powiększ określony wykres, który chcesz skopiować do dokumentu programu Microsoft Word, jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz [porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2.  (Opcjonalnie) Powiększ określony wykres, który chcesz skopiować do dokumentu programu Microsoft Word, jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz [jak: Powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Kontrolka powiększenia widoku wykresu](../test/media/ltest_zoomcontrol.png)
 
@@ -60,4 +59,4 @@ Można ręcznie utworzyć raporty testu obciążenia w programie Microsoft Word 
 ## <a name="see-also"></a>Zobacz także
 
 - [Testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md)
-- [Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)
+- [Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

@@ -1,8 +1,6 @@
 ---
 title: Polecenie VSPerfASPNetCmd | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,VSPerfASPNETCmd
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b175cb5dd0c555aeaaafb30b7927c3fc81bff4
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: 9ed7e91579cd9e07aeda8dd355fb8880f1a4fad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987067"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** narzędzie wiersza polecenia umożliwia witryn sieci web platformy ASP.Net profilu bez konieczności ustawiania zmiennych środowiskowych, lub uruchom ponownie komputer. Użyj **VSPerfASPNetCmd.exe** zamiast [VSPerfCmd](../profiling/vsperfcmd.md) podczas profilowany witryn sieci Web platformy ASP.NET i nie są dodatkowe funkcje udostępniane przez **VSPerfCmd**. Aby uzyskać więcej informacji na temat **VSPerfASPNetCmd**, zobacz [profilowania szybkie witryn sieci web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **Polecenie VSPerfASPNetCmd** to narzędzie preferowanych wiersza polecenia do użycia podczas korzystania z Autonomiczny profiler profilowanie witryny sieci web ASP.NET.  

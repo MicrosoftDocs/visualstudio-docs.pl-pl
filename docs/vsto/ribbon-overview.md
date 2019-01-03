@@ -1,9 +1,6 @@
 ---
 title: Wstążka — omówienie
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989206"
 ---
 # <a name="ribbon-overview"></a>Wstążka — omówienie
   Wstążka jest sposób organizowania powiązane polecenia, aby były one łatwiej znaleźć. Polecenia są wyświetlane jako formanty na Wstążce. Formanty są zorganizowane w *grup* wzdłuż poziomy pasek do górnej krawędzi okna aplikacji. Powiązane grupy są zorganizowane na kartach.  
@@ -84,7 +81,7 @@ ms.locfileid: "49846367"
   
  Ponadto wszelkie domyślne bez zmian wartości właściwości nie są wyświetlane w powstałym pliku XML wstążki.  
   
- Aby uzyskać więcej informacji o sposobie eksportowania wstążki do XML, zobacz [porady: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+ Aby uzyskać więcej informacji o sposobie eksportowania wstążki do XML, zobacz [jak: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="update-the-code"></a>Aktualizowanie kodu  
  Zostanie dodany nowy plik kodu wstążki, aby **Eksploratora rozwiązań**. Ten plik zawiera klasę kodu XML wstążki. Należy utworzyć w metody wywołania zwrotnego `Ribbon Callbacks` tej klasy, aby obsłużyć akcje użytkownika, takie jak kliknięcie przycisku. Przenieś swój kod z procedur obsługi zdarzeń do tych metod wywołania zwrotnego i zmodyfikuj kod do działania z modelu programowania rozszerzalności wstążki (RibbonX). Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).  
@@ -120,20 +117,18 @@ ms.locfileid: "49846367"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)|Pokazuje, jak Dostosowywanie Wstążki aplikacji pakietu Microsoft Office, dodawanie **Wstążka (Projektant graficzny)** lub **wstążki (XML)** elementu do projektu programu pakietu Office.|  
+|[Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)|Pokazuje, jak Dostosowywanie Wstążki aplikacji pakietu Microsoft Office, dodawanie **Wstążka (Projektant graficzny)** lub **wstążki (XML)** elementu do projektu programu pakietu Office.|  
 |[Projektant wstążki](../vsto/ribbon-designer.md)|W tym artykule opisano, jak można użyć projektanta wstążki można dodać niestandardowe karty, grupy i formanty do Wstążki aplikacji pakietu Microsoft Office.|  
 |[Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Dowiesz się, jak utworzyć niestandardowe karty wstążki przy użyciu projektanta wstążki. Projektant wstążki umożliwia dodawanie i ustawianie formantów na karcie niestandardowe.|  
 |[Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md)|Omówienie modelu silnie typizowany obiekt, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania.|  
-|[Wskazówki: Aktualizowanie kontrolek na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Pokazuje, jak aktualizowanie formantów na Wstążce po załadowaniu wstążki do aplikacji pakietu Office za pomocą modelu obiektów wstążki.|  
+|[Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Pokazuje, jak aktualizowanie formantów na Wstążce po załadowaniu wstążki do aplikacji pakietu Office za pomocą modelu obiektów wstążki.|  
 |[Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Zawiera wskazówki dotyczące dostosowywania wstążki w programie Microsoft Office Outlook.|  
 |[Dostosowywanie wstążki do InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Zawiera wskazówki dotyczące dostosowywania wstążki w programie Microsoft Office InfoPath.|  
 |[Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)|Pokazuje, jak pokazywanie, ukrywanie, modyfikowania Wstążki i umożliwiają użytkownikom uruchomić kod z kontrolek w niestandardowego okienka zadań, okienka akcji lub region formularza programu Outlook.|  
-|[Porady: zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Pokazuje, jak zmiana kolejności kart na Wstążce.|  
-|[Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|Pokazuje, jak dodać grupy i formanty do wbudowanej karty.|  
-|[Porady: dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Pokazuje, jak dodać formanty do menu otwieranego po kliknięciu **pliku**.|  
-|[Porady: Dodawanie przycisk Uruchom okno dialogowe do grupy wstążki](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Pokazuje, jak dodać przycisk Uruchom okno dialogowe z żadną grupą na Wstążce.|  
-|[Instrukcje: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Pokazuje, jak w celu dostosowania wstążki w zaawansowanych sposobów eksportując przy użyciu projektanta wstążki do XML wstążki.|  
+|[Instrukcje: Zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Pokazuje, jak zmiana kolejności kart na Wstążce.|  
+|[Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|Pokazuje, jak dodać grupy i formanty do wbudowanej karty.|  
+|[Instrukcje: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Pokazuje, jak dodać formanty do menu otwieranego po kliknięciu **pliku**.|  
+|[Instrukcje: Dodaj przycisk Uruchom okno dialogowe do grupy wstążki](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Pokazuje, jak dodać przycisk Uruchom okno dialogowe z żadną grupą na Wstążce.|  
+|[Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Pokazuje, jak w celu dostosowania wstążki w zaawansowanych sposobów eksportując przy użyciu projektanta wstążki do XML wstążki.|  
 |[XML — wstążka](../vsto/ribbon-xml.md)|W tym artykule wyjaśniono, w jaki sposób dostosować wstążki za pomocą XML wstążki.|  
 |[Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Pokazuje, jak utworzyć niestandardową kartę Wstążki przy użyciu **wstążki (XML)** elementu.|  
-  
-  

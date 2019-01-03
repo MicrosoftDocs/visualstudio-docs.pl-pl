@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie polecenia do menu skrótów'
+title: 'Instrukcje: Dodawanie polecenia do menu skrótów'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987969"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Porady: dodawanie polecenia do menu skrótów
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki czemu użytkownicy mogą wykonywać zadania, które są specyficzne dla DSL. Polecenia są wyświetlane w menu kontekstowym (skrót), po kliknięciu prawym przyciskiem myszy na diagramie. Polecenie może zdefiniować i pojawia się tylko w menu w określonych okolicznościach. Na przykład możesz można uwidocznić polecenia tylko wtedy, gdy użytkownik kliknie określonych typów elementu lub elementów w określone stany.
 
  Podsumowując czynności są wykonywane w projekcie DslPackage w następujący sposób:
@@ -33,7 +32,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
    Aby uzyskać przykłady, zobacz [wizualizacji i modelowania SDK witryny sieci Web](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
->  Można również zmodyfikować zachowanie niektórych istniejących poleceń, takich jak Wytnij, Wklej, zaznacz wszystko i drukowania, poprzez zastąpienie metody CommandSet.cs. Aby uzyskać więcej informacji, zobacz [porady: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+>  Można również zmodyfikować zachowanie niektórych istniejących poleceń, takich jak Wytnij, Wklej, zaznacz wszystko i drukowania, poprzez zastąpienie metody CommandSet.cs. Aby uzyskać więcej informacji, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="defining-a-command-using-mef"></a>Definiowanie polecenia, za pomocą MEF
  Zarządzane rozszerzenia Framework (MEF) zapewnia alternatywny sposób definiowania polecenia menu w menu diagramu. Ich głównym celem jest umożliwiające DSL być rozszerzony przez Ciebie lub innych stron. Użytkowników można wybrać opcję zainstalowania tylko DSL lub zainstalować DSL i rozszerzeń. MEF zmniejsza również pracy Definiowanie polecenia menu skrótów, po początkowej pracy, aby umożliwić MEF na język DSL.
@@ -240,7 +239,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>Zdefiniuj polecenie powoduje
  Dla każdego polecenia, należy zdefiniować `OnMenu...` metodę, która wykonuje wymaganych akcji, gdy użytkownik kliknie polecenie menu.
 
- W przypadku wprowadzenia zmian do elementów modelu, należy to zrobić w transakcji. Aby uzyskać więcej informacji, zobacz [porady: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ W przypadku wprowadzenia zmian do elementów modelu, należy to zrobić w transakcji. Aby uzyskać więcej informacji, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  W tym przykładzie `ClassShape`, `ModelClass`, i `Comment` typów, które są zdefiniowane w DSL, który jest tworzony na podstawie szablonu klasy Diagram DSL.
 
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Aby uzyskać więcej informacji o tym, jak można przejść do innego obiektu w modelu oraz o sposobie tworzenia obiektów i łączy, zobacz [porady: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Aby uzyskać więcej informacji o tym, jak można przejść do innego obiektu w modelu oraz o sposobie tworzenia obiektów i łączy, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Zarejestruj się polecenia
  Powtórz w języku C# deklaracje identyfikator GUID i identyfikator wartości, które zostały wprowadzone w sekcji symbole CommandSet.vsct:
@@ -360,8 +359,8 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Zobacz też
 
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Instrukcje: modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Instrukcje: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
-- [Przykładowy kod: diagramy obwodu](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Przykładowy kod: Diagramy obwodu](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -1,13 +1,8 @@
 ---
 title: Kompilowanie i debugowanie rozwiązań SharePoint | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987197"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Kompilowanie i debugowanie rozwiązań SharePoint
   Ogólnie rzecz biorąc, kompilowania i debugowania rozwiązań programu SharePoint jest taka sama jak kompilowania i debugowania innych rodzajów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. W tematach w tej sekcji opisano różnice, które istnieją.  
@@ -39,7 +34,7 @@ ms.locfileid: "44283538"
 |Pośrednie pliki pakietu.|*\<Nazwa_projektu > \pkgobj\debug* lub  *\<nazwa_projektu > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>Kompilowanie rozwiązań SharePoint
- Aby utworzyć rozwiązanie programu SharePoint, na komputerze deweloperskim musi mieć poprawną wersję programu SharePoint server. W przeciwnym razie tworzenie rozwiązań programu SharePoint jest taka sama jak tworzenie innych rodzajów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [jak: rozwiązań SharePoint kompilacji](../sharepoint/how-to-build-sharepoint-solutions.md).  
+ Aby utworzyć rozwiązanie programu SharePoint, na komputerze deweloperskim musi mieć poprawną wersję programu SharePoint server. W przeciwnym razie tworzenie rozwiązań programu SharePoint jest taka sama jak tworzenie innych rodzajów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [jak: Kompilowanie rozwiązań SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Debugowanie i testowanie rozwiązań SharePoint
  Przed debugowaniem, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] kopie *.wsp* pakietu do serwera programu SharePoint włącza lokacji i funkcji należących do zakresu sieci Web, a w niektórych przypadkach uruchamia projektu. W innych przypadkach może być konieczne ręcznie otworzyć projekt. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint Rozwiązywanie problemów z](../sharepoint/troubleshooting-sharepoint-solutions.md) i [rozwiązań SharePoint debugowania](../sharepoint/debugging-sharepoint-solutions.md).  
@@ -57,5 +52,3 @@ ms.locfileid: "44283538"
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

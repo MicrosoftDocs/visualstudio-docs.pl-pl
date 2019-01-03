@@ -1,8 +1,6 @@
 ---
 title: Definicje elementów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990808"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wersji 2.0 umożliwia deklarację statycznych elementów w plikach projektu za pomocą [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Jednak metadane mogą być dodawane tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, element projektu o nazwie [ItemDefinitionGroup —](../msbuild/itemdefinitiongroup-element-msbuild.md) pozwala pokonać tego ograniczenia. *ItemDefinitionGroup —* umożliwiają definiowanie zestawu definicji elementu, aby dodać wartości metadanych domyślne dla wszystkich elementów w typie elementu o nazwie.  

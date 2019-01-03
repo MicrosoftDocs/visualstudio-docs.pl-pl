@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Krok 3 przewodnika podstawowe funkcje języka Python w programie Visual Studio, obejmujących okna interaktywnego REPL języka Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986833"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Korzystanie z okna interaktywnego REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Krok 3. Korzystanie z okna interaktywnego REPL
 
-**Poprzedni krok: [pisania i uruchamiania kodu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Poprzedniego kroku: [Pisanie i uruchamianie kodu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 Visual Studio **Interactive** okna dla języka Python zapewnia rozbudowane odczytu — ocena print-loop (REPL) który znacznie skraca zwykle cyklu Edycja--kompilacja--debugowanie. **Interactive** okna oferuje wszystkie funkcje środowiska REPL wiersza polecenia języka Python. Zapewnia także ją łatwo wymienić kod przy użyciu plików źródłowych w programie Visual Studio edytora, które w przeciwnym razie jest kłopotliwe przy użyciu wiersza polecenia.
 

@@ -1,9 +1,6 @@
 ---
 title: Podstawowe składniki modelu projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 91a2d4b1a1457938af9c65a91254b44245eb7824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990363"
 ---
 # <a name="project-model-core-components"></a>Podstawowe składniki modelu projektu
 Rozwiń następujące tabele w modelu projektu. Tabele zawierają krótkie opisy interfejsów i usług określonych w modelu, interfejsy i usługi związane z określonymi obiektami. Ponadto tabele szczegółowo opisano inne interfejsy, które są opcjonalne w tworzenie projektu i konserwację, w zależności od wymagań danego typu określonego projektu.  

@@ -1,8 +1,6 @@
 ---
 title: Updatemanifest — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d93e8cb6d57a0f114a7f4fa1d45342437587f2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fc6b89034815f0eb1ee5762e911c42075d115cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985566"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest — zadanie
 Aktualizuje właściwości wybranego w manifeście i rezygnuje.  

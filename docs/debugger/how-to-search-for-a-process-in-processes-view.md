@@ -1,8 +1,6 @@
 ---
-title: 'Porady: wyszukiwanie procesu w widoku procesów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyszukiwanie procesu w widoku procesów | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988757"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Porady: wyszukiwanie procesu w widoku procesów
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Instrukcje: Wyszukiwanie procesu w widoku procesów
 Możesz wyszukać określonego procesu w widoku procesów za pomocą ciągu Identyfikatora lub moduł jego procesu jako kryterium wyszukiwania. Można również określić początkową kierunek wyszukiwania. Pola w oknie dialogowym zostaną wyświetlone atrybuty wybranego procesu w drzewo procesów.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Wyszukiwanie procesu w widoku procesów  

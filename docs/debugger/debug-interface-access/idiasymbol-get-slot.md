@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_slot — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e554ac5e414ccc34d1ab66962232a263535d9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a8f56068e1278fcf1bbe6b1feb9354f229f7d09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989004"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 Pobiera numer gniazda lokalizacji. Zastosowania [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsSlot`.  
@@ -27,7 +25,7 @@ Pobiera numer gniazda lokalizacji. Zastosowania [locationtype — wyliczenie](..
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_slot (   
+HRESULT get_slot (   
    DWORD* pRetVal  
 );  
 ```  

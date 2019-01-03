@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektant O-R)'
+title: 'Przewodnik: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektant O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,18 +10,17 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdb8f4a419bfaa2d4e5d6c93bad4daede6c10990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988180"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
-[LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie typu LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
+[LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [jak: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Z tego instruktażu należy wykonać następujące zadania:
 
@@ -53,7 +52,7 @@ ms.locfileid: "49864734"
 
     |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
+    |**Identyfikator**|**int**|**False**|
     |**Typ**|**int**|**True**|
     |**Imię**|**Nvarchar(200)**|**False**|
     |**Nazwisko**|**Nvarchar(200)**|**False**|
@@ -74,7 +73,7 @@ ms.locfileid: "49864734"
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Typ**|**Imię**|**Nazwisko**|**Menedżer**|
+    |**Identyfikator**|**Typ**|**Imię**|**Nazwisko**|**Menedżer**|
     |**1**|**1**|**Anna**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -190,7 +189,7 @@ ms.locfileid: "49864734"
 ## <a name="see-also"></a>Zobacz także
 
 - [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Wskazówki: Tworzenie LINQ do klas SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Przewodnik: Tworzenie zapytań LINQ do klas SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Porady: Generowanie modelu obiektu w języku Visual Basic lub C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Instrukcje: Generowanie modelu obiektu w języku Visual Basic lubC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

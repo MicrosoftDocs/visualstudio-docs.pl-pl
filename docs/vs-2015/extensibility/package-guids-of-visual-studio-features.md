@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.assetid: f56f0356-f3ac-48bc-9674-94259e29a4df
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 862a6a0559c932ccf2bbc956cc73275a41fd7ba6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8dd168314d0fbce18f7bfebc13db19bb5d94d1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988318"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Identyfikatory GUID pakietów funkcji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

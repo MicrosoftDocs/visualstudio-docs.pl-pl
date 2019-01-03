@@ -2,7 +2,6 @@
 title: Biblioteka obrazów
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: sample
 helpviewer_keywords:
 - animation [Visual Studio]
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d4a75c8ded0db82070d04745bcc10c4083c2073
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 984f36ea98c0e61be7236407c9188211bdb2fe60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987495"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteka obrazów programu Visual Studio
 
@@ -31,7 +30,7 @@ Bibliotekę obrazów programu Visual Studio zawiera obrazy aplikacji, które poj
 
 [Pobierz bibliotekę obrazów programu Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-Biblioteka obrazów jest podzielona na pięć kategorii: wspólne elementy, działania, adnotacje, ikony i obiekty. Pliki Readme zawartych w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje o tym, jak prawidłowo używać tych obrazów w swoich aplikacjach.
+Biblioteka obrazów jest podzielona na pięć kategorii: Wspólne elementy, akcje, adnotacje, ikony i obiekty. Pliki Readme zawartych w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje o tym, jak prawidłowo używać tych obrazów w swoich aplikacjach.
 
 ## <a name="see-also"></a>Zobacz także
 

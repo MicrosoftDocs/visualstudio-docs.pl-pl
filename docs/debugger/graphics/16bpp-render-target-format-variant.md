@@ -1,8 +1,6 @@
 ---
 title: 16bpp renderowania wariant formatu docelowego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab58cbcd6644d540b7db2efb1cad59e5d80f8530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986664"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp renderowania wariant formatu docelowego
 Zestawy piksel formatu DXGI_FORMAT_B5G6R5_UNORM wszystkie elementy docelowe renderowania i Utwórz kopię buforów.  

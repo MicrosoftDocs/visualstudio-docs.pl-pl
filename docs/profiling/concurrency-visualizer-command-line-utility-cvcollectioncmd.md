@@ -1,8 +1,6 @@
 ---
 title: Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986846"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)
 Można użyć narzędzia wiersza polecenia Concurrency Visualizer (*CVCollectionCmd.exe*) aby zbierać ślady z wiersza polecenia, dzięki czemu można je przeglądać w Wizualizatorze współbieżności dla programu Visual Studio. Narzędzia można używać na komputerach, które nie mają zainstalowanego programu Visual Studio.  

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_baseSymbolId | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12b787bc5459eaa08acbffa64f1f0bd123aa9cd7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 15787528e7acae9d1bc7b1a49c15570b2c04fefe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985950"
 ---
 # <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
-Pobiera identyfikator symbolu, z której jest oparty wskaźnik.  
+Pobiera identyfikator symboli, z której opiera się wskaźnik myszy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,10 +29,10 @@ HRESULT get_baseSymbolId(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Wskaźnik do `DWORD` przechowuje identyfikator symbol, z której jest oparty wskaźnik.  
+ [out] Wskaźnik do `DWORD` zawierający identyfikator symboli, z której opiera się wskaźnik myszy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   

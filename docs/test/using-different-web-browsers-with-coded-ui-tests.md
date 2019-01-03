@@ -2,19 +2,18 @@
 title: Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986144"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Użyj innej przeglądarki za pomocą kodowanych testów interfejsu użytkownika
 
@@ -40,14 +39,14 @@ Testując aplikację internetową za pomocą przeglądarek internetowych różne
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Jak nagrywać i odtwarzać kodowane testy interfejsu użytkownika w aplikacjach internetowych przy użyciu obsługiwanych przeglądarek internetowych?
 
-**Nagrywanie:** Konstruktor kodowanego testu IU należy użyć, aby nagrać test aplikacji sieci web za pomocą programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [automatyzacji w użyciu interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
+**Rejestrowanie:** Konstruktor kodowanego testu IU należy użyć, aby nagrać test aplikacji sieci web za pomocą programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [automatyzacji w użyciu interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Nie można zarejestrować zakodowanych testów interfejsu użytkownika przy użyciu przeglądarek Google Chrome i Mozilla Firefox.
 
- **Odtwarzanie za pomocą programu Internet Explorer:** gdy przeglądarka nie jest jawnie określona, domyślnie testy zostaną uruchomione w Internet Explorer. Można jawnie określać przeglądarki, który będzie używany przez ustawienie **BrowserWindow.CurrentBrowser** właściwości w kodzie testowym. Dla programu Internet Explorer ta właściwość powinna być równa **IE** lub **programu Internet Explorer**.
+ **Odtwarzanie z programem Internet Explorer:** Przeglądarka nie jest jawnie określona, testy będą uruchamiane w programie Internet Explorer domyślnie. Można jawnie określać przeglądarki, który będzie używany przez ustawienie **BrowserWindow.CurrentBrowser** właściwości w kodzie testowym. Dla programu Internet Explorer ta właściwość powinna być równa **IE** lub **programu Internet Explorer**.
 
- **Odtwarzanie z przeglądarek sieci web innych niż Internet Explorer:** Aby odtwarzać w przeglądarkach sieci web innych niż Internet Explorer, należy zmienić właściwość BrowserWindow.CurrentBrowser w kodzie testowym na albo **Firefox** lub **dla programu Chrome** .
+ **Odtwarzanie z przeglądarek sieci web innych niż Internet Explorer:** Aby odtwarzać w przeglądarkach sieci web innych niż Internet Explorer, należy zmienić właściwość BrowserWindow.CurrentBrowser w kodzie testowym na albo **Firefox** lub **Chrome**.
 
  Aby odtwarzać testy w przeglądarkach sieci web-IE, należy zainstalować **Selenium components for Coded UI Cross Browser Testing**.
 

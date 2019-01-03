@@ -1,9 +1,6 @@
 ---
 title: Rozszerzanie okna danych wyjściowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e34a78fc06bc2b7f40129e33b6d2d78ff561c5
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 43b75c0ec7faea55d624c68f64916db96b7d11ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989312"
 ---
 # <a name="extend-the-output-window"></a>Rozszerzanie okna danych wyjściowych
-**Dane wyjściowe** okno to zbiór okienek tekstu odczytu/zapisu. Program Visual Studio zawiera te wbudowane okienka: **kompilacji**, w projektach, które komunikują się komunikaty dotyczące kompilacji i **ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje się komunikaty dotyczące środowiska IDE. Projekty odwołać się do **kompilacji** automatycznie za pomocą okienka <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metody interfejsu i programu Visual Studio zapewnia bezpośredni dostęp do **ogólne** okienko za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Usługa. Oprócz wbudowanych okienek można tworzyć i zarządzać własnych niestandardowych okienek.  
+**Dane wyjściowe** okno to zbiór okienek tekstu odczytu/zapisu. Program Visual Studio zawiera te okienka wbudowane: **Tworzenie**, w projektach, które komunikują się komunikaty dotyczące kompilacji i **ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje się komunikaty dotyczące środowiska IDE. Projekty odwołać się do **kompilacji** automatycznie za pomocą okienka <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metody interfejsu i programu Visual Studio zapewnia bezpośredni dostęp do **ogólne** okienko za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Usługa. Oprócz wbudowanych okienek można tworzyć i zarządzać własnych niestandardowych okienek.  
   
  Możesz kontrolować **dane wyjściowe** bezpośrednio za pomocą okna <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfejsów. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Interfejs, który jest oferowany przez <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> usługi, definiuje metody do tworzenia, pobierania i niszczenie **dane wyjściowe** okienka. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Interfejs definiuje metody wyświetlanie okienek, ukrywanie okienka i manipulowania ich tekst. Alternatywny sposób kontrolowania **dane wyjściowe** okno jest za pośrednictwem <xref:EnvDTE.OutputWindow> i <xref:EnvDTE.OutputWindowPane> obiekty w modelu obiektów automatyzacji usługi Visual Studio. Te obiekty hermetyzują prawie wszystkie funkcje <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfejsów. Ponadto <xref:EnvDTE.OutputWindow> i <xref:EnvDTE.OutputWindowPane> obiektów dodać niektóre funkcje wyższego poziomu, aby ułatwić wyliczyć **dane wyjściowe** okienka i pobrać tekst z okienka.  
   
@@ -150,7 +147,7 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- Jeśli dodasz tę metodę rozszerzenia, podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony w oknie danych wyjściowych z nagłówkiem, który jest wyświetlany komunikat **Pokaż dane wyjściowe: nowe okienko** i wyrazy **dodano okienko utworzone** w okienku sam. Jeśli klikniesz **wywołania TestOutput** polecenie ponownie, okienko zostanie usunięty.  
+ Jeśli dodasz tę metodę rozszerzenia, podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony w oknie danych wyjściowych z nagłówkiem, który jest wyświetlany komunikat **Pokaż dane wyjściowe: Nowe okienko** i wyrazy **dodano okienko utworzone** w okienku sam. Jeśli klikniesz **wywołania TestOutput** polecenie ponownie, okienko zostanie usunięty.  
   
 ## <a name="get-the-general-pane-of-the-output-window"></a>Pobierz ogólne okienka w oknie danych wyjściowych  
  W tym przykładzie pokazano, jak uzyskać wbudowane **ogólne** okienku **dane wyjściowe** okna.  

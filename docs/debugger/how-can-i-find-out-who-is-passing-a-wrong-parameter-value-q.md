@@ -2,7 +2,6 @@
 title: Dowiedz się, kto przekazuje błędną wartość parametru | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parameters
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164ca15cfc508b952ccfe2f986892c0801fd1539
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ffcff71a8897796d64c608df698932da4fd9774f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059369"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988099"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Jak można sprawdzić, kto przekazuje błędną wartość parametru?
 ## <a name="problem-description"></a>Opis problemu  
@@ -50,7 +49,7 @@ ms.locfileid: "53059369"
   
 6.  Teraz ponownie uruchom program. Punkt przerwania powoduje zatrzymanie programu na początku funkcji podczas `Var` parametr ma wartość `3`.  
   
-7.  Okno stosu wywołań służy do znajdowania funkcji wywołującej i przejdź do jego kod źródłowy. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Okno stosu wywołań służy do znajdowania funkcji wywołującej i przejdź do jego kod źródłowy. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

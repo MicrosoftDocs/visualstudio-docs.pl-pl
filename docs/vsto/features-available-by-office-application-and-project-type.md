@@ -1,9 +1,6 @@
 ---
 title: Typ funkcji według aplikacji pakietu Office i projekt
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986404"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Typ funkcji według aplikacji pakietu Office i projekt
   Program Visual Studio zawiera kilka typów szablonów projektu obsługi różnych scenariuszy biznesowych aplikacji pakietu Microsoft Office, w tym następujących typów:  
@@ -77,5 +74,3 @@ ms.locfileid: "53648155"
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Dane w pamięci podręcznej dostosowywane na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
-  
-  

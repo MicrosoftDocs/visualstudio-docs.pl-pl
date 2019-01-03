@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Wyświetlanie uzupełniania instrukcji | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986638"
 ---
-# <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie uzupełniania
+# <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie uzupełniania instrukcji
 Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez określenie identyfikatorów, dla których chcesz udostępnić uzupełniania i następnie wyzwalania sesja kończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości, a następnie Wyświetl uzupełnianie po prostu tego typu. Lub możesz wyzwolić zakończenia dla istniejącego typu zawartości — na przykład "plaintext". W tym przewodniku pokazano, jak wyzwolić uzupełniania instrukcji dla typu zawartości "w postaci zwykłego tekstu", który jest typem zawartości pliki tekstowe. Typ zawartości "text" jest element nadrzędny elementu wszystkich innych typów zawartości, w tym kodu i pliki XML.  
   
  Uzupełnianie instrukcji jest zazwyczaj wyzwalany po wpisaniu niektórych znaków — na przykład, wpisując początku identyfikatora takiego jak "za pomocą". Zazwyczaj jest odrzucane, naciskając klawisz **spacja**, **kartę**, lub **Enter** klucz, aby potwierdzić wybór. Możesz zaimplementować funkcje IntelliSense, które mogą powodować podczas pisania znak za pomocą obsługi poleceń dla naciśnięcia klawiszy ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu) i dostawcy programu obsługi, który implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfejsu. Aby utworzyć źródło uzupełniania, w którym znajduje się lista identyfikatorów, które uczestniczą w uzupełniania, należy zaimplementować <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfejsu i dostawcy źródła ukończenia ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfejsu). Dostawcy są składnikami Managed Extensibility Framework (MEF). Są one odpowiedzialny za eksportowanie klas źródłowych i kontrolera i importowanie usługi i brokerzy — na przykład <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, które umożliwia nawigacji w buforze tekstu i <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, który wyzwala sesja kończenia.  
@@ -205,4 +202,4 @@ Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez okr
 4.  Podczas wpisywania najpierw "a", a następnie "d" powinna zostać wyświetlona lista zawierająca "Dodawanie" i "dostosowanie". Należy zauważyć, że wybrano dodawania. Podczas wpisywania tekstu "d", lista może zawierać tylko "dodatkowe", który jest zaznaczony. Możesz zatwierdzić "dodatkowe", naciskając klawisz **spacja**, **kartę**, lub **Enter** klucza lub odrzucić listę, wpisując Esc lub dowolny inny klawisz.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wskazówki: Łączenie typu zawartości na rozszerzenie nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

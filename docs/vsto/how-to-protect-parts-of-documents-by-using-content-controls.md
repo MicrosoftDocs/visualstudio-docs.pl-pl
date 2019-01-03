@@ -1,9 +1,6 @@
 ---
-title: 'Porady: ochrona części dokumentów za pomocą formantów zawartości'
-ms.custom: ''
+title: 'Instrukcje: Ochrona części dokumentów za pomocą formantów zawartości'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989260"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Porady: ochrona części dokumentów za pomocą formantów zawartości
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Instrukcje: Ochrona części dokumentów za pomocą formantów zawartości
   W przypadku ochrony części dokumentu, można uniemożliwić użytkownikom zmienianie lub usuwanie zawartości w tej części dokumentu. Istnieje kilka sposobów, w części dokumentu Microsoft Word pakietu Office można chronić za pomocą formantów zawartości:  
   
 - Można chronić zawartość formantu.  
@@ -40,7 +37,7 @@ ms.locfileid: "49850363"
 ##  <a name="EditDeleteControl"></a> Ochrona zawartości kontrolki  
  Można uniemożliwić użytkownikom edytowanie lub usuwanie zawartości formantu przez ustawienie właściwości formantu w projekcie na poziomie dokumentu, w czasie projektowania lub w czasie wykonywania.  
   
- Umożliwia również ochronę formanty zawartości, które dodajesz do dokumentu w czasie wykonywania za pomocą projektu dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ Umożliwia również ochronę formanty zawartości, które dodajesz do dokumentu w czasie wykonywania za pomocą projektu dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 ### <a name="to-protect-a-content-control-at-design-time"></a>Aby chronić zawartość formantu w czasie projektowania  
   
@@ -85,7 +82,7 @@ ms.locfileid: "49850363"
 2.  Na wstążce kliknij **Developer** kartę.  
   
     > [!NOTE]  
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  W **kontrolki** grupy, kliknij przycisk **grupy** przycisk listy rozwijanej, a następnie kliknij **grupy**.  
   
@@ -108,8 +105,7 @@ ms.locfileid: "49850363"
 ## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Formanty zawartości](../vsto/content-controls.md)   
- [Porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)   
  [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-   

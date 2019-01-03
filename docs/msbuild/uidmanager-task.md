@@ -1,8 +1,6 @@
 ---
 title: Uidmanager — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59bcb413ab391f74f9d2713fe87b4384e30cc0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93b3c571d8c68eee8ee00475fad8bda2b5b2ec65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989137"
 ---
 # <a name="uidmanager-task"></a>Uidmanager — zadanie
 <xref:Microsoft.Build.Tasks.Windows.UidManager> Zadanie sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] elementy, które znajdują się w źródle [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików.  
@@ -62,4 +60,4 @@ ms.locfileid: "49844565"
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
- [Porady: lokalizowanie aplikacji](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+ [Instrukcje: Lokalizowanie aplikacji](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

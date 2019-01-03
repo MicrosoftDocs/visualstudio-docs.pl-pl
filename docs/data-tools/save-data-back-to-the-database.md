@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989136"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 
@@ -49,7 +48,7 @@ Jeśli znasz TableAdapters, możesz przejść bezpośrednio do jednego z tych te
 |[Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Jak przeprowadzić aktualizacje z TableAdapters|
 |[Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)|Jak przeprowadzić aktualizacje z zestawu danych przy użyciu dwóch lub więcej powiązanych tabel|
 |[Obsługiwanie wyjątku współbieżności](../data-tools/handle-a-concurrency-exception.md)|Jak obsługiwać wyjątki, gdy dwóch użytkowników podejmują próby zmiany te same dane w bazie danych, w tym samym czasie|
-|[Porady: zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)|Jak zapisać danych w ramach transakcji przy użyciu systemu. Transactions — przestrzeń nazw i obiekt elementu TransactionScope|
+|[Instrukcje: Zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)|Jak zapisać danych w ramach transakcji przy użyciu systemu. Transactions — przestrzeń nazw i obiekt elementu TransactionScope|
 |[Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)|Przewodnik, który pokazuje tworzenie aplikacji Windows Forms, aby zademonstrować zapisywanie danych do bazy danych w obrębie transakcji|
 |[Zapisywanie danych w bazie danych (wiele tabel)](../data-tools/save-data-to-a-database-multiple-tables.md)|Jak edytować rekordy i zapisać zmiany w wielu tabel w bazie danych|
 |[Zapisywanie danych z obiektu w bazie danych](../data-tools/save-data-from-an-object-to-a-database.md)|Sposób przekazywania danych z obiektu, który nie jest w zestawie danych do bazy danych za pomocą TableAdapter dbdirect — metody|
@@ -281,4 +280,4 @@ W instrukcji UPDATE należy określić zarówno nowe wartości (te, które będ�
 - [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Sprawdzanie poprawności danych](validate-data-in-datasets.md)
-- [Porady: Dodawanie, modyfikowanie i usuwanie jednostek (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

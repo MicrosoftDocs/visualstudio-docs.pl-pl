@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc260fe45bf4c6cf801718c2f4c3bbaa98842dd6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986729"
 ---
 # <a name="walkthrough-display-signature-help"></a>Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur
 Pomocy dotyczącej sygnatur (znany także jako *Parameter Info*) Wyświetla podpis metody w etykietce narzędzia, gdy użytkownik wpisuje znak start listy parametrów (zazwyczaj nawias otwierający). Jako parametr i separator parametru (zazwyczaj przecinek) mają typ, etykietki narzędzia jest aktualizowana w celu wyświetlenia następny parametr pogrubioną czcionką. Pomoc podpisu można zdefiniować w następujący sposób: w kontekście usługi językowej zdefiniować własne rozszerzenia nazwy pliku i typu zawartości i wyświetlić Pomoc podpisu dla właśnie tego typu lub Wyświetl Pomoc podpisu dla istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak wyświetlić Pomoc podpisu dla typu zawartości "text".  
@@ -248,4 +245,4 @@ Pomocy dotyczącej sygnatur (znany także jako *Parameter Info*) Wyświetla podp
 4.  Po wpisaniu nawiasu otwierającego, powinien zostać wyświetlony etykietkę narzędzia, która wyświetla listę dwóch sygnatury `add()` metody.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wskazówki: Łączenie typu zawartości na rozszerzenie nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

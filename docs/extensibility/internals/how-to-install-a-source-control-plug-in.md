@@ -1,9 +1,6 @@
 ---
-title: 'Porady: Instalowanie wtyczki kontroli źródła | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Instalowanie wtyczki kontroli źródła | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3487c796661a8194b9c920f43bae9df87f1ba57d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1e7e60819b9ac10308be26a1f3ea3243cc71c34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990506"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>Porady: Instalowanie wtyczki kontroli źródła
+# <a name="how-to-install-a-source-control-plug-in"></a>Instrukcje: Instalowanie wtyczki kontroli źródła
 Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:  
 
 1. Utworzyć bibliotekę DLL przy użyciu funkcji zdefiniowanych w sekcji odwołanie interfejsu API wtyczki kontroli źródła w niniejszej dokumentacji.  
@@ -42,7 +39,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
     Na przykład, jeśli nazwa firmy to Microsoft produktu kontroli źródła o nazwie SourceSafe, ta ścieżka rejestru będzie **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. W tym podkluczu pierwszy wpis **SCCServerName**, jest ciąg czytelny dla użytkownika nazwy produktu. Drugi wpis **SCCServerPath**, jest pełna ścieżka do źródła kontrolować IDE powinny łączyć się z biblioteki DLL dodatku plug-in. Poniżej przedstawiono przykładowe wpisy rejestru:  
 
-   |Przykładowy wpis w rejestrze|Przykładowa wartość|  
+   |Przykładowy wpis w rejestrze|Wartość przykładowa|  
    |---------------------------|------------------|  
    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerName|Microsoft Visual SourceSafe|  
    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|*c:\vss\win32\ssscc.dll*|  
@@ -60,7 +57,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
       **DisableSccManager** jest wartość DWORD i ustawiono *0* umożliwiające **Uruchom \<serwera kontroli źródła >** opcji menu równa *1* do Wyłącz opcję menu, a następnie ustaw *2* spowoduje ukrycie opcji menu. Jeśli nie ma tego wpisu rejestru, zachowanie domyślne jest do wyświetlenia opcji menu.  
 
-   | Przykładowy wpis rejestru | Przykładowa wartość |
+   | Przykładowy wpis rejestru | Wartość przykładowa |
    | - |--------------|
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
@@ -72,7 +69,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
     Oto przykłady tego podklucza.  
 
-   |Wpis rejestru|Przykładowa wartość|  
+   |Wpis rejestru|Wartość przykładowa|  
    |--------------------|------------------|  
    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|  
 
@@ -85,7 +82,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
     Na przykład:  
 
-   |Przykładowy wpis rejestru|Przykładowa wartość|  
+   |Przykładowy wpis rejestru|Wartość przykładowa|  
    |---------------------------|------------------|  
    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|  
 

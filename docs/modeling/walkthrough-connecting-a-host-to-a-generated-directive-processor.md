@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: łączenie hosta z generowanym procesorem dyrektywy'
+title: 'Przewodnik: Łączenie hosta z generowanym procesorem dyrektywy'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,24 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3340c9e820103cc286915fe50f105d202eb8c8f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988796"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Przewodnik: łączenie hosta z wygenerowanym procesorem dyrektywy
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Przewodnik: Łączenie hosta z generowanym procesorem dyrektywy
 
-Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podstawowe niestandardowego hosta jest przedstawiona w [wskazówki: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md). Można rozszerzyć tego hosta, aby dodać funkcje, takie jak Generowanie wiele plików wyjściowych.
+Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podstawowe niestandardowego hosta jest przedstawiona w [instruktażu: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md). Można rozszerzyć tego hosta, aby dodać funkcje, takie jak Generowanie wiele plików wyjściowych.
 
 W tym przewodniku rozwiń niestandardowy host tak, aby go obsługuje szablony tekstowe, które wywołują procesory dyrektyw. Podczas definiowania języka specyficznego dla domeny generuje *procesora dyrektywy* dla modelu domeny. Procesor dyrektywy ułatwia użytkownikom na zapis szablony uzyskujących dostęp do modelu, co eliminuje konieczność pisania zestawu i Importuj dyrektywy w szablonach.
 
 > [!NOTE]
-> W tym przewodniku opiera się na [wskazówki: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md). Najpierw zadań z tego przewodnika.
+> W tym przewodniku opiera się na [instruktażu: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md). Najpierw zadań z tego przewodnika.
 
 Ten instruktaż zawiera następujące zagadnienia:
 
@@ -52,7 +51,7 @@ Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Ponadto konieczne jest posiadanie przekształcenia szablonu tekstu niestandardowego, które są tworzone w [wskazówki: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Ponadto konieczne jest posiadanie przekształcenia szablonu tekstu niestandardowego, które są tworzone w [instruktażu: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 ## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Użyj narzędzia języka specyficznego dla domeny, aby wygenerować procesora dyrektywy
 
@@ -62,13 +61,13 @@ W tym przewodniku umożliwia Kreator projektanta języka specyficznego dla domen
 
    -   Nazwa: DSLMinimalTest
 
-   -   Szablon rozwiązania: minimalne języka
+   -   Szablon rozwiązania: Minimalny języka
 
    -   Rozszerzenie pliku: min
 
-   -   Nazwa firmy: Fabrikam
+   -   Nazwa firmy: Firma Fabrikam
 
-   Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [jak: Tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
@@ -89,7 +88,7 @@ W tym przewodniku umożliwia Kreator projektanta języka specyficznego dla domen
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Łączenie niestandardowego hosta szablonu tekstu z procesorem dyrektywy
 
-Po wygenerowaniu procesor dyrektywy łączenia procesora dyrektywy i hosta szablonu tekstu niestandardowego, który został utworzony w [wskazówki: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Po wygenerowaniu procesor dyrektywy łączenia procesora dyrektywy i hosta szablonu tekstu niestandardowego, który został utworzony w [instruktażu: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 1.  Otwórz rozwiązanie CustomHost.
 

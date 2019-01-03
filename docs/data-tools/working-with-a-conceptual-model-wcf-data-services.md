@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d49df542dbd134a6164e582459978bb2ef1aee3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989649"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (WCF Data Services)
 
@@ -30,8 +29,8 @@ Korzystając z modelu koncepcyjnego do opisu danych w bazie danych, można tworz
 
 | Temat | Opis |
 | - | - |
-| [Porady: wykonywanie zapytań usługi danych](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Pokazuje sposób tworzenia zapytań względem usługi danych z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikacji. |
-| [Porady: projekt wyników zapytania](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych. |
+| [Instrukcje: Wykonywanie zapytań usługi danych](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Pokazuje sposób tworzenia zapytań względem usługi danych z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikacji. |
+| [Instrukcje: Projekt wyników zapytania](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych. |
 
  Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane jest prawidłowy w języku, który pasuje do Twojej domeny. Można zdefiniować prawidłowe dane w modelu, lub można dodać sprawdzanie poprawności do operacji wykonywanych w usłudze jednostki lub danych.
 
@@ -39,14 +38,14 @@ Korzystając z modelu koncepcyjnego do opisu danych w bazie danych, można tworz
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Porady: Intercept Data Service wiadomości](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Pokazuje, jak dodać sprawdzanie poprawności do operacji usługi danych.|
+|[Instrukcje: Przechwytywanie wiadomości usługi danych](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Pokazuje, jak dodać sprawdzanie poprawności do operacji usługi danych.|
 
  W następujących tematach opisano sposób tworzenia, aktualizacji i usuwania danych, wykonując operacje na jednostkach.
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Porady: Dodawanie, modyfikowanie i usuwanie jednostek](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Pokazuje, jak tworzenie, aktualizowanie i usuwanie danych jednostki w usłudze danych.|
-|[Porady: Definiowanie relacji jednostek](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Pokazuje, jak tworzyć lub zmieniać relacje w niej danych.|
+|[Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Pokazuje, jak tworzenie, aktualizowanie i usuwanie danych jednostki w usłudze danych.|
+|[Instrukcje: Definiowanie relacji jednostek](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Pokazuje, jak tworzyć lub zmieniać relacje w niej danych.|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -2,7 +2,6 @@
 title: Zastąp — Polecenie
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replace
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b712ee88526585d24ffd7b22fadbbf015c3d131
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b058b57897c369b4f7cc54b849d9abea3a1b6b15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989234"
 ---
 # <a name="replace-command"></a>Zastąp — Polecenie
-Zamienia tekst w plikach za pomocą podzbiór opcje dostępne na **Zastąp w plikach** karcie **Znajdź i Zamień** okna.
+Zastępuje tekst w plikach za pomocą podzestawu opcji dostępnych w **Zamień w plikach** karcie **Znajdź i Zamień** okna.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,7 +39,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  `replacewith`
 
- Wymagana. Tekst do zastąpienia dla dopasowanego tekstu.
+ Wymagana. Tekst do podstawienia w dopasowany tekst.
 
 ## <a name="switches"></a>Przełączniki
  / all lub /a
@@ -49,54 +48,54 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  /Case lub /c
 
- Opcjonalna. Dopasowań występuje tylko wtedy, gdy po wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.
+ Opcjonalna. Dopasowuje występują tylko wtedy, gdy po wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.
 
  / doc lub /d
 
- Opcjonalna. Wyszukuje tylko bieżącego dokumentu. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+ Opcjonalna. Wyszukuje w bieżącym dokumencie. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
 
- / hidden lub /h
+ / ukryte lub/h
 
- Opcjonalna. Wyszukiwanie tekstu ukryte i zwinięte, takich jak metadanych formant czasu projektowania, ukryty obszar konspektu dokumentu lub zwinięte klasy lub metody.
+ Opcjonalna. Wyszukiwanie ukryte i zwiniętego tekstu, takich jak metadane kontroli czasu projektowania, ukryty region konspektu dokumentu lub zwinięty klasy lub metody.
 
  / Open lub /o
 
- Opcjonalna. Przeszukuje wszystkie otwarte dokumenty, tak jakby były to jeden dokument. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+ Opcjonalna. Przeszukuje wszystkie otwarte dokumenty, jakby pochodziły z jednego dokumentu. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
 
- / Options lub /t
+ / Options lub/t
 
- Opcjonalna. Wyświetla listę bieżące ustawienia opcji wyszukiwania, a nie przeprowadza wyszukiwanie.
+ Opcjonalna. Wyświetla listę bieżących ustawień opcji wyszukiwania, a nie wyszukiwania.
 
  /proc lub /p
 
  Opcjonalna. Wyszukuje bieżącą procedurę. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
 
- /regex lub /r
+ /regex lub/r
 
- Opcjonalna. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji reprezentujących wzorce tekstu, a nie literał znaków. Pełną listę znaków wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
+ Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji, które reprezentują wzorców tekstu, a nie jako znaki literału. Aby uzyskać pełną listę znaki wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
 
- / Reset lub/e
+ / Reset i/e
 
- Opcjonalna. Zwraca opcje Znajdź do ustawień domyślnych i nie wykonuje wyszukiwanie.
+ Opcjonalna. Zwraca opcje wyszukiwania do ustawień domyślnych, a nie wyszukiwania.
 
- /SEL lub/s
+ /SEL lub /s
 
- Opcjonalna. Wyszukuje tylko bieżące zaznaczenie. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+ Opcjonalna. Wyszukuje w bieżącym zaznaczeniu. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
 
  /Up lub /u
 
- Opcjonalna. Wyszukiwanie z bieżącej lokalizacji w pliku w kierunku do góry pliku. Domyślnie wyszukiwanie rozpoczyna się w bieżącej lokalizacji w pliku i wcześniejszym kierunku końca pliku.
+ Opcjonalna. Wyszukiwanie w bieżącej lokalizacji w pliku w górnej części pliku. Domyślnie wyszukiwanie rozpoczyna się w bieżącej lokalizacji w pliku i Zaawansowane w kierunku końca pliku.
 
  /Wild lub/l
 
- Opcjonalna. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji do reprezentowania znaków ani sekwencji znaków.
+ Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji do reprezentowania znaku lub sekwencji znaków.
 
- opcji lub /w
+ opcji lub Wn
 
- Opcjonalna. Wyszukuje tylko całe wyrazy.
+ Opcjonalna. Wyszukiwanie tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie zastępuje `btnSend` z `btnSubmit` we wszystkich otwieranie dokumentów.
+ W tym przykładzie zastępuje `btnSend` z `btnSubmit` we wszystkich otwartych dokumentach.
 
 ```
 >Edit.Replace btnSend btnSubmit /open
@@ -106,6 +105,6 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 - [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

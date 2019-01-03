@@ -1,8 +1,6 @@
 ---
 title: 'Instrukcje: Instalowanie autonomiczny Profiler | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f8f4204a48a9846a6193c6b8b60c3ef321816e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 2f5068ff6b167e9cfda14799f799a397a322ff3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987119"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomicznego profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia w wierszu polecenia zależności autonomicznym programem profilującym, które mogą być uruchamiane bez konieczności instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Ta sytuacja występuje, gdy komputer nie obsługuje lub nie może mieć zainstalowane środowisko programistyczne. Na przykład nie należy instalować Środowisko deweloperskie na serwerze sieci web w środowisku produkcyjnym.  
@@ -56,6 +54,6 @@ ms.locfileid: "53648671"
 ## <a name="see-also"></a>Zobacz także  
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [Przewodnik: Wiersza polecenia, profilowania przy użyciu metody próbkowania](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Przewodnik: Wiersza polecenia, profilowania przy użyciu metody Instrumentacji](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Przewodnik: Wiersza polecenia, profilowania przy użyciu metody Instrumentacji](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)   
  [Instrukcje: Informacje o symbolach Windows odwołania](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

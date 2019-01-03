@@ -1,8 +1,6 @@
 ---
-title: Cvisenabled — funkcja | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Funkcja CvIsEnabled | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvIsEnabledEx
@@ -16,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1555703c92695090a3c8ac7b04e7a35dadcd7627
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0c35fc883e53e1b1cc430724d87d8bcbd1bb32ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989193"
 ---
 # <a name="cvisenabled-function"></a>Cvisenabled — funkcja
-Określa, czy dowolnej sesji jest włączony określonego dostawcy ETW.  
+Określa, czy dowolnej sesji ma włączone określonego dostawcy funkcji ETW.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,13 +45,13 @@ HRESULT CvIsEnabledEx(
  Poziom ważności.  
   
  `pProvider`  
- Obiekt prawidłowego dostawcy. Nie może mieć wartości NULL.  
+ Obiekt dostawcy prawidłowe. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość S_OK, gdy dostawca jest aktualnie włączony. Wartości S_FALSE, jeśli dostawca jest wyłączony. Kod błędu w przypadku, gdy było żadnych błędów. Użyć makra nie można sprawdzić warunku błędu, a następnie wyszukaj S_OK/S_FALSE.  
+ S_OK, jeśli dostawca jest obecnie włączona. S_FALSE, jeśli dostawca jest obecnie wyłączona. Kod błędu w przypadku, gdy było żadnych błędów. Aby Sprawdź, czy warunek błędu, a następnie wyszukaj S_OK/S_FALSE, należy użyć makra nie powiodło się.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

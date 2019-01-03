@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_samplerSlot | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c51cce25c6bf4ec12c981a0a342a56451eff416
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f48731c7c7abdcd0eb36f24b8d49eead0247cbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985712"
 ---
 # <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
-Pobiera miejsca przykłady.  
+Pobiera miejsca próbnika.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,10 +29,10 @@ HRESULT get_samplerSlot(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Wskaźnik do `DWORD` przechowuje miejsca przykłady.  
+ [out] Wskaźnik do `DWORD` zawierający miejsce próbnika.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

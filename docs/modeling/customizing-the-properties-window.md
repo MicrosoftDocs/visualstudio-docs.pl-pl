@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987343"
 ---
 # <a name="customizing-the-properties-window"></a>Dostosowywanie okna właściwości
 W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostosować wygląd i zachowanie w oknie właściwości. W definicji DSL definiuje się właściwości domeny na każdej klasy domeny. Domyślnie po wybraniu wystąpienia klasy w diagramie lub w Eksploratorze modelu, dla każdej właściwości domeny znajduje się w oknie dialogowym właściwości. Dzięki temu można wyświetlić i edytować wartości właściwości domeny, nawet jeśli ma nie mapowane do pól kształtów na diagramie.

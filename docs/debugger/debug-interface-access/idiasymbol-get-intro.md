@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_intro — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05d520947c5e5e998ecf67a1b9dbb6d77bdff2c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989545"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Pobiera flagę określającą, czy funkcja jest wprowadzenie do funkcji wirtualnej.  
@@ -27,7 +25,7 @@ Pobiera flagę określającą, czy funkcja jest wprowadzenie do funkcji wirtualn
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_intro (   
+HRESULT get_intro (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,8 +1,7 @@
 ---
-title: 'CA1043: Dla indeksatorów używaj argumentów integral lub string'
+title: 'CA1043: Użyj argumentu integral lub string dla indeksatorów'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1043
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8781b205da07c1c075e2638716cfc139491d07
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ae1d75341a857d380f78a2b8c0532fcdad1f5e1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987601"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Dla indeksatorów używaj argumentów integral lub string
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Użyj argumentu integral lub string dla indeksatorów
 
 |||
 |-|-|
@@ -58,4 +57,4 @@ ms.locfileid: "45550586"
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1023: Indeksatory nie powinny być wielowymiarowe](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
- [CA1024: Używaj właściwości wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Korzystanie z właściwości, gdzie jest to odpowiednie](../code-quality/ca1024-use-properties-where-appropriate.md)

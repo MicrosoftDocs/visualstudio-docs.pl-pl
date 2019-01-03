@@ -1,9 +1,6 @@
 ---
 title: Czcionki i formatowanie dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989046"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
@@ -104,122 +101,122 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
   
 #### <a name="375-environment-font--light"></a>Czcionka środowiska 375% + światła  
- **Pojawia się jako:** 34 pt Segoe UI Light  
+ **Wygląda następująco:** 34 pt Segoe UI Light  
  **Na użytek:** (rzadkiego) unikatowy marki interfejsu użytkownika, takie jak w stronę początkową
 
- **Kod proceduralny:** gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
+ **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
  **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
 #### <a name="310-environment-font--light"></a>Czcionka środowiska 310% + światła  
- **Pojawia się jako:** 28 pt Segoe UI Light   
+ **Wygląda następująco:** 28 (czas pacyficzny) Segoe UI Light   
  **Na użytek:** tytułów okna dialogowego podpisu dużych, głównym, nagłówkiem w raportach  
   
- **Kod proceduralny:** gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
+ **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
  **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
 #### <a name="200-environment-font--semilight"></a>Czcionka środowiska 200% + Semilight  
- **Pojawia się jako:** 18 pkt Segoe UI Semilight    
+ **Wygląda następująco:** 18 pkt Segoe UI Semilight    
  **Na użytek:** podpozycji, tytułu w małych i średnich okien dialogowych  
   
- **Kod proceduralny:** gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety: 
+ **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety: 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
  **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
 #### <a name="155-environment-font"></a>Czcionka środowiska 155%  
- **Pojawia się jako:** 14 punktów Segoe UI    
+ **Wygląda następująco:** 14 punktów Segoe UI    
  **Na użytek:** nagłówki sekcji w dokumencie również interfejs użytkownika lub raportów  
   
- **Kod proceduralny:** gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
+ **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
  **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
 #### <a name="133-environment-font"></a>Czcionka środowiska 133%  
- **Pojawia się jako:** 12 pkt. Segoe UI    
+ **Wygląda następująco:** 12 pkt. Segoe UI    
  **Na użytek:** mniejszych podpozycji w dokumencie i okna dialogowe sygnatury dobrze interfejsu użytkownika  
   
- **Kod proceduralny:** gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
+ **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
  **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
 #### <a name="122-environment-font"></a>Czcionka środowiska 122%  
- **Pojawia się jako:** 11 (czas pacyficzny) Segoe UI    
+ **Wygląda następująco:** 11 (czas pacyficzny) Segoe UI    
  **Na użytek:** sekcji nagłówków w oknach dialogowych podpisu, najważniejsze węzły w widoku drzewa, tabulator pionowy nawigacji  
   
- **Kod proceduralny:** gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
+ **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
  **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Pojawia się jako:** pogrubiony 9 (czas pacyficzny) Segoe UI    
  **Na użytek:** etykiet oraz nagłówki w oknach dialogowych podpisu, raporty i dokumentu dobrze interfejsu użytkownika  
   
- **Kod proceduralny:** gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
+ **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
  **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -325,7 +322,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Wielkimi literami  
  Wielkość liter jest styl z tym pierwsze litery większość lub wszystkie wyrazy w frazę. W programie Visual Studio wielkość liter jest używany dla wielu elementów, w tym:  
   
-- **Etykietki narzędzi.** Przykład: "podgląd wybranych elementów"  
+- **Etykietki narzędzi.** Przykład: "Podgląd wybranych elementów"  
   
 - **Nagłówki kolumn.** Przykład: "System Response"  
   
@@ -356,7 +353,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Jak w zdaniu  
  Jak w zdaniu to metoda standardowa wielkość liter do zapisu w kapitalizowane jest tylko pierwszy wyraz zdania, wraz z dowolnej nazwy własne i zrozumieć "I". Ogólnie rzecz biorąc jak w zdaniu jest łatwiejsze dla odbiorców na całym świecie do odczytu, szczególnie jeśli zawartość zostanie zamienione przez maszynę. Zdania przypadek użycia:  
   
-1.  **Komunikaty paska stanu.** Są one prostych, krótkich i podaj tylko informacje o stanie. Przykład: ładowanie projektu "pliku"  
+1.  **Komunikaty paska stanu.** Są one prostych, krótkich i podaj tylko informacje o stanie. Przykład: "Trwa ładowanie pliku projektu"  
   
 2.  **Wszystkie inne elementy interfejsu użytkownika**, łącznie z etykiety, pola wyboru i przyciski radiowe i wyświetlać listę elementów pola. Przykład: "Wybierz wszystkie elementy na liście"  
   
@@ -412,37 +409,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Sposób użycia:** rzadkie. Unikatowe marki tylko interfejs użytkownika.<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika, takie jak strona początkowa<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 34 pt Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> *Obecnie nieużywane. Mogą być używane w strony początkowej.*|  
+|**Sposób użycia:** Rzadkie. Unikatowe marki tylko interfejs użytkownika.<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika, takie jak strona początkowa<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 34 pt Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> *Obecnie nieużywane. Mogą być używane w strony początkowej.*|  
   
 #### <a name="310-environment-font--light"></a>Czcionka środowiska 310% + światła  
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> — Większa nagłówka w oknach dialogowych podpisu<br />— Nagłówek raport główny<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika, takie jak strona początkowa<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 28 pt Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 310% &#43; światła nagłówek](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
+|**Sposób użycia:**<br /><br /> — Większa nagłówka w oknach dialogowych podpisu<br />— Nagłówek raport główny<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika, takie jak strona początkowa<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 28 (czas pacyficzny) Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 310% &#43; światła nagłówek](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Czcionka środowiska 200% + Semilight  
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> -Podpozycji<br />-Tytuły w małych i średnich okien dialogowych<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj Semilight wagi<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 18 pkt Segoe UI Semillight<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
+|**Sposób użycia:**<br /><br /> -Podpozycji<br />-Tytuły w małych i średnich okien dialogowych<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj Semilight wagi<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 18 pkt Segoe UI Semillight<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
   
 #### <a name="155-environment-font"></a>Czcionka środowiska 155%  
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> -Section nagłówków w dokumencie dobrze interfejsu użytkownika<br />— Raporty<br /><br /> **Wykonaj:** stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 14 punktów Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 155% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**Sposób użycia:**<br /><br /> -Section nagłówków w dokumencie dobrze interfejsu użytkownika<br />— Raporty<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 14 punktów Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 155% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>Czcionka środowiska 133%  
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> — Mniejsze podpozycji w oknach dialogowych podpisu<br />— Mniejsze podpozycji w dokumencie dobrze interfejsu użytkownika<br /><br /> **Wykonaj:** stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 12 pkt. Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 133% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**Sposób użycia:**<br /><br /> — Mniejsze podpozycji w oknach dialogowych podpisu<br />— Mniejsze podpozycji w dokumencie dobrze interfejsu użytkownika<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 12 pkt. Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 133% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>Czcionka środowiska 122%  
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> -Section nagłówków w oknach dialogowych podpisu<br />-Najważniejsze węzły w widoku drzewa<br />-Pionowej karcie nawigacji<br /><br /> **Wykonaj:** stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 11 (czas pacyficzny) Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 122% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**Sposób użycia:**<br /><br /> -Section nagłówków w oknach dialogowych podpisu<br />-Najważniejsze węzły w widoku drzewa<br />-Pionowej karcie nawigacji<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 11 (czas pacyficzny) Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 122% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Czcionka środowiska + pogrubienia  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Sposób użycia:** inny tekst<br /><br /> **Wykonaj:** stosuj wielkość liter<br /><br /> **Nie:** kursywa lub pogrubiona kursywa|**Pojawia się jako:** 9 (czas pacyficzny) Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**Sposób użycia:** Inny tekst<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:** Krojów z kursywą lub pogrubienie, kursywa|**Wygląda następująco:** 9 (czas pacyficzny) Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>Wypełnienie i odstępy  
  Nagłówki wymagają ilość wolnego miejsca wokół je, aby dać im odpowiednią wyróżnienia. Miejsce to różni się zależnie od rozmiaru punktów i co jeszcze jest bliski nagłówka, takich jak linii poziomej lub wiersza tekstu w czcionce środowiska.  
@@ -466,5 +463,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Pogrubiony tekst czcionka środowiska powinien być zgodny z domyślną interlinia wysokość i uzupełniania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [MSDN: Czcionek (Windows)](/windows/desktop/uxguide/vis-fonts)   
- [Witrynie MSDN: Tekst interfejsu użytkownika (Windows)](/windows/desktop/uxguide/text-ui)
+ [MSDN: Czcionki (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: Tekst interfejsu użytkownika (Windows)](/windows/desktop/uxguide/text-ui)

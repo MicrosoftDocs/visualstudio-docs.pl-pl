@@ -1,8 +1,6 @@
 ---
-title: Karta ogólna, okno dialogowe właściwości wątku | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Karta Ogólne, okno dialogowe właściwości wątku | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
@@ -13,31 +11,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6eb87418671b9b070aebaf60d1bb9c84b3623a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f06fb3d5af44a220a1eb88fd7a4df53bc589972
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474609"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989338"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości wątku
-Użyj tego okna dialogowego, aby dowiedzieć się więcej o konkretnym wątkiem. Aby wyświetlić to okno dialogowe, Przenieś fokus do [Widok wątków](../debugger/threads-view.md) okna lub Otwórz [widoku komunikatów](../debugger/messages-view.md) i rozwiń wiadomości. Zaznacz dowolny węzeł wątku w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  
+Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego wątku. Aby wyświetlić to okno dialogowe, Przenieś fokus do [Widok wątków](../debugger/threads-view.md) okna lub Otwórz [widoku komunikatów](../debugger/messages-view.md) i rozwiń wiadomość. Zaznacz dowolny węzeł wątku w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
   
- **Wątku właściwości** okno dialogowe zawiera jedno okienko **ogólne** kartę. Dostępne są następujące ustawienia:  
+ **Właściwości wątku** okno dialogowe zawiera jedno okienko **ogólne** kartę. Dostępne są następujące ustawienia:  
   
 |Wpis|Opis|  
 |-----------|-----------------|  
 |**Nazwa modułu**|Nazwa modułu.|  
-|**Identyfikator wątku**|Unikatowy identyfikator tego wątku. Należy pamiętać, że numery identyfikatorów wątku są ponownie; identyfikują one wątku jedynie przez czas ich istnienia tego wątku.|  
-|**Identyfikator procesu**|Unikatowy identyfikator tego procesu. Numery identyfikatorów procesów są używane ponownie, więc identyfikują one procesy jedynie dla okresu istnienia tego procesu. Typ obiektu procesu jest tworzony w momencie uruchomienia programu. Wszystkie wątki w procesie Udostępnij tę samą przestrzeń adresową i mają dostęp do tych samych danych. Wybierz tę wartość, aby wyświetlić właściwości identyfikatora procesu.|  
-|**Stan wątku**|Bieżący stan wątku. Uruchomionych wątków jest przy użyciu procesora; Wątek wstrzymania to chwilę. Gotowy wątek oczekuje używać procesora, ponieważ nie jest jedną wolne. Wątek w trakcie przechodzenia oczekuje zasobów do wykonania, takich jak oczekiwanie na swój stos wykonywania stanie z dysku. Wątek oczekiwania musi procesora, ponieważ oczekuje na zakończenie operacji peryferyjne lub zasób, aby zwolnić.|  
-|**Przyczyna oczekiwania**|Ma to zastosowanie tylko wtedy, gdy wątek jest w stanie oczekiwania. Pary zdarzenia są używane do komunikacji z podsystemami chronionymi.|  
-|**Czas procesora CPU**|Łączny czas procesora CPU podczas tego procesu i wątków. Taki sam jak czas użytkownika + czasu uprzywilejowanego.|  
-|**Czas użytkownika**|Całkowity czas spędzony tego wątku wykonywanie kodu w trybie użytkownika. Aplikacje wykonać w trybie użytkownika, jak podsystemów, takich jak Menedżera okien i aparat grafiki.|  
-|**Czas uprzywilejowany**|Całkowity czas spędzony tego wątku wykonywanie kodu w trybie uprzywilejowanym. Wywołanego usługa systemu Windows usługi często będzie uruchamiany w trybie uprzywilejowanym w celu uzyskania dostępu do prywatnych danych systemu. Dane te są chronione przed dostępem przez wątków działających w trybie użytkownika. Wywołania systemu może być jawne lub może być pośrednie, takie jak po wystąpieniu błędu strony lub przerwania.|  
-|**Czas, który upłynął**|Całkowity czas (w sekundach) ten wątek jest uruchomiony.|  
-|**Bieżący priorytet**|Bieżący priorytet dynamiczny tego wątku. Wątków w procesie można wywołać i zmniejszyć ich priorytet podstawowy względem priorytet podstawowy procesu.|  
-|**Priorytet podstawowy**|Bieżący priorytet podstawowy tego wątku.|  
-|**Adres początkowy**|Początkowy adres wirtualny tego wątku.|  
-|**Użytkownik komputera**|Licznik programu użytkownika dla wątku.|  
-|**Przełączenia kontekstu**|Liczba przejście z jednego wątku. Przełączenia wątków mogą występować w ramach jednego procesu lub między procesami. Przełączenie wątku może być spowodowane przez jeden wątek innego podanie informacji lub są zastępowane, gdy wątek wyższy priorytet będzie gotowy do uruchomienia wątku.|
+|**Identyfikator wątku**|Unikatowy identyfikator tego wątku. Należy pamiętać, że numery identyfikatorów wątku są ponownie; identyfikują one wątku, tylko w przypadku okres istnienia tego wątku.|  
+|**Identyfikator procesu**|Unikatowy identyfikator tego procesu. Numery identyfikatorów procesów są używane ponownie, więc identyfikują one proces tylko w przypadku istnienia tego procesu. Typ obiektu procesu jest tworzony po uruchomieniu programu. Wszystkie wątki w procesie udostępnianie tej samej przestrzeni adresowej i mieć dostęp do tych samych danych. Wybierz tę wartość, aby wyświetlić właściwości identyfikatora procesu.|  
+|**Stan wątku**|Bieżący stan wątku. Używa uruchomionych wątków procesora; Wątek wstrzymania jest chwilę. Gotowy wątek czeka do użycia procesora, ponieważ jeden z nich jest bezpłatna. Wątek w trakcie przechodzenia czeka, aż zasób do wykonania, takie jak oczekiwanie na swój stos wykonywania stanie z dysku. Wątek oczekiwanie nie wymaga procesora, ponieważ trwa oczekiwanie na zakończenie operacji peryferyjne lub zasobu, aby zwolnić.|  
+|**Przyczyna oczekiwania**|Dotyczy to tylko wtedy, gdy wątek jest w stanie oczekiwania. Pary zdarzeń są używane do komunikowania się z chronionym podsystemów.|  
+|**Czas procesora CPU**|Łączny czas Procesora poświęcony ten proces i wątków. Taki sam jak czas użytkownika + czasu uprzywilejowanego.|  
+|**Czas użytkownika**|Całkowity czas spędzony ten wątek wykonywania kodu w trybie użytkownika. Aplikacje są wykonywane w trybie użytkownika, tak jak podsystemy, takich jak Menedżer okien i aparat grafiki.|  
+|**Czas uprzywilejowany**|Całkowity czas spędzony ten wątek wykonywania kodu w trybie uprzywilejowanym. Po wywołaniu usługi systemu Windows usługi często będzie uruchamiany w trybie uprzywilejowanym w celu uzyskania dostępu do prywatnych danych systemu. Takie dane są chronione przed dostępem przez wątków działających w trybie użytkownika. Wywołania systemu może być jawne lub może być niejawne, np. gdy wystąpi błąd strony lub przerwania.|  
+|**Czas, który upłynął**|Całkowity czas (w sekundach) ten wątek został uruchomiony.|  
+|**Bieżący priorytet**|Bieżący priorytet dynamiczny tego wątku. Wątków w procesie można zwiększyć i zmniejszyć własne podstawowy priorytet względem podstawowego priorytetu procesu.|  
+|**Priorytet podstawowy**|Bieżący priorytet bazowy tego wątku.|  
+|**Adres początkowy**|Początkowy adres wirtualny dla tego wątku.|  
+|**Komputer użytkownika**|Licznik programu użytkownika dla wątku.|  
+|**Przełączenia kontekstu**|Liczba przełączników z jednego wątku do innego. Przełączniki wątek może wystąpić wewnątrz pojedynczego procesu lub między procesami. Przełączenie wątku może być spowodowane przez jeden wątek, pytanie o innej informacji lub wątku jest przerywane, jeśli wątek wyższy priorytet staje się gotowe do uruchomienia.|

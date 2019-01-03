@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_code — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d157e33581054e3aa8f79f60cb1d3609dc16b6ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b6b0c5940f6c32477989a4d260d57c5def8ae0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987158"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 Pobiera flagę określającą, czy symbol odwołuje się pod adresem kod.  
@@ -27,7 +25,7 @@ Pobiera flagę określającą, czy symbol odwołuje się pod adresem kod.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT get_code (   
+HRESULT get_code (   
    BOOL* pRetVal  
 );  
 ```  

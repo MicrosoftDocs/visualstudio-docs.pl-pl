@@ -1,8 +1,6 @@
 ---
 title: GetReferenceAssemblyPaths, zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1041a298b7b195180e312e54aeadd666b478cb29
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 485b8f9c19a8a91d686b603ee1be9da70b6c78e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987878"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Getreferenceassemblypaths — zadanie
 Zwraca odwołanie ścieżki zestawów w różnych architektur.  

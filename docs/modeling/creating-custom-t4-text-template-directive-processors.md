@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0216fab44ddc52c2d01c27365449377fb899e1a6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989153"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego
 
@@ -64,7 +63,7 @@ Po wszystkie wywołania element ProcessDirective() aparatu tworzenia szablonów 
 
 -   `string GetClassCodeForProcessingRun()` -Zwrócić kod metody, właściwości i innych deklaracji, używających kod szablonu. W tym celu najłatwiej do tworzenia ciąg zawierający w języku C# lub kod języka Visual Basic. Aby procesor dyrektywy może być wywoływana z szablonu, który korzysta z dowolnego języka środowiska CLR, można skonstruować oświadczeń jako drzewo CodeDom, a następnie powróć wynik serializacji drzewa w język używany przez szablon.
 
--   Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+-   Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Zobacz także
 

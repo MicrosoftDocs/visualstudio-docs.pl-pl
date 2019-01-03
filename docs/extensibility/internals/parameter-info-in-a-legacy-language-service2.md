@@ -1,9 +1,6 @@
 ---
 title: Informacje o parametrach w starszej wersji usługi językowej2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b562f5dd2c7e4f3851f6ed16e0f0007ef65e14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a11f7416f77aa997d6874457cc3af83ebb761bb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988151"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 Informacje o parametrach funkcji IntelliSense jest znak (zazwyczaj nawias otwierający) na liście parametrów metody początkowy etykietkę narzędzia, która zawiera podpis metody, gdy użytkownik wpisuje listy parametrów. Każdy parametr jest wprowadzana i został wpisany parametr separatora (zazwyczaj przecinkami), etykietki narzędzia jest aktualizowana w celu wyświetlenia następny parametr pogrubioną czcionką.  

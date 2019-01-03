@@ -1,8 +1,7 @@
 ---
-title: 'Porady: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa'
+title: 'Instrukcje: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39d7ae466f48bed8bd6fe4c53662c0c8b3c801e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988008"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Instrukcje: eksportowanie tekstury wykorzystującej ma wstępnie przemnożony kanał alfa
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Instrukcje: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa
 
 Potok zawartości obrazu może generować wstępnie przemnożone tekstury alfa z obrazu źródłowego. Mogą to być łatwiejszy w obsłudze i bardziej niezawodne niż tekstury, które nie zawierają wstępnie przemnożonego kanału alfa.
 
@@ -40,7 +39,7 @@ Ten dokument przedstawia te działania:
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Aby utworzyć tekstury wykorzystującej wstępnie przemnożony kanał alfa
 
-1. Rozpocznij od podstawowej tekstury. Załaduj istniejący pliku obrazu lub utwórz je, zgodnie z opisem w [porady: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md).
+1. Rozpocznij od podstawowej tekstury. Załaduj istniejący pliku obrazu lub utwórz je, zgodnie z opisem w [jak: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md).
 
 2. Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji** > **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.
 

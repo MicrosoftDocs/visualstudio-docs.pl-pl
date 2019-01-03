@@ -1,9 +1,6 @@
 ---
-title: 'Porady: pobieranie usługi | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Usługi | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990032"
 ---
-# <a name="how-to-get-a-service"></a>Porady: uzyskiwanie usługi
+# <a name="how-to-get-a-service"></a>Instrukcje: Uzyskiwanie usługi
 Często muszą uzyskać dostęp do różnych funkcji usług Visual Studio. Ogólnie rzecz biorąc usługa Visual Studio zawiera jeden lub więcej interfejsów, które są dostępne. Większość usług można uzyskać z pakietu VSPackage.  
   
  Dowolnego pakietu VSPackage, który pochodzi od klasy <xref:Microsoft.VisualStudio.Shell.Package> i ma, poprawnie ulokowany może poprosić o dowolnej usługi globalne. Ponieważ `Package` klasy implementuje <xref:System.IServiceProvider>, dowolnego pakietu VSPackage, który pochodzi od klasy `Package` jest również dostawcę usług.  
@@ -42,7 +39,7 @@ Często muszą uzyskać dostęp do różnych funkcji usług Visual Studio. Ogól
   
    ```  
   
-    Ten kod pobiera usługi SVsActivityLog i rzutuje je na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać przykład, zobacz [porady: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
+    Ten kod pobiera usługi SVsActivityLog i rzutuje je na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać przykład, zobacz [jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
@@ -53,7 +50,7 @@ Często muszą uzyskać dostęp do różnych funkcji usług Visual Studio. Ogól
   
  Statyczne <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metoda korzysta z pamięci podręcznej usługodawcy, który jest zainicjowany po raz pierwszy pochodną dowolnego pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package> jest ulokowany.  
   
- Ponieważ Konstruktor pakietu VSPackage jest wywoływana przed jest ulokowany pakietu VSPackage, usługi global services są zwykle dostępne z w Konstruktorze pakietu VSPackage. Zobacz [porady: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md) obejście tego problemu.  
+ Ponieważ Konstruktor pakietu VSPackage jest wywoływana przed jest ulokowany pakietu VSPackage, usługi global services są zwykle dostępne z w Konstruktorze pakietu VSPackage. Zobacz [jak: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md) obejście tego problemu.  
   
  Oto przykład sposobu, w jaki można pobrać usługi w okno narzędzia lub innego elementu innego niż pakietu VSPackage.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  Oto jak uzyskać usługę z obiektu DTE.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: świadczenia usług](../extensibility/how-to-provide-a-service.md)   
+ [Instrukcje: Oferuje usługi](../extensibility/how-to-provide-a-service.md)   
  [Użyj i świadczenia usług](../extensibility/using-and-providing-services.md)   
  [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)

@@ -1,9 +1,6 @@
 ---
 title: Niestandardowe elementy z możliwością kolorowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 037cd62bea7051e8341101a888bd428b7f78e828
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989755"
 ---
 # <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
 Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i komentarze, implementując niestandardowe elementy z możliwością kolorowania jako część usługi języka.  
@@ -72,4 +69,4 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
  [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementowanie kolorowanie składni](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Porady: używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

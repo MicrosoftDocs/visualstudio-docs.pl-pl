@@ -3,7 +3,6 @@ title: Dokumentacja okna środowiska Python
 description: Szczegółowe informacje dotyczące każdej z kart, które są wyświetlane w oknie środowiska Python w programie Visual Studio.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 076deaaa326f1e19b14670a91e988dc8eebef450
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989571"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Dokumentacja karty okna środowiska Python
 
@@ -103,7 +102,7 @@ Podczas instalowania pakietów w środowisku, w którym znajduje się w obszaru 
 
 ![Monit o podniesienie uprawnień dla instalacji pakietu aktualizacji](media/environments-pip-elevate.png)
 
-**Podnieś uprawnienia teraz** udziela uprawnień administracyjnych do narzędzia pip dla jednej operacji podmiotu również na dowolnym systemie operacyjnym, wyświetla monit o uprawnienia. Wybieranie **Kontynuuj bez uprawnień administratora** próby instalacji pakietu, ale narzędzie pip kończy się niepowodzeniem podczas próby takich jak tworzenie folderów z danymi wyjściowymi **błąd: nie można utworzyć "C:\Program Files\Anaconda3\Lib\ Site-packages\png.py': odmowa uprawnień.**
+**Podnieś uprawnienia teraz** udziela uprawnień administracyjnych do narzędzia pip dla jednej operacji podmiotu również na dowolnym systemie operacyjnym, wyświetla monit o uprawnienia. Wybieranie **Kontynuuj bez uprawnień administratora** próby instalacji pakietu, ale narzędzie pip kończy się niepowodzeniem podczas próby takich jak tworzenie folderów z danymi wyjściowymi **błąd: nie można utworzyć "C:\Program Files\Anaconda3\Lib\ Site-packages\png.py ": Odmowa uprawnień.**
 
 Wybieranie **zawsze podniesienie poziomu podczas instalowania lub usuwania pakietów** zapobiega wyświetlaniu w środowisku okna dialogowego. Aby ponownie wyświetlone okno dialogowe, przejdź do **narzędzia** > **opcje** > **narzędzi Python Tools** > **ogólne** i wybierz przycisk, **zresetować wszystkie okna dialogowe trwale ukryty**.
 

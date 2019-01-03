@@ -1,8 +1,7 @@
 ---
-title: 'CA1013: Przeciąż operator equals przeciążając operatory add i subtract'
+title: 'CA1013: Dokonaj przeciążenia operatora równości przy przeciążaniu operatorów dodawania i odejmowania'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OverrideOperatorEqualsOnOverridingAddAndSubtract
@@ -23,14 +22,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f0f3d40ea24828430983efd2cf39f4fa399238
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bbeb5834decd847abec206af3b569c793774d361
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988589"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Przeciąż operator equals przeciążając operatory add i subtract
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Dokonaj przeciążenia operatora równości przy przeciążaniu operatorów dodawania i odejmowania
 
 |||
 |-|-|

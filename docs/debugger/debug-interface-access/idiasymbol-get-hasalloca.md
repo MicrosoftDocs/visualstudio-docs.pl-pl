@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_hasAlloca | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Idiasymbol::get_hasalloca — | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e701f6b851b48345c9dcbcf3f2482d7c6c0951
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ecc7029ab515f1e47f52eb086aa0f099c13fc65c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990623"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
-Pobiera flagę określającą, czy funkcja zawiera wywołanie `alloca` (który jest używany można przydzielić pamięci na stosie).  
+Pobiera flagę określającą, czy funkcja zawiera wywołanie `alloca` (który służy do przydzielania pamięci na stosie).  
   
 ## <a name="syntax"></a>Składnia  
   
 ```  
-[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
+[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
@@ -35,10 +33,10 @@ Pobiera flagę określającą, czy funkcja zawiera wywołanie `alloca` (który j
  [out] Zwraca `TRUE` Jeśli funkcja zawiera wywołanie `alloca`; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

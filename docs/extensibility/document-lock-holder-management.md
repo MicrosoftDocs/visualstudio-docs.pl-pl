@@ -1,9 +1,6 @@
 ---
 title: Zarządzanie właścicielem blokady dokumentu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986443"
 ---
 # <a name="document-lock-holder-management"></a>Zarządzanie właścicielem blokady dokumentu
 Uruchamianie tabeli dokumentu (Normalizacją) przechowuje liczbę otwartych dokumentów i wszystkie blokady edycji, które mają. Można umieścić blokady edycji dokumentu w Normalizacją, gdy programowe jest edytowany w tle bez użytkownika wyświetlany w oknie dokumentu otwartego dokumentu. Ta funkcja jest często używane przez projektantów, które modyfikują wiele plików za pomocą graficznego interfejsu użytkownika.

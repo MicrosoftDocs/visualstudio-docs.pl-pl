@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3155006ecfc0e65365f23a6e09f6ec23e9d0e12d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff2b4a569357210f4f0ae82fcb4da0e8d630ea54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985899"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Literały ciągu atrybutu powinny być analizowane poprawnie
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Literałów typu string atrybutów powinna przebiegać poprawnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -68,6 +67,3 @@ ms.locfileid: "49914739"
 
 ## <a name="see-also"></a>Zobacz też
  [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-
-
-

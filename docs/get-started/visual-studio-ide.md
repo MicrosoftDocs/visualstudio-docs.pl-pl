@@ -5,6 +5,7 @@ ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+ms.custom: vs-get-started
 author: gewarren
 f1_keywords:
 - vs.startpage
@@ -14,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e73396510277e1616d78d650af3372d6c991ea2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6e0950916ad6cbcd4864b0b1813258604be5b757
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990008"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 

@@ -1,8 +1,6 @@
 ---
 title: Filtrowanie widoków raportów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986378"
 ---
 # <a name="filter-report-views"></a>Filtrowanie widoków raportu
 Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, który jest wyświetlany w widokach raport dotyczący wydajności i wyeksportowane pliki raportu profilowania. Można ograniczyć raport, aby dane między wartości sygnatur czasowych i umożliwia ograniczenie danych do określonych procesów i wątków. Można zapisać w pliku filtrów i utworzenie filtru na inny plik danych profilowania, importując zapisany filtr.  
   
- Można również ograniczyć raportu do segmentu czasu za pomocą graficznego osi czasu w widoku Podsumowanie. Zobacz [porady: filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Można również ograniczyć raportu do segmentu czasu za pomocą graficznego osi czasu w widoku Podsumowanie. Zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Aby wykluczyć systemu i kod innych firm z raportu, zobacz [jak: Filtr profilowania narzędzia widoków raportu w celu wyświetlania tylko mój kod](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Aby wykluczyć systemu i kod innych firm z raportu, zobacz [jak: Filtrowanie widoków raportów narzędzi, aby wyświetlić tylko mój kod profilowania](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Procedury  
   
