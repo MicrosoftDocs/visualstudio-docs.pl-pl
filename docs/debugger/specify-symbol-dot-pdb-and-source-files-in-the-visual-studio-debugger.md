@@ -2,7 +2,6 @@
 title: Ustaw symboli (.pdb) i plików źródłowych w debugerze
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892457"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
@@ -77,11 +76,11 @@ Ponadto debuger wyszukuje pliki symboli w następujących lokalizacjach:
       
      Serwery symboli, które mogą obejmować:  
       
-     **Publiczne serwery symboli firmy Microsoft**: Aby debugować awarię, która występuje podczas wywoływania biblioteki DLL systemu lub do biblioteki innych firm, często muszą system *.pdb* plików. System *.pdb* pliki zawierają symbole dla Windows dll, *.exe* plików i sterowników urządzeń. Możesz uzyskać symbole dla systemów operacyjnych Windows, MDAC, IIS i ISA i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z publicznych serwerów symboli firmy Microsoft. 
+     **Serwery publiczne symboli firmy Microsoft**: Aby debugować awarię, która występuje podczas wywoływania biblioteki DLL systemu lub do biblioteki innych firm, często muszą system *.pdb* plików. System *.pdb* pliki zawierają symbole dla Windows dll, *.exe* plików i sterowników urządzeń. Możesz uzyskać symbole dla systemów operacyjnych Windows, MDAC, IIS i ISA i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z publicznych serwerów symboli firmy Microsoft. 
       
-     **Serwery w sieci wewnętrznej lub na komputerze lokalnym symboli**: zespół lub firma mogą tworzyć serwery symboli dla własnych produktów i jako pamięci podręcznej dla symboli ze źródeł zewnętrznych. Możesz mieć serwer symboli na własnym komputerze. 
+     **Serwery w sieci wewnętrznej lub na komputerze lokalnym symboli**: Twój zespół lub firmy można tworzyć serwery symboli dla własnych produktów i jako pamięci podręcznej dla symboli ze źródeł zewnętrznych. Możesz mieć serwer symboli na własnym komputerze. 
       
-     **Serwery symboli firm**: dostawców aplikacji Windows i biblioteki można zapewnić dostęp do serwera symboli w Internecie. 
+     **Serwery symboli firm**: Inni dostawcy aplikacji systemu Windows i bibliotek mogą zapewnić dostęp do serwera symboli w Internecie. 
     
      > [!WARNING]
      > Jeśli używasz serwera symboli innego niż publiczne serwery symboli firmy Microsoft, upewnij się, że serwer symboli i jego ścieżka są godne zaufania. Ponieważ pliki symboli mogą zawierać dowolny kod wykonywalny, może być narażony na zagrożenia bezpieczeństwa.  
@@ -156,7 +155,7 @@ Można wybrać opcje dodatkowe symboli w **narzędzia** > **opcje** > **debugowa
   Można ograniczyć poleceń, *srcsrv.dll* można wykonać z poziomu aplikacji *.pdb* pliku przez wymienienie dozwolonych poleceń w pliku o nazwie *srcsrv.ini*. Miejsce *srcsrv.ini* pliku w tym samym folderze co *srcsrv.dll* i *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Dowolne polecenia mogą być osadzone w aplikacji *.pdb* plików, więc Pamiętaj umieścić tylko te polecenia, które chcesz wykonać do *srcsrv.ini* pliku. Dowolne próba wykonania polecenia nie *srcsvr.ini* pliku spowoduje wyświetlenie okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Dowolne polecenia mogą być osadzone w aplikacji *.pdb* plików, więc Pamiętaj umieścić tylko te polecenia, które chcesz wykonać do *srcsrv.ini* pliku. Dowolne próba wykonania polecenia nie *srcsvr.ini* pliku spowoduje wyświetlenie okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład, jeśli zostanie wyświetlone *cmd.exe* w swojej *srcsrv.ini*, złośliwy użytkownik może określić parametry na *cmd.exe* , spowodowałoby, że niebezpieczne.  
   
