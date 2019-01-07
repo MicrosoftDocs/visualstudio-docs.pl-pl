@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie języka Python w usłudze Azure App Service (Windows)
 description: Jak zainstalować interpreter języka Python i bibliotek w usłudze Azure App Service i konfigurowanie aplikacji sieci web, aby poprawnie odwołać się do tego interpretera.
-ms.date: 10/18/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 64459151c52e299b73d0c0621382580b6171af4c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bfa048f7f836e2e4108c3d30a1dfb89b764c59c
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962535"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060751"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko Python w usłudze Azure App Service (Windows)
 

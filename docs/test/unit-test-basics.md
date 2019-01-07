@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02b9db0d8f352d6dc06772622fef803652817333
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952436"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060806"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -25,7 +25,7 @@ Testy jednostkowe ma największy wpływ na jakość kodu, gdy jest integralną c
 
 Można szybko wygenerować projekty testowe i metod testowych w kodzie lub ręcznie utworzyć testy, gdy ich potrzebujesz. Zapoznaj się z kodu platformy .NET przy użyciu funkcji IntelliTest, można generować dane testowe oraz pakiet testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, którymi instrukcja zostanie wykonana. Dowiedz się, jak [generowania testów jednostkowych dla kodu](generate-unit-tests-for-your-code-with-intellitest.md).
 
-Eksplorator testów można również uruchomić innych firm i open source, struktur testów jednostek, które zostały zaimplementowane interfejsy dodatek programu Test Explorer. Można dodać wiele z tych środowisk przy użyciu Menedżera rozszerzeń programu Visual Studio i galerii programu Visual Studio. Zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)
+Eksplorator testów można również uruchomić innych firm i open source, struktur testów jednostek, które zostały zaimplementowane interfejsy dodatek programu Test Explorer. Można dodać wiele z tych środowisk przy użyciu Menedżera rozszerzeń programu Visual Studio i galerii programu Visual Studio. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Wprowadzenie
 
@@ -33,7 +33,7 @@ Aby zapoznać się z wprowadzeniem do testów jednostkowych, które umożliwia p
 
 - [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Szybki Start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
