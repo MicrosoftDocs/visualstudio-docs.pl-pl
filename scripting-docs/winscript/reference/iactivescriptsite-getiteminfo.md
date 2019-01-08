@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccb898c14571d1f1fd1fcae7cb0b9a6d322f2754
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f4dc6515d64406870ca10f003d7cea515c49b7d8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793780"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095891"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
-Umożliwia aparat skryptów uzyskać informacje o elemencie dodane z [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  
+Umożliwia silnik wykonywania skryptów uzyskać informacje na temat elementu, który został dodany z [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetItemInfo(  
     LPCOLESTR pstrName,     // address of item name  
     DWORD dwReturnMask,     // bit mask for information retrieval  
@@ -41,21 +41,21 @@ HRESULT GetItemInfo(
   
 #### <a name="parameters"></a>Parametry  
  `pstrName`  
- [in] Nazwa skojarzona z elementem, jak określono w [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  
+ [in] Nazwa skojarzona z elementu, jak to określono w [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  
   
  `dwReturnMask`  
- [in] Maska bitowa określania, jakie informacje o elemencie ma zostać zwrócony. Aparat skryptów powinien zażądać minimalną ilość informacji możliwe, ponieważ niektóre z parametrów zwracanych (na przykład `ITypeInfo`) może zająć wiele czasu ładowania lub wygenerować. Może być kombinacją następujących wartości:  
+ [in] Maska bitów, określania, jakie informacje o elemencie ma zostać zwrócony. Silnik wykonywania skryptów należy zażądać minimalną ilość informacji możliwe, ponieważ niektóre zwracane parametry (na przykład `ITypeInfo`) może zająć znaczną ilość czasu do załadowania lub wygenerować. Może być kombinacją następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTINFO_IUNKNOWN|Zwraca `IUnknown` interfejs dla tego elementu.|  
-|SCRIPTINFO_ITYPEINFO|Zwraca `ITypeInfo` interfejs dla tego elementu.|  
+|SCRIPTINFO_IUNKNOWN|Zwraca `IUnknown` interfejsu dla tego elementu.|  
+|SCRIPTINFO_ITYPEINFO|Zwraca `ITypeInfo` interfejsu dla tego elementu.|  
   
  `ppunkItem`  
- [out] Adres zmiennej, która otrzymuje wskaźnik `IUnknown` skojarzone z danym elementem interfejsu. Można używać aparatu skryptów `IUnknown::QueryInterface` metodę, aby uzyskać `IDispatch` interfejs dla elementu. Ten parametr odbiera wartość NULL, jeśli `dwReturnMask` nie ma wartości SCRIPTINFO_IUNKNOWN. Ponadto odbiera wartość NULL, jeśli nie ma żadnego obiektu skojarzone z nazwą elementu; Mechanizm ten jest używany do tworzenia prostą klasę, gdy nazwany element został dodany przy użyciu flagi SCRIPTITEM_CODEONLY w [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  
+ [out] Adres zmiennej, która otrzymuje wskaźnik `IUnknown` interfejsu skojarzonego z danym elementem. Aparat skryptów można użyć `IUnknown::QueryInterface` metodę, aby uzyskać `IDispatch` interfejs dla elementu. Ten parametr otrzymuje wartość NULL, jeśli `dwReturnMask` nie zawiera wartości SCRIPTINFO_IUNKNOWN. Ponadto otrzymuje wartość NULL Jeśli nie ma obiektu skojarzone z nazwą elementu; Ten mechanizm jest używany do tworzenia klasą prostą, gdy element o nazwie została dodana z flagą SCRIPTITEM_CODEONLY w [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  
   
  `ppTypeInfo`  
- [out] Adres zmiennej, która otrzymuje wskaźnik `ITypeInfo` skojarzone z elementem interfejsu. Ten parametr odbiera wartość NULL, jeśli `dwReturnMask` nie ma wartości SCRIPTINFO_ITYPEINFO lub jeśli informacje o typie nie jest dostępna dla tego elementu. Jeśli nie ma informacji o typie obiektu nie źródła zdarzeń i powiązania nazwy musi być realizowany z `IDispatch::GetIDsOfNames` metody. Należy pamiętać, że `ITypeInfo` interfejsu pobrać opisuje coclass elementu (TKIND_COCLASS), ponieważ obiekt może obsługiwać wiele interfejsów i interfejsów zdarzeń. Jeśli element obsługuje `IProvideMultipleTypeInfo` interfejsu `ITypeInfo` interfejsu pobierana jest taka sama jak indeksie zero `ITypeInfo` który będzie można uzyskać przy użyciu `IProvideMultipleTypeInfo::GetInfoOfIndex` — metoda.  
+ [out] Adres zmiennej, która otrzymuje wskaźnik `ITypeInfo` interfejsu skojarzonego z elementem. Ten parametr otrzymuje wartość NULL, jeśli `dwReturnMask` nie zawiera wartości SCRIPTINFO_ITYPEINFO, lub jeśli informacje o typie nie jest dostępna dla tego elementu. Jeśli nie ma informacji o typie, obiekt nie źródeł zdarzeń i powiązania nazwy musi być realizowany przy użyciu `IDispatch::GetIDsOfNames` metody. Należy pamiętać, że `ITypeInfo` interfejsu, pobrać w tym artykule opisano coclass elementu (TKIND_COCLASS), ponieważ obiekt może obsługiwać wielu interfejsach i zdarzeń. Jeśli element obsługuje `IProvideMultipleTypeInfo` interfejsu, `ITypeInfo` interfejsu pobierana jest taka sama jak indeks zero `ITypeInfo` , będzie można uzyskać przy użyciu `IProvideMultipleTypeInfo::GetInfoOfIndex` metody.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -63,12 +63,12 @@ HRESULT GetItemInfo(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
-|`E_INVALIDARG`|Argument był nieprawidłowy.|  
+|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`TYPE_E_ELEMENTNOTFOUND`|Nie znaleziono elementu o podanej nazwie.|  
+|`TYPE_E_ELEMENTNOTFOUND`|Nie można odnaleźć elementu o określonej nazwie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda pobiera tylko te informacje, które określają `dwReturnMask` parametru; poprawia to wydajność. Na przykład jeśli `ITypeInfo` interfejsu nie jest wymagany dla elementu, po prostu nie został określony w `dwReturnMask`.  
+ Ta metoda pobiera tylko te informacje, które są wskazywane przez `dwReturnMask` parameter; poprawia to wydajność. Na przykład jeśli `ITypeInfo` interfejsu nie jest wymagany dla elementu, po prostu nie określono w `dwReturnMask`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

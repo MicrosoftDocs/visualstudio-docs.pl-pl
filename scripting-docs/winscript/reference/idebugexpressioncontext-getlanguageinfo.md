@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68c22d5dfcd16fb3d8f1dc3750bbfb23c4821176
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e47d25c6545aa906400073685e90774482444182
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794158"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093746"
 ---
 # <a name="idebugexpressioncontextgetlanguageinfo"></a>IDebugExpressionContext::GetLanguageInfo
 Zwraca nazwę i identyfikator GUID dla języka, który jest właścicielem tego kontekstu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetLanguageInfo(  
    BSTR*  pbstrLanguageName,  
    GUID*  pLanguageID  
@@ -45,7 +45,7 @@ HRESULT GetLanguageInfo(
  [out] Unikatowy identyfikator dla tego języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -55,4 +55,4 @@ HRESULT GetLanguageInfo(
  Ta metoda zwraca nazwę i identyfikator GUID dla języka, który jest właścicielem tego kontekstu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugExpressionContext](../../winscript/reference/idebugexpressioncontext-interface.md)
+ [IDebugExpressionContext, interfejs](../../winscript/reference/idebugexpressioncontext-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e985697e425ec4966f2260792a9698fa50b4c98d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 90d054eb6f7e98a604815c559bee4e326b19692d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793852"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092940"
 ---
 # <a name="idebugasyncoperationqueryiscomplete"></a>IDebugAsyncOperation::QueryIsComplete
-Określa, czy operacja debugowania została ukończona.  
+Określa, jeśli operacja debugowania została zakończona.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT QueryIsComplete();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Operacja została zakończona.|  
-|`S_FALSE`|Operacja nie jest ukończone.|  
+|`S_FALSE`|Operacja nie została zakończona.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy operacja debugowania została ukończona.  
+ Ta metoda określa, jeśli operacja debugowania została zakończona.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)
+ [IDebugAsyncOperation, interfejs](../../winscript/reference/idebugasyncoperation-interface.md)

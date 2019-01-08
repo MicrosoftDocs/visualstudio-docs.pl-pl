@@ -18,19 +18,19 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83d2597f8468bb97d20da655a56a751191ec4b55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85c434ea17d41fb98300289c3161349f9d9f5a2f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793276"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094864"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
-Dodaje nazwę elementu głównego poziomu do skryptu tworzenia aparatu przestrzeni nazw. A *elementu poziomu głównego* jest obiektem, który może zawierać właściwości i metody, a zawierających można również źródłem zdarzenia.  
+Dodaje nazwę elementu głównego poziomu do skryptu tworzenia przestrzeni nazw aparatu. A *elementu poziomu głównego* jest obiektem, który może zawierać właściwości i metody, a, mogą również zawierać źródło zdarzeń.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddNamedItem(  
    LPCOLESTR          pszName,  
    DWORD              dwFlags,  
@@ -40,22 +40,22 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>Parametry  
  `pszName`  
- [in] Nazwa elementu, tak jak to pokazano w skrypcie. Nazwa musi być unikatowa i możliwy do utrwalenia.  
+ [in] Nazwa elementu jak wyświetlać ze skryptu. Nazwa musi być unikatowa i stałe.  
   
  `dwFlags`  
  [in] Flagi, które są skojarzone z nazwanego elementu. Może być kombinacją następujących wartości:  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|SCRIPTITEM_ISVISIBLE|0x00000002|Wskazuje, że nazwa elementu jest dostępne w przestrzeni nazw skryptu. Dzięki temu dostęp do zdarzeń, metod i właściwości elementu.<br /><br /> Konwencja właściwości elementu obejmują elementy podrzędne elementu. W związku z tym wszystkie właściwości obiektu podrzędnego i metody (i ich elementy podrzędne, rekursywnie) są dostępne.|  
-|SCRIPTITEM_ISSOURCE|0x00000004|Wskazuje źródło elementu zdarzeń czy skrypt może mieć skryptu procedury obsługi zdarzeń.|  
-|SCRIPTITEM_GLOBALMEMBERS|0x00000008|Wskazuje, czy element jest kolekcją globalnych właściwości i metod, które są skojarzone ze skryptem. Jej elementów członkowskich są tworzone jako zmienne globalne i metod.|  
-|SCRIPTITEM_ISPERSISTENT|0x00000040|Wskazuje, czy element ma zostać zapisany po zapisaniu skryptu tworzenia aparatu.|  
-|SCRIPTITEM_CODEONLY|0x00000200|Wskazuje, że element nazwany reprezentuje obiekt tylko kod i nie ma członka do autora.|  
-|SCRIPTITEM_NOCODE|0x00000400|Wskazuje, że nazwany element jest tylko nazwa dodawany i go nie ma nic do autora.|  
+|SCRIPTITEM_ISVISIBLE|0x00000002|Wskazuje, że nazwa elementu jest dostępna w przestrzeni nazw skryptu. Dzięki temu dostęp do elementu właściwości, metody i zdarzenia.<br /><br /> Zgodnie z Konwencją właściwości elementu obejmują elementy podrzędne elementu. W związku z tym wszystkie właściwości obiektu podrzędnego i metod (i ich elementy podrzędne, cyklicznie) są dostępne.|  
+|SCRIPTITEM_ISSOURCE|0x00000004|Wskazuje źródło elementu zdarzenia, że skrypt może mieć procedury obsługi zdarzeń skryptu.|  
+|SCRIPTITEM_GLOBALMEMBERS|0x00000008|Wskazuje, że element jest kolekcją globalnych właściwości i metod, które są skojarzone ze skryptem. Jego członkowie są tworzone jako zmienne globalne i metody.|  
+|SCRIPTITEM_ISPERSISTENT|0x00000040|Wskazuje, czy element powinien być zapisany, jeśli skrypt tworzenia aparat są zapisywane.|  
+|SCRIPTITEM_CODEONLY|0x00000200|Wskazuje, że nazwany element reprezentuje obiekt tylko do kodu i nie ma członka do autora.|  
+|SCRIPTITEM_NOCODE|0x00000400|Wskazuje, że nazwany element jest tylko nazwy, które są dodawane i go nie ma nic do autora.|  
   
  `pdisp`  
- [in] `IDispatch` z `NamedItem` obiektu, który jest używany do gromadzenia metod, właściwości lub źródło zdarzenia.  
+ [in] `IDispatch` z `NamedItem` obiekt, który służy do zbierania, metody, właściwości lub źródło zdarzenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1155b00750cfe2a91625ba0f531622f381467198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d67ea7f4cc8a27364226a613c77d837f476c2530
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793900"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095046"
 ---
 # <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
 Ustawia plik cookie debugowania aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetDebugCookie(  
    DWORD  dwDebugAppCookie  
 );  
@@ -38,17 +38,17 @@ HRESULT SetDebugCookie(
   
 #### <a name="parameters"></a>Parametry  
  `dwDebugAppCookie`  
- [in] Pliku cookie, który identyfikuje aplikację debugowania.  
+ [in] Plik cookie, który identyfikuje aplikację debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda ustawia debugowania pliku cookie aplikacji, dzięki czemu więcej niż jeden debugera dołączyć do procesu.  
+ Ta metoda ustawia debugowania pliku cookie aplikacji, co pozwala na więcej niż jeden debugera, aby dołączyć do procesu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugCookie](../../winscript/reference/idebugcookie-interface.md)
+ [IDebugCookie, interfejs](../../winscript/reference/idebugcookie-interface.md)

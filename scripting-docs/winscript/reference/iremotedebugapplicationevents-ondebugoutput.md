@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 022a2297e135f308a8250fa0b493dd5943da7687
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9eb181c8a1c33a0bd9743edb4d1f1fc55c451ff2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794746"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086726"
 ---
 # <a name="iremotedebugapplicationeventsondebugoutput"></a>IRemoteDebugApplicationEvents::OnDebugOutput
 Obsługuje zdarzenie danych wyjściowych debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -38,10 +38,10 @@ HRESULT OnDebugOutput(
   
 #### <a name="parameters"></a>Parametry  
  `pstr`  
- [in] Ciąg danych wyjściowych debugowania.  
+ [in] Ciąg wyjściowy debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT OnDebugOutput(
  Ta metoda obsługuje zdarzenie danych wyjściowych debugera.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents, interfejs](../../winscript/reference/iremotedebugapplicationevents-interface.md)

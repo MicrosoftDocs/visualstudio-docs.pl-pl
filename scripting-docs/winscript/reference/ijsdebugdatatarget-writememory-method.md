@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::WriteMemory — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugDataTarget::WriteMemory, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794524"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089287"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory — Metoda
-Odczytuje pamięci procesu docelowego.  
+Odczytuje pamięć procesu docelowego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,21 +38,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [in] Adres podstawowy, w którym można zapisać w pamięci procesu docelowego.  
+ [in] Adres podstawowy, z którego można zapisywać pamięć procesu docelowego.  
   
  `pMemory`  
- [in] Dane do zapisania w przestrzeni adresowej określony proces.  
+ [in] Dane do zapisania w przestrzeni adresowej określonego procesu.  
   
  `size`  
- [in] Liczba bajtów do zapisania do procesu.  
+ [in] Liczba bajtów do zapisu do procesu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Przed wystąpieniem transferu danych, system sprawdza, czy wszystkie dane w bazowym adresie i pamięci o określonym rozmiarze jest dostępny do zapisu, a jeśli nie jest dostępny, funkcja zgłasza błąd E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+ Zanim nastąpi transfer danych, system sprawdza, czy wszystkie dane w adresie podstawowym i pamięci o określonym rozmiarze są dostępne do zapisu, a jeśli nie jest dostępny, funkcja zgłasza błąd E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugdatatarget — interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793261"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096177"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-Zwraca wartość wskazującą, czy znak danego zdarzenia powinny wywoływać zatwierdzania uzupełniania instrukcji przez aplikację.  
+Zwraca wartość wskazującą, czy dany znak wyzwalanych zatwierdzenia uzupełniania instrukcji przez aplikację.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -42,7 +42,7 @@ HRESULT IsCommitChar(
  [in] Znak do testowania.  
   
  `pfcommit`  
- [out] `True` Jeśli znak jest zatwierdzenia znaku; w przeciwnym razie `False`.  
+ [out] `True` Jeśli znak jest zatwierdzenie znaku; w przeciwnym razie `False`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -54,4 +54,4 @@ HRESULT IsCommitChar(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

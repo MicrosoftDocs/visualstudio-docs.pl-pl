@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::CreateStackFrameEnumerator — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugDataTarget::CreateStackFrameEnumerator, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91c67dc3eb14217ffcdc41f0877df6837fcb0230
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 399d66b9f21146f66df86bad0c151722f2893fc8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794404"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097750"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>IJsDebugDataTarget::CreateStackFrameEnumerator — Metoda
-Tworzy moduł wyliczający dla ramki stosu.  
+Tworzy moduł wyliczający ramek stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreateStackFrameEnumerator(  
    DWORD threadId,  
    IEnumJsStackFrames **ppEnumerator  
@@ -37,10 +37,10 @@ HRESULT CreateStackFrameEnumerator(
   
 #### <a name="parameters"></a>Parametry  
  `threadId`  
- [in] Wątek jest uruchomiony w procesie docelowym.  
+ [in] Wątek działający w procesie docelowym.  
   
  `ppEnumerator`  
- [out] Moduł wyliczający ramki stosu.  
+ [out] Moduł wyliczający ramek stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
@@ -48,4 +48,4 @@ HRESULT CreateStackFrameEnumerator(
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugdatatarget — interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

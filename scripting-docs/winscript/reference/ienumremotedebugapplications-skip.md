@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20fb057cf70e49a1f7324901f5ab77369e77251
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 492c02df40c767ea54e78f6951c1d02c4a69bb32
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794374"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088533"
 ---
 # <a name="ienumremotedebugapplicationsskip"></a>IEnumRemoteDebugApplications::Skip
 Pomija określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -38,10 +38,10 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba segmentów w kolejności wyliczenie do pominięcia.  
+ [in] Liczba segmentów w kolejności wyliczenie, aby pominąć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT Skip(
  Ta metoda pomija określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)
+ [IEnumRemoteDebugApplications, interfejs](../../winscript/reference/ienumremotedebugapplications-interface.md)

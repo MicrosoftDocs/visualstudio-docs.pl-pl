@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794896"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088585"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-Ustawia tekst, który znajduje się w treści `IScriptEntry` bloku skryptu lub `IScriptScriptlet` skryptlet.  
+Ustawia tekst, który znajduje się w treści `IScriptEntry` blok skryptu albo `IScriptScriptlet` scriptlet.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetBody(  
    LPCOLESTR          psz  
 );  
@@ -38,11 +38,11 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [in] Aby uzyskać `IScriptEntry` bloku skryptu `psz` jest tekstem w tagów skryptu.  
+ [in] Aby uzyskać `IScriptEntry` blok skryptu `psz` jest tekstem w tagów skryptu.  
   
- Aby uzyskać `IScriptEntry` bloku funkcji `psz` jest treści funkcji.  
+ Aby uzyskać `IScriptEntry` bloku funkcji `psz` stanowi treści funkcji.  
   
- Aby uzyskać `IScriptScriptlet` obiektu (pochodzący od `IScriptEntry`), `psz` jest w skrypcie skryptlet.  
+ Aby uzyskać `IScriptScriptlet` obiektu (pochodzącą od `IScriptEntry`), `psz` znajduje się tekst skryptu scriptlet.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  

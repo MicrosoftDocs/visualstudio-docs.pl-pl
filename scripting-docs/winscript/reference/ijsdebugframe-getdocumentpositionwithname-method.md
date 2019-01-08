@@ -1,5 +1,5 @@
 ---
-title: IJsDebugFrame::GetDocumentPositionWithName — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugFrame::GetDocumentPositionWithName, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49afb5903e190280d226a24b22dc389041861c52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6333f9c52c3ab4e0cd01c34f5e5228721aa55b4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794569"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093837"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName — Metoda
-Zwraca bieżącą pozycję tej ramki stosu w dokumencie na poziomie użytkownika.  
+Zwraca bieżącą pozycję ramki stosu w obrębie dokumentu poziomie użytkownika.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithName(  
    BSTR *pDocumentName,  
    DWORD *pLine,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>Parametry  
  `pDocumentName`  
- [out] W przypadku skryptów statyczny adres URL dokumentu. Skryptów dynamicznych zwracana jest nazwa zawierający typ skryptu (na przykład eval kodu, funkcja kodu itp.).  
+ [out] Dla statycznych skryptów URL do dokumentu. Dla dynamicznych skryptów zwracana jest nazwa zawierająca typ skryptu (na przykład kod ewaluacyjny, kod funkcji itp.).  
   
  `pLine`  
- [out] 1 na podstawie pozycji w dokumencie.  
+ [out] pozycja 1 na podstawie wiersza w dokumencie.  
   
  `pColumn`  
- [out] 1 na podstawie pozycji w dokumencie.  
+ [out] pozycja 1 na podstawie wiersza w dokumencie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
@@ -52,4 +52,4 @@ HRESULT GetDocumentPositionWithName(
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugframe — interfejs](../../winscript/reference/ijsdebugframe-interface.md)
+ [IJsDebugFrame, interfejs](../../winscript/reference/ijsdebugframe-interface.md)

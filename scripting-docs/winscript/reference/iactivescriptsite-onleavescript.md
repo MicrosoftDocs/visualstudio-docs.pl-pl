@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aba20c13dc5568165641c5c7b8e871e0b5e8f322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7d08d58fc788d2d10ed044808ca40a5f4ea929c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793681"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093161"
 ---
 # <a name="iactivescriptsiteonleavescript"></a>IActiveScriptSite::OnLeaveScript
-Informuje hosta, że aparat skryptów zwrócił wykonywanie kodu skryptu.  
+Informuje hosta, że wykonywanie kodu skryptu zwróciło silnik wykonywania skryptów.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnLeaveScript(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT OnLeaveScript(void);
  Zwraca `S_OK` w przypadku powodzenia.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat skryptów musi wywołać tę metodę przed zwróceniem sterowania do wywoływania aplikacji, która wprowadzona aparatu skryptów. Na przykład, jeśli skrypt wywołuje obiekt, który wyzwala zdarzenie obsługiwane przez aparat skryptów, aparat skryptów należy wywołać [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) metoda przed wykonaniem zdarzenia, a musi wywołać `IActiveScriptSite::OnLeaveScript`po wykonaniu zdarzenia przed zwróceniem do obiektu, który uruchomił zdarzenia. Mogą być zagnieżdżone wywołania tej metody. Każdego wywołania `IActiveScriptSite::OnEnterScript` wymaga odpowiedniego wywołania tej metody.  
+ Aparat skryptów musi wywołać tę metodę przed zwróceniem sterowania do aplikacji wywołującej, który wprowadzono silnik wykonywania skryptów. Na przykład, jeśli skrypt wywołuje obiekt, który następnie uruchamia zdarzenie obsługiwane przez aparat skryptów aparatu skryptów należy wywołać [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) metoda przed wykonaniem zdarzeń, a musi wywołać `IActiveScriptSite::OnLeaveScript`po wykonaniu zdarzenia przed zwróceniem do obiektu, która wywołała zdarzenie. Mogą być zagnieżdżone wywołania tej metody. Każde wywołanie `IActiveScriptSite::OnEnterScript` wymaga odpowiedniego wywołania tej metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -1,5 +1,5 @@
 ---
-title: IJsDebugBreakPoint::IsEnabled — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugBreakPoint::IsEnabled, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb7ab887b8e3442a0c38ea403ad43bdea10cdd66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 22584acafc92b7acaa09432ec9f6cb04e7bab48c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794521"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089384"
 ---
 # <a name="ijsdebugbreakpointisenabled-method"></a>IJsDebugBreakPoint::IsEnabled — Metoda
-Określa, czy punkt przerwania jest włączone.  
+Określa, czy punkt przerwania jest włączony.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT IsEnabled(  
    BOOL *pIsEnabled  
 );  
@@ -36,15 +36,15 @@ HRESULT IsEnabled(
   
 #### <a name="parameters"></a>Parametry  
  `pIsEnabled`  
- [out] Zwraca wartość PRAWDA, jeśli punkt przerwania jest włączone; w przeciwnym razie zwraca wartość false.  
+ [out] Zwraca wartość PRAWDA, jeśli punkt przerwania jest włączony; w przeciwnym razie zwraca wartość false.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca E_UNEXPECTED, jeśli wywołano usunięto punktu przerwania.  
+ Zwraca wartość E_UNEXPECTED, jeśli wywołano usunięty punkt przerwania.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugbreakpoint — interfejs](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint, interfejs](../../winscript/reference/ijsdebugbreakpoint-interface.md)

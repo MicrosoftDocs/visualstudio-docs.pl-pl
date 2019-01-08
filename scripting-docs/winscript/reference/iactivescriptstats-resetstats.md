@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b56ca147c4484b00bfac5d1876ac58361901a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dd53cf1b91ae7eb18ccc88763437ecda44a574c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793558"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091354"
 ---
 # <a name="iactivescriptstatsresetstats"></a>IActiveScriptStats::ResetStats
 Resetuje statystyki dla tego skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ResetStats();  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT ResetStats();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -48,4 +48,4 @@ HRESULT ResetStats();
  Ta metoda powoduje zresetowanie statystyki dla tego skryptu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats, interfejs](../../winscript/reference/iactivescriptstats-interface.md)

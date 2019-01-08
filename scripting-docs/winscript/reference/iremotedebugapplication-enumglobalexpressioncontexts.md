@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a805d810c928e8e9a1b6f4e569f8eaa89f63d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a7e4f3e7cffe7c127b7ad4fdde47e58e6bc2a31c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794761"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091276"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
-Wylicza kontekstów wyrażenia globalnego dla wszystkich języków, działające w tej aplikacji.  
+Wylicza kontekstów wyrażenie globalne dla wszystkich języków, działające w tej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT EnumGlobalExpressionContexts(  
    IEnumDebugExpressionContexts**  ppedec  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Parametry  
  `ppedec`  
- [out] Moduł wyliczający, który zawiera listę konteksty wyrażenia globalnego dla wszystkich języków, działające w tej aplikacji.  
+ [out] W przypadku moduł wyliczający, który wyświetla kontekstów wyrażenie globalne dla wszystkich języków, działające w tej aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wylicza kontekstów wyrażenia globalnego dla wszystkich języków, działające w tej aplikacji.  
+ Ta metoda wylicza kontekstów wyrażenie globalne dla wszystkich języków, działające w tej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

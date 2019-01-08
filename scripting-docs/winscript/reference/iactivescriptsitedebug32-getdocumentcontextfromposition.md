@@ -10,19 +10,19 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 71136a1b3cb136cbc0a97cf39f59f1f4e950048b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793645"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094487"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-Używane przez aparat języka Aby delegować `IDebugCodeContext::GetSourceContext`.  
+Używane przez aparat języka, aby delegować `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDocumentContextFromPosition(  
    DWORD_PTR                dwSourceContext,  
    ULONG                    uCharacterOffset,  
@@ -33,19 +33,19 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parametry  
  `dwSourceContext`  
- [in] Zawartość źródłową przewidzianych do `ParseScriptText` lub `AddScriptlet`.  
+ [in] Zawartość źródłową udostępnionych `ParseScriptText` lub `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Znak przesuwane względem początku bloku skryptu lub skryptlet.  
+ [in] Znak przesunięcie względem początku bloku skryptu lub scriptlet.  
   
  `uNumChars`  
  [in] Liczba znaków w tym kontekście.  
   
  `ppsc`  
- [out] Kontekstu dokumentu odpowiadającego tej pozycji znaku zakresu.  
+ [out] Kontekst dokumentu, odpowiadający tej pozycji znaku zakresu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -55,4 +55,4 @@ HRESULT GetDocumentContextFromPosition(
  Aparaty języka ta metoda umożliwia delegowanie `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)
+ [IActiveScriptSiteDebug32, interfejs](../../winscript/reference/iactivescriptsitedebug32-interface.md)

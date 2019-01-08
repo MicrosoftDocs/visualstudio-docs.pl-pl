@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793741"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096255"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Udostępnia interfejs użytkownika okna zawierającego dokument określony debugowania do góry w debugerze.  
+Przesuwa okno zawiera dokument określonego debugowania do góry w debugerze interfejsu użytkownika.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT BringDocumentToTop(  
    IDebugDocumentText*  pddt  
 );  
@@ -38,10 +38,10 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parametry  
  `pddt`  
- [in] Debugowanie dokument, aby przełączyć do góry w interfejsie użytkownika debugera.  
+ [in] Debuguj dokument, aby przenieść do góry w interfejsie użytkownika debugera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -49,7 +49,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|Dokument nie jest znany.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powoduje wyświetlenie okna zawierającego debugowania określony dokument do góry w debugerze interfejsu użytkownika.  
+ Ta metoda powoduje wyświetlenie okna zawiera dokument określonego debugowania do góry w debugerze interfejsu użytkownika.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)
+ [IApplicationDebuggerUI, interfejs](../../winscript/reference/iapplicationdebuggerui-interface.md)

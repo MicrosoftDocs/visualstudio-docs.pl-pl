@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3bdccefb3a679694360ed9a7c6fea35eae6bdb1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a44f56e4070c159e67b1303514592c5dda25f56d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793819"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087246"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-Zwraca bieżące flagi podziału dla aplikacji.  
+Zwraca bieżące flagi przerwania dla aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetBreakFlags(  
    APPBREAKFLAGS*                   pabf,  
    IRemoteDebugApplicationThread**  pprdatSteppingThread  
@@ -39,21 +39,21 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>Parametry  
  `pabf`  
- [out] Bieżące flagi podziału dla aplikacji.  
+ [out] Bieżące flagi przerwania dla aplikacji.  
   
  `pprdatSteppingThread`  
- [out] Obecnie uruchomiony wątek.  
+ [out] Aktualnie uruchomionemu wątkowi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca bieżące flagi podziału dla aplikacji.  
+ Ta metoda zwraca bieżące flagi przerwania dla aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
- [Wyliczenie APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)
+ [APPBREAKFLAGS, wyliczenie](../../winscript/reference/appbreakflags-enumeration.md)

@@ -12,33 +12,33 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793498"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088806"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>Metoda IActiveScriptProfilerHeapEnum::GetOptionalInfo
-Pobiera opcjonalne informacje w określonym obiekcie (z zestawu sterty obiektów zwracanych z [metoda IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+Pobiera informacje opcjonalne określonego obiektu (z zestawu sterty obiektów zwracanych z [metoda IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- Nie powinna zwolnić zwrócony pamięć przypisana do zwracanych obiektów. Zamiast tego należy wywołać [metoda IActiveScriptProfilerHeapEnum::FreeObjectAndOptionalInfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
+ Nie powinna zwolnić zwrócone pamięć przypisana do zwracanych obiektów. Zamiast tego należy wywołać [metoda IActiveScriptProfilerHeapEnum::FreeObjectAndOptionalInfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `heapObject`  
- [Struktura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) której informacje.  
+ [PROFILER_HEAP_OBJECT, struktura](../../winscript/reference/profiler-heap-object-structure.md) dla której ma zostać zwrócone informacje.  
   
  `celt`  
- Liczba [struktura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) struktury do zwrócenia.  
+ Liczba [PROFILER_HEAP_OBJECT_OPTIONAL_INFO, struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) struktury do zwrócenia.  
   
  `optionalInfo`  
- [out] Tablica [struktura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) struktur dla określonego obiektu.  
+ [out] Tablica [PROFILER_HEAP_OBJECT_OPTIONAL_INFO, struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) struktury dla określonego obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- HRESULT.
+ Wartość HRESULT.

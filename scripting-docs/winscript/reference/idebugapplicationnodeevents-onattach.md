@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793942"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091263"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
 Obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji został dołączony do węzła nadrzędnego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -38,10 +38,10 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parametry  
  `prddpParent`  
- [in] Węzeł aplikacji debugowania, który jest nadrzędny tego węzła.  
+ [in] Węzeł aplikacji debugowania jest element nadrzędny tego węzła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,9 +50,9 @@ HRESULT onAttach(
 ## <a name="remarks"></a>Uwagi  
  Ta metoda obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji został dołączony do węzła nadrzędnego.  
   
- Implementacje z `IDebugApplicationNode` interfejsu Zgłoś to zdarzenie.  
+ Implementujące obiekty z `IDebugApplicationNode` interfejsu Zgłoś to zdarzenie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
- [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

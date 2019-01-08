@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04ea5303489a8c774adfaf65194237685a88a9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fc84edf16e5236f1f8a8cf679711d2ce4fe869b8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794617"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090366"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
-Powoduje przerwanie w debugerze przy najbliższej okazji aplikacji.  
+Powoduje, że aplikacja wkroczenia do debugera przy najbliższej sposobności.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CauseBreak();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT CauseBreak();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie tej metody nie powoduje natychmiastowe aplikacji. Jeśli aplikacja nie wykonuje obecnie kod skryptu, długo może upłynąć, zanim faktycznie dzieli aplikację.  
+ Wywołanie tej metody nie powoduje aplikacji natychmiast przerywa. Jeśli aplikacja nie jest aktualnie wykonuje kod skryptu, długi czas może upłynąć, zanim aplikacja faktycznie przerywa.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

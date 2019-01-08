@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791740"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097282"
 ---
 # <a name="breakpointstate-enumeration"></a>Wyliczenie BREAKPOINT_STATE
 Wskazuje stan punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -44,7 +44,7 @@ typedef enum tagBREAKPOINT_STATE {
 |------------|-----------------|  
 |BREAKPOINT_DELETED|Punkt przerwania już nie istnieje, ale nadal istnieją odwołania do niego.|  
 |BREAKPOINT_DISABLED|Punkt przerwania istnieje, ale jest wyłączona.|  
-|BREAKPOINT_ENABLED|Punkt przerwania istnieje i jest włączony.|  
+|BREAKPOINT_ENABLED|Punkt przerwania istnieje i jest włączona.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

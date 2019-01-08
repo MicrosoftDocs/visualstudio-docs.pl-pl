@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c344f0316bda6ed5ef895c1b88ae7b1a6465e73
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1798d347fff11a49b945519fd20c370eca75d590
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793846"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089924"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-Powiadamia menedżera debugowania procesu aparat języka, w trybie pojedynczy krok o zbliżającym się zwrócić do swojego obiektu wywołującego.  
+Powiadamia Menedżer debugowania procesów, że aparat języka, w trybie pojedynczego kroku zostanie powrócić do obiektu wywołującego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT StepOutComplete();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT StepOutComplete();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aparaty języka wywołać tę metodę w trybie pojedynczy krok tuż przed zwracają do ich wywołującego. Menedżer debugowania procesu używa tej możliwości do wszystkich innych aparatów skryptów, które powinny one przerwanie przy okazji pierwszego powiadomienia. Ta technika jest tryby są implementowane krok jak wielu języków.  
+ Aparaty języka wywołać tę metodę w trybie pojedynczego kroku przed powrócą do wywołującego ich. Menedżer debugowania procesów używa tej możliwości, aby powiadomić wszystkich innych aparatów skryptów, które dzielą powinny one przy okazji pierwszego. Ta technika jest jak między językami kroku tryby są implementowane.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abcb7c307513e513f3ba4d3a64d34f1e07e60d74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c837d5ee2e8b75bfe7603370d61385a67080cc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793513"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088520"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-Pobiera węzeł aplikacji w obszarze skryptu, który ma zostać dodany dokumentów.  
+Pobiera węzeł aplikacji, w ramach której skrypt dokumenty powinny zostać dodane.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetRootApplicationNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -38,17 +38,17 @@ HRESULT GetRootApplicationNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdanRoot`  
- [out] Węzeł aplikacji debugowania, który zawiera dokumenty skryptu. Może być `NULL`.  
+ [out] Węzeł aplikacji debugowania przechowuje dokumenty skryptów. Może być `NULL`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca węzła aplikacji, pod którym ma zostać dodany dokumentów skryptu. Metoda może zwracać `NULL` dla `ppdanRoot` skryptu dokumenty będą najwyższego poziomu.  
+ Ta metoda zwraca węzła aplikacji w ramach której powinny zostać dodane dokumenty skryptów. Metoda może zwrócić `NULL` dla `ppdanRoot` Jeśli dokumenty skryptów powinny być najwyższego poziomu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)
+ [IActiveScriptSiteDebug, interfejs](../../winscript/reference/iactivescriptsitedebug-interface.md)

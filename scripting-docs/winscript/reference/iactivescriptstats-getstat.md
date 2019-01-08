@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d00c438f0fe03566dfb7efb93645cad02dc7477
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793717"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095397"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
-Zwraca jedną z statystyki skrypty standardowe.  
+Zwraca jedną z statystyki skrypt standardowy.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetStat(  
    DWORD   stid,  
    ULONG*  pluHi,  
@@ -44,24 +44,24 @@ HRESULT GetStat(
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|Zwróć liczbę instrukcje wykonywane, ponieważ skrypt uruchomiony lub statystyki zostały zresetowane.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Zwróć liczbę instrukcje wykonywane od chwili uruchomienia skryptu lub statystyki zostały zresetowane.|  
   
  `pluHi`  
- [out] Wysoka 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący statystyki.  
+ [out] Wysoka 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący dane statystyczne.  
   
  `pluLo`  
- [out] Niski 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący statystyki.  
+ [out] Niski 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący dane statystyczne.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Możliwe wartości zawierają, ale nie są ograniczone do wartości w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Możliwe wartości obejmują, ale nie są ograniczone do wartości w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca jedną statystyk skrypty standardowe.  
+ Ta metoda zwraca jeden z statystyki skrypt standardowy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
- [Interfejs IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats, interfejs](../../winscript/reference/iactivescriptstats-interface.md)

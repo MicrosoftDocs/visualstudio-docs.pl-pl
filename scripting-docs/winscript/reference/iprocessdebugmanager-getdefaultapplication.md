@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27fc46e8a5e07c4eb25c5e246db138a27e5511ae
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ae3b1bec5fc3aba6ad8e53343f929d133f05493
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794863"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091393"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
 Zwraca domyślny obiekt aplikacji dla bieżącego procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDefaultApplication(  
    IDebugApplication**  ppda  
 );  
@@ -38,10 +38,10 @@ HRESULT GetDefaultApplication(
   
 #### <a name="parameters"></a>Parametry  
  `ppda`  
- [out] Obiekt debugowania aplikacji dla tej aplikacji.  
+ [out] Obiekt aplikacji debugowania dla tej aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,7 +50,7 @@ HRESULT GetDefaultApplication(
 ## <a name="remarks"></a>Uwagi  
  Ta metoda tworzy nowy obiekt debugowania aplikacji i dodaje go do uruchamiania listę aplikacji, jeśli to konieczne.  
   
- Aparaty język należy używać aplikacji określonej przez `GetDefaultApplication` metodę, jeśli są na nich uruchomione na hoście, który nie ma aplikacji.  
+ Aparaty języka należy używać aplikacji określonej przez `GetDefaultApplication` metody, jeśli są uruchomione na hoście, który nie zapewnia aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)
+ [IProcessDebugManager, interfejs](../../winscript/reference/iprocessdebugmanager-interface.md)

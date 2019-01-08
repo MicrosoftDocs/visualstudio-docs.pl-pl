@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79267220c7ad3ce19d1901c6371554c7aabacde8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 28821d90bc27d23d51db00e871807a2ccef885b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794344"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097516"
 ---
 # <a name="ienumdebugstackframesskip"></a>IEnumDebugStackFrames::Skip
 Pomija określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -38,10 +38,10 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba segmentów w kolejności wyliczenie do pominięcia.  
+ [in] Liczba segmentów w kolejności wyliczenie, aby pominąć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT Skip(
  Ta metoda pomija określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)
+ [IEnumDebugStackFrames, interfejs](../../winscript/reference/ienumdebugstackframes-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Profiler_heap_object_relationship_flags — wyliczenie | Dokumentacja firmy Microsoft
+title: PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS, wyliczenie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab542225e0238dbd40f90d9de66d43d0791e05e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b78285f332b339533d81228de5877043f699a67c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796357"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096294"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS — Wyliczenie
-Flagi, które reprezentują czy obiektu heap wskazywana w obiekcie relacji jest metody ustawiającej lub metody pobierającej. Używane w [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) metody, gdy określona jest wartość profiler_heap_object_relationship_flags — w `enumFlags` parametru.  
+Flagi pokazujące, czy obiekt sterty wskazany w relacji obiektu jest metodę pobierającą czy ustawiającą. Używane w [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) metody, gdy wartość PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS jest określona w `enumFlags` parametru.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE                      = 0x00000000,    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR           = 0x00010000,    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR           = 0x00020000,} PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS;  
 ```  
   
@@ -32,6 +32,6 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE        
   
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE|0x00000000|Ten obiekt sterty wskazywana w relacji obiektu nie jest rozpoznawany jako metody pobierającej lub ustawiającej.|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR|0x00010000|Obiekt sterty wskazywana w obiekcie relacji jest metody pobierającej. Te informacje będą przechowywane w wysokiej 2 bajty (16 bitów) z [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) pola.|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR|0x00020000|Obiekt sterty wskazywana w obiekcie relacji jest metody ustawiającej. Te informacje będą przechowywane w wysokiej 2 bajty (16 bitów) z `PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo` pola.|
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE|0x00000000|Ten obiekt stosu wskazany w relacji obiektu nie jest rozpoznawany jako metodę pobierającą czy ustawiającą.|  
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR|0x00010000|Obiekt sterty wskazany w relacji obiektu to metoda pobierająca. Te informacje będą przechowywane w wysokich 2 bajtach (16 bitów) z [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) pola.|  
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR|0x00020000|Obiekt sterty wskazany w relacji obiektu to metoda ustawiająca. Te informacje będą przechowywane w wysokich 2 bajtach (16 bitów) z `PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo` pola.|

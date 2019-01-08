@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791773"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092550"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Dodaje bibliotekę typów obszar nazw dla skryptu. Jest to podobne do `#include` dyrektywy języka C/C++. Umożliwia to zestaw wstępnie zdefiniowanych elementów takich jak definicje klas, `typedefs`oraz o nazwie stałe, które mają zostać dodane do środowiska czasu wykonywania dla skryptu.  
+Dodaje bibliotekę typów przestrzeń nazw dla skryptu. Jest to podobne do `#include` dyrektywy języka C/C++. Umożliwia zestaw wstępnie zdefiniowanych elementów, takich jak definicje klas `typedefs`i o nazwie stałych, które mają zostać dodane do środowiska wykonawczego dla skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -41,20 +41,20 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parametry  
  `guidTypeLib`  
- [in] Identyfikator CLSID biblioteki typów, aby dodać.  
+ [in] Identyfikator CLSID biblioteki typów do dodania.  
   
  `dwMaj`  
- [in] Numer wersji głównej.  
+ [in] Główny numer wersji.  
   
  `dwMin`  
- [in] Numer wersji pomocniczej.  
+ [in] Pomocniczy numer wersji.  
   
  `dwFlags`  
  [in] Flagi opcji. Mogą być następujące:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|Biblioteka typów zawiera opis formantu ActiveX, używany przez hosta.|  
+|SCRIPTTYPELIB_ISCONTROL|Biblioteka typów zawiera opis kontrolki ActiveX, który jest używany przez hosta.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -62,9 +62,9 @@ HRESULT AddTypeLib(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
-|`E_INVALIDARG`|Argument był nieprawidłowy.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować).|  
-|`TYPE_E_CANTLOADLIBRARY`|Nie można załadować określonej biblioteki typów.|  
+|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
+|`TYPE_E_CANTLOADLIBRARY`|Nie można załadować określonej biblioteki typu.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveTypeLib | Microsoft Docs
+title: IActiveScriptAuthor::RemoveTypeLib | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91d44d2f910a1523d0c45871e01d0258dcdd4138
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 36aac4ef2631dbc82dc64e61021ef6bb3f2ac153
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24793252"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096190"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
-Usuwa bibliotekę typów w skrypcie tworzenia aparatu przestrzeni nazw.  
+Usuwa bibliotekę typów w skrypcie tworzenia przestrzeni nazw aparatu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT RemoveTypeLib(  
    REFGUID   rguidTypeLib,  
    DWORD     dwMajor,  
@@ -43,10 +43,10 @@ HRESULT RemoveTypeLib(
  [in] Identyfikator CLSID (identyfikator klasy) biblioteki typów do usunięcia.  
   
  `dwMajor`  
- [in] Numer wersji głównej.  
+ [in] Główny numer wersji.  
   
  `dwMinor`  
- [in] Numer wersji pomocniczej.  
+ [in] Pomocniczy numer wersji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  

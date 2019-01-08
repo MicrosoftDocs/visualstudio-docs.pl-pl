@@ -18,22 +18,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6495c2d8782d1128700bdfb6d4081b80ffae878
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a6af315f25aa333ace4be7bb8e3584573f0cfd1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793885"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090925"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Umożliwia tworzenie obiektów w procesie debuger przez kod będący poza procesem do debugera.  
+Umożliwia tworzenie obiektów w procesie debugowania przez kod to znaczy poza procesem do debugera.  
   
 > [!IMPORTANT]
->  Tej metody nie powinny być implementowane, ponieważ pozwala niezaufanym kod w celu utworzenia dowolnego obiektów w wątku zaufanych debugera.  
+>  Ta metoda nie powinny być implementowane, ponieważ zezwala ona na niezaufanego kodu do tworzenia obiektów dowolnego wątku zaufanych debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreateInstanceAtDebugger(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -45,22 +45,22 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parametry  
  `rclsid`  
- [in] Identyfikator (CLSID) można utworzyć obiektu klasy.  
+ [in] Klasa identyfikator (CLSID) obiektu do utworzenia.  
   
  `pUnkOuter`  
- [in] Jeśli `NULL`, obiekt nie jest tworzony jako część agregacji. W przeciwnym razie `pUnkOuter` jest wskaźnik do obiektu agregacji `IUnknown` interfejsu (kontrolowanie `IUnknown`).  
+ [in] Jeśli `NULL`, obiekt nie został utworzony jako część agregacji. W przeciwnym razie `pUnkOuter` jest wskaźnikiem do obiektu agregacji `IUnknown` interfejsu (kontrolowanie `IUnknown`).  
   
  `dwClsContext`  
- [in] Kontekst do uruchomienia kodu wykonywalnego. Wartości te są pobierane z wyliczenia `CLSCTX`.  
+ [in] Kontekst do uruchamiania kodu wykonywalnego. Wartości te są pobierane z wyliczenia `CLSCTX`.  
   
  `riid`  
  [in] Identyfikator interfejsu używany do komunikacji z obiektem.  
   
  `ppvObject`  
- [out] Adres wskaźnika zmienna, która odbiera wskaźnika interfejsu w `riid`. Po pomyślnym powrocie *`ppvObject` znajduje się wskaźnik żądanego interfejsu. W przypadku awarii \* `ppvObject` zawiera `NULL`.  
+ [out] Adres zmiennej wskaźnika, który otrzymuje wskaźnik interfejsu w `riid`. Po powrocie pomyślne *`ppvObject` znajduje się wskaźnik żądanego interfejsu. W przypadku awarii \* `ppvObject` zawiera `NULL`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -72,4 +72,4 @@ HRESULT CreateInstanceAtDebugger(
  Metoda nie jest obecnie zaimplementowana.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)
+ [IApplicationDebugger, interfejs](../../winscript/reference/iapplicationdebugger-interface.md)

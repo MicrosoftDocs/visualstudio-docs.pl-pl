@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dab58a36110c0f0321bbf490a105bff9cddad009
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fb547e1032be03a6b1e79894dafda7442796592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794212"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090834"
 ---
 # <a name="ienumdebugapplicationnodesclone"></a>IEnumDebugApplicationNodes::Clone
-Tworzy moduł wyliczający, który zawiera stan tego samego jako bieżący modułu wyliczającego.  
+Tworzy moduł wyliczający, który zawiera ten sam stan jako bieżący modułu wyliczającego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugApplicationNodes**  pperddp  
 );  
@@ -41,14 +41,14 @@ HRESULT Clone(
  [out] Zwraca `IEnumDebugApplicationNodes` interfejsu klonu modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda tworzy moduł wyliczający, który zawiera stan tego samego jako bieżący modułu wyliczającego.  
+ Ta metoda tworzy moduł wyliczający, który zawiera ten sam stan jako bieżący modułu wyliczającego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)
+ [IEnumDebugApplicationNodes, interfejs](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

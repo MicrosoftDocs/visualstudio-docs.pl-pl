@@ -12,28 +12,28 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 748e5dbc948cc22e084a4e0b1e13222174bb739e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8dd2b827deba31af1958842cf0dacd2a85f4260d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793402"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095696"
 ---
 # <a name="iactivescriptprofilerheapenumfreeobjectandoptionalinfo-method"></a>Metoda IActiveScriptProfilerHeapEnum::FreeObjectAndOptionalInfo
-Zwalnia określony [struktura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) struktury i skojarzone z nimi [struktura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) elementów.  
+Zwalnia określony [struktura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) struktury i ich skojarzone [PROFILER_HEAP_OBJECT_OPTIONAL_INFO, struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) elementów.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT FreeObjectAndOptionalInfo (    [in] ULONG celt,    [in, size_is(celt)] PROFILER_HEAP_OBJECT** heapObjects);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- Liczba obiektów zwolnienia.  
+ Liczba obiektów do bezpłatnej.  
   
  `heapObjects`  
- Tablica [struktura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) struktury.  
+ Tablica [PROFILER_HEAP_OBJECT, struktura](../../winscript/reference/profiler-heap-object-structure.md) struktury.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- HRESULT.
+ Wartość HRESULT.

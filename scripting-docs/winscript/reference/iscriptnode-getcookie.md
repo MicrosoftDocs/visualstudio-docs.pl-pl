@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796258"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094240"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-Zwraca wartość zdefiniowanym przez aplikację, używanego do kojarzenia skryptlet z obiektu hosta.  
+Zwraca wartość zdefiniowanych przez aplikację, używanego do kojarzenia scriptlet za pomocą obiektu hosta.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetCookie(  
    DWORD              *pdwCookie  
 );  
@@ -38,9 +38,9 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>Parametry  
  `pdwCookie`  
- [out] Aby uzyskać `IScriptEntry` obiektów, zwraca wartość cookie zdefiniowanym przez aplikację.  
+ [out] Aby uzyskać `IScriptEntry` obiektów, zwraca wartość cookie zdefiniowanych przez aplikację.  
   
- Aby uzyskać `IScriptNode` 0 zwraca obiekt reprezentujący stronę sieci Web.  
+ Aby uzyskać `IScriptNode` obiekt reprezentujący stronę sieci Web zwraca wartość 0.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -52,4 +52,4 @@ HRESULT GetCookie(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

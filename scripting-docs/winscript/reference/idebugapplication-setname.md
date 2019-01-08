@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad54c1c9ba950c7f1b98d393bec2bf65c385ec60
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 35f2014b25f752145766aaeb166b2ba1a766ca44
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793864"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094409"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 Ustawia nazwę aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR  pstrName  
 );  
@@ -41,14 +41,14 @@ HRESULT SetName(
  [in] Nazwa aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Podana nazwa do tej metody jest zwracany w kolejnych wywołaniach `IRemoteDebugApplication::GetName` metody.  
+ Podana nazwa tej metody jest zwracany w kolejnych wywołaniach `IRemoteDebugApplication::GetName` metody.  
   
  Ta metoda powinna być wywoływana przed wywołaniem `IProcessDebugManager::AddApplication` metody.  
   

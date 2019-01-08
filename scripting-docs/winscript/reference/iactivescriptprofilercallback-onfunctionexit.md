@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a3343c7e3747c48a4c43a1c1ac17fe6502aee3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb3f71e9a8a383e2362bacb17698f4eec58f464e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793504"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092210"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-Powiadamia profilera dla obiekt czy zakończono wykonywanie funkcji aparatu skryptów wywołaniu, które nie jest wywołanie do modelu DOM (Document Object).  
+Powiadamia program profilujący obiektu, aparat skryptów zakończono wykonywanie funkcji wywołaniu, które nie jest wywołaniem do modelu DOM (Document Object).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnFunctionExit(  
     [in] PROFILER_TOKEN scriptId,   
     [in] PROFILER_TOKEN functionId);  
@@ -36,17 +36,17 @@ HRESULT OnFunctionExit(
   
 #### <a name="parameters"></a>Parametry  
  `scriptId`  
- [in] Unikatowy identyfikator skryptu, który jest ona częścią. Ten identyfikator jest przypisywany przez aparat skryptów.  
+ [in] Unikatowy identyfikator skryptu, który jest ona częścią. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
   
  `functionId`  
- [in] Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez aparat skryptów.  
+ [in] Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwracana wartość ta metoda jest ignorowana przez aparat skryptów.  
+ Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
- Dla wywołań modelu DOM, aparat skryptów wywołuje [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) zamiast `IActiveScriptProfilerCallback::OnFunctionExit`. Jest to spowodowane dużą liczbę unikatowych metody i właściwości w modelu DOM.  
+ Dla połączeń modelu DOM, wywołuje aparat skryptów [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) zamiast `IActiveScriptProfilerCallback::OnFunctionExit`. Jest to spowodowane dużą liczbą unikatowy metod i właściwości w modelu DOM.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
- [Interfejs IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

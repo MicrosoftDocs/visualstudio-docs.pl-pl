@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db65361e4bde14e803d9085a4530a505ccaf9fcb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4ae4a84821d0db226cbecb01e329e4f2941a675d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792136"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095098"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
-Dodaje nazwę elementu głównego poziomu do przestrzeni nazw aparatu skryptów. Element poziomu głównego jest obiekt o właściwości i metody, źródłem zdarzenia lub wszystkich trzech.  
+Dodaje nazwę elementu głównego poziomu do przestrzeni nazw aparatu skryptów. Element poziomu głównego jest obiektem, właściwości i metod, źródła zdarzeń lub wszystkich trzech środowiskach.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddNamedItem(  
     LPCOLESTR pstrName,  // address of item name  
     DWORD dwFlags          // item flags  
@@ -39,19 +39,19 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>Parametry  
  `pstrName`  
- [in] Adres buforu, który zawiera nazwę elementu, tak jak to pokazano w skrypcie. Nazwa musi być unikatowa i możliwy do utrwalenia.  
+ [in] Adres buforu, który zawiera nazwę elementu, tak jak to pokazano w skrypcie. Nazwa musi być unikatowa i stałe.  
   
  `dwFlags`  
  [in] Flagi skojarzone z elementem. Może być kombinacją tych wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTITEM_CODEONLY|Wskazuje, czy nazwany element reprezentuje obiekt tylko kod i host nie ma `IUnknown` ma zostać skojarzony z tym obiektem tylko kod. Host zawiera tylko nazwę dla tego obiektu. Zorientowane obiektowo języków, takich jak C++ ta flaga utworzyć klasę. Nie obsługuje wszystkich języków tej flagi.|  
-|SCRIPTITEM_GLOBALMEMBERS|Wskazuje, że element jest kolekcja globalnych właściwości i metod skojarzonych ze skryptem. Zwykle aparat skryptów rozróżnia nazwę obiektu (innych niż wyłącznie w celu używania go jako plik cookie dla [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) metody, lub w celu rozwiązania jawnego określania zakresu) i udostępnianie jej elementów członkowskich jako globalnego zmienne i metody. Umożliwia to hostowi rozszerzanie biblioteki (funkcje wykonawcze języka i tak dalej) dla skryptu. Zostanie pozostawiony do aparatu skryptów radzenia sobie z nazwa powoduje konflikt (na przykład, jeśli dwa elementy SCRIPTITEM_GLOBALMEMBERS mają metody o tej samej nazwie), chociaż nie powinien być zwracany błąd z powodu tej sytuacji.|  
-|SCRIPTITEM_ISPERSISTENT|Wskazuje, czy element powinien być zapisany, zapisanie aparatu skryptów. Podobnie, ustawienie ta flaga wskazuje, że przejście do stanu zainicjowane powinien zachować elementu nazwę i typ informacji (aparat skryptów jednak wszystkie wskaźniki prowadzące do interfejsów rzeczywistego obiektu).|  
-|SCRIPTITEM_ISSOURCE|Wskazuje, że element źródłem zdarzeń, które skrypt może sink. Obiekty podrzędne (właściwości obiektu znajdujących się w samych obiektów) można także źródła zdarzeń do skryptu. Nie jest cykliczne, ale na przykład zapewnia mechanizm wygodny w typowych przypadkach tworzenia kontenera i wszystkich jego elementów członkowskich kontrolki.|  
-|SCRIPTITEM_ISVISIBLE|Wskazuje, że nazwa elementu jest dostępne w przestrzeni nazw skrypt umożliwiający dostęp do właściwości, metod i zdarzeń elementu. Konwencja właściwości elementu obejmują elementy podrzędne elementu; w związku z tym wszystkie właściwości obiektu podrzędnego i metody (i ich elementy podrzędne, rekursywnie) będą dostępne.|  
-|SCRIPTITEM_NOCODE|Wskazuje, że element jest po prostu nazwę dodawane do skryptu obszar nazw i nie powinien być traktowany jako element, dla którego kod powinien być skojarzony. Na przykład bez ta flaga jest ustawiona, VBScript utworzy oddzielnego modułu o nazwie elementu i C++ może utworzyć klasy otoki osobne dla nazwanego elementu.|  
+|SCRIPTITEM_CODEONLY|Wskazuje, czy nazwany element reprezentuje obiekt tylko do kodu, nie ma hosta `IUnknown` ma zostać skojarzony z tym obiektem tylko do kodu. Host ma tylko nazwy dla tego obiektu. W językach obiektowych, takich jak C++ ta flaga utworzyć klasę. Nie wszystkie języki obsługują tę flagę.|  
+|SCRIPTITEM_GLOBALMEMBERS|Wskazuje, że element jest kolekcją globalne właściwości i metody związane ze skryptem. Zazwyczaj aparat skryptów rozróżnia nazwę obiektu (inne niż na potrzeby korzystania z niego jako plik cookie dla [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) metody lub eliminowania jawnego określania zakresu) i uwidocznić jej członków jako globalne zmienne i metody. Dzięki temu hosta rozszerzyć biblioteki (funkcje środowiska uruchomieniowego i tak dalej) dla skryptu. Pozostawia się silnik wykonywania skryptów, aby poradzić sobie z nazwą powoduje konflikt (na przykład, gdy dwa elementy SCRIPTITEM_GLOBALMEMBERS metody o tej samej nazwie), mimo że błąd nie powinien być zwracany ze względu na tę sytuację.|  
+|SCRIPTITEM_ISPERSISTENT|Wskazuje, czy element powinien być zapisany, jeśli silnik wykonywania skryptów jest zapisany. Podobnie, ustawienie tej flagi wskazuje, że przejścia z powrotem do stanu zainicjowania powinien zachować informacje nazwę i typ elementu (silnik wykonywania skryptów musi jednak zwalniać wszystkie wskaźniki prowadzące do interfejsów rzeczywistego obiektu).|  
+|SCRIPTITEM_ISSOURCE|Wskazuje, że element źródła zdarzeń, które skrypt może ujścia. Obiektów podrzędnych (właściwości obiektu, które znajdują się w samych obiektach) można również źródła zdarzeń do skryptu. Nie jest cykliczna, ale na przykład zapewnia wygodny mechanizm często spotykana tworzenia kontrolki kontenera i wszystkie jego elementów członkowskich.|  
+|SCRIPTITEM_ISVISIBLE|Wskazuje, że nazwa elementu jest dostępna w przestrzeni nazw skryptu, zezwalając na dostęp do właściwości, metod i zdarzeń elementu. Zgodnie z Konwencją właściwości elementu obejmują elementy podrzędne elementu; w związku z tym wszystkie podrzędne obiektu właściwości i metod (i ich elementy podrzędne, cyklicznie) będą dostępne.|  
+|SCRIPTITEM_NOCODE|Wskazuje, że element jest po prostu nazwą, które są dodawane do przestrzeni nazw skryptu i nie powinny być traktowane jako element, dla którego powinien zostać zwrócony kod skojarzone. Na przykład bez ta flaga jest ustawiona, VBScript spowoduje utworzenie oddzielnego modułu o nazwie elementu i języka C++ utworzyć klasę otoki oddzielnych dla nazwanego elementu.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -59,9 +59,9 @@ HRESULT AddNamedItem(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
-|`E_INVALIDARG`|Argument był nieprawidłowy.|  
+|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować).|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScript](../../winscript/reference/iactivescript.md)

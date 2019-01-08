@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 265c0a368fc7f0a5faf3ced3f335b3d7d49c1b24
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cd48bc881c9f5ab08fc6e75b2ef7f0b1cf470bbe
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794647"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086882"
 ---
 # <a name="iremotedebugapplicationthreadresume"></a>IRemoteDebugApplicationThread::Resume
-Wznawia wątku.  
+Wznawia działanie wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Resume(  
    DWORD*  pdwCount  
 );  
@@ -38,17 +38,17 @@ HRESULT Resume(
   
 #### <a name="parameters"></a>Parametry  
  `pdwCount`  
- [out] Wstrzymaj liczbę elementów w wątku.  
+ [out] Wstrzymania liczenia wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy ta metoda wznawia wątku, jego zmniejsza suspend-count.  
+ Gdy ta metoda wznawia działanie wątku, jego zmniejsza suspend-count.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

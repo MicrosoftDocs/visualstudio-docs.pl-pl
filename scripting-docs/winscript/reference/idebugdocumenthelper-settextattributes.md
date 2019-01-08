@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce837eda3a0d83a830e5d5e281b2d24cb932063a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef4ae1ccff730d6865e00174ec73e991245bd43
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794071"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096502"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-Ustawia atrybut na zakres tekstu, zastępowanie inne atrybuty tekstem.  
+Ustawia atrybuty zakres tekstu, zastępowanie inne atrybuty w tym tekście.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetTextAttributes(  
    ULONG              ulCharOffset,  
    ULONG              cChars,  
@@ -46,21 +46,21 @@ HRESULT SetTextAttributes(
  [in] Liczba znaków w zakresie.  
   
  `pstaTextAttr`  
- [in] Atrybuty tekstu źródłowego zakres tekstu.  
+ [in] Atrybuty tekst źródłowy zakres tekstu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Błąd do wywołania `SetTextAttributes` na zakres tekstu, przed dodaniem go do dokumentu. Wywołanie `AddDBCSText`, `AddUnicodeText`, lub `AddDeferredText` metody dodawania tekstu do dokumentu.  
+ Jest to błąd, aby wywołać `SetTextAttributes` na zakres tekstu, zanim ten tekst jest dodawany do dokumentu. Wywołaj `AddDBCSText`, `AddUnicodeText`, lub `AddDeferredText` metod dodawania tekstu do dokumentu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
  [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
- [Wyliczenie SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

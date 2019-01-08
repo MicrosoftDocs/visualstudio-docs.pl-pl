@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 629ecb8427539069bb9e235e733140331875288c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794545"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091822"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Zwraca identyfikator programowy zależne od języka dla klasy lub aplikacji, która wywołała błędu.  
+Zwraca identyfikator programowy zależne od języka dla klasy lub aplikacji, który spowodował błąd.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetSource(  
    BSTR*  pbstrSource  
 );  
@@ -38,20 +38,20 @@ HRESULT GetSource(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrSource`  
- [out] Ciąg zawierający identyfikator programowy, w postaci `progname.objectname`.  
+ [out] Ciąg, który zawiera identyfikator programowy, w postaci `progname.objectname`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest używana do określenia klasy lub aplikacji, w którym wystąpił wyjątek. Identyfikator programowy mogą być zwracane w języku określonym przez identyfikator ustawień regionalnych (LCID) dostarczony w momencie wywołania.  
+ Ta metoda jest używana do określenia klasy lub aplikacji, w którym wystąpił wyjątek. Identyfikator programowy mogą być zwracane w języku określonym przez podany w momencie wywołania identyfikator ustawień regionalnych (LCID).  
   
 > [!NOTE]
 >  Ta metoda nie jest zaimplementowana.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDispError](../../winscript/reference/idisperror-interface.md)
+ [IDispError, interfejs](../../winscript/reference/idisperror-interface.md)

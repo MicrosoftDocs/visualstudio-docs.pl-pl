@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45cd57e4ba9e86bf84f927f487c637d61aa5339b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d4bcb64b7bbb1c61e7f031d872f7d1440fd17833
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794050"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086635"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-`Init` Metoda inicjuje pomocnika dokumentu debugowania z nazwą i atrybuty początkowej.  
+`Init` Metoda inicjuje pomocnika dokumentu debugowania z nazwą i początkowa atrybuty.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Init(  
    IDebugApplication*  pda,  
    LPCOLESTR           pszShortName,  
@@ -41,30 +41,30 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [in] Debugowanie aplikacji skojarzony z tym dokumentem.  
+ [in] Debugowanie aplikacji skojarzone z tym dokumentem.  
   
  `pszShortName`  
- [in] Zerem ciągu zawierającego krótką nazwę dokumentu.  
+ [in] Ciąg zakończony znakiem null, zawierającego krótką nazwę dokumentu.  
   
  `pszLongName`  
- [in] Ciąg zakończony zerem, zawierający długa nazwa dokumentu.  
+ [in] Ciąg zakończony wartością null zawierający długa nazwa dokumentu.  
   
  `docAttr`  
  [in] Określa atrybuty dokumentu tekstowego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda inicjuje pomocnika dokumentu debugowania z nazwą i atrybuty początkowej.  
+ Ta metoda inicjuje pomocnika dokumentu debugowania z nazwą i początkowa atrybuty.  
   
- Ten dokument nie pojawia się w drzewie do `IDebugDocumentHelper::Attach` jest wywoływana.  
+ Ten dokument nie jest wyświetlana w drzewie, dopóki `IDebugDocumentHelper::Attach` jest wywoływana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [Stałe TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)
+ [TEXT_DOC_ATTR, stałe](../../winscript/reference/text-doc-attr-constants.md)

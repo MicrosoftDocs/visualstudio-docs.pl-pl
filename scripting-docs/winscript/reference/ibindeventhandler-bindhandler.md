@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66de7cba8181ce9f3d683a90e4d7dd51e63d4779
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62ac6de8342f0a436d984f4194351507fdcd5edd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793696"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090717"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
-Wiąże zdarzenia obiektu.  
+Wiąże zdarzenia do obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT BindHandler(  
    LPCOLESTR   pstrEvent,  
    IDispatch*  pdisp  
@@ -39,20 +39,20 @@ HRESULT BindHandler(
   
 #### <a name="parameters"></a>Parametry  
  `pstrEvent`  
- [in] Określa zdarzenia w celu obsługi.  
+ [in] Określa zdarzenie, aby obsłużyć.  
   
  `pdisp`  
- [in] Określa obiekt do obsługi zdarzenia.  
+ [in] Określa obiekt, aby obsłużyć zdarzenie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wiąże zdarzenia obiektu.  
+ Ta metoda jest powiązana zdarzenia obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IBindEventHandler](../../winscript/reference/ibindeventhandler-interface.md)
+ [IBindEventHandler, interfejs](../../winscript/reference/ibindeventhandler-interface.md)

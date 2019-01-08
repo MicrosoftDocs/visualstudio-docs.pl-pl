@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d053fdfe079636755acf125f5a2c02f8690b2a53
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e90036ef2536c82e5742328d5a9342de2cf1f438
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794410"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089768"
 ---
 # <a name="ienumdebugcodecontextsskip"></a>IEnumDebugCodeContexts::Skip
 Pomija określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -38,10 +38,10 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba segmentów w kolejności wyliczenie do pominięcia.  
+ [in] Liczba segmentów w kolejności wyliczenie, aby pominąć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT Skip(
  Ta metoda pomija określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IEnumDebugCodeContexts](../../winscript/reference/ienumdebugcodecontexts-interface.md)
+ [IEnumDebugCodeContexts, interfejs](../../winscript/reference/ienumdebugcodecontexts-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: affb385f2c057b7ac69b56d1e8b8c22d7391e43f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9331738c52453f4ef80b70ab7eebd79907d1f54
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793315"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094136"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-Udostępnia ramki stosu, które są włączone dla błędów czasu wykonywania.  
+Udostępnia ramki stosu, który jest wynikiem błędy czasu wykonania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetStackFrame(  
    IDebugStackFrame**  ppdsf  
 );  
@@ -38,10 +38,10 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>Parametry  
  `ppdsf`  
- [out] Ramki stosu tego błędu.  
+ [out] Ramka stosu błędu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT GetStackFrame(
  Ta metoda zapewnia ramki stosu, które są włączone dla błędów czasu wykonywania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)
+ [IActiveScriptErrorDebug, interfejs](../../winscript/reference/iactivescripterrordebug-interface.md)

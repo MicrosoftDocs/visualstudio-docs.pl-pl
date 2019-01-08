@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b5f1ccc35e83f4fa016b5ff3dae8fac867bb8d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86a19a0c8ff2ce64cf524ae9b5f0ad258409f2df
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793975"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094474"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
 Obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji została odłączona od węzła nadrzędnego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onDetach();  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT onDetach();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -47,9 +47,9 @@ HRESULT onDetach();
 ## <a name="remarks"></a>Uwagi  
  Ta metoda obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji została odłączona od węzła nadrzędnego.  
   
- Implementacje z `IDebugApplicationNode` interfejsu Zgłoś to zdarzenie.  
+ Implementujące obiekty z `IDebugApplicationNode` interfejsu Zgłoś to zdarzenie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
- [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

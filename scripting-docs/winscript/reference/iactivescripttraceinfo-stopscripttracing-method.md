@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3fb0f77ff84453eaf202d09d05cd926cf0e7c2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74e776d066d99a351d8dfe49a21df929ab10a996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793594"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089014"
 ---
 # <a name="iactivescripttraceinfostopscripttracing-method"></a>Metoda IActiveScriptTraceInfo::StopScriptTracing
-Zatrzymuje śledzenie skryptu.  
+Zatrzymuje skrypt śledzenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT StopScriptTracing(void); }  
 ```  
   
@@ -34,6 +34,6 @@ HRESULT StopScriptTracing(void); }
 ## <a name="return-value"></a>Wartość zwracana  
  Możliwe wartości zwracane dla tej metody są następujące:  
   
-1.  S_OK: sukces.  
+1.  S_OK: Powodzenie.  
   
-2.  E_NOTIMPL: Nie zaimplementowane.
+2.  E_NOTIMPL: Nie zaimplementowano.

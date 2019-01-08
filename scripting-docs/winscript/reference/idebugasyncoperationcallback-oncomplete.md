@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc55918c25da695f9eab470bf39fc648910ddc97
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4909f469b558ef4664a74c4a7926001d20adc40e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793930"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089404"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
-Sygnalizuje, że wynik jest dostępna z operacji asynchronicznych debugowania.  
+Sygnały, że wynik jest dostępna z operacją asynchroniczną debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT onComplete();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda sygnalizuje, że wynik jest dostępna z `IDebugAsyncOperation` obiektu. Zdarzenie jest generowane w wątku debugera.  
+ Ta metoda sygnalizuje, że wynik jest dostępna z `IDebugAsyncOperation` obiektu. Generowane zdarzenia debuger wątku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
- [Interfejs IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)
+ [IDebugAsyncOperation, interfejs](../../winscript/reference/idebugasyncoperation-interface.md)

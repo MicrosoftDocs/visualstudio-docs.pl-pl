@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31e304cfbb0ed7cd19b832d7ed7c33ccc2c930c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791683"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094773"
 ---
 # <a name="documentnametype-enumeration"></a>Wyliczenie DOCUMENTNAMETYPE
 Wskazuje, który typ ma zostać pobrany dla dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef enum tagDOCUMENTNAMETYPE {  
    DOCUMENTNAMETYPE_APPNODE,  
    DOCUMENTNAMETYPE_TITLE,  
@@ -43,11 +43,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |Element członkowski|Opis|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|Pobiera nazwę wyświetlaną w drzewie aplikacji.|  
+|DOCUMENTNAMETYPE_APPNODE|Pobiera nazwę, która jest wyświetlana w drzewie aplikacji.|  
 |DOCUMENTNAMETYPE_TITLE|Pobiera nazwę wyświetlaną na pasku tytułu podglądu.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Pobiera nazwę pliku bez ścieżki.|  
 |DOCUMENTNAMETYPE_URL|Pobiera adres URL dokumentu.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Pobiera tytuł dołączony wyliczenie do identyfikacji.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Pobiera tytuł dołączany wraz z wyliczenia do identyfikacji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

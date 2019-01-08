@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3be067d3b8c3e3268ac2caf1614b70efff6f665
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ebcb24b437b2c77f0dc76f5e753974c8dd299d17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793738"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090574"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 Obsługuje zdarzenie punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onHandleBreakPoint(  
    IRemoteDebugApplicationThread*  prpt,  
    BREAKREASON                     br,  
@@ -40,16 +40,16 @@ HRESULT onHandleBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `prpt`  
- [in] Wątek, w którym wystąpił punktu przerwania.  
+ [in] Wątek, gdzie wystąpił punkt przerwania.  
   
  `br`  
- [in] Przyczyna punktu przerwania.  
+ [in] Przyczyna punkt przerwania.  
   
  `pError`  
  [in] Informacje o błędzie środowiska uruchomieniowego, pod warunkiem, gdy wartość `br` jest BREAKREASON_ERROR.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -64,4 +64,4 @@ HRESULT onHandleBreakPoint(
  [Interfejs IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
  [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
- [Wyliczenie BREAKREASON](../../winscript/reference/breakreason-enumeration.md)
+ [BREAKREASON, wyliczenie](../../winscript/reference/breakreason-enumeration.md)

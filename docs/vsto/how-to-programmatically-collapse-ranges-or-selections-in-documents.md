@@ -11,17 +11,17 @@ helpviewer_keywords:
 - collapsing selections
 - ranges, collapsing
 - collapsing ranges
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d26a664a6d66c81a7409759478eb8c9de120964d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b2fdd352c0bf280e237a67d55ac658d9a61f590
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859071"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090847"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Instrukcje: Programowe zwijanie zakresów lub zaznaczenia w dokumentach
   Jeśli pracujesz z <xref:Microsoft.Office.Interop.Word.Range> lub <xref:Microsoft.Office.Interop.Word.Selection> obiektu, możesz chcieć zmienić zaznaczenie do punktu wstawiania przed Wstawianie tekstu, aby uniknąć, zastępując istniejący tekst. Zarówno <xref:Microsoft.Office.Interop.Word.Range> i <xref:Microsoft.Office.Interop.Word.Selection> obiekty mają metody Zwiń, co sprawia, że użycie <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> wartości wyliczenia:  

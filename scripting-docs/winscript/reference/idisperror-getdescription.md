@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c840dee7774ce5f056808daf98c448eac73ceb0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa0c837be9a98829551b9c7820faf154779479e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794422"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096957"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 Zwraca tekstowy opis błędu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDescription(  
    BSTR*  pbstrDescription  
 );  
@@ -41,14 +41,14 @@ HRESULT GetDescription(
  [out] Ciąg zawierający krótki opis błędu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Tekst jest zwracany w języku określonym przez identyfikator ustawień regionalnych (LCID), który został przekazany do `IDispatchEx::InvokeEx` metodę, która napotkała błąd.  
+ Zwracany jest tekst w języku określonym przez identyfikator ustawień regionalnych (LCID), który został przekazany do `IDispatchEx::InvokeEx` metodę, która napotkała błąd.  
   
 > [!NOTE]
 >  Ta metoda nie jest zaimplementowana.  

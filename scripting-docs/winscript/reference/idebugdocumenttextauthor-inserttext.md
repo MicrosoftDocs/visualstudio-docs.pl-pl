@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 248d89f7e1c29633a447bef672877682bfa44def
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fdef51ca1318e3513ca5a4ca49652ed066088
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794314"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093057"
 ---
 # <a name="idebugdocumenttextauthorinserttext"></a>IDebugDocumentTextAuthor::InsertText
 Wstawia nowy tekst w dokumencie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT InsertText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToInsert,  
@@ -46,17 +46,17 @@ HRESULT InsertText(
  [in] Liczba znaków do wstawienia.  
   
  `pcharText[]`  
- [in] Bufor zawierający znaki do wstawienia.  
+ [in] Bufor, zawierające znaki do wstawienia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wstawia nowego tekstu do dokumentu.  
+ Ta metoda Wstawia nowy tekst w dokumencie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)   

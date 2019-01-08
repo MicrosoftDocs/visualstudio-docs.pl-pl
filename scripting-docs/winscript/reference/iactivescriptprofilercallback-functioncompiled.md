@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 797476d4892224ad0b27c9caf579c0704693c835
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bd032914605c61b13a0a56a42e510c2af252f7e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793369"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091406"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-Powiadamia profilera dla obiekt, który aparat skryptów napotkał funkcji podczas kompilowania skryptu.  
+Powiadamia program profilujący, że obiekt, który aparat skryptów napotkał funkcję, podczas kompilacji skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT FunctionCompiled(  
     [in] PROFILER_TOKEN functionId,  
     [in] PROFILER_TOKEN scriptId,  
@@ -39,25 +39,25 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>Parametry  
  `functionId`  
- [in] Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez aparat skryptów.  
+ [in] Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
   
  `scriptId`  
  [in] Unikatowy identyfikator skryptu, który jest ona częścią.  
   
  `pwszFunctionName`  
- [in] Nazwa funkcji, lub wartość null dla funkcji anonimowej.  
+ [in] Nazwa funkcji, lub wartość null dla funkcja anonimowa.  
   
  `pwszFunctionNameHint`  
- [in] Wywnioskowane nazwę funkcji lub wartość null, jeśli aparat skryptów nie są rozpoznawane przez dowolną nazwę.  
+ [in] Wywnioskowanej nazwy funkcji lub wartość null, jeśli silnik wykonywania skryptów nie są rozpoznawane przez dowolną nazwę.  
   
  `pIDebugDocumentContext`  
- [in] Jeśli jest dostępna, wskaźnik do `IUnknown` interfejs, który należy wyszukać profilera [interfejs IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) wskaźnika. W przeciwnym razie wartość null.  
+ [in] Jeśli to możliwe, wskaźnik do `IUnknown` interfejs, który program profilujący musi szukać [interfejs IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) wskaźnika. W przeciwnym razie wartość null.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwracana wartość ta metoda jest ignorowana przez aparat skryptów.  
+ Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat skryptów zapewniają kontekstu dokumentu, tylko wtedy, gdy jest to obsługiwane przez hosta.  
+ Aparat skryptów może zapewnić kontekstu dokumentu, tylko wtedy, gdy jest to obsługiwane przez hosta.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

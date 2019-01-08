@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::GetThreadContext — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugDataTarget::GetThreadContext, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 50e2bdb7b8720549aac5e5b3c4cebffc4b7ae892
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794608"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090067"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext — Metoda
-Pobiera kontekst dla danego wątku.  
+Pobiera kontekst dla podanego wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -39,16 +39,16 @@ HRESULT GetThreadContext(
   
 #### <a name="parameters"></a>Parametry  
  `threadId`  
- [in] Wątek jest uruchomiony w procesie docelowym.  
+ [in] Wątek działający w procesie docelowym.  
   
  `contextFlags`  
- [in] Określa flagi kontekstu. To jest taka sama jak pole ContextFlags kontekstu (Aby uzyskać więcej informacji, zobacz pliku winnt.h, wyszukaj CONTEXT_ALL).  
+ [in] Określa flagi kontekstu. Jest tak samo jak w przypadku pola ContextFlags KONTEKSTU (Aby uzyskać więcej informacji, zobacz plik winnt.h, Szukaj CONTEXT_ALL).  
   
  `contextSize`  
  [in] Rozmiar buforu określony przez pContext.  
   
  `pContext`  
- [out] Odbiera struktury KONTEKSTU specyficzne dla platformy w buforze określona przez pContext.  
+ [out] Odbiera strukturę CONTEXT specyficzną dla platformy do buforu określonego przez pContext.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
@@ -56,4 +56,4 @@ HRESULT GetThreadContext(
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugdatatarget — interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

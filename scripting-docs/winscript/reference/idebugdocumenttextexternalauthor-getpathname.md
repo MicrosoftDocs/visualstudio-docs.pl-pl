@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17d27a320eac95445c083c718f5abcebbbc46cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794476"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088845"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
 Zwraca pełną ścieżkę i nazwę dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -39,13 +39,13 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrLongName`  
- [out] Ciąg zawierający Pełna ścieżka i nazwa pliku.  
+ [out] Ciąg zawierający pełną ścieżkę i nazwę pliku.  
   
  `pfIsOriginalFile`  
- [out] Wartość logiczna wskazująca, czy nazwa i ścieżka pliku odwoływać się do oryginalnego dokumentu.  
+ [out] Wartość logiczna wskazująca, jeśli ścieżka i nazwa pliku można znaleźć w oryginalnym dokumencie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -55,7 +55,7 @@ HRESULT GetPathName(
 ## <a name="remarks"></a>Uwagi  
  Ta metoda zwraca Pełna ścieżka i nazwa pliku dokumentu.  
   
- Jeśli `pfIsOriginalFile` jest wartość FAŁSZ, ścieżkę i nazwę pliku w `pbstrLongName` odwoływać się do nowo utworzonego pliku tymczasowego.  
+ Jeśli `pfIsOriginalFile` jest wartość FALSE, ścieżkę i nazwę pliku w `pbstrLongName` odwołuje się do nowo utworzonego pliku tymczasowego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)
+ [IDebugDocumentTextExternalAuthor, interfejs](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

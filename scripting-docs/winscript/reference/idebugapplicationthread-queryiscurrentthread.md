@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a291005a7c5b85230c55c736c68de82c0290d0e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6bbcccc6f3f87ced3b9a5af8fc5febeab020aea0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793840"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086466"
 ---
 # <a name="idebugapplicationthreadqueryiscurrentthread"></a>IDebugApplicationThread::QueryIsCurrentThread
-Określa, czy ten wątek jest aktualnie uruchomiony.  
+Określa, czy ten wątek jest aktualnie uruchomionemu wątkowi.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT QueryIsCurrentThread();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT QueryIsCurrentThread();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Metoda zakończyło się pomyślnie i jest aktualnie uruchomiony.|  
-|`S_FALSE`|To nie jest aktualnie uruchomiony.|  
+|`S_OK`|Wykonanie metody powiodło się i jest to aktualnie uruchomionemu wątkowi.|  
+|`S_FALSE`|Nie jest aktualnie uruchomionemu wątkowi.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy ten wątek jest aktualnie uruchomiony.  
+ Ta metoda określa, czy ten wątek aktualnie uruchomionemu wątkowi.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)
+ [IDebugApplicationThread, interfejs](../../winscript/reference/idebugapplicationthread-interface.md)

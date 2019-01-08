@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d293649e3a6a87c7f594e244378dc2a7e15ac6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c0d7b809f18407bfeb3de59c9cbb6e6e26911ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794434"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093343"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
 Rozpoczyna się obliczania wyrażenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugExpressionCallBack*  pdecb  
 );  
@@ -38,10 +38,10 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parametry  
  `pdecb`  
- [in] Wywołanie zwrotne wskazujące, po zakończeniu Obliczanie wyrażenia. Jeśli ten parametr ma `NULL`, zdarzenia nie są uruchamiane, a klient musi wykonać sondowanie stanu wyrażenie przy użyciu `QueryIsComplete`.  
+ [in] Wywołanie zwrotne wskazujące, po zakończeniu oceny wyrażenia. Jeśli ten parametr jest `NULL`, żadne zdarzenia nie są uruchamiane, a klient musi wykonać sondowanie stan wyrażenia przy użyciu `QueryIsComplete`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT Start(
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
- [Interfejs IDebugExpression](../../winscript/reference/idebugexpression-interface.md)
+ [IDebugExpression, interfejs](../../winscript/reference/idebugexpression-interface.md)

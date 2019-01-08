@@ -1,5 +1,5 @@
 ---
-title: IJsEnumDebugProperty::Next — metoda | Dokumentacja firmy Microsoft
+title: IJsEnumDebugProperty::Next, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8c85601709bb727549152ffdb01e15dbd84e510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9e6b0e3499f9420d42660880f616d2d0873d7a0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794800"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086778"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>IJsEnumDebugProperty::Next — Metoda
-Odczytuje właściwości dla tego obiektu.  
+Odczytuje właściwości tego obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG count,  
    IJsDebugProperty **ppDebugProperty,  
@@ -38,10 +38,10 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametry  
  `count`  
- [in] Liczba właściwości do odczytu.  
+ [in] Liczba znaków do odczytania.  
   
  `ppDebugProperty`  
- [out] Obiekt reprezentujący przeglądarce właściwości.  
+ [out] Obiekt reprezentujący przeglądarkę właściwości.  
   
  `pActualCount`  
  [out] Rzeczywista liczba właściwości obiektu.  
@@ -52,4 +52,4 @@ HRESULT Next(
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsenumdebugproperty — interfejs](../../winscript/reference/ijsenumdebugproperty-interface.md)
+ [IJsEnumDebugProperty, interfejs](../../winscript/reference/ijsenumdebugproperty-interface.md)

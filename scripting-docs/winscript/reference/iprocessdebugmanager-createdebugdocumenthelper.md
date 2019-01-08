@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b57f941017a0eef7892d43be9ed0414645e55e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62f61f00d2b5f850848efbcf3df65c5a3b10de3c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794812"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090486"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
 Tworzy nowy Pomocnik dokumentu debugowania dla tej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentHelper(  
    IUnknown*               punkOuter,  
    IDebugDocumentHelper**  pddh  
@@ -39,13 +39,13 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>Parametry  
  `punkOuter`  
- [in] Jeśli zwrócony obiekt ma być agregowany `punkOuter` jest wskaźnika interfejsu do sterowania `IUnknown`. W przeciwnym razie jest wskaźnika o wartości null.  
+ [in] Jeśli zwracany obiekt jest zagregowany, `punkOuter` jest wskaźnik interfejsu do sterowania `IUnknown`. W przeciwnym razie jest wskaźnikiem wartości null.  
   
  `pddh`  
  [out] Obiekt pomocnika dokumentu debugowania dla tej aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -55,4 +55,4 @@ HRESULT CreateDebugDocumentHelper(
  Ta metoda tworzy nowy Pomocnik dokumentu debugowania dla tej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)
+ [IProcessDebugManager, interfejs](../../winscript/reference/iprocessdebugmanager-interface.md)

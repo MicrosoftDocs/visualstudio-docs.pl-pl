@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f3acc7d61d63ce4fb4fe53729ce43324b9718a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64f62acd02e0901af341a571fb09ba81f3a11f28
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793273"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088832"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-Usuwa `NamedItem` obiektu z przestrzeni nazw, tworzenia aparatu skryptu.  
+Usuwa `NamedItem` obiektu z przestrzeni nazw skryptu tworzenia aparatu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT RemoveNamedItem(  
    LPCOLESTR          pszName  
 );  
@@ -46,10 +46,10 @@ HRESULT RemoveNamedItem(
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`S_FALSE`|`NamedItem` Obiekt nie znajduje się w przestrzeni nazw, tworzenia aparatu skryptu.|  
+|`S_FALSE`|`NamedItem` Obiekt nie występuje w przestrzeni nazw skryptu tworzenia aparatu.|  
   
 ## <a name="remarks"></a>Uwagi  
- [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) służy do dodania `NamedItem` obiekt do tworzenia nazw aparatu skryptu.  
+ [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) służy do dodania `NamedItem` obiektu w skrypcie tworzenia przestrzeni nazw aparatu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e7a7cf276e589aaaa3c00ecab8cbf881942f82
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793288"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094331"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-Zwraca zestaw znaków wykonania dla kontekstu żądanego ukończenia.  
+Zwraca zestaw znaków zakończenia dla kontekstu żądanego zakończenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetChars(  
    DWORD            fRequestedList,  
    BSTR             *pbstrChars  
@@ -39,19 +39,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Parametry  
  `fRequestedList`  
- [in] Kontekst wykonania żądanej.  
+ [in] Kontekst żądanego zakończenia.  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0X0001|Żądania wyliczenia po lewej stronie.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0X0002|Żądania w kontekście zakończenia elementu członkowskiego.|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Żądanie wyliczenia po lewej stronie.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Żąda kontekstu zakończenia elementu członkowskiego.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Żąda listy parametrów.|  
-|SCRIPT_CMPL_COMMIT|0X0004|Zakończenie żądania listy parametrów.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Ukończenie żądania listy parametrów.|  
   
  `pbstrChars`  
- [out] Znaki, które odpowiadają kontekst wykonania żądanej.  
+ [out] Znaki, które odnoszą się do kontekstu żądanego zakończenia.  
   
-|`fRequestedList`Parametr|Znaki zwrócone|  
+|`fRequestedList` Parametr|Znaki zwrócone|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
@@ -68,4 +68,4 @@ HRESULT GetChars(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

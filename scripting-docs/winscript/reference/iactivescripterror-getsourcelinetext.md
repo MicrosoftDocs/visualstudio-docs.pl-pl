@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb886d5f40042313483dc3b298488d1291c30563
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3186ec3edcdd0c66f06f7b769eff31e8b050c428
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793303"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091705"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
-Pobiera wiersz w pliku źródłowym, w którym błąd wystąpił w trakcie aparat skryptów skryptu.  
+Pobiera wiersz w pliku źródłowym, w którym wystąpił błąd podczas aparat skryptów był uruchomiony skrypt.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetSourceLineText(  
     BSTR *pbstrSourceLine  // address of buffer for source line  
 );  
@@ -38,10 +38,10 @@ HRESULT GetSourceLineText(
   
 ## <a name="parameter"></a>Parametr  
  `pbstrSourceLine`  
- [out] Adres buforu, który odbiera wiersz kodu źródłowego, w którym wystąpił błąd.  
+ [out] Adres buforu, który otrzymuje wiersza kodu źródłowego, w którym wystąpił błąd.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` w przypadku powodzenia lub `E_FAIL` Jeśli wiersz w pliku źródłowym nie została pobrana.  
+ Zwraca `S_OK` w przypadku powodzenia lub `E_FAIL` Jeśli nie pobrano wiersza w pliku źródłowym.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

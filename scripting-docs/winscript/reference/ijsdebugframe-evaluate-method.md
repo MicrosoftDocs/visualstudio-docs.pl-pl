@@ -1,5 +1,5 @@
 ---
-title: IJsDebugFrame::Evaluate — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugFrame::Evaluate, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794389"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091926"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate — Metoda
-Ocenia wyrażenie w kontekście tej ramki stosu.  
+Ocena wyrażenia w kontekście tej ramki stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -41,7 +41,7 @@ HRESULT Evaluate(
  [in] Wyrażenie do oceny.  
   
  `ppDebugProperty`  
- [out] Obiekt reprezentujący przeglądarce właściwości.  
+ [out] Obiekt reprezentujący przeglądarkę właściwości.  
   
  `pError`  
  [out] Komunikat o błędzie, jeśli wystąpi błąd.  
@@ -49,10 +49,10 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca następujące: S_OK: ocena zakończy się powodzeniem, * ppDebugProperty zawiera wynik oceny. Wartości S_FALSE: Ocena zgłasza błąd (lub operacja wersji ewaluacyjnej nie jest obsługiwana), \*pError zawiera komunikat o błędzie.  
+ Zwraca następujące czynności: S_OK: Oceny zakończy się powodzeniem, * ppDebugProperty zawiera wynik oceny. S_FALSE: Ocena zgłasza błąd (lub operacja oceny nie jest obsługiwana) \*pError zawiera komunikat o błędzie.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugframe — interfejs](../../winscript/reference/ijsdebugframe-interface.md)
+ [IJsDebugFrame, interfejs](../../winscript/reference/ijsdebugframe-interface.md)

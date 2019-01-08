@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d1404d90cc1edd882505e463938a2c1a5e8aea8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cce802cc1a6d63001cfbed020592b30a9d8dab1b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796252"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094799"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
-Usuwa obiekt poziomu tego drzewa.  
+Usuwa drzewa tego obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Delete();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT Delete();
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Po `Delete` metoda jest wywoływana, [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) — metoda powinny wskazywać, w tym węźle skryptu nie jest aktywny.  
+ Po `Delete` metoda jest wywoływana, [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) — metoda powinna być widoczna w tym węźle skrypt nie jest aktywny.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

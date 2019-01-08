@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793570"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097399"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Pobiera dojścia do okna, które mogą działać jako właściciel okno podręczne wyświetlające musi aparatu skryptów.  
+Pobranie dojścia do okna, które mogą pełnić rolę właściciela okna podręcznego, który musi być wyświetlana przez silnik wykonywania skryptów.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  
@@ -38,7 +38,7 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>Parametry  
  `phwnd`  
- [out] Adres zmiennej, która odbiera uchwytu okna.  
+ [out] Adres zmiennej, która odbiera uchwyt okna.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca `S_OK` w przypadku powodzenia lub `E_FAIL` Jeśli wystąpił błąd.  

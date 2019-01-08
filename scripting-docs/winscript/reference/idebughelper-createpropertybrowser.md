@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3eedf9d6ed07b510d7912a5b28d23e0a1f05dda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794398"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087753"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Zwraca właściwości przeglądarki, która opakowuje VARIANT.  
+Zwraca przeglądarkę właściwości, która otacza wariant.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -44,25 +44,25 @@ HRESULT CreatePropertyBrowser(
  [in] Wariant głównego do przeglądania.  
   
  `bstrName`  
- [in] Nazwa katalogu głównego.  
+ [in] Nazwa do nadania katalogu głównego.  
   
  `pdat`  
- [in] Wątek, na których chcesz żądać właściwości. Jeśli ten parametr ma wartość NULL, kierowanie nie jest wykonywana.  
+ [in] Wątek, na którym należy żądać właściwości. Jeśli ten parametr ma wartość NULL, kierowania nie jest wykonywana.  
   
  `ppdob`  
- [out] Przeglądarka właściwości.  
+ [out] Przeglądarkę właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wartość właściwości przeglądarki, która opakowuje VARIANT.  
+ Ta metoda zwraca przeglądarkę właściwości, która otacza wariant.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
  [Interfejs IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

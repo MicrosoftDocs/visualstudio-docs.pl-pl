@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c47619fface892e7e0d80141d7d4be53398a356e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2dd18408235a5621354531a2fd228ff44a19d6a1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794980"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088715"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Zwraca moduł wyliczający kontekstów wyrażenie znane przez ten składnik.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT EnumExpressionContexts(  
    IEnumDebugExpressionContexts**  ppedec  
 );  
@@ -41,17 +41,17 @@ HRESULT EnumExpressionContexts(
  [out] Moduł wyliczający kontekstów wyrażenie znane przez ten składnik.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Menedżer debugowania procesu używa tej metody, aby znaleźć wszystkie konteksty wyrażenia globalnego skojarzone z danym wątku.  
+ Menedżer debugowania procesów używa tej metody, aby znaleźć wszystkie konteksty wyrażenia globalnego skojarzone z danym wątku.  
   
 > [!NOTE]
->  Ta metoda jest wywoływana z w wątku zainteresowań. Jest czynności, aby zidentyfikować bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
+>  Ta metoda jest wywoływana z wewnątrz wątku zainteresowania. Jest implementujący do identyfikowania bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IProvideExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-interface.md)
+ [IProvideExpressionContexts, interfejs](../../winscript/reference/iprovideexpressioncontexts-interface.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - data [Office development in Visual Studio], copying across worksheets
 - copying data, Office development in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9995b347fdfcb60acf72c79b0e1bddc20bab717b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: babf55cd7728734e6ab6575c960a2b821f510154
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924868"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087870"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Instrukcje: Programowe kopiowanie danych i formatowanie między arkuszami
   Możesz skopiować dane z zakresu na jeden arkusz do innych arkuszy w skoroszycie za pomocą <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metody. Określ zakres, oraz czy mają zostać skopiowane dane, formatowanie lub obu.  

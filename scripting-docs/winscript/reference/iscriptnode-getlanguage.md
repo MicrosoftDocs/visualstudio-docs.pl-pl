@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10bab879574f378a1000c398a8f566eea7dd9b4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1639d1f956413545d82f79af3e6b310b20af564e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796270"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089586"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
-Zwraca język skryptów, który jest używany przez bieżący węzeł skryptu.  
+Zwraca język skryptów, używany przez bieżącego węzła skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetLanguage(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Zwraca "JScript", jeśli węzeł skrypt używa języka JScript lub "VBScript", jeśli węzeł skrypt używa języka Visual Basic Scripting Edition (VBScript).  
+ [out] Wraca "JScript", jeśli węzeł skrypt używa języka JScript lub "VBScript", jeśli węzeł skrypt używa Visual Basic Scripting Edition (VBScript).  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -50,4 +50,4 @@ HRESULT GetLanguage(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

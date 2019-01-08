@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugprocess — interfejs | Dokumentacja firmy Microsoft
+title: IJsDebugProcess, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a81104f51ca1a66c493779146b7eaa102ea300
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecdec77a8bcb3c1fb8a1dc64c63b363b4f001fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794725"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086661"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess — Interfejs
-Zawiera procedury sprawdzania i kontrolowania procesu docelowego.  
+Zawiera procedury kontroli procesu docelowego i sprawdzania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IJsDebugProcess : public IUnknown;  
 ```  
   
@@ -34,12 +34,12 @@ IJsDebugProcess : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebugProcess::CreateBreakPoint — metoda](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Ustawia punkt przerwania w pozycji określonego dokumentu.|  
-|[IJsDebugProcess::CreateStackWalker — metoda](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Metoda fabryki walkera stosu.|  
-|[IJsDebugProcess::PerformAsyncBreak — metoda](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Umieszcza aparat skryptu w trybie przerwania powodowania podział na następną instrukcję skryptu.|  
+|[IJsDebugProcess::CreateBreakPoint, metoda](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Ustawia punkt przerwania w położeniu określonego dokumentu.|  
+|[IJsDebugProcess::CreateStackWalker, metoda](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Metoda fabryki tworząca analizatora pamięci stosu.|  
+|[IJsDebugProcess::PerformAsyncBreak, metoda](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Ustawia aparat obsługi skryptów w trybie przerwania, powodując przerwanie w następnej instrukcji skryptu.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

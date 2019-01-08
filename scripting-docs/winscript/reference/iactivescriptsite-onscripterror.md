@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ae066fe7fa04a5c97dec618c65ccee3f90984a0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d2c9cb95615ad0b978cc7fd9943b687e5a7f3cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793483"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088416"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
-Informuje hosta, że wystąpił błąd wykonywania w trakcie aparat skryptu.  
+Informuje hosta, że wystąpił błąd wykonania, gdy aparat był uruchomiony skrypt.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnScriptError(  
     IActiveScriptError *pase  // address of error interface  
 );  
@@ -38,10 +38,10 @@ HRESULT OnScriptError(
   
 #### <a name="parameters"></a>Parametry  
  `pase`  
- [in] Adres obiektu błąd [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interfejsu. Hosta można użyć tego interfejsu do uzyskiwania informacji o błąd wykonywania.  
+ [in] Adres obiektu błąd [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interfejsu. Host może używać tego interfejsu, aby uzyskać informacje na temat błędu wykonania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` Jeśli błąd został prawidłowo obsłużony lub OLE zdefiniowane w przeciwnym razie kod błędu.  
+ Zwraca `S_OK` czy błąd został prawidłowo obsłużony, OLE zdefiniowany kod błędu, w przeciwnym razie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

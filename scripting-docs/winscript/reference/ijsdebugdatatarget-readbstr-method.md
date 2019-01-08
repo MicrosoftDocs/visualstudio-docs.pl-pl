@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::ReadBSTR — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugDataTarget::ReadBSTR, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85fbdb556b59c67610ad65b7e1f056399ad6da58
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afd216c869cd88a643f68f0abd1fc095a675e24b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794614"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095800"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR — Metoda
-Odczytuje BSTR z docelowego debugowania.  
+Odczytuje ciąg BSTR z docelowego programu debug.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ReadBSTR(  
    UINT64 address,  
    BSTR *pString  
@@ -40,15 +40,15 @@ HRESULT ReadBSTR(
  [in] Adres do odczytu.  
   
  `pString`  
- [out] BSTR odczytywać cel debugowania.  
+ [out] Odczyt BSTR z docelowego programu debug.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca E_JsDEBUG_INVALID_MEMORY_ADDRESS, jeśli adres nie jest prawidłowy.  
+ Zwraca wartość E_JsDEBUG_INVALID_MEMORY_ADDRESS, jeśli adres nie jest prawidłowy.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugdatatarget — interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

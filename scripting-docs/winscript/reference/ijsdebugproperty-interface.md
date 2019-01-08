@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugproperty — interfejs | Dokumentacja firmy Microsoft
+title: IJsDebugProperty, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 459a26f78e2dd5c2d1d85d829fd622d9d2697409
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e608da11e09020f12f6506f6830b5640f82688ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794533"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090250"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty — Interfejs
-Reprezentuje przeglądarce właściwości.  
+Przedstawia przeglądarkę właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IJsDebugProperty : public IUnknown;  
 ```  
   
@@ -34,11 +34,11 @@ IJsDebugProperty : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebugProperty::GetMembers — metoda](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Pobiera elementy członkowskie tego obiektu.|  
-|[IJsDebugProperty::GetPropertyInfo — metoda](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Pobiera informacje dla tego obiektu.|  
+|[IJsDebugProperty::GetMembers, metoda](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Pobiera elementy członkowskie tego obiektu.|  
+|[IJsDebugProperty::GetPropertyInfo, metoda](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Pobiera informacje dla tego obiektu.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

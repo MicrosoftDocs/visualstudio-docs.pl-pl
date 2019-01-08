@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3862a48ff4649f018eec79bf0411f23bc9f6d7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c484d212e2dccf20717aec5dca44d5c3319e15c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796249"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089573"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
-Zwraca indeks obiektu w lista elementów podrzędnych elementu nadrzędnego.  
+Zwraca indeks obiektu w liście elementów podrzędnych elementu nadrzędnego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetIndexInParent(  
    ULONG              pisn,  
 );  
@@ -38,9 +38,9 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>Parametry  
  `pisn`  
- [out] Zwraca indeks obiektu w lista elementów podrzędnych elementu nadrzędnego.  
+ [out] Zwraca indeks obiektu w liście elementów podrzędnych elementu nadrzędnego.  
   
- Jeśli ta metoda jest wywoływana przez `IScriptNode` obiekt reprezentujący stronę sieci Web, ten parametr zwracanych 0.  
+ Jeśli ta metoda jest wywoływana `IScriptNode` obiektu, że reprezentuje strony sieci Web, ten parametr zwraca wartość 0.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -52,4 +52,4 @@ HRESULT GetIndexInParent(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

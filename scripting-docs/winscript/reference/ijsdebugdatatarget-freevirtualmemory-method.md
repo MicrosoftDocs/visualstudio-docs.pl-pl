@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::FreeVirtualMemory — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugDataTarget::FreeVirtualMemory, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed5fabfca8ac9b0e9fe0dfba346b0354f4c0576f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794776"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086804"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>IJsDebugDataTarget::FreeVirtualMemory — Metoda
-Zwalnia i/lub decommits obszaru pamięci w wirtualnej przestrzeni adresowej procesu docelowego.  
+Zwalnia i/lub anuluje region pamięci w wirtualnej przestrzeni adresowej procesu docelowego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT FreeVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -38,13 +38,13 @@ HRESULT FreeVirtualMemory(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [in] Adresów, w którym zwolniona pamięć procesu docelowego.  
+ [in] Adres w ramach procesu docelowego, gdzie pamięć powinna być zwolniona.  
   
  `size`  
- [in] Liczba bajtów do zrzeka się. Aby zwolnić obszaru pamięci, ta wartość musi być zero.  
+ [in] Liczba bajtów przeznaczonych do anulowania. Aby zwolnić region pamięci, ta wartość musi mieć wartość zero.  
   
  `freeType`  
- [in] Wskazuje typ wolnego operacji do wykonania. Jest to zazwyczaj wartości MEM_RELEASE (0x8000), które zwalnia określonego regionu stron. Po wykonaniu operacji strony są w stanie wolnym. MEM_DECOMMIT (0x4000) można zamiast tego zrzeka stron bez ich zwolnienie.  
+ [in] Wskazuje typ wolnych operacji do wykonania. Jest to zazwyczaj MEM_RELEASE (0x8000), która uwalnia określony region stron. Po tej operacji strony są w stanie wolnym. MEM_DECOMMIT (0x4000) można w zamian użyć do anulowania przydziałów stron bez ich zwalniania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
@@ -55,4 +55,4 @@ HRESULT FreeVirtualMemory(
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugdatatarget — interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

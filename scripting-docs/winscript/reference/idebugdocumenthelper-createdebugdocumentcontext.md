@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54d91c4df9d1e478d028e95e5cfc930d69355c54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d91a24a9255ff9ae558e9ff821b358331ef788b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794077"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097269"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Tworzy nowy kontekst dokumentu debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentContext(  
    ULONG                    iCharPos,  
    ULONG                    cChars,  
@@ -40,16 +40,16 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Parametry  
  `iCharPos`  
- [in] Lokalizacja początku debugowania zawartości dokumentu.  
+ [in] Lokalizacja rozpoczęcia debugowania zawartości dokumentu.  
   
  `cChars`  
- [in] Liczba znaków w tym kontekście.  
+ [in] Liczba znaków w kontekście.  
   
  `ppddc`  
  [out] Nowy kontekst dokumentu debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -59,4 +59,4 @@ HRESULT CreateDebugDocumentContext(
  Ta metoda umożliwia hosta utworzyć nowy kontekst dokumentu debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

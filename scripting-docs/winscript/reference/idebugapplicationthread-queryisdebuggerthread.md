@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c3ad00fafa602b7a2f55b0412ae16c82cc2f5bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7ec9e5546a2a957e4842c91e9870ee8d761b2a69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793906"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097347"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
-Określa, czy ten wątek jest wątek debugera.  
+Określa, czy ten wątek jest debugera wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT QueryIsDebuggerThread();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT QueryIsDebuggerThread();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Metoda powiodło się i to wątek debugera.|  
-|`S_FALSE`|To nie jest wątek debugera.|  
+|`S_OK`|Wykonanie metody powiodło się i jest to wątek debugera.|  
+|`S_FALSE`|Nie jest debugera wątku.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy ten wątek jest wątek debugera.  
+ Ta metoda określa, czy ten wątek wątek debugera.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)
+ [IDebugApplicationThread, interfejs](../../winscript/reference/idebugapplicationthread-interface.md)

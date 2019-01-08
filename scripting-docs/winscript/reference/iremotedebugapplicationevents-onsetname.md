@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d794665e02bd1280fe2a404e56e96ab1290a413f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a46eda1d041175b9cfca9c7304696b4e6a868d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794833"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086570"
 ---
 # <a name="iremotedebugapplicationeventsonsetname"></a>IRemoteDebugApplicationEvents::OnSetName
 Obsługuje zdarzenie nazwę zestawu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnSetName(  
    LPCOLESTR  pstrName  
 );  
@@ -41,14 +41,14 @@ HRESULT OnSetName(
  [in] Nowa nazwa.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obsługuje zdarzenia nazwę zestawu.  
+ Ta metoda obsługuje zdarzenie nazwę zestawu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents, interfejs](../../winscript/reference/iremotedebugapplicationevents-interface.md)

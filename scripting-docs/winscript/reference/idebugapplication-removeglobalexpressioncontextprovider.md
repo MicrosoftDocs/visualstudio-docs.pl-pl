@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 791d6a3a237c36c123aea662dc4bb933b97d35d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5038d85e48b6735c81977d20f295dd4e0868e2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793945"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093889"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
-Usuwa dostawca kontekstu wyrażenia globalnego z tej aplikacji.  
+Usuwa dostwcy kontekstu wyrażenie globalne z tej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT RemoveGlobalExpressionContextProvider(  
    DWORD_PTR  dwCookie  
 );  
@@ -38,18 +38,18 @@ HRESULT RemoveGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>Parametry  
  `dwCookie`  
- [in] Plik cookie zwrócony przez `AddGlobalExpressionContextProvider` metody podczas dodawania dostawcy kontekście globalnym.  
+ [in] Zwrócone przez plik cookie `AddGlobalExpressionContextProvider` metody podczas dodawania dostawcy w kontekście globalnym.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- `RemoveGlobalExpressionContextProvider` Metoda usuwa dostawca kontekstu wyrażenia globalnego z tej aplikacji.  
+ `RemoveGlobalExpressionContextProvider` Metoda usuwa dostwcy kontekstu wyrażenie globalne z tej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c90b5d089ea6665060944e0a6f720a43aa1295a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791803"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097048"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Powoduje, że aparat skryptów abandon dowolnego skryptu aktualnie załadowanych utratę stanu i zwolnić wszystkie wskaźniki interfejsu, wymagana jest wartość inne obiekty, w związku z tym wprowadzanie stanie zamkniętym. Wychwytywanie zdarzeń, natychmiast wykonać skryptu tekst i wywołań makra, które są już w toku zostały zakończone przed zmianą stanu (Użyj [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) anulować uruchomiony wątek skryptu). Tej metody należy wywołać można przez hosta tworzenia interfejsu zwolnieniu aby zapobiec problemom odwołanie cykliczne.  
+Powoduje, że aparat skryptów zrezygnowania z dowolnego aktualnie załadowanych skryptu, utraty stanu i zwolnij wszystkie wskaźniki interfejsu, które inne obiekty, w związku z tym wprowadzenie stanu zamkniętego. Obiekty sink zdarzenia, tekst skryptu natychmiast wykonane i wywołań makra, które są już w toku odbywa się przed zmianami stanu (Użyj [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) anulowania uruchomionego wątku skryptu). Ta metoda musi wywoływana przez tworzenie hostów, przed udostępnieniem interfejsu, aby uniknąć problemów z odwołanie cykliczne.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Close(void);  
 ```  
   
@@ -40,9 +40,9 @@ HRESULT Close(void);
 |Wartość|Znaczenie|  
 |-----------|-------------|  
 |`S_OK`|Powodzenie.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jest już w stanie zamkniętym).|  
-|`OLESCRIPT_S_PENDING`|Metoda została pomyślnie w kolejce, ale nie zmienił się stan jeszcze. Podczas zmiany stanu lokacji ma być wywołanie zwrotne [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.|  
-|`S_FALSE`|Metoda zakończyło się pomyślnie, ale skrypt został już zamknięty.|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów był już w stanie zamkniętym).|  
+|`OLESCRIPT_S_PENDING`|Metoda zostało pomyślnie dodane do kolejki, ale nie zmienił się stan jeszcze. Podczas zmiany stanu, lokacja znajduje się nastąpi wywołanie zwrotne na [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.|  
+|`S_FALSE`|Wykonanie metody powiodło się, ale skrypt został już zamknięty.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScript](../../winscript/reference/iactivescript.md)

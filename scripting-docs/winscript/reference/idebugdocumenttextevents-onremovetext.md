@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d58e45d6c3bfffae0067c9d53b3df8972deb0500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81d7345d0832d0f9bfc6942fa5a27db82b45bb95
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794431"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097204"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
 Wskazuje, czy tekst został usunięty z dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onRemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,20 +39,20 @@ HRESULT onRemoveText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Pozycja znaku pierwszego znaku usunięte.  
+ [in] Usunąć pozycji znaku pierwszego znaku.  
   
  `cNumToRemove`  
  [in] Liczba znaków usunięte.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Tej metody oznacza, że tekst został usunięty z dokumentu.  
+ Ta metoda wskazuje, czy tekst został usunięty z dokumentu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   

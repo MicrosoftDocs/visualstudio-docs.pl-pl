@@ -14,22 +14,22 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8306b1d4ff68fe9eec00d47d8c702278e89fc37b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce3a164f3ee4d81ca849db7c4745948ffe17d56e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793372"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097191"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Zwraca wartość wskazującą rodzaj zgłaszanego wyjątku.  
   
 > [!IMPORTANT]
->  [Interfejs IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) jest implementowany przez PDM wersji 11.0 lub nowszej. Znajduje się w zestawie activdbg100.h.  
+>  [Interfejs IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetExceptionThrownKind(  
    SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND*  pExceptionKind  
 );  
@@ -37,14 +37,14 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Parametry  
  `pExceptionKind`  
- [out] Rodzaj wyjątek zgłaszany (na przykład pierwszej szansy lub nieobsługiwany), reprezentowany przez [wyliczenie SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) wartości wyliczenia.  
+ [out] Rodzaj wyjątku, który jest generowany, (na przykład pierwszego rzędu lub nieobsługiwany), reprezentowana przez [wyliczenie SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) wartość wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md)
+ [IActiveScriptErrorDebug110, interfejs](../../winscript/reference/iactivescripterrordebug110-interface.md)

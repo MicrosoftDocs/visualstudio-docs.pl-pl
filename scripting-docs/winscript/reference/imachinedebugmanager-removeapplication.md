@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ee371ded11f38b5e049e236c92292d6f662f525
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b9b4124429c1a303cd66f4ccbfad8aba46ef3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794797"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097716"
 ---
 # <a name="imachinedebugmanagerremoveapplication"></a>IMachineDebugManager::RemoveApplication
-Usuwa z uruchomionym aplikacji listy aplikacji.  
+Usuwa aplikację z uruchomionych listy aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -38,17 +38,17 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parametry  
  `dwAppCookie`  
- [in] Plik cookie podany przy wywołaniu aplikacji został dodany do listy aplikacji.  
+ [in] Plik cookie podany przy wywołaniu metody aplikacja została dodana do listy aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana przez Menedżera debugowania procesu zawsze, gdy `IProcessDebugManager::RemoveApplication` jest wywoływana.  
+ Ta metoda jest wywoływana przez Menedżer debugowania procesów zawsze wtedy, gdy `IProcessDebugManager::RemoveApplication` jest wywoływana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   

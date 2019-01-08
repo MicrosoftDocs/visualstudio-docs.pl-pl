@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69e07c646bfa176f5e2dc07539f301a8ef5c5273
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8c10973bddef45321b9942afef05a696010433f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794239"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090223"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
 Synchronicznie wykonuje operację i zwraca.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Execute(  
    IUnknown**  ppunkResult  
 );  
@@ -38,18 +38,18 @@ HRESULT Execute(
   
 #### <a name="parameters"></a>Parametry  
  `ppunkResult`  
- [out] Parametr obiektu zwrócony przez operację.  
+ [out] Parametr obiekt zwrócony przez operację.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_ABORT`|Operacja została przerwana przez wywołanie metody `IDebugSyncOperation::InProgressAbort` metody.|  
+|`E_ABORT`|Operacja została przerwana, przez wywołanie metody `IDebugSyncOperation::InProgressAbort` metody.|  
   
 ## <a name="remarks"></a>Uwagi  
- Menedżer debugowania procesu w wywołaniach wątek docelowy `Execute` metody synchronicznie.  
+ Menedżer debugowania procesów w wywołaniach wątek docelowy `Execute` metoda synchronicznie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)
+ [IDebugSyncOperation, interfejs](../../winscript/reference/idebugsyncoperation-interface.md)

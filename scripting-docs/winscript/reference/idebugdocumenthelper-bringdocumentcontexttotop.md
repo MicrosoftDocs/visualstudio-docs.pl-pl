@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665d194abd2eed02096a2295ec0683a03830fb8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dcdccd2b06059e376941808827a499f7a2d1e45
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793912"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087857"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
-Wprowadzono kontekście tego dokumentu do góry w interfejsie użytkownika debugera.  
+Udostępnia kontekst tego dokumentu do góry w interfejsie użytkownika debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT BringDocumentContextToTop(  
    IDebugDocumentContext*  pddc  
 );  
@@ -38,17 +38,17 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parametry  
  `pddc`  
- Kontekstu dokumentu, aby przełączyć do góry w interfejsie użytkownika debugera.  
+ Kontekst dokumentu można przenieść do góry w interfejsie użytkownika debugera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda umożliwia kontekście tego dokumentu do góry w interfejsie użytkownika debugera.  
+ Ta metoda zapewnia kontekście tego dokumentu do góry w interfejsie użytkownika debugera.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

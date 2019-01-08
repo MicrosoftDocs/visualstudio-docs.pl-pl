@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c754ce92a342163acc07b69c097af5df4c226cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20abe2c10a0959f00e67d98ac405b74c35a0c032
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794857"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093279"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-Zwraca moduł wyliczający dla ramki stosu skojarzone z tego wątku.  
+Zwraca moduł wyliczający ramek stosu skojarzone z tego wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parametry  
  `ppedsf`  
- [out] Moduł wyliczający dla ramki stosu skojarzone z tego wątku.  
+ [out] Moduł wyliczający ramek stosu skojarzone z tego wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda musi zostać wywołany z w punkt przerwania. Moduł wyliczający ramki stosu powinien zwrócić ramki, począwszy od góry stosu, począwszy od najbardziej ostatnio wciśnięcia ramki.  
+ Ta metoda musi zostać wywołana z w ramach punktu przerwania. Moduł wyliczający ramek stosu, powinna zwrócić ramek, począwszy od góry stosu, począwszy od najbardziej niedawno wypychanie ramki.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

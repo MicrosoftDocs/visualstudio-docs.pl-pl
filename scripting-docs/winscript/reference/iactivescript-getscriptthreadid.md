@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8850319035b7b5e3a9cbbd4bbe4340e1eefacc96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b1c68d60b827e7540711cdf6ba34260fb8642ed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792004"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094877"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
-Pobiera identyfikator wątku skojarzone z danym wątku Win32 skryptów aparatu zdefiniowane.  
+Pobiera skryptów aparatu-zdefiniowany przez identyfikator wątku skojarzone z danym wątek Win32.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetScriptThreadID(  
     DWORD dwWin32ThreadID,       // Win32 thread identifier.  
     SCRIPTTHREADID *pstidThread  // Receives scripting thread. identifier  
@@ -39,10 +39,10 @@ HRESULT GetScriptThreadID(
   
 #### <a name="parameters"></a>Parametry  
  `dwWin32ThreadID` ,  
- [in] Identyfikator wątku uruchomiony wątek Win32 w bieżącym procesie. Użyj [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) funkcji, aby pobrać identyfikator wątku aktualnie wykonywane wątku.  
+ [in] Identyfikator wątku uruchomiony wątek Win32 w bieżącym procesie. Użyj [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) funkcję, aby pobrać identyfikator wątku aktualnie wykonywany wątek.  
   
  `pstidThread` ,  
- [out] Adres zmiennej, która odbiera identyfikator wątku skryptu, które są skojarzone z danym wątku Win32. Interpretacja ten identyfikator jest od lewej do aparatu skryptów, ale można ją po prostu kopię identyfikator wątku systemu Windows. Należy pamiętać, że jeśli zakończenie wątku Win32, ten identyfikator staje się nieprzypisane i później może być przypisana do innego wątku.  
+ [out] Adres zmiennej, która odbiera identyfikator wątku skryptu, które są skojarzone z danym wątek Win32. Interpretacja tego identyfikatora pozostało do silnika wykonywania skryptów, ale może być po prostu kopię Windows identyfikator wątku. Pamiętaj, że jeśli kończy się wątek Win32, ten identyfikator staje się nieprzypisane i mogą być później przypisane do innego wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -51,12 +51,12 @@ HRESULT GetScriptThreadID(
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować) i dlatego nie powiodła się.|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany) i w związku z tym nie powiodła się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Pobrano identyfikator może służyć w kolejnych wywołaniach metod kontroli wykonanie wątku skryptu takich jak [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) metody.  
+ Pobrano identyfikator może służyć w kolejnych wywołaniach metod kontroli wykonania skryptu w wątku takich jak [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) metody.  
   
- Ta metoda może być wywołana z wątków innych niż podstawowe powodowała objaśnienia innych niż podstawowe do obiektów hosta lub do [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) interfejsu.  
+ Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScript](../../winscript/reference/iactivescript.md)

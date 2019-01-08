@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1df0b0ca1d775d4d99e1da5f88a207bd4f78f99b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cab8bae7f131d24c1a2c7272dc8d1178e12bf0e6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794632"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095527"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
-Anuluje operację w toku w innym wątku.  
+Anuluje operację w toku na inny wątek.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT InProgressAbort();  
 ```  
   
@@ -38,18 +38,18 @@ HRESULT InProgressAbort();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_NOTIMPL`|Nie można anulować operację.|  
+|`E_NOTIMPL`|Nie można anulować operacji.|  
 |`E_ABORT`|Nie można ukończyć operacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Menedżer debugowania procesu wywołuje tę metodę z wewnątrz wątek debugera, aby anulować operację, która jest w toku w innym wątku.  
+ Menedżer debugowania procesów wywołuje tę metodę w z wewnątrz wątku debugera, aby anulować operację, która jest w toku w innym wątku.  
   
- Jeśli `InProgressAbort` metody nie można ukończyć operacji, zwraca `E_ABORT` tak szybko, jak to możliwe. Ta metoda może zwracać `E_NOTIMPL` Jeśli nie można anulować operację.  
+ Jeśli `InProgressAbort` metody nie można ukończyć operacji, zwraca `E_ABORT` tak szybko, jak to możliwe. Ta metoda może zwrócić `E_NOTIMPL` Jeśli nie można anulować operacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)
+ [IDebugSyncOperation, interfejs](../../winscript/reference/idebugsyncoperation-interface.md)

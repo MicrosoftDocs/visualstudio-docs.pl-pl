@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ef19861e0f386eb7139ec3e732068e4d2b6e7ba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b398ddac53f2633cbc090f5d49574bd4d94d36
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794782"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097776"
 ---
 # <a name="iremotedebugapplicationgetrootnode"></a>IRemoteDebugApplication::GetRootNode
-Zwraca węzła aplikacji, do którego są dodawane wszystkie węzły skojarzone z aplikacją.  
+Zwracanie węzła aplikacji w ramach której są dodawane wszystkie węzły, powiązane z daną aplikacją.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetRootNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -38,17 +38,17 @@ HRESULT GetRootNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdanRoot`  
- [out] Węzeł debugowania aplikacji, do którego są dodawane wszystkie węzły skojarzone z aplikacją.  
+ [out] Węzeł aplikacji debugowania, w ramach której są dodawane wszystkie węzły, powiązane z daną aplikacją.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca węzła aplikacji, do którego są dodawane wszystkie węzły skojarzone z aplikacją.  
+ Ta metoda zwraca węzła aplikacji w ramach której są dodawane wszystkie węzły, powiązane z daną aplikacją.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

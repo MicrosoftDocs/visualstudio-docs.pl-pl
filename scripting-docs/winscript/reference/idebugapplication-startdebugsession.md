@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aea5caead4921206428c2f1f36b74d057c8cef36
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 453286e310a6f16576d947cceb1947945f8627d3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793786"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086492"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Uruchamia domyślny debuger zintegrowane środowisko programistyczne (IDE) i dołącza sesji debugowania do tej aplikacji, jeśli nie jest już dołączony.  
+Uruchamia domyślny debuger zintegrowanego środowiska programistycznego (IDE) i dołącza sesji debugowania do tej aplikacji, jeśli nie jest już dołączony.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT StartDebugSession();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT StartDebugSession();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda służy do implementowania debugowanie just in time.  
+ Ta metoda jest używana do zaimplementowania debugowania just in time.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

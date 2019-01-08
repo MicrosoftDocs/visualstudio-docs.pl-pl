@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfc956c7d2d65d20788a79c9f685e386aba97a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4c67567b4dc4df74b43d8003104e8f47455b5f5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793792"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095410"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-Powoduje, że dany ciąg znaków, który będzie wyświetlany przez debuger zintegrowane środowisko programistyczne (IDE).  
+Powoduje, że dany ciąg mają być wyświetlane przez debuger zintegrowanego środowiska programistycznego (IDE).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT DebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -41,14 +41,14 @@ HRESULT DebugOutput(
  [in] Ciąg wyświetlany w debugerze.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda umożliwia to aparat języka zaimplementować obsługę danych wyjściowych debugowania specyficzny dla języka. Ten ciąg jest zwykle wyświetlany w oknie danych wyjściowych debugera.  
+ Ta metoda umożliwia aparat języka zaimplementować obsługę danych wyjściowych debugowania specyficznych dla języka. Ten ciąg jest zwykle wyświetlany w oknie danych wyjściowych debugera.  
   
  Ta metoda powoduje `IApplicationDebugger::onDebugOutput` do wywołania.  
   

@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796330"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094123"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Wyliczenie SCRIPTTHREADSTATE
-Określa stan wątku aparatu skryptów. To wyliczenie jest używany przez [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) metody.  
+Określa stan wątku w silnik wykonywania skryptów. To wyliczenie jest używane przez [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) metody.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef enum tagSCRIPTTHREADSTATE {  
     SCRIPTTHREADSTATE_NOTINSCRIPT  = 0,  
     SCRIPTTHREADSTATE_RUNNING      = 1  
@@ -41,8 +41,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Określony wątek nie jest obecnie obsługi zdarzenia przy użyciu skryptu, przetwarzania natychmiast wykonać skryptu tekstu, lub uruchomienie skryptu makra.|  
-|SCRIPTTHREADSTATE_RUNNING|Określony wątek jest aktywnie obsługi zdarzenia przy użyciu skryptu, przetwarzania natychmiast wykonać skryptu tekstu, lub uruchomienie makra skryptu.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Określony wątek nie jest obsługi zdarzenia ze skryptem, tekst skryptu przetwarzania wykonywane od razu, lub nie jest uruchomiona makro skryptu.|  
+|SCRIPTTHREADSTATE_RUNNING|Określony wątek jest aktywnie obsługi zdarzenia ze skryptem, tekst skryptu przetwarzania wykonywane od razu, lub uruchomienie skryptu makra.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kody błędów, wyliczenia i stałe aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

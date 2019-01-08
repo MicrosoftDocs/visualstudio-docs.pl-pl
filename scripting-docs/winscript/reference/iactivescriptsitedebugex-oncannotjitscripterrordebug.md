@@ -18,21 +18,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 70dd250359d52ae0929fb5fb2c60087f66af2160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793657"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095124"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Informuje, że host o błędów czasu wykonywania skryptu, gdy proces debugowania Manager nie znalazł debugera skryptów tylko w czasie.  
+Informuje, że hosta o błąd czasu wykonywania skryptu po procesie debugowanie Menedżera nie znajdzie debugera skryptów Just In Time.  
   
- Aby zaimplementować debugera na hoście, powinna obsługiwać [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Oparte na akcję użytkownika, host albo można dołączyć debugera i zwraca lub zwraca uruchamiania w debugerze programu OnScriptErrorDebug `pfEnterDebugger` parametru. Powinny również implementować ten interfejs, aby otrzymywać powiadomienia o błędów czasu wykonywania, nawet jeśli nie ma żadnych debugery zewnętrznych, które mogą być interpretowane przez Menedżera debugowania procesu.  
+ Aby zaimplementować debugera w hoście, powinien obsługiwać [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Oparte na akcję użytkownika, host albo można dołączyć debuger i zwracają lub zwrócić uruchamiania w debugerze programu OnScriptErrorDebug `pfEnterDebugger` parametru. Należy także zaimplementować ten interfejs, aby otrzymywać powiadomienia o błędzie czasu wykonywania, nawet jeśli nie ma żadnych zewnętrznych debugery, które mogą być interpretowane przez Menedżer debugowania procesów.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnCanNotJITScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug  
    BOOL *pfCallOnScriptErrorWhenContinuing  
@@ -41,20 +41,20 @@ HRESULT OnCanNotJITScriptErrorDebug(
   
 #### <a name="parameters"></a>Parametry  
  `pErrorDebug`  
- [in] Wystąpił błąd czasu wykonywania.  
+ [in] Błąd w czasie wykonywania, który wystąpił.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
  [out] Czy wywołać [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) Jeśli użytkownik zdecyduje kontynuować bez debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Powinny również implementować ten interfejs, aby otrzymywać powiadomienia.  
+ Należy także zaimplementować ten interfejs, aby otrzymać powiadomienie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)
+ [IActiveScriptSiteDebugEx, interfejs](../../winscript/reference/iactivescriptsitedebugex-interface.md)

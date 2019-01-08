@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 408a21ef7794381d55c8ab416aee3ed104542aa6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968329"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094820"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera programu Visual Studio
 
@@ -216,7 +216,7 @@ Aby dodać wyjątki warunkowe:
 
    ![Dodatkowe warunki, dla wyjątku](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Dla każdego wiersza warunku wpisz nazwę modułu, a na liście operator porównania, aby zmienić **jest równa** lub **nie równa się**. Można określić symbole wieloznaczne (**\\***) w nazwie, aby określić więcej niż jeden moduł.
+3. Dla każdego wiersza warunku wpisz nazwę modułu, a na liście operator porównania, aby zmienić **jest równa** lub **nie równa się**. Można określić symbole wieloznaczne (**\\\***) w nazwie, aby określić więcej niż jeden moduł.
 
 4. Jeśli musisz usunąć warunek, wybierz opcję **X** na końcu wiersza warunku.
 

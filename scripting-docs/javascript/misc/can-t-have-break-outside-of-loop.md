@@ -20,17 +20,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802410"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086700"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Instrukcja „break" nie może występować poza pętlą
 Podjęto próbę użycia **podziału** — słowo kluczowe poza pętlą. **Podziału** słowo kluczowe jest używane do zakończenia pętli lub `switch` instrukcji. Muszą być osadzone w treści pętli lub `switch` instrukcji. Jednak **etykiety** wykonać break — słowo kluczowe.  
   
-```  
+```js
 break labelname;  
 ```  
   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48571476407c29b9af949bd6f626d14ea822f2e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 00055eaaf79e24a9f59c380318b9c24fa476f1af
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793744"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096073"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
 Wskazuje, czy debuger jest elastyczny.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT QueryAlive();  
 ```  
   
@@ -38,16 +38,16 @@ HRESULT QueryAlive();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wskazuje, czy debuger jest elastyczny. Implementacje tej metody należy zawsze zwracają `S_OK`.  
+ Ta metoda wskazuje, czy debuger jest elastyczny. Implementacje tej metody zawsze powinna zwrócić `S_OK`.  
   
- Jeśli nieoczekiwane zakończenie procesu debugera COM zwraca błąd z kierowanie serwera proxy dla wywołania do tej metody.  
+ Jeśli proces debugera zostaje nieoczekiwanie zamknięty, COM zwraca błąd z serwera proxy kierujące do wywołania tej metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)
+ [IApplicationDebugger, interfejs](../../winscript/reference/iapplicationdebugger-interface.md)

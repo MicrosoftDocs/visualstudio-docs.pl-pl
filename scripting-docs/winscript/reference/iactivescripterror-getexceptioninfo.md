@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8719d1a169c89d7b6cf712a125b6962b9c7a8839
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793309"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096229"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
-Pobiera informacje o błędzie, który wystąpił w trakcie skryptu aparatu skryptów.  
+Pobiera informacje o błędzie, który wystąpił podczas aparat skryptów był uruchomiony skrypt.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetExceptionInfo(  
     EXCEPINFO *pexcepinfo  // structure for exception information  
 );  
@@ -38,7 +38,7 @@ HRESULT GetExceptionInfo(
   
 #### <a name="parameters"></a>Parametry  
  `pexcepinfo`  
- [out] Adres `EXCEPINFO` struktury, która otrzymuje informacje o błędzie.  
+ [out] Adres `EXCEPINFO` strukturę, która otrzymuje informacje o błędzie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca `S_OK` w przypadku powodzenia lub `E_FAIL` Jeśli wystąpił błąd.  

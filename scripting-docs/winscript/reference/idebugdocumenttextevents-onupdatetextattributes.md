@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea7caa1c1632e1a85e12010ec39593b8e0a6d63
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c2e5624e7cbefdca929a11b75f0273337fab30c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794359"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097165"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-Wskazuje, czy zmieniono atrybuty tekstu skojarzone z podstawowym zakres pozycji znaku.  
+Wskazuje, że atrybuty tekstu skojarzonych z zakresem pozycji podstawowego znak zostały zmienione.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onUpdateTextAttributes(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToUpdate  
@@ -39,20 +39,20 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Pozycja znaku pierwszego znaku, który zmieniono atrybuty.  
+ [in] Pozycja znaku pierwszy znak, który zmieniono atrybuty.  
   
  `cNumToUpdate`  
  [in] Liczba znaków w zakresie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Tej metody oznacza, że tekst atrybuty skojarzone z podstawowym zakresu znaków w pozycji ma zmieniony.  
+ Ta metoda wskazuje, czy zmieniono atrybuty tekstu skojarzonych z zakresem pozycji podstawowego znak.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)
+ [IDebugDocumentTextEvents, interfejs](../../winscript/reference/idebugdocumenttextevents-interface.md)

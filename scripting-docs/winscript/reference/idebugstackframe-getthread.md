@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 888e15bdd154fbac444eb91fc31ad7f17c2981ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f6f21c553197a3967619b9aedc25779444185e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794188"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095748"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
 Zwraca wątek skojarzony z tą ramką stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetThread(  
    IDebugApplicationThread**  ppat  
 );  
@@ -38,10 +38,10 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Parametry  
  `ppat`  
- [out] Wątek skojarzony z tą ramką stosu.  
+ [out] Wątek, skojarzone z tą ramką stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT GetThread(
  Ta metoda zwraca wątek skojarzony z tą ramką stosu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)

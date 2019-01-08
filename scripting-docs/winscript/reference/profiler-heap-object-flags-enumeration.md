@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96e05d67bedcf03c97edc1015c80b212b6021562
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 833f3d100b2529ca4f356b50cddad6b6501297ce
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796393"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097490"
 ---
 # <a name="profilerheapobjectflags-enumeration"></a>Wyliczenie PROFILER_HEAP_OBJECT_FLAGS
-Flagi, które reprezentują podstawowe informacje o obiekcie stosu. Używane w [struktura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md).  
+Flagi, które reprezentują podstawowe informacje o obiekcie sterty. Używane w [struktura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT            = 0x00000001,    PROFILER_HEAP_OBJECT_FLAGS_IS_ROOT               = 0x00000002,    PROFILER_HEAP_OBJECT_FLAGS_SITE_CLOSED           = 0x00000004,    PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL              = 0x00000008,    PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL_UNKNOWN      = 0x00000010,    PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL_DISPATCH     = 0x00000020,    PROFILER_HEAP_OBJECT_FLAGS_SIZE_APPROXIMATE      = 0x00000040,    PROFILER_HEAP_OBJECT_FLAGS_SIZE_UNAVAILABLE      = 0x00000080,    PROFILER_HEAP_OBJECT_FLAGS_NEW_STATE_UNAVAILABLE = 0x00000100,    PROFILER_HEAP_OBJECT_FLAGS_WINRT_INSTANCE        = 0x00000200,    PROFILER_HEAP_OBJECT_FLAGS_WINRT_RUNTIMECLASS    = 0x00000400,    PROFILER_HEAP_OBJECT_FLAGS_WINRT_DELEGATE        = 0x00000800,    PROFILER_HEAP_OBJECT_FLAGS_WINRT_NAMESPACE       = 0x00001000,} PROFILER_HEAP_OBJECT_FLAGS;  
 ```  
   
@@ -32,15 +32,15 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT            = 0
   
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
-|PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT|0x00000001|Ten obiekt sterty została przydzielona po poprzednie żądanie wyliczenia stosu. [Typ PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md) wartości mogą być ponownie używane, jeśli obiekt są zbierane.|  
-|PROFILER_HEAP_OBJECT_FLAGS_IS_ROOT|0x00000002|Ten obiekt sterty jest obiektem głównym wykresu obiektu.|  
-|PROFILER_HEAP_OBJECT_FLAGS_SITE_CLOSED|0x00000004|Ten obiekt sterty jest z witryny skryptu, który został zamknięty.|  
-|PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL|0x00000008|Ten obiekt sterty została przydzielona poza sterty JavaScript wyrzucania elementów w kolekcji.|  
-|PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL_UNKNOWN|0x00000010|Ten obiekt sterty została przydzielona poza pamięci sterty kolekcji i implementuje IUnknown.|  
-|PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL_DISPATCH|0x00000020|Ten obiekt sterty została przydzielona poza pamięci sterty kolekcji i implementuje interfejs IDISPATCH.|  
-|PROFILER_HEAP_OBJECT_FLAGS_SIZE_APPROXIMATE|0x00000040|Rozmiar tego obiektu sterty jest przybliżona.|  
-|PROFILER_HEAP_OBJECT_FLAGS_SIZE_UNAVAILABLE|x00000080|Rozmiar tego obiektu sterty jest niedostępny.|  
-|PROFILER_HEAP_OBJECT_FLAGS_WINRT_INSTANCE|0x00000200|Obiekt sterty jest wystąpieniem środowiska wykonawczego systemu Windows.|  
-|PROFILER_HEAP_OBJECT_FLAGS_WINRT_RUNTIMECLASS|0x00000400|Obiekt sterty jest klasa środowiska uruchomieniowego środowiska wykonawczego systemu Windows.|  
-|PROFILER_HEAP_OBJECT_FLAGS_WINRT_DELEGATE|0x00000800|Obiekt sterty jest delegata środowiska wykonawczego systemu Windows.|  
-|PROFILER_HEAP_OBJECT_FLAGS_WINRT_NAMESPACE|0x00001000|Obiekt sterty znajduje się w przestrzeni nazw środowiska wykonawczego systemu Windows.|
+|PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT|0x00000001|Ten obiekt stosu została przydzielona po poprzednie żądanie wyliczenia sterty. [Typ PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md) wartości mogą być ponownie używane, jeśli obiekt są zbierane.|  
+|PROFILER_HEAP_OBJECT_FLAGS_IS_ROOT|0x00000002|Ten obiekt stosu jest obiektem głównym wykresu obiektu.|  
+|PROFILER_HEAP_OBJECT_FLAGS_SITE_CLOSED|0x00000004|Ten obiekt stosu jest z witryny skryptu, który został zamknięty.|  
+|PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL|0x00000008|Ten obiekt stosu została przydzielona poza stercie JavaScript wyrzucania elementów bezużytecznych.|  
+|PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL_UNKNOWN|0x00000010|Ten obiekt stosu został przydzielony w stercie wyrzucania elementów bezużytecznych i implementuje IUnknown poza.|  
+|PROFILER_HEAP_OBJECT_FLAGS_EXTERNAL_DISPATCH|0x00000020|Ten obiekt stosu została przydzielona poza stercie wyrzucania elementów bezużytecznych i implementuje interfejs IDISPATCH.|  
+|PROFILER_HEAP_OBJECT_FLAGS_SIZE_APPROXIMATE|0x00000040|Rozmiar ten obiekt stosu jest przybliżona.|  
+|PROFILER_HEAP_OBJECT_FLAGS_SIZE_UNAVAILABLE|x00000080|Rozmiar ten obiekt stosu jest niedostępna.|  
+|PROFILER_HEAP_OBJECT_FLAGS_WINRT_INSTANCE|0x00000200|Stos, obiekt jest wystąpieniem środowiska wykonawczego Windows.|  
+|PROFILER_HEAP_OBJECT_FLAGS_WINRT_RUNTIMECLASS|0x00000400|Obiekt sterty jest klasy środowiska wykonawczego Windows Runtime.|  
+|PROFILER_HEAP_OBJECT_FLAGS_WINRT_DELEGATE|0x00000800|Obiekt sterty jest delegat środowiska wykonawczego Windows.|  
+|PROFILER_HEAP_OBJECT_FLAGS_WINRT_NAMESPACE|0x00001000|Obiekt sterty znajduje się w przestrzeni nazw środowiska wykonawczego Windows.|

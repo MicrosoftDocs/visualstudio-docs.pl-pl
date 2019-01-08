@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::ReadNullTerminatedString — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugDataTarget::ReadNullTerminatedString, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795004"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093330"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString — Metoda
-Odczytuje określoną liczbę znaków z elementem docelowym.  
+Odczytuje określoną liczbę znaków z obiektu docelowego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -42,21 +42,21 @@ HRESULT ReadNullTerminatedString(
  [in] Adres do odczytu.  
   
  `characterSize`  
- [rozmiar każdego znaku w ciągu in]  
+ [in] rozmiar każdego znaku w ciągu  
   
  `maxCharacters`  
- [in] Maksymalna liczba znaków do odczytania. wartość elementu maxCharacters powinna być uzasadnione. Wszystkie żądania dla więcej niż 128MB pamięci zakończy się niepowodzeniem.  Jeśli ten ciąg jest większy niż wartość elementu maxCharacters, ciąg wynik zostanie obcięty po wartość elementu maxCharacters.  
+ [in] Maksymalna liczba znaków do odczytania. wartość elementu maxCharacters nie powinna być wygórowana. Każdy wniosek o więcej niż 128MB pamięci zakończy się niepowodzeniem.  Jeśli ten ciąg jest większy niż wartość elementu maxCharacters, ciąg wyniku zostanie obcięty po wartość elementu maxCharacters.  
   
  `pString`  
- [out] BSTR odczytywać z elementem docelowym.  
+ [out] Odczyt BSTR z celu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca wartości S_FALSE, jeśli obcięte.  
+ Zwraca wartość S_FALSE, jeśli obcięte.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugdatatarget — interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

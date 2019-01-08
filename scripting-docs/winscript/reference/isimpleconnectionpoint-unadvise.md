@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796324"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089274"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
-Przerywa połączenie doradczych wcześniej ustanowione za pośrednictwem `ISimpleConnectionPoint::Advise`.  
+Przerywa połączenie doradztwa technicznego dotyczącego wcześniej ustanowione przez `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Unadvise(  
    DWORD  dwCookie  
 );  
@@ -38,17 +38,17 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>Parametry  
  `dwCookie`  
- [in] Token połączenia, aby zakończyć, ponieważ zwrócony z `ISimpleConnectionPoint::Advise`.  
+ [in] Token połączenia, aby zakończyć w postaci zwracanej przez `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zespół Doradczy połączenie zostało zakończone, połączenie punkcie wywołania `Release` metodę na wskaźniku, który został zapisany dla połączenia podczas `ISimpleConnectionPoint::Advise` metody. Które wywołują odwrócona `AddRef` który została wykonana podczas `ISimpleConnectionPoint::Advise` gdy punkt połączenia wywołuje zbiornika advisory `QueryInterface`.  
+ Poradnik połączenie zostanie przerwane, połączenie punkcie wywołania `Release` metodę we wskaźniku, który został zapisany dla połączenia podczas `ISimpleConnectionPoint::Advise` metody. Odwrócona, które wywołują `AddRef` który zostało wykonane podczas `ISimpleConnectionPoint::Advise` gdy punkt połączenia z wywołuje doradztwa technicznego dotyczącego obiektu sink `QueryInterface`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)
+ [ISimpleConnectionPoint, interfejs](../../winscript/reference/isimpleconnectionpoint-interface.md)

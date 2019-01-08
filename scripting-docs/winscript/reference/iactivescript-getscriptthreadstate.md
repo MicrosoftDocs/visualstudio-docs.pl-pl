@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b11b8566857bc70aaeac5bdf8e8e357fa5d9c2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2b191f1b70aa522cba0a04e0781ada69a8fe5ca5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791890"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097529"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
 Pobiera bieżący stan wątku skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetScriptThreadState(  
     SCRIPTTHREADID stidThread,    // identifier of script thread  
     SCRIPTTHREADSTATE *pstsState  // receives state flag  
@@ -39,15 +39,15 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>Parametry  
  `stidThread`  
- [in] Identyfikator wątku, dla którego stan jest pożądane, lub jeden z następujących identyfikatorów specjalne wątku:  
+ [in] Identyfikator wątku, dla którego pożądany jest stan, lub jeden z następujących identyfikatorów specjalne wątku:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|Podstawowy wątku; oznacza to, że utworzono wystąpienie wątku, w którym skryptów aparatu.|  
-|SCRIPTTHREADID_CURRENT|Wątek aktualnie wykonywane.|  
+|SCRIPTTHREADID_BASE|Podstawowy wątek; oznacza to wątek, w którym skryptów aparatu została utworzona.|  
+|SCRIPTTHREADID_CURRENT|Aktualnie wykonywany wątek.|  
   
  `pstsState`  
- [out] Adres zmiennej, która otrzymuje stan wskazanych wątku. Stan jest wskazywany przez jedną o nazwie stałej wartości zdefiniowanych przez [wyliczenie SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md) wyliczenia. Jeśli ten parametr wskazuje bieżący wątek, stan może zmienić w dowolnym momencie.  
+ [out] Adres zmiennej, która otrzymuje stan wskazany wątku. Stan jest wskazywany przez jedno nazwane wartości stałe zdefiniowane przez [wyliczenie SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md) wyliczenia. Jeśli ten parametr wskazuje bieżący wątek, stan może się zmienić w dowolnym momencie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -56,10 +56,10 @@ HRESULT GetScriptThreadState(
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować).|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda może być wywołana z wątków innych niż podstawowe powodowała objaśnienia innych niż podstawowe do obiektów hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
+ Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScript](../../winscript/reference/iactivescript.md)

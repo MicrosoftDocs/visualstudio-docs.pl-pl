@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f9f783c8fe1864999e017ff348853df5464c93f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1ee40057043751b465c6575575f00dee848a0160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794200"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086622"
 ---
 # <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
-Zwraca typ VARIANT zawierający dany ciąg znaków.  
+Zwraca typ VARIANT zawierający podany ciąg.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetVariantForString(  
    LPCOLESTR  pwstrValue,  
    VARIANT*   pvar  
@@ -39,20 +39,20 @@ HRESULT GetVariantForString(
   
 #### <a name="parameters"></a>Parametry  
  `pwstrValue`  
- [in] Ciąg do przechowywania w VARIANT.  
+ [in] Ciąg do przechowywania w WARIANCIE.  
   
  `pvar`  
  [out] VARIANT zawierający `pwstrValue`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca typ VARIANT zawierający dany ciąg znaków.  
+ Ta metoda zwraca typ VARIANT zawierający podany ciąg.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)
+ [IDebugFormatter, interfejs](../../winscript/reference/idebugformatter-interface.md)

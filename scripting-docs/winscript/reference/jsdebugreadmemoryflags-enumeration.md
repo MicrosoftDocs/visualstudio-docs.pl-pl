@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7efb5170bf0314e95b1acded39a897c2236a29ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796267"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094032"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Wyliczenie JsDebugReadMemoryFlags
 Flagi określające zachowanie podczas odczytu pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
@@ -38,11 +38,11 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Wskazuje, że obiekt wywołujący chce operacja odczytu została wykonana pomyślnie, jeśli tylko część pamięci odczytać zakończyło się pomyślnie. Jeśli ta opcja jest ustawiona, błąd E_JsDEBUG_INVALID_MEMORY_ADDRESS tylko zostanie wygenerowany, jeśli "Address" jest nieprawidłowy. Jeśli ta flaga nie zostanie zaznaczone, błąd E_JsDEBUG_INVALID_MEMORY_ADDRESS zostanie wygenerowany, jeśli nie można go odczytać został jakiejkolwiek jego części żądaną ilość pamięci.|  
-|`None`|Wskazuje, że obiekt wywołujący potrzebuje domyślne zachowanie dla ReadMemory.|  
+|`JsDebugAllowPartialRead`|Wskazuje, że obiekt wywołujący chce, aby operacja odczytu osiągnęła sukces, jeśli tylko część pamięci odczytu zakończyło się pomyślnie. Jeśli ta opcja jest ustawiona, błąd E_JsDEBUG_INVALID_MEMORY_ADDRESS tylko będzie zgłaszany, jeśli "Adres" jest nieprawidłowa. Jeśli ta flaga jest wyczyszczona, zostanie wygenerowany błąd E_JsDEBUG_INVALID_MEMORY_ADDRESS, jeśli jakakolwiek część żądanej pamięci nie dała się odczytać.|  
+|`None`|Wskazuje, że obiekt wywołujący chce zachowania domyślnego dla obiektu ReadMemory.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

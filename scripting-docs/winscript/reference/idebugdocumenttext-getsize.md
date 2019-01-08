@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c171b894856141d8c42ae641f1d08b058cd3d9c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794275"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087038"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
 Zwraca liczbę wierszy i liczbę znaków w dokumencie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetSize(  
    ULONG*  pcNumLines,  
    ULONG*  pcNumChars  
@@ -45,7 +45,7 @@ HRESULT GetSize(
  [out] Liczba znaków w dokumencie. Jeśli ten parametr ma wartość NULL, metoda nie zwraca wartości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -55,4 +55,4 @@ HRESULT GetSize(
  Ta metoda zwraca liczbę wierszy i liczbę znaków w dokumencie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText, interfejs](../../winscript/reference/idebugdocumenttext-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a0111deba23f29aa6b7d31a1aed8d729ff4e7fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f7f0199c111e620d9b1783ed8da7163d10f2e20b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793903"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095787"
 ---
 # <a name="idebugcodecontextsetbreakpoint"></a>IDebugCodeContext::SetBreakPoint
 Ustawia lub czyści punkt przerwania w tym kontekście kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetBreakPoint(  
    BREAKPOINT_STATE  bps  
 );  
@@ -41,7 +41,7 @@ HRESULT SetBreakPoint(
  [in] Określa stan punktu przerwania dla tego kontekstu kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT SetBreakPoint(
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)   
- [Wyliczenie BREAKPOINT_STATE](../../winscript/reference/breakpoint-state-enumeration.md)
+ [BREAKPOINT_STATE, wyliczenie](../../winscript/reference/breakpoint-state-enumeration.md)

@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f0972faee11e15bd5d0e9a219e439df49d9672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796444"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088572"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>Struktura PROFILER_HEAP_OBJECT_SCOPE_LIST
-Ta struktura jest skojarzony z tylko obiekty funkcji. Na liście zakresu reprezentuje zamknięcia funkcji jako lista zakresów każdego zakresu, w przypadku obiektu sterty z listy skojarzonej właściwości reprezentujący zmienne w każdym w danym zakresie. W niektórych przypadkach nazwy obiektów w zakresie będą niedostępne, a tylko ich indeks w liście właściwość jest dostępna.  
+Ta struktura jest skojarzony z tylko obiekty funkcyjne. Lista zakresów reprezentuje zamknięcia dla funkcji jako listę zakresów, gdzie każdy zakres jest obiekt sterty przy użyciu listy skojarzonej właściwości reprezentujący zmienne w każdej z danego zakresu. W niektórych przypadkach nazwy obiektów w zakresie będą niedostępne i ich Indeksuj tylko do listy właściwości jest dostępna.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_ID scopes[];} PROFILER_HEAP_OBJECT_SCOPE_LIST;  
 ```  
   
@@ -33,4 +33,4 @@ typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(coun
 |Element członkowski|Typ|Opis|  
 |------------|----------|-----------------|  
 |count|UINT|Liczba zakresów|  
-|scopes|[Typ PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|Tablica zakresów.|
+|scopes|[PROFILER_HEAP_OBJECT_ID, typ](../../winscript/reference/profiler-heap-object-id-type.md)|Tablica zakresów.|

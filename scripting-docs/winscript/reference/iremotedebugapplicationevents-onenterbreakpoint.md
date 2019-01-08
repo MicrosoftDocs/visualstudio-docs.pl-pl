@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2d122f6b85853e488035615835b299173951953
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 956d9e119f637dc08cff4b0aa93889cad86b00a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794830"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091770"
 ---
 # <a name="iremotedebugapplicationeventsonenterbreakpoint"></a>IRemoteDebugApplicationEvents::OnEnterBreakPoint
-Obsługuje zdarzenie wprowadzania punktu przerwania.  
+Obsługuje zdarzenie do wprowadzania punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnEnterBreakPoint(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,17 +38,17 @@ HRESULT OnEnterBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `prdat`  
- [in] Wprowadzony punkt przerwania wątku aplikacji.  
+ [in] Wątek aplikacji znajdujących się w punkcie przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obsługuje zdarzenie wprowadzania punktu przerwania.  
+ Ta metoda obsługuje zdarzenia do wprowadzania punktu przerwania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents, interfejs](../../winscript/reference/iremotedebugapplicationevents-interface.md)

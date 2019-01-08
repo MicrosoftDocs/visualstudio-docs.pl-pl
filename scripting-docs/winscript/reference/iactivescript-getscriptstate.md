@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 285a09308c7477dbeed68f9f93417b503ca4fe49
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a64067679e1c56831002494c579ffdeba84a1abe
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791563"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096580"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-Pobiera bieżący stan aparatu skryptów. Ta metoda może być wywołana z wątków innych niż podstawowe powodowała objaśnienia innych niż podstawowe do obiektów hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
+Pobiera bieżący stan silnika wykonywania skryptów. Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetScriptState(  
     SCRIPTSTATE *pss  // address of structure for state information  
 );  
@@ -38,7 +38,7 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>Parametry  
  `pss`  
- [out] Adres zmiennej, która odbiera wartość zdefiniowana w [wyliczenie SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) wyliczenia. Wartość wskazuje bieżący stan skojarzony z wątkiem wywołującym aparatu skryptów.  
+ [out] Adres zmiennej, który otrzymuje wartość zdefiniowana w [wyliczenie SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) wyliczenia. Wartość wskazuje bieżący stan skojarzony wątek wywołujący silnik wykonywania skryptów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca `S_OK` w przypadku powodzenia lub `E_POINTER` Jeśli określono nieprawidłowy wskaźnik.  

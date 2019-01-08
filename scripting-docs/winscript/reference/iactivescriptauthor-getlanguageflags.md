@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dca878d6d4fd15db4b516e37932fbfebd30607a2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793255"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093200"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Zwraca informacje o języku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetLanguageFlags(  
    DWORD              *pgrfasa  
 );  
@@ -42,9 +42,9 @@ HRESULT GetLanguageFlags(
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0X0001|Język preferuje Tworzenie procedury obsługi zdarzeń skryptu za pomocą skryptu tworzenia aparatu, a nie aplikacji.|  
-|fasaSupportInternalHandler|0X0002|Język obsługuje skryptu procedury obsługi zdarzeń utworzony przez skrypt tworzenia aparatu.|  
-|fasaCaseSensitive|0X0004|Język skryptu jest uwzględniana wielkość liter.|  
+|fasaPreferInternalHandler|0x0001|Język preferowany Tworzenie procedury obsługi zdarzeń skryptu za pomocą skryptu tworzenia aparatu zamiast aplikacji.|  
+|fasaSupportInternalHandler|0x0002|Język obsługuje programy obsługi zdarzeń skryptu utworzone przez skrypt tworzenia aparatu.|  
+|fasaCaseSensitive|0x0004|Język skryptu jest uwzględniana wielkość liter.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -54,9 +54,9 @@ HRESULT GetLanguageFlags(
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli skrypt tworzenia aparatu zarządza procedury obsługi zdarzeń, aplikacji powinny wywoływać `CreateChildHandler` z `IScriptEntry` obiektu. Spowoduje to utworzenie `IScriptScriptlet` obiekt, który odpowiada programu obsługi zdarzeń. Aparat dodaje również program obsługi zdarzeń do wpisu skryptu. Procedura obsługi zdarzeń jest pusty funkcji, która zawiera informacje o określoną sygnaturą.  
+ Jeśli skrypt tworzenia aparatu zarządza procedury obsługi zdarzeń, Twoja aplikacja powinna wywołać `CreateChildHandler` z `IScriptEntry` obiektu. Spowoduje to utworzenie `IScriptScriptlet` obiekt, który odnosi się do programu obsługi zdarzeń. Aparat dodaje także procedury obsługi zdarzeń do wejścia skryptu. Procedura obsługi zdarzeń jest pusta funkcja, który zawiera informacje o określonej sygnaturze.  
   
- Jeśli aplikacja zarządza procedury obsługi zdarzeń, powinny wywoływać `CreateChildHandler` z `IScriptNode` obiekt, który reprezentuje skryptlet programu obsługi zdarzeń. Spowoduje to utworzenie `IScriptScriptlet` obiekt, który jest skojarzony z skryptlet programu obsługi zdarzeń. Aplikacja ma również dodać funkcję pusty jako zdarzenie program obsługi do nowego lub istniejącego `IScriptEntry` obiektu.  
+ Jeśli aplikacja zarządza procedury obsługi zdarzeń, powinny wywoływać `CreateChildHandler` z `IScriptNode` obiekt, który reprezentuje scriptlet procedury obsługi zdarzeń. Spowoduje to utworzenie `IScriptScriptlet` obiekt, który jest skojarzony z scriptlet procedury obsługi zdarzeń. Aplikacja ma również dodać pusty funkcji jako zdarzenie obsługi na nową lub istniejącą `IScriptEntry` obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

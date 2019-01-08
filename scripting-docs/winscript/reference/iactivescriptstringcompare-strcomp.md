@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fea6ae4d5819680f38d19f2cd6ea1cf9bf9b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793639"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090106"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-Definiuje metodę porównywania ciągów dla aparatu skryptów.  
+Definiuje metodę porównywania ciągów dla silnika wykonywania skryptów.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT StrComp(  
 // The first string:  
     [in] BSTR bszStr1,    
@@ -49,7 +49,7 @@ HRESULT StrComp(
  Drugi ciąg.  
   
  `iRet`  
- Wynik porównania. Jeśli 0 `bszStr1` i `bszStr2`są identyczne; -1 Jeśli `bszStr1`  <  `bszStr2`; 1, gdy `bszStr1`  >  `bszStr2`.  
+ Wynik porównania. 0, jeśli `bszStr1` i `bszStr2`są identyczne; -1 Jeśli `bszStr1`  <  `bszStr2`; 1, jeśli `bszStr1`  >  `bszStr2`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -58,13 +58,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
 |`E_INVALIDARG`|Argument jest nieprawidłowy.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować).|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana zawsze, która jest wykonywana porównania ciągów.  
+ Ta metoda jest wywoływana zawsze wykonywane porównywania ciągów.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak można przeciążyć funkcji porównanie ciągu. Przeciążanie jest dozwolone, gdy używasz [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) można ustawić SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ Poniższy przykład przedstawia sposób przeciążania funkcji porównywania ciągów. Przeciążenie jest dozwolone, gdy używasz [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) można ustawić SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -102,4 +102,4 @@ interface IActiveScriptStringCompare : IUnknown
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)
+ [IActiveScriptStringCompare, interfejs](../../winscript/reference/iactivescriptstringcompare-interface.md)

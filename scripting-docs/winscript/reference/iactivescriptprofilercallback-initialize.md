@@ -16,26 +16,26 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82e599ae94f422352706a0ec6cd9387bfa6799f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 240df77731b92ebb91cefc3f1a326e7dd77c847a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793384"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094526"
 ---
 # <a name="iactivescriptprofilercallbackinitialize"></a>IActiveScriptProfilerCallback::Initialize
-Wywoływana w celu zainicjowania obiektu profilera po każdym uruchomieniu profilowania na aparatu skryptów.  
+Wywoływane w celu zainicjowania obiektu profiler, zawsze wtedy, gdy rozpoczęto profilowanie na silnik wykonywania skryptów.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Initialize(  
     [in] DWORD dwContext);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `dwContext`  
- [in] Wartość 4-bajtowych, która została przekazana do [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md).  
+ [in] 4-bajtową wartość, który jest przekazywany do [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md).  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
@@ -45,7 +45,7 @@ HRESULT Initialize(
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli metoda nie można zainicjować obiektu profilera, powinien zostać zwrócony błąd HRESULT powiadomiono aparatu skryptów. W takim przypadku należy bezpośrednio wywoływać aparat skryptów [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), przekazując HRESULT parametr, a następnie zwolnij obiektu profilera.  
+ Jeśli metoda nie można zainicjować obiektu profiler, powinien zostać zwrócony błąd HRESULT do powiadamiania silnik wykonywania skryptów. W tym przypadku bezpośrednio wywołać aparat skryptów [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), przekazując HRESULT w parametrze, a następnie zwolnij obiekt profiler.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

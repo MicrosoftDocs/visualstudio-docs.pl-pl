@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1cbe022113e8a97dc31b4cf5a2286ec0b5096d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f04424eb12d0905c128913e2b0f8abe80ef5655
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794107"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089825"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
-Wskazuje, że tekst został zastąpiony.  
+Wskazuje, czy tekst został zastąpiony.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onReplaceText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToReplace  
@@ -45,14 +45,14 @@ HRESULT onReplaceText(
  [in] Liczba znaków.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wskazuje, że tekst został zastąpiony.  
+ Ta metoda wskazuje, czy tekst został zastąpiony.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)
+ [IDebugDocumentTextEvents, interfejs](../../winscript/reference/idebugdocumenttextevents-interface.md)

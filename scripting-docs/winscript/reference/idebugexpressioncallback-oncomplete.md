@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa3d7d6173161407619174607eae221e4513cbcd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1470d71dcc5e54f1bd38c740993642d2798bff87
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794419"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096983"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
-Wskazuje, że Obliczanie wyrażenia jest pełny.  
+Wskazuje, że oceny wyrażenia została zakończona.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT onComplete();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana po zakończeniu Obliczanie wyrażenia. `IDebugExpression::GetResultAsString` z można wywołać metody w ramach tego programu obsługi zdarzeń.  
+ Ta metoda jest wywoływana po zakończeniu oceny wyrażenia. `IDebugExpression::GetResultAsString` Metodę można wywołać z w ramach tego programu obsługi zdarzeń.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugExpressionCallBack](../../winscript/reference/idebugexpressioncallback-interface.md)   

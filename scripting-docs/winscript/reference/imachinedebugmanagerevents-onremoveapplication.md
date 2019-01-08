@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe727b65c8a74962cf6a88ce4ab36ad975b26231
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b4cc2412f88eb4a4224dc96ebc1b993729169071
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794758"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088949"
 ---
 # <a name="imachinedebugmanagereventsonremoveapplication"></a>IMachineDebugManagerEvents::onRemoveApplication
-Obsługuje zdarzenie, gdy aplikacja zostanie usunięta z uruchomionym listy aplikacji.  
+Obsługuje zdarzenie, gdy aplikacja zostanie usunięty z uruchomionych listy aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onRemoveApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,20 +39,20 @@ HRESULT onRemoveApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [in] Aplikacja, która została usunięta z uruchomionym listy aplikacji.  
+ [in] Aplikacja, która została usunięta z uruchomionych listy aplikacji.  
   
  `dwAppCookie`  
  [in] Plik cookie podane podczas dodawania aplikacji z listy aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Tej metody oznacza, że aplikacja została usunięta z uruchomionym listy aplikacji.  
+ Tej metody oznacza, że aplikacja została usunięta z uruchomionych listy aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IMachineDebugManagerEvents](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

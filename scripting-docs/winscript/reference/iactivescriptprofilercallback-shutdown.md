@@ -16,29 +16,29 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec47cd5f581c36abb60b662983c6d806a4732f47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bbe5acd75ecf4f004d835490579b1f35c1bf675c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793516"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086817"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-Wywołuje się, by informuje obiektu profilera zawsze, gdy profilowania jest zatrzymana na aparatu skryptów. W ten sposób obiektu profilera można wywołać jej procedury czyszczenia, jeśli jest to wymagane. Ta metoda jest również wywoływany przez aparat skryptów, gdy trwa wyłączanie aparatu skryptów lub gdy wywołanie [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) nie powiedzie się.  
+Wywoływana, aby poinformować obiekt profiler po każdym zatrzymaniu profilowania na silnik wykonywania skryptów. W ten sposób obiekt profiler może wywołać jej procedury oczyszczania, jeśli jest to wymagane. Ta metoda jest również wywoływany przez silnik wykonywania skryptów, gdy silnik wykonywania skryptów jest zamykany lub wywołanie [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) zakończy się niepowodzeniem.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Shutdown(  
     [in] HRESULT hrReason);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `hrReason`  
- [in] Przyczyna zamykanie. Jeśli aparat skryptów jest zamykany, `S_OK` została przekazana. Jeśli wywołanie [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) zwraca błąd HRESULT, HRESULT została przekazana. W przeciwnym razie ta wartość jest pobierana z [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
+ [in] Przyczyna zamykanie. Jeśli silnik wykonywania skryptów jest zamykana, `S_OK` jest przekazywany. Jeśli wywołanie [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) zwraca błąd HRESULT, jest przekazywany HRESULT. W przeciwnym razie ta wartość jest pobierana z [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwracana wartość ta metoda jest ignorowana przez aparat skryptów.  
+ Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

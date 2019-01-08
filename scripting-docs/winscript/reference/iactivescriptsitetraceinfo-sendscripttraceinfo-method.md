@@ -12,19 +12,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5290cc6a92be7c8bc99e4715c77bfe6f8f6abb53
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f08a5cb0e7bd297dede85190ac694185e2fd795
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793552"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091627"
 ---
 # <a name="iactivescriptsitetraceinfosendscripttraceinfo-method"></a>Metoda IActiveScriptSiteTraceInfo::SendScriptTraceInfo
-Wysyła informacje o śledzeniu, zawierający typ zdarzenia, kontekstu i skrypt.  
+Wysyła informacje o śledzeniu, zawierający typ zdarzenia, kontekstu i instrukcji skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SendScriptTraceInfo(     [in] SCRIPTTRACEINFO stiEventType,     [in] GUID guidContextID,     [in] DWORD dwScriptContextCookie,     [in] LONG lScriptStatementStart,     [in] LONG lScriptStatementEnd,     [in] DWORD64 dwReserved );   
 ```  
   
@@ -33,7 +33,7 @@ HRESULT SendScriptTraceInfo(     [in] SCRIPTTRACEINFO stiEventType,     [in] GUI
  Typ zdarzenia.  
   
  `guidContextId`  
- Identyfikator GUID kontekstu.  
+ Identyfikator GUID w kontekście.  
   
  `dwScriptContextCookie`  
  Plik cookie kontekstu.  

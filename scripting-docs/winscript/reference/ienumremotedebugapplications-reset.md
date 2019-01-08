@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 657822ed1fed8cd9fb129a17469820b368f86244
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 939a1ac58f79e301d47ef6a69768dba9da83692e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794383"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092862"
 ---
 # <a name="ienumremotedebugapplicationsreset"></a>IEnumRemoteDebugApplications::Reset
-Resetuje sekwencję wyliczenia na początku.  
+Resetuje sekwencji wyliczenia na początku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Reset();  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT Reset();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -48,4 +48,4 @@ HRESULT Reset();
  Ta metoda powoduje zresetowanie sekwencji wyliczenia na początku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)
+ [IEnumRemoteDebugApplications, interfejs](../../winscript/reference/ienumremotedebugapplications-interface.md)

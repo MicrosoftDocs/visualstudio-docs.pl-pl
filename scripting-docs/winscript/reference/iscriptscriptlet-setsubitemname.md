@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796315"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097724"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Ustawia identyfikator ostatniego w pełni kwalifikowanej nazwy skryptletu obiektu hosta.  
+Ustawia identyfikator ostatniego w pełni kwalifikowaną nazwę hosta obiektu scriptlet.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,9 +38,9 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- Jeśli host w pełni kwalifikowanej nazwy skryptletu ma więcej niż jeden poziom `psz` adres buforu identyfikatora w drugiej.  
+ Jeśli host w pełni kwalifikowanej nazwy scriptlet ma więcej niż jeden poziom `psz` adres buforu identyfikatora na drugim poziomie.  
   
- Jeśli host w pełni kwalifikowanej nazwy skryptletu ma jeden poziom `psz` jest adres buforu identyfikator pierwszego poziomu.  
+ Jeśli host w pełni kwalifikowanej nazwy scriptlet ma jeden poziom `psz` to adres buforu identyfikator pierwszego poziomu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -52,4 +52,4 @@ HRESULT SetSubItemName(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet, interfejs](../../winscript/reference/iscriptscriptlet-interface.md)

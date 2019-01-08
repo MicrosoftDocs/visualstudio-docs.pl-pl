@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78078cd874be1d7d3d169be2d3d70e65866be3fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 086ec8b4a126c65162638afde4d8081269757e1c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793432"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089521"
 ---
 # <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
-Powiadamia profilera zamierza Zatrzymaj profilowanie na wszystkich odpowiednich aparatów skryptów. Za pomocą tej metody, można uzyskać stosu wywołań pełną, jeśli [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] działa zatrzymanie profilowania.  
+Powiadamia program profilujący zamierza zatrzymanie profilowania w wszystkich odpowiednich aparatów obsługi skryptów. Za pomocą tej metody, można uzyskać pełny stos wywołań, jeśli [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] działa po zatrzymaniu profilowania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT PrepareProfilerStop();  
 ```  
   
@@ -39,13 +39,13 @@ HRESULT PrepareProfilerStop();
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_FAIL`|Nie można uruchomić profilowania.|  
-|`S_FALSE`|Profilowanie zostało zatrzymane, gdy skrypt nie został uruchomiony.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Nie włączono profilowanie.|  
+|`E_FAIL`|Nie można uruchomić profilowanie.|  
+|`S_FALSE`|Profilowanie zostało zatrzymane, gdy skrypt nie została uruchomiona.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączona.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie `IActiveScriptProfilerControl2::PrepareProfilerStop` zapewnia, że jest wysyłany zdarzeń dla funkcji w stosie wywołań. Ta metoda musi zostać wywołana przed zatrzymaniem profilowanie na aparat skryptów, który znajduje się na karcie bieżącego. Metodę można wywołać dla dowolnego aparatu skryptów.  
+ Wywoływanie `IActiveScriptProfilerControl2::PrepareProfilerStop` gwarantuje, że zdarzenia dla funkcji w stosie wywołań są wysyłane. Ta metoda musi być wywoływana przed zatrzymaniem profilowania w silnik wykonywania skryptów, który znajduje się w bieżącej karcie. Metodę można wywołać dla dowolnego aparatu obsługi skryptów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
- [Interfejs IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)
+ [IActiveScriptProfilerControl2, interfejs](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

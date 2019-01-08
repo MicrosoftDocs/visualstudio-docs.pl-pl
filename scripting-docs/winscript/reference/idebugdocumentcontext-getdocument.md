@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6776a65ca9adbcf9304e57e0b93f4ebcb4a33bc4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a002781fc72f724931bc9eaa51d6a1621740b27
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793960"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093486"
 ---
 # <a name="idebugdocumentcontextgetdocument"></a>IDebugDocumentContext::GetDocument
 Zwraca dokument, który zawiera ten kontekst.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDocument(  
    IDebugDocument**  ppsd  
 );  
@@ -41,7 +41,7 @@ HRESULT GetDocument(
  [out] Dokument, który zawiera ten kontekst.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT GetDocument(
  `GetDocument` Metoda zwraca dokument, który zawiera ten kontekst.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md)
+ [IDebugDocumentContext, interfejs](../../winscript/reference/idebugdocumentcontext-interface.md)

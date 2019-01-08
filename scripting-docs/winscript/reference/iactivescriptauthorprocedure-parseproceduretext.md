@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9c4a1ba03a8498dbaa857dc5dbabba8914e54a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 893dc36c066426ad1de7346c7ce1fea24b191ba3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793285"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090691"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Analizuje procedury kodu, dodaje tekst procedury kodu do skryptu tworzenia aparatu i tworzy `IScriptEntry` obiekt, który odpowiada procedury kodu.  
+Analizuje kod procedury, dodaje tekst procedury kodu do skryptu tworzenia aparatu i tworzy `IScriptEntry` obiekt, który odnosi się do procedury kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ParseProcedureText(  
    LPCOLESTR   pszCode,  
    LPCOLESTR   pszFormalParams,  
@@ -45,22 +45,22 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [in] Tekst skryptu, można przeanalizować.  
+ [in] Tekst skryptu można przeanalizować.  
   
  `pszFormalParams`  
- [in] Adres nazwy formalny parametr dla procedury. Nazwy parametrów muszą być oddzielone odpowiednie ograniczniki dla tworzenia aparatu skryptu. Nazwy nie powinny być ujęte w nawiasy.  
+ [in] Adres nazwy parametrów formalnych w procedurze. Nazwy parametrów muszą być rozdzielone odpowiednie ograniczniki skryptu tworzenia aparatu. Nazwy nie powinna zostać ujęta w nawiasy.  
   
  `pszProcedureName`  
- [in] Adres nazwę procedury do przeanalizowania.  
+ [in] Adres nazwa procedury, która ma być analizowany.  
   
  `pszItemName`  
- [in] Adres buforu, który zawiera nazwę elementu skojarzone z `IScriptEntry` obiektu.  
+ [in] Skojarzony adres buforu, który zawiera nazwę elementu `IScriptEntry` obiektu.  
   
  `pszDelimiter`  
- [in] Adres ogranicznik zakończenia elementu skryptu bloku. Gdy `pszCode` analizy strumienia tekstu host zazwyczaj używa ogranicznik (na przykład dwa pojedynczy cudzysłów), aby wykryć koniec bloku skryptu. Ustaw ten parametr na wartość NULL, jeśli nie istnieje żadne ogranicznik można oznaczyć końca bloku skryptu.  
+ [in] Adres ogranicznika końcowego elementu skrypt bloku. Gdy `pszCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), na końcu bloku skryptu do wykrywania. Ustaw ten parametr na wartość NULL, jeśli nie było ogranicznika do oznaczenia końca bloku skryptu.  
   
  `dwCookie`  
- [in] Zdefiniowane przez aplikację wartość skojarzoną z nowym `IScriptEntry` obiektu.  
+ [in] Zdefiniowane przez aplikację wartość skojarzoną z nowymi `IScriptEntry` obiektu.  
   
  `dwFlags`  
  [in] Nie jest używany.  
@@ -79,4 +79,4 @@ HRESULT ParseProcedureText(
  Bieżący [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat nie obsługuje tej metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptAuthorProcedure](../../winscript/reference/iactivescriptauthorprocedure-interface.md)
+ [IActiveScriptAuthorProcedure, interfejs](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

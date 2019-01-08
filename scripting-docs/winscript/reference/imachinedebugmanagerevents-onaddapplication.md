@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 887ce7f723713c335d72a6353c20765c7b695031
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 613461eada0113592ccb356374d70be4da626481
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794878"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086648"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-Obsługuje zdarzenie po dodaniu aplikacji do uruchamiania liście aplikacji.  
+Obsługuje zdarzenie, gdy aplikacja zostanie dodany do uruchamiania listy aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onAddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,20 +39,20 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [in] Aplikacja, która została dodana do uruchamiania liście aplikacji.  
+ [in] Aplikacja, która została dodana do uruchamiania listy aplikacji.  
   
  `dwAppCookie`  
- [in] Plik cookie podany przy wywołaniu aplikacji został dodany do listy aplikacji.  
+ [in] Plik cookie podany przy wywołaniu metody aplikacja została dodana do listy aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Tej metody oznacza, że aplikacja została dodana do uruchamiania liście aplikacji.  
+ Tej metody oznacza, że aplikacja została dodana do uruchamiania listy aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IMachineDebugManagerEvents](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

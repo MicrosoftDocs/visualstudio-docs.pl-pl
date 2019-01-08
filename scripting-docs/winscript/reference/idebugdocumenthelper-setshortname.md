@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69674b5639c7d59a4551192177d9ebdafd27ac99
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7014ecc858734a4dea6f9c4c2453f101c28d8996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793981"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089937"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
-Ustawia krótką nazwę dokumentu.  
+Ustawia skróconą nazwę dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetShortName(  
    LPCOLESTR  pszShortName  
 );  
@@ -38,10 +38,10 @@ HRESULT SetShortName(
   
 #### <a name="parameters"></a>Parametry  
  `pszShortName`  
- [in] Zerem ciągu zawierającego krótką nazwę dokumentu.  
+ [in] Ciąg zakończony znakiem null, zawierającego krótką nazwę dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT SetShortName(
  Ta metoda ustawia krótką nazwę nowego dokumentu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 958478d8c8ead6500711a7866a784235adb869b8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78e1ec5cddd28bc80a29789bf800eb49d0236972
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796282"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091471"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-Ustawia nazwę zdarzenia prostego skojarzony z skryptlet. Jest to nazwa jednowyrazowej, która nie zawiera żadnego odstępu.  
+Ustawia nazwę zdarzenia prostego, który jest skojarzony z scriptlet. Jest to nazwa jednowyrazowej, który nie zawiera żadnego odstępu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetSimpleEventName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [in] Buforu, który zawiera nazwę zdarzenia prostego, z którym skojarzony jest `IScriptScriptlet` obiektu.  
+ [in] Bufor, który zawiera nazwę zdarzenia prostego, który jest skojarzony z `IScriptScriptlet` obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -50,4 +50,4 @@ HRESULT SetSimpleEventName(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet, interfejs](../../winscript/reference/iscriptscriptlet-interface.md)

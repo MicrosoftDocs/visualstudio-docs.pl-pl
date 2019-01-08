@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909c431a389a2589d48b6228534b16675ea41383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55b3518b6d73793df712ed9deccb5e27c320a9d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793993"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097152"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
 Zwraca nazwę dokumentu bez informacji o ścieżce.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  
@@ -41,14 +41,14 @@ HRESULT GetFileName(
  [out] Ciąg zawierający krótką nazwę dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca krótką nazwę dokumentu bez informacji o ścieżce. Krótka nazwa jest zwykle używany w sytuacjach, takich jak **Zapisz jako...**  okno dialogowe.  
+ Ta metoda zwraca krótką nazwę dokumentu bez informacji o ścieżce. Krótka nazwa jest zwykle używana w sytuacjach takich jak **Zapisz jako...**  okno dialogowe.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost, interfejs](../../winscript/reference/idebugdocumenthost-interface.md)

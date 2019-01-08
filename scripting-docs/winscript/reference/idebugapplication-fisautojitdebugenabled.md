@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a10cc829e2d217bb9a90b355405dd8f3b15b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b06d223d76ed741eef6b379ace6b522248ded2e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793690"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090548"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Określa, czy debuger just in time (JIT) jest zarejestrowany do hostów bez automatycznego debugowania.  
+Określa, czy debuger just in time (JIT) został zarejestrowany do bez hostów auto-debug.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 BOOL FIsAutoJitDebugEnabled();  
 ```  
   
@@ -38,10 +38,10 @@ BOOL FIsAutoJitDebugEnabled();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli metoda zakończy się pomyślnie i debugera JIT nie jest zarejestrowana dla hostów bez automatycznego debugowania, metoda zwraca `TRUE`. W przeciwnym razie zwraca `FALSE`.  
+ Jeśli metoda się powiedzie, i debugera JIT jest zarejestrowana w celu bez hostów auto-debug, metoda zwraca `TRUE`. W przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy debugera JIT jest zarejestrowana dla hostów bez automatycznego debugowania.  
+ Ta metoda określa, czy jest debugera JIT jest zarejestrowana w celu bez hostów auto-debug.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

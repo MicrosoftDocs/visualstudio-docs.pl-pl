@@ -18,26 +18,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 075e28f8e9293412492a83c6b04ca4473925e8c1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1335fd0fa71e7263dd0b762d13acbc33ce505eda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794299"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090808"
 ---
 # <a name="ienumdebugpropertyinforeset"></a>IEnumDebugPropertyInfo::Reset
-Resetuje sekwencję wyliczenia na początku.  
+Resetuje sekwencji wyliczenia na początku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Reset (  
 void  
 );  
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)
+ [IEnumDebugPropertyInfo, interfejs](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

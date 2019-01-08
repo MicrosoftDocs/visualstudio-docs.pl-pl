@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794287"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093109"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-Zwraca wynik wyrażenia jako właściwość debugowania i wartość zwracana operacji.  
+Zwraca wynik obliczania wyrażenia jako właściwość debugowania i wartość zwracana wykonać operację.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -39,23 +39,23 @@ HRESULT GetResultAsDebugProperty(
   
 #### <a name="parameters"></a>Parametry  
  `phrResult`  
- [out] Wartość zwracana operacji.  
+ [out] Wartość zwracana wykonać operację.  
   
  `ppdp`  
- [out] Właściwość debugowania dla wyrażenia.  
+ [out] Właściwości debugowania dla wyrażenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_PENDING`|Operacja jest nadal oczekujące.|  
+|`E_PENDING`|Ta operacja jest nadal oczekujące.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wynik wyrażenia jako `IDebugProperty` i operacji `HRESULT`.  
+ Ta metoda zwraca wynik obliczania wyrażenia jako `IDebugProperty` i wykonać operację `HRESULT`.  
   
- Ta metoda zwraca `S_OK` i `phrResult` zwraca `E_ABORT` Jeśli `Abort` przerwanie operacji.  
+ Ta metoda zwraca `S_OK` i `phrResult` zwraca `E_ABORT` Jeśli `Abort` przerywa operację.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   

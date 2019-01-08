@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793951"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092209"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
 Obsługuje zdarzenie, gdy węzeł podrzędny zostanie usunięty z obiektu węzła debugowania aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,21 +38,21 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Parametry  
  `prddpChild`  
- [in] Aplikacji podrzędnym, który został usunięty.  
+ [in] Aplikacja podrzędnym, która została usunięta.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obsługuje zdarzenie, gdy węzeł podrzędny zostanie usunięte z obiektu węzła debugowania aplikacji.  
+ Ta metoda obsługuje zdarzenie, gdy węzeł podrzędny zostanie usunięty z obiektu węzła debugowania aplikacji.  
   
- Implementacje z `IDebugApplicationNode` interfejsu Zgłoś to zdarzenie.  
+ Implementujące obiekty z `IDebugApplicationNode` interfejsu Zgłoś to zdarzenie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
- [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

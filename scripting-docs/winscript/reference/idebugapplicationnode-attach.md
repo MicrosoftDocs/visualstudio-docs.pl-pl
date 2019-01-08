@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 393186330979d464fe54bde339806a5d8335a859
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793933"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094955"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
 Dodaje ten węzeł aplikacji do drzewa określonego projektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugApplicationNode*  pdanParent  
 );  
@@ -38,10 +38,10 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parametry  
  `pdanParent`  
- [in] Drzewa projektu, w którym ma zostać dodany ten węzeł aplikacji.  
+ [in] Drzewo projektu, w którym ma zostać dodany ten węzeł aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT Attach(
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
- [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

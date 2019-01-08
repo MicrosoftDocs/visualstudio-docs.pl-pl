@@ -1,5 +1,5 @@
 ---
-title: IJsDebugStackWalker::GetNext — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugStackWalker::GetNext, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 695bb6cecc2a27565dce21b4a965ad08d90d7be7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e5b1b1257556ab17aa5dcac7b7f4525063dfb1d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794686"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090780"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext — Metoda
-Pobiera następnej ramki.  
+Pobiera następną klatkę.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetNext(  
    IJsDebugFrame **ppFrame  
 );  
@@ -36,15 +36,15 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Parametry  
  `ppFrame`  
- [out] Obiekt reprezentujący ramki stosu.  
+ [out] Obiekt reprezentujący ramkę stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca E_JsDEBUG_OUTSIDE_OF_VM, gdy nie ma żadnych więcej ramek stosu, mają zostać wyliczone  
+ Zwraca wartość E_JsDEBUG_OUTSIDE_OF_VM, jeśli nie ma żadnych więcej ramek stosu do wyliczenia  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugstackwalker — interfejs](../../winscript/reference/ijsdebugstackwalker-interface.md)
+ [IJsDebugStackWalker, interfejs](../../winscript/reference/ijsdebugstackwalker-interface.md)

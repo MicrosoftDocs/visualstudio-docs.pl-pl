@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130895e0e70b1044fab5d5ab406f940b036c37f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e3fd21ba720dfed394e497a9a56a1bb6898dc60
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796432"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097256"
 ---
 # <a name="textdocattr-constants"></a>Stała TEXT_DOC_ATTR
 Opisuje atrybuty dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef DWORD TEXT_DOC_ATTR;  
 ```  
   
@@ -38,10 +38,10 @@ typedef DWORD TEXT_DOC_ATTR;
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|TEXT_DOC_ATTR_READONLY|0x00000001|Dokument jest przeznaczony tylko do odczytu.|  
+|TEXT_DOC_ATTR_READONLY|0x00000001|Dokument jest tylko do odczytu.|  
 |TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Dokument jest plikiem podstawowym tego drzewa dokumentu.|  
-|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Dokument jest pracownika.|  
-|TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Dokument jest plik skryptu.|  
+|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Dokument jest proces roboczy.|  
+|TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Dokument jest pliku skryptu.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6cee33b5547e30f913407b02a3befd449dda6aeb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794629"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097360"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-Zwraca wynik wyrażenia jako ciąg i wartość zwracana operacji.  
+Zwraca wynik obliczania wyrażenia jako ciąg i wartości zwracanej wykonać operację.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  
@@ -39,23 +39,23 @@ HRESULT GetResultAsString(
   
 #### <a name="parameters"></a>Parametry  
  `phrResult`  
- [out] Wartość zwracana operacji.  
+ [out] Wartość zwracana wykonać operację.  
   
  `pbstrResult`  
  [out] Wynik obliczania wyrażenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_PENDING`|Operacja jest nadal oczekujące.|  
+|`E_PENDING`|Ta operacja jest nadal oczekujące.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wynik wyrażenia jako ciąg i operacji `HRESULT`.  
+ Ta metoda zwraca wynik obliczania wyrażenia jako ciąg i wykonać operację `HRESULT`.  
   
- Ta metoda zwraca `S_OK` i `phrResult` zwraca `E_ABORT` Jeśli `Abort` przerwanie operacji.  
+ Ta metoda zwraca `S_OK` i `phrResult` zwraca `E_ABORT` Jeśli `Abort` przerywa operację.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugExpression](../../winscript/reference/idebugexpression-interface.md)
+ [IDebugExpression, interfejs](../../winscript/reference/idebugexpression-interface.md)

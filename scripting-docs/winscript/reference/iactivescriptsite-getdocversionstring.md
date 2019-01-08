@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4b009c9eb40b2935a5b1aeca0d551819462bafc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793438"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097217"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Pobiera ciąg zdefiniowany przez hosta, który unikatowo identyfikuje bieżącej wersji dokumentu. Jeśli powiązanego dokumentu został zmieniony poza zakresem skryptu systemu Windows (tak jak w przypadku edycji w Notatniku strony HTML), aparat skryptów można zapisać to wraz z jego stanu utrwalonego wymuszanie ponownego kompilowania przy następnym załadowaniu skryptu.  
+Pobiera ciąg zdefiniowany przez hosta, który unikatowo identyfikuje bieżącej wersji dokumentu. Jeśli powiązany dokument został zmieniony poza zakresem skrypt Windows (tak jak w przypadku edytowany przy użyciu programu Notepad strony HTML), aparat skryptów zapisać to wraz z jego utrwalonego stanu wymuszania ponownej kompilacji podczas następnego załadowaniu skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDocVersionString(  
     BSTR *pbstrVersionString  // address of document version string  
 );  
@@ -38,13 +38,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Parametry  
  `pstrVersionString`  
- [out] Adres ciąg wersji dokumentu zdefiniowanego przez hosta.  
+ [out] Adres ciąg wersji dokumentów zdefiniowanych przez hosta.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca `S_OK` w przypadku powodzenia lub `E_NOTIMPL` Jeśli ta metoda nie jest obsługiwana.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli `E_NOTIMPL` jest zwracany, aparat skryptów należy zakładać, że skrypt jest zsynchronizowana z dokumentu.  
+ Jeśli `E_NOTIMPL` ma zostać zwrócona, aparat skryptów należy przyjąć, że skrypt jest zsynchronizowany z dokumentu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

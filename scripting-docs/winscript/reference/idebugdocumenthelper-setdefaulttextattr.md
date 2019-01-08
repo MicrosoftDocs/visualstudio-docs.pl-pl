@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49b6da490e1eefe13ae21a9875952032585372f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e43740f41dacfed54ba5269522eb7b92cbc76bf6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794080"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093682"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
-Ustawia domyślne atrybuty dla tekstu, który nie znajduje się w bloku skryptu.  
+Ustawia atrybuty domyślnych dla tekstu, który nie znajduje się w bloku skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetDefaultTextAttr(  
    SOURCE_TEXT_ATTR  staTextAttr  
 );  
@@ -38,18 +38,18 @@ HRESULT SetDefaultTextAttr(
   
 #### <a name="parameters"></a>Parametry  
  `staTextAttr`  
- Atrybuty tekstu źródłowego domyślne.  
+ Atrybuty domyślne źródło tekstu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- O ile domyślne atrybuty zostaną zmienione przez tę metodę, domyślne atrybuty dla tekstu poza blokiem skryptu jest SOURCETEXT_ATTR_NONSOURCE. Interfejsu użytkownika można użyć tych informacji do oznaczania tekstu poza blokach skryptu jako tylko do odczytu.  
+ O ile domyślne atrybuty zostaną zmienione przez tę metodę, atrybuty domyślne tekst poza blok skryptu jest SOURCETEXT_ATTR_NONSOURCE. Interfejs użytkownika można użyć tych informacji do oznaczania tekst poza Bloki skryptu jako tylko do odczytu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [Wyliczenie SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a1006304974fab4959ad6313ffdc26793cdd345
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 77cc255bcd04754cbfde4638b67a85f6fdc0a922
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794578"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091991"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-Pobiera znaki i/lub znak atrybuty skojarzone z pozycji znaku zakresu.  
+Pobiera znaki i/lub atrybuty znaków skojarzonych z zakresem pozycji znaku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetText(  
    ULONG              cCharacterPosition,  
    WCHAR*             pcharText,  
@@ -42,30 +42,30 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Uruchom lokalizacji pozycji znaku zakresu.  
+ [in] Lokalizacja z zakresu znaków pozycja początkowa.  
   
  `pcharText`  
- [w, out] Znak buforu tekstu. Rozmiar buforu musi być wystarczająco duży, aby pomieścić `cMaxChars` znaków. Jeśli ten parametr ma wartość NULL, metoda zwraca znaków.  
+ [out w] Bufor tekstowy znaków. Rozmiar buforu musi być wystarczająco duży, aby pomieścić `cMaxChars` znaków. Jeśli ten parametr ma wartość NULL, metoda nie zwraca znaki.  
   
  `pstaTextAttr`  
- [w, out] Bufor atrybutu znaków. Rozmiar buforu musi być wystarczająco duży, aby pomieścić `cMaxChars` znaków. Jeśli ten parametr ma wartość NULL, metoda zwraca atrybuty.  
+ [out w] Buforu atrybut znaków. Rozmiar buforu musi być wystarczająco duży, aby pomieścić `cMaxChars` znaków. Jeśli ten parametr ma wartość NULL, metoda nie zwraca atrybutów.  
   
  `pcNumChars`  
- [w, out] Liczba znaków/atrybutów zwracanych. Ten parametr musi być ustawiony na zero, przed wywołaniem tej metody.  
+ [out w] Zwracana liczba znaków i atrybuty. Ten parametr musi być równa zero przed wywołaniem tej metody.  
   
  `cMaxChars`  
  [in] Liczba znaków w zakresie pozycji znaku. Określa również maksymalną liczbę zwracanych znaków.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda pobiera znaki i/lub znak atrybuty skojarzone z pozycji znaku zakresu. Zakres pozycji znaku określono za pomocą pozycji znaku i liczbę znaków.  
+ Ta metoda pobiera znaki i/lub atrybuty znaków skojarzonych z zakresem pozycji znaku. Zakres pozycja znaku jest określony przez pozycji znaku i określonej liczby znaków.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   
- [Wyliczenie SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

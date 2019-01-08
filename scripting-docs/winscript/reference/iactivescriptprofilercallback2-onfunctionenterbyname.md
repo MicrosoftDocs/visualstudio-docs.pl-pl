@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea74d9e9e00485c86d26bb01c486992f85ffeb8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c527881c45a935344aa5444d7397ccdb6d99e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793414"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092498"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionenterbyname"></a>IActiveScriptProfilerCallback2::OnFunctionEnterByName
-Powiadamia obiektu profilera, który aparat skryptów ma wykonać wywołanie funkcji modelu DOM (Document Object).  
+Powiadamia obiekt profiler, który silnik wykonywania skryptów przechodzi do wykonania wywołania funkcji z modelu DOM (Document Object).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnFunctionEnterByName(  
     [in] [string] const WCHAR *pwszFunctionName,  
     [in] PROFILER_SCRIPT_TYPE scriptType);  
@@ -34,17 +34,17 @@ HRESULT OnFunctionEnterByName(
   
 #### <a name="parameters"></a>Parametry  
  `pwszFunctionName`  
- [in] Nazwa funkcji, który przechodzi przez aparat skryptów do wykonania.  
+ [in] Nazwa funkcji, która silnik wykonywania skryptów przechodzi do wykonania.  
   
  `scriptType`  
- [in] Typ funkcji. Aby uzyskać opis prawidłowych wartości, zobacz [wyliczenie profiler_script_type Enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] Typ funkcji. Opisy prawidłowych wartości można znaleźć [wyliczenie profiler_script_type Enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwracana wartość ta metoda jest ignorowana przez aparat skryptów.  
+ Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
- Dla wywołań modelu DOM, aparat skryptów wywołuje tę metodę, zamiast wywoływać metodę [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md). Jest to spowodowane dużą liczbę unikatowych metody i właściwości w modelu DOM.  
+ Dla połączeń modelu DOM, aparat skryptów wywołuje tę metodę, zamiast wywoływać metodę [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md). Jest to spowodowane dużą liczbą unikatowy metod i właściwości w modelu DOM.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
- [Interfejs IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)
+ [IActiveScriptProfilerCallback2, interfejs](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

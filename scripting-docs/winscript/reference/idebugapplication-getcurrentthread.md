@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2240a62b62c917e94f3ace8f516a10f9de66c74d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5b0712994881aaa58e41246bc054ba6cee895ae0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793705"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092160"
 ---
 # <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
-Zwraca wątek skojarzony z aktualnie uruchomiony.  
+Zwraca wątek skojarzony z aktualnie uruchomionemu wątkowi.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetCurrentThread(  
    IDebugApplicationThread**  pat  
 );  
@@ -38,17 +38,17 @@ HRESULT GetCurrentThread(
   
 #### <a name="parameters"></a>Parametry  
  `pat`  
- [out] Wątek skojarzony z aktualnie uruchomiony.  
+ [out] Wątek skojarzony z aktualnie uruchomionemu wątkowi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wątek skojarzony z aktualnie uruchomiony.  
+ Ta metoda zwraca wątek skojarzony z aktualnie uruchomionemu wątkowi.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fdad752587869fbdd1edfa325ddc1282cfa3a95
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3cfbd2f3924391a8c7ff75ea5e4c06e7b0f07c35
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796402"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093031"
 ---
 # <a name="profilerheapobjectrelationshiplist-structure"></a>Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST
-Reprezentuje listę relacje, które należą do obiektu heap.  
+Reprezentuje listę relacje, które należą do obiekt sterty.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_RELATIONSHIP elements[];} PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST;  
 ```  
   
@@ -32,5 +32,5 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_
   
 |Element członkowski|Typ|Opis|  
 |------------|----------|-----------------|  
-|count|UINT|Liczba relacji obiektu heap.|  
-|elementy|[Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Relacje obiektów sterty.|
+|count|UINT|Liczba relacji obiekt sterty.|  
+|elementy|[PROFILER_HEAP_OBJECT_RELATIONSHIP, struktura](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Relacje obiekt sterty.|

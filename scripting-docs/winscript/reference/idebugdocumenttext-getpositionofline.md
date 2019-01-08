@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0098a78938c745931c529bbc02823d32b8180cde
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ca3a1df414f954dce4398eb8a2e0b7ea68a04a49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794167"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092292"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
-Zwraca pozycję znaku odpowiadający znakowi pierwszego wiersza.  
+Zwraca pozycję znaku odpowiadający pierwszego znaku wiersza.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetPositionOfLine(  
    ULONG   cLineNumber,  
    ULONG*  pcCharacterPosition  
@@ -45,14 +45,14 @@ HRESULT GetPositionOfLine(
  [out] Pozycja znaku w dokumencie początku wiersza `cLineNumber`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca pozycji znaku odpowiadający znakowi pierwszego wiersza.  
+ Ta metoda zwraca pozycję znaku, w pierwszym znaku, linii.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText, interfejs](../../winscript/reference/idebugdocumenttext-interface.md)

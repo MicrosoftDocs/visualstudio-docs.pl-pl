@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97ddb49f61e9df4044eb6e16b853e6cf8155162a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f0f397f70d994d0997163a06766d32c35e9b2ab7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794245"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090145"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
 Dodaje ten dokument w drzewie dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugDocumentHelper*  pddhParent  
 );  
@@ -38,18 +38,18 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parametry  
  `pddhParent`  
- [in] Drzewo dokumentu, gdzie ma zostać dodana tego dokumentu. Może mieć wartości NULL.  
+ [in] W drzewie dokumentu, gdzie ma zostać dodana w tym dokumencie. Może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda dodaje ten dokument do dokumentu drzewa, za pomocą `pddhParent` jako element nadrzędny. Jeśli `pddhParent` jest `NULL`, dokument będzie dokumentów najwyższego poziomu.  
+ Metoda ta umożliwia dodanie tego dokumentu do dokumentu drzewa, za pomocą `pddhParent` jako element nadrzędny. Jeśli `pddhParent` jest `NULL`, w tym dokumencie będzie dokumentów najwyższego poziomu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

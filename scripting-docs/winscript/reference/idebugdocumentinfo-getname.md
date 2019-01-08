@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da369c328c2f92915c60b1c50517938bf76d5202
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f3ecde4fbde1a265596a01d7f0f953763363e797
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794131"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097698"
 ---
 # <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
 Zwraca nazwę określonego dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetName(  
    DOCUMENTNAMETYPE  dnt,  
    BSTR*             pbstrName  
@@ -45,7 +45,7 @@ HRESULT GetName(
  [out] Ciąg zawierający nazwę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -57,4 +57,4 @@ HRESULT GetName(
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)   
- [Wyliczenie DOCUMENTNAMETYPE](../../winscript/reference/documentnametype-enumeration.md)
+ [DOCUMENTNAMETYPE, wyliczenie](../../winscript/reference/documentnametype-enumeration.md)

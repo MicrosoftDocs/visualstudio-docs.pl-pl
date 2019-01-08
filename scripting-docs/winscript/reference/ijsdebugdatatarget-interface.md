@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget — interfejs | Dokumentacja firmy Microsoft
+title: IJsDebugDataTarget, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94e158ced0da6d59bfcadeb87bf206c94a6099ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e14046443ca0560deacb6ddb6e39b1fc25d18fea
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794938"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097425"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget — Interfejs
-Implementowana przez debuger umożliwiają korzystanie z funkcji dostępu i zmiany stanu procesu docelowego debugera.  
+Implementowany przez debugera w celu udostępnienia funkcji dostępu i zmiany stanu docelowego procesu debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IJsDebugDataTarget : public IUnknown;  
 ```  
   
@@ -34,18 +34,18 @@ IJsDebugDataTarget : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebugDataTarget::AllocateVirtualMemory — metoda](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Rezerwuje i/lub zatwierdza obszaru pamięci w wirtualnej przestrzeni adresowej procesu docelowego.|  
-|[IJsDebugDataTarget::CreateStackFrameEnumerator — metoda](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Tworzy moduł wyliczający dla ramki stosu.|  
-|[IJsDebugDataTarget::FreeVirtualMemory — metoda](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Zwalnia i/lub decommits obszaru pamięci w wirtualnej przestrzeni adresowej procesu docelowego.|  
-|[IJsDebugDataTarget::GetThreadContext — metoda](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Pobiera kontekst dla danego wątku.|  
-|[IJsDebugDataTarget::GetTlsValue — metoda](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Pobiera wartość w miejscu magazynu lokalnego (TLS) wątku dla określonego indeksu TLS debugowany wątek.|  
-|[IJsDebugDataTarget::ReadBSTR — metoda](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Odczytuje BSTR z docelowego debugowania.|  
-|[IJsDebugDataTarget::ReadMemory — metoda](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Odczytuje pamięci procesu docelowego.|  
-|[IJsDebugDataTarget::ReadNullTerminatedString — metoda](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Odczytuje określoną liczbę znaków z elementem docelowym.|  
-|[IJsDebugDataTarget::WriteMemory — metoda](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Odczytuje pamięci procesu docelowego.|  
+|[IJsDebugDataTarget::AllocateVirtualMemory, metoda](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Rezerwuje i/lub zwalnia region pamięci w wirtualnej przestrzeni adresowej procesu docelowego.|  
+|[IJsDebugDataTarget::CreateStackFrameEnumerator, metoda](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Tworzy moduł wyliczający ramek stosu.|  
+|[IJsDebugDataTarget::FreeVirtualMemory, metoda](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Zwalnia i/lub anuluje region pamięci w wirtualnej przestrzeni adresowej procesu docelowego.|  
+|[IJsDebugDataTarget::GetThreadContext, metoda](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Pobiera kontekst dla podanego wątku.|  
+|[IJsDebugDataTarget::GetTlsValue, metoda](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Dla debugowanego wątku pobiera wartość w gnieździe magazynu lokalnego (TLS) wątku dla określonego indeksu TLS.|  
+|[IJsDebugDataTarget::ReadBSTR, metoda](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Odczytuje ciąg BSTR z docelowego programu debug.|  
+|[IJsDebugDataTarget::ReadMemory, metoda](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Odczytuje pamięć procesu docelowego.|  
+|[IJsDebugDataTarget::ReadNullTerminatedString, metoda](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Odczytuje określoną liczbę znaków z obiektu docelowego.|  
+|[IJsDebugDataTarget::WriteMemory, metoda](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Odczytuje pamięć procesu docelowego.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e148b5e13bc3d7986451ece11a3a2eada5baa28
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1366a33a9b6ea4bcfe9e0bb61cf8c61500853e7c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794692"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092031"
 ---
 # <a name="ienumdebugstackframesnext"></a>IEnumDebugStackFrames::Next
 Pobiera określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                       celt,  
    DebugStackFrameDescriptor*  prgdsfd,  
@@ -43,13 +43,13 @@ HRESULT Next(
  [in] Liczba segmentów do pobrania.  
   
  `prgdsfd`  
- [out] Zwraca tablicę `DebugStackFrameDescriptor` interfejsów, które reprezentuje segmentów pobierania.  
+ [out] Zwraca tablicę `DebugStackFrameDescriptor` interfejsy, które reprezentuje segmentów pobierania.  
   
  `pceltFetched`  
  [out] Rzeczywista liczba segmentów pobrane przez moduł wyliczający.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -60,4 +60,4 @@ HRESULT Next(
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)   
- [Struktura DebugStackFrameDescriptor](../../winscript/reference/debugstackframedescriptor-structure.md)
+ [DebugStackFrameDescriptor, struktura](../../winscript/reference/debugstackframedescriptor-structure.md)

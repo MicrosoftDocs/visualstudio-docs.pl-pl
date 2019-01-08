@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd32ddf73076f9e29ca3377186ff64be256b8fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5288b0cffc3b8bfca0e995e67d4b3e4bf3a6b2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796276"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090132"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Ta metoda określa, czy punkcie wykonanie, które określa następnej instrukcji na wykonanie kodu, można ustawić w określonej lokalizacji.  
+Ta metoda określa, czy punkt wykonania, która określa następną instrukcję na wykonanie kodu, można ustawić w określonej lokalizacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CanSetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -37,20 +37,20 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Parametry  
  `pStackFrame`  
- [in] Wskaźnik do obiektu ramki stosu.  
+ [in] Wskaźnik na obiekt w ramce stosu.  
   
  `pCodeContext`  
  [in] Wskaźnik do obiektu kontekstu kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Następna instrukcja może zostać zaktualizowana w kontekście określony kod.|  
-|`S_FALSE`|Nie można zaktualizować następnej instrukcji dla kontekstu określonego kodu.|  
+|`S_OK`|Następna instrukcja może zostać zaktualizowana do kontekstu określonego kodu.|  
+|`S_FALSE`|Nie można zaktualizować następną instrukcję do kontekstu określonego kodu.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs ISetNextStatement](../../winscript/reference/isetnextstatement-interface.md)
+ [ISetNextStatement, interfejs](../../winscript/reference/isetnextstatement-interface.md)

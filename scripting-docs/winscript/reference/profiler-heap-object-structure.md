@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad50f03806cbf98450c0fc917f1a97ca7305d05c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c8682cd54b10144800f17cab3a8a03ea8169889
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796519"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093135"
 ---
 # <a name="profilerheapobject-structure"></a>Struktura PROFILER_HEAP_OBJECT
-Reprezentuje obiektów sterty zebrane przez [metoda IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+Przedstawia obiekty sterty są zbierane przez [metoda IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT  
 {  
     UINT size;    union {        PROFILER_HEAP_OBJECT_ID objectId;        PROFILER_EXTERNAL_OBJECT_ADDRESS externalObjectAddress;    };    PROFILER_HEAP_OBJECT_NAME_ID typeNameId;    USHORT flags;     USHORT optionalInfoCount;} PROFILER_HEAP_OBJECT;  
@@ -34,8 +34,8 @@ typedef struct _PROFILER_HEAP_OBJECT
   
 |Element członkowski|Typ|Opis|  
 |------------|----------|-----------------|  
-|Identyfikator obiektu|[Typ PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|Identyfikator obiektu heap.|  
-|externalObjectAddress|[Typ PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|Adres obiektu zewnętrznego obiektu, na przykład obiekt przydzielony C++, znajdującego się poza sterty JavaScript.|  
-|typeNameId|[Typ PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|Identyfikator nazwy typu obiektu sterty pobierane z [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md). Tylko jeden z `externalObjectAddress` lub `typeName` znajduje się w zależności od `flags` wartość.|  
-|flagi|[Wyliczenie PROFILER_HEAP_OBJECT_FLAGS](../../winscript/reference/profiler-heap-object-flags-enumeration.md)|Flagi, które zawierają podstawowe informacje o obiekcie stosu.|  
-|optionalInfoCount|USHORT|Liczba [struktura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) rekordów, które są dostępne dla obiektu heap.|
+|Identyfikator obiektu|[PROFILER_HEAP_OBJECT_ID, typ](../../winscript/reference/profiler-heap-object-id-type.md)|Identyfikator obiektu sterty.|  
+|externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS, typ](../../winscript/reference/profiler-external-object-address-type.md)|Adres obiektu zewnętrznego obiektu, takie jak obiektu przydzielone C++, które znajduje się poza sterty JavaScript.|  
+|typeNameId|[PROFILER_HEAP_OBJECT_NAME_ID, typ](../../winscript/reference/profiler-heap-object-name-id-type.md)|Identyfikator nazwy typu obiektu sterty, pobierane z [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md). Tylko jeden z `externalObjectAddress` lub `typeName` znajduje się w zależności od `flags` wartość.|  
+|flagi|[PROFILER_HEAP_OBJECT_FLAGS, wyliczenie](../../winscript/reference/profiler-heap-object-flags-enumeration.md)|Flagi, zawierające podstawowe informacje o obiekcie sterty.|  
+|optionalInfoCount|USHORT|Liczba [PROFILER_HEAP_OBJECT_OPTIONAL_INFO, struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) rekordy, które są dostępne dla obiektu sterty.|

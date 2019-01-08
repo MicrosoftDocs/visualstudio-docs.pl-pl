@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600eb4aff3bcefea31eb5fec76a2dc3cdce62a05
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bffd1a3d518a5166c81934d5f3c7508f62284d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796255"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097789"
 ---
 # <a name="iscriptscriptletgeteventname"></a>IScriptScriptlet::GetEventName
-Zwraca nazwę zdarzenia skojarzonego z skryptlet.  
+Zwraca nazwę zdarzenia, skojarzone ze scriptlet.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetEventName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetEventName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Buforu, który zawiera nazwę zdarzenia, z którym skojarzony jest `IScriptScriptlet` obiektu.  
+ [out] Bufor, który zawiera nazwę zdarzenia, który jest skojarzony z `IScriptScriptlet` obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -50,4 +50,4 @@ HRESULT GetEventName(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet, interfejs](../../winscript/reference/iscriptscriptlet-interface.md)

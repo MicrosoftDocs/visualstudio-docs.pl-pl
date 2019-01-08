@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 824546b64323f7fb88c4ec016f8420169afa665c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793651"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097334"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Zwraca statystyki skryptu niestandardowego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetStatEx(  
    REFGUID  guid,  
    ULONG*   pluHi,  
@@ -43,13 +43,13 @@ HRESULT GetStatEx(
  [in] Określa statystykę do zwrócenia. Semantyka statystykę odnosi się do określonego identyfikatora GUID jest całkowicie zdefiniowane aparatu.  
   
  `pluHi`  
- [out] Wysoka 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący statystyki.  
+ [out] Wysoka 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący dane statystyczne.  
   
  `pluLo`  
- [out] Niski 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący statystyki.  
+ [out] Niski 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący dane statystyczne.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -57,11 +57,11 @@ HRESULT GetStatEx(
 |`E_NOTIMPL`|Metoda nie jest zaimplementowana.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda umożliwia aparatu niestandardowego skryptu przywrócić znaczący statystyki hosta niestandardowego.  
+ Ta metoda umożliwia aparatu niestandardowego skryptu przywrócić statystyki istotnych niestandardowego hosta.  
   
 > [!NOTE]
 >  Ta metoda nie jest obecnie zaimplementowana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
- [Interfejs IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats, interfejs](../../winscript/reference/iactivescriptstats-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13853bd0a35a9bce1217241b5675a22de386b7dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2b784d0d5efa925109b7cc408bef6699b93c2ddf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794773"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092420"
 ---
 # <a name="ienumremotedebugapplicationsnext"></a>IEnumRemoteDebugApplications::Next
 `Next` Metoda pobiera określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                      celt,  
    IRemoteDebugApplication**  ppda,  
@@ -43,13 +43,13 @@ HRESULT Next(
  [in] Liczba segmentów do pobrania.  
   
  `ppda`  
- [out] Zwraca tablicę `IRemoteDebugApplication` interfejsów, które reprezentuje segmentów pobierania.  
+ [out] Zwraca tablicę `IRemoteDebugApplication` interfejsy, które reprezentuje segmentów pobierania.  
   
  `pceltFetched`  
  [out] Rzeczywista liczba segmentów pobrane przez moduł wyliczający.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -59,4 +59,4 @@ HRESULT Next(
  Ta metoda pobiera określoną liczbę segmentów w kolejności wyliczenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)
+ [IEnumRemoteDebugApplications, interfejs](../../winscript/reference/ienumremotedebugapplications-interface.md)

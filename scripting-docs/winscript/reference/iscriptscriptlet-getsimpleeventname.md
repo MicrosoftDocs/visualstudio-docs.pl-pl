@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ec90d2ebdf58f60ba88b90a38830b5df329dead
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01d20df26f2f3f1d2e7735fed5292b29da528ace
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796261"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093273"
 ---
 # <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet:: GetSimpleEventName
-Zwraca nazwę zdarzenie proste, która jest skojarzona z skryptlet. Jest to nazwa jednowyrazowej, która nie zawiera żadnego odstępu.  
+Zwraca nazwę zdarzenia prostego, który jest skojarzony z scriptlet. Jest to nazwa jednowyrazowej, który nie zawiera żadnego odstępu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetSimpleEventName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetSimpleEventName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Buforu, który zawiera nazwę zdarzenia prostego, z którym skojarzony jest `IScriptScriptlet` obiektu.  
+ [out] Bufor, który zawiera nazwę zdarzenia prostego, który jest skojarzony z `IScriptScriptlet` obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -50,4 +50,4 @@ HRESULT GetSimpleEventName(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet, interfejs](../../winscript/reference/iscriptscriptlet-interface.md)

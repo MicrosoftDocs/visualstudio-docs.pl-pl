@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794866"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088741"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Zwraca długość hasła i pozycji początkowej.  
+Zwraca pozycji początkowej i długości hasła.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -39,18 +39,18 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Parametry  
  `pichMin`  
- [out] Aby uzyskać `IScriptEntry` obiektów, które określają blok skryptu, zwraca wartość 0.  
+ [out] Aby uzyskać `IScriptEntry` zwraca wartość 0, obiekty, które określają blok skryptu.  
   
- Aby uzyskać `IScriptEntry` obiektów, które określają obiektem funkcji zwraca pozycję początkową funkcji w bieżącym bloku skryptu.  
+ Aby uzyskać `IScriptEntry` obiekty, które określają obiekt funkcji zwraca pozycja początkowa funkcji w bieżącym bloku skryptu.  
   
- Aby uzyskać `IScriptScriptlet` obiektów, zwraca wartość 0.  
+ Aby uzyskać `IScriptScriptlet` obiektów, funkcja zwraca 0.  
   
  `pcch`  
- [out] Aby uzyskać `IScriptEntry` obiektów, które określają blok skryptu, zwraca długość tekstu.  
+ [out] Aby uzyskać `IScriptEntry` obiekty, które określają blok skryptu zwraca długość tekstu.  
   
- Aby uzyskać `IScriptEntry` obiektów, które określają obiektem funkcji zwraca długość definicji funkcji.  
+ Aby uzyskać `IScriptEntry` obiekty, które określają obiekt funkcji zwraca długość definicji funkcji.  
   
- Aby uzyskać `IScriptScriptlet` obiektów, zwraca długość wpisu.  
+ Aby uzyskać `IScriptScriptlet` obiektów, funkcja zwraca długość wpisu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -62,4 +62,4 @@ HRESULT GetRange(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

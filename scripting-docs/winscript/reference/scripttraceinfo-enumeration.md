@@ -12,19 +12,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc1902b290a8024679cef12d503e94de4923defb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 866f507b4d107c8f395be6588a85f67ea6bb45c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796351"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086752"
 ---
 # <a name="scripttraceinfo-enumeration"></a>Wyliczenie SCRIPTTRACEINFO
-Reprezentuje zdarzenia skryptów, które są śledzone. Używane w [metoda IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).  
+Reprezentuje zdarzenie skryptu, które jest śledzone. Używane w [metoda IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef enum tagSCRIPTTRACEINFO {      SCRIPTTRACEINFO_SCRIPTSTART = 0,      SCRIPTTRACEINFO_SCRIPTEND   = 1,      SCRIPTTRACEINFO_COMCALLSTART    = 2,      SCRIPTTRACEINFO_COMCALLEND  = 3,      SCRIPTTRACEINFO_CREATEOBJSTART  = 4,      SCRIPTTRACEINFO_CREATEOBJEND    = 5,      SCRIPTTRACEINFO_GETOBJSTART = 6,      SCRIPTTRACEINFO_GETOBJEND   = 7,  } SCRIPTTRACEINFO ;  
 ```  
   
@@ -32,11 +32,11 @@ typedef enum tagSCRIPTTRACEINFO {      SCRIPTTRACEINFO_SCRIPTSTART = 0,      SCR
   
 |||  
 |-|-|  
-|SCRIPTTRACEINFO_SCRIPTSTART|Początek skryptu.|  
+|SCRIPTTRACEINFO_SCRIPTSTART|Uruchomienie skryptu.|  
 |SCRIPTTRACEINFO_SCRIPTEND|Koniec skryptu.|  
-|SCRIPTTRACEINFO_COMCALLSTART|Początek wywołania COM.|  
+|SCRIPTTRACEINFO_COMCALLSTART|Początek wywołania modelu COM.|  
 |SCRIPTTRACEINFO_COMCALLEND|Koniec wywołania modelu COM.|  
-|SCRIPTTRACEINFO_CREATEOBJSTART|Data rozpoczęcia tworzenia obiektów.|  
-|SCRIPTTRACEINFO_CREATEOBJEND|Data zakończenia tworzenia obiektów.|  
+|SCRIPTTRACEINFO_CREATEOBJSTART|Rozpoczęcie tworzenia obiektów.|  
+|SCRIPTTRACEINFO_CREATEOBJEND|Data zakończenia tworzenia obiektu.|  
 |SCRIPTTRACEINFO_GETOBJSTART|Początek wywołania GetObject.|  
 |SCRIPTTRACEINFO_GETOBJEND|Koniec wywołania GetObject.|

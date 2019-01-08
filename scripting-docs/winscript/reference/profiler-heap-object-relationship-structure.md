@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b992b020c0aa42a6f27e484d55fe89a514c0198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e5658f70e6a24151af75f4455fc44c2c756b9e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796417"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091952"
 ---
 # <a name="profilerheapobjectrelationship-structure"></a>Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP
-Reprezentuje relację obiektu heap.  
+Reprezentuje relację obiekt sterty.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP{    PROFILER_HEAP_OBJECT_NAME_ID relationshipId;    PROFILER_RELATIONSHIP_INFO relationshipInfo;    [switch_type(PROFILER_RELATIONSHIP_INFO), switch_is(relationshipInfo)] union    {        [case(PROFILER_PROPERTY_TYPE_NUMBER)] double numberValue;        [case(PROFILER_PROPERTY_TYPE_STRING)] LPCWSTR stringValue;        [case(PROFILER_PROPERTY_TYPE_HEAP_OBJECT)] PROFILER_HEAP_OBJECT_ID objectId;        [case(PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT)] PROFILER_EXTERNAL_OBJECT_ADDRESS externalObjectAddress;    };} PROFILER_HEAP_OBJECT_RELATIONSHIP;  
 ```  
   
@@ -32,10 +32,10 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP{    PROFILER_HEAP_OBJECT_NAME_
   
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
-|relationshipId|[Typ PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|Identyfikator relacji nazwa z [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
-|relationshipInfo|[Wyliczenie PROFILER_RELATIONSHIP_INFO](../../winscript/reference/profiler-relationship-info-enumeration.md)|Informacje na temat relacji.|  
-|numberValue|double|Wartość liczbową. Tylko jeden z `numberValue` / `stringValue` / `objectId` / `externalObjectAddress` jest ustawiona, na podstawie `relationshipInfo` wartości.|  
+|relationshipId|[PROFILER_HEAP_OBJECT_NAME_ID, typ](../../winscript/reference/profiler-heap-object-name-id-type.md)|Identyfikator relacji z nazwę [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
+|relationshipInfo|[PROFILER_RELATIONSHIP_INFO, wyliczenie](../../winscript/reference/profiler-relationship-info-enumeration.md)|Informacje na temat relacji.|  
+|numberValue|double|Wartość liczbowa. Tylko jeden z `numberValue` / `stringValue` / `objectId` / `externalObjectAddress` jest ustawiona, na podstawie `relationshipInfo` wartości.|  
 |stringValue|LPCWSTR|Wartość ciągu.|  
-|Identyfikator obiektu|[Typ PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|Identyfikator obiektu heap.|  
-|externalObjectAddress|[Typ PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|Adres obiektu zewnętrznego.|  
-|subString|[Struktura PROFILER_PROPERTY_TYPE_SUBSTRING_INFO](../../winscript/reference/profiler-property-type-substring-info-structure.md)|Informacje o typie podciąg.|
+|Identyfikator obiektu|[PROFILER_HEAP_OBJECT_ID, typ](../../winscript/reference/profiler-heap-object-id-type.md)|Identyfikator obiektu sterty.|  
+|externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS, typ](../../winscript/reference/profiler-external-object-address-type.md)|Adres obiektu zewnętrznego.|  
+|Podciąg|[PROFILER_PROPERTY_TYPE_SUBSTRING_INFO, struktura](../../winscript/reference/profiler-property-type-substring-info-structure.md)|Informacje o typie podciąg.|

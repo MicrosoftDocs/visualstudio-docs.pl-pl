@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f01ca5e001d45907af70b46b6dc362e8ae0b2044
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e95b11537873d3bfe02bf3fa793b61ace10938aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796333"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095813"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>Wyliczenie PROFILER_RELATIONSHIP_INFO
-Reprezentuje informacje o obiektach w relacji. Używane w [struktura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
+Reprezentuje informacje dotyczące obiektu w relacji. Używane w [struktura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PROPERTY_TYPE_STRING = 0x02,    PROFILER_PROPERTY_TYPE_HEAP_OBJECT = 0x03,    PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT = 0x04,    PROFILER_PROPERTY_TYPE_BSTR = 0x05,} PROFILER_RELATIONSHIP_INFO;  
 ```  
   
@@ -34,7 +34,7 @@ typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PR
 |------------|-----------|-----------------|  
 |PROFILER_PROPERTY_TYPE_NUMBER|0x01|Obiekt jest liczbą.|  
 |PROFILER_PROPERTY_TYPE_STRING|0x02|Obiekt jest ciąg.|  
-|PROFILER_PROPERTY_TYPE_HEAP_OBJECT|0x03|Obiekt jest obiektem stosu.|  
-|PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT|0x04|Obiekt zewnętrzny, oznacza to, nie jest na stercie kolekcji pamięci.|  
-|PROFILER_PROPERTY_TYPE_BSTR|0x05|Obiekt jest typu BSTR.|  
-|PROFILER_PROPERTY_TYPE_SUBSTRING|wartość 0x06|Obiekt jest ciąg.|
+|PROFILER_PROPERTY_TYPE_HEAP_OBJECT|0x03|Obiekt jest obiektem sterty.|  
+|PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT|0x04|Obiekt zewnętrzny, oznacza to, że nie jest na stercie wyrzucania elementów bezużytecznych.|  
+|PROFILER_PROPERTY_TYPE_BSTR|0x05|Obiekt jest ciąg BSTR.|  
+|PROFILER_PROPERTY_TYPE_SUBSTRING|wartość 0x06|Obiekt jest PODCIĄGIEM.|

@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eef8bd2a3f2e2a4eb4fd4b5f0e35fcd9acfe5bc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8ff7c3d531b46fa6681776e79fbb73f6d1efca2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793540"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087116"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
 Informuje hosta, że skrypt zakończy działanie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnScriptTerminate(  
     VARIANT *pvarResult,   // address of script results  
     EXCEPINFO *pexcepinfo  // address of structure with exception information  
@@ -39,16 +39,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>Parametry  
  `pvarResult`  
- [in] Adres zmiennej, która zawiera wynik skryptu lub `NULL` skrypt utworzony żadnego wyniku.  
+ [in] Adres zmiennej, który zawiera wynik skryptu lub `NULL` skrypt utworzony żadnego wyniku.  
   
  `pexcepinfo`  
- [in] Adres `EXCEPINFO` strukturę, która zawiera informacje o wyjątku generowane, gdy skrypt zakończone, lub `NULL` Jeśli żaden wyjątek nie wygenerowano.  
+ [in] Adres `EXCEPINFO` strukturę, która zawiera informacje o wyjątku generowane, gdy skrypt zakończony, lub `NULL` Jeśli wyjątek nie został wygenerowany.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca `S_OK` w przypadku powodzenia.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat skryptów wywołuje tę metodę przed wywołaniem do [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody z ustawioną flagą SCRIPTSTATE_INITIALIZED, zostało zakończone. Ta metoda może służyć do zwrócenia stanu ukończenia i wyniki do hosta. Należy zauważyć, że wiele języków skryptu, które są oparte na wychwytywanie zdarzeń z hosta, życia zakresy, które są zdefiniowane przez hosta. W takim przypadku ta metoda nie może zostać wywołana.  
+ Aparat skryptów wywołuje tę metodę, przed wywołaniem do [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metoda z ustawioną flagą SCRIPTSTATE_INITIALIZED, zostanie zakończona. Ta metoda może służyć do zwrócenia stanu ukończenia i wyników do hosta. Należy zauważyć, że wiele języków skryptów, które są oparte na wychwytywania zdarzeń z hosta, zakresy życia, które są zdefiniowane przez hosta. W takim przypadku ta metoda nie może zostać wywołana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

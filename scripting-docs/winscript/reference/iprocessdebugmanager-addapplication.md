@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a221aa0038b0b3fd5046b9ada08e2de86f33a895
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa0b811a23f8c97f1924883a04878f22cabc9b26
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795010"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087532"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
-Dodaje aplikację do listy Menedżera debugowania maszyny uruchomionych aplikacji.  
+Dodaje aplikację do listy maszyny Menedżer debugowania działających aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IDebugApplication*  pda,  
    DWORD*              pdwAppCookie  
@@ -42,17 +42,17 @@ HRESULT AddApplication(
  [in] Debugowanie aplikacji można dodać do listy uruchomionych aplikacji.  
   
  `pdwAppCookie`  
- [out] Plik cookie jest używana do usuwania aplikacji przez Menedżera debugowania maszyny.  
+ [out] Plik cookie, który służy do usuwania aplikacji Menedżer debugowania maszyny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda dodaje aplikację do uruchamiania liście aplikacji w Menedżerze debugowania maszyny.  
+ Ta metoda dodaje aplikację do uruchamiania aplikacji na liście Menedżer debugowania maszyny.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   

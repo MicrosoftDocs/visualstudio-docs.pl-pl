@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37cd0f2953483e23636c3a17d7726bc2c438b303
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794098"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090392"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
-Dołącza ciąg znaków Dwubajtowych na końcu niniejszego dokumentu.  
+Dołącza ciąg znaków Dwubajtowych na końcu tego dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddDBCSText(  
    LPCSTR  pszText  
 );  
@@ -38,23 +38,23 @@ HRESULT AddDBCSText(
   
 #### <a name="parameters"></a>Parametry  
  `pszText`  
- [in] Wskaźnik do zerem ciąg zawierający tekst.  
+ [in] Wskaźnik na ciąg zakończony wartością null zawierający tekst.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_FAIL`|Metoda nie może dodać znaki.|  
+|`E_FAIL`|Metoda nie może dodać znaków.|  
   
 ## <a name="remarks"></a>Uwagi  
  Ta metoda generuje `IDebugDocumentTextEvents` powiadomienia.  
   
 > [!NOTE]
->  Jeśli ta metoda jest wywoływana po wykonaniu `IDebugDocumentHelper::AddDeferredText` została wywołana, `E_FAIL` jest zwracany.  
+>  Jeśli ta metoda jest wywoływana po `IDebugDocumentHelper::AddDeferredText` została wywołana, `E_FAIL` jest zwracana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
- [Interfejs IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)
+ [IDebugDocumentTextEvents, interfejs](../../winscript/reference/idebugdocumenttextevents-interface.md)

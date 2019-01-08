@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugbreakpoint — interfejs | Dokumentacja firmy Microsoft
+title: IJsDebugBreakPoint, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ed749953aeffbadb450b2a21ef86ffb619eb6a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3c43d23d0ba89e6b85a3dd4da688fa89fed4dd99
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794650"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093850"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>IJsDebugBreakPoint — Interfejs
 Reprezentuje punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IJsDebugBreakPoint : public IUnknown;  
 ```  
   
@@ -34,14 +34,14 @@ IJsDebugBreakPoint : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebugBreakPoint::Delete — metoda](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Usuwa punktu przerwania.|  
-|[IJsDebugBreakPoint::Disable — metoda](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Powoduje wyłączenie punktu przerwania.|  
-|[IJsDebugBreakPoint::Enable — metoda](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Umożliwia punktu przerwania.|  
-|[IJsDebugBreakPoint::GetDocumentPosition — metoda](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Zwraca pozycję instrukcji, gdzie został powiązany punkt przerwania.|  
-|[IJsDebugBreakPoint::IsEnabled — metoda](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Określa, czy punkt przerwania jest włączone.|  
+|[IJsDebugBreakPoint::Delete, metoda](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Usuwa punkt przerwania.|  
+|[IJsDebugBreakPoint::Disable, metoda](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Wyłącza punkt przerwania.|  
+|[IJsDebugBreakPoint::Enable, metoda](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Włącza punkt przerwania.|  
+|[IJsDebugBreakPoint::GetDocumentPosition, metoda](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Zwraca pozycję instrukcji, w której powiązany został punkt przerwania.|  
+|[IJsDebugBreakPoint::IsEnabled, metoda](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Określa, czy punkt przerwania jest włączony.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

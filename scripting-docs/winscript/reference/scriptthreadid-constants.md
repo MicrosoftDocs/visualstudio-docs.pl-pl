@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc692716115ea0c205b1cfd982b189fffd54a9ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796411"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097815"
 ---
 # <a name="scriptthreadid-constants"></a>Stałe SCRIPTTHREADID
-Można określić typ wątku.  
+Umożliwia określenie typu wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef DWORD SCRIPTTHREADID;  
 ```  
   
@@ -38,12 +38,12 @@ typedef DWORD SCRIPTTHREADID;
   
 |Stała|Wartość|Znaczenie|  
 |--------------|-----------|-------------|  
-|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Wątek aktualnie wykonywane.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Podstawowy wątku; oznacza to, że utworzono wystąpienie wątku, w którym skryptów aparatu.|  
+|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Aktualnie wykonywany wątek.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Podstawowy wątek; oznacza to wątek, w którym skryptów aparatu została utworzona.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Wszystkie wątki.|  
   
 ## <a name="remarks"></a>Uwagi  
- `SCRIPTTHREADID` Typ jest używany przez `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, i `IActiveScript::InterruptScriptThread`, ale stałe może być używany tylko przez `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`.  
+ `SCRIPTTHREADID` Typ jest używany przez `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, i `IActiveScript::InterruptScriptThread`, ale stałe mogą być używane tylko przez `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d127b1b8a8db0c6d272e50d33b523fbe182a9e21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55cd6cf5233e850e4109128e322d3fc5bd0b1355
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796420"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086596"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
-Zwraca podrzędny, który znajduje się pod określonym indeksem w węźle.  
+Zwraca element podrzędny, który jest umieszczony pod określonym indeksem w węźle.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetChild(  
    ULONG              isn,  
    IScriptNode        **ppsn  
@@ -42,7 +42,7 @@ HRESULT GetChild(
  [in] Indeks elementu podrzędnego w obiekcie nadrzędnym.  
   
  `ppsn`  
- [out] Adres zmiennej, która otrzymuje wskaźnik `IScriptNode` interfejsu wystąpienia podrzędnych.  
+ [out] Adres zmiennej, która otrzymuje wskaźnik `IScriptNode` interfejsu, wystąpienia podrzędne.  
   
  Aby uzyskać `IScriptNode` obiektów, które reprezentują strony sieci Web, ten parametr zwraca obiekt, który zawiera blok skryptu.  
   
@@ -56,7 +56,7 @@ HRESULT GetChild(
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Dla `IScriptEntry` obiektów, które określają obiektem funkcji oraz `IScriptScriptlet` obiekty, ta metoda nie powiedzie się, ponieważ nie ma żadnych wpisów podrzędnych.  
+ Dla `IScriptEntry` obiekty, które określają obiektu funkcyjnego i `IScriptScriptlet` obiektów, ta metoda nie powiedzie się, ponieważ nie ma żadnych wpisów podrzędnych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

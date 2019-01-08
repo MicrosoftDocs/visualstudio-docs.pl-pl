@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34da5d19b927bf80c05675cbc6871b0a26801247
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4992b68d0644e6183e62577bdec9be86f50df592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794095"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086960"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-Powoduje przeniesienie tego dokumentu do góry w debugerze interfejsu użytkownika.  
+Ten dokument udostępnia do góry w debugerze interfejsu użytkownika.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT BringDocumentToTop();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT BringDocumentToTop();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda uruchomienie debugera, jeśli nie jest już uruchomiona.  
+ Ta metoda uruchamia debuger, jeśli nie jest już uruchomiona.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

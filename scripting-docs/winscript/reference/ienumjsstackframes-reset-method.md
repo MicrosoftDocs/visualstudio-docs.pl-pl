@@ -1,5 +1,5 @@
 ---
-title: IEnumJsStackFrames::Reset — metoda | Dokumentacja firmy Microsoft
+title: IEnumJsStackFrames::Reset, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130db93a9ecedba039c8e422b2cba8aec2b5a6d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9d66f6e36284f0627af7fd44f41fafd6b798e50
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794488"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096554"
 ---
 # <a name="ienumjsstackframesreset-method"></a>IEnumJsStackFrames::Reset — Metoda
-Resetuje pozycji przed pierwszym elementem ramki stosu.  
+Resetuje ramkę stosu do pozycji przed pierwszym elementem.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Reset(void);  
 ```  
   
@@ -38,4 +38,4 @@ HRESULT Reset(void);
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ienumjsstackframes — interfejs](../../winscript/reference/ienumjsstackframes-interface.md)
+ [IEnumJsStackFrames, interfejs](../../winscript/reference/ienumjsstackframes-interface.md)

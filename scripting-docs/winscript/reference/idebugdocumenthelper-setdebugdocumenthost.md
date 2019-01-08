@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1377edaa5b10a7ebb06713e512010be010a9d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c4a935d849fed2b617abf5ee33ca2901b9c944c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794065"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088221"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-Ustawia `IDebugDocumentHost` dla tego dokumentu.  
+Zestawy `IDebugDocumentHost` dla tego dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetDebugDocumentHost(  
    IDebugDocumentHost*  pddh  
 );  
@@ -41,15 +41,15 @@ HRESULT SetDebugDocumentHost(
  [in] Host dokumentu debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- `IDebugDocumentHost` Interfejs jest używany do kolorowanie składni inteligentnych hosta, pobieranie z opóźnieniem tekstu, a następnie zwracanie obiektów kontrolowanie dla nowo utworzonego dokumentu kontekstach.  
+ `IDebugDocumentHost` Interfejs jest używany do kolorowanie składni inteligentnych hosta, pobieranie z opóźnieniem tekstu i zwracać obiekty kontrolujące, nowo utworzony dokumentu kontekstów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [Interfejs IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost, interfejs](../../winscript/reference/idebugdocumenthost-interface.md)

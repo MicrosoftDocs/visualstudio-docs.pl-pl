@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62f1d113dc23dca85db02bf23b2c79551108f3b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a100b406365590bbba392afd7558e2fb7219ccb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794851"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096359"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
-Ustawia tekst, który odpowiada `IScriptEntry` bloku skryptu lub kodu źródłowego, który jest zawarty w `IScriptScriptlet` obsługi zdarzeń.  
+Ustawia tekst, który odpowiada `IScriptEntry` blok skryptu lub kodu źródłowego, który jest zawarty w `IScriptScriptlet` programu obsługi zdarzeń.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetText(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetText(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [in] Tekst `IScriptEntry` bloku skryptu lub kod źródłowy `IScriptScriptlet` obsługi zdarzeń.  
+ [in] Tekst `IScriptEntry` blok skryptu lub kodu źródłowego `IScriptScriptlet` programu obsługi zdarzeń.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -50,4 +50,4 @@ HRESULT SetText(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

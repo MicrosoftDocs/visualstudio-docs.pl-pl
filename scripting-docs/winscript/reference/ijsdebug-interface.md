@@ -1,5 +1,5 @@
 ---
-title: Ijsdebug — interfejs | Dokumentacja firmy Microsoft
+title: IJsDebug, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724036182638dbe3d253730c42e835250e6eaa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16f0da202e937a92a8e76dddc27d9da7bc61c4ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794458"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089417"
 ---
 # <a name="ijsdebug-interface"></a>IJsDebug — Interfejs
 Punkt wejścia do debugowania kodu JavaScript.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IJsDebug : public IUnknown;  
 ```  
   
@@ -34,10 +34,10 @@ IJsDebug : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebug::OpenVirtualProcess — metoda](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Metoda fabryki użyta do utworzenia nowego obiektu procesu wirtualnego.|  
+|[IJsDebug::OpenVirtualProcess, metoda](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Metoda fabryki użyty do utworzenia nowego obiektu wirtualnego procesu.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

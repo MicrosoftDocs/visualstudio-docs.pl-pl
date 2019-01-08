@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b21f906a73a313bf775683ba63738adb25af0007
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62499afe87a3d7dae31e609c9ce88f41e9d993a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793291"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089215"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
-Dodaje skryptlet kodu jako element podrzędny elementu poziomu głównego `IScriptNode` obiektu. Na hoście w pełni kwalifikowanej nazwy skryptletu może mieć tylko dwa poziomy.  
+Dodaje skryptletu kodu jako element podrzędny elementu poziomu głównego `IScriptNode` obiektu. Na hoście w pełni kwalifikowana nazwa scriptlet może mieć tylko dwa poziomy.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddScriptlet(  
    LPCOLESTR pszDefaultName,  
    LPCOLESTR pszCode,  
@@ -45,25 +45,25 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parametry  
  `pszDefaultName`  
- [in] Adres domyślną nazwę do skojarzenia z skryptlet.  
+ [in] Adres nazwy domyślnej, aby skojarzyć ze scriptlet.  
   
  `pszCode`  
- [in] Adres skryptlet tekstu.  
+ [in] Adres tekstu scriptlet.  
   
  `pszItemName`  
- [in] Adres buforu najwyższego poziomu identyfikatora nazwy skryptletu pełną na hoście.  
+ [in] Adres buforu identyfikator najwyższego poziomu o nazwie FQDN scriptlet na hoście.  
   
  `pszSubItemName`  
- [in] Adres buforu identyfikator drugiego poziomu nazwy skryptletu pełną na hoście. Wartość NULL, jeśli nazwa zawiera tylko jeden poziom.  
+ [in] Adres buforu identyfikator drugiego poziomu, nazwy FQDN scriptlet na hoście. Ustaw na wartość NULL, jeśli nazwa zawiera tylko jeden poziom.  
   
  `pszEventName`  
- [in] Adres buforu, który zawiera nazwę zdarzenia, dla którego skryptlet jest program obsługi zdarzeń.  
+ [in] Adres buforu, który zawiera nazwę zdarzenia, dla którego scriptlet ma program obsługi zdarzeń.  
   
  `pszDelimiter`  
- [in] Adres ogranicznik zakończenia elementu skryptu bloku. Gdy `pszCode` analizy strumienia tekstu host zazwyczaj używa ogranicznik (na przykład dwa pojedynczy cudzysłów), aby wykryć koniec bloku skryptu. Ustaw ten parametr na wartość NULL, jeśli ogranicznik nie oznacza koniec bloku skryptu.  
+ [in] Adres ogranicznika końcowego elementu skrypt bloku. Gdy `pszCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), na końcu bloku skryptu do wykrywania. Ustaw ten parametr na wartość NULL, jeśli ogranicznika nie są oznaczane koniec bloku skryptu.  
   
  `dwCookie`  
- [in] Wartość zdefiniowanym przez aplikację, która jest używana do skojarzenia skryptlet z obiektu hosta.  
+ [in] Wartość zdefiniowanych przez aplikację, która jest używana do kojarzenia scriptlet z obiektu hosta.  
   
  `dwFlags`  
  [in] Nie jest używany.  
@@ -78,4 +78,4 @@ HRESULT AddScriptlet(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

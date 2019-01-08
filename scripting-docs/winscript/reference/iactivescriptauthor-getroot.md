@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb20a896d54c2b8e85c93014e6bd8ad3c906f55c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c19e15eb0c425be843c5487bd3128831c7578c31
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793258"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097087"
 ---
 # <a name="iactivescriptauthorgetroot"></a>IActiveScriptAuthor::GetRoot
-Zwraca `IScriptNode` korzeń drzewa skryptu autora.  
+Zwraca `IScriptNode` drzewa skryptu autora.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetRoot(  
    IScriptNode        **ppsp  
 );  
@@ -51,4 +51,4 @@ HRESULT GetRoot(
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538b7a3f76e6026297839e4a7a37e6c21a72d7d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e6db85ab30d04ebaf24ec0e955aab529ff8799d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794953"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088858"
 ---
 # <a name="iremotedebugapplicationconnectdebugger"></a>IRemoteDebugApplication::ConnectDebugger
 Nawiązuje połączenie debugera do tej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ConnectDebugger(  
    IApplicationDebugger*  pad  
 );  
@@ -38,19 +38,19 @@ HRESULT ConnectDebugger(
   
 #### <a name="parameters"></a>Parametry  
  `pad`  
- [in] Debuger do dołączenia do tej aplikacji.  
+ [in] Debuger dołączał do tej aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_FAIL`|Debuger jest już połączony z tej aplikacji.|  
+|`E_FAIL`|Debuger jest już podłączony do tej aplikacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aplikacja może mieć tylko jeden debugera połączony w czasie. Ta metoda zakończy się niepowodzeniem, jeśli debuger jest już połączony.  
+ Aplikacja może mieć tylko jeden debugera połączone w danym momencie. Ta metoda kończy się niepowodzeniem, jeśli debuger jest już połączony.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
- [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

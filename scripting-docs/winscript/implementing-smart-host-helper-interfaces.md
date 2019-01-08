@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909825"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088351"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implementacja interfejsów pomocnika inteligentnego hosta
 [Interfejs IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) interfejsu znacznie upraszcza zadanie tworzenia hosta inteligentnego dla aktywnego debugowania, ponieważ zawiera implementacje dla wielu interfejsów wymaganych do hostowania inteligentnych.  
@@ -53,7 +53,7 @@ ms.locfileid: "49909825"
   
      Poniższy kod przedstawia proces, ale nie obejmuje sprawdzanie błędów lub innymi technikami programowania niezawodne.  
   
-    ```  
+    ```cpp
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
           CLSCTX_INPROC_SERVER | CLSCTX_INPROC_HANDLER  
           | CLSCTX_LOCAL_SERVER,  
@@ -80,13 +80,13 @@ ms.locfileid: "49909825"
 ## <a name="implementing-iactivescriptsitedebug"></a>Implementowanie IActiveScriptSiteDebug  
  Aby zaimplementować [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md), Pobierz pomocnika odpowiadający danej lokacji, a następnie pobierać dokumentu startowego przesunięcie w kontekście danego źródła w następujący sposób:  
   
-```  
+```cpp
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
  Następnie użyj pomocnika, aby utworzyć nowy kontekst dokumentu przesunięcia dany znak:  
   
-```  
+```cpp
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   

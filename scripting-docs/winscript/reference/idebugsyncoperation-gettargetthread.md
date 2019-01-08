@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df3e65d53e20dd51d045f26855c4f5e058dff159
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4ff27e3d91abe19608bbe10051814d7e0f71af7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794218"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096710"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
 Zwraca wątku aplikacji docelowej dla tej operacji synchronicznych.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetTargetThread(  
    IDebugApplicationThread**  ppatTarget  
 );  
@@ -41,7 +41,7 @@ HRESULT GetTargetThread(
  [out] Wątek aplikacji docelowej dla tej operacji synchronicznych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT GetTargetThread(
  Ta metoda zwraca wątku aplikacji docelowej dla tej operacji synchronicznych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)
+ [IDebugSyncOperation, interfejs](../../winscript/reference/idebugsyncoperation-interface.md)

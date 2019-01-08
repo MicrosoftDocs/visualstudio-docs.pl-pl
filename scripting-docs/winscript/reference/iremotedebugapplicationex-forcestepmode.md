@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: add26689122ffe4944b4bbad15106a825d43ccf0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 771c17fdb8f2bea77959bc53b8d98fd10399a142
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794824"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094760"
 ---
 # <a name="iremotedebugapplicationexforcestepmode"></a>IRemoteDebugApplicationEx:ForceStepMode
-Wymusza debugera w tryb jednego kroku.  
+Wymusza debugera w trybie pojedynczego kroku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ForceStepMode(  
    IRemoteDebugApplicationThread*  pStepThread  
 );  
@@ -38,10 +38,10 @@ HRESULT ForceStepMode(
   
 #### <a name="parameters"></a>Parametry  
  `pStepThread`  
- [in] Wątek monitora debugowania procesu do wykonania kroków. Jeśli wartość null, PDM spowoduje wyczyszczenie jego wykonywania krokowego wątku.  
+ [in] Wątek procesu monitora debugowania do wykonania. Jeśli ma wartość null, menedżerów PDM wyczyści jego przechodzenia krok po kroku wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,4 +50,4 @@ HRESULT ForceStepMode(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationEx](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+ [IRemoteDebugApplicationEx, interfejs](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

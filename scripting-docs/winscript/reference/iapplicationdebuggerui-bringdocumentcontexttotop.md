@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fab017ab286957cf2c4be35832b1db877b339bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 890cc1b6c38f44c4140274dcaa19deff1fd276e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793732"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095514"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-Wywołuje okno zawierające kontekst danego dokumentu do góry w interfejsie użytkownika debugera i przewijania okna w kontekście.  
+Wywołuje okno zawierające kontekście danego dokumentu do góry w interfejsie użytkownika debugera i przewija okna do kontekstu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT BringDocumentContextToTop(  
    IDebugDocumentContext*  pddc  
 );  
@@ -38,18 +38,18 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parametry  
  `pddc`  
- [in] Kontekstu dokumentu, aby przełączyć do góry w interfejsie użytkownika debugera.  
+ [in] Kontekst dokumentu można przenieść do góry w interfejsie użytkownika debugera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_INVALIDARG`|Określony przez kontekst `pddc` nie jest znany.|  
+|`E_INVALIDARG`|Kontekst określonej przez `pddc` nie jest znany.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powoduje wyświetlenie okna zawierającego kontekst danego dokumentu do góry w interfejsie użytkownika debugera i przewijania okna w kontekście.  
+ Ta metoda powoduje wyświetlenie okna zawierająca kontekst danego dokumentu do góry w interfejsie użytkownika debugera i przewija okna do kontekstu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)
+ [IApplicationDebuggerUI, interfejs](../../winscript/reference/iapplicationdebuggerui-interface.md)

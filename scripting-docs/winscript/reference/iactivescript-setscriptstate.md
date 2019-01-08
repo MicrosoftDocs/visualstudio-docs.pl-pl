@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146cd5e4f2b6137fc6fe6e32e8ca153c3aab8fd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58edef17fec1d94a09b327dff626658c42a273ba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793294"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095033"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-Umieszcza aparat skryptów w danym stanie. Ta metoda może być wywołana z wątków innych niż podstawowe powodowała objaśnienia innych niż podstawowe do obiektów hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
+Umieszcza silnik wykonywania skryptów w danym stanie. Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetScriptState(  
     SCRIPTSTATE ss  // identifier of new state  
 );  
@@ -38,7 +38,7 @@ HRESULT SetScriptState(
   
 #### <a name="parameters"></a>Parametry  
  `ss`  
- [in] Ustawia aparat skryptów w danym stanie. Może być jedna z wartości zdefiniowanych w [wyliczenie SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) wyliczenia.  
+ [in] Ustawia silnik wykonywania skryptów w danym stanie. Może to być jedna z wartości zdefiniowanych w [wyliczenie SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -46,13 +46,13 @@ HRESULT SetScriptState(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
-|`E_FAIL`|Aparat skryptów nie obsługuje przejście do stanu zainicjowane. Hosta należy odrzucić to aparat skryptów i utworzyć, zainicjować i załadować nowy aparat obsługi skryptów, aby osiągnąć ten sam efekt.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować) i dlatego nie powiodła się.|  
-|`OLESCRIPT_S_PENDING`|Metoda została pomyślnie w kolejce, ale nie zmienił się stan jeszcze. Podczas zmiany stanu lokacji zostanie wywołany przez [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.|  
-|`S_FALSE`|Metoda zakończyło się pomyślnie, ale skrypt został już w danym stanie.|  
+|`E_FAIL`|Aparat skryptów nie obsługuje przejścia z powrotem do stanu zainicjowania. Host należy odrzucić ten silnik wykonywania skryptów i tworzenie, inicjowanie i załadować nowy aparat skryptów, aby osiągnąć ten sam efekt.|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany) i w związku z tym nie powiodła się.|  
+|`OLESCRIPT_S_PENDING`|Metoda zostało pomyślnie dodane do kolejki, ale nie zmienił się stan jeszcze. Podczas zmiany stanu, witryna zostanie wywołany przez [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.|  
+|`S_FALSE`|Wykonanie metody powiodło się, ale skryptu zostało już w danym stanie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aby uzyskać więcej informacji na temat skryptów aparatu stanów, zobacz sekcję stanów aparatu skryptu [aparaty skryptów systemu Windows](../../winscript/windows-script-engines.md) .  
+ Aby uzyskać więcej informacji na temat stany aparatu obsługi skryptów, zobacz sekcję stany aparatu obsługi skryptów [aparatów skryptów Windows](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   

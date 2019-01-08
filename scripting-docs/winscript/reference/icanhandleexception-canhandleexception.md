@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15612330f160f694202bb2158f970e0633fe53bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 784463f9e465aac005f5454be28a0043069dcb69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793729"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090002"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
-Określa, czy element wywołujący aparat skryptu może obsłużyć określony wyjątek.  
+Określa, jeśli obiekt wywołujący aparat skryptu może obsłużyć określony wyjątek.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CanHandleException(  
    EXCEPINFO*  pExcepInfo,  
    VARIANT*    pvar  
@@ -39,13 +39,13 @@ HRESULT CanHandleException(
   
 #### <a name="parameters"></a>Parametry  
  `pExcepInfo`  
- [in] Wskaźnik do `EXCEPINFO` struktury zawierające informacje, które będą zgłaszane w przypadku nieznalezienia bez obsługi wyjątków.  
+ [in] Wskaźnik do `EXCEPINFO` struktury zawierające informacje, które będą zgłaszane, jeśli zostanie znaleziony żaden moduł obsługi wyjątku.  
   
  `pvar`  
- [in] Wartość skojarzona z powodu wyjątku, takie jak wartość zgłaszanych przez `throw` instrukcji. Ten parametr może mieć `NULL`.  
+ [in] Wartość skojarzoną z wyjątku, takie jak wartości generowane przez `throw` instrukcji. Ten parametr może być `NULL`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -53,7 +53,7 @@ HRESULT CanHandleException(
 |`E_FAIL`|Obiekt wywołujący nie może obsłużyć wyjątek.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli wywołanie `IDispatchEx::InvokeEx`, lub podobnej metody powoduje wyjątek aparatu skryptu kontroli dla obiekt wywołujący w łańcuchu wywołującego skryptu, który obsługuje `ICanHandleException` interfejsu i wskazuje, że może obsłużyć wyjątek. Jeśli wywołujący nie może obsłużyć wyjątek, aparat skryptu zostanie zatrzymany.  
+ Jeśli wywołanie `IDispatchEx::InvokeEx`, lub podobnej metody, powoduje wyjątek, aparat skryptu wyszukuje obiekt wywołujący w łańcuchu obiekt wywołujący skryptu, który obsługuje `ICanHandleException` interfejs i wskazuje, że może obsługiwać wyjątek. Jeśli wywołujący nie może obsłużyć wyjątek, aparat skryptu zostanie zatrzymany.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)   

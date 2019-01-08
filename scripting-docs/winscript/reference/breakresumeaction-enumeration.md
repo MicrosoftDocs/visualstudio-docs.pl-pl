@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b830d314b1db40d7b83557d894ad6f8751bdf9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3186ac39353d11f327f7940ae5fc03ae2238ddd9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791878"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090471"
 ---
 # <a name="breakresumeaction-enumeration"></a>Wyliczenie BREAKRESUMEACTION
-Zawiera opis sposobów, aby kontynuować od punktu przerwania.  
+W tym artykule opisano sposoby kontynuowało działanie od punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef enum tagBREAKRESUME_ACTION {  
    BREAKRESUMEACTION_ABORT,  
    BREAKRESUMEACTION_CONTINUE,  
@@ -49,10 +49,10 @@ typedef enum tagBREAKRESUME_ACTION {
 |BREAKRESUMEACTION_ABORT|Przerywa aplikacji.|  
 |BREAKRESUMEACTION_CONTINUE|Będzie kontynuował działanie.|  
 |BREAKRESUMEACTION_STEP_INTO|Kroki opisane w procedurze.|  
-|BREAKRESUMEACTION_STEP_OVER|Kroki opisane w procedurze.|  
+|BREAKRESUMEACTION_STEP_OVER|Przeprowadza użytkownika przez procedurę.|  
 |BREAKRESUMEACTION_STEP_OUT|Kroki poza bieżącą procedurę.|  
-|BREAKRESUMEACTION_IGNORE|Będzie kontynuował działanie ze stanem.|  
+|BREAKRESUMEACTION_IGNORE|Przechodzi do stanu.|  
 |BREAKRESUMEACTION_STEP_DOCUMENT|Kroki, aby następny dokument.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

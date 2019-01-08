@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794593"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096437"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
-Usuwa element członkowski o nazwie.  
+Usuwa element członkowski według nazwy.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -39,15 +39,15 @@ HRESULT DeleteMemberByName(
   
 #### <a name="parameters"></a>Parametry  
  `bstrName`  
- Nazwa elementu członkowskiego do usunięcia.  
+ Nazwa członka do usunięcia.  
   
  `grfdex`  
- Określa, czy nazwa elementu członkowskiego jest uwzględniana wielkość liter. Może to być jedna z następujących wartości:  
+ Określa, czy nazwa elementu członkowskiego z uwzględnieniem wielkości liter. Może to być jeden z następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Żądania, które wyszukiwanie nazw odbywać się w sposób, z uwzględnieniem wielkości liter. Można zignorować przez obiekt, który nie obsługuje wyszukiwania z uwzględnieniem wielkości liter.|  
-|fdexNameCaseInsensitive|Żądania, które wyszukiwanie nazw odbywać się w sposób bez uwzględniania wielkości liter. Może być ignorowane przez obiekt, który nie obsługuje wyszukiwania bez uwzględniania wielkości liter.|  
+|fdexNameCaseSensitive|Żądania, które odbywać wyszukiwanie nazw uwzględnianiem wielkości liter. Można zignorować przez obiekt, który nie obsługuje wyszukiwania z uwzględnieniem wielkości liter.|  
+|fdexNameCaseInsensitive|Żądania, które wyszukiwanie nazw odbywać się bez uwzględniania wielkości liter. Można zignorować przez obiekt, który nie obsługuje wyszukiwanie bez uwzględniania wielkości liter.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -55,16 +55,16 @@ HRESULT DeleteMemberByName(
 |||  
 |-|-|  
 |`S_OK`|Powodzenie.|  
-|`S_FALSE`|Element członkowski istnieje, ale nie można go usunąć.|  
+|`S_FALSE`|Element członkowski istnieje, ale nie można jej usunąć.|  
   
 ## <a name="remarks"></a>Uwagi  
  Jeśli element członkowski zostanie usunięty, identyfikator DISPID musi są ważne `GetNextDispID`.  
   
- Jeśli element członkowski o podanej nazwie zostanie usunięty, a później zostaje odtworzone element członkowski o takiej samej nazwie, identyfikator DISPID powinna być taka sama. (Czy elementy członkowskie, które różnią się tylko wielkością liter są "same" jest zależny od obiektu).  
+ Jeśli element członkowski o określonej nazwie zostanie usunięty, a później zostaje odtworzone element członkowski o takiej samej nazwie, DISPID powinna być taka sama. (Czy elementy członkowskie, które różnią się tylko wielkością liter są "takie same" jest zależny od obiektu).  
   
 ## <a name="example"></a>Przykład  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   
@@ -73,4 +73,4 @@ pdex->DeleteMemberByName(bstrName, fdexNameCaseSensitive);
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)
+ [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)

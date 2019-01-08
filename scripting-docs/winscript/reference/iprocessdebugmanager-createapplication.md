@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a051462f32acae238ca5843e283fe6001ec43fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f182dd92d181067f930f415ec9332df2658c3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794917"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088637"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
 Tworzy nowy obiekt aplikacji debugowania dla tej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreateApplication(  
    IDebugApplication**  ppda  
 );  
@@ -38,17 +38,17 @@ HRESULT CreateApplication(
   
 #### <a name="parameters"></a>Parametry  
  `ppda`  
- [out] Obiekt debugowania aplikacji dla tej aplikacji.  
+ [out] Obiekt aplikacji debugowania dla tej aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Obiekt utworzony przez tę metodę nie ma nazwy i nie została dodana do uruchamiania liście aplikacji. Użyj `IProcessDebugManager::AddApplication` dodania aplikacji debugowania do listy aplikacji.  
+ Obiekt utworzony przez tę metodę nie ma nazwy i nie jest dodawany do uruchamiania listy aplikacji. Użyj `IProcessDebugManager::AddApplication` dodania aplikacji debugowania do listy aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   

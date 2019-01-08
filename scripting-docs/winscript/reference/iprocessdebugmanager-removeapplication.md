@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8d95be6227f192596e174095744a4e0247e0c37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c163f756e426cab9ce36c1c8343b142bf76aafd6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794908"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086518"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
-Usuwa z uruchomionym aplikacji listy aplikacji.  
+Usuwa aplikację z uruchomionych listy aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -38,18 +38,18 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parametry  
  `dwAppCookie`  
- [in] Plik cookie podał `IProcessDebugManager::AddApplication` dodania aplikacji do listy aplikacji.  
+ [in] Plik cookie, dostarczone przez `IProcessDebugManager::AddApplication` gdy aplikacja została dodana do listy aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda usuwa aplikacji z uruchomionym listy aplikacji.  
+ Ta metoda usuwa aplikację z uruchomionych listy aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
- [Interfejs IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)
+ [IProcessDebugManager, interfejs](../../winscript/reference/iprocessdebugmanager-interface.md)

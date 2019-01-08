@@ -10,19 +10,19 @@ ms.assetid: fcf11eb2-8e71-4cca-afda-a91791c243ff
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7b4ea62bf8afa4247fc7c4fdbea40c6b7c772661
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793450"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089547"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
-Dodaje skryptlet kodu do skryptu. Ta metoda jest używana w środowiskach, gdzie trwały stan skryptu jest sprzężony z dokumentem hosta, a host jest odpowiedzialny za Przywracanie skryptu, a nie za pomocą `IPersist*` interfejsu. Podstawowe przykłady są języki skryptów HTML umożliwiających skryptlety kodu osadzony w dokumencie HTML, który jest dołączony do zdarzenia wewnętrzne (na przykład ONCLICK="button1.text='Exit" ").  
+Dodaje skryptletu kodu do skryptu. Ta metoda jest używana w środowiskach, gdzie trwały stan skryptu jest sprzężony z dokumentem hosta, a host jest odpowiedzialny za Przywracanie skryptu, a nie za pomocą `IPersist*` interfejsu. Podstawowe przykłady są języków skryptów HTML, umożliwiające skryptlety kodu osadzane w dokumencie HTML do podłączenia do zdarzenia wewnętrzne (na przykład ONCLICK="button1.text='Exit" ").  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddScriptlet(  
     LPCOLESTR pstrDefaultName,       // address of default name of scriptlet  
     LPCOLESTR pstrCode,              // address of scriptlet text  
@@ -40,42 +40,42 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parametry  
  `pstrDefaultName`  
- [in] Adres do skojarzenia z skryptlet nazwa domyślna. Jeśli skryptlet nie zawiera informacji o nazewnictwie (jak w powyższym przykładzie ONCLICK), ta nazwa będzie używana do identyfikowania skryptlet. Jeśli ten parametr ma `NULL`, aparat skryptów wytwarza unikatową nazwę, jeśli to konieczne.  
+ [in] Adres domyślną nazwę do skojarzenia z scriptlet. Jeśli scriptlet nie zawiera informacje dotyczące nazewnictwa (tak jak w powyższym przykładzie ONCLICK), ta nazwa będzie służyć do identyfikowania scriptlet. Jeśli ten parametr jest `NULL`, aparat skryptów są produkowane unikatową nazwę, jeśli to konieczne.  
   
  `pstrCode`  
- [in] Adres tekst skryptlety do dodania. Interpretacja ten ciąg jest zależna od język skryptów.  
+ [in] Adres tekstu scriptlet do dodania. Interpretacja tego ciągu zależy od języka skryptów.  
   
  `pstrItemName`  
- [in] Adres buforu, który zawiera nazwę elementu skojarzone z tym skryptlet. Ten parametr, oprócz `pstrSubItemName`, określa obiekt, dla którego skryptlet jest obsługą zdarzeń.  
+ [in] Adres buforu, który zawiera nazwę elementu skojarzone z tym scriptlet. Ten parametr, oprócz `pstrSubItemName`, identyfikuje obiekt, dla którego scriptlet ma program obsługi zdarzeń.  
   
  `pstrSubItemName`  
- [in] Adres buforu, który zawiera nazwę `subobject` nazwanego elementu z którą ten skryptlet jest skojarzony; ta nazwa musi zostać znaleziony w informacji o typie nazwanego elementu. Ten parametr ma wartość NULL, jeśli skryptlet ma być skojarzona z element o nazwie, a nie `subitem`. Ten parametr, oprócz `pstrItemName`, identyfikuje określonego obiektu, dla którego skryptlet jest obsługą zdarzeń.  
+ [in] Adres buforu, który zawiera nazwę `subobject` nazwanego elementu za pomocą którego ten scriptlet jest skojarzona; ta nazwa musi zostać znaleziony w informacje o typie nazwanego elementu. Ten parametr ma wartość NULL, jeśli scriptlet ma być skojarzona z nazwanego elementu zamiast `subitem`. Ten parametr, oprócz `pstrItemName`, identyfikuje określonego obiektu, dla którego scriptlet ma program obsługi zdarzeń.  
   
  `pstrEventName`  
- [in] Adres buforu, który zawiera nazwę zdarzenia, dla którego skryptlet jest obsługą zdarzeń.  
+ [in] Adres buforu, który zawiera nazwę zdarzenia, dla którego scriptlet ma program obsługi zdarzeń.  
   
  `pstrDelimiter`  
- [in] Adres ogranicznika "end skryptlet". Gdy `pstrCode` parametru jest analizowana ze strumienia tekstu, host zazwyczaj używa ogranicznik, takie jak dwa pojedynczy znaki cudzysłowu ("), aby wykryć koniec skryptlet. Ten parametr określa ogranicznik używany hosta, dzięki czemu aparat skryptów w celu zapewnienia przetworzenia warunkowego wstępnego pierwotnych (na przykład, zastępując pojedynczego cudzysłowu ['] dwa znaki pojedynczego cudzysłowu do użycia jako ogranicznik). Dokładnie, jak (i jeśli) skryptów aparatu sprawia, że korzystanie z tych informacji jest zależna od aparatu skryptów. Ustaw ten parametr na wartość NULL, jeśli host nie użyto ogranicznik można oznaczyć końca skryptlet.  
+ [in] Adres ogranicznika końcowego scriptlet. Gdy `pstrCode` parametru jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika, takiego jak dwa pojedyncze cudzysłowy ("), aby wykrywać koniec scriptletu. Ten parametr określa ogranicznik używany przez hosta, dzięki czemu silnik wykonywania skryptów zapewnić pierwotne przetwarzanie warunkowe (na przykład, zastępując pojedynczy znak cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użytku w roli ogranicznika). Dokładnie jak (i czy) silnik wykonywania skryptów korzysta z tych informacji zależy od silnika wykonywania skryptów. Ustaw ten parametr na wartość NULL, jeśli host nie korzystał z ogranicznika do oznaczenia końca scriptlet.  
   
  `dwSourceContextCookie`  
- [in] Wartość zdefiniowanym przez aplikację, która jest używana na potrzeby debugowania.  
+ [in] Wartość zdefiniowanych przez aplikację, która jest używana na potrzeby debugowania.  
   
  `ulStartingLineNumber`  
- [in] Liczony od zera wartość, która określa, która linia analiza rozpocznie się na.  
+ [in] Liczony od zera wartość, która określa, która linia będzie rozpoczynać analizę.  
   
  `dwFlags`  
- [in] Flagi skojarzone z skryptlet. Może być kombinacją następujących wartości:  
+ [in] Flagi skojarzone ze scriptlet. Może być kombinacją następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|SCRIPTTEXT_ISVISIBLE|Wskazuje, że w skrypcie powinny być widoczne (i w związku z tym wywołane przez nazwę) jako metoda globalna w obszarze nazw skryptu.|  
-|SCRIPTTEXT_ISPERSISTENT|Wskazuje, czy kod dodane podczas tego wywołania ma zostać zapisany po zapisaniu aparat skryptów (na przykład za pomocą wywołania `IPersist*::Save`), lub jeśli aparat skryptów jest resetowany i przejście do stanu zainicjowane. Aby uzyskać więcej informacji o tym stanie Zobacz stany aparatu skryptu.|  
+|SCRIPTTEXT_ISVISIBLE|Wskazuje, że tekst skryptu powinien być widoczny (i w związku z tym, możliwy do wywołania według nazwy) jako metoda globalna w przestrzeni nazw skryptu.|  
+|SCRIPTTEXT_ISPERSISTENT|Wskazuje, że kod dodany podczas tego wywołania powinien zostać zapisany, jeśli silnik wykonywania skryptów jest zapisany (na przykład poprzez wywołanie `IPersist*::Save`), lub jeśli silnik wykonywania skryptów jest resetowany za pomocą przejścia z powrotem do stanu zainicjowania. Aby uzyskać więcej informacji o tym stanie Zobacz stany aparatu obsługi skryptów.|  
   
  `pbstrName` ,  
- [out] Rzeczywista nazwa używana do identyfikacji skryptlet. Ma to na celu w kolejności preferencji: w tekście skryptlet jawnie określić nazwę, domyślna nazwa podana w `pstrDefaultName`, lub unikatową nazwę syntezatora przez aparat skryptów.  
+ [out] Rzeczywista nazwa używana do identyfikowania scriptlet. Należy go w kolejności preferencji: Nazwa jawnie określona w tekstu scriptlet, domyślną nazwą jest podawany `pstrDefaultName`, lub unikatową nazwę przekształcony przez silnik wykonywania skryptów.  
   
  `pexcepinfo` ,  
- [out] Adres struktury zawierający informacje o wyjątku. Ta struktura powinno być wypełnione przypadku jest zwracany DISP_E_EXCEPTION.  
+ [out] Adres struktury zawierającej informacje o wyjątku. Ta struktura powinno być wypełnione, jeśli zostanie zwrócony DISP_E_EXCEPTION.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -83,13 +83,13 @@ HRESULT AddScriptlet(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
-|`DISP_E_EXCEPTION`|Wystąpił wyjątek podczas analizowania skryptlet. `pexcepinfo` Parametr zawiera informacje o wyjątku.|  
-|`E_INVALIDARG`|Argument był nieprawidłowy.|  
-|`E_NOTIMPL`|Ta metoda nie jest obsługiwana; aparat skryptów nie obsługuje dodawania skryptlety wychwytywanie zdarzeń.|  
+|`DISP_E_EXCEPTION`|Wystąpił wyjątek podczas analizowania scriptlet. `pexcepinfo` Parametr zawiera informacje o wyjątku.|  
+|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`E_NOTIMPL`|Ta metoda nie jest obsługiwana; aparat skryptów nie obsługuje dodawania skryptlety wychwytywania zdarzeń.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować) i dlatego nie powiodła się.|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany) i w związku z tym nie powiodła się.|  
 |`OLESCRIPT_E_INVALIDNAME`|Podana nazwa domyślna jest nieprawidłowy w tym języku skryptów.|  
-|`OLESCRIPT_E_SYNTAX`|Wystąpił błąd składni nieokreślony w skryptlet.|  
+|`OLESCRIPT_E_SYNTAX`|Wystąpił nieokreślony błąd składniowy w scriptlet.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

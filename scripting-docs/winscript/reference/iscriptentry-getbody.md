@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9daa04009cf7088cbd21a2d3dfa185f581c157a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b5eb878bccaa8ed415fd813095e31064bc7e245
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794860"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094823"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-Zwraca tekst, który odpowiada do treści `IScriptEntry` blok skryptu, bloku funkcji lub skryptlet.  
+Zwraca tekst, który odnosi się do treści `IScriptEntry` blok skryptu, bloku funkcji lub scriptlet.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetBody(  
    BSTR               *pbstr  
 );  
@@ -38,13 +38,13 @@ HRESULT GetBody(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Tekst, który znajduje się w treści jednej z następujących czynności:  
+ [out] Tekst, który znajduje się w treści w jednej z następujących czynności:  
   
--   `IScriptEntry` Bloku skryptu  
+-   `IScriptEntry` Blok skryptu  
   
 -   `IScriptEntry` Funkcji w bloku funkcji  
   
--   `IScriptEntry` Skryptlet obsługi zdarzeń  
+-   `IScriptEntry` Scriptlet obsługi zdarzeń  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
@@ -56,4 +56,4 @@ HRESULT GetBody(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

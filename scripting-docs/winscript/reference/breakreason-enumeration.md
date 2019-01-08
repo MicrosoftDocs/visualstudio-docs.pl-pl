@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791818"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096801"
 ---
 # <a name="breakreason-enumeration"></a>Wyliczenie BREAKREASON
 Wskazuje powód przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -49,12 +49,12 @@ typedef enum tagBREAKREASON {
 |------------|-----------------|  
 |BREAKREASON_STEP|Aparat języka jest w trybie wykonywania krokowego.|  
 |BREAKREASON_BREAKPOINT|Aparat języka napotkał jawne punktu przerwania.|  
-|BREAKREASON_DEBUGGER_BLOCK|Aparat języka napotkał bloku debugera w innym wątku.|  
-|BREAKREASON_HOST_INITIATED|Host żądana przerwy.|  
-|BREAKREASON_LANGUAGE_INITIATED|Aparat języka żądana przerwy.|  
-|BREAKREASON_DEBUGGER_HALT|Debuger IDE żądana przerwy.|  
-|BREAKREASON_ERROR|Błąd wykonywania spowodował przerwy.|  
-|BREAKREASON_JIT|Przyczyną uruchomienia debugowanie JIT.|  
+|BREAKREASON_DEBUGGER_BLOCK|Aparat języka napotkał bloku debugera na inny wątek.|  
+|BREAKREASON_HOST_INITIATED|Host zażądał przerwania.|  
+|BREAKREASON_LANGUAGE_INITIATED|Aparat języka zażądał przerwania.|  
+|BREAKREASON_DEBUGGER_HALT|Debuger IDE zażądał podziału.|  
+|BREAKREASON_ERROR|Błąd wykonywania spowodował przerwanie.|  
+|BREAKREASON_JIT|Przyczyną uruchamiania debugowanie JIT.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

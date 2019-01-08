@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ca6b990011252bde581168a272da1041dc24f41
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6808c8bb7e27e7b416e79b2f23e323c3ae3a528f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793714"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095358"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-Określa, czy jest zarejestrowany debuger just in time (JIT).  
+Określa, czy debuger just in time (JIT) jest zarejestrowany.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 BOOL FCanJitDebug();  
 ```  
   
@@ -38,10 +38,10 @@ BOOL FCanJitDebug();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli metoda zakończy się pomyślnie i debugera JIT jest zarejestrowany, metoda zwraca `TRUE`. W przeciwnym razie zwraca `FALSE`.  
+ Jeśli metoda się powiedzie, a zarejestrowany jest debugera JIT, metoda zwraca `TRUE`. W przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta metoda określa, czy jest zarejestrowany debugera JIT.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

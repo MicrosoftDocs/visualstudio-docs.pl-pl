@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26ed66921175659d7125a0e32a043e7ebcf98cc6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 71aea5c3a7efb6534daab5fc916187c0f56122b3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793723"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095553"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
-Tworzy nowy węzeł aplikacji skojarzonej z dostawcy określonego dokumentu.  
+Tworzy nowy węzeł aplikacji, który jest skojarzony z dostawcą danego dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreateApplicationNode(  
    IDebugApplicationNode**  ppdanNew  
 );  
@@ -41,14 +41,14 @@ HRESULT CreateApplicationNode(
  [out] Węzeł aplikacji skojarzonych z tym dostawcą dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Nowy węzeł aplikacji nie jest widoczny, dopóki nie został dołączony do węzła nadrzędnego.  
+ Nowy węzeł aplikacji nie jest widoczna, dopóki nie jest on dołączony do węzła nadrzędnego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

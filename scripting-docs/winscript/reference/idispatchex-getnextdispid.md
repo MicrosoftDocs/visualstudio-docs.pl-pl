@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794710"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092992"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
-Wylicza elementów członkowskich obiektu.  
+Wylicza elementy członkowskie obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -40,20 +40,20 @@ HRESULT GetNextDispID(
   
 #### <a name="parameters"></a>Parametry  
  `grfdex`  
- Określa zbiór elementów, które mają zostać wyliczone. Może to być kombinacją następujących wartości:  
+ Określa zbiór elementów, które mają być wyliczane. Może to być kombinacją następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
 |fdexEnumDefault|Żądania, że obiekt wylicza domyślne elementy. Obiekt może wyliczyć dowolny zbiór elementów.|  
-|fdexEnumAll|Obiekt wylicza wszystkie elementy z żądania. Obiekt może wyliczyć dowolny zbiór elementów.|  
+|fdexEnumAll|Żądania obiektu wylicza wszystkie elementy. Obiekt może wyliczyć dowolny zbiór elementów.|  
   
  `id`  
- Określa bieżący element członkowski. GetNextDispID pobiera elementów w wyliczeniu po tym. Używa GetDispID lub poprzednie wywołanie GetNextDispID w celu uzyskania tego identyfikatora. Używa wartości DISPID_STARTENUM uzyskać pierwszy identyfikator pierwszego elementu.  
+ Identyfikuje bieżącego elementu członkowskiego. GetNextDispID pobiera element w wyliczeniu po niej. Używa GetDispID lub poprzednie wywołanie GetNextDispID w celu uzyskania tego identyfikatora. Używa wartości DISPID_STARTENUM, aby uzyskać pierwszy identyfikator pierwszego elementu.  
   
  `pid`  
- Adres zmiennej identyfikator DISPID, która odbiera identyfikator następnego elementu w wyliczeniu.  
+ Adres zmiennej DISPID, która odbiera identyfikator następnej pozycji w wyliczeniu.  
   
- Jeśli element członkowski zostanie usunięty przez `DeleteMemberByName` lub `DeleteMemberByDispID`, `DISPID` powinna być prawidłowa dla `GetNextDispID`.  
+ Jeśli członek zostanie usunięty przez `DeleteMemberByName` lub `DeleteMemberByDispID`, `DISPID` powinna być prawidłowa dla `GetNextDispID`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -61,11 +61,11 @@ HRESULT GetNextDispID(
 |||  
 |-|-|  
 |`S_OK`|Powodzenie.|  
-|`S_FALSE`|Wyliczenie odbywa się.|  
+|`S_FALSE`|Wyliczenie jest wykonywane.|  
   
 ## <a name="example"></a>Przykład  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f78522d885a65ddc8bfb056654aaf559c90d36e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793789"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092186"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-Wyzwala zdarzenie generyczne debugera `IApplicationDebugger` interfejsu.  
+Wyzwala zdarzenie generyczne do debugera `IApplicationDebugger` interfejsu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT FireDebuggerEvent(  
    REFGUID    riid,  
    IUnknown*  punk  
@@ -39,13 +39,13 @@ HRESULT FireDebuggerEvent(
   
 #### <a name="parameters"></a>Parametry  
  `riid`  
- [in] Identyfikator GUID obiektu.  
+ [in] Identyfikator GUID dla obiektu.  
   
  `punk`  
  [in] Obiekt zdarzenia do przekazania do debugera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -55,7 +55,7 @@ HRESULT FireDebuggerEvent(
 ## <a name="remarks"></a>Uwagi  
  Semantyka identyfikator GUID i `IUnknown` są całkowicie zdefiniowane aplikacji/debugera.  
   
- Ta metoda umożliwia dla niestandardowych rozszerzeń modelu debugera; nie jest obecnie zaimplementowana.  
+ Ta metoda umożliwia niestandardowe rozszerzenia modelu debuger; nie jest obecnie zaimplementowana.  
   
  Ta metoda powoduje `IApplicationDebugger::onDebuggerEvent` do wywołania.  
   

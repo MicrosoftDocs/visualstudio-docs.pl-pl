@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15f503f98492606424752dff169fd4b61b6cc8b4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dc2e4d542619e214835d3be8354062733ebd5cb8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794755"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091497"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
-Zwraca obiekt aplikacji skojarzonych z tego wątku.  
+Zwraca obiekt aplikacji skojarzonych z tym wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IRemoteDebugApplication**  pprda  
 );  
@@ -38,17 +38,17 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pprda`  
- [out] Obiekt aplikacji skojarzonych z tego wątku.  
+ [out] Obiekt aplikacji skojarzonych z tym wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca obiekt aplikacji skojarzonych z tego wątku.  
+ Ta metoda zwraca obiekt aplikacji skojarzonych z tym wątku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

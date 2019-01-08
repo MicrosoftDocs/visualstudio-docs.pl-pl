@@ -1,5 +1,5 @@
 ---
-title: IJsDebugBreakPoint::Disable — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugBreakPoint::Disable, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,29 +16,29 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53ff133fb07d256d00668e499e5996ac650230f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 873f5d285a877e04076859b0230589ced705078b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794506"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094214"
 ---
 # <a name="ijsdebugbreakpointdisable-method"></a>IJsDebugBreakPoint::Disable — Metoda
-Powoduje wyłączenie punktu przerwania.  
+Wyłącza punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Disable(void);  
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca E_UNEXPECTED, jeśli wywołano usunięto punktu przerwania. Zwraca wartości S_FALSE, jeśli wywołano już wyłączone punktu przerwania.  
+ Zwraca wartość E_UNEXPECTED, jeśli wywołano usunięty punkt przerwania. Zwraca wartość S_FALSE, jeśli wywołano już wyłączony punkt przerwania.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugbreakpoint — interfejs](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint, interfejs](../../winscript/reference/ijsdebugbreakpoint-interface.md)

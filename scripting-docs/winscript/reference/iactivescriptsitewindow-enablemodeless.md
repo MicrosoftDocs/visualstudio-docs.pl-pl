@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7099fe7d13a1cb3231e67049104722af9373d7a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4cea23890539ca80abf8e3e58b0f8c48b7ca1fc9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793582"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093018"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
-Powoduje, że host włączyć lub wyłączyć jego okno główne, a także Niemodalne okna dialogowe.  
+Powoduje, że host włączyć lub wyłączyć wyświetleniem głównego okna, a także Niemodalne okna dialogowe.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT EnableModeless(  
     BOOL fEnable  // enable flag  
 );  
@@ -38,13 +38,13 @@ HRESULT EnableModeless(
   
 #### <a name="parameters"></a>Parametry  
  `fEnable`  
- [in] Flaga, jeśli `TRUE`, włącza okno główne i Niemodalne okna dialogowe lub, jeśli `FALSE`, wyłącza je.  
+ [in] Flaga, jeśli `TRUE`, umożliwia Niemodalne okna dialogowe i okna głównego lub, jeśli `FALSE`, wyłącza je.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca `S_OK` w przypadku powodzenia lub `E_FAIL` Jeśli wystąpił błąd.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest taki sam jak `IOleInPlaceFrame::EnableModeless` metody.  
+ Ta metoda jest taka sama jak `IOleInPlaceFrame::EnableModeless` metody.  
   
  Mogą być zagnieżdżone wywołania tej metody.  
   

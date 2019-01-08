@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60181904408010f35fa4d99d182216e665583aab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d86e9eb2b934bc6bd4027405d06960cd107f81c1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794002"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087480"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
-Udostępnia wartość zwrotna i parametr obiektu zwracanego przez operację debugowania synchronicznego.  
+Zawiera wartości zwracanej i parametru zwracanego obiektu z operacji synchronicznych debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetResult(  
    HRESULT*    phrResult,  
    IUnknown**  ppunkResult  
@@ -42,18 +42,18 @@ HRESULT GetResult(
  [out] Jeśli operacja została zakończona, `phrResult` jest zwracana wartość `IDebugSyncOperation::Execute`.  
   
  `ppunkResult`  
- [out] Jeśli operacja została zakończona, `ppunkResult` jest parametr obiektu zwrócony przez operację.  
+ [out] Jeśli operacja została zakończona, `ppunkResult` parametr obiekt zwrócony przez operację.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_PENDING`|Operacja nie została ukończona.|  
+|`E_PENDING`|Operacja nie zostanie ukończona.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli operacja została zakończona, ta metoda zwraca `HRESULT` i parametru z obiektu `IDebugSyncOperation::Execute`.  
+ Jeśli operacja zostanie ukończona, Metoda ta zwraca `HRESULT` obiekt parametr `IDebugSyncOperation::Execute`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   

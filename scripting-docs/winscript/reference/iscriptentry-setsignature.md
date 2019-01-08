@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9ff480f8e5c3192a7e2b355d39825cc3a084370
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 660f667d3542ff2cb9a7e96444d98b3082218a2a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794956"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089508"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
-Ustawia typ informacji o `IScriptEntry` obiekt funkcji.  
+Ustawia typ informacji dla `IScriptEntry` obiektu funkcyjnego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetSignature(  
    ITypeInfo          *pti  
    ULONG              iMethod  
@@ -52,7 +52,7 @@ HRESULT SetSignature(
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Należy określić przy użyciu informacji o typie `IScriptEntry::SetSignature` lub [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informacje o typie może być również generowany przez wpis oparte na funkcji wewnętrznej reprezentacji.  
+ Należy określić przy użyciu informacji o typie `IScriptEntry::SetSignature` lub [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informacje o typie można również wygenerować we wpisie oparte na funkcji wewnętrznej reprezentacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

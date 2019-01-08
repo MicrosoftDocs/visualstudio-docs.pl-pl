@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793936"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094786"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
 Powoduje, że operacja asynchroniczna rozpocząć.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -41,7 +41,7 @@ HRESULT Start(
  Interfejs wywołania zwrotnego, który odbiera zdarzenia stanu z tej operacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -49,7 +49,7 @@ HRESULT Start(
 |`E_UNEXPECTED`|Operacja jest już oczekujące.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powoduje `IDebugSyncOperation::Execute` ma zostać wywołana asynchronicznie w wątku uzyskane z `IDebugSyncOperation::GetTargetThread`. Tę metodę należy wywoływać tylko z wewnątrz wątek debugera; w przeciwnym razie nie powróci do czasu tej operacji.  
+ Ta metoda powoduje `IDebugSyncOperation::Execute` ma zostać wywołana asynchronicznie w wątku uzyskany z `IDebugSyncOperation::GetTargetThread`. Ta metoda powinna być wywoływana tylko z w wątku debuger; w przeciwnym razie nie zostanie zwrócone do czasu ukończenia operacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   

@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7e93041a6dec767cb3bb11382abfb562068c925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e408b9770c08139bc7c25779a64532ccec41caf8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796306"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090795"
 ---
 # <a name="jsnativeframe-structure"></a>Struktura JS_NATIVE_FRAME
 Reprezentuje ramkę stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 typedef struct {  
     UINT64 InstructionOffset;    UINT64 ReturnOffset;    UINT64 FrameOffset;    UINT64 StackOffset;  
 } JS_NATIVE_FRAME;  
@@ -48,7 +48,7 @@ typedef struct {
  Wskaźnik stosu.  
   
 ## <a name="remarks"></a>Uwagi  
- `JS_NATIVE_FRAME` Struktury jest używany przez `IJsStackFrameEnumerator`.  
+ `JS_NATIVE_FRAME` Struct jest używany przez `IJsStackFrameEnumerator`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

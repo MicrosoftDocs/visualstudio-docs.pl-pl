@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794191"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089306"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
 Zwraca moduł wyliczający ramek stosu dla bieżącego wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -41,14 +41,14 @@ HRESULT EnumStackFrames(
  [out] Moduł wyliczający ramek stosu dla bieżącego wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Moduł wyliczający ramki stosu zwraca ramki, począwszy od góry stosu, począwszy od najbardziej ostatnio wciśnięcia ramki.  
+ Moduł wyliczający ramek stosu zwraca ramek, począwszy od góry stosu, począwszy od najbardziej niedawno wypychanie ramki.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)
+ [IDebugStackFrameSniffer, interfejs](../../winscript/reference/idebugstackframesniffer-interface.md)

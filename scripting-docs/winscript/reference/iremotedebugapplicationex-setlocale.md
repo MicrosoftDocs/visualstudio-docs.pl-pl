@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19b2d58974e7da7bd40dad1faa9e361b0327e4c6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3565a966b74e6af18b2c397790fcd8d923e6bb15
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794842"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095709"
 ---
 # <a name="iremotedebugapplicationexsetlocale"></a>IRemoteDebugApplicationEx:SetLocale
 Określa język dla lokalizacji debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetLocale(  
    DWORD  dwLangID  
 );  
@@ -41,7 +41,7 @@ HRESULT SetLocale(
  [in] Identyfikator języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,4 +50,4 @@ HRESULT SetLocale(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs ISetNextStatement](../../winscript/reference/isetnextstatement-interface.md)
+ [ISetNextStatement, interfejs](../../winscript/reference/isetnextstatement-interface.md)

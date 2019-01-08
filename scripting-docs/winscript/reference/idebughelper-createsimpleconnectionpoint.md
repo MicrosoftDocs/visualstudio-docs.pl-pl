@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcc598fa97d47a564ddb12aaa0480e42b6601118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6b478f425b1aaf284bc7af744f5ac99f9be7fe8c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794497"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097074"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
-Zwraca interfejs zdarzeń, który opakowuje danego `IDispatch` obiektu.  
+Zwraca interfejs zdarzenia, który otacza danego `IDispatch` obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT CreateSimpleConnectionPoint(  
    IDispatch*                pdisp  
    ISimpleConnectionPoint**  ppscp  
@@ -39,21 +39,21 @@ HRESULT CreateSimpleConnectionPoint(
   
 #### <a name="parameters"></a>Parametry  
  `pdisp`  
- [in] `IDispatch` Obiekt do zakodowania.  
+ [in] `IDispatch` Obiekt do opakowania.  
   
  `ppscp`  
- [out] Interfejs zdarzeń, który opakowuje `pdisp`.  
+ [out] Interfejs zdarzeń, który otacza `pdisp`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca interfejs zdarzeń, który opakowuje danego `IDispatch` (zobacz [interfejs ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+ Zwraca interfejs zdarzenia, który otacza danego `IDispatch` (zobacz [interfejs ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
- [Interfejs ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)
+ [ISimpleConnectionPoint, interfejs](../../winscript/reference/isimpleconnectionpoint-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794254"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088000"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
 Wskazuje do elementu pomocniczego do określonego zakresu znaków blok skryptu, który jest obsługiwany przez aparat skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -51,24 +51,24 @@ HRESULT DefineScriptBlock(
  [in] Aparat skryptów dla tego bloku skryptu.  
   
  `fScriptlet`  
- [in] Flaga, która wskazuje, czy blok skryptu jest skryptlet.  
+ [in] Flaga wskazująca, czy za pomocą bloku skryptu scriptlet.  
   
  `pdwSourceContext`  
  [out] Kontekst źródła dla bloku skryptu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Host inteligentny można użyć tej metody, podczas jego dokumenty zawierają bloki osadzony skrypt. Aparat języka można użyć tej metody, jeśli jego kod zawiera osadzonych skryptów dla innych języków.  
+ Jest host inteligentny użyć tej metody podczas jego dokumenty zawierają bloki osadzonych skryptów. Aparat języka użyć tej metody, gdy jego kod zawiera skrypty osadzone w innych językach.  
   
- Aparat skryptu jest odpowiedzialny za wszystkie składni kolorowanie i kod kontekstu wyszukiwania w bloku skryptu.  
+ Aparat skryptów jest odpowiedzialny za wszystkie składni kolorowanie i kod kontekstu wyszukiwań w bloku skryptu.  
   
- `DefineScriptBlock` Metoda powinna być wywoływana po dodaniu tekst (na przykład za pomocą `IDebugDocumentHelper::AddDBCSText` metodę), ale przed skrypt przeanalizowaniu bloku (na przykład za pomocą `IActiveScriptParse ::ParseScriptText` — metoda).  
+ `DefineScriptBlock` Metoda powinna być wywoływana po dodaniu tekstu (na przykład za pomocą `IDebugDocumentHelper::AddDBCSText` metoda), ale przed skrypt przeanalizowaniu bloku (na przykład za pomocą `IActiveScriptParse ::ParseScriptText` metody).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   

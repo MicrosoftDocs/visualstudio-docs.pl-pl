@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7dec2cea6cfcf11cc756ef730f98feee9ed9bb0e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793735"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092680"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
-Obsługuje zdarzenie niestandardową aplikację.  
+Obsługuje zdarzenie aplikacji niestandardowych.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onDebuggerEvent(  
    REFIID     riid,  
    IUnknown*  punk  
@@ -42,10 +42,10 @@ HRESULT onDebuggerEvent(
  [in] Identyfikator interfejsu dla obiektu.  
   
  `punk`  
- [in] Obiekt zdarzenia, który implementuje interfejs zdefiniowane przez `riid`.  
+ [in] Obiekt zdarzenia, która implementuje interfejs zdefiniowany przez `riid`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -55,7 +55,7 @@ HRESULT onDebuggerEvent(
 ## <a name="remarks"></a>Uwagi  
  Semantyka `IUnknown` jest całkowicie zdefiniowane aplikacji/debugera.  
   
- Ta metoda umożliwia dla niestandardowych rozszerzeń modelu debugera; nie jest obecnie zaimplementowana.  
+ Ta metoda umożliwia niestandardowe rozszerzenia modelu debuger; nie jest obecnie zaimplementowana.  
   
  Ta metoda jest wywoływana, gdy `IDebugApplication::FireDebuggerEvent` jest wywoływana.  
   

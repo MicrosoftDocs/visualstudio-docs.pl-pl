@@ -18,20 +18,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93595cd2d0f88244866ab7363ecd68c6d8073b48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c466ec767be53d100b970314bf0d81d5dd9dfb20
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794869"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097542"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Mapuje nazwę jednego członka DISPID odpowiednie, którego można użyć w kolejnych wywołań `IDispatchEx::InvokeEx`.  
+Mapuje nazwę na jeden element członkowski jego odpowiedni identyfikator DISPID, które następnie mogą być używane w kolejnych wywołaniach `IDispatchEx::InvokeEx`.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
- HRESULT GetDispID(  
+```cpp
+HRESULT GetDispID(  
    BSTR bstrName,  
    DWORD grfdex,  
    DISPID *pid  
@@ -40,20 +40,20 @@ Mapuje nazwę jednego członka DISPID odpowiednie, którego można użyć w kole
   
 #### <a name="parameters"></a>Parametry  
  `bstrName`  
- Przekazana nazwa można mapować.  
+ Przekazana nazwa mają być mapowane.  
   
  `grfdex`  
  Określa opcje do uzyskania identyfikatora elementu członkowskiego. Może to być kombinacją następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Żądania, które wyszukiwanie nazw odbywać się w sposób, z uwzględnieniem wielkości liter. Może być ignorowane przez obiekt, który nie obsługuje wyszukiwania z uwzględnieniem wielkości liter.|  
-|fdexNameEnsure|Żądania, że element członkowski można utworzyć, jeśli jeszcze nie istnieje. Należy utworzyć nowy element członkowski z wartością `VT_EMPTY`.|  
-|fdexNameImplicit|Wskazuje, czy obiekt wywołujący jest wyszukiwanie obiektów elementem członkowskim o określonej nazwie Jeśli obiektu podstawowego nie został jawnie określony.|  
-|fdexNameCaseInsensitive|Żądania, które wyszukiwanie nazw odbywać się w sposób bez uwzględniania wielkości liter. Może być ignorowane przez obiekt, który nie obsługuje wyszukiwania bez uwzględniania wielkości liter.|  
+|fdexNameCaseSensitive|Żądania, które odbywać wyszukiwanie nazw uwzględnianiem wielkości liter. Można zignorować przez obiekt, który nie obsługuje wyszukiwania z uwzględnieniem wielkości liter.|  
+|fdexNameEnsure|Żądania, że utworzony elementu członkowskiego, jeśli jeszcze nie istnieje. Należy utworzyć nowy element członkowski o wartości `VT_EMPTY`.|  
+|fdexNameImplicit|Wskazuje, że obiekt wywołujący wyszukuje obiekty składową o określonej nazwie kiedy podstawowego obiektu nie jest jawnie określona.|  
+|fdexNameCaseInsensitive|Żądania, które wyszukiwanie nazw odbywać się bez uwzględniania wielkości liter. Może być ignorowane przez obiekt, który nie obsługuje wyszukiwanie bez uwzględniania wielkości liter.|  
   
  `pid`  
- Wskaźnik do przyjęcia DISPID wynik w lokalizacji przydzielone przez obiekt wywołujący. Jeśli wystąpi błąd, `pid` zawiera DISPID_UNKNOWN.  
+ Wskaźnik do przydzielonej przez obiekt wywołujący lokalizacji, aby otrzymać identyfikator DISPID wynik. Jeśli wystąpi błąd, `pid` zawiera DISPID_UNKNOWN.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -62,18 +62,18 @@ Mapuje nazwę jednego członka DISPID odpowiednie, którego można użyć w kole
 |-|-|  
 |`S_OK`|Powodzenie.|  
 |`E_OUTOFMEMORY`|Za mało pamięci.|  
-|`DISP_E_UNKNOWNNAME`|Nazwa jest nieznana.|  
+|`DISP_E_UNKNOWNNAME`|Nazwa nie jest znane.|  
   
 ## <a name="remarks"></a>Uwagi  
- `GetDispID`można użyć zamiast `GetIDsOfNames` uzyskać identyfikator DISPID dla danego elementu członkowskiego.  
+ `GetDispID` można użyć zamiast `GetIDsOfNames` uzyskać identyfikator DISPID dla danego elementu członkowskiego.  
   
- Ponieważ `IDispatchEx` umożliwia dodawanie i usuwanie elementów członkowskich, zbiór identyfikator DISPID nie pozostaje stała okres istnienia obiektu.  
+ Ponieważ `IDispatchEx` zezwala na dodawanie i usuwanie elementów członkowskich, zbiór dispid nie pozostaje niezmienna przez okres istnienia obiektu.  
   
  Nieużywane `riid` parametru w `IDispatch::GetIDsOfNames` został usunięty.  
   
 ## <a name="example"></a>Przykład  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   
@@ -84,4 +84,4 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)
+ [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)

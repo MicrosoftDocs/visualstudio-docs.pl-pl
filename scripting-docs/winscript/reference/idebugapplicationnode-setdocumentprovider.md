@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c80bf04c129b2410b97b2e01861a1007457239
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 135f5603513905fdc00aa7d720b9d8cc6703cb0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793795"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096164"
 ---
 # <a name="idebugapplicationnodesetdocumentprovider"></a>IDebugApplicationNode::SetDocumentProvider
-Ustawia dostawcę dokumentu dla tego węzła aplikacji.  
+Ustawia dostawcę dokument ten węzeł aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetDocumentProvider(  
    IDebugDocumentProvider*  pddp  
 );  
@@ -41,7 +41,7 @@ HRESULT SetDocumentProvider(
  [in] Dostawca dokumentu dla tego węzła aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT SetDocumentProvider(
  Ta metoda Ustawia dostawcę dokumentu dla tego węzła aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

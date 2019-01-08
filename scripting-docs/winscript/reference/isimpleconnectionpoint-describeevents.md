@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42dab9558d46eae0fbb640c60264a79877708321
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 43a20a2d9580c80bc6aea5d22c6a0713f4843634
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796360"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088507"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
 Zwraca identyfikator DISPID i nazwę dla każdego zdarzenia w określonym zakresie zdarzeń.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT DescribeEvents(  
    ULONG    iEvent,  
    ULONG    cEvents,  
@@ -48,25 +48,25 @@ HRESULT DescribeEvents(
  [in] Liczba zdarzeń do pobrania.  
   
  `prgid`  
- [out] Tablica wartości DISPID zdarzenia.  
+ [out] Tablica wartości identyfikator DISPID zdarzenia.  
   
  `prgbstr`  
  [out] Tablica nazw zdarzeń.  
   
  `pcEventsFetched`  
- [out] Rzeczywista liczba zdarzeń pobrane.  
+ [out] Rzeczywista liczba zdarzeń pobrana.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`S_FALSE`|Więcej zdarzeń żądano nie były dostępne. Zdarzenia niedostępne są reprezentowane DISPID_NULL i BSTR wartości null.|  
-|`E_INVALIDARG`|Brak elementów może zostać pobrane.|  
+|`S_FALSE`|Zażądano więcej zdarzeń, nie były dostępne. Niedostępne zdarzenia są reprezentowane z DISPID_NULL i BSTR o wartości null.|  
+|`E_INVALIDARG`|Może być pobierane żadne elementy.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca identyfikator DISPID i nazwy dla każdego zdarzenia w określonym zakresie zdarzeń.  
+ Ta metoda zwraca identyfikator DISPID i nazwę dla każdego zdarzenia w określonym zakresie zdarzeń.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)
+ [ISimpleConnectionPoint, interfejs](../../winscript/reference/isimpleconnectionpoint-interface.md)

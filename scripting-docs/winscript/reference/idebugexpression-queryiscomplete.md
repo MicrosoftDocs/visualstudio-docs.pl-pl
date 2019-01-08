@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1d72b2a2d41b748954f2e4b2b4aa9f0011ca670
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0b4fa4b027f0ee8d848f52c063cbfd1f7679d4a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794173"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087155"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
-Określa, czy operacja została zakończona.  
+Określa, jeśli operacja została zakończona.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT QueryIsComplete();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Metoda zakończyło się pomyślnie, a operacja została zakończona.|  
-|`S_FALSE`|Operacja jest nadal oczekujące.|  
+|`S_OK`|Wykonanie metody powiodło się i operacja została zakończona.|  
+|`S_FALSE`|Ta operacja jest nadal oczekujące.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy operacja została zakończona.  
+ Ta metoda określa, jeśli operacja została zakończona.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugExpression](../../winscript/reference/idebugexpression-interface.md)
+ [IDebugExpression, interfejs](../../winscript/reference/idebugexpression-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 409501172a1ee4b8f00562adaee0d533d517e449
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ec67c17b184000239cd60dbf138a91fda8209c26
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793753"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087000"
 ---
 # <a name="idebugapplicationnodedetach"></a>IDebugApplicationNode::Detach
 Usuwa ten węzeł aplikacji z drzewa projektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Detach();  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT Detach();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -49,4 +49,4 @@ HRESULT Detach();
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
- [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

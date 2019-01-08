@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a39ae7100c5567d2b03b7998077b20b1078810aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c8918e277fa9c7183e6d46a4853824a74fa4548
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796396"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087376"
 ---
 # <a name="scriptprophostkeepalive-property"></a>Właściwość SCRIPTPROP_HOSTKEEPALIVE
-Służy do określenia, czy aparat skryptów powinny być przechowywane funkcjonalnej, jeśli istnieją oczekujące odwołania.  
+Służy do określania, czy aparat skryptów powinny być przechowywane w pełni funkcjonalne, w przypadku innych odwołań.  
   
- Użyj [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) Aby ustawić tę właściwość `true`. Jeśli ta właściwość jest ustawiona na `true`, aparat skryptów są przechowywane w pełni funkcjonalny, tak długo, jak istnieje co najmniej jedno oczekujące odwołanie do samego aparatu skryptów lub `IDispatch` wskaźnika do obiektu JavaScript utworzone za pomocą skryptów aparat. Jeśli ta właściwość jest skonfigurowana `true`, należy nie jawnie zamknąć lub zresetuj aparat skryptu za pomocą [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) lub [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) metody. Wersja ostatnie odwołanie do obiektu skryptu zamyka aparat skryptu.  
+ Użyj [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) można ustawić tę właściwość na `true`. Jeśli ta właściwość jest ustawiona `true`, aparat skryptów są przechowywane w pełni funkcjonalne, tak długo, jak istnieje co najmniej jedno odwołanie oczekujących do silnika wykonywania skryptów, samego lub `IDispatch` wskaźnika do obiektu JavaScript utworzone za pomocą skryptów aparat. Jeśli ta właściwość jest równa `true`, należy nie zostały jawnie Zamknij lub zresetuj aparat skryptu przy użyciu [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) lub [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) metody. Wydanie to ostatnie odwołanie do obiektu skryptu zamyka aparat skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 #define SCRIPTPROP_HOSTKEEPALIVE 0x70000004  
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Ta właściwość jest wyświetlana tylko w wersji activscp.idl, który jest instalowany z [!INCLUDE[win8](../../javascript/includes/win8-md.md)], z 2707082 KB programu Internet Explorer 8 na [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)], lub za pomocą 2722913 KB dla programu Internet Explorer 9 na [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] lub [!INCLUDE[vista_first](../../winscript/reference/includes/vista-first-md.md)].
+ Właściwość ta pojawia się tylko w wersji activscp.idl, który został zainstalowany przy użyciu [!INCLUDE[win8](../../javascript/includes/win8-md.md)], za pomocą 2707082 KB programu Internet Explorer 8, na [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)], lub za pomocą 2722913 KB dla programu Internet Explorer 9 na [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] lub [!INCLUDE[vista_first](../../winscript/reference/includes/vista-first-md.md)].

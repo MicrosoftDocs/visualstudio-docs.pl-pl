@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 579d0ef243de7cd9bfcb821e75aa5ca213712a88
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794164"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090600"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
-Zamienia tekst w dokumencie.  
+Zastępuje tekst w dokumencie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ReplaceText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToReplace,  
@@ -40,16 +40,16 @@ HRESULT ReplaceText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Uruchom lokalizacji zakresu znaków do zastąpienia.  
+ [in] Rozpocznij lokalizacji zakresu znaków do zastąpienia.  
   
  `cNumToReplace`  
  [in] Liczba znaków do zastąpienia.  
   
  `pcharText[]`  
- [in] Bufor zawierający nowe znaki do zamiany starego znaków.  
+ [in] Bufor zawierający znaki nowego zastąpić stary znaków.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -59,4 +59,4 @@ HRESULT ReplaceText(
  Ta metoda zastępuje tekst w dokumencie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)
+ [IDebugDocumentTextAuthor, interfejs](../../winscript/reference/idebugdocumenttextauthor-interface.md)

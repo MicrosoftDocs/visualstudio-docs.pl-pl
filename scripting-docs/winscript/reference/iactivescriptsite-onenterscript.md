@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb4514770faaaad46c8590e6df03488e3d5bc679
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ccef1b2bf63c4421843d3a33cab2e4f471a48251
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793549"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094071"
 ---
 # <a name="iactivescriptsiteonenterscript"></a>IActiveScriptSite::OnEnterScript
 Informuje hosta, że aparat skryptów rozpoczął wykonywanie kodu skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnEnterScript(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT OnEnterScript(void);
  Zwraca `S_OK` w przypadku powodzenia.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat skryptów musi wywołać tej metody dla każdego wpisu i ponowny wpis do aparatu skryptów. Na przykład, jeśli skrypt wywołuje obiekt, który wyzwala zdarzenie obsługiwane przez aparat skryptów, aparat skryptów należy wywołać `IActiveScriptSite::OnEnterScript` przed wykonaniem zdarzenia i należy wywołać [IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md) Metoda po wykonaniu zdarzenia, ale przed zwróceniem do obiektu, który uruchomił zdarzenia. Mogą być zagnieżdżone wywołania tej metody. Co wywołanie tej metody wymaga odpowiedniego wywołania `IActiveScriptSite::OnLeaveScript`.  
+ Silnik wykonywania skryptów musi wywołać tej metody dla każdego wpisu lub wprowadzania do silnika wykonywania skryptów. Na przykład, jeśli skrypt wywołuje obiekt, który następnie uruchamia zdarzenie obsługiwane przez aparat skryptów aparatu skryptów należy wywołać `IActiveScriptSite::OnEnterScript` przed wykonaniem zdarzenia i musi wywołać [IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md) Metoda po wykonaniu zdarzenia, ale przed zwróceniem do obiektu, która wywołała zdarzenie. Mogą być zagnieżdżone wywołania tej metody. Każde wywołanie tej metody wymaga odpowiedniego wywołania `IActiveScriptSite::OnLeaveScript`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

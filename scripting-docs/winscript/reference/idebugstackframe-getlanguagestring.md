@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724ca98278eb8885d29aad1799f822ac57251597
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cc20c3ce2f5d198e167b83ffddb65cedc84402d7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794407"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087740"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Zwraca krótka lub długo tekstowy opis języka.  
+Zwraca krótki lub długo tekstowe Opis języka.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetLanguageString(  
    BOOL   fLong,  
    BSTR*  pbstrLanguage  
@@ -45,14 +45,14 @@ HRESULT GetLanguageString(
  [out] Opis języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zwykle Jeśli `fLong` jest `FALSE`, ta metoda zapewnia tylko nazwę języka ramki stosu. Gdy `fLong` jest `TRUE`, ta metoda może podać opis pełnej wersji produktu.  
+ Zazwyczaj Jeśli `fLong` jest `FALSE`, ta metoda zapewnia tylko nazwę języka skojarzone z ramki stosu. Gdy `fLong` jest `TRUE`, ta metoda może dostarczyć opis pełnej wersji produktu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)

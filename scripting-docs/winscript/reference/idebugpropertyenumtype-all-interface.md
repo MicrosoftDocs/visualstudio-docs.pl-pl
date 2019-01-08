@@ -18,34 +18,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75de35bd42ea91e7d27523ba42c392650686041a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2dc5bb84125ca0bf3b25f8f9b8cfe1dad6aeb6d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794197"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097009"
 ---
 # <a name="idebugpropertyenumtypeall-interface"></a>Interfejs IDebugPropertyEnumType_All
-`IDebugPropertyEnumType` Interfejsy są zdefiniowane tak, aby każdy z ich IID mogą być przekazywane jako filtru w celu `IDebugProperty::EnumMembers` podczas żądania odpowiedniego modułu wyliczającego.  
+`IDebugPropertyEnumType` Interfejsy są zdefiniowane, tak aby każda z ich IID mogą być przekazywane jako filtr, aby `IDebugProperty::EnumMembers` podczas żądania odpowiedniego modułu wyliczającego.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IDebugPropertyEnumType_All : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Zwraca ciąg tekstowy opisujące nazwę|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Zwraca ciąg tekst opisujący nazwę|  
   
  Następujące interfejsy dziedziczyć `IDebugPropertyEnumType_All`, i mieć żadnych dodatkowych metod.  
   
-```  
-IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
+```cpp
+IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
 IDebugPropertyEnumType_Registers : IDebugPropertyEnumType_All  
 ```  
   

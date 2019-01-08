@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5abfe1aeba6eb7435e72797f0739c9abc7b5ff5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cd86e1860cf4bd22a71b6f728ca36dbd3b7414a4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793978"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089495"
 ---
 # <a name="idebugdocumenthelperdetach"></a>IDebugDocumentHelper::Detach
-Usuwa ten dokument w drzewie dokumentu.  
+Usuwa ten dokument z drzewa dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Detach();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT Detach();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda usuwa ten dokument w drzewie dokumentu.  
+ Ta metoda usuwa ten dokument z drzewa dokumentu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

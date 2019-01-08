@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercontrol5 — interfejs | Dokumentacja firmy Microsoft
+title: IActiveScriptProfilerControl5, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0c8b464004337b41280d6d19821f0fb9f1f50a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1b20afd05116a98e81a3eeea82e83e6ed200c44a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793399"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090821"
 ---
 # <a name="iactivescriptprofilercontrol5-interface"></a>IActiveScriptProfilerControl5 — Interfejs
-Udostępnia metodę wyliczyć obiektów sterty GC skojarzonego z aparatem skryptu.  
+Udostępnia metodę wyliczania na obiektach sterty GC, skojarzone z aparatem obsługi skryptów.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 interface IActiveScriptProfilerControl5 : IActiveScriptProfilerControl4  
 ```  
   
 ## <a name="methods"></a>Metody  
- [IActiveScriptProfilerControl5::EnumHeap2 — metoda](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md)  
- Zwraca interfejs ([interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) który może służyć do wykonywania iteracji w kontekście aparat skryptu skojarzone obiekty sterty GC.
+ [IActiveScriptProfilerControl5::EnumHeap2, metoda](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md)  
+ Zwraca interfejs ([interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) który może służyć do iteracji na obiektach sterty GC w kontekście aparatu obsługi skryptów skojarzonych.

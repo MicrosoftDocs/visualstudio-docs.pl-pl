@@ -16,26 +16,26 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63d837b0f7a59b1e3efc832c4d98cb7dcab5447c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b65c536c303a9bc0da7d0e29992315c05a61de52
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793429"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092485"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
-Zatrzymuje profilowanie na aparatu skryptów. Ta metoda wywołuje [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) w obiekcie profilera, a następnie zwolnieniem.  
+Zatrzymuje profilowanie na silnik wykonywania skryptów. Ta metoda wywołuje [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) na obiekt profiler i następnie zwalnia go.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT StopProfiling(  
     [in] HRESULT hrShutdownReason);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `hrShutdownReason`  
- [in] Wartość HRESULT jako parametr przekazywany [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) metody obiektu profilera.  
+ [in] Wartość HRESULT, które zostaną przekazane jako parametr do [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) metody obiektu profilera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
@@ -43,7 +43,7 @@ HRESULT StopProfiling(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Nie włączono profilowanie.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączona.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)
+ [IActiveScriptProfilerControl, interfejs](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

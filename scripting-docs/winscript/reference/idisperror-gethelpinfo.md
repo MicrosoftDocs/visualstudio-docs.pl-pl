@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794557"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087493"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Zwraca ścieżkę pliku pomocy i identyfikator kontekstu tematu, który wyjaśni ten błąd, jeśli to możliwe.  
+Zwraca ścieżkę do pliku pomocy i identyfikator kontekstu tematu, który wyjaśni ten błąd, jeśli jest to możliwe.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetHelpInfo(  
    BSTR*  pbstrFileName,  
    DWORD*  pdwContext  
@@ -39,26 +39,26 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrFileName`  
- [out] Ciąg zawierający w pełni kwalifikowana ścieżka do pliku pomocy. Jeśli plik pomocy nie istnieje lub występuje błąd, wartość zwracana jest NULL.  
+ [out] Ciąg zawierający w pełni kwalifikowaną ścieżkę pliku pomocy. Jeśli nie ma żadnego pliku pomocy lub wystąpi błąd, wartość zwracana jest wartość NULL.  
   
  `pdwContext`  
- [out] Identyfikator kontekstu pomocy dla błędu. Jeśli plik pomocy nie istnieje (Jeśli `pbstrFileName` ma wartość NULL), ten parametr nie ma znaczenia.  
+ [out] Identyfikator kontekstu pomocy dla błędu. Jeśli nie ma żadnego pliku pomocy (Jeśli `pbstrFileName` ma wartość NULL), ten parametr nie ma znaczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_FAIL`|Wystąpił błąd specyficznego dla dostawcy.|  
-|`E_INVALIDARG`|`pbstrFileName`lub `pdwContext` została wartość NULL.|  
-|`E_OUTOFMEMORY`|Dostawca nie może przydzielić wystarczającej ilości pamięci, do której należy zwrócić ścieżkę pliku pomocy.|  
+|`E_FAIL`|Wystąpił błąd specyficzny dla dostawcy.|  
+|`E_INVALIDARG`|`pbstrFileName` lub `pdwContext` była równa NULL.|  
+|`E_OUTOFMEMORY`|Dostawca nie może przydzielić wystarczającej ilości pamięci, w której ma zostać zwrócone ścieżkę pliku pomocy.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca ścieżkę pliku pomocy i identyfikator kontekstu tematu, który wyjaśni ten błąd, jeśli to możliwe.  
+ Ta metoda zwraca ścieżkę do pliku pomocy i identyfikator kontekstu tematu, który wyjaśni ten błąd, jeśli jest to możliwe.  
   
 > [!NOTE]
 >  Ta metoda nie jest zaimplementowana.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDispError](../../winscript/reference/idisperror-interface.md)
+ [IDispError, interfejs](../../winscript/reference/idisperror-interface.md)

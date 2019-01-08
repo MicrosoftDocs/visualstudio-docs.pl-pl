@@ -12,31 +12,31 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3927743a1de1d3048537327aebd24a847a7d22e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f1f8d709c98efba8551ffdd026b77234785c8de4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793465"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095735"
 ---
 # <a name="iactivescriptprofilerheapenumnext-method"></a>Metoda IActiveScriptProfilerHeapEnum::Next
-Pobiera następną obiektu lub obiektów w zestawie sterty obiektów z [metoda IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+Pobiera następny obiekt lub obiekty w zestawie obiektów sterty z [metoda IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Next (    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] PROFILER_HEAP_OBJECT** heapObjects,     [out] ULONG *pceltFetched);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- Liczba obiektów, które ma zostać zwrócona.  
+ Liczba obiektów, które mają zostać zwrócone.  
   
  `heapObjects`  
- [out] Następne [struktura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) struktury.  
+ [out] Następne [PROFILER_HEAP_OBJECT, struktura](../../winscript/reference/profiler-heap-object-structure.md) struktury.  
   
  `pceltFetched`  
- [out] Liczba obiektów zwrócona,  
+ [out] Liczba obiektów zwróconych,  
   
 ## <a name="return-value"></a>Wartość zwracana  
- HRESULT.
+ Wartość HRESULT.

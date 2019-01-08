@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 898c80dc4f5ef9010db6396a78c1b17b50603dc2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8d3f50029be8489d05c204c57f50c3f7f1326400
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794221"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096134"
 ---
 # <a name="idebugstackframegetdebugproperty"></a>IDebugStackFrame::GetDebugProperty
-Zwraca przeglądarką właściwości dla bieżącej ramki.  
+Zwraca przeglądarkę właściwości dla bieżącej ramki.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDebugProperty(  
    IDebugProperty**  ppDebugProp  
 );  
@@ -38,17 +38,17 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>Parametry  
  `ppDebugProp`  
- [out] Przeglądarka właściwości dla bieżącej ramki.  
+ [out] Przeglądarkę właściwości dla bieżącej ramki.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca przeglądarką właściwości dla bieżącej ramki.  
+ Ta metoda zwraca przeglądarkę właściwości dla bieżącej ramki.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)

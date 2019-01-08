@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42b57e63716804258ba79ed4e4aceae118cb5f54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d813b9d1aa32368abddb6127450dffa8868facc5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794902"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086895"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
-Wylicza wszystkie wątki wiadomo, że są skojarzone z aplikacją.  
+Wylicza wszystkie wątki, o których wiadomo, że są skojarzone z aplikacją.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT EnumThreads(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumThreads(
   
 #### <a name="parameters"></a>Parametry  
  `pperdat`  
- [out] Moduł wyliczający, który zawiera wszystkie wątki wiadomo, że są skojarzone z aplikacją.  
+ [out] Moduł wyliczający, który zawiera listę wszystkich wątków, o których wiadomo, że są skojarzone z aplikacją.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wylicza wszystkie wątki wiadomo, że są skojarzone z aplikacją. W dowolnym momencie można dodać nowych wątków.  
+ Ta metoda wylicza wszystkie wątki, o których wiadomo, że są skojarzone z aplikacją. Mogą być dodawane nowe wątki w dowolnym momencie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

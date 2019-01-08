@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11fa9003abb03c42adcbf3a548bb5b90d763a344
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2a96732e904c7249dc5228ef414c3315012ec56
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793264"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097438"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Informuje o aparat skryptów z [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) lokacji interfejs dostarczony przez hosta. Wywołanie tej metody przed wszystkimi innymi [IActiveScript](../../winscript/reference/iactivescript.md) służy metod interfejsu.  
+Informuje silnik wykonywania skryptów z [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) lokacji interfejsu udostępniane przez hosta. Wywołanie tej metody przed wszystkimi pozostałymi [IActiveScript](../../winscript/reference/iactivescript.md) służy metod interfejsu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetScriptSite(  
     IActiveScriptSite *pScriptSite  // address of host script site  
 );  
@@ -38,7 +38,7 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parametry  
  `pScriptSite`  
- [in] Adres witryny hosta dostarczone skrypt ma zostać skojarzony z tym wystąpieniem aparatu skryptów. Witryny, które muszą być jednoznacznie przypisane do tego wystąpienia aparatu skryptów; Nie można udostępnić z innych aparatów skryptów.  
+ [in] Adres witryny dostarczony host skrypt ma zostać skojarzony z tym wystąpieniem silnik wykonywania skryptów. Lokacji należy jednoznacznie przypisać do tego wystąpienia aparatu skryptów; Nie można udostępnić z innych aparatów obsługi skryptów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -46,8 +46,8 @@ HRESULT SetScriptSite(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
-|`E_FAIL`|Wystąpił nieokreślony błąd; Nie można zakończyć inicjowanie witryny aparatu skryptów.|  
-|`E_INVALIDARG`|Argument był nieprawidłowy.|  
+|`E_FAIL`|Wystąpił nieokreślony błąd; aparat skryptów nie może zakończyć inicjowanie lokacji.|  
+|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
 |`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład lokacji został już ustawiony).|  
   

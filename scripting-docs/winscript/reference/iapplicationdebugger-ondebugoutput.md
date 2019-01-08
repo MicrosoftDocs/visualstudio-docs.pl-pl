@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c660222ebc136c57605dd0fda2c7f5fa88c368c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed29673735038e9664324e9e342be199705348d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793726"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088364"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
-Obsługuje zdarzenie wyjściowe debugowania.  
+Obsługuje zdarzenie danych wyjściowych debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -41,7 +41,7 @@ HRESULT onDebugOutput(
  [in] Ciąg wyświetlany w debugerze.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1be8bb6d350a2ca68912622396af52f1625985a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2eb889bef17d2038f17c7f8618ad65ca2162f0c7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794308"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097594"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
-Tworzy obiekt kontekstu dokumentu odpowiadającego zakresowi pozycji podany znak.  
+Tworzy obiekt kontekstu dokumentu odpowiadający zakres pozycji podana znaków.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetContextOfPosition(  
    ULONG                    cCharacterPosition,  
    ULONG                    cNumChars,  
@@ -40,23 +40,23 @@ HRESULT GetContextOfPosition(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Uruchom lokalizacji pozycji znaku zakresu.  
+ [in] Lokalizacja z zakresu znaków pozycja początkowa.  
   
  `cNumChars`  
  [in] Liczba znaków w zakresie.  
   
  `ppsc`  
- [out] Obiekt kontekstu dokumentu odpowiadającego zakresowi pozycji określony znak.  
+ [out] Obiekt kontekstu dokumentu odpowiadający zakres pozycji określonego znaku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda tworzy obiekt kontekstu dokumentu odpowiadającego zakresowi pozycji podany znak.  
+ Ta metoda tworzy obiekt kontekstu dokumentu odpowiadający zakres pozycji podana znaków.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText, interfejs](../../winscript/reference/idebugdocumenttext-interface.md)

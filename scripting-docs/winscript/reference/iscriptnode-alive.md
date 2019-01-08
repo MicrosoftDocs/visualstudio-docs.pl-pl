@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0631690cbd961273175cf8dfbe35550980d4994d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23f0e804cbbbe6683b89f7b629b9677c7b92c64f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794752"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089560"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
 Wskazuje, czy obiekt jest nadal aktywne.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT Alive();  
 ```  
   
@@ -42,10 +42,10 @@ HRESULT Alive();
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Węzeł skryptu jest nadal aktywne.|  
+|`S_OK`|Ten węzeł skryptu jest nadal aktywne.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli obiekt nie jest aktywne, składnik modelu COM. zwraca błąd z kierowania serwera proxy dla wywołania do tej metody.  
+ Jeśli obiekt nie jest aktywne, Component Object Model (COM) zwraca błąd z serwera proxy kierowania do wywołania tej metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

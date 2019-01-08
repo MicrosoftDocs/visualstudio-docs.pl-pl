@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a00adb996711dc6364edd44babf0c3cde1595947
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce5cd786cead548e7a088f362930b2d27d2e8d69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794575"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089391"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
-Wskazuje, czy nowy tekst został dodany do dokumentu.  
+Wskazuje, że dodano nowy tekst w dokumencie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT onInsertText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToInsert  
@@ -39,20 +39,20 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Pozycja znaku, gdzie dodano nowego tekstu.  
+ [in] Pozycja znaku, w którym dodano nowy tekst.  
   
  `cNumToInsert`  
  [in] Liczba znaków, które zostały wstawione.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest zazwyczaj wywoływana przez hosta, który ładuje stopniowo zawartości, takich jak przeglądarki sieci Web.  
+ Ta metoda jest zazwyczaj wywoływana przez hosta, który stopniowo ładuje zawartości, takiej jak przeglądarki sieci Web.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   

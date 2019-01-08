@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 098d57a5ff0ba14b1dd493ad772eee595a10ec9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e69ecf79c369b0ac99f0a598681e1a02a5dd21b0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793849"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096541"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
 Zwraca kontekst dokumentu skojarzone z tym kontekstem kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppsc  
 );  
@@ -38,17 +38,17 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>Parametry  
  `ppsc`  
- [out] Kontekstu dokumentu skojarzone z tym kontekstem kodu.  
+ [out] Kontekst dokumentu, skojarzone z tym kontekstem kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku dokumentów tekst zakresu znaku na pozycji powinna zawierać tekst całą instrukcję. Dzięki temu debugera IDE, aby wyróżnić bieżącej instrukcji źródła.  
+ Dla dokumenty tekstowe zakres pozycji znaku powinna zawierać tekst całą instrukcję. Dzięki temu debugger IDE, aby wyróżnić bieżącej instrukcji źródła.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)
+ [IDebugCodeContext, interfejs](../../winscript/reference/idebugcodecontext-interface.md)

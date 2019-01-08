@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12168ddb5f65c62e81a8f724cacf8b3fd4a1b3a9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 142248d4cfedb2d63025fc873c5574c163fcafd4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794602"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087506"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
-Pobiera interfejs dla obiekt nadrzędny przestrzeni nazw.  
+Pobiera interfejs dla obiektu nadrzędnego przestrzeni nazw.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetNameSpaceParent(  
    IUnknown **ppunk  
 );  
@@ -38,10 +38,10 @@ HRESULT GetNameSpaceParent(
   
 #### <a name="parameters"></a>Parametry  
  `ppunk`  
- Adres `IUnknown` wskaźnik interfejsu, który odbiera interfejsu nadrzędną przestrzeń nazw.  
+ Adres `IUnknown` wskaźnik interfejsu, który odbiera interfejs nadrzędny przestrzeni nazw.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` w przypadku powodzenia lub kod błędu zdefiniowany OLE w inny sposób.  
+ Zwraca `S_OK` w przypadku powodzenia lub kod błędu zdefiniowany OLE, w przeciwnym razie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)
+ [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)

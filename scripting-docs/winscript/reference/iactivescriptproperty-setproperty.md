@@ -18,19 +18,19 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 186608bc56cf8b3649f5beeb1e3a301580ce44bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 683041b50002cb926a36e4f10d6758246af91726
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279287"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090777"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Ustawia właściwość, która jest określona przez parametr.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT SetProperty(  
 // The property value:  
     uint dwProperty,    
