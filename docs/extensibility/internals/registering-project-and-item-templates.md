@@ -66,7 +66,7 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
 ### <a name="registering-file-filters"></a>Rejestrowanie filtry plików  
  Opcjonalnie można zarejestrować filtry, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] używa po wyświetleniu monitu dla nazw plików. Na przykład [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrować **Otwórz plik** jest okno dialogowe:  
 
- **Pliki Visual C# (\**.CS,\*resx,\*.settings,\*XSD,\*.wsdl);\*. CS,\*resx,\*.settings,\*XSD,\*.wsdl)**  
+ **Pliki Visual C# (\*.CS,\*resx,\*.settings,\*XSD,\*.wsdl);\*. CS,\*resx,\*.settings,\*XSD,\*.wsdl)**  
 
  Do obsługi rejestracji wielu filtrów, każdy filtr jest zarejestrowany w jego własnej podklucza w HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*wersji*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklucz*>. Dowolne; jest nazwą podklucza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoruje nazwa podklucza który i używa tylko jego wartości.  
 
