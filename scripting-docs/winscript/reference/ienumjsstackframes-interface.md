@@ -1,5 +1,5 @@
 ---
-title: Ienumjsstackframes — interfejs | Dokumentacja firmy Microsoft
+title: IEnumJsStackFrames, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12583f73c9f3977371ebd193716f2513fc0befc4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c26470e02f6c7e5d8911df7e743bce0cb0e560bb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794350"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087883"
 ---
 # <a name="ienumjsstackframes-interface"></a>IEnumJsStackFrames — Interfejs
-Zaimplementowane przez debuger w celu zapewnienia stosu Odwiń do jscript9diag.dll dla języka JavaScript.  
+Implementowany przez debugera, aby zapewnić stosu Odwiń do biblioteki jscript9diag.dll dla języka JavaScript.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IEnumJsStackFrames : public IUnknown;  
 ```  
   
@@ -34,11 +34,11 @@ IEnumJsStackFrames : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IEnumJsStackFrames::Next — metoda](../../winscript/reference/ienumjsstackframes-next-method.md)|Pobiera określoną liczbę ramek.|  
-|[IEnumJsStackFrames::Reset — metoda](../../winscript/reference/ienumjsstackframes-reset-method.md)|Resetuje pozycji przed pierwszym elementem ramki stosu.|  
+|[IEnumJsStackFrames::Next, metoda](../../winscript/reference/ienumjsstackframes-next-method.md)|Pobiera określoną liczbę klatek.|  
+|[IEnumJsStackFrames::Reset, metoda](../../winscript/reference/ienumjsstackframes-reset-method.md)|Resetuje ramkę stosu do pozycji przed pierwszym elementem.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

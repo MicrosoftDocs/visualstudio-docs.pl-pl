@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProperty::GetPropertyInfo — metoda | Dokumentacja firmy Microsoft
+title: IJsDebugProperty::GetPropertyInfo, metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a98f0ec3c4b0cdde1432402fce16c7383947e309
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85dd11fbd5b7f012dc47e170ee785e671d6a7f14
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794722"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086713"
 ---
 # <a name="ijsdebugpropertygetpropertyinfo-method"></a>IJsDebugProperty::GetPropertyInfo — Metoda
 Pobiera informacje dla tego obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetPropertyInfo(  
    UINT nRadix,  
    JsDebugPropertyInfo *pPropertyInfo  
@@ -37,7 +37,7 @@ HRESULT GetPropertyInfo(
   
 #### <a name="parameters"></a>Parametry  
  `nRadix`  
- [in] Podstawa do użycia.  
+ [in] Podstawy do użycia.  
   
  `pPropertyInfo`  
  [out] Informacje o obiekcie.  
@@ -48,4 +48,4 @@ HRESULT GetPropertyInfo(
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ijsdebugproperty — interfejs](../../winscript/reference/ijsdebugproperty-interface.md)
+ [IJsDebugProperty, interfejs](../../winscript/reference/ijsdebugproperty-interface.md)

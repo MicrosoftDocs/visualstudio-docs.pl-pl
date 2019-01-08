@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8b4caac89897f015fec7ac483b967f9b42676aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91facd7a7055ab5ac9e7666c6a0d171e78c73eed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794890"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086739"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
-Obsługuje zdarzenie zmiany flagi podziału.  
+Obsługuje zdarzenie po zmianie flag podziału.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT OnBreakFlagChange(  
    APPBREAKFLAGS                   abf,  
    IRemoteDebugApplicationThread*  prdatSteppingThread  
@@ -39,21 +39,21 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>Parametry  
  `abf`  
- [in] Bieżące flagi podziału dla aplikacji.  
+ [in] Bieżące flagi przerwania dla aplikacji.  
   
  `prdatSteppingThread`  
- [in] Obecnie uruchomiony wątek.  
+ [in] Aktualnie uruchomionemu wątkowi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obsługuje zdarzenie zmiany flagi podziału.  
+ Ta metoda obsługuje zdarzenie, gdy zmienią się Flaga podziału.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
- [Wyliczenie APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)
+ [APPBREAKFLAGS, wyliczenie](../../winscript/reference/appbreakflags-enumeration.md)

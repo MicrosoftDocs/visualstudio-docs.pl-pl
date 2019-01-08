@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77c31084ccc24a6bace18f009eb8372a4f68a428
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e056a62ac498c0b4061ed0982189de9747832ccc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794791"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087077"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
-Dodaje aplikację do uruchamiania liście aplikacji.  
+Dodaje aplikację do uruchamiania listy aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD*                    pdwAppCookie  
@@ -39,20 +39,20 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [in] Aplikacji do uruchamiania liście aplikacji.  
+ [in] Aplikacja z uruchomioną listy aplikacji.  
   
  `pdwAppCookie`  
- [out] Plik cookie jest używana do usuwania aplikacji przez Menedżera debugowania maszyny.  
+ [out] Plik cookie, który służy do usuwania aplikacji Menedżer debugowania maszyny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana przez Menedżera debugowania procesu zawsze, gdy `IProcessDebugManager::AddApplication` jest wywoływana.  
+ Ta metoda jest wywoływana przez Menedżer debugowania procesów zawsze wtedy, gdy `IProcessDebugManager::AddApplication` jest wywoływana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   

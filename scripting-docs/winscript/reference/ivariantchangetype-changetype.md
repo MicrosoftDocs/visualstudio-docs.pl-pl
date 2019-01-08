@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d742d1bd57c85aa75c9ccd60479d08c1a559fb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a02b8a3991ff6d20370cd4a2ea4cd87aa9a1226
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796414"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086583"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-Przyjmuje wartość typu variant i tworzy nowy wariant z określonym typem.  
+Pobiera wartość wariantu i tworzy nowy wariant z określonym typem.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT ChangeType(  
    VARIANT*  pvarDst,  
    VARIANT*  pvarSrc,  
@@ -41,26 +41,26 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Parametry  
  `pvarDst`  
- [w, out] Typ variant zawierający reprezentowany przez wartość `pvarSrc`, ale z typem określonym przez `vtNew`.  
+ [out w] Wariant będzie zawierać wynik, reprezentowane przez `pvarSrc`, ale z typu określonego przez `vtNew`.  
   
  `pvarSrc`  
  [in] Wartość wariantu, aby zmienić do nowego typu.  
   
  `lcid`  
- [in] Kontekst ustawień regionalnych do użycia podczas konwertowania argumenty do lub z ciągów.  
+ [in] Ustawienia regionalne kontekstu do użycia podczas konwertowania argumenty do lub z ciągami.  
   
  `vtNew`  
- [in] Określa typ `pvarDst` stanie się.  
+ [in] Określa typ `pvarDst` stać się.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- `pvarDst` i `pvarSrc` argumentów może być takie same, w którym to przypadku jest zastępowany oryginalną wartość. Ta metoda przekazuje `pvarDst` do `VariantClear` funkcji, a w konsekwencji `pvarDst` powinien być inicjowany na prawidłową wartość.  
+ `pvarDst` i `pvarSrc` argumenty mogą być równe, w którym to przypadku jest zastępowany oryginalną wartość. Ta metoda przekazuje `pvarDst` do `VariantClear` funkcji, a w konsekwencji `pvarDst` powinna być inicjowana na prawidłową wartość.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)
+ [IVariantChangeType, interfejs](../../winscript/reference/ivariantchangetype-interface.md)

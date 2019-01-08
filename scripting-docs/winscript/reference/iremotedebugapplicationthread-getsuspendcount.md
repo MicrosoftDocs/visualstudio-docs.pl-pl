@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1ddfde0b9348db25c9949be24007c55afdd3b54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e997d67197c6cd2b970db7ee17df0b88f4bdbd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794971"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086557"
 ---
 # <a name="iremotedebugapplicationthreadgetsuspendcount"></a>IRemoteDebugApplicationThread::GetSuspendCount
-Zwraca liczbę wstrzymania wątku.  
+Zwraca wstrzymania liczenia dla wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 HRESULT GetSuspendCount(  
    DWORD*  pdwCount  
 );  
@@ -38,17 +38,17 @@ HRESULT GetSuspendCount(
   
 #### <a name="parameters"></a>Parametry  
  `pdwCount`  
- [out] Wstrzymaj liczbę elementów w wątku.  
+ [out] Wstrzymania liczenia wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wartość liczby wstrzymania wątku.  
+ Ta metoda zwraca wstrzymania liczenia dla wątku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

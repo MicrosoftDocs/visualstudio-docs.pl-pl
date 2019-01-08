@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugstackwalker — interfejs | Dokumentacja firmy Microsoft
+title: IJsDebugStackWalker, interfejs | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbea11bf1188d148818ea8a082bceec76c704c2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d79950c6d5595a0a8a95623a7510c5523f16e41b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794719"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087903"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker — Interfejs
-Reprezentuje walkera stosu dla określonego wątku.  
+Przedstawia walker stosu dla określonego wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp
 IJsDebugStackWalker : public IUnknown;  
 ```  
   
@@ -34,13 +34,13 @@ IJsDebugStackWalker : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebugStackWalker::GetNext — metoda](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Pobiera następnej ramki.|  
+|[IJsDebugStackWalker::GetNext, metoda](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Pobiera następną klatkę.|  
   
 ## <a name="remarks"></a>Uwagi  
- Walkers stosu można tworzyć tylko w przypadku, gdy element docelowy zostanie zatrzymana i są nieprawidłowe, gdy proces docelowy jest kontynuowane ponownie.  
+ Walkery stosu można tworzyć tylko w przypadku, gdy element docelowy jest zatrzymany i są nieprawidłowe, gdy proces docelowy jest kontynuowane ponownie.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** jscript9diag.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
