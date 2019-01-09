@@ -10,17 +10,17 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], current item
 - SelectionChange event
 - Outlook [Office development in Visual Studio], current item
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93d1d565664e9851310e9138fef7f6d14041c865
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ed0a235a24b65b89a1b82ec47236f3f013f81dc
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945954"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153973"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Instrukcje: Programowe wyznaczanie bieżącego elementu programu Outlook
   W tym przykładzie użyto `Explorer.SelectionChange` zdarzenie, aby wyświetlić nazwę bieżącego folderu i niektóre informacje na temat wybranego elementu. Ten kod wyświetla wybrany element.  

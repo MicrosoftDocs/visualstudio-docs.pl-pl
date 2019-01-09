@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f2f0040b1d4c333f3e35ee34ee50bfb8cbe38bb
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946987"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154014"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Ustawianie wyrażenia kontrolnego na zmiennych w równoległych wątków w programie Visual Studio
 W oknie czujki równoległej może jednocześnie wyświetlać wartości, które zawiera jedno wyrażenie, w wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc każdy wiersz reprezentuje wywołanie funkcji, w których funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienić kolejność, Usuń i grupować elementy, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów). Następujące kolumny są wyświetlane w **równoległego wyrażenia kontrolnego** okna:  
@@ -34,7 +34,7 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
 - Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.  
   
   > [!TIP]
-  >  Wyświetlana informacjach o zadaniu w **równoległego wyrażenia kontrolnego** okna, należy najpierw otworzyć **zadań** okna.  
+  >  Aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna, należy najpierw otworzyć **zadań** okna.  
   
 - Pustą *Dodaj wyrażenie kontrolne* kolumn, w których można wprowadzić wyrażenia, aby obejrzeć.  
   

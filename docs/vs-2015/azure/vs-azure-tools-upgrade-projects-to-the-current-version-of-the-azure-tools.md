@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: c5fb70f2dd09338dd2e2f6b01cb60bf2be0cdbdd
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b7faf80371a48ad2ddf6c13b879525b65a3eb299
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003592"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154287"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Jak uaktualniać projekty do bieżącej wersji narzędzi platformy Azure dla programu Visual Studio
 ## <a name="overview"></a>Omówienie
@@ -25,7 +25,7 @@ Po zainstalowaniu bieżąca wersja narzędzi platformy Azure (lub poprzedniej we
 ## <a name="how-your-project-changes-when-you-upgrade-it"></a>Jak projekt zmienia się po uaktualnieniu
 Jeśli projekt zostanie automatycznie uaktualniony lub określ, czy chcesz go uaktualnić, projekt zostanie zmodyfikowany na potrzeby pracy z bieżącymi wersjami określone zestawy, a niektóre właściwości również są zmieniane, zgodnie z opisem w tej sekcji. Jeśli Twój projekt wymaga innych zmian, aby był zgodny z nowszą wersją narzędzia, musisz wprowadzić te zmiany ręcznie.
 
-* Plik web.config dla ról sieć web i w pliku app.config dla ról procesów roboczych zostaną zaktualizowane do odniesienia nowszą wersję Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitoirTraceListener.dll.
+* Plik web.config dla ról sieć web i w pliku app.config dla ról procesów roboczych zostaną zaktualizowane do odniesienia nowszą wersję Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll.
 * Zestawy Microsoft.WindowsAzure.StorageClient.dll Microsoft.WindowsAzure.Diagnostics.dll i Microsoft.WindowsAzure.ServiceRuntime.dll są uaktualniane do nowych wersji.
 * Profile publikowania, które były przechowywane w pliku projektu platformy Azure (ccproj) są przenoszone do osobnego pliku przy użyciu .azurePubXml rozszerzenia, w **Publikuj** podkatalogu.
 * Niektóre właściwości w profilu publikowania są aktualizowane, aby obsługiwać nowe i zmienione funkcje. **AllowUpgrade** zastępuje **DeploymentReplacementMethod** ponieważ możesz zaktualizować wdrożonej usłudze w chmurze, jednocześnie lub przyrostowo.
@@ -33,7 +33,7 @@ Jeśli projekt zostanie automatycznie uaktualniony lub określ, czy chcesz go ua
 * Jeśli pamięć podręczna systemu Azure jest hostowana w co najmniej jednej z ról projektu, niektóre właściwości w definicji usługi (plik csdef) i usługi konfiguracji (plik cscfg) są zmieniane, gdy projekt zostanie uaktualniony. Jeśli projekt używa pakietu NuGet usługi pamięć podręczna Azure, projekt jest uaktualniony do najnowszej wersji pakietu. Należy otworzyć plik web.config i sprawdź, czy konfiguracja klienta została zachowana poprawnie podczas procesu uaktualniania. Jeśli dodano odwołania do zestawów klienta pamięci podręcznej systemu Azure bez przy użyciu pakietu NuGet, te zestawy nie będą aktualizowane; należy ręcznie zaktualizować te odwołania do nowych wersji.
 
 > [!IMPORTANT]
-> Dla projektów F # należy ręcznie zaktualizować odwołania do zestawów platformy Azure, dlatego, że odwołują się do nowszych wersji te zestawy.
+> Aby uzyskać F# projektów, należy ręcznie zaktualizować odwołania do zestawów platformy Azure, dlatego, że odwołują się do nowszych wersji te zestawy.
 > 
 > 
 

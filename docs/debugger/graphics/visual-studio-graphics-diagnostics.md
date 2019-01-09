@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c4dda5fef6b2a288e5b4f78bbe6b10422ef5ea2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890933"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154260"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
 Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania i następnie analizowania problemów renderowania i wydajności w aplikacjach Direct3D. Diagnostyka grafiki może służyć w aplikacjach, które działają lokalnie na komputerze z systemem Windows, w emulatorze urządzenia Windows lub na zdalnym komputerze lub urządzeniu.  
 
- Diagnostyka grafiki przepływu pracy rozpoczyna się od przechwytywania rekordu w jaki sposób aplikacja używa technologii Direct3D — na żywo, podczas jego wykonywania — tak, aby od razu można analizować swoje zachowanie, udostępnione lub zapisywane do użycia w dalszej części. Można zainicjować sesji przechwytywania i kontrolować ręcznie z programu Visual Studio lub za pomocą narzędzia wiersza polecenia do przechwytywania **dxcap.exe**. Można również zainicjować sesji przechwytywania i kontrolować programowo, za pomocą Graphics Diagnostics przechwytywania interfejsów API.  
+ Diagnostyka grafiki przepływu pracy rozpoczyna się od przechwytywania rekordu w jaki sposób aplikacja używa technologii Direct3D — na żywo, podczas jego wykonywania — tak, aby od razu można analizować swoje zachowanie, udostępnione lub zapisywane do użycia w dalszej części. Sesji przechwytywania, które mogą być zainicjowane i kontrolowane ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia wiersza polecenia do przechwytywania **dxcap.exe**. Można również inicjowane sesji przechwytywania i kontrolowany programowo za pomocą Graphics Diagnostics przechwytywania interfejsów API.  
 
- Po sesji przechwytywania zarejestrowano jego zawartość może zostać odtworzony przez program Visual Studio *analizatora grafiki* w dowolnym momencie i ponowne utworzenie przechwycone ramki przy użyciu dokładnie tych samych zasobów i renderowanie poleceń, aplikacja używana. Następnie korzystając z narzędzi dostępnych w oknie grafiki Analyer, dowolny przechwycone ramki mogą być analizowane szczegółowo. Te narzędzia można zbadać każde wywołanie interfejsu API Direct3D, zasobów, obiekt stanu potoku, etap potoku lub nawet pełną historię dowolny piksel w przechwyconej ramce. Za pomocą tych narzędzi z optymalizacją, problem z renderowaniem, można eksplorować tylko intuicyjnie, począwszy od sposobu jej wyświetlania w przechwyconej ramce i wyświetlających jego głównej przyczyny problemu w aplikacji źródła kodu, programów do cieniowania lub grafiki zasoby.  
+ Po sesji przechwytywania zarejestrowano jego zawartość może zostać odtworzony przez program Visual Studio *analizatora grafiki* w dowolnym momencie i ponowne utworzenie przechwycone ramki przy użyciu dokładnie tych samych zasobów i renderowanie poleceń, aplikacja używana. Następnie przy użyciu narzędzi dostępnych w okno analizator grafiki, dowolny przechwycone ramki mogą być analizowane szczegółowo. Te narzędzia można zbadać każde wywołanie interfejsu API Direct3D, zasobów, obiekt stanu potoku, etap potoku lub nawet pełną historię dowolny piksel w przechwyconej ramce. Za pomocą tych narzędzi z optymalizacją, problem z renderowaniem, można eksplorować tylko intuicyjnie, począwszy od sposobu jej wyświetlania w przechwyconej ramce i wyświetlających jego głównej przyczyny problemu w aplikacji źródła kodu, programów do cieniowania lub grafiki zasoby.  
 
  Aby zdiagnozować problemy z wydajnością, przechwyconej ramki mogą być analizowane za pomocą *analizy klatek* narzędzia. To narzędzie analizuje potencjalnych optymalizacji wydajności, automatycznie zmienia sposób aplikacja używa technologii Direct3D i testów porównawczych wszystkie odmiany dla Ciebie. W przeszłości, może zostały wprowadzone i ręcznie po prostu badany w tego rodzaju zmian można znaleźć poza te, które wprowadzone różnica. Za pomocą analizy ramek wystarczy wprowadzić zmiany, które już znasz, będzie spłacenie.  
 

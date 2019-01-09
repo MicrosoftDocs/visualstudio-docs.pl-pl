@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 208a127e3b4afb791e7a61becd6ed50bbc66bc23
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775111"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154281"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie Windows Store apps w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
 ## <a name="pinch-and-zoom"></a>Ściśnięcie i powiększenia  
  Ustawia tryb interakcji do ściśnięcie i powiększania gestów dwóch palców.  
   
--   ![Docelowy finger Siimulator dwóch](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Cel finger symulatora dwóch](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
      Ikonę docelową double wskazuje lokalizację, z dwoma palcami na ekranie urządzenia.  
   
@@ -117,7 +117,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
      ![Menu kontekstowe ustawienia zrzut ekranu](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego  
- Możesz pomóc użytkownikom aplikacji zarządzania kosztami mierzonych połączeń sieciowych, utrzymywanie rozpoznawanie sieci połączenia kosztów ani danych plan zmian stanu i włączając aplikację do używania tych informacji, aby uniknąć ponoszenia dodatkowych kosztów dla mobilnych lub przekroczenie limit transferu określone dane. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) interfejsów API pozwala reagować na [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) i [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) zdarzenia, które podpisują. Zobacz [Szybki Start: Zarządzanie sieci taryfowej koszt ograniczenia](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Możesz pomóc użytkownikom aplikacji zarządzania kosztami mierzonych połączeń sieciowych, utrzymywanie rozpoznawanie sieci połączenia kosztów ani danych plan zmian stanu i włączając aplikację do używania tych informacji, aby uniknąć ponoszenia dodatkowych kosztów dla mobilnych lub przekroczenie limit transferu określone dane. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) interfejsów API pozwala reagować na [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) i [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) zdarzenia, które podpisują. Zobacz [Szybki Start: Zarządzanie ograniczenia kosztów sieci taryfowej](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Debugowanie lub testowanie kodu uwzględnieniem kosztów sieci, symulator może naśladują właściwości sieci, które są udostępniane za pośrednictwem [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) obiektu zwróconego przez [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
   
@@ -141,7 +141,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
   
    **Więcej informacji na temat zarządzania połączeniami sieciowymi**  
   
-   [Szybki Start: Zarządzanie mierzone ograniczenia kosztów sieci](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Szybki start: Zarządzanie ograniczenia kosztów sieci taryfowej](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Przykładowe informacje o sieci](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   

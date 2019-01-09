@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953001"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154366"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Instrukcje: Zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 
@@ -61,7 +61,7 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
      Ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.
 
     > [!WARNING]
-    > Jeśli dla tożsamości wykorzystywanej w puli aplikacji na serwerze IIS (Internet Information Server) mającym służyć do zbierania danych z narzędzia IntelliTrace zostanie użyte niestandardowe konto, należy na komputerze z programem IIS utworzyć lokalny profil użytkownika dla takiego konta. W celu utworzenia profilu można się zalogować jeden raz lokalnie na komputerze z programem IIS albo wykonać następujące polecenie w wierszu polecenia, podając poświadczenia niestandardowego konta:
+    > Jeśli zdecydujesz się używać niestandardowego konta dla tożsamości, który jest używany dla puli aplikacji na Internet Information Server (IIS) mającym służyć do zbierania danych funkcji IntelliTrace, należy utworzyć lokalny profil użytkownika na komputerze z programem IIS dla konta niestandardowego jest on używany. W celu utworzenia profilu można się zalogować jeden raz lokalnie na komputerze z programem IIS albo wykonać następujące polecenie w wierszu polecenia, podając poświadczenia niestandardowego konta:
     >
     > **cmd.exe/profile /user:domain\name runas**
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA2235: Oznacz wszystkie pola nieprzeznaczone do'
+title: 'CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986573"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154153"
 ---
-# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Oznacz wszystkie pola nieprzeznaczone do
+# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji
 
 |||
 |-|-|
@@ -39,6 +39,8 @@ ms.locfileid: "53986573"
 
 ## <a name="rule-description"></a>Opis reguły
  Typ możliwy do serializacji to taki, który jest oznaczony przy użyciu <xref:System.SerializableAttribute?displayProperty=fullName> atrybutu. Gdy typ jest serializowana, <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> wyjątek jest generowany, jeśli typ zawiera pola wystąpienia typu, który nie jest możliwy do serializacji.
+ 
+ Wyjątkiem jest, gdy typ używa niestandardowej serializacji za pośrednictwem <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu. Typów implementujących ten interfejs zapewnia logikę serializacji, a więc CA2235 nie zostanie zastosowana do pola nieprzeznaczone do wystąpienia takich typów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zastosować <xref:System.NonSerializedAttribute?displayProperty=fullName> atrybutu do pola, które nie jest możliwy do serializacji.

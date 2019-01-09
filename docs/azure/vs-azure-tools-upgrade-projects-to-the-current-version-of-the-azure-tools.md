@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ddbc8a221cd883c3f30a583a1c1f03430c5f00ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3179dbff2e39865a706cb1e5a89c8a112de06d2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825508"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154074"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Jak uaktualniać projekty do bieżącej wersji narzędzi platformy Azure dla programu Visual Studio
 ## <a name="overview"></a>Omówienie
@@ -24,7 +24,7 @@ Po zainstalowaniu bieżąca wersja narzędzi platformy Azure (lub poprzedniej we
 ## <a name="how-your-project-changes-when-you-upgrade-it"></a>Jak projekt zmienia się po uaktualnieniu
 Jeśli projekt zostanie automatycznie uaktualniony lub określ, czy chcesz go uaktualnić, projekt zostanie zmodyfikowany na potrzeby pracy z bieżącymi wersjami określone zestawy, a niektóre właściwości również są zmieniane, zgodnie z opisem w tej sekcji. Jeśli Twój projekt wymaga innych zmian, aby był zgodny z nowszą wersją narzędzia, musisz wprowadzić te zmiany ręcznie.
 
-* Plik web.config dla ról sieć web i w pliku app.config dla ról procesów roboczych zostaną zaktualizowane do odniesienia nowszą wersję Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitoirTraceListener.dll.
+* Plik web.config dla ról sieć web i w pliku app.config dla ról procesów roboczych zostaną zaktualizowane do odniesienia nowszą wersję Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll.
 * Zestawy Microsoft.WindowsAzure.StorageClient.dll Microsoft.WindowsAzure.Diagnostics.dll i Microsoft.WindowsAzure.ServiceRuntime.dll są uaktualniane do nowych wersji.
 * Profile publikowania, które były przechowywane w pliku projektu platformy Azure (ccproj) są przenoszone do osobnego pliku przy użyciu .azurePubXml rozszerzenia, w **Publikuj** podkatalogu.
 * Niektóre właściwości w profilu publikowania są aktualizowane, aby obsługiwać nowe i zmienione funkcje. **AllowUpgrade** zastępuje **DeploymentReplacementMethod** ponieważ możesz zaktualizować wdrożonej usłudze w chmurze, jednocześnie lub przyrostowo.

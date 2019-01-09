@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60615d120935727ece2f9c291a3cf578de136daf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c93b35cb1bd6c4883934eedc5e0f79089d7c8c7b
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054847"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153985"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek WPF z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +60,8 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych z [!IN
 
 |Źródło danych|Generowanie pliku XAML, która wiąże formant ze źródłem danych|Generowanie kodu, który wypełnia źródło danych danymi|
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|
-|Zestaw danych|Tak|Tak|
-|[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]|Tak|Tak|
+|Zestaw danych|Tak|Yes|
+|[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]|Yes|Tak|
 |Usługa|Tak|Nie|
 |Obiekt|Tak|Nie|
 
@@ -102,7 +102,7 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych z [!IN
  Podczas przeciągania obiektu lub właściwości z **źródeł danych** okna Projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] tworzący formant powiązany z danymi (lub wiąże istniejący formant z obiektem lub właściwością). Jednak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje kodu, który wypełnia obiekt danych. Musisz napisać ten kod samodzielnie.
 
 > [!NOTE]
->  Klasy niestandardowe muszą być publiczne i domyślnie ma konstruktora bez parametrów. One klas zagnieżdżonych can'tbe, które mają "dot" w składni. Aby uzyskać więcej informacji, zobacz [XAML oraz klas niestandardowe dla WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+>  Klasy niestandardowe muszą być publiczne i domyślnie ma konstruktora bez parametrów. Nie mogą one być klasami zagnieżdżonymi, które mają "dot" w ich składnię. Aby uzyskać więcej informacji, zobacz [XAML oraz klas niestandardowe dla WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] wykonujący następujące czynności:
 

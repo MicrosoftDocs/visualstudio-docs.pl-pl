@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f90e6db9a86457d0a9a0c7c4f61edac5d997414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a75a425734670267db20bbaf0dc3f7aabb616585
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823924"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154195"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
 Funkcja punktu zaczepienia alokacji instalowana za pomocą funkcji [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) jest wywoływana za każdym razem, gdy pamięć jest przydzielana, ponownie przydzielana lub zwalniana. Ten typ punktu zaczepienia służy do wielu różnych celów. Używaj go do testowania, jak aplikacja obsługuje sytuacje braku pamięci, a także do badania wzorców przydziału lub rejestrowania informacji o przydziale do późniejszej analizy.  

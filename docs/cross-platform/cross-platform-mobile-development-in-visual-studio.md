@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802803"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154053"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych dla wielu platform w programie Visual Studio
 
@@ -123,7 +123,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 
  Gdy wszystko będzie gotowe uruchomić aplikację i zobacz, jak wygląda na to, należy użyć emulatora systemu Android. Jest to szybkie, niezawodne i łatwe do zainstalowania i skonfigurowania.
 
- Można również utworzyć aplikację, która jest przeznaczony dla rozmaitych urządzeniach z systemem Windows 10 przy użyciu języków C++ i szablon projektu aplikacji Uiversal platformy Windows (UWP). Dowiedz się więcej w [urządzenia docelowego systemu Windows 10](#WindowsHTML) sekcji, która występuje wcześniej w tym temacie.
+ Można również utworzyć aplikację, która jest przeznaczony dla rozmaitych urządzeniach z systemem Windows 10 przy użyciu języków C++ i szablon projektu aplikacji uniwersalnej platformy Windows (UWP). Dowiedz się więcej w [urządzenia docelowego systemu Windows 10](#WindowsHTML) sekcji, która występuje wcześniej w tym temacie.
 
  Możesz udostępniać kodu między systemami Android i Windows w języku C++, tworząc statycznej lub dynamicznej biblioteki udostępnionej.
 

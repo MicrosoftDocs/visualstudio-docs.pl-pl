@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a171c0973bdcb71ff05cff38713081acd5ffd68
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886478"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153957"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy UWP w symulatorze
 Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows to aplikacja komputerowa, która symuluje aplikacji platformy uniwersalnej systemu Windows. Zazwyczaj chcesz debugować na komputerze lokalnym, podłączonym urządzeniu lub maszynie zdalnej. Jednak w niektórych przypadkach warto symulatorze programu Visual Studio umożliwia emulowanie różnych fizycznych rozmiaru i rozdzielczości. Można także symulacji typowe touch i obrót zdarzeń i symulowanie właściwości połączenia sieciowego.
@@ -49,7 +49,7 @@ Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu 
 ## <a name="pinch-and-zoom"></a>Ściśnięcie i powiększenia
  Ustawia tryb interakcji do ściśnięcie i powiększania gestów dwóch palców.
 
--   ![Docelowy finger Siimulator dwóch](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
+-   ![Cel finger symulatora dwóch](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
 
      Ikonę docelową double wskazuje lokalizację, z dwoma palcami na ekranie urządzenia.
 
@@ -131,7 +131,7 @@ Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu 
 
    **Więcej informacji na temat zarządzania połączeniami sieciowymi**
 
-   [Szybki Start: Zarządzanie ograniczenia kosztów sieci taryfowej](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+   [Szybki start: Zarządzanie ograniczenia kosztów sieci taryfowej](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
    [Przykładowe informacje o sieci](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

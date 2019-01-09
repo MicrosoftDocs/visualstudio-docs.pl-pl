@@ -19,12 +19,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a1300d023ac7fbcf3007400c6c7dcb1caa8a750
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 93bc571344ca17494aecc201e3d08ba49850b96d
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764306"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153891"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>Przykładowy kod nawigacji (JavaScript) debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,9 +113,9 @@ Kod w tym temacie jest przykładowy plik dla [kontrolować wykonywanie w trakcie
         var b = 4;  
         var a = example4_a(2);  
         callTrack += "->example4";  
-        var multilpyByA = multiClosure(a);  
+        var multiplyByA = multiClosure(a);  
         a = 20;  
-        var x = multilpyByA(b);  
+        var x = multiplyByA(b);  
         return x;  
     }  
   
@@ -126,11 +126,11 @@ Kod w tym temacie jest przykładowy plik dla [kontrolować wykonywanie w trakcie
   
     function multiClosure(num) {  
         var a = num;  
-        function mulitplyXby(b) {  
-            callTrack += "->mulitplyXby";  
+        function multiplyXby(b) {  
+            callTrack += "->multiplyXby";  
             return a * b;  
         }  
-        return mulitplyXby;  
+        return multiplyXby;  
     }  
   
     function example5() {  

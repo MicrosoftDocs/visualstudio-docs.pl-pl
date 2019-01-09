@@ -16,18 +16,18 @@ helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
 - Data Sources window
-- dislaying data
+- displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74eff26f424eb82b4a10377e97879e243e685fe3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cc158eefd23cc06b36749676188201d988099a6e
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062116"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154071"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych kontro
 
 |Źródło danych|Obsługa przeciągania i upuszczania w **Windows Forms Designer**|Obsługa przeciągania i upuszczania w **projektanta WPF**|Obsługa przeciągania i upuszczania w **projektanta Silverlight**|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Zestaw danych|Tak|Tak|Nie|
+|Zestaw danych|Tak|Yes|Nie|
 |Entity Data Model|Tak<sup>1</sup>|Tak|Tak|
 |Klasy LINQ do SQL|Nie<sup>2</sup>|Nie<sup>2</sup>|Nie<sup>2</sup>|
-|Usługi (łącznie z [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], WCF services oraz usług sieci web)|Tak|Tak|Tak|
-|Obiekt|Tak|Tak|Tak|
-|Program SharePoint|Tak|Tak|Tak|
+|Usługi (łącznie z [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], WCF services oraz usług sieci web)|Tak|Yes|Tak|
+|Obiekt|Tak|Yes|Tak|
+|Program SharePoint|Tak|Yes|Tak|
 
  1. Generowanie modelu przy użyciu **modelu Entity Data Model** kreatora, a następnie przeciągnij te obiekty do projektanta.
 
- 2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie klasy programu LINQ to SQL (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Data Sources — Okno
  Źródła danych są dostępne dla projektu jako elementy **źródeł danych** okna. To okno jest widoczne, lub jest dostępny z **widoku** menu, gdy powierzchnię projektową formularza jest aktywnym oknem w projekcie. Można przeciągnąć elementy z tego okna, aby utworzyć formanty powiązane z danymi źródłowymi, a źródłami danych można również skonfigurować, klikając prawym przyciskiem myszy.

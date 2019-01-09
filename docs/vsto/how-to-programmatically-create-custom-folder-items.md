@@ -8,17 +8,16 @@ dev_langs:
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], creating
 - Outlook folders [Office development in Visual Studio], custom
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: 2e02ad5e021323b2c673263dfbb35173d2372bdf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4500a8888f33440834584ceba1345e0ca78a998
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968287"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153886"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>Instrukcje: Programowe tworzenie niestandardowych elementów folderu
   Ten przykład tworzy nowy folder w usłudze Microsoft Office Outlook. Nazwa użytkownika, który jest zalogowany na jest używany dla nazwy folderu.  

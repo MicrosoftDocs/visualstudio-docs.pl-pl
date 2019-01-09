@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartyc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739987"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154437"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
@@ -41,20 +41,18 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
    - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z programu Microsoft Visual Studio marketplace. Jeśli nie masz uprawnienia do instalowania rozszerzeń, zobacz [instalowanie bezpłatnych rozszerzeń dla usługi Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
 
-~~~
-Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+Kliknij zielony **zainstalować** przycisk, jeśli używasz usługi DevOps platformy Azure, lub **Pobierz** przycisk programu Team Foundation Server.  W tym przykładzie używamy usługom DevOps platformy Azure.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+> ![WhiteSource korzyści instalowanie rozszerzeń](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
+- Następnie wybierz organizację DevOps platformy Azure, które chcesz użyć, a następnie kliknij przycisk **Potwierdź**.  (Jeśli usługom DevOps platformy Azure nie mają jeszcze skonfigurowany, odwiedź stronę [korzyści](https://my.visualstudio.com/benefits) strony i aktywować swoje korzyści usługom DevOps platformy Azure.)
 
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> ![WhiteSource korzyści Potwierdź konto](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+- Otrzymasz potwierdzenie, że rozszerzenie jest zainstalowane i gotowe do użycia.  Kliknij przycisk **wprowadzenie** wróć do strony WhiteSource Bolt i kontynuować.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
-~~~
+> ![Ukończono instalację WhiteSource korzyści](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
 5. Otwórz pulpit nawigacyjny projektu DevOps platformy Azure, kliknij pozycję **potoki Azure** menu i wybierz polecenie **WhiteSource Bolt**.
    > [!div class="mx-imgBorder"]
@@ -86,7 +84,7 @@ Click the green **Install** button if you are using Azure DevOps Services, or th
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>*obejmuje:    Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje: Inne Not for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Microsoft Partner Network (Professional ).*
+<sup>1</sup>*obejmuje:  Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje: Inne Not for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Microsoft Partner Network (Professional ).*
 
 
 > [!NOTE]

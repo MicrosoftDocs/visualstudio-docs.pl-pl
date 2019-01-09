@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875644"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154379"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
 Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.  
@@ -91,7 +91,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 #### <a name="statistical-significance"></a>Obserwowane  
  Aby zwrócić uwagę na renderowanie zmian, które mają największą zgodność, analiza klatek określa statystyczne znaczenie każdego wariantu renderowania i wyświetla te znaczące jak pogrubienie. Wyświetla te, które zwiększają wydajność co w kolorze zielonym i te, które obniżenie wydajności w kolorze czerwonym. Wyświetla wyniki, które nie są statystycznie istotne jako normalnych typów.  
   
- ![Statystyczne relevence Variant wywołanie rysowania](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![Statystyczne przydatność wariant wywołanie rysowania](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  Aby ustalić istotność statystycznych, analiza klatek używa [t Studenta](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   

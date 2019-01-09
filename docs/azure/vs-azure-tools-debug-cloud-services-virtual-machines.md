@@ -9,14 +9,14 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.prod: visual-studo-dev15
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 78be27daf7dfe77d88508dec929e896e884f81b2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0a7a76b888c4f8fb038f20776962e44da7096341
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063790"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154284"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze platformy Azure lub maszynie wirtualnej w programie Visual Studio
 
@@ -40,7 +40,7 @@ Emulator usługi Azure Compute symuluje i jest uruchamiana w środowisku lokalny
 
 3. Krok za pośrednictwem aplikacji, wybierając polecenia na **debugowania** menu i ustawiania punktów przerwania w kodzie. Podczas wykonywania kroków za pomocą aplikacji w debugerze okienka zostaną zaktualizowane o bieżący stan aplikacji. Gdy zatrzymasz debugowanie, wdrażanie aplikacji zostaną usunięte. Jeśli aplikacja zawiera rolę sieci web i ustawiono właściwość akcji uruchamiania do uruchomienia przeglądarki sieci web, programu Visual Studio uruchamia aplikację sieci web w przeglądarce. Jeśli zmienisz liczbę wystąpień roli w konfiguracji usługi, należy zatrzymać usługi w chmurze i ponownie uruchom debugowanie tak, aby można było debugować te nowe wystąpienia roli.
 
-    **Uwaga:** po zatrzymaniu działania lub debugowania usługi emulatora obliczeń lokalnych i emulatora magazynu nie są zablokowane. Należy zatrzymać je jawnie przy użyciu obszaru powiadomień.
+    **Uwaga:** Po zatrzymaniu działania lub debugowania usługi emulatora obliczeń lokalnych i emulatora magazynu nie są zatrzymane. Należy zatrzymać je jawnie przy użyciu obszaru powiadomień.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Debugowanie usługi w chmurze na platformie Azure
 
@@ -146,7 +146,7 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
 
     ![Utwórz okno dialogowe projektu sieci web platformy ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Uwaga:** zostanie wyświetlony monit do logowania się do konta platformy Azure, jeśli jeszcze nie zostało to zrobione.
+    **Uwaga:** Zostanie wyświetlony monit do logowania się do konta platformy Azure, jeśli jeszcze nie zostało to zrobione.
 
 3. Wybierz różne ustawienia dla maszyny wirtualnej, a następnie wybierz pozycję **OK**. Zobacz [maszyn wirtualnych](http://go.microsoft.com/fwlink/?LinkId=623033) Aby uzyskać więcej informacji.
 
@@ -166,7 +166,7 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
 
     ![Dziennik aktywności platformy Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publikowanie projektu, co zostało opisane w [jak: wdrożyć publikowania projektu sieci Web za pomocą jednego kliknięcia w programie Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Aby można było debugować na maszynie wirtualnej na **ustawienia** strony **publikowanie w sieci Web** kreatora wybierz pozycję **debugowania** jako konfiguracji. Dzięki temu kod symbole są dostępne podczas debugowania.
+6. Publikowanie projektu, co zostało opisane w [jak: Wdrażanie sieci Web projektu za pomocą jednego kliknięcia publikowania w programie Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Aby można było debugować na maszynie wirtualnej na **ustawienia** strony **publikowanie w sieci Web** kreatora wybierz pozycję **debugowania** jako konfiguracji. Dzięki temu kod symbole są dostępne podczas debugowania.
 
     ![Ustawienia publikowania](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -186,6 +186,6 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Użyj **Intellitrace** zebrać dziennik wywołania i zdarzenia z wersji serwera. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=623016).
+* Użyj **IntelliTrace** zebrać dziennik wywołania i zdarzenia z wersji serwera. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=623016).
 
 * Użyj **diagnostyki Azure** się szczegółowe informacje na uruchamianie kodu w ramach ról, czy role są uruchomione w środowisku deweloperskim lub na platformie Azure. Zobacz [zbieranie danych rejestrowania przy użyciu usługi Azure Diagnostics](http://go.microsoft.com/fwlink/p/?LinkId=400450).

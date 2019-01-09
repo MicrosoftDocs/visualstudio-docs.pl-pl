@@ -1,5 +1,5 @@
 ---
-title: 'Porady: debugowanie zoptymalizowanego kodu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Debugowanie zoptymalizowanego kodu | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -28,14 +28,14 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3d0e6c86c800e2ba35fdac78d6659fa2ecd7e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: ae18cda3d3cbba28c53402e7989c83c60007b2fc
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734051"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154303"
 ---
-# <a name="how-to-debug-optimized-code"></a>Porady: debugowanie zoptymalizowanego kodu
+# <a name="how-to-debug-optimized-code"></a>Instrukcje: Debugowanie zoptymalizowanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]

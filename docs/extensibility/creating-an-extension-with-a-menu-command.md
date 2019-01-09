@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847827"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154424"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polecenia menu, który uruchamia program Notatnik.  
@@ -121,6 +121,6 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
   
 4. Dodaj funkcję IntelliSense, sugestie dotyczące kodu i inne funkcje do istniejących edytory kodu: [Rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Dodaj strony Opcje i właściwości i ustawienia użytkownika do rozszerzenia: [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzenie ustawienia użytkownika i Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. Dodaj strony Opcje i właściwości i ustawienia użytkownika do rozszerzenia: [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzyć opcje i ustawienia użytkownika](../extensibility/extending-user-settings-and-options.md)  
   
    Innych rodzajów rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub implementacji usługi rozszerzenie w izolowanej powłoki: [Programu Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

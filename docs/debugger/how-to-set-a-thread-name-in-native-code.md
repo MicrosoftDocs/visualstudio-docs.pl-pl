@@ -16,19 +16,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acddd39df0c91aeef5c425ffa67cb234d76d0473
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecc9eb2dc437847786022526265bfcc2942ace88
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961354"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153657"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie natywnym
-Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątku jest przydatne do śledzenia wątków w **wątków** okna.
+Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Wątek nazewnictwa jest przydatny do identyfikowania wątków zainteresowanie **wątków** okna podczas debugowania uruchomionego procesu. Posiadanie uznane o silnych nazwach wątków przydatne może być również podczas wykonywania po zakończeniu działania debugowania za pomocą inspekcji zrzutu awaryjnego i analizowania wydajności przechwytuje przy użyciu różnych narzędzi.
 
-## <a name="set-a-thread-name"></a>Ustawianie nazw wątków
+## <a name="ways-to-set-a-thread-name"></a>Sposoby Ustawianie nazw wątków
 
-`SetThreadName` Funkcja jest przydatna do ustawiania i wyświetlania wątków, jeśli debuger jest dołączony do uruchomionej kodu. Począwszy od programu Visual Studio 2017 w wersji 15.6, możesz użyć [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) funkcję, aby ustawić i wyświetlić nazwy wątków.
+Istnieją dwa sposoby Ustawianie nazw wątków. Pierwsza to za pośrednictwem [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) funkcji. Druga polega na określony wyjątek zostanie zgłoszony, gdy debuger programu Visual Studio jest dołączony do procesu. Każde podejście ma zalety i ostrzeżenia.
+
+Warto zauważyć, że _zarówno_ podejścia można ze sobą, jeśli to konieczne, ponieważ mechanizmy, według których pracują są niezależne od siebie nawzajem.
+
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Ustawianie nazw wątków przy użyciu `SetThreadDescription`
+
+Korzyści:
+ * Nazwy wątków są widoczne podczas debugowania w programie Visual Studio, niezależnie od tego, czy debuger został dołączony do procesu w czasie, które jest wywoływane SetThreadDescription.
+ * Nazwy wątków są widoczne podczas przeprowadzania późniejszej debugowania, ładując zrzut awaryjny w programie Visual Studio.
+ * Nazwy wątków również są widoczne, gdy przy użyciu innych narzędzi, takich jak [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) debugera i [Analizator wydajności Windows](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analizator wydajności.
+
+Ostrzeżenia:
+ * Nazwy wątków są tylko widoczne w programie Visual Studio 2017 w wersji 15.6 i nowsze.
+ * Gdy plik zrzutu po zakończeniu działania debugowania awarii, nazwy wątku są widoczne tylko w przypadku awarii został utworzony w systemie Windows 10 w wersji 1607, Windows Server 2016 lub nowszych wersjach systemu Windows.
+ 
+*Przykład:*
 
 ```C++
 #include <windows.h>
@@ -46,11 +61,20 @@ int main()
 }
 ```
 
-## <a name="set-a-thread-name-using-setthreadname"></a>Ustawianie nazw wątków przy użyciu setthreadname —
+### <a name="set-a-thread-name-by-throwing-an-exception"></a>Ustawianie nazw wątków, zostanie zgłoszony wyjątek
 
-Aby Ustawianie nazw wątków w swoim programie, można także użyć `SetThreadName` funkcji, jak pokazano w poniższym przykładzie kodu. Należy pamiętać, że nazwa wątku jest kopiowany do wątku, aby pamięć `threadName` parametru może być zwolnione.  Ta metoda używa podejście oparte na wyjątek tylko wtedy, gdy debuger jest dołączony w czasie, stosuje się metodę opartą na wyjątkach. Nazwa wątku, który został ustawiony, za pomocą tej metody nie będą dostępne w zrzuty lub narzędzi do analizy wydajności.
+Innym sposobem na Ustawianie nazw wątków w programie służy do przekazywania nazwa żądanego wątku do debugera programu Visual Studio, zgłaszając wyjątek specjalnie skonfigurować. 
 
-Poniższy przykład kodu pokazuje sposób użycia `SetThreadName`:
+Korzyści:
+ * Działa we wszystkich wersjach programu Visual Studio.
+
+Ostrzeżenia:
+ * Tylko wtedy, gdy debuger jest dołączony w czasie, stosuje się metodę opartą na wyjątkach. 
+ * Nazwy wątków ustawiane przez przy użyciu tej metody nie będą dostępne w zrzuty lub narzędzi do analizy wydajności.
+ 
+*Przykład:*
+
+`SetThreadName` Funkcja poniżej przedstawiono to podejście oparte na wyjątek. Należy pamiętać, że nazwa wątku będą automatycznie skopiowane do wątku, tak aby pamięci dla `threadName` parametru może być zwolnione po `SetThreadName` ukończenie wywołania. 
 
 ```C++
 //  
@@ -87,4 +111,4 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Instrukcje: Ustawianie nazwy wątku w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)

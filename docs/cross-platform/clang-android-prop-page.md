@@ -43,12 +43,12 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232120"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154314"
 ---
 # <a name="clang-project-properties-android-c"></a>Właściwości projektu clang (Android C++)
 
@@ -67,7 +67,7 @@ Włącz wyjątki języka C++ | Określa model obsługi wyjątków, aby używane 
 Włącz łączenie na poziomie funkcji | Umożliwia kompilatorowi pakowanie indywidualnych funkcji w formę spakowanych funkcji (Comdat). Wymagane do edycji i kontynuować pracę.     (ffunction Section).
 Włącz łączenie na poziomie danych | Umożliwia optymalizacjom konsolidatora usuwanie nieużywanych danych przez emitowanie każdego elementu danych w osobnej sekcji.
 Włącz zaawansowane instrukcje SIMD(Neon) | Umożliwia generowanie kodu dla sprzętu zmiennoprzecinkowego NEON. Dotyczy tylko architektury arm.
-Zmiennoprzecinkowy interfejs ABI | Opcja umożliwiająca wybranie zmiennoprzecinkowego interfejsu ABI. | **Elastyczne** — "soft" umożliwia kompilatorowi Generowanie danych wyjściowych zawierających wywołania bibliotek dotyczące operacji zmiennoprzecinkowych.<br>**SoftFP** — "SoftFP" umożliwia generowanie kodu przy użyciu instrukcji zmiennoprzecinkowych sprzętu, ale nadal używa konwencji wywoływania zmiennoprzecinkowych.<br>**Twarde** — Generowanie alows "Twardym" zmiennoprzecinkowych instrukcje i używa specyficznych dla operacji FPU konwencji wywoływania.<br>
+Zmiennoprzecinkowy interfejs ABI | Opcja umożliwiająca wybranie zmiennoprzecinkowego interfejsu ABI. | **Elastyczne** — "soft" umożliwia kompilatorowi Generowanie danych wyjściowych zawierających wywołania bibliotek dotyczące operacji zmiennoprzecinkowych.<br>**SoftFP** — "SoftFP" umożliwia generowanie kodu przy użyciu instrukcji zmiennoprzecinkowych sprzętu, ale nadal używa konwencji wywoływania zmiennoprzecinkowych.<br>**Twarde** — "Silne" umożliwia generowanie instrukcji zmiennoprzecinkowych i używa konwencji wywoływania specyficznych dla operacji FPU.<br>
 Sprawdzanie zabezpieczeń | Kontrola zabezpieczeń pomaga wykryć stosu przepełnień buforu, typowy atak na zabezpieczenia programu. (fstack-protector). | **Wyłącz sprawdzanie zabezpieczeń** -Wyłącz sprawdzanie zabezpieczeń.<br>**Włącz sprawdzanie zabezpieczeń** -Włącz sprawdzanie zabezpieczeń. (fstack-protector)<br>
 Kod niezależny od położenia | Generowanie niezależnie od kodu położenia (PIC) do użycia w bibliotece udostępnionej.
 Użyj krótkich wyliczeń | Typ wyliczenia używa tylko liczby bajtów wymaganej przez wejściowy zestaw możliwych wartości.

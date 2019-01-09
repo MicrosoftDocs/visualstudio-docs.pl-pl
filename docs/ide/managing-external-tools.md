@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904185"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154066"
 ---
 # <a name="manage-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 
@@ -65,8 +65,8 @@ Oto Pełna lista argumentów, które mogą być używane podczas definiowania na
 |Nazwa obiektu docelowego|$(TargetName)|Nazwa pliku elementu, który ma zostać utworzony.|
 |Rozszerzenie docelowe|$(TargetExt)|Rozszerzenie nazwy pliku elementu, który ma zostać utworzony.|
 |Katalog danych binarnych|$(BinDir)|Lokalizacji końcowej plik binarny, który jest konstruowany (zdefiniowany jako dysku i ścieżki).|
-|Katalog projektu|$(ProjDir)|Katalog bieżący projekt (dysku i ścieżki).|
-|Nazwa pliku projektu|$(ProjFileName)|Nazwa pliku bieżącego projektu (dysk i ścieżkę pliku nazwa).|
+|Katalog projektu|$(ProjectDir)|Katalog bieżący projekt (dysku i ścieżki).|
+|Nazwa pliku projektu|$(ProjectFileName)|Nazwa pliku bieżącego projektu (dysk i ścieżkę pliku nazwa).|
 |Katalog rozwiązania|$ (Solutiondir)|Katalog bieżącego rozwiązania (dysku i ścieżki).|
 |Nazwa pliku rozwiązania|$(SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk i ścieżkę pliku nazwa).|
 

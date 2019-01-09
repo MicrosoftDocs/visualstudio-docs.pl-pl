@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, deleting worksheets
 - worksheets, deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7254ba703c0e25d37dd3582d4443a6bdf1653a96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b857a84560fe5f8745458154c85494791b579db
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843388"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154247"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Instrukcje: Programowe usuwanie arkuszy ze skoroszytu
   Możesz usunąć dowolnego arkusza w skoroszycie. Aby usunąć arkusza, użyj element hosta arkusza lub dostęp do arkusza za pomocą kolekcji arkuszy skoroszytu.  

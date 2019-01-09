@@ -10,18 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
-- coyright, Spy++
+- copyright, Spy++
 ms.assetid: 84efcb95-5e57-4e1b-9670-13c9163f6fc6
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4ea801acf4c0156d928d89fd0fca0b1c8e4b2a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 32fa026c1af05a7d3ba48aaec95719275f645779
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772095"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153981"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Prawa autorskie dla Spy++ — Pomoc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

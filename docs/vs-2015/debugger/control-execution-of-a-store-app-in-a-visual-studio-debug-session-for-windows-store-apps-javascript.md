@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d35a33fcacf57c0d88e7bd7db1112f4ec3db4204
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e2541fe5a4faafbd1ab9c165fc38a960406bd0a
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968318"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154500"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Kontrolowanie wykonywania aplikacji Store w trakcie sesji debugowania programu Visual Studio dla aplikacji Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -266,15 +266,13 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
 6.  **Wejdź do example4_a i sprawdź jego lokalnego i zakres zmiennych** Wkrocz w dalszym ciągu `example4` do wywołania `example4_a`. Należy zauważyć, że zmienne lokalne są teraz z `example4_a`oraz że **[zakresu]** węzła w dalszym ciągu przechowywania zmiennych z `module` funkcji. Mimo że zmienne `example4` są aktywne, nie można osiągnąć przez `example4_a` i nie są już częścią łańcucha zakresu.
 
-7.  **Wejdź do multipyByA i sprawdź jego lokalnego i zakres zmiennych** kroku przez pozostałą część `example4_a` i w wierszu `var x = multilpyByA(b);`.
+7.  **Wejdź do multiplyByA i sprawdź jego lokalnego i zakres zmiennych** kroku przez pozostałą część `example4_a` i w wierszu `var x = multiplyByA(b);`.
 
-     Zmienna funkcja `multipyByA` został ustawiony na `multiplyClosure` funkcja, która jest *zamknięcia*. `multipyClosure` definiuje i zwraca funkcję wewnętrzny `mulitplyXby`i przechwytuje (zamyka za pośrednictwem) jego parametrów i zmiennych. W przypadku zamknięcia zwracanej funkcji wewnętrznego ma dostęp do danych funkcji zewnętrznej i tak więc tworzy poziomu zakresu.
+     Zmienna funkcja `multiplyByA` został ustawiony na `multiplyClosure` funkcja, która jest *zamknięcia*. `multiplyClosure` definiuje i zwraca funkcję wewnętrzny `multiplyXby`i przechwytuje (zamyka za pośrednictwem) jego parametrów i zmiennych. W przypadku zamknięcia zwracanej funkcji wewnętrznego ma dostęp do danych funkcji zewnętrznej i tak więc tworzy poziomu zakresu.
 
-     Gdy wkroczyć do `var x = multilpyByA(b);`, Przenieś do `return a * b;` linię `mulitplyXby` wewnętrznej funkcji.
+     Gdy wkroczyć do `var x = multiplyByA(b);`, Przenieś do `return a * b;` linię `multiplyXby` wewnętrznej funkcji.
 
 8.  W oknie zmienne lokalne tylko parametr `b` znajduje się w zmiennej lokalnej w `multiplyXby`, ale jest to nowy **[zakresu]** poziomie został dodany. Rozwinięcie tego węzła, zobaczysz, że zawiera parametry, funkcje i zmienne `multiplyClosure`, w tym `a` zmiennej o nazwie w pierwszym wierszu metody `multiplyXby`. Szybkie sprawdzenie drugiej **[zakresu]** węzeł, co spowoduje wyświetlenie zmiennych funkcji modułu, który `multiplyXby` uzyskuje dostęp do jego następnego wiersza.
-
-     ![Zakresy zamknięcia w oknie zmienne lokalne](../debugger/media/dbg-jsnav-scope-mulitplyxby.png "DBG_JSNAV_scope_mulitplyXby")
 
 9. **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **SHIFT + F5**). Kończy sesję debugowania.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 841812ac5961f30424cdb8ee95cc94fb6b5ce8ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939982"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154474"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Sprawdź poprzednie Stany aplikacji przy użyciu funkcji IntelliTrace krok do tyłu w programie Visual Studio
 
@@ -26,7 +26,7 @@ Krok do tyłu IntelliTrace jest dostępna, począwszy od programu Visual Studio 
 W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
-> * Włącz migawki i zdarzenia funkcji Intellitrace
+> * Włącz migawki i zdarzenia funkcji IntelliTrace
 > * Przejdź do zdarzenia przy użyciu poleceń krok do tyłu i do przodu kroku
 > * Wyświetl zdarzenia migawki
   

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923117"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154353"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wdrażania i zabezpieczeń ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest to technologia wdrażania umożliwiająca tworzenie automatycznie aktualizowane aplikacje z systemem Windows, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia pełną obsługę publikowanie i aktualizowanie aplikacji wdrożonych przy użyciu technologii ClickOnce, jeśli opracowano Twoich projektów w języku Visual Basic i Visual C#. Aby dowiedzieć się, jak wdrażanie aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -51,7 +51,7 @@ ms.locfileid: "53923117"
  Authenticode certyfikaty są używane do weryfikacji autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji, ClickOnce zapobiega szkodliwych program instytucja sama jako program wiarygodnego źródła ustanowione, godne zaufania. Opcjonalnie certyfikaty może również służyć do podpisania aplikacji i manifestów wdrożenia, ponieważ udowodnić, że pliki nie zostały naruszone. Aby uzyskać więcej informacji, zobacz [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md). Certyfikaty można również skonfigurować komputery klienckie, aby wyświetlić listę zaufanych wydawców. Jeśli aplikacja pochodzi z zaufanego wydawcę, może zostać zainstalowane bez interakcji z użytkownikiem. Aby uzyskać więcej informacji, zobacz [Przegląd wdrażania aplikacji zaufanego](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="code-access-security"></a>Zabezpieczenia dostępu kodu  
- Kod dostępu secrity pomaga ograniczać dostęp do tego kodu do chronionych zasobów. W większości przypadków można wybrać strefy Internet lub lokalny Intranet, aby ograniczyć uprawnienia. Użyj **zabezpieczeń** strony w **ProjectDesigner** żądania strefy, które są odpowiednie dla aplikacji. Można również debugować aplikacje przy użyciu ograniczonych uprawnień do emulowania środowisko użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
+ Zabezpieczenia dostępu kodu pomaga ograniczać dostęp do tego kodu do chronionych zasobów. W większości przypadków można wybrać strefy Internet lub lokalny Intranet, aby ograniczyć uprawnienia. Użyj **zabezpieczeń** strony w **ProjectDesigner** żądania strefy, które są odpowiednie dla aplikacji. Można również debugować aplikacje przy użyciu ograniczonych uprawnień do emulowania środowisko użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>Monit o udzielenie zaufania ClickOnce  
  Jeśli aplikacja żąda więcej uprawnień niż zezwala na strefy, użytkownik końcowy może monit podjęcia decyzji o zaufaniu. Użytkownik końcowy można zdecydować, czy zaufane do uruchamiania aplikacji ClickOnce, takich jak aplikacje Windows Forms, aplikacji Windows Presentation Foundation, aplikacji konsoli, aplikacji przeglądarki XAML i rozwiązań dla pakietu Office. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie funkcji ClickOnce zaufania monitowania](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  

@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8be3b85f77c5395a038e15925ca8654ea12ef60f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 6c1ca8280102c0e827497e4240eea600072a8f25
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817838"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154265"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ HRESULT loadDataFromIStream ( 
 |Wartość|Opis|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|Podjęto próbę uzyskania dostępu do pliku w formacie przestarzały.|  
-|E_INVALIDARG|Invalidparameter.|  
+|E_INVALIDARG|Nieprawidłowy parametr.|  
 |WARTOŚĆ E_UNEXPECTED|Źródło danych zostało już przygotowane.|  
   
 ## <a name="remarks"></a>Uwagi  

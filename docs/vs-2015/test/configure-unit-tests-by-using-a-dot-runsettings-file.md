@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d9b03c3b3e418a59c5cea40d61c1ad4c5024d1d
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817980"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154492"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu p
 > [!NOTE]
 >  **pliki .runsettings i .testsettings**  
 >   
->  Istnieją dwa typy plików do konfigurowania testów. *.runsettings są używane w przypadku testów jednostkowych. I \*.testsettings dla [testów środowisku laboratoryjnym](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)wydajności sieci web i testach, obciążenia i dostosowanie niektórych rodzajów adapterów danych diagnostycznych, takich jak karty Intellitrace i dziennika zdarzeń.  
+>  Istnieją dwa typy plików do konfigurowania testów. *.runsettings są używane w przypadku testów jednostkowych. I \*.testsettings dla [testów środowisku laboratoryjnym](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)wydajności sieci web i testach, obciążenia i dostosowanie niektórych rodzajów adapterów danych diagnostycznych, takich jak karty IntelliTrace i dziennika zdarzeń.  
 >   
 >  W poprzednich wersjach programu Visual Studio do 2010 r., jednostki, które testy również zostały dostosowane przy użyciu plików *.testsettings. Możesz nadal to zrobić, ale testy zostaną uruchomione wolniej niż w przypadku użycia równoważnymi konfiguracjami w \*pliku .runsettings.  
   
@@ -157,7 +157,7 @@ Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu p
 |Konfiguracja|Domyślny|Wartości|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|W programie Visual Studio 2012 adapter karty MSTest został zoptymalizowany, aby był bardziej skalowalny i działał szybciej. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość `true` Aby użyć starszego adaptera testowego.<br /><br /> Można jej użyć na przykład wtedy, gdy dysponujesz plikiem app.config określonym dla testu jednostkowego.<br /><br /> Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|  
-|IgnoreTestImpact|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [porady: zbieranie danych, sprawdź, które testy należy można uruchomić po zmianach w kodzie](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [jak: Zbieranie danych niezbędnych do Sprawdź, które testy powinny być uruchamiania po zmianach w kodzie](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Można tu określić plik ustawień testowych do użycia z adapterem MS Test. Można również określić plik ustawień testu za pomocą menu **Test**, **ustawienia testu**, **wybierz plik ustawień testu**.<br /><br /> Jeśli ta wartość jest podana, należy także ustawić **ForcedlegacyMode** do **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również będzie w tej chwili zatrzymywany. Jeśli program wykonujący test ma być nadal aktywny, ustaw dla tej konfiguracji wartość true.<br /><br /> Można na przykład wykorzystać ją do zachowania działania przeglądarki między kodowanymi testami interfejsu użytkownika.|  
 |DeploymentEnabled|true|Jeśli zostanie ustawiona wartość false, elementy wdrożenia, które określono w metodzie testowej, nie zostaną skopiowane do katalogu wdrożenia.|  
