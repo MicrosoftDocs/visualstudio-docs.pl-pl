@@ -110,7 +110,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edyt
 
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
-| **Zatwierdzone, wpisując następujące znaki** | **{}\[\]().,:; +-* / % &&#124;^ ~ = <> #@\\** | Te znaki wykonaj zazwyczaj identyfikator, który może wybrać z listy uzupełniania, dzięki czemu jest to wygodne potwierdzić zakończenie po prostu wpisując znak. Możesz usunąć lub dodać określonych znaków do listy zgodnie z potrzebami.  |
+| **Zatwierdzone, wpisując następujące znaki** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Te znaki wykonaj zazwyczaj identyfikator, który może wybrać z listy uzupełniania, dzięki czemu jest to wygodne potwierdzić zakończenie po prostu wpisując znak. Możesz usunąć lub dodać określonych znaków do listy zgodnie z potrzebami.  |
 | **Wprowadź bieżące ukończenia zatwierdzenia** | On | Po ustawieniu **Enter** klucz wybiera i stosuje ukończenie aktualnie wybranego podobnie jak w powyższym znaków (ale oczywiście nie ma znak dla **Enter** więc nie można go bezpośrednio przejść do tej listy!). |
 | **Dodaj nowy wiersz po naciśnięciu klawisza enter na końcu pełnego wpisanego wyrazu** | Off | Domyślnie, jeśli wpiszesz cały wyraz, który pojawia się w menu podręczne ukończenia, a następnie naciśnij klawisz **Enter**, zatwierdzenia tej ukończenia. Przez ustawienie tej opcji, efektywnie zatwierdzić uzupełnienia po zakończeniu wpisywania identyfikatora, tak, aby **Enter** powoduje wstawienie nowego wiersza. |
 
