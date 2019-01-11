@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4afd2f742918ebe1badd86be0ebf4181fb2ba06
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154276"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227996"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Wyświetlanie zdarzeń za pomocą funkcji IntelliTrace w programie Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Wyświetlanie zdarzeń za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise (C#, Visual Basic)
+
 Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategorie zdarzeń, lub wywołania funkcji poszczególnych zdarzeń, można użyć funkcji IntelliTrace. Poniższe procedury pokazują, jak to zrobić.  
   
- Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise, ale nie w wersjach Professional lub Community.  
+Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise, ale nie w wersjach Professional lub Community.  
   
 ##  <a name="GettingStarted"></a> Konfigurowanie funkcji IntelliTrace  
+
  Możesz spróbować debugowania tylko zdarzeń IntelliTrace. Zdarzenia IntelliTrace są zdarzeniami debugera, wyjątki, zdarzenia .NET Framework i inne zdarzenia systemowe. Należy włączyć lub wyłączyć określone zdarzenia, aby kontrolować zdarzenia przez IntelliTrace, przed rozpoczęciem debugowania. Aby uzyskać więcej informacji, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Włącz zdarzenia funkcji IntelliTrace przy dostępie do plików. Przejdź do **Narzędzia > Opcje > IntelliTrace > zdarzenia IntelliTrace** stronie, a następnie rozwiń **pliku** kategorii. Sprawdź **pliku** kategorii zdarzenia. To powoduje, że wszystkie pliku zdarzenia (dostęp, Zamknij, delete) do sprawdzenia.

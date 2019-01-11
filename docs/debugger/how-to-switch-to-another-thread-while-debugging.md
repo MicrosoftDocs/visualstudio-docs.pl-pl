@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202c153108558d1bf74a10b41b34c5b164ec1587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a8fd2106d4982f8e840974bc659d2296cf8c592
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227528"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Instrukcje: Przełączanie na inny wątek w trakcie debugowania w programie Visual Studio
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Instrukcje: Przełączanie na inny wątek w trakcie debugowania w programie Visual Studio (C#, Visual Basic, C++)
 Podczas debugowania aplikacji wielowątkowych, można użyć jednego z kilku metod, aby przełączyć się z wątku, który odbywała się wcześniej Praca z do innego wątku.
 
 > [!NOTE]

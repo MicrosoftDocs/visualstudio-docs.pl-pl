@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d6f50827e81d9aecce4878df00f99e155edb04f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227294"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Instrukcje: Oflagowanie i usuwanie oflagowania wątków
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Instrukcje: Oflagowanie i usuwanie oflagowania wątków (C#, Visual Basic, C++)
+
 Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków**, **stosów równoległych** (Widok wątku) **równoległego wyrażenia kontrolnego**i  **Wątki GPU** systemu windows. Ta ikona może pomóc i inne odróżnić oflagowane wątki z innych wątków.  
   
 Oflagowane wątki otrzymają specjalnego traktowania w **wątku** listy na **Lokalizacja debugowania** narzędzi i w innych wielowątkowe debugowanie systemu windows. Możesz wyświetlić wszystkie wątki lub tylko oflagowane wątki w **wątku** listy lub w innych oknach.
   
-### <a name="to-flag-or-unflag-a-thread"></a>Flaga lub usuń flagę wątku 
+### <a name="to-flag-or-unflag-a-thread"></a>Flaga lub usuń flagę wątku
   
 - W **wątków** lub **równoległego wyrażenia kontrolnego** oknie Znajdź wątek Cię interesuje i kliknij ikonę flagi, aby zaznacz lub Wyczyść flagę. 
 - W **stosów równoległych** okna, kliknij prawym przyciskiem myszy na wątku lub grupy wątków, a następnie wybierz pozycję **flagi / <thread>**  lub **Unflag / <thread>** .

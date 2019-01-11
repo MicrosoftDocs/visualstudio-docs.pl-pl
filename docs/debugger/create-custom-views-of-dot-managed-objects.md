@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowych widoków obiektów zarządzanych | Dokumentacja firmy Microsoft
+title: Tworzenie niestandardowych widoków obiektów | Dokumentacja firmy Microsoft
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -10,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -23,25 +23,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a7ff5d534cd343f18d0cf0a841801df434c75e7
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227645"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Tworzenie niestandardowych widoków obiektów (C#, Visual Basic, C++)
 Można dostosować sposób, w programie Visual Studio Wyświetla typy danych w oknach zmiennych debugera.  
-  
-## <a name="attributes"></a>Atrybuty
-
-W języku C# i Visual Basic, można dodać rozszerzeń dla niestandardowych danych za pomocą <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, i <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
-W [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kodu języka Visual Basic nie obsługuje atrybutu DebuggerBrowsable. To ograniczenie zostało usunięte w nowszych wersjach programu .NET Framework.    
 
 ## <a name="native-code"></a>Kod natywny
 
-Dla kodu C++, można dodać rozszerzenia typu danych niestandardowych przy użyciu struktury Natvis, zgodnie z opisem w [Tworzenie niestandardowych widoków obiektów natywnych w debugerze](/visualstudio/debugger/create-custom-views-of-native-objects). Lub możesz również dodać rozszerzeń dla niestandardowych danych za pomocą <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, i <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+Dla kodu C++, można dodać rozszerzenia typu danych niestandardowych przy użyciu struktury Natvis, zgodnie z opisem w [Tworzenie niestandardowych widoków obiektów natywnych w debugerze](/visualstudio/debugger/create-custom-views-of-native-objects). C + +/ kodu interfejsu wiersza polecenia, możesz również użyć atrybutów opisanych w tym miejscu, w tym artykule.
+
+## <a name="attributes"></a>Atrybuty
+
+W C#, Visual Basic i C++ (C + +/ tylko kodu interfejsu wiersza polecenia), można dodawać rozszerzeń dla niestandardowych danych za pomocą <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, i <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
+  
+W [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kodu języka Visual Basic nie obsługuje atrybutu DebuggerBrowsable. To ograniczenie zostało usunięte w nowszych wersjach programu .NET Framework.    
 
 ## <a name="visualizers"></a>Wizualizatory
 

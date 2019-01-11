@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad685fc33c831d37cee955fda7e965ecd65e9bf7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e08171c02288f89e706c80ab6dfd5ef9538318c
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902062"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227944"
 ---
-# <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>Wyświetlanie wątkach i zadaniach w okna stosów równoległych
+# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Wyświetlanie wątkach i zadaniach w okna stosów równoległych (C#, Visual Basic, C++)
 
 **Stosów równoległych** okno jest przydatne w przypadku debugowania aplikacji wielowątkowych. Ma kilka widoków:
 

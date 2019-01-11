@@ -1,58 +1,66 @@
 ---
 title: -Run (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /run Devenv
-- run Devenv switch
+- /Run Devenv
+- Run Devenv switch
 - applications [Visual Studio], running
-- /r Devenv switch
-- Devenv, /run switch
-- r Devenv switch (/r)
+- /R Devenv switch
+- Devenv, /Run switch
+- R Devenv switch (/R)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f46afb431b998b5fd937d24178a602f6aea81eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db6653bf0b44d186ad30f3d1dffa367db7fe354b
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227476"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
+
 Kompiluje i uruchamia określony projekt lub rozwiązanie.
 
 ## <a name="syntax"></a>Składnia
 
-```cmd
-devenv {/run|/r} {SolutionName|ProjectName}
+```shell
+devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `SolutionName`
 
- Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
+- *Nazwa rozwiązania*
 
- `ProjectName`
+  Pełna ścieżka i nazwa pliku rozwiązania.
 
- Wymagana. Pełna ścieżka i nazwa pliku projektu.
+- *ProjectName*
+
+  Pełna ścieżka i nazwa pliku projektu.
+
+- `/Out` *OutputFilename*
+
+  Opcjonalna. Nazwa pliku, który chcesz wysłać narzędzia danych wyjściowych do. Jeśli plik już istnieje, narzędzie dołączyło dane wyjściowe na końcu pliku.
 
 ## <a name="remarks"></a>Uwagi
- Kompiluje i uruchamia określony projekt lub rozwiązanie, zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik uruchamia zintegrowanego środowiska programistycznego (IDE) i pozostawia aktywne po projekt lub rozwiązanie zakończy działanie.
 
--   Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
+Kompiluje i uruchamia określony projekt lub rozwiązanie, zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik uruchamia IDE i pozostawia aktywne po projekt lub rozwiązanie zakończy działanie.
 
--   Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.
+- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
+
+- Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/Out` przełącznika.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie uruchamia rozwiązanie `MySolution` przy użyciu konfiguracji aktywnego wdrożenia.
 
-```cmd
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+W tym przykładzie uruchamia rozwiązanie `MySolution` przy użyciu konfiguracji aktywnego wdrożenia.
+
+```shell
+devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>Zobacz też

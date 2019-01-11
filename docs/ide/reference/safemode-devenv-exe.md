@@ -1,6 +1,6 @@
 ---
 title: -SafeMode (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,34 +13,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed14c3ec0da75df37c5a006f4e25240ac6630d20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 092cc1fc3267113e862646b7572e9091b8f6ddef
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227203"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-Uruchamia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w trybie awaryjnym, ładowanie tylko środowisko domyślne i usługi.
+
+Uruchamia programu Visual Studio w trybie awaryjnym, ładowanie tylko środowisko domyślne i usługi.
 
 ## <a name="syntax"></a>Składnia
 
-```cmd
+```shell
 devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Uwagi
- Ten przełącznik uniemożliwia załadowanie, kiedy wszystkich innych pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoczyna się, co pozwala na zapewnienie stabilne wykonywania.
 
-## <a name="description"></a>Opis
- Poniższy przykład rozpoczyna się [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w trybie awaryjnym.
+Ten przełącznik zapobiega wszystkich innych pakietów VSPackage ładowania po uruchomieniu programu Visual Studio, dzięki czemu wykonanie stabilne.
 
-## <a name="code"></a>Kod
+## <a name="example"></a>Przykład
 
-```cmd
-Devenv.exe /SafeMode
+Poniższy przykład uruchamia programu Visual Studio w trybie awaryjnym.
+
+```shell
+devenv /safemode
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

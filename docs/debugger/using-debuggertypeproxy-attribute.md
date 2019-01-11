@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a2ca6cbeba30f836a4878db569db14ff2af10d
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227541"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic"></a>Korzystanie z atrybutu DebuggerTypeProxy (C#, Visual Basic)
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Korzystanie z atrybutu DebuggerTypeProxy (C#, Visual Basic, C + +/ CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> Określa serwer proxy lub podstawiony dla typu i zmiany, które jej typ jest wyświetlana w oknach debugera. Po wyświetleniu zmiennej, która ma serwer proxy serwera proxy oznacza oryginalnego typu w **wyświetlić**. W oknie zmiennych debugera zostaną wyświetlone tylko publiczne składowe typ serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.
 
@@ -33,6 +33,9 @@ Ten atrybut można zastosować do:
 - Struktury
 - Klasy
 - Zestawy
+
+> [!NOTE]
+> Dla kodu natywnego, atrybut ten jest obsługiwany tylko w języku C + +/ CLI, kod.
 
 Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zastąpi serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy wymaganych, aby wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W rezultacie nie należy przeprowadzać więcej pracy w Konstruktorze niż jest to absolutnie konieczne.
 

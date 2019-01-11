@@ -1,67 +1,75 @@
 ---
 title: -Deploy (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /deploy switch
-- deploy Devenv switch
+- Devenv, /Deploy switch
+- Deploy Devenv switch
 - deploying applications [Visual Studio], after build
-- /deploy Devenv switch
+- /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af9d2b51a2421141892c1988cc67b63d1b15e26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: efb8df01b69bd07a6e9169f690865c6ec2c9c104
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227632"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
+
 Wdraża to rozwiązanie po kompilacji lub ponownej kompilacji. Dotyczy tylko projektów kodu zarządzanego.
 
 ## <a name="syntax"></a>Składnia
 
-```
-devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig ProjConfigName] [/out LogFileName]
+```shell
+devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `SolnConfigName`
 
- Wymagana. Nazwa konfiguracji rozwiązania, która będzie służyć do tworzenia rozwiązania o nazwie w `SolutionName`.
+- *Nazwa rozwiązania*
 
- `SolutionName`
+  Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
 
- Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
+- *SolnConfigName*
 
- / Project `ProjName`
+  Opcjonalna. Nazwa konfiguracji rozwiązania, które ma być używany w celu skompilowania rozwiązania o nazwie w *SolutionName*. Jeśli ten argument jest wykluczony, narzędzie używa aktywnej konfiguracji rozwiązania.
 
- Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.
+- `/Project` *ProjName*
 
- / projectconfig `ProjConfigName`
+  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić nazwę wyświetlaną projektu lub ścieżką względną z *SolutionName* folderu do pliku projektu. Można również wprowadzić pełną ścieżkę i nazwę pliku projektu.
 
- Opcjonalna. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas tworzenia `/project` o nazwie.
+- `/ProjectConfig` *ProjConfigName*
+
+  Opcjonalna. Konfiguracja, który będzie używany podczas tworzenia kompilacji nazwy projektu `/Project` o nazwie. Jeśli ten parametr jest określony, zastępuje ona *SolnConfigName* argumentu.
+
+- `/Out` *OutputFilename*
+
+  Opcjonalna. Nazwa pliku, który chcesz wysłać narzędzia danych wyjściowych do. Jeśli plik już istnieje, narzędzie dołączyło dane wyjściowe na końcu pliku.
 
 ## <a name="remarks"></a>Uwagi
- Określony projekt musi być projektu wdrożenia. Jeśli określony projekt nie jest projektem wdrożenia, gdy projekt, który został utworzony, jest przekazywany do wdrożenia, jego zakończy się niepowodzeniem z powodu błędu.
 
- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
+Określony projekt musi być projektu wdrożenia. Jeśli określony projekt nie jest projektem wdrażania projektu, który został zbudowany jest przekazywany do wdrożenia, jego zakończy się niepowodzeniem z powodu błędu.
 
- Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.
+Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
+
+Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą [/Out](out-devenv-exe.md) przełącznika.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie wdroży projekt `CSharpConsoleApp`przy użyciu `Release` konfigurację kompilacji projektu w ramach `Release` Konfiguracja rozwiązania o `MySolution`.
 
-```
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
+W tym przykładzie wdroży projekt `CSharpWinApp`przy użyciu `Release` konfigurację kompilacji projektu w ramach `MySolution`.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)

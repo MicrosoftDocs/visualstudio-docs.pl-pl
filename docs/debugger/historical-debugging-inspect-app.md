@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227710"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Sprawdzanie aplikacji z programem IntelliTrace historical debugowania w programie Visual Studio
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Sprawdzanie aplikacji z programem IntelliTrace historical debugowania w programie Visual Studio (C#, Visual Basic, C++)
+
 Możesz użyć [debugowania historycznego](../debugger/historical-debugging.md) do tyłu i do przodu przez wykonanie aplikacji i sprawdzić jego stan.  
   
 Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise, ale nie w wersjach Professional lub Community.  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>Nawiguj po kodzie za pomocą debugowania historycznego  
+## <a name="navigate-your-code-with-historical-debugging"></a>Nawiguj po kodzie za pomocą debugowania historycznego
+
  Zacznijmy od prosty program, który zawiera błąd. W aplikacji konsolowej C# Dodaj następujący kod:  
   
 ```csharp  

@@ -1,8 +1,8 @@
 ---
-title: Rozpoczynanie debugowania w programie VS 2017
+title: Debugowanie aplikacji przy użyciu programu Visual Studio
 description: Rozpoczynanie debugowania aplikacji za pomocą debugera programu Visual Studio
 ms.custom: mvc
-ms.date: 06/15/2018
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e574d24f3c7e4fd29f686980855aef6c4c3283c
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227892"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debugera programu Visual Studio
 

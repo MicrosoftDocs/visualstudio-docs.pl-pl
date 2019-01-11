@@ -1,6 +1,6 @@
 ---
 title: -Log (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/12/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,31 +13,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d2e6af25b4e0acc4aad88c33861e9d22a775b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6573bb8bb6118a38266c0b76ef435c59e6ccecb
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846129"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227242"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
-Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik pojawia się, gdy została wywołana `devenv /log` co najmniej raz. Domyślnie plik dziennika to:
 
- *% APPDATA %* \Microsoft\VisualStudio\\*wersji*\ActivityLog.XML
+Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik pojawia się, gdy została wywołana `devenv /log` co najmniej raz. Domyślnie plik dziennika znajduje się tutaj:
 
- gdzie *wersji* jest wersja programu Visual Studio. Można jednak określić inną ścieżkę i nazwę pliku.
+**% APPDATA %\\Microsoft\\VisualStudio\\**\<wersji\>**\\plik ActivityLog.xml**
+
+gdzie \<wersji\> jest wersja programu Visual Studio. Można jednak określić inną ścieżkę i nazwę pliku.
 
 ## <a name="syntax"></a>Składnia
 
-```cmd
-Devenv /log Path\NameOfLogFile
+```shell
+devenv /Log NameOfLogFile
 ```
 
+## <a name="arguments"></a>Argumenty
+
+- *NameOfLogFile*
+
+  Wymagana. Pełna ścieżka i nazwa pliku dziennika, aby zapisać.
+
 ## <a name="remarks"></a>Uwagi
- Ten przełącznik musi być umieszczony na końcu wiersza polecenia po innych przełącznikach.
 
- Dziennik jest zapisywany dla wszystkich wystąpień programu Visual Studio, która została wywołana z przełącznikiem/log. Go nie logowania wystąpienia programu Visual Studio, który został wywołany bez przełącznika.
+Ten przełącznik musi być umieszczony na końcu wiersza polecenia po innych przełącznikach.
 
-## <a name="see-also"></a>Zobacz też
+Dziennik jest zapisywany tylko w przypadku wszystkich wystąpień programu Visual Studio, które zostało otwarte z `/Log` przełącznika.
+
+## <a name="example"></a>Przykład
+
+W tym przykładzie kieruje rejestrowania `MyVSLog.xml` pliku w katalogu macierzystym użytkownika.
+
+```shell
+devenv /log "%USERPROFILE%\MyVSLog.xml"
+```
+
+## <a name="see-also"></a>Zobacz także
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

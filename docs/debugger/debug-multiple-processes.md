@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227385"
 ---
-# <a name="debug-multiple-processes"></a>Debugowanie wielu procesów
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>Debugowanie wielu procesów (C#, Visual Basic, C++)
 
 Visual Studio umożliwia debugowanie rozwiązanie, które ma kilka procesów. Możesz rozpocząć i przełączać się między procesami, podzielić, kontynuować i przejść przez źródło, Zatrzymaj debugowanie i zakończenia lub odłączyć od poszczególnych procesów.  
 

@@ -1,18 +1,18 @@
 ---
-title: ProjectConfig Devenv — przełącznik
-ms.date: 11/04/2016
+title: -ProjectConfig (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /projectconfig Devenv switch
+- /ProjectConfig Devenv switch
 - configurations, rebuilding
 - deployment projects, creating
 - configurations, cleaning
 - deployment projects, specifying
 - deployment projects, adding
 - build configurations, specifying
-- Devenv, /projectconfig switch
-- projectconfig Devenv switch (/projectconfig)
+- Devenv, /ProjectConfig switch
+- ProjectConfig Devenv switch (/ProjectConfig)
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
@@ -21,50 +21,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18ea1c057b47a93c33efcb2106725a4124f7380b
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967920"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227268"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
-Określa konfigurację kompilacji projektu mają być stosowane podczas kompilacji, czyszczenia, odbudować lub wdrożyć projekt o nazwie w **/project** argumentu.
+Określa konfigurację kompilacji projektu mają być stosowane podczas kompilacji, czyszczenia, odbudować lub wdrożyć projekt o nazwie w `/Project` argumentu.
 
 ## <a name="syntax"></a>Składnia
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argumenty
 
-|||
-|-|-|
-|/ Build|Tworzy projekt określony przez **/project** argumentu.|
-|/ clean|Czyści wszystkie pośrednie pliki i katalogi dane wyjściowe utworzone podczas kompilacji.|
-|/ REBUILD|Czyści, a następnie kompiluje projekt określony przez **/project** argumentu.|
-|/ deploy|Określa, czy wdrożony po kompilacji lub skompiluj ponownie projekt.|
-|*SolnConfigName*|Wymagana. Nazwa konfiguracji rozwiązania, które zostaną zastosowane do rozwiązania o nazwie w *SolutionName*. Jeśli dostępnych jest wiele platform rozwiązania, należy także określić platformy, na przykład **"debugowanie\|Win32"**.|
-|*Nazwa rozwiązania*|Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.|
-|/ project *ProjName*|Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z *SolutionName* folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.|
-|/ projectconfig *ProjConfigName*|Opcjonalna. Nazwa projektu kompilacji konfiguracji, które mają być stosowane do projekt określony przez **/project** argumentu. Jeśli dostępnych jest wiele platform rozwiązania, należy także określić platformy, na przykład **"debugowanie\|Win32"**.|
+- *Nazwa rozwiązania*
+
+  Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
+
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
+
+  Wymagana. [Kompilacje](build-devenv-exe.md), [czyści](clean-devenv-exe.md), [wdraża](deploy-devenv-exe.md), lub [odbudowuje](rebuild-devenv-exe.md) projektu.
+
+- *SolnConfigName*
+
+  Opcjonalna. Nazwa konfiguracji rozwiązania, które mają być stosowane do rozwiązania o nazwie w *SolutionName*. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest wykluczony, narzędzie używa aktywnej konfiguracji rozwiązania.
+
+- `/Project` *ProjName*
+
+  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić nazwę wyświetlaną projektu lub ścieżką względną z *SolutionName* folderu do pliku projektu. Można również wprowadzić pełną ścieżkę i nazwę pliku projektu.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Opcjonalna. Nazwa konfiguracji kompilacji projektu mają być stosowane do `/Project` o nazwie. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`).
+
+- `/Out` *OutputFilename*
+
+  Opcjonalna. Nazwa pliku, który chcesz wysłać narzędzia danych wyjściowych do. Jeśli plik już istnieje, narzędzie dołączyło dane wyjściowe na końcu pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-**/Projectconfig** przełącznik musi być używany z **/project** przełącznika jako część **/build**, **/ clean**,  **/rebuild**, lub **/ deploy** polecenia.
+`/ProjectConfig` Przełącznik musi być używany z `/Project` przełącznika jako część `/Build`, /`Clean`, `/Deploy`, lub `/Rebuild` polecenia.
 
 Należy ująć ciągi zawierające spacje w cudzysłów.
 
-Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w oknie wiersza polecenia lub pliku dziennika określony za pomocą **/out** przełącznika.
+Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w oknie wiersza polecenia lub pliku dziennika określony za pomocą `/Out` przełącznika.
 
 ## <a name="example"></a>Przykład
 
-Następujące polecenie tworzy projekt "CSharpConsoleApp", przy użyciu konfiguracji kompilacji projektu "Debugowanie" w konfiguracji rozwiązania "Debug" "MySolution":
+Następujące polecenie tworzy projekt `CSharpWinApp`przy użyciu `Debug` konfigurację kompilacji projektu w ramach `MySolution`:
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Zobacz także

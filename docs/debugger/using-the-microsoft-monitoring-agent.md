@@ -8,14 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ebc3e81852abb11a8c48c426d56eb837a19005
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227580"
 ---
-# <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
+# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Korzystanie z programu Microsoft Monitoring Agent (C#, Visual Basic)
+
 Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/application-insights/) i [System Center Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
   
 > [!NOTE]
@@ -31,7 +32,8 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 3.  [Krok 3: Zapisz zarejestrowane zdarzenia](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a> Krok 1: Skonfiguruj program Microsoft Monitoring Agent  
+##  <a name="SetUpMonitoring"></a> Krok 1: Skonfiguruj program Microsoft Monitoring Agent
+
  Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez konieczności zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalacji programu Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).  
   
 ###  <a name="SetUpStandaloneMMA"></a> Konfigurowanie agenta autonomiczny  

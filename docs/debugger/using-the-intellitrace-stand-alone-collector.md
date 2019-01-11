@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227723"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Przy użyciu autonomicznego modułu zbierającego IntelliTrace (C#, Visual Basic)
+
 **Autonomiczny moduł zbierający IntelliTrace** umożliwia zbieranie danych diagnostycznych IntelliTrace dla aplikacji na serwerach produkcyjnych lub innych środowiskach bez instalowania programu Visual Studio na maszynie docelowej i bez wprowadzania zmian docelowe środowiska systemu. Autonomiczny moduł zbierający IntelliTrace działa w sieci web programu SharePoint, aplikacje WPF i Windows Forms. Po zakończeniu zbierania danych, po prostu usuń moduł zbierający aby go odinstalować.
 
  Obejrzyj działanie IntelliTrace: [Zbieranie i analizowanie danych IntelliTrace w produkcji do debugowania (wideo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)

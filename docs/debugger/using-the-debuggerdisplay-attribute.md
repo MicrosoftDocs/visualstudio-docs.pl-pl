@@ -1,9 +1,9 @@
 ---
 title: Korzystanie z atrybutu DebuggerDisplay | Dokumentacja firmy Microsoft
-ms.date: 08/09/2017
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baa31b791b3ee76905023d32f92f774ae6c9d5f8
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228061"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic"></a>Korzystanie z atrybutu DebuggerDisplay (C#, Visual Basic)
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Korzystanie z atrybutu DebuggerDisplay (C#, Visual Basic, C + +/ CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Kontroluje sposób wyświetlania obiektu, właściwość lub pole w oknach zmiennych debugera. Ten atrybut może dotyczyć typy delegatów, właściwości, pola i zestawy.  
   
  `DebuggerDisplay` Atrybut ma jeden argument, czyli ciąg tekstowy, który ma być wyświetlana w kolumnie wartość dla wystąpienia typu. Ten ciąg może zawierać nawiasy klamrowe (`{` i `}`). Tekst w parę nawiasów klamrowych jest oceniane jako pola, właściwości lub metody.  
@@ -30,6 +30,9 @@ ms.locfileid: "54204537"
   
 > [!IMPORTANT]
 >  Jeśli **pokazywanie nieprzetworzonej struktury obiektów w oknach zmiennych** zaznaczono pole wyboru w **narzędzia/Opcje / Debugowanie** okno dialogowe, a następnie `DebuggerDisplay` atrybut jest ignorowany.  
+
+> [!NOTE]
+> Dla kodu natywnego, atrybut ten jest obsługiwany tylko w języku C + +/ CLI, kod.
   
  W poniższej tabeli przedstawiono niektóre możliwości wykorzystania `DebuggerDisplay` atrybutu i przykładowe dane wyjściowe.  
   

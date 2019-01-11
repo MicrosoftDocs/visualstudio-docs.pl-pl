@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d93dc9cf68a70977f82f29b6e5ff1ade25f47bda
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227702"
 ---
 # <a name="xaml-designer-options-page"></a>Strona Opcje projektanta XAML
 
@@ -65,7 +65,7 @@ Te ustawienia określają zachowanie projektanta podczas edycji dokumentu XAML.
 |||
 |-|-|
 |**Automatycznie nadawać nazwy elementom interaktywnym podczas ich tworzenia**|Określa, czy nazwa domyślna jest dostarczany dla nowego elementu interaktywne po dodaniu do projektanta.|
-|**Automatycznie Wstaw właściwości układu podczas tworzenia elementu**|Określa, czy właściwości układu są dostarczane dla nowego elementu, gdy możesz dodać do projektanta.|
+|**Automatycznie Wstaw właściwości układu podczas tworzenia elementu**|Określa, czy właściwości układu są dostarczane dla nowego elementu, gdy możesz dodać do projektanta. Właściwości układu są te, które mają wpływ na układ formantu, na przykład marginesy i dopełnienie.|
 |**Użyj quadrant na podstawie układu**|Określa, czy aktualnie wybraną kontrolkę wyrównuje do najbliższej krawędzi kontenera nadrzędnego. Jeśli to pole wyboru jest wyczyszczone, wyrównanie kontrolki nie zmieniać podczas przenoszenia lub operacji tworzenia.|
 |**Automatycznie wypełnij elementy przybornika**|Określa, czy kontrolki użytkownika i niestandardowe formanty w bieżącym rozwiązaniu są wyświetlane w przyborniku automatycznie.|
 

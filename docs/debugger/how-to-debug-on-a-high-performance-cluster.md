@@ -16,14 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 674297bb995591a3062c81f9e760e3005a931447
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154298"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228048"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności (C#, Visual Basic, C++)
+
 Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Istnieją jednak pewne dodatkowe zagadnienia. Aby uzyskać wymagania ogólne instalacji zdalnej, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
   
  Podczas debugowania w klastrze o wysokiej wydajności, można używać wszystkich [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowania systemu windows i technik, które są dostępne dla zdalnego debugowania. Ponieważ przeprowadzasz debugowanie zdalne, jednak zewnętrzne okno konsoli nie jest dostępna.  
@@ -34,7 +35,7 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
   
  Podczas debugowania aplikacji równoległej, można ustawić punkt przerwania w określonym wątku, proces lub komputer. Można to zrobić, tworząc normalny punkt przerwania, a następnie dodając filtr punktu przerwania.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Aby otworzyć okno dialogowe Filtr punktów przerwania  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Aby otworzyć okno dialogowe Filtr punktów przerwania
   
 1.  Kliknij prawym przyciskiem myszy symbol punktu przerwania w oknie źródła, **dezasemblacji** oknie **stos wywołań** oknie lub **punktów przerwania** okna.  
   

@@ -1,16 +1,16 @@
 ---
 title: -Out (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
-- Devenv, /out switch
+- Devenv, /Out switch
 - builds [Visual Studio], logs
 - error logs [Visual Studio], command-line build errors
 - error logs [Visual Studio]
-- /out Devenv switch
-- out Devenv switch
+- /Out Devenv switch
+- Out Devenv switch
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
@@ -19,43 +19,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f240b464ddba4e0549e3faff432685201e4560f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47601500b0404e818f4137ced1f7a589608e9881
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227853"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
-Określa plik do przechowywania i wyświetlania błędów podczas uruchamiania, tworzenia, odbudować lub wdrożyć rozwiązanie.
+
+Określa plik do przechowywania i wyświetlania błędów po użytkownik [Uruchom](run-devenv-exe.md), [Uruchom i Zamknij](runexit-devenv-exe.md), [uaktualnienia](upgrade-devenv-exe.md), [kompilacji](build-devenv-exe.md), [odbudować](rebuild-devenv-exe.md), [czyste](clean-devenv-exe.md), lub [wdrażanie](deploy-devenv-exe.md) rozwiązania.
 
 ## <a name="syntax"></a>Składnia
 
-```cmd
-devenv /out FileName
+```shell
+devenv /Out FileName
 ```
 
 ## <a name="arguments"></a>Argumenty
- `FileName`
 
- Wymagana. Ścieżka i nazwa pliku, aby otrzymywać komunikaty o błędach podczas kompilowania pliku wykonywalnego.
+- *FileName*
+
+  Wymagana. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas kompilowania pliku wykonywalnego.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli określono nazwę pliku, który nie istnieje, plik zostanie utworzony automatycznie. Jeśli plik już istnieje, wyniki są dołączane do istniejącej zawartości pliku.
 
- Błędy kompilacji wiersza polecenia są wyświetlane w **polecenia** okna i konstruktora rozwiązania widoku **dane wyjściowe** okna. Ta opcja jest przydatna, jeśli działają nienadzorowanej kompilacji i chcesz zobaczyć wyniki.
+Jeśli określono nazwy nieistniejącego pliku, plik zostanie utworzony automatycznie. W przeciwnym wypadku plik już istnieje, a wyniki są dołączane do istniejącej zawartości pliku.
+
+Błędy kompilacji wiersza polecenia są wyświetlane w **polecenia** okna i konstruktora rozwiązania widoku **dane wyjściowe** okna. Ten przełącznik jest przydatny do wyświetlania wyników nienadzorowanej kompilacji.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie jest uruchamiany `MySolution` i zapisuje błędy do pliku `MyErrorLog.txt`.
 
-```cmd
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
+W tym przykładzie jest uruchamiany `MySolution` i zapisuje błędy do pliku `MyErrorLog.txt`.
+
+```shell
+devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
+- [/ RunExit (devenv.exe)](runexit-devenv-exe.md)
+- [/ Upgrade (devenv.exe)](upgrade-devenv-exe.md)
+- [/ Clean (devenv.exe)](clean-devenv-exe.md)
 - [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

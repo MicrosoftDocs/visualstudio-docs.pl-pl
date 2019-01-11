@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37c90f212233936a6a260b6339effb261f91c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227840"
 ---
-# <a name="intellitrace-features"></a>Funkcje IntelliTrace
+# <a name="intellitrace-features-c-visual-basic-c"></a>Funkcje IntelliTrace (C#, Visual Basic, C++)
 
 Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięki czemu można sprawdzić stanu (stos wywołań i wartościach zmiennych lokalnych) w różnych momentach podczas wykonywania wywołania metod. Rozpocznij standardowe debugowanie — funkcja IntelliTrace jest domyślnie włączona i znajdują się informacje funkcji IntelliTrace jest rejestrowanie w nowym **narzędzia diagnostyczne** okna w obszarze **zdarzenia** kartę. Wybierz zdarzenie, a następnie kliknij przycisk **Uaktywnij debugowanie historyczne** aby zobaczyć stos wywołań i zmienne lokalne zapisane dla tego zdarzenia.
 
@@ -40,19 +40,19 @@ Aby upewnić się, że IntelliTrace jest włączony, należy otworzyć **Narzęd
 > [!NOTE]
 > Zakres wszystkie ustawienia na **IntelliTrace** strona opcje to program Visual Studio jako całości, nie do poszczególnych projektów lub rozwiązań. Zmiany w tych ustawieniach mają zastosowanie do wszystkich wystąpień programu Visual Studio, wszystkie debugowania sesji i wszystkich projektów i rozwiązań.
 
-## <a name="ChooseEvents"></a> Wybierz zdarzenia przez IntelliTrace (tylko kod zarządzany)
+## <a name="ChooseEvents"></a> Wybierz zdarzenia przez IntelliTrace (C#, Visual Basic)
 
 Można włączyć lub wyłączyć rejestrowanie dla określonych zdarzeń IntelliTrace.
 
 Jeśli debugujesz, Zatrzymaj debugowanie. Przejdź do **Narzędzia > Opcje > IntelliTrace > zdarzenia IntelliTrace**. Wybierz zdarzenia funkcji IntelliTrace do rejestrowania.
 
-## <a name="Snapshots"></a> Zbieraj migawki
+## <a name="Snapshots"></a> Zbieraj migawki (C#, Visual Basic, C++)
 
 To nie jest domyślnie włączone, ale IntelliTrace można przechwycić migawek aplikacji na każde zdarzenie punktu przerwania i debuger krok, a migawek można wyświetlić w historyczna sesja debugowania. Migawki zapewnia wgląd w swoje pełnym stanem aplikacji. Aby włączyć przechwytywania migawek, przejdź do **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **migawki IntelliTrace (zarządzany i natywny)**. Aby uzyskać więcej informacji, zobacz [Sprawdź poprzednie Stany aplikacji za pomocą funkcji IntelliTrace](../debugger/view-historical-application-state.md)
 
 Migawki są dostępne w usłudze Visual Studio Enterprise 2017, wersja 15.5 lub nowszej i wymaga Rocznicowej aktualizacji systemu Windows 10 lub nowszej.  W przypadku aplikacji .NET Core i ASP.NET Core Visual Studio Enterprise 2017 wersji 15.7 jest wymagana. W przypadku aplikacji natywnych dla Windows, Visual Studio Enterprise 2017 w wersji 15.9 2 (wersja zapoznawcza) jest wymagana.
 
-## <a name="GoingFurther"></a> Zbierz zdarzenia IntelliTrace i wywołania informacji (tylko kod zarządzany)
+## <a name="GoingFurther"></a> Zbierz zdarzenia IntelliTrace i wywołania informacji (C#, Visual Basic)
 
 To nie jest domyślnie włączona, ale IntelliTrace może rejestrować wywołania metody wraz z wydarzeniami. Aby włączyć zbieranie wywołań, przejdź do metody **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **zdarzenia IntelliTrace i wywołania informacji (tylko zarządzany)**.
 
@@ -92,7 +92,7 @@ Aby dodać wiele modułów, użyj symbolu wieloznacznego * na początku lub koń
 
 Spróbuj przechowywać liczba modułów do minimum. Możesz uzyskać lepszą wydajność, ponieważ istnieje mniejszej ilości danych, które mają być zbierane. Mniej szumu możesz także uzyskać w interfejsie użytkownika, ponieważ mniejszej ilości danych, aby wykonać kroki.
 
-## <a name="SaveSession"></a> Zapisywać dane IntelliTrace w pliku
+## <a name="SaveSession"></a> Zapisywać dane IntelliTrace w pliku (C#, Visual Basic, C++)
 
 Można zapisać dane IntelliTrace zebrał zamierza **Debuguj > IntelliTrace > Zapisz sesję IntelliTrace** podczas debugowania, a aplikacja jest w stanie przerwania. Element menu jest wyłączona, a nie będziesz w stanie zapisywać dane IntelliTrace zebrał, jeśli aplikacja jest nadal uruchomiona lub zatrzymaniu debugowania.
 

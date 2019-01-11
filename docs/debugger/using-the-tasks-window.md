@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfb95e3bc1a2a1aaf94db229d951773e97d4ef2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227775"
 ---
-# <a name="using-the-tasks-window"></a>Korzystanie z okna zadań
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>Korzystanie z okna zadań (C#, Visual Basic, C++)
 
 **Zadania** przypomina okna **wątków** okna, z wyjątkiem, że przedstawia informacje na temat <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), lub [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) obiekty zamiast każdego wątku. Takie jak wątki zadania reprezentują operacje asynchroniczne, które można uruchomić jednocześnie; Jednak wiele zadań może działać na tym samym wątku.
 
@@ -99,4 +99,4 @@ Kolumny w **zadania** okna są wyświetlane następujące dane.
 - [Programowanie równoległe](/dotnet/standard/parallel-programming/index)
 - [Środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime)
 - [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)
-- [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)
