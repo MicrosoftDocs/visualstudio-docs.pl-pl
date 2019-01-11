@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894444"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204255"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Wybrano obiekt bazy danych od nieobsługiwanego dostawcy bazy danych
 
@@ -23,17 +23,11 @@ ms.locfileid: "53894444"
 > [!NOTE]
 > Obsługiwane są tylko połączenia danych korzystających z .NET Framework Data Provider for SQL Server.
 
-## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
+## <a name="options"></a>Opcje
 
-- Kliknij przycisk **OK**.
+- Kliknij przycisk **OK** kontynuować projektowania klas jednostek, które mapują do połączenia, który używa nieobsługiwanego dostawcy bazy danych. Może wystąpić nieoczekiwane zachowanie, gdy używasz nieobsługiwanej bazy danych dostawcy.
 
-   Aby kontynuować, projektowania klas jednostek, które mapują do połączenia, który używa nieobsługiwanego dostawcy bazy danych. Może wystąpić nieoczekiwane zachowanie, gdy używasz nieobsługiwanej bazy danych dostawcy.
-
-    —lub—
-
-- Kliknij przycisk **anulować**.
-
-   Akcja została zatrzymana. Utwórz lub użyj połączenia danych, która używa dostawcy programu .NET Framework dla programu SQL Server.
+- Kliknij przycisk **anulować** zatrzymania działania. Utwórz lub użyj innego połączenia danych, która używa .NET Framework Provider for SQL Server.
 
 ## <a name="see-also"></a>Zobacz także
 

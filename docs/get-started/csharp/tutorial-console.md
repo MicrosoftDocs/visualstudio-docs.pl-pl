@@ -2,7 +2,7 @@
 title: 'Samouczek: Rozpoczynanie pracy z usługą C# aplikacji konsoli'
 description: Dowiedz się, jak w programie Visual Studio krok po kroku dotyczące tworzenia aplikacji konsolowej C#.
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562220"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204434"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Samouczek: Wprowadzenie do aplikacji konsolowej C# w programie Visual Studio
 
@@ -135,9 +135,11 @@ Tak jak w poniższym zrzucie ekranu Jeśli Uruchom aplikację i podzielić liczb
 
 Możemy naprawić kod tak, że obsługuje ona liczbę miejsc dziesiętnych.
 
+1. Naciśnij klawisz **Ctrl** + **F** otworzyć **Znajdź i Zamień** kontroli.
+
 1. Zmienić każde wystąpienie `int` zmienną `float`.
 
-   (Możesz użyć [Znajdź i Zamień](../../ide/finding-and-replacing-text.md#find-and-replace-control) formantu, aby ułatwić to zadanie. Aby uzyskać dostęp do formantu wyszukiwania w edytorze kodu, naciśnij klawisz **Crtl**+**F**. Następnie wybierz **Znajdź następny** przycisk lub **Find Previous** przycisku na kontrolce wyszukiwania. Aby przejść do opcji zastępowania, kliknij przycisk Dalej, aby **znaleźć** pola tekstowego. Aby wykonywać jedną zamianę naraz, wybierz opcję **Zamień następny** znajdujący się obok **Zastąp** pola tekstowego. Aby zamienić wszystkie dopasowania, wybierz opcję **Zamień wszystkie** przycisku.)
+    ![Animacja przedstawiająca sposób zmienić zmienną int float formant Znajdź i Zamień](./media/find-replace-control-animation.gif)
 
 1. Ponownie uruchom aplikację Kalkulator, a następnie Podziel liczbę **42** przez liczbę **119**.
 
@@ -147,9 +149,7 @@ Możemy naprawić kod tak, że obsługuje ona liczbę miejsc dziesiętnych.
 
 Jednak aplikacja generuje dziesiętna wynik. Upewnijmy się kilka więcej atrakcji w kodzie, dzięki czemu aplikacja może obliczyć liczbę miejsc dziesiętnych zbyt.
 
-1. Zmienić każde wystąpienie `float` zmienną `double`.
-
-1. Zmienić każde wystąpienie `Convert.ToInt32` metody `Convert.ToDouble`.
+1. Użyj **Znajdź i Zamień** kontroli (**Ctrl** + **F**) Aby zmienić każde wystąpienie `float` zmienną `double`oraz zmienić każdego wystąpienie `Convert.ToInt32` metody `Convert.ToDouble`.
 
 1. Uruchom aplikację Kalkulator, a następnie Podziel liczbę **42,5** przez liczbę **119.75**.
 

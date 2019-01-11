@@ -1,6 +1,6 @@
 ---
 title: 'Instrukcje: Wyświetlanie dokumentów skryptu | Dokumentacja firmy Microsoft'
-ms.date: 11/04/2016
+ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,21 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca9eff00f76bd62abce3c3dae061958af546e483
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867732"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204138"
 ---
-# <a name="how-to-view-script-documents"></a>Instrukcje: Wyświetlanie dokumentów skryptu
-We wcześniejszych wersjach programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], pliki skryptów po stronie klienta wygenerowany na podstawie skryptu po stronie serwera pojawiły się w oknie Eksplorator skryptów. Okno Eksplorator skryptów często zostało ukryte, tak, aby dostępności skryptu po stronie klienta nie jest zawsze oczywiste.  
+# <a name="how-to-view-script-documents-javascript"></a>Instrukcje: Wyświetlanie dokumentów skryptu (JavaScript)
+
+Pliki skryptów po stronie serwera są widoczne w Eksploratorze rozwiązań. Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy jesteś w trybie debugowania lub w trybie przerwania. Pliki skryptów po stronie klienta są wyświetlane w **dokumenty skryptów** węzła.  
   
- W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], pliki skryptu po stronie klienta wygenerowany na podstawie skryptu po stronie serwera są wyświetlane w Eksploratorze rozwiązań, który jest domyślnie widoczny. Okno Eksplorator skryptów zostały wyeliminowane.  
-  
- Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy jesteś w trybie debugowania lub w trybie przerwania. Pojawiają się na **dokumenty skryptów** węzła.  
-  
- Pliki skryptów po stronie serwera są zawsze widoczne. Pojawiają się na  **\<Pathname witryny sieci Web >** węzła. Nazwa węzła jest podobna do poniższego przykładu: `c:\...\Website2\`  
+> [!NOTE]
+> Się [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], pliki skryptów po stronie klienta wygenerowany na podstawie skryptu po stronie serwera pojawiły się w oknie Eksplorator skryptów.
   
 ### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera  
   

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295673"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204336"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie programu Visual Studio dla komputerów Mac
 
@@ -34,10 +34,11 @@ Poniższe sekcje zawierają informacje na temat pobierania i używania skryptów
 
 Można odinstalować programu Visual Studio i składników platformy Xamarin w jednym przejść za pomocą [odinstalować skryptu](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
-Ten skrypt dezinstalacji zawiera większość poleceń, które można znaleźć w artykule. Istnieją dwa główne pominięć ze skryptu i nie są włączone z powodu możliwych zależności zewnętrznych:
+Ten skrypt dezinstalacji zawiera większość poleceń, które można znaleźć w artykule. Istnieją trzy główne pominięć ze skryptu i nie są włączone z powodu możliwych zależności zewnętrznych. Aby usunąć ten problem, przejdź do odpowiedniej sekcji poniżej, a następnie ręcznie usunąć:
 
-- **Odinstalowywanie środowiska Mono**
-- **Odinstalowywanie AVD systemu Android**
+- **[Odinstalowywanie środowiska Mono](#uninstall-mono-sdk-mdk)**
+- **[Odinstalowywanie AVD systemu Android](#uninstall-android-avd)**
+- **[Odinstalowanie zestawu SDK systemu Android SDK i środowiska Java](#uninstall-android-sdk-and-java-sdk)**
 
 Aby uruchomić skrypt, wykonaj następujące czynności:
 
@@ -45,13 +46,13 @@ Aby uruchomić skrypt, wykonaj następujące czynności:
 2. Otwórz Terminal i zmień katalog roboczy, do którego został pobrany skrypt:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"**:
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
 4. Na koniec usunąć skrypt dezinstalacji.
 
@@ -65,13 +66,13 @@ Aby uruchomić skrypt, wykonaj następujące czynności:
 2. Otwórz Terminal i zmień katalog roboczy, do którego został pobrany skrypt:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"**:
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
 4. Na koniec usunąć skrypt dezinstalacji platformy .NET Core.
 
@@ -93,10 +94,16 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
+
+Można również usunąć następującego katalogu zawierającego różnych Xamarin plików i folderów. Jednak przed wykonaniem należy pamiętać, że ten katalog zawiera Android kluczy podpisywania. Aby uzyskać więcej informacji można znaleźć w sekcji  **[odinstalowywania zestawu Android SDK i zestawu SDK Java](#uninstall-android-sdk-and-java-sdk)**:
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Odinstalowywanie narzędzia Mono zestawu SDK (MDK)
 
@@ -130,6 +137,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Odinstalowanie zestawu SDK systemu Android SDK i środowiska Java
 
 Zestaw SDK systemu Android jest wymagany do tworzenia aplikacji dla systemu Android. Aby całkowicie usunąć wszystkie części zestawu Android SDK, zlokalizuj plik w rozmiarze **~/Library/Developer/Xamarin/** i przenieść ją do **Kosza**.
+
+> [!WARNING]
+> Należy pamiętać, że dla systemu Android klucze podpisywania, które są generowane przez program Visual Studio dla komputerów Mac znajdują się w `~/Library/Developer/Xamarin/Keystore`. Pamiętaj przeznaczenie tych odpowiednio lub uniknąć usuwania tego katalogu, jeśli chcesz zachować magazyn kluczy.
 
 Zestaw SDK Java (JDK), nie trzeba dezinstalację, ponieważ już jest wstępnie dostarczana jako część systemu Mac OS X / macOS.
 

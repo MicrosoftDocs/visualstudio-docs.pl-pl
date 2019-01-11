@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935661"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204310"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Obiekty, dodawane do projektanta używają innego połączenia danych niż projektanta
 
@@ -22,20 +22,18 @@ Obiekty, które są dodawane do projektanta Użyj innego połączenia danych ni�
 
 Podczas dodawania elementów do **Object Relational Designer** (**O/R Designer**), wszystkie elementy, użyj jednego połączenia danych udostępnionych. (Na powierzchnię projektową reprezentuje <xref:System.Data.Linq.DataContext>, który używa pojedynczego połączenia dla wszystkich obiektów na powierzchni.) Ten komunikat pojawia się po dodaniu obiektu do projektanta, który korzysta z połączenia danych, która różni się od połączenia danych są obecnie używane przez projektanta. Aby rozwiązać ten problem, można zachować istniejące połączenie. W przypadku wprowadzenia ten wybór nie można dodać wybranego obiektu. Alternatywnie można dodać obiektu i zresetuj <xref:System.Data.Linq.DataContext> połączenia do nowego połączenia.
 
-> [!NOTE]
-> Jeśli klikniesz **tak**, klas wszystkie jednostki w **O/R Designer** są mapowane na nowe połączenie.
+## <a name="connection-options"></a>Opcje połączenia
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Aby zastąpić istniejące połączenie połączenie używane przez wybrany obiekt
+- Aby zastąpić istniejące połączenie połączenie używane przez wybrany obiekt, kliknij przycisk **tak**.
 
-- Kliknij przycisk **Tak**.
+   Zaznaczony obiekt zostanie dodany do **O/R Designer**i *DataContext.Connection* jest ustawiona na nowe połączenie.
 
-    Zaznaczony obiekt zostanie dodany do **O/R Designer**i *DataContext.Connection* jest ustawiona na nowe połączenie.
+   > [!NOTE]
+   > Jeśli klikniesz **tak**, klas wszystkie jednostki w **O/R Designer** są mapowane na nowe połączenie.
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Aby nadal korzystać z istniejącego połączenia i anulowania Dodawanie wybranego obiektu
+- Aby nadal korzystać z istniejącego połączenia i anulowania Dodawanie wybranego obiektu, kliknij przycisk **nie**.
 
-- Kliknij przycisk **nie**.
-
-    Akcja została anulowana. *DataContext.Connection* pozostanie wartość istniejącego połączenia.
+   Akcja została anulowana. *DataContext.Connection* pozostanie wartość istniejącego połączenia.
 
 ## <a name="see-also"></a>Zobacz także
 

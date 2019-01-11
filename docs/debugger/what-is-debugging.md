@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830972"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204284"
 ---
 # <a name="what-is-debugging"></a>Co to jest debugowanie?
 
@@ -44,11 +44,14 @@ Gdy przełączysz to ustawienie, możesz zmienić projekt z konfiguracji debugow
 
 ## <a name="when-to-use-a-debugger"></a>Kiedy należy używać w debugerze
 
-Debuger to podstawowe narzędzie do znajdowania i rozwiązywania usterek w aplikacjach. Kontekst jest najważniejsza i ważne jest, aby wykorzystać wszystkie narzędzia w swojej jednorazowe ułatwiające szybkie usunięcia usterki lub błędy. Czasami po prawej stronie "narzędzia" może być rozwiązaniem lepiej kodowania. Dzięki informacjom, kiedy należy używać debugera, a inne narzędzie, zostanie też nauczysz się bardziej efektywne wykorzystanie debugera. Jeśli już znasz, potrzebujesz więcej informacji dotyczących debugera, zobacz [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md). W przeciwnym razie kliknij link w **następne kroki**.
+Debuger to podstawowe narzędzie do znajdowania i rozwiązywania usterek w aplikacjach. Kontekst jest najważniejsza i ważne jest, aby wykorzystać wszystkie narzędzia w swojej jednorazowe ułatwiające szybkie usunięcia usterki lub błędy. Czasami po prawej stronie "narzędzia" może być rozwiązaniem lepiej kodowania. Dzięki informacjom, kiedy należy używać debugera, a inne narzędzie, zostanie też nauczysz się bardziej efektywne wykorzystanie debugera.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić uczenia sposób debugowania w programie Visual Studio oraz pisania kodu z mniej błędów. Poniższy artykuł przedstawia C# przykłady kodu, ale pojęcia dotyczą wszystkich językach obsługiwanych przez program Visual Studio.
+W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić uczenia sposób debugowania w programie Visual Studio oraz pisania kodu z mniej błędów. Następujące artykuły show C# przykłady kodu, ale pojęcia dotyczą wszystkich językach obsługiwanych przez program Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Debugowanie dla całkowicie początkujących](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
 > [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)

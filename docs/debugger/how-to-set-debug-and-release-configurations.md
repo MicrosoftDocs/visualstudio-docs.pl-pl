@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837761"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204350"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Zestaw debugowania i zwalniania konfiguracji w programie Visual Studio
 
@@ -44,7 +44,7 @@ Projektów programu Visual Studio mają oddzielnych wersji i konfiguracji progra
 
 W konfiguracji debugowania programach kompiluje z informacji pełnego symbolicznego debugowania i bez optymalizacji. Optymalizacja komplikuje debugowanie, ponieważ relacja między kodem źródłowym i wygenerowanymi instrukcjami jest bardziej złożona.
 
-Konfiguracja wydania programu ma nie symbolicznej informacji debugowania i jest w pełni zoptymalizowana. Debugowanie informacje mogą być generowane w plikach .pdb [w zależności od opcji kompilatora](#BKMK_symbols_release) które są używane. Tworzenie plików .pdb może być przydatne, jeśli później trzeba debugować swoje wersje.
+Konfiguracja wydania programu ma nie symbolicznej informacji debugowania i jest w pełni zoptymalizowana. Dla kodu zarządzanego i kodu w języku C++, informacje debugowania mogą być generowane w plikach .pdb [w zależności od opcji kompilatora](#BKMK_symbols_release) które są używane. Tworzenie plików .pdb może być przydatne, jeśli później trzeba debugować swoje wersje.
 
 Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [konfiguracje kompilacji omówienie](../ide/understanding-build-configurations.md).
 

@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094820"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204421"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera programu Visual Studio
 
-Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wykonywane. Można polecić debugerowi, której wyjątki lub zestawy wyjątki, aby przerywał działanie w przypadku, a w tym momencie chcesz, aby debuger przerywa. Kiedy debuger przerywa, jego dowiesz się, gdy wyjątek został zgłoszony. Można również dodawać lub usuwać wyjątki. Za pomocą rozwiązania otwarte w programie Visual Studio, należy użyć **Debuguj > Windows > Ustawienia wyjątków** otworzyć **ustawienia wyjątków** okna.
+Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wykonywane. Można polecić debugerowi, której wyjątki lub zestawy wyjątki, aby przerywał działanie w przypadku, a w tym momencie użytkownik chce debuger przerywa (czyli wstrzymywać w debugerze). Kiedy debuger przerywa, jego dowiesz się, gdy wyjątek został zgłoszony. Można również dodawać lub usuwać wyjątki. Za pomocą rozwiązania otwarte w programie Visual Studio, należy użyć **Debuguj > Windows > Ustawienia wyjątków** otworzyć **ustawienia wyjątków** okna.
 
-Podaj obsługi reagujące na najważniejszych wyjątków. Poznasz również sposób konfigurowania debugera tak, aby zawsze przerwać wykonywanie dla niektórych wyjątków.
+Podaj obsługi reagujące na najważniejszych wyjątków. Jeśli chcesz wiedzieć, jak dodać procedury obsługi wyjątków, zobacz [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md). Ponadto Dowiedz się, jak skonfigurować debuger zawsze przerywa wykonywanie dla niektórych wyjątków.
 
 Gdy wystąpi wyjątek, debuger zapisuje komunikat o wyjątku do **dane wyjściowe** okna. Może je przerwać wykonywanie w następujących przypadkach, gdy:
 

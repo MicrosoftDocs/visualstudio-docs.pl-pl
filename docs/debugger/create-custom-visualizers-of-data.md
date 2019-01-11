@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99228f525ae85743834c75aa69bf64609d0b5ede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834155"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204391"
 ---
-# <a name="create-custom-data-visualizers"></a>Tworzenie danych niestandardowych wizualizatorów 
+# <a name="create-custom-data-visualizers"></a>Tworzenie danych niestandardowych wizualizatorów
  A *Wizualizator* jest częścią [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfejs użytkownika debugera, który wyświetla zmiennej lub obiektu w sposób odpowiedni do jego typu danych. Na przykład wizualizatora HTML interpretuje ciąg HTML i wyświetla wynik, jak będzie wyglądał w oknie przeglądarki. Wizualizator mapy bitowej interpretuje strukturę mapy bitowej i wyświetla grafiki, którą reprezentuje. Niektóre wizualizatorów umożliwiają modyfikowanie także wyświetlić dane.
 
  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Debugera zawiera sześć wizualizatorów standardowych. Tekst, HTML, XML i JSON wizualizatorów pracować nad obiektów w postaci ciągów. Z wizualizatora drzewa WPF zostaną wyświetlone jej właściwości drzewa wizualnego obiektu WPF. Wizualizator zestawu danych działa w przypadku obiektów DataSet, DataView i DataTable. 
