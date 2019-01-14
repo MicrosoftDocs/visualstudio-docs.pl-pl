@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4710752c4825ce576b20a823735b5ed1e2ebad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd147b5a7b491c17e0ed0024cfe471762e6160b1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900941"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269712"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Instrukcje: Drukowanie diagramów z widoku wykresu i widoku modelu zawartości
 
@@ -24,7 +24,7 @@ W tym temacie opisano, jak można wydrukować diagram, w widoku wykresu lub zawa
 
 1.  Otwórz plik XSD w programie Visual Studio i dodaj kilka węzłów [obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Eksportowanie diagramu do pliku XPS, za pomocą **Eksportuj Diagram jako obraz** element menu kontekstowego powierzchni projektowej, w widoku wykresu i widoku modelu zawartości.
+2.  Eksportowanie diagramu do pliku XPS, za pomocą **Eksportuj Diagram jako obraz** (kliknij prawym przyciskiem myszy) w menu kontekstowym powierzchni projektowej widoku wykresu i widoku modelu zawartości.
 
      Podczas eksportowania diagramu z widoku wykresu, powierzchni projektowej całego zostanie wyeksportowany do pliku XPS. Podczas eksportowania diagramu z widoku modelu zawartości i więcej niż jeden węzeł jest wyświetlany na powierzchni projektowej widoku modelu zawartości, tylko pierwszy węzeł zostanie wyeksportowany do pliku XPS.
 

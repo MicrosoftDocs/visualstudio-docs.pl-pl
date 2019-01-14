@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877435"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269946"
 ---
 # <a name="navigate-code"></a>Przechodzenie do kodu
 
@@ -67,7 +67,7 @@ Znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu. Umożliwia t
 Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Umieść kursor tekst zawarty wewnątrz nazwy typu, a następnie naciśnij klawisz **Shift**+**F12**
-**Myszy** | Wybierz **Znajdź wszystkie odwołania** z menu kontekstowego
+**Myszy** | Wybierz **Znajdź wszystkie odwołania** z menu podręcznego
 
 ## <a name="reference-highlighting"></a>Wyróżnianie odwołań
 
@@ -81,7 +81,7 @@ Przejdź do zawiera następujące polecenia, które są dostępne w **Edytuj** m
 
 - **Przejdź do wszystkich** (**Ctrl**+**T** lub **Ctrl**+**,**): Przenieś do określonego wiersza, typu, plik, składnika lub symbol.
 
-- **Przejdź do pliku** (**Ctrl**+**1**, **Ctrl**+**F**): Przenieś do określonego pliku w rozwiązaniu.
+- **Go To File** (**Ctrl**+**1**, **Ctrl**+**F**): Przenieś do określonego pliku w rozwiązaniu.
 
 - **Przejdź do niedawno używany plik** (**Ctrl**+**1**, **Ctrl**+**R**): Przenieś plik określony, przechodź do ostatnio wyświetlanych w rozwiązaniu (nowe w programie Visual Studio 2017 wersja 15.8).
 
@@ -89,7 +89,7 @@ Przejdź do zawiera następujące polecenia, które są dostępne w **Edytuj** m
 
 - **Przejdź do elementu członkowskiego** (**Ctrl**+**1**, **Ctrl**+**M**): Przejście do określonego elementu członkowskiego w rozwiązaniu.
 
-- **Przejdź do symbolu** (**Ctrl**+**1**, **Ctrl**+**S**): Przejście do określonego symbolu w rozwiązaniu.
+- **Go To Symbol** (**Ctrl**+**1**, **Ctrl**+**S**): Przejście do określonego symbolu w rozwiązaniu.
 
 W Visual Studio 2017 w wersji, należy zachować 15,8 lub nowszą wersją, następujące **przejdź do** nawigacji nie są również dostępne polecenia:
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868186"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269556"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities, karta, Wybieranie elementów przybornika, okno dialogowe
 
@@ -30,11 +30,11 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę dzia�
 
  Filtrowanie odbywa się na poszczególnych kartach. Oznacza to, nie jest możliwe dodawanie działań przepływu pracy za pośrednictwem **składnik .NET** kartę. Muszą oni można dodawać za pośrednictwem **System.Activities** samej karcie.
 
- Możesz usunąć zaznaczenie wszelkich elementów, które nie mają być wyświetlane w **przybornika** z tego okna dialogowego kartę, lub też można to zrobić za pomocą **Usuń** menu kontekstowego w **przybornika** i usuwając odwołanie do zestawu nie powoduje usunięcia elementu z **przybornika**.
+ Możesz usunąć zaznaczenie wszelkich elementów, które nie mają być wyświetlane w **przybornika** z tego okna dialogowego kartę, lub też można to zrobić za pomocą **Usuń** kliknij prawym przyciskiem myszy opcję menu w **przybornika**i usuwając odwołanie do zestawu nie powoduje usunięcia elementu z **przybornika**.
 
  Utworzenie wystąpienia działania, przeciągając i upuszczając go w Projektancie dodaje zestaw, który zawiera element do listy przywoływanych zestawach automatycznie. Ponadto jeśli działania odwołuje się do zestawu języka C, nie dodaje C do listy przywoływanego zestawu. Zestaw C ma znajdować się w pamięci podręcznej GAC i tym samym katalogu co działanie B. W przypadku autonomicznego zestawu ma znajdować się w pamięci podręcznej GAC lub ścieżki sondy programu VS. Następnie można przeciągać i upuszczać działania na powierzchni projektanta przepływu pracy.
 
- **Przybornik** ustawienia są domyślnie zapisywane jako opcje użytkownika, więc gdy następnym razem, gdy otworzysz **przybornika**, wyświetla listy niestandardowe działania przepływu pracy. Jeden efektem ubocznym tego jest to, że po dodaniu elementów do określonej domeny **przybornika** za pośrednictwem **wybierz elementy przybornika** okno dialogowe, możesz nadal przeglądać te elementy, jeśli pracujesz Aplikacja konsoli przepływu pracy oraz. Jeśli nie chcesz je wyświetlić, usuń je za pomocą menu kontekstowego lub usuń zaznaczenie pola wyboru je za pośrednictwem **wybierz elementy przybornika** okno dialogowe wspomniane wcześniej.
+ **Przybornik** ustawienia są domyślnie zapisywane jako opcje użytkownika, więc gdy następnym razem, gdy otworzysz **przybornika**, wyświetla listy niestandardowe działania przepływu pracy. Jeden efektem ubocznym tego jest to, że po dodaniu elementów do określonej domeny **przybornika** za pośrednictwem **wybierz elementy przybornika** okno dialogowe, możesz nadal przeglądać te elementy, jeśli pracujesz Aplikacja konsoli przepływu pracy oraz. Jeśli nie chcesz je wyświetlić, usuń je za pomocą menu kliknij prawym przyciskiem myszy lub usuń zaznaczenie pola wyboru je za pośrednictwem **wybierz elementy przybornika** okno dialogowe wspomniane wcześniej.
 
  Kolumny w tym oknie dialogowym zawiera następujące informacje:
 

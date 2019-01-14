@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b899ca08efac05bb58cc119b7e63489c6b8934d5
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 208bc533578d116fe55ad336f4aaee72eec94c3f
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227970"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268577"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -34,13 +34,13 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 ## <a name="arguments"></a>Argumenty
 
-- *Nazwa rozwiązania*
+- *SolutionName*
 
   Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
 
 - *SolnConfigName*
 
-  Opcjonalna. Nazwa konfiguracji rozwiązania, które ma być używany, aby ponownie skompilować rozwiązanie o nazwie w *SolutionName*. Jeśli ten argument jest wykluczony, narzędzie używa aktywnej konfiguracji rozwiązania.
+  Opcjonalna. Nazwa konfiguracji rozwiązania (takie jak `Debug` lub `Release`) ma być używany, aby ponownie skompilować rozwiązanie o nazwie w *SolutionName*. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślona lub pusty ciąg (`""`), narzędzie użyje aktywnej konfiguracji rozwiązania.
 
 - `/Project` *ProjName*
 
@@ -48,7 +48,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Opcjonalna. Nazwa konfiguracji kompilacji projektu do użycia podczas odbudowywania `/Project` o nazwie. Jeśli ten parametr jest określony, zastępuje ona *SolnConfigName* argumentu.
+  Opcjonalna. Nazwa konfiguracji kompilacji projektu (takie jak `Debug` lub `Release`) do użycia podczas odbudowywania `/Project` o nazwie. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten parametr jest określony, zastępuje ona *SolnConfigName* argumentu.
 
 - `/Out` *OutputFilename*
 

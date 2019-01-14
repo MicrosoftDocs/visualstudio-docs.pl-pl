@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918982"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268503"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 
@@ -40,7 +40,7 @@ ms.locfileid: "53918982"
 
 -   Jeśli użytkownik pracuje na [widoku Start](../xml-tools/start-view.md), kliknij przycisk **Eksploratora schematu XML** łącza.
 
--   Jeśli użytkownik pracuje na [widoku wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) i mieć węzły w obszarze roboczym, użyj menu kontekstowego, aby wybrać **Eksploratora schematu XML**.
+-   Jeśli użytkownik pracuje na [widoku wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) i mieć węzły w obszarze roboczym, użyj menu kontekstowe (kliknij prawym przyciskiem myszy), aby wybrać **Eksploratora schematu XML**.
 
 -   Możesz również wybrać **Eksploratora schematu XML** z **widoku** menu.
 

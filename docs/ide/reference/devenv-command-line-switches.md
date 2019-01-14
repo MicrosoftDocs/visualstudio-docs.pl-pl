@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3e1e3b72d8b8dbf298035ab453ffb77ecc2b1c
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2c2ea1bfc4cc49378308933dffd5bc3873b25209
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227866"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269673"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 
@@ -71,10 +71,11 @@ Następujące przełączniki wiersza polecenia wyświetlenia IDE i wykonaj opisa
 |[/Edit](edit-devenv-exe.md)|Otwiera określone pliki w działającej instancji tej aplikacji. W przypadku Brak uruchomionych wystąpień uruchamia nowe wystąpienie o uproszczonym układzie okna.<br /><br /> `devenv /edit File1 File2`|
 |[/ LCID lub/l](lcid-devenv-exe.md)|Ustawia domyślny język dla środowiska IDE. Jeśli określony język nie jest uwzględniony w instalacji programu Visual Studio, to ustawienie jest ignorowane.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Uruchamia programu Visual Studio i loguje wszelką aktywność do pliku dziennika.<br /><br /> `devenv /log mylogfile.xml`|
-|[/ NoSplash](nosplash-devenv-exe.md)|Otwiera IDE bez wyświetlania na ekranie powitalnym.<br /><br /> `devenv /nosplash File1 File2`|
+|[/NoSplash](nosplash-devenv-exe.md)|Otwiera IDE bez wyświetlania na ekranie powitalnym.<br /><br /> `devenv /nosplash File1 File2`|
 |[/ Run lub/r](run-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie.<br /><br /> `devenv /run mysln.sln`|
 |[/ RunExit](runexit-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie, minimalizuje IDE w rozwiązaniu jest uruchamiany, gdy IDE jest zamykane po rozwiązaniu zakończył działanie.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Uruchamia programu Visual Studio w trybie awaryjnym. Ten przełącznik ładuje domyślnym środowisku usługi domyślne i wydane wersje pakietów innych firm.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów.|
+|[/UseEnv](useenv-devenv-exe.md)|Powoduje, że środowisko IDE będzie używać zmiennych środowiskowych PATH, INCLUDE, LIBPATH i LIB dla kompilacji języka C++. Ten przełącznik został zainstalowany przy użyciu **programowanie aplikacji klasycznych w języku C++** obciążenia. Aby uzyskać więcej informacji, zobacz [Ustawianie ścieżki i zmiennych środowiskowych dla kompilacji wiersza polecenia](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 IDE nie są wyświetlane następujące przełączniki wiersza polecenia.
 

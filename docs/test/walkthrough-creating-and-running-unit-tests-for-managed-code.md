@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989179"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269985"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -93,7 +93,7 @@ public void Debit(double amount)
 
 5. W **BankTests** projektu, Dodaj odwołanie do **Bank** projektu.
 
-   W **Eksploratora rozwiązań**, wybierz opcję **odwołania** w **BankTests** projektu, a następnie wybierz **Dodaj odwołanie** z menu kontekstowego.
+   W **Eksploratora rozwiązań**, wybierz opcję **odwołania** w **BankTests** projektu, a następnie wybierz **Dodaj odwołanie** z menu podręcznego.
 
 6. W **Menadżer odwołań** okna dialogowego rozwiń **rozwiązania** , a następnie sprawdź **Bank** elementu.
 
@@ -103,7 +103,7 @@ Tworzenie klasy testowej, aby sprawdzić `BankAccount` klasy. Możesz użyć *Un
 
 ### <a name="rename-a-class-file"></a>Zmień nazwę pliku klasy
 
-W **Eksploratora rozwiązań**, wybierz opcję *UnitTest1.cs* plik z projektu BankTests. Z menu kontekstowego wybierz **Zmień nazwę**, a następnie zmień nazwę pliku do *BankAccountTests.cs*. Wybierz **tak** w oknie dialogowym z pytaniem, jeśli chcesz zmienić wszystkie odwołania do elementu kodu `UnitTest1` w projekcie.
+W **Eksploratora rozwiązań**, wybierz opcję *UnitTest1.cs* plik z projektu BankTests. Z menu kliknij prawym przyciskiem myszy, wybierz **Zmień nazwę**, a następnie zmień nazwę pliku do *BankAccountTests.cs*. Wybierz **tak** w oknie dialogowym z pytaniem, jeśli chcesz zmienić wszystkie odwołania do elementu kodu `UnitTest1` w projekcie.
 
 Ten krok zmienia nazwę klasy, która ma `BankAccountTests`. *BankAccountTests.cs* plik zawiera teraz następujący kod:
 

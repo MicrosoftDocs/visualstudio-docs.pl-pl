@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820867"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269613"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
 Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontrolek ActiveX.  
@@ -42,7 +42,7 @@ Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontr
  Wyświetla listę przeglądarek i przykładowe aplikacje, które mogą być przydatne podczas debugowania aplikacji modelu COM.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)  
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)  
  Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje obejmują: co nowego w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, edytowanie i kontynuowani, debugowanie zarządzanego kodu, debugowania projektów Visual C++, debugowania modelu COM i ActiveX, debugowania bibliotek DLL, debugowanie SQL i użytkownika odwołania do interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  

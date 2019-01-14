@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2b5c13665de3836844b16c405bf85c56f287e39
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 30637a797d8c0845bae9548bb6a48e877d44727b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227398"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269478"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -34,13 +34,13 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="arguments"></a>Argumenty
 
-- *Nazwa rozwiązania*
+- *SolutionName*
 
   Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
 
 - *SolnConfigName*
 
-  Opcjonalna. Nazwa konfiguracji rozwiązania, która będzie służyć do tworzenia rozwiązania o nazwie w *SolutionName*. Jeśli dostępnych jest wiele platform rozwiązania, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest wykluczony, narzędzie używa aktywnej konfiguracji rozwiązania.
+  Opcjonalna. Nazwa konfiguracji rozwiązania (takie jak `Debug` lub `Release`) ma być używany w celu skompilowania rozwiązania o nazwie w *SolutionName*. Jeśli dostępnych jest wiele platform rozwiązania, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślona lub pusty ciąg (`""`), narzędzie użyje aktywnej konfiguracji rozwiązania.
 
 - `/Project` *ProjName*
 
@@ -48,7 +48,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Opcjonalna. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas kompilowania projektu o nazwie. Jeśli dostępnych jest wiele platform projektów, należy także określić platformy, na przykład `Debug|Win32`. Jeśli ten parametr jest określony, zastępuje ona *SolnConfigName* argumentu.
+  Opcjonalna. Nazwa projektu Konfiguracja kompilacji (takich jak `Debug` lub `Release`) ma być używany podczas kompilowania projektu o nazwie. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten parametr jest określony, zastępuje ona *SolnConfigName* argumentu.
 
 - `/Out` *OutputFilename*
 

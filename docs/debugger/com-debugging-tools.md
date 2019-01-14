@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1ca9466f4b70f7232cb1832fe05794b8cffd45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77ae08c713c4afb617e5626b26f0ed010d13e906
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951501"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269439"
 ---
 # <a name="com-debugging-tools"></a>Narzędzia debugowania COM
 
@@ -45,6 +45,6 @@ Przykłady MFC ActiveX OCLIENT i SUPERPAD są również możliwe było przetesto
 - [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)
 - [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)
 - [Debugowanie w programie Visual Studio](../debugger/index.md)
-- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Przykład OCLIENT: Pokazuje wizualną edycję aplikacji kontenera](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
 - [Przykład SUPERPAD: Pokazuje wizualną edycję serwera, który umożliwia edycję tekstu za pomocą CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

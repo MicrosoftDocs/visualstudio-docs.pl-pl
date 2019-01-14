@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5ed94bfbb3bfdf0e88b0c79741d090908a9936e
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 1706d8dade02bd7f247d7f2ce163955615a3b0f3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54228009"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269189"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -36,7 +36,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="arguments"></a>Argumenty
 
-- *Nazwa rozwiązania*
+- *SolutionName*
 
   Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
 
@@ -46,7 +46,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolnConfigName*
 
-  Opcjonalna. Nazwa konfiguracji rozwiązania stosowane do rozwiązania o nazwie w *SolutionName*. Jeśli ten argument jest wykluczony, narzędzie używa aktywnej konfiguracji rozwiązania.
+  Opcjonalna. Nazwa konfiguracji rozwiązania (takie jak `Debug` lub `Release`) stosowane do rozwiązania o nazwie w *SolutionName*. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślona lub pusty ciąg (`""`), narzędzie użyje aktywnej konfiguracji rozwiązania.
 
 - `/Project` *ProjName*
 
@@ -54,7 +54,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Opcjonalna. Nazwa konfiguracji kompilacji projektu mają być stosowane do `/Project` o nazwie.
+  Opcjonalna. Nazwa konfiguracji kompilacji projektu (takie jak `Debug` lub `Release`) mają być stosowane do `/Project` o nazwie. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`).
 
 - `/Out` *OutputFilename*
 

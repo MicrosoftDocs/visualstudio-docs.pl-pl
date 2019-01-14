@@ -16,12 +16,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5a44ffd5c524d1f7e410f203e17b647907e32d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925186"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269920"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -284,7 +284,7 @@ Skompilować i uruchomić aplikację, aby sprawdzić, wyświetlanie i aktualizow
 
 3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **AdventureWorksSalesEditor** projektu.
 
-4. W menu kontekstowym w obszarze **debugowania**, kliknij przycisk **Uruchom nowe wystąpienie**.
+4. W menu kliknij prawym przyciskiem myszy (menu kontekstowe) w obszarze **debugowania**, kliknij przycisk **Uruchom nowe wystąpienie**.
 
      Aplikacja zostanie uruchomiona. Sprawdź następujące informacje:
 

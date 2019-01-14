@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929701"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269322"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Kontrolowanie koloru, stylu linii i innych właściwości kształtu
-Niektóre właściwości kształtu takich jak kolor może być "widoczne" — oznacza to, połączony z właściwością domeny kształtu. Inne muszą być kontrolowane bezpośrednio.
+
+Niektóre właściwości kształtu, np. kolor można "ujawnianie". Oznacza to właściwości mogą być połączone z właściwością domeny kształtu. Inne muszą być kontrolowane bezpośrednio.
 
 ## <a name="exposing-a-property"></a>Udostępnianie właściwości
  Niektóre właściwości kształtu, np. kolor można połączyć wartości właściwości domeny.
 
- W definicji DSL wybierz kształt, łącznika lub diagramu klasy. W jego menu kontekstowym wybierz **Dodaj udostępniane**, a następnie wybierz polecenie Właściwości ma, takich jak kolor wypełnienia.
+ W definicji DSL wybierz kształt, łącznika lub diagramu klasy. Menu kliknij prawym przyciskiem myszy, wybierz **Dodaj udostępniane**, a następnie wybierz polecenie Właściwości ma, takich jak kolor wypełnienia.
 
  Kształt ma teraz właściwość domeny, którego można ustawić w kodzie programu, ani jako użytkownik.
 

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853934"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268578"
 ---
 # <a name="how-to-debug-com-servers"></a>Instrukcje: Debugowanie serwerów COM
 Debugowanie aplikacji serwera COM stanowi unikatowy zestaw problemów, które nie zawsze są łatwo rozwiązać.  
@@ -47,4 +47,4 @@ Debugowanie aplikacji serwera COM stanowi unikatowy zestaw problemów, które ni
  [Instrukcje: Debugowanie klientów i serwerów za pomocą debugowania RPC COM](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)   
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

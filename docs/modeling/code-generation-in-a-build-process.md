@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11ff8764395f10a4937143d6f51d220f970193af
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865521"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270235"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 
@@ -42,15 +42,15 @@ Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) uruchomienia n
 
     - Microsoft.TextTemplating.targets
 
-- $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
     - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    - Gt;Microsoft.VisualStudio.texttemplating.Interfaces.*.0.dll (kilka plików)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
     - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
-- $(ProgramFiles) \Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
     - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
@@ -58,7 +58,7 @@ Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) uruchomienia n
 
 Należy edytować plik projektu, aby skonfigurować niektóre funkcje w programie MSBuild.
 
-W **Eksploratora rozwiązań**, wybierz **zwolnienie** z menu kontekstowego projektu. Pozwala to na edycję pliku .csproj lub .vbproj w edytorze XML.
+W **Eksploratora rozwiązań**, wybierz **zwolnienie** przejdź do menu kliknij prawym przyciskiem myszy w projekcie. Pozwala to na edycję pliku .csproj lub .vbproj w edytorze XML.
 
 Po zakończeniu edycji wybierz **Załaduj ponownie**.
 

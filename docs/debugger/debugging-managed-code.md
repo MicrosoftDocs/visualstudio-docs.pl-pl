@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867043"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270209"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 
@@ -38,7 +38,7 @@ W tym artykule opisano potwierdzenia w zarządzanym kodzie, których warunki, kt
 [Instrukcje „Stop” w języku Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 W tym artykule opisano `Stop` instrukcji, co stanowi alternatywę dla ustawienie punktu przerwania. Przykładowy kod znajduje się również, wraz z porównania między `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.
 
-[Przewodnik: Debugowanie formularza Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
+[Przewodnik: Debugowanie formularza Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
 Zapewnia instrukcje krok po kroku dotyczące tworzenia formularzy Windows i debugowanie formularza. Formularz Windows, standardowy składnik zarządzanej aplikacji Windows, jest jednym z najczęściej używanych aplikacji zarządzanych. W tym instruktażu wykorzystano Visual C# i Visual Basic, ale techniki tworzenia formularzy Windows w języku C++ ogólnie wygląda podobnie.
 
 [Debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -56,12 +56,12 @@ Opisuje skutki optymalizację JIT na temat debugowania.
 [Debugowanie LINQ i DLINQ](../debugger/debugging-linq.md)  
 W tym artykule omówiono techniki debugowania zapytań LINQ.
 
-[Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+[Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)  
 Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[IntelliTrace](../debugger/intellitrace.md) znajduj błędy szybciej i łatwiej, rejestrując historię wykonywania aplikacji za pomocą funkcji IntelliTrace. Krok do tyłu i przekazywać je za pośrednictwem zarejestrowane zdarzenia i wywołania, aby sprawdzić stan aplikacji w kluczowych punktach w czasie. Debugowanie kodu bez ustawiania wielu punktów przerwania lub ponownego uruchamiania aplikacji w taki sposób, jak często. Wymaga programu Visual Studio Enterprise.
+[IntelliTrace](../debugger/intellitrace.md) znajduj błędy szybciej i łatwiej, rejestrując historię wykonywania aplikacji za pomocą funkcji IntelliTrace. Krok do tyłu i przekazywać je za pośrednictwem zarejestrowane zdarzenia i wywołania, aby sprawdzić stan aplikacji w kluczowych punktach w czasie. Debugowanie kodu bez ustawiania wielu punktów przerwania lub ponownego uruchamiania aplikacji w taki sposób, jak często. Requires Visual Studio Enterprise.
 
 [Śledzenie i instrumentacja aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
 W tym artykule opisano, śledzenie, możesz monitorować wykonywanie aplikacji, gdy jest uruchomiona i instrumentacji, które obejmuje umieszczenie instrukcji śledzenia w lokalizacjach strategicznych w kodzie. Ten temat zawiera także łącza do wprowadzenie do Instrumentacji i śledzenia, przełączniki śledzenia, obiekty nasłuchujące śledzenia kodu w aplikacji, Dodawanie instrukcji śledzenia do kodu aplikacji i kompilowanie warunkowe ze śledzenia <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> .
@@ -86,7 +86,7 @@ Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje dotycz
 
 ## <a name="see-also"></a>Zobacz także
 
-[Przewodnik: Debugowanie Windows niestandardowych formantów formularzy w czasie projektowania](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[zabezpieczenia debugera](../debugger/debugger-security.md)
-[debugowania w programie Visual Studio](../debugger/index.md) 
- [ Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+[Przewodnik: Debugowanie Windows niestandardowych formantów formularzy w czasie projektowania](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Zabezpieczenia debugera](../debugger/debugger-security.md)  
+[Debugowanie w programie Visual Studio](../debugger/index.md)  
+[Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

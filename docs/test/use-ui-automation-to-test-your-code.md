@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840645"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270196"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -216,7 +216,7 @@ Aby wygenerować kod dla potwierdzenia usługi i Dodaj formant do mapy interfejs
 
 Jeśli chcesz wybrać traci fokus i kontrolki zniknie po wybraniu **dodawania potwierdzeń** narzędzia z **kodowanego testu interfejsu użytkownika**:
 
-Czasami podczas dodawania kontrolek i sprawdzić ich właściwości może być za pomocą klawiatury. Na przykład podczas próby rejestrowania kodowanego testu interfejsu użytkownika, używającej formant menu kontekstowego na liście elementów menu w formancie zostanie utratę fokus i znikają w przypadku próby wybrania **dodawania potwierdzeń** narzędzia z **kodowanego testu interfejsu użytkownika Konstruktor**. Zostało to przedstawione na poniższej ilustracji, gdzie menu kontekstowego w programie Internet Explorer traci fokus i znika, jeśli zostanie podjęta próba wybierz ją z **dodawania potwierdzeń** narzędzia.
+Czasami podczas dodawania kontrolek i sprawdzić ich właściwości może być za pomocą klawiatury. Na przykład podczas próby rejestrowania kodowanego testu interfejsu użytkownika, który używa formant menu kliknij prawym przyciskiem myszy listę elementów menu w formancie zostanie utratę fokus i znikają w przypadku próby wybrania **dodawania potwierdzeń** narzędzia z **kodowanego interfejsu użytkownika Testowanie konstruktora**. Zostało to przedstawione na poniższej ilustracji, gdzie menu kliknij prawym przyciskiem myszy w programie Internet Explorer traci fokus i znika, jeśli zostanie podjęta próba wybierz ją z **dodawania potwierdzeń** narzędzia.
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
@@ -230,7 +230,7 @@ W niektórych okolicznościach określonego formantu, który jest używany w cod
 
 Podczas wykonywania kodowanego testu interfejsu użytkownika, umieść kursor nad kontrolką. Naciśnij i przytrzymaj **Ctrl**, podczas gdy naciśnij i przytrzymaj klawisz **Shift** i **R** za pomocą klawiszy. Wydawanie kluczy. Zdarzenie po wskazaniu wskaźnikiem myszy jest rejestrowana przez **kodowanego testu interfejsu użytkownika**.
 
-![CodedUI&#95;Zatrzymaj wskaźnik myszy](../test/media/codedui_hover.png)
+![CodedUI&#95;Hover](../test/media/codedui_hover.png)
 
 Po wygenerowaniu metody testowej kod podobny do poniższego przykładu zostaną dodane do *UIMap.Designer.cs* pliku:
 

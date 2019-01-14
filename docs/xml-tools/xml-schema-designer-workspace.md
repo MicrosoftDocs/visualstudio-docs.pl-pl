@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825263"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269153"
 ---
 # <a name="xml-schema-designer-workspace"></a>Obszar roboczy Projektanta schematu XML
 
@@ -30,7 +30,7 @@ Można dodać węzły do obszaru roboczego, w następujący sposób:
 
 -   Przeciąganie i upuszczanie globalnego węzłów, węzły plików i węzły przestrzeni nazw z **Eksploratora schematu XML** na jeden z trzech widoków. Aby uzyskać więcej informacji, zobacz sekcję "Przeciąganie i upuszczanie węzły" w [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md).
 
--   Skorzystaj z menu kontekstowego w **Eksploratora schematu XML**. Aby uzyskać więcej informacji, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Skorzystaj z menu kontekstowego (kliknij prawym przyciskiem myszy) w **Eksploratora schematu XML**. Aby uzyskać więcej informacji, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   Wykonaj wyszukiwanie w Eksploratorze XSD, a następnie kliknij przycisk **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku wyników podsumowania. Aby uzyskać więcej informacji, zobacz [wyszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md).
 
@@ -40,7 +40,7 @@ Aby przełączać widoki, należy użyć jednej z następujących czynności:
 
 -   Pasek narzędzi Projektanta XSD.
 
--   Menu kontekstowe widoku modelu zawartości i widoku wykresu.
+-   Menu kontekstowe (kliknij prawym przyciskiem myszy), widoku modelu zawartości i widoku wykresu.
 
 -   Znaki wodne, na stronie widoku Start lub znak wodny na pusty widok modelu zawartości lub w widoku wykresu.
 

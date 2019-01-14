@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860260"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269868"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch, projektant działań
 
@@ -32,7 +32,7 @@ Dostęp do **PickBranch** projektanta w **przepływ sterowania** kategorii **prz
 
 Dwa puste <xref:System.Activities.Statements.PickBranch> obiektów za pomocą wyświetlania nazw **Branch1** i **Branch2** są domyślnie tworzone jako elementy <xref:System.Activities.Statements.Pick> działania podczas **wybierz** Projektant działań początkowo zostało porzucone do projektanta przepływów pracy. Te odpowiednich <xref:System.Activities.Statements.PickBranch.DisplayName%2A> wartości właściwości mogą być edytowane w **PickBranch** nagłówka projektanta lub w ramach **właściwości** okna dla każdej gałęzi.
 
-Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> obiekty do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika**, lub za pomocą menu kontekstowego w ramach **wybierz** powierzchni projektu:
+Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> obiekty do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika**, lub za pomocą menu kliknij prawym przyciskiem myszy w ramach **wybierz** powierzchni projektu:
 
 - **PickBranch** Projektant <xref:System.Activities.Statements.PickBranch> kiedy zostanie przeciągnięty z **przybornika** i upuścić na jednej z gałęzi **wybierz** projektanta działań na Powierzchni projektanta przepływu pracy. Nowy <xref:System.Activities.Statements.PickBranch> obiektów, które można umieścić wewnątrz <xref:System.Activities.Statements.Pick> projektanta w lewo lub prawo do wszystkich istniejących <xref:System.Activities.Statements.PickBranch> elementów znajdujących się już w kolekcji. Podczas przeciągania **PickBranch** projektanta na **wybierz** projektanta za pomocą myszy **wybierz** projektanta używa pionowy pasek niebieski szare, aby wskazać miejsce <xref:System.Activities.Statements.PickBranch> jest dodawany do umieszczenia danego myszy.
 

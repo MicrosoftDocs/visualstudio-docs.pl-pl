@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918615"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269998"
 ---
 # <a name="toolbox"></a>Przybornik
 
@@ -40,7 +40,7 @@ Wersja programu .NET Framework, że projekt jest ukierunkowany również wpływa
 
 Domyślnie **przybornika** jest zwinięta z lewej strony środowiska IDE programu Visual Studio i jest wyświetlany, gdy kursor zostanie przeniesiony nad nim. Możesz przypiąć **przybornika** (klikając **numeru Pin** ikonę na jego pasku narzędzi) tak, aby zostanie zamknięte po przeniesieniu kursora. Można również oddokować **przybornika** okna i przeciągnij w dowolne miejsce na ekranie. Można zadokować, oddokować i ukrywać **przybornika** kliknij prawym przyciskiem myszy jego narzędzi i wybierając jedną z opcji.
 
-Możesz zmienić kolejność elementów w **przybornika** tab lub dodać niestandardowe karty i elementów za pomocą następujących poleceń w menu kontekstowym:
+Możesz zmienić kolejność elementów w **przybornika** tab lub dodać niestandardowe karty i elementów za pomocą następujących poleceń w menu kliknij prawym przyciskiem myszy:
 
 - **Zmień nazwę elementu** — zmienia nazwę wybranego elementu.
 

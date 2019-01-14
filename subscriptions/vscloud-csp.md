@@ -9,12 +9,12 @@ description: Informacje dla dostawców rozwiązań w chmurze o tym, jak kupić i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739578"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270011"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kupowanie i zarządzać subskrypcjami chmury programu Visual Studio dla klientów
 
@@ -46,7 +46,7 @@ Każda osoba mająca [dostęp współautora lub właściciela](https://na01.safe
 0. Wybierz **witryny Marketplace programu Visual Studio**.
 0. Upewnij się, że masz nazwę klienta znajduje się w prawym górnym rogu.
 0. Wybierz **subskrypcje**.
-0. Wybierz Professional lub Enterprise, a następnie wybierz miesięcznej lub rocznej programu Visual Studio.
+0. Wybierz Enterprise lub Professional programu Visual Studio.
 0. Wybierz **Kup**.
 0. Wybierz subskrypcję Azure do płatności za zakup.
 0. Wprowadź liczbę użytkowników, których potrzebuje Twojego klienta.

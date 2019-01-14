@@ -9,12 +9,12 @@ description: Dowiedz się, jak znaleźć Twoje publicznego numeru klienta (PCN) 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b27d61a614c7ddbe1503eb7708e0e2e35a39fca0
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637022"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269214"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Jak znaleźć Moje "Publiczny numer klienta" (PCN) lub Numer autoryzacyjny?
 
@@ -22,18 +22,13 @@ Aby można było ukończyć procesu dołączania w Twojej organizacji do portalu
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>Aby znaleźć numer PCN lub Numer autoryzacyjny
 
-1.  Zaloguj się do woluminu licencjonowania Service Center: [ https://www.Microsoft.com/licensing/servicecenter ](https://www.Microsoft.com/licensing/servicecenter).
-
-2. Na karcie subskrypcje wybierz **subskrypcji programu Visual Studio**.
+Volume License Service Center nie jest już zapewnia dostęp do numeru PCN.  Aby go uzyskać, skontaktuj się z pomocą techniczną subskrypcji programu Visual Studio.
+1. Odwiedź stronę https://visualstudio.microsoft.com/subscriptions/support/#talktous
+2. Naciśnij pozycję **konta, subskrypcji i rozliczeń pomocy technicznej** przycisku.
     > [!div class="mx-imgBorder"]
-    > ![Wybierz subskrypcje w witrynie VLSC](_img/vlsc/vlsc-subscriptions.png)
-
-3. Numer PCN lub publiczny numer klienta jest widoczny w połowie strony.
-    > [!div class="mx-imgBorder"]
-    > ![Znajdź numer PCN w witrynie VLSC](_img/vlsc/vlsc-pcn.png)
-
-    
-Jeśli nie widzisz strony i nastąpi przekierowanie do strony logowania programu Visual Studio, skopiuj i wklej poniższe łącze do swojej przeglądarki: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
+    > ![Wybierz polecenie Pomoc techniczna dotycząca subskrypcji](_img/vlsc/vlsc-pcn.png)
+3. Wybierz swój kraj z listy rozwijanej.
+4. Wybierz z listy dostępnych opcji pomocy technicznej w Twoim kraju do skontaktowania się z agentem pomocy technicznej, który można zbadać numeru PCN.  
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Jeśli mam więcej niż jeden numer PCN, którego należy użyć?
 

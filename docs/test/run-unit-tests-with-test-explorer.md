@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858074"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269881"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -84,7 +84,7 @@ Jeśli test zakończy się niepowodzeniem, są wyświetlane również w okienku 
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Wyświetlanie kodu źródłowego metody badawczej
 
- Aby wyświetlić kod źródłowy metody testowej w edytorze programu Visual Studio, wybierz test, a następnie wybierz **Otwórz Test** w menu kontekstowym (klawiatura: **F12**).
+ Aby wyświetlić kod źródłowy metody testowej w edytorze programu Visual Studio, wybierz test, a następnie wybierz **Otwórz Test** w menu kliknij prawym przyciskiem myszy (klawiatury: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Grupuj i Filtruj listę testów
 
@@ -165,9 +165,9 @@ Na przykład `FullName:"MyClass" - FullName:"PerfTest"` zwraca wszystkie testy, 
 
  ![Wybierz listę odtwarzania](../test/media/ute_playlist.png)
 
- **Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kontekstowym wybierz **Dodaj do listy odtwarzania** > **NewPlaylist**. Zapisz plik o nazwie i lokalizacji, którą określasz w **Tworzenie nowej listy odtwarzania** okno dialogowe.
+ **Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kliknij prawym przyciskiem myszy, wybierz **Dodaj do listy odtwarzania** > **NewPlaylist**. Zapisz plik o nazwie i lokalizacji, którą określasz w **Tworzenie nowej listy odtwarzania** okno dialogowe.
 
- **Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kontekstowym wybierz **Dodaj do listy odtwarzania**, a następnie wybierz listę odtwarzania, który chcesz dodać testy.
+ **Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kliknij prawym przyciskiem myszy, wybierz **Dodaj do listy odtwarzania**, a następnie wybierz listę odtwarzania, który chcesz dodać testy.
 
  **Aby otworzyć listę odtwarzania**, wybierz **testu** > **listy odtwarzania** z menu programu Visual Studio, a następnie wybierz z listy niedawno używanych list odtwarzania lub wybierz **Otwórz Lista odtwarzania** Aby określić nazwę i lokalizację listy odtwarzania.
 
@@ -184,13 +184,13 @@ Eksplorator testów umożliwia uruchamianie sesji debugowania dla testów. Kroko
     > [!NOTE]
     > Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.
 
-2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu kontekstowym.
+2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu kliknij prawym przyciskiem myszy.
 
    Aby uzyskać więcej informacji dotyczących debugera, zobacz [debugowania w programie Visual Studio](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnozowanie problemów z wydajnością metoda testu
 
- Aby zdiagnozować, dlaczego metoda testowa zajmuje zbyt dużo czasu, wybierz metodę w Eksploratorze testów, a następnie wybierz **profilu** w menu kontekstowym. Zobacz [Eksplorator wydajności](../profiling/performance-explorer.md).
+ Aby zdiagnozować, dlaczego metoda testowa zajmuje zbyt dużo czasu, wybierz metodę w Eksploratorze testów, a następnie wybierz **profilu** w menu kliknij prawym przyciskiem myszy. Zobacz [Eksplorator wydajności](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizuj pokrycie kodu testu jednostkowego
 
@@ -216,8 +216,8 @@ Testy mogą być uruchamiane z **Eksploratora testów**, klikając prawym przyci
 
 |Częste odzyskiwanie pamięci poleceń| Skróty klawiaturowe|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
-|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
 
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są tylko zdefiniowane w klasy abstrakcyjne i nie jest uruchomiony. Aby uruchomić testy z klasy abstrakcyjne, należy utworzyć klasę, która pochodzi z klasy abstrakcyjnej.

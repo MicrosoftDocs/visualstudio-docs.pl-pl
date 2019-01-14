@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836337"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270128"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
 
@@ -32,8 +32,8 @@ Dostosowywanie bez projektu bazę kodu przy użyciu następujących *.json* plik
 
 |Nazwa pliku|Cel|
 |-|-|
-|*tasks.vs.json*|Określenie niestandardowych poleceń kompilacji i przełączniki kompilatora i dowolnego (bez kompilacji powiązane) zadania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** element menu kontekstowego **skonfigurować zadania**.|
-|*launch.vs.json*|Określ argumenty wiersza polecenia do debugowania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** element menu kontekstowego **ustawienia debugowania i uruchamiania**.|
+|*tasks.vs.json*|Określenie niestandardowych poleceń kompilacji i przełączniki kompilatora i dowolnego (bez kompilacji powiązane) zadania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy element menu **skonfigurować zadania**.|
+|*launch.vs.json*|Określ argumenty wiersza polecenia do debugowania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy element menu **ustawienia debugowania i uruchamiania**.|
 |*VSWorkspaceSettings.json*|Ogólne ustawienia, które mogą mieć wpływ na zadania i uruchamiania. Na przykład zdefiniowanie `envVars` w *VSWorkspaceSettings.json* dodaje zmienne środowiska określonego zewnętrznie uruchamianie poleceń.<br>Ten plik można tworzyć ręcznie.|
 
 Te *.json* pliki znajdują się w ukrytym folderze o nazwie *.vs* w folderze głównym kodu. *Tasks.vs.json* i *launch.vs.json* pliki są tworzone przez program Visual Studio na zgodnie z potrzebami, po wybraniu **skonfigurować zadania** lub **debugowania Ustawienia i uruchamiania** do pliku lub folderu w **Eksploratora rozwiązań**. Te *.json* pliki są ukryte, ponieważ użytkownicy zwykle nie chcesz zaewidencjonować je w kontroli źródła. Jednak jeśli chcesz mieć możliwość sprawdzania ich do kontroli źródła, przeciągnij pliki w folderze głównym w bazie kodu, gdzie są one widoczne.
@@ -47,7 +47,7 @@ Można zautomatyzować skrypty kompilacji lub innych zewnętrznych operacji na p
 
 ![Konfigurowanie menu zadania](../ide/media/customize-configure-tasks-menu.png)
 
-Tworzy (lub zostanie otwarty) *tasks.vs.json* w pliku *.vs* folderu. Można zdefiniować zadania kompilacji lub dowolnego zadania w tym pliku, a następnie wywołaj go przy użyciu nazwy, należy nadać mu z **Eksploratora rozwiązań** menu kontekstowego.
+Tworzy (lub zostanie otwarty) *tasks.vs.json* w pliku *.vs* folderu. Można zdefiniować zadania kompilacji lub dowolnego zadania w tym pliku, a następnie wywołaj go przy użyciu nazwy, należy nadać mu z **Eksploratora rozwiązań** prawym przyciskiem myszy.
 
 Niestandardowe zadania można dodawać do pojedynczych plików lub do wszystkich plików określonego typu. Na przykład pliki pakietu NuGet można skonfigurować, aby zadanie "Przywróć Packages" lub wszystkie pliki źródłowe można skonfigurować tak, aby zadanie analizy statycznej, takich jak linter dla wszystkich *js* plików.
 
@@ -118,7 +118,7 @@ Aby uzyskać takie *pliku reguł programu make* , zawierający kompilacji czyste
 }
 ```
 
-Po zdefiniowaniu zadań kompilacji w *tasks.vs.json*, dodatkowy kontekst elementy menu są dodawane do odpowiednich plików w **Eksploratora rozwiązań**. Na przykład "kompilacja", "rebuild" i "czysta" opcje są dodawane do menu kontekstowego dowolnego *pliku reguł programu make* plików.
+Po zdefiniowaniu zadań kompilacji w *tasks.vs.json*, dodatkowe kliknij prawym przyciskiem myszy menu (menu kontekstowe) elementy są dodawane do odpowiednich plików w **Eksploratora rozwiązań**. Na przykład "kompilacja", "rebuild" i "czysta" opcje są dodawane do menu kontekstowego dowolnego *pliku reguł programu make* plików.
 
 ![menu kontekstowe pliku reguł programu make, kompilacji, ponownej kompilacji i czyszczenia](media/customize-build-rebuild-clean.png)
 

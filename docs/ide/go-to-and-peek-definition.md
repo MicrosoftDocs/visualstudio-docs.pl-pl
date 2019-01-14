@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868907"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269842"
 ---
 # <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typów i elementów członkowskich
 
@@ -27,7 +27,7 @@ Często deweloperzy muszą wyświetlać definicje kodu źródłowego dla typów 
 
 ## <a name="go-to-definition"></a>Przejdź do definicji
 
-**Przejdź do definicji** funkcja powoduje przejście do źródłowego typu lub elementu członkowskiego i otwiera wynik w nowej karcie. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy symbolu i naciśnij klawisz **F12**. Jeśli jesteś użytkownikiem myszy, wybrać **przejdź do definicji** z menu kontekstowego lub użyj **naciśniętym klawiszem CTRL** funkcji opisanych w poniższej sekcji.
+**Przejdź do definicji** funkcja powoduje przejście do źródłowego typu lub elementu członkowskiego i otwiera wynik w nowej karcie. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy symbolu i naciśnij klawisz **F12**. Jeśli jesteś użytkownikiem myszy, wybrać **przejdź do definicji** z menu kliknij prawym przyciskiem myszy lub użyj **naciśniętym klawiszem CTRL** funkcji opisanych w poniższej sekcji.
 
 ### <a name="ctrl-click-go-to-definition"></a>Naciśnij klawisz CTRL i kliknij Przejdź do definicji
 
@@ -41,7 +41,7 @@ Możesz zmienić klucz modyfikujący kliknięcie myszą **przejdź do definicji*
 
 ## <a name="peek-definition"></a>Zobacz definicję
 
-**Peek Definition** funkcji umożliwia podgląd definicji typu bez opuszczania Twojej bieżącej lokalizacji w edytorze. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy typu lub elementu członkowskiego i naciśnij klawisz **Alt + F12**. Jeśli jesteś użytkownikiem myszy, możesz wybrać **Peek Definition** z menu kontekstowego. W programie Visual Studio 2017 w wersji 15.4 i nowszych istnieje nowy sposób na wyświetlanie podglądu definicji za pomocą myszy. Przejdź najpierw do **narzędzia** > **opcje** > **edytora tekstów** > **ogólne**. Wybierz opcję **Otwórz definicję w widoku podglądu** i kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
+**Peek Definition** funkcji umożliwia podgląd definicji typu bez opuszczania Twojej bieżącej lokalizacji w edytorze. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy typu lub elementu członkowskiego i naciśnij klawisz **Alt + F12**. Jeśli jesteś użytkownikiem myszy, możesz wybrać **Peek Definition** z menu podręcznego. W programie Visual Studio 2017 w wersji 15.4 i nowszych istnieje nowy sposób na wyświetlanie podglądu definicji za pomocą myszy. Przejdź najpierw do **narzędzia** > **opcje** > **edytora tekstów** > **ogólne**. Wybierz opcję **Otwórz definicję w widoku podglądu** i kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
 
 ![Ustawianie opcji kliknięcie myszą definicji wglądu](../ide/media/editor_options_peek_view.png)
 

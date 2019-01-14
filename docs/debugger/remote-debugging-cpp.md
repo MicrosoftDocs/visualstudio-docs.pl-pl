@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884587"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269764"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Zdalne debugowanie projektu Visual C++ w programie Visual Studio
 Debugowanie aplikacji Visual Studio na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w którym wdrożysz swoją aplikację, należy skonfigurować projekt, aby połączyć się z komputerem zdalnym z programu Visual Studio, a następnie wdrożyć i uruchomić aplikację.
@@ -106,7 +106,7 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 lub nowszej (nie phone) i 
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)   
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)   
  [Skonfiguruj zaporę Windows do zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)   
  [Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  

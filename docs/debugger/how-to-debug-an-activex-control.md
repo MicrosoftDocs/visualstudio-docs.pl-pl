@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924790"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269686"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Instrukcje: Debugowanie kontrolki ActiveX
 
@@ -62,4 +62,4 @@ Aby debugować formant ActiveX, należy określić (plik wykonywalny) dla forman
 - [Testowanie właściwości i zdarzeń za pomocą kontenera testu](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)
 - [Debugowanie w programie Visual Studio](../debugger/index.md)
-- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

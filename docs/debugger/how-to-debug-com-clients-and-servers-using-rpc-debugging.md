@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9df8a9dfeef620ba7afab517bc00e16717e7096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874222"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269268"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Instrukcje: Debugowanie klientów i serwerów za pomocą debugowania RPC COM
 Debugowanie zdalnego wywołania (procedur RPC) procedury można użyć do debugowania aplikacji typu klient/serwer COM. Konieczne jest włączenie debugowania z niej korzystać RPC. Z włączonym debugowaniem RPC, po kroku do wywołania serwera z klienta, debuger dołącza do serwera i umożliwia debugowanie kodu. Gdy debuger jest dołączony, mogą używać wszystkich funkcji debugera, procesy klienta i serwera.  
@@ -54,4 +54,5 @@ Debugowanie zdalnego wywołania (procedur RPC) procedury można użyć do debugo
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)  
- [Debugowanie w programie Visual Studio](../debugger/index.md) [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+ [Debugowanie w programie Visual Studio](../debugger/index.md)  
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

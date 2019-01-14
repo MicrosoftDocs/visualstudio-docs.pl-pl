@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831157"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269284"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Dostosowywanie zagnieżdżania plików w Eksploratorze rozwiązań
 
@@ -131,11 +131,11 @@ Możesz określić wszystkie ustawienia, w tym własne niestandardowe ustawienia
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>Tworzenie ustawień specyficznych dla rozwiązania i specyficznych dla projektu
 
-Można utworzyć ustawień specyficznych dla rozwiązania i specyficznych dla projektu za pomocą menu kontekstowe dla każdego rozwiązania i projektu:
+Można utworzyć ustawień specyficznych dla rozwiązania i specyficznych dla projektu za pomocą menu kliknij prawym przyciskiem myszy (menu kontekstowe) każdego rozwiązania i projektu:
 
 ![Rozwiązanie i zagnieżdżenia reguły specyficzne dla projektu](media/filenesting_solutionprojectspecific.png)
 
-Ustawienia specyficzne dla rozwiązania i specyficznych dla projektu są połączone z aktywne ustawienia programu Visual Studio. Na przykład może być plikiem puste ustawienia specyficzne dla projektu, ale **Eksploratora rozwiązań** nadal jest zagnieżdżanie plików. Zachowanie zagnieżdżenia pochodzi z ustawienia specyficzne dla rozwiązania lub ustawienia programu Visual Studio. Pierwszeństwo przed scaleniem ustawienia zagnieżdżania plików to: Program Visual Studio > rozwiązania > Projekt.
+Ustawienia specyficzne dla rozwiązania i specyficznych dla projektu są połączone z aktywne ustawienia programu Visual Studio. Na przykład może być plikiem puste ustawienia specyficzne dla projektu, ale **Eksploratora rozwiązań** nadal jest zagnieżdżanie plików. Zachowanie zagnieżdżenia pochodzi z ustawienia specyficzne dla rozwiązania lub ustawienia programu Visual Studio. Pierwszeństwo przed scaleniem ustawienia zagnieżdżania plików to: Visual Studio > Solution > Project.
 
 Visual Studio, aby zignorować ustawień specyficznych dla rozwiązania i specyficznych dla projektu, można stwierdzić, nawet jeśli pliki znajdują się na dysku, włączając opcję **ignorowanie ustawień rozwiązania i projektu** w obszarze **narzędzia**  >  **Opcje** > **platformy ASP.NET Core** > **zagnieżdżanie plików**.
 

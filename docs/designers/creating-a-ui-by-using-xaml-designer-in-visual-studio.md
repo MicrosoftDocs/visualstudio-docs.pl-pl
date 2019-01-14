@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880413"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270024"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 
@@ -162,7 +162,7 @@ Okno konspektu dokumentu w Projektancie XAML pomaga wykonywać następujące zad
 
 - Tworzenie i modyfikowanie szablonów elementów będących kontrolkami.
 
-- Użyj menu kontekstowego dla wybranych elementów. Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.
+- Dla wybranych elementów, należy użyć menu kontekstowego (menu kontekstowe). Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.
 
 Aby wyświetlić **konspekt dokumentu** okna, na pasku menu wybierz **widoku** > **Windows inne** > **konspekt dokumentu**.
 
@@ -178,7 +178,7 @@ Widok główny w **konspekt dokumentu** okno wyświetla hierarchię dokumentu w 
 
 Wyświetla lub ukrywa elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Użyj **Pokaż/Ukryj** przycisków, które wyświetlić symbol oka po pokazano, lub naciśnij klawisz **Ctrl**+**H** do ukrywania elementów i **Shift** + **Ctrl**+**H** umożliwiający ich wyświetlenie.
 
-**Zablokuj/Odblokuj**
+**Lock/unlock**
 
 Blokuje albo odblokowuje elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Nie można zmodyfikować zablokowanych elementów. Użyj **Zablokuj/Odblokuj** przyciski wyświetlania symbolu kłódki, gdy zablokowany, lub naciśnij klawisz **Ctrl**+**L** elementy blokady i **Shift** + **Ctrl**+**L** je odblokować.
 

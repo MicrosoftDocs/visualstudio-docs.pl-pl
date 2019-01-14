@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1e1e01721ae261b756bd6f3567b8f06dc73f12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921341"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269855"
 ---
 # <a name="find-references-in-your-code"></a>Znajdowanie odwołań w kodzie
 
@@ -40,13 +40,13 @@ Można użyć następujących metod można przejść do odwołań w **odwołania
 
 - Naciśnij klawisz **F8** można przejść do następnego odwołanie, lub **Shift + F8** można przejść do poprzedniej odwołania.
 - Naciśnij klawisz **Enter** klucz odwołanie lub kliknij dwukrotnie, aby przejść do niego w kodzie.
-- W menu kontekstowym odwołanie, wybierz **przejdź do poprzedniej lokalizacji** lub **przejdź do następnej lokalizacji** poleceń.
+- W menu kliknij prawym przyciskiem myszy (menu kontekstowe) odwołanie, wybierz **przejdź do poprzedniej lokalizacji** lub **przejdź do następnej lokalizacji** poleceń.
 - Wybierz **Strzałka w górę** i **strzałkę w dół** kluczy (jeśli są one włączone w **opcje** okno dialogowe). Aby włączyć tę funkcję, na pasku menu wybierz **narzędzia** > **opcje** > **środowiska**  >   **Karty i Windows** > **karcie podglądu**, a następnie wybierz pozycję **Zezwalaj na nowe pliki były otwierane w karcie podglądu** i **Podgląd zaznaczonych plików w Znajdź wyniki** pola.
 
 ## <a name="change-reference-groupings"></a>Zmień odwołania grupowania
 Domyślnie odwołania są pogrupowane według projektu, następnie zgodnie z definicją. Jednak ta kolejność grupowania można zmienić, zmieniając ustawienie w **Grupuj według:** pole listy rozwijanej na pasku narzędzi. Na przykład można zmienić go z ustawieniem domyślnym **projekt, a następnie definicja** do **definicja, a następnie projekt**, jak również do innych ustawień.
 
-**Definicja** i **projektu** są używane dwie domyślne grupowania, ale możesz dodać inne, wybierając **grupowanie** polecenia w menu kontekstowym wybranego elementu. Dodawanie więcej grupowań mogą być przydatne, jeśli rozwiązanie ma wiele plików i ścieżek.
+**Definicja** i **projektu** są używane dwie domyślne grupowania, ale możesz dodać inne, wybierając **grupowanie** polecenia menu kliknij prawym przyciskiem myszy lub kontekst wybranego elementu. Dodawanie więcej grupowań mogą być przydatne, jeśli rozwiązanie ma wiele plików i ścieżek.
 
 ## <a name="see-also"></a>Zobacz także
 

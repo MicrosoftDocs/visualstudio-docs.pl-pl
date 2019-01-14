@@ -15,12 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21c4f8a7c1f8e5d5449f576740e8f901d25d9006
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837176"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269536"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generowanie i uruchamianie kodowanego testu wydajności sieci Web
 
@@ -86,7 +86,7 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
 ## <a name="qa"></a>PYTANIA I ODPOWIEDZI
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>PYT.: Można uruchomić więcej niż jeden test naraz?
- **ODP.:** Tak, użyj menu kontekstowego w **Eksploratora rozwiązań**.
+ **ODP.:** Tak, użyj menu kliknij prawym przyciskiem myszy (kontekstu) w **Eksploratora rozwiązań**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>PYT.: Źródło danych należy dodać przed czy po wygenerowaniu kodowanego testu?
  **ODP.:** Łatwiej jest je dodać [źródła danych](../test/add-a-data-source-to-a-web-performance-test.md) przed wygenerowaniem kodowanego testu, ponieważ kod zostanie automatycznie wygenerowany dla Ciebie.

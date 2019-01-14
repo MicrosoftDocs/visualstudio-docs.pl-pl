@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886374"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270297"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpienia elementu DSL w programie Visual Studio. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano generowanego interfejsu API.
@@ -191,7 +191,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
 
  `CommandSet.cs`
 
- Polecenia menu kontekstowego, które są widoczne na diagramie. Można dostosować lub dodać do tego zestawu. Ten plik zawiera kod dla polecenia. Lokalizacja poleceń w menu jest określany przez plik Commands.vsct. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](../modeling/writing-user-commands-and-actions.md).
+ Polecenia menu kliknij prawym przyciskiem myszy, które są widoczne na diagramie. Można dostosować lub dodać do tego zestawu. Ten plik zawiera kod dla polecenia. Lokalizacja poleceń w menu jest określany przez plik Commands.vsct. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Lokalizuje standardowych poleceń w menu, takich jak menu kontekstowego diagram **Edytuj** menu i tak dalej. Kod dla poleceń znajduje się w CommandSet.cs. Można przenosić lub zmodyfikować poleceń standardowych i można dodać własne polecenia. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](../modeling/writing-user-commands-and-actions.md).
+ Lokalizuje standardowych poleceń w menu, takich jak menu (kontekstu) kliknij prawym przyciskiem myszy diagram **Edytuj** menu i tak dalej. Kod dla poleceń znajduje się w CommandSet.cs. Można przenosić lub zmodyfikować poleceń standardowych i można dodać własne polecenia. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  Wybór w Eksploratorze modelu, aby zachować synchronizację z zaznaczenia diagramu, można użyć następującego kodu:
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

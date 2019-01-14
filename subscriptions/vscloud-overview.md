@@ -9,12 +9,12 @@ description: Wypożyczać program Visual Studio Professional lub Visual Studio E
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740224"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269751"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji chmury programu Visual Studio Professional i Visual Studio Enterprise
 
@@ -37,9 +37,7 @@ Każda osoba mająca [dostęp właściciela i współautor](https://na01.safelin
 
 1.  Zaloguj się do [witryny Marketplace programu Visual Studio > Subskrypcje](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Wybierz subskrypcję, której chcesz kupić, na przykład:
-    > [!div class="mx-imgBorder"]
-    > ![Kup subskrypcję programu Visual Studio](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  Wybierz subskrypcję, którą chcesz kupić, na przykład — Visual Studio Professional — subskrypcja miesięczna.
 
 3.  Wybierz subskrypcję platformy Azure na potrzeby rozliczeń. Jeśli nie masz, można utworzyć nową subskrypcję platformy Azure.
     > [!div class="mx-imgBorder"]

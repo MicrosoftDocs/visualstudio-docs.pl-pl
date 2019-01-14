@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060806"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270183"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -83,7 +83,7 @@ Często jest szybsze generowanie projektu testu jednostkowego i wycinków testó
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generowanie projektu testów jednostkowych i testów jednostkowych wycinków
 
-1. W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie **Utwórz testy jednostkowe** z menu kontekstowego.
+1. W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie **Utwórz testy jednostkowe** z menu podręcznego.
 
     ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png)
 
@@ -218,7 +218,7 @@ Można również filtrować testy w dowolnym widoku, pasujący tekst w polu wysz
 
 ![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/ute_toolbar.png)
 
-Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Po uruchomieniu zestawu testów, podsumowanie przebiegu testu zostanie wyświetlony u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku. Wybierz **Otwórz Test** z menu kontekstowego (klawiatura: **F12**) aby wyświetlić kod źródłowy dla wybranych testów.
+Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Po uruchomieniu zestawu testów, podsumowanie przebiegu testu zostanie wyświetlony u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku. Wybierz **Otwórz Test** menu kliknij prawym przyciskiem myszy (klawiatury: **F12**) aby wyświetlić kod źródłowy dla wybranych testów.
 
 Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 

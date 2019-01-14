@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830959"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269647"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania
 W programie Visual C++ można użyć natywny [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:  
@@ -79,6 +79,6 @@ W programie Visual C++ można użyć natywny [runtime_checks](/cpp/preprocessor/
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)   
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [Sprawdzanie błędów czasu wykonywania](/cpp/c-runtime-library/run-time-error-checking)

@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883029"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269894"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
@@ -39,11 +39,11 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
 |-|---------------|-|
-|**Odtwórz dźwięk**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Odtwórz \<name > Audio z zakresu od 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Odtwórz dźwięk**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Odtwórz \<name > Audio z zakresu od 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Starać się w określonym czasie które usłyszysz**|Wyszukiwanie \<name > Audio do 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Wstrzymaj audio**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wstrzymaj \<name > Audio na 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Wycisz audio**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wycisz \<name > Audio|HtmlAudio.Mute()|
-|**Wyłącz Wyciszenie audio**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wyłącz wyciszenie \<name > Audio|HtmlAudio.Unmute()|
+|**Wstrzymaj audio**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Wstrzymaj \<name > Audio na 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Wycisz audio**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Wycisz \<name > Audio|HtmlAudio.Mute()|
+|**Wyłącz Wyciszenie audio**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Wyłącz wyciszenie \<name > Audio|HtmlAudio.Unmute()|
 |**Zmień głośność dźwięku**|Ustaw głośność \<name > Audio do 79%|HtmlAudio.SetVolume(float)|
 
 Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) listę właściwości, na których można dodać potwierdzenia.
@@ -63,11 +63,11 @@ Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
 |-|---------------|-|
-|**Odtwórz wideo**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Odtwórz \<name > wideo z zakresu od 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Odtwórz wideo**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Odtwórz \<name > wideo z zakresu od 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Starać się w określonym czasie, w trakcie filmu wideo**|Wyszukiwanie \<name > film, aby 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Wstrzymaj wideo**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wstrzymaj \<name > wideo o 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Wycisz wideo**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wycisz \<name > wideo|HtmlVideo.Mute()|
-|**Wyłącz Wyciszenie wideo**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wyłącz wyciszenie \<name > wideo|HtmlVideo.Unmute()|
+|**Wstrzymaj wideo**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Wstrzymaj \<name > wideo o 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Wycisz wideo**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Wycisz \<name > wideo|HtmlVideo.Mute()|
+|**Wyłącz Wyciszenie wideo**<br /><br /> Bezpośrednio z kontrolki lub kontrolki prawym przyciskiem myszy.|Wyłącz wyciszenie \<name > wideo|HtmlVideo.Unmute()|
 |**Zmień ilość wideo**|Ustaw głośność \<name > wideo do 79%||
 
 Zobacz [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) listę właściwości, na których można dodać potwierdzenia.

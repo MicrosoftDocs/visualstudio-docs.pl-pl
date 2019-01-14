@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd6e10732c0248206810c9690910a8bd2f09ccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 570e7c5b4ec64c4e21b53cef38b89a5846cc1bb7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849635"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269699"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Instrukcje: Ustawianie punktów przerwania w przepływach pracy
 
@@ -37,7 +37,7 @@ Punkt przerwania ma trzy stany: *Oczekujące*, *powiązany*, i *błąd*. Po usta
 
 2. Na **debugowania** menu, wybierz opcję **Przełącz punkt przerwania**. Czerwona ikona pojawi się do górnej krawędzi lewej działania.
 
-   Alternatywnie, możesz nacisnąć przycisk **F9** po wybranie działania lub możesz można kliknij działanie prawym przyciskiem myszy i wybrać **punktu przerwania** > **Wstaw punkt przerwania** z menu kontekstowego.
+   Alternatywnie, możesz nacisnąć przycisk **F9** po wybranie działania lub możesz można kliknij działanie prawym przyciskiem myszy i wybrać **punktu przerwania** > **Wstaw punkt przerwania** w menu kliknij prawym przyciskiem myszy.
 
 ## <a name="see-also"></a>Zobacz także
 

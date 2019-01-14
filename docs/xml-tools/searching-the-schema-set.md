@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836572"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270076"
 ---
 # <a name="search-the-schema-set"></a>Wyszukiwanie zestawu schematów
 
@@ -40,7 +40,7 @@ ms.locfileid: "53836572"
 
 ## <a name="schema-specific-search"></a>Wyszukiwanie określonego schematu
 
- **Eksploratora schematu XML** zawiera także wbudowaną wyszukiwania, które mogą uzyskać dostęp za pomocą menu kontekstowego **Eksploratora schematu XML**. Aby uzyskać więcej informacji na temat menu kontekstowe dostępne zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md). Można również wykonać wyszukiwanie specyficzne dla schematu z widoku startowego; Aby uzyskać więcej informacji, zobacz sekcję "Szczegóły zestawu schematów" w [widoku Start](../xml-tools/start-view.md) tematu.
+ **Eksploratora schematu XML** zawiera także wbudowaną wyszukiwania, które mogą uzyskać dostęp za pomocą menu kontekstowe (kliknij prawym przyciskiem myszy) **Eksploratora schematu XML**. Aby uzyskać więcej informacji na temat menu kontekstowe dostępne zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md). Można również wykonać wyszukiwanie specyficzne dla schematu z widoku startowego; Aby uzyskać więcej informacji, zobacz sekcję "Szczegóły zestawu schematów" w [widoku Start](../xml-tools/start-view.md) tematu.
 
 ## <a name="display-and-navigate-search-results"></a>Wyświetlaj i nawigować po wynikach wyszukiwania
 

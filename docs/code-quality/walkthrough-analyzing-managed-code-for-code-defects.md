@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955256"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269227"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu
 
@@ -183,13 +183,11 @@ Ten przewodnik przeprowadzi Cię przez proces przy użyciu analizy kodu, aby ana
 
 ## <a name="exclude-code-analysis-warnings"></a>Wyklucz ostrzeżenia analizy kodu
 
-### <a name="to-exclude-code-defect-warnings"></a>Aby wyłączyć ostrzeżenia wad kodu
-
 1. Dla każdej z pozostałych ostrzeżenia należy wykonać następujące czynności:
 
     1. Wybrać ostrzeżenie w **lista błędów**.
 
-    1. Wybierz z menu kliknij prawym przyciskiem myszy lub kontekst **Pomiń** > **w pliku pominięć**.
+    1. Z menu podręcznego (menu kontekstowe) wybierz **Pomiń** > **w pliku pominięć**.
 
 1. Skompiluj ponownie projekt.
 

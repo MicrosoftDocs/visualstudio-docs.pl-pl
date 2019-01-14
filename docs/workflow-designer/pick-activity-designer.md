@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946610"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269504"
 ---
 # <a name="pick-activity-designer"></a>Pick, projektant działań
 
@@ -30,7 +30,7 @@ A <xref:System.Activities.Statements.Pick> aktywności zawiera zbiór <xref:Syst
 
 Dostęp do **wybierz** projektanta działań w **przepływ sterowania** kategorii **przybornika**. **Wybierz** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie Projektanci działań są zazwyczaj umieszczone, na przykład wewnątrz  **Sekwencja** projektanta działań. Po upuszczając go do projektanta przepływów pracy, tworzy <xref:System.Activities.Statements.Pick> działania, które domyślnie zawiera dwa puste <xref:System.Activities.Statements.PickBranch> działań jako elementy za pomocą wyświetlania nazw Branch1 i Branch2. Te odpowiednich <xref:System.Activities.Statements.PickBranch.DisplayName%2A> wartości właściwości mogą być edytowane w **PickBranch** nagłówka projektanta działań lub w ramach **właściwości** okna dla każdej gałęzi.
 
-Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> działań do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika** lub za pomocą menu kontekstowego w ramach **wybierz** powierzchni projektowej. Aby uzyskać więcej informacji, zobacz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tematu. Zwróć uwagę, że tylko element, którego można umieścić wewnątrz **wybierz** jest Projektant działań **PickBranch** projektanta działań.
+Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> działań do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika** lub za pomocą menu kliknij prawym przyciskiem myszy z poziomu **wybierz** powierzchni projektowej. Aby uzyskać więcej informacji, zobacz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tematu. Zwróć uwagę, że tylko element, którego można umieścić wewnątrz **wybierz** jest Projektant działań **PickBranch** projektanta działań.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Wybierz właściwości działania w Projektancie przepływu pracy
 

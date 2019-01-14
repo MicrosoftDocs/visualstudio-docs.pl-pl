@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826997"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269907"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -42,7 +42,7 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 
  W dolnej części widoku wykresu za pomocą paska nawigacji pokazuje, gdzie wybrany węzeł znajduje się w zestawie schematów. Jeśli zaznaczono wiele elementów paska nawigacji jest puste.
 
-## <a name="context-menu"></a>Menu kontekstowe
+## <a name="context-right-click-menu"></a>Menu kontekstowe (kliknij prawym przyciskiem myszy)
 
  W poniższej tabeli opisano opcje, które są dostępne dla wszystkich węzłów na powierzchni projektowej widoku wykresu.
 
@@ -92,7 +92,7 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 
 ## <a name="properties-window"></a>Okno właściwości
 
- Użyj menu kontekstowego, aby otworzyć początkowo **właściwości** okna. Domyślnie **właściwości** okno pojawia się w prawym dolnym rogu programu Visual Studio. Po kliknięciu węzła, który jest renderowany w widoku modelu zawartości, będzie można wyświetlić właściwości tego węzła w **właściwości** okna.
+ Użyj menu kontekstowe (kliknij prawym przyciskiem myszy), aby otworzyć początkowo **właściwości** okna. Domyślnie **właściwości** okno pojawia się w prawym dolnym rogu programu Visual Studio. Po kliknięciu węzła, który jest renderowany w widoku modelu zawartości, będzie można wyświetlić właściwości tego węzła w **właściwości** okna.
 
 ## <a name="xsd-toolbar"></a>Pasek narzędzi XSD
 
@@ -102,9 +102,9 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**3**.|
+|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **Ctrl**+**1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **Ctrl**+**2**.|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **Ctrl**+**3**.|
 |**Usuń obszar roboczy**|Usuwa obszar roboczy i powierzchni projektowej.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystkie oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej. Ta opcja jest włączona, w widoku modelu zawartości i w widoku wykresu.|
@@ -141,7 +141,7 @@ Suwak powiększenia jest nieprzezroczysta, zaznacz go, umieść kursor nad nim l
 
 ## <a name="xml-editor-integration"></a>Integracja z edytorem XML
 
- Możesz przełączać się i z powrotem między widoku wykresu i edytorem XML, klikając węzeł i przy użyciu menu kontekstowe widoku kodu.
+ Możesz przełączać się i z powrotem między widoku wykresu i edytorem XML, klikając węzeł i przy użyciu menu kontekstowe (kliknij prawym przyciskiem myszy) widoku kodu.
 
  Jeśli wprowadzisz zmiany w schemacie zestawu w edytorze XML, zmiany zostaną zsynchronizowane w widoku wykresu. Aby uzyskać więcej informacji, zobacz [Integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md).
 

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890712"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269803"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
 Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co należy zrobić, Utwórz plik XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. Możesz również dodać parametry odwołań i zastąpień w kodzie. Można dodać fragment kodu do instalacji programu Visual Studio przy użyciu **importu** znajdujący się na **Menedżera wstawek kodu** (**narzędzia**  >   **Menedżer fragmentów kodu**).
@@ -77,9 +77,9 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
 
 5.  Fragment kodu zostanie skopiowany do następującej lokalizacji:
 
-     *Fragmenty kodu %USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual Basic\My*
+     *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  Przetestuj swój fragment kodu, otwierając projekt Visual Basic i otwierania pliku kodu. W pliku wybierz **fragmenty** > **Wstaw fragment kodu** z menu kontekstowe, a następnie **Moje fragmenty kodu**. Powinieneś zobaczyć fragment o nazwie **Moje wstawki kodu programu Visual Basic**. Kliknij go dwukrotnie.
+6.  Przetestuj swój fragment kodu, otwierając projekt Visual Basic i otwierania pliku kodu. W pliku wybierz **fragmenty** > **Wstaw fragment kodu** z menu kliknij prawym przyciskiem myszy, a następnie **Moje fragmenty kodu**. Powinieneś zobaczyć fragment o nazwie **Moje wstawki kodu programu Visual Basic**. Kliknij go dwukrotnie.
 
     `Console.WriteLine("Hello, World!")` dodaje się w pliku kodu.
 

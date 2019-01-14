@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bca0dacf2fd649db91fb37756c1670af403b4e95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869193"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269414"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 
@@ -44,7 +44,7 @@ W **projektanta klas**, C++ typedef ma kształt z typem określonym w definicji 
 
 Klasy i struktury może mieć definicje typów zagnieżdżonych, zadeklarowany wewnątrz nich. W **projektanta klas**, kształty klasy i struktury można wyświetlić deklaracje typedef zagnieżdżonych kształtów jako zagnieżdżonych.
 
-Element TypeDef kształty pomocy technicznej **wyświetlić jako skojarzenie** i **pokazać jako skojarzenia kolekcji** poleceń w menu kontekstowym.
+Element TypeDef kształty pomocy technicznej **wyświetlić jako skojarzenie** i **pokazać jako skojarzenia kolekcji** poleceń w menu kliknij prawym przyciskiem myszy (menu kontekstowe).
 
 ### <a name="class-typedef-example"></a>Przykład element typedef dla klasy
 
@@ -86,4 +86,4 @@ typedef class coord
 ## <a name="see-also"></a>Zobacz także
 
 - [Praca z kodem Visual C++](working-with-visual-cpp-code.md)
-- [Definicje typów](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859006"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269816"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch, projektant działań
 
@@ -34,7 +34,7 @@ Dostęp do **TryCatch** projektanta działań w **obsługę błędów** kategori
 
 Kliknij przycisk rozwijania w prawym górnym rogu **TryCatch** projektanta, aby zobaczyć **spróbuj**, **przechwytuje**, i **na koniec** pól rozwinięty widok. Aby dodać bloku catch, kliknij **Dodaj nowe catch** znajdujący się na **TryCatch** projektanta. Przycisk zmienia pole kombi typu. Wybierz typ wyjątku, a następnie naciśnij klawisz ENTER, aby dodać catch. Po dodaniu **Catch**rozwija obszar catch i działania można upuszczać WE catch, aby zdefiniować logikę wykonywania catch. Zwróć uwagę, że pola tekstowego po prawej stronie obszaru rozwiniętej catch. Możesz nazwać zmienną wyjątków za pomocą tego pola tekstowego. Zmienna wyjątków należy używać tylko dla działań w tym samym **Catch**.
 
-**TryCatch** Projektant nie obsługuje edytowania **Catch**. Jeśli chcesz zmienić typ wyjątku, musisz usunąć **Catch** i dodania nowego. A **Catch** można je usunąć, wybierając ją i usunięcie go lub za pomocą **Usuń** menu w menu kontekstowym, dostępnego po kliknięciu prawym przyciskiem myszy.
+**TryCatch** Projektant nie obsługuje edytowania **Catch**. Jeśli chcesz zmienić typ wyjątku, musisz usunąć **Catch** i dodania nowego. A **Catch** można je usunąć, wybierając ją, a następnie usunięcie go lub wybierając **Usuń** z menu kontekstowego, która jest dostępna przez kliknięcie prawym przyciskiem myszy.
 
 ### <a name="the-trycatch-properties"></a>Właściwości TryCatch
 

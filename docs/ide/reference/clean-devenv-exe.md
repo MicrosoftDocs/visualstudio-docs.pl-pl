@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba03deab04fa3660d48de84803e4fc974965c0b
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: fd2271ca3a2a674d569bc20ad6b45642e460108f
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227151"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269569"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -33,13 +33,13 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 ## <a name="arguments"></a>Argumenty
 
-- *Nazwa rozwiązania*
+- *SolutionName*
 
   Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
 
 - *config*
 
-  Opcjonalna. Konfigurację, aby wyczyścić pośrednie pliki (takie jak `Debug` lub `Release`). Jeśli ten argument jest wykluczony, narzędzie używa aktywnej konfiguracji rozwiązania.
+  Opcjonalna. Konfiguracja (takie jak `Debug` lub `Release`) można wyczyścić pośrednie pliki dla rozwiązania o nazwie w *SolutionName*. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślona lub pusty ciąg (`""`), narzędzie użyje aktywnej konfiguracji rozwiązania.
 
 - `/Project` *ProjName*
 
@@ -47,7 +47,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Opcjonalna. Nazwa konfiguracji kompilacji projektu który będzie używany podczas czyszczenia `/Project` o nazwie. Jeśli ten parametr jest określony, zastępuje ona *Config* argumentu.
+  Opcjonalna. Nazwa konfiguracji kompilacji projektu (takie jak `Debug` lub `Release`) ma być używany podczas czyszczenia `/Project` o nazwie. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten parametr jest określony, zastępuje ona *Config* argumentu.
 
 - `/Out` *OutputFilename*
 

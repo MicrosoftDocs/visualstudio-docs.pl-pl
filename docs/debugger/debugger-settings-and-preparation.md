@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926862"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269777"
 ---
 # <a name="debugger-settings-and-preparation"></a>Ustawienia debugera i przygotowanie
 W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotowania potrzebne debugowaniem programu za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. Jeśli tworzysz swój program w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu szablonów projektu, te ustawienia są ustawione prawidłowo dla Ciebie w konfiguracji debugowania.  
@@ -40,7 +40,7 @@ W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotow
  [Projekty konsoli](../debugger/debugging-preparation-console-projects.md)  
  Instrukcje dotyczące sposobu konfigurowania projekty startowe do debugowania.   
   
- [Instrukcje: Debugowanie pliku wykonywalnego nie jest częścią rozwiązania programu Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Instrukcje: Debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Wyjaśnia, jak można debugować plik wykonywalny, który nie został utworzony jako część projektu programu Visual Studio.  
   
  [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)  
@@ -52,4 +52,4 @@ W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotow
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)  
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

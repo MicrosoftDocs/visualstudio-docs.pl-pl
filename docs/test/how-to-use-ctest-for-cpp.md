@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: d02c4546b98e2a7551f4454088acfc6a54637e4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 057f243b0246bac1796fe160550e83f922593830
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925462"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270222"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak używać narzędzia CTest dla języka C++ w programie Visual Studio
 
@@ -35,7 +35,7 @@ Jeśli używasz narzędzia CTest, ale nie Google lub Boost kart, zobaczysz wynik
 
 ## <a name="to-run-tests-visual-studio-2017-version-155"></a>Aby uruchomić testy (Visual Studio 2017 w wersji 15.5)
 
-W **programu Visual Studio 2017 w wersji 15.5**, narzędzia CTest nie jest zintegrowany z **Eksplorator testów**. Można uruchomić testy z menu głównego narzędzia CMake lub z menu kontekstowego *CMakeLists.txt* w pliku **Eksploratora rozwiązań**. Wyniki testów są kierowane do programu Visual Studio **okno danych wyjściowych**.
+W **programu Visual Studio 2017 w wersji 15.5**, narzędzia CTest nie jest zintegrowany z **Eksplorator testów**. Możesz uruchomić testy z menu głównego narzędzia CMake lub w menu kliknij prawym przyciskiem myszy *CMakeLists.txt* w pliku **Eksploratora rozwiązań**. Wyniki testów są kierowane do programu Visual Studio **okno danych wyjściowych**.
 
 ![Uruchom testy narzędzia CTest w wersji 15.5 programu VS 2017](media/cpp-cmake-run-tests.png)
 

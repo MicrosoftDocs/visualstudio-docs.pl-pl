@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908895"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269829"
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
@@ -129,7 +129,7 @@ Można usunąć rozwiązania i ich zawartość trwale, ale nie przy użyciu prog
 
 ### <a name="to-permanently-delete-a-solution"></a>Aby trwale usunąć rozwiązanie
 
-1. W **Eksploratora rozwiązań**, w menu kontekstowym rozwiązania, aby usunąć, wybierz **Otwórz folder w Eksploratorze plików**.
+1. W **Eksploratora rozwiązań**, w menu kliknij prawym przyciskiem myszy (menu kontekstowe) rozwiązanie, aby usunąć, wybierz **Otwórz folder w Eksploratorze plików**.
 
 1. W Eksploratorze plików Przejdź jeden poziom w górę.
 

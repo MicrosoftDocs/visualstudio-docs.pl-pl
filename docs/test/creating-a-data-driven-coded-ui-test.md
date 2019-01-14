@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968608"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270248"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika
 
@@ -64,11 +64,11 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: **CTRL**+**R**,**T**).
+5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, powyżej, otwórz menu kontekstowe i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
 
     Wynik testu, który pokazuje, jeśli test zakończony powodzeniem lub niepowodzeniem jest wyświetlana w **Eksploratora testów** okna. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.
 
-6. Ponieważ źródła danych można również o wprowadzenie wartości parametrów potwierdzenie — które są używane przez test, aby zweryfikować oczekiwane wartości — Dodajmy potwierdzenie można zweryfikować, czy sumę dwóch liczb jest poprawna. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**, a następnie **Użyj Konstruktor kodowanego testu IU**.
+6. Ponieważ źródła danych można również o wprowadzenie wartości parametrów potwierdzenie — które są używane przez test, aby zweryfikować oczekiwane wartości — Dodajmy potwierdzenie można zweryfikować, czy sumę dwóch liczb jest poprawna. Umieść kursor w metodzie testowej, powyżej, otwórz menu kontekstowe i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu użytkownika**, a następnie **Użyj Konstruktor kodowanego testu IU**.
 
     Mapowanie kontrolki tekstu w kalkulatorze, który wyświetla sumę.
 
@@ -93,7 +93,7 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: **CTRL**+**R**,**T**).
+9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w metodzie testowej, powyżej, otwórz menu kontekstowe i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
 
      W tym momencie wszystkich wartości parametrów są definiowane w ich metod jako stałe. Następnie utworzymy zestaw danych umożliwiają naszym teście opartych na danych.
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870771"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269518"
 ---
 # <a name="debugging-native-code"></a>Debugowanie kodu natywnego
 Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych aplikacji. Technik opisanych w tej sekcji są techniki wysokiego poziomu. Mechanika przy użyciu debugera programu Visual Studio, można zobaczyć [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)).  
@@ -40,7 +40,7 @@ Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych
  [Instrukcje asercji w języku C/C++](../debugger/c-cpp-assertions.md)  
  W tym artykule omówiono instrukcji potwierdzania, jak to działa, zalety korzystania z nich (połowowe błędy logiczne, sprawdzanie wyników operacji i testowanie warunki błędu), ich interakcji z `_DEBUG`oraz typy potwierdzenia obsługiwane w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- [Instrukcje: Debugowanie kodu zestawu wbudowanego](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Instrukcje: Debugowanie śródwierszowego kodu zestawu](../debugger/how-to-debug-inline-assembly-code.md)  
  Zawiera instrukcje na temat korzystania z okna dezasemblacji Aby wyświetlić instrukcje zestawu i z okna rejestrów, aby wyświetlić zawartość rejestru i zawiera łącza do tematów dotyczących tych oknach.  
   
  [Techniki debugowania MFC](../debugger/mfc-debugging-techniques.md)  
@@ -58,7 +58,7 @@ Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych
  [Instrukcje: Debugowanie wprowadzonego kodu](../debugger/how-to-debug-injected-code.md)  
  Wskazówki dotyczące debugowania kodu, który używa atrybutów. Instrukcje zawierają włączanie adnotacji źródła, jak wyświetlić wprowadzonego kodu i sposób wyświetlić kod dezasemblacji w bieżącym punkcie Wykonywanie.  
   
- [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -67,9 +67,9 @@ Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych
 
  [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md) zawiera informacje na temat debugowania bibliotek DLL macierzystych i zarządzanych.
   
- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)  
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)  
  Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje dotyczące nowości w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, Edytuj i Kontynuuj, debugowanie kodu zarządzanego, debugowanie kodu natywnego, debugowanie SQL i odwołania interfejsu użytkownika.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)  
- [Debugowanie w programie Visual Studio](../debugger/index.md) [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+ [Debugowanie w programie Visual Studio](../debugger/index.md) 

@@ -18,16 +18,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889231"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269415"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
-Fragmenty kodu pochodzą małych blokach kodu wielokrotnego użytku, które mogą być wstawiane w pliku kodu za pomocą polecenia menu kontekstowego lub kombinacji klawiszy dostępu. Zwykle zawierają bloki kodu często używane, takich jak `try-finally` lub `if-else` bloków, ale może służyć do wstawienia całej klasy lub metody.
+Fragmenty kodu pochodzą małych blokach kodu wielokrotnego użytku, które mogą być wstawiane w pliku kodu za pomocą polecenia (menu kontekstowe) kliknij prawym przyciskiem myszy menu lub kombinacji klawiszy dostępu. Zwykle zawierają bloki kodu często używane, takich jak `try-finally` lub `if-else` bloków, ale może służyć do wstawienia całej klasy lub metody.
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [(Visual Studio dla komputerów Mac) fragmenty kodu](/visualstudio/mac/snippets).
@@ -61,7 +61,7 @@ finally
 }
 ```
 
-Ten fragment kodu można wstawić, klikając **Wstaw fragment kodu** w menu kontekstowe okna kodu, następnie **Visual C#** , a następnie wpisz `tryf`, a następnie naciśnij klawisz **kartę**. Alternatywnie możesz wpisać `tryf` i naciśnij klawisz **kartę** dwa razy.
+Ten fragment kodu można wstawić, klikając **Wstaw fragment kodu** w menu kliknij prawym przyciskiem myszy (menu kontekstowe) w oknie kodu, następnie **Visual C#** , a następnie wpisz `tryf`, a następnie naciśnij klawisz  **Karta**. Alternatywnie możesz wpisać `tryf` i naciśnij klawisz **kartę** dwa razy.
 
 Przykład fragmentu kodu z funkcji Otocz przez: w języku C++ skrót `if` może służyć jako fragment wstawiania lub z funkcji Otocz przez fragment kodu. Jeśli wybierzesz wiersz kodu (na przykład `return FALSE;`), a następnie wybierz **Otocz** > **Jeśli**, fragment kodu jest rozwinięty wokół linii:
 

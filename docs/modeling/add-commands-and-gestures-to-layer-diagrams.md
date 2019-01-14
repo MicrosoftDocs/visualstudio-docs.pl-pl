@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2322980bcc3cc1c18052b7949cc9e4752ebfaa9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb7dfe94363d757c1ac15a8a44d21d69304c1e60
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940865"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270141"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 
-Można zdefiniować polecenia w menu kontekstowym i elemencie obsługi gestu na diagramach zależności w programie Visual Studio. Można spakować te rozszerzenia w Visual Studio Integration rozszerzenie (VSIX), którą można dystrybuować do innych użytkowników programu Visual Studio.
+Można zdefiniować polecenia menu kliknij prawym przyciskiem myszy i elemencie obsługi gestu na diagramach zależności w programie Visual Studio. Można spakować te rozszerzenia w Visual Studio Integration rozszerzenie (VSIX), którą można dystrybuować do innych użytkowników programu Visual Studio.
 
 Jeśli chcesz, możesz zdefiniować kilka poleceń i elementów obsługi gestów w tym samym projekcie programu Visual Studio. Możesz również połączyć kilka takich projektów w jeden VSIX. Na przykład można zdefiniować pojedynczy VSIX, zawierający polecenia dotyczące warstwy i języka specyficznego dla domeny.
 
