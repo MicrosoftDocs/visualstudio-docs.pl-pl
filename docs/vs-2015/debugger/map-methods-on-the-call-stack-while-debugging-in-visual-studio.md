@@ -35,10 +35,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: douge
 ms.openlocfilehash: 48cf2bd5e2e94b40f5473f75250b417da96bf3b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53951399"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
@@ -62,7 +62,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 1.  Rozpocznij debugowanie. (Klawiatura: **F5**)
 
-2.  Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **CTRL** + **Shift** + **`**)
+2.  Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **Ctrl** + **Shift** + **`**)
 
      ![Wybierz mapę kodu, aby rozpocząć mapowanie stosu wywołań](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 

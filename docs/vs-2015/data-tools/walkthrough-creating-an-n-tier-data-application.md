@@ -21,10 +21,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 050562a8ac0549bb36712781ba80f58aaf2fc82d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53648371"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych

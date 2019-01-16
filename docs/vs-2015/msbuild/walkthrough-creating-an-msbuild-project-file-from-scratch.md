@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie pliku projektu MSBuild od podstaw | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Tworzenie pliku projektu MSBuild od podstaw | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913894"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Wskazówki: tworzenie pliku projektu MSBuild od zera
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od zera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +51,7 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 - Kompiluj przyrostowo.  
   
-  W tym przewodniku przedstawiono sposób budowania projektu w wierszu polecenia i przeglądania wyników. Aby uzyskać więcej informacji na temat MSBuild i sposobach uruchamiania MSBuild w wierszu polecenia, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  W tym przewodniku przedstawiono sposób budowania projektu w wierszu polecenia i przeglądania wyników. Aby uzyskać więcej informacji na temat MSBuild i sposobach uruchamiania MSBuild w wierszu polecenia, zobacz [instruktażu: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
   Aby ukończyć Instruktaż, musisz mieć .NET Framework (wersja 2.0, 3.5, 4.0 lub 4.5) zainstalowane, ponieważ zawiera on MSBuild i kompilator Visual C#, które są wymagane do instruktażu.  
   
@@ -146,10 +146,10 @@ Języki programowania, które obsługują program .NET Framework używają plik�
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ Języki programowania, które obsługują program .NET Framework używają plik�
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ Języki programowania, które obsługują program .NET Framework używają plik�
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -484,7 +484,7 @@ Języki programowania, które obsługują program .NET Framework używają plik�
 ```  
   
 ## <a name="whats-next"></a>Jaka jest przyszłość?  
- Program Visual Studio automatycznie może wykonać większość zadań, która jest wyświetlana w tym przewodniku. Aby dowiedzieć się, jak używać programu Visual Studio do tworzenia, edytowania, kompilowania i testowania plików projektowych programu MSBuild, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Program Visual Studio automatycznie może wykonać większość zadań, która jest wyświetlana w tym przewodniku. Aby dowiedzieć się, jak używać programu Visual Studio do tworzenia, edytowania, kompilowania i testowania plików projektowych programu MSBuild, zobacz [instruktażu: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Zobacz też  
 [Przegląd MSBuild](msbuild.md)  

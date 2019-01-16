@@ -25,10 +25,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49289488"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
@@ -61,7 +61,7 @@ Authenticode * jest technologia firmy Microsoft, która używa branżowego stand
 ### <a name="timestamps"></a>Sygnatury czasowe  
  Certyfikaty używane do podpisywania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje wygasają po upływie określonego czasu, zwykle przez dwanaście miesięcy. Aby wyeliminować potrzebę stale ponownego podpisywania aplikacji przy użyciu nowych certyfikatów [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] obsługuje sygnatury czasowej. Gdy aplikacja jest podpisana z sygnaturą czasową, jego certyfikat będzie nadal być akceptowane, nawet po wygaśnięciu, pod warunkiem, że sygnatura czasowa jest nieprawidłowa. Dzięki temu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji za pomocą wygasłe certyfikaty, ale nieprawidłowy sygnatury czasowe, aby pobrać i uruchomić. Umożliwia także zainstalowanych aplikacji za pomocą wygasłe certyfikaty, aby w dalszym ciągu pobieranie i instalowanie aktualizacji.  
   
- Aby uwzględnić znacznika czasu w serwera aplikacji, musi być dostępny serwera znacznika czasowego. Aby uzyskać informacje o sposobie wybierania serwera znacznika czasowego, zobacz [porady: podpisywanie aplikacji i manifestów wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Aby uwzględnić znacznika czasu w serwera aplikacji, musi być dostępny serwera znacznika czasowego. Aby uzyskać informacje o sposobie wybierania serwera znacznika czasowego, zobacz [jak: Podpisywanie aplikacji i manifestów wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="updating-expired-certificates"></a>Aktualizowanie wygasłych certyfikatów  
  We wcześniejszych wersjach programu .NET Framework aktualizowanie aplikacji wygasło którego certyfikat może spowodować tę aplikację, przestanie działać. Aby rozwiązać ten problem, należy użyć jednej z następujących metod:  

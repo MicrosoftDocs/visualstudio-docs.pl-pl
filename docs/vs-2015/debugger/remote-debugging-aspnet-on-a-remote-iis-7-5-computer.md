@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51764072"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
@@ -64,7 +64,7 @@ Po zainstalowaniu, upewnij się, że debuger zdalny jest uruchomiony na komputer
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    W systemie Windows Server 2008 R2, zainstaluj platformy ASP.NET 4, zamiast tego za pomocą tego polecenia: **\v4.0.30319\aspnet_regiis.exe C:\Windows\Microsoft.NET\Framework (64) - ir**
+    W systemie Windows Server 2008 R2 zainstaluj platformy ASP.NET 4, zamiast tego za pomocą tego polecenia:   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. Skopiuj katalog projektu ASP.NET z komputera, program Visual Studio do katalogu lokalnego (którym Zadzwonimy **C:\Publish**) na komputerze z systemem Windows Server. Można ręcznie skopiować projektu, użyj polecenia Xcopy, narzędzie Web Deploy, Robocopy, programu Powershell lub innych opcji.
 
     > [!CAUTION]

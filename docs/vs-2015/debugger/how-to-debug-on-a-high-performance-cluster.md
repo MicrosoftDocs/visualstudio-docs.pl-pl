@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c2c17e66bdb8df087e4c8085a835686027f23bae
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54154384"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności

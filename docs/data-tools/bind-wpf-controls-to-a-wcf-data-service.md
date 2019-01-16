@@ -17,10 +17,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54269920"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF

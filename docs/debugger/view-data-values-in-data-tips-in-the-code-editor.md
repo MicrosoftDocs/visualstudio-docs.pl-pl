@@ -19,10 +19,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54204404"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Podgląd wartości danych w DataTips w edytorze kodu

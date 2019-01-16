@@ -15,10 +15,10 @@ manager: douge
 ms.workload:
 - uwp
 ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54270024"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio

@@ -13,10 +13,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53055131"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio
@@ -25,9 +25,9 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
 
  Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
 
--   Visual Basic —[porady: Określanie Tworzenie zdarzenia (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic —[jak: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C#i F#—[porady: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   C#i F#—[jak: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ —[określanie zdarzeń kompilacji](/cpp/ide/specifying-build-events).
 
@@ -61,4 +61,4 @@ Zdarzenia kompilacji postępuj zgodnie z tej samej składni jako polecenia syste
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
 - [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — Zdarzenie sprzed kompilacji](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Znaki specjalne w MSBuild](../msbuild/msbuild-special-characters.md)
-- [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)

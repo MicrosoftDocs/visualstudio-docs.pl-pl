@@ -13,10 +13,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e89ae75a3e3ea43e9354df828410a0bdb6f2e79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53902714"
 ---
 # <a name="graphics-object-table"></a>Tabela obiektów graficznych
@@ -48,7 +48,7 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 |**Wysokość**|Wysokość obiektu tekstury. Nie ma zastosowania do innych obiektów.|  
 |**Głębokość**|Głębokość obiektu tekstury 3-D. Jeśli tekstura nie jest 3-w, wartość wynosi 0. Nie ma zastosowania do innych obiektów.|  
 |**MIPS**|Liczba poziomów Mipmapy, które ma obiekt tekstury. Nie ma zastosowania do innych obiektów.|  
-|**Rozmiaru tablicy**|Liczba tekstury w tablicy tekstury. Zakres jest z zakresu od 1 do zdefiniowanych przez bieżący poziom funkcji górną granicę. Dla mapy modułu ta wartość jest 6-krotnością liczby map modułu w tablicy.|  
+|**ArraySize**|Liczba tekstury w tablicy tekstury. Zakres jest z zakresu od 1 do zdefiniowanych przez bieżący poziom funkcji górną granicę. Dla mapy modułu ta wartość jest 6-krotnością liczby map modułu w tablicy.|  
 |**Przykłady**|Liczba multisamples na piksel.|  
   
 ## <a name="graphics-object-viewers"></a>Obiekt grafiki osoby przeglądające  
@@ -83,11 +83,11 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 |**float**|Wartość zmiennoprzecinkowa 32-bitowych.|  
 |**float2**|Wektor, zawierający dwie 32-bitowych wartości zmiennoprzecinkowych.|  
 |**float3**|Wektor, zawierający trzy 32-bitowych wartości zmiennoprzecinkowych.|  
-|**FLOAT4**|Wektor zawierający cztery 32-bitowych wartości zmiennoprzecinkowych.|  
+|**float4**|Wektor zawierający cztery 32-bitowych wartości zmiennoprzecinkowych.|  
 |**byte**|Wartość liczby całkowitej ze znakiem 8-bitowych.|  
-|**2 bajtów**|Wartość liczby całkowitej ze znakiem 16-bitowych.|  
-|**4-bajtowych**|Wartość liczby całkowitej ze znakiem 32-bitowych. Taki sam jak **int**.|  
-|**8 bajtów**|Wartość liczby całkowitej ze znakiem 64-bitowych. Taki sam jak **int64**.|  
+|**2byte**|Wartość liczby całkowitej ze znakiem 16-bitowych.|  
+|**4byte**|Wartość liczby całkowitej ze znakiem 32-bitowych. Taki sam jak **int**.|  
+|**8byte**|Wartość liczby całkowitej ze znakiem 64-bitowych. Taki sam jak **int64**.|  
 |**xbyte**|8-bitową wartość szesnastkową.|  
 |**x2byte**|16-bitową wartość szesnastkową.|  
 |**x4byte**|32-bitową wartość szesnastkową. Taki sam jak **xint**.|  
@@ -96,7 +96,7 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 |**u2byte**|Wartość 16-bitowej nieoznaczonej liczby całkowitej.|  
 |**u4byte**|Wartość 32-bitowej nieoznaczonej liczby całkowitej. Taki sam jak **uint**.|  
 |**u8byte**|Wartość 64-bitowej nieoznaczonej liczby całkowitej. Taki sam jak **uint64**.|  
-|**połowa**|16-bitowych wartości zmiennoprzecinkowych.|  
+|**half**|16-bitowych wartości zmiennoprzecinkowych.|  
 |**half2**|Wektor, zawierający dwie 16-bitowych wartości zmiennoprzecinkowych.|  
 |**half3**|Wektor, zawierający trzy 16-bitowych wartości zmiennoprzecinkowych.|  
 |**half4**|Wektor zawierający cztery 16-bitowych wartości zmiennoprzecinkowych.|  

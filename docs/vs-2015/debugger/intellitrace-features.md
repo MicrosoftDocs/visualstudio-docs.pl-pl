@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d1d7e949236067331408c6b9a8268891ff8b88db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51817480"
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
@@ -39,7 +39,7 @@ ms.locfileid: "51817480"
 
 Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięki czemu można sprawdzić stanu (stos wywołań i wartościach zmiennych lokalnych) w różnych momentach podczas wykonywania wywołania metod. Rozpocznij standardowe debugowanie — funkcja IntelliTrace jest domyślnie włączona i znajdują się informacje funkcji IntelliTrace jest rejestrowanie w nowym **narzędzia diagnostyczne** okna w obszarze **zdarzenia** kartę. Wybierz zdarzenie, a następnie kliknij przycisk **Uaktywnij debugowanie historyczne** aby zobaczyć stos wywołań i zmienne lokalne zapisane dla tego zdarzenia.  
   
- Aby uzyskać opis krok po kroku, zobacz [wskazówki: przy użyciu funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ Aby uzyskać opis krok po kroku, zobacz [instruktażu: Za pomocą funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
  Funkcja IntelliTrace jest dostępne w programie Visual Studio Enterprise, ale nie w Visual Studio Professional lub Community Edition.  
   

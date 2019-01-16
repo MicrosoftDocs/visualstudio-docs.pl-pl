@@ -19,10 +19,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54227983"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpoczynanie debugowania aplikacji wielowątkowych (C#, Visual Basic, C++)
@@ -244,7 +244,7 @@ W **stosów równoległych** okna, można przełączać się między widokiem w�
 
 1. Otwórz **stosów równoległych** okna, wybierając **debugowania** > **Windows** > **stosów równoległych**. Powinien zostać wyświetlony podobny do następującego. Konkretne informacje będą się różnić w zależności od aktualnej lokalizacji każdego wątku, sprzętu i języka programowania.
 
-    ![Okno stosów równoległych](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
+    ![Parallel Stacks Window](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     W tym przykładzie od lewej do prawej możemy zobaczyć te informacje dla kodu zarządzanego:
     

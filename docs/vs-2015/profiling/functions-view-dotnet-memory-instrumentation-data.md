@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8bacc61ec9c254ce662854a08fe6a508977a72e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51730189"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Widok funkcji — dane instrumentacji pamięci platformy .NET
@@ -30,7 +30,7 @@ Widok funkcji .NET dane alokacji pamięci profilowania zebrane przy użyciu meto
   
 ## <a name="general"></a>Ogólne  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa funkcji**|Nazwa funkcji.|  
 |**Adres funkcji**|Adres funkcji.|  
@@ -49,7 +49,7 @@ Widok funkcji .NET dane alokacji pamięci profilowania zebrane przy użyciu meto
   
  Wartości wyłączne pamięci wskazuje liczbę i rozmiar obiektów, które zostały utworzone przy użyciu funkcji, a nie przez jej funkcji podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Przydziały włączne**|Całkowita liczba obiektów, które zostały utworzone w tej funkcji oraz w funkcjach, które zostały wywołane przez tę funkcję.|  
 |**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały przydzielone w uruchomienia profilowania były przydziałów włącznych tej funkcji.|  
@@ -63,7 +63,7 @@ Widok funkcji .NET dane alokacji pamięci profilowania zebrane przy użyciu meto
 ## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
  Upłynęło wartości włącznie wskazują godzinę, będący funkcji na stosie wywołań. Czas obejmuje czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas, który upłynął**|Łączny całkowity czas wszystkie wywołania do tej funkcji, który upłynął.|  
 |**% Całkowitego czasu, który upłynął**|Procent sumy, który upłynął całkowity czas uruchomienia profilowania, która tracony jest czas całkowity czas tej funkcji.|  
@@ -74,7 +74,7 @@ Widok funkcji .NET dane alokacji pamięci profilowania zebrane przy użyciu meto
 ## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości  
  Czas wyłączny wartości wskazują godzinę, wykonywanej funkcji bezpośrednio w górnej części stosu wywołań. Czas obejmuje czas w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale nie obejmuje czas spędzony w funkcjach podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Czas wyłączny, który upłynął**|Suma upłynęło własny czas wszystkie wywołania do tej funkcji.|  
 |**% Wyłącznego czasu, który upłynął**|Procent sumy, który upłynął własny czas uruchomienia profilowania, która tracony jest czas całkowity czas wyłączny tej funkcji.|  
@@ -85,7 +85,7 @@ Widok funkcji .NET dane alokacji pamięci profilowania zebrane przy użyciu meto
 ## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji  
  Aplikacji wartości włącznie wskazują czasu, która funkcja była w stosie wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale ma czas spędzony w funkcjach podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas aplikacji**|Łączny całkowity czas aplikacji dla wszystkich wywołań tej funkcji.|  
 |**% Całkowitego czasu aplikacji**|Procent sumy, który upłynął całkowity czas uruchomienia profilowania, spędzony w kompletnej aplikacji, całkowity czas tej funkcji.|  
@@ -96,7 +96,7 @@ Widok funkcji .NET dane alokacji pamięci profilowania zebrane przy użyciu meto
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji  
  Wartości wyłączne aplikacji wskazują godzinę, wykonywanej funkcji bezpośrednio w górnej części stosu wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ani obejmuje czas spędzony w funkcjach podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Własny czas aplikacji**|Łączna liczba własny czas aplikacji dla wszystkich wywołań tej funkcji.|  
 |**% Własnego czasu aplikacji**|Procent sumy, który upłynął własny czas uruchomienia profilowania, spędzony w własny czas aplikacji całkowita tej funkcji.|  
@@ -105,7 +105,7 @@ Widok funkcji .NET dane alokacji pamięci profilowania zebrane przy użyciu meto
 |**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Widok funkcji](../profiling/functions-view-instrumentation-data.md)   
  [Widok funkcji](../profiling/functions-view-sampling-data.md)

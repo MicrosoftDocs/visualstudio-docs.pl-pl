@@ -9,10 +9,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: dc16c6e6186d53bd08bd0634e07a4d1172859280
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54227255"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Debugowanie historyczne (C#, Visual Basic, C++)

@@ -10,10 +10,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: c79492c69f10d97c246d0d56b013fba5af17ec54
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54204008"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Ta powiązana metoda to metoda zapasowa następujących domyślnych metod wstawiania, aktualizowania lub usuwania

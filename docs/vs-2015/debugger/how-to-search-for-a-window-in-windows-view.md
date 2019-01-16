@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wyszukiwanie okna w widoku Windows | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wyszukiwanie okna w widoku Windows | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 60eb467a24c85d176dae7727a476cc45dac6c876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51782976"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Porady: wyszukiwanie okna w widoku okien
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Instrukcje: Wyszukiwanie okna w widoku okien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz wyszukać określonego okna w widoku Windows za pomocą jego uchwytu, podpis, klasy lub kombinację jego podpisu i klasy jako kryterium wyszukiwania. Można również określić początkową kierunek wyszukiwania. Pola w oknie dialogowym pokaże atrybutów okna wybranego w drzewie okna.  

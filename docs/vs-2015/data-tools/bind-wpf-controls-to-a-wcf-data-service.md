@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "50220381"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
@@ -87,7 +87,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
 6.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Default.aspx** i wybierz **Usuń**. Ten plik nie jest konieczne w tym przewodniku.  
   
 ## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie modelu danych jednostki usługi  
- Aby udostępnić dane do aplikacji przy użyciu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], należy zdefiniować model danych do usługi. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] Obsługuje dwa typy modeli danych: modeli danych jednostek i modeli danych niestandardowych, które są zdefiniowane przy użyciu wspólnego języka wspólnego (CLR) obiekty, które implementują <xref:System.Linq.IQueryable%601> interfejsu. W tym instruktażu utworzysz Model danych jednostki do modelu danych.  
+ Aby udostępnić dane do aplikacji przy użyciu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], należy zdefiniować model danych do usługi. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] Obsługuje dwa typy modeli danych: Jednostki danych modeli i modeli danych niestandardowych, które są definiowane za pomocą wspólnego języka wspólnego (CLR) obiekty, które implementują <xref:System.Linq.IQueryable%601> interfejsu. W tym instruktażu utworzysz Model danych jednostki do modelu danych.  
   
 #### <a name="to-create-an-entity-data-model"></a>Aby utworzyć model Entity Data Model  
   
@@ -215,7 +215,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
    - **CreditCardApprovalCode**  
   
-   - **Data modyfikacji**  
+   - **ModifiedDate**  
   
    - **OnlineOrderFlag**  
   
@@ -246,7 +246,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 #### <a name="to-load-the-data-from-the-service"></a>Aby załadować dane z usługi  
   
-1.  W projektancie, aby utworzyć `Window_Loaded` procedura obsługi zdarzeń, kliknij dwukrotnie tekst, który odczytuje: **MainWindow**.  
+1.  W projektancie, aby utworzyć `Window_Loaded` procedura obsługi zdarzeń, kliknij dwukrotnie tekst, który odczytuje: **Główne**.  
   
 2.  Zastąp następujący kod obsługi zdarzeń. Upewnij się, że można zastąpić *localhost* adresów w tym kodzie adres hosta lokalnego na komputerze deweloperskim.  
   
@@ -324,7 +324,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 -   Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby powiązać WPF formanty do innych typów źródeł danych. Aby uzyskać więcej informacji, zobacz [WPF powiązać formanty do zestawu danych](../data-tools/bind-wpf-controls-to-a-dataset.md).  
   
--   Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby wyświetlić powiązane dane (czyli w relacji nadrzędny podrzędny) w formantach WPF. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
+-   Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby wyświetlić powiązane dane (czyli w relacji nadrzędny podrzędny) w formantach WPF. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

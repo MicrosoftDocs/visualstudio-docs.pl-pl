@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51794598"
 ---
 # <a name="historical-debugging"></a>Debugowanie historyczne
@@ -36,7 +36,7 @@ Debugowanie historyczne jest tryb debugowania, która jest zależna od informacj
  Możesz użyć IntelliTrace i debugowanie historyczne są przenoszone wokół w aplikacji i sprawdzić jego stan (stos wywołań i zmienne lokalne) bez konieczności ustawiania punktów przerwania, uruchom ponownie debugowanie i powtórz kroki testu. To może zaoszczędzić dużo czasu, szczególnie gdy usterka znajduje się w scenariuszu testu, który zajmuje dużo czasu, aby wykonać.  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>Jak uruchomić debugowania historycznego  
- Funkcja IntelliTrace jest domyślnie włączone. To wszystko, co należy zrobić, zdecyduj, które zdarzenia i wywołania funkcji Cię interesują. Aby uzyskać więcej informacji na temat definiowania mają być wyszukiwane, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md). Instrukcje krok po kroku konta debugowania za pomocą IntelliTrace, zobacz [Instruktaż: przy użyciu funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ Funkcja IntelliTrace jest domyślnie włączone. To wszystko, co należy zrobić, zdecyduj, które zdarzenia i wywołania funkcji Cię interesują. Aby uzyskać więcej informacji na temat definiowania mają być wyszukiwane, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md). Instrukcje krok po kroku konta debugowania za pomocą IntelliTrace, zobacz [instruktażu: Za pomocą funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Poruszanie się po kodzie za pomocą debugowania historycznego  
  Zacznijmy od prosty program, który zawiera błąd. W aplikacji konsolowej C# Dodaj następujący kod:  

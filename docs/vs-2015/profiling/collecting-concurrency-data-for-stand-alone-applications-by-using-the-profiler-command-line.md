@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e49d723db8cb444fb9e21640a2e5e9b1eecea268
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53950559"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
@@ -33,10 +33,10 @@ Metoda współbieżności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
-|**Rozpocznij danych współbieżności aplikacji i profilu .NET Framework**|-   [Jak: Uruchamianie aplikacji .NET Framework w celu zbierania danych współbieżności](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Rozpocznij danych współbieżności aplikacji i profilu .NET Framework**|-   [Jak: Uruchamianie aplikacji .NET Framework do zbierania danych współbieżności](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
 |**Rozpocznij danych współbieżności aplikacji i profilu C/C++**|-   [Jak: Uruchamianie aplikacji natywnej do zbierania danych współbieżności](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Dołączanie profilera do uruchomionej aplikacji .NET Framework**|-   [Jak: Dołącz Profiler do aplikacji .NET Framework w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Dołączanie profilera do uruchomionej aplikacji C/C++**|-   [Jak: Dołącz Profiler do natywnej aplikacji i zbieranie danych współbieżności](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
+|**Dołączanie profilera do uruchomionej aplikacji .NET Framework**|-   [Jak: Dołączanie profilera do aplikacji .NET Framework w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Dołączanie profilera do uruchomionej aplikacji C/C++**|-   [Jak: Dołączanie profilera do natywnej aplikacji i zbieranie danych współbieżności](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
   

@@ -10,10 +10,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54154379"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki

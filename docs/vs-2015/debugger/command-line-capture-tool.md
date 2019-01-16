@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51770686"
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia do przechwytywania
@@ -169,15 +169,15 @@ DXCap.exe –e map
  Powyższe polecenie wylicza aplikacje Windows Store, spełniające "mapy"; Oto dane wyjściowe:  
   
  **Pakiet "Microsoft.BingMaps":**  
- **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **Imię i nazwisko: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Nazwa: Microsoft.BingMaps**  
- **Wydawca: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
  **Wersja: 2.1.2914.1734**  
  **Możliwych do uruchomienia aplikacji:**  
  **Identyfikator: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: Brak**  
  **AppSpec (do uruchomienia): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** ostatni wiersz danych wyjściowych dla każdej aplikacji wyliczany zawiera polecenia, można użyć, aby przechwytywać informacje graficzne z niego.  
   

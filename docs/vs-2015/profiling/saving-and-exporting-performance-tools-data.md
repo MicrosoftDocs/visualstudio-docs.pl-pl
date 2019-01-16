@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768505"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Zapisywanie i eksportowanie wydajności danych dotyczących narzędzi
@@ -28,7 +28,7 @@ ms.locfileid: "51768505"
 
 W tym temacie opisano, jak zapisywanie i eksportowanie plików danych dotyczących wydajności.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Porady: zapisywanie plików danych dotyczących wydajności jako pliki przeanalizowany raport  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Jak: Zapisywanie plików danych dotyczących wydajności jako pliki przeanalizowany raport  
  Możesz zapisać filtrowane lub niefiltrowane widoki profilowania pliki danych (Vsp) jako pliki przeanalizowany raport (.vsps). Plik raportu analizy mogą być wyświetlane w oknie Widok raportu i jest znacznie mniejszy niż oryginalny plik Vsp. Jednak nie można zastosować filtr do danych pliku .vsps. Można utworzyć plik przeanalizowany raport z poziomu Eksploratora wydajności bez konieczności otwierania pliku w zintegrowanym środowisku programistycznym (IDE), lub możesz otworzyć i filtrowanie plików Vsp i następnie zapisać wyniki.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Aby zapisać raport analizy wydajności z poziomu Eksploratora wydajności  
@@ -51,7 +51,7 @@ W tym temacie opisano, jak zapisywanie i eksportowanie plików danych dotyczący
   
 5.  Kliknij przycisk **Zapisz.**  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Porady: narzędzi profilowania eksportowanie raportów. XML lub. Plik CSV  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Instrukcje: Narzędzi profilowania eksportowanie raportów. XML lub. Plik CSV  
  Możesz wyeksportować jeden lub więcej widoków raportu z pliku .vsp lub .vsps pliku danych profilowania jako wartość rozdzielany przecinkami lub plik XML. Można filtrować dane w oknie Widok raportu, możesz wyeksportować lub możesz wyeksportować raport widoki całego pliku danych z **Eksplorator wydajności** okna.  
   
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Korzystanie z okna rejestrów | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Korzystanie z okna rejestrów | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -33,22 +33,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6856b2e10c43f33e22711353d33f732779e8f4af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51748119"
 ---
-# <a name="how-to-use-the-registers-window"></a>Porady: korzystanie z okna rejestrów
+# <a name="how-to-use-the-registers-window"></a>Instrukcje: Korzystanie z okna rejestrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła **ogólne** kategorii.  
   
- **Rejestruje** okna wyświetla zawartość rejestru. Jeśli zachowasz **rejestruje** otwarte, jak krok po kroku przez program okno, możesz zobaczyć zmiany wartości rejestru, jak kod jest wykonywany. Wartości, które zostały zmienione ostatnio są wyświetlane w kolorze czerwonym. Możesz edytować wartości rejestru. Aby uzyskać więcej informacji, zobacz [porady: Edytowanie wartości rejestru](../debugger/how-to-edit-a-register-value.md).  
+ **Rejestruje** okna wyświetla zawartość rejestru. Jeśli zachowasz **rejestruje** otwarte, jak krok po kroku przez program okno, możesz zobaczyć zmiany wartości rejestru, jak kod jest wykonywany. Wartości, które zostały zmienione ostatnio są wyświetlane w kolorze czerwonym. Możesz edytować wartości rejestru. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie wartości rejestru](../debugger/how-to-edit-a-register-value.md).  
   
- Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach, które zależą od platformy i procesora typu. Można wyświetlić lub ukryć grup, jak chcesz. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i ukrywanie grup rejestru](../debugger/how-to-display-and-hide-register-groups.md).  
+ Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach, które zależą od platformy i procesora typu. Można wyświetlić lub ukryć grup, jak chcesz. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie i ukrywanie grup rejestru](../debugger/how-to-display-and-hide-register-groups.md).  
   
- Ogólne wprowadzenie do pojęć dotyczących rejestrów i z okna rejestrów, zobacz [podstawy debugowania: okno rejestrów](../debugger/debugging-basics-registers-window.md).  
+ Ogólne wprowadzenie do pojęć dotyczących rejestrów i z okna rejestrów, zobacz [podstawy debugowania: Okno rejestrów](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -65,7 +65,7 @@ Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie na poziomie adresów
 ## <a name="see-also"></a>Zobacz też  
  [Podstawy debugowania: Okno rejestrów](../debugger/debugging-basics-registers-window.md)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Podstawy debugowania: okno rejestrów](../debugger/debugging-basics-registers-window.md)
+ [Podstawy debugowania: Okno rejestrów](../debugger/debugging-basics-registers-window.md)
 
 
 

@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934667"
 ---
 # <a name="trusted-application-deployment-overview"></a>Zaufane wdrożenie aplikacji — omówienie

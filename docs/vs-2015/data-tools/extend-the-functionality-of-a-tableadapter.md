@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "50219747"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Rozszerzanie funkcjonalności adaptera TableAdapter
@@ -49,7 +49,7 @@ Funkcjonalności TableAdapter można rozszerzyć, dodając kod do pliku części
   
 2.  Nazwa klasy `CustomersTableAdapterExtended`.  
   
-3.  Wybierz **Dodaj**.  
+3.  Wybierz pozycję **Dodaj**.  
   
 4.  Zastąp kod poprawną przestrzeń nazw i nazwę klasy częściowej projektu w następujący sposób:  
   

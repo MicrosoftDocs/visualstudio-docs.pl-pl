@@ -29,10 +29,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b2341e9cf0ca1494d8dad79cd521c283c2c23a06
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51798940"
 ---
 # <a name="javascript-memory"></a>Pamięć języka JavaScript
@@ -52,7 +52,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
    Obiekty, które nie są tworzone bezpośrednio w kodzie aplikacji automatycznie są odfiltrowywane. Można także filtrować dane według nazwy obiektu.  
   
-  Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [instruktażu: Znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   W tym temacie:  
   
@@ -131,7 +131,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
 -   [Wyświetlanie różnic migawki](#SnapshotDiff). Pokazuje wartości różnicowych między migawkami. Widoki te Pokaż różnice w obiekcie liczby rozmiar i obiektu.  
   
 ##  <a name="Isolate"></a> Izolowanie przeciek pamięci  
- Poniższe kroki zawierają przepływu pracy, które mogą ułatwić bardziej efektywne wykorzystanie analizatora pamięci JavaScript. Te kroki mogą być przydatne, jeśli podejrzewasz, że Twoja aplikacja ma przeciek pamięci. Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Poniższe kroki zawierają przepływu pracy, które mogą ułatwić bardziej efektywne wykorzystanie analizatora pamięci JavaScript. Te kroki mogą być przydatne, jeśli podejrzewasz, że Twoja aplikacja ma przeciek pamięci. Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [instruktażu: Znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Otwórz aplikację w programie Visual Studio.  
   
@@ -173,7 +173,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
     - Rozmiar sterty różnicowe (po lewej stronie link poniżej rozmiar stosu). Tekst linku zawiera różnicę między Rozmiar sterty bieżącej migawki i Rozmiar sterty poprzednią migawkę.  
   
-    - Liczba obiektów różnicowa (odpowiednie łącze poniżej liczba obiektów). Tekst linku zawiera dwie wartości (na przykład +1858 /-1765): pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki, a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki.  
+    - Liczba obiektów różnicowa (odpowiednie łącze poniżej liczba obiektów). Tekst linku zawiera dwie wartości (na przykład +1858 /-1765): Pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki, a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki.  
   
       Te linki otwarcie widoku szczegółów migawka różnicowa typów na stosie, sortowane rozmiaru zachowanego lub liczba obiektów, w zależności od tego, które łącza jest otwarty.  
   
@@ -229,7 +229,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
 -   Liczba obiektów. Ten licznik pokazuje tylko te obiekty, które utworzonych w swojej aplikacji i odfiltrowuje wbudowanego obiekty utworzone przez środowisko uruchomieniowe JavaScript. Łącza liczba obiektu widok typów szczegóły migawki.  
   
--   Liczba obiektów różnicową. Pokazuje dwie wartości: pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki; a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki. Na przykład na ilustracji przedstawiono, że obiekty 1,859 zostały dodane i 1,733 obiekty zostały usunięte po utworzeniu migawki nr 1. Te informacje następuje czerwona strzałka w górę, jeżeli liczba całkowita obiektów został zwiększony lub zielona strzałka w dół, jeśli zmniejszyło się. Liczba obiektów nie została zmieniona, zostanie wyświetlony tekst **bez zmian** zamiast numeru. Dla pierwszego migawki, zostanie wyświetlony tekst **linii bazowej**. Łącza liczba różnicowej obiektu widok typów porównania migawki.  
+-   Liczba obiektów różnicową. To pokazuje dwie wartości: Pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki; a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki. Na przykład na ilustracji przedstawiono, że obiekty 1,859 zostały dodane i 1,733 obiekty zostały usunięte po utworzeniu migawki nr 1. Te informacje następuje czerwona strzałka w górę, jeżeli liczba całkowita obiektów został zwiększony lub zielona strzałka w dół, jeśli zmniejszyło się. Liczba obiektów nie została zmieniona, zostanie wyświetlony tekst **bez zmian** zamiast numeru. Dla pierwszego migawki, zostanie wyświetlony tekst **linii bazowej**. Łącza liczba różnicowej obiektu widok typów porównania migawki.  
   
 -   Zrzut ekranu przedstawiający ekran w czasie migawki.  
   
@@ -406,7 +406,7 @@ if (performance && performance.mark) {
     -   Utwórz obiekt testowy i Śledź ją w widokach analizatora pamięci JavaScript, takie jak widok typów. Na przykład można dołączyć bardzo dużego obiektu do innego obiektu, aby zobaczyć, czy konkretny obiekt lub element został zebranych elementów bezużytecznych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [Przewodnik: Znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
 
 
 

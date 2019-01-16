@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53924270"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych

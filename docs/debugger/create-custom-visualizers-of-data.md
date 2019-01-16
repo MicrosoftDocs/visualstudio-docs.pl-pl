@@ -20,10 +20,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54204391"
 ---
 # <a name="create-custom-data-visualizers"></a>Tworzenie danych niestandardowych wizualizatorów

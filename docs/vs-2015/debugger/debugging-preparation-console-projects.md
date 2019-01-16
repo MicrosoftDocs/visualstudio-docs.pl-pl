@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 78cdf137f4804b2cdad26a21daf2dc34592ed774
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51722916"
 ---
-# <a name="debugging-preparation-console-projects"></a>Przygotowanie debugowania: projekty konsoli
+# <a name="debugging-preparation-console-projects"></a>Przygotowanie debugowania: Projekty startowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Przygotowywanie do debugowania projektu konsoli jest podobny do przygotowania do debugowania projektu Windows, za pomocą kilka dodatkowych kwestii dotyczących. Aby uzyskać więcej informacji, zobacz [aplikacji z formularzem Windows](../debugger/debugging-preparation-windows-forms-applications.md), i [przygotowanie debugowania: Windows Forms aplikacji (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Z powodu podobieństwa wszystkich aplikacji konsoli w tym temacie omówiono następujące typy projektu:  

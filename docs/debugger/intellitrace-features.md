@@ -21,10 +21,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54227840"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funkcje IntelliTrace (C#, Visual Basic, C++)

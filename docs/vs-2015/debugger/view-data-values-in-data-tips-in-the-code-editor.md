@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51799447"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Podgląd wartości danych w poradach dotyczących danych w edytorze kodu
@@ -148,9 +148,9 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Porady: Użyj okna dialogowego QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Instrukcje: Użyj okna dialogowego QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
- [Porady: zmiana formatu numerycznego z debuger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Instrukcje: Zmień Format numeryczny debuger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
 
 
 

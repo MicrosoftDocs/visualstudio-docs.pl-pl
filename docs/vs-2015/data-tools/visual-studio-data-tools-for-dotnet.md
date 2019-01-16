@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49859710"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Narzędzia do obsługi danych programu Visual Studio dla platformy .NET
@@ -41,7 +41,7 @@ Visual Studio i .NET Framework razem zapewniają szeroką interfejsu API i narz�
   
 5. Dodawanie kodu niestandardowego, w przypadku elementów, takich jak reguły biznesowe, wyszukiwania i sprawdzanie poprawności danych lub skorzystaj z zalet funkcji niestandardowych, który udostępnia w źródłowej bazie danych.  
   
-   Można pominąć krok 3 i programowania aplikacji .NET w celu wydawania poleceń, bezpośrednio do bazy danych, a nie przy użyciu modelu. W takim przypadku możesz znaleźć odpowiednią dokumentację: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Pamiętaj, że nadal można używać Kreatora konfiguracji źródła danych i projektantów do generowania kodu wiązania danych, podczas wypełniania obiektów w pamięci, a następnie powiązanie danych kontrolki interfejsu użytkownika do tych obiektów.  
+   Można pominąć krok 3 i programowania aplikacji .NET w celu wydawania poleceń, bezpośrednio do bazy danych, a nie przy użyciu modelu. W tym przypadku znajdziesz tutaj odpowiedniej dokumentacji: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Pamiętaj, że nadal można używać Kreatora konfiguracji źródła danych i projektantów do generowania kodu wiązania danych, podczas wypełniania obiektów w pamięci, a następnie powiązanie danych kontrolki interfejsu użytkownika do tych obiektów.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
   

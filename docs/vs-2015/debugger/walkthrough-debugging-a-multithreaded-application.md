@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -23,13 +23,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51798643"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>Wskazówki: Debugowanie aplikacji wielowątkowych
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>Przewodnik: Debugowanie aplikacji wielowątkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] zapewnia ulepszone **wątków** okna i inny użytkownik interfejsu ulepszenia, aby ułatwić debugowanie aplikacji wielowątkowych. W tym przewodniku zajmuje tylko kilka minut, ale jego ukończenia umożliwia zapoznanie się z nowymi funkcjami interfejsu do debugowania aplikacji wielowątkowych.  
@@ -42,7 +42,7 @@ ms.locfileid: "51798643"
   
      **Nowy projekt** pojawi się okno dialogowe.  
   
-2.  W **typu projektu**s kliknij wybranego przez siebie języka: **języka Visual Basic**, **Visual C#**, lub **Visual C++**.  
+2.  W **typu projektu**s kliknij wybranego przez siebie języka: **Visual Basic**, **Visual C#** , lub **Visual C++**.  
   
 3.  W **szablony** wybierz **aplikację Konsolową** lub **Aplikacja konsoli CLR**.  
   
@@ -129,7 +129,7 @@ Thread::Sleep(3000);
 2.  Przejdź do **debugowania lokalizacji** paska narzędzi i kliknij przycisk **wątku** listy.  
   
     > [!NOTE]
-    >  Można rozpoznać tego paska narzędzi przez trzy listy wyraźną: **procesu**, **wątku**, i **ramki stosu**.  
+    >  Możesz rozpoznać tego paska narzędzi przez trzy wyraźną listy: **Proces**, **wątku**, i **ramki stosu**.  
   
 3.  Zwróć uwagę, jak wiele wątków, są wyświetlane na liście.  
   
@@ -143,7 +143,7 @@ Thread::Sleep(3000);
   
 7.  Umieść wskaźnik myszy na ikonie flagi.  
   
-     Pojawi się okno podręczne. Są one informuje, jakie tryb **wątku** lista znajduje się w: **Pokaż tylko oflagowane wątki**.  
+     Pojawi się okno podręczne. Są one informuje, jakie tryb **wątku** listy jest: **Pokaż tylko oflagowane wątki**.  
   
 8.  Kliknij przycisk flagi, aby powrócić do **Pokaż wszystkie wątki** trybu.  
   
@@ -263,7 +263,7 @@ Thread::Sleep(3000);
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Instrukcje: Przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
 
 

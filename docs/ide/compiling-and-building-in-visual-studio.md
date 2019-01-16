@@ -14,10 +14,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53062596"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
@@ -26,7 +26,7 @@ Podczas kompilowania kodu źródłowego, aparat kompilacji tworzy zespołów i w
 
 Przez kompilacjom kodu, można szybko zidentyfikować błędy kompilacji, takie jak niepoprawna składnia, błędnie napisane słowa kluczowe i wpisz niezgodności. Można także wykryć i poprawić błędy czasu wykonywania, takie jak błędy logiczne i semantyczne, tworząc i uruchamianiu wersji debugowania kodu.
 
-Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego procesu, zobacz [przewodnik: budowanie aplikacji](../ide/walkthrough-building-an-application.md).
+Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego procesu, zobacz [instruktażu: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md).
 
 Używasz jednej z następujących metod do tworzenia aplikacji: środowiska IDE programu Visual Studio, narzędzia wiersza polecenia programu MSBuild i potoków usługi Azure:
 
@@ -45,7 +45,7 @@ Dokumentacja w tej sekcji przechodzi w stan więcej szczegółowych informacji z
 
 Podczas tworzenia projektu Visual Studio stworzył domyślne konfiguracje kompilacji dla projektu i rozwiązania, które zawiera projekt.  Te konfiguracje definiują sposób rozwiązania i projekty są zbudowane i wdrażane. W szczególności, konfiguracje projektu są unikatowe dla platformy docelowej (na przykład Windows lub Linux) i typ (na przykład debug i release) kompilacji. Te konfiguracje można edytować, jednak, a także mogą tworzyć własne konfiguracje, zgodnie z potrzebami.
 
-Pierwszy wprowadzenie do tworzenia w środowisku IDE, zobacz [przewodnik: budowanie aplikacji](walkthrough-building-an-application.md).
+Pierwszy wprowadzenie do tworzenia w środowisku IDE, zobacz [instruktażu: Tworzenie aplikacji](walkthrough-building-an-application.md).
 
 Następnie możesz zapoznać się [kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) Aby dowiedzieć się więcej o dostosowywaniu różne aspekty można wprowadzić do procesu. Możliwe modyfikacje obejmują [zmiany katalogu danych wyjściowych](how-to-change-the-build-output-directory.md), [Określanie niestandardowych zdarzeń kompilacji](specifying-custom-build-events-in-visual-studio.md), [Zarządzanie zależności projektu](how-to-create-and-remove-project-dependencies.md), [Zarządzanie rejestr kompilacji pliki](how-to-view-save-and-configure-build-log-files.md), i [pomijanie ostrzeżeń kompilatora](how-to-suppress-compiler-warnings.md).
 

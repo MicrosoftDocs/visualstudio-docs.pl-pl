@@ -23,10 +23,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53907894"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debugowanie aplikacji wielowątkowych w programie Visual Studio

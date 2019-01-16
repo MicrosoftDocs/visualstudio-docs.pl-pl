@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49896955"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w Projektancie XAML
@@ -71,9 +71,9 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
   
 1.  Wybierz elementy, które mają zostać wyrównane. Można wybrać więcej niż jeden element, naciskając i przytrzymując klawisz Ctrl podczas zaznaczania elementów.  
   
-2.  Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w **układ** okna właściwości: **po lewej stronie**, **Centrum**, **Po prawej stronie**, lub **Stretch**.  
+2.  Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w **układ** okna właściwości: **Po lewej stronie**, **Centrum**, **po prawej stronie**, lub **Stretch**.  
   
-3.  Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w **układ** okna właściwości: **górnej**, **Centrum**, **Dolnej**, lub **Stretch**.  
+3.  Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w **układ** okna właściwości: **TOP**, **Centrum**, **dolnej**, lub **Stretch**.  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Aby wyrównać co najmniej dwa elementy za pomocą linii przyciągania  
   

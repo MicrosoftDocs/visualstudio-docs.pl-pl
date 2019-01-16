@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 317b815595d6e7bca820b730a2761113e588dded
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837069"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Instrukcje: Wyszukiwanie okna w widoku okien

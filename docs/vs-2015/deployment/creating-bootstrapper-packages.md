@@ -27,10 +27,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49910930"
 ---
 # <a name="creating-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
@@ -41,7 +41,7 @@ Setup program jest generycznym Instalatorem, który można skonfigurować, aby w
  Program inicjujący najpierw wykrywa, czy dowolny z wymagań wstępnych są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw program inicjujący wyświetli umów licencyjnych. Po drugie, po użytkownik końcowy akceptuje umów licencyjnych, rozpocznie się instalacja dla wymagań wstępnych. W przeciwnym razie jeśli zostaną wykryte wszystkie wymagania wstępne, program inicjujący tylko uruchamia Instalatora aplikacji.  
   
 ## <a name="creating-custom-packages"></a>Tworzenie pakietów niestandardowych  
- Można wygenerować manifestów za pomocą edytora XML w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md) i [porady: tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md). Aby zobaczyć przykład utworzenia pakietu bootstrapper, zobacz [wskazówki: Tworzenie niestandardowego programu inicjującego wyświetlającego monit zachowania](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Można wygenerować manifestów za pomocą edytora XML w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md) i [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md). Aby zobaczyć przykład utworzenia pakietu bootstrapper, zobacz [instruktażu: Tworzenie niestandardowego programu inicjującego wyświetlającego monit zasad ochrony prywatności](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Aby utworzyć pakiet bootstrapper, musisz dostarczyć redystrybucyjne w formie file.to pliku EXE lub MSI do generatora manifestu Bootstrapper. Następnie Manifest generatora Bootstrapper tworzy następujące pliki:  
   
@@ -75,7 +75,7 @@ Setup program jest generycznym Instalatorem, który można skonfigurować, aby w
   
   `package.xml`  
   
-  Na koniec skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Na koniec skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -120,7 +120,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Redystrybucyjna lista jest plikiem XML, który należy nadać nazwę w następującym formacie: *nazwa firmy*. *Nazwa składnika*. RedistList.xml. Tak na przykład, jeśli składnik ten jest wywoływany przez Acme Datawidgets, użyj Acme.DataWidgets.RedistList.xml. Przykład zawartości listy do dystrybucji może wyglądać następująco:  
+ Redystrybucyjna lista jest plikiem XML, należy nadać nazwę w następującym formacie: *Nazwa firmy*. *Nazwa składnika*. RedistList.xml. Tak na przykład, jeśli składnik ten jest wywoływany przez Acme Datawidgets, użyj Acme.DataWidgets.RedistList.xml. Przykład zawartości listy do dystrybucji może wyglądać następująco:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -130,7 +130,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Instrukcje: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Wymagania wstępne, okno dialogowe](../ide/reference/prerequisites-dialog-box.md)   
  [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)   
  [Użyj programu Visual Studio 2005 Bootstrapper, aby uruchomić instalację](http://go.microsoft.com/fwlink/?LinkId=107537)

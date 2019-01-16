@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54228048"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności (C#, Visual Basic, C++)

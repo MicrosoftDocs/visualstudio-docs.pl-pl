@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Weryfikacja właściwości ustawień IIS | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Sprawdź właściwości ustawień usług IIS | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -26,13 +26,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4639055fe9320c8fd1bf1b2575bca323642dd17f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51742077"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Porady: weryfikacja właściwości ustawień IIS
+# <a name="how-to-verify-iis-property-settings"></a>Instrukcje: Weryfikacja właściwości ustawień IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia administracyjnego IIS. Te właściwości muszą być ustawione poprawnie dla aplikacji do uruchomienia, więc weryfikowanie tych ustawień jest często konieczne etapem rozwiązywania problemów.  
@@ -42,7 +42,7 @@ Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia adm
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>Aby sprawdzić ustawienia usług IIS dla aplikacji sieci Web  
   
-1.  Otwórz **narzędzia administracyjne** okna: na **Start** menu wskaż **programy**, a następnie kliknij przycisk **narzędzia administracyjne**. Jeśli **narzędzia administracyjne** nie jest widoczna w **programy** menu, a następnie wyszukaj go w **Panelu sterowania**.  
+1.  Otwórz **narzędzia administracyjne** okna: Na **Start** menu wskaż **programy**, a następnie kliknij przycisk **narzędzia administracyjne**. Jeśli **narzędzia administracyjne** nie jest widoczna w **programy** menu, a następnie wyszukaj go w **Panelu sterowania**.  
   
     -   W systemie operacyjnym Windows 2000, wybierz **Menedżera internetowych usług**.  
   
@@ -66,7 +66,7 @@ Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia adm
   
     3.  Kliknij przycisk **OK** zamknąć **metod uwierzytelniania** okno dialogowe.  
   
-5.  Dla aplikacji serwera ATL. Sprawdź, czy czasownik DEBUG jest skojarzony z rozszerzenia ISAPI. Aby uzyskać więcej informacji, zobacz [jak: skojarzyć zlecenie DEBUG z rozszerzeniem](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5.  Dla aplikacji serwera ATL. Sprawdź, czy czasownik DEBUG jest skojarzony z rozszerzenia ISAPI. Aby uzyskać więcej informacji, zobacz [jak: Skojarz czasownik DEBUG z rozszerzeniem](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
 6.  Aby uzyskać [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, sprawdź folder wirtualny dla aplikacji ma nazwę aplikacji w **Menedżera usług Internet Information Services (IIS)**, **Menedżera internetowych usług** lub  **Internetowe usługi informacyjne**.  
   

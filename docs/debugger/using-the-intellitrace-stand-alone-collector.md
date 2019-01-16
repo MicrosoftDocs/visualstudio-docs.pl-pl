@@ -13,10 +13,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54227723"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Przy użyciu autonomicznego modułu zbierającego IntelliTrace (C#, Visual Basic)
@@ -127,7 +127,7 @@ ms.locfileid: "54227723"
 
          Na przykład:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domena\identyfikator_użytkownika >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  Udzielić tej puli aplikacji dla aplikacji sieci Web lub aplikacji SharePoint uprawnienia odczytu i wykonania do katalogu modułu zbierającego.
 
@@ -213,7 +213,7 @@ ms.locfileid: "54227723"
 
 1.  Aby rozpocząć zbieranie danych, Otwórz okno poleceń programu PowerShell jako administrator, a następnie uruchom następujące polecenie:
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  Po uruchomieniu tego polecenia, wpisz **Y** aby upewnić się, że chcesz rozpocząć zbieranie danych.
@@ -236,7 +236,7 @@ ms.locfileid: "54227723"
 
 3.  Aby utworzyć punkt kontrolny plik .iTrace, użyj następującej składni:
 
-     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
 4.  Aby sprawdzić stan procesu kolekcji, użyj następującej składni:
 
@@ -244,7 +244,7 @@ ms.locfileid: "54227723"
 
 5.  Aby zatrzymać zbieranie danych, użyj następującej składni:
 
-     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     >  Po uruchomieniu tego polecenia, wpisz **Y** aby upewnić się, że chcesz zatrzymać zbieranie danych. W przeciwnym razie moduł zbierający może nadal zbierać dane, w pliku iTrace plik pozostanie zablokowany lub plik nie może zawierać żadnych użytecznych danych.

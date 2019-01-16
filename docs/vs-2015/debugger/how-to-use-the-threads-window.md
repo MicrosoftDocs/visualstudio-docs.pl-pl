@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Korzystanie z okna wątków | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Korzystanie z okna wątków | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -30,20 +30,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51791701"
 ---
-# <a name="how-to-use-the-threads-window"></a>Porady: korzystanie z okna wątków
+# <a name="how-to-use-the-threads-window"></a>Instrukcje: Korzystanie z okna wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na którym wykonujesz debugowanie.  
   
  **Wątków** okno zawiera tabelę, w którym każdy wiersz reprezentuje wątek w aplikacji. Domyślnie w tabeli wymieniono wszystkie wątki w swojej aplikacji, ale można filtrować listę, aby wyświetlić wątki, które Cię interesują. Każda kolumna zawiera inny typ danych. Można także ukryć niektóre kolumny. Jeśli wyświetlane są wszystkie kolumny, zostaną wyświetlone następujące informacje, od lewej do prawej:  
   
--   Kolumna flagi, gdzie można oznaczyć wątek, do którego chcesz zwrócić szczególną uwagę. Aby uzyskać informacje o sposobie Flagowanie wątku, zobacz [jak: Flaga i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md).  
+-   Kolumna flagi, gdzie można oznaczyć wątek, do którego chcesz zwrócić szczególną uwagę. Aby uzyskać informacje o sposobie Flagowanie wątku, zobacz [jak: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   Kolumna aktywnego wątku, w której żółta strzałka wskazuje aktywny wątek. Konspekt Strzałka wskazuje wątek, w którym wykonanie przerwało pracę debugera.  
   
@@ -146,7 +146,7 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na któr
      Ta akcja dotyczy tylko wątki, które są wybrane w **wątków** okna.  
   
 ## <a name="displaying-flagged-threads"></a>Wyświetlanie oflagowane wątki  
- Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków** okna. Aby uzyskać więcej informacji, zobacz [jak: Flaga i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md). W oknie wątków można wyświetlić wszystkie wątki lub tylko oflagowane wątki.  
+ Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków** okna. Aby uzyskać więcej informacji, zobacz [jak: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md). W oknie wątków można wyświetlić wszystkie wątki lub tylko oflagowane wątki.  
   
 #### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki  
   
@@ -167,7 +167,7 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na któr
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Przewodnik: debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [Przewodnik: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)
 
 
 

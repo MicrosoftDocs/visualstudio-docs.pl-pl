@@ -9,10 +9,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54228035"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnozowanie problemów po wdrożeniu za pomocą funkcji IntelliTrace (C#, Visual Basic)
@@ -68,7 +68,7 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
 4.  Dodaj ten argument MSBuild, aby uwzględnić swoje lokalizacje TFS i symboli w pliku manifestu kompilacji:
 
-     **/p:IncludeServerNameInBuildInfo = true**
+     **/p:IncludeServerNameInBuildInfo=True**
 
      Każdy, kto może uzyskiwać dostęp do serwera sieci web może zobaczyć te lokalizacje w manifeście kompilacji. Upewnij się, że serwer źródłowy jest bezpieczny.
 
@@ -103,13 +103,13 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
 3.  Dodaj następujące argumenty MSBuild do potoku kompilacji:
 
-    -   **/p:VisualStudioVersion = 12.0**
+    -   **/p:VisualStudioVersion=12.0**
 
-    -   **/p:MSBuildAssemblyVersion = 12.0**
+    -   **/p:MSBuildAssemblyVersion=12.0**
 
-    -   **/TV:12.0**
+    -   **/tv:12.0**
 
-    -   **/p:IncludeServerNameInBuildInfo = true**
+    -   **/p:IncludeServerNameInBuildInfo=True**
 
     -   **buildsymbolstorepath =**\<*ścieżka do symboli*>
 
@@ -147,9 +147,9 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 ###  <a name="MSBuild"></a> Tworzenie manifestu kompilacji dla kompilacji ręcznej przy użyciu MSBuild.exe
  Dodaj te argumenty kompilacji podczas uruchamiania kompilacji:
 
- **/p:GenerateBuildInfoConfigFile = true**
+ **/p:GenerateBuildInfoConfigFile=True**
 
- **/p:IncludeServerNameInBuildInfo = true**
+ **/p:IncludeServerNameInBuildInfo=True**
 
  **buildsymbolstorepath =**\<*ścieżka do symboli*>
 
@@ -248,12 +248,12 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
 ###  <a name="FAQ"></a> PYTANIA I ODPOWIEDZI
 
-####  <a name="WhyInclude"></a> PYT.: Dlaczego zawierają informacje o projekcie, kontroli źródła, kompilacji i symboli z mojego wydania?
+####  <a name="WhyInclude"></a> Q: Dlaczego zawierają informacje o projekcie, kontroli źródła, kompilacji i symboli z mojego wydania?
  Program Visual Studio używa tych informacji można znaleźć pasujące rozwiązanie i źródła dla wersji, który próbujesz debugować. Po otwarciu dziennika IntelliTrace i wybierz zdarzenie, aby rozpocząć debugowanie, Visual Studio używa symboli do znalezienia i dowiesz się, kod której zaszło zdarzenie. Można przyjrzeć się wartości, które zostały zarejestrowane i szybciej przodu lub do tyłu przez wykonywanie Twojego kodu.
 
  Jeśli używasz serwera TFS, a informacje te nie znajduje się w manifest kompilacji (BuildInfo.config plik), program Visual Studio szuka zgodnego źródła i symboli na Twoje aktualnie połączone TFS. Jeśli program Visual Studio nie może znaleźć poprawne TFS lub pasujące źródło, zostanie wyświetlony monit wybór różnych TFS.
 
-####  <a name="InvalidConfigFile"></a> PYT.: W dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co mam zrobić?
+####  <a name="InvalidConfigFile"></a> Q: W dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co mam zrobić?
  Może się to zdarzyć, gdy wdrażanie z komputera dewelopera lub nie masz połączenia z TFS podczas wdrażania.
 
 1.  Przejdź do folderu wdrożenia projektu.
@@ -357,12 +357,12 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> PYT.: Dlaczego Visual Studio wskazuje, że moje wybrany obszar roboczy jest nieodpowiedni?
+####  <a name="IneligibleWorkspace"></a> Q: Dlaczego Visual Studio wskazuje, że moje wybrany obszar roboczy jest nieodpowiedni?
  **ODP.:** Wybrany obszar roboczy nie ma żadnych mapowań między folderem kontroli źródła i folderem lokalnym. Aby utworzyć mapowanie dla tego obszaru roboczego, wybierz opcję **Zarządzaj**. W przeciwnym wypadku wybierz już zmapowany obszar roboczy lub utwórz nowy.
 
  ![Otwórz z kontroli źródła z Brak mapowanego obszaru roboczego](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> PYT.: Dlaczego nie mogę kontynuować, dopóki nie wybiorę kolekcji zespołu lub innej kolekcji?
+####  <a name="ChooseTeamProject"></a> Q: Dlaczego nie mogę kontynuować, dopóki nie wybiorę kolekcji zespołu lub innej kolekcji?
  **ODP.:** Może się to zdarzyć z następujących powodów:
 
 -   Program Visual Studio nie jest połączony z TFS.
@@ -379,10 +379,10 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
      ![Otwórz z kontroli źródła &#45; migracji](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> PYT.: Co to jest obszar roboczy?
+####  <a name="WhatWorkspace"></a> Q: Co to jest obszar roboczy?
  **ODP.:** Twoje [obszar roboczy przechowuje kopię źródła](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) więc możesz rozwijać i przetestować go oddzielnie przed zaewidencjonowaniem swojej pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.
 
-####  <a name="UntrustedSymbols"></a> PYT.: Dlaczego otrzymuję komunikat dotyczący niezaufanych symboli?
+####  <a name="UntrustedSymbols"></a> Q: Dlaczego otrzymuję komunikat dotyczący niezaufanych symboli?
  ![Debugowanie przy użyciu ścieżki niezaufanych symboli? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **ODP.:** Ten komunikat pojawia się, gdy ścieżki symboli w pliku manifestu kompilacji (\<*ProjectName*>. BuildInfo.config) nie jest dołączone do listy zaufanych ścieżek symboli. Możesz dodać ścieżkę do listy ścieżek symboli w opcjach debugera.

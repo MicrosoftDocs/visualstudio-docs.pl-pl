@@ -20,10 +20,10 @@ manager: douge
 ms.workload:
 - aspnet
 ms.openlocfilehash: 41ec708b25bc74eb1f566981ee4bbcdc23827087
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53902113"
 ---
 # <a name="error-aspnet-not-installed"></a>Błąd: ASP.NET nie jest zainstalowany
@@ -43,4 +43,4 @@ Ten błąd występuje, gdy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp
    >  Windows Server 2003, można zainstalować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] przy użyciu **apletu Dodaj lub usuń programy** w Panelu sterowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

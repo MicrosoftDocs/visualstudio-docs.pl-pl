@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 20a6d85fbdc7fad9077a19704b6c448c73dae787
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51739595"
 ---
 # <a name="error-aspnet-not-installed"></a>Błąd: ASP.NET nie jest zainstalowany
@@ -52,7 +52,7 @@ Ten błąd występuje, gdy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nie 
     >  Windows Server 2003, można zainstalować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] przy użyciu **apletu Dodaj lub usuń programy** w Panelu sterowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
 
 

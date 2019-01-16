@@ -18,10 +18,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54270196"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu

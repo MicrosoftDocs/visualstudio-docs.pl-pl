@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ba3ce8aa0727471ff4385792d85659fa2d208dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51809093"
 ---
 # <a name="graphics-object-table"></a>Tabela obiektów graficznych
@@ -42,7 +42,7 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 ### <a name="graphics-object-table-format"></a>Format tabeli obiektów grafiki  
  Tabela obiektów wyświetla obiekty Direct3D i zasobów, które obsługują ramkę, która jest skojarzona z wybranego zdarzenia — na przykład stan obiektów, buforów, programów do cieniowania, tekstury i inne zasoby. Obiekty, które zostały utworzone w poprzedniej ramki, ale nie są używane podczas przechwyconej ramki zostały pominięte w tabeli obiektów. Obiekty, które zostały zniszczone przez poprzednie zdarzenia podczas przechwyconej klatce są pomijane w ramach kolejnych zdarzeń. Obiekty, które nie są ustawione na D3D10Device lub D3D11DeviceContext są wyświetlane jako szary tekst. Obiekty są wyświetlane w formacie tabeli.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Identyfikator**|Identyfikator obiektu.|  
 |**Nazwa**|Informacje specyficzne dla aplikacji, która została ustawiona na obiekt za pomocą funkcji programu Direct3D `SetPrivateData`— zwykle podać dodatkowe informacje identyfikacyjne dotyczące obiektu.|  
@@ -54,7 +54,7 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 |**Wysokość**|Wysokość obiektu tekstury. Nie ma zastosowania do innych obiektów.|  
 |**Głębokość**|Głębokość obiektu tekstury 3-D. Jeśli tekstura nie jest 3-w, wartość wynosi 0. Nie ma zastosowania do innych obiektów.|  
 |**MIPS**|Liczba poziomów Mipmapy, które ma obiekt tekstury. Nie ma zastosowania do innych obiektów.|  
-|**Rozmiaru tablicy**|Liczba tekstury w tablicy tekstury. Zakres jest z zakresu od 1 do zdefiniowanych przez bieżący poziom funkcji górną granicę. Dla mapy modułu ta wartość jest 6-krotnością liczby map modułu w tablicy.|  
+|**ArraySize**|Liczba tekstury w tablicy tekstury. Zakres jest z zakresu od 1 do zdefiniowanych przez bieżący poziom funkcji górną granicę. Dla mapy modułu ta wartość jest 6-krotnością liczby map modułu w tablicy.|  
 |**Przykłady**|Liczba multisamples na piksel.|  
   
 ## <a name="graphics-object-viewers"></a>Obiekt grafiki osoby przeglądające  
@@ -89,11 +89,11 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 |**float**|Wartość zmiennoprzecinkowa 32-bitowych.|  
 |**float2**|Wektor, zawierający dwie 32-bitowych wartości zmiennoprzecinkowych.|  
 |**float3**|Wektor, zawierający trzy 32-bitowych wartości zmiennoprzecinkowych.|  
-|**FLOAT4**|Wektor zawierający cztery 32-bitowych wartości zmiennoprzecinkowych.|  
+|**float4**|Wektor zawierający cztery 32-bitowych wartości zmiennoprzecinkowych.|  
 |**byte**|Wartość liczby całkowitej ze znakiem 8-bitowych.|  
-|**2 bajtów**|Wartość liczby całkowitej ze znakiem 16-bitowych.|  
-|**4-bajtowych**|Wartość liczby całkowitej ze znakiem 32-bitowych. Taki sam jak **int**.|  
-|**8 bajtów**|Wartość liczby całkowitej ze znakiem 64-bitowych. Taki sam jak **int64**.|  
+|**2byte**|Wartość liczby całkowitej ze znakiem 16-bitowych.|  
+|**4byte**|Wartość liczby całkowitej ze znakiem 32-bitowych. Taki sam jak **int**.|  
+|**8byte**|Wartość liczby całkowitej ze znakiem 64-bitowych. Taki sam jak **int64**.|  
 |**xbyte**|8-bitową wartość szesnastkową.|  
 |**x2byte**|16-bitową wartość szesnastkową.|  
 |**x4byte**|32-bitową wartość szesnastkową. Taki sam jak **xint**.|  
@@ -102,7 +102,7 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 |**u2byte**|Wartość 16-bitowej nieoznaczonej liczby całkowitej.|  
 |**u4byte**|Wartość 32-bitowej nieoznaczonej liczby całkowitej. Taki sam jak **uint**.|  
 |**u8byte**|Wartość 64-bitowej nieoznaczonej liczby całkowitej. Taki sam jak **uint64**.|  
-|**połowa**|16-bitowych wartości zmiennoprzecinkowych.|  
+|**half**|16-bitowych wartości zmiennoprzecinkowych.|  
 |**half2**|Wektor, zawierający dwie 16-bitowych wartości zmiennoprzecinkowych.|  
 |**half3**|Wektor, zawierający trzy 16-bitowych wartości zmiennoprzecinkowych.|  
 |**half4**|Wektor zawierający cztery 16-bitowych wartości zmiennoprzecinkowych.|  
@@ -117,7 +117,7 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
   
 ## <a name="see-also"></a>Zobacz też  
  [Diagnostyka grafiki (debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md)   
- [Przewodnik: brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)
+ [Przewodnik: Brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)
 
 
 

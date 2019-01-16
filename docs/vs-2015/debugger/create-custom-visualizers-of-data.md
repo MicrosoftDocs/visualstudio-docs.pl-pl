@@ -29,10 +29,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51792863"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Tworzenie niestandardowych Wizualizatorów danych
@@ -53,13 +53,13 @@ Wizualizatory są składnikami [!INCLUDE[vs_current_short](../includes/vs-curren
 >  Wizualizatory debugera wymagają większe uprawnienia niż jest to dozwolone przez aplikację do częściowego zaufania. W rezultacie wizualizatory nie są ładowane, gdy zostały zatrzymane w kod z częściowej relacji zaufania. Aby debugować za pomocą wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)  
+ [Instrukcje: Pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)  
   
- [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
- [Instrukcje: instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)  
+ [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)  
   
- [Instrukcje: testowanie i debugowanie wizualizatora](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Instrukcje: Testowanie i debugowanie wizualizatora](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Interfejs API wizualizatora — dokumentacja](../debugger/visualizer-api-reference.md)  
   
