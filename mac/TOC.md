@@ -1,9 +1,9 @@
-# [Wprowadzenie do programu Visual Studio dla komputerów Mac](index.md)
-# [Samouczek środowiska IDE](ide-tour.md)
+# [Visual Studio dla komputerów Mac](index.md)
+# [Samouczek środowiska IDE](/visualstudio/mac/ide-tour/)
 
-# [Instalacja](installation.md)
+# [Instalacja](/visualstudio/mac/installation/)
 ## [Instalowanie i używanie programu za zaporą lub serwerem proxy](install-behind-a-firewall-or-proxy-server.md)
-## [Instalowanie wersji zapoznawczej](install-preview.md)
+## [Instalowanie wcześniejszej wersji](install-preview.md)
 ## [Aktualizacja](update.md)
 ## [Dezinstalacja](uninstall.md)
 
@@ -22,7 +22,7 @@
 ## [Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md)
 ### [Przewodnik: Dołączanie pakietu NuGet do projektu](nuget-walkthrough.md)
 ## [Zarządzanie zasobami aplikacji](managing-app-resources.md)
-## [Instrukcje: otwieranie wielu rozwiązań lub wystąpień](open-multiple-solutions.md)
+## [Instrukcje: Otwieranie wielu rozwiązań lub wystąpień](open-multiple-solutions.md)
 
 # [Edytor źródeł](source-editor.md)
 ## [Refaktoryzacja](refactoring.md)
@@ -65,6 +65,7 @@
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)
 ### [Używanie platformy .NET 4.x w środowisku Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Dziennik Zmian](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Aplikacje mobilne na platformie Xamarin](/xamarin/)
 
 # [Ułatwienia dostępu](accessibility.md)
 
