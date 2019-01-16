@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d93dc9cf68a70977f82f29b6e5ff1ade25f47bda
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227702"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315543"
 ---
 # <a name="xaml-designer-options-page"></a>Strona Opcje projektanta XAML
 
@@ -47,7 +47,7 @@ To ustawienie służy do kontrolowania, kiedy i jak projektant XAML jest wyświe
 |||
 |-|-|
 |**W pionie**|Źródło XAML jest wyświetlana po lewej stronie w widoku XAML, a po drugiej stronie pojawi się okno projektanta XAML.|
-|**Poziome**|Projektant XAML jest wyświetlana u góry widoku XAML, a źródła XAML jest wyświetlana poniżej.|
+|**Horizontal**|Projektant XAML jest wyświetlana u góry widoku XAML, a źródła XAML jest wyświetlana poniżej.|
 |**Default**|Dokument XAML używa orientacji podziału zalecane dla platformy docelowej projektu dokumentu. Dla większości platform jest to równoważne **poziomy**.|
 
 ## <a name="zoom-by-using"></a>Powiększ za pomocą
@@ -57,15 +57,15 @@ Użyj tego ustawienia, aby określić, jak powiększenia działa podczas edycji 
 |||
 |-|-|
 |**Obrót kółkiem myszy**|Powiększenie w Projektancie XAML przy użyciu kółka myszy.|
-|**Ctrl + kółko myszy**|Powiększenie w Projektancie XAML, naciskając klawisz CTRL podczas przewijania kółka myszy.|
-|**ALT + myszy koło**|Powiększenie w Projektancie XAML, naciskając klawisz ALT podczas przewijania kółka myszy.|
+|**Ctrl + kółko myszy**|Powiększenie w Projektancie XAML, naciskając klawisz **Ctrl** klucza przy użyciu kółka myszy.|
+|**ALT + myszy koło**|Powiększenie w Projektancie XAML, naciskając klawisz **Alt** klucza przy użyciu kółka myszy.|
 
 Te ustawienia określają zachowanie projektanta podczas edycji dokumentu XAML.
 
 |||
 |-|-|
 |**Automatycznie nadawać nazwy elementom interaktywnym podczas ich tworzenia**|Określa, czy nazwa domyślna jest dostarczany dla nowego elementu interaktywne po dodaniu do projektanta.|
-|**Automatycznie Wstaw właściwości układu podczas tworzenia elementu**|Określa, czy właściwości układu są dostarczane dla nowego elementu, gdy możesz dodać do projektanta. Właściwości układu są te, które mają wpływ na układ formantu, na przykład marginesy i dopełnienie.|
+|**Automatycznie Wstaw właściwości układu podczas tworzenia elementu**|Określa, czy właściwości układu są dostarczane dla nowego elementu, gdy możesz dodać do projektanta. Właściwości układu są te, które mają wpływ na układ formantu, na przykład, marża i VerticalAlignment. Następujące XAML pokazuje, jak przycisk jest tworzony i bez wybrania tej opcji:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Użyj quadrant na podstawie układu**|Określa, czy aktualnie wybraną kontrolkę wyrównuje do najbliższej krawędzi kontenera nadrzędnego. Jeśli to pole wyboru jest wyczyszczone, wyrównanie kontrolki nie zmieniać podczas przenoszenia lub operacji tworzenia.|
 |**Automatycznie wypełnij elementy przybornika**|Określa, czy kontrolki użytkownika i niestandardowe formanty w bieżącym rozwiązaniu są wyświetlane w przyborniku automatycznie.|
 
@@ -75,7 +75,7 @@ Użyj tych opcji, aby określić ustawienia podczas edytowania plików XAML w pr
 
 |||
 |-|-|
-|**Powiększ za pomocą**|Powiększenie w Projektancie XAML przy użyciu kółka myszy lub naciskając klawisz CTRL i ALT obracając kółkiem.|
+|**Powiększ za pomocą**|Powiększenie w Projektancie XAML przy użyciu kółka myszy lub naciskając **Ctrl** lub **Alt** klucza przy użyciu kółka myszy.|
 |**Typ jednostki**|Określa, czy pomiary w Projektancie są oparte na punktach lub pikselach. Ponieważ Universal Windows Apps nie obsługują punkty, jednostki są automatycznie konwertowane na pikseli, jeśli **punktów** jest zaznaczone.|
 
 ## <a name="artboard-blend-only"></a>Obszar roboczy (tylko program Blend)

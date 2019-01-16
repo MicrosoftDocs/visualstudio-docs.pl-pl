@@ -9,16 +9,19 @@ description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, do�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739646"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315504"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
 Przekształć dane w rozbudowane elementy wizualne do zbierania i organizowania.
+
+> [!Note]
+> Ta licencja usługi Power BI jest udostępniana do eksperymentowania z możliwościami usługi Power BI, w bezpiecznym miejscu, bez wywierania wpływu na dużych środowisk produkcji i testowania.  Aktualną ofertę usługi Power BI wymaga subskrybenta utworzyć własne dzierżawy do wymuszania separacji. Jeśli musisz mieć licencję usługi Power BI skojarzoną z poświadczeń firmowych w dzierżawie firmy skontaktuj się z administratorem firmy w celu zakupu i przypisać licencję.
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj się przy użyciu istniejącego konta.
@@ -26,7 +29,7 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 
 2. Znajdź Kafelek usługi Power BI Pro w sekcji narzędzia na stronie korzyści. Kliknij pozycję **uzyskać kod** link w dolnej części kafelka korzyści.   Otrzymasz powiadomienie, że kod został pomyślnie pobrany.  Kliknij przycisk **aktywować**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek usługi Power BI Pro korzyści](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Power BI Pro Benefit Tile](_img/vs-pbi/vs-pbi-tile.png)
 
 3. Jeśli aktywowano określone inne korzyści z subskrypcji, takie jak subskrypcja dewelopera usługi Office 365 lub pakietu Enterprise Mobility + Security, może już mieć konto.  Jeśli istniejące konto zostanie znaleziony, będziesz mieć możliwość dodawania subskrypcji usługi Power BI Pro do istniejącego konta lub Załóż nowe konto.  Zdecydowanie zaleca się dodanie go do istniejącego konta, aby mogli uzyskiwać dostęp różne korzyści wynikające z identyfikatorem pojedynczego użytkownika
    > [!div class="mx-imgBorder"]
@@ -73,14 +76,14 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak|
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak|
 | Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                            |Nie dotyczy         |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                            |Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne       |  Tak|
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy|
 | Program Visual Studio Enterprise (miesięcznych w chmurze) | Azure                                       | Niedostępne                                  |Nie dotyczy|
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego).  Nie obejmuje:  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego).  Nie obejmuje:  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
@@ -95,8 +98,10 @@ Odp.:  Korzyścią jest bezpłatne, ale aktywacji używa tego samego systemu, kt
 - Karta kredytowa.  Jeśli podasz numer karty kredytowej, Twoja karta nie zostanie obciążona. 
 - Faktury.  Jeśli wybierzesz opcję "Pomocą faktury" jako typ płatności, nie trzeba podać numer karty kredytowej.  Można również ustawić interwał "corocznie".  Dzięki temu, otrzymasz jedną wiadomość e-mail informacją o tym, że faktury jest gotowa.  Kwota faktury będzie wynosić 0,00 USD.  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>PYT.:  To korzyść usługi Power BI Pro, zawarte w moich licencji subskrypcji do użytku w środowisku produkcyjnym?
-Odp.:  Tak.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>PYT.:  To korzyść usługi Power BI Pro, zawarte w moich subskrypcji licencjonowane do użycia w środowisku produkcyjnym?
+Odp.:  Tak, można go użyć w środowisku produkcyjnym, z dwoma ważnymi zastrzeżeniami:
+- Ta oferta wymaga instalacji na jego własnej dzierżawy.  Jeśli musisz mieć licencję usługi Power BI skojarzoną z poświadczeń firmowych w dzierżawie firmy skontaktuj się z administratorem firmy w celu zakupu i przypisać licencję. 
+- Nie można użyć tej korzyści z usługi Power BI Pro w dzierżawach instytucji rządowych.  
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>PYT.:  Podczas próby aktywowania usługi Power BI Pro, otrzymuję komunikat "Masz już konto, za pośrednictwem pracy".  Można nadal korzystać z korzyści?
 Odp.:  Tak.  Komunikat wskazuje, że użytkownik jest zalogowany do domeny, która ma już aktywnych dzierżaw usługi Office 365, na których nie jesteś administratorem.  Aby dodać usługę Power BI Pro do dzierżawy, musi być administratorem tej dzierżawy.  Aby rozwiązać ten problem, wykonaj następujące kroki, aby utworzyć własną dzierżawę.

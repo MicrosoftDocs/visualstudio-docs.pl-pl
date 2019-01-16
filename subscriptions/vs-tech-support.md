@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740436"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315517"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -85,19 +85,16 @@ Upewnij się, że masz swój identyfikator umowy i identyfikator dostępu jest d
 Aby użyć swojej korzyści z pomocy technicznej subskrypcji programu Visual Studio zagadnienia odnoszące się do platformy Azure, należy połączyć swój identyfikator umowy i identyfikator dostępu do subskrypcji platformy Azure.
 
 1.  Odwiedź stronę https://portal.azure.com i zaloguj się
-2.  Z okienka nawigacji po lewej stronie kliknij przycisk "Pomoc + obsługa techniczna"
-3.  W obszarze "Support" kliknij przycisk "Połącz umowę pomocy technicznej"
-4.  Wprowadź Podaj "Identyfikator dostępu" i "Identyfikator umowy" podany w #1 powyżej.
-
-Po wykonaniu tych czynności będzie można wybrać plan pomocy technicznej, skojarzone z korzyści z subskrypcji programu Visual Studio.  (Nazwa planu może zawierać "MSDN").
+2.  W nawigacji po lewej stronie kliknij **Pomoc i obsługa techniczna**
+3.  W obszarze "Support" kliknij **nowe żądanie pomocy technicznej**
 
 ## <a name="eligibility"></a>Uprawnienie
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
-| Visual Studio Professional (standardowa) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                             |  Tak         |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
+| Visual Studio Professional (Standard) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                               | Tak         |
 | Visual Studio Dev Essentials | Nie dotyczy | Niedostępne |Nie dotyczy|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|

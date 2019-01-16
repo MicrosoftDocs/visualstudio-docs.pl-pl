@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864721"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315595"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -547,7 +547,7 @@ Określa odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.
 |[Code element](../ide/code-snippets-schema-reference.md#code-element)|Element wymagany. Określa kod, który ma zostać wstawiony do pliku dokumentacji. Musi zawierać dokładnie jeden `Code` element `Snippet` elementu.|
 |[Declarations — element](../ide/code-snippets-schema-reference.md#declarations-element)|Element opcjonalny. Określa literały i obiekty tworzące sekcje fragmentu kodu, które można edytować. Może mieć zero lub jeden `Declarations` elementów w `Snippet` elementu.|
 |[Imports element](../ide/code-snippets-schema-reference.md#imports-element)|Element opcjonalny. Grupuje poszczególne `Import` elementów. Może mieć zero lub jeden `Imports` elementów w `Snippet` elementu.|
-||Element opcjonalny. Grupuje poszczególne `Reference` elementów. Może mieć zero lub jeden `References` elementów w `Snippet` elementu.|
+|[References — element](../ide/code-snippets-schema-reference.md#references-element)|Element opcjonalny. Grupuje poszczególne `Reference` elementów. Może mieć zero lub jeden `References` elementów w `Snippet` elementu.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
