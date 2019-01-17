@@ -20,12 +20,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baadfed3003f3b54d9d9cd4068b15a818b3858ce
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7cf1f092e91079c6f052fd07b40f276d04332b2f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804711"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348272"
 ---
 # <a name="expected--javascript"></a>Oczekiwano znaku „(" (JavaScript)
 Podjęto próbę ujmij wyrażenie w zestawie nawiasów, ale nie zawiera nawias otwierający. Niektóre wyrażenia muszą być ujęte w nawiasy otwierające i zamykające zestaw. Zwróć uwagę na użycie nawiasów w poniższym przykładzie.  

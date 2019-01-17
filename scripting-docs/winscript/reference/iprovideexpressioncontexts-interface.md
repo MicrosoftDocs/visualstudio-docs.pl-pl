@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 402b439da6f1fa369accacb27f987ac77119e343
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91f4251fec57001ba6c7a4ea1804ec72371418bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794584"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345100"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>Interfejs IProvideExpressionContexts
-Umożliwia wyliczenie znane przez składnik niektórych kontekstach wyrażenia. Liczba aparatów skryptów zwykle implementuje ten interfejs.  
+Zapewnia sposób wyliczyć kontekstów wyrażenie znane niektórych składników. Aparaty skryptów zwykle implementują ten interfejs.  
   
- Menedżer debugowania procesu używa tego interfejsu można znaleźć wszystkie konteksty wyrażenia globalnego skojarzone z danym wątku.  
+ Menedżer debugowania procesów używa tego interfejsu, aby znaleźć wszystkie konteksty wyrażenia globalnego skojarzone z danym wątku.  
   
 > [!NOTE]
->  Ten interfejs jest wywoływana z w wątku zainteresowań. Jest czynności, aby zidentyfikować bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
+>  Ten interfejs jest wywoływana z wewnątrz wątku zainteresowania. Jest implementujący do identyfikowania bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
   
 ## <a name="methods"></a>Metody  
- Oprócz dziedziczone z metody `IUnknown`, `IProvideExpressionContexts` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IProvideExpressionContexts` interfejsu udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  

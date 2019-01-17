@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f85ef798a6507c92130cbddae98de87a9924415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eb7b09beb38fcdfb2a139fa385119cf9f76d77ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794263"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344225"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>Interfejs IDebugDocumentTextExternalAuthor
-Zezwala na zewnętrzne edytory bezpiecznie edycji dokumentów na podstawie pliku debugera za powiadamianie dokumentu zostanie zmieniony plik źródłowy.  
+Zezwala na zewnętrzne edytory bezpiecznie edytować dokumentów opartych na plikach debugera, informując o tym dokumencie, po zmianie pliku źródłowego.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugDocumentTextExternalAuthor` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugDocumentTextExternalAuthor` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  

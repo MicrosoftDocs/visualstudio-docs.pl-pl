@@ -1,5 +1,5 @@
 ---
-title: Interfejs IActiveScriptSiteDebug | Dokumentacja firmy Microsoft
+title: IActiveScriptSiteDebug Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793519"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348311"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>Interfejs IActiveScriptSiteDebug
-Wdrożenie hostów inteligentnych `IActiveScriptSiteDebug` interfejsu, aby przeprowadzić Zarządzanie dokumentami i brać udziału w debugowaniu. `IActiveScriptSite` Obiektu zwykle zapewnia implementacja `IActiveScriptSiteDebug` interfejsu. Jeśli zostanie to zrobione, należy wywołać `IActiveScriptSite::QueryInterface` metodę, aby uzyskać `IActiveScriptSiteDebug` interfejsu.  
+Implementowanie hostów inteligentnych `IActiveScriptSiteDebug` interfejsu, aby wykonać Zarządzanie dokumentami i do wzięcia udziału w debugowaniu. `IActiveScriptSite` Obiekt zwykle zawiera implementację `IActiveScriptSiteDebug` interfejsu. Jeśli zostanie to zrobione, należy wywołać `IActiveScriptSite::QueryInterface` metodę, aby uzyskać `IActiveScriptSiteDebug` interfejsu.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IActiveScriptSiteDebug` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IActiveScriptSiteDebug` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Używane przez aparat języka Aby delegować `IDebugCodeContext::GetSourceContext`.|  
-|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Zwraca obiekt aplikacji debugowania skojarzonych z tą lokacją skryptu.|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Pobiera węzeł aplikacji w obszarze skryptu, który ma zostać dodany dokumentów.|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Umożliwia host inteligentny do określenia sposobu obsługi błędów czasu wykonywania.|
+|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Używane przez aparat języka, aby delegować `IDebugCodeContext::GetSourceContext`.|  
+|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Zwraca obiekt aplikacji debugowania, które są skojarzone z tą lokacją skryptu.|  
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Pobiera węzeł aplikacji, w ramach której skrypt dokumenty powinny zostać dodane.|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Umożliwia hosta inteligentnego określić sposób obsługi błędów czasu wykonywania.|

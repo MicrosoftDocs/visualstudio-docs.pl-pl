@@ -1,5 +1,5 @@
 ---
-title: Interfejs IApplicationDebuggerUI | Dokumentacja firmy Microsoft
+title: IApplicationDebuggerUI Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e3c5f9e4cabeb4fba31bb039a7cf673ca1759860
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793669"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348909"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>Interfejs IApplicationDebuggerUI
-Implementowany przez debuger zintegrowane środowisko programistyczne (IDE) (oprócz `IApplicationDebugger`) umożliwiają składnik zewnętrzny większą kontrolę nad interfejsu użytkownika (UI) debugera.  
+Implementowany przez debugera zintegrowanego środowiska programistycznego (IDE) (oprócz `IApplicationDebugger`) do zapewnienia składnik zewnętrzny więcej kontroli nad interfejsu użytkownika (UI) debugera.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IApplicationDebuggerUI` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IApplicationDebuggerUI` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Udostępnia interfejs użytkownika okna zawierającego dokument określony debugowania do góry w debugerze.|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Wywołuje okno zawierające kontekst danego dokumentu do góry w interfejsie użytkownika debugera i przewijania okna w kontekście.|
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Przesuwa okno zawiera dokument określonego debugowania do góry w debugerze interfejsu użytkownika.|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Wywołuje okno zawierające kontekście danego dokumentu do góry w interfejsie użytkownika debugera i przewija okna do kontekstu.|

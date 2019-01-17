@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16cd1bc891c7d682cc1097cd1b6cb5efd5438db
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b364422afcdf72deaee3d56123a71672769ed61
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793777"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348324"
 ---
 # <a name="iapplicationdebugger-interface"></a>Interfejs IApplicationDebugger
-Podstawowy interfejs udostępniany przez debuger. Oprócz dziedziczone z metody `IUnknown`, `IApplicationDebugger` interfejsu udostępnia następujące metody.  
+Podstawowy interfejs narażona jest debugera. Oprócz metod odziedziczone `IUnknown`, `IApplicationDebugger` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|Wskazuje, czy debuger jest elastyczny.|  
-|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Umożliwia tworzenie obiektów w procesie debuger przez kod będący poza procesem do debugera.|  
-|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Obsługuje zdarzenie wyjściowe debugowania.|  
+|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Umożliwia tworzenie obiektów w procesie debugowania przez kod to znaczy poza procesem do debugera.|  
+|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Obsługuje zdarzenie danych wyjściowych debugowania.|  
 |[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Obsługuje zdarzenie punktu przerwania.|  
 |[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|Obsługuje zdarzenie zamknięcia debugowania aplikacji.|  
-|[IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)|Obsługuje zdarzenie niestandardową aplikację.|
+|[IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)|Obsługuje zdarzenie aplikacji niestandardowych.|

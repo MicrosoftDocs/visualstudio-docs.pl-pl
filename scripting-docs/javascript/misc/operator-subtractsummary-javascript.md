@@ -18,57 +18,57 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 85eb607ed868d034860d44b3ecaf69a5d8d55c89
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753578"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349325"
 ---
 # <a name="operator-summary-javascript"></a>Podsumowanie dla operatorów (JavaScript)
-W poniższych tabelach przedstawiono [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operatory w swoich kategoriach.  
+W poniższych tabelach przedstawiono [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operatorów w swoich kategoriach.  
   
 ## <a name="computational-operators"></a>Operatory obliczeniowe  
   
 |Operator|Symbol|  
 |--------------|------------|  
 |[Dodanie](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
-|[Dekrementacji](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[dzielenie](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Przyrost](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[pozostałe](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[Mnożenia](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
+|[Dekrementacja](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
+|[Dzielenie](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[Inkrementacja](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Pozostała](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Mnożenie](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Odejmowanie](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
-|[Jednoargumentowy negacji](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[Negacja Jednoargumentowa](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
 ## <a name="logical-operators"></a>Operatory logiczne  
   
 |Operator|Symbol|  
 |--------------|------------|  
-|[Przecinkami](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[Warunkowy (trójargumentowy)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
-|[Equality](../../javascript/reference/comparison-operators-javascript.md)|==|  
+|[Comma](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[Warunkowe (Ternary)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
+|[Równość](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Większa niż](../../javascript/reference/comparison-operators-javascript.md)|>|  
-|[Większe lub równe](../../javascript/reference/comparison-operators-javascript.md)|>=|  
+|[Większa niż lub równa](../../javascript/reference/comparison-operators-javascript.md)|>=|  
 |[Tożsamość](../../javascript/reference/comparison-operators-javascript.md)|===|  
 |[Nierówności](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Mniej niż](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Mniejsze niż lub równe](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[Logiczny AND](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
-|[NEGACJA](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
+|[Operator logiczny oraz](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
+|[Logiczne NOT](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Logiczne lub](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[Nonidentity](../../javascript/reference/comparison-operators-javascript.md)|!==|  
+|[Nietożsamości](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
 ## <a name="bitwise-operators"></a>Operatory bitowe  
   
 |Operator|Symbol|  
 |--------------|------------|  
-|[Iloczynu bitowego AND](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
-|[Operator przesunięcia w lewo](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
-|[Bitowe NOT](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[Operator lub](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
+|[Bitowe AND](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
+|[Przesunięcie bitowe w lewo](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
+|[Bitwise NOT](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
+|[Bitwise Or](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
 |[Przesunięcia bitowego w prawo](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
-|[Iloczynu bitowego XOR](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
+|[Bitwise XOR](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
 |[Przesunięcia w prawo bez znaku](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
   
 ## <a name="assignment-operators"></a>Operatory przypisania  

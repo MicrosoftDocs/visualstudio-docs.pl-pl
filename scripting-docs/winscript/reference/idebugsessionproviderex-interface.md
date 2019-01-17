@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545b60f13e86e59143ce0e57f454b13f61041f11
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794233"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349221"
 ---
 # <a name="idebugsessionproviderex-interface"></a>Interfejs IDebugSessionProviderEx
-Podstawowy interfejs dostarczony przez debuger IDE, aby włączyć debugowanie inicjowane przez hosta i języka. Ustanawia ona sesję debugowania dla działającej aplikacji. Ten interfejs jest implementowany przez Menedżer debugowania komputera.  
+Podstawowy interfejs dostarczony przez debuger środowiska IDE, aby włączyć debugowanie inicjowane przez hosta i języka. Definiuje on sesji debugowania dla działającej aplikacji. Ten interfejs jest implementowany przez Menedżer debugowania komputera.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugSessionProviderEx` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugSessionProviderEx` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Określa, czy tylko w czasie debugowania jest możliwe za pomocą określonej aplikacji.|  
-|[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|Inicjuje sesję debugowania z określonej aplikacji.|
+|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Określa, czy debugowanie Just In Time jest możliwe z określoną aplikacją.|  
+|[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|Inicjuje sesję debugowania przy użyciu określonej aplikacji.|

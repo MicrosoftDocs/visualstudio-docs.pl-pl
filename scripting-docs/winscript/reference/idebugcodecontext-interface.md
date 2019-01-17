@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793882"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349169"
 ---
 # <a name="idebugcodecontext-interface"></a>Interfejs IDebugCodeContext
-Abstrakcję reprezentuje pozycji w kodzie pliku wykonywalnego.  
+Abstrakcja reprezentuje pozycji w kodzie pliku wykonywalnego.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugCodeContext` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugCodeContext` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  

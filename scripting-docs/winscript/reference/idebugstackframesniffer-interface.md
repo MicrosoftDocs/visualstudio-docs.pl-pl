@@ -1,5 +1,5 @@
 ---
-title: Interfejs IDebugStackFrameSniffer | Dokumentacja firmy Microsoft
+title: IDebugStackFrameSniffer Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41fff384bc9075d94fcfa84d94350fec72ebc64a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794194"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348883"
 ---
 # <a name="idebugstackframesniffer-interface"></a>Interfejs IDebugStackFrameSniffer
-Umożliwia wyliczenie ramek stosu logiczne znane przez składnik. Liczba aparatów skryptów zwykle implementuje ten interfejs. Używa Menedżera debugowania procesu to interfejs, aby znaleźć wszystkie ramki stosu skojarzone z danym wątku.  
+Umożliwia wyliczenie ramek stosu logiczne, znane przez składnik. Aparaty skryptów zwykle implementują ten interfejs. Proces debugowania manager wykorzystuje to interfejs, aby znaleźć wszystkie ramki stosu skojarzone z danym wątku.  
   
 > [!NOTE]
->  Debuger wywołuje tego interfejsu w wątku zainteresowań. Aparat skryptu musi zidentyfikować bieżącego wątku i zwracać odpowiedniego modułu wyliczającego.  
+>  Debuger wywołuje ten interfejs z wewnątrz wątku zainteresowania. Aparat skryptów należy zidentyfikować bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
   
 ## <a name="methods"></a>Metody  
- Oprócz dziedziczone z metody `IUnknown`, `IDebugStackFrameSniffer` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugStackFrameSniffer` interfejsu udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  

@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dc420f3c59a59373c6e3a2be9e7254eea451585
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20d895f8bd6d4919def00625e9f285afdfe4f866
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794941"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349871"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Zwraca wątku głównego dla hostów, które wywołują [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), w przeciwnym razie zwraca E_FAIL.  
+Zwraca główny wątek dla hostów, które wywołują [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439), w przeciwnym razie zwraca E_FAIL.  
   
 > [!IMPORTANT]
->  [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) jest implementowany przez PDM v11.0 i większa. Znajduje się w zestawie activdbg100.h.  
+>  [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,5 +38,5 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
  [out] Głównym [interfejs IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
- [Interfejs IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)
+ [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [IRemoteDebugApplication110, interfejs](../../winscript/reference/iremotedebugapplication110-interface.md)

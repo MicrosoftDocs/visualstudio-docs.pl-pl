@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b1b761195a3b004ddaf13d17eafd2c8fe9982b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c0bbd5ec7795498d9f04cc516a56d01c78bdb7c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796303"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349260"
 ---
 # <a name="ivariantchangetype-interface"></a>Interfejs IVariantChangeType
-Umożliwia obiekt wywołujący, aby przekonwertować wartości Wariant z jednego typu.  
+Umożliwia obiektowi wywołującemu przekonwertować wartość typu Wariant z jednego typu.  
   
 ## <a name="methods"></a>Metody  
- Oprócz dziedziczone z metody `IUnknown`, `IVariantChangeType` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IVariantChangeType` interfejsu udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|Przyjmuje wartość typu variant i tworzy nowy wariant z określonym typem.|
+|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|Pobiera wartość wariantu i tworzy nowy wariant z określonym typem.|

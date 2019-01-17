@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825507"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348701"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Długość tablicy musi być mieć przypisaną dodatnią liczbę całkowitą
 Podczas ustawiania **długość** właściwości istniejącego **tablicy** obiektu, określona długość tablicy, która nie jest liczbą dodatnią lub zerem. Ten błąd występuje podczas przypisywania wartości do **długość** właściwość `Array` obiekt, który jest ujemna lub nie jest liczbą (`NaN`). Należy pamiętać, że [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatycznie konwertuje cyfr ułamkowych do całego liczb całkowitych.  

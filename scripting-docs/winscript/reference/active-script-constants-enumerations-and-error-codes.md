@@ -1,5 +1,5 @@
 ---
-title: Kody błędów skryptów aktywnych stałe, wyliczenia i | Dokumentacja firmy Microsoft
+title: Aktywnego skryptu stałe, wyliczenia i kody błędów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,48 +12,48 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb4165a5471c8e79827f0f7605cef575e82bab75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f5e25070aa92a9464bfc92433c0d2b7763232fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791992"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347622"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>Kody błędów, stałe i wyliczenia aktywnego skryptu
-W tej sekcji opisano, wyliczenia i kodów błędów występujących podczas aparaty skryptów systemu Windows.  
+W tej sekcji opisano, wyliczenia i kodów błędów występujących podczas aparatów obsługi skryptów Windows.  
   
 ## <a name="constants"></a>Stałe  
   
 |Stała|Opis|  
 |--------------|-----------------|  
-|[Stałe SCRIPTTHREADID](../../winscript/reference/scriptthreadid-constants.md)|Określa typ wątku.|  
+|[SCRIPTTHREADID, stałe](../../winscript/reference/scriptthreadid-constants.md)|Określa typ wątku.|  
   
 ## <a name="properties"></a>Właściwości  
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|[Właściwość SCRIPTPROP_HOSTKEEPALIVE](../../winscript/reference/scriptprop-hostkeepalive-property.md)|Służy do określenia, czy aparat skryptów powinny być przechowywane funkcjonalnej, jeśli istnieją oczekujące odwołania.|  
+|[SCRIPTPROP_HOSTKEEPALIVE, właściwość](../../winscript/reference/scriptprop-hostkeepalive-property.md)|Służy do określania, czy aparat skryptów powinny być przechowywane w pełni funkcjonalne, w przypadku innych odwołań.|  
   
 ## <a name="enumerations"></a>Wyliczenia  
   
 |Wyliczenie|Opis|  
 |-----------------|-----------------|  
-|[Wyliczenie SCRIPTGCTYPE](../../winscript/reference/scriptgctype-enumeration.md)|Typ operacji wyrzucania elementów bezużytecznych do wykonania.|  
-|[Wyliczenie SCRIPTLANGUAGEVERSION](../../winscript/reference/scriptlanguageversion-enumeration.md)|Określa możliwości skryptów wersji.|  
-|[Wyliczenie SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md)|Określa stan aparatu skryptów.|  
+|[SCRIPTGCTYPE, wyliczenie](../../winscript/reference/scriptgctype-enumeration.md)|Typ wyrzucania elementów bezużytecznych do wykonania.|  
+|[SCRIPTLANGUAGEVERSION, wyliczenie](../../winscript/reference/scriptlanguageversion-enumeration.md)|Określa możliwości skryptów wersji.|  
+|[SCRIPTSTATE, wyliczenie](../../winscript/reference/scriptstate-enumeration.md)|Określa stan silnika wykonywania skryptów.|  
 |||  
-|[Wyliczenie SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md)|Określa stan wątku aparatu skryptów.|  
-|[Wyliczenie SCRIPTTRACEINFO](../../winscript/reference/scripttraceinfo-enumeration.md)|Reprezentuje zdarzenia skryptów, które są śledzone. Używane w [metoda IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).|  
-|[Wyliczenie SCRIPTUICHANDLING](../../winscript/reference/scriptuichandling-enumeration.md)|Przedstawia sposób obsługi formantu interfejsu użytkownika.|  
-|[Wyliczenie SCRIPTUICITEM](../../winscript/reference/scriptuicitem-enumeration.md)|Reprezentuje typ elementu interfejsu użytkownika. Używane w [metoda IActiveScriptSiteUIControl::GetUIBehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).|  
+|[SCRIPTTHREADSTATE, wyliczenie](../../winscript/reference/scriptthreadstate-enumeration.md)|Określa stan wątku w silnik wykonywania skryptów.|  
+|[SCRIPTTRACEINFO, wyliczenie](../../winscript/reference/scripttraceinfo-enumeration.md)|Reprezentuje zdarzenie skryptu, które jest śledzone. Używane w [metoda IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).|  
+|[SCRIPTUICHANDLING, wyliczenie](../../winscript/reference/scriptuichandling-enumeration.md)|Przedstawia sposób obsługi kontrolki interfejsu użytkownika.|  
+|[SCRIPTUICITEM, wyliczenie](../../winscript/reference/scriptuicitem-enumeration.md)|Reprezentuje typ elementu interfejsu użytkownika. Używane w [metoda IActiveScriptSiteUIControl::GetUIBehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).|  
   
 ## <a name="error-codes"></a>Kody błędów  
   
 |Kod błędu|Opis|  
 |----------------|-----------------|  
-|[Kod błędu Script_e_propagate](../../winscript/reference/script-e-propagate-error-code.md)|Błąd skryptu jest przekazywana dalej do elementu wywołującego, która może być w innym wątku.|  
-|[Kod błędu Script_e_recorded](../../winscript/reference/script-e-recorded-error-code.md)|Błąd został przekazany między aparat skryptu i hostem.|  
-|[Kod błędu Script_e_reported](../../winscript/reference/script-e-reported-error-code.md)|Aparat skryptów zgłosiła nieobsługiwany wyjątek dla hosta.|  
+|[SCRIPT_E_PROPAGATE, kod błędu](../../winscript/reference/script-e-propagate-error-code.md)|Błąd skryptu jest są propagowane do obiektu wywołującego, która może być w innym wątku.|  
+|[SCRIPT_E_RECORDED, kod błędu](../../winscript/reference/script-e-recorded-error-code.md)|Błąd został przekazany między aparatu skryptów i hostem.|  
+|[SCRIPT_E_REPORTED, kod błędu](../../winscript/reference/script-e-reported-error-code.md)|Aparat skryptów zgłosił nieobsługiwany wyjątek do hosta.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy aktywnego skryptu](../../winscript/reference/active-script-interfaces.md)

@@ -20,22 +20,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788683"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346218"
 ---
 # <a name="invalid-replacer-argument"></a>Nieprawidłowy argument zastępczy
-Została podjęta próba wywołania `JSON.stringify` z argumentem, który jest nieprawidłowy. `replacer` Argument musi być funkcją lub tablicy.  
+Podjęto próbę wywołania `JSON.stringify` z nieprawidłowym argumentem, który jest nieprawidłowy. `replacer` Argument musi być funkcją ani tablicą.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Zmień `replacer` argumentu dla funkcji lub tablicy.  
+-   Zmiana `replacer` argumentu dla funkcji lub tablicy.  
   
 ## <a name="example"></a>Przykład  
- Kod w tym przykładzie powoduje błąd w czasie wykonywania, ponieważ `memberfilter` jest obiektem zamiast funkcji lub tablicy.  
+ Kod, w tym przykładzie powoduje błąd w czasie wykonywania, ponieważ `memberfilter` jest obiektem, zamiast funkcji lub tablicy.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -51,5 +51,5 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
   
 ## <a name="see-also"></a>Zobacz też  
  [Obiekt JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.Parse — funkcja](../../javascript/reference/json-parse-function-javascript.md)   
- [Błędy środowiska wykonawczego języka JavaScript](../../javascript/reference/javascript-run-time-errors.md)
+ [JSON.parse Function](../../javascript/reference/json-parse-function-javascript.md)   
+ [Błędy czasu wykonania JavaScript](../../javascript/reference/javascript-run-time-errors.md)

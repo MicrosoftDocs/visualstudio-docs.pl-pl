@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088572"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344827"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>Struktura PROFILER_HEAP_OBJECT_SCOPE_LIST
 Ta struktura jest skojarzony z tylko obiekty funkcyjne. Lista zakresów reprezentuje zamknięcia dla funkcji jako listę zakresów, gdzie każdy zakres jest obiekt sterty przy użyciu listy skojarzonej właściwości reprezentujący zmienne w każdej z danego zakresu. W niektórych przypadkach nazwy obiektów w zakresie będą niedostępne i ich Indeksuj tylko do listy właściwości jest dostępna.  

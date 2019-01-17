@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d261e9dfaaf06145554eb80e2e9f63e8d429082d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 89f773ee24c2b50499d7d89bf590250f599b0edb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794887"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349949"
 ---
 # <a name="ienumremotedebugapplicationthreads-interface"></a>Interfejs IEnumRemoteDebugApplicationThreads
 Wylicza uruchomionych wątków w aplikacji.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IEnumRemoteDebugApplicationThreads` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IEnumRemoteDebugApplicationThreads` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|Pobiera określoną liczbę segmentów w kolejności wyliczenia.|  
 |[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Pomija określoną liczbę segmentów w kolejności wyliczenia.|  
-|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Resetuje sekwencję wyliczenia na początku.|  
-|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Tworzy moduł wyliczający, który zawiera stan tego samego jako bieżący modułu wyliczającego.|
+|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
+|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan jako bieżący modułu wyliczającego.|

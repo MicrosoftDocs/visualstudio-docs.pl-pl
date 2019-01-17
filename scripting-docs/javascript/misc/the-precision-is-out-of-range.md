@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 73fb9c7fb35aa33214806ac1d89f4c3f1b9a479e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788845"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347076"
 ---
 # <a name="the-precision-is-out-of-range"></a>Dokładność jest spoza zakresu
-Próbowano przekazać nieprawidłowy argument do funkcji **Number.prototype.toPrecision**. Argument **toPrecision** muszą mieć od 1 do 21 (włącznie).  
+Próba przekazania nieprawidłowy argument do funkcji **Number.prototype.toPrecision**. Argument **toPrecision** muszą mieć od 1 do 21 (włącznie).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, argument `toPrecision` nie jest za duża albo za mała.  
+-   Upewnij się, argument `toPrecision` nie jest zbyt duży lub za mały.  
   
 ## <a name="see-also"></a>Zobacz też  
- [toPrecision — metoda (numer)](../../javascript/reference/toprecision-method-number-javascript.md)
+ [toPrecision, metoda (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

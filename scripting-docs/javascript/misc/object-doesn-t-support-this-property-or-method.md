@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 893b8328affcd0a893840cefddba61a322db315c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801865"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349442"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>Obiekt nie obsługuje tej właściwości lub metody
 Możesz określić właściwości lub metody, która nie istnieje dla tego obiektu. Nie do wszystkich obiektów obsługuje wszystkie właściwości i metody.  

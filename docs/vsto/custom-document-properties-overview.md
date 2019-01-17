@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936896"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349507"
 ---
 # <a name="custom-document-properties-overview"></a>Przegląd właściwości niestandardowego dokumentu
 
@@ -38,7 +38,7 @@ Ta właściwość zawiera identyfikator CLSID interfejsu w składniku modułu ł
 
 Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje o pliku manifestu wdrożenia dla dostosowania. Aby uzyskać więcej informacji na temat manifestów, zobacz [stosowania i wdrażania manifestów w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Wartość właściwości The_AssemblyLocation mogą mieć różnych formatach, w zależności od tego, w jaki sposób rozwiązanie będzie wdrożone:
+ \_AssemblyLocation wartość właściwości może mieć różnych formatach, w zależności od tego, w jaki sposób rozwiązanie będzie wdrożone:
 
 - Jeśli rozwiązanie zostanie opublikowana do zainstalowania z witryny sieci Web, ścieżka UNC lub dysk CD lub dysk USB, _AssemblyLocation właściwość ma format *DeploymentManifestPath*|*SolutionID*. Następujący ciąg znajduje się przykład:
 

@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788929"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346140"
 ---
 # <a name="undefined-identifier"></a>Niezdefiniowany identyfikator
-Podjęto próbę użycia identyfikator który [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilatora nie rozpoznaje. Niezdefiniowana wartość jest zwracana przy każdym użyciu:  
+Podjęto próbę użycia identyfikatora, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilatora nie rozpoznaje. Niezdefiniowana wartość jest zwracana zawsze, gdy używasz:  
   
 -   Zmienna, która nie istnieje  
   
--   Zmienna, która została zadeklarowana, ale nigdy nie miał przypisaną do niego, wartość  
+-   Zmienna, która została zadeklarowana, ale nigdy nie miał wartości przypisanej do niego  
   
--   Właściwość obiektu, który nie istnieje.  
+-   właściwości obiektu, który nie istnieje.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Deklarowanie zmiennej o **var** instrukcji (podobnie jak w `var` x;).  
+-   Zadeklaruj zmienną za pomocą **var** — instrukcja (podobnie jak w `var` x;).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zmienne](../../javascript/variables-javascript.md)   

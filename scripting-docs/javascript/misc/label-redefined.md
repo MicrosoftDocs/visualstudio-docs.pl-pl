@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788734"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347817"
 ---
 # <a name="label-redefined"></a>Etykieta zdefiniowana ponownie
-Możesz utworzyć nową etykietę, ale nadać mu nazwę istniejącej etykiety. Etykiety może służyć do oznaczania bloki kodu, ale w ramach określonego zakresu, muszą być unikatowe.  
+Możesz utworzyć nową etykietę, ale nadaje mu nazwę istniejącej etykiety. Etykiety może służyć do oznaczania bloki kodu, ale w określonym zakresie, które muszą być unikatowe.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, że wszystkie etykiety używanych w programach są unikatowe w odpowiednich zakresach.  
+-   Upewnij się, że wszystkie etykiety, którego używasz w swoich programach są unikatowe w ramach ich odpowiednich zakresach.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Labeled — instrukcja](../../javascript/reference/labeled-statement-javascript.md)   
+ [Instrukcja labeled](../../javascript/reference/labeled-statement-javascript.md)   
  [Switch — instrukcja](../../javascript/reference/switch-statement-javascript.md)   
- [Instrukcja BREAK](../../javascript/reference/break-statement-javascript.md)   
- [Continue — instrukcja](../../javascript/reference/continue-statement-javascript.md)
+ [BREAK — instrukcja](../../javascript/reference/break-statement-javascript.md)   
+ [continue, instrukcja](../../javascript/reference/continue-statement-javascript.md)

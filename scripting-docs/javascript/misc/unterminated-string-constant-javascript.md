@@ -21,22 +21,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0fd4dc6ff9008b03c3e8cc81385d6ebe0fe89396
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788746"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349572"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Niezakończona stała typu string (JavaScript)
-Nie zakończył pracę z stała ciągu znakiem cudzysłowu zamykającego. Stałe typu String muszą być ujęte w dwa znaki cudzysłowu.  
+Nie zakończył swojej stała typu string z cudzysłowu zamykającego. Stałe typu String muszą być ujęte w dwa znaki cudzysłowu.  
   
 > [!NOTE]
->  Można użyć dopasowania pary znaków cudzysłowu pojedynczym lub podwójnym. Podwójny cudzysłów mogą być zawarte w ciągach ujęta w znaki apostrofu i pojedynczy cudzysłów mogą być zawarte w ciągach ujęta w znaki podwójnego cudzysłowu.  
+>  Można użyć dopasowania pary pojedynczych lub podwójnych cudzysłowów. Znaki podwójnego cudzysłowu mogą być zawarte w ciągach znaków objętych pojedynczymi znakami cudzysłowu, a znaki pojedynczego cudzysłowu mogą być zawarte w ciągach ujęty w podwójny cudzysłów.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Dodaj zamykający cudzysłów na końcu ciągu.  
+-   Dodaj zamykającego znaku cudzysłowu do końca ciągu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [String — obiekt](../../javascript/reference/string-object-javascript.md)   
- [toString — metoda (obiekt)](../../javascript/reference/tostring-method-object-javascript.md)
+ [toString, metoda (Object)](../../javascript/reference/tostring-method-object-javascript.md)

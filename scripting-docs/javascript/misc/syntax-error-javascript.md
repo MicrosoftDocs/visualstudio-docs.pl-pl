@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788716"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345373"
 ---
 # <a name="syntax-error-javascript"></a>Błąd składniowy (JavaScript)
-Utworzono instrukcję, która narusza co najmniej jeden z gramatyką reguł [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Utworzono instrukcję, która narusza co najmniej reguły gramatyki [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Dokładnie Sprawdź składnię programu na wskazanych numer wiersza.  
+-   Dokładnie Sprawdź składnię programu na numer wiersza, wskazane.  
   
--   Poszukaj Niewłaściwemu skierowaniu nawiasy i nawiasy.  
+-   Poszukaj Niewłaściwemu skierowaniu nawiasów zwykłych lub klamrowych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Error — obiekt](../../javascript/reference/error-object-javascript.md)
+ [Error, obiekt](../../javascript/reference/error-object-javascript.md)

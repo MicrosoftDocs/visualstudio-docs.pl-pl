@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949427"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349078"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Odwołanie cykliczne w argumencie wartości nie jest obsługiwane
 Podjęto próbę wywołania `JSON.stringify` z wartością, która jest nieprawidłowa. `value` Argumentów, tablicę lub obiekt, zawiera odwołanie cykliczne.  
@@ -49,5 +49,5 @@ var error = JSON.stringify(john);
   
 ## <a name="see-also"></a>Zobacz też  
  [Obiekt JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse — funkcja](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON.parse Function](../../javascript/reference/json-parse-function-javascript.md)   
  [Błędy czasu wykonania JavaScript](../../javascript/reference/javascript-run-time-errors.md)

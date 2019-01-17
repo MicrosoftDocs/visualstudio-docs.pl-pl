@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adaeb98f18a052106036a91885696dd4b4760dea
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 46684bf2264813a8daaa466b98119496ba85d4b9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794251"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346543"
 ---
 # <a name="idebugdocumenthost-interface"></a>Interfejs IDebugDocumentHost
-Udostępnia funkcje specyficzne dla hosta, takich jak kolorowania do debugera. `IDebugDocumentHelper::SetDebugDocumentHost` Metoda przyjmuje ten interfejs jako argument.  
+Uwidacznia funkcje specyficzne dla hosta, takie jak kolorowania do debugera. `IDebugDocumentHelper::SetDebugDocumentHost` Metoda przyjmuje ten interfejs jako argument.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugDocumentHost` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugDocumentHost` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugDocumentHost::GetDeferredText](../../winscript/reference/idebugdocumenthost-getdeferredtext.md)|Zwraca zakres znaków, które zostały dodane przy użyciu `IDebugDocumentHelper::AddDeferredText`, w oryginalnym dokumencie hosta.|  
-|[IDebugDocumentHost::GetScriptTextAttributes](../../winscript/reference/idebugdocumenthost-getscripttextattributes.md)|Zwraca atrybuty tekstu w bloku tekstu dokumentu.|  
-|[IDebugDocumentHost::OnCreateDocumentContext](../../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md)|Powiadamia hosta jest tworzony nowy kontekst dokumentu i umożliwia opcjonalnie zwracać obiekt, który określa nowy kontekst hosta.|  
-|[IDebugDocumentHost::GetPathName](../../winscript/reference/idebugdocumenthost-getpathname.md)|Zwraca pełną ścieżkę (łącznie z nazwą pliku) w pliku źródłowego dokumentu.|  
+|[IDebugDocumentHost::GetDeferredText](../../winscript/reference/idebugdocumenthost-getdeferredtext.md)|Zwraca szeroką gamę znaków, które zostały dodane za pomocą `IDebugDocumentHelper::AddDeferredText`, w oryginalnym dokumencie hosta.|  
+|[IDebugDocumentHost::GetScriptTextAttributes](../../winscript/reference/idebugdocumenthost-getscripttextattributes.md)|Zwraca atrybuty tekst w bloku tekstu dokumentu.|  
+|[IDebugDocumentHost::OnCreateDocumentContext](../../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md)|Powiadamia hosta, jest tworzony nowy kontekst dokumentu i Zezwalaj hostowi na opcjonalnie zwracać obiekt, który kontroluje nowy kontekst.|  
+|[IDebugDocumentHost::GetPathName](../../winscript/reference/idebugdocumenthost-getpathname.md)|Zwraca pełną ścieżkę (łącznie z nazwą pliku) pliku źródłowego dokumentu.|  
 |[IDebugDocumentHost::GetFileName](../../winscript/reference/idebugdocumenthost-getfilename.md)|Zwraca nazwę dokumentu, bez informacji o ścieżce.|  
-|[IDebugDocumentHost::NotifyChanged](../../winscript/reference/idebugdocumenthost-notifychanged.md)|Powiadamia hosta zapisania pliku źródłowego dokumentu i jego zawartość powinna być odświeżane.|
+|[IDebugDocumentHost::NotifyChanged](../../winscript/reference/idebugdocumenthost-notifychanged.md)|Powiadamia hosta, zapisania pliku źródłowego dokumentu i jego zawartość powinna być odświeżane.|

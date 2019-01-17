@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794068"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349338"
 ---
 # <a name="idebugdocumentinfo-interface"></a>Interfejs IDebugDocumentInfo
 Zawiera informacje dotyczące dokumentów, które mogą lub nie można utworzyć wystąpienia.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugDocumentInfo` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugDocumentInfo` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDebugDocumentInfo::GetName](../../winscript/reference/idebugdocumentinfo-getname.md)|Zwraca nazwę określonego dokumentu.|  
-|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Zwraca CLSID określający typ dokumentu.|
+|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Zwraca wartość identyfikatora CLSID, określający typ dokumentu.|

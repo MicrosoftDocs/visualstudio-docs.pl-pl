@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 191402a9ba265e5acfb15d1931e260f6b366687e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 73e7e8fb43bb45e4c97b6bb5ec6c739c16a4423a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804555"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349862"
 ---
 # <a name="expected-"></a>Oczekiwano „@"
 Próbowano utworzyć zmienną do użycia w instrukcjach kompilacji warunkowej przy użyciu `@set` instrukcji, ale nie znakiem "**@**" przed nazwą zmiennej.  

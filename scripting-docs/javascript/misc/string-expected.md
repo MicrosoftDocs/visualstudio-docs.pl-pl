@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2dabf754b2bfb4b20555b41457df04d54a5c31c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788656"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346803"
 ---
 # <a name="string-expected"></a>Ciąg oczekiwany
-Użytkownik próbował wywołać **String.prototype.toString** lub **String.prototype.valueOf** metody dla obiekt typu innego niż `String`. Obiekt tego typu wywołania musi być typu `String`.  
+Podjęto próbę wywołania **String.prototype.toString** lub **String.prototype.valueOf** metody na obiekt typu innego niż `String`. Obiekt tego typu wywołania musi być typu `String`.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Tylko wywołania **String.prototype.toString** lub **String.prototype.valueOf** metod na obiektach typu `String`.  
+-   Tylko wywołania **String.prototype.toString** lub **String.prototype.valueOf** metod obiektów typu `String`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [String — obiekt](../../javascript/reference/string-object-javascript.md)   
- [toString — metoda (obiekt)](../../javascript/reference/tostring-method-object-javascript.md)
+ [toString, metoda (Object)](../../javascript/reference/tostring-method-object-javascript.md)

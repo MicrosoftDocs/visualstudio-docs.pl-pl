@@ -14,21 +14,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 432fbe9de5b1ab19c64ae1b9eeee36f3b1156d06
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 998a219e8a58927ca62ec90e6b105586a64bbf2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794023"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349585"
 ---
 # <a name="idebugdocumentcontext-interface"></a>Interfejs IDebugDocumentContext
-Udostępnia abstrakcyjną reprezentacją części dokumentu debugowany. Taka reprezentacja dokumenty tekstowe składa się z zakresem znaku na pozycji.  
+Udostępnia abstrakcyjną reprezentację w postaci części dokumentu debugowane. Taka reprezentacja dokumenty tekstowe składa się z pozycji znaku zakresu.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugDocumentContext` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugDocumentContext` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDebugDocumentContext::GetDocument](../../winscript/reference/idebugdocumentcontext-getdocument.md)|Zwraca dokument, który zawiera ten kontekst.|  
-|[IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)|Wylicza kontekstów kod powiązany z tym kontekstem dokumentu.|
+|[IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)|Wylicza kontekstów kodu skojarzone z tym kontekstem dokumentu.|

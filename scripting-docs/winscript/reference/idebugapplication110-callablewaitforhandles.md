@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31802d8b86f007139959f3ece3bd1a0260599181
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793759"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350027"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Czeka na dowolny określony uchwyt do zasygnalizować zezwalając międzywątkowe do zaksięgowania tego wątku. Ta metoda musi zostać wywołana z wątku debugera.  
+W tym czasie czeka dla każdego określonego dojścia ma być zasygnalizowany pozwalając wywołania międzywątkowe wysyłany do tego wątku. Ta metoda musi zostać wywołana z wątku debugera.  
   
 > [!IMPORTANT]
->  [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez PDM v11.0 i większa. Znajduje się w zestawie activdbg100.h.  
+>  [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
  Liczba dojść oczekiwania.  
   
  `pHandles`  
- Zestaw uchwyty oczekiwania.  
+ Zestaw dojścia oczekiwania.  
   
  `pIndex`  
- Gdy ustawiona wartość HRESULT to S_OK, indeks `pHandles` dla dojście zostało sygnalizowane.  
+ Po wartość HRESULT S_OK, Indeksuj do `pHandles` na uchwyt, który zostało zasygnalizowane.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)
+ [IDebugApplication110, interfejs](../../winscript/reference/idebugapplication110-interface.md)

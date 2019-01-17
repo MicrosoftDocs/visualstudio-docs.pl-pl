@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aee30ae68319810f58bf31f8d0eb32cf8f30d34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 170b345bdb4587d1fd29c1f0f906df0157abd877
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794059"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348922"
 ---
 # <a name="idebugapplicationthread110-interface"></a>Interfejs IDebugApplicationThread110
-Udostępnia więcej funkcji dla [interfejs IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md) interfejsu.  
+Dostępnych jest więcej funkcji dla [interfejs IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md) interfejsu.  
   
 > [!IMPORTANT]
 >  Interfejs jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
@@ -32,7 +32,7 @@ Udostępnia więcej funkcji dla [interfejs IDebugApplicationThread](../../winscr
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugApplicationThread110::AsynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread110-asynchronouscallintothread.md)|Powoduje, że wywołanie asynchroniczne w głównym wątku.|  
-|[IDebugApplicationThread110::GetActiveThreadRequestCount](../../winscript/reference/idebugapplicationthread110-getactivethreadrequestcount.md)|Liczba aktualnie przetwarzanego liczbę żądań wątku z wątku PDM przełączanie mechanizmów. Zazwyczaj 0 lub 1, ale jego może to być większe, jeśli jedno wywołanie wątku rozpoczyna przetwarzanie, ale wyzwala synchroniczne wywołanie z wątku lub w przeciwnym razie wstrzymuje wątku (na przykład, wyzwalając zdarzenie IDebugApplicationEvents, który wydano dla debugera Wątek)|  
+|[IDebugApplicationThread110::AsynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread110-asynchronouscallintothread.md)|Sprawia, że wywołanie asynchroniczne w wątku głównym.|  
+|[IDebugApplicationThread110::GetActiveThreadRequestCount](../../winscript/reference/idebugapplicationthread110-getactivethreadrequestcount.md)|Liczba liczbę żądań wątku z wątku menedżerów PDM przełączanie mechanizmów są aktualnie przetwarza. Zazwyczaj 0 lub 1, ale jego możliwe aż zakończy się być większe, jeśli jedno wywołanie wątku rozpoczyna się przetwarzanie, ale wyzwala synchroniczne wywołanie z wątku lub w przeciwnym razie wstrzymuje działanie wątku (na przykład, wyzwalając IDebugApplicationEvents zdarzenie, które zostało wydane w debugerze Wątek)|  
 |[IDebugApplicationThread110::IsSuspendedForBreakPoint](../../winscript/reference/idebugapplicationthread110-issuspendedforbreakpoint.md)|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) została wywołana dla tego wątku i nie zostało jeszcze zakończone.|  
-|[IDebugApplicationThread110::IsThreadCallable](../../winscript/reference/idebugapplicationthread110-isthreadcallable.md)|Ten wątek jest w stanie, który może przetwarzać wywołań za pomocą wątku PDM przełączanie mechanizmów (na przykład SynchronousCallInThread).|
+|[IDebugApplicationThread110::IsThreadCallable](../../winscript/reference/idebugapplicationthread110-isthreadcallable.md)|Ten wątek jest w stanie, który może przetwarzać wywołań za pomocą wątku menedżerów PDM przełączanie mechanizmów (na przykład SynchronousCallInThread).|

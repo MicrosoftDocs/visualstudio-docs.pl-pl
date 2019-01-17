@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220225"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345490"
 ---
 # <a name="active-script-debugging-overview"></a>Przegląd debugowania aktywnego skryptu
 Interfejsy funkcji aktywnego debugowania skryptu zezwolenia na debugowanie niezależny od języka, niezależny od hosta, a także obsługuje wiele różnych środowisk deweloperskich.  
   
- ![Proces hosta skryptów](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Script Host Process](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Rysunek 1.  
   
  Środowisko do debugowania niezależny od języka może obsługiwać dowolnego języka lub różnych języków programowania, bez określonych informacji o każdym z tych języków programowania. Środowisko debugowania obsługuje także przechodzenie między językami i punktów przerwania. (W tym omówieniu koncentruje się głównie dotyczących obsługi różnych języków, takich jak VBScript skryptów i [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  
@@ -126,7 +126,7 @@ Rysunek 1.
   [IDebugStackFrameSnifferEx, interfejs](../winscript/reference/idebugstackframesnifferex-interface.md)  
   Wylicza ramki stosu logicznych dla menedżerów PDM.  
   
-## <a name="hosts"></a>Hosty  
+## <a name="hosts"></a>Hosts  
  Host:  
   
 - Obsługuje aparaty języka.  

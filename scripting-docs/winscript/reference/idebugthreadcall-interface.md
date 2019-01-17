@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794236"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346270"
 ---
 # <a name="idebugthreadcall-interface"></a>Interfejs IDebugThreadCall
-`IDebugThreadCall` Interfejsu jest zwykle implementowany przez składnik wywołań między wątkami z `IDebugThread` kierowanie implementacji zapewnione przez Menedżera debugowania procesu (PDM).  
+`IDebugThreadCall` Interfejs jest zwykle implementowany przez składnik, który sprawia, że wywołania międzywątkowe z `IDebugThread` kierowania wdrażania udostępniane przez Menedżer debugowania procesów (menedżerów PDM).  
   
- Wywołania PDM `IDebugThreadCall` interfejsu w wątku żądaną i `IDebugThreadCall` interfejsu wywołuje wywołanie żądanej implementacji. `IDebugThreadCall` Interfejsu rzutuje informacje na temat parametrów przekazanych do góry odpowiednie parametry.  
+ Wywołuje program PDM `IDebugThreadCall` interfejsu w żądany wątek i `IDebugThreadCall` interfejsu wywołuje wywołania do żądanej implementacji. `IDebugThreadCall` Interfejsu rzutuje informacje o parametrach przekazywane jako parametry odpowiednie u góry.  
   
- `IDebugThreadCall` Interfejsu jest obiektem bezwątkowy.  
+ `IDebugThreadCall` Interfejs jest obiekt bezwątkowego.  
   
 ## <a name="methods"></a>Metody  
- Oprócz dziedziczone z metody `IUnknown`, `IDebugThreadCall` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugThreadCall` interfejsu udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Obsługuje wywołania do uruchomienia kodu w innym wątku.|
+|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Obsługuje wywołania, aby uruchomić kod w innym wątku.|

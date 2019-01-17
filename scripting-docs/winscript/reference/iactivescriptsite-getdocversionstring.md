@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Dokumentacja firmy Microsoft
+title: IActiveScriptSite::GetDocVersionString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097217"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349754"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Pobiera ciąg zdefiniowany przez hosta, który unikatowo identyfikuje bieżącej wersji dokumentu. Jeśli powiązany dokument został zmieniony poza zakresem skrypt Windows (tak jak w przypadku edytowany przy użyciu programu Notepad strony HTML), aparat skryptów zapisać to wraz z jego utrwalonego stanu wymuszania ponownej kompilacji podczas następnego załadowaniu skryptu.  

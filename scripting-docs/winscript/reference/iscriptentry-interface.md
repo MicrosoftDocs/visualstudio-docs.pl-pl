@@ -14,33 +14,33 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a785be8777cf3400f7723c24f1022bad6e22e330
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9d7b33e2e5c90d5c489fe283575b4a2e45671f9a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795097"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349351"
 ---
 # <a name="iscriptentry-interface"></a>Interfejs IScriptEntry
-Obiekt, który implementuje `IScriptEntry` interfejsu reprezentuje blok skryptu albo obiektem funkcji.  
+Obiekt, który implementuje `IScriptEntry` interfejs reprezentuje blok skryptu lub obiekt funkcyjny.  
   
- Oprócz dziedziczone z metody `IScriptNode`, `IScriptEntry` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IScriptNode`, `IScriptEntry` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)|Zwraca tekst, który odpowiada do treści `IScriptEntry` blok skryptu, bloku funkcji lub skryptlet.|  
+|[IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)|Zwraca tekst, który odnosi się do treści `IScriptEntry` blok skryptu, bloku funkcji lub scriptlet.|  
 |[IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)|Zwraca nazwę elementu, który identyfikuje `IScriptEntry` obiektu.|  
-|[IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)|W przypadku wpisów, które reprezentują pojedynczego obiektu (na przykład funkcja) zwraca nazwę obiektu.|  
-|[IScriptEntry::GetRange](../../winscript/reference/iscriptentry-getrange.md)|Zwraca długość hasła i pozycji początkowej.|  
-|[IScriptEntry::GetSignature](../../winscript/reference/iscriptentry-getsignature.md)|Zwraca typ informacji o `IScriptEntry` obiekt funkcji.|  
-|[IScriptEntry::GetText](../../winscript/reference/iscriptentry-gettext.md)|Zwraca tekst, który odpowiada `IScriptEntry` bloku skryptu lub kodu źródłowego, który jest zawarty w `IScriptScriptlet` obsługi zdarzeń.|  
-|[IScriptEntry::SetBody](../../winscript/reference/iscriptentry-setbody.md)|Ustawia tekst, który znajduje się w treści `IScriptEntry` bloku skryptu lub `IScriptScriptlet` skryptlet.|  
+|[IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)|Wpisy, które reprezentują pojedynczy obiekt (na przykład funkcja) zwraca nazwę obiektu.|  
+|[IScriptEntry::GetRange](../../winscript/reference/iscriptentry-getrange.md)|Zwraca pozycji początkowej i długości hasła.|  
+|[IScriptEntry::GetSignature](../../winscript/reference/iscriptentry-getsignature.md)|Zwraca typ informacji dla `IScriptEntry` obiektu funkcyjnego.|  
+|[IScriptEntry::GetText](../../winscript/reference/iscriptentry-gettext.md)|Zwraca tekst, który odpowiada `IScriptEntry` blok skryptu lub kodu źródłowego, który jest zawarty w `IScriptScriptlet` programu obsługi zdarzeń.|  
+|[IScriptEntry::SetBody](../../winscript/reference/iscriptentry-setbody.md)|Ustawia tekst, który znajduje się w treści `IScriptEntry` blok skryptu albo `IScriptScriptlet` scriptlet.|  
 |[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)|Ustawia nazwę elementu, który identyfikuje `IScriptEntry` obiektu.|  
-|[IScriptEntry::SetName](../../winscript/reference/iscriptentry-setname.md)|Wpisów, które reprezentują pojedynczego obiektu (na przykład funkcja) Określa nazwę obiektu.|  
-|[IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md)|Ustawia typ informacji o `IScriptEntry` obiekt funkcji.|  
-|[IScriptEntry::SetText](../../winscript/reference/iscriptentry-settext.md)|Ustawia tekst, który odpowiada `IScriptEntry` bloku skryptu lub kodu źródłowego, który jest zawarty w `IScriptScriptlet` obsługi zdarzeń.|  
+|[IScriptEntry::SetName](../../winscript/reference/iscriptentry-setname.md)|Wpisy, które reprezentują pojedynczy obiekt (na przykład funkcja) ustawia nazwę obiektu.|  
+|[IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md)|Ustawia typ informacji dla `IScriptEntry` obiektu funkcyjnego.|  
+|[IScriptEntry::SetText](../../winscript/reference/iscriptentry-settext.md)|Ustawia tekst, który odpowiada `IScriptEntry` blok skryptu lub kodu źródłowego, który jest zawarty w `IScriptScriptlet` programu obsługi zdarzeń.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy tworzenia aktywnych skryptów](../../winscript/reference/active-script-authoring-interfaces.md)

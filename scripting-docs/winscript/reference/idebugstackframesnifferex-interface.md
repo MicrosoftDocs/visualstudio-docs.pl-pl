@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56d6e63c41db274634b2593989800ea0392b93a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 76f10d6bbb34c61e87a1be0f61dcd7db168274e7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794182"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348493"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>Interfejs IDebugStackFrameSnifferEx
-Umożliwia wyliczenie ramek stosu logiczne znane przez składnik. Liczba aparatów skryptów zwykle implementuje ten interfejs. Używa Menedżera debugowania procesu to interfejs, aby znaleźć wszystkie ramki stosu skojarzone z danym wątku.  
+Umożliwia wyliczenie ramek stosu logiczne, znane przez składnik. Aparaty skryptów zwykle implementują ten interfejs. Proces debugowania manager wykorzystuje to interfejs, aby znaleźć wszystkie ramki stosu skojarzone z danym wątku.  
   
 > [!NOTE]
->  Ten interfejs jest wywoływana z w wątku zainteresowań. Implementacja interfejsu musi zidentyfikować bieżącego wątku i zwracać odpowiedniego modułu wyliczającego.  
+>  Ten interfejs jest wywoływana z wewnątrz wątku zainteresowania. Implementacja interfejsu należy zidentyfikować bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
   
- Oprócz dziedziczone z metody `IDebugStackFrameSniffer`, `IDebugStackFrameSnifferEx` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IDebugStackFrameSniffer`, `IDebugStackFrameSnifferEx` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  

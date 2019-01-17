@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6620553bce810abcf1a51ac8592061ef017dd9bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cf880ed8b0295e841026e884f6cec71a9f52d4ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796366"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347492"
 ---
 # <a name="scriptuicitem-enumeration"></a>Wyliczenie SCRIPTUICITEM
 Reprezentuje typ elementu interfejsu użytkownika. Używane w [metoda IActiveScriptSiteUIControl::GetUIBehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).  
@@ -32,5 +32,5 @@ typedef enum tagSCRIPTUICITEM {     SCRIPTUICITEM_INPUTBOX = 1,     SCRIPTUICITE
   
 |||  
 |-|-|  
-|SCRIPTUICITEM_INPUTBOX|Kontrolki wprowadzania.|  
+|SCRIPTUICITEM_INPUTBOX|Kontrolki wejściowej.|  
 |SCRIPTUICITEM_MSGBOX|Okno komunikatu.|

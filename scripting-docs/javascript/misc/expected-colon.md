@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802399"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349828"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „:"
 Podjęto próbę utworzenia wyrażenia używającego trójargumentowy operatora warunkowego, ale nie zawiera dwukropka między drugi i trzeci operand. Operator warunkowy trójargumentowy (trzy operandy) wymaga dwukropek między sekundy (true) oraz innych (false) argumentów.  

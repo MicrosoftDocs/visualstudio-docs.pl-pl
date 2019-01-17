@@ -1,5 +1,5 @@
 ---
-title: Kod błędu Script_e_recorded | Dokumentacja firmy Microsoft
+title: Kod błędu SCRIPT_E_RECORDED | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcefd3ff7ca2f084366f1317b47d1718b5e71fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8473c905f7524c72449d96c32bec4260e2502e34
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796339"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349091"
 ---
 # <a name="scripterecorded-error-code"></a>Kod błędu SCRIPT_E_RECORDED
-Błąd został przekazany między aparat skryptu i hostem. Host musi przekazać do obiektu wywołującego kod błędu.  
+Błąd został przekazany między aparatu skryptów i hostem. Host musi przekazać kod błędu do obiektu wywołującego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,4 +29,4 @@ SCRIPT_E_RECORDED   0x86664004L
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kody błędów, wyliczenia i stałe aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

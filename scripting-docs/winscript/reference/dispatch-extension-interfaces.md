@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b7b77f096d70b15272e0cce1b985f3c32f89e495
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940934"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347258"
 ---
 # <a name="dispatch-extension-interfaces"></a>Interfejsy rozszerzenia wysyłki
 Plik nagłówkowy DispEx.h udostępnia interfejsy wymienione w tej sekcji.  

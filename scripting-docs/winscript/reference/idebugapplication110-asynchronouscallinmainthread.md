@@ -14,18 +14,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 236a6585d5d5844f282d8ecf5820ac8fdfb49648
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e3f98ff917475f0f0733163862ff20ef56f04bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793876"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344125"
 ---
 # <a name="idebugapplication110asynchronouscallinmainthread"></a>IDebugApplication110::AsynchronousCallInMainThread
-Powoduje, że wywołanie asynchroniczne w głównym wątku.  
+Sprawia, że wywołanie asynchroniczne w wątku głównym.  
   
 > [!IMPORTANT]
->  [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez PDM v11.0 i większa. Znajduje się w zestawie activdbg100.h.  
+>  [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,4 +50,4 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
  Trzeci parametr wywołania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)
+ [IDebugApplication110, interfejs](../../winscript/reference/idebugapplication110-interface.md)

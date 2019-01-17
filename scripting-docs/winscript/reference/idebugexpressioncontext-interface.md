@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c55a2f270e4c82c578450092e5066b19fe9e606
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 12b997d5edab866f77dcb71f4d5ea0273786c577
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794113"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345984"
 ---
 # <a name="idebugexpressioncontext-interface"></a>Interfejs IDebugExpressionContext
-Reprezentuje kontekst, w którym można oszacować wyrażenia. Obiekt ramki stosu implementuje ten interfejs.  
+Reprezentuje kontekst, w którym można obliczyć wyrażenia. Obiekt w ramce stosu implementuje ten interfejs.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugExpressionContext` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugExpressionContext` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  

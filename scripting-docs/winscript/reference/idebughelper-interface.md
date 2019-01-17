@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f0f70ecb8ead264d0d4b074f8fc1d9e3a6091eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba760dc15cc0a3d3f2f0d80f3a16c5621582bc11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794347"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347479"
 ---
 # <a name="idebughelper-interface"></a>Interfejs IDebugHelper
-Służy jako fabryki dla obiekt przeglądarki i punkty połączenia proste. Menedżer debugowania procesu (PDM) implementuje ten interfejs, który jest używany przez aparaty skryptów.  
+Służy jako fabrykę do przeglądarki obiektów i punktów połączenia proste. Menedżer debugowania procesów (menedżerów PDM) implementuje ten interfejs, który jest używany przez aparatów skryptów.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugHelper` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugHelper` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Zwraca właściwości przeglądarki, która opakowuje VARIANT.|  
-|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Zwraca przeglądarki właściwość, która opakowuje wariant i umożliwia konwersji niestandardowej wartości z WARIANTU lub typów VARTYPE na ciągi.|  
-|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Zwraca interfejs zdarzeń, który opakowuje danego `IDispatch` obiektu.|
+|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Zwraca przeglądarkę właściwości, która otacza wariant.|  
+|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Zwraca przeglądarkę właściwości opakowuje Typ VARIANT, która umożliwia niestandardowych konwersję typu VARIANT wartości lub VARTYPE na ciągi.|  
+|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Zwraca interfejs zdarzenia, który otacza danego `IDispatch` obiektu.|

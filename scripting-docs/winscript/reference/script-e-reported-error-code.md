@@ -1,5 +1,5 @@
 ---
-title: Kod błędu Script_e_reported | Dokumentacja firmy Microsoft
+title: Kod błędu SCRIPT_E_REPORTED | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796369"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349208"
 ---
 # <a name="scriptereported-error-code"></a>Kod błędu SCRIPT_E_REPORTED
-Aparat skryptów zgłosiła nieobsługiwany wyjątek dla hosta za pomocą [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Ten błąd można zignorować hosta.  
+Aparat skryptów zgłosił nieobsługiwany wyjątek do hosta za pośrednictwem [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Ten błąd można zignorować hosta.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,4 +29,4 @@ SCRIPT_E_REPORTED   0x80020101L
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kody błędów, wyliczenia i stałe aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

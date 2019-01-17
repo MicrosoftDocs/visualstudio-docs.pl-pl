@@ -1,7 +1,7 @@
 ---
 title: Utworzenie instalacji sieciowej
 description: Dowiedz się, jak utworzyć punkt instalacji sieciowej dla wdrażania programu Visual Studio w przedsiębiorstwie.
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966735"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349923"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017
 
@@ -30,7 +30,7 @@ Zazwyczaj administrator przedsiębiorstwa tworzy punkt instalacji sieci do wdro�
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Pobierz program inicjujący programu Visual Studio
 
-**Pobierz** wersji programu Visual Studio, które chcesz. Upewnij się, że kliknij **Zapisz**, a następnie kliknij przycisk **Otwórz folder**.
+Pobierz wersję Visual Studio, które chcesz. Upewnij się, że kliknij **Zapisz**, a następnie kliknij przycisk **Otwórz folder**.
 
 Ustawienia pliku wykonywalnego&mdash;lub dokładniej, plik inicjujący&mdash;musi odpowiadać jednej z następujących czynności.
 
@@ -115,11 +115,15 @@ Aby zaktualizować istniejący układ pełny układ, należy użyć wszystkich o
 
 Administratorzy mogą wdrożyć Visual Studio na klienckich stacjach roboczych w skrypcie instalacji. Lub użytkowników, którzy mają uprawnienia administratora, można uruchomić Instalatora bezpośrednio z poziomu udziału, aby zainstalować program Visual Studio na swojej maszynie.
 
-- Użytkownicy mogą zainstalować przez uruchomienie: <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Administratorzy mogą instalować w trybie nienadzorowanym, uruchamiając: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* Użytkownicy mogą zainstalować przez uruchomienie: <br>```\\server\products\VS2017\vs_enterprise.exe```
+* Administratorzy mogą instalować w trybie nienadzorowanym, uruchamiając: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> Aby uniknąć błąd, upewnij się, że Twoje pełną ścieżkę instalacji jest mniejszy niż 80 znaków.
+>
 > [!TIP]
 > Gdy wykonywane w ramach pliku wsadowego `--wait` opcji zapewnia, że `vs_enterprise.exe` proces będzie czekał instalacja została zakończona, zanim zwraca kod zakończenia. Jest to przydatne, jeśli administrator przedsiębiorstwa chce, aby wykonać dalsze czynności na Zakończono instalowanie (na przykład, aby [zastosować klucz produktu do pomyślnej instalacji](automatically-apply-product-keys-when-deploying-visual-studio.md)), ale musi czekać na zakończenie obsługi instalacji Zwrócony kod z tej instalacji.  Jeśli nie używasz `--wait`, `vs_enterprise.exe` proces kończy się przed instalacja została zakończona i zwraca kod zakończenia niedokładne, która nie zawiera stanu operacji instalacji.
+
 
 Podczas instalacji z układu, zawartość, która jest zainstalowana jest uzyskiwany z układu. Jednak jeśli wybierzesz składnik, który nie znajduje się w układzie, będzie można pobrać z Internetu.  Jeśli chcesz uniemożliwić pobranie żadnej zawartości, których brakuje w układzie, użyj Instalatora programu Visual Studio `--noWeb` opcji.  Jeśli `--noWeb` jest używany i układu nie ma żadnej zawartości, który został wybrany do zainstalowania, Instalator zakończy się niepowodzeniem.
 

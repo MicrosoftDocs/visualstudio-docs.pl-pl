@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9aab3d7abeecd22e830c68f174896df0e7df2da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794443"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344039"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>Interfejs IMachineDebugManagerEvents
-Sygnalizuje zmiany w działaniu listy aplikacji przez Menedżera maszyny debugowania. Ten interfejs umożliwia przez debuger IDE wyświetlić listę dynamicznych aplikacji.  
+Sygnalizuje zmiany uruchomione listy aplikacji obsługiwane przez Menedżer debugowania maszyny. Ten interfejs może służyć przez debuger IDE do wyświetlania listy dynamicznych aplikacji.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IMachineDebugManagerEvents` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IMachineDebugManagerEvents` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Obsługuje zdarzenie po dodaniu aplikacji do uruchamiania liście aplikacji.|  
-|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Obsługuje zdarzenie, gdy aplikacja zostanie usunięta z uruchomionym listy aplikacji.|
+|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Obsługuje zdarzenie, gdy aplikacja zostanie dodany do uruchamiania listy aplikacji.|  
+|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Obsługuje zdarzenie, gdy aplikacja zostanie usunięty z uruchomionych listy aplikacji.|

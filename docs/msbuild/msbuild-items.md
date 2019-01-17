@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898703"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345607"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki (pliki zostały określone w `Include` atrybutu). Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz także
+ [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
  [Program MSBuild](../msbuild/msbuild.md)   
  [Instrukcje: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)   
  [Instrukcje: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definicje elementów](../msbuild/item-definitions.md)   
- [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
- [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)

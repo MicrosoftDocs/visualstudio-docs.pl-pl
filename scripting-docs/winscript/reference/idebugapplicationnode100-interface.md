@@ -14,24 +14,24 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af79614d38ef55776b660329f51931be70b7f52e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a6cbe92c6789b702adc69f598a995f84c01ef86
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793897"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347458"
 ---
 # <a name="idebugapplicationnode100-interface"></a>Interfejs IDebugApplicationNode100
-`IDebugApplicationNode100` Interfejsu rozszerza funkcjonalność [interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md). Wystąpienie tego interfejsu można uzyskać przez wywołanie metody QueryInterface wykonania [interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md).  
+`IDebugApplicationNode100` Interfejs rozszerza funkcjonalność [interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md). Wystąpienie tego interfejsu można uzyskać za pomocą wywołania QueryInterface na implementację [interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md).  
   
 > [!IMPORTANT]
->  Ten interfejs jest implementowany przez PDM 10.0 i większa. Znajduje się w zestawie activdbg100.h.  
+>  Ten interfejs jest implementowany przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  `IDebugApplicationNode100` Interfejsu udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|Pobiera dokumentów tekstowych, które są ukryte przez określony filtr.|  
+|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|Pobiera dokumenty tekstowe, ukryte przez określony filtr.|  
 |[IDebugApplicationNode100::QueryIsChildNode](../../winscript/reference/idebugapplicationnode100-queryischildnode.md)|Określa, czy określony dokument należy do jednego z węzłów podrzędnych tego węzła.|  
-|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|Ustawia filtr w przypadku określonego [interfejs IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md) implementacji. Umożliwia on debugera skryptu, aby odfiltrować generowane przez kompilator podrzędnych węzłów aplikacji tak, aby PDM nie będzie wysyłać zdarzenia, gdy węzły zostały utworzone lub usunięte. Domyślnie wszystkie węzły będą wysyłane.|
+|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|Ustawia filtr na danym [interfejs IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md) implementacji. Umożliwia ona debugery skrypt odfiltrować generowanych przez kompilator podrzędnych węzłów aplikacji tak, aby program PDM już nie będzie wysyłać zdarzenia, gdy węzły są tworzone lub usuwane. Domyślnie wszystkie węzły będą wysyłane.|

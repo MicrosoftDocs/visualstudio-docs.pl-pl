@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d42187cc7467bea9d777f35bb208c4e42cabb31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b25ffb530bf16fff0008bb73b55ecb0c523efe0d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796405"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349104"
 ---
 # <a name="scriptgctype-enumeration"></a>Wyliczenie SCRIPTGCTYPE
-Typ operacji wyrzucania elementów bezużytecznych do wykonania. Używane w [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) metody.  
+Typ wyrzucania elementów bezużytecznych do wykonania. Używane w [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) metody.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,8 +32,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|Wyrzucanie elementów bezużytecznych normalnego. Wartość całkowita jest 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Wyrzucanie elementów bezużytecznych wyczerpujący. Wartość całkowita jest 1.|  
+|SCRIPTGCTYPE_NORMAL|Wyrzucanie elementów bezużytecznych normalny. Wartość całkowita wynosi 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Wyrzucanie elementów bezużytecznych wyczerpujący. Wartość liczby całkowitej to 1.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kody błędów, wyliczenia i stałe aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

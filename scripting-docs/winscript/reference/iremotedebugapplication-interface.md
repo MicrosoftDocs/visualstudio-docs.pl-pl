@@ -1,5 +1,5 @@
 ---
-title: Interfejs IRemoteDebugApplication | Dokumentacja firmy Microsoft
+title: IRemoteDebugApplication Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,30 +14,30 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 02ddf409bf25cb86fc742cdc004e2f1b664d22e3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795034"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348766"
 ---
 # <a name="iremotedebugapplication-interface"></a>Interfejs IRemoteDebugApplication
-Reprezentuje działającej aplikacji. Nie musi odpowiadać do procesu systemu operacyjnego. Zazwyczaj debugera dotyczy aplikacji do debugowania. Menedżer debugowania procesu zwykle implementuje obiektu aplikacji.  
+Reprezentuje uruchomionej aplikacji. Nie musi odpowiadać do procesu systemu operacyjnego. Zazwyczaj debugera jest przeznaczony dla aplikacji do debugowania. Menedżer debugowania procesów zwykle implementuje obiektu aplikacji.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IRemoteDebugApplication` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IRemoteDebugApplication` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Nadal aplikacji, która jest aktualnie punktu przerwania.|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Powoduje przerwanie w debugerze przy najbliższej okazji aplikacji.|  
+|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Nadal aplikację, która jest obecnie dostępna w punkcie przerwania.|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Powoduje, że aplikacja wkroczenia do debugera przy najbliższej sposobności.|  
 |[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Nawiązuje połączenie debugera do tej aplikacji.|  
 |[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Odłącza bieżący debuger z aplikacji.|  
 |[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Zwraca bieżący debuger jest podłączony do aplikacji.|  
-|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Udostępnia mechanizm dla debugera IDE, uruchamianie poza procesem do aplikacji, do tworzenia obiektów w procesie aplikacji.|  
+|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Udostępnia mechanizm dla debugera IDE, działa poza procesem do aplikacji w celu tworzenia obiektów w procesie aplikacji.|  
 |[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Wskazuje, czy aplikacja jest elastyczny.|  
-|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Wylicza wszystkie wątki wiadomo, że są skojarzone z aplikacją.|  
+|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Wylicza wszystkie wątki, o których wiadomo, że są skojarzone z aplikacją.|  
 |[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Zwraca nazwę tego węzła aplikacji.|  
-|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Zwraca węzła aplikacji, do którego są dodawane wszystkie węzły skojarzone z aplikacją.|  
-|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Wylicza kontekstów wyrażenia globalnego dla wszystkich języków, działające w tej aplikacji.|
+|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Zwracanie węzła aplikacji w ramach której są dodawane wszystkie węzły, powiązane z daną aplikacją.|  
+|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Wylicza kontekstów wyrażenie globalne dla wszystkich języków, działające w tej aplikacji.|

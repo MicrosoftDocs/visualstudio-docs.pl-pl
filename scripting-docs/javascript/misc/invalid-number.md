@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e7903bec2f21465cbe31ecc05f00182680ed77c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788701"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346816"
 ---
 # <a name="invalid-number"></a>Nieprawidłowy numer
 Nieprawidłowy numer (ErrbadNumber 1013)  
   
- Próbowano użyć liczby, która jest nieprawidłowa w języku JavaScript.  
+ Próbowano użyć numeru, który jest nieprawidłowy w języku JavaScript.  
   
- Uzyskać informacji o numerach prawidłowe, zobacz [obiektu numer](../../javascript/reference/number-object-javascript.md).
+ Uzyskać prawidłowe numery informacje, zobacz [obiektu numer](../../javascript/reference/number-object-javascript.md).

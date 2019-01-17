@@ -14,26 +14,26 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11edca1fbce6b7dab755a25dfc3e192225b5f6e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55414b52d104dfc706aa9687b815d3b4d8d0dc78
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794293"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347440"
 ---
 # <a name="idebugextendedproperty-interface"></a>Interfejs IDebugExtendedProperty
 Rozszerza `IDebugProperty` interfejsu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
- Oprócz dziedziczone z metody `IDebugProperty`, ten interfejs udostępnia następujące metody.  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+ Oprócz metod odziedziczone `IDebugProperty`, ten interfejs udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Pobiera `ExtendedDebugPropertyInfo` opisujący to`IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Wylicza członkami właściwości rozszerzonej.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Pobiera `ExtendedDebugPropertyInfo` , który opisuje to `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Wylicza członkowie właściwości rozszerzonej.|  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: dbgprop.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

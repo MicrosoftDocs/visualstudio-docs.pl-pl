@@ -1,5 +1,5 @@
 ---
-title: Interfejs IDebugApplication110 | Dokumentacja firmy Microsoft
+title: IDebugApplication110 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7c283e925db5b42b4d04bfc42ea087ecc22b6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b13208d6a507ea4ed3157606f358b6b0168180cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793972"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349559"
 ---
 # <a name="idebugapplication110-interface"></a>Interfejs IDebugApplication110
-`IDebugApplication110` Interfejsu rozszerza funkcjonalność [interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md). Wystąpienie tego interfejsu można uzyskać przez wywołanie metody QueryInterface wykonania [interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md).  
+`IDebugApplication110` Interfejs rozszerza funkcjonalność [interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md). Wystąpienie tego interfejsu można uzyskać za pomocą wywołania QueryInterface na implementację [interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md).  
   
 > [!IMPORTANT]
 >  Interfejs jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
@@ -32,6 +32,6 @@ ms.locfileid: "24793972"
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Wykonuje synchroniczne wywołania w głównym wątku.|  
-|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Powoduje, że wywołanie asynchroniczne w głównym wątku.|  
-|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Czeka na dowolny określony uchwyt do zasygnalizować zezwalając międzywątkowe do zaksięgowania tego wątku. Ta metoda musi zostać wywołana z wątku debugera.|
+|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Tworzy wywołanie synchroniczne w wątku głównym.|  
+|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Sprawia, że wywołanie asynchroniczne w wątku głównym.|  
+|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|W tym czasie czeka dla każdego określonego dojścia ma być zasygnalizowany pozwalając wywołania międzywątkowe wysyłany do tego wątku. Ta metoda musi zostać wywołana z wątku debugera.|

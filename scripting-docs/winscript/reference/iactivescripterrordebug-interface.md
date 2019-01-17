@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ff2dda33c1e406f87a157173c41015acf96e62a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793318"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345204"
 ---
 # <a name="iactivescripterrordebug-interface"></a>Interfejs IActiveScriptErrorDebug
-Udostępnia informacje o kontekście dokumentu dla kompilacji błędy i wyjątki czasu wykonywania. `IActiveScriptError::QueryInterface` Metoda obsługuje `IActiveScriptErrorDebug` interfejsu.  
+Udostępnia informacje o kontekście dokumentu, błędy kompilacji i wyjątków w czasie wykonywania. `IActiveScriptError::QueryInterface` Obsługuje metody `IActiveScriptErrorDebug` interfejsu.  
   
- Oprócz dziedziczone z metody `IActiveScriptError`, `IActiveScriptErrorDebug` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IActiveScriptError`, `IActiveScriptErrorDebug` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Udostępnia kontekst dokumentu dla tego błędu.|  
-|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Udostępnia ramki stosu, które są włączone dla błędów czasu wykonywania.|
+|[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Tworzy kontekst dokumentu dla tego błędu.|  
+|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Udostępnia ramki stosu, który jest wynikiem błędy czasu wykonania.|

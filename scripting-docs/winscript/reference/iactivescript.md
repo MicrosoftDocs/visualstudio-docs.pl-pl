@@ -1,5 +1,5 @@
 ---
-title: IActiveScript | Dokumentacja firmy Microsoft
+title: IActiveScript | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,33 +14,33 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68d91a7ad91364d0c2133150d76cdb221929b16b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 340a76dbb6d81c78463fa644dafcbe8097508561
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793297"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346712"
 ---
 # <a name="iactivescript"></a>IActiveScript
-Udostępnia metody, które są niezbędne do zainicjowania aparatu skryptów. Aparat skryptów musi implementować `IActiveScript` interfejsu.  
+Udostępnia metody, które są niezbędne do zainicjowania silnik wykonywania skryptów. Aparat skryptów musi implementować `IActiveScript` interfejsu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Informuje o aparat skryptów z [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) lokacja dostarczonych przez hosta.|  
-|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Pobiera obiekt lokacji skojarzonego z aparatem skryptów systemu Windows.|  
-|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Umieszcza aparat skryptów w określonym stanie.|  
-|[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Pobiera bieżący stan aparatu skryptów.|  
-|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Powoduje, że aparat skryptów abandon dowolnego skryptu aktualnie załadowanych utratę stanu i zwolnić wszystkie wskaźniki interfejsu, wymagana jest wartość inne obiekty, w związku z tym wprowadzanie stanie zamkniętym.|  
+|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Informuje silnik wykonywania skryptów z [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) lokacji udostępniane przez hosta.|  
+|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Pobiera obiekt lokacji skojarzone z aparatu skryptów Windows.|  
+|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Umieszcza silnik wykonywania skryptów w określonym stanie.|  
+|[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Pobiera bieżący stan silnika wykonywania skryptów.|  
+|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Powoduje, że aparat skryptów zrezygnowania z dowolnego aktualnie załadowanych skryptu, utraty stanu i zwolnij wszystkie wskaźniki interfejsu, które inne obiekty, w związku z tym wprowadzenie stanu zamkniętego.|  
 |[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Dodaje nazwę elementu głównego poziomu do przestrzeni nazw aparatu skryptów.|  
-|[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Dodaje bibliotekę typów do przestrzeni nazw dla skryptu.|  
-|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Pobiera `IDispatch` interfejs dla uruchamianie skryptu.|  
-|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Pobiera identyfikator skryptów aparatu zdefiniowanych dla wątku aktualnie wykonywane.|  
-|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Pobiera identyfikator skryptów aparatu zdefiniowanych dla wątku skojarzone z danym wątku Microsoft Win32.|  
+|[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Dodaje bibliotekę typów, do przestrzeni nazw skryptu.|  
+|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Pobiera `IDispatch` interfejs uruchamianie skryptu.|  
+|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Pobiera identyfikator aktualnie wykonywany wątek skryptów aparatu zdefiniowane.|  
+|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Pobiera skryptów aparatu-zdefiniowany przez identyfikator wątku skojarzone z danym wątek Win32 firmy Microsoft.|  
 |[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)|Pobiera bieżący stan wątku skryptu.|  
-|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Przerwanie wykonywania uruchomiony wątek skryptu.|  
-|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Klonów bieżącego aparatu skryptów (minus wszelkie bieżący stan wykonania), zwracając załadować aparatów skryptów, który ma żadna lokacja w bieżącym wątku.|  
+|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Przerwanie wykonywania uruchomionemu wątkowi skryptu.|  
+|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Klony bieżącym silnikiem skryptującym (bez żadnych bieżący stan wykonania), zwracając załadować aparat skryptów, który ma żadna lokacja w bieżącym wątku.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

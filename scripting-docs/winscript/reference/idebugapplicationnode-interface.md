@@ -14,25 +14,25 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 110e04d1c990f1b22f9740d8118a47f485dd041e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d7bd38a0fbbdd596f6a1f6bb040190dddca78bf9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793954"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349000"
 ---
 # <a name="idebugapplicationnode-interface"></a>Interfejs IDebugApplicationNode
-`IDebugApplicationNode` Interfejsu rozszerza funkcjonalność `IDebugDocumentProvider` interfejsu, zapewniając kontekstu w drzewie projektu.  
+`IDebugApplicationNode` Interfejs rozszerza funkcjonalność `IDebugDocumentProvider` interfejs, dostarczając kontekstu w drzewie projektu.  
   
- Oprócz dziedziczone z metody `IDebugDocumentProvider`, `IDebugApplicationNode` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IDebugDocumentProvider`, `IDebugApplicationNode` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugApplicationNode::EnumChildren](../../winscript/reference/idebugapplicationnode-enumchildren.md)|Wylicza węzłów podrzędnych węzła tej aplikacji.|  
+|[IDebugApplicationNode::EnumChildren](../../winscript/reference/idebugapplicationnode-enumchildren.md)|Wylicza węzły podrzędne węzła tej aplikacji.|  
 |[IDebugApplicationNode::GetParent](../../winscript/reference/idebugapplicationnode-getparent.md)|Zwraca węzeł nadrzędny tego węzła aplikacji.|  
-|[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|Ustawia dostawcę dokumentu dla tego węzła aplikacji.|  
-|[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|Powoduje, że tej aplikacji zwolnić wszystkie odwołania, a następnie wprowadź nieaktywny.|  
+|[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|Ustawia dostawcę dokument ten węzeł aplikacji.|  
+|[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|Powoduje, że ta aplikacja jest zwolnienie wszystkich odwołań, a następnie wprowadź nieaktywny.|  
 |[IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)|Dodaje ten węzeł aplikacji do drzewa określonego projektu.|  
 |[IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)|Usuwa ten węzeł aplikacji z drzewa projektu.|

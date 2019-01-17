@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4cee2966b326ca7b4c258ffdb85b6fa71d90992
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 374025b7564c058ae89064b6a27384c9075a30f9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796375"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350105"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>Wyliczenie SCRIPTLANGUAGEVERSION
 Określa możliwości skryptów wersji.  
@@ -32,10 +32,10 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
   
 |||  
 |-|-|  
-|SCRIPTLANGUAGEVERSION_DEFAULT|Wersja domyślna. Wartość całkowita jest 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|W wersji 5.7 skryptów systemu Windows. Wartość całkowita jest 1.|  
-|SCRIPTLANGUAGEVERSION_5_8|Wersja 5.8 skryptów systemu Windows. Wartość całkowita jest 2.|  
+|SCRIPTLANGUAGEVERSION_DEFAULT|Domyślna wersja. Wartość całkowita wynosi 0.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting wersji 5.7. Wartość liczby całkowitej to 1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows Scripting wersję 5.8. Wartość całkowita to 2.|  
 |SCRIPTLANGUAGEVERSION_MAX|Maksymalna wersja. Wartość całkowita wynosi 255.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kody błędów, wyliczenia i stałe aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

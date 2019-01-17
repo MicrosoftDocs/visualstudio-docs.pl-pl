@@ -1,7 +1,7 @@
 ---
 title: Przykładowe parametry wiersza polecenia do zainstalowania
 description: Dostosuj te przykłady do tworzenia własnych instalacji z wiersza polecenia programu Visual Studio.
-ms.date: 11/14/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6584d1b1864712a1c97b8d2405e7b366c5dd69d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59dfe6ebb9518bbdea6edf11108f1cb27cd5d6a3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989990"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345529"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017
 
@@ -28,7 +28,7 @@ W każdym przykładzie `vs_enterprise.exe`, `vs_professional.exe` i `vs_communit
 > Wszystkie polecenia wymaga podniesienia uprawnień administracyjnych oraz Kontrola konta użytkownika, jeśli proces nie jest uruchomiona w wierszu polecenia z podwyższonym poziomem uprawnień zostanie wyświetlony monit.
 >
 > [!NOTE]
->  Możesz użyć `^` znak na końcu wiersza polecenia do łączenia wielu wierszy w pojedynczym poleceniu. Alternatywnie można po prostu umieścić te wiersze razem na jeden wiersz. W programie PowerShell odpowiednik to początkowych (`` ` ``) znaków.
+> Możesz użyć `^` znak na końcu wiersza polecenia do łączenia wielu wierszy w pojedynczym poleceniu. Alternatywnie można po prostu umieścić te wiersze razem na jeden wiersz. W programie PowerShell odpowiednik to początkowych (`` ` ``) znaków.
 
 ## <a name="using---installpath"></a>Przy użyciu opcji--installPath
 
@@ -83,13 +83,15 @@ W każdym przykładzie `vs_enterprise.exe`, `vs_professional.exe` i `vs_communit
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>Za pomocą--includeRecommended
+## <a name="using---all"></a>Przy użyciu opcji--wszystko
 
 * Rozpocznij instalacji interakcyjnej wszystkich obciążeń i składników, które są dostępne w wersji programu Visual Studio 2017 Enterprise:
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>Za pomocą--includeRecommended
 
 * Drugi nazwane wystąpienie programu Visual Studio 2017 Professional zostaną zainstalowane na komputerze z zainstalowanym, obsługę tworzenia aplikacji Node.js w wersji Visual Studio 2017 Community:
 

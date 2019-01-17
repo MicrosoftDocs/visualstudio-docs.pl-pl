@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794119"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344073"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>Interfejs IDebugDocumentTextAuthor
-Udostępniane przez dokumenty tekstowe, w tym obsługi edycji.  
+Udostępniane przez dokumenty tekstowe, w tym edycji pomocy technicznej.  
   
- Oprócz dziedziczone z metody `IDebugDocumentText`, `IDebugDocumentTextAuthor` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IDebugDocumentText`, `IDebugDocumentTextAuthor` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Wstawia nowy tekst w dokumencie.|  
-|[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Usuwa tekst dokumentu.|  
-|[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Zamienia tekst w dokumencie.|
+|[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Usuwa tekst z dokumentu.|  
+|[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Zastępuje tekst w dokumencie.|

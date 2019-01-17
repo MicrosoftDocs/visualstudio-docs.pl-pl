@@ -1,5 +1,5 @@
 ---
-title: Interfejs IEnumDebugExpressionContexts | Dokumentacja firmy Microsoft
+title: IEnumDebugExpressionContexts Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794662"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347596"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>Interfejs IEnumDebugExpressionContexts
-Wylicza Kolekcja `IDebugExpressionContexts` obiektów.  
+Wylicza zbiór `IDebugExpressionContexts` obiektów.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IEnumDebugExpressionContexts` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IEnumDebugExpressionContexts` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Pobiera określoną liczbę segmentów w kolejności wyliczenia.|  
 |[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Pomija określoną liczbę segmentów w kolejności wyliczenia.|  
-|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Resetuje sekwencję wyliczenia na początku.|  
-|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Tworzy moduł wyliczający, który zawiera stan tego samego jako bieżący modułu wyliczającego.|
+|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
+|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan jako bieżący modułu wyliczającego.|

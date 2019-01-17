@@ -14,32 +14,32 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 788be3fe9cb5ba529e3d1ca653d4f0f5c35b5932
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8897d783f8a101b41dd7263061604fb1d82ec56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796288"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344619"
 ---
 # <a name="iscriptnode-interface"></a>Interfejs IScriptNode
-Obiekt, który implementuje `IScriptNode` interfejsu reprezentuje strony sieci Web.  
+Obiekt, który implementuje `IScriptNode` interfejs reprezentuje stronę sieci Web.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IScriptNode` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IScriptNode` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Wskazuje, czy obiekt jest nadal aktywne.|  
-|[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Dodaje wystąpienie podrzędne `IScriptEntry`.|  
-|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Dodaje skryptlet jako wystąpienie podrzędne `IScriptNode`.|  
+|[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Dodaje wystąpienie podrzędnych `IScriptEntry`.|  
+|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Dodaje scriptlet jako wystąpienie podrzędnych `IScriptNode`.|  
 |[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Usuwa drzewa obiektów.|  
-|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Zwraca podrzędny, który znajduje się pod określonym indeksem w węźle.|  
-|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Zwraca wartość zdefiniowanym przez aplikację, używanego do kojarzenia skryptlet z obiektu hosta.|  
-|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Zwraca indeks obiektu w lista elementów podrzędnych elementu nadrzędnego.|  
-|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Zwraca język skryptów, który jest używany przez bieżący węzeł skryptu.|  
+|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Zwraca element podrzędny, który jest umieszczony pod określonym indeksem w węźle.|  
+|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Zwraca wartość zdefiniowanych przez aplikację, używanego do kojarzenia scriptlet za pomocą obiektu hosta.|  
+|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Zwraca indeks obiektu w liście elementów podrzędnych elementu nadrzędnego.|  
+|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Zwraca język skryptów, używany przez bieżącego węzła skryptu.|  
 |[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Zwraca liczbę węzłów podrzędnych `IScriptNode` obiektu.|  
-|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Zwraca `IScriptNode` obiekt, który jest elementem nadrzędnym obiektu.|  
+|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Zwraca `IScriptNode` obiektu, który jest elementem nadrzędnym obiektu.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy tworzenia aktywnych skryptów](../../winscript/reference/active-script-authoring-interfaces.md)

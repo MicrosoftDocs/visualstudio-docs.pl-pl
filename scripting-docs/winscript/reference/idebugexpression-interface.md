@@ -14,27 +14,27 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39e139e09362fc392d1110e26837c52fd4c642c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794491"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345521"
 ---
 # <a name="idebugexpression-interface"></a>Interfejs IDebugExpression
-Reprezentuje asynchronicznie obliczane wyrażenie. Liczba aparatów skryptów zwykle implementuje ten interfejs. Debuger IDE zazwyczaj używa tego interfejsu do włączania okna wykonania natychmiastowej lub okno czujki.  
+Reprezentuje asynchronicznie obliczane wyrażenie. Aparaty skryptów zwykle implementują ten interfejs. Debuger IDE zazwyczaj używa tego interfejsu do włączenia okna natychmiastowego wykonania lub okno czujki.  
   
 > [!NOTE]
->  `IDebugExpression` Interfejs jest dostępny tylko w ramce stosu.  
+>  `IDebugExpression` Interfejs jest dostępny tylko z ramki stosu.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugExpression` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugExpression` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)|Rozpoczyna się obliczania wyrażenia.|  
-|[IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)|Przerywa wyrażenie.|  
-|[IDebugExpression::QueryIsComplete](../../winscript/reference/idebugexpression-queryiscomplete.md)|Określa, czy operacja została zakończona.|  
-|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Zwraca wynik wyrażenia jako ciąg i wartość zwracana operacji.|  
-|[IDebugExpression::GetResultAsDebugProperty](../../winscript/reference/idebugexpression-getresultasdebugproperty.md)|Zwraca wynik wyrażenia jako właściwość debugowania i wartość zwracana operacji.|
+|[IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)|Przerywa wyrażenia.|  
+|[IDebugExpression::QueryIsComplete](../../winscript/reference/idebugexpression-queryiscomplete.md)|Określa, jeśli operacja została zakończona.|  
+|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Zwraca wynik obliczania wyrażenia jako ciąg i wartości zwracanej wykonać operację.|  
+|[IDebugExpression::GetResultAsDebugProperty](../../winscript/reference/idebugexpression-getresultasdebugproperty.md)|Zwraca wynik obliczania wyrażenia jako właściwość debugowania i wartość zwracana wykonać operację.|

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348306"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350118"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „}"
 Nie obejmują nawias klamrowy zamykający oznaczający koniec treści funkcji, pętli i bloku kodu, ani inicjatora obiektu. Przykładem wystąpienia tego błędu może być **dla** pętli za pomocą tylko nawias klamrowy otwierający oznaczanie treść pętli.  

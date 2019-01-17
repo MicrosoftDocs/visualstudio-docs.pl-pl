@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20d0fac68bb7cdb3d7f5cb6aac6b0ab67e373c84
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0396ed90437a98c8ee398f3c3acb0aeb5ddc77e2
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794125"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348415"
 ---
 # <a name="idebugapplicationnodeevents-interface"></a>Interfejs IDebugApplicationNodeEvents
-Udostępnia interfejs zdarzeń dla `IDebugApplicationNode` interfejsu.  
+Udostępnia interfejs zdarzenia dla `IDebugApplicationNode` interfejsu.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugApplicationNodeEvents` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugApplicationNodeEvents` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
@@ -36,4 +36,4 @@ Udostępnia interfejs zdarzeń dla `IDebugApplicationNode` interfejsu.
 |[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji został dołączony do węzła nadrzędnego.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

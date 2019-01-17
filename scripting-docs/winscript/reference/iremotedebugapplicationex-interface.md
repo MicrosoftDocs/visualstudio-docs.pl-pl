@@ -14,26 +14,26 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3360cea0d1649348a795356ad827b32b6f8ebc19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2fd51d5bdd076199167e52f685f16572756f9740
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794974"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346556"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>Interfejs IRemoteDebugApplicationEx
-Reprezentuje działającej aplikacji. Nie musi odpowiadać procesu systemu operacyjnego. Zazwyczaj debugera dotyczy aplikacji do debugowania. Menedżer debugowania procesu zwykle implementuje obiektu aplikacji.  
+Reprezentuje uruchomionej aplikacji. Nie musi odpowiadać procesu systemu operacyjnego. Zazwyczaj debugera jest przeznaczony dla aplikacji do debugowania. Menedżer debugowania procesów zwykle implementuje obiektu aplikacji.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IRemoteDebugApplicationEx` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IRemoteDebugApplicationEx` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Zwraca identyfikator procesu hosta aplikacji.|  
+|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Zwraca identyfikator procesu aplikacji hosta.|  
 |GetHostMachineName|Zwraca nazwę komputera, na którym działa aplikacja hosta na.|  
 |[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Określa język dla lokalizacji debugera.|  
-|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Wymusza debugera w tryb jednego kroku.|  
+|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Wymusza debugera w trybie pojedynczego kroku.|  
 |[IRemoteDebugApplicationEx:RevokeBreak](../../winscript/reference/iremotedebugapplicationex-revokebreak.md)|Odwołuje się polecenie break.|  
-|SetProxyBlanketAndAddRef|Aktualizuje informacje o zabezpieczeniach COM na serwer proxy dla obiekt debugera w celu zapewnienia zgodności z debugowanie zdalne z systemów operacyjnych opartych na systemie Windows 95.|  
-|ReleaseFromSetProxyBlanket|AddRef wersjach z SetProxyBlanketAndAddRef.|
+|SetProxyBlanketAndAddRef|Aktualizuje informacje o zabezpieczeniach COM na serwer proxy dla obiektu debugera do zapewnienia zgodności z funkcją debugowania zdalnego z systemem Windows 95 systemów operacyjnych.|  
+|ReleaseFromSetProxyBlanket|AddRef wydań z SetProxyBlanketAndAddRef.|

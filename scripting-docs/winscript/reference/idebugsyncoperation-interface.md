@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6705c2aa990aef3cf551a94546bf78a64026cecc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3724ad50771ca49460e130bf93ebc244681bd782
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794257"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349610"
 ---
 # <a name="idebugsyncoperation-interface"></a>Interfejs IDebugSyncOperation
-Udostępnia aparat skryptu abstrakcyjnej operację (na przykład Obliczanie wyrażenia), która musi zostać wykonana podczas zagnieżdżona w szczególności wątku zablokowanych. Interfejs zawiera również mechanizm Trwa anulowanie operacji nie odpowiada.  
+Umożliwia aparat skryptów tworzących warstwę abstrakcji operacji (np. Obliczanie wyrażenia), która musi zostać wykonana podczas zagnieżdżonego w określonym wątku zablokowane. Interfejs zawiera także mechanizm anulowanie operacji nie odpowiada.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugSyncOperation` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugSyncOperation` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)|Zwraca wątku aplikacji docelowej dla tej operacji synchronicznych.|  
 |[IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)|Synchronicznie wykonuje operację i zwraca.|  
-|[IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)|Anuluje operację w toku w innym wątku.|
+|[IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)|Anuluje operację w toku na inny wątek.|

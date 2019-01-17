@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804354"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347388"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „]”
 Wprowadzone odniesienie do elementu tablicy, ale nie zawiera nawias zamykający. Dowolne wyrażenie, które odwołuje się do elementu tablicy musi zawierać zarówno otwierające i zamykające nawiasy kwadratowe.  

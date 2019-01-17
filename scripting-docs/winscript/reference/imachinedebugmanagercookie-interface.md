@@ -1,5 +1,5 @@
 ---
-title: Interfejs IMachineDebugManagerCookie | Dokumentacja firmy Microsoft
+title: IMachineDebugManagerCookie Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,30 +14,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a03b959a7eb09f3b85530bbba07d1d2dc7f8948a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d315f4ff99d8de6d4e29a40f3d5e134d1274062
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795040"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347089"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>Interfejs IMachineDebugManagerCookie
 Podobnie jak `IMachineDebugManager` interfejsu `IMachineDebugManagerCookie` interfejs obsługuje pliki cookie debugowania.  
   
- Ten interfejs (wraz z `IDebugCookie` interfejsu) Zezwalaj na uruchamianie skryptów w procesu debugera skryptu bez konieczności zachować informacje o tych skryptów debugera.  
+ Ten interfejs (wraz z `IDebugCookie` interfejsu) Zezwalaj na uruchamianie skryptów w procesie debugera skryptów bez konieczności zachować informacje o tych skryptów debugera.  
   
- Wywołuje debugera skryptów `IDebugCookie::SetDebugCookie` metody na proces debugowania Manager (PDM). Następnie PDM wysyła ten plik cookie oraz wszelkie żądania, aby dodać lub usunąć aplikację skryptu do lub z maszyny debugowania Manager (MDM), za pomocą metody `IMachineDebugManagerCookie` interfejsu. Zarządzania urządzeniami Przenośnymi następnie powiadamia co debuger zmiany, z wyjątkiem ten, który ma tego pliku cookie.  
+ Wywołuje debugera skryptów `IDebugCookie::SetDebugCookie` metody na proces debugowania Menedżera (menedżerów PDM). Menedżerów PDM wysyła następnie ten plik cookie wraz z każdego żądania, aby dodać lub usunąć aplikację skryptu do lub z maszyny debugowania Manager (MDM), przy użyciu metody `IMachineDebugManagerCookie` interfejsu. Zarządzania urządzeniami Przenośnymi następnie powiadamia użytkownika co debuger zmian, z wyjątkiem jednego, który ma tego pliku cookie.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IMachineDebugManagerCookie` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IMachineDebugManagerCookie` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Dodaje aplikację do uruchamiania liście aplikacji.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Dodaje aplikację do uruchamiania listy aplikacji.|  
 |[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Zwraca moduł wyliczający bieżącą listę uruchomionych aplikacji.|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Usuwa z uruchomionym aplikacji listy aplikacji.|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Usuwa aplikację z uruchomionych listy aplikacji.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   
- [Interfejs IDebugCookie](../../winscript/reference/idebugcookie-interface.md)
+ [IDebugCookie, interfejs](../../winscript/reference/idebugcookie-interface.md)

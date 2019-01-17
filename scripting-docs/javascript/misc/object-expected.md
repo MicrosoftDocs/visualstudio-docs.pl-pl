@@ -20,31 +20,31 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6add25325653627d23eb699ab53c0f2799c8322f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d66c82081af06bf23a43922629a579a6d6f590
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788659"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345789"
 ---
 # <a name="object-expected"></a>Oczekiwany obiekt
-Podjęto próbę wywołania metody lub właściwości w obiekcie typu innego niż `Object`, lub inne niż przekazany argument typu `Object` podczas `Object` była wymagana.  
+Podjęto próbę wywołania metody lub właściwości w obiekcie typu innego niż `Object`, lub przekazany argument typu innego niż `Object` podczas `Object` była wymagana.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Tylko wywołania metody lub właściwości w obiektach typu `Object`.  
+-   Tylko wywołania metody lub właściwości w obiekcie typu `Object`.  
   
--   Jeśli wystąpi błąd argumentu-object, przekaż obiekt typu `Object`.  
+-   Jeśli wystąpi błąd argumentu-object, należy przekazać obiekt typu `Object`.  
   
--   Sprawdź, czy odwołanie Niezdefiniowany ani mieć wartości null jest wprowadzenie wywoływana zamiast typu obiektu `Object`.  
+-   Sprawdź, czy odwołanie do niezdefiniowanej ani mieć wartości null jest wprowadzenie wywoływana zamiast obiektu typu `Object`.  
   
-     Na przykład, jeśli ten błąd na myVar w następującym kodzie:  
+     Na przykład, jeśli ten błąd w myVar w poniższym kodzie:  
   
     ```JavaScript  
     var str = myVar.toString();  
     ```  
   
-     Zamiast tego można użyć tego kodu:  
+     Zamiast tego można użyć następującego kodu:  
   
     ```JavaScript  
     if (myVar) {  

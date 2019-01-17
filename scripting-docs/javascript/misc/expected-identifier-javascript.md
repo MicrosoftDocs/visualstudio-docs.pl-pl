@@ -21,26 +21,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788689"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349234"
 ---
 # <a name="expected-identifier-javascript"></a>Oczekiwano identyfikatora (JavaScript)
-Użyto coś innego niż identyfikator w kontekście, gdy był wymagany. Identyfikator może być:  
+Użyto coś innego niż identyfikator w kontekście, gdzie była wymagana. Identyfikator może być:  
   
--   Zmienna,  
+-   Zmienna  
   
 -   Właściwość  
   
--   Tablica  
+-   Tablica,  
   
--   lub nazwę funkcji.  
+-   lub nazwą funkcji.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Zmień wyrażenie, tak więc identyfikator jest wyświetlany na lewo od znaku równości.  
+-   Zmień wyrażenie, tak więc identyfikatora, który pojawia się po lewej stronie znaku równości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)

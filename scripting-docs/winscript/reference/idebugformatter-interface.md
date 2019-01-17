@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 353a85ab51252c92086fa478d95b2e29ab3db62d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794905"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348038"
 ---
 # <a name="idebugformatter-interface"></a>Interfejs IDebugFormatter
-Umożliwia języka lub IDE dostosować konwersji wartości z WARIANTU lub typy VARTYPE i ciągów.  
+Umożliwia języka lub środowiska IDE, aby dostosować konwersji między wariant wartości lub typami VARTYPE i ciągów.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugFormatter` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugFormatter` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|Zwraca ciąg reprezentujący wartość VARIANT.|  
-|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Zwraca typ VARIANT zawierający dany ciąg znaków.|  
-|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Zwraca ciąg reprezentujący podana wartość VARTYPE.|
+|[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|Zwraca ciąg reprezentujący wartość wariant.|  
+|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Zwraca typ VARIANT zawierający podany ciąg.|  
+|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Zwraca ciąg, który reprezentuje podana wartość VARTYPE.|

@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4e2cbf198a452cd61f1355682ea3041436d2a27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788731"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346699"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Funkcja nie zawiera prawidłowego prototypu obiektu
-Podjęto próbę użycia **instanceof** ustalenie, jeśli obiekt pochodzi z klasy określonej funkcji, ale można ponownie zdefiniować obiektu `prototype` właściwość jako `null`, lub typ obiektu zewnętrznego (zarówno nieprawidłowy [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektów). Obiekt zewnętrzny może być obiekt modelu obiektu hosta (na przykład dokument programu Internet Explorer lub obiekt window) lub obiektu COM zewnętrznego.  
+Podjęto próbę użycia **instanceof** ustalenie, jeśli obiekt pochodzi z klasy określonej funkcji, ale zostało ponownie zdefiniowane obiektu `prototype` właściwości jako `null`, lub typu obiektu zewnętrznego (zarówno nieprawidłowy [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektów). Obiekt modelu obiektu hosta (na przykład dokumentów programu Internet Explorer lub obiekt window) lub zewnętrznego obiektu COM, może być obiektu zewnętrznego.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, funkcja `prototype` właściwość odwołuje się do prawidłowej [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu.  
+-   Upewnij się, funkcja `prototype` właściwość odwołuje się do prawidłowego [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Function — obiekt](../../javascript/reference/function-object-javascript.md)   
- [prototype — właściwość (obiekt)](../../javascript/reference/prototype-property-object-javascript.md)
+ [prototype, właściwość (Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792028"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349026"
 ---
 # <a name="appbreakflags-enumeration"></a>Wyliczenie APPBREAKFLAGS
 Wskazuje bieżący stan debugowania aplikacji i wątków.  
@@ -38,19 +38,19 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Aparat powinien natychmiast przerywanie na wszystkie wątki przy użyciu BREAKREASON_DEBUGGER_BLOCK.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Aparat powinien natychmiast przerywanie przy użyciu BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|Aparat powinien natychmiast włamanie się wykonywania krokowego wątku z BREAKREASON_STEP.|  
-|APPBREAKFLAG_NESTED|0x00020000|Aplikacja jest zagnieżdżony wykonywania na punkt przerwania.|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Debuger jest wykonywanie krok po kroku na poziomie źródła.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Debuger jest wykonywanie krok po kroku na poziomie kodu bajtów.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Debuger jest wykonywanie krok po kroku na poziomie komputera.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maska factoring limit typy kroku.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Aparat języka należy natychmiast przerywa, we wszystkich wątkach z BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Aparat języka należy natychmiast przerywa BREAKREASON_DEBUGGER_HALT.|  
+|APPBREAKFLAG_STEP|0x00010000|Aparat języka należy natychmiast przerywa w wątku przechodzenia krok po kroku z BREAKREASON_STEP.|  
+|APPBREAKFLAG_NESTED|0x00020000|Aplikacja jest wykonanie zagnieżdżonych punkt przerwania.|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Debuger jest przechodzenie krok po kroku na poziomie źródła.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Debuger jest przechodzenie krok po kroku na poziomie kodu bajtów.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Debuger jest przechodzenie krok po kroku na poziomie komputera.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maska wyprowadzenie się typy kroku.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Punkt przerwania jest w toku.|  
   
 ## <a name="remarks"></a>Uwagi  
- Niektóre flagi określają, że aparaty języka powinna zostać podzielona przy następnej okazji, podczas gdy inne flagi Określanie trybu wykonywania krokowego debugera.  
+ Niektóre flagi Określ, czy aparatów języka należy przerwać przy okazji dalej, podczas gdy inne flagi, Określanie trybu wykonywania krokowego debugera.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
- [Wyliczenie BREAKREASON](../../winscript/reference/breakreason-enumeration.md)
+ [BREAKREASON, wyliczenie](../../winscript/reference/breakreason-enumeration.md)

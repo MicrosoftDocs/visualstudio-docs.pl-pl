@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 009ac8a71a12b2bf9f6c079480f68a12deab846c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788725"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348506"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>Zastosowanie słowa kluczowego w roli identyfikatora jest nieprawidłowe
-1048: użycie słowa kluczowego w roli identyfikatora jest nieprawidłowe  
+1048: Zastosowanie słowa kluczowego w roli identyfikatora jest nieprawidłowe  
   
- Nie można użyć słowa kluczowego jako nazwę zmiennej, funkcji lub innego identyfikatora użytkownika.  
+ Nie można użyć słowa kluczowego jako nazwa zmiennej, funkcji lub inny identyfikator użytkownika.  
   
- Aby uzyskać więcej informacji na temat słów kluczowych, zobacz [JavaScript słowa zastrzeżone](../../javascript/reference/javascript-reserved-words.md) i [słowa zastrzeżone w przyszłości JavaScript](../../javascript/reference/javascript-future-reserved-words.md).
+ Aby uzyskać więcej informacji na temat słów kluczowych, zobacz [słowa zastrzeżone JavaScript](../../javascript/reference/javascript-reserved-words.md) i [słowa zastrzeżone w przyszłości JavaScript](../../javascript/reference/javascript-future-reserved-words.md).

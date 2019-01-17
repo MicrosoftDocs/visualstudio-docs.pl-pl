@@ -1,5 +1,5 @@
 ---
-title: Interfejs IDebugStackFrame | Dokumentacja firmy Microsoft
+title: IDebugStackFrame Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36fa0ba2d1b4049ad41ff0502ed33be0a706d9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0834abbedf88b911dd952c1f3928c5da3414abec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794413"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348545"
 ---
 # <a name="idebugstackframe-interface"></a>Interfejs IDebugStackFrame
-Reprezentuje ramka stosu logiczne na stosie wątku. Wywołanie `IDebugStackFrame::QueryInterface` metodę, aby uzyskać `IDebugExpressionContext` interfejsu, dzięki czemu wyrażenie oceny i obejrzyj systemu windows.  
+Reprezentuje ramkę stosu logicznych na stosie wątku. Wywołaj `IDebugStackFrame::QueryInterface` metodę, aby uzyskać `IDebugExpressionContext` interfejs, który umożliwia wyrażenie oceny i obejrzyj systemu windows.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugStackFrame` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugStackFrame` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Zwraca bieżący kontekst kodu ramki stosu.|  
-|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Zwraca opis krótka lub długo tekstową ramki stosu.|  
-|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Zwraca krótka lub długo tekstowy opis języka.|  
+|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Zwraca bieżący kontekst kodu skojarzone z ramki stosu.|  
+|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Zwraca opis krótki lub długo tekstowych ramki stosu.|  
+|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Zwraca krótki lub długo tekstowe Opis języka.|  
 |[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Zwraca wątek skojarzony z tą ramką stosu.|  
-|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Zwraca przeglądarką właściwości dla bieżącej ramki.|
+|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Zwraca przeglądarkę właściwości dla bieżącej ramki.|

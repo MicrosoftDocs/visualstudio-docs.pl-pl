@@ -1,5 +1,5 @@
 ---
-title: Interfejs IPerPropertyBrowsing2 1 | Dokumentacja firmy Microsoft
+title: IPerPropertyBrowsing2, interfejs 1 | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794671"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344040"
 ---
-# <a name="iperpropertybrowsing2-interface-1"></a>Interfejs IPerPropertyBrowsing2 1
-Uzyskuje dostęp do informacji na stronach właściwości oferowane przez obiekt.  
+# <a name="iperpropertybrowsing2-interface-1"></a>IPerPropertyBrowsing2, interfejs 1
+Uzyskuje dostęp do informacji na stronach właściwości oferowana przez obiekt.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|`GetDisplayString`|Zwraca ciąg tekstowy opisujące określonej właściwości.|  
-|`MapPropertyToPage`|Zwraca identyfikator CLSID strony właściwości, która umożliwia modyfikowanie określonej właściwości.|  
-|`GetPredefinedStrings`|Zwraca tablicę zliczona ciągów (`LPOLESTR` wskaźniki) wyświetlanie opisów dopuszczalne wartości akceptujących określonej właściwości.|  
-|`SetPredefinedValue`|Ustawia wartości właściwości do wstępnie zdefiniowanych wartości identyfikowana na podstawie tokenu`dwCookie.`|  
+|`GetDisplayString`|Zwraca ciąg tekst opisujący określonej właściwości.|  
+|`MapPropertyToPage`|Zwraca identyfikator CLSID strony właściwości, który umożliwia manipulowanie określonej właściwości.|  
+|`GetPredefinedStrings`|Zwraca zliczono tablicę ciągów (`LPOLESTR` wskaźniki) lista Opisy dopuszczalnych wartości, które może zaakceptować określoną właściwość.|  
+|`SetPredefinedValue`|Ustawia wartość właściwości wstępnie zdefiniowaną wartość identyfikowane za pomocą tokenu `dwCookie.`|  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: dbgprop.h

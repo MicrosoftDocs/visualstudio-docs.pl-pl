@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 17ffec5e6b4cfff85b49f61e7105ca8ce3d75c78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788791"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348467"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Liczba cyfr ułamkowych jest poza zakresem
-Próbowano przekazać nieprawidłowy argument do funkcji **Number.prototype.toExponential**. Argument funkcji **toExponential()** musi należeć do zakresu od 0 do 20 (włącznie).  
+Próba przekazania nieprawidłowy argument do funkcji **Number.prototype.toExponential**. Argument do funkcji **toExponential()** musi należeć do zakresu od 0 do 20 (włącznie).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, argument **toExponential()** nie jest za duża albo za mała.  
+-   Upewnij się, argument **toExponential()** nie jest zbyt duży lub za mały.  
   
 ## <a name="see-also"></a>Zobacz też  
- [toExponential — metoda (numer)](../../javascript/reference/toexponential-method-number-javascript.md)
+ [toExponential, metoda (Number)](../../javascript/reference/toexponential-method-number-javascript.md)

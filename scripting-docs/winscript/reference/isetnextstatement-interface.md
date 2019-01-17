@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdd71a427a8ef2c57684eef75a044d0cedf42415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac2d6dd0da14be5a624cff0b55985770b8d70fdf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796240"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344060"
 ---
 # <a name="isetnextstatement-interface"></a>Interfejs ISetNextStatement
-Ten interfejs jest implementowany przez tłumacza, aby umożliwić debugowanie Menedżera procesu aktualizacji bieżącej instrukcji. Jest implementowany z obiektu ramki stosu, a ten interfejs, za pomocą funkcji QueryInterface uzyskuje PDM.  
+Ten interfejs jest implementowany przez tłumacza, aby umożliwić Menedżer debugowania procesów do zaktualizowania bieżącej instrukcji. Jest implementowany z obiekt w ramce stosu i menedżerów PDM uzyskuje ten interfejs, za pomocą funkcji QueryInterface.  
   
- Interfejs udostępnia metody, które są przydatne do ustawiania punkcie wykonanie, które określa następną instrukcję do wykonania.  
+ interfejs zapewnia metody, które są przydatne do ustawiania punkt wykonania, która określa następną instrukcję do wykonania.  
   
- Oprócz dziedziczone z metody `IUnknown`, `ISetNextStatement` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `ISetNextStatement` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[ISetNextStatement::CanSetNextStatement](../../winscript/reference/isetnextstatement-cansetnextstatement.md)|Określa, czy punkt wykonywania można ustawić w określonej lokalizacji.|  
-|[ISetNextStatement::SetNextStatement](../../winscript/reference/isetnextstatement-setnextstatement.md)|Ustawia punkt wykonywania w określonej lokalizacji.|
+|[ISetNextStatement::CanSetNextStatement](../../winscript/reference/isetnextstatement-cansetnextstatement.md)|Określa, czy można ustawić punkt wykonania do określonej lokalizacji.|  
+|[ISetNextStatement::SetNextStatement](../../winscript/reference/isetnextstatement-setnextstatement.md)|Ustawia punkt wykonania do określonej lokalizacji.|

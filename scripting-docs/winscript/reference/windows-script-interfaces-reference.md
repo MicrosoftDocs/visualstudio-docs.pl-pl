@@ -1,5 +1,5 @@
 ---
-title: Interfejsy skryptów systemu Windows odwołanie | Dokumentacja firmy Microsoft
+title: Interfejsy skryptów Windows odwołania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce1f8beb9a17d6109ec4d199393fcb3f8a8d7761
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e37c7957024a46522438e3ac625e5b14c09b178f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796342"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348025"
 ---
 # <a name="windows-script-interfaces-reference"></a>Odwołania skryptów systemu Windows
-W poniższych częściach omówiono interfejsy skryptów systemu Windows.  
+W poniższych częściach omówiono interfejsy skryptów Windows.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Interfejsy aktywnego skryptu](../../winscript/reference/active-script-interfaces.md)  

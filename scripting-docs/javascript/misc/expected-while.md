@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801979"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348870"
 ---
 # <a name="expected-while"></a>Oczekiwano instrukcji „while"
 Nie dołączono `while` warunku w `do...while` pętli. A **czy** instrukcja musi mieć odpowiednią `while` testu na końcu bloku kodu.  

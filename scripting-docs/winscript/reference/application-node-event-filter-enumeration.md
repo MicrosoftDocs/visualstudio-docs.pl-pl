@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0446265d40fb6277fd155f3ed5822c506ae30bc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c6974a179ae3f694d1e355969f9abe0ce9163fc4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791848"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344554"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>Wyliczenie APPLICATION_NODE_EVENT_FILTER
 Określa typy węzłów, które mają zostać wykluczone podczas filtrowania dokumentów kodu. Używane w [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) i [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Te stałe są implementowane przez PDM 10.0 i większa. Znajduje się w zestawie activdbg100.h.  
+>  Te stałe są implementowane przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,8 +38,8 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
 |FILTER_EXCLUDE_NOTHING|0x00000000|Wyślij wszystkie zdarzenia.|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Wyklucz węzły anonimowe kodu. Te węzły są używane przez środowisko uruchomieniowe języka JScript dla `new Function([args,] <code>)'`.|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Wyklucz węzły eval kodu. Te węzły są używane przez środowisko uruchomieniowe języka JScript eval pomocy technicznej.|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Wyklucz węzły anonimowe kodu. Węzły te są używane przez środowisko uruchomieniowe języka JScript dla `new Function([args,] <code>)'`.|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Wyklucz węzły kod ewaluacyjny. Węzły te są używane przez środowisko uruchomieniowe języka JScript obsługę wersji ewaluacyjnej.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

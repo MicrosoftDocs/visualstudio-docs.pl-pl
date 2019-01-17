@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplicationThreadEvents110:: OnBeginThreadRequest | Dokumentacja firmy Microsoft'
+title: 'IDebugApplicationThreadEvents110:: Idebugapplicationthreadevents110::onbeginthreadrequest | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 239a154a6692db5c93b13be27089d5ecf6663d66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 90a9550b43dafb6bd38a68e379d486888d7bbf8d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793828"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345178"
 ---
 # <a name="idebugapplicationthreadevents110-onbeginthreadrequest"></a>IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
-Wywołanie do wątku przy użyciu wątku PDM przełączanie zostało uruchomione.  
+Wywołanie do wątku, przy użyciu menedżerów PDM wątku Przełączenie zostało uruchomione.  
   
 > [!IMPORTANT]
->  [Interfejs IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) jest implementowany przez PDM v11.0 i większa. Znajduje się w zestawie activdbg100.h.  
+>  [Interfejs IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,4 +37,4 @@ HRESULT OnBeginThreadRequest( void );
  Ta metoda nie ma parametrów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md)
+ [IDebugApplicationThreadEvents110, interfejs](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

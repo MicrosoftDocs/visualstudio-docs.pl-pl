@@ -1,5 +1,5 @@
 ---
-title: Oczekiwany element członkowski obiektu | Dokumentacja firmy Microsoft
+title: Oczekiwana składowa obiektu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788806"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344164"
 ---
 # <a name="object-member-expected"></a>Oczekiwany element członkowski obiektu
-Nastąpiła próba wykonania operacji na elemencie członkowskim danych obiektu, ale element członkowski nie istnieje.  
+Podjęto próbę wykonania operacji na obiekcie element członkowski danych, ale element członkowski nie istnieje.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, że nazwa elementu członkowskiego danych została wpisana poprawnie.  
+-   Upewnij się, że nazwa składowej danych została wpisana poprawnie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Object — obiekt](../../javascript/reference/object-object-javascript.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f21bbfacc4918ff0e67731d5efd5521f371cbdf9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dc5e7a7bb6c91bd852a8fd2024b708166c085209
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796453"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349780"
 ---
 # <a name="sourcetextattr-enumeration"></a>Wyliczenie SOURCE_TEXT_ATTR
 Opisuje atrybuty pojedynczego znaku w tekście źródłowym.  
@@ -34,22 +34,22 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
   
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
-|SOURCETEXT_ATTR_KEYWORD|0X0001|Znak jest częścią słowem kluczowym języka, na przykład słowa kluczowego VBScript `While`.|  
-|SOURCETEXT_ATTR_COMMENT|0X0002|Znak jest częścią blok komentarza.|  
-|SOURCETEXT_ATTR_NONSOURCE|0X0004|Znak nie jest częścią tekst źródłowy skompilowanych języka. Na przykład HTML otaczającego blok skryptu.|  
-|SOURCETEXT_ATTR_OPERATOR|0X0008|Znak jest częścią operator języka. Na przykład:, operatora arytmetycznego  **+** .|  
-|SOURCETEXT_ATTR_NUMBER|0x0010|Znak jest częścią języka stałej liczbowej.  Na przykład stała 3,14159.|  
+|SOURCETEXT_ATTR_KEYWORD|0x0001|Znak jest częścią słowa kluczowego języka, na przykład, słowo kluczowe VBScript `While`.|  
+|SOURCETEXT_ATTR_COMMENT|0x0002|Znak jest częścią blok komentarza.|  
+|SOURCETEXT_ATTR_NONSOURCE|0x0004|Znak nie jest częścią tekst źródłowy języka skompilowany. Na przykład HTML otaczający blok skryptu.|  
+|SOURCETEXT_ATTR_OPERATOR|0x0008|Znak jest częścią operator języka. Na przykład:, operatora arytmetycznego **+**.|  
+|SOURCETEXT_ATTR_NUMBER|0x0010|Znak jest częścią stałej liczbowej języka.  Na przykład stała 3,14159.|  
 |SOURCETEXT_ATTR_STRING|0x0020|Znak jest częścią stałą typu string języka. Na przykład ciąg "Hello World".|  
-|SOURCETEXT_ATTR_FUNCTION_START|0x0040|Wskazuje znak początek bloku funkcji|  
+|SOURCETEXT_ATTR_FUNCTION_START|0x0040|Znak wskazuje początek bloku funkcji|  
   
 ## <a name="remarks"></a>Uwagi  
  Zazwyczaj `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, i `IActiveScriptDebug::GetScriptTextAttributes` metody zwracają jeden atrybut tekstu na znak, chyba że:  
   
--   Flaga GETATTRTYPE_DEPSCAN jest ustawiona, w którym to przypadku metoda może zwracać flagi SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP  
+-   Jest ustawiona flaga GETATTRTYPE_DEPSCAN, w którym to przypadku metoda może zwrócić SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP flagi  
   
--   Flaga GETATTRFLAG_THIS jest ustawiona, w którym to przypadku metoda może zwracać flagi SOURCETEXT_ATTR_THIS  
+-   Jest ustawiona flaga GETATTRFLAG_THIS, w którym to przypadku metoda może zwrócić flagę SOURCETEXT_ATTR_THIS  
   
--   Ustawiona flaga GETATTRFLAG_HUMANTEXT, w którym to przypadku metoda może zwracać flagi SOURCETEXT_ATTR_HUMANTEXT.  
+-   Flaga GETATTRFLAG_HUMANTEXT jest ustawiona, w którym to przypadku metoda może zwrócić flagi SOURCETEXT_ATTR_HUMANTEXT bazy danych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -14,37 +14,37 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baadcc1e2dba0b07e132298167b9b711e40cd912
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8fdb153a81d63a7a6cffd0b42001405ecfb87596
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794839"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346983"
 ---
 # <a name="idebugdocumenthelper-interface"></a>Interfejs IDebugDocumentHelper
-Podaj implementacji dla wielu interfejsy niezbędne do obsługi inteligentne, taki jak `IDebugDocument`, `IDebugDocumentContext`, `IDebugDocumentProvider`, `IDebugDocumentText`, i `IDebugDocumentTextEvents` interfejsów.  
+Dostarczać implementacje dla wielu interfejsy niezbędne do obsługi inteligentne, takie jak `IDebugDocument`, `IDebugDocumentContext`, `IDebugDocumentProvider`, `IDebugDocumentText`, i `IDebugDocumentTextEvents` interfejsów.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IDebugDocumentHelper` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IUnknown`, `IDebugDocumentHelper` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugDocumentHelper::Init](../../winscript/reference/idebugdocumenthelper-init.md)|Inicjuje pomocnika dokumentu debugowania z nazwą i atrybuty początkowej.|  
+|[IDebugDocumentHelper::Init](../../winscript/reference/idebugdocumenthelper-init.md)|Inicjuje pomocnika dokumentu debugowania z nazwą i początkowa atrybuty.|  
 |[IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)|Dodaje ten dokument w drzewie dokumentu.|  
-|[IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)|Usuwa ten dokument w drzewie dokumentu.|  
+|[IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)|Usuwa ten dokument z drzewa dokumentu.|  
 |[IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)|Dołącza ciąg Unicode do końca tego dokumentu.|  
-|[IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)|Dołącza do końca ciągu DBCS tego dokumentu.|  
-|[IDebugDocumentHelper::SetDebugDocumentHost](../../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md)|Ustawia `IDebugDocumentHost` dla tego dokumentu.|  
-|[IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)|Powiadamia pomocnika, że podany tekst jest dostępny, ale nie zawiera znaków.|  
-|[IDebugDocumentHelper::DefineScriptBlock](../../winscript/reference/idebugdocumenthelper-definescriptblock.md)|Oznacza, że do pomocniczego, który określony zakres znaków jest obsługiwane przez aparat skryptów danego blok skryptu.|  
-|[IDebugDocumentHelper::SetDefaultTextAttr](../../winscript/reference/idebugdocumenthelper-setdefaulttextattr.md)|Ustawia domyślne atrybuty dla tekstu, który nie znajduje się w bloku skryptu.|  
-|[IDebugDocumentHelper::SetTextAttributes](../../winscript/reference/idebugdocumenthelper-settextattributes.md)|Ustawia atrybut na zakres tekstu.|  
-|[IDebugDocumentHelper::SetLongName](../../winscript/reference/idebugdocumenthelper-setlongname.md)|Ustawia długiej nazwy dokumentu.|  
-|[IDebugDocumentHelper::SetShortName](../../winscript/reference/idebugdocumenthelper-setshortname.md)|Ustawia krótką nazwę dokumentu.|  
+|[IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)|Dołącza ciąg znaków Dwubajtowych do końca tego dokumentu.|  
+|[IDebugDocumentHelper::SetDebugDocumentHost](../../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md)|Zestawy `IDebugDocumentHost` dla tego dokumentu.|  
+|[IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)|Powiadamia pomocnika, że dany tekst jest dostępna, ale nie zawiera znaków.|  
+|[IDebugDocumentHelper::DefineScriptBlock](../../winscript/reference/idebugdocumenthelper-definescriptblock.md)|Oznacza, że do elementu pomocniczego, będącego określonego zakresu znaków w bloku skryptu, obsługiwane przez aparat skryptu.|  
+|[IDebugDocumentHelper::SetDefaultTextAttr](../../winscript/reference/idebugdocumenthelper-setdefaulttextattr.md)|Ustawia atrybuty domyślnych dla tekstu, który nie znajduje się w bloku skryptu.|  
+|[IDebugDocumentHelper::SetTextAttributes](../../winscript/reference/idebugdocumenthelper-settextattributes.md)|Ustawia atrybuty zakres tekstu.|  
+|[IDebugDocumentHelper::SetLongName](../../winscript/reference/idebugdocumenthelper-setlongname.md)|Ustawia długa nazwa dokumentu.|  
+|[IDebugDocumentHelper::SetShortName](../../winscript/reference/idebugdocumenthelper-setshortname.md)|Ustawia skróconą nazwę dokumentu.|  
 |[IDebugDocumentHelper::SetDocumentAttr](../../winscript/reference/idebugdocumenthelper-setdocumentattr.md)|Ustawia atrybuty dla tego dokumentu.|  
-|[IDebugDocumentHelper::GetDebugApplicationNode](../../winscript/reference/idebugdocumenthelper-getdebugapplicationnode.md)|Zwraca węzła aplikacji debugowania odpowiadającego do tego dokumentu.|  
-|[IDebugDocumentHelper::GetScriptBlockInfo](../../winscript/reference/idebugdocumenthelper-getscriptblockinfo.md)|Pobiera zakres znaków i aparat skryptu odpowiadający blok skryptu.|  
+|[IDebugDocumentHelper::GetDebugApplicationNode](../../winscript/reference/idebugdocumenthelper-getdebugapplicationnode.md)|Zwraca węzeł aplikacji debugowania odpowiadającego do tego dokumentu.|  
+|[IDebugDocumentHelper::GetScriptBlockInfo](../../winscript/reference/idebugdocumenthelper-getscriptblockinfo.md)|Pobiera zakres znaków i aparat skryptów odpowiadający blok skryptu.|  
 |[IDebugDocumentHelper::CreateDebugDocumentContext](../../winscript/reference/idebugdocumenthelper-createdebugdocumentcontext.md)|Tworzy nowy kontekst dokumentu debugowania.|  
-|[IDebugDocumentHelper::BringDocumentToTop](../../winscript/reference/idebugdocumenthelper-bringdocumenttotop.md)|Powoduje przeniesienie tego dokumentu do góry w debugerze interfejsu użytkownika.|  
-|[IDebugDocumentHelper::BringDocumentContextToTop](../../winscript/reference/idebugdocumenthelper-bringdocumentcontexttotop.md)|Wprowadzono kontekście tego dokumentu do góry w interfejsie użytkownika debugera.|
+|[IDebugDocumentHelper::BringDocumentToTop](../../winscript/reference/idebugdocumenthelper-bringdocumenttotop.md)|Ten dokument udostępnia do góry w debugerze interfejsu użytkownika.|  
+|[IDebugDocumentHelper::BringDocumentContextToTop](../../winscript/reference/idebugdocumenthelper-bringdocumentcontexttotop.md)|Udostępnia kontekst tego dokumentu do góry w interfejsie użytkownika debugera.|

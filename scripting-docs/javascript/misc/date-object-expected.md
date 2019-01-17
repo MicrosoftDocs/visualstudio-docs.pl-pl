@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 05e27b822f933ade811084552f6f0379257ae82e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947644"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349117"
 ---
 # <a name="date-object-expected"></a>Oczekiwany obiekt Date
 Podjęto próbę wywołania **Date.prototype.toString** lub **Date.prototype.valueOf** metody na obiekt typu innego niż `Date`. Obiekt tego typu wywołania musi być typu `Date`. Na przykład:  

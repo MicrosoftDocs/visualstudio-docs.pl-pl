@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61504d60ccb59a0632376bf8e1ef762382b06326
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 744794a5b68c9d2e256a9d85cd7ce063dbf975ad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794623"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349962"
 ---
 # <a name="ienumdebugpropertyinfo-interface"></a>Interfejs IEnumDebugPropertyInfo
 Wylicza `DebugPropertyInfo` struktury.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IEnumDebugPropertyInfo`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|Pobiera określoną liczbę `DebugPropertyInfo` struktury w kolejności wyliczenia.|  
-|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|Pomija określoną liczbę `DebugPropertyInfo` struktury w kolejności wyliczenia.|  
+|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|Pobiera określoną liczbę `DebugPropertyInfo` struktur w kolejności wyliczenia.|  
+|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|Pomija określoną liczbę `DebugPropertyInfo` struktur w kolejności wyliczenia.|  
 |[IEnumDebugPropertyInfo::Reset](../../winscript/reference/ienumdebugpropertyinfo-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
-|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|Tworzy moduł wyliczający, który zawiera takim samym stanie wyliczenie jako bieżący modułu wyliczającego.|  
+|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|  
 |[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|Pobiera liczbę `DebugPropertyInfo` struktury w moduł wyliczający.|  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: dbgprop.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)
+ [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

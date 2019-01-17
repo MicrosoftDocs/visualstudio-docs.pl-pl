@@ -14,40 +14,40 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a57a983acb2d63cfe5f5b2d9b66e1cace7d98d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794446"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347804"
 ---
 # <a name="idispatchex-methods"></a>Metody IDispatchEx
-Poniżej przedstawiono metody IDispatchEx.  
+Dostępne są następujące metody IDispatchEx.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)  
- Usuwa element członkowski przy użyciu identyfikatora DISPID.  
+ Usuwa członka przez identyfikator DISPID.  
   
  [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)  
- Usuwa element członkowski o nazwie.  
+ Usuwa element członkowski według nazwy.  
   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
- Mapuje nazwę jednego członka DISPID odpowiednie, którego można użyć w kolejnych wywołań IDispatchEx::InvokeEx.  
+ Mapuje nazwę na jeden element członkowski jego odpowiedni identyfikator DISPID, które następnie mogą być używane w kolejnych wywołaniach IDispatchEx::InvokeEx.  
   
  [IDispatchEx::GetMemberName](../../winscript/reference/idispatchex-getmembername.md)  
  Pobiera nazwę elementu członkowskiego.  
   
  [IDispatchEx::GetMemberProperties](../../winscript/reference/idispatchex-getmemberproperties.md)  
- Pobiera właściwości elementów członkowskich.  
+ Pobiera właściwości elementu członkowskiego.  
   
  [IDispatchEx::GetNameSpaceParent](../../winscript/reference/idispatchex-getnamespaceparent.md)  
- Pobiera interfejs dla obiekt nadrzędny przestrzeni nazw.  
+ Pobiera interfejs dla obiektu nadrzędnego przestrzeni nazw.  
   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)  
- Wylicza elementów członkowskich obiektu.  
+ Wylicza elementy członkowskie obiektu.  
   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)  
- Zapewnia dostęp do właściwości i metody ujawnione przez obiekt IDispatchEx.  
+ Zapewnia dostęp do właściwości i metod udostępnianych przez obiekt IDispatchEx.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)
+ [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)

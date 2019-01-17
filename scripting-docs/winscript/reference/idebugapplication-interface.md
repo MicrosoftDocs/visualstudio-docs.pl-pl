@@ -14,39 +14,39 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07964292785634212099a0bfcf8174ebb55e8713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b3483bea94d7a53fabf3f552df97a681307b885c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794386"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349728"
 ---
 # <a name="idebugapplication-interface"></a>Interfejs IDebugApplication
-Opisuje metody debugowania-remote, do użytku przez aparaty języka i hostów.  
+Przedstawia-remote metody debugowania do użytku przez język aparatów i hosty.  
   
- Oprócz dziedziczone z metody `IRemoteDebugApplication`, `IDebugApplication` interfejsu udostępnia następujące metody.  
+ Oprócz metod odziedziczone `IRemoteDebugApplication`, `IDebugApplication` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDebugApplication::SetName](../../winscript/reference/idebugapplication-setname.md)|Ustawia nazwę aplikacji.|  
-|[IDebugApplication::StepOutComplete](../../winscript/reference/idebugapplication-stepoutcomplete.md)|Powiadamia menedżera debugowania procesu aparat języka, w trybie pojedynczy krok o zbliżającym się zwrócić do swojego obiektu wywołującego.|  
-|[IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)|Powoduje, że dany ciąg znaków, który będzie wyświetlany przez debuger IDE.|  
-|[IDebugApplication::StartDebugSession](../../winscript/reference/idebugapplication-startdebugsession.md)|Uruchamia domyślny debuger IDE i dołącza sesji debugowania do tej aplikacji, jeśli nie jest już dołączony.|  
+|[IDebugApplication::StepOutComplete](../../winscript/reference/idebugapplication-stepoutcomplete.md)|Powiadamia Menedżer debugowania procesów, że aparat języka, w trybie pojedynczego kroku zostanie powrócić do obiektu wywołującego.|  
+|[IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)|Powoduje, że dany ciąg mają być wyświetlane przez debuger środowiska IDE.|  
+|[IDebugApplication::StartDebugSession](../../winscript/reference/idebugapplication-startdebugsession.md)|Uruchamia domyślny debuger środowiska IDE i dołącza sesji debugowania do tej aplikacji, jeśli nie jest już dołączony.|  
 |[IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)|Powoduje, że bieżący wątek zablokować, a następnie wysyła powiadomienie z informacją o punkt przerwania do debugera w IDE.|  
-|[IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)|Powoduje, że tej aplikacji zwolnić wszystkie odwołania, a następnie wprowadź nieaktywny.|  
-|[IDebugApplication::GetBreakFlags](../../winscript/reference/idebugapplication-getbreakflags.md)|Zwraca bieżące flagi podziału dla aplikacji.|  
-|[IDebugApplication::GetCurrentThread](../../winscript/reference/idebugapplication-getcurrentthread.md)|Zwraca wątek skojarzony z aktualnie uruchomiony.|  
-|[IDebugApplication::CreateAsyncDebugOperation](../../winscript/reference/idebugapplication-createasyncdebugoperation.md)|Udostępnia asynchroniczne operacji danego synchroniczne debugowania.|  
-|[IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)|Dodaje dostawcę modułu wyliczającego ramki stosu w tej aplikacji.|  
-|[IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)|Usuwa dostawcę modułu wyliczającego ramki stosu z tej aplikacji.|  
-|[IDebugApplication::QueryCurrentThreadIsDebuggerThread](../../winscript/reference/idebugapplication-querycurrentthreadisdebuggerthread.md)|Określa, czy bieżący wątek uruchomiony wątek debugera.|  
-|[IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)|Udostępnia mechanizm dla obiekt wywołujący, aby uruchomić kod w wątku debugera.|  
-|[IDebugApplication::CreateApplicationNode](../../winscript/reference/idebugapplication-createapplicationnode.md)|Tworzy nowy węzeł aplikacji skojarzonej z dostawcy określonego dokumentu.|  
-|[IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)|Wyzwala zdarzenie generyczne debugera `IApplicationDebugger` interfejsu.|  
+|[IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)|Powoduje, że ta aplikacja jest zwolnienie wszystkich odwołań, a następnie wprowadź nieaktywny.|  
+|[IDebugApplication::GetBreakFlags](../../winscript/reference/idebugapplication-getbreakflags.md)|Zwraca bieżące flagi przerwania dla aplikacji.|  
+|[IDebugApplication::GetCurrentThread](../../winscript/reference/idebugapplication-getcurrentthread.md)|Zwraca wątek skojarzony z aktualnie uruchomionemu wątkowi.|  
+|[IDebugApplication::CreateAsyncDebugOperation](../../winscript/reference/idebugapplication-createasyncdebugoperation.md)|Zapewnia dostęp asynchronicznych operacji danego synchroniczne debugowania.|  
+|[IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)|Dodaje dostawcę moduł wyliczający ramek stosu do tej aplikacji.|  
+|[IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)|Usuwa dostawcę moduł wyliczający ramek stosu z tej aplikacji.|  
+|[IDebugApplication::QueryCurrentThreadIsDebuggerThread](../../winscript/reference/idebugapplication-querycurrentthreadisdebuggerthread.md)|Określa, czy bieżący wątek uruchomionego wątku debugera.|  
+|[IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)|Udostępnia mechanizm do obiektu wywołującego uruchomić kod w wątku debugera.|  
+|[IDebugApplication::CreateApplicationNode](../../winscript/reference/idebugapplication-createapplicationnode.md)|Tworzy nowy węzeł aplikacji, który jest skojarzony z dostawcą danego dokumentu.|  
+|[IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)|Wyzwala zdarzenie generyczne do debugera `IApplicationDebugger` interfejsu.|  
 |[IDebugApplication::HandleRuntimeError](../../winscript/reference/idebugapplication-handleruntimeerror.md)|Powoduje, że bieżący wątek zablokować, a następnie wysyła powiadomienie z informacją o błędzie do debugera w IDE.|  
-|[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Określa, czy jest zarejestrowany debuger just in time (JIT).|  
-|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Określa, czy debugera JIT jest zarejestrowana dla hostów bez automatycznego debugowania.|  
-|[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Dodaje dostawcę kontekstu wyrażenia globalnego do tej aplikacji.|  
-|[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Usuwa dostawca kontekstu wyrażenia globalnego z tej aplikacji.|
+|[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Określa, czy debuger just in time (JIT) jest zarejestrowany.|  
+|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Określa, czy jest debugera JIT jest zarejestrowana w celu bez hostów auto-debug.|  
+|[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Dodaje dostawcę kontekstu wyrażenie globalne do tej aplikacji.|  
+|[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Usuwa dostwcy kontekstu wyrażenie globalne z tej aplikacji.|

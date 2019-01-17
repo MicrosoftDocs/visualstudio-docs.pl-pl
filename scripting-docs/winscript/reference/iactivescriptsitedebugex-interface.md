@@ -1,5 +1,5 @@
 ---
-title: Interfejs IActiveScriptSiteDebugEx | Dokumentacja firmy Microsoft
+title: IActiveScriptSiteDebugEx Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cf5849ff1fca282bace97774c6b7ac9e4510226
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1e462630f7bf52c4ca94aa59df22616e9a335a7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793627"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345880"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>Interfejs IActiveScriptSiteDebugEx
-Implementuje ten interfejs wraz z programem `IActiveScriptSiteDebug` interfejsu podczas pisania hosta, który ma uzyskać powiadomienie z informacją o błędów czasu wykonywania w aplikacji i opcjonalnie dołączyć do aplikacji do debugowania. Menedżer debugowania procesu zapewnia powiadomienie za pośrednictwem `IActiveScriptDebug` Jeśli debugera skryptów Just In Time znajduje się na komputerze. Jeśli debugera skryptów nie Just In Time został znaleziony, PDM zapewnia powiadomienie za pośrednictwem `IActiveScriptDebugEx` zamiast tego.  
+Implementuje ten interfejs, wraz z `IActiveScriptSiteDebug` interfejsu, jeśli piszesz hosta, który musi odbieraj powiadomienie o błędów czasu wykonywania w aplikacji i opcjonalnie dołączyć do aplikacji do debugowania. Menedżer debugowania procesów zapewnia powiadomienie za pośrednictwem `IActiveScriptDebug` Jeśli Just-In-Time debugera skryptów znajduje się na komputerze. Nie Just-In-Time debugera skryptów czy znaleziono, menedżerów PDM zapewnia powiadomienie za pośrednictwem `IActiveScriptDebugEx` zamiast tego.  
   
- Aby uzyskać powiadomienie z informacją o błędów czasu wykonywania, host musi obsługiwać [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). Oparte na akcję użytkownika, następnie można zdecydować, czy dołączyć debuger wewnętrzny i wrócić, czy zwracać uruchamiania w debugerze programu OnScriptErrorDebug `pfEnterDebugger` parametru.  
+ Aby uzyskać powiadomienie z informacją o błędów czasu wykonywania, hosta musi obsługiwać [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). Oparte na akcję użytkownika, następnie można zdecydować, czy dołączyć debuger wewnętrzny i wrócić, czy zwracać uruchamiania w debugerze programu OnScriptErrorDebug `pfEnterDebugger` parametru.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Informuje, że host o błędów czasu wykonywania skryptu, gdy proces debugowania Manager nie znalazł zewnętrznego debugera tylko w czasie.|
+|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Informuje, że host o błąd czasu wykonywania skryptu po procesie debugowanie Menedżera nie zewnętrznego debugera Just In Time.|
