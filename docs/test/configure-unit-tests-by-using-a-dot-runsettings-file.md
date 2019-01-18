@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 06cd85291b63ddd7c31136e24cf622f510849775
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98e3de01bd5a12c842298ef6b923c232c0660977
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961903"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398276"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
 
@@ -77,7 +77,7 @@ Następujący kody XML pokazuje zawartość typowej *.runsettings* pliku. Każdy
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from menu Test > Test Settings > Default Processor Architecture -->
+    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -165,7 +165,7 @@ W kolejnych sekcjach szczegółowo elementy *.runsettings* pliku.
 |Węzeł|Domyślny|Wartości|
 |-|-|-|
 |**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testu.|
-|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />To ustawienie określa wersję środowiska testów jednostkowych, które są używane do odnajdowania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.|
+|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />To ustawienie określa wersję środowiska testów jednostkowych, które są używane do odnajdowania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|fałsz, prawda|
 |**TestAdaptersPaths**||Jedną lub więcej ścieżek do katalogu, w którym znajdują się TestAdapters|
@@ -243,7 +243,7 @@ Te ustawienia są właściwe dla adaptera testowego, który uruchamia metody tes
 |-|-|-|
 |**ForcedLegacyMode**|false|W programie Visual Studio 2012 Adapter karty MSTest został zoptymalizowany umożliwiają szybsze i bardziej skalowalne. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** Aby użyć starszego adaptera testowego.<br /><br />Na przykład możesz użyć tego ustawienia, jeśli masz *app.config* plik określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [testy, które można uruchamiać od czasu poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
-|**Plik_ustawień**||Można określić plik ustawień testu do użycia przez adapter MSTest. Można również określić plik ustawień testu, wybierając **Test** > **ustawienia testu** > **wybierz plik ustawień testu**.<br /><br />Jeśli ta wartość jest podana, należy także ustawić **ForcedlegacyMode** do **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||Można określić plik ustawień testu do użycia przez adapter MSTest. Można również określić plik ustawień testu, wybierając **Test** > **ustawienia testu** > **wybierz plik ustawień testu**.<br /><br />Jeśli ta wartość jest podana, należy także ustawić **ForcedlegacyMode** do **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Żaden proces, który jest uruchamiany jako część testu jest także skasowane. Jeśli chcesz utrzymać aktywność modułu wykonania testu, ustaw wartość **true**. Na przykład można użyć tego ustawienia do zachowania działania przeglądarki między kodowane testy interfejsu użytkownika.|
 |**DeploymentEnabled**|true|Jeśli wartość jest ustawiona na **false**, elementy wdrożenia, które zostały określone w metodzie testowej, nie są kopiowane do katalogu wdrażania.|
 |**CaptureTraceOutput**|true|Można zapisywać do śledzenia debugowania z metody testu przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|

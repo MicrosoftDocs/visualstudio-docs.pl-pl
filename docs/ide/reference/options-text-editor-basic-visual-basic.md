@@ -1,6 +1,6 @@
 ---
-title: Zaawansowane opcje, Edytor tekstów, Basic (VB)
-ms.date: 11/04/2016
+title: Options, Text Editor, Basic (VB), Advanced
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -19,19 +19,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871242"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398250"
 ---
-# <a name="options-text-editor-basic-visual-basic-advanced"></a>Zaawansowane opcje, Edytor tekstów, Basic (Visual Basic)
+# <a name="options-text-editor-basic-visual-basic-advanced"></a>Options, Text Editor, Basic (Visual Basic), Advanced
 **VB określonych** stronie właściwości, **podstawowe** folderu **edytora tekstów** folderu **opcje** (**narzędzia** menu) okno dialogowe zawiera następujące właściwości:
+
+## <a name="analysis"></a>Analiza
+
+- Włączanie pełnej analizy rozwiązania
+
+   Włącza analizę kodu dla wszystkich plików w rozwiązaniu, nie wystarczy otworzyć plików kodu. Aby uzyskać więcej informacji, zobacz [pełnej analizy rozwiązania](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+## <a name="using-directives"></a>Dyrektywy Using
+
+- Umieść najpierw dyrektywy "System" podczas sortowania deklaracji Using
+
+   Po wybraniu **Usuń i Sortuj wyrażenia Using** w sortuje menu kliknij prawym przyciskiem myszy polecenie `using` dyrektywy i miejsc przestrzeni nazw "System" w górnej części listy.
+   
+- Oddziel grupy dyrektywy using
+
+   Po wybraniu **Usuń i Sortuj wyrażenia Using** oddziela polecenia w menu kliknij prawym przyciskiem myszy `using` dyrektyw, wstawiając pusty wiersz między grupami dyrektyw, które mają ten sam głównej przestrzeni nazw.
+   
+- Sugeruj dyrektywy Using dla typów w zestawach referencyjnych 
+- Sugeruj dyrektywy Using dla typów w pakietach NuGet 
+
+   Po wybraniu tych opcji [szybka akcja](../quick-actions.md) jest dostępna zainstalować pakiet NuGet i dodać `using` dyrektywy dla typów bez odwołań.
+
+   ![Szybkie działanie, aby zainstalować pakiet NuGet w programie Visual Studio](media/nuget-lightbulb.png)
+  
+
+## <a name="highlighting"></a>Wyróżnianie
 
  **Włącz wyróżnianie odwołań i słów kluczowych**
 
-Edytor tekstu można wyróżnić wszystkich wystąpień symbolu lub wszystkich słów kluczowych w klauzuli takich jak `If..Then`, `While...End While`, lub `Try...Catch...Finally`. Możesz przechodzić między do wyróżnionych odwołań lub słów kluczowych, naciskając klawisz **Ctrl** + **Shift** + **Strzałka w dół** lub **Ctrl**   +  **Shift** + **Strzałka w górę**.
+Edytor tekstu można wyróżnić wszystkich wystąpień symbolu lub wszystkie słowa kluczowe w klauzuli takich jak `If..Then`, `While...End While`, lub `Try...Catch...Finally`. Możesz przechodzić między do wyróżnionych odwołań lub słów kluczowych, naciskając klawisz **Ctrl** + **Shift** + **Strzałka w dół** lub **Ctrl**   +  **Shift** + **Strzałka w górę**.
+
+## <a name="outlining"></a>Tworzenie konspektu
 
 **Włącz tryb konspektu**
 
@@ -47,7 +75,13 @@ Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana *.vb* pliki �
 |Po zestaw konstrukcji w jednym wierszu|-After instrukcje importowania, przed definicją typu w pliku klasy<br />-After zmienne zadeklarowane w klasie, zanim wszelkie procedury|
 |Po jednym wierszu deklaracji (-block deklaracje poziomu)|— Następujące instrukcje importu dziedziczy instrukcji, deklaracji zmiennych, deklaracji zdarzeń, delegat deklaracje i biblioteki DLL zadeklarować instrukcji|
 
- **Formatowania kodu (ponowne formatowanie) kodu** Edytor tekstu formatuje kodu zgodnie z potrzebami. Gdy ta opcja jest zaznaczona, Edytor kodu wykonują następujące czynności:
+## <a name="block-structure-guides"></a>Prowadnice struktury blokowej
+
+Zaznacz pola wyboru, aby wyświetlić kropkowana pionowe linie w nawiasach klamrowych (**{}**) w kodzie. Umożliwia to łatwe wyświetlenie poszczególnych bloków kodu dla Twojego poziomu deklaracji i tworzy na poziomie kodu.
+
+## <a name="editor-help"></a>Pomoc Edytora
+
+**Formatowania kodu (ponowne formatowanie) kodu** Edytor tekstu formatuje kodu zgodnie z potrzebami. Gdy ta opcja jest zaznaczona, Edytor kodu wykonują następujące czynności:
 
 -   Wyrównaj kod do położenia odpowiedniej karcie
 
@@ -65,7 +99,7 @@ Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana *.vb* pliki �
 
 **Automatyczne wstawianie konstrukcji końcowych**
 
- Podczas wpisywania — na przykład pierwszy wiersz deklaracja procedury `Sub Main—`i naciśnij klawisz **Enter**, Edytor tekstu dodaje pasujący obiekt typu `End Sub` wiersza. Podobnie jeśli dodasz [dla](/dotnet/visual-basic/language-reference/statements/for-next-statement) pętli, Edytor tekstu dodaje pasujący obiekt typu `Next` instrukcji. Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie dodaje konstrukcja końcowa.
+Podczas wpisywania — na przykład pierwszy wiersz deklaracja procedury `Sub Main`— i naciśnij klawisz **Enter**, Edytor tekstu dodaje pasujący obiekt typu `End Sub` wiersza. Podobnie jeśli dodasz [dla](/dotnet/visual-basic/language-reference/statements/for-next-statement) pętli, Edytor tekstu dodaje pasujący obiekt typu `Next` instrukcji. Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie dodaje konstrukcja końcowa.
 
 **Automatyczne wstawianie składowych Interface i MustOverride**
 
@@ -75,7 +109,7 @@ Jeśli zdecydujesz się `Implements` instrukcji lub `Inherits` instrukcji dla kl
 
 Edytor tekstu można zasugerować rozwiązania typowych problemów i pozwalają wybrać odpowiednią poprawkę, co jest następnie stosowane do kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Opcje, Edytor tekstów, Wszystkie języki, Karty](../../ide/reference/options-text-editor-all-languages-tabs.md)

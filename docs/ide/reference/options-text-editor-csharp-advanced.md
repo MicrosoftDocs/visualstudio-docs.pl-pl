@@ -1,6 +1,6 @@
 ---
 title: Opcje, edytor tekstu, C#, zaawansowane
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887909"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398302"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
@@ -109,13 +109,17 @@ Użyj **zaawansowane** Strona opcji, aby modyfikować ustawienia formatowania ed
 
 - Pokaż separatory wierszy procedury
 
-   Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana *.vb* pliki źródłowe projektu w lokalizacjach wymienione w poniższej tabeli:
+   Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana *.cs* pliki źródłowe projektu w lokalizacjach wymienione w poniższej tabeli:
 
-   |Lokalizacja w pliku źródłowym .vb|Przykład lokalizację wiersza|
+   |Lokalizacja w pliku źródłowym .cs|Przykład lokalizację wiersza|
    |---------------------------------|------------------------------|
    |Po zamknięciu bloku konstrukcja deklaracji|-Na końcu klasy, struktury, moduł, interfejs lub wyliczenie<br />-After właściwości, funkcji lub sub<br />-Nie między get i set klauzule we właściwości|
    |Po zestaw konstrukcji w jednym wierszu|-After instrukcje importowania, przed definicją typu w pliku klasy<br />-After zmienne zadeklarowane w klasie, zanim wszelkie procedury|
    |Po jednym wierszu deklaracji (-block deklaracje poziomu)|— Następujące instrukcje importu dziedziczy instrukcji, deklaracji zmiennych, deklaracji zdarzeń, delegat deklaracje i biblioteki DLL zadeklarować instrukcji|
+
+## <a name="block-structure-guides"></a>Prowadnice struktury blokowej
+
+Zaznacz pola wyboru, aby wyświetlić kropkowana pionowe linie w nawiasach klamrowych (**{}**) w kodzie. Można następnie łatwo zobaczyć poszczególne bloki kodu dla Twojego poziomu deklaracji i tworzy na poziomie kodu.
 
 ## <a name="editor-help"></a>Pomoc Edytora
 

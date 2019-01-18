@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967430"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398289"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -26,9 +26,6 @@ W tym krótkie wprowadzenie do edytora kodu w programie Visual Studio omówimy k
 > Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
 
 W tym artykule przyjęto założenie, że już znasz za pomocą języka JavaScript. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [utworzyć aplikację Node.js lub Express](../javascript/tutorial-nodejs.md) pierwszy.
-
-> [!TIP]
-> Aby skorzystać z tego artykułu, upewnij się, że wybrano dla programu Visual Studio ustawienia języka JavaScript. Aby dowiedzieć się, jak wybranie ustawienia dla zintegrowanego środowiska programistycznego (IDE), zobacz [ustawienia środowiska](../ide/environment-settings.md). Podczas importowania ustawień należy zaimportować **JavaScript** ustawienia.
 
 ## <a name="add-a-new-project-file"></a>Dodaj nowy plik projektu
 
@@ -96,7 +93,7 @@ Kliknij prawym przyciskiem myszy `render` i wybierz polecenie **Peek Definition*
 
    ![Okna definicji wglądu](../javascript/media/write-code-peek-definition.png)
 
-1. Zamknij okno definicji podejrzeć, wybierając pole małych znakiem "x" w prawym górnym rogu okna podręcznego.
+Zamknij okno definicji podejrzeć, wybierając pole małych znakiem "x" w prawym górnym rogu okna podręcznego.
 
 ## <a name="use-code-snippets"></a>Używanie fragmentów kodu
 
