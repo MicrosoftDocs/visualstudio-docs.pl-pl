@@ -9,12 +9,12 @@ description: Dowiedz się, jak pobrać i zainstalować program Visual Studio IDE
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2e721c8c944bec0741f55c05a510ef02628c6b97
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739802"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380068"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Za pośrednictwem korzyści z programu Visual Studio 2017
 
@@ -29,7 +29,7 @@ Aby pobrać IDE:
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Znajdź Kafelek środowiska IDE programu Visual Studio w sekcji narzędzia, a następnie kliknij **Pobierz** link w dolnej części kafelka korzyści.  Można również pobrać go z [pliki do pobrania](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) strony.
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise kafelka](_img/vs-ide-experience/vs-ide-tile.png)
+   > ![Visual Studio Enterprise tile](_img/vs-ide-experience/vs-ide-tile.png)
 
 3. Możesz kliknąć nastąpi przekierowanie do strony pobierania wyników dla programu Visual Studio Enterprise, której będziesz mieć możliwość pobrania IDE i uzyskać klucz produktu, aby ją uaktywnić. Klucz produktu może również oświadczenia, klikając niebieski **Pobierz klucz** łączenie lub Zgłoś klucz później [klucze produktów](https://my.visualstudio.com/productkeys) strony.
 4. Na karcie Szczegóły na stronie pobierania wyników:
@@ -49,7 +49,7 @@ Aby pobrać IDE:
 
 11. Po zakończeniu instalacji będziesz mieć opcję, aby zmodyfikować instalację lub uruchom program Visual Studio.  Kliknij przycisk **Uruchom** na rozpoczęcie pracy.
     > [!div class="mx-imgBorder"]
-    > ![Uruchom program Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Launch Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
 
 12. Zaloguj się na koncie skojarzonym z subskrypcją programu Visual Studio.
 
@@ -65,11 +65,11 @@ Aby pobrać IDE:
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
 | Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Tak         |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Visual Studio Dev Essentials | Brak  | Visual Studio Community |Tak |
 
-<sup>1</sup>*obejmuje:    Nie do odsprzedaży Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).  Nie obejmuje: MCT Software & Services.*
+<sup>1</sup>*obejmuje:  Nie do odsprzedaży Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  Nie obejmuje: MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.

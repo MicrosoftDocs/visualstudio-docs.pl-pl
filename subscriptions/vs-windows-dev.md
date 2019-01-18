@@ -9,12 +9,12 @@ description: Więcej informacji na temat konta dewelopera Windows, które są do
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df49564a920ea6f674c6d92ec2203962407a751e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 584048c088acb7ee3a390d941dbd6c59ce2ac3a0
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739893"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380260"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -53,14 +53,14 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono       |  Tak|
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                            |  Nie dotyczy|
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono       |  Tak|
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                            |  Nie dotyczy|
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              |  Niedostępne                                            |  Nie dotyczy|
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne                                            |  Nie dotyczy|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>*obejmuje:    Nie do odsprzedaży, ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów. Nie obejmuje:  Wyobraź sobie sieci Microsoft Partner Network (MPN), Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services.*
+<sup>1</sup>*obejmuje:  Nie do odsprzedaży, ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów. Nie obejmuje:  Wyobraź sobie sieci Microsoft Partner Network (MPN), najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), MCT Software & Services.*
 
 
 > [!NOTE]

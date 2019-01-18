@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować subskrypcję Parasoft wirtualizacji/SO
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 654a3f357f6bc8d6caf3dbaa551c7856a2154fd2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739672"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379943"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizacji/SOAtest Professional Desktop w subskrypcji programu Visual Studio
 
@@ -76,14 +76,14 @@ Przetestuj wcześniej i częściej.  Symuluj i Testuj zachowanie niedostępny el
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak       |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                           |Nie dotyczy         |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                           |Nie dotyczy         |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak       |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                           |Nie dotyczy         |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                           |Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                           |Nie dotyczy         |
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne|Nie dotyczy |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>*obejmuje:   Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje:  Nie do odsprzedaży Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
+<sup>1</sup>*obejmuje: Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje:  Nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  MCT Software & Services.*
 
 
 > [!NOTE]

@@ -16,18 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e387485d2a11867944e980a9bad26261fd4a707c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdf75278ea1b048ca7663876f626ec5b3358a9d9
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848551"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380331"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s nowego w programie Visual Studio Preview 2019 r
 
 **Zaktualizowano do programu [16.0 1 wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 Visual Studio 2019 Preview zawiera wiele ulepszeń ogólne oraz nowe funkcje, które optymalizują wydajność pracy deweloperskiej i współpracę zespołową. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, będziesz mieć możliwość wykorzystać jej funkcje dla wszystkich aspektów cyklu życia opracowywania&mdash;z uproszczonego tworzenia i kod kondycji zarządzania projektami, zespołu: i współpracy przepływy pracy typu open source.
+
+>[!div class="button"]
+>[Pobierz wersję zapoznawczą](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?ch=pre&sku=Enterprise&rel=16)
 
 Poniżej przedstawiono podsumowanie wysokiego poziomu oferowane przez program Visual Studio:
 
@@ -78,7 +81,7 @@ Możesz również sformatować, jak wartość jest wyświetlana w oknach wyraże
 
    ![Obejrzyj okna i format wartości nowością w Visual Studio 2019 r.](../ide/media/search-watch-window.png)
 
-### <a name="visual-studio-live-share"></a>Udostępnianie na żywo w programie Visual Studio
+### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio funkcja udostępniania na żywo](https://visualstudio.microsoft.com/services/live-share/) to usługa dla deweloperów, która umożliwia udostępnianie kodu i kontekst współpracownikom i uzyskać natychmiastowy współpracy dwukierunkowej bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.
 
@@ -110,7 +113,7 @@ Wraz z wydaniem programu Visual Studio 2019 r w wersji zapoznawczej 1 podejmujem
 
    ![Świadomość renderowania (PMA) w Visual Studio 2019 monitora](../ide/media/per-monitor-aware-dpi-scaling.png)
 
-### <a name="visual-studio-intellicode"></a>Program Visual Studio IntelliCode
+### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) to rozszerzenie, które rozszerza Twoje wysiłki na rzecz rozwoju oprogramowania przy użyciu sztucznego inteligencji (AI). Rozszerzenie IntelliCode pociągów 2000 projektów typu open source w serwisie GitHub&mdash;każdy z ponad 100 gwiazdek&mdash;do generowania zalecenia.
 
@@ -138,5 +141,5 @@ Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ tra
 ## <a name="see-also"></a>Zobacz także
 
 * [Informacje o wersji programu Visual Studio 2019 r](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
-* [Microsoft Connect(); conference 2018 r.](https://www.microsoft.com/connectevent)
+* [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
 * [Co nowego w programie Visual Studio 2017](whats-new-in-visual-studio.md)

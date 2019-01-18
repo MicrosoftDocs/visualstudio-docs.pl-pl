@@ -9,12 +9,12 @@ description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, do�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315504"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380187"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
@@ -83,7 +83,7 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy|
 | Program Visual Studio Enterprise (miesięcznych w chmurze) | Azure                                       | Niedostępne                                  |Nie dotyczy|
 
-<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego).  Nie obejmuje:  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  Nie obejmuje:  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.

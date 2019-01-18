@@ -1,7 +1,7 @@
 ---
 title: Przykładowe parametry wiersza polecenia do zainstalowania
 description: Dostosuj te przykłady do tworzenia własnych instalacji z wiersza polecenia programu Visual Studio.
-ms.date: 01/15/2019
+ms.date: 01/16/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59dfe6ebb9518bbdea6edf11108f1cb27cd5d6a3
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7ba829976e699f9087f9833f5578e80037f999c8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345529"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380158"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017
 
@@ -29,6 +29,8 @@ W każdym przykładzie `vs_enterprise.exe`, `vs_professional.exe` i `vs_communit
 >
 > [!NOTE]
 > Możesz użyć `^` znak na końcu wiersza polecenia do łączenia wielu wierszy w pojedynczym poleceniu. Alternatywnie można po prostu umieścić te wiersze razem na jeden wiersz. W programie PowerShell odpowiednik to początkowych (`` ` ``) znaków.
+
+Aby uzyskać listę obciążeń i składników, które można zainstalować przy użyciu wiersza polecenia, zobacz [identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md) strony.
 
 ## <a name="using---installpath"></a>Przy użyciu opcji--installPath
 
@@ -171,3 +173,4 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Tworzenie instalacji offline programu Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

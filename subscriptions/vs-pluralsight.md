@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcji szkolenia Pluralsight, któ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b30096d3c0217c169d107dc882103f0468e57278
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 8e077db1aa369198f015f68e0e61efbc30697659
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740341"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380307"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight, w ramach subskrypcji programu Visual Studio
 
@@ -71,15 +71,15 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
 
 |                          Poziom subskrypcji                          |     Kanały      |    Korzyść    |   Podlega odnowieniu?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (standardowa)           | VL, Azure, Retail |   6 miesięcy    | Nie<sup>2</sup> |
-|         Visual Studio Professional (standardowa)          | VL, Azure, Retail |   3 miesiące    | Nie<sup>2</sup> |
-|              Visual Studio Test Professional (standardowa)              |    Licencjonowania zbiorowego, handlu detalicznego     |   3 miesiące    | Nie<sup>2</sup> |
+|          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 miesięcy    | Nie<sup>2</sup> |
+|         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 miesiące    | Nie<sup>2</sup> |
+|              Visual Studio Test Professional (Standard)              |    Licencjonowania zbiorowego, handlu detalicznego     |   3 miesiące    | Nie<sup>2</sup> |
 |                      Platformy MSDN (standardowa)                       |    Licencjonowania zbiorowego, handlu detalicznego     |   3 miesiące    | Nie<sup>2</sup> |
 |                     Visual Studio Dev Essentials                     |        Nie dotyczy         |   1 miesiąc    |       Nie       |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) |       Azure       | Niedostępne |       Nie dotyczy       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       Nie dotyczy       |
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 
 <sup>2</sup>*korzyści z firmą Pluralsight jest tylko jednorazowego użytku powiązane osoby.  Gdy subskrybent zużywa korzyści, nie zresetować.*
 

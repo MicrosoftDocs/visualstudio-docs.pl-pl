@@ -9,12 +9,12 @@ description: Dowiedz się więcej o pakiecie ModernRequirements zawartego w wybr
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fd7aed3acd11b0d9e5ce05784619c34a97e726a8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740263"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380233"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Korzyść MODERNRequirements4TFS w subskrypcji programu Visual Studio
 
@@ -88,14 +88,14 @@ Wybrane subskrypcje programu Visual Studio obejmują 6-miesięczną subskrypcję
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                          |Nie dotyczy     |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                          |Nie dotyczy     |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                          |Nie dotyczy     |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                          |Nie dotyczy     |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                          |Nie dotyczy     |
 | Visual Studio Dev Essentials | Nie dotyczy  |Niedostępne                                                          |Nie dotyczy     |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (przedsiębiorstwo), ekwiwalentu pełnego wymiaru czasu.  Nie obejmuje:  Sieci Microsoft Partner Network (Professional), MCT Software & Services dewelopera, BizSpark, Imagine, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (przedsiębiorstwo), ekwiwalentu pełnego wymiaru czasu.  Nie obejmuje:  Sieci Microsoft Partner Network (Professional), MCT Software & Services dewelopera, BizSpark, Imagine, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.

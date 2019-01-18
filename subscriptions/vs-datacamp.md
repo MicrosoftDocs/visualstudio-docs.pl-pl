@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802151"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380399"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -28,7 +28,7 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
 
 2. Znajdź Kafelek korzyści DataCamp w kategorii "Programowanie Professional", a następnie kliknij **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![DataCamp Benefit Tile](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. Na stronie DataCamp można utworzyć nowe konto.  Można wprowadzić adres e-mail i hasło lub zaloguj się przy użyciu istniejącego konta z usługi Facebook, LinkedIn i Google.  Gdy podano informacje logowania, kliknij przycisk **wprowadzenie**.
    > [!div class="mx-imgBorder"]
@@ -48,7 +48,7 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
 
 5. Po wybraniu ścieżki Możesz ulepszyć swoje ścieżki szkoleniowej, wybierając pozycję celu.  Na przykład jeśli wybrana ścieżka "Tworzenie usługi danych do analizy zestawu umiejętności", zostaną wyświetlone następujące opcje. Wybierz jedną z opcji, lub kliknij przycisk **nie mam pewności.  Pokaż wszystkie ścieżki kariery** utworzyć szersze ścieżki.
    > [!div class="mx-imgBorder"]
-   > ![Zestawu umiejętności do nauki o danych DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![DataCamp Data Science Skillset](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. Na podstawie ścieżki i opcje, które zostały wybrane, zobaczysz wybór ścieżki kariery.  Kliknij pozycję **Zarejestruj** przycisk ścieżki wybór.
@@ -69,17 +69,17 @@ Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Dev Essentials | Brak  | 2 miesiące | Nie. Dostępne tylko dla nowych subskrybentów |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 
 
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
 > [!NOTE]

@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Office 365 dla deweloperów, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47444b8c234f0f5bb3b67a04b63b233d2c4e73e1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739724"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379771"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -30,7 +30,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio Enterprise uzyskują
 
 4. Kliknij pozycję **Aktywuj** link w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści dla deweloperów usługi Office 365](_img/vs-office-dev/vs-office-dev-tile.png)
+   > ![Office 365 Dev Benefit Tile](_img/vs-office-dev/vs-office-dev-tile.png)
 
 5. Następnym krokiem jest, aby utworzyć konto.  Pojawi się swoją nazwę i adres e-mail logowania.
 6. Wybierz swój kraj.
@@ -68,14 +68,14 @@ Aby dowiedzieć się więcej na temat subskrypcji dewelopera Office 365, zapozna
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono      |  Tak          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono      |  Tak          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | Nie dotyczy         |
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.  Nie obejmuje:  Microsoft Partner Network (MPN), Wyobraź sobie, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.  Nie obejmuje:  Microsoft Partner Network (MPN), Wyobraź sobie, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).*
 
 
 > [!NOTE]

@@ -17,18 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac2597b5b87f75402dcc6553096c0bfcf3d30cf1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881026"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380095"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 
 **Zaktualizowano do programu [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Chcesz uaktualnienie z poprzedniej wersji programu Visual Studio? Oto, co program Visual Studio 2017 można umożliwiają: Niezrównana wydajność dla każdego programisty, każdej aplikacji i dowolnej platformy. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemów Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, elastyczność i Współpracuj efektywnie dzięki tej wersji!
+
+>[!div class="button"]
+>[Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Poniżej przedstawiono podsumowanie wysokiego poziomu zmiany wprowadzone od poprzedniej wersji programu Visual Studio 2015:
 
@@ -50,11 +53,9 @@ Oto bardziej szczegółowe informacje o niektórych najbardziej istotnych ulepsz
 
 ### <a name="a-new-setup-experience"></a>Nowe środowisko instalacji
 
-[Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) lub [wymagania systemowe programu Visual Studio Sprawdź](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
+Program Visual Studio sprawia, że łatwiej i szybciej, aby zainstalować tylko funkcje, których potrzebujesz, gdy ich potrzebujesz. Ponadto on także czyste odinstalowanie, zbyt.
 
- Program Visual Studio sprawia, że łatwiej i szybciej, aby zainstalować tylko funkcje, których potrzebujesz, gdy ich potrzebujesz. Ponadto on także czyste odinstalowanie, zbyt.
-
- Najważniejsze zmiany, należy pamiętać podczas instalowania programu Visual Studio jest jego nowe środowisko instalacji. Na **obciążeń** kartę, zostaną wyświetlone opcje instalacji, które są grupowane, aby przedstawić typowe struktury, języki i platformy. Obejmuje on wszystko — od tworzenia aplikacji klasycznych .NET do tworzenia aplikacji języka C++ w Windows, Linux i z systemem iOS.
+Najważniejsze zmiany, należy pamiętać podczas instalowania programu Visual Studio jest jego nowe środowisko instalacji. Na **obciążeń** kartę, zostaną wyświetlone opcje instalacji, które są grupowane, aby przedstawić typowe struktury, języki i platformy. Obejmuje on wszystko — od tworzenia aplikacji klasycznych .NET do tworzenia aplikacji języka C++ w Windows, Linux i z systemem iOS.
 
 Wybierz obciążeń zapotrzebowania, a jeśli musisz je zmienić.
 
@@ -143,7 +144,7 @@ Aby uzyskać więcej informacji, zobacz [zaznaczenie wielu karetki](finding-and-
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Utrzymuj spójność profile powiązanie klawiszy
 
-**Nowość w 15.8**: Teraz możesz zachować swoje powiązania klawiszy spójne w narzędziach przy użyciu dwóch nowych profilów klawiatury: Program Visual Studio Code i ReSharper (Visual Studio). Można znaleźć tych systemów, w ramach **narzędzia** > **opcje** > **ogólne** > **klawiatury**i górnego menu rozwijanego.
+**Nowość w 15.8**: Teraz możesz zachować swoje powiązania klawiszy spójne w narzędziach przy użyciu dwóch nowych profilów klawiatury: Visual Studio Code and ReSharper (Visual Studio). Można znaleźć tych systemów, w ramach **narzędzia** > **opcje** > **ogólne** > **klawiatury**i górnego menu rozwijanego.
 
   ![Nowe profile powiązanie klawiszy dla programu Visual Studio Code i ReSharper](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -204,7 +205,7 @@ Aby uzyskać szczegółowe informacje, zobacz [co nowego w języku Visual C++ w 
 
 Teraz możesz łatwo przejść od razu podczas debugowania, bez konieczności ustawiania punkt przerwania, aby zatrzymać w wierszu, który ma. Po zatrzymaniu debugera po prostu kliknij ikonę, która pojawia się obok wiersza kodu. Kod będzie Uruchom i Zatrzymaj w danym wierszu przy następnym zostanie osiągnięty w ścieżce kodu.
 
-![Visual Studio 2017, debugowanie — Uruchom do kliknięcia](../ide/media/vs2017ide-RunToClick.png)
+![Visual Studio 2017 debug - Run To Click](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>Nowy Pomocnik wyjątków
 
@@ -315,7 +316,7 @@ Aby uzyskać więcej informacji, zobacz [Introducing App Center: Tworzenia, test
 
 ## <a name="cross-platform-development"></a>Programowanie dla wielu platform
 
-### <a name="redgate-data-tools"></a>Narzędzia do obsługi danych Redgate
+### <a name="redgate-data-tools"></a>Redgate Data Tools
 
 Aby rozszerzyć funkcje operacji programistycznych do tworzenia bazy danych programu SQL Server, narzędzie Redgate Data Tools są teraz dostępne w programie Visual Studio.
 

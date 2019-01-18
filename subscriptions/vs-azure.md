@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść platformy Azure, zawarte w T
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739815"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380126"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Dzięki platformie Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -33,7 +33,7 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 |                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Tak                             |
 |                        Platformy MSDN                        |     miesięczne środki w wysokości 100 USD     |                             Tak                             |
 |                 Visual Studio Dev Essentials                 | W przypadku usług bezpłatnych i 200 USD środków | Bezpłatnych usług są nieograniczone.  jednorazowe jest tylko 200 USD środków. |
-|               Visual Studio Enterprise — NFR\*               |     150 USD środków miesięcznie     |                             Tak                             |
+|               Visual Studio Enterprise - NFR\*               |     150 USD środków miesięcznie     |                             Tak                             |
 |                Visual Studio Enterprise - FTE                |     150 USD środków miesięcznie     |                             Tak                             |
 |     Visual Studio Enterprise — sieci Microsoft Partner Network     |     150 USD środków miesięcznie     |                             Tak                             |
 |    Visual Studio Professional — sieci Microsoft Partner Network    |        Niedostępne        |                                                             |
@@ -43,7 +43,7 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 |      Visual Studio Enterprise — MCT Software & Services      |     miesięczne środki w wysokości 100 USD     |                             Tak                             |
 | Visual Studio Enterprise — MCT Software & Services dla deweloperów |     150 USD środków miesięcznie     |                             Tak                             |
 
-* Zawiera nie for Resale (NFR), Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP)
+* Zawiera nie for Resale (NFR), najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP)
 
 
 > [!NOTE]

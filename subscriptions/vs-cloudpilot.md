@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści CloudPilot dostępne w wybran
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740039"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380113"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcji programu Visual Studio
 
@@ -49,7 +49,7 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
  0. Następnie zostanie wyświetlona strona produktu umożliwiający zapoznanie się z CloudPilot.  Kliknij przycisk **przejdź do CloudPilot** w prawym górnym rogu, aby przejść do portalu CloudPilot.  
 
     > [!div class="mx-imgBorder"]
-    > ![Strona produktu CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
+    > ![CloudPilot Product Page](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
 0.  To wszystko!  Zostaną wyświetlone w portalu CloudPilot i wszystko będzie gotowe rozpocząć korzystanie z subskrypcji CloudPilot, aby przenieść swoje aplikacje w systemie Microsoft Azure. 
 
@@ -63,17 +63,17 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 2 licencji 90 dni bez ograniczeń skanowania       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 1 licencja 30 dni, jedno skanowanie                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak           |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 2 licencji 90 dni bez ograniczeń skanowania       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 licencja 30 dni, jedno skanowanie                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak           |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Visual Studio Dev Essentials | Brak  | Niedostępne | Brak |
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 
 
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
 > [!NOTE]

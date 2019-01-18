@@ -9,14 +9,14 @@ description: Dowiedz się, jak zastosować korzyści użycia Chat doradztwa tech
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2c70ddda4e65eb67c89539b16b0322c890f4060f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739416"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380044"
 ---
-# <a name="azure-advisory-chat"></a>Czat z doradcą Azure
+# <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
 Uzyskaj pomoc w czasie rzeczywistym przy rozpoczynaniu pracy z platformą Azure! Obejmuje porady z zakresu usług PaaS platformy Azure.  Korzyści Chat doradztwa technicznego dotyczącego platformy Azure jest dostępna w Visual Studio Enterprise standardowe i roczne subskrypcje chmury.
 
@@ -26,11 +26,11 @@ Azure doradztwa technicznego dotyczącego Rozmowa jest prosty w użyciu.
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Znajdź Kafelek Chat doradztwa technicznego dotyczącego usługi Azure w sekcji pomocy technicznej, a następnie kliknij przycisk **Porozmawiaj teraz**.
     > [!div class="mx-imgBorder"]
-    > ![Czat z doradcą Azure kafelka](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > ![Azure Advisory Chat Tile](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Zobaczysz powiadomienie, że usługa jest obecnie oferowana w języku angielskim tylko z wyjątkiem pomoc techniczna dotycząca problemów z konta, rozliczeń i subskrypcji.  Kliknij przycisk **Kontynuuj**.
     > [!div class="mx-imgBorder"]
-    > ![Czat z doradcą Azure zrzeczenie odpowiedzialności](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > ![Azure Advisory Chat Disclaimer](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. To wszystko jest do niego.  Zostanie otwarte okno rozmowy i zostanie wyświetlony stan z informacją o tym, gdzie jesteś w kolejce.  Swojej rozmowy będą odbierane przez następny dostępny eksperta.
     > [!div class="mx-imgBorder"]
@@ -40,13 +40,13 @@ Azure doradztwa technicznego dotyczącego Rozmowa jest prosty w użyciu.
 
 |                                                      Poziom subskrypcji                                                      |     Kanały      |    Korzyść    | Podlega odnowieniu? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (standardowa)                                       | VL, Azure, Retail |   Jeden rok    |    Tak     |
+|                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Jeden rok    |    Tak     |
 | Visual Studio Professional (standardowy, miesięczną w chmurze) programu Visual Studio Enterprise (miesięczne chmury, NFR<sup>1</sup>) |        Wszystkie        | Niedostępne |     Nie     |
-|                                          Visual Studio Test Professional (standardowa)                                          |        Wszystkie        | Niedostępne |     Nie     |
+|                                          Visual Studio Test Professional (Standard)                                          |        Wszystkie        | Niedostępne |     Nie     |
 |                                                  Platformy MSDN (standardowa)                                                   |        Wszystkie        | Niedostępne |     Nie     |
 |                                                 Visual Studio Dev Essentials                                                 |        Brak        | Niedostępne |     Nie     |
 
-<sup>1</sup>*obejmuje:    Nie for Resale (NFR), Microsoft wycenia Professional (MVP), dyrektor Region (RD) programu Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
+<sup>1</sup>*obejmuje:  Nie do odsprzedaży, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego) Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.

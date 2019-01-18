@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści usługi Office 365, objęte n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968394"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380145"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Usługi Office 365 Pro Plus w subskrypcji programu Visual Studio
 
@@ -55,15 +55,15 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | VL, Azure, Retail| Dostępne       |  Tak          |
-| Visual Studio Enterprise (standardowa)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                            |  Brak          |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Tak          |
+| Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |  Brak          |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 | Visual Studio Dev Essentials | Brak  | Niedostępne |Brak |
 
-<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & usług dla deweloperów BizSpark, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network.*
+<sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & usług dla deweloperów BizSpark, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network.*
 
 
 > [!NOTE]

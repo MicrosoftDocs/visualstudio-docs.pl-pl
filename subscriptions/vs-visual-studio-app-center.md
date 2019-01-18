@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści programu Visual Studio App Ce
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0a1a50888666f1597da008cec5a13c86a23a805e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738641"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380108"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcji programu Visual Studio
 
@@ -46,12 +46,12 @@ Wprowadzenie do programu Visual Studio App Center jest proste.
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, NFR<sup>1</sup> | Dołączono       |  Tak          |
 | Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dołączono                                                            |Tak |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
 | Visual Studio Dev Essentials | Nie dotyczy  | Dołączono                                                            |Tak |
 
 
-<sup>1</sup>*obejmuje:    Nie do odsprzedaży, Wyobraź sobie ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP), sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje:  Nie do odsprzedaży, Wyobraź sobie ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP), sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego).*
 
 
 > [!NOTE]

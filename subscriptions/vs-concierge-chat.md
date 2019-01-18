@@ -9,14 +9,14 @@ description: Więcej informacji na temat korzyści Concierge Chat uwzględniony 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740237"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380003"
 ---
-# <a name="concierge-chat"></a>Konsjerż — Rozmowa
+# <a name="concierge-chat"></a>Concierge Chat
 
 Usługi Concierge Chat udostępnia pomocy w znajdowaniu informacji o produkcie i dokumentacji technicznej także jako pomoc przy użyciu korzyści z subskrypcji programu Visual Studio.
 
@@ -28,7 +28,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
 
 2. Znajdź Kafelek Concierge Chat w sekcji pomocy technicznej na stronie korzyści i kliknąć **Porozmawiaj teraz**.
     > [!div class="mx-imgBorder"]
-    > ![Konsjerż — Rozmowa kafelka](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Concierge Chat Tile](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
 3. Kliknij przycisk **Kontynuuj**.
 
@@ -36,20 +36,20 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
 
 5. Jeśli agent jest dostępny, rozpocznie się czatu.
     > [!div class="mx-imgBorder"]
-    > ![Konsjerż — Rozmowa sesji](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Concierge Chat Session](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Uprawnienie
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Tak          |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Tak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                              |  Tak          |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Brak |
 
-<sup>1</sup>*obejmuje:    Nie do odsprzedaży, Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Nie obejmuje:  Ekwiwalentu pełnego wymiaru czasu, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>*obejmuje:  Nie do odsprzedaży, Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Nie obejmuje:  Ekwiwalentu pełnego wymiaru czasu, Imagine najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN).*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
