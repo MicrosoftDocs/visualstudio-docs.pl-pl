@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869664"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403970"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
@@ -77,7 +77,8 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--help, --?, -h, -?` | Wyświetl w trybie offline wersję tej strony. |
 | `--config <path>` | **Opcjonalnie** i **nowego w programie 15.9**: Podczas instalacji lub zmodyfikować działanie, ta wartość określa obciążeń i składników, aby dodać opartego na pliku konfiguracji instalacji wcześniej zapisany. Ta operacja jest dodatku i nie spowoduje usunięcia dowolnych obciążeń lub składników, jeśli nie istnieją w pliku. Ponadto elementy, których nie można zastosować do produktu nie zostanie dodany. Podczas operacji eksportowania Określa lokalizację do zapisania pliku konfiguracji instalacji. |
 
-> Uwaga: Podczas określania wielu obciążeń i składników, należy powtórzyć `--add` lub `--remove` przełącznik wiersza polecenia dla każdego elementu.
+> [!IMPORTANT]
+> Podczas określania wielu obciążeń i składników, należy powtórzyć `--add` lub `--remove` przełącznik wiersza polecenia dla każdego elementu.
 
 | **Opcje układu** | **Opis** |
 | ----------------------- | --------------- |

@@ -16,21 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf75278ea1b048ca7663876f626ec5b3358a9d9
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: ef844e9e72c5fb0a4bcd40bfe5edad1c3deed894
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380331"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403918"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s nowego w programie Visual Studio Preview 2019 r
 
 **Zaktualizowano do programu [16.0 1 wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
-Visual Studio 2019 Preview zawiera wiele ulepszeń ogólne oraz nowe funkcje, które optymalizują wydajność pracy deweloperskiej i współpracę zespołową. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, będziesz mieć możliwość wykorzystać jej funkcje dla wszystkich aspektów cyklu życia opracowywania&mdash;z uproszczonego tworzenia i kod kondycji zarządzania projektami, zespołu: i współpracy przepływy pracy typu open source.
-
 >[!div class="button"]
 >[Pobierz wersję zapoznawczą](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?ch=pre&sku=Enterprise&rel=16)
+
+Visual Studio 2019 Preview zawiera wiele ulepszeń ogólne oraz nowe funkcje, które optymalizują wydajność pracy deweloperskiej i współpracę zespołową. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, będziesz mieć możliwość wykorzystać jej funkcje dla wszystkich aspektów cyklu życia opracowywania&mdash;z uproszczonego tworzenia i kod kondycji zarządzania projektami, zespołu: i współpracy przepływy pracy typu open source.<br/><br/>
+
+>[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
 Poniżej przedstawiono podsumowanie wysokiego poziomu oferowane przez program Visual Studio:
 
