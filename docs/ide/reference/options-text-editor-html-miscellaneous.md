@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).Miscellaneous
+- VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c6082a41e9e65398505731b616001e73b60cbbd
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 01fd6fa7e2fc2a3db1b05523ddcc9d4a5dc5629b
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350167"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417840"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), różne
 

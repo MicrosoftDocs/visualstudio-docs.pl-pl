@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).Validation
+- VS.ToolsOptionsPages.Text_Editor.HTML.Validation
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 900d82b256195e9ea7e20b1571d8f575c3598f6a
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: fad568f43e1064fe264c528d68a39b072bf905db
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350168"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417827"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), sprawdzanie poprawności
 

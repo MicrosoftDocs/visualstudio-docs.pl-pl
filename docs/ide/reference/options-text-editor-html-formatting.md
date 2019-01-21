@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).Formatting
+- VS.ToolsOptionsPages.Text_Editor.HTML.Format
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a8ad0e4b0c4f8b7c955bd11a69ef8a9e9d81d7
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 109c40bc555985efe4a305a749890dac0e2f7f22
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350169"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417788"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), formatowanie
 

@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960842"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417931"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Tworzenie wizualnej mapy stosu wywołań podczas debugowania 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Tworzenie wizualnej mapy stosu wywołań podczas debugowania (C#, Visual Basic, C++, JavaScript)
 
 Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. Możesz robić notatki na mapie, aby śledzić, co kod robi, dzięki czemu możesz skupić się na znajdowaniu usterek.
 
@@ -53,7 +53,7 @@ Poniżej przedstawiono krótkie omówienie mapy kodu:
 
 ##  <a name="MapStack"></a> Mapuj stos wywołań
 
-1. W programie Visual Studio Enterprise C#, Visual Basic, C++, JavaScript lub X ++ projektu, Rozpocznij debugowanie wybierając **debugowania** > **Rozpocznij debugowanie** lub naciskając **F5**.
+1. W programie Visual Studio Enterprise C#, Visual Basic, C++ lub JavaScript projektu, Rozpocznij debugowanie wybierając **debugowania** > **Rozpocznij debugowanie** lub naciskając **F5**.
    
 1. Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **debugowania** > **mapy kodu**, lub naciśnij **Ctrl**+**Shift** +**`**.
 

@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888599"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417866"
 ---
 # <a name="vsinstr-warnings"></a>Ostrzeżenia VSInstr
 W poniższej tabeli wymieniono ostrzeżenia *VSInstr.exe* narzędzia. NOWARN — opcja wraz z numerów ostrzeżeń, które umożliwia Pomijaj wyświetlanie ostrzeżenia.  
   
 |Numer ostrzeżenia|Opis|  
 |--------------------|-----------------|  
+|**VSP1026**|Pokrycie nie jest obsługiwane w bibliotekach, które nie odwołują się do elementu MSCorLib. Jest to często zdarza się w przypadku bibliotek przenośnych.|  
 |**VSP2000**|Błąd wewnętrzny. Nie można pobrać nazwy pliku modułu dla tego pliku wykonywalnego.|  
 |**VSP2001**|\<Nazwa zestawu > jest zestaw o silnej nazwie. Musi zostać ponownie podpisany przed mogą być wykonywane.<br /><br /> To ostrzeżenie występuje, gdy został zinstrumentowany na zestawu podpisanego za pomocą. Możesz użyć *sn.exe* narzędzie ponownie podpisać plik binarny lub tymczasowo wyłączyć wymaganie silnej nazwy. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Nie można znaleźć funkcji \<funcname > w pliku \<nazwa pliku ><br /><br /> To ostrzeżenie występuje, jeśli funkcja nie może znajdować się w określonym pliku.|  
