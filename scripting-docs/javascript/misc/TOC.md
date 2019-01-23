@@ -1,4 +1,3 @@
----
 # [Oczekiwano znaku „{”](expected-left-curly-brace.md)
 # [Oczekiwano identyfikatora, ciągu lub liczby](expected-identifier-string-or-number.md)
 # [Oczekiwana funkcja](function-expected.md)

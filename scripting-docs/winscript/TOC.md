@@ -1,4 +1,3 @@
----
 # [Interfejsy skryptów systemu Windows](windows-script-interfaces.md)
 # [Hosty skryptów systemu Windows](windows-script-hosts.md)
 # [Aparaty skryptów systemu Windows](windows-script-engines.md)

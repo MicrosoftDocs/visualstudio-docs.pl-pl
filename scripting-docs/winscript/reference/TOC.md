@@ -1,4 +1,3 @@
----
 # [Dokumentacja interfejsów skryptów systemu Windows](windows-script-interfaces-reference.md)
 ## [Interfejsy aktywnego skryptu](active-script-interfaces.md)
 ### [Kody błędów, stałe i wyliczenia aktywnego skryptu](active-script-constants-enumerations-and-error-codes.md)

@@ -1,4 +1,3 @@
----
 # [Visual Studio dla komputerów Mac](index.md)
 # [Samouczek środowiska IDE](/visualstudio/mac/ide-tour/)
 
