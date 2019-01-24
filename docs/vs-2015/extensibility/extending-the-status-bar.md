@@ -1,27 +1,22 @@
 ---
 title: Rozszerzanie paska stanu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea1ed437a58069039be144bbc5153f7596a6ac95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1ac7289489e1b7f3f2a047a10b6ace42fc15d94
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752874"
 ---
 # <a name="extending-the-status-bar"></a>Rozszerzanie paska stanu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -149,4 +144,3 @@ Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetl
 4.  Otwórz **narzędzia** w doświadczalnym wystąpieniu programu Visual Studio, a następnie kliknij przycisk menu **wywołania TestStatusBarCommand**.  
   
      Gdy pojawi się okno komunikatu, również powinny animacji w pasku stanu na końcu z prawej strony. Podczas odrzucania okno komunikatu znika animacji.
-

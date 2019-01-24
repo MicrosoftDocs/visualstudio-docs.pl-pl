@@ -1,27 +1,22 @@
 ---
-title: 'Porady: Tworzenie podstawowego modelu 3-D | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie podstawowego modelu 3-D | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760774"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Porady: tworzenie podstawowego modelu 3-D
+# <a name="how-to-create-a-basic-3-d-model"></a>Instrukcje: Tworzenie podstawowego modelu 3-D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób używania edytora modelu do tworzenia podstawowego modelu 3-D.  
@@ -79,12 +74,9 @@ W tym dokumencie przedstawiono sposób używania edytora modelu do tworzenia pod
   
    ![Ukończone modelu DOM uproszczone](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
   
-   Kolejnym krokiem może stosowanie cieniowania do modelu 3-D. Aby uzyskać informacje, zobacz [porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+   Kolejnym krokiem może stosowanie cieniowania do modelu 3-D. Aby uzyskać informacje, zobacz [jak: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md)   
+ [Instrukcje: Model terenu 3D](../designers/how-to-model-3-d-terrain.md)   
  [Edytor modelu](../designers/model-editor.md)   
  [Projektant cieniowania](../designers/shader-designer.md)
-
-
-

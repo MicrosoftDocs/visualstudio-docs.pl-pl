@@ -1,14 +1,9 @@
 ---
 title: Używanie czcionek i kolorów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
 - IDE, controlling text color and fonts
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b49c5172a75e0abec8084892346a2fb0da877b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729599"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763102"
 ---
 # <a name="using-fonts-and-colors"></a>Używanie czcionek i kolorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51729599"
   
  Takie podejście wymaga pakietu VSPackage do zaimplementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu i interfejsy powiązane.  
   
- [Instrukcje: uzyskiwanie dostępu do wbudowanych czcionek i schematu kolorów](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Instrukcje: Dostęp do wbudowanych czcionek i schemat kolorów](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  W tym artykule omówiono, jak zdefiniować i zarejestrować kategorii przy użyciu wbudowanych czcionek i kolorów i zainicjować użycie dostarczane przez system czcionek i kolorów.  
   
 ## <a name="reference"></a>Tematy pomocy  
@@ -80,4 +75,3 @@ ms.locfileid: "51729599"
   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
  Opis sposobu użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usługi, aby tworzyć elementy interfejsu użytkownika, które pasują reszty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
-

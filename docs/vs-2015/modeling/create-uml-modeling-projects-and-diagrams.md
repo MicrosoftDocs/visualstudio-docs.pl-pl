@@ -1,12 +1,9 @@
 ---
 title: Tworzenie projektów modelowania UML i diagramów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764818"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Tworzenie projektów i diagramów modelowania UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ UML modeli pomagają zrozumieć, omówienia i projektowanie systemów oprogramow
   
 |**Problem**|**Powoduje, że**|**Rozdzielczość**|  
 |---------------|----------------|--------------------|  
-|Projekt modelowania nie można otworzyć ani ładowane do rozwiązania.<br /><br /> Zostanie wyświetlony następujący komunikat:<br /><br /> "Jeden lub więcej projektów w rozwiązaniu nie zostały poprawnie załadowane. Zobacz okno danych wyjściowych, aby uzyskać szczegółowe informacje."<br /><br /> W oknie danych wyjściowych wyświetla następujący komunikat:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: błąd: format nierozpoznanym identyfikatorem Guid."|Projekt modelowania zawiera odwołania do projektów, które mają taką samą nazwę i znajdują się w tym samym rozwiązaniu.<br /><br /> Na przykład warstwa jest połączona z projektami, które mają taką samą nazwę i znajdują się w tym samym rozwiązaniu.|Użyj edytora tekstów, aby otworzyć projekt modelowania plików, usunięcie odwołań, a następnie spróbuj ponownie otworzyć projekt modelowania.<br /><br /> Aby uniknąć tego problemu, nie należy dodawać odwołań do projektów, które mają taką samą nazwę. Upewnij się, że projekt ma unikatowe nazwy.|  
+|Projekt modelowania nie można otworzyć ani ładowane do rozwiązania.<br /><br /> Zostanie wyświetlony następujący komunikat:<br /><br /> "Jeden lub więcej projektów w rozwiązaniu nie zostały poprawnie załadowane. Zobacz okno danych wyjściowych, aby uzyskać szczegółowe informacje."<br /><br /> W oknie danych wyjściowych wyświetla następujący komunikat:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: błąd: Format nierozpoznanym identyfikatorem Guid."|Projekt modelowania zawiera odwołania do projektów, które mają taką samą nazwę i znajdują się w tym samym rozwiązaniu.<br /><br /> Na przykład warstwa jest połączona z projektami, które mają taką samą nazwę i znajdują się w tym samym rozwiązaniu.|Użyj edytora tekstów, aby otworzyć projekt modelowania plików, usunięcie odwołań, a następnie spróbuj ponownie otworzyć projekt modelowania.<br /><br /> Aby uniknąć tego problemu, nie należy dodawać odwołań do projektów, które mają taką samą nazwę. Upewnij się, że projekt ma unikatowe nazwy.|  
 |Elementy są nieobecne diagramy, które są dodawane, skopiowane lub przeciągnięte do innych projektów modelowania lub w innych lokalizacjach w rozwiązaniu.<br /><br /> - lub -<br /><br /> Przy próbie otwarcia diagramu, są wyświetlane następujące komunikaty:<br /><br /> — "Niektóre kształtów i łączników na diagramie Brak, ponieważ nie istnieją w tym projekcie ich definicje. Albo definicje zostały usunięte z modelu podczas diagram został zamknięty lub diagramu zostały skopiowane do innego projektu, który nie zawiera tych definicji."<br /><br /> - lub -<br /><br /> -"Ten dokument jest otwarty przez inny projekt."|Plik diagramu został dodany, przeciągnąć lub skopiowane z projektu modelowania do innego projektu modelowania lub w innej lokalizacji w rozwiązaniu.|Aby skopiować plik diagramu, Utwórz nowy diagram, a następnie skopiuj elementy z diagramu źródłowego do nowego diagramu.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)
-
-
-

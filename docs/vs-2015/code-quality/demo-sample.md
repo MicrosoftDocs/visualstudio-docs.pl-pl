@@ -1,14 +1,9 @@
 ---
 title: Pokaz przykładowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
 - code analysis, samples
@@ -16,18 +11,18 @@ ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 2ca480078bf269e8af662d94910a5d337c13bcd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b00e20f262596354a02c5c54978e4f663fa185a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753176"
 ---
 # <a name="demo-sample"></a>Przykład
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten poniższe procedury pokazują, jak utworzyć przykład dla [wskazówki: analizowanie kodu C/C++ pod względem wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Utwórz procedury:  
+Ten poniższe procedury pokazują, jak utworzyć przykład dla [instruktażu: Analizowanie kodu C/C++ pod względem wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Utwórz procedury:  
   
 - A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania o nazwie CppDemo.  
   
@@ -238,6 +233,3 @@ Ten poniższe procedury pokazują, jak utworzyć przykład dla [wskazówki: anal
     ```  
   
 9. Kliknij przycisk **pliku** menu, a następnie kliknij przycisk **Zapisz wszystko**.
-
-
-

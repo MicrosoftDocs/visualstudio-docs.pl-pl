@@ -1,14 +1,9 @@
 ---
 title: Typy plików projektu i rozwiązania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - File Properties.CopyToOutputDirectory
 - File Properties.CustomToolNamespace
@@ -34,13 +29,13 @@ ms.assetid: 0ba5007b-465d-4efa-b1e4-f0ee68527649
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283050"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773339"
 ---
 # <a name="project-and-solution-file-types"></a>Typy plików projektu i rozwiązania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "49283050"
 ## <a name="solution-files-sln-and-suo"></a>Pliki rozwiązania (.sln i .suo)  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używa dwóch typów plików (.sln i .suo) do przechowywania ustawień specyficznych dla rozwiązań. Te pliki, określane zbiorczo nazwą pliki rozwiązania, dostarczają do Solution Explorer informacje potrzebne do wyświetlania interfejsu graficznego dla zarządzania plikami. Pozwalają one koncentrować się na projektach i celach końcowych, a nie na samym środowisku każdym razem, gdy powrócisz do zadań rozwoju.  
   
-|Rozszerzenie|Nazwa|Opis|  
+|Wewnętrzny|Nazwa|Opis|  
 |---------------|----------|-----------------|  
 |.sln|[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Rozwiązanie|Organizuje projekty, elementy projektów i elementów rozwiązania w rozwiązaniu.|  
 |.suo|Opcje użytkownika rozwiązania|Przechowuje informacje o poziomie użytkownika dostosowania wprowadzone programu Visual Studio, takie jak punkty przerwania.|  
@@ -68,6 +63,3 @@ ms.locfileid: "49283050"
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

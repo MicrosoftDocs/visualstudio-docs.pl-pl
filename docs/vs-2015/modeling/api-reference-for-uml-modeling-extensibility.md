@@ -1,12 +1,9 @@
 ---
 title: Dokumentacja interfejsu API dla rozszerzalności modelowania UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - UML - extending
 - UML API
@@ -15,13 +12,13 @@ ms.assetid: 2b2ffe93-c358-4d28-a5e5-3d0474629b58
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dff485db59f418fe05cd586335b6f9ceae153428
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12eadb9844df5da78b11367708fed715f1c13672
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779275"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>Wykaz interfejsów API dla rozszerzalności modelowania UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +35,3 @@ Można napisać kod programu do odczytu i modyfikowania modeli utworzonych w pro
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Odwołania API do modelowania SDK dla Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-
-
-

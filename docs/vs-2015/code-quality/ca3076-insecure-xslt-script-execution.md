@@ -1,23 +1,19 @@
 ---
 title: 'CA3076: Niezabezpieczone wykonywanie skryptu XSLT | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 294666c21968a0197149834da18515862c50f027
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d82414b94caee2f1ccbb823e94d9168e5502df8c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753149"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Niezabezpieczone wykonywanie skryptu XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +26,10 @@ ms.locfileid: "53920425"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Jeśli zostanie wykonana [Extensible arkuszy stylów języka przekształcenia (XSLT)](https://support.microsoft.com/en-us/kb/313997) w aplikacjach .NET insecurely, procesor może [rozwiązać niezaufanych identyfikatora URI odwołania](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) , może ujawnić poufne informacje do osoby atakujące, co prowadzi do ataków typu "odmowa usługi" i między lokacjami.
+ Jeśli zostanie wykonana [Extensible arkuszy stylów języka przekształcenia (XSLT)](https://support.microsoft.com/kb/313997) w aplikacjach .NET insecurely, procesor może [rozwiązać niezaufanych identyfikatora URI odwołania](http://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) , może ujawnić poufne informacje do osoby atakujące, co prowadzi do ataków typu "odmowa usługi" i między lokacjami.
 
 ## <a name="rule-description"></a>Opis reguły
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) jest standardem World Wide Web Consortium (W3C) do przekształcania danych XML. XSLT zazwyczaj używany do zapisywania arkuszy stylów do przekształcania danych XML do innych formatów, takich jak HTML, stała długość tekstu, tekst rozdzielany przecinkami lub w innym formacie XML. Mimo że będzie to zabronione przez domyślne, można ją włączyć dla Twojego projektu.
+ [XSLT](http://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) jest standardem World Wide Web Consortium (W3C) do przekształcania danych XML. XSLT zazwyczaj używany do zapisywania arkuszy stylów do przekształcania danych XML do innych formatów, takich jak HTML, stała długość tekstu, tekst rozdzielany przecinkami lub w innym formacie XML. Mimo że będzie to zabronione przez domyślne, można ją włączyć dla Twojego projektu.
 
  Aby upewnić się, nie jest ujawniany obszar narażony na ataki, ta zasada wyzwala zawsze, gdy XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> odbiera wystąpień kombinacji niezabezpieczone <xref:System.Xml.Xsl.XsltSettings> i <xref:System.Xml.XmlResolver>, która pozwala na przetwarzanie złośliwy skrypt.
 

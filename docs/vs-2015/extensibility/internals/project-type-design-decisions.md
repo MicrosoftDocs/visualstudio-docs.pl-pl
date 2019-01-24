@@ -1,14 +1,9 @@
 ---
 title: Decyzje projektowe dotyczące typów projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
 - project types, commitment mechanics
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792092"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe dotyczące typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzj
   
  Elementy w projekcie mogą być plikami lub mogą być bardziej abstrakcyjne obiekty, takie jak obiekty połączenia bazy danych repozytorium lub danych w Internecie. Jeśli elementy znajdują się pliki projektu można na podstawie odwołania lub na podstawie katalogu projektu.  
   
- W projektach odwołania elementów może się pojawić w więcej niż jeden projekt. Jednak sam plik, który reprezentuje element znajduje się w tylko jednym katalogu. W projektach na poziomie katalogu wszystkich elementów projektu istnieje w strukturze katalogów. Aby uzyskać więcej informacji, zobacz [zarządzania NIB: element w projektach](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ W projektach odwołania elementów może się pojawić w więcej niż jeden projekt. Jednak sam plik, który reprezentuje element znajduje się w tylko jednym katalogu. W projektach na poziomie katalogu wszystkich elementów projektu istnieje w strukturze katalogów. Aby uzyskać więcej informacji, zobacz [zarządzania NIB: element w projektach](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  Elementy lokalne są przechowywane na tym samym komputerze, na którym zainstalowano aplikację. Elementy zdalne mogą być przechowywane na oddzielnym serwerze w sieci lokalnej lub gdzie indziej w Internecie.  
   
@@ -65,10 +60,9 @@ Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzj
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: element zarządzania w projektach](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [NIB: element zarządzania w projektach](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Trwałość projektu](../../extensibility/internals/project-persistence.md)   
  [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)   
  [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)   
  [Tworzenie typów projektów](../../extensibility/internals/creating-project-types.md)
-

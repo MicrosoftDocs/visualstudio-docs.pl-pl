@@ -1,25 +1,22 @@
 ---
 title: Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757369"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766163"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +59,12 @@ Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworze
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Diagram warstwowy pokazuje strukturę ogólną architekturę. Gdy kod jest zapisywany, mogą być automatycznie sprawdzone podstawie diagramu warstwowego.|  
-|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Diagram aktywności zawiera przepływ pracy, procesu biznesowego lub w oprogramowaniu.|  
-|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|Diagram klas zawiera typów i relacji używanych w wielu kontekstach, takich jak kod, schematy bazy danych, protokołów komunikacyjnych i słownikiem pojęć używanych do opisania domeny biznesowej.|  
-|[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Diagram składników zawiera osobnych części, w projekt oprogramowania oraz ich interfejsów.|  
-|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|Diagram sekwencji przedstawia interakcje między elementy projektu oprogramowania.|  
-|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|Diagram przypadków użycia zawiera użytkowników systemu i działań, które użytkownicy mogą wykonywać do osiągnięcia określonych celów.|  
+|[Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)|Diagram warstwowy pokazuje strukturę ogólną architekturę. Gdy kod jest zapisywany, mogą być automatycznie sprawdzone podstawie diagramu warstwowego.|  
+|[Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)|Diagram aktywności zawiera przepływ pracy, procesu biznesowego lub w oprogramowaniu.|  
+|[Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)|Diagram klas zawiera typów i relacji używanych w wielu kontekstach, takich jak kod, schematy bazy danych, protokołów komunikacyjnych i słownikiem pojęć używanych do opisania domeny biznesowej.|  
+|[Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)|Diagram składników zawiera osobnych części, w projekt oprogramowania oraz ich interfejsów.|  
+|[Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)|Diagram sekwencji przedstawia interakcje między elementy projektu oprogramowania.|  
+|[Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)|Diagram przypadków użycia zawiera użytkowników systemu i działań, które użytkownicy mogą wykonywać do osiągnięcia określonych celów.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
-
-
-

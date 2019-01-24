@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,15 +22,15 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756989"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Porady: dodawanie i usuwanie odwołań za pomocą Menedżera odwołań
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać odwołaniami do składników przez użytkownika, Microsoft, lub dostosowywania innej firmy. Jeśli tworzysz aplikację Windows Universal projekt automatycznie odwołuje się do wszystkich poprawne dll Windows SDK. Jeśli tworzysz aplikację .NET, projekt automatycznie odwołuje się do biblioteki mscorlib.dll. Niektóre interfejsy API platformy .NET są widoczne w składnikach, które trzeba dodać ręcznie. Odwołania do składników modelu COM lub niestandardowe składniki trzeba dodać ręcznie.  
@@ -73,7 +68,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
   
    -   Zestawy anonsowane znajdują się liście Pełna platforma Framework i są wyliczone na liście Framework, gdy projekt jest ukierunkowany na Profil docelowej platformy Framework. Zestawy anonsowane są szare, aby odróżnić je od zestawów, które istnieją w profilu docelowej platformy Framework projektu. Na przykład, jeśli projekt jest ukierunkowany na klienta .NET Framework 4, lista zawiera zestawy anonsowane z .NET Framework 4. Gdy użytkownik dodaje zestaw anonsowany, użytkownik jest powiadamiany, po **Menadżer odwołań** po zamknięciu okna dialogowego, projekt zostanie ukierunkowany na .NET Framework 4 i zostanie dodany zestaw anonsowany.  
   
-   -   Projekty dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacje zawierają odwołania do wszystkich zestawów w docelowym [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] domyślnie przy tworzeniu projektu. W projektach zarządzanych, węzeł tylko do odczytu folderze odwołania w **Eksploratora rozwiązań** wskazuje odwołanie do całej struktury Framework. W związku z tym na karcie Framework nie będzie wyliczony żaden zestaw z Framework. Zamiast tego wyświetli się następujący komunikat: „Do wszystkich zestawów Framework istnieją już odwołania. Użyj przeglądarki obiektów do zbadania odwołań w ramach." Dla projektów pulpitu karta Framework wylicza zestawy z docelowej platformy Framework i użytkownik musi dodać odwołania wymagane przez tę aplikację.  
+   -   Projekty dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacje zawierają odwołania do wszystkich zestawów w docelowym [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] domyślnie przy tworzeniu projektu. W projektach zarządzanych, węzeł tylko do odczytu folderze odwołania w **Eksploratora rozwiązań** wskazuje odwołanie do całej struktury Framework. W związku z tym na karcie Framework nie będzie wyliczony żaden zestaw z Framework i zamiast tego wyświetli się następujący komunikat: "Wszystkich zestawów Framework istnieją już odwołania. Użyj przeglądarki obiektów do zbadania odwołań w ramach." Dla projektów pulpitu karta Framework wylicza zestawy z docelowej platformy Framework i użytkownik musi dodać odwołania wymagane przez tę aplikację.  
   
 2. Rozszerzenia wyświetla listę wszystkich zestawów, które opracowali zewnętrzni dostawcy składników i formantów, aby rozszerzyć docelową platformę Framework. W zależności od celu aplikacji użytkownika, może być konieczne użycie tych zestawów.  
   
@@ -95,7 +90,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
   
 -   Składnik, który korzysta z najnowszej wersji programu .NET Framework jest niezgodny z projektem, który jest przeznaczony dla starszej wersji programu .NET Framework.  
   
-     Aby uzyskać informacje o zmienianiu docelowej wersji .NET Framework dla projektu, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Aby uzyskać informacje o zmienianiu docelowej wersji .NET Framework dla projektu, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 -   Składnik, który używa [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] jest niezgodny z projektem, który jest przeznaczony dla [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
@@ -159,16 +154,16 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
   
  Można wygenerować plik WinMD w Visual Studio na dwa sposoby:  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projekty zarządzane aplikacji**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projektów aplikacji może zapewniać dane wyjściowe pliki binarne WinMD przez ustawienie właściwości projektu &#124; typ danych wyjściowych = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wejdzie do właściwości projektu &#124; Nazwa zestawu lub właściwości projektu &#124; Namespace wartość, która jest odłączona od zestawu przestrzeni nazw w projekcie lub jest nadzbiorem przestrzeni nazw w ramach projektu, jest generowane ostrzeżenie kompilacji: 'A.winmd' nie prawidłową nazwą pliku .winmd dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieją w podrzędnej przestrzeni nazw nazwy pliku, nie mogą być zlokalizowane w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Projekt pulpitu języka Visual Basic lub Visual C# może używać tylko plików Winmd, które są generowane przy użyciu [!INCLUDE[win8](../includes/win8-md.md)] zestawów SDK, które są znane jako Winmd firmy Microsoft i nie można wygenerować plików Winmd.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projekty zarządzane aplikacji**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projektów aplikacji może zapewniać dane wyjściowe pliki binarne WinMD przez ustawienie właściwości projektu &#124; typ danych wyjściowych = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wejdzie do właściwości projektu &#124; Nazwa zestawu lub właściwości projektu &#124; Namespace wartość, która jest odłączona od zestawu przestrzeni nazw w projekcie lub jest nadzbiorem przestrzeni nazw w ramach projektu, jest generowane ostrzeżenie kompilacji: 'A.winmd' nie jest prawidłową nazwą pliku .winmd dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieją w podrzędnej przestrzeni nazw nazwy pliku, nie mogą być zlokalizowane w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Projekt pulpitu języka Visual Basic lub Visual C# może używać tylko plików Winmd, które są generowane przy użyciu [!INCLUDE[win8](../includes/win8-md.md)] zestawów SDK, które są znane jako Winmd firmy Microsoft i nie można wygenerować plików Winmd.  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] macierzyste projekty aplikacji**: macierzysty plik WinMD składa się z tylko metadanych. Jego realizacja istnieje w oddzielnym pliku DLL. Można produkować, aby przez wybranie szablonu projektu składnika wykonawczego Windows w natywnych plików binarnych **nowy projekt** okno dialogowe lub zaczynając od pustego projektu i modyfikując właściwości projektu, aby wygenerować plik WinMD. Jeżeli projekt zawiera rozłączne przestrzenie nazw, błąd kompilacji poinformuje użytkownika, że należy połączyć ich przestrzenie nazw lub uruchomić narzędzie MSMerge.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] macierzyste projekty aplikacji**: Macierzysty plik WinMD składa się z tylko metadanych. Jego realizacja istnieje w oddzielnym pliku DLL. Można produkować, aby przez wybranie szablonu projektu składnika wykonawczego Windows w natywnych plików binarnych **nowy projekt** okno dialogowe lub zaczynając od pustego projektu i modyfikując właściwości projektu, aby wygenerować plik WinMD. Jeżeli projekt zawiera rozłączne przestrzenie nazw, błąd kompilacji poinformuje użytkownika, że należy połączyć ich przestrzenie nazw lub uruchomić narzędzie MSMerge.  
   
   Karta Windows składa się z dwóch podgrup.  
   
 ### <a name="core-subgroup"></a>Podgrupa podstawowa (Core)  
  Podgrupa podstawowa zawiera listę wszystkich WinMD (dla elementów wykonawczych Windows) w zestawie SDK dla docelowej wersji systemu Windows.  
   
- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projekty aplikacji zawierają odwołania do wszystkich winmd w [!INCLUDE[win8](../includes/win8-md.md)] zestaw SDK domyślnie przy tworzeniu projektu. W projektach zarządzanych, węzeł tylko do odczytu folderze odwołania w **Eksploratora rozwiązań** wskazuje odwołanie do całej [!INCLUDE[win8](../includes/win8-md.md)] zestawu SDK. W związku z tym podgrupa podstawowa w Menedżerze odwołań nie będzie wyliczała żadnych zestawów z [!INCLUDE[win8](../includes/win8-md.md)] zestawu SDK i zamiast tego zostanie wyświetlony komunikat: "Windows SDK jest już przywoływany. Użyj przeglądarki obiektów do zbadania odwołań w zestawie SDK systemu Windows”.  
+ [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projekty aplikacji zawierają odwołania do wszystkich winmd w [!INCLUDE[win8](../includes/win8-md.md)] zestaw SDK domyślnie przy tworzeniu projektu. W projektach zarządzanych, węzeł tylko do odczytu folderze odwołania w **Eksploratora rozwiązań** wskazuje odwołanie do całej [!INCLUDE[win8](../includes/win8-md.md)] zestawu SDK. W związku z tym podgrupa podstawowa w Menedżerze odwołań nie będzie wyliczała żadnych zestawów z [!INCLUDE[win8](../includes/win8-md.md)] zestawu SDK i zamiast tego zostanie wyświetlony komunikat: "Z zestawu Windows SDK jest już przywoływany. Użyj przeglądarki obiektów do zbadania odwołań w zestawie SDK systemu Windows”.  
   
  W projektach pulpitu. podgrupa Podstawowa nie jest wyświetlana domyślnie. Można dodać środowisko wykonawcze Windows, otwierając menu skrótów dla węzła projektu, wybierając **Zwolnij projekt**, dodając poniższy fragment kodu i ponownie otwierając projekt (w węźle projektu wybierz **Załaduj ponownie projekt**). Gdy wywołujesz **Menadżer odwołań** pojawia się podgrupa podstawowa okno dialogowe.  
   
@@ -221,8 +216,5 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
  Pasek wyszukiwania w **Menadżer odwołań** okno dialogowe działa przez kartę która jest w trybie koncentracji uwagi. Na przykład, jeśli użytkownik wpisze "System" na pasku wyszukiwania, gdy **rozwiązania** karta jest w trybie koncentracji uwagi, wyszukiwanie nie zwraca żadnych wyników, chyba że rozwiązanie składa się z nazwy projektu, który zawiera "System".  
   
 ## <a name="see-also"></a>Zobacz też  
- [NIB porady: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodawanie odwołania](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodawanie odwołania](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Touch — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Touch
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ac0614a8496d932f733d7e8bbd2d2b954329dd05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: eb0ab3daf6d23d9a70a9889479bdf6a19ddec041
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762560"
 ---
 # <a name="touch-task"></a>Touch — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,6 +70,3 @@ Ustawia czas dostępu i modyfikacji plików.
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

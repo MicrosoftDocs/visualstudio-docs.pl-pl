@@ -1,14 +1,9 @@
 ---
 title: 'CA1726: Używaj preferowanych terminów | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf1050716bb38f8b43aa8be7d88c474960544b2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220522"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770539"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,22 +47,22 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA172
 |ComPlus|EnterpriseServices|  
 |Nie można|CouldNot|  
 |Didnt|DidNot|  
-|Numer nie|Nie ma|  
-|Dont|Nie|  
+|Numer nie|DoesNot|  
+|Dont|DoNot|  
 |Flaga lub flag|Nie ma żadnych zastąpienie terminu. Nie używać.|  
-|nie|HadNot|  
+|Hadnt|HadNot|  
 |Nie|HasNot|  
 |jeszcze nie|HaveNot|  
 |Indeksy|Indeksy|  
-|nie jest|IsNot|  
+|Isnt|IsNot|  
 |Zaloguj się|Logowanie|  
 |Wyloguj|Wyloguj|  
 |Shouldnt|ShouldNot|  
-|Logować|Logowanie za pomocą|  
+|SignOn|SignIn|  
 |Przygotowania|Wyloguj się|  
 |Wasnt|WasNot|  
 |nie|WereNot|  
-|Nie można|Iść|  
+|Nie można|WillNot|  
 |Wouldnt|WouldNot|  
 |Zapisywalny|Zapisywalny|  
   
@@ -79,4 +74,3 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA172
   
 ## <a name="related-rules"></a>Powiązane reguły  
  [Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)
-

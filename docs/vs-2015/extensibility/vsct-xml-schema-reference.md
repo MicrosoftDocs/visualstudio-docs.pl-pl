@@ -1,27 +1,22 @@
 ---
 title: Odwołanie do schematu VSCT XML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797302"
 ---
 # <a name="vsct-xml-schema-reference"></a>Odwołanie do schematu XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,4 +77,3 @@ Zapewnia tabelę polecenia tabeli kompilatora elementów schematu, dozwolone pod
 ## <a name="see-also"></a>Zobacz też  
  [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Routing poleceń w pakietach VSPackage](../extensibility/internals/command-routing-in-vspackages.md)
-

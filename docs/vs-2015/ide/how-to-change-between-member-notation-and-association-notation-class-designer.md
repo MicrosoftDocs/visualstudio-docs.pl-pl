@@ -1,14 +1,9 @@
 ---
-title: 'Porady: zmiana między notacją składowych i notacją skojarzeń (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
 - association notation
@@ -18,21 +13,21 @@ ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1ed7ee328e65f0e76426a21db8f2481e590b0546
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 23320b93f0cdafc7cd47ed5b04fcdf66754c4b67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777328"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Porady: zmiana pomiędzy notacją członka i skojarzeniem notacji (Projektant klas)
+# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W Projektancie klas możesz zmienić sposób diagram klas reprezentuje relacja skojarzenia między dwoma typami z notacją składowych notacją skojarzeń i na odwrót. Składowe wyświetlane jako linie asocjacji często zawierają użyteczne wizualizację jak typy są powiązane.  
   
 > [!NOTE]
->  Skojarzenie relacji może być reprezentowana jako właściwość składowej lub pola. Aby zmienić notacją składowych notacją skojarzeń, jeden typ musi mieć członkiem innego typu. Aby zmienić notacją skojarzeń notacją składowych, dwa typy muszą być podłączone przez linia skojarzenia. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md). Jeśli projekt zawiera wiele diagramów klas, zmiany wprowadzone w sposób skojarzenia relacje są wyświetlane na diagramie wpływa na tylko tego diagramu. Aby zmienić sposób innego diagramu zawiera relacje skojarzenia, Otwórz lub wyświetlania tego diagramu i wykonaj następujące kroki.  
+>  Skojarzenie relacji może być reprezentowana jako właściwość składowej lub pola. Aby zmienić notacją składowych notacją skojarzeń, jeden typ musi mieć członkiem innego typu. Aby zmienić notacją skojarzeń notacją składowych, dwa typy muszą być podłączone przez linia skojarzenia. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md). Jeśli projekt zawiera wiele diagramów klas, zmiany wprowadzone w sposób skojarzenia relacje są wyświetlane na diagramie wpływa na tylko tego diagramu. Aby zmienić sposób innego diagramu zawiera relacje skojarzenia, Otwórz lub wyświetlania tego diagramu i wykonaj następujące kroki.  
   
 ### <a name="to-change-member-notation-to-association-notation"></a>Aby zmienić notacją składowych i notacją skojarzeń  
   
@@ -52,10 +47,7 @@ W Projektancie klas możesz zmienić sposób diagram klas reprezentuje relacja s
      Linia asocjacji znika, i właściwość pojawią się w odpowiednich przedziału w ramach jego kształt typu na diagramie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
+ [Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Instrukcje: Wizualizacja skojarzenia kolekcji (Projektant klas)](../ide/how-to-visualize-a-collection-association-class-designer.md)
-
-
-

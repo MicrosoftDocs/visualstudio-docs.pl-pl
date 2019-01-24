@@ -1,27 +1,22 @@
 ---
 title: Niestandardowe elementy z możliwością kolorowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771710"
 ---
 # <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
 > [!CAUTION]
 >  Nazwa języka należy uwzględnić w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania. Jeśli zmienisz nazwę jednego z elementów z możliwością kolorowania podczas projektowania należy zresetować pamięć podręczną, która została utworzona po raz pierwszy uzyskano elementów z możliwością kolorowania. Możesz zresetować eksperymentalne pamięci podręcznej za pomocą narzędzia CreateExpInstance został zainstalowany przy użyciu programu Visual Studio SDK, zwykle znajduje się w katalogu  
 >   
->  **C:\Program pliki (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
 >  Aby zresetować pamięć podręczną, należy wywołać `CreateExpInstance /Reset`. Aby uzyskać więcej informacji na temat CreateExpInstance zobacz [narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   
@@ -76,5 +71,4 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
  [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-
+ [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

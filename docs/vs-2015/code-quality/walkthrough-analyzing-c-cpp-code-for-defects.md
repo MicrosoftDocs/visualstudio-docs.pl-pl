@@ -1,14 +1,9 @@
 ---
 title: 'Przewodnik: Analizowanie kodu C i C++ pod względem wad | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754897"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Wskazówki: analizowanie kodu C++ pod względem wad
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Przewodnik: Analizowanie kodu C/C++ pod kątem błędów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu pokazano, jak analizować kodu C/C++ pod kątem potencjalnych błędów za pomocą narzędzie do analizy kodu dla kodu C/C++.  
@@ -83,7 +78,7 @@ W tym instruktażu pokazano, jak analizować kodu C/C++ pod kątem potencjalnych
   
 2.  W **lista błędów**, kliknij dwukrotnie następujące ostrzeżenie:  
   
-     Ostrzeżenie C6230: niejawne rzutowanie pomiędzy różnymi semantycznie typami całkowitymi: użycie HRESULT w kontekście Boolean.  
+     Ostrzeżenie C6230: Niejawne rzutowanie pomiędzy różnymi semantycznie typami całkowitymi: użycie HRESULT w kontekście Boolean.  
   
      Edytor kodu wyświetla wiersz, który spowodował ostrzeżenie w funkcji `bool``ProcessDomain()`. To ostrzeżenie wskazuje, że wartość HRESULT jest używana w instrukcji "if" gdy oczekiwany jest wynik będący wartością logiczną.  
   
@@ -95,7 +90,7 @@ W tym instruktażu pokazano, jak analizować kodu C/C++ pod kątem potencjalnych
   
 4.  W **lista błędów**, kliknij dwukrotnie następujące ostrzeżenie:  
   
-     Ostrzeżenie C6282: nieprawidłowy operator: przypisanie stałej w kontekście testu. Został == zamierzony?  
+     Ostrzeżenie C6282: Niepoprawny operator: przypisanie stałej w kontekście testu. Został == zamierzony?  
   
 5.  Testowanie pod kątem równości, aby poprawić to ostrzeżenie. Kod powinien wyglądać podobnie do poniższego kodu:  
   
@@ -137,7 +132,7 @@ W tym instruktażu pokazano, jak analizować kodu C/C++ pod kątem potencjalnych
   
 6.  W **lista błędów**, kliknij dwukrotnie następujące ostrzeżenie:  
   
-     Ostrzeżenie C6011: wyłuskanie wskaźnika NULL "newNode".  
+     Ostrzeżenie C6011: Wyłuskanie wskaźnika NULL "newNode".  
   
      To ostrzeżenie wskazuje niepowodzenie sprawdzić wartość zwrócona przez obiekt wywołujący. W tym przypadku wywołanie **AllocateNode** może zwrócić wartość NULL (zobacz plik nagłówkowy annotations.h deklaracja funkcji AllocateNode).  
   
@@ -179,7 +174,7 @@ W tym instruktażu pokazano, jak analizować kodu C/C++ pod kątem potencjalnych
   
 3.  W **lista błędów**, kliknij dwukrotnie następujące ostrzeżenie:  
   
-     Ostrzeżenie C6011: PUSTEGO wskaźnika "node".  
+     Ostrzeżenie C6011: Wyłuskanie wskaźnika NULL "node".  
   
      Ostrzeżenie to wskazuje, że węzła przekazanego do funkcji może mieć wartości null i wskazuje numer wiersza, w którym został zgłoszony ostrzeżenia.  
   
@@ -200,7 +195,4 @@ W tym instruktażu pokazano, jak analizować kodu C/C++ pod kątem potencjalnych
      Projekt zostanie skompilowany bez żadnych ostrzeżeń ani błędów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Analizowanie kodu zarządzanego pod kątem defektów](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

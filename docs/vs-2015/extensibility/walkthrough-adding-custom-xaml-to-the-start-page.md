@@ -1,29 +1,24 @@
 ---
-title: 'Wskazówki: Dodawanie niestandardowych XAML do strony początkowej | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Dodawanie niestandardowych XAML do strony początkowej | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58c7441a4f910a1da35bc464e12ddba3bd5583bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 34e8c67533bda4084a8bbff2a0454b072e5a354a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772821"
 ---
-# <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej
+# <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Przewodnik: Dodawanie niestandardowych elementów XAML do strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu przedstawiono sposób tworzenia niestandardowej programu Visual Studio strony początkowej zawierający przeglądarki sieci Web.  
@@ -97,5 +92,4 @@ W tym instruktażu przedstawiono sposób tworzenia niestandardowej programu Visu
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Kontrole kontenerów WPF](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
-
+ [Kontrole kontenerów WPF](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)

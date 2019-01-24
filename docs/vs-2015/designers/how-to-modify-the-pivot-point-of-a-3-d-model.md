@@ -1,27 +1,22 @@
 ---
-title: 'Porady: modyfikowanie punktu obrotu modelu 3-D | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Modyfikowanie punktu obrotu modelu 3-D | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774104"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Porady: modyfikowanie punktu obrotu modelu 3-D
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Instrukcje: Modyfikowanie punktu obrotu modelu 3-D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób używania edytora modelu do modyfikowania *punkt obrotu* modelu 3-D. Punkt obrotu jest punktem w miejscu, definiująca środek matematyczne obiektu dla obrotu i skalowania.  
@@ -37,7 +32,7 @@ W tym dokumencie przedstawiono sposób używania edytora modelu do modyfikowania
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>Aby zmodyfikować punktu obrotu modelu 3-D  
   
-1. Zacznij od istniejącego modelu 3-w, takiego jak opisany w [porady: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md).  
+1. Zacznij od istniejącego modelu 3-w, takiego jak opisany w [jak: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md).  
   
 2. Wprowadź tryb obrotu. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** przycisk, aby uaktywnić tryb obrotu. Zostanie wyświetlone okno z całym **tryb obrotu** przycisk, aby wskazać, że edytor modelu jest teraz tryb obrotu. W tryb obrotu operacji, takich jak tłumaczenia wpływają na punkt obrotu obiektu zamiast struktury obiektów w przestrzeni świata.  
   
@@ -55,8 +50,5 @@ W tym dokumencie przedstawiono sposób używania edytora modelu do modyfikowania
    ![Model DOM, zawierający punkt obrotu zmodyfikowane](../designers/media/digit-modified-model.png "cyfrę modyfikacji — Model")  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md)   
+ [Instrukcje: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md)   
  [Edytor modelu](../designers/model-editor.md)
-
-
-

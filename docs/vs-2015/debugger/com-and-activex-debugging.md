@@ -1,14 +1,9 @@
 ---
 title: COM i debugowanie ActiveX | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c71aa59e62d9ac8530f34f42e15737a52b0fad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec2230511b9a058f1c35ce0c34dbe93a69317f4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766059"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontr
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)  
  Podczas debugowania aplikacji modelu COM jest wspomniany uwagi. Obejmują problemów: debugowanie kontenera przy użyciu dwóch projektów w obrębie tego samego rozwiązania, śledzenia do wywołania, które bardziej szczegółowo w granicach procesu, ustawiania punktów przerwania w funkcjach wywołania zwrotnego i przechodzenie między oraz kontenery i serwery i serwera COM.  
   
- [Instrukcje: debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md)  
+ [Instrukcje: Debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md)  
  Zawiera informacje na temat debugowania formantów ActiveX. Obejmuje to: określenie kontenera dla sesji debugowania zobaczyć, jak wykonuje kod w kontrolce ActiveX, debugowania powiązanych z danymi formantu ActiveX, symulując określonego kontenera i przechodzenie do kodu kontenera.  
   
  [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)  
@@ -58,6 +53,3 @@ Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontr
  [Wprowadzenie do modelu COM](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
  [Kontrolki ActiveX](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [Aplikacje serwerowe SDI](../debugger/sdi-server-applications.md)
-
-
-

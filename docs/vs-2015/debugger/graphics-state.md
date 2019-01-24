@@ -1,27 +1,22 @@
 ---
 title: Stan grafiki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763442"
 ---
 # <a name="graphics-state"></a>Stan grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu
 ### <a name="state-table-format"></a>Format tabeli stanu  
  W oknie stanu przedstawia kilka kolumn informacji.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |Nazwa|Nazwa elementu stanu. Jeśli ten element reprezentuje pakiet, stanu, można rozszerzyć element, aby go wyświetlić.<br /><br /> W **interfejsu API danych wejściowych w widoku stanu** i **widok stanu logicznego** stany, nazwy mają wcięcia hierarchiczną relację między stanami.<br /><br /> W **przypięte widok stanu** stanu, w pełni kwalifikowanej nazwy są wyświetlane w formie płaskiej listy.|  
 |Wartość|Wartość elementu stanu.|  
@@ -77,6 +72,3 @@ Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu
 2.  Umieść kursor nad stan, który chcesz wziąć. Ikona przypinania pojawia się po lewej stronie element stanu.  
   
 3.  Wybierz ikonę pinezki, aby przypiąć element stanu w miejscu.
-
-
-

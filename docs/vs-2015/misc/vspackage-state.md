@@ -1,27 +1,22 @@
 ---
 title: Stan pakietu VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - state, VSPackages
 - VSPackages, managing application state
 - state persistence
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
-manager: douge
-ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3140b527673f87b1d7c552e99584232494aed7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797251"
 ---
 # <a name="vspackage-state"></a>Stan pakietu VSPackage
 Wpływa wiele czynników zbiór wartości trwałe lub stan z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplikacji.  

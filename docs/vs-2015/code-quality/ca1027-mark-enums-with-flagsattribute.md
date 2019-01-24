@@ -1,13 +1,9 @@
 ---
 title: 'CA1027: Oznacz Typy wyliczeniowe atrybutem Flags | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
 - CA1027
@@ -19,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a0f0c618e8b01fe3c40448adb145d5da446e30a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954109"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764050"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Oznacz Typy wyliczeniowe atrybutem Flags
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Oznacz typy wyliczeniowe atrybutem Flags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

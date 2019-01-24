@@ -1,27 +1,22 @@
 ---
-title: 'Wskazówki: Korzystanie z funkcji edytora XML | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Korzystanie z funkcji edytora XML | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777666"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Przewodnik: korzystanie z funkcji edytora XML
+# <a name="walkthrough-using-xml-editor-features"></a>Przewodnik: Korzystanie z funkcji edytora XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. Przewodnik używa także niektóre funkcje edytora XML, które ułatwiają cenny na potrzeby tworzenia XML.  
@@ -77,7 +72,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
   
 5.  Typ `>` zamknięcie tagu.  
   
-6.  Edytor dodaje tag końcowy. Tag końcowy zostanie dodany z linią falistą wskazujący błąd sprawdzania poprawności. Etykietki narzędzia wyświetlany jest komunikat: "pracownik" element ma niekompletną zawartość. Oczekiwano 'ID'.  
+6.  Edytor dodaje tag końcowy. Tag końcowy zostanie dodany z linią falistą wskazujący błąd sprawdzania poprawności. Etykietki narzędzia wyświetlany jest komunikat: Element "pracownik" ma niekompletną zawartość. Oczekiwano 'ID'.  
   
 7.  Typ `<` i wybierz **identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.  
   
@@ -85,7 +80,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
   
 8.  Typ **abc**.  
   
-     **Abc** tekstu jest linią falistą. Etykietki narzędzia wyświetlany jest komunikat: element 'ID' ma nieprawidłową wartość przy uwzględnieniu jego typu danych.  
+     **Abc** tekstu jest linią falistą. Etykietki narzędzia wyświetlany jest komunikat: Element "ID" ma nieprawidłową wartość przy uwzględnieniu jego typu danych.  
   
 9. Kliknij prawym przyciskiem myszy ID element, a następnie wybierz pozycję **przejdź do definicji**.  
   
@@ -93,7 +88,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
   
 10. Wróć do pliku XML i Zastąp **abc** tekstem **123**.  
   
-     Faliste podkreślenie i etykietek narzędzi są usuwane w ramach wartości elementu Identyfikatora. Etykietka narzędzia dla tagu końcowego pracowników teraz wyświetlany jest komunikat: "pracownik" element ma niekompletną zawartość. Oczekiwano "-Data zatrudnienia".  
+     Faliste podkreślenie i etykietek narzędzi są usuwane w ramach wartości elementu Identyfikatora. Etykietka narzędzia dla tagu końcowego pracowników teraz wyświetlany jest komunikat: Element "pracownik" ma niekompletną zawartość. Oczekiwano "-Data zatrudnienia".  
   
 11. Umieść kursor po identyfikatorze tagu końcowego, wpisz w `<`, wybierz datę zatrudnienia z listy elementów członkowskich, a następnie wpisz w `>`.  
   
@@ -115,7 +110,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
   
 2.  Wprowadź nazwę pliku i lokalizację dokumentu XML, a następnie kliknij przycisk **Zapisz**.  
   
-## <a name="hiredatexsd-file"></a>hireDate.xsd pliku  
+## <a name="hiredatexsd-file"></a>hireDate.xsd File  
  Następujący plik schematu jest używany przez instruktażu.  
   
 ```  
@@ -136,4 +131,3 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Określanie środowiska wykonawczego .NET Framework | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie środowiska wykonawczego .NET Framework | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
 - .NET Framework versions,profililng
@@ -16,15 +11,15 @@ ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c62b70816ac17789a4aa236e5abcca6832f7359
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ce968e53dc00cd46d27154f4c6217fcc815ade1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771910"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Porady: Określanie środowiska wykonawczego .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Instrukcje: Określanie środowiska wykonawczego .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wraz z wydaniem [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], aplikacje mogą się składać z modułów, które zostały utworzone przy użyciu różnych wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] środowiska wykonawczego. Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools profilowanie pierwszego środowiska uruchomieniowego, który jest ładowany przez aplikację. Można określić czasu wykonywania, aby przeprowadzić profilowanie, podczas uruchamiania aplikacji przy użyciu profilera i dołączenia programu profilującego do aplikacji już uruchomionego.  
@@ -58,6 +53,3 @@ Wraz z wydaniem [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], aplika
     -   Kliknij wersję środowiska CLR, które powinny być profilowane.  
   
     -   Kliknij przycisk **automatyczne** do profilowania, wersji, który jest ładowany, gdy program profilujący jest dołączony do aplikacji.
-
-
-

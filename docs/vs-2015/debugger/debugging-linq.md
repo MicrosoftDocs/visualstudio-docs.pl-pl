@@ -1,14 +1,9 @@
 ---
 title: Debugowanie LINQ | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 081c97bffc062bf2bbc9d24feed13e5e512b8c74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d15d56edec544ac68f21026758ced6292ee7de8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769643"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,11 +117,8 @@ End Function
  W języku Visual Basic umożliwia Edytuj i Kontynuuj na kodzie non-LINQ, nawet w metodzie, która zawiera kwerendę LINQ. Można dodać lub usunąć kod przez instrukcją LINQ, nawet jeśli zmiany mają wpływ na numer wiersza zapytania LINQ. Języka Visual Basic obsługi debugowania dla kodu-LINQ, pozostaje taki sam, jakim był, zanim wprowadzenie LINQ nie zmieniło. Nie można zmienić, Dodaj lub jednak usuwać w zapytaniu LINQ, chyba że chcesz zatrzymać debugowanie, aby zastosować zmiany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Debugowanie SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
  [Efekty uboczne i wyrażenia](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)   
  [Wprowadzenie do zapytań LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
  [Wprowadzenie do LINQ w Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
-
-
-

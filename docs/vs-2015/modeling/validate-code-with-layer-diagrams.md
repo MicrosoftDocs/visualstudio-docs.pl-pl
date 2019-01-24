@@ -1,12 +1,9 @@
 ---
 title: Weryfikacja kodu przy użyciu diagramów warstw | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792897"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Weryfikacja kodu przy użyciu diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
   
   Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-  Możesz walidować kod ręcznie z otwartego diagramu warstwowego w Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  Możesz walidować kod ręcznie z otwartego diagramu warstwowego w Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Jeśli chcesz uruchomić walidację warstwy za pomocą programu Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.  
@@ -237,17 +234,14 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
   
 |**Błąd składni**|**Opis błędu**|  
 |----------------------|---------------------------|  
-|AV0001: Nieprawidłowa zależność: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> Warstwy: *LayerName1*, *LayerName2* &#124; zależności: *DependencyType*|*Artifact1* w *LayerName1* nie powinny mieć zależność *Artifact2* w *LayerName2* ponieważ *LayerName1* nie ma bezpośredniej zależności *LayerName2*.|  
-|AV1001: Nieprawidłowa Namespace: *artefaktu*<br /><br /> Warstwa: *LayerName* &#124; wymagane Namespace: *NamespaceName1* &#124; bieżącego Namespace: *NamespaceName2*|*LayerName* wymaga, aby skojarzone artefakty muszą należeć do *NamespaceName1*. *Artefakt* znajduje się w *NamespaceName2*, a nie *NamespaceName1*.|  
-|AV1002: Zależy od zabronionej Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Warstwa: *LayerName* &#124; zabronione Namespace: *NamespaceName* &#124; zależności: *DependencyType*|*LayerName* wymaga, aby skojarzone artefakty nie zależały od *NamespaceName*. *Artifact1* nie może zależeć od *Artifact2* ponieważ *Artifact2* znajduje się w *NamespaceName*.|  
-|AV1003: W zabronionej Namespace: *artefaktu*(*ArtifactType*)<br /><br /> Warstwa: *LayerName* &#124; zabronione Namespace: *NamespaceName*|*LayerName* wymaga, aby skojarzone artefakty nie może należeć do *NamespaceName*. *Artefakt* należy do *NamespaceName*.|  
-|AV3001: brakujące łącze: warstwa "*LayerName*"łączy"*artefaktu*" którego nie można znaleźć. Czy nie brakuje odwołania do zestawu?|*LayerName* łącze do artefaktu, którego nie można odnaleźć. Na przykład, może brakować łącza do klasy, ponieważ w projekcie modelowania brakuje odwołania do zestawu, który zawiera klasę.|  
+|AV0001: Nieprawidłowa zależność: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Warstwy: *LayerName1*, *LayerName2* &#124; Dependencies: *DependencyType*|*Artifact1* w *LayerName1* nie powinny mieć zależność *Artifact2* w *LayerName2* ponieważ *LayerName1* nie ma bezpośredniej zależności *LayerName2*.|  
+|AV1001: Nieprawidłowy Namespace: *Artefakt*<br /><br /> Warstwa: *LayerName* &#124; wymagane Namespace: *NamespaceName1* &#124; Current Namespace: *NamespaceName2*|*LayerName* wymaga, aby skojarzone artefakty muszą należeć do *NamespaceName1*. *Artefakt* znajduje się w *NamespaceName2*, a nie *NamespaceName1*.|  
+|AV1002: Zależy od zabronionej Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Warstwa: *LayerName* &#124; zabronione Namespace: *NamespaceName* &#124; Dependencies: *DependencyType*|*LayerName* wymaga, aby skojarzone artefakty nie zależały od *NamespaceName*. *Artifact1* nie może zależeć od *Artifact2* ponieważ *Artifact2* znajduje się w *NamespaceName*.|  
+|AV1003: W zabronionej Namespace: *Artifact*(*ArtifactType*)<br /><br /> Warstwa: *LayerName* &#124; zabronione Namespace: *NamespaceName*|*LayerName* wymaga, aby skojarzone artefakty nie może należeć do *NamespaceName*. *Artefakt* należy do *NamespaceName*.|  
+|AV3001: Brakujące łącze: Warstwa "*LayerName*"łączy"*artefaktu*" którego nie można znaleźć. Czy nie brakuje odwołania do zestawu?|*LayerName* łącze do artefaktu, którego nie można odnaleźć. Na przykład, może brakować łącza do klasy, ponieważ w projekcie modelowania brakuje odwołania do zestawu, który zawiera klasę.|  
 |AV9001: Analiza architektoniczna znalazła błędy wewnętrzne. Wyniki mogą być niepełne. Aby uzyskać więcej informacji, zobacz szczegółowy dziennik zdarzeń kompilacji lub okno danych wyjściowych.|Zobacz dziennik zdarzeń kompilacji lub okno danych wyjściowych, aby uzyskać więcej szczegółów.|  
   
 ## <a name="security"></a>Zabezpieczenia  
   
 ## <a name="see-also"></a>Zobacz też  
  [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
-
-
-

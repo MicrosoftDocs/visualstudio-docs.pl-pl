@@ -1,27 +1,22 @@
 ---
-title: 'Instrukcje: modelowanie terenu 3D | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Modelowanie terenu 3D | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fae94fe5e7474580f8867f531fc41d0ce6781cf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764119"
 ---
-# <a name="how-to-model-3-d-terrain"></a>Porady: model terenu 3-D
+# <a name="how-to-model-3-d-terrain"></a>Instrukcje: Model terenu 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten dokument przedstawia sposób tworzenia modelu terenu 3D za pomocą edytora modelu.  
@@ -73,10 +68,7 @@ Ten dokument przedstawia sposób tworzenia modelu terenu 3D za pomocą edytora m
   
    ![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png "cyfrę terenu modelu")  
   
-   Ten model terenu można użyć, aby zademonstrować efekt modułu cieniującego gradientu, który jest opisany w [porady: tworzenie cieniowania gradientu geometrycznego](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
+   Ten model terenu można użyć, aby zademonstrować efekt modułu cieniującego gradientu, który jest opisany w [jak: Tworzenie cieniowania gradientu geometrycznego](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor modelu](../designers/model-editor.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Lokalizowanie pakietów VSIX | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize package
 - localize extension
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2f6bc666e244fed2bc2922ce4878434730a643e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760210"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizowanie pakietów VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,4 +96,3 @@ Można lokalizować pakiet VSIX przez utworzenie pliku Extension.vsixlangpack dl
  [Element pakietu językowego VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)   
  [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Szablon projektu VSIX](../extensibility/vsix-project-template.md)
-

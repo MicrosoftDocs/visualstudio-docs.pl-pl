@@ -1,11 +1,8 @@
 ---
 title: Mapowanie zależności w ramach rozwiązań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740047"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792199"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 ##  <a name="GetStarted"></a> Rozpoczynanie pracy z mapami kodu  
  **Aby używać mapy kodu, należy albo**:  
   
--   Program Visual Studio Enterprise: Tworzenie map kodu z edytora kodu, w Eksploratorze rozwiązań, widoku klas lub przeglądarce obiektów.  
+-   Visual Studio Enterprise: Tworzenie map kodu z edytora kodu, w Eksploratorze rozwiązań, widoku klas lub przeglądarki obiektów.  
   
--   Program Visual Studio Professional: Otwieranie map kodu, wprowadzanie ograniczonych zmian edycyjnych i przechodzenie do kodu.  
+-   Visual Studio Professional: Otwieranie map kodu, wprowadzanie ograniczonych zmian edycyjnych i przechodzenie do kodu.  
   
 > [!WARNING]
 >  Przed udostępnieniem map utworzone w programie Visual Studio Enterprise z innymi osobami, którzy korzystają z programu Visual Studio Professional, upewnij się, że wszystkie elementy na mapie (takich jak elementy ukryte, rozwinięte grupy i łącza grupy współzależności) są widoczne.  
@@ -72,7 +69,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
   
 - Projekty X ++ i zestawy wykonane z modułów .NET dla systemu Microsoft Dynamics AX  
   
-  **Uwaga:** dla innych projektów C# lub Visual Basic .NET, dostępnych jest mniej opcji Uruchamianie mapy kodu lub dodawania elementów do istniejącej mapy kodu. Nie można na przykład, kliknij prawym przyciskiem myszy obiekt w edytorze tekstów projektu w języku C++ i dodać go do mapy kodu. Jednak możesz przeciągać i upuszczać elementy poszczególnych kodu lub pliki w Eksploratorze rozwiązań, widoku klas i przeglądarki obiektów.  
+  **Uwaga:** Dla projektów innych niż C# lub Visual Basic .NET, dostępnych jest mniej opcji Uruchamianie mapy kodu lub dodawania elementów do istniejącej mapy kodu. Nie można na przykład, kliknij prawym przyciskiem myszy obiekt w edytorze tekstów projektu w języku C++ i dodać go do mapy kodu. Jednak możesz przeciągać i upuszczać elementy poszczególnych kodu lub pliki w Eksploratorze rozwiązań, widoku klas i przeglądarki obiektów.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Aby wyświetlić ogólne zależności między rozwiązania  
   
@@ -319,7 +316,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 ||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz **/DEBUG** opcji w konsolidatorze.<br /><br /> Zobacz [/DEBUG (generowanie informacji o debugowaniu)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||Nie można otworzyć lub znaleźć pliku .pdb w oczekiwanych lokalizacjach.|Upewnij się, że plik .pdb istnieje w oczekiwanych lokalizacjach.|  
 ||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli **/pdbstripped** w konsolidatorze użyto opcji, zamiast dołączyć kompletny plik .pdb.<br /><br /> Zobacz [/pdbstripped (Usuń symbole prywatne)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Jeśli element wywołujący jest sekcją thunk, spróbuj użyć `_declspec(dllimport)` Aby uniknąć osadzenia.<br /><br /> Zobacz:<br /><br /> -   [Ograniczenia i reguły ogólne](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importowanie wywołań funkcji przy użyciu atrybutu __declspec(dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport i dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Jeśli element wywołujący jest sekcją thunk, spróbuj użyć `_declspec(dllimport)` Aby uniknąć osadzenia.<br /><br /> Zobacz:<br /><br /> -   [Ograniczenia i reguły ogólne](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importowanie wywołań funkcji przy użyciu atrybutu __declspec(dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> Wprowadź kod, który map render szybciej  
  Podczas generowania mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale poprawi wydajność później. Jeśli kod ulegnie zmianie, program Visual Studio indeksuje ponownie tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na mapie, aby zakończyć renderowania, należy rozważyć następujące kwestie:  
@@ -376,7 +373,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
   
 2.  Przejdź do której chcesz zapisać plik.  
   
-3.  Nazwa mapy kodu. Upewnij się, że **Zapisz jako typ** pole jest ustawiona na **pliki XPS (\*.xps)**. Wybierz **Zapisz**.  
+3.  Nazwa mapy kodu. Upewnij się, że **Zapisz jako typ** pole jest ustawiona na **pliki XPS (\*.xps)**. Wybierz polecenie **Zapisz**.  
   
 ## <a name="what-else-can-i-do"></a>Co jeszcze można zrobić?  
   
@@ -389,6 +386,3 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 -   [Przeglądanie i ponowne rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

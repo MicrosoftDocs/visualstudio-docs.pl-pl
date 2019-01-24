@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Korzystanie z okna stosu wywołań | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z okna stosu wywołań | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -33,15 +28,15 @@ ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c45f0a645945e68b7b3d21eefe2f981b9b4b352f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756017"
 ---
-# <a name="how-to-use-the-call-stack-window"></a>Porady: korzystanie z okna stosu wywołań
+# <a name="how-to-use-the-call-stack-window"></a>Instrukcje: Korzystanie z okna stosu wywołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Za pomocą **stos wywołań** okna, można wyświetlić wywołania funkcji lub procedur, które obecnie znajdują się w stosie.  
@@ -56,14 +51,14 @@ Za pomocą **stos wywołań** okna, można wyświetlić wywołania funkcji lub p
   
  W kodzie zarządzanym domyślnie. **stos wywołań** okna ukrywa informacje dla kodu innych użytkowników. Zamiast informacji ukrytych pojawia się następujący zapis:  
   
- **[\<Kod zewnętrzny >]**  
+ **[\<External Code>]**  
   
  Kod niezwiązany z użytkownikiem jest każdy kod, który nie jest "Moim kodem" można wybrać, aby wyświetlić informacje stosu wywołań dla kodu niepochodzącego od użytkownika za pomocą menu skrótów.  
   
  Za pomocą menu skrótów, można wybrać, czy wyświetlane są wywołania między wątkami.  
   
 > [!NOTE]
->  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz pozycję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz pozycję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Aby wyświetlić okno stosu wywołań w trybie przerwania lub w trybie uruchamiania  
   
@@ -144,12 +139,7 @@ Za pomocą **stos wywołań** okna, można wyświetlić wywołania funkcji lub p
   
 ## <a name="see-also"></a>Zobacz też  
  [Kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Porady: zmiana formatu numerycznego z debuger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Instrukcje: Zmień Format numeryczny debuger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)
-
-
-
-
-

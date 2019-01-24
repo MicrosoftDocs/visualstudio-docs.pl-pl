@@ -1,14 +1,9 @@
 ---
 title: CPU i liczniki Windows | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f79eeae8539657f6556b87d917f991113c5de807
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801696"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800443"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU i liczniki systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ Visual Studio Profiler umożliwia zbieranie danych wydajności, który został w
   
 4.  Z **kategorii licznika** , wybierz grupę liczników na liście. Licznik Windows grupy jest wyświetlana w polu listy.  
   
-     **Uwaga:** kliknij **anulować** aby powrócić do poprzedniej konfiguracji licznika w kolekcji.  
+     **Uwaga:** Kliknij przycisk **anulować** aby powrócić do poprzedniej konfiguracji licznika w kolekcji.  
   
 ### <a name="command-line"></a>Wiersz polecenia  
  Za pomocą [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, możesz wyświetlić listę liczniki procesora CPU, które są dostępne na komputerze z poziomu wiersza polecenia.  
@@ -136,9 +131,6 @@ Visual Studio Profiler umożliwia zbieranie danych wydajności, który został w
   
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie](../profiling/overviews-performance-tools.md)   
- [Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)   
- [Porady: zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)   
- [Instrukcje: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)
-
-
-
+ [Instrukcje: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)   
+ [Instrukcje: Zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Instrukcje: Zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)

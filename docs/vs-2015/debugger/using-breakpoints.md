@@ -1,13 +1,8 @@
 ---
 title: Używanie punktów przerwania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805501"
 ---
 # <a name="using-breakpoints"></a>Używanie punktów przerwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
   
  W tym momencie wartość `testInt` nadal jest 1.  
   
- Można sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stosu wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
+ Można sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stosu wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
   
  Możesz ustawić punkt przerwania w każdym wierszu kodu wykonywalnego. Na przykład w języku C# kodu powyżej można ustawić punkt przerwania w deklaracji zmiennej `for` pętli lub dowolny kod wewnątrz `for` pętli, ale nie można ustawić punkt przerwania na deklaracje przestrzeni nazw lub klasy lub podpis metody.  
   
@@ -76,7 +71,7 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
  Można również ustawić punkty przerwania w stosie wywołań, w oknie demontażu i, w kodzie natywnym języku C++, warunek danych lub adres pamięci.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Ustawianie punktu przerwania w oknie stosu wywołań  
- Możesz przerwać wykonywanie w instrukcji lub wierszu, który powraca wywołanie funkcji, aby ustawić punkt przerwania w **stos wywołań** okna. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md). Debuger musi mieć przestał być wykonywany.  
+ Możesz przerwać wykonywanie w instrukcji lub wierszu, który powraca wywołanie funkcji, aby ustawić punkt przerwania w **stos wywołań** okna. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md). Debuger musi mieć przestał być wykonywany.  
   
 1. Rozpocznij debugowanie aplikacji, a wykonanie oczekiwania jest zatrzymana (na przykład w punkcie przerwania). Otwórz **stos wywołań** okna (**debugowanie / Windows / stos wywołań**, lub **CTRL + ALT + C**).  
   
@@ -155,7 +150,7 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
   
    Kiedy zaznaczysz **warunki** polu okna rozwija do wyświetlania różnych typów warunków.  
   
-   **Wyrażenie warunkowe:** po wybraniu wyrażenia warunkowego, można wybrać dwa warunki: **ma wartość true** i **po zmianie**. Wybierz **ma wartość true** Jeśli chcesz przerwać gdy wyrażenie jest spełniony, lub wybierz **po zmianie** Jeśli chcesz przerwać, gdy zmieniono wartość wyrażenia.  
+   **Wyrażenie warunkowe:** Po wybraniu wyrażenia warunkowego, możesz wybrać dwa warunki: **Ma wartość true** i **po zmianie**. Wybierz **ma wartość true** Jeśli chcesz przerwać gdy wyrażenie jest spełniony, lub wybierz **po zmianie** Jeśli chcesz przerwać, gdy zmieniono wartość wyrażenia.  
   
    W poniższym przykładzie, możemy ustawić punkt przerwania, aby trafić tylko wtedy, gdy wartość `testInt` jest **4**:  
   
@@ -259,6 +254,3 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

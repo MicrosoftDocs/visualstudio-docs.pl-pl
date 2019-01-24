@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Przywracanie ukrytych poleceń debugera | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Przywracanie ukrytych poleceń debugera | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5edc195397b9652d790620b8281100cc7651a02d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83a685b0dfc9b4f260d082230a5b58dcb025eff4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779509"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>Porady: przywracanie ukrytych poleceń debugera
+# <a name="how-to-restore-hidden-debugger-commands"></a>Instrukcje: Przywracanie ukrytych poleceń debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybranie zestawu domyślnego ustawienia środowiska IDE dla Twojego nadrzędnego języka programowania. Domyślne ustawienia IDE w przypadku niektórych języków może ukryć niektórych poleceń debugera.  
@@ -86,6 +81,3 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
-
-
-

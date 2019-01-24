@@ -1,12 +1,9 @@
 ---
-title: 'Wskazówki: Wyświetlanie powiązanych danych w aplikacji WPF | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Wyświetlanie powiązanych danych w aplikacji WPF | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763904"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Wskazówki: wyświetlanie powiązanych danych w aplikacji WPF
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Przewodnik: Wyświetlanie powiązanych danych w aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z tabel bazy danych, które mają relacji nadrzędny/podrzędny. Dane są hermetyzowane w jednostkach w modelu Entity Data Model. Jednostka nadrzędna zawiera informacje ogólne dotyczące zestawu zamówień. Każda właściwość ta jednostka jest powiązany z innej kontrolki w aplikacji. Jednostki podrzędne zawiera szczegóły dotyczące każdego zamówienia. Ten zestaw danych jest powiązany z <xref:System.Windows.Controls.DataGrid> kontroli.  
@@ -55,7 +52,7 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
 - Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 - Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
@@ -105,7 +102,7 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
 6. Na **wybierz obiekty bazy danych** rozwiń **tabel**, a następnie wybierz następujące tabele:  
   
-   -   **Szczegóły zamówienia sprzedaży**  
+   -   **SalesOrderDetail**  
   
    -   **SalesOrderHeader**  
   
@@ -150,7 +147,7 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
    - **ROWGUID**  
   
-   - **Data modyfikacji**  
+   - **ModifiedDate**  
   
      Ta akcja uniemożliwia tworzenie formantów powiązanych z danymi dla tych węzłów w następnym kroku programu Visual Studio. W tym przewodniku zakłada się, że użytkownik końcowy nie musi widzieć tych danych.  
   
@@ -182,7 +179,7 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
    - **ROWGUID**  
   
-   - **Data modyfikacji**  
+   - **ModifiedDate**  
   
      Ta akcja uniemożliwia tych danych w tym Visual Studio <xref:System.Windows.Controls.DataGrid> formant zostanie utworzony w następnym kroku. W tym przewodniku zakłada się, że użytkownik końcowy nie musi widzieć tych danych.  
   

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771707"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Porady: synchronizowanie zestawu reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Instrukcje: Synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ustawienia analizy kodu dla projektów kodu zasad ewidencjonowania dla projektu zespołowego można zsynchronizować, określając zestaw reguł, który zawiera co najmniej reguły, które są określone w regule ustawić dla zasad ewidencjonowania. Potencjalnych klientów usługi dla deweloperów może poinformować Cię o nazwę i lokalizację zestawu reguł dla zasad ewidencjonowania. Aby upewnić się, że analiza kodu dla projektu używa poprawny zestaw reguł, można użyć jednej z następujących opcji:  
@@ -73,6 +68,3 @@ Ustawienia analizy kodu dla projektów kodu zasad ewidencjonowania dla projektu 
 6.  W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.  
   
 7.  W **Otwórz** okna dialogowego wprowadź plik zestawu reguł.
-
-
-

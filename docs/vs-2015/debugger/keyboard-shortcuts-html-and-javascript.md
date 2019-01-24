@@ -1,14 +1,9 @@
 ---
 title: Skróty klawiaturowe (HTML i JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7313869648a22a2c455f06b73981d788b9f678cc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807208"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794725"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Skróty klawiaturowe (HTML i JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,8 +60,5 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 |Zmniejsz wartość wybranego arkusza CSS o 1|Strzałka w dół|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki Start: Debugowanie HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Szybki start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-
-
-
+ [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

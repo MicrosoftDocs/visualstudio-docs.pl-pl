@@ -1,12 +1,9 @@
 ---
 title: Powiązanie obiektów
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 875ea4491fa91063339008362d132b4416afe2af
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: dedfc71636983a9cbe634551a88eb3de45cb1d99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776878"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Powiązanie obiektów w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +56,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
 -   Zapisywanie danych z obiektów w bazie danych.
 
 > [!NOTE]
->  Aby lepiej zrozumieć i dostarczanie kontekstu przykładach na tej stronie, Sugerujemy, że wykonano następujące czynności: [wskazówki: łączenie z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Ten przewodnik tworzy obiekty omówionych w tym miejscu.
+>  Aby lepiej zrozumieć i dostarczanie kontekstu przykładach na tej stronie, zalecamy wykonanie następujących czynności: [Przewodnik: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Ten przewodnik tworzy obiekty omówionych w tym miejscu.
 
 ### <a name="loaddata-into-objects"></a>Loaddata na obiekty
  W tym przykładzie dane zostały załadowane do obiektów za pomocą adapterów TableAdapter. Domyślnie TableAdapters są tworzone za pomocą dwóch rodzajów metod, które pobierania danych z bazy danych i wypełnianie tabel danych.
@@ -96,9 +93,9 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
 ### <a name="addobjects-to-a-collection"></a>Addobjects do kolekcji
  Dodać obiekty do kolekcji, wywołując `Add` metody klasy kolekcji niestandardowej lub z <xref:System.Windows.Forms.BindingSource>.
 
- Na przykład dodanie do kolekcji za pomocą <xref:System.Windows.Forms.BindingSource>, zobacz `LoadCustomers` method in Class metoda [wskazówki: łączenie z danymi w obiektach (formularze Windows)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Na przykład dodanie do kolekcji za pomocą <xref:System.Windows.Forms.BindingSource>, zobacz `LoadCustomers` method in Class metoda [instruktażu: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Na przykład dodawania obiektów do niestandardowej kolekcji, zobacz `LoadOrders` method in Class metoda [wskazówki: łączenie z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Na przykład dodawania obiektów do niestandardowej kolekcji, zobacz `LoadOrders` method in Class metoda [instruktażu: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 >  `Add` Metody jest dostarczana automatycznie dla niestandardowej kolekcji, gdy dziedziczą z <xref:System.ComponentModel.BindingList%601>.

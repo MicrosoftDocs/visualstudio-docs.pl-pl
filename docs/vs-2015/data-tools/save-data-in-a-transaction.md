@@ -1,12 +1,9 @@
 ---
 title: Zapisywanie danych w ramach transakcji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dc838a144b1218ebec2c8a46c7c200cf5def1153
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 48c8732f75f23a0d0b0929eeef8865044f19d27b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752986"
 ---
 # <a name="save-data-in-a-transaction"></a>Zapisywanie danych w ramach transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

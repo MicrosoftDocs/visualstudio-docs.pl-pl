@@ -1,14 +1,9 @@
 ---
 title: Dostępność produktów i usług firmy Microsoft | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -23,13 +18,13 @@ ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794357"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
   
 |Recording for the Blind & Dyslexic, Inc.|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Numer telefonu z terenu Stanów Zjednoczonych: (800) 221-4792<br /><br /> Numer telefonu spoza Stanów Zjednoczonych i Kanady: (609) 452-0606<br /><br /> Faks: (609) 987-8116<br /><br /> Nagrywanie dla Blind & Dyslexic witryny sieci Web: [ http://www.rfbd.org ](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Numer telefonu ze Stanów Zjednoczonych: (800) 221-4792<br /><br /> Telefon numer spoza Stanów Zjednoczonych i Kanady: (609) 452-0606<br /><br /> Faks: (609) 987-8116<br /><br /> Nagrywanie dla Blind & Dyslexic witryny sieci Web: [ http://www.rfbd.org ](http://go.microsoft.com/fwlink/?LinkId=62504).|  
   
  Adresy sieci Web mogą ulec zmianie, więc może być nie można nawiązać połączenie z wyżej wymienionymi witrynami internetowymi witryny sieci Web.  
   
@@ -87,9 +82,3 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
 ## <a name="see-also"></a>Zobacz też  
  [Zasoby do projektowania dostępnych aplikacji](../../ide/reference/resources-for-designing-accessible-applications.md)   
  [Ułatwienia dostępu w Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-
-
-
-

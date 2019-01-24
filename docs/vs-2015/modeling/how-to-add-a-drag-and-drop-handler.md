@@ -1,25 +1,22 @@
 ---
-title: 'Porady: Dodawanie obsługi przeciągania i upuszczania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie obsługi przeciągania i upuszczania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775838"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Instrukcje: Dodawanie obsługi przeciągania i upuszczania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz dodać procedury obsługi zdarzeń przeciągania i upuszczania do DSL, tak, aby użytkownicy elementy można przeciągać do diagramu z innymi diagramami lub z innymi częściami [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Można również dodać procedury obsługi dla zdarzenia takie jak kliknie dwukrotnie. Razem obsługi przeciągania i upuszczania i kliknij dwukrotnie plik, są znane jako *procedury obsługi gestów*.  
@@ -38,7 +35,7 @@ Możesz dodać procedury obsługi zdarzeń przeciągania i upuszczania do DSL, t
   
 -   [Jak uzyskać oryginalny przeciągnąć element](#getOriginal). Jeśli przeciąganego elementu jest elementem DSL, możesz otworzyć model źródłowy i dostęp do elementu.  
   
--   [Za pomocą akcji myszy: Przeciąganie elementów z przedziału](#mouseActions). W przykładzie pokazano program obsługi niższego poziomu, który przechwytuje akcje myszy na pola kształtu. Przykład pozwala użytkownikowi na kolejność elementów na przedział, przeciągając myszą.  
+-   [Za pomocą akcji myszy: Przeciąganie elementów na przedział](#mouseActions). W przykładzie pokazano program obsługi niższego poziomu, który przechwytuje akcje myszy na pola kształtu. Przykład pozwala użytkownikowi na kolejność elementów na przedział, przeciągając myszą.  
   
 ##  <a name="overrideShapeElement"></a> Definiowanie procedury obsługi gestu przez zastąpienie metody ShapeElement  
  Dodaj nowy plik kodu do projektu DSL. W przypadku obsługi gestu można zwykle musi mieć co najmniej następujące `using` instrukcji:  
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana, gdy użytkownik kliknie dwukrotnie kształt lub diagram.  
   
-   Aby uzyskać więcej informacji, zobacz [porady: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Aby uzyskać więcej informacji, zobacz [jak: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
   Zdefiniuj `IsAcceptableDropItem(e)` Aby ustalić, czy jest dopuszczalne przeciąganego elementu i ProcessDragDropItem(e) aktualizacji modelu, gdy element zostanie porzucony. Te metody należy najpierw wyodrębnić elementu na podstawie argumentów zdarzeń. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak odwołać się do przeciągniętego elementu](#extracting).  
   
@@ -339,7 +336,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a> Za pomocą akcji myszy: Przeciąganie elementów z przedziału  
+##  <a name="mouseActions"></a> Za pomocą akcji myszy: Przeciąganie elementów na przedział  
  Można napisać program obsługi, który przechwytuje akcje myszy na pola kształtu. Poniższy przykład pozwala użytkownikowi na kolejność elementów na przedział, przeciągając myszą.  
   
  Aby skompilować ten przykład, należy utworzyć rozwiązanie za pomocą **diagramów klas** szablonu rozwiązania. Dodawanie pliku z kodem i Dodaj następujący kod. Dostosuj przestrzeni nazw, aby być taka sama jak własne.  
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)   
  [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

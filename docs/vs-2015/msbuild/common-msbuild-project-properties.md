@@ -1,14 +1,9 @@
 ---
 title: Wspólne właściwości projektów MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300056"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758473"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Następująca tabela zawiera listę często używanych właściwości, które s�
 |BuildInParallel|Wartość logiczna, która wskazuje, czy odwołania do projektu są wbudowane lub czyszczone równolegle, kiedy wieloprocesowym [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] jest używany. Wartość domyślna to `true`, co oznacza, że projekty będą kompilowane równolegle, jeśli system ma wiele rdzeni lub procesorów.|  
 |BuildProjectReferences|Wartość logiczna, która wskazuje, czy odwołania w projekcie są kompilowane przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Ustaw `false` Jeśli tworzysz projekt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE), `true` Jeśli inaczej.|  
 |CleanFile|Nazwa pliku, który będzie używany jako "clean cache". Wyczyść pamięć podręczną znajduje się lista wygenerowanych plików, które zostaną usunięte podczas operacji czyszczenia. Plik jest umieszczony w pośredniej ścieżce wyjściowej przez proces kompilacji.<br /><br /> Ta właściwość określa tylko nazwy plików, które nie mają informacji o ścieżce.|  
-|Strona kodowa|Określa stronę kodową dla wszystkich plików kodu źródłowego w kompilacji. Ta właściwość jest równoważna `/codepage` przełącznika kompilatora.|  
+|CodePage|Określa stronę kodową dla wszystkich plików kodu źródłowego w kompilacji. Ta właściwość jest równoważna `/codepage` przełącznika kompilatora.|  
 |CompilerResponseFile|Opcjonalny plik odpowiedzi, który może być przekazywany do zadań kompilatora.|  
 |Konfiguracja|Konfiguracja, który jest kompilowany "Debug" lub "Wersja".|  
 |CscToolPath|Ścieżka csc.exe, [!INCLUDE[csprcs](../includes/csprcs-md.md)] kompilatora.|  
@@ -72,8 +67,8 @@ Następująca tabela zawiera listę często używanych właściwości, które s�
 |DisableFastUpToDateCheck|Wartość logiczna, która ma zastosowanie do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tylko. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kompilacji manager używa procesu o nazwie FastUpToDateCheck, aby ustalić, czy projekt musi zostać zrekompilowany, aby być na bieżąco. Ten proces jest szybszy niż używanie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Aby to ustalić. Ustawienie właściwości DisableFastUpToDateCheck na `true` pozwala ominąć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Menedżer kompilacji i wymusić użycie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] do określenia, czy projekt jest aktualny.|  
 |DocumentationFile|Nazwa pliku, który zostanie wygenerowany jako plik dokumentacji XML. Ta nazwa zawiera tylko nazwę pliku i nie ma ścieżki informacji.|  
 |ErrorReport|Określa, jak zadanie kompilatora powinno zgłosić wewnętrzne błędy kompilatora. Prawidłowe wartości to "prompt", "Wyślij" lub "none". Ta właściwość jest równoważna `/errorreport` przełącznika kompilatora.|  
-|ExcludeDeploymentUrl|[Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md) spowoduje dodanie znacznika deploymentProvider do manifestu wdrażania, jeśli plik projektu zawiera któreś z następujących elementów:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Za pomocą ExcludeDeploymentUrl, jednak uniemożliwia znacznik deploymentProvider dodawane do pliku manifestu wdrożenia, nawet jeśli żadnego z powyższych adresów URL są określone. Aby to zrobić, dodaj następującą właściwość w pliku projektu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Uwaga:** ExcludeDeploymentUrl nie jest dostępny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE i można go ustawić tylko przez ręczną edycję pliku projektu. Ustawienie tej właściwości nie wpływa na publikowanie w ramach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; oznacza to, że znacznik deploymentProvider nadal będzie dodawany do adresu URL określonego przez PublishUrl.|  
-|Dla właściwości FileAlignment|Określa w bajtach, gdzie należy wyrównać sekcje pliku wyjściowego. Prawidłowe wartości to 512, 1024, 2048, 4096 i 8192. Ta właściwość jest równoważna `/filealignment` przełącznika kompilatora.|  
+|ExcludeDeploymentUrl|[Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md) spowoduje dodanie znacznika deploymentProvider do manifestu wdrażania, jeśli plik projektu zawiera któreś z następujących elementów:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Za pomocą ExcludeDeploymentUrl, jednak uniemożliwia znacznik deploymentProvider dodawane do pliku manifestu wdrożenia, nawet jeśli żadnego z powyższych adresów URL są określone. Aby to zrobić, dodaj następującą właściwość w pliku projektu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Uwaga:**  ExcludeDeploymentUrl nie jest dostępny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE i można go ustawić tylko przez ręczną edycję pliku projektu. Ustawienie tej właściwości nie wpływa na publikowanie w ramach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; oznacza to, że znacznik deploymentProvider nadal będzie dodawany do adresu URL określonego przez PublishUrl.|  
+|FileAlignment|Określa w bajtach, gdzie należy wyrównać sekcje pliku wyjściowego. Prawidłowe wartości to 512, 1024, 2048, 4096 i 8192. Ta właściwość jest równoważna `/filealignment` przełącznika kompilatora.|  
 |FrameworkPathOverride|Określa lokalizację mscorlib.dll i microsoft.visualbasic.dll. Ten parametr jest równoważny `/sdkpath` przełącznika kompilatora vbc.exe.|  
 |GenerateDocumentation|Parametr logiczny, który wskazuje, czy dokumentacja jest generowana przez kompilację. Jeśli `true`, kompilacja generuje informacje o dokumentacji i umieszcza go w pliku XML wraz z nazwą pliku wykonywalnego lub biblioteki, utworzonego przez zadanie kompilacji.|  
 |IntermediateOutputPath|Pełna pośrednia ścieżka wyjściowa wyprowadzana z `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład \obj\debug\\. Jeśli ta wartość zostanie zastąpiona, ustawienie `BaseIntermediateOutputPath` nie ma wpływu.|  
@@ -86,10 +81,10 @@ Następująca tabela zawiera listę często używanych właściwości, które s�
 |NoVBRuntimeReference|Wartość logiczna, która wskazuje, czy [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] środowiska uruchomieniowego (Microsoft.VisualBasic.dll) powinno być zawarte jako odwołanie w projekcie.|  
 |NoWin32Manifest|Wartość logiczna, która wskazuje, czy informacje manifestu kontroli konta użytkownika (UAC) będą osadzone w aplikacji pliku wykonywalnym. Ma zastosowanie tylko do projektów programu Visual Studio przeznaczonych dla [!INCLUDE[windowsver](../includes/windowsver-md.md)]. W projektach wdrożonych za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i rejestracji wolnego modelu COM ten element jest ignorowany. `False` (wartość domyślna) określa, że informacje manifestu kontroli konta użytkownika (UAC) można osadzić w pliku wykonywalnym aplikacji. `True` Określa, że informacje manifestu kontroli konta użytkownika nie można osadzić.<br /><br /> Ta właściwość ma zastosowanie tylko do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektów przeznaczonych dla [!INCLUDE[windowsver](../includes/windowsver-md.md)]. W projektach wdrożonych za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i rejestracji wolnego modelu COM ta właściwość jest ignorowana.<br /><br /> NoWin32Manifest należy dodawać tylko wtedy, gdy nie chcesz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] celu osadzania manifestów wszelkie informacje zawarte w aplikacji pliku wykonywalnym; ten proces jest nazywany *wirtualizacji*. Aby korzystać z wirtualizacji, ustaw `<ApplicationManifest>` w połączeniu z `<NoWin32Manifest>` w następujący sposób:<br /><br /> -Aby [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów, Usuń `<ApplicationManifest>` węzła. (W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów `<NoWin32Manifest>` jest ignorowany, kiedy `<ApplicationManifest>` istnieje węzeł.)<br />-Aby [!INCLUDE[csprcs](../includes/csprcs-md.md)] projekty, ustawiać `<ApplicationManifest>` do `False` i `<NoWin32Manifest>` do `True`. (W [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektów `<ApplicationManifest>` zastępuje `<NoWin32Manifest>`.)|  
 |Optymalizuj|Wartość logiczna, która po ustawieniu `true`, umożliwia optymalizacje kompilatora. Ta właściwość jest równoważna `/optimize` przełącznika kompilatora.|  
-|Optioncompare —|Określa, jak są wykonywane porównywania ciągów. Prawidłowe wartości to "binary" lub "text". Ta właściwość jest równoważna `/optioncompare` przełącznika kompilatora vbc.exe.|  
+|OptionCompare|Określa, jak są wykonywane porównywania ciągów. Prawidłowe wartości to "binary" lub "text". Ta właściwość jest równoważna `/optioncompare` przełącznika kompilatora vbc.exe.|  
 |OptionExplicit|Wartość logiczna, która po ustawieniu `true`, wymaga jawnej deklaracji zmiennych w kodzie źródłowym. Ta właściwość jest równoważna `/optionexplicit` przełącznika kompilatora.|  
 |Optioninfer —|Wartość logiczna, która po ustawieniu `true`, należy wpisać umożliwia zmiennym odwoływanie. Ta właściwość jest równoważna `/optioninfer` przełącznika kompilatora.|  
-|Optionstrict —|Wartość logiczna, która po ustawieniu `true`, powoduje, że zadanie kompilacji wymusza semantykę typów ścisłych w celu ograniczenia niejawnych konwersji typów. Ta właściwość jest równoważna `/optionstrict` przełącznika kompilatora vbc.exe.|  
+|OptionStrict|Wartość logiczna, która po ustawieniu `true`, powoduje, że zadanie kompilacji wymusza semantykę typów ścisłych w celu ograniczenia niejawnych konwersji typów. Ta właściwość jest równoważna `/optionstrict` przełącznika kompilatora vbc.exe.|  
 |OutputPath|Określa ścieżkę do katalogu wyjściowego względem katalogu projektu, na przykład "bin\Debug".|  
 |Atrybut OutputType|Określa format pliku wyjściowego. Ten parametr może mieć jedną z następujących wartości:<br /><br /> — Biblioteka. Tworzy bibliotekę kodu. (Wartość domyślna).<br />-Exe. Tworzy aplikację konsoli.<br />-Moduł. Tworzy moduł.<br />-Winexe. Tworzy program oparty na Windows.<br /><br /> Ta właściwość jest równoważna `/target` przełącznika kompilatora vbc.exe.|  
 |OverwriteReadOnlyFiles|Wartość logiczna wskazująca, czy chcesz włączyć kompilacji zastąpić pliki tylko do odczytu czy wyzwalała błąd.|  
@@ -120,9 +115,9 @@ Następująca tabela zawiera listę często używanych właściwości, które s�
 |Satellite_Version|Określa informacje o wersji dla zestawu satelickiego.|  
 |Satellite_Win32Icon|Wstawia plik ikony .ico w zestawie satelickim.|  
 |Satellite_Win32Resource|Wstawia zasób Win32 (plik .res) do zestawu satelickiego.|  
-|Subsystemversion —|Określa minimalną wersję podsystemu, którego wygenerowany plik wykonywalny może używać. Ta właściwość jest równoważna `/subsystemversion` przełącznika kompilatora. Aby uzyskać informacje o wartości domyślnej tej właściwości, zobacz [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) lub [/subsystemversion (opcje kompilatora C#)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Określa minimalną wersję podsystemu, którego wygenerowany plik wykonywalny może używać. Ta właściwość jest równoważna `/subsystemversion` przełącznika kompilatora. Aby uzyskać informacje o wartości domyślnej tej właściwości, zobacz [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) lub [/subsystemversion (opcje kompilatora C#)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Wersja platformy .NET Compact Framework, która jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej.|  
-|targetFrameworkVersion|Wersja [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej.|  
+|TargetFrameworkVersion|Wersja [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej.|  
 |TreatWarningsAsErrors|Parametr logiczny który, jeśli `true`, powoduje, że wszystkie ostrzeżenia są traktowane jako błędy. Ten parametr jest równoważny `/nowarn` przełącznika kompilatora.|  
 |UseHostCompilerIfAvailable|Parametr logiczny który, jeśli `true`, powoduje, że zadanie kompilacji używa obiektu wewnątrzprocesowego kompilatora, jeśli jest ona dostępna. Ten parametr jest używany tylko przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |Utf8output —|Parametr logiczny który, jeśli `true`, rejestruje dane wyjściowe kompilatora przy użyciu kodowania UTF-8. Ten parametr jest równoważny `/utf8Output` przełącznika kompilatora.|  
@@ -136,6 +131,3 @@ Następująca tabela zawiera listę często używanych właściwości, które s�
   
 ## <a name="see-also"></a>Zobacz też  
  [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
-
-
-

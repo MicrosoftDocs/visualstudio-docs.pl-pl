@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Korzystanie z okna modułów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z okna modułów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,15 +26,15 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769646"
 ---
-# <a name="how-to-use-the-modules-window"></a>Porady: korzystanie z okna modułów
+# <a name="how-to-use-the-modules-window"></a>Instrukcje: Korzystanie z okna modułów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
@@ -83,11 +78,6 @@ UWAGA]
 2.  Wskaż **ustawienia automatycznego ładowania symboli** a następnie kliknij przycisk **zawsze obciążenia ręcznie** lub **domyślne**. Zmiana zostanie wprowadzona dopiero po ponownym uruchomieniu sesji debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przerwanie wykonywania](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Przerwanie wykonywania](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
  [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-

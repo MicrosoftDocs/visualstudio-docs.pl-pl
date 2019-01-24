@@ -1,14 +1,9 @@
 ---
 title: Dodawanie Menu skrótów w oknie narzędzia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
 - menus, context menus
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 179a103475a47be95cbf45f88640b8a635a7ff34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5587c559615bcf6ae17a445490951c32741086c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796223"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797529"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -286,4 +281,3 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
 ## <a name="see-also"></a>Zobacz też  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Korzystanie z usług i dostarczanie ich](../extensibility/using-and-providing-services.md)
-

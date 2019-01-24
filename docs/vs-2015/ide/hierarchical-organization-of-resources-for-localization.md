@@ -1,14 +1,9 @@
 ---
 title: Hierarchiczna organizacja zasobów do lokalizacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - resource files, localized
 - localization [Visual Studio], resources
@@ -23,13 +18,13 @@ ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 11eeaa2c6742675372acf8b96280737f556c7799
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797067"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Hierarchiczna organizacja zasobów do lokalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,5 @@ W programie Visual Studio zlokalizowane zasoby (dane, takie jak ciągi i odpowie
  [Zabezpieczenia a zlokalizowane zestawy satelickie](../ide/security-and-localized-satellite-assemblies.md)   
  [Lokalizowanie aplikacji](../ide/localizing-applications.md)   
  [Globalizacja i lokalizacja aplikacji](../ide/globalizing-and-localizing-applications.md)   
- [Porady: Ustawianie kultury i kultury UI dla globalizacji formularzy Windows](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
- [Porady: Ustawianie kultury i kultury UI dla globalizacji strony sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
-
+ [Instrukcje: Ustawianie kultury i kultury UI dla globalizacji formularzy Windows](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
+ [Instrukcje: Ustawianie kultury i kultury UI dla globalizacji strony sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

@@ -1,11 +1,8 @@
 ---
-title: 'Porady: używanie edytora wyrażeń | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Używanie edytora wyrażeń | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
@@ -13,15 +10,15 @@ ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181723"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800340"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Porady: używanie edytora wyrażeń
+# <a name="how-to-use-the-expression-editor"></a>Instrukcje: Używanie edytora wyrażeń
 Edytor wyrażeń jest [!INCLUDE[wfd1](../includes/wfd1-md.md)] formant, który jest używany w wielu działań przepływu pracy jako sposób wprowadzania i tych wyrażeń. Edytora wyrażeń zapewnia w pełni funkcjonalnego środowiska IDE, środowisko, w tym funkcji IntelliSense, edytowania kolorowanie, ParamInfo, między innymi funkcjami zygzaki sygnalizujące błędy. Kompilator sprawdza się wyrażenie po jej wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, jest wyświetlana ikona błędu. Można również otworzyć Edytor jako **edytora wyrażeń** okno dialogowe.  
   
  Wyrażenia są wartości literałów lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodu powiązany z argumentami lub właściwości. Zawierają one elementy wartości (np. zmienne, stałe, literały, właściwości), które są połączone z operacjami umożliwiające uzyskanie nową wartość. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie przy użyciu języka C#. Oznacza to, wielkość liter nie ma znaczenia, porównanie odbywa się przy użyciu pojedynczy znak równości ("=") zamiast ("=="), operatory logiczne są wyrazy "i" i "or" zamiast symbole "& &" i "&#124;&#124;", i **nic**  jest używana zamiast **null**. Aby uzyskać więcej informacji na temat wyrażenia i operatory w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i uzyskać kilka przykładów, zobacz [operatory i wyrażenia w języku Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).  

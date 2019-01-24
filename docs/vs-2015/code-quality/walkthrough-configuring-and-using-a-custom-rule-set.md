@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Konfigurowanie i używanie niestandardowego zestawu reguł | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Konfigurowanie i używanie niestandardowego zestawu reguł | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,14 +12,14 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780103"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Wskazówki: konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Przewodnik: Konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonfigurowane do użycia dostosowany *zestaw reguł* w bibliotece klas. Możesz wybrać zestaw reguł, który odnosi się do typu projektu, który został określony dla rozwiązania, lub wybrać alternatywne reguły zestawy, aby spełnić szczególną potrzebę, takie jak skanowanie ze starszym kodem dla problemów, które można naprawić w sposób nieprzerywającymi działania aplikacji. W obu przypadkach można także dostosowywać w celu dostosowania ich do wymagań projektu zestawów reguł.  
@@ -77,7 +72,7 @@ Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonf
    > [!TIP]
    >  W rzeczywistych sytuacji, dobrą praktyką jest nadawanie priorytetów problemy, które chcesz przeanalizować za pomocą analizy kodu na użytek jest rozpoczęcie od **Minimum Rules zalecane** zestaw reguł i rozwiązać problemy żądaną i stopniowo dodawać więcej reguł lub reguła ustawia znaleźć i poprawić dodatkowe problemy.  
   
-   Następnie dodasz kod do biblioteki klas, które będzie używane w celu wykazania naruszeń CA1704 "Identyfikatory powinny być zapisane poprawnie" reguł analizy kodu. Aby uzyskać więcej informacji, zobacz [CA1704: identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+   Następnie dodasz kod do biblioteki klas, które będzie używane w celu wykazania naruszeń CA1704 "Identyfikatory powinny być zapisane poprawnie" reguł analizy kodu. Aby uzyskać więcej informacji, zobacz [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
 #### <a name="add-your-own-code"></a>Dodaj własny kod  
   
@@ -158,8 +153,5 @@ Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonf
 2.  W oknie Lista błędów, należy zauważyć, że po kliknięciu **ostrzeżenia**, nie są już wyświetlane CA1704 ostrzeżenie naruszenia reguły "Identyfikatory powinny być zapisane poprawnie".  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Informacje o zestawie reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

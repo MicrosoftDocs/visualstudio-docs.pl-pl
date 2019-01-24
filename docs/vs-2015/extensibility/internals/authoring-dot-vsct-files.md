@@ -1,26 +1,21 @@
 ---
 title: Tworzenie. Pliki Vsct | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9500aa0d35c0bf74e63c50d84d2e4aae4dfd543
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776440"
 ---
 # <a name="authoring-vsct-files"></a>Tworzenie. Pliki Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
  Dla nowych projektów zaleca się użyć szablonu pakiet rozszerzeń Visual Studio, ponieważ generuje on pliku vsct, który w zależności od ustawień, ma już elementy wymagane dla polecenia menu, okna narzędzi lub niestandardowy Edytor. Można zmodyfikować tego pliku vsct do wymagań Twojego pakietu VSPackage. Aby uzyskać więcej informacji na temat sposobu modyfikowania pliku vsct Zobacz przykłady w [rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="authoring-the-file"></a>Tworzenie pliku  
- Tworzenie pliku vsct w tych etapów: tworzenie struktury plików i zasobów, Zadeklaruj elementy interfejsu użytkownika, umieść elementy interfejsu użytkownika w środowisku IDE i Dodaj wszelkie specjalne zachowania.  
+ Tworzenie pliku vsct w tych etapów: Tworzenie struktury plików i zasobów, Zadeklaruj elementy interfejsu użytkownika, umieść elementy interfejsu użytkownika w środowisku IDE i Dodaj wszelkie specjalne zachowania.  
   
 ### <a name="file-structure"></a>Struktura plików  
  Podstawowa struktura pliku vsct jest [CommandTable](../../extensibility/commandtable-element.md) element główny, który zawiera [polecenia](../../extensibility/commands-element.md) elementu i [symbole](../../extensibility/symbols-element.md) elementu.  
   
 ##### <a name="to-create-the-file-structure"></a>Tworzenie struktury pliku  
   
-1.  Dodawanie pliku vsct do projektu, wykonując kroki opisane w [porady: tworzenie. Pliku Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Dodawanie pliku vsct do projektu, wykonując kroki opisane w [jak: Tworzenie. Pliku Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2.  Dodaj wymagane przestrzenie nazw do `CommandTable` elementu, jak pokazano w poniższym przykładzie.  
   
@@ -208,7 +203,7 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
   
    - CommandWellOnly  
   
-   - KlawiszeFiltru  
+   - FilterKeys  
   
    - NoAutoComplete  
   
@@ -244,4 +239,3 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
  [Rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md)   
  [Tabeli poleceń programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
-

@@ -1,11 +1,8 @@
 ---
 title: Interop, Projektant działań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Interop.UI
@@ -13,13 +10,13 @@ ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 587f9017e7f2c76018fbb5eb98645f5e4c19216c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767534"
 ---
 # <a name="interop-activity-designer"></a>Interop, projektant działań
 **Międzyoperacyjności** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Interop> działania.  
@@ -46,7 +43,7 @@ ms.locfileid: "49283038"
 |Nazwa właściwości|Wymagane|Użycie|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Interop> działania. Wartość domyślna to międzyoperacyjności. Chociaż nazwa wyświetlana nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć nazwy wyświetlanej.|  
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Określa typ działania zawarte w <xref:System.Activities.Statements.Interop> działania. Ten typ określony muszą pochodzić od <xref:System.Workflow.ComponentModel.Activity>.|  
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Prawda|Określa typ działania zawarte w <xref:System.Activities.Statements.Interop> działania. Ten typ określony muszą pochodzić od <xref:System.Workflow.ComponentModel.Activity>.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Migracja](../workflow-designer/migration-activity-designers.md)

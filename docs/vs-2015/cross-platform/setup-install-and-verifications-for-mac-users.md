@@ -1,21 +1,17 @@
 ---
 title: Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fca4f8ef2d3fb1272dc835b4bedd7dcdcc83725f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772836"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772038"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +27,7 @@ W tym temacie jest przeznaczona dla deweloperów pracy przede wszystkim na kompu
   
 - Jeden z następujących konfiguracji:  
   
-  -   **Do uruchamiania programu Xamarin Studio bezpośrednio na komputerze Mac:** Xamarin Studio to środowisko programistyczne dla platformy Xamarin, które obsługuje tworzenie aplikacji systemu Android, iOS i Windows przy użyciu języka C#.  Aby uzyskać szybki przegląd programu Xamarin Studio, zobacz [Omówienie programu Xamarin Studio](https://xamarin.com/studio) (strony xamarin.com).  
+  -   **Aby uzyskać uruchomiony program Xamarin Studio bezpośrednio na komputerze Mac:** Program Xamarin Studio to środowisko programistyczne dla platformy Xamarin, które obsługuje tworzenie aplikacji systemu Android, iOS i Windows przy użyciu C#.  Aby uzyskać szybki przegląd programu Xamarin Studio, zobacz [Omówienie programu Xamarin Studio](https://xamarin.com/studio) (strony xamarin.com).  
   
   -   **Jeśli masz już Parallels lub VMWare skonfigurowane na komputerze Mac:** uruchamiania Windows z programem Visual Studio 2015 i 4 Xamarin wewnątrz Parallels lub VMWare.  W przypadku tej konfiguracji platformy Xamarin to rozszerzenie, które jest instalowane z Visual Studio, który zapewnia możliwość używania programu Visual Studio jako środowiska programowania do tworzenia aplikacji systemu Android, iOS i WinPhone przy użyciu języka C#.  Należy zwrócić uwagę na to, czy można uzyskać bezpłatną subskrypcję równoleżników 3-miesięczna jako część programu Visual Studio Developer Essentials. Zobacz [Parallels dostępu i Microsoft Visual Studio Dev Essentials będzie zawierać Parallels Desktop Pro](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (blog oprogramowania Parallels).  
   
@@ -57,7 +53,7 @@ W tym temacie jest przeznaczona dla deweloperów pracy przede wszystkim na kompu
   
 ##  <a name="windows"></a> Instalator Windows wewnątrz równoleżników (Visual Studio i Xamarin)  
   
-1.  Przy użyciu programu Windows desktop, skonfigurowanego wewnątrz Parallels/VMWare, [Pobierz i uruchom Instalatora programu Visual Studio 2015 w każdej wersji](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional lub Enterprise). Visual Studio 2015 Community jest bezpłatną; wersje Professional i Enterprise może służyć do wypróbowania przez 30 dni.  
+1.  Przy użyciu programu Windows desktop, skonfigurowanego wewnątrz Parallels/VMWare, [Pobierz i uruchom Instalatora programu Visual Studio 2015 w każdej wersji](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional lub Enterprise). Visual Studio 2015 Community jest bezpłatną; wersje Professional i Enterprise może służyć do wypróbowania przez 30 dni.  
   
 2.  W oknie Instalatora wybierz **niestandardowe** instalacji:  
   
@@ -138,4 +134,3 @@ W tym temacie jest przeznaczona dla deweloperów pracy przede wszystkim na kompu
    3.  Wybierz obiekt docelowy dla telefonu iPhone z rozwijanej debugowania programu Visual Studio, jak pokazano poniżej, a następnie uruchom debuger, naciskając klawisz F5. Spowoduje to uruchomienie symulator na komputerze Mac, w którym interakcji z aplikacją, podczas gdy profilowanie odbywa się w programie Visual Studio.  
   
         ![Wybieranie obiektu docelowego debugowania dla telefonu iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Sprawdź 6")
-

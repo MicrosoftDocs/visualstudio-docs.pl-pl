@@ -1,14 +1,9 @@
 ---
 title: Edytor obrazów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768306"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +32,8 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |Nazwa formatu|Rozszerzenie nazwy pliku|  
 |-----------------|-------------------------|  
 |Portable Network Graphics|.png|  
-|JPEG|jpg, JPEG, jpe, jfif|  
-|Bezpośrednie powierzchni rysowania|.DDS|  
+|JPEG|.jpg, .jpeg, .jpe, .jfif|  
+|Bezpośrednie powierzchni rysowania|.dds|  
 |Graphics Interchange Format|.gif|  
 |Mapy bitowej|.bmp, .dib|  
 |Plik TIFF|.tif, .tiff|  
@@ -68,7 +63,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
  **Obraz GIF (.gif)**  
  Format obrazu Graphics (Interchange Format GIF). Format obrazu skompresowanej LZW, bezstratne, która obsługuje maksymalnie 256 kolorów. Nie nadaje się do fotografii i obrazów, które znacznej ilości szczegółów kolorów, ale zapewnia współczynniki kompresji dobre na samych obrazach niska color, które mają wysoki stopień spójności kolorów.  
   
- **Obraz JPG (.jpg)**  
+ **JPG Image (.jpg)**  
  Format obrazu wspólnego fotograficzne ekspertów Group (JPEG). Format wysoce skompresowany, stratnej obrazu, który obsługuje 24-bitowe i nadaje się do ogólnego przeznaczenia kompresji obrazów, które mają wysoki stopień spójności kolor.  
   
  **Obraz PNG (.png)**  
@@ -116,10 +111,10 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Siatka**|Włącza lub wyłącza siatki, który pokazuje pikseli. Siatka mogą nie być wyświetlane, dopóki powiększenie obrazu.|  
 |**Wyświetlanie następnego poziomu MIP**|Aktywuje następnego poziomu MIP większe w łańcuch mapy MIP. Aktywne poziom MIP jest wyświetlany na powierzchni projektowej. Ten element jest dostępna tylko dla tekstur, które mają poziomy MIP.|  
 |**Wyświetl poprzedniego poziomu MIP**|Aktywuje następnego poziomu MIP mniejszych w łańcuch mapy MIP. Aktywne poziom MIP jest wyświetlany na powierzchni projektowej. Ten element jest dostępna tylko dla tekstur, które mają poziomy MIP.|  
-|**Kanał czerwony**<br /><br /> **Kanał zielony**<br /><br /> **Kanał niebieski**<br /><br /> **Kanał alfa**|Włącza lub wyłącza kanał określony kolor. **Uwaga:** systematycznie włączając lub wyłączając kanałów koloru, można wyizolować problemy, które są powiązane z co najmniej jeden z nich. Na przykład można zidentyfikować niepoprawne alfa przezroczystości.|  
+|**Kanał czerwony**<br /><br /> **Kanał zielony**<br /><br /> **Kanał niebieski**<br /><br /> **Kanał alfa**|Włącza lub wyłącza kanał określony kolor. **Uwaga:**  Systematycznie włączając lub wyłączając kanałów koloru, można wyizolować problemy, które są powiązane z co najmniej jeden z nich. Na przykład można zidentyfikować niepoprawne alfa przezroczystości.|  
 |**Tło**|Włącza lub wyłącza wyświetlanie tło przezroczyste fragmenty obrazu. Można skonfigurować sposób wyświetlania tła, wybierając następujące opcje:<br /><br /> **Szachownica**<br /> Użyto kolor zielony, wraz z określonego tłem, aby wyświetlić tło jako wzorzec szachownicy. Ta opcja umożliwia sprawić, że przezroczysty części obrazu bardziej oczywista.<br /><br /> Białe tło<br /> Użyto kolor biały, aby wyświetlić tło.<br /><br /> Czarne tło<br /> Użyto kolor czarny, aby wyświetlić tło.<br /><br /> Tło animowane<br /> Przesuwa wzorzec szachownicy powoli. Ta opcja umożliwia sprawić, że przezroczysty części obrazu bardziej oczywista.|  
 |**Właściwości**|Zamiennie otwiera i zamyka **właściwości** okna.|  
-|**Zaawansowane**|Zawiera dodatkowe polecenia i opcje.<br /><br /> **Filtry**<br /><br /> Zapewnia kilka wspólnych filtrów obrazu: **czarno-biały**, **Rozmycie**, **Brighten**, **Ciemniej**, **wykrywania krawędzi**, **Trójwymiarowej**, **Odwróć kolory**, **Ripple**, **ton Sepia**, i **doskonalenie**.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie z D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania edytora obrazów.<br /><br /> **Renderowanie z D3D11WARP**<br /> Używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania powierzchni projektowania edytora obrazu.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć w poziomie**<br /> Podstawianie obrazu wokół jego osi poziomej lub x.<br /><br /> **Przerzuć w pionie**<br /> Podstawianie obrazu wokół jego osi pionowej lub y.<br /><br /> **Generuj Mips**<br /> Generuje poziomów MIP dla obrazu. Jeśli istnieje poziomów MIP, są ponownie tworzone z największego poziomu MIP. Wszelkie zmiany wprowadzone w mniejszym poziomom MIP zostaną utracone. Aby zapisać poziomów MIP, które zostały wygenerowane, musi być w formacie .dds zapisania obrazu.<br /><br /> **Widok**<br /><br /> **Szybkość klatek**<br /> Po włączeniu Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. **Porada:** możesz wybrać **zaawansowane** przycisk, aby ponownie uruchomić ostatnie polecenie.|  
+|**Zaawansowane**|Zawiera dodatkowe polecenia i opcje.<br /><br /> **Filtry**<br /><br /> Zapewnia kilka wspólnych filtrów obrazu: **Czarno-biały**, **Rozmycie**, **rozjaśnić**, **ciemniejszy**, **wykrywania krawędzi**, **trójwymiarowej**, **Odwróć kolory**, **Ripple**, **ton Sepia**, i **doskonalenie**.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie z D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania edytora obrazów.<br /><br /> **Renderowanie z D3D11WARP**<br /> Używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania powierzchni projektowania edytora obrazu.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć w poziomie**<br /> Podstawianie obrazu wokół jego osi poziomej lub x.<br /><br /> **Przerzuć w pionie**<br /> Podstawianie obrazu wokół jego osi pionowej lub y.<br /><br /> **Generuj Mips**<br /> Generuje poziomów MIP dla obrazu. Jeśli istnieje poziomów MIP, są ponownie tworzone z największego poziomu MIP. Wszelkie zmiany wprowadzone w mniejszym poziomom MIP zostaną utracone. Aby zapisać poziomów MIP, które zostały wygenerowane, musi być w formacie .dds zapisania obrazu.<br /><br /> **Widok**<br /><br /> **Szybkość klatek**<br /> Po włączeniu Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. **Porada:**  Możesz wybrać **zaawansowane** przycisk, aby ponownie uruchomić ostatnie polecenie.|  
   
  Oto **edytora obrazów** paska narzędzi.  
   
@@ -132,7 +127,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Ołówka**|Używa kodowania aktywnego koloru do rysowania pociągnięcie aliasem. Można ustawić kolor i grubość obrysu w **właściwości** okna.|  
 |**Pędzel**|Używa kodowania aktywnego koloru do rysowania pociągnięcie wygładzanie. Można ustawić kolor i grubość obrysu w **właściwości** okna.|  
 |**Aerograf**|Używa wybór koloru active do rysowania pociągnięcie wygładzanie miesza wraz z obrazu, która staje się bardziej nasycony funkcji czasu. Można ustawić kolor i grubość obrysu w **właściwości** okna.|  
-|**Pipeta**|Ustawia kolor wybrany piksel wybór koloru active.|  
+|**Eyedropper**|Ustawia kolor wybrany piksel wybór koloru active.|  
 |**Wypełnienie**|Używa wybór koloru active do wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienie wraz z każdy piksel, który jest z nią połączona pikseli tego samego koloru i to ten sam kolor, sam. Jeśli wypełnienie jest stosowana w ramach aktywnego zaznaczenia, dotyczy region jest ograniczone przez zaznaczenie.<br /><br /> Domyślnie wybór koloru active jest zmieszana wraz z zainfekowanego region obrazu zgodnie z jego składnik alfa. Aby użyć wybór koloru active zastąpić dotyczy region, naciśnij i przytrzymaj klawisz Shift podczas używania narzędzia wypełnienia.|  
 |**Gumka**|Jeśli obraz, który obsługuje kanał alfa, ustawia piksele, aby całkowicie przezroczysty kolor. W przeciwnym razie piksele Ustawia kolor tła active.|  
 |**Wiersz**, **prostokąt**, **prostokąt zaokrąglony**, **wielokropka**|Rysuje kształt na obrazie. Można ustawić kolor i grubość konturu w **właściwości** okna.<br /><br /> Aby narysować elementu podstawowego, który ma równa szerokość i wysokość, naciśnij i przytrzymaj klawisz Shift podczas rysowania.|  
@@ -141,7 +136,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**TRIM**|Przycina obraz do aktywnego zaznaczenia.|  
   
 ### <a name="working-with-mip-levels"></a>Praca z poziomów MIP  
- Niektóre formaty obrazów — na przykład, DirectDraw Surface (.dds) — Obsługa poziomów MIP przestrzeni tekstury poziomu z Detail (poziomu). Aby uzyskać informacje o tym, jak generować i pracować z poziomami MIP, zobacz [porady: tworzenie i modyfikowanie poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Niektóre formaty obrazów — na przykład, DirectDraw Surface (.dds) — Obsługa poziomów MIP przestrzeni tekstury poziomu z Detail (poziomu). Aby uzyskać informacje o tym, jak generować i pracować z poziomami MIP, zobacz [jak: Tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Praca z przezroczystością  
  Niektóre formaty obrazów — na przykład, DirectDraw Surface (.dds) — obsługuje przezroczystość. Istnieje kilka sposobów, że jawność mogą być używane, w zależności od narzędzie, którego używasz. Aby określić stopień przejrzystości dla wyboru koloru w **właściwości** oknie **A** składnik (alfa) wybór koloru. Oto jak różne rodzaje kontroli narzędzi, jak przezroczystości są stosowane:  
@@ -192,25 +187,25 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 ##### <a name="resizing-selections"></a>Opcje zmiany rozmiaru  
  Po wybraniu regionu, możesz zmienić rozmiar on lub jego zawartość obrazu, zmieniając rozmiar znacznika wyboru. Podczas, gdy zmianie rozmiaru wybranego regionu można użyć następujące klawisze modyfikujące, aby zmienić zachowanie wybranego regionu podczas zmiany rozmiaru (naciśnij i przytrzymaj klawisz klucza podczas zmiany rozmiaru).  
   
- CTRL  
+ Ctrl  
  Kopiuje zawartość wybranego regionu, zanim zmiany jego rozmiaru. Spowoduje to pozostawienie oryginalny obraz bez zmian podczas zmiany rozmiaru kopii.  
   
- SHIFT  
+ Shift  
  Zmienia rozmiar wybranego regionu, proporcjonalnie do oryginalnego rozmiaru.  
   
- ALT  
+ Alt  
  Zmienia rozmiar obszaru zaznaczenia. Spowoduje to pozostawienie obrazu w niezmienionej postaci.  
   
  Poniżej przedstawiono kombinacje klawiszy modyfikatora prawidłowy:  
   
-|CTRL|SHIFT|ALT|Opis|  
+|Ctrl|Shift|Alt|Opis|  
 |----------|-----------|---------|-----------------|  
 ||||Zmienia rozmiar zawartości wybranego regionu.|  
-||SHIFT||Proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|  
-|||ALT|Zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|  
-||SHIFT|ALT|Proporcjonalnie zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|  
-|CTRL|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|  
-|CTRL|SHIFT||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|  
+||Shift||Proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|  
+|||Alt|Zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|  
+||Shift|Alt|Proporcjonalnie zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|  
+|Ctrl|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|  
+|Ctrl|Shift||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|  
   
 ####  <a name="ToolProperties"></a> Właściwości narzędzia  
  To narzędzie jest zaznaczone, ale można używać **właściwości** okna możliwość określania szczegółów o tym jak wpływa na obrazie. Na przykład można ustawić grubość **ołówka** narzędzia lub kolor **pędzla** narzędzia.  
@@ -225,8 +220,8 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Ołówek**, **pędzla**, **Aerograf**, **Gumka**|**Grubość**<br /> Określa rozmiar obszaru, który jest zależna od narzędzia.|  
 |**Text**|**Wygładzanie**<br /> Rysuje tekst, który ma wygładzanie krawędzi. Dzięki temu tekst gładsze wygląd.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Czcionka**<br /> Czcionka używana ma zostać narysowany tekst.<br /><br /> **Rozmiar**<br /> Rozmiar tekstu.<br /><br /> **Bold**<br /> Sprawia, że czcionka pogrubienie.<br /><br /> **Kursywa**<br /> Sprawia, że czcionka italic.<br /><br /> **Podkreślony**<br /> Sprawia, że czcionka podkreślone.|  
 |**Element 2-D**|**Wygładzanie**<br /> Rysuje podstawowych, które mają wygładzanie krawędzi. To daje im gładsze wygląd.<br /><br /> **Grubość**<br /> Określa grubość linii, który wchodzi w skład granicy podstawowego.<br /><br /> **Promień X**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje górną i dolną krawędzią element pierwotny zaokrąglania usługi radius.<br /><br /> **Promień Y**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje zaokrąglania usługi radius do lewej i prawej krawędzi element pierwotny.|  
-|**Ołówek**, **pędzla**, **Aerograf**, **podstawowego 2-D**|**kanały**<br /> Włącza lub wyłącza określony kolor kanały do wyświetlania i rysowania. Jeśli **widoku** jest ustawiona dla określonego kanału koloru, tym kanale jest widoczne na obrazie; w przeciwnym razie nie jest on widoczny. Jeśli **Rysowanie** ustawiono dla określonego kanału koloru, że kanał jest objęte za pomocą rysowania operacji; w przeciwnym razie, nie jest.|  
-|**Wybór Różdżka**, **wypełnienia**|**Na uszkodzenia**<br /> Definiuje maksymalną różnicę między sąsiadujących kolorów, w których są one traktowane jako podobnie, tak aby mniej lub bardziej podobne kolory zostały wprowadzone w ramach objęty lub wybranego regionu. Domyślnie wartość jest 32, co oznacza, że sąsiadujących pikseli w ciągu 32 odcienie koloru oryginalnego (jaśniejsze i ciemniejsze) są traktowane jako część obszaru.|  
+|**Ołówek**, **pędzla**, **Aerograf**, **podstawowego 2-D**|**Channels**<br /> Włącza lub wyłącza określony kolor kanały do wyświetlania i rysowania. Jeśli **widoku** jest ustawiona dla określonego kanału koloru, tym kanale jest widoczne na obrazie; w przeciwnym razie nie jest on widoczny. Jeśli **Rysowanie** ustawiono dla określonego kanału koloru, że kanał jest objęte za pomocą rysowania operacji; w przeciwnym razie, nie jest.|  
+|**Wybór Różdżka**, **wypełnienia**|**Tolerance**<br /> Definiuje maksymalną różnicę między sąsiadujących kolorów, w których są one traktowane jako podobnie, tak aby mniej lub bardziej podobne kolory zostały wprowadzone w ramach objęty lub wybranego regionu. Domyślnie wartość jest 32, co oznacza, że sąsiadujących pikseli w ciągu 32 odcienie koloru oryginalnego (jaśniejsze i ciemniejsze) są traktowane jako część obszaru.|  
   
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe  
   
@@ -239,23 +234,23 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |Usuń bieżące zaznaczenie|Usuwanie|  
 |Anuluj bieżące zaznaczenie|Escape|  
 |Powiększanie|Ctrl + obrót kółkiem myszy do przodu<br /><br /> Ctrl+PageUp<br /><br /> Znak plus (+)|  
-|Pomniejszanie|CTRL obrót kółkiem myszy do tyłu<br /><br /> CTRL PageDown<br /><br /> Znak minusa (-)|  
+|Pomniejszanie|CTRL obrót kółkiem myszy do tyłu<br /><br /> Ctrl-PageDown<br /><br /> Znak minusa (-)|  
 |Przesuń w górę obrazu|Obrót kółkiem myszy do tyłu<br /><br /> PageDown|  
 |Przesuń w dół obrazu|Obrót kółkiem myszy do przodu<br /><br /> PageUp|  
-|Przesuń obrazu po lewej|Shift+obrót kółkiem myszy do tyłu<br /><br /> Ruch kółkiem myszy w lewo<br /><br /> SHIFT + PageDown|  
-|Przesuń w prawo obrazu|Shift+obrót kółkiem myszy do przodu<br /><br /> Ruch kółkiem myszy w prawo<br /><br /> SHIFT + PageUp|  
+|Przesuń obrazu po lewej|Shift+obrót kółkiem myszy do tyłu<br /><br /> Ruch kółkiem myszy w lewo<br /><br /> Shift+PageDown|  
+|Przesuń w prawo obrazu|Shift+obrót kółkiem myszy do przodu<br /><br /> Ruch kółkiem myszy w prawo<br /><br /> Shift+PageUp|  
 |Powiększ do rzeczywistego rozmiaru|CTRL + 0 (zero)|  
-|Dopasuj obraz do okna|CTRL + G, Ctrl + F|  
-|Obraz Dopasuj do szerokości okna|CTRL + K, Ctrl + I|  
-|Przełącz siatkę|CTRL + G, Ctrl + G|  
-|Przytnij obraz do bieżącego zaznaczenia|CTRL + G, Ctrl + C|  
-|Wyświetlanie następnego (szczegóły wyższej) Poziom MIP|CTRL + K, Ctrl + 6|  
-|Wyświetl poprzednie (niższe szczegóły) Poziom MIP|CTRL + K, Ctrl + 7|  
-|Przełącz kanału koloru czerwonego|CTRL + K, Ctrl + 1|  
-|Przełącz kolor zielony kanału|CTRL + K, Ctrl + 2|  
-|Przełącz koloru niebieskiego kanału|CTRL + K, Ctrl + 3|  
-|Przełącz kanał alfa (przezroczystości)|CTRL + K, Ctrl + 4|  
-|Przełącz wzorzec szachownicy alfa|CTRL + G, Ctrl + B|  
+|Dopasuj obraz do okna|Ctrl+G, Ctrl+F|  
+|Obraz Dopasuj do szerokości okna|Ctrl+G, Ctrl+I|  
+|Przełącz siatkę|Ctrl+G, Ctrl+G|  
+|Przytnij obraz do bieżącego zaznaczenia|Ctrl+G, Ctrl+C|  
+|Wyświetlanie następnego (szczegóły wyższej) Poziom MIP|Ctrl+G, Ctrl+6|  
+|Wyświetl poprzednie (niższe szczegóły) Poziom MIP|Ctrl+G, Ctrl+7|  
+|Przełącz kanału koloru czerwonego|Ctrl+G, Ctrl+1|  
+|Przełącz kolor zielony kanału|Ctrl+G, Ctrl+2|  
+|Przełącz koloru niebieskiego kanału|Ctrl+G, Ctrl+3|  
+|Przełącz kanał alfa (przezroczystości)|Ctrl+G, Ctrl+4|  
+|Przełącz wzorzec szachownicy alfa|Ctrl+G, Ctrl+B|  
 |Przełącz się do kształt-narzędzie|L|  
 |Przejdź do narzędzia zaznaczania Różdżka|M|  
 |Przełącz do Ołówek narzędzia|P|  
@@ -279,6 +274,3 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie narzędzi, których można używać w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do pracy z zasobami grafiki, takie jak tekstury i obrazy, modele 3D i efekty cieniowania.|  
 |[Edytor modelu](../designers/model-editor.md)|Opisuje sposób używania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytora modelu do pracy z modelami 3-D.|  
 |[Projektant cieniowania](../designers/shader-designer.md)|Opisuje sposób używania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektanta modułu cieniującego do pracy z programów do cieniowania.|
-
-
-

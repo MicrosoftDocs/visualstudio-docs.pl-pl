@@ -1,28 +1,23 @@
 ---
-title: 'Porady: pomijanie powiadomienia o zmianie pliku | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Pomiń powiadomienia o zmianie pliku | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4f82fd90d95a595d39403d2ee131285034b95d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808261"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760595"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Porady: pomijanie powiadomienia o zmianie pliku
+# <a name="how-to-suppress-file-change-notifications"></a>Instrukcje: Pomiń powiadomienia o zmianie pliku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po zmianie pliku fizycznego reprezentujący buforu tekstowego, okno dialogowe wyświetla komunikat o **czy chcesz zapisać zmiany w następujących elementach?** Jest to nazywane powiadomienie o zmianie pliku. Jeśli wiele zmian mają zostać do pliku, jednak to okno dialogowe wyświetlania wielokrotnie może szybko stać się irytujące.  
@@ -121,4 +116,3 @@ void CSuspendFileChanges::Resume()
   
 ## <a name="robust-programming"></a>Niezawodne programowanie  
  Jeżeli obudowę pociąga za sobą wiele zmian do pliku, tak jak w przypadku SCC, następnie jest ważne, aby wznowić powiadomienia o zmianie pliku globalnego przed zgłoszeniem dane dokumentu, aby wznowić monitorowanie zmian w plikach.
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Korzystanie z okna dezasemblacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z okna dezasemblacji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,15 +24,15 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803330"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Porady: korzystanie z okna dezasemblacji
+# <a name="how-to-use-the-disassembly-window"></a>Instrukcje: Korzystanie z okna dezasemblacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziomie adresów **opcje** okno dialogowe **debugowanie** węzła. Nie jest dostępna do debugowania skryptów lub SQL.  
@@ -65,7 +60,7 @@ Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziom
   Prawdopodobnie będzie nigdy nie masz pragnienie lub konieczne wyświetlenie kodu maszynowego instrukcje w ich pierwotne, numerycznego formularza, a nie języka asemblera. Jednak jeśli chcesz to zrobić, możesz użyć okna pamięci, w tym celu lub wybrać bajty kodu z menu skrótów w oknie demontażu.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Aby wyświetlić okno dezasemblacji  
   
@@ -83,9 +78,4 @@ Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziom
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Instrukcje: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-
+ [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

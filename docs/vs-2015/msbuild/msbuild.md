@@ -1,14 +1,9 @@
 ---
-title: Program MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
@@ -16,13 +11,13 @@ ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c7e5a5a02f2ef5c114665d358e86d768a24a44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837766"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756574"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ ms.locfileid: "49837766"
 > [!NOTE]
 >  Team Foundation Build służy do automatycznego kompilowania, testowania i wdrażania aplikacji. System kompilacji można automatycznie uruchamiać kompilacje, gdy deweloperzy ewidencjonują kod (na przykład, jako część strategii ciągłej integracji) lub według harmonogramu (na przykład nocna kompilacja Test weryfikacji kompilacji). Team Foundation Build kompiluje kod przy użyciu programu MSBuild. Aby uzyskać więcej informacji, zobacz [skompilować aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
- Ten temat zawiera omówienie programu MSBuild. Aby uzyskać Samouczek wprowadzający, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Ten temat zawiera omówienie programu MSBuild. Aby uzyskać Samouczek wprowadzający, zobacz [instruktażu: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
  **W tym temacie**  
   
@@ -93,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ##  <a name="BKMK_ProjectFile"></a> Plik projektu  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] używa formatu pliku projektu opartego na języku XML, który jest bardzo prosty i rozszerzalny. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Formatu pliku projektu umożliwia deweloperom opisywanie elementów, które mają być tworzone, a także, jak są one tworzone dla różnych systemów operacyjnych i konfiguracji. Ponadto format pliku projektu umożliwia deweloperom tworzenie kompilacji wielokrotnego użytku reguł, które mogą być umieszczane w osobnych plikach, tak aby kompilacje mogły być wykonywane konsekwentnie między różnymi projektami w produkcie.  
   
- W poniższych sekcjach opisano niektóre z podstawowych elementów [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formatu pliku projektu. Samouczek dotyczący sposobu tworzenia podstawowego pliku projektu, zobacz [wskazówki: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ W poniższych sekcjach opisano niektóre z podstawowych elementów [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formatu pliku projektu. Samouczek dotyczący sposobu tworzenia podstawowego pliku projektu, zobacz [instruktażu: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ###  <a name="BKMK_Properties"></a> Właściwości  
  Właściwości reprezentują pary klucz/wartość, które mogą służyć do konfigurowania kompilacji. Właściwości deklaruje się poprzez utworzenie elementu zawierającego nazwę właściwości jako element podrzędny elementu [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) elementu. Na przykład, poniższy kod tworzy właściwość o nazwie `BuildDir` wartością `Build`.  
@@ -175,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ##  <a name="BKMK_VisualStudio"></a> Korzystanie z programu MSBuild w programie Visual Studio  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używa [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formatu pliku projektu do przechowywania informacji tworzenia zarządzanych projektów. Ustawienia projektu, które są dodane lub zmienione za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu są odzwierciedlane. * proj pliku, który jest generowany dla każdego projektu. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używa hostowanej instancji [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] do tworzenia projektów zarządzanych. Oznacza to, że zarządzanego projektu mogą być wbudowane [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub w wierszu polecenia (nawet wtedy, gdy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie jest zainstalowany), a wyniki będą identyczne.  
   
- Samouczek dotyczący sposobu użycia MSBuild w programie Visual Studio, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Samouczek dotyczący sposobu użycia MSBuild w programie Visual Studio, zobacz [instruktażu: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ##  <a name="BKMK_Multitargeting"></a> Wielowersyjności kodu w programie  
  Za pomocą programu Visual Studio, można kompilować aplikację do uruchamiania w jednej z kilku różnych wersji programu .NET Framework. Na przykład można kompilować aplikacje do uruchamiania na .NET Framework 2.0 na platformie 32-bitowe i można kompilować tej samej aplikacji do uruchamiania na .NET Framework 4.5 na platformie 64-bitowej. Możliwość kompilowania do więcej niż jednej struktury jest lub multitargeting.  
@@ -199,7 +194,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Przewodnik: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Przedstawia sposób tworzenia podstawowego pliku projektu przyrostowo, używając tylko tekst edytora.|  
-|[Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)|Wprowadza bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild bez zamykania środowiska IDE programu Visual Studio.|  
+|[Przewodnik: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md)|Wprowadza bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild bez zamykania środowiska IDE programu Visual Studio.|  
 |[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)|Przedstawia cztery bloki konstrukcyjne MSBuild: właściwości, elementów, obiektów docelowych i zadań.|  
 |[Elementy](../msbuild/msbuild-items.md)|Opisuje ogólne pojęcia [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plik formatu i sposób dopasowywania.|  
 |[Właściwości programu MSBuild](msbuild-properties1.md)|Wprowadza właściwości i kolekcje właściwości. Właściwości to pary klucz/wartość, które mogą być używane do konfigurowania kompilacji.|  
@@ -216,8 +211,3 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Słownik  
  Definiuje typowe terminy programu MSBuild.
-
-
-
-
-

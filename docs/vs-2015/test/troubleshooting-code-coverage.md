@@ -1,24 +1,19 @@
 ---
 title: Pokrycie kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: troubleshooting
 ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797369"
 ---
 # <a name="troubleshooting-code-coverage"></a>Pokrycie kodu — wyszukiwanie błędów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,6 +147,3 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

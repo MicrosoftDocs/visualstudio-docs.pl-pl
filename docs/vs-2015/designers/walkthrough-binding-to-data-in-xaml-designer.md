@@ -1,29 +1,24 @@
 ---
-title: 'Wskazówki: Powiązanie z danymi w Projektancie XAML | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Powiązanie z danymi w Projektancie XAML | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 ms.assetid: 1a99aeae-c3ef-407d-ba79-b8055489a43d
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 597145da912c8d80508b67f4ff47c901f5ccac1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 74b628c1c3295cee94435c975f89420fcb097538
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802815"
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Wskazówki: Powiązanie z danymi w Projektancie XAML
+# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Przewodnik: Powiązanie z danymi w Projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W Projektancie XAML można ustawić właściwości powiązania danych, przy użyciu obszaru roboczego i w oknie właściwości. W przykładzie w tym przewodniku pokazano, jak powiązać dane z kontrolką. W szczególności instruktażu przedstawiono sposób tworzenia prostego klasy koszyka zakupów, która ma [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) o nazwie `ItemCount`, a następnie wiążą `ItemCount` właściwości **tekstu** właściwości z [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) kontroli.  
@@ -105,7 +100,4 @@ W Projektancie XAML można ustawić właściwości powiązania danych, przy uży
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Dodawanie konwertera wartości, okno dialogowe](http://msdn.microsoft.com/en-us/c5f3d110-a541-4b55-8bca-928f77778af8)
-
-
-
+ [NIB: Dodaj konwerter wartości — okno dialogowe](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

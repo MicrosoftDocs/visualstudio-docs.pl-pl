@@ -1,14 +1,9 @@
 ---
 title: 'Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791200"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: analizowanie zarządzanego kodu pod względem wad kodu
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Przewodnik: Analizowanie kodu zarządzanego pod kątem błędów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym przewodniku możesz analizować za pomocą narzędzia do analizy kodu zarządzanego projektu pod względem wad kodu.  
@@ -128,7 +123,7 @@ W tym przewodniku możesz analizować za pomocą narzędzia do analizy kodu zarz
   
        Skompiluj ponownie projekt.  
   
-- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: poprawianie wielkości liter nazwy przestrzeni nazw "testCode" przez zmianę na "TestCode".  
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie nazwę przestrzeni nazw "testCode" przez zmianę na "TestCode".  
   
   -   Zmień wielkość liter w wyrazie przestrzeń nazw `testCode` do `TestCode`.  
   
@@ -140,11 +135,11 @@ W tym przewodniku możesz analizować za pomocą narzędzia do analizy kodu zarz
   
   -   Zmień nazwę elementu członkowskiego do `Item`.  
   
-- [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: zmiana nazwy 'testCode.demo", aby kończyła się"Exception".  
+- [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Zmień nazwę "testCode.demo" w celu w "Exception".  
   
   -   Zmień nazwę klasy i jego konstruktorów do `DemoException`.  
   
-- [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Podpisz "ManagedDemo" przy użyciu klucz silnej nazwy.  
+- [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Zaloguj się "ManagedDemo" kluczem silnej nazwy.  
   
   -   Na **projektu** menu, kliknij przycisk **właściwości ManagedDemo**.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Wybierz **akcje**, następnie wybierz **Pomiń komunikat**, a następnie wybierz **w pliku pominięć projektu**.  
   
-      Aby uzyskać więcej informacji, zobacz [porady: pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Skompiluj ponownie projekt.  
   
     Projekt zostanie skompilowany bez żadnych ostrzeżeń ani błędów.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Zasoby do projektowania dostępnych aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761675"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Użyj następujących linków, aby znaleźć informacje o technologii obsługuj�
   
 ## <a name="web-sites"></a>Witryny sieci Web  
   
--   [Wskazówki: Dostęp — wytyczne dla za pomocą kontrolki obrazu, kontrolek Menu i AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten temat zawiera instrukcje krok po kroku, w tym formantów dostępny w przykładowej strony internetowej, a także pewne wskazówki dotyczące projektowania ułatwień dostępu sieci Web.  
+-   [Przewodnik: Wytyczne dotyczące ułatwień dostępu za pomocą kontrolki obrazu, kontrolek Menu i AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten temat zawiera instrukcje krok po kroku, w tym formantów dostępny w przykładowej strony internetowej, a także wskazówki dotyczące projektowania ułatwień dostępu dla sieci Web.  
   
 -   **Udostępnianie stron sieci Web bardziej** artykułu technicznego na ten temat zawiera listę elementów HTML 3.2, które są dostępne, a także elementy, które mogą być dostępne do użycia podczas tworzenia witryny sieci Web. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
@@ -64,6 +59,3 @@ Użyj następujących linków, aby znaleźć informacje o technologii obsługuj�
   
 ## <a name="see-also"></a>Zobacz też  
  [Ułatwienia dostępu w Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

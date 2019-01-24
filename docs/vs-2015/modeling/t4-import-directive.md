@@ -1,23 +1,20 @@
 ---
 title: T4 Import — dyrektywa | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 713ca975-b9aa-4210-bf6d-b7660f5b193b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00033640ec7810f97785b38437795906500a7866
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798883"
 ---
 # <a name="t4-import-directive"></a>Dyrektywa T4 dotycząca importowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +54,3 @@ The file contains: <#=  fileContent #>
   
 ## <a name="see-also"></a>Zobacz też  
  [Dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md)
-
-
-

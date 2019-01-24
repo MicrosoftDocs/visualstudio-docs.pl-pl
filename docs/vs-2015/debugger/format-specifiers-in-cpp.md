@@ -1,13 +1,8 @@
 ---
 title: Specyfikatory w języku C++ formatu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769676"
 ---
 # <a name="format-specifiers-in-c"></a>Specyfikatory formatu w C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +87,7 @@ int main() {
 |**Nazwa**|Pomija adres pamięci wskaźnika do obiektu.|\<Lokalizacja >, {elementu członkowskiego = wartość...}|{elementu członkowskiego = wartość...}|  
 |**ND**|Wyświetla tylko klasy bazowej informacje, ignorując klasy pochodne|`(Shape*) square` zawiera klasy podstawowej i pochodnej informacji o klasie|Wyświetla tylko podstawowy informacji o klasie|  
 |godz.|Kod błędu HRESULT lub Win32. (Narzędzie debugger teraz dekoduje HRESULTs automatycznie, więc specyfikator ten nie jest wymagane w tych przypadkach.|S_OK|S_OK|  
-|WC|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|  
+|wc|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|  
 |wm|Numery komunikatu Windows|16|WM_CLOSE|  
 |!|format RAW, ignorowanie wszelkich dostosowań widoków typu danych|\<dostosowane reprezentacji >|4|  
   
@@ -105,7 +100,7 @@ int main() {
 |Specyfikator|Format|Oryginalny wartośćN wyrażenie kontrolne|Wartości wyświetlanej|  
 |---------------|------------|---------------------------|---------------------|  
 |n|Dziesiętna lub **szesnastkowe** liczba całkowita|pBuffer, [32]<br /><br /> pBuffer,**[0x20]**|Wyświetla `pBuffer` jako tablica 32 elementów.|  
-|**[exp]**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą.|pBuffer, [bufferSize]|Wyświetla pBuffer jako tablicę `bufferSize` elementów.|  
+|**[exp]**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą.|pBuffer,[bufferSize]|Wyświetla pBuffer jako tablicę `bufferSize` elementów.|  
 |**expand(n)**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą|pBuffer, expand(2)|Wyświetla trzeci element  `pBuffer`|  
   
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu dla debugowania międzyoperacyjnego przy użyciu języka C + +/ CLI  
@@ -118,16 +113,16 @@ int main() {
 |o|Nieoznaczona ósemkowa liczba całkowita|0xF065|0170145|  
 |x,X|Szesnastkowa liczba całkowita|61541|0x0000f065|  
 |**g, h**|długi lub krótki prefiks dla: d, i, u, o, x X|00406042|0x0c22|  
-|**f**|oznaczona liczba zmiennoprzecinkowa|(3. / 2.), f|1.500000|  
+|**f**|oznaczona liczba zmiennoprzecinkowa|(3./2.), f|1.500000|  
 |**e**|podpisana Notacja naukowa|(3.0/2.0)|1.500000e + 000|  
-|**g**|podpisana, liczba zmiennoprzecinkowa lub oznaczona Notacja naukowa, nich okaże się krótsza|(3.0/2.0)|1.5|  
+|**g**|podpisana, liczba zmiennoprzecinkowa lub oznaczona Notacja naukowa, nich okaże się krótsza|(3.0/2.0)|1,5|  
 |c|pojedynczy znak|\<Lokalizacja >|101 "e"|  
 |s|Const char *|\<Lokalizacja >|"hello world"|  
 |su|Const wchar_t *<br /><br /> Const char16_t\*|\<Lokalizacja >|L "hello world"|  
 |Sub|Const wchar_t *<br /><br /> Const char16_t\*|\<Lokalizacja >|Cześć ludzie|  
 |s8|Const char *|\<Lokalizacja >|"hello world"|  
 |godz.|Kod błędu HRESULT lub Win32. (Narzędzie debugger teraz dekoduje HRESULTs automatycznie, więc specyfikator ten nie jest wymagane w tych przypadkach.|S_OK|S_OK|  
-|WC|Flaga klasy okna.|0x00000040,|WC_DEFAULTCHAR|  
+|wc|Flaga klasy okna.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numery komunikatu Windows|0x0010|WM_CLOSE|  
 |!|format RAW, ignorowanie wszelkich dostosowań widoków typu danych|\<dostosowane reprezentacji >|4|  
   
@@ -150,8 +145,3 @@ int main() {
 |Specyfikator|Format|Wyrażenie|Wartości wyświetlanej|  
 |---------------|------------|----------------|---------------------|  
 |n|Liczba całkowita dziesiętna|pBuffer [32]|Wyświetla `pBuffer` jako tablica 32 elementów.|
-
-
-
-
-

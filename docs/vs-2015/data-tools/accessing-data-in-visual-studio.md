@@ -1,12 +1,9 @@
 ---
 title: Uzyskiwanie dostępu do danych
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - "80025080"
 dev_langs:
@@ -23,14 +20,14 @@ ms.assetid: 9812a6d5-23d2-4427-8b98-70a2abfec3bc
 caps.latest.revision: 103
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 20efcabb39049f1cfced3b6f941bc7e5bbd984d5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8647817df0a63d42a126123e8654b9a277ae8e05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757556"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ W programie Visual Studio, można utworzyć aplikacji, które łączą się z da
 
  Dla aplikacji JavaScript, Python, PHP, Ruby lub C++ możesz łączyć się dane tak jak dowolne inne, uzyskując bibliotek i pisania kodu. Dla aplikacji .NET Visual Studio udostępnia narzędzia, które umożliwia poznawanie źródeł danych, tworzyć modele obiektów do przechowywania i manipulowanie danymi w pamięci i powiązać dane z interfejsu użytkownika.     Microsoft Azure udostępnia zestawy SDK for .NET, Java, Node.js, PHP, Python, Ruby i aplikacje mobilne i narzędzi w programie Visual Studio do łączenia się z usługi Azure Storage.
 
- Poniższej przedstawiono kilka wiele systemów bazy danych i magazynu, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/en-us/) oferty są usług danych, które obejmują aprowizacji i administrowania źródłowy magazyn danych.  [Narzędzia platformy Azure dla programu Visual Studio](https://www.visualstudio.com/en-us/features/azure-tools-vs.aspx) jest opcjonalnym składnikiem, który umożliwia pracę z magazynami danych na platformie Azure bezpośrednio z programu Visual Studio. Większość innych języków SQL i NoSQL bazy danych produktów, które są wymienione w tym miejscu mogą być hostowane na komputerze lokalnym, w sieci lokalnej lub w systemie Microsoft Azure na maszynie wirtualnej. W tym scenariuszu jesteś odpowiedzialny za zarządzanie sama baza danych.
+ Poniższej przedstawiono kilka wiele systemów bazy danych i magazynu, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) oferty są usług danych, które obejmują aprowizacji i administrowania źródłowy magazyn danych.  [Narzędzia platformy Azure dla programu Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) jest opcjonalnym składnikiem, który umożliwia pracę z magazynami danych na platformie Azure bezpośrednio z programu Visual Studio. Większość innych języków SQL i NoSQL bazy danych produktów, które są wymienione w tym miejscu mogą być hostowane na komputerze lokalnym, w sieci lokalnej lub w systemie Microsoft Azure na maszynie wirtualnej. W tym scenariuszu jesteś odpowiedzialny za zarządzanie sama baza danych.
 
  **Microsoft Azure**
 
@@ -74,7 +71,7 @@ W programie Visual Studio, można utworzyć aplikacji, które łączą się z da
  Wielu dostawców bazy danych i innych firm obsługuje integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z oferty w witrynie nuget.org, lub za pośrednictwem Menedżera pakietów NuGet w programie Visual Studio (**narzędzia** > **Menedżera pakietów NuGet** > **zarządzania pakietami NuGet Pakietami dla rozwiązania**). Inne produkty bazy danych Integracja z programem Visual Studio jako rozszerzenie.   Możesz przeglądać tych ofert, w galerii Visual Studio, przechodząc do **narzędzia** > **rozszerzenia i aktualizacje** , a następnie wybierając **Online** po lewej stronie w okienku okna dialogowego.  Aby uzyskać więcej informacji, zobacz [instalowanie systemów baz danych, narzędzia i przykłady](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
->  Rozszerzona pomoc techniczna dla programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r.   Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i nowszych wersjach będą w dalszym ciągu działać przy użyciu programu SQL Server 2005 po tej dacie. Aby uzyskać więcej informacji, zobacz [anons zakończenia okresu objęcia wsparciem dla programu SQL Server 2005](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2005/).
+>  Rozszerzona pomoc techniczna dla programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r.   Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i nowszych wersjach będą w dalszym ciągu działać przy użyciu programu SQL Server 2005 po tej dacie. Aby uzyskać więcej informacji, zobacz [anons zakończenia okresu objęcia wsparciem dla programu SQL Server 2005](https://www.microsoft.com/server-cloud/products/sql-server-2005/).
 
 ### <a name="net-languages"></a>Języków .NET
  .NET dostępu do wszystkich danych, w tym programie .NET Core jest oparty na ADO.NET, zestaw klas, który definiuje interfejs do uzyskiwania dostępu do dowolnego rodzaju źródła danych relacyjnych i nierelacyjnych. Program Visual Studio ma kilka narzędzi i projektantów, współpracujących za pomocą narzędzia ADO.NET w celu łatwiejszego nawiązania połączenia z bazami danych, manipulowania danymi i prezentowania danych użytkownika. W dokumentacji w tej sekcji opisano sposób używania tych narzędzi. Ponadto można programować bezpośrednio w odniesieniu do obiektów poleceń ADO.NET. Aby uzyskać więcej informacji na temat bezpośrednie wywoływanie interfejsów API ADO.NET, zobacz [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) w bibliotece MSDN.
@@ -85,7 +82,7 @@ W programie Visual Studio, można utworzyć aplikacji, które łączą się z da
 
  Do przechowywania danych na komputerze lokalnym Zalecanym podejściem jest użycie bazy danych SQLite, która jest uruchamiana w tym samym procesie co aplikacja. Jeśli wymagana jest warstwa Mapowania obiektowo relacyjny (ORM), można użyć programu Entity Framework. Aby uzyskać więcej informacji, zobacz [dostęp do danych](https://msdn.microsoft.com/windows/uwp/data-access/index) w Centrum deweloperów Windows.
 
- Jeśli łączysz się z usługami platformy Azure, pamiętaj pobrać najnowsze [zestawu Azure SDK tools](https://azure.microsoft.com/en-us/downloads/).
+ Jeśli łączysz się z usługami platformy Azure, pamiętaj pobrać najnowsze [zestawu Azure SDK tools](https://azure.microsoft.com/downloads/).
 
 #### <a name="data-providers"></a>Dostawcy danych
  Aby baza danych jest w użyciu w ADO.NET, musi mieć niestandardową *dostawcy danych ADO.NET* lub inne musi ujawniać interfejsu ODBC lub OLE DB. Firma Microsoft udostępnia [listę dostawców danych ADO.NET](https://msdn.microsoft.com/data/dd363565) dla produktów programu SQL Server, a także dostawcami ODBC i OLE DB.
@@ -122,14 +119,14 @@ W programie Visual Studio, można utworzyć aplikacji, które łączą się z da
 ## <a name="in-this-section"></a>W tej sekcji
  [Instalowanie systemów baz danych, narzędzia i przykłady](../data-tools/installing-database-systems-tools-and-samples.md) w tym artykule omówiono sposób uzyskiwania bazy danych, produkty i rozszerzenia programu Visual Studio lub sterowniki, które je obsługują i gdzie można znaleźć przykładowe bazy danych do eksperymentowania i celów szkoleniowych.
 
- [Narzędzia Visual Studio data tools dla platformy .NET](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) w tym artykule opisano sposób użycia okna narzędzi programu Visual Studio do łączenia ze źródłami danych, tworzenie modeli Entity Framework lub zestawów danych i powiązania danych z kontrolkami interfejsu użytkownika.
+ [Narzędzia Visual Studio data tools dla platformy .NET](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) w tym artykule opisano sposób użycia okna narzędzi programu Visual Studio do łączenia ze źródłami danych, tworzenie modeli Entity Framework lub zestawów danych i powiązania danych z kontrolkami interfejsu użytkownika.
 
 ## <a name="related-topics"></a>Tematy pokrewne
  [Dane, urządzenia i analiza](https://msdn.microsoft.com/data-and-devices) zawiera wprowadzenie do inteligentnej chmury firmy Microsoft, łącznie z pakietu Cortana Analytics i pomoc techniczna dla Internetu rzeczy.
 
- [Usługa Microsoft Azure Storage](https://azure.microCsoft.com/en-us/documentation/services/storage/) zawiera opis usługi Azure Storage, a także jak tworzyć aplikacje przy użyciu obiektów blob platformy Azure, tabel, kolejek i plików.
+ [Usługa Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/) zawiera opis usługi Azure Storage, a także jak tworzyć aplikacje przy użyciu obiektów blob platformy Azure, tabel, kolejek i plików.
 
- [Usługa Azure SQL Database](https://azure.microsoft.com/en-us/documentation/services/sql-database/) opisano, jak połączyć się z usługi Azure SQL Database, relacyjnej bazy danych jako usługa.
+ [Usługa Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/) opisano, jak połączyć się z usługi Azure SQL Database, relacyjnej bazy danych jako usługa.
 
  [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) opisano narzędzia, które upraszczają projektowanie i eksploracji, testowania i wdrażania aplikacji połączonych z usługą danych i baz danych.
 

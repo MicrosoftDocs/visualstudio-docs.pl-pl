@@ -1,11 +1,8 @@
 ---
 title: Używanie projektanta przepływu pracy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer [WFD], using
@@ -14,13 +11,13 @@ ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 124df9e4f4728af8621685a3c285b50bf064f14a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795538"
 ---
 # <a name="using-the-workflow-designer"></a>Używanie projektanta przepływu pracy
 W tej sekcji szczegółowo opisuje sposób tworzenia nowych działań i projektów przepływu pracy przy użyciu wbudowanych projektantów i wyrażenie edytor, który jest obsługiwany przez kilka Projektanci działań.  
@@ -44,5 +41,5 @@ W tej sekcji szczegółowo opisuje sposób tworzenia nowych działań i projekt�
  [Instrukcje: Używanie projektanta importów](../workflow-designer/how-to-use-the-imports-designer.md)  
  Pokazuje, jak wprowadzić przestrzeni nazw dla typów używanych w wyrażeniach utworzonych przez użytkownika.  
   
- [Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
+ [Instrukcje: Użyj do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
  Pokazuje, jak przechodzić między działaniami.

@@ -1,25 +1,20 @@
 ---
 title: Rozwiązywanie problemów z kodem metryki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 6
 author: erickson-doug
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 76cd6d3b05346ee8ed0577dcbea512b609789167
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b059102e945af0765b3008baf7c8b1283450bb72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755597"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Rozwiązywanie problemów związanych z metrykami kodów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ Niektóre następujące problemy mogą występować w przypadku zbierać metryki
   
 ## <a name="see-also"></a>Zobacz też  
  [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

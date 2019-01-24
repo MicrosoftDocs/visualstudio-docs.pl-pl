@@ -1,25 +1,20 @@
 ---
-title: Pamięci podręcznej schematów | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Schema Cache | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 071ae9f75ab48a2fbabba7c272ad542f59e9e8be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795553"
 ---
 # <a name="schema-cache"></a>Pamięć podręczna schematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,22 +30,22 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
 |     Nazwa pliku      |                                                      Opis                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    Catalog.xsd    |             Schemat dla plików wykazu schematu edytora XML. Informacje o wykazów schematów można znaleźć poniżej.             |
-| Żaden plik DotNetConfig.xsd  |                 Schemat dla plików Web.Config "<http://schemas.microsoft.com/.NETConfiguration/v2.0>".                 |
-|    MSBUILD.xsd    |              Schemat dla plików marka MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
-|    MSDATA.xsd     | Schematu dla adnotacji XSD dodane przez <xref:System.Data.DataSet> klasy, "urn: schemas-microsoft-com: XML-msdata". |
+| DotNetConfig.xsd  |                 Schemat dla plików Web.Config "<http://schemas.microsoft.com/.NETConfiguration/v2.0>".                 |
+|    msbuild.xsd    |              Schemat dla plików marka MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
+|    msdata.xsd     | Schematu dla adnotacji XSD dodane przez <xref:System.Data.DataSet> klasy, "urn: schemas-microsoft-com: XML-msdata". |
 |     msxsl.xsd     |                  Schemat rozszerzenia blok skryptu XSLT firmy Microsoft, urn: schemas-microsoft-com:xslt.                   |
 | SnippetFormat.xsd |                 Schemat dla plików XML fragmentu kodu. Aby uzyskać przykłady Zobacz % InstallDir%\VC#\Expansions.                 |
 |    Soap1.1.xsd    |            Schemat dla Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.            |
 |    Soap1.2.xsd    |                                     Schemat dla Simple Object Access Protocol 1.2.                                     |
 | SiteMapSchema.xsd |            Schemat pliku XML mapy witryny ASP.NET "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>".             |
-|     WSDL.xsd      |                    Schemat dla język opisu usługi sieci Web, http://schemas.xmlsoap.org/wsdl/.                     |
+|     wsdl.xsd      |                    Schemat dla język opisu usługi sieci Web, http://schemas.xmlsoap.org/wsdl/.                     |
 |     xenc.xsd      |                            Schemat XML szyfrowania, http://www.w3.org/2000/09/xmldsig#.                             |
-|     XHTML.xsd     |                                    Schemat dla XHTML http://www.w3.org/1999/xhtml.                                     |
-|     XLINK.xsd     |                                  Schemat dla XLink1.0, http://www.w3.org/1999/xlink.                                   |
-|      XML.xsd      |              Schemat opisujący atrybuty XML: Space i XML: lang, http://www.w3.org/XML/1998/namespace.               |
+|     xhtml.xsd     |                                    Schemat dla XHTML http://www.w3.org/1999/xhtml.                                     |
+|     xlink.xsd     |                                  Schemat dla XLink1.0, http://www.w3.org/1999/xlink.                                   |
+|      xml.xsd      |              Schemat opisujący atrybuty XML: Space i XML: lang, http://www.w3.org/XML/1998/namespace.               |
 |    xmlsig.xsd     |                        Schemat XML podpisów cyfrowych, http://www.w3.org/2000/09/xmldsig#.                         |
 |   xsdschema.xsd   |                            Schemat XSD, opisujący http://www.w3.org/2001/XMLSchema.                            |
-|     XSLT.xsd      |                           Przekształca schemat dla formatu XML, http://www.w3.org/1999/XSL/Transform.                            |
+|     xslt.xsd      |                           Przekształca schemat dla formatu XML, http://www.w3.org/1999/XSL/Transform.                            |
 
 ## <a name="updating-schemas-in-the-cache"></a>Aktualizowanie schematów w pamięci podręcznej  
  Edytor ładuje katalog pamięci podręcznej schematu, gdy pakiet edytora XML jest ładowany i oczekuje na zmiany podczas uruchamiania. Dodano schemat jest automatycznie ładowany do indeksu w pamięci znanych schematów. Jeśli schemat został usunięty, zostanie on automatycznie usunięty z indeksu w pamięci. Jeśli schemat został zaktualizowany, automatycznie unieważnia w pamięci podręcznej tego schematu.  
@@ -136,6 +131,3 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
 
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)
-
-
-

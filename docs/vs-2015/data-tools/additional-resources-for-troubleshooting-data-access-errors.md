@@ -1,12 +1,9 @@
 ---
 title: Dodatkowe zasoby dotyczące rozwiązywania problemów z danych dostępu błędy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,14 +229,14 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a71d18beaf1c77c16479c914a43cdf45793b685
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775234"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -272,4 +269,3 @@ Pomoc dotyczącą rozwiązywania problemów z błędów i ostrzeżeń można zna
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

@@ -1,25 +1,22 @@
 ---
 title: Definiowanie niestandardowego elementu przybornika modelowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770756"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definiowanie niestandardowego elementu przybornika modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -130,11 +127,11 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
 |Nazwa węzła|Definiuje|  
 |---------------|-------------|  
-|Nazwa wyświetlana|Nazwa elementu przybornika.|  
+|displayName|Nazwa elementu przybornika.|  
 |tabName|Karta przybornika, w której element powinien pojawiać się. Można określić nazwę dla tego typu diagramu zwykłej karcie lub odrębną nazwę.|  
 |obraz|Lokalizacja, mapy bitowej (**.bmp**) plik, który musi mieć wysokość i szerokość 16 i głębi kolorów 24 bity.|  
 |f1Keyword|Słowo kluczowe, która lokalizuje tematu Pomocy.|  
-|Etykietki narzędzi|Etykietka narzędzia dla tego narzędzia.|  
+|tooltip|Etykietka narzędzia dla tego narzędzia.|  
   
  Edytuj plik mapy bitowej w programie Visual Studio i równa jego wysokości i szerokości 16 w oknie dialogowym właściwości.  
   
@@ -164,7 +161,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
 4.  Dodaj do definicji przybornika do projektu. Obejmują **.tbxinfo** plików, pliki diagramu, pliki map bitowych i pliki zasobów i upewnij się, że są one uwzględnione w VSIX.  
   
-    -   W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Dodaj**, **istniejący element**. W oknie dialogowym Ustaw **obiekty typu: wszystkie pliki**. Znajdź pliki, zaznacz je, a następnie wybierz **Dodaj**.  
+    -   W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Dodaj**, **istniejący element**. W oknie dialogowym Ustaw **obiekty typu: Wszystkie pliki**. Znajdź pliki, zaznacz je, a następnie wybierz **Dodaj**.  
   
         > [!NOTE]
         >  W tym projekcie nie można otworzyć plików diagramu w edytorze modeli.  
@@ -200,7 +197,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
      W doświadczalnym wystąpieniu Utwórz lub Otwórz diagram UML odpowiedniego typu. Sprawdź, czy do nowego narzędzia jest wyświetlana w przyborniku i że tworzy ono elementy poprawnie.  
   
-10. **Aby uzyskać plik VSIX do wdrożenia:** w Eksploratorze Windows otwórz folder **.\bin\Debug** lub **.\bin\Release** można znaleźć **.vsix** pliku. Jest to [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenie pliku. Go może być zainstalowana na danym komputerze i również wysyłane do innych użytkowników programu Visual Studio.  
+10. **Aby uzyskać plik VSIX do wdrożenia:** W Eksploratorze Windows otwórz folder **.\bin\Debug** lub **.\bin\Release** można znaleźć **.vsix** pliku. Jest to [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenie pliku. Go może być zainstalowana na danym komputerze i również wysyłane do innych użytkowników programu Visual Studio.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Aby zainstalować narzędzia niestandardowe z rozszerzenia programu Visual Studio  
   
@@ -241,6 +238,3 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
  [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

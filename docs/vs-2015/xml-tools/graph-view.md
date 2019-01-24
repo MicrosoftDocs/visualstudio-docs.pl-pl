@@ -1,25 +1,20 @@
 ---
 title: Widoku wykresu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764916"
 ---
 # <a name="graph-view"></a>Widok wykresu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,16 +99,16 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 1**.|  
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 2**.|  
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 3**.|  
+|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL + 1**.|  
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL + 2**.|  
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL + 3**.|  
 |**Usuń obszar roboczy**|Usuwa obszar roboczy i powierzchni projektowej.|  
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i serface projektu.|  
 |**Usuń wszystkie oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i serface projektu. Ta opcja jest włączona, w widoku modelu zawartości i w widoku wykresu.|  
-|**Od lewej do prawej**|Zmienia układ w widoku wykresu od lewej do prawej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt + Strzałka w prawo**.|  
-|**Od prawej do lewej**|Zmienia układ w widoku wykresu od prawej do lewej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt + Strzałka w lewo**.|  
-|**Od góry do dołu**|Zmienia układ w widoku wykresu od góry do dołu hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt + Strzałka w dół**.|  
-|**Od dołu do góry**|Zmienia układ w widoku wykresu do dołu do góry hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótu klawiaturowego: **Alt + Strzałka w górę**.|  
+|**Od lewej do prawej**|Zmienia układ w widoku wykresu od lewej do prawej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **Alt + Strzałka w prawo**.|  
+|**Od prawej do lewej**|Zmienia układ w widoku wykresu od prawej do lewej hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **Alt + Strzałka w lewo**.|  
+|**Od góry do dołu**|Zmienia układ w widoku wykresu od góry do dołu hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **Alt + Strzałka w dół**.|  
+|**Od dołu do góry**|Zmienia układ w widoku wykresu do dołu do góry hierarchiczną reprezentację węzłów. Ta opcja jest możliwy za pomocą skrótów klawiaturowych: **Alt + Strzałka w górę**.|  
   
 ## <a name="panscroll"></a>Pan/przewijania  
  Za pomocą pasków przewijania lub przytrzymanie klawisza CTRL, gdy kliknij i przeciągnij myszą, można Przesuń powierzchni projektowej. Gdy przesuwa powierzchni projektowej kliknij i przeciągnij kursor zmieni się na cztery strzałki przecinające w czterech kierunkach.  
@@ -145,6 +140,3 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
   
 ## <a name="see-also"></a>Zobacz też  
  [Powierzchni projektowej](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: '&lt;zestaw&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: 51410569-10f9-4c0a-96b5-d39185edbefc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 44437c0ff78c5f957a0d774530e8911513ba0fd6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d619b8b3cd81e5b00fc689077a95ade08f4d7eed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758898"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;zestaw&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Element najwyższego poziomu w manifeście aplikacji.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`manifestVersion`|Wymagane. `manifestVersion` Atrybutu musi być równa `1.0`.|  
+|`manifestVersion`|Wymagana. `manifestVersion` Atrybutu musi być równa `1.0`.|  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie kodu pokazano `assembly` elementu w manifeście aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Ten przykład kodu jest częścią większego przykładu przewidzianego w [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
@@ -80,6 +75,3 @@ Element najwyższego poziomu w manifeście aplikacji.
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
  [\<zestaw > Element](../deployment/assembly-element-clickonce-deployment.md)
-
-
-

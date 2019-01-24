@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy składników UML: Odwołanie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Diagramy składników UML: Dokumentacja | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.componentdiagram.diagram
 - vs.teamarch.componentdiagram.toolbox
@@ -21,15 +18,15 @@ ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728126"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798779"
 ---
-# <a name="uml-component-diagrams-reference"></a>Diagramy składników UML: Odwołanie
+# <a name="uml-component-diagrams-reference"></a>Diagramy składników UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio *diagram składników* pokazuje części projektu dla systemu oprogramowania. Diagram składników pomaga wizualizować strukturę wysokiego poziomu systemu i zachowanie usługi, które te elementy zapewniają i wykorzystują za pośrednictwem interfejsów. Aby utworzyć diagram składników UML na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
@@ -41,7 +38,7 @@ W programie Visual Studio *diagram składników* pokazuje części projektu dla 
  Aby uzyskać więcej informacji o sposobie używania diagramów składników w procesie projektowania, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  W tym temacie opisano elementy, które można używać w diagramach składników. Aby uzyskać bardziej szczegółowe informacje o tym, jak Rysowanie diagramów składników zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+>  W tym temacie opisano elementy, które można używać w diagramach składników. Aby uzyskać bardziej szczegółowe informacje o tym, jak Rysowanie diagramów składników zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Odczytywanie diagramów składników  
  W poniższej tabeli opisano elementy, które można użyć na diagramie składników, wraz z ich właściwości głównego. Aby uzyskać pełną listę właściwości elementów, zobacz [właściwości elementów na diagramach składników UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
@@ -64,12 +61,9 @@ W programie Visual Studio *diagram składników* pokazuje części projektu dla 
 
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)   
+ [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)   
  [Weryfikacja systemu w czasie projektowania](../modeling/validate-your-system-during-development.md)   
- [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md)   
- [Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)
-
-
-
+ [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)

@@ -1,14 +1,9 @@
 ---
 title: Tworzenie niestandardowych Wizualizatorów danych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: f890277190b9b4d28873e1fe394abdcd95b8a3a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51792863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760478"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Tworzenie niestandardowych Wizualizatorów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +60,3 @@ Wizualizatory są składnikami [!INCLUDE[vs_current_short](../includes/vs-curren
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
-
-
-

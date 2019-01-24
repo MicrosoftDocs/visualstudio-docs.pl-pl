@@ -1,12 +1,9 @@
 ---
 title: Hierarchiczna aktualizacja | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,13 +23,13 @@ ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a7c20424d43fe9c10a9a6fda9517f40a1231d698
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778398"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

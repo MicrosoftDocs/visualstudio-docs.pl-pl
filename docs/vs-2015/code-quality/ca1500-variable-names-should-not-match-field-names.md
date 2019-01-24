@@ -1,14 +1,9 @@
 ---
 title: 'CA1500: Nazwy zmiennych nie powinny odpowiadać nazwom pól | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - VariableNamesShouldNotMatchFieldNames
 - CA1500
@@ -20,17 +15,17 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fdac60aa7b3fb37f45cff7c1c9e5f17920efed18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe479fa21480ff9456990dc57c55e656933c3cd0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755833"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nazwy zmiennych nie powinny odpowiadać nazwom pól
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nazwy zmiennych nie powinny być zgodne z nazwami pól
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA1500: nazwy zmiennych nie powinny odpowiadać nazwom pól](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA1500: Nazwy zmiennych nie powinny odpowiadać nazwom pól](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names) w witrynie docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -56,4 +51,3 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA150
   
  [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.VarMatchesField/cs/FxCop.Maintainability.VarMatchesField.cs#1)]
  [!code-vb[FxCop.Maintainability.VarMatchesField#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.VarMatchesField/vb/FxCop.Maintainability.VarMatchesField.vb#1)]
-

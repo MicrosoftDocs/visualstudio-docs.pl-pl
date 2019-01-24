@@ -1,26 +1,21 @@
 ---
 title: Rozszerzanie usług edytora i języka | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 91eab151680d936c350c8c5745aec6c9fe86e47c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f828e6daff97f7c0ad8b3872691f5ad424cb2f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755577"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Rozszerzanie usług edytora i językowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,22 +36,22 @@ Dodawanie funkcji do usługi języka (takie jak IntelliSense) do własnego edyto
 |[Wewnątrz edytora](../extensibility/inside-the-editor.md)|W tym artykule opisano ogólną strukturę edytora i wyświetla część jej dostępnych funkcji.|  
 |[Struktura Managed Extensibility Framework (MEF) w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md)|Wyjaśnia, jak Managed Extensibility Framework (MEF) za pomocą edytora.|  
 |[Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)|Wyświetla listę punktów rozszerzenia edytora. Punkty rozszerzenia reprezentują funkcje edytora, które mogą zostać rozszerzone.|  
-|[Przewodnik: tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Przeprowadzi i wyjaśniono tworzenie zakończeń widoku, który Rysuje linie gudie kolumn zabezpieczać kodu na szerokość ekranu.  Pokazuje również, odczytywania i zapisywania ustawień, a także deklarowania i wykonania polecenia, które można wywoływać z okna poleceń.|  
+|[Przewodnik: Tworzenie widoku zakończeń, poleceń i ustawień (prowadnice kolumn)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Przeprowadzi i wyjaśniono tworzenie zakończeń widoku, który Rysuje linie gudie kolumn zabezpieczać kodu na szerokość ekranu.  Pokazuje również, odczytywania i zapisywania ustawień, a także deklarowania i wykonania polecenia, które można wywoływać z okna poleceń.|  
 |[Importy edytora](../extensibility/editor-imports.md)|Wyświetla listę usług, które można importować rozszerzenia.|  
 |[Dostosowanie starszego kodu do edytora](../extensibility/adapting-legacy-code-to-the-editor.md)|W tym artykule wyjaśniono różne sposoby dostosowania starszego kodu (wcześniej Visual Studio 2010) do rozszerzenia edytora.|  
 |[Migrowanie starszej wersji usługi językowej](../extensibility/internals/migrating-a-legacy-language-service.md)|Wyjaśnia, jak przeprowadzić migrację usługi językowej na podstawie pakietu VSPackage.|  
-|[Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Pokazuje, jak połączyć typu zawartości z rozszerzeniem nazwy pliku.|  
-|[Przewodnik: tworzenie symbolu na marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)|Pokazuje, jak dodać ikonę margines.|  
-|[Przewodnik: wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)|Ilustruje sposób używania *tagi* aby wyróżnić tekst.|  
-|[Przewodnik: tworzenie konspektu](../extensibility/walkthrough-outlining.md)|Pokazuje, jak dodać konspekt dla konkretnych rodzajów nawiasów klamrowych.|  
-|[Przewodnik: wyświetlanie parowanych nawiasów klamrowych](../extensibility/walkthrough-displaying-matching-braces.md)|Pokazuje, jak wyróżnianie pasujących nawiasów klamrowych.|  
-|[Przewodnik: wyświetlanie etykietek narzędzi SzybkieInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Pokazuje sposób wyświetlania okna podręczne skrócone informacje, które opisują elementy kodu, takie jak właściwości, metody i zdarzenia.|  
-|[Przewodnik: wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)|Pokazuje sposób wyświetlania okna podręczne, które zapewniają informacje o liczbę i typy parametrów w podpisie.|  
-|[Przewodnik: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)|Pokazuje, jak zaimplementować uzupełniania instrukcji.|  
-|[Przewodnik: implementowanie fragmentów kodu](../extensibility/walkthrough-implementing-code-snippets.md)|Pokazuje, jak zaimplementować rozszerzenia fragmentu kodu.|  
-|[Przewodnik: wyświetlanie sugestii „żarówka”](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Pokazuje sposób wyświetlania żarówki dla kodu sugestie.|  
-|[Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Pokazuje, jak kojarzenie polecenia menu w VSPackage za pomocą składnika MEF.|  
-|[Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Pokazuje, jak skojarzyć skrótu w menu w VSPackage z składnik MEF.|  
+|[Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Pokazuje, jak połączyć typu zawartości z rozszerzeniem nazwy pliku.|  
+|[Przewodnik: Tworzenie marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)|Pokazuje, jak dodać ikonę margines.|  
+|[Przewodnik: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)|Ilustruje sposób używania *tagi* aby wyróżnić tekst.|  
+|[Przewodnik: Tworzenie konspektu](../extensibility/walkthrough-outlining.md)|Pokazuje, jak dodać konspekt dla konkretnych rodzajów nawiasów klamrowych.|  
+|[Przewodnik: Wyświetlanie, dopasowywanie nawiasów klamrowych](../extensibility/walkthrough-displaying-matching-braces.md)|Pokazuje, jak wyróżnianie pasujących nawiasów klamrowych.|  
+|[Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Pokazuje sposób wyświetlania okna podręczne skrócone informacje, które opisują elementy kodu, takie jak właściwości, metody i zdarzenia.|  
+|[Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)|Pokazuje sposób wyświetlania okna podręczne, które zapewniają informacje o liczbę i typy parametrów w podpisie.|  
+|[Przewodnik: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)|Pokazuje, jak zaimplementować uzupełniania instrukcji.|  
+|[Przewodnik: Implementowanie fragmentów kodu](../extensibility/walkthrough-implementing-code-snippets.md)|Pokazuje, jak zaimplementować rozszerzenia fragmentu kodu.|  
+|[Przewodnik: Wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Pokazuje sposób wyświetlania żarówki dla kodu sugestie.|  
+|[Przewodnik: Używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Pokazuje, jak kojarzenie polecenia menu w VSPackage za pomocą składnika MEF.|  
+|[Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Pokazuje, jak skojarzyć skrótu w menu w VSPackage z składnik MEF.|  
 |[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Zawiera informacje na temat Managed Extensibility Framework (MEF).|  
 |[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Zawiera informacje o Windows Presentation Foundation (WPF).|  
   
@@ -96,4 +91,3 @@ Dodawanie funkcji do usługi języka (takie jak IntelliSense) do własnego edyto
  <xref:Microsoft.VisualStudio.Text.Tagging>  
   
  <xref:Microsoft.VisualStudio.Utilities>
-

@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji Windows Store Apps | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji Windows Store Apps | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754877"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Wskazówki: tworzenie i uruchamianie testów jednostkowych dla aplikacji sklepu Windows Store
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji i zawiera szablony bibliotek testów jednostkowych dla języka Visual C#, Visual Basic i Visual C++.  
@@ -119,7 +114,7 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
     >  Należy utworzyć rozwiązanie, które można zaktualizować listy testów jednostkowych w Eksploratorze testów.  
   
     > [!WARNING]
-    >  Program Visual Studio, znany problem: Test Explorer należy otworzyć przed utworzeniem projektu testu.  
+    >  Znany problem programu Visual Studio: Test Explorer należy otworzyć przed utworzeniem projektu testu.  
   
 3.  W Eksploratorze testów wybierz utworzony test jednostki.  
   
@@ -128,7 +123,7 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
   
 4.  Wybierz **uruchomić wszystkie**.  
   
-     ![Eksplorator testów jednostkowych &#45; uruchomić test jednostkowy](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
+     ![Unit Test Explorer &#45; run unit test](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
     >  Można wybrać jeden lub więcej testów wymienionych w Eksploratorze i kliknij prawym przyciskiem myszy i wybierz **Uruchom wybrane testy**.  
@@ -149,12 +144,9 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
 ### <a name="forums"></a>Fora  
  [Visual Studio Unit Testing](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
-### <a name="msdn-library"></a>Biblioteka MSDN  
+### <a name="msdn-library"></a>MSDN Library  
  [Biblioteka MSDN — tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Testowanie aplikacji Store za pomocą programu Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Tworzenie i testowanie aplikacji Windows Store, za pomocą Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

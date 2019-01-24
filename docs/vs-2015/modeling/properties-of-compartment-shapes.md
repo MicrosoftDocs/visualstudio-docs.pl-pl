@@ -1,12 +1,9 @@
 ---
 title: Właściwości kształtów przedziałów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 9a9e112d-210d-413b-a44f-0e976a4a78bc
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bb5730093a9eda6464bd6b67fa09976a4e9cd2f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69fac0b8ef5c17a8d66d32730e189f2813aa1158
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216388"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760664"
 ---
 # <a name="properties-of-compartment-shapes"></a>Właściwości kształtów przedziałów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ Kształtów przedziałów są jednymi z kształtami, które służy do wyświetl
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Poziome|  
 |Geometrii|Geometria tego kształtu (prostokąt lub prostokąt zaokrąglony).|Prostokąt|  
 |Ma domyślne punkty połączenia|Jeśli `True`kształt użyje górnej, dolnej, lewej i połączenia na odpowiednie punkty w wygenerowanym projektancie.|False|  
-|Jeden przedział, nagłówek jest widoczny|Jeśli `False`i kształt ma jeden przedział, nagłówek przedziału nie jest widoczny.|True|  
+|Jeden przedział, nagłówek jest widoczny|Jeśli `False`i kształt ma jeden przedział, nagłówek przedziału nie jest widoczny.|Prawda|  
 |Kolor konturu|Kolor konturu tego kształtu.|Czarny|  
 |Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (stałe, kreski, kropki, DashDot, DashDotDot, niestandardowe).|Stałe|  
 |Grubość konturu|Grubość konturu tego kształtu.|0.03125|  
@@ -55,7 +52,7 @@ Kształtów przedziałów są jednymi z kształtami, które służy do wyświetl
 |Typ etykietki narzędzia|Jak etykietka narzędzia jest zdefiniowane (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|brak|  
 |Uwagi|Uwagi informacyjne, które są skojarzone z tym kształtem.|\<Brak >|  
 |Początkowa wysokość|Początkowa wysokość tego kształtu, w calach. Dla kształtów przedziałów jest wysokość w sekcji nagłówka i nie można zmienić rozmiaru.|1|  
-|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1.5|  
+|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1,5|  
 |Kolor wypełnienia uwidocznione jako właściwość<br /><br /> Tryb gradientu wypełnienia narażone<br /><br /> Widoczne kolor konturu jako właściwość<br /><br /> Widoczne stylu kreskowania konturu jako właściwość<br /><br /> Grubość konturu jako właściwość widoczne<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij przycisk **Dodaj udostępniane**.|False|  
 |Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|  
 |Nazwa wyświetlana|Nazwa która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<Brak >|  
@@ -63,7 +60,4 @@ Kształtów przedziałów są jednymi z kształtami, które służy do wyświetl
 |Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<Brak >|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

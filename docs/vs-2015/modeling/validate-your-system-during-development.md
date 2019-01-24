@@ -1,27 +1,22 @@
 ---
 title: Weryfikacja systemu w czasie projektowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams
 ms.assetid: c9dafb47-7b1d-4c72-9432-d43be3db1799
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 03cac924853f4348faabd773260a9512c2d82b6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d42618569e9b3924a43c11eb8feffeea8ed705a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753367"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowni
   
 |**Kategoria**|**Łącza**|  
 |------------------|---------------|  
-|**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: Doug siedem: rozpoznawanie kodu oraz projekt systemu w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: Projektowanie aplikacji przy użyciu diagramu warstwowego](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [serii MSDN jak mogę: jak sprawdzić poprawność kodu przy użyciu diagramów warstw](http://go.microsoft.com/fwlink/?LinkID=214405)|  
+|**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: Doug Seven: Rozpoznawanie kodu oraz projekt systemu w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: Projektowanie aplikacji przy użyciu diagramu warstwowego](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak mogę serii: Jak sprawdzić poprawność kodu przy użyciu diagramów warstw](http://go.microsoft.com/fwlink/?LinkID=214405)|  
 |**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogi**|-   [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -53,6 +48,3 @@ Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowni
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
  [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)
-
-
-

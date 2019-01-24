@@ -1,14 +1,9 @@
 ---
 title: Debugowanie skryptu po stronie klienta | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3aa04ab77b6e3dc6264a517c83c4ed319f36d686
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817805"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773600"
 ---
 # <a name="client-side-script-debugging"></a>Debugowanie skryptu po stronie klienta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51817805"
 Debuger programu Visual Studio zapewnia kompleksowe środowisko debugowania do znajdowania i poprawiania błędów w skryptach po stronie klienta na stronach ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Otwieranie dokumentów skryptu  
- Można wyświetlić listy dokumentów skryptów po stronie serwera i klienta w **Eksploratora rozwiązań** do wyświetlenia. Możesz otworzyć dowolny dokument skryptu z **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie dokumentów skryptu](../debugger/how-to-view-script-documents.md).  
+ Można wyświetlić listy dokumentów skryptów po stronie serwera i klienta w **Eksploratora rozwiązań** do wyświetlenia. Możesz otworzyć dowolny dokument skryptu z **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie dokumentów skryptu](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapowanie punktów przerwania  
  W programie Visual Studio nie można bezpośrednio debugować kodu po stronie serwera, ale można ustawić punkt przerwania w pliku po stronie serwera. Visual Studio automatycznie mapuje punkt przerwania do odpowiedniej lokalizacji w pliku po stronie klienta i tworzy mapowany punkt przerwania w kodzie po stronie klienta.  
@@ -43,7 +38,7 @@ Debuger programu Visual Studio zapewnia kompleksowe środowisko debugowania do z
 ## <a name="manually-or-automatically-attaching-to-script"></a>Ręczne lub automatyczne dołączanie do skryptu  
  Aby rozpocząć debugowanie skryptu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], debuger należy dołączyć do skryptu, który chcesz debugować. Można to zrobić ręcznie lub automatycznie.  
   
- Można przyłączyć ręcznie używając [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu debugera do wybrania czynnego procesu skryptu, którego chcesz dołączyć do. Aby uzyskać więcej informacji, zobacz [porady: dołączanie do skryptu](../debugger/how-to-attach-to-script.md).  
+ Można przyłączyć ręcznie używając [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu debugera do wybrania czynnego procesu skryptu, którego chcesz dołączyć do. Aby uzyskać więcej informacji, zobacz [jak: Dołączanie do skryptu](../debugger/how-to-attach-to-script.md).  
   
  Debuger automatycznie dołącza do skryptu, gdy wystąpi jedno z następujących czynności:  
   
@@ -73,6 +68,3 @@ Debuger programu Visual Studio zapewnia kompleksowe środowisko debugowania do z
  [Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Okno bezpośrednie](../ide/reference/immediate-window.md)   
  [Debugowanie i śledzenie Ajax aplikacje — Przegląd](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Punkt, warianty punktowego, Trójliniowego i Anizotropowego filtrowania tekstur | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ef054b1773b1f0d07e21ec25cb326594a4d3b2d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c53f3b0633ec8938de210cb518d9fae1937eb2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791243"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753738"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Warianty punktowego, dwuliniowego, trójliniowego i anizotropowego filtrowania tekstur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,6 +120,3 @@ sampler_description.MaxAnisotropy = 16;
 d3d_device->CreateSamplerState(&sampler_desc, &sampler);  
 d3d_context->PSSetSamplers(0, 1, &sampler  
 ```
-
-
-

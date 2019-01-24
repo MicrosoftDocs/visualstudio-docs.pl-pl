@@ -1,14 +1,9 @@
 ---
 title: Integracja z programem Visual Studio (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294856"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763313"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ Visual Studio zawiera [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] d
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] patrzy na warunki `PropertyGroup`, `ItemGroup`, `Import`, właściwości i elementy w tym celu.  
   
 ## <a name="additional-build-actions"></a>Dodatkowe akcje kompilacji  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Pozwala zmienić nazwę typu elementu pliku w projekcie z **Build Action** właściwość [właściwości pliku](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, i `None` nazwy typu elementu są zawsze wyświetlane w tym menu, razem z dowolnym innymi nazwami typów elementów już w projekcie. Aby upewnić się, wszystkie nazwy typu elementu niestandardowego są zawsze dostępne w tym menu, można dodać nazwy do typów elementu o nazwie `AvailableItemName`. Na przykład, dodanie następującego elementu do pliku projektu spowoduje dodanie niestandardowego typu `JScript` do tego menu dla wszystkich projektów, które go zaimportują:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Pozwala zmienić nazwę typu elementu pliku w projekcie z **Build Action** właściwość [właściwości pliku](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, i `None` nazwy typu elementu są zawsze wyświetlane w tym menu, razem z dowolnym innymi nazwami typów elementów już w projekcie. Aby upewnić się, wszystkie nazwy typu elementu niestandardowego są zawsze dostępne w tym menu, można dodać nazwy do typów elementu o nazwie `AvailableItemName`. Na przykład, dodanie następującego elementu do pliku projektu spowoduje dodanie niestandardowego typu `JScript` do tego menu dla wszystkich projektów, które go zaimportują:  
   
 ```  
 <ItemGroup>  
@@ -188,7 +183,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Do regularnych kompilacji w programie Visual Studio nie ma zastosowania szybkie sprawdzenie aktualizacji, a projekt zostanie skompilowany po wywołaniu kompilacji w wierszu polecenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: rozszerzanie procesu kompilacji programu Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Instrukcje: Rozszerzanie procesu kompilacji programu Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Uruchamianie kompilacji w środowisku IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Rejestrowanie rozszerzeń środowiska .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [TARGET — Element (MSBuild)](../msbuild/target-element-msbuild.md)   
  [CSC — zadanie](../msbuild/csc-task.md)   
  [Vbc, zadanie](../msbuild/vbc-task.md)
-
-
-

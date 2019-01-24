@@ -1,14 +1,9 @@
 ---
-title: 'Porady: zbieranie danych licznika Procesora | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zbieranie danych licznika Procesora | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46ade222b6032baca17afe37d72dd6e5657ae1c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2a774ce8b36ceddb4d4b53f90c63bec30acc0273
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762935"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika procesora
+# <a name="how-to-collect-cpu-counter-data"></a>Instrukcje: Zbieranie danych licznika Procesora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności specyficzne dla sprzętu. W tym temacie opisano zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.  
@@ -55,7 +50,7 @@ Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności spe
   
 - Podczas profilowania za pomocą Instrumentacji, zbieranie danych z co najmniej jeden licznik.  
   
-- Określ zdarzeń licznika jako interwał próbkowania, podczas profilowania za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md).  
+- Określ zdarzeń licznika jako interwał próbkowania, podczas profilowania za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [jak: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Do zbierania danych licznika wydajności procesora CPU podczas profilowania za pomocą Instrumentacji  
   
@@ -74,7 +69,4 @@ Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności spe
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
  [Właściwości sesji wydajności](../profiling/performance-session-properties.md)   
  [CPU i liczniki Windows](../profiling/cpu-and-windows-counters.md)   
- [Instrukcje: wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)
-
-
-
+ [Instrukcje: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)

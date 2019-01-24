@@ -1,23 +1,20 @@
 ---
 title: Właściwości ról w domenie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: 5a7bb18c-638e-45e8-9d79-9aa6a9e14b0e
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755104"
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +31,8 @@ W poniższej tabeli przedstawiono właściwości są skojarzone z rolą domeny. 
 |Modyfikator dostępu metody ustawiającej właściwość|Modyfikator dostępu dla metody ustawiającej wygenerowanej właściwości (`public`, `internal`, `private`, `protected`, lub `protected internal`).|`public`|  
 |Liczebność|Liczba elementów modelu, które mogą pełnić rolę odwrotną (`0..1`, `1..1`, `0..*`, lub `1..*`). Jeśli liczebność jest `0..*` lub `1..*`, następnie wygenerowana właściwość reprezentuje kolekcję; w przeciwnym razie wygenerowana właściwość reprezentuje element pojedynczego modelu.|Zależy od typu relacji i tego, czy jest to rola źródłowa lub docelowa w relacji.|  
 |Nazwa|Nazwa roli domeny. Ta właściwość nie może zawierać spacji.|Nazwa klasy domeny obiektu pełniącego rolę dla tej roli.|  
-|Propaguje kopiowania|`DoNotPropagateCopy` -Kopiowanego obiektu pełniącego rolę będzie żadnej kopii tego łącza.<br /><br /> `PropagateCopyToLinkOnly` -Skopiowany link wskazuje na istniejący obiekt pełniący rolę odwrotną.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Skopiowany link wskazuje kopię obiektu pełniącego rolę odwrotną.|`PropagateCopyToLinkAndOppositeRolePlayer` dla ról źródło osadzenia.<br /><br /> `DoNotPropagateCopy` dla innych ról.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)|  
-|Propaguje Delete|`True` Aby usunąć element, który odgrywa tej roli, gdy skojarzone łącze zostało usunięte.|`True` dla elementu docelowego osadzania roli.<br /><br /> `False` dla innych ról.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md).|  
+|Propagates Copy|`DoNotPropagateCopy` -Kopiowanego obiektu pełniącego rolę będzie żadnej kopii tego łącza.<br /><br /> `PropagateCopyToLinkOnly` -Skopiowany link wskazuje na istniejący obiekt pełniący rolę odwrotną.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Skopiowany link wskazuje kopię obiektu pełniącego rolę odwrotną.|`PropagateCopyToLinkAndOppositeRolePlayer` dla ról źródło osadzenia.<br /><br /> `DoNotPropagateCopy` dla innych ról.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)|  
+|Propagates Delete|`True` Aby usunąć element, który odgrywa tej roli, gdy skojarzone łącze zostało usunięte.|`True` dla elementu docelowego osadzania roli.<br /><br /> `False` dla innych ról.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md).|  
 |Nazwa właściwości|Nazwa właściwości wygenerowanej w kodzie obiektu pełniącego rolę. Ta nazwa nie może zawierać białych znaków.|Nazwa roli odwrotną, jeśli ta rola ma wartość zero do jednego lub jeden do jednego liczebność; w przeciwnym razie nazwa pluralized rolę odwrotną.|  
 |Obiekt pełniący rolę|Klasa domeny element, który można odtworzyć tę rolę w relacji. Ta właściwość jest tylko do odczytu.|Klasa domeny obiektu pełniącego rolę dla tej roli.|  
 |Uwagi|Uwagi informacyjne skojarzone z rolą domeny.|\<Brak >|  
@@ -50,6 +47,3 @@ W poniższej tabeli przedstawiono właściwości są skojarzone z rolą domeny. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Właściwości relacji domeny](../modeling/properties-of-domain-relationships.md)
-
-
-

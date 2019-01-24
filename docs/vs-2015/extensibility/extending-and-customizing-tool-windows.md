@@ -1,27 +1,22 @@
 ---
 title: Rozszerzanie i dostosowywanie narzędzi Windows | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797717"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Rozszerzanie i dostosowywanie okien narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Visual Studio zawiera kilka różnych typów windows, na przykład okien, okien 
   
  Możesz dodać wiele różnych funkcji do okna narzędzi. Na przykład można dodać paska narzędzi: [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) lub menu skrótów: [Dodawanie Menu skrótów w oknie narzędzia](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Można dodać kontrolkę wyszukiwania, która umożliwia wyszukiwanie elementów wewnątrz okna narzędzia: [Dodawanie wyszukiwania do okna narzędzi](../extensibility/adding-search-to-a-tool-window.md).  
   
- Można subskrybować zdarzenia okna narzędzia: [subskrybowanie zdarzenia](../extensibility/subscribing-to-an-event.md).  
+ Można subskrybować zdarzenia okna narzędzia: [Subskrybowanie zdarzenia](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extending-existing-tool-windows"></a>Rozszerzanie istniejących narzędzi Windows  
  Można dodać informacji o okna narzędzia do nowego **opcje** strony i nowe ustawienie na **właściwości** strony, zapisać **listy zadań** i **danych wyjściowych**  systemu windows. Aby uzyskać więcej informacji, zobacz [rozszerzanie właściwości, listy zadań, danych wyjściowych i opcji Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) i [rozszerzanie właściwości, listy zadań, danych wyjściowych i opcji Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
@@ -55,4 +50,3 @@ Visual Studio zawiera kilka różnych typów windows, na przykład okien, okien 
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
-

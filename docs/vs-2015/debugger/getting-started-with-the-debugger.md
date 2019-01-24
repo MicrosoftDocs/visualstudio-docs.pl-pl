@@ -1,13 +1,8 @@
 ---
 title: Wprowadzenie do debugera | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,13 +13,13 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763922"
 ---
 # <a name="getting-started-with-the-debugger"></a>Wprowadzenie do debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51771610"
 Debuger programu Visual Studio jest łatwa w użyciu w dowolnym języku. Tutaj pokażemy sposób debugowania prostego programu C#, ale te same kroki można stosować do kodu w innych językach, takich jak C++ i JavaScript.  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> Debugowanie projektu podstawowe języka C#  
- Zacznijmy od prostej aplikacji konsoli języka C# (**plik / nowy / Project**, a następnie wybierz **Visual C#** , a następnie wybierz **aplikację Konsolową**). Jeśli nigdy nie Pracowałem przy użyciu programu Visual Studio przed [wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** metoda po prostu dodaje 1 na zmienną całkowitoliczbową 10 razy i drukuje wynik do konsoli:  
+ Zacznijmy od prostej aplikacji konsoli języka C# (**plik / nowy / Project**, a następnie wybierz **Visual C#** , a następnie wybierz **aplikację Konsolową**). Jeśli nigdy nie Pracowałem przy użyciu programu Visual Studio przed [instruktażu: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** metoda po prostu dodaje 1 na zmienną całkowitoliczbową 10 razy i drukuje wynik do konsoli:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -98,8 +93,3 @@ private static void Method1()
  Zatrzymaj debugowanie, uruchom ponownie i kiedy przerywa wykonywanie w punkcie przerwania, kliknij przycisk **debugowanie / krok Over** (lub **Step Over** na pasku narzędzi lub **F10**). Wykonanie ponownie przerywa w `Console.WriteLine("end");`.  
   
  Jeśli chcesz dowiedzieć się więcej o nawigowanie po kodzie za pomocą debugera, zobacz [nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md).
-
-
-
-
-

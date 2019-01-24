@@ -1,24 +1,19 @@
 ---
 title: Wprowadzenie do analizatorów Roslyn | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 320f35d2a80f120d14f01b471449cd308ab30c8e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+manager: jillfra
+ms.openlocfilehash: 104e3a30589f5892c1440266afd7917486d704ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771943"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Wprowadzenie do analizatorów Roslyn
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +37,3 @@ Za pomocą analizatorów kodu na żywo, na podstawie projektu w programie Visual
 [Więcej dokumentów w witrynie GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 
 [Reguł programu FxCop implementowane za pomocą analizatorów Roslyn w witrynie GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
-

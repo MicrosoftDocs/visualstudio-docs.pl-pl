@@ -1,11 +1,8 @@
 ---
 title: Wybierz zestaw reguł, okno dialogowe (starsza wersja) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
@@ -15,18 +12,18 @@ ms.assetid: cb2bc3f9-7730-4fb2-9f7b-303a9d9f0c8e
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: c53aefdf17e11974e5ef563cd3684e80722837c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195991"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798146"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Wybieranie zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- **Wybierz zestaw reguł** okno dialogowe służy do wybierania zestaw reguł, który można używać z [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) działania. Aby uzyskać informacje o tym, jak uzyskać dostęp do **wybierz zestaw reguł** okno dialogowe, zobacz [jak: tworzenie działania PolicyActivity reguły zestawu (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
+ **Wybierz zestaw reguł** okno dialogowe służy do wybierania zestaw reguł, który można używać z [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) działania. Aby uzyskać informacje o tym, jak uzyskać dostęp do **wybierz zestaw reguł** okno dialogowe, zobacz [jak: Tworzenie zestawu reguł działania PolicyActivity (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
  W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz zestaw reguł** okno dialogowe.  
   

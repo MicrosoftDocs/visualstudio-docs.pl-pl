@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:GetHostPid | Dokumentacja firmy Microsoft
+title: IRemoteDebugApplicationEx:GetHostPid | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,37 +18,43 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7570abb8436a49fb80f548d1a7136bf0fe7e0814
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 62033169e10585015b5f1439067aa0cbc42447a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754643"
 ---
 # <a name="iremotedebugapplicationexgethostpid"></a>IRemoteDebugApplicationEx:GetHostPid
-Zwraca identyfikator procesu aplikacji hosta.  
-  
-## <a name="syntax"></a>Składnia  
-  
+
+Zwraca identyfikator procesu aplikacji hosta.
+
+## <a name="syntax"></a>Składnia
+
 ```cpp
-HRESULT GetHostPid(  
-   DWORD*  dwHostPid  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `dwHostPid`  
- [out] Identyfikator procesu hosta.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
-  
-|Wartość|Opis|  
-|-----------|-----------------|  
-|`S_OK`|Wykonanie metody powiodło się.|  
-  
-## <a name="remarks"></a>Uwagi  
- Używane przez środowisko IDE.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IRemoteDebugApplicationEx, interfejs](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+HRESULT GetHostPid(
+   DWORD*  dwHostPid
+);
+```
+
+### <a name="parameters"></a>Parametry
+
+`dwHostPid`
+
+[out] Identyfikator procesu hosta.
+
+## <a name="return-value"></a>Wartość zwracana
+
+Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.
+
+|Wartość|Opis|
+|-----------|-----------------|
+|`S_OK`|Wykonanie metody powiodło się.|
+
+## <a name="remarks"></a>Uwagi
+
+Używane przez środowisko IDE.
+
+## <a name="see-also"></a>Zobacz także
+
+- [IRemoteDebugApplicationEx, interfejs](iremotedebugapplicationex-interface.md)

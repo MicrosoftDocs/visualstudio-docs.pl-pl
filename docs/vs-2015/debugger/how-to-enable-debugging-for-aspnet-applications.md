@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Włączanie debugowania dla aplikacji ASP.NET | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Włącz debugowanie aplikacji ASP.NET | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757548"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Porady: włączanie debugowania dla aplikacji ASP.NET
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Instrukcje: Włącz debugowanie aplikacji ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby włączyć debugowanie, należy włączyć go w obu **właściwości projektu** strony w pliku web.config aplikacji.  
@@ -94,8 +89,3 @@ Włączanie trybu debugowania będzie znacznie wpłynąć na wydajność Twojej 
   
 ## <a name="see-also"></a>Zobacz też  
 [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

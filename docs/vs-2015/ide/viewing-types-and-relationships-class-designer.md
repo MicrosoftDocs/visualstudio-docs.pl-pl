@@ -1,14 +1,9 @@
 ---
 title: Wyświetlanie typów i relacji (Projektant klas) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: c4f46d94-9972-42ac-ae63-6ff306369965
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d426c1146ae3862318b265c2e36b334b4761d2d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769003"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Wyświetlanie typów i relacji (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49240763"
 Projektant klas korzysta z diagramów klas, aby pokazać szczegóły typów, na przykład, ich składowe i relacje, które współużytkują one. Wizualizacja te jednostki jest faktycznie dynamiczny widok w kodzie. Oznacza to, że można edytować typy w Projektancie i następnie zobacz zmiany zostaną uwzględnione w kodzie źródłowym jednostki. Podobnie diagram klas są synchronizowane z zmiany wprowadzone do jednostek w kodzie.  
   
 > [!NOTE]
->  Jeśli projekt zawiera diagram klas i projekt odwołuje się do typu, który znajduje się w innym projekcie, diagram klas nie są wyświetlane odwołanie typu do czasu kompilowania projektu dla tego typu. Podobnie diagram nie są wyświetlane zmiany do kodu zewnętrznej jednostki dopóki można ponownie skompilować projekt dla danej jednostki. Aby uzyskać informacji na temat typów w przywoływanych zestawach i plikach tylko do odczytu, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Jeśli projekt zawiera diagram klas i projekt odwołuje się do typu, który znajduje się w innym projekcie, diagram klas nie są wyświetlane odwołanie typu do czasu kompilowania projektu dla tego typu. Podobnie diagram nie są wyświetlane zmiany do kodu zewnętrznej jednostki dopóki można ponownie skompilować projekt dla danej jednostki. Aby uzyskać informacji na temat typów w przywoływanych zestawach i plikach tylko do odczytu, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Instrukcje: Wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md)  
@@ -58,6 +53,3 @@ Projektant klas korzysta z diagramów klas, aby pokazać szczegóły typów, na 
  [Instrukcje: Dostosowywanie diagramów klas (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)  
   
  [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

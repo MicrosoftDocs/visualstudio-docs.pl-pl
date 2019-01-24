@@ -1,14 +1,9 @@
 ---
 title: '&lt;zależność&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -30,13 +25,13 @@ ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775035"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależność&gt; — Element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +79,25 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
  `dependency` Element najczęściej wyraża zależności dla głównej aplikacji na zestawach zawartych w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Jeśli aplikacja Main.exe wykorzystuje zestaw o nazwie DotNetAssembly.dll, tego zestawu musi być wymieniony w sekcji zależności. Zależność, jednak można również wyrazić innych typów zależności, takie jak zależności od określonej wersji środowiska CLR zestawu w globalnej pamięci podręcznej zestawów (GAC) lub obiektów COM. Ponieważ jest to technologia wdrożenia bezobsługowego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nie można zainicjować pobranie i zainstalowanie tego rodzaju zależności, ale uniemożliwia uruchomienie aplikacji, jeśli nie istnieją co najmniej jedną z określonymi zależnościami.  
   
 ## <a name="dependentassembly"></a>dependentAssembly  
- Wymagane. Ten element zawiera `assemblyIdentity` elementu. W poniższej tabeli przedstawiono atrybuty `dependentAssembly` obsługuje.  
+ Wymagana. Ten element zawiera `assemblyIdentity` elementu. W poniższej tabeli przedstawiono atrybuty `dependentAssembly` obsługuje.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`preRequisite`|Opcjonalna. Określa, że ten zestaw powinna już istnieć w pamięci podręcznej GAC. Prawidłowe wartości to `true` i `false`. Jeśli `true`i określony zestaw nie istnieje w pamięci podręcznej GAC, aplikacja nie może uruchomić.|  
 |`visible`|Opcjonalna. Określa tożsamość aplikacji najwyższego poziomu, łącznie z jej zależnościami. Używane wewnętrznie przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] na potrzeby zarządzania i aktywacji aplikacji.|  
-|`dependencyType`|Wymagane. Relacja między tą zależnością i aplikacji. Prawidłowe wartości to:<br /><br /> -   `install`. Składnik stanowi oddzielną instalacją od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
+|`dependencyType`|Wymagana. Relacja między tą zależnością i aplikacji. Prawidłowe wartości to:<br /><br /> -   `install`. Składnik stanowi oddzielną instalacją od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
 |`codebase`|Opcjonalna. Pełna ścieżka do manifestu aplikacji.|  
 |`size`|Opcjonalna. Rozmiar manifest aplikacji, w bajtach.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Wymagane. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama, jak opisano w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
+ Wymagana. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama, jak opisano w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagane. Określa nazwę aplikacji.|  
-|`Version`|Wymagane. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
-|`publicKeyToken`|Wymagane. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnie 8 bajtów Skrót SHA-1 klucza publicznego, w ramach której aplikacja lub zestaw jest podpisany. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub nowszej.|  
-|`processorArchitecture`|Wymagane. Określa procesor. Prawidłowe wartości to `x86` dla Windows 32-bitowe i `IA64` dla Windows 64-bitowych.|  
+|`Name`|Wymagana. Określa nazwę aplikacji.|  
+|`Version`|Wymagana. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
+|`publicKeyToken`|Wymagana. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnie 8 bajtów Skrót SHA-1 klucza publicznego, w ramach której aplikacja lub zestaw jest podpisany. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub nowszej.|  
+|`processorArchitecture`|Wymagana. Określa procesor. Prawidłowe wartości to `x86` dla Windows 32-bitowe i `IA64` dla Windows 64-bitowych.|  
 |`Language`|Opcjonalna. Określa część dwóch kodów języka zestawu. Na przykład: EN-US, który oznacza dla języka angielskiego (US). Wartość domyślna to `neutral`. Tego elementu jest `asmv2` przestrzeni nazw.|  
 |`type`|Opcjonalna. Dla zapewnienia zgodności z Windows side-by-side zainstalować technologii. Jest to jedyna wartość dozwolone `win32`.|  
   
@@ -128,7 +123,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 |---------------|-----------------|  
 |`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
   
 ## <a name="remarks"></a>Uwagi  
@@ -190,7 +185,4 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<zależność > Element](../deployment/dependency-element-clickonce-application.md)
-
-
-
+ [\<dependency> Element](../deployment/dependency-element-clickonce-application.md)

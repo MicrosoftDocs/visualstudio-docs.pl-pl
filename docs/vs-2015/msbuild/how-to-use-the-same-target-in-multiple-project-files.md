@@ -1,14 +1,9 @@
 ---
-title: 'Porady: użycie tej samej wartości docelowej w wielu plikach projektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
@@ -16,15 +11,15 @@ ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b886c4865d715c4fee4e9385288f2e4eb15baa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223343"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769336"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Porady: użycie tej samej wartości docelowej w wielu plikach projektów
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: Użycie tej samej wartości docelowej w wielu plikach projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -123,6 +118,3 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
 ## <a name="see-also"></a>Zobacz też  
  [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Docelowe elementy](../msbuild/msbuild-targets.md)
-
-
-

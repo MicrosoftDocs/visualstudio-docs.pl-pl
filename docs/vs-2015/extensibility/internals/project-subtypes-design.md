@@ -1,26 +1,21 @@
 ---
 title: Podtypy projektów projekt | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776467"
 ---
 # <a name="project-subtypes-design"></a>Projektowanie podtypów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Podtyp wielopoziomowej projektu
   
  Na poniższej ilustracji koncentruje się na implementacji extender automatyzacji, obiekt przeglądania konfiguracji projektu w szczególności używanej przez podtypy projektów do rozszerzania systemu podstawowego projektu.  
   
- ![Grafika przedstawiająca automatyczne rozszerzanie podtypu projektu VS](../../extensibility/internals/media/vs-projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
+ ![VS Project Flavor Auto Extender graphic](../../extensibility/internals/media/vs-projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
 Urządzenie Extender automatyzacji podtypu projektu.  
   
  Podtypy projektów Dodatkowo można rozszerzyć systemu podstawowego projektu, rozszerzając modelu obiektu automatyzacji. Te są zdefiniowane jako część obiektu automatyzacji DTE i służą do rozszerzania obiektu projektu `ProjectItem` obiektu i `Configuration` obiektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie modelu obiektu projektu Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
@@ -97,4 +92,3 @@ Urządzenie Extender automatyzacji podtypu projektu.
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>
-

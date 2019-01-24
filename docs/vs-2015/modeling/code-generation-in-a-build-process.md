@@ -1,12 +1,9 @@
 ---
 title: Generowanie w procesie kompilacji kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: b6c30ef435cde80053d1f7760a57acac2bca8532
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766274"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +41,15 @@ Jeśli [serwer kompilacji](http://msdn.microsoft.com/library/788443c3-0547-452e-
 
     -   Microsoft.TextTemplating.targets
 
--   $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+-   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
     -   Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Gt;Microsoft.VisualStudio.texttemplating.Interfaces.*.0.dll (kilka plików)
+    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
     -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles) \Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+-   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
     -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
@@ -288,4 +285,4 @@ Dobrą wskazówkę znajdziesz w szablonie T4 MSbuild, $(VSToolsPath)\TextTemplat
 
 - [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio Visualisation i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [OLEG Sych: Opis integracji T4:MSBuild](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [OLEG Sych: Opis T4:MSBuild integracji](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)

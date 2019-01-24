@@ -1,14 +1,9 @@
 ---
 title: Uruchom Windows Store apps na komputerze lokalnym | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766839"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753742"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Uruchom Windows Store apps na lokalnym komputerze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,12 +52,9 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
   
 -   W projektach C++ i JavaScript, rozwiń węzeł **właściwości konfiguracji** węzła, kliknij przycisk **debugowanie**, a następnie wybierz pozycję **debuger lokalny** z **debugera Aby uruchomić** listy.  
   
-     ![C&#43; &#43; i strony właściwości projektu JavaScript](../debugger/media/vsrun-cpp-js-projprop-local.png "VSRUN_CPP_JS_ProjProp_Local")  
+     ![C&#43;&#43; and JavaScript project properties page](../debugger/media/vsrun-cpp-js-projprop-local.png "VSRUN_CPP_JS_ProjProp_Local")  
   
 ##  <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Jak przełączać się między aplikacji Windows Store i programu Visual Studio na pojedynczy monitor  
  **Aby przełączyć się z uruchomionego wystąpienia aplikacji Windows Store programu Visual Studio**  
   
  Po uruchomieniu aplikacji Windows Store na maszynie lokalnej i używać tylko jednego monitora, możesz chcieć przejdź z powrotem do programu Visual Studio przy równoczesnym zachowaniu jest uruchomiona aplikacja. Na przykład aplikacja może być w stanie, który nie może być osiągnięty przez punkt przerwania, takich jak oczekiwania na zdarzenie lub zablokował w długich lub nieskończonej pętli. Aby powrócić do programu Visual Studio, naciśnij klawisze ALT + TAB.
-
-
-

@@ -1,13 +1,9 @@
 ---
 title: Debugowanie
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +17,13 @@ ms.assetid: 590f152d-31e2-4e13-b808-a1b13e421483
 caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 68a3646963f7ebbeea9c2ea3ac9a9c1f1729b23a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b54f788c77488ba780a0b52d4d6b332a974748af
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763851"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

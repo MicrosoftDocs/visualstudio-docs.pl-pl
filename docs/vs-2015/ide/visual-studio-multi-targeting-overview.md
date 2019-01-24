@@ -1,13 +1,9 @@
 ---
 title: Przegląd Wielowersyjności kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -17,13 +13,13 @@ ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cf64514f1510a9d4d65930bfc22dc322569853c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768883"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Wielowersyjność kodu Visual Studio ― Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +71,7 @@ W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można okre�
 > [!NOTE]
 >  Profil klienta .NET Framework jest podzbiorem .NET Framework, która zapewnia ograniczony zestaw funkcji i bibliotek. Aby uzyskać więcej informacji na temat profili klientów, zobacz [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
- **Dodaj odwołanie** okno dialogowe wyłącza zestawy systemowe, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemowe to pliki .dll, które są objęte [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji.) Odwołania, które należą do wersji szablonu, która jest nowsza niż wersja docelowa nie zostanie rozwiązany, a nie można dodać formanty, które są zależne od takiego odwołania. Jeśli chcesz włączyć takie odwołanie, zresetuj [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] obiekcie docelowym projektu na taki, który zawiera odwołanie.  Aby uzyskać więcej informacji, zobacz [wprowadzenie do projektanta projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).
+ **Dodaj odwołanie** okno dialogowe wyłącza zestawy systemowe, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemowe to pliki .dll, które są objęte [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji.) Odwołania, które należą do wersji szablonu, która jest nowsza niż wersja docelowa nie zostanie rozwiązany, a nie można dodać formanty, które są zależne od takiego odwołania. Jeśli chcesz włączyć takie odwołanie, zresetuj [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] obiekcie docelowym projektu na taki, który zawiera odwołanie.  Aby uzyskać więcej informacji, zobacz [wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
  Aby uzyskać więcej informacji na temat odwołań do zestawów, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
 

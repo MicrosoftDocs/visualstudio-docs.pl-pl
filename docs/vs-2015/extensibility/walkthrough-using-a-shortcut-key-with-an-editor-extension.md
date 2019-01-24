@@ -1,28 +1,23 @@
 ---
 title: 'Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763020"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące Instruktaż pokazuje, jak dodać zakończeń widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora zakończeń okienka ekranu, i umożliwia dodawanie zakończeń przy użyciu + znak.  
@@ -248,4 +243,3 @@ private void CreateVisuals(ITextViewLine line)
 2.  Utwórz lub Otwórz plik tekstowy. Wpisz wyrazy, niektóre zawierającą znak "", a następnie wpisz i w dowolnym miejscu w widoku tekstu.  
   
      Purpurowa kwadrat powinny pojawić się na każdym "" znak w pliku.
-

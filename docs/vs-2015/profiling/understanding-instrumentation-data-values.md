@@ -1,14 +1,9 @@
 ---
 title: Zapoznanie z wartościami danych Instrumentacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation
 - instrumentation profiling method
@@ -16,13 +11,13 @@ ms.assetid: 2cf94cf9-c317-4a52-bf00-670f1262165e
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aaa94700c22858be5b6a739034715d1bc926eaf9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762911"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Zapoznanie z wartościami danych instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +100,4 @@ ms.locfileid: "51787942"
   
 ## <a name="see-also"></a>Zobacz też  
  [Analizowanie wydajności danych dotyczących narzędzi](../profiling/analyzing-performance-tools-data.md)   
- [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
-
-
-
+ [Instrukcje: Wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)

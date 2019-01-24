@@ -1,14 +1,9 @@
 ---
 title: Przechwytywanie informacji graficznych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
 - vs.graphics.capturewindow
@@ -17,13 +12,13 @@ ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a099254acd572b3fcbb437f8933c81f3d6bd45b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764753"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Aby uruchomić aplikację w obszarze Diagnostyka grafiki  
   
-- Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: naciśnij klawisze Alt+F5)  
+- Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: Naciśnij klawisze Alt + F5)  
   
 - Na **grafiki** narzędzi, wybierz **Rozpocznij diagnostykę** przycisku.  
   
@@ -86,13 +81,10 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
   
  Konfiguracja projektu dla zdalnego debugowania zależy od rodzaju aplikacji, którą projektujesz, i języka programowania, którego używasz. Aby uzyskać informacje o tym, jak skonfigurować zdalne debugowanie dla aplikacji Windows Store, zobacz [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md). Aby uzyskać informacje o tym, jak skonfigurować zdalne debugowanie klasycznych aplikacji Windows, zobacz [Ustaw się zdalne debugowanie projektu programu Visual Studio](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
- Później można użyć zdalnego komputera lub urządzenia do odtwarzania informacji graficznych, bez względu na to, gdzie informacje zostały przechwycone. Aby uzyskać więcej informacji, zobacz [porady: zmiana maszyny odtwarzania diagnostyki grafiki](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Później można użyć zdalnego komputera lub urządzenia do odtwarzania informacji graficznych, bez względu na to, gdzie informacje zostały przechwycone. Aby uzyskać więcej informacji, zobacz [jak: Zmiana maszyny odtwarzania diagnostyki grafiki](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Przechwytywanie informacji graficznych, z poziomu wiersza polecenia  
  Informacje graficzne mogą być przechwytywane z aplikacji za pomocą narzędzia wiersza polecenia. To narzędzie DXCap.exe, można szybko przechwytywania i odtwarzania informacji graficznych bez korzystania z programu Visual Studio lub przechwytywanie programistyczne. W szczególności DXCap.exe można użyć w przypadku usługi automation lub w środowisku testowym. Aby uzyskać więcej informacji na temat DXCap.exe zobacz [narzędzia wiersza polecenia do przechwytywania](../debugger/command-line-capture-tool.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: przechwytywanie informacji graficznych](../debugger/walkthrough-capturing-graphics-information.md)
-
-
-
+ [Przewodnik: Przechwytywanie informacji graficznych](../debugger/walkthrough-capturing-graphics-information.md)

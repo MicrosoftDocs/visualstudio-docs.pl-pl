@@ -1,27 +1,22 @@
 ---
 title: Pakietów VSPackage i środowiska pakietu zarządzanego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework
 - VSPackages, managed package framework
 - managed VSPackages, managed package framework
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: 2e265a342ec32abea40ab9b352b5735079462a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f8d5da0d246cb6b0faa8b424f8039697686cd2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776115"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>Pakietów VSPackage i środowiska pakietu zarządzanego
 Tworząc pakietu VSPackage przy użyciu pakietu zarządzanych klas framework (MPF) zamiast przy użyciu klas międzyoperacyjnego modelu COM, można zmniejszyć czas opracowywania.  
@@ -30,7 +25,7 @@ Tworząc pakietu VSPackage przy użyciu pakietu zarządzanych klas framework (MP
   
 -   Użyj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablon projektu pakietu  
   
-     Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie Menu polecenia za pomocą szablonu pakietu Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie polecenia Menu za pomocą szablonu pakietu programu Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 -   Twórz swoje pakietu VSPackage bez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablon projektu pakietu  
   
@@ -41,8 +36,8 @@ Tworząc pakietu VSPackage przy użyciu pakietu zarządzanych klas framework (MP
  W tym artykule opisano i przedstawiono MPF klasy w przestrzeni nazw i pliki DLL.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Wskazówki: Tworzenie polecenia Menu za pomocą szablonu pakietu programu Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [Przewodnik: Tworzenie polecenia Menu za pomocą szablonu pakietu programu Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Wyjaśnia sposób tworzenia zarządzanego pakietu VSPackage.  
   
- [Zarządzane pakietów VSPackage](../misc/managed-vspackages.md)  
+ [Managed VSPackages](../misc/managed-vspackages.md)  
  Wprowadza aspektów pakietów VSPackage, które są stosowane do kodu zarządzanego.

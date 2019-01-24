@@ -1,26 +1,21 @@
 ---
 title: Listę rozwijaną paska | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: da48806d6be6b19dc3681b19e95ac7664656eeb0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 972d37e0b3b83db1b99f266a1ffafdc58b1f02b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757030"
 ---
 # <a name="drop-down-bar"></a>Listę rozwijaną paska
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Pasek listy rozwijanej znajduje się w górnej części okna kodu i zawiera dwie
 ## <a name="drop-down-bar-interfaces"></a>Interfejsy listę rozwijaną paska  
  W [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], na przykład pasek lista rozwijana zawiera listy dla [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementów i [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementy członkowskie funkcji, jak pokazano na poniższej ilustracji.  
   
- ![Upuść&#45;dół paski](../extensibility/media/vsdropdown-bar.gif "vsDropdown_bar")  
+ ![Drop&#45;down Bars](../extensibility/media/vsdropdown-bar.gif "vsDropdown_bar")  
 Listę rozwijaną paska  
   
  Podczas implementowania pasek listy rozwijanej, dostępne są cztery interfejsy podstawowe znaczenie:  
@@ -57,4 +52,3 @@ Listę rozwijaną paska
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie kodu Windows za pomocą starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
  [Obsługa paska nawigacyjnego w starszej wersji usługi językowej](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
-

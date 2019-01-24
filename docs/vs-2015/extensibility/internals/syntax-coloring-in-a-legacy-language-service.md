@@ -1,27 +1,22 @@
 ---
 title: Kolorowanie składni w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring
 - language services, syntax coloring
 ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 99082388534e39d02731e065bf586d6d221c67aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b80659e1a61cca27adcc92b4b47c7ff0b4e02e0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792117"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ Colorizer prostego modelu
  [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)  
  W tym artykule omówiono, jak edytor uzyskuje dostęp do, kolorowanie składni i jakie usługa językowa musi Implementowanie obsługi składni kolorowania usługi języka.  
   
- [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Pokazuje, jak korzystać z wbudowanych elementów z możliwością kolorowania usługi języka.  
   
  [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md)  
@@ -81,4 +76,3 @@ Colorizer prostego modelu
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z czcionek i kolorów](../../extensibility/using-fonts-and-colors.md)
-

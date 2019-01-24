@@ -1,14 +1,9 @@
 ---
 title: Obiekt VSTextView | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextView
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5815adbdc05685999d7dcd64139ebfd29b8776b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f99587af3d16210305181f6435905521561f8500
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765042"
 ---
 # <a name="vstextview-object"></a>VSTextView, obiekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,6 @@ Widok tekstu jest oknem które umożliwia użytkownikom wyświetlanie i edytowan
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Wykonuje operacje na widok z innego wątku.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Edytuj dane](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
- [Obiekt VSTextBuffer](../extensibility/vstextbuffer-object.md)   
+ [Edytuj dane](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [VSTextBuffer Object](../extensibility/vstextbuffer-object.md)   
  [Uzyskiwanie dostępu do widoku tekstowego przy użyciu starszego interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Zwijanie w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 356b3d49fa8eb74ef2352e6ba36597d1c39fecf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c99943a2f0ebd05236caf7706021cfb8ac58fa84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751543"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769465"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Zwijanie w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Konspekt umożliwia zwijane złożony program Przegląd lub konspektu. Na przykład w języku C# może zostać zwinięty wszystkie metody w jeden wiersz, pokazujący tylko podpis metody. Ponadto aby pokazać tylko nazwy klasy i struktury może zostać zwinięty struktury i klasy. Wewnątrz pojedynczej metody złożonej logiki może zostać zwinięty będzie wyświetlana ogólny przepływ, takich jak wyświetlanie tylko pierwszy wiersz instrukcji `foreach`, `if`, i `while`.  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [wskazówki: Tworzenie konspektu](../../extensibility/walkthrough-outlining.md).  
+ Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [instruktażu: Konspekt](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
 >  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
@@ -127,4 +122,3 @@ namespace MyLanguagePackage
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)   
  [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

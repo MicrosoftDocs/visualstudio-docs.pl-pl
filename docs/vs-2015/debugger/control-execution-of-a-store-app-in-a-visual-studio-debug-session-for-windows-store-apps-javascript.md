@@ -1,13 +1,9 @@
 ---
 title: Kontrolowanie wykonywania aplikacji Store w trakcie sesji debugowania dla aplikacji Windows Store (JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -17,13 +13,13 @@ ms.assetid: 60159535-61ec-466a-a4a6-115ec72a8af5
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4e2541fe5a4faafbd1ab9c165fc38a960406bd0a
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 0b4c994544472269463388f1aa0544fecbbdce39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777946"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Kontrolowanie wykonywania aplikacji Store w trakcie sesji debugowania programu Visual Studio dla aplikacji Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +121,7 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
     Możesz obejrzeć wiele zmiennych w oknie czujki. Wartości zmiennych obserwowana, takie jak wartości w systemie windows Porada danych, są aktualizowane, zawsze wtedy, gdy wykonanie programu jest zawieszone. Obserwowana zmiennych są zapisywane między sesjami debugowania.
 
-7. **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **SHIFT + F5**). Kończy sesję debugowania.
+7. **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **Shift+F5**). Kończy sesję debugowania.
 
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> Krok do, za pośrednictwem i z funkcji
  W przeciwieństwie do przechodzenie krok po kroku do funkcji wywoływanych przez funkcję nadrzędnego, przechodzenie krok po kroku, za pośrednictwem funkcji wykonuje funkcję podrzędnych, a następnie zawieszenie wykonywania w funkcji wywołującej, jako element nadrzędny wznawia działanie. Może być Przekrocz nad funkcja, przypadku wiedzą, jak funkcja działa i pewności, czy jego wykonanie nie ma wpływu na problem, który badania.
@@ -155,9 +151,9 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
 5.  **Przekrocz nad funkcją.** Należy zauważyć, że następnego wiersza w `example2`, `var y = example2_a();` jest zasadniczo taki sam jak w poprzednim wierszu. Możesz bezpiecznie wejść na tym wierszu. Wybierz **F10** klawisz, aby przejść z wznowienie `example2` do tego drugie wywołanie `example2_a`. Należy pamiętać, że `callTrack` ciąg wskazuje `example2_a` funkcja była wykonywana dwa razy.
 
-6.  **Wyjdź z funkcji.** Wybierz **F11** klucza, aby wejść do `example2_b` funkcji. Należy pamiętać, że `example2_b` nie jest bardzo różnią się od `example2_a`. Aby wychodzenie z funkcji, wybierz opcję **Step Out** na **debugowania** menu (klawiatury: **SHIFT + F11**). Należy pamiętać, że `callTrack` zmienna oznacza, że `example2_b` została wykonana i zwróconą przez debuger do punktu gdzie `example2` wznawia działanie.
+6.  **Wyjdź z funkcji.** Wybierz **F11** klucza, aby wejść do `example2_b` funkcji. Należy pamiętać, że `example2_b` nie jest bardzo różnią się od `example2_a`. Aby wychodzenie z funkcji, wybierz opcję **Step Out** na **debugowania** menu (klawiatury: **Shift+F11**). Należy pamiętać, że `callTrack` zmienna oznacza, że `example2_b` została wykonana i zwróconą przez debuger do punktu gdzie `example2` wznawia działanie.
 
-7.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **SHIFT + F5**). Kończy sesję debugowania.
+7.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **Shift+F5**). Kończy sesję debugowania.
 
 ##  <a name="BKMK_Set_a_conditional_breakpoint__run_to_the_cursor__and_visualize_a_variable"></a> Ustawianie warunkowego punktu przerwania, uruchom do kursora i wizualizować zmienną
  Warunkowego punktu przerwania określa warunek, który powoduje, że debuger w celu wstrzymania wykonywania. Warunek jest określona przez dowolne wyrażenie kodu, które mogą być obliczane jako wartość true lub false. Może na przykład użyć warunkowego punktu przerwania, aby sprawdzić stan programu w często wywoływana funkcja tylko wtedy, gdy zmienna osiągnie określoną wartość.
@@ -191,9 +187,9 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
      ![Debugowanie Wizualizator tekstu](../debugger/media/dbg-jsnav-text-visualizer.png "DBG_JSNAV_Text_Visualizer")
 
-7.  **Uruchom do kursora.** Zaznacz wiersz `callTrack += "->example3";` , a następnie wybierz **Uruchom do kursora** w menu kontekstowym (klawiatura: **CTRL + F10**). Debuger kończy iteracji pętli, a następnie zawiesza wykonywanie w wierszu.
+7.  **Uruchom do kursora.** Zaznacz wiersz `callTrack += "->example3";` , a następnie wybierz **Uruchom do kursora** w menu kontekstowym (klawiatura: **Ctrl+F10**). Debuger kończy iteracji pętli, a następnie zawiesza wykonywanie w wierszu.
 
-8.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **SHIFT + F5**). Kończy sesję debugowania.
+8.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **Shift+F5**). Kończy sesję debugowania.
 
 ###  <a name="BKMK_Use_Run_to_Cursor_to_return_to_your_code_and_delete_a_breakpoint"></a> Użyj Uruchom do kursora, aby powrócić do kodu i Usuń punkt przerwania
  Wykonywanie do kursora może być bardzo przydatne, gdy masz schodkowego do biblioteki kodu od firmy Microsoft lub innych firm. Krokowe wykonywanie kodu biblioteki mogą być informacyjne, często może potrwać dłuższy czas. I na ogół interesuje Cię o wiele bardziej we własnym kodzie. To ćwiczenie dowiesz się, jak to zrobić.
@@ -235,7 +231,7 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
     -   **[Prototypu]** węzeł zawiera prototyp `Object` obiektu, z którego `Array` pochodzi. **[prototypu]**  węzły mogą być cykliczne. Każdego obiektu nadrzędnego w hierarchii obiektów jest opisana w **[prototypu]** węzła jego podrzędny.
 
-7.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: SHIFT + F5). Kończy sesję debugowania.
+7.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: Shift+F5). Kończy sesję debugowania.
 
 ##  <a name="BKMK_Examine_scope_chain_data"></a> Sprawdzanie danych łańcucha zakresu
  *Zakresu łańcucha* funkcji obejmuje wszystkie zmienne, które są aktywne i osiągalny przez funkcję. Zmienne globalne są częścią łańcucha zakres, są wszystkie obiekty (w tym funkcji), które są zdefiniowane w funkcji, która definiuje aktualnie wykonywanej funkcji. Na przykład `callTrack` zmiennej, która jest zdefiniowana w `module` funkcji `default.js` jest dostępny za pomocą dowolnej funkcji, która jest zdefiniowana w `module` funkcji. Każdego zakresu jest wyświetlany osobno w oknie zmienne lokalne.
@@ -256,7 +252,7 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
 2.  **Uruchom do punktu przerwania.** Rozpocznij sesję debugowania, wybierając **Rozpocznij debugowanie** na **debugowania** menu (klawiatury: **F5**). Debuger zawiesza wykonywanie w punkcie przerwania.
 
-3.  **Otwórz okno zmiennych lokalnych.** Jeśli to konieczne, na **debugowania** menu wskaż **Windows**, a następnie wybierz **zmiennych lokalnych**. (Klawiatura: **ALT+ 4**). Pamiętaj, że okno wyświetla wszystkie zmienne i funkcje w `module` funkcji, a także **[Globals]** węzła.
+3.  **Otwórz okno zmiennych lokalnych.** Jeśli to konieczne, na **debugowania** menu wskaż **Windows**, a następnie wybierz **zmiennych lokalnych**. (Klawiatura: **Alt+4**). Pamiętaj, że okno wyświetla wszystkie zmienne i funkcje w `module` funkcji, a także **[Globals]** węzła.
 
 4.  **Sprawdź zmienne globalne.** Rozwiń **[Globals]** węzła. Obiekty i zmienne globalne zostały określone przez biblioteki Windows dla języka JavaScript. Możesz dodać własne zmienne do globalnego zakresu.
 
@@ -274,7 +270,7 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
 8.  W oknie zmienne lokalne tylko parametr `b` znajduje się w zmiennej lokalnej w `multiplyXby`, ale jest to nowy **[zakresu]** poziomie został dodany. Rozwinięcie tego węzła, zobaczysz, że zawiera parametry, funkcje i zmienne `multiplyClosure`, w tym `a` zmiennej o nazwie w pierwszym wierszu metody `multiplyXby`. Szybkie sprawdzenie drugiej **[zakresu]** węzeł, co spowoduje wyświetlenie zmiennych funkcji modułu, który `multiplyXby` uzyskuje dostęp do jego następnego wiersza.
 
-9. **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **SHIFT + F5**). Kończy sesję debugowania.
+9. **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **Shift+F5**). Kończy sesję debugowania.
 
 ##  <a name="BKMK_Navigate_to_code_by_using_the_Call_Stack_window"></a> Nawigowanie do kodu przy użyciu okna stosu wywołań
  Stos wywołań jest strukturą danych, który zawiera informacje na temat funkcji, które są wykonywane w bieżącym wątku aplikacji. Po osiągnięciu punktu przerwania w oknie wywołania stosu Wyświetla listę wszystkich funkcji, które są aktywne na stosie. Aktualnie wykonywanej funkcji znajduje się na górze listy okno stosu wywołań. Funkcja, która inicjuje wątek znajduje się w dolnej części listy. Funkcje pomiędzy Pokaż ścieżkę wywołania funkcji inicjujący do bieżącej funkcji.
@@ -304,7 +300,7 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 
 6.  **Wejdź do funkcji, a następnie uruchom do punktu przerwania.** Kontynuuj przechodzenie do `example5_d`. Należy pamiętać, że po powrocie z tej funkcji jest traktowana stosu wywołań. Naciśnij klawisz **F5** do kontynuowania wykonywania programu. Można zatrzymać w punkcie przerwania, utworzony w poprzednim kroku.
 
-7.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **SHIFT + F5**). Kończy sesję debugowania.
+7.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: **Shift+F5**). Kończy sesję debugowania.
 
 ## <a name="see-also"></a>Zobacz też
  [Rozpocznij sesję debugowania (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md) [Szybki Start: Debuger nawigacji (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) [wyzwalacza wstrzymania, wznowienia i zdarzeń Windows Store w tle)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

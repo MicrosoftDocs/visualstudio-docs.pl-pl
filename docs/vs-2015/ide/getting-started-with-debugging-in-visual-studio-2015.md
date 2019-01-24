@@ -9,26 +9,26 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764851"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Wprowadzenie do debugowania w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio 2015 zapewnia bogaty zestaw zintegrowanych kompilacja projektu i narzędzi do debugowania. W tym temacie Dowiedz się, jak rozpocząć korzystanie z najprostszych zbiór debugowanie funkcji interfejsu użytkownika.
 
- Uwaga: Łącza do bardziej zaawansowanych funkcji i tematy dotyczące określonych platform lub funkcji są u dołu tej strony.
+ Uwaga: Zawiera łącza do bardziej zaawansowanych funkcji i tematy dotyczące określonych platform lub funkcji są u dołu tej strony.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Mój kod nie działa. Pomóż mi, Visual Studio 2015!
  Dlatego zapewnieniu edytorze i został utworzony jakiś kod. Teraz chcesz rozpocząć debugowanie kodu. W programie Visual Studio 2015, podobnie jak w przypadku większości środowisk IDE, są dwie fazy do debugowania: kompilować kod, aby wykrywać i usuń błędy projektu i kompilatora; i uruchamianie kodu w środowisku, aby przechwycić i rozwiązywanie błędów czasu wykonywania i dynamicznych.
 
 ### <a name="configuring-a-build"></a>Konfigurowanie kompilacji
- Istnieją dwa podstawowe rodzaje konfiguracji kompilacji: **debugowania** i **wersji**. Pierwsza konfiguracja tworzy wolniej, większy plik wykonywalny, który umożliwia bogatszych interaktywne środowisko debugowania środowiska wykonawczego, ale nigdy nie powinny być wysyłane. Drugi opiera się szybciej i bardziej zoptymalizowanego pliku wykonywalnego, który jest odpowiedni do wysłania (co najmniej z punktu widzenia kompilatora).
+ Istnieją dwa podstawowe rodzaje konfiguracji kompilacji: **Debugowanie** i **wersji**. Pierwsza konfiguracja tworzy wolniej, większy plik wykonywalny, który umożliwia bogatszych interaktywne środowisko debugowania środowiska wykonawczego, ale nigdy nie powinny być wysyłane. Drugi opiera się szybciej i bardziej zoptymalizowanego pliku wykonywalnego, który jest odpowiedni do wysłania (co najmniej z punktu widzenia kompilatora).
 
  W domyślnej konfiguracji kompilacji **debugowania**.
 

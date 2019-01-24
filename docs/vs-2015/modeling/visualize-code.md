@@ -1,14 +1,9 @@
 ---
 title: Wizualizacja kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
 - code, visualizing
@@ -17,13 +12,13 @@ ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 071048fba8d3663639747ea35dbae4375d101c26
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 841e2f1324fa5519937cf40b977eebf7d48b65ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758298"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ Aby pomóc Ci zrozumieć istniejący kod i opisać swoją aplikację, można uż
   
 |||  
 |-|-|  
-|**Poznaj kodu i jej relacje:**<br /><br /> Mapowanie relacji między określonych fragmentów kodu.<br /><br /> Zobacz Omówienie relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: W tej wersji programu Visual Studio, termin *mapy kodu* jest używana zamiast *wykres zależności*.|-   [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
+|**Poznaj kodu i jej relacje:**<br /><br /> Mapowanie relacji między określonych fragmentów kodu.<br /><br /> Zobacz Omówienie relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: W tej wersji programu Visual Studio termin *mapy kodu* jest używana zamiast *wykres zależności*.|-   [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
 |**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie, tworząc diagramów klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Opisz projektowania wysokiego poziomu systemu, a następnie walidować kod dla tego projektu:**<br /><br /> Opisz projektowania wysokiego poziomu systemu i jego zależności zamierzone, tworząc diagramów warstwowych. Walidować kod dla tego projektu, aby upewnić się, że zależności w kodzie zachować spójność z projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
+|**Opisz projektowania wysokiego poziomu systemu, a następnie walidować kod dla tego projektu:**<br /><br /> Opisz projektowania wysokiego poziomu systemu i jego zależności zamierzone, tworząc diagramów warstwowych. Walidować kod dla tego projektu, aby upewnić się, że zależności w kodzie zachować spójność z projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Komunikują się wymagania użytkownika i architektury:**<br /><br /> Modelowanie wymagań użytkowników i architektura systemu oprogramowania za pomocą rysowania na poniższych diagramach UML: działanie, składnika, klasy, sekwencja i przypadek użycia.|-   [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)<br />-   [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)<br />-   [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
@@ -66,6 +61,3 @@ Aby pomóc Ci zrozumieć istniejący kod i opisać swoją aplikację, można uż
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
  [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)   
  [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 'Przewodnik: Tworzenie aplikacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799158"
 ---
-# <a name="walkthrough-building-an-application"></a>Wskazówki: kompilowanie aplikacji
+# <a name="walkthrough-building-an-application"></a>Przewodnik: Tworzenie aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Przez ukończenie tego instruktażu, zapoznasz się więcej na temat kilka opcji, które można skonfigurować podczas tworzenia aplikacji za pomocą programu Visual Studio. Będzie utworzyć niestandardową konfigurację kompilacji, ukrywał niektóre komunikaty ostrzegawcze i zwiększał kompilację informacji wyjściowych wśród innych zadań, aby uzyskać przykładową aplikację.  
@@ -80,7 +75,7 @@ Przez ukończenie tego instruktażu, zapoznasz się więcej na temat kilka opcji
 4.  Wybierz **OK** przycisku.  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Utwórz niestandardową konfigurację kompilacji  
- Podczas tworzenia rozwiązania Debuguj i zwolnij konfiguracje kompilacji i ich domyślne elementy docelowe platformy są automatycznie definiowane dla rozwiązania. Następnie można dostosować te konfiguracje lub tworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny do aplikacji jest przeznaczony dla tej konfiguracji. Aby uzyskać więcej informacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md), [ogólne informacje o platformach kompilacji](../ide/understanding-build-platforms.md), i [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Podczas tworzenia rozwiązania Debuguj i zwolnij konfiguracje kompilacji i ich domyślne elementy docelowe platformy są automatycznie definiowane dla rozwiązania. Następnie można dostosować te konfiguracje lub tworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny do aplikacji jest przeznaczony dla tej konfiguracji. Aby uzyskać więcej informacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md), [ogólne informacje o platformach kompilacji](../ide/understanding-build-platforms.md), i [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  Można zmienić lub utworzyć konfigurację i ustawienia platformy za pomocą **programu Configuration Manager** okno dialogowe. W tej procedurze utworzysz konfigurację kompilacji dla badania.  
   
@@ -121,13 +116,13 @@ Przez ukończenie tego instruktażu, zapoznasz się więcej na temat kilka opcji
   
   **Dane wyjściowe** okno wyświetla wyniki kompilacji. Kompilacja powiodła się, ale zostały wygenerowane komunikaty ostrzegawcze.  
   
-  Rysunek 1: ostrzeżenia Visual Basic  
+  Rysunek 1: Ostrzeżenia Visual Basic  
   
   ![Dane wyjściowe okna języka Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Rysunek 2: Visual C# ostrzeżenia  
+  Rysunek 2: Wizualne C# ostrzeżenia  
   
-  ![Dane wyjściowe okna Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
+  ![Output Window Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
 ##  <a name="BKMK_hidewarning"></a> Ukryj ostrzeżenia kompilatora  
  Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji zamiast je zaśmiecać dane wyjściowe kompilacji.  
@@ -142,7 +137,7 @@ Przez ukończenie tego instruktażu, zapoznasz się więcej na temat kilka opcji
   
 3.  Wybierz **kompilacji** strony i następnie **pomijanie ostrzeżeń** Określ numer ostrzeżenia `1762`.  
   
-     ![Strona, Projektant projektu kompilacji](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
+     ![Build page, Project Designer](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      Aby uzyskać więcej informacji, zobacz [Stroka kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -172,7 +167,7 @@ Przez ukończenie tego instruktażu, zapoznasz się więcej na temat kilka opcji
   
    ![Okno danych wyjściowych, Visual Basic kompilacji ostrzeżenia](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
-   Aby uzyskać więcej informacji, zobacz [porady: pomijanie ostrzeżeń kompilatora](../ide/how-to-suppress-compiler-warnings.md).  
+   Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń kompilatora](../ide/how-to-suppress-compiler-warnings.md).  
   
 ##  <a name="BKMK_outputdetails"></a> Wyświetl dodatkowe szczegóły kompilacji w oknie danych wyjściowych  
  Możesz zmienić ilość informacji dotyczących procesu kompilacji, który pojawia się w **dane wyjściowe** okna. Poziom szczegółowości jest zazwyczaj ustawiony na minimalny, co oznacza, że **dane wyjściowe** okna wyświetla tylko podsumowanie procesu kompilacji wraz z wysokim priorytetem ostrzeżeń i błędów. Więcej informacji na temat kompilacji można wyświetlić przy użyciu [okno dialogowe Opcje, projekty i rozwiązania, kompilacji i uruchomienia](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).  
@@ -203,12 +198,12 @@ Przez ukończenie tego instruktażu, zapoznasz się więcej na temat kilka opcji
    > [!TIP]
    >  Możesz przeszukiwać zawartość **dane wyjściowe** okno po wyświetleniu **znaleźć** okno dialogowe, wybierając klawisze Ctrl + F.  
   
-   Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).  
+   Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ##  <a name="BKMK_releasebuild"></a> Tworzenie kompilacji wydania  
  Można utworzyć wersję przykładowej aplikacji, która jest zoptymalizowana do wysłania go. W przypadku kompilacji wydania określisz, że plik wykonywalny jest kopiowany do udziału sieciowego, zanim rozpocznie się kompilowanie.  
   
- Aby uzyskać więcej informacji, zobacz [porady: zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md) i [kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md) i [kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Aby określić kompilację wydania dla języka Visual Basic  
   
@@ -261,9 +256,6 @@ Przez ukończenie tego instruktażu, zapoznasz się więcej na temat kilka opcji
    Gratulacje: zakończyła się pomyślnie w tym przewodniku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Tworzenie projektu (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [Omówienie wstępnej kompilacji projektu aplikacji sieci Web platformy ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
- [Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-
+ [Przewodnik: Tworzenie projektu (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
+ [Omówienie wstępnej kompilacji projektu aplikacji sieci Web platformy ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
+ [Przewodnik: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -1,31 +1,26 @@
 ---
 title: Tworzenie i zarządzanie modalne okna dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ef32fa43a1242ce8220f9e6454dbac03f0f5ad7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 20710f60a06c02391d467981b01627085c04a336
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775100"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Tworzenie modalnych okien dialogowych i zarządzanie nimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas tworzenia modalne okno dialogowe w programie Visual Studio należy upewnić się, że okno nadrzędne, okno dialogowe jest wyłączona, gdy zostanie wyświetlone okno dialogowe, a następnie ponownie włączyć okno nadrzędne, po zamknięciu okna dialogowego. Jeśli nie zrobisz, może wystąpić błąd: "Microsoft Visual Studio nie można zamknąć, ponieważ modalne okno dialogowe jest aktywne. Zamknij aktywne okno i spróbuj ponownie."  
+Podczas tworzenia modalne okno dialogowe w programie Visual Studio należy upewnić się, że okno nadrzędne, okno dialogowe jest wyłączona, gdy zostanie wyświetlone okno dialogowe, a następnie ponownie włączyć okno nadrzędne, po zamknięciu okna dialogowego. Jeśli to zrobisz, może wystąpić błąd: "Microsoft Visual Studio nie można zamknąć, ponieważ modalne okno dialogowe jest aktywne. Zamknij aktywne okno i spróbuj ponownie."  
   
  Istnieją dwa sposoby to zrobić. Zalecaną metodą, jeśli okno dialogowe WPF jest pochodzi on z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, a następnie wywołaj <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> zostanie wyświetlone okno dialogowe. Jeśli to zrobisz, nie musisz zarządzać stanem modalne okno nadrzędne.  
   
@@ -133,4 +128,3 @@ Podczas tworzenia modalne okno dialogowe w programie Visual Studio należy upewn
     ```  
   
 7.  Skompiluj i uruchom aplikację. Na **narzędzia** menu powinien zostać wyświetlony polecenie o nazwie **wywołania OpenDialog**. Po kliknięciu tego polecenia, powinno zostać wyświetlone okno dialogowe.
-

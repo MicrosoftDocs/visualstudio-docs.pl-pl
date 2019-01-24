@@ -1,11 +1,8 @@
 ---
 title: Assign, Projektant działań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Assign.UI
@@ -13,13 +10,13 @@ ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: c27d70f7dbff9d7f9d30d7dda34c5c2c98bfe891
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 111f53ec5b427207a6bde5d590cf8f1c908ff130
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766129"
 ---
 # <a name="assign-activity-designer"></a>Assign, projektant działań
 **Przypisać** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Assign> działania.  
@@ -38,11 +35,11 @@ ms.locfileid: "49281271"
 |Nazwa właściwości|Wymagane|Użycie|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Assign> działania. Wartość domyślna to przypisanie. Mimo że <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć jednego.|  
-|<xref:System.Activities.Statements.Assign.To%2A>|True|Zmiennej lub argumentu, do którego <xref:System.Activities.Statements.Assign.Value%2A> jest przypisany. Musi to być prawidłowym identyfikatorem języka Visual Basic. Aby ustawić właściwości, wpisz wyrażenie języka Visual Basic w **do** polu na **przypisać** działanie projektanta lub w siatce właściwości.|  
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|Wartość, która jest przypisana do zmiennej. Aby ustawić <xref:System.Activities.Statements.Assign.Value%2A>, wpisz wyrażenie języka Visual Basic w **wartość** polu na **przypisać** działanie projektanta lub w siatce właściwości.|  
+|<xref:System.Activities.Statements.Assign.To%2A>|Prawda|Zmiennej lub argumentu, do którego <xref:System.Activities.Statements.Assign.Value%2A> jest przypisany. Musi to być prawidłowym identyfikatorem języka Visual Basic. Aby ustawić właściwości, wpisz wyrażenie języka Visual Basic w **do** polu na **przypisać** działanie projektanta lub w siatce właściwości.|  
+|<xref:System.Activities.Statements.Assign.Value%2A>|Prawda|Wartość, która jest przypisana do zmiennej. Aby ustawić <xref:System.Activities.Statements.Assign.Value%2A>, wpisz wyrażenie języka Visual Basic w **wartość** polu na **przypisać** działanie projektanta lub w siatce właściwości.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Elementy podstawowe](../workflow-designer/primitives-activity-designers.md)   
- [Opóźnienie](../workflow-designer/delay-activity-designer.md)   
+ [Delay](../workflow-designer/delay-activity-designer.md)   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)

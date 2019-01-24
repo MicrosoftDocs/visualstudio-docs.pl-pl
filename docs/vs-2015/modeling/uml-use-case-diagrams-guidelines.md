@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy przypadków użycia UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,15 +14,15 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780700"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Zalecenia
+# <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio, można narysować *diagram przypadków użycia* do podsumowania, który korzysta z aplikacji lub systemu i co zrobić z nim. Aby utworzyć diagram przypadków użycia UML, na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
@@ -44,7 +41,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
   Diagram przypadków użycia nie są wyświetlane szczegóły przypadków użycia: podsumowuje tylko niektóre z relacji między przypadkami użycia, aktorów i systemów. W szczególności w schemacie nie są wyświetlane kolejność, w którym kroki są wykonywane w celu osiągnięcia celów każdego przypadku użycia. Możesz opisać te szczegóły przez inne diagramy i dokumentów, które można połączyć z poszczególnymi przypadkami użycia. Aby uzyskać więcej informacji, zobacz [opisujące przypadki użycia, szczegółowo](#Details) w tym temacie.  
   
-  Opisy, podane dla przypadków użycia będzie używać kilku warunków związanych z domeną, w którym działa system, takich jak sprzedaż, Menu, klientów i tak dalej. Ważne jest, aby jasno zdefiniować te warunki i ich wzajemne relacje i możesz to zrobić za pomocą diagramu klas UML. Aby uzyskać więcej informacji, zobacz [UML Class Diagrams: wskazówki dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
+  Opisy, podane dla przypadków użycia będzie używać kilku warunków związanych z domeną, w którym działa system, takich jak sprzedaż, Menu, klientów i tak dalej. Ważne jest, aby jasno zdefiniować te warunki i ich wzajemne relacje i możesz to zrobić za pomocą diagramu klas UML. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
   
   Zastosowań zajmować się wyłącznie wymagań dotyczących funkcjonalności systemu. Inne wymagania, takie jak reguły biznesowe, jakości wymagań dotyczących usług i ograniczeń wdrażania musi być reprezentowana oddzielnie. Architektura i szczegółami wewnętrznymi musi być opisane osobno. Aby uzyskać więcej informacji na temat sposobu definiowania wymagań użytkowników, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
@@ -91,13 +88,13 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
     -   Aktorzy stanowią klasy użytkowników, organizacje i systemy zewnętrzne, które współdziałają z systemem.  
   
-    -   Zmień ich nazwy. Na przykład: **klient, restauracja, karta kredytowa Agencji.**  
+    -   Zmień ich nazwy. Na przykład: **Klient, restauracja, agencji karty kredytowej.**  
   
 3.  Przeciągnij **przypadki użycia** z przybornika do odpowiednich systemów.  
   
     -   Zastosowań reprezentują działań, które aktorów wykonywać za pomocą systemu.  
   
-    -   Zmień je za pomocą tytułów, czy zrozumiałą aktorów, samodzielnie. Nie należy używać tytułów, które są związane z Twoim kodem. Na przykład: **zamówienie posiłku, płacisz posiłku i dostarczać posiłku**.  
+    -   Zmień je za pomocą tytułów, czy zrozumiałą aktorów, samodzielnie. Nie należy używać tytułów, które są związane z Twoim kodem. Na przykład: **Zamówienie posiłku, płacisz posiłku, dostarczanie posiłku**.  
   
     -   Zaczynają się od głównych transakcji, takich jak **zamówienie posiłku**, opuścić aż do nowszych mniejszych interakcji, takich jak **wybierz element Menu**.  
   
@@ -233,9 +230,9 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 - Połącz przypadek użycia do innego diagramu lub diagramy w projekcie.  
   
-  -   Diagram aktywności pomaga wyjaśnić bardziej złożony proces w przypadku, gdy istnieją pętle i gałęzie równoległych wątków. Można również pokazać przepływ danych między części procesu. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Diagram aktywności pomaga wyjaśnić bardziej złożony proces w przypadku, gdy istnieją pętle i gałęzie równoległych wątków. Można również pokazać przepływ danych między części procesu. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Diagram sekwencji ułatwia wyjaśnić złożonych serię interakcji między różnymi uczestnikami. Można również użyć do wyświetlenia, co się dzieje w systemie w odpowiedzi do każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Diagram sekwencji ułatwia wyjaśnić złożonych serię interakcji między różnymi uczestnikami. Można również użyć do wyświetlenia, co się dzieje w systemie w odpowiedzi do każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Przypadek użycia połączyć strony programu OneNote, sekcji lub akapit, który opisuje przypadek użycia szczegółowo.  
   
@@ -337,7 +334,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 - Akcje w diagramie aktywności ma takie same nazwy dołączonej przypadki użycia.  
   
-  Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+  Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
   ![Wykonaj kroki wielkości liter pokazano na diagramie połączone działanie](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -445,13 +442,10 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 ## <a name="see-also"></a>Zobacz też  
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
- [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)   
- [Wideo: Funkcje porządkowania do przypadków użycia](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-
+ [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)   
+ [Wideo: Organizowanie funkcji w przypadki użycia](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)

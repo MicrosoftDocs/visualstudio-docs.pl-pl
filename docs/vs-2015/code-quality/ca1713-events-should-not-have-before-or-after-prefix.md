@@ -1,13 +1,9 @@
 ---
-title: CA1713 Zdarzenia nie powinny mieć prefiksu before ani after | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: 'CA1713: Zdarzenia nie powinny mieć prefiksu before ani after | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EventsShouldNotHaveBeforeOrAfterPrefix
 - CA1713
@@ -19,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ca70db4d17fc5e199a386c934d8c5b4d4e37bb20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a36f9c8ce788b30f14d8ca0ce9d565ab45975a5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833599"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786802"
 ---
-# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713 Zdarzenia nie powinny mieć prefiksu before ani after
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Zdarzenia nie powinny mieć prefiksu „before” ani „after”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

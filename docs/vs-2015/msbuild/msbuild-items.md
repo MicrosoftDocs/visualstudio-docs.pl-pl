@@ -1,27 +1,22 @@
 ---
 title: Elementy programu MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851936"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770853"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,9 +88,9 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
 -   Począwszy od programu .NET Framework 3.5 `Target` elementy mogą zawierać [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementy, które mogą zawierać elementu elementów.  
   
 ##  <a name="BKMK_ReferencingItems"></a> Odwoływanie się do elementów w pliku projektu  
- Aby odwoływać się do typów elementów w całym pliku projektu, należy użyć składni @(`ItemType`). Na przykład czy odwołanie do typu elementu w poprzednim przykładzie za pomocą `@(Compile)`. Przy użyciu tej składni, elementy można przekazać do zadania, określając typ elementu jako parametr danego zadania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
+ Aby odwoływać się do typów elementów w całym pliku projektu, należy użyć składni @(`ItemType`). Na przykład czy odwołanie do typu elementu w poprzednim przykładzie za pomocą `@(Compile)`. Przy użyciu tej składni, elementy można przekazać do zadania, określając typ elementu jako parametr danego zadania. Aby uzyskać więcej informacji, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
   
- Domyślnie elementów typu elementu są oddzielone średnikami (;), gdy jest on rozwinięty. Można używać składni @(*ItemType*, "*separator*") do określenia separator inną niż domyślna. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Domyślnie elementów typu elementu są oddzielone średnikami (;), gdy jest on rozwinięty. Można używać składni @(*ItemType*, "*separator*") do określenia separator inną niż domyślna. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="BKMK_Wildcards"></a> Przy użyciu symboli wieloznacznych do określenia elementów  
  Możesz użyć **, \*, a? znaki symboli wieloznacznych, aby określić grupy plików jako dane wejściowe dla kompilacji, zamiast wymieniać każdy plik oddzielnie.  
@@ -118,7 +113,7 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
+ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
   
 ##  <a name="BKMK_ExcludeAttribute"></a> Za pomocą atrybutu wykluczania  
  Może zawierać elementów `Exclude` atrybut, który wyklucza określone elementy (pliki) z tego typu elementu. `Exclude` Atrybut jest zwykle używana wraz z symboli wieloznacznych. Na przykład następujący kod XML dodaje każdego pliku .cs, w tym katalogu do typu elementu CSFile, z wyjątkiem `DoNotBuild.cs` pliku.  
@@ -136,7 +131,7 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="BKMK_ItemMetadata"></a> Metadane elementu  
  Elementy może zawierać metadane, oprócz tych informacji w `Include` i `Exclude` atrybutów. Te metadane może służyć przez zadania podrzędne, które wymagają więcej informacji o elementach lub cele i zadania podrzędne usługi batch. Aby uzyskać więcej informacji, zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).  
@@ -230,7 +225,7 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
 </Target>  
 ```  
   
-###  <a name="BKMK_KeepMetadata"></a> Atrybut KeepMetadata  
+###  <a name="BKMK_KeepMetadata"></a> KeepMetadata Attribute  
  Jeśli element jest generowany w elemencie docelowym, może zawierać elementu `KeepMetadata` atrybutu. Jeśli ten atrybut jest określony, metadane, który jest określony w rozdzieloną średnikami listę nazw zostaną przesłane z elementu źródłowego do elementu docelowego. Pusta wartość dla tego atrybutu jest odpowiednikiem nie określając jej. `KeepMetadata` Atrybut wprowadzono w programie .NET Framework 4.5.  
   
  Poniższy przykład ilustruje sposób używania `KeepMetadata` atrybutu.  
@@ -321,7 +316,7 @@ Output:
 -->  
 ```  
   
-###  <a name="BKMK_KeepDuplicates"></a> Atrybut KeepDuplicates  
+###  <a name="BKMK_KeepDuplicates"></a> KeepDuplicates Attribute  
  Jeśli element jest generowany w elemencie docelowym, może zawierać elementu `KeepDuplicates` atrybutu. `KeepDuplicates` jest `Boolean` atrybut, który określa, czy element należy dodać do grupy docelowej, jeśli element jest identyczna z istniejącym elementem.  
   
  Jeśli w elemencie źródłowym i docelowym mają taką samą wartość Include, ale innych metadanych, element jest dodawany nawet wtedy, gdy `KeepDuplicates` ustawiono `false`. Pusta wartość dla tego atrybutu jest odpowiednikiem nie określając jej. `KeepDuplicates` Atrybut wprowadzono w programie .NET Framework 4.5.  
@@ -363,11 +358,9 @@ Output:
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
  [Program MSBuild](msbuild.md)   
- [Porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)   
- [Porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Porady: wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Instrukcje: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)   
+ [Instrukcje: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definicje elementów](../msbuild/item-definitions.md)   
  [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
  [Item, element (MSBuild)](../msbuild/item-element-msbuild.md)
-
-

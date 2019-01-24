@@ -1,12 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie prostą usługę WCF w formularzach Windows Forms | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie prostą usługę WCF w formularzach Windows Forms | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - WCF, walkthrough [Visual Studio]
 - WCF, Visual Studio tools for
@@ -16,15 +13,15 @@ ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6e73659c2d28cf97a8a7136ed8232cfbc5f0b77c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775781"
 ---
-# <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Wskazówki: Tworzenie prostą usługę WCF w formularzach Windows Forms
+# <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: Tworzenie prostą usługę WCF w formularzach Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -130,4 +127,3 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[vsindigo](.
   
 ## <a name="see-also"></a>Zobacz też  
  [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

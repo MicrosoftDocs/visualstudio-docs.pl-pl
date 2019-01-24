@@ -3,21 +3,18 @@ title: Program Visual Studio 2015 | Dokumentacja firmy Microsoft
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062486"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780682"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +111,7 @@ Jeśli chcesz dowiedzieć się o nowych funkcjach w programie Visual Studio 2015
 
  ![GreetingsConsoleApp.cpp w edytorze kodu](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- Edytor tekstu jest wysoce interakcyjny (jeśli ma to być) produktywne wiele funkcji, które ułatwiają lepsze szybsze pisanie kodu. Różne funkcje za pomocą języka, a nie masz żadnego z nich (typu "Editor" na szybkie uruchamianie) umożliwia włączanie i wyłączanie funkcji: niektóre typowe funkcje produktywności są:
+ Edytor tekstu jest wysoce interakcyjny (jeśli ma to być) produktywne wiele funkcji, które ułatwiają lepsze szybsze pisanie kodu. Różne funkcje za pomocą języka, a nie masz żadnego z nich (typu "Editor" na szybkie uruchamianie) umożliwia włączanie i wyłączanie funkcji: Typowe funkcje produktywności, należą:
 
 1. [Refaktoryzacja](../ide/refactoring-in-visual-studio.md) obejmuje operacje, takie jak inteligentne zmiana nazwy zmiennych, przenosząc zaznaczone wiersze kodu w to oddzielna funkcja przenoszenia kodu do innych lokalizacji, redordering parametrów funkcji i nie tylko.
 
@@ -136,7 +133,7 @@ Jeśli chcesz dowiedzieć się o nowych funkcjach w programie Visual Studio 2015
 
 8. **Przejdź do definicji** menu kontekstowego spowoduje przejście bezpośrednio do miejsca, w którym definiowany jest funkcji lub obiektu. Inne polecenia nawigacji są także dostępne przez kliknięcie prawym przyciskiem myszy w edytorze.
 
-9. Pokrewne narzędzia [przeglądarki obiektów](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)zawierają umożliwia umożliwia sprawdzanie zestawów .NET lub środowiska wykonawczego Windows w systemie, aby zobaczyć ich typy i jakie metody i właściwości zawierają te typy.
+9. Pokrewne narzędzia [przeglądarki obiektów](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)zawierają umożliwia umożliwia sprawdzanie zestawów .NET lub środowiska wykonawczego Windows w systemie, aby zobaczyć ich typy i jakie metody i właściwości zawierają te typy.
 
      ![Obiekt System.Timer w przeglądarce](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ Dane wyjściowe z kompilacji, takie jak komunikaty powodzenia lub błędu są wy
 
  [Bezpośrednim](../ide/reference/immediate-window.md) pozwala na typ w wyrażeniu i natychmiastowe wyświetlenie jego wyniku.
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) okna rejestruje każde wywołanie metody i innych zdarzeń z uruchomiony .NET program i może ułatwić odnajdywanie, gdy problem pochodzi.
+ [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) okna rejestruje każde wywołanie metody i innych zdarzeń z uruchomiony .NET program i może ułatwić odnajdywanie, gdy problem pochodzi.
 
  Aby uzyskać więcej informacji, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -196,7 +193,7 @@ Dane wyjściowe z kompilacji, takie jak komunikaty powodzenia lub błędu są wy
 |||
 |-|-|
 |[Konta użytkowników i aktualizacje](../ide/user-accounts-and-updates.md)|[Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Instrukcje: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Wprowadzenie do programowania w programie Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[Instrukcje: Poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Wprowadzenie do programowania w programie Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich](../ide/finding-and-using-visual-studio-extensions.md)|[Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)|[Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Narzędzia profilowania](../profiling/profiling-tools.md)|[Podnoszenie jakości kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|

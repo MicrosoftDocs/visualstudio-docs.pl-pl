@@ -1,14 +1,9 @@
 ---
-title: Użycie flagi RDT_ReadLock | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: RDT_ReadLock Usage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
 - visible
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: df875bc7ee5a1a2a2b0702faaebd0eb0da5133a7
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765795"
 ---
 # <a name="rdtreadlock-usage"></a>Użycie flagi RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ ms.locfileid: "54154172"
  Jeśli użytkownik jest następnie zamknie **DocumentWindow** i wybiera **nie** po wyświetleniu monitu o Zapisz otwarty dokument, a następnie `CodeModel` implementacji usuwa wszystkie informacje w dokumencie i ponownie otworzy dokument z dysku niewidocznie przy następnym więcej informacji jest wymagane dla dokumentu. Subtlety to zachowanie jest wystąpieniem, gdy użytkownik otwiera **DocumentWindow** niewidoczne otwartego dokumentu, modyfikuje je, zamyka te błędy, a następnie **nie** po wyświetleniu monitu o zapisanie dokumentu. W tym przypadku, jeśli dokument ma `RDT_ReadLock`, a następnie dokumentu nie zostaną rzeczywiście zamknięte i zmodyfikowanego dokumentu pozostanie otwarte w sposób niewidoczny w pamięci, nawet jeśli użytkownik wybrał nie można zapisać dokumentu.  
   
  Jeśli niewidoczne otwarcia dokumentu używa ograniczymy `RDT_EditLock`, a następnie daje blokady, gdy użytkownik otwiera dokument widoczny blokady nie są aktywne. Gdy użytkownik zamknie **DocumentWindow** i wybiera **nie** po wyświetleniu monitu można zapisać dokumentu, następnie należy zamknąć dokument z pamięci. Oznacza to, że niewidoczne klienta musi nasłuchiwać zdarzeń Normalizacją w celu śledzenia tego wystąpienia. Podczas następnego dokumentu jest wymagany, dokumentu musi można ponownie otworzyć.
-

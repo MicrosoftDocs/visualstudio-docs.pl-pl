@@ -2,7 +2,7 @@
 title: Za pomocą Emulator Express uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej | Dokumentacja firmy Microsoft
 description: Za pomocą Emulator Express uruchamianie i debugowanie usługi w chmurze na komputerze lokalnym
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,12 +10,12 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 28dd59e3d691df0199afffe93d68d60668c6afe4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: d4969eba208a969275ef239ae90e09094b4d7fc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793608"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej za pomocą emulatora w wersji Express
 Za pomocą Emulator Express, można przetestować i debugowanie usługi w chmurze bez konieczności uruchamiania programu Visual Studio jako administrator. Możesz ustawić ustawienia projektu, aby użyć Emulator Express lub pełnego emulatora, w zależności od wymagań usługi w chmurze. Aby uzyskać więcej informacji na temat pełnego emulatora, zobacz [uruchamiania aplikacji platformy Azure w emulatorze obliczeń](/azure/storage/common/storage-use-emulator).

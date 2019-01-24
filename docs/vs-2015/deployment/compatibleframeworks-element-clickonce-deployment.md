@@ -1,14 +1,9 @@
 ---
 title: '&lt;compatibleFrameworks&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +14,13 @@ ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 051fd3eea0ffab2a7c5f088538d7208c8286d1d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: af927086261f5472e0a71182b8c03b7d750827ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773914"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; — Element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +34,12 @@ Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalo
   
 ```  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
@@ -58,13 +53,13 @@ Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalo
 |`S``upportUrl`|Opcjonalna. Określa adres URL, gdzie można pobrać preferowanych zgodnej wersji programu .NET Framework.|  
   
 ## <a name="framework"></a>szablon  
- Wymagane. W poniższej tabeli przedstawiono atrybuty, `framework` obsługuje element.  
+ Wymagana. W poniższej tabeli przedstawiono atrybuty, `framework` obsługuje element.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`targetVersion`|Wymagane. Określa numer wersji obiektu docelowego .NET Framework.|  
-|`profile`|Wymagane. Określa profil docelową aplikację .NET Framework.|  
-|`supportedRuntime`|Wymagane. Określa numer wersji środowiska uruchomieniowego, skojarzone z docelową aplikację .NET Framework.|  
+|`targetVersion`|Wymagana. Określa numer wersji obiektu docelowego .NET Framework.|  
+|`profile`|Wymagana. Określa profil docelową aplikację .NET Framework.|  
+|`supportedRuntime`|Wymagana. Określa numer wersji środowiska uruchomieniowego, skojarzone z docelową aplikację .NET Framework.|  
   
 ## <a name="remarks"></a>Uwagi  
   
@@ -82,6 +77,3 @@ Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalo
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-

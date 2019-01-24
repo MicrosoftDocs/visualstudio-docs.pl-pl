@@ -1,5 +1,5 @@
 ---
-title: Tworzenie projektu w narzędzia sztucznej Inteligencji dla programu Visual studio
+title: Tworzenie projektu
 description: Tworzenie projektu przy użyciu przykładu z usługi azure machine learning galerii
 keywords: sztuczna inteligencja, programu visual studio, usługi azure machine learning
 author: lisawong19
@@ -11,14 +11,14 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e44624b5aa6fc5bbb518b5c15798daeca6361680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797466"
 ---
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Utwórz projekt sztucznej Inteligencji z galerii usługi Azure Machine Learning w programie Visual Studio
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Utwórz projekt sztucznej Inteligencji z galerii usługi Azure Machine Learning w programie Visual Studio
 
 Usługa Azure Machine Learning jest zintegrowane z Visual Studio Tools dla sztucznej Inteligencji. Służy do przesyłania zadań uczenia maszyny do zdalnego obliczeniowych elementów docelowych, takich jak usługa Azure virtual machines, klastry Spark i nie tylko. Dowiedz się więcej o [eksperymentowanie w usłudze Machine Learning platformy Azure](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 
@@ -47,7 +47,7 @@ Po [zainstalowany program Visual Studio Tools for AI](installation.md), ułatwia
    - **Typ projektu**: Struktura learning maszyny. W takim przypadku wybierz **TensorFlow**
    - **Dodaj do rozwiązania**: Określa, czy należy dodać do bieżącego rozwiązania programu Visual Studio lub Utwórz i Otwórz nowe rozwiązanie
    - **Ścieżka projektu**: Lokalizacja, aby zapisać kod
-   - **Nazwa projektu**: Typ **TensorFlowMNIST**
+   - **Nazwa projektu**: Type **TensorFlowMNIST**
 
    ![Projekt wynikowy, korzystając z szablonu aplikacji w języku Python](media/create-project-gallery/new-AzureSampleProject.png)
 

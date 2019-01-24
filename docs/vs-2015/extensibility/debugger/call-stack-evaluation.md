@@ -1,27 +1,22 @@
 ---
 title: Ocena stosu wywołań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
 - call stacks, evaluation
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e3ab4877a1d6f772572f430c12c436ff5a4b8537
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 15fecbc61fec8ba7aa62ca7d79cf11c56b7ce938
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764208"
 ---
 # <a name="call-stack-evaluation"></a>Ocena stosu wywołań
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ Aby wyświetlić ramki stosu stosu wywołań w trybie break, należy zaimplement
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrola wykonywania i ocena stanu](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

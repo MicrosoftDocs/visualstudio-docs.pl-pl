@@ -1,21 +1,17 @@
 ---
 title: Obraz usługi i wykaz | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1cd4b752bff98555159a751a04c1afbbd12a4bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768705"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +89,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 </ImageManifest>  
 ```  
 
- **Symbole**  
+ **Symbols**  
 
  Jak zwiększyć czytelność i konserwacja pomocy, manifestu obrazu można użyć symboli dla wartości atrybutów. Symbole są zdefiniowane następująco:  
 
@@ -109,7 +105,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |||  
 |-|-|  
 |**Element podrzędny**|**Definicja**|  
-|{1&gt;Importuj&lt;1}|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście|  
+|Import|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście|  
 |Identyfikator GUID|Symbol reprezentuje identyfikator GUID i muszą być zgodne, formatowania identyfikatora GUID|  
 |ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
 |String|Symbol reprezentuje wartość dowolny ciąg|  
@@ -155,7 +151,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |ID|[Wymagane] Część Identyfikatora monikera obrazu|  
 |AllowColorInversion|[Opcjonalna, domyślne true] Wskazuje, czy obraz, który może mieć jego kolorów programowo odwrócona, gdy jest używana na ciemnym tle.|  
 
- **Źródło**  
+ **Element źródłowy**  
 
  \<Źródło > element definiuje pojedynczy źródła zasób obrazu (XAML i PNG).  
 
@@ -170,7 +166,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Atrybut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definicja**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      Identyfikator URI      |                                                                                                                                                                                                                                                                                                               [Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może to być jedna z następujących czynności:<br /><br /> -A [identyfikatora URI pakietu](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) za pomocą aplikacji: / / / urzędu<br />— Odwołanie do zasobu składnik bezwzględne<br />— Ścieżka do pliku zawierającego zasobu natywnego                                                                                                                                                                                                                                                                                                               |
-|  Tło   | [Opcjonalnie] Wskazuje, jakie na rodzaju tła, których źródłem jest przeznaczony do użycia.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> *Światła:* źródło może być używany na tle światła.<br /><br /> <em>Ciemny:</em>źródło może być używany na ciemnym tle.<br /><br /> *HighContrast:* źródła można używać na dowolnym tła w trybie dużego kontrastu.<br /><br /> *HighContrastLight:* źródło może być używane na tle światła w trybie dużego kontrastu.<br /><br /> *HighContrastDark:* źródło może być używany na ciemnym tle w trybie dużego kontrastu.<br /><br /> W przypadku pominięcia atrybut tła źródła może służyć w dowolnym tła.<br /><br /> Jeśli tło jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, kolory źródła nigdy nie jest odwrócona. Jeśli w tle jest pominięty lub ustawiony jako *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obraz **AllowColorInversion** atrybutu. |
+|  Tło   | [Opcjonalnie] Wskazuje, jakie na rodzaju tła, których źródłem jest przeznaczony do użycia.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> *Światła:* Źródło może być używane na tle światła.<br /><br /> <em>Ciemny:</em>źródło może być używany na ciemnym tle.<br /><br /> *HighContrast:* Źródło może służyć w dowolnym tła w trybie dużego kontrastu.<br /><br /> *HighContrastLight:* Źródło może być używane na tle światła w trybie dużego kontrastu.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie dużego kontrastu.<br /><br /> W przypadku pominięcia atrybut tła źródła może służyć w dowolnym tła.<br /><br /> Jeśli tło jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, kolory źródła nigdy nie jest odwrócona. Jeśli w tle jest pominięty lub ustawiony jako *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obraz **AllowColorInversion** atrybutu. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  A \<źródło > element może mieć dokładnie jeden następujące opcjonalne elementy podrzędne:  
@@ -179,7 +175,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |-|-|-|  
 |**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|  
 |\<Rozmiar >|Wartość|Źródła będą używane dla obrazów o danym rozmiarze (w jednostkach urządzenia). Obraz, który będzie mieć kształtu kwadratu.|  
-|\<SizeRange >|MinSize, MaxSize|Źródła będą używane dla obrazów z MinSize MaxSize (w jednostkach urządzenia) (włącznie). Obraz, który będzie mieć kształtu kwadratu.|  
+|\<SizeRange>|MinSize, MaxSize|Źródła będą używane dla obrazów z MinSize MaxSize (w jednostkach urządzenia) (włącznie). Obraz, który będzie mieć kształtu kwadratu.|  
 |\<Wymiary >|Szerokość, wysokość|Źródła będą używane dla obrazów o danym szerokość i wysokość (w jednostkach urządzenia).|  
 |\<DimensionRange >|Wartości elementu MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Źródła będą używane dla obrazów z minimalną szerokość/wysokość, szerokość/wysokość maksymalna (w jednostkach urządzenia) (włącznie).|  
 
@@ -404,7 +400,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 ```  
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Jak używać obrazu monikerów w nowym oknie narzędzia?  
- Szablon projektu pakietu VSIX został zaktualizowany na potrzeby programu Visual Studio 2015. Aby utworzyć nowe okno narzędzi, kliknij prawym przyciskiem myszy na projekt VSIX, a następnie wybierz pozycję "Dodaj nowy element..." (Ctrl + Shift + A). W węźle rozszerzalności dla języka projektu, wybierz pozycję "Okna narzędzi niestandardowych" nazwij okna narzędzi, a następnie naciśnij przycisk "Dodaj".  
+ Szablon projektu pakietu VSIX został zaktualizowany na potrzeby programu Visual Studio 2015. Aby utworzyć nowe okno narzędzi, kliknij prawym przyciskiem myszy na projekt VSIX, a następnie wybierz pozycję "Dodaj nowy element..." (Ctrl+Shift+A). W węźle rozszerzalności dla języka projektu, wybierz pozycję "Okna narzędzi niestandardowych" nazwij okna narzędzi, a następnie naciśnij przycisk "Dodaj".  
 
  Są to kluczowe miejsca, do używają monikerów w oknie narzędzia. Postępuj zgodnie z instrukcjami dla każdego:  
 
@@ -961,7 +957,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphDialogId||Okno dialogowe|  
         |GlyphOpenFolder||FolderOpened|  
         |GlyphClosedFolder||FolderClosed|  
-        |GlyphArrow||Przejdź do następnego|  
+        |GlyphArrow||GoToNext|  
         |GlyphCSharpFile||CSFileNode|  
         |GlyphCSharpExpansion||Fragment kodu|  
         |GlyphKeyword||IntellisenseKeyword|  
@@ -971,7 +967,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlItem||Tag|  
         |GlyphJSharpProject||Elementu DocumentCollection|  
         |GlyphJSharpDocument||dokument|  
-        |GlyphForwardType||Przejdź do następnego|  
+        |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||Użyciu CallTo|  
         |GlyphCallGraph||CallFrom|  
         |GlyphWarning||StatusWarning|  
@@ -995,4 +991,3 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
         |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
         |GlyphCompletionWarning||IntellisenseWarning|
-

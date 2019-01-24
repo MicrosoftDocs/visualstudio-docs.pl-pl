@@ -1,14 +1,9 @@
 ---
 title: Rozszerzanie modeli i diagramów UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6670f6dc0415c8234a0032fdc5bcf7a941998816
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758414"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozszerzanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w którym można rozszerzyć
   
  Fabrikam narzędzia team sprawia, że szereg ulepszeń, aby pomóc zespołom programistycznym. W poniższych sekcjach opisano różne rodzaje rozszerzeń, które można zdefiniować. Niektóre z tych metod można łączyć w jedno rozszerzenie programu Visual Studio.  
   
- Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo")[serii MSDN jak mogę: narzędzi UML i rozszerzalność](http://go.microsoft.com/fwlink/?LinkId=214467).  
+ Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN jak mogę serii: Narzędzia UML i rozszerzalność](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
 ##  <a name="Requirements"></a> Wymagania  
   
@@ -81,7 +76,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w którym można rozszerzyć
   
  Fabrikam deweloperom tworzenie kodu, który automatycznie ustawia zależne od stereotypie kolor elementu. Dzięki temu można łatwo dla użytkowników odróżnić różne role pełnione przez elementy w modelach.  
   
- Aby uzyskać więcej informacji, zobacz [porady: odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Model Bus  
  Model Bus pozwala na dostęp na diagramie lub modelu z innego diagramu lub z innego [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenia. Między innymi umożliwia to informacje rozkłada się na więcej niż jednego modelu kilka osób może pracować na połączone modelu, w tym samym czasie.  
@@ -97,7 +92,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w którym można rozszerzyć
   
  Aby uzyskać więcej informacji, zobacz [Generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md).  
   
-## <a name="team-foundation-server-integration"></a>Integracja z Team Foundation Server  
+## <a name="team-foundation-server-integration"></a>Team Foundation Server Integration  
  Możesz łączyć elementy robocze z elementami modelu i programowy dostęp do połączonych elementów.  
   
  Programiści narzędzie Fabrikam pisać narzędziem, które generuje harmonogram pracy dla każdego projektu lotniczego. Elementy robocze w harmonogramie są połączone z elementami modelu.  
@@ -118,7 +113,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w którym można rozszerzyć
   
 |**Kategoria**|**Łącza**|  
 |------------------|---------------|  
-|**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [serii MSDN jak mogę: narzędzi UML i rozszerzalność](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: UML w programie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak mogę serii: Narzędzia UML i rozszerzalność](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: UML w programie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogi**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ Ten temat zawiera podsumowanie różnych sposobów, w którym można rozszerzyć
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)   
  [Wykaz interfejsów API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

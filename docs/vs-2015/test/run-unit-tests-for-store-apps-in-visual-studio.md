@@ -1,24 +1,20 @@
 ---
 title: Uruchamianie testów jednostkowych dla aplikacji Store
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: a5bc69e640db87f48c0e170450e52fe0560092b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1ca823598f490703cc1b370d1dccfe806594a630
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771166"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Uruchamianie testów jednostkowych dla aplikacji Store w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

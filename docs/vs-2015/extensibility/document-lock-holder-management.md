@@ -1,26 +1,21 @@
 ---
 title: Zarządzanie właścicielem blokady dokumentu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8eaeb8529f570db112bf43813fe20339f3bca7c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 260f82822c575ba2476541c889608e9cdcba8ed0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779656"
 ---
 # <a name="document-lock-holder-management"></a>Zarządzanie właścicielem blokady dokumentu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ Tabela systemem dokumentu (Normalizacją) przechowuje liczbę otwartych dokument
 ## <a name="see-also"></a>Zobacz też  
  [Uruchamianie tabeli dokumentu](../extensibility/internals/running-document-table.md)   
  [Trwałość i uruchamianie tabeli dokumentów](../extensibility/internals/persistence-and-the-running-document-table.md)
-

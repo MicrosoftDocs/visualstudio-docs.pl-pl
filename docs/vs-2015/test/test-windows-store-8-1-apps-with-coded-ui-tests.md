@@ -1,24 +1,19 @@
 ---
 title: Testowanie Windows platformy UWP i 8.1 Store Apps za pomocą kodowanych testów interfejsu użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 70973305764319ecb8ebf902945c92eb4723af7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799300"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testowanie Windows platformy UWP i 8.1 Store Apps za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -299,22 +294,22 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
 ## <a name="q--a"></a>Pytania i odpowiedzi  
   
--   **P: Dlaczego nie widzę opcji zapisu mojego kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego**  
+-   **PYT.: Dlaczego nie widzę opcji zapisu mojego kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego**  
   
-     **A**: opcja zapisu nie jest obsługiwana dla aplikacji Windows Store.  
+     **A**: Opcja zapisu nie jest obsługiwana dla aplikacji Windows Store.  
   
--   **P: czy można utworzyć kodowany test interfejsu użytkownika dla Moje aplikacje Windows Store, w oparciu o WinJS?**  
+-   **PYT.: Można utworzyć kodowany test interfejsu użytkownika dla Moje aplikacje Windows Store, w oparciu o WinJS?**  
   
-     **Element**: nie, obsługiwane są tylko aplikacje na podstawie XAML.  
+     **A**: Nie, obsługiwane są tylko aplikacje na podstawie XAML.  
   
--   **P: czy mogę utworzyć kodowane testy interfejsu użytkownika dla mojej aplikacji Windows Store w systemie, który nie jest uruchomiony, Windows 8.1 lub Windows 10?**  
+-   **PYT.: Czy mogę utworzyć kodowane testy interfejsu użytkownika dla mojej aplikacji Windows Store w systemie, który nie jest uruchomiony, Windows 8.1 lub Windows 10?**  
   
-     **Element**: nie, szablony projekt kodowanego testu interfejsu użytkownika są dostępne tylko na Windows 8.1 i Windows 10. Aby utworzyć automatyzacji dla aplikacji uniwersalnych platformy Windows (UWP), należy systemu Windows 10.  
+     **A**: Nie, szablony projekt kodowanego testu interfejsu użytkownika są dostępne tylko w Windows 8.1 i Windows 10. Aby utworzyć automatyzacji dla aplikacji uniwersalnych platformy Windows (UWP), należy systemu Windows 10.  
 
 <a name="uwpapps"></a>
-- **P: jak utworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy Windows (UWP)?**  
+- **PYT.: Jak utworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy Windows (UWP)?**  
   
-   **A**: w zależności od platformy, na którym testujesz aplikację platformy uniwersalnej systemu Windows, należy utworzyć kodowane testy interfejsu użytkownika w jednym z następujących sposobów:  
+   **A**: W zależności od platformy, na którym testujesz aplikację platformy uniwersalnej systemu Windows należy utworzyć kodowane testy interfejsu użytkownika w jednym z następujących sposobów:  
   
   - Aplikacja platformy uniwersalnej systemu Windows, uruchomiony na komputerze lokalnym zostanie uruchomiony jako Store app. Aby to przetestować, należy użyć **projekt kodowanego interfejsu użytkownika testu (Windows)** szablonu. Aby znaleźć ten szablon, podczas tworzenia nowego projektu, przejdź do **Windows**, **Universal** węzła. Lub przejdź do **Windows**, **systemu Windows 8**, **Windows** węzła.  
   
@@ -322,13 +317,10 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
     Po utworzeniu projektu, tworzenia testu pozostaje taka sama jak przed.  
   
-- **P: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?**  
+- **PYT.: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?**  
   
-   **A**: wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną zastąpione za każdym razem, gdy generowanie kodu za pomocą UIMap - kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
+   **A**: Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
  [Ustawianie unikatowej właściwości automatyzacji dla kontrolek Sklepu Windows przeznaczonych do testowania](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
-
-

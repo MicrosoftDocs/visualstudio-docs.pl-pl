@@ -1,14 +1,9 @@
 ---
-title: 'Porady: generowanie informacji rejestru dla Instalatora | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Generowanie informacji rejestru dla Instalatora | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 612b8eda676b7e27b226a99e04e7298df8c8fab7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ceb4cf70ce7a5fb2e4d87698c6739e81778921ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769850"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Porady: generowanie informacji rejestru dla Instalatora
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Instrukcje: Generowanie informacji rejestru dla instalatora
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Narzędzie RegPkg.exe może służyć do generowania manifestu rejestracji dla zarządzanych pakietu VSPackage. Manifest może być dołączany do pakietu instalacyjnego Instalatora Windows. RegPkg również można wygenerować pliku, który może być dołączony do pliku źródłowego instalacji na podstawie [zestaw narzędzi XML Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=62238).  
@@ -188,6 +183,5 @@ Narzędzie RegPkg.exe może służyć do generowania manifestu rejestracji dla z
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rejestrowanie pakietów VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Rejestrowanie pakietów VSPackage](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd)   
  [Pakiety VSPackage](../../extensibility/internals/vspackages.md)
-

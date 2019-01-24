@@ -1,28 +1,23 @@
 ---
-title: 'Porady: Korzystanie ze znaczników tekstu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie ze znaczników tekstu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4fea8e6d5774e8991cf70cbc84e6b713d59f199f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f0c6109f965f78a3c03b0de8fecf63f702ddb3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810208"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772146"
 ---
-# <a name="how-to-use-text-markers"></a>Porady: Korzystanie ze znaczników tekstu
+# <a name="how-to-use-text-markers"></a>Instrukcje: Korzystanie ze znaczników tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Znaczniki tekstu można zastosować do edycji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> obiektu.  
@@ -61,7 +56,6 @@ Znaczniki tekstu można zastosować do edycji <xref:Microsoft.VisualStudio.TextM
   
 ## <a name="see-also"></a>Zobacz też  
  [Znaczniki tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
- [Porady: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
- [Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md)
-
+ [Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
+ [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
+ [Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)

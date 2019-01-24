@@ -1,12 +1,9 @@
 ---
 title: Tworzenie i zarządzanie bazami danych i aplikacji warstwy danych
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
@@ -16,13 +13,13 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ed31f442a1ca30c34554549e1d186cb2c320ee
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4c3a8a1f4b0c6e242e3999d870fdfcdc764d8336
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766897"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Tworzenie i zarządzanie bazami danych i aplikacji warstwy danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ ms.locfileid: "53061247"
 
 |Ogólne zadania|Zawartość pomocnicza|
 |----------------------|------------------------|
-|**Rozpocznij tworzenie aplikacji warstwy danych:** DAC to nowe pojęcie wprowadzone w programie [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] zawierający definicję [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] bazy danych i towarzyszące wystąpienia obiektów, które są używane przez serwer do klienta lub 3-warstwowej aplikacja. Aplikacji DAC programu zawiera obiekty bazy danych, takich jak tabele i widoki, wraz z wystąpienia jednostki, takie jak nazwy logowania. Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Aby utworzyć projekt aplikacji DAC, tworzenie pliku pakietu aplikacji DAC, a następnie wysyłać ten plik pakietu aplikacji DAC administrator bazy danych w celu wdrożenia na wystąpienie [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] aparatu bazy danych.|-   [Tworzenie i zarządzanie nimi aplikacji warstwy danych](http://go.microsoft.com/fwlink/?LinkId=160741) (witryna sieci web firmy Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Wykonywanie programowanie iteracyjne bazy danych:** Jeśli jesteś deweloperem lub tester, zapoznaj się z części projektu, a następnie zaktualizuj je w środowisku izolowanym rozwoju. Za pomocą tego typu środowiska, możesz testować wprowadzane zmiany, bez wywierania wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian, możesz sprawdzić pliki do kontroli wersji, gdy inni członkowie zespołu mogą uzyskać zmiany i tworzyć i wdrażać je na serwer testowy.|-   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (witryna sieci web firmy Microsoft)<br />-   [Debuger języka Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (witryna sieci web firmy Microsoft)|
-|**Tworzenie prototypów, sprawdzanie wyników testów i modyfikowania skryptów bazy danych i obiektów:** można użyć [!INCLUDE[tsql](../includes/tsql-md.md)] edytora, aby wykonać dowolne spośród tych wspólnych zadań.|-   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (witryna sieci web firmy Microsoft)|
+|**Rozpocznij tworzenie aplikacji warstwy danych:** Aplikacji DAC programu jest wprowadzone nowe pojęcie [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] zawierający definicję [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] bazy danych i towarzyszące wystąpienia obiektów, które są używane przez serwer do klienta lub aplikacji 3-warstwowej. Aplikacji DAC programu zawiera obiekty bazy danych, takich jak tabele i widoki, wraz z wystąpienia jednostki, takie jak nazwy logowania. Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Aby utworzyć projekt aplikacji DAC, tworzenie pliku pakietu aplikacji DAC, a następnie wysyłać ten plik pakietu aplikacji DAC administrator bazy danych w celu wdrożenia na wystąpienie [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] aparatu bazy danych.|-   [Tworzenie i zarządzanie nimi aplikacji warstwy danych](http://go.microsoft.com/fwlink/?LinkId=160741) (witryna sieci web firmy Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Wykonywanie programowanie iteracyjne bazy danych:** Jeśli jesteś deweloperem lub tester, zapoznaj się z części projektu i zaktualizować je w środowisku izolowanym rozwoju. Za pomocą tego typu środowiska, możesz testować wprowadzane zmiany, bez wywierania wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian, możesz sprawdzić pliki do kontroli wersji, gdy inni członkowie zespołu mogą uzyskać zmiany i tworzyć i wdrażać je na serwer testowy.|-   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (witryna sieci web firmy Microsoft)<br />-   [Debuger języka Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (witryna sieci web firmy Microsoft)|
+|**Tworzenie prototypów sprawdzanie wyników testów i modyfikowania skryptów bazy danych i obiektów:** Możesz użyć [!INCLUDE[tsql](../includes/tsql-md.md)] edytora, aby wykonać dowolne spośród tych wspólnych zadań.|-   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (witryna sieci web firmy Microsoft)|
 
 ## <a name="see-also"></a>Zobacz też
  [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

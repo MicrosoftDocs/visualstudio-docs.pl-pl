@@ -1,27 +1,22 @@
 ---
 title: Spy ++ — pomoc | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ Help contents
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 38afcac385a846e169f0fbf601fc759fbec62304
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f07ca424bdf3b9f34439058c9a06364516ca0c02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801874"
 ---
 # <a name="spy-help"></a>Spy++ — Pomoc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ W dokumentacji dotyczącej narzędzia Spy ++ zawiera dwie grupy Ogólne tematy n
   
  [Inne okna dialogowe](../debugger/other-dialog-boxes.md)  
  Umożliwia wyświetlenie informacji na temat programu Spy ++.
-
-
-

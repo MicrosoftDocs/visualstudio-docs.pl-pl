@@ -1,27 +1,22 @@
 ---
-title: 'Krok 9: Przejrzyj komentowanie i testowanie kodu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 9. Przejrzyj, komentowanie i testowanie kodu | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b03c6c7af9cfedcf7e45a61dba826d99b300ffbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836960"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796740"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzenie, komentowanie i testowanie kodu
+# <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przeglądanie, komentowanie i testowanie kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób, w jaki program zachowuje się jest komentarz. To ułatwia komuś, kto czyta swój kod, aby zrozumieć, jak działa. Dodawanie komentarzy do kodu to dobry sposób na. W języku Visual C# dwie kreski ułamkowe (/ /) oznaczają wiersz jako komentarz. W języku Visual Basic pojedynczy cudzysłów (') służy do oznaczania wiersza jako komentarz. Po dodaniu komentarza, przetestuj swój program. Jest dobrą praktyką, aby uruchomić i przetestować kod często podczas pracy nad swoimi projektami, aby można było wyłapać i rozwiązać wszelkie problemy wcześnie, zanim kod stanie się bardziej skomplikowane. Jest to nazywane *iteracyjne testowanie*.  
@@ -30,7 +25,7 @@ Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób,
   
 - Po dwukrotnym kliknięciu **Pokaż obraz** znajdujący się w Windows Forms Designer, IDE automatycznie dodaje *metoda* do kodu programu.  
   
-- Metody to sposób organizowania kodu: jest to, jak kod jest zgrupowany razem.  
+- Metody to sposób organizowania kodu: To, jak kod jest zgrupowany razem.  
   
 - W większości przypadków, metoda wykonuje kilka rzeczy w określonej kolejności, jak Twoja `showButton_Click()` metoda Wyświetla okno dialogowe, a następnie ładująca obraz.  
   
@@ -50,7 +45,7 @@ Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób,
   
    Instrukcje są na tym, co sprawia, że Twoje programy robią pewne rzeczy. W języku Visual C# instrukcja zawsze kończy się średnikiem. W języku Visual Basic koniec wiersza jest końcem instrukcji. (Średnik nie jest potrzebny w języku Visual Basic). Poprzednia instrukcja nakazuje swoje `PictureBox` kontroli można załadować pliku, który użytkownik wybrał ze **OpenFileDialog** składnika.  
   
-  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Film wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-add-comments"></a>Aby dodać komentarze  
   
@@ -78,7 +73,7 @@ Przycisk Zapisz wszystko
   
      Gdy jest uruchomiona, Twój program powinien wyglądać jak na poniższym obrazie.  
   
-     ![Obraz podglądu](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun")  
+     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun")  
 Podgląd obrazów  
   
 ### <a name="to-test-your-program"></a>Aby przetestować swój program  
@@ -90,15 +85,12 @@ Podgląd obrazów
     > [!NOTE]
     >  Jeśli nie widzisz żadnych obrazów w **wybierz plik obrazu** okno dialogowe, upewnij się, że "wszystkie pliki (*.\*)" filtr jest zaznaczony na liście rozwijanej u dołu po prawej stronie okna dialogowego.  
   
-3.  Zdjęcia i pojawia się w obiekcie PictureBox. Spróbuj zmienić rozmiar formularza przeciągając jego obramowania. Ponieważ Twoje PictureBox zadokowano wewnątrz elementu TableLayoutPanel, który sam jest zadokowany wewnątrz formularza, Twój obszar obrazu będzie zmieniany tak jak szerokość całego formularza i wypełni najważniejsze 90 procent firm z formularza. Dlatego użyłeś pojemników TableLayoutPanel i FlowLayoutPanel: prowadzą użyłeś pojemników, gdy użytkownik zmienia jego rozmiar formularza.  
+3.  Zdjęcia i pojawia się w obiekcie PictureBox. Spróbuj zmienić rozmiar formularza przeciągając jego obramowania. Ponieważ Twoje PictureBox zadokowano wewnątrz elementu TableLayoutPanel, który sam jest zadokowany wewnątrz formularza, Twój obszar obrazu będzie zmieniany tak jak szerokość całego formularza i wypełni najważniejsze 90 procent firm z formularza. Dlatego użyłeś pojemników TableLayoutPanel i FlowLayoutPanel: Prowadzą użyłeś pojemników, gdy użytkownik zmienia jego rozmiar formularza.  
   
      Teraz większe zdjęcia wykraczają poza granice przeglądarki obrazów. W następnym kroku dodasz kod, aby obrazy mieściły się w oknie.  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 10: pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

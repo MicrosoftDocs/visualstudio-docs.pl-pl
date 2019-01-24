@@ -1,14 +1,9 @@
 ---
 title: Projekt różne pliki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - files, adding existing files to solutions
 - Miscellaneous Files project
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5786eb21813125237a35ed185542b5f73bdc839
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c128475ad9f5cb71b98325bbece4e524507a08b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776446"
 ---
 # <a name="miscellaneous-files-project"></a>Projekt Różne pliki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Gdy użytkownik otwiera elementów projektu, IDE przypisuje projekcie plików po
   
  Projekty odgrywają istotną rolę w określaniu, edytor, którego jest używany, gdy użytkownik otwiera element projektu. Można zaprojektować projektu do otwierania niektórych plików za pomocą edytora specyficznych dla projektu lub standardowy edytor.  
   
- Edytora specyficznych dla projektu zwykle wymaga, że użytkownik ma specjalnej wiedzy lub użyj specjalne interfejsy z projektu. Aby uzyskać więcej informacji, zobacz [porady: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md).  
+ Edytora specyficznych dla projektu zwykle wymaga, że użytkownik ma specjalnej wiedzy lub użyj specjalne interfejsy z projektu. Aby uzyskać więcej informacji, zobacz [jak: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md).  
   
  Edytor standardowy, można otworzyć dowolny plik określone rozszerzenie w każdym projekcie. Użytkownik może dostosować niektóre standardowe edytory, takich jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Edytor tekstu, w przypadku projektów ale zachować ich publicznych znaków. Standardowe edytory są tworzone za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody.  
   
@@ -46,8 +41,7 @@ Gdy użytkownik otwiera elementów projektu, IDE przypisuje projekcie plików po
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   
- [Porady: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)   
- [Porady: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)   
+ [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Instrukcje: Otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)   
  [Dodawanie projektu i szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
-

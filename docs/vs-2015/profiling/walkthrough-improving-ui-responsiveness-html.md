@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Poprawianie czasu odpowiedzi interfejsu użytkownika (HTML) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Zwiększanie czasu odpowiedzi interfejsu użytkownika (HTML) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,15 +18,15 @@ ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758690"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Wskazówki: Poprawianie czasu odpowiedzi interfejsu użytkownika (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Przewodnik: Zwiększanie czasu odpowiedzi interfejsu użytkownika (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie problemów z wydajnością za pomocą [profiler czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Program profilujący jest dostępna w aplikacjach Visual Studio for Windows Universal a Windows Store przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację test wydajności, która aktualizuje elementów DOM zbyt często, a następnie użyć profiler zidentyfikować i rozwiązać ten problem.  
@@ -249,6 +244,3 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
 ## <a name="see-also"></a>Zobacz też  
  [Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)
-
-
-

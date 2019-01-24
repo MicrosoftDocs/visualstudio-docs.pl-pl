@@ -1,27 +1,22 @@
 ---
 title: Ustawianie zakładek w kodzie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769307"
 ---
 # <a name="setting-bookmarks-in-code"></a>Ustawianie zakładek w kodzie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Możesz używać zakładek, aby oznaczyć wiersze w kodzie, tak że można szybk
  Możesz organizować zakładki w foldery wirtualne, klikając **nowy Folder** w oknie zakładek, a następnie przeciągając wybrane zakładki do nowego folderu.  
   
  Możesz wyłączyć zakładki (bez ich usuwania), klikając **Wyłącz wszystkie zakładki** przycisku w oknie zakładek. Można ponownie włączyć, klikając ten sam przycisk (który jest teraz nazywana **Włącz wszystkie zakładki**).
-
-
-

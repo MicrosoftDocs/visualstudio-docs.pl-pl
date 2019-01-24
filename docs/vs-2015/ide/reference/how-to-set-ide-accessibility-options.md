@@ -1,29 +1,24 @@
 ---
-title: 'Porady: Ustawianie opcji ułatwień dostępu IDE | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Ustawianie opcji ułatwień dostępu IDE | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803226"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Porady: ustawianie opcji ułatwień dostępu IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Instrukcje: Ustawianie opcji ułatwień dostępu IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -32,12 +27,12 @@ ms.locfileid: "49867289"
  Ponadto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje układy klawiatury Dvoraka, które powodują, że najczęściej wpisane znaki łatwiej dostępne. Można również dostosować domyślne klawiszy skrótu dostępnych z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Edytory, okna dialogowe i narzędzie Windows  
  Domyślnie, okna dialogowe i okna narzędzi w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używać tego samego rozmiaru czcionki i kolory jako systemu operacyjnego. Ustawienia kolorów dla ramki w IDE, okna dialogowe, paski narzędzi i okien narzędzi opierają się schemat kolorów: jasny i ciemny. Możesz zmienić bieżący motyw kolorów w [ogólne, środowisko, opcje, okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md).  
   
- Można także wyświetlić wyskakującego okienka, w widoku kodu w edytorze. Te okna można monitują dostępni członkowie na bieżący obiekt i parametry do wykonania funkcji lub instrukcji. Okna te mogą być przydatne, jeśli masz problemy z pisaniem. Jednak przeszkadzają fokus w edytorze kodu, który może być problematyczne dla niektórych użytkowników. Można wyłączyć te okna, otwierając okno dialogowe Opcje i wyczyszczenie **automatyczna lista członków** i **informacje o parametrach** w **edytora tekstów**, **wszystkie Języki**, **ogólne** strony w **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie opcji ogólnych edytora](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Można także wyświetlić wyskakującego okienka, w widoku kodu w edytorze. Te okna można monitują dostępni członkowie na bieżący obiekt i parametry do wykonania funkcji lub instrukcji. Okna te mogą być przydatne, jeśli masz problemy z pisaniem. Jednak przeszkadzają fokus w edytorze kodu, który może być problematyczne dla niektórych użytkowników. Można wyłączyć te okna, otwierając okno dialogowe Opcje i wyczyszczenie **automatyczna lista członków** i **informacje o parametrach** w **edytora tekstów**, **wszystkie Języki**, **ogólne** strony w **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie opcji ogólnych edytora](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
  Możesz zmienić kolejność systemu windows w zintegrowanym środowisku programistycznym (IDE) stosownie do potrzeb sposobu pracy. Można zadokować, float, ukryć lub automatycznie ukrywaj każdego okna narzędzi.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49867289"
   
 4.  Z **wyświetlania elementów**, wybierz element, którego ekran zachodzi potrzeba zmiany, takie jak **zwykły tekst**, **margines wskaźnika**, **pokazuj biały znak**, **Nazwa atrybutu HTML**, lub **atrybutu XML**.  
   
-5.  Wybierz pozycję Wyświetl ustawienia dostępne są następujące opcje: **pierwszy plan elementu**, **tła elementu**, i **Bold**.  
+5.  Wybierz ustawienia wyświetlania spośród następujących opcji: **Pierwszy plan elementu**, **tła elementu**, i **Bold**.  
   
 6.  Wybierz **OK**.  
   
@@ -119,6 +114,3 @@ ms.locfileid: "49867289"
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje ułatwień dostępu programu Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   
  [Zasoby do projektowania dostępnych aplikacji](../../ide/reference/resources-for-designing-accessible-applications.md)
-
-
-

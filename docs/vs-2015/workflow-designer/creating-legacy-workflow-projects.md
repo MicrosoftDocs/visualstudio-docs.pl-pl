@@ -1,11 +1,8 @@
 ---
 title: Tworzenie starszej wersji projektów przepływu pracy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflow projects, creating
@@ -15,13 +12,13 @@ ms.assetid: 572d5c32-59ef-49d8-a24c-e180fe9f7a11
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f7c8e8c65ce7a3c716c017bc83886d0ddb8e7292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 73cc930e6ec21694cf6c5df8e68cbe17ca469291
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795818"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Tworzenie starszej wersji projektów przepływu pracy
 W tej sekcji opisano sposób tworzenia projektów przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez vs2010. Starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] cele [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Zawiera informacje dotyczące sposobu korzystania z szablonów projektów przepływu pracy, które są wymienione w poniższej tabeli.  
@@ -42,7 +39,7 @@ W tej sekcji opisano sposób tworzenia projektów przepływu pracy za pomocą st
   
  [Instrukcje: Tworzenie biblioteki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)  
   
- [Instrukcje: Tworzenie biblioteki działań przepływów pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)  
+ [Instrukcje: Tworzenie biblioteki działań przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)  
   
  [Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)  
   
@@ -52,7 +49,7 @@ W tej sekcji opisano sposób tworzenia projektów przepływu pracy za pomocą st
   
  [Instrukcje: Konfigurowanie właściwości projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)  
   
- [Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
+ [Instrukcje: Dodaj nowy element do projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widoki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/sequential-workflow-views-legacy.md)   

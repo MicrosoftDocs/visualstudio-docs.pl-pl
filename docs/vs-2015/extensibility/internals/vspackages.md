@@ -1,26 +1,21 @@
 ---
 title: Pakietów VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages
 ms.assetid: cad0893a-9c5f-45b7-952a-e2294f83e324
 caps.latest.revision: 46
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 61ae8e4a02a611a0b2f4c5e482dfa9af3a8c0380
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e41c9c5a4e445412c470aca680f4364bcf541897
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775517"
 ---
 # <a name="vspackages"></a>Pakiety VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ Pakietów VSPackage są moduły oprogramowania rozszerzające [!INCLUDE[vsprvs](
  Pomaga to bezpieczniejsze produkty przez opis luk w zabezpieczeniach.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne
-

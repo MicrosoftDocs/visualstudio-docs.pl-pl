@@ -1,14 +1,9 @@
 ---
-title: 'Porady: porównywanie plików danych dotyczących wydajności | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Porównywanie plików danych dotyczących wydajności | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf80c86f233a40ba0d65d239ae1668d575a66bb2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee0da10a6ac8786666aaf9dc041f6f198cff2d10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799567"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Porady: porównywanie plików danych dotyczących wydajności
+# <a name="how-to-compare-performance-data-files"></a>Instrukcje: Porównywanie plików danych dotyczących wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz porównać wyniki dwa pliki danych różnych profiler (.vsp lub .vsps), tworząc raport porównawczy ("Diff") lub widoku. Porównanie przedstawiono różnice największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego.  
@@ -64,6 +59,3 @@ Możesz porównać wyniki dwa pliki danych różnych profiler (.vsp lub .vsps), 
 2.  W **wybierz pliki analizy porównanie** okien, przeglądania i wybierz **plik punktu odniesienia** pliku analizy (.vsp lub .vsps) i **plik do porównania** (.vsp lub .vsps).  
   
 3.  Kliknij przycisk **OK**.
-
-
-

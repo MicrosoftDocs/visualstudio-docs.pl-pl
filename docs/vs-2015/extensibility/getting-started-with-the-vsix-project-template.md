@@ -1,26 +1,21 @@
 ---
 title: Wprowadzenie do szablonu projektu VSIX | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f7230bce49342ad8e31baeb3f46c72f1c45d776
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5db7f20cf77df72a8c103eea68b3e64cc148b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797732"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Wprowadzenie do szablonu projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ Aby utworzyć rozszerzenie lub istniejące rozszerzenie wdrożenia pakietu, moż
 6.  Otwórz manifestu VSIX.  
   
 7.  VSIX manifest zaktualizować **zasobów** ścieżka szablonu, tak aby punkty do katalogu głównego drzewa katalogów, który zawiera plik szablonu. Na przykład jeśli szablon \CSharp\Windows, powinien wskazywać odwołania \CSharp.
-

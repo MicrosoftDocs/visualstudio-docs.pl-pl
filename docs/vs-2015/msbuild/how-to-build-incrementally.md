@@ -1,14 +1,9 @@
 ---
-title: 'Porady: kompilacja przyrostowa | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Kompilacja przyrostowa | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,15 +12,15 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803913"
 ---
-# <a name="how-to-build-incrementally"></a>Porady: kompilacja przyrostowa
+# <a name="how-to-build-incrementally"></a>Instrukcje: Kompilacja przyrostowa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -69,7 +64,7 @@ Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowan
   
 - `GenerateContentFiles`: Konwertuje pliki txt .content plików.  
   
-- `BuildHelp`: Łączy .content pliki i pliki metadanych XML do tworzenia pliku .help końcowej.  
+- `BuildHelp`: Łączy w sobie .content pliki i pliki metadanych XML do tworzenia pliku .help końcowej.  
   
   Projekt używa przekształceń w celu utworzenia mapowanie jeden do jednego między dane wejściowe i dane wyjściowe w `GenerateContentFiles` zadania. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md). Ponadto `Output` element jest ustawiony na wartość automatycznie korzystają z danych wyjściowych z `GenerateContentFiles` zadanie jako dane wejściowe dla `BuildHelp` zadania.  
   
@@ -116,6 +111,3 @@ Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowan
  [Przekształcenia](../msbuild/msbuild-transforms.md)   
  [CSC — zadanie](../msbuild/csc-task.md)   
  [Vbc, zadanie](../msbuild/vbc-task.md)
-
-
-

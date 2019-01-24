@@ -1,14 +1,9 @@
 ---
 title: Okno bezpośrednie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ImmediateWindow
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850428"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802677"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "49850428"
   
     **Bezpośrednie** uruchomi okna `MyFunction` i wyświetlić `4`.  
   
-   Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [wskazówki: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [instruktażu: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projektów, projektów sieci Web, projektów urządzeń inteligentnych i projektów SQL.  
   
@@ -133,9 +128,6 @@ ms.locfileid: "49850428"
  [Okno polecenia](../../ide/reference/command-window.md)   
  [Debugowanie w programie Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Podstawowe informacje o debugerze](../../debugger/debugger-basics.md)   
- [Wskazówki: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [Przewodnik: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)   
  [Używanie wyrażeń regularnych w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

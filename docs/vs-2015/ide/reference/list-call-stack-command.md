@@ -1,14 +1,9 @@
 ---
 title: Lista stosu wywołań — polecenie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 69c3708960f5b1ddaf0ff6620b8d90eb64cd86d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1fbd5fa522753f813d6987734de80bb7fc05593
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756376"
 ---
 # <a name="list-call-stack-command"></a>Lista stosu wywołań — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,31 +47,31 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  / Liczba:`number` [i] / c:`number`  
  Opcjonalna. Maksymalna liczba stosy wywołań do wyświetlenia. Wartością domyślną jest nieograniczona.  
   
- / ShowTypes:`yes` &#124; `no` [i] t:`yes`&#124;`no`  
+ /ShowTypes:`yes`&#124;`no` [or] /T:`yes`&#124;`no`  
  Opcjonalna. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.  
   
- / ShowNames:`yes` &#124; `no` [i] / n:`yes`&#124;`no`  
+ /ShowNames:`yes`&#124;`no` [or] /N:`yes`&#124;`no`  
  Opcjonalna. Określa, czy mają być wyświetlane nazwy parametrów. Wartość domyślna to `yes`.  
   
- / ShowValues:`yes` &#124; `no` [i] / v:`yes`&#124;`no`  
+ /ShowValues:`yes`&#124;`no` [or] /V:`yes`&#124;`no`  
  Opcjonalna. Określa, czy mają być wyświetlane wartości parametrów. Wartość domyślna to `yes`.  
   
  / ShowModule:`yes` &#124; `no` [i] / m:`yes`&#124;`no`  
  Opcjonalna. Określa, czy ma być wyświetlana nazwa modułu. Wartość domyślna to `yes`.  
   
- / ShowLineOffset:`yes` &#124; `no` [i] powrotu:`yes`&#124;`no`  
+ /ShowLineOffset:`yes`&#124;`no` [or] /#:`yes`&#124;`no`  
  Opcjonalna. Określa, czy mają być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.  
   
- / ShowByteOffset:`yes` &#124; `no` [i] / b:`yes`&#124;`no`  
+ /ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`  
  Opcjonalna. Określa, czy należy wyświetlać przesunięcie bajtu. Wartość domyślna to `no`.  
   
  / ShowLanguage:`yes` &#124; `no` [i] / l: wyświetlenie`yes`&#124;`no`  
  Opcjonalna. Określa, czy mają być wyświetlane w języku. Wartość domyślna to `no`.  
   
- / Uwzględnijwywołaniamiędzywątkami:`yes` &#124; `no` [i] / i:`yes`&#124;`no`  
+ /IncludeCallsAcrossThreads:`yes`&#124;`no` [or] /I:`yes`&#124;`no`  
  Opcjonalna. Określa, czy dołączać wywołania do lub z innych wątków. Wartość domyślna to `no`.  
   
- / ShowExternalCode:`yes`&#124;`no`  
+ /ShowExternalCode:`yes`&#124;`no`  
  Opcjonalna. Określa, czy mają być wyświetlane tylko mój kod dla stosu wywołań. Gdy tylko mój kod jest wyłączona, wyświetlany jest cały kod niezwiązany z użytkownikiem. Po włączeniu tylko mój kod niebędący kodem użytkownika jest wyświetlany jako `[external]` w danych wyjściowych stosu wywołań.  
   
  Wątek:`n`  
@@ -108,10 +103,7 @@ kb 2
 ## <a name="see-also"></a>Zobacz też  
  [Lista dezasemblacji — polecenie](../../ide/reference/list-disassembly-command.md)   
  [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)   
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Okno polecenia](../../ide/reference/command-window.md)   
  [Znajdź/Command — pole](../../ide/find-command-box.md)   
  [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

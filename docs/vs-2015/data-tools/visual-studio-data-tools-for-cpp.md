@@ -1,23 +1,21 @@
 ---
 title: Narzędzia Visual Studio data tools dla języka C++ | Dokumentacja firmy Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3a3849d9-1bc7-47d1-805e-1755223ccba2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802370"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Narzędzia Visual Studio data tools dla języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +25,7 @@ Natywnych języka C++ często może zapewnić największą wydajność, gdy uzys
   
  Aby połączyć z bazy danych SQL, natywnych aplikacji w języku C++ można użyć sterowników ODBC i OLE DB i ADO dostawcy, które są dołączone do Windows.     Te można nawiązać dowolnej bazy danych, która obsługuje te interfejsy. Sterownik ODBC jest standardowym. OLE DB zapewnia zgodność z poprzednimi wersjami. Aby uzyskać więcej informacji na temat tych technologii danych, zobacz [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  
   
- Aby korzystać z zalet funkcji niestandardowych w programie SQL Server 2005 i później użyć [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733). Natywny klient zawiera także sterownika SQL Server ODBC i SQL Server dostawcy OLE DB w jednej bibliotece dołączanej dynamicznie (DLL). Obsługuje te aplikacje za pomocą API kodu macierzystego (ODBC, OLE DB i ADO) do programu Microsoft SQL Server.  Instaluje program SQL Server Native Client z SQL Server Data Tools. Podręcznik programowania jest tutaj: [programu SQL Server Native klienta programowania](https://msdn.microsoft.com/library/ms130892.aspx).  
+ Aby korzystać z zalet funkcji niestandardowych w programie SQL Server 2005 i później użyć [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733). Natywny klient zawiera także sterownika SQL Server ODBC i SQL Server dostawcy OLE DB w jednej bibliotece dołączanej dynamicznie (DLL). Obsługuje te aplikacje za pomocą API kodu macierzystego (ODBC, OLE DB i ADO) do programu Microsoft SQL Server.  Instaluje program SQL Server Native Client z SQL Server Data Tools. Podręcznik programowania jest tutaj: [Programowanie programu SQL Server Native Client](https://msdn.microsoft.com/library/ms130892.aspx).  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Nawiązywanie połączenia z localDB, ODBC i SQL Native Client w aplikacji w języku C++  
   
@@ -72,5 +70,3 @@ Natywnych języka C++ często może zapewnić największą wydajność, gdy uzys
   
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-

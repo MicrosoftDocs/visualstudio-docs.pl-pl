@@ -1,14 +1,9 @@
 ---
 title: Edytuj i Kontynuuj (Visual Basic) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795034"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Edytuj i kontynuuj (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Edytuj i Kontynuuj jest funkcją, aby uzyskać [!INCLUDE[vbprvb](../includes/vbp
  Tematy w tej sekcji zawierają dodatkowe szczegóły dotyczące sposobu używania tej funkcji i jakiego rodzaju zmiany są niedozwolone.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: stosowanie edycji w trybie przerwania za pomocą funkcji Edytuj i kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Instrukcje: Stosowanie edycji w trybie przerwania za pomocą funkcji Edytuj i kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Wyjaśnia sposób stosowania zmian kodu w trybie przerwania.  
   
  [Nieobsługiwane edycje funkcji Edytuj i kontynuuj programu Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
@@ -58,6 +53,3 @@ Edytuj i Kontynuuj jest funkcją, aby uzyskać [!INCLUDE[vbprvb](../includes/vbp
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Edytuj i kontynuuj](../debugger/edit-and-continue.md)  
  Zawiera listę tematów na Edytuj i Kontynuuj.
-
-
-

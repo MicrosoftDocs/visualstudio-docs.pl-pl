@@ -1,24 +1,19 @@
 ---
 title: Pisanie testów jednostkowych dla języka C-C++ za pomocą Frameworka testów jednostkowych firmy Microsoft dla języka C++ | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a6600621c195994bf5becec9cae4f77340008516
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760031"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Framework testów jednostkowych firmy Microsoft dla języka C++ pozwala pisać testy jednostkowe dla projektów języka C++.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -399,11 +394,8 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
   
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
- [Korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
+ [Using Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [Przegląd interoperacyjności kodu zarządzanego/niezarządzanego](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)   
- [Wskazówki: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Importowanie i eksportowanie](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
-
-
-

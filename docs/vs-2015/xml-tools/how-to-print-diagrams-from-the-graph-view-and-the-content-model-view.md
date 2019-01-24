@@ -1,27 +1,22 @@
 ---
-title: 'Porady: drukowanie diagramów z widoku wykresu i widoku modelu zawartości | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Drukowanie diagramów z widoku wykresu i widoku modelu zawartości | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 53774a410a05244f4b005fac1b14fe5776794a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 50b38a5ca5c37fe2b372f863f695a968055895ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305477"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752609"
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Porady: drukowanie diagramów z widoku wykresu i widoku modelu zawartości
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Instrukcje: Drukowanie diagramów z widoku wykresu i widoku modelu zawartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -41,6 +36,3 @@ W tym temacie opisano, jak można wydrukować diagram widoku wykresu i widoku mo
  [Widok wykresu](../xml-tools/graph-view.md)   
  [Widok modelu zawartości](../xml-tools/content-model-view.md)   
  [Obszar roboczy projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Widok wykorzystania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cpuutilization
 helpviewer_keywords:
@@ -17,20 +12,20 @@ ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f50c78aa9f9bad18c65658f01aa93c1e6944aa74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795835"
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Widok wykorzystania** Wyświetla informacje o procesorze CPU, procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces. Pokazuje średnie wykorzystanie przez proces analizy, proces bezczynny, proces systemowy i inne procesy, które są uruchomione w systemie, wraz z upływem czasu. Nie pokazuje, które określonych core jest aktywny w dowolnym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego wykorzystywane. Widok jest generowany przez podzielenie podczas profilowania na segmenty krótki czas. Dla każdego segmentu wykres, które to średnia liczba wątków procesów, które są wykonywane na rdzenie logiczne, w tym przedziale.  
   
- ![Widok wykorzystania CPU](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
+ ![CPU Utilization View](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
   
  Na wykresie widać, czas (na osi x) i średni rdzenie logiczne, które są wykorzystywane przez proces docelowy, proces bezczynności i proces systemowy. (Proces bezczynny pokazuje bezczynnych rdzeni. Proces systemowy jest procesem w Windows, które może wykonywać pracę w imieniu innych procesów). Pozostałe procesy, które są uruchomione na koncie systemu w celu wykorzystania pozostałe rdzenie.  
   
@@ -59,6 +54,3 @@ ms.locfileid: "51761545"
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzie CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)   
  [Widok rdzeni](../profiling/cores-view.md)
-
-
-

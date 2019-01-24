@@ -1,13 +1,9 @@
 ---
 title: 'CA2202: Nie Likwiduj wielokrotnie obiektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2202
 - Do not dispose objects multiple times
@@ -19,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63bb4d3c260c86110769f83ba2059c75f1b58ff9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b5968c0ba577893bae87e67dee3aa0e8a178e41
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764747"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie Likwiduj obiektów wiele razy
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie likwiduj obiektów wielokrotnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

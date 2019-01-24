@@ -1,29 +1,24 @@
 ---
 title: 'Obszar testowy 8: Przełączanie wtyczki | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 103946f29cb893672b29d7671a74acf1c26bc50e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793818"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763516"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: przełączanie wtyczki
+# <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: Przełączanie wtyczki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Zintegrowanego środowiska programistycznego (IDE) ma interfejs użytkownika (UI), aby zmienić bieżącą wtyczką kontroli źródła. Ten obszar testowy zawiera przypadki testowe dla procesu pobrania, który wtyczki do użycia rozwiązania kontroli źródła.  
@@ -31,9 +26,9 @@ ms.locfileid: "51793818"
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
  Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.  
   
--   Bieżącą wtyczką kontroli źródła: **narzędzia** -> **opcje** -> **kontroli źródła** -> **wybór wtyczki** .  
+-   Bieżącą wtyczką kontroli źródła: **Narzędzia** -> **opcje** -> **kontroli źródła** -> **wybór wtyczki**.  
   
--   Zmień źródło powiązaniu kontroli: **pliku** -> **kontroli źródła** -> **Zmień kontrolę źródła**...  
+-   Zmień źródło powiązaniu kontroli: **Plik** -> **kontroli źródła** -> **Zmień kontrolę źródła**...  
   
 ## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.  
  Zmiana wtyczka do kontroli źródła dla rozwiązania jest możliwa bez zamykania programu Visual Studio lub ponowne załadowanie rozwiązania. Ponadto bieżącą wtyczką kontroli źródła automatycznie zmieni się używaną przez rozwiązanie po załadowaniu tego rozwiązania.  
@@ -41,7 +36,7 @@ ms.locfileid: "51793818"
 ## <a name="test-cases"></a>Przypadki testowe  
  Poniżej przedstawiono określonych przypadków testowych dla obszaru wtyczki testu przełączania.  
   
-### <a name="case-8a-automatic-change"></a>Zamierzone, Zapisz 8a: automatyczna zmiana  
+### <a name="case-8a-automatic-change"></a>8a przypadków: Automatyczna zmiana  
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
  Gdy użytkownik wczytuje rozwiązanie, które jest pod kontrolą źródła, to rozwiązanie jest ładowane automatycznie i odpowiednie wtyczka do kontroli źródła jest wybrany jako bieżący.  
@@ -50,7 +45,7 @@ ms.locfileid: "51793818"
 |------------|----------------|--------------------------------|  
 |Zmiana wtyczki kontroli źródła automatyczne|1.  Wybierz wtyczkę w ramach testu jako bieżący (**narzędzia** -> **opcje** -> **kontroli źródła** -> **wtyczki Wybór**.)<br />2.  Utwórz nowy projekt.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Wybierz inne wtyczki (na przykład [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Zaakceptuj zwalnianie monit rozwiązania.<br />6.  Ponownie otwórz rozwiązanie z dysku.|Rozwiązanie jest otwierane.<br /><br /> Dodatek w ramach testu jest bieżącą wtyczką kontroli źródła.|  
   
-### <a name="case-8b-solution-based-change"></a>Zamierzone, Zapisz 8b: oparte na rozwiązaniach zmiany  
+### <a name="case-8b-solution-based-change"></a>8b przypadków: Oparte na rozwiązaniach zmiany  
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
  Rozwiązanie może mieć jego skojarzony wtyczka do kontroli źródła zmienione.  
@@ -61,4 +56,3 @@ ms.locfileid: "51793818"
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -1,27 +1,22 @@
 ---
 title: 'Ostrzeżenie: zależność &#39;pliku&#39; w projekcie &#39;projektu&#39; nie można skopiować do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie &#39;pliku. &#39; | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.tasklisterror.copy_version_warning
 ms.assetid: 116819f3-a4d4-48b5-9e71-7c54660d38ef
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3b24a14636726be15aa52a50d56c381781f492fc
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771171"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Ostrzeżenie: zależność &#39;pliku&#39; w projekcie &#39;projektu&#39; nie można skopiować do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie &#39;pliku.&#39;
 Istnieje konflikt między zależności więcej niż jeden plik distinct zestawu o takiej samej nazwie, zostaną skopiowane do katalogu bin do uruchomienia aplikacji. Katalogu uruchamiania jest w stanie rozwiązać konfliktu, ponieważ jednej z zależności jest odwołanie podstawowe.  
@@ -30,7 +25,7 @@ Istnieje konflikt między zależności więcej niż jeden plik distinct zestawu 
   
  To ostrzeżenie występuje, gdy występuje konflikt zależności, ale korzystano wokół niego, dodając jeden z powodujących konflikty zależności jako odwołanie. Lub może mieć ma odwołania w wersji 1, a następnie dodać drugiego odwołania które odwołuje się do wersji 2 w pierwszym odwołaniu.  
   
- Oznacza to, że ten błąd występuje, ponieważ projekty w rozwiązaniu istnieją odwołania do siebie nawzajem, ale odwołania zostały utworzone jako odwołania do pliku (przy użyciu **Przeglądaj** znajdujący się w [Dodaj odwołanie](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) okna dialogowego pole), zamiast odwołania projektu do projektu (przy użyciu **projektu** karcie **Dodaj odwołanie** okno dialogowe). Zaletą odwołania projektu do projektu jest to, że tworzy ono zależność między projektami w systemie kompilacji, tak aby projekt zależny zostanie skompilowany, jeśli została zmieniona od czasu ostatniego konstruowania projektu z odwołaniem. Odwołanie pliku nie tworzy zależność kompilacji, więc istnieje możliwość skompilowania projektu z odwołaniem bez kompilowania projektu zależnego, więc odwołanie może się okazać zbędne; Projekt może odwoływać się do uprzednio utworzonej wersji projektu. Może to spowodować, że kilka wersjach pojedynczego pliku DLL jest wymagany w katalogu bin, nie jest możliwe, która powoduje ten komunikat o błędzie.  
+ Oznacza to, że ten błąd występuje, ponieważ projekty w rozwiązaniu istnieją odwołania do siebie nawzajem, ale odwołania zostały utworzone jako odwołania do pliku (przy użyciu **Przeglądaj** znajdujący się w [Dodaj odwołanie](http://msdn.microsoft.com/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) okna dialogowego pole), zamiast odwołania projektu do projektu (przy użyciu **projektu** karcie **Dodaj odwołanie** okno dialogowe). Zaletą odwołania projektu do projektu jest to, że tworzy ono zależność między projektami w systemie kompilacji, tak aby projekt zależny zostanie skompilowany, jeśli została zmieniona od czasu ostatniego konstruowania projektu z odwołaniem. Odwołanie pliku nie tworzy zależność kompilacji, więc istnieje możliwość skompilowania projektu z odwołaniem bez kompilowania projektu zależnego, więc odwołanie może się okazać zbędne; Projekt może odwoływać się do uprzednio utworzonej wersji projektu. Może to spowodować, że kilka wersjach pojedynczego pliku DLL jest wymagany w katalogu bin, nie jest możliwe, która powoduje ten komunikat o błędzie.  
   
  Ten komunikat pojawia się za każdym razem, gdy występuje konflikt w katalogu bin i aplikacji może nie działać prawidłowo. Mimo że może korzystano tego problemu, to ostrzeżenie nadal będą wyświetlane, system projektu nie może ustalić, czy wersja zależności będą działać poprawnie, ze wszystkimi składnikami.  
   

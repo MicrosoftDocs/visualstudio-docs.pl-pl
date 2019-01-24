@@ -1,14 +1,9 @@
 ---
 title: Tworzenie modeli aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
 - vs.teamarch.UMLModelExplorer.dependency
@@ -41,30 +36,30 @@ ms.assetid: b69d9d91-c7e7-4dee-8eb6-706076eecb85
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9e3aa389441914121493148ecb8fa45b9f86beed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0cfa8a63d480dfb04fcc3c675955f44297933520
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745126"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761689"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kodu oraz wymagania użytkowników, które Twój system oprogramowania musi obsługiwać. Na przykład do opisywania i przedstawiania wymagań użytkownika, można użyć przypadek użycia języka UML (Unified Modeling), działanie, klas i diagramów sekwencji. Do opisywania i przedstawiania funkcji Twojego systemu, można użyć składnika, klasa, działanie i diagramy sekwencji UML.  
   
- Zobacz [wideo Channel 9: poprawa architektury poprzez modelowanie](http://go.microsoft.com/fwlink/?LinkID=252078).  
+ Zobacz [wideo Channel 9: Poprawa architektury poprzez modelowanie](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Można utworzyć następujące diagramy UML w tej wersji:  
   
 |**Diagram**|**Pokazuje**|  
 |-----------------|---------------|  
-|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestników procesu biznesowego|  
-|[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, portów i relacji|  
-|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|Typy, które są używane do przechowywania i wymiany danych w systemie oraz ich wzajemne relacje|  
-|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|Sekwencje interakcje między obiektów, składniki, systemów i aktorów|  
-|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|Cele użytkowników i zadań, które obsługuje system|  
+|[Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestników procesu biznesowego|  
+|[Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, portów i relacji|  
+|[Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)|Typy, które są używane do przechowywania i wymiany danych w systemie oraz ich wzajemne relacje|  
+|[Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)|Sekwencje interakcje między obiektów, składniki, systemów i aktorów|  
+|[Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)|Cele użytkowników i zadań, które obsługuje system|  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługi każdego typu diagramu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -72,7 +67,7 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
   
 |**Diagram**|**Pokazuje**|  
 |-----------------|---------------|  
-|[Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
+|[Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|  
 |Diagramy klas wygenerowany kod<br /><br /> [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)|Typy i ich relacje w kodzie .NET|  
   
@@ -96,7 +91,7 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używanie modeli uściślenia i komunikują się potrzeby użytkowników.|  
 |[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|Używanie modeli do opisania ogólną strukturę i zachowanie systemu i upewnij się, że spełnia potrzeby użytkowników.|  
 |[Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)|Upewnij się, że oprogramowanie pozostaje zgodny z potrzebami użytkowników i ogólną architekturę systemu.|  
-|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używaj modeli w Agile development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używanie modeli, aby pomóc Ci zrozumieć i zmienić systemu podczas jego tworzenia.|  
+|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używaj modeli w Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używanie modeli, aby pomóc Ci zrozumieć i zmienić systemu podczas jego tworzenia.|  
 |[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizowania modeli w dużych i średnich projektu.|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
@@ -104,6 +99,3 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
 |**Kategoria**|**Łącza**|  
 |------------------|---------------|  
 |**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-
-
-

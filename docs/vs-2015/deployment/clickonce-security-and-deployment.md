@@ -1,14 +1,9 @@
 ---
 title: Wdrażania i zabezpieczeń ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753930"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wskazówki dotyczące wdrażania ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,13 +57,13 @@ ms.locfileid: "49898177"
  Zabezpieczenia dostępu kodu pomaga ograniczać dostęp do tego kodu do chronionych zasobów. W większości przypadków można wybrać strefy Internet lub lokalny Intranet, aby ograniczyć uprawnienia. Użyj **zabezpieczeń** strony w **ProjectDesigner** żądania strefy, które są odpowiednie dla aplikacji. Można również debugować aplikacje przy użyciu ograniczonych uprawnień do emulowania środowisko użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>Monit o udzielenie zaufania ClickOnce  
- Jeśli aplikacja żąda więcej uprawnień niż zezwala na strefy, użytkownik końcowy może monit podjęcia decyzji o zaufaniu. Użytkownik końcowy można zdecydować, czy zaufane do uruchamiania aplikacji ClickOnce, takich jak aplikacje Windows Forms, aplikacji Windows Presentation Foundation, aplikacji konsoli, aplikacji przeglądarki XAML i rozwiązań dla pakietu Office. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie funkcji ClickOnce zaufania monitowania](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
+ Jeśli aplikacja żąda więcej uprawnień niż zezwala na strefy, użytkownik końcowy może monit podjęcia decyzji o zaufaniu. Użytkownik końcowy można zdecydować, czy zaufane do uruchamiania aplikacji ClickOnce, takich jak aplikacje Windows Forms, aplikacji Windows Presentation Foundation, aplikacji konsoli, aplikacji przeglądarki XAML i rozwiązań dla pakietu Office. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie monitowania technologii ClickOnce zaufania](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
   
 ## <a name="how-clickonce-deployment-works"></a>Jak działa wdrażania ClickOnce  
  Podstawowe [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] architektura wdrożenia opiera się na dwóch plikach manifestu XML: manifest aplikacji i manifest wdrożenia. Pliki są używane do opisywania zainstalowanym aplikacji ClickOnce z, jak są aktualizowane i kiedy są aktualizowane.  
   
 ### <a name="publishing-clickonce-applications"></a>Publikowanie aplikacji ClickOnce  
- Manifest aplikacji zawiera opis samej aplikacji. W tym zestawy, zależności i plików, które tworzą aplikację, wymagane uprawnienia i lokalizację, w przypadku gdy aktualizacje będą dostępne. Deweloper aplikacji autorów manifest aplikacji przy użyciu Kreatora publikacji w programie Visual Studio lub Manifest Generation i narzędzia do edycji (Mage.exe) w [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Aby uzyskać więcej informacji, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ Manifest aplikacji zawiera opis samej aplikacji. W tym zestawy, zależności i plików, które tworzą aplikację, wymagane uprawnienia i lokalizację, w przypadku gdy aktualizacje będą dostępne. Deweloper aplikacji autorów manifest aplikacji przy użyciu Kreatora publikacji w programie Visual Studio lub Manifest Generation i narzędzia do edycji (Mage.exe) w [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Aby uzyskać więcej informacji, zobacz [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
  Manifest wdrożenia w tym artykule opisano sposób wdrażania aplikacji. Obejmuje to lokalizacja manifestu aplikacji i wersji aplikacji, uruchamianą klientów.  
   
@@ -114,7 +109,7 @@ ms.locfileid: "49898177"
   
 |Przeglądarka|Wersja programu .NET Framework|  
 |-------------|----------------------------|  
-|Internet Explorer|W WERSJI 2.0, 3.0, 3.5, 3.5 Z DODATKIEM SP1, 4|  
+|Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|  
 |Firefox|W WERSJI 2.0 Z DODATKIEM SP1, 3.5 Z DODATKIEM SP1, 4|  
   
 ## <a name="see-also"></a>Zobacz też  
@@ -124,6 +119,3 @@ ms.locfileid: "49898177"
  [Wdrażanie składników COM za pomocą technologii ClickOnce](../deployment/deploying-com-components-with-clickonce.md)   
  [Tworzenie aplikacji ClickOnce z wiersza polecenia](../deployment/building-clickonce-applications-from-the-command-line.md)   
  [Debugowanie aplikacji ClickOnce używających System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
-
-
-

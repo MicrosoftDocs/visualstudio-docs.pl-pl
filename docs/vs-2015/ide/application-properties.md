@@ -1,14 +1,9 @@
 ---
 title: Właściwości aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - application properties [Visual Studio]
 - Project Designer, Application page
@@ -17,18 +12,18 @@ ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757661"
 ---
 # <a name="application-properties"></a>Właściwości aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można ustawić właściwości ogólne aplikacji w Visual Basic, C# i F # aplikacje, takie jak typ aplikacji, obiekt początkowy i informacje o zestawie, **aplikacji** okienku **projektanta projektu**.  
+Można ustawić właściwości ogólnego zastosowania dla języka Visual Basic C#, i F# aplikacji, takich jak typ aplikacji, obiekt początkowy i informacje o zestawie, w **aplikacji** okienku **projektu Projektant**.  
   
  Można wykonywać następujące zadania w **aplikacji** okienka:  
   
@@ -59,18 +54,15 @@ Można ustawić właściwości ogólne aplikacji w Visual Basic, C# i F # aplika
   Zadania dostępne dla aplikacji są zależne od języka programowania, używany.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
+ [Instrukcje: Określanie ikony aplikacji (Visual Basic C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Wprowadzenie do projektanta projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Zarządzanie, debugowanie — właściwości](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Zarządzanie, debugowanie — właściwości](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Zarządzanie zasobami aplikacji (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Zarządzanie ustawieniami aplikacji (.NET)](../ide/managing-application-settings-dotnet.md)
-
-
-
