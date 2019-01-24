@@ -1,14 +1,9 @@
 ---
 title: Jak można debugować naruszenia zasad dostępu? | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e9c9384790a07898862bf158f854b4af65395bf7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf540c2c3e12bb3fc33250b3bb1dc12fe94a73d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752217"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>Jak można debugować naruszenia zasad dostępu?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,6 +75,3 @@ int main() {
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
-
-
-
