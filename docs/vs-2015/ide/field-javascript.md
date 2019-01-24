@@ -1,14 +1,9 @@
 ---
 title: '&lt;pole&gt; (JavaScript) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <field> JavaScript XML tag
 - field JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: c494bae0-3095-42a3-aa0a-4c415188c65c
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b2fe09070261460b7b83f54de44a07cf96d40cf2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766559"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;pole&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,6 +157,3 @@ new calculator().f.   // Completion list for a Number.
   
 ## <a name="see-also"></a>Zobacz też  
  [Komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

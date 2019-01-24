@@ -1,14 +1,9 @@
 ---
 title: Debugowanie zarządzanego kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: fa3aff01-c271-4aa7-b5b1-def560471c84
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84e41d06fb490cf3528f19eade08000f1ae27587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f65b0308729e19cd43f0c01b9ce6856a3b4d54ea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760502"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Instrukcje „Stop” w języku Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  W tym artykule opisano `Stop` instrukcji, co stanowi alternatywę dla ustawienie punktu przerwania. Przykładowy kod znajduje się również, wraz z porównania między `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.  
   
- [Przewodnik: Debugowanie formularza Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [Przewodnik: Debugowanie formularza Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
  Zapewnia instrukcje krok po kroku dotyczące tworzenia formularzy Windows i debugowanie formularza. Formularz Windows, standardowy składnik zarządzanej aplikacji Windows, jest jednym z najczęściej używanych aplikacji zarządzanych. W tym instruktażu wykorzystano Visual C# i Visual Basic, ale techniki tworzenia formularzy Windows w języku C++ ogólnie wygląda podobnie.  
   
  [Debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -66,7 +61,7 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Debugowanie LINQ i DLINQ](../debugger/debugging-linq.md)  
  W tym artykule omówiono techniki debugowania zapytań LINQ.  
   
- [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -98,6 +93,3 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Przewodnik: Debugowanie Windows niestandardowych formantów formularzy w czasie projektowania](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

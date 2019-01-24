@@ -1,14 +1,9 @@
 ---
-title: 'Porady: debugowanie natywnych bibliotek DLLs | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie natywnych bibliotek DLLs | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: 76b34d15-a66d-4963-842e-c8b955c81696
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6577395d33d9004d8f17d91f273e3a53e7a3897d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffc4f0b58bacdc71439a89dce711575a103c71cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757477"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763878"
 ---
-# <a name="how-to-debug-native-dlls"></a>Porady: Debugowanie natywnych bibliotek DLLs
+# <a name="how-to-debug-native-dlls"></a>Instrukcje: Debugowanie natywnych bibliotek DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Podczas debugowania biblioteki DLL, należy uruchomić debugowanie od:  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51757477"
   
 - Projekt umożliwiający utworzenie biblioteki DLL, sam.  
   
-  Jeśli masz projekt umożliwiający utworzenie pliku wykonywalnego, rozpocząć debugowanie z tego projektu. Następnie można otworzyć pliku źródłowego dla biblioteki DLL i ustawiać punkty przerwania w tym pliku, mimo że nie jest częścią projektu użyty do utworzenia pliku wykonywalnego. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Jeśli masz projekt umożliwiający utworzenie pliku wykonywalnego, rozpocząć debugowanie z tego projektu. Następnie można otworzyć pliku źródłowego dla biblioteki DLL i ustawiać punkty przerwania w tym pliku, mimo że nie jest częścią projektu użyty do utworzenia pliku wykonywalnego. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
   Jeśli uruchomisz debugowanie z projektu, który tworzy bibliotekę DLL, należy określić plik wykonywalny, który chcesz użyć podczas debugowania biblioteki DLL.  
   
@@ -70,6 +65,3 @@ ms.locfileid: "51757477"
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

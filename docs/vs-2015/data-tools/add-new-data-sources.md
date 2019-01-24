@@ -1,12 +1,9 @@
 ---
 title: Dodawanie nowych źródeł danych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,13 +18,13 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761970"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,4 +105,3 @@ W kontekście programu .NET data tools w programie Visual Studio termin *źród�
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

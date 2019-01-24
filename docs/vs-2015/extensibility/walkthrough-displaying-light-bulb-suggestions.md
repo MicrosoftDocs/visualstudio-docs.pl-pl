@@ -1,35 +1,30 @@
 ---
 title: 'Przewodnik: Wyświetlanie sugestie z żarówką | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7e5bf7ad795615e70e990dd29c05f5efe3a1c78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e13ce65888ace73ca58bfbc5690330fd8265ad8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759456"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Przewodnik: wyświetlanie sugestii „żarówka”
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Przewodnik: Wyświetlanie sugestii „żarówka”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć w celu wyświetlenia zestawem akcji, na przykład poprawki dotyczące problemów identyfikowane za pomocą analizatorów kodu wbudowanego lub refaktoryzacji kodu.  
   
  W edytorach Visual C# i Visual Basic można również użyć platformie kompilatora .NET ("Roslyn") do zapisu i tworzenia pakietów analizatorów własnego kodu z akcjami, które automatycznie wyświetlają żarówki. Aby uzyskać więcej informacji, zobacz:  
   
-- [Instrukcje: Pisanie C# diagnostyki i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Instrukcje: Zapis C# diagnostyki i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [Instrukcje: Pisanie diagnostyki programu Visual Basic i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Instrukcje: Zapis diagnostyki programu Visual Basic i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Innych języków, takich jak C++ także zapewnić żarówki szybkich akcji, takich jak sugestię do tworzenia szkieletu stosowania tej funkcji.  
   
@@ -370,4 +365,3 @@ Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć
      ![Testowanie żarówki, rozwinięte](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Jeśli klikniesz pierwszą akcją, cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz drugiej akcji, cały tekst powinny być konwertowane na małe litery.
-

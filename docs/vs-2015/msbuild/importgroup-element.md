@@ -1,14 +1,9 @@
 ---
 title: Importgroup — Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4522099c893c7fb5dc37c0ad78d40cb0600e84b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4d700bb6d8aebec1ff78e1e0289b89ae4cd0c91a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769422"
 ---
 # <a name="importgroup-element"></a>ImportGroup — Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,6 +81,3 @@ Zawiera kolekcję `Import` elementy, które są zgrupowane w obszarze opcjonalny
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elementy](../msbuild/msbuild-items.md)
-
-
-

@@ -1,32 +1,27 @@
 ---
-title: 'Krok 4: Określenie układu formularza z formantem TableLayoutPanel | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 4. Określić układ formularza z formantem TableLayoutPanel | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763274"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określenie układu formularza przy użyciu formantu TableLayoutPanel
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określanie układu formularza przy użyciu kontrolki TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym kroku dodasz `TableLayoutPanel` formantu do formularza. TableLayoutPanel pomaga poprawnie wyrównać formanty w formularzu, który zostanie dodany później.  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Film wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Aby zmienić układ formularza z formantem TableLayoutPanel  
   
@@ -67,7 +62,7 @@ Okno właściwości z zaznaczonym wypełnieniem
 7.  Po ustawieniu TableLayoutPanel **Dock** właściwości **wypełnienia**, panel wypełnia cały formularz. Jeśli zmienisz rozmiar formularza ponownie, obiekt TableLayoutPanel pozostaje zadokowany i zmienia się, aby dopasować rozmiar.  
   
     > [!NOTE]
-    >  Element TableLayoutPanel działa jak tabela w programie Microsoft Office Word: ma wiersze i kolumny i pojedyncze komórki może obejmować wiele wierszy i kolumn. Każda komórka może zawierać jeden formant (jak przycisk, pole wyboru lub etykietę). Twój TableLayoutPanel będzie miał `PictureBox` obejmujące cały górny wiersz, formant `CheckBox` kontrolki w jego lewej dolnej komórce i cztery `Button` kontrolki w jej dolnej prawej komórce.  
+    >  Element TableLayoutPanel działa jak tabela w programie Microsoft Office Word: Ma ona wierszy i kolumn i pojedyncze komórki może obejmować wiele wierszy i kolumn. Każda komórka może zawierać jeden formant (jak przycisk, pole wyboru lub etykietę). Twój TableLayoutPanel będzie miał `PictureBox` obejmujące cały górny wiersz, formant `CheckBox` kontrolki w jego lewej dolnej komórce i cztery `Button` kontrolki w jej dolnej prawej komórce.  
   
 8.  Obecnie TableLayoutPanel ma dwa równe rzędy wielkości i dwie kolumny równej wielkości. Musisz zmienić ich rozmiar, aby górny wiersz i prawa kolumna były znacznie większe. W programie Windows Forms Designer wybierz obiekt TableLayoutPanel. W prawym górnym rogu jest przycisk mały trójkąt czarny, który wygląda następująco.  
   
@@ -95,9 +90,6 @@ Formularz Form1 z po zmianie rozmiaru formantu TableLayoutPanel
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 5: dodawanie formantów do formularza Your](../ide/step-5-add-controls-to-your-form.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: właściwości zestawu formularza](../ide/step-3-set-your-form-properties.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).

@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cb7f3e98f0860d05c879a81fb14f05142678baae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c419800a92f25ce4531c351d4131acf119633ccb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770277"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;nowego w Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,12 +65,12 @@ Począwszy od programu Visual Studio 2017, skanowanie w poszukiwaniu szablonów 
 > [!NOTE]
 >  Można kontynuować używania zestawów referencyjnych zainstalowany zestaw SDK w PORÓWNANIU z projektami (znajdujący się w \<Visual Studio lokalizacja instalacji > \ VSSDK\VisualStudioIntegration\Common\Assemblies) i nie trzeba być istniejące projekty rozszerzalności uaktualniony do korzystania z pakietów NuGet.  Projekt **odwołuje się / Dodaj odwołanie** okna dialogowego w dalszym ciągu używać zestawów odwołań zainstalowany zestaw SDK programu VS.
 >
->  Jeśli chcesz zmodyfikować istniejących projektów można użyć NuGet, zobacz [porady: Migracja pakietów VSPackage Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) mającego sekcję na temat aktualizowania rozszerzalności projektów do pakietów NuGet.
+>  Jeśli chcesz zmodyfikować istniejących projektów można użyć NuGet, zobacz [jak: Migrowanie pakietów VSPackage do programu Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) mającego sekcję na temat aktualizowania rozszerzalności projektów do pakietów NuGet.
 
 ## <a name="light-bulbs"></a>Żarówki
  Jedną z najbardziej atrakcyjnych nowych sposobów pisania kodu rozszerzenia jest zapewniana przez projekt Roslyn. Aby uzyskać więcej informacji, zobacz [Roslyn](https://github.com/dotnet/Roslyn).
 
- Ikony żarówek są nową funkcję, która jest dostarczana z VSSDK. Są one ikony stosowane przy w edytorze programu Visual Studio, które pozwalają wyświetlić zestaw akcji refaktoryzacji kodu lub poprawki dla problemów identyfikowane za pomocą analizatorów kodu wbudowanego. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
+ Ikony żarówek są nową funkcję, która jest dostarczana z VSSDK. Są one ikony stosowane przy w edytorze programu Visual Studio, które pozwalają wyświetlić zestaw akcji refaktoryzacji kodu lub poprawki dla problemów identyfikowane za pomocą analizatorów kodu wbudowanego. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
 
 ## <a name="updated-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu zaktualizowany użytkownik
  Projektowanie nowych rozszerzeń lub funkcje programu Visual Studio? Sprawdź zaktualizowane oraz rozszerzone [dotyczące środowiska użytkownika w usłudze Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Znajdziesz [kolor tokenów](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [rozmiary czcionek](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [specyfikacje układu okna dialogowego](../extensibility/ux-guidelines/layout-for-visual-studio.md)i inne wskazówki, musisz bezproblemowo integrują się nowy interfejs użytkownika z programu Visual Studio.

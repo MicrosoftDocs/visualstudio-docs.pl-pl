@@ -1,27 +1,22 @@
 ---
-title: 'Porady: rejestrowanie usługi | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zarejestruj usługę | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 14124e84ad7f49326bb9e5346868c177e9d32087
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206261"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761619"
 ---
-# <a name="how-to-register-a-service"></a>Porady: rejestrowanie usługi
+# <a name="how-to-register-a-service"></a>Instrukcje: Zarejestruj usługę
 Środowiska pakietu zarządzanego (MPF) zawiera atrybuty kontrolować rejestracji usług zarządzanych. Narzędzie RegPkg korzysta z tych atrybutów do zarejestrowania usługi za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="example"></a>Przykład  
@@ -46,5 +41,5 @@ ms.locfileid: "49206261"
 >  Mimo że można użyć tego samego typu lub identyfikator GUID dla usługi oraz interfejs, firma Microsoft zaleca, oddziel dwa, ponieważ usługa może narazić różne interfejsy.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rejestrowanie pakietów VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Rejestrowanie pakietów VSPackage](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd)   
  [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)

@@ -1,23 +1,20 @@
 ---
 title: Dodawanie rozszerzeń do definicji DSL | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 07e133be-92ab-4936-a02b-45d2012bd0a6
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bd45a2345e6e5b28b74cb27fac226514c3f92a04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766277"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Dodawanie rozszerzeń do definicji DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +39,3 @@ Rozszerzenie definicji DSL umożliwia tworzenie pakietu rozszerzenia języka spe
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio Visualisation i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-

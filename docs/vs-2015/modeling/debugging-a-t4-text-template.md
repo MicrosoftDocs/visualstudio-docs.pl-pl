@@ -1,12 +1,9 @@
 ---
 title: Debugowanie szablonu tekstowego T4 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770737"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debugowanie szablonu tekstowego T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +81,3 @@ Możesz ustawić punkty przerwania w szablonach tekstowych. Aby debugować szabl
 |Wystąpił wyjątek podczas przetwarzania dyrektywy o nazwie "{0}".|Występuje, gdy procesor dyrektywy zgłasza wyjątek podczas przetwarzania dyrektywy.|Pamiętaj, że parametry do procesora dyrektywy są poprawne.|  
 |Host zgłosił wyjątek podczas próby rozpoznania odwołania do zestawu "{0}".|Występuje, gdy host zgłasza wyjątek, gdy próbuje rozpoznać odwołania do zestawu. Komunikat zawiera zestaw odwoływać się do ciągu.|Zestaw odwołania pochodzą \<@# assembly #> dyrektyw i procesorów dyrektyw. Pamiętaj, że parametr "name" podana w parametrze zestawu jest poprawny.|  
 |Próba określenia nieobsługiwany {1} wartość "{0}" dla dyrektywy {2}|Wykonywane przez RequiresProvidesDirectiveProcessor, (wszystkie nasze wygenerowane procesory dyrektyw dziedziczyć po nim), podczas dostarczania nieobsługiwana dostarczania lub wymagania argumentu.|Pamiętaj, że nazwy w name = 'value' par w wymaga i zawiera parametry są poprawne.|
-
-
-

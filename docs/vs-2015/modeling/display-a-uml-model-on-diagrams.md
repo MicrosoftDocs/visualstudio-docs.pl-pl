@@ -1,25 +1,22 @@
 ---
 title: Wyświetlanie modelu UML na diagramach | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770665"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Wyświetlanie modelu UML na diagramach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ W kodzie programu do rozszerzenia programu Visual Studio można kontrolować spo
   
 |Typ elementu|Na przykład|Do wyświetlenia w tym, kod musi|  
 |---------------------|-----------------|-------------------------------------|  
-|Klasyfikator|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Utworzenie skojarzone kształtów na diagramach określony. Można utworzyć dowolną liczbę kształty dla każdego klasyfikatora.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ustaw `parentShape` do `null` dla kształtu na najwyższym poziomie diagramu.<br /><br /> Aby wyświetlić jeden kształt wewnątrz innego:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Uwaga:** przeprowadzenie wyświetlania wewnątrz **ILinkedUndo** transakcji, metoda zwraca czasami nie `IShape`. Jednak kształt poprawnie jest tworzony i jest dostępne przy użyciu `IElement.Shapes().`|  
+|Klasyfikator|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Utworzenie skojarzone kształtów na diagramach określony. Można utworzyć dowolną liczbę kształty dla każdego klasyfikatora.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ustaw `parentShape` do `null` dla kształtu na najwyższym poziomie diagramu.<br /><br /> Aby wyświetlić jeden kształt wewnątrz innego:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Uwaga:**  Jeśli wykonujesz wyświetlania wewnątrz **ILinkedUndo** transakcji, metoda zwraca czasami nie `IShape`. Jednak kształt poprawnie jest tworzony i jest dostępne przy użyciu `IElement.Shapes().`|  
 |Element podrzędny elementu klasyfikatora|Atrybutu, operacji<br /><br /> Części i portów|Automatyczne — kod nie jest wymagany.<br /><br /> Jest on wyświetlany jako część elementu nadrzędnego.|  
 |Zachowanie|Interakcji (kolejny)<br /><br /> Działanie|Powiąż zachowanie odpowiednie diagramu.<br /><br /> Każde działanie może być powiązana z co najwyżej jeden diagram, w danym momencie.<br /><br /> Na przykład:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Element podrzędny elementu zachowanie|Linie życia, wiadomości, akcje, węzłów obiektowych|Automatyczne — kod nie jest wymagany.<br /><br /> Jest on wyświetlany, jeśli element nadrzędny jest powiązany z diagramu.|  
@@ -386,6 +383,3 @@ namespace AlignCommand
  [Nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md)   
  [Przykład: Połączenia kształtów na diagramie polecenia menu](http://go.microsoft.com/fwlink/?LinkId=213809)   
  [Przykład: Tworzenie elementów, kształty i Stereotypy](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-

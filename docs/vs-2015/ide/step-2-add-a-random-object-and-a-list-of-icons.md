@@ -1,25 +1,20 @@
 ---
-title: 'Krok 2: Dodawanie obiektu losowego i listy ikon | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 2. Dodawanie obiektu losowego i listy ikon | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2740e61de964f3b0c72f44e9a5c11018894c4fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bfdedd3c6666ca6535237de11eb08a9b013fe8c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766344"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2. Dodawanie obiektu losowego i listy ikon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Okno technologii IntelliSense
   
      Jeśli spojrzysz na kod (i uwagi) w krótkich sekcjach, jest bardziej zrozumiały. Programy mogą korzystać `List` obiekty do śledzenia wielu różnych typów elementów. Lista może zawierać liczby, wartości true/false, tekst lub inne obiekty. Można nawet mieć `List` obiekt, który przechowuje inne `List` obiektów. Elementy na liście są nazywane *elementy*, a każda lista zawiera tylko jeden typ elementu. Tak więc, lista liczb może zawierać tylko liczby — nie można dodać tekstu do tej listy. Podobnie nie można dodać liczb do listy wartości true/false.  
   
-     Po utworzeniu `List` przy użyciu `new` instrukcji, należy określić rodzaj danych, które mają być przechowywane w nim. Dlatego dymek u góry **IntelliSense** okno zawiera typy elementów na liście. Ponadto, właśnie to `List<string>` (w Visual C#) i `List(Of String)` (w języku Visual Basic) oznacza: jest `List` obiekt, który przechowuje elementy `string` typu danych. Ciąg to, czego program używa do przechowywania tekstu, który ma co wyświetla dymek z prawej strony **IntelliSense** okno to coś.  
+     Po utworzeniu `List` przy użyciu `new` instrukcji, należy określić rodzaj danych, które mają być przechowywane w nim. Dlatego dymek u góry **IntelliSense** okno zawiera typy elementów na liście. Ponadto, właśnie to `List<string>` (w elemencie wizualnym C#) i `List(Of String)` (w języku Visual Basic) oznacza, że: Jest `List` obiekt, który przechowuje elementy `string` typu danych. Ciąg to, czego program używa do przechowywania tekstu, który ma co wyświetla dymek z prawej strony **IntelliSense** okno to coś.  
   
 4.  Zastanów się, dlaczego w Visual Basic należy najpierw utworzyć tablicę tymczasową, a w Visual C# lista może być utworzona za pomocą jednej instrukcji. Jest to spowodowane języka Visual C# ma *inicjatory kolekcji*, które przygotowują listę do przyjmowania wartości. W Visual Basic można używać inicjatora kolekcji. Jednak ze względu na zgodność z poprzednią wersją Visual Basic, zalecamy używanie poprzedniego kodu.  
   
@@ -60,9 +55,6 @@ Okno technologii IntelliSense
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 3: przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 3: Przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Tworzenie projektu i Dodawanie tabeli do formularza Your](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Tworzenie projektu i Dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

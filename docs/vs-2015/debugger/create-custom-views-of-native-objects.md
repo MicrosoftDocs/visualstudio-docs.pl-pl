@@ -1,14 +1,9 @@
 ---
 title: Tworzenie niestandardowych widoków obiektów macierzystych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756403"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Tworzenie niestandardowych widoków obiektów macierzystych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,7 +299,7 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
 
  Oznacza, że tego zmiennych typu `CPoint` są wyświetlane w następujący sposób:  
 
- ![Przy użyciu elementu klasy DisplayString](../debugger/media/dbg-natvis-cpoint-displaystring.png "DBG_NATVIS_CPoint_DisplayString")  
+ ![Using a DisplayString element](../debugger/media/dbg-natvis-cpoint-displaystring.png "DBG_NATVIS_CPoint_DisplayString")  
 
  W `DisplayString` wyrażenie `x` i `y`, które są członkami `CPoint`, są umieszczone w nawiasach klamrowych i dlatego ich wartości są obliczane. Wyrażenie pokazuje również, jak można udosłownić nawias klamrowy za pomocą podwójnego nawiasu klamrowego ( `{{` lub `}}` ).  
 
@@ -551,7 +546,7 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
 
 ```  
 
- ![automatyczne&#95;ptr&#60;wektor&#60;int&#62; &#62; rozszerzenie expandeditem](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; ExpandedItem expansion](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
 
  W poniższym przykładzie pokazano sposób agregacji właściwości z klasy podstawowej w klasie pochodnej. Załóżmy, że `CPanel` klasa pochodzi od `CFrameworkElement`. Zamiast powtarzania właściwości, które pochodzą od podstawy `CFrameworkElement` klasy `ExpandedItem` węzeł pozwala te właściwości mają być dołączane do listy podrzędnej `CPanel` klasy. **Nd** specyfikatora, który wyłącza dopasowywanie wizualizacji dla klasy pochodnej jest tutaj formatu. W przeciwnym wypadku wyrażenie `*(CFrameworkElement*)this` spowoduje, że `CPanel` wizualizację można zastosować ponownie, ponieważ wizualizacji domyślnej wpisania typu reguł dopasowania uważają to za najbardziej odpowiednie. Za pomocą **nd** specyfikator formatu nakazuje debugerowi użycie wizualizacji klasy podstawowej lub rozszerzenia domyślnej klasy bazowej, jeśli klasa bazowa nie zawiera wizualizacji.  
 
@@ -589,7 +584,7 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
 
  ![CONCURRENCY::Array z Sythentic element expansio](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
 
-###  <a name="BKMK_HResult"></a> Wartość HResult  
+###  <a name="BKMK_HResult"></a> HResult  
  `HResult` Elementu pozwala na dostosowanie informacje, które jest wyświetlane dla wartości HRESULT w oknach debugera. `HRValue` Element musi zawierać 32-bitową wartość HRESULT, która ma zostać dostosowana. `HRDescription` Element zawiera informacje, które jest wyświetlane w debugerze.  
 
 ```  
@@ -638,6 +633,3 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
  `CustomVisualizer` jest punktem rozszerzalności, która określa rozszerzenie VSIX, który może zapisać do kontrolowania wizualizacji w kodzie, który działa w programie Visual Studio. Aby uzyskać więcej informacji na temat pisania rozszerzenia VSIX, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md). Pisanie wizualizatora niestandardowego jest o wiele więcej pracy niż pisania definicji natvis XML, ale możesz są wolne od ograniczenia, o jakich natvis obsługuje ani nie obsługuje. Wizualizatory niestandardowe mają dostęp do pełnego zestawu rozszerzalności debugera interfejsów API, który może służyć do kwerendy i modyfikowanie obiektu debugowanego procesu lub komunikowania się z innymi częściami programu Visual Studio.  
 
  Możesz użyć `Condition`, `IncludeView`, i `ExcludeView` atrybutów elementów CustomVisualizer.
-
-
-

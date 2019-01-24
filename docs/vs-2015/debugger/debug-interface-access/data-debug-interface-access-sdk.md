@@ -1,14 +1,9 @@
 ---
 title: Dane (debugowania zestaw SDK dostępu do interfejsu) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c0e777401602a4d802fa48c2b14ba97be89d8631
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a69e1cddec945cd797d91a92d28ba46221a20d10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775683"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Dane (Zestaw SDK dostępu do interfejsu debugowania)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,6 +70,3 @@ Wszystkie zmienne, takie jak parametry, zmiennych lokalnych, zmiennych globalnyc
  [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)   
  [Lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

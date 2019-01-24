@@ -1,14 +1,9 @@
 ---
 title: Obecne są liczne kategorie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b134e54e686059dadd6477fccd5c00b432dbc41a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba84f3ec67acf44cab35f3c7761159839e4ef5bb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769142"
 ---
 # <a name="multiple-categories-are-present"></a>Obecne są liczne kategorie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +33,3 @@ Wybrano sekcji, która zawiera więcej niż jeden rodzaj działania w zakresie w
  [Czas uśpienia](../profiling/sleep-time.md)   
  [Czas synchronizacji](../profiling/synchronization-time.md)   
  [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Narzędzia profilowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780847"
 ---
 # <a name="profiling-tools"></a>narzędzia profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +79,22 @@ Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesor
  [IntelliTrace](../debugger/intellitrace.md) umożliwia rejestrowanie konkretnych zdarzeń, sprawdź dane w **lokalne** okna podczas zdarzenia debuger i wywołania funkcji i błędy debugowania, które są trudne do odtworzenia.  Funkcja IntelliTrace jest przede wszystkim narzędzie debugowania, ale także zawiera informacje, które mogą służyć do badania wydajności. Umożliwia to narzędzie tylko w programie Visual Studio Enterprise z pulpitu, Windows Universal i aplikacji C# ASP.NET. Można znaleźć funkcji IntelliTrace w **narzędzia diagnostyczne** okna podczas debugowania (**debugowanie / Windows / Pokaż narzędzia diagnostyczne**).  
   
 ## <a name="profiling-in-production"></a>Profilowanie w środowisku produkcyjnym  
- Zalecane podejście do profilowania w środowisku produkcyjnym zaleca się wykonywanie profilowania z [wiersza polecenia przy użyciu vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) zbierać profil procesora CPU. Obsługę zdalnego profilowania w usłudze Azure App Service, można profilować za pośrednictwem [Eksploratora serwera lub portalu Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ Zalecane podejście do profilowania w środowisku produkcyjnym zaleca się wykonywanie profilowania z [wiersza polecenia przy użyciu vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) zbierać profil procesora CPU. Obsługę zdalnego profilowania w usłudze Azure App Service, można profilować za pośrednictwem [Eksploratora serwera lub portalu Kudu](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Narzędzie, które należy używać?  
  Poniżej przedstawiono listę różnych narzędzi oferowanych przez program Visual Studio i różnych typach projektów można ich używać za pomocą:  
   
-|Narzędzia wydajności|Windows desktop|Windows Universal/Store|ASP.NET|  
+|Narzędzia wydajności|Pulpit systemu Windows|Windows Universal/Store|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
-|[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Brak|  
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Usługi Azure App Service tylko|  
-|[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak|  
-|[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|  
-|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|Tak|tak, aby XAML nie dla kodu HTML|Brak|  
-|[Eksplorator wydajności](../profiling/performance-explorer.md)|Tak|Brak|Tak|  
+|[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|Brak|  
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|Usługi Azure App Service tylko|  
+|[Użycie procesora GPU](../debugger/gpu-usage.md)|tak|tak|Brak|  
+|[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|Brak|  
+|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak, aby XAML nie dla kodu HTML|Brak|  
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|Brak|tak|  
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko Enterprise platformy .NET|Tylko Enterprise platformy .NET|Tylko Enterprise platformy .NET|  
 |[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak w języku HTML, nie dla XAML|Brak|  
 |[Pamięć języka JavaScript](../profiling/javascript-memory.md)|Brak|tak w języku HTML, nie dla XAML|Brak|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

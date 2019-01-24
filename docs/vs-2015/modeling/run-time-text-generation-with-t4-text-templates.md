@@ -1,12 +1,9 @@
 ---
 title: Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9fabefec48ee44e58754f360364491df1a14961d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777425"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Dziedziczenia między szablonami tekstu czasu wykonywania  
  Możesz udostępnić zawartości między szablonów czasu wykonywania, pisząc szablonu klasy bazowej, które mogą być abstrakcyjne. Użyj `inherits` parametru `<@#template#>` dyrektywy, aby odwoływać się do innej klasy szablonu środowiska uruchomieniowego.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Wzorzec dziedziczenia: fragmenty w metodach Base  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Wzorzec dziedziczenia: Fragmenty w metod bazowych  
  We wzorcu używanych w przykładzie poniżej Zwróć uwagę następujące kwestie:  
   
 - Klasa bazowa `SharedFragments` definiuje metody w ramach bloki cech klas `<#+ ... #>`.  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>Wzorzec dziedziczenia: Tekst w treści podstawowy  
+#### <a name="inheritance-pattern-text-in-base-body"></a>Wzorzec dziedziczenia: Tekst podstawowy treści  
  W tym o innym podejściu do przy użyciu szablonu dziedziczenia duża część tekstu jest zdefiniowana w szablonie podstawowym. Pochodne szablony zawierają dane i fragmentów tekstu, który mieści się w podstawowej zawartości.  
   
  **AbstractBaseTemplate1.tt:**  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Zobacz też  
  [Generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)   
- [Opis T4: Wstępnie przetworzonych szablonów tekstowych przy Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Opis T4: Szablony tekstowe wstępnie przetworzony przez Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)

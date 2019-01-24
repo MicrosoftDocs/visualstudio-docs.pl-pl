@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Określanie plików binarnych do uruchomienia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie plików binarnych do uruchomienia | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.itemlaunch
 helpviewer_keywords:
@@ -19,15 +14,15 @@ ms.assetid: ba77fcf4-8d78-49f1-b8f3-7dd0acf84306
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f3a176ded749f640f2e37f27c9753ee1902772c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 45b5e3ba98c526ffea1ab63f58ef9193a3eaae75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777373"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759896"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Porady: określanie plików binarnych do uruchomienia
+# <a name="how-to-specify-the-binary-to-start"></a>Instrukcje: Określanie plików binarnych do uruchomienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Do profilu plików binarnych takich jak biblioteki dll, należy wprowadzić informacje w  **\<docelowy > strony właściwości** okno dialogowe. Te informacje wskazują, gdzie znaleźć aplikacji wywołującej projektu DLL.  
@@ -54,6 +49,3 @@ Do profilu plików binarnych takich jak biblioteki dll, należy wprowadzić info
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-
-
-
