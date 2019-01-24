@@ -1,14 +1,9 @@
 ---
-title: 'Porady: włączenie funkcji AutoStart dla instalacji z dysku CD | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Włączenie funkcji AutoStart dla instalacji z dysku CD | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2fde610731ca5ec315b94d2e46f58edb2a7b56fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777760"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Porady: włączenie funkcji AutoStart dla instalacji z dysku CD
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Instrukcje: Włączanie funkcji AutoStart dla instalacji z dysku CD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W przypadku wdrażania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji za pomocą nośników wymiennych, takich jak dysk CD-ROM lub DVD-ROM, aby umożliwić `AutoStart` tak, aby [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja jest uruchamiana automatycznie, gdy nośnik zostanie wstawiona.  
@@ -54,7 +49,4 @@ W przypadku wdrażania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ap
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

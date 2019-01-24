@@ -1,23 +1,19 @@
 ---
 title: Słownik języka Visual
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 498c653800618a5f7a41f68df92e7345ea04cd8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dc64cd1d1a4fae8703f95aa4c2da9b2bb5b363cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796590"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Słownik języka Visual dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -244,7 +240,7 @@ Visual Studio używa wspólnego języka visual w celu zilustrowania koncepcji, k
 |**Manifest**|![Ikona manifestu](../../extensibility/ux-guidelines/media/vld-c-manifest.png "VLD_C_Manifest")|![Edytuj ikonę manifestu](../../extensibility/ux-guidelines/media/vld-c-manifest-editmanifest.png "VLD_C_Manifest_EditManifest") Edytuj manifest ![ikonę manifestu Menedżera rozszerzenia](../../extensibility/ux-guidelines/media/vld-c-manifest-extensionmanagermanifest.png "VLD_C_Manifest_ExtensionManagerManifest")Manifest Menedżer rozszerzenia ![nową ikonę manifestu aplikacji](../../extensibility/ux-guidelines/media/vld-c-manifest-newapplicationmanifest.png "VLD_C_Manifest_NewApplicationManifest") nowy manifest aplikacji|
 |**Kod znaczników**|![Ikona znacznika](../../extensibility/ux-guidelines/media/vld-c-markup.png "VLD_C_Markup")|![Ikona błędu znaczników](../../extensibility/ux-guidelines/media/vld-c-markup-markuperror.png "VLD_C_Markup_MarkupError") błąd znaczników ![ikonę znacznik znaczników](../../extensibility/ux-guidelines/media/vld-c-markup-tag.png "VLD_C_Markup_Tag") tag znaczników ![Tag lub zdarzenie Ikona fragment](../../extensibility/ux-guidelines/media/vld-c-markup-tagoreventsnippet.png "VLD_C_Markup_TagOrEventSnippet") fragment kodu znaczników lub zdarzenia ![dopasowania tagu ikonę](../../extensibility/ux-guidelines/media/vld-c-markup-matchtag.png "VLD_C_Markup_MatchTag") pasuje do tagu ![ Edytuj ikonę znacznika](../../extensibility/ux-guidelines/media/vld-c-markup-edittag.png "VLD_C_Markup_EditTag") Edycja tagu|
 |**Znaczników** koncepcja jest również używany jako element w kilka koncepcji złożone.|||
-|**Kod znaczników: HTML (sieć web)**|![Kod znaczników: HTML &#40;web&#41; ikonę](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web.png "VLD_C_MarkupHTML_web")|![Ikony pliku HTML](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web-htmlfile.png "VLD_C_MarkupHTML_web_HTMLFile") plik HTML|
+|**Kod znaczników: HTML (sieć web)**|![Kod znaczników: HTML &#40;web&#41; icon](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web.png "VLD_C_MarkupHTML_web")|![Ikony pliku HTML](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web-htmlfile.png "VLD_C_MarkupHTML_web_HTMLFile") plik HTML|
 |**Kod znaczników: XAML (WPF)**|![Kod znaczników: XAML &#40;WPF&#41; ikonę](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf.png "VLD_C_MarkupXAML_wpf")|![Ikona aplikacji WPF](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf-wpfapplication.png "VLD_C_MarkupXAML_wpf_WPFApplication") aplikacji WPF ![ikonę VB aplikacja przeglądarki WPF](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf-wpfbrowserapplicationvb.png "VLD_C_MarkupXAML_wpf_WPFBrowserApplicationVB ") Aplikacja przeglądarki środowiska WPF VB ![ikonę biblioteki kontrolki WPF](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf-wpfcontrollibrary.png "VLD_C_MarkupXAML_wpf_WPFControlLibrary") Biblioteka kontrolek WPF|
 |**Kod znaczników: XML**|![Kod znaczników: — Tag XML](../../extensibility/ux-guidelines/media/vld-c-markupxml.png "VLD_C_MarkupXML")|![Załaduj ponownie XML ikonę](../../extensibility/ux-guidelines/media/vld-c-markupxml-reloadxml.png "VLD_C_MarkupXML_ReloadXML") XML Załaduj ponownie ![ikonę pliku XML](../../extensibility/ux-guidelines/media/vld-c-markupxml-xmlfile.png "VLD_C_MarkupXML_XMLFile") pliku XML|
 |**Strona główna**|![Strona główna ikona](../../extensibility/ux-guidelines/media/vld-c-masterpage.png "VLD_C_MasterPage")|![Plik z nową ikonę wzorca](../../extensibility/ux-guidelines/media/vld-c-masterpage-filefromnewmaster.png "VLD_C_MasterPage_FileFromNewMaster") plik z nowym wzorcem|

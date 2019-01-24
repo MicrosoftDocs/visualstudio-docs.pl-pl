@@ -1,23 +1,20 @@
 ---
 title: Zalecenia dotyczące pisania szablonów tekstowych T4 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 542b43b5addad1bee59921bd2f4b593ea4676c59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812756"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795355"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>Zobacz też  
  [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-

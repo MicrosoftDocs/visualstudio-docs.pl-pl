@@ -1,14 +1,9 @@
 ---
 title: Funkcja SccCheckin | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 26daf5fcd3ee4ec14b0801c828a6e536a65150d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765462"
 ---
 # <a name="scccheckin-function"></a>SccCheckin, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,4 +85,3 @@ SCCRTN SccCheckin (
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
-

@@ -1,33 +1,28 @@
 ---
 title: Dostarczanie kontekstu usługi języka za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781936"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802082"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Dostarczanie kontekstu usługi języka za pomocą starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dostępne są dwie opcje usługi języka zapewnić kontekst użytkownika za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podstawowy edytor: dostarczy w kontekście znacznika tekstu, lub wszystkie kontekstu użytkownika. Różnice między nimi opisano w tym miejscu.  
   
- Aby uzyskać więcej informacji na temat podawania kontekstu usługi języka, który jest podłączony do własnego edytora, zobacz [jak: Podaj kontekst edytory](../extensibility/how-to-provide-context-for-editors.md).  
+ Aby uzyskać więcej informacji na temat podawania kontekstu usługi języka, który jest podłączony do własnego edytora, zobacz [jak: Dostarczanie kontekstu edytory](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Podaj w kontekście znacznika tekstu do edytora  
  Aby zapewnić kontekst dla błędów kompilatora wskazywanym przez znaczników tekstu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] core editor, implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfejsu. W tym scenariuszu Usługa językowa udostępnia kontekst, tylko wtedy, gdy kursor znajduje się na znacznika tekstu. Dzięki temu w edytorze — słowo kluczowe w lokalizacji kursora, aby zapewnić **dynamiczna Pomoc** okno z żadnych atrybutów.  
@@ -56,4 +51,3 @@ Dostępne są dwie opcje usługi języka zapewnić kontekst użytkownika za pomo
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Kontekst wytyczne dotyczące projektanci i edytory  
  Projektanci i edytory, musisz podać ogólne — słowo kluczowe dla edytora lub okna projektanta. Można to zrobić, aby rodzajowy, ale właściwe, będzie on wyświetlany na projektancie lub edytorze, po naciśnięciu klawisza F1. Edytor musi oprócz tego podać bieżące słowo kluczowe pod kursorem lub podać klucza termin, na podstawie bieżącego zaznaczenia. W ten sposób zapewnić, że utworzenia tematu Pomocy dotyczącego tekstu lub elementu interfejsu użytkownika wskazywany Wyświetla wybrany, gdy użytkownik naciśnie klawisz F1. Projektant dostarcza kontekst dla elementu zaznaczonego w projektancie, takich jak przycisku w formularzu. Projektanci i edytory również musi połączyć się z usługą języka zgodnie z opisem w [podstawowe informacje o usłudze starszej wersji języka](../extensibility/internals/legacy-language-service-essentials.md).
-

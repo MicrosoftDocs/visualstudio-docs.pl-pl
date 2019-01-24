@@ -1,14 +1,9 @@
 ---
 title: W obszarze Przegląd pomijanie źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793667"
 ---
 # <a name="in-source-suppression-overview"></a>Ograniczanie w kodzie źródłowym - Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Pomijanie w źródła jest możliwość pominąć lub zignorować naruszeń anal
  Nie należy używać w źródłowej pominięcia kompilacji do wydania aby zapobiec przypadkowo wysyłania metadanych pomijanie w źródła. Ze względu na koszt przetwarzania pomijanie-source wydajność aplikacji może być znacznie umieszczając metadanych pomijanie w źródła.  
   
 > [!NOTE]
->  Nie masz ręcznie kod te atrybuty samodzielnie. Aby uzyskać więcej informacji, zobacz [porady: pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Element menu nie jest dostępne dla kodu C++.  
+>  Nie masz ręcznie kod te atrybuty samodzielnie. Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Element menu nie jest dostępne dla kodu C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atrybutu SuppressMessage  
  Po kliknięciu prawym przyciskiem myszy ostrzeżenia analizy kodu w **lista błędów** a następnie kliknij przycisk **Pomijaj komunikaty**, **SuppressMessage** jest dodawany atrybut, w kodzie lub do Plik pominięć globalnych projektu.  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>Wygenerowany kod  
  Kompilatory kodu zarządzanego i niektóre narzędzia innych firm generowanie kodu w celu ułatwienia tworzenia szybkie kodu. Kod wygenerowany przez kompilator, który pojawia się w plikach źródłowych jest zwykle oznaczony przy użyciu **GeneratedCodeAttribute** atrybutu.  
   
- Możesz wybrać, czy pominąć ostrzeżenia analizy kodu i błędów dla wygenerowanego kodu. Aby uzyskać informacje o tym, jak pominąć tych ostrzeżeń i błędów, zobacz [jak: pomijanie ostrzeżeń dotyczących wygenerowany kod](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
+ Możesz wybrać, czy pominąć ostrzeżenia analizy kodu i błędów dla wygenerowanego kodu. Aby uzyskać informacje o tym, jak pominąć tych ostrzeżeń i błędów, zobacz [jak: Pomijanie ostrzeżeń dla wygenerowanego kodu](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
  Należy zauważyć, że analiza kodu ignoruje **GeneratedCodeAttribute** gdy jest stosowany do całego zestawu lub jeden parametr. Tych sytuacji występują rzadko.  
   
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  Docelowy zawsze zawiera nazwę elementu w pełni kwalifikowana.  
   
 ## <a name="global-suppression-file"></a>Plik globalne pomijanie  
- Plik pominięć globalnych zachowuje ograniczeń, które są pominięcia na poziomie globalnym lub pominięcia, których nie określono elementu docelowego. Na przykład ograniczeń dla zestawu poziomu naruszeń są przechowywane w tym pliku. Ponadto niektórych ograniczeń ASP.NET są przechowywane w tego pliku, ponieważ ustawienia na poziomie projektu nie są dostępne dla kod związany z formularzem. Globalne pomijanie jest tworzone i dodawane do projektu po raz pierwszy wybierzesz **w pliku pominięć projektu** opcji **Pomijaj komunikaty** polecenia w oknie Lista błędów. Aby uzyskać więcej informacji, zobacz [porady: pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ Plik pominięć globalnych zachowuje ograniczeń, które są pominięcia na poziomie globalnym lub pominięcia, których nie określono elementu docelowego. Na przykład ograniczeń dla zestawu poziomu naruszeń są przechowywane w tym pliku. Ponadto niektórych ograniczeń ASP.NET są przechowywane w tego pliku, ponieważ ustawienia na poziomie projektu nie są dostępne dla kod związany z formularzem. Globalne pomijanie jest tworzone i dodawane do projektu po raz pierwszy wybierzesz **w pliku pominięć projektu** opcji **Pomijaj komunikaty** polecenia w oknie Lista błędów. Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

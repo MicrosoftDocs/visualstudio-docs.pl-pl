@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy przypadków użycia UML: Odwołanie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Diagramy przypadków użycia UML: Dokumentacja | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.usecasediagram.toolbox
 - vs.teamarch.usecasediagram.diagram
@@ -21,15 +18,15 @@ ms.assetid: aa15772b-eb67-4366-b145-b559112817df
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64eece28fc46fce799eff01e7ed1e7302e939dbc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777454"
 ---
-# <a name="uml-use-case-diagrams-reference"></a>Diagramy przypadków użycia UML: Odwołanie
+# <a name="uml-use-case-diagrams-reference"></a>Diagramy przypadków użycia UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio *diagram przypadków użycia* znajduje się podsumowanie kto korzysta z aplikacji lub systemu i jak mogą one korzystają z nich. Aby utworzyć diagram przypadków użycia UML, na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
@@ -39,7 +36,7 @@ W programie Visual Studio *diagram przypadków użycia* znajduje się podsumowan
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  W tym temacie opisano elementy, które są dostępne w diagramy przypadków użycia. Aby uzyskać więcej informacji na temat narysować diagramy przypadków użycia, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md). Aby uzyskać więcej informacji o sposobie tworzenia i narysować diagramy modelowania, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+>  W tym temacie opisano elementy, które są dostępne w diagramy przypadków użycia. Aby uzyskać więcej informacji na temat narysować diagramy przypadków użycia, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md). Aby uzyskać więcej informacji o sposobie tworzenia i narysować diagramy modelowania, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Diagramy przypadków użycia odczytu  
  W tabelach w poniższych sekcjach opisano elementy, które są dostępne na diagramie przypadku użycia wraz z ich właściwości głównego. Aby uzyskać pełną listę właściwości, zobacz [właściwości elementów na UML, diagramy przypadków użycia](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  
@@ -68,12 +65,9 @@ W programie Visual Studio *diagram przypadków użycia* znajduje się podsumowan
 |11 (niewyświetlany)|**Pakiety**|Przypadki użycia, aktorów i podsystemów mogą być zawarte w ramach pakietów. Kształty pakietu nie są wyświetlane na diagramie, ale możesz ustawić **LinkedPackage** właściwości diagramu. Elementy, które utworzysz w diagramie są umieszczane w pakiecie. Aby uzyskać więcej informacji, zobacz [Definiowanie pakietów i przestrzeni nazw](../modeling/define-packages-and-namespaces.md).|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)

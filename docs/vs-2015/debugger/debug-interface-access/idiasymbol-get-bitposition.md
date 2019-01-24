@@ -1,14 +1,9 @@
 ---
 title: Idiasymbol::get_bitposition — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: b0059407-8655-497b-81ca-025595989371
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 04e964fb4f85671795578f86fb670f0abb1d618c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d26b9b5053d27ad15d0067068d0cb6f4532a7208
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777578"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,8 +51,5 @@ HRESULT get_bitPosition ( 
 |Wersja:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)
-
-
-

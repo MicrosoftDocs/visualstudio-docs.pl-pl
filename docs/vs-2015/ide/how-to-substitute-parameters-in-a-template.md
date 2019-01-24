@@ -1,14 +1,9 @@
 ---
-title: 'Instrukcje: zastępowanie parametrów w szablonie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zastępowanie parametrów w szablonie | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters, substituting
 - Visual Studio templates, using parameters
@@ -16,15 +11,15 @@ ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab1d1fd7cd08813dadefbcbec27dbd84bd7b66b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780294"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Porady: parametry zastępcze w szablonie
+# <a name="how-to-substitute-parameters-in-a-template"></a>Instrukcje: Zastępowanie parametrów w szablonie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można zastąpić parametry szablonu, takich jak nazwy klasy, a przestrzenie nazw, gdy plik na podstawie szablonu zostanie utworzona. Aby uzyskać pełną listę parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  
@@ -54,8 +49,5 @@ Można zastąpić parametry szablonu, takich jak nazwy klasy, a przestrzenie naz
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Parametry szablonu](../ide/template-parameters.md)   
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [ProjectItem, element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-
-
-

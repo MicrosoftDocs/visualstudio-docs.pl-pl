@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Określanie zdarzeń kompilacji (Visual Basic) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie zdarzeń kompilacji (Visual Basic) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -19,15 +14,15 @@ ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f80067224be1cc5dfa72b23dbfb7414b023f793a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779200"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Porady: określanie zdarzeń kompilacji (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skryptów, makr lub innych działań jako część procesu kompilacji. Zdarzenia prekompilacyjnego występują przed kompilacji; zdarzenia postkompilacyjnego występują po kompilacji.  
@@ -170,11 +165,8 @@ Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skr
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)   
  [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — zdarzenie prekompilacyjne](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [Instrukcje: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)
-
-
-

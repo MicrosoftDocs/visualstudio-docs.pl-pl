@@ -1,29 +1,24 @@
 ---
 title: 'Generowanie nowego projektu: Za kulisami, część jednego | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777633"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: za kulisami, część pierwsza
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: Kulisami część pierwsza
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Nigdy nie myśl o tym, jak utworzyć swój własny typ projektu? Zastanawiasz się, co rzeczywiście się dzieje po utworzeniu nowego projektu? Teraz wykonać podglądu pod maską i zobacz, co naprawdę dzieje.  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Jeśli występuje ten podklucz Pozycja węzła głównego jest kontrolowana przez okno dialogowe Ustawienia dewelopera. Na przykład  
   
- REG_SZ DeveloperActivity VC #  
+ DeveloperActivity REG_SZ VC#  
   
  Wskazuje, że Visual C# będą węzeł główny Jeśli ustawiono program Visual Studio na [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] rozwoju. W przeciwnym razie będzie elementem podrzędnym **inne języki**.  
   
@@ -117,7 +112,7 @@ devenv /installvstemplates
   
  Odpowiedni folder ProjectTemplates wygląda następująco:  
   
- ![Szablony projektów](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
+ ![Project Templates](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
   
  Gdy **nowy projekt** zostanie otwarte okno dialogowe [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] przechodzi przez ProjectTemplates folder i zostaje odtworzony strukturę w **typów projektów** drzewa z niektórych zmian:  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   Można zmienić kolejność sortowania.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Znajdowanie węzeł główny dla typu projektu  
- Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, otworzy wszystkie pliki zip i wyodrębnia pliki vstemplate. Plik .vstemplate używa XML do opisu szablonu aplikacji. Aby uzyskać więcej informacji, zobacz [Generowanie nowego projektu: pod maską, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, otworzy wszystkie pliki zip i wyodrębnia pliki vstemplate. Plik .vstemplate używa XML do opisu szablonu aplikacji. Aby uzyskać więcej informacji, zobacz [Generowanie nowego projektu: Za kulisami, część dwóch](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > tag Określa typ projektu dla aplikacji. Na przykład plik \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip zawiera plik EmptyProject.vstemplate, który zawiera ten tag:  
   
@@ -215,10 +210,9 @@ devenv /installvstemplates
   
 10. Otwórz **nowy projekt** okna dialogowego pole, a następnie rozwiń węzeł **Visual C#** węzeł projektu.  
   
-    ![Obiekt MyProjectNode](../../extensibility/internals/media/myprojectnode.png "Obiekt MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
     **Obiekt MyProjectNode** jest wyświetlany jako węzeł podrzędny programu Visual C# tuż pod węzeł Windows.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Generowanie nowego projektu: za kulisami, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Generowanie nowego projektu: Kulisami część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

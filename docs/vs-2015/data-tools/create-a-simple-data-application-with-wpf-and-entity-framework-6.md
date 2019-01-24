@@ -1,23 +1,20 @@
 ---
 title: Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0237555a3e1aceb6a444300c5470f1c83a52d94
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922201"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774469"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +27,9 @@ To walkthough pokazuje, jak utworzyć aplikację podstawowe "formularzy nad dany
 ## <a name="install-and-connect-to-northwind"></a>Instalacja i nawiązywanie Northwind  
  W tym przykładzie użyto programu SQL Server Express LocalDB i przykładowej bazy danych Northwind. Powinien działać z innymi produktami do bazy danych SQL równie dobrze w przypadku dostawcy danych ADO.NET dla danego produktu obsługuje platformy Entity Framework.  
   
-1.  Jeśli nie jest jeszcze zainstalować program SQL Server 2014 LocalDB Express 32-bitowe z [stronę pobierania wersji programu SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Jeśli nie jest jeszcze zainstalować program SQL Server 2014 LocalDB Express 32-bitowe z [stronę pobierania wersji programu SQL Server](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
   
-2.  Instalowanie przykładowej bazy danych Northwind, wykonując instrukcje podane w tym miejscu: [Instalowanie programu SQL Server przykładowych baz danych](../data-tools/install-sql-server-sample-databases.md).  
+2.  Instalowanie przykładowej bazy danych Northwind, zgodnie z instrukcjami w tym miejscu: [Instalowanie programu SQL Server przykładowych baz danych](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Dodaj nowe połączenia](../data-tools/add-new-connections.md) dla Northwind.  
   
@@ -393,7 +390,7 @@ To walkthough pokazuje, jak utworzyć aplikację podstawowe "formularzy nad dany
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Dodawanie przycisków, aby przejść, dodawanie, aktualizowanie i usuwanie  
  W aplikacjach Windows Forms możesz uzyskać obiekt BindingNavigator za pomocą przycisków przechodzenia między wierszy w bazie danych i wykonywania podstawowych operacji CRUD. WPF nie zapewnia BindingNavigator, ale są one łatwe się. Możemy to zrobić za pomocą przycisków w poziomie StackPanel w dolnym wierszu siatki strony i przyciski będą powiązane z poleceniami, które są powiązane z metody w kodzie.  
   
- Istnieją fours części logiki polecenie: [1] poleceń, (2 powiązania, (3 przycisków i (4 programy obsługi poleceń w związanym z kodem.  
+ Istnieją fours części logiki polecenia: (1) poleceń, (2 powiązania, (3 przycisków i (4 programy obsługi poleceń w związanym z kodem.  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Dodawanie poleceń, powiązania i przycisków w XAML  
   
@@ -709,4 +706,3 @@ To walkthough pokazuje, jak utworzyć aplikację podstawowe "formularzy nad dany
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia Visual Studio data tools dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [dokumentacja programu Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)
-

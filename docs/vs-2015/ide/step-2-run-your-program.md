@@ -1,32 +1,27 @@
 ---
-title: 'Krok 2: Uruchom Program | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 2. Uruchom Program | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 689d577f0d8ac626094391be0f3767f441854093
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778568"
 ---
-# <a name="step-2-run-your-program"></a>Krok 2. Uruchomienie programu
+# <a name="step-2-run-your-program"></a>Krok 2. Uruchamianie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, który uruchamia. Większość nie robi jeszcze — po prostu wyświetla puste okno, które pokazuje **Form1** na pasku tytułu. Ale działał, zgodnie z którą chcesz dowiedzieć się.  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-run-your-program"></a>Aby uruchomić program  
   
@@ -64,9 +59,6 @@ Pasek narzędzi debugowania
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 3: właściwości zestawu formularza](../ide/step-3-set-your-form-properties.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Utwórz projekt aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).

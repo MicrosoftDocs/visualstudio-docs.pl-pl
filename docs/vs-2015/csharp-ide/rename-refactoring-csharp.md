@@ -1,14 +1,9 @@
 ---
 title: Refaktoryzacja zmiany nazwy (C#) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783291"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoryzacja zmiany nazwy (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274966"
 |Widok klas|Po wybraniu identyfikatora w widoku klas, Refaktoryzacja zmiany nazwy jest dostępne z menu skrótów i **Refaktoryzuj** menu.|  
 |Przeglądarka obiektów|Po wybraniu identyfikatora w przeglądarce obiektów, Refaktoryzacja zmiany nazwy jest dostępna tylko z **Refaktoryzuj** menu.|  
 |Siatki właściwości projektanta Windows Forms|W **siatki właściwości** programu Windows Forms Designer, zmiana nazwy kontrolki zostanie zainicjowana operacja zmiany nazwy dla tej kontrolki. **Zmień nazwę** nie pojawi się okno dialogowe.|  
-|Eksplorator rozwiązań|W **Eksploratora rozwiązań**, **Zmień nazwę** polecenie jest dostępne w menu skrótów. Jeśli wybranym pliku źródłowym zawiera klasy, których nazwa klasy jest taka sama jak nazwa pliku, możesz użyć tego polecenia, jednocześnie Zmień nazwę pliku źródłowego i wykonywanie, Refaktoryzacja zmiany nazwy.<br /><br /> Na przykład jeśli utworzysz domyślnej aplikacji Windows, a następnie zmień nazwę Form1.cs TestForm.cs, nazwa pliku źródłowego Form1.cs zmieni się na TestForm.cs i class Form1 i wszystkie odwołania do czy klasa zmieni nazwę na TestForm. **Uwaga:** **Cofnij** polecenie (CTRL + Z) tylko cofnąć Refaktoryzacja zmiany nazwy w kodzie i będzie nie zmieniać nazwy pliku z powrotem do oryginalnej nazwy. <br /><br /> Jeśli wybranym pliku źródłowym nie zawiera klasy, których nazwa jest taka sama jak nazwa pliku **Zmień nazwę** polecenia w pliku **Eksploratora rozwiązań** tylko zmienić nazwę pliku źródłowego i nie zostanie wykonany zmiany nazwy refaktoryzacji.|  
+|Eksplorator rozwiązań|W **Eksploratora rozwiązań**, **Zmień nazwę** polecenie jest dostępne w menu skrótów. Jeśli wybranym pliku źródłowym zawiera klasy, których nazwa klasy jest taka sama jak nazwa pliku, możesz użyć tego polecenia, jednocześnie Zmień nazwę pliku źródłowego i wykonywanie, Refaktoryzacja zmiany nazwy.<br /><br /> Na przykład jeśli utworzysz domyślnej aplikacji Windows, a następnie zmień nazwę Form1.cs TestForm.cs, nazwa pliku źródłowego Form1.cs zmieni się na TestForm.cs i class Form1 i wszystkie odwołania do czy klasa zmieni nazwę na TestForm. **Uwaga:**  **Cofnij** polecenie (CTRL + Z) tylko cofnąć Refaktoryzacja zmiany nazwy w kodzie i będzie nie zmieniać nazwy pliku z powrotem do oryginalnej nazwy. <br /><br /> Jeśli wybranym pliku źródłowym nie zawiera klasy, których nazwa jest taka sama jak nazwa pliku **Zmień nazwę** polecenia w pliku **Eksploratora rozwiązań** tylko zmienić nazwę pliku źródłowego i nie zostanie wykonany zmiany nazwy refaktoryzacji.|  
   
 ## <a name="rename-operations"></a>Zmień nazwę działania  
  Podczas wykonywania **Zmień nazwę**, aparat refaktoryzacji wykonuje określonej operacji zmiany nazwy dla każdego symbolu kodu, zgodnie z opisem w poniższej tabeli.  
@@ -53,8 +48,8 @@ ms.locfileid: "49274966"
 |-----------------|----------------------|  
 |Pole|Zmienia deklaracji i użycia pola na nową nazwę.|  
 |Zmienna lokalna|Zmienia deklaracji i użycia zmiennej na nową nazwę.|  
-|Metoda|Zmienia nazwę metody i wszystkie odwołania do tej metody na nową nazwę. **Uwaga:** po zmianie nazwy metody rozszerzenia operacji zmiany nazwy propaguje do wszystkich wystąpień metody, które znajdują się w zakresie, niezależnie od tego, czy metoda rozszerzenia jest używany jako metodę statyczną lub metodą wystąpienia. Aby uzyskać więcej informacji, zobacz [metody rozszerzenia](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Przestrzeń nazw|Zmienia nazwę przestrzeni nazw na nową nazwę w deklaracji, wszystkie `using` instrukcji i w pełni kwalifikowanych nazw. **Uwaga:** przy zmianie nazwy obszaru nazw, a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualizuje również **domyślne Namespace** właściwość **aplikacji** stronie **projektanta projektu**. Ta właściwość nie może być resetowany, wybierając **Cofnij** z **Edytuj** menu. Aby zresetować **domyślne Namespace** wartości właściwości, należy zmodyfikować właściwość w **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [strony aplikacji](../ide/reference/application-page-project-designer-csharp.md).|  
+|Metoda|Zmienia nazwę metody i wszystkie odwołania do tej metody na nową nazwę. **Uwaga:**  Po zmianie nazwy metody rozszerzenia operacji zmiany nazwy propaguje do wszystkich wystąpień metody, które znajdują się w zakresie, niezależnie od tego, czy metoda rozszerzenia jest używany jako metodę statyczną lub metodą wystąpienia. Aby uzyskać więcej informacji, zobacz [metody rozszerzenia](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Przestrzeń nazw|Zmienia nazwę przestrzeni nazw na nową nazwę w deklaracji, wszystkie `using` instrukcji i w pełni kwalifikowanych nazw. **Uwaga:**  Przy zmianie nazwy obszaru nazw, a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualizuje również **domyślne Namespace** właściwość **aplikacji** strony **projektanta projektu**. Ta właściwość nie może być resetowany, wybierając **Cofnij** z **Edytuj** menu. Aby zresetować **domyślne Namespace** wartości właściwości, należy zmodyfikować właściwość w **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [strony aplikacji](../ide/reference/application-page-project-designer-csharp.md).|  
 |Właściwość|Zmienia deklaracji i użycia właściwości na nową nazwę.|  
 |Typ|Zmienia wszystkie deklaracje i wszelkie użycia tego typu na nową nazwę, w tym konstruktory i destruktory. Dla typów częściowych operacji zmiany nazwy będzie propagowany do wszystkich części.|  
   

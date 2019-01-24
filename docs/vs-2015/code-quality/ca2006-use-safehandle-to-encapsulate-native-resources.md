@@ -1,13 +1,9 @@
 ---
 title: 'CA2006: Używaj klasy SafeHandle w celu hermetyzacji zasobów natywnych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -19,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8c19d7cabc7efd4ade9a94144ec44a6a168369e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcf385263eba5a6012097f43b49e7a75166bad42
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934367"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778369"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Używaj klasy SafeHandle w celu hermetyzacji zasobów natywnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

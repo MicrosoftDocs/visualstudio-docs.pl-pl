@@ -1,14 +1,9 @@
 ---
 title: Gdy Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#When
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fbbd0c6f697363ea4fab4b927ac36371b6f70fea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 93fd259e00d7a8f849b97cb97c3f950cd95f57ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761545"
 ---
 # <a name="when-element-msbuild"></a>When — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +33,12 @@ ms.locfileid: "49277173"
 Określa możliwe blok kodu dla `Choose` element, aby wybrać.  
   
  \<Project>  
- \<Wybierz >  
+ \<Choose>  
  \<Gdy >  
- \<Wybierz >  
+ \<Choose>  
  ...  
  \<W przeciwnym razie >  
- \<Wybierz >  
+ \<Choose>  
  ...  
   
 ## <a name="syntax"></a>Składnia  
@@ -69,7 +64,7 @@ Określa możliwe blok kodu dla `Choose` element, aby wybrać.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `When` elementu.|  
+|[Choose](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `When` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Może wynosić zero lub więcej `ItemGroup` elementów w `When` elementu.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Może wynosić zero lub więcej `PropertyGroup` elementów w `When` elementu.|  
   
@@ -135,6 +130,3 @@ Określa możliwe blok kodu dla `Choose` element, aby wybrać.
 ## <a name="see-also"></a>Zobacz też  
  [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

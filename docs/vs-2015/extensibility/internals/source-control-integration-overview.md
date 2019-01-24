@@ -1,26 +1,21 @@
 ---
 title: Omówienie integracji kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808d7538e8b30e346464cdbeff3b80ae4d387612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794539"
 ---
 # <a name="source-control-integration-overview"></a>Omówienie integracji kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visua
   
 1. Tworzenie biblioteki DLL, która implementuje funkcje wymienione w [wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md).  
   
-2. Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednich (opisanego w [porady: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednich (opisanego w [jak: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Utwórz obiekt pomocnika interfejsu użytkownika i wyświetlanie po wyświetleniu monitu przez pakiet karty kontroli źródła (składnik programu Visual Studio, który obsługuje funkcji kontroli źródła, za pomocą wtyczek kontroli kodu źródłowego)  
   
@@ -85,4 +80,3 @@ W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visua
  [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Tworzenie pakietu VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [Nowości dotyczące kontroli kodu źródłowego](../../extensibility/internals/what-s-new-in-source-control.md)
-

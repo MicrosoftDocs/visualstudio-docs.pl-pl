@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Dodawanie pliku konfiguracji aplikacji do projektu C# | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie pliku konfiguracji aplikacji do C# projektu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 9caf6bb0-c2fc-4ab6-ba69-bed3b880fbf8
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 43245704a2393b298f0f1d948d8a8829a4ef9bc4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204792"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775264"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Porady: Dodawanie pliku konfiguracji aplikacji do projektu C#
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Instrukcje: Dodawanie pliku konfiguracji aplikacji do C# projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Przez dodawanie pliku konfiguracji aplikacji (plik app.config) do projektu C#, można dostosować, jak środowisko uruchomieniowe języka wspólnego lokalizuje i ładuje pliki zestawu. Aby uzyskać więcej informacji o plikach konfiguracji aplikacji, zobacz [jak środowisko uruchomieniowe lokalizuje zestawy](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
@@ -51,5 +46,5 @@ Przez dodawanie pliku konfiguracji aplikacji (plik app.config) do projektu C#, m
  [Zarządzanie ustawieniami aplikacji (.NET)](../ide/managing-application-settings-dotnet.md)   
  [Schemat pliku konfiguracji](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
  [Konfigurowanie aplikacji](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Porady: Konfigurowanie aplikacji pod kątem określonej wersji oprogramowania .NET Framework](http://msdn.microsoft.com/en-us/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Instrukcje: Konfigurowanie aplikacji pod kątem określonej wersji oprogramowania .NET Framework](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

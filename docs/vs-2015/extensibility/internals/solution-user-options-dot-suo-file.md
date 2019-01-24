@@ -1,14 +1,9 @@
 ---
 title: Opcje użytkownika rozwiązania (. Plik suo) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
 - suo files, VSPackages
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f101f4efe0afe2132477b83731871872fdfc90c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8ebe65a3a2e070e661009ee1e53990e1ee34f5aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763714"
 ---
 # <a name="solution-user-options-suo-file"></a>Plik opcji użytkownika rozwiązania (Suo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ Plik opcji (suo) użytkownika rozwiązania zawiera opcje rozwiązania dla poszcz
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
  [Rozwiązania](../../extensibility/internals/solutions.md)
-

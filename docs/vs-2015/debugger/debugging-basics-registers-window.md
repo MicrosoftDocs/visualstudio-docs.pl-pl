@@ -1,14 +1,9 @@
 ---
 title: 'Podstawy debugowania: Okno rejestrów | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,20 +20,20 @@ ms.assetid: ab354047-053e-4f94-8ac1-26e761442b6f
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 27337c5bea0d0216b27411dc5e91d7ca4c778615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3fc2ea04c79868fa515680f5c94eb3f600ee4884
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722334"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788656"
 ---
-# <a name="debugging-basics-registers-window"></a>Podstawy debugowania: okno rejestrów
+# <a name="debugging-basics-registers-window"></a>Podstawy debugowania: Okno rejestrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Rejestruje** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła.  
   
- Rejestry są specjalne lokalizacje w ramach procesora (CPU), które są używane do przechowywania małych fragmentów danych, który procesor jest już aktywnie pracują nad. Kompilowanie lub interpretowanie kod źródłowy generuje instrukcje, które przenoszą dane z pamięci do rejestrów i z powrotem, zgodnie z potrzebami. Uzyskiwanie dostępu do danych w rejestrach jest bardzo szybkie uzyskiwanie dostępu do danych w pamięci, dzięki czemu kod, który umożliwia procesora do przechowywania danych w rejestrze, a następnie wielokrotnie do niego dostęp, zwykle działają szybciej niż kod, który wymaga procesora do stale ładowanie i zwalnianie rejestrów. Aby ułatwić kompilator, aby przechowywać dane w rejestrach i wykonywać inne optymalizacje, należy unikać używania zmiennych globalnych i zależą od zmiennych lokalnych, jak to możliwe. Kod napisany w ten sposób jest nazywany ma dobrą miejscowość odwołania. W przypadku niektórych języków, takich jak C/C++ programisty należy zadeklarować zmienną rejestru, który informuje kompilator, aby spróbować doskonale zapewnienie zmiennej w rejestrze przez cały czas. Aby uzyskać więcej informacji, zobacz [zarejestrować — słowo kluczowe](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
+ Rejestry są specjalne lokalizacje w ramach procesora (CPU), które są używane do przechowywania małych fragmentów danych, który procesor jest już aktywnie pracują nad. Kompilowanie lub interpretowanie kod źródłowy generuje instrukcje, które przenoszą dane z pamięci do rejestrów i z powrotem, zgodnie z potrzebami. Uzyskiwanie dostępu do danych w rejestrach jest bardzo szybkie uzyskiwanie dostępu do danych w pamięci, dzięki czemu kod, który umożliwia procesora do przechowywania danych w rejestrze, a następnie wielokrotnie do niego dostęp, zwykle działają szybciej niż kod, który wymaga procesora do stale ładowanie i zwalnianie rejestrów. Aby ułatwić kompilator, aby przechowywać dane w rejestrach i wykonywać inne optymalizacje, należy unikać używania zmiennych globalnych i zależą od zmiennych lokalnych, jak to możliwe. Kod napisany w ten sposób jest nazywany ma dobrą miejscowość odwołania. W przypadku niektórych języków, takich jak C/C++ programisty należy zadeklarować zmienną rejestru, który informuje kompilator, aby spróbować doskonale zapewnienie zmiennej w rejestrze przez cały czas. Aby uzyskać więcej informacji, zobacz [zarejestrować — słowo kluczowe](http://msdn.microsoft.com/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
   
  Rejestry można podzielić na dwa typy: ogólnego przeznaczenia i specjalnego przeznaczenia. Ogólnego przeznaczenia rejestrów przechowywania danych ogólne operacje, takie jak dodanie dwóch liczb lub odwołuje się do elementu w tablicy. Rejestruje specjalny ma określonych celów oraz specjalne znaczenie. Dobrym przykładem jest rejestrze wskaźnik stosu, który procesor jest używane do śledzenia stosu wywołań programu. Programistą będzie prawdopodobnie nie manipulować wskaźnik stosu bezpośrednio. Jest jednak niezbędne do prawidłowego funkcjonowania program ponieważ bez wskaźnik stosu procesora nie wiadomo, gdzie można powrócić do na końcu wywołania funkcji.  
   
@@ -64,10 +59,5 @@ EAX = 003110D8
  Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Jeśli możesz kliknąć prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające listę grup, które można wyświetlić lub ukryć zgodnie z potrzebami.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)   
+ [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
-
-
-
-
-

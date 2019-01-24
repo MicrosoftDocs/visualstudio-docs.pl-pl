@@ -1,25 +1,20 @@
 ---
 title: Powiązanie danych WPF za pomocą LINQ to XML — Przegląd | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774181"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Powiązanie danych WPF za pomocą LINQ to XML — Przegląd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ W tym temacie przedstawiono funkcje powiązania danych dynamicznych w <xref:Syst
   Aby uzyskać więcej informacji o wiązaniu danych na platformie WPF, zobacz [powiązanie danych (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Właściwości dynamiczne w składniku LINQ to XML klasy  
- Większość klasy programu LINQ to XML nie kwalifikują się jako prawidłowego źródła danych dynamicznych WPF: niektóre z najbardziej przydatnych informacji jest dostępna wyłącznie za pośrednictwem metody (a nie właściwości), a właściwości w ramach tych zajęć, nie należy implementować powiadomienia o zmianach. Aby zapewnić obsługę powiązanie danych WPF, LINQ to XML udostępnia zestaw *właściwości dynamicznych*.  
+ Większość klasy programu LINQ to XML nie kwalifikują się jako prawidłowego źródła danych dynamicznych WPF: Niektóre z najbardziej przydatnych informacji jest dostępna wyłącznie za pośrednictwem metody (a nie właściwości), a właściwości w ramach tych zajęć, nie należy implementować powiadomienia o zmianach. Aby zapewnić obsługę powiązanie danych WPF, LINQ to XML udostępnia zestaw *właściwości dynamicznych*.  
   
  Właściwości dynamiczne są specjalne właściwości czasu wykonywania, które duplikują funkcjonalność istniejących metod i właściwości w <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement> klasy. Zostały one dodane do tych klas wyłącznie w celu umożliwienia im na działanie jako źródła danych dynamicznych dla WPF. Aby spełnić te wymagania, te właściwości dynamicznych zaimplementować powiadomienia o zmianach. Szczegółową dokumentację dla tych właściwości dynamicznych znajduje się w następnej sekcji [XML właściwości dynamiczne LINQ to](../designers/linq-to-xml-dynamic-properties.md).  
   
@@ -99,6 +94,3 @@ W tym temacie przedstawiono funkcje powiązania danych dynamicznych w <xref:Syst
  [XAML w WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
  [Powiązanie danych (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [Za pomocą znaczników przepływu pracy](http://go.microsoft.com/fwlink/?LinkId=98685)
-
-
-

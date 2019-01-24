@@ -1,27 +1,22 @@
 ---
 title: Narzędzie konfiguracji wyświetlania okna | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736957"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804840"
 ---
 # <a name="tool-window-display-configuration"></a>Konfiguracja ekranu okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +41,8 @@ HKEY_LOCAL_MACHINE\
 |----------|----------|----------|-----------------|  
 |Nazwa|REG_SZ|"Krótką nazwę miejsce"|Krótka nazwa opisująca okna narzędzia. Używany tylko w przypadku odwołania w rejestrze.|  
 |float|REG_SZ|"X1, Y1, X2, Y2"|Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędnych w lewym górnym rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu.|  
-|Styl|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Z kartami"<br /><br /> "AlwaysFloat"|Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej.|  
-|Okno|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID okna, do którego okna narzędzi mogą być połączone lub z zakładkami. Identyfikator GUID może należeć do jednej z własnego systemu windows, czy systemu windows w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
+|Styl|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Tabbed"<br /><br /> "AlwaysFloat"|Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej.|  
+|Okno|REG_SZ|*\<GUID>*|Identyfikator GUID okna, do którego okna narzędzi mogą być połączone lub z zakładkami. Identyfikator GUID może należeć do jednej z własnego systemu windows, czy systemu windows w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Orientacja|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Dolnej"|Zobacz sekcję uwagi poniżej.|  
 |DontForceCreate|REG_DWORD|0 lub 1|Gdy ten wpis jest obecny, a jego wartość nie wynosi zero, okno jest załadowany, ale nie natychmiast wyświetlone.|  
   
@@ -94,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
 |(Domyślnie)|REG_SZ|Brak|Pozostaw puste.|  
-|*\<IDENTYFIKATOR GUID &GT;*|REG_DWORD lub REG_SZ|0 lub opisowy ciąg.|Opcjonalna. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Zazwyczaj wartość `reg_dword` równa 0.|  
+|*\<GUID>*|REG_DWORD lub REG_SZ|0 lub opisowy ciąg.|Opcjonalna. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Zazwyczaj wartość `reg_dword` równa 0.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -114,5 +109,4 @@ HKEY_LOCAL_MACHINE\
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Podstawowe informacje dotyczące pakietu VSPackage](../misc/vspackage-essentials.md)
-
+ [VSPackage Essentials](../misc/vspackage-essentials.md)

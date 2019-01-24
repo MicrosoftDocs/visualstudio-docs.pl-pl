@@ -1,29 +1,24 @@
 ---
-title: 'Porady: tworzenie kontrolki przybornika, który używa formularzy Windows | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie kontrolki przybornika, który używa formularzy Windows | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a303e18f573ab806687bf238fa5557ecd6e91fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263721"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787493"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Porady: tworzenie kontrolki przybornika korzystającej z Windows Forms
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms
 Szablon kontrolki formularzy Windows Forms przybornika, który znajduje się w [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie formantów Windows Forms, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom...  
   
 > [!NOTE]

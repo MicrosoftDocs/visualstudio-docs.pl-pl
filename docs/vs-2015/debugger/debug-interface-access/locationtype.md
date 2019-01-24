@@ -1,14 +1,9 @@
 ---
-title: Locationtype — | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: LocationType | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d3e1eedc-bfd3-4c91-881b-d69565138d0f
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a41eb64cc1a93f39a50187d54ecf556246f31913
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 28bcaa626797313f6ea68a17da33ef9ea192a856
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752852"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786117"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,9 +91,6 @@ enum LocationType { 
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol::get_locationtype —](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

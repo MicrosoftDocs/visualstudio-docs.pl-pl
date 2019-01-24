@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Konfigurowanie projektów pod kątem wielu platform docelowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -16,15 +11,15 @@ ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785829"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Porady: konfigurowanie projektów do wielu platform docelowych
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewnia sposób rozwiązania pod kątem kilku innej architektury procesora CPU lub platformami, jednocześnie. Właściwości, aby ustawić te są dostępne za pośrednictwem **programu Configuration Manager** okno dialogowe.  
@@ -69,9 +64,6 @@ ms.locfileid: "49921837"
    Można mieć platformę rozwiązanie na poziomie zestawu, na przykład [!INCLUDE[vcprx64](../includes/vcprx64-md.md)], i mieć żadnych projektów w ramach tego rozwiązania przeznaczone dla tej samej platformy. Istnieje również możliwość ma wiele projektów w rozwiązaniu, każdy przeznaczonych dla różnych platform. Zalecane jest, jeśli masz jedną z tych sytuacji, utworzenie nowej konfiguracji za pomocą opisową nazwę, aby uniknąć mylenia go.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)   
+ [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)   
  [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)   
  [Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-
-
-

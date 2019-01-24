@@ -1,14 +1,9 @@
 ---
 title: Strona zdarzenia kompilacji, Projektant projektu (C#) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
 helpviewer_keywords:
@@ -20,19 +15,19 @@ ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a73978bf78c26914e7ee6b21c27f1eb2e7682ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785787"
 ---
 # <a name="build-events-page-project-designer-c"></a>Strona Zdarzenia kompilacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-Użyj **zdarzenia kompilacji** strony **projektanta projektu** do określenia instrukcje dotyczące konfiguracji kompilacji. Można również określić warunki, w których są uruchamiane wszystkie zdarzenia mające miejsce po kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Specify Build Events (C#)](../../ide/how-to-specify-build-events-csharp.md)i [jak: Specify Build Events (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
+Użyj **zdarzenia kompilacji** strony **projektanta projektu** do określenia instrukcje dotyczące konfiguracji kompilacji. Można również określić warunki, w których są uruchamiane wszystkie zdarzenia mające miejsce po kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Określanie zdarzeń kompilacji (C#)](../../ide/how-to-specify-build-events-csharp.md)i [jak: Określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Konfiguracja**  
@@ -63,10 +58,7 @@ Użyj **zdarzenia kompilacji** strony **projektanta projektu** do określenia in
 |**Gdy kompilacja aktualizuje dane wyjściowe projektu**|Zdarzenie po kompilacji zostanie uruchomiona tylko w sytuacji, gdy plik wyjściowy kompilatora (.exe lub .dll) różni się od poprzedniego pliku danych wyjściowych kompilatora. W związku z tym zdarzenia postkompilacyjnego nie zostanie uruchomione, gdy projekt jest aktualny.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Porady: Określanie zdarzeń kompilacji (C#)](../../ide/how-to-specify-build-events-csharp.md)   
+ [Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Instrukcje: Określanie zdarzeń kompilacji (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)   
  [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)
-
-
-

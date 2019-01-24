@@ -1,14 +1,9 @@
 ---
 title: Obiekt VSTextBuffer | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextBuffer
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 987514f20746b8480391a35d7a9c9a9d3663cac2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 94e58b8af799dba44bd2563ee6c404c3cdcb3583
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763507"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer, obiekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +48,4 @@ Obiekt bufor tekstowy przedstawia strumień tekst Unicode, który jest zazwyczaj
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Edytuj dane](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
-
+ [Edytuj dane](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie wstawek kodu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie wstawek kodu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,15 +15,15 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790116"
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>Wskazówki: tworzenie wstawek kodu
+# <a name="walkthrough-creating-a-code-snippet"></a>Przewodnik: Tworzenie wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co należy zrobić, Utwórz plik XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. Możesz również dodać parametry odwołań i zastąpień w kodzie. Można dodać fragment kodu do instalacji programu Visual Studio za pomocą przycisku Importuj w Menedżerze fragmentów kodu (**narzędzia/Manager wstawek kodu**).  
@@ -268,6 +263,3 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
   
 ## <a name="see-also"></a>Zobacz też  
  [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Tworzenie komentarzy JSDoc dla funkcji IntelliSense języka JavaScript | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a0dadc81-3755-4a47-bcee-c1010819ff2a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758516"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Tworzenie komentarzy JSDoc na potrzeby funkcji IntelliSense języka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +29,12 @@ Funkcja IntelliSense w programie Visual Studio Wyświetla informacje, które mo�
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | @deprecated  |              @deprecated *Opis elementu*              |                                   Określa zaniechanej funkcji lub metody.                                   |
 | @description |             @description *Opis elementu*              |                              Określa opis funkcji lub metody.                               |
-|    @param    | @param {*typu*} *parameterName*<em>opis</em> | Określa informacje dla parametru w funkcji lub metody.<br /><br /> Obsługuje również TypeScript @paramTag. |
+|    @param    | @param {*type*} *parameterName*<em>description</em> | Określa informacje dla parametru w funkcji lub metody.<br /><br /> Obsługuje również TypeScript @paramTag. |
 |  @property   |          @property {*typu*} *propertyName*          |   Określa informacje, w tym opis, pola lub elementu członkowskiego, który jest zdefiniowany w obiekcie.    |
 |   @returns   |                  @returns {*typu*}                  |           Określa wartość zwracaną.<br /><br /> TypeScript, można użyć @returnType zamiast @returns.           |
 |   @summary   |               @summary *Opis elementu*                |                   Określa opis funkcji lub metody (taka sama jak @description).                   |
 |    @type     |                   @type {*typu*}                    |                                Określa typ stałą lub zmienną.                                |
-|   @typedef   |         @typedef {*typu*} *customTypeName*          |                                            Określa typ niestandardowy.                                            |
+|   @typedef   |         @typedef {*type*} *customTypeName*          |                                            Określa typ niestandardowy.                                            |
 
 ### <a name="examples"></a>Przykłady  
  Poniższy przykład pokazuje użycie @description, @param, i @return JSDoc tagów dla funkcji o nazwie `getArea`.  
@@ -92,6 +87,3 @@ const RED = 'FF0000';
 function old() {  
 }  
 ```
-
-
-

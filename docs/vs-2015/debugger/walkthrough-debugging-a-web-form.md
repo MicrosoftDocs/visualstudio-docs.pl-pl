@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Debugowanie formularza sieci Web | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Debugowanie formularzy sieci Web | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7024a9abc58117bf28ed78de107b1c17ddad601f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee796418658ec0825a76d60607b77813f84e4144
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747261"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777895"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>Wskazówki: debugowanie formularzy sieci Web
+# <a name="walkthrough-debugging-a-web-form"></a>Przewodnik: Debugowanie formularza internetowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacja internetowa, znany także jako formularz sieci Web. Pokazuje jak uruchomić i zatrzymać wykonywanie, ustawiać punkty przerwania i sprawdzić zmienne w **Obejrzyj** okna.  
@@ -43,7 +38,7 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
 > [!NOTE]
 >  Do przeprowadzenia tego instruktażu, musi mieć uprawnienia administratora na komputerze serwera. Domyślnie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu, aspnet_wp.exe lub w3wp.exe, działa jako [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Aby debugować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], musi mieć uprawnienia administratora na komputerze, gdzie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , uruchomi go. Aby uzyskać więcej informacji, zobacz [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
   
- Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-create-the-web-form"></a>Aby utworzyć formularz sieci Web  
   
@@ -75,7 +70,7 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
   
 11. Kliknij dwukrotnie formant przycisku porzucony.  
   
-     Spowoduje to przejście do strony kodowej: Default.aspx.cs dla języka C# lub Default.aspx.vb dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Kursor powinien być w funkcji `Button1_Click`.  
+     Spowoduje to przejście do strony kodowej: Default.aspx.cs dla C# lub Default.aspx.vb dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Kursor powinien być w funkcji `Button1_Click`.  
   
 12. W `Button1_Click` funkcji, Dodaj następujący kod:  
   
@@ -105,7 +100,7 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
@@ -175,6 +170,3 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)
-
-
-

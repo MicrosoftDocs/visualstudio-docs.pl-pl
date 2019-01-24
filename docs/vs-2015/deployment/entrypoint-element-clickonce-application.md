@@ -1,14 +1,9 @@
 ---
 title: '&lt;punkt wejścia&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -23,13 +18,13 @@ ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790965"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punkt wejścia&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,17 +65,17 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../i
  `entryPoint` zawiera następujące elementy.  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Wymagane. Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [ \<assemblyIdentity > Element](../deployment/assemblyidentity-element-clickonce-application.md).  
+ Wymagana. Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [ \<assemblyIdentity > Element](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  `processorArchitecture` Atrybutu tego elementu i `processorArchitecture` atrybutowi określonemu w `assemblyIdentity` innych miejscach w aplikacji manifestu musi być zgodny.  
   
 ## <a name="commandline"></a>Wiersz polecenia  
- Wymagane. Musi być obiektem podrzędnym obiektu `entryPoint` elementu. Go nie ma elementów podrzędnych i ma następujące atrybuty.  
+ Wymagana. Musi być obiektem podrzędnym obiektu `entryPoint` elementu. Go nie ma elementów podrzędnych i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`file`|Wymagane. Lokalnego odwołania do zestawu startowego dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Ta wartość nie może zawierać ukośnika (/) ani ukośnika odwrotnego (\\) separatorami ścieżki.|  
-|`parameters`|Wymagane. Opisuje akcję wykonywaną z punktem wejścia. Jedyna prawidłowa wartość to `run`; Jeśli zostanie podany ciąg pusty, `run` zakłada, że.|  
+|`file`|Wymagana. Lokalnego odwołania do zestawu startowego dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Ta wartość nie może zawierać ukośnika (/) ani ukośnika odwrotnego (\\) separatorami ścieżki.|  
+|`parameters`|Wymagana. Opisuje akcję wykonywaną z punktem wejścia. Jedyna prawidłowa wartość to `run`; Jeśli zostanie podany ciąg pusty, `run` zakłada, że.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
  Opcjonalna. Jeśli włączone, określa, że to wdrożenie zawiera składnik, który zostanie wdrożony wewnątrz niestandardowego hosta, a nie jest autonomiczną aplikacją.  
@@ -96,12 +91,12 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../i
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
   
- Aplikacja, która zawiera customUX element należy podać niestandardowego Instalatora, które używa <xref:System.Deployment.Application.InPlaceHostingManager> klasy w celu wykonania instalacji operacji. Nie można zainstalować aplikacji przy użyciu tego elementu przez dwukrotne kliknięcie jej manifestu lub setup.exe wymagań wstępnych programu inicjującego. Można utworzyć niestandardowego Instalatora, elementy menu Start, skróty i wpisy apletu Dodaj lub usuń programy. Jeśli niestandardowego Instalatora nie powoduje utworzenia wpisu Dodaj lub usuń programy, identyfikator subskrypcji, dostarczone przez musi zostać zapisana <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> właściwość i umożliwiają użytkownikowi Odinstaluj tę aplikację później, przez wywołanie metody <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> metody. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
+ Aplikacja, która zawiera customUX element należy podać niestandardowego Instalatora, które używa <xref:System.Deployment.Application.InPlaceHostingManager> klasy w celu wykonania instalacji operacji. Nie można zainstalować aplikacji przy użyciu tego elementu przez dwukrotne kliknięcie jej manifestu lub setup.exe wymagań wstępnych programu inicjującego. Można utworzyć niestandardowego Instalatora, elementy menu Start, skróty i wpisy apletu Dodaj lub usuń programy. Jeśli niestandardowego Instalatora nie powoduje utworzenia wpisu Dodaj lub usuń programy, identyfikator subskrypcji, dostarczone przez musi zostać zapisana <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> właściwość i umożliwiają użytkownikowi Odinstaluj tę aplikację później, przez wywołanie metody <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> metody. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
   
 ## <a name="remarks"></a>Uwagi  
  Ten element określa zestaw i punktu wejścia dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
   
- Nie można użyć `commandLine` do przekazania parametrów do aplikacji w czasie wykonywania. Dostępne parametry ciągu zapytania dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia z poziomu aplikacji <xref:System.AppDomain>. Aby uzyskać więcej informacji, zobacz [porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Nie można użyć `commandLine` do przekazania parametrów do aplikacji w czasie wykonywania. Dostępne parametry ciągu zapytania dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia z poziomu aplikacji <xref:System.AppDomain>. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie kodu pokazano `entryPoint` elementu w manifeście aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md) tematu.  
@@ -121,6 +116,3 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../i
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
-
-
-

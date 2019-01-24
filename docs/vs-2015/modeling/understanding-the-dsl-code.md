@@ -1,32 +1,29 @@
 ---
 title: Znajomość kodu DSL | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777455"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpienia elementu DSL w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano generowanego interfejsu API.  
   
-## <a name="the-example-solution-component-diagrams"></a>W rozwiązaniu przykładowym: diagramy składników  
+## <a name="the-example-solution-component-diagrams"></a>W rozwiązaniu przykładowym: Diagramy składników  
  Aby utworzyć rozwiązanie, który jest źródłem Większość przykładów w tym temacie, należy utworzyć DSL z **modeli składnika** szablonu rozwiązania. Jest to jeden z szablonów standardowych, które pojawia się podczas tworzenia nowego rozwiązania języka DSL.  
   
 > [!NOTE]
@@ -71,7 +68,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
   
  `ConnectionBuilders.cs`  
   
- Konstruktor połączeń to klasa, która umożliwia tworzenie relacji. Jest kod związany z narzędziem do połączenia. Ten plik zawiera parę klasy dla każdego z narzędzi połączenia. Ich nazwy są uzyskiwane z nazwy domeny narzędzie połączenia i relacji: *relacji*konstruktora, a *ConnectorTool*ConnectAction.  
+ Konstruktor połączeń to klasa, która umożliwia tworzenie relacji. Jest kod związany z narzędziem do połączenia. Ten plik zawiera parę klasy dla każdego z narzędzi połączenia. Ich nazwy są uzyskiwane z nazwy domeny narzędzie relacji i połączenia: *Relacja*konstruktora, a *ConnectorTool*ConnectAction.  
   
  (W tym przykładzie rozwiązania składnika nosi nazwę jednego z konstruktorów połączenia elementu ConnectionBuilder, to zbieżność, ponieważ relacja domeny nosi nazwę połączenie).  
   
@@ -138,7 +135,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
 > [!NOTE]
 >  Nie jest taka sama jak klasa główna modelu.  
   
- Kopiuj i Usuń zamknięcia definiują, co inne elementy powinny być włączone, gdy element zostanie skopiowany lub usunięty. To zachowanie można kontrolować przez ustawienie **propaguje kopiowania** i **propaguje usunąć** właściwości ról na każdej stronie każda relacja. Jeśli chcesz, aby wartości, które mają być określany dynamicznie, można napisać kod, aby przesłonić metody klasy zamknięcia. Aby uzyskać więcej informacji, zobacz [jak: programowego kopiowania i zachowanie wklejania — przekierowanie](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
+ Kopiuj i Usuń zamknięcia definiują, co inne elementy powinny być włączone, gdy element zostanie skopiowany lub usunięty. To zachowanie można kontrolować przez ustawienie **propaguje kopiowania** i **propaguje usunąć** właściwości ról na każdej stronie każda relacja. Jeśli chcesz, aby wartości, które mają być określany dynamicznie, można napisać kod, aby przesłonić metody klasy zamknięcia. Aby uzyskać więcej informacji, zobacz [jak: Program kopiowania i wklejania zachowanie — przekierowanie](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
  `DomainModelResx.resx`  
   
@@ -356,6 +353,3 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  [Objaśnienie modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)   
  [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

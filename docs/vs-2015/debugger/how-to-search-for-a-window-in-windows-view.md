@@ -1,27 +1,22 @@
 ---
 title: 'Instrukcje: Wyszukiwanie okna w widoku Windows | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60eb467a24c85d176dae7727a476cc45dac6c876
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51782976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797569"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Instrukcje: Wyszukiwanie okna w widoku okien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Możesz wyszukać określonego okna w widoku Windows za pomocą jego uchwytu, po
 5.  Kliknij przycisk **OK**.  
   
      Jeśli zgodne okno zostanie znaleziony, jest wyróżniona na [widoku Windows](../debugger/windows-view.md) okna.
-
-
-

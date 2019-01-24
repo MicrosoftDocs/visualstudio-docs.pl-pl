@@ -1,27 +1,22 @@
 ---
-title: 'Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1a58e305b1214a6b8d710ef08126d241f381a051
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cc9ba407e91ddc8125d2836c8e2bb4329d5ad91f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798557"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Instrukcje: Uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji, musisz najpierw pobrać pakiety instalacyjne tych wstępnie wymaganych składników na komputerze dewelopera. Po opublikowaniu aplikacji i wybraniu **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co aplikację**, wystąpi błąd, jeśli pakiety instalacyjne nie są w **pakietów** folderu.  
@@ -58,7 +53,4 @@ Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą [!IN
      Teraz można dystrybuować pakiet instalacyjny z aplikacją.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-
-
-
+ [Instrukcje: Instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -1,14 +1,9 @@
 ---
 title: Rozwiązywanie problemów z przerwanymi odwołaniami | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual C# projects, references
 - Visual Basic projects, references
@@ -19,13 +14,13 @@ ms.assetid: 00a9ade9-652e-40de-8ada-85f63cd183ee
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780530"
 ---
 # <a name="troubleshooting-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd w
   Dostępne są następujące środki zaradcze tych problemów.  
   
 > [!NOTE]
->  Pliki w zestawach są przywoływane przy użyciu ścieżek bezwzględnych w pliku projektu. Dlatego jest możliwe dla użytkowników, którzy pracują w środowisku projektowanie brakuje przywoływanego zestawu w środowisku lokalnym. Aby uniknąć tych błędów, lepiej jest w takich przypadkach można dodać odwołania projektu do projektu. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) i [programowanie za pomocą zestawów](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+>  Pliki w zestawach są przywoływane przy użyciu ścieżek bezwzględnych w pliku projektu. Dlatego jest możliwe dla użytkowników, którzy pracują w środowisku projektowanie brakuje przywoływanego zestawu w środowisku lokalnym. Aby uniknąć tych błędów, lepiej jest w takich przypadkach można dodać odwołania projektu do projektu. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) i [programowanie za pomocą zestawów](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Ścieżka odwołania jest nieprawidłowy  
  Jeśli projekty są współdzielone na różnych komputerach, niektóre odwołania nie będzie można znaleźć gdy składnik znajduje się w innym katalogu na każdym komputerze. Odwołania są przechowywane w nazwie pliku składnika (na przykład MyComponent). Po dodaniu odwołania do projektu, lokalizacja folderu pliku składnika (na przykład C:\MyComponents\\) jest dołączany do **ReferencePath** właściwość projektu.  
@@ -78,7 +73,7 @@ Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd w
   
 -   Jeśli istnieje odwołanie w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji.  
   
--   Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+-   Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Nazwa pliku została zmieniona  
  Istnieje możliwość, że zmieniono nazwę pliku, którego dotyczy odwołanie.  
@@ -87,18 +82,15 @@ Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd w
   
 -   Usuń odwołanie, a następnie dodaj odwołanie do pliku o zmienionej nazwie.  
   
--   Odwołanie istnieje w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+-   Odwołanie istnieje w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Połączenie sieciowe lub uwierzytelnianie nie powiodło się  
- Może istnieć wiele możliwe przyczyny niedostępności plików: połączenie sieciowe nie powiodło się lub niepowodzenie uwierzytelniania, na przykład. Przyczyny dotyczyły, może być unikatowy oznacza, że odzyskiwania; na przykład może być konieczne skontaktuj się z administratorem lokalnym w celu dostępu do wymaganych zasobów. Jednak usunięcie odwołania i naprawianie kodu, których jej jest zawsze opcję. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+ Może istnieć wiele możliwe przyczyny niedostępności plików: połączenie sieciowe nie powiodło się lub niepowodzenie uwierzytelniania, na przykład. Przyczyny dotyczyły, może być unikatowy oznacza, że odzyskiwania; na przykład może być konieczne skontaktuj się z administratorem lokalnym w celu dostępu do wymaganych zasobów. Jednak usunięcie odwołania i naprawianie kodu, których jej jest zawsze opcję. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="com-component-is-not-installed-on-computer"></a>Składnik COM nie jest zainstalowany na komputerze  
  Jeśli użytkownik doda odwołanie do składnika modelu COM, a drugi użytkownik próbuje uruchomić kod na komputerze, na którym nie zainstalowano tego składnika, drugi użytkownik zostanie wyświetlony błąd, czy odwołanie jest uszkodzony. Instalowanie składnika na drugim komputerze spowoduje Popraw błąd. Aby uzyskać więcej informacji o sposobie używania odwołania do składników modelu COM w projektach, zobacz [współdziałanie COM w aplikacjach .NET Framework](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie do projektanta projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Strona odwołań, Projektant projektu (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
- [NIB porady: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodawanie odwołania](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
-
-
-
+ [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodawanie odwołania](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

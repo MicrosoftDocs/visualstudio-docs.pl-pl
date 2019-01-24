@@ -1,26 +1,21 @@
 ---
 title: Wewnątrz edytora | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ddca5ab4b0d7dc6aa43f3db8c641ad5fc9e583b2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776434"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,4 +290,3 @@ P: ABCDEvwxyz
 ## <a name="see-also"></a>Zobacz też  
  [Usługi językowej i edytora punkty rozszerzenia](../extensibility/language-service-and-editor-extension-points.md)   
  [Importy edytora](../extensibility/editor-imports.md)
-

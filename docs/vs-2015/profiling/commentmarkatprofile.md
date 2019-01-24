@@ -1,14 +1,9 @@
 ---
 title: CommentMarkAtProfile | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - CommentMarkAtProfile
 - CommentMarkAtProfileA
@@ -16,13 +11,13 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b65b7067dee996f7b50cb98345c2777fc6224df3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 20211a2526062a67a3e23896512f072edc6ae44d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791429"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +72,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 |||  
 |-|-|  
-|**Nagłówek**|Obejmują VSPerf.h|  
-|**Biblioteka**|Użyj VSPerf.lib|  
+|**Nagłówek**|Include VSPerf.h|  
+|**Biblioteka**|Use VSPerf.lib|  
 |**Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Przykład  
@@ -124,6 +119,3 @@ void ExerciseCommentMarkAtProfile(void)
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

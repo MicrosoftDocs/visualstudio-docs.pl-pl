@@ -1,14 +1,9 @@
 ---
 title: Ustawienia projektu debugowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776589"
 ---
 # <a name="debugger-project-settings"></a>Ustawienia projektu debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ Niektóre ustawienia projektu wpływa również na debugowanie. Te ustawienia ok
  W tej sekcji opisano, jakie opcje są dostępne i jak je ustawić.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)  
+ [Instrukcje: Określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)  
  W tym artykule opisano ustawienia debugera w **opcje** okno dialogowe.  
   
- [Instrukcje: ustawienia konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Instrukcje: Ustawianie konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)  
  W tym artykule opisano **debugowania** i **wersji** ustawienia oraz sposób przełączać się między nimi.  
   
  [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -70,6 +65,3 @@ Niektóre ustawienia projektu wpływa również na debugowanie. Te ustawienia ok
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)
-
-
-

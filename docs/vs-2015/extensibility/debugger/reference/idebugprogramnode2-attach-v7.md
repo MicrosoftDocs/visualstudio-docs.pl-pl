@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramNode2::Attach_V7 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::Attach
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8cec22985451386b88662818a15f60a90e93e6ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c02973faf1d65ff8be79cd387666f35651db7bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788508"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ int Attach_V7 ( 
 > [!WARNING]
 >  Począwszy od programu [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`. Zobacz [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfejs dla alternatywne podejście, jeśli węzeł program musi wskazywać, nie można dołączyć do lub węzeł program po prostu ustawia program `GUID`. W przeciwnym razie zaimplementować [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.  
   
-## <a name="prior-to-visual-studio-2005"></a>Przed Visual Studio 2005  
+## <a name="prior-to-visual-studio-2005"></a>Prior to Visual Studio 2005  
  Ta metoda musi zaimplementować tylko wtedy, gdy DE działa w przestrzeni adresowej debugowanego programu. W przeciwnym razie ta metoda powinna zwracać `S_FALSE`.  
   
  Gdy ta metoda jest wywoływana, DE musi wysłać [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) obiektu zdarzenia, jeśli go nie ma już wysłane dla tego wystąpienia [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfejsu, jak również [ IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) i [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) obiekty zdarzeń. [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) obiektu zdarzenia jest następnie wysyłana, gdy `dwReason` parametr `ATTACH_REASON_LAUNCH`.  
@@ -84,4 +79,3 @@ int Attach_V7 ( 
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)   
  [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)   
  [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)
-

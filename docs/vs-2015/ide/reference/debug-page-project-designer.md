@@ -1,14 +1,9 @@
 ---
 title: Strona debugowania, Projektant projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f16abf5fbf21678187a22efc9a368df7785057ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776147"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +36,10 @@ ms.locfileid: "49271365"
  Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.  
   
  **Konfiguracja**  
- Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Platforma**  
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można wybierać **dowolny Procesor** (ustawienie domyślne), **x64**, i **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można wybierać **dowolny Procesor** (ustawienie domyślne), **x64**, i **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="start-action"></a>Akcja uruchamiania  
  **Akcja uruchamiania** wskazuje element uruchamianą podczas debugowania aplikacji: projekt, program niestandardowy, adres URL lub nie rób. Domyślnie ta opcja jest ustawiona na **spustit projekt**. **Akcja uruchamiania** ustawienie **debugowania** strony określa wartość `StartAction` właściwości.  
@@ -84,9 +79,6 @@ ms.locfileid: "49271365"
  [Debugowanie w programie Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Ustawienia projektu dla języka C# konfiguracji debugowania](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Zarządzanie, debugowanie — właściwości](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Porady: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Zarządzanie, debugowanie — właściwości](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Instrukcje: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

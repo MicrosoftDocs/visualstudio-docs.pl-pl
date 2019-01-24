@@ -1,13 +1,8 @@
 ---
 title: Zdalne debugowanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,13 +18,13 @@ ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de09da6a68e00ee66e04ae9523729c88232e78a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779818"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Możesz albo pobierania, które narzędzia zdalnej bezpośrednio na urządzeniu 
     |Wersja|Łącze|Uwagi|
     |-|-|-|
     |Visual Studio 2015 Update 3|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, Dołącz do bezpłatnego grupy programu Visual Studio Dev Essentials lub po prostu Zaloguj się ważną subskrypcją programu Visual Studio. Następnie ponownie otwórz link w razie potrzeby. Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x 86, x64 lub wersji ARM)|
-    |Program Visual Studio 2015 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, Dołącz do bezpłatnego grupy programu Visual Studio Dev Essentials lub po prostu Zaloguj się ważną subskrypcją programu Visual Studio. Następnie ponownie otwórz link w razie potrzeby.|
+    |Visual Studio 2015 (older)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, Dołącz do bezpłatnego grupy programu Visual Studio Dev Essentials lub po prostu Zaloguj się ważną subskrypcją programu Visual Studio. Następnie ponownie otwórz link w razie potrzeby.|
     |Visual Studio 2013|[Zdalne narzędzia](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Pobierz strony w dokumentacji programu Visual Studio 2013|
     |Visual Studio 2012|[Zdalne narzędzia](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Pobierz strony w dokumentacji programu Visual Studio 2012|
   
@@ -67,7 +62,7 @@ Próby skopiuj zdalny debuger (msvsmon.exe) z komputerem zdalnym i uruchom go, n
 
 Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu programu Visual Studio 2015 Community, Professional lub Enterprise już zainstalowane. W wielu sytuacjach Najprostszym sposobem konfigurowania zdalnego debugowania jest uruchomienie zdalnego debugera (msvsmon.exe) z udziału plików. Dla ograniczenia użycia, zobacz stronę pomocy zdalny debuger (**pomocy / użycia** w zdalnym debugerze).
 
-1. Znajdź **msvsmon.exe** w katalogu, zgodny z używaną wersją programu Visual Studio. Dla programu Visual Studio 2015:
+1. Znajdź **msvsmon.exe** w katalogu, zgodny z używaną wersją programu Visual Studio. For Visual Studio 2015:
 
       **Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
@@ -203,7 +198,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
    |Polecenie zdalne|C:\remotetemp\mymfc.exe|  
    |Katalog roboczy|C:\remotetemp|  
    |Nazwa serwera zdalnego|Listy Dystrybucyjnej MJO:*numer_portu*|  
-   |połączenia|Zdalny z uwierzytelnianiem Windows|  
+   |Połączenie|Zdalny z uwierzytelnianiem Windows|  
    |Typ debugera|Tylko w trybie macierzystym|  
    |Katalog wdrażania|C:\remotetemp.|  
    |Dodatkowe pliki do wdrożenia|C:\data\mymfcdata.txt.|  
@@ -305,6 +300,3 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
  [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)   
  [Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

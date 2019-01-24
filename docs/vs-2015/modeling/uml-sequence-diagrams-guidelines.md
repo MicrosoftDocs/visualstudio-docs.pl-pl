@@ -1,12 +1,9 @@
 ---
-title: 'UML Sequence Diagrams: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Diagramy sekwencji UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.linktosequencediagram
 - vs.teamarch.logicalclassdiagram.createlifeline
@@ -25,15 +22,15 @@ ms.assetid: 5990ef7c-ba60-4e20-a36d-e29c1fa6c8bb
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56ecc5c54611f94cdbfb0f08ec54a4e0722f0cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: efdb6b30785820ae7bef852988628efde5b517b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774653"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencyjne UML: Zalecenia
+# <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencji UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio, można narysować *diagram sekwencji* do przedstawiania interakcji. Interakcja to sekwencję wiadomości między wystąpieniami typowych klas, składników, podsystemów lub podmiotów.  
@@ -60,9 +57,9 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 ##  <a name="Using"></a> Za pomocą diagramów sekwencji UML  
  Możesz użyć diagramów sekwencji do różnych celów, na różnych poziomach szczegółowości program. Typowe sytuacje rysowania diagramu sekwencji, są następujące:  
   
-- Jeśli masz diagram przypadków użycia, która zawiera podsumowanie systemu, użytkowników i ich celów, możesz narysować diagramy sekwencji do opisywania sposobu interakcji główne składniki systemu do zrealizowania celu każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Jeśli masz diagram przypadków użycia, która zawiera podsumowanie systemu, użytkowników i ich celów, możesz narysować diagramy sekwencji do opisywania sposobu interakcji główne składniki systemu do zrealizowania celu każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-- Po zidentyfikowaniu komunikatów przychodzących inny interfejs składnika można narysować diagramy sekwencji do opisywania sposobu interakcji wewnętrznych części składnika, aby uzyskać ten efekt, wymagany dla każdego komunikatu przychodzącego. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
+- Po zidentyfikowaniu komunikatów przychodzących inny interfejs składnika można narysować diagramy sekwencji do opisywania sposobu interakcji wewnętrznych części składnika, aby uzyskać ten efekt, wymagany dla każdego komunikatu przychodzącego. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
   
   Rysowanie diagramów sekwencji ma kilka zalet:  
   
@@ -80,10 +77,10 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
  Można również opisać w diagramie klas UML typy parametrów i zwracane wartości, które były używane w wiadomościach przesyłanych między liniami życia.  
   
 #### <a name="use-case-details"></a>Szczegóły przypadku użycia  
- Przypadek użycia przedstawia cel użytkownika, wraz z sekwencji kroków do osiągnięcia celu. Sekwencja kroków można przedstawić na kilka sposobów. Jedną z opcji jest, aby narysować diagram sekwencji, który pokazuje interakcje występujące między użytkownikami a główne składniki systemu. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Przypadek użycia przedstawia cel użytkownika, wraz z sekwencji kroków do osiągnięcia celu. Sekwencja kroków można przedstawić na kilka sposobów. Jedną z opcji jest, aby narysować diagram sekwencji, który pokazuje interakcje występujące między użytkownikami a główne składniki systemu. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów sekwencji  
- Aby uzyskać pełną listę elementów na diagramach sekwencji, zobacz [diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md).  
+ Aby uzyskać pełną listę elementów na diagramach sekwencji, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
 >  Szczegółowe informacje na temat sposobu tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
@@ -118,7 +115,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 3.  Aby wyświetlić komunikat, który pochodzi z nieznanego źródła zdarzenia (9) lub emituje do nieznanego odbiorcy (10), narysuj komunikatów asynchronicznych z lub do pustego obszaru na diagramie. Komunikaty te są nazywane *znalezione wiadomości* (9) i *utracone wiadomości* (10).  
   
     > [!NOTE]
-    >  Aby przenieść grupę linii życia zawierającą utracone lub znalezione wiadomość, wykonaj następujące kroki, aby wybrać linie życia, przed przeniesieniem ich: narysuj prostokąt wokół tych linii życia, lub naciśnij i przytrzymaj klawisz **CTRL** klucza podczas klikania każda linia życia. Jeśli używasz **Zaznacz wszystko** lub **CTRL**+**A** do zaznaczenia wszystkich linii życia, a następnie przenieś je, wszystkie utracone i znalezione wiadomości dołączone do tych linii życia, nie zostaną przeniesione. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.  
+    >  Aby przenieść grupę linii życia zawierającą utracone lub znalezione wiadomość, wykonaj następujące kroki, aby wybrać linie życia, przed przeniesieniem ich: Narysuj prostokąt wokół tych linii życia, lub naciśnij i przytrzymaj klawisz **CTRL** klucza podczas klikania każda linia życia. Jeśli używasz **Zaznacz wszystko** lub **CTRL**+**A** do zaznaczenia wszystkich linii życia, a następnie przenieś je, wszystkie utracone i znalezione wiadomości dołączone do tych linii życia, nie zostaną przeniesione. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.  
   
 4.  Narysuj diagramy sekwencji dla każdego komunikatu głównych do tego samego składnika lub systemu.  
   
@@ -264,7 +261,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
   
 |**W tym celu**|**Użyj tego formatu**|  
 |--------------------------|-------------------------|  
-|Wystąpienie typu anonimowego.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*Nazwa typu*|  
+|Wystąpienie typu anonimowego.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*typeName*|  
 |Nazwane wystąpienie typu.<br /><br /> Użyj, jeżeli chcesz pokazać sekwencji, która obejmuje więcej niż jedno wystąpienie tego samego typu.|*Nazwa obiektu*:*typeName*|  
   
 ### <a name="creating-lifelines-from-types"></a>Tworzenie linii życia z typami  
@@ -446,13 +443,10 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 5.  Aby dodać nowe wiadomości do fragmentu, należy użyć narzędzia wiadomości lub skopiuj i Wklej.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
  [Wideo: Powstawać interakcje za pomocą diagramów sekwencji](http://go.microsoft.com/fwlink/?LinkId=201113)
-
-
-

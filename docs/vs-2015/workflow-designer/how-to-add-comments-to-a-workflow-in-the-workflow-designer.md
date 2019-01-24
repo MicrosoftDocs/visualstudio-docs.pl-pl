@@ -1,11 +1,8 @@
 ---
-title: 'Porady: dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
@@ -14,15 +11,15 @@ ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: c605ec087a4aa5bec3aecf91d9f0ac1c1a1fb42a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d60eaa4d86e3a0bc421b4d8c02eb61976337d553
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194613"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783545"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Porady: dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Instrukcje: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
 Aby ułatwić tworzenie większych i bardziej skomplikowanych przepływów pracy [!INCLUDE[net_v45](../includes/net-v45-md.md)] umożliwia deweloperom Dodawanie adnotacji do następujących typów elementów w Projektancie:  
   
 -   <xref:System.Activities.Activity>  

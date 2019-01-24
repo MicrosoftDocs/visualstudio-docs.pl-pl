@@ -1,27 +1,22 @@
 ---
 title: Rejestracja i wybór (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790804"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Rejestracja i wybór (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ Pakietu VSPackage musi być zarejestrowana do udostępnienia go do kontroli źr�
 ### <a name="registry-entries"></a>Wpisy rejestru  
  Pakiet kontrolki źródła wymaga trzech prywatnych identyfikatorów GUID:  
   
-- Identyfikator GUID pakietu: Jest głównym identyfikator GUID pakietu, który zawiera implementację kontroli źródła (nazywane ID_Package w tej sekcji).  
+- Identyfikator GUID pakietu: Jest to główny identyfikator GUID pakietu, który zawiera implementację kontroli źródła (nazywane ID_Package w tej sekcji).  
   
-- Kontrola źródła identyfikatora GUID: To jest identyfikator GUID dla pakietu VSPackage używane do rejestrowania w usłudze Visual Studio wycinka kontroli źródła do kontroli źródła i jest również używane jako kontekst interfejsu użytkownika poleceń identyfikator GUID. Identyfikator GUID usługi kontroli źródła jest zarejestrowany pod kontrolą źródła, identyfikatora GUID. W tym przykładzie identyfikator GUID do kontroli źródła jest wywoływana ID_SccProvider.  
+- Identyfikator GUID kontrolki źródła To jest identyfikator GUID dla pakietu VSPackage używane do rejestrowania w usłudze Visual Studio wycinka kontroli źródła do kontroli źródła i jest również używane jako kontekst interfejsu użytkownika poleceń identyfikatora GUID. Identyfikator GUID usługi kontroli źródła jest zarejestrowany pod kontrolą źródła, identyfikatora GUID. W tym przykładzie identyfikator GUID do kontroli źródła jest wywoływana ID_SccProvider.  
   
-- Usługa sterowania identyfikator GUID źródła: to jest usługa prywatny identyfikator GUID używany przez program Visual Studio (nazywanych SID_SccPkgService w tej sekcji). Oprócz tego pakietu kontroli źródła trzeba zdefiniować inne identyfikatory GUID pakietów VSPackage, okien narzędzi i tak dalej.  
+- Identyfikator GUID usługi kontroli źródła: To jest usługa prywatny identyfikator GUID używany przez program Visual Studio (nazywanych SID_SccPkgService w tej sekcji). Oprócz tego pakietu kontroli źródła trzeba zdefiniować inne identyfikatory GUID pakietów VSPackage, okien narzędzi i tak dalej.  
   
   Przez kontrolę źródła pakietu VSPackage przeprowadza się następujące wpisy rejestru:  
   
@@ -91,4 +86,3 @@ Pakietu VSPackage musi być zarejestrowana do udostępnienia go do kontroli źr�
  [Funkcje](../../extensibility/internals/source-control-vspackage-features.md)   
  [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Pakiety VSPackage](../../extensibility/internals/vspackages.md)
-

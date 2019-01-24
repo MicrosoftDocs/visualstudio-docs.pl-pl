@@ -1,14 +1,9 @@
 ---
 title: BP_COND_STYLE | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - BP_COND_STYLE
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 80b19cec444a009fc62af1b2345ed631ce80ff1c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fbb2674381992bd86f0144af103615f0a3922fcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779593"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -62,13 +57,12 @@ public enum enum_BP_COND_STYLE { 
  Używany do `styleCondition` członkiem [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktury.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
-

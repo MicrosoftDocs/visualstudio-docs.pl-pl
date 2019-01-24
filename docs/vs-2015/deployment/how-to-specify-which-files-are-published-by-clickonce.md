@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Określanie plików publikowanych za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776324"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Porady: określanie plików publikowanych za pomocą technologii ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pliki aplikacji, a wszystkie inne niż kod w projekcie są wdrażane wraz z aplikacji. W niektórych przypadkach mogą nie ma lub musisz opublikować określone pliki lub można zainstalować niektórych plików, na podstawie warunków. Program Visual Studio oferuje możliwości Wyklucz pliki oznaczyć pliki jako pliki danych lub wstępnie wymagane składniki oraz tworzenie grup plików dla warunkowego instalacji.  
@@ -45,7 +40,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] plik
   
 -   Pliki danych, takich jak pliki bazy danych SQL Database (pliki .mdf i .mdb) i pliki XML są oznaczane jako pliki danych domyślnie.  
   
--   Po dodaniu odwołania odwołania do zestawów (pliki .dll) zostały oznaczone w następujący sposób: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**(wymagań wstępnych Automatycznie)**), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** pola (jako pliku ocx) okno dialogowe tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.  
+-   Po dodaniu odwołania, odwołania do zestawów (pliki .dll) zostały oznaczone w następujący sposób: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**wymagań wstępnych (Auto)**), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** pola (jako pliku ocx) okno dialogowe tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Aby dodać pliki do okna dialogowego pliki aplikacji  
   
@@ -123,7 +118,4 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] plik
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -8,13 +8,13 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: douge
-ms.openlocfilehash: 88b4ffb717b8009b7fe2478ab38070ccf11dd169
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 2e04ca6afaa8e5a290e6c2a3419bb4fa28fd46e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788678"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i szablonów elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

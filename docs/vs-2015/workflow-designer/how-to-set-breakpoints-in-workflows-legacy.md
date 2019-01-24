@@ -1,11 +1,8 @@
 ---
-title: 'Porady: Ustawianie punktów przerwania w przepływach pracy (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - breakpoints, setting in workflows
@@ -16,20 +13,20 @@ ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803576"
 ---
-# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Porady: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)
+# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)
 W tym temacie opisano sposób ustawiania punktów przerwania [!INCLUDE[wf](../includes/wf-md.md)] aplikacje tworzyć zawartość przy użyciu starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] podczas Twojej [!INCLUDE[wf2](../includes/wf2-md.md)] aplikację pod kątem albo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Jeśli używasz starszej wersji [!INCLUDE[wfd2](../includes/wfd2-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)] tworzenie [!INCLUDE[wf2](../includes/wf2-md.md)] aplikacji, można ustawić punktów przerwania w kodzie języka C# i Visual Basic tak jak w programie Visual Studio. Zgodnie z oczekiwaniami, zatrzyma wykonywanie przepływu pracy, w każdym punkcie przerwania, który został ustawiony.  
   
- Punkt przerwania ma trzy stany: *oczekujące*, *powiązany*, i *błąd*. Po ustawieniu punktu przerwania jest oczekujące i jest reprezentowana przez pusty czerwoną ikonę. Po załadowaniu szablonu przepływu pracy środowiska uruchomieniowego staje się powiązane i jest reprezentowane przez stałe czerwoną ikonę. Jeśli określisz ma niewłaściwy format dla punktu przerwania, podobnie jak w przypadku nazwy działania, który nie jest prawidłowy, pojawi się okno błędu. Punkt przerwania nadal jest dodawany do okna punkt przerwania, ale jest oznaczony za pomocą małych "x".  
+ Punkt przerwania ma trzy stany: *Oczekujące*, *powiązany*, i *błąd*. Po ustawieniu punktu przerwania jest oczekujące i jest reprezentowana przez pusty czerwoną ikonę. Po załadowaniu szablonu przepływu pracy środowiska uruchomieniowego staje się powiązane i jest reprezentowane przez stałe czerwoną ikonę. Jeśli określisz ma niewłaściwy format dla punktu przerwania, podobnie jak w przypadku nazwy działania, który nie jest prawidłowy, pojawi się okno błędu. Punkt przerwania nadal jest dodawany do okna punkt przerwania, ale jest oznaczony za pomocą małych "x".  
   
  Można ustawić punktów przerwania w ramach działania na powierzchni projektowej przepływu pracy, w następujący sposób:  
   

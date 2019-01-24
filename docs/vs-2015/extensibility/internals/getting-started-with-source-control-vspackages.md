@@ -1,27 +1,22 @@
 ---
 title: Wprowadzenie do pakietów VSPackage kontroli źródła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
 - getting started, source control packages
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 248adc1b7dfbd2527940e31b88abc4d7639353ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f9891461312f3e0db8b3961160de094e0ed34dd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796614"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776693"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Wprowadzenie do pakietów VSPackage kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ Pakietu VSPackage kontroli źródła jest bardziej zaawansowanych alternatywa wt
   
  [Tworzenie pakietu VSPackage kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-vspackage.md)  
  W tym artykule omówiono sposób tworzenia kontroli źródła pakietu VSPackage, który nie tylko zapewnia funkcji kontroli źródła, ale mogą być używane do dostosowywania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] źródłowej kontrolki interfejsu użytkownika.
-

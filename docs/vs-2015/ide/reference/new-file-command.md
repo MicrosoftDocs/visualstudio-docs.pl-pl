@@ -1,14 +1,9 @@
 ---
 title: Nowy plik — polecenie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.newfile
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1043dc600d339e2a0989bb71fc7e8a09e712e102
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 59dbf1a866ce28351a2d6ec597972f70c6cc4917
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761614"
 ---
 # <a name="new-file-command"></a>Nowy plik — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
  Opcjonalna. Nazwa pliku. Jeśli nazwa nie zostanie podany, zostanie podana nazwa domyślna. Jeśli nazwa szablonu nie ma na liście, zostanie utworzony plik tekstowy.  
   
 ## <a name="switches"></a>Przełączniki  
- t:`templatename`  
+ /t:`templatename`  
  Opcjonalna. Określa typ pliku ma zostać utworzony.  
   
  T:`templatename` argument składni odzwierciedla informacji znajdujących się w oknie dialogowym Nowy plik. Wprowadź nazwę kategorii, a następnie znakiem ukośnika odwrotnego (`\`) i szablonu, nazwy i ująć cały ciąg w cudzysłowie.  
@@ -75,11 +70,8 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Okno polecenia](../../ide/reference/command-window.md)   
  [Okno bezpośrednie](../../ide/reference/immediate-window.md)   
  [Znajdź/Command — pole](../../ide/find-command-box.md)   
  [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

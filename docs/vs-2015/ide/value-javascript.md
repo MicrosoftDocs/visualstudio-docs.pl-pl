@@ -1,14 +1,9 @@
 ---
 title: '&lt;wartość&gt; (JavaScript) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <value> JavaScript XML tag
 - value JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: 983e31de-cb1d-411e-b60d-eea6698a26f6
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f88f3ae2e7442549004d2331b4517eb7fa2b5509
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac74dde41a2d6cea0a768cfc89838cc34ce41afd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914336"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799145"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;wartość&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,6 +90,3 @@ function Sys$CancelEventArgs$get_cancel() {
   
 ## <a name="see-also"></a>Zobacz też  
  [Komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

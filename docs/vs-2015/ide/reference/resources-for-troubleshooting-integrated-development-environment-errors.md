@@ -1,14 +1,9 @@
 ---
 title: Programowanie środowiska błędami związanymi ze zintegrowanym zasoby dla rozwiązywania problemów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -98,13 +93,13 @@ ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 269806ea71794f1b328fd94e147dbf055b78ca1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783264"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby dla rozwiązywania problemów z błędami związanymi ze zintegrowanym środowiskiem deweloperskim
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -122,6 +117,3 @@ Nie wszystkie komunikaty o błędach mieć określone skojarzonego tematu Pomocy
   
 ## <a name="product-support"></a>Pomoc techniczna  
  Jeśli po wypróbowaniu innych zasobów nadal masz pytania, możesz skontaktować się ze usług pomocy technicznej firmy Microsoft, odwiedzając [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) witryny sieci Web. Aby uzyskać informacje o pomocy technicznej dostępne w Twojej okolicy, zobacz [Porozmawiaj z nami](../../ide/talk-to-us.md).
-
-
-

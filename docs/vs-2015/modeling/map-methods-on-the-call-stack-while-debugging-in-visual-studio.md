@@ -1,12 +1,8 @@
 ---
 title: Metody mapowania dla stosu wywołań podczas debugowania
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -33,13 +29,13 @@ ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
 author: MikeJo5000
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d7a4fe3eb8904877aa2ccdd5f2f2035884bfdb9f
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 5afe8934d2172958407a1b2db867f2049e4cdee3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53988493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775951"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

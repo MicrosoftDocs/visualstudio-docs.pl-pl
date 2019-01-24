@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy sekwencji UML: Odwołanie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Diagramy sekwencji UML: Dokumentacja | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755159"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>Diagramy sekwencji UML: Odwołanie
+# <a name="uml-sequence-diagrams-reference"></a>Diagramy sekwencji UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio *diagram sekwencji* pokazuje interakcji, która reprezentuje sekwencję wiadomości między wystąpieniami klasy, składników, podsystemów lub podmiotów. Czas przepływy w dół do diagramu, a następnie przedstawia przepływ sterowania od jednego uczestnika do innego. Użyj diagramów sekwencji do wizualizacji, wystąpienia i zdarzenia, a nie klasy i metody. Więcej niż jedno wystąpienie tego samego typu mogą być wyświetlane na diagramie. Więcej niż jedno wystąpienie tego samego komunikatu może również zostać wyświetlony.  
@@ -61,15 +58,12 @@ W programie Visual Studio *diagram sekwencji* pokazuje interakcji, która reprez
 |14|**Fragment Guard**|Może służyć do stanu dotyczą tego, czy zostanie przeprowadzona fragment warunku.<br /><br /> Aby ustawić osłony, wybierz fragment, a następnie wybierz osłony, a następnie wpisz wartość.|  
 |**X**|**Zdarzenie niszczenia**|Reprezentuje punkt, w którym obiekt jest usunięty lub nie będą już dostępne. Pojawi się u dołu każdej linii życia.|  
 ||**Interakcji**|Kolekcja komunikatów i linie życia, która jest wyświetlana w diagramie sekwencji. Aby wyświetlić właściwości interakcji, należy wybrać w **Eksploratora modelu UML**.|  
-||**Diagram sekwencji**|Diagram, który wyświetla interakcji. Aby wyświetlić jego właściwości, kliknij pustą część diagramu. **Uwaga:** nazwy diagramu sekwencji, interakcji, wyświetla i pliku, który zawiera diagram może składać się z inną.|  
+||**Diagram sekwencji**|Diagram, który wyświetla interakcji. Aby wyświetlić jego właściwości, kliknij pustą część diagramu. **Uwaga:**  Nazwy diagramu sekwencji, interakcji, wyświetla i pliku, który zawiera diagram może składać się z inną.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)

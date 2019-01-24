@@ -1,23 +1,20 @@
 ---
 title: Aktualizowanie kształtów i łączników, aby odzwierciedlały Model | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798867"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualizowanie kształtów i łączników, aby odzwierciedlały model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Ustaw właściwości mapowanie kształtów w celu kontrolowania widoczności elementu decorator  
  Można kontrolować widoczność dekoratora, bez konieczności pisania kodu programu, konfigurując mapowanie między kształtem i klasy domeny w definicji DSL. Więcej informacji znajduje się w następujących tematach:  
   
--   [Porady: kontrolowanie widoczności elementu Decorator — przekierowanie](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+-   [Instrukcje: Kontrolowanie widoczności elementu Decorator — przekierowanie](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
 -   [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)  
   
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` powinna być wywoływana jeden raz dla każdej właściwości domeny, który chcesz zarejestrować. Po jej wywołaniu, zmiany wprowadzone w określonej właściwości wywoła `OnAssociatedPropertyChanged()` w kształtów, które są dostępne właściwości elementu modelu.  
   
  Nie jest konieczne wywołać `AssociateValueWith()` dla każdego wystąpienia. Mimo że InitializeResources jest metodą wystąpienia, jest wywoływana tylko raz dla każdej klasy kształtu.
-
-
-

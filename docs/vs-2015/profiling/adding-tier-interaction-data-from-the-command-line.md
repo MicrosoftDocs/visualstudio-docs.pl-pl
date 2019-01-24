@@ -1,14 +1,9 @@
 ---
 title: Dodawanie danych interakcji z wiersza polecenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - tier interaction profiling method
 - profiling tools,tier interaction method
@@ -16,13 +11,13 @@ ms.assetid: 5a35647f-03f2-4555-8eeb-fda7e0080e67
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b3912e823a6e6ee32488fcda94616aef414d3d22
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c591af9259a4a45af762e79552c99671a094d0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778886"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
   
  Aby zbierać dane interakcji między warstwami na aplikacje pulpitu systemu Windows 8 i aplikacje systemu Windows Server 2012 należy użyć metody instrumentacji. Zbieranie danych o interakcji między warstwami aplikacji Windows Store nie jest obsługiwane.  
   
- **Wersje programu Visual Studio**  
+ **Visual Studio editions**  
   
  Informacje o profilowaniu interakcji między warstwami można zbierać w programach [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] i [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)], Natomiast obejrzeć takie dane można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
@@ -159,6 +154,3 @@ vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```  
   
  Aby uzyskać więcej informacji na temat VSPerfASPNETCmd zobacz [szybkie profilowanie witryny sieci Web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: wyświetlanie informacji o śledzeniu WPF | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyświetlanie informacji o śledzeniu WPF | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0a91d9f1f58a6905d50e14351bbbaf6fe732c60f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777859"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Porady: wyświetlanie informacji o śledzeniu WPF
+# <a name="how-to-display-wpf-trace-information"></a>Instrukcje: Wyświetlanie informacji o śledzeniu WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] można otrzymywać informacje o śledzeniu debugowania aplikacji WPF i wyświetlić te informacje w **dane wyjściowe** okna. Aby wyświetlić informacje o śledzeniu debugowania, można włączyć śledzenie WPF.  
@@ -54,7 +49,7 @@ ms.locfileid: "51771244"
   
      Kontrolka listy rozwijanej pojawia się w kolumnie ustawień obok **powiązanie danych** lub kliknięty niezależnie od kategorii.  
   
-8.  Kliknij przycisk listy rozwijanej i wybierz typ informacji śledzenia, które mają być wyświetlane: **wszystkich**, **krytyczny**, **błąd**, **ostrzeżenie**,  **Informacje o**, **pełne**, lub **ActivityTracing**.  
+8.  Kliknij przycisk listy rozwijanej i wybierz typ informacji śledzenia, które mają być wyświetlane: **Wszystkie**, **krytyczne**, **błąd**, **ostrzeżenie**, **informacji**, **pełne**, lub **ActivityTracing**.  
   
      **Krytyczne** umożliwia śledzenie tylko zdarzenia krytyczne.  
   
@@ -94,6 +89,3 @@ ms.locfileid: "51771244"
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie WPF](../debugger/debugging-wpf.md)
-
-
-

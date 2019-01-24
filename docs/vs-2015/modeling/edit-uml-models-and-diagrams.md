@@ -1,12 +1,9 @@
 ---
 title: Edytowanie modeli i diagramów UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777450"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Edytowanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
  **Każdy projekt modelowania zawiera pojedynczy stosu zmian.** Wszystkie zmiany wprowadzone do modelu i diagramy są przechowywane na tego stosu. Stos zawiera również zmiany fokus z jednym diagramie. Polecenie Undo odwraca zmiany dla tego stosu.  
   
- Na przykład, załóżmy, że wykonywania tych operacji: wprowadź zmianę Diagram1; Zmień fokus na diagramie 2; Zmień Diagram2. Po cofnięciu zmian pierwszy cofania wycofasz ostatnią zmianę; dalej cofanie będzie przenieść fokus z diagramu 1; i trzeci cofania wycofasz zmiany 1 diagramu.  
+ Na przykład załóżmy, że wykonywać te operacje: Wprowadź zmianę Diagram1; Zmień fokus na diagramie 2; Zmień Diagram2. Po cofnięciu zmian pierwszy cofania wycofasz ostatnią zmianę; dalej cofanie będzie przenieść fokus z diagramu 1; i trzeci cofania wycofasz zmiany 1 diagramu.  
   
  **Zamykanie diagramu obcina stosu zmiany.** Jeśli zamkniesz diagramu, nie można cofnąć zmiany, które były wykonywane na tym diagramie i wcześniejszych zmian do modelu lub dowolnego z jego diagramów nie można cofnąć.  
   
@@ -219,7 +216,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
      Kształt z warunkiem, że zostanie wyświetlony widok elementu modelu, które mogą być oprócz widoków na inne diagramy lub ten sam schemat.  
   
     > [!NOTE]
-    >  Efekt różni się po przeciągnięciu klasy lub składnik na diagramie sekwencji. W takim przypadku nowy linii życia jest tworzony, którego typem jest tej klasy lub składnika. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  Efekt różni się po przeciągnięciu klasy lub składnik na diagramie sekwencji. W takim przypadku nowy linii życia jest tworzony, którego typem jest tej klasy lub składnika. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Aby dodać nowy widok elementu modelu przy użyciu Wklej odwołanie  
   
@@ -274,7 +271,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
    Nie można replikować diagramu przez kopiowanie i wklejanie w Eksploratorze rozwiązań.  
   
 ##  <a name="Deleting"></a> Usuwanie elementu modelu lub jego widoków  
- Niektóre rodzaje elementów, w szczególności klasyfikatorów, można usunąć z diagramu bez ich usuwania z modelu. Klasyfikatorów są elementy główne, które są wyświetlane na diagramach, diagramy składników i diagramy przypadków użycia. Może się pojawić na więcej niż jednym diagramie. W przypadku tych typów elementów, istnieją dwa osobne polecenia: **Usuń z diagramu** i **usunięte z modelu**.  
+ Niektóre rodzaje elementów, w szczególności klasyfikatorów, można usunąć z diagramu bez ich usuwania z modelu. Klasyfikatorów są elementy główne, które są wyświetlane na diagramach, diagramy składników i diagramy przypadków użycia. Może się pojawić na więcej niż jednym diagramie. Dla tych typów elementów istnieją dwa osobne polecenia: **Usuń z diagramu** i **usunięte z modelu**.  
   
  Z drugiej strony podczas usuwania relacji z diagramu zawsze usuwasz je z modelu.  
   
@@ -323,7 +320,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
 -   Aby dodać informacje i wyjaśnienia do elementów modelu, można tworzyć komentarze i połączyć je z elementami.  
   
--   Aby wyrównać starannego wiersza lub kolumny kształtów na diagramie, można zainstalować polecenia Wyrównaj kształty. Ta opcja jest dostępna jako przykładowe rozszerzenie UML: [UML: polecenie, aby wyrównać kształtów](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Aby wyrównać starannego wiersza lub kolumny kształtów na diagramie, można zainstalować polecenia Wyrównaj kształty. Jest on dostępny jako przykładowe rozszerzenie UML:  [UML: Polecenie połączenia kształtów](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Aby wyeksportować diagram jako obraz  
  Aby uzyskać więcej informacji, zobacz [Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
  [Tworzenie projektów modelowania UML i diagramów](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)   
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
-
-
-

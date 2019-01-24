@@ -1,25 +1,22 @@
 ---
 title: Integrowanie modeli UML z innymi modelami i narzędziami | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795326"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrowanie modeli UML z innymi modelami i narzędziami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ Modele UML można zintegrować z innymi modelami i języki specyficzne dla domen
   
    Aby uzyskać więcej informacji, zobacz [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-   Aby uzyskać przykładowy projekt, w której profil, który jest wdrażany wraz z poleceń menu i program obsługi gestów, zobacz [próbki: profilów UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
+   Aby uzyskać przykładowy projekt, w której profil, który jest wdrażany wraz z poleceń menu i program obsługi gestów, zobacz [próbki: Profilów UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
   
 - **Odwołania.** Zestaw ciągów można dołączyć do dowolnego elementu UML. Można napisać kod, który przechowuje informacje, takie jak nazwa pliku lub identyfikator GUID innego elementu. Można to zrobić bez podawania dodatkowe definicje. Odwołania nie są bezpośrednio widoczne dla użytkownika.  
   
@@ -68,12 +65,12 @@ Modele UML można zintegrować z innymi modelami i języki specyficzne dla domen
   
 2. **Zdarzenia VMSDK** może służyć propagujące zmiany poza modelem — na przykład, Zmień nazwę pliku połączonego dokumentu lub zmienić elementu w innym modelem.  
   
-   Aby uzyskać informacje o obu tych mechanizmów, zobacz [porady: odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Aby uzyskać informacje o obu tych mechanizmów, zobacz [jak: Odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Przeciągnij elementy, aby je skopiować z jednego modelu do innego  
    Można pozwolić użytkownikom na tworzenie elementów, przeciągając elementy na UML diagram. Utworzony element ma być kopię oryginału. Na przykład można pozwolić użytkownika przeciągnij diagram aktywności z Eksploratora rozwiązań na inny diagram aktywności, aby utworzyć nową akcję.  
   
-   Aby uzyskać więcej informacji, zobacz [definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) i [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+   Aby uzyskać więcej informacji, zobacz [definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) i [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="samples"></a>Przykłady  
  Zobacz przykładowy kod [łącze elementów UML, diagramy lub innych plików](http://go.microsoft.com/fwlink/?LinkId=213813). Przykład umożliwia użytkownikom, przeciągnij plik do dowolnego elementu UML, a później otworzyć go, klikając dwukrotnie plik elementu. Na przykład można połączyć diagram aktywności elementowi przypadków użycia. Ikona pojawi się elementy, które mają łącza.  
@@ -88,7 +85,7 @@ Modele UML można zintegrować z innymi modelami i języki specyficzne dla domen
   
    Przykładowa aplikacja dodaje dekoratora obrazu do kształtów UML.  
   
-- [Porady: odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
+- [Instrukcje: Odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
   
    W przykładzie pokazano, jak zdefiniować regułę, która odpowiada na nowe kształty znajdujące się na diagramie.  
   
@@ -98,15 +95,12 @@ Modele UML można zintegrować z innymi modelami i języki specyficzne dla domen
   
    W przykładzie pokazano sposób obsługi elementów przeciągnięty z Eksploratora Windows (lub Eksploratora plików), Eksplorator rozwiązań i innych elementów UML.  
   
-  Dla języka DSL odczytać przykładowi, w którym jest modelu UML, zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+  Dla języka DSL odczytać przykładowi, w którym jest modelu UML, zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [Porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Porady: odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Instrukcje: Odpowiadanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
  [Przykład: Profilów UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Link elementów UML, diagramy lub innych plików](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

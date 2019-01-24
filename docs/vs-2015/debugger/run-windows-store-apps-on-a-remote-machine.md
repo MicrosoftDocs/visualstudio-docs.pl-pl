@@ -1,14 +1,9 @@
 ---
 title: Uruchom Windows Store apps na komputerze zdalnym z | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756913"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +91,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 |Wersja|Łącze|Uwagi|
 |-|-|-|
 |Visual Studio 2015 Update 3|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, Dołącz do bezpłatnego grupy programu Visual Studio Dev Essentials lub po prostu Zaloguj się ważną subskrypcją programu Visual Studio. Następnie ponownie otwórz link w razie potrzeby. Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x 86, x64 lub wersji ARM)|
-|Program Visual Studio 2015 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, Dołącz do bezpłatnego grupy programu Visual Studio Dev Essentials lub po prostu Zaloguj się ważną subskrypcją programu Visual Studio. Następnie ponownie otwórz link w razie potrzeby. Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x 86, x64 lub wersji ARM)|
+|Visual Studio 2015 (older)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, Dołącz do bezpłatnego grupy programu Visual Studio Dev Essentials lub po prostu Zaloguj się ważną subskrypcją programu Visual Studio. Następnie ponownie otwórz link w razie potrzeby. Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x 86, x64 lub wersji ARM)|
 |Visual Studio 2013|[Zdalne narzędzia](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Pobierz strony w dokumentacji programu Visual Studio 2013|
   
  Możesz pobrać program instalacyjny lub go od razu uruchomić. Po uruchomieniu programu instalacyjnego zaakceptuj umowę z użytkownikiem, a następnie wybierz **zainstalować**.  
@@ -173,11 +168,8 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 ##  <a name="BKMK_RunRemoteDebug"></a> Uruchamianie sesji debugowania zdalnego  
  Uruchom, Zatrzymaj i nawigowanie po sesji debugowania zdalnego taki sam sposób czy lokalnej sesji. Przed rozpoczęciem debugowania upewnij się, że Monitor debugera zdalnego działa na urządzeniu zdalnym.  
   
- Następnie wybierz **Rozpocznij debugowanie** na **debugowania** menu (klawiatura: F5). Projekt jest ponownie skompilowana, a następnie wdrożona i uruchomiona na urządzeniu zdalnym. Debuger zawiesza wykonywanie w punktach przerwania, a użytkownik może przechodzić do nad lub poza swój kod. Wybierz **Zatrzymaj debugowanie** aby zakończyć sesję debugowania i zamknąć zdalną aplikację. Aby uzyskać więcej informacji, zobacz [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Następnie wybierz **Rozpocznij debugowanie** na **debugowania** menu (klawiatury: F5). Projekt jest ponownie skompilowana, a następnie wdrożona i uruchomiona na urządzeniu zdalnym. Debuger zawiesza wykonywanie w punktach przerwania, a użytkownik może przechodzić do nad lub poza swój kod. Wybierz **Zatrzymaj debugowanie** aby zakończyć sesję debugowania i zamknąć zdalną aplikację. Aby uzyskać więcej informacji, zobacz [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Testowanie aplikacji Store za pomocą programu Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

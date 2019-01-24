@@ -1,14 +1,9 @@
 ---
 title: Analizowanie zużycia energii w aplikacjach Store | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790356"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizowanie zużycia energii w aplikacjach ze Sklepu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,11 +148,8 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> Inne zasoby  
   
--   **Stan połączenia i zarządzanie kosztami** sekcje dla [C# / VB/C++ i XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) i [języków JavaScript i HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) w Centrum deweloperów Windows opisano interfejsy API Windows, które zapewniają informacje o łączności sieciowej, można użyć aplikacji, aby zminimalizować koszty ruchu sieciowego.  
+-   **Stan połączenia i zarządzanie kosztami** sekcje dla [C# / VB/C++ i XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) i [języków JavaScript i HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) w Centrum deweloperów Windows opisano interfejsy API Windows, które zapewniają informacje o łączności sieciowej, można użyć aplikacji, aby zminimalizować koszty ruchu sieciowego.  
   
      Symulator aplikacji do Sklepu Windows w programie Visual Studio umożliwia symulowanie właściwości połączenia danych interfejsów API informacji sieciowych. Zobacz [Uruchom Windows Store aplikacji w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   **Synchronizacja funkcji JavaScript** i **użycie procesora CPU** narzędzia mogą pomóc w zmniejszeniu obciążenia Procesora, gdy jest to spowodowane przez nieefektywnie działające funkcje. Zobacz [Analizowanie użycia procesora CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Karta Ogólne, okno dialogowe właściwości wątku | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -16,13 +11,13 @@ ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2777096e13ef649f2a340d3b3cae92d050d9531f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773933"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości wątku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego 
 |**Adres początkowy**|Początkowy adres wirtualny dla tego wątku.|  
 |**Komputer użytkownika**|Licznik programu użytkownika dla wątku.|  
 |**Przełączenia kontekstu**|Liczba przełączników z jednego wątku do innego. Przełączniki wątek może wystąpić wewnątrz pojedynczego procesu lub między procesami. Przełączenie wątku może być spowodowane przez jeden wątek, pytanie o innej informacji lub wątku jest przerywane, jeśli wątek wyższy priorytet staje się gotowe do uruchomienia.|
-
-
-

@@ -1,34 +1,29 @@
 ---
 title: Symbole Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b9bccb3874d5b85a8a69288e2bf44adb14b5b3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784668"
 ---
 # <a name="symbols-element"></a>Symbols, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Określa identyfikatory GUID i identyfikatory, które są używane przez inne elementy VSCT. Dla niezarządzanego kodu, te informacje zazwyczaj pochodzą z pliki nagłówkowe, które są określone przez [Extern, Element](../extensibility/extern-element.md). Zarządzany kod używa elementów podrzędnych elementu symbole, aby zdefiniować te informacje.  
   
- Jeśli tworzysz pliku vsct z istniejącego pliku .cto symbole zostanie wygenerowany jako elementy podrzędne elementu symboli. Aby uzyskać więcej informacji, zobacz [porady: tworzenie. Plik Vsct z istniejącej. Dyrektor ds. technologii pliku](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ Jeśli tworzysz pliku vsct z istniejącego pliku .cto symbole zostanie wygenerowany jako elementy podrzędne elementu symboli. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie. Plik Vsct z istniejącej. Dyrektor ds. technologii pliku](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
  Symbols, element nie należy mylić z [zdefiniować Element](../extensibility/define-element.md), która definiuje pary nazwa wartość do użytku przez preprocesor.  
   
@@ -78,4 +73,3 @@ Określa identyfikatory GUID i identyfikatory, które są używane przez inne el
   
 ## <a name="see-also"></a>Zobacz też  
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

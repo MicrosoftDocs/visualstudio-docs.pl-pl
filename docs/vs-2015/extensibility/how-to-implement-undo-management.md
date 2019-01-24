@@ -1,28 +1,23 @@
 ---
-title: 'Porady: Implementowanie zarządzania cofania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Implementowanie zarządzania cofania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f7eb3e3a1bbda905b2f5c5819835b10513d444fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776397"
 ---
-# <a name="how-to-implement-undo-management"></a>Porady: Implementowanie zarządzania cofania
+# <a name="how-to-implement-undo-management"></a>Instrukcje: Implementowanie cofania zarządzania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, który jest implementowany przez środowisko. Do obsługi zarządzania cofania, implementować jednostek cofania oddzielne (oznacza to, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, która może zawierać wiele poszczególne kroki.  
@@ -87,5 +82,4 @@ Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.Visua
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Instrukcje: czyszczenie stosu cofania](../extensibility/how-to-clear-the-undo-stack.md)
-
+ [Instrukcje: Wyczyścić stosu cofania](../extensibility/how-to-clear-the-undo-stack.md)

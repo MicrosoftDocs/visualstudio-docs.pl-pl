@@ -1,14 +1,9 @@
 ---
 title: Strona aplikacji, Projektant projektu (C#) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778649"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
 > [!NOTE]
 >  Wstępnie wymagane pakiety wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli użytkownik zmieni później platformę docelową projektu, trzeba będzie wybrać wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.  
   
- Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [programu Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Typ aplikacji**  
  Określa typ aplikacji pozwalają na tworzenie. Aby uzyskać [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji, można określić **Windows Store App**, **biblioteki klas**, lub **plik WinMD**. W przypadku większości innych typów aplikacji, możesz określić **aplikacji Windows**, **aplikację Konsolową**, **biblioteki klas**, **usługi Windows**, lub **Biblioteka formantów sieci Web**.  
@@ -108,6 +103,3 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
 ## <a name="see-also"></a>Zobacz też  
 [Zarządzanie właściwościami aplikacji](../../ide/application-properties.md)  
  [Pisanie kodu dla rozwiązań pakietu Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

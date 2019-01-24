@@ -1,27 +1,22 @@
 ---
 title: Odwołanie do zestawu SDK programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4d5774c65be586a8183fe4a511a3ed21e79c38a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ed1fa0a1bf68735b2a5e489b98fa7febecba7864
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776161"
 ---
 # <a name="visual-studio-sdk-reference"></a>Dokumentacja zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, pokrewne
   
 ## <a name="in-this-section"></a>W tej sekcji
 
- [Konfiguracja instalacji](http://msdn.microsoft.com/en-us/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [Konfiguracja instalacji](http://msdn.microsoft.com/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  Konfiguracja interfejsu API do odnajdywania wystąpień programu Visual Studio 2017.
 
- [Otwórz Folder rozszerzalności](http://msdn.microsoft.com/en-us/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [Otwórz Folder rozszerzalności](http://msdn.microsoft.com/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Obszar roboczy interfejsu API dla funkcji Otwórz Folder w programie Visual Studio 2017.
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
@@ -314,4 +309,3 @@ Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, pokrewne
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
  Zawiera dokumentację, przykłady i kod, aby pomóc w tworzeniu produktów, które integrują się z programem Visual Studio.
-

@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy aktywności UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,18 +14,18 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784449"
 ---
-# <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Zalecenia
+# <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można narysować diagram aktywności, aby opisują proces biznesowy lub algorytm oprogramowania jako przepływ pracy za pomocą szeregu akcji. Te akcje można wykonać osób, składniki oprogramowania lub urządzeń. Wideo demonstracyjne – zobacz: [przechwytywania biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
+W programie Visual Studio można narysować diagram aktywności, aby opisują proces biznesowy lub algorytm oprogramowania jako przepływ pracy za pomocą szeregu akcji. Te akcje można wykonać osób, składniki oprogramowania lub urządzeń. Aby uzyskać demonstracyjne wideo – zobacz: [Przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -38,13 +35,13 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
   
 - Opis procesu biznesowego przepływu pracy między użytkownikami a systemem. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
-- Do opisania czynności wykonywanych w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Do opisania czynności wykonywanych w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Do opisania metody, funkcja lub operacja w oprogramowaniu. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
   
   Rysowanie diagramu aktywności może pomóc ulepszyć proces. Diagram istniejący proces okaże się, że bardzo skomplikowane, można rozważyć, jak można uprościć proces.  
   
-  Aby uzyskać informacje na temat elementów na diagramach aktywności, zobacz [diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md).  
+  Aby uzyskać informacje na temat elementów na diagramach aktywności, zobacz [diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Relacja z innymi diagramami  
  Możesz narysować diagram aktywności, aby opisać proces biznesowy oraz sposób, w którym użytkownicy korzystania z systemu, można narysować diagram przypadków użycia, aby wyświetlić inny widok tych samych informacji. Diagram przypadków użycia służy do rysowania akcje zgodnie z przypadkami użycia. Nadaj przypadków użycia takich samych nazwach jak odpowiednich akcji. Korzyści wynikające z widoku przypadków użycia są, możesz:  
@@ -57,7 +54,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
   
   Możesz również narysować diagram aktywności, aby opisać projekt szczegółowe działania oprogramowania.  
   
-  Na diagramie aktywności można pokazać przepływ danych przesyłanych między akcjami. Zobacz sekcję dotyczącą [opisujący przepływ danych](#DataFlows). Ale diagram aktywności nie opisano strukturę danych. W tym celu możesz narysować diagram klas UML. Aby uzyskać informacje, zobacz [UML Class Diagrams: wskazówki dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
+  Na diagramie aktywności można pokazać przepływ danych przesyłanych między akcjami. Zobacz sekcję dotyczącą [opisujący przepływ danych](#DataFlows). Ale diagram aktywności nie opisano strukturę danych. W tym celu możesz narysować diagram klas UML. Aby uzyskać informacje, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów aktywności  
  Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
@@ -185,7 +182,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
 -   Użyj **Pin wyjściowy** i **wprowadzania numeru Pin**. Ta metoda umożliwia oddzielnie opisują dane wyjściowe z akcji i dane wejściowe do innego. Numery PIN są podobne parametry w programie. Numery PIN reprezentują porty, których obiekty można wprowadzać i pozostaw akcji.  
   
     > [!NOTE]
-    >  Omówienie elementy używane w tej sekcji, zobacz przepływu danych w sekcji tego tematu zobacz [diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md).  
+    >  Omówienie elementy używane w tej sekcji, zobacz przepływu danych w sekcji tego tematu zobacz [diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Opisujący przepływ danych za pomocą węzłów obiektowych  
  Większość przepływów sterowania przesyłania danych. Na przykład przepływ danych wyjściowych z akcji "Klienta zawiera szczegółowe informacje" zawiera odwołanie do adresu do wysyłki.  
@@ -198,7 +195,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
   
  Nazwij węzeł obiektu odzwierciedlającą rolę węzła kanał lub buforu obiektów, które przepływ między działaniami.  
   
- Możesz ustawić **typu** węzła obiektu, w oknie dialogowym właściwości. Typ może być typem pierwotnym, takie jak liczba całkowita, lub klasą, interfejsem lub wyliczenie, które zostały zdefiniowane na diagramie klasy. Na przykład można utworzyć klasy adres dostawy z atrybutami adres ulicy, miejscowości i tak dalej, wraz z skojarzenia z innej klasy, który nosi nazwę klienta. Aby uzyskać więcej informacji, zobacz [UML Class Diagrams: wskazówki dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
+ Możesz ustawić **typu** węzła obiektu, w oknie dialogowym właściwości. Typ może być typem pierwotnym, takie jak liczba całkowita, lub klasą, interfejsem lub wyliczenie, które zostały zdefiniowane na diagramie klasy. Na przykład można utworzyć klasy adres dostawy z atrybutami adres ulicy, miejscowości i tak dalej, wraz z skojarzenia z innej klasy, który nosi nazwę klienta. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
 >  Wpisz nazwę typu, który nie został jeszcze zdefiniowany element zostanie dodany w obszarze **nieokreślonym** w Eksploratorze modelu UML. Po zdefiniowaniu typu o takiej nazwie następnie na diagramie klasy, możesz zresetować typ węzła obiektu, dzięki czemu odwołuje się do nowego typu.  
@@ -363,7 +360,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
   
  ![Równoległe przepływy obiektów](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- Po ukończeniu akcji "Klienta zawiera szczegółowe informacje" tworzy dwa obiekty: "Adres dostawy" i "Szczegóły karty kredytowej." Dwa obiekty przejść do przodu do przetworzenia przez różne akcje.  
+ Po ukończeniu akcji "Klienta zawiera szczegółowe informacje" tworzy dwa obiekty: "Wydanie address" i "Szczegóły karty kredytowej." Dwa obiekty przejść do przodu do przetworzenia przez różne akcje.  
   
  Ponieważ akcji wymaga wszystkie jego danych wejściowych była dostępna, zanim będzie można ją uruchamiać, ostatnia akcja nie można uruchomić dopiero po zakończeniu wszystkich akcji, które mogą prowadzić do niego.  
   
@@ -431,12 +428,9 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
  [Wideo: Przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-

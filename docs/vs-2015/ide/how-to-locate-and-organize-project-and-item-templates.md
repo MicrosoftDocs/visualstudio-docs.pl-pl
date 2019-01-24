@@ -1,14 +1,9 @@
 ---
-title: 'Porady: lokalizowanie i organizowanie projektów i szablonów elementów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Znajdź i organizowania projektów i szablonów elementów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,15 +15,15 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830980"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778529"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Porady: lokalizowanie i organizowanie szablonów projektów i elementów
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Instrukcje: Znajdź i organizowania projektów i szablonów elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Studio, aby szablonów pojawi się w lokalizacji **nowy projekt** i **Dodaj nowy element** okien dialogowych. Możesz utworzyć niestandardowe podkategorii dla szablonów tak, aby podkategorii pojawiają się w interfejsie użytkownika.  
@@ -56,7 +51,7 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
   Na przykład następujący katalog zawiera niestandardowe [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablony projektu:  
   
-  C:\Documents and Settings\NazwaUżytkownika\Moje dokumenty\\< wersja programu Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My Documents\\<Visual Studio version\>\Templates\ProjectTemplates\Visual C#\  
   
   Szablony niestandardowe nie dołączaj podkatalogu dla szablonów zlokalizowane. Możesz zmienić domyślny katalog dla szablonów niestandardowych w **opcje** dialogowego **Environment\Projects i rozwiązania**.  
   
@@ -122,7 +117,7 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
 1. Utwórz folder w folderze język w katalogu szablonu niestandardowego projektu. Na przykład utworzyć kategorię HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów, należy utworzyć następującego katalogu:  
   
-    Dokumenty \My\\< wersja programu Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<Visual Studio version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
   
@@ -136,7 +131,7 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
 1.  Utwórz folder w folderze język w katalogu szablonu niestandardowego elementu. Na przykład utworzyć kategorię HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów należy utworzyć następującego katalogu:  
   
-     Dokumenty \My\\< wersja programu Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<Visual Studio version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
   
@@ -179,10 +174,7 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (szablony Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
- [Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)   
+ [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)   
  [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)
-
-
-

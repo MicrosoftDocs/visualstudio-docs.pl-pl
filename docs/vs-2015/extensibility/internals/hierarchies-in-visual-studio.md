@@ -1,26 +1,22 @@
 ---
 title: Hierarchie
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - hierarchies, Visual Studio IDE
 - IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 02898c2fd7dcf244ed7f2193cac7d7cde8531ebb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 22943d3049ff0e24d00c7c29750e7dcd0efaf846
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798579"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchie w programie Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

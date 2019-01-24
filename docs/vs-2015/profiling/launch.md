@@ -1,25 +1,20 @@
 ---
 title: Uruchom | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3d8f745a775f8cad3932f20525b09fe55fb857ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97ccdd3bf5e78af277430be1d86a95fad2f180e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778931"
 ---
 # <a name="launch"></a>Uruchom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,10 +85,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
-
-
-

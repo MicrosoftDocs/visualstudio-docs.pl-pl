@@ -1,13 +1,9 @@
 ---
 title: Rozwiązania i projekty
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.savedeferredsaveprojectonclose
 - vs.untrustedtemplateopeningdocuments
@@ -53,13 +49,13 @@ ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a4e50e386be097338207a2ef66904347f9170d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795255"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +75,7 @@ Podczas tworzenia aplikacji, aplikacji, witryny sieci Web, aplikacji sieci Web s
  Można również utworzyć niestandardowe szablony projektów i elementów. Aby uzyskać więcej informacji, zobacz [tworzenie projektów i szablonów elementów](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Tworzenie nowych projektów
- Najprostszym sposobem utworzenia nowego projektu jest uruchomienie przy użyciu szablonu projektu wstępnie zdefiniowane, co składa się z podstawowego zestawu wstępnie wygenerowanego kodu pliki, pliki konfiguracji, zasobów, i ustawienia, które ułatwiają pracę, tworzenia określonego typu aplikacji lub witryny sieci Web w języków programowania. Te szablony są, zostanie wyświetlony w **okna dialogowego Nowy projekt** po wybraniu **pliku &#124; New &#124; projektu** lub **pliku &#124; New &#124; witryny sieci Web** z menu głównego, a następnie przejdź. Aby uzyskać więcej informacji, zobacz [tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md) i [NIB tworzenie projektów z szablonów](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Najprostszym sposobem utworzenia nowego projektu jest uruchomienie przy użyciu szablonu projektu wstępnie zdefiniowane, co składa się z podstawowego zestawu wstępnie wygenerowanego kodu pliki, pliki konfiguracji, zasobów, i ustawienia, które ułatwiają pracę, tworzenia określonego typu aplikacji lub witryny sieci Web w języków programowania. Te szablony są, zostanie wyświetlony w **okna dialogowego Nowy projekt** po wybraniu **pliku &#124; New &#124; projektu** lub **pliku &#124; New &#124; witryny sieci Web** z menu głównego, a następnie przejdź. Aby uzyskać więcej informacji, zobacz [tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md) i [NIB tworzenie projektów z szablonów](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Zarządzanie projektami w Eksploratorze rozwiązań
  Po utworzeniu nowego projektu, należy użyć **Eksploratora rozwiązań** do przeglądania i zarządzania projektów i rozwiązań i ich skojarzonych elementów. Poniższa ilustracja przedstawia Eksploratora serwera za pomocą rozwiązań języka C#, która zawiera dwa projekty.

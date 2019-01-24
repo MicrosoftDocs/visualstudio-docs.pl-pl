@@ -1,14 +1,9 @@
 ---
 title: Ukryty Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 439d2b9eb518cc1d75736be7cb8a31678402985b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7f5150cda1b1285132fd70cd7bd7fa4572121057
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798404"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51757021"
 Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<Ukryte >  
   
 ## <a name="syntax"></a>Składnia  
@@ -93,6 +88,5 @@ Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj no
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
-

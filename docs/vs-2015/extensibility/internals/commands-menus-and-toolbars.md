@@ -1,14 +1,9 @@
 ---
 title: Polecenia, menu i paski narzędzi | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779819"
 ---
 # <a name="commands-menus-and-toolbars"></a>Polecenia, menu i paski narzędzi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Menu i paski narzędzi są użytkownicy sposób uzyskiwać dostęp do poleceń T
   
 - Podczas tworzenia polecenia należy również utworzyć program obsługi zdarzeń dla niego. Program obsługi zdarzeń określa, gdy polecenie jest widoczny czy włączone, można zmodyfikować jego tekstu i gwarantuje, że polecenie odpowiednio reaguje ("trasy") po aktywacji. W większości przypadków środowiska IDE programu obsługi poleceń przy użyciu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Polecenia w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] trasy hierarchicznie, począwszy od najbardziej polecenia w kontekście, na podstawie wybranych lokalnych i kontynuowanie prowadzące kontekstu, w oparciu o wybór globalnego. Polecenia dodane do menu głównego są natychmiast dostępne dla skryptów. Aby uzyskać więcej informacji, zobacz [MenuCommands programu Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) i [wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md).  
   
-  Aby zdefiniować nowe menu i paski narzędzi, możesz opisać je w pliku tabeli poleceń w usłudze Visual Studio (vsct). Szablon do pakietu Visual Studio tworzy tego pliku, wraz z elementów wymaganych do obsługi niezależnie od poleceń, paskach narzędzi i edytory, które wybrano w szablonie. Alternatywnie, możesz napisać własnego pliku vsct przy użyciu schematu xml, opisane w tym miejscu: [odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+  Aby zdefiniować nowe menu i paski narzędzi, możesz opisać je w pliku tabeli poleceń w usłudze Visual Studio (vsct). Szablon do pakietu Visual Studio tworzy tego pliku, wraz z elementów wymaganych do obsługi niezależnie od poleceń, paskach narzędzi i edytory, które wybrano w szablonie. Alternatywnie można napisać własny plik vsct przy użyciu schematu xml, opisane w tym miejscu: [Odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md).  
   
   Aby uzyskać więcej informacji na temat pracy z plikami vsct zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
@@ -69,4 +64,3 @@ Menu i paski narzędzi są użytkownicy sposób uzyskiwać dostęp do poleceń T
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Routing poleceń w pakietach VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
  W tym artykule wyjaśniono, routing poleceń w pakietach VSPackage.
-

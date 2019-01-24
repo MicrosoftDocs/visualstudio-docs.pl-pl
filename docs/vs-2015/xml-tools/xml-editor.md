@@ -1,25 +1,20 @@
 ---
-title: Edytor XML | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: XML Editor | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 623869f3-040b-4bf4-b353-ddc2229694e4
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: caff32f582778ec03765554979abe6be5d608d26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787496"
 ---
 # <a name="xml-editor"></a>Edytor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Edytor XML opiera się na [!INCLUDE[msCoName](../includes/msconame-md.md)] Edyto
   
 -   Inteligentne sprawdzania poprawności podczas Edytowanie arkuszy stylów XSLT.  
   
--   Eksplorator schematu XML.  
+-   XML Schema Explorer.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Walidacja dokumentów XML](../xml-tools/xml-document-validation.md)  
@@ -80,14 +75,11 @@ Edytor XML opiera się na [!INCLUDE[msCoName](../includes/msconame-md.md)] Edyto
  W tym artykule opisano składniki interfejsu użytkownika w edytorze XML.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Edytowanie tekstu, kodu i znaczników](http://msdn.microsoft.com/en-us/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [Edytowanie tekstu, kodu i znaczników](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  Zawiera informacje na temat edytora tekstu.  
   
- [Odwołanie do standardów XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Odwołanie do standardów XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Zawiera informacje dotyczące technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

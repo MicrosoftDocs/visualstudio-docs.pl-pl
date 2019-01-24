@@ -1,21 +1,17 @@
 ---
 title: Dowiedz się, podstawy tworzenia aplikacji przy użyciu zestawu narzędzi Xamarin.Forms
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 0cbc20bd714cabf9747145c114abfaa58a2e52a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6d10240383ddaf4ec2eb242dfc180c59ff084f1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058327"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780265"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Podstawowe informacje dotyczące tworzenia aplikacji za pomocą platformy Xamarin.Forms w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -385,7 +381,7 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
    </ContentPage>
    ```
 
-    Zwróć uwagę na użycie **OnPlatform** tagu w interfejsie Xamarin.Forms. **OnPlatform** wybiera wartość właściwości, które są specyficzne dla bieżącej platformy, na którym uruchomiona jest aplikacja (zobacz [zewnętrznych składnia XAML](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (strony xamarin.com). Firma Microsoft korzysta z jej w tym miejscu można ustawić inny kolor tekstu dla pól danych: biały w systemach Android i Windows Phone, Black w systemie iOS. Możesz użyć **OnPlatform** dla dowolnej właściwości i wszystkie typy danych korygowanie specyficzne dla platformy dowolne miejsce w Twojej XAML. W pliku związanym z kodem, można użyć [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) w tym samym celu.
+    Zwróć uwagę na użycie **OnPlatform** tagu w interfejsie Xamarin.Forms. **OnPlatform** wybiera wartość właściwości, które są specyficzne dla bieżącej platformy, na którym uruchomiona jest aplikacja (zobacz [zewnętrznych składnia XAML](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (strony xamarin.com). Firma Microsoft korzysta z jej w tym miejscu można ustawić inny kolor tekstu dla pól danych: Oficjalny w systemach Android i Windows Phone, Black w systemie iOS. Możesz użyć **OnPlatform** dla dowolnej właściwości i wszystkie typy danych korygowanie specyficzne dla platformy dowolne miejsce w Twojej XAML. W pliku związanym z kodem, można użyć [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) w tym samym celu.
 
 2. W **WeatherPage.xaml.cs**, Zastąp **GetWeatherBtn_Clicked** programu obsługi zdarzeń z poniższym kodem. Ten kod sprawdza, że nie jest kod pocztowy w polu wpisu, pobiera dane dla tego kodu pocztowego, ustawia kontekst powiązania cały ekran do wynikowego wystąpienia pogody, a następnie ustawia tekst przycisku "Wyszukaj ponownie." Należy pamiętać, że każdej etykiety w interfejsie użytkownika powiąże z właściwością klasy pogody, więc podczas równa kontekstu powiązania ekranu **pogody** wypadku te etykiety automatycznej aktualizacji.
 

@@ -1,14 +1,9 @@
 ---
 title: Zarządzanie wyjątkami za pomocą debugera | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790905"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Zarządzanie wyjątkami za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -189,12 +184,7 @@ public class GenericException<T> : Exception
 ## <a name="see-also"></a>Zobacz też  
  [Kontynuowanie wykonania po wystąpieniu wyjątku](../debugger/continuing-execution-after-an-exception.md)   
  [Instrukcje: Badanie kodu systemu po wystąpieniu wyjątku](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Porady: Korzystanie z macierzystego sprawdzania w czasie wykonywania](../debugger/how-to-use-native-run-time-checks.md)   
+ [Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania](../debugger/how-to-use-native-run-time-checks.md)   
  [Za pomocą środowiska wykonawczego sprawdza, czy bez biblioteki wykonawczej języka C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Asystent wyjątków](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
-
-
-
-
-

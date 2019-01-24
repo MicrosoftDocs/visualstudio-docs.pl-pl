@@ -1,14 +1,9 @@
 ---
 title: Ocenianie wyrażenia okna wyrażeń kontrolnych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4dc9a56927ebe1e7b962ab815eb34028ba75350c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb60ec9d471c99b24e07eef11014ce82a18d50b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783883"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Ocenianie wyrażenia okna wyrażeń kontrolnych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51801478"
 7.  Visual Studio wywołania [getpropertyinfo —](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) do uzyskania wartości wyrażenia, które są następnie wyświetlane na liście obserwowanych.  
   
 ## <a name="parse-then-evaluate"></a>Analizowanie, a następnie oceny  
- Ponieważ analizowania złożone wyrażenie może trwać znacznie dłużej niż jej oceny, procesu oceny wyrażenia został podzielony na dwie czynności: 1) przeanalizować wyrażenia i (2) oceniają wyrażenie przeanalizowany. W ten sposób oceny można przeprowadzić na wiele razy, ale wyrażenie musi być analizowana tylko raz. Pośredni przeanalizowany wyrażenie jest zwracana z EE w [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiekt, który z kolei jest hermetyzowany i zwrócony z DE jako [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiektu. `IDebugExpression` Obiekt różni się wszystkie oceny `IDebugParsedExpression` obiektu.  
+ Ponieważ analizowania złożone wyrażenie może trwać znacznie dłużej niż jej oceny, procesu oceny wyrażenia został podzielony na dwie czynności: ((1) analizowania wyrażenia i 2) obliczenia wyrażenia przeanalizowany. W ten sposób oceny można przeprowadzić na wiele razy, ale wyrażenie musi być analizowana tylko raz. Pośredni przeanalizowany wyrażenie jest zwracana z EE w [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiekt, który z kolei jest hermetyzowany i zwrócony z DE jako [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiektu. `IDebugExpression` Obiekt różni się wszystkie oceny `IDebugParsedExpression` obiektu.  
   
 > [!NOTE]
 >  Nie jest konieczne EE stosować się do ten dwuetapowy proces, mimo że program Visual Studio zakłada EE można przeanalizować i oceny w tym samym kroku podczas [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) nosi nazwę (jest to przykład MyCEE działania, na przykład). Język może tworzyć złożone wyrażenia, można oddzielić kroku analizy od kroku oceny. Może to zwiększyć wydajność w debugerze programu Visual Studio, gdy wiele Obejrzyj wyrażenia są pokazywane.  
@@ -67,4 +62,3 @@ ms.locfileid: "51801478"
   
 ## <a name="see-also"></a>Zobacz też  
  [Pisanie ewaluatora wyrażeń środowiska CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

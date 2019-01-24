@@ -1,27 +1,22 @@
 ---
-title: 'Krok 8: Dodaj metodę, aby sprawdzić, czy gracz wygrał | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 8. Dodaj metodę, aby sprawdzić, czy gracz wygrał | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 278d8d71378c0d14047fe8e012fed21951101548
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 18f234f5b283c20db730b241d6dd73c3524f430e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792783"
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8. Dodanie metody sprawdzania, czy gracz wygrał
+# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8. Dodawanie metody sprawdzania, czy gracz wygrał
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna się kończyć kiedy gracz wygrywa, więc trzeba dodać `CheckForWinner()` metodę, aby sprawdzić, czy gracz wygrał.  
@@ -47,9 +42,6 @@ Gra w dopasowywanie z MessageBox
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 9: Wypróbuj inne funkcje](../ide/step-9-try-other-features.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 9: Spróbuj innych funkcji](../ide/step-9-try-other-features.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [kroku 7: Keep Pairs Visible](../ide/step-7-keep-pairs-visible.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [kroku 7: Zachować widoczność par](../ide/step-7-keep-pairs-visible.md).

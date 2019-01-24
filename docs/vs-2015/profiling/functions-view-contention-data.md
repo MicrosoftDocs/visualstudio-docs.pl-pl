@@ -1,27 +1,22 @@
 ---
 title: Widok funkcji - dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ada92736312501d05504cf7b69ad07b549f31df
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762990"
 ---
 # <a name="functions-view---contention-data"></a>Widok funkcji — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Raport funkcji widoku list danych rywalizacji o zasoby funkcji w trakcie uruchom
   
  W poniższej tabeli przedstawiono wartości, które są wyświetlane w widoku funkcji w pliku danych profilowania, które zostały zebrane za pomocą metody współbieżności.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Wyłączny czas blokowania**|Ilość czasu, w którym ta funkcja został zablokowany wykonywanie kodu w treści funkcji. Czas blokowania w funkcjach, które zostały wywołane przez funkcję nie jest włączony.|  
 |**% Własnego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, który był wyłączny czas blokowania w tej funkcji.|  
@@ -50,12 +45,9 @@ Raport funkcji widoku list danych rywalizacji o zasoby funkcji w trakcie uruchom
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok funkcji](../profiling/functions-view.md)   
  [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Widok funkcji](../profiling/functions-view-instrumentation-data.md)   
  [Widok funkcji](../profiling/functions-view-sampling-data.md)
-
-
-

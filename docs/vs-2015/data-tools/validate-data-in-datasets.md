@@ -1,12 +1,9 @@
 ---
 title: Sprawdzanie poprawności danych w zestawach danych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - DataTable.ColumnChanging
 - System.Data.DataTable.ColumnChanging
@@ -26,13 +23,13 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6d49806ff4925dfb1eab978c08bf1111c503e14a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790899"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

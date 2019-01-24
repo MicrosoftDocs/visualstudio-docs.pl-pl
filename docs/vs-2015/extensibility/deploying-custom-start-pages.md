@@ -1,27 +1,22 @@
 ---
 title: Wdrażanie niestandardowych stron początkowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 32527208fc33f1868ff13e7fda84bc4082126c00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781497"
 ---
 # <a name="deploying-custom-start-pages"></a>Wdrażanie niestandardowych stron początkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
   
 - Dodając niestandardowe pliki strony początkowej do pusty projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).  
   
-- Za pomocą ręcznego tworzenia pliku .vsix. Aby uzyskać więcej informacji, zobacz [porady: ręczne pakietu rozszerzenia (VSIX wdrożenie)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Za pomocą ręcznego tworzenia pliku .vsix. Aby uzyskać więcej informacji, zobacz [jak: Ręcznie pakietu rozszerzenia (VSIX wdrożenie)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Dla programu Visual Studio, rozpoznawał strony początkowej `Content Element` manifestu VSIX musi zawierać `CustomExtension Element` zawierający `Type` ustawioną wartość atrybutu `"StartPage"`. Rozszerzenie strony początkowej, który został zainstalowany przy użyciu wdrożenia VSIX, który pojawia się w **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony jako **[zainstalowane rozszerzenie]** *Nazwa rozszerzenia*.  
   
@@ -76,9 +71,9 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
   
 4.  Modyfikowanie .pkgdef do ustawiania domyślnej strony początkowej w obszarze HKLM, dodając następujące polecenie, gdzie *MyStartPage.xaml* jest nazwą pliku XAML, który zawiera stronę początkową.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
-     "Identyfikator Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
+     "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
      Oznacza to, umieszczenia Visual do wyszukania w nowej lokalizacji strony początkowej.  
   
@@ -98,4 +93,3 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Dodawanie kontrolki użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)
-

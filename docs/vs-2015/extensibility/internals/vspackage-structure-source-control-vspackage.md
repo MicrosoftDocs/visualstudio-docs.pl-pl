@@ -1,27 +1,22 @@
 ---
 title: Struktura pakietu VSPackage (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6eaad545d1c1b3fe96ecbad3a88cc7636b777a54
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 08bb0a296daca0de1c02b905a75fb10ce05f254e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778053"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura pakietu VSPackage (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ Zestaw SDK pakietu kontroli źródła zawiera wytyczne dotyczące tworzenia paki
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>  
   
- Usługa SVsRegisterScciProvider  
+ SVsRegisterScciProvider Service  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>  
   
@@ -82,4 +77,3 @@ Zestaw SDK pakietu kontroli źródła zawiera wytyczne dotyczące tworzenia paki
 ## <a name="see-also"></a>Zobacz też  
  [Elementy projektu](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [Powiązane usługi i interfejsy](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
-

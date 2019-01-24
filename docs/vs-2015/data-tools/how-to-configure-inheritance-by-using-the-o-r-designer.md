@@ -1,23 +1,20 @@
 ---
 title: 'Instrukcje: Skonfigurować dziedziczenie za pomocą projektanta O R | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a6c8e4b2da87185c41157b8d03bd59b37188a43
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49222694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774960"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: Konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ ms.locfileid: "49222694"
 5.  W każdej klasy należy usunąć wszystkie właściwości obiektu, które nie mają być wyświetlane i które nie są używane do skojarzenia. Zostanie wyświetlony błąd, jeśli użytkownik podejmie próbę usunięcia właściwości obiektu, używany do skojarzenia: [Właściwość \<nazwa właściwości > nie można usunąć, ponieważ uczestniczy w skojarzeniu \<Nazwa skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
-    >  Ponieważ klasa pochodna dziedziczy właściwości zdefiniowane w swojej klasie bazowej, te same kolumny nie można zdefiniować w każdej klasie. (Kolumny są implementowane jako właściwości). Tworzenie kolumny w klasie pochodnej można włączyć, ustawiając modyfikator dziedziczenia we właściwości w klasie bazowej. Aby uzyskać więcej informacji, zobacz [NOT IN kompilacji: Zastępowanie właściwości i metody](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    >  Ponieważ klasa pochodna dziedziczy właściwości zdefiniowane w swojej klasie bazowej, te same kolumny nie można zdefiniować w każdej klasie. (Kolumny są implementowane jako właściwości). Tworzenie kolumny w klasie pochodnej można włączyć, ustawiając modyfikator dziedziczenia we właściwości w klasie bazowej. Aby uzyskać więcej informacji, zobacz [NOT IN kompilacji: Zastępowanie właściwości i metody](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
 6.  Zaznacz wiersz dziedziczenia w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
@@ -60,10 +57,9 @@ ms.locfileid: "49222694"
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [PAVE What's New do tworzenia aplikacji danych w programie Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [PAVE What's New do tworzenia aplikacji danych w programie Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Przewodnik: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [NIE W KOMPILACJI: Dziedziczenie w języku Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [NIE W KOMPILACJI: Dziedziczenie w języku Visual Basic](http://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
  [Dziedziczenie](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
-

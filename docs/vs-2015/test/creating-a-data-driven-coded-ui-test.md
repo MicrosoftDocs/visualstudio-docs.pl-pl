@@ -1,26 +1,21 @@
 ---
 title: Tworzenie na podstawie danych kodowanego testu interfejsu użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
 ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755373"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
     }  
     ```  
   
-5.  Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrótów klawiatury: Ctrl + R, T).  
+5.  Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: Ctrl + R, T).  
   
      Wynik testu, który pokazuje, jeśli test zakończony powodzeniem lub niepowodzeniem są wyświetlane w oknie Eksploratora testów. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.  
   
@@ -95,7 +90,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
     }  
     ```  
   
-9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Za pomocą klawiatury klawisze skrótu: Ctrl + R, T).  
+9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Keyboard shortcut:Ctrl + R, T).  
   
      W tym momencie wszystkich wartości parametrów są definiowane w ich metod jako stałe. Następnie utworzymy zestaw danych umożliwiają naszym teście opartych na danych.  
   
@@ -210,7 +205,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
    **Wskazówki**  
   
-   Aby uzyskać więcej informacji, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 2: Unit Testing: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188) i [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Aby uzyskać więcej informacji, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188) i [testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Pytania i odpowiedzi  
   
@@ -239,8 +234,8 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`  
   
-### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>P: czy mogę używać testów opartych na danych w aplikacji Windows Phone?  
- **Odp.:** tak. Oparte na danych kodowanych testów interfejsu użytkownika dla Windows Phone są definiowane dla metody testowej przy użyciu atrybutu wiersza danych. W poniższym przykładzie, x i y Użyj wartości 1 i 2 dla pierwszej iteracji i -1 -2 dla drugiego iteracji testu.  
+### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>PYT.: W mojej aplikacji Windows Phone można używać testów opartych na danych?  
+ **ODP.:** Tak. Oparte na danych kodowanych testów interfejsu użytkownika dla Windows Phone są definiowane dla metody testowej przy użyciu atrybutu wiersza danych. W poniższym przykładzie, x i y Użyj wartości 1 i 2 dla pierwszej iteracji i -1 -2 dla drugiego iteracji testu.  
   
 ```  
 [DataRow(1, 2, DisplayName = "Add positive numbers")]  
@@ -250,8 +245,8 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ```  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?  
- **Odp.:** wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną zastąpione za każdym razem, gdy generowanie kodu za pomocą UIMap - kodowanego testu interfejsu użytkownika. W tym przykładzie i w większości przypadków zmiany kodu wymaganego do włączenia testów korzystających ze źródła danych może przyjąć pliku z kodem źródłowym testu (czyli CodedUITest1.cs).  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYT.: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?  
+ **ODP.:** Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. W tym przykładzie i w większości przypadków zmiany kodu wymaganego do włączenia testów korzystających ze źródła danych może przyjąć pliku z kodem źródłowym testu (czyli CodedUITest1.cs).  
   
  Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
   
@@ -262,6 +257,3 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Widok drzewa wywołań - dane Instrumentacji pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed87363751c18794d9cf4c00e156d75760e0bf8d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dfcee55882ee90af6ed13072a7e557a9c1763ae8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782508"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792996"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Widok drzewa wywołań — dane instrumentacji pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Widok drzewa wywołań .NET dane alokacji pamięci profilowania zebrane przy uż
   
 ## <a name="general"></a>Ogólne  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa funkcji**|Nazwa funkcji.|  
 |**Adres funkcji**|Adres funkcji.|  
@@ -61,7 +56,7 @@ Widok drzewa wywołań .NET dane alokacji pamięci profilowania zebrane przy uż
   
  Wartości wyłączne pamięci wskazuje liczbę i rozmiar obiektów, które zostały utworzone przez kod w treści funkcji, a nie przez funkcje, które zostały wywołane przez funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Przydziały włączne**|Liczba obiektów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Liczba ta obejmuje alokacji dokonanych przez funkcje podrzędnych.|  
 |**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały utworzone w profilowania, były przydziałów włącznych wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań.|  
@@ -71,7 +66,7 @@ Widok drzewa wywołań .NET dane alokacji pamięci profilowania zebrane przy uż
 ## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
  Upłynęło wartości włącznie wskazują godzinę, będący funkcji na stosie wywołań. Czas obejmuje czas spędzony w funkcjach, które zostały wywołane przez funkcję, jak i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas, który upłynął**|Suma, który upłynął całkowity czas wszystkie wywołania do tej funkcji wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
 |**% Całkowitego czasu, który upłynął**|Procent sumy, który upłynął całkowity czas spędzony w całkowity czas całkowity czas tę funkcję, wywołanego przez funkcję nadrzędnego w drzewie wywołań profilowania.|  
@@ -82,7 +77,7 @@ Widok drzewa wywołań .NET dane alokacji pamięci profilowania zebrane przy uż
 ## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości  
  Czas wyłączny wartości wskazują godzinę, wykonywanej funkcji bezpośrednio w górnej części stosu wywołań. Czas obejmuje czas w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia. Jednak podczas nie obejmuje czas spędzony w funkcji, które zostały wywołane przez funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Czas wyłączny, który upłynął**|Suma upłynęło własny czas wszystkie wywołania do tej funkcji, wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
 |**% Wyłącznego czasu, który upłynął**|Procent sumy, który upłynął własny czas spędzony w całkowity czas własny czas tę funkcję, wywołanego przez funkcję nadrzędnego w drzewie wywołań profilowania.|  
@@ -93,7 +88,7 @@ Widok drzewa wywołań .NET dane alokacji pamięci profilowania zebrane przy uż
 ## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji  
  Aplikacji wartości włącznie wskazują czasu, która funkcja była w stosie wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia. Czas obejmują czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas aplikacji**|Łączny całkowity czas aplikacji dla wszystkich wywołań tej funkcji wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
 |**% Całkowitego czasu aplikacji**|Procent sumy, który upłynął całkowity czas spędzony w kompletnej aplikacji, całkowity czas tej funkcji, wywołanego przez funkcję nadrzędnego w drzewie wywołań profilowania.|  
@@ -104,13 +99,10 @@ Widok drzewa wywołań .NET dane alokacji pamięci profilowania zebrane przy uż
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji  
  Aplikacja wyłączne wartości wskazują czas spędzony w funkcji bez czasu spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję. Czas także wyklucza wywołań do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Własny czas aplikacji**|Łączna liczba własny czas aplikacji dla wszystkich wywołań tej funkcji wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
 |**% Własnego czasu aplikacji**|Procent sumy, który upłynął własny czas spędzony w własny czas aplikacji całkowita tej funkcji, wywołanego przez funkcję nadrzędnego w drzewie wywołań profilowania.|  
 |**Średni własny czas aplikacji**|Średni własny czas aplikacji wywołania tej funkcji wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
 |**Maksymalny własny czas aplikacji**|Maksymalny własny czas aplikacji wywołania tej funkcji wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
 |**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji wywołanego przez funkcję nadrzędnego w drzewie wywołań.|
-
-
-

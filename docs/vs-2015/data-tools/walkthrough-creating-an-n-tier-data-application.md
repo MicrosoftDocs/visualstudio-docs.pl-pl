@@ -1,12 +1,9 @@
 ---
 title: 'Przewodnik: Tworzenie aplikacji N-warstwowa danych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 050562a8ac0549bb36712781ba80f58aaf2fc82d
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53648371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769682"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

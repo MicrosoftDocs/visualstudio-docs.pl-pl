@@ -1,24 +1,19 @@
 ---
 title: AppliesTo, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6f789a574b7db1c30dceea32e5d2c0d4ef9afb7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781301"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +22,11 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
  Ten element jest opcjonalny. Plik szablonu może zawierać maksymalnie jedno jego wystąpienie. Element umożliwia jedynie potwierdzenie zgodności szablonu elementu z funkcjami aktualnie zaznaczonego aktywnego projektu. Nie można za jego pomocą ustawić niezgodności szablonu. Jeśli `AppliesTo` jest nieobecny lub wyrażenie pomyślnie zgadzaj, następnie `TemplateID` lub `TemplateGroupID` służy do potwierdzana, jak w poprzednich wersjach produktu.  
   
- Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwołuje się do zestawów zapewniane przez program Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwołuje się do zestawów zapewniane przez program Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
- \<TemplateData >  
- \<AppliesTo >  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -104,6 +99,5 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
-

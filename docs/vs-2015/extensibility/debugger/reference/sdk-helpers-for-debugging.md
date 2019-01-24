@@ -1,14 +1,9 @@
 ---
 title: Pomocnicy zestawu SDK do debugowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764586"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Ustaw wartość różną od zera, aby wskazać, obsługa ustawienie punktów przerwania na zmiany w danych.|  
 |metricDisassembly|Ustaw na różną od zera, aby wskazać, wsparcie dla wersji produkcyjnej, lista dezasemblacji.|  
 |metricDumpWriting|Ustaw wartość różną od zera, aby wskazać, obsługa zrzutu zapisywania (zrzucania pamięci na urządzeniach).|  
-|metricENC|Ustaw na różną od zera, aby wskazać, pomocy technicznej na potrzeby operacji Edytuj i Kontynuuj. **Uwaga:** niestandardowego aparatu debugowania nigdy nie ustawiać lub zawsze należy ustawić na wartość 0.|  
+|metricENC|Ustaw na różną od zera, aby wskazać, pomocy technicznej na potrzeby operacji Edytuj i Kontynuuj. **Uwaga:**  Niestandardowego aparatu debugowania nigdy nie ustawiać lub zawsze należy ustawić na wartość 0.|  
 |metricExceptions|Ustaw wartość różną od zera, aby wskazać, obsługa wyjątków.|  
 |metricFunctionBP|Ustaw wartość różną od zera, aby wskazać, Obsługa nazwanych punkty przerwania (punktów przerwania podziału, gdy wywoływana jest nazwą funkcji).|  
 |metricHitCountBP|Ustaw wartość różną od zera, aby wskazać, pomocy technicznej dla ustawienia "Traf punkt" punkty przerwania (punktów przerwania, które są wyzwalane tylko wtedy, gdy trafienia określonej liczby razy).|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Ustaw tę pozycję do różną od zera, aby wskazać, że dostawca programu powinna zawsze być załadowane lokalnie.|  
 |metricEngineCanWatchProcess|Ustaw tę opcję na wartość różną od zera do wskazania, że aparat debugowania będzie oczekiwał na przetwarzanie zdarzeń, a nie dostawcy programu.|  
 |metricRemoteDebugging|Ustaw tę opcję na wartość różną od zera do wskazania obsługę zdalnego debugowania.|  
-|metricEncUseNativeBuilder|Ustaw tę pozycję do różną od zera, aby wskazać, że Edytuj i Kontynuuj Manager powinien używać encbuild.dll aparat debugowania do kompilacji na potrzeby operacji Edytuj i Kontynuuj. **Uwaga:** niestandardowego aparatu debugowania nigdy nie ustawiać lub zawsze należy ustawić na wartość 0.|  
+|metricEncUseNativeBuilder|Ustaw tę pozycję do różną od zera, aby wskazać, że Edytuj i Kontynuuj Manager powinien używać encbuild.dll aparat debugowania do kompilacji na potrzeby operacji Edytuj i Kontynuuj. **Uwaga:**  Niestandardowego aparatu debugowania nigdy nie ustawiać lub zawsze należy ustawić na wartość 0.|  
 |metricLoadUnderWOW64|Ustaw tę opcję na wartość różną od zera do wskazania, że aparat debugowania powinny być załadowane w procesie debugowanego obiektu w środowisku WOW podczas debugowania procesu 64-bitowego; w przeciwnym razie aparat debugowania zostanie załadowany w procesie programu Visual Studio (który działa w emulatorze WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Ustaw tę opcję na wartość różną od zera do wskazania, że dostawcy programu powinny być załadowane w procesie debugowanego obiektu podczas debugowania procesu 64-bitowego, w środowisku WOW; w przeciwnym razie zostanie załadowany w procesie programu Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Ustaw tę opcję na wartość różną od zera do wskazania, że proces ma zostać zatrzymana, jeśli wystąpił nieobsługiwany wyjątek jest zgłaszany w granicach zarządzanych/niezarządzanych kodu.|  
@@ -270,7 +265,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[klucz rejestru]*|`HKEY_CURRENT_USER` lub `HKEY_LOCAL_MACHINE`.|  
 |*[wersja główny]*|Wersja programu Visual Studio (na przykład `7.0`, `7.1`, lub `8.0`). Jednak ten główny można także modyfikować za pomocą **/rootsuffix** przełączyć się do **devenv.exe**. W przypadku VSIP, ten modyfikator, jest zwykle **Exp**, więc głównej wersji może być na przykład 8.0Exp.|  
-|*[metryki główny]*|Jest to `AD7Metrics` lub `AD7Metrics(Debug)`, w zależności od tego, czy wersja debugowania dbgmetric.lib jest używana. **Uwaga:** czy dbgmetric.lib jest używany, następująca Konwencja nazewnictwa powinien należy przestrzegać w przypadku różnic między debugowaniem i wydawaniem wersje, które musi mieć odzwierciedlenie w rejestrze.|  
+|*[metryki główny]*|Jest to `AD7Metrics` lub `AD7Metrics(Debug)`, w zależności od tego, czy wersja debugowania dbgmetric.lib jest używana. **Uwaga:**  Czy dbgmetric.lib jest używany, następująca Konwencja nazewnictwa powinien należy przestrzegać w przypadku różnic między debugowaniem i wydawaniem wersje, które musi mieć odzwierciedlenie w rejestrze.|  
 |*[type metryki]*|Typ metryki, które ma zostać zapisany: `Engine`, `ExpressionEvaluator`, `SymbolProvider`itp. Są one wszystkie zdefiniowane tak jak dbgmetric.h jako `metricTypeXXXX`, gdzie `XXXX` jest nazwą określonego typu.|  
 |*[Metryka]*|Nazwa wpisu do przypisania wartości, aby można było ustawić wartość metryki. Rzeczywiste organizacji metryk zależy od typu metryki.|  
 |*[wartość metryki]*|Wartość przypisana do metrykę. Metryka zależy od typu wartości powinny mieć (ciąg, liczba itp.).|  
@@ -427,10 +422,9 @@ HRESULT EnumMetricSections(
 ## <a name="requirements"></a>Wymagania  
  Te pliki znajdują się w [!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] katalogu instalacji zestawu SDK (domyślnie *[dysk]* \Program Files\Microsoft programu Visual Studio 2010 SDK\\).  
   
- Nagłówek: includes\dbgmetric.h  
+ Header: includes\dbgmetric.h  
   
  Biblioteki: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

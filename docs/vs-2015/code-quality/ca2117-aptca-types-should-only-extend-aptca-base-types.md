@@ -1,13 +1,9 @@
 ---
 title: 'CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy bazowe APTCA | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2117
 - AptcaTypesShouldOnlyExtendAptcaBaseTypes
@@ -19,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5a8400e99d7b45a20021880628cb5152b6cef3a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786526"
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy bazowe APTCA
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy podstawowe z atrybutem APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +36,7 @@ ms.locfileid: "53913318"
  Typ publiczny lub chroniony w zestawie przy użyciu <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atrybut dziedziczy z typu zadeklarowana w zestawie, który nie ma atrybutu.
 
 ## <a name="rule-description"></a>Opis reguły
- Domyślnie, typy publiczne lub chronione w zestawy o silnych nazwach niejawnie są chronione przez [Inheritancedemand](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pełne zaufanie. Zestawy o silnych nazwach oznaczone <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutu (APTCA) nie mają tej ochrony. Ten atrybut wyłącza żądania dziedziczenia. Dzięki temu narażonych typy zadeklarowane w zestawie dziedziczonych przez typy, które nie mają pełnego zaufania.
+ Domyślnie, typy publiczne lub chronione w zestawy o silnych nazwach niejawnie są chronione przez [Inheritancedemand](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pełne zaufanie. Zestawy o silnych nazwach oznaczone <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutu (APTCA) nie mają tej ochrony. Ten atrybut wyłącza żądania dziedziczenia. Dzięki temu narażonych typy zadeklarowane w zestawie dziedziczonych przez typy, które nie mają pełnego zaufania.
 
  Gdy atrybut APTCA jest obecny w całkowicie zaufanym zestawie i typ w zestawie dziedziczy z typu, który nie zezwala na dostęp częściowo zaufanych wywołań, możliwe jest luki w zabezpieczeniach. Jeśli dwa typy `T1` i `T2` spełniać następujące warunki, złośliwe obiekty wywołujące mogą używać typu `T1` pomijanie dziedziczenia niejawne pełnego zaufania, który chroni `T2`:
 
@@ -88,4 +84,4 @@ ms.locfileid: "53913318"
  [CA2116: Metody z atrybutem APTCA powinny wywoływać tylko metody z atrybutem APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Wytyczne dotyczące bezpiecznego programowania](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [zestawy .NET Framework wywoływane przez częściowo zaufany kod](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [używanie bibliotek pochodzących z częściowo zaufanego kodu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [żądań dziedziczenia](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Wytyczne dotyczące bezpiecznego programowania](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [zestawy .NET Framework wywoływane przez częściowo zaufany kod](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [używanie bibliotek pochodzących z częściowo zaufanego kodu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [żądań dziedziczenia](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

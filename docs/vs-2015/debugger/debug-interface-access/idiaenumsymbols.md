@@ -1,14 +1,9 @@
 ---
 title: Idiaenumsymbols — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84cc5b9de04d101c211117e75c916f653be8f5e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e41cec8cf40195e7156b0515c1aa1a7502e3a03f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775258"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,13 +93,10 @@ void ShowUDTs(IDiaSymbol *pGlobals)
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Idiasourcefile::get_compilands —](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+ [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
-
-
-

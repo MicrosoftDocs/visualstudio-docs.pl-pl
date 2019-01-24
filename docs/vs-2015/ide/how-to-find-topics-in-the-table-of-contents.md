@@ -1,14 +1,9 @@
 ---
-title: 'Porady: znajdowanie tematów w spisie treści | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Znajdowanie tematów w spisie treści | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -20,15 +15,15 @@ ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778345"
 ---
-# <a name="how-to-find-topics-in-the-table-of-contents"></a>Porady: znajdowanie tematów w Spisie treści
+# <a name="how-to-find-topics-in-the-table-of-contents"></a>Instrukcje: Znajdowanie tematów w spisie treści
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć informacje. Spis treści to rozwijana lista, która zawiera wszystkie tematy w zainstalowanych książkach. Aby uzyskać informacje o ułatwieniach dostępu dotyczących sposobu nawigowania w spisie treści, zobacz [klawisze skrótów (Podgląd pomocy)](../ide/shortcut-keys-help-viewer.md).  
@@ -62,6 +57,3 @@ W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć inf
 ## <a name="see-also"></a>Zobacz też  
  [Lokalizowanie informacji](../ide/locate-information.md)   
  [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)
-
-
-

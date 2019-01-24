@@ -1,14 +1,9 @@
 ---
 title: -Setup (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - setup Devenv switch
 - /setup Devenv switch
@@ -17,13 +12,13 @@ ms.assetid: 87608b7f-a156-400c-80f5-fc823f843e61
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f57de02f0d46a14574ef3f34d47f2f5e4018096b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0df3b74b6c5acc4b8630dcf5759dd3fd6e7a1afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805368"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ devenv /setup
   
 ## <a name="see-also"></a>Zobacz też  
  [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-
-
-

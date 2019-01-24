@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Debugowanie formularza Windows | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Debugowanie formularza Windows | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -30,15 +25,15 @@ ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f43835374ac74d50e1e81623ecf268fbfbfe8ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ddec41c95e5bb2a3703cf2502cbf592c0794eba2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726603"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775125"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Wskazówki: Debugowanie formatu Windows
+# <a name="walkthrough-debugging-a-windows-form"></a>Przewodnik: Debugowanie formularza Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.  
@@ -70,7 +65,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
   
 5.  Kliknij przycisk **OK**.  
   
-     Visual Studio tworzy nowy projekt i wyświetla nowy formularz w Projektancie Windows Forms. Aby uzyskać więcej informacji, zobacz [Windows Forms Designer](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio tworzy nowy projekt i wyświetla nowy formularz w Projektancie Windows Forms. Aby uzyskać więcej informacji, zobacz [Windows Forms Designer](http://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
 6.  Na **widoku** menu, wybierz opcję **przybornika**.  
   
@@ -119,7 +114,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
     textBox1->Text = "Button was clicked!";  
     ```  
   
-     Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją.  
+     Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją.  
   
     > [!NOTE]
     >  Również kliknięciu prawym przyciskiem myszy dowolny wiersz kodu, wskaż polecenie **punktu przerwania**, a następnie kliknij przycisk **Wstaw punkt przerwania** można dodać punkt przerwania w danym wierszu.  
@@ -199,6 +194,3 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)
-
-
-

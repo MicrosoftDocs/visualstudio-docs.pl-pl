@@ -1,13 +1,9 @@
 ---
 title: 'CA2115: Wywołaj GC. KeepAlive podczas korzystania z zasobów natywnych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
 - CA2115
@@ -19,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b65d1dd3fa0afd9cc4e3e853260718715aa000a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792244"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Wywołaj GC. KeepAlive podczas korzystania z zasobów natywnych
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

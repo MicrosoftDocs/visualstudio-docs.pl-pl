@@ -1,14 +1,9 @@
 ---
 title: Program Visual Studio Isolated Shell | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], shell-based applications%2C isolated mode
 - Visual Studio shell, isolated mode
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740654"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784860"
 ---
 # <a name="visual-studio-isolated-shell"></a>Program Visual Studio Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Powłoka programu Visual Studio, izolowany umożliwia tworzenie autonomicznych a
 >  Aby korzystać z pakietu redystrybucyjnego programu shell w trybie izolowanym, poprosimy Cię o ankiety klientów.  Po wypełnieniu ankiety, nastąpi przekierowanie do strony Visual Studio Connect zawierającej łącza pobierania pakietów redystrybucyjnych.  Łącza pobierania podczas kolejnych wizyt w witrynie Visual Studio Connect, w obszarze **programy &#124; VISUAL STUDIO 2015 ZINTEGROWANE i ISOLATED SHELL** kartę.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji o sposobie wdrażania aplikacji opartych na powłoce izolowanej zobacz [wskazówki: Tworzenie podstawowej aplikacji izolowanej powłoki](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+>  Aby uzyskać więcej informacji o sposobie wdrażania aplikacji opartych na powłoce izolowanej zobacz [instruktażu: Tworzenie prostej Isolated Shell aplikacji](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Praca z programu isolated shell  
  Aplikacji powłoki programu Visual Studio, izolowany ma pełny dostęp do usług Visual Studio i obsługuje specjalnego dostosowania, znakowania. Istnieje kilka sposobów, które można dostosować aplikacji isolated shell:  
@@ -62,7 +57,7 @@ Powłoka programu Visual Studio, izolowany umożliwia tworzenie autonomicznych a
 |Kategoria funkcji|Funkcja|  
 |----------------------|-------------|  
 |Funkcje środowiska IDE|Ustawienia importu/eksportu<br /><br /> Instalator kontrolki przybornika<br /><br /> Lista zadań & Lista błędów<br /><br /> Okno wyniku<br /><br /> Strona początkowa<br /><br /> Okno Właściwości<br /><br /> Przybornik<br /><br /> Eksplorator rozwiązań<br /><br /> Okno zakładek<br /><br /> Widok klas<br /><br /> Przeglądarka obiektów<br /><br /> Okno polecenia<br /><br /> Konspekt dokumentu<br /><br /> Widok zasobów<br /><br /> Narzędzie zewnętrzne<br /><br /> Windows Communication Foundation (WCF) Dodaj odwołanie do usługi<br /><br /> Language Integrated Query (LINQ) pomocy technicznej|  
-|Projektant/Edytor|Kod przeglądający narzędzia (ujednolicone wyszukiwanie, definicja źródła, dziedziczenie)<br /><br /> IntelliSense<br /><br /> Tagi inteligentne<br /><br /> Menedżer fragmentów kodu<br /><br /> Wstawki kodu<br /><br /> Refaktoryzacja<br /><br /> Lista pretty<br /><br /> Filtrowanie IntelliSense<br /><br /> Okno definicji kodu<br /><br /> Projektant aplikacji<br /><br /> Projektant Windows Forms<br /><br /> Projektant programu Windows Presentation Foundation (WPF)|  
+|Projektant/Edytor|Kod przeglądający narzędzia (ujednolicone wyszukiwanie, definicja źródła, dziedziczenie)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Menedżer fragmentów kodu<br /><br /> Wstawki kodu<br /><br /> Refaktoryzacja<br /><br /> Lista pretty<br /><br /> Filtrowanie IntelliSense<br /><br /> Okno definicji kodu<br /><br /> Projektant aplikacji<br /><br /> Projektant Windows Forms<br /><br /> Projektant programu Windows Presentation Foundation (WPF)|  
 |Debugowanie|Ewaluator wyrażeń C#<br /><br /> Debugowanie lokalne<br /><br /> Zarządzanie debugowaniem<br /><br /> Edytuj i kontynuuj<br /><br /> Debugowanie między wątkami<br /><br /> wizualizacje<br /><br /> DataTips<br /><br /> Debugowanie w trybie macierzystym<br /><br /> Debugowanie skryptów<br /><br /> Debugowania międzyoperacyjnego<br /><br /> Debugowanie just-in-time (JIT)<br /><br /> Debugowanie wielu procesów<br /><br /> Debugowanie kodu XSLT<br /><br /> Dołącz do procesu lokalnego<br /><br /> Punkty śledzenia<br /><br /> Ograniczenia punktu przerwania|  
 |Dane|Eksplorator serwera (uproszczony — tylko dane)<br /><br /> Powiązanie danych z danymi lokalnymi (. MDF lub. MDB)<br /><br /> Powiązanie danych z obiektu<br /><br /> Powiązanie danych z usługi sieci Web<br /><br /> Pełny zestaw formantów danych<br /><br /> Edytor XML<br /><br /> Powiąż dane z lokalnej bazy danych serwera<br /><br /> Data Sources — Okno|  
 |sieć Web|Edytor HTML<br /><br /> Przeglądarki sieci Web<br /><br /> Projektant formularzy sieci Web<br /><br /> Projekt witryny sieci Web<br /><br /> Projekt aplikacji sieci Web|  
@@ -70,4 +65,3 @@ Powłoka programu Visual Studio, izolowany umożliwia tworzenie autonomicznych a
   
 ## <a name="see-also"></a>Zobacz też  
  [Shell (Isolated lub Integrated)](../extensibility/shell-isolated-or-integrated.md)
-

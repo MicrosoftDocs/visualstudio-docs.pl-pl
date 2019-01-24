@@ -1,12 +1,9 @@
 ---
 title: Pisanie szablonu tekstowego T4 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897800"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775909"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio lub innych hostów z szablonu](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio lub innych hostów z szablonu](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Szablony tekstu czasu projektowania uruchamiane w oddzielnej domenie aplikacji  
  Należy zwrócić uwagę, [szablon tekstowy czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) działa w elemencie AppDomain, który jest oddzielony od głównej aplikacji. W większości przypadków nie ma to znaczenia, jednak w pewnych skomplikowanych przypadkach mogą wystąpić ograniczenia. Na przykład aby można było przekazać dane między szablonem a osobną usługą, usługa musi udostępniać interfejs API obsługujący serializację.  
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |Generowanie tekstu poza Uruchom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Przekształć dane w postaci języka specyficznego dla domeny.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Napisz dyrektywy procesorów, którą należy przekształcić źródła danych.|[Dopasowanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md)|
-
-
-

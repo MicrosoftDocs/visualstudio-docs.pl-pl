@@ -1,27 +1,22 @@
 ---
 title: Rejestrowanie ewaluatora wyrażeń | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluators, registering
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29aaef797ad18fd63e4f587901dbf3b29dbb73b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fa412b37ae735ffd53acba9d7e9730f4a51ce416
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808346"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793909"
 ---
 # <a name="registering-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -118,7 +113,7 @@ namespace EEMC
   
 2.  Wywołuje funkcję Pomocnika `SetEEMetric` zarejestrować za pomocą programu Visual Studio metryki EE pokazano w poniższej tabeli. Funkcja `SetEEMetric` i metryki wymienionymi poniżej są częścią biblioteki dbgmetric.lib. Zobacz [pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Aby uzyskać szczegółowe informacje.  
   
-    |Metryki|Opis|  
+    |Metryka|Opis|  
     |------------|-----------------|  
     |`metricCLSID`|`CLSID` fabryki klas EE|  
     |`metricName`|Nazwa EE jako ciąg zawiera|  
@@ -220,4 +215,3 @@ static HRESULT RegisterMetric( bool registerIt )
 ## <a name="see-also"></a>Zobacz też  
  [Pisanie ewaluatora wyrażeń środowiska CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-

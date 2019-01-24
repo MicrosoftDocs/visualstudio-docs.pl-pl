@@ -1,14 +1,9 @@
 ---
-title: 'Szybki Start: Analiza kodu C i c++ | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Szybki start: Analiza kodu C i c++ | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,15 +11,15 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789866"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Szybki start: Analiza kodu dla C/C++
+# <a name="quick-start-code-analysis-for-cc"></a>Szybki start: Analiza kodu C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby poprawić jakość aplikacji, należy regularnie uruchamiania analizy kodu dla kodu C lub C++. To może pomóc w znalezieniu typowe problemy, naruszeń dobrą praktyką programowania lub usterki, które są trudne do odnajdywania za pomocą testowania. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ analiza kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu.  
@@ -130,11 +125,8 @@ Aby poprawić jakość aplikacji, należy regularnie uruchamiania analizy kodu d
 ##  <a name="BKMK_Search"></a> Wyszukiwanie i filtrowanie wyników analizy kodu  
  Możesz wyszukiwać długim spisem komunikaty ostrzegawcze i filtrować ostrzeżeń w rozwiązaniach dotyczących wielu projektów.  
   
-1.  **Aby ostrzeżeń filtru według tytułu lub identyfikator ostrzeżenia**: Wprowadź słowo kluczowe w **filtru** pola tekstowego.  
+1.  **Aby ostrzeżeń filtru według tytułu lub identyfikator ostrzeżenia**: Wprowadź słowa kluczowego w **filtru** pola tekstowego.  
   
 2.  **Aby ostrzeżeń filtru przez projekt**: W ramach rozwiązania wielu projektów, wybierz jeden lub więcej projektów, na liście u góry po prawej krawędzi okna analizy kodu. Wybierz nazwę rozwiązania, aby wyświetlić wszystkie ostrzeżenia.  
   
 3.  **Aby ostrzeżeń filtru według ważności**: Domyślnie komunikaty analizy kodu są przypisywane ważność **ostrzeżenie**. Możesz przypisać wagi co najmniej jedna wiadomość jako **błąd** w zestawie reguł niestandardowych. Wybierz opcję **ostrzeżenie** lub **błąd** do wyświetlenia tylko komunikaty, które są przypisane do odpowiednich ważności. Wybierz **wszystkich** można wyświetlić wszystkie komunikaty.
-
-
-

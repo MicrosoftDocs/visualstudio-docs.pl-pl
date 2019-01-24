@@ -1,28 +1,23 @@
 ---
 title: 'Przewodnik: Wyświetlanie tagi inteligentne | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783360"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Przewodnik: Wyświetlanie tagi inteligentne
-Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [wskazówki: wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Tagi inteligentne są tagi w tekście, które rozwinąć w celu wyświetlenia działań. Na przykład w projekcie języka Visual Basic lub Visual C# czerwona linia będzie widoczna w wyrazu po zmianie nazwy identyfikatora, takie jak nazwa zmiennej. Gdy przesuniesz wskaźnik nad podkreślenie przycisku jest wyświetlany obok wskaźnika. Jeśli klikniesz przycisk, sugerowanej akcji jest wyświetlany, na przykład **IsRead Zmień nazwę, aby IsReady**. Jeśli klikniesz akcji, wszystkie odwołania do **IsRead** zostały zmienione w projekcie **IsReady**.  
   
@@ -31,7 +26,7 @@ Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [wskazówki: wyś
 > [!NOTE]
 >  W podobny sposób można zaimplementować innych rodzajów tagów.  
   
- Następujące instruktaż przedstawia sposób tworzenia tagu inteligentnego, który pojawia się na bieżącego słowa i ma dwa sugerowanych akcji: **Konwertuj na wielkie litery** i **konwersji na małe litery**.  
+ Następujące instruktaż przedstawia sposób tworzenia tagu inteligentnego, pojawia się na bieżącego słowa, która ma dwa sugerowane akcje: **Konwertuj na wielkie litery** i **konwersji na małe litery**.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -185,7 +180,7 @@ Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [wskazówki: wyś
   
      Przycisk powinien zostać wyświetlony obok wskaźnika.  
   
-5.  Po kliknięciu przycisku, dwa sugerowanych akcji powinny być wyświetlane: **Konwertuj na wielkie litery** i **konwersji na małe litery**. Jeśli klikniesz pierwszą akcją, cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz drugiej akcji, cały tekst powinny być konwertowane na małe litery.  
+5.  Po kliknięciu przycisku, powinny być wyświetlane dwie sugerowane akcje: **Konwertuj na wielkie litery** i **konwersji na małe litery**. Jeśli klikniesz pierwszą akcją, cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz drugiej akcji, cały tekst powinny być konwertowane na małe litery.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

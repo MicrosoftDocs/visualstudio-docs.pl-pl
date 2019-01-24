@@ -1,14 +1,9 @@
 ---
 title: Idiadatasource::loadandvalidatedatafrompdb — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: efd5641083bded6729a7c2c698b5a1164a280118
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f19a910af45ed70ae74c72441890ecae6c81d2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754160"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ HRESULT loadAndValidateDataFromPdb ( 
 |E_PDB_INVALID_SIG|Podpis nie odpowiada.|  
 |E_PDB_INVALID_AGE|Okres ważności jest niezgodny.|  
 |E_INVALIDARG|Nieprawidłowy parametr.|  
-|WARTOŚĆ E_UNEXPECTED|Źródło danych zostało już przygotowane.|  
+|E_UNEXPECTED|Źródło danych zostało już przygotowane.|  
   
 ## <a name="remarks"></a>Uwagi  
  Plik .pdb zawiera wartości zarówno podpis, jak i wieku. Te wartości są replikowane w pliku .exe lub .dll, który pasuje do pliku .pdb. Przed przygotowaniem źródła danych, ta metoda sprawdza, czy podpis i wiek pliku .pdb o nazwie odpowiadają podanych wartości.  
@@ -96,10 +91,7 @@ if (FAILED(hr))
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiadatasource::loaddatafrompdb —](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
-
-
-

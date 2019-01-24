@@ -1,33 +1,28 @@
 ---
 title: Krok 3. Dodawanie czasomierza odliczania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5bbbc5e7de56e3ab03976b1933895035913bb7d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4440370453db96fa207c283e9c4a03b28d7ef6b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775971"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczania
+# <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczającego w dół
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę sekund, które pozostają uczestnikowi quizu do zakończenia.  
   
 > [!NOTE]
->  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz, Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Aby dodać minutnik  
   
@@ -114,7 +109,4 @@ Quiz matematyczny w toku
   
 -   Aby przejść do następnego kroku samouczka, zobacz [krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md).

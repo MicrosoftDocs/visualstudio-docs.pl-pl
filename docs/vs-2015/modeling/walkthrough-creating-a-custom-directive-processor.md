@@ -1,12 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie niestandardowego procesora dyrektywy | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie niestandardowego procesora dyrektywy | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,15 +11,15 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798799"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Wskazówki: tworzenie niestandardowego procesora dyrektywy
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Przewodnik: Tworzenie niestandardowego procesora dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dyrektywa procesorami * pracy, dodając kod do *wygenerowanej klasy przekształcenia*. Jeśli wywołasz *dyrektywy* z *szablonu tekstu*, reszta kodu napisanego w szablonie tekstowym może polegać na funkcjonalności, jaką zapewnia dyrektywa.  
@@ -667,7 +664,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
    |-----------|--------|--------------------------------------------------------------------------|
    | (Domyślnie) | REG_SZ |                             (wartość nieustawiona)                              |
    |   Class   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
-   | CodeBase  | REG_SZ | <strong>\<Ścieżka do rozwiązania ></strong>CustomDP\bin\Debug\CustomDP.dll |
+   | CodeBase  | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
     Jeśli zestaw znajduje się w pamięci podręcznej GAC, wartości powinny wyglądać tak:  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Aby wyświetlić dane wyjściowe w przeglądarce w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy TestDP.htm i kliknij przycisk **Pokaż w przeglądarce**.  
 
      Dane wyjściowe powinny być takie same, jak oryginalny tekst, z tą różnicą, że mają zastosowany format HTML. Każda nazwa elementu powinna być wyświetlana czcionką pogrubioną.
-
-
-

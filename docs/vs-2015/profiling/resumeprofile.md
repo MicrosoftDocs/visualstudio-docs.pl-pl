@@ -1,27 +1,22 @@
 ---
-title: ResumeProfile | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: ResumeProfile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - ResumeProfile
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 242c0785523ab1a84279211ba866bf15709724ad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 289aff1025570d0840eb4f0815b88d9023033a7c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763425"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,9 +68,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informacje o funkcji  
- Nagłówek: Zadeklarowanych w VSPerf.h  
+ Nagłówek: Zadeklarowane w VSPerf.h  
   
- Bibliotekę importowaną: VSPerf.lib  
+ Biblioteka importów: VSPerf.lib  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie pokazano funkcję ResumeProfile. W przykładzie założono, czy Wykonano wywołanie metody SuspendProfile dla tego samego wątku lub proces zidentyfikowany przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
@@ -112,6 +107,3 @@ void ExerciseResumeProfile()
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

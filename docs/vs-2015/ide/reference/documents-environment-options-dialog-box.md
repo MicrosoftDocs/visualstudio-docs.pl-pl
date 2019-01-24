@@ -1,14 +1,9 @@
 ---
 title: Dokumenty, środowisko, okno dialogowe Opcje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -37,13 +32,13 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246210"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778581"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49246210"
 Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzanie zmianami zewnętrzne dokumenty i pliki. To okno dialogowe można skorzystać, klikając **opcje** na **narzędzia** menu, a następnie wybierając **dokumenty** w **środowiska** węzła. Jeśli **dokumenty** nie ma na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]
->  Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Użyj ponownie bieżące okno dokumentu, jeśli zapisane**  
  Po wybraniu powoduje zamknięcie bieżącego dokumentu, jeśli zostały zapisane i zostanie otwarty nowy dokument, w tym samym oknie. Jeśli nie został zapisany bieżącego dokumentu, pozostaje otwarty, a nowy dokument jest otwarty w osobnym oknie. Gdy ta opcja jest zaznaczona, nowe dokumenty zawsze Otwórz w oddzielnych okien.  
@@ -95,6 +90,3 @@ Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w
  [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)   
  [Różne pliki](../../ide/reference/miscellaneous-files.md)   
  [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)
-
-
-

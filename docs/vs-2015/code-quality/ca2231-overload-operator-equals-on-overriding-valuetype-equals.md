@@ -1,13 +1,9 @@
 ---
 title: 'CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OverloadOperatorEqualsOnOverridingValueTypeEquals
 - CA2231
@@ -20,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c4abff3aa848861645e0f22f906cdad15ce298d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 679df7b916740ad1a45d624f9f50d38c94d64caf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786595"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

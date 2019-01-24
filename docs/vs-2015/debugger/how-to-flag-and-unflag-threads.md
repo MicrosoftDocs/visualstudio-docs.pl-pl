@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Oflagowanie i usuwanie oflagowania wątków | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Oflagowanie i usuwanie oflagowania wątków | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5816007476da56321e58182e636b54a5a5697994
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be6ebe9e2031b24442f368b626d53b15a043023c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754149"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Porada: Oflagowanie i usuwanie oflagowania wątków
+# <a name="how-to-flag-and-unflag-threads"></a>Instrukcje: Oflagowanie i usuwanie oflagowania wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków**, **stosów równoległych**, **równoległego wyrażenia kontrolnego**, i **procesora GPU Wątki** systemu windows. Ta ikona może pomóc i inne odróżnić oflagowane wątki z innych wątków.  
@@ -67,7 +62,4 @@ Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczają
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Przewodnik: debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-
+ [Przewodnik: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)

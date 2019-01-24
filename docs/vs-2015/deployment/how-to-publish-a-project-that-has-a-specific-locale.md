@@ -1,14 +1,9 @@
 ---
-title: 'Porady: publikowanie projektu o specyficznych ustawieniach regionalnych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Publikowanie projektu o specyficznych ustawieniach regionalnych | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,15 +20,15 @@ ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+manager: jillfra
+ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753769"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Porady: publikowanie projektu o specyficznych ustawieniach regionalnych
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: Publikowanie projektu o specyficznych ustawieniach regionalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różnych ustawień regionalnych. W tym scenariuszu może utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. Ta procedura pokazuje, jak publikować pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "PL" za pomocą makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", upewnij się ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład, "de" lub "de-DE").  
@@ -171,9 +166,6 @@ Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różn
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Makra środowiska deweloperskiego](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Okno Eksploratora — makro](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Porady: edytowanie i programowe tworzenie makra](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
-
-
-
+ [Makra środowiska deweloperskiego](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Okno Eksploratora — makro](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Instrukcje: Edytowanie i programowe tworzenie makra](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

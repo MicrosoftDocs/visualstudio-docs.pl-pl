@@ -1,27 +1,22 @@
 ---
 title: Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790994"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752916"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) służ
 |Nazwa|Określa opis dostawcę znaczników.|Ciąg.|  
 |Kategorie|Określa kategorie zbierane na potrzeby dostawcę znaczników.|Rozdzielana przecinkami ciąg liczb lub zakresy liczb.|  
 |isEnabled|Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji.|— Wartość true<br />— Wartość false|  
-|FilterConfig|Określa listę opcji konfiguracji zdarzeń ETW, które zostały przefiltrowane z kolekcji.|Może zawierać następujące elementy:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO|  
+|FilterConfig|Określa listę opcji konfiguracji zdarzeń ETW, które zostały przefiltrowane z kolekcji.|Może zawierać następujące elementy:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-   CollectFileIO|  
 |CollectClrEvents|Wartość, która określa, czy są zbierane zdarzenia CLR.|— Wartość true<br />— Wartość false|  
 |ClrCollectionOptions|Określa, czy służąca do gromadzenia zdarzeń CLR w przypadku aplikacji natywnych i czy służąca do gromadzenia zdarzeń podsumowania NGEN.|Może zawierać jeden, zarówno lub żadna z tych wartości:<br /><br /> -CollectForNative<br />-DisableNGenRundown|  
 |CollectSampleEvents|Ustawia wartość określającą, czy próbkowane zdarzenia są zbierane.|— Wartość true<br />— Wartość false|  
@@ -158,6 +153,3 @@ Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) służ
 </LocalConfig>  
   
 ```
-
-
-

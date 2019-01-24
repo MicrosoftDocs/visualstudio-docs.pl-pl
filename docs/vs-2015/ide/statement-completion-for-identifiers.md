@@ -1,14 +1,9 @@
 ---
 title: Uzupełnianie składni dla identyfikatorów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript], statement completion
 - statement completion, JavaScript IntelliSense
@@ -16,13 +11,13 @@ ms.assetid: c2cd4945-c67e-471b-8057-96cfd25f7fb2
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d58c5ecc1d787195f7f5c91a07da7a4e775fc27e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 89f507c2f4d01cf5e3e1e983cfcb5bafd9d9a7dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787655"
 ---
 # <a name="statement-completion-for-identifiers"></a>Uzupełnianie składni dla identyfikatorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ Język JavaScript nie zezwala na jawnych typowań wartości w celu deklaracje zm
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcja IntelliSense dla języka JavaScript](../ide/javascript-intellisense.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: Funkcja SccGetCommandOptions | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: SccGetCommandOptions Function | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 10f47a193a3ff47412249e094c1c9364653350ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb5290b607d20ef38481cfae9eaa3310857915f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790520"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,4 +80,3 @@ SCCRTN SccGetCommandOptions(
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
  [Kod polecenia](../extensibility/command-code-enumerator.md)
-

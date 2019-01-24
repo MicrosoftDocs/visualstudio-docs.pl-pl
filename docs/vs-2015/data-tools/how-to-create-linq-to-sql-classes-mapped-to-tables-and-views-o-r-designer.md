@@ -1,25 +1,22 @@
 ---
-title: 'Porady: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (Projektant O-R) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (Projektant O-R) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782995"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Porady: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (O/R Designer)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Klasy LINQ do SQL, które są mapowane na bazę danych, tabele i widoki są nazywane *klas jednostek*. Klasa jednostki mapuje rekord, podczas gdy poszczególne właściwości klasy jednostki mapują do poszczególnych kolumn, które tworzą rekord. Tworzenie klas jednostek, które są oparte na bazy danych tabel lub widoków, przeciągając tabele lub widoki z **Eksploratora serwera**/**Eksplorator bazy danych** na [narzędzi LINQ to SQL w Program Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Generuje klasy, a następnie stosuje konkretne [! LINQ do SQL atrybutów umożliwiające [! LINQ do SQL funkcji (łączności danych i możliwości edytowania <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje o [! Klasy LINQ do SQL, zobacz [LINQ to SQL Model obiektów](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
@@ -29,7 +26,7 @@ Klasy LINQ do SQL, które są mapowane na bazę danych, tabele i widoki są nazy
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Tworzenie klasy LINQ do SQL, które są mapowane do bazy danych tabel lub widoków
  Przeciąganie tabele lub widoki z **Eksploratora serwera**/**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tworzy klas jednostek oprócz <xref:System.Data.Linq.DataContext> metod, które są używane do wykonywanie aktualizacji.
 
- Domyślnie [! LINQ do SQL środowiska uruchomieniowego tworzy logiki, aby zapisać zmiany z klasy można aktualizować jednostek w bazie danych. Tę logikę opiera się na schemat tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz tego zachowania, można skonfigurować klasę jednostki, aby użyć procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwa zamiast przy użyciu domyślnego [! LINQ do SQL zachowania w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+ Domyślnie [! LINQ do SQL środowiska uruchomieniowego tworzy logiki, aby zapisać zmiany z klasy można aktualizować jednostek w bazie danych. Tę logikę opiera się na schemat tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz tego zachowania, można skonfigurować klasę jednostki, aby użyć procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwa zamiast przy użyciu domyślnego [! LINQ do SQL zachowania w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -66,10 +63,10 @@ Klasy LINQ do SQL, które są mapowane na bazę danych, tabele i widoki są nazy
 ## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Wskazówki: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
+- [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
 - [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Instrukcje: tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [Instrukcje: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [Model obiektu LINQ to SQL](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
-- [Przewodnik: dostosowywanie zachowania wstawiania, aktualizacji i usuwania dla klas jednostek](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
-- [Wskazówki: Dodawanie walidacji do klas jednostek](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
-- [Instrukcje: tworzenie skojarzenia (relacji) między klasami LINQ do SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Przewodnik: Dostosowywanie zachowania wstawiania, aktualizacji i usuwania dla klas jednostek](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
+- [Przewodnik: Dodawanie walidacji do klas jednostek](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
+- [Instrukcje: Tworzenie skojarzenia (relacji) między klasami LINQ do SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

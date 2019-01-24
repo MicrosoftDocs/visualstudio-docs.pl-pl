@@ -1,14 +1,9 @@
 ---
 title: '&lt;Zadaniach PackageFiles&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b4cddd6752872cf03ef5f5d55b0cbbb88aa1e66a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783852"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Zadaniach PackageFiles&gt; — Element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ ms.locfileid: "49302786"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagane. Nazwa pliku pakietu. Jest to nazwa która `Command` elementu, będzie stanowiła odwołanie podczas definiuje warunki, w których pakiet instaluje. Ta wartość jest również używana jako klucz do `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie używany do opisania pakietu.|  
+|`Name`|Wymagana. Nazwa pliku pakietu. Jest to nazwa która `Command` elementu, będzie stanowiła odwołanie podczas definiuje warunki, w których pakiet instaluje. Ta wartość jest również używana jako klucz do `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie używany do opisania pakietu.|  
 |`HomeSite`|Opcjonalna. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest dołączony do Instalatora.|  
 |`CopyOnBuild`|Opcjonalna. Określa, czy program inicjujący należy skopiować plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true.|  
 |`PublicKey`|Zaszyfrowany klucz publiczny podpisu certyfikatu pakietu. Jeśli wymagane `HomeSite` jest używany; w przeciwnym razie opcjonalne.|  
@@ -82,9 +77,6 @@ ms.locfileid: "49302786"
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [\<Produktu > Element](../deployment/product-element-bootstrapper.md)   
- [\<Pakiet > Element](../deployment/package-element-bootstrapper.md)   
+ [\<Product> Element](../deployment/product-element-bootstrapper.md)   
+ [\<Package> Element](../deployment/package-element-bootstrapper.md)   
  [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
-
-
-

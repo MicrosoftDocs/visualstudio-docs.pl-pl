@@ -1,14 +1,9 @@
 ---
 title: Widok klas i przeglądarka obiektów ― ikony | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,13 +17,13 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785052"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Widok klas i Przeglądarka obiektów ― Ikony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +35,15 @@ Klasy widoku ** i **przeglądarki obiektów** wyświetlania ikon, które repreze
 |![Namespace Symbol](../ide/media/vxnamespace-icon.gif "vxNamespace_Icon")|Przestrzeń nazw|![Deklaracja symbolu](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Metoda lub funkcja|  
 |![Klasa ikonę](../ide/media/vxclass-icon.gif "vxClass_Icon")|Class|![Symbol operatora](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|Operator|  
 |![Symbol interfejsu typu lizak](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Interface|![Właściwość Symbol](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Właściwość|  
-|![Struktury Symbol](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Struktura|![Ikona pola](../ide/media/vxfield-icon.gif "vxField_Icon")|Pola lub zmiennej|  
+|![Structure Symbol](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Struktura|![Field Icon](../ide/media/vxfield-icon.gif "vxField_Icon")|Pola lub zmiennej|  
 |![Symbol złożenia](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Union|![Symbol zdarzenia](../ide/media/vxevent-icon.gif "vxEvent_Icon")|Zdarzenie|  
-|![Symbol wyliczenia](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Wyliczenie|![Ikona Stała](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Stała|  
-|![Wpisz definicję symbolu](../ide/media/vxtypedef-icon.gif "vxTypeDef_Icon")|Element TypeDef|![Symbol wyliczenia elementów](../ide/media/vxenumitem-icon.gif "vxEnumItem_Icon")|Elementu wartości wyliczeniowej|  
+|![Symbol wyliczenia](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Wyliczenie|![Constant Icon](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Stała|  
+|![Wpisz definicję symbolu](../ide/media/vxtypedef-icon.gif "vxTypeDef_Icon")|TypeDef|![Symbol wyliczenia elementów](../ide/media/vxenumitem-icon.gif "vxEnumItem_Icon")|Elementu wartości wyliczeniowej|  
 |![Symbol modułu w usłudze Visual Studio](../ide/media/vxmodule-icon.gif "vxModule_Icon")|Moduł|![Symbol elementu mapowania](../ide/media/vxmapitem-icon.gif "vxMapItem_Icon")|Mapowania elementu|  
 |![Symbol — metoda rozszerzenia](../ide/media/extensionmethod.gif "ExtensionMethod")|Metoda rozszerzenia|![Deklaracja symbolu](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Deklaracja zewnętrznych|  
 |![Delegowanie Symbol](../ide/media/vxdelegate-icon.gif "vxDelegate_Icon")|Delegate|![Ikona błędu dla widoku klas i przeglądarki obiektów](../ide/media/erroricon.gif "ErrorIcon")|Błąd|  
-|![Wyjątek symbolu](../ide/media/vxexception-icon.gif "vxException_Icon")|Wyjątek|![Symbol szablonu](../ide/media/vxtemplate-icon.gif "vxTemplate_Icon")|Szablon|  
-|![Mapowanie symboli](../ide/media/vxmap-icon.gif "vxMap_Icon")|Mapy|![Błąd wykrzyknika Symbol](../ide/media/vxerror-icon.gif "vxError_Icon")|Nieznany|  
+|![Exception Symbol](../ide/media/vxexception-icon.gif "vxException_Icon")|Wyjątek|![Template Symbol](../ide/media/vxtemplate-icon.gif "vxTemplate_Icon")|Szablon|  
+|![Mapowanie symboli](../ide/media/vxmap-icon.gif "vxMap_Icon")|Mapa|![Błąd wykrzyknika Symbol](../ide/media/vxerror-icon.gif "vxError_Icon")|Nieznany|  
 |![Typ symbolu przekazywania](../ide/media/ob-type-forward.gif "ob_type_forward")|Przekazywanie dalej typu|||  
   
 ## <a name="signal-icons"></a>Ikony sygnałowe  
@@ -68,6 +63,3 @@ Klasy widoku ** i **przeglądarki obiektów** wyświetlania ikon, które repreze
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Widok wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf809747bff2146c6a45afd49768dbda69ae7d91
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 355ca018f1bf5192d6eb65b3fc218c8d1076563b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777628"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Widok wywołujący/wywoływany profilowania danych, które zostały zebrane przy
   
 ## <a name="general"></a>Ogólne  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa funkcji**|Nazwa funkcji.|  
 |**Adres funkcji**|Adres funkcji.|  
@@ -56,7 +51,7 @@ Widok wywołujący/wywoływany profilowania danych, które zostały zebrane przy
   
 ## <a name="net-memory-allocation-values"></a>Wartości alokacji pamięci .NET  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Przydziały wyłączne**|— W przypadku funkcji bieżącej liczby obiektów, które zostały utworzone podczas wykonywania kodu funkcji w treści funkcji (oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań). Liczba nie obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez tę funkcję.<br />— Aby funkcja obiekt wywołujący, liczba przydziałów wyłącznych bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji do obiektu wywołującego.<br />— W przypadku funkcji / / wywoływany liczbę obiektów, które zostały utworzone przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Ta liczba nie obejmuje obiekty, które zostały utworzone przez funkcje, które zostały wywołane przez funkcję / / wywoływany.|  
 |**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone w profilowania, były przydziałów wyłącznych tej funkcji.|  
@@ -70,7 +65,7 @@ Widok wywołujący/wywoływany profilowania danych, które zostały zebrane przy
 ## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
  Upłynęło wartości włącznie wskazują godzinę, będący funkcji na stosie wywołań. Czas obejmuje czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas, który upłynął**|-Aby uzyskać bieżącą funkcję czas spędzony w funkcji. Wartość zawiera czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Aby wywołujący funkcję ilość czasu bieżącej funkcji, który został wygenerowany przez wywołania z tej funkcji obiekt wywołujący, który upłynął (włącznie).<br />— W przypadku funkcji elementu wywoływanego czas spędzony w tej funkcji, który został wygenerowany przez wywołuje z bieżącej funkcji. Wartość zawiera czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.|  
 |**% Całkowitego czasu, który upłynął**|Procent sumy, który upłynął całkowity czas uruchomienia profilowania, która tracony jest czas całkowity czas tej funkcji, w tym kontekście.|  
@@ -81,7 +76,7 @@ Widok wywołujący/wywoływany profilowania danych, które zostały zebrane przy
 ## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości  
  Czas wyłączny wartości wskazują godzinę, wykonywanej funkcji bezpośrednio w górnej części stosu wywołań. Czas obejmuje czas w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale nie obejmuje czas spędzony w funkcjach podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Czas wyłączny, który upłynął**|-Aby uzyskać bieżącą funkcję czas spędzony w trakcie wykonania treści funkcji. Wartość nie obejmuje czasu, która została wydana w funkcjach podrzędnych, ale obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Aby funkcja obiekt wywołujący, który upłynął czas wyłączny bieżącej funkcji, który został wygenerowany przez wywołania z tej funkcji do obiektu wywołującego.<br />— W przypadku funkcji elementu wywoływanego czas spędzony w tej funkcji, który został wygenerowany przez wywołuje z bieżącej funkcji. Wartość nie obejmuje czasu, która została wydana w funkcjach podrzędnych funkcji / / wywoływany, ale obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.|  
 |**% Wyłącznego czasu, który upłynął**|Łączny czas wyłączny czas tej funkcji, w tym kontekście przeznaczony procent całkowity czas własny czas uruchomienia profilowania.|  
@@ -92,7 +87,7 @@ Widok wywołujący/wywoływany profilowania danych, które zostały zebrane przy
 ## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji  
  Aplikacji wartości włącznie wskazują czasu, która funkcja była w stosie wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale ma czas spędzony w funkcjach podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas aplikacji**|– W przypadku bieżącej funkcji czas spędzony w funkcji i jej funkcji podrzędnych. Wartość nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Aby wywołujący funkcję ilość całkowity czas aplikacji bieżącej funkcji, który został wygenerowany przez wywołania z tej funkcji do obiektu wywołującego.<br />— W przypadku funkcji / / wywoływany czas spędzony w taki sposób, w tej funkcji i jej funkcji podrzędnych, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.|  
 |**% Całkowitego czasu aplikacji**|Wartość procentowa całkowity czas całkowity czas uruchomienia profilowania był poświęcony w kompletnej aplikacji, całkowity czas tej funkcji, w tym kontekście.|  
@@ -103,7 +98,7 @@ Widok wywołujący/wywoływany profilowania danych, które zostały zebrane przy
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji  
  Aplikacja wyłączne wartości wskazują czas spędzony w funkcji bez czasu spędzony w funkcjach podrzędnych. Wskazany czas nie obejmuje również czas, jaki był incalls poświęconym systemowi operacyjnemu, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Własny czas aplikacji**|-Aby uzyskać bieżącą funkcję czas spędzony w trakcie wykonania treści funkcji. Wartość nie obejmuje czas spędzony w funkcji podrzędnej nie obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Aby wywołujący funkcję ilość własny czas aplikacji bieżącej funkcji, który został wygenerowany przez wywołania z tej funkcji do obiektu wywołującego.<br />— W przypadku funkcji elementu wywoływanego czas spędzony w tej funkcji, który został wygenerowany przez wywołuje z bieżącej funkcji. Wartość nie obejmuje czas spędzony w funkcji podrzędnych funkcji elementu wywoływanego nie obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.|  
 |**% Własnego czasu aplikacji**|Wartość procentowa całkowity czas własny czas uruchomienia profilowania przeznaczony własny czas aplikacji całkowita tej funkcji, w tym kontekście.|  
@@ -112,10 +107,7 @@ Widok wywołujący/wywoływany profilowania danych, które zostały zebrane przy
 |**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji, w tym kontekście.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)   
  [Element wywołujący / widok / / wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
-
-
-

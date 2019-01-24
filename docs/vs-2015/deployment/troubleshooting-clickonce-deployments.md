@@ -1,14 +1,9 @@
 ---
 title: Rozwiązywanie problemów z wdrożeniami ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 26bf92a2401b0355ed149e6b9de20614969812e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775348"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Rozwiązywanie problemów z wdrożeniami ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +33,10 @@ Ten temat ułatwia diagnozowanie i rozwiązywanie typowych problemów z [!INCLUD
   
  W większości przypadków [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji zostanie pobrana do komputera użytkownika i uruchomić bez problemów. Istnieją przypadki, jednak gdy problemy konfiguracji serwera lub aplikacji sieci Web może spowodować nieprzewidzianych problemów.  
   
- [Instrukcje: ustawienie niestandardowej lokalizacji pliku dziennika błędów wdrażania technologii ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Instrukcje: Ustawianie niestandardowej lokalizacji pliku dziennika błędów wdrażania technologii ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Opisuje sposób przekierować wszystkie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] błędów aktywacji na komputerze do jednego pliku dziennika.  
   
- [Instrukcje: określanie plików pełnego dziennika dla wdrożeń technologii ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Instrukcje: Określanie pełnych plików dziennika dla wdrożeń technologii ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  W tym artykule opisano jak zwiększyć szczegółów, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zapisuje w plikach dziennika.  
   
  [Problemy konfiguracji serwera i klienta we wdrożeniach ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
@@ -59,6 +54,3 @@ Ten temat ułatwia diagnozowanie i rozwiązywanie typowych problemów z [!INCLUD
 ## <a name="see-also"></a>Zobacz też  
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
-
-
-

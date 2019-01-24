@@ -1,14 +1,9 @@
 ---
 title: Tworzenie kontrolki przybornika WPF | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4f98a58d78adc081ba574cab05edb29e1f42eabb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798329"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,4 +100,3 @@ Szablon kontrolki przybornika WPF (Windows Presentation Framework) pozwala na tw
 3.  Przekaż plik .vsix, z siecią lub do witryny sieci Web.  
   
      Jeśli załadujesz plik [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, można użyć w innym użytkownikom **narzędzia / rozszerzenia i aktualizacje** w programie Visual Studio można znaleźć formantu w trybie online i zainstaluj go.
-

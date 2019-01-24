@@ -2,6 +2,7 @@
 title: Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], TableAdapters
@@ -14,13 +15,13 @@ ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2e282da8d8c7f19f73309b37add3e10182e8ae9c
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785544"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +34,7 @@ Utworzysz sparametryzowanych zapytań adaptera TableAdapter w Projektancie obiek
 > Podczas tworzenia zapytania parametrycznego, użyj notacji parametru, które są specyficzne dla bazy danych, która jest kodowania dla. Na przykład źródła danych programu Access i OleDb użyć znaku zapytania '?' do oznaczania parametrów, dlatego klauzuli WHERE będzie wyglądać następująco: `WHERE City = ?`.  
   
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od Twojego ustawień aktywnych lub wydania, którego używasz. Aby zmienić swoje ustawienia, przejdź do **narzędzia** menu, a następnie wybierz **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od Twojego ustawień aktywnych lub wydania, którego używasz. Aby zmienić swoje ustawienia, przejdź do **narzędzia** menu, a następnie wybierz **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-parameterized-tableadapter-query"></a>Tworzenie sparametryzowanych zapytań TableAdapter 
   

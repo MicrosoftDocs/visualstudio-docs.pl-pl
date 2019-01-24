@@ -1,25 +1,20 @@
 ---
-title: 'Krok 4: Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9af0d60e9321baa9f4d2ffc4944d939e6398dcf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923384"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775933"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +51,14 @@ Okno Właściwości pokazujące zdarzenie Kliknij
     >  Jeśli skopiujesz i wkleisz `label_Click()` blok kodu, a nie wprowadzasz kod ręcznie, upewnij się zastąpić istniejącą `label_Click()` kodu. W przeciwnym razie otrzymasz zduplikowany blok kodu.  
   
     > [!NOTE]
-    >  Może rozpoznać `object sender` w górnej części programu obsługi zdarzeń jako ten sam używany w [samouczek 2: Utwórz, Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) samouczka. Ponieważ podłączyłeś inne zdarzenie Kliknij formantu etykiety do metody obsługi pojedynczego zdarzenia, ta sama metoda jest wywoływana, niezależnie od tego, którą etykietę wybierze użytkownik. Metoda obsługi zdarzeń musi wiedzieć, którą etykietę wybrano, więc używa nazwy **nadawcy** Aby zidentyfikować formant etykiety. Pierwszy wiersz metody mówi programowi, że nie jest obiekt rodzajowy, ale konkretnie formant etykiety i że używa on nazwy **clickedLabel** dostęp do właściwości i metod etykiety.  
+    >  Być może rozpoznajesz `object sender` w górnej części programu obsługi zdarzeń jako ten sam używany w [samouczek 2: Utwórz, Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) samouczka. Ponieważ podłączyłeś inne zdarzenie Kliknij formantu etykiety do metody obsługi pojedynczego zdarzenia, ta sama metoda jest wywoływana, niezależnie od tego, którą etykietę wybierze użytkownik. Metoda obsługi zdarzeń musi wiedzieć, którą etykietę wybrano, więc używa nazwy **nadawcy** Aby zidentyfikować formant etykiety. Pierwszy wiersz metody mówi programowi, że nie jest obiekt rodzajowy, ale konkretnie formant etykiety i że używa on nazwy **clickedLabel** dostęp do właściwości i metod etykiety.  
   
-     Metoda ta najpierw sprawdza, czy **clickedLabel** został pomyślnie przekonwertowany (rzutowany) z obiektu na formant etykiety. Jeśli nie, ma wartość `null` (C#) lub `Nothing` (Visual Basic), a nie chcesz wykonać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety za pomocą etykiety **ForeColor** właściwości. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (Właśnie to `return` wykonuje instrukcja: mówi programowi, aby zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.  
+     Metoda ta najpierw sprawdza, czy **clickedLabel** został pomyślnie przekonwertowany (rzutowany) z obiektu na formant etykiety. Jeśli nie, ma wartość `null` (C#) lub `Nothing` (Visual Basic), a nie chcesz wykonać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety za pomocą etykiety **ForeColor** właściwości. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (Właśnie to `return` wykonuje instrukcja: Mówi programowi, aby zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.  
   
 6.  Na pasku menu wybierz **pliku**, **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do uruchomienia program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 5: Add Label References](../ide/step-5-add-label-references.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).

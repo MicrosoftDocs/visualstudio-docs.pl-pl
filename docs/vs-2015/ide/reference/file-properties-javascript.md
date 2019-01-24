@@ -1,14 +1,9 @@
 ---
 title: Plik właściwości, JavaScript | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780372"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49909736"
   
 Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można użyć właściwości pliku. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik należy dodać do pakietu jako plik zasobów.  
   
- Można wybrać dowolny plik w Eksploratorze rozwiązań i następnie sprawdź jego właściwości w oknie dialogowym właściwości. Pliki JavaScript ma cztery właściwości: **Kopiuj do katalogu wyjściowego**, **Akcja pakietu**, **nazwy pliku**, i **ścieżka pliku**.  
+ Można wybrać dowolny plik w Eksploratorze rozwiązań i następnie sprawdź jego właściwości w oknie dialogowym właściwości. Pliki JavaScript ma cztery właściwości: **Kopiuj do katalogu wyjściowego**, **pakietu akcji**, **nazwa pliku**, i **ścieżki pliku**.  
   
 ## <a name="file-properties"></a>Właściwości pliku  
  W tej sekcji opisano właściwości wspólne dla plików JavaScript.  
@@ -74,7 +69,7 @@ Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można u
 ## <a name="reference-file-properties"></a>Właściwości odwołania do pliku  
  W tej sekcji opisano typowe w plikach stanowiący odwołanie z właściwości [!INCLUDE[win8_app_js](../../includes/win8-app-js-md.md)]. Po wybraniu odwołania, takich jak plik winmd, odwołanie do zestawu SDK, odwołanie projektu do projektu lub odwołanie do zestawu w Eksploratorze rozwiązań, inne właściwości mogą być wyświetlane w oknie dialogowym właściwości zgodnie z typem pliku.  
   
-### <a name="culture"></a>Kultury  
+### <a name="culture"></a>Kultura  
  Wyświetla język skojarzonej z odwołaniem.  
   
 ### <a name="file-type"></a>Typ pliku  
@@ -102,7 +97,4 @@ Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można u
  Wyświetla wersję odwołania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [NIB: Właściwości projektu (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB: Właściwości projektu (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

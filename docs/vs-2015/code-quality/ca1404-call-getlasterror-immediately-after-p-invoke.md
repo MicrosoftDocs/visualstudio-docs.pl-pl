@@ -1,13 +1,9 @@
 ---
 title: 'CA1404: Wywołaj metodę GetLastError natychmiast po P-Invoke | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CallGetLastErrorImmediatelyAfterPInvoke
 - CA1404
@@ -19,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46fdd5940e00aae95aa32b029ed2be4a43b47821
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7f1f4d036bd035368cce10684899d880481e37b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753137"
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Wywołaj metodę GetLastError natychmiast po P/Invoke
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

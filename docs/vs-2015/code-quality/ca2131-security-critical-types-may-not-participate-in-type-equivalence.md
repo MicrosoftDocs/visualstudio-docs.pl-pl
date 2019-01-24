@@ -1,13 +1,9 @@
 ---
 title: 'CA2131: Typy krytyczne dla zabezpieczeń nie mogą brać udziału w równoważeniu typu | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2131
 ms.assetid: 4170f3b1-6086-430d-8fba-837d5538c573
@@ -15,14 +11,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 632a93d5eee551f3d00801174013a2638cee8c70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 447e642303196a06c0a3abf3aa78650069f43566
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778142"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Typy krytyczne dla zabezpieczeń nie mogą brać udziału w równoważeniu typu
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Typy krytyczne pod względem zabezpieczeń nie mogą brać udziału w określaniu równoważności typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

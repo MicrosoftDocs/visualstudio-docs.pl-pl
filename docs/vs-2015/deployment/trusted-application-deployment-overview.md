@@ -1,14 +1,9 @@
 ---
 title: Trusted Application Deployment Overview | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49827589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804967"
 ---
 # <a name="trusted-application-deployment-overview"></a>Przegląd wdrażania zaufanych aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,6 +107,3 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../includ
 ## <a name="see-also"></a>Zobacz też  
  [Mage.exe (manifestu narzędzie generowania i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie podstawowego Isolated Shell aplikacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie prostej Isolated Shell aplikacji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776207"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Wskazówki: Tworzenie podstawowej aplikacji Isolated Shell
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Przewodnik: Tworzenie podstawowej aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dostosowywanie okna Narzędzie Pomoc na temat i Utwórz program instalacyjny, który instaluje programu isolated shell.  
@@ -265,4 +260,3 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
   
 ## <a name="testing-the-installation-program"></a>Testowanie Program instalacyjny  
  Aby przetestować instalację, skopiuj plik setup.exe na inny komputer i uruchomić plik wykonywalny Instalatora. Można uruchomić aplikacji isolated shell.
-

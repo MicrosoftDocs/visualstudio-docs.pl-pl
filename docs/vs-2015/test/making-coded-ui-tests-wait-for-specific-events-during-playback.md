@@ -1,36 +1,31 @@
 ---
 title: Tworzenie kodowanego interfejsu użytkownika testy dla określonych zdarzeń podczas odtwarzania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0042be9e22b4143021b78cb96b6032144bd624f5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bb5648bfc823230998a324aedb0e21cf6606174d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941012"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779206"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Wstrzymywanie kodowanych testów użytkownika dla określonych zdarzeń podczas odtwarzania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu oczekiwania dla określonych zdarzeń, takiego jak okno pojawia się pasek postępu zniknąć i tak dalej. Aby to zrobić, użyj odpowiedniej metody UITestControl.WaitForControlXXX(), zgodnie z opisem w poniższej tabeli. Na przykład kodowane testy interfejsu użytkownika, która czeka formantu, który ma zostać włączone za pomocą <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> metody, zobacz [Instruktaż: tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
+Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu oczekiwania dla określonych zdarzeń, takiego jak okno pojawia się pasek postępu zniknąć i tak dalej. Aby to zrobić, użyj odpowiedniej metody UITestControl.WaitForControlXXX(), zgodnie z opisem w poniższej tabeli. Na przykład kodowane testy interfejsu użytkownika, która czeka formantu, który ma zostać włączone za pomocą <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> metody, zobacz [instruktażu: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  **Wymagania**  
   
  Visual Studio Enterprise  
   
 > [!TIP]
->  Można również dodać opóźnienia przed akcji za pomocą edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [porady: wstawianie opóźnienia przed interfejsu użytkownika akcji za pomocą edytora kodowanego testu interfejsu użytkownika](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+>  Można również dodać opóźnienia przed akcji za pomocą edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Wstawianie opóźnienia przed akcją UI za pomocą edytora testu kodowanego interfejsu użytkownika](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **UITestControl.WaitForControlXXX() Methods**  
   
@@ -40,7 +35,7 @@ Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać tes
   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>  
   
- Czeka na formant aby można włączyć, gdy kreator wykonuje niektóre asynchroniczne sprawdzanie poprawności danych wejściowych przez wykonywanie wywołań do serwera. Można na przykład metodę, aby czekać na **dalej** przycisk kreatora Aby być (włączone). Aby uzyskać przykład tej metody, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
+ Czeka na formant aby można włączyć, gdy kreator wykonuje niektóre asynchroniczne sprawdzanie poprawności danych wejściowych przez wykonywanie wywołań do serwera. Można na przykład metodę, aby czekać na **dalej** przycisk kreatora Aby być (włączone). Aby uzyskać przykład tej metody, zobacz [instruktażu: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>  
   
@@ -119,10 +114,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 ## <a name="see-also"></a>Zobacz też  
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
  [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Wskazówki: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
+ [Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Porady: wstawianie opóźnienia przed akcją UI za pomocą edytora testu kodowanego interfejsu użytkownika](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
-
-
-
+ [Instrukcje: Wstawianie opóźnienia przed akcją UI za pomocą edytora testu kodowanego interfejsu użytkownika](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

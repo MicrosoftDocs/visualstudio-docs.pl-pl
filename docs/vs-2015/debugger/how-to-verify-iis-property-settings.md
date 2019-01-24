@@ -1,14 +1,9 @@
 ---
 title: 'Instrukcje: Sprawdź właściwości ustawień usług IIS | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4639055fe9320c8fd1bf1b2575bca323642dd17f
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 075581332a95f8cae03313adaf5fc2067910b217
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51742077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753793"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Instrukcje: Weryfikacja właściwości ustawień IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "51742077"
 Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia administracyjnego IIS. Te właściwości muszą być ustawione poprawnie dla aplikacji do uruchomienia, więc weryfikowanie tych ustawień jest często konieczne etapem rozwiązywania problemów.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>Aby sprawdzić ustawienia usług IIS dla aplikacji sieci Web  
   
@@ -66,7 +61,7 @@ Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia adm
   
     3.  Kliknij przycisk **OK** zamknąć **metod uwierzytelniania** okno dialogowe.  
   
-5.  Dla aplikacji serwera ATL. Sprawdź, czy czasownik DEBUG jest skojarzony z rozszerzenia ISAPI. Aby uzyskać więcej informacji, zobacz [jak: Skojarz czasownik DEBUG z rozszerzeniem](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5.  Dla aplikacji serwera ATL. Sprawdź, czy czasownik DEBUG jest skojarzony z rozszerzenia ISAPI. Aby uzyskać więcej informacji, zobacz [jak: Skojarz czasownik DEBUG z rozszerzeniem](http://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
 6.  Aby uzyskać [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, sprawdź folder wirtualny dla aplikacji ma nazwę aplikacji w **Menedżera usług Internet Information Services (IIS)**, **Menedżera internetowych usług** lub  **Internetowe usługi informacyjne**.  
   
@@ -86,6 +81,3 @@ Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia adm
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)
-
-
-

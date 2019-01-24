@@ -1,29 +1,26 @@
 ---
-title: 'Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektant O-R) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektant O-R) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd8572900e181da1b33b26638f15aa04845008e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788142"
 ---
-# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-[LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+[LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [jak: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
  Z tego instruktażu wykonasz następujące zadania:  
   
@@ -55,10 +52,10 @@ ms.locfileid: "49260731"
   
     |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|  
     |-----------------|---------------|-----------------|  
-    |**ID**|**int**|**False**|  
+    |**Identyfikator**|**int**|**False**|  
     |**Typ**|**int**|**True**|  
-    |**Imię**|**Nvarchar(200)**|**False**|  
-    |**Nazwisko**|**Nvarchar(200)**|**False**|  
+    |**Imię**|**nvarchar(200)**|**False**|  
+    |**Nazwisko**|**nvarchar(200)**|**False**|  
     |**Menedżer**|**int**|**True**|  
   
 3.  Jako klucz podstawowy, należy ustawić kolumny Identyfikatora.  
@@ -76,7 +73,7 @@ ms.locfileid: "49260731"
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**Typ**|**Imię**|**Nazwisko**|**Menedżer**|  
+    |**Identyfikator**|**Typ**|**Imię**|**Nazwisko**|**Menedżer**|  
     |**1**|**1**|**Anna**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
@@ -192,9 +189,8 @@ ms.locfileid: "49260731"
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Porady: Dodawanie LINQ do klas SQL do projektu (Projektant O-R)](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
- [Wskazówki: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Instrukcje: Dodaj LINQ do klas SQL do projektu (Projektant O-R)](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
+ [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Instrukcje: Generowanie modelu obiektu w języku Visual Basic lub C#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
-
+ [Instrukcje: Generowanie modelu obiektu w języku Visual Basic lubC#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

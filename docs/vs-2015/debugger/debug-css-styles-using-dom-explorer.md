@@ -1,14 +1,9 @@
 ---
 title: Debugowanie stylów CSS przy użyciu narzędzia DOM Explorer | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750150"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780002"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Debugowanie stylów CSS przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +103,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 6.  Przełącz się do programu Visual Studio, a następnie kliknij przycisk **zaznacz Element** w Eksploratorze DOM (albo naciśnij klawisze Ctrl + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu. Oto **zaznacz Element** przycisku. ![Wybierz przycisk Element w Eksploratorze DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  Elementy HTML można także zaznaczać bezpośrednio w Eksploratorze DOM. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Elementy HTML można także zaznaczać bezpośrednio w Eksploratorze DOM. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 7.  W symulatorze, umieść kursor na tytule pierwszego elementu na liście **tytuł grupy: 1**, w lewym panelu strony głównej. Tytuł jest wyróżniony, tak jak pokazano poniżej:  
   
@@ -162,10 +157,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 16. Aby wprowadzić zmiany w źródłowym pliku CSS, kliknij przycisk **pliku items.css** link **style** kartę. Spowoduje to otwarcie pliku items.css, w którym można zmienić wartość `color` stylu w kodzie aplikacji. Aby odświeżyć aplikację bez zatrzymywania i ponownego uruchamiania debugera, kliknij przycisk ![przycisku aplikacji Windows Odśwież](../debugger/media/js-refresh.png "JS_Refresh") (**aplikacji Windows Odśwież**) przycisku na **Debugowania** paska narzędzi.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki Start: Debugowanie HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Podgląd odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)   
  [Pomoc techniczna i dostępność](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

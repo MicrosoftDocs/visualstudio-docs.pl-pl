@@ -1,27 +1,22 @@
 ---
-title: 'Porady: Tworzenie podstawowego modułu cieniowanie Phong | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie podstawowego modułu cieniowanie Phong | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787333"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Porady: tworzenie podstawowego modułu cieniowanie Phong
+# <a name="how-to-create-a-basic-phong-shader"></a>Instrukcje: Tworzenie podstawowego modułu cieniowanie Phong
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób umożliwia tworzenie oświetlenia modułu cieniującego, który implementuje Klasyczny model oświetlenie Phong Shader Designer i język programu do cieniowania wykres kierowany (DGSL).  
@@ -37,13 +32,13 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie oświetlenia modułu
 ## <a name="the-phong-lighting-model"></a>Model oświetlenie Phong  
  Model oświetlenie Phong rozszerza modelu oświetlenia Lamberta obejmujący odblasków wyróżnianie, która symuluje właściwości odbijające powierzchni. Odblasków składnik udostępnia dodatkowe oświetlenia z tego samego kierunkowe źródła światła, które są używane w modelu oświetlenia Lamberta, ale jej udziału ostateczny kolor jest przetwarzany inaczej. Wyróżnianie odblasków ma wpływ na co narażonego na ataki w scenie inaczej, na podstawie relacji między kierunku widoku, kierunek światła źródeł i orientację powierzchni. Jest to produkt koloru odblasków, moc odblasku i orientację powierzchni, a kolor, intensywność i kierunek źródła światła. Powierzchnie, które odzwierciedlają źródło światła bezpośrednio w przeglądarce otrzymują maksymalny udział odblasków i powierzchnie, które odzwierciedlają po stronie źródła światła od obserwatora otrzymywać nie materiałów przekazywanych. W obszarze model Phong oświetlenia co najmniej jednego składnika odblasków są łączone w celu określenia koloru i intensywność światła odblasków wyróżnianie dla każdego punktu w obiekcie i następnie są dodawane do wyniku modelu oświetlenia Lamberta, aby wygenerować ostateczny koloru piksela .  
   
- Aby uzyskać więcej informacji na temat modelu oświetlenia Lamberta zobacz [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
+ Aby uzyskać więcej informacji na temat modelu oświetlenia Lamberta zobacz [jak: Tworzenie podstawowego modułu cieniującego Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
   
  Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.  
   
 #### <a name="to-create-a-phong-shader"></a>Aby utworzyć cieniowanie Phong  
   
-1. Tworzenie modułu cieniującego Lamberta zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Tworzenie modułu cieniującego Lamberta zgodnie z opisem w [jak: Tworzenie podstawowego modułu cieniującego Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
   
 2. Odłącz **Lamberta** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **Lamberta** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.  
   
@@ -73,14 +68,11 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie oświetlenia modułu
   
  ![Oświetlenie Phong zastosowano do modelu](../designers/media/digit-lighting-model.png "cyfrę oświetlenia modelu")  
   
- Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3-D, zobacz [porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3-D, zobacz [jak: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Porady: eksport cieniowania](../designers/how-to-export-a-shader.md)   
- [Porady: Tworzenie podstawowego modułu cieniującego Lamberta](../designers/how-to-create-a-basic-lambert-shader.md)   
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)   
+ [Instrukcje: Tworzenie podstawowego modułu cieniującego Lamberta](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
  [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
-
-
-

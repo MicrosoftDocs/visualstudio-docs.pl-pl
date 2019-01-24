@@ -1,12 +1,9 @@
 ---
 title: Dodawanie poleceń i gestów do diagramów warstw | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom commands
 - layer diagrams, adding custom gestures
@@ -14,13 +11,13 @@ ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796805"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Dodawanie poleceń i gestów do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -271,6 +268,3 @@ namespace MyLayerExtensions // change to your preference
  [Nawigowanie i aktualizowanie modeli warstw w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Definiowanie i instalowanie rozszerzenia modelowania](../modeling/define-and-install-a-modeling-extension.md)
-
-
-

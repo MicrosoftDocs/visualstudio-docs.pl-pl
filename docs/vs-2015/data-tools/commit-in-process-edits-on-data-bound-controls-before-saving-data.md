@@ -1,12 +1,9 @@
 ---
 title: Zatwierdź zmiany w procesie kontrolek powiązanych z danymi przed zapisaniem danych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4e90cc5e4c0d1dc61765915f63ba569bb474fd01
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: d703ef271dfec09b277db2c2702679b8087b4b88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775240"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,4 +58,3 @@ Podczas edytowania wartości w formantach powiązanych z danymi, użytkownicy mu
 ## <a name="see-also"></a>Zobacz też  
  [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)
-

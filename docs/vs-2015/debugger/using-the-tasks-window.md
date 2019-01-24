@@ -1,14 +1,9 @@
 ---
 title: Korzystanie z okna zadań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa59e1e57750c9c2075c10c76ab5c518ed0e8686
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 934073e5d266c2ddf645acd7dddcfb13711f92de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779787"
 ---
 # <a name="using-the-tasks-window"></a>Korzystanie z okna zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,8 +50,8 @@ ms.locfileid: "51793909"
 |-----------------|-----------------|  
 |**flagi**|Umożliwia Flagowanie zadania lub i przedstawia zadania, które są oznaczone.|  
 |**Ikony**|Żółta strzałka wskazuje bieżącego zadania. Bieżące zadanie jest zadaniem najważniejsze dla bieżącego wątku.<br /><br /> Biały strzałek wskazuje zadania istotne, czyli ten, który były aktualne, gdy debuger został wywołany.<br /><br /> Ikona Wstrzymaj wskazuje zadanie, które są zablokowane przez użytkownika. Można Zablokuj i Odblokuj zadania, klikając prawym przyciskiem myszy na liście.|  
-|**ID**|Liczba dostarczane przez system dla zadania. W kodzie natywnym jest to adres zadania.|  
-|**Status**|Bieżący stan (zaplanowane, aktywne, prawdopodobnie zakleszczone, oczekuje lub ukończone) zadania. Zaplanowane zadanie to taki, który nie został jeszcze uruchomiony i dlatego nie ma jeszcze stos wywołań, przypisany wątek lub powiązane informacje.<br /><br /> Aktywne zadanie to taki, który był wykonywany kod przed przerwanie w debugerze.<br /><br /> Zadanie oczekujące to taki, który jest zablokowane, ponieważ trwa oczekiwanie na zdarzenie ma być zasygnalizowany, blokady mogą być wprowadzane lub inne zadanie, aby zakończyć.<br /><br /> Prawdopodobnie zakleszczone zadanie jest zadanie oczekujące, w których wątek jest zakleszczone przez inny wątek.<br /><br /> Umieść kursor nad **stan** komórki dla zadanie prawdopodobnie zakleszczone lub oczekuje, aby zobaczyć więcej informacji na temat tego bloku. **Ostrzeżenie:** **zadania** okna raporty zakleszczenia tylko w przypadku zablokowanych zadanie, które używa podstawowego synchronizacji, który jest obsługiwany przez przejście przez łańcuch oczekiwania (WCT). Na przykład prawdopodobnie zakleszczone <xref:System.Threading.Tasks.Task> obiektu, który używa WCT, debuger raporty **oczekujące, zakleszczone**. Prawdopodobnie zakleszczone zadania, który jest zarządzany przez środowisko uruchomieniowe współbieżności, która nie korzysta z WCT, raportów jest debugera **oczekiwania**. Aby uzyskać więcej informacji na temat WCT zobacz [oczekiwania przechodzenie łańcucha](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Identyfikator**|Liczba dostarczane przez system dla zadania. W kodzie natywnym jest to adres zadania.|  
+|**Status**|Bieżący stan (zaplanowane, aktywne, prawdopodobnie zakleszczone, oczekuje lub ukończone) zadania. Zaplanowane zadanie to taki, który nie został jeszcze uruchomiony i dlatego nie ma jeszcze stos wywołań, przypisany wątek lub powiązane informacje.<br /><br /> Aktywne zadanie to taki, który był wykonywany kod przed przerwanie w debugerze.<br /><br /> Zadanie oczekujące to taki, który jest zablokowane, ponieważ trwa oczekiwanie na zdarzenie ma być zasygnalizowany, blokady mogą być wprowadzane lub inne zadanie, aby zakończyć.<br /><br /> Prawdopodobnie zakleszczone zadanie jest zadanie oczekujące, w których wątek jest zakleszczone przez inny wątek.<br /><br /> Umieść kursor nad **stan** komórki dla zadanie prawdopodobnie zakleszczone lub oczekuje, aby zobaczyć więcej informacji na temat tego bloku. **Ostrzeżenie:**  **Zadania** okna raporty zakleszczenia tylko w przypadku zablokowanych zadanie, które używa podstawowego synchronizacji, który jest obsługiwany przez przejście przez łańcuch oczekiwania (WCT). Na przykład prawdopodobnie zakleszczone <xref:System.Threading.Tasks.Task> obiektu, który używa WCT, debuger raporty **oczekujące, zakleszczone**. Prawdopodobnie zakleszczone zadania, który jest zarządzany przez środowisko uruchomieniowe współbieżności, która nie korzysta z WCT, raportów jest debugera **oczekiwania**. Aby uzyskać więcej informacji na temat WCT zobacz [oczekiwania przechodzenie łańcucha](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Godzina rozpoczęcia**|Czas, w którym zadanie stały się aktywne.|  
 |**Czas trwania**|Liczba sekund, które zadania była aktywna.|  
 |**Czas ukończenia**|Czas, w którym zadanie jest ukończone.|  
@@ -65,7 +60,7 @@ ms.locfileid: "51793909"
 |**Nadrzędny**|Identyfikator zadania, które utworzył to zadanie. Jeśli to pole jest puste, zadania jest Brak elementu nadrzędnego. Dotyczy tylko programów zarządzanych.|  
 |**Wątek przypisania**|Identyfikator i nazwa wątku, na którym działa zadanie.|  
 |**Status powrotu**|Stan zadania po jego zakończeniu. Wartości zwracane stan **Powodzenie**, **odwołania**, i **błąd**.|  
-|**Domeny aplikacji**|Dla kodu zarządzanego, domeny aplikacji, w którym zadanie jest wykonywane.|  
+|**AppDomain**|Dla kodu zarządzanego, domeny aplikacji, w którym zadanie jest wykonywane.|  
 |**task_group**|Dla kodu natywnego adresu [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) obiekt, który zaplanowane zadanie. Dla agentów asynchronicznych i zadań lekkich ta kolumna jest równa 0.|  
 |Proces|Identyfikator procesu, który zadanie jest uruchomione.|  
 |Stan Async|Dla kodu zarządzanego, stan zadania. Domyślnie ta kolumna jest ukryta. Aby wyświetlić tę kolumnę, otwórz menu kontekstowe dla jednego z nagłówków kolumn. Wybierz **kolumn**, **AsyncState**.|  
@@ -75,7 +70,7 @@ ms.locfileid: "51793909"
  ![Menu Widok skrótów na liście okno zadań równoległych](../debugger/media/parallel-tasks-contextmenu.png "Parallel_Tasks_ContextMenu")  
   
 ## <a name="sorting-tasks"></a>Sortowanie zadania  
- Aby posortować zadania według kryteriów kolumny, kliknij nagłówek kolumny. Na przykład klikając **identyfikator** nagłówek kolumny można posortować zadania według Identyfikatora zadania podrzędnego: 1,2,3,4,5 i tak dalej. Aby odwrócić porządek sortowania, kliknij nagłówek kolumny ponownie. Według bieżącej kolumny i sortowania kolejności sortowania jest wskazywany przez strzałkę w kolumnie.  
+ Aby posortować zadania według kryteriów kolumny, kliknij nagłówek kolumny. Na przykład klikając **identyfikator** nagłówek kolumny można posortować zadania według Identyfikatora zadania: 1,2,3,4,5 i tak dalej. Aby odwrócić porządek sortowania, kliknij nagłówek kolumny ponownie. Według bieżącej kolumny i sortowania kolejności sortowania jest wskazywany przez strzałkę w kolumnie.  
   
 ## <a name="grouping-tasks"></a>Grupowania zadań  
  Można grupować zadania oparte na dowolną kolumnę w widoku listy. Na przykład, klikając prawym przyciskiem myszy **stan** nagłówek kolumny, a następnie klikając polecenie **grupa statusem**, można grupować wszystkie zadania, które mają ten sam stan. Szybko można na przykład, zobacz oczekujących zadań, dzięki czemu możesz skupić się na dlaczego są blokowane. Można również zwinąć grupy, która nie jest przedmiotem zainteresowania podczas sesji debugowania. W ten sam sposób można grupować według innych kolumn. Grupa może być (NZ) po prostu przez kliknięcie przycisku obok nagłówka grupy. Poniższa ilustracja przedstawia **zadania** okna w trybie zgrupowane.  
@@ -103,7 +98,4 @@ ms.locfileid: "51793909"
  [Programowanie równoległe](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)   
- [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)
-
-
-
+ [Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)

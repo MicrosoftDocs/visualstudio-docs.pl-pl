@@ -1,14 +1,9 @@
 ---
 title: Analiza jakości aplikacji za pomocą narzędzi analizy kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.analysisresults
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7230de07c5aa1472332dbbddc094629fd1cdf257
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775545"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analiza jakości aplikacji za pomocą narzędzi analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,6 +56,3 @@ W tej sekcji
   
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)  
  Wstaw tutaj opis.
-
-
-

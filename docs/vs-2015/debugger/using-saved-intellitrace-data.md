@@ -1,14 +1,9 @@
 ---
 title: Przy użyciu zapisanych danych funkcji IntelliTrace | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f10878e9717ca90725455d5c66f6f9a015040dc1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eef8a11f21464ea58aec8b6fb239df3ff28a40b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777569"
 ---
 # <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
 -   Plik .iTrace z jednego z tych źródeł:  
   
-    |**Źródło**|**Zobacz**|  
+    |**Element źródłowy**|**Zobacz**|  
     |----------------|-------------|  
     |Sesja IntelliTrace w Visual Studio Enterprise (ale nie Professional lub Community)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|  
     |Sesji testowej w programie Microsoft Test Manager. Dołącza plik .iTrace do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -115,7 +110,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
 3.  Rozwiń, że wywołanie, aby przejrzeć wszelkie zagnieżdżone wywołania i wartości parametrów, które zostały zarejestrowane w danym momencie.  
   
-     (Klawiatura: Aby wyświetlić lub ukryć zagnieżdżone wywołania, naciśnij klawisz **Strzałka w prawo** lub **Strzałka w lewo** odpowiednio klucza. Aby pokazać i ukryć wartości parametrów dla zagnieżdżonych wywołań, naciśnij klawisz **miejsca** klucza.)  
+     (Klawiatura: Aby pokazać lub ukryć zagnieżdżone wywołania, naciśnij klawisz **Strzałka w prawo** lub **Strzałka w lewo** odpowiednio klucza. Aby pokazać i ukryć wartości parametrów dla zagnieżdżonych wywołań, naciśnij klawisz **miejsca** klucza.)  
   
      Uruchom debugowanie z wywołania.  
   
@@ -194,8 +189,8 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
     |**Pole IntelliTrace**|**Pole ULS programu SharePoint**|  
     |----------------------------|------------------------------|  
-    |**Id**|**Identyfikator zdarzenia**|  
-    |**poziom**|**poziom**|  
+    |**Identyfikator**|**Identyfikator zdarzenia**|  
+    |**Poziom**|**Poziom**|  
     |**Identyfikator kategorii**|**Identyfikator kategorii**|  
     |**Kategoria**|**Kategoria**|  
     |**Obszar**|**Produkt**|  
@@ -212,7 +207,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
     ![Dziennik IntelliTrace &#45; SharePoint nieobsługiwane wyjątki](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Aby uzyskać wskazówki, zobacz [wskazówki: debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Do tego rodzaju danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
+   Aby uzyskać wskazówki, zobacz [instruktażu: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Do tego rodzaju danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Lista wątków  
  Badać zarejestrowane wątki, które uruchomiono w procesie docelowym. Możesz rozpocząć debugowanie od pierwszego prawidłowego zdarzenia IntelliTrace w wybranym wątku.  
@@ -229,7 +224,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
 |**Kolumny**|**Pokazuje**|  
 |----------------|-------------------|  
-|**ID**|Numer identyfikacyjny wątku|  
+|**Identyfikator**|Numer identyfikacyjny wątku|  
 |**Nazwa**|Nazwa wątku. Nienazwane wątki są wyświetlane jako "\<bez nazwy >".|  
 |**Godzina rozpoczęcia**|Godzina utworzenia wątku|  
 |**Godzina zakończenia**|Czas zakończenia wątku|  
@@ -263,7 +258,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 |----------------|-------------------|  
 |**Nazwa modułu**|Nazwa pliku modułu|  
 |**Ścieżka modułu**|Lokalizację dysku, na którym moduł został załadowany|  
-|**Identyfikator modułu**|Unikatowy identyfikator modułu, który jest specyficzny dla wersji i przyczynia się do pasujących plików symboli (PDB). Zobacz [znajdowanie plików symboli (.pdb) i pliki źródłowe](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Identyfikator modułu**|Unikatowy identyfikator modułu, który jest specyficzny dla wersji i przyczynia się do pasujących plików symboli (PDB). Zobacz [znajdowanie plików symboli (.pdb) i pliki źródłowe](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?  
  [Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
@@ -278,11 +273,4 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
  [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>Wskazówki  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 6: przybornik testowy](http://go.microsoft.com/fwlink/?LinkID=255203)
-
-
-
-
-
-
-
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 6: Przybornik testowy](http://go.microsoft.com/fwlink/?LinkID=255203)

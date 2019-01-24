@@ -1,29 +1,24 @@
 ---
-title: 'Porady: wyświetlanie właściwości komunikatu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyświetlanie właściwości komunikatu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message properties in SpyHelp
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ae1f0bf05d2bfdc90875b62ebad964bf8d37204f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804505"
 ---
-# <a name="how-to-display-message-properties"></a>Porady: wyświetlanie właściwości komunikatów
+# <a name="how-to-display-message-properties"></a>Instrukcje: Wyświetlanie właściwości komunikatu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md).  
@@ -35,6 +30,3 @@ Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikató
 2. Z **widoku** menu, wybierz **właściwości**.  
   
    Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
-
-
-

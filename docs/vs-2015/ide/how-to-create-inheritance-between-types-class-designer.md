@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie dziedziczenia między typami (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5bcc052589f090eaad8aace8c491f74d3bbfefe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d1c5b5d75dedf45988291459ed55b31bf80fc583
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760240"
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>Porady: Tworzenie dziedziczenia między typami (Projektant klas) 
+# <a name="how-to-create-inheritance-between-types-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy przy użyciu projektanta klas, połączyć z typu podstawowego z jego typu pochodnego lub typów. Może mieć relacji dziedziczenia między dwoma klasami, między klasą a interfejsem lub między dwa interfejsy.  
@@ -35,7 +30,7 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
   
 1.  Z projektu w Eksploratorze rozwiązań Otwórz plik diagramu klasy (.cd).  
   
-     Jeśli nie masz diagram klas, należy go utworzyć. Zobacz [porady: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+     Jeśli nie masz diagram klas, należy go utworzyć. Zobacz [jak: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
 2.  W **przybornika**w obszarze **projektanta klas**, kliknij przycisk **dziedziczenia**.  
   
@@ -57,8 +52,5 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
 ## <a name="see-also"></a>Zobacz też  
  [Dziedziczenie](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
  [Podstawowe informacje o dziedziczeniu](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
- [Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Klasy Visual C++ w Projektancie klas](../ide/visual-cpp-classes-in-class-designer.md)
-
-
-

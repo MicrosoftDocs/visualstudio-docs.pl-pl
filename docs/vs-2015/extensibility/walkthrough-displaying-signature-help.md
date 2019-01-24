@@ -1,28 +1,23 @@
 ---
 title: 'Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a3b902c32563da6bc21778a09b4aeaebaeabeaa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a5f62ace3126ee35f47a90c15e6183690786954
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781222"
 ---
-# <a name="walkthrough-displaying-signature-help"></a>Przewodnik: wyświetlanie pomocy dotyczącej sygnatur
+# <a name="walkthrough-displaying-signature-help"></a>Przewodnik: Wyświetlanie pomocy dotyczącej podpisów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pomocy dotyczącej sygnatur (znany także jako *Parameter Info*) Wyświetla podpis metody w etykietce narzędzia, gdy użytkownik wpisuje znak start listy parametrów (zazwyczaj nawias otwierający). Jako parametr i separator parametru (zazwyczaj przecinek) mają typ, etykietki narzędzia jest aktualizowana w celu wyświetlenia następny parametr pogrubioną czcionką. Pomoc podpisu można zdefiniować w kontekście usługi językowej, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i wyświetlić Pomoc podpisu dla właśnie tego typu lub możesz wyświetlić Pomoc podpisu dla istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak wyświetlić Pomoc podpisu dla typu zawartości "text".  
@@ -252,5 +247,4 @@ Pomocy dotyczącej sygnatur (znany także jako *Parameter Info*) Wyświetla podp
 4.  Po wpisaniu nawiasu otwierającego, powinien zostać wyświetlony etykietkę narzędzia, która wyświetla listę dwóch sygnatury `add()` metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

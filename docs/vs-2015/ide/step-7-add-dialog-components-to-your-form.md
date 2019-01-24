@@ -1,25 +1,20 @@
 ---
-title: 'Krok 7: Dodawanie składników okna dialogowego do formularza | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 7. Dodawanie składników okna dialogowego do formularza | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 051f88f81f443b1748ce3d8b0c9ce33e89fac77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796662"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła,
   
  Składnik to podobnie jak kontrolka pod pewnymi względami. Używasz przybornika, aby dodać składnik do formularza i ustaw jego właściwości, za pomocą **właściwości** okna. Jednak w przeciwieństwie do formantu, dodawanie składnika do formularza nie powoduje dodania widocznego elementu, który użytkownik może wyświetlić w formularzu. Zamiast tego zapewnia pewne zachowania, które mogą wyzwalać przy użyciu kodu. Jest składnik, który otwiera **Otwórz plik** okno dialogowe.  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 3](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Film wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 3](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-add-dialog-components-to-your-form"></a>Aby dodać elementy dialogu do formularza  
   
@@ -50,7 +45,7 @@ Składniki okna dialogowego
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*  
         ```  
   
-    -   Ustaw **tytuł** właściwości do następującego: **wybierz plik obrazu**  
+    -   Ustaw **tytuł** właściwości do następującego: **Wybierz plik obrazu**  
   
          **Filtru** ustawienia właściwości określają rodzaje typów plików, które będą wyświetlane w **wybierz obraz** okno dialogowe pliku.  
   
@@ -59,9 +54,6 @@ Składniki okna dialogowego
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 8: pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Nazwa Your Controls przycisk](../ide/step-6-name-your-button-controls.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Nazw kontrolkom przycisków](../ide/step-6-name-your-button-controls.md).

@@ -1,13 +1,9 @@
 ---
 title: 'CA1501: Unikaj nadmiernego dziedziczenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1501
 - AvoidExcessiveInheritance
@@ -19,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f208e9c3a632d1c15dac0d021e976ee8ff3d844e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 420e9492fc5ab431710d62e1d8ea3c1bd8a31ce9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775708"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Unikaj nadmiernego dziedziczenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

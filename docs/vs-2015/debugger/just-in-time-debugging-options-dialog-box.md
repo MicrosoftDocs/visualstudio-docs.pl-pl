@@ -1,14 +1,9 @@
 ---
 title: Just-In-Time, debugowanie, okno dialogowe Opcje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
 - vs.debug.options.JIT
@@ -28,13 +23,13 @@ ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 06fdd9d12003053ea6d992aa1d7d0fe9ed7144d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788628"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-in-time, debugowanie, opcje ― Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu
   
 - Natywne  
   
-- skrypt  
+- Skrypt  
   
   Debugowanie Just In Time jest techniką debugowanie programu, który jest uruchamiany poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Można uruchomić programu, który został utworzony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] środowiska. Włączenie debugowania Just-in-time awarii wyświetli okno dialogowe z pytaniem, jeśli chcesz debugować.  
   
@@ -68,7 +63,4 @@ Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie, opcje ― Okno dialogowe](../debugger/debugging-options-dialog-box.md)   
- [Instrukcje: określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)
-
-
-
+ [Instrukcje: Określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)

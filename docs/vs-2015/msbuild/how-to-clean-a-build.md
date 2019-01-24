@@ -1,14 +1,9 @@
 ---
-title: 'Porady: czyszczenie kompilacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Czyszczenie kompilacji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,15 +13,15 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229674"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780750"
 ---
-# <a name="how-to-clean-a-build"></a>Porady: czyszczenie kompilacji
+# <a name="how-to-clean-a-build"></a>Instrukcje: Czyszczenie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -110,9 +105,6 @@ Podczas oczyszczania kompilacji są usuwane wszystkie pliki pośrednich i wyniko
 ## <a name="see-also"></a>Zobacz też  
  [Exec — zadanie](../msbuild/exec-task.md)   
  [Makedir — zadanie](../msbuild/makedir-task.md)   
- [Removedir — zadanie](../msbuild/removedir-task.md)   
+ [RemoveDir Task](../msbuild/removedir-task.md)   
  [CSC — zadanie](../msbuild/csc-task.md)   
  [Docelowe elementy](../msbuild/msbuild-targets.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Wyświetlanie struktury kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801215"
 ---
 # <a name="viewing-the-structure-of-code"></a>Wyświetlanie struktury kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -229,6 +224,3 @@ Okno hierarchii wywołań
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok klasy i Przeglądarka obiektów, ikony](../ide/class-view-and-object-browser-icons.md)
-
-
-

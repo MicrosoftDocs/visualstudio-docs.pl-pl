@@ -1,14 +1,9 @@
 ---
 title: 'Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 89ecf99d-66bf-4da0-a840-aa95b0be1702
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f1e457829f7b6ab5050a02bd8f20e1c51d5df14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 833beb91c35c35d29df45a2e8caa31aae173bb27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779781"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Ten błąd oznacza, że usługa zdalnego debugera Visual Studio jest uruchomiona
 |||||  
 |-|-|-|-|  
 ||Konto System lokalny|Konto domeny|Konta lokalne, które mają tej samej nazwy użytkownika i hasła na obu komputerach|  
-|Oba komputery w tej samej domenie|Tak|Tak|Tak|  
+|Oba komputery w tej samej domenie|Tak|Yes|Tak|  
 |Oba komputery w domenach, które mają dwukierunkowe relacje zaufania|Nie|Nie|Tak|  
 |Jeden lub oba komputery w grupie roboczej|Nie|Nie|Tak|  
 |Komputery w różnych domenach|Nie|Nie|Tak|  
@@ -84,6 +79,3 @@ Ten błąd oznacza, że usługa zdalnego debugera Visual Studio jest uruchomiona
 ## <a name="see-also"></a>Zobacz też  
  [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)
-
-
-

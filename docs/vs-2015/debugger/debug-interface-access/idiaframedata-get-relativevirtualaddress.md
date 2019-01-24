@@ -1,14 +1,9 @@
 ---
-title: Idiaframedata::get_relativevirtualaddress — | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: IDiaFrameData::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: de070ef4-6c9d-43ca-911c-5245cbcb8dbe
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8c88db89b92319f480d91d97ed0523a8a25676df
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e24e8cc82efcbf3d348c2556a4fcea59725e0e18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752270"
 ---
 # <a name="idiaframedatagetrelativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT get_relativeVirtualAddress ( 
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
-
-
-

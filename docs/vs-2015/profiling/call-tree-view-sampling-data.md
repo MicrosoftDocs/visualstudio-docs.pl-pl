@@ -1,14 +1,9 @@
 ---
 title: Widok drzewa wywołań - dane z próbkowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
 - Call Tree view
@@ -16,13 +11,13 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc324b621bfc3e472d6eb86227a6081e3384d2af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779229"
 ---
 # <a name="call-tree-view---sampling-data"></a>Widok drzewa wywołań — dane próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
   
  Po ustawieniu węzła głównego, można wyeliminować wszystkie wpisy z widoku, z wyjątkiem drzewo podrzędne wybranego węzła. Aby przywrócić węzła głównego oryginalnego węzła, kliknij prawym przyciskiem myszy w oknie Widok drzewa wywołań i wybierz **resetowania głównego**.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
 |**Nazwa procesu**|Nazwa procesu.|  
@@ -54,18 +49,15 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
 |**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Adres funkcji**|Adres funkcji.|  
-|**poziom**|Długość tej funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
+|**Poziom**|Długość tej funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
 |**Próbki wyłączne**|Liczba próbek, które zostały zebrane w tej funkcji, wywołanego przez funkcję nadrzędnego w drzewie wywołań. Ta liczba nie obejmuje przykładów, które zostały zebrane w funkcjach, które zostały wywołane przez funkcję.|  
 |**% Wyłącznych próbek**|Procent wszystkie przykłady w trakcie uruchomienia profilowania, które były wyłącznych próbek w tej funkcji, wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
 |**Próbki włączne**|Liczba próbek, które zostały zebrane w tej funkcji, wywołanego przez funkcję nadrzędnego w drzewie wywołań. Liczba ta obejmuje przykładów, które zostały zebrane w funkcjach, które zostały wywołane przez funkcję.|  
 |**% Włącznych próbek**|Procent wszystkie przykłady w trakcie uruchomienia profilowania, które były włącznych próbek w tej funkcji, wywołanego przez funkcję nadrzędnego w drzewie wywołań.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok drzewa wywołań - dane z próbkowania Profiler](../profiling/call-tree-view-sampling-data.md)   
  [Widok drzewa wywołań - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Widok drzewa wywołań - Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)
-
-
-

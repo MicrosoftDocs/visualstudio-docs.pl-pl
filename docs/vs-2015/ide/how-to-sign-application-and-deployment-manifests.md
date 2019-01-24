@@ -1,14 +1,9 @@
 ---
-title: 'Porady: podpisywanie aplikacji i manifestów wdrożenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - code signing [Visual Studio], Authenticode
@@ -22,15 +17,15 @@ ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3162d65f8712c7db55be1bced9f815ecfaa866f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0ccd3d6b6f9c1d995a0aebb4bc1e3007e025ca5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299737"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784187"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Porady: podpisywanie aplikacji i manifestów wdrożenia
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifestów aplikacji i wdrożenia muszą być podpisane parą kluczy publiczny/prywatny i podpisany przy użyciu technologii Authenticode. Aby podpisać manifesty, przy użyciu certyfikatu z magazynu certyfikatów Windows lub plikiem klucza.  
@@ -39,7 +34,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
   
  Podpisywanie manifestów ClickOnce jest opcjonalne dla aplikacji opartych na .exe. Aby uzyskać więcej informacji zobacz sekcję "Generowanie nieoznaczonych manifestów" w tym dokumencie.  
   
- Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: utworzyć parę klucz publiczny i prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: Tworzenie pary kluczy publiczny prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje tylko te kluczowe pliki wymiany informacji osobistych (PFX), które mają rozszerzenie .pfx. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów Windows bieżącego użytkownika, klikając **wybierać Store** na **podpisywanie** strony właściwości projektu.  
@@ -98,7 +93,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
   
 2.  Na **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce** pole wyboru.  
   
-3.  Resetuj wersję publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikowanej wersji za każdym razem, gdy spróbujesz opublikować aplikację. Aby uzyskać więcej informacji, zobacz [porady: ustawienie wersji publikowania ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3.  Resetuj wersję publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikowanej wersji za każdym razem, gdy spróbujesz opublikować aplikację. Aby uzyskać więcej informacji, zobacz [jak: ClickOnce ustawienie wersji publikacji](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
 4.  Opublikuj aplikację.  
   
@@ -115,9 +110,6 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
   
 ## <a name="see-also"></a>Zobacz też  
  [Zestawy o silnych nazwach](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Porady: tworzenie pary kluczy publiczny prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Instrukcje: Tworzenie pary kluczy publiczny prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Strona podpisywania, Projektant projektu](../ide/reference/signing-page-project-designer.md)   
  [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)
-
-
-

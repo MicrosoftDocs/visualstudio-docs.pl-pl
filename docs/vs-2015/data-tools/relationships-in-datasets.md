@@ -1,12 +1,9 @@
 ---
 title: Relacje w zestawach danych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755492"
 ---
 # <a name="relationships-in-datasets"></a>Relacje w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
 |Zasada ograniczenia PRIMARY key obcych|Akcja|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|Zmiana (update lub delete), wprowadzone do nadrzędnego rekordu jest również w powiązanych rekordach w tabeli podrzędnej.|  
-|<xref:System.Data.Rule>|Rekordy podrzędne nie są usuwane, ale ustawiono klucza obcego w rekordy podrzędne <xref:System.DBNull>. To ustawienie, rekordy podrzędne może pozostać "porzucone" — oznacza to, że ich nie mają relacji z rekordów nadrzędnych. **Uwaga:** przy użyciu tej reguły może spowodować nieprawidłowe dane w tabeli podrzędnej.|  
+|<xref:System.Data.Rule>|Rekordy podrzędne nie są usuwane, ale ustawiono klucza obcego w rekordy podrzędne <xref:System.DBNull>. To ustawienie, rekordy podrzędne może pozostać "porzucone" — oznacza to, że ich nie mają relacji z rekordów nadrzędnych. **Uwaga:**  Przy użyciu tej reguły może spowodować nieprawidłowe dane w tabeli podrzędnej.|  
 |<xref:System.Data.Rule>|Klucza obcego w powiązanych rekordach podrzędnych jest ustawiona na wartość domyślną (jak ustalono przez wartość z kolumny <xref:System.Data.DataColumn.DefaultValue%2A> właściwości).|  
 |<xref:System.Data.Rule>|Nie zmian do powiązane rekordy podrzędne. To ustawienie, rekordy podrzędne mogą zawierać odwołania do rekordów nieprawidłowy element nadrzędny.|  
   
@@ -88,7 +85,7 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Można utworzyć relacji między tabelami danych dwa  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [porady: otwieranie zestawu w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Przeciągnij **relacji** obiektu z **DataSet** przybornika do tabeli podrzędnej danych w relacji.  
   
@@ -112,7 +109,6 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Aby wyświetlić nazwy relacji w Projektancie obiektów Dataset  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [porady: otwieranie zestawu w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Z **danych** menu, wybierz opcję **Pokaż etykiety relacji** polecenie, aby wyświetlić nazwę relacji. Usuń zaznaczenie tego polecenia, aby ukryć nazwę relacji.
-

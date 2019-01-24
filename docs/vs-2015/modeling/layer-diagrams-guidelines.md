@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy warstw: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,23 +13,23 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803579"
 ---
-# <a name="layer-diagrams-guidelines"></a>Diagramy warstw: Zalecenia
+# <a name="layer-diagrams-guidelines"></a>Diagramy warstw: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w programie Visual Studio. Upewnij się, że kod pozostaje zgodny z tym projektem, sprawdzanie poprawności kodu za pomocą diagramu warstwowego. Można także dodać sprawdzanie poprawności warstwy w procesie kompilacji. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073).  
+Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w programie Visual Studio. Upewnij się, że kod pozostaje zgodny z tym projektem, sprawdzanie poprawności kodu za pomocą diagramu warstwowego. Można także dodać sprawdzanie poprawności warstwy w procesie kompilacji. Zobacz [wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="what-is-a-layer-diagram"></a>Co to jest diagram warstwowy?  
- Przykład diagramu tradycyjna architektura diagramu warstwowego identyfikuje główne składniki lub jednostki organizacyjne projektu i ich współzależności. Wywołuje się, każdy węzeł na diagramie *warstwy*, reprezentuje grupę logiczną przestrzenie nazw, projekty lub inne artefakty. Aby narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do diagramu tradycyjna architektura można zweryfikować, że rzeczywiste zależności w kodzie źródłowym są zgodne z zależności zamierzone, które zostały określone przez. Dokonując weryfikacji część regularnych kompilacji na [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], można upewnić się, że kod programu nadal stosować się do architektury systemu poprzez przyszłe zmiany. Zobacz [diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md).  
+ Przykład diagramu tradycyjna architektura diagramu warstwowego identyfikuje główne składniki lub jednostki organizacyjne projektu i ich współzależności. Wywołuje się, każdy węzeł na diagramie *warstwy*, reprezentuje grupę logiczną przestrzenie nazw, projekty lub inne artefakty. Aby narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do diagramu tradycyjna architektura można zweryfikować, że rzeczywiste zależności w kodzie źródłowym są zgodne z zależności zamierzone, które zostały określone przez. Dokonując weryfikacji część regularnych kompilacji na [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], można upewnić się, że kod programu nadal stosować się do architektury systemu poprzez przyszłe zmiany. Zobacz [diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md).  
   
 ##  <a name="Update"></a> Jak zaprojektować lub zaktualizuj aplikację przy użyciu diagramów warstw  
  W poniższych krokach przedstawiono omówienie sposobu używania diagramów warstwowych w ramach procesu tworzenia. Kolejnych sekcjach, w tym temacie opisano bardziej szczegółowo o każdym kroku. Jeśli tworzysz nowy projekt, należy pominąć kroki, które odwołują się do istniejącego kodu.  
@@ -118,7 +115,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
 ##  <a name="NewAreas"></a> Nowe obszary projektowania aplikacji  
  Po uruchomieniu rozwoju nowy projekt lub nowy obszar w nowym projekcie można narysować warstw i zależności w celu identyfikowania głównych składników przed przystąpieniem do tworzenia kodu.  
   
--   **Pokaż do zidentyfikowania wzorców architektonicznych** na diagramach warstwy, jeśli jest to możliwe. Na przykład diagram warstwowy, opisujący aplikacji pulpitu może obejmować warstw, takich jak prezentacja, logika domeny i Data Store. Diagram warstwowy, który obejmuje pojedynczej funkcji w aplikacji może być warstw, takich jak Model, widok i kontroler. Aby uzyskać więcej informacji o tych wzorcach, zobacz [wzorców i praktyk: Architektura aplikacji](http://go.microsoft.com/fwlink/?LinkId=145794).  
+-   **Pokaż do zidentyfikowania wzorców architektonicznych** na diagramach warstwy, jeśli jest to możliwe. Na przykład diagram warstwowy, opisujący aplikacji pulpitu może obejmować warstw, takich jak prezentacja, logika domeny i Data Store. Diagram warstwowy, który obejmuje pojedynczej funkcji w aplikacji może być warstw, takich jak Model, widok i kontroler. Aby uzyskać więcej informacji o tych wzorcach, zobacz [wzorce i rozwiązania: Architektura aplikacji](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
      Jeśli częstego tworzenia podobnych wzorców, należy utworzyć narzędzie niestandardowe. Zobacz [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
@@ -166,8 +163,5 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
  Aby upewnić się, że przyszłe zmiany w kodzie są zgodne z diagramów warstwowych, obejmują sprawdzanie poprawności warstwy do swojego rozwiązania standardowym procesem kompilacji. Zawsze, gdy inni członkowie zespołu Skompiluj rozwiązanie, wszelkie różnice między zależności w kodzie i diagram warstwowy, będzie zgłaszane jako błędy kompilacji. Aby uzyskać więcej informacji o tym sprawdzania poprawności warstwy w procesie kompilacji, zobacz [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)   
+ [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)   
  [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-

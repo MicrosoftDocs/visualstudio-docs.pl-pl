@@ -1,14 +1,9 @@
 ---
 title: Findunderpath — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a6ff04bad3f2f8c18175c8e96647fa1217c44725
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 92745b79b769ef82445523a6d5b66816077433ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198539"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777053"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,6 +80,3 @@ Określa, które elementy w kolekcji określonego elementu mają ścieżek, któ
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-
-
-

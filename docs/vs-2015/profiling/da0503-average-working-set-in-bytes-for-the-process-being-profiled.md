@@ -1,14 +1,9 @@
 ---
 title: 'DA0503: Średni zestaw roboczy w bajtach dla PROFILOWANEGO procesu | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.503
 - vs.performance.DA0503
@@ -17,19 +12,19 @@ ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f13dc584c8865fa2caa502db0708a27c5d1a8f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b45725c59cb18f965ba7d1fa134de739d9c4144d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779085"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Średni rozmiar zestawu roboczego w bajtach dla procesu poddawanego profilowaniu
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Średni zestaw roboczy w bajtach dla procesu poddawanego profilowaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identyfikator reguły | DA0503 |  
-| Kategoria | Monitorowanie zasobów |  
+Rule Id|DA0503|  
+|Category|Resource Monitoring|  
 | Metoda profilowania | Wszystkie |  
 | Komunikat | Te dane zostały zebrane wyłącznie w celach informacyjnych. Licznik zestawu roboczego procesu mierzy fizyczne użycie pamięci przez profilowany proces. Zgłaszana wartość to średnia obliczona dla wszystkich interwałów pomiarowych. |  
 | Typ reguły | Informacji |  
@@ -51,6 +46,3 @@ Identyfikator reguły | DA0503 |
  Użyj wartości reguły, aby porównać wydajność różnych wersji lub kompilacjach programu lub aby zrozumieć wydajność aplikacji w różnych scenariuszach profilowania.  
   
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) widoku danych profilowania. Znajdź **Ustaw Process\Working** i **Pamięć\Strony/s** kolumn. Porównaj dwie kolumny i ustalić, czy określonych faz wykonywania programu, które mogą być skojarzone z zwiększoną aktywność We/Wy stronicowania.
-
-
-

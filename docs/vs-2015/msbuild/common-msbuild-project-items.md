@@ -1,14 +1,9 @@
 ---
 title: Elementy wspólne projektu MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796880"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +87,7 @@ W [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], element jest nazwane
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
 |DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
-|Automatyczne generowanie|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE).|  
+|AutoGen|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE).|  
 |Łącze|Opcjonalny ciąg. Ścieżka notational wyświetlany, gdy plik znajduje się fizycznie poza wpływają na pliku projektu.|  
 |Widoczne|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy należy skopiować plik do katalogu wyjściowego. Dostępne są następujące wartości:<br /><br /> 1.  nigdy nie<br />2.  zawsze<br />3.  PreserveNewest|  
@@ -145,11 +140,8 @@ W [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], element jest nazwane
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport  
  Reprezentuje projekt programu FxCop, aby zaimportować.  
   
-### <a name="import"></a>{1&gt;Importuj&lt;1}  
+### <a name="import"></a>Import  
  Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilatora.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
-
-
-

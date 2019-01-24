@@ -1,14 +1,9 @@
 ---
-title: FRAMEINFO | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: FRAMEINFO | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 07bb205649b286f3e9ed98d0d0f59c217bf0b96f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fa2299e47924a10a6d0b02a982535865164191
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793316"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -111,11 +106,11 @@ public struct FRAMEINFO { 
  Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metodę, aby wypełnić. Ta struktura również znajduje się na liście, który jest zawarty w [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfejs, który z kolei jest zwracany z wywołania [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
@@ -125,4 +120,3 @@ public struct FRAMEINFO { 
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)   
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
-

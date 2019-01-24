@@ -1,13 +1,9 @@
 ---
 title: Dostosowanie strony początkowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
@@ -20,13 +16,13 @@ ms.assetid: 925d42eb-ec34-426e-ad81-19db8630e536
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c771d45cc4d29fc718f39bb09254afe5fee02249
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 895129fae06dbed8e6c0d53ac423a15adfd42365
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760337"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Dostosowanie strony początkowej w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +62,4 @@ Można dostosować stronę początkową dla programu Visual Studio na kilka domy
 >  Jeśli błąd na niestandardowej stronie początkowej powoduje, że Visual Studio ulega awarii, możesz uruchomić Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [tworzenia własnego strony początkowej](../misc/creating-your-own-start-page.md)
+ [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [tworzenia własnego strony początkowej](../misc/creating-your-own-start-page.md)

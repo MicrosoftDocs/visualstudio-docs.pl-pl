@@ -1,14 +1,9 @@
 ---
 title: Dodawanie adnotacji do struktur i klas | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
 - _Field_size_bytes_full_opt_
@@ -28,13 +23,13 @@ ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 965a823c658516edf247f6a99d23d189097b31f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42e9e050fb6417914d25e25927a248557e7905f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776850"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,6 +85,3 @@ Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą fu
  [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)   
  [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie szablonów elementów wielu plików | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie szablonów elementów wielu plików | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,15 +12,15 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862180"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785903"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Porady: tworzenie szablonów elementów wielu plików
+# <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów wielu plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Szablony elementów może określić tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularzy Windows w języku Visual Basic wymaga następujących trzech plików:  
@@ -40,7 +35,7 @@ Szablony elementów może określić tylko jeden element, ale czasami element sk
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Ręczne tworzenie szablonów elementów wielu plików  
   
-1.  Utwórz szablon elementu, jak należy utworzyć szablon elementu pojedynczego pliku. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).  
+1.  Utwórz szablon elementu, jak należy utworzyć szablon elementu pojedynczego pliku. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md).  
   
 2.  Dodaj `TargetFileName` atrybuty do każdego `ProjectItem` elementu. Ustaw wartości `TargetFileName` atrybuty $fileinputname $. *FileExtension*, gdzie *FileExtension* jest rozszerzeniem nazwy pliku w pliku, który jest uwzględniane w szablonie. Na przykład:  
   
@@ -60,7 +55,7 @@ Szablony elementów może określić tylko jeden element, ale czasami element sk
   
 3.  Wybierz pliki do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
   
-4.  Umieść plik zip w lokalizacji szablonów elementów użytkownika. Domyślnie katalog jest \My Studio *wersji*\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz [jak: Znajdź i organizowania szablony](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4.  Umieść plik zip w lokalizacji szablonów elementów użytkownika. Domyślnie katalog jest \My Studio *wersji*\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie przedstawiono [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu Windows Forms. Gdy element zostanie utworzony na podstawie tego szablonu, nazwy trzy utworzone pliki będą zgodne nazwy wprowadzone w **Dodaj nowy element** okno dialogowe.  
@@ -90,9 +85,6 @@ Szablony elementów może określić tylko jeden element, ale czasami element sk
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)   
+ [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)   
  [Parametry szablonu](../ide/template-parameters.md)   
  [Instrukcje: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-

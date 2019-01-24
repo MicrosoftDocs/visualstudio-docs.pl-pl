@@ -1,21 +1,17 @@
 ---
 title: Przeglądarka biblioteki obrazów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788054"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +55,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 </ImageManifest>  
 ```  
   
- **Symbole**  
+ **Symbols**  
   
  Jak zwiększyć czytelność i konserwacja pomocy, manifestu obrazu można użyć symboli dla wartości atrybutów. Symbole są zdefiniowane następująco:  
   
@@ -75,7 +71,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |||  
 |-|-|  
 |**Element podrzędny**|**Definicja**|  
-|{1&gt;Importuj&lt;1}|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście.|  
+|Import|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście.|  
 |Identyfikator GUID|Symbol reprezentuje identyfikator GUID i muszą być zgodne, formatowania identyfikatora GUID.|  
 |ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
 |String|Symbol reprezentuje wartość dowolny ciąg.|  
@@ -121,7 +117,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |ID|[Wymagane] Część Identyfikatora monikera obrazu|  
 |AllowColorInversion|[Opcjonalna, domyślne true] Wskazuje, czy obraz, który może mieć jego kolorów programowo odwrócona, gdy jest używana na ciemnym tle.|  
   
- **Źródło**  
+ **Element źródłowy**  
   
  \<Źródło > element definiuje pojedynczy źródła zasób obrazu (XAML i PNG).  
   
@@ -135,7 +131,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |-|-|  
 |**Atrybut**|**Definicja**|  
 |Identyfikator URI|[Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może to być jedna z następujących czynności:<br /><br /> -A [identyfikatora URI pakietu](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) za pomocą aplikacji: / / / urzędu<br /><br /> — Odwołanie do zasobu składnik bezwzględne<br /><br /> — Ścieżka do pliku zawierającego zasobu natywnego|  
-|Tło|[Opcjonalnie] Wskazuje, jakie na rodzaju tła, których źródłem jest przeznaczony do użycia.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> - *Jasny*: źródło może być używany na tle światła.<br /><br /> - *Ciemny*: źródło może być używany na ciemnym tle.<br /><br /> - *HighContrast*: źródło może służyć w dowolnym tła w trybie dużego kontrastu.<br /><br /> - *HighContrastLight*: źródło może być używane na tle światła w trybie dużego kontrastu.<br /><br /> -*HighContrastDark*: źródło może być używany na ciemnym tle w trybie dużego kontrastu.<br /><br /> Jeśli **tła** atrybut zostanie pominięty, źródła można używać na dowolnym tła.<br /><br /> Jeśli **tła** jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, nigdy nie są odwrócone kolory źródła. Jeśli **tła** jest pominięty lub ustawiony jako *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obraz **AllowColorInversion** atrybutu.|  
+|Tło|[Opcjonalnie] Wskazuje, jakie na rodzaju tła, których źródłem jest przeznaczony do użycia.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> - *Jasny*: Źródło może być używane na tle światła.<br /><br /> - *Ciemny*: Źródło może być używane na ciemnym tle.<br /><br /> - *HighContrast*: Źródło może służyć w dowolnym tła w trybie dużego kontrastu.<br /><br /> - *HighContrastLight*: Źródło może być używane na tle światła w trybie dużego kontrastu.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie dużego kontrastu.<br /><br /> Jeśli **tła** atrybut zostanie pominięty, źródła można używać na dowolnym tła.<br /><br /> Jeśli **tła** jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, nigdy nie są odwrócone kolory źródła. Jeśli **tła** jest pominięty lub ustawiony jako *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obraz **AllowColorInversion** atrybutu.|  
   
  A \<źródło > element może mieć dokładnie jeden następujące opcjonalne elementy podrzędne:  
   
@@ -143,7 +139,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |-|-|-|  
 |**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|  
 |\<Rozmiar >|Wartość|Źródła będą używane dla obrazów o danym rozmiarze (w jednostkach urządzenia). Obraz, który będzie mieć kształtu kwadratu.|  
-|\<SizeRange >|MinSize, MaxSize|Źródła będą używane dla obrazów z MinSize MaxSize (w jednostkach urządzenia) (włącznie). Obraz, który będzie mieć kształtu kwadratu.|  
+|\<SizeRange>|MinSize, MaxSize|Źródła będą używane dla obrazów z MinSize MaxSize (w jednostkach urządzenia) (włącznie). Obraz, który będzie mieć kształtu kwadratu.|  
 |\<Wymiary >|Szerokość, wysokość|Źródła będą używane dla obrazów o danym szerokość i wysokość (w jednostkach urządzenia).|  
 |\<DimensionRange >|Wartości elementu MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Źródła będą używane dla obrazów z minimalną szerokość/wysokość, szerokość/wysokość maksymalna (w jednostkach urządzenia) (włącznie).|  
   
@@ -234,4 +230,3 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
   
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe  
  To narzędzie nie generuje żadnych danych wyjściowych.
-

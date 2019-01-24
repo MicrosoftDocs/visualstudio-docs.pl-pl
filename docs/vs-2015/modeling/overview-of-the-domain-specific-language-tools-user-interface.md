@@ -1,12 +1,9 @@
 ---
 title: Omówienie języka specyficznego dla domeny narzędzi interfejsu użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: overview
 f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 81ae6b35-6819-41d0-953b-6b4ed81f9227
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2d88c7ee14acc1916e56010784224f8e44b73f45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758212"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,8 +52,5 @@ Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (
   
 ## <a name="see-also"></a>Zobacz też  
  [Przegląd narzędzi języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md)   
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-
